@@ -71,6 +71,11 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("build-akn", help="data/ Bluebell text -> Akoma Ntoso XML")
     p.add_argument("--out", type=Path, required=True)
 
+    p = sub.add_parser("import-peraturan", help="import regulations from peraturan.go.id")
+    p.add_argument("jenis", choices=["uu", "perppu", "pp", "perpres"])
+    p.add_argument("--limit", type=int, default=0, help="stop after N new imports (0 = all)")
+    p.add_argument("--delay", type=float, default=2.0, help="seconds between requests")
+
     p = sub.add_parser("manifest", help="print a manifest entry for a local file")
     p.add_argument("path", type=Path)
     p.add_argument("--source-url", required=True)
@@ -115,6 +120,22 @@ def main(argv: list[str] | None = None) -> int:
 
         for path in build_ruu(args.data_dir, args.out):
             print(path)
+        return 0
+
+    if args.command == "import-peraturan":
+        from .sources import peraturan_go_id as src
+
+        client, done = src.Client(args.delay), 0
+        for item in src.listings(client, args.jenis):
+            try:
+                line = src.import_one(client, item, args.jenis, args.data_dir)
+            except Exception as e:  # noqa: BLE001 - keep going; the run is resumable
+                line = f"FAIL {item.detail}: {e}"
+            print(line, flush=True)
+            if line.startswith("ok"):
+                done += 1
+                if args.limit and done >= args.limit:
+                    break
         return 0
 
     if args.command == "manifest":
