@@ -1,8 +1,5 @@
-"""PDF of an Indonesian regulation or draft -> structured Markdown (docs/BRIEF.md §6.2).
-
-Pipeline: page text -> cleaned physical lines -> logical blocks (one per ayat / list item /
-heading) -> Markdown with stable anchors, one ayat or list item per line so a changed ayat is a
-one-line diff.
+"""Cleaned lines of an Indonesian regulation or draft -> a flat list of structural blocks
+(BAB, Bagian, Paragraf, Pasal, ayat, list items, Penjelasan), written out by ``akn/bluebell.py``.
 
 Structure markers are only accepted in sequence (Pasal n+1 after Pasal n, ayat (k+1) after (k),
 b after a, ...). That keeps cross-references that happen to start a wrapped line ("Pasal 5 ayat
@@ -16,14 +13,6 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 PARSER_VERSION = 1
-
-# Signature boxes printed on every page of DPR "draft final" documents.
-HEADER_TOKENS = {
-    "F", "FP", "PDIP", "FPG", "GERINDRA", "FPKB", "NASDEM", "PAN", "PKS", "FPD", "PEMERINTAH",
-    "F PDIP", "FP GERINDRA", "FP NASDEM", "F PAN", "F PKS", "GERINDRA FPKB",
-}
-PAGE_NO_RE = re.compile(r"^(?:-\s*)?\d{1,3}(?:\s*-)?$")
-FOOTER_RE = re.compile(r"^(?:www\.peraturan\.go\.id|www\.dpr\.go\.id|\d{4}, No\.\s*\d+)$", re.IGNORECASE)
 
 BAB_RE = re.compile(r"^BAB\s+([IVXLC]+)$")
 BAGIAN_RE = re.compile(r"^Bagian\s+(Ke\w+)$")
@@ -67,29 +56,6 @@ class Document:
     @property
     def bab_count(self) -> int:
         return sum(1 for b in self.blocks if b.kind == "bab")
-
-
-# --------------------------------------------------------------------------- lines
-
-
-def page_lines(pdf: Path) -> list[list[str]]:
-    import pymupdf
-
-    with pymupdf.open(pdf) as doc:
-        return [page.get_text().splitlines() for page in doc]
-
-
-def clean_lines(pages: list[list[str]]) -> list[str]:
-    out: list[str] = []
-    for raw in pages:
-        lines = [re.sub(r"\s+", " ", ln).strip() for ln in raw]
-        lines = [ln for ln in lines if ln]
-        while lines and (lines[0] in HEADER_TOKENS or PAGE_NO_RE.match(lines[0])):
-            lines.pop(0)
-        while lines and (PAGE_NO_RE.match(lines[-1]) or FOOTER_RE.match(lines[-1])):
-            lines.pop()
-        out.extend(ln for ln in lines if not FOOTER_RE.match(ln))
-    return out
 
 
 def join(a: str, b: str) -> str:
@@ -313,10 +279,13 @@ class Parser:
         return 1
 
     def step_penjelasan(self, line: str) -> int:
-        if re.match(r"^I\.\s*UMUM$", line):
+        # "I. UMUM" / "II. PASAL DEMI PASAL", with the numeral sometimes on its own line
+        if re.match(r"^(?:I|II)\.$", line) and not self.p_last_pasal:
+            return 1
+        if re.match(r"^(?:I\.\s*)?UMUM$", line) and not self.p_last_pasal:
             self.emit(Block("umum", text="Umum"))
             return 1
-        if re.match(r"^II\.\s*PASAL DEMI PASAL$", line):
+        if re.match(r"^(?:II\.\s*)?PASAL DEMI PASAL$", line) and not self.p_last_pasal:
             self.emit(Block("pasal_demi_pasal", text="Pasal demi Pasal"))
             return 1
         if (m := PASAL_RE.match(line)) and m[1][0].isdigit():
@@ -348,56 +317,6 @@ def parse_lines(lines: list[str]) -> Document:
 
 
 def parse_pdf(pdf: Path) -> Document:
+    from .extract import clean_lines, page_lines
+
     return parse_lines(clean_lines(page_lines(pdf)))
-
-
-# --------------------------------------------------------------------------- markdown
-
-
-def slug(label: str) -> str:
-    return re.sub(r"[^a-z0-9]+", "-", label.lower()).strip("-")
-
-
-def to_markdown(doc: Document, front_matter: dict) -> str:
-    import yaml
-
-    fm = dict(front_matter)
-    fm["pasal_count"] = doc.pasal_count
-    fm["bab_count"] = doc.bab_count
-    fm["parser_version"] = PARSER_VERSION
-    out = ["---", yaml.safe_dump(fm, allow_unicode=True, sort_keys=False).strip(), "---", ""]
-    pasal_anchor = ""
-    for b in doc.blocks:
-        if b.kind == "title":
-            out += [f"# {b.text}", ""]
-        elif b.kind == "preamble":
-            out += [f"{b.label}:{(' ' + b.text) if b.text else ''}" if b.label else b.text, ""]
-        elif b.kind == "closing":
-            # the next part's cover word ("RANCANGAN") sometimes trails the signature block
-            out += [re.sub(r"\s*RANCANGAN\W*$", "", b.text), ""]
-        elif b.kind == "bab":
-            out += [f"## {b.label} {{#{slug(b.label)}}}", "", b.text, ""]
-        elif b.kind == "bagian":
-            out += [f"### {b.label}", "", b.text, ""]
-        elif b.kind == "paragraf":
-            out += [f"#### {b.label}", "", b.text, ""]
-        elif b.kind == "pasal":
-            pasal_anchor = slug(b.label)
-            out += [f"#### {b.label} {{#{pasal_anchor}}}", ""]
-        elif b.kind in {"ayat", "item"}:
-            # 2 spaces per nesting level (max 3): shows nesting without becoming a code block
-            indent = " " * min(3, 2 * max(0, b.level - 1)) if b.kind == "item" else ""
-            out += [f"{indent}{b.label} {b.text}".rstrip(), ""]
-        elif b.kind == "penjelasan":
-            out += ["## Penjelasan {#penjelasan}", "", b.text, ""]
-        elif b.kind == "umum":
-            out += ["### Umum {#penjelasan-umum}", ""]
-        elif b.kind == "pasal_demi_pasal":
-            out += ["### Pasal demi Pasal {#penjelasan-pasal-demi-pasal}", ""]
-        elif b.kind == "p_pasal":
-            out += [f"#### {b.label} {{#penjelasan-{slug(b.label)}}}", ""]
-        elif b.kind == "p_label":
-            out += [f"{b.label}{(': ' + b.text) if b.text else ''}", ""]
-        elif b.kind == "text" and b.text:
-            out += [b.text, ""]
-    return "\n".join(out).rstrip() + "\n"

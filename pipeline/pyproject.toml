@@ -5,6 +5,7 @@ description = "Scraper and parser for Indonesian law and RUU documents"
 license = "AGPL-3.0-or-later"
 requires-python = ">=3.12"
 dependencies = [
+    "bluebell-akn>=5.0.0",
     "httpx>=0.28.1",
     "internetarchive>=5.13.0",
     "pymupdf>=2.1",

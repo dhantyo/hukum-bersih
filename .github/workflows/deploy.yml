@@ -24,6 +24,10 @@ jobs:
         working-directory: web
     steps:
       - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Build Akoma Ntoso XML from data/
+        working-directory: pipeline
+        run: uv run hukum-bersih build-akn --out ../web/generated/akn
       - uses: actions/setup-node@v4
         with:
           node-version: 22

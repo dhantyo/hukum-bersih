@@ -2,9 +2,11 @@
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { parse as parseYaml } from "yaml";
-import { parseLawDoc, type LawDoc } from "./lawdoc.ts";
+import { parseAkn, type LawDoc } from "./lawdoc.ts";
 
 export const DATA_DIR = resolve(process.env.DATA_DIR ?? join(process.cwd(), "..", "data"));
+/** Akoma Ntoso XML generated from data/ by `hukum-bersih build-akn --out web/generated/akn`. */
+export const AKN_DIR = resolve(process.env.AKN_DIR ?? join(process.cwd(), "generated", "akn"));
 
 export type Provenance = "official" | "archive" | "media" | "leak" | null;
 
@@ -58,11 +60,15 @@ export function loadRuus(): Ruu[] {
     .sort((a, b) => a.title.localeCompare(b.title, "id"));
 }
 
-/** Documents that have a Markdown text, oldest first. */
+/** Documents that have a text, oldest first. */
 export function versions(ruu: Ruu): RuuDocument[] {
   return ruu.documents.filter((d) => d.text).sort((a, b) => a.date.localeCompare(b.date));
 }
 
 export function loadText(ruu: Ruu, doc: RuuDocument): LawDoc {
-  return parseLawDoc(readFileSync(join(DATA_DIR, "ruu", ruu.slug, doc.text!), "utf8"));
+  const file = join(AKN_DIR, "ruu", ruu.slug, `${doc.id}.xml`);
+  if (!existsSync(file)) {
+    throw new Error(`${file} is missing: run \`hukum-bersih build-akn --out web/generated/akn\``);
+  }
+  return parseAkn(readFileSync(file, "utf8"));
 }

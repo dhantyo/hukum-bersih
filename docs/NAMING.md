@@ -75,11 +75,11 @@ Ids never contain the project name. The project is mentioned only in archive.org
 ```
 data/peraturan/uu/2008/uu_11_2008/
   uu_11_2008.yaml                 details: title, short name, status, relationships, versions
-  uu_11_2008_2008-04-21.md        text as enacted
-  uu_11_2008_2024-01-02.md        (later) consolidated text, marked unofficial
+  uu_11_2008_2008-04-21.txt       text as enacted (Bluebell / Akoma Ntoso)
+  uu_11_2008_2024-01-02.txt       (later) consolidated text, marked unofficial
 data/ruu/perampasan-aset/
   ruu.yaml
-  versions/ruu_perampasan-aset_2026-11-19_draft-final.md
+  versions/ruu_perampasan-aset_2026-11-19_draft-final.txt
 ```
 
 Year folders keep every folder small (GitHub's file browser stops at 1,000 entries).

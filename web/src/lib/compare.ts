@@ -1,14 +1,18 @@
 // Compare two versions pasal by pasal. Pasal numbers shift between drafts, so pasal are
-// matched by content similarity (order-preserving alignment), then diffed word by word.
-import { diffWordsWithSpace, type ChangeObject } from "diff";
+// matched by content similarity (order-preserving alignment plus a pass for moved pasal),
+// then ayat by ayat, then word by word with Google's diff-match-patch and its semantic
+// cleanup, which merges scattered small edits into readable "old phrase -> new phrase" blocks.
+import { cleanupSemantic, DIFF_DELETE, DIFF_INSERT, makeDiff } from "@sanity/diff-match-patch";
 import { pasalText, type LawDoc, type Pasal } from "./lawdoc.ts";
+
+export interface Part { value: string; added?: boolean; removed?: boolean }
 
 export type Status = "sama" | "berubah" | "baru" | "dihapus";
 
 export interface LineDiff {
   kind: "sama" | "berubah" | "baru" | "dihapus";
   indent: number;
-  parts: ChangeObject<string>[];
+  parts: Part[];
 }
 
 export interface PasalComparison {
@@ -32,6 +36,9 @@ export const MATCH_THRESHOLD = 0.3;
 export const MOVE_THRESHOLD = 0.35;
 /** Ayat / list items inside a matched pasal. */
 export const LINE_THRESHOLD = 0.3;
+/** Below this share of unchanged words, a line is shown as removed + added in full instead of
+ * an interleaved word diff, which is unreadable when most of the line was rewritten. */
+export const REWRITE_THRESHOLD = 0.5;
 
 function words(text: string): string[] {
   return text.toLowerCase().match(/[\p{L}\p{N}]+/gu) ?? [];
@@ -90,25 +97,55 @@ export function align(a: string[], b: string[], threshold = MATCH_THRESHOLD) {
   return pairs.reverse();
 }
 
-const whole = (value: string, added: boolean, removed: boolean) =>
-  [{ value, added, removed, count: 1 }];
+const whole = (value: string, added: boolean, removed: boolean): Part[] =>
+  [{ value, added, removed }];
+
+/** Word-level diff: each word / space / punctuation run becomes one character (the
+ * "lines to chars" technique from diff-match-patch's documentation), diff-match-patch diffs
+ * those, semantic cleanup merges fragments, and the characters are decoded back to words. */
+export function wordDiff(a: string, b: string): Part[] {
+  const tokens: string[] = [];
+  const index = new Map<string, number>();
+  const encode = (text: string) =>
+    (text.match(/\s+|[\p{L}\p{N}]+|[^\s\p{L}\p{N}]/gu) ?? []).map((t) => {
+      let k = index.get(t);
+      if (k === undefined) { k = tokens.length; tokens.push(t); index.set(t, k); }
+      return String.fromCharCode(0x4e00 + k);   // BMP block, so no surrogate pairs
+    }).join("");
+  const diffs = cleanupSemantic(makeDiff(encode(a), encode(b), { checkLines: false }));
+  return diffs.map(([op, chars]) => ({
+    value: Array.from(chars, (c) => tokens[c.charCodeAt(0) - 0x4e00]).join(""),
+    added: op === DIFF_INSERT,
+    removed: op === DIFF_DELETE,
+  }));
+}
+
+/** Share of the longer text that is unchanged. */
+function unchangedShare(parts: Part[], a: string, b: string): number {
+  const same = parts.filter((p) => !p.added && !p.removed).reduce((n, p) => n + p.value.length, 0);
+  return same / Math.max(a.length, b.length, 1);
+}
 
 /** Ayat-by-ayat diff: align lines, then word diff only inside matched lines. */
 export function diffLines(a: Pasal, b: Pasal): LineDiff[] {
   const la = a.lines.map((l) => l.text);
   const lb = b.lines.map((l) => l.text);
-  return align(la, lb, LINE_THRESHOLD).map(({ i, j }) => {
+  return align(la, lb, LINE_THRESHOLD).flatMap(({ i, j }): LineDiff[] => {
     if (i !== undefined && j !== undefined) {
-      const same = la[i] === lb[j];
-      return {
-        kind: same ? "sama" : "berubah", indent: b.lines[j].indent,
-        parts: same ? whole(lb[j], false, false) : diffWordsWithSpace(la[i], lb[j]),
-      } as LineDiff;
+      if (la[i] === lb[j]) return [{ kind: "sama", indent: b.lines[j].indent, parts: whole(lb[j], false, false) }];
+      const parts = wordDiff(la[i], lb[j]);
+      if (unchangedShare(parts, la[i], lb[j]) < REWRITE_THRESHOLD) {
+        return [
+          { kind: "dihapus", indent: a.lines[i].indent, parts: whole(la[i], false, true) },
+          { kind: "baru", indent: b.lines[j].indent, parts: whole(lb[j], true, false) },
+        ];
+      }
+      return [{ kind: "berubah", indent: b.lines[j].indent, parts }];
     }
     if (i !== undefined) {
-      return { kind: "dihapus", indent: a.lines[i].indent, parts: whole(la[i], false, true) };
+      return [{ kind: "dihapus", indent: a.lines[i].indent, parts: whole(la[i], false, true) }];
     }
-    return { kind: "baru", indent: b.lines[j!].indent, parts: whole(lb[j!], true, false) };
+    return [{ kind: "baru", indent: b.lines[j!].indent, parts: whole(lb[j!], true, false) }];
   });
 }
 

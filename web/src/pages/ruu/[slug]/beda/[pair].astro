@@ -47,7 +47,7 @@ const prov = (d: RuuDocument) => PROVENANCE[provenanceKey(d.provenance)];
 
   <div id="rows" class="hide-same">
     {cmp.rows.map((r) => {
-      const anchor = r.b ? `b-${r.b.anchor}` : `a-${r.a!.anchor}`;
+      const anchor = r.b ? `b-${r.b.eId}` : `a-${r.a!.eId}`;
       return (
         <section class={`row ${r.status}`} id={anchor}>
           <h3>

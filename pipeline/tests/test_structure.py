@@ -1,4 +1,7 @@
-from hukum_bersih.parse import clean_lines, parse_lines, to_markdown
+from hukum_bersih.akn.bluebell import escape, to_bluebell
+from hukum_bersih.akn.build import to_akn
+from hukum_bersih.pdf.extract import clean_lines
+from hukum_bersih.pdf.structure import parse_lines
 
 PAGES = [
     ["F", "PDIP", "PEMERINTAH", "RANCANGAN", "UNDANG-UNDANG REPUBLIK INDONESIA",
@@ -48,11 +51,31 @@ def test_hyphen_join_and_nesting():
     assert ("1.", 1) in items and ("a.", 2) in items
 
 
-def test_markdown():
-    md = to_markdown(parse(), {"id": "ruu_contoh_2026-01-01_draft"})
-    assert "#### Pasal 2 {#pasal-2}" in md
-    assert "#### Pasal 2 {#penjelasan-pasal-2}" in md
-    assert "\n  a. tulisan;\n" in md  # nested, but never a 4-space code block
-    assert "Mengingat: Pasal 20 UUD;" in md
-    assert "Agar setiap orang mengetahuinya, memerintahkan." in md
-    assert "pasal_count: 2" in md
+NS = {"a": "http://docs.oasis-open.org/legaldocml/ns/akn/3.0"}
+
+
+def test_bluebell_text():
+    text = to_bluebell(parse())
+    assert "  CHAPTER II - RUANG LINGKUP\n" in text
+    assert "    ART 2 -\n      PARA (1)\n        Aset dirampas berdasarkan Pasal 5" in text
+    assert "        POINT a.\n          tulisan;" in text  # nested under POINT 2.
+    assert "CONCLUSIONS\n" in text and "ATTACHMENT Penjelasan\n" in text
+
+
+def test_escape():
+    assert escape("dan/atau") == "dan/atau"
+    assert escape("lihat https://contoh.go.id") == "lihat https:\\//contoh.go.id"
+    assert escape("PART dari aset") == "\\PART dari aset"
+    assert escape("a\\b") == "a\\\\b"
+
+
+def test_akoma_ntoso():
+    from lxml import etree
+
+    xml = etree.fromstring(to_akn(to_bluebell(parse()), "/akn/id/bill/2026/contoh", "bill"))
+    eids = [e.get("eId") for e in xml.iter() if e.get("eId")]
+    assert "chp_I__art_1__point_2__point_a" in eids
+    assert "chp_II__art_2__para_2__point_b" in eids
+    assert len(xml.findall(".//a:body//a:article", NS)) == 2
+    assert len(xml.findall(".//a:attachment//a:article", NS)) == 2
+    assert xml.find(".//a:FRBRlanguage", NS).get("language") == "ind"

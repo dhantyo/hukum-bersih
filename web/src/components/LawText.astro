@@ -1,43 +1,41 @@
 ---
-// Renders a parsed law/draft text (lib/lawdoc.ts) with stable anchors.
+// A law or draft rendered from Akoma Ntoso (lib/lawdoc.ts).
+import AknNode from "./AknNode.astro";
 import type { LawDoc } from "../lib/lawdoc.ts";
 
 interface Props { doc: LawDoc }
 const { doc } = Astro.props;
 ---
 <article class="law">
-  {doc.nodes.map((n) => {
-    switch (n.kind) {
-      case "title": return <p class="law-title">{n.label}</p>;
-      case "bab": return <h2 id={n.anchor}>{n.label}<span class="sub">{n.title}</span></h2>;
-      case "bagian": return <h3 class="bagian">{n.label}<span class="sub">{n.title}</span></h3>;
-      case "paragraf": return <h3 class="paragraf">{n.label}<span class="sub">{n.title}</span></h3>;
-      case "pasal": return <h3 class="pasal" id={n.anchor}><a href={`#${n.anchor}`}>{n.label}</a></h3>;
-      case "penjelasan": return <h2 id={n.anchor} class="penjelasan">Penjelasan</h2>;
-      case "umum": return <h3 id={n.anchor}>Umum</h3>;
-      case "pasal-demi-pasal": return <h3 id={n.anchor}>Pasal demi Pasal</h3>;
-      case "p-pasal": return <h3 class="pasal" id={n.anchor}><a href={`#${n.anchor}`}>{n.label}</a></h3>;
-      default: return <p class={`l i${n.indent}`}>{n.label}</p>;
-    }
-  })}
+  <div class="akn-preface">{doc.preface.map((n) => <AknNode node={n} />)}</div>
+  <div class="akn-preamble">{doc.preamble.map((n) => <AknNode node={n} />)}</div>
+  <div class="akn-body">{doc.body.map((n) => <AknNode node={n} />)}</div>
+  {doc.conclusions.length > 0 && <div class="akn-conclusions">{doc.conclusions.map((n) => <AknNode node={n} />)}</div>}
+  {doc.penjelasan.length > 0 && (
+    <section class="penjelasan" id="penjelasan">
+      <h2 class="penjelasan-title">Penjelasan</h2>
+      {doc.penjelasan.map((n) => <AknNode node={n} penjelasan />)}
+    </section>
+  )}
 </article>
 
 <style>
-  .law-title { font-weight: 700; text-align: center; margin: 1.5rem 0; }
-  h2 { text-align: center; }
-  h2 .sub, h3 .sub { display: block; font-weight: 600; font-size: 0.95em; }
-  h3.bagian, h3.paragraf { text-align: center; }
-  h3.pasal { text-align: center; margin-top: 2rem; }
-  h3.pasal a { color: inherit; text-decoration: none; }
-  h3.pasal a:hover { text-decoration: underline; }
-  h2.penjelasan { margin-top: 4rem; padding-top: 2rem; border-top: 2px solid var(--line); }
-  p.l { margin: 0.35rem 0; }
-  p.i1 { margin-left: 1.5rem; }
-  p.i2 { margin-left: 3rem; }
-  p.i3 { margin-left: 4.5rem; }
+  .law :global(.akn-preface .akn-p) { font-weight: 700; text-align: center; margin: 1.5rem 0; }
+  .law :global(h2) { text-align: center; font-size: 1.1rem; }
+  .law :global(h2 .sub) { display: block; font-weight: 600; }
+  .law :global(.akn-article h3) { text-align: center; margin-top: 2rem; font-size: 1rem; }
+  .law :global(.akn-article h3 a) { color: inherit; text-decoration: none; }
+  .law :global(.akn-article h3 a:hover) { text-decoration: underline; }
+  .law :global(.akn-p) { margin: 0.35rem 0; }
+  .law :global(.numbered) { display: grid; grid-template-columns: 2.4rem 1fr; gap: 0 0.25rem; }
+  .law :global(.numbered .akn-num) { padding-top: 0.35rem; }
+  .law :global(.akn-conclusions) { margin-top: 2.5rem; color: var(--muted); }
+  .penjelasan { margin-top: 4rem; padding-top: 2rem; border-top: 2px solid var(--line); }
+  .penjelasan-title { text-align: center; }
+  .law :global(.penjelasan .numbered) { grid-template-columns: 5.5rem 1fr; }
+  .law :global(:target) { background: var(--ins-bg); border-radius: 4px; }
   @media (max-width: 480px) {
-    p.i1 { margin-left: 0.9rem; }
-    p.i2 { margin-left: 1.8rem; }
-    p.i3 { margin-left: 2.7rem; }
+    .law :global(.numbered) { grid-template-columns: 1.9rem 1fr; }
+    .law :global(.penjelasan .numbered) { grid-template-columns: 1fr; }
   }
 </style>

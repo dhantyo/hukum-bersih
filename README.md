@@ -8,33 +8,26 @@ An open, layman-friendly tracker for Indonesian law: clean searchable text, RUU 
 
 | Path | What | License |
 |---|---|---|
-| `data/` | Law and RUU text as Markdown + YAML, source manifests. **Source of truth.** No PDFs. | [CC0 1.0](data/LICENSE) |
-| `scraper/` | Python scraper and PDF → Markdown parser | [AGPL-3.0](LICENSE) |
+| `data/` | Law and RUU texts (Bluebell / Akoma Ntoso), YAML records, source manifests. **Source of truth.** No PDFs. | [CC0 1.0](data/LICENSE) |
+| `pipeline/` | Python: fetch, archive, PDF → Akoma Ntoso | [AGPL-3.0](LICENSE) |
 | `web/` | Astro static site + Pagefind search | [AGPL-3.0](LICENSE) |
-| `docs/` | Project brief and design notes | AGPL-3.0 |
+| `docs/` | [Architecture](docs/ARCHITECTURE.md), [naming](docs/NAMING.md), [decisions](docs/decisions/), brief | AGPL-3.0 |
 
-Data layout (see `docs/BRIEF.md` §6):
-
-```
-data/
-  peraturan/uu/<year>/uu-<n>-<year>.md
-  ruu/<slug>/ruu.yaml
-  ruu/<slug>/versions/<date>-<label>.md
-  sources/manifests/
-```
+See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for how the pieces fit together.
 
 ## Development
 
-Scraper (Python ≥ 3.12, [uv](https://docs.astral.sh/uv/)):
+Pipeline (Python ≥ 3.12, [uv](https://docs.astral.sh/uv/)):
 
 ```bash
-cd scraper && uv sync && uv run pytest
+cd pipeline && uv sync && uv run pytest
 ```
 
 Website (deployed to Cloudflare Pages by `.github/workflows/deploy.yml`; Node ≥ 22.23.4):
 
 ```bash
-cd web && npm ci && npm run build
+(cd pipeline && uv run hukum-bersih build-akn --out ../web/generated/akn)
+cd web && npm ci && npm test && npm run build
 ```
 
 ## Ground rules

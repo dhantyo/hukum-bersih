@@ -48,3 +48,42 @@ def entry_for_file(
 def is_unchanged(path: Path, known_sha256: str | None) -> bool:
     """True if the file matches a previously recorded hash, so the run can skip it."""
     return known_sha256 is not None and sha256_file(path) == known_sha256
+
+
+def manifest_path(data_dir: Path, source_url: str) -> Path:
+    """One JSONL file per source host (the original host for Wayback copies)."""
+    from urllib.parse import urlparse
+
+    from .sources.wayback import original_url
+
+    host = urlparse(original_url(source_url)).hostname or "unknown"
+    return data_dir / "sources" / "manifests" / f"{host}.jsonl"
+
+
+def records(data_dir: Path):
+    import json
+
+    for manifest in sorted((data_dir / "sources" / "manifests").glob("*.jsonl")):
+        for line in manifest.read_text().splitlines():
+            if line.strip():
+                yield json.loads(line)
+
+
+def already_archived(manifest: Path, url: str, sha256: str, archive_url: str | None) -> bool:
+    import json
+
+    if not manifest.exists():
+        return False
+    return any(
+        (rec.get("source_url"), rec.get("sha256"), rec.get("archive_url")) == (url, sha256, archive_url)
+        for rec in map(json.loads, filter(str.strip, manifest.read_text().splitlines()))
+    )
+
+
+def latest_entry(data_dir: Path, doc_id: str) -> dict | None:
+    """Most recent manifest line recorded for a document id."""
+    found = None
+    for rec in records(data_dir):
+        if rec.get("doc_id") == doc_id and (found is None or rec["fetched_at"] > found["fetched_at"]):
+            found = rec
+    return found

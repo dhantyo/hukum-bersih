@@ -1,0 +1,93 @@
+# Architecture
+
+Git is the source of truth; everything else is generated from it.
+
+```
+ government sites ─┐
+ Wayback Machine  ─┤  pipeline/ (Python)
+                   ├─► fetch ──► archive.org (original PDFs, named by id)
+                   │            └► data/sources/manifests/*.jsonl (url, sha256, archive url)
+                   └─► parse ──► data/**/<id>.txt (Bluebell text) + YAML records
+                                          │  git push
+                                          ▼
+              pipeline build-akn ──► Akoma Ntoso XML (web/generated/, not in git)
+                                          │
+                                          ▼
+              web/ (Astro, static) ──► Cloudflare Pages, Pagefind search
+```
+
+## Repository
+
+| Path | What | License |
+|---|---|---|
+| `data/` | Source of truth: texts (Bluebell), YAML records, source manifests. No PDFs. | CC0 |
+| `pipeline/` | Python package `hukum_bersih`: fetch, archive, PDF parsing, Akoma Ntoso | AGPL-3.0 |
+| `web/` | Astro site: reads Akoma Ntoso XML, renders laws, RUU pages and comparisons | AGPL-3.0 |
+| `docs/` | Brief, naming rule, this file, decision records | AGPL-3.0 |
+
+### data/
+
+```
+data/
+  peraturan/<jenis>/<tahun>/<id>/          one folder per regulation
+    <id>.yaml                              title, short name, status, relationships, versions
+    <id>_<YYYY-MM-DD>.txt                  each text version, dated (Bluebell)
+  ruu/<slug>/
+    ruu.yaml                               stages, every known document with provenance
+    versions/<doc id>.txt                  draft texts (Bluebell)
+  sources/manifests/<host>.jsonl           one line per fetched file
+```
+
+Names follow [NAMING.md](NAMING.md).
+
+### pipeline/src/hukum_bersih/
+
+| Module | Job |
+|---|---|
+| `sources/` | One module per upstream site (`http.py` shared: User-Agent, retries; `wayback.py`) |
+| `fetch.py` | Download → archive.org → manifest line; skips unchanged files by sha256 |
+| `archive.py` | archive.org upload, retitle, empty obsolete items |
+| `manifest.py` | Source manifest records |
+| `naming.py` | Ids and titles (NAMING.md) |
+| `pdf/extract.py` | PDF → cleaned lines (headers, page numbers, footers, signature boxes removed) |
+| `pdf/structure.py` | Lines → structural blocks (BAB … Pasal, ayat, huruf/angka, Penjelasan) |
+| `akn/bluebell.py` | Blocks → Bluebell text (stored in `data/`) |
+| `akn/build.py` | Bluebell → Akoma Ntoso XML (Laws.Africa's `bluebell` parser) |
+| `cli.py` | `hukum-bersih fetch / parse / build-akn / archive-*` |
+
+### web/src/
+
+| Path | Job |
+|---|---|
+| `lib/data.ts` | Reads YAML records from `data/` and generated XML from `web/generated/` |
+| `lib/lawdoc.ts` | Akoma Ntoso → render tree + each Pasal as lines |
+| `lib/compare.ts` | Match pasal by content, then ayat, then words (diff-match-patch) |
+| `components/` | `LawText` / `AknNode` render Akoma Ntoso with `akn-*` classes and eIds as ids |
+| `pages/` | `/ruu/`, `/ruu/<slug>/`, `/ruu/<slug>/<doc id>/`, `/ruu/<slug>/beda/<a>...<b>/` |
+
+## Workflows (.github/workflows)
+
+| Workflow | When | What |
+|---|---|---|
+| `ci.yml` | every push | pipeline lint + tests; build AKN; web tests (incl. M1 check) + build; no PDFs in git |
+| `deploy.yml` | push to default branch | build AKN + site, deploy to Cloudflare Pages |
+| `fetch.yml` | manual | fetch + archive `id URL` pairs, commit manifest lines |
+| `archive-retitle.yml` | manual | rewrite archive.org titles/descriptions |
+| `archive-delete.yml` | manual | empty obsolete archive.org items |
+| `probe-sources.yml` | manual | which sources a GitHub runner can reach |
+
+Where things run: GitHub runners reach DPR files and the Wayback Machine; the Claude cloud
+session reaches peraturan.go.id (intermittently). See CLAUDE.md for the latest findings.
+
+## Reused instead of written
+
+| Need | Used | Notes |
+|---|---|---|
+| Legal document model | Akoma Ntoso (OASIS LegalDocML) | [decision 0004](decisions/0004-akoma-ntoso-bluebell.md) |
+| Text format ↔ Akoma Ntoso | `bluebell-akn` (Laws.Africa) | |
+| Word diff | `@sanity/diff-match-patch` (Google's diff-match-patch) | semantic cleanup groups edits |
+| XML in the browser build | `@xmldom/xmldom` | |
+| archive.org | `internetarchive` | |
+| PDF text | PyMuPDF | |
+| Search | Pagefind | |
+| Indonesian PDF quirks | Pasal.id parser (AGPL) | to port: peraturan.go.id headers/footers, page-break dedup, OCR fixes, amendment laws |

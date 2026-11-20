@@ -14,6 +14,9 @@ node_modules/
 web/dist/
 web/.astro/
 
-# Local scraper state
-scraper/cache/
+# Local pipeline state
+pipeline/cache/
 .env
+
+# Generated from data/ at build time
+web/generated/

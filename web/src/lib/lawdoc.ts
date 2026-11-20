@@ -1,91 +1,125 @@
-// Parser for the Markdown law/draft format written by scraper/src/hukum_bersih/parse.py.
-// One ayat or list item per line; headings carry stable anchors.
-import { parse as parseYaml } from "yaml";
+// Akoma Ntoso XML (generated from data/ by `hukum-bersih build-akn`) -> a small tree for
+// rendering, plus each Pasal flattened into lines (one per ayat / huruf / angka) for comparing.
+import { DOMParser, type Element } from "@xmldom/xmldom";
 
-export type NodeKind =
-  | "title" | "line" | "bab" | "bagian" | "paragraf" | "pasal"
-  | "penjelasan" | "umum" | "pasal-demi-pasal" | "p-pasal";
-
-export interface DocNode {
-  kind: NodeKind;
-  label: string;        // "BAB I", "Pasal 5", "(1) …" for lines the full text
-  anchor?: string;
-  title?: string;       // BAB / Bagian / Paragraf title line
-  indent: number;       // list nesting for lines (0 = ayat / top level)
-  inPenjelasan: boolean;
+export interface AknNode {
+  tag: string;          // Akoma Ntoso element name: chapter, article, paragraph, point, p, ...
+  eId?: string;
+  num?: string;
+  heading?: string;
+  text?: string;        // for <p>
+  children: AknNode[];
 }
+
+export interface PasalLine { text: string; indent: number; eId?: string }
 
 export interface Pasal {
   label: string;        // "Pasal 5"
-  anchor: string;       // "pasal-5"
-  bab?: string;         // "BAB II"
-  lines: { text: string; indent: number }[];
+  num: string;          // "5"
+  eId: string;          // "chp_III__art_5"
+  chapter?: string;     // "BAB III"
+  lines: PasalLine[];
 }
 
 export interface LawDoc {
-  meta: Record<string, unknown>;
-  nodes: DocNode[];
+  title?: string;
+  preface: AknNode[];
+  preamble: AknNode[];
+  body: AknNode[];
+  conclusions: AknNode[];
+  penjelasan: AknNode[];
   pasal: Pasal[];
-  penjelasan: Map<string, Pasal>; // keyed by pasal label
+  penjelasanPasal: Map<string, Pasal>;   // keyed by Pasal number
 }
 
-const HEADING = /^(#{1,4})\s+(.*?)(?:\s+\{#([a-z0-9-]+)\})?\s*$/;
+const CONTAINERS = new Set([
+  "chapter", "part", "subpart", "article", "paragraph", "point", "item", "blockList", "intro",
+  "content", "wrapUp", "mainBody", "body", "preface", "preamble", "conclusions", "p",
+]);
 
-export function parseLawDoc(source: string): LawDoc {
-  let meta: Record<string, unknown> = {};
-  let body = source;
-  const fm = source.match(/^---\n([\s\S]*?)\n---\n/);
-  if (fm) {
-    meta = (parseYaml(fm[1]) as Record<string, unknown>) ?? {};
-    body = source.slice(fm[0].length);
+const elements = (el: Element): Element[] =>
+  Array.from(el.childNodes).filter((n): n is Element => n.nodeType === 1);
+
+function textOf(el: Element): string {
+  return (el.textContent ?? "").replace(/\s+/g, " ").trim();
+}
+
+function toNode(el: Element): AknNode {
+  const node: AknNode = { tag: el.localName ?? el.tagName, children: [] };
+  const eId = el.getAttribute("eId");
+  if (eId) node.eId = eId;
+  if (node.tag === "p") {
+    node.text = textOf(el);
+    return node;
   }
+  for (const child of elements(el)) {
+    const tag = child.localName;
+    if (tag === "num") node.num = textOf(child);
+    else if (tag === "heading") node.heading = textOf(child);
+    else if (CONTAINERS.has(tag)) node.children.push(toNode(child));
+  }
+  return node;
+}
 
-  const nodes: DocNode[] = [];
-  const pasal: Pasal[] = [];
-  const penjelasan = new Map<string, Pasal>();
-  let inPenjelasan = false;
-  let bab: string | undefined;
-  let current: Pasal | undefined;
-  let wantTitle: DocNode | undefined;
-
-  for (const raw of body.split("\n")) {
-    if (!raw.trim()) continue;
-    const h = raw.match(HEADING);
-    if (h) {
-      const [, hashes, text, anchor] = h;
-      let kind: NodeKind;
-      if (hashes === "#") kind = "title";
-      else if (/^Penjelasan$/.test(text)) { kind = "penjelasan"; inPenjelasan = true; }
-      else if (/^BAB\s/.test(text)) kind = "bab";
-      else if (/^Bagian\s/.test(text)) kind = "bagian";
-      else if (/^Paragraf\s/.test(text)) kind = "paragraf";
-      else if (/^Pasal\s/.test(text)) kind = inPenjelasan ? "p-pasal" : "pasal";
-      else if (/^Umum$/.test(text)) kind = "umum";
-      else kind = "pasal-demi-pasal";
-      const node: DocNode = { kind, label: text, anchor, indent: 0, inPenjelasan };
-      nodes.push(node);
-      wantTitle = kind === "bab" || kind === "bagian" || kind === "paragraf" ? node : undefined;
-      if (kind === "bab") bab = text;
-      if (kind === "pasal" || kind === "p-pasal") {
-        current = { label: text, anchor: anchor ?? "", bab, lines: [] };
-        if (kind === "pasal") pasal.push(current);
-        else penjelasan.set(text, current);
+/** Flatten one article: its own text plus each paragraph / point as a line. */
+function flatten(article: AknNode): PasalLine[] {
+  const lines: PasalLine[] = [];
+  const walk = (n: AknNode, indent: number, prefix: string | undefined) => {
+    let pending = prefix;
+    for (const c of n.children) {
+      if (c.tag === "p") {
+        lines.push({ text: pending ? `${pending} ${c.text}` : c.text ?? "", indent, eId: c.eId });
+        pending = undefined;
+      } else if (c.tag === "paragraph" || c.tag === "point" || c.tag === "item") {
+        const childIndent = c.tag === "paragraph" ? indent : indent + (n.tag === "article" ? 0 : 1);
+        walk(c, childIndent, c.num);
       } else {
-        current = undefined;
+        walk(c, indent, pending);   // intro / content / wrapUp keep the pending number
+        pending = undefined;
       }
-      continue;
     }
-    if (wantTitle) {
-      wantTitle.title = raw.trim();
-      wantTitle = undefined;
-      continue;
+    if (pending) lines.push({ text: pending, indent });
+  };
+  walk(article, 0, undefined);
+  return lines;
+}
+
+function collectArticles(nodes: AknNode[], chapter?: string, out: Pasal[] = []): Pasal[] {
+  for (const n of nodes) {
+    if (n.tag === "article") {
+      out.push({ label: `Pasal ${n.num}`, num: n.num ?? "", eId: n.eId ?? "", chapter,
+        lines: flatten(n) });
+    } else if (n.tag !== "p") {
+      collectArticles(n.children, n.tag === "chapter" ? `BAB ${n.num}` : chapter, out);
     }
-    const indent = Math.floor((raw.length - raw.trimStart().length) / 2);
-    const text = raw.trim();
-    nodes.push({ kind: "line", label: text, indent, inPenjelasan });
-    current?.lines.push({ text, indent });
   }
-  return { meta, nodes, pasal, penjelasan };
+  return out;
+}
+
+export function parseAkn(xml: string): LawDoc {
+  const dom = new DOMParser().parseFromString(xml, "text/xml");
+  const root = elements(dom.documentElement as unknown as Element)[0]; // <act> / <bill>
+  const part = (tag: string) => {
+    const el = elements(root).find((e) => e.localName === tag);
+    return el ? toNode(el).children : [];
+  };
+  const attachment = Array.from(root.getElementsByTagName("attachment"))
+    .find((a) => elements(a).some((e) => e.localName === "heading" && textOf(e) === "Penjelasan"));
+  const mainBody = attachment ? attachment.getElementsByTagName("mainBody")[0] : undefined;
+  const penjelasan = mainBody ? toNode(mainBody).children : [];
+  const title = Array.from(root.getElementsByTagName("FRBRalias"))
+    .find((a) => a.getAttribute("name") === "title")?.getAttribute("value") ?? undefined;
+  const body = part("body");
+  return {
+    title,
+    preface: part("preface"),
+    preamble: part("preamble"),
+    body,
+    conclusions: part("conclusions"),
+    penjelasan,
+    pasal: collectArticles(body),
+    penjelasanPasal: new Map(collectArticles(penjelasan).map((p) => [p.num, p])),
+  };
 }
 
 export function pasalText(p: Pasal): string {

@@ -3,13 +3,10 @@ import json
 import pytest
 
 from hukum_bersih.cli import main
-from hukum_bersih.fetch import (
-    already_archived,
-    archived_filename,
-    manifest_path,
-    raw_wayback_url,
-    safe_filename,
-)
+from hukum_bersih.fetch import archived_filename
+from hukum_bersih.manifest import already_archived, manifest_path
+from hukum_bersih.sources.http import safe_filename
+from hukum_bersih.sources.wayback import raw_url as raw_wayback_url
 
 WAYBACK = (
     "https://web.archive.org/web/20251106052153/https://jdih.ppatk.go.id/storage/"

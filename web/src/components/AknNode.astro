@@ -1,0 +1,35 @@
+---
+// Recursive renderer for an Akoma Ntoso subtree (lib/lawdoc.ts). Element names become
+// "akn-<name>" classes and eIds become ids, following Laws.Africa's HTML convention so that
+// their law-widgets can be used on top later.
+import type { AknNode } from "../lib/lawdoc.ts";
+
+interface Props { node: AknNode; penjelasan?: boolean }
+const { node, penjelasan = false } = Astro.props;
+const LABEL: Record<string, string> = { chapter: "BAB", part: "Bagian", subpart: "Paragraf", article: "Pasal" };
+const isHeadingBlock = ["chapter", "part", "subpart"].includes(node.tag);
+const label = node.num && LABEL[node.tag] ? `${LABEL[node.tag]} ${node.num}` : node.num;
+const id = node.eId ? (penjelasan ? `penjelasan-${node.eId}` : node.eId) : undefined;
+---
+{node.tag === "p" ? (
+  <p class="akn-p" id={id}>{node.text}</p>
+) : node.tag === "article" ? (
+  <section class="akn-article" id={id}>
+    <h3><a href={`#${id}`}>{label}</a></h3>
+    {node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} />)}
+  </section>
+) : isHeadingBlock ? (
+  <section class={`akn-${node.tag}`} id={id}>
+    <h2>{node.tag === "part" && penjelasan ? node.num : label}{node.heading && <span class="sub">{node.heading}</span>}</h2>
+    {node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} />)}
+  </section>
+) : node.num ? (
+  <div class={`akn-${node.tag} numbered`} id={id}>
+    <span class="akn-num">{node.num}</span>
+    <div class="akn-body">{node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} />)}</div>
+  </div>
+) : (
+  <div class={`akn-${node.tag}`} id={id}>
+    {node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} />)}
+  </div>
+)}
