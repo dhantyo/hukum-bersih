@@ -96,23 +96,34 @@ const chapterChange = (r: (typeof cmp.rows)[number]) => {
                 const ref = l.ref && (
                   <span class="ref">≈ <a href={`#${anchorOf.get(l.ref.pasal) ?? ""}`}>{l.ref.label}</a> ({yearOf(l.ref.side === "a" ? a : b)})</span>
                 );
+                const any = l.b ?? l.a!;
+                const numChanged = l.a && l.b && l.a.num !== l.b.num;
                 return (
                   <>
-                    <div class={`cell old line i${l.indent} ${oldKind}`}>
-                      {oldKind !== "baru" && l.parts.filter((p) => !p.added).map((p) =>
-                        p.removed ? <del>{p.value}</del> : p.value)}
-                      {l.kind === "dihapus" && ref}
+                    <div class={`cell old line ${oldKind}`} style={`--i:${l.a?.indent ?? any.indent}`}>
+                      {l.a && <span class="num">{numChanged ? <del>{l.a.num}</del> : l.a.num}</span>}
+                      <span class="txt">
+                        {oldKind !== "baru" && l.parts.filter((p) => !p.added).map((p) =>
+                          p.removed ? <del>{p.value}</del> : p.value)}
+                        {l.kind === "dihapus" && ref}
+                      </span>
                     </div>
-                    <div class={`cell new line i${l.indent} ${newKind}`}>
-                      {newKind !== "dihapus" && l.parts.filter((p) => !p.removed).map((p) =>
-                        p.added ? <ins>{p.value}</ins> : p.value)}
-                      {l.kind === "baru" && ref}
+                    <div class={`cell new line ${newKind}`} style={`--i:${l.b?.indent ?? any.indent}`}>
+                      {l.b && <span class="num">{numChanged ? <ins>{l.b.num}</ins> : l.b.num}</span>}
+                      <span class="txt">
+                        {newKind !== "dihapus" && l.parts.filter((p) => !p.removed).map((p) =>
+                          p.added ? <ins>{p.value}</ins> : p.value)}
+                        {l.kind === "baru" && ref}
+                      </span>
                     </div>
-                    <div class={`cell inline line i${l.indent} ${l.kind}`}>
-                      {l.kind === "diganti"
-                        ? <><del>{l.parts[0].value}</del><br /><ins>{l.parts[1].value}</ins></>
-                        : l.parts.map((p) => p.added ? <ins>{p.value}</ins> : p.removed ? <del>{p.value}</del> : p.value)}
-                      {ref}
+                    <div class={`cell inline line ${l.kind}`} style={`--i:${any.indent}`}>
+                      <span class="num">{numChanged ? <><del>{l.a!.num}</del> <ins>{l.b!.num}</ins></> : any.num}</span>
+                      <span class="txt">
+                        {l.kind === "diganti"
+                          ? <><del>{l.parts[0].value}</del><br /><ins>{l.parts[1].value}</ins></>
+                          : l.parts.map((p) => p.added ? <ins>{p.value}</ins> : p.removed ? <del>{p.value}</del> : p.value)}
+                        {ref}
+                      </span>
                     </div>
                   </>
                 );
@@ -159,15 +170,24 @@ const chapterChange = (r: (typeof cmp.rows)[number]) => {
   .cell h3 { font-size: 0.95rem; margin: 0.25rem 0 0.4rem; }
   .cell h3 .ver { font-weight: 400; color: var(--muted); font-size: 0.85em; }
   .cell .none { color: var(--muted); font-style: italic; font-size: 0.9rem; margin: 0.25rem 0; }
-  .cell.line { padding: 0.2rem 0.4rem; margin: 0.1rem 0; border-radius: 4px; min-height: 0; }
-  .cell.line.i1 { padding-left: 1.6rem; }
-  .cell.line.i2 { padding-left: 2.8rem; }
-  .cell.line.i3 { padding-left: 4rem; }
+  /* hanging numbers: "(1)" / "a." in their own column, wrapped text stays indented; each
+     nesting level (--i) indents by one number column */
+  .cell.line {
+    --num: 2.3rem;
+    display: grid; grid-template-columns: minmax(var(--num), max-content) 1fr; column-gap: 0.3rem;
+    align-items: start;
+    margin: 0.1rem 0 0.1rem calc(var(--i, 0) * var(--num));
+    padding: 0.2rem 0.4rem; border-radius: 4px;
+  }
+  .cell.line .num { grid-column: 1; white-space: nowrap; }
+  .cell.line .txt { grid-column: 2; min-width: 0; }
+  .cell.line .num:empty + .txt { grid-column: 1 / -1; }
   .cell.old.line.dihapus { background: var(--del-bg); color: var(--del-text); }
   .cell.new.line.baru { background: var(--ins-bg); color: var(--ins-text); }
   .cell.new.line.dihapus, .cell.old.line.baru { visibility: hidden; padding-top: 0; padding-bottom: 0; }
   .cell.inline { display: none; }
-  .ref { display: block; margin-top: 0.2rem; font-size: 0.8rem; color: var(--muted); text-decoration: none; }
+  /* inline-block: a struck-through line's strike does not carry into its pointer */
+  .ref { display: inline-block; width: 100%; margin-top: 0.2rem; font-size: 0.8rem; color: var(--muted); }
   .ref a { color: inherit; }
   .cell.old.line.dihapus del { background: none; }
   .cell.new.line.baru ins { background: none; }
@@ -179,12 +199,12 @@ const chapterChange = (r: (typeof cmp.rows)[number]) => {
     .syn-head { display: none; }
     .syn-pair { grid-template-columns: 1fr; }
     .cell.line.old, .cell.line.new { display: none; }
-    .cell.inline { display: block; }
-    .cell.inline.dihapus { background: var(--del-bg); color: var(--del-text); text-decoration: line-through; }
-    .cell.inline.dihapus .ref { text-decoration: none; }
+    .cell.inline { display: grid; }
+    .cell.inline.dihapus { background: var(--del-bg); color: var(--del-text); }
+    .cell.inline.dihapus .txt > :not(.ref), .cell.inline.dihapus .num { text-decoration: line-through; }
     .cell.inline.baru { background: var(--ins-bg); color: var(--ins-text); }
     .cell.inline.dihapus del, .cell.inline.baru ins { background: none; }
     .baru .cell.old:not(.line), .dihapus .cell.new:not(.line) { display: none; }
-    .cell.line.i1 { padding-left: 1rem; } .cell.line.i2 { padding-left: 1.8rem; } .cell.line.i3 { padding-left: 2.6rem; }
+    .cell.line { --num: 1.9rem; }
   }
 </style>

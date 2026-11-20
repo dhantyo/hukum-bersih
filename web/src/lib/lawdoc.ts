@@ -11,7 +11,10 @@ export interface AknNode {
   children: AknNode[];
 }
 
-export interface PasalLine { text: string; indent: number; eId?: string }
+/** One ayat / huruf / angka / sentence. ``num`` is its own label ("(1)", "a.") kept apart from
+ * the text so it can hang to the left; ``indent`` is how many numbered levels (ayat, huruf,
+ * angka) enclose the line, so nested lines line up under their parent's text. */
+export interface PasalLine { num?: string; text: string; indent: number; eId?: string }
 
 export interface Pasal {
   label: string;        // "Pasal 5"
@@ -61,26 +64,36 @@ function toNode(el: Element): AknNode {
   return node;
 }
 
-/** Flatten one article: its own text plus each paragraph / point as a line. */
+const NUMBERED = new Set(["paragraph", "point", "item"]);
+
+/** Flatten one article into lines. A numbered element's first sentence carries its number;
+ * further sentences inside it are indented to line up with that sentence's text. */
 function flatten(article: AknNode): PasalLine[] {
   const lines: PasalLine[] = [];
-  const walk = (n: AknNode, indent: number, prefix: string | undefined) => {
-    let pending = prefix;
+  // depth = numbered elements enclosing the text; returns a number not yet attached to text
+  const walk = (n: AknNode, depth: number, pending?: string): string | undefined => {
     for (const c of n.children) {
       if (c.tag === "p") {
-        lines.push({ text: pending ? `${pending} ${c.text}` : c.text ?? "", indent, eId: c.eId });
-        pending = undefined;
-      } else if (c.tag === "paragraph" || c.tag === "point" || c.tag === "item") {
-        const childIndent = c.tag === "paragraph" ? indent : indent + (n.tag === "article" ? 0 : 1);
-        walk(c, childIndent, c.num);
+        if (pending !== undefined) {
+          lines.push({ num: pending, text: c.text ?? "", indent: depth - 1, eId: c.eId });
+          pending = undefined;
+        } else {
+          lines.push({ text: c.text ?? "", indent: depth, eId: c.eId });
+        }
+      } else if (NUMBERED.has(c.tag)) {
+        if (pending !== undefined) {
+          lines.push({ num: pending, text: "", indent: depth - 1 });
+          pending = undefined;
+        }
+        const rest = walk(c, depth + 1, c.num);
+        if (rest !== undefined) lines.push({ num: rest, text: "", indent: depth });
       } else {
-        walk(c, indent, pending);   // intro / content / wrapUp keep the pending number
-        pending = undefined;
+        pending = walk(c, depth, pending);   // intro / content / wrapUp
       }
     }
-    if (pending) lines.push({ text: pending, indent });
+    return pending;
   };
-  walk(article, 0, undefined);
+  walk(article, 0);
   return lines;
 }
 
@@ -122,6 +135,8 @@ export function parseAkn(xml: string): LawDoc {
   };
 }
 
+export const lineText = (l: PasalLine): string => (l.num ? `${l.num} ${l.text}` : l.text);
+
 export function pasalText(p: Pasal): string {
-  return p.lines.map((l) => "  ".repeat(l.indent) + l.text).join("\n");
+  return p.lines.map((l) => "  ".repeat(l.indent) + lineText(l)).join("\n");
 }

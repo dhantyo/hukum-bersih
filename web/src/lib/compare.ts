@@ -11,7 +11,7 @@ type LineVectors = Map<PasalLine, Map<string, number>>;
  * ("(1)", "a.") are ignored. */
 function linesVectors(pasal: Pasal[]): LineVectors {
   const lines = pasal.flatMap((p) => p.lines);
-  const vectors = tfidf(lines.map((l) => l.text.replace(/^\(\d+\)|^[a-z0-9]{1,2}\./, "")));
+  const vectors = tfidf(lines.map((l) => l.text));
   return new Map(lines.map((l, k) => [l, vectors[k]]));
 }
 
@@ -22,7 +22,9 @@ export type Status = "sama" | "berubah" | "baru" | "dihapus";
 export interface LineDiff {
   /** "diganti": the same ayat, reworded so much that it is shown old-left / new-right in full. */
   kind: "sama" | "berubah" | "baru" | "dihapus" | "diganti";
-  indent: number;
+  a?: PasalLine;        // the line in the old version (number, indent, text)
+  b?: PasalLine;        // the line in the new version
+  /** Word diff of the texts (numbers are kept apart in a.num / b.num). */
   parts: Part[];
   /** For "baru" / "dihapus": the most similar ayat elsewhere in the other version, so splits
    * and merges (one pasal becoming two) stay traceable although rows pair pasal one-to-one. */
@@ -158,23 +160,21 @@ function unchangedShare(parts: Part[], a: string, b: string): number {
 /** Ayat-by-ayat diff: align lines (TF-IDF cosine, so reworded ayat still pair up), then word
  * diff only inside matched lines. */
 export function diffLines(a: Pasal, b: Pasal, vec: LineVectors = linesVectors([a, b])): LineDiff[] {
-  const la = a.lines.map((l) => l.text);
-  const lb = b.lines.map((l) => l.text);
   const simOf = (x: PasalLine, y: PasalLine) => cosine(vec.get(x)!, vec.get(y)!);
   return align(a.lines, b.lines, LINE_THRESHOLD, simOf).flatMap(({ i, j }): LineDiff[] => {
-    if (i !== undefined && j !== undefined) {
-      if (la[i] === lb[j]) return [{ kind: "sama", indent: b.lines[j].indent, parts: whole(lb[j], false, false) }];
-      const parts = wordDiff(la[i], lb[j]);
-      if (unchangedShare(parts, la[i], lb[j]) < REWRITE_THRESHOLD) {
-        return [{ kind: "diganti", indent: b.lines[j].indent,
-          parts: [...whole(la[i], false, true), ...whole(lb[j], true, false)] }];
+    const la = i === undefined ? undefined : a.lines[i];
+    const lb = j === undefined ? undefined : b.lines[j];
+    if (la && lb) {
+      if (la.text === lb.text) return [{ kind: "sama", a: la, b: lb, parts: whole(lb.text, false, false) }];
+      const parts = wordDiff(la.text, lb.text);
+      if (unchangedShare(parts, la.text, lb.text) < REWRITE_THRESHOLD) {
+        return [{ kind: "diganti", a: la, b: lb,
+          parts: [...whole(la.text, false, true), ...whole(lb.text, true, false)] }];
       }
-      return [{ kind: "berubah", indent: b.lines[j].indent, parts }];
+      return [{ kind: "berubah", a: la, b: lb, parts }];
     }
-    if (i !== undefined) {
-      return [{ kind: "dihapus", indent: a.lines[i].indent, parts: whole(la[i], false, true) }];
-    }
-    return [{ kind: "baru", indent: b.lines[j!].indent, parts: whole(lb[j!], true, false) }];
+    if (la) return [{ kind: "dihapus", a: la, parts: whole(la.text, false, true) }];
+    return [{ kind: "baru", b: lb, parts: whole(lb!.text, true, false) }];
   });
 }
 
@@ -189,7 +189,7 @@ function row(a: Pasal, b: Pasal, ta: string, tb: string, sim: number, moved: boo
 }
 
 const only = (p: Pasal, kind: "baru" | "dihapus"): LineDiff[] =>
-  p.lines.map((l) => ({ kind, indent: l.indent,
+  p.lines.map((l) => ({ kind, ...(kind === "baru" ? { b: l } : { a: l }),
     parts: whole(l.text, kind === "baru", kind === "dihapus") }));
 
 export function compare(docA: LawDoc, docB: LawDoc): Comparison {
@@ -239,9 +239,9 @@ export function compare(docA: LawDoc, docB: LawDoc): Comparison {
   return { rows, counts };
 }
 
-/** "Pasal 23 ayat (1)" / "Pasal 2 huruf a" / "Pasal 1 angka 3" from a line's leading number. */
-function lineLabel(p: Pasal, text: string): string {
-  const m = text.match(/^\((\d+)\)|^([a-z])\.|^(\d+)\./);
+/** "Pasal 23 ayat (1)" / "Pasal 2 huruf a" / "Pasal 1 angka 3" from a line's number. */
+function lineLabel(p: Pasal, line: PasalLine): string {
+  const m = line.num?.match(/^\((\d+)\)$|^([a-z])\.$|^(\d+)\.$/);
   if (!m) return p.label;
   return m[1] ? `${p.label} ayat (${m[1]})` : m[2] ? `${p.label} huruf ${m[2]}` : `${p.label} angka ${m[3]}`;
 }
@@ -283,25 +283,25 @@ function addRefs(rows: PasalComparison[], docA: LawDoc, docB: LawDoc, vec: LineV
     ...docA.pasal.flatMap((p) => p.lines.map((l) => ({ side: "a" as const, p, l }))),
     ...docB.pasal.flatMap((p) => p.lines.map((l) => ({ side: "b" as const, p, l }))),
   ];
-  const byText = new Map<string, PasalLine>();
-  for (const e of entries) byText.set(`${e.side}\u0000${e.l.text}`, e.l);
   for (const r of rows) {
+    // lines already paired in this row are taken; unpaired ones in the same pasal are fair
+    // targets (clauses that swapped places cannot both be paired in order)
+    const taken = new Set(r.lines.filter((l) => l.a && l.b).flatMap((l) => [l.a!, l.b!]));
     for (const l of r.lines) {
       if (l.kind !== "baru" && l.kind !== "dihapus") continue;
       const own = l.kind === "baru" ? "b" : "a";
       const other = own === "b" ? "a" : "b";               // look in the other version
-      const paired = other === "a" ? r.a : r.b;            // except the pasal it is paired with
-      const line = byText.get(`${own}\u0000${l.parts[0].value}`);
+      const line = own === "a" ? l.a : l.b;
       if (line === undefined) continue;
       let best = { sim: 0, e: undefined as (typeof entries)[number] | undefined };
       let second = 0;
       entries.forEach((e) => {
-        if (e.side !== other || e.p === paired) return;
+        if (e.side !== other || taken.has(e.l)) return;
         const sim = cosine(vec.get(line)!, vec.get(e.l)!);
         if (sim > best.sim) { second = best.sim; best = { sim, e }; } else if (sim > second) second = sim;
       });
       if (best.e && best.sim >= REF_THRESHOLD && best.sim - second >= REF_MARGIN) {
-        l.ref = { label: lineLabel(best.e.p, best.e.l.text), side: other, pasal: best.e.p };
+        l.ref = { label: lineLabel(best.e.p, best.e.l), side: other, pasal: best.e.p };
       }
     }
   }

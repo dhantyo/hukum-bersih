@@ -70,10 +70,11 @@ test("M1: RUU Perampasan Aset Pasal 5(2) changed", () => {
   assert.ok(row, "Pasal 5 of the 2023 draft is in the comparison");
   assert.equal(row.b?.label, "Pasal 5");
   assert.equal(row.status, "berubah");
-  const text = (keep: (p: { added?: boolean; removed?: boolean }) => boolean) =>
-    row.lines.map((l) => l.parts.filter(keep).map((p) => p.value).join("")).join("\n");
-  const before = text((p) => !p.added);
-  const after = text((p) => !p.removed);
+  const text = (side: "a" | "b", keep: (p: { added?: boolean; removed?: boolean }) => boolean) =>
+    row.lines.filter((l) => l[side]).map((l) =>
+      `${l[side]!.num ? l[side]!.num + " " : ""}${l.parts.filter(keep).map((p) => p.value).join("")}`).join("\n");
+  const before = text("a", (p) => !p.added);
+  const after = text("b", (p) => !p.removed);
   // 2023 Pasal 5(2)(a): unexplained wealth
   assert.match(before, /a\. Aset yang tidak seimbang dengan penghasilan/);
   assert.doesNotMatch(after, /tidak seimbang dengan penghasilan/);
@@ -81,22 +82,22 @@ test("M1: RUU Perampasan Aset Pasal 5(2) changed", () => {
   assert.match(after, /\(2\) Aset lain yang sah milik pelaku tindak pidana/);
   // the unexplained-wealth item is shown as removed as a whole line
   const gone = row.lines.find((l) => l.kind === "dihapus" &&
-    l.parts[0].value.includes("tidak seimbang dengan penghasilan"));
+    l.a!.num === "a." && l.a!.text.startsWith("Aset yang tidak seimbang dengan penghasilan"));
   assert.ok(gone, "unexplained-wealth item is a removed line");
 });
 
 test("a reworded ayat stays on one row; split pasal point to each other", () => {
   const a: LawDoc = { ...doc([]), pasal: [{ label: "Pasal 23", num: "23", eId: "art_23", lines: [
-    { text: "(1) Penyidik menyerahkan hasil pemberkasan kepada Jaksa Pengacara Negara dalam waktu paling lama 3 hari.", indent: 0 },
-    { text: "(2) Jaksa Pengacara Negara wajib melakukan pemeriksaan kelengkapan berkas untuk diajukan ke pengadilan dalam waktu 7 hari sejak berkas diterima.", indent: 0 },
+    { num: "(1)", text: "Penyidik menyerahkan hasil pemberkasan kepada Jaksa Pengacara Negara dalam waktu paling lama 3 hari.", indent: 0 },
+    { num: "(2)", text: "Jaksa Pengacara Negara wajib melakukan pemeriksaan kelengkapan berkas untuk diajukan ke pengadilan dalam waktu 7 hari sejak berkas diterima.", indent: 0 },
   ] }] };
   const b: LawDoc = { ...doc([]), pasal: [
     { label: "Pasal 23", num: "23", eId: "art_23", lines: [
-      { text: "(1) Penyidik melakukan penyusunan berkas perkara atas Aset yang telah disita.", indent: 0 },
-      { text: "(2) Penyidik menyerahkan hasil pemberkasan kepada Jaksa Pengacara Negara dalam waktu paling lama 2 hari.", indent: 0 },
+      { num: "(1)", text: "Penyidik melakukan penyusunan berkas perkara atas Aset yang telah disita.", indent: 0 },
+      { num: "(2)", text: "Penyidik menyerahkan hasil pemberkasan kepada Jaksa Pengacara Negara dalam waktu paling lama 2 hari.", indent: 0 },
     ] },
     { label: "Pasal 24", num: "24", eId: "art_24", lines: [
-      { text: "(1) Jaksa Pengacara Negara wajib melakukan pemeriksaan terhadap kelengkapan berkas perkara sebagaimana dimaksud dalam Pasal 23.", indent: 0 },
+      { num: "(1)", text: "Jaksa Pengacara Negara wajib melakukan pemeriksaan terhadap kelengkapan berkas perkara sebagaimana dimaksud dalam Pasal 23.", indent: 0 },
     ] },
   ] };
   const rows = compare(a, b).rows;
@@ -106,4 +107,17 @@ test("a reworded ayat stays on one row; split pasal point to each other", () => 
     for (const l of r.lines.filter((l) => l.kind === "dihapus")) assert.ok(l.ref, l.parts[0].value);
   }
   assert.ok(all.some((l) => l.ref?.label.startsWith("Pasal 23 ayat") || l.ref?.label.startsWith("Pasal 24 ayat")));
+});
+
+test("numbers hang apart from text and nesting is consistent", () => {
+  const dir = new URL("../../generated/akn/ruu/perampasan-aset/", import.meta.url);
+  const a = parseAkn(readFileSync(new URL("ruu_perampasan-aset_2023-05_draft_pemerintah.xml", dir), "utf8"));
+  const p40 = a.pasal.find((p) => p.label === "Pasal 40")!;
+  // intro sentence, then a.-g. at the same level, each with its own number
+  assert.deepEqual(p40.lines.map((l) => [l.num ?? "", l.indent]),
+    [["", 0], ["a.", 0], ["b.", 0], ["c.", 0], ["d.", 0], ["e.", 0], ["f.", 0], ["g.", 0]]);
+  const p5 = a.pasal.find((p) => p.label === "Pasal 5")!;
+  // (1) ayat, its huruf one level in (lined up under the ayat text)
+  assert.deepEqual(p5.lines.slice(0, 3).map((l) => [l.num, l.indent]), [["(1)", 0], ["a.", 1], ["b.", 1]]);
+  assert.ok(!p5.lines.some((l) => /^\(\d+\)|^[a-z]\. /.test(l.text)), "numbers are not left in the text");
 });
