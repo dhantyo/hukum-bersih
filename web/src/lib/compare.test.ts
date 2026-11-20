@@ -1,0 +1,70 @@
+// Run with: npm test   (node's built-in test runner; TypeScript types are stripped by node)
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import { parseLawDoc } from "./lawdoc.ts";
+import { align, compare, similarity } from "./compare.ts";
+
+const doc = (pasal: string[]) =>
+  parseLawDoc(pasal.map((t, k) => `#### Pasal ${k + 1} {#pasal-${k + 1}}\n\n${t}\n`).join("\n"));
+
+test("similarity", () => {
+  assert.equal(similarity("aset tindak pidana dirampas", "aset tindak pidana dirampas"), 1);
+  assert.equal(similarity("satu dua tiga", "empat lima enam"), 0);
+});
+
+test("align keeps order and skips unrelated pasal", () => {
+  const pairs = align(
+    ["aset dapat dirampas oleh negara", "ketentuan peralihan berlaku sejak diundangkan"],
+    ["aset dapat dirampas oleh negara republik", "badan baru dibentuk presiden",
+      "ketentuan peralihan berlaku sejak diundangkan"],
+  );
+  assert.deepEqual(pairs.map((p) => [p.i, p.j]), [[0, 0], [undefined, 1], [1, 2]]);
+});
+
+test("renumbered and inserted pasal", () => {
+  const a = doc(["Aset dapat dirampas oleh negara melalui putusan pengadilan.",
+    "Undang-Undang ini mulai berlaku pada tanggal diundangkan."]);
+  const b = doc(["Badan Pengelola Aset dibentuk oleh Presiden dan bertanggung jawab kepadanya.",
+    "Aset dapat dirampas oleh negara melalui putusan pengadilan negeri.",
+    "Undang-Undang ini mulai berlaku pada tanggal diundangkan."]);
+  const c = compare(a, b);
+  assert.deepEqual(c.rows.map((r) => [r.status, r.a?.label, r.b?.label]), [
+    ["baru", undefined, "Pasal 1"],
+    ["berubah", "Pasal 1", "Pasal 2"],
+    ["sama", "Pasal 2", "Pasal 3"],
+  ]);
+  const changed = c.rows[1];
+  assert.ok(changed.renumbered);
+  const added = changed.lines.flatMap((l) => l.parts).filter((p) => p.added);
+  assert.equal(added.map((p) => p.value.trim()).join(" "), "negeri");
+});
+
+// M1 acceptance check (docs/BRIEF.md §9): the diff between the 2023 government draft and the
+// 2026-11-19 final draft shows that Pasal 5(2) changed, and the unexplained-wealth clause
+// (Pasal 5(2)(a) of the 2023 draft) is gone.
+test("M1: RUU Perampasan Aset Pasal 5(2) changed", () => {
+  const dir = new URL("../../../data/ruu/perampasan-aset/versions/", import.meta.url);
+  const read = (f: string) => parseLawDoc(readFileSync(new URL(f, dir), "utf8"));
+  const a = read("ruu_perampasan-aset_2023-05_draft_pemerintah.md");
+  const b = read("ruu_perampasan-aset_2026-11-19_draft-final.md");
+  assert.equal(a.pasal.length, 68);
+  assert.equal(b.pasal.length, 74);
+  const row = compare(a, b).rows.find((r) => r.a?.label === "Pasal 5");
+  assert.ok(row, "Pasal 5 of the 2023 draft is in the comparison");
+  assert.equal(row.b?.label, "Pasal 5");
+  assert.equal(row.status, "berubah");
+  const text = (keep: (p: { added?: boolean; removed?: boolean }) => boolean) =>
+    row.lines.map((l) => l.parts.filter(keep).map((p) => p.value).join("")).join("\n");
+  const before = text((p) => !p.added);
+  const after = text((p) => !p.removed);
+  // 2023 Pasal 5(2)(a): unexplained wealth
+  assert.match(before, /a\. Aset yang tidak seimbang dengan penghasilan/);
+  assert.doesNotMatch(after, /tidak seimbang dengan penghasilan/);
+  assert.match(before, /\(2\) Selain Aset sebagaimana dimaksud pada ayat \(1\)/);
+  assert.match(after, /\(2\) Aset lain yang sah milik pelaku tindak pidana/);
+  // the unexplained-wealth item is shown as removed as a whole line
+  const gone = row.lines.find((l) => l.kind === "dihapus" &&
+    l.parts[0].value.includes("tidak seimbang dengan penghasilan"));
+  assert.ok(gone, "unexplained-wealth item is a removed line");
+});

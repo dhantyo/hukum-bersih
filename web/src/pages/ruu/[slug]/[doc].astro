@@ -1,0 +1,32 @@
+---
+import Base from "../../../layouts/Base.astro";
+import LawText from "../../../components/LawText.astro";
+import { loadRuus, loadText, versions, type Ruu, type RuuDocument } from "../../../lib/data.ts";
+import { DOC_TYPE, PROVENANCE, provenanceKey, tanggal } from "../../../lib/labels.ts";
+
+export function getStaticPaths() {
+  return loadRuus().flatMap((ruu) =>
+    versions(ruu).map((doc) => ({ params: { slug: ruu.slug, doc: doc.id }, props: { ruu, doc } })));
+}
+const { ruu, doc } = Astro.props as { ruu: Ruu; doc: RuuDocument };
+const base = import.meta.env.BASE_URL;
+const text = loadText(ruu, doc);
+const p = PROVENANCE[provenanceKey(doc.provenance)];
+const name = `${ruu.short_name ?? ruu.title} – ${DOC_TYPE[doc.type] ?? doc.type} (${tanggal(doc.date)})`;
+---
+<Base title={name} description={doc.label ?? name}>
+  <p class="muted small"><a href={`${base}ruu/`}>RUU</a> › <a href={`${base}ruu/${ruu.slug}/`}>{ruu.short_name ?? ruu.title}</a></p>
+  <h1>{DOC_TYPE[doc.type] ?? doc.type} <span class="muted">· {tanggal(doc.date)}</span></h1>
+  <div class="card small">
+    <span class={`badge ${provenanceKey(doc.provenance)}`}>{p.label}</span> {p.hint}
+    {doc.label && <div>{doc.label}</div>}
+    <div>
+      {doc.source_url && <a href={doc.source_url}>Sumber</a>}
+      {doc.archive_url && <> · <a href={doc.archive_url}>Salinan arsip (PDF)</a></>}
+    </div>
+    <div class="muted">
+      Teks diambil otomatis dari PDF dan bisa memuat kesalahan baca; PDF-nya yang berlaku.
+    </div>
+  </div>
+  <LawText doc={text} />
+</Base>

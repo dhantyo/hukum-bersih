@@ -10,10 +10,13 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build && pagefind --site dist",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "test": "node --test --disable-warning=ExperimentalWarning src/lib/*.test.ts"
   },
   "dependencies": {
-    "astro": "7.4.13"
+    "astro": "7.4.13",
+    "diff": "9.0.0",
+    "yaml": "2.9.1"
   },
   "devDependencies": {
     "pagefind": "1.6.0",

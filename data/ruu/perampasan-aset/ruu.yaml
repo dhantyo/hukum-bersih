@@ -16,27 +16,27 @@ stages:
   - { stage: dim_pemerintah, date: 2026-11-05, note: "Pemerintah menyerahkan DIM" }
   - { stage: pembicaraan_tingkat_i, date: 2026-11-18 }
   - { stage: pembicaraan_tingkat_ii, date: 2026-11-19, note: "Disetujui rapat paripurna" }
-enacted_as: null          # set to /akn/id/act/uu/2026/N once numbered
+enacted_as: null          # set to uu_<nomor>_<tahun> once numbered (docs/NAMING.md)
 
 documents:
   - id: ruu_perampasan-aset_2023-05_draft_pemerintah
     type: draft
-    label: Draf pemerintah 2023 (68 pasal, 7 BAB)
+    label: Draf pemerintah tahun 2023 (68 pasal, 7 BAB)
     ruu_title: RUU tentang Perampasan Aset Terkait Dengan Tindak Pidana
     date: 2023-05           # file is undated; PDF metadata created 2023-05-11
     provenance: archive     # PPATK removed the original; copy from the Wayback Machine
-    obtained_by: Wayback Machine (capture of jdih.ppatk.go.id, 2025-11-06)
+    obtained_by: Wayback Machine, salinan jdih.ppatk.go.id tanggal 6 November 2025
     source_url: https://web.archive.org/web/20251106052153/https://jdih.ppatk.go.id/storage/dokumen_produk_hukum/Draft%20Final%20RUU%20Perampasan%20Aset%20.pdf
     sha256: 87a11ba463a4afd3c31bce31a6c018679d4362b6c8cca9dada4c115d405b6502
     archive_url: https://archive.org/download/ruu_perampasan-aset_2023-05_draft_pemerintah/ruu_perampasan-aset_2023-05_draft_pemerintah.pdf
     text: versions/ruu_perampasan-aset_2023-05_draft_pemerintah.md
     note: >-
-      File is titled "Draft Final RUU Perampasan Aset". Copies circulated in 2026 as an
-      "August 2026 final draft" are this 2023 file.
+      Berkasnya berjudul "Draft Final RUU Perampasan Aset". Salinan yang beredar pada 2026
+      sebagai "draf final Agustus 2026" sebenarnya adalah berkas tahun 2023 ini.
 
   - id: ruu_perampasan-aset_2026-11-19_draft-final
     type: draft-final
-    label: Draf final yang disetujui paripurna (74 pasal, 9 BAB)
+    label: Draf final yang disetujui rapat paripurna (74 pasal, 9 BAB)
     date: 2026-11-19        # posted on the DPR page; PDF metadata created 2026-11-18
     provenance: official
     obtained_by: DPR
@@ -46,8 +46,8 @@ documents:
     text: versions/ruu_perampasan-aset_2026-11-19_draft-final.md
 
   # Known versions without a file (never reconstruct these).
-  - { id: ruu_perampasan-aset_2008_draft_ppatk, type: draft, date: 2008, provenance: null, source_url: null, note: "Original PPATK draft; no file found." }
-  - { id: ruu_perampasan-aset_2026-01-15_draft_bkd, type: draft, date: 2026-01-15, provenance: null, source_url: null, note: "BKD first draft, reported as 62 pasal; no file found." }
-  - { id: ruu_perampasan-aset_2026_draft_dpr, type: draft, date: 2026, provenance: null, source_url: null, note: "DPR draft before the initiative vote, reported as 66 pasal, 9 BAB; no file found." }
-  - { id: ruu_perampasan-aset_2026-07-10_draft, type: draft, date: 2026-07-10, provenance: null, source_url: null, note: "Only quoted in civil-society and Katadata reporting; no file found." }
-  - { id: ruu_perampasan-aset_2026-08_draft, type: draft, date: 2026-08, provenance: null, source_url: null, note: "Only quoted in reporting; no file found." }
+  - { id: ruu_perampasan-aset_2008_draft_ppatk, type: draft, date: 2008, provenance: null, source_url: null, note: "Draf awal dari PPATK; berkas belum ditemukan." }
+  - { id: ruu_perampasan-aset_2026-01-15_draft_bkd, type: draft, date: 2026-01-15, provenance: null, source_url: null, note: "Draf pertama Badan Keahlian DPR, diberitakan berisi 62 pasal; berkas belum ditemukan." }
+  - { id: ruu_perampasan-aset_2026_draft_dpr, type: draft, date: 2026, provenance: null, source_url: null, note: "Draf DPR sebelum ditetapkan sebagai RUU usul inisiatif, diberitakan berisi 66 pasal dan 9 BAB; berkas belum ditemukan." }
+  - { id: ruu_perampasan-aset_2026-07-10_draft, type: draft, date: 2026-07-10, provenance: null, source_url: null, note: "Hanya dikutip dalam laporan masyarakat sipil dan Katadata; berkas belum ditemukan." }
+  - { id: ruu_perampasan-aset_2026-08_draft, type: draft, date: 2026-08, provenance: null, source_url: null, note: "Hanya dikutip dalam pemberitaan; berkas belum ditemukan." }

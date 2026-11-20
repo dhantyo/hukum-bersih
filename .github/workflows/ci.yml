@@ -30,6 +30,7 @@ jobs:
           cache: npm
           cache-dependency-path: web/package-lock.json
       - run: npm ci
+      - run: npm test     # includes the M1 check: Pasal 5(2) of RUU Perampasan Aset changed
       - run: npm run build
 
   no-pdfs:

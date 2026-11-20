@@ -1,8 +1,25 @@
 ---
 import Base from "../layouts/Base.astro";
+import { loadRuus } from "../lib/data.ts";
+const ruus = loadRuus();
+const base = import.meta.env.BASE_URL;
 ---
-<Base title="Beranda">
+<Base title="Beranda" description="Teks hukum Indonesia yang bersih dan mudah dibaca, serta pelacakan RUU beserta setiap versi drafnya.">
   <h1>Hukum Bersih</h1>
-  <p>Teks peraturan Indonesia yang bersih dan mudah dicari, serta pelacakan RUU beserta setiap versi drafnya.</p>
-  <p lang="en">Open, readable Indonesian law and draft-bill tracking. Work in progress.</p>
+  <p>
+    Teks peraturan Indonesia yang bersih dan mudah dibaca, serta pelacakan
+    rancangan undang-undang (RUU) beserta setiap versi drafnya: dari mana asalnya,
+    dan apa yang berubah dari satu versi ke versi berikutnya.
+  </p>
+  <p class="muted small" lang="en">Open, readable Indonesian law and draft-bill tracking. Work in progress.</p>
+
+  <h2>RUU yang dilacak</h2>
+  <ul class="plain">
+    {ruus.map((r) => (
+      <li class="card">
+        <a href={`${base}ruu/${r.slug}/`}><strong>{r.short_name ?? r.title}</strong></a>
+        <div class="muted small">{r.title}</div>
+      </li>
+    ))}
+  </ul>
 </Base>
