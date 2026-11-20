@@ -1,0 +1,40 @@
+name: Delete archive.org files
+
+# Removes the files of obsolete archive.org items we uploaded (e.g. after renaming), then
+# retitles them "Duplikat (berkas dihapus)" and hides them from search. archive.org does not
+# let uploaders delete the item page itself. Type HAPUS in "confirm" to run.
+on:
+  workflow_dispatch:
+    inputs:
+      items:
+        description: "archive.org item identifiers, separated by spaces"
+        required: true
+      confirm:
+        description: "Type HAPUS to confirm"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  delete:
+    if: inputs.confirm == 'HAPUS'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync
+        working-directory: scraper
+      - name: Delete
+        working-directory: scraper
+        env:
+          IA_ACCESS_KEY: ${{ secrets.IA_ACCESS_KEY }}
+          IA_SECRET_KEY: ${{ secrets.IA_SECRET_KEY }}
+          ITEMS: ${{ inputs.items }}
+        run: |
+          read -r -d '' -a list <<< "$ITEMS" || true
+          set +e
+          uv run hukum-bersih archive-delete "${list[@]}" | tee out.log
+          status=${PIPESTATUS[0]}
+          cat out.log >> "$GITHUB_STEP_SUMMARY"
+          exit $status

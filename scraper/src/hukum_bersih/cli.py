@@ -35,6 +35,11 @@ def main(argv: list[str] | None = None) -> int:
     fetch_cmd.add_argument("--no-archive", action="store_true", help="hash only, skip IA upload")
     fetch_cmd.add_argument("--delay", type=float, default=2.0, help="seconds between requests")
 
+    clean_cmd = sub.add_parser(
+        "archive-delete", help="delete the files of obsolete archive.org items we uploaded"
+    )
+    clean_cmd.add_argument("items", nargs="+")
+
     args = parser.parse_args(argv)
     if args.command == "manifest":
         entry = entry_for_file(args.path, args.source_url, args.archive_url)
@@ -70,6 +75,19 @@ def main(argv: list[str] | None = None) -> int:
             state = "skipped (unchanged)" if res.skipped else "archived"
             print(f"{state}  {doc_id}  {url}\n        sha256={res.entry.sha256} bytes={res.entry.bytes}"
                   f"\n        {res.entry.archive_url}")
+        return 1 if failures else 0
+    elif args.command == "archive-delete":
+        from .archive_cleanup import empty_item
+
+        failures = 0
+        for ident in args.items:
+            try:
+                removed = empty_item(ident)
+            except Exception as e:  # noqa: BLE001 - report every item, then fail
+                failures += 1
+                print(f"FAILED  {ident}: {e}")
+                continue
+            print(f"emptied {ident}: removed {removed or 'nothing (already empty)'}")
         return 1 if failures else 0
     return 0
 
