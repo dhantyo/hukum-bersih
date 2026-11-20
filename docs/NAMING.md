@@ -1,5 +1,8 @@
 # Naming rule for documents
 
+This rule applies everywhere: archive.org, file names in `data/`, ids in `ruu.yaml`, and site
+URLs. It replaces the example file names in `docs/BRIEF.md` §6.1 and §6.3.
+
 Every document gets one **doc id**. The same id is used for the Internet Archive item, the
 archived file name, the Markdown text file, and the `id` in `ruu.yaml`. The original file name
 and URL are never lost: they are kept in the source manifest and in the archive item's metadata.
@@ -18,6 +21,7 @@ Lowercase letters, digits and hyphens only. Dates are ISO and only as precise as
 - `<date>`: the document's own date if known; otherwise the date it was posted.
 - `<who>`: optional, when the type alone is ambiguous: `pemerintah`, `dpr`, `bkd`, a media name.
 - `<n>`: `-1`, `-2`, … when one entry has several files (e.g. a DIM split into four PDFs).
+- Versions known to exist but never found still get a doc id, so they can be referred to.
 
 ### RUU document types
 
@@ -45,6 +49,8 @@ Lowercase letters, digits and hyphens only. Dates are ISO and only as precise as
 | Archived file | `<doc id>.pdf` (original extension, lowercased) |
 | RUU version text | `data/ruu/<slug>/versions/<doc id>.md` |
 | Regulation text | `data/peraturan/<jenis>/<tahun>/<doc id>.md` |
+| Source manifest line | `doc_id` field (plus `original_filename` from the source) |
+| Site page | `/ruu/<slug>/<doc id>/`, `/<jenis>/<tahun>/<doc id>/` |
 
 Examples:
 
