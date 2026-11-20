@@ -76,6 +76,11 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--limit", type=int, default=0, help="stop after N new imports (0 = all)")
     p.add_argument("--delay", type=float, default=2.0, help="seconds between requests")
 
+    p = sub.add_parser("archive-pending",
+                       help="archive recorded regulation PDFs not yet on archive.org")
+    p.add_argument("--limit", type=int, default=150)
+    p.add_argument("--delay", type=float, default=2.0)
+
     p = sub.add_parser("manifest", help="print a manifest entry for a local file")
     p.add_argument("path", type=Path)
     p.add_argument("--source-url", required=True)
@@ -137,6 +142,19 @@ def main(argv: list[str] | None = None) -> int:
                 if args.limit and done >= args.limit:
                     break
         return 0
+
+    if args.command == "archive-pending":
+        from .fetch import fetch_and_archive, pending
+
+        todo = {p.version: p for p in pending(args.data_dir)[: args.limit]}
+        print(f"{len(todo)} PDF(s) to archive")
+
+        def archive_one(version: str) -> str:
+            p = todo[version]
+            r = fetch_and_archive(p.url, version, args.data_dir, p.title)
+            return f"archived {r.item}  {r.entry.archive_url}"
+
+        return _each(todo, archive_one, args.delay)
 
     if args.command == "manifest":
         from .manifest import entry_for_file

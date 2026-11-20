@@ -55,3 +55,35 @@ def fetch_and_archive(
     with manifest.open("a") as f:
         f.write(json.dumps(entry.to_dict(), ensure_ascii=False) + "\n")
     return FetchResult(entry, item, filename, False, manifest)
+
+
+@dataclass(frozen=True)
+class Pending:
+    version: str          # id of the text version the PDF belongs to, e.g. uu_3_2026_2026-05-20
+    url: str
+    title: str | None
+
+
+def pending(data_dir: Path) -> list[Pending]:
+    """Regulation PDFs the importer recorded but that are not on archive.org yet."""
+    import yaml
+
+    from .manifest import records
+
+    archived = set()
+    for r in records(data_dir):
+        if r.get("archive_url") and r.get("doc_id"):
+            try:
+                archived.add(archive_item(r["doc_id"]))
+            except ValueError:
+                pass  # lines from before the naming rule (docs/NAMING.md) are history only
+    out = []
+    for path in sorted((data_dir / "peraturan").glob("*/*/*/*.yaml")):
+        rec = yaml.safe_load(path.read_text())
+        if rec["id"] in archived or not rec.get("source_pdf_url"):
+            continue
+        versions = rec.get("versions") or []
+        version = (versions[0]["id"] if versions
+                   else f"{rec['id']}_{rec.get('tanggal_penetapan') or rec['year']}")
+        out.append(Pending(version, rec["source_pdf_url"], rec.get("title")))
+    return out

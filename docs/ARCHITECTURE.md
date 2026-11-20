@@ -74,6 +74,7 @@ Names follow [NAMING.md](NAMING.md).
 | `fetch.yml` | manual | fetch + archive `id URL` pairs, commit manifest lines |
 | `archive-retitle.yml` | manual | rewrite archive.org titles/descriptions |
 | `archive-delete.yml` | manual | empty obsolete archive.org items |
+| `archive-pending.yml` | daily + manual | archive regulation PDFs the importer recorded (batches of 150) |
 | `probe-sources.yml` | manual | which sources a GitHub runner can reach |
 
 Where things run: GitHub runners reach DPR files and the Wayback Machine; the Claude cloud

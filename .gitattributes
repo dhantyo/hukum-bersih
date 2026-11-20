@@ -1,0 +1,3 @@
+# Source manifests are append-only JSONL written by several jobs (importer, archiver):
+# git's built-in union merge keeps both sides' new lines instead of conflicting.
+data/sources/manifests/*.jsonl merge=union
