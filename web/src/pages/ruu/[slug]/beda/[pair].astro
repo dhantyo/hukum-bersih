@@ -18,6 +18,9 @@ const base = import.meta.env.BASE_URL;
 const cmp: Comparison = compare(loadText(ruu, a), loadText(ruu, b));
 const name = (d: RuuDocument) => `${DOC_TYPE[d.type] ?? d.type} (${tanggal(d.date)})`;
 const prov = (d: RuuDocument) => PROVENANCE[provenanceKey(d.provenance)];
+const yearOf = (d: RuuDocument) => d.date.slice(0, 4);
+/** Matches below this are shown with a "low similarity" note. */
+const WEAK = 0.4;
 ---
 <Base title={`${ruu.short_name ?? ruu.title}: perbandingan`} noindex>
   <p class="muted small"><a href={`${base}ruu/`}>RUU</a> › <a href={`${base}ruu/${ruu.slug}/`}>{ruu.short_name ?? ruu.title}</a></p>
@@ -52,10 +55,17 @@ const prov = (d: RuuDocument) => PROVENANCE[provenanceKey(d.provenance)];
         <section class={`row ${r.status}`} id={anchor}>
           <h3>
             <a href={`#${anchor}`}>
-              {r.a && r.b && r.renumbered ? <>{r.a.label} → {r.b.label}</> : (r.b ?? r.a)!.label}
+              {r.a && r.b && r.renumbered
+                ? <>{r.a.label} <span class="ver">({yearOf(a)})</span> → {r.b.label} <span class="ver">({yearOf(b)})</span></>
+                : r.a && !r.b ? <>{r.a.label} <span class="ver">({yearOf(a)})</span></>
+                : r.b && !r.a ? <>{r.b.label} <span class="ver">({yearOf(b)})</span></>
+                : r.b!.label}
             </a>
             <span class={`status ${r.status}`}>{STATUS[r.status]}</span>
             {r.moved && <span class="status moved">Dipindah</span>}
+            {r.a && r.b && r.status === "berubah" && r.similarity < WEAK && (
+              <span class="status moved" title="Dicocokkan otomatis berdasarkan isi; kemiripannya rendah, periksa kedua teks.">Kemiripan rendah</span>
+            )}
           </h3>
           {r.lines.map((l) => (
             <p class={`l i${l.indent} ${l.kind}`}>
@@ -83,6 +93,7 @@ const prov = (d: RuuDocument) => PROVENANCE[provenanceKey(d.provenance)];
   .row { border-top: 1px solid var(--line); padding: 0.5rem 0 1rem; }
   .row h3 { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin: 1rem 0 0.5rem; }
   .row h3 a { color: inherit; text-decoration: none; }
+  .row h3 .ver { font-weight: 400; color: var(--muted); font-size: 0.85em; }
   .status { font-size: 0.75rem; font-weight: 600; padding: 0.05rem 0.5rem; border-radius: 999px;
     background: var(--line); color: var(--text); }
   .status.berubah { background: #f3e3b5; color: #5b4300; }

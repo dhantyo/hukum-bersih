@@ -88,6 +88,12 @@ def roman(s: str) -> int:
     return total
 
 
+def _follows(last: str, marker: str, kind: str) -> bool:
+    if kind == "letter":
+        return len(marker) == 1 and ord(marker) == ord(last) + 1
+    return int(marker) == int(last) + 1
+
+
 def is_caps(line: str) -> bool:
     letters = [c for c in line if c.isalpha()]
     return bool(letters) and all(c.isupper() for c in letters)
@@ -104,11 +110,11 @@ class Parser:
         self.last_pasal = 0
         self.last_bab = 0
         self.last_ayat = 0
-        self.last_letter: str | None = None
-        self.last_number = 0
+        # Open lists inside the current ayat/pasal, outermost first: [kind, last marker].
+        # Letters inside a numbered item (or numbers inside a lettered item) nest one deeper.
+        self.lists: list[list] = []
         self.in_penjelasan = False
         self.p_last_pasal = 0
-        self.expect_title_for: Block | None = None
 
     # helpers --------------------------------------------------------------
     def emit(self, block: Block) -> Block:
@@ -124,16 +130,25 @@ class Parser:
 
     def reset_lists(self) -> None:
         self.last_ayat = 0
-        self.last_letter = None
-        self.last_number = 0
+        self.lists = []
 
-    def item_level(self, kind: str) -> int:
-        # numbers inside letters are nested; letters inside numbers are nested
-        if kind == "letter":
-            return 2 if self.last_number and self.last_letter is None and self._number_open else 1
-        return 2 if self.last_letter is not None else 1
-
-    _number_open = False
+    def list_item(self, kind: str, marker: str) -> int | None:
+        """Nesting level (1 = outermost) if ``marker`` can start or continue a list here, else
+        None. ``kind`` is "letter" (a., b., ...) or "number" (1., 2., ...)."""
+        first = "a" if kind == "letter" else "1"
+        for depth in range(len(self.lists) - 1, -1, -1):     # continue an open list
+            open_kind, last = self.lists[depth]
+            if open_kind == kind and _follows(last, marker, kind):
+                del self.lists[depth + 1:]
+                self.lists[depth][1] = marker
+                return depth + 1
+        if marker != first:
+            return None
+        if self.lists and self.lists[-1][0] != kind:         # nested list under an item
+            self.lists.append([kind, marker])
+        else:                                                # new list at the top
+            self.lists = [[kind, marker]]
+        return len(self.lists)
 
     # main -----------------------------------------------------------------
     def run(self) -> Document:
@@ -196,15 +211,12 @@ class Parser:
         if m := PASAL_RE.match(line):
             num = m[1]
             n = int(re.match(r"\d+", num)[0]) if num[0].isdigit() else roman(num)
+            # anything else is a cross-reference that happens to start a wrapped line
             if n == self.last_pasal + 1 or (num[-1].isalpha() and n == self.last_pasal):
-                if n == self.last_pasal + 1 and n != 1 and self.last_pasal == 0:
-                    pass
                 self.last_pasal = n
                 self.emit(Block("pasal", label=f"Pasal {num}"))
                 self.reset_lists()
                 return 1
-            if self.last_pasal and n != self.last_pasal + 1:
-                pass  # a cross-reference that starts a wrapped line
         if not self.last_pasal:
             return self.step_preamble(line)
         return self.step_list(line)
@@ -212,38 +224,15 @@ class Parser:
     def step_list(self, line: str) -> int:
         if (m := AYAT_RE.match(line)) and int(m[1]) == self.last_ayat + 1:
             self.last_ayat = int(m[1])
-            self.last_letter, self.last_number, self._number_open = None, 0, False
+            self.lists = []
             self.emit(Block("ayat", label=f"({m[1]})", text=m[2]))
             return 1
-        if m := LETTER_RE.match(line):
-            ch = m[1]
-            if ch == "a" or (self.last_letter and ord(ch) == ord(self.last_letter) + 1):
-                level = 2 if (self._number_open and ch == "a") or (
-                    self.cur and self.cur.kind == "item" and self.cur.level == 2
-                    and self.last_letter is not None and ch != "a" and self._letters_nested
-                ) else 1
-                if ch == "a":
-                    self._letters_nested = level == 2
-                else:
-                    level = 2 if self._letters_nested else 1
-                self.last_letter = ch
-                self.emit(Block("item", label=f"{ch}.", text=m[2], level=level))
-                return 1
-        if m := NUMBER_RE.match(line):
-            k = int(m[1])
-            if k == 1 or k == self.last_number + 1:
-                if k == 1:
-                    self._numbers_nested = self.last_letter is not None
-                    self._number_open = True
-                self.last_number = k
-                level = 2 if self._numbers_nested else 1
-                self.emit(Block("item", label=f"{k}.", text=m[2], level=level))
+        for kind, rx in (("letter", LETTER_RE), ("number", NUMBER_RE)):
+            if (m := rx.match(line)) and (level := self.list_item(kind, m[1])):
+                self.emit(Block("item", label=f"{m[1]}.", text=m[2], level=level))
                 return 1
         self.append(line)
         return 1
-
-    _letters_nested = False
-    _numbers_nested = False
 
     def step_preamble(self, line: str) -> int:
         if OPENING_RE.match(line):
@@ -251,30 +240,23 @@ class Parser:
             return 1
         if m := PREAMBLE_RE.match(line):
             self.emit(Block("preamble", label=m[1], text=m[2]))
-            self.last_letter, self.last_number = None, 0
-            rest = m[2]
-            if lm := LETTER_RE.match(rest):
+            self.lists = []
+            if (lm := LETTER_RE.match(m[2])) and self.list_item("letter", lm[1]):
                 self.cur.text = ""
-                self.last_letter = lm[1]
                 self.emit(Block("item", label=f"{lm[1]}.", text=lm[2], level=1))
             return 1
-        if self.cur is None or (self.cur.kind == "title"):
-            if self.cur is None:
-                self.emit(Block("title", text=line))
-            else:
-                self.cur.text = join(self.cur.text, line)
+        if self.cur is None:
+            self.emit(Block("title", text=line))
+            return 1
+        if self.cur.kind == "title":
+            self.cur.text = join(self.cur.text, line)
             return 1
         if self.cur.kind in {"preamble", "item"}:
-            if (m := LETTER_RE.match(line)) and (
-                m[1] == "a" or (self.last_letter and ord(m[1]) == ord(self.last_letter) + 1)
-            ):
-                self.last_letter = m[1]
-                self.emit(Block("item", label=f"{m[1]}.", text=m[2], level=1))
-                return 1
-            if (m := NUMBER_RE.match(line)) and int(m[1]) in (1, self.last_number + 1):
-                self.last_number = int(m[1])
-                self.emit(Block("item", label=f"{m[1]}.", text=m[2], level=1))
-                return 1
+            # Menimbang / Mengingat lists are flat
+            for kind, rx in (("letter", LETTER_RE), ("number", NUMBER_RE)):
+                if (m := rx.match(line)) and self.list_item(kind, m[1]) == 1:
+                    self.emit(Block("item", label=f"{m[1]}.", text=m[2], level=1))
+                    return 1
         self.append(line)
         return 1
 

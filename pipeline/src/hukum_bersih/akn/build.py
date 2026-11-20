@@ -9,6 +9,11 @@ import yaml
 LANGUAGE = "ind"
 
 
+class LeakedMarkupError(ValueError):
+    """Bluebell markup ended up as visible text: the source text is malformed (usually a
+    POINT/PARA indented at the wrong depth)."""
+
+
 def to_akn(text: str, frbr_uri: str, root: str = "act", expression_date: str | None = None,
            title: str | None = None) -> bytes:
     from bluebell.parser import AkomaNtosoParser
@@ -21,11 +26,24 @@ def to_akn(text: str, frbr_uri: str, root: str = "act", expression_date: str | N
         uri.expression_date = f"@{expression_date}"
     parser = AkomaNtosoParser(uri)
     xml = parser.parse_to_xml(text, root)
+    _check_no_leaked_markup(xml)
     if title:
         for alias in xml.iter("{*}FRBRalias"):
             if alias.get("name") == "title":
                 alias.set("value", title)
     return etree.tostring(xml, encoding="utf-8", pretty_print=True, xml_declaration=True)
+
+
+def _check_no_leaked_markup(xml) -> None:
+    import re
+
+    from .bluebell import KEYWORDS
+
+    leaked = re.compile(rf"^(?:{'|'.join(sorted(KEYWORDS, key=len, reverse=True))})\b")
+    for p in xml.iter("{*}p"):
+        text = "".join(p.itertext()).strip()
+        if leaked.match(text):
+            raise LeakedMarkupError(f"{p.get('eId')}: markup in text: {text[:80]!r}")
 
 
 def ruu_frbr_uri(slug: str, doc_date: str) -> str:

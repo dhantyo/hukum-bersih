@@ -79,3 +79,33 @@ def test_akoma_ntoso():
     assert len(xml.findall(".//a:body//a:article", NS)) == 2
     assert len(xml.findall(".//a:attachment//a:article", NS)) == 2
     assert xml.find(".//a:FRBRlanguage", NS).get("language") == "ind"
+
+
+def test_list_nesting_resets_per_pasal():
+    """Regression: letters in a Pasal following a Pasal with numbered definitions were nested
+    one level too deep, and Bluebell then showed "POINT a." as text."""
+    lines = ["Pasal 1", "Dalam Undang-Undang ini:", "1.", "Aset adalah benda.", "2.",
+             "Dokumen adalah:", "a.", "tulisan;", "b.", "peta.",
+             "Pasal 2", "Dilaksanakan berdasarkan asas:", "a.", "kepastian hukum", "b.",
+             "keadilan;", "c.", "kemanfaatan."]
+    doc = parse_lines(lines)
+    pasal2 = doc.blocks[[b.label for b in doc.blocks].index("Pasal 2"):]
+    assert [(b.label, b.level) for b in pasal2 if b.kind == "item"] == [
+        ("a.", 1), ("b.", 1), ("c.", 1)]
+    to_akn(to_bluebell(doc), "/akn/id/bill/2026/contoh", "bill")  # raises on leaked markup
+
+
+def test_numbers_inside_letters_and_back():
+    lines = ["Pasal 1", "Meliputi:", "a.", "satu:", "1.", "x;", "2.", "y;", "b.", "dua."]
+    items = [(b.label, b.level) for b in parse_lines(lines).blocks if b.kind == "item"]
+    assert items == [("a.", 1), ("1.", 2), ("2.", 2), ("b.", 1)]
+
+
+def test_leaked_markup_is_rejected():
+    import pytest
+
+    from hukum_bersih.akn.build import LeakedMarkupError
+
+    bad = "BODY\n  ART 1 -\n    Teks:\n\n      POINT a.\n        x\n"
+    with pytest.raises(LeakedMarkupError):
+        to_akn(bad, "/akn/id/bill/2026/contoh", "bill")
