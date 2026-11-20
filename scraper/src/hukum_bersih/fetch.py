@@ -21,7 +21,7 @@ import httpx
 
 from . import USER_AGENT
 from .manifest import ManifestEntry, entry_for_file
-from .naming import archive_item, default_title, validate_id
+from .naming import archive_item, default_title, full_title, validate_id
 
 WAYBACK_RE = re.compile(r"^https?://web\.archive\.org/web/(\d+)(?:id_)?/(.+)$")
 
@@ -91,8 +91,18 @@ def download(url: str, dest: Path, retries: int = 3) -> None:
     raise RuntimeError(f"download failed after {retries} attempts: {url}: {last}")
 
 
+def archive_description(full: str, source_url: str, original_filename: str) -> str:
+    return (
+        f"{full}. Salinan arsip dari {source_url} (nama berkas asli: {original_filename}). "
+        "Diarsipkan oleh proyek terbuka hukum-bersih (https://github.com/dhantyo/hukum-bersih) "
+        "agar dokumen hukum publik tetap dapat diakses. / Archived copy of a public Indonesian "
+        "legal document."
+    )
+
+
 def upload_to_ia(
     path: Path, item: str, filename: str, source_url: str, title: str, original_filename: str,
+    description: str,
 ) -> None:
     import internetarchive
 
@@ -107,12 +117,7 @@ def upload_to_ia(
         "original_filename": original_filename,
         "language": "ind",
         "subject": ["hukum Indonesia", "peraturan perundang-undangan", "Indonesian law"],
-        "description": (
-            f"Salinan arsip dari {source_url} (nama berkas asli: {original_filename}). "
-            "Diarsipkan oleh proyek terbuka hukum-bersih "
-            "(https://github.com/dhantyo/hukum-bersih) agar dokumen hukum publik tetap dapat "
-            "diakses. / Archived copy of a public Indonesian legal document."
-        ),
+        "description": description,
     }
     responses = internetarchive.upload(
         item, files={filename: str(path)}, metadata=metadata, access_key=access,
@@ -142,8 +147,48 @@ def fetch_and_archive(
             upload_to_ia(
                 path, item, filename, url, title or default_title(doc_id, data_dir),
                 entry.original_filename,
+                archive_description(full_title(doc_id, data_dir), url, entry.original_filename),
             )
     manifest.parent.mkdir(parents=True, exist_ok=True)
     with manifest.open("a") as f:
         f.write(json.dumps(entry.to_dict(), ensure_ascii=False) + "\n")
     return FetchResult(entry, item, filename, False, manifest)
+
+
+def latest_entry(data_dir: Path, doc_id: str) -> dict | None:
+    """Most recent manifest line recorded for a document id."""
+    found = None
+    for manifest in sorted((data_dir / "sources" / "manifests").glob("*.jsonl")):
+        for line in manifest.read_text().splitlines():
+            if not line.strip():
+                continue
+            rec = json.loads(line)
+            if rec.get("doc_id") == doc_id and (
+                found is None or rec["fetched_at"] > found["fetched_at"]
+            ):
+                found = rec
+    return found
+
+
+def retitle(doc_id: str, data_dir: Path, title: str | None = None) -> dict:
+    """Rewrite title and description of an archived item. Never touches its files."""
+    import internetarchive
+
+    access, secret = os.environ.get("IA_ACCESS_KEY"), os.environ.get("IA_SECRET_KEY")
+    if not (access and secret):
+        raise RuntimeError("IA_ACCESS_KEY and IA_SECRET_KEY must be set")
+    rec = latest_entry(data_dir, doc_id)
+    if rec is None:
+        raise RuntimeError(f"{doc_id}: not in any source manifest")
+    metadata = {
+        "title": title or default_title(doc_id, data_dir),
+        "description": archive_description(
+            full_title(doc_id, data_dir), rec["source_url"], rec.get("original_filename", "")
+        ),
+    }
+    r = internetarchive.modify_metadata(
+        archive_item(doc_id), metadata, access_key=access, secret_key=secret
+    )
+    if getattr(r, "status_code", 200) >= 400:
+        raise RuntimeError(f"{doc_id}: metadata update failed ({r.status_code}): {r.text[:300]}")
+    return metadata

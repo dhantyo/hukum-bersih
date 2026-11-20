@@ -52,13 +52,13 @@ Ids never contain the project name. The project is mentioned only in archive.org
 - `<n>`: `1`, `2`, … when one entry has several files (a DIM split into four PDFs).
 - Versions known to exist but never found still get an id.
 
-| `<type>` | DPR label (`menuAkd.title`) | Title label |
+| `<type>` | DPR label (`menuAkd.title`) | Full label (description) |
 |---|---|---|
-| `draft` | Draft RUU | Draf RUU |
-| `draft-final` | Draft RUU Final | Draf RUU Final |
+| `draft` | Draft RUU | Naskah RUU (short: Naskah) |
+| `draft-final` | Draft RUU Final | Naskah RUU Final (short: Naskah Final) |
 | `naskah-akademik` | Draft NA | Naskah Akademik |
 | `naskah-urgensi` | Naskah Urgensi | Naskah Urgensi |
-| `dim` | Daftar Inventaris Masalah (DIM) | Daftar Inventaris Masalah |
+| `dim` | Daftar Inventaris Masalah (DIM) | Daftar Inventaris Masalah (DIM) (short: DIM) |
 | `surat-presiden` | Surat Presiden | Surat Presiden |
 | `laporan-komisi` | Laporan Komisi | Laporan Komisi |
 | `tanggapan-pemerintah` | Tanggapan Pemerintah | Tanggapan Pemerintah |
@@ -86,13 +86,18 @@ Year folders keep every folder small (GitHub's file browser stops at 1,000 entri
 
 ### archive.org
 
+Titles put the identifying words first, because archive.org cards cut titles off after
+about 40 characters. Titles and descriptions can be rewritten later without re-uploading
+(`hukum-bersih archive-retitle`, "Retitle archive.org items" workflow).
+
 Only original source files (PDFs) go to archive.org. Our consolidated texts do not.
 
 | | Regulation | RUU document |
 |---|---|---|
 | Item identifier | work id: `uu_11_2008` | document id: `ruu_perampasan-aset_2026-11-19_draft-final` |
 | File in the item | version id: `uu_11_2008_2008-04-21.pdf` | `ruu_perampasan-aset_2026-11-19_draft-final.pdf` |
-| Title | official citation | `<title label> <who> – <RUU title as it was then> (<date in Indonesian>)` |
+| Title (short, shown on cards) | `<short name> – <citation>`, e.g. UU ITE – Undang-Undang Nomor 11 Tahun 2008 | `<bill short name> – <short label> (<date>)`, e.g. RUU Perampasan Aset – Naskah Final (19 November 2026) |
+| Description | full title with "tentang …", source URL, original file name, one line about the project | full label + the bill's title as it was then, source URL, original file name, project line |
 
 If the source later publishes a different file for the same version, it goes into the same item
 with the fetch date appended. If an identifier is already taken by someone else on archive.org,

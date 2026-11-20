@@ -31,12 +31,13 @@ JENIS_TITLE = {
     "inpres": "Instruksi Presiden",
 }
 
+# Full label (descriptions) and short label (titles, where the bill's short name comes first).
 RUU_TYPE_TITLE = {
-    "draft": "Draf RUU",
-    "draft-final": "Draf RUU Final",
+    "draft": "Naskah RUU",
+    "draft-final": "Naskah RUU Final",
     "naskah-akademik": "Naskah Akademik",
     "naskah-urgensi": "Naskah Urgensi",
-    "dim": "Daftar Inventaris Masalah",
+    "dim": "Daftar Inventaris Masalah (DIM)",
     "surat-presiden": "Surat Presiden",
     "laporan-komisi": "Laporan Komisi",
     "tanggapan-pemerintah": "Tanggapan Pemerintah",
@@ -46,6 +47,8 @@ RUU_TYPE_TITLE = {
     "bahan-narasumber": "Bahan Narasumber",
     "dokumen-pendukung": "Dokumen Pendukung",
 }
+
+RUU_TYPE_SHORT = {**RUU_TYPE_TITLE, "draft": "Naskah", "draft-final": "Naskah Final", "dim": "DIM"}
 
 BULAN = [
     "Januari", "Februari", "Maret", "April", "Mei", "Juni",
@@ -96,21 +99,42 @@ def _ruu_record(data_dir: Path, slug: str) -> dict:
     return yaml.safe_load(path.read_text()) if path.exists() else {}
 
 
+def _ruu_parts(doc_id: str, data_dir: Path) -> tuple[re.Match, dict, dict]:
+    m = RUU_DOC_RE.match(doc_id)
+    rec = _ruu_record(data_dir, m["slug"])
+    doc = next((d for d in rec.get("documents", []) if d.get("id") == doc_id), {})
+    return m, rec, doc
+
+
+def _ruu_label(m: re.Match, table: dict[str, str]) -> str:
+    label = table[m["type"]]
+    if m["who"]:
+        label += f" {m['who'].replace('-', ' ').title()}"
+    if m["n"]:
+        label += f" bagian {m['n']}"
+    return label
+
+
 def default_title(doc_id: str, data_dir: Path) -> str:
-    """Readable Indonesian title. Regulations get the bare citation; the importer passes the
-    full 'tentang …' title from the source metadata."""
+    """Short card title, most important words first: 'RUU Perampasan Aset – Naskah Final
+    (19 November 2026)'. Regulations get the citation; the importer prepends the short name
+    ('UU ITE – Undang-Undang Nomor 11 Tahun 2008') when it knows it."""
     validate_id(doc_id)
-    if m := RUU_DOC_RE.match(doc_id):
-        rec = _ruu_record(data_dir, m["slug"])
-        doc = next((d for d in rec.get("documents", []) if d.get("id") == doc_id), {})
-        ruu_title = doc.get("ruu_title") or rec.get("title") or f"RUU {m['slug'].replace('-', ' ')}"
-        label = RUU_TYPE_TITLE[m["type"]]
-        if m["who"]:
-            label += f" ({m['who'].replace('-', ' ').title()})"
-        if m["n"]:
-            label += f", bagian {m['n']}"
-        return f"{label} – {ruu_title} ({tanggal(m['date'])})"
-    if m := REGULATION_RE.match(doc_id):
-        jenis = JENIS_TITLE.get(m["jenis"], m["jenis"].upper())
-        return f"{jenis} Nomor {m['nomor'].upper()} Tahun {m['tahun']}"
-    return doc_id
+    if doc_id.startswith("ruu_"):
+        m, rec, _ = _ruu_parts(doc_id, data_dir)
+        short = rec.get("short_name") or f"RUU {m['slug'].replace('-', ' ').title()}"
+        return f"{short} – {_ruu_label(m, RUU_TYPE_SHORT)} ({tanggal(m['date'])})"
+    m = REGULATION_RE.match(doc_id)
+    jenis = JENIS_TITLE.get(m["jenis"], m["jenis"].upper())
+    return f"{jenis} Nomor {m['nomor'].upper()} Tahun {m['tahun']}"
+
+
+def full_title(doc_id: str, data_dir: Path) -> str:
+    """Complete name for descriptions: 'Naskah RUU Final – RUU tentang … (19 November 2026)'.
+    Uses the bill's title as it was at the time (``ruu_title`` on the document) if recorded."""
+    validate_id(doc_id)
+    if doc_id.startswith("ruu_"):
+        m, rec, doc = _ruu_parts(doc_id, data_dir)
+        ruu_title = doc.get("ruu_title") or rec.get("title") or default_title(doc_id, data_dir)
+        return f"{_ruu_label(m, RUU_TYPE_TITLE)} – {ruu_title} ({tanggal(m['date'])})"
+    return default_title(doc_id, data_dir)

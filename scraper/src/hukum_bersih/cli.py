@@ -42,6 +42,12 @@ def main(argv: list[str] | None = None) -> int:
     parse_cmd.add_argument("--source-sha256")
     parse_cmd.add_argument("--archive-url")
 
+    retitle_cmd = sub.add_parser(
+        "archive-retitle", help="rewrite title/description of archived items (files untouched)"
+    )
+    retitle_cmd.add_argument("ids", nargs="+")
+    retitle_cmd.add_argument("--data-dir", type=Path, default=REPO_ROOT / "data")
+
     clean_cmd = sub.add_parser(
         "archive-delete", help="delete the files of obsolete archive.org items we uploaded"
     )
@@ -101,6 +107,19 @@ def main(argv: list[str] | None = None) -> int:
         if args.source_sha256 and args.source_sha256 != sha256_file(args.pdf):
             print("warning: PDF hash differs from --source-sha256")
             return 1
+    elif args.command == "archive-retitle":
+        from .fetch import retitle
+
+        failures = 0
+        for doc_id in args.ids:
+            try:
+                meta = retitle(doc_id, args.data_dir)
+            except Exception as e:  # noqa: BLE001 - report every item, then fail
+                failures += 1
+                print(f"FAILED  {doc_id}: {e}")
+                continue
+            print(f"retitled {doc_id}\n        {meta['title']}")
+        return 1 if failures else 0
     elif args.command == "archive-delete":
         from .archive_cleanup import empty_item
 

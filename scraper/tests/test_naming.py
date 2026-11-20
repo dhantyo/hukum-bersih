@@ -1,6 +1,6 @@
 import pytest
 
-from hukum_bersih.naming import archive_item, default_title, tanggal, validate_id
+from hukum_bersih.naming import archive_item, default_title, full_title, tanggal, validate_id
 
 
 @pytest.mark.parametrize(
@@ -62,21 +62,34 @@ def test_default_title_regulation(tmp_path):
     )
 
 
-def test_default_title_ruu_uses_tracker(tmp_path):
+def test_titles_ruu(tmp_path):
     d = tmp_path / "ruu" / "contoh"
     d.mkdir(parents=True)
     (d / "ruu.yaml").write_text(
         "title: RUU tentang Contoh Baru\n"
+        "short_name: RUU Contoh\n"
         "documents:\n"
         "  - id: ruu_contoh_2023-05_draft_pemerintah\n"
         "    ruu_title: RUU tentang Contoh Lama\n"
     )
     assert default_title("ruu_contoh_2023-05_draft_pemerintah", tmp_path) == (
-        "Draf RUU (Pemerintah) – RUU tentang Contoh Lama (Mei 2023)"
+        "RUU Contoh – Naskah Pemerintah (Mei 2023)"
+    )
+    assert full_title("ruu_contoh_2023-05_draft_pemerintah", tmp_path) == (
+        "Naskah RUU Pemerintah – RUU tentang Contoh Lama (Mei 2023)"
     )
     assert default_title("ruu_contoh_2026-11-19_draft-final", tmp_path) == (
-        "Draf RUU Final – RUU tentang Contoh Baru (19 November 2026)"
+        "RUU Contoh – Naskah Final (19 November 2026)"
     )
     assert default_title("ruu_contoh_2026-11-09_dim_2", tmp_path) == (
-        "Daftar Inventaris Masalah, bagian 2 – RUU tentang Contoh Baru (9 November 2026)"
+        "RUU Contoh – DIM bagian 2 (9 November 2026)"
+    )
+    assert full_title("ruu_contoh_2026-11-09_dim_2", tmp_path) == (
+        "Daftar Inventaris Masalah (DIM) bagian 2 – RUU tentang Contoh Baru (9 November 2026)"
+    )
+
+
+def test_title_without_tracker_falls_back_to_slug(tmp_path):
+    assert default_title("ruu_perampasan-aset_2026-11-19_draft-final", tmp_path) == (
+        "RUU Perampasan Aset – Naskah Final (19 November 2026)"
     )
