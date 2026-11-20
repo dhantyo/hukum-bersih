@@ -3,14 +3,15 @@ name: Fetch and archive
 # Downloads source documents, uploads each to the Internet Archive, and commits the
 # manifest lines (url, fetched_at, sha256, bytes, archive_url) to data/sources/manifests/.
 # PDFs themselves never enter git. Needs repo secrets IA_ACCESS_KEY and IA_SECRET_KEY.
+# Each document needs a readable doc id (docs/NAMING.md); archived as hukum-bersih-<doc id>.
 on:
   workflow_dispatch:
     inputs:
-      urls:
-        description: "URLs to fetch, separated by spaces or newlines"
+      docs:
+        description: "Pairs of 'doc-id URL', e.g. 'ruu-perampasan-aset-2026-11-19-draft-ruu-final https://berkas2.dpr.go.id/...' (separate pairs with spaces)"
         required: true
       title:
-        description: "Optional Internet Archive title (single URL only)"
+        description: "Optional Internet Archive title (single pair only)"
         required: false
 
 permissions:
@@ -33,10 +34,10 @@ jobs:
         env:
           IA_ACCESS_KEY: ${{ secrets.IA_ACCESS_KEY }}
           IA_SECRET_KEY: ${{ secrets.IA_SECRET_KEY }}
-          URLS: ${{ inputs.urls }}
+          DOCS: ${{ inputs.docs }}
           TITLE: ${{ inputs.title }}
         run: |
-          read -r -d '' -a list <<< "$URLS" || true
+          read -r -d '' -a list <<< "$DOCS" || true
           args=("${list[@]}")
           [ -n "$TITLE" ] && args+=(--title "$TITLE")
           set +e

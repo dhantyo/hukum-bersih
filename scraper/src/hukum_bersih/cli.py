@@ -26,9 +26,11 @@ def main(argv: list[str] | None = None) -> int:
     fetch_cmd = sub.add_parser(
         "fetch", help="download URLs, archive them on the Internet Archive, record in manifests"
     )
-    fetch_cmd.add_argument("urls", nargs="+")
-    fetch_cmd.add_argument("--item", help="IA item id (only with a single URL)")
-    fetch_cmd.add_argument("--title")
+    fetch_cmd.add_argument(
+        "pairs", nargs="+", metavar="DOC_ID URL",
+        help="one or more doc id + URL pairs; doc ids follow docs/NAMING.md",
+    )
+    fetch_cmd.add_argument("--title", help="archive item title (single pair only)")
     fetch_cmd.add_argument("--data-dir", type=Path, default=REPO_ROOT / "data")
     fetch_cmd.add_argument("--no-archive", action="store_true", help="hash only, skip IA upload")
     fetch_cmd.add_argument("--delay", type=float, default=2.0, help="seconds between requests")
@@ -38,25 +40,34 @@ def main(argv: list[str] | None = None) -> int:
         entry = entry_for_file(args.path, args.source_url, args.archive_url)
         print(json.dumps(entry.to_dict(), indent=2))
     elif args.command == "fetch":
-        from .fetch import fetch_and_archive
+        from .fetch import fetch_and_archive, validate_doc_id
 
-        if args.item and len(args.urls) > 1:
-            parser.error("--item can only be used with a single URL")
+        if len(args.pairs) % 2:
+            parser.error("arguments must be DOC_ID URL pairs")
+        pairs = list(zip(args.pairs[::2], args.pairs[1::2], strict=True))
+        for doc_id, url in pairs:
+            if doc_id.startswith(("http://", "https://")) or not url.startswith("http"):
+                parser.error(f"expected DOC_ID URL, got {doc_id!r} {url!r}")
+            try:
+                validate_doc_id(doc_id)
+            except ValueError as e:
+                parser.error(str(e))
+        if args.title and len(pairs) > 1:
+            parser.error("--title can only be used with a single pair")
         failures = 0
-        for i, url in enumerate(args.urls):
+        for i, (doc_id, url) in enumerate(pairs):
             if i:
                 time.sleep(args.delay)
             try:
                 res = fetch_and_archive(
-                    url, args.data_dir, item=args.item, title=args.title,
-                    archive=not args.no_archive,
+                    url, doc_id, args.data_dir, title=args.title, archive=not args.no_archive,
                 )
             except Exception as e:  # noqa: BLE001 - keep going: one dead link must not stop the batch
                 failures += 1
                 print(f"FAILED  {url}\n        {e}")
                 continue
             state = "skipped (unchanged)" if res.skipped else "archived"
-            print(f"{state}  {url}\n        sha256={res.entry.sha256} bytes={res.entry.bytes}"
+            print(f"{state}  {doc_id}  {url}\n        sha256={res.entry.sha256} bytes={res.entry.bytes}"
                   f"\n        {res.entry.archive_url}")
         return 1 if failures else 0
     return 0

@@ -15,6 +15,8 @@ class ManifestEntry:
     sha256: str
     bytes: int
     archive_url: str | None = None
+    doc_id: str | None = None
+    original_filename: str | None = None
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -28,13 +30,18 @@ def sha256_file(path: Path, chunk_size: int = 1 << 20) -> str:
     return h.hexdigest()
 
 
-def entry_for_file(path: Path, source_url: str, archive_url: str | None = None) -> ManifestEntry:
+def entry_for_file(
+    path: Path, source_url: str, archive_url: str | None = None,
+    doc_id: str | None = None, original_filename: str | None = None,
+) -> ManifestEntry:
     return ManifestEntry(
         source_url=source_url,
         fetched_at=datetime.now(UTC).isoformat(timespec="seconds"),
         sha256=sha256_file(path),
         bytes=path.stat().st_size,
         archive_url=archive_url,
+        doc_id=doc_id,
+        original_filename=original_filename,
     )
 
 

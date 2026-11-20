@@ -1,8 +1,9 @@
 """Download a source document, archive it on the Internet Archive, record it in a manifest.
 
-PDFs never enter git (BRIEF §5.3). Each file becomes one Internet Archive item and one line in
-``data/sources/manifests/<host>.jsonl``. A file whose sha256 is already recorded for the same
-source URL is skipped, so runs are idempotent.
+PDFs never enter git (BRIEF §5.3). Each file gets a readable doc id (docs/NAMING.md),
+becomes the Internet Archive item ``hukum-bersih-<doc id>`` holding ``<doc id>.<ext>``, and one
+line in ``data/sources/manifests/<host>.jsonl``. A file already archived under the same doc id
+with the same sha256 is skipped, so runs are idempotent.
 """
 
 from __future__ import annotations
@@ -22,6 +23,7 @@ from . import USER_AGENT
 from .manifest import ManifestEntry, entry_for_file
 
 ITEM_PREFIX = "hukum-bersih"
+DOC_ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 WAYBACK_RE = re.compile(r"^https?://web\.archive\.org/web/(\d+)(?:id_)?/(.+)$")
 
 
@@ -47,13 +49,24 @@ def safe_filename(url: str) -> str:
     return stem + suffix
 
 
-def default_item_id(url: str) -> str:
-    """IA identifiers are global: prefix ours and keep them short and lowercase."""
-    m = WAYBACK_RE.match(url)
-    host = urlparse(m.group(2) if m else url).hostname or "unknown"
-    stem = Path(safe_filename(url)).stem.lower()
-    ident = f"{ITEM_PREFIX}-{host.split('.')[-3] if host.count('.') >= 2 else host}-{stem}"
-    return re.sub(r"[^a-z0-9_-]+", "-", ident)[:100].strip("-")
+def validate_doc_id(doc_id: str) -> str:
+    if not DOC_ID_RE.match(doc_id):
+        raise ValueError(
+            f"invalid doc id {doc_id!r}: use lowercase letters, digits and single hyphens "
+            "(see docs/NAMING.md)"
+        )
+    if len(ITEM_PREFIX) + 1 + len(doc_id) > 100:  # IA identifier limit
+        raise ValueError(f"doc id too long: {doc_id!r}")
+    return doc_id
+
+
+def item_id(doc_id: str) -> str:
+    return f"{ITEM_PREFIX}-{validate_doc_id(doc_id)}"
+
+
+def archived_filename(doc_id: str, url: str) -> str:
+    ext = Path(safe_filename(url)).suffix.lower() or ".pdf"
+    return f"{validate_doc_id(doc_id)}{ext}"
 
 
 def manifest_path(data_dir: Path, url: str) -> Path:
@@ -62,16 +75,17 @@ def manifest_path(data_dir: Path, url: str) -> Path:
     return data_dir / "sources" / "manifests" / f"{host}.jsonl"
 
 
-def known_hashes(manifest: Path, url: str) -> set[str]:
+def already_archived(manifest: Path, url: str, sha256: str, archive_url: str | None) -> bool:
     if not manifest.exists():
-        return set()
-    out = set()
+        return False
     for line in manifest.read_text().splitlines():
         if line.strip():
             rec = json.loads(line)
-            if rec.get("source_url") == url:
-                out.add(rec["sha256"])
-    return out
+            if (rec.get("source_url"), rec.get("sha256"), rec.get("archive_url")) == (
+                url, sha256, archive_url,
+            ):
+                return True
+    return False
 
 
 def download(url: str, dest: Path, retries: int = 3) -> None:
@@ -93,7 +107,9 @@ def download(url: str, dest: Path, retries: int = 3) -> None:
     raise RuntimeError(f"download failed after {retries} attempts: {url}: {last}")
 
 
-def upload_to_ia(path: Path, item: str, filename: str, source_url: str, title: str | None) -> None:
+def upload_to_ia(
+    path: Path, item: str, filename: str, source_url: str, title: str, original_filename: str,
+) -> None:
     import internetarchive
 
     access, secret = os.environ.get("IA_ACCESS_KEY"), os.environ.get("IA_SECRET_KEY")
@@ -102,12 +118,13 @@ def upload_to_ia(path: Path, item: str, filename: str, source_url: str, title: s
     metadata = {
         "mediatype": "texts",
         "collection": "opensource",
-        "title": title or filename,
+        "title": title,
         "source": source_url,
+        "original_filename": original_filename,
         "language": "ind",
         "subject": ["Indonesian law", "hukum-bersih"],
         "description": f"Archived by hukum-bersih (https://github.com/dhantyo/hukum-bersih) "
-        f"from {source_url}",
+        f"from {source_url} (original file name: {original_filename})",
     }
     responses = internetarchive.upload(
         item, files={filename: str(path)}, metadata=metadata, access_key=access,
@@ -119,23 +136,22 @@ def upload_to_ia(path: Path, item: str, filename: str, source_url: str, title: s
 
 
 def fetch_and_archive(
-    url: str, data_dir: Path, item: str | None = None, title: str | None = None,
-    archive: bool = True,
+    url: str, doc_id: str, data_dir: Path, title: str | None = None, archive: bool = True,
 ) -> FetchResult:
-    item = item or default_item_id(url)
-    filename = safe_filename(url)
+    item = item_id(doc_id)
+    filename = archived_filename(doc_id, url)
     manifest = manifest_path(data_dir, url)
     with tempfile.TemporaryDirectory() as tmp:
         path = Path(tmp) / filename
         download(raw_wayback_url(url), path)
         archive_url = f"https://archive.org/download/{item}/{filename}" if archive else None
-        entry = entry_for_file(path, url, archive_url)
-        if entry.sha256 in known_hashes(manifest, url):
+        entry = entry_for_file(path, url, archive_url, doc_id, safe_filename(url))
+        if already_archived(manifest, url, entry.sha256, archive_url):
             return FetchResult(entry, item, filename, True, manifest)
         if not path.read_bytes()[:5].startswith(b"%PDF"):
             print(f"warning: {url} does not look like a PDF")
         if archive:
-            upload_to_ia(path, item, filename, url, title)
+            upload_to_ia(path, item, filename, url, title or doc_id, entry.original_filename)
     manifest.parent.mkdir(parents=True, exist_ok=True)
     with manifest.open("a") as f:
         f.write(json.dumps(entry.to_dict(), ensure_ascii=False) + "\n")
