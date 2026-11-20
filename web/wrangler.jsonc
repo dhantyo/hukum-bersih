@@ -1,11 +1,9 @@
-// Cloudflare Workers static-assets deployment of the built site (web/dist).
-// No Worker script: Cloudflare serves the files directly, so requests are free and unmetered.
+// Cloudflare Pages project for the built site (web/dist).
+// Pages (not Workers) because a custom subdomain such as one on suarakami.id can then be
+// attached with a plain CNAME, even if that domain's DNS is not in our Cloudflare account.
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "hukum-bersih",
-  "compatibility_date": "2026-11-01",
-  "assets": {
-    "directory": "./dist",
-    "not_found_handling": "404-page"
-  }
+  "pages_build_output_dir": "./dist",
+  "compatibility_date": "2026-11-01"
 }
