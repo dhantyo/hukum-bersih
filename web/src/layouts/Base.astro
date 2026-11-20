@@ -1,8 +1,10 @@
 ---
 interface Props {
   title: string;
+  /** Keep this page out of the search index. */
+  noindex?: boolean;
 }
-const { title } = Astro.props;
+const { title, noindex = false } = Astro.props;
 const home = import.meta.env.BASE_URL;
 ---
 <!doctype html>
@@ -14,7 +16,7 @@ const home = import.meta.env.BASE_URL;
   </head>
   <body>
     <header><a href={home}>Hukum Bersih</a></header>
-    <main data-pagefind-body>
+    <main data-pagefind-body={noindex ? undefined : true}>
       <slot />
     </main>
   </body>

@@ -31,7 +31,7 @@ Scraper (Python ≥ 3.12, [uv](https://docs.astral.sh/uv/)):
 cd scraper && uv sync && uv run pytest
 ```
 
-Website (deployed to GitHub Pages by `.github/workflows/deploy.yml`; Node ≥ 22.23.4):
+Website (deployed to Cloudflare by `.github/workflows/deploy.yml`; Node ≥ 22.23.4):
 
 ```bash
 cd web && npm ci && npm run build

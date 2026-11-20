@@ -1,0 +1,11 @@
+// Cloudflare Workers static-assets deployment of the built site (web/dist).
+// No Worker script: Cloudflare serves the files directly, so requests are free and unmetered.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "hukum-bersih",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}
