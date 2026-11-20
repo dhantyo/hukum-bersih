@@ -1,61 +1,122 @@
-# Naming rule for documents
+# Naming rule
 
-This rule applies everywhere: archive.org, file names in `data/`, ids in `ruu.yaml`, and site
-URLs. It replaces the example file names in `docs/BRIEF.md` §6.1 and §6.3.
+Agreed with Dante on 2026-11-20 after looking at Switzerland (Fedlex) and Germany (NeuRIS).
+This rule applies everywhere: archive.org, files in `data/`, ids in YAML, and site URLs.
+It replaces the example file names in `docs/BRIEF.md` §6.
 
-Every document gets one **doc id**. The same id is used for the Internet Archive item, the
-archived file name, the Markdown text file, and the `id` in `ruu.yaml`. The original file name
-and URL are never lost: they are kept in the source manifest and in the archive item's metadata.
+## Three names per document
 
-## Format
-
-Lowercase letters, digits and hyphens only. Dates are ISO and only as precise as we know them
-(`2023`, `2023-05`, `2026-11-19`).
-
-| Document | Doc id pattern | Example |
+| Name | For | Example |
 |---|---|---|
-| RUU document | `ruu-<slug>-<date>-<type>[-<who>][-<n>]` | `ruu-perampasan-aset-2026-11-19-draft-ruu-final` |
-| Enacted regulation | `<jenis>-<nomor>-<tahun>` | `uu-8-2010`, `pp-35-2021` |
+| **id** | machines: archive.org, file names, links between records | `uu_11_2008` |
+| **title** | people: the official citation, in Indonesian | Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik |
+| **short name** | search: the popular name, when one exists | UU ITE |
 
-- `<slug>`: the RUU folder name under `data/ruu/` (short topic, e.g. `perampasan-aset`).
-- `<date>`: the document's own date if known; otherwise the date it was posted.
-- `<who>`: optional, when the type alone is ambiguous: `pemerintah`, `dpr`, `bkd`, a media name.
-- `<n>`: `-1`, `-2`, … when one entry has several files (e.g. a DIM split into four PDFs).
-- Versions known to exist but never found still get a doc id, so they can be referred to.
+Ids never contain the project name. The project is mentioned only in archive.org descriptions.
 
-### RUU document types
+## Id format
 
-| `<type>` | DPR label (`menuAkd.title`) |
-|---|---|
-| `draft-ruu` | Draft RUU |
-| `draft-ruu-final` | Draft RUU Final |
-| `naskah-akademik` | Draft NA |
-| `naskah-urgensi` | Naskah Urgensi |
-| `dim` | Daftar Inventaris Masalah (DIM) |
-| `surat-presiden` | Surat Presiden |
-| `laporan-komisi` | Laporan Komisi |
-| `tanggapan-pemerintah` | Tanggapan Pemerintah |
-| `pandangan-mini-fraksi` | Pandangan Mini Fraksi |
-| `risalah-rapat` | Risalah Rapat |
-| `laporan-singkat` | Laporan Singkat |
-| `bahan-narasumber` | Bahan Narasumber |
-| `dokumen-pendukung` | Dokumen Pendukung Lain |
+- Lowercase ASCII letters, digits, `-` and `_` only.
+- `_` separates the parts. `-` joins words inside one part (`perampasan-aset`, `draft-final`).
+- Dates are ISO, `YYYY-MM-DD`, or only as precise as known (`2023-05`, `2008`).
+- Number before year, the way Indonesians cite laws ("UU 8/2010").
 
-## Where the id shows up
+### Regulations
 
-| Place | Name |
-|---|---|
-| Internet Archive item | `hukum-bersih-<doc id>` |
-| Archived file | `<doc id>.pdf` (original extension, lowercased) |
-| RUU version text | `data/ruu/<slug>/versions/<doc id>.md` |
-| Regulation text | `data/peraturan/<jenis>/<tahun>/<doc id>.md` |
-| Source manifest line | `doc_id` field (plus `original_filename` from the source) |
-| Site page | `/ruu/<slug>/<doc id>/`, `/<jenis>/<tahun>/<doc id>/` |
+| What | Pattern | Example |
+|---|---|---|
+| The regulation (the "work") | `<jenis>_<nomor>_<tahun>` | `uu_11_2008`, `perppu_2_2022`, `pp_35_2021` |
+| One text version | `<work id>_<date it took effect>` | `uu_11_2008_2008-04-21` |
 
-Examples:
+- Numbering restarts every year and differs per type, so type + number + year is always unique
+  (`uu_1_1974`, `uu_1_2023`, `uu_1_2024` and `perppu_1_2020` are four different laws).
+- Every text version is dated, including the latest; there is no undated "current" text.
+  The original is dated by when it took effect (normally *tanggal diundangkan*). A consolidated
+  text is dated by when the last amendment it includes took effect.
+- An amendment is its own regulation with its own id (`uu_19_2016` amends `uu_11_2008`).
+- Types: `uu`, `perppu`, `pp`, `perpres`, `keppres`, `inpres`, `tap-mpr`; ministerial and
+  agency regulations use the standard abbreviation (`permenkeu`, `permenkumham`, …).
+  Older formats keep a type prefix: `uu-drt_7_1955`, `pnps_1_1965`.
+- If an official number carries a letter suffix, the suffix stays part of the number.
+- The Akoma Ntoso id (`/akn/id/act/uu/2008/11`) is kept as an internal `akn` field for
+  data exchange; it is never shown to readers.
+
+### RUU documents
+
+`ruu_<slug>_<date>_<type>[_<who>][_<n>]`, e.g. `ruu_perampasan-aset_2026-11-19_draft-final`.
+
+- `<slug>`: the bill's folder name under `data/ruu/` (short topic). One slug per bill, kept
+  when the title changes. The DPR page id is stored in `ruu.yaml`, not in ids.
+- `<date>`: the document's own date if known, otherwise the date it was posted.
+- `<who>`: only when needed to tell documents apart: `pemerintah`, `dpr`, `bkd`, a media name.
+- `<n>`: `1`, `2`, … when one entry has several files (a DIM split into four PDFs).
+- Versions known to exist but never found still get an id.
+
+| `<type>` | DPR label (`menuAkd.title`) | Title label |
+|---|---|---|
+| `draft` | Draft RUU | Draf RUU |
+| `draft-final` | Draft RUU Final | Draf RUU Final |
+| `naskah-akademik` | Draft NA | Naskah Akademik |
+| `naskah-urgensi` | Naskah Urgensi | Naskah Urgensi |
+| `dim` | Daftar Inventaris Masalah (DIM) | Daftar Inventaris Masalah |
+| `surat-presiden` | Surat Presiden | Surat Presiden |
+| `laporan-komisi` | Laporan Komisi | Laporan Komisi |
+| `tanggapan-pemerintah` | Tanggapan Pemerintah | Tanggapan Pemerintah |
+| `pandangan-mini-fraksi` | Pandangan Mini Fraksi | Pandangan Mini Fraksi |
+| `risalah-rapat` | Risalah Rapat | Risalah Rapat |
+| `laporan-singkat` | Laporan Singkat | Laporan Singkat |
+| `bahan-narasumber` | Bahan Narasumber | Bahan Narasumber |
+| `dokumen-pendukung` | Dokumen Pendukung Lain | Dokumen Pendukung |
+
+## Where names appear
+
+### Repository
 
 ```
-https://archive.org/download/hukum-bersih-ruu-perampasan-aset-2026-11-19-draft-ruu-final/ruu-perampasan-aset-2026-11-19-draft-ruu-final.pdf
-data/ruu/perampasan-aset/versions/ruu-perampasan-aset-2023-05-draft-ruu-pemerintah.md
-data/peraturan/uu/2010/uu-8-2010.md
+data/peraturan/uu/2008/uu_11_2008/
+  uu_11_2008.yaml                 details: title, short name, status, relationships, versions
+  uu_11_2008_2008-04-21.md        text as enacted
+  uu_11_2008_2024-01-02.md        (later) consolidated text, marked unofficial
+data/ruu/perampasan-aset/
+  ruu.yaml
+  versions/ruu_perampasan-aset_2026-11-19_draft-final.md
 ```
+
+Year folders keep every folder small (GitHub's file browser stops at 1,000 entries).
+
+### archive.org
+
+Only original source files (PDFs) go to archive.org. Our consolidated texts do not.
+
+| | Regulation | RUU document |
+|---|---|---|
+| Item identifier | work id: `uu_11_2008` | document id: `ruu_perampasan-aset_2026-11-19_draft-final` |
+| File in the item | version id: `uu_11_2008_2008-04-21.pdf` | `ruu_perampasan-aset_2026-11-19_draft-final.pdf` |
+| Title | official citation | `<title label> <who> – <RUU title as it was then> (<date in Indonesian>)` |
+
+If the source later publishes a different file for the same version, it goes into the same item
+with the fetch date appended. If an identifier is already taken by someone else on archive.org,
+the upload fails and a variant is chosen by hand; nothing is ever overwritten.
+
+### Website
+
+| Page | URL |
+|---|---|
+| Regulation (latest version) | `/uu/11/2008` |
+| One version | `/uu/11/2008/2016-11-25` |
+| Compare versions | `/uu/11/2008/beda/2008-04-21...2024-01-02` |
+| RUU | `/ruu/perampasan-aset` |
+| RUU document | `/ruu/perampasan-aset/ruu_perampasan-aset_2026-11-19_draft-final` |
+
+## Worked examples
+
+**UU ITE.** `uu_11_2008` (`short_name: UU ITE`, `status: diubah`,
+`amended_by: [uu_19_2016, uu_1_2024]`) with versions `uu_11_2008_2008-04-21` (official),
+`uu_11_2008_2016-11-25` and `uu_11_2008_2024-01-02` (our consolidations, labelled unofficial).
+
+**Cipta Kerja.** `uu_11_2020` (`dicabut`, `revoked_by: perppu_2_2022`) →
+`perppu_2_2022` (`revokes: uu_11_2020`, `enacted_as: uu_6_2023`) →
+`uu_6_2023` (`enacts: perppu_2_2022`). All three share `short_name: UU Cipta Kerja`.
+
+**RUU to UU.** `ruu.yaml` gets `enacted_as: uu_<n>_<year>`; the new regulation gets
+`from_ruu: ruu/<slug>`.

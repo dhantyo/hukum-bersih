@@ -3,12 +3,12 @@ name: Fetch and archive
 # Downloads source documents, uploads each to the Internet Archive, and commits the
 # manifest lines (url, fetched_at, sha256, bytes, archive_url) to data/sources/manifests/.
 # PDFs themselves never enter git. Needs repo secrets IA_ACCESS_KEY and IA_SECRET_KEY.
-# Each document needs a readable doc id (docs/NAMING.md); archived as hukum-bersih-<doc id>.
+# Each document needs an id per docs/NAMING.md, e.g. uu_11_2008_2008-04-21.
 on:
   workflow_dispatch:
     inputs:
       docs:
-        description: "Pairs of 'doc-id URL', e.g. 'ruu-perampasan-aset-2026-11-19-draft-ruu-final https://berkas2.dpr.go.id/...' (separate pairs with spaces)"
+        description: "Pairs of 'doc-id URL', e.g. 'ruu_perampasan-aset_2026-11-19_draft-final https://berkas2.dpr.go.id/...' (separate pairs with spaces)"
         required: true
       title:
         description: "Optional Internet Archive title (single pair only)"

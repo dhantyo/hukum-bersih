@@ -1,8 +1,8 @@
 """Download a source document, archive it on the Internet Archive, record it in a manifest.
 
-PDFs never enter git (BRIEF §5.3). Each file gets a readable doc id (docs/NAMING.md),
-becomes the Internet Archive item ``hukum-bersih-<doc id>`` holding ``<doc id>.<ext>``, and one
-line in ``data/sources/manifests/<host>.jsonl``. A file already archived under the same doc id
+PDFs never enter git (BRIEF §5.3). Each file gets an id (docs/NAMING.md) and is
+stored as ``<id>.<ext>`` in the archive.org item for that document (for a regulation version,
+the item of the regulation), plus one line in ``data/sources/manifests/<host>.jsonl``. A file already archived under the same doc id
 with the same sha256 is skipped, so runs are idempotent.
 """
 
@@ -21,9 +21,8 @@ import httpx
 
 from . import USER_AGENT
 from .manifest import ManifestEntry, entry_for_file
+from .naming import archive_item, default_title, validate_id
 
-ITEM_PREFIX = "hukum-bersih"
-DOC_ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 WAYBACK_RE = re.compile(r"^https?://web\.archive\.org/web/(\d+)(?:id_)?/(.+)$")
 
 
@@ -49,24 +48,9 @@ def safe_filename(url: str) -> str:
     return stem + suffix
 
 
-def validate_doc_id(doc_id: str) -> str:
-    if not DOC_ID_RE.match(doc_id):
-        raise ValueError(
-            f"invalid doc id {doc_id!r}: use lowercase letters, digits and single hyphens "
-            "(see docs/NAMING.md)"
-        )
-    if len(ITEM_PREFIX) + 1 + len(doc_id) > 100:  # IA identifier limit
-        raise ValueError(f"doc id too long: {doc_id!r}")
-    return doc_id
-
-
-def item_id(doc_id: str) -> str:
-    return f"{ITEM_PREFIX}-{validate_doc_id(doc_id)}"
-
-
 def archived_filename(doc_id: str, url: str) -> str:
     ext = Path(safe_filename(url)).suffix.lower() or ".pdf"
-    return f"{validate_doc_id(doc_id)}{ext}"
+    return f"{validate_id(doc_id)}{ext}"
 
 
 def manifest_path(data_dir: Path, url: str) -> Path:
@@ -122,9 +106,13 @@ def upload_to_ia(
         "source": source_url,
         "original_filename": original_filename,
         "language": "ind",
-        "subject": ["Indonesian law", "hukum-bersih"],
-        "description": f"Archived by hukum-bersih (https://github.com/dhantyo/hukum-bersih) "
-        f"from {source_url} (original file name: {original_filename})",
+        "subject": ["hukum Indonesia", "peraturan perundang-undangan", "Indonesian law"],
+        "description": (
+            f"Salinan arsip dari {source_url} (nama berkas asli: {original_filename}). "
+            "Diarsipkan oleh proyek terbuka hukum-bersih "
+            "(https://github.com/dhantyo/hukum-bersih) agar dokumen hukum publik tetap dapat "
+            "diakses. / Archived copy of a public Indonesian legal document."
+        ),
     }
     responses = internetarchive.upload(
         item, files={filename: str(path)}, metadata=metadata, access_key=access,
@@ -138,7 +126,7 @@ def upload_to_ia(
 def fetch_and_archive(
     url: str, doc_id: str, data_dir: Path, title: str | None = None, archive: bool = True,
 ) -> FetchResult:
-    item = item_id(doc_id)
+    item = archive_item(doc_id)
     filename = archived_filename(doc_id, url)
     manifest = manifest_path(data_dir, url)
     with tempfile.TemporaryDirectory() as tmp:
@@ -151,7 +139,10 @@ def fetch_and_archive(
         if not path.read_bytes()[:5].startswith(b"%PDF"):
             print(f"warning: {url} does not look like a PDF")
         if archive:
-            upload_to_ia(path, item, filename, url, title or doc_id, entry.original_filename)
+            upload_to_ia(
+                path, item, filename, url, title or default_title(doc_id, data_dir),
+                entry.original_filename,
+            )
     manifest.parent.mkdir(parents=True, exist_ok=True)
     with manifest.open("a") as f:
         f.write(json.dumps(entry.to_dict(), ensure_ascii=False) + "\n")

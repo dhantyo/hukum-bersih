@@ -40,7 +40,8 @@ def main(argv: list[str] | None = None) -> int:
         entry = entry_for_file(args.path, args.source_url, args.archive_url)
         print(json.dumps(entry.to_dict(), indent=2))
     elif args.command == "fetch":
-        from .fetch import fetch_and_archive, validate_doc_id
+        from .fetch import fetch_and_archive
+        from .naming import validate_id
 
         if len(args.pairs) % 2:
             parser.error("arguments must be DOC_ID URL pairs")
@@ -49,7 +50,7 @@ def main(argv: list[str] | None = None) -> int:
             if doc_id.startswith(("http://", "https://")) or not url.startswith("http"):
                 parser.error(f"expected DOC_ID URL, got {doc_id!r} {url!r}")
             try:
-                validate_doc_id(doc_id)
+                validate_id(doc_id)
             except ValueError as e:
                 parser.error(str(e))
         if args.title and len(pairs) > 1:

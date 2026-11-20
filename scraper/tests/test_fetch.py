@@ -6,11 +6,9 @@ from hukum_bersih.cli import main
 from hukum_bersih.fetch import (
     already_archived,
     archived_filename,
-    item_id,
     manifest_path,
     raw_wayback_url,
     safe_filename,
-    validate_doc_id,
 )
 
 WAYBACK = (
@@ -31,26 +29,17 @@ def test_safe_filename():
     assert safe_filename(DPR) == "komisi3-RJ-20261119-043602-5251.pdf"
 
 
-def test_names_follow_doc_id():
-    doc = "ruu-perampasan-aset-2026-11-19-draft-ruu-final"
-    assert item_id(doc) == "hukum-bersih-ruu-perampasan-aset-2026-11-19-draft-ruu-final"
-    assert archived_filename(doc, DPR) == f"{doc}.pdf"
-    assert archived_filename("x", "https://h/a/FILE.PDF") == "x.pdf"
-
-
-@pytest.mark.parametrize(
-    "bad", ["Komisi3-RJ", "uu_8_2010", "uu--8", "-uu-8", "uu-8-", "ruu perampasan", "", "a" * 90]
-)
-def test_validate_doc_id_rejects(bad):
-    with pytest.raises(ValueError):
-        validate_doc_id(bad)
+def test_archived_filename():
+    assert archived_filename("uu_11_2008_2008-04-21", "https://h/a/FILE.PDF") == (
+        "uu_11_2008_2008-04-21.pdf"
+    )
 
 
 def test_cli_requires_pairs(capsys):
     with pytest.raises(SystemExit):
         main(["fetch", DPR])
     with pytest.raises(SystemExit):
-        main(["fetch", DPR, "uu-8-2010"])
+        main(["fetch", DPR, "uu_8_2010"])
     with pytest.raises(SystemExit):
         main(["fetch", "Bad_Name", DPR])
 
