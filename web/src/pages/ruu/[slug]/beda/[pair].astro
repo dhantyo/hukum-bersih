@@ -57,7 +57,7 @@ const chapterChange = (r: (typeof cmp.rows)[number]) => {
       {cmp.counts.renumbered > 0 && ` ${cmp.counts.renumbered} pasal berganti nomor.`}
       {" "}Pencocokan dilakukan otomatis; periksa teks lengkapnya untuk kepastian.
     </div>
-    <label class="toggle"><input type="checkbox" id="show-same" /> Tampilkan juga pasal yang tidak berubah</label>
+    <label class="toggle"><input type="checkbox" id="show-same" /> Tampilkan juga pasal yang isi dan nomornya tidak berubah</label>
   </div>
 
   <!-- Synopsis layout (as in German "Synopse", EU four-column documents, Indonesian DIM):
@@ -73,10 +73,11 @@ const chapterChange = (r: (typeof cmp.rows)[number]) => {
       return (
         <>
           {newChapter && <div class="syn-chapter">{newChapter}</div>}
-          <section class={`syn-row ${r.status}`} id={anchor}>
+          <section class={`syn-row ${r.status}${r.renumbered ? " renumbered" : ""}`} id={anchor}>
             <div class="syn-meta">
               <a href={`#${anchor}`}>{STATUS[r.status]}</a>
               {r.moved && <span class="tag">dipindah</span>}
+              {r.status === "sama" && r.renumbered && <span class="tag">nomor berubah</span>}
               {r.a && r.b && r.status === "berubah" && r.similarity < WEAK && (
                 <span class="tag" title="Dicocokkan otomatis berdasarkan isi; kemiripannya rendah, periksa kedua teks.">kemiripan rendah</span>
               )}
@@ -146,7 +147,8 @@ const chapterChange = (r: (typeof cmp.rows)[number]) => {
     margin: 2rem 0 0.25rem; padding: 0.35rem 0; font-weight: 700; font-size: 0.85rem;
     letter-spacing: 0.04em; color: var(--muted); border-bottom: 1px solid var(--line);
   }
-  .hide-same .syn-row.sama { display: none; }
+  /* hide only pasal whose text and number are both unchanged */
+  .hide-same .syn-row.sama:not(.renumbered) { display: none; }
   .syn-row { padding: 0.75rem 0 1rem; border-bottom: 1px solid var(--line); scroll-margin-top: 3rem; }
   .syn-meta { display: flex; gap: 0.5rem; align-items: center; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.25rem; }
   .syn-meta a { text-decoration: none; padding: 0.05rem 0.5rem; border-radius: 999px; background: var(--line); color: var(--text); }
