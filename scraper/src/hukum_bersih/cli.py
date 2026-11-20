@@ -35,6 +35,13 @@ def main(argv: list[str] | None = None) -> int:
     fetch_cmd.add_argument("--no-archive", action="store_true", help="hash only, skip IA upload")
     fetch_cmd.add_argument("--delay", type=float, default=2.0, help="seconds between requests")
 
+    parse_cmd = sub.add_parser("parse", help="convert a regulation/draft PDF to Markdown")
+    parse_cmd.add_argument("pdf", type=Path)
+    parse_cmd.add_argument("--id", required=True, help="document id (docs/NAMING.md)")
+    parse_cmd.add_argument("--out", type=Path, required=True)
+    parse_cmd.add_argument("--source-sha256")
+    parse_cmd.add_argument("--archive-url")
+
     clean_cmd = sub.add_parser(
         "archive-delete", help="delete the files of obsolete archive.org items we uploaded"
     )
@@ -76,6 +83,24 @@ def main(argv: list[str] | None = None) -> int:
             print(f"{state}  {doc_id}  {url}\n        sha256={res.entry.sha256} bytes={res.entry.bytes}"
                   f"\n        {res.entry.archive_url}")
         return 1 if failures else 0
+    elif args.command == "parse":
+        from .manifest import sha256_file
+        from .naming import validate_id
+        from .parse import parse_pdf, to_markdown
+
+        validate_id(args.id)
+        doc = parse_pdf(args.pdf)
+        fm = {
+            "id": args.id,
+            "source_sha256": args.source_sha256 or sha256_file(args.pdf),
+            "source_archive_url": args.archive_url,
+        }
+        args.out.parent.mkdir(parents=True, exist_ok=True)
+        args.out.write_text(to_markdown(doc, fm))
+        print(f"{args.out}: {doc.pasal_count} pasal, {doc.bab_count} BAB")
+        if args.source_sha256 and args.source_sha256 != sha256_file(args.pdf):
+            print("warning: PDF hash differs from --source-sha256")
+            return 1
     elif args.command == "archive-delete":
         from .archive_cleanup import empty_item
 
