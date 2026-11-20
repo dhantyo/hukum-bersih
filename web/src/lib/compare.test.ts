@@ -84,3 +84,26 @@ test("M1: RUU Perampasan Aset Pasal 5(2) changed", () => {
     l.parts[0].value.includes("tidak seimbang dengan penghasilan"));
   assert.ok(gone, "unexplained-wealth item is a removed line");
 });
+
+test("a reworded ayat stays on one row; split pasal point to each other", () => {
+  const a: LawDoc = { ...doc([]), pasal: [{ label: "Pasal 23", num: "23", eId: "art_23", lines: [
+    { text: "(1) Penyidik menyerahkan hasil pemberkasan kepada Jaksa Pengacara Negara dalam waktu paling lama 3 hari.", indent: 0 },
+    { text: "(2) Jaksa Pengacara Negara wajib melakukan pemeriksaan kelengkapan berkas untuk diajukan ke pengadilan dalam waktu 7 hari sejak berkas diterima.", indent: 0 },
+  ] }] };
+  const b: LawDoc = { ...doc([]), pasal: [
+    { label: "Pasal 23", num: "23", eId: "art_23", lines: [
+      { text: "(1) Penyidik melakukan penyusunan berkas perkara atas Aset yang telah disita.", indent: 0 },
+      { text: "(2) Penyidik menyerahkan hasil pemberkasan kepada Jaksa Pengacara Negara dalam waktu paling lama 2 hari.", indent: 0 },
+    ] },
+    { label: "Pasal 24", num: "24", eId: "art_24", lines: [
+      { text: "(1) Jaksa Pengacara Negara wajib melakukan pemeriksaan terhadap kelengkapan berkas perkara sebagaimana dimaksud dalam Pasal 23.", indent: 0 },
+    ] },
+  ] };
+  const rows = compare(a, b).rows;
+  const all = rows.flatMap((r) => r.lines);
+  // no line of the old Pasal 23 is left unexplained: matched, or pointing to where it went
+  for (const r of rows.filter((r) => r.a)) {
+    for (const l of r.lines.filter((l) => l.kind === "dihapus")) assert.ok(l.ref, l.parts[0].value);
+  }
+  assert.ok(all.some((l) => l.ref?.label.startsWith("Pasal 23 ayat") || l.ref?.label.startsWith("Pasal 24 ayat")));
+});

@@ -18,3 +18,8 @@ Checked and rejected: `xmldiff` (tree edit scripts with move detection) produced
 low-level edits on the Perampasan Aset drafts and no pasal-to-pasal correspondence, which is
 what a synopsis needs. More versions (one column per stage, like the EU four-column format)
 can be added later on the same structure.
+
+Addendum (same day): rows pair pasal one-to-one, so a pasal split into two (old Pasal 23 →
+new 23 and 24) leaves some ayat without a partner. Those ayat now carry a pointer to their
+clearest counterpart elsewhere ("≈ Pasal 23 ayat (2) (2026)"), and a reworded ayat is shown
+old-left / new-right on one row. Ayat are matched with TF-IDF cosine similarity.

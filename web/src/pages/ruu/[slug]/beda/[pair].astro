@@ -19,6 +19,11 @@ const cmp: Comparison = compare(loadText(ruu, a), loadText(ruu, b));
 const name = (d: RuuDocument) => `${DOC_TYPE[d.type] ?? d.type} (${tanggal(d.date)})`;
 const prov = (d: RuuDocument) => PROVENANCE[provenanceKey(d.provenance)];
 const yearOf = (d: RuuDocument) => d.date.slice(0, 4);
+/** Row anchor for each pasal, so cross-references can link to where it is shown. */
+const anchorOf = new Map(cmp.rows.flatMap((r) => {
+  const anchor = r.b ? `b-${r.b.eId}` : `a-${r.a!.eId}`;
+  return [r.a, r.b].filter(Boolean).map((p) => [p!, anchor] as const);
+}));
 /** Matches below this are shown with a "low similarity" note. */
 const WEAK = 0.34;
 /** BAB dividers follow the new version; removed pasal stay under the current BAB. */
@@ -83,21 +88,34 @@ const chapterChange = (r: (typeof cmp.rows)[number]) => {
               <div class="cell new">
                 {r.b ? <h3>{r.b.label} <span class="ver">{yearOf(b)}</span></h3> : <p class="none">Dihapus</p>}
               </div>
-              {r.lines.map((l) => (
-                <>
-                  <div class={`cell old line i${l.indent} ${l.kind}`}>
-                    {l.kind !== "baru" && l.parts.filter((p) => !p.added).map((p) =>
-                      p.removed ? <del>{p.value}</del> : p.value)}
-                  </div>
-                  <div class={`cell new line i${l.indent} ${l.kind}`}>
-                    {l.kind !== "dihapus" && l.parts.filter((p) => !p.removed).map((p) =>
-                      p.added ? <ins>{p.value}</ins> : p.value)}
-                  </div>
-                  <div class={`cell inline line i${l.indent} ${l.kind}`}>
-                    {l.parts.map((p) => p.added ? <ins>{p.value}</ins> : p.removed ? <del>{p.value}</del> : p.value)}
-                  </div>
-                </>
-              ))}
+              {r.lines.map((l) => {
+                // a reworded ayat ("diganti") shows old left and new right on the same row
+                const oldKind = l.kind === "diganti" ? "dihapus" : l.kind;
+                const newKind = l.kind === "diganti" ? "baru" : l.kind;
+                const ref = l.ref && (
+                  <span class="ref">≈ <a href={`#${anchorOf.get(l.ref.pasal) ?? ""}`}>{l.ref.label}</a> ({yearOf(l.ref.side === "a" ? a : b)})</span>
+                );
+                return (
+                  <>
+                    <div class={`cell old line i${l.indent} ${oldKind}`}>
+                      {oldKind !== "baru" && l.parts.filter((p) => !p.added).map((p) =>
+                        p.removed ? <del>{p.value}</del> : p.value)}
+                      {l.kind === "dihapus" && ref}
+                    </div>
+                    <div class={`cell new line i${l.indent} ${newKind}`}>
+                      {newKind !== "dihapus" && l.parts.filter((p) => !p.removed).map((p) =>
+                        p.added ? <ins>{p.value}</ins> : p.value)}
+                      {l.kind === "baru" && ref}
+                    </div>
+                    <div class={`cell inline line i${l.indent} ${l.kind}`}>
+                      {l.kind === "diganti"
+                        ? <><del>{l.parts[0].value}</del><br /><ins>{l.parts[1].value}</ins></>
+                        : l.parts.map((p) => p.added ? <ins>{p.value}</ins> : p.removed ? <del>{p.value}</del> : p.value)}
+                      {ref}
+                    </div>
+                  </>
+                );
+              })}
             </div>
           </section>
         </>
@@ -147,6 +165,8 @@ const chapterChange = (r: (typeof cmp.rows)[number]) => {
   .cell.new.line.baru { background: var(--ins-bg); color: var(--ins-text); }
   .cell.new.line.dihapus, .cell.old.line.baru { visibility: hidden; padding-top: 0; padding-bottom: 0; }
   .cell.inline { display: none; }
+  .ref { display: block; margin-top: 0.2rem; font-size: 0.8rem; color: var(--muted); text-decoration: none; }
+  .ref a { color: inherit; }
   .cell.old.line.dihapus del { background: none; }
   .cell.new.line.baru ins { background: none; }
   .dihapus .cell.new, .baru .cell.old { color: var(--muted); }
@@ -159,6 +179,7 @@ const chapterChange = (r: (typeof cmp.rows)[number]) => {
     .cell.line.old, .cell.line.new { display: none; }
     .cell.inline { display: block; }
     .cell.inline.dihapus { background: var(--del-bg); color: var(--del-text); text-decoration: line-through; }
+    .cell.inline.dihapus .ref { text-decoration: none; }
     .cell.inline.baru { background: var(--ins-bg); color: var(--ins-text); }
     .cell.inline.dihapus del, .cell.inline.baru ins { background: none; }
     .baru .cell.old:not(.line), .dihapus .cell.new:not(.line) { display: none; }
