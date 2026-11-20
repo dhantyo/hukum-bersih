@@ -52,10 +52,10 @@ Ids never contain the project name. The project is mentioned only in archive.org
 - `<n>`: `1`, `2`, … when one entry has several files (a DIM split into four PDFs).
 - Versions known to exist but never found still get an id.
 
-| `<type>` | DPR label (`menuAkd.title`) | Full label (description) |
+| `<type>` | DPR label (`menuAkd.title`) | Our label (DPR's wording, KBBI spelling) |
 |---|---|---|
-| `draft` | Draft RUU | Naskah RUU (short: Naskah) |
-| `draft-final` | Draft RUU Final | Naskah RUU Final (short: Naskah Final) |
+| `draft` | Draft RUU | Draf RUU |
+| `draft-final` | Draft RUU Final | Draf RUU Final |
 | `naskah-akademik` | Draft NA | Naskah Akademik |
 | `naskah-urgensi` | Naskah Urgensi | Naskah Urgensi |
 | `dim` | Daftar Inventaris Masalah (DIM) | Daftar Inventaris Masalah (DIM) (short: DIM) |
@@ -96,7 +96,7 @@ Only original source files (PDFs) go to archive.org. Our consolidated texts do n
 |---|---|---|
 | Item identifier | work id: `uu_11_2008` | document id: `ruu_perampasan-aset_2026-11-19_draft-final` |
 | File in the item | version id: `uu_11_2008_2008-04-21.pdf` | `ruu_perampasan-aset_2026-11-19_draft-final.pdf` |
-| Title (short, shown on cards) | `<short name> – <citation>`, e.g. UU ITE – Undang-Undang Nomor 11 Tahun 2008 | `<bill short name> – <short label> (<date>)`, e.g. RUU Perampasan Aset – Naskah Final (19 November 2026) |
+| Title (short, shown on cards) | `<short name> – <citation>`, e.g. UU ITE – Undang-Undang Nomor 11 Tahun 2008 | `<bill short name> – <short label> (<date>)`, e.g. RUU Perampasan Aset – Draf RUU Final (19 November 2026) |
 | Description | full title with "tentang …", source URL, original file name, one line about the project | full label + the bill's title as it was then, source URL, original file name, project line |
 
 If the source later publishes a different file for the same version, it goes into the same item

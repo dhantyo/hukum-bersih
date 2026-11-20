@@ -33,8 +33,8 @@ JENIS_TITLE = {
 
 # Full label (descriptions) and short label (titles, where the bill's short name comes first).
 RUU_TYPE_TITLE = {
-    "draft": "Naskah RUU",
-    "draft-final": "Naskah RUU Final",
+    "draft": "Draf RUU",          # DPR's own wording ("Draft RUU"), in KBBI spelling
+    "draft-final": "Draf RUU Final",
     "naskah-akademik": "Naskah Akademik",
     "naskah-urgensi": "Naskah Urgensi",
     "dim": "Daftar Inventaris Masalah (DIM)",
@@ -48,7 +48,7 @@ RUU_TYPE_TITLE = {
     "dokumen-pendukung": "Dokumen Pendukung",
 }
 
-RUU_TYPE_SHORT = {**RUU_TYPE_TITLE, "draft": "Naskah", "draft-final": "Naskah Final", "dim": "DIM"}
+RUU_TYPE_SHORT = {**RUU_TYPE_TITLE, "dim": "DIM"}
 
 BULAN = [
     "Januari", "Februari", "Maret", "April", "Mei", "Juni",
@@ -116,7 +116,7 @@ def _ruu_label(m: re.Match, table: dict[str, str]) -> str:
 
 
 def default_title(doc_id: str, data_dir: Path) -> str:
-    """Short card title, most important words first: 'RUU Perampasan Aset – Naskah Final
+    """Short card title, most important words first: 'RUU Perampasan Aset – Draf RUU Final
     (19 November 2026)'. Regulations get the citation; the importer prepends the short name
     ('UU ITE – Undang-Undang Nomor 11 Tahun 2008') when it knows it."""
     validate_id(doc_id)
@@ -130,7 +130,7 @@ def default_title(doc_id: str, data_dir: Path) -> str:
 
 
 def full_title(doc_id: str, data_dir: Path) -> str:
-    """Complete name for descriptions: 'Naskah RUU Final – RUU tentang … (19 November 2026)'.
+    """Complete name for descriptions: 'Draf RUU Final – RUU tentang … (19 November 2026)'.
     Uses the bill's title as it was at the time (``ruu_title`` on the document) if recorded."""
     validate_id(doc_id)
     if doc_id.startswith("ruu_"):

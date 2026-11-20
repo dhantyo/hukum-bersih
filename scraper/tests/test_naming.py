@@ -73,13 +73,13 @@ def test_titles_ruu(tmp_path):
         "    ruu_title: RUU tentang Contoh Lama\n"
     )
     assert default_title("ruu_contoh_2023-05_draft_pemerintah", tmp_path) == (
-        "RUU Contoh – Naskah Pemerintah (Mei 2023)"
+        "RUU Contoh – Draf RUU Pemerintah (Mei 2023)"
     )
     assert full_title("ruu_contoh_2023-05_draft_pemerintah", tmp_path) == (
-        "Naskah RUU Pemerintah – RUU tentang Contoh Lama (Mei 2023)"
+        "Draf RUU Pemerintah – RUU tentang Contoh Lama (Mei 2023)"
     )
     assert default_title("ruu_contoh_2026-11-19_draft-final", tmp_path) == (
-        "RUU Contoh – Naskah Final (19 November 2026)"
+        "RUU Contoh – Draf RUU Final (19 November 2026)"
     )
     assert default_title("ruu_contoh_2026-11-09_dim_2", tmp_path) == (
         "RUU Contoh – DIM bagian 2 (9 November 2026)"
@@ -91,5 +91,5 @@ def test_titles_ruu(tmp_path):
 
 def test_title_without_tracker_falls_back_to_slug(tmp_path):
     assert default_title("ruu_perampasan-aset_2026-11-19_draft-final", tmp_path) == (
-        "RUU Perampasan Aset – Naskah Final (19 November 2026)"
+        "RUU Perampasan Aset – Draf RUU Final (19 November 2026)"
     )
