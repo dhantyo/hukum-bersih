@@ -1,0 +1,19 @@
+# Never commit source documents
+*.pdf
+*.PDF
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Node / Astro
+node_modules/
+web/dist/
+web/.astro/
+
+# Local scraper state
+scraper/cache/
+.env
