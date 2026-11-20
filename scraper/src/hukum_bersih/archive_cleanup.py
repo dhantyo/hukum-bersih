@@ -1,7 +1,7 @@
 """Remove the files of obsolete archive.org items we uploaded (e.g. after a rename).
 
-archive.org does not let uploaders delete an item itself, only its files. The emptied item is
-retitled and marked noindex so it drops out of search.
+archive.org does not let uploaders delete an item itself, only its files, and the noindex flag
+is read-only for uploaders. The emptied item is retitled instead.
 """
 
 from __future__ import annotations
@@ -34,7 +34,7 @@ def empty_item(identifier: str) -> list[str]:
             if getattr(r, "status_code", 200) >= 400:
                 raise RuntimeError(f"{identifier}: delete failed ({r.status_code}): {r.text[:300]}")
     r = item.modify_metadata(
-        {"title": "Duplikat (berkas dihapus)", "noindex": "true",
+        {"title": "Duplikat (berkas dihapus)",
          "description": "Item ini duplikat dan berkasnya telah dihapus."}
     )
     if getattr(r, "status_code", 200) >= 400:

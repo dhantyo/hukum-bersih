@@ -1,8 +1,8 @@
 name: Delete archive.org files
 
 # Removes the files of obsolete archive.org items we uploaded (e.g. after renaming), then
-# retitles them "Duplikat (berkas dihapus)" and hides them from search. archive.org does not
-# let uploaders delete the item page itself. Type HAPUS in "confirm" to run.
+# retitles them "Duplikat (berkas dihapus)". archive.org does not let uploaders delete the item
+# page itself or hide it from search. Type HAPUS in "confirm" to run.
 on:
   workflow_dispatch:
     inputs:
