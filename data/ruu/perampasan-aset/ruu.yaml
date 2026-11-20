@@ -1,0 +1,50 @@
+# RUU tracker record (docs/BRIEF.md §6.3). Every document carries provenance.
+# Versions known to exist but with no file found have `source_url: null` and a note;
+# they are never reconstructed.
+id: ruu/perampasan-aset
+title: RUU tentang Perampasan Aset Terkait Tindak Pidana Korupsi dan Tindak Pidana Lainnya
+former_titles:
+  - RUU tentang Perampasan Aset Terkait Dengan Tindak Pidana
+initiator: DPR            # government bill in 2023; DPR initiative bill since 2026-10-06
+dpr_page: https://www.dpr.go.id/kegiatan-dpr/fungsi-dpr/fungsi-legislasi/partisipasi-legislasi/detail/RUU-tentang-Perampasan-Aset-RUU-tentang-Perampasan-Aset-Terkait-Dengan-Tindak-Pidana--707
+stages:
+  - { stage: surat_presiden, date: 2023-05-04, note: "Pemerintah mengirim draf ke DPR (Surat Presiden)" }
+  - { stage: penyusunan_bkd, date: 2026-01-15, note: "Badan Keahlian DPR memaparkan draf pertama" }
+  - { stage: penetapan_usul_dpr, date: 2026-10-06, note: "Disetujui sebagai RUU usul inisiatif DPR" }
+  - { stage: dim_pemerintah, date: 2026-11-05, note: "Pemerintah menyerahkan DIM" }
+  - { stage: pembicaraan_tingkat_i, date: 2026-11-18 }
+  - { stage: pembicaraan_tingkat_ii, date: 2026-11-19, note: "Disetujui rapat paripurna" }
+enacted_as: null          # set to /akn/id/act/uu/2026/N once numbered
+
+documents:
+  - id: 2023-05-pemerintah
+    type: draft_ruu
+    label: Draf pemerintah 2023 (68 pasal, 7 BAB)
+    date: 2023-05           # file is undated; PDF metadata created 2023-05-11
+    provenance: archive     # PPATK removed the original; copy from the Wayback Machine
+    obtained_by: Wayback Machine (capture of jdih.ppatk.go.id, 2025-11-06)
+    source_url: https://web.archive.org/web/20251106052153/https://jdih.ppatk.go.id/storage/dokumen_produk_hukum/Draft%20Final%20RUU%20Perampasan%20Aset%20.pdf
+    sha256: 87a11ba463a4afd3c31bce31a6c018679d4362b6c8cca9dada4c115d405b6502
+    archive_url: https://archive.org/download/hukum-bersih-ppatk-draft-final-ruu-perampasan-aset/Draft-Final-RUU-Perampasan-Aset.pdf
+    text: null              # TODO: versions/2023-05-pemerintah.md
+    note: >-
+      File is titled "Draft Final RUU Perampasan Aset". Copies circulated in 2026 as an
+      "August 2026 final draft" are this 2023 file.
+
+  - id: 2026-11-19-draft-final
+    type: draft_ruu_final
+    label: Draf final yang disetujui paripurna (74 pasal, 9 BAB)
+    date: 2026-11-19        # posted on the DPR page; PDF metadata created 2026-11-18
+    provenance: official
+    obtained_by: DPR
+    source_url: https://berkas2.dpr.go.id/akd/dokumen/komisi3-RJ-20261119-043602-5251.pdf
+    sha256: 58981ff14580c2de87269fb9e8474d235dc2fe36de2092e0c4d317b41461a369
+    archive_url: https://archive.org/download/hukum-bersih-dpr-komisi3-rj-20261119-043602-5251/komisi3-RJ-20261119-043602-5251.pdf
+    text: null              # TODO: versions/2026-11-19-draft-final.md
+
+  # Known versions without a file (never reconstruct these).
+  - { id: 2008-ppatk, type: draft_ruu, date: 2008, provenance: null, source_url: null, note: "Original PPATK draft; no file found." }
+  - { id: 2026-01-bkd, type: draft_ruu, date: 2026-01-15, provenance: null, source_url: null, note: "BKD first draft, reported as 62 pasal; no file found." }
+  - { id: 2026-pra-inisiatif, type: draft_ruu, date: 2026, provenance: null, source_url: null, note: "DPR draft before the initiative vote, reported as 66 pasal, 9 BAB; no file found." }
+  - { id: 2026-07-10, type: draft_ruu, date: 2026-07-10, provenance: null, source_url: null, note: "Only quoted in civil-society and Katadata reporting; no file found." }
+  - { id: 2026-08, type: draft_ruu, date: 2026-08, provenance: null, source_url: null, note: "Only quoted in reporting; no file found." }
