@@ -74,11 +74,13 @@ Names follow [NAMING.md](NAMING.md).
 | `fetch.yml` | manual | fetch + archive `id URL` pairs, commit manifest lines |
 | `archive-retitle.yml` | manual | rewrite archive.org titles/descriptions |
 | `archive-delete.yml` | manual | empty obsolete archive.org items |
+| `import-peraturan.yml` | every 6 h + manual | import regulations from peraturan.go.id in batches of 50; resumes; afterwards picks up new ones |
 | `archive-pending.yml` | daily + manual | archive regulation PDFs the importer recorded (batches of 150) |
 | `probe-sources.yml` | manual | which sources a GitHub runner can reach |
 
-Where things run: GitHub runners reach DPR files and the Wayback Machine; the Claude cloud
-session reaches peraturan.go.id (intermittently). See CLAUDE.md for the latest findings.
+Where things run: everything recurring runs on GitHub Actions (no Claude session or personal
+computer needed). GitHub runners reach DPR files, the Wayback Machine and (since 2026-11-20
+evening) peraturan.go.id. See CLAUDE.md for the latest findings.
 
 ## Reused instead of written
 

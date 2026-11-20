@@ -1,0 +1,57 @@
+name: Import regulations
+
+# Imports regulations from peraturan.go.id into data/ (Bluebell text + YAML records), in batches
+# of 50, committing and pushing after each batch. Already imported regulations are skipped, so
+# every run resumes where the last one stopped; once everything is in, runs only pick up new
+# regulations. PDFs are archived separately by archive-pending.yml. Runs on GitHub, so it does
+# not depend on anyone's computer or a Claude session.
+on:
+  schedule:
+    - cron: "23 */6 * * *"   # every 6 hours
+  workflow_dispatch:
+    inputs:
+      jenis:
+        description: "Type of regulation"
+        default: "uu"
+        type: choice
+        options: [uu, perppu, pp, perpres]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-peraturan
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    env:
+      JENIS: ${{ inputs.jenis || 'uu' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync
+        working-directory: pipeline
+      - name: Import in batches
+        run: |
+          git config user.name "hukum-bersih bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          deadline=$(( $(date +%s) + 320 * 60 ))       # stop starting batches after ~5h20m
+          while [ "$(date +%s)" -lt "$deadline" ]; do
+            out=$(cd pipeline && uv run hukum-bersih import-peraturan "$JENIS" --limit 50 2>&1 || true)
+            echo "$out"
+            n=$(echo "$out" | grep -c '^ok' || true)
+            echo "$out" | grep -E '^(ok|FAIL)' >> "$GITHUB_STEP_SUMMARY" || true
+            git add data/
+            if ! git diff --cached --quiet; then
+              git commit -qm "peraturan/$JENIS: import $n from peraturan.go.id"
+              for i in 1 2 3 4 5; do
+                git pull -q --no-rebase --no-edit origin "${GITHUB_REF_NAME}" && git push -q && break
+                sleep $((i * 20))
+              done
+            fi
+            [ "$n" -eq 0 ] && break
+          done
+          echo "Records: $(find data/peraturan/$JENIS -name '*.yaml' | wc -l), with text: $(find data/peraturan/$JENIS -name '*.txt' | wc -l)" | tee -a "$GITHUB_STEP_SUMMARY"
