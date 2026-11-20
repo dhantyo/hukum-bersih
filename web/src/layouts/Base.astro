@@ -4,8 +4,10 @@ interface Props {
   description?: string;
   /** Keep this page out of the search index. */
   noindex?: boolean;
+  /** Use the full width (side-by-side comparisons). */
+  wide?: boolean;
 }
-const { title, description, noindex = false } = Astro.props;
+const { title, description, noindex = false, wide = false } = Astro.props;
 const home = import.meta.env.BASE_URL;
 ---
 <!doctype html>
@@ -23,7 +25,7 @@ const home = import.meta.env.BASE_URL;
         <a href={`${home}ruu/`}>RUU</a>
       </nav>
     </header>
-    <main data-pagefind-body={noindex ? undefined : true}>
+    <main class:list={{ wide }} data-pagefind-body={noindex ? undefined : true}>
       <slot />
     </main>
     <footer class="site">
@@ -91,6 +93,7 @@ const home = import.meta.env.BASE_URL;
     font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   }
   main, header.site, footer.site { max-width: 48rem; margin: 0 auto; padding: 0 16px; }
+  main.wide { max-width: 76rem; }
   header.site {
     display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
     padding-top: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--line);

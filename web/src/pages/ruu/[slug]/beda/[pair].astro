@@ -20,9 +20,16 @@ const name = (d: RuuDocument) => `${DOC_TYPE[d.type] ?? d.type} (${tanggal(d.dat
 const prov = (d: RuuDocument) => PROVENANCE[provenanceKey(d.provenance)];
 const yearOf = (d: RuuDocument) => d.date.slice(0, 4);
 /** Matches below this are shown with a "low similarity" note. */
-const WEAK = 0.4;
+const WEAK = 0.34;
+/** BAB dividers follow the new version; removed pasal stay under the current BAB. */
+let chapter: string | undefined;
+const chapterChange = (r: (typeof cmp.rows)[number]) => {
+  if (!r.b?.chapter || r.b.chapter === chapter) return undefined;
+  chapter = r.b.chapter;
+  return chapter;
+};
 ---
-<Base title={`${ruu.short_name ?? ruu.title}: perbandingan`} noindex>
+<Base title={`${ruu.short_name ?? ruu.title}: perbandingan`} noindex wide>
   <p class="muted small"><a href={`${base}ruu/`}>RUU</a> › <a href={`${base}ruu/${ruu.slug}/`}>{ruu.short_name ?? ruu.title}</a></p>
   <h1>Apa yang berubah?</h1>
   <div class="versions">
@@ -42,37 +49,58 @@ const WEAK = 0.4;
     <span><strong>{cmp.counts.sama}</strong> tidak berubah</span>
     <div class="muted">
       Nomor pasal bergeser antarversi, jadi pasal dicocokkan berdasarkan isinya, bukan nomornya.
-      {cmp.counts.renumbered > 0 && <> {cmp.counts.renumbered} pasal berganti nomor.</>}
-      Pencocokan dilakukan otomatis; periksa teks lengkapnya untuk kepastian.
+      {cmp.counts.renumbered > 0 && ` ${cmp.counts.renumbered} pasal berganti nomor.`}
+      {" "}Pencocokan dilakukan otomatis; periksa teks lengkapnya untuk kepastian.
     </div>
     <label class="toggle"><input type="checkbox" id="show-same" /> Tampilkan juga pasal yang tidak berubah</label>
   </div>
 
-  <div id="rows" class="hide-same">
+  <!-- Synopsis layout (as in German "Synopse", EU four-column documents, Indonesian DIM):
+       one row per matched pasal, old left, new right, ayat aligned within the row. -->
+  <div id="rows" class="synopsis hide-same">
+    <div class="syn-head">
+      <div>{name(a)}</div>
+      <div>{name(b)}</div>
+    </div>
     {cmp.rows.map((r) => {
       const anchor = r.b ? `b-${r.b.eId}` : `a-${r.a!.eId}`;
+      const newChapter = chapterChange(r);
       return (
-        <section class={`row ${r.status}`} id={anchor}>
-          <h3>
-            <a href={`#${anchor}`}>
-              {r.a && r.b && r.renumbered
-                ? <>{r.a.label} <span class="ver">({yearOf(a)})</span> → {r.b.label} <span class="ver">({yearOf(b)})</span></>
-                : r.a && !r.b ? <>{r.a.label} <span class="ver">({yearOf(a)})</span></>
-                : r.b && !r.a ? <>{r.b.label} <span class="ver">({yearOf(b)})</span></>
-                : r.b!.label}
-            </a>
-            <span class={`status ${r.status}`}>{STATUS[r.status]}</span>
-            {r.moved && <span class="status moved">Dipindah</span>}
-            {r.a && r.b && r.status === "berubah" && r.similarity < WEAK && (
-              <span class="status moved" title="Dicocokkan otomatis berdasarkan isi; kemiripannya rendah, periksa kedua teks.">Kemiripan rendah</span>
-            )}
-          </h3>
-          {r.lines.map((l) => (
-            <p class={`l i${l.indent} ${l.kind}`}>
-              {l.parts.map((p) => p.added ? <ins>{p.value}</ins> : p.removed ? <del>{p.value}</del> : p.value)}
-            </p>
-          ))}
-        </section>
+        <>
+          {newChapter && <div class="syn-chapter">{newChapter}</div>}
+          <section class={`syn-row ${r.status}`} id={anchor}>
+            <div class="syn-meta">
+              <a href={`#${anchor}`}>{STATUS[r.status]}</a>
+              {r.moved && <span class="tag">dipindah</span>}
+              {r.a && r.b && r.status === "berubah" && r.similarity < WEAK && (
+                <span class="tag" title="Dicocokkan otomatis berdasarkan isi; kemiripannya rendah, periksa kedua teks.">kemiripan rendah</span>
+              )}
+            </div>
+            <div class="syn-pair">
+              <div class="cell old">
+                {r.a ? <h3>{r.a.label} <span class="ver">{yearOf(a)}</span></h3> : <p class="none">Tidak ada pada versi ini</p>}
+              </div>
+              <div class="cell new">
+                {r.b ? <h3>{r.b.label} <span class="ver">{yearOf(b)}</span></h3> : <p class="none">Dihapus</p>}
+              </div>
+              {r.lines.map((l) => (
+                <>
+                  <div class={`cell old line i${l.indent} ${l.kind}`}>
+                    {l.kind !== "baru" && l.parts.filter((p) => !p.added).map((p) =>
+                      p.removed ? <del>{p.value}</del> : p.value)}
+                  </div>
+                  <div class={`cell new line i${l.indent} ${l.kind}`}>
+                    {l.kind !== "dihapus" && l.parts.filter((p) => !p.removed).map((p) =>
+                      p.added ? <ins>{p.value}</ins> : p.value)}
+                  </div>
+                  <div class={`cell inline line i${l.indent} ${l.kind}`}>
+                    {l.parts.map((p) => p.added ? <ins>{p.value}</ins> : p.removed ? <del>{p.value}</del> : p.value)}
+                  </div>
+                </>
+              ))}
+            </div>
+          </section>
+        </>
       );
     })}
   </div>
@@ -89,26 +117,51 @@ const WEAK = 0.4;
   .summary span { display: inline-block; margin-right: 1rem; white-space: nowrap; }
   .summary .muted { margin-top: 0.4rem; }
   .toggle { display: block; margin-top: 0.6rem; cursor: pointer; }
-  .hide-same .row.sama { display: none; }
-  .row { border-top: 1px solid var(--line); padding: 0.5rem 0 1rem; }
-  .row h3 { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin: 1rem 0 0.5rem; }
-  .row h3 a { color: inherit; text-decoration: none; }
-  .row h3 .ver { font-weight: 400; color: var(--muted); font-size: 0.85em; }
-  .status { font-size: 0.75rem; font-weight: 600; padding: 0.05rem 0.5rem; border-radius: 999px;
-    background: var(--line); color: var(--text); }
-  .status.berubah { background: #f3e3b5; color: #5b4300; }
-  .status.baru { background: var(--ins-bg); color: var(--ins-text); }
-  .status.dihapus { background: var(--del-bg); color: var(--del-text); }
-  .status.moved { background: transparent; border: 1px solid var(--line); color: var(--muted); }
-  p.l { margin: 0.3rem 0; }
-  p.l.baru { background: var(--ins-bg); color: var(--ins-text); }
-  p.l.dihapus { background: var(--del-bg); color: var(--del-text); text-decoration: line-through; }
-  p.l.baru ins, p.l.dihapus del { background: none; }
-  p.i1 { margin-left: 1.5rem; }
-  p.i2 { margin-left: 3rem; }
-  p.i3 { margin-left: 4.5rem; }
-  @media (max-width: 480px) {
+
+  .synopsis { margin-top: 1.5rem; }
+  .syn-head, .syn-pair { display: grid; grid-template-columns: 1fr 1fr; column-gap: 1.5rem; }
+  .syn-head {
+    position: sticky; top: 0; z-index: 1; background: var(--bg); padding: 0.6rem 0;
+    border-bottom: 2px solid var(--line); font-weight: 700; font-size: 0.9rem;
+  }
+  .syn-chapter {
+    margin: 2rem 0 0.25rem; padding: 0.35rem 0; font-weight: 700; font-size: 0.85rem;
+    letter-spacing: 0.04em; color: var(--muted); border-bottom: 1px solid var(--line);
+  }
+  .hide-same .syn-row.sama { display: none; }
+  .syn-row { padding: 0.75rem 0 1rem; border-bottom: 1px solid var(--line); scroll-margin-top: 3rem; }
+  .syn-meta { display: flex; gap: 0.5rem; align-items: center; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.25rem; }
+  .syn-meta a { text-decoration: none; padding: 0.05rem 0.5rem; border-radius: 999px; background: var(--line); color: var(--text); }
+  .berubah .syn-meta a { background: #f3e3b5; color: #5b4300; }
+  .baru .syn-meta a { background: var(--ins-bg); color: var(--ins-text); }
+  .dihapus .syn-meta a { background: var(--del-bg); color: var(--del-text); }
+  .syn-meta .tag { color: var(--muted); font-weight: 500; }
+  .cell h3 { font-size: 0.95rem; margin: 0.25rem 0 0.4rem; }
+  .cell h3 .ver { font-weight: 400; color: var(--muted); font-size: 0.85em; }
+  .cell .none { color: var(--muted); font-style: italic; font-size: 0.9rem; margin: 0.25rem 0; }
+  .cell.line { padding: 0.2rem 0.4rem; margin: 0.1rem 0; border-radius: 4px; min-height: 0; }
+  .cell.line.i1 { padding-left: 1.6rem; }
+  .cell.line.i2 { padding-left: 2.8rem; }
+  .cell.line.i3 { padding-left: 4rem; }
+  .cell.old.line.dihapus { background: var(--del-bg); color: var(--del-text); }
+  .cell.new.line.baru { background: var(--ins-bg); color: var(--ins-text); }
+  .cell.new.line.dihapus, .cell.old.line.baru { visibility: hidden; padding-top: 0; padding-bottom: 0; }
+  .cell.inline { display: none; }
+  .cell.old.line.dihapus del { background: none; }
+  .cell.new.line.baru ins { background: none; }
+  .dihapus .cell.new, .baru .cell.old { color: var(--muted); }
+
+  @media (max-width: 760px) {
+    /* phones: one inline column (deletions and insertions marked in place), like most diff tools */
     .versions { grid-template-columns: 1fr; }
-    p.i1 { margin-left: 0.9rem; } p.i2 { margin-left: 1.8rem; } p.i3 { margin-left: 2.7rem; }
+    .syn-head { display: none; }
+    .syn-pair { grid-template-columns: 1fr; }
+    .cell.line.old, .cell.line.new { display: none; }
+    .cell.inline { display: block; }
+    .cell.inline.dihapus { background: var(--del-bg); color: var(--del-text); text-decoration: line-through; }
+    .cell.inline.baru { background: var(--ins-bg); color: var(--ins-text); }
+    .cell.inline.dihapus del, .cell.inline.baru ins { background: none; }
+    .baru .cell.old:not(.line), .dihapus .cell.new:not(.line) { display: none; }
+    .cell.line.i1 { padding-left: 1rem; } .cell.line.i2 { padding-left: 1.8rem; } .cell.line.i3 { padding-left: 2.6rem; }
   }
 </style>

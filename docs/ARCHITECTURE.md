@@ -86,6 +86,7 @@ session reaches peraturan.go.id (intermittently). See CLAUDE.md for the latest f
 | Legal document model | Akoma Ntoso (OASIS LegalDocML) | [decision 0004](decisions/0004-akoma-ntoso-bluebell.md) |
 | Text format ↔ Akoma Ntoso | `bluebell-akn` (Laws.Africa) | |
 | Word diff | `@sanity/diff-match-patch` (Google's diff-match-patch) | semantic cleanup groups edits |
+| Comparison layout | Synopsis / DIM-style side-by-side table | [decision 0006](decisions/0006-comparison-as-synopsis.md); `xmldiff` tried and rejected |
 | XML in the browser build | `@xmldom/xmldom` | |
 | archive.org | `internetarchive` | |
 | PDF text | PyMuPDF | |
