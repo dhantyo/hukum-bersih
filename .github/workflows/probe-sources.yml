@@ -1,0 +1,33 @@
+name: Probe sources
+
+# Manual check of which upstream sources a GitHub-hosted runner can reach.
+# Prints the HTTP status per URL; 000 means the connection failed.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe
+        run: |
+          ua="hukum-bersih/0.1 (+https://github.com/dhantyo/hukum-bersih)"
+          urls=(
+            "https://peraturan.go.id/uu?page=1"
+            "https://peraturan.go.id/"
+            "https://www.dpr.go.id/"
+            "https://berkas2.dpr.go.id/akd/dokumen/komisi3-RJ-20261119-043602-5251.pdf"
+            "https://peraturan.bpk.go.id/"
+            "https://jdih.go.id/"
+            "https://web.archive.org/"
+            "https://archive.org/"
+          )
+          for u in "${urls[@]}"; do
+            code=$(curl -sS --http1.1 -A "$ua" -o /dev/null -r 0-1023 -w '%{http_code}' --max-time 30 "$u" 2>/dev/null || true)
+            printf '%-80s %s\n' "$u" "${code:-000}" | tee -a "$GITHUB_STEP_SUMMARY"
+            sleep 2
+          done
+          curl -sS --max-time 10 https://ipinfo.io/json | tee -a "$GITHUB_STEP_SUMMARY" || true
