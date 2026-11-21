@@ -9,7 +9,7 @@ import { join } from "node:path";
 import { AKN_DIR } from "./data.ts";
 import { diffLines, only, type PasalComparison } from "./compare.ts";
 import type { LawDoc, Pasal } from "./lawdoc.ts";
-import { byId, history, rel, type Regulation } from "./peraturan.ts";
+import { byId, citeId, history, rel, type Regulation } from "./peraturan.ts";
 
 interface NewPasalJson {
   num: string;
@@ -119,4 +119,70 @@ export function shortName(r: Regulation): string | undefined {
     }
   }
   return undefined;
+}
+
+// ---- Several versions at once -------------------------------------------------------------
+
+export interface LawVersion {
+  id: string;                     // the base law's id for the original, else the amending law
+  label: string;                  // "Teks asli (2009)", "UU 3/2020"
+  date: string | null;
+  gapBefore: number;              // amendments between the previous version and this one we lack
+}
+
+/** One pasal in one version: its text, deleted, or unknown (not readable / not in our data). */
+export interface Slot { pasal?: Pasal; deleted?: boolean; unknown?: boolean; from: string }
+
+export interface VersionHistory {
+  versions: LawVersion[];
+  /** states[k]: every pasal touched so far, as it stands after versions[k] */
+  states: Map<string, Slot>[];
+  /** pasal number -> indexes of the versions that changed it */
+  changedIn: Map<string, number[]>;
+}
+
+export function versionHistory(r: Regulation, doc: LawDoc | undefined): VersionHistory {
+  const steps = amendmentSteps(r, doc);
+  const first = new Map<string, Slot>();
+  for (const p of doc?.pasal ?? []) first.set(p.num, { pasal: p, from: r.id });
+  const versions: LawVersion[] = [{ id: r.id, label: `Teks asli (${r.year})`, date: r.tanggal_penetapan, gapBefore: 0 }];
+  const states = [first];
+  const changedIn = new Map<string, number[]>();
+  steps.forEach((s, k) => {
+    const next = new Map(states[k]);
+    for (const c of s.changes) {
+      next.set(c.num, c.kind === "dihapus" ? { deleted: true, from: s.by.id }
+        : c.row.b ? { pasal: c.row.b, from: s.by.id } : { unknown: true, from: s.by.id });
+      changedIn.set(c.num, [...(changedIn.get(c.num) ?? []), k + 1]);
+    }
+    versions.push({ id: s.by.id, label: citeId(s.by.id), date: s.date, gapBefore: s.gap });
+    states.push(next);
+  });
+  return { versions, states, changedIn };
+}
+
+export interface PairRow { num: string; row: PasalComparison; a: Slot | undefined; b: Slot }
+
+/** Every pasal that changed between versions i and j (i < j), old left, new right. */
+export function comparePair(h: VersionHistory, i: number, j: number): PairRow[] {
+  const nums = [...h.changedIn].filter(([, ks]) => ks.some((k) => k > i && k <= j)).map(([n]) => n);
+  nums.sort((x, y) => {
+    const a = x.match(/^(\d+)(.*)$/), b = y.match(/^(\d+)(.*)$/);
+    return (Number(a?.[1]) - Number(b?.[1])) || (a?.[2] ?? "").localeCompare(b?.[2] ?? "");
+  });
+  return nums.map((num) => {
+    const a = h.states[i].get(num);
+    const b = h.states[j].get(num)!;
+    return { num, a, b, row: row(a?.pasal, b.pasal) };
+  });
+}
+
+/** One pasal through every version that changed it: [version index, slot, diff vs previous]. */
+export function pasalThrough(h: VersionHistory, num: string) {
+  const ks = [0, ...(h.changedIn.get(num) ?? [])];
+  return ks.map((k, n) => {
+    const slot = h.states[k].get(num);
+    const prev = n > 0 ? h.states[ks[n - 1]].get(num) : undefined;
+    return { k, version: h.versions[k], slot, row: n > 0 ? row(prev?.pasal, slot?.pasal) : undefined };
+  });
 }

@@ -1,0 +1,56 @@
+---
+// "Bandingkan [versi] dengan [versi]": choose any two versions of an amended law (the original
+// text and each amendment we can read). Goes to perubahan/<a>...<b>/; without JavaScript the
+// list of links below works too.
+import type { LawVersion } from "../lib/amendments.ts";
+import { tanggal } from "../lib/labels.ts";
+
+interface Props { versions: LawVersion[]; root: string; from?: string; to?: string }
+const { versions, root, from = versions[0]?.id, to = versions.at(-1)?.id } = Astro.props;
+const name = (v: LawVersion) => `${v.label}${v.date ? `, ${tanggal(v.date)}` : ""}`;
+---
+<form class="picker" data-root={root} aria-label="Pilih dua versi untuk dibandingkan">
+  <label>
+    <span>Dari</span>
+    <select name="from">
+      {versions.slice(0, -1).map((v) => <option value={v.id} selected={v.id === from}>{name(v)}</option>)}
+    </select>
+  </label>
+  <span class="arrow" aria-hidden="true">→</span>
+  <label>
+    <span>Ke</span>
+    <select name="to">
+      {versions.slice(1).map((v) => <option value={v.id} selected={v.id === to}>{name(v)}</option>)}
+    </select>
+  </label>
+  <button type="submit">Bandingkan</button>
+  <p class="error" hidden>Pilih versi "ke" yang lebih baru daripada versi "dari".</p>
+</form>
+
+<script>
+  document.querySelectorAll<HTMLFormElement>("form.picker").forEach((form) => {
+    const order = [...new Set([...form.querySelectorAll("option")].map((o) => o.value))];
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const a = (form.elements.namedItem("from") as HTMLSelectElement).value;
+      const b = (form.elements.namedItem("to") as HTMLSelectElement).value;
+      const ok = order.indexOf(a) < order.indexOf(b);
+      (form.querySelector(".error") as HTMLElement).hidden = ok;
+      if (ok) location.href = `${form.dataset.root}${a}...${b}/`;
+    });
+  });
+</script>
+
+<style>
+  .picker {
+    display: flex; flex-wrap: wrap; align-items: end; gap: var(--s-2) var(--s-3);
+    padding: var(--s-3) var(--s-4); background: var(--bg-subtle); border: 1px solid var(--line); border-radius: var(--r-md);
+  }
+  label { display: grid; gap: var(--s-1); font-size: var(--fs-xs); font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  select, button { font: inherit; font-size: var(--fs-sm); text-transform: none; letter-spacing: 0; min-height: 2.5rem; border-radius: var(--r-sm); }
+  select { border: 1px solid var(--line); background: var(--bg); color: var(--text); padding: 0 var(--s-2); max-width: 100%; }
+  button { border: 0; background: var(--primary); color: var(--bg); font-weight: 600; padding: 0 var(--s-4); cursor: pointer; }
+  .arrow { padding-bottom: var(--s-2); color: var(--text-muted); }
+  .error { flex-basis: 100%; margin: 0; color: var(--del-text); font-size: var(--fs-sm); }
+  @media (max-width: 640px) { label { flex: 1 1 100%; } .arrow { display: none; } }
+</style>

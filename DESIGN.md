@@ -37,6 +37,10 @@ No brand red: in this product red means "deleted". No gradients.
   government typeface.
 - **Source Serif 4** (variable): the legal text itself (pasal, ayat, penjelasan), so the law
   reads like a document and the interface like a tool.
+- Readers can change the law-text font and size with the "Aa" control in the header
+  (`components/ReadingSettings.astro`, stored in their browser): Source Serif 4 (default),
+  Literata, Public Sans, Atkinson Hyperlegible Next; size normal or large. Components keep
+  using `--font-law` / `--fs-law`, which the choice overrides.
 
 | Token | Size / line height | Use |
 |---|---|---|

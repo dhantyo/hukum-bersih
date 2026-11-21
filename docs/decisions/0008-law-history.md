@@ -35,6 +35,12 @@ title says it is e.g. the fourth amendment and we know fewer, the page and the t
 texts are checked against the base law's own pasal. Short names ("UU Minerba") are a
 `short_name` in the record; an amending law is shown as "Perubahan Kedua UU ITE".
 
+Addendum 2 (2026-11-21, Dante: "too crowded"): the timeline shows each amendment as one line
+with counts; the pasal are in a dropdown as number chips. Unrecorded amendments get a dashed
+segment. Several versions: "Bandingkan dua versi" (`perubahan/<a>...<b>/`, any two of the
+original and the amendments we read) and, for pasal changed more than once, one pasal in
+every version side by side (`perubahan/pasal/<n>/`).
+
 What we gave up (for now):
 - No consolidated current text (all amendments applied as one document): only the changed
   pasal are shown, each with its source. A consolidation is a derived document and would need
