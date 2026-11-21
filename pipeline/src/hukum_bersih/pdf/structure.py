@@ -12,7 +12,7 @@ import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
-PARSER_VERSION = 2  # 2: page headers/numbers removed on every page (Pasal.id rules)
+PARSER_VERSION = 3  # 2: page headers/numbers on every page (Pasal.id rules); 3: old-spelling closings and PENDJELASAN
 
 BAB_RE = re.compile(r"^BAB\s+([IVXLC]+)$")
 BAGIAN_RE = re.compile(r"^Bagian\s+(Ke\w+)$")
@@ -27,9 +27,15 @@ PENJ_ANGKA_RE = re.compile(r"^Angka\s+(\d+)\s*(.*)$")
 PREAMBLE_RE = re.compile(
     r"^(Menimbang|Mengingat|Menetapkan|MEMUTUSKAN|Dengan Persetujuan Bersama)\s*:?\s*(.*)$"
 )
-PENJELASAN_RE = re.compile(r"^(?:RANCANGAN\s+)?PENJELASAN(?:\s+ATAS)?$")
+# "PENJELASAN", "PENJELASAN ATAS", old spelling "PENDJELASAN", optionally followed on the
+# same line by the law's citation in capitals ("PENDJELASAN UNDANG-UNDANG 1945 NO. 1").
+PENJELASAN_RE = re.compile(r"^(?:RANCANGAN\s+)?PEND?JELASAN(?:\s+ATAS)?(?:\s+[A-Z0-9 .,/()-]+)?$")
+# Closing formula and signatures, including old-spelling (Ejaan Lama) laws:
+# "Djakarta, tanggal 23 Nopember 1945", "Diumumkan pada tanggal ...", "Dikeluarkan di ...".
 CLOSING_RE = re.compile(
-    r"^(Agar setiap orang mengetahuinya|Disahkan di|Diundangkan di|"
+    r"^(Agar setiap orang mengetahuinja|Agar setiap orang mengetahuinya|Disahkan di|Disjahkan di|"
+    r"Diundangkan di|Diundangkan pada|Diumumkan|Ditetapkan di|Dikeluarkan di|"
+    r"D[j]?akarta,? (?:pada )?tanggal|"
     r"LEMBARAN NEGARA REPUBLIK INDONESIA TAHUN|TAMBAHAN LEMBARAN NEGARA)"
 )
 OPENING_RE = re.compile(r"^(DENGAN RAHMAT TUHAN YANG MAHA ESA|PRESIDEN REPUBLIK INDONESIA,?)$")

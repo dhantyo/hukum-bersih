@@ -122,3 +122,18 @@ def test_page_headers_and_numbers_removed_after_page_one():
     lines = clean_lines(pages)
     assert lines == ["PRESIDEN", "REPUBLIK INDONESIA", "UNDANG-UNDANG", "Menimbang: a.",
                      "bahwa satu;", "b. bahwa dua;", "Pasal 1", "Teks."]
+
+
+def test_old_spelling_closing_and_penjelasan():
+    """UU 1/1945: 'Djakarta, tanggal ...' closes the body and 'PENDJELASAN' starts the
+    explanation (they used to be appended to the last pasal)."""
+    lines = ["Pasal 1", "Teks satu.", "Pasal 2", "Undang-Undang ini mulai berlaku pada hari diumumkan.",
+             "Djakarta, tanggal 23 Nopember 1945,", "PRESIDEN REPUBLIK INDONESIA,", "SOEKARNO.",
+             "Diumumkan pada tanggal 23 Nopember 1945.", "PENDJELASAN UNDANG-UNDANG 1945 NO. 1",
+             "Di dalam menjalankan Undang-Undang ini Pemerintah telah memenuhi kesulitan."]
+    doc = parse_lines(lines)
+    pasal2 = [b for b in doc.blocks if b.kind == "text"][1]
+    assert pasal2.text == "Undang-Undang ini mulai berlaku pada hari diumumkan."
+    assert any(b.kind == "closing" and b.text.startswith("Djakarta") for b in doc.blocks)
+    assert any(b.kind == "penjelasan" for b in doc.blocks)
+    to_akn(to_bluebell(doc), "/akn/id/act/uu/1945/1", "act")
