@@ -59,6 +59,14 @@ link to their collection; search lists collections first. Amended laws without a
 collection get one automatically, titled after their subject. The short name moved from the
 law record (`short_name`) to the collection.
 
+Timeline in the collection (same day, Dante: "why does one UU have a timeline and another
+not"): the history lives only on the collection page (`components/KoleksiTimeline.astro`):
+replaced laws, a Perppu made law, the base law, each amendment (pasal in a dropdown),
+revocation. Versions we know exist but lack (an ordinal gap, a law named in a status or title
+that we have not imported) are listed as "belum tersedia", with a dashed dot and a dotted
+line, and say why. Every law in a collection shows the same box (`KoleksiBox.astro`): its
+role and the collection's versions in order, with links to the timeline and the comparer.
+
 What we gave up (for now):
 - No consolidated current text (all amendments applied as one document): only the changed
   pasal are shown, each with its source. A consolidation is a derived document and would need

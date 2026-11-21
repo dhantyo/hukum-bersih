@@ -1,0 +1,136 @@
+---
+// A collection's timeline: the laws it replaced, the base law, each amendment (with the pasal
+// it changed in a dropdown), revocation. Versions we know exist but do not have (an
+// amendment named only by ordinal, a law named in a status) are listed as "belum tersedia"
+// and the line around them is dotted. Pattern from legislation.gov.uk ("changes over time")
+// and Fedlex ("Chronologie"); see docs/decisions/0008.
+import { tanggal } from "../lib/labels.ts";
+import { ordinal, timeline, type Koleksi } from "../lib/koleksi.ts";
+import { citeId, lawPath, rel, STATUS_LABEL, type Changes, type Regulation } from "../lib/peraturan.ts";
+
+interface Props { k: Koleksi; compared: Set<string>; anchors: Map<string, string> }
+const { k, compared, anchors } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const events = timeline(k);
+const baseHref = `${base}${lawPath(k.base)}`;
+const GROUPS = [["diubah", "Diubah"], ["disisipkan", "Pasal baru"], ["dihapus", "Dihapus"]] as const;
+const changesOf = (law: Regulation): Changes | undefined => rel(law).amends.find((a) => a.id === k.base.id)?.changes;
+const total = (c?: Changes) => (c ? (c.diubah?.length ?? 0) + (c.disisipkan?.length ?? 0) + (c.dihapus?.length ?? 0) : 0);
+const chipHref = (by: string, kind: string, n: string) =>
+  compared.has(by) ? `${baseHref}perubahan/#${by}-pasal-${n}` : kind !== "disisipkan" && anchors.get(n) ? `${baseHref}#${anchors.get(n)}` : undefined;
+const KIND: Record<string, string> = { pendahulu: "Digantikan", pokok: "Undang-undang pokok", dicabut: "Dicabut", "ditetapkan-dari": "Ditetapkan menjadi undang-undang" };
+---
+<ol class="timeline">
+  {events.map((e, i) => {
+    const next = events[i + 1];
+    const dotted = e.kind === "tidak-tersedia" || next?.kind === "tidak-tersedia";
+    if (e.kind === "tidak-tersedia") {
+      return (
+        <li class="missing dotted">
+          <p class="role">{e.what}</p>
+          <p class="what">{e.id ? `${citeId(e.id)}: ` : ""}belum tersedia di sini</p>
+          <p class="sub">{e.why}</p>
+        </li>
+      );
+    }
+    const law = e.law;
+    const href = "subject" in law ? `${base}${lawPath(law)}` : undefined;
+    const ch = e.kind === "perubahan" ? changesOf(e.law) : undefined;
+    const n = total(ch);
+    return (
+      <li class={`${e.kind}${dotted ? " dotted" : ""}`}>
+        <time>{e.date ? tanggal(e.date) : "tanggal tidak diketahui"}</time>
+        <p class="role">{e.kind === "perubahan" ? `Perubahan ${ordinal(e.order)}` : KIND[e.kind]}</p>
+        <p class="what">
+          {href ? <a href={href}>{citeId(law.id)}</a> : citeId(law.id)}
+          {"subject" in law && law.subject && <span class="subject">{law.subject}</span>}
+          {"subject" in law && !law.versions.some((v) => v.text) && <span class="badge none">teks belum ada</span>}
+          {e.kind === "pokok" && law.status && <span class={`badge ${law.status}`}>{STATUS_LABEL[law.status] ?? law.status}</span>}
+        </p>
+        {e.kind === "perubahan" && n > 0 && (
+          <details class="pasal">
+            <summary>
+              <span class="counts">
+                {GROUPS.map(([key, label]) => ch![key]?.length ? <span class={`count ${key}`}><b>{ch![key]!.length}</b> {label.toLowerCase()}</span> : null)}
+              </span>
+              <span class="more">Daftar pasal</span>
+            </summary>
+            <div class="groups">
+              {GROUPS.map(([key, label]) => ch![key]?.length ? (
+                <div class="group">
+                  <h3>{label}</h3>
+                  <ul class="chips">
+                    {ch![key]!.map((num) => {
+                      const to = chipHref(law.id, key, num);
+                      return <li class={key}>{to ? <a href={to}>{num}</a> : <span>{num}</span>}</li>;
+                    })}
+                  </ul>
+                </div>
+              ) : null)}
+              {compared.has(law.id) && <a class="go" href={`${baseHref}perubahan/#${law.id}`}>Sebelum dan sesudah, pasal demi pasal →</a>}
+            </div>
+          </details>
+        )}
+        {e.kind === "perubahan" && n === 0 && <p class="sub">Pasal yang diubah belum dapat dibaca dari teksnya.</p>}
+      </li>
+    );
+  })}
+</ol>
+
+<style>
+  .timeline { list-style: none; margin: 0; padding: 0; max-width: var(--measure); }
+  .timeline > li { position: relative; padding: 0 0 var(--s-5) var(--s-6); }
+  .timeline > li::before {
+    content: ""; position: absolute; left: 0; top: 0.3rem; width: 12px; height: 12px;
+    border-radius: 50%; background: var(--bg); border: 2px solid var(--primary); box-sizing: border-box; z-index: 1;
+  }
+  .timeline > li::after {
+    content: ""; position: absolute; left: 5px; top: 0.3rem; bottom: -0.3rem; width: 2px; background: var(--line);
+  }
+  .timeline > li:last-child { padding-bottom: 0; }
+  .timeline > li:last-child::after { display: none; }
+  .timeline > li.perubahan::before { border-color: var(--warn); }
+  .timeline > li.pendahulu::before, .timeline > li.dicabut::before { border-color: var(--gone); }
+  .timeline > li.dicabut::before { background: var(--gone); }
+  .timeline > li.pokok::before { background: var(--primary); }
+  /* what we do not have: hollow dashed dot, dotted line into and out of it */
+  .timeline > li.missing::before { border-style: dashed; border-color: var(--gone); }
+  .timeline > li.dotted::after { background: repeating-linear-gradient(to bottom, var(--gone) 0 3px, transparent 3px 8px); }
+  .missing .role, .missing .what { color: var(--text-muted); }
+
+  time { display: block; font-size: var(--fs-xs); color: var(--text-muted); font-variant-numeric: tabular-nums; }
+  .role { margin: var(--s-1) 0 0; font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); }
+  .pokok .role { color: var(--primary); }
+  .missing .role { margin-top: 0; }
+  .what { margin: var(--s-1) 0 0; display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s-3); align-items: baseline; }
+  .what a { font-weight: 600; }
+  .subject { color: var(--text-muted); font-size: var(--fs-sm); }
+  .sub { margin: var(--s-1) 0 0; font-size: var(--fs-sm); color: var(--text-muted); }
+
+  .pasal { margin-top: var(--s-2); border: 1px solid var(--line); border-radius: var(--r-md); background: var(--bg-subtle); }
+  .pasal summary {
+    display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2) var(--s-4); justify-content: space-between;
+    padding: var(--s-2) var(--s-3); cursor: pointer; list-style: none; font-size: var(--fs-sm);
+  }
+  .pasal summary::-webkit-details-marker { display: none; }
+  .counts { display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s-4); }
+  .count b { font-variant-numeric: tabular-nums; }
+  .count.diubah b { color: var(--warn); }
+  .count.disisipkan b { color: var(--ok); }
+  .count.dihapus b { color: var(--del-text); }
+  .more { color: var(--primary); font-weight: 600; white-space: nowrap; }
+  .more::after { content: " ▾"; }
+  .pasal[open] .more::after { content: " ▴"; }
+  .groups { padding: var(--s-1) var(--s-3) var(--s-3); border-top: 1px solid var(--line); background: var(--bg); border-radius: 0 0 var(--r-md) var(--r-md); }
+  .group h3 { font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin: var(--s-3) 0 var(--s-2); }
+  .chips { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(3.25rem, 1fr)); gap: var(--s-1); }
+  .chips a, .chips span {
+    display: block; text-align: center; padding: 0.15rem 0; border-radius: var(--r-sm);
+    font-size: var(--fs-sm); font-variant-numeric: tabular-nums; text-decoration: none;
+    border: 1px solid var(--line); color: var(--text);
+  }
+  .chips a:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-bg); }
+  .chips .disisipkan a, .chips .disisipkan span { border-style: dashed; }
+  .chips .dihapus a, .chips .dihapus span { text-decoration: line-through; color: var(--text-muted); }
+  .go { display: inline-block; margin-top: var(--s-3); font-size: var(--fs-sm); font-weight: 600; }
+</style>

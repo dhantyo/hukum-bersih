@@ -3,10 +3,10 @@
 // with gaps for amendments we have not recorded), and the version comparer.
 import Base from "../../layouts/Base.astro";
 import VersionCompare from "../../components/VersionCompare.astro";
-import { compareData, hasAmendmentSteps, versionHistory } from "../../lib/amendments.ts";
+import KoleksiTimeline from "../../components/KoleksiTimeline.astro";
+import { amendmentSteps, compareData, hasAmendmentSteps, versionHistory } from "../../lib/amendments.ts";
 import { amendments, loadKoleksi, members, type Koleksi } from "../../lib/koleksi.ts";
-import { tanggal } from "../../lib/labels.ts";
-import { citeId, lawPath, loadRegulationText, STATUS_LABEL, type Regulation } from "../../lib/peraturan.ts";
+import { citeId, lawPath, loadRegulationText, STATUS_LABEL } from "../../lib/peraturan.ts";
 
 export function getStaticPaths() {
   return loadKoleksi().map((k) => ({ params: { slug: k.slug }, props: { k } }));
@@ -14,20 +14,11 @@ export function getStaticPaths() {
 const { k } = Astro.props as { k: Koleksi };
 const base = import.meta.env.BASE_URL;
 const list = members(k);
-const ORD = ["", "pertama", "kedua", "ketiga", "keempat", "kelima", "keenam", "ketujuh", "kedelapan", "kesembilan", "kesepuluh"];
-// rows with gaps for amendments known only by ordinal
-type Row = (typeof list)[number] | { gap: true; from: number; to: number };
-const rows: Row[] = [];
-let seen = 0;
-for (const m of list) {
-  if (m.role === "perubahan" && m.order && m.order > seen + 1) rows.push({ gap: true, from: seen + 1, to: m.order - 1 });
-  if (m.role === "perubahan") seen = Math.max(seen + 1, m.order ?? 0);
-  rows.push(m);
-}
-const isLaw = (x: unknown): x is Regulation => !!x && typeof x === "object" && "subject" in (x as object);
-const compare = hasAmendmentSteps(k.base) ? compareData(versionHistory(k.base, loadRegulationText(k.base))) : undefined;
+const doc = loadRegulationText(k.base);
+const compare = hasAmendmentSteps(k.base) ? compareData(versionHistory(k.base, doc)) : undefined;
+const compared = new Set(amendmentSteps(k.base, doc).map((s) => s.by.id));
+const anchors = new Map((doc?.pasal ?? []).map((p) => [p.num, p.eId]));
 const count = list.filter((m) => m.role !== "pendahulu").length;
-const ROLE = { pendahulu: "Digantikan", pokok: "Undang-undang pokok", perubahan: "Perubahan", lain: "Terkait" } as const;
 ---
 <Base noindex title={k.name} description={`${k.name}${k.named ? ` (${k.title})` : ""}: undang-undang pokok beserta semua perubahannya.`} section="koleksi">
   <nav class="breadcrumbs" aria-label="Lokasi">
@@ -42,36 +33,8 @@ const ROLE = { pendahulu: "Digantikan", pokok: "Undang-undang pokok", perubahan:
     {k.base.status && <span class={`badge ${k.base.status}`}>{STATUS_LABEL[k.base.status] ?? k.base.status}</span>}
   </div>
 
-  <h2 class="section">Isi koleksi</h2>
-  <ol class="members">
-    {rows.map((m) => {
-      if ("gap" in m) {
-        const which = Array.from({ length: m.to - m.from + 1 }, (_, i) => ORD[m.from + i]).join(" dan ");
-        return (
-          <li class="member gap">
-            <span class="role">Perubahan {which}</span>
-            <span class="name muted">Belum tercatat. Biasanya melalui undang-undang yang mengubah banyak undang-undang sekaligus, seperti UU Cipta Kerja.</span>
-          </li>
-        );
-      }
-      const law = m.law;
-      const href = isLaw(law) ? `${base}${lawPath(law)}` : undefined;
-      return (
-        <li class={`member ${m.role}`}>
-          <span class="role">{m.role === "perubahan" ? `Perubahan ${ORD[m.order ?? 0] ?? m.order}` : ROLE[m.role]}</span>
-          <span class="name">
-            {href ? <a href={href}>{citeId(law.id)}</a> : citeId(law.id)}
-            {isLaw(law) && law.subject && <span class="subject">{law.subject}</span>}
-          </span>
-          <span class="when muted">{isLaw(law) && law.tanggal_penetapan ? tanggal(law.tanggal_penetapan) : ""}</span>
-          <span class="state">
-            {isLaw(law) && law.status && m.role !== "pendahulu" && <span class={`badge ${law.status}`}>{STATUS_LABEL[law.status] ?? law.status}</span>}
-            {isLaw(law) && !law.versions.some((v) => v.text) && <span class="badge none">teks belum ada</span>}
-          </span>
-        </li>
-      );
-    })}
-  </ol>
+  <h2 class="section" id="riwayat">Riwayat</h2>
+  <KoleksiTimeline k={k} compared={compared} anchors={anchors} />
   <p class="small links">
     <a href={`${base}${lawPath(k.base)}`}>Baca teks {citeId(k.base.id)}</a>
     {compare && <> · <a href={`${base}${lawPath(k.base)}perubahan/`}>Rincian tiap perubahan, pasal demi pasal</a></>}
@@ -88,25 +51,5 @@ const ROLE = { pendahulu: "Digantikan", pokok: "Undang-undang pokok", perubahan:
   .subtitle { font-size: var(--fs-lg); color: var(--text-muted); margin: var(--s-1) 0 0; }
   .meta { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-4); align-items: center; margin-top: var(--s-3); font-size: var(--fs-sm); color: var(--text-muted); }
   .section { font-size: var(--fs-lg); margin: var(--s-6) 0 var(--s-2); }
-  .members { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); max-width: 60rem; }
-  .member {
-    display: grid; grid-template-columns: 11rem 1fr auto auto; gap: var(--s-1) var(--s-4); align-items: baseline;
-    padding: var(--s-3) 0; border-bottom: 1px solid var(--line);
-  }
-  .role { font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); }
-  .pokok .role { color: var(--primary); }
-  .pokok .name a { font-weight: 700; }
-  .pendahulu { opacity: 0.8; }
-  .gap .role { color: var(--gone); }
-  .gap .name { grid-column: 2 / -1; font-size: var(--fs-sm); }
-  .name a { font-weight: 600; }
-  .subject { display: block; font-size: var(--fs-sm); color: var(--text-muted); }
-  .when { font-size: var(--fs-sm); white-space: nowrap; font-variant-numeric: tabular-nums; }
-  .state { display: flex; gap: var(--s-2); }
   .links { margin-top: var(--s-3); }
-  @media (max-width: 640px) {
-    .member { grid-template-columns: 1fr auto; }
-    .role { grid-column: 1 / -1; }
-    .when { grid-column: 1; }
-  }
 </style>

@@ -1,0 +1,54 @@
+---
+// On every law page that belongs to a collection, the same box: which collection, this law's
+// place in it, and the collection's versions in order (missing ones dotted). The history
+// itself lives on the collection page.
+import { ordinal, koleksiPath, roleIn, timeline, type Koleksi } from "../lib/koleksi.ts";
+import { citeId, lawPath, type Regulation } from "../lib/peraturan.ts";
+
+interface Props { k: Koleksi; r: Regulation }
+const { k, r } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const role = roleIn(k, r.id);
+const steps = timeline(k).filter((e) => e.kind !== "dicabut");
+const url = `${base}${koleksiPath(k)}`;
+---
+<aside class="kbox" aria-label={`Koleksi ${k.name}`} data-pagefind-ignore>
+  <p class="top">
+    <a class="name" href={url}><span class="label">Koleksi</span> {k.name}</a>
+    <span class="role">Undang-undang ini: <strong>{role.label.toLowerCase()}</strong></span>
+  </p>
+  <ol class="seq" aria-label="Versi dalam koleksi ini">
+    {steps.map((e) => e.kind === "tidak-tersedia" ? (
+      <li class="missing" title={`${e.what}: belum tersedia`}>{e.id ? citeId(e.id) : e.what.replace(/^Perubahan /, "perubahan ")}</li>
+    ) : (
+      <li class={e.law.id === r.id ? "here" : e.kind}>
+        {e.law.id === r.id ? <span aria-current="page">{citeId(e.law.id)}</span>
+          : "subject" in e.law ? <a href={`${base}${lawPath(e.law)}`}>{citeId(e.law.id)}</a> : citeId(e.law.id)}
+        {e.kind === "perubahan" && <span class="o">{ordinal(e.order)}</span>}
+      </li>
+    ))}
+  </ol>
+  <p class="links small">
+    <a href={`${url}#riwayat`}>Riwayat koleksi →</a>
+    <a href={`${url}#banding`}>Bandingkan versi →</a>
+  </p>
+</aside>
+
+<style>
+  .kbox { max-width: var(--measure); border: 1px solid var(--line); border-left: 4px solid var(--primary); border-radius: var(--r-sm); padding: var(--s-3) var(--s-4); margin-bottom: var(--s-5); }
+  .top { margin: 0; display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-4); align-items: baseline; }
+  .name { font-weight: 700; text-decoration: none; }
+  .label { font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-right: var(--s-1); }
+  .role { font-size: var(--fs-sm); color: var(--text-muted); }
+  .role strong { color: var(--text); font-weight: 600; }
+  .seq { list-style: none; margin: var(--s-3) 0 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2) 0; font-size: var(--fs-sm); }
+  .seq li { display: inline-flex; align-items: baseline; gap: var(--s-1); padding: 0.1rem var(--s-2); border: 1px solid var(--line); border-radius: 999px; }
+  .seq li + li { margin-left: 1.6rem; position: relative; }
+  .seq li + li::before { content: "→"; position: absolute; left: -1.25rem; color: var(--text-muted); }
+  .seq li.missing { border-style: dashed; border-color: var(--gone); }
+  .seq li.missing { color: var(--text-muted); }
+  .seq li.here { border-color: var(--primary); background: var(--primary-bg); font-weight: 700; }
+  .seq li.pendahulu { color: var(--text-muted); }
+  .seq .o { font-size: var(--fs-xs); color: var(--text-muted); }
+  .links { margin: var(--s-3) 0 0; display: flex; gap: var(--s-4); flex-wrap: wrap; }
+</style>

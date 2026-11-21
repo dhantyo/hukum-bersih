@@ -4,12 +4,12 @@ import DocLayout from "../../../components/DocLayout.astro";
 import Facts from "../../../components/Facts.astro";
 import LawText from "../../../components/LawText.astro";
 import Toc from "../../../components/Toc.astro";
-import Riwayat from "../../../components/Riwayat.astro";
+import KoleksiBox from "../../../components/KoleksiBox.astro";
 import RelationsBanner from "../../../components/RelationsBanner.astro";
 import { tanggal } from "../../../lib/labels.ts";
 import { amendmentSteps, shortName } from "../../../lib/amendments.ts";
 import { koleksiOf, koleksiPath } from "../../../lib/koleksi.ts";
-import { amendmentCount, citeId, history, lawPath, loadRegulations, loadRegulationText, pasalNotes, pathOf, rel, shortCite, STATUS_LABEL, type Regulation } from "../../../lib/peraturan.ts";
+import { amendmentCount, citeId, lawPath, loadRegulations, loadRegulationText, pasalNotes, pathOf, shortCite, STATUS_LABEL, type Regulation } from "../../../lib/peraturan.ts";
 
 export function getStaticPaths() {
   return loadRegulations().filter((r) => r.type === "uu").map((r) => ({
@@ -21,10 +21,8 @@ const base = import.meta.env.BASE_URL;
 const doc = loadRegulationText(r);
 const status = r.status ?? "";
 const pasal = r.versions.find((v) => v.pasal_count)?.pasal_count;
-const R = rel(r);
 const amendments = amendmentCount(r);
 const steps = amendmentSteps(r, doc);
-const compared = new Set(steps.map((s) => s.by.id));
 const comparedPasal = new Set(steps.flatMap((s) => s.changes.map((c) => c.anchor)));
 // "Diubah oleh UU 19/2016": to the before/after comparison of that pasal when there is one
 const notes = new Map([...pasalNotes(r)].map(([n, ids]) => [n, ids.map((id) => ({
@@ -34,7 +32,6 @@ const notes = new Map([...pasalNotes(r)].map(([n, ids]) => [n, ids.map((id) => (
 }))]));
 const short = shortName(r);
 const koleksi = koleksiOf(r.id);
-const hasHistory = history(r).length > 1;
 ---
 <Base title={`${short ? `${short} (${shortCite(r)})` : shortCite(r)}${r.subject ? ` tentang ${r.subject}` : ""}`} description={`${r.title}${r.subject ? ` tentang ${r.subject}` : ""}`} section="peraturan">
   <DocLayout
@@ -45,18 +42,15 @@ const hasHistory = history(r).length > 1;
     title={r.subject || r.title}
   >
     <div slot="head" class="head-meta">
-      {koleksi && <a class="koleksi" href={`${base}${koleksiPath(koleksi)}`}><span class="k-label">Koleksi</span> {koleksi.name}</a>}
       {status && <span class={`badge ${status}`}>{STATUS_LABEL[status] ?? status}</span>}
       {r.tanggal_penetapan && <span class="muted small">Ditetapkan {tanggal(r.tanggal_penetapan)}</span>}
       {pasal && <span class="muted small">{pasal} pasal</span>}
-      {amendments > 0 && <a class="badge diubah" href="#riwayat">diubah {amendments}×</a>}
-      {R.revoked_by.length > 0 && <a class="badge dicabut" href="#riwayat">dicabut</a>}
+      {amendments > 0 && <a class="badge diubah" href={koleksi ? `${base}${koleksiPath(koleksi)}#riwayat` : undefined}>diubah {amendments}×</a>}
     </div>
     <Fragment slot="panel">
       <Facts title="Keterangan" facts={[
         { label: "Jenis", value: "Undang-Undang" },
         { label: "Nomor / tahun", value: `${r.number.toUpperCase()} / ${r.year}` },
-        { label: "Koleksi", value: koleksi?.name ?? null, href: koleksi ? `${base}${koleksiPath(koleksi)}` : undefined },
         { label: "Status", value: STATUS_LABEL[status] ?? r.status },
         { label: "Ditetapkan", value: r.tanggal_penetapan ? `${tanggal(r.tanggal_penetapan)}${r.tempat_penetapan ? `, ${r.tempat_penetapan}` : ""}` : null },
         { label: "Oleh", value: r.pejabat_penetapan },
@@ -67,12 +61,10 @@ const hasHistory = history(r).length > 1;
         { label: "PDF resmi", value: "Unduh PDF", href: r.source_pdf_url ?? undefined },
         { label: "Salinan arsip", value: r.archive_url ? "archive.org" : null, href: r.archive_url },
       ]} />
-      {hasHistory && <p class="small"><a href="#riwayat">Riwayat perubahan →</a></p>}
       {steps.length > 0 && <p class="small"><a href={`${base}${lawPath(r)}perubahan/`}>Bandingkan perubahan pasal demi pasal →</a></p>}
       {doc && <Toc doc={doc} />}
     </Fragment>
-    <RelationsBanner r={r} />
-    <Riwayat r={r} doc={doc} compared={compared} koleksi={koleksi ? `${base}${koleksiPath(koleksi)}` : undefined} />
+    {koleksi ? <KoleksiBox k={koleksi} r={r} /> : <RelationsBanner r={r} />}
     {doc ? (
       <>
         <p class="notice small" data-pagefind-ignore>Teks ini diambil otomatis dari PDF resmi dan bisa memuat kesalahan baca. Bila ragu, periksa <a href={r.source_pdf_url ?? r.source_url}>PDF resminya</a>.</p>
