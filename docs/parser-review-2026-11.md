@@ -64,7 +64,7 @@ PDFs), run with `uv run python scripts/regress.py` in `pipeline/`.
 | v4 | 9/15 | in 13 of 15 (UU 4/2009: 56 page-turn words; UU 2/1957, 19/1997: 33-34 page numbers) |
 | v5 (2026-11-21) | 14/15 | page-turn word left in 2 laws; "SK No" serial in 2 scans |
 | v6 (2026-11-21) | 18/19 (set extended with UU 30/1947, 16/1947, 12/1971, 31/1999) | none |
-| v7 (2026-11-21) | **19/19** | none |
+| v7 (2026-11-21) | **19/19**, all valid Akoma Ntoso, closing fields complete | none |
 
 v5: printed lines rebuilt from word positions (BPK stores justified text one word per line);
 page-turn words at the foot of a page and split page numbers dropped (C, D); headings with a
@@ -90,3 +90,13 @@ amendments.py splits it (UU 18/2025: 54 instructions). OCR reads "Pasal I" as "P
 "PasalI": a "Pasal 1" is read as Pasal I when the title says PERUBAHAN and the article starts
 "Beberapa ketentuan … diubah" (noted in the warnings). Crest fragments above the running
 header of OCR'd pages are dropped (only above the header).
+
+Also in v7: words printed in white (invisible) are left out (UU 29/2007 hides text in its
+closing); the 'Salinan sesuai dengan aslinya' block (the copy's certification, often under a
+round stamp that OCR turns into noise) is left out of the law and noted; "MEMORI PENJELASAN"
+(1950s); Lampiran pages become their own attachment (UU 14/2013). Lampiran published as
+separate files (UU 3/2019's memorandum) are archived and listed on the record. closing.py reads
+the closing lines into fields (order, signed, promulgated with place/date/office/name and
+co-signing ministers, Lembaran Negara) for the Modern view: `web/generated/closing/<id>.json`.
+Quirks kept as printed: UU 19/1997 names SOEHARTO under the State Secretary too and prints
+"pada tanggal tanggal"; UU 31/1999 prints "Disahkan" for the promulgation (read as such, noted).

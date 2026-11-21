@@ -153,8 +153,11 @@ def main(argv: list[str] | None = None) -> int:
 
         peraturan = build_peraturan(args.data_dir, args.out)
         amending = build_amendments(args.data_dir, args.out)
+        from .closing import build as build_closing
+
+        closings = build_closing(args.data_dir, args.out)
         print(f"{len(ruu)} RUU versions, {len(peraturan)} regulation versions, "
-              f"{amending} amending laws split into instructions -> {args.out}")
+              f"{amending} amending laws split into instructions, {closings} closings read -> {args.out}")
         return 0
 
     if args.command == "import-peraturan":

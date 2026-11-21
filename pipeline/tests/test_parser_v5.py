@@ -133,3 +133,36 @@ def test_crest_fragments_above_the_header_only():                  # UU 18/2025 
                        first_page=False) == ["PasalI", "x."]
     assert _clean_page(["1.", "Propinsi Kalimantan-Barat, yang", "teks"], first_page=False) == [
         "1.", "Propinsi Kalimantan-Barat, yang", "teks"]
+
+
+def test_white_text_is_left_out(tmp_path):                         # UU 29/2007
+    import pymupdf
+
+    from hukum_bersih.pdf.extract import page_lines
+
+    doc = pymupdf.open()
+    page = doc.new_page()
+    page.insert_text((72, 100), "NOMOR 93")
+    page.insert_text((128.7, 100), "uk", color=(1, 1, 1))           # glued to the number, in white
+    page.insert_text((72, 130), "disahkan menjadi Undang-Undang.", color=(1, 1, 1))
+    page.insert_text((72, 160), "Salinan")
+    doc.save(tmp_path / "w.pdf")
+    assert page_lines(tmp_path / "w.pdf") == [["NOMOR 93", "Salinan"]]
+
+
+def test_lampiran_after_the_penjelasan():                         # UU 14/2013
+    from hukum_bersih.akn.bluebell import to_bluebell
+    from hukum_bersih.akn.build import to_akn
+
+    doc = parse_lines(["Menimbang : a. bahwa x;", "Pasal 1", "isi.", "Disahkan di Jakarta",
+                       "PENJELASAN", "I. UMUM", "Teks.", "II. PASAL DEMI PASAL", "Pasal 1", "Cukup jelas.",
+                       "TAMBAHAN LEMBARAN NEGARA REPUBLIK INDONESIA NOMOR 5416",
+                       "LAMPIRAN", "UNDANG-UNDANG REPUBLIK INDONESIA", "NOMOR 14 TAHUN 2013",
+                       "PRESIDEN REPUBLIK INDONESIA,", "ttd.", "DR. H. SUSILO BAMBANG YUDHOYONO",
+                       "Salinan sesuai dengan aslinya", "KEMENTERIAN SEKRETARIAT NEGARA RI", "Wisnu Setiawan"])
+    assert [b.label for b in kinds(doc, "lampiran")] == ["LAMPIRAN"]
+    assert [b.text for b in kinds(doc, "lampiran_text")][:2] == ["UNDANG-UNDANG REPUBLIK INDONESIA", "NOMOR 14 TAHUN 2013"]
+    assert "Wisnu Setiawan" not in " ".join(b.text for b in doc.blocks)      # copy certification left out
+    text = to_bluebell(doc)
+    assert "ATTACHMENT Lampiran" in text and text.index("ATTACHMENT Penjelasan") < text.index("ATTACHMENT Lampiran")
+    to_akn(text, "/akn/id/act/uu/2013/14", "act")                         # valid Akoma Ntoso

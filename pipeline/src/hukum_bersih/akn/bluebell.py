@@ -72,7 +72,15 @@ def _strip(label: str, prefix: str) -> str:
 
 def to_bluebell(doc: Document) -> str:
     w = Writer()
-    blocks = doc.blocks
+    # Lampiran (annexes) are written as attachments after everything else, wherever they stood
+    blocks, lampiran = [], []
+    for b in doc.blocks:
+        if b.kind == "lampiran":
+            lampiran.append([b])
+        elif b.kind == "lampiran_text" and lampiran:
+            lampiran[-1].append(b)
+        else:
+            blocks.append(b)
     body_start = next((k for k, b in enumerate(blocks)
                        if b.kind in {"bab", "pasal", "bagian", "paragraf"}), len(blocks))
     _front(w, blocks[:body_start])
@@ -134,6 +142,11 @@ def to_bluebell(doc: Document) -> str:
             w.para(1, re.sub(r"\s*RANCANGAN\W*$", "", b.text))
     if penjelasan:
         _penjelasan(w, penjelasan)
+    for group in lampiran:
+        w.line(0, f"ATTACHMENT {escape(group[0].label.title())}")
+        w.line(1, f"PART - {escape(group[0].label)}")
+        for b in group[1:]:
+            w.para(2, b.text)
     return "\n".join(w.out).rstrip() + "\n"
 
 

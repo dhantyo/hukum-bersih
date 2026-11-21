@@ -12,7 +12,9 @@ import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
-PARSER_VERSION = 6  # 6: scanned pages read with our own OCR (Tesseract ind), page-turn words
+PARSER_VERSION = 7  # 7: amending laws keep quoted articles in Pasal I, white (hidden)
+#                    text dropped, salinan certification left out, MEMORI PENJELASAN;
+#                   6: scanned pages read with our own OCR (Tesseract ind), page-turn words
 #                    anywhere on a page;
 #                   5: printed lines rebuilt from word positions, page-turn words, headings
 #                    with a full stop ("Pasal 1."), old numbering, closing line by line;
@@ -38,7 +40,7 @@ PREAMBLE_RE = re.compile(
 )
 # "PENJELASAN", "PENJELASAN ATAS", old spelling "PENDJELASAN", optionally followed on the
 # same line by the law's citation in capitals ("PENDJELASAN UNDANG-UNDANG 1945 NO. 1").
-PENJELASAN_RE = re.compile(r"^(?:RANCANGAN\s+)?PEND?JELASAN(?:\s+ATAS)?(?:\s+[A-Z0-9 .,/()-]+)?$")
+PENJELASAN_RE = re.compile(r"^(?:RANCANGAN\s+|MEMORI\s+)?PEND?JELASAN(?:\s+ATAS)?(?:\s+[A-Z0-9 .,/()-]+)?$")
 # Closing formula and signatures, including old-spelling (Ejaan Lama) laws:
 # "Djakarta, tanggal 23 Nopember 1945", "Diumumkan pada tanggal ...", "Dikeluarkan di ...".
 CLOSING_RE = re.compile(
@@ -47,6 +49,7 @@ CLOSING_RE = re.compile(
     r"D[j]?akarta,? (?:pada )?tanggal|"
     r"LEMBARAN NEGARA REPUBLIK INDONESIA TAHUN|TAMBAHAN LEMBARAN NEGARA)"
 )
+LAMPIRAN_RE = re.compile(r"^LAMPIRAN(?:\s+[IVXLC]+)?$")
 OPENING_RE = re.compile(r"^(DENGAN RAHMAT TUHAN YANG MAHA ESA|PRESIDEN REPUBLIK INDONESIA,?)$")
 
 
@@ -157,6 +160,8 @@ class Parser:
         # An amending law's own articles are Pasal I, II …; inside Pasal I it quotes the new
         # wording of the amended law ("Pasal 4", "BAB IVA" …), which is content, not structure.
         self.amending = False
+        self.in_salinan = False
+        self.in_lampiran = False
 
     # helpers --------------------------------------------------------------
     def emit(self, block: Block) -> Block:
@@ -252,6 +257,31 @@ class Parser:
             return 1
         if self.last_pasal and (m := CLOSING_RE.match(line)):
             self.emit(Block("closing", text=line))
+            return 1
+        if self.in_salinan:
+            if not (PENJELASAN_RE.match(line) or LAMPIRAN_RE.match(line)):
+                return 1
+            self.in_salinan = False
+        if self.last_pasal and LAMPIRAN_RE.match(line):
+            # an annex (maps, tables, schedules) after the closing or the Penjelasan: kept as
+            # printed lines in its own part; it ends at a Penjelasan or the next Lampiran
+            self.in_lampiran = True
+            self.emit(Block("lampiran", label=line))
+            return 1
+        if self.in_lampiran and not PENJELASAN_RE.match(line):
+            if re.match(r"^Salinan sesuai dengan aslinya", line, re.IGNORECASE):
+                self.in_salinan = True
+                return 1
+            self.emit(Block("lampiran_text", text=line))
+            return 1
+        if self.in_lampiran:
+            self.in_lampiran = False
+            self.in_penjelasan = False
+        if self.last_pasal and re.match(r"^Salinan sesuai dengan aslinya", line, re.IGNORECASE):
+            # the copy's certification by the State Secretariat, often under a round stamp;
+            # not part of the law (and OCR turns the stamp into noise)
+            self.in_salinan = True
+            self.doc.warnings.append("salinan: copy certified ('Salinan sesuai dengan aslinya'); left out")
             return 1
         if (self.cur is not None and self.cur.kind == "closing" and not PENJELASAN_RE.match(line)
                 and line != "RANCANGAN"):

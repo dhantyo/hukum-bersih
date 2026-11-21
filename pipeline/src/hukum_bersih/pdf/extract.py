@@ -77,7 +77,37 @@ def page_lines(pdf: Path, stats: dict | None = None, ocr: bool = True) -> list[l
                     stats["ocr_pages"] += 1
                 except Exception as e:  # noqa: BLE001 - no Tesseract or no language data
                     stats["ocr_missing"] = f"{type(e).__name__}: {str(e)[:120]}"
-            out.append(rows(words if words is not None else page.get_text("words")))
+            if words is None:
+                words = visible(page, page.get_text("words"))
+            out.append(rows(words))
+    return out
+
+
+def visible(page, words: list[tuple]) -> list[tuple]:
+    """Leave out characters printed in white: invisible on the page, not part of what was
+    published (UU 29/2007 hides "disahkan menjadi Undang-Undang." and "uk" in white, the latter
+    glued to the Lembaran Negara number: "93uk"). Pages without white text keep PyMuPDF's words;
+    pages with it get words rebuilt from their visible characters."""
+    raw = page.get_text("rawdict")["blocks"]
+    spans = [s for b in raw for line in b.get("lines", []) for s in line["spans"]]
+    if not any(s.get("color") == 0xFFFFFF and "".join(c["c"] for c in s["chars"]).strip() for s in spans):
+        return words
+    out: list[tuple] = []
+    for s in spans:
+        if s.get("color") == 0xFFFFFF:
+            continue
+        cur: list = []
+        for ch in s["chars"] + [{"c": " ", "bbox": None}]:
+            if ch["c"].isspace():
+                if cur:
+                    x0 = min(c["bbox"][0] for c in cur)
+                    y0 = min(c["bbox"][1] for c in cur)
+                    x1 = max(c["bbox"][2] for c in cur)
+                    y1 = max(c["bbox"][3] for c in cur)
+                    out.append((x0, y0, x1, y1, "".join(c["c"] for c in cur)))
+                cur = []
+            else:
+                cur.append(ch)
     return out
 
 
