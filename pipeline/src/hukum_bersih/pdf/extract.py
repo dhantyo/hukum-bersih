@@ -56,7 +56,24 @@ def page_lines(pdf: Path) -> list[list[str]]:
     import pymupdf
 
     with pymupdf.open(pdf) as doc:
-        return [page.get_text().splitlines() for page in doc]
+        return [rows(page.get_text("words")) for page in doc]
+
+
+def rows(words: list[tuple]) -> list[str]:
+    """Words of a page (PyMuPDF ``get_text("words")``) -> printed lines, top to bottom.
+
+    Justified text in many PDFs (BPK's among them) is stored one word per text line, so
+    ``get_text()`` returns "Agar" / "setiap" / "orang" … on separate lines and markers at the
+    start of a printed line are lost. Words whose vertical centres lie within half a line
+    height of each other are one printed line; they are joined left to right."""
+    items = sorted(((w[1] + w[3]) / 2, w[0], max(w[3] - w[1], 1.0), w[4]) for w in words if w[4].strip())
+    lines: list[list] = []                       # [centre, height, [(x, word), ...]]
+    for cy, x, h, word in items:
+        if lines and abs(cy - lines[-1][0]) <= 0.5 * min(h, lines[-1][1]):
+            lines[-1][2].append((x, word))
+        else:
+            lines.append([cy, h, [(x, word)]])
+    return [" ".join(w for _, w in sorted(ws)) for _, _, ws in lines]
 
 
 def _clean_page(raw: list[str], first_page: bool) -> list[str]:
@@ -67,7 +84,8 @@ def _clean_page(raw: list[str], first_page: bool) -> list[str]:
     in_header = True
     for k, ln in enumerate(lines):
         if in_header and k < HEADER_ZONE + len(HEADER_TOKENS):
-            if ln in HEADER_TOKENS or PAGE_NO_RE.match(ln) or NEVER_CONTENT_RE.match(ln):
+            if (ln in HEADER_TOKENS or PAGE_NO_RE.match(ln) or NEVER_CONTENT_RE.match(ln)
+                    or ln == "-"):
                 continue
             # on page 1 the title block legitimately starts with "PRESIDEN REPUBLIK INDONESIA"
             if not first_page and RUNNING_HEADER_RE.match(ln):
@@ -76,10 +94,19 @@ def _clean_page(raw: list[str], first_page: bool) -> list[str]:
                 continue
             in_header = False
         out.append(ln)
-    # footer zone: trailing page numbers
-    while out and PAGE_NO_RE.match(out[-1]):
+    # footer zone: trailing page numbers, lone dashes of a split "- 3 -", page-turn words
+    while out and (PAGE_NO_RE.match(out[-1]) or out[-1] == "-"):
         out.pop()
+    for k in range(len(out) - 1, max(len(out) - 1 - CATCHWORD_ZONE, -1), -1):
+        if CATCHWORD_RE.match(out[k]):
+            del out[k]
     return [ln for ln in out if not NEVER_CONTENT_RE.match(ln)]
+
+
+# Page-turn words ("catchwords"): the first words of the next page, printed at the foot of a
+# page and ending in an ellipsis: "Pasal 2…", "d. bahwa . . .", "MEMUTUSKAN :..".
+CATCHWORD_RE = re.compile(r"^.{1,70}?(?:…|\.\s?\.\s?\.|:\s?\.\.)\s*$")
+CATCHWORD_ZONE = 2  # only the last lines of a page
 
 
 def clean_lines(pages: list[list[str]]) -> list[str]:

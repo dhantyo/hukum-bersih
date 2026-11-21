@@ -12,12 +12,18 @@ import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
-PARSER_VERSION = 4  # 2: page headers/numbers on every page (Pasal.id rules); 3: old-spelling closings and
+PARSER_VERSION = 5  # 5: printed lines rebuilt from word positions, page-turn words, headings
+#                    with a full stop ("Pasal 1."), old numbering, closing line by line;
+#                   2: page headers/numbers on every page (Pasal.id rules); 3: old-spelling closings and
 #                    PENDJELASAN; 4: lists between a BAB heading and its first Pasal (UU 19/2003)
 
-BAB_RE = re.compile(r"^BAB\s+([IVXLC]+)$")
-BAGIAN_RE = re.compile(r"^Bagian\s+(Ke\w+)$")
-PARAGRAF_RE = re.compile(r"^Paragraf\s+(\d+)$")
+ORDINAL = {"PERTAMA": 1, "KESATU": 1, "KEDUA": 2, "KETIGA": 3, "KEEMPAT": 4, "KELIMA": 5,
+           "KEENAM": 6, "KETUJUH": 7, "KEDELAPAN": 8, "KESEMBILAN": 9, "KESEPULUH": 10}
+BAB_RE = re.compile(r"^(?:BAB|Bab)\s+([IVXLC]+|Pertama|Kesatu|Ke(?:dua|tiga|empat|lima|enam|tujuh|delapan|sembilan|sepuluh))$")
+BAGIAN_RE = re.compile(r"^(?:Bagian|BAGIAN)\s+(Ke\w+|KE\w+|Pertama|PERTAMA|[IVXLC]+)$")
+PARAGRAF_RE = re.compile(r"^(?:Paragraf|PARAGRAF)\s+(\d+)$")
+# Older laws end headings with a full stop: "Pasal 1.", "BAB I.", "BAGIAN II." (read without it)
+HEAD_DOT_RE = re.compile(r"^((?:BAB|Bab|BAGIAN|Bagian|PARAGRAF|Paragraf|Pasal|PASAL)\s+\S+?)\s*\.$")
 PASAL_RE = re.compile(r"^Pasal\s+(\d+[A-Z]?|[IVXLC]+)$")
 AYAT_RE = re.compile(r"^\((\d+)\)\s*(.*)$")
 LETTER_RE = re.compile(r"^([a-z])\.\s*(.*)$")
@@ -26,7 +32,7 @@ PENJ_AYAT_RE = re.compile(r"^Ayat\s+\((\d+)\)\s*(.*)$")
 PENJ_HURUF_RE = re.compile(r"^Huruf\s+([a-z])\s*(.*)$")
 PENJ_ANGKA_RE = re.compile(r"^Angka\s+(\d+)\s*(.*)$")
 PREAMBLE_RE = re.compile(
-    r"^(Menimbang|Mengingat|Menetapkan|MEMUTUSKAN|Dengan Persetujuan Bersama)\s*:?\s*(.*)$"
+    r"^(Menimbang|Mengingat|Menetapkan|MEMUTUSKAN|Memutuskan|Dengan [Pp]ersetujuan(?: [Bb]ersama)?)\s*:?\s*(.*)$"
 )
 # "PENJELASAN", "PENJELASAN ATAS", old spelling "PENDJELASAN", optionally followed on the
 # same line by the law's citation in capitals ("PENDJELASAN UNDANG-UNDANG 1945 NO. 1").
@@ -34,7 +40,7 @@ PENJELASAN_RE = re.compile(r"^(?:RANCANGAN\s+)?PEND?JELASAN(?:\s+ATAS)?(?:\s+[A-
 # Closing formula and signatures, including old-spelling (Ejaan Lama) laws:
 # "Djakarta, tanggal 23 Nopember 1945", "Diumumkan pada tanggal ...", "Dikeluarkan di ...".
 CLOSING_RE = re.compile(
-    r"^(Agar setiap orang mengetahuinja|Agar setiap orang mengetahuinya|Disahkan di|Disjahkan di|"
+    r"^(Agar (?:supaya )?setiap orang (?:dapat )?mengetahui(?:nja|nya)|Disahkan di|Disjahkan di|"
     r"Diundangkan di|Diundangkan pada|Diumumkan|Ditetapkan di|Dikeluarkan di|"
     r"D[j]?akarta,? (?:pada )?tanggal|"
     r"LEMBARAN NEGARA REPUBLIK INDONESIA TAHUN|TAMBAHAN LEMBARAN NEGARA)"
@@ -109,9 +115,33 @@ def is_caps(line: str) -> bool:
 # --------------------------------------------------------------------------- structure
 
 
+def normalise(lines: list[str]) -> list[str]:
+    """Read headings the same whatever their printing: drop a heading's full stop and join
+    "Pasal" printed on its own line with the number below it. Only heading lines change."""
+    out: list[str] = []
+    for line in lines:
+        if out and out[-1] in ("Pasal", "PASAL") and re.match(r"^\d+[A-Z]?\.?$", line):
+            out[-1] = f"Pasal {line.rstrip('.')}"
+            continue
+        if m := HEAD_DOT_RE.match(line):
+            line = m[1]
+        if m := re.match(r"^PASAL\s+(\d+[A-Z]?|[IVXLC]+)$", line):
+            line = f"Pasal {m[1]}"
+        out.append(line)
+    return out
+
+
+def is_heading(line: str) -> bool:
+    return bool(PASAL_RE.match(line) or BAGIAN_RE.match(line) or PARAGRAF_RE.match(line))
+
+
+def heading_number(label: str) -> int:
+    return ORDINAL[label.upper()] if label.upper() in ORDINAL else roman(label.upper())
+
+
 class Parser:
     def __init__(self, lines: list[str]):
-        self.lines = lines
+        self.lines = normalise(lines)
         self.doc = Document()
         self.cur: Block | None = None
         self.last_pasal = 0
@@ -177,6 +207,18 @@ class Parser:
                     or PASAL_RE.match(nxt)):
                 break
             if caps and not is_caps(nxt):
+                # older laws: the title in normal capitals, over up to four short lines
+                # ("Tentang Urusan Rumah-Tangga" / "dan Kewajiban-Kewajiban" …), then a heading
+                if j == i + 1 and nxt[:1].isupper():
+                    k = j
+                    while (k < len(self.lines) and k - j < 4 and len(self.lines[k].split()) <= 12
+                           and not self.lines[k].endswith(":") and not is_heading(self.lines[k])
+                           and not re.match(r"^[IVXLC]+\.\s", self.lines[k])):
+                        k += 1
+                    if k < len(self.lines) and (is_heading(self.lines[k])
+                                                or re.match(r"^[IVXLC]+\.\s", self.lines[k])):
+                        parts.extend(self.lines[j:k])
+                        j = k
                 break
             parts.append(nxt)
             j += 1
@@ -184,10 +226,17 @@ class Parser:
                 break
         return " ".join(parts), j - i
 
+    def title_follows(self, i: int) -> bool:
+        nxt = self.lines[i + 1] if i + 1 < len(self.lines) else ""
+        return bool(nxt) and is_caps(nxt) and not PASAL_RE.match(nxt)
+
     def step(self, line: str, i: int) -> int:
         if not self.in_penjelasan and PENJELASAN_RE.match(line) and self.last_pasal:
             self.in_penjelasan = True
-            self.emit(Block("penjelasan", text=line))
+            umum = re.match(r"^(PEND?JELASAN)\s+UMUM\.?$", line)
+            self.emit(Block("penjelasan", text=umum[1] if umum else line))
+            if umum:
+                self.emit(Block("umum", text="Umum"))
             self.reset_lists()
             return 1
         if self.last_pasal and (m := CLOSING_RE.match(line)):
@@ -195,15 +244,18 @@ class Parser:
             return 1
         if (self.cur is not None and self.cur.kind == "closing" and not PENJELASAN_RE.match(line)
                 and line != "RANCANGAN"):
-            self.cur.text = join(self.cur.text, line)
+            if self.cur.text.startswith("Agar") and not self.cur.text.rstrip().endswith("."):
+                self.cur.text = join(self.cur.text, line)       # the sentence goes on
+            else:
+                self.emit(Block("closing", text=line))          # signature blocks: as printed
             return 1
         if self.in_penjelasan:
             return self.step_penjelasan(line)
 
         if m := BAB_RE.match(line):
-            n = roman(m[1])
-            if n == self.last_bab + 1:
-                self.last_bab = n
+            n = heading_number(m[1])
+            if n == self.last_bab + 1 or (n == self.last_bab and self.title_follows(i)):
+                self.last_bab = n + (n == self.last_bab)
                 title, used = self.take_title(i, caps=True)
                 self.emit(Block("bab", label=f"BAB {m[1]}", text=title))
                 return used
@@ -248,11 +300,22 @@ class Parser:
         if m := PREAMBLE_RE.match(line):
             self.emit(Block("preamble", label=m[1], text=m[2]))
             self.lists = []
-            if (lm := LETTER_RE.match(m[2])) and self.list_item("letter", lm[1]):
-                self.cur.text = ""
-                self.emit(Block("item", label=f"{lm[1]}.", text=lm[2], level=1))
+            for kind, rx in (("letter", LETTER_RE), ("number", NUMBER_RE)):
+                if (lm := rx.match(m[2])) and self.list_item(kind, lm[1]):
+                    self.cur.text = ""
+                    self.emit(Block("item", label=f"{lm[1]}.", text=lm[2], level=1))
+                    break
             return 1
+        if self.cur is not None and self.cur.kind == "preamble" and line.startswith(":"):
+            line = line.lstrip(": ").strip()             # label alone, ": 1. …" on the next line
+            if not self.cur.text:
+                for kind, rx in (("letter", LETTER_RE), ("number", NUMBER_RE)):
+                    if (lm := rx.match(line)) and self.list_item(kind, lm[1]):
+                        self.emit(Block("item", label=f"{lm[1]}.", text=lm[2], level=1))
+                        return 1
         if self.cur is None:
+            if line.upper() in {"PRESIDEN", "REPUBLIK INDONESIA", "PRESIDEN REPUBLIK INDONESIA", "SALINAN"}:
+                return 1                                 # caption under the crest, not the title
             self.emit(Block("title", text=line))
             return 1
         if self.cur.kind == "title":

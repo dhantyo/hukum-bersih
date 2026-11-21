@@ -53,3 +53,25 @@ correctly.
    embedded layer, then the same rules; G-I mostly disappear with better OCR.
 3. J (amending laws) by porting Pasal.id's approach (decision 0005).
 4. Re-run the sample after each step and compare pasal counts and the page images again.
+
+## Progress
+
+Regression set: `pipeline/tests/regression.yaml` (the sample plus UU 4/2009, counts read from the
+PDFs), run with `uv run python scripts/regress.py` in `pipeline/`.
+
+| Parser | Expected counts | Leaks (page-turn words, page numbers, titles) |
+|---|---|---|
+| v4 | 9/15 | in 13 of 15 (UU 4/2009: 56 page-turn words; UU 2/1957, 19/1997: 33-34 page numbers) |
+| v5 (2026-11-21) | 14/15 | page-turn word left in 2 laws; "SK No" serial in 2 scans |
+
+v5: printed lines rebuilt from word positions (BPK stores justified text one word per line);
+page-turn words at the foot of a page and split page numbers dropped (C, D); headings with a
+full stop, BAGIAN/Bab Pertama numbering, BAB printed twice, "Pasal" and number on separate
+lines (A, B, I); multi-line chapter titles in normal capitals; lists on the label's line and
+after a lone ":" (E); "Dengan persetujuan …" as its own part (F); crest caption kept out of the
+title (G, partly); "PENJELASAN UMUM" on one line; old closing formula ("Agar supaya …"); the
+closing kept line by line as printed. Tests: `pipeline/tests/test_parser_v5.py`.
+
+Still open: amending laws (J, UU 18/2025 counts 4 instead of Pasal I/II); OCR for scans (H;
+"SK No" serials, G); Lampiran (L); closing as structured fields for the Modern view; stored
+texts are not re-parsed yet.

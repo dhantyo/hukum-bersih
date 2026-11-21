@@ -22,9 +22,9 @@ CACHE = Path.home() / ".cache" / "hukum-bersih" / "pdf"
 HF = "https://huggingface.co/datasets/Azzindani/ID_REG/resolve/main/"
 
 LEAKS = {
-    "page-turn": re.compile(r"(?:…|\.\s?\.\s?\.)\s*$", re.M),
-    "page no.": re.compile(r"(?:^|\s)-\s*\d{1,3}\s*-(?:\s|$)", re.M),
-    "watermark": re.compile(r"depkumham|peraturan\.go\.id|jdih\.", re.I),
+    "page-turn": re.compile(r"(?:…|\.\s?\.\s?\.)\s*$", re.MULTILINE),
+    "page no.": re.compile(r"(?:^|\s)-\s*\d{1,3}\s*-(?:\s|$)", re.MULTILINE),
+    "watermark": re.compile(r"depkumham|peraturan\.go\.id|jdih\.", re.IGNORECASE),
     "SK No": re.compile(r"\bSK\s*No\b"),
 }
 
