@@ -48,6 +48,7 @@ const { crumbs, eyebrow, title, subtitle } = Astro.props;
   .panel-fold > summary { display: none; }
   .doc-head { margin: var(--s-4) 0 var(--s-6); max-width: 52rem; }
   .doc-head h1 { margin-bottom: var(--s-2); }
+  .doc-head :global([slot="head"]) { margin-top: var(--s-3); }
   .subtitle { color: var(--text-muted); font-size: var(--fs-lg); margin: 0; }
   .doc { display: grid; grid-template-columns: var(--panel) minmax(0, 1fr); gap: var(--s-7); align-items: start; }
   .panel {
@@ -59,7 +60,7 @@ const { crumbs, eyebrow, title, subtitle } = Astro.props;
     .doc { grid-template-columns: 1fr; gap: var(--s-5); }
     .panel { position: static; max-height: none; overflow: visible; padding: 0; }
     .panel-fold { border: 1px solid var(--line); border-radius: var(--r-md); padding: var(--s-3) var(--s-4); }
-    .panel-fold > summary { display: list-item; cursor: pointer; font-weight: 600; }
+    .panel-fold > summary { display: list-item; cursor: pointer; font-weight: 600; padding: var(--s-2) 0; }
     .panel-fold[open] > summary { margin-bottom: var(--s-4); }
   }
   @media (max-width: 640px) {
