@@ -35,6 +35,7 @@ const { crumbs, eyebrow, title, subtitle } = Astro.props;
     <slot />
   </div>
 </div>
+<a class="to-toc" href="#daftar-isi" hidden data-pagefind-ignore>Daftar isi ↑</a>
 
 <script>
   // the side panel folds away on phones so the text comes first (DESIGN.md)
@@ -42,6 +43,25 @@ const { crumbs, eyebrow, title, subtitle } = Astro.props;
   const sync = () => document.querySelectorAll<HTMLDetailsElement>(".panel-fold").forEach((d) => { d.open = !narrow.matches; });
   sync();
   narrow.addEventListener("change", sync);
+
+  // Long laws on phones: once the contents are scrolled away, a button brings them back
+  // (GOV.UK "back to top" pattern). On wide screens the side panel is sticky instead.
+  const toc = document.getElementById("daftar-isi");
+  const btn = document.querySelector<HTMLAnchorElement>(".to-toc");
+  const panel = document.querySelector(".panel");
+  if (toc && btn && panel) {
+    new IntersectionObserver(([e]) => {
+      btn.hidden = e.isIntersecting || e.boundingClientRect.top > 0;
+    }).observe(panel);
+    btn.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      const fold = toc.closest("details");
+      if (fold) fold.open = true;
+      toc.scrollIntoView();
+      toc.querySelector<HTMLAnchorElement>("a[aria-current]")?.scrollIntoView({ block: "nearest" });
+      toc.querySelector<HTMLAnchorElement>("a[aria-current], a")?.focus({ preventScroll: true });
+    });
+  }
 </script>
 
 <style>
@@ -56,6 +76,14 @@ const { crumbs, eyebrow, title, subtitle } = Astro.props;
     font-size: var(--fs-sm); padding-right: var(--s-2);
   }
   .doc-main { min-width: 0; }
+  .to-toc {
+    position: fixed; right: var(--s-4); bottom: var(--s-4); z-index: 5;
+    background: var(--primary); color: var(--bg); text-decoration: none; font-weight: 600; font-size: var(--fs-sm);
+    padding: var(--s-3) var(--s-4); border-radius: 999px; box-shadow: var(--shadow-pop);
+  }
+  .to-toc[hidden] { display: none; }
+  @media (min-width: 961px) { .to-toc { display: none; } }
+  @media print { .to-toc { display: none; } }
   @media (max-width: 960px) {
     .doc { grid-template-columns: 1fr; gap: var(--s-5); }
     .panel { position: static; max-height: none; overflow: visible; padding: 0; }

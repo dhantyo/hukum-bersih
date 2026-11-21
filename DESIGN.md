@@ -73,11 +73,20 @@ Radius `--r-sm` 4px (badges, inputs, buttons), `--r-md` 8px (cards, panels). No 
 - **Breadcrumbs**: muted, `›` separated.
 - **Status badge**: small pill, colored text and border, no fill (berlaku/diubah/dicabut;
   Resmi/Arsip/Media/Belum ditemukan).
+- **Status banner** (law pages, above the text): a repealed law says "sudah tidak berlaku" and
+  links to what repealed it (border `--gone`); an amended law says the text is the original
+  wording and links to the pasal-by-pasal changes (border `--warn`). Pattern from
+  legislation.gov.uk and Fedlex. `components/StatusBanner.astro`.
+- **Contents button** (phones, document pages): "Daftar isi ↑", fixed bottom-right once the side
+  panel has scrolled away; opens the panel at the current section (GOV.UK back-to-top pattern).
 - **Fact list** (side panel): label above value, `--fs-sm`.
 - **Table of contents**: BAB headings with their pasal range; current item marked with
   `--primary` left border.
 - **Law text**: serif, hanging numbers for ayat/huruf/angka, pasal headings centered small caps
-  style (600, letter-spacing), anchor link on hover.
+  style (600, letter-spacing), anchor link on hover. Each pasal has a short anchor `#pasal-27`
+  (first pasal with that number) beside its Akoma Ntoso eId; the heading links to it.
+  Long laws use `content-visibility: auto` per chapter. Print: text, title and status banner
+  only, always light.
 - **Synopsis (comparison)**: two columns, old left, new right, one row per pasal pair;
   deletions `--del-*`, insertions `--ins-*`; one inline column on phones.
 - **Buttons**: primary (filled `--primary`), secondary (outline), quiet (text). Focus: 3px

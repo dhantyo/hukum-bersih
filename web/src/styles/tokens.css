@@ -42,7 +42,7 @@
   color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #111418; --bg-subtle: #181c21; --surface: #1c2127; --text: #e6e8eb;
     --text-muted: #a3abb5; --line: #2d343c; --primary: #8cb4f0; --primary-bg: #1a2a40;

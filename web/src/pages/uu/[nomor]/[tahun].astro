@@ -6,6 +6,7 @@ import LawText from "../../../components/LawText.astro";
 import Toc from "../../../components/Toc.astro";
 import KoleksiBox from "../../../components/KoleksiBox.astro";
 import RelationsBanner from "../../../components/RelationsBanner.astro";
+import StatusBanner from "../../../components/StatusBanner.astro";
 import { tanggal } from "../../../lib/labels.ts";
 import { amendmentSteps, shortName } from "../../../lib/amendments.ts";
 import { koleksiOf, koleksiPath } from "../../../lib/koleksi.ts";
@@ -64,6 +65,9 @@ const koleksi = koleksiOf(r.id);
       {steps.length > 0 && <p class="small"><a href={`${base}${lawPath(r)}perubahan/`}>Bandingkan perubahan pasal demi pasal →</a></p>}
       {doc && <Toc doc={doc} />}
     </Fragment>
+    <StatusBanner r={r} hasText={!!doc}
+      perubahanHref={steps.length > 0 ? `${base}${lawPath(r)}perubahan/` : undefined}
+      riwayatHref={koleksi ? `${base}${koleksiPath(koleksi)}#riwayat` : undefined} />
     {koleksi ? <KoleksiBox k={koleksi} r={r} /> : <RelationsBanner r={r} />}
     {doc ? (
       <>

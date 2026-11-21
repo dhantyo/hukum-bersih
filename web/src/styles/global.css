@@ -16,7 +16,8 @@ h1, h2, h3 { line-height: 1.25; font-weight: 600; }
 h1 { font-size: var(--fs-2xl); margin: var(--s-2) 0 var(--s-4); letter-spacing: -0.01em; }
 h2 { font-size: var(--fs-lg); margin: var(--s-7) 0 var(--s-4); }
 h3 { font-size: var(--fs-base); margin: var(--s-5) 0 var(--s-2); }
-p { margin: 0 0 var(--s-4); }
+p { margin: 0 0 var(--s-4); text-wrap: pretty; }
+::placeholder { color: var(--text-muted); opacity: 1; }
 a { color: var(--primary); text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
 a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; border-radius: 2px; }
@@ -72,4 +73,15 @@ main.wrap > .breadcrumbs:first-child { margin-top: 0; }
 .card {
   background: var(--bg-subtle); border: 1px solid var(--line); border-radius: var(--r-md);
   padding: var(--s-4) var(--s-5); margin: var(--s-3) 0;
+}
+
+/* Printing a law: the text and its status, without the site around it */
+@media print {
+  header.site, footer.site, .skip, .breadcrumbs, .panel, details.reading, .kbox { display: none !important; }
+  .doc { display: block !important; }
+  .law { max-width: none !important; }
+  a { color: inherit; text-decoration: none; }
+  .law .akn-body > section { content-visibility: visible !important; }
+  .akn-article, .numbered { break-inside: avoid-page; }
+  h2, h3 { break-after: avoid-page; }
 }

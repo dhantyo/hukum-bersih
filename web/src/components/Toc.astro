@@ -13,7 +13,7 @@ const loose = chapters.length ? [] : doc.body.flatMap(articles);
 const range = (arts: AknNode[]) =>
   arts.length === 0 ? "" : arts.length === 1 ? `Pasal ${arts[0].num}` : `Pasal ${arts[0].num}–${arts.at(-1)!.num}`;
 ---
-<nav class="toc" aria-label="Daftar isi">
+<nav class="toc" id="daftar-isi" aria-label="Daftar isi">
   <h2 class="panel-title">Daftar isi</h2>
   <ol>
     {chapters.map((c) => {

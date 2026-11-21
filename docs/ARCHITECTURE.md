@@ -105,4 +105,8 @@ evening) peraturan.go.id. See CLAUDE.md for the latest findings.
 | PDF text | PyMuPDF | |
 | Search | Pagefind | |
 | Showing a law's history | legislation.gov.uk "changes over time", Fedlex "Chronologie" | [decision 0008](decisions/0008-law-history.md); relations parsed with our own regexes over our own data |
+| Repealed / not-yet-consolidated warning | legislation.gov.uk "changes to legislation", Fedlex "nicht mehr in Kraft" banners | `StatusBanner.astro` |
+| Getting back to the contents on long pages | GOV.UK "back to top" pattern | `DocLayout.astro` |
+| Rendering very long laws | CSS `content-visibility: auto` | per chapter in `LawText.astro` |
+| Search for "pasal 27 ITE" | citation lookup as on legislation.gov.uk / Pasal.id, over our own `laws.json` | `pages/cari/`; Pagefind's prefix fallback ("xyzqq" → "x") is filtered out by checking the highlighted words |
 | Indonesian PDF quirks | Pasal.id parser (AGPL) | to port: peraturan.go.id headers/footers, page-break dedup, OCR fixes, amendment laws |

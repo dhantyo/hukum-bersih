@@ -10,7 +10,7 @@ const named = all.filter((k) => k.named);
 const other = all.filter((k) => !k.named).sort((a, b) => b.base.year - a.base.year);
 const n = (k: (typeof all)[number]) => members(k).filter((m) => m.role !== "pendahulu").length;
 ---
-<Base title="Koleksi" description="Undang-undang beserta semua perubahannya, dikelompokkan dengan nama yang biasa dipakai." section="koleksi">
+<Base noindex title="Koleksi" description="Undang-undang beserta semua perubahannya, dikelompokkan dengan nama yang biasa dipakai." section="koleksi">
   <h1>Koleksi</h1>
   <p class="lead">
     Satu koleksi berisi undang-undang pokok beserta semua undang-undang yang mengubahnya, dan
