@@ -13,5 +13,6 @@
 - Design (2026-11-21, decision 0007): follow `DESIGN.md` and `web/src/styles/tokens.css`; never raw colors/sizes in components.
 - Next steps (2026-11-21): OCR for the ~490 scanned UU (OCRmyPDF/Tesseract `ind`); re-parse already imported old UU to drop the peraturan.go.id 'Teks tidak dalam format asli…' banner (parser fixed, stored texts not yet); amendment-law parsing; OCR-noise fixes (Pasal.id's ocr_correct.py); show amendment relationships on law pages.
 - Known gaps in the UU import: amendment laws (Pasal I/II) are not parsed correctly yet (port from Pasal.id's parser); scanned PDFs get no text (needs OCR); versions are dated by tanggal penetapan (detail page has no pengundangan date).
+- Text fidelity (Dante, 2026-11-21): keep the source text as written. Never modernise old spelling (Ejaan Lama: Djakarta, jang, PENDJELASAN, Nopember) or correct typos in the source; the parser may only *recognise* old forms to find structure. OCR-noise fixes are allowed only for clear machine misreads (e.g. REPUEUK -> REPUBLIK), never for spelling of the period.
 - Never commit PDFs. Never rewrite history of `data/`. Never fabricate or reconstruct a missing document version.
 - Don't scrape pasal.id.
