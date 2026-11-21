@@ -18,10 +18,48 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-2-tahun-2018
 source_pdf_url: https://peraturan.go.id/files/uu2-2018bt.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_17_2014
+    order: 2
+    changes:
+      diubah:
+      - '15'
+      - '71'
+      - '74'
+      - '83'
+      - '84'
+      - '105'
+      - '121'
+      - '122'
+      - '164'
+      - '204'
+      - '224'
+      - '250'
+      - '260'
+      - '424'
+      disisipkan:
+      - 112A
+      - 112B
+      - 112C
+      - 112D
+      - 112E
+      - 112F
+      - 112G
+      - 121A
+      - 122A
+      - 122B
+      - 180A
+      - 413A
+      - 427A
+      - 427B
+      - 427C
+      - 427D
+      - 427E
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_2_2018_2018-03-15
   kind: asli

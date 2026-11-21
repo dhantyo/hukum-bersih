@@ -16,10 +16,24 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-19-tahun-2016
 source_pdf_url: https://peraturan.go.id/files/UU+19+Tahun+2016.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_11_2008
+    changes:
+      diubah:
+      - '1'
+      - '27'
+      - '31'
+      - '40'
+      - '43'
+      - '45'
+      disisipkan:
+      - 45A
+      - 45B
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_19_2016_2016-12-25
   kind: asli

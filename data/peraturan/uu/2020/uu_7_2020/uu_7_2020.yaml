@@ -16,10 +16,30 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-7-tahun-2020
 source_pdf_url: https://peraturan.go.id/files/uu7-2020bt.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_24_2003
+    order: 3
+    changes:
+      diubah:
+      - 7A
+      - '15'
+      - '20'
+      - '87'
+      dihapus:
+      - '4'
+      - '22'
+      - '23'
+      - '26'
+      - 27A
+      - 45A
+      - 50A
+      - '57'
+      - '59'
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_7_2020_2020-09-28
   kind: asli

@@ -36,10 +36,13 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-4-tahun-1968
 source_pdf_url: https://peraturan.go.id/files/UU+Nomor+4+Tahun+1968.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_14_1950
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions: []
 pdf_sha256: 7f6cc1d86b2e36c6dc8929227d5d82378063825578d2fdcaa85bab98f2784bc1
 pdf_quality: image_only_or_unparsed

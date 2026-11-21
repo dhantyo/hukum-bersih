@@ -18,10 +18,45 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-16-tahun-2017
 source_pdf_url: https://peraturan.go.id/files/uu16-2017bt.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_17_2013
+    changes:
+      diubah:
+      - '1'
+      - '59'
+      - '60'
+      - '61'
+      - '62'
+      disisipkan:
+      - 80A
+      - 82A
+      - 83A
+      dihapus:
+      - '63'
+      - '64'
+      - '65'
+      - '66'
+      - '67'
+      - '68'
+      - '69'
+      - '70'
+      - '71'
+      - '72'
+      - '73'
+      - '74'
+      - '75'
+      - '76'
+      - '77'
+      - '78'
+      - '79'
+      - '80'
+      - '81'
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts:
+  - perppu_2_2017
+  enacted_by: []
 versions:
 - id: uu_16_2017_2017-07-10
   kind: asli

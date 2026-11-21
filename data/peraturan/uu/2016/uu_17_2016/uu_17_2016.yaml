@@ -18,10 +18,21 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-17-tahun-2016
 source_pdf_url: https://peraturan.go.id/files/uu17-2016bt.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_23_2002
+    order: 2
+    changes:
+      diubah:
+      - '82'
+      disisipkan:
+      - 81A
+      - 82A
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts:
+  - perppu_1_2016
+  enacted_by: []
 versions:
 - id: uu_17_2016_2016
   kind: asli

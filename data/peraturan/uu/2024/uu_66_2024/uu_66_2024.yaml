@@ -15,10 +15,72 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-66-tahun-2024
 source_pdf_url: https://peraturan.go.id/files/uu-no-66-tahun-2024.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_17_2008
+    order: 3
+    changes:
+      diubah:
+      - '1'
+      - '15'
+      - '16'
+      - '17'
+      - '24'
+      - '26'
+      - '29'
+      - '48'
+      - '56'
+      - '57'
+      - '81'
+      - '82'
+      - '83'
+      - '84'
+      - '85'
+      - '86'
+      - '89'
+      - '92'
+      - '110'
+      - '123'
+      - '146'
+      - '172'
+      - '185'
+      - '198'
+      - '208'
+      - '223'
+      - '230'
+      - '235'
+      - '253'
+      - '276'
+      - '277'
+      - '278'
+      - '281'
+      - '284'
+      - '337'
+      - '347'
+      disisipkan:
+      - 15A
+      - 15B
+      - 15C
+      - 15D
+      - 15E
+      - 25A
+      - 26A
+      - 26B
+      - 26C
+      - 26D
+      - 33A
+      - 90A
+      - 107A
+      - 223A
+      - 251A
+      - 347A
+      dihapus:
+      - '280'
+      - '352'
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_66_2024_2024-10-28
   kind: asli

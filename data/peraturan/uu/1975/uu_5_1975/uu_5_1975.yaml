@@ -20,10 +20,16 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-5-tahun-1975
 source_pdf_url: https://peraturan.go.id/files/uu5-1975.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_16_1969
+    changes:
+      dihapus:
+      - '44'
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_5_1975_1975-11-24
   kind: asli

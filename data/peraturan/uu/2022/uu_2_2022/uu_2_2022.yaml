@@ -15,10 +15,61 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-2-tahun-2022
 source_pdf_url: https://peraturan.go.id/files/uu2-2022.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_38_2004
+    order: 2
+    changes:
+      diubah:
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '6'
+      - '8'
+      - '9'
+      - '11'
+      - '12'
+      - '13'
+      - '14'
+      - '15'
+      - '16'
+      - '17'
+      - '18'
+      - '19'
+      - '20'
+      - '21'
+      - '22'
+      - '36'
+      - '43'
+      - '47'
+      - '48'
+      - '50'
+      - '52'
+      - '55'
+      - '56'
+      - '57'
+      - 61A
+      - 61B
+      disisipkan:
+      - 9A
+      - 16A
+      - 21A
+      - 51A
+      - 51B
+      - 52A
+      - 56A
+      - 67A
+      dihapus:
+      - '37'
+      - '38'
+      - '39'
+      - '40'
+      - '41'
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_2_2022_2022-01-12
   kind: asli

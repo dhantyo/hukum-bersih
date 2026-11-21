@@ -16,10 +16,51 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-9-tahun-1994
 source_pdf_url: https://peraturan.go.id/files/uu9-1994.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_6_1983
+    changes:
+      diubah:
+      - '1'
+      - '2'
+      - '3'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '11'
+      - '13'
+      - '14'
+      - '15'
+      - '16'
+      - '17'
+      - '18'
+      - '20'
+      - '21'
+      - '22'
+      - '23'
+      - '25'
+      - '27'
+      - '28'
+      - '29'
+      - '31'
+      - '32'
+      - '34'
+      - '35'
+      - '38'
+      - '39'
+      - '41'
+      - 41A
+      - 41B
+      - '43'
+      - '44'
+      dihapus:
+      - '42'
+      - '47'
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_9_1994_1994
   kind: asli

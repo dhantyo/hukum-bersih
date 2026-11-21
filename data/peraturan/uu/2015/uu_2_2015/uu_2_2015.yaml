@@ -18,10 +18,14 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-2-tahun-2015
 source_pdf_url: https://peraturan.go.id/files/UU+No+2+Tahun+2015.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_23_2014
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts:
+  - perppu_2_2014
+  enacted_by: []
 versions:
 - id: uu_2_2015_2015-02-02
   kind: asli

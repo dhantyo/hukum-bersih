@@ -17,10 +17,36 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-42-tahun-2009
 source_pdf_url: https://peraturan.go.id/files/uu42-2009.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_8_1983
+    order: 3
+    changes:
+      diubah:
+      - '1'
+      - 1A
+      - 3A
+      - '4'
+      - 4A
+      - '5'
+      - 5A
+      - '7'
+      - '8'
+      - '9'
+      - '11'
+      - '12'
+      - '13'
+      - 16B
+      - 16D
+      disisipkan:
+      - 8A
+      - 15A
+      - 16E
+      - 16F
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_42_2009_2009-10-15
   kind: asli

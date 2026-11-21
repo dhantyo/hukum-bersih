@@ -15,10 +15,22 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-5-tahun-2010
 source_pdf_url: https://peraturan.go.id/files/uu5-2010bt.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_22_2002
+    changes:
+      diubah:
+      - '2'
+      - '7'
+      - '10'
+      - '15'
+      disisipkan:
+      - 6A
+      - 15A
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_5_2010_2010-08-20
   kind: asli

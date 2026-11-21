@@ -1,0 +1,81 @@
+---
+// "Riwayat": the history of a law as a timeline: enactment, each amending law with the pasal it
+// changed (linked to those pasal in this text), revocation. Pattern from legislation.gov.uk
+// ("changes over time") and Fedlex ("Chronologie"); see docs/decisions/0008.
+import { tanggal } from "../lib/labels.ts";
+import type { LawDoc } from "../lib/lawdoc.ts";
+import { citeId, history, pathOf, type Regulation } from "../lib/peraturan.ts";
+
+interface Props { r: Regulation; doc?: LawDoc }
+const { r, doc } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const events = history(r);
+const anchor = new Map((doc?.pasal ?? []).map((p) => [p.num, p.eId]));
+const ORDINAL = ["", "", "kedua", "ketiga", "keempat", "kelima", "keenam", "ketujuh", "kedelapan", "kesembilan", "kesepuluh"];
+const lawLink = (id: string) => pathOf(id);
+const amendments = events.filter((e) => e.kind === "diubah").length;
+---
+{events.length > 1 && (
+  <section class="riwayat" id="riwayat" aria-labelledby="riwayat-title">
+    <h2 id="riwayat-title">Riwayat</h2>
+    <p class="muted small">
+      {amendments > 0
+        ? <>Diubah {amendments}×. Teks di bawah adalah teks <strong>asli</strong> saat diundangkan; pasal yang kemudian diubah ditandai. Teks terkini (setelah semua perubahan) belum tersedia.</>
+        : <>Riwayat undang-undang ini menurut judul-judul peraturan yang terkait.</>}
+    </p>
+    <ol>
+      {events.map((e) => {
+        const by = e.by?.id;
+        const href = by ? lawLink(by) : undefined;
+        const cite = by ? citeId(by) : "";
+        return (
+          <li class={e.kind}>
+            <time class="muted small">{e.date ? tanggal(e.date) : "tanggal tidak diketahui"}</time>
+            <div class="what">
+              {e.kind === "diundangkan" && <strong>Ditetapkan</strong>}
+              {e.kind === "diubah" && <><strong>Diubah</strong>{e.order && e.order > 1 ? ` (perubahan ${ORDINAL[e.order] ?? e.order})` : ""} oleh {href ? <a href={`${base}${href}`}>{cite}</a> : cite}</>}
+              {e.kind === "dicabut" && <><strong>Dicabut</strong> oleh {href ? <a href={`${base}${href}`}>{cite}</a> : cite}</>}
+              {e.kind === "ditetapkan" && <><strong>Ditetapkan menjadi undang-undang</strong> oleh {href ? <a href={`${base}${href}`}>{cite}</a> : cite}</>}
+            </div>
+            {e.changes && (
+              <dl class="changes small">
+                {([["diubah", "Pasal yang diubah"], ["disisipkan", "Pasal baru (disisipkan)"], ["dihapus", "Pasal yang dihapus"]] as const).map(([k, label]) =>
+                  e.changes![k]?.length ? (
+                    <div>
+                      <dt>{label}</dt>
+                      <dd>{e.changes![k]!.map((n, i) => (
+                        <>{i > 0 && ", "}{k !== "disisipkan" && anchor.get(n) ? <a href={`#${anchor.get(n)}`}>{n}</a> : n}</>
+                      ))}</dd>
+                    </div>
+                  ) : null)}
+              </dl>
+            )}
+            {e.kind === "diubah" && !e.changes && (
+              <p class="muted small">Rincian pasal yang diubah belum dapat dibaca dari teksnya.</p>
+            )}
+          </li>
+        );
+      })}
+    </ol>
+  </section>
+)}
+
+<style>
+  .riwayat { max-width: var(--measure); margin-bottom: var(--s-6); }
+  .riwayat h2 { margin-top: 0; }
+  ol { list-style: none; margin: 0; padding: 0 0 0 var(--s-5); border-left: 2px solid var(--line); }
+  li { position: relative; padding-bottom: var(--s-4); }
+  li::before {
+    content: ""; position: absolute; left: calc(-1 * var(--s-5) - 7px); top: 0.35rem;
+    width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--primary);
+  }
+  li.diubah::before { border-color: var(--warn); }
+  li.dicabut::before { border-color: var(--gone); background: var(--gone); }
+  li:last-child { padding-bottom: 0; }
+  .what { margin-top: var(--s-1); }
+  .changes { margin: var(--s-2) 0 0; }
+  .changes div { display: grid; grid-template-columns: 11rem 1fr; gap: var(--s-2); padding: var(--s-1) 0; border-top: 1px solid var(--line); }
+  .changes dt { color: var(--text-muted); }
+  .changes dd { margin: 0; }
+  @media (max-width: 640px) { .changes div { grid-template-columns: 1fr; gap: 0; } }
+</style>

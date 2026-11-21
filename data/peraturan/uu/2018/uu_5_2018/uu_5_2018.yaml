@@ -18,10 +18,50 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-5-tahun-2018
 source_pdf_url: https://peraturan.go.id/files/uu5-2018bt.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_15_2003
+    changes:
+      diubah:
+      - '1'
+      - '5'
+      - '6'
+      - '14'
+      - '15'
+      - '25'
+      - '28'
+      - '31'
+      - '33'
+      - '34'
+      - '36'
+      - '43'
+      disisipkan:
+      - 10A
+      - 12A
+      - 12B
+      - 13A
+      - 16A
+      - 28A
+      - 31A
+      - 34A
+      - 35A
+      - 35B
+      - 36A
+      - 36B
+      - 46A
+      - 46B
+      dihapus:
+      - '37'
+      - '38'
+      - '39'
+      - '40'
+      - '41'
+      - '42'
+      - '46'
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_5_2018_2018
   kind: asli

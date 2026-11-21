@@ -16,10 +16,19 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-151-tahun-2024
 source_pdf_url: https://peraturan.go.id/files/uu-no-151-tahun-2024.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_2_2024
+    changes:
+      disisipkan:
+      - 70A
+      - 70B
+      - 70C
+      - 70D
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_151_2024_2024-11-30
   kind: asli

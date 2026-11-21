@@ -17,10 +17,44 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-10-tahun-1994
 source_pdf_url: https://peraturan.go.id/files/uu10-1994.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_7_1983
+    changes:
+      diubah:
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '9'
+      - '10'
+      - '11'
+      - '14'
+      - '16'
+      - '17'
+      - '18'
+      - '19'
+      - '20'
+      - '21'
+      - '22'
+      - '23'
+      - '24'
+      - '25'
+      - '26'
+      - '29'
+      dihapus:
+      - '12'
+      - '13'
+      - '27'
+      - '30'
+      - '31'
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_10_1994_1994
   kind: asli

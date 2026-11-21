@@ -4,8 +4,10 @@ import DocLayout from "../../../components/DocLayout.astro";
 import Facts from "../../../components/Facts.astro";
 import LawText from "../../../components/LawText.astro";
 import Toc from "../../../components/Toc.astro";
+import Riwayat from "../../../components/Riwayat.astro";
+import RelationsBanner from "../../../components/RelationsBanner.astro";
 import { tanggal } from "../../../lib/labels.ts";
-import { loadRegulations, loadRegulationText, shortCite, STATUS_LABEL, type Regulation } from "../../../lib/peraturan.ts";
+import { citeId, history, loadRegulations, loadRegulationText, pasalNotes, pathOf, rel, shortCite, STATUS_LABEL, type Regulation } from "../../../lib/peraturan.ts";
 
 export function getStaticPaths() {
   return loadRegulations().filter((r) => r.type === "uu").map((r) => ({
@@ -17,6 +19,10 @@ const base = import.meta.env.BASE_URL;
 const doc = loadRegulationText(r);
 const status = r.status ?? "";
 const pasal = r.versions.find((v) => v.pasal_count)?.pasal_count;
+const R = rel(r);
+const amendments = R.amended_by.length;
+const notes = new Map([...pasalNotes(r)].map(([n, ids]) => [n, ids.map((id) => ({ label: citeId(id), href: pathOf(id) ? `${base}${pathOf(id)}` : undefined }))]));
+const hasHistory = history(r).length > 1;
 ---
 <Base title={`${shortCite(r)}${r.subject ? ` tentang ${r.subject}` : ""}`} description={`${r.title}${r.subject ? ` tentang ${r.subject}` : ""}`} section="peraturan">
   <DocLayout
@@ -28,6 +34,8 @@ const pasal = r.versions.find((v) => v.pasal_count)?.pasal_count;
       {status && <span class={`badge ${status}`}>{STATUS_LABEL[status] ?? status}</span>}
       {r.tanggal_penetapan && <span class="muted small">Ditetapkan {tanggal(r.tanggal_penetapan)}</span>}
       {pasal && <span class="muted small">{pasal} pasal</span>}
+      {amendments > 0 && <a class="badge diubah" href="#riwayat">diubah {amendments}×</a>}
+      {R.revoked_by.length > 0 && <a class="badge dicabut" href="#riwayat">dicabut</a>}
     </div>
     <Fragment slot="panel">
       <Facts title="Keterangan" facts={[
@@ -43,12 +51,15 @@ const pasal = r.versions.find((v) => v.pasal_count)?.pasal_count;
         { label: "PDF resmi", value: "Unduh PDF", href: r.source_pdf_url ?? undefined },
         { label: "Salinan arsip", value: r.archive_url ? "archive.org" : null, href: r.archive_url },
       ]} />
+      {hasHistory && <p class="small"><a href="#riwayat">Riwayat perubahan →</a></p>}
       {doc && <Toc doc={doc} />}
     </Fragment>
+    <RelationsBanner r={r} />
+    <Riwayat r={r} doc={doc} />
     {doc ? (
       <>
         <p class="notice small">Teks ini diambil otomatis dari PDF resmi dan bisa memuat kesalahan baca. Bila ragu, periksa <a href={r.source_pdf_url ?? r.source_url}>PDF resminya</a>.</p>
-        <LawText doc={doc} />
+        <LawText doc={doc} notes={notes} />
       </>
     ) : (
       <div class="notice">

@@ -15,10 +15,13 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-21-tahun-1948
 source_pdf_url: https://peraturan.go.id/files/uu21-1948.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_12_1947
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions: []
 pdf_sha256: 3ad790226b2cc48aaf7f0fb5498033249c2faf221112b30fa7a97b9985c3d9db
 pdf_quality: image_only_or_unparsed

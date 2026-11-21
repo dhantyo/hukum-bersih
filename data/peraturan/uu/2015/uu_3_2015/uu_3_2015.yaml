@@ -16,10 +16,33 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-3-tahun-2015
 source_pdf_url: https://peraturan.go.id/files/uu3-2015bt.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_27_2014
+    changes:
+      diubah:
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
+      - '11'
+      - '12'
+      - '13'
+      - '17'
+      - '18'
+      - '32'
+      disisipkan:
+      - 23A
+      - 23B
+      - 31A
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_3_2015_2015-03-06
   kind: asli

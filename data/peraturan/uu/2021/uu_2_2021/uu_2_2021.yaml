@@ -16,10 +16,37 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-2-tahun-2021
 source_pdf_url: https://peraturan.go.id/files/ln155tln6697-2021.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_21_2001
+    order: 2
+    changes:
+      diubah:
+      - '1'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '11'
+      - '17'
+      - '20'
+      - '24'
+      - '28'
+      - '34'
+      - '36'
+      - '38'
+      - '56'
+      - '59'
+      - '68'
+      - '75'
+      - '76'
+      disisipkan:
+      - 6A
+      - 68A
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_2_2021_2021-07-19
   kind: asli

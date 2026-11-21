@@ -18,10 +18,14 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-10-tahun-2015
 source_pdf_url: https://peraturan.go.id/files/uu10-2015bt.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_30_2002
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts:
+  - perppu_1_2015
+  enacted_by: []
 versions:
 - id: uu_10_2015_2015-05-20
   kind: asli

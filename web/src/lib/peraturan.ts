@@ -15,6 +15,17 @@ export interface Version {
   pasal_count?: number;
 }
 
+export interface Changes { diubah?: string[]; disisipkan?: string[]; dihapus?: string[] }
+
+export interface Relationships {
+  amends: { id: string; order?: number; changes?: Changes }[];
+  amended_by: string[];
+  revokes: string[];
+  revoked_by: string[];
+  enacts: string[];
+  enacted_by: string[];
+}
+
 export interface Regulation {
   id: string;            // uu_11_2008
   type: string;          // uu
@@ -34,6 +45,7 @@ export interface Regulation {
   pdf_quality?: string;
   parse_error?: string;
   versions: Version[];
+  relationships?: Partial<Relationships>;
   dir: string;           // data folder, relative to data/peraturan
   archive_url?: string;
 }
@@ -141,3 +153,67 @@ export function loadRegulationText(r: Regulation): LawDoc | undefined {
 export const lawPath = (r: Regulation) => `${r.type}/${r.number}/${r.year}/`;
 export const shortCite = (r: Regulation) =>
   `${(JENIS[r.type]?.short ?? r.type.toUpperCase())} ${r.number.toUpperCase()}/${r.year}`;
+
+const EMPTY: Relationships = { amends: [], amended_by: [], revokes: [], revoked_by: [], enacts: [], enacted_by: [] };
+export const rel = (r: Regulation): Relationships => ({ ...EMPTY, ...(r.relationships ?? {}) });
+
+let index: Map<string, Regulation> | undefined;
+export function byId(id: string): Regulation | undefined {
+  index ??= new Map(loadRegulations().map((r) => [r.id, r]));
+  return index.get(id);
+}
+
+/** "uu_11_2008" -> "UU 11/2008", "perppu_2_2022" -> "Perppu 2/2022", "uu-drt_7_1956" -> "UU Darurat 7/1956". */
+export function citeId(id: string): string {
+  const m = id.match(/^([a-z-]+)_([0-9a-z]+)_(\d{4})$/);
+  if (!m) return id;
+  const jenis = m[1] === "uu-drt" ? "UU Darurat" : (JENIS[m[1]]?.short ?? m[1].toUpperCase());
+  return `${jenis} ${m[2].toUpperCase()}/${m[3]}`;
+}
+
+/** Site path for a regulation id, if we have its page. */
+export function pathOf(id: string): string | undefined {
+  const r = byId(id);
+  return r ? lawPath(r) : undefined;
+}
+
+export interface HistoryEvent {
+  date: string | null;
+  kind: "diundangkan" | "diubah" | "dicabut" | "ditetapkan";
+  by?: Regulation | { id: string };
+  order?: number;
+  changes?: Changes;
+}
+
+/** Everything that happened to a regulation, oldest first: its enactment, each law that
+ * amended it (with the pasal it changed), revocation, and confirmation of a Perppu. */
+export function history(r: Regulation): HistoryEvent[] {
+  const R = rel(r);
+  const events: HistoryEvent[] = [{ date: r.tanggal_penetapan, kind: "diundangkan" }];
+  for (const id of R.amended_by) {
+    const by = byId(id);
+    const entry = by ? rel(by).amends.find((a) => a.id === r.id) : undefined;
+    events.push({ date: by?.tanggal_penetapan ?? null, kind: "diubah", by: by ?? { id }, order: entry?.order, changes: entry?.changes });
+  }
+  for (const id of R.revoked_by) {
+    const by = byId(id);
+    events.push({ date: by?.tanggal_penetapan ?? null, kind: "dicabut", by: by ?? { id } });
+  }
+  for (const id of R.enacted_by) {
+    const by = byId(id);
+    events.push({ date: by?.tanggal_penetapan ?? null, kind: "ditetapkan", by: by ?? { id } });
+  }
+  return events.sort((a, b) => (a.date ?? "9999").localeCompare(b.date ?? "9999"));
+}
+
+/** Per pasal number: the laws that changed it (for markers in the text). */
+export function pasalNotes(r: Regulation): Map<string, string[]> {
+  const notes = new Map<string, string[]>();
+  for (const e of history(r)) {
+    if (e.kind !== "diubah" || !e.changes) continue;
+    for (const n of [...(e.changes.diubah ?? []), ...(e.changes.dihapus ?? [])]) {
+      notes.set(n, [...(notes.get(n) ?? []), e.by!.id]);
+    }
+  }
+  return notes;
+}

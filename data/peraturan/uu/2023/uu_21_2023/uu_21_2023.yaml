@@ -15,10 +15,30 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-21-tahun-2023
 source_pdf_url: https://peraturan.go.id/files/uu-no-21-tahun-2023.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_3_2022
+    changes:
+      diubah:
+      - '6'
+      - '12'
+      - '23'
+      - '24'
+      - '25'
+      - '26'
+      - '32'
+      - '36'
+      - '42'
+      disisipkan:
+      - 15A
+      - 16A
+      - 24A
+      - 36A
+      - 36E
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_21_2023_2023-10-31
   kind: asli

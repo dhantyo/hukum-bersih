@@ -16,10 +16,33 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-13-tahun-2022
 source_pdf_url: https://peraturan.go.id/files/uu13-2022.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_12_2011
+    order: 2
+    changes:
+      diubah:
+      - '9'
+      - '49'
+      - '58'
+      - '64'
+      - '72'
+      - '73'
+      - '85'
+      - 95A
+      - '96'
+      - '98'
+      - '99'
+      disisipkan:
+      - 42A
+      - 97A
+      - 97B
+      - 97C
+      - 97D
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_13_2022_2022-06-16
   kind: asli

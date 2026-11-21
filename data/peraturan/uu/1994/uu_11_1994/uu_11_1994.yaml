@@ -17,10 +17,33 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-11-tahun-1994
 source_pdf_url: https://peraturan.go.id/files/uu11-1994.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_8_1983
+    changes:
+      diubah:
+      - '1'
+      - '2'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
+      - '11'
+      - '12'
+      - '13'
+      - '14'
+      - '17'
+      dihapus:
+      - '3'
+      - '15'
+      - '16'
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_11_1994_1994-11-09
   kind: asli

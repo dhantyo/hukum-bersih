@@ -16,10 +16,28 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-26-tahun-2009
 source_pdf_url: https://peraturan.go.id/files/uu26-2009bt.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_41_2008
+    changes:
+      diubah:
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '15'
+      - '16'
+      - '17'
+      - '18'
+      - '19'
+      - '21'
+      - '24'
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_26_2009_2009-08-25
   kind: asli

@@ -16,10 +16,33 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-8-tahun-2017
 source_pdf_url: https://peraturan.go.id/files/uu8-2017bt.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_18_2016
+    changes:
+      diubah:
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
+      - '12'
+      - '14'
+      - '16'
+      - '21'
+      - '22'
+      - '31'
+      - '40'
+      - '41'
+      dihapus:
+      - '11'
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_8_2017_2017-08-21
   kind: asli

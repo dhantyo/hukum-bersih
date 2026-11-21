@@ -49,6 +49,7 @@ jobs:
             echo "$out"
             n=$(echo "$out" | grep -c '^ok' || true)
             echo "$out" | grep -E '^(ok|FAIL)' >> "$GITHUB_STEP_SUMMARY" || true
+            (cd pipeline && uv run hukum-bersih relations)   # link amendments, revocations
             git add data/
             if ! git diff --cached --quiet; then
               verb=$([ -n "$REPARSE" ] && echo "re-convert" || echo "import")

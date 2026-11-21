@@ -15,10 +15,47 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-8-tahun-2011
 source_pdf_url: https://peraturan.go.id/files/uu8-2011.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_24_2003
+    changes:
+      diubah:
+      - '1'
+      - '4'
+      - '6'
+      - '7'
+      - '8'
+      - '10'
+      - '15'
+      - '23'
+      - '26'
+      - '32'
+      - '34'
+      - '35'
+      - '41'
+      - '57'
+      - '59'
+      - '60'
+      - '79'
+      - '87'
+      disisipkan:
+      - 7A
+      - 7B
+      - 33A
+      - 35A
+      - 42A
+      - 45A
+      - 48A
+      - 50A
+      - 51A
+      dihapus:
+      - '16'
+      - '50'
+      - '65'
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_8_2011_2011-07-20
   kind: asli

@@ -83,6 +83,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--limit", type=int, default=150)
     p.add_argument("--delay", type=float, default=2.0)
 
+    sub.add_parser("relations", help="recompute amends/revokes/enacts links between regulations")
+
     p = sub.add_parser("manifest", help="print a manifest entry for a local file")
     p.add_argument("path", type=Path)
     p.add_argument("--source-url", required=True)
@@ -166,6 +168,12 @@ def main(argv: list[str] | None = None) -> int:
             return f"archived {r.item}  {r.entry.archive_url}"
 
         return _each(todo, archive_one, args.delay)
+
+    if args.command == "relations":
+        from .relations import build
+
+        print(build(args.data_dir))
+        return 0
 
     if args.command == "manifest":
         from .manifest import entry_for_file

@@ -15,9 +15,12 @@ source_url: https://peraturan.go.id/id/uu-no-14-tahun-1985
 source_pdf_url: https://peraturan.go.id/files/uu14-1985.pdf
 relationships:
   amends: []
-  amended_by: []
+  amended_by:
+  - uu_3_2009
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions: []
 pdf_sha256: 21e97ec08b59648d3f34adb173284219716e03b68ecfb2bcf1fbffdd268f73c3
 parse_error: 'LeakedMarkupError: hcontainer_1__p_2: markup in text: ''ART 1 -'''

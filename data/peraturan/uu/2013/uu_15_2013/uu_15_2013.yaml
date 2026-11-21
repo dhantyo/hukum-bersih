@@ -16,10 +16,27 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-15-tahun-2013
 source_pdf_url: https://peraturan.go.id/files/uu15-2013bt.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_19_2012
+    changes:
+      diubah:
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '11'
+      - '13'
+      - '14'
+      - '16'
+      - '17'
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_15_2013_2013-06-18
   kind: asli

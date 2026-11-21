@@ -16,10 +16,44 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-4-tahun-2012
 source_pdf_url: https://peraturan.go.id/files/uu4-2012bt.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_22_2011
+    changes:
+      diubah:
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
+      - '11'
+      - '12'
+      - '13'
+      - '14'
+      - '15'
+      - '18'
+      - '20'
+      - '23'
+      - '26'
+      - '27'
+      - '29'
+      - '30'
+      - '38'
+      - '43'
+      disisipkan:
+      - 6A
+      - 8A
+      - 15A
+      - 15B
+      - 43A
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_4_2012_2012-03-31
   kind: asli

@@ -16,10 +16,47 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-31-tahun-2014
 source_pdf_url: https://peraturan.go.id/files/uu31-2014bt.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_13_2006
+    changes:
+      diubah:
+      - '1'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '10'
+      - '16'
+      - '18'
+      - '23'
+      - '28'
+      - '29'
+      - '37'
+      - '38'
+      - '39'
+      - '40'
+      - '41'
+      - '43'
+      disisipkan:
+      - 7A
+      - 7B
+      - 10A
+      - 12A
+      - 16A
+      - 16B
+      - 16C
+      - 16D
+      - 23A
+      - 24A
+      - 24B
+      - 29A
+      - 32A
+      - 42A
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_31_2014_2014-10-17
   kind: asli

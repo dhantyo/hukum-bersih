@@ -16,10 +16,33 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-5-tahun-2026
 source_pdf_url: https://peraturan.go.id/files/uu-no-5-tahun-2026.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_2_2002
+    order: 3
+    changes:
+      diubah:
+      - '9'
+      - '14'
+      - '19'
+      - '21'
+      - '26'
+      - '28'
+      - '30'
+      - '38'
+      - '39'
+      disisipkan:
+      - 19A
+      - 28A
+      - 32A
+      - 39A
+      - 39B
+      - 39C
+      - 39D
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_5_2026_2026-06-17
   kind: asli

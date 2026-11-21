@@ -1,0 +1,47 @@
+---
+// On a law that changes other laws: what it amends, revokes or confirms, with links back to
+// the base law's history.
+import { citeId, pathOf, rel, type Regulation } from "../lib/peraturan.ts";
+import { byId } from "../lib/peraturan.ts";
+
+interface Props { r: Regulation }
+const { r } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const R = rel(r);
+const name = (id: string) => {
+  const t = byId(id);
+  return t?.subject ? `${citeId(id)} tentang ${t.subject}` : citeId(id);
+};
+const link = (id: string, hash = "") => {
+  const p = pathOf(id);
+  return p ? `${base}${p}${hash}` : undefined;
+};
+const items = [
+  ...R.amends.map((a) => ({ verb: "mengubah", id: a.id, hash: "#riwayat", n: (a.changes?.diubah?.length ?? 0) + (a.changes?.disisipkan?.length ?? 0) + (a.changes?.dihapus?.length ?? 0) })),
+  ...R.revokes.map((id) => ({ verb: "mencabut", id, hash: "", n: 0 })),
+  ...R.enacts.map((id) => ({ verb: "menetapkan menjadi undang-undang", id, hash: "", n: 0 })),
+];
+---
+{items.length > 0 && (
+  <aside class="banner" aria-label="Hubungan dengan peraturan lain">
+    {items.map((i) => {
+      const href = link(i.id, i.hash);
+      return (
+        <p>
+          Undang-undang ini <strong>{i.verb}</strong>{" "}
+          {href ? <a href={href}>{name(i.id)}</a> : name(i.id)}
+          {i.n > 0 && <span class="muted"> · {i.n} pasal{href ? <> (<a href={href}>lihat riwayat</a>)</> : ""}</span>}
+        </p>
+      );
+    })}
+  </aside>
+)}
+
+<style>
+  .banner {
+    max-width: var(--measure); border: 1px solid var(--warn); border-left-width: 4px;
+    border-radius: var(--r-sm); padding: var(--s-3) var(--s-4); margin-bottom: var(--s-5);
+  }
+  .banner p { margin: 0; }
+  .banner p + p { margin-top: var(--s-2); }
+</style>

@@ -53,7 +53,8 @@ Names follow [NAMING.md](NAMING.md).
 | `pdf/structure.py` | Lines → structural blocks (BAB … Pasal, ayat, huruf/angka, Penjelasan) |
 | `akn/bluebell.py` | Blocks → Bluebell text (stored in `data/`) |
 | `akn/build.py` | Bluebell → Akoma Ntoso XML (Laws.Africa's `bluebell` parser) |
-| `cli.py` | `hukum-bersih fetch / parse / build-akn / archive-*` |
+| `relations.py` | Amends / revokes / enacts links from titles, plus the pasal an amending law changes (from its text) → `relationships` in each record ([decision 0008](decisions/0008-law-history.md)) |
+| `cli.py` | `hukum-bersih fetch / parse / build-akn / relations / archive-*` |
 
 ### web/src/
 
@@ -62,7 +63,7 @@ Names follow [NAMING.md](NAMING.md).
 | `lib/data.ts` | Reads RUU records from `data/` and generated XML from `web/generated/` |
 | `lib/lawdoc.ts` | Akoma Ntoso → render tree + each Pasal as lines |
 | `lib/compare.ts` | Match pasal by content, then ayat, then words (diff-match-patch) |
-| `components/` | `LawText` / `AknNode` render Akoma Ntoso with `akn-*` classes and eIds as ids |
+| `components/` | `LawText` / `AknNode` render Akoma Ntoso with `akn-*` classes and eIds as ids; `Riwayat` (history timeline) and `RelationsBanner` (on amending laws) |
 | `pages/` | `/`, `/uu/`, `/uu/tahun/<tahun>/`, `/uu/<nomor>/<tahun>/`, `/ruu/`, `/ruu/<slug>/`, `/ruu/<slug>/<doc id>/`, `/ruu/<slug>/beda/<a>...<b>/`, `/cari/`, `/tentang/` |
 | `styles/` | `tokens.css` (design tokens, see /DESIGN.md) and `global.css` |
 | `lib/peraturan.ts` | Reads regulation records and their generated Akoma Ntoso |
@@ -76,7 +77,7 @@ Names follow [NAMING.md](NAMING.md).
 | `fetch.yml` | manual | fetch + archive `id URL` pairs, commit manifest lines |
 | `archive-retitle.yml` | manual | rewrite archive.org titles/descriptions |
 | `archive-delete.yml` | manual | empty obsolete archive.org items |
-| `import-peraturan.yml` | every 6 h + manual | import regulations from peraturan.go.id in batches of 50; resumes; afterwards picks up new ones |
+| `import-peraturan.yml` | every 6 h + manual | import regulations from peraturan.go.id in batches of 50; resumes; afterwards picks up new ones; recomputes relationships after each batch |
 | `archive-pending.yml` | daily + manual | archive regulation PDFs the importer recorded (batches of 150) |
 | `probe-sources.yml` | manual | which sources a GitHub runner can reach |
 
@@ -97,4 +98,5 @@ evening) peraturan.go.id. See CLAUDE.md for the latest findings.
 | archive.org | `internetarchive` | |
 | PDF text | PyMuPDF | |
 | Search | Pagefind | |
+| Showing a law's history | legislation.gov.uk "changes over time", Fedlex "Chronologie" | [decision 0008](decisions/0008-law-history.md); relations parsed with our own regexes over our own data |
 | Indonesian PDF quirks | Pasal.id parser (AGPL) | to port: peraturan.go.id headers/footers, page-break dedup, OCR fixes, amendment laws |

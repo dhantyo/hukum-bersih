@@ -16,10 +16,57 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-11-tahun-2021
 source_pdf_url: https://peraturan.go.id/files/uu11-2021bt.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_16_2004
+    changes:
+      diubah:
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '10'
+      - '12'
+      - '13'
+      - '17'
+      - '18'
+      - '20'
+      - '22'
+      - '23'
+      - '24'
+      - '29'
+      - '31'
+      - '33'
+      - '34'
+      - '35'
+      - '36'
+      - '37'
+      - '39'
+      disisipkan:
+      - 7A
+      - 8A
+      - 8B
+      - 9A
+      - 9B
+      - 11A
+      - 30A
+      - 30B
+      - 30C
+      - 34A
+      - 34B
+      - 34C
+      - 35A
+      - 35B
+      - 39A
+      - 40A
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_11_2021_2021-12-31
   kind: asli

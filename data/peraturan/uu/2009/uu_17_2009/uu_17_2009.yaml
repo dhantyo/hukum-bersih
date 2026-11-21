@@ -22,10 +22,17 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-17-tahun-2009
 source_pdf_url: https://peraturan.go.id/files/uu17-2009bt.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_10_2008
+    changes:
+      diubah:
+      - '176'
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts:
+  - perppu_1_2009
+  enacted_by: []
 versions:
 - id: uu_17_2009_2009-05-29
   kind: asli

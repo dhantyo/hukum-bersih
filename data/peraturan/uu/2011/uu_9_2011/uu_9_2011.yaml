@@ -15,10 +15,25 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-9-tahun-2011
 source_pdf_url: https://peraturan.go.id/files/uu9-2011.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_9_2006
+    changes:
+      diubah:
+      - '1'
+      - '5'
+      - '21'
+      - '29'
+      - '32'
+      - '40'
+      disisipkan:
+      - 40A
+      - 42A
+      - 44A
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_9_2011_2011-08-08
   kind: asli

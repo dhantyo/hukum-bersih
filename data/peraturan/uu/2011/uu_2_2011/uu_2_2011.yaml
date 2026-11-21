@@ -15,10 +15,34 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-2-tahun-2011
 source_pdf_url: https://peraturan.go.id/files/UU+No.+2+Tahun+2011.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_2_2008
+    changes:
+      diubah:
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '16'
+      - '19'
+      - '23'
+      - '29'
+      - '32'
+      - '33'
+      - '34'
+      - '35'
+      - '39'
+      - '45'
+      - '47'
+      - '51'
+      disisipkan:
+      - 34A
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_2_2011_2011-01-05
   kind: asli

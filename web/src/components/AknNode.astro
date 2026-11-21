@@ -4,8 +4,10 @@
 // their law-widgets can be used on top later.
 import type { AknNode } from "../lib/lawdoc.ts";
 
-interface Props { node: AknNode; penjelasan?: boolean }
-const { node, penjelasan = false } = Astro.props;
+export interface PasalNote { label: string; href?: string }
+interface Props { node: AknNode; penjelasan?: boolean; notes?: Map<string, PasalNote[]> }
+const { node, penjelasan = false, notes } = Astro.props;
+const note = node.tag === "article" && !penjelasan && node.num ? notes?.get(node.num) : undefined;
 const LABEL: Record<string, string> = { chapter: "BAB", part: "Bagian", subpart: "Paragraf", article: "Pasal" };
 const isHeadingBlock = ["chapter", "part", "subpart"].includes(node.tag);
 const label = node.num && LABEL[node.tag] ? `${LABEL[node.tag]} ${node.num}` : node.num;
@@ -16,20 +18,23 @@ const id = node.eId ? (penjelasan ? `penjelasan-${node.eId}` : node.eId) : undef
 ) : node.tag === "article" ? (
   <section class="akn-article" id={id}>
     <h3><a href={`#${id}`}>{label}</a></h3>
-    {node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} />)}
+    {note && (
+      <p class="akn-note">Diubah oleh {note.map((n, i) => <>{i > 0 && (i === note.length - 1 ? " dan " : ", ")}{n.href ? <a href={n.href}>{n.label}</a> : n.label}</>)}</p>
+    )}
+    {node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} notes={notes} />)}
   </section>
 ) : isHeadingBlock ? (
   <section class={`akn-${node.tag}`} id={id}>
     <h2>{node.tag === "part" && penjelasan ? node.num : label}{node.heading && <span class="sub">{node.heading}</span>}</h2>
-    {node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} />)}
+    {node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} notes={notes} />)}
   </section>
 ) : node.num ? (
   <div class={`akn-${node.tag} numbered`} id={id}>
     <span class="akn-num">{node.num}</span>
-    <div class="akn-body">{node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} />)}</div>
+    <div class="akn-body">{node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} notes={notes} />)}</div>
   </div>
 ) : (
   <div class={`akn-${node.tag}`} id={id}>
-    {node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} />)}
+    {node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} notes={notes} />)}
   </div>
 )}

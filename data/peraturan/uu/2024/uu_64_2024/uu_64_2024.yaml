@@ -16,10 +16,23 @@ pemrakarsa: PEMERINTAH PUSAT
 source_url: https://peraturan.go.id/id/uu-no-64-tahun-2024
 source_pdf_url: https://peraturan.go.id/files/uu-no-64-tahun-2024.pdf
 relationships:
-  amends: []
+  amends:
+  - id: uu_19_2006
+    changes:
+      diubah:
+      - '1'
+      - '2'
+      - '7'
+      - '8'
+      - '9'
+      - '12'
+      disisipkan:
+      - 1A
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu_64_2024_2024-10-17
   kind: asli
