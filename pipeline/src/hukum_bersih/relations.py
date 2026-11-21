@@ -205,9 +205,9 @@ def build(data_dir: Path) -> dict[str, int]:
             if target in rel:
                 rel[target]["enacted_by"].append(k)
 
-    def date_key(i: str) -> str:
+    def date_key(i: str) -> tuple[str, str]:      # id breaks ties: same output every run
         r = recs.get(i, {})
-        return str(r.get("tanggal_penetapan") or r.get("year") or "")
+        return str(r.get("tanggal_penetapan") or r.get("year") or ""), i
 
     for k, rec in recs.items():
         for key in ("amended_by", "revoked_by", "enacted_by"):
