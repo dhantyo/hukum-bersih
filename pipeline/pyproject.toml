@@ -20,7 +20,11 @@ bpk = ["scrapling[fetchers]>=0.5.1", "curl-cffi>=0.17.0"]
 hukum-bersih = "hukum_bersih.cli:main"
 
 [dependency-groups]
-dev = ["pytest>=8", "ruff>=0.6"]
+dev = [
+    "pytest>=8",
+    "remotezip>=0.12.6",
+    "ruff>=0.6",
+]
 
 [build-system]
 requires = ["hatchling"]
