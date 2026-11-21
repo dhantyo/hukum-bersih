@@ -13,8 +13,8 @@ tanggal_penetapan: '2013-05-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-2013
-source_pdf_url: https://peraturan.go.id/files/uu14-2013bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38865/uu-no-14-tahun-2013
+source_pdf_url: https://peraturan.bpk.go.id/Download/28221/UU%20Nomor%2014%20Tahun%202013.pdf
 relationships:
   amends:
   - id: uu_56_2008
@@ -43,3 +43,27 @@ versions:
   text: uu_14_2013_2013-05-11.txt
   pasal_count: 2
 pdf_sha256: 522c5f6c2fda0f8ad1bf0d592dedc965dabc46ae16e34112b60670473e3fa26c
+tanggal_pengundangan: '2013-05-15'
+tanggal_berlaku: '2013-05-15'
+lembaran_negara: 'LN.2013/No. 85, TLN No. 5416, LL SETNEG: 10 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-2013
+  source_pdf_url: https://peraturan.go.id/files/uu14-2013bt.pdf
+bpk:
+  id: 38865
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28221/UU%20Nomor%2014%20Tahun%202013.pdf
+    bpk_file_id: 28221
+    filename: UU Nomor 14 Tahun 2013.pdf
+    sha256: 997b349d19e904153344cb464ed183bc9b4cf288017104d1c5793d52559ff41f
+    bytes: 305989
+    archive_url: https://archive.org/download/uu_14_2013/uu_14_2013_2013-05-11.pdf
+  status_peraturan:
+    Mengubah:
+    - id: uu_56_2008
+      citation: UU No. 56 Tahun 2008
+      tentang: Pembentukan Kabupaten Tambrauw di Provinsi Papua Barat
+      url: https://peraturan.bpk.go.id/Details/39764/uu-no-56-tahun-2008
+      note: null
+uji_materi: null

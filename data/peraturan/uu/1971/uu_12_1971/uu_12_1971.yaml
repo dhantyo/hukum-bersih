@@ -11,12 +11,12 @@ tentang: PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 1 TAHUN 19
   CEK KOSONG MENJADI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1971-10-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1971
-source_pdf_url: https://peraturan.go.id/files/UU0121971.pdf
+source_url: https://peraturan.bpk.go.id/Details/47608/uu-no-12-tahun-1971
+source_pdf_url: https://peraturan.bpk.go.id/Download/36601/UU%20Nomor%2012%20Tahun%201971.pdf
 relationships:
   amends: []
   amended_by: []
@@ -35,3 +35,24 @@ versions:
   text: uu_12_1971_1971.txt
   pasal_count: 2
 pdf_sha256: d51b5437a9c056e8a38d3945b99ffa4af1d17f94d2ace1ead6b0baa32b91db91
+tanggal_pengundangan: '1971-10-16'
+tanggal_berlaku: '1971-10-16'
+lembaran_negara: 'LN. 1971, LL SETNEG : 2 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1971
+  source_pdf_url: https://peraturan.go.id/files/UU0121971.pdf
+bpk:
+  id: 47608
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36601/UU%20Nomor%2012%20Tahun%201971.pdf
+    bpk_file_id: 36601
+    filename: UU Nomor 12 Tahun 1971.pdf
+  status_peraturan:
+    Mencabut:
+    - id: uu_17_1964
+      citation: UU No. 17 Tahun 1964
+      tentang: Larangan Penarikan Cek Kosong
+      url: https://peraturan.bpk.go.id/Details/50327/uu-no-17-tahun-1964
+      note: null
+uji_materi: null

@@ -10,12 +10,12 @@ tentang: PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG UNDANG NO. 5 TAHUN 1963
   SURAT HUTANG LANDREFORM (LEMBARAN NEGARA TAHUN 1963 NO. 63) MENJADI UNDANG UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1964-06-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DR. J. LEIMENA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0061964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50247/uu-no-6-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39527/UU%20Nomor%206%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
@@ -27,3 +27,27 @@ relationships:
 versions: []
 pdf_sha256: b8389f70602b796e93e6231d925c5341b2722cc8cabf5817b16c0cedce82f4ba
 pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-06-16'
+tanggal_berlaku: '1963-06-22'
+lembaran_negara: 'LN. 1964/ No. 61 , TLN NO. 2659 , LL SETNEG : 8 HLM'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0061964.pdf
+bpk:
+  id: 50247
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39527/UU%20Nomor%206%20Tahun%201964.pdf
+    bpk_file_id: 39527
+    filename: UU Nomor 6 Tahun 1964.pdf
+    sha256: b8389f70602b796e93e6231d925c5341b2722cc8cabf5817b16c0cedce82f4ba
+    bytes: 85924
+    archive_url: https://archive.org/download/uu_6_1964/uu_6_1964_1964-06-16.pdf
+  status_peraturan:
+    Menetapkan:
+    - id: perppu_5_1963
+      citation: PERPU No. 5 Tahun 1963
+      tentang: Surat Hutang Landreform
+      url: https://peraturan.bpk.go.id/Details/53736/perpu-no-5-tahun-1963
+      note: null
+uji_materi: null

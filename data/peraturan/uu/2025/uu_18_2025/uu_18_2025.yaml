@@ -12,8 +12,8 @@ tanggal_penetapan: '2025-10-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-2025
-source_pdf_url: https://peraturan.go.id/files/uu-no-18-tahun-2025.pdf
+source_url: https://peraturan.bpk.go.id/Details/334481/uu-no-18-tahun-2025
+source_pdf_url: https://peraturan.bpk.go.id/Download/397044/UU%20Nomor%2018%20Tahun%202025.pdf
 relationships:
   amends:
   - id: uu_10_2009
@@ -101,3 +101,38 @@ versions:
   text: uu_18_2025_2025-10-29.txt
   pasal_count: 4
 pdf_sha256: eec25171d5e457dbdfaf8ac8aa4bf945c3a81382f463c85afbfc5356a1644194
+tanggal_pengundangan: '2025-10-29'
+tanggal_berlaku: '2025-10-29'
+lembaran_negara: 'LN 2025 (180), TLN (7145) : 35 hlm.; jdih.setneg.go.id'
+subjek: PARIWISATA DAN KEBUDAYAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-2025
+  source_pdf_url: https://peraturan.go.id/files/uu-no-18-tahun-2025.pdf
+bpk:
+  id: 334481
+  files:
+  - url: https://peraturan.bpk.go.id/Download/397044/UU%20Nomor%2018%20Tahun%202025.pdf
+    bpk_file_id: 397044
+    filename: UU Nomor 18 Tahun 2025.pdf
+    sha256: eec25171d5e457dbdfaf8ac8aa4bf945c3a81382f463c85afbfc5356a1644194
+    bytes: 3351210
+    archive_url: https://archive.org/download/uu_18_2025/uu_18_2025_2025-10-29.pdf
+  status_peraturan:
+    Mengubah:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    - id: uu_10_2009
+      citation: UU No. 10 Tahun 2009
+      tentang: Kepariwisataan
+      url: https://peraturan.bpk.go.id/Details/38598/uu-no-10-tahun-2009
+      note: null
+uji_materi: null

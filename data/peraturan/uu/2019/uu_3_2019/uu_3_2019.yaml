@@ -18,8 +18,8 @@ tanggal_penetapan: '2019-01-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-2019
-source_pdf_url: https://peraturan.go.id/files/uu3-2019bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/101004/uu-no-3-tahun-2019
+source_pdf_url: https://peraturan.bpk.go.id/Download/91618/UU%20Nomor%203%20Tahun%202019.pdf
 relationships:
   amends: []
   amended_by: []
@@ -36,3 +36,27 @@ versions:
   text: uu_3_2019_2019-01-10.txt
   pasal_count: 2
 pdf_sha256: 3ae9a6f2fe473949886c646a2cd01559fe13da96e819eb4e86da0135df465b49
+tanggal_pengundangan: '2019-01-10'
+tanggal_berlaku: '2019-01-10'
+lembaran_negara: 'LN.2019/NO.6, TLN NO.6301, LL SETKAB : 4 HLM.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-2019
+  source_pdf_url: https://peraturan.go.id/files/uu3-2019bt.pdf
+bpk:
+  id: 101004
+  files:
+  - url: https://peraturan.bpk.go.id/Download/91618/UU%20Nomor%203%20Tahun%202019.pdf
+    bpk_file_id: 91618
+    filename: UU Nomor 3 Tahun 2019.pdf
+    sha256: ae7d6e2775be73f2c21caa0540cf26d513efa289f5d47b52bbc2b348ca55e735
+    bytes: 295402
+    archive_url: https://archive.org/download/uu_3_2019/uu_3_2019_2019-01-10.pdf
+  - url: https://peraturan.bpk.go.id/Download/91619/UU%20Nomor%203%20Tahun%202019%20-%20Salinan%20Kesepahaman.pdf
+    bpk_file_id: 91619
+    filename: UU Nomor 3 Tahun 2019 - Salinan Kesepahaman.pdf
+    sha256: b0631b5c137694004f54a40f49594ad3366354df66b7c7e3d3866b4b3f9a405a
+    bytes: 13329347
+    archive_url: https://archive.org/download/uu_3_2019/uu_3_2019_2019-01-10_2.pdf
+  status_peraturan: null
+uji_materi: null

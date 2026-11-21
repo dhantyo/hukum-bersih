@@ -6,13 +6,13 @@ year: 1947
 title: Undang-Undang Nomor 16 Tahun 1947 tentang Pembentukan Haminte-Kota Surakarta
 tentang: PEMBENTUKAN HAMINTE-KOTA SURAKARTA
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1947-06-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-1947
-source_pdf_url: https://peraturan.go.id/files/uu16-1947.pdf
+source_url: https://peraturan.bpk.go.id/Details/25473/uu-no-16-tahun-1947
+source_pdf_url: https://peraturan.bpk.go.id/Download/14267/UU%20Nomor%2016%20Tahun%201947.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,3 +23,25 @@ relationships:
 versions: []
 pdf_sha256: 5e2dca41c0689803b860305993d6b5592ab95d01741c1151df27e9d7c0c29a6a
 pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1947-06-05'
+tanggal_berlaku: '1947-06-05'
+lembaran_negara: 'LL SETNEG : 3 HLM.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-1947
+  source_pdf_url: https://peraturan.go.id/files/uu16-1947.pdf
+bpk:
+  id: 25473
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14267/UU%20Nomor%2016%20Tahun%201947.pdf
+    bpk_file_id: 14267
+    filename: UU Nomor 16 Tahun 1947.pdf
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_16_1950
+      citation: UU No. 16 Tahun 1950
+      tentang: Pembentukan Daerah-Daerah Kota Besar Dalam Lingkungan Propinsi Jawa
+        Timur, Jawa Tengah, Jawa Barat Dan Daerah Istimewa Yogyakarta
+      url: https://peraturan.bpk.go.id/Details/47963/uu-no-16-tahun-1950
+      note: null
+uji_materi: null

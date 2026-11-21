@@ -12,8 +12,8 @@ tanggal_penetapan: '2001-11-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-2001
-source_pdf_url: https://peraturan.go.id/files/uu19-2001.pdf
+source_url: https://peraturan.bpk.go.id/Details/44899/uu-no-19-tahun-2001
+source_pdf_url: https://peraturan.bpk.go.id/Download/33262/UU%20Nomor%2019%20Tahun%202001.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,3 +30,28 @@ versions:
   text: uu_19_2001_2001-11-14.txt
   pasal_count: 17
 pdf_sha256: 3c47943688b74d314df9852d5c949d778a9d0afe7c692d83c872ae9a745403b3
+tanggal_pengundangan: '2001-11-14'
+tanggal_berlaku: '2002-01-01'
+lembaran_negara: 'LN. 2001/ No. 133, TLN NO. 4149, LL SETNEG : 12 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-2001
+  source_pdf_url: https://peraturan.go.id/files/uu19-2001.pdf
+bpk:
+  id: 44899
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33262/UU%20Nomor%2019%20Tahun%202001.pdf
+    bpk_file_id: 33262
+    filename: UU Nomor 19 Tahun 2001.pdf
+    sha256: 3c47943688b74d314df9852d5c949d778a9d0afe7c692d83c872ae9a745403b3
+    bytes: 124439
+    archive_url: https://archive.org/download/uu_19_2001/uu_19_2001_2001-11-14.pdf
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_21_2002
+      citation: UU No. 21 Tahun 2002
+      tentang: Perubahan Atas Undang-Undang Nomor 19 Tahun 2001 Tentang Anggaran Pendapatan
+        Dan Belanja Negara Tahun Anggaran 2002
+      url: https://peraturan.bpk.go.id/Details/44470/uu-no-21-tahun-2002
+      note: null
+uji_materi: null
