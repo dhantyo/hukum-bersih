@@ -21,9 +21,9 @@ const range = (arts: AknNode[]) =>
       return (
         <li>
           <a href={`#${c.eId}`}>
-            <span class="toc-label">BAB {c.num}</span>
-            <span class="toc-title">{c.heading}</span>
-            <span class="toc-range">{range(arts)}</span>
+            <span class="toc-label">BAB {c.num}</span>{" "}
+            {c.heading && <><span class="toc-title">{c.heading}</span>{" "}</>}
+            {range(arts) && <span class="toc-range">{range(arts)}</span>}
           </a>
         </li>
       );
@@ -41,7 +41,14 @@ const range = (arts: AknNode[]) =>
     for (const e of entries) {
       if (!e.isIntersecting) continue;
       links.forEach((a) => a.removeAttribute("aria-current"));
-      links.get(e.target.id)?.setAttribute("aria-current", "true");
+      const link = links.get(e.target.id);
+      link?.setAttribute("aria-current", "true");
+      // keep the current chapter visible in the sticky side panel (wide screens)
+      const pane = link?.closest<HTMLElement>(".panel");
+      if (link && pane && getComputedStyle(pane).position === "sticky" && pane.scrollHeight > pane.clientHeight) {
+        const l = link.getBoundingClientRect(), p = pane.getBoundingClientRect();
+        if (l.top < p.top || l.bottom > p.bottom) pane.scrollTop += l.top - p.top - p.height / 3;
+      }
     }
   }, { rootMargin: "0px 0px -70% 0px" });
   links.forEach((_, id) => { const el = document.getElementById(id); if (el) obs.observe(el); });

@@ -52,12 +52,13 @@ No brand red: in this product red means "deleted". No gradients.
 | `--fs-xl` | 26px / 1.25 | page titles on small screens |
 | `--fs-2xl` | 32px / 1.2 | page titles (h1) |
 
-Weights: 400 text, 600 headings and labels, 700 only for the site name.
+Weights: 400 text, 600 headings and labels, 700 only for the site name (`--fs-lg`).
 
 ## Spacing and layout
 
 4px base: `--s-1` 4, `--s-2` 8, `--s-3` 12, `--s-4` 16, `--s-5` 24, `--s-6` 32, `--s-7` 48,
-`--s-8` 64. Page width 72rem; reading column 42rem; side panel 17rem. Phone gutter 16px.
+`--s-8` 64; `--s-0` 2 only for the vertical padding of pills. `--tap` 44px: minimum size of
+anything tapped (buttons, the "Aa" control). Page width 72rem; reading column 42rem; side panel 17rem. Phone gutter 16px.
 
 Document pages: breadcrumbs, title block, then two columns: side panel (status, facts, versions,
 table of contents; sticky) and the text. Below 960px the panel comes first, collapsed.

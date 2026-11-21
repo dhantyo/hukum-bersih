@@ -37,7 +37,7 @@ const changesHref = perubahanHref ?? riwayatHref;
       </p>
     ) : (
       <p>
-        Menurut <a href={r.source_url}>peraturan.go.id</a>, statusnya {r.status === "dicabut" ? "dicabut" : "tidak berlaku"}.
+        Menurut <a href={r.source_url}>{new URL(r.source_url).hostname}</a>, statusnya {r.status === "dicabut" ? "dicabut" : "tidak berlaku"}.
         {hasText && " Teks di bawah ini disimpan sebagai arsip sejarah."}
       </p>
     )}
@@ -55,8 +55,8 @@ const changesHref = perubahanHref ?? riwayatHref;
 
 <style>
   .status-banner {
-    max-width: var(--measure); border: 1px solid var(--line); border-left-width: 4px;
-    border-radius: var(--r-sm); padding: var(--s-3) var(--s-4); margin-bottom: var(--s-5);
+    max-width: var(--measure); border: 1px solid var(--line);
+    border-radius: var(--r-md); padding: var(--s-3) var(--s-4); margin-bottom: var(--s-5);
   }
   .status-banner.gone { border-color: var(--gone); }
   .status-banner.changed { border-color: var(--warn); }

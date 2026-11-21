@@ -30,8 +30,10 @@
   --fs-xl: 1.625rem;
   --fs-2xl: 2rem;
 
+  --s-0: 0.125rem; /* hairline: vertical padding of pills */
   --s-1: 0.25rem; --s-2: 0.5rem; --s-3: 0.75rem; --s-4: 1rem;
   --s-5: 1.5rem; --s-6: 2rem; --s-7: 3rem; --s-8: 4rem;
+  --tap: 2.75rem;  /* minimum touch target, 44px */
   --page: 72rem;
   --measure: 42rem;
   --panel: 17rem;

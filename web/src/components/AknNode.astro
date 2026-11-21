@@ -27,7 +27,7 @@ const id = node.eId ? (penjelasan ? `penjelasan-${node.eId}` : node.eId) : undef
   </section>
 ) : isHeadingBlock ? (
   <section class={`akn-${node.tag}`} id={id}>
-    <h2>{node.tag === "part" && penjelasan ? node.num : label}{node.heading && <span class="sub">{node.heading}</span>}</h2>
+    <h2>{node.tag === "part" && penjelasan ? node.num : label}{node.heading && <>{" "}<span class="sub">{node.heading}</span></>}</h2>
     {node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} notes={notes} aliases={aliases} />)}
   </section>
 ) : node.num ? (

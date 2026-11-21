@@ -7,8 +7,10 @@ interface Props {
   eyebrow?: string;
   title: string;
   subtitle?: string;
+  /** Label of the folded side panel on phones. */
+  panelLabel?: string;
 }
-const { crumbs, eyebrow, title, subtitle } = Astro.props;
+const { crumbs, eyebrow, title, subtitle, panelLabel = "Keterangan dan daftar isi" } = Astro.props;
 ---
 <nav class="breadcrumbs" aria-label="Lokasi">
   {crumbs.map((c, k) => (
@@ -27,7 +29,7 @@ const { crumbs, eyebrow, title, subtitle } = Astro.props;
 <div class="doc">
   <aside class="panel" aria-label="Keterangan" data-pagefind-ignore>
     <details class="panel-fold" open>
-      <summary>Keterangan dan daftar isi</summary>
+      <summary>{panelLabel}</summary>
       <slot name="panel" />
     </details>
   </aside>

@@ -210,17 +210,17 @@ const { data } = Astro.props;
   .slots { display: contents; list-style: none; }
   .vc :global(.slot) {
     display: flex; align-items: center; gap: var(--s-1); padding: var(--s-1); background: var(--bg);
-    border: 1px solid var(--line); border-radius: var(--r-sm); min-height: 2.75rem;
+    border: 1px solid var(--line); border-radius: var(--r-sm); min-height: var(--tap);
   }
   .vc :global(.slot.dragging) { opacity: 0.5; }
   .vc :global(.slot.over) { border-color: var(--primary); }
   .vc :global(.grip) { cursor: grab; color: var(--text-muted); padding: 0 var(--s-1); user-select: none; line-height: 2rem; }
   .vc :global(.grip:focus-visible) { outline: 2px solid var(--primary); border-radius: var(--r-sm); }
   .vc :global(.slot select) { font: inherit; font-size: var(--fs-sm); border: 0; background: transparent; color: var(--text); min-height: 2rem; max-width: 15rem; }
-  .vc :global(.rm) { border: 0; background: none; color: var(--text-muted); font-size: 1.1rem; width: 2rem; height: 2rem; cursor: pointer; border-radius: var(--r-sm); }
+  .vc :global(.rm) { border: 0; background: none; color: var(--text-muted); font-size: var(--fs-lg); width: var(--tap); height: var(--tap); cursor: pointer; border-radius: var(--r-sm); }
   .vc :global(.rm:hover:not(:disabled)) { background: var(--del-bg); color: var(--del-text); }
   .vc :global(.rm:disabled) { opacity: 0.3; cursor: default; }
-  .add { font: inherit; font-size: var(--fs-sm); font-weight: 600; color: var(--primary); background: none; border: 1px dashed var(--primary); border-radius: var(--r-sm); min-height: 2.75rem; padding: 0 var(--s-3); cursor: pointer; }
+  .add { font: inherit; font-size: var(--fs-sm); font-weight: 600; color: var(--primary); background: none; border: 1px dashed var(--primary); border-radius: var(--r-sm); min-height: var(--tap); padding: 0 var(--s-3); cursor: pointer; }
   .add:disabled { opacity: 0.4; cursor: default; }
   .tools { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--s-2) var(--s-4); align-items: center; margin: var(--s-3) 0; }
   .presets { display: flex; flex-wrap: wrap; gap: var(--s-2); align-items: center; }
@@ -228,7 +228,7 @@ const { data } = Astro.props;
   .presets button:hover { border-color: var(--primary); color: var(--primary); }
   .find { display: flex; gap: var(--s-2); align-items: center; }
   .find input { font: inherit; padding: var(--s-1) var(--s-2); border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--bg); color: var(--text); width: 9rem; }
-  .gapnote { border-left: 3px solid var(--warn); background: var(--bg-subtle); padding: var(--s-2) var(--s-3); max-width: var(--measure); }
+  .gapnote { border: 1px solid var(--warn); border-radius: var(--r-md); padding: var(--s-2) var(--s-3); max-width: var(--measure); }
 
   .grid { overflow-x: auto; }
   .vc :global(.row) { display: grid; grid-template-columns: repeat(var(--cols), minmax(17rem, 1fr)); column-gap: var(--s-4); padding: var(--s-3) 0; border-bottom: 1px solid var(--line); }

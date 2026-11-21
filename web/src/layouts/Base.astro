@@ -9,8 +9,10 @@ interface Props {
   noindex?: boolean;
   /** Which main section is current: "peraturan" | "ruu" | "tentang". */
   section?: string;
+  /** Show the search field in the header (off on the home page, which has its own). */
+  search?: boolean;
 }
-const { title, description, noindex = false, section } = Astro.props;
+const { title, description, noindex = false, section, search = true } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const nav = [
   { key: "peraturan", href: `${base}uu/`, label: "Peraturan" },
@@ -39,17 +41,19 @@ const nav = [
   <body>
     <a class="skip" href="#main">Langsung ke isi</a>
     <header class="site">
-      <div class="wrap bar">
+      <div class={`wrap bar${search ? "" : " no-search"}`}>
         <a class="brand" href={base}>Hukum Bersih</a>
         <nav aria-label="Utama">
           {nav.map((n) => (
             <a href={n.href} aria-current={section === n.key ? "page" : undefined}>{n.label}</a>
           ))}
         </nav>
-        <form class="search" action={`${base}cari/`} method="get" role="search">
-          <label class="visually-hidden" for="q">Cari peraturan</label>
-          <input id="q" name="q" type="search" placeholder="Cari undang-undang, pasal, kata…" autocomplete="off" />
-        </form>
+        {search && (
+          <form class="search" action={`${base}cari/`} method="get" role="search">
+            <label class="visually-hidden" for="q">Cari peraturan</label>
+            <input id="q" name="q" type="search" placeholder="Cari undang-undang, pasal, kata…" autocomplete="off" />
+          </form>
+        )}
         <ReadingSettings />
       </div>
     </header>
@@ -79,12 +83,14 @@ const nav = [
   .skip:focus { left: var(--s-4); top: var(--s-2); background: var(--bg); padding: var(--s-2); z-index: 10; }
   header.site { border-bottom: 1px solid var(--line); background: var(--bg); }
   .bar { display: flex; align-items: center; gap: var(--s-5); min-height: 4rem; flex-wrap: wrap; }
-  .brand { font-weight: 700; font-size: 1.125rem; color: var(--text); text-decoration: none; letter-spacing: -0.01em; }
+  .brand { font-weight: 700; font-size: var(--fs-lg); color: var(--text); text-decoration: none; letter-spacing: -0.01em; }
   nav { display: flex; gap: var(--s-4); }
   nav a { color: var(--text); text-decoration: none; font-weight: 500; padding: var(--s-1) 0; border-bottom: 2px solid transparent; }
   nav a:hover { border-bottom-color: var(--line); }
   nav a[aria-current="page"] { border-bottom-color: var(--primary); color: var(--primary); }
   .search { margin-left: auto; flex: 0 1 20rem; }
+  /* no search field (home page): the reading settings move to the right edge */
+  .no-search :global(.reading) { margin-left: auto; }
   .bar { column-gap: var(--s-3); }
   nav { margin-right: var(--s-3); }
   .search input {
@@ -96,9 +102,14 @@ const nav = [
   footer.site { margin-top: var(--s-8); border-top: 1px solid var(--line); background: var(--bg-subtle); }
   footer.site .wrap { padding-top: var(--s-6); padding-bottom: var(--s-7); max-width: var(--page); }
   footer.site p { font-size: var(--fs-sm); color: var(--text-muted); max-width: var(--measure); }
-  @media (max-width: 640px) {
-    .bar { gap: var(--s-3); padding-top: var(--s-3); padding-bottom: var(--s-3); }
+  /* tablets and phones: the search field takes its own full row, with "Aa" beside it */
+  @media (max-width: 960px) {
+    .bar { row-gap: var(--s-3); padding-top: var(--s-3); padding-bottom: var(--s-3); }
     .search { flex: 1 1 calc(100% - 4rem); margin-left: 0; order: 3; }
     .bar :global(.reading) { order: 4; }
+  }
+  @media (max-width: 640px) {
+    .bar { gap: var(--s-2) var(--s-3); }
+    .brand { flex-basis: 100%; }
   }
 </style>
