@@ -9,7 +9,7 @@ import RelationsBanner from "../../../components/RelationsBanner.astro";
 import { tanggal } from "../../../lib/labels.ts";
 import { amendmentSteps, shortName } from "../../../lib/amendments.ts";
 import { koleksiOf, koleksiPath } from "../../../lib/koleksi.ts";
-import { amendmentCount, citeId, lawPath, loadRegulations, loadRegulationText, pasalNotes, pathOf, shortCite, STATUS_LABEL, type Regulation } from "../../../lib/peraturan.ts";
+import { amendmentCount, citeId, lawPath, loadRegulations, loadRegulationText, pasalNotes, pathOf, shortCite, sourceName, STATUS_LABEL, type Regulation } from "../../../lib/peraturan.ts";
 
 export function getStaticPaths() {
   return loadRegulations().filter((r) => r.type === "uu").map((r) => ({
@@ -57,7 +57,7 @@ const koleksi = koleksiOf(r.id);
         { label: "Pemrakarsa", value: r.pemrakarsa },
       ]} />
       <Facts title="Sumber" facts={[
-        { label: "Halaman resmi", value: "peraturan.go.id", href: r.source_url },
+        { label: "Halaman resmi", value: sourceName(r.source_url), href: r.source_url },
         { label: "PDF resmi", value: "Unduh PDF", href: r.source_pdf_url ?? undefined },
         { label: "Salinan arsip", value: r.archive_url ? "archive.org" : null, href: r.archive_url },
       ]} />

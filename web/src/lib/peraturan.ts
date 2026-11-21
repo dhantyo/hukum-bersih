@@ -57,6 +57,21 @@ export const JENIS: Record<string, { name: string; short: string }> = {
   perpres: { name: "Peraturan Presiden", short: "Perpres" },
 };
 
+// Official sites we take regulations from, by host: how to name them to readers.
+export const SOURCES: Record<string, { name: string; owner: string }> = {
+  "peraturan.bpk.go.id": { name: "JDIH BPK", owner: "Badan Pemeriksa Keuangan" },
+  "peraturan.go.id": {
+    name: "peraturan.go.id",
+    owner: "Direktorat Jenderal Peraturan Perundang-undangan, Kementerian Hukum",
+  },
+};
+
+export const sourceHost = (url: string | null | undefined) => (url ? new URL(url).hostname : null);
+export const sourceName = (url: string | null | undefined) => {
+  const host = sourceHost(url);
+  return host ? (SOURCES[host]?.name ?? host) : null;
+};
+
 export const STATUS_LABEL: Record<string, string> = {
   berlaku: "Berlaku",
   diubah: "Diubah",

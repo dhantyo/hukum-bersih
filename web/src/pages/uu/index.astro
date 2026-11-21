@@ -1,10 +1,12 @@
 ---
 import Base from "../../layouts/Base.astro";
 import LawRows from "../../components/LawRows.astro";
-import { loadRegulations } from "../../lib/peraturan.ts";
+import { loadRegulations, SOURCES, sourceHost } from "../../lib/peraturan.ts";
 
 const base = import.meta.env.BASE_URL;
 const laws = loadRegulations().filter((r) => r.type === "uu");
+const hosts = [...new Set(laws.map((r) => sourceHost(r.source_url)).filter((h): h is string => !!h))]
+  .sort((a, b) => laws.filter((r) => sourceHost(r.source_url) === b).length - laws.filter((r) => sourceHost(r.source_url) === a).length);
 const withText = laws.filter((r) => r.versions.some((v) => v.text)).length;
 const counts = new Map<number, number>();
 for (const r of laws) counts.set(r.year, (counts.get(r.year) ?? 0) + 1);
@@ -17,7 +19,8 @@ for (const [y, n] of [...counts].sort((a, b) => b[0] - a[0])) {
 <Base noindex title="Undang-Undang" description="Semua undang-undang Republik Indonesia sebagai teks yang bersih dan mudah dibaca." section="peraturan">
   <h1>Undang-Undang</h1>
   <p class="lead">
-    {laws.length.toLocaleString("id-ID")} undang-undang dari <a href="https://peraturan.go.id">peraturan.go.id</a>,{" "}
+    {laws.length.toLocaleString("id-ID")} undang-undang dari{" "}
+    {hosts.map((h, i) => <>{i > 0 && " dan "}<a href={`https://${h}`}>{SOURCES[h]?.name ?? h}</a></>)},{" "}
     {withText.toLocaleString("id-ID")} di antaranya sudah tersedia sebagai teks. Sisanya berupa PDF hasil
     pindaian yang masih menunggu OCR.
   </p>
