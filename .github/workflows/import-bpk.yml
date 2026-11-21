@@ -29,9 +29,6 @@ on:
         description: "PDFs only: download and archive, leave texts alone"
         type: boolean
         default: false
-  push:
-    branches: ["claude/**", "!claude/determined-curie-rq2b0s"]   # not the default branch
-    paths: [".github/workflows/import-bpk.yml"]
 
 permissions:
   contents: write
@@ -46,9 +43,8 @@ jobs:
     timeout-minutes: 345
     env:
       JENIS: ${{ inputs.jenis || 'uu' }}
-      # a push to a claude/** branch is a test run: one small batch
-      BATCHES: ${{ github.event_name == 'push' && '1' || inputs.batches || '0' }}
-      BATCH: ${{ github.event_name == 'push' && '5' || '50' }}
+      BATCHES: ${{ inputs.batches || '0' }}
+      BATCH: "50"
       ONLY: ${{ inputs.only && format('--only={0}', inputs.only) || '' }}
       NO_TEXT: ${{ inputs.no_text && '--no-text' || '' }}
     steps:

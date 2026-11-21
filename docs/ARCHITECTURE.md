@@ -83,7 +83,7 @@ Names follow [NAMING.md](NAMING.md).
 | `fetch.yml` | manual | fetch + archive `id URL` pairs, commit manifest lines |
 | `archive-retitle.yml` | manual | rewrite archive.org titles/descriptions |
 | `archive-delete.yml` | manual | empty obsolete archive.org items |
-| `import-bpk.yml` | every 6 h + manual (+ test batch of 5 on push to `claude/**`) | import from peraturan.bpk.go.id in batches of 50: metadata, every PDF archived on archive.org as it is downloaded, text for records without one; resumes; recomputes relationships after each batch |
+| `import-bpk.yml` | manual (schedule paused 2026-11-21 until the parser is fixed; normally every 6 h); `only` + `no_text` inputs fetch chosen ids, PDFs only | import from peraturan.bpk.go.id in batches of 50: metadata, every PDF archived on archive.org as it is downloaded, text for records without one; resumes; recomputes relationships after each batch |
 | `import-peraturan.yml` | manual (schedule removed 2026-11-21) | import from peraturan.go.id (answers only Indonesian IPs: needs WG_INDONESIA) |
 | `archive-pending.yml` | manual (schedule removed 2026-11-21) | archive peraturan.go.id PDFs that were recorded but not archived (skips BPK ones) |
 | `probe-sources.yml` | manual | which sources a GitHub runner can reach |
