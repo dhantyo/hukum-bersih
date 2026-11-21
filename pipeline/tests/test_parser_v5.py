@@ -102,3 +102,34 @@ def test_page_turn_words_in_the_middle_of_a_pdf_page():           # UU 19/2001, 
     assert lines == ["teks a", "Pasal 15", "(1) Setelah", "teks b", "Ayat (4)", "Cukup jelas", "x", "teks"]
     # an ellipsis that announces nothing stays (it may be text)
     assert clean_lines([["dan seterusnya …", "Pasal 2", "x"]]) == ["dan seterusnya …", "Pasal 2", "x"]
+
+
+def test_amending_law_keeps_quoted_pasal_inside_pasal_i():          # UU 18/2025, UU 14/2013
+    doc = parse_lines(["Menimbang : a. bahwa x;", "Pasal I",
+                       "Beberapa ketentuan dalam Undang-Undang Nomor 10 Tahun 2009 diubah sebagai berikut:",
+                       "1. Ketentuan Pasal 1 diubah sehingga berbunyi sebagai berikut:",
+                       "Pasal 1", "Dalam Undang-Undang ini yang dimaksud dengan:",
+                       "2. Di antara BAB IV dan BAB V disisipkan 1 (satu) bab, yakni BAB IVA sehingga berbunyi:",
+                       "BAB IVA", "PARIWISATA BERKELANJUTAN", "Pasal 2", "isi",
+                       "Pasal II", "Undang-Undang ini mulai berlaku pada tanggal diundangkan."])
+    assert [b.label for b in kinds(doc, "pasal")] == ["Pasal I", "Pasal II"]
+    assert kinds(doc, "bab") == []
+    body = " ".join(b.text for b in doc.blocks)
+    assert "BAB IVA PARIWISATA BERKELANJUTAN Pasal 2 isi" in body
+
+
+def test_ocr_reads_pasal_i_as_pasal_1():                              # UU 18/2025 (scan)
+    doc = parse_lines(["UNDANG-UNDANG NOMOR 18 TAHUN 2025 TENTANG PERUBAHAN KETIGA ATAS UNDANG-UNDANG",
+                       "Menimbang : a. bahwa x;", "Pasal 1",
+                       "Beberapa ketentuan dalam Undang-Undang Nomor 10 Tahun 2009 diubah sebagai berikut:",
+                       "1. Ketentuan Pasal 1 diubah sehingga berbunyi sebagai berikut:", "Pasal 1", "isi",
+                       "Pasal II", "Undang-Undang ini mulai berlaku."])
+    assert [b.label for b in kinds(doc, "pasal")] == ["Pasal I", "Pasal II"]
+    assert any("Pasal I" in w for w in doc.warnings)
+
+
+def test_crest_fragments_above_the_header_only():                  # UU 18/2025 (scan)
+    assert _clean_page(["Pas", "4", "£", "(53", "PRESIDEN", "REPUBLIK INDONESIA", "-3-", "PasalI", "x."],
+                       first_page=False) == ["PasalI", "x."]
+    assert _clean_page(["1.", "Propinsi Kalimantan-Barat, yang", "teks"], first_page=False) == [
+        "1.", "Propinsi Kalimantan-Barat, yang", "teks"]

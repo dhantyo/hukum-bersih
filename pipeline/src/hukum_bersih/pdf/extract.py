@@ -122,6 +122,11 @@ def rows(words: list[tuple]) -> list[str]:
 def _clean_page(raw: list[str], first_page: bool) -> list[str]:
     lines = [NOISE_RE.sub("", re.sub(r"\s+", " ", ln).strip()) for ln in raw]
     lines = [ln for ln in lines if ln]
+    # OCR fragments of the crest ("Pas", "4", "£") stand above the running header: drop short
+    # bits there, and only there (a real page can start with a short line such as "1.")
+    head = next((k for k, ln in enumerate(lines[:HEADER_ZONE + 4]) if RUNNING_HEADER_RE.match(ln)), 0)
+    lines = [ln for k, ln in enumerate(lines)
+             if not (k < head and (len(ln) <= 4 or sum(c.isalpha() for c in ln) < 3))]
     # header zone: page numbers, running header, SALINAN stamp, DPR signature boxes
     out: list[str] = []
     in_header = True
@@ -133,8 +138,8 @@ def _clean_page(raw: list[str], first_page: bool) -> list[str]:
             # on page 1 the title block legitimately starts with "PRESIDEN REPUBLIK INDONESIA"
             if not first_page and RUNNING_HEADER_RE.match(ln):
                 continue
-            if first_page and (ln.upper().endswith("SALINAN") or len(ln) <= 3):
-                continue                                 # stamp, OCR fragments of the crest
+            if first_page and ln.upper().endswith("SALINAN"):
+                continue                                 # stamp
             in_header = False
         out.append(ln)
     # footer zone: trailing page numbers, lone dashes of a split "- 3 -", page-turn words

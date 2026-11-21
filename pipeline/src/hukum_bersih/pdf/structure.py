@@ -127,7 +127,7 @@ def normalise(lines: list[str]) -> list[str]:
             continue
         if m := HEAD_DOT_RE.match(line):
             line = m[1]
-        if m := re.match(r"^PASAL\s+(\d+[A-Z]?|[IVXLC]+)$", line):
+        if m := re.match(r"^(?:PASAL|Pasal)\s*(\d+[A-Z]?|[IVXLC]+)$", line):   # OCR: "PasalI"
             line = f"Pasal {m[1]}"
         out.append(line)
     return out
@@ -154,6 +154,9 @@ class Parser:
         self.lists: list[list] = []
         self.in_penjelasan = False
         self.p_last_pasal = 0
+        # An amending law's own articles are Pasal I, II …; inside Pasal I it quotes the new
+        # wording of the amended law ("Pasal 4", "BAB IVA" …), which is content, not structure.
+        self.amending = False
 
     # helpers --------------------------------------------------------------
     def emit(self, block: Block) -> Block:
@@ -228,6 +231,12 @@ class Parser:
                 break
         return " ".join(parts), j - i
 
+    def reads_as_amending(self, i: int) -> bool:
+        title = " ".join(b.text for b in self.doc.blocks if b.kind == "title").upper()
+        nxt = " ".join(self.lines[i + 1:i + 3])
+        return "PERUBAHAN" in title and bool(re.match(
+            r"^(Beberapa ketentuan|Ketentuan .{0,80}diubah|Undang-Undang Nomor .{0,200}diubah)", nxt))
+
     def title_follows(self, i: int) -> bool:
         nxt = self.lines[i + 1] if i + 1 < len(self.lines) else ""
         return bool(nxt) and is_caps(nxt) and not PASAL_RE.match(nxt)
@@ -254,6 +263,10 @@ class Parser:
         if self.in_penjelasan:
             return self.step_penjelasan(line)
 
+        if self.amending and (BAB_RE.match(line) or BAGIAN_RE.match(line) or PARAGRAF_RE.match(line)
+                              or (PASAL_RE.match(line) and PASAL_RE.match(line)[1][0].isdigit())):
+            self.append(line)
+            return 1
         if m := BAB_RE.match(line):
             n = heading_number(m[1])
             if n == self.last_bab + 1 or (n == self.last_bab and self.title_follows(i)):
@@ -271,9 +284,14 @@ class Parser:
             return used
         if m := PASAL_RE.match(line):
             num = m[1]
+            if num == "1" and not self.last_pasal and self.reads_as_amending(i):
+                num = "I"                                # OCR reads the Roman I of Pasal I as 1
+                self.doc.warnings.append("'Pasal 1' read as 'Pasal I' (amending law, OCR)")
             n = int(re.match(r"\d+", num)[0]) if num[0].isdigit() else roman(num)
             # anything else is a cross-reference that happens to start a wrapped line
             if n == self.last_pasal + 1 or (num[-1].isalpha() and n == self.last_pasal):
+                if n == 1 and not num[0].isdigit() and not self.last_bab:
+                    self.amending = True
                 self.last_pasal = n
                 self.emit(Block("pasal", label=f"Pasal {num}"))
                 self.reset_lists()

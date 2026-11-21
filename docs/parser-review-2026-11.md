@@ -64,6 +64,7 @@ PDFs), run with `uv run python scripts/regress.py` in `pipeline/`.
 | v4 | 9/15 | in 13 of 15 (UU 4/2009: 56 page-turn words; UU 2/1957, 19/1997: 33-34 page numbers) |
 | v5 (2026-11-21) | 14/15 | page-turn word left in 2 laws; "SK No" serial in 2 scans |
 | v6 (2026-11-21) | 18/19 (set extended with UU 30/1947, 16/1947, 12/1971, 31/1999) | none |
+| v7 (2026-11-21) | **19/19** | none |
 
 v5: printed lines rebuilt from word positions (BPK stores justified text one word per line);
 page-turn words at the foot of a page and split page numbers dropped (C, D); headings with a
@@ -82,3 +83,10 @@ v6: scanned pages (a picture covering the page) are read with our own OCR, Tesse
 UU 5/2026: no digit/letter confusions left (BPK's layer: '2OO2', '2O', 'l4l', 'REPUBUK'). About
 2.6 s per scanned page. Texts from OCR carry `ocr: true` on their version. Without Tesseract
 the parser falls back to the PDF's own layer and says so in its warnings.
+
+v7: amending laws. Once the first article is Pasal I (Roman), only Roman-numbered articles are
+the law's own; the quoted new wording ("Pasal 4", "BAB IVA" …) stays inside Pasal I, where
+amendments.py splits it (UU 18/2025: 54 instructions). OCR reads "Pasal I" as "Pasal 1" or
+"PasalI": a "Pasal 1" is read as Pasal I when the title says PERUBAHAN and the article starts
+"Beberapa ketentuan … diubah" (noted in the warnings). Crest fragments above the running
+header of OCR'd pages are dropped (only above the header).
