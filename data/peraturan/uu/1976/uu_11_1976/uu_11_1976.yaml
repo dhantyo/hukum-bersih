@@ -21,8 +21,10 @@ source_pdf_url: https://peraturan.go.id/files/uu11-1976.pdf
 relationships:
   amends: []
   amended_by: []
-  revokes: []
-  revoked_by: []
+  revokes:
+  - uu_10_1969
+  revoked_by:
+  - uu_11_1985
   enacts: []
   enacted_by: []
 versions:

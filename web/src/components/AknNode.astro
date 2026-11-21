@@ -17,7 +17,7 @@ const id = node.eId ? (penjelasan ? `penjelasan-${node.eId}` : node.eId) : undef
   <p class="akn-p" id={id}>{node.text}</p>
 ) : node.tag === "article" ? (
   <section class="akn-article" id={id}>
-    <h3><a href={`#${id}`}>{label}</a></h3>
+    <h3 id={id ? `${id}-h` : undefined}><a href={`#${id}`}>{label}</a></h3>
     {note && (
       <p class="akn-note">Diubah oleh {note.map((n, i) => <>{i > 0 && (i === note.length - 1 ? " dan " : ", ")}{n.href ? <a href={n.href}>{n.label}</a> : n.label}</>)}</p>
     )}

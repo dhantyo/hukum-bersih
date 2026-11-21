@@ -1,11 +1,12 @@
 ---
 // "Perubahan": every pasal an amended law's amendments changed, side by side (before -> after),
 // amendment by amendment. See lib/amendments.ts and docs/decisions/0008.
-import Base from "../../../../layouts/Base.astro";
-import SynRow from "../../../../components/SynRow.astro";
-import { amendmentSteps, hasAmendmentSteps, shortName, type PasalChange } from "../../../../lib/amendments.ts";
-import { tanggal } from "../../../../lib/labels.ts";
-import { citeId, loadRegulations, loadRegulationText, pathOf, shortCite, type Regulation } from "../../../../lib/peraturan.ts";
+import Base from "../../../../../layouts/Base.astro";
+import SynRow from "../../../../../components/SynRow.astro";
+import VersionCompare from "../../../../../components/VersionCompare.astro";
+import { amendmentSteps, compareData, hasAmendmentSteps, shortName, versionHistory, type PasalChange } from "../../../../../lib/amendments.ts";
+import { tanggal } from "../../../../../lib/labels.ts";
+import { citeId, loadRegulations, loadRegulationText, pathOf, shortCite, type Regulation } from "../../../../../lib/peraturan.ts";
 
 export function getStaticPaths() {
   return loadRegulations().filter((r) => r.type === "uu" && hasAmendmentSteps(r)).map((r) => ({
@@ -16,13 +17,14 @@ const { r } = Astro.props as { r: Regulation };
 const base = import.meta.env.BASE_URL;
 const doc = loadRegulationText(r);
 const steps = amendmentSteps(r, doc);
+const h = versionHistory(r, doc);
 const name = shortName(r) ?? shortCite(r);
 const ORDINAL = ["", "pertama", "kedua", "ketiga", "keempat", "kelima", "keenam", "ketujuh", "kedelapan", "kesembilan", "kesepuluh"];
 const LABEL: Record<PasalChange["kind"], string> = { diubah: "diubah", disisipkan: "pasal baru", dihapus: "dihapus" };
 const count = (s: (typeof steps)[number], k: PasalChange["kind"]) => s.changes.filter((c) => c.kind === k).length;
 const lawHref = (id: string) => (pathOf(id) ? `${base}${pathOf(id)}` : undefined);
 ---
-<Base title={`${name}: perubahan pasal demi pasal`} description={`Pasal-pasal ${shortCite(r)} yang diubah, sebelum dan sesudah tiap perubahan.`} section="peraturan">
+<Base noindex title={`${name}: perubahan pasal demi pasal`} description={`Pasal-pasal ${shortCite(r)} yang diubah, sebelum dan sesudah tiap perubahan.`} section="peraturan">
   <nav class="breadcrumbs" aria-label="Lokasi">
     <a href={`${base}uu/`}>Undang-Undang</a><span aria-hidden="true">›</span>
     <a href={`${base}uu/tahun/${r.year}/`}>{r.year}</a><span aria-hidden="true">›</span>
@@ -41,29 +43,26 @@ const lawHref = (id: string) => (pathOf(id) ? `${base}${pathOf(id)}` : undefined
     PDF resmi tiap undang-undang.
   </p>
 
-  <ol class="steps">
-    {steps.map((s) => (
-      <li>
-        <a href={`#${s.by.id}`}><strong>{citeId(s.by.id)}</strong></a>
-        <span class="muted small">perubahan {ORDINAL[s.order ?? 0] ?? s.order}{s.date ? `, ${tanggal(s.date)}` : ""}</span>
-        <span class="small">
-          {count(s, "diubah") > 0 && <span class="n">{count(s, "diubah")} diubah</span>}
-          {count(s, "disisipkan") > 0 && <span class="n">{count(s, "disisipkan")} baru</span>}
-          {count(s, "dihapus") > 0 && <span class="n">{count(s, "dihapus")} dihapus</span>}
-        </span>
-      </li>
-    ))}
-  </ol>
+  <VersionCompare data={compareData(h)} />
 
+  <h2 class="section">Per perubahan</h2>
   <label class="find small">Cari pasal <input type="search" id="find" inputmode="text" placeholder="mis. 27 atau 45A" autocomplete="off" /></label>
 
-  {steps.map((s) => (
-    <section class="step" id={s.by.id} aria-labelledby={`${s.by.id}-title`}>
-      <h2 id={`${s.by.id}-title`}>
-        {lawHref(s.by.id) ? <a href={lawHref(s.by.id)}>{citeId(s.by.id)}</a> : citeId(s.by.id)}
-        <span class="muted"> · perubahan {ORDINAL[s.order ?? 0] ?? s.order}</span>
-      </h2>
-      {s.date && <p class="muted small">Ditetapkan {tanggal(s.date)}</p>}
+  {steps.map((s, k) => (
+    <details class="step" id={s.by.id} open={k === 0}>
+      <summary>
+        <span class="title">
+          <strong>{citeId(s.by.id)}</strong>
+          <span class="muted"> · perubahan {ORDINAL[s.order ?? 0] ?? s.order}{s.date ? `, ${tanggal(s.date)}` : ""}</span>
+        </span>
+        <span class="counts small">
+          {count(s, "diubah") > 0 && <span><b class="diubah">{count(s, "diubah")}</b> diubah</span>}
+          {count(s, "disisipkan") > 0 && <span><b class="baru">{count(s, "disisipkan")}</b> baru</span>}
+          {count(s, "dihapus") > 0 && <span><b class="dihapus">{count(s, "dihapus")}</b> dihapus</span>}
+        </span>
+      </summary>
+      <div class="step-body">
+      {lawHref(s.by.id) && <p class="small"><a href={lawHref(s.by.id)}>Buka teks {citeId(s.by.id)}</a></p>}
       {s.gap > 0 && (
         <p class="notice small warn">
           Sebelum undang-undang ini ada {s.gap} perubahan lain yang belum dapat kami baca (misalnya
@@ -79,7 +78,10 @@ const lawHref = (id: string) => (pathOf(id) ? `${base}${pathOf(id)}` : undefined
             noneA={c.kind === "disisipkan" ? `Pasal ${c.num}: belum ada` : `Pasal ${c.num}: teks sebelumnya belum tersedia`}
             noneB={c.kind === "dihapus" ? `Pasal ${c.num} dihapus` : `Pasal ${c.num}: teks barunya belum terbaca dari PDF`}>
             <span slot="meta" class="tag">{s.gap > 0 && c.row.a ? "sebelum: bisa jadi bukan teks terakhir" : ""}</span>
-            <p class="instruction small">{c.instruction.n}. {c.instruction.header}</p>
+            {(h.changedIn.get(c.num)?.length ?? 0) > 1 && <a slot="meta" class="tag all" href={`?v=${h.versions.map((v) => v.id).join(",")}&pasal=${c.num}#banding`}>semua versi Pasal {c.num} ↑</a>}
+            {c.instruction.header.length > 160
+              ? <details class="instruction small"><summary>{c.instruction.n}. {c.instruction.header.slice(0, 140).replace(/\s+\S*$/, "")}…</summary>{c.instruction.header}</details>
+              : <p class="instruction small">{c.instruction.n}. {c.instruction.header}</p>}
           </SynRow>
         </div>
       ))}
@@ -89,15 +91,25 @@ const lawHref = (id: string) => (pathOf(id) ? `${base}${pathOf(id)}` : undefined
           <ol>{s.headerOnly.map((i) => <li value={i.n}>{i.header}</li>)}</ol>
         </details>
       )}
-    </section>
+      </div>
+    </details>
   ))}
 </Base>
 
 <script>
+  // a link to one pasal (#uu_3_2020-pasal-4) opens the amendment it is in
+  const openTarget = () => {
+    const el = location.hash ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null;
+    const d = el?.closest("details.step") as HTMLDetailsElement | null;
+    if (d && !d.open) { d.open = true; el!.scrollIntoView(); }
+  };
+  openTarget();
+  window.addEventListener("hashchange", openTarget);
   // "Cari pasal": show only the rows for that pasal number, in every amendment.
   const input = document.getElementById("find") as HTMLInputElement | null;
   input?.addEventListener("input", () => {
     const q = input.value.trim().toUpperCase().replace(/^PASAL\s*/, "");
+    if (q) document.querySelectorAll<HTMLDetailsElement>("details.step").forEach((d) => (d.open = true));
     document.querySelectorAll<HTMLElement>(".change").forEach((el) => {
       el.hidden = q !== "" && el.dataset.pasal?.toUpperCase() !== q;
     });
@@ -110,19 +122,30 @@ const lawHref = (id: string) => (pathOf(id) ? `${base}${pathOf(id)}` : undefined
   .lead { max-width: var(--measure); }
   .notice { background: var(--bg-subtle); border-left: 3px solid var(--line); padding: var(--s-3) var(--s-4); border-radius: var(--r-sm); max-width: var(--measure); }
   .notice.warn { border-left-color: var(--warn); }
-  .steps { list-style: none; padding: 0; margin: var(--s-5) 0; border-top: 1px solid var(--line); }
-  .steps li { display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s-3); align-items: baseline; padding: var(--s-2) 0; border-bottom: 1px solid var(--line); }
-  .steps .n { margin-right: var(--s-3); }
   .find { display: flex; gap: var(--s-2); align-items: center; margin: var(--s-4) 0; }
   .find input { padding: var(--s-1) var(--s-2); border: 1px solid var(--line); border-radius: var(--r-sm); font: inherit; background: var(--bg); color: var(--text); }
-  .step { margin-top: var(--s-7); scroll-margin-top: var(--s-4); }
-  .step h2 { margin-bottom: var(--s-1); }
+  .section { font-size: var(--fs-lg); margin: var(--s-6) 0 var(--s-3); }
+  .step { margin-top: var(--s-3); border: 1px solid var(--line); border-radius: var(--r-md); scroll-margin-top: var(--s-4); }
+  .step > summary {
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: var(--s-2) var(--s-4);
+    padding: var(--s-3) var(--s-4); cursor: pointer; list-style: none; background: var(--bg-subtle); border-radius: var(--r-md);
+  }
+  .step[open] > summary { border-bottom: 1px solid var(--line); border-radius: var(--r-md) var(--r-md) 0 0; }
+  .step > summary::-webkit-details-marker { display: none; }
+  .step > summary .title::before { content: "▸ "; color: var(--text-muted); }
+  .step[open] > summary .title::before { content: "▾ "; }
+  .counts { display: flex; gap: var(--s-4); }
+  .counts .diubah { color: var(--warn); } .counts .baru { color: var(--ok); } .counts .dihapus { color: var(--del-text); }
+  .step-body { padding: var(--s-2) var(--s-4) var(--s-4); }
+  .all { font-weight: 600; }
   .syn-head {
     display: grid; grid-template-columns: 1fr 1fr; column-gap: 1.5rem;
     position: sticky; top: 0; z-index: 1; background: var(--bg); padding: 0.6rem 0;
     border-bottom: 2px solid var(--line); font-weight: 700; font-size: 0.9rem;
   }
   .instruction { color: var(--text-muted); margin: 0 0 var(--s-2); max-width: var(--measure); }
+  details.instruction summary { cursor: pointer; }
+  details.instruction[open] summary { display: none; }
   .other { margin-top: var(--s-4); }
   .other ol { padding-left: var(--s-5); }
   @media (max-width: 760px) { .syn-head { display: none; } }

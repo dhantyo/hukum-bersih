@@ -3,7 +3,8 @@
 // then ayat by ayat, then word by word with Google's diff-match-patch and its semantic
 // cleanup, which merges scattered small edits into readable "old phrase -> new phrase" blocks.
 import { cleanupSemantic, DIFF_DELETE, DIFF_INSERT, makeDiff } from "@sanity/diff-match-patch";
-import { pasalText, type LawDoc, type Pasal, type PasalLine } from "./lawdoc.ts";
+import type { LawDoc } from "./lawdoc.ts";
+import { pasalText, type Pasal, type PasalLine } from "./lawtext.ts";
 
 type LineVectors = Map<PasalLine, Map<string, number>>;
 

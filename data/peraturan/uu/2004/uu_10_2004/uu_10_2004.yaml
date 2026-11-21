@@ -17,8 +17,10 @@ source_pdf_url: https://peraturan.go.id/files/uu10-2004.pdf
 relationships:
   amends: []
   amended_by: []
-  revokes: []
-  revoked_by: []
+  revokes:
+  - uu_2_1950
+  revoked_by:
+  - uu_12_2011
   enacts: []
   enacted_by: []
 versions:

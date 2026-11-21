@@ -16,8 +16,10 @@ source_pdf_url: https://peraturan.go.id/files/uu3-1989.pdf
 relationships:
   amends: []
   amended_by: []
-  revokes: []
-  revoked_by: []
+  revokes:
+  - uu_5_1964
+  revoked_by:
+  - uu_36_1999
   enacts: []
   enacted_by: []
 versions:

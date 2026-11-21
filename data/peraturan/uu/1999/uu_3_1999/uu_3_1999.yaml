@@ -18,8 +18,12 @@ source_pdf_url: https://peraturan.go.id/files/uu3-1999.pdf
 relationships:
   amends: []
   amended_by: []
-  revokes: []
-  revoked_by: []
+  revokes:
+  - uu_15_1969
+  - uu_4_1975
+  - uu_2_1980
+  revoked_by:
+  - uu_12_2003
   enacts: []
   enacted_by: []
 versions:

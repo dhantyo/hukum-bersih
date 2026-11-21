@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import ReadingSettings from "../components/ReadingSettings.astro";
 
 interface Props {
   title: string;
@@ -25,6 +26,14 @@ const nav = [
     <title>{title === "Beranda" ? "Hukum Bersih" : `${title} · Hukum Bersih`}</title>
     {description && <meta name="description" content={description} />}
     <meta name="color-scheme" content="light dark" />
+    <script is:inline>
+      // reader's font / size for law text (components/ReadingSettings.astro), before first paint
+      try {
+        var f = localStorage.getItem("hb-font"), z = localStorage.getItem("hb-size");
+        if (f && f !== "serif") document.documentElement.dataset.font = f;
+        if (z && z !== "normal") document.documentElement.dataset.size = z;
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <a class="skip" href="#main">Langsung ke isi</a>
@@ -40,6 +49,7 @@ const nav = [
           <label class="visually-hidden" for="q">Cari peraturan</label>
           <input id="q" name="q" type="search" placeholder="Cari undang-undang, pasal, kata…" autocomplete="off" />
         </form>
+        <ReadingSettings />
       </div>
     </header>
     <main id="main" class="wrap" data-pagefind-body={noindex ? undefined : true}>
@@ -74,6 +84,8 @@ const nav = [
   nav a:hover { border-bottom-color: var(--line); }
   nav a[aria-current="page"] { border-bottom-color: var(--primary); color: var(--primary); }
   .search { margin-left: auto; flex: 0 1 20rem; }
+  .bar { column-gap: var(--s-3); }
+  nav { margin-right: var(--s-3); }
   .search input {
     width: 100%; font: inherit; font-size: var(--fs-sm); color: var(--text);
     background: var(--bg-subtle); border: 1px solid var(--line); border-radius: var(--r-sm);
@@ -85,6 +97,7 @@ const nav = [
   footer.site p { font-size: var(--fs-sm); color: var(--text-muted); max-width: var(--measure); }
   @media (max-width: 640px) {
     .bar { gap: var(--s-3); padding-top: var(--s-3); padding-bottom: var(--s-3); }
-    .search { flex-basis: 100%; margin-left: 0; }
+    .search { flex: 1 1 calc(100% - 4rem); margin-left: 0; order: 3; }
+    .bar :global(.reading) { order: 4; }
   }
 </style>

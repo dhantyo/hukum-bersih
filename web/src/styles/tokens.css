@@ -17,7 +17,11 @@
   --del-text: #7f1d1d;
 
   --font-ui: "Public Sans Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-law: "Source Serif 4 Variable", Georgia, "Times New Roman", serif;
+  --font-law: var(--font-source-serif);
+  /* Reading fonts for law text, chosen by the reader (components/ReadingSettings.astro). */
+  --font-source-serif: "Source Serif 4 Variable", Georgia, "Times New Roman", serif;
+  --font-literata: "Literata Variable", Georgia, serif;
+  --font-atkinson: "Atkinson Hyperlegible Next Variable", system-ui, sans-serif;
   --fs-xs: 0.8125rem;
   --fs-sm: 0.90625rem;
   --fs-base: 1rem;
@@ -56,3 +60,9 @@
   --shadow-pop: 0 6px 24px rgb(0 0 0 / 0.5);
   color-scheme: dark;
 }
+
+/* Reader's choice of font and size for law text (set on <html> by ReadingSettings). */
+:root[data-font="literata"] { --font-law: var(--font-literata); }
+:root[data-font="sans"] { --font-law: var(--font-ui); }
+:root[data-font="atkinson"] { --font-law: var(--font-atkinson); }
+:root[data-size="large"] { --fs-law: 1.25rem; }

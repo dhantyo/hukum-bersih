@@ -10,7 +10,7 @@ const ruus = loadRuus();
 const laws = loadRegulations().filter((r) => r.type === "uu");
 const withText = laws.filter((r) => r.versions.some((v) => v.text)).length;
 ---
-<Base title="Beranda" description="Teks hukum Indonesia yang bersih dan mudah dibaca, serta pelacakan RUU beserta setiap versi drafnya.">
+<Base noindex title="Beranda" description="Teks hukum Indonesia yang bersih dan mudah dibaca, serta pelacakan RUU beserta setiap versi drafnya.">
   <section class="hero">
     <h1>Hukum Indonesia, mudah dibaca.</h1>
     <p class="lead">Teks undang-undang yang bersih dan bisa dicari, serta rancangan undang-undang beserta setiap versinya: dari mana asalnya, dan apa yang berubah.</p>

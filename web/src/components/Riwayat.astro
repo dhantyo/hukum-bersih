@@ -1,19 +1,21 @@
 ---
-// "Riwayat": the history of a law as a timeline: enactment, each amending law with the pasal it
-// changed (linked to those pasal in this text), revocation. Pattern from legislation.gov.uk
-// ("changes over time") and Fedlex ("Chronologie"); see docs/decisions/0008.
+// "Riwayat": the history of a law as a timeline: enactment, each amending law, revocation.
+// Each amendment is one line (who, when, how many pasal); the pasal themselves are in a
+// dropdown as number chips linked to the text. Amendments we know of only by ordinal
+// ("perubahan keempat" while we have two) get a dashed segment. Pattern from
+// legislation.gov.uk ("changes over time") and Fedlex ("Chronologie"); see docs/decisions/0008.
 import { tanggal } from "../lib/labels.ts";
 import type { LawDoc } from "../lib/lawdoc.ts";
-import { citeId, history, pathOf, type Regulation } from "../lib/peraturan.ts";
+import { citeId, history, lawPath, pathOf, type Changes, type Regulation } from "../lib/peraturan.ts";
 
 interface Props { r: Regulation; doc?: LawDoc; compared?: Set<string> }
 const { r, doc, compared = new Set() } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const events = history(r);
 const anchor = new Map((doc?.pasal ?? []).map((p) => [p.num, p.eId]));
-const ORDINAL = ["", "", "kedua", "ketiga", "keempat", "kelima", "keenam", "ketujuh", "kedelapan", "kesembilan", "kesepuluh"];
-const lawLink = (id: string) => pathOf(id);
-// Amendments named by ordinal ("perubahan keempat") that we have no law for: show a gap.
+const ORDINAL = ["", "pertama", "kedua", "ketiga", "keempat", "kelima", "keenam", "ketujuh", "kedelapan", "kesembilan", "kesepuluh"];
+const ord = (n: number) => ORDINAL[n] ?? `ke-${n}`;
+
 type Row = (typeof events)[number] | { kind: "gap"; date: null; from: number; to: number };
 const rows: Row[] = [];
 let seen = 0;
@@ -26,56 +28,77 @@ for (const e of events) {
   rows.push(e);
 }
 const amendments = seen;
+const missing = rows.filter((x) => x.kind === "gap").reduce((n, g) => n + (g.kind === "gap" ? g.to - g.from + 1 : 0), 0);
+const compareUrl = `${base}${lawPath(r)}perubahan/`;
+
+const GROUPS = [["diubah", "Diubah"], ["disisipkan", "Pasal baru"], ["dihapus", "Dihapus"]] as const;
+const total = (c?: Changes) => (c ? (c.diubah?.length ?? 0) + (c.disisipkan?.length ?? 0) + (c.dihapus?.length ?? 0) : 0);
+/** Where a chip links: the pasal in this text, or its before/after comparison. */
+const chipHref = (by: string, kind: string, n: string) =>
+  compared.has(by) ? `${compareUrl}#${by}-pasal-${n}` : kind !== "disisipkan" && anchor.get(n) ? `#${anchor.get(n)}` : undefined;
 ---
 {events.length > 1 && (
-  <section class="riwayat" id="riwayat" aria-labelledby="riwayat-title">
-    <h2 id="riwayat-title">Riwayat</h2>
-    <p class="muted small">
-      {amendments > 0
-        ? <>Diubah {amendments}×. Teks di bawah adalah teks <strong>asli</strong> saat diundangkan; pasal yang kemudian diubah ditandai. Teks terkini (setelah semua perubahan) belum disusun{compared.size > 0 ? "; perubahan tiap pasal bisa dibandingkan, sebelum dan sesudah" : ""}.</>
-        : <>Riwayat undang-undang ini menurut judul-judul peraturan yang terkait.</>}
-    </p>
-    <ol>
+  <section class="riwayat" id="riwayat" aria-labelledby="riwayat-title" data-pagefind-ignore>
+    <div class="top">
+      <h2 id="riwayat-title">Riwayat</h2>
+      {compared.size > 0 && <a class="btn-compare" href={`${compareUrl}#banding`}>Bandingkan versi</a>}
+    </div>
+    {amendments > 0 && (
+      <p class="intro">
+        Diubah <strong>{amendments}×</strong>{missing > 0 && <>, {missing} di antaranya belum tercatat di sini</>}.
+        Teks di bawah adalah teks <strong>asli</strong>; pasal yang kemudian diubah ditandai.
+      </p>
+    )}
+    <ol class="timeline">
       {rows.map((e) => {
         if (e.kind === "gap") {
-          const which = Array.from({ length: e.to - e.from + 1 }, (_, k) => ORDINAL[e.from + k] || (e.from + k === 1 ? "pertama" : String(e.from + k)));
+          const which = Array.from({ length: e.to - e.from + 1 }, (_, k) => ord(e.from + k));
           return (
             <li class="gap">
-              <div class="what muted">Perubahan {which.join(" dan ")}: belum tercatat di sini (mungkin melalui undang-undang lain, misalnya UU Cipta Kerja)</div>
+              <p class="what">Perubahan {which.join(" dan ")}</p>
+              <p class="sub">Belum tercatat. Biasanya melalui undang-undang lain yang mengubah banyak undang-undang sekaligus, seperti UU Cipta Kerja.</p>
             </li>
           );
         }
         const by = e.by?.id;
-        const href = by ? lawLink(by) : undefined;
+        const href = by && pathOf(by) ? `${base}${pathOf(by)}` : undefined;
         const cite = by ? citeId(by) : "";
+        const law = href ? <a href={href}>{cite}</a> : <span>{cite}</span>;
+        const n = total(e.changes);
         return (
           <li class={e.kind}>
-            <time class="muted small">{e.date ? tanggal(e.date) : "tanggal tidak diketahui"}</time>
-            <div class="what">
+            <time>{e.date ? tanggal(e.date) : "tanggal tidak diketahui"}</time>
+            <p class="what">
               {e.kind === "diundangkan" && <strong>Ditetapkan</strong>}
-              {e.kind === "diubah" && <><strong>Diubah</strong>{e.order && e.order > 1 ? ` (perubahan ${ORDINAL[e.order] ?? e.order})` : ""} oleh {href ? <a href={`${base}${href}`}>{cite}</a> : cite}</>}
-              {e.kind === "dicabut" && <><strong>Dicabut</strong> oleh {href ? <a href={`${base}${href}`}>{cite}</a> : cite}</>}
-              {e.kind === "ditetapkan" && <><strong>Ditetapkan menjadi undang-undang</strong> oleh {href ? <a href={`${base}${href}`}>{cite}</a> : cite}</>}
-            </div>
-            {e.changes && (
-              <dl class="changes small">
-                {([["diubah", "Pasal yang diubah"], ["disisipkan", "Pasal baru (disisipkan)"], ["dihapus", "Pasal yang dihapus"]] as const).map(([k, label]) =>
-                  e.changes![k]?.length ? (
-                    <div>
-                      <dt>{label}</dt>
-                      <dd>{e.changes![k]!.map((n, i) => (
-                        <>{i > 0 && ", "}{k !== "disisipkan" && anchor.get(n) ? <a href={`#${anchor.get(n)}`}>{n}</a> : n}</>
-                      ))}</dd>
+              {e.kind === "diubah" && <><strong>Diubah</strong> oleh {law}<span class="ord">perubahan {ord(e.order ?? 1)}</span></>}
+              {e.kind === "dicabut" && <><strong>Dicabut</strong> oleh {law}</>}
+              {e.kind === "ditetapkan" && <><strong>Ditetapkan menjadi undang-undang</strong> oleh {law}</>}
+            </p>
+            {e.kind === "diubah" && n > 0 && (
+              <details class="pasal">
+                <summary>
+                  <span class="counts">
+                    {GROUPS.map(([k, label]) => e.changes![k]?.length ? <span class={`count ${k}`}><b>{e.changes![k]!.length}</b> {label.toLowerCase()}</span> : null)}
+                  </span>
+                  <span class="more">Daftar pasal</span>
+                </summary>
+                <div class="groups">
+                  {GROUPS.map(([k, label]) => e.changes![k]?.length ? (
+                    <div class="group">
+                      <h3>{label}</h3>
+                      <ul class="chips">
+                        {e.changes![k]!.map((num) => {
+                          const to = chipHref(by!, k, num);
+                          return <li class={k}>{to ? <a href={to}>{num}</a> : <span>{num}</span>}</li>;
+                        })}
+                      </ul>
                     </div>
                   ) : null)}
-              </dl>
+                  {compared.has(by!) && <a class="go" href={`${compareUrl}#${by}`}>Bandingkan sebelum dan sesudah, pasal demi pasal →</a>}
+                </div>
+              </details>
             )}
-            {e.kind === "diubah" && by && compared.has(by) && (
-              <p class="small compare"><a href={`${base}${pathOf(r.id)}perubahan/#${by}`}>Bandingkan pasal demi pasal: sebelum dan sesudah →</a></p>
-            )}
-            {e.kind === "diubah" && !e.changes && (
-              <p class="muted small">Rincian pasal yang diubah belum dapat dibaca dari teksnya.</p>
-            )}
+            {e.kind === "diubah" && n === 0 && <p class="sub">Pasal yang diubah belum dapat dibaca dari teksnya.</p>}
           </li>
         );
       })}
@@ -85,22 +108,67 @@ const amendments = seen;
 
 <style>
   .riwayat { max-width: var(--measure); margin-bottom: var(--s-6); }
-  .riwayat h2 { margin-top: 0; }
-  ol { list-style: none; margin: 0; padding: 0 0 0 var(--s-5); border-left: 2px solid var(--line); }
-  li { position: relative; padding-bottom: var(--s-4); }
-  li::before {
-    content: ""; position: absolute; left: calc(-1 * var(--s-5) - 7px); top: 0.35rem;
-    width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--primary);
+  .top { display: flex; align-items: center; justify-content: space-between; gap: var(--s-3); }
+  .top h2 { margin: 0; }
+  .btn-compare {
+    font-size: var(--fs-sm); font-weight: 600; text-decoration: none; color: var(--primary);
+    border: 1px solid var(--primary); border-radius: var(--r-sm); padding: var(--s-1) var(--s-3);
   }
-  li.diubah::before { border-color: var(--warn); }
-  li.gap::before { border-style: dashed; border-color: var(--gone); }
-  li.dicabut::before { border-color: var(--gone); background: var(--gone); }
-  li:last-child { padding-bottom: 0; }
-  .what { margin-top: var(--s-1); }
-  .changes { margin: var(--s-2) 0 0; }
-  .changes div { display: grid; grid-template-columns: 11rem 1fr; gap: var(--s-2); padding: var(--s-1) 0; border-top: 1px solid var(--line); }
-  .changes dt { color: var(--text-muted); }
-  .changes dd { margin: 0; }
-  .compare { margin: var(--s-2) 0 0; }
-  @media (max-width: 640px) { .changes div { grid-template-columns: 1fr; gap: 0; } }
+  .btn-compare:hover { background: var(--primary-bg); }
+  .intro { color: var(--text-muted); font-size: var(--fs-sm); margin: var(--s-2) 0 var(--s-5); }
+  .intro strong { color: var(--text); }
+
+  /* timeline: a line per item, so one segment can be dashed */
+  .timeline { list-style: none; margin: 0; padding: 0; }
+  .timeline > li { position: relative; padding: 0 0 var(--s-5) var(--s-6); }
+  .timeline > li::before {          /* dot */
+    content: ""; position: absolute; left: 0; top: 0.3rem; width: 12px; height: 12px;
+    border-radius: 50%; background: var(--bg); border: 2px solid var(--primary); box-sizing: border-box; z-index: 1;
+  }
+  .timeline > li::after {           /* line to the next item */
+    content: ""; position: absolute; left: 5px; top: 0.3rem; bottom: -0.3rem; width: 2px; background: var(--line);
+  }
+  .timeline > li:last-child { padding-bottom: 0; }
+  .timeline > li:last-child::after { display: none; }
+  .timeline > li.diubah::before { border-color: var(--warn); }
+  .timeline > li.dicabut::before { border-color: var(--gone); background: var(--gone); }
+  .timeline > li.gap::before { width: 8px; height: 8px; left: 2px; top: 0.45rem; border: 0; background: var(--gone); }
+  .timeline > li.gap::after,
+  .timeline > li:has(+ li.gap)::after {
+    background: repeating-linear-gradient(to bottom, var(--gone) 0 4px, transparent 4px 9px);
+  }
+
+  time { display: block; font-size: var(--fs-xs); color: var(--text-muted); font-variant-numeric: tabular-nums; }
+  .what { margin: var(--s-1) 0 0; }
+  .ord { margin-left: var(--s-2); font-size: var(--fs-xs); color: var(--text-muted); }
+  .gap .what { color: var(--text-muted); margin-top: 0; }
+  .sub { margin: var(--s-1) 0 0; font-size: var(--fs-sm); color: var(--text-muted); }
+
+  /* the pasal of one amendment, collapsed by default */
+  .pasal { margin-top: var(--s-2); border: 1px solid var(--line); border-radius: var(--r-md); background: var(--bg-subtle); }
+  .pasal summary {
+    display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2) var(--s-4); justify-content: space-between;
+    padding: var(--s-2) var(--s-3); cursor: pointer; list-style: none; font-size: var(--fs-sm);
+  }
+  .pasal summary::-webkit-details-marker { display: none; }
+  .counts { display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s-4); }
+  .count b { font-variant-numeric: tabular-nums; }
+  .count.diubah b { color: var(--warn); }
+  .count.disisipkan b { color: var(--ok); }
+  .count.dihapus b { color: var(--del-text); }
+  .more { color: var(--primary); font-weight: 600; white-space: nowrap; }
+  .more::after { content: " ▾"; }
+  .pasal[open] .more::after { content: " ▴"; }
+  .groups { padding: var(--s-1) var(--s-3) var(--s-3); border-top: 1px solid var(--line); background: var(--bg); border-radius: 0 0 var(--r-md) var(--r-md); }
+  .group h3 { font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin: var(--s-3) 0 var(--s-2); }
+  .chips { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(3.25rem, 1fr)); gap: var(--s-1); }
+  .chips a, .chips span {
+    display: block; text-align: center; padding: 0.15rem 0; border-radius: var(--r-sm);
+    font-size: var(--fs-sm); font-variant-numeric: tabular-nums; text-decoration: none;
+    border: 1px solid var(--line); color: var(--text);
+  }
+  .chips a:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-bg); }
+  .chips .disisipkan a, .chips .disisipkan span { border-style: dashed; }
+  .chips .dihapus a, .chips .dihapus span { text-decoration: line-through; color: var(--text-muted); }
+  .go { display: inline-block; margin-top: var(--s-3); font-size: var(--fs-sm); font-weight: 600; }
 </style>
