@@ -103,10 +103,7 @@ def tanggal_iso(text: str) -> str | None:
 
 
 def import_one(client: Client, item: Listing, jenis: str, data_dir: Path) -> str:
-    from ..akn.bluebell import to_bluebell
-    from ..akn.build import to_akn
     from ..naming import validate_id
-    from ..pdf.structure import parse_pdf
 
     m = re.search(rf"{jenis}-no-([0-9a-z]+)-tahun-(\d{{4}})", item.detail)
     if not m:
@@ -141,37 +138,80 @@ def import_one(client: Client, item: Listing, jenis: str, data_dir: Path) -> str
         "relationships": {"amends": [], "amended_by": [], "revokes": [], "revoked_by": []},
         "versions": [],
     }
-    note = "no PDF"
-    if pdf_path:
-        with tempfile.TemporaryDirectory() as tmp:
-            pdf = Path(tmp) / "doc.pdf"
-            pdf.write_bytes(client.get(pdf_path).content)
-            entry = entry_for_file(pdf, BASE + pdf_path, None, work, pdf_path.rsplit("/", 1)[-1])
-            rec["pdf_sha256"] = entry.sha256
-            manifest = manifest_path(data_dir, BASE + pdf_path)
-            manifest.parent.mkdir(parents=True, exist_ok=True)
-            with manifest.open("a") as f:
-                f.write(json.dumps(entry.to_dict(), ensure_ascii=False) + "\n")
-            try:
-                doc = parse_pdf(pdf)
-                if doc.pasal_count == 0:
-                    rec["pdf_quality"] = "image_only_or_unparsed"
-                    note = "no pasal found (scanned PDF?)"
-                else:
-                    text = to_bluebell(doc)
-                    to_akn(text, rec["akn"], "act")          # validates structure and markup
-                    version = f"{work}_{date or tahun}"
-                    folder.mkdir(parents=True, exist_ok=True)
-                    (folder / f"{version}.txt").write_text(text)
-                    rec["versions"].append({
-                        "id": version, "kind": "asli", "source": "official",
-                        "date": date, "date_basis": "tanggal_penetapan",
-                        "text": f"{version}.txt", "pasal_count": doc.pasal_count,
-                    })
-                    note = f"{doc.pasal_count} pasal"
-            except Exception as e:  # noqa: BLE001 - record and move on; never guess
-                rec["parse_error"] = f"{type(e).__name__}: {str(e)[:200]}"
-                note = f"parse error: {rec['parse_error'][:80]}"
+    note = convert(client, rec, folder, data_dir) if pdf_path else "no PDF"
     folder.mkdir(parents=True, exist_ok=True)
     record.write_text(yaml.safe_dump(rec, allow_unicode=True, sort_keys=False))
     return f"ok   {work}: {note}"
+
+
+def convert(client: Client, rec: dict, folder: Path, data_dir: Path) -> str:
+    """Download the record's PDF, record it in the manifest, and (re)write its text version.
+    Updates ``rec`` in place (versions, pdf_sha256, pdf_quality, parse_error)."""
+    from ..akn.bluebell import to_bluebell
+    from ..akn.build import to_akn
+    from ..pdf.structure import PARSER_VERSION, parse_pdf
+
+    url = rec["source_pdf_url"]
+    pdf_path = url.removeprefix(BASE)
+    work, date = rec["id"], rec.get("tanggal_penetapan")
+    for old in rec.get("versions") or []:                 # replaced below
+        if old.get("text"):
+            (folder / old["text"]).unlink(missing_ok=True)
+    rec["versions"] = []
+    rec.pop("pdf_quality", None)
+    rec.pop("parse_error", None)
+    with tempfile.TemporaryDirectory() as tmp:
+        pdf = Path(tmp) / "doc.pdf"
+        pdf.write_bytes(client.get(pdf_path).content)
+        entry = entry_for_file(pdf, url, None, work, pdf_path.rsplit("/", 1)[-1])
+        if rec.get("pdf_sha256") != entry.sha256:          # new or changed upstream
+            rec["pdf_sha256"] = entry.sha256
+            manifest = manifest_path(data_dir, url)
+            manifest.parent.mkdir(parents=True, exist_ok=True)
+            with manifest.open("a") as f:
+                f.write(json.dumps(entry.to_dict(), ensure_ascii=False) + "\n")
+        try:
+            doc = parse_pdf(pdf)
+            if doc.pasal_count == 0:
+                rec["pdf_quality"] = "image_only_or_unparsed"
+                return "no pasal found (scanned PDF?)"
+            text = to_bluebell(doc)
+            to_akn(text, rec["akn"], "act")                # validates structure and markup
+            version = f"{work}_{date or rec['year']}"
+            folder.mkdir(parents=True, exist_ok=True)
+            (folder / f"{version}.txt").write_text(text)
+            rec["versions"].append({
+                "id": version, "kind": "asli", "source": "official",
+                "date": date, "date_basis": "tanggal_penetapan",
+                "text": f"{version}.txt", "pasal_count": doc.pasal_count,
+                "parser_version": PARSER_VERSION,
+            })
+            return f"{doc.pasal_count} pasal"
+        except Exception as e:  # noqa: BLE001 - record and move on; never guess
+            rec["parse_error"] = f"{type(e).__name__}: {str(e)[:200]}"
+            return f"parse error: {rec['parse_error'][:80]}"
+
+
+def reparse(client: Client, jenis: str, data_dir: Path) -> Iterator[str]:
+    """Re-convert imported regulations whose text came from an older parser version (or
+    that have no text yet), from their PDFs. Metadata is kept."""
+    from ..pdf.structure import PARSER_VERSION
+
+    for record in sorted((data_dir / "peraturan" / jenis).glob("*/*/*.yaml")):
+        rec = yaml.safe_load(record.read_text())
+        versions = rec.get("versions") or []
+        if versions and all(v.get("parser_version") == PARSER_VERSION for v in versions):
+            continue
+        if not rec.get("source_pdf_url"):
+            continue
+        if not versions and rec.get("parser_version_tried") == PARSER_VERSION:
+            continue                                      # scanned: OCR needed, not a re-parse
+        try:
+            note = convert(client, rec, record.parent, data_dir)
+        except Exception as e:  # noqa: BLE001 - keep going; resumable
+            yield f"FAIL {rec['id']}: {e}"
+            continue
+        if not rec["versions"]:
+            rec["parser_version_tried"] = PARSER_VERSION
+        record.write_text(yaml.safe_dump(rec, allow_unicode=True, sort_keys=False))
+        yield f"ok   {rec['id']}: reparsed, {note}"

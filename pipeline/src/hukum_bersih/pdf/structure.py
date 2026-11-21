@@ -12,7 +12,7 @@ import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
-PARSER_VERSION = 1
+PARSER_VERSION = 2  # 2: page headers/numbers removed on every page (Pasal.id rules)
 
 BAB_RE = re.compile(r"^BAB\s+([IVXLC]+)$")
 BAGIAN_RE = re.compile(r"^Bagian\s+(Ke\w+)$")

@@ -75,6 +75,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("jenis", choices=["uu", "perppu", "pp", "perpres"])
     p.add_argument("--limit", type=int, default=0, help="stop after N new imports (0 = all)")
     p.add_argument("--delay", type=float, default=2.0, help="seconds between requests")
+    p.add_argument("--reparse", action="store_true",
+                   help="re-convert already imported texts made by an older parser version")
 
     p = sub.add_parser("archive-pending",
                        help="archive recorded regulation PDFs not yet on archive.org")
@@ -132,6 +134,14 @@ def main(argv: list[str] | None = None) -> int:
         from .sources import peraturan_go_id as src
 
         client, done = src.Client(args.delay), 0
+        if args.reparse:
+            for line in src.reparse(client, args.jenis, args.data_dir):
+                print(line, flush=True)
+                if line.startswith("ok"):
+                    done += 1
+                    if args.limit and done >= args.limit:
+                        break
+            return 0
         for item in src.listings(client, args.jenis):
             try:
                 line = src.import_one(client, item, args.jenis, args.data_dir)

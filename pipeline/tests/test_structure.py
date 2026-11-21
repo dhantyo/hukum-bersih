@@ -109,3 +109,16 @@ def test_leaked_markup_is_rejected():
     bad = "BODY\n  ART 1 -\n    Teks:\n\n      POINT a.\n        x\n"
     with pytest.raises(LeakedMarkupError):
         to_akn(bad, "/akn/id/bill/2026/contoh", "bill")
+
+
+def test_page_headers_and_numbers_removed_after_page_one():
+    """Regression: '-2-' page numbers under a running 'PRESIDEN REPUBLIK INDONESIA' header
+    ended up inside the text (peraturan.go.id PDFs)."""
+    pages = [
+        ["SALINAN", "PRESIDEN", "REPUBLIK INDONESIA", "UNDANG-UNDANG", "Menimbang: a.", "bahwa satu;"],
+        ["FRESIDEN", "REPUEUK INDONESIA", "-2-", "b. bahwa dua;", "www.peraturan.go.id"],
+        ["PRESIDEN REPUBLIK INDONESIA", "- 3 -", "Pasal 1", "Teks.", "2020, No.67", "4"],
+    ]
+    lines = clean_lines(pages)
+    assert lines == ["PRESIDEN", "REPUBLIK INDONESIA", "UNDANG-UNDANG", "Menimbang: a.",
+                     "bahwa satu;", "b. bahwa dua;", "Pasal 1", "Teks."]
