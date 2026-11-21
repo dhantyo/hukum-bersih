@@ -45,6 +45,8 @@ jobs:
         with:
           config: ${{ secrets.WG_INDONESIA }}
       - uses: astral-sh/setup-uv@v6
+      - name: Tesseract for scanned PDFs
+        run: sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ind >/dev/null
       - run: uv sync
         working-directory: pipeline
       - name: Import in batches

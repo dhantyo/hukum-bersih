@@ -204,6 +204,7 @@ def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str) -> str:
             "text": f"{version}.txt", "pasal_count": doc.pasal_count,
             "parser_version": PARSER_VERSION,
             "pdf_source": source, "pdf_sha256": sha256_file(pdf),
+            **({"ocr": True} if any(w.startswith("ocr:") for w in doc.warnings) else {}),
         }])
         return f"{doc.pasal_count} pasal"
     except Exception as e:  # noqa: BLE001 - record and move on; never guess

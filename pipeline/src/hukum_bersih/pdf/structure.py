@@ -12,7 +12,9 @@ import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
-PARSER_VERSION = 5  # 5: printed lines rebuilt from word positions, page-turn words, headings
+PARSER_VERSION = 6  # 6: scanned pages read with our own OCR (Tesseract ind), page-turn words
+#                    anywhere on a page;
+#                   5: printed lines rebuilt from word positions, page-turn words, headings
 #                    with a full stop ("Pasal 1."), old numbering, closing line by line;
 #                   2: page headers/numbers on every page (Pasal.id rules); 3: old-spelling closings and
 #                    PENDJELASAN; 4: lists between a BAB heading and its first Pasal (UU 19/2003)
@@ -371,4 +373,10 @@ def parse_lines(lines: list[str]) -> Document:
 def parse_pdf(pdf: Path) -> Document:
     from .extract import clean_lines, page_lines
 
-    return parse_lines(clean_lines(page_lines(pdf)))
+    stats: dict = {}
+    doc = parse_lines(clean_lines(page_lines(pdf, stats)))
+    if stats.get("ocr_pages"):
+        doc.warnings.append(f"ocr: {stats['ocr_pages']} scanned page(s) read with Tesseract")
+    if stats.get("ocr_missing"):
+        doc.warnings.append(f"ocr unavailable, used the PDF's own text layer: {stats['ocr_missing']}")
+    return doc

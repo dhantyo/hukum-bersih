@@ -52,11 +52,54 @@ RUNNING_HEADER_RE = re.compile(
 HEADER_ZONE = 5  # lines at the top of a page that may hold headers
 
 
-def page_lines(pdf: Path) -> list[list[str]]:
+OCR_LANGUAGE = "ind"
+OCR_DPI = 300
+
+
+def page_lines(pdf: Path, stats: dict | None = None, ocr: bool = True) -> list[list[str]]:
+    """Printed lines per page. Scanned pages (a picture filling the page) are read with our own
+    OCR (Tesseract ``ind`` through PyMuPDF), not with the text layer that came with the PDF:
+    BPK's scans carry someone else's OCR ("2OO2", "REPUBUK"; docs/parser-review-2026-11.md).
+    ``stats`` receives ``ocr_pages`` and, when Tesseract is missing, ``ocr_missing``."""
     import pymupdf
 
+    stats = stats if stats is not None else {}
+    stats.setdefault("ocr_pages", 0)
+    out = []
     with pymupdf.open(pdf) as doc:
-        return [rows(page.get_text("words")) for page in doc]
+        for page in doc:
+            words = None
+            if ocr and is_scan(page) and not stats.get("ocr_missing"):
+                try:
+                    tp = page.get_textpage_ocr(language=OCR_LANGUAGE, dpi=OCR_DPI, full=True,
+                                               tessdata=tessdata())
+                    words = page.get_text("words", textpage=tp)
+                    stats["ocr_pages"] += 1
+                except Exception as e:  # noqa: BLE001 - no Tesseract or no language data
+                    stats["ocr_missing"] = f"{type(e).__name__}: {str(e)[:120]}"
+            out.append(rows(words if words is not None else page.get_text("words")))
+    return out
+
+
+def tessdata() -> str | None:
+    """Tesseract's language data: $TESSDATA_PREFIX, else the usual Debian/Ubuntu place."""
+    import glob
+    import os
+
+    if os.environ.get("TESSDATA_PREFIX"):
+        return os.environ["TESSDATA_PREFIX"]
+    found = sorted(glob.glob("/usr/share/tesseract-ocr/*/tessdata"))
+    return found[-1] if found else None
+
+
+def is_scan(page) -> bool:
+    """A picture covers most of the page (a scanned page, with or without a text layer)."""
+    area = page.rect.width * page.rect.height
+    for img in page.get_images(full=True):
+        for r in page.get_image_rects(img[0]):
+            if r.width * r.height > 0.6 * area:
+                return True
+    return False
 
 
 def rows(words: list[tuple]) -> list[str]:
@@ -90,8 +133,8 @@ def _clean_page(raw: list[str], first_page: bool) -> list[str]:
             # on page 1 the title block legitimately starts with "PRESIDEN REPUBLIK INDONESIA"
             if not first_page and RUNNING_HEADER_RE.match(ln):
                 continue
-            if first_page and ln.upper() == "SALINAN":
-                continue
+            if first_page and (ln.upper().endswith("SALINAN") or len(ln) <= 3):
+                continue                                 # stamp, OCR fragments of the crest
             in_header = False
         out.append(ln)
     # footer zone: trailing page numbers, lone dashes of a split "- 3 -", page-turn words

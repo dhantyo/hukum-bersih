@@ -63,6 +63,7 @@ PDFs), run with `uv run python scripts/regress.py` in `pipeline/`.
 |---|---|---|
 | v4 | 9/15 | in 13 of 15 (UU 4/2009: 56 page-turn words; UU 2/1957, 19/1997: 33-34 page numbers) |
 | v5 (2026-11-21) | 14/15 | page-turn word left in 2 laws; "SK No" serial in 2 scans |
+| v6 (2026-11-21) | 18/19 (set extended with UU 30/1947, 16/1947, 12/1971, 31/1999) | none |
 
 v5: printed lines rebuilt from word positions (BPK stores justified text one word per line);
 page-turn words at the foot of a page and split page numbers dropped (C, D); headings with a
@@ -75,3 +76,9 @@ closing kept line by line as printed. Tests: `pipeline/tests/test_parser_v5.py`.
 Still open: amending laws (J, UU 18/2025 counts 4 instead of Pasal I/II); OCR for scans (H;
 "SK No" serials, G); Lampiran (L); closing as structured fields for the Modern view; stored
 texts are not re-parsed yet.
+
+v6: scanned pages (a picture covering the page) are read with our own OCR, Tesseract `ind` at
+300 dpi through PyMuPDF's `get_textpage_ocr`, instead of the OCR layer that came with the PDF.
+UU 5/2026: no digit/letter confusions left (BPK's layer: '2OO2', '2O', 'l4l', 'REPUBUK'). About
+2.6 s per scanned page. Texts from OCR carry `ocr: true` on their version. Without Tesseract
+the parser falls back to the PDF's own layer and says so in its warnings.

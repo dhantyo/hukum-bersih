@@ -50,9 +50,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
-      - name: Install (with the stealth browser)
+      - name: Install (stealth browser, Tesseract for scanned PDFs)
         run: |
-          sudo apt-get install -y -qq xvfb >/dev/null
+          sudo apt-get install -y -qq xvfb tesseract-ocr tesseract-ocr-ind >/dev/null   # OCR for scans
           cd pipeline && uv sync --extra bpk && uv run scrapling install
       - name: Import in batches
         env:
