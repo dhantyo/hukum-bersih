@@ -1,36 +1,199 @@
 ---
+// Search, grouped from most to least specific: (1) short names ("minerba" -> UU Minerba, with
+// its amending laws under it), (2) citation and title ("4/2009", "pertambangan"), (3) the text
+// itself, per law with the matching pasal (Pagefind, built with the site, runs in the browser).
 import Base from "../../layouts/Base.astro";
 const base = import.meta.env.BASE_URL;
 ---
 <Base title="Cari" noindex>
   <h1>Cari</h1>
-  <p class="muted">Cari di judul dan isi semua undang-undang dan RUU yang tersedia sebagai teks.</p>
-  <div id="cari"></div>
+  <form class="box" role="search" onsubmit="return false">
+    <label class="visually-hidden" for="cari-q">Cari</label>
+    <input id="cari-q" type="search" placeholder="Nama singkat, nomor (4/2009), judul, atau kata dalam pasal" autocomplete="off" autofocus />
+  </form>
+  <p class="hint muted small" id="hint">Contoh: <a href="?q=minerba">minerba</a>, <a href="?q=4/2009">4/2009</a>, <a href="?q=perseroan terbatas">perseroan terbatas</a>, <a href="?q=pencemaran nama baik">pencemaran nama baik</a></p>
+
+  <div id="results" data-base={base} aria-live="polite">
+    <section class="group" id="g-short" hidden>
+      <h2>Nama singkat</h2>
+      <ul class="laws"></ul>
+    </section>
+    <section class="group" id="g-title" hidden>
+      <h2>Nomor dan judul</h2>
+      <ul class="laws"></ul>
+      <button type="button" class="more" hidden>Tampilkan lebih banyak</button>
+    </section>
+    <section class="group" id="g-text" hidden>
+      <h2>Isi peraturan</h2>
+      <p class="muted small count"></p>
+      <ul class="hits"></ul>
+      <button type="button" class="more" hidden>Tampilkan lebih banyak</button>
+    </section>
+    <p class="none muted" id="none" hidden></p>
+  </div>
   <noscript><p>Pencarian membutuhkan JavaScript.</p></noscript>
-  <link rel="stylesheet" href={`${base}pagefind/pagefind-ui.css`} />
-  <script is:inline define:vars={{ base }}>
-    // Pagefind's own search UI (built with the site; runs in the browser, no server)
-    const s = document.createElement("script");
-    s.src = `${base}pagefind/pagefind-ui.js`;
-    s.onload = () => {
-      const ui = new PagefindUI({
-        element: "#cari", showSubResults: true, showImages: false, resetStyles: false,
-        translations: { placeholder: "Cari undang-undang, pasal, kata…", zero_results: "Tidak ada hasil untuk [SEARCH_TERM]" },
-      });
-      const q = new URLSearchParams(location.search).get("q");
-      if (q) ui.triggerSearch(q);
-    };
-    document.head.appendChild(s);
-  </script>
 </Base>
 
-<style is:global>
-  #cari {
-    --pagefind-ui-font: var(--font-ui); --pagefind-ui-primary: var(--primary);
-    --pagefind-ui-text: var(--text); --pagefind-ui-background: var(--bg);
-    --pagefind-ui-border: var(--line); --pagefind-ui-tag: var(--bg-subtle);
-    --pagefind-ui-border-radius: 4px; --pagefind-ui-scale: 0.9;
-    max-width: 52rem;
+<script>
+  interface Law { id: string; s: string | null; c: string; t: string; n: string; y: number; st: string | null; m: string[]; k: number; u: string }
+  interface PfResult { data: () => Promise<PfData> }
+  interface PfData { url: string; meta: { title?: string }; excerpt: string; sub_results: { title: string; url: string; excerpt: string }[] }
+
+  const results = document.getElementById("results")!;
+  const base = results.dataset.base!;
+  const input = document.getElementById("cari-q") as HTMLInputElement;
+  const STATUS: Record<string, string> = { berlaku: "Berlaku", dicabut: "Dicabut", diubah: "Diubah", tidak_berlaku: "Tidak berlaku", ruu: "RUU" };
+
+  let laws: Law[] | undefined;
+  const loadLaws = async () => (laws ??= await (await fetch(`${base}cari/laws.json`)).json());
+  let pagefind: { init: () => Promise<void>; search: (q: string) => Promise<{ results: PfResult[] }> } | undefined;
+  const loadPagefind = async () => {
+    if (!pagefind) {
+      const url = `${base}pagefind/pagefind.js`;
+      pagefind = await import(/* @vite-ignore */ url);
+      await pagefind!.init();
+    }
+    return pagefind!;
+  };
+
+  /** lower case, no punctuation except "/", single spaces */
+  const norm = (s: string) => s.toLowerCase().normalize("NFKD").replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9/ ]+/g, " ").replace(/\s+/g, " ").trim();
+  /** "uu 4/2009", "uu no 4 tahun 2009", "4 2009" -> "4/2009" */
+  const citeOf = (q: string) => {
+    const m = norm(q).match(/^(?:(?:uu|undang undang)\s+)?(?:(?:no|nomor)\s+)?(\w+)\s*(?:\/|\s+tahun\s+|\s+)(\d{4})$/);
+    return m ? `${m[1]}/${m[2]}` : undefined;
+  };
+
+  const el = <K extends keyof HTMLElementTagNameMap>(tag: K, attrs: Record<string, string> = {}, ...kids: (Node | string | null | undefined)[]) => {
+    const e = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+    for (const kid of kids) if (kid != null) e.append(kid);
+    return e;
+  };
+
+  const lawItem = (l: Law, children: Law[] = []) => el("li", { class: "law" },
+    el("a", { href: l.u, class: "name" }, l.s ?? l.t ?? l.c),
+    el("div", { class: "meta" },
+      el("span", {}, l.c), l.s && l.t ? el("span", {}, l.t) : null,
+      l.st ? el("span", { class: `badge ${l.st}` }, STATUS[l.st] ?? l.st) : null,
+      l.k > 0 ? el("span", { class: "badge diubah" }, `diubah ${l.k}×`) : null),
+    children.length ? el("ul", { class: "children" }, ...children.map((c) =>
+      el("li", {}, el("a", { href: c.u }, c.s ?? c.c), " ", el("span", { class: "muted" }, c.c)))) : null);
+
+  function show(id: string, on: boolean) { (document.getElementById(id) as HTMLElement).hidden = !on; }
+
+  let run = 0;
+  async function search(raw: string) {
+    const q = norm(raw);
+    const mine = ++run;
+    const url = new URL(location.href);
+    if (q) url.searchParams.set("q", raw); else url.searchParams.delete("q");
+    history.replaceState(null, "", url);
+    show("hint", !q);
+    for (const g of ["g-short", "g-title", "g-text", "none"]) show(g, false);
+    if (!q) return;
+
+    const all = await loadLaws();
+    if (mine !== run) return;
+    const words = q.split(" ").filter((w) => w !== "uu");
+    const cite = citeOf(raw);
+    const byId = new Map(all.map((l) => [l.id, l]));
+
+    // 1. short names: the base laws whose short name matches; amending laws nested under them
+    const shortHit = (l: Law) => l.s && words.length > 0 && words.every((w) => norm(l.s!).split(" ").some((x) => x.startsWith(w)));
+    const bases = all.filter((l) => shortHit(l) && l.m.length === 0);
+    const shown = new Set<string>();
+    const g1 = document.querySelector("#g-short ul")!;
+    g1.replaceChildren(...bases.map((b) => {
+      const kids = all.filter((l) => l.m.includes(b.id)).sort((a, c) => a.y - c.y);
+      shown.add(b.id); kids.forEach((k) => shown.add(k.id));
+      return lawItem(b, kids);
+    }));
+    show("g-short", bases.length > 0);
+
+    // 2. number and title
+    const titleHits = all.filter((l) => !shown.has(l.id) && (
+      cite ? l.c.toLowerCase().endsWith(` ${cite}`) || l.c.toLowerCase() === cite
+           : words.every((w) => norm(`${l.c} ${l.t} ${l.s ?? ""} nomor ${l.n} tahun ${l.y}`).split(" ").some((x) => x.startsWith(w)))))
+      .sort((a, b) => (shortHit(b) ? 1 : 0) - (shortHit(a) ? 1 : 0) || b.y - a.y);
+    const g2 = document.querySelector("#g-title ul")!;
+    const more2 = document.querySelector("#g-title .more") as HTMLButtonElement;
+    let n2 = 8;
+    const draw2 = () => { g2.replaceChildren(...titleHits.slice(0, n2).map((l) => lawItem(l))); more2.hidden = titleHits.length <= n2; };
+    more2.onclick = () => { n2 += 20; draw2(); };
+    draw2();
+    show("g-title", titleHits.length > 0);
+    titleHits.slice(0, n2).forEach((l) => shown.add(l.id));
+
+    // 3. full text (Pagefind), one entry per law with the matching pasal
+    const pf = await loadPagefind();
+    // exact phrase first, then pages with all the words elsewhere
+    const multi = words.length > 1 && !raw.includes('"');
+    const [phrase, loose] = await Promise.all([pf.search(multi ? `"${raw.trim()}"` : raw), multi ? pf.search(raw) : Promise.resolve({ results: [] })]);
+    if (mine !== run) return;
+    const urlToId = new Map(all.map((l) => [l.u, l.id]));
+    const found = { results: [...phrase.results, ...loose.results.filter((r) => !phrase.results.some((p) => (p as unknown as { id: string }).id === (r as unknown as { id: string }).id))] };
+    const g3 = document.querySelector("#g-text .hits")!;
+    const more3 = document.querySelector("#g-text .more") as HTMLButtonElement;
+    (document.querySelector("#g-text .count") as HTMLElement).textContent = multi ? `${phrase.results.length} halaman memuat frasa ini persis; ${found.results.length - phrase.results.length} lainnya memuat semua katanya.` : `${found.results.length} halaman memuat kata ini.`;
+    let n3 = 0;
+    g3.replaceChildren();
+    const draw3 = async () => {
+      const page = await Promise.all(found.results.slice(n3, n3 + 10).map((r) => r.data()));
+      if (mine !== run) return;
+      n3 += 10;
+      for (const d of page) {
+        const subs = d.sub_results.filter((s) => s.url !== d.url && /^(Pasal|BAB|Bagian)/.test(s.title)).slice(0, 3);
+        const seen = urlToId.get(d.url.split("#")[0]);
+        if (seen && shown.has(seen) && subs.length === 0) continue;   // already listed above
+        const ex = (html: string) => { const p = el("p", { class: "excerpt" }); p.innerHTML = html; return p; };   // Pagefind escapes text; only <mark> is markup
+        g3.append(el("li", { class: "hit" },
+          el("a", { href: d.url, class: "name" }, d.meta.title ?? d.url),
+          subs.length ? el("ul", { class: "subs" }, ...subs.map((s) => el("li", {}, el("a", { href: s.url }, s.title), ex(s.excerpt)))) : ex(d.excerpt)));
+      }
+      more3.hidden = n3 >= found.results.length;
+      if (g3.children.length < 5 && n3 < found.results.length) await draw3();   // all skipped: next page
+    };
+    more3.onclick = draw3;
+    await draw3();
+    show("g-text", g3.children.length > 0);
+    const none = document.getElementById("none")!;
+    none.textContent = `Tidak ada hasil untuk "${raw}".`;
+    show("none", bases.length === 0 && titleHits.length === 0 && g3.children.length === 0);
   }
-  #cari mark { background: var(--primary-bg); color: inherit; }
+
+  let t: number | undefined;
+  input.addEventListener("input", () => { clearTimeout(t); t = window.setTimeout(() => search(input.value), 200); });
+  const q0 = new URLSearchParams(location.search).get("q");
+  if (q0) { input.value = q0; search(q0); }
+</script>
+
+<style>
+  .box input {
+    width: 100%; max-width: 44rem; font: inherit; font-size: var(--fs-lg); padding: var(--s-3) var(--s-4);
+    border: 1px solid var(--line); border-radius: var(--r-md); background: var(--bg); color: var(--text);
+  }
+  .box input:focus { outline: 2px solid var(--primary); outline-offset: 1px; }
+  .hint { margin-top: var(--s-2); }
+  #results { max-width: 52rem; }
+  .group { margin-top: var(--s-6); }
+  .group h2 {
+    font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--text-muted); margin: 0 0 var(--s-2); padding-bottom: var(--s-2); border-bottom: 1px solid var(--line);
+  }
+  #results :global(ul) { list-style: none; margin: 0; padding: 0; }
+  #results :global(.law), #results :global(.hit) { padding: var(--s-3) 0; border-bottom: 1px solid var(--line); }
+  #results :global(.name) { font-weight: 600; font-size: var(--fs-base); }
+  #g-short :global(.name) { font-size: var(--fs-lg); }
+  #results :global(.meta) { display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s-3); align-items: center; margin-top: var(--s-1); font-size: var(--fs-sm); color: var(--text-muted); }
+  #results :global(.children) { margin-top: var(--s-2); padding-left: var(--s-4); border-left: 2px solid var(--line); font-size: var(--fs-sm); }
+  #results :global(.children li) { padding: 0.15rem 0; }
+  #results :global(.subs) { margin-top: var(--s-2); padding-left: var(--s-4); border-left: 2px solid var(--line); }
+  #results :global(.subs li) { margin-bottom: var(--s-2); }
+  #results :global(.subs a) { font-size: var(--fs-sm); font-weight: 600; }
+  #results :global(.excerpt) { margin: var(--s-1) 0 0; font-size: var(--fs-sm); color: var(--text-muted); }
+  #results :global(mark) { background: var(--primary-bg); color: var(--text); }
+  .count { margin: 0 0 var(--s-2); }
+  .more { margin-top: var(--s-3); font: inherit; font-size: var(--fs-sm); background: none; border: 1px solid var(--line); border-radius: var(--r-sm); padding: var(--s-1) var(--s-3); color: var(--primary); cursor: pointer; }
 </style>

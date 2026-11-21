@@ -14,7 +14,7 @@ for (const [y, n] of [...counts].sort((a, b) => b[0] - a[0])) {
   decades.set(d, [...(decades.get(d) ?? []), [y, n]]);
 }
 ---
-<Base title="Undang-Undang" description="Semua undang-undang Republik Indonesia sebagai teks yang bersih dan mudah dibaca." section="peraturan">
+<Base noindex title="Undang-Undang" description="Semua undang-undang Republik Indonesia sebagai teks yang bersih dan mudah dibaca." section="peraturan">
   <h1>Undang-Undang</h1>
   <p class="lead">
     {laws.length.toLocaleString("id-ID")} undang-undang dari <a href="https://peraturan.go.id">peraturan.go.id</a>,{" "}

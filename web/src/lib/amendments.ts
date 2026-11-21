@@ -186,3 +186,26 @@ export function pasalThrough(h: VersionHistory, num: string) {
     return { k, version: h.versions[k], slot, row: n > 0 ? row(prev?.pasal, slot?.pasal) : undefined };
   });
 }
+
+// ---- Data for the browser comparer (components/VersionCompare.astro) ----------------------
+
+/** Compact: per pasal, only the versions where it changed: [versionIndex, slot]. A slot is
+ * lines ([num, text, indent][]), "d" (deleted), "u" (unreadable) or null (not there yet). */
+export type CompactSlot = [string | null, string, number][] | "d" | "u" | null;
+export interface CompareData {
+  versions: { id: string; label: string; date: string | null; gap: number }[];
+  pasal: [string, [number, CompactSlot][]][];
+}
+
+export function compareData(h: VersionHistory): CompareData {
+  const slot = (s: Slot | undefined): CompactSlot =>
+    !s ? null : s.deleted ? "d" : s.unknown || !s.pasal ? "u" : s.pasal.lines.map((l) => [l.num ?? null, l.text, l.indent]);
+  const nums = [...h.changedIn.keys()].sort((x, y) => {
+    const a = x.match(/^(\d+)(.*)$/), b = y.match(/^(\d+)(.*)$/);
+    return (Number(a?.[1]) - Number(b?.[1])) || (a?.[2] ?? "").localeCompare(b?.[2] ?? "");
+  });
+  return {
+    versions: h.versions.map((v) => ({ id: v.id, label: v.label, date: v.date, gap: v.gapBefore })),
+    pasal: nums.map((n) => [n, [0, ...h.changedIn.get(n)!].map((k) => [k, slot(h.states[k].get(n))] as [number, CompactSlot])]),
+  };
+}

@@ -17,8 +17,10 @@ source_pdf_url: https://peraturan.go.id/files/uu4-2004.pdf
 relationships:
   amends: []
   amended_by: []
-  revokes: []
-  revoked_by: []
+  revokes:
+  - uu_14_1970
+  revoked_by:
+  - uu_48_2009
   enacts: []
   enacted_by: []
 versions:

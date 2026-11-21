@@ -64,3 +64,21 @@ def test_ocr_misreads_in_numbers_only():
             "2 (dua) pasal, yakni Pasal 16A dan Pasal 168 sehingga berbunyi: Di antara Pasal 27 dan "
             "Pasal 28 disisipkan 2 (dua) pasal, yakni Pasil 27A dan Pasal 27B sehingga berbunyi:")
     assert changes_in_text(text) == {"diubah": ["40"], "disisipkan": ["16A", "16B", "27A", "27B"]}
+
+
+def test_revoked_per_source_status(tmp_path):
+    import yaml
+
+    from hukum_bersih.relations import build
+
+    for rid, status in [("uu_1_1995", "Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 40 Tahun 2007 Tentang Perseroan Terbatas"),
+                        ("uu_40_2007", "berlaku")]:
+        y = rid.split("_")[2]
+        d = tmp_path / "peraturan" / "uu" / y / rid
+        d.mkdir(parents=True)
+        (d / f"{rid}.yaml").write_text(yaml.safe_dump({"id": rid, "tentang": "PERSEROAN TERBATAS", "status": status, "versions": []}))
+    build(tmp_path)
+    old = yaml.safe_load((tmp_path / "peraturan/uu/1995/uu_1_1995/uu_1_1995.yaml").read_text())
+    new = yaml.safe_load((tmp_path / "peraturan/uu/2007/uu_40_2007/uu_40_2007.yaml").read_text())
+    assert old["relationships"]["revoked_by"] == ["uu_40_2007"]
+    assert new["relationships"]["revokes"] == ["uu_1_1995"]

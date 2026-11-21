@@ -20,8 +20,10 @@ source_pdf_url: https://peraturan.go.id/files/UU+13+Tahun+2008.pdf
 relationships:
   amends: []
   amended_by: []
-  revokes: []
-  revoked_by: []
+  revokes:
+  - uu_17_1999
+  revoked_by:
+  - uu_8_2019
   enacts: []
   enacted_by: []
 versions:

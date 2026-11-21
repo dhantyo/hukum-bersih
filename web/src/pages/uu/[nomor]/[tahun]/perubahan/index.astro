@@ -3,8 +3,8 @@
 // amendment by amendment. See lib/amendments.ts and docs/decisions/0008.
 import Base from "../../../../../layouts/Base.astro";
 import SynRow from "../../../../../components/SynRow.astro";
-import VersionPicker from "../../../../../components/VersionPicker.astro";
-import { amendmentSteps, hasAmendmentSteps, shortName, versionHistory, type PasalChange } from "../../../../../lib/amendments.ts";
+import VersionCompare from "../../../../../components/VersionCompare.astro";
+import { amendmentSteps, compareData, hasAmendmentSteps, shortName, versionHistory, type PasalChange } from "../../../../../lib/amendments.ts";
 import { tanggal } from "../../../../../lib/labels.ts";
 import { citeId, loadRegulations, loadRegulationText, pathOf, shortCite, type Regulation } from "../../../../../lib/peraturan.ts";
 
@@ -24,7 +24,7 @@ const LABEL: Record<PasalChange["kind"], string> = { diubah: "diubah", disisipka
 const count = (s: (typeof steps)[number], k: PasalChange["kind"]) => s.changes.filter((c) => c.kind === k).length;
 const lawHref = (id: string) => (pathOf(id) ? `${base}${pathOf(id)}` : undefined);
 ---
-<Base title={`${name}: perubahan pasal demi pasal`} description={`Pasal-pasal ${shortCite(r)} yang diubah, sebelum dan sesudah tiap perubahan.`} section="peraturan">
+<Base noindex title={`${name}: perubahan pasal demi pasal`} description={`Pasal-pasal ${shortCite(r)} yang diubah, sebelum dan sesudah tiap perubahan.`} section="peraturan">
   <nav class="breadcrumbs" aria-label="Lokasi">
     <a href={`${base}uu/`}>Undang-Undang</a><span aria-hidden="true">›</span>
     <a href={`${base}uu/tahun/${r.year}/`}>{r.year}</a><span aria-hidden="true">›</span>
@@ -43,8 +43,7 @@ const lawHref = (id: string) => (pathOf(id) ? `${base}${pathOf(id)}` : undefined
     PDF resmi tiap undang-undang.
   </p>
 
-  <h2 class="section">Bandingkan dua versi</h2>
-  <VersionPicker versions={h.versions} root={`${base}${pathOf(r.id)}perubahan/`} />
+  <VersionCompare data={compareData(h)} />
 
   <h2 class="section">Per perubahan</h2>
   <label class="find small">Cari pasal <input type="search" id="find" inputmode="text" placeholder="mis. 27 atau 45A" autocomplete="off" /></label>
@@ -79,7 +78,7 @@ const lawHref = (id: string) => (pathOf(id) ? `${base}${pathOf(id)}` : undefined
             noneA={c.kind === "disisipkan" ? `Pasal ${c.num}: belum ada` : `Pasal ${c.num}: teks sebelumnya belum tersedia`}
             noneB={c.kind === "dihapus" ? `Pasal ${c.num} dihapus` : `Pasal ${c.num}: teks barunya belum terbaca dari PDF`}>
             <span slot="meta" class="tag">{s.gap > 0 && c.row.a ? "sebelum: bisa jadi bukan teks terakhir" : ""}</span>
-            {(h.changedIn.get(c.num)?.length ?? 0) > 1 && <a slot="meta" class="tag all" href={`${base}${pathOf(r.id)}perubahan/pasal/${c.num}/`}>semua versi Pasal {c.num} →</a>}
+            {(h.changedIn.get(c.num)?.length ?? 0) > 1 && <a slot="meta" class="tag all" href={`?v=${h.versions.map((v) => v.id).join(",")}&pasal=${c.num}#banding`}>semua versi Pasal {c.num} ↑</a>}
             {c.instruction.header.length > 160
               ? <details class="instruction small"><summary>{c.instruction.n}. {c.instruction.header.slice(0, 140).replace(/\s+\S*$/, "")}…</summary>{c.instruction.header}</details>
               : <p class="instruction small">{c.instruction.n}. {c.instruction.header}</p>}
@@ -100,7 +99,7 @@ const lawHref = (id: string) => (pathOf(id) ? `${base}${pathOf(id)}` : undefined
 <script>
   // a link to one pasal (#uu_3_2020-pasal-4) opens the amendment it is in
   const openTarget = () => {
-    const el = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    const el = location.hash ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null;
     const d = el?.closest("details.step") as HTMLDetailsElement | null;
     if (d && !d.open) { d.open = true; el!.scrollIntoView(); }
   };

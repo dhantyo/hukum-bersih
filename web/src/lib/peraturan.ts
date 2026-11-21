@@ -125,6 +125,8 @@ export function loadRegulations(): Regulation[] {
           out.push({
             ...rec,
             number: String(rec.number),
+            // peraturan.go.id: "Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 40 Tahun 2007 ..."
+            status: /dicabut/i.test(rec.status ?? "") ? "dicabut" : /tidak berlaku/i.test(rec.status ?? "") ? "tidak_berlaku" : rec.status,
             tanggal_penetapan: asText(rec.tanggal_penetapan),
             versions: (rec.versions ?? []).map((v) => ({ ...v, date: asText(v.date) })),
             title: `${j.name} Nomor ${String(rec.number).toUpperCase()} Tahun ${rec.year}`,

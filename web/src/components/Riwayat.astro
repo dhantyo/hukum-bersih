@@ -38,10 +38,10 @@ const chipHref = (by: string, kind: string, n: string) =>
   compared.has(by) ? `${compareUrl}#${by}-pasal-${n}` : kind !== "disisipkan" && anchor.get(n) ? `#${anchor.get(n)}` : undefined;
 ---
 {events.length > 1 && (
-  <section class="riwayat" id="riwayat" aria-labelledby="riwayat-title">
+  <section class="riwayat" id="riwayat" aria-labelledby="riwayat-title" data-pagefind-ignore>
     <div class="top">
       <h2 id="riwayat-title">Riwayat</h2>
-      {compared.size > 0 && <a class="btn-compare" href={compareUrl}>Bandingkan versi</a>}
+      {compared.size > 0 && <a class="btn-compare" href={`${compareUrl}#banding`}>Bandingkan versi</a>}
     </div>
     {amendments > 0 && (
       <p class="intro">

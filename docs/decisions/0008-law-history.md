@@ -37,9 +37,19 @@ texts are checked against the base law's own pasal. Short names ("UU Minerba") a
 
 Addendum 2 (2026-11-21, Dante: "too crowded"): the timeline shows each amendment as one line
 with counts; the pasal are in a dropdown as number chips. Unrecorded amendments get a dashed
-segment. Several versions: "Bandingkan dua versi" (`perubahan/<a>...<b>/`, any two of the
-original and the amendments we read) and, for pasal changed more than once, one pasal in
-every version side by side (`perubahan/pasal/<n>/`).
+segment. Several versions (revised the same day, Dante: "add or remove version selectors"): one
+comparer on the Perubahan page (`components/VersionCompare.astro`): a row of version slots
+the reader adds, removes, drags or switches; one column per version, each marking what
+changed since the column to its left; filter by pasal; state in the URL. It runs in the
+browser on a compact JSON of the changed pasal, so it replaced the static pair pages and the
+per-pasal pages.
+
+Search (same day, Dante: "divide the results by hierarchy"): `/cari/` lists (1) short-name
+matches with their amending laws nested, (2) number and title matches, (3) full-text hits per
+law with the matching pasal, exact phrase first (Pagefind JS API instead of Pagefind UI).
+Lists, the metadata panel and the timeline are kept out of the full-text index.
+Revocations named in peraturan.go.id's status ("Dicabut Oleh : Undang-Undang Nomor ...") are
+now relations too (245).
 
 What we gave up (for now):
 - No consolidated current text (all amendments applied as one document): only the changed

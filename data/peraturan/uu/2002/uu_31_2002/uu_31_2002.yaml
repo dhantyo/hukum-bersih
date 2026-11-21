@@ -17,8 +17,10 @@ source_pdf_url: https://peraturan.go.id/files/uu31-2002.pdf
 relationships:
   amends: []
   amended_by: []
-  revokes: []
-  revoked_by: []
+  revokes:
+  - uu_2_1999
+  revoked_by:
+  - uu_2_2008
   enacts: []
   enacted_by: []
 versions:

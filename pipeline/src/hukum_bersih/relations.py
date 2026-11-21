@@ -193,6 +193,13 @@ def build(data_dir: Path) -> dict[str, int]:
             rel[k]["revokes"].append(target)
             if target in rel:
                 rel[target]["revoked_by"].append(k)
+        # peraturan.go.id's status: "Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 40 Tahun 2007"
+        for m in re.finditer(r"Dicabut\s+Oleh\s*:?\s*" + CITE, (rec.get("status") or "").upper()
+                             .replace("DICABUT OLEH", "Dicabut Oleh")):
+            by = cite_id(m)
+            if by != k and by in rel and k not in rel[by]["revokes"]:
+                rel[by]["revokes"].append(k)
+                rel[k]["revoked_by"].append(by)
         for target in found["enacts"]:
             rel[k]["enacts"].append(target)
             if target in rel:

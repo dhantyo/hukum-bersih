@@ -20,8 +20,10 @@ source_pdf_url: https://peraturan.go.id/files/uu27-2009bt.pdf
 relationships:
   amends: []
   amended_by: []
-  revokes: []
-  revoked_by: []
+  revokes:
+  - uu_22_2003
+  revoked_by:
+  - uu_17_2014
   enacts: []
   enacted_by: []
 versions:

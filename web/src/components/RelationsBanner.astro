@@ -23,7 +23,7 @@ const items = [
 ];
 ---
 {items.length > 0 && (
-  <aside class="banner" aria-label="Hubungan dengan peraturan lain">
+  <aside class="banner" aria-label="Hubungan dengan peraturan lain" data-pagefind-ignore>
     {items.map((i) => {
       const href = link(i.id, i.hash);
       return (

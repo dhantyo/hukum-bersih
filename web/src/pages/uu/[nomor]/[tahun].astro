@@ -71,7 +71,7 @@ const hasHistory = history(r).length > 1;
     <Riwayat r={r} doc={doc} compared={compared} />
     {doc ? (
       <>
-        <p class="notice small">Teks ini diambil otomatis dari PDF resmi dan bisa memuat kesalahan baca. Bila ragu, periksa <a href={r.source_pdf_url ?? r.source_url}>PDF resminya</a>.</p>
+        <p class="notice small" data-pagefind-ignore>Teks ini diambil otomatis dari PDF resmi dan bisa memuat kesalahan baca. Bila ragu, periksa <a href={r.source_pdf_url ?? r.source_url}>PDF resminya</a>.</p>
         <LawText doc={doc} notes={notes} />
       </>
     ) : (

@@ -22,10 +22,10 @@ const { crumbs, eyebrow, title, subtitle } = Astro.props;
   {eyebrow && <p class="eyebrow">{eyebrow}</p>}
   <h1>{title}</h1>
   {subtitle && <p class="subtitle">{subtitle}</p>}
-  <slot name="head" />
+  <div data-pagefind-ignore><slot name="head" /></div>
 </header>
 <div class="doc">
-  <aside class="panel" aria-label="Keterangan">
+  <aside class="panel" aria-label="Keterangan" data-pagefind-ignore>
     <details class="panel-fold" open>
       <summary>Keterangan dan daftar isi</summary>
       <slot name="panel" />
