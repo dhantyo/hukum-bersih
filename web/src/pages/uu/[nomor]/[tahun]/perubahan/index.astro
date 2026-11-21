@@ -3,8 +3,8 @@
 // amendment by amendment. See lib/amendments.ts and docs/decisions/0008.
 import Base from "../../../../../layouts/Base.astro";
 import SynRow from "../../../../../components/SynRow.astro";
-import VersionCompare from "../../../../../components/VersionCompare.astro";
-import { amendmentSteps, compareData, hasAmendmentSteps, shortName, versionHistory, type PasalChange } from "../../../../../lib/amendments.ts";
+import { koleksiOf, koleksiPath } from "../../../../../lib/koleksi.ts";
+import { amendmentSteps, hasAmendmentSteps, shortName, versionHistory, type PasalChange } from "../../../../../lib/amendments.ts";
 import { tanggal } from "../../../../../lib/labels.ts";
 import { citeId, loadRegulations, loadRegulationText, pathOf, shortCite, type Regulation } from "../../../../../lib/peraturan.ts";
 
@@ -18,6 +18,7 @@ const base = import.meta.env.BASE_URL;
 const doc = loadRegulationText(r);
 const steps = amendmentSteps(r, doc);
 const h = versionHistory(r, doc);
+const kol = koleksiOf(r.id);
 const name = shortName(r) ?? shortCite(r);
 const ORDINAL = ["", "pertama", "kedua", "ketiga", "keempat", "kelima", "keenam", "ketujuh", "kedelapan", "kesembilan", "kesepuluh"];
 const LABEL: Record<PasalChange["kind"], string> = { diubah: "diubah", disisipkan: "pasal baru", dihapus: "dihapus" };
@@ -26,8 +27,7 @@ const lawHref = (id: string) => (pathOf(id) ? `${base}${pathOf(id)}` : undefined
 ---
 <Base noindex title={`${name}: perubahan pasal demi pasal`} description={`Pasal-pasal ${shortCite(r)} yang diubah, sebelum dan sesudah tiap perubahan.`} section="peraturan">
   <nav class="breadcrumbs" aria-label="Lokasi">
-    <a href={`${base}uu/`}>Undang-Undang</a><span aria-hidden="true">›</span>
-    <a href={`${base}uu/tahun/${r.year}/`}>{r.year}</a><span aria-hidden="true">›</span>
+    {kol ? <><a href={`${base}koleksi/`}>Koleksi</a><span aria-hidden="true">›</span><a href={`${base}${koleksiPath(kol)}`}>{kol.name}</a></> : <><a href={`${base}uu/`}>Undang-Undang</a><span aria-hidden="true">›</span><a href={`${base}uu/tahun/${r.year}/`}>{r.year}</a></>}<span aria-hidden="true">›</span>
     <a href={`${base}${pathOf(r.id)}`}>{shortCite(r)}</a><span aria-hidden="true">›</span>
     <span>Perubahan</span>
   </nav>
@@ -43,7 +43,7 @@ const lawHref = (id: string) => (pathOf(id) ? `${base}${pathOf(id)}` : undefined
     PDF resmi tiap undang-undang.
   </p>
 
-  <VersionCompare data={compareData(h)} />
+  {kol && <p class="notice small">Untuk membandingkan beberapa versi sekaligus, buka <a href={`${base}${koleksiPath(kol)}#banding`}>koleksi {kol.name}</a>.</p>}
 
   <h2 class="section">Per perubahan</h2>
   <label class="find small">Cari pasal <input type="search" id="find" inputmode="text" placeholder="mis. 27 atau 45A" autocomplete="off" /></label>
@@ -78,7 +78,7 @@ const lawHref = (id: string) => (pathOf(id) ? `${base}${pathOf(id)}` : undefined
             noneA={c.kind === "disisipkan" ? `Pasal ${c.num}: belum ada` : `Pasal ${c.num}: teks sebelumnya belum tersedia`}
             noneB={c.kind === "dihapus" ? `Pasal ${c.num} dihapus` : `Pasal ${c.num}: teks barunya belum terbaca dari PDF`}>
             <span slot="meta" class="tag">{s.gap > 0 && c.row.a ? "sebelum: bisa jadi bukan teks terakhir" : ""}</span>
-            {(h.changedIn.get(c.num)?.length ?? 0) > 1 && <a slot="meta" class="tag all" href={`?v=${h.versions.map((v) => v.id).join(",")}&pasal=${c.num}#banding`}>semua versi Pasal {c.num} ↑</a>}
+            {(h.changedIn.get(c.num)?.length ?? 0) > 1 && <a slot="meta" class="tag all" href={kol ? `${base}${koleksiPath(kol)}?v=${h.versions.map((v) => v.id).join(",")}&pasal=${c.num}#banding` : "#"}>semua versi Pasal {c.num} →</a>}
             {c.instruction.header.length > 160
               ? <details class="instruction small"><summary>{c.instruction.n}. {c.instruction.header.slice(0, 140).replace(/\s+\S*$/, "")}…</summary>{c.instruction.header}</details>
               : <p class="instruction small">{c.instruction.n}. {c.instruction.header}</p>}

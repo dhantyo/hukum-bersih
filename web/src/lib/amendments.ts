@@ -9,7 +9,8 @@ import { join } from "node:path";
 import { AKN_DIR } from "./data.ts";
 import { diffLines, only, type PasalComparison } from "./compare.ts";
 import type { LawDoc, Pasal } from "./lawdoc.ts";
-import { byId, citeId, history, rel, type Regulation } from "./peraturan.ts";
+import { citeId, history, rel, type Regulation } from "./peraturan.ts";
+import { koleksiOf } from "./koleksi.ts";
 
 interface NewPasalJson {
   num: string;
@@ -105,20 +106,16 @@ export function hasAmendmentSteps(r: Regulation): boolean {
   return rel(r).amended_by.some((id) => load(id)?.amends === r.id);
 }
 
-/** Display name for a law: its short name if it has one ("UU Minerba"), for an amending law
- * the short name of what it amends ("Perubahan Kedua UU ITE"). */
+/** Display name for a law from its named collection: the base law is "UU ITE", an amending
+ * law "Perubahan Kedua UU ITE" (data/koleksi, lib/koleksi.ts). */
 const ORDINAL = ["", "", "Kedua", "Ketiga", "Keempat", "Kelima", "Keenam", "Ketujuh", "Kedelapan", "Kesembilan", "Kesepuluh"];
 export function shortName(r: Regulation): string | undefined {
-  if (r.short_name) return r.short_name;
-  const R = rel(r);
-  if (R.amends.length === 1) {
-    const target = byId(R.amends[0].id);
-    if (target?.short_name) {
-      const o = R.amends[0].order;
-      return `Perubahan${o && o > 1 ? ` ${ORDINAL[o] ?? o}` : ""} ${target.short_name}`;
-    }
-  }
-  return undefined;
+  const k = koleksiOf(r.id);
+  if (!k?.named) return undefined;
+  if (k.base.id === r.id) return k.name;
+  const a = rel(r).amends.find((x) => x.id === k.base.id);
+  if (!a) return undefined;
+  return `Perubahan${a.order && a.order > 1 ? ` ${ORDINAL[a.order] ?? a.order}` : ""} ${k.name}`;
 }
 
 // ---- Several versions at once -------------------------------------------------------------

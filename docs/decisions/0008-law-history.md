@@ -51,6 +51,14 @@ Lists, the metadata panel and the timeline are kept out of the full-text index.
 Revocations named in peraturan.go.id's status ("Dicabut Oleh : Undang-Undang Nomor ...") are
 now relations too (245).
 
+Collections (same day, Dante: "like a classifier in Notion ... it lists the UU inside
+itself"): a law family is its own object, `data/koleksi/<slug>.yaml` (name, subject,
+aliases, base law), page `/koleksi/<slug>/` with the laws inside (replaced laws, the base law,
+each amendment, gaps) and the version comparer. Members come from the relations. Law pages
+link to their collection; search lists collections first. Amended laws without a named
+collection get one automatically, titled after their subject. The short name moved from the
+law record (`short_name`) to the collection.
+
 What we gave up (for now):
 - No consolidated current text (all amendments applied as one document): only the changed
   pasal are shown, each with its source. A consolidation is a derived document and would need

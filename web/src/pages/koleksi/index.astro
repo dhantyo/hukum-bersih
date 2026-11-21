@@ -1,0 +1,55 @@
+---
+// All collections: named ones ("UU ITE") first, then every other law that has been amended.
+import Base from "../../layouts/Base.astro";
+import { amendments, koleksiPath, loadKoleksi, members } from "../../lib/koleksi.ts";
+import { citeId } from "../../lib/peraturan.ts";
+
+const base = import.meta.env.BASE_URL;
+const all = loadKoleksi();
+const named = all.filter((k) => k.named);
+const other = all.filter((k) => !k.named).sort((a, b) => b.base.year - a.base.year);
+const n = (k: (typeof all)[number]) => members(k).filter((m) => m.role !== "pendahulu").length;
+---
+<Base title="Koleksi" description="Undang-undang beserta semua perubahannya, dikelompokkan dengan nama yang biasa dipakai." section="koleksi">
+  <h1>Koleksi</h1>
+  <p class="lead">
+    Satu koleksi berisi undang-undang pokok beserta semua undang-undang yang mengubahnya, dan
+    undang-undang yang digantikannya.
+  </p>
+
+  <h2 class="section">Dengan nama singkat</h2>
+  <ul class="cards">
+    {named.map((k) => (
+      <li>
+        <a class="card" href={`${base}${koleksiPath(k)}`}>
+          <strong class="name">{k.name}</strong>
+          <span class="title">{k.title}</span>
+          <span class="meta">{citeId(k.base.id)} · {n(k)} undang-undang{amendments(k) > 0 ? ` · diubah ${amendments(k)}×` : ""}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+
+  <h2 class="section">Undang-undang lain yang pernah diubah</h2>
+  <ul class="rows">
+    {other.map((k) => (
+      <li>
+        <a href={`${base}${koleksiPath(k)}`}>{k.name}</a>
+        <span class="muted small"> {citeId(k.base.id)} · diubah {amendments(k)}×</span>
+      </li>
+    ))}
+  </ul>
+</Base>
+
+<style>
+  .lead { max-width: var(--measure); }
+  .section { font-size: var(--fs-lg); margin: var(--s-6) 0 var(--s-3); }
+  .cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: var(--s-3); }
+  .card { display: grid; gap: var(--s-1); padding: var(--s-4); border: 1px solid var(--line); border-radius: var(--r-md); text-decoration: none; color: var(--text); height: 100%; box-sizing: border-box; }
+  .card:hover { border-color: var(--primary); background: var(--primary-bg); }
+  .card .name { font-size: var(--fs-lg); color: var(--primary); }
+  .card .title { font-size: var(--fs-sm); }
+  .card .meta { font-size: var(--fs-xs); color: var(--text-muted); }
+  .rows { list-style: none; margin: 0; padding: 0; columns: 2 22rem; }
+  .rows li { padding: var(--s-1) 0; break-inside: avoid; }
+</style>

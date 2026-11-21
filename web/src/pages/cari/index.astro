@@ -15,7 +15,7 @@ const base = import.meta.env.BASE_URL;
 
   <div id="results" data-base={base} aria-live="polite">
     <section class="group" id="g-short" hidden>
-      <h2>Nama singkat</h2>
+      <h2>Koleksi</h2>
       <ul class="laws"></ul>
     </section>
     <section class="group" id="g-title" hidden>
@@ -35,6 +35,7 @@ const base = import.meta.env.BASE_URL;
 </Base>
 
 <script>
+  interface Kol { slug: string; name: string; named: boolean; t: string; a: string[]; k: number; u: string; mem: [string, string][] }
   interface Law { id: string; s: string | null; c: string; t: string; n: string; y: number; st: string | null; m: string[]; k: number; u: string }
   interface PfResult { data: () => Promise<PfData> }
   interface PfData { url: string; meta: { title?: string }; excerpt: string; sub_results: { title: string; url: string; excerpt: string }[] }
@@ -44,8 +45,8 @@ const base = import.meta.env.BASE_URL;
   const input = document.getElementById("cari-q") as HTMLInputElement;
   const STATUS: Record<string, string> = { berlaku: "Berlaku", dicabut: "Dicabut", diubah: "Diubah", tidak_berlaku: "Tidak berlaku", ruu: "RUU" };
 
-  let laws: Law[] | undefined;
-  const loadLaws = async () => (laws ??= await (await fetch(`${base}cari/laws.json`)).json());
+  let index: { laws: Law[]; koleksi: Kol[] } | undefined;
+  const loadIndex = async () => (index ??= await (await fetch(`${base}cari/laws.json`)).json());
   let pagefind: { init: () => Promise<void>; search: (q: string) => Promise<{ results: PfResult[] }> } | undefined;
   const loadPagefind = async () => {
     if (!pagefind) {
@@ -94,23 +95,36 @@ const base = import.meta.env.BASE_URL;
     for (const g of ["g-short", "g-title", "g-text", "none"]) show(g, false);
     if (!q) return;
 
-    const all = await loadLaws();
+    const { laws: all, koleksi } = await loadIndex();
     if (mine !== run) return;
     const words = q.split(" ").filter((w) => w !== "uu");
     const cite = citeOf(raw);
     const byId = new Map(all.map((l) => [l.id, l]));
 
-    // 1. short names: the base laws whose short name matches; amending laws nested under them
-    const shortHit = (l: Law) => l.s && words.length > 0 && words.every((w) => norm(l.s!).split(" ").some((x) => x.startsWith(w)));
-    const bases = all.filter((l) => shortHit(l) && l.m.length === 0);
+    // 1. collections: by name, aliases and subject; the laws inside are listed under each
+    const hit = (text: string) => words.length > 0 && words.every((w) => norm(text).split(" ").some((x) => x.startsWith(w)));
+    const kolHits = cite ? [] : koleksi
+      .map((k) => ({ k, score: hit(k.name) || k.a.some(hit) ? 2 : hit(k.t) ? 1 : 0 }))
+      .filter((x) => x.score > 0 && (x.k.named || x.score === 1))
+      .sort((a, b) => b.score - a.score || Number(b.k.named) - Number(a.k.named))
+      .slice(0, 6).map((x) => x.k);
     const shown = new Set<string>();
     const g1 = document.querySelector("#g-short ul")!;
-    g1.replaceChildren(...bases.map((b) => {
-      const kids = all.filter((l) => l.m.includes(b.id)).sort((a, c) => a.y - c.y);
-      shown.add(b.id); kids.forEach((k) => shown.add(k.id));
-      return lawItem(b, kids);
+    g1.replaceChildren(...kolHits.map((k) => {
+      k.mem.forEach(([id]) => shown.add(id));
+      return el("li", { class: "law kol" },
+        el("a", { href: k.u, class: "name" }, k.name),
+        el("div", { class: "meta" }, el("span", { class: "tag-k" }, "Koleksi"), k.named ? el("span", {}, k.t) : null,
+          el("span", {}, `${k.mem.filter(([, r]) => r !== "digantikan").length} undang-undang`),
+          k.k > 0 ? el("span", { class: "badge diubah" }, `diubah ${k.k}×`) : null),
+        el("ul", { class: "children" }, ...k.mem.map(([id, role]) => {
+          const l = byId.get(id);
+          return el("li", {}, el("span", { class: "role" }, role), " ", l ? el("a", { href: l.u }, l.c) : id, l?.t ? el("span", { class: "muted" }, ` ${l.t}`) : null);
+        })));
     }));
-    show("g-short", bases.length > 0);
+    show("g-short", kolHits.length > 0);
+    const bases: unknown[] = kolHits;
+    const shortHit = (l: Law) => !!l.s && hit(l.s);
 
     // 2. number and title
     const titleHits = all.filter((l) => !shown.has(l.id) && (
@@ -189,6 +203,8 @@ const base = import.meta.env.BASE_URL;
   #results :global(.meta) { display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s-3); align-items: center; margin-top: var(--s-1); font-size: var(--fs-sm); color: var(--text-muted); }
   #results :global(.children) { margin-top: var(--s-2); padding-left: var(--s-4); border-left: 2px solid var(--line); font-size: var(--fs-sm); }
   #results :global(.children li) { padding: 0.15rem 0; }
+  #results :global(.role) { display: inline-block; min-width: 8.5rem; font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); }
+  #results :global(.tag-k) { font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--primary); }
   #results :global(.subs) { margin-top: var(--s-2); padding-left: var(--s-4); border-left: 2px solid var(--line); }
   #results :global(.subs li) { margin-bottom: var(--s-2); }
   #results :global(.subs a) { font-size: var(--fs-sm); font-weight: 600; }

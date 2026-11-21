@@ -8,8 +8,8 @@ import { tanggal } from "../lib/labels.ts";
 import type { LawDoc } from "../lib/lawdoc.ts";
 import { citeId, history, lawPath, pathOf, type Changes, type Regulation } from "../lib/peraturan.ts";
 
-interface Props { r: Regulation; doc?: LawDoc; compared?: Set<string> }
-const { r, doc, compared = new Set() } = Astro.props;
+interface Props { r: Regulation; doc?: LawDoc; compared?: Set<string>; koleksi?: string }
+const { r, doc, compared = new Set(), koleksi } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const events = history(r);
 const anchor = new Map((doc?.pasal ?? []).map((p) => [p.num, p.eId]));
@@ -41,7 +41,7 @@ const chipHref = (by: string, kind: string, n: string) =>
   <section class="riwayat" id="riwayat" aria-labelledby="riwayat-title" data-pagefind-ignore>
     <div class="top">
       <h2 id="riwayat-title">Riwayat</h2>
-      {compared.size > 0 && <a class="btn-compare" href={`${compareUrl}#banding`}>Bandingkan versi</a>}
+      {koleksi && <a class="btn-compare" href={`${koleksi}${compared.size > 0 ? "#banding" : ""}`}>{compared.size > 0 ? "Bandingkan versi" : "Lihat koleksi"}</a>}
     </div>
     {amendments > 0 && (
       <p class="intro">

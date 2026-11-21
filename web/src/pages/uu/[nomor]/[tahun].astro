@@ -8,6 +8,7 @@ import Riwayat from "../../../components/Riwayat.astro";
 import RelationsBanner from "../../../components/RelationsBanner.astro";
 import { tanggal } from "../../../lib/labels.ts";
 import { amendmentSteps, shortName } from "../../../lib/amendments.ts";
+import { koleksiOf, koleksiPath } from "../../../lib/koleksi.ts";
 import { amendmentCount, citeId, history, lawPath, loadRegulations, loadRegulationText, pasalNotes, pathOf, rel, shortCite, STATUS_LABEL, type Regulation } from "../../../lib/peraturan.ts";
 
 export function getStaticPaths() {
@@ -32,16 +33,19 @@ const notes = new Map([...pasalNotes(r)].map(([n, ids]) => [n, ids.map((id) => (
     : pathOf(id) ? `${base}${pathOf(id)}` : undefined,
 }))]));
 const short = shortName(r);
+const koleksi = koleksiOf(r.id);
 const hasHistory = history(r).length > 1;
 ---
 <Base title={`${short ? `${short} (${shortCite(r)})` : shortCite(r)}${r.subject ? ` tentang ${r.subject}` : ""}`} description={`${r.title}${r.subject ? ` tentang ${r.subject}` : ""}`} section="peraturan">
   <DocLayout
-    crumbs={[{ href: `${base}uu/`, label: "Undang-Undang" }, { href: `${base}uu/tahun/${r.year}/`, label: String(r.year) }, { label: shortCite(r) }]}
+    crumbs={koleksi?.named
+      ? [{ href: `${base}koleksi/`, label: "Koleksi" }, { href: `${base}${koleksiPath(koleksi)}`, label: koleksi.name }, { label: shortCite(r) }]
+      : [{ href: `${base}uu/`, label: "Undang-Undang" }, { href: `${base}uu/tahun/${r.year}/`, label: String(r.year) }, { label: shortCite(r) }]}
     eyebrow={r.title}
     title={r.subject || r.title}
   >
     <div slot="head" class="head-meta">
-      {short && <span class="short" data-pagefind-meta="short">{short}</span>}
+      {koleksi && <a class="koleksi" href={`${base}${koleksiPath(koleksi)}`}><span class="k-label">Koleksi</span> {koleksi.name}</a>}
       {status && <span class={`badge ${status}`}>{STATUS_LABEL[status] ?? status}</span>}
       {r.tanggal_penetapan && <span class="muted small">Ditetapkan {tanggal(r.tanggal_penetapan)}</span>}
       {pasal && <span class="muted small">{pasal} pasal</span>}
@@ -52,7 +56,7 @@ const hasHistory = history(r).length > 1;
       <Facts title="Keterangan" facts={[
         { label: "Jenis", value: "Undang-Undang" },
         { label: "Nomor / tahun", value: `${r.number.toUpperCase()} / ${r.year}` },
-        { label: "Nama singkat", value: short ?? null },
+        { label: "Koleksi", value: koleksi?.name ?? null, href: koleksi ? `${base}${koleksiPath(koleksi)}` : undefined },
         { label: "Status", value: STATUS_LABEL[status] ?? r.status },
         { label: "Ditetapkan", value: r.tanggal_penetapan ? `${tanggal(r.tanggal_penetapan)}${r.tempat_penetapan ? `, ${r.tempat_penetapan}` : ""}` : null },
         { label: "Oleh", value: r.pejabat_penetapan },
@@ -68,7 +72,7 @@ const hasHistory = history(r).length > 1;
       {doc && <Toc doc={doc} />}
     </Fragment>
     <RelationsBanner r={r} />
-    <Riwayat r={r} doc={doc} compared={compared} />
+    <Riwayat r={r} doc={doc} compared={compared} koleksi={koleksi ? `${base}${koleksiPath(koleksi)}` : undefined} />
     {doc ? (
       <>
         <p class="notice small" data-pagefind-ignore>Teks ini diambil otomatis dari PDF resmi dan bisa memuat kesalahan baca. Bila ragu, periksa <a href={r.source_pdf_url ?? r.source_url}>PDF resminya</a>.</p>
@@ -89,7 +93,12 @@ const hasHistory = history(r).length > 1;
 </Base>
 
 <style>
-  .short { font-weight: 700; color: var(--primary); }
+  .koleksi {
+    display: inline-flex; gap: var(--s-2); align-items: baseline; text-decoration: none; font-weight: 600; color: var(--primary);
+    border: 1px solid var(--primary); border-radius: var(--r-sm); padding: 0.1rem var(--s-2); font-size: var(--fs-sm);
+  }
+  .koleksi:hover { background: var(--primary-bg); }
+  .k-label { font-size: var(--fs-xs); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); }
   .head-meta { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-4); align-items: center; }
   .notice { background: var(--bg-subtle); border-left: 3px solid var(--line); padding: var(--s-3) var(--s-4); border-radius: var(--r-sm); max-width: var(--measure); }
   .notice p:last-child { margin-bottom: 0; }

@@ -3,6 +3,7 @@
 import { loadRuus } from "../../lib/data.ts";
 import { amendmentCount, lawPath, loadRegulations, rel, shortCite } from "../../lib/peraturan.ts";
 import { shortName } from "../../lib/amendments.ts";
+import { amendments, koleksiPath, loadKoleksi, members } from "../../lib/koleksi.ts";
 
 export function GET() {
   const base = import.meta.env.BASE_URL;
@@ -21,5 +22,12 @@ export function GET() {
     id: `ruu_${x.slug}`, s: x.short_name ?? null, c: "RUU", t: x.title, n: "", y: 0, st: "ruu", m: [], k: 0,
     u: `${base}ruu/${x.slug}/`,
   }));
-  return new Response(JSON.stringify([...laws, ...ruu]), { headers: { "content-type": "application/json" } });
+  const ORD = ["", "pertama", "kedua", "ketiga", "keempat", "kelima", "keenam", "ketujuh", "kedelapan", "kesembilan", "kesepuluh"];
+  const koleksi = loadKoleksi().map((k) => ({
+    slug: k.slug, name: k.name, named: k.named, t: k.title, a: k.aliases, k: amendments(k),
+    u: `${base}${koleksiPath(k)}`,
+    // members: [id, role label]
+    mem: members(k).map((m) => [m.law.id, m.role === "perubahan" ? `perubahan ${ORD[m.order ?? 0] ?? m.order}` : m.role === "pokok" ? "pokok" : "digantikan"]),
+  }));
+  return new Response(JSON.stringify({ laws: [...laws, ...ruu], koleksi }), { headers: { "content-type": "application/json" } });
 }
