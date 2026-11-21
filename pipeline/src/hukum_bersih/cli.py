@@ -4,6 +4,7 @@
     parse            PDF -> Bluebell text (the format stored in data/)
     build-akn        Bluebell text in data/ -> Akoma Ntoso XML (+ amendment JSON) for the website
     relations        link amending / revoking / enacting laws
+    import-pdf       archive, record and convert hand-downloaded PDFs (uploads.py)
     manifest         print a manifest entry for a local file
     archive-retitle  rewrite titles/descriptions of archived items (files untouched)
     archive-delete   empty obsolete archive.org items we uploaded
@@ -86,6 +87,13 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--delay", type=float, default=2.0)
 
     sub.add_parser("relations", help="recompute amends/revokes/enacts links between regulations")
+
+    p = sub.add_parser("import-pdf", help="archive, record and convert hand-downloaded PDFs")
+    p.add_argument("pdfs", nargs="+", type=Path, help="named like 'UU Nomor 4 Tahun 2009.pdf'")
+    p.add_argument("--source", default="peraturan.bpk.go.id", help="host the PDFs came from")
+    p.add_argument("--source-url", default="", help="where they can be found again "
+                   "(default: https://<source>/)")
+    p.add_argument("--no-archive", action="store_true")
 
     p = sub.add_parser("manifest", help="print a manifest entry for a local file")
     p.add_argument("path", type=Path)
@@ -175,6 +183,13 @@ def main(argv: list[str] | None = None) -> int:
             return f"archived {r.item}  {r.entry.archive_url}"
 
         return _each(todo, archive_one, args.delay)
+
+    if args.command == "import-pdf":
+        from .uploads import import_pdf
+
+        url = args.source_url or f"https://{args.source}/"
+        return _each([str(p) for p in args.pdfs], lambda p: import_pdf(
+            Path(p), args.data_dir, args.source, url, do_archive=not args.no_archive))
 
     if args.command == "relations":
         from .relations import build

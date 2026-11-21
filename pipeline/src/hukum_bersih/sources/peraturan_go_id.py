@@ -99,7 +99,8 @@ def tanggal_iso(text: str) -> str | None:
     m = re.match(r"(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})", text or "")
     if not m or m[2].lower() not in BULAN:
         return None
-    return f"{m[3]}-{BULAN[m[2].lower()]:02d}-{int(m[1]):02d}"
+    iso = f"{m[3]}-{BULAN[m[2].lower()]:02d}-{int(m[1]):02d}"
+    return None if iso == "1970-01-01" else iso     # an empty date in their database, not a date
 
 
 def import_one(client: Client, item: Listing, jenis: str, data_dir: Path) -> str:
@@ -147,18 +148,34 @@ def import_one(client: Client, item: Listing, jenis: str, data_dir: Path) -> str
 def convert(client: Client, rec: dict, folder: Path, data_dir: Path) -> str:
     """Download the record's PDF, record it in the manifest, and (re)write its text version.
     Updates ``rec`` in place (versions, pdf_sha256, pdf_quality, parse_error)."""
-    from ..akn.bluebell import to_bluebell
-    from ..akn.build import to_akn
-    from ..pdf.structure import PARSER_VERSION, parse_pdf
-
     url = rec["source_pdf_url"]
     pdf_path = url.removeprefix(BASE)
+    with tempfile.TemporaryDirectory() as tmp:
+        pdf = Path(tmp) / "doc.pdf"
+        pdf.write_bytes(client.get(pdf_path).content)      # raises on failure: nothing changed
+        entry = entry_for_file(pdf, url, None, rec["id"], pdf_path.rsplit("/", 1)[-1])
+        if rec.get("pdf_sha256") != entry.sha256:          # new or changed upstream
+            rec["pdf_sha256"] = entry.sha256
+            manifest = manifest_path(data_dir, url)
+            manifest.parent.mkdir(parents=True, exist_ok=True)
+            with manifest.open("a") as f:
+                f.write(json.dumps(entry.to_dict(), ensure_ascii=False) + "\n")
+        return convert_pdf(pdf, rec, folder, source="peraturan.go.id")
+
+
+def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str) -> str:
+    """Parse a local PDF of the record and (re)write its text version. A failed parse never
+    costs the text we already have (2026-11-21: an outage deleted three texts); the new text
+    replaces the old one only once it exists. ``source``: where the PDF came from."""
+    from ..akn.bluebell import to_bluebell
+    from ..akn.build import to_akn
+    from ..manifest import sha256_file
+    from ..pdf.structure import PARSER_VERSION, parse_pdf
+
     work, date = rec["id"], rec.get("tanggal_penetapan")
     old = [v for v in rec.get("versions") or [] if v.get("text")]
 
     def replace_versions(new: list[dict]) -> None:
-        """Swap in the new text only once it exists: a failed download or parse must never
-        cost the text we already have (2026-11-21: an outage deleted three texts)."""
         for v in old:
             if not any(n["text"] == v["text"] for n in new):
                 (folder / v["text"]).unlink(missing_ok=True)
@@ -167,44 +184,35 @@ def convert(client: Client, rec: dict, folder: Path, data_dir: Path) -> str:
         rec.pop("parse_error", None)
         rec.pop("reparse_error", None)
 
-    with tempfile.TemporaryDirectory() as tmp:
-        pdf = Path(tmp) / "doc.pdf"
-        pdf.write_bytes(client.get(pdf_path).content)      # raises on failure: nothing changed
-        entry = entry_for_file(pdf, url, None, work, pdf_path.rsplit("/", 1)[-1])
-        if rec.get("pdf_sha256") != entry.sha256:          # new or changed upstream
-            rec["pdf_sha256"] = entry.sha256
-            manifest = manifest_path(data_dir, url)
-            manifest.parent.mkdir(parents=True, exist_ok=True)
-            with manifest.open("a") as f:
-                f.write(json.dumps(entry.to_dict(), ensure_ascii=False) + "\n")
-        try:
-            doc = parse_pdf(pdf)
-            if doc.pasal_count == 0:
-                if old:                                    # keep the text we have
-                    rec["reparse_error"] = f"v{PARSER_VERSION}: no pasal found"
-                    return "kept old text (new parse found no pasal)"
-                rec.pop("parse_error", None)
-                rec["pdf_quality"] = "image_only_or_unparsed"
-                return "no pasal found (scanned PDF?)"
-            text = to_bluebell(doc)
-            to_akn(text, rec["akn"], "act")                # validates structure and markup
-            version = f"{work}_{date or rec['year']}"
-            folder.mkdir(parents=True, exist_ok=True)
-            (folder / f"{version}.txt").write_text(text)
-            replace_versions([{
-                "id": version, "kind": "asli", "source": "official",
-                "date": date, "date_basis": "tanggal_penetapan",
-                "text": f"{version}.txt", "pasal_count": doc.pasal_count,
-                "parser_version": PARSER_VERSION,
-            }])
-            return f"{doc.pasal_count} pasal"
-        except Exception as e:  # noqa: BLE001 - record and move on; never guess
-            err = f"{type(e).__name__}: {str(e)[:200]}"
-            if old:
-                rec["reparse_error"] = f"v{PARSER_VERSION}: {err}"
-                return f"kept old text (parse error: {err[:80]})"
-            rec["parse_error"] = err
-            return f"parse error: {err[:80]}"
+    try:
+        doc = parse_pdf(pdf)
+        if doc.pasal_count == 0:
+            if old:                                        # keep the text we have
+                rec["reparse_error"] = f"v{PARSER_VERSION}: no pasal found"
+                return "kept old text (new parse found no pasal)"
+            rec.pop("parse_error", None)
+            rec["pdf_quality"] = "image_only_or_unparsed"
+            return "no pasal found (scanned PDF?)"
+        text = to_bluebell(doc)
+        to_akn(text, rec["akn"], "act")                    # validates structure and markup
+        version = f"{work}_{date or rec['year']}"
+        folder.mkdir(parents=True, exist_ok=True)
+        (folder / f"{version}.txt").write_text(text)
+        replace_versions([{
+            "id": version, "kind": "asli", "source": "official",
+            "date": date, "date_basis": "tanggal_penetapan",
+            "text": f"{version}.txt", "pasal_count": doc.pasal_count,
+            "parser_version": PARSER_VERSION,
+            "pdf_source": source, "pdf_sha256": sha256_file(pdf),
+        }])
+        return f"{doc.pasal_count} pasal"
+    except Exception as e:  # noqa: BLE001 - record and move on; never guess
+        err = f"{type(e).__name__}: {str(e)[:200]}"
+        if old:
+            rec["reparse_error"] = f"v{PARSER_VERSION}: {err}"
+            return f"kept old text (parse error: {err[:80]})"
+        rec["parse_error"] = err
+        return f"parse error: {err[:80]}"
 
 
 def reparse(client: Client, jenis: str, data_dir: Path,

@@ -1,0 +1,64 @@
+name: Import uploaded PDFs
+
+# PDFs downloaded by hand (e.g. from peraturan.bpk.go.id in a browser) are attached to a GitHub
+# release; this workflow archives each on archive.org, records it in the source manifest and
+# converts it to text (pipeline/src/hukum_bersih/uploads.py). Files are matched to laws by
+# name: "UU Nomor 4 Tahun 2009.pdf", "uu-no-4-tahun-2009.pdf", "UU_4_2009.pdf".
+on:
+  workflow_dispatch:
+    inputs:
+      release:
+        description: "Release tag holding the PDFs"
+        default: "uploads"
+      source:
+        description: "Where the PDFs came from (host)"
+        default: "peraturan.bpk.go.id"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-peraturan        # never at the same time as the importer: both write data/
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync
+        working-directory: pipeline
+      - name: Download the release's PDFs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.release }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/uploads"
+          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" --pattern '*.pdf' --pattern '*.PDF' \
+            --dir "$RUNNER_TEMP/uploads"
+          ls -la "$RUNNER_TEMP/uploads" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Archive, record, convert
+        working-directory: pipeline
+        env:
+          IA_ACCESS_KEY: ${{ secrets.IA_ACCESS_KEY }}
+          IA_SECRET_KEY: ${{ secrets.IA_SECRET_KEY }}
+          SOURCE: ${{ inputs.source }}
+        run: |
+          shopt -s nullglob nocaseglob
+          uv run hukum-bersih import-pdf "$RUNNER_TEMP"/uploads/*.pdf --source "$SOURCE" \
+            | tee -a "$GITHUB_STEP_SUMMARY" || true
+          uv run hukum-bersih relations
+      - name: Commit
+        run: |
+          git add data/
+          if git diff --cached --quiet; then echo "Nothing changed"; exit 0; fi
+          git -c user.name="hukum-bersih bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -qm "peraturan: import uploaded PDFs from ${{ inputs.source }} (release ${{ inputs.release }})"
+          for i in 1 2 3 4 5; do
+            git -c user.name="hukum-bersih bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              pull -q --no-rebase --no-edit origin "${GITHUB_REF_NAME}" && git push -q && exit 0
+            sleep $((i * 20))
+          done
+          exit 1
