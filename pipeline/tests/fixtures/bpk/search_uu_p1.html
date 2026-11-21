@@ -1,0 +1,1663 @@
+<html lang="id">
+<head>
+    <base href="/30/" />
+    <title>Pencarian Peraturan</title>
+</head>
+<body>
+    <div class="d-flex flex-column flex-root app-root">
+        <div class="flex-column flex-column-fluid app-page">
+            <div class="app-header" data-kt-sticky="true" data-kt-sticky-activate="{default: false, lg: true}"
+                data-kt-sticky-name="app-header-sticky" data-kt-sticky-offset="{default: false, lg: '300px'}">
+                <div class="app-container container-xxl d-flex align-items-stretch justify-content-between"
+                    id="kt_app_header_container">
+                    <div class="d-flex align-items-center d-lg-none ms-n2 me-2" title="Show sidebar menu">
+                        <div class="btn btn-icon btn-active-color-primary w-35px h-35px" id="kt_app_header_menu_toggle">
+                            <span class="svg-icon svg-icon-2">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0 me-lg-15">
+                        <a href="/">
+                            <img alt="Logo" src="assets/media/logos/logo.png"
+                                class="h-45px d-none d-sm-inline app-sidebar-logo-default theme-light-show" />
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1"
+                        id="kt_app_header_wrapper">
+                        <div class="app-header-menu app-header-mobile-drawer align-items-stretch" data-kt-drawer="true" data-kt-drawer-name="app-header-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="250px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_header_menu_toggle" data-kt-swapper="true" data-kt-swapper-mode="{default: 'append', lg: 'prepend'}" data-kt-swapper-parent="{default: '#kt_app_body', lg: '#kt_app_header_wrapper'}">
+    <!--begin::Menu-->
+    <div class="menu menu-rounded menu-active-bg menu-state-primary menu-column menu-lg-row menu-title-gray-700 menu-icon-gray-500 menu-arrow-gray-500 menu-bullet-gray-500 my-5 my-lg-0 align-items-stretch fw-semibold px-2 px-lg-0"
+         id="kt_app_header_menu" data-kt-menu="true">
+        <!--begin:Menu item-->
+        <div class="menu-item  me-0 me-lg-2">
+            <!--begin:Menu link-->
+            <a href="/" class="menu-link">
+                <span class="menu-title">Beranda</span>
+                <span class="menu-arrow d-lg-none"></span>
+            </a>
+            <!--end:Menu link-->
+        </div>
+        <!--end:Menu item-->
+        <!--begin:Menu item-->
+        <!--end:Menu item-->
+        <!--begin:Menu item-->
+        <div class="menu-item  me-0 me-lg-2">
+            <!--begin:Menu link-->
+            <a class="menu-link" href="/Subjek">
+                <span class="menu-title">Subjek</span>
+                <span class="menu-arrow d-lg-none"></span>
+            </a>
+            <!--end:Menu link-->
+        </div>
+        <!--end:Menu item-->
+        <!--begin:Menu item-->
+        <div class="menu-item  me-0 me-lg-2">
+            <!--begin:Menu link-->
+            <a class="menu-link" href="/Jenis">
+                <span class="menu-title">Jenis</span>
+                <span class="menu-arrow d-lg-none"></span>
+            </a>
+            <!--end:Menu link-->
+        </div>
+        <!--end:Menu item-->
+        <!--begin:Menu item-->
+        <div class="menu-item  me-0 me-lg-2">
+            <!--begin:Menu link-->
+            <a class="menu-link" href="/Tahun">
+                <span class="menu-title">Tahun</span>
+                <span class="menu-arrow d-lg-none"></span>
+            </a>
+            <!--end:Menu link-->
+        </div>
+        <!--end:Menu item-->
+        <!--begin:Menu item-->
+        <div class="menu-item  me-0 me-lg-2">
+            <!--begin:Menu link-->
+            <a class="menu-link" href="/Glosarium">
+                <span class="menu-title">Glosarium</span>
+                <span class="menu-arrow d-lg-none"></span>
+            </a>
+            <!--end:Menu link-->
+        </div>
+        <!--end:Menu item-->
+        <!--begin:Menu item-->
+        <div class="menu-item  me-0 me-lg-2">
+            <!--begin:Menu link-->
+            <a class="menu-link" href="/Tematik">
+                <span class="menu-title">Tematik</span>
+                <span class="menu-arrow d-lg-none"></span>
+            </a>
+            <!--end:Menu link-->
+        </div>
+        <!--end:Menu item-->
+        <!--begin:Menu item-->
+        <div class="menu-item  me-0 me-lg-2">
+            <!--begin:Menu link-->
+            <a class="menu-link" href="/Perwakilan">
+                <span class="menu-title">Perwakilan</span>
+                <span class="menu-arrow d-lg-none"></span>
+            </a>
+            <!--end:Menu link-->
+        </div>
+        <!--end:Menu item-->
+    </div>
+    <!--end::Menu-->
+</div>
+                        <div class="app-navbar flex-shrink-0">
+                            <div class="d-flex align-items-center align-items-stretch mx-4">
+    <div class="header-search d-flex align-items-center w-lg-200px">
+        <form method="get" id="searchForm" class="d-none d-lg-block w-100 position-relative mb-5 mb-lg-0" autocomplete="off" action="/Search">
+            <!--begin::Hidden input(Added to disable form autocomplete)-->
+            <input type="hidden" />
+            <!--end::Hidden input-->
+            <span class="svg-icon search-icon svg-icon-2 svg-icon-lg-3 svg-icon-gray-600 position-absolute top-50 translate-middle-y ms-5">
+            </span>
+            <!--end::Svg Icon-->
+            <!--end::Icon-->
+            <!--begin::Input-->
+            <input type="text"
+                   class="search-input form-control form-control rounded-1 ps-13" name="keywords"
+                   value="" placeholder="Search..." />
+            <!--end::Input-->
+        </form>
+    </div>
+</div>
+<form method="post" id="logoutForm" action="/Identity/Account/Logout"><input name="__RequestVerificationToken" type="hidden" value="CfDJ8A5IrkTxYTRCmePKzBCoYY6Hq9LQe7AACbIq0NeB9KC6um95fMHInP8Lms8zGVUMwEGwzXO2HSi293xK0S7dOL49CRBrv0nvJK288hRgwOz6yIO1E1XQa1x7G67HTnnFUt8aDP5vOxode56uggj7HcE" /></form>
+    <div class="app-navbar-item ms-5">
+        <a class="btn btn-primary link-light" href="/Admin/Dashboard">
+            Login
+        </a>
+    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-column flex-row-fluid app-wrapper">
+<div class="bg-gd-bpk-2">
+    <div class="container-xxl app-container">
+        <div class="py-lg-16 py-8">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="card">
+    <div class="card-body p-4">
+        <form method="get" id="searchForm" class="mb-0" action="/Search">
+            <div class="row g-4">
+                <div class="col-md-8 col-sm-12">
+                    <div class="position-relative">
+                        <div class="position-absolute translate-middle-y top-50 start-0 mx-6">
+                            <span class="svg-icon svg-icon-2hx">
+                                <i class="bi bi-search"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control form-control-solid ps-14"
+                               name="keywords" value="" placeholder="Search" id="input-keywords" style="height:65px;" />
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12 d-grid">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+                <div class="col-md-2 col-sm-12 d-grid">
+                    <a id="kt_horizontal_search_advanced_link" class="btn btn-secondary" data-bs-toggle="collapse" href="#kt_advanced_search_form">Adv. Search</a>
+                </div>
+            </div>
+            <!--begin::Advance form-->
+            <div class="collapse" id="kt_advanced_search_form">
+                <!--begin::Separator-->
+                <div class="separator separator-dashed mt-9 mb-6"></div>
+                <!--end::Separator-->
+                <!--begin::Row-->
+                <div class="row g-8 mb-8">
+                    <!--begin::Col-->
+                    <div class="col-xxl-6">
+                        <label class="fs-6 form-label fw-bold text-dark">Tentang</label>
+                        <input type="text" class="form-control form-control-solid"
+                               name="tentang" value="" placeholder="Tentang Peraturan" />
+                    </div>
+                    <!--end::Col-->
+                    <!--begin::Col-->
+                    <div class="col-xxl-6">
+                        <label class="fs-6 form-label fw-bold text-dark">Nomor</label>
+                        <input type="text" class="form-control form-control-solid"
+                               name="nomor" value="" placeholder="Nomor Peraturan" />
+                    </div>
+                    <!--end::Col-->
+                </div>
+                <!--end::Row-->
+                <!--begin::Row-->
+                <div class="row g-8 mb-8">
+                    <!--begin::Col-->
+                    <div class="col-xxl-6">
+                        <label class="fs-6 form-label fw-bold text-dark">Tahun</label>
+                    </div>
+                    <!--end::Col-->
+                    <!--begin::Col-->
+                    <div class="col-xxl-6">
+                        <label class="fs-6 form-label fw-bold text-dark">Entitas</label>
+                        <!--begin::Select-->
+                        <!--end::Select-->
+                    </div>
+                    <!--end::Col-->
+                </div>
+                <!--end::Row-->
+                <!--begin::Row-->
+                <div class="row g-8 mb-8">
+                    <!--begin::Col-->
+                    <div class="col-xxl-6">
+                        <label class="fs-6 form-label fw-bold text-dark">Jenis</label>
+                    </div>
+                    <!--end::Col-->
+                    <!--begin::Col-->
+                    <div class="col-xxl-6">
+                        <label class="fs-6 form-label fw-bold text-dark">Tag</label>
+                        <!--begin::Select-->
+                        <!--end::Select-->
+                    </div>
+                    <!--end::Col-->
+                </div>
+                <!--end::Row-->
+            </div>
+            <!--end::Advance form-->
+        </form>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-xxl app-container">
+    <div class="mt-12 mb-8 mx-10">
+        <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+            <h2 class="text-primary mb-0">PENCARIAN <span class="opacity-50">PERATURAN</span></h2>
+        </div>
+        <div class="d-flex align-items-baseline flex-wrap gap-2 mt-3">
+                <p class="fs-6 text-gray-700 mb-0">
+                    <span class="fw-semibold text-gray-900">1.929</span> peraturan
+                    <span class="text-muted">· 0,004 detik</span>
+                </p>
+        </div>
+            <div class="d-flex flex-wrap align-items-center gap-2 mt-4">
+                <span class="text-muted fs-7">Filter</span>
+                    <a class="badge badge-light-primary fs-7 fw-normal text-decoration-none" href="/Search" title="Hapus kriteria Jenis">Jenis: Undang-undang (UU) &times;</a>
+            </div>
+    </div>
+    <div class="rounded-4">
+                <div class="row mb-8">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body p-xl-10 p-8 d-flex">
+                                <div class="flex-grow-1">
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                        <div class="col-lg-8 fw-semibold fs-5">
+                                            <a class="text-gray-600 text-decoration-none" href="/Details/350096/uu-no-5-tahun-2026">
+                                                Undang-undang (UU) Nomor 5 Tahun 2026
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                                <div class="text-end">
+                                                    <span class="text-muted">&#x2022; Berlaku mulai 5 bulan yang lalu</span>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="g-4 g-xl-9 mb-4 row">
+                                        <div class="col-lg-10 fs-2 fw-bold pe-4">
+                                            <a href="/Details/350096/uu-no-5-tahun-2026">
+                                                Perubahan Ketiga atas Undang-Undang Nomor 2 Tahun 2002 tentang Kepolisian Negara Republik Indonesia
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 text-lg-end">
+                                            <a class="btn btn-light-primary btn-sm" data-bs-toggle="modal" data-bs-target="#abstrak-350096">Abstrak</a>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                            <div class="col">
+                                                    <span class="badge badge-light-primary mb-2">Kepolisian</span>
+                                            </div>
+                                    </div>
+                                        <div>
+                                            <div class="fw-bold border-bottom border-gray-300 pb-4 mb-4">Status Peraturan</div>
+                                                <div class="row g-4 g-xl-9 mb-8">
+                                                    <div class="col-lg-2">
+                                                        <div class="fw-bold bg-light-primary text-primary px-4 py-2">
+                                                            Mengubah
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-10">
+                                                        <ol type="a" class="opacity-75">
+                                                                <li class="text-start mb-2">
+                                                                        <div>
+                                                                            <a class="text-danger" href="/Details/246523/uu-no-6-tahun-2023">UU No. 6 Tahun 2023</a>
+                                                                            <span> tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2022 tentang Cipta Kerja menjadi Undang-Undang</span>
+                                                                            <br />
+                                                                            <span></span>
+                                                                        </div>
+                                                                </li>
+                                                                <li class="text-start mb-2">
+                                                                        <div>
+                                                                            <a class="text-danger" href="/Details/149750/uu-no-11-tahun-2020">UU No. 11 Tahun 2020</a>
+                                                                            <span> tentang Cipta Kerja</span>
+                                                                            <br />
+                                                                            <span></span>
+                                                                        </div>
+                                                                </li>
+                                                                <li class="text-start mb-2">
+                                                                        <div>
+                                                                            <a class="text-danger" href="/Details/44418/uu-no-2-tahun-2002">UU No. 2 Tahun 2002</a>
+                                                                            <span> tentang Kepolisian Negara Republik Indonesia</span>
+                                                                            <br />
+                                                                            <span></span>
+                                                                        </div>
+                                                                </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    <div class="pt-4 mt-4">
+                                            <div class="fw-bold border-bottom border-gray-300 pb-4 mb-4">Download file:</div>
+                                            <div class="row g-4">
+                                                    <div class="col-lg-6">
+                                                        <a title="UU Nomor 5 Tahun 2026.pdf" class="download-file text-danger text-hover-primary" data-label="" data-kategori="Peraturan" data-id="413801" href="/Download/413801/UU%20Nomor%205%20Tahun%202026.pdf">
+                                                            <i class="bi bi-file-earmark-pdf me-2"></i>UU Nomor 5 Tahun 2026.pdf
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="abstrak-350096" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">ABSTRAK PERATURAN</h5>
+                                <!--begin::Close-->
+                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <!--end::Close-->
+                            </div>
+                            <div class="modal-body">
+                                <div style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                    <p class="text-uppercase">Kepolisian Negara Republik Indonesia - perubahan</p>
+                                    <p>2026</p>
+                                    <p class="text-uppercase">Undang-undang (UU) NO. 5, LN 2026 (63), TLN (7181) : 16 hlm.; jdih.setneg.go.id</p>
+                                    <p class="text-uppercase">Undang-undang (UU) tentang Perubahan Ketiga atas Undang-Undang Nomor 2 Tahun 2002 tentang Kepolisian Negara Republik Indonesia</p>
+                                    <table style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                        <tr>
+                                            <td valign="top">ABSTRAK:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                        <li>Kepolisian Negara Republik Indonesia menurut Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 merupakan alat negara yang berperan dalam memelihara keamanan dan ketertiban masyarakat, memerlukan penyesuaian pengaturan dalam Undang-Undang Nomor 2 Tahun 2002 tentang Kepolisian Negara Republik Indonesia sebagaimana telah beberapa kali diubah, terakhir dengan Undang-Undang Nomor 6 Tahun 2023 tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2022 tentang Cipta Kerja menjadi Undang-Undang, agar sejalan dengan pemenuhan kebutuhan hukum masyarakat, dan perkembangan paradigma penegakan hukum, serta perkembangan peraturan perundang-undangan terkini, sehingga perlu diubah.</li>
+                                                        <li>Dasar hukum Undang-Undang ini adalah Pasal 20, Pasal 21, Pasal 30 ayat (2), ayat (4), dan ayat (5) UUD Tahun 1945; Ketetapan MPR No. VI/MPR/2000; Ketetapan MPR No. VII/MPR/2000; UU No. 2 Tahun 2002 sebagaimana telah beberapa kali diubah terakhir dengan UU No. 6 Tahun 2023; dan UU No. 20 Tahun 2023.</li>
+                                                        <li>Dalam Undang-Undang ini diatur perubahan ketentuan mengenai Kepolisian Negara Republik Indonesia, antara lain penegasan kewenangan Kapolri, perluasan tugas Polri termasuk penanggulangan tindak pidana siber, penguatan prinsip profesionalitas, proporsionalitas, transparansi, dan akuntabilitas, serta pengawasan kepolisian melalui fungsi inspektorat, pengawasan penyidikan, profesi dan pengamanan. Diatur pula persyaratan pengangkatan anggota Polri termasuk kesempatan bagi penyandang disabilitas, hak atas gaji dan jaminan sosial, netralitas Polri dalam politik praktis, pengisian jabatan di luar organisasi Polri, batas usia pensiun anggota Polri, pendidikan profesi yang memuat kurikulum HAM, demokrasi, dan prinsip humanis, serta penguatan tugas, fungsi, dan keanggotaan Komisi Kepolisian Nasional.</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">CATATAN:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                    <li>Undang-undang (UU) ini mulai berlaku pada tanggal 17 Juni 2026.</li>
+                                                        <li>UU ini mengubah UU No. 2 Tahun 2002 sebagaimana telah beberapa kali diubah terakhir dengan UU No. 6 Tahun 2023.</li>
+                                                        <li>Lampiran file: 26 hlm (batang tubuh hlm 1 sd 16 dan penjelasan hlm 17 sd 26)</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <div class="row mb-8">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body p-xl-10 p-8 d-flex">
+                                <div class="flex-grow-1">
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                        <div class="col-lg-8 fw-semibold fs-5">
+                                            <a class="text-gray-600 text-decoration-none" href="/Details/350166/uu-no-4-tahun-2026">
+                                                Undang-undang (UU) Nomor 4 Tahun 2026
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                                <div class="text-end">
+                                                    <span class="text-muted">&#x2022; Berlaku mulai 5 bulan yang lalu</span>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="g-4 g-xl-9 mb-4 row">
+                                        <div class="col-lg-10 fs-2 fw-bold pe-4">
+                                            <a href="/Details/350166/uu-no-4-tahun-2026">
+                                                Perubahan atas Undang-Undang Nomor 4 Tahun 2023 tentang Pengembangan dan Penguatan Sektor Keuangan
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 text-lg-end">
+                                            <a class="btn btn-light-primary btn-sm" data-bs-toggle="modal" data-bs-target="#abstrak-350166">Abstrak</a>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                            <div class="col">
+                                                    <span class="badge badge-light-primary mb-2">Perbankan, Lembaga Keuangan</span>
+                                                    <span class="badge badge-light-primary mb-2">Perekonomian</span>
+                                                    <span class="badge badge-light-primary mb-2">Kebijakan Pemerintah</span>
+                                            </div>
+                                    </div>
+                                        <div>
+                                            <div class="fw-bold border-bottom border-gray-300 pb-4 mb-4">Status Peraturan</div>
+                                                <div class="row g-4 g-xl-9 mb-8">
+                                                    <div class="col-lg-2">
+                                                        <div class="fw-bold bg-light-primary text-primary px-4 py-2">
+                                                            Mengubah
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-10">
+                                                        <ol type="a" class="opacity-75">
+                                                                <li class="text-start mb-2">
+                                                                        <div>
+                                                                            <a class="text-danger" href="/Details/240203/uu-no-4-tahun-2023">UU No. 4 Tahun 2023</a>
+                                                                            <span> tentang Pengembangan dan Penguatan Sektor Keuangan</span>
+                                                                            <br />
+                                                                            <span></span>
+                                                                        </div>
+                                                                </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    <div class="pt-4 mt-4">
+                                            <div class="fw-bold border-bottom border-gray-300 pb-4 mb-4">Download file:</div>
+                                            <div class="row g-4">
+                                                    <div class="col-lg-6">
+                                                        <a title="UU Nomor 4 Tahun 2026.pdf" class="download-file text-danger text-hover-primary" data-label="" data-kategori="Peraturan" data-id="413875" href="/Download/413875/UU%20Nomor%204%20Tahun%202026.pdf">
+                                                            <i class="bi bi-file-earmark-pdf me-2"></i>UU Nomor 4 Tahun 2026.pdf
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="abstrak-350166" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">ABSTRAK PERATURAN</h5>
+                                <!--begin::Close-->
+                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <!--end::Close-->
+                            </div>
+                            <div class="modal-body">
+                                <div style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                    <p class="text-uppercase">Pengembangan - Penguatan - Keuangan - perubahan</p>
+                                    <p>2026</p>
+                                    <p class="text-uppercase">Undang-undang (UU) NO. 4, LN 2026 (62), TLN (7180) : 137 hlm.</p>
+                                    <p class="text-uppercase">Undang-undang (UU) tentang Perubahan atas Undang-Undang Nomor 4 Tahun 2023 tentang Pengembangan dan Penguatan Sektor Keuangan</p>
+                                    <table style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                        <tr>
+                                            <td valign="top">ABSTRAK:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                        <li>Undang-Undang Nomor 4 Tahun 2023 tentang Pengembangan dan Penguatan Sektor Keuangan perlu dilakukan perbaikan sebagai tindak lanjut Putusan Mahkamah Konstitusi dan sesuai dengan kebutuhan hukum masyarakat.</li>
+                                                        <li>Dasar hukum UU ini adalah Pasal 20, Pasal 21, Pasal 23D, Pasal 33, dan Pasal 34 UUD 1945; UU No. 34 Tahun 1964; UU No. 7 Tahun 1992; UU No. 8 Tahun 1995; UU No. 23 Tahun 1999; UU No. 24 Tahun 2004; UU No. 21 Tahun 2008; UU No. 21 Tahun 2011; UU No. 40 Tahun 2014; UU No. 9 Tahun 2016; dan UU No. 4 Tahun 2023.</li>
+                                                        <li>UU ini mengubah beberapa ketentuan dalam UU No. 4 Tahun 2023. Materi muatan Undang-Undang ini meliputi perbaikan, penyesuaian, serta pengaturan terhadap beberapa materi muatan antara lain mengenai: 1) penguatan status Lembaga Penjamin Simpanan sebagai badan hukum dan lembaga negara yang independen; penyempurnaan pengaturan mengenai susunan, persyaratan, proses seleksi, pemberhentian dan penggantian anggota Dewan Komisioner; serta penguatan mekanisme penyusunan anggaran Lembaga Penjamin Simpanan; 2) penambahan tugas Otoritas Jasa Keuangan untuk melakukan pengawasan dan pengaturan terhadap bursa mineral dan komoditas strategis, termasuk kegiatan pengelolaan dana publik lainnya; 3) penguatan pasar modal Indonesia melalui demutualisasi Bursa Efek Indonesia untuk memperkuat tata kelola, meningkatkan kepercayaan investor, dan memperluas partisipasi pemangku kepentingan; 4) penyempurnaan pengaturan penyelidikan dan penyidikan di sektor jasa keuangan, serta mekanisme keadilan restoratif yang diselaraskan dengan pengaturan dalam Kitab Undang-Undang Hukum Acara Pidana; 5) pengaturan mengenai bursa mineral dan komoditas strategis; dan lain-lain.</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">CATATAN:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                    <li>Undang-undang (UU) ini mulai berlaku pada tanggal 17 Juni 2026.</li>
+                                                        <li>UU ini mengubah UU No. 4 Tahun 2023.</li>
+                                                        <li>Lampiran file: 207 hlm (batang tubuh hlm 1 sd 137 dan penjelasan hlm 138 sd 207)</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <div class="row mb-8">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body p-xl-10 p-8 d-flex">
+                                <div class="flex-grow-1">
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                        <div class="col-lg-8 fw-semibold fs-5">
+                                            <a class="text-gray-600 text-decoration-none" href="/Details/349942/uu-no-3-tahun-2026">
+                                                Undang-undang (UU) Nomor 3 Tahun 2026
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                                <div class="text-end">
+                                                    <span class="text-muted">&#x2022; Berlaku mulai 6 bulan yang lalu</span>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="g-4 g-xl-9 mb-4 row">
+                                        <div class="col-lg-10 fs-2 fw-bold pe-4">
+                                            <a href="/Details/349942/uu-no-3-tahun-2026">
+                                                Pelindungan Saksi dan Korban
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 text-lg-end">
+                                            <a class="btn btn-light-primary btn-sm" data-bs-toggle="modal" data-bs-target="#abstrak-349942">Abstrak</a>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                            <div class="col">
+                                                    <span class="badge badge-light-primary mb-2">Hak Asasi Manusia</span>
+                                                    <span class="badge badge-light-primary mb-2">Hukum Pidana, Perdata, dan Dagang</span>
+                                            </div>
+                                    </div>
+                                        <div>
+                                            <div class="fw-bold border-bottom border-gray-300 pb-4 mb-4">Status Peraturan</div>
+                                                <div class="row g-4 g-xl-9 mb-8">
+                                                    <div class="col-lg-2">
+                                                        <div class="fw-bold bg-light-primary text-primary px-4 py-2">
+                                                            Mencabut
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-10">
+                                                        <ol type="a" class="opacity-75">
+                                                                <li class="text-start mb-2">
+                                                                        <div>
+                                                                            <a class="text-danger" href="/Details/38701/uu-no-31-tahun-2014">UU No. 31 Tahun 2014</a>
+                                                                            <span> tentang Perubahan atas Undang-Undang Nomor 13 Tahun 2006 Tentang Perlindungan Saksi dan Korban </span>
+                                                                            <br />
+                                                                            <span></span>
+                                                                        </div>
+                                                                </li>
+                                                                <li class="text-start mb-2">
+                                                                        <div>
+                                                                            <a class="text-danger" href="/Details/40178/uu-no-13-tahun-2006">UU No. 13 Tahun 2006</a>
+                                                                            <span> tentang Perlindungan Saksi dan Korban</span>
+                                                                            <br />
+                                                                            <span></span>
+                                                                        </div>
+                                                                </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    <div class="pt-4 mt-4">
+                                            <div class="fw-bold border-bottom border-gray-300 pb-4 mb-4">Download file:</div>
+                                            <div class="row g-4">
+                                                    <div class="col-lg-6">
+                                                        <a title="UU Nomor 3 Tahun 2026.pdf" class="download-file text-danger text-hover-primary" data-label="" data-kategori="Peraturan" data-id="413642" href="/Download/413642/UU%20Nomor%203%20Tahun%202026.pdf">
+                                                            <i class="bi bi-file-earmark-pdf me-2"></i>UU Nomor 3 Tahun 2026.pdf
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="abstrak-349942" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">ABSTRAK PERATURAN</h5>
+                                <!--begin::Close-->
+                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <!--end::Close-->
+                            </div>
+                            <div class="modal-body">
+                                <div style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                    <p class="text-uppercase">Pelindungan - Saksi - Korban</p>
+                                    <p>2026</p>
+                                    <p class="text-uppercase">Undang-undang (UU) NO. 3, LN 2026 (59), TLN (7179) : 42 hlm.; jdih.setneg.go.id</p>
+                                    <p class="text-uppercase">Undang-undang (UU) tentang Pelindungan Saksi dan Korban</p>
+                                    <table style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                        <tr>
+                                            <td valign="top">ABSTRAK:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                        <li>Undang-Undang Nomor 13 Tahun 2006 tentang Perlindungan Saksi dan Korban sebagaimana telah diubah dengan Undang-Undang Nomor 31 Tahun 2014 tentang Perubahan atas Undang-Undang Nomor 13 Tahun 2006 tentang Perlindungan Saksi dan Korban tidak sesuai lagi dengan perkembangan hukum dan kebutuhan mengenai pelindungan terhadap saksi, korban, saksi pelaku, pelapor, informan, dan/atau ahli, sehingga perlu diganti.</li>
+                                                        <li>Dasar hukum UU ini adalah Pasal 20, Pasal 21, Pasal 28G, Pasal 28I, dan Pasal 28J UUD 1945.</li>
+                                                        <li>UU ini mengatur mengenai pelindungan saksi dan korban. Materi muatan dalam Undang-Undang ini terdiri atas: a. Pelindungan dan Hak Saksi, Korban, Saksi Pelaku, Pelapor, Informan, dan/atau Ahli; b. Dana Abadi Korban, Restitusi, dan Kompensasi; c. Lembaga Pelindungan Saksi dan Korban; d. syarat dan tata cara pemberian Pelindungan; e. kerja sama; f. peran Pemerintah Pusat dan Pemerintah Daerah; g. partisipasi masyarakat; h. pendanaan; dan i. ketentuan pidana.</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">CATATAN:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                    <li>Undang-undang (UU) ini mulai berlaku pada tanggal 20 Mei 2026.</li>
+                                                        <li>Pada saat Undang-Undang ini mulai berlaku, Undang-Undang Nomor 13 Tahun 2006 tentang Perlindungan Saksi dan Korban (Lembaran Negara Republik Indonesia Tahun 2006 Nomor 64, Tambahan Lembaran Negara Republik Indonesia Nomor 4635) sebagaimana telah diubah dengan Undang-Undang Nomor 31 Tahun 2014 tentang Perubahan atas Undang-Undang Nomor 13 Tahun 2006 tentang Perlindungan Saksi dan Korban (Lembaran Negara Republik Indonesia Tahun 2014 Nomor 293, Tambahan Lembaran Negara Republik Indonesia Nomor 5602), dicabut dan dinyatakan tidak berlaku.</li>
+                                                        <li>Pendanaan pelaksanaan Undang-Undang ini bersumber dari: a. Anggaran Pendapatan dan Belanja Negara; b. Anggaran Pendapatan dan Belanja Daerah sesuai dengan kewenangan dan kemampuan keuangan Pemerintah Daerah; dan c. sumber lain yang sah dan tidak mengikat sesuai dengan ketentuan peraturan perundang-undangan.</li>
+                                                        <li>Lampiran file: 62 hlm (batang tubuh hlm 1 sd 42; penjelasan hlm 43 sd 62)</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <div class="row mb-8">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body p-xl-10 p-8 d-flex">
+                                <div class="flex-grow-1">
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                        <div class="col-lg-8 fw-semibold fs-5">
+                                            <a class="text-gray-600 text-decoration-none" href="/Details/352436/uu-no-2-tahun-2026">
+                                                Undang-undang (UU) Nomor 2 Tahun 2026
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                                <div class="text-end">
+                                                    <span class="text-muted">&#x2022; Berlaku mulai 6 bulan yang lalu</span>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="g-4 g-xl-9 mb-4 row">
+                                        <div class="col-lg-10 fs-2 fw-bold pe-4">
+                                            <a href="/Details/352436/uu-no-2-tahun-2026">
+                                                Pelindungan Pekerja Rumah Tangga
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 text-lg-end">
+                                            <a class="btn btn-light-primary btn-sm" data-bs-toggle="modal" data-bs-target="#abstrak-352436">Abstrak</a>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                            <div class="col">
+                                                    <span class="badge badge-light-primary mb-2">Hak Asasi Manusia</span>
+                                            </div>
+                                    </div>
+                                    <div class="pt-4 mt-4">
+                                            <div class="fw-bold border-bottom border-gray-300 pb-4 mb-4">Download file:</div>
+                                            <div class="row g-4">
+                                                    <div class="col-lg-6">
+                                                        <a title="UU No. 2 Tahun 2026.pdf" class="download-file text-danger text-hover-primary" data-label="" data-kategori="Peraturan" data-id="416259" href="/Download/416259/UU%20No.%202%20Tahun%202026.pdf">
+                                                            <i class="bi bi-file-earmark-pdf me-2"></i>UU No. 2 Tahun 2026.pdf
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="abstrak-352436" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">ABSTRAK PERATURAN</h5>
+                                <!--begin::Close-->
+                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <!--end::Close-->
+                            </div>
+                            <div class="modal-body">
+                                <div style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                    <p class="text-uppercase">Pelindungan - Pekerja Rumah Tangga </p>
+                                    <p>2026</p>
+                                    <p class="text-uppercase">Undang-undang (UU) NO. 2, LN 2026 (47), TLN (7174) : 18 hlm.; jdih.setneg.go.id</p>
+                                    <p class="text-uppercase">Undang-undang (UU) tentang Pelindungan Pekerja Rumah Tangga</p>
+                                    <table style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                        <tr>
+                                            <td valign="top">ABSTRAK:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                        <li>Setiap warga negara berhak atas pekerjaan dan penghidupan yang layak sesuai dengan harkat, martabat, dan hak asasi manusia sebagaimana diamanatkan dalam Pancasila dan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945. Pekerja Rumah Tangga (PRT) berhak memperoleh pengakuan dan pelindungan sebagai pekerja, termasuk pelindungan terhadap pemberi kerja untuk mewujudkan keseimbangan hak dan kewajiban dalam hubungan kerja dengan tetap menghormati agama, kebiasaan, budaya, dan adat istiadat. Untuk menjamin pelindungan hukum yang sesuai dengan karakteristik pekerjaan kerumahtanggaan, perlu dibentuk Undang-Undang tentang Pelindungan Pekerja Rumah Tangga</li>
+                                                        <li>Dasar Hukum Undang-Undang ini adalah: Pasal 20, Pasal 21, Pasal 27 ayat (2), Pasal 28D ayat (1) dan ayat (2), serta Pasal 28I UUD Negara Republik Indonesia Tahun 1945.</li>
+                                                        <li>Dalam Undang-Undang ini diatur mengenai pelindungan Pekerja Rumah Tangga (PRT) yang meliputi ketentuan umum, asas dan tujuan, perekrutan PRT secara langsung maupun melalui Perusahaan Penempatan Pekerja Rumah Tangga (P3RT), waktu kerja, lingkup pekerjaan kerumahtanggaan, hubungan kerja, hak dan kewajiban PRT, pemberi kerja, dan P3RT, pelatihan vokasi, perizinan berusaha P3RT, pembinaan dan pengawasan, penyelesaian perselisihan melalui musyawarah mufakat dan mediasi, partisipasi masyarakat, ketentuan peralihan, dan ketentuan penutup. Undang-Undang ini juga mengatur mengenai perlindungan terhadap PRT melalui pemberian kepastian hukum, pengaturan hak atas upah, waktu kerja, cuti, tunjangan hari raya keagamaan, jaminan sosial, lingkungan kerja yang aman dan sehat, pelatihan vokasi, mekanisme penyelesaian perselisihan, serta pengawasan oleh pemerintah. Selain itu diatur kewajiban dan larangan bagi P3RT beserta sanksi administratif untuk menjamin penyelenggaraan penempatan dan pelindungan PRT secara profesional dan bertanggung jawab.</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">CATATAN:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                    <li>Undang-undang (UU) ini mulai berlaku pada tanggal 30 April 2026.</li>
+                                                        <li>Lampiran file: 26 hlm (batang tubuh hlm 1 sd 18; penjelasan hlm 19 sd 26)</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <div class="row mb-8">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body p-xl-10 p-8 d-flex">
+                                <div class="flex-grow-1">
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                        <div class="col-lg-8 fw-semibold fs-5">
+                                            <a class="text-gray-600 text-decoration-none" href="/Details/337869/uu-no-1-tahun-2026">
+                                                Undang-undang (UU) Nomor 1 Tahun 2026
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                                <div class="text-end">
+                                                    <span class="text-muted">&#x2022; Berlaku mulai 10 bulan yang lalu</span>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="g-4 g-xl-9 mb-4 row">
+                                        <div class="col-lg-10 fs-2 fw-bold pe-4">
+                                            <a href="/Details/337869/uu-no-1-tahun-2026">
+                                                Penyesuaian Pidana
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 text-lg-end">
+                                            <a class="btn btn-light-primary btn-sm" data-bs-toggle="modal" data-bs-target="#abstrak-337869">Abstrak</a>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                            <div class="col">
+                                                    <span class="badge badge-light-primary mb-2">Hukum Pidana, Perdata, dan Dagang</span>
+                                            </div>
+                                    </div>
+                                        <div>
+                                            <div class="fw-bold border-bottom border-gray-300 pb-4 mb-4">Status Peraturan</div>
+                                                <div class="row g-4 g-xl-9 mb-8">
+                                                    <div class="col-lg-2">
+                                                        <div class="fw-bold bg-light-primary text-primary px-4 py-2">
+                                                            Mengubah
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-10">
+                                                        <ol type="a" class="opacity-75">
+                                                                <li class="text-start mb-2">
+                                                                        <div>
+                                                                            <a class="text-danger" href="/Details/246523/uu-no-6-tahun-2023">UU No. 6 Tahun 2023</a>
+                                                                            <span> tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2022 tentang Cipta Kerja menjadi Undang-Undang</span>
+                                                                            <br />
+                                                                            <span>Ketentuan Pasal 238 dalam Undang-Undang Nomor 23 Tahun 2014 tentang Pemerintahan Daerah, diubah</span>
+                                                                        </div>
+                                                                </li>
+                                                                <li class="text-start mb-2">
+                                                                        <div>
+                                                                            <a class="text-danger" href="/Details/234935/uu-no-1-tahun-2023">UU No. 1 Tahun 2023</a>
+                                                                            <span> tentang Kitab Undang-Undang Hukum Pidana</span>
+                                                                            <br />
+                                                                            <span></span>
+                                                                        </div>
+                                                                </li>
+                                                                <li class="text-start mb-2">
+                                                                        <div>
+                                                                            <a class="text-danger" href="/Details/212810/uu-no-13-tahun-2022">UU No. 13 Tahun 2022</a>
+                                                                            <span> tentang Perubahan Kedua atas Undang-Undang Nomor 12 Tahun 2011 tentang Pembentukan Peraturan Perundang-Undangan</span>
+                                                                            <br />
+                                                                            <span>Ketentuan Pasal 15 Undang-Undang Nomor 12 Tahun 2011 diubah.</span>
+                                                                        </div>
+                                                                </li>
+                                                                <li class="text-start mb-2">
+                                                                        <div>
+                                                                            <a class="text-danger" href="/Details/121716/uu-no-15-tahun-2019">UU No. 15 Tahun 2019</a>
+                                                                            <span> tentang Perubahan atas Undang-Undang Nomor 12 Tahun 2011 Tentang Pembentukan Peraturan Perundang-Undangan</span>
+                                                                            <br />
+                                                                            <span>Ketentuan Pasal 15 Undang-Undang Nomor 12 Tahun 2011 diubah.</span>
+                                                                        </div>
+                                                                </li>
+                                                                <li class="text-start mb-2">
+                                                                        <div>
+                                                                            <a class="text-danger" href="/Details/38209/uu-no-9-tahun-2015">UU No. 9 Tahun 2015</a>
+                                                                            <span> tentang Perubahan Kedua Atas Undang-Undang Nomor 23 Tahun 2014 tentang Pemerintahan Daerah&#xD;&#xA;</span>
+                                                                            <br />
+                                                                            <span>Ketentuan Pasal 238 dalam Undang-Undang Nomor 23 Tahun 2014, diubah</span>
+                                                                        </div>
+                                                                </li>
+                                                                <li class="text-start mb-2">
+                                                                        <div>
+                                                                            <a class="text-danger" href="/Details/37678/uu-no-2-tahun-2015">UU No. 2 Tahun 2015</a>
+                                                                            <span> tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2014 tentang Perubahan atas Undang-Undang Nomor 23 Tahun 2014 Tentang Pemerintahan Daerah Menjadi Undang-Undang</span>
+                                                                            <br />
+                                                                            <span>Ketentuan Pasal 238 dalam Undang-Undang Nomor 23 Tahun 2014, diubah</span>
+                                                                        </div>
+                                                                </li>
+                                                                <li class="text-start mb-2">
+                                                                        <div>
+                                                                            <a class="text-danger" href="/Details/38685/uu-no-23-tahun-2014">UU No. 23 Tahun 2014</a>
+                                                                            <span> tentang Pemerintahan Daerah</span>
+                                                                            <br />
+                                                                            <span>Ketentuan Pasal 238 dalam Undang-Undang Nomor 23 Tahun 2014, diubah</span>
+                                                                        </div>
+                                                                </li>
+                                                                <li class="text-start mb-2">
+                                                                        <div>
+                                                                            <a class="text-danger" href="/Details/39188/uu-no-12-tahun-2011">UU No. 12 Tahun 2011</a>
+                                                                            <span> tentang Pembentukan Peraturan Perundang-Undangan </span>
+                                                                            <br />
+                                                                            <span>Ketentuan Pasal 15 Undang-Undang Nomor 12 Tahun 2011 diubah.</span>
+                                                                        </div>
+                                                                </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    <div class="pt-4 mt-4">
+                                            <div class="fw-bold border-bottom border-gray-300 pb-4 mb-4">Download file:</div>
+                                            <div class="row g-4">
+                                                    <div class="col-lg-6">
+                                                        <a title="UU Nomor 1 Tahun 2026.pdf" class="download-file text-danger text-hover-primary" data-label="" data-kategori="Peraturan" data-id="400929" href="/Download/400929/UU%20Nomor%201%20Tahun%202026.pdf">
+                                                            <i class="bi bi-file-earmark-pdf me-2"></i>UU Nomor 1 Tahun 2026.pdf
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="abstrak-337869" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">ABSTRAK PERATURAN</h5>
+                                <!--begin::Close-->
+                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <!--end::Close-->
+                            </div>
+                            <div class="modal-body">
+                                <div style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                    <p class="text-uppercase">Penyesuaian Pidana</p>
+                                    <p>2026</p>
+                                    <p class="text-uppercase">Undang-undang (UU) NO. 1, LN 2026 (1), TLN (7153) : 51 hlm.; jdih.setneg.go.id</p>
+                                    <p class="text-uppercase">Undang-undang (UU) tentang Penyesuaian Pidana</p>
+                                    <table style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                        <tr>
+                                            <td valign="top">ABSTRAK:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                        <li>Penyesuaian terhadap ketentuan pidana dalam setiap Undang-Undang di luar Undang-Undang Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana dan Peraturan Daerah dengan Buku Kesatu Undang-Undang Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana serta penyesuaian ketentuan dalam Undang-Undang Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana mendesak dilakukan sebelum berlaku pada tanggal 2 Januari 2026 guna menghindari disparitas penegakan hukum, duplikasi pengaturan pidana, serta dampak negatif terhadap kepastian hukum dan rasa keadilan di masyarakat.</li>
+                                                        <li>Dasar hukum UU ini adalah Pasal 5 ayat (1), Pasal 20, dan Pasal 28D ayat (1) UUD 1945 dan UU No. 1 Tahun 2023.</li>
+                                                        <li>UU ini mengatur mengenai penyesuaian terhadap ketentuan pidana dalam setiap undang-undang di luar UU No. 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana dan Peraturan Daerah dengan Buku Kesatu Undang-Undang Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana serta penyesuaian ketentuan dalam Undang-Undang Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana.</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">CATATAN:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                    <li>Undang-undang (UU) ini mulai berlaku pada tanggal 02 Januari 2026.</li>
+                                                        <li>Lampiran file: 260 hlm (batang tubuh hlm 1 sd 51, penjelasan hlm 51 sd 71, dan lampiran hlm 72 sd 260)</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <div class="row mb-8">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body p-xl-10 p-8 d-flex">
+                                <div class="flex-grow-1">
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                        <div class="col-lg-8 fw-semibold fs-5">
+                                            <a class="text-gray-600 text-decoration-none" href="/Details/359755/uu-no-27-tahun-2026-pelindungan-ketenagakerjaan">
+                                                Undang-undang (UU) Nomor 27 Tahun 2026
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                                <div class="text-end">
+                                                    <span class="text-muted">&#x2022; Berlaku mulai 25 hari yang lalu</span>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="g-4 g-xl-9 mb-4 row">
+                                        <div class="col-lg-10 fs-2 fw-bold pe-4">
+                                            <a href="/Details/359755/uu-no-27-tahun-2026-pelindungan-ketenagakerjaan">
+                                                Pelindungan Ketenagakerjaan
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 text-lg-end">
+                                            <a class="btn btn-light-primary btn-sm" data-bs-toggle="modal" data-bs-target="#abstrak-359755">Abstrak</a>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                            <div class="col">
+                                                    <span class="badge badge-light-primary mb-2">Ketenagakerjaan</span>
+                                            </div>
+                                    </div>
+                                        <div>
+                                            <div class="fw-bold border-bottom border-gray-300 pb-4 mb-4">Status Peraturan</div>
+                                                <div class="row g-4 g-xl-9 mb-8">
+                                                    <div class="col-lg-2">
+                                                        <div class="fw-bold bg-light-primary text-primary px-4 py-2">
+                                                            Mencabut
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-10">
+                                                        <ol type="a" class="opacity-75">
+                                                                <li class="text-start mb-2">
+                                                                        <div>
+                                                                            <a class="text-danger" href="/Details/43013/uu-no-13-tahun-2003">UU No. 13 Tahun 2003</a>
+                                                                            <span> tentang Ketenagakerjaan</span>
+                                                                            <br />
+                                                                            <span></span>
+                                                                        </div>
+                                                                </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <div class="row g-4 g-xl-9 mb-8">
+                                                    <div class="col-lg-2">
+                                                        <div class="fw-bold bg-light-primary text-primary px-4 py-2">
+                                                            Mencabut sebagian
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-10">
+                                                        <ol type="a" class="opacity-75">
+                                                                <li class="text-start mb-2">
+                                                                        <div>
+                                                                            <a class="text-danger" href="/Details/246523/uu-no-6-tahun-2023">UU No. 6 Tahun 2023</a>
+                                                                            <span> tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2022 tentang Cipta Kerja menjadi Undang-Undang</span>
+                                                                            <br />
+                                                                            <span>Bab IV Bagian Kesatu Pasal 80 huruf a dan Bagian Kedua Pasal 81 dalam Lampiran Undang-Undang Nomor 6 Tahun 2023, dicabut dan dinyatakan tidak berlaku</span>
+                                                                        </div>
+                                                                </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    <div class="pt-4 mt-4">
+                                            <div class="fw-bold border-bottom border-gray-300 pb-4 mb-4">Download file:</div>
+                                            <div class="row g-4">
+                                                    <div class="col-lg-6">
+                                                        <a title="UU Nomor 27 Tahun 2026.pdf" class="download-file text-danger text-hover-primary" data-label="" data-kategori="Peraturan" data-id="425330" href="/Download/425330/UU%20Nomor%2027%20Tahun%202026.pdf">
+                                                            <i class="bi bi-file-earmark-pdf me-2"></i>UU Nomor 27 Tahun 2026.pdf
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="abstrak-359755" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">ABSTRAK PERATURAN</h5>
+                                <!--begin::Close-->
+                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <!--end::Close-->
+                            </div>
+                            <div class="modal-body">
+                                <div style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                    <p class="text-uppercase">Pelindungan - Ketenagakerjaan</p>
+                                    <p>2026</p>
+                                    <p class="text-uppercase">Undang-undang (UU) NO. 27, LN 2026 (179), TLN (7222) : 176 hlm.; jdih.setneg.go.id</p>
+                                    <p class="text-uppercase">Undang-undang (UU) tentang Pelindungan Ketenagakerjaan</p>
+                                    <table style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                        <tr>
+                                            <td valign="top">ABSTRAK:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                        <li>Dalam rangka mewujudkan tujuan pembangunan nasional diperlukan perbaikan pengaturan di bidang ketenagakerjaan dengan memberikan kepastian dan pelindungan kepada masyarakat serta peningkatan kualitas tenaga kerja yang berkeahlian, tangguh, adaptif, inovatif, kompeten, dan mampu mengisi pasar kerja lokal dan global. Pengaturan ketenagakerjaan diatur dalam 2 (dua) Undang-Undang yaitu Undang-Undang Nomor 13 Tahun 2003 tentang Ketenagakerjaan dan Undang-Undang Nomor 6 Tahun 2023 tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2022 tentang Cipta Kerja menjadi Undang-Undang, sehingga terbuka kemungkinan adanya materi atau substansi di antara kedua Undang-Undang tersebut tidak sinkron atau tidak harmonis. Selain itu, Mahkamah Konstitusi dalam Putusan Nomor 168/PUU-XXI/2023 memberikan pertimbangan agar pembentuk undang-undang menata ulang materi pengaturan ketenagakerjaan dalam undang-undang tersendiri.</li>
+                                                        <li>Dasar hukum UU ini adalah Pasal 20, Pasal 21, Pasal 27 ayat (2), Pasal 28, Pasal 28D ayat (2), Pasal 28E ayat (1), Pasal 28E ayat (3), Pasal 28H ayat (3), Pasal 28I ayat (2), dan Pasal 33 ayat (1) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945.</li>
+                                                        <li>UU ini mengatur mengenai Pelindungan Ketenagakerjaan. Ketentuan dalam Undang-Undang ini berlaku bagi setiap orang yang bekerja dengan menerima Upah dan/atau imbalan dalam bentuk lain pada seluruh bidang pekerjaan dari Pemberi Kerja. Menindaklanjuti Putusan Mahkamah Konstitusi Nomor 168/PUU-XXI/2023, dalam Undang-Undang ini diatur mengenai: 1) materi muatan yang diatur dalam Undang-Undang Nomor 13 Tahun 2003 namun materi muatan tersebut tidak diubah oleh Undang-Undang Nomor 6 Tahun 2023; 2) materi muatan Undang-Undang Nomor 13 Tahun 2003 yang telah diubah melalui Putusan Mahkamah Konstitusi Nomor 7/PUU-XII/214 dan Putusan Mahkamah Konstitusi Nomor 115/PUU-VII/2009 namun belum diakomodir dalam Undang-Undang Nomor 6 Tahun 2023; 3) materi muatan klaster ketenagakerjaan yang diatur dalam Undang-Undang Nomor 6 Tahun 2023; dan 4) materi muatan klaster Ketenagakerjaan dalam Undang-Undang Nomor 6 Tahun 2023 yang telah diubah melalui Putusan Mahkamah Konstitusi Nomor 168/PUU-XXI/2023. Selain menindaklanjuti Putusan Mahkamah Konstitusi Nomor 168/PUU-XXI/2023, Undang-Undang ini memuat substansi yang memenuhi perkembangan dan kebutuhan hukum di masyarakat terkait Ketenagakerjaan, antara lain: 1) Pelatihan Kerja diperuntukkan bagi pencari kerja yang membutuhkan bekal Kompetensi Kerja; Pekerja/Buruh yang akan meningkatkan Kompetensi Kerja; dan/atau Pekerja/Buruh yang akan melakukan alih Kompetensi Kerja; 2) Pengaturan mengenai Tenaga Kerja Sektor Informal dan Hubungan Pekerjaan Tertentu yang diberikan pelindungan melalui  jaminan sosial; 3) Adanya pengaturan mengenai larangan bagi Pemberi Kerja untuk mensyaratkan dan menahan ijazah dan/atau dokumen pribadi milik Pekerja/Buruh sebagai jaminan dalam Hubungan Kerja; 4) Perubahan jangka waktu Perjanjian Kerja waktu tertentu yakni paling lama 2 (dua) tahun dan hanya dapat diperpanjang 2 (dua) kali dengan perpanjangan paling lama 1 (satu) tahun; dan lain-lain.</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">CATATAN:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                    <li>Undang-undang (UU) ini mulai berlaku pada tanggal 28 Oktober 2026.</li>
+                                                        <li>Pada saat Undang-Undang ini mulai berlaku: a) Undang-Undang Nomor 13 Tahun 2003 tentang Ketenagakerjaan (Lembaran Negara Republik Indonesia Tahun 2003 Nomor 39, Tambahan Lembaran Negara Republik Indonesia Nomor 4279); b) Bab IV Bagian Kesatu Pasal 80 huruf a dan Bagian Kedua Pasal 81 dalam Lampiran Undang-Undang Nomor 6 Tahun 2023 tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2022 tentang Cipta Kerja menjadi Undang-Undang (Lembaran Negara Republik Indonesia Tahun 2023 Nomor 41, Tambahan Lembaran Negara Republik Indonesia Nomor 6856), dicabut dan dinyatakan tidak berlaku.</li>
+                                                        <li>Peraturan pelaksanaan dari Undang-Undang ini harus ditetapkan paling lama 1 (satu) tahun terhitung sejak Undang-Undang ini diundangkan.</li>
+                                                        <li>Lampiran file: 176 hlm (batang tubuh hlm 1 sd 128; penjelasan hlm 129 sd 176)</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <div class="row mb-8">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body p-xl-10 p-8 d-flex">
+                                <div class="flex-grow-1">
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                        <div class="col-lg-8 fw-semibold fs-5">
+                                            <a class="text-gray-600 text-decoration-none" href="/Details/359756/uu-no-10-tahun-2026-pengaturan-reforma-agraria">
+                                                Undang-undang (UU) Nomor 10 Tahun 2026
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                                <div class="text-end">
+                                                    <span class="text-muted">&#x2022; Berlaku mulai sebulan yang lalu</span>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="g-4 g-xl-9 mb-4 row">
+                                        <div class="col-lg-10 fs-2 fw-bold pe-4">
+                                            <a href="/Details/359756/uu-no-10-tahun-2026-pengaturan-reforma-agraria">
+                                                Pengaturan Reforma Agraria
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 text-lg-end">
+                                            <a class="btn btn-light-primary btn-sm" data-bs-toggle="modal" data-bs-target="#abstrak-359756">Abstrak</a>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                            <div class="col">
+                                                    <span class="badge badge-light-primary mb-2">Agraria, Pertanahan, Tata Ruang</span>
+                                            </div>
+                                    </div>
+                                    <div class="pt-4 mt-4">
+                                            <div class="fw-bold border-bottom border-gray-300 pb-4 mb-4">Download file:</div>
+                                            <div class="row g-4">
+                                                    <div class="col-lg-6">
+                                                        <a title="UU Nomor 10 Tahun 2026.pdf" class="download-file text-danger text-hover-primary" data-label="" data-kategori="Peraturan" data-id="425331" href="/Download/425331/UU%20Nomor%2010%20Tahun%202026.pdf">
+                                                            <i class="bi bi-file-earmark-pdf me-2"></i>UU Nomor 10 Tahun 2026.pdf
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="abstrak-359756" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">ABSTRAK PERATURAN</h5>
+                                <!--begin::Close-->
+                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <!--end::Close-->
+                            </div>
+                            <div class="modal-body">
+                                <div style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                    <p class="text-uppercase">Reforma Agraria </p>
+                                    <p>2026</p>
+                                    <p class="text-uppercase">Undang-undang (UU) NO. 10, LN 2026 (144), TLN (7201) : 50 hlm.; jdih.setneg.go.id</p>
+                                    <p class="text-uppercase">Undang-undang (UU) tentang Pengaturan Reforma Agraria</p>
+                                    <table style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                        <tr>
+                                            <td valign="top">ABSTRAK:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                        <li>Penyelenggaraan reforma agraria selama ini masih menghadapi hambatan berupa fragmentasi kewenangan antar-lembaga, lemahnya mekanisme penyelesaian konflik agraria struktural, serta belum terjaminnya penerapan fungsi sosial atas tanah secara konsisten sehingga diperlukan pengaturan setingkat undang-undang. Materi muatan dalam Undang-Undang Nomor 5 Tahun 1960 tentang Peraturan Dasar Pokok-Pokok Agraria sebagai landasan pembentukan peraturan perundang-undangan di bidang pertanahan, pertanian, perkebunan, kehutanan, dan perdesaan perlu dilengkapi dan disempurnakan untuk memenuhi kebutuhan hukum serta perkembangan masyarakat serta mewujudkan kepastian hukum yang sejalan dengan tujuan dan prinsip-prinsip yang terkandung dalam Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan Undang-Undang Nomor 5 Tahun 1960 tentang Peraturan Dasar Pokok-Pokok Agraria</li>
+                                                        <li>Dasar hukum UU ini adalah Pasal 18B ayat (2), Pasal 20, Pasal 21, Pasal 28D ayat (1), Pasal 28H ayat (4), Pasal 28I ayat (3), Pasal 33 ayat (3), dan Pasal 33 ayat (4) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945; Tap MPR No. IX/MPR/2001; dan UU No. 5 Tahun 1960.</li>
+                                                        <li>UU ini mengatur mengenai pengaturan reforma agraria. Reforma Agraria adalah penataan kembali struktur penguasaan, pemilikan, penggunaan, dan pemanfaatan sumber Agraria terutama tanah yang lebih berkeadilan dan berkelanjutan melalui penataan aset dan penataan akses untuk kemakmuran rakyat. Materi pokok yang diatur dalam Undang-Undang tentang Pengaturan Reforma Agraria meliputi: a) Penyelenggaraan Reforma Agraria; b) Lembaga; c) dewan pengawas; d) Lokasi Prioritas Reforma Agraria (LPRA), Objek Reforma Agraria, dan Subjek Reforma Agraria; e) penyelesaian Konflik Agraria, Pemulihan Hak atas Tanah, Redistribusi Tanah, dan pemberdayaan Subjek Reforma Agraria; f) penataan dan pengendalian serta pembatasan tanah; g) partisipasi masyarakat; h) pelaporan; i) pendanaan; j) ketentuan pidana; dan k) ketentuan peralihan.&#xD;&#xA;</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">CATATAN:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                    <li>Undang-undang (UU) ini mulai berlaku pada tanggal 30 September 2026.</li>
+                                                        <li>Peraturan pelaksana Undang-Undang ini harus ditetapkan paling lama 1 (satu) tahun terhitung sejak Undang-Undang ini diundangkan.</li>
+                                                        <li>Lampiran file: 50 hlm (batang tubuh hlm 1 sd 37 dan penjelasan hlm 38 sd 50)</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <div class="row mb-8">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body p-xl-10 p-8 d-flex">
+                                <div class="flex-grow-1">
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                        <div class="col-lg-8 fw-semibold fs-5">
+                                            <a class="text-gray-600 text-decoration-none" href="/Details/343632/uu-no-21-tahun-2025">
+                                                Undang-undang (UU) Nomor 21 Tahun 2025
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                                <div class="text-end">
+                                                    <span class="text-muted">&#x2022; Berlaku mulai 11 bulan yang lalu</span>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="g-4 g-xl-9 mb-4 row">
+                                        <div class="col-lg-10 fs-2 fw-bold pe-4">
+                                            <a href="/Details/343632/uu-no-21-tahun-2025">
+                                                Pengelolaan Ruang Udara
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 text-lg-end">
+                                            <a class="btn btn-light-primary btn-sm" data-bs-toggle="modal" data-bs-target="#abstrak-343632">Abstrak</a>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                            <div class="col">
+                                                    <span class="badge badge-light-primary mb-2">Agraria, Pertanahan, Tata Ruang</span>
+                                                    <span class="badge badge-light-primary mb-2">Teritorial Indonesia</span>
+                                            </div>
+                                    </div>
+                                        <div>
+                                            <div class="fw-bold border-bottom border-gray-300 pb-4 mb-4">Status Peraturan</div>
+                                                <div class="row g-4 g-xl-9 mb-8">
+                                                    <div class="col-lg-2">
+                                                        <div class="fw-bold bg-light-primary text-primary px-4 py-2">
+                                                            Mencabut sebagian
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-10">
+                                                        <ol type="a" class="opacity-75">
+                                                                <li class="text-start mb-2">
+                                                                        <div>
+                                                                            <a class="text-danger" href="/Details/54656/uu-no-1-tahun-2009">UU No. 1 Tahun 2009</a>
+                                                                            <span> tentang Penerbangan </span>
+                                                                            <br />
+                                                                            <span>Pada saat Undang-Undang ini mulai berlaku, ketentuan dalam Pasal 7 ayat (2), ayat (3), dan ayat (4), Pasal 8, Pasal 401, dan Pasal 402 Undang-Undang Nomor 1 Tahun 2009 tentang Penerbangan, dicabut dan dinyatakan tidak berlaku.</span>
+                                                                        </div>
+                                                                </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    <div class="pt-4 mt-4">
+                                            <div class="fw-bold border-bottom border-gray-300 pb-4 mb-4">Download file:</div>
+                                            <div class="row g-4">
+                                                    <div class="col-lg-6">
+                                                        <a title="UU Nomor 21 Tahun 2025.pdf" class="download-file text-danger text-hover-primary" data-label="" data-kategori="Peraturan" data-id="406850" href="/Download/406850/UU%20Nomor%2021%20Tahun%202025.pdf">
+                                                            <i class="bi bi-file-earmark-pdf me-2"></i>UU Nomor 21 Tahun 2025.pdf
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="abstrak-343632" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">ABSTRAK PERATURAN</h5>
+                                <!--begin::Close-->
+                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <!--end::Close-->
+                            </div>
+                            <div class="modal-body">
+                                <div style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                    <p class="text-uppercase">Pengelolaan - Ruang Udara</p>
+                                    <p>2025</p>
+                                    <p class="text-uppercase">Undang-undang (UU) NO. 21, LN 2025 (192), TLN (7151) : 29 hlm.; jdih.setneg.go.id</p>
+                                    <p class="text-uppercase">Undang-undang (UU) tentang Pengelolaan Ruang Udara</p>
+                                    <table style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                        <tr>
+                                            <td valign="top">ABSTRAK:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                        <li>Undang-Undang Nomor 26 Tahun 2007 tentang Penataan Ruang sebagaimana telah beberapa kali diubah, terakhir dengan Undang-Undang Nomor 6 Tahun 2023 tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2022 tentang Cipta Kerja menjadi Undang-Undang mengamanatkan mengenai pengelolaan ruang udara diatur dengan Undang-Undang.</li>
+                                                        <li>Dasar hukum UU ini adalah Pasal 5 ayat (1), Pasal 20, dan Pasal 33 ayat (3) UUD 1945 dan UU No. 26 Tahun 2007.</li>
+                                                        <li>UU ini mengatur mengenai pengelolaan ruang udara yang merupakan kegiatan perencanaan, pemanfaatan, pengendalian, dan pengawasan Ruang Udara. Ruang Udara yang diatur dalam Undang-Undang ini meliputi: a. Wilayah Udara; b. Ruang Udara internasional; dan c. Ruang Udara negara lain yang didelegasikan pelayanan navigasi penerbangannya.</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">CATATAN:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                    <li>Undang-undang (UU) ini mulai berlaku pada tanggal 24 Desember 2025.</li>
+                                                        <li>Pada saat Undang-Undang ini mulai berlaku, ketentuan dalam Pasal 7 ayat (2), ayat (3), dan ayat (4), Pasal 8, Pasal 401, dan Pasal 402 Undang-Undang Nomor 1 Tahun 2009 tentang Penerbangan, dicabut dan dinyatakan tidak berlaku. </li>
+                                                        <li>Lampiran file: 51 hlm (batang tubuh hlm 1 sd 29 dan penjelasan hlm 30 sd 51)</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <div class="row mb-8">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body p-xl-10 p-8 d-flex">
+                                <div class="flex-grow-1">
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                        <div class="col-lg-8 fw-semibold fs-5">
+                                            <a class="text-gray-600 text-decoration-none" href="/Details/337302/uu-no-20-tahun-2025">
+                                                Undang-undang (UU) Nomor 20 Tahun 2025
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                                <div class="text-end">
+                                                    <span class="text-muted">&#x2022; Berlaku mulai 10 bulan yang lalu</span>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="g-4 g-xl-9 mb-4 row">
+                                        <div class="col-lg-10 fs-2 fw-bold pe-4">
+                                            <a href="/Details/337302/uu-no-20-tahun-2025">
+                                                Kitab Undang-Undang Hukum Acara Pidana
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 text-lg-end">
+                                            <a class="btn btn-light-primary btn-sm" data-bs-toggle="modal" data-bs-target="#abstrak-337302">Abstrak</a>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                            <div class="col">
+                                                    <span class="badge badge-light-primary mb-2">Hukum Acara dan Peradilan</span>
+                                                    <span class="badge badge-light-primary mb-2">Tindak Pidana</span>
+                                            </div>
+                                    </div>
+                                        <div>
+                                            <div class="fw-bold border-bottom border-gray-300 pb-4 mb-4">Status Peraturan</div>
+                                                <div class="row g-4 g-xl-9 mb-8">
+                                                    <div class="col-lg-2">
+                                                        <div class="fw-bold bg-light-primary text-primary px-4 py-2">
+                                                            Mencabut
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-10">
+                                                        <ol type="a" class="opacity-75">
+                                                                <li class="text-start mb-2">
+                                                                        <div>
+                                                                            <a class="text-danger" href="/Details/47041/uu-no-8-tahun-1981">UU No. 8 Tahun 1981</a>
+                                                                            <span> tentang Hukum Acara Pidana</span>
+                                                                            <br />
+                                                                            <span></span>
+                                                                        </div>
+                                                                </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    <div class="pt-4 mt-4">
+                                            <div class="fw-bold border-bottom border-gray-300 pb-4 mb-4">Download file:</div>
+                                            <div class="row g-4">
+                                                    <div class="col-lg-6">
+                                                        <a title="UU Nomor 20 Tahun 2025.pdf" class="download-file text-danger text-hover-primary" data-label="" data-kategori="Peraturan" data-id="400351" href="/Download/400351/UU%20Nomor%2020%20Tahun%202025.pdf">
+                                                            <i class="bi bi-file-earmark-pdf me-2"></i>UU Nomor 20 Tahun 2025.pdf
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="abstrak-337302" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">ABSTRAK PERATURAN</h5>
+                                <!--begin::Close-->
+                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <!--end::Close-->
+                            </div>
+                            <div class="modal-body">
+                                <div style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                    <p class="text-uppercase">Kitab Undang-Undang Hukum Acara Pidana - kuhap</p>
+                                    <p>2025</p>
+                                    <p class="text-uppercase">Undang-undang (UU) NO. 20, LN 2025 (188), TLN (7149) : 184 hlm.; jdih.setneg.go.id</p>
+                                    <p class="text-uppercase">Undang-undang (UU) tentang Kitab Undang-Undang Hukum Acara Pidana</p>
+                                    <table style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                        <tr>
+                                            <td valign="top">ABSTRAK:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                        <li>Undang-Undang Nomor 8 Tahun 1981 tentang Hukum Acara Pidana sudah tidak sesuai dengan perubahan sistem ketatanegaraan, perkembangan hukum dalam masyarakat, dan kemajuan teknologi informasi, sehingga perlu diganti.</li>
+                                                        <li>Dasar hukum UU ini adalah Pasal 20, Pasal 21, Pasal 27 ayat (1), dan Pasal 28D ayat (1) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945.</li>
+                                                        <li>UU ini mengatur mengenai: 1) Penguatan hak Tersangka, Terdakwa, Terpidana, Saksi, Korban, dan Penyandang Disabilitas; 2) Penyempurnaan kewenangan Penyelidik, Penyidik, dan Penuntut Umum, serta penguatan koordinasi antara Penyidik dan Penuntut Umum; 3) Perubahan pengaturan mengenai Upaya Paksa; 4) Penambahan Pengakuan Bersalah (Plea Bargain) dan Perjanjian Penundaan Penuntutan (Deferred Prosecution Agreement); 5) penguatan mekanisme praperadilan; 6) pengaturan mengenai mekanisme keadilan restoratif; 7) Ganti Rugi, Rehabilitasi, Restitusi, dan Kompensasi; 8) penguatan peran advokat; 9) saksi mahkota; dan 10) pengaturan kembali upaya hukum.</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">CATATAN:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                    <li>Undang-undang (UU) ini mulai berlaku pada tanggal 02 Januari 2026.</li>
+                                                        <li>Pada saat Undang-Undang ini mulai berlaku Undang-Undang Nomor 8 Tahun 1981 tentang Hukum Acara Pidana (Lembaran Negara Republik Indonesia Tahun 1981 Nomor 76, Tambahan Lembaran Negara Republik Indonesia Nomor 3209) dicabut dan dinyatakan tidak berlaku.</li>
+                                                        <li>Undang-Undang ini mulai berlaku pada tanggal 2 Januari 2026.</li>
+                                                        <li>Lampiran file: 238 hlm (batang tubuh hlm 1 sd 184 dan penjelasan hlm 185 sd 238)</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <div class="row mb-8">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body p-xl-10 p-8 d-flex">
+                                <div class="flex-grow-1">
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                        <div class="col-lg-8 fw-semibold fs-5">
+                                            <a class="text-gray-600 text-decoration-none" href="/Details/334498/uu-no-19-tahun-2025">
+                                                Undang-undang (UU) Nomor 19 Tahun 2025
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                                <div class="text-end">
+                                                    <span class="text-muted">&#x2022; Berlaku mulai setahun yang lalu</span>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="g-4 g-xl-9 mb-4 row">
+                                        <div class="col-lg-10 fs-2 fw-bold pe-4">
+                                            <a href="/Details/334498/uu-no-19-tahun-2025">
+                                                Pengesahan Perjanjian antara Republik Indonesia dan Federasi Rusia tentang Ekstradisi (Treaty between the Republic of Indonesia and the Russian Federation on Extradition)
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-2 text-lg-end">
+                                            <a class="btn btn-light-primary btn-sm" data-bs-toggle="modal" data-bs-target="#abstrak-334498">Abstrak</a>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 g-xl-9 mb-4">
+                                            <div class="col">
+                                                    <span class="badge badge-light-primary mb-2">Pengesahan dan / atau Pembatalan Persetujuan / Konvensi / Perjanjian Internasional</span>
+                                                    <span class="badge badge-light-primary mb-2">Hubungan Internasional / Kerja Sama Internasional</span>
+                                            </div>
+                                    </div>
+                                    <div class="pt-4 mt-4">
+                                            <div class="fw-bold border-bottom border-gray-300 pb-4 mb-4">Download file:</div>
+                                            <div class="row g-4">
+                                                    <div class="col-lg-6">
+                                                        <a title="UU Nomor 19 Tahun 2025.pdf" class="download-file text-danger text-hover-primary" data-label="" data-kategori="Peraturan" data-id="397061" href="/Download/397061/UU%20Nomor%2019%20Tahun%202025.pdf">
+                                                            <i class="bi bi-file-earmark-pdf me-2"></i>UU Nomor 19 Tahun 2025.pdf
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <a title="UU Nomor 19 Tahun 2025 - Salinan Naskah Resmi.pdf" class="download-file text-danger text-hover-primary" data-label="" data-kategori="Peraturan" data-id="397062" href="/Download/397062/UU%20Nomor%2019%20Tahun%202025%20-%20Salinan%20Naskah%20Resmi.pdf">
+                                                            <i class="bi bi-file-earmark-pdf me-2"></i>UU Nomor 19 Tahun 2025 - ...nan Naskah Resmi.pdf
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="abstrak-334498" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">ABSTRAK PERATURAN</h5>
+                                <!--begin::Close-->
+                                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <!--end::Close-->
+                            </div>
+                            <div class="modal-body">
+                                <div style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                    <p class="text-uppercase">Pengesahan Perjanjian - Ekstradisi</p>
+                                    <p>2025</p>
+                                    <p class="text-uppercase">Undang-undang (UU) NO. 19, LN 2025 (181), TLN (7146) : 5 hlm.; jdih.setneg.go.id</p>
+                                    <p class="text-uppercase">Undang-undang (UU) tentang Pengesahan Perjanjian antara Republik Indonesia dan Federasi Rusia tentang Ekstradisi (Treaty between the Republic of Indonesia and the Russian Federation on Extradition)</p>
+                                    <table style="font-family:Calibri, Candara, Segoe, 'Segoe UI','Arial Narrow'" class="fs-5">
+                                        <tr>
+                                            <td valign="top">ABSTRAK:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                        <li>Untuk meningkatkan kerja sama di bidang penegakan hukum, Pemerintah Republik Indonesia dan Pemerintah Federasi Rusia telah menandatangani Perjanjian antara Republik Indonesia dan Federasi Rusia tentang Ekstradisi (Treaty between the Republic of Indonesia and the Russian Federation on Extradition) pada tanggal 31 Maret 2023 di Bali, Indonesia, sehingga perlu ditindaklanjuti dengan melakukan pengesahan atas Perjanjian Ekstradisi tersebut sesuai dengan Undang-Undang Nomor 24 Tahun 2000 tentang Perjanjian lnternasional.</li>
+                                                        <li>Dasar hukum UU ini adalah Pasal 5 ayat (1), Pasal 11, dan Pasal 20 UUD NRI Tahun 1945 dan UU No. 24 Tahun 2000.</li>
+                                                        <li>UU ini mengesahkan perjanjian antara Pemerintah Republik Indonesia dan Pemerintah Federasi Rusia tentang Ekstradisi (Treaty between the Republic of Indonesia and the Russian Federation on Extradition) yang telah ditandatangani pada tanggal 31 Maret 2023 di Bali, Indonesia. Salinan naskah asli dalam bahasa Indonesia, bahasa Rusia, dan bahasa Inggris sebagaimana terlampir dan merupakan bagian yang tidak terpisahkan dari Undang-Undang ini.</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">CATATAN:</td>
+                                            <td>
+                                                <ul class="dash">
+                                                    <li>Undang-undang (UU) ini mulai berlaku pada tanggal 29 Oktober 2025.</li>
+                                                        <li>Lampiran file: 2 berkas</li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+            <div class="mt-1">
+<div class="mt-1">
+    <nav aria-label="Page navigation" class="text-center">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="/Search?jenis=8&amp;p=1">
+                    First
+                </a>
+            </li>
+            <li class="page-item disabled">
+                <a class="page-link" href="/Search?jenis=8&amp;p=1">
+                    Previous
+                </a>
+            </li>
+                <li class="page-item active">
+                    <a class="page-link" href="/Search?jenis=8&amp;p=1">
+                        1
+                    </a>
+                </li>
+                <li class="page-item ">
+                    <a class="page-link" href="/Search?jenis=8&amp;p=2">
+                        2
+                    </a>
+                </li>
+                <li class="page-item ">
+                    <a class="page-link" href="/Search?jenis=8&amp;p=3">
+                        3
+                    </a>
+                </li>
+                <li class="page-item ">
+                    <a class="page-link" href="/Search?jenis=8&amp;p=4">
+                        4
+                    </a>
+                </li>
+                <li class="page-item ">
+                    <a class="page-link" href="/Search?jenis=8&amp;p=5">
+                        5
+                    </a>
+                </li>
+                <li class="page-item ">
+                    <a class="page-link" href="/Search?jenis=8&amp;p=6">
+                        6
+                    </a>
+                </li>
+                <li class="page-item ">
+                    <a class="page-link" href="/Search?jenis=8&amp;p=7">
+                        7
+                    </a>
+                </li>
+                <li class="page-item ">
+                    <a class="page-link" href="/Search?jenis=8&amp;p=8">
+                        8
+                    </a>
+                </li>
+                <li class="page-item ">
+                    <a class="page-link" href="/Search?jenis=8&amp;p=9">
+                        9
+                    </a>
+                </li>
+                <li class="page-item ">
+                    <a class="page-link" href="/Search?jenis=8&amp;p=10">
+                        10
+                    </a>
+                </li>
+            <li class="page-item ">
+                <a class="page-link" href="/Search?jenis=8&amp;p=11">
+                    Next
+                </a>
+            </li>
+            <li class="page-item ">
+                <a class="page-link" href="/Search?jenis=8&amp;p=193">
+                    Last
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+            </div>
+    </div>
+</div>
+<div class="modal fade" id="preview" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div id='viewer' class="pdf-container"></div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+                <div class="container-xxl app-container">
+                    <div class="mt-11 text-white py-10 px-10 bg-primary rounded-top-4">
+                        <div class="row mb-10 g-6 g-xl-9">
+    <div class="col-lg-9">
+        <div class="mb-10">
+            <h4 class="text-white opacity-50">TENTANG DATABASE PERATURAN</h4>
+            <div class="w-200px h-1px bg-body bg-opacity-50"></div>
+            <p class="mt-6">
+                Database Peraturan BPK merupakan bagian dari pelaksanaan JDIH di lingkungan BPK untuk menyebarluaskan informasi peraturan perundang-undangan dan dokumen hukum secara mudah, cepat, dan akurat kepada para pengguna baik kalangan internal BPK maupun masyarakat
+            </p>
+        </div>
+        <div class="row g-6 g-xl-9">
+            <div class="col-lg-6">
+                <h6 class="text-white opacity-50 mb-4">KONTAK</h6>
+                <ul class="list-unstyled">
+                    <li>Sekretariat Website JDIH BPK</li>
+                    <li>Badan Binbangkum - BPK</li>
+                    <li>Jalan Gatot Subroto 31</li>
+                    <li>Jakarta Pusat, 10210</li>
+                    <li class="mt-2">Telp (021) 25549000 ext. 1521</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h6 class="text-white opacity-50 mb-4">SITEMAP</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-1"><a class="link-light" href="/Subjek">Subjek</a></li>
+                    <li class="mb-1"><a class="link-light" href="/Jenis">Jenis</a></li>
+                    <li class="mb-1"><a class="link-light" href="/Tahun">Tahun</a></li>
+                    <li class="mb-1"><a class="link-light" href="/Perwakilan">Perwakilan</a></li>
+                    <li class="mb-1"><a class="link-light" href="/Glosarium">Glosarium</a></li>
+                    <li class="mb-1"><a class="link-light" href="/Tematik">Tematik</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h6 class="text-white opacity-50 mb-4">LINK TERKAIT</h6>
+                <ul class="list-unstyled">
+                    <li class="mt-2">
+                        <span class="me-4"><i class="bi bi-globe"></i></span>
+                        <a href="https://www.bpk.go.id" class="link-light" target="_blank">
+                            www.bpk.go.id
+                        </a>
+                    </li>
+                    <li class="mt-2">
+                        <span class="me-4"><i class="bi bi-globe"></i></span>
+                        <a href="https://jdih.bpk.go.id" class="link-light" target="_blank">
+                            www.jdih.bpk.go.id
+                        </a>
+                    </li>
+                    <li class="mt-2">
+                        <span class="me-4"><i class="bi bi-globe"></i></span>
+                        <a href="https://www.jdihn.go.id" class="link-light" target="_blank">
+                            www.jdihn.go.id
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="bg-secondary rounded-1 text-primary p-6">
+            <h6 class="mb-4">DISCLAIMER</h6>
+            <p>
+                Seluruh dokumen hukum yang terhimpun di dalam website peraturan.bpk.go.id bersumber dari website instansi pemerintahan terkait. Apabila terdapat perbedaan atas isi dokumen di dalam website ini, agar melakukan pengecekan dan konfirmasi kepada instansi yang bersangkutan.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="row g-6 g-xl-9">
+    <div class="col-lg-6">
+        <ul class="list-unstyled">
+            <li class="mt-2">
+                <span class="text-white opacity-50 mb-4">APLIKASI MOBILE</span>
+                <a href="https://apps.apple.com/id/app/jdih-bpk/id6448714892" title="App Store" target="_blank">
+                    <img src="assets/media/logos/badge_app_store_id.png" class="h-sm-40px ms-10" />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=id.go.bpk.jdih.pro&pcampaignid=web_share" title="Google Play" target="_blank">
+                    <img src="assets/media/logos/badge_google_play_id.png" class="h-sm-40px ms-10" />
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-6">
+        <ul class="list-unstyled">
+            <li class="mt-2 text-end">
+                <span class="text-white opacity-50 mb-4">MEDIA SOSIAL</span>
+                <a href="https://www.instagram.com/jdih_bpk?igsh=bXdrb3V5czBxajZ2" target="_blank"><img src="assets/media/logos/instagram.png" class="w-sm-40px ms-10" /></a>
+                <a href="https://www.tiktok.com/@jdih_bpk_ri?_t=8oscqMBXE82&_r=1" target="_blank"><img src="assets/media/logos/tiktok.png" class="w-sm-40px ms-10" /></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="col-sm-12 text-center">
+    <hr />
+    <div class="small opacity-50">
+        © Badan Pembinaan dan Pengembangan Hukum Pemeriksaan Keuangan Negara <br />Badan Pemeriksa Keuangan
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

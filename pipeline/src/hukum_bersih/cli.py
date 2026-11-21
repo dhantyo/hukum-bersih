@@ -3,6 +3,7 @@
     fetch            download sources, archive them on archive.org, record in manifests
     parse            PDF -> Bluebell text (the format stored in data/)
     build-akn        Bluebell text in data/ -> Akoma Ntoso XML (+ amendment JSON) for the website
+    import-bpk       import regulations from peraturan.bpk.go.id, archiving every PDF
     relations        link amending / revoking / enacting laws
     import-pdf       archive, record and convert hand-downloaded PDFs (uploads.py)
     manifest         print a manifest entry for a local file
@@ -80,6 +81,13 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--reparse", action="store_true",
                    help="re-convert already imported texts made by an older parser version")
     p.add_argument("--only", default="", help="comma-separated ids: re-convert just these")
+
+    p = sub.add_parser("import-bpk", help="import regulations from peraturan.bpk.go.id: "
+                       "metadata, PDFs (archived at once), text for records without one")
+    p.add_argument("jenis", choices=["uu", "perppu", "pp", "perpres"])
+    p.add_argument("--limit", type=int, default=0, help="stop after N regulations done (0 = all)")
+    p.add_argument("--delay", type=float, default=3.0, help="seconds between requests")
+    p.add_argument("--no-archive", action="store_true", help="record hashes, skip archive.org")
 
     p = sub.add_parser("archive-pending",
                        help="archive recorded regulation PDFs not yet on archive.org")
@@ -169,6 +177,36 @@ def main(argv: list[str] | None = None) -> int:
                 done += 1
                 if args.limit and done >= args.limit:
                     break
+        return 0
+
+    if args.command == "import-bpk":
+        from .sources import peraturan_bpk as bpk
+        from .sources.bpk_session import Challenged, Session
+
+        session, done, failed = Session(args.delay), 0, 0
+        known = bpk.known_records(args.data_dir)
+        cache = bpk.archived_files(args.data_dir)
+        try:
+            for item in bpk.listings(session, args.jenis):
+                try:
+                    line = bpk.import_one(session, item, args.jenis, args.data_dir, known,
+                                          do_archive=not args.no_archive, cache=cache)
+                except Challenged:
+                    raise
+                except Exception as e:  # noqa: BLE001 - keep going; the run is resumable
+                    failed += 1
+                    line = f"FAIL {item.path}: {type(e).__name__}: {str(e)[:300]}"
+                if not line.startswith("skip"):
+                    print(line, flush=True)
+                if line.startswith("ok"):
+                    done += 1
+                    if args.limit and done >= args.limit:
+                        break
+        except Challenged as e:
+            print(f"STOP Cloudflare: {e}")
+            return 1
+        print(f"done: {done} imported/updated, {failed} failed, "
+              f"{session.clearances} Cloudflare clearance(s)")
         return 0
 
     if args.command == "archive-pending":

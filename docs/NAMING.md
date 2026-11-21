@@ -33,6 +33,9 @@ Ids never contain the project name. The project is mentioned only in archive.org
 - Every text version is dated, including the latest; there is no undated "current" text.
   The original is dated by when it took effect (normally *tanggal diundangkan*). A consolidated
   text is dated by when the last amendment it includes took effect.
+- When the source splits one version into several files (e.g. the body and a lampiran), the
+  first file has the version id and the others add `_<n>`: `uu_6_2023_2023-03-31_2`.
+  The same applies when a second copy of a version (another source's PDF) is archived.
 - An amendment is its own regulation with its own id (`uu_19_2016` amends `uu_11_2008`).
 - Types: `uu`, `perppu`, `pp`, `perpres`, `keppres`, `inpres`, `tap-mpr`; ministerial and
   agency regulations use the standard abbreviation (`permenkeu`, `permenkumham`, …).

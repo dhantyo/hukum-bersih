@@ -5,8 +5,8 @@ name: Archive pending PDFs
 # Manifests merge with git's union driver (.gitattributes), so appends from the importer and
 # from this job do not conflict.
 on:
-  schedule:
-    - cron: "17 19 * * *"   # daily, 02:17 WIB
+  # no schedule since 2026-11-21: import-bpk.yml is the main import (peraturan.go.id
+  # answers only Indonesian IPs); run by hand, e.g. with the WG_INDONESIA tunnel
   workflow_dispatch:
     inputs:
       limit:

@@ -6,8 +6,8 @@ name: Import regulations
 # regulations. PDFs are archived separately by archive-pending.yml. Runs on GitHub, so it does
 # not depend on anyone's computer or a Claude session.
 on:
-  schedule:
-    - cron: "23 */6 * * *"   # every 6 hours
+  # no schedule since 2026-11-21: import-bpk.yml is the main import (peraturan.go.id
+  # answers only Indonesian IPs); run by hand, e.g. with the WG_INDONESIA tunnel
   workflow_dispatch:
     inputs:
       jenis:

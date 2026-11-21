@@ -10,10 +10,10 @@ import yaml
 PART = r"[a-z0-9]+(?:-[a-z0-9]+)*"
 ID_RE = re.compile(rf"^{PART}(?:_{PART})*$")
 DATE = r"\d{4}(?:-\d{2}){0,2}"
-# <jenis>_<nomor>_<tahun>[_<date>]
+# <jenis>_<nomor>_<tahun>[_<date>[_<n>]]  (<n>: 2, 3 … for a version's further files)
 REGULATION_RE = re.compile(
     rf"^(?P<work>(?P<jenis>[a-z]+(?:-[a-z]+)*)_(?P<nomor>\d+[a-z]?)_(?P<tahun>\d{{4}}))"
-    rf"(?:_(?P<date>{DATE}))?$"
+    rf"(?:_(?P<date>{DATE})(?:_(?P<n>\d+))?)?$"
 )
 # ruu_<slug>_<date>_<type>[_<who>][_<n>]
 RUU_DOC_RE = re.compile(
@@ -71,7 +71,7 @@ def validate_id(doc_id: str) -> str:
             )
     elif not REGULATION_RE.match(doc_id):
         raise ValueError(
-            f"invalid regulation id {doc_id!r}: expected <jenis>_<nomor>_<tahun>[_<YYYY-MM-DD>], "
+            f"invalid regulation id {doc_id!r}: expected <jenis>_<nomor>_<tahun>[_<YYYY-MM-DD>[_<n>]], "
             "e.g. uu_11_2008 or uu_11_2008_2008-04-21"
         )
     return doc_id

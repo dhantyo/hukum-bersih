@@ -8,6 +8,7 @@ from hukum_bersih.naming import archive_item, default_title, full_title, tanggal
     [
         "uu_11_2008",
         "uu_11_2008_2008-04-21",
+        "uu_6_2023_2023-03-31_2",  # a version's second file
         "perppu_2_2022",
         "uu-drt_7_1955",
         "ruu_perampasan-aset_2026-11-19_draft-final",
@@ -28,6 +29,7 @@ def test_valid_ids(good):
         "uu__11_2008",
         "_uu_11_2008",
         "uu_11_2008_",
+        "uu_6_2023_2",  # file number only after a date
         "uu 11 2008",
         "",
         "a" * 101,
@@ -43,6 +45,7 @@ def test_invalid_ids(bad):
 def test_archive_item():
     assert archive_item("uu_11_2008_2008-04-21") == "uu_11_2008"
     assert archive_item("uu_11_2008") == "uu_11_2008"
+    assert archive_item("uu_6_2023_2023-03-31_2") == "uu_6_2023"
     assert archive_item("ruu_perampasan-aset_2026-11-19_draft-final") == (
         "ruu_perampasan-aset_2026-11-19_draft-final"
     )

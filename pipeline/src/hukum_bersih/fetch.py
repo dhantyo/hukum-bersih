@@ -82,6 +82,8 @@ def pending(data_dir: Path) -> list[Pending]:
         rec = yaml.safe_load(path.read_text())
         if rec["id"] in archived or not rec.get("source_pdf_url"):
             continue
+        if "peraturan.bpk.go.id" in rec["source_pdf_url"]:
+            continue                      # import-bpk archives these itself (Cloudflare session)
         versions = rec.get("versions") or []
         version = (versions[0]["id"] if versions
                    else f"{rec['id']}_{rec.get('tanggal_penetapan') or rec['year']}")
