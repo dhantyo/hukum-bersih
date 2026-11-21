@@ -10,6 +10,8 @@
 - Naming (agreed with Dante 2026-11-20): follow `docs/NAMING.md` everywhere. Ids use `_` between parts and `-` inside a part, number before year (`uu_11_2008`), every text version dated (`uu_11_2008_2008-04-21`), RUU documents `ruu_<slug>_<date>_<type>[_<who>][_<n>]`. No project name in ids or titles (Dante: "a service for the country"); mention hukum-bersih only in archive.org descriptions. Year folders: `data/peraturan/<jenis>/<tahun>/<id>/`.
 - Texts are Akoma Ntoso, stored as Bluebell text in `data/` (decision 0004); XML is generated into `web/generated/` (not committed).
 - Finding (2026-11-20 evening): a GitHub runner downloaded 5/5 PDFs from peraturan.go.id and archived them.
+- Design (2026-11-21, decision 0007): follow `DESIGN.md` and `web/src/styles/tokens.css`; never raw colors/sizes in components.
+- Next steps (2026-11-21): OCR for the ~490 scanned UU (OCRmyPDF/Tesseract `ind`); re-parse already imported old UU to drop the peraturan.go.id 'Teks tidak dalam format asli…' banner (parser fixed, stored texts not yet); amendment-law parsing; OCR-noise fixes (Pasal.id's ocr_correct.py); show amendment relationships on law pages.
 - Known gaps in the UU import: amendment laws (Pasal I/II) are not parsed correctly yet (port from Pasal.id's parser); scanned PDFs get no text (needs OCR); versions are dated by tanggal penetapan (detail page has no pengundangan date).
 - Never commit PDFs. Never rewrite history of `data/`. Never fabricate or reconstruct a missing document version.
 - Don't scrape pasal.id.
