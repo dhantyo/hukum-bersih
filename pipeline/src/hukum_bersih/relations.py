@@ -46,17 +46,19 @@ INSERTED_RE = re.compile(r"disisipkan\s+\S+\s+\(\w+\)\s+pasal,?\s+(?:yakni|yaitu
                          r"(?:\s+sehingga|\s+yang\s+berbunyi|\s+berbunyi|[.;:]|$)", re.DOTALL)
 # "Pasal" and its number as found in OCR'd text layers ("Pasil 27A", "Pasal 4O", "Pasal l3").
 # Only the extracted *numbers* are normalised; the stored text is never changed.
-NUM = r"([0-9][0-9OIl]*[A-Z]?)"
+NUM = r"([0-9][0-9OIl]*[A-Z]{0,2})"
 DELETED_RE = re.compile(r"Pas[ai]l\s+" + NUM + r"\s+dihapus")
 PASAL_RE = re.compile(r"Pas[ai]l\s+" + NUM + r"\b")
 
 
 def _num(raw: str) -> str:
     """Pasal number with OCR digit misreads fixed: 4O -> 40, l3 -> 13 (letter suffix kept)."""
-    m = re.match(r"([0-9OIl]+)([A-Z]?)$", raw)
-    if not m:
+    raw = re.sub(r"El$", "B", raw)            # "27El" is how one OCR layer reads "27B"
+    m = re.match(r"([0-9OIlS]+)([A-Z]{0,2})$", raw)
+    if not m or not re.search(r"\d", m[1]):
         return raw
-    return m[1].replace("O", "0").replace("I", "1").replace("l", "1") + m[2]
+    digits = m[1].replace("O", "0").replace("I", "1").replace("l", "1").replace("S", "5")
+    return digits + m[2]
 
 
 def _sequence(nums: list[str]) -> list[str]:
@@ -131,6 +133,38 @@ def changes_in_text(text: str) -> dict[str, list[str]]:
     return {k: v for k, v in out.items() if v}
 
 
+def _pasal_numbers(rec: dict, folder: Path) -> set[str]:
+    """Pasal numbers of a law's own text (empty if it has none)."""
+    for v in rec.get("versions") or []:
+        if v.get("text") and (folder / v["text"]).exists():
+            body = (folder / v["text"]).read_text().split("ATTACHMENT")[0]
+            return set(re.findall(r"^\s*ART\s+(\S+)\s+-", body, re.MULTILINE))
+    return set()
+
+
+# OCR misreads of a pasal number's last character: 43I -> 431, 16B -> 168, 62D -> 620.
+_LAST = {"1": "I", "8": "B", "0": "D", "6": "G", "5": "S"}
+
+
+def _checked(changes: dict, known: set[str]) -> dict:
+    """Changed / deleted pasal must exist in the base law (or have been inserted by then).
+    A number that does not is read again with the usual OCR misreads; if it still does not
+    exist it is left out rather than shown wrongly."""
+    out = dict(changes)
+    for kind in ("diubah", "dihapus"):
+        fixed = []
+        for n in changes.get(kind, []):
+            if n not in known and n[-1:] in _LAST and n[:-1] + _LAST[n[-1]] in known:
+                n = n[:-1] + _LAST[n[-1]]
+            if n in known:
+                fixed.append(n)
+        if fixed:
+            out[kind] = sorted(set(fixed), key=_natural)
+        else:
+            out.pop(kind, None)
+    return out
+
+
 def build(data_dir: Path) -> dict[str, int]:
     """Recompute relationships for every regulation record under data/peraturan/."""
     paths = {p.stem: p for p in (data_dir / "peraturan").glob("*/*/*/*.yaml")}
@@ -144,7 +178,10 @@ def build(data_dir: Path) -> dict[str, int]:
             for v in rec.get("versions") or []:
                 if v.get("text") and (paths[k].parent / v["text"]).exists():
                     text = (paths[k].parent / v["text"]).read_text()
-            changes = changes_in_text(text) if text else {}
+            from . import amendments
+
+            changes = (amendments.changes(amendments.flatten(text))
+                       or changes_in_text(text)) if text else {}
             for entry in found["amends"]:
                 # with one target, all instructions belong to it; with several we cannot tell
                 if changes and len(found["amends"]) == 1:
@@ -165,11 +202,29 @@ def build(data_dir: Path) -> dict[str, int]:
         r = recs.get(i, {})
         return str(r.get("tanggal_penetapan") or r.get("year") or "")
 
+    for k, rec in recs.items():
+        for key in ("amended_by", "revoked_by", "enacted_by"):
+            rel[k][key] = sorted(set(rel[k][key]), key=date_key)
+    for k in rel:                               # inserted pasal always carry a letter (27A):
+        for entry in rel[k]["amends"]:          # a trailing digit is an OCR misread (16B->168)
+            ins = (entry.get("changes") or {}).get("disisipkan")
+            if ins:
+                fixed = [n if not n[-1].isdigit() else n[:-1] + "B" if n[-1] == "8" else ""
+                         for n in ins]
+                entry["changes"]["disisipkan"] = sorted({n for n in fixed if n}, key=_natural)
+    for k, rec in recs.items():                 # check numbers against the base law's pasal
+        known = _pasal_numbers(rec, paths[k].parent)
+        if not known:
+            continue
+        for by in rel[k]["amended_by"]:
+            for entry in rel[by]["amends"]:
+                if entry["id"] == k and entry.get("changes"):
+                    known |= set(entry["changes"].get("disisipkan", []))
+                    entry["changes"] = _checked(entry["changes"], known)
+
     stats = {"amends": 0, "revokes": 0, "enacts": 0, "with_changes": 0, "updated": 0}
     for k, rec in recs.items():
         r = rel[k]
-        for key in ("amended_by", "revoked_by", "enacted_by"):
-            r[key] = sorted(set(r[key]), key=date_key)
         stats["amends"] += len(r["amends"])
         stats["revokes"] += len(r["revokes"])
         stats["enacts"] += len(r["enacts"])

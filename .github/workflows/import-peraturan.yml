@@ -19,6 +19,10 @@ on:
         description: "Re-convert texts made by an older parser version instead of importing new ones"
         type: boolean
         default: false
+      only:
+        description: "With reparse: just these ids, comma-separated (e.g. uu_19_2003,uu_11_2020)"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -34,6 +38,7 @@ jobs:
     env:
       JENIS: ${{ inputs.jenis || 'uu' }}
       REPARSE: ${{ inputs.reparse && '--reparse' || '' }}
+      ONLY: ${{ inputs.only && format('--only={0}', inputs.only) || '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
@@ -45,7 +50,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           deadline=$(( $(date +%s) + 320 * 60 ))       # stop starting batches after ~5h20m
           while [ "$(date +%s)" -lt "$deadline" ]; do
-            out=$(cd pipeline && uv run hukum-bersih import-peraturan "$JENIS" $REPARSE --limit 50 2>&1 || true)
+            out=$(cd pipeline && uv run hukum-bersih import-peraturan "$JENIS" $REPARSE $ONLY --limit 50 2>&1 || true)
             echo "$out"
             n=$(echo "$out" | grep -c '^ok' || true)
             echo "$out" | grep -E '^(ok|FAIL)' >> "$GITHUB_STEP_SUMMARY" || true

@@ -192,12 +192,17 @@ def convert(client: Client, rec: dict, folder: Path, data_dir: Path) -> str:
             return f"parse error: {rec['parse_error'][:80]}"
 
 
-def reparse(client: Client, jenis: str, data_dir: Path) -> Iterator[str]:
+def reparse(client: Client, jenis: str, data_dir: Path,
+            only: set[str] | None = None) -> Iterator[str]:
     """Re-convert imported regulations whose text came from an older parser version (or
-    that have no text yet), from their PDFs. Metadata is kept."""
+    that have no text yet), from their PDFs. Metadata is kept. ``only``: just these ids,
+    first (so a sample can be redone before the whole collection)."""
     from ..pdf.structure import PARSER_VERSION
 
-    for record in sorted((data_dir / "peraturan" / jenis).glob("*/*/*.yaml")):
+    records = sorted((data_dir / "peraturan" / jenis).glob("*/*/*.yaml"))
+    if only:
+        records = [r for r in records if r.stem in only]
+    for record in records:
         rec = yaml.safe_load(record.read_text())
         versions = rec.get("versions") or []
         if versions and all(v.get("parser_version") == PARSER_VERSION for v in versions):

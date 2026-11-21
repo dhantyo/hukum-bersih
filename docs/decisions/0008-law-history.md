@@ -23,9 +23,24 @@ UNDANG-UNDANG") and the amending law's own instructions ("Ketentuan Pasal 27 diu
 every batch. OCR misreads are fixed only in the extracted pasal *numbers* (4O → 40), never in
 the stored text.
 
+Addendum (2026-11-21, for the sample families Minerba, PT, BUMN, Penanaman Modal): a
+**"Perubahan" page** per amended law (`/uu/<nomor>/<tahun>/perubahan/`) shows every pasal each
+amendment touched, before and after, in the same synopsis rows as the RUU comparison
+(`components/SynRow.astro`). `pipeline/src/hukum_bersih/amendments.py` splits an amending law's
+Pasal I into its instructions ("Ketentuan Pasal 4 diubah sehingga berbunyi ...") and the new
+wording of each pasal; `build-akn` writes them to `web/generated/akn/amendments/`. "Before" is
+the original text or the wording of the previous amendment we have. When an amending law's
+title says it is e.g. the fourth amendment and we know fewer, the page and the timeline say so
+(usually the missing ones are the Cipta Kerja omnibus laws). Pasal numbers read from scanned
+texts are checked against the base law's own pasal. Short names ("UU Minerba") are a
+`short_name` in the record; an amending law is shown as "Perubahan Kedua UU ITE".
+
 What we gave up (for now):
-- The text shown is the **original** text. A consolidated current text (all amendments applied)
-  is not built; the page says so. Building it needs amendment-law structure parsing first.
+- No consolidated current text (all amendments applied as one document): only the changed
+  pasal are shown, each with its source. A consolidation is a derived document and would need
+  the omnibus amendments too.
+- Omnibus laws (UU Cipta Kerja amends ~80 laws inside its own articles) are not linked: its
+  text is a noisy OCR scan and UU 11/2020 failed to parse (fixed in parser v4, needs a re-run).
 - Laws revoked or amended only by a clause inside another law's body (not its title) are not
   linked yet.
 - With several targets in one amending law we link the laws but not the per-pasal changes.

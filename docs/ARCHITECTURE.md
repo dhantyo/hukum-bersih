@@ -54,6 +54,7 @@ Names follow [NAMING.md](NAMING.md).
 | `akn/bluebell.py` | Blocks → Bluebell text (stored in `data/`) |
 | `akn/build.py` | Bluebell → Akoma Ntoso XML (Laws.Africa's `bluebell` parser) |
 | `relations.py` | Amends / revokes / enacts links from titles, plus the pasal an amending law changes (from its text) → `relationships` in each record ([decision 0008](decisions/0008-law-history.md)) |
+| `amendments.py` | An amending law's Pasal I → numbered instructions and the new wording of each pasal (JSON for the "Perubahan" page) |
 | `cli.py` | `hukum-bersih fetch / parse / build-akn / relations / archive-*` |
 
 ### web/src/
@@ -63,8 +64,9 @@ Names follow [NAMING.md](NAMING.md).
 | `lib/data.ts` | Reads RUU records from `data/` and generated XML from `web/generated/` |
 | `lib/lawdoc.ts` | Akoma Ntoso → render tree + each Pasal as lines |
 | `lib/compare.ts` | Match pasal by content, then ayat, then words (diff-match-patch) |
+| `lib/amendments.ts` | Apply each amendment's new wording in order → before/after per pasal; short names |
 | `components/` | `LawText` / `AknNode` render Akoma Ntoso with `akn-*` classes and eIds as ids; `Riwayat` (history timeline) and `RelationsBanner` (on amending laws) |
-| `pages/` | `/`, `/uu/`, `/uu/tahun/<tahun>/`, `/uu/<nomor>/<tahun>/`, `/ruu/`, `/ruu/<slug>/`, `/ruu/<slug>/<doc id>/`, `/ruu/<slug>/beda/<a>...<b>/`, `/cari/`, `/tentang/` |
+| `pages/` | `/`, `/uu/`, `/uu/tahun/<tahun>/`, `/uu/<nomor>/<tahun>/`, `/uu/<nomor>/<tahun>/perubahan/`, `/ruu/`, `/ruu/<slug>/`, `/ruu/<slug>/<doc id>/`, `/ruu/<slug>/beda/<a>...<b>/`, `/cari/`, `/tentang/` |
 | `styles/` | `tokens.css` (design tokens, see /DESIGN.md) and `global.css` |
 | `lib/peraturan.ts` | Reads regulation records and their generated Akoma Ntoso |
 

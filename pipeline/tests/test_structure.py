@@ -137,3 +137,21 @@ def test_old_spelling_closing_and_penjelasan():
     assert any(b.kind == "closing" and b.text.startswith("Djakarta") for b in doc.blocks)
     assert any(b.kind == "penjelasan" for b in doc.blocks)
     to_akn(to_bluebell(doc), "/akn/id/act/uu/1945/1", "act")
+
+
+def test_list_between_chapter_and_first_pasal_is_text():
+    # UU 19/2003 and UU 11/2020 failed with "markup in text: 'POINT 1.'": a numbered list
+    # after a BAB heading, before its first Pasal, was written as POINT inside the chapter.
+    from hukum_bersih.pdf.structure import Block, Document
+
+    doc = Document([
+        Block("bab", "BAB I", "KETENTUAN UMUM"), Block("pasal", "Pasal 1"),
+        Block("ayat", "(1)", "Satu."), Block("bab", "BAB XI", "LAIN-LAIN"),
+        Block("text", "", "Dalam bab ini:"), Block("item", "1.", "pertama;", 1),
+        Block("item", "2.", "kedua.", 1), Block("pasal", "Pasal 2"), Block("text", "", "Dua."),
+    ])
+    text = to_bluebell(doc)
+    assert "POINT 1." not in text and "1. pertama;" in text
+    xml = to_akn(text, "/akn/id/act/uu/2003/19", "act")
+    xml = xml.decode() if isinstance(xml, bytes) else xml
+    assert "pertama" in xml and xml.count("<article") == 2

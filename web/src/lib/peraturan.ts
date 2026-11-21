@@ -217,3 +217,10 @@ export function pasalNotes(r: Regulation): Map<string, string[]> {
   }
   return notes;
 }
+
+/** How many times a law was amended: the laws we know, or more when an amending law's title
+ * says so ("perubahan keempat" while we only know two). */
+export function amendmentCount(r: Regulation): number {
+  const orders = rel(r).amended_by.map((id) => byId(id) ? rel(byId(id)!).amends.find((a) => a.id === r.id)?.order ?? 1 : 1);
+  return Math.max(rel(r).amended_by.length, ...orders, 0);
+}

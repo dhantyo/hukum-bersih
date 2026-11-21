@@ -2,7 +2,8 @@
 
     fetch            download sources, archive them on archive.org, record in manifests
     parse            PDF -> Bluebell text (the format stored in data/)
-    build-akn        Bluebell text in data/ -> Akoma Ntoso XML for the website
+    build-akn        Bluebell text in data/ -> Akoma Ntoso XML (+ amendment JSON) for the website
+    relations        link amending / revoking / enacting laws
     manifest         print a manifest entry for a local file
     archive-retitle  rewrite titles/descriptions of archived items (files untouched)
     archive-delete   empty obsolete archive.org items we uploaded
@@ -77,6 +78,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--delay", type=float, default=2.0, help="seconds between requests")
     p.add_argument("--reparse", action="store_true",
                    help="re-convert already imported texts made by an older parser version")
+    p.add_argument("--only", default="", help="comma-separated ids: re-convert just these")
 
     p = sub.add_parser("archive-pending",
                        help="archive recorded regulation PDFs not yet on archive.org")
@@ -128,8 +130,12 @@ def main(argv: list[str] | None = None) -> int:
         from .akn.build import build_peraturan, build_ruu
 
         ruu = build_ruu(args.data_dir, args.out)
+        from .amendments import build as build_amendments
+
         peraturan = build_peraturan(args.data_dir, args.out)
-        print(f"{len(ruu)} RUU versions, {len(peraturan)} regulation versions -> {args.out}")
+        amending = build_amendments(args.data_dir, args.out)
+        print(f"{len(ruu)} RUU versions, {len(peraturan)} regulation versions, "
+              f"{amending} amending laws split into instructions -> {args.out}")
         return 0
 
     if args.command == "import-peraturan":
@@ -137,7 +143,8 @@ def main(argv: list[str] | None = None) -> int:
 
         client, done = src.Client(args.delay), 0
         if args.reparse:
-            for line in src.reparse(client, args.jenis, args.data_dir):
+            only = {i.strip() for i in args.only.split(",") if i.strip()} or None
+            for line in src.reparse(client, args.jenis, args.data_dir, only):
                 print(line, flush=True)
                 if line.startswith("ok"):
                     done += 1

@@ -188,7 +188,7 @@ function row(a: Pasal, b: Pasal, ta: string, tb: string, sim: number, moved: boo
   };
 }
 
-const only = (p: Pasal, kind: "baru" | "dihapus"): LineDiff[] =>
+export const only = (p: Pasal, kind: "baru" | "dihapus"): LineDiff[] =>
   p.lines.map((l) => ({ kind, ...(kind === "baru" ? { b: l } : { a: l }),
     parts: whole(l.text, kind === "baru", kind === "dihapus") }));
 

@@ -1,8 +1,9 @@
 ---
 import Base from "../../../../layouts/Base.astro";
+import SynRow from "../../../../components/SynRow.astro";
 import { compare, type Comparison } from "../../../../lib/compare.ts";
 import { loadRuus, loadText, versions, type Ruu, type RuuDocument } from "../../../../lib/data.ts";
-import { DOC_TYPE, PROVENANCE, provenanceKey, STATUS, tanggal } from "../../../../lib/labels.ts";
+import { DOC_TYPE, PROVENANCE, provenanceKey, tanggal } from "../../../../lib/labels.ts";
 
 export function getStaticPaths() {
   return loadRuus().flatMap((ruu) => {
@@ -73,63 +74,7 @@ const chapterChange = (r: (typeof cmp.rows)[number]) => {
       return (
         <>
           {newChapter && <div class="syn-chapter">{newChapter}</div>}
-          <section class={`syn-row ${r.status}${r.renumbered ? " renumbered" : ""}`} id={anchor}>
-            <div class="syn-meta">
-              <a href={`#${anchor}`}>{STATUS[r.status]}</a>
-              {r.moved && <span class="tag">dipindah</span>}
-              {r.status === "sama" && r.renumbered && <span class="tag">nomor berubah</span>}
-              {r.a && r.b && r.status === "berubah" && r.similarity < WEAK && (
-                <span class="tag" title="Dicocokkan otomatis berdasarkan isi; kemiripannya rendah, periksa kedua teks.">kemiripan rendah</span>
-              )}
-            </div>
-            <div class="syn-pair">
-              <div class="cell old">
-                {r.a ? <h3>{r.a.label} <span class="ver">{yearOf(a)}</span></h3> : <p class="none">Tidak ada pada versi ini</p>}
-              </div>
-              <div class="cell new">
-                {r.b ? <h3>{r.b.label} <span class="ver">{yearOf(b)}</span></h3> : <p class="none">Dihapus</p>}
-              </div>
-              {r.lines.map((l) => {
-                // a reworded ayat ("diganti") shows old left and new right on the same row
-                const oldKind = l.kind === "diganti" ? "dihapus" : l.kind;
-                const newKind = l.kind === "diganti" ? "baru" : l.kind;
-                const ref = l.ref && (
-                  <span class="ref">≈ <a href={`#${anchorOf.get(l.ref.pasal) ?? ""}`}>{l.ref.label}</a> ({yearOf(l.ref.side === "a" ? a : b)})</span>
-                );
-                const any = l.b ?? l.a!;
-                const numChanged = l.a && l.b && l.a.num !== l.b.num;
-                return (
-                  <>
-                    <div class={`cell old line ${oldKind}`} style={`--i:${l.a?.indent ?? any.indent}`}>
-                      {l.a && <span class="num">{numChanged ? <del>{l.a.num}</del> : l.a.num}</span>}
-                      <span class="txt">
-                        {oldKind !== "baru" && l.parts.filter((p) => !p.added).map((p) =>
-                          p.removed ? <del>{p.value}</del> : p.value)}
-                        {l.kind === "dihapus" && ref}
-                      </span>
-                    </div>
-                    <div class={`cell new line ${newKind}`} style={`--i:${l.b?.indent ?? any.indent}`}>
-                      {l.b && <span class="num">{numChanged ? <ins>{l.b.num}</ins> : l.b.num}</span>}
-                      <span class="txt">
-                        {newKind !== "dihapus" && l.parts.filter((p) => !p.removed).map((p) =>
-                          p.added ? <ins>{p.value}</ins> : p.value)}
-                        {l.kind === "baru" && ref}
-                      </span>
-                    </div>
-                    <div class={`cell inline line ${l.kind}`} style={`--i:${any.indent}`}>
-                      <span class="num">{numChanged ? <><del>{l.a!.num}</del> <ins>{l.b!.num}</ins></> : any.num}</span>
-                      <span class="txt">
-                        {l.kind === "diganti"
-                          ? <><del>{l.parts[0].value}</del><br /><ins>{l.parts[1].value}</ins></>
-                          : l.parts.map((p) => p.added ? <ins>{p.value}</ins> : p.removed ? <del>{p.value}</del> : p.value)}
-                        {ref}
-                      </span>
-                    </div>
-                  </>
-                );
-              })}
-            </div>
-          </section>
+          <SynRow r={r} anchor={anchor} verA={yearOf(a)} verB={yearOf(b)} refVer={(side) => yearOf(side === "a" ? a : b)} anchorOf={anchorOf} weak={r.a && r.b && r.status === "berubah" && r.similarity < WEAK} />
         </>
       );
     })}
@@ -147,9 +92,8 @@ const chapterChange = (r: (typeof cmp.rows)[number]) => {
   .summary span { display: inline-block; margin-right: 1rem; white-space: nowrap; }
   .summary .muted { margin-top: 0.4rem; }
   .toggle { display: block; margin-top: 0.6rem; cursor: pointer; }
-
   .synopsis { margin-top: 1.5rem; }
-  .syn-head, .syn-pair { display: grid; grid-template-columns: 1fr 1fr; column-gap: 1.5rem; }
+  .syn-head { display: grid; grid-template-columns: 1fr 1fr; column-gap: 1.5rem; }
   .syn-head {
     position: sticky; top: 0; z-index: 1; background: var(--bg); padding: 0.6rem 0;
     border-bottom: 2px solid var(--line); font-weight: 700; font-size: 0.9rem;
@@ -159,53 +103,9 @@ const chapterChange = (r: (typeof cmp.rows)[number]) => {
     letter-spacing: 0.04em; color: var(--text-muted); border-bottom: 1px solid var(--line);
   }
   /* hide only pasal whose text and number are both unchanged */
-  .hide-same .syn-row.sama:not(.renumbered) { display: none; }
-  .syn-row { padding: 0.75rem 0 1rem; border-bottom: 1px solid var(--line); scroll-margin-top: 3rem; }
-  .syn-meta { display: flex; gap: 0.5rem; align-items: center; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.25rem; }
-  .syn-meta a { text-decoration: none; padding: 0 var(--s-2); border-radius: 999px; border: 1px solid currentColor; color: var(--text-muted); }
-  .berubah .syn-meta a { background: transparent; color: var(--warn); border: 1px solid currentColor; }
-  .baru .syn-meta a { color: var(--ok); }
-  .dihapus .syn-meta a { color: var(--del-text); }
-  .syn-meta .tag { color: var(--text-muted); font-weight: 500; }
-  .cell h3 { font-size: 0.95rem; margin: 0.25rem 0 0.4rem; }
-  .cell h3 .ver { font-weight: 400; color: var(--text-muted); font-size: 0.85em; }
-  .cell .none { color: var(--text-muted); font-style: italic; font-size: 0.9rem; margin: 0.25rem 0; }
-  /* hanging numbers: "(1)" / "a." in their own column, wrapped text stays indented; each
-     nesting level (--i) indents by one number column */
-  .cell.line {
-    --num: 2.3rem;
-    display: grid; grid-template-columns: minmax(var(--num), max-content) 1fr; column-gap: 0.3rem;
-    align-items: start;
-    margin: 0.1rem 0 0.1rem calc(var(--i, 0) * var(--num));
-    padding: 0.2rem 0.4rem; border-radius: 4px;
-  }
-  .cell.line .num { grid-column: 1; white-space: nowrap; }
-  .cell.line .txt { grid-column: 2; min-width: 0; }
-  .cell.line { font-family: var(--font-law); font-size: var(--fs-law); line-height: 1.6; }
-  .cell.line .num:empty + .txt { grid-column: 1 / -1; }
-  .cell.old.line.dihapus { background: var(--del-bg); color: var(--del-text); }
-  .cell.new.line.baru { background: var(--ins-bg); color: var(--ins-text); }
-  .cell.new.line.dihapus, .cell.old.line.baru { visibility: hidden; padding-top: 0; padding-bottom: 0; }
-  .cell.inline { display: none; }
-  /* inline-block: a struck-through line's strike does not carry into its pointer */
-  .ref { display: inline-block; width: 100%; margin-top: 0.2rem; font-size: 0.8rem; color: var(--text-muted); }
-  .ref a { color: inherit; }
-  .cell.old.line.dihapus del { background: none; }
-  .cell.new.line.baru ins { background: none; }
-  .dihapus .cell.new, .baru .cell.old { color: var(--text-muted); }
-
+  .hide-same :global(.syn-row.sama:not(.renumbered)) { display: none; }
   @media (max-width: 760px) {
-    /* phones: one inline column (deletions and insertions marked in place), like most diff tools */
     .versions { grid-template-columns: 1fr; }
     .syn-head { display: none; }
-    .syn-pair { grid-template-columns: 1fr; }
-    .cell.line.old, .cell.line.new { display: none; }
-    .cell.inline { display: grid; }
-    .cell.inline.dihapus { background: var(--del-bg); color: var(--del-text); }
-    .cell.inline.dihapus .txt > :not(.ref), .cell.inline.dihapus .num { text-decoration: line-through; }
-    .cell.inline.baru { background: var(--ins-bg); color: var(--ins-text); }
-    .cell.inline.dihapus del, .cell.inline.baru ins { background: none; }
-    .baru .cell.old:not(.line), .dihapus .cell.new:not(.line) { display: none; }
-    .cell.line { --num: 1.9rem; }
   }
 </style>

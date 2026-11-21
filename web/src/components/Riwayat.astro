@@ -6,25 +6,45 @@ import { tanggal } from "../lib/labels.ts";
 import type { LawDoc } from "../lib/lawdoc.ts";
 import { citeId, history, pathOf, type Regulation } from "../lib/peraturan.ts";
 
-interface Props { r: Regulation; doc?: LawDoc }
-const { r, doc } = Astro.props;
+interface Props { r: Regulation; doc?: LawDoc; compared?: Set<string> }
+const { r, doc, compared = new Set() } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const events = history(r);
 const anchor = new Map((doc?.pasal ?? []).map((p) => [p.num, p.eId]));
 const ORDINAL = ["", "", "kedua", "ketiga", "keempat", "kelima", "keenam", "ketujuh", "kedelapan", "kesembilan", "kesepuluh"];
 const lawLink = (id: string) => pathOf(id);
-const amendments = events.filter((e) => e.kind === "diubah").length;
+// Amendments named by ordinal ("perubahan keempat") that we have no law for: show a gap.
+type Row = (typeof events)[number] | { kind: "gap"; date: null; from: number; to: number };
+const rows: Row[] = [];
+let seen = 0;
+for (const e of events) {
+  if (e.kind === "diubah") {
+    const order = e.order ?? seen + 1;
+    if (order > seen + 1) rows.push({ kind: "gap", date: null, from: seen + 1, to: order - 1 });
+    seen = Math.max(seen + 1, order);
+  }
+  rows.push(e);
+}
+const amendments = seen;
 ---
 {events.length > 1 && (
   <section class="riwayat" id="riwayat" aria-labelledby="riwayat-title">
     <h2 id="riwayat-title">Riwayat</h2>
     <p class="muted small">
       {amendments > 0
-        ? <>Diubah {amendments}×. Teks di bawah adalah teks <strong>asli</strong> saat diundangkan; pasal yang kemudian diubah ditandai. Teks terkini (setelah semua perubahan) belum tersedia.</>
+        ? <>Diubah {amendments}×. Teks di bawah adalah teks <strong>asli</strong> saat diundangkan; pasal yang kemudian diubah ditandai. Teks terkini (setelah semua perubahan) belum disusun{compared.size > 0 ? "; perubahan tiap pasal bisa dibandingkan, sebelum dan sesudah" : ""}.</>
         : <>Riwayat undang-undang ini menurut judul-judul peraturan yang terkait.</>}
     </p>
     <ol>
-      {events.map((e) => {
+      {rows.map((e) => {
+        if (e.kind === "gap") {
+          const which = Array.from({ length: e.to - e.from + 1 }, (_, k) => ORDINAL[e.from + k] || (e.from + k === 1 ? "pertama" : String(e.from + k)));
+          return (
+            <li class="gap">
+              <div class="what muted">Perubahan {which.join(" dan ")}: belum tercatat di sini (mungkin melalui undang-undang lain, misalnya UU Cipta Kerja)</div>
+            </li>
+          );
+        }
         const by = e.by?.id;
         const href = by ? lawLink(by) : undefined;
         const cite = by ? citeId(by) : "";
@@ -50,6 +70,9 @@ const amendments = events.filter((e) => e.kind === "diubah").length;
                   ) : null)}
               </dl>
             )}
+            {e.kind === "diubah" && by && compared.has(by) && (
+              <p class="small compare"><a href={`${base}${pathOf(r.id)}perubahan/#${by}`}>Bandingkan pasal demi pasal: sebelum dan sesudah →</a></p>
+            )}
             {e.kind === "diubah" && !e.changes && (
               <p class="muted small">Rincian pasal yang diubah belum dapat dibaca dari teksnya.</p>
             )}
@@ -70,6 +93,7 @@ const amendments = events.filter((e) => e.kind === "diubah").length;
     width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--primary);
   }
   li.diubah::before { border-color: var(--warn); }
+  li.gap::before { border-style: dashed; border-color: var(--gone); }
   li.dicabut::before { border-color: var(--gone); background: var(--gone); }
   li:last-child { padding-bottom: 0; }
   .what { margin-top: var(--s-1); }
@@ -77,5 +101,6 @@ const amendments = events.filter((e) => e.kind === "diubah").length;
   .changes div { display: grid; grid-template-columns: 11rem 1fr; gap: var(--s-2); padding: var(--s-1) 0; border-top: 1px solid var(--line); }
   .changes dt { color: var(--text-muted); }
   .changes dd { margin: 0; }
+  .compare { margin: var(--s-2) 0 0; }
   @media (max-width: 640px) { .changes div { grid-template-columns: 1fr; gap: 0; } }
 </style>

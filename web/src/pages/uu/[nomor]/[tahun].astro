@@ -7,7 +7,8 @@ import Toc from "../../../components/Toc.astro";
 import Riwayat from "../../../components/Riwayat.astro";
 import RelationsBanner from "../../../components/RelationsBanner.astro";
 import { tanggal } from "../../../lib/labels.ts";
-import { citeId, history, loadRegulations, loadRegulationText, pasalNotes, pathOf, rel, shortCite, STATUS_LABEL, type Regulation } from "../../../lib/peraturan.ts";
+import { amendmentSteps, shortName } from "../../../lib/amendments.ts";
+import { amendmentCount, citeId, history, lawPath, loadRegulations, loadRegulationText, pasalNotes, pathOf, rel, shortCite, STATUS_LABEL, type Regulation } from "../../../lib/peraturan.ts";
 
 export function getStaticPaths() {
   return loadRegulations().filter((r) => r.type === "uu").map((r) => ({
@@ -20,17 +21,27 @@ const doc = loadRegulationText(r);
 const status = r.status ?? "";
 const pasal = r.versions.find((v) => v.pasal_count)?.pasal_count;
 const R = rel(r);
-const amendments = R.amended_by.length;
-const notes = new Map([...pasalNotes(r)].map(([n, ids]) => [n, ids.map((id) => ({ label: citeId(id), href: pathOf(id) ? `${base}${pathOf(id)}` : undefined }))]));
+const amendments = amendmentCount(r);
+const steps = amendmentSteps(r, doc);
+const compared = new Set(steps.map((s) => s.by.id));
+const comparedPasal = new Set(steps.flatMap((s) => s.changes.map((c) => c.anchor)));
+// "Diubah oleh UU 19/2016": to the before/after comparison of that pasal when there is one
+const notes = new Map([...pasalNotes(r)].map(([n, ids]) => [n, ids.map((id) => ({
+  label: citeId(id),
+  href: comparedPasal.has(`${id}-pasal-${n}`) ? `${base}${lawPath(r)}perubahan/#${id}-pasal-${n}`
+    : pathOf(id) ? `${base}${pathOf(id)}` : undefined,
+}))]));
+const short = shortName(r);
 const hasHistory = history(r).length > 1;
 ---
-<Base title={`${shortCite(r)}${r.subject ? ` tentang ${r.subject}` : ""}`} description={`${r.title}${r.subject ? ` tentang ${r.subject}` : ""}`} section="peraturan">
+<Base title={`${short ? `${short} (${shortCite(r)})` : shortCite(r)}${r.subject ? ` tentang ${r.subject}` : ""}`} description={`${r.title}${r.subject ? ` tentang ${r.subject}` : ""}`} section="peraturan">
   <DocLayout
     crumbs={[{ href: `${base}uu/`, label: "Undang-Undang" }, { href: `${base}uu/tahun/${r.year}/`, label: String(r.year) }, { label: shortCite(r) }]}
     eyebrow={r.title}
     title={r.subject || r.title}
   >
     <div slot="head" class="head-meta">
+      {short && <span class="short" data-pagefind-meta="short">{short}</span>}
       {status && <span class={`badge ${status}`}>{STATUS_LABEL[status] ?? status}</span>}
       {r.tanggal_penetapan && <span class="muted small">Ditetapkan {tanggal(r.tanggal_penetapan)}</span>}
       {pasal && <span class="muted small">{pasal} pasal</span>}
@@ -41,6 +52,7 @@ const hasHistory = history(r).length > 1;
       <Facts title="Keterangan" facts={[
         { label: "Jenis", value: "Undang-Undang" },
         { label: "Nomor / tahun", value: `${r.number.toUpperCase()} / ${r.year}` },
+        { label: "Nama singkat", value: short ?? null },
         { label: "Status", value: STATUS_LABEL[status] ?? r.status },
         { label: "Ditetapkan", value: r.tanggal_penetapan ? `${tanggal(r.tanggal_penetapan)}${r.tempat_penetapan ? `, ${r.tempat_penetapan}` : ""}` : null },
         { label: "Oleh", value: r.pejabat_penetapan },
@@ -52,10 +64,11 @@ const hasHistory = history(r).length > 1;
         { label: "Salinan arsip", value: r.archive_url ? "archive.org" : null, href: r.archive_url },
       ]} />
       {hasHistory && <p class="small"><a href="#riwayat">Riwayat perubahan →</a></p>}
+      {steps.length > 0 && <p class="small"><a href={`${base}${lawPath(r)}perubahan/`}>Bandingkan perubahan pasal demi pasal →</a></p>}
       {doc && <Toc doc={doc} />}
     </Fragment>
     <RelationsBanner r={r} />
-    <Riwayat r={r} doc={doc} />
+    <Riwayat r={r} doc={doc} compared={compared} />
     {doc ? (
       <>
         <p class="notice small">Teks ini diambil otomatis dari PDF resmi dan bisa memuat kesalahan baca. Bila ragu, periksa <a href={r.source_pdf_url ?? r.source_url}>PDF resminya</a>.</p>
@@ -76,6 +89,7 @@ const hasHistory = history(r).length > 1;
 </Base>
 
 <style>
+  .short { font-weight: 700; color: var(--primary); }
   .head-meta { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-4); align-items: center; }
   .notice { background: var(--bg-subtle); border-left: 3px solid var(--line); padding: var(--s-3) var(--s-4); border-radius: var(--r-sm); max-width: var(--measure); }
   .notice p:last-child { margin-bottom: 0; }

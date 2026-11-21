@@ -82,6 +82,7 @@ def to_bluebell(doc: Document) -> str:
     level = 1      # depth of the current container's children
     pasal_depth = 1
     ayat_depth: int | None = None
+    in_pasal = False     # a list or text between a heading and the first Pasal is plain text
     closing: list[Block] = []
     penjelasan: list[Block] = []
     for k, b in enumerate(blocks[body_start:], start=body_start):
@@ -95,20 +96,25 @@ def to_bluebell(doc: Document) -> str:
             depth = {"bab": 1, "bagian": 2, "paragraf": 2, "pasal": 2}
             w.heading(1, "CHAPTER", _strip(b.label, "BAB"), b.text)
             w.line(0)
+            in_pasal, ayat_depth, level = False, None, 2
         elif b.kind == "bagian":
             d = depth["bagian"]
             depth["paragraf"] = depth["pasal"] = d + 1
             w.heading(d, "PART", _strip(b.label, "Bagian"), b.text)
             w.line(0)
+            in_pasal, ayat_depth, level = False, None, d + 1
         elif b.kind == "paragraf":
             d = depth["paragraf"]
             depth["pasal"] = d + 1
             w.heading(d, "SUBPART", _strip(b.label, "Paragraf"), b.text)
             w.line(0)
+            in_pasal, ayat_depth, level = False, None, d + 1
         elif b.kind == "pasal":
             pasal_depth = depth["pasal"]
             w.heading(pasal_depth, "ART", _strip(b.label, "Pasal"))
-            level, ayat_depth = pasal_depth + 1, None
+            level, ayat_depth, in_pasal = pasal_depth + 1, None, True
+        elif not in_pasal:
+            w.para(level, f"{b.label} {b.text}".strip() if b.kind != "text" else b.text)
         elif b.kind == "ayat":
             ayat_depth = pasal_depth + 1
             w.line(ayat_depth, f"PARA {b.label}")

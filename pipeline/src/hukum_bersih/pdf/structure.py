@@ -12,7 +12,8 @@ import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
-PARSER_VERSION = 3  # 2: page headers/numbers on every page (Pasal.id rules); 3: old-spelling closings and PENDJELASAN
+PARSER_VERSION = 4  # 2: page headers/numbers on every page (Pasal.id rules); 3: old-spelling closings and
+#                    PENDJELASAN; 4: lists between a BAB heading and its first Pasal (UU 19/2003)
 
 BAB_RE = re.compile(r"^BAB\s+([IVXLC]+)$")
 BAGIAN_RE = re.compile(r"^Bagian\s+(Ke\w+)$")
