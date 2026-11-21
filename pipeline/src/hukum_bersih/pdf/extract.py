@@ -105,7 +105,7 @@ def _clean_page(raw: list[str], first_page: bool) -> list[str]:
 
 # Page-turn words ("catchwords"): the first words of the next page, printed at the foot of a
 # page and ending in an ellipsis: "Pasal 2…", "d. bahwa . . .", "MEMUTUSKAN :..".
-CATCHWORD_RE = re.compile(r"^.{1,70}?(?:…|\.\s?\.\s?\.|:\s?\.\.)\s*$")
+CATCHWORD_RE = re.compile(r"^.{1,70}?(?:…|\.\s?\.\s?\.|:\s?\.\.)\.?\s*$")
 CATCHWORD_ZONE = 2  # only the last lines of a page
 
 
@@ -113,4 +113,12 @@ def clean_lines(pages: list[list[str]]) -> list[str]:
     out: list[str] = []
     for k, raw in enumerate(pages):
         out.extend(_clean_page(raw, first_page=(k == 0)))
-    return out
+    # Retyped PDFs do not keep the printed page breaks, so a page-turn word can stand anywhere;
+    # it is always followed by the words it announces ("Pasal 15…" / "Pasal 15").
+    return [ln for i, ln in enumerate(out)
+            if not (CATCHWORD_RE.match(ln) and i + 1 < len(out) and _announces(ln, out[i + 1]))]
+
+
+def _announces(catchword: str, nxt: str) -> bool:
+    stem = re.sub(r"[\s.…:]+$", "", catchword).strip()
+    return len(stem) >= 2 and nxt.replace(" ", "").startswith(stem.replace(" ", ""))

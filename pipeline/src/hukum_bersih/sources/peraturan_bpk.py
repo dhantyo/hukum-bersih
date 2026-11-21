@@ -311,16 +311,19 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
                 raise RuntimeError(f"{f['url']}: not a PDF ({r.headers.get('content-type')})")
             entry = entry_for_file(pdf, f["url"], None, None, f["filename"])
             archive_url = by_sha.get(entry.sha256)
-            doc_id = None
+            doc_id, repaired = None, None
             if archive_url is None and do_archive:
                 doc_id, filename = file_ids(version, item_id, n, taken.setdefault(item_id, set()))
-                archive.upload(pdf, doc_id, filename, f["url"], f["filename"], data_dir,
-                               rec.get("title"))
+                repaired = archive.upload(pdf, doc_id, filename, f["url"], f["filename"], data_dir,
+                                          rec.get("title"))
                 archive_url = f"https://archive.org/download/{item_id}/{filename}"
                 taken[item_id].add(filename)
                 by_sha[entry.sha256] = archive_url
             doc_id = doc_id or (version if n == 1 else f"{version}_{n}")
             entry = entry_for_file(pdf, f["url"], archive_url, doc_id, f["filename"])
+            if repaired:
+                from dataclasses import replace
+                entry = replace(entry, archived_sha256=repaired.sha256, note=repaired.note)
             manifest = manifest_path(data_dir, f["url"])
             manifest.parent.mkdir(parents=True, exist_ok=True)
             with manifest.open("a") as fh:

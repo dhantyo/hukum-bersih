@@ -92,3 +92,13 @@ def test_old_closing_formula():                                   # UU 25/1956
 def test_penjelasan_umum_on_one_line():                           # UU 25/1956
     doc = parse_lines(["Menimbang : a. bahwa x;", "Pasal 1", "isi.", "PENJELASAN UMUM", "Teks umum."])
     assert [b.kind for b in doc.blocks][-3:] == ["penjelasan", "umum", "text"]
+
+
+def test_page_turn_words_in_the_middle_of_a_pdf_page():           # UU 19/2001, UU 12/1964
+    from hukum_bersih.pdf.extract import clean_lines
+
+    lines = clean_lines([["teks a", "Pasal 15…", "Pasal 15", "(1) Setelah", "teks b", "Ayat (4) …", "Ayat (4)",
+                          "Cukup jelas", "x"], ["teks", "Pasal 7…."]])
+    assert lines == ["teks a", "Pasal 15", "(1) Setelah", "teks b", "Ayat (4)", "Cukup jelas", "x", "teks"]
+    # an ellipsis that announces nothing stays (it may be text)
+    assert clean_lines([["dan seterusnya …", "Pasal 2", "x"]]) == ["dan seterusnya …", "Pasal 2", "x"]

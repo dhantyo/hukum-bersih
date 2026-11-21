@@ -17,9 +17,15 @@ class ManifestEntry:
     archive_url: str | None = None
     doc_id: str | None = None
     original_filename: str | None = None
+    archived_sha256: str | None = None   # only when the archived copy differs (archive.Repaired)
+    note: str | None = None
 
     def to_dict(self) -> dict:
-        return asdict(self)
+        d = asdict(self)
+        for k in ("archived_sha256", "note"):
+            if d[k] is None:
+                del d[k]
+        return d
 
 
 def sha256_file(path: Path, chunk_size: int = 1 << 20) -> str:
