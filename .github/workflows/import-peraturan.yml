@@ -51,7 +51,8 @@ jobs:
             echo "$out" | grep -E '^(ok|FAIL)' >> "$GITHUB_STEP_SUMMARY" || true
             git add data/
             if ! git diff --cached --quiet; then
-              git commit -qm "peraturan/$JENIS: ${REPARSE:+re-convert}${REPARSE:-import} $n from peraturan.go.id"
+              verb=$([ -n "$REPARSE" ] && echo "re-convert" || echo "import")
+              git commit -qm "peraturan/$JENIS: $verb $n from peraturan.go.id"
               for i in 1 2 3 4 5; do
                 git pull -q --no-rebase --no-edit origin "${GITHUB_REF_NAME}" && git push -q && break
                 sleep $((i * 20))
