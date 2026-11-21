@@ -14,8 +14,8 @@ tanggal_penetapan: '2026-06-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-2026
-source_pdf_url: https://peraturan.go.id/files/uu-no-4-tahun-2026.pdf
+source_url: https://peraturan.bpk.go.id/Details/350166/uu-no-4-tahun-2026
+source_pdf_url: https://peraturan.bpk.go.id/Download/413875/UU%20Nomor%204%20Tahun%202026.pdf
 relationships:
   amends:
   - id: uu_4_2023
@@ -149,3 +149,24 @@ versions:
   text: uu_4_2026_2026-06-17.txt
   pasal_count: 3
 pdf_sha256: dab7d3f02b6b4755c4f64eb3859ea6d717559465fc7947b0f10d0cb79a884483
+tanggal_pengundangan: '2026-06-17'
+tanggal_berlaku: '2026-06-17'
+lembaran_negara: 'LN 2026 (62), TLN (7180) : 137 hlm.'
+subjek: PERBANKAN, LEMBAGA KEUANGAN - PEREKONOMIAN - KEBIJAKAN PEMERINTAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-2026
+  source_pdf_url: https://peraturan.go.id/files/uu-no-4-tahun-2026.pdf
+bpk:
+  id: 350166
+  files:
+  - url: https://peraturan.bpk.go.id/Download/413875/UU%20Nomor%204%20Tahun%202026.pdf
+    bpk_file_id: 413875
+    filename: UU Nomor 4 Tahun 2026.pdf
+  status_peraturan:
+    Mengubah:
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+uji_materi: null

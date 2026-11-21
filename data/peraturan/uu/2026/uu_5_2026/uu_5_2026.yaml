@@ -13,8 +13,8 @@ tanggal_penetapan: '2026-06-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-2026
-source_pdf_url: https://peraturan.go.id/files/uu-no-5-tahun-2026.pdf
+source_url: https://peraturan.bpk.go.id/Details/350096/uu-no-5-tahun-2026
+source_pdf_url: https://peraturan.bpk.go.id/Download/413801/UU%20Nomor%205%20Tahun%202026.pdf
 relationships:
   amends:
   - id: uu_2_2002
@@ -52,3 +52,40 @@ versions:
   text: uu_5_2026_2026-06-17.txt
   pasal_count: 2
 pdf_sha256: 689f9ed97f43900c64be3c44f8eef9f91091e3a6a48691943ceb6788a99931d2
+tanggal_pengundangan: '2026-06-17'
+tanggal_berlaku: '2026-06-17'
+lembaran_negara: 'LN 2026 (63), TLN (7181) : 16 hlm.; jdih.setneg.go.id'
+subjek: KEPOLISIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-2026
+  source_pdf_url: https://peraturan.go.id/files/uu-no-5-tahun-2026.pdf
+bpk:
+  id: 350096
+  files:
+  - url: https://peraturan.bpk.go.id/Download/413801/UU%20Nomor%205%20Tahun%202026.pdf
+    bpk_file_id: 413801
+    filename: UU Nomor 5 Tahun 2026.pdf
+    sha256: 689f9ed97f43900c64be3c44f8eef9f91091e3a6a48691943ceb6788a99931d2
+    bytes: 1971666
+    archive_url: https://archive.org/download/uu_5_2026/uu_5_2026_2026-06-17.pdf
+  status_peraturan:
+    Mengubah:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    - id: uu_2_2002
+      citation: UU No. 2 Tahun 2002
+      tentang: Kepolisian Negara Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/44418/uu-no-2-tahun-2002
+      note: null
+  pasal_count: 2
+  parser_version: 4
+uji_materi: null

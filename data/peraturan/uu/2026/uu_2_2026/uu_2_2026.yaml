@@ -11,8 +11,8 @@ tanggal_penetapan: '2026-04-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-2026
-source_pdf_url: https://peraturan.go.id/files/uud-no-2-tahun-2026.pdf
+source_url: https://peraturan.bpk.go.id/Details/352436/uu-no-2-tahun-2026
+source_pdf_url: https://peraturan.bpk.go.id/Download/416259/UU%20No.%202%20Tahun%202026.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_2_2026_2026-04-30
+  kind: asli
+  source: official
+  date: '2026-04-30'
+  date_basis: tanggal_penetapan
+  text: uu_2_2026_2026-04-30.txt
+  pasal_count: 21
+  parser_version: 4
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e11a6742d672db81a7be6d2f97014d9af2aaa12e1d1ddfea615eb0218484a83f
 pdf_sha256: 9bf1a946e9bf168f31654a57d4aca5397146fe1ffb1925d611e0f7f608d06b1d
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '2026-04-30'
+tanggal_berlaku: '2026-04-30'
+lembaran_negara: 'LN 2026 (47), TLN (7174) : 18 hlm.; jdih.setneg.go.id'
+subjek: HAK ASASI MANUSIA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-2026
+  source_pdf_url: https://peraturan.go.id/files/uud-no-2-tahun-2026.pdf
+bpk:
+  id: 352436
+  files:
+  - url: https://peraturan.bpk.go.id/Download/416259/UU%20No.%202%20Tahun%202026.pdf
+    bpk_file_id: 416259
+    filename: UU No. 2 Tahun 2026.pdf
+    sha256: e11a6742d672db81a7be6d2f97014d9af2aaa12e1d1ddfea615eb0218484a83f
+    bytes: 1733281
+    archive_url: https://archive.org/download/uu_2_2026/uu_2_2026_2026-04-30.pdf
+  status_peraturan: null
+uji_materi: null
