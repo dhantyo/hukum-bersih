@@ -21,6 +21,14 @@ on:
       batches:
         description: "Max batches of 50 (0 = until the time budget is used)"
         default: "0"
+      only:
+        description: "Just these ids, comma-separated (e.g. uu_4_2009,uu_31_1999)"
+        type: string
+        default: ""
+      no_text:
+        description: "PDFs only: download and archive, leave texts alone"
+        type: boolean
+        default: false
   push:
     branches: ["claude/**", "!claude/determined-curie-rq2b0s"]   # not the default branch
     paths: [".github/workflows/import-bpk.yml"]
@@ -41,6 +49,8 @@ jobs:
       # a push to a claude/** branch is a test run: one small batch
       BATCHES: ${{ github.event_name == 'push' && '1' || inputs.batches || '0' }}
       BATCH: ${{ github.event_name == 'push' && '5' || '50' }}
+      ONLY: ${{ inputs.only && format('--only={0}', inputs.only) || '' }}
+      NO_TEXT: ${{ inputs.no_text && '--no-text' || '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
@@ -59,7 +69,7 @@ jobs:
           batch=0
           while [ "$(date +%s)" -lt "$deadline" ]; do
             batch=$((batch + 1))
-            out=$(cd pipeline && xvfb-run -a uv run hukum-bersih import-bpk "$JENIS" --limit "$BATCH" 2>&1 || true)
+            out=$(cd pipeline && xvfb-run -a uv run hukum-bersih import-bpk "$JENIS" --limit "$BATCH" $ONLY $NO_TEXT 2>&1 || true)
             echo "$out"
             n=$(echo "$out" | grep -c '^ok' || true)
             echo "$out" | grep -E '^(ok|FAIL|STOP|done)' >> "$GITHUB_STEP_SUMMARY" || true
@@ -74,6 +84,7 @@ jobs:
             fi
             echo "$out" | grep -q '^STOP' && { echo "::error::Cloudflare stopped the import"; exit 1; }
             [ "$n" -eq 0 ] && break
+            [ -n "$ONLY" ] && break                      # a list of ids is done in one go
             [ "$BATCHES" -gt 0 ] && [ "$batch" -ge "$BATCHES" ] && break
           done
           echo "From BPK: $(grep -l '^bpk:' -r data/peraturan/$JENIS --include='*.yaml' | wc -l) of $(find data/peraturan/$JENIS -name '*.yaml' | wc -l) records" | tee -a "$GITHUB_STEP_SUMMARY"

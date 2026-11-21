@@ -176,3 +176,25 @@ def test_not_a_pdf_fails_without_writing_manifest(tmp_path):
         bpk.import_one(s, bpk.Listing("/Details/350096/uu-no-5-tahun-2026", 350096), "uu",
                        tmp_path, {}, do_archive=False)
     assert not (tmp_path / "sources").exists()
+
+
+def test_find_picks_the_exact_regulation():
+    class S:
+        def get(self, url):
+            assert "&tahun=2026&jenis=8" in url and "nomor=" in url
+            return FakeResponse(page("search_uu_p1.html").encode(), "text/html")
+
+    assert bpk.find(S(), "uu_5_2026") == bpk.Listing("/Details/350096/uu-no-5-tahun-2026", 350096)
+    with pytest.raises(LookupError):
+        bpk.find(S(), "uu_99_2026")
+
+
+def test_no_text_leaves_record_without_text(tmp_path):
+    import yaml
+
+    s = FakeSession("details_uu_5_2026.html", small_pdf())
+    line = bpk.import_one(s, bpk.Listing("/Details/350096/uu-no-5-tahun-2026", 350096), "uu",
+                          tmp_path, {}, do_archive=False, no_text=True)
+    assert line.endswith("PDFs only (no text step)")
+    rec = yaml.safe_load((tmp_path / "peraturan/uu/2026/uu_5_2026/uu_5_2026.yaml").read_text())
+    assert rec["versions"] == [] and "pdf_quality" not in rec

@@ -88,6 +88,9 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--limit", type=int, default=0, help="stop after N regulations done (0 = all)")
     p.add_argument("--delay", type=float, default=3.0, help="seconds between requests")
     p.add_argument("--no-archive", action="store_true", help="record hashes, skip archive.org")
+    p.add_argument("--only", default="", help="comma-separated ids (uu_4_2009,…): just these")
+    p.add_argument("--no-text", action="store_true",
+                   help="download and archive PDFs, but leave texts alone (no conversion)")
 
     p = sub.add_parser("archive-pending",
                        help="archive recorded regulation PDFs not yet on archive.org")
@@ -186,11 +189,23 @@ def main(argv: list[str] | None = None) -> int:
         session, done, failed = Session(args.delay), 0, 0
         known = bpk.known_records(args.data_dir)
         cache = bpk.archived_files(args.data_dir)
+        only = [i.strip() for i in args.only.split(",") if i.strip()]
+
+        def items():
+            if not only:
+                yield from bpk.listings(session, args.jenis)
+            for work in only:
+                try:
+                    yield bpk.find(session, work)
+                except LookupError as e:
+                    print(f"FAIL {e}", flush=True)
+
         try:
-            for item in bpk.listings(session, args.jenis):
+            for item in items():
                 try:
                     line = bpk.import_one(session, item, args.jenis, args.data_dir, known,
-                                          do_archive=not args.no_archive, cache=cache)
+                                          do_archive=not args.no_archive, cache=cache,
+                                          no_text=args.no_text)
                 except Challenged:
                     raise
                 except Exception as e:  # noqa: BLE001 - keep going; the run is resumable

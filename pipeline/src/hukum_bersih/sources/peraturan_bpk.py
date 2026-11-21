@@ -253,10 +253,26 @@ def listings(session, jenis: str) -> Iterator[Listing]:
         page += 1
 
 
+SLUG = {"uu": "uu", "perppu": "perpu", "pp": "pp", "perpres": "perpres"}
+
+
+def find(session, work: str) -> Listing:
+    """BPK detail page of one regulation, via the search form (nomor + tahun + jenis)."""
+    jenis, nomor, tahun = work.split("_")
+    text = session.get(f"/Search?keywords=&tentang=&nomor={nomor}&tahun={tahun}"
+                       f"&jenis={JENIS_ID[jenis]}").text
+    want = re.compile(rf"^/Details/\d+/{SLUG[jenis]}-no-{re.escape(nomor)}-tahun-{tahun}(?:-|$)")
+    hits = [i for i in parse_listing(text) if want.match(i.path)]
+    if len(hits) != 1:
+        raise LookupError(f"{work}: {len(hits)} matching results on BPK")
+    return hits[0]
+
+
 def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[int, Path],
-               do_archive: bool = True, cache: tuple | None = None) -> str:
+               do_archive: bool = True, cache: tuple | None = None, no_text: bool = False) -> str:
     """Fetch one detail page, update or create the record, download + archive its PDFs, and
-    convert the main PDF when the record has no text. ``known``: bpk id -> record path."""
+    convert the main PDF when the record has no text (not with ``no_text``: PDFs only, e.g.
+    to collect samples while the parser is being fixed). ``known``: bpk id -> record path."""
     from .. import archive
     from ..manifest import entry_for_file, manifest_path
     from ..naming import archive_item
@@ -312,7 +328,9 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
             f.update(sha256=entry.sha256, bytes=entry.bytes, archive_url=archive_url)
             main_pdf = main_pdf or pdf
             out.append("archived" if archive_url else "recorded")
-        if texts:                                       # keep our text; parse BPK's to compare
+        if no_text:
+            note = "PDFs only (no text step)"
+        elif texts:                                     # keep our text; parse BPK's to compare
             try:
                 rec["bpk"]["pasal_count"] = parse_pdf(main_pdf).pasal_count
             except Exception as e:  # noqa: BLE001
