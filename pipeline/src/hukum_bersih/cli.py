@@ -121,10 +121,11 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     if args.command == "build-akn":
-        from .akn.build import build_ruu
+        from .akn.build import build_peraturan, build_ruu
 
-        for path in build_ruu(args.data_dir, args.out):
-            print(path)
+        ruu = build_ruu(args.data_dir, args.out)
+        peraturan = build_peraturan(args.data_dir, args.out)
+        print(f"{len(ruu)} RUU versions, {len(peraturan)} regulation versions -> {args.out}")
         return 0
 
     if args.command == "import-peraturan":

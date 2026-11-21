@@ -59,11 +59,13 @@ Names follow [NAMING.md](NAMING.md).
 
 | Path | Job |
 |---|---|
-| `lib/data.ts` | Reads YAML records from `data/` and generated XML from `web/generated/` |
+| `lib/data.ts` | Reads RUU records from `data/` and generated XML from `web/generated/` |
 | `lib/lawdoc.ts` | Akoma Ntoso → render tree + each Pasal as lines |
 | `lib/compare.ts` | Match pasal by content, then ayat, then words (diff-match-patch) |
 | `components/` | `LawText` / `AknNode` render Akoma Ntoso with `akn-*` classes and eIds as ids |
-| `pages/` | `/ruu/`, `/ruu/<slug>/`, `/ruu/<slug>/<doc id>/`, `/ruu/<slug>/beda/<a>...<b>/` |
+| `pages/` | `/`, `/uu/`, `/uu/tahun/<tahun>/`, `/uu/<nomor>/<tahun>/`, `/ruu/`, `/ruu/<slug>/`, `/ruu/<slug>/<doc id>/`, `/ruu/<slug>/beda/<a>...<b>/`, `/cari/`, `/tentang/` |
+| `styles/` | `tokens.css` (design tokens, see /DESIGN.md) and `global.css` |
+| `lib/peraturan.ts` | Reads regulation records and their generated Akoma Ntoso |
 
 ## Workflows (.github/workflows)
 

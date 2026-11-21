@@ -1,0 +1,58 @@
+/* Design tokens: see DESIGN.md. Components use these names, never raw values. */
+:root {
+  --bg: #ffffff;
+  --bg-subtle: #f5f6f7;
+  --surface: #ffffff;
+  --text: #1b1f24;
+  --text-muted: #59616b;
+  --line: #dde1e5;
+  --primary: #1d4f91;
+  --primary-bg: #e8f0fa;
+  --ok: #17683a;
+  --warn: #8a5a00;
+  --gone: #6b7280;
+  --ins-bg: #e3f4e8;
+  --ins-text: #14532d;
+  --del-bg: #fbe4e4;
+  --del-text: #7f1d1d;
+
+  --font-ui: "Public Sans Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-law: "Source Serif 4 Variable", Georgia, "Times New Roman", serif;
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.90625rem;
+  --fs-base: 1rem;
+  --fs-law: 1.09375rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.625rem;
+  --fs-2xl: 2rem;
+
+  --s-1: 0.25rem; --s-2: 0.5rem; --s-3: 0.75rem; --s-4: 1rem;
+  --s-5: 1.5rem; --s-6: 2rem; --s-7: 3rem; --s-8: 4rem;
+  --page: 72rem;
+  --measure: 42rem;
+  --panel: 17rem;
+
+  --r-sm: 4px;
+  --r-md: 8px;
+  --shadow-pop: 0 6px 24px rgb(0 0 0 / 0.12);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111418; --bg-subtle: #181c21; --surface: #1c2127; --text: #e6e8eb;
+    --text-muted: #a3abb5; --line: #2d343c; --primary: #8cb4f0; --primary-bg: #1a2a40;
+    --ok: #6fcf97; --warn: #e7b75f; --gone: #9aa3ad;
+    --ins-bg: #163a24; --ins-text: #b9ecc8; --del-bg: #43201f; --del-text: #f6c3c0;
+    --shadow-pop: 0 6px 24px rgb(0 0 0 / 0.5);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111418; --bg-subtle: #181c21; --surface: #1c2127; --text: #e6e8eb;
+  --text-muted: #a3abb5; --line: #2d343c; --primary: #8cb4f0; --primary-bg: #1a2a40;
+  --ok: #6fcf97; --warn: #e7b75f; --gone: #9aa3ad;
+  --ins-bg: #163a24; --ins-text: #b9ecc8; --del-bg: #43201f; --del-text: #f6c3c0;
+  --shadow-pop: 0 6px 24px rgb(0 0 0 / 0.5);
+  color-scheme: dark;
+}

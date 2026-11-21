@@ -70,3 +70,39 @@ def build_ruu(data_dir: Path, out_dir: Path) -> list[Path]:
             target.write_bytes(xml)
             written.append(target)
     return written
+
+
+def _build_version(args: tuple[str, str, str | None, str, str]) -> str | None:
+    text_path, akn, date, title, target = args
+    target_path = Path(target)
+    source = Path(text_path)
+    if target_path.exists() and target_path.stat().st_mtime >= source.stat().st_mtime:
+        return target                                    # up to date
+    try:
+        xml = to_akn(source.read_text(), akn, "act", expression_date=date, title=title)
+    except Exception as e:  # noqa: BLE001 - one bad text must not stop the site build
+        print(f"skip {source.name}: {type(e).__name__}: {str(e)[:120]}")
+        return None
+    target_path.parent.mkdir(parents=True, exist_ok=True)
+    target_path.write_bytes(xml)
+    return target
+
+
+def build_peraturan(data_dir: Path, out_dir: Path) -> list[Path]:
+    """Generate Akoma Ntoso XML for every regulation text version (in parallel; unchanged
+    texts are skipped)."""
+    from concurrent.futures import ProcessPoolExecutor
+
+    jobs = []
+    for record in sorted((data_dir / "peraturan").glob("*/*/*/*.yaml")):
+        rec = yaml.safe_load(record.read_text())
+        rel = record.parent.relative_to(data_dir / "peraturan")
+        for v in rec.get("versions") or []:
+            if not v.get("text"):
+                continue
+            date = v.get("date")
+            jobs.append((str(record.parent / v["text"]), rec["akn"],
+                         date if date and len(str(date)) == 10 else None, rec.get("title"),
+                         str(out_dir / "peraturan" / rel / f"{v['id']}.xml")))
+    with ProcessPoolExecutor() as pool:
+        return [Path(t) for t in pool.map(_build_version, jobs, chunksize=16) if t]

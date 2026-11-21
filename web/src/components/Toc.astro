@@ -1,0 +1,65 @@
+---
+// Table of contents from an Akoma Ntoso body: BAB with title and pasal range; pasal links when
+// a law has no BAB. Current section is highlighted by the script below.
+import type { AknNode, LawDoc } from "../lib/lawdoc.ts";
+
+interface Props { doc: LawDoc }
+const { doc } = Astro.props;
+
+const articles = (n: AknNode): AknNode[] =>
+  n.tag === "article" ? [n] : n.children.flatMap(articles);
+const chapters = doc.body.filter((n) => n.tag === "chapter");
+const loose = chapters.length ? [] : doc.body.flatMap(articles);
+const range = (arts: AknNode[]) =>
+  arts.length === 0 ? "" : arts.length === 1 ? `Pasal ${arts[0].num}` : `Pasal ${arts[0].num}–${arts.at(-1)!.num}`;
+---
+<nav class="toc" aria-label="Daftar isi">
+  <h2 class="panel-title">Daftar isi</h2>
+  <ol>
+    {chapters.map((c) => {
+      const arts = articles(c);
+      return (
+        <li>
+          <a href={`#${c.eId}`}>
+            <span class="toc-label">BAB {c.num}</span>
+            <span class="toc-title">{c.heading}</span>
+            <span class="toc-range">{range(arts)}</span>
+          </a>
+        </li>
+      );
+    })}
+    {loose.map((a) => <li><a href={`#${a.eId}`}><span class="toc-label">Pasal {a.num}</span></a></li>)}
+    {doc.penjelasan.length > 0 && <li><a href="#penjelasan"><span class="toc-label">Penjelasan</span></a></li>}
+  </ol>
+</nav>
+
+<script>
+  // highlight the section in view
+  const links = new Map<string, HTMLAnchorElement>();
+  document.querySelectorAll<HTMLAnchorElement>(".toc a").forEach((a) => links.set(a.hash.slice(1), a));
+  const obs = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      if (!e.isIntersecting) continue;
+      links.forEach((a) => a.removeAttribute("aria-current"));
+      links.get(e.target.id)?.setAttribute("aria-current", "true");
+    }
+  }, { rootMargin: "0px 0px -70% 0px" });
+  links.forEach((_, id) => { const el = document.getElementById(id); if (el) obs.observe(el); });
+</script>
+
+<style>
+  .toc ol { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--line); }
+  .toc a {
+    display: block; padding: var(--s-1) var(--s-3); margin-left: -1px; color: var(--text);
+    text-decoration: none; border-left: 2px solid transparent; line-height: 1.35;
+  }
+  .toc a:hover { background: var(--bg-subtle); }
+  .toc a[aria-current] { border-left-color: var(--primary); color: var(--primary); }
+  .toc-label { display: block; font-weight: 600; font-size: var(--fs-xs); letter-spacing: 0.03em; }
+  .toc-title { display: block; }
+  .toc-range { display: block; font-size: var(--fs-xs); color: var(--text-muted); }
+  .toc ol { columns: 1; }
+  @media (max-width: 960px) {
+    .toc ol { max-height: 16rem; overflow-y: auto; }
+  }
+</style>

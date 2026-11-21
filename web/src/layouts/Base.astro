@@ -1,132 +1,90 @@
 ---
+import "../styles/global.css";
+
 interface Props {
   title: string;
   description?: string;
   /** Keep this page out of the search index. */
   noindex?: boolean;
-  /** Use the full width (side-by-side comparisons). */
-  wide?: boolean;
+  /** Which main section is current: "peraturan" | "ruu" | "tentang". */
+  section?: string;
 }
-const { title, description, noindex = false, wide = false } = Astro.props;
-const home = import.meta.env.BASE_URL;
+const { title, description, noindex = false, section } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const nav = [
+  { key: "peraturan", href: `${base}uu/`, label: "Peraturan" },
+  { key: "ruu", href: `${base}ruu/`, label: "RUU" },
+  { key: "tentang", href: `${base}tentang/`, label: "Tentang" },
+];
 ---
 <!doctype html>
 <html lang="id">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title} · Hukum Bersih</title>
+    <title>{title === "Beranda" ? "Hukum Bersih" : `${title} · Hukum Bersih`}</title>
     {description && <meta name="description" content={description} />}
+    <meta name="color-scheme" content="light dark" />
   </head>
   <body>
+    <a class="skip" href="#main">Langsung ke isi</a>
     <header class="site">
-      <a class="brand" href={home}>Hukum Bersih</a>
-      <nav>
-        <a href={`${home}ruu/`}>RUU</a>
-      </nav>
+      <div class="wrap bar">
+        <a class="brand" href={base}>Hukum Bersih</a>
+        <nav aria-label="Utama">
+          {nav.map((n) => (
+            <a href={n.href} aria-current={section === n.key ? "page" : undefined}>{n.label}</a>
+          ))}
+        </nav>
+        <form class="search" action={`${base}cari/`} method="get" role="search">
+          <label class="visually-hidden" for="q">Cari peraturan</label>
+          <input id="q" name="q" type="search" placeholder="Cari undang-undang, pasal, kata…" autocomplete="off" />
+        </form>
+      </div>
     </header>
-    <main class:list={{ wide }} data-pagefind-body={noindex ? undefined : true}>
+    <main id="main" class="wrap" data-pagefind-body={noindex ? undefined : true}>
+      {!noindex && <span hidden data-pagefind-meta={`title:${title}`}></span>}
       <slot />
     </main>
     <footer class="site">
-      <p>
-        Teks hukum ditampilkan apa adanya dari sumbernya; setiap dokumen mencantumkan asal
-        dan tautan ke berkas aslinya. Ini bukan nasihat hukum.
-      </p>
-      <p>
-        Proyek terbuka: <a href="https://github.com/dhantyo/hukum-bersih">kode dan data di GitHub</a>.
-        Data berlisensi CC0, kode AGPL-3.0.
-      </p>
+      <div class="wrap">
+        <p>
+          <strong>Hukum Bersih</strong> menyajikan teks peraturan dan rancangan undang-undang
+          Indonesia apa adanya dari sumber resminya, dengan tautan ke berkas asli dan salinan
+          arsipnya. Teks diambil otomatis dari PDF dan bisa memuat kesalahan baca; PDF resminya
+          yang berlaku. Ini bukan nasihat hukum.
+        </p>
+        <p>
+          Proyek terbuka: <a href="https://github.com/dhantyo/hukum-bersih">kode dan data di GitHub</a>
+          · data CC0 · kode AGPL-3.0 · <a href={`${base}tentang/`}>tentang proyek ini</a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
 
-<style is:global>
-  :root {
-    --bg: #fbfaf7;
-    --surface: #ffffff;
-    --text: #1d1f23;
-    --muted: #5d6470;
-    --line: #e2dfd8;
-    --accent: #8a1c1c;
-    --ins-bg: #dcf3e1;
-    --ins-text: #0f5323;
-    --del-bg: #fbe0e0;
-    --del-text: #7a1717;
-    --badge-official: #1f6f43;
-    --badge-archive: #6b4fa0;
-    --badge-media: #a05a12;
-    --badge-leak: #9b1c1c;
-    --badge-none: #6b7280;
-    color-scheme: light;
+<style>
+  .skip { position: absolute; left: -999px; top: 0; }
+  .skip:focus { left: var(--s-4); top: var(--s-2); background: var(--bg); padding: var(--s-2); z-index: 10; }
+  header.site { border-bottom: 1px solid var(--line); background: var(--bg); }
+  .bar { display: flex; align-items: center; gap: var(--s-5); min-height: 4rem; flex-wrap: wrap; }
+  .brand { font-weight: 700; font-size: 1.125rem; color: var(--text); text-decoration: none; letter-spacing: -0.01em; }
+  nav { display: flex; gap: var(--s-4); }
+  nav a { color: var(--text); text-decoration: none; font-weight: 500; padding: var(--s-1) 0; border-bottom: 2px solid transparent; }
+  nav a:hover { border-bottom-color: var(--line); }
+  nav a[aria-current="page"] { border-bottom-color: var(--primary); color: var(--primary); }
+  .search { margin-left: auto; flex: 0 1 20rem; }
+  .search input {
+    width: 100%; font: inherit; font-size: var(--fs-sm); color: var(--text);
+    background: var(--bg-subtle); border: 1px solid var(--line); border-radius: var(--r-sm);
+    padding: var(--s-2) var(--s-3);
   }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #15171a;
-      --surface: #1c1f23;
-      --text: #e7e5e0;
-      --muted: #a3a9b3;
-      --line: #30343a;
-      --accent: #f08a8a;
-      --ins-bg: #173a22;
-      --ins-text: #b5ecc3;
-      --del-bg: #45201f;
-      --del-text: #f5c0bd;
-      --badge-official: #4fbf82;
-      --badge-archive: #a98fe0;
-      --badge-media: #e0a25a;
-      --badge-leak: #f08a8a;
-      --badge-none: #a3a9b3;
-      color-scheme: dark;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #15171a; --surface: #1c1f23; --text: #e7e5e0; --muted: #a3a9b3; --line: #30343a;
-    --accent: #f08a8a; --ins-bg: #173a22; --ins-text: #b5ecc3; --del-bg: #45201f;
-    --del-text: #f5c0bd; color-scheme: dark;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  }
-  main, header.site, footer.site { max-width: 48rem; margin: 0 auto; padding: 0 16px; }
-  main.wide { max-width: 76rem; }
-  header.site {
-    display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
-    padding-top: 1.25rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--line);
-  }
-  header.site .brand { font-weight: 700; font-size: 1.15rem; color: var(--text); text-decoration: none; }
-  header.site nav a { margin-left: 1rem; }
-  footer.site { margin-top: 4rem; padding-top: 1rem; padding-bottom: 3rem;
-    border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
-  a { color: var(--accent); }
-  h1 { font-size: 1.7rem; line-height: 1.25; margin: 2rem 0 0.5rem; }
-  h2 { font-size: 1.25rem; margin: 2.5rem 0 0.75rem; }
-  h3 { font-size: 1.05rem; margin: 1.75rem 0 0.5rem; }
-  .muted { color: var(--muted); }
-  .small { font-size: 0.9rem; }
-  .badge {
-    display: inline-block; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.02em;
-    padding: 0.1rem 0.5rem; border-radius: 999px; border: 1px solid currentColor;
-    white-space: nowrap; vertical-align: middle;
-  }
-  .badge.official { color: var(--badge-official); }
-  .badge.archive { color: var(--badge-archive); }
-  .badge.media { color: var(--badge-media); }
-  .badge.leak { color: var(--badge-leak); }
-  .badge.none { color: var(--badge-none); }
-  .card {
-    background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
-    padding: 1rem 1.1rem; margin: 0.75rem 0;
-  }
-  ul.plain { list-style: none; padding: 0; margin: 0; }
-  ins { background: var(--ins-bg); color: var(--ins-text); text-decoration: none; border-radius: 3px; }
-  del { background: var(--del-bg); color: var(--del-text); border-radius: 3px; }
-  @media (max-width: 480px) {
-    body { font-size: 16px; }
-    h1 { font-size: 1.4rem; }
+  .search input:focus { background: var(--bg); }
+  footer.site { margin-top: var(--s-8); border-top: 1px solid var(--line); background: var(--bg-subtle); }
+  footer.site .wrap { padding-top: var(--s-6); padding-bottom: var(--s-7); max-width: var(--page); }
+  footer.site p { font-size: var(--fs-sm); color: var(--text-muted); max-width: var(--measure); }
+  @media (max-width: 640px) {
+    .bar { gap: var(--s-3); padding-top: var(--s-3); padding-bottom: var(--s-3); }
+    .search { flex-basis: 100%; margin-left: 0; }
   }
 </style>

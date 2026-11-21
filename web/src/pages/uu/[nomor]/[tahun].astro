@@ -1,0 +1,71 @@
+---
+import Base from "../../../layouts/Base.astro";
+import DocLayout from "../../../components/DocLayout.astro";
+import Facts from "../../../components/Facts.astro";
+import LawText from "../../../components/LawText.astro";
+import Toc from "../../../components/Toc.astro";
+import { tanggal } from "../../../lib/labels.ts";
+import { loadRegulations, loadRegulationText, shortCite, STATUS_LABEL, type Regulation } from "../../../lib/peraturan.ts";
+
+export function getStaticPaths() {
+  return loadRegulations().filter((r) => r.type === "uu").map((r) => ({
+    params: { nomor: r.number, tahun: String(r.year) }, props: { r },
+  }));
+}
+const { r } = Astro.props as { r: Regulation };
+const base = import.meta.env.BASE_URL;
+const doc = loadRegulationText(r);
+const status = r.status ?? "";
+const pasal = r.versions.find((v) => v.pasal_count)?.pasal_count;
+---
+<Base title={`${shortCite(r)}${r.subject ? ` tentang ${r.subject}` : ""}`} description={`${r.title}${r.subject ? ` tentang ${r.subject}` : ""}`} section="peraturan">
+  <DocLayout
+    crumbs={[{ href: `${base}uu/`, label: "Undang-Undang" }, { href: `${base}uu/tahun/${r.year}/`, label: String(r.year) }, { label: shortCite(r) }]}
+    eyebrow={r.title}
+    title={r.subject || r.title}
+  >
+    <div slot="head" class="head-meta">
+      {status && <span class={`badge ${status}`}>{STATUS_LABEL[status] ?? status}</span>}
+      {r.tanggal_penetapan && <span class="muted small">Ditetapkan {tanggal(r.tanggal_penetapan)}</span>}
+      {pasal && <span class="muted small">{pasal} pasal</span>}
+    </div>
+    <Fragment slot="panel">
+      <Facts title="Keterangan" facts={[
+        { label: "Jenis", value: "Undang-Undang" },
+        { label: "Nomor / tahun", value: `${r.number.toUpperCase()} / ${r.year}` },
+        { label: "Status", value: STATUS_LABEL[status] ?? r.status },
+        { label: "Ditetapkan", value: r.tanggal_penetapan ? `${tanggal(r.tanggal_penetapan)}${r.tempat_penetapan ? `, ${r.tempat_penetapan}` : ""}` : null },
+        { label: "Oleh", value: r.pejabat_penetapan },
+        { label: "Pemrakarsa", value: r.pemrakarsa },
+      ]} />
+      <Facts title="Sumber" facts={[
+        { label: "Halaman resmi", value: "peraturan.go.id", href: r.source_url },
+        { label: "PDF resmi", value: "Unduh PDF", href: r.source_pdf_url ?? undefined },
+        { label: "Salinan arsip", value: r.archive_url ? "archive.org" : null, href: r.archive_url },
+      ]} />
+      {doc && <Toc doc={doc} />}
+    </Fragment>
+    {doc ? (
+      <>
+        <p class="notice small">Teks ini diambil otomatis dari PDF resmi dan bisa memuat kesalahan baca. Bila ragu, periksa <a href={r.source_pdf_url ?? r.source_url}>PDF resminya</a>.</p>
+        <LawText doc={doc} />
+      </>
+    ) : (
+      <div class="notice">
+        <p><strong>Teks belum tersedia.</strong></p>
+        <p>
+          {r.pdf_quality ? "PDF resminya berupa hasil pindaian tanpa lapisan teks; teksnya akan diambil dengan OCR."
+            : r.parse_error ? "Struktur PDF resminya belum bisa dibaca dengan benar; kami tidak menampilkan teks yang mungkin keliru."
+            : "PDF resminya belum diproses."}
+        </p>
+        {r.source_pdf_url && <p><a class="btn" href={r.source_pdf_url}>Buka PDF resmi</a></p>}
+      </div>
+    )}
+  </DocLayout>
+</Base>
+
+<style>
+  .head-meta { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-4); align-items: center; }
+  .notice { background: var(--bg-subtle); border-left: 3px solid var(--line); padding: var(--s-3) var(--s-4); border-radius: var(--r-sm); max-width: var(--measure); }
+  .notice p:last-child { margin-bottom: 0; }
+</style>

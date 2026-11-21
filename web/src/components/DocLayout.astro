@@ -1,0 +1,69 @@
+---
+// Document page: breadcrumbs, title block, then a side panel (facts, versions, contents) next
+// to the main text. Pattern from legislation.gov.uk / Fedlex (see DESIGN.md).
+interface Crumb { href?: string; label: string }
+interface Props {
+  crumbs: Crumb[];
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+}
+const { crumbs, eyebrow, title, subtitle } = Astro.props;
+---
+<nav class="breadcrumbs" aria-label="Lokasi">
+  {crumbs.map((c, k) => (
+    <>
+      {k > 0 && <span aria-hidden="true">›</span>}
+      {c.href ? <a href={c.href}>{c.label}</a> : <span>{c.label}</span>}
+    </>
+  ))}
+</nav>
+<header class="doc-head">
+  {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+  <h1>{title}</h1>
+  {subtitle && <p class="subtitle">{subtitle}</p>}
+  <slot name="head" />
+</header>
+<div class="doc">
+  <aside class="panel" aria-label="Keterangan">
+    <details class="panel-fold" open>
+      <summary>Keterangan dan daftar isi</summary>
+      <slot name="panel" />
+    </details>
+  </aside>
+  <div class="doc-main">
+    <slot />
+  </div>
+</div>
+
+<script>
+  // the side panel folds away on phones so the text comes first (DESIGN.md)
+  const narrow = matchMedia("(max-width: 960px)");
+  const sync = () => document.querySelectorAll<HTMLDetailsElement>(".panel-fold").forEach((d) => { d.open = !narrow.matches; });
+  sync();
+  narrow.addEventListener("change", sync);
+</script>
+
+<style>
+  .panel-fold > summary { display: none; }
+  .doc-head { margin: var(--s-4) 0 var(--s-6); max-width: 52rem; }
+  .doc-head h1 { margin-bottom: var(--s-2); }
+  .subtitle { color: var(--text-muted); font-size: var(--fs-lg); margin: 0; }
+  .doc { display: grid; grid-template-columns: var(--panel) minmax(0, 1fr); gap: var(--s-7); align-items: start; }
+  .panel {
+    position: sticky; top: var(--s-4); max-height: calc(100vh - var(--s-6)); overflow-y: auto;
+    font-size: var(--fs-sm); padding-right: var(--s-2);
+  }
+  .doc-main { min-width: 0; }
+  @media (max-width: 960px) {
+    .doc { grid-template-columns: 1fr; gap: var(--s-5); }
+    .panel { position: static; max-height: none; overflow: visible; padding: 0; }
+    .panel-fold { border: 1px solid var(--line); border-radius: var(--r-md); padding: var(--s-3) var(--s-4); }
+    .panel-fold > summary { display: list-item; cursor: pointer; font-weight: 600; }
+    .panel-fold[open] > summary { margin-bottom: var(--s-4); }
+  }
+  @media (max-width: 640px) {
+    .doc-head h1 { font-size: var(--fs-xl); }
+    .subtitle { font-size: var(--fs-base); }
+  }
+</style>

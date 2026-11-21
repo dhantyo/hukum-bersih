@@ -1,0 +1,36 @@
+---
+import Base from "../../layouts/Base.astro";
+const base = import.meta.env.BASE_URL;
+---
+<Base title="Cari" noindex>
+  <h1>Cari</h1>
+  <p class="muted">Cari di judul dan isi semua undang-undang dan RUU yang tersedia sebagai teks.</p>
+  <div id="cari"></div>
+  <noscript><p>Pencarian membutuhkan JavaScript.</p></noscript>
+  <link rel="stylesheet" href={`${base}pagefind/pagefind-ui.css`} />
+  <script is:inline define:vars={{ base }}>
+    // Pagefind's own search UI (built with the site; runs in the browser, no server)
+    const s = document.createElement("script");
+    s.src = `${base}pagefind/pagefind-ui.js`;
+    s.onload = () => {
+      const ui = new PagefindUI({
+        element: "#cari", showSubResults: true, showImages: false, resetStyles: false,
+        translations: { placeholder: "Cari undang-undang, pasal, kata…", zero_results: "Tidak ada hasil untuk [SEARCH_TERM]" },
+      });
+      const q = new URLSearchParams(location.search).get("q");
+      if (q) ui.triggerSearch(q);
+    };
+    document.head.appendChild(s);
+  </script>
+</Base>
+
+<style is:global>
+  #cari {
+    --pagefind-ui-font: var(--font-ui); --pagefind-ui-primary: var(--primary);
+    --pagefind-ui-text: var(--text); --pagefind-ui-background: var(--bg);
+    --pagefind-ui-border: var(--line); --pagefind-ui-tag: var(--bg-subtle);
+    --pagefind-ui-border-radius: 4px; --pagefind-ui-scale: 0.9;
+    max-width: 52rem;
+  }
+  #cari mark { background: var(--primary-bg); color: inherit; }
+</style>

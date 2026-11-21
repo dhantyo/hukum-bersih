@@ -1,0 +1,47 @@
+---
+import Base from "../../layouts/Base.astro";
+import LawRows from "../../components/LawRows.astro";
+import { loadRegulations } from "../../lib/peraturan.ts";
+
+const base = import.meta.env.BASE_URL;
+const laws = loadRegulations().filter((r) => r.type === "uu");
+const withText = laws.filter((r) => r.versions.some((v) => v.text)).length;
+const counts = new Map<number, number>();
+for (const r of laws) counts.set(r.year, (counts.get(r.year) ?? 0) + 1);
+const decades = new Map<number, [number, number][]>();
+for (const [y, n] of [...counts].sort((a, b) => b[0] - a[0])) {
+  const d = Math.floor(y / 10) * 10;
+  decades.set(d, [...(decades.get(d) ?? []), [y, n]]);
+}
+---
+<Base title="Undang-Undang" description="Semua undang-undang Republik Indonesia sebagai teks yang bersih dan mudah dibaca." section="peraturan">
+  <h1>Undang-Undang</h1>
+  <p class="lead">
+    {laws.length.toLocaleString("id-ID")} undang-undang dari <a href="https://peraturan.go.id">peraturan.go.id</a>,{" "}
+    {withText.toLocaleString("id-ID")} di antaranya sudah tersedia sebagai teks. Sisanya berupa PDF hasil
+    pindaian yang masih menunggu OCR.
+  </p>
+
+  <h2>Menurut tahun</h2>
+  <div class="years">
+    {[...decades].map(([d, years]) => (
+      <div class="decade">
+        <h3>{d}-an</h3>
+        <ul>
+          {years.map(([y, n]) => <li><a href={`${base}uu/tahun/${y}/`}>{y}</a> <span class="muted">{n}</span></li>)}
+        </ul>
+      </div>
+    ))}
+  </div>
+
+  <h2>Terbaru</h2>
+  <LawRows laws={laws.slice(0, 20)} />
+</Base>
+
+<style>
+  .lead { font-size: var(--fs-lg); max-width: var(--measure); color: var(--text-muted); }
+  .years { display: grid; grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr)); gap: var(--s-5); }
+  .decade h3 { margin: 0 0 var(--s-2); font-size: var(--fs-sm); color: var(--text-muted); }
+  .decade ul { list-style: none; margin: 0; padding: 0; font-size: var(--fs-sm); }
+  .decade li { display: flex; justify-content: space-between; max-width: 7rem; }
+</style>

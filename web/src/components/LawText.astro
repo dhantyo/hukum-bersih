@@ -20,22 +20,33 @@ const { doc } = Astro.props;
 </article>
 
 <style>
-  .law :global(.akn-preface .akn-p) { font-weight: 700; text-align: center; margin: 1.5rem 0; }
-  .law :global(h2) { text-align: center; font-size: 1.1rem; }
-  .law :global(h2 .sub) { display: block; font-weight: 600; }
-  .law :global(.akn-article h3) { text-align: center; margin-top: 2rem; font-size: 1rem; }
+  /* Legal text: serif, readable measure, hanging numbers (DESIGN.md) */
+  .law { font-family: var(--font-law); font-size: var(--fs-law); line-height: 1.65; max-width: var(--measure); }
+  .law :global(.akn-preface .akn-p) { font-family: var(--font-ui); font-weight: 600; text-align: center; font-size: var(--fs-base); letter-spacing: 0.02em; margin: 0 0 var(--s-5); }
+  .law :global(.akn-preamble) { margin-bottom: var(--s-6); }
+  .law :global(h2) {
+    font-family: var(--font-ui); text-align: center; font-size: var(--fs-sm); font-weight: 700;
+    letter-spacing: 0.06em; text-transform: uppercase; margin: var(--s-7) 0 var(--s-4);
+  }
+  .law :global(h2 .sub) { display: block; font-size: var(--fs-base); letter-spacing: 0.02em; margin-top: var(--s-1); }
+  .law :global(.akn-article) { scroll-margin-top: var(--s-4); }
+  .law :global(.akn-article h3) {
+    font-family: var(--font-ui); text-align: center; margin: var(--s-6) 0 var(--s-3);
+    font-size: var(--fs-sm); font-weight: 700; letter-spacing: 0.04em;
+  }
   .law :global(.akn-article h3 a) { color: inherit; text-decoration: none; }
-  .law :global(.akn-article h3 a:hover) { text-decoration: underline; }
-  .law :global(.akn-p) { margin: 0.35rem 0; }
-  .law :global(.numbered) { display: grid; grid-template-columns: 2.4rem 1fr; gap: 0 0.25rem; }
-  .law :global(.numbered .akn-num) { padding-top: 0.35rem; }
-  .law :global(.akn-conclusions) { margin-top: 2.5rem; color: var(--muted); }
-  .penjelasan { margin-top: 4rem; padding-top: 2rem; border-top: 2px solid var(--line); }
-  .penjelasan-title { text-align: center; }
-  .law :global(.penjelasan .numbered) { grid-template-columns: 5.5rem 1fr; }
-  .law :global(:target) { background: var(--ins-bg); border-radius: 4px; }
-  @media (max-width: 480px) {
-    .law :global(.numbered) { grid-template-columns: 1.9rem 1fr; }
+  .law :global(.akn-article h3 a:hover) { color: var(--primary); text-decoration: underline; }
+  .law :global(.akn-p) { margin: 0 0 var(--s-2); }
+  .law :global(.numbered) { display: grid; grid-template-columns: 2.4rem minmax(0, 1fr); column-gap: var(--s-1); }
+  .law :global(.akn-num) { font-variant-numeric: tabular-nums; }
+  .law :global(.akn-conclusions) { margin-top: var(--s-7); color: var(--text-muted); font-size: var(--fs-base); }
+  .penjelasan { margin-top: var(--s-8); padding-top: var(--s-6); border-top: 2px solid var(--line); }
+  .penjelasan-title { text-align: center; font-family: var(--font-ui); }
+  .law :global(.penjelasan .numbered) { grid-template-columns: 5.5rem minmax(0, 1fr); }
+  .law :global(:target) { background: var(--primary-bg); border-radius: var(--r-sm); box-shadow: 0 0 0 6px var(--primary-bg); }
+  @media (max-width: 640px) {
+    .law { font-size: var(--fs-base); }
+    .law :global(.numbered) { grid-template-columns: 1.9rem minmax(0, 1fr); }
     .law :global(.penjelasan .numbered) { grid-template-columns: 1fr; }
   }
 </style>

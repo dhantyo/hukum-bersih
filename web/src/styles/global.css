@@ -1,0 +1,68 @@
+@import "@fontsource-variable/public-sans";
+@import "@fontsource-variable/source-serif-4";
+@import "./tokens.css";
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 400 var(--fs-base) / 1.6 var(--font-ui);
+}
+h1, h2, h3 { line-height: 1.25; font-weight: 600; }
+h1 { font-size: var(--fs-2xl); margin: var(--s-2) 0 var(--s-4); letter-spacing: -0.01em; }
+h2 { font-size: var(--fs-lg); margin: var(--s-7) 0 var(--s-4); }
+h3 { font-size: var(--fs-base); margin: var(--s-5) 0 var(--s-2); }
+p { margin: 0 0 var(--s-4); }
+a { color: var(--primary); text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; border-radius: 2px; }
+ins { background: var(--ins-bg); color: var(--ins-text); text-decoration: none; border-radius: 2px; }
+del { background: var(--del-bg); color: var(--del-text); border-radius: 2px; }
+
+.wrap { max-width: var(--page); margin: 0 auto; padding: 0 var(--s-4); }
+main.wrap { padding-top: var(--s-5); }
+main.wrap > .breadcrumbs:first-child { margin-top: 0; }
+.muted { color: var(--text-muted); }
+.small { font-size: var(--fs-sm); }
+.eyebrow { font-size: var(--fs-sm); color: var(--text-muted); margin: 0; font-weight: 500; }
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Status / provenance badge: colored text and border, no fill */
+.badge {
+  display: inline-flex; align-items: center; gap: var(--s-1);
+  font-size: var(--fs-xs); font-weight: 600; line-height: 1.6;
+  padding: 0 var(--s-2); border: 1px solid currentColor; border-radius: 999px;
+  white-space: nowrap; vertical-align: 0.1em;
+}
+.badge.ok, .badge.berlaku, .badge.official { color: var(--ok); }
+.badge.warn, .badge.diubah, .badge.archive, .badge.media { color: var(--warn); }
+.badge.gone, .badge.dicabut, .badge.tidak_berlaku, .badge.none, .badge.leak { color: var(--gone); }
+
+.btn {
+  display: inline-flex; align-items: center; gap: var(--s-2);
+  font: 600 var(--fs-sm) / 1 var(--font-ui); padding: var(--s-3) var(--s-4);
+  border-radius: var(--r-sm); border: 1px solid var(--primary); text-decoration: none;
+  color: var(--primary); background: transparent; cursor: pointer;
+}
+.btn.primary { background: var(--primary); color: var(--bg); }
+.btn:hover { text-decoration: none; filter: brightness(1.08); }
+
+.breadcrumbs { font-size: var(--fs-sm); color: var(--text-muted); margin: var(--s-5) 0 0; }
+.breadcrumbs a { color: var(--text-muted); }
+.breadcrumbs span[aria-hidden] { margin: 0 var(--s-2); }
+
+/* Rows of documents (lists of laws, bills): rows, not cards */
+.rows { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.rows > li { padding: var(--s-4) 0; border-bottom: 1px solid var(--line); }
+.rows .row-title { font-weight: 600; }
+.rows .row-meta { font-size: var(--fs-sm); color: var(--text-muted); margin-top: var(--s-1); }
+
+.card {
+  background: var(--bg-subtle); border: 1px solid var(--line); border-radius: var(--r-md);
+  padding: var(--s-4) var(--s-5); margin: var(--s-3) 0;
+}

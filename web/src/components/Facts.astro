@@ -1,0 +1,28 @@
+---
+// Label-above-value fact list for the side panel.
+interface Fact { label: string; value?: string | null; href?: string }
+interface Props { facts: Fact[]; title?: string }
+const { facts, title } = Astro.props;
+---
+<section class="facts">
+  {title && <h2 class="panel-title">{title}</h2>}
+  <dl>
+    {facts.filter((f) => f.value).map((f) => (
+      <div>
+        <dt>{f.label}</dt>
+        <dd>{f.href ? <a href={f.href}>{f.value}</a> : f.value}</dd>
+      </div>
+    ))}
+  </dl>
+  <slot />
+</section>
+
+<style>
+  .facts { margin-bottom: var(--s-6); }
+  dl { margin: 0; }
+  dl > div { padding: var(--s-2) 0; border-bottom: 1px solid var(--line); }
+  dl > div:first-child { border-top: 1px solid var(--line); }
+  dt { color: var(--text-muted); font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: 0.04em; }
+  dd { margin: 0; overflow-wrap: anywhere; }
+  :global(.panel-title) { font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin: 0 0 var(--s-2); font-weight: 600; }
+</style>

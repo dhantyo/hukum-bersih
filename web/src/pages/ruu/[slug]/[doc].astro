@@ -1,6 +1,9 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import DocLayout from "../../../components/DocLayout.astro";
+import Facts from "../../../components/Facts.astro";
 import LawText from "../../../components/LawText.astro";
+import Toc from "../../../components/Toc.astro";
 import { loadRuus, loadText, versions, type Ruu, type RuuDocument } from "../../../lib/data.ts";
 import { DOC_TYPE, PROVENANCE, provenanceKey, tanggal } from "../../../lib/labels.ts";
 
@@ -12,21 +15,39 @@ const { ruu, doc } = Astro.props as { ruu: Ruu; doc: RuuDocument };
 const base = import.meta.env.BASE_URL;
 const text = loadText(ruu, doc);
 const p = PROVENANCE[provenanceKey(doc.provenance)];
-const name = `${ruu.short_name ?? ruu.title} – ${DOC_TYPE[doc.type] ?? doc.type} (${tanggal(doc.date)})`;
+const type = DOC_TYPE[doc.type] ?? doc.type;
+const others = versions(ruu).filter((v) => v.id !== doc.id);
 ---
-<Base title={name} description={doc.label ?? name}>
-  <p class="muted small"><a href={`${base}ruu/`}>RUU</a> › <a href={`${base}ruu/${ruu.slug}/`}>{ruu.short_name ?? ruu.title}</a></p>
-  <h1>{DOC_TYPE[doc.type] ?? doc.type} <span class="muted">· {tanggal(doc.date)}</span></h1>
-  <div class="card small">
-    <span class={`badge ${provenanceKey(doc.provenance)}`}>{p.label}</span> {p.hint}
-    {doc.label && <div>{doc.label}</div>}
-    <div>
-      {doc.source_url && <a href={doc.source_url}>Sumber</a>}
-      {doc.archive_url && <> · <a href={doc.archive_url}>Salinan arsip (PDF)</a></>}
+<Base title={`${ruu.short_name ?? ruu.title}: ${type} (${tanggal(doc.date)})`} description={doc.label ?? ruu.title} section="ruu">
+  <DocLayout
+    crumbs={[{ href: `${base}ruu/`, label: "RUU" }, { href: `${base}ruu/${ruu.slug}/`, label: ruu.short_name ?? ruu.title }, { label: `${type} (${tanggal(doc.date)})` }]}
+    eyebrow={ruu.short_name ?? ruu.title}
+    title={`${type}, ${tanggal(doc.date)}`}
+    subtitle={doc.ruu_title ?? ruu.title}
+  >
+    <div slot="head" class="head-meta">
+      <span class={`badge ${provenanceKey(doc.provenance)}`}>{p.label}</span>
+      <span class="muted small">{p.hint}</span>
     </div>
-    <div class="muted">
-      Teks diambil otomatis dari PDF dan bisa memuat kesalahan baca; PDF-nya yang berlaku.
-    </div>
-  </div>
-  <LawText doc={text} />
+    <Fragment slot="panel">
+      <Facts title="Dokumen" facts={[
+        { label: "Keterangan", value: doc.label },
+        { label: "Diperoleh dari", value: doc.obtained_by },
+        { label: "Sumber", value: doc.source_url ? new URL(doc.source_url).hostname : null, href: doc.source_url ?? undefined },
+        { label: "Salinan arsip", value: doc.archive_url ? "PDF di archive.org" : null, href: doc.archive_url },
+      ]}>
+        {others.map((o) => (
+          <p class="small"><a href={`${base}ruu/${ruu.slug}/beda/${o.date < doc.date ? `${o.id}...${doc.id}` : `${doc.id}...${o.id}`}/`}>Bandingkan dengan {DOC_TYPE[o.type] ?? o.type} ({tanggal(o.date)})</a></p>
+        ))}
+      </Facts>
+      <Toc doc={text} />
+    </Fragment>
+    <p class="notice small">Teks diambil otomatis dari PDF dan bisa memuat kesalahan baca; PDF-nya yang berlaku.</p>
+    <LawText doc={text} />
+  </DocLayout>
 </Base>
+
+<style>
+  .head-meta { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-4); align-items: center; }
+  .notice { background: var(--bg-subtle); border-left: 3px solid var(--line); padding: var(--s-2) var(--s-3); border-radius: var(--r-sm); max-width: var(--measure); }
+</style>
