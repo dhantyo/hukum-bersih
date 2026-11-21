@@ -5,8 +5,9 @@
 import type { AknNode } from "../lib/lawdoc.ts";
 
 export interface PasalNote { label: string; href?: string }
-interface Props { node: AknNode; penjelasan?: boolean; notes?: Map<string, PasalNote[]> }
-const { node, penjelasan = false, notes } = Astro.props;
+interface Props { node: AknNode; penjelasan?: boolean; notes?: Map<string, PasalNote[]>; aliases?: Map<string, string> }
+const { node, penjelasan = false, notes, aliases } = Astro.props;
+const alias = !penjelasan && node.eId ? aliases?.get(node.eId) : undefined;
 const note = node.tag === "article" && !penjelasan && node.num ? notes?.get(node.num) : undefined;
 const LABEL: Record<string, string> = { chapter: "BAB", part: "Bagian", subpart: "Paragraf", article: "Pasal" };
 const isHeadingBlock = ["chapter", "part", "subpart"].includes(node.tag);
@@ -17,24 +18,25 @@ const id = node.eId ? (penjelasan ? `penjelasan-${node.eId}` : node.eId) : undef
   <p class="akn-p" id={id}>{node.text}</p>
 ) : node.tag === "article" ? (
   <section class="akn-article" id={id}>
-    <h3 id={id ? `${id}-h` : undefined}><a href={`#${id}`}>{label}</a></h3>
+    {alias && <span class="alias" id={alias}></span>}
+    <h3 id={id ? `${id}-h` : undefined}><a href={`#${alias ?? id}`}>{label}</a></h3>
     {note && (
       <p class="akn-note">Diubah oleh {note.map((n, i) => <>{i > 0 && (i === note.length - 1 ? " dan " : ", ")}{n.href ? <a href={n.href}>{n.label}</a> : n.label}</>)}</p>
     )}
-    {node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} notes={notes} />)}
+    {node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} notes={notes} aliases={aliases} />)}
   </section>
 ) : isHeadingBlock ? (
   <section class={`akn-${node.tag}`} id={id}>
-    <h2>{node.tag === "part" && penjelasan ? node.num : label}{node.heading && <span class="sub">{node.heading}</span>}</h2>
-    {node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} notes={notes} />)}
+    <h2>{node.tag === "part" && penjelasan ? node.num : label}{node.heading && <>{" "}<span class="sub">{node.heading}</span></>}</h2>
+    {node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} notes={notes} aliases={aliases} />)}
   </section>
 ) : node.num ? (
   <div class={`akn-${node.tag} numbered`} id={id}>
     <span class="akn-num">{node.num}</span>
-    <div class="akn-body">{node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} notes={notes} />)}</div>
+    <div class="akn-body">{node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} notes={notes} aliases={aliases} />)}</div>
   </div>
 ) : (
   <div class={`akn-${node.tag}`} id={id}>
-    {node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} notes={notes} />)}
+    {node.children.map((c) => <Astro.self node={c} penjelasan={penjelasan} notes={notes} aliases={aliases} />)}
   </div>
 )}

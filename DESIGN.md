@@ -52,12 +52,13 @@ No brand red: in this product red means "deleted". No gradients.
 | `--fs-xl` | 26px / 1.25 | page titles on small screens |
 | `--fs-2xl` | 32px / 1.2 | page titles (h1) |
 
-Weights: 400 text, 600 headings and labels, 700 only for the site name.
+Weights: 400 text, 600 headings and labels, 700 only for the site name (`--fs-lg`).
 
 ## Spacing and layout
 
 4px base: `--s-1` 4, `--s-2` 8, `--s-3` 12, `--s-4` 16, `--s-5` 24, `--s-6` 32, `--s-7` 48,
-`--s-8` 64. Page width 72rem; reading column 42rem; side panel 17rem. Phone gutter 16px.
+`--s-8` 64; `--s-0` 2 only for the vertical padding of pills. `--tap` 44px: minimum size of
+anything tapped (buttons, the "Aa" control). Page width 72rem; reading column 42rem; side panel 17rem. Phone gutter 16px.
 
 Document pages: breadcrumbs, title block, then two columns: side panel (status, facts, versions,
 table of contents; sticky) and the text. Below 960px the panel comes first, collapsed.
@@ -73,11 +74,20 @@ Radius `--r-sm` 4px (badges, inputs, buttons), `--r-md` 8px (cards, panels). No 
 - **Breadcrumbs**: muted, `›` separated.
 - **Status badge**: small pill, colored text and border, no fill (berlaku/diubah/dicabut;
   Resmi/Arsip/Media/Belum ditemukan).
+- **Status banner** (law pages, above the text): a repealed law says "sudah tidak berlaku" and
+  links to what repealed it (border `--gone`); an amended law says the text is the original
+  wording and links to the pasal-by-pasal changes (border `--warn`). Pattern from
+  legislation.gov.uk and Fedlex. `components/StatusBanner.astro`.
+- **Contents button** (phones, document pages): "Daftar isi ↑", fixed bottom-right once the side
+  panel has scrolled away; opens the panel at the current section (GOV.UK back-to-top pattern).
 - **Fact list** (side panel): label above value, `--fs-sm`.
 - **Table of contents**: BAB headings with their pasal range; current item marked with
   `--primary` left border.
 - **Law text**: serif, hanging numbers for ayat/huruf/angka, pasal headings centered small caps
-  style (600, letter-spacing), anchor link on hover.
+  style (600, letter-spacing), anchor link on hover. Each pasal has a short anchor `#pasal-27`
+  (first pasal with that number) beside its Akoma Ntoso eId; the heading links to it.
+  Long laws use `content-visibility: auto` per chapter. Print: text, title and status banner
+  only, always light.
 - **Synopsis (comparison)**: two columns, old left, new right, one row per pasal pair;
   deletions `--del-*`, insertions `--ins-*`; one inline column on phones.
 - **Buttons**: primary (filled `--primary`), secondary (outline), quiet (text). Focus: 3px

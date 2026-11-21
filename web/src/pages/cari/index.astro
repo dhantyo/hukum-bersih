@@ -14,6 +14,10 @@ const base = import.meta.env.BASE_URL;
   <p class="hint muted small" id="hint">Contoh: <a href="?q=minerba">minerba</a>, <a href="?q=4/2009">4/2009</a>, <a href="?q=perseroan terbatas">perseroan terbatas</a>, <a href="?q=pencemaran nama baik">pencemaran nama baik</a></p>
 
   <div id="results" data-base={base} aria-live="polite">
+    <section class="group" id="g-pasal" hidden>
+      <h2>Pasal</h2>
+      <ul class="laws"></ul>
+    </section>
     <section class="group" id="g-short" hidden>
       <h2>Koleksi</h2>
       <ul class="laws"></ul>
@@ -65,6 +69,18 @@ const base = import.meta.env.BASE_URL;
     const m = norm(q).match(/^(?:(?:uu|undang undang)\s+)?(?:(?:no|nomor)\s+)?(\w+)\s*(?:\/|\s+tahun\s+|\s+)(\d{4})$/);
     return m ? `${m[1]}/${m[2]}` : undefined;
   };
+  /** "pasal 27 ite", "ite pasal 27", "pasal 5 uu 4/2009" -> { num: "27", rest: "ite" } */
+  const pasalOf = (q: string) => {
+    const a = norm(q).match(/^(?:pasal|ps)\s+(\d+[a-z]?)\s+(.+)$/);
+    if (a) return { num: a[1], rest: a[2] };
+    const b = norm(q).match(/^(.+?)\s+(?:pasal|ps)\s+(\d+[a-z]?)$/);
+    return b ? { num: b[2], rest: b[1] } : undefined;
+  };
+  /** Pagefind falls back to the longest known prefix when a word is not in the index
+   * ("xyzqq" -> "x"); keep only results whose highlighted words relate to the query. */
+  const marks = (html: string) => [...html.matchAll(/<mark>(.*?)<\/mark>/g)].map((m) => norm(m[1])).filter(Boolean);
+  const related = (d: PfData, qw: string[]) => [d.excerpt, ...d.sub_results.map((x) => x.excerpt)].flatMap(marks)
+    .some((m) => qw.some((w) => m === w || (m.length >= 3 && (w.includes(m) || m.includes(w)))));
 
   const el = <K extends keyof HTMLElementTagNameMap>(tag: K, attrs: Record<string, string> = {}, ...kids: (Node | string | null | undefined)[]) => {
     const e = document.createElement(tag);
@@ -92,7 +108,7 @@ const base = import.meta.env.BASE_URL;
     if (q) url.searchParams.set("q", raw); else url.searchParams.delete("q");
     history.replaceState(null, "", url);
     show("hint", !q);
-    for (const g of ["g-short", "g-title", "g-text", "none"]) show(g, false);
+    for (const g of ["g-pasal", "g-short", "g-title", "g-text", "none"]) show(g, false);
     if (!q) return;
 
     const { laws: all, koleksi } = await loadIndex();
@@ -100,6 +116,29 @@ const base = import.meta.env.BASE_URL;
     const words = q.split(" ").filter((w) => w !== "uu");
     const cite = citeOf(raw);
     const byId = new Map(all.map((l) => [l.id, l]));
+
+    // 0. a pasal of a named law: "pasal 27 ite" -> straight to that pasal
+    const pq = pasalOf(raw);
+    const pasalHits: Law[] = [];
+    if (pq) {
+      const rw = pq.rest.split(" ").filter((w) => w !== "uu");
+      const has = (text: string) => rw.length > 0 && rw.every((w) => norm(text).split(" ").some((x) => x.startsWith(w)));
+      const rc = citeOf(pq.rest);
+      const add = (l?: Law) => { if (l && l.c !== "RUU" && !pasalHits.includes(l)) pasalHits.push(l); };
+      if (rc) all.filter((l) => l.c.toLowerCase().endsWith(` ${rc}`)).forEach(add);
+      else {
+        koleksi.filter((k) => k.named && (has(k.name) || k.a.some(has)))
+          .forEach((k) => add(byId.get(k.mem.find(([, role]) => role === "pokok")?.[0] ?? "")));
+        all.filter((l) => l.s && has(l.s) && l.m.length === 0).forEach(add);
+      }
+    }
+    const pnum = pq?.num.toUpperCase();
+    document.querySelector("#g-pasal ul")!.replaceChildren(...pasalHits.slice(0, 3).map((l) => el("li", { class: "law" },
+      el("a", { href: `${l.u}#pasal-${pq!.num}`, class: "name" }, `Pasal ${pnum} ${l.s ?? l.c}`),
+      el("div", { class: "meta" }, el("span", {}, l.c), l.t ? el("span", {}, l.t) : null,
+        l.st ? el("span", { class: `badge ${l.st}` }, STATUS[l.st] ?? l.st) : null,
+        l.k > 0 ? el("span", { class: "badge diubah" }, `diubah ${l.k}×`) : null))));
+    show("g-pasal", pasalHits.length > 0);
 
     // 1. collections: by name, aliases and subject; the laws inside are listed under each
     const hit = (text: string) => words.length > 0 && words.every((w) => norm(text).split(" ").some((x) => x.startsWith(w)));
@@ -144,37 +183,50 @@ const base = import.meta.env.BASE_URL;
     const pf = await loadPagefind();
     // exact phrase first, then pages with all the words elsewhere
     const multi = words.length > 1 && !raw.includes('"');
-    const [phrase, loose] = await Promise.all([pf.search(multi ? `"${raw.trim()}"` : raw), multi ? pf.search(raw) : Promise.resolve({ results: [] })]);
+    // "pasal" is on every page: leave it out of the all-words search
+    const looseQ = words.filter((w) => w !== "pasal").join(" ") || raw;
+    const [phrase, loose] = await Promise.all([pf.search(multi ? `"${raw.trim()}"` : raw), multi ? pf.search(looseQ) : Promise.resolve({ results: [] })]);
     if (mine !== run) return;
     const urlToId = new Map(all.map((l) => [l.u, l.id]));
     const found = { results: [...phrase.results, ...loose.results.filter((r) => !phrase.results.some((p) => (p as unknown as { id: string }).id === (r as unknown as { id: string }).id))] };
     const g3 = document.querySelector("#g-text .hits")!;
     const more3 = document.querySelector("#g-text .more") as HTMLButtonElement;
-    (document.querySelector("#g-text .count") as HTMLElement).textContent = multi ? `${phrase.results.length} halaman memuat frasa ini persis; ${found.results.length - phrase.results.length} lainnya memuat semua katanya.` : `${found.results.length} halaman memuat kata ini.`;
+    const countEl = document.querySelector("#g-text .count") as HTMLElement;
+    countEl.textContent = multi ? `${phrase.results.length} halaman memuat frasa ini persis; ${found.results.length - phrase.results.length} lainnya memuat semua katanya.` : `${found.results.length} halaman memuat kata ini.`;
     let n3 = 0;
     g3.replaceChildren();
+    const qw = words.filter((w) => w !== "pasal");
+    let skippedAsUnrelated = 0;
     const draw3 = async () => {
       const page = await Promise.all(found.results.slice(n3, n3 + 10).map((r) => r.data()));
       if (mine !== run) return;
       n3 += 10;
       for (const d of page) {
+        if (qw.length && !related(d, qw)) { skippedAsUnrelated++; continue; }
         const subs = d.sub_results.filter((s) => s.url !== d.url && /^(Pasal|BAB|Bagian)/.test(s.title)).slice(0, 3);
         const seen = urlToId.get(d.url.split("#")[0]);
         if (seen && shown.has(seen) && subs.length === 0) continue;   // already listed above
         const ex = (html: string) => { const p = el("p", { class: "excerpt" }); p.innerHTML = html; return p; };   // Pagefind escapes text; only <mark> is markup
         g3.append(el("li", { class: "hit" },
           el("a", { href: d.url, class: "name" }, d.meta.title ?? d.url),
-          subs.length ? el("ul", { class: "subs" }, ...subs.map((s) => el("li", {}, el("a", { href: s.url }, s.title), ex(s.excerpt)))) : ex(d.excerpt)));
+          subs.length ? el("ul", { class: "subs" }, ...subs.map((s) => el("li", {}, el("a", { href: s.url }, s.title),
+            // the excerpt repeats the heading ("Pasal 1. ..."): drop it
+            ex(s.excerpt.replace(/^\s*(?:<mark>)?(?:Pasal|BAB|Bagian)(?:<\/mark>)?\s+(?:<mark>)?[0-9A-Za-z]+(?:<\/mark>)?\.?\s*/, ""))))) : ex(d.excerpt)));
       }
-      more3.hidden = n3 >= found.results.length;
-      if (g3.children.length < 5 && n3 < found.results.length) await draw3();   // all skipped: next page
+      // Pagefind's prefix fallback: whole batches of unrelated pages mean there is no real match
+      const onlyFallback = skippedAsUnrelated >= n3;
+      more3.hidden = n3 >= found.results.length || onlyFallback;
+      if (!onlyFallback && g3.children.length < 5 && n3 < found.results.length) await draw3();   // all skipped: next page
     };
     more3.onclick = draw3;
     await draw3();
+    if (skippedAsUnrelated > 0) countEl.textContent = "Halaman yang memuat kata ini:";
     show("g-text", g3.children.length > 0);
     const none = document.getElementById("none")!;
-    none.textContent = `Tidak ada hasil untuk "${raw}".`;
-    show("none", bases.length === 0 && titleHits.length === 0 && g3.children.length === 0);
+    none.textContent = `Tidak ada hasil untuk "${raw}". Periksa ejaannya, coba kata lain, atau cari dengan nomor (mis. 4/2009).`;
+    const nothing = pasalHits.length === 0 && bases.length === 0 && titleHits.length === 0 && g3.children.length === 0;
+    show("none", nothing);
+    show("hint", nothing);
   }
 
   let t: number | undefined;
@@ -202,7 +254,7 @@ const base = import.meta.env.BASE_URL;
   #g-short :global(.name) { font-size: var(--fs-lg); }
   #results :global(.meta) { display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s-3); align-items: center; margin-top: var(--s-1); font-size: var(--fs-sm); color: var(--text-muted); }
   #results :global(.children) { margin-top: var(--s-2); padding-left: var(--s-4); border-left: 2px solid var(--line); font-size: var(--fs-sm); }
-  #results :global(.children li) { padding: 0.15rem 0; }
+  #results :global(.children li) { padding: var(--s-0) 0; }
   #results :global(.role) { display: inline-block; min-width: 8.5rem; font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); }
   #results :global(.tag-k) { font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--primary); }
   #results :global(.subs) { margin-top: var(--s-2); padding-left: var(--s-4); border-left: 2px solid var(--line); }

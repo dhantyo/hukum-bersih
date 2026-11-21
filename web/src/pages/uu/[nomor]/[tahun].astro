@@ -6,6 +6,7 @@ import LawText from "../../../components/LawText.astro";
 import Toc from "../../../components/Toc.astro";
 import KoleksiBox from "../../../components/KoleksiBox.astro";
 import RelationsBanner from "../../../components/RelationsBanner.astro";
+import StatusBanner from "../../../components/StatusBanner.astro";
 import { tanggal } from "../../../lib/labels.ts";
 import { amendmentSteps, shortName } from "../../../lib/amendments.ts";
 import { koleksiOf, koleksiPath } from "../../../lib/koleksi.ts";
@@ -40,6 +41,7 @@ const koleksi = koleksiOf(r.id);
       : [{ href: `${base}uu/`, label: "Undang-Undang" }, { href: `${base}uu/tahun/${r.year}/`, label: String(r.year) }, { label: shortCite(r) }]}
     eyebrow={r.title}
     title={r.subject || r.title}
+    panelLabel={doc ? "Daftar isi dan keterangan" : "Keterangan"}
   >
     <div slot="head" class="head-meta">
       {status && <span class={`badge ${status}`}>{STATUS_LABEL[status] ?? status}</span>}
@@ -48,10 +50,8 @@ const koleksi = koleksiOf(r.id);
       {amendments > 0 && <a class="badge diubah" href={koleksi ? `${base}${koleksiPath(koleksi)}#riwayat` : undefined}>diubah {amendments}×</a>}
     </div>
     <Fragment slot="panel">
+      {doc && <Toc doc={doc} />}
       <Facts title="Keterangan" facts={[
-        { label: "Jenis", value: "Undang-Undang" },
-        { label: "Nomor / tahun", value: `${r.number.toUpperCase()} / ${r.year}` },
-        { label: "Status", value: STATUS_LABEL[status] ?? r.status },
         { label: "Ditetapkan", value: r.tanggal_penetapan ? `${tanggal(r.tanggal_penetapan)}${r.tempat_penetapan ? `, ${r.tempat_penetapan}` : ""}` : null },
         { label: "Oleh", value: r.pejabat_penetapan },
         { label: "Pemrakarsa", value: r.pemrakarsa },
@@ -61,9 +61,10 @@ const koleksi = koleksiOf(r.id);
         { label: "PDF resmi", value: "Unduh PDF", href: r.source_pdf_url ?? undefined },
         { label: "Salinan arsip", value: r.archive_url ? "archive.org" : null, href: r.archive_url },
       ]} />
-      {steps.length > 0 && <p class="small"><a href={`${base}${lawPath(r)}perubahan/`}>Bandingkan perubahan pasal demi pasal →</a></p>}
-      {doc && <Toc doc={doc} />}
     </Fragment>
+    <StatusBanner r={r} hasText={!!doc}
+      perubahanHref={steps.length > 0 ? `${base}${lawPath(r)}perubahan/` : undefined}
+      riwayatHref={koleksi ? `${base}${koleksiPath(koleksi)}#riwayat` : undefined} />
     {koleksi ? <KoleksiBox k={koleksi} r={r} /> : <RelationsBanner r={r} />}
     {doc ? (
       <>
@@ -87,11 +88,11 @@ const koleksi = koleksiOf(r.id);
 <style>
   .koleksi {
     display: inline-flex; gap: var(--s-2); align-items: baseline; text-decoration: none; font-weight: 600; color: var(--primary);
-    border: 1px solid var(--primary); border-radius: var(--r-sm); padding: 0.1rem var(--s-2); font-size: var(--fs-sm);
+    border: 1px solid var(--primary); border-radius: var(--r-sm); padding: var(--s-0) var(--s-2); font-size: var(--fs-sm);
   }
   .koleksi:hover { background: var(--primary-bg); }
   .k-label { font-size: var(--fs-xs); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); }
   .head-meta { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-4); align-items: center; }
-  .notice { background: var(--bg-subtle); border-left: 3px solid var(--line); padding: var(--s-3) var(--s-4); border-radius: var(--r-sm); max-width: var(--measure); }
+  .notice { background: var(--bg-subtle); padding: var(--s-3) var(--s-4); border-radius: var(--r-md); max-width: var(--measure); }
   .notice p:last-child { margin-bottom: 0; }
 </style>

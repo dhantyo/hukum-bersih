@@ -10,7 +10,7 @@ const ruus = loadRuus();
 const laws = loadRegulations().filter((r) => r.type === "uu");
 const withText = laws.filter((r) => r.versions.some((v) => v.text)).length;
 ---
-<Base noindex title="Beranda" description="Teks hukum Indonesia yang bersih dan mudah dibaca, serta pelacakan RUU beserta setiap versi drafnya.">
+<Base noindex search={false} title="Beranda" description="Teks hukum Indonesia yang bersih dan mudah dibaca, serta pelacakan RUU beserta setiap versi drafnya.">
   <section class="hero">
     <h1>Hukum Indonesia, mudah dibaca.</h1>
     <p class="lead">Teks undang-undang yang bersih dan bisa dicari, serta rancangan undang-undang beserta setiap versinya: dari mana asalnya, dan apa yang berubah.</p>
@@ -54,7 +54,7 @@ const withText = laws.filter((r) => r.versions.some((v) => v.text)).length;
 
 <style>
   .hero { padding: var(--s-8) 0 var(--s-6); max-width: 46rem; }
-  .hero h1 { font-size: clamp(var(--fs-xl), 5vw, 2.75rem); margin-bottom: var(--s-4); }
+  .hero h1 { font-size: clamp(var(--fs-xl), 5vw, var(--fs-2xl)); margin-bottom: var(--s-4); }
   .lead { font-size: var(--fs-lg); color: var(--text-muted); }
   .big-search { display: flex; gap: var(--s-2); margin: var(--s-5) 0 var(--s-3); }
   .big-search input {

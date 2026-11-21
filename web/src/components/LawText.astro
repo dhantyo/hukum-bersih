@@ -1,15 +1,27 @@
 ---
 // A law or draft rendered from Akoma Ntoso (lib/lawdoc.ts).
 import AknNode, { type PasalNote } from "./AknNode.astro";
-import type { LawDoc } from "../lib/lawdoc.ts";
+import type { AknNode as Node, LawDoc } from "../lib/lawdoc.ts";
 
 interface Props { doc: LawDoc; notes?: Map<string, PasalNote[]> }
 const { doc, notes } = Astro.props;
+// Short, guessable anchors for sharing a pasal ("#pasal-27"), next to the Akoma Ntoso eIds.
+// Only the first pasal with a number gets one (amending laws quote pasal of other laws).
+const aliases = new Map<string, string>();
+const taken = new Set<string>();
+const walk = (n: Node) => {
+  if (n.tag === "article" && n.num && n.eId) {
+    const a = `pasal-${n.num.toLowerCase().replace(/[^0-9a-z]+/g, "")}`;
+    if (!taken.has(a)) { taken.add(a); aliases.set(n.eId, a); }
+  }
+  n.children.forEach(walk);
+};
+doc.body.forEach(walk);
 ---
 <article class="law">
   <div class="akn-preface">{doc.preface.map((n) => <AknNode node={n} />)}</div>
   <div class="akn-preamble">{doc.preamble.map((n) => <AknNode node={n} />)}</div>
-  <div class="akn-body">{doc.body.map((n) => <AknNode node={n} notes={notes} />)}</div>
+  <div class="akn-body">{doc.body.map((n) => <AknNode node={n} notes={notes} aliases={aliases} />)}</div>
   {doc.conclusions.length > 0 && <div class="akn-conclusions">{doc.conclusions.map((n) => <AknNode node={n} />)}</div>}
   {doc.penjelasan.length > 0 && (
     <section class="penjelasan" id="penjelasan">
@@ -25,14 +37,14 @@ const { doc, notes } = Astro.props;
   .law :global(.akn-preface .akn-p) { font-family: var(--font-ui); font-weight: 600; text-align: center; font-size: var(--fs-base); letter-spacing: 0.02em; margin: 0 0 var(--s-5); }
   .law :global(.akn-preamble) { margin-bottom: var(--s-6); }
   .law :global(h2) {
-    font-family: var(--font-ui); text-align: center; font-size: var(--fs-sm); font-weight: 700;
+    font-family: var(--font-ui); text-align: center; font-size: var(--fs-sm); font-weight: 600;
     letter-spacing: 0.06em; text-transform: uppercase; margin: var(--s-7) 0 var(--s-4);
   }
   .law :global(h2 .sub) { display: block; font-size: var(--fs-base); letter-spacing: 0.02em; margin-top: var(--s-1); }
   .law :global(.akn-article) { scroll-margin-top: var(--s-4); }
   .law :global(.akn-article h3) {
     font-family: var(--font-ui); text-align: center; margin: var(--s-6) 0 var(--s-3);
-    font-size: var(--fs-sm); font-weight: 700; letter-spacing: 0.04em;
+    font-size: var(--fs-sm); font-weight: 600; letter-spacing: 0.04em;
   }
   .law :global(.akn-article h3 a) { color: inherit; text-decoration: none; }
   .law :global(.akn-article h3 a:hover) { color: var(--primary); text-decoration: underline; }
@@ -47,6 +59,10 @@ const { doc, notes } = Astro.props;
   .penjelasan { margin-top: var(--s-8); padding-top: var(--s-6); border-top: 2px solid var(--line); }
   .penjelasan-title { text-align: center; font-family: var(--font-ui); }
   .law :global(.penjelasan .numbered) { grid-template-columns: 5.5rem minmax(0, 1fr); }
+  .law :global(.akn-article:has(> .alias:target)) { background: var(--primary-bg); border-radius: var(--r-sm); box-shadow: 0 0 0 6px var(--primary-bg); }
+  .law :global(.alias) { display: block; scroll-margin-top: var(--s-4); }
+  /* skip rendering off-screen parts of very long laws (rendered on demand, still found by Ctrl+F) */
+  .law :global(.akn-body > section) { content-visibility: auto; contain-intrinsic-size: auto 60rem; }
   .law :global(:target) { background: var(--primary-bg); border-radius: var(--r-sm); box-shadow: 0 0 0 6px var(--primary-bg); }
   @media (max-width: 640px) {
     .law { font-size: var(--fs-base); }
