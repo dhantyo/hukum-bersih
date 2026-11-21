@@ -41,6 +41,9 @@ jobs:
       ONLY: ${{ inputs.only && format('--only={0}', inputs.only) || '' }}
     steps:
       - uses: actions/checkout@v4
+      - uses: ./.github/actions/indonesia-vpn
+        with:
+          config: ${{ secrets.WG_INDONESIA }}
       - uses: astral-sh/setup-uv@v6
       - run: uv sync
         working-directory: pipeline
