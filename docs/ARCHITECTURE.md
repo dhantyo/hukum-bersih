@@ -45,7 +45,7 @@ Names follow [NAMING.md](NAMING.md).
 
 | Module | Job |
 |---|---|
-| `sources/` | One module per upstream site (`http.py` shared: User-Agent, retries; `wayback.py`) |
+| `sources/` | One module per upstream site (`http.py` shared: User-Agent, retries; `wayback.py`). `peraturan_bpk.py` (main source since 2026-11-21) with `bpk_session.py` (Cloudflare: Scrapling browser once, then curl_cffi); `peraturan_go_id.py` (earlier imports; `convert_pdf` is shared) |
 | `fetch.py` | Download → archive.org → manifest line; skips unchanged files by sha256 |
 | `archive.py` | archive.org upload, retitle, empty obsolete items |
 | `manifest.py` | Source manifest records |
@@ -83,9 +83,11 @@ Names follow [NAMING.md](NAMING.md).
 | `fetch.yml` | manual | fetch + archive `id URL` pairs, commit manifest lines |
 | `archive-retitle.yml` | manual | rewrite archive.org titles/descriptions |
 | `archive-delete.yml` | manual | empty obsolete archive.org items |
-| `import-peraturan.yml` | every 6 h + manual | import regulations from peraturan.go.id in batches of 50; resumes; afterwards picks up new ones; recomputes relationships after each batch |
-| `archive-pending.yml` | daily + manual | archive regulation PDFs the importer recorded (batches of 150) |
+| `import-bpk.yml` | every 6 h + manual (+ test batch of 5 on push to `claude/**`) | import from peraturan.bpk.go.id in batches of 50: metadata, every PDF archived on archive.org as it is downloaded, text for records without one; resumes; recomputes relationships after each batch |
+| `import-peraturan.yml` | manual (schedule removed 2026-11-21) | import from peraturan.go.id (answers only Indonesian IPs: needs WG_INDONESIA) |
+| `archive-pending.yml` | manual (schedule removed 2026-11-21) | archive peraturan.go.id PDFs that were recorded but not archived (skips BPK ones) |
 | `probe-sources.yml` | manual | which sources a GitHub runner can reach |
+| `probe-bpk.yml`, `explore-bpk.yml`, `probe-bpk-app.yml` | manual, or push to `claude/**` | which tool passes BPK's Cloudflare check; save sample BPK pages (test fixtures); look for an API in the BPK app |
 
 Where things run: everything recurring runs on GitHub Actions (no Claude session or personal
 computer needed). GitHub runners reach DPR files, the Wayback Machine and (since 2026-11-20
