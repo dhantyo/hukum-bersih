@@ -4,7 +4,7 @@
 // links to the pasal-by-pasal changes. Pattern from legislation.gov.uk ("changes to
 // legislation") and Fedlex ("nicht mehr in Kraft"); see docs/decisions/0008-law-history.md.
 import { tanggal } from "../lib/labels.ts";
-import { amendmentCount, byId, citeId, pasalNotes, pathOf, rel, type Regulation } from "../lib/peraturan.ts";
+import { amendmentCount, byId, citeId, pasalNotes, pathOf, rel, sourceName, type Regulation } from "../lib/peraturan.ts";
 
 interface Props { r: Regulation; hasText: boolean; perubahanHref?: string; riwayatHref?: string }
 const { r, hasText, perubahanHref, riwayatHref } = Astro.props;
@@ -37,7 +37,7 @@ const changesHref = perubahanHref ?? riwayatHref;
       </p>
     ) : (
       <p>
-        Menurut <a href={r.source_url}>{new URL(r.source_url).hostname}</a>, statusnya {r.status === "dicabut" ? "dicabut" : "tidak berlaku"}.
+        Menurut <a href={r.source_url}>{sourceName(r.source_url)}</a>, statusnya {r.status === "dicabut" ? "dicabut" : "tidak berlaku"}.
         {hasText && " Teks di bawah ini disimpan sebagai arsip sejarah."}
       </p>
     )}

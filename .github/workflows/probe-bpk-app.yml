@@ -5,9 +5,6 @@ name: Probe BPK app
 # assets, and tries the hosts it finds. Keeps only that list (artifact), not the app.
 on:
   workflow_dispatch:
-  push:
-    branches: ["claude/**"]
-    paths: [".github/workflows/probe-bpk-app.yml"]
 
 permissions:
   contents: read

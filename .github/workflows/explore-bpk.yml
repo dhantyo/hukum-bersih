@@ -5,7 +5,7 @@ name: Explore BPK
 on:
   workflow_dispatch:
   push:
-    branches: ["claude/**"]
+    branches: ["claude/**", "!claude/determined-curie-rq2b0s"]   # not the default branch
     paths: [".github/workflows/explore-bpk.yml", ".github/probe-bpk/explore.py"]
 
 permissions:

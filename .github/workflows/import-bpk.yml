@@ -21,7 +21,7 @@ on:
         description: "Max batches of 50 (0 = until the time budget is used)"
         default: "0"
   push:
-    branches: ["claude/**"]
+    branches: ["claude/**", "!claude/determined-curie-rq2b0s"]   # not the default branch
     paths: [".github/workflows/import-bpk.yml"]
 
 permissions:
