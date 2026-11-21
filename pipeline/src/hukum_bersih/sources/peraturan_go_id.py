@@ -154,15 +154,22 @@ def convert(client: Client, rec: dict, folder: Path, data_dir: Path) -> str:
     url = rec["source_pdf_url"]
     pdf_path = url.removeprefix(BASE)
     work, date = rec["id"], rec.get("tanggal_penetapan")
-    for old in rec.get("versions") or []:                 # replaced below
-        if old.get("text"):
-            (folder / old["text"]).unlink(missing_ok=True)
-    rec["versions"] = []
-    rec.pop("pdf_quality", None)
-    rec.pop("parse_error", None)
+    old = [v for v in rec.get("versions") or [] if v.get("text")]
+
+    def replace_versions(new: list[dict]) -> None:
+        """Swap in the new text only once it exists: a failed download or parse must never
+        cost the text we already have (2026-11-21: an outage deleted three texts)."""
+        for v in old:
+            if not any(n["text"] == v["text"] for n in new):
+                (folder / v["text"]).unlink(missing_ok=True)
+        rec["versions"] = new
+        rec.pop("pdf_quality", None)
+        rec.pop("parse_error", None)
+        rec.pop("reparse_error", None)
+
     with tempfile.TemporaryDirectory() as tmp:
         pdf = Path(tmp) / "doc.pdf"
-        pdf.write_bytes(client.get(pdf_path).content)
+        pdf.write_bytes(client.get(pdf_path).content)      # raises on failure: nothing changed
         entry = entry_for_file(pdf, url, None, work, pdf_path.rsplit("/", 1)[-1])
         if rec.get("pdf_sha256") != entry.sha256:          # new or changed upstream
             rec["pdf_sha256"] = entry.sha256
@@ -173,6 +180,10 @@ def convert(client: Client, rec: dict, folder: Path, data_dir: Path) -> str:
         try:
             doc = parse_pdf(pdf)
             if doc.pasal_count == 0:
+                if old:                                    # keep the text we have
+                    rec["reparse_error"] = f"v{PARSER_VERSION}: no pasal found"
+                    return "kept old text (new parse found no pasal)"
+                rec.pop("parse_error", None)
                 rec["pdf_quality"] = "image_only_or_unparsed"
                 return "no pasal found (scanned PDF?)"
             text = to_bluebell(doc)
@@ -180,16 +191,20 @@ def convert(client: Client, rec: dict, folder: Path, data_dir: Path) -> str:
             version = f"{work}_{date or rec['year']}"
             folder.mkdir(parents=True, exist_ok=True)
             (folder / f"{version}.txt").write_text(text)
-            rec["versions"].append({
+            replace_versions([{
                 "id": version, "kind": "asli", "source": "official",
                 "date": date, "date_basis": "tanggal_penetapan",
                 "text": f"{version}.txt", "pasal_count": doc.pasal_count,
                 "parser_version": PARSER_VERSION,
-            })
+            }])
             return f"{doc.pasal_count} pasal"
         except Exception as e:  # noqa: BLE001 - record and move on; never guess
-            rec["parse_error"] = f"{type(e).__name__}: {str(e)[:200]}"
-            return f"parse error: {rec['parse_error'][:80]}"
+            err = f"{type(e).__name__}: {str(e)[:200]}"
+            if old:
+                rec["reparse_error"] = f"v{PARSER_VERSION}: {err}"
+                return f"kept old text (parse error: {err[:80]})"
+            rec["parse_error"] = err
+            return f"parse error: {err[:80]}"
 
 
 def reparse(client: Client, jenis: str, data_dir: Path,
@@ -209,6 +224,8 @@ def reparse(client: Client, jenis: str, data_dir: Path,
             continue
         if not rec.get("source_pdf_url"):
             continue
+        if str(rec.get("reparse_error", "")).startswith(f"v{PARSER_VERSION}:"):
+            continue                                      # tried with this parser; old text kept
         if not versions and rec.get("parser_version_tried") == PARSER_VERSION:
             continue                                      # scanned: OCR needed, not a re-parse
         try:
