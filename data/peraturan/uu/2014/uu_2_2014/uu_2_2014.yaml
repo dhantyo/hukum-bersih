@@ -12,8 +12,8 @@ tanggal_penetapan: '2014-01-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu2-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38565/uu-no-2-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/27815/UU%20Nomor%2002%20Tahun%202014.pdf
 relationships:
   amends:
   - id: uu_30_2004
@@ -76,4 +76,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2014_2014-01-15.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 58162cab71b87d712cd8a70aed6d7587581433cdf7deb283c62de8cc9a2b34f2
 pdf_sha256: 1ce73518d66ede5b36d6ab256bbcc74b564bf0e4a176d9f998f7e28931cdb308
+tanggal_pengundangan: '2014-01-15'
+tanggal_berlaku: '2014-01-15'
+lembaran_negara: 'LN.2014/No. 3, TLN No. 5491, LL SETNEG: 31 HLM'
+subjek: JABATAN / PROFESI / KEAHLIAN / SERTIFIKASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu2-2014bt.pdf
+bpk:
+  id: 38565
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27815/UU%20Nomor%2002%20Tahun%202014.pdf
+    bpk_file_id: 27815
+    filename: UU Nomor 02 Tahun 2014.pdf
+    sha256: 58162cab71b87d712cd8a70aed6d7587581433cdf7deb283c62de8cc9a2b34f2
+    bytes: 325768
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_30_2004
+      citation: UU No. 30 Tahun 2004
+      tentang: Jabatan Notaris
+      url: https://peraturan.bpk.go.id/Details/40758/uu-no-30-tahun-2004
+      note: null
+uji_materi: null

@@ -17,8 +17,8 @@ tanggal_penetapan: '2014-08-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu19-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38660/uu-no-19-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/27968/UU%20Nomor%2019%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
@@ -34,4 +34,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_2014_2014-08-07.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 08535495d0e2cf2df1c2cb612428a8b06d9baf99b85133e0ca73a35817c0a60b
 pdf_sha256: 7ae9b9800efb9563d47c2427e18e08ee1e00683bae1aa614b8eb863140c7cb12
+tanggal_pengundangan: '2104-08-07'
+tanggal_berlaku: '2014-08-07'
+lembaran_negara: 'LN.2014/No. 186, TLN No. 5572, LL SETNEG: 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu19-2014bt.pdf
+bpk:
+  id: 38660
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27968/UU%20Nomor%2019%20Tahun%202014.pdf
+    bpk_file_id: 27968
+    filename: UU Nomor 19 Tahun 2014.pdf
+    sha256: 08535495d0e2cf2df1c2cb612428a8b06d9baf99b85133e0ca73a35817c0a60b
+    bytes: 201794
+    archive_url: null
+  status_peraturan: null
+  tanggal_pengundangan: '2014-08-07'
+uji_materi: null

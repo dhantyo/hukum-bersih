@@ -12,8 +12,8 @@ tanggal_penetapan: '2014-10-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-35-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu35-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38723/uu-no-35-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/28052/UU%20Nomor%2035%20Tahun%202014.pdf
 relationships:
   amends:
   - id: uu_23_2002
@@ -115,4 +115,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_35_2014_2014-10-17.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5c93f277f7f662150073be913e30afec1bf90b6f180f494dd22c618aebb2bfc3
 pdf_sha256: 2d9ae75f5f9645b1a1054fa4087403e538a37f549761d033d8ad28af3c8ffc09
+tanggal_pengundangan: '2014-10-17'
+tanggal_berlaku: '2014-10-17'
+lembaran_negara: 'LN.2014/No. 297, TLN No. 5606, LL SETNEG: 48 HLM'
+subjek: HAK ASASI MANUSIA - KEPENDUDUKAN DAN PERKAWINAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-35-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu35-2014bt.pdf
+bpk:
+  id: 38723
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28052/UU%20Nomor%2035%20Tahun%202014.pdf
+    bpk_file_id: 28052
+    filename: UU Nomor 35 Tahun 2014.pdf
+    sha256: 5c93f277f7f662150073be913e30afec1bf90b6f180f494dd22c618aebb2bfc3
+    bytes: 478998
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 81 ayat (1) dan Pasal 82 Undang-Undang Nomor 23 Tahun 2002 sebagaimana
+        telah beberapa kali diubah, terakhir dengan Undang-Undang Nomor 17 Tahun 2016
+    Mengubah:
+    - id: uu_23_2002
+      citation: UU No. 23 Tahun 2002
+      tentang: Perlindungan Anak
+      url: https://peraturan.bpk.go.id/Details/44473/uu-no-23-tahun-2002
+      note: null
+uji_materi: null

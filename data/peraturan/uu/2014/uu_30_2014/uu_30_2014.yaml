@@ -11,8 +11,8 @@ tanggal_penetapan: '2014-10-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-30-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu30-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38695/uu-no-30-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/28023/UU%20Nomor%2030%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,59 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_2014_2014-10-17.txt
   pasal_count: 89
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e991e58f961a56d30a5438829a2fdbbb8b559c4ab2089123f2582479669e3333
 pdf_sha256: 2f3516db3e2ef2b0e560416a4ee399d86525e31436b22652a1195ca2697481ce
+tanggal_pengundangan: '2014-10-17'
+tanggal_berlaku: '2014-10-17'
+lembaran_negara: 'LN.2014/No. 292, TLN No. 5601, LL SETNEG: 66 HLM'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-30-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu30-2014bt.pdf
+bpk:
+  id: 38695
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28023/UU%20Nomor%2030%20Tahun%202014.pdf
+    bpk_file_id: 28023
+    filename: UU Nomor 30 Tahun 2014.pdf
+    sha256: e991e58f961a56d30a5438829a2fdbbb8b559c4ab2089123f2582479669e3333
+    bytes: 526949
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+uji_materi:
+- putusan: 66/PUU-XXIV/2026
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/232/putusan_mkri_66-PUU-XXIV-2026.pdf
+  amar: 'Frasa "kerugian negara" dalam norma Pasal 20 ayat (5) dan ayat (6) Undang-Undang
+    Nomor 30 Tahun 2014 tentang Administrasi Pemerintahan (Lembaran Negara Republik
+    Indonesia Tahun 2014 Nomor 292, Tambahan Lembaran Negara Republik Indonesia Nomor
+    5601) bertentangan dengan Undang-Undang Dasar Negara Republik Indonesia Tahun
+    1945 dan tidak memiliki kekuatan hukum mengikat secara bersyarat sepanjang tidak
+    dimaknai "kerugian keuangan negara", sehingga norma Pasal 20 ayat (5) dan ayat
+    (6) Undang-Undang Nomor 30 Tahun 2014 tentang Administrasi Pemerintahan (Lembaran
+    Negara Republik Indonesia Tahun 2014 Nomor 292, Tambahan Lembaran Negara Republik
+    Indonesia Nomor 5601) selengkapnya berbunyi: “(5) Pengembalian kerugian keuangan
+    negara sebagaimana dimaksud pada ayat (4) dibebankan kepada Badan Pemerintahan,
+    apabila kesalahan administratif sebagaimana dimaksud pada ayat (2) huruf c terjadi
+    bukan karena adanya unsur penyalahgunaan Wewenang. (6) Pengembalian kerugian keuangan
+    negara sebagaimana dimaksud pada ayat (4) dibebankan kepada Pejabat Pemerintahan,
+    apabila kesalahan administratif sebagaimana dimaksud pada ayat (2) huruf c terjadi
+    karena adanya unsur penyalahgunaan Wewenang.”'

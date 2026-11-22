@@ -11,8 +11,8 @@ tanggal_penetapan: '2014-10-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-37-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu37-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38775/uu-no-37-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/28104/UU%20Nomor%2037%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_37_2014_2014-10-17.txt
   pasal_count: 69
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e9a39bbc7e97c18d4511c48a92d769f8fbbd3459848b9b46cd84cb389adf101e
+  ocr: true
 pdf_sha256: b40f57830189b3ac8cd55ffa8dce7a98093a87fdcffaad9cf66b524adea831b2
+tanggal_pengundangan: '2014-10-17'
+tanggal_berlaku: '2014-10-17'
+lembaran_negara: 'LN.2014/No. 299, TLN No. 5608, LL SETNEG: 44 HLM'
+subjek: LINGKUNGAN HIDUP
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-37-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu37-2014bt.pdf
+bpk:
+  id: 38775
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28104/UU%20Nomor%2037%20Tahun%202014.pdf
+    bpk_file_id: 28104
+    filename: UU Nomor 37 Tahun 2014.pdf
+    sha256: e9a39bbc7e97c18d4511c48a92d769f8fbbd3459848b9b46cd84cb389adf101e
+    bytes: 3219305
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

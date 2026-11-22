@@ -6,19 +6,18 @@ year: 2014
 title: Undang-Undang Nomor 38 Tahun 2014 tentang Keperawatan
 tentang: KEPERAWATAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 17 Tahun 2023 Tentang Kesehatan'
+status: tidak_berlaku
 tanggal_penetapan: '2014-10-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-38-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu38-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38782/uu-no-38-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/28111/UU%20Nomor%2038%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_17_2023
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -29,4 +28,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_38_2014_2014-10-17.txt
   pasal_count: 66
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 54f94d67134e51d596ef20a0e9a5e939652bb0d1d5eff1c4683dfc2b4de526cd
+  ocr: true
 pdf_sha256: a0238d0f34228d6996fa3cdfc8e1a69e91e1b5af127e42913fc7d5a2770a05a5
+tanggal_pengundangan: '2014-10-17'
+tanggal_berlaku: '2014-10-17'
+lembaran_negara: 'LN.2014/No. 307, TLN No. 5612, LL SETNEG: 36 HLM'
+subjek: KESEHATAN - JABATAN / PROFESI / KEAHLIAN / SERTIFIKASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-38-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu38-2014bt.pdf
+bpk:
+  id: 38782
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28111/UU%20Nomor%2038%20Tahun%202014.pdf
+    bpk_file_id: 28111
+    filename: UU Nomor 38 Tahun 2014.pdf
+    sha256: 54f94d67134e51d596ef20a0e9a5e939652bb0d1d5eff1c4683dfc2b4de526cd
+    bytes: 1461789
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_17_2023
+      citation: UU No. 17 Tahun 2023
+      tentang: Kesehatan
+      url: https://peraturan.bpk.go.id/Details/258028/uu-no-17-tahun-2023
+      note: null
+uji_materi: null

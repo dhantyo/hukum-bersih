@@ -14,8 +14,8 @@ tanggal_penetapan: '2014-03-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu10-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38599/uu-no-10-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/27865/UU%20Nomor%2010%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,4 +31,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2014_2014-03-19.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 30747241f76603be93cb7d3230b40faeaa592dce3adeed8c29898363fa1743ea
 pdf_sha256: 29a35ed6a6422f442e91b5e7bbdea5723d0b33d5666ad569deb14f922d223d44
+tanggal_pengundangan: '2014-03-19'
+tanggal_berlaku: '2014-03-19'
+lembaran_negara: 'LN.2014/No. 59, TLN No. 5518, LL SETNEG: 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu10-2014bt.pdf
+bpk:
+  id: 38599
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27865/UU%20Nomor%2010%20Tahun%202014.pdf
+    bpk_file_id: 27865
+    filename: UU Nomor 10 Tahun 2014.pdf
+    sha256: 30747241f76603be93cb7d3230b40faeaa592dce3adeed8c29898363fa1743ea
+    bytes: 189576
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/27866/UU%20Nomor%2010%20Tahun%202014_Lampiran%201.pdf
+    bpk_file_id: 27866
+    filename: UU Nomor 10 Tahun 2014_Lampiran 1.pdf
+    sha256: 14e0cd2fb9d6d05f081a4f008d0331ecde31bc1179cc74e4bbfac3e8fd338c78
+    bytes: 11244725
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/27867/UU%20Nomor%2010%20Tahun%202014_Lampiran%202.pdf
+    bpk_file_id: 27867
+    filename: UU Nomor 10 Tahun 2014_Lampiran 2.pdf
+    sha256: 2331a2711f2667ab358a42059459c7cb676acda95a88090cc04a612d96f08acd
+    bytes: 10973063
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

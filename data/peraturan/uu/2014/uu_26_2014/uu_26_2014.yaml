@@ -13,8 +13,8 @@ tanggal_penetapan: '2014-10-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-26-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu26-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38689/uu-no-26-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/28017/UU%20Nomor%2026%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,3 +31,23 @@ versions:
   text: uu_26_2014_2014-10-14.txt
   pasal_count: 2
 pdf_sha256: 1daa7c96192a029c73f5729ac33cce4524e49ee21d7bb2c9ffd25945fcacedfe
+tanggal_pengundangan: '2014-10-14'
+tanggal_berlaku: '2014-10-14'
+lembaran_negara: 'LN.2014/No. 258, TLN No. 5592, LL SETNEG: 3 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-26-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu26-2014bt.pdf
+bpk:
+  id: 38689
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28017/UU%20Nomor%2026%20Tahun%202014.pdf
+    bpk_file_id: 28017
+    filename: UU Nomor 26 Tahun 2014.pdf
+    sha256: 1a367f2c19b2c5906f4662679d6e32d99bfb4c78485bc04a9956770c9bc57fc4
+    bytes: 10370759
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
+reparse_error: 'v12: LeakedMarkupError: att_1__p_392: markup in text: ''PART III.
+  TECHNICAL CO-OPERATION AND SCIENTIFIC'''

@@ -11,8 +11,8 @@ tanggal_penetapan: '2014-10-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-25-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu25-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38688/uu-no-25-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/28016/UU%20Nomor%2025%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_25_2014_2014-10-14.txt
   pasal_count: 62
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7e75f2166d91dbb868d1f578643f42ab51758dd824045d6699c5957bc718343f
 pdf_sha256: 1db341b8c5ab3973816a6a55f5c75f935521b17cef93e1b83490c3b3fb3d491e
+tanggal_pengundangan: '2014-10-14'
+tanggal_berlaku: '2014-10-14'
+lembaran_negara: 'LN.2014/No. 257, TLN No. 5591, LL SETNEG: 29 HLM'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-25-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu25-2014bt.pdf
+bpk:
+  id: 38688
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28016/UU%20Nomor%2025%20Tahun%202014.pdf
+    bpk_file_id: 28016
+    filename: UU Nomor 25 Tahun 2014.pdf
+    sha256: 7e75f2166d91dbb868d1f578643f42ab51758dd824045d6699c5957bc718343f
+    bytes: 264472
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_26_1997
+      citation: UU No. 26 Tahun 1997
+      tentang: Hukum Disiplin Prajurit Angkatan Bersenjata Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/46028/uu-no-26-tahun-1997
+      note: null
+uji_materi: null

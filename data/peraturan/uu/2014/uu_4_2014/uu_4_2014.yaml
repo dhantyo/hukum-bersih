@@ -15,8 +15,8 @@ tanggal_penetapan: '2014-01-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu4-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38577/uu-no-4-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/27832/UU%20Nomor%2004%20Tahun%202014.pdf
 relationships:
   amends:
   - id: uu_24_2003
@@ -35,4 +35,46 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2014_2014-01-15.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9592d20deead5994787aa5f5ae2941b0aaa8729a7eaf40a16298789bec2690ff
 pdf_sha256: f7adfbdd682338f8519773622176d8aeae44af75b11cf8b08a4a8cfcb093383c
+tanggal_penetapan_bpk: '2014-09-15'
+tanggal_pengundangan: '2014-01-15'
+tanggal_berlaku: '2014-09-15'
+lembaran_negara: 'LN.2014/No. 5, TLN No. 5456, LL SETNEG: 3 HLM'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA - DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA
+  / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu4-2014bt.pdf
+bpk:
+  id: 38577
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27832/UU%20Nomor%2004%20Tahun%202014.pdf
+    bpk_file_id: 27832
+    filename: UU Nomor 04 Tahun 2014.pdf
+    sha256: 9592d20deead5994787aa5f5ae2941b0aaa8729a7eaf40a16298789bec2690ff
+    bytes: 14460286
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_7_2020
+      citation: UU No. 7 Tahun 2020
+      tentang: Perubahan Ketiga atas Undang-Undang Nomor 24 Tahun 2003 tentang Mahkamah
+        Konstitusi
+      url: https://peraturan.bpk.go.id/Details/147335/uu-no-7-tahun-2020
+      note: null
+    Mengubah:
+    - id: uu_8_2011
+      citation: UU No. 8 Tahun 2011
+      tentang: Perubahan Atas Undang-Undang Nomor 24 Tahun 2003 Tentang Mahkamah Konstitusi
+      url: https://peraturan.bpk.go.id/Details/39183/uu-no-8-tahun-2011
+      note: null
+    - id: uu_24_2003
+      citation: UU No. 24 Tahun 2003
+      tentang: Mahkamah Konstitusi
+      url: https://peraturan.bpk.go.id/Details/44069/uu-no-24-tahun-2003
+      note: null
+  tanggal_pengundangan: '2014-09-15'
+uji_materi: null

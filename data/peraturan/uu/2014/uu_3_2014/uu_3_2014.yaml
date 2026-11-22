@@ -11,8 +11,8 @@ tanggal_penetapan: '2014-01-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu3-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38572/uu-no-3-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/27824/UU%20Nomor%2003%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,50 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2014_2014-01-15.txt
   pasal_count: 125
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: aebc2d6104ea2e56e7e6f869370e60f8a90125a7e0a28c6b5d2ad587af4fc647
 pdf_sha256: e0bc286019d8cea27943fd087bcdbb78272f6a27183189b20f406b1c5b26b771
+tanggal_penetapan_bpk: '2014-09-15'
+tanggal_pengundangan: '2014-01-15'
+tanggal_berlaku: '2014-09-15'
+lembaran_negara: 'LN.2014/No. 4, TLN No. 5492, LL SETNEG: 58 HLM'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu3-2014bt.pdf
+bpk:
+  id: 38572
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27824/UU%20Nomor%2003%20Tahun%202014.pdf
+    bpk_file_id: 27824
+    filename: UU Nomor 03 Tahun 2014.pdf
+    sha256: aebc2d6104ea2e56e7e6f869370e60f8a90125a7e0a28c6b5d2ad587af4fc647
+    bytes: 510230
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_5_1984
+      citation: UU No. 5 Tahun 1984
+      tentang: Perindustrian
+      url: https://peraturan.bpk.go.id/Details/46975/uu-no-5-tahun-1984
+      note: null
+  tanggal_pengundangan: '2014-09-15'
+uji_materi: null

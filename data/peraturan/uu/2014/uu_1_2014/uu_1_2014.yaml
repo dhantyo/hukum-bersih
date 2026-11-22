@@ -13,11 +13,38 @@ tanggal_penetapan: '2014-01-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu1-2014pjl.pdf
+source_url: https://peraturan.bpk.go.id/Details/38521/uu-no-1-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/27765/UU%20Nomor%2001%20Tahun%202014.pdf
 relationships:
   amends:
   - id: uu_27_2007
+    changes:
+      diubah:
+      - '1'
+      - '14'
+      - '16'
+      - '17'
+      - '18'
+      - '19'
+      - '20'
+      - '21'
+      - '22'
+      - '23'
+      - '30'
+      - '50'
+      - '51'
+      - '60'
+      - '63'
+      - '71'
+      - '75'
+      disisipkan:
+      - 22A
+      - 22B
+      - 22C
+      - 26A
+      - 75A
+      - 78A
+      - 78B
   amended_by: []
   revokes: []
   revoked_by: []
@@ -31,4 +58,48 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2014_2014-01-15.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b6e91d9c4aa99899c67790980c246853d76e3166184a9af615ba8b08b71ef110
 pdf_sha256: af2504ba114e30c0d402a2550776a480c4ef90662aa491d9cd28d98c0091c54c
+tanggal_pengundangan: '2014-01-15'
+tanggal_berlaku: '2014-01-15'
+lembaran_negara: 'LN.2014/No. 2, TLN No. 5490, LL SETNEG: 25 HLM'
+subjek: PROGRAM, RENCANA PEMBANGUNAN DAN RENCANA KERJA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu1-2014pjl.pdf
+bpk:
+  id: 38521
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27765/UU%20Nomor%2001%20Tahun%202014.pdf
+    bpk_file_id: 27765
+    filename: UU Nomor 01 Tahun 2014.pdf
+    sha256: b6e91d9c4aa99899c67790980c246853d76e3166184a9af615ba8b08b71ef110
+    bytes: 439127
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mengubah:
+    - id: uu_27_2007
+      citation: UU No. 27 Tahun 2007
+      tentang: Pengelolaan Wilayah Pesisir dan Pulau-Pulau Kecil
+      url: https://peraturan.bpk.go.id/Details/39911/uu-no-27-tahun-2007
+      note: null
+uji_materi: null

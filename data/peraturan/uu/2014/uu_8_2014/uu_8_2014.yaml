@@ -16,8 +16,8 @@ tanggal_penetapan: '2014-03-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu8-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38594/uu-no-8-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/27856/UU%20Nomor%2008%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
@@ -33,4 +33,43 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_2014_2014-03-11.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 01dff85dc90be48f69ccf6611a6001e0a2c38f0dcd5b408a697348ee35885ce4
 pdf_sha256: f8d7e4bc0a2a3ae132c381063c8ba01a610cf1fec34b391130a44c8e3ca01514
+tanggal_pengundangan: '2014-03-11'
+tanggal_berlaku: '2014-03-11'
+lembaran_negara: 'LN.2014/No. 46, TLN No. 5513, LL SETNEG: 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu8-2014bt.pdf
+bpk:
+  id: 38594
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27856/UU%20Nomor%2008%20Tahun%202014.pdf
+    bpk_file_id: 27856
+    filename: UU Nomor 08 Tahun 2014.pdf
+    sha256: 01dff85dc90be48f69ccf6611a6001e0a2c38f0dcd5b408a697348ee35885ce4
+    bytes: 135441
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/27858/UU%20Nomor%2008%20Tahun%202014_Lampiran%201.pdf
+    bpk_file_id: 27858
+    filename: UU Nomor 08 Tahun 2014_Lampiran 1.pdf
+    sha256: 9828ca58b12d2728aaac61c3f1bea0f2727a421c244f2ca7cf6a6e0b25a6b922
+    bytes: 11802398
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/27859/UU%20Nomor%2008%20Tahun%202014_Lampiran%202.pdf
+    bpk_file_id: 27859
+    filename: UU Nomor 08 Tahun 2014_Lampiran 2.pdf
+    sha256: de9a57ee8140e273088fc01d6d7fbcf3a6ea4bc5ca0c899b36cddbfab310d1a7
+    bytes: 8827193
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/27860/UU%20Nomor%2008%20Tahun%202014_Lampiran%203.pdf
+    bpk_file_id: 27860
+    filename: UU Nomor 08 Tahun 2014_Lampiran 3.pdf
+    sha256: fecc68d524b7ec2509717b3f19210fc86f1782f7fdd8794b612f986a8a6badb2
+    bytes: 11443456
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

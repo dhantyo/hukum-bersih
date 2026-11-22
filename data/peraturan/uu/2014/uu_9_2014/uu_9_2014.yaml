@@ -16,8 +16,8 @@ tanggal_penetapan: '2014-03-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+9+Tahun+2014.pdf
+source_url: https://peraturan.bpk.go.id/Details/38591/uu-no-9-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/27852/UU%20Nomor%2009%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
@@ -33,4 +33,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2014_2014-03-11.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: abf5f3eacb757ec0d726ea58bfb20ff914c3c07c4ab58dab76957794a077d65e
 pdf_sha256: abf5f3eacb757ec0d726ea58bfb20ff914c3c07c4ab58dab76957794a077d65e
+tanggal_pengundangan: '2014-03-11'
+tanggal_berlaku: '2014-03-11'
+lembaran_negara: 'LN.2014/No. 47, TLN No. 5514, LL SETNEG: 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+9+Tahun+2014.pdf
+bpk:
+  id: 38591
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27852/UU%20Nomor%2009%20Tahun%202014.pdf
+    bpk_file_id: 27852
+    filename: UU Nomor 09 Tahun 2014.pdf
+    sha256: abf5f3eacb757ec0d726ea58bfb20ff914c3c07c4ab58dab76957794a077d65e
+    bytes: 143012
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

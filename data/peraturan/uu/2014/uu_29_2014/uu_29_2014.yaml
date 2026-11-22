@@ -11,8 +11,8 @@ tanggal_penetapan: '2014-10-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-29-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu29-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38691/uu-no-29-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/28019/UU%20Nomor%2029%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_29_2014_2014-10-16.txt
   pasal_count: 88
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 12912d893abb43cb2673b1d08dcd33d6826ce78e6866c43b2ce2f90c4af92ba9
 pdf_sha256: 1b1b21eb49640ec58729deaa7237ff70cb16c236148e99cb4c41b590a021ebbe
+tanggal_pengundangan: '2014-10-16'
+tanggal_berlaku: '2014-10-16'
+lembaran_negara: 'LN.2014/No. 267, TLN No. 5600, LL SETNEG: 40 HLM'
+subjek: BANTUAN, SUMBANGAN, BENCANA / KEBENCANAAN, DAN PENANGGULANGAN BENCANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-29-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu29-2014bt.pdf
+bpk:
+  id: 38691
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28019/UU%20Nomor%2029%20Tahun%202014.pdf
+    bpk_file_id: 28019
+    filename: UU Nomor 29 Tahun 2014.pdf
+    sha256: 12912d893abb43cb2673b1d08dcd33d6826ce78e6866c43b2ce2f90c4af92ba9
+    bytes: 428246
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

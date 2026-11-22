@@ -11,8 +11,8 @@ tanggal_penetapan: '2014-03-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu11-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38602/uu-no-11-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/27870/UU%20Nomor%2011%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_2014_2014-03-22.txt
   pasal_count: 56
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 581f2d871f078bb176e8f1e449392f88b5aaa9cce6ed6488d17dbad60d31ac2b
 pdf_sha256: 00b1c1ec1914f222e86c38762933818533a2cedf376782a32928f9170aa661d8
+tanggal_pengundangan: '2014-03-24'
+tanggal_berlaku: '2014-03-24'
+lembaran_negara: 'LN.2014/No. 61, TLN No. 5520, LL SETNEG: 28 HLM'
+subjek: JABATAN / PROFESI / KEAHLIAN / SERTIFIKASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu11-2014bt.pdf
+bpk:
+  id: 38602
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27870/UU%20Nomor%2011%20Tahun%202014.pdf
+    bpk_file_id: 27870
+    filename: UU Nomor 11 Tahun 2014.pdf
+    sha256: 581f2d871f078bb176e8f1e449392f88b5aaa9cce6ed6488d17dbad60d31ac2b
+    bytes: 326657
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

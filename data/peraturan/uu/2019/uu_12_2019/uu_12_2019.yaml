@@ -30,6 +30,10 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2019_2019-09-17.txt
   pasal_count: 15
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d3e40016c6acd8c1f7351fedb26805d6988c2f21e825d2f30ac2d55827d06f62
+  ocr: true
 pdf_sha256: bdaf1b8e88a56087dc03d78304a0dca02924f3a4004ea310d538153cd3190e3b
 tanggal_pengundangan: '2019-09-18'
 tanggal_berlaku: '2019-09-18'
@@ -61,4 +65,3 @@ bpk:
     archive_url: null
   status_peraturan: null
 uji_materi: null
-reparse_error: 'v11: 6 pasal, stored text has 15'

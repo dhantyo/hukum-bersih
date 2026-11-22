@@ -11,8 +11,8 @@ tanggal_penetapan: '2014-09-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu21-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38684/uu-no-21-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/28012/UU%20Nomor%2021%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,48 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2014_2014-09-17.txt
   pasal_count: 88
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b22912c7cf960cf1072a98e11d570e4f8949e2168f2d0e5ff08b25bb82af15cd
 pdf_sha256: d6971491f00133e9a263412e18599fc7a590f5f261ddb248991de69904edc509
+tanggal_pengundangan: '2014-09-17'
+tanggal_berlaku: '2014-09-17'
+lembaran_negara: 'LN.2014/No. 217, TLN No. 5585, LL SETNEG: 40 HLM'
+subjek: PERTAMBANGAN MIGAS, MINERAL DAN ENERGI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu21-2014bt.pdf
+bpk:
+  id: 38684
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28012/UU%20Nomor%2021%20Tahun%202014.pdf
+    bpk_file_id: 28012
+    filename: UU Nomor 21 Tahun 2014.pdf
+    sha256: b22912c7cf960cf1072a98e11d570e4f8949e2168f2d0e5ff08b25bb82af15cd
+    bytes: 360787
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_27_2003
+      citation: UU No. 27 Tahun 2003
+      tentang: Panas Bumi
+      url: https://peraturan.bpk.go.id/Details/44080/uu-no-27-tahun-2003
+      note: null
+uji_materi: null

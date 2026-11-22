@@ -14,8 +14,8 @@ tanggal_penetapan: '2014-07-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu13-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38605/uu-no-13-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/27875/UU%20Nomor%2013%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,4 +31,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2014_2014-07-21.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 153a5fde0d5760667ae7ad656a6582c5c7c1dfebba637a3d981e4113a3f92e54
 pdf_sha256: d2d524381c580f6157e19ce704b463fe20e97ad15a271857920661b5b573ae85
+tanggal_pengundangan: '2014-07-21'
+tanggal_berlaku: '2014-07-21'
+lembaran_negara: 'LN.2014/No. 170, TLN No. 5560, LL SETNEG: 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu13-2014bt.pdf
+bpk:
+  id: 38605
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27875/UU%20Nomor%2013%20Tahun%202014.pdf
+    bpk_file_id: 27875
+    filename: UU Nomor 13 Tahun 2014.pdf
+    sha256: 153a5fde0d5760667ae7ad656a6582c5c7c1dfebba637a3d981e4113a3f92e54
+    bytes: 164788
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/224564/UU%20Nomor%2013%20Tahun%202014%20-%20Lampiran.pdf
+    bpk_file_id: 224564
+    filename: UU Nomor 13 Tahun 2014 - Lampiran.pdf
+    sha256: 745c11d947b94cae763016d02f67bb630a3d7b2835737fa66d86e44f4ed90bff
+    bytes: 6250407
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

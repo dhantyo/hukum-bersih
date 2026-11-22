@@ -6,22 +6,20 @@ year: 2014
 title: Undang-Undang Nomor 5 Tahun 2014 tentang Aparatur Sipil Negara
 tentang: APARATUR SIPIL NEGARA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 20 Tahun 2023 Tentang Aparatur
-  Sipil Negara'
+status: tidak_berlaku
 tanggal_penetapan: '2014-01-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu5-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38580/uu-no-5-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/27837/UU%20Nomor%2005%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_8_1974
   - uu_43_1999
-  revoked_by:
-  - uu_20_2023
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -32,4 +30,54 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_2014_2014-01-15.txt
   pasal_count: 46
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7c80a4e58b75f5ea401fbf1fa7f0d7fc0155fda9d603198e28e8a94af4f13e26
 pdf_sha256: 47e608c392074a111e73e8ed387dcf8c664ee1d4c2e472e1e46ab6c7c8678b45
+tanggal_pengundangan: '2014-01-15'
+tanggal_berlaku: '2014-01-15'
+lembaran_negara: 'LN.2014/No. 6, TLN No. 5494, LL SETNEG: 79 HLM'
+subjek: KEPEGAWAIAN, APARATUR NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu5-2014bt.pdf
+bpk:
+  id: 38580
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27837/UU%20Nomor%2005%20Tahun%202014.pdf
+    bpk_file_id: 27837
+    filename: UU Nomor 05 Tahun 2014.pdf
+    sha256: 7c80a4e58b75f5ea401fbf1fa7f0d7fc0155fda9d603198e28e8a94af4f13e26
+    bytes: 503034
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_20_2023
+      citation: UU No. 20 Tahun 2023
+      tentang: Aparatur Sipil Negara
+      url: https://peraturan.bpk.go.id/Details/269470/uu-no-20-tahun-2023
+      note: null
+    Mencabut:
+    - id: uu_43_1999
+      citation: UU No. 43 Tahun 1999
+      tentang: Perubahan atas Undang-Undang Nomor 8 Tahun 1974 tentang Pokok-Pokok
+        Kepegawaian
+      url: https://peraturan.bpk.go.id/Details/45377/uu-no-43-tahun-1999
+      note: null
+    - id: uu_8_1974
+      citation: UU No. 8 Tahun 1974
+      tentang: Pokok- Pokok Kepegawaian
+      url: https://peraturan.bpk.go.id/Details/47417/uu-no-8-tahun-1974
+      note: null
+uji_materi:
+- putusan: PUTUSAN Nomor 87/PUU-XVI/2018
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/142/PULB_MK_87PUUXVI2018_2018%20(1).PDF
+  amar: Menyatakan frasa “dan/atau pidana umum” dalam Pasal 87 ayat (4) huruf b Undang-Undang
+    Nomor 5 Tahun 2014 tentang Aparatur Sipil Negara (Lembaran Negara Republik Indonesia
+    Tahun 2014 Nomor 6, Tambahan Lembaran Negara Republik Indonesia Nomor 5494) bertentangan
+    dengan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai
+    kekuatan hukum mengikat, sehingga Pasal 87 ayat (4) huruf b Undang-Undang Nomor
+    5 Tahun 2014 tentang Aparatur Sipil Negara menjadi berbunyi, “dihukum penjara
+    atau kurungan berdasarkan putusan pengadilan yang telah memiliki kekuatan hukum
+    tetap karena melakukan tindak pidana kejahatan jabatan atau tindak pidana kejahatan
+    yang ada hubungannya dengan jabatan”;

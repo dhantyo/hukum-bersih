@@ -11,8 +11,8 @@ tanggal_penetapan: '2014-03-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu7-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38584/uu-no-7-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/27842/UU%20Nomor%2007%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,56 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2014_2014-03-11.txt
   pasal_count: 122
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1696cdb474d7a433c72f9ddc309a3d65cfa2d7588a80e024e502dcacf61d0200
 pdf_sha256: 5016d8119adbdda9f3dcf0d32517b0d71560b8c252fd87cb7ca6c031e3e06606
+tanggal_pengundangan: '2014-03-11'
+tanggal_berlaku: '2014-03-11'
+lembaran_negara: 'LN.2014/No. 45, TLN No. 5512, LL SETNEG: 56 HLM'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu7-2014bt.pdf
+bpk:
+  id: 38584
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27842/UU%20Nomor%2007%20Tahun%202014.pdf
+    bpk_file_id: 27842
+    filename: UU Nomor 07 Tahun 2014.pdf
+    sha256: 1696cdb474d7a433c72f9ddc309a3d65cfa2d7588a80e024e502dcacf61d0200
+    bytes: 415320
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_11_1965
+      citation: UU No. 11 Tahun 1965
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang No. 5 tahun
+        1962 tentang Perubahan Undang-Undang No. 2 Prp Tahun 1960 tentang Pergudangan
+        (Lembaran-Negara Tahun 1962 No. 31) menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/50185/uu-no-11-tahun-1965
+      note: null
+    - id: uu_10_1961
+      citation: UU No. 10 Tahun 1961
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        1961 Tentang Barang Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/51231/uu-no-10-tahun-1961
+      note: null
+uji_materi: null

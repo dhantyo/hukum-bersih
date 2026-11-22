@@ -11,8 +11,8 @@ tanggal_penetapan: '2014-09-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu20-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38663/uu-no-20-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/27975/UU%20Nomor%2020%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2014_2014-09-17.txt
   pasal_count: 76
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a3415b9cfde9e58c131f9a7248507c914270a9b3289c00b64ac067fa6fb09436
 pdf_sha256: 9193525d01a1a456c9fe5a2ed9de9cd8a585941e5323596c40470a715ac42524
+tanggal_pengundangan: '2014-09-17'
+tanggal_berlaku: '2014-09-17'
+lembaran_negara: 'LN.2014/No. 216, TLN No. 5584, LL SETNEG: 28 HLM'
+subjek: ILMU PENGETAHUAN DAN TEKNOLOGI - LINGKUNGAN HIDUP
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu20-2014bt.pdf
+bpk:
+  id: 38663
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27975/UU%20Nomor%2020%20Tahun%202014.pdf
+    bpk_file_id: 27975
+    filename: UU Nomor 20 Tahun 2014.pdf
+    sha256: a3415b9cfde9e58c131f9a7248507c914270a9b3289c00b64ac067fa6fb09436
+    bytes: 294631
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

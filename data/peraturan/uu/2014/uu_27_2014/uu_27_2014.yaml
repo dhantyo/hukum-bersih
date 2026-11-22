@@ -12,8 +12,8 @@ tanggal_penetapan: '2014-10-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-27-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu27-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37687/uu-no-27-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/43145/UU%20Nomor%2027%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by:
@@ -30,4 +30,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_27_2014_2014-10-14.txt
   pasal_count: 33
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 73d00dea074e97f9a8c008f4d8c9a250ce0f26673d334225b4be88e280a7cf23
 pdf_sha256: 51dfa57698f15471420ddfe7d5b269b55894e3d642cc1b5cb5c53e9e1f6f0ff6
+tanggal_pengundangan: '2014-10-14'
+tanggal_berlaku: '2014-10-14'
+lembaran_negara: 'LL SETNEG : 32 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-27-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu27-2014bt.pdf
+bpk:
+  id: 37687
+  files:
+  - url: https://peraturan.bpk.go.id/Download/43145/UU%20Nomor%2027%20Tahun%202014.pdf
+    bpk_file_id: 43145
+    filename: UU Nomor 27 Tahun 2014.pdf
+    sha256: 73d00dea074e97f9a8c008f4d8c9a250ce0f26673d334225b4be88e280a7cf23
+    bytes: 432567
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_3_2015
+      citation: UU No. 3 Tahun 2015
+      tentang: Perubahan Atas Undang-Undang Nomor 27 Tahun 2014 tentang Anggaran Pendapatan
+        dan Belanja Negara Tahun Anggaran 2015
+      url: https://peraturan.bpk.go.id/Details/37679/uu-no-3-tahun-2015
+      note: null
+uji_materi: null

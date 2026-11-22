@@ -13,8 +13,8 @@ tanggal_penetapan: '2014-06-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu12-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38604/uu-no-12-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/27873/UU%20Nomor%2012%20Tahun%202014.pdf
 relationships:
   amends:
   - id: uu_23_2013
@@ -53,4 +53,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2014_2014-06-30.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 19745746d33bbb8d40f2849fae4c8546e38ff149d76c81b13e085562a77042f0
 pdf_sha256: 897e302f31cdd2ffca293baa797f8208e21f3b6fbf6270437e844681a221c4c9
+tanggal_pengundangan: '2014-07-01'
+tanggal_berlaku: '2014-07-01'
+lembaran_negara: 'LN.2014/No. 142, TLN No. 5547, LL SETNEG: 24 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu12-2014bt.pdf
+bpk:
+  id: 38604
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27873/UU%20Nomor%2012%20Tahun%202014.pdf
+    bpk_file_id: 27873
+    filename: UU Nomor 12 Tahun 2014.pdf
+    sha256: 19745746d33bbb8d40f2849fae4c8546e38ff149d76c81b13e085562a77042f0
+    bytes: 414179
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_23_2013
+      citation: UU No. 23 Tahun 2013
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2014
+      url: https://peraturan.bpk.go.id/Details/38979/uu-no-23-tahun-2013
+      note: null
+uji_materi: null

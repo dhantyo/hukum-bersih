@@ -12,8 +12,8 @@ tanggal_penetapan: '2014-07-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu16-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38628/uu-no-16-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/27901/UU%20Nomor%2016%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2014_2014-07-23.txt
   pasal_count: 22
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5901d2824516fd08ac8f072ae522081be6a276b9fe1ec87b04ed5435d8eb968e
 pdf_sha256: 00e62e72d20989d3b34f508739c801a4bfe7ee0ed41ec12034e631155141931e
+tanggal_pengundangan: '2014-07-23'
+tanggal_berlaku: '2014-07-23'
+lembaran_negara: 'LN.2014/No. 173, TLN No. 5563, LL SETNEG: 15 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu16-2014bt.pdf
+bpk:
+  id: 38628
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27901/UU%20Nomor%2016%20Tahun%202014.pdf
+    bpk_file_id: 27901
+    filename: UU Nomor 16 Tahun 2014.pdf
+    sha256: 5901d2824516fd08ac8f072ae522081be6a276b9fe1ec87b04ed5435d8eb968e
+    bytes: 359841
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

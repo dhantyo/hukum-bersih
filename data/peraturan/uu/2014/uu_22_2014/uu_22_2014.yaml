@@ -6,13 +6,13 @@ year: 2014
 title: Undang-Undang Nomor 22 Tahun 2014 tentang Pemilihan Gubernur, Bupati Dan Walikota
 tentang: PEMILIHAN GUBERNUR, BUPATI DAN WALIKOTA
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '2014-09-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-22-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu22-2014bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37675/uu-no-22-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/26775/UU%20Nomor%2022%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,33 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_2014_2014-09-30.txt
   pasal_count: 72
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 15d8fbc45cd31c0a93ad16f718364ba47a6c5b4b19f4cf832abe17d3b9c52096
 pdf_sha256: 2b874a927eb89a98b06bb46dadb1f8e904dbeb0a053caf23cbc5e7fea54d92b3
+tanggal_pengundangan: '2014-10-02'
+tanggal_berlaku: '2014-10-02'
+lembaran_negara: 'LN.2016/NO.243, TLN NO.5586, LL SETNEG : 47 HLM'
+subjek: PARTAI POLITIK DAN PEMILU - PEMILIHAN UMUM DAERAH, DPRD, PEMILIHAN KEPALA
+  DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-22-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu22-2014bt.pdf
+bpk:
+  id: 37675
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26775/UU%20Nomor%2022%20Tahun%202014.pdf
+    bpk_file_id: 26775
+    filename: UU Nomor 22 Tahun 2014.pdf
+    sha256: 15d8fbc45cd31c0a93ad16f718364ba47a6c5b4b19f4cf832abe17d3b9c52096
+    bytes: 359572
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_1_2015
+      citation: UU No. 1 Tahun 2015
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        2014 Tentang Pemilihan Gubernur, Bupati, Dan Walikota Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/37341/uu-no-1-tahun-2015
+      note: null
+uji_materi: null

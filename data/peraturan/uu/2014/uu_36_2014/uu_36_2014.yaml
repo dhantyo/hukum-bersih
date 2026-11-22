@@ -6,19 +6,18 @@ year: 2014
 title: Undang-Undang Nomor 36 Tahun 2014 tentang Tenaga Kesehatan
 tentang: TENAGA KESEHATAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 17 Tahun 2023 Tentang Kesehatan'
+status: tidak_berlaku
 tanggal_penetapan: '2014-10-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-36-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uu36-2014pjl.pdf
+source_url: https://peraturan.bpk.go.id/Details/38770/uu-no-36-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/28099/UU%20Nomor%2036%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_17_2023
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -29,4 +28,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_36_2014_2014-10-17.txt
   pasal_count: 96
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: fd9cfa00fad7986bdf844395a8d1bd355a47bf8e8200f272bab041bfe04babdf
+  ocr: true
 pdf_sha256: 92540c45e7f0f0b7e7009ba9c4058952f2b10a6060e6decec7efa89d656817e7
+tanggal_pengundangan: '2014-10-17'
+tanggal_berlaku: '2014-10-17'
+lembaran_negara: 'LN.2014/No. 298, TLN No. 5607, LL SETNEG: 53 HLM'
+subjek: KESEHATAN - JABATAN / PROFESI / KEAHLIAN / SERTIFIKASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-36-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uu36-2014pjl.pdf
+bpk:
+  id: 38770
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28099/UU%20Nomor%2036%20Tahun%202014.pdf
+    bpk_file_id: 28099
+    filename: UU Nomor 36 Tahun 2014.pdf
+    sha256: fd9cfa00fad7986bdf844395a8d1bd355a47bf8e8200f272bab041bfe04babdf
+    bytes: 2892842
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_17_2023
+      citation: UU No. 17 Tahun 2023
+      tentang: Kesehatan
+      url: https://peraturan.bpk.go.id/Details/258028/uu-no-17-tahun-2023
+      note: null
+uji_materi:
+- putusan: 82/PUU-XIII/2015
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/17/82_PUU-XIII_2015.pdf
+  amar: Pasal 11 ayat (1) huruf a, Pasal 11 ayat (2), Pasal 90, Pasal 94 Undang-Undang
+    Nomor 36 Tahun 2014 tentang Tenaga Kesehatan bertentangan dengan UUD NRI Tahun
+    1945 dan tidak mempunyai kekuatan hukum mengikat.
