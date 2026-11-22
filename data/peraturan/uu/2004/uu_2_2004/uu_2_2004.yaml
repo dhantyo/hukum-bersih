@@ -12,8 +12,8 @@ tanggal_penetapan: '2004-01-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu2-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40452/uu-no-2-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30131/UU%20Nomor%202%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,3 +30,66 @@ versions:
   text: uu_2_2004_2004-01-14.txt
   pasal_count: 126
 pdf_sha256: ffc8d30b213306bfe3b2ed6366add708038c74335fb43c6ea68ccdbf900d4b25
+tanggal_pengundangan: '2004-01-14'
+tanggal_berlaku: '2005-01-14'
+lembaran_negara: 'LN 2004/NO.6. TLN No.4356, LL SETNEH : 72 HLM'
+subjek: KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu2-2004.pdf
+bpk:
+  id: 40452
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30131/UU%20Nomor%202%20Tahun%202004.pdf
+    bpk_file_id: 30131
+    filename: UU Nomor 2 Tahun 2004.pdf
+    sha256: f4668a56e9e027fde5c363e8626cc957d866ff30ea445a5c80f2d82d29a6c605
+    bytes: 393405
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_12_1964
+      citation: UU No. 12 Tahun 1964
+      tentang: Pemutusan Hubungan Kerja Di Perusahaan Swasta
+      url: https://peraturan.bpk.go.id/Details/50300/uu-no-12-tahun-1964
+      note: null
+    - id: uu_22_1957
+      citation: UU No. 22 Tahun 1957
+      tentang: Penyelesaian Perselisihan Perburuhan
+      url: https://peraturan.bpk.go.id/Details/52441/uu-no-22-tahun-1957
+      note: null
+uji_materi:
+- putusan: 132/PUU-XXIII/2025
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/212/132_PUU-XXIII_2025.pdf
+  amar: Pasal 82 Undang-Undang Nomor 2 Tahun 2004 tentang Penyelesaian Perselisihan
+    Hubungan Industrial (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 6, Tambahan
+    Lembaran Negara Republik Indonesia Nomor 4356) sebagaimana telah dimaknai terakhir
+    dalam Putusan Mahkamah Konstitusi Nomor 94/PUU-XXI/2023 bertentangan dengan Undang
+    Undang Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan
+    hukum mengikat secara bersyarat sepanjang tidak dimaknai “Gugatan oleh pekerja/buruh
+    atas pemutusan hubungan kerja dapat diajukan hanya dalam tenggang waktu 1 (satu)
+    tahun sejak tidak tercapainya kesepakatan perundingan mediasi atau konsiliasi.”
+- putusan: 49/PUU-XIV/2016
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/8/49_PUU-XIV_2016.pdf
+  amar: Pasal 67 ayat (2) Undang-Undang Nomor 2 Tahun 2004 tentang Penyelesaian Perselisihan
+    Hubungan Industrial bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai
+    kekuatan hukum mengikat secara bersyarat sepanjang tidak dimaknai, "Masa tugas
+    Hakim Ad-Hoc adalah untuk jangka waktu 5 (lima) tahun dan dapat diangkat kembali
+    setiap 5 (lima) tahun yang diusulkan oleh Ketua Mahkamah Agung dengan terlebih
+    dahulu memperoleh persetujuan dari lembaga pengusul yang prosesnya sesuai dengan
+    Undang-Undang yang berlaku."
+- putusan: 68/PUU-XIII/2015
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/53/68_PUU-XIII_2015.pdf
+  amar: a. Frasa "anjuran tertulis" dalam Pasal 13 ayat (2) huruf a Undang-Undang
+    Nomor 2 Tahun 2004 tentang Penyelesaian Perselisihan Hubungan Industrial bertentangan
+    dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat sepanjang
+    tidak dimaknai "dalam hal tidak tercapai kesepakatan penyelesaian perselisihan
+    hubungan industrial melalui mediasi, maka mediator mengeluarkan anjuran tertulis
+    dalam bentuk risalah penyelesaian melalui mediasi." b. Frasa "anjuran tertulis"
+    dalam Pasal 23 ayat (2) huruf a Undang-Undang Nomor 2 Tahun 2004 tentang Penyelesaian
+    Perselisihan Hubungan Industrial bertentangan dengan UUD NRI Tahun 1945 dan tidak
+    mempunyai kekuatan hukum mengikat sepanjang tidak dimaknai "dalam hal tidak tercapai
+    kesepakatan penyelesaian perselisihan hubungan industrial melalui konsiliasi,
+    maka konsiliator mengeluarkan anjuran tertulis dalam bentuk risalah penyelesaian
+    melalui konsiliasi."
+reparse_error: 'v12: new Penjelasan has 0 words, stored 3271'

@@ -15,8 +15,8 @@ tanggal_penetapan: '2003-02-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0112003.pdf
+source_url: https://peraturan.bpk.go.id/Details/43011/uu-no-11-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/31126/UU%20Nomor%2011%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,4 +32,42 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_2003_2003-02-25.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e33fd36f452c141a19e2fa6b9df61eddcb23ede9950d0fa1b3389cbb898e0654
 pdf_sha256: e33fd36f452c141a19e2fa6b9df61eddcb23ede9950d0fa1b3389cbb898e0654
+tanggal_pengundangan: '2003-02-25'
+tanggal_berlaku: '2003-02-25'
+lembaran_negara: 'LN.2003/NO.31, TLN NO.4274, LL SETNEG : 4 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0112003.pdf
+bpk:
+  id: 43011
+  files:
+  - url: https://peraturan.bpk.go.id/Download/31126/UU%20Nomor%2011%20Tahun%202003.pdf
+    bpk_file_id: 31126
+    filename: UU Nomor 11 Tahun 2003.pdf
+    sha256: e33fd36f452c141a19e2fa6b9df61eddcb23ede9950d0fa1b3389cbb898e0654
+    bytes: 43786
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_34_2008
+      citation: UU No. 34 Tahun 2008
+      tentang: Perubahan Ketiga atas Undang-Undang Nomor 53 Tahun 1999 tentang Pembentukan
+        Kabupaten Pelalawan, Kabupaten Rokan Hulu, Kabupaten Rokan Hilir, Kabupaten
+        Siak, Kabupaten Karimun, Kabupaten Natuna, Kabupaten Kuantan Singingi, dan
+        Kota Batam
+      url: https://peraturan.bpk.go.id/Details/39693/uu-no-34-tahun-2008
+      note: null
+    Mengubah:
+    - id: uu_53_1999
+      citation: UU No. 53 Tahun 1999
+      tentang: Pembentukan Kabupaten Pelalawan, Kabupaten Rokan Hulu, Kabupaten Rokan
+        Hilir, Kabupaten Siak, Kabupaten Karimun, Kabupaten Natuna, Kabupaten Kuantan
+        Singingi, dan Kota Batam
+      url: https://peraturan.bpk.go.id/Details/45399/uu-no-53-tahun-1999
+      note: null
+uji_materi: null

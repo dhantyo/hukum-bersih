@@ -6,21 +6,19 @@ year: 2004
 title: Undang-Undang Nomor 4 Tahun 2004 tentang Kekuasaan Kehakiman
 tentang: KEKUASAAN KEHAKIMAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 48 Tahun 2009 Tentang Kekuasaan
-  Kehakiman'
+status: tidak_berlaku
 tanggal_penetapan: '2004-01-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu4-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40464/uu-no-4-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/306788/UU%20Nomor%204%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_14_1970
-  revoked_by:
-  - uu_48_2009
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -31,4 +29,44 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2004_2004-01-15.txt
   pasal_count: 49
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 83cf1a8ef8fa3a134cdb81abfa13b7f813c69b77f2736fd7e1790893d2f04589
 pdf_sha256: 75920d5e70437bee3fda9fba4ac1c1a17c1a68c4e754a4198410aa681961f9c4
+tanggal_pengundangan: '2004-01-15'
+tanggal_berlaku: '2004-01-15'
+lembaran_negara: 'LN 2004/ No.8, TLN No.4358, www.dpr.go.id/jdih : 12 hlm.'
+subjek: HUKUM PIDANA, PERDATA, DAN DAGANG - PELIMPAHAN KEWENANGAN / PENUGASAN PEJABAT
+  NEGARA / PENUGASAN BUMN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu4-2004.pdf
+bpk:
+  id: 40464
+  files:
+  - url: https://peraturan.bpk.go.id/Download/306788/UU%20Nomor%204%20Tahun%202004.pdf
+    bpk_file_id: 306788
+    filename: UU Nomor 4 Tahun 2004.pdf
+    sha256: 83cf1a8ef8fa3a134cdb81abfa13b7f813c69b77f2736fd7e1790893d2f04589
+    bytes: 110440
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_48_2009
+      citation: UU No. 48 Tahun 2009
+      tentang: Kekuasaan Kehakiman
+      url: https://peraturan.bpk.go.id/Details/38793/uu-no-48-tahun-2009
+      note: null
+    Mencabut:
+    - id: uu_35_1999
+      citation: UU No. 35 Tahun 1999
+      tentang: Perubahan atas Undang-Undang Nomor 14 Tahun 1970 tentang Ketentuan-Ketentuan
+        Pokok Kekuasaan Kehakiman
+      url: https://peraturan.bpk.go.id/Details/45356/uu-no-35-tahun-1999
+      note: null
+    - id: uu_14_1970
+      citation: UU No. 14 Tahun 1970
+      tentang: Ketentuan-Ketentuan Pokok Kekuasaan Kehakiman
+      url: https://peraturan.bpk.go.id/Details/47929/uu-no-14-tahun-1970
+      note: null
+uji_materi: null

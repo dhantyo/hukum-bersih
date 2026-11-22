@@ -13,8 +13,8 @@ tanggal_penetapan: '2003-02-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0092003.pdf
+source_url: https://peraturan.bpk.go.id/Details/43009/uu-no-9-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/31124/UU%20Nomor%209%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2003_2003-02-25.txt
   pasal_count: 20
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a768d24ad8dfcdbc487ef8db3485244374dc9660e849287882bdccd3034a84a5
 pdf_sha256: a768d24ad8dfcdbc487ef8db3485244374dc9660e849287882bdccd3034a84a5
+tanggal_pengundangan: '2003-02-25'
+tanggal_berlaku: '2003-02-25'
+lembaran_negara: 'LN.2003/NO.29, TLN NO.4272, LL SETNEG : 12 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0092003.pdf
+bpk:
+  id: 43009
+  files:
+  - url: https://peraturan.bpk.go.id/Download/31124/UU%20Nomor%209%20Tahun%202003.pdf
+    bpk_file_id: 31124
+    filename: UU Nomor 9 Tahun 2003.pdf
+    sha256: a768d24ad8dfcdbc487ef8db3485244374dc9660e849287882bdccd3034a84a5
+    bytes: 70955
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

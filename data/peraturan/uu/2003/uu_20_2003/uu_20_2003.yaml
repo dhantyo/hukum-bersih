@@ -11,8 +11,8 @@ tanggal_penetapan: '2003-07-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/uu20-2003.pdf
+source_url: https://peraturan.bpk.go.id/Details/43920/uu-no-20-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/32160/UU%20Nomor%2020%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,68 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2003_2003-07-08.txt
   pasal_count: 77
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6f83d227e9316109c8c99c2fcd107b5d6d4338f36a414dfa55dcb5054c806b09
 pdf_sha256: 78a12175a94be16b5fdef9786ef1c41cca2ccf7cb756f9a63d4acca8e89929c9
+tanggal_pengundangan: '2003-07-08'
+tanggal_berlaku: '2003-07-08'
+lembaran_negara: 'LN.2003/NO.78, TLN NO.4301, LL SETNEG : 37 HLM'
+subjek: PENDIDIKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/uu20-2003.pdf
+bpk:
+  id: 43920
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32160/UU%20Nomor%2020%20Tahun%202003.pdf
+    bpk_file_id: 32160
+    filename: UU Nomor 20 Tahun 2003.pdf
+    sha256: 6f83d227e9316109c8c99c2fcd107b5d6d4338f36a414dfa55dcb5054c806b09
+    bytes: 146955
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 69 Undang-Undang Nomor 20 Tahun 2003
+    Mencabut:
+    - id: uu_2_1989
+      citation: UU No. 2 Tahun 1989
+      tentang: Sistem Pendidikan Nasional
+      url: https://peraturan.bpk.go.id/Details/46794/uu-no-2-tahun-1989
+      note: null
+uji_materi:
+- putusan: 3/PUU-XXII/2024
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/170/Putusan%20Nomor%203-PUU-XXII-2024.pdf
+  amar: Pasal 34 ayat (2) Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan
+    Nasional (Lembaran Negara Republik Indonesia Tahun 2003 Nomor 78, Tambahan Lembaran
+    Negara Republik Indonesia Nomor 4301) bertentangan dengan Undang-Undang Dasar
+    Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat
+    secara bersyarat sepanjang tidak dimaknai “Pemerintah dan Pemerintah Daerah menjamin
+    terselenggaranya wajib belajar minimal pada jenjang pendidikan dasar tanpa memungut
+    biaya, baik untuk satuan pendidikan dasar yang diselenggarakan oleh pemerintah
+    maupun satuan pendidikan dasar yang diselenggarakan oleh masyarakat”
+- putusan: 11-14-21-126 dan 136/PUU-VII/2009
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/67/PUTUSAN%20UU%20BHP_baca_31%20Maret%202010.pdf
+  amar: a. Pasal 6 ayat (2) Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan
+    Nasional sepanjang frasa, “... bertanggung jawab” adalah konstitusional sepanjang
+    dimaknai “... ikut bertanggung jawab”, sehingga pasal tersebut selengkapnya menjadi,
+    “Setiap warga negara ikut bertanggung jawab terhadap keberlangsungan penyelenggaraan
+    pendidikan”; b. Pasal 12 ayat (1) huruf c Undang-Undang Nomor 20 Tahun 2003 tentang
+    Sistem Pendidikan Nasional sepanjang frasa, “...yang orang tuanya tidak mampu
+    membiayai pendidikannya”, bertentangan dengan UUD NRI Tahun 1945, sehingga Pasal
+    12 ayat (1) huruf c Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan
+    Nasional menjadi, “Mendapatkan beasiswa bagi yang berprestasi”; c. Pasal 53 ayat
+    (1) Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional konstitusional
+    sepanjang frasa “badan hukum pendidikan” dimaknai sebagai sebutan fungsi penyelenggara
+    pendidikan dan bukan sebagai bentuk badan hukum tertentu; d. Penjelasan Pasal
+    53 ayat (1) Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional
+    bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.
+- putusan: 011/PUU-III/2005
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/130/Putusan011PUUIII2005tgl191005ttgSisdiknas.pdf
+  amar: Penjelasan Pasal 49 ayat (1) Undang-undang Republik Indonesia Nomor 20 Tahun
+    2003 tentang Sistem Pendidikan Nasional bertentangan dengan UUD NRI Tahun 1945
+    dan tidak mempunyai kekuatan hukum mengikat.

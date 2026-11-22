@@ -11,8 +11,8 @@ tanggal_penetapan: '2004-03-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu7-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40497/uu-no-7-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30178/UU%20Nomor%207%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2004_2004-03-18.txt
   pasal_count: 100
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2ffd37d19f8622ce1479b13b1ddc1afaa92499d7bdfb91580eac331d0a1e4245
 pdf_sha256: 2ffd37d19f8622ce1479b13b1ddc1afaa92499d7bdfb91580eac331d0a1e4245
+tanggal_pengundangan: '2004-03-18'
+tanggal_berlaku: '2004-03-18'
+lembaran_negara: 'LN. 2004/ No. 32, TLN NO. 4377, LL SETNEG : 55 HLM'
+subjek: LINGKUNGAN HIDUP
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu7-2004.pdf
+bpk:
+  id: 40497
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30178/UU%20Nomor%207%20Tahun%202004.pdf
+    bpk_file_id: 30178
+    filename: UU Nomor 7 Tahun 2004.pdf
+    sha256: 2ffd37d19f8622ce1479b13b1ddc1afaa92499d7bdfb91580eac331d0a1e4245
+    bytes: 437452
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_11_1974
+      citation: UU No. 11 Tahun 1974
+      tentang: Pengairan
+      url: https://peraturan.bpk.go.id/Details/47422/uu-no-11-tahun-1974
+      note: UU Nomor 11 Tahun 1974 dinyatakan berlaku kembali sesuai Putusan MK Nomor
+        85/PUU-XI/2013
+uji_materi:
+- putusan: 85/PUU-XI/2013
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/165/Putusan%20MK%20No.%2085-PUU%20XI-2013_%20UU%207-2004.pdf
+  amar: 1. Undang-Undang Nomor 7 Tahun 2004 tentang Sumber Daya bertentangan dengan
+    Undang-Undang Dasar Negara Republik Indonesia Tahun 1945; 2.Undang-Undang Nomor
+    7 Tahun 2004 tentang Sumber Daya tidak memiliki kekuatan hukum mengikat; 3. Undang-Undang
+    Nomor 11 Tahun 1974 tentang Pengairan berlaku kembali

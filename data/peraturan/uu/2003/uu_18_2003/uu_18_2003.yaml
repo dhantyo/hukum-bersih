@@ -11,8 +11,8 @@ tanggal_penetapan: '2003-04-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0182003.pdf
+source_url: https://peraturan.bpk.go.id/Details/43018/uu-no-18-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/31133/UU%20Nomor%2018%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,52 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2003_2003-04-05.txt
   pasal_count: 36
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7ffb2b03159b714d3bff7ada2234d909d7af2c1e74ee7304ad346b8b44c0b9f8
 pdf_sha256: 7ffb2b03159b714d3bff7ada2234d909d7af2c1e74ee7304ad346b8b44c0b9f8
+tanggal_pengundangan: '2003-04-05'
+tanggal_berlaku: '2003-04-05'
+lembaran_negara: 'LN.2003/NO.49, TLN NO.4288, LL SETNEG : 16 HLM'
+subjek: JABATAN / PROFESI / KEAHLIAN / SERTIFIKASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0182003.pdf
+bpk:
+  id: 43018
+  files:
+  - url: https://peraturan.bpk.go.id/Download/31133/UU%20Nomor%2018%20Tahun%202003.pdf
+    bpk_file_id: 31133
+    filename: UU Nomor 18 Tahun 2003.pdf
+    sha256: 7ffb2b03159b714d3bff7ada2234d909d7af2c1e74ee7304ad346b8b44c0b9f8
+    bytes: 80185
+    archive_url: null
+  status_peraturan: null
+uji_materi:
+- putusan: 126/PUU-XXIV/2026
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/244/putusan_mkri_126%3APUU-XXIV%3A2026.pdf
+  amar: Menyatakan Undang-Undang Nomor 18 Tahun 2003 tentang Advokat (Lembaran Negara
+    Tahun 2003, Nomor 49, Tambahan Lembaran Negara Nomor 4288) bertentangan dengan
+    Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan
+    hukum mengikat secara bersyarat sepanjang tidak dimaknai “apabila dalam waktu
+    paling lama 2 (dua) tahun sejak putusan a quo diucapkan tidak dilakukan perubahan/penggantian
+    terhadap Undang-Undang Nomor 18 Tahun 2003 tentang Advokat dengan antara lain
+    berpedoman pada putusan-putusan Mahkamah Konstitusi”.
+- putusan: 150/PUU-XXII/2024
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/173/150-PUU-XXII-2024.pdf
+  amar: 'Pasal 3 ayat (1) huruf c dan Pasal 20 ayat (2) Undang-Undang Nomor 18 Tahun
+    2003 tentang Advokat (Lembaran Negara Republik Indonesia Tahun 2003 Nomor 49,
+    Tambahan Lembaran Negara Republik Indonesia Nomor 4288) bertentangan dengan Undang-Undang
+    Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum
+    mengikat secara bersyarat sepanjang tidak dimaknai: "tidak diberlakukan bagi dosen
+    Pegawai Negeri Sipil (PNS) untuk pengabdian kepada masyarakat dalam rangka Tri
+    Dharma Perguruan Tinggi memberikan bantuan hukum dengan cuma-cuma atau tanpa memungut
+    biaya (prodeo/pro bono)"; 2.'
+- putusan: 112/PUU-XII/2014 dan 36/PUU-XIII/2015
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/63/Nomor%2036_PUU-XIII_2015.pdf
+  amar: Pasal 4 ayat (1) sepanjang frasa "di sidang terbuka Pengadilan Tinggi" Undang-Undang
+    Nomor 18 Tahun 2003 tentang Advokat bertentangan dengan UUD NRI Tahun 1945 dan
+    tidak mempunyai kekuatan hukum mengikat sepanjang tidak dimaknai bahwa "Pengadilan
+    Tinggi atas perintah Undang-Undang wajib mengambil sumpah bagi para advokat sebelum
+    menjalankan profesinya tanpa mengaitkan dengan keanggotaan Organisasi Advokat
+    yang secara de facto ada yaitu Peradi dan KAI"

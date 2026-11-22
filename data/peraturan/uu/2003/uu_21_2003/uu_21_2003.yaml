@@ -15,8 +15,8 @@ tanggal_penetapan: '2003-07-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0212003.pdf
+source_url: https://peraturan.bpk.go.id/Details/43922/uu-no-21-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/32162/UU%20Nomor%2021%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,4 +32,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2003_2003-07-25.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7937254a885b8172c6620fea8f48ed799b32cda2393dcceaf0324f12fedbb0b7
 pdf_sha256: 7937254a885b8172c6620fea8f48ed799b32cda2393dcceaf0324f12fedbb0b7
+tanggal_pengundangan: '2003-07-25'
+tanggal_berlaku: '2003-07-25'
+lembaran_negara: LN.2003/NO.91, TLN NO.4309, LL SETNEG :2 HLM
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0212003.pdf
+bpk:
+  id: 43922
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32162/UU%20Nomor%2021%20Tahun%202003.pdf
+    bpk_file_id: 32162
+    filename: UU Nomor 21 Tahun 2003.pdf
+    sha256: 7937254a885b8172c6620fea8f48ed799b32cda2393dcceaf0324f12fedbb0b7
+    bytes: 89848
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

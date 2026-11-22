@@ -13,8 +13,8 @@ tanggal_penetapan: '2003-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-38-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0382003.pdf
+source_url: https://peraturan.bpk.go.id/Details/44168/uu-no-38-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/32429/UU%20Nomor%2038%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_38_2003_2003-12-18.txt
   pasal_count: 25
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9b8540b629878ad6af9be5ff0532468e17adfe461a52e479cd8602e63dc3cfcc
 pdf_sha256: 9b8540b629878ad6af9be5ff0532468e17adfe461a52e479cd8602e63dc3cfcc
+tanggal_pengundangan: '2003-12-18'
+tanggal_berlaku: '2003-12-18'
+lembaran_negara: 'LN. 2003/ No. 153, TLN NO. 4348, LL SETNEG : 14 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-38-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0382003.pdf
+bpk:
+  id: 44168
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32429/UU%20Nomor%2038%20Tahun%202003.pdf
+    bpk_file_id: 32429
+    filename: UU Nomor 38 Tahun 2003.pdf
+    sha256: 9b8540b629878ad6af9be5ff0532468e17adfe461a52e479cd8602e63dc3cfcc
+    bytes: 74305
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -12,8 +12,8 @@ tanggal_penetapan: '2004-03-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu8-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40498/uu-no-8-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30179/UU%20Nomor%208%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,5 +28,32 @@ versions:
   date: '2004-03-29'
   date_basis: tanggal_penetapan
   text: uu_8_2004_2004-03-29.txt
-  pasal_count: 3
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: cc7c77c62b288590fc765fedefe35e9b886b9293b3cfe166898ce0abd9676e37
 pdf_sha256: cc7c77c62b288590fc765fedefe35e9b886b9293b3cfe166898ce0abd9676e37
+tanggal_pengundangan: '2004-03-29'
+tanggal_berlaku: '2004-03-29'
+lembaran_negara: 'LN. 2004/ No. 34, TLN NO. 4379, LL SETNEG : 15 HLM'
+subjek: HUKUM PIDANA, PERDATA, DAN DAGANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu8-2004.pdf
+bpk:
+  id: 40498
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30179/UU%20Nomor%208%20Tahun%202004.pdf
+    bpk_file_id: 30179
+    filename: UU Nomor 8 Tahun 2004.pdf
+    sha256: cc7c77c62b288590fc765fedefe35e9b886b9293b3cfe166898ce0abd9676e37
+    bytes: 106006
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_2_1986
+      citation: UU No. 2 Tahun 1986
+      tentang: Peradilan Umum
+      url: https://peraturan.bpk.go.id/Details/46874/uu-no-2-tahun-1986
+      note: null
+uji_materi: null

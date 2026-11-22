@@ -9,22 +9,19 @@ title: Undang-Undang Nomor 22 Tahun 2003 tentang Susunan Dan Kedudukan Majelis P
 tentang: SUSUNAN DAN KEDUDUKAN MAJELIS PERMUSYAWARATAN RAKYAT, DEWAN PERWAKILAN RAKYAT,
   DEWAN PERWAKILAN DAERAH, DAN DEWAN PERWAKILAN RAKYAT DAERAH
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 27 Tahun 2009 Tentang Majelis
-  Permusyawaratan Rakyat, Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan
-  Perwakilan Rakyat Daerah'
+status: tidak_berlaku
 tanggal_penetapan: '2003-07-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-22-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0222003.pdf
+source_url: https://peraturan.bpk.go.id/Details/43927/uu-no-22-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/32167/UU%20Nomor%2022%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_4_1999
-  revoked_by:
-  - uu_27_2009
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -35,4 +32,39 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_2003_2003-07-31.txt
   pasal_count: 114
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2eab7a8daa75dd7b703e3ac05b98bc71bf4181888f18312436446c574f261cf0
 pdf_sha256: 2eab7a8daa75dd7b703e3ac05b98bc71bf4181888f18312436446c574f261cf0
+tanggal_pengundangan: '2003-07-31'
+tanggal_berlaku: '2003-07-31'
+lembaran_negara: 'LN.2003/NO.92, LL SETNEG : 60 HLM'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-22-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0222003.pdf
+bpk:
+  id: 43927
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32167/UU%20Nomor%2022%20Tahun%202003.pdf
+    bpk_file_id: 32167
+    filename: UU Nomor 22 Tahun 2003.pdf
+    sha256: 2eab7a8daa75dd7b703e3ac05b98bc71bf4181888f18312436446c574f261cf0
+    bytes: 171393
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_27_2009
+      citation: UU No. 27 Tahun 2009
+      tentang: Majelis Permusyawaratan Rakyat, Dewan Perwakilan Rakyat,Dewan Perwakilan
+        Daerah, dan Dewan Perwakilan Rakyat Daerah
+      url: https://peraturan.bpk.go.id/Details/38758/uu-no-27-tahun-2009
+      note: null
+    Mencabut:
+    - id: uu_4_1999
+      citation: UU No. 4 Tahun 1999
+      tentang: Susunan dan Kedudukan Majelis Permusyawaratan Rakyat, Dewan Perwakilan
+        Rakyat, dan Dewan Perwakilan Rakyat Daerah
+      url: https://peraturan.bpk.go.id/Details/45276/uu-no-4-tahun-1999
+      note: null
+uji_materi: null

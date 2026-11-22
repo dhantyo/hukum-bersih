@@ -6,19 +6,18 @@ year: 2004
 title: Undang-Undang Nomor 18 Tahun 2004 tentang Perkebunan
 tentang: PERKEBUNAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 39 Tahun 2014 Tentang Perkebunan'
+status: tidak_berlaku
 tanggal_penetapan: '2004-08-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu18-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40516/uu-no-18-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30206/UU%20Nomor%2018%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_39_2014
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -29,4 +28,36 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2004_2004-08-11.txt
   pasal_count: 56
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: aa7a6751368646eec538ff50fb48c8b01b1fe8cd6b32d5dfb3ec8c21b563dc34
 pdf_sha256: aa7a6751368646eec538ff50fb48c8b01b1fe8cd6b32d5dfb3ec8c21b563dc34
+tanggal_pengundangan: '2004-08-11'
+tanggal_berlaku: '2004-08-11'
+lembaran_negara: 'LN. 2004/ No. 85, TLN NO. 4411, LL SETNEG : 28 HLM'
+subjek: KEHUTANAN DAN PERKEBUNAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu18-2004.pdf
+bpk:
+  id: 40516
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30206/UU%20Nomor%2018%20Tahun%202004.pdf
+    bpk_file_id: 30206
+    filename: UU Nomor 18 Tahun 2004.pdf
+    sha256: aa7a6751368646eec538ff50fb48c8b01b1fe8cd6b32d5dfb3ec8c21b563dc34
+    bytes: 225468
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_39_2014
+      citation: UU No. 39 Tahun 2014
+      tentang: Perkebunan
+      url: https://peraturan.bpk.go.id/Details/38807/uu-no-39-tahun-2014
+      note: null
+uji_materi:
+- putusan: 55/PUU-VIII/2010
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/108/putusan_sidang_Putusan%2055%20PUU-2010-TELAH%20BACA.pdf
+  amar: Pasal 21 beserta Penjelasannya, Pasal 47 ayat (1) dan ayat (2) Undang-Undang
+    Nomor 18 Tahun 2004 tentang Perkebunan bertentangan dengan UUD NRI Tahun 1945
+    dan tidak mempunyai kekuatan hukum mengikat.

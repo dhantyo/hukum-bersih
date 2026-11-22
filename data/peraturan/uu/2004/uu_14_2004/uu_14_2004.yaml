@@ -11,8 +11,8 @@ tanggal_penetapan: '2004-07-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu14-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40508/uu-no-14-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30194/UU%20Nomor%2014%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2004_2004-07-06.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b0cbaa5d663fada9921a7f706f46628f5d9e5538eafdda92aa44a077811a2448
 pdf_sha256: b0cbaa5d663fada9921a7f706f46628f5d9e5538eafdda92aa44a077811a2448
+tanggal_pengundangan: '2004-07-06'
+tanggal_berlaku: '2004-07-06'
+lembaran_negara: 'LN. 2004/ No. 64, TLN. NO. 4398, LL SETNEG : 5 HLM'
+subjek: HUKUM ACARA DAN PERADILAN - HUKUM PIDANA, PERDATA, DAN DAGANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu14-2004.pdf
+bpk:
+  id: 40508
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30194/UU%20Nomor%2014%20Tahun%202004.pdf
+    bpk_file_id: 30194
+    filename: UU Nomor 14 Tahun 2004.pdf
+    sha256: b0cbaa5d663fada9921a7f706f46628f5d9e5538eafdda92aa44a077811a2448
+    bytes: 41242
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

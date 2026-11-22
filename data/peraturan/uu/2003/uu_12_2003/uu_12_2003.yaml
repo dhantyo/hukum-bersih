@@ -8,31 +8,83 @@ title: Undang-Undang Nomor 12 Tahun 2003 tentang Pemilihan Umum Anggota Dewan Pe
 tentang: PEMILIHAN UMUM ANGGOTA DEWAN PERWAKILAN RAKYAT, DEWAN PERWAKILAN DAERAH,
   DAN DEWAN PERWAKILAN RAKYAT DAERAH
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 10 Tahun 2008 Tentang Pemilihan
-  Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan
-  Rakyat Daerah Undang-Undang Nomor 22 Tahun 2007 Tentang Penyelenggara Pemilihan
-  Umum'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '2003-03-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0122003.pdf
+source_url: https://peraturan.bpk.go.id/Details/43012/uu-no-12-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/31127/UU%20Nomor%2012%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_3_1999
-  revoked_by:
-  - uu_10_2008
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_12_2003_2003
+- id: uu_12_2003_2003-03-11
   kind: asli
   source: official
-  date: null
+  date: '2003-03-11'
   date_basis: tanggal_penetapan
-  text: uu_12_2003_2003.txt
+  text: uu_12_2003_2003-03-11.txt
   pasal_count: 150
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3659b9435e52ae061b9f3ab6aef8c732ed1bbede10faf4269c21311fd845c92d
 pdf_sha256: 3659b9435e52ae061b9f3ab6aef8c732ed1bbede10faf4269c21311fd845c92d
+tanggal_pengundangan: '2003-03-11'
+tanggal_berlaku: '2003-03-11'
+lembaran_negara: 'LN.2003/NO.37, LL SETNEG : 70 HLM'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0122003.pdf
+bpk:
+  id: 43012
+  files:
+  - url: https://peraturan.bpk.go.id/Download/31127/UU%20Nomor%2012%20Tahun%202003.pdf
+    bpk_file_id: 31127
+    filename: UU Nomor 12 Tahun 2003.pdf
+    sha256: 3659b9435e52ae061b9f3ab6aef8c732ed1bbede10faf4269c21311fd845c92d
+    bytes: 190630
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_10_2008
+      citation: UU No. 10 Tahun 2008
+      tentang: Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah,
+        dan Dewan Perwakilan Rakyat Daerah
+      url: https://peraturan.bpk.go.id/Details/39037/uu-no-10-tahun-2008
+      note: null
+    Diubah dengan:
+    - id: uu_10_2006
+      citation: UU No. 10 Tahun 2006
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        2006 tentang Perubahan Kedua atas Undang-Undang Nomor 12 Tahun 2003 tentang
+        Pemilihan Umum Anggota Dewan Perwakilan Rakyat,Dewan Perwakilan Daerah, dan
+        Dewan Perwakilan Rakyat Daerah menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/40171/uu-no-10-tahun-2006
+      note: null
+    - id: uu_20_2004
+      citation: UU No. 20 Tahun 2004
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2004 tentang Perubahan atas Undang-Undang Nomor 12 Tahun 2003 tentang Pemilihan
+        Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan
+        Rakyat Daerah, Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/40519/uu-no-20-tahun-2004
+      note: null
+    Mencabut:
+    - id: uu_4_2000
+      citation: UU No. 4 Tahun 2000
+      tentang: Perubahan atas Undang-Undang Nomor 3 Tahun 1999 tentang Pemilihan Umum
+      url: https://peraturan.bpk.go.id/Details/44942/uu-no-4-tahun-2000
+      note: null
+    - id: uu_3_1999
+      citation: UU No. 3 Tahun 1999
+      tentang: Pemilihan Umum
+      url: https://peraturan.bpk.go.id/Details/45271/uu-no-3-tahun-1999
+      note: null
+uji_materi: null

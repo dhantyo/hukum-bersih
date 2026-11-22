@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 23 Tahun 2003 tentang Pemilihan Umum Presiden Dan Wak
   Presiden
 tentang: PEMILIHAN UMUM PRESIDEN DAN WAKIL PRESIDEN
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '2003-07-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-23-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0232003.pdf
+source_url: https://peraturan.bpk.go.id/Details/43928/uu-no-23-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/32168/UU%20Nomor%2023%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_2003_2003-07-31.txt
   pasal_count: 103
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 403774786e6e30d1fd2bf0a1fd8441cb865d2892b7dd83076b76ccb3389a0a75
 pdf_sha256: 403774786e6e30d1fd2bf0a1fd8441cb865d2892b7dd83076b76ccb3389a0a75
+tanggal_pengundangan: '2003-07-31'
+tanggal_berlaku: '2003-07-31'
+lembaran_negara: 'LN.2003/NO.93, LL SETNEG : 57 HLM'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-23-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0232003.pdf
+bpk:
+  id: 43928
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32168/UU%20Nomor%2023%20Tahun%202003.pdf
+    bpk_file_id: 32168
+    filename: UU Nomor 23 Tahun 2003.pdf
+    sha256: 403774786e6e30d1fd2bf0a1fd8441cb865d2892b7dd83076b76ccb3389a0a75
+    bytes: 158109
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_42_2008
+      citation: UU No. 42 Tahun 2008
+      tentang: Pemilihan Umum Presiden dan Wakil Presiden
+      url: https://peraturan.bpk.go.id/Details/37655/uu-no-42-tahun-2008
+      note: null
+uji_materi: null

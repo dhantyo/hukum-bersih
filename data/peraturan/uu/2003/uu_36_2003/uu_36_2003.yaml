@@ -13,8 +13,8 @@ tanggal_penetapan: '2003-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-36-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0362003.pdf
+source_url: https://peraturan.bpk.go.id/Details/44161/uu-no-36-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/32422/UU%20Nomor%2036%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_36_2003_2003-12-18.txt
   pasal_count: 21
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ef9dc058afcfd5e9c88504b0a58988a817a91c2725a2d9a79f2b781ec5afd452
 pdf_sha256: ef9dc058afcfd5e9c88504b0a58988a817a91c2725a2d9a79f2b781ec5afd452
+tanggal_pengundangan: '2003-12-18'
+tanggal_berlaku: '2003-12-18'
+lembaran_negara: 'LN. 2003/ No. 151, TLN NO. 4346, LL SETNEG : 13 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-36-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0362003.pdf
+bpk:
+  id: 44161
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32422/UU%20Nomor%2036%20Tahun%202003.pdf
+    bpk_file_id: 32422
+    filename: UU Nomor 36 Tahun 2003.pdf
+    sha256: ef9dc058afcfd5e9c88504b0a58988a817a91c2725a2d9a79f2b781ec5afd452
+    bytes: 68672
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

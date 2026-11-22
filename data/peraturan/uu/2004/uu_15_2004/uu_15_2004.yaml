@@ -12,8 +12,8 @@ tanggal_penetapan: '2004-07-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu15-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40509/uu-no-15-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30197/UU%20Nomor%2015%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2004_2004-07-19.txt
   pasal_count: 29
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6d24de6687786dc2a1db39a53e7544c42f1ba5adff95e932ff078de0aae5a9db
 pdf_sha256: 6d24de6687786dc2a1db39a53e7544c42f1ba5adff95e932ff078de0aae5a9db
+tanggal_pengundangan: '2004-07-19'
+tanggal_berlaku: '2004-07-19'
+lembaran_negara: 'LN. 2004/ No. 66, TLN NO. 4400, LL SETNEG : 16 HLM'
+subjek: PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu15-2004.pdf
+bpk:
+  id: 40509
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30197/UU%20Nomor%2015%20Tahun%202004.pdf
+    bpk_file_id: 30197
+    filename: UU Nomor 15 Tahun 2004.pdf
+    sha256: 6d24de6687786dc2a1db39a53e7544c42f1ba5adff95e932ff078de0aae5a9db
+    bytes: 147654
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

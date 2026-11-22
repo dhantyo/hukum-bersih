@@ -11,8 +11,8 @@ tanggal_penetapan: '2004-07-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu16-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40511/uu-no-16-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30199/UU%20Nomor%2016%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by:
@@ -22,6 +22,56 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_16_2004_2004-07-26
+  kind: asli
+  source: official
+  date: '2004-07-26'
+  date_basis: tanggal_penetapan
+  text: uu_16_2004_2004-07-26.txt
+  pasal_count: 42
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e99bc3466ac73f7bbb41444aa7fdd0ec123dc0c8b5187c7682c71d19a1a2ffb6
 pdf_sha256: e99bc3466ac73f7bbb41444aa7fdd0ec123dc0c8b5187c7682c71d19a1a2ffb6
-parse_error: 'LeakedMarkupError: hcontainer_1__p_2: markup in text: ''ART 1 -'''
+tanggal_pengundangan: '2004-07-26'
+tanggal_berlaku: '2004-07-26'
+lembaran_negara: 'LN. 2004/ No. 67, TLN NO. 4401, LL SETNEG : 13 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu16-2004.pdf
+bpk:
+  id: 40511
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30199/UU%20Nomor%2016%20Tahun%202004.pdf
+    bpk_file_id: 30199
+    filename: UU Nomor 16 Tahun 2004.pdf
+    sha256: e99bc3466ac73f7bbb41444aa7fdd0ec123dc0c8b5187c7682c71d19a1a2ffb6
+    bytes: 136669
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_11_2021
+      citation: UU No. 11 Tahun 2021
+      tentang: Perubahan atas Undang-Undang Nomor 16 Tahun 2004 tentang Kejaksaan
+        Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/195550/uu-no-11-tahun-2021
+      note: null
+    Mencabut:
+    - id: uu_5_1991
+      citation: UU No. 5 Tahun 1991
+      tentang: Kejaksaan Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/46657/uu-no-5-tahun-1991
+      note: null
+uji_materi:
+- putusan: 29/PUU-XIV/2016
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/6/29_PUU-XIV_2016.pdf
+  amar: Frasa "mengesampingkan perkara sebagaimana dimaksud dalam ketentuan ini merupakan
+    pelaksanaan atas asas oportunitas yang hanya dapat dilakukan Jaksa Agung setelah
+    memperhatikan saran dan pendapat dari badan-badan kekuasaan negara yang mempunyai
+    hubungan dengan masalah tersebut" dalam Penjelasan Pasal 35 huruf c Undang-Undang
+    Nomor 16 Tahun 2004 tentang Kejaksaan Republik Indonesia bertentangan dengan UUD
+    NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat sepanjang tidak dimaknai
+    "Jaksa Agung wajib memperhatikan saran dan pendapat dari badan-badan kekuasaan
+    negara yang mempunyai hubungan dengan masalah tersebut."

@@ -12,8 +12,8 @@ tanggal_penetapan: '2004-01-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu3-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40458/uu-no-3-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30137/UU%20Nomor%203%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2004_2004-01-15.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1e3baa95e35bb78e4d7c9b50755c1d0562ef25a505f4ef9ada15b92f1d800235
 pdf_sha256: 1e3baa95e35bb78e4d7c9b50755c1d0562ef25a505f4ef9ada15b92f1d800235
+tanggal_pengundangan: '2004-01-15'
+tanggal_berlaku: '2004-01-15'
+lembaran_negara: 'LN 2004/ No.7, TLN. NO.4357, LL SETNEG : 16 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu3-2004.pdf
+bpk:
+  id: 40458
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30137/UU%20Nomor%203%20Tahun%202004.pdf
+    bpk_file_id: 30137
+    filename: UU Nomor 3 Tahun 2004.pdf
+    sha256: 1e3baa95e35bb78e4d7c9b50755c1d0562ef25a505f4ef9ada15b92f1d800235
+    bytes: 157049
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+    Mengubah:
+    - id: uu_23_1999
+      citation: UU No. 23 Tahun 1999
+      tentang: Bank Indonesia
+      url: https://peraturan.bpk.go.id/Details/45332/uu-no-23-tahun-1999
+      note: null
+uji_materi: null

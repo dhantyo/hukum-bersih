@@ -13,8 +13,8 @@ tanggal_penetapan: '2003-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-40-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0402003.pdf
+source_url: https://peraturan.bpk.go.id/Details/44178/uu-no-40-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/32439/UU%20Nomor%2040%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_40_2003_2003-12-18.txt
   pasal_count: 22
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a6a87ea6db9baf12806570e4ff24157ecd21ac56b3ed6920769184b40d07fba5
 pdf_sha256: a6a87ea6db9baf12806570e4ff24157ecd21ac56b3ed6920769184b40d07fba5
+tanggal_pengundangan: '2003-12-18'
+tanggal_berlaku: '2003-12-18'
+lembaran_negara: 'LN. 2003/ No. 155, TLN NO. 4350, LL SETNEG : 14 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-40-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0402003.pdf
+bpk:
+  id: 44178
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32439/UU%20Nomor%2040%20Tahun%202003.pdf
+    bpk_file_id: 32439
+    filename: UU Nomor 40 Tahun 2003.pdf
+    sha256: a6a87ea6db9baf12806570e4ff24157ecd21ac56b3ed6920769184b40d07fba5
+    bytes: 72785
+    archive_url: null
+  status_peraturan: null
+uji_materi:
+- putusan: 123/PUU-VII/2009
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/96/putusan_sidang_Perkara%20Nomor%20%20123%20.PUU%20VII.2009,2%20Februari%202010.pdf
+  amar: Pasal 7 ayat (4) UU 40/2003 berikut Penjelasannya dan Lampiran II tentang
+    batas wilayah Kabupaten Seram Bagian Barat sepanjang menyangkut Pasal 7 ayat (2)
+    huruf b bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum
+    mengikat.

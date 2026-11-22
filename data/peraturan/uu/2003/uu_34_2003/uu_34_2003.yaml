@@ -13,8 +13,8 @@ tanggal_penetapan: '2003-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-34-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0342003.pdf
+source_url: https://peraturan.bpk.go.id/Details/44153/uu-no-34-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/32414/UU%20Nomor%2034%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_34_2003_2003-12-18.txt
   pasal_count: 21
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ad1af104a2d64c928ef02cdc89d8df5c2bc884d296231e26fa40ed31bfbf164b
 pdf_sha256: ad1af104a2d64c928ef02cdc89d8df5c2bc884d296231e26fa40ed31bfbf164b
+tanggal_pengundangan: '2003-12-18'
+tanggal_berlaku: '2003-12-18'
+lembaran_negara: 'LN. 2003/ No.149, TLN NO. 4344, LL SETNEG : 13 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-34-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0342003.pdf
+bpk:
+  id: 44153
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32414/UU%20Nomor%2034%20Tahun%202003.pdf
+    bpk_file_id: 32414
+    filename: UU Nomor 34 Tahun 2003.pdf
+    sha256: ad1af104a2d64c928ef02cdc89d8df5c2bc884d296231e26fa40ed31bfbf164b
+    bytes: 65822
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

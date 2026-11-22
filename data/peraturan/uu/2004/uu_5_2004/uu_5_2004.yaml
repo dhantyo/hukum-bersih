@@ -12,8 +12,8 @@ tanggal_penetapan: '2004-01-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu5-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40491/uu-no-5-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30172/UU%20Nomor%205%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_2004_2004-01-15.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b4d4dcc2de5a96065d2f7fc81bbf07c1fdc845242cde3e8e704cf29283966b15
 pdf_sha256: 501f31aaf144e9461a26659757976e7b7d9451d1d0bb4dd021a45a6acf1271fa
+tanggal_pengundangan: '2004-01-15'
+tanggal_berlaku: '2004-01-15'
+lembaran_negara: 'LN. 2004/ No. 9, TLN NO. 4359, LL SETNEG : 15 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu5-2004.pdf
+bpk:
+  id: 40491
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30172/UU%20Nomor%205%20Tahun%202004.pdf
+    bpk_file_id: 30172
+    filename: UU Nomor 5 Tahun 2004.pdf
+    sha256: b4d4dcc2de5a96065d2f7fc81bbf07c1fdc845242cde3e8e704cf29283966b15
+    bytes: 66678
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_3_2009
+      citation: UU No. 3 Tahun 2009
+      tentang: Perubahan Kedua Atas Undang-Undang Nomor 14 Tahun 1985 tentang Mahkamah
+        Agung
+      url: https://peraturan.bpk.go.id/Details/38574/uu-no-3-tahun-2009
+      note: null
+    Mengubah:
+    - id: uu_14_1985
+      citation: UU No. 14 Tahun 1985
+      tentang: Mahkamah Agung
+      url: https://peraturan.bpk.go.id/Details/46965/uu-no-14-tahun-1985
+      note: null
+uji_materi: null

@@ -14,8 +14,8 @@ tanggal_penetapan: '2004-07-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu17-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40514/uu-no-17-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30204/UU%20Nomor%2017%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,4 +31,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_2004_2004-07-28.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 054382c75b7aa605c0aa461613b56886a21709f53fd6eed6c47d6a8679cf97dd
 pdf_sha256: 054382c75b7aa605c0aa461613b56886a21709f53fd6eed6c47d6a8679cf97dd
+tanggal_pengundangan: '2004-07-28'
+tanggal_berlaku: '2004-07-28'
+lembaran_negara: 'LN. 2004/ No. 72, TLN NO. 4403, LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu17-2004.pdf
+bpk:
+  id: 40514
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30204/UU%20Nomor%2017%20Tahun%202004.pdf
+    bpk_file_id: 30204
+    filename: UU Nomor 17 Tahun 2004.pdf
+    sha256: 054382c75b7aa605c0aa461613b56886a21709f53fd6eed6c47d6a8679cf97dd
+    bytes: 56459
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

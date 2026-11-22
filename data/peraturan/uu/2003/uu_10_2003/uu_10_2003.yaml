@@ -9,12 +9,12 @@ tentang: PEMBENTUKAN KABUPATEN MINAHASA SELATAN DAN KOTA TOMOHON DI PROVINSI SUL
   UTARA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2003-02-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0102003.pdf
+source_url: https://peraturan.bpk.go.id/Details/43010/uu-no-10-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/31125/UU%20Nomor%2010%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_10_2003_2003
+- id: uu_10_2003_2003-02-25
   kind: asli
   source: official
-  date: null
+  date: '2003-02-25'
   date_basis: tanggal_penetapan
-  text: uu_10_2003_2003.txt
+  text: uu_10_2003_2003-02-25.txt
   pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f07ce2ad16fb8d5472cb31d2b69926b7a83b7c20925f971554b086c0c3b06a16
 pdf_sha256: f07ce2ad16fb8d5472cb31d2b69926b7a83b7c20925f971554b086c0c3b06a16
+tanggal_pengundangan: '2003-02-25'
+tanggal_berlaku: '2003-02-25'
+lembaran_negara: 'LN.2003/NO.30 TLN NO.4273, LL SETNEG : 11 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0102003.pdf
+bpk:
+  id: 43010
+  files:
+  - url: https://peraturan.bpk.go.id/Download/31125/UU%20Nomor%2010%20Tahun%202003.pdf
+    bpk_file_id: 31125
+    filename: UU Nomor 10 Tahun 2003.pdf
+    sha256: f07ce2ad16fb8d5472cb31d2b69926b7a83b7c20925f971554b086c0c3b06a16
+    bytes: 63330
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

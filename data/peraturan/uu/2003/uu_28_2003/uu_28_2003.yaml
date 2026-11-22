@@ -12,8 +12,8 @@ tanggal_penetapan: '2003-12-09'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-28-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0282003.pdf
+source_url: https://peraturan.bpk.go.id/Details/44082/uu-no-28-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/32340/UU%20Nomor%2028%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_28_2003_2003-12-09.txt
   pasal_count: 18
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 35b1a935b8d3728b4619887a91d396c5978bc4e540c391fc3a61ecbba70eac4f
 pdf_sha256: 35b1a935b8d3728b4619887a91d396c5978bc4e540c391fc3a61ecbba70eac4f
+tanggal_pengundangan: '2003-12-09'
+tanggal_berlaku: '2004-01-01'
+lembaran_negara: 'LN. 2003/ No. 139 LL SETNEG : 14 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-28-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0282003.pdf
+bpk:
+  id: 44082
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32340/UU%20Nomor%2028%20Tahun%202003.pdf
+    bpk_file_id: 32340
+    filename: UU Nomor 28 Tahun 2003.pdf
+    sha256: 35b1a935b8d3728b4619887a91d396c5978bc4e540c391fc3a61ecbba70eac4f
+    bytes: 57867
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_35_2004
+      citation: UU No. 35 Tahun 2004
+      tentang: Perubahan atas Undang-Undang Nomor 28 Tahun 2003 tentang Anggaran Pendapatan
+        dan Belanja Negara Tahun Anggaran 2004
+      url: https://peraturan.bpk.go.id/Details/40779/uu-no-35-tahun-2004
+      note: null
+uji_materi: null

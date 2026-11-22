@@ -6,21 +6,19 @@ year: 2004
 title: Undang-Undang Nomor 10 Tahun 2004 tentang Pembentukan Peraturan Perundang-Undangan
 tentang: PEMBENTUKAN PERATURAN PERUNDANG-UNDANGAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 12 Tahun 2011 Tentang Pembentukan
-  Peraturan Perundang-undangan'
+status: tidak_berlaku
 tanggal_penetapan: '2004-06-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu10-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40503/uu-no-10-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30185/UU%20Nomor%2010%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_2_1950
-  revoked_by:
-  - uu_12_2011
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -31,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2004_2004-06-22.txt
   pasal_count: 45
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b56a4b50da888400e6a429424a9d41f905ed1234055519cdfbc8b6d383b8ab08
 pdf_sha256: b56a4b50da888400e6a429424a9d41f905ed1234055519cdfbc8b6d383b8ab08
+tanggal_pengundangan: '2004-06-22'
+tanggal_berlaku: '2004-06-22'
+lembaran_negara: 'LN. 2004/ No. 53, TLN. NO. 4389, LL SETNEG : 13 HLM'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu10-2004.pdf
+bpk:
+  id: 40503
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30185/UU%20Nomor%2010%20Tahun%202004.pdf
+    bpk_file_id: 30185
+    filename: UU Nomor 10 Tahun 2004.pdf
+    sha256: b56a4b50da888400e6a429424a9d41f905ed1234055519cdfbc8b6d383b8ab08
+    bytes: 430938
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_12_2011
+      citation: UU No. 12 Tahun 2011
+      tentang: Pembentukan Peraturan Perundang-Undangan
+      url: https://peraturan.bpk.go.id/Details/39188/uu-no-12-tahun-2011
+      note: null
+uji_materi: null

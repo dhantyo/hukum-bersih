@@ -6,20 +6,18 @@ year: 2003
 title: Undang-Undang Nomor 27 Tahun 2003 tentang Panas Bumi
 tentang: PANAS BUMI
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 21 Tahun 2014 Tentang Panas
-  Bumi'
+status: tidak_berlaku
 tanggal_penetapan: '2003-10-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-27-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0272003.pdf
+source_url: https://peraturan.bpk.go.id/Details/44080/uu-no-27-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/32338/UU%20Nomor%2027%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_21_2014
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_27_2003_2003-10-22.txt
   pasal_count: 44
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: fe4f15a115984dc13a6021b20d893634449724d7f5b42f9e198a40d7003ba202
 pdf_sha256: fe4f15a115984dc13a6021b20d893634449724d7f5b42f9e198a40d7003ba202
+tanggal_pengundangan: '2003-10-22'
+tanggal_berlaku: '2003-10-22'
+lembaran_negara: 'LN. 2003/ No. 115, LL SETNEG : 21 HLM'
+subjek: PERTAMBANGAN MIGAS, MINERAL DAN ENERGI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-27-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0272003.pdf
+bpk:
+  id: 44080
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32338/UU%20Nomor%2027%20Tahun%202003.pdf
+    bpk_file_id: 32338
+    filename: UU Nomor 27 Tahun 2003.pdf
+    sha256: fe4f15a115984dc13a6021b20d893634449724d7f5b42f9e198a40d7003ba202
+    bytes: 72302
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_21_2014
+      citation: UU No. 21 Tahun 2014
+      tentang: Panas Bumi
+      url: https://peraturan.bpk.go.id/Details/38684/uu-no-21-tahun-2014
+      note: null
+uji_materi: null

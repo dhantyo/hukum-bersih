@@ -11,8 +11,8 @@ tanggal_penetapan: '2003-04-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0172003.pdf
+source_url: https://peraturan.bpk.go.id/Details/43017/uu-no-17-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/31132/UU%20Nomor%2017%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,39 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_2003_2003-04-05.txt
   pasal_count: 39
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 95dbbfa55cde3799d3c8ab537d2d6c5f8807a2edc2f35a79c37792d99efc1c5f
 pdf_sha256: 95dbbfa55cde3799d3c8ab537d2d6c5f8807a2edc2f35a79c37792d99efc1c5f
+tanggal_pengundangan: '2003-04-05'
+tanggal_berlaku: '2003-04-05'
+lembaran_negara: 'LN.2003/NO.47, TLN NO.4286, LL SETNEG : 20 HLM'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0172003.pdf
+bpk:
+  id: 43017
+  files:
+  - url: https://peraturan.bpk.go.id/Download/31132/UU%20Nomor%2017%20Tahun%202003.pdf
+    bpk_file_id: 31132
+    filename: UU Nomor 17 Tahun 2003.pdf
+    sha256: 95dbbfa55cde3799d3c8ab537d2d6c5f8807a2edc2f35a79c37792d99efc1c5f
+    bytes: 128073
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: perppu_1_2020
+      citation: PERPU No. 1 Tahun 2020
+      tentang: Kebijakan Keuangan Negara dan Stabilitas Sistem Keuangan untuk Penanganan
+        Pandemi Corona Virus Disease 2019 (COVID-19) dan/atau dalam Rangka Menghadapi
+        Ancaman yang Membahayakan Perekonomian Nasional dan/atau Stabilitas Sistem
+        Keuangan
+      url: https://peraturan.bpk.go.id/Details/135060/perpu-no-1-tahun-2020
+      note: null
+uji_materi:
+- putusan: 35/PUU-XI/2013
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/89/putusan_sidang_1695_20140522122204_35%20PUU%202013-UU_keuNeg-UU_MD3-telahucap-22Mei2014_final%20-%20header-%20wmActionWiz.pdf
+  amar: Frasa "kegiatan, dan jenis belanja" dalam Pasal 15 ayat (5) Undang-Undang
+    Nomor 17 Tahun 2003 bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai
+    kekuatan hukum mengikat.

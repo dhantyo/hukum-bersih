@@ -11,8 +11,8 @@ tanggal_penetapan: '2003-08-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-24-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0242003.pdf
+source_url: https://peraturan.bpk.go.id/Details/44069/uu-no-24-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/32326/UU%20Nomor%2024%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by:
@@ -31,4 +31,69 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_2003_2003-08-13.txt
   pasal_count: 88
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3658d49b8a7394ec200e0d063b994af63e1d64446a7afa09681ce6069741ce1e
+  extra_pdf_sha256:
+  - 1123a1e5d6bc7b7b322c7710ef20173c2844e711cfb8a01bc6aed2f33abd4162
 pdf_sha256: 3658d49b8a7394ec200e0d063b994af63e1d64446a7afa09681ce6069741ce1e
+tanggal_pengundangan: '2003-08-13'
+tanggal_berlaku: '2003-08-13'
+lembaran_negara: 'LN. 2003/ No.98, TLN NO. 4316, LL SETNEG : 31 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-24-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0242003.pdf
+bpk:
+  id: 44069
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32326/UU%20Nomor%2024%20Tahun%202003.pdf
+    bpk_file_id: 32326
+    filename: UU Nomor 24 Tahun 2003.pdf
+    sha256: 3658d49b8a7394ec200e0d063b994af63e1d64446a7afa09681ce6069741ce1e
+    bytes: 82398
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/32327/UU%20Nomor%2024%20Tahun%202003_%20PENJELASAN.pdf
+    bpk_file_id: 32327
+    filename: UU Nomor 24 Tahun 2003_ PENJELASAN.pdf
+    sha256: 1123a1e5d6bc7b7b322c7710ef20173c2844e711cfb8a01bc6aed2f33abd4162
+    bytes: 26265
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_7_2020
+      citation: UU No. 7 Tahun 2020
+      tentang: Perubahan Ketiga atas Undang-Undang Nomor 24 Tahun 2003 tentang Mahkamah
+        Konstitusi
+      url: https://peraturan.bpk.go.id/Details/147335/uu-no-7-tahun-2020
+      note: null
+    - id: uu_4_2014
+      citation: UU No. 4 Tahun 2014
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        2013 Tentang Perubahan Kedua Atas Undang-Undang Nomor 24 Tahun 2003 Tentang
+        Mahkamah Konstitusi Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/38577/uu-no-4-tahun-2014
+      note: null
+    - id: uu_8_2011
+      citation: UU No. 8 Tahun 2011
+      tentang: Perubahan Atas Undang-Undang Nomor 24 Tahun 2003 Tentang Mahkamah Konstitusi
+      url: https://peraturan.bpk.go.id/Details/39183/uu-no-8-tahun-2011
+      note: null
+uji_materi:
+- putusan: 31/PUU-XXI/2023
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/227/putusan_mkri_31_PUU-XXI_2023.pdf
+  amar: Frasa “3 x 24 (tiga kali dua puluh empat) jam sejak” dalam Pasal 74 ayat (3)
+    Undang-Undang Nomor 24 Tahun 2003 tentang Mahkamah Konstitusi sebagaimana yang
+    telah diubah dengan Undang-Undang Nomor 7 Tahun 2020 tentang Perubahan Ketiga
+    Atas Undang-Undang Nomor 24 Tahun 2003 tentang Mahkamah Konstitusi (Lembaran Negara
+    Republik Indonesia Tahun 2003 Nomor 98, Tambahan Lembaran Negara Republik Indonesia
+    Nomor 4316) bertentangan dengan Undang-Undang Dasar Negara Republik Indonesia
+    Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat, sepanjang tidak dimaknai
+    “3 (tiga) hari setelah”, sehingga ketentuan dalam Pasal 74 ayat (3) Undang-Undang
+    Nomor 24 Tahun 2003 tentang Mahkamah Konstitusi, selengkapnya menjadi “Permohonan
+    hanya dapat diajukan dalam jangka waktu paling lama 3 (tiga) hari setelah Komisi
+    Pemilihan Umum mengumumkan penetapan hasil pemilihan umum secara nasional”.
+- putusan: 066/PUU-II/2004
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/133/Putusan066PUUII2004tgl120405ttgKADIN.pdf
+  amar: Pasal 50 Undang-undang Nomor 24 Tahun 2003 tentang Mahkamah Konstitusi bertentangan
+    dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.

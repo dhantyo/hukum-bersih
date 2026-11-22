@@ -13,8 +13,8 @@ tanggal_penetapan: '2003-04-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0152003.pdf
+source_url: https://peraturan.bpk.go.id/Details/43015/uu-no-15-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/31130/UU%20Nomor%2015%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by:
@@ -31,4 +31,41 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2003_2003-04-04.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a63799dc9c61586684efd010f30b2aef66b83d5fe1ac91f00b9327ec55512d45
 pdf_sha256: a63799dc9c61586684efd010f30b2aef66b83d5fe1ac91f00b9327ec55512d45
+tanggal_penetapan_bpk: '2003-03-04'
+tanggal_pengundangan: '2003-03-04'
+tanggal_berlaku: '2003-03-04'
+lembaran_negara: 'LN.2003/NO.45 TLN NO.4284, LL SETNEG : 3 HLM'
+subjek: TERORISME
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0152003.pdf
+bpk:
+  id: 43015
+  files:
+  - url: https://peraturan.bpk.go.id/Download/31130/UU%20Nomor%2015%20Tahun%202003.pdf
+    bpk_file_id: 31130
+    filename: UU Nomor 15 Tahun 2003.pdf
+    sha256: a63799dc9c61586684efd010f30b2aef66b83d5fe1ac91f00b9327ec55512d45
+    bytes: 33266
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 6 dan Pasal 7 Undang-Undang Nomor 15 Tahun 2003 sebagaimana telah
+        diubah dengan Undang-Undang Nomor 5 Tahun 2018
+    Diubah dengan:
+    - id: uu_5_2018
+      citation: UU No. 5 Tahun 2018
+      tentang: Perubahan atas Undang-Undang Nomor 15 Tahun 2003 tentang Penetapan
+        Peraturan Pemerintah Pengganti Undang Undang Nomor 1 Tahun 2002 tentang Pemberantasan
+        Tindak Pidana Terorisme Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/82689/uu-no-5-tahun-2018
+      note: null
+uji_materi: null
