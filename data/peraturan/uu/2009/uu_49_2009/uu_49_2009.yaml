@@ -12,8 +12,8 @@ tanggal_penetapan: '2009-10-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-49-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu49-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38794/uu-no-49-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28123/UU%20Nomor%2049%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,42 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_49_2009_2009-10-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2425f97bfcfa8770f4e61829f97eaad705497769886557cfa27ce2083af30e47
 pdf_sha256: 0b6d3cee0af551480f11bd54b289b92e6190552bef845416bd3f225f857fff68
+tanggal_pengundangan: '2009-10-29'
+tanggal_berlaku: '2009-10-29'
+lembaran_negara: 'LN. 2009/ No.158, TLN NO. 5077, LL SETNEG : 19 HLM'
+subjek: HUKUM ACARA DAN PERADILAN - HUKUM PIDANA, PERDATA, DAN DAGANG - DASAR PEMBENTUKAN
+  KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-49-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu49-2009.pdf
+bpk:
+  id: 38794
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28123/UU%20Nomor%2049%20Tahun%202009.pdf
+    bpk_file_id: 28123
+    filename: UU Nomor 49 Tahun 2009.pdf
+    sha256: 2425f97bfcfa8770f4e61829f97eaad705497769886557cfa27ce2083af30e47
+    bytes: 119498
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_2_1986
+      citation: UU No. 2 Tahun 1986
+      tentang: Peradilan Umum
+      url: https://peraturan.bpk.go.id/Details/46874/uu-no-2-tahun-1986
+      note: null
+uji_materi:
+- putusan: 43/PUU-XIII/2015
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/44/43_PUU-XIII_2015.pdf
+  amar: a. Pasal 14A ayat (2) dan (3) Undang-Undang Nomor 49 Tahun 2009 tentang Perubahan
+    Kedua Atas Undang-Undang Nomor 2 Tahun 1986 tentang Peradilan Umum sepanjang kata
+    "bersama" dan frasa "dan Komisi Yudisial" bertentangan dengan UUD NRI Tahun 1945
+    dan tidak mempunyai kekuatan hukum mengikat. b. Pasal 14 ayat (2) Undang-Undang
+    Nomor 49 Tahun 2009 tentang Perubahan Kedua Atas Undang-Undang Nomor 2 Tahun 1986
+    tentang Peradilan Umum selengkapnya berbunyi "Proses seleksi pengangkatan hakim
+    pengadilan negeri dilakukan oleh Mahkamah Agung", selengkapnya berbunyi "Ketentuan
+    lebih lanjut mengenai proses seleksi diatur oleh Mahkamah Agung."

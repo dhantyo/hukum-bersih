@@ -12,8 +12,8 @@ tanggal_penetapan: '2009-10-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-51-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu51-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38851/uu-no-51-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28204/UU%20Nomor%2051%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,50 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_51_2009_2009-10-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5edebbc88cc7e14139f39a0104a81ddf8eb422108837505b21e75366b232d943
 pdf_sha256: dd9efd843834d706142489b85c8a515b2ea4fe9b188efcd51759ae84bb59d2a2
+tanggal_penetapan_bpk: '2017-10-29'
+tanggal_pengundangan: '2009-10-29'
+tanggal_berlaku: '2017-10-29'
+lembaran_negara: 'LN. 2009/ No. 160, TLN NO. 5079, LL SETNEG : 23 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-51-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu51-2009.pdf
+bpk:
+  id: 38851
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28204/UU%20Nomor%2051%20Tahun%202009.pdf
+    bpk_file_id: 28204
+    filename: UU Nomor 51 Tahun 2009.pdf
+    sha256: 5edebbc88cc7e14139f39a0104a81ddf8eb422108837505b21e75366b232d943
+    bytes: 128429
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_9_2004
+      citation: UU No. 9 Tahun 2004
+      tentang: Perubahan Atas Undang-Undang Nomor 5 Tahun 1986 tentang Peradilan Tata
+        Usaha Negara
+      url: https://peraturan.bpk.go.id/Details/40500/uu-no-9-tahun-2004
+      note: null
+    - id: uu_5_1986
+      citation: UU No. 5 Tahun 1986
+      tentang: Peradilan Tata Usaha Negara
+      url: https://peraturan.bpk.go.id/Details/46914/uu-no-5-tahun-1986
+      note: null
+  tanggal_pengundangan: '2017-10-29'
+uji_materi:
+- putusan: 43/PUU-XIII/2015
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/46/43_PUU-XIII_2015.pdf
+  amar: a. Pasal 14A ayat (2) dan (3) Undang-Undang Nomor 51 Tahun 2009 tentang Perubahan
+    Kedua Atas Undang-Undang Nomor 5 Tahun 1986 tentang Peradilan Tata Usaha Negara
+    sepanjang kata "bersama" dan frasa "dan Komisi Yudisial" bertentangan dengan UUD
+    NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat. b. Pasal 14 ayat (2)
+    Undang-Undang Nomor 51 Tahun 2009 tentang Perubahan Kedua Atas Undang-Undang Nomor
+    5 Tahun 1986 tentang Peradilan Tata Usaha Negara selengkapnya berbunyi "Proses
+    seleksi pengangkatan hakim pengadilan tata usaha negara dilakukan oleh Mahkamah
+    Agung", selengkapnya berbunyi "Ketentuan lebih lanjut mengenai proses seleksi
+    diatur oleh Mahkamah Agung."

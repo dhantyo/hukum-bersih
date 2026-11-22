@@ -13,8 +13,8 @@ tanggal_penetapan: '2011-09-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-2011
-source_pdf_url: https://peraturan.go.id/files/UU+14+Tahun+2011.pdf
+source_url: https://peraturan.bpk.go.id/Details/39225/uu-no-14-tahun-2011
+source_pdf_url: https://peraturan.bpk.go.id/Download/28652/UU%2014%20Tahun%202011.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2011_2011-09-19.txt
   pasal_count: 11
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 470a6ad34ff81a4da4dea670aa07db3e0b2e271aed814b9ed61611706e17a1aa
 pdf_sha256: 470a6ad34ff81a4da4dea670aa07db3e0b2e271aed814b9ed61611706e17a1aa
+tanggal_pengundangan: '2011-09-19'
+tanggal_berlaku: '2011-09-19'
+lembaran_negara: 'LN.2011/No. 90, TLN No. 5239, LL SETNEG: 9 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-2011
+  source_pdf_url: https://peraturan.go.id/files/UU+14+Tahun+2011.pdf
+bpk:
+  id: 39225
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28652/UU%2014%20Tahun%202011.pdf
+    bpk_file_id: 28652
+    filename: UU 14 Tahun 2011.pdf
+    sha256: 470a6ad34ff81a4da4dea670aa07db3e0b2e271aed814b9ed61611706e17a1aa
+    bytes: 328646
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

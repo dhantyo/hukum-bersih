@@ -12,8 +12,8 @@ tanggal_penetapan: '2009-10-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-45-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/UU+45+Tahun+2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38790/uu-no-45-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28119/UU%20Nomor%2045%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,48 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_45_2009_2009-10-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5c7944e6c7c36164b1cc0a1285aeb07c1386c0418342bd3bfc422539b77d8e77
 pdf_sha256: e8456852d13bb02cab845aa490f4b964ec5d07a84069bc76943e8379b8310d31
+tanggal_pengundangan: '2009-10-29'
+tanggal_berlaku: '2009-10-29'
+lembaran_negara: 'LN. 2009/ No. 154, TLN NO. 5073, LL SETNEG : 33 HLM'
+subjek: PERIKANAN DAN KELAUTAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-45-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/UU+45+Tahun+2009.pdf
+bpk:
+  id: 38790
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28119/UU%20Nomor%2045%20Tahun%202009.pdf
+    bpk_file_id: 28119
+    filename: UU Nomor 45 Tahun 2009.pdf
+    sha256: 5c7944e6c7c36164b1cc0a1285aeb07c1386c0418342bd3bfc422539b77d8e77
+    bytes: 187794
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mengubah:
+    - id: uu_31_2004
+      citation: UU No. 31 Tahun 2004
+      tentang: Perikanan
+      url: https://peraturan.bpk.go.id/Details/40763/uu-no-31-tahun-2004
+      note: null
+uji_materi: null

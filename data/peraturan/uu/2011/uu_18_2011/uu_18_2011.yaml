@@ -12,8 +12,8 @@ tanggal_penetapan: '2011-11-09'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-2011
-source_pdf_url: https://peraturan.go.id/files/UU+18+Tahun+2011.pdf
+source_url: https://peraturan.bpk.go.id/Details/39237/uu-no-18-tahun-2011
+source_pdf_url: https://peraturan.bpk.go.id/Download/28664/UU%2018%20Tahun%202011.pdf
 relationships:
   amends:
   - id: uu_22_2004
@@ -63,4 +63,29 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2011_2011-11-09.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7a5c17028b6cd5b70e5288a8dcdd69a97ed6c507041a27c13202d88014e099b4
 pdf_sha256: 7a5c17028b6cd5b70e5288a8dcdd69a97ed6c507041a27c13202d88014e099b4
+lembaran_negara: 'LN.2011/No. 106, TLN No. 5250, LL SETNEG: 19 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-2011
+  source_pdf_url: https://peraturan.go.id/files/UU+18+Tahun+2011.pdf
+bpk:
+  id: 39237
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28664/UU%2018%20Tahun%202011.pdf
+    bpk_file_id: 28664
+    filename: UU 18 Tahun 2011.pdf
+    sha256: 7a5c17028b6cd5b70e5288a8dcdd69a97ed6c507041a27c13202d88014e099b4
+    bytes: 164211
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_22_2004
+      citation: UU No. 22 Tahun 2004
+      tentang: Komisi Yudisial
+      url: https://peraturan.bpk.go.id/Details/40523/uu-no-22-tahun-2004
+      note: null
+uji_materi: null

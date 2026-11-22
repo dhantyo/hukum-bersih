@@ -12,8 +12,8 @@ tanggal_penetapan: '2010-08-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-2010
-source_pdf_url: https://peraturan.go.id/files/uu5-2010bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38540/uu-no-5-tahun-2010
+source_pdf_url: https://peraturan.bpk.go.id/Download/27785/UU%20Nomor%205%20Tahun%202010.pdf
 relationships:
   amends:
   - id: uu_22_2002
@@ -38,5 +38,37 @@ versions:
   date: '2010-08-20'
   date_basis: tanggal_penetapan
   text: uu_5_2010_2010-08-20.txt
-  pasal_count: 3
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6c7ca554f260dd5a44ff275c6be75abd2161fcce01b8d3486a4defe75fff56e7
 pdf_sha256: 141d9c40778cf8c595ad2a18f24fc31e69827c5e78c32b7d749b3f5e9dccdf31
+tanggal_pengundangan: '2010-08-23'
+tanggal_berlaku: '2010-08-23'
+lembaran_negara: 'LN. 2010/ No. 100, TLN No. 5150 , LL SETNEG : 5 HLM'
+subjek: HUKUM PIDANA, PERDATA, DAN DAGANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-2010
+  source_pdf_url: https://peraturan.go.id/files/uu5-2010bt.pdf
+bpk:
+  id: 38540
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27785/UU%20Nomor%205%20Tahun%202010.pdf
+    bpk_file_id: 27785
+    filename: UU Nomor 5 Tahun 2010.pdf
+    sha256: 6c7ca554f260dd5a44ff275c6be75abd2161fcce01b8d3486a4defe75fff56e7
+    bytes: 50566
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_22_2002
+      citation: UU No. 22 Tahun 2002
+      tentang: Grasi
+      url: https://peraturan.bpk.go.id/Details/44471/uu-no-22-tahun-2002
+      note: null
+uji_materi:
+- putusan: 107/PUU-XIII/2015
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/60/107_PUU-XIII_2015.pdf
+  amar: Pasal 7 ayat (2) Undang-Undang Nomor 5 Tahun 2010 tentang Perubahan atas Undang-Undang
+    Nomor 22 Tahun 2002 tentang Grasi bertentangan dengan UUD NRI Tahun 1945 dan tidak
+    mempunyai kekuatan hukum mengikat.

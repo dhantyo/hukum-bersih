@@ -11,8 +11,8 @@ tanggal_penetapan: '2011-04-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-2011
-source_pdf_url: https://peraturan.go.id/files/uu4-2011.pdf
+source_url: https://peraturan.bpk.go.id/Details/39136/uu-no-4-tahun-2011
+source_pdf_url: https://peraturan.bpk.go.id/Download/28545/UU%204%20Tahun%202011.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,42 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2011_2011-04-21.txt
   pasal_count: 71
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 30366dc54349b6df8b22216d211a0eeccdf4bc761c029cfcb6aa7bc8fef1f67a
 pdf_sha256: 0b8a62f5aec1fe86012a94793ca84e95fa9c486add4ddff3c01cfc1fbe76d305
+tanggal_pengundangan: '2011-04-21'
+tanggal_berlaku: '2011-04-21'
+lembaran_negara: 'LN.2011/No. 49, TLN No. 5214, LL SETNEG: 25 HLM'
+subjek: ILMU PENGETAHUAN DAN TEKNOLOGI - PERS, POS, DAN PERIKLANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-2011
+  source_pdf_url: https://peraturan.go.id/files/uu4-2011.pdf
+bpk:
+  id: 39136
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28545/UU%204%20Tahun%202011.pdf
+    bpk_file_id: 28545
+    filename: UU 4 Tahun 2011.pdf
+    sha256: 30366dc54349b6df8b22216d211a0eeccdf4bc761c029cfcb6aa7bc8fef1f67a
+    bytes: 336554
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+uji_materi: null

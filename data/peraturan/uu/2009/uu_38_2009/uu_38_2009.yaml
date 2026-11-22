@@ -11,8 +11,8 @@ tanggal_penetapan: '2009-10-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-38-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu38-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38783/uu-no-38-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28112/UU%20Nomor%2038%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,48 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_38_2009_2009-10-14.txt
   pasal_count: 53
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 70a67df4e06d2aea50d7204a4b9708ee68f2b1028f5aac41dccdbaacd081409c
 pdf_sha256: e8150477fd348de48c5733db4217730ac5e06a0df7bc8de433b775a2a49c6392
+tanggal_pengundangan: '2009-10-14'
+tanggal_berlaku: '2009-10-14'
+lembaran_negara: 'LN. 2009/ No. 1146, TLN NO. 5065, LL SETNEG : 19 HLM'
+subjek: PERS, POS, DAN PERIKLANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-38-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu38-2009.pdf
+bpk:
+  id: 38783
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28112/UU%20Nomor%2038%20Tahun%202009.pdf
+    bpk_file_id: 28112
+    filename: UU Nomor 38 Tahun 2009.pdf
+    sha256: 70a67df4e06d2aea50d7204a4b9708ee68f2b1028f5aac41dccdbaacd081409c
+    bytes: 132016
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_6_1984
+      citation: UU No. 6 Tahun 1984
+      tentang: Pos
+      url: https://peraturan.bpk.go.id/Details/46976/uu-no-6-tahun-1984
+      note: null
+uji_materi: null

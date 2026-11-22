@@ -12,8 +12,8 @@ tanggal_penetapan: '2009-10-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-47-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu47-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38792/uu-no-47-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28121/UU%20Nomor%2047%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by:
@@ -30,4 +30,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_47_2009_2009-10-29.txt
   pasal_count: 29
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9f0cfd7f427105c2fda8dffa747556f41de755b3cf902879d52a39a6e6da9937
 pdf_sha256: f0803bbaa033576e800b2ed91f858c2fbaf7aa7263264935a0dff51616897410
+tanggal_pengundangan: '2009-10-29'
+tanggal_berlaku: '2010-01-01'
+lembaran_negara: 'LN. 2009/ No. 156, TLN NO. 5075, LL SETNEG : 33 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-47-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu47-2009.pdf
+bpk:
+  id: 38792
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28121/UU%20Nomor%2047%20Tahun%202009.pdf
+    bpk_file_id: 28121
+    filename: UU Nomor 47 Tahun 2009.pdf
+    sha256: 9f0cfd7f427105c2fda8dffa747556f41de755b3cf902879d52a39a6e6da9937
+    bytes: 263620
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_2_2010
+      citation: UU No. 2 Tahun 2010
+      tentang: Perubahan atas Undang-Undang Nomor 47 Tahun 2009 tentang Anggaran Pendapatan
+        dan Belanja Negara Tahun Anggaran 2010
+      url: https://peraturan.bpk.go.id/Details/38537/uu-no-2-tahun-2010
+      note: null
+uji_materi: null

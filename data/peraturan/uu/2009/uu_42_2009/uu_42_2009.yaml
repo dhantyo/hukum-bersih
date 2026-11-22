@@ -14,8 +14,8 @@ tanggal_penetapan: '2009-10-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-42-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu42-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38787/uu-no-42-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28116/UU%20Nomor%2042%20Tahun%202009.pdf
 relationships:
   amends:
   - id: uu_8_1983
@@ -55,4 +55,53 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_42_2009_2009-10-15.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 17bb1512014f0eda9364f84baa33d0439633ac1cdd48801c134d105e6b58d444
 pdf_sha256: aea74684ce4537cf243e7f98e30a0b66de874d92b0b20423a6d45d7e68135531
+tanggal_pengundangan: '2009-10-15'
+tanggal_berlaku: '2010-04-01'
+lembaran_negara: 'LN. 2009/ No. 150, TLN NO. 5069, LL SETNEG : 25 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-42-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu42-2009.pdf
+bpk:
+  id: 38787
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28116/UU%20Nomor%2042%20Tahun%202009.pdf
+    bpk_file_id: 28116
+    filename: UU Nomor 42 Tahun 2009.pdf
+    sha256: 17bb1512014f0eda9364f84baa33d0439633ac1cdd48801c134d105e6b58d444
+    bytes: 263002
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_7_2021
+      citation: UU No. 7 Tahun 2021
+      tentang: Harmonisasi Peraturan Perpajakan
+      url: https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021
+      note: null
+    Mengubah:
+    - id: uu_11_1994
+      citation: UU No. 11 Tahun 1994
+      tentang: Perubahan atas Undang-Undang Nomor 8 Tahun 1983 tentang Pajak Pertambahan
+        Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah
+      url: https://peraturan.bpk.go.id/Details/46235/uu-no-11-tahun-1994
+      note: null
+    - id: uu_8_1983
+      citation: UU No. 8 Tahun 1983
+      tentang: Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang
+        Mewah
+      url: https://peraturan.bpk.go.id/Details/46990/uu-no-8-tahun-1983
+      note: null
+uji_materi:
+- putusan: 39/PUU-XIV/2016
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/7/39_PUU-XIV_2016.pdf
+  amar: Penjelasan Pasal 4A ayat (2) huruf b Undang-Undang Nomor 42 Tahun 2009 tentang
+    Perubahan Ketiga atas Undang-Undang Nomor 8 Tahun 1983 tentang Pajak Pertambahan
+    Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah bertentangan dengan
+    UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat sepanjang rincian
+    "barang kebutuhan pokok yang sangat dibutuhkan rakyat banyak" yang termuat dalam
+    Penjelasan Pasal 4A ayat (2) huruf b Undang-Undang Nomor 42 Tahun 2009 tersebut
+    diartikan limitatif.

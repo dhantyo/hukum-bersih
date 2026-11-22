@@ -13,8 +13,8 @@ tanggal_penetapan: '2010-04-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-2010
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+1+Tahun+2010.pdf
+source_url: https://peraturan.bpk.go.id/Details/38536/uu-no-1-tahun-2010
+source_pdf_url: https://peraturan.bpk.go.id/Download/27781/UU%20Nomor%201%20Tahun%202010.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2010_2010-04-01.txt
   pasal_count: 11
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f79b7b47b265b112680fdc836a1ace10707a395905ad1dd74fc805b6d1abf528
 pdf_sha256: f79b7b47b265b112680fdc836a1ace10707a395905ad1dd74fc805b6d1abf528
+tanggal_pengundangan: '2010-04-01'
+tanggal_berlaku: '2010-04-01'
+lembaran_negara: 'LN. 2010/ No. 58 , TLN NO. 5124 , LL SETNEG : 8 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-2010
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+1+Tahun+2010.pdf
+bpk:
+  id: 38536
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27781/UU%20Nomor%201%20Tahun%202010.pdf
+    bpk_file_id: 27781
+    filename: UU Nomor 1 Tahun 2010.pdf
+    sha256: f79b7b47b265b112680fdc836a1ace10707a395905ad1dd74fc805b6d1abf528
+    bytes: 145433
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

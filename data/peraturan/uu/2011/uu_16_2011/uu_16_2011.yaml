@@ -11,8 +11,8 @@ tanggal_penetapan: '2011-11-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-2011
-source_pdf_url: https://peraturan.go.id/files/uu16-2011bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/39234/uu-no-16-tahun-2011
+source_pdf_url: https://peraturan.bpk.go.id/Download/28661/UU%2016%20Tahun%202011.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2011_2011-11-02.txt
   pasal_count: 25
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 24f4e4a7de57ff9a65a1a70f3edaee9ba9fb63679cf406d7b023e99fdbdb1835
 pdf_sha256: 2ef0aa0ef077408d26b248c0c1986d7a9ab458adf0801d1e1ea0702cfc5f6ee2
+tanggal_penetapan_bpk: '2011-10-31'
+tanggal_pengundangan: '2011-11-02'
+tanggal_berlaku: '2011-11-02'
+lembaran_negara: 'LN.2011/No. 104, TLN No. 5248, LL SETNEG: 11 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-2011
+  source_pdf_url: https://peraturan.go.id/files/uu16-2011bt.pdf
+bpk:
+  id: 39234
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28661/UU%2016%20Tahun%202011.pdf
+    bpk_file_id: 28661
+    filename: UU 16 Tahun 2011.pdf
+    sha256: 24f4e4a7de57ff9a65a1a70f3edaee9ba9fb63679cf406d7b023e99fdbdb1835
+    bytes: 192494
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

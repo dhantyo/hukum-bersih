@@ -11,8 +11,8 @@ tanggal_penetapan: '2010-11-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-2010
-source_pdf_url: https://peraturan.go.id/files/uu13-2010bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38555/uu-no-13-tahun-2010
+source_pdf_url: https://peraturan.bpk.go.id/Download/27802/UU%20Nomor%20%2013%20Tahun%202010.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,42 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2010_2010-11-24.txt
   pasal_count: 133
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0c2301eb2a0a9af6f796ce7f3c8b5ec9a788fb78990d6d2a2e5ecb4c328f03bf
 pdf_sha256: 544c76698a43275c82c242ad65af3b90bcfe567451447c1656ebd1fad1f4bd25
+tanggal_pengundangan: '2010-11-24'
+tanggal_berlaku: '2010-11-24'
+lembaran_negara: 'LN. 2010/ No. 132, TLN NO. 5170, LL SETNEG : 54 HLM'
+subjek: PANGAN, PERTANIAN DAN PETERNAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-2010
+  source_pdf_url: https://peraturan.go.id/files/uu13-2010bt.pdf
+bpk:
+  id: 38555
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27802/UU%20Nomor%20%2013%20Tahun%202010.pdf
+    bpk_file_id: 27802
+    filename: UU Nomor  13 Tahun 2010.pdf
+    sha256: 0c2301eb2a0a9af6f796ce7f3c8b5ec9a788fb78990d6d2a2e5ecb4c328f03bf
+    bytes: 288715
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+uji_materi: null

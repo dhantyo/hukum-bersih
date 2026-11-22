@@ -12,8 +12,8 @@ tanggal_penetapan: '2010-10-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-2010
-source_pdf_url: https://peraturan.go.id/files/uu8-2010bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38547/uu-no-8-tahun-2010
+source_pdf_url: https://peraturan.bpk.go.id/Download/27793/UU%20Nomor%20%208%20Tahun%202010.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,4 +31,54 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_2010_2010-10-22.txt
   pasal_count: 100
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: fbe09bac263214d6cae1eb21344fab2a7331cef885a6fbfe3d848d4c69500967
 pdf_sha256: 34e763d0a51ecf9cc7b4504aabb1cfd27c4995d0d6e7d7952a037f91cfdd2666
+tanggal_pengundangan: '2010-10-22'
+tanggal_berlaku: '2010-10-22'
+lembaran_negara: 'LN. 2010/ No. 122 , TLN NO. 5164, LL SETNEG : 41 HLM'
+subjek: PENCUCIAN UANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-2010
+  source_pdf_url: https://peraturan.go.id/files/uu8-2010bt.pdf
+bpk:
+  id: 38547
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27793/UU%20Nomor%20%208%20Tahun%202010.pdf
+    bpk_file_id: 27793
+    filename: UU Nomor  8 Tahun 2010.pdf
+    sha256: fbe09bac263214d6cae1eb21344fab2a7331cef885a6fbfe3d848d4c69500967
+    bytes: 244751
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 2 ayat (1), Pasal 3, Pasal 4, dan Pasal 5 Undang-Undang Nomor 8
+        Tahun 2010
+    Mencabut:
+    - id: uu_15_2002
+      citation: UU No. 15 Tahun 2002
+      tentang: Tindak Pidana Pencucian Uang
+      url: https://peraturan.bpk.go.id/Details/44452/uu-no-15-tahun-2002
+      note: null
+uji_materi:
+- putusan: PUTUSAN Nomor 15/PUU-XIX/2021
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/151/putusan_mkri_7942.pdf
+  amar: 'Amar Putusan: 1. Mengabulkan permohonan para Pemohon untuk seluruhnya; 2.
+    Menyatakan Penjelasan Pasal 74 Undang-Undang Nomor 8 Tahun 2010 tentang Pencegahan
+    dan Pemberantasan Tindak Pidana Pencucian Uang (Lembaran Negara Republik Indonesia
+    Tahun 2010 Nomor 122, Tambahan Lembaran Negara Republik Indonesia Nomor 5164)
+    sepanjang kalimat “Yang dimaksud dengan “penyidik tindak pidana asal” adalah pejabat
+    dari instansi yang oleh undang-undang diberi kewenangan untuk melakukan penyidikan,
+    yaitu Kepolisian Negara Republik Indonesia, Kejaksaan, Komisi Pemberantasan Korupsi
+    (KPK), Badan Narkotika Nasional (BNN), serta Direktorat Jenderal Pajak dan Direktorat
+    Jenderal Bea dan Cukai Kementerian Keuangan Republik Indonesia” bertentangan dengan
+    Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan tidak memiliki kekuatan
+    hukum mengikat sepanjang tidak dimaknai “Yang dimaksud dengan ‘penyidik tindak
+    pidana asal’ adalah pejabat atau instansi yang oleh peraturan perundang-undangan
+    diberi kewenangan untuk melakukan penyidikan”; 3. Memerintahkan pemuatan Putusan
+    ini dalam Berita Negara Republik Indonesia sebagaimana mestinya.'

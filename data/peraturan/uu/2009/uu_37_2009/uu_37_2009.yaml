@@ -10,20 +10,19 @@ tentang: PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 3 TAHUN 20
   TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 9 TAHUN 1992 TENTANG KEIMIGRASIAN MENJADI
   UNDANG-UNDANG
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 6 Tahun 2011 Tentang Keimigrasian'
+status: tidak_berlaku
 tanggal_penetapan: '2009-10-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-37-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu37-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38780/uu-no-37-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28109/UU%20Nomor%2037%20Tahun%202009.pdf
 relationships:
   amends:
   - id: uu_9_1992
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_6_2011
+  revoked_by: []
   enacts:
   - perppu_3_2009
   enacted_by: []
@@ -35,4 +34,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_37_2009_2009-10-14.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 57791b56db6f3121717fb1a1dc2c23ffd23cc37637af2f9e21c6205992e302a1
 pdf_sha256: 90d9cf0e1a67bd27d2960f8066a4c2383db7e331b548e4cef0b1aa379b6cf012
+tanggal_pengundangan: '2009-10-14'
+tanggal_berlaku: '2009-10-14'
+lembaran_negara: 'LN. 2009/ No. 145, TLN NO. 5037, LL SETNEG : 3 HLM'
+subjek: KEWARGANEGARAAN DAN IMIGRASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-37-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu37-2009.pdf
+bpk:
+  id: 38780
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28109/UU%20Nomor%2037%20Tahun%202009.pdf
+    bpk_file_id: 28109
+    filename: UU Nomor 37 Tahun 2009.pdf
+    sha256: 57791b56db6f3121717fb1a1dc2c23ffd23cc37637af2f9e21c6205992e302a1
+    bytes: 56541
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_6_2011
+      citation: UU No. 6 Tahun 2011
+      tentang: Keimigrasian
+      url: https://peraturan.bpk.go.id/Details/39140/uu-no-6-tahun-2011
+      note: null
+    Mengubah:
+    - id: uu_9_1992
+      citation: UU No. 9 Tahun 1992
+      tentang: Keimigrasian
+      url: https://peraturan.bpk.go.id/Details/46601/uu-no-9-tahun-1992
+      note: null
+uji_materi: null

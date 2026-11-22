@@ -13,8 +13,8 @@ tanggal_penetapan: '2011-08-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2011
-source_pdf_url: https://peraturan.go.id/files/uu10-2011.pdf
+source_url: https://peraturan.bpk.go.id/Details/39186/uu-no-10-tahun-2011
+source_pdf_url: https://peraturan.bpk.go.id/Download/28607/UU%2010%20Tahun%202011.pdf
 relationships:
   amends:
   - id: uu_32_1997
@@ -72,5 +72,38 @@ versions:
   date: '2011-08-08'
   date_basis: tanggal_penetapan
   text: uu_10_2011_2011-08-08.txt
-  pasal_count: 6
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8d6fff250b137b94306b9d7230dd52a554c0057321d3af9f9650b836c264d8ed
 pdf_sha256: 6d3f2817bdb63172a9bfae0a877f385f60bd8088139056539fb27c8b0bea8337
+tanggal_pengundangan: '2011-08-08'
+tanggal_berlaku: '2011-08-08'
+lembaran_negara: 'LN.2011/No. 79, TLN No. 5232, LL SETNEG: 36 HLM'
+subjek: PASAR MODAL DAN PERDAGANGAN BERJANGKA KOMODITI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2011
+  source_pdf_url: https://peraturan.go.id/files/uu10-2011.pdf
+bpk:
+  id: 39186
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28607/UU%2010%20Tahun%202011.pdf
+    bpk_file_id: 28607
+    filename: UU 10 Tahun 2011.pdf
+    sha256: 8d6fff250b137b94306b9d7230dd52a554c0057321d3af9f9650b836c264d8ed
+    bytes: 333536
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+    Mengubah:
+    - id: uu_32_1997
+      citation: UU No. 32 Tahun 1997
+      tentang: Perdagangan Berjangka Komoditi
+      url: https://peraturan.bpk.go.id/Details/46052/uu-no-32-tahun-1997
+      note: null
+uji_materi: null

@@ -11,8 +11,8 @@ tanggal_penetapan: '2009-10-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-39-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu39-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/54483/uu-no-39-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/43905/UU%20Nomor%2039%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,57 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_39_2009_2009-10-14.txt
   pasal_count: 50
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 72f0791fa69652fe3ed2f9e049a13d8d940a0b6a0871d2fefe5ca835470188f8
 pdf_sha256: 648a2878e29c4343e8e087ab7b1cefa5b8bfca6e79aeed0da557718cb14dfabd
+tanggal_pengundangan: '2009-10-14'
+tanggal_berlaku: '2009-10-14'
+lembaran_negara: 'LN.2009/ No. 147 , TLN NO. 5066 , LL SETNEG : 21 HLM'
+subjek: PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-39-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu39-2009.pdf
+bpk:
+  id: 54483
+  files:
+  - url: https://peraturan.bpk.go.id/Download/43905/UU%20Nomor%2039%20Tahun%202009.pdf
+    bpk_file_id: 43905
+    filename: UU Nomor 39 Tahun 2009.pdf
+    sha256: 72f0791fa69652fe3ed2f9e049a13d8d940a0b6a0871d2fefe5ca835470188f8
+    bytes: 138730
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_44_2007
+      citation: UU No. 44 Tahun 2007
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        2007 tentang Perubahan Atas Undang-Undang Nomor 36 Tahun 2000 tentang Penetapan
+        Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2000 tentang Kawasan
+        Perdagangan Bebas dan Pelabuhan Bebas Menjadi Undang-Undang Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/39971/uu-no-44-tahun-2007
+      note: null
+    - id: uu_36_2000
+      citation: UU No. 36 Tahun 2000
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        2000 tentang Kawasan Perdagangan Bebas dan Pelabuhan Bebas Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/45242/uu-no-36-tahun-2000
+      note: null
+uji_materi: null

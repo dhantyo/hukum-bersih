@@ -12,8 +12,8 @@ tanggal_penetapan: '2009-10-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-41-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu41-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38786/uu-no-41-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28115/UU%20Nomor%2041%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,42 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_41_2009_2009-10-14.txt
   pasal_count: 77
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6cb5e98141bee89d798241e1687110e0c1b899a59c094ce9ed242543f291d061
 pdf_sha256: 7bccba885e2bd2b1382614abf3d6314c172afd7e5994bd050c298ac08fd545b4
+tanggal_pengundangan: '2009-10-14'
+tanggal_berlaku: '2009-10-14'
+lembaran_negara: 'LN. 2009/ No. 149 , TLN NO. 5068, LL SETNEG : 39 HLM'
+subjek: PANGAN, PERTANIAN DAN PETERNAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-41-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu41-2009.pdf
+bpk:
+  id: 38786
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28115/UU%20Nomor%2041%20Tahun%202009.pdf
+    bpk_file_id: 28115
+    filename: UU Nomor 41 Tahun 2009.pdf
+    sha256: 6cb5e98141bee89d798241e1687110e0c1b899a59c094ce9ed242543f291d061
+    bytes: 231973
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+uji_materi: null

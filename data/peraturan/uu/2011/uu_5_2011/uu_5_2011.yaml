@@ -11,8 +11,8 @@ tanggal_penetapan: '2011-05-03'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-2011
-source_pdf_url: https://peraturan.go.id/files/uu5-2011bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/39139/uu-no-5-tahun-2011
+source_pdf_url: https://peraturan.bpk.go.id/Download/28548/UU%205%20Tahun%202011.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_2011_2011-05-03.txt
   pasal_count: 62
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b74484fa26cc6bb9ad1d7a6a9671e1104e9d8eddf274b70c50ecfec5ca41f2a3
 pdf_sha256: d9f58e0a4bee69b842f23e8b3929d624e96b731dbce2f3d4a04cf865dd39ceda
+tanggal_pengundangan: '2011-05-03'
+tanggal_berlaku: '2011-05-03'
+lembaran_negara: 'LN.2011/No. 51, TLN No. 5215, LL SETNEG: 36 HLM'
+subjek: KEBIJAKAN AKUNTANSI - JABATAN / PROFESI / KEAHLIAN / SERTIFIKASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-2011
+  source_pdf_url: https://peraturan.go.id/files/uu5-2011bt.pdf
+bpk:
+  id: 39139
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28548/UU%205%20Tahun%202011.pdf
+    bpk_file_id: 28548
+    filename: UU 5 Tahun 2011.pdf
+    sha256: b74484fa26cc6bb9ad1d7a6a9671e1104e9d8eddf274b70c50ecfec5ca41f2a3
+    bytes: 400569
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

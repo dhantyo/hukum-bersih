@@ -11,8 +11,8 @@ tanggal_penetapan: '2011-01-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-2011
-source_pdf_url: https://peraturan.go.id/files/uu1-2011bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/39128/uu-no-1-tahun-2011
+source_pdf_url: https://peraturan.bpk.go.id/Download/28534/UU%201%20Tahun%202011.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,48 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2011_2011-01-12.txt
   pasal_count: 167
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: cd875928a9f6755d2526f57addaa7f23ccd304aee52e24e040dae23fe0c1a098
 pdf_sha256: b9e84ddd2fabe49096f06b0c45f0d251855e0796b481ec478f257f8c80663340
+tanggal_pengundangan: '2011-01-12'
+tanggal_berlaku: '2011-01-12'
+lembaran_negara: 'LN.2011/No. 7, TLN No. 5188, LL SETNEG: 89 HLM'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-2011
+  source_pdf_url: https://peraturan.go.id/files/uu1-2011bt.pdf
+bpk:
+  id: 39128
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28534/UU%201%20Tahun%202011.pdf
+    bpk_file_id: 28534
+    filename: UU 1 Tahun 2011.pdf
+    sha256: cd875928a9f6755d2526f57addaa7f23ccd304aee52e24e040dae23fe0c1a098
+    bytes: 593561
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_4_1992
+      citation: UU No. 4 Tahun 1992
+      tentang: Perumahan dan Permukiman
+      url: https://peraturan.bpk.go.id/Details/46596/uu-no-4-tahun-1992
+      note: null
+uji_materi: null

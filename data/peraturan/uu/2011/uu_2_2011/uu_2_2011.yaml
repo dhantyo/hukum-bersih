@@ -12,8 +12,8 @@ tanggal_penetapan: '2011-01-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-2011
-source_pdf_url: https://peraturan.go.id/files/UU+No.+2+Tahun+2011.pdf
+source_url: https://peraturan.bpk.go.id/Details/39131/uu-no-2-tahun-2011
+source_pdf_url: https://peraturan.bpk.go.id/Download/224586/UU%20No.%202%20Tahun%202011.pdf
 relationships:
   amends:
   - id: uu_2_2008
@@ -50,5 +50,41 @@ versions:
   date: '2011-01-05'
   date_basis: tanggal_penetapan
   text: uu_2_2011_2011-01-05.txt
-  pasal_count: 5
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a140b717965b108b458f7f6bd6c75bc3e812c63ae142dccaa8f54dd60dc2aa04
 pdf_sha256: a140b717965b108b458f7f6bd6c75bc3e812c63ae142dccaa8f54dd60dc2aa04
+tanggal_penetapan_bpk: '2011-01-15'
+tanggal_pengundangan: '2011-01-15'
+tanggal_berlaku: '2011-01-15'
+lembaran_negara: 'LN.2011/No. 8, TLN No. 5189, LL SETNEG: 15 HLM'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-2011
+  source_pdf_url: https://peraturan.go.id/files/UU+No.+2+Tahun+2011.pdf
+bpk:
+  id: 39131
+  files:
+  - url: https://peraturan.bpk.go.id/Download/224586/UU%20No.%202%20Tahun%202011.pdf
+    bpk_file_id: 224586
+    filename: UU No. 2 Tahun 2011.pdf
+    sha256: a140b717965b108b458f7f6bd6c75bc3e812c63ae142dccaa8f54dd60dc2aa04
+    bytes: 129409
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_2_2008
+      citation: UU No. 2 Tahun 2008
+      tentang: Partai Politik
+      url: https://peraturan.bpk.go.id/Details/38859/uu-no-2-tahun-2008
+      note: null
+uji_materi:
+- putusan: 35/PUU-IX/2011
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/106/putusan_sidang_Putusan%2035-PUU-IX-2011%20TELAH%20BACA.pdf
+  amar: Pasal 51 ayat (1a) Undang-Undang Nomor 2 Tahun 2011 tentang Partai Politik
+    bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat
+    sepanjang tidak dimaknai “Verifikasi partai politik yang dibentuk setelah Undang-Undang
+    ini harus dilakukan paling lambat 2 ½ (dua setengah) tahun sebelum hari pemungutan
+    suara untuk mengikuti pemilihan umum pada pemilihan umum pertama kali setelah
+    partai politik yang bersangkutan didirikan dan berbadan hukum”

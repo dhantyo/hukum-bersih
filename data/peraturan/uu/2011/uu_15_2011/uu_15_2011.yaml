@@ -6,21 +6,19 @@ year: 2011
 title: Undang-Undang Nomor 15 Tahun 2011 tentang Penyelenggara Pemilihan Umum
 tentang: PENYELENGGARA PEMILIHAN UMUM
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 7 Tahun 2017 Tentang Pemilihan
-  Umum'
+status: tidak_berlaku
 tanggal_penetapan: '2011-10-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-2011
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+15+Tahun+2011.pdf
+source_url: https://peraturan.bpk.go.id/Details/37656/uu-no-15-tahun-2011
+source_pdf_url: https://peraturan.bpk.go.id/Download/26756/UU%20Nomor%2015%20Tahun%202011.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_22_2007
-  revoked_by:
-  - uu_7_2017
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -31,4 +29,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2011_2011-10-16.txt
   pasal_count: 137
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 123f69573e5d7dcf7280964c44d56957031c9cf9dfd57c1a33adef6b71eced95
 pdf_sha256: 123f69573e5d7dcf7280964c44d56957031c9cf9dfd57c1a33adef6b71eced95
+tanggal_pengundangan: '2011-10-16'
+tanggal_berlaku: '2011-10-16'
+lembaran_negara: 'LN. 2011/ No. 101 , TLN No. 5246, LL SETNEG : 99 HLM'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-2011
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+15+Tahun+2011.pdf
+bpk:
+  id: 37656
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26756/UU%20Nomor%2015%20Tahun%202011.pdf
+    bpk_file_id: 26756
+    filename: UU Nomor 15 Tahun 2011.pdf
+    sha256: 123f69573e5d7dcf7280964c44d56957031c9cf9dfd57c1a33adef6b71eced95
+    bytes: 597509
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_7_2017
+      citation: UU No. 7 Tahun 2017
+      tentang: Pemilihan Umum
+      url: https://peraturan.bpk.go.id/Details/37644/uu-no-7-tahun-2017
+      note: null
+    Mencabut:
+    - id: uu_22_2007
+      citation: UU No. 22 Tahun 2007
+      tentang: Penyelenggara Pemilihan Umum
+      url: https://peraturan.bpk.go.id/Details/39892/uu-no-22-tahun-2007
+      note: null
+uji_materi: null

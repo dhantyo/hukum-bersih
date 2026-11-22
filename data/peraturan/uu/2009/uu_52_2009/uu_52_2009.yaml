@@ -12,8 +12,8 @@ tanggal_penetapan: '2009-10-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-52-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu52-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38852/uu-no-52-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28205/UU%20Nomor%2052%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_52_2009_2009-10-29.txt
   pasal_count: 63
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 11b66d0912b7ba44397f81611b182822b18182de16896b7eef82b128b58a2a31
 pdf_sha256: 3afd6d1f7775f8cc7d71e2f7e19f7efbf8535940087dd070e8a07c573feb2908
+tanggal_pengundangan: '2009-10-29'
+tanggal_berlaku: '2009-10-29'
+lembaran_negara: 'LN. 2009/ No. 161, TLN NO. 5080, LL SETNEG : 36 HLM'
+subjek: KEPENDUDUKAN DAN PERKAWINAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-52-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu52-2009.pdf
+bpk:
+  id: 38852
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28205/UU%20Nomor%2052%20Tahun%202009.pdf
+    bpk_file_id: 28205
+    filename: UU Nomor 52 Tahun 2009.pdf
+    sha256: 11b66d0912b7ba44397f81611b182822b18182de16896b7eef82b128b58a2a31
+    bytes: 156807
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_10_1992
+      citation: UU No. 10 Tahun 1992
+      tentang: Perkembangan Kependudukan Dan Pembangunan Keluarga Sejahtera
+      url: https://peraturan.bpk.go.id/Details/46602/uu-no-10-tahun-1992
+      note: null
+uji_materi: null

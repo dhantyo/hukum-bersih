@@ -14,8 +14,8 @@ tanggal_penetapan: '2010-06-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-2010
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+3+Tahun+2010.pdf
+source_url: https://peraturan.bpk.go.id/Details/38538/uu-no-3-tahun-2010
+source_pdf_url: https://peraturan.bpk.go.id/Download/27783/UU%20Nomor%203%20Tahun%202010.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,4 +31,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2010_2010-06-15.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 69cdc464cb0b3bcc6ca27e9cb2d5d7062d5f4563e3060e02f14c4603d2c15bcc
 pdf_sha256: 69cdc464cb0b3bcc6ca27e9cb2d5d7062d5f4563e3060e02f14c4603d2c15bcc
+tanggal_pengundangan: '2010-06-15'
+tanggal_berlaku: '2010-06-15'
+lembaran_negara: 'LN. 2010/ No. 76, TLN NO. 5137 LL SETNEG : 3 HLM'
+subjek: PEMBENTUKAN, PERUBAHAN, DAN PEMBUBARAN KOMISI / KOMITE / BADAN / DEWAN / STAF
+  KHUSUS / TIM / PANITIA - TINDAK PIDANA KORUPSI, PENCEGAHAN KORUPSI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-2010
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+3+Tahun+2010.pdf
+bpk:
+  id: 38538
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27783/UU%20Nomor%203%20Tahun%202010.pdf
+    bpk_file_id: 27783
+    filename: UU Nomor 3 Tahun 2010.pdf
+    sha256: 69cdc464cb0b3bcc6ca27e9cb2d5d7062d5f4563e3060e02f14c4603d2c15bcc
+    bytes: 44969
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

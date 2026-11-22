@@ -11,8 +11,8 @@ tanggal_penetapan: '2011-06-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-2011
-source_pdf_url: https://peraturan.go.id/files/uu7-2011.pdf
+source_url: https://peraturan.bpk.go.id/Details/39182/uu-no-7-tahun-2011
+source_pdf_url: https://peraturan.bpk.go.id/Download/28597/UU%207%20Tahun%202011.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2011_2011-06-28.txt
   pasal_count: 48
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 74e102520f0bc92600c39e5bd8ed6a823f45d142a20d5ec4812de017ed83d666
 pdf_sha256: 8cf519e4168b1945027068d957bfc2075ddc26f6abc3326f93eabd90bd99af5f
+tanggal_pengundangan: '2011-06-28'
+tanggal_berlaku: '2011-06-28'
+lembaran_negara: 'LN.2011/No. 64, TLN No. 5223, LL SETNEG: 22 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN - PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-2011
+  source_pdf_url: https://peraturan.go.id/files/uu7-2011.pdf
+bpk:
+  id: 39182
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28597/UU%207%20Tahun%202011.pdf
+    bpk_file_id: 28597
+    filename: UU 7 Tahun 2011.pdf
+    sha256: 74e102520f0bc92600c39e5bd8ed6a823f45d142a20d5ec4812de017ed83d666
+    bytes: 257057
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 36 ayat (1), ayat (2), ayat (3), dan ayat (4) Undang-Undang Nomor
+        7 Tahun 2011
+    Diubah dengan:
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+uji_materi: null

@@ -11,8 +11,8 @@ tanggal_penetapan: '2009-10-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-40-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu40-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38784/uu-no-40-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28113/UU%20Nomor%2040%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_40_2009_2009-10-14.txt
   pasal_count: 54
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 762a48790c064a69a3ef884be03ab2e6b9a66f768520f5fc29f9c5ee730ee1b8
 pdf_sha256: 4d5598f2a90f0ced1cb0c54d1d26cf44beb65ad226ef5d7a6438b51ef6143f9f
+tanggal_pengundangan: '2009-10-14'
+tanggal_berlaku: '2009-10-14'
+lembaran_negara: 'LN. 2009/ No. 148, TLN NO. 5067, LL SETNEG : 25 HLM'
+subjek: PEMUDA DAN OLAH RAGA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-40-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu40-2009.pdf
+bpk:
+  id: 38784
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28113/UU%20Nomor%2040%20Tahun%202009.pdf
+    bpk_file_id: 28113
+    filename: UU Nomor 40 Tahun 2009.pdf
+    sha256: 762a48790c064a69a3ef884be03ab2e6b9a66f768520f5fc29f9c5ee730ee1b8
+    bytes: 109593
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

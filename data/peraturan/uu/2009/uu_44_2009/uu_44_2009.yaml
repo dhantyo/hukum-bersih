@@ -6,19 +6,18 @@ year: 2009
 title: Undang-Undang Nomor 44 Tahun 2009 tentang Rumah Sakit
 tentang: RUMAH SAKIT
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 17 Tahun 2023 Tentang Kesehatan'
+status: tidak_berlaku
 tanggal_penetapan: '2009-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-44-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu0442009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38789/uu-no-44-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28118/UU%20Nomor%2044%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_17_2023
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -29,4 +28,48 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_44_2009_2009-10-28.txt
   pasal_count: 66
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a738924a7e2b47da0a1ed0af6ade188a884a05d924ce3a9dc67103f7dcc50aa2
 pdf_sha256: 779db688a47e83bf4dd07628305513b18ed0d239c1eefdbe32771b5656e3559f
+tanggal_pengundangan: '2009-10-28'
+tanggal_berlaku: '2009-10-28'
+lembaran_negara: 'LN. 2009/ No. 153, TLN NO. 5072, LL SETNEG : 41 HLM'
+subjek: KESEHATAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-44-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu0442009.pdf
+bpk:
+  id: 38789
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28118/UU%20Nomor%2044%20Tahun%202009.pdf
+    bpk_file_id: 28118
+    filename: UU Nomor 44 Tahun 2009.pdf
+    sha256: a738924a7e2b47da0a1ed0af6ade188a884a05d924ce3a9dc67103f7dcc50aa2
+    bytes: 192555
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_17_2023
+      citation: UU No. 17 Tahun 2023
+      tentang: Kesehatan
+      url: https://peraturan.bpk.go.id/Details/258028/uu-no-17-tahun-2023
+      note: null
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+uji_materi: null

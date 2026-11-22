@@ -11,8 +11,8 @@ tanggal_penetapan: '2009-10-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-48-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu48-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38793/uu-no-48-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28122/UU%20Nomor%2048%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_48_2009_2009-10-29.txt
   pasal_count: 64
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6955cc3588a48cd07a623bb5c2140cf53f717f6ebdc7177d5043a52c06f6f084
 pdf_sha256: c85ac683e5046daafe9e23de6852c1f119ffdbb0434f93d5151823fd98525d71
+tanggal_pengundangan: '2009-10-29'
+tanggal_berlaku: '2009-10-29'
+lembaran_negara: 'LN. 2009/ No. 157, TLN NO. 5076, LL SETNEG : 21 HLM'
+subjek: HUKUM ACARA DAN PERADILAN - DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN
+  / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-48-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu48-2009.pdf
+bpk:
+  id: 38793
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28122/UU%20Nomor%2048%20Tahun%202009.pdf
+    bpk_file_id: 28122
+    filename: UU Nomor 48 Tahun 2009.pdf
+    sha256: 6955cc3588a48cd07a623bb5c2140cf53f717f6ebdc7177d5043a52c06f6f084
+    bytes: 130573
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_4_2004
+      citation: UU No. 4 Tahun 2004
+      tentang: Kekuasaan Kehakiman
+      url: https://peraturan.bpk.go.id/Details/40464/uu-no-4-tahun-2004
+      note: null
+uji_materi:
+- putusan: 97/PUU-XI/2013
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/88/putusan_sidang_1694_97%20PUU%202013-UU_Pemda%20dan%20UU_kekuasaankehakiman-telahucap19Mei2014%20--%20header-%20wmActionWiz.pdf
+  amar: Pasal 29 ayat (1) huruf e Undang-Undang Nomor 48 Tahun 2009 tentang Kekuasaan
+    Kehakiman bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan
+    hukum mengikat.

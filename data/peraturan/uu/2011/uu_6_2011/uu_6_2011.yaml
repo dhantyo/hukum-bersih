@@ -11,14 +11,13 @@ tanggal_penetapan: '2011-05-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-2011
-source_pdf_url: https://peraturan.go.id/files/uu6-2011bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/39140/uu-no-6-tahun-2011
+source_pdf_url: https://peraturan.bpk.go.id/Download/28550/UU%206%20Tahun%202011.pdf
 relationships:
   amends: []
   amended_by:
   - uu_63_2024
   revokes:
-  - uu_37_2009
   - uu_9_1992
   revoked_by: []
   enacts: []
@@ -31,4 +30,71 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_2011_2011-05-05.txt
   pasal_count: 145
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 63708ca9b50ac067834a50c395385fdc6abda22e6e51def88983cd1ad685edc4
 pdf_sha256: cd2345a2bb789a66c190cd75663f517d1a109579cb64f53dd3e6e1209da1146d
+tanggal_pengundangan: '2011-05-05'
+tanggal_berlaku: '2011-05-05'
+lembaran_negara: 'LN.2011/No. 52, TLN No. 5216, LL SETNEG: 57 HLM'
+subjek: KEWARGANEGARAAN DAN IMIGRASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-2011
+  source_pdf_url: https://peraturan.go.id/files/uu6-2011bt.pdf
+bpk:
+  id: 39140
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28550/UU%206%20Tahun%202011.pdf
+    bpk_file_id: 28550
+    filename: UU 6 Tahun 2011.pdf
+    sha256: 63708ca9b50ac067834a50c395385fdc6abda22e6e51def88983cd1ad685edc4
+    bytes: 450548
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 120 ayat (1) dan Pasal 126 huruf e Undang-Undang Nomor 6 Tahun 2011
+    Diubah dengan:
+    - id: uu_63_2024
+      citation: UU No. 63 Tahun 2024
+      tentang: Perubahan Ketiga atas Undang-Undang Nomor 6 Tahun 2011 tentan Keimigrasian
+      url: https://peraturan.bpk.go.id/Details/304897/uu-no-63-tahun-2024
+      note: null
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_37_2009
+      citation: UU No. 37 Tahun 2009
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 3 tahun
+        2009 tentang Perubahan Atas Undang-Undang Nomor 9 tahun 1992 tentang Keimigrasian
+        menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/38780/uu-no-37-tahun-2009
+      note: null
+    - id: uu_9_1992
+      citation: UU No. 9 Tahun 1992
+      tentang: Keimigrasian
+      url: https://peraturan.bpk.go.id/Details/46601/uu-no-9-tahun-1992
+      note: null
+uji_materi:
+- putusan: 64/PUU-IX/2011
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/78/putusan_sidang_64%20PUU%202011-TELAH%20BACA%2020-06-2012.pdf
+  amar: Pasal 97 ayat (1) Undang-Undang Nomor 6 Tahun 2011 tentang Keimigrasian sepanjang
+    frasa “setiap kali” adalah bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai
+    kekuatan hukum mengikat.

@@ -12,8 +12,8 @@ tanggal_penetapan: '2009-10-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-50-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu50-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38795/uu-no-50-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28124/UU%20Nomor%2050%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,42 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_50_2009_2009-10-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2c437ba31d5cd1da75960ec9e18d9b546c47bc25cc2fe3220ed95bf2a37c450c
 pdf_sha256: 7328f92b701df31420b3811ebe9f68adcf692a5caad58644a986ca56b4598912
+tanggal_pengundangan: '2009-10-29'
+tanggal_berlaku: '2009-10-29'
+lembaran_negara: 'LN. 2009/ No.159, TLN NO. 5078, LL SETNEG : 20 HLM'
+subjek: HUKUM ACARA DAN PERADILAN - DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN
+  / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-50-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu50-2009.pdf
+bpk:
+  id: 38795
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28124/UU%20Nomor%2050%20Tahun%202009.pdf
+    bpk_file_id: 28124
+    filename: UU Nomor 50 Tahun 2009.pdf
+    sha256: 2c437ba31d5cd1da75960ec9e18d9b546c47bc25cc2fe3220ed95bf2a37c450c
+    bytes: 119933
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_7_1989
+      citation: UU No. 7 Tahun 1989
+      tentang: Peradilan Agama
+      url: https://peraturan.bpk.go.id/Details/46804/uu-no-7-tahun-1989
+      note: null
+uji_materi:
+- putusan: 43/PUU-XIII/2015
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/45/43_PUU-XIII_2015.pdf
+  amar: a. Pasal 13A ayat (2) dan (3) Undang-Undang Nomor 50 Tahun 2009 tentang Perubahan
+    Kedua Atas Undang-Undang Nomor 7 Tahun 1989 tentang Peradilan Agama sepanjang
+    kata "bersama" dan frasa "dan Komisi Yudisial" bertentangan dengan UUD NRI Tahun
+    1945 dan tidak mempunyai kekuatan hukum mengikat. b. Pasal 13A ayat (2) dan (3)
+    Undang-Undang Nomor 50 Tahun 2009 tentang Perubahan Kedua Atas Undang-Undang Nomor
+    7 Tahun 1989 tentang Peradilan Agama selengkapnya berbunyi "Proses seleksi pengangkatan
+    hakim pengadilan agama dilakukan oleh Mahkamah Agung", selengkapnya berbunyi "Ketentuan
+    lebih lanjut mengenai proses seleksi diatur oleh Mahkamah Agung."

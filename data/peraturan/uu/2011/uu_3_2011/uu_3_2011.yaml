@@ -11,8 +11,8 @@ tanggal_penetapan: '2011-03-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-2011
-source_pdf_url: https://peraturan.go.id/files/uu3-2011bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/39133/uu-no-3-tahun-2011
+source_pdf_url: https://peraturan.bpk.go.id/Download/28540/UU%203%20Tahun%202011.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2011_2011-03-23.txt
   pasal_count: 91
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e47610254a4a0b27ae8f9f9fd1d8e3139df5a41e200b6d84d3e24db884ebf5b4
 pdf_sha256: 8ad80350de0df65ea6ae56d7efea72dc61efd512a79fee1bb21fbb71846f4ab2
+tanggal_pengundangan: '2011-03-23'
+tanggal_berlaku: '2011-03-23'
+lembaran_negara: 'LN.2011/No. 39, TLN No. 5204, LL SETNEG: 45 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-2011
+  source_pdf_url: https://peraturan.go.id/files/uu3-2011bt.pdf
+bpk:
+  id: 39133
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28540/UU%203%20Tahun%202011.pdf
+    bpk_file_id: 28540
+    filename: UU 3 Tahun 2011.pdf
+    sha256: e47610254a4a0b27ae8f9f9fd1d8e3139df5a41e200b6d84d3e24db884ebf5b4
+    bytes: 359893
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

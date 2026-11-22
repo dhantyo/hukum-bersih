@@ -11,8 +11,8 @@ tanggal_penetapan: '2011-08-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-2011
-source_pdf_url: https://peraturan.go.id/files/uu13-2011.pdf
+source_url: https://peraturan.bpk.go.id/Details/39223/uu-no-13-tahun-2011
+source_pdf_url: https://peraturan.bpk.go.id/Download/28650/UU%2013%20Tahun%202011.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2011_2011-08-18.txt
   pasal_count: 45
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6cb48e589ad24092a795e2ec429eebdbaae7eae62d89877be87e4673a8ef5581
 pdf_sha256: 8764bc580887edfc8a13c74d417c6890ff3219891cdbf2df2fb3c9160bf9bc9c
+tanggal_pengundangan: '2011-08-18'
+tanggal_berlaku: '2011-08-18'
+lembaran_negara: 'LN.2011/No. 83, TLN No. 5235, LL SETNEG: 26 HLM'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA - PROGRAM, RENCANA PEMBANGUNAN DAN RENCANA
+  KERJA - BANTUAN, SUMBANGAN, BENCANA / KEBENCANAAN, DAN PENANGGULANGAN BENCANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-2011
+  source_pdf_url: https://peraturan.go.id/files/uu13-2011.pdf
+bpk:
+  id: 39223
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28650/UU%2013%20Tahun%202011.pdf
+    bpk_file_id: 28650
+    filename: UU 13 Tahun 2011.pdf
+    sha256: 6cb48e589ad24092a795e2ec429eebdbaae7eae62d89877be87e4673a8ef5581
+    bytes: 201673
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

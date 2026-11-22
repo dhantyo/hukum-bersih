@@ -11,8 +11,8 @@ tanggal_penetapan: '2010-11-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-2010
-source_pdf_url: https://peraturan.go.id/files/uu9-2010bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38549/uu-no-9-tahun-2010
+source_pdf_url: https://peraturan.bpk.go.id/Download/27795/UU%20Nomor%209%20Tahun%202010.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2010_2010-11-19.txt
   pasal_count: 39
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2f95ad98df6232b565c3a0130c45358ccc073031b2a8fe3c0935f9588c90c4ba
 pdf_sha256: f4e78df3a8d7b154f07d493ac893a6a1503cf07b23f75aa5968d82c7e36d2776
+tanggal_pengundangan: '2010-11-19'
+tanggal_berlaku: '2010-11-19'
+lembaran_negara: 'LN. 2010/ No. 125, TLN NO.5166, LL SETNEG : 22 HLM'
+subjek: KETATANEGARAAN, KENEGARAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-2010
+  source_pdf_url: https://peraturan.go.id/files/uu9-2010bt.pdf
+bpk:
+  id: 38549
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27795/UU%20Nomor%209%20Tahun%202010.pdf
+    bpk_file_id: 27795
+    filename: UU Nomor 9 Tahun 2010.pdf
+    sha256: 2f95ad98df6232b565c3a0130c45358ccc073031b2a8fe3c0935f9588c90c4ba
+    bytes: 115956
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_8_1987
+      citation: UU No. 8 Tahun 1987
+      tentang: Protokol
+      url: https://peraturan.bpk.go.id/Details/46828/uu-no-8-tahun-1987
+      note: null
+uji_materi: null

@@ -12,8 +12,8 @@ tanggal_penetapan: '2010-11-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2010
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor++10+Tahun+2010.pdf
+source_url: https://peraturan.bpk.go.id/Details/38551/uu-no-10-tahun-2010
+source_pdf_url: https://peraturan.bpk.go.id/Download/27797/UU%20Nomor%20%2010%20Tahun%202010.pdf
 relationships:
   amends: []
   amended_by:
@@ -22,7 +22,40 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_10_2010_2010-11-19
+  kind: asli
+  source: official
+  date: '2010-11-19'
+  date_basis: tanggal_penetapan
+  text: uu_10_2010_2010-11-19.txt
+  pasal_count: 40
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7fee45d744e0a729adc1c3d6d54cdab8ad8dcb30b21b92d77e2feaf175d68136
 pdf_sha256: 7fee45d744e0a729adc1c3d6d54cdab8ad8dcb30b21b92d77e2feaf175d68136
-parse_error: 'ValueError: All strings must be XML compatible: Unicode or ASCII, no
-  NULL bytes or control characters'
+tanggal_pengundangan: '2010-11-19'
+tanggal_berlaku: '2011-01-01'
+lembaran_negara: 'LN. 2010/ No. 126 , TLN NO. 5167, LL SETNEG : 38 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2010
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor++10+Tahun+2010.pdf
+bpk:
+  id: 38551
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27797/UU%20Nomor%20%2010%20Tahun%202010.pdf
+    bpk_file_id: 27797
+    filename: UU Nomor  10 Tahun 2010.pdf
+    sha256: 7fee45d744e0a729adc1c3d6d54cdab8ad8dcb30b21b92d77e2feaf175d68136
+    bytes: 299987
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_11_2011
+      citation: UU No. 11 Tahun 2011
+      tentang: Perubahan atas Undang-Undang Nomor 10 Tahun 2010 Tentang Anggaran Pendapatan
+        dan Belanja Negara Tahun Anggaran 2011
+      url: https://peraturan.bpk.go.id/Details/39187/uu-no-11-tahun-2011
+      note: null
+uji_materi: null

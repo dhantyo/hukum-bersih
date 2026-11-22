@@ -19,8 +19,8 @@ tanggal_penetapan: '2010-06-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-2010
-source_pdf_url: https://peraturan.go.id/files/uu4-2010.pdf
+source_url: https://peraturan.bpk.go.id/Details/38539/uu-no-4-tahun-2010
+source_pdf_url: https://peraturan.bpk.go.id/Download/27784/UU%20Nomor%204%20Tahun%202010.pdf
 relationships:
   amends: []
   amended_by: []
@@ -36,4 +36,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2010_2010-06-22.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4d711d01722b9fae8077fe95184c436775c4e4264ca57c410d47856153d4edc6
 pdf_sha256: 6d5d4c113f05d07aff26df510945a77b6e064c7a0a038fca3ca348be68ad6b67
+tanggal_pengundangan: '2010-06-22'
+tanggal_berlaku: '2010-06-22'
+lembaran_negara: 'LN. 2010/ No. 81, TLN NO. 5138 , LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-2010
+  source_pdf_url: https://peraturan.go.id/files/uu4-2010.pdf
+bpk:
+  id: 38539
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27784/UU%20Nomor%204%20Tahun%202010.pdf
+    bpk_file_id: 27784
+    filename: UU Nomor 4 Tahun 2010.pdf
+    sha256: 4d711d01722b9fae8077fe95184c436775c4e4264ca57c410d47856153d4edc6
+    bytes: 84906
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

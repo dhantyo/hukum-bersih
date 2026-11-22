@@ -11,8 +11,8 @@ tanggal_penetapan: '2011-11-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-2011
-source_pdf_url: https://peraturan.go.id/files/uu21-2011bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/39257/uu-no-21-tahun-2011
+source_pdf_url: https://peraturan.bpk.go.id/Download/28686/UU%2021%20Tahun%202011.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,41 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2011_2011-11-22.txt
   pasal_count: 71
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 13aa4cdb46c6adad06c6c1575f5f18c9a2b734816aa4023abba3f3a78e4ac086
 pdf_sha256: 9083309cbe6c681743eac8349dfba8000806bb45ff7969a5f8996f93faade6e2
+tanggal_pengundangan: '2011-11-22'
+tanggal_berlaku: '2011-11-22'
+lembaran_negara: 'LN.2011/No. 111, TLN No. 5253, LL SETNEG: 52 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-2011
+  source_pdf_url: https://peraturan.go.id/files/uu21-2011bt.pdf
+bpk:
+  id: 39257
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28686/UU%2021%20Tahun%202011.pdf
+    bpk_file_id: 28686
+    filename: UU 21 Tahun 2011.pdf
+    sha256: 13aa4cdb46c6adad06c6c1575f5f18c9a2b734816aa4023abba3f3a78e4ac086
+    bytes: 488537
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+uji_materi:
+- putusan: 25/PUU-XII/2014
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/40/25_PUU-XII_2014.pdf
+  amar: a. Frasa "dan bebas dari campur tangan pihak lain" yang mengikuti kata "independen"
+    dalam Pasal 1 angka 1 Undang-Undang Nomor 21 Tahun 2011 tentang Otoritas Jasa
+    Keuangan bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum
+    mengikat. b. Pasal 1 angka 1 Undang-Undang Nomor 21 Tahun 2011 tentang Otoritas
+    Jasa Keuangan selengkapnya menjadi "Otoritas Jasa Keuangan, yang selanjutnya disingkat
+    OJK, adalah lembaga yang independen, yang mempunyai fungsi, tugas dan wewenang
+    pengaturan, pengawasan, pemeriksaan, dan penyidikan sebagaimana dimaksud dalam
+    Undang-Undang ini

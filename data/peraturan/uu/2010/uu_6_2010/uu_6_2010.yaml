@@ -20,8 +20,8 @@ tanggal_penetapan: '2010-08-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-2010
-source_pdf_url: https://peraturan.go.id/files/uu6-2010.pdf
+source_url: https://peraturan.bpk.go.id/Details/38542/uu-no-6-tahun-2010
+source_pdf_url: https://peraturan.bpk.go.id/Download/27787/UU%20Nomor%206%20Tahun%202010.pdf
 relationships:
   amends: []
   amended_by: []
@@ -37,4 +37,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_2010_2010-08-27.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: bf50c1ae521482f79fc836ffef8340f8d154185209861e08dd178aced464b23a
 pdf_sha256: ca6a0a5dc367744eba764a2da444a9b35a0df34dc0bc509e5b3576e9cac20977
+tanggal_pengundangan: '2010-08-27'
+tanggal_berlaku: '2010-08-27'
+lembaran_negara: 'LN. 2010/ No.103, TLN NO. 5152, LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-2010
+  source_pdf_url: https://peraturan.go.id/files/uu6-2010.pdf
+bpk:
+  id: 38542
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27787/UU%20Nomor%206%20Tahun%202010.pdf
+    bpk_file_id: 27787
+    filename: UU Nomor 6 Tahun 2010.pdf
+    sha256: bf50c1ae521482f79fc836ffef8340f8d154185209861e08dd178aced464b23a
+    bytes: 69534
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
