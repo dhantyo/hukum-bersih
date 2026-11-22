@@ -11,8 +11,8 @@ tanggal_penetapan: '2024-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-108-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-108-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/307400/uu-no-108-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/367793/UU%20Nomor%20108%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,40 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_108_2024_2024-10-28.txt
   pasal_count: 9
+  parser_version: 9
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 124487698c74fc56dd8c0da3067cf8e07dff92785a9b6fb5dbbaeebf06b12416
+  ocr: true
 pdf_sha256: 124487698c74fc56dd8c0da3067cf8e07dff92785a9b6fb5dbbaeebf06b12416
+tanggal_pengundangan: '2024-10-28'
+tanggal_berlaku: '2024-10-28'
+lembaran_negara: 'LN 2024 (294), TLN (7045) : 6 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-108-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-108-tahun-2024.pdf
+bpk:
+  id: 307400
+  files:
+  - url: https://peraturan.bpk.go.id/Download/367793/UU%20Nomor%20108%20Tahun%202024.pdf
+    bpk_file_id: 367793
+    filename: UU Nomor 108 Tahun 2024.pdf
+    sha256: 124487698c74fc56dd8c0da3067cf8e07dff92785a9b6fb5dbbaeebf06b12416
+    bytes: 469020
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_13_1954
+      citation: UU No. 13 Tahun 1954
+      tentang: Pengubahan Undang-Undang Nr 16 dan 17 Tahun 1950 (Republik Indonesia
+        Dahulu) Tentang Pembentukan Kota-Kota Besar dan Kota-Kota Kecil di Jawa
+      url: https://peraturan.bpk.go.id/Details/47958/uu-no-13-tahun-1954
+      note: null
+    - id: uu_16_1950
+      citation: UU No. 16 Tahun 1950
+      tentang: Pembentukan Daerah-Daerah Kota Besar Dalam Lingkungan Propinsi Jawa
+        Timur, Jawa Tengah, Jawa Barat Dan Daerah Istimewa Yogyakarta
+      url: https://peraturan.bpk.go.id/Details/47963/uu-no-16-tahun-1950
+      note: Ketentuan yang mengatur mengenai Kota Cirebon dalam Undang-Undang Nomor
+        16 Tahun 1950 dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

@@ -12,8 +12,8 @@ tanggal_penetapan: '2024-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-90-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-90-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/307331/uu-no-90-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/367723/UU%20Nomor%2090%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,5 +28,38 @@ versions:
   date: '2024-10-28'
   date_basis: tanggal_penetapan
   text: uu_90_2024_2024-10-28.txt
-  pasal_count: 9
+  pasal_count: 10
+  parser_version: 9
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9d1b285a93f7e3f64b501fd45285f7e3b17dd35ce7f631789b9f74361df3746f
+  ocr: true
 pdf_sha256: 9d1b285a93f7e3f64b501fd45285f7e3b17dd35ce7f631789b9f74361df3746f
+tanggal_pengundangan: '2024-10-28'
+tanggal_berlaku: '2024-10-28'
+lembaran_negara: 'LN 2024 (276), TLN (7027): 6 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-90-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-90-tahun-2024.pdf
+bpk:
+  id: 307331
+  files:
+  - url: https://peraturan.bpk.go.id/Download/367723/UU%20Nomor%2090%20Tahun%202024.pdf
+    bpk_file_id: 367723
+    filename: UU Nomor 90 Tahun 2024.pdf
+    sha256: 9d1b285a93f7e3f64b501fd45285f7e3b17dd35ce7f631789b9f74361df3746f
+    bytes: 416850
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_28_1959
+      citation: UU No. 28 Tahun 1959
+      tentang: Penetapan Undang-Undang darurat No. 4 Tahun 1956 (Lembaran-Negara Tahun
+        1956 No. 55), Undang-Undang Darurat No. 5 Tahun 1956 (Lembaran-Negara Tahun
+        1956 No. 56) dan Undang-Undang Darurat No. 6 Tahun 1956 (Lembaran-Negara Tahun
+        1956 No. 57) Tentang Pembentukan Daerah Tingkat II Termasuk Kotapraja, Dalam
+        Lingkungan Daerah Tingkat I Sumatera Selatan, Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/51524/uu-no-28-tahun-1959
+      note: Ketentuan yang mengatur mengenai Kabupaten Lahat dalam Undang-Undang Nomor
+        28 Tahun 1959, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null
