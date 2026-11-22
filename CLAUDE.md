@@ -35,3 +35,4 @@
 - Importer rules (2026-11-22): a stored text is only replaced by a valid parse with at least as many pasal (else `reparse_error`); a record is done when its BPK files are archived and its text is current (BPK PDF + current parser); `reparse-bpk` re-converts from our archive.org copies; BPK download failures fall back to the mirror (`data/sources/mirrors/id_reg.json`). The 'Salinan sesuai dengan aslinya' block (copy certification) is left out of law texts; text printed in white is left out.
 - For Zee (2026-11-22): BPK's retyped copies of old laws seem to use modern spelling (UU 6/1964 'yang' for 'jang', UU 30/1947 'Yogyakarta' for 'Jogjakarta'); BPK's UU 19/1997 names SOEHARTO under the State Secretary too (likely a retyping error). Kept as printed; to be judged by Zee.
 
+- To do before the next import run (Dante, 2026-11-22): import-bpk.yml should print each law as it is done (stream the CLI output with `tee`), not only when a batch of 50 ends.
