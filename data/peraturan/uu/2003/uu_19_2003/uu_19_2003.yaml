@@ -11,8 +11,8 @@ tanggal_penetapan: '2003-06-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0192003.pdf
+source_url: https://peraturan.bpk.go.id/Details/43919/uu-no-19-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/340989/undang-undang%20nomor%2019%20tahun%202003.pdf
 relationships:
   amends: []
   amended_by:
@@ -25,3 +25,65 @@ relationships:
 versions: []
 pdf_sha256: 059362c9e0c01189f81b6f1bb18d1e442537da0e97f1af1af637f7213fd7acd4
 parse_error: 'LeakedMarkupError: chp_XI__p_2: markup in text: ''POINT 1.'''
+tanggal_pengundangan: '2003-06-19'
+tanggal_berlaku: '2003-06-19'
+lembaran_negara: 'LN.2003/NO.70, TLN NO.4297, LL SETNEG : 31HLM'
+subjek: BUMN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0192003.pdf
+bpk:
+  id: 43919
+  files:
+  - url: https://peraturan.bpk.go.id/Download/340989/undang-undang%20nomor%2019%20tahun%202003.pdf
+    bpk_file_id: 340989
+    filename: undang-undang nomor 19 tahun 2003.pdf
+  - url: https://peraturan.bpk.go.id/Download/395986/UU%20Nomor%2019%20Tahun%202003_%20penjelasan.pdf
+    bpk_file_id: 395986
+    filename: UU Nomor 19 Tahun 2003_ penjelasan.pdf
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_16_2025
+      citation: UU No. 16 Tahun 2025
+      tentang: Perubahan Keempat atas Undang-Undang Nomor 19 Tahun 2003 tentang Badan
+        Usaha Milik Negara
+      url: https://peraturan.bpk.go.id/Details/330668/uu-no-16-tahun-2025
+      note: null
+    - id: uu_1_2025
+      citation: UU No. 1 Tahun 2025
+      tentang: Perubahan Ketiga atas Undang-Undang Nomor 19 Tahun 2003 tentang Badan
+        Usaha Milik Negara
+      url: https://peraturan.bpk.go.id/Details/314622/uu-no-1-tahun-2025
+      note: null
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_9_1969
+      citation: UU No. 9 Tahun 1969
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang No. 1 tahun
+        1969 (lembaran negara tahun 1969 No. 16; Tambahan Lembaran Negara No. 2890)
+        tentang Bentuk-Bentuk Usaha Negara Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/49109/uu-no-9-tahun-1969
+      note: null
+    - id: uu_12_1955
+      citation: UU No. 12 Tahun 1955
+      tentang: Penetapan Undang-Undang Darurat No. 3 Tahun 1954 (Tentang Mengubah
+        "Indonesische Comptabilteitswet" (Staatsblad 1925 No. 448) dan "Indonesische
+        Bedrijvenwet" (Staatsblad 1927 No. 419) Sebagai Undang-Undang)
+      url: https://peraturan.bpk.go.id/Details/51074/uu-no-12-tahun-1955
+      note: null
+uji_materi: null

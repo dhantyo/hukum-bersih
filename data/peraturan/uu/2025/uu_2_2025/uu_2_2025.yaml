@@ -13,14 +13,15 @@ tanggal_penetapan: '2025-03-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-2025
-source_pdf_url: https://peraturan.go.id/files/uu-no-2-tahun-2025.pdf
+source_url: https://peraturan.bpk.go.id/Details/316682/uu-no-2-tahun-2025
+source_pdf_url: https://peraturan.bpk.go.id/Download/377978/UU%20Nomor%202%20Tahun%202025.pdf
 relationships:
   amends:
   - id: uu_4_2009
     order: 4
     changes:
       diubah:
+      - '1'
       - '5'
       - '17'
       - 17A
@@ -30,21 +31,24 @@ relationships:
       - '47'
       - '51'
       - '60'
+      - '74'
       - '75'
       - '100'
       - 104A
       - '108'
+      - '124'
       - '151'
       - 169A
       - 172B
       - 173A
       - '174'
       disisipkan:
+      - 51A
+      - 51B
       - 60A
       - 60B
       - 75A
       - 141B
-      - 171C
   amended_by: []
   revokes: []
   revoked_by: []
@@ -58,4 +62,81 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2025_2025-03-19.txt
   pasal_count: 2
+  parser_version: 7
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d028674a86e8ec58de146e80e67d734d79c4a6ce0d0ac2fee4d6bf5e127679f3
+  ocr: true
 pdf_sha256: d028674a86e8ec58de146e80e67d734d79c4a6ce0d0ac2fee4d6bf5e127679f3
+tanggal_pengundangan: '2025-03-19'
+tanggal_berlaku: '2025-03-19'
+lembaran_negara: 'LN 2025 (29), TLN (7100) : 30 hlm.; jdih.setneg.go.id'
+subjek: PERTAMBANGAN MIGAS, MINERAL DAN ENERGI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-2025
+  source_pdf_url: https://peraturan.go.id/files/uu-no-2-tahun-2025.pdf
+bpk:
+  id: 316682
+  files:
+  - url: https://peraturan.bpk.go.id/Download/377978/UU%20Nomor%202%20Tahun%202025.pdf
+    bpk_file_id: 377978
+    filename: UU Nomor 2 Tahun 2025.pdf
+    sha256: d028674a86e8ec58de146e80e67d734d79c4a6ce0d0ac2fee4d6bf5e127679f3
+    bytes: 4694971
+    archive_url: https://archive.org/download/uu_2_2025/uu_2_2025_2025-03-19.pdf
+  status_peraturan:
+    Mengubah:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: uu_3_2020
+      citation: UU No. 3 Tahun 2020
+      tentang: Perubahan atas Undang-Undang Nomor 4 Tahun 2009 tentang Pertambangan
+        Mineral dan Batubara
+      url: https://peraturan.bpk.go.id/Details/138909/uu-no-3-tahun-2020
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    - id: uu_4_2009
+      citation: UU No. 4 Tahun 2009
+      tentang: Pertambangan Mineral dan Batubara
+      url: https://peraturan.bpk.go.id/Details/38578/uu-no-4-tahun-2009
+      note: null
+uji_materi:
+- putusan: 202/PUU-XXIII/2025
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/241/putusan_mkri_14641_1784191288.pdf
+  amar: '1.Menyatakan frasa “dengan cara prioritas” dalam Pasal 51B ayat (1) dan Pasal
+    60B ayat (1) Undang-Undang Nomor 2 Tahun 2025 tentang Perubahan Keempat Atas Undang-Undang
+    Nomor 4 Tahun 2009 tentang Pertambangan Mineral dan Batubara (Lembaran Negara
+    Republik Indonesia Tahun 2025 Nomor 29, Tambahan Lembaran Negara Republik Indonesia
+    Nomor 7100) bertentangan dengan Undang-Undang Dasar Negara Republik Indonesia
+    Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat secara bersyarat sepanjang
+    tidak dimaknai, “dengan cara pemberian prioritas yang hanya dapat diberikan dengan
+    parameter yang jelas melalui proses penilaian secara objektif, transparan, dan
+    akuntabel sehingga pemberian prioritas dimaksud tidak dipahami serta-merta sebagai
+    tindakan penunjukan langsung”. 2. Menyatakan frasa ”dengan cara prioritas” dalam
+    Pasal 51B ayat (2) dan Pasal 60B ayat (2) Undang-Undang Nomor 2 Tahun 2025 tentang
+    Perubahan Keempat Atas Undang-Undang Nomor 4 Tahun 2009 tentang Pertambangan Mineral
+    dan Batubara (Lembaran Negara Republik Indonesia Tahun 2025 Nomor 29, Tambahan
+    Lembaran Negara Republik Indonesia Nomor 7100) bertentangan dengan Undang-Undang
+    Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum
+    mengikat secara bersyarat sepanjang tidak dimaknai “dengan cara pemberian prioritas
+    yang hanya dapat diberikan dengan parameter yang jelas melalui proses penilaian
+    secara objektif, transparan, dan akuntabel sehingga pemberian prioritas dimaksud
+    tidak dipahami serta-merta sebagai tindakan penunjukan langsung”. 3.Menyatakan
+    frasa ”dan/atau global” dalam Pasal 51B ayat (2) huruf d dan Pasal 60B ayat (2)
+    huruf d Undang-Undang Nomor 2 Tahun 2025 tentang Perubahan Keempat Atas Undang-Undang
+    Nomor 4 Tahun 2009 tentang Pertambangan Mineral dan Batubara (Lembaran Negara
+    Republik Indonesia Tahun 2025 Nomor 29, Tambahan Lembaran Negara Republik Indonesia
+    Nomor 7100) bertentangan dengan Undang-Undang Dasar Negara Republik Indonesia
+    Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat secara bersyarat sepanjang
+    tidak dimaknai, “Pemberian dengan cara prioritas sebagaimana dimaksud pada ayat
+    (1) dilaksanakan dengan mempertimbangkan: d. mengutamakan peningkatan nilai tambah
+    dan pemenuhan rantai pasok dalam negeri dan jika rantai pasok dalam negeri telah
+    terpenuhi, maka baru dapat melakukan pemenuhan rantai pasok global”. 4.Menolak
+    permohonan para Pemohon untuk selain dan selebihnya.'
