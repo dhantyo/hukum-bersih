@@ -276,6 +276,9 @@ class Parser:
         return "PERUBAHAN" in title and bool(re.match(
             r"^(Beberapa ketentuan|Ketentuan .{0,80}diubah|Undang-Undang Nomor .{0,200}diubah)", nxt))
 
+    def had_penjelasan(self) -> bool:
+        return any(b.kind == "penjelasan" for b in self.doc.blocks)
+
     def title_follows(self, i: int) -> bool:
         nxt = self.lines[i + 1] if i + 1 < len(self.lines) else ""
         return bool(nxt) and is_caps(nxt) and not PASAL_RE.match(nxt)
@@ -309,7 +312,10 @@ class Parser:
             self.in_lampiran = True
             self.emit(Block("lampiran", label=line))
             return 1
-        if self.in_lampiran and not PENJELASAN_RE.match(line):
+        # a Penjelasan heading ends a Lampiran only if the law's Penjelasan is still to come; after
+        # it, the heading is part of the Lampiran (UU 13/2022's drafting guide quotes example
+        # laws: "PENJELASAN ATAS UNDANG-UNDANG … NOMOR 7 TAHUN 2021")
+        if self.in_lampiran and not (PENJELASAN_RE.match(line) and not self.had_penjelasan()):
             if re.match(r"^Salinan sesuai dengan aslinya", line, re.IGNORECASE):
                 self.in_salinan, self.salinan_lines = True, 0
                 return 1

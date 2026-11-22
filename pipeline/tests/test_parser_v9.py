@@ -131,3 +131,20 @@ def test_amending_penjelasan_puts_angka_above_ayat():
     text = to_bluebell(doc)
     assert "      PARA Angka 10" in text and "        PARA Ayat (1)" in text
     to_akn(text, "/akn/id/act/uu/2022/13", "act")
+
+
+def test_penjelasan_quoted_in_a_lampiran_after_the_penjelasan_stays_in_the_lampiran():
+    from hukum_bersih.pdf.structure import parse_lines
+
+    doc = parse_lines([
+        "UNDANG-UNDANG REPUBLIK INDONESIA", "NOMOR 13 TAHUN 2022", "TENTANG", "CONTOH",
+        "Pasal 1", "Isi pasal satu.", "Pasal 2", "Undang-Undang ini mulai berlaku.",
+        "Disahkan di Jakarta", "pada tanggal 16 Juni 2022",
+        "PENJELASAN", "ATAS", "UNDANG-UNDANG REPUBLIK INDONESIA", "I. UMUM", "Umum sekali.",
+        "II. PASAL DEMI PASAL", "Pasal 1", "Cukup jelas.", "Pasal 2", "Cukup jelas.",
+        "LAMPIRAN I", "TEKNIK PENYUSUNAN", "Contoh:", "PENJELASAN ATAS UNDANG-UNDANG NOMOR 7 TAHUN 2021",
+        "Pasal 1", "Cukup jelas.",
+    ])
+    assert sum(b.kind == "penjelasan" for b in doc.blocks) == 1
+    lamp = [b.text for b in doc.blocks if b.kind == "lampiran_text"]
+    assert "PENJELASAN ATAS UNDANG-UNDANG NOMOR 7 TAHUN 2021" in lamp and lamp[-1] == "Cukup jelas."
