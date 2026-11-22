@@ -13,8 +13,8 @@ tanggal_penetapan: '2019-09-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-2019
-source_pdf_url: https://peraturan.go.id/files/UU12-2019BT.pdf
+source_url: https://peraturan.bpk.go.id/Details/121700/uu-no-12-tahun-2019
+source_pdf_url: https://peraturan.bpk.go.id/Download/112472/UU%20Nomor%2012%20Tahun%202019.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,3 +31,34 @@ versions:
   text: uu_12_2019_2019-09-17.txt
   pasal_count: 15
 pdf_sha256: bdaf1b8e88a56087dc03d78304a0dca02924f3a4004ea310d538153cd3190e3b
+tanggal_pengundangan: '2019-09-18'
+tanggal_berlaku: '2019-09-18'
+lembaran_negara: 'LN.2019/NO.169, TLN NO. 6388, JDIH.SETNEG.GO.ID : 11 HLM.'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-2019
+  source_pdf_url: https://peraturan.go.id/files/UU12-2019BT.pdf
+bpk:
+  id: 121700
+  files:
+  - url: https://peraturan.bpk.go.id/Download/112472/UU%20Nomor%2012%20Tahun%202019.pdf
+    bpk_file_id: 112472
+    filename: UU Nomor 12 Tahun 2019.pdf
+    sha256: d3e40016c6acd8c1f7351fedb26805d6988c2f21e825d2f30ac2d55827d06f62
+    bytes: 1527343
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/112473/UU%20Nomor%2012%20Tahun%202019%20-%20Lamp..pdf
+    bpk_file_id: 112473
+    filename: UU Nomor 12 Tahun 2019 - Lamp..pdf
+    sha256: c90f87b866a56d4a97e531e72c9ca66196bc0d01a4c572a515e89ff563fa24bb
+    bytes: 20258880
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/112474/UU%20Nomor%2012%20Tahun%202019%20-%20Lamp....pdf
+    bpk_file_id: 112474
+    filename: UU Nomor 12 Tahun 2019 - Lamp....pdf
+    sha256: b8345c27c3c4cf78d2b9306684b400263e6818fe312b78b7028023e59ce89ad1
+    bytes: 23423693
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
+reparse_error: 'v11: 6 pasal, stored text has 15'

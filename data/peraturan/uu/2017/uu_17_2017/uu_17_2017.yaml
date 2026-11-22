@@ -15,8 +15,8 @@ tanggal_penetapan: '2017-11-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-2017
-source_pdf_url: null
+source_url: https://peraturan.bpk.go.id/Details/64507/uu-no-17-tahun-2017
+source_pdf_url: https://peraturan.bpk.go.id/Download/54722/UU%20Nomor%2017%20Tahun%202017.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,4 +24,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_17_2017_2017-11-22
+  kind: asli
+  source: official
+  date: '2017-11-22'
+  date_basis: tanggal_penetapan
+  text: uu_17_2017_2017-11-22.txt
+  pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2e7b4688787ec77f5a39fe3024ba1bed5dc9c04f45c1816bbd5c273505b3e958
+  ocr: true
+tanggal_pengundangan: '2017-11-22'
+tanggal_berlaku: '2017-11-22'
+lembaran_negara: 'LN.2017/NO.240, TLN NO.6140, LL SETNEG : 4 HLM.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-2017
+  source_pdf_url: null
+bpk:
+  id: 64507
+  files:
+  - url: https://peraturan.bpk.go.id/Download/54722/UU%20Nomor%2017%20Tahun%202017.pdf
+    bpk_file_id: 54722
+    filename: UU Nomor 17 Tahun 2017.pdf
+    sha256: 2e7b4688787ec77f5a39fe3024ba1bed5dc9c04f45c1816bbd5c273505b3e958
+    bytes: 754383
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -13,8 +13,8 @@ tanggal_penetapan: '2020-09-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-2020
-source_pdf_url: https://peraturan.go.id/files/uu7-2020bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/147335/uu-no-7-tahun-2020
+source_pdf_url: https://peraturan.bpk.go.id/Download/139223/UU%20Nomor%207%20Tahun%202020.pdf
 relationships:
   amends:
   - id: uu_24_2003
@@ -31,7 +31,6 @@ relationships:
       - '23'
       - '26'
       - 45A
-      - 50A
       - '57'
       - '59'
   amended_by: []
@@ -47,4 +46,62 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2020_2020-09-28.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: aa37326a49bafa94ce3bbc430b7f3ee71a361c2f9c8843bccbcc9839170c954c
+  ocr: true
 pdf_sha256: 9a051ee5bda90522d73398cab4ee0c457da3dc6489eedac8d9e02857cee3a243
+tanggal_pengundangan: '2020-09-29'
+tanggal_berlaku: '2020-09-29'
+lembaran_negara: 'LN.2020/No.216, TLN No.6554, jdih.setneg.go.id : 12 hlm'
+subjek: HUKUM ACARA DAN PERADILAN - KETATANEGARAAN, KENEGARAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-2020
+  source_pdf_url: https://peraturan.go.id/files/uu7-2020bt.pdf
+bpk:
+  id: 147335
+  files:
+  - url: https://peraturan.bpk.go.id/Download/139223/UU%20Nomor%207%20Tahun%202020.pdf
+    bpk_file_id: 139223
+    filename: UU Nomor 7 Tahun 2020.pdf
+    sha256: aa37326a49bafa94ce3bbc430b7f3ee71a361c2f9c8843bccbcc9839170c954c
+    bytes: 1078133
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_4_2014
+      citation: UU No. 4 Tahun 2014
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        2013 Tentang Perubahan Kedua Atas Undang-Undang Nomor 24 Tahun 2003 Tentang
+        Mahkamah Konstitusi Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/38577/uu-no-4-tahun-2014
+      note: null
+    - id: uu_8_2011
+      citation: UU No. 8 Tahun 2011
+      tentang: Perubahan Atas Undang-Undang Nomor 24 Tahun 2003 Tentang Mahkamah Konstitusi
+      url: https://peraturan.bpk.go.id/Details/39183/uu-no-8-tahun-2011
+      note: null
+    - id: uu_24_2003
+      citation: UU No. 24 Tahun 2003
+      tentang: Mahkamah Konstitusi
+      url: https://peraturan.bpk.go.id/Details/44069/uu-no-24-tahun-2003
+      note: null
+uji_materi:
+- putusan: 121/PUU-XX/2022
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/225/putusan_mkri_121_PUU-XX_2022.pdf
+  amar: 1) Pasal 7A ayat (1) Undang-Undang Nomor 7 Tahun 2020 tentang Perubahan Ketiga
+    atas Undang-Undang Nomor 24 Tahun 2003 tentang Mahkamah Konstitusi (Lembaran Negara
+    Republik Indonesia Tahun 2020 Nomor 216, Tambahan Lembaran Negara Nomor 6554)
+    yang menyatakan, “Kepaniteraan sebagaimana dimaksud dalam Pasal 7 merupakan jabatan
+    fungsional yang menjalankan tugas teknis administratif peradilan Mahkamah Konstitusi
+    dengan usia pensiun 62 (enam puluh dua) tahun bagi panitera, panitera muda, dan
+    panitera pengganti” bertentangan dengan Undang-Undang Dasar Negara Republik Indonesia
+    Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat, sepanjang tidak dimaknai
+    “Kepaniteraan sebagaimana dimaksud dalam Pasal 7 merupakan jabatan fungsional
+    keahlian yang menjalankan tugas teknis administratif peradilan Mahkamah Konstitusi
+    yang meliputi Panitera Konstitusi Ahli Utama, Panitera Konstitusi Ahli Madya,
+    Panitera Konstitusi Ahli Muda, dan Panitera Konstitusi Ahli Pertama dengan usia
+    pensiun bagi panitera, panitera muda, dan panitera pengganti adalah maksimal 65
+    (enam puluh lima) tahun sesuai dengan batas usia pensiun pada jenjang jabatan
+    fungsional keahlian sebagaimana diatur dalam peraturan perundang-undangan di bidang
+    aparatur sipil negara”

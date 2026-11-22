@@ -11,12 +11,12 @@ tentang: Perubahan Atas Undang-Undang Nomor 15 Tahun 2003 tentang Penetapan Pera
   Pidana Terorisme Menjadi Undang-Undang
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2018-06-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-2018
-source_pdf_url: https://peraturan.go.id/files/uu5-2018bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/82689/uu-no-5-tahun-2018
+source_pdf_url: https://peraturan.bpk.go.id/Download/74858/UU%20Nomor%205%20Tahun%202018.pdf
 relationships:
   amends:
   - id: uu_15_2003
@@ -44,11 +44,66 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_5_2018_2018
+- id: uu_5_2018_2018-06-21
   kind: asli
   source: official
-  date: null
+  date: '2018-06-21'
   date_basis: tanggal_penetapan
-  text: uu_5_2018_2018.txt
+  text: uu_5_2018_2018-06-21.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 41395f938a86a60fa231a1b2aaed0b8e21a7fec815601079c9a4e05e8ada7ec0
+  ocr: true
 pdf_sha256: cdeca9445fc109f476e206df9b29adc63ee5139705ed3b4296e58072ee73453a
+tanggal_pengundangan: '2018-06-22'
+tanggal_berlaku: '2018-06-22'
+lembaran_negara: 'LN.2018/NO.92, TLN NO.6216, LL SETKAB : 30 HLM.'
+subjek: TERORISME - PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-2018
+  source_pdf_url: https://peraturan.go.id/files/uu5-2018bt.pdf
+bpk:
+  id: 82689
+  files:
+  - url: https://peraturan.bpk.go.id/Download/74858/UU%20Nomor%205%20Tahun%202018.pdf
+    bpk_file_id: 74858
+    filename: UU Nomor 5 Tahun 2018.pdf
+    sha256: 41395f938a86a60fa231a1b2aaed0b8e21a7fec815601079c9a4e05e8ada7ec0
+    bytes: 2777837
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 6 dan Pasal 7 Undang-Undang Nomor 15 Tahun 2003 sebagaimana telah
+        diubah dengan Undang-Undang Nomor 5 Tahun 2018
+    Mengubah:
+    - id: uu_15_2003
+      citation: UU No. 15 Tahun 2003
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        2002 Tentang Pemberantasan Tindak Pidana Terorisme, Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/43015/uu-no-15-tahun-2003
+      note: null
+uji_materi:
+- putusan: 103/PUU-XXI/2023
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/190/Putusan_mkri_%20103-PUU-XXI-2023.pdf
+  amar: frasa “3 (tiga) tahun terhitung sejak tanggal Undang-Undang ini mulai berlaku”
+    dalam Pasal 43L ayat (4) Undang-Undang Nomor 5 Tahun 2018 tentang Perubahan Atas
+    Undang-Undang Nomor 15 Tahun 2003 tentang Penetapan Peraturan Pemerintah Pengganti
+    Undang-Undang Nomor 1 Tahun 2002 tentang Pemberantasan Tindak Pidana Terorisme
+    Menjadi Undang-Undang (Lembaran Negara Republik Indonesia Tahun 2018 Nomor 92,
+    Tambahan Lembaran Negara Republik Indonesia Nomor 6216) bertentangan dengan Undang-Undang
+    Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum
+    mengikat secara bersyarat sepanjang tidak dimaknai “10 (sepuluh) tahun terhitung
+    sejak tanggal Undang-Undang ini mulai berlaku”. Sehingga, norma Pasal 43L ayat
+    (4) Undang-Undang Nomor 5 Tahun 2018 tentang Perubahan Atas Undang-Undang Nomor
+    15 Tahun 2003 tentang Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor
+    1 Tahun 2002 tentang Pemberantasan Tindak Pidana Terorisme Menjadi Undang-Undang
+    yang semula berbunyi “Permohonan sebagaimana dimaksud pada ayat (2) dapat diajukan
+    paling lama 3 (tiga) tahun terhitung sejak tanggal Undang-Undang ini mulai berlaku”
+    menjadi selengkapnya berbunyi, “Permohonan sebagaimana dimaksud pada ayat (2)
+    dapat diajukan paling lama 10 (sepuluh) tahun terhitung sejak tanggal Undang-Undang
+    ini mulai berlaku”.

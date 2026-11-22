@@ -17,8 +17,8 @@ tanggal_penetapan: '2018-05-09'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-2018
-source_pdf_url: https://peraturan.go.id/files/uu3-2018bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/78647/uu-no-3-tahun-2018
+source_pdf_url: https://peraturan.bpk.go.id/Download/70266/UU%20Nomor%203%20Tahun%202018.pdf
 relationships:
   amends: []
   amended_by: []
@@ -34,4 +34,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2018_2018-05-09.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 31ca688cc0b81d4cb9e658c3e4092b183c63c9b0be180fc5eab5b10afea2a220
+  ocr: true
 pdf_sha256: e9515ade583ed1d3fcf63ec5de475e63970f5e466954e432c4398e9118ef46c6
+tanggal_pengundangan: '2018-05-09'
+tanggal_berlaku: '2018-05-09'
+lembaran_negara: 'LN.2018/NO.76, TLN NO. 6206, LL SETKAB : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-2018
+  source_pdf_url: https://peraturan.go.id/files/uu3-2018bt.pdf
+bpk:
+  id: 78647
+  files:
+  - url: https://peraturan.bpk.go.id/Download/70266/UU%20Nomor%203%20Tahun%202018.pdf
+    bpk_file_id: 70266
+    filename: UU Nomor 3 Tahun 2018.pdf
+    sha256: 31ca688cc0b81d4cb9e658c3e4092b183c63c9b0be180fc5eab5b10afea2a220
+    bytes: 383916
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

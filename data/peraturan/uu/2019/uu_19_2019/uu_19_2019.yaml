@@ -13,8 +13,8 @@ tanggal_penetapan: null
 tempat_penetapan: Jakarta
 pejabat_penetapan: TJAHJO KUMOLO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-2019
-source_pdf_url: https://peraturan.go.id/files/uu19-2019bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/122028/uu-no-19-tahun-2019
+source_pdf_url: https://peraturan.bpk.go.id/Download/112813/UU%20Nomor%2019%20Tahun%202019.pdf
 relationships:
   amends:
   - id: uu_30_2002
@@ -86,4 +86,149 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_2019_2019.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: bba883849f22f655228e3b077ce9b71b8d2c312c41b33fb95cc7e767c4afbc58
+  extra_pdf_sha256:
+  - f28456ee7d7b5f0164d09031a6ba2df17cc1df88b645f265e555924c41e035a2
 pdf_sha256: fe33ac08f24da4d423198e6e03855e796be812bbcb1095f3c82d8dbe130e8790
+tanggal_pengundangan: '2019-10-17'
+tanggal_berlaku: '2019-10-17'
+lembaran_negara: 'LN.2019/NO.197, TLN NO.6409, PERATURAN.GO.ID : 32 HLM.'
+subjek: TINDAK PIDANA KORUPSI, PENCEGAHAN KORUPSI - DASAR PEMBENTUKAN KEMENTERIAN
+  / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-2019
+  source_pdf_url: https://peraturan.go.id/files/uu19-2019bt.pdf
+bpk:
+  id: 122028
+  files:
+  - url: https://peraturan.bpk.go.id/Download/112813/UU%20Nomor%2019%20Tahun%202019.pdf
+    bpk_file_id: 112813
+    filename: UU Nomor 19 Tahun 2019.pdf
+    sha256: bba883849f22f655228e3b077ce9b71b8d2c312c41b33fb95cc7e767c4afbc58
+    bytes: 237480
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/112814/UU%20Nomor%2019%20Tahun%202019-Penjelasan.pdf
+    bpk_file_id: 112814
+    filename: UU Nomor 19 Tahun 2019-Penjelasan.pdf
+    sha256: f28456ee7d7b5f0164d09031a6ba2df17cc1df88b645f265e555924c41e035a2
+    bytes: 176420
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_10_2015
+      citation: UU No. 10 Tahun 2015
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        2015 Tentang Perubahan Atas Undang-Undang Nomor 30 Tahun 2002 Tentang Komisi
+        Pemberantasan Tindak Pidana Korupsi Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/38210/uu-no-10-tahun-2015
+      note: null
+    - id: uu_30_2002
+      citation: UU No. 30 Tahun 2002
+      tentang: Komisi Pemberantasan Tindak Pidana Korupsi
+      url: https://peraturan.bpk.go.id/Details/44493/uu-no-30-tahun-2002
+      note: null
+uji_materi:
+- putusan: 70/PUU-XXIV/2026
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/233/putusan_mkri_70-PUU-XXIV-2026.pdf
+  amar: Kata "melepaskan" dalam Pasal 29 huruf i Undang-Undang Nomor 19 Tahun 2019
+    tentang Perubahan Kedua Atas Undang-Undang Nomor 30 Tahun 2002 tentang Komisi
+    Pemberantasan Tindak Pidana Korupsi (Lembaran Negara Republik Indonesia Tahun
+    2019 Nomor 197, Tambahan Lembaran Negara Republik Indonesia Nomor 6409) bertentangan
+    dengan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai
+    kekuatan hukum mengikat secara bersyarat sepanjang tidak dimaknai "nonaktif dari";
+    3. Menyatakan frasa "tidak menjalankan" dalam Pasal 29 huruf j Undang-Undang Nomor
+    19 Tahun 2019 tentang Perubahan Kedua Atas Undang-Undang Nomor 30 Tahun 2002 tentang
+    Komisi Pemberantasan Tindak Pidana Korupsi (Lembaran Negara Republik Indonesia
+    Tahun 2019 Nomor 197, Tambahan Lembaran Negara Republik Indonesia Nomor 6409)
+    bertentangan dengan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan
+    tidak mempunyai kekuatan hukum mengikat secara bersyarat sepanjang tidak dimaknai
+    "nonaktif dari";
+- putusan: 70/PUU-XVII/2019
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/154/putusan_mkri_7834.pdf
+  amar: 1) Pasal 1 angka 3 Undang-Undang Nomor 19 Tahun 2019 tentang Perubahan Kedua
+    Atas Undang-Undang Nomor 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana
+    Korupsi (Lembaran Negara Republik Indonesia Tahun 2019 Nomor 197, Tambahan Lembaran
+    Negara Republik Indonesia Nomor 6409) yang semula berbunyi “Komisi Pemberantasan
+    Tindak Pidana Korupsi yang selanjutnya disebut Komisi Pemberantasan Korupsi adalah
+    lembaga negara dalam rumpun kekuasaan eksekutif yang melaksanakan tugas pencegahan
+    dan pemberantasan Tindak Pidana Korupsi sesuai dengan Undang-Undang ini”, bertentangan
+    dengan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai
+    kekuatan hukum mengikat secara bersyarat sepanjang tidak dimaknai, “Komisi Pemberantasan
+    Tindak Pidana Korupsi yang selanjutnya disebut Komisi Pemberantasan Korupsi adalah
+    lembaga negara dalam rumpun kekuasaan eksekutif yang dalam melaksanakan tugas
+    pemberantasan Tindak Pidana Korupsi bersifat independen dan bebas dari pengaruh
+    kekuasaan manapun”. 2) Pasal 12B, Pasal 37B ayat (1) huruf b, dan Pasal 47 ayat
+    (2) Undang-Undang Nomor 19 Tahun 2019 tentang Perubahan Kedua Atas Undang-Undang
+    Nomor 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi (Lembaran
+    Negara Republik Indonesia Tahun 2019 Nomor 197, Tambahan Lembaran Negara Republik
+    Indonesia Nomor 6409) bertentangan dengan Undang-Undang Dasar Negara Republik
+    Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat; 3) Frasa “dipertanggungjawabkan
+    kepada Dewan Pengawas” dalam Pasal 12C ayat (2) Undang-Undang Nomor 19 Tahun 2019
+    tentang Perubahan Kedua Atas Undang-Undang Nomor 30 Tahun 2002 tentang Komisi
+    Pemberantasan Tindak Pidana Korupsi (Lembaran Negara Republik Indonesia Tahun
+    2019 Nomor 197, Tambahan Lembaran Negara Republik Indonesia Nomor 6409) bertentangan
+    dengan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai
+    kekuatan hukum mengikat secara bersyarat sepanjang tidak dimaknai “diberitahukan
+    kepada Dewan Pengawas”. Sehingga, Pasal 12C ayat (2) Undang-Undang Nomor 19 Tahun
+    2019 tentang Perubahan Kedua Atas Undang-Undang Nomor 30 Tahun 2002 tentang Komisi
+    Pemberantasan Tindak Pidana Korupsi (Lembaran Negara Republik Indonesia Tahun
+    2019 Nomor 197, Tambahan Lembaran Negara Republik Indonesia Nomor 6409) yang semula
+    berbunyi “Penyadapan sebagaimana dimaksud dalam Pasal 12 ayat (1) yang telah selesai
+    dilaksanakan harus dipertanggungjawabkan kepada Pimpinan Komisi Pemberantasan
+    Korupsi dan Dewan Pengawas paling lambat 14 (empat belas) hari kerja terhitung
+    sejak Penyadapan selesai dilaksanakan”, menjadi selengkapnya berbunyi “Penyadapan
+    sebagaimana dimaksud dalam Pasal 12 ayat (1) yang telah selesai dilaksanakan harus
+    dipertanggungjawabkan kepada Pimpinan Komisi Pemberantasan Korupsi dan diberitahukan
+    kepada Dewan Pengawas paling lambat 14 (empat belas) hari kerja terhitung sejak
+    Penyadapan selesai dilaksanakan”. 5. Menyatakan frasa “tidak selesai dalam jangka
+    waktu paling lama 2 (dua) tahun” dalam Pasal 40 ayat (1) Undang-Undang Nomor 19
+    Tahun 2019 tentang Perubahan Kedua Atas Undang-Undang Nomor 30 Tahun 2002 tentang
+    Komisi Pemberantasan Tindak Pidana Korupsi (Lembaran Negara Republik Indonesia
+    Tahun 2019 Nomor 197, Tambahan Lembaran Negara Republik Indonesia Nomor 6409)
+    bertentangan dengan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan
+    tidak mempunyai kekuatan hukum mengikat sepanjang tidak dimaknai “tidak selesai
+    dalam jangka waktu paling lama 2 (dua) tahun terhitung sejak diterbitkannya Surat
+    Pemberitahuan Dimulainya Penyidikan (SPDP)”. Sehingga, Pasal 40 ayat (1) Undang-Undang
+    Nomor 19 Tahun 2019 tentang Perubahan Kedua Atas Undang-Undang Nomor 30 Tahun
+    2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi (Lembaran Negara Republik
+    Indonesia Tahun 2019 Nomor 197, Tambahan Lembaran Negara Republik Indonesia Nomor
+    6409) yang semula berbunyi “Komisi Pemberantasan Korupsi dapat menghentikan penyidikan
+    dan penuntutan terhadap perkara Tindak Pidana Korupsi yang penyidikan dan penuntutannya
+    tidak selesai dalam jangka waktu paling lama 2 (dua) tahun”, menjadi selengkapnya
+    berbunyi “Komisi Pemberantasan Korupsi dapat menghentikan penyidikan dan penuntutan
+    terhadap perkara Tindak Pidana Korupsi yang penyidikan dan penuntutannya tidak
+    selesai dalam jangka waktu paling lama 2 (dua) tahun terhitung sejak diterbitkannya
+    Surat Pemberitahuan Dimulainya Penyidikan (SPDP).” 4) Menyatakan frasa “harus
+    dilaporkan kepada Dewan Pengawas paling lambat 1 (satu) minggu” dalam Pasal 40
+    ayat (2) Undang-Undang Nomor 19 Tahun 2019 tentang Perubahan Kedua Atas Undang-Undang
+    Nomor 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi (Lembaran
+    Negara Republik Indonesia Tahun 2019 Nomor 197, Tambahan Lembaran Negara Republik
+    Indonesia Nomor 6409) bertentangan dengan Undang-Undang Dasar Negara Republik
+    Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat sepanjang tidak
+    dimaknai “diberitahukan kepada Dewan Pengawas paling lambat 14 (empat belas) hari
+    kerja”. Sehingga, Pasal 40 ayat (2) Undang-Undang Nomor 19 Tahun 2019 tentang
+    Perubahan Kedua Atas Undang-Undang Nomor 30 Tahun 2002 tentang Komisi Pemberantasan
+    Tindak Pidana Korupsi (Lembaran Negara Republik Indonesia Tahun 2019 Nomor 197,
+    Tambahan Lembaran Negara Republik Indonesia Nomor 6409) yang semula berbunyi “Penghentian
+    penyidikan dan penuntutan sebagaimana dimaksud pada ayat (1) harus dilaporkan
+    kepada Dewan Pengawas paling lambat 1 (satu) minggu terhitung sejak dikeluarkannya
+    surat perintah penghentian penyidikan dan penuntutan”, menjadi selengkapnya berbunyi
+    “Penghentian penyidikan dan penuntutan sebagaimana dimaksud pada ayat (1) diberitahukan
+    kepada Dewan Pengawas paling lambat 14 (empat belas) hari kerja terhitung sejak
+    dikeluarkannya surat perintah penghentian penyidikan dan penuntutan”. 4) frasa
+    “atas izin tertulis dari Dewan Pengawas” dalam Pasal 47 ayat (1) Undang-Undang
+    Nomor 19 Tahun 2019 tentang Perubahan Kedua Atas Undang-Undang Nomor 30 Tahun
+    2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi (Lembaran Negara Republik
+    Indonesia Tahun 2019 Nomor 197, Tambahan Lembaran Negara Republik Indonesia Nomor
+    6409) bertentangan dengan Undang-Undang Dasar Negara Republik Indonesia Tahun
+    1945 dan tidak mempunyai kekuatan hukum mengikat sepanjang tidak dimaknai “dengan
+    memberitahukan kepada Dewan Pengawas”. Sehingga, Pasal 47 ayat (1) Undang-Undang
+    Nomor 19 Tahun 2019 tentang Perubahan Kedua Atas Undang-Undang Nomor 30 Tahun
+    2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi (Lembaran Negara Republik
+    Indonesia Tahun 2019 Nomor 197, Tambahan Lembaran Negara Republik Indonesia Nomor
+    6409) yang semula berbunyi, “Dalam proses penyidikan, penyidik dapat melakukan
+    penggeledahan dan penyitaan atas izin tertulis dari Dewan Pengawas”, menjadi selengkapnya
+    berbunyi “Dalam proses penyidikan, penyidik dapat melakukan penggeledahan dan
+    penyitaan dengan memberitahukan kepada Dewan Pengawas.”

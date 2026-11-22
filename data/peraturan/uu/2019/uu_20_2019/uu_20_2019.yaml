@@ -12,8 +12,8 @@ tanggal_penetapan: '2019-10-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: Joko Widodo
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-2019
-source_pdf_url: https://peraturan.go.id/files/uu20-2019bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/122744/uu-no-20-tahun-2019
+source_pdf_url: https://peraturan.bpk.go.id/Download/113527/UU%20Nomor%2020%20Tahun%202019.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,34 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2019_2019-10-18.txt
   pasal_count: 48
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: aecb22b85c6735b00eb24574df135a8c10c187e70b9e4550152b8b41117a2b50
+  ocr: true
 pdf_sha256: aa0727380fa3798bd858c623c2bdc8d0d8739f9e449941951a6078591a4b5f7c
+tanggal_pengundangan: '2019-10-18'
+lembaran_negara: 'LN.2019/NO.198, TLN NO.6410, JDIH.SETNEG.GO.ID : 47 HLM.'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-2019
+  source_pdf_url: https://peraturan.go.id/files/uu20-2019bt.pdf
+bpk:
+  id: 122744
+  files:
+  - url: https://peraturan.bpk.go.id/Download/113527/UU%20Nomor%2020%20Tahun%202019.pdf
+    bpk_file_id: 113527
+    filename: UU Nomor 20 Tahun 2019.pdf
+    sha256: aecb22b85c6735b00eb24574df135a8c10c187e70b9e4550152b8b41117a2b50
+    bytes: 4433531
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: perppu_1_2020
+      citation: PERPU No. 1 Tahun 2020
+      tentang: Kebijakan Keuangan Negara dan Stabilitas Sistem Keuangan untuk Penanganan
+        Pandemi Corona Virus Disease 2019 (COVID-19) dan/atau dalam Rangka Menghadapi
+        Ancaman yang Membahayakan Perekonomian Nasional dan/atau Stabilitas Sistem
+        Keuangan
+      url: https://peraturan.bpk.go.id/Details/135060/perpu-no-1-tahun-2020
+      note: null
+uji_materi: null

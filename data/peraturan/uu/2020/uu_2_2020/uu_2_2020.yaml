@@ -19,8 +19,8 @@ tanggal_penetapan: '2020-05-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-2020
-source_pdf_url: https://peraturan.go.id/files/uu2-2020bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/137323/uu-no-2-tahun-2020
+source_pdf_url: https://peraturan.bpk.go.id/Download/128214/UU%20Nomor%202%20Tahun%202020.pdf
 relationships:
   amends: []
   amended_by: []
@@ -37,4 +37,65 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2020_2020-05-16.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c695529b6149b262dcbd70a9a504418d876b88a4b9e7dded9bea4487d0939a4d
+  ocr: true
 pdf_sha256: 9e3fd4e48f6ea7e394fe10c4c48d948a5199fd17bce099fb3c3029dc5d95fdcd
+tanggal_pengundangan: '2020-05-18'
+tanggal_berlaku: '2020-05-18'
+lembaran_negara: 'LN.2020/NO.134, TLN NO.6516, JDIH.SETKAB.GO.ID : 22 HLM'
+subjek: APBD - APBN - KESEHATAN - PENGELOLAAN KEUANGAN NEGARA / DAERAH - BANTUAN,
+  SUMBANGAN, BENCANA / KEBENCANAAN, DAN PENANGGULANGAN BENCANA - KEBIJAKAN PEMERINTAH
+  - COVID-19 / CORONA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-2020
+  source_pdf_url: https://peraturan.go.id/files/uu2-2020bt.pdf
+bpk:
+  id: 137323
+  files:
+  - url: https://peraturan.bpk.go.id/Download/128214/UU%20Nomor%202%20Tahun%202020.pdf
+    bpk_file_id: 128214
+    filename: UU Nomor 2 Tahun 2020.pdf
+    sha256: c695529b6149b262dcbd70a9a504418d876b88a4b9e7dded9bea4487d0939a4d
+    bytes: 2878902
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_7_2021
+      citation: UU No. 7 Tahun 2021
+      tentang: Harmonisasi Peraturan Perpajakan
+      url: https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021
+      note: null
+    Menetapkan:
+    - id: perppu_1_2020
+      citation: PERPU No. 1 Tahun 2020
+      tentang: Kebijakan Keuangan Negara dan Stabilitas Sistem Keuangan untuk Penanganan
+        Pandemi Corona Virus Disease 2019 (COVID-19) dan/atau dalam Rangka Menghadapi
+        Ancaman yang Membahayakan Perekonomian Nasional dan/atau Stabilitas Sistem
+        Keuangan
+      url: https://peraturan.bpk.go.id/Details/135060/perpu-no-1-tahun-2020
+      note: null
+uji_materi:
+- putusan: 37/PUU-XVIII/2020
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/161/putusan_mkri_37-2020.pdf
+  amar: 'Pasal 27 ayat (1) menjadi: “Biaya yang telah dikeluarkan Pemerintah dan/atau
+    lembaga anggota KSSK dalam rangka pelaksanaan kebijakan pendapatan negara termasuk
+    kebijakan di bidang perpajakan, kebijakan belanja negara termasuk kebijakan di
+    bidang keuangan daerah, kebijakan pembiayaan, kebijakan stabilitas sistem keuangan,
+    dan program pemulihan ekonomi nasional, merupakan bagian dari biaya ekonomi untuk
+    penyelamatan perekonomian dari krisis dan bukan merupakan kerugian negara sepanjang
+    dilakukan dengan iktikad baik dan sesuai dengan peraturan perundang-undangan”.
+    Pasal 27 ayat (3) menjadi: "Segala tindakan termasuk keputusan yang diambil berdasarkan
+    Peraturan Pemerintah Pengganti Undang-Undang ini bukan merupakan objek gugatan
+    yang dapat diajukan kepada peradilan tata usaha negara sepanjang dilakukan terkait
+    dengan penanganan pandemi Covid-19 serta dilakukan dengan iktikad baik dan sesuai
+    dengan peraturan perundang-undangan”. Pasal 29 bertentangan dengan UUD 1945 dan
+    tidak mempunyai kekuatan hukum mengikat secara bersyarat sepanjang tidak dimaknai,
+    “Peraturan Pemerintah Pengganti Undang-Undang ini mulai berlaku pada tanggal diundangkan
+    dan harus dinyatakan tidak berlaku lagi sejak Presiden mengumumkan secara resmi
+    bahwa status pandemi Covid-19 telah berakhir di Indonesia dan status tersebut
+    harus dinyatakan paling lambat akhir tahun ke-2. Dalam hal secara faktual pandemi
+    Covid-19 belum berakhir, sebelum memasuki tahun ke-3 UU a quo masih dapat diberlakukan
+    namun pengalokasian anggaran dan penentuan batas defisit anggaran untuk penanganan
+    Pandemi Covid-19, harus mendapatkan persetujuan DPR dan pertimbangan DPD”.'

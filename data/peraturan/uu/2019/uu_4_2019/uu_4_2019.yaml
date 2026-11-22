@@ -6,19 +6,18 @@ year: 2019
 title: Undang-Undang Nomor 4 Tahun 2019 tentang Kebidanan
 tentang: KEBIDANAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 17 Tahun 2023 Tentang Kesehatan'
+status: tidak_berlaku
 tanggal_penetapan: '2019-03-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-2019
-source_pdf_url: https://peraturan.go.id/files/uu4-2019bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/104274/uu-no-4-tahun-2019
+source_pdf_url: https://peraturan.bpk.go.id/Download/94989/UU%20Nomor%204%20Tahun%202019.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_17_2023
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -29,4 +28,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2019_2019-03-13.txt
   pasal_count: 80
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 79956789fd91fcf99b5887a1f1dc4a92d456e77da53c82c55c606b0a801241e5
+  ocr: true
 pdf_sha256: 55830913ef7ba07b567af8532b70b5b8c50f6e2bd3a7d23444e4bb53630815ff
+tanggal_pengundangan: '2019-03-15'
+tanggal_berlaku: '2019-03-15'
+lembaran_negara: 'LN.2019/NO.56, TLN NO.6325, LL SETKAB : 36 HLM.'
+subjek: KESEHATAN - JABATAN / PROFESI / KEAHLIAN / SERTIFIKASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-2019
+  source_pdf_url: https://peraturan.go.id/files/uu4-2019bt.pdf
+bpk:
+  id: 104274
+  files:
+  - url: https://peraturan.bpk.go.id/Download/94989/UU%20Nomor%204%20Tahun%202019.pdf
+    bpk_file_id: 94989
+    filename: UU Nomor 4 Tahun 2019.pdf
+    sha256: 79956789fd91fcf99b5887a1f1dc4a92d456e77da53c82c55c606b0a801241e5
+    bytes: 1797226
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_17_2023
+      citation: UU No. 17 Tahun 2023
+      tentang: Kesehatan
+      url: https://peraturan.bpk.go.id/Details/258028/uu-no-17-tahun-2023
+      note: null
+uji_materi: null

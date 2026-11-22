@@ -19,8 +19,8 @@ tanggal_penetapan: '2019-01-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-2019
-source_pdf_url: https://peraturan.go.id/files/uu2-2019bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/101000/uu-no-2-tahun-2019
+source_pdf_url: https://peraturan.bpk.go.id/Download/91613/UU%20Nomor%202%20Tahun%202019.pdf
 relationships:
   amends: []
   amended_by: []
@@ -36,4 +36,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2019_2019-01-10.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c7effa6ad758873d748fa97c0410ad80255d04674a5467ab40658607e1c8d6ef
+  ocr: true
 pdf_sha256: cc90d6d9b04479f1d59ef3aaf0dd5d38aeecaa3d4e0ccd9245743f8af54000a1
+tanggal_pengundangan: '2019-01-10'
+tanggal_berlaku: '2019-01-10'
+lembaran_negara: 'LN.2019/NO.5, TLN NO.6300, LL SETKAB : 4 HLM.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-2019
+  source_pdf_url: https://peraturan.go.id/files/uu2-2019bt.pdf
+bpk:
+  id: 101000
+  files:
+  - url: https://peraturan.bpk.go.id/Download/91613/UU%20Nomor%202%20Tahun%202019.pdf
+    bpk_file_id: 91613
+    filename: UU Nomor 2 Tahun 2019.pdf
+    sha256: c7effa6ad758873d748fa97c0410ad80255d04674a5467ab40658607e1c8d6ef
+    bytes: 319363
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/91614/UU%20Nomor%202%20Tahun%202019%20-%20salinan%20Kesepahaman.pdf
+    bpk_file_id: 91614
+    filename: UU Nomor 2 Tahun 2019 - salinan Kesepahaman.pdf
+    sha256: ea7de5b4f441301c6bc9338490e5be5f24dfb16624821b70c29d074c68b0d164
+    bytes: 9341018
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

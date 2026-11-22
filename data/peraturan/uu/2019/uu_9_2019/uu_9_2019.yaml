@@ -15,8 +15,8 @@ tanggal_penetapan: '2019-08-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-2019
-source_pdf_url: https://peraturan.go.id/files/uu9-2019bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/117012/uu-no-9-tahun-2019
+source_pdf_url: https://peraturan.bpk.go.id/Download/107913/UU%20Nomor%209%20Tahun%202019.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,4 +32,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2019_2019-08-01.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: edda0c1e739cb60364e0cae6611612039fa00d1c6d5ab04ab1886be5889f330c
+  ocr: true
 pdf_sha256: bbe5986d4d2c73bc5c8448279b751e0186e1b91099e7fe57909e830ea0e021bd
+tanggal_pengundangan: '2019-08-01'
+tanggal_berlaku: '2019-08-01'
+lembaran_negara: 'LN.2019/NO.142, TLN NO.6371, SIPUU.SETKAB.GO.ID : 3 HLM.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-2019
+  source_pdf_url: https://peraturan.go.id/files/uu9-2019bt.pdf
+bpk:
+  id: 117012
+  files:
+  - url: https://peraturan.bpk.go.id/Download/107913/UU%20Nomor%209%20Tahun%202019.pdf
+    bpk_file_id: 107913
+    filename: UU Nomor 9 Tahun 2019.pdf
+    sha256: edda0c1e739cb60364e0cae6611612039fa00d1c6d5ab04ab1886be5889f330c
+    bytes: 399451
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/107914/UU%20Nomor%209%20Tahun%202019%20-%20Lampiran.pdf
+    bpk_file_id: 107914
+    filename: UU Nomor 9 Tahun 2019 - Lampiran.pdf
+    sha256: 8a768b8d0e39b014c568316b148eb8de581698784dca4c6ba7801f6e2b54ced5
+    bytes: 11042064
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
