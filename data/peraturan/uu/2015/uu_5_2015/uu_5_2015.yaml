@@ -15,8 +15,8 @@ tanggal_penetapan: '2015-03-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-2015
-source_pdf_url: https://peraturan.go.id/files/uu5-2015bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37689/uu-no-5-tahun-2015
+source_pdf_url: https://peraturan.bpk.go.id/Download/43042/UU%20Nomor%205%20Tahun%202015.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,4 +32,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_2015_2015-03-10.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e1abc7878fffc2d3d3be6c7abf39b5b34331ae1a4b5dcd9cf2f497e8a4c7d2da
 pdf_sha256: a41d5254e46e4cdddbdd1bb395471aec10e1d5706a0830a35ccc388d2a7c3c44
+tanggal_pengundangan: '2015-03-10'
+tanggal_berlaku: '2015-03-10'
+lembaran_negara: 'LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-2015
+  source_pdf_url: https://peraturan.go.id/files/uu5-2015bt.pdf
+bpk:
+  id: 37689
+  files:
+  - url: https://peraturan.bpk.go.id/Download/43042/UU%20Nomor%205%20Tahun%202015.pdf
+    bpk_file_id: 43042
+    filename: UU Nomor 5 Tahun 2015.pdf
+    sha256: e1abc7878fffc2d3d3be6c7abf39b5b34331ae1a4b5dcd9cf2f497e8a4c7d2da
+    bytes: 197402
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

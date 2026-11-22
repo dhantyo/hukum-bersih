@@ -11,8 +11,8 @@ tanggal_penetapan: '2017-05-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-2017
-source_pdf_url: https://peraturan.go.id/files/uu3-2017bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37640/uu-no-3-tahun-2017
+source_pdf_url: https://peraturan.bpk.go.id/Download/26734/UU%20No%203%20Tahun%202017.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2017_2017-05-24.txt
   pasal_count: 72
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 404763d13a0f3bf3200613f26bc8153d89709be468a1c846e8d5f519edcfa694
+  ocr: true
 pdf_sha256: 1dd8617cc88269c02a75bd830d755a89b8d4455569247d17840c00fd9a179dbc
+tanggal_pengundangan: '2017-05-29'
+tanggal_berlaku: '2017-05-29'
+lembaran_negara: 'LL SETNEG : 29 HLM'
+subjek: ARSIP
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-2017
+  source_pdf_url: https://peraturan.go.id/files/uu3-2017bt.pdf
+bpk:
+  id: 37640
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26734/UU%20No%203%20Tahun%202017.pdf
+    bpk_file_id: 26734
+    filename: UU No 3 Tahun 2017.pdf
+    sha256: 404763d13a0f3bf3200613f26bc8153d89709be468a1c846e8d5f519edcfa694
+    bytes: 2718798
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

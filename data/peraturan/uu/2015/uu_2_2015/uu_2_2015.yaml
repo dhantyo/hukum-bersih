@@ -15,8 +15,8 @@ tanggal_penetapan: '2015-02-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-2015
-source_pdf_url: https://peraturan.go.id/files/UU+No+2+Tahun+2015.pdf
+source_url: https://peraturan.bpk.go.id/Details/37678/uu-no-2-tahun-2015
+source_pdf_url: https://peraturan.bpk.go.id/Download/26778/UU%20Nomor%202%20Tahun%202015.pdf
 relationships:
   amends:
   - id: uu_23_2014
@@ -34,4 +34,72 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2015_2015-02-02.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4548d700a58bb5418af3616b07589983852473f1f3e666af6b4a1aea4cc55487
 pdf_sha256: e504eae1f328700770b701c98494171722dc66734a788b3610160696c9db6e4b
+tanggal_pengundangan: '2015-02-02'
+tanggal_berlaku: '2015-02-02'
+lembaran_negara: 'LN.2015/NO.24, TLN NO.5657, LL SETNEG : 3 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH - PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-2015
+  source_pdf_url: https://peraturan.go.id/files/UU+No+2+Tahun+2015.pdf
+bpk:
+  id: 37678
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26778/UU%20Nomor%202%20Tahun%202015.pdf
+    bpk_file_id: 26778
+    filename: UU Nomor 2 Tahun 2015.pdf
+    sha256: 4548d700a58bb5418af3616b07589983852473f1f3e666af6b4a1aea4cc55487
+    bytes: 166170
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_17_2019
+      citation: UU No. 17 Tahun 2019
+      tentang: Sumber Daya Air
+      url: https://peraturan.bpk.go.id/Details/122742/uu-no-17-tahun-2019
+      note: 'Ketentuan mengenai pembagian urusan pemerintahan konkuren antara Pemerintah
+        Pusat dan pemerintah daerah provinsi dan pemerintah daerah kabupaten/kota,
+        Angka I Matriks pembagian urusan pemerintahan konkuren antara pemerintah pusat
+        dan pemerintah daerah provinsi dan pemerintah daerah kabupaten/kota: (a).
+        huruf C Pembagian Urusan Pemerintahan Bidang Pekerjaan Umum dan Penataan Ruang
+        Nomor 1 Suburusan Sumber Daya Air (SDA) kolom 3 huruf b, kolom 4 huruf b,
+        dan kolom 5 huruf b; (b). huruf CC Pembagian Urusan Pemerintahan Bidang Energi
+        dan Sumber Daya Mineral Nomor I Sub-Urusan Geologi kolom 3 huruf a, kolom
+        4 huruf b, dan kolom 5, yang tertuang dalam lampiran yang merupakan bagian
+        tidak terpisahkan dari Undang-Undang Nomor 23 Tahun 2014 tentang Pemerintahan
+        Daerah sebagaimana telah beberapa kali diubah terakhir dengan Undang-Undang
+        Nomor 9 Tahun 2015 tentang Perubahan Kedua atas Undang-Undang Nomor 23 Tahun
+        2014 tentang Pemerintahan Daerah'
+    Diubah dengan:
+    - id: uu_1_2026
+      citation: UU No. 1 Tahun 2026
+      tentang: Penyesuaian Pidana
+      url: https://peraturan.bpk.go.id/Details/337869/uu-no-1-tahun-2026
+      note: Ketentuan Pasal 238 dalam Undang-Undang Nomor 23 Tahun 2014, diubah
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: uu_17_2019
+      citation: UU No. 17 Tahun 2019
+      tentang: Sumber Daya Air
+      url: https://peraturan.bpk.go.id/Details/122742/uu-no-17-tahun-2019
+      note: null
+    - id: uu_9_2015
+      citation: UU No. 9 Tahun 2015
+      tentang: Perubahan Kedua Atas Undang-Undang Nomor 23 Tahun 2014 tentang Pemerintahan
+        Daerah
+      url: https://peraturan.bpk.go.id/Details/38209/uu-no-9-tahun-2015
+      note: null
+    Mengubah:
+    - id: uu_23_2014
+      citation: UU No. 23 Tahun 2014
+      tentang: Pemerintahan Daerah
+      url: https://peraturan.bpk.go.id/Details/38685/uu-no-23-tahun-2014
+      note: null
+uji_materi: null

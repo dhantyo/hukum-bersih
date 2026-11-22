@@ -15,8 +15,8 @@ tanggal_penetapan: '2017-11-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-2017
-source_pdf_url: https://peraturan.go.id/files/uu12-2017bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/64495/uu-no-12-tahun-2017
+source_pdf_url: https://peraturan.bpk.go.id/Download/54710/UU%20Nomor%2012%20Tahun%202017.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,4 +32,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2017_2017-11-10.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 84ea0b442ec3ef4f5baaf0ecbbe0bbb7d0cad78a51bd690ed6765e313bd3b672
+  ocr: true
 pdf_sha256: 2393c3959475c3d487bf8702859ae7b5d2b0b6e5821f6c293d46d48f9ee15976
+tanggal_pengundangan: '2017-11-13'
+tanggal_berlaku: '2017-11-13'
+lembaran_negara: 'LN.2017/NO.230, TLN NO.6135, LL SETNEG : 4 HLM.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-2017
+  source_pdf_url: https://peraturan.go.id/files/uu12-2017bt.pdf
+bpk:
+  id: 64495
+  files:
+  - url: https://peraturan.bpk.go.id/Download/54710/UU%20Nomor%2012%20Tahun%202017.pdf
+    bpk_file_id: 54710
+    filename: UU Nomor 12 Tahun 2017.pdf
+    sha256: 84ea0b442ec3ef4f5baaf0ecbbe0bbb7d0cad78a51bd690ed6765e313bd3b672
+    bytes: 673600
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

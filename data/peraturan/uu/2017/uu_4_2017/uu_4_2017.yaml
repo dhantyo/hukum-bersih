@@ -18,8 +18,8 @@ tanggal_penetapan: '2017-05-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-2017
-source_pdf_url: https://peraturan.go.id/files/uu4-2017bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37641/uu-no-4-tahun-2017
+source_pdf_url: https://peraturan.bpk.go.id/Download/26735/UU%20No%204%20Tahun%202017.pdf
 relationships:
   amends: []
   amended_by: []
@@ -35,4 +35,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2017_2017-05-24.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 307a604356690c1e231bba3593d7f2cb8421091bbbe438eacdad93e2bfe08dba
+  ocr: true
 pdf_sha256: fd16115c71917a980cf480f63af6197ea39b48956731c1f2929e5e037b5f1805
+tanggal_pengundangan: '2017-05-29'
+tanggal_berlaku: '2017-05-29'
+lembaran_negara: 'LL SETNEG : 5 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-2017
+  source_pdf_url: https://peraturan.go.id/files/uu4-2017bt.pdf
+bpk:
+  id: 37641
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26735/UU%20No%204%20Tahun%202017.pdf
+    bpk_file_id: 26735
+    filename: UU No 4 Tahun 2017.pdf
+    sha256: 307a604356690c1e231bba3593d7f2cb8421091bbbe438eacdad93e2bfe08dba
+    bytes: 736936
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

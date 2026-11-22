@@ -9,12 +9,12 @@ tentang: PERUBAHAN ATAS UNDANGUNDANG NOMOR 14 TAHUN 2015 TENTANG ANGGARAN PENDAP
   DAN BELANJA NEGARA TAHUN 2016
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2016-07-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-2016
-source_pdf_url: https://peraturan.go.id/files/uu12-2016bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37487/uu-no-12-tahun-2016
+source_pdf_url: https://peraturan.bpk.go.id/Download/26580/UU%20Nomor%2012%20Tahun%202016.pdf
 relationships:
   amends:
   - id: uu_14_2015
@@ -47,11 +47,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_12_2016_2016
+- id: uu_12_2016_2016-07-26
   kind: asli
   source: official
-  date: null
+  date: '2016-07-26'
   date_basis: tanggal_penetapan
-  text: uu_12_2016_2016.txt
+  text: uu_12_2016_2016-07-26.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 27e61adf12cb2268200c5f3aac6571cc2a86be8850e292717b1a9f58f1e8bd48
+  ocr: true
 pdf_sha256: 81b917b7656d89a08cf694163583fa4bf92a0d216d4727b64939241e33ef6002
+tanggal_pengundangan: '2016-07-27'
+tanggal_berlaku: '2016-07-27'
+lembaran_negara: 'LN.2016/NO.146, TLN NO.5907, LL SETNEG : 30 hlm'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-2016
+  source_pdf_url: https://peraturan.go.id/files/uu12-2016bt.pdf
+bpk:
+  id: 37487
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26580/UU%20Nomor%2012%20Tahun%202016.pdf
+    bpk_file_id: 26580
+    filename: UU Nomor 12 Tahun 2016.pdf
+    sha256: 27e61adf12cb2268200c5f3aac6571cc2a86be8850e292717b1a9f58f1e8bd48
+    bytes: 3658478
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_14_2015
+      citation: UU No. 14 Tahun 2015
+      tentang: Anggaran Pendapatan Dan Belanja Negara Tahun Anggaran 2016
+      url: https://peraturan.bpk.go.id/Details/37505/uu-no-14-tahun-2015
+      note: null
+uji_materi: null

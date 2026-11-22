@@ -13,8 +13,8 @@ tanggal_penetapan: '2015-03-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-2015
-source_pdf_url: https://peraturan.go.id/files/uu3-2015bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37679/uu-no-3-tahun-2015
+source_pdf_url: https://peraturan.bpk.go.id/Download/26779/UU%20Nomor%203%20Tahun%202015.pdf
 relationships:
   amends:
   - id: uu_27_2014
@@ -51,4 +51,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2015_2015-03-06.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1a85636ed6f86fe03161ee68aadd0047a0dca1a9372ec888149345fccefabdbb
 pdf_sha256: f84e229e03fb89a11674c87954e3a18d220ff21cbb74daaa5ca10c8ba6903d1d
+tanggal_pengundangan: '2015-03-06'
+tanggal_berlaku: '2015-03-06'
+lembaran_negara: 'LN.2015/NO.44, TLN NO.5669, LL SETNEG : 20 HLM'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-2015
+  source_pdf_url: https://peraturan.go.id/files/uu3-2015bt.pdf
+bpk:
+  id: 37679
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26779/UU%20Nomor%203%20Tahun%202015.pdf
+    bpk_file_id: 26779
+    filename: UU Nomor 3 Tahun 2015.pdf
+    sha256: 1a85636ed6f86fe03161ee68aadd0047a0dca1a9372ec888149345fccefabdbb
+    bytes: 404420
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_27_2014
+      citation: UU No. 27 Tahun 2014
+      tentang: Anggaran Pendapatan Dan Belanja Negara Tahun Anggaran 2015
+      url: https://peraturan.bpk.go.id/Details/37687/uu-no-27-tahun-2014
+      note: null
+uji_materi: null

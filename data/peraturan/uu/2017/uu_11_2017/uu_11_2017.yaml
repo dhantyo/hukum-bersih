@@ -12,8 +12,8 @@ tanggal_penetapan: '2017-09-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-2017
-source_pdf_url: https://peraturan.go.id/files/uu11-2017bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/53614/uu-no-11-tahun-2017
+source_pdf_url: https://peraturan.bpk.go.id/Download/43001/UU%20Nomor%2011%20Tahun%202017.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,39 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_2017_2017-09-20.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8fc07b7da2f514e622911661bfb18ffe5f2e7b9c602b00dca89439168db9df0a
+  ocr: true
 pdf_sha256: 24655a2b2d001a36e7dcc5bf9a14874da57e328ea86da9d0283ea651b8ec30dd
+tanggal_pengundangan: '2017-09-20'
+tanggal_berlaku: '2017-09-20'
+lembaran_negara: 'LN.2017/NO.209, TLN NO.6125, LL SETNEG : 4 HLM.'
+subjek: LINGKUNGAN HIDUP - PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI
+  / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-2017
+  source_pdf_url: https://peraturan.go.id/files/uu11-2017bt.pdf
+bpk:
+  id: 53614
+  files:
+  - url: https://peraturan.bpk.go.id/Download/43001/UU%20Nomor%2011%20Tahun%202017.pdf
+    bpk_file_id: 43001
+    filename: UU Nomor 11 Tahun 2017.pdf
+    sha256: 8fc07b7da2f514e622911661bfb18ffe5f2e7b9c602b00dca89439168db9df0a
+    bytes: 1232416
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/43002/UU%20Nomor%2011%20Tahun%202017%20-%20(Salinan%20Naskah%20Resmi).pdf
+    bpk_file_id: 43002
+    filename: UU Nomor 11 Tahun 2017 - (Salinan Naskah Resmi).pdf
+    sha256: c714f737b92b6290186f2591d45f780a508203c079c7c92b12fcb9121f0cc09a
+    bytes: 3177257
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/43003/UU%20Nomor%2011%20Tahun%202017%20-%20(Naskah%20Terjemahan).pdf
+    bpk_file_id: 43003
+    filename: UU Nomor 11 Tahun 2017 - (Naskah Terjemahan).pdf
+    sha256: 11f8edbfc8af6add653b84fa398db6d5f8878d0ce67ab0aafe88d5ae1b417b91
+    bytes: 472338
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

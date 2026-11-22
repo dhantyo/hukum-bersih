@@ -11,8 +11,8 @@ tanggal_penetapan: '2017-01-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-2017
-source_pdf_url: https://peraturan.go.id/files/LN11-2017%286018%29uu2-2017.pdf
+source_url: https://peraturan.bpk.go.id/Details/37637/uu-no-2-tahun-2017
+source_pdf_url: https://peraturan.bpk.go.id/Download/26731/UU%20No%202%20Tahun%202017.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,49 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2017_2017-01-12.txt
   pasal_count: 106
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: edd5edf2a9856d42d7a1b1ef2825ef3989d5ab303411e5753d28084ca384522e
+  ocr: true
 pdf_sha256: f6059eec0c59dcd0be2ad6b94a174db7dd7b2b9898475063f1c678127cab3890
+tanggal_pengundangan: '2017-01-12'
+tanggal_berlaku: '2017-01-12'
+lembaran_negara: 'LL SETNEG : 58 HLM'
+subjek: KONSTRUKSI, SIPIL, ARSITEK, BANGUNAN, DAN INFRASTRUKTUR
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-2017
+  source_pdf_url: https://peraturan.go.id/files/LN11-2017%286018%29uu2-2017.pdf
+bpk:
+  id: 37637
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26731/UU%20No%202%20Tahun%202017.pdf
+    bpk_file_id: 26731
+    filename: UU No 2 Tahun 2017.pdf
+    sha256: edd5edf2a9856d42d7a1b1ef2825ef3989d5ab303411e5753d28084ca384522e
+    bytes: 9228085
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_18_1999
+      citation: UU No. 18 Tahun 1999
+      tentang: Jasa Konstruksi
+      url: https://peraturan.bpk.go.id/Details/37638/uu-no-18-tahun-1999
+      note: null
+uji_materi: null

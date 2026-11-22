@@ -11,12 +11,12 @@ tentang: Pengesahan Paris Agreement To The United Nations Framework Convention O
   Mengenai Perubahan Iklim)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2016-10-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-2016
-source_pdf_url: https://peraturan.go.id/files/uu16-2016bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37573/uu-no-16-tahun-2016
+source_pdf_url: https://peraturan.bpk.go.id/Download/26666/UU%20Nomor%2016%20Tahun%202016.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,11 +25,33 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_16_2016_2016
+- id: uu_16_2016_2016-10-24
   kind: asli
   source: official
-  date: null
+  date: '2016-10-24'
   date_basis: tanggal_penetapan
-  text: uu_16_2016_2016.txt
+  text: uu_16_2016_2016-10-24.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b71c12210b68a688b3829416ad9babb3e8616760efb991f722faa71b737c7227
+  ocr: true
 pdf_sha256: 4a3bdf967f8be9736ed3b7a7fc5b57797ab63081e85a9249520e3477466b731b
+tanggal_pengundangan: '2016-10-25'
+tanggal_berlaku: '2016-10-25'
+lembaran_negara: 'LN.2016/NO.204, TLN NO.5939, LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-2016
+  source_pdf_url: https://peraturan.go.id/files/uu16-2016bt.pdf
+bpk:
+  id: 37573
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26666/UU%20Nomor%2016%20Tahun%202016.pdf
+    bpk_file_id: 26666
+    filename: UU Nomor 16 Tahun 2016.pdf
+    sha256: b71c12210b68a688b3829416ad9babb3e8616760efb991f722faa71b737c7227
+    bytes: 3106832
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

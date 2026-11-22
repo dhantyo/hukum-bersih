@@ -12,12 +12,12 @@ tentang: PENGESAHAN BANTUAN TIMBAL BALIK DALAM MASALAH PIDANA ANTARA REPUBLIK IN
   BETWEEN THE REPUBLIC OF INDONESIA AND THE SOCIALIST REPUBLIC OF VIET NAM
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2015-11-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-2015
-source_pdf_url: https://peraturan.go.id/files/uu13-2015bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38535/uu-no-13-tahun-2015
+source_pdf_url: https://peraturan.bpk.go.id/Download/27780/UU%20Nomor%2013%20Tahun%202015.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,11 +26,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_13_2015_2015
+- id: uu_13_2015_2015-11-18
   kind: asli
   source: official
-  date: null
+  date: '2015-11-18'
   date_basis: tanggal_penetapan
-  text: uu_13_2015_2015.txt
+  text: uu_13_2015_2015-11-18.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b2437405172a4b25837f60dfee0ead402c601112a6299fa7a41181d551adbef8
 pdf_sha256: 3481632f1c88cbb370449172eafa5f9a0956bf6183710858450e044761f03582
+tanggal_pengundangan: '2015-11-18'
+tanggal_berlaku: '2015-11-18'
+lembaran_negara: 'LN.2015/NO.277, TLN NO. 5766, LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-2015
+  source_pdf_url: https://peraturan.go.id/files/uu13-2015bt.pdf
+bpk:
+  id: 38535
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27780/UU%20Nomor%2013%20Tahun%202015.pdf
+    bpk_file_id: 27780
+    filename: UU Nomor 13 Tahun 2015.pdf
+    sha256: b2437405172a4b25837f60dfee0ead402c601112a6299fa7a41181d551adbef8
+    bytes: 200208
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

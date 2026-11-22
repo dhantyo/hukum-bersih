@@ -13,8 +13,8 @@ tanggal_penetapan: '2017-08-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-2017
-source_pdf_url: https://peraturan.go.id/files/uu8-2017bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/53602/uu-no-8-tahun-2017
+source_pdf_url: https://peraturan.bpk.go.id/Download/42986/UU%20Nomor%208%20Tahun%202017.pdf
 relationships:
   amends:
   - id: uu_18_2016
@@ -52,4 +52,33 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_2017_2017-08-21.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8b867ebeffe3361113de987395a85fd628ca58290b7b29084565e214495c6f2b
+  extra_pdf_sha256:
+  - 6ca70b17b30c5f21b536c3538e829b6fa607686a407e05893dd4fe456c36cd84
 pdf_sha256: 8b867ebeffe3361113de987395a85fd628ca58290b7b29084565e214495c6f2b
+tanggal_pengundangan: '2017-08-21'
+tanggal_berlaku: '2017-08-21'
+lembaran_negara: 'LN.2017/NO.186, TLN NO.6111, LL KEMENKUMHAM : 31 HLM.'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-2017
+  source_pdf_url: https://peraturan.go.id/files/uu8-2017bt.pdf
+bpk:
+  id: 53602
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42986/UU%20Nomor%208%20Tahun%202017.pdf
+    bpk_file_id: 42986
+    filename: UU Nomor 8 Tahun 2017.pdf
+    sha256: 8b867ebeffe3361113de987395a85fd628ca58290b7b29084565e214495c6f2b
+    bytes: 619258
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/42987/UU%20Nomor%208%20Tahun%202017%20-%20Penjelasan.pdf
+    bpk_file_id: 42987
+    filename: UU Nomor 8 Tahun 2017 - Penjelasan.pdf
+    sha256: 6ca70b17b30c5f21b536c3538e829b6fa607686a407e05893dd4fe456c36cd84
+    bytes: 295539
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

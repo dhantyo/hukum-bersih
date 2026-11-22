@@ -14,8 +14,8 @@ tanggal_penetapan: '2017-08-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-2017
-source_pdf_url: https://peraturan.go.id/files/uu9-2017bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/53607/uu-no-9-tahun-2017
+source_pdf_url: https://peraturan.bpk.go.id/Download/42992/UU%20Nomor%209%20Tahun%202017.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,4 +32,39 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2017_2017-08-23.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b5eb56815d98bbd425ff1b91f90e03f7bdecfacf7c2c5e67df9874fba475c407
+  extra_pdf_sha256:
+  - 46978a1001b541286a63cb109b88f5da09a3d5e62c68377a5f3c2f416b48eae4
 pdf_sha256: b5eb56815d98bbd425ff1b91f90e03f7bdecfacf7c2c5e67df9874fba475c407
+tanggal_pengundangan: '2017-08-23'
+tanggal_berlaku: '2017-08-23'
+lembaran_negara: 'LN.2017/NO.190, TLN NO.6112, LL KEMENKUMHAM : 4 HLM.'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-2017
+  source_pdf_url: https://peraturan.go.id/files/uu9-2017bt.pdf
+bpk:
+  id: 53607
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42992/UU%20Nomor%209%20Tahun%202017.pdf
+    bpk_file_id: 42992
+    filename: UU Nomor 9 Tahun 2017.pdf
+    sha256: b5eb56815d98bbd425ff1b91f90e03f7bdecfacf7c2c5e67df9874fba475c407
+    bytes: 350706
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/42993/UU%20Nomor%209%20Tahun%202017%20-%20Penjelasan.pdf
+    bpk_file_id: 42993
+    filename: UU Nomor 9 Tahun 2017 - Penjelasan.pdf
+    sha256: 46978a1001b541286a63cb109b88f5da09a3d5e62c68377a5f3c2f416b48eae4
+    bytes: 179289
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: perppu_1_2017
+      citation: PERPU No. 1 Tahun 2017
+      tentang: Akses Informasi Keuangan Untuk Kepentingan Perpajakan
+      url: https://peraturan.bpk.go.id/Details/53275/perpu-no-1-tahun-2017
+      note: null
+uji_materi: null

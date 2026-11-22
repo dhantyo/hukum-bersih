@@ -13,8 +13,8 @@ tanggal_penetapan: '2015-08-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-2015
-source_pdf_url: https://peraturan.go.id/files/uu11-2015bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38534/uu-no-11-tahun-2015
+source_pdf_url: https://peraturan.bpk.go.id/Download/27779/UU%20Nomor%2011%20Tahun%202015.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,4 +31,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_2015_2015-08-06.txt
   pasal_count: 3
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e66589b0d5dc532e3524694103614849e76fd7e3749d2e07df11d484094654f0
 pdf_sha256: 8fa6c7616df25ae38fb94af2f824b21666a9f7b7146eadf350643d80d8ad323a
+tanggal_pengundangan: '2015-08-06'
+tanggal_berlaku: '2015-08-06'
+lembaran_negara: 'LN.2015/NO.182, TLN NO.5727, LL SETNEG : 3 HLM'
+subjek: PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-2015
+  source_pdf_url: https://peraturan.go.id/files/uu11-2015bt.pdf
+bpk:
+  id: 38534
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27779/UU%20Nomor%2011%20Tahun%202015.pdf
+    bpk_file_id: 27779
+    filename: UU Nomor 11 Tahun 2015.pdf
+    sha256: e66589b0d5dc532e3524694103614849e76fd7e3749d2e07df11d484094654f0
+    bytes: 122060
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: perppu_4_2008
+      citation: PERPU No. 4 Tahun 2008
+      tentang: Jaring Pengaman Sistem Keuangan
+      url: https://peraturan.bpk.go.id/Details/53224/perpu-no-4-tahun-2008
+      note: null
+uji_materi: null

@@ -11,22 +11,16 @@ tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 20
   Anak Menjadi Undang-Undang
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2016-11-09'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-2016
-source_pdf_url: https://peraturan.go.id/files/uu17-2016bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37575/uu-no-17-tahun-2016
+source_pdf_url: https://peraturan.bpk.go.id/Download/26670/UU%20Nomor%2017%20Tahun%202016.pdf
 relationships:
   amends:
   - id: uu_23_2002
     order: 2
-    changes:
-      diubah:
-      - '82'
-      disisipkan:
-      - 81A
-      - 82A
   amended_by: []
   revokes: []
   revoked_by: []
@@ -34,11 +28,40 @@ relationships:
   - perppu_1_2016
   enacted_by: []
 versions:
-- id: uu_17_2016_2016
+- id: uu_17_2016_2016-11-09
   kind: asli
   source: official
-  date: null
+  date: '2016-11-09'
   date_basis: tanggal_penetapan
-  text: uu_17_2016_2016.txt
-  pasal_count: 2
+  text: uu_17_2016_2016-11-09.txt
+  pasal_count: 3
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 90d514cb34e53a34b591c36e4bba61f32bbacddfa98d1c9f1ec378e866bcf4fb
+  ocr: true
 pdf_sha256: 7cb23be99558491ae213d9efd779d477482cb6940d381e74323f151565e281ab
+tanggal_pengundangan: '2016-11-09'
+tanggal_berlaku: '2016-11-09'
+lembaran_negara: 'LN.2016/NO.237, TLN No.5946, LL SETNEG : 4 HLM'
+subjek: HAK ASASI MANUSIA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-2016
+  source_pdf_url: https://peraturan.go.id/files/uu17-2016bt.pdf
+bpk:
+  id: 37575
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26670/UU%20Nomor%2017%20Tahun%202016.pdf
+    bpk_file_id: 26670
+    filename: UU Nomor 17 Tahun 2016.pdf
+    sha256: 90d514cb34e53a34b591c36e4bba61f32bbacddfa98d1c9f1ec378e866bcf4fb
+    bytes: 1401433
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 81 ayat (1) dan Pasal 82 Undang-Undang Nomor 23 Tahun 2002 sebagaimana
+        telah beberapa kali diubah, terakhir dengan Undang-Undang Nomor 17 Tahun 2016
+uji_materi: null

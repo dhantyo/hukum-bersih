@@ -19,8 +19,8 @@ tanggal_penetapan: '2017-01-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-2017
-source_pdf_url: https://peraturan.go.id/files/uu1-2017bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/11963/uu-no-1-tahun-2017
+source_pdf_url: https://peraturan.bpk.go.id/Download/570/UU%20Nomor%201%20Tahun%202017.pdf
 relationships:
   amends: []
   amended_by: []
@@ -36,4 +36,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2017_2017-01-12.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3dab799570ebc80f3c2caa86e96d00ced199af80af07b6721dd6b9b7eebd4afa
+  ocr: true
 pdf_sha256: 004740b550e1e6dcd445f93ec859532c06c33bf0444e37e6ae73add9d5ebbc90
+tanggal_pengundangan: '2017-01-12'
+tanggal_berlaku: '2017-01-12'
+lembaran_negara: LN.2017/No.10
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-2017
+  source_pdf_url: https://peraturan.go.id/files/uu1-2017bt.pdf
+bpk:
+  id: 11963
+  files:
+  - url: https://peraturan.bpk.go.id/Download/570/UU%20Nomor%201%20Tahun%202017.pdf
+    bpk_file_id: 570
+    filename: UU Nomor 1 Tahun 2017.pdf
+    sha256: 3dab799570ebc80f3c2caa86e96d00ced199af80af07b6721dd6b9b7eebd4afa
+    bytes: 829206
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/571/UU%20Nomor%201%20Tahun%202017%20-%20Lampiran.pdf
+    bpk_file_id: 571
+    filename: UU Nomor 1 Tahun 2017 - Lampiran.pdf
+    sha256: 191d3699b87e73ab4abed4716ea563749984a3d1385cd9a81d7f874c5ae86019
+    bytes: 13540421
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

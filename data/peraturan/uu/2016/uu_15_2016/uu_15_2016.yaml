@@ -13,8 +13,8 @@ tanggal_penetapan: '2016-10-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-2016
-source_pdf_url: https://peraturan.go.id/files/uu15-2016bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37570/uu-no-15-tahun-2016
+source_pdf_url: https://peraturan.bpk.go.id/Download/26663/UU%20Nomor%2015%20Tahun%202016.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2016_2016-10-06.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 258bf7a08c4fe3b465c3140d94f5c4344c4fa530155f1eb77f998db69bad1ad0
+  ocr: true
 pdf_sha256: 217da78618aee22cc745b423397815a31c130fff7dd94523696f44567c92f2cc
+tanggal_pengundangan: '2016-10-06'
+tanggal_berlaku: '2016-10-06'
+lembaran_negara: 'LN.2016/NO.193, TLN NO.5931, LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-2016
+  source_pdf_url: https://peraturan.go.id/files/uu15-2016bt.pdf
+bpk:
+  id: 37570
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26663/UU%20Nomor%2015%20Tahun%202016.pdf
+    bpk_file_id: 26663
+    filename: UU Nomor 15 Tahun 2016.pdf
+    sha256: 258bf7a08c4fe3b465c3140d94f5c4344c4fa530155f1eb77f998db69bad1ad0
+    bytes: 432898
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

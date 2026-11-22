@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 9 Tahun 2016 tentang Pencegahan Dan Penanganan Krisis
 tentang: PENCEGAHAN DAN PENANGANAN KRISIS SISTEM KEUANGAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2016-04-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-2016
-source_pdf_url: https://peraturan.go.id/files/uu9-2016bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37298/uu-no-9-tahun-2016
+source_pdf_url: https://peraturan.bpk.go.id/Download/26395/UU%20Nomor%209%20Tahun%202016.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,52 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_9_2016_2016
+- id: uu_9_2016_2016-04-15
   kind: asli
   source: official
-  date: null
+  date: '2016-04-15'
   date_basis: tanggal_penetapan
-  text: uu_9_2016_2016.txt
+  text: uu_9_2016_2016-04-15.txt
   pasal_count: 55
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8ad564fe0163acbbc703ccaccda2e572ddc37d707b82fa39907a9674d52446bc
 pdf_sha256: 271bb86720c98ad633ea96e09b2fa613231381e392219770c509e3b1cb536be6
+tanggal_pengundangan: '2016-04-15'
+tanggal_berlaku: '2016-04-15'
+lembaran_negara: 'LN.2016/NO.70, TLN NO.5872, LL SETNEG : 34 HLM'
+subjek: PEMBENTUKAN, PERUBAHAN, DAN PEMBUBARAN KOMISI / KOMITE / BADAN / DEWAN / STAF
+  KHUSUS / TIM / PANITIA - PERBANKAN, LEMBAGA KEUANGAN - PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-2016
+  source_pdf_url: https://peraturan.go.id/files/uu9-2016bt.pdf
+bpk:
+  id: 37298
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26395/UU%20Nomor%209%20Tahun%202016.pdf
+    bpk_file_id: 26395
+    filename: UU Nomor 9 Tahun 2016.pdf
+    sha256: 8ad564fe0163acbbc703ccaccda2e572ddc37d707b82fa39907a9674d52446bc
+    bytes: 359086
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+    - id: perppu_1_2020
+      citation: PERPU No. 1 Tahun 2020
+      tentang: Kebijakan Keuangan Negara dan Stabilitas Sistem Keuangan untuk Penanganan
+        Pandemi Corona Virus Disease 2019 (COVID-19) dan/atau dalam Rangka Menghadapi
+        Ancaman yang Membahayakan Perekonomian Nasional dan/atau Stabilitas Sistem
+        Keuangan
+      url: https://peraturan.bpk.go.id/Details/135060/perpu-no-1-tahun-2020
+      note: null
+uji_materi: null

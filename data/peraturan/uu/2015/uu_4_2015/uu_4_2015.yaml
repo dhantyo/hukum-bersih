@@ -19,8 +19,8 @@ tanggal_penetapan: '2015-03-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-2015
-source_pdf_url: https://peraturan.go.id/files/uu4-2015bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37688/uu-no-4-tahun-2015
+source_pdf_url: https://peraturan.bpk.go.id/Download/224560/UU%20Nomor%204%20Tahun%202015_.pdf
 relationships:
   amends: []
   amended_by: []
@@ -36,4 +36,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2015_2015-03-10.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8cb257cecdae50b45536ed489a73c57e55306766ab3a46cd607e466ba27b05e8
 pdf_sha256: e14cf878811960cdfb1470d2bd8909b2400da2b0acf388620be5ecb95f338f8b
+tanggal_pengundangan: '2015-03-10'
+tanggal_berlaku: '2015-03-10'
+lembaran_negara: 'LN.2015/NO.47, TLN NO.5672, peraturan.go.id : 3 hlm.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+  - HUBUNGAN INTERNASIONAL / KERJA SAMA INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-2015
+  source_pdf_url: https://peraturan.go.id/files/uu4-2015bt.pdf
+bpk:
+  id: 37688
+  files:
+  - url: https://peraturan.bpk.go.id/Download/224560/UU%20Nomor%204%20Tahun%202015_.pdf
+    bpk_file_id: 224560
+    filename: UU Nomor 4 Tahun 2015_.pdf
+    sha256: 8cb257cecdae50b45536ed489a73c57e55306766ab3a46cd607e466ba27b05e8
+    bytes: 299543
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

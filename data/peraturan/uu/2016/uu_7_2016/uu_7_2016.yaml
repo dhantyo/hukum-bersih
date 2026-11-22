@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 7 Tahun 2016 tentang Perlindungan Dan Pemberdayaan Ne
 tentang: PERLINDUNGAN DAN PEMBERDAYAAN NELAYAN PEMBUDI DAYA IKAN DAN PETAMBAK GARAM
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2016-04-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-2016
-source_pdf_url: https://peraturan.go.id/files/uu7-2016bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37237/uu-no-7-tahun-2016
+source_pdf_url: https://peraturan.bpk.go.id/Download/26338/UU%20Nomor%207%20Tahun%202016.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,49 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_7_2016_2016
+- id: uu_7_2016_2016-04-14
   kind: asli
   source: official
-  date: null
+  date: '2016-04-14'
   date_basis: tanggal_penetapan
-  text: uu_7_2016_2016.txt
+  text: uu_7_2016_2016-04-14.txt
   pasal_count: 78
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f32afb080135cefc7911546010a92dd127771db551c5ad22872206ef3ecd338e
 pdf_sha256: c0348a2e23bb0052d82d47925cc7c28238f1525776290704a46f054c72a96509
+tanggal_pengundangan: '2016-04-14'
+tanggal_berlaku: '2016-04-14'
+lembaran_negara: 'LN.2016/NO.68, TLN NO.5870, LL SETNEG : 38 HLM'
+subjek: PERIKANAN DAN KELAUTAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-2016
+  source_pdf_url: https://peraturan.go.id/files/uu7-2016bt.pdf
+bpk:
+  id: 37237
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26338/UU%20Nomor%207%20Tahun%202016.pdf
+    bpk_file_id: 26338
+    filename: UU Nomor 7 Tahun 2016.pdf
+    sha256: f32afb080135cefc7911546010a92dd127771db551c5ad22872206ef3ecd338e
+    bytes: 507937
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+uji_materi: null

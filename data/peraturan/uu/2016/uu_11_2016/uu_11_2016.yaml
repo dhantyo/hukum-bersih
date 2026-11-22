@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 11 Tahun 2016 tentang Pengampunan Pajak
 tentang: PENGAMPUNAN PAJAK
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2016-07-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-2016
-source_pdf_url: https://peraturan.go.id/files/uu11-2016bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37480/uu-no-11-tahun-2016
+source_pdf_url: https://peraturan.bpk.go.id/Download/26573/UU%20Nomor%2011%20Tahun%202016.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_11_2016_2016
+- id: uu_11_2016_2016-07-01
   kind: asli
   source: official
-  date: null
+  date: '2016-07-01'
   date_basis: tanggal_penetapan
-  text: uu_11_2016_2016.txt
+  text: uu_11_2016_2016-07-01.txt
   pasal_count: 25
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5d5eea3d2ef84d8be6abe4223a0f51aed5dc3d0d8f89b3c6ff08a4e414951a6d
 pdf_sha256: f9bc6bce2983b63a31f791e9cbb6dfb66991d7320f0b9458b4b5bed59913ae40
+tanggal_pengundangan: '2016-07-01'
+tanggal_berlaku: '2016-07-01'
+lembaran_negara: 'LN.2016/NO.131, TLN NO.5899,LL SETNEG : 25 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-2016
+  source_pdf_url: https://peraturan.go.id/files/uu11-2016bt.pdf
+bpk:
+  id: 37480
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26573/UU%20Nomor%2011%20Tahun%202016.pdf
+    bpk_file_id: 26573
+    filename: UU Nomor 11 Tahun 2016.pdf
+    sha256: 5d5eea3d2ef84d8be6abe4223a0f51aed5dc3d0d8f89b3c6ff08a4e414951a6d
+    bytes: 402689
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

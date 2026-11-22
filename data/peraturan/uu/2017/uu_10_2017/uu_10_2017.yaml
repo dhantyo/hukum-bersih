@@ -13,8 +13,8 @@ tanggal_penetapan: '2017-08-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2017
-source_pdf_url: https://peraturan.go.id/files/uu10-2017bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/53609/uu-no-10-tahun-2017
+source_pdf_url: https://peraturan.bpk.go.id/Download/42995/UU%20Nomor%2010%20Tahun%202017.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,33 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2017_2017-08-23.txt
   pasal_count: 14
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a7525050a540aa6ee22d73363a6b66b6f712083806a754c617a5fb3b0e81c22e
+  extra_pdf_sha256:
+  - f4753aac8221319e63ac1c492323d62a9a17ccbc08eed6d7bc4172a31de60b91
 pdf_sha256: a7525050a540aa6ee22d73363a6b66b6f712083806a754c617a5fb3b0e81c22e
+tanggal_pengundangan: '2017-08-23'
+tanggal_berlaku: '2017-08-23'
+lembaran_negara: 'LN.2017/NO.191, TLN NO.6113, LL KEMENKUMHAM : 13 HLM.'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2017
+  source_pdf_url: https://peraturan.go.id/files/uu10-2017bt.pdf
+bpk:
+  id: 53609
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42995/UU%20Nomor%2010%20Tahun%202017.pdf
+    bpk_file_id: 42995
+    filename: UU Nomor 10 Tahun 2017.pdf
+    sha256: a7525050a540aa6ee22d73363a6b66b6f712083806a754c617a5fb3b0e81c22e
+    bytes: 221105
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/42996/UU%20Nomor%2010%20Tahun%202017%20-%20Penjelasan.pdf
+    bpk_file_id: 42996
+    filename: UU Nomor 10 Tahun 2017 - Penjelasan.pdf
+    sha256: f4753aac8221319e63ac1c492323d62a9a17ccbc08eed6d7bc4172a31de60b91
+    bytes: 339651
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

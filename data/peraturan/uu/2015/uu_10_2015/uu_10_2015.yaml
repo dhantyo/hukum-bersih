@@ -15,8 +15,8 @@ tanggal_penetapan: '2015-05-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2015
-source_pdf_url: https://peraturan.go.id/files/uu10-2015bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38210/uu-no-10-tahun-2015
+source_pdf_url: https://peraturan.bpk.go.id/Download/27378/UU%20Nomor%2010%20Tahun%202015.pdf
 relationships:
   amends:
   - id: uu_30_2002
@@ -34,4 +34,40 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2015_2015-05-20.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: eec535f436fb9392de895a48b209807b658a6ffbc1e87353a123efdeab90421a
 pdf_sha256: ff5f660748c36402e88da3089af90d5c71177cfa16c7e059e950a61256f4cb6e
+tanggal_pengundangan: '2015-05-25'
+tanggal_berlaku: '2015-05-25'
+lembaran_negara: 'LN.2015/NO.107, TLN NO.5698, LL SETNEG : 3 HLM'
+subjek: PEMBENTUKAN, PERUBAHAN, DAN PEMBUBARAN KOMISI / KOMITE / BADAN / DEWAN / STAF
+  KHUSUS / TIM / PANITIA - TINDAK PIDANA KORUPSI, PENCEGAHAN KORUPSI - DASAR PEMBENTUKAN
+  KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2015
+  source_pdf_url: https://peraturan.go.id/files/uu10-2015bt.pdf
+bpk:
+  id: 38210
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27378/UU%20Nomor%2010%20Tahun%202015.pdf
+    bpk_file_id: 27378
+    filename: UU Nomor 10 Tahun 2015.pdf
+    sha256: eec535f436fb9392de895a48b209807b658a6ffbc1e87353a123efdeab90421a
+    bytes: 154672
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_19_2019
+      citation: UU No. 19 Tahun 2019
+      tentang: Perubahan Kedua atas Undang-Undang Nomor 30 Tahun 2002 tentang Komisi
+        Pemberantasan Tindak Pidana Korupsi
+      url: https://peraturan.bpk.go.id/Details/122028/uu-no-19-tahun-2019
+      note: null
+    Mengubah:
+    - id: uu_30_2002
+      citation: UU No. 30 Tahun 2002
+      tentang: Komisi Pemberantasan Tindak Pidana Korupsi
+      url: https://peraturan.bpk.go.id/Details/44493/uu-no-30-tahun-2002
+      note: null
+uji_materi: null

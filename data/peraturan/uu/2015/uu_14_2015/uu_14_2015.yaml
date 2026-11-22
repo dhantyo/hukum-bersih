@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 14 Tahun 2015 tentang Anggaran Pendapatan Dan Belanja
 tentang: ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 2016
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2015-11-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-2015
-source_pdf_url: https://peraturan.go.id/files/uu14-2015bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37505/uu-no-14-tahun-2015
+source_pdf_url: https://peraturan.bpk.go.id/Download/26598/UU%20Nomor%2014%20Tahun%202015.pdf
 relationships:
   amends: []
   amended_by:
@@ -23,11 +23,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_14_2015_2015
+- id: uu_14_2015_2015-11-25
   kind: asli
   source: official
-  date: null
+  date: '2015-11-25'
   date_basis: tanggal_penetapan
-  text: uu_14_2015_2015.txt
+  text: uu_14_2015_2015-11-25.txt
   pasal_count: 43
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: afbb1cdd3f25747e11cd4c628b154269389e2dde19e4abcb903872ef33893d60
 pdf_sha256: 4f467f596b5ebcc014c3107b98aeb3508f6c401d47b420a1cdd6261b44488381
+tanggal_pengundangan: '2015-11-25'
+tanggal_berlaku: '2016-01-01'
+lembaran_negara: 'LN.2015/NO.278, TLN NO.5767, LL SETNEG : 43 HLM'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-2015
+  source_pdf_url: https://peraturan.go.id/files/uu14-2015bt.pdf
+bpk:
+  id: 37505
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26598/UU%20Nomor%2014%20Tahun%202015.pdf
+    bpk_file_id: 26598
+    filename: UU Nomor 14 Tahun 2015.pdf
+    sha256: afbb1cdd3f25747e11cd4c628b154269389e2dde19e4abcb903872ef33893d60
+    bytes: 628055
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_12_2016
+      citation: UU No. 12 Tahun 2016
+      tentang: Perubahan Atas Undang-Undang Nomor 14 Tahun 2015 Tentang Anggaran Pendapatan
+        Dan Belanja Negara Tahun Anggaran 2016
+      url: https://peraturan.bpk.go.id/Details/37487/uu-no-12-tahun-2016
+      note: null
+uji_materi: null

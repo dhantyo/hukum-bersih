@@ -17,8 +17,8 @@ tanggal_penetapan: '2016-01-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-2016
-source_pdf_url: https://peraturan.go.id/files/uu2-2016bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37172/uu-no-2-tahun-2016
+source_pdf_url: https://peraturan.bpk.go.id/Download/27527/UU%20Nomor%202%20Tahun%202016%20(2).pdf
 relationships:
   amends: []
   amended_by: []
@@ -34,4 +34,33 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2016_2016-01-15.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0fb6cbbe45bfc499780b8dcf5f00a9b813f8e6b048a2f2b22f03ba4e33ada116
+  extra_pdf_sha256:
+  - 67013d1f06a27c73964a718adbe21a622793c8f355c8426ec96fdab6f37232ce
 pdf_sha256: e08dd548fcdfa3ee11c9d35ef66b0c21bc9c713b211cfd600a6013c91a4ee324
+tanggal_pengundangan: '2016-01-19'
+tanggal_berlaku: '2016-01-19'
+lembaran_negara: LN.2016/NO.10, TLN NO.5836
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-2016
+  source_pdf_url: https://peraturan.go.id/files/uu2-2016bt.pdf
+bpk:
+  id: 37172
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27527/UU%20Nomor%202%20Tahun%202016%20(2).pdf
+    bpk_file_id: 27527
+    filename: UU Nomor 2 Tahun 2016 (2).pdf
+    sha256: 0fb6cbbe45bfc499780b8dcf5f00a9b813f8e6b048a2f2b22f03ba4e33ada116
+    bytes: 29816
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/27528/UU%20Nomor%202%20Tahun%202016%20-%20Penjelasan.pdf
+    bpk_file_id: 27528
+    filename: UU Nomor 2 Tahun 2016 - Penjelasan.pdf
+    sha256: 67013d1f06a27c73964a718adbe21a622793c8f355c8426ec96fdab6f37232ce
+    bytes: 26760
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

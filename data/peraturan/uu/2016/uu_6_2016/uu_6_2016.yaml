@@ -10,12 +10,12 @@ tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERIN
   REPUBLIK RAKYAT CHINA TENTANG KERJA SAMA AKTIVITAS DALAM BIDANG PERTAHANAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2016-03-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-2016
-source_pdf_url: https://peraturan.go.id/files/uu6-2016bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37231/uu-no-6-tahun-2016
+source_pdf_url: https://peraturan.bpk.go.id/Download/26332/UU%20Nomor%206%20Tahun%202016.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,11 +24,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_6_2016_2016
+- id: uu_6_2016_2016-03-30
   kind: asli
   source: official
-  date: null
+  date: '2016-03-30'
   date_basis: tanggal_penetapan
-  text: uu_6_2016_2016.txt
+  text: uu_6_2016_2016-03-30.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: cc879d09fb152672a572f61b2a344f52af3e024ea5e05e35fa951195906e0ce9
 pdf_sha256: 581840f1439135317221f7c4627ad7fb9a5e25ff33ae8b27935900fcf20547a6
+tanggal_pengundangan: '2016-03-30'
+tanggal_berlaku: '2016-03-30'
+lembaran_negara: 'LN.2016/NO.60, TLN NO.5866, LL SETNEG : 4 HLM.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-2016
+  source_pdf_url: https://peraturan.go.id/files/uu6-2016bt.pdf
+bpk:
+  id: 37231
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26332/UU%20Nomor%206%20Tahun%202016.pdf
+    bpk_file_id: 26332
+    filename: UU Nomor 6 Tahun 2016.pdf
+    sha256: cc879d09fb152672a572f61b2a344f52af3e024ea5e05e35fa951195906e0ce9
+    bytes: 251958
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

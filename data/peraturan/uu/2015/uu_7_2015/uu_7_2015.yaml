@@ -18,8 +18,8 @@ tanggal_penetapan: '2015-03-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-2015
-source_pdf_url: https://peraturan.go.id/files/uu7-2015bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38207/uu-no-7-tahun-2015
+source_pdf_url: https://peraturan.bpk.go.id/Download/43047/UU%20Nomor%207%20Tahun%202015.pdf
 relationships:
   amends: []
   amended_by: []
@@ -35,4 +35,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2015_2015-03-10.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5cea5b9cf9ac61fb5ef855b10be350c37107a8b5383d10ee35110ba089c0705f
 pdf_sha256: 08e38533f49b066974a154ce771cd382eef6db30448672120b4b03faa2c70f82
+tanggal_pengundangan: '2015-03-10'
+tanggal_berlaku: '2015-03-10'
+lembaran_negara: 'LN.2015/NO.50, TLN NO. 5675, LL SETNEG : 4 HLM.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-2015
+  source_pdf_url: https://peraturan.go.id/files/uu7-2015bt.pdf
+bpk:
+  id: 38207
+  files:
+  - url: https://peraturan.bpk.go.id/Download/43047/UU%20Nomor%207%20Tahun%202015.pdf
+    bpk_file_id: 43047
+    filename: UU Nomor 7 Tahun 2015.pdf
+    sha256: 5cea5b9cf9ac61fb5ef855b10be350c37107a8b5383d10ee35110ba089c0705f
+    bytes: 186597
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

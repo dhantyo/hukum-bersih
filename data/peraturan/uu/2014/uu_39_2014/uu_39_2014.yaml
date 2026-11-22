@@ -11,8 +11,8 @@ tanggal_penetapan: '2014-10-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-39-tahun-2014
-source_pdf_url: null
+source_url: https://peraturan.bpk.go.id/Details/38807/uu-no-39-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/28143/UU%20Nomor%2039%20Tahun%202014.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,4 +21,61 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_39_2014_2014-10-17
+  kind: asli
+  source: official
+  date: '2014-10-17'
+  date_basis: tanggal_penetapan
+  text: uu_39_2014_2014-10-17.txt
+  pasal_count: 49
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d5c9b129b8f249cbf05604a52846a27b6f6810d04f664f7e7e2becd73cedfe57
+  ocr: true
+tanggal_pengundangan: '2014-10-17'
+tanggal_berlaku: '2014-10-17'
+lembaran_negara: 'LN.2014/No. 308, TLN No. 5613, LL SETNEG: 48 HLM'
+subjek: KEHUTANAN DAN PERKEBUNAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-39-tahun-2014
+  source_pdf_url: null
+bpk:
+  id: 38807
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28143/UU%20Nomor%2039%20Tahun%202014.pdf
+    bpk_file_id: 28143
+    filename: UU Nomor 39 Tahun 2014.pdf
+    sha256: d5c9b129b8f249cbf05604a52846a27b6f6810d04f664f7e7e2becd73cedfe57
+    bytes: 3192694
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_18_2004
+      citation: UU No. 18 Tahun 2004
+      tentang: Perkebunan
+      url: https://peraturan.bpk.go.id/Details/40516/uu-no-18-tahun-2004
+      note: null
+uji_materi:
+- putusan: 138/PUU-XIII/2015
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/30/138_PUU-XIII_2015.pdf
+  amar: Pasal 27 ayat (3), Pasal 29, Pasal 30 ayat (1), Pasal 42, Pasal 55, Pasal
+    107 bertentangan dengan UUD NRI Tahun 1945 secara bersyarat dan tidak mempunyai
+    kekuatan hukum mengikat.

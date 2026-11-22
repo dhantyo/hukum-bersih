@@ -13,8 +13,8 @@ tanggal_penetapan: '2016-12-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-2016
-source_pdf_url: https://peraturan.go.id/files/UU+19+Tahun+2016.pdf
+source_url: https://peraturan.bpk.go.id/Details/37582/uu-no-19-tahun-2016
+source_pdf_url: https://peraturan.bpk.go.id/Download/26676/UU%20Nomor%20%2019%20Tahun%202016.pdf
 relationships:
   amends:
   - id: uu_11_2008
@@ -42,4 +42,50 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_2016_2016-12-25.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1ecbeed2f762355a13b31691d19b474cb02b4912b445762c4f354c9a4ba5a1d0
+  ocr: true
 pdf_sha256: d412325d49f6c61beb403f69c4ed5c4b6df9ab216c72531054ff75988f5f170a
+tanggal_penetapan_bpk: '2016-11-25'
+tanggal_pengundangan: '2016-11-25'
+tanggal_berlaku: '2016-11-25'
+lembaran_negara: 'LN.2016/NO.251, TLN NO.5952, LL Setneg : 13 hlm'
+subjek: PERS, POS, DAN PERIKLANAN - TELEKOMUNIKASI, INFORMATIKA, SIBER, DAN INTERNET
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-2016
+  source_pdf_url: https://peraturan.go.id/files/UU+19+Tahun+2016.pdf
+bpk:
+  id: 37582
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26676/UU%20Nomor%20%2019%20Tahun%202016.pdf
+    bpk_file_id: 26676
+    filename: UU Nomor  19 Tahun 2016.pdf
+    sha256: 1ecbeed2f762355a13b31691d19b474cb02b4912b445762c4f354c9a4ba5a1d0
+    bytes: 1625026
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 27 ayat (1), Pasal 27 ayat (3), Pasal 28 ayat (2), Pasal 30, Pasal
+        31 ayat (1), Pasal 31 ayat (2), Pasal 36, Pasal 45 ayat (1), Pasal 45 ayat
+        (3), Pasal 45A ayat (2), Pasal 46, Pasal 47, dan Pasal 51 ayat (2) Undang-Undang
+        Nomor 11 Tahun 2008 sebagaimana telah diubah dengan Undang-Undang Nomor 19
+        Tahun 2016
+    Diubah dengan:
+    - id: uu_1_2024
+      citation: UU No. 1 Tahun 2024
+      tentang: Perubahan Kedua atas Undang-Undang Nomor 11 Tahun 2008 tentang Informasi
+        dan Transaksi Elektronik
+      url: https://peraturan.bpk.go.id/Details/274494/uu-no-1-tahun-2024
+      note: null
+    Mengubah:
+    - id: uu_11_2008
+      citation: UU No. 11 Tahun 2008
+      tentang: Informasi dan Transaksi Elektronik
+      url: https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008
+      note: null
+uji_materi: null

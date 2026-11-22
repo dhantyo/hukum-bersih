@@ -11,8 +11,8 @@ tanggal_penetapan: '2017-08-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-2017
-source_pdf_url: https://peraturan.go.id/files/uu6-2017bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37643/uu-no-6-tahun-2017
+source_pdf_url: https://peraturan.bpk.go.id/Download/26737/UU%20Nomor%206%20Tahun%202017.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,3 +29,44 @@ versions:
   text: uu_6_2017_2017-08-08.txt
   pasal_count: 45
 pdf_sha256: 8095da05cc8abf100c47719ddad8d99e787022a00bab516dbd02a6b87e9030c2
+tanggal_pengundangan: '2017-08-08'
+tanggal_berlaku: '2017-08-08'
+lembaran_negara: 'LL SETNEG : 21 HLM'
+subjek: KONSTRUKSI, SIPIL, ARSITEK, BANGUNAN, DAN INFRASTRUKTUR
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-2017
+  source_pdf_url: https://peraturan.go.id/files/uu6-2017bt.pdf
+bpk:
+  id: 37643
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26737/UU%20Nomor%206%20Tahun%202017.pdf
+    bpk_file_id: 26737
+    filename: UU Nomor 6 Tahun 2017.pdf
+    sha256: b70fe6d39757ff8f3bd23be1a1b9ae3fa151c2ca771d09b5ff2a166569491b8c
+    bytes: 1873687
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    - id: null
+      citation: Perpu Nomor 2 Tahun 2022
+      tentang: null
+      url: null
+      note: null
+uji_materi: null
+reparse_error: 'v11: 30 pasal, stored text has 45'

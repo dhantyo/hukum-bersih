@@ -11,8 +11,8 @@ tanggal_penetapan: '2017-05-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-2017
-source_pdf_url: https://peraturan.go.id/files/uu5-2017bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37642/uu-no-5-tahun-2017
+source_pdf_url: https://peraturan.bpk.go.id/Download/26736/UU%20No%205%20Tahun%202017.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_2017_2017-05-24.txt
   pasal_count: 61
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 27a7205fe07abb944d52a2f576725ec30f30838f5c3e2353b8f8eda7d6de983e
+  ocr: true
 pdf_sha256: 5d65f89073d98ea82df224c610c45f7720ade0aec3aa21e5ff62f5e7e7a0094b
+tanggal_pengundangan: '2017-05-29'
+tanggal_berlaku: '2017-05-29'
+lembaran_negara: 'LL SETNEG : 31 HLM'
+subjek: PARIWISATA DAN KEBUDAYAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-2017
+  source_pdf_url: https://peraturan.go.id/files/uu5-2017bt.pdf
+bpk:
+  id: 37642
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26736/UU%20No%205%20Tahun%202017.pdf
+    bpk_file_id: 26736
+    filename: UU No 5 Tahun 2017.pdf
+    sha256: 27a7205fe07abb944d52a2f576725ec30f30838f5c3e2353b8f8eda7d6de983e
+    bytes: 3344326
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

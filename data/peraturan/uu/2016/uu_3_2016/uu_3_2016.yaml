@@ -21,8 +21,8 @@ tanggal_penetapan: '2016-01-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-2016
-source_pdf_url: https://peraturan.go.id/files/uu3-2016bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37173/uu-no-3-tahun-2016
+source_pdf_url: https://peraturan.bpk.go.id/Download/26274/UU%20Nomor%203%20Tahun%202016.pdf
 relationships:
   amends: []
   amended_by: []
@@ -38,4 +38,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2016_2016-01-15.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8055003b318efa2db4e823115978e19a8b287e3a12078bf2a5061bbf719e82af
+  ocr: true
 pdf_sha256: 599c4a801078b1f0c69077c8f7e1a153f358574853a9ebbc74d1b5a45ff0d466
+tanggal_pengundangan: '2016-01-19'
+tanggal_berlaku: '2016-01-19'
+lembaran_negara: 'LN.2016/NO.11, TLN NO.5837, LL. Setneg : 5'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-2016
+  source_pdf_url: https://peraturan.go.id/files/uu3-2016bt.pdf
+bpk:
+  id: 37173
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26274/UU%20Nomor%203%20Tahun%202016.pdf
+    bpk_file_id: 26274
+    filename: UU Nomor 3 Tahun 2016.pdf
+    sha256: 8055003b318efa2db4e823115978e19a8b287e3a12078bf2a5061bbf719e82af
+    bytes: 649080
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

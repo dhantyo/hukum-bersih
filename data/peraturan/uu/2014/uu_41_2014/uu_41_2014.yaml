@@ -13,8 +13,8 @@ tanggal_penetapan: '2014-10-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-41-tahun-2014
-source_pdf_url: https://peraturan.go.id/files/uunomor41tahun2014.pdf
+source_url: https://peraturan.bpk.go.id/Details/38801/uu-no-41-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/28131/UU%20Nomor%2041%20Tahun%202014.pdf
 relationships:
   amends:
   - id: uu_18_2009
@@ -29,6 +29,7 @@ relationships:
       - '31'
       - '32'
       - '36'
+      - '37'
       - '41'
       - '58'
       - '59'
@@ -37,13 +38,13 @@ relationships:
       - '86'
       disisipkan:
       - 36A
+      - 36B
       - 36C
       - 36D
       - 36E
       - 66A
-      - 68A
-      - 68B
-      - 68E
+      - 91A
+      - 91B
       - 96A
       dihapus:
       - '96'
@@ -60,4 +61,55 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_41_2014_2014-10-17.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 14f044027e35cc982c12ddb78d79ce6b7d03988badd6f8d02039e0861e59e4a6
+  ocr: true
 pdf_sha256: b3399f705167f15d0982867fea910f9b16858ba54ac711ec17094b028eaed413
+tanggal_pengundangan: '2014-10-17'
+tanggal_berlaku: '2014-10-17'
+lembaran_negara: 'LN.2014/No. 338, TLN No. 5619, LL SETNEG: 29 HLM'
+subjek: KESEHATAN - PANGAN, PERTANIAN DAN PETERNAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-41-tahun-2014
+  source_pdf_url: https://peraturan.go.id/files/uunomor41tahun2014.pdf
+bpk:
+  id: 38801
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28131/UU%20Nomor%2041%20Tahun%202014.pdf
+    bpk_file_id: 28131
+    filename: UU Nomor 41 Tahun 2014.pdf
+    sha256: 14f044027e35cc982c12ddb78d79ce6b7d03988badd6f8d02039e0861e59e4a6
+    bytes: 2302945
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mengubah:
+    - id: uu_18_2009
+      citation: UU No. 18 Tahun 2009
+      tentang: Peternakan dan Kesehatan Hewan
+      url: https://peraturan.bpk.go.id/Details/38634/uu-no-18-tahun-2009
+      note: null
+uji_materi:
+- putusan: 129/PUU-XIII/2015
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/27/129_PUU-XIII_2015.pdf
+  amar: Pasal 36E ayat (1) Undang-Undang Nomor 41 Tahun 2014 tentang Perubahan atas
+    Undang-Undang Nomor 18 Tahun 2009 tentang Peternakan dan Kesehatan Hewan bertentangan
+    dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat sepanjang
+    tidak dimaknai sebagaimana pertimbangan Mahkamah dalam putusan ini.

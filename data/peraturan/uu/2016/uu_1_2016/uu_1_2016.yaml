@@ -11,8 +11,8 @@ tanggal_penetapan: '2016-01-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-2016
-source_pdf_url: https://peraturan.go.id/files/uu1-2016bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37162/uu-no-1-tahun-2016
+source_pdf_url: https://peraturan.bpk.go.id/Download/26265/UU%20Nomor%201%20Tahun%202016.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2016_2016-01-15.txt
   pasal_count: 24
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: cdbbf604c9aa2ca49e72929fc4d385fe086b755a40840ec06c40ac95edeae4a2
 pdf_sha256: 37150e2efc80309994a550913460aae11a906fbb2f1de91226fd17267c6821c0
+tanggal_pengundangan: '2016-01-19'
+tanggal_berlaku: '2016-01-19'
+lembaran_negara: 'LN.2016/NO.9, TLN NO.5835, LL SETNEG : 32 HLM'
+subjek: FIDUSIA DAN LEMBAGA PEMBIAYAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-2016
+  source_pdf_url: https://peraturan.go.id/files/uu1-2016bt.pdf
+bpk:
+  id: 37162
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26265/UU%20Nomor%201%20Tahun%202016.pdf
+    bpk_file_id: 26265
+    filename: UU Nomor 1 Tahun 2016.pdf
+    sha256: cdbbf604c9aa2ca49e72929fc4d385fe086b755a40840ec06c40ac95edeae4a2
+    bytes: 400556
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+uji_materi: null

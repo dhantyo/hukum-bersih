@@ -9,12 +9,12 @@ tentang: PERTANGGUNGJAWABAN ATAS PELAKSANAAN ANGGARAN PENDAPATAN DAN BELANJA NEG
   TAHUN ANGGARAN 2015
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2016-09-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-2016
-source_pdf_url: https://peraturan.go.id/files/uu14-2016bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38359/uu-no-14-tahun-2016
+source_pdf_url: https://peraturan.bpk.go.id/Download/27559/UU%20Nomor%2014%20Tahun%202016.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,40 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_14_2016_2016
+- id: uu_14_2016_2016-09-28
   kind: asli
   source: official
-  date: null
+  date: '2016-09-28'
   date_basis: tanggal_penetapan
-  text: uu_14_2016_2016.txt
+  text: uu_14_2016_2016-09-28.txt
   pasal_count: 14
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6755d0431000af652d6aba53e176bb44516d48d4ed00adfb7c977492349e60f6
+  extra_pdf_sha256:
+  - b6ed3da626b4c3fabd75578a32ef6b961c88dae3d91bbf06330e5379b6e37170
 pdf_sha256: c37d05b12979d35f27482af76dd104548dad65b61fbc0e10c20bbf2a19cc15a0
+tanggal_pengundangan: '2016-09-28'
+tanggal_berlaku: '2016-09-28'
+lembaran_negara: LN.2016/NO.189, TLN NO.5930
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-2016
+  source_pdf_url: https://peraturan.go.id/files/uu14-2016bt.pdf
+bpk:
+  id: 38359
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27559/UU%20Nomor%2014%20Tahun%202016.pdf
+    bpk_file_id: 27559
+    filename: UU Nomor 14 Tahun 2016.pdf
+    sha256: 6755d0431000af652d6aba53e176bb44516d48d4ed00adfb7c977492349e60f6
+    bytes: 45707
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/27560/UU%20Nomor%2014%20Tahun%202016%20-%20Penjelasan.pdf
+    bpk_file_id: 27560
+    filename: UU Nomor 14 Tahun 2016 - Penjelasan.pdf
+    sha256: b6ed3da626b4c3fabd75578a32ef6b961c88dae3d91bbf06330e5379b6e37170
+    bytes: 275018
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
