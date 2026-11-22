@@ -6,20 +6,18 @@ year: 2002
 title: Undang-Undang Nomor 15 Tahun 2002 tentang Tindak Pidana Pencucian Uang
 tentang: TINDAK PIDANA PENCUCIAN UANG
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 8 Tahun 2010 Tentang Pencegahan
-  dan Pemberantasan Tindak Pidana Pencucian Uang'
+status: tidak_berlaku
 tanggal_penetapan: '2002-04-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-2002
-source_pdf_url: https://peraturan.go.id/files/UU0152002.pdf
+source_url: https://peraturan.bpk.go.id/Details/44452/uu-no-15-tahun-2002
+source_pdf_url: https://peraturan.bpk.go.id/Download/32724/UU%20Nomor%2015%20Tahun%202002.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_8_2010
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,4 +28,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2002_2002-04-17.txt
   pasal_count: 46
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9bad9b4c644ec61cc025352114bbf5e667de8de222941c66e2e3351ca92e320e
 pdf_sha256: 9bad9b4c644ec61cc025352114bbf5e667de8de222941c66e2e3351ca92e320e
+tanggal_pengundangan: '2002-04-17'
+tanggal_berlaku: '2002-04-17'
+lembaran_negara: 'LN. 2002/ No. 30, TLN NO. 4191, LL SETNEG : 18 HLM'
+subjek: PENCUCIAN UANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-2002
+  source_pdf_url: https://peraturan.go.id/files/UU0152002.pdf
+bpk:
+  id: 44452
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32724/UU%20Nomor%2015%20Tahun%202002.pdf
+    bpk_file_id: 32724
+    filename: UU Nomor 15 Tahun 2002.pdf
+    sha256: 9bad9b4c644ec61cc025352114bbf5e667de8de222941c66e2e3351ca92e320e
+    bytes: 117532
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_8_2010
+      citation: UU No. 8 Tahun 2010
+      tentang: Pencegahan dan Pemberantasan Tindak Pidana Pencucian Uang
+      url: https://peraturan.bpk.go.id/Details/38547/uu-no-8-tahun-2010
+      note: null
+    Diubah dengan:
+    - id: uu_25_2003
+      citation: UU No. 25 Tahun 2003
+      tentang: Perubahan atas Undang-Undang Nomor 15 Tahun 2002 tentang Tindak Pidana
+        Pencucian Uang
+      url: https://peraturan.bpk.go.id/Details/44074/uu-no-25-tahun-2003
+      note: null
+uji_materi: null

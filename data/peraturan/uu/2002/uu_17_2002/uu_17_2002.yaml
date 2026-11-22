@@ -12,8 +12,8 @@ tanggal_penetapan: '2002-06-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-2002
-source_pdf_url: https://peraturan.go.id/files/uu17-2002.pdf
+source_url: https://peraturan.bpk.go.id/Details/44457/uu-no-17-tahun-2002
+source_pdf_url: https://peraturan.bpk.go.id/Download/261589/UU%20Nomor%2017%20Tahun%202002.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,34 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_17_2002_2002-06-28
+  kind: asli
+  source: official
+  date: '2002-06-28'
+  date_basis: tanggal_penetapan
+  text: uu_17_2002_2002-06-28.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c70c9a628e575f74d0970ce81a263bec7c50fdfd7743e868d4bccb748586fe98
+  ocr: true
 pdf_sha256: e0d457eb7da2aa61cc01e164e6fd0d9e921f63f6f812d4abb39ce55eb3351d75
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '2002-06-28'
+tanggal_berlaku: '2002-06-28'
+lembaran_negara: 'LN. 2002/ No. 69, TLN NO. 4208, LL SETNEG : 8 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-2002
+  source_pdf_url: https://peraturan.go.id/files/uu17-2002.pdf
+bpk:
+  id: 44457
+  files:
+  - url: https://peraturan.bpk.go.id/Download/261589/UU%20Nomor%2017%20Tahun%202002.pdf
+    bpk_file_id: 261589
+    filename: UU Nomor 17 Tahun 2002.pdf
+    sha256: c70c9a628e575f74d0970ce81a263bec7c50fdfd7743e868d4bccb748586fe98
+    bytes: 6942122
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

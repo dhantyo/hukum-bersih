@@ -8,20 +8,18 @@ title: Undang-Undang Nomor 18 Tahun 2002 tentang Sistem Nasional Penelitian, Pen
 tentang: SISTEM NASIONAL PENELITIAN, PENGEMBANGAN, DAN PENERAPAN ILMU PENGETAHUAN
   DAN TEKNOLOGI
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 11 Tahun 2019 Tentang Sistem
-  Nasional Ilmu Pengetahuan dan Teknologi'
+status: tidak_berlaku
 tanggal_penetapan: '2002-07-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-2002
-source_pdf_url: https://peraturan.go.id/files/uu18-2002.pdf
+source_url: https://peraturan.bpk.go.id/Details/44462/uu-no-18-tahun-2002
+source_pdf_url: https://peraturan.bpk.go.id/Download/32734/UU%20Nomor%2018%20Tahun%202002.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_11_2019
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -32,4 +30,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2002_2002-07-29.txt
   pasal_count: 32
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c53280fced3d0354268cbb43fc9c031e3f61b2fbdb65ece9de39337b10a25792
 pdf_sha256: c53280fced3d0354268cbb43fc9c031e3f61b2fbdb65ece9de39337b10a25792
+tanggal_pengundangan: '2002-07-29'
+tanggal_berlaku: '2002-07-29'
+lembaran_negara: 'LN. 2002/ No. 84, TLN NO. 4219, LL SETNEG : 14 HLM'
+subjek: ILMU PENGETAHUAN DAN TEKNOLOGI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-2002
+  source_pdf_url: https://peraturan.go.id/files/uu18-2002.pdf
+bpk:
+  id: 44462
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32734/UU%20Nomor%2018%20Tahun%202002.pdf
+    bpk_file_id: 32734
+    filename: UU Nomor 18 Tahun 2002.pdf
+    sha256: c53280fced3d0354268cbb43fc9c031e3f61b2fbdb65ece9de39337b10a25792
+    bytes: 145504
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_11_2019
+      citation: UU No. 11 Tahun 2019
+      tentang: Sistem Nasional Ilmu Pengetahuan dan Teknologi
+      url: https://peraturan.bpk.go.id/Details/117023/uu-no-11-tahun-2019
+      note: null
+uji_materi: null

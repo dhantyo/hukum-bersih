@@ -12,8 +12,8 @@ tanggal_penetapan: '2001-11-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-2001
-source_pdf_url: https://peraturan.go.id/files/uu20-2001.pdf
+source_url: https://peraturan.bpk.go.id/Details/44900/uu-no-20-tahun-2001
+source_pdf_url: https://peraturan.bpk.go.id/Download/33263/UU%20Nomor%2020%20Tahun%202001.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,58 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2001_2001-11-21.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: cee68ff5d2c0877a7e2f611dbcc24c009c1358a09cc260caedc287b993bba0b4
 pdf_sha256: cee68ff5d2c0877a7e2f611dbcc24c009c1358a09cc260caedc287b993bba0b4
+tanggal_pengundangan: '2001-11-21'
+tanggal_berlaku: '2001-11-21'
+lembaran_negara: 'LN. 2001/ No. 134, TLN NO. 4150, LL SETNEG : 13 HLM'
+subjek: TINDAK PIDANA KORUPSI, PENCEGAHAN KORUPSI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-2001
+  source_pdf_url: https://peraturan.go.id/files/uu20-2001.pdf
+bpk:
+  id: 44900
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33263/UU%20Nomor%2020%20Tahun%202001.pdf
+    bpk_file_id: 33263
+    filename: UU Nomor 20 Tahun 2001.pdf
+    sha256: cee68ff5d2c0877a7e2f611dbcc24c009c1358a09cc260caedc287b993bba0b4
+    bytes: 111727
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 2 ayat (1), Pasal 3, Pasal 5, Pasal 11, dan Pasal 13 Undang-Undang
+        Nomor 31 Tahun 1999 sebagaimana telah diubah dengan Undang-Undang Nomor 20
+        Tahun 2001
+    - id: uu_30_2002
+      citation: UU No. 30 Tahun 2002
+      tentang: Komisi Pemberantasan Tindak Pidana Korupsi
+      url: https://peraturan.bpk.go.id/Details/44493/uu-no-30-tahun-2002
+      note: Pasal 17 dinyatakan tidak berlaku
+    Diubah dengan:
+    - id: uu_30_2002
+      citation: UU No. 30 Tahun 2002
+      tentang: Komisi Pemberantasan Tindak Pidana Korupsi
+      url: https://peraturan.bpk.go.id/Details/44493/uu-no-30-tahun-2002
+      note: null
+    Mencabut:
+    - id: uu_73_1958
+      citation: UU No. 73 Tahun 1958
+      tentang: Menyatakan Berlakunya Undang-Undang No. 1 Tahun 1946 Republik Indonesia
+        Tentang Peraturan Hukum Pidana Untuk Seluruh Wilayah Republik Indonesia Dan
+        Mengubah Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/52862/uu-no-73-tahun-1958
+      note: null
+    Mengubah:
+    - id: uu_31_1999
+      citation: UU No. 31 Tahun 1999
+      tentang: Pemberantasan Tindak Pidana Korupsi
+      url: https://peraturan.bpk.go.id/Details/45350/uu-no-31-tahun-1999
+      note: null
+uji_materi: null

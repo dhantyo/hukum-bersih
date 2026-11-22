@@ -11,8 +11,8 @@ tanggal_penetapan: '2002-01-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-2002
-source_pdf_url: https://peraturan.go.id/files/UU0032002.pdf
+source_url: https://peraturan.bpk.go.id/Details/44421/uu-no-3-tahun-2002
+source_pdf_url: https://peraturan.bpk.go.id/Download/32692/UU%20Nomor%203%20Tahun%202002.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2002_2002-01-08.txt
   pasal_count: 29
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 98190bf9b13b453cfa7419f77ecbdb0d97749a8f2550650e837a49ce16ab756f
 pdf_sha256: 98190bf9b13b453cfa7419f77ecbdb0d97749a8f2550650e837a49ce16ab756f
+tanggal_pengundangan: '2002-01-08'
+tanggal_berlaku: '2002-01-08'
+lembaran_negara: 'LN. 2002, TLN NO. 4169, LL SETNEG : 11HLM'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-2002
+  source_pdf_url: https://peraturan.go.id/files/UU0032002.pdf
+bpk:
+  id: 44421
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32692/UU%20Nomor%203%20Tahun%202002.pdf
+    bpk_file_id: 32692
+    filename: UU Nomor 3 Tahun 2002.pdf
+    sha256: 98190bf9b13b453cfa7419f77ecbdb0d97749a8f2550650e837a49ce16ab756f
+    bytes: 148082
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_1_1988
+      citation: UU No. 1 Tahun 1988
+      tentang: Perubahan atas Undang-Undang Nomor 20 Tahun 1982 tentang Ketentuan-Ketentuan
+        Pokok Pertahanan Keamanan Negara Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/46807/uu-no-1-tahun-1988
+      note: null
+    - id: uu_20_1982
+      citation: UU No. 20 Tahun 1982
+      tentang: Ketentuan-Ketentuan Pokok Pertahanan Keamanan Negara Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/47031/uu-no-20-tahun-1982
+      note: null
+uji_materi: null

@@ -19,8 +19,8 @@ tanggal_penetapan: '2002-12-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-26-tahun-2002
-source_pdf_url: https://peraturan.go.id/files/uu26-2002.pdf
+source_url: https://peraturan.bpk.go.id/Details/44483/uu-no-26-tahun-2002
+source_pdf_url: https://peraturan.bpk.go.id/Download/32755/UU%20Nomor%2026%20Tahun%202002.pdf
 relationships:
   amends: []
   amended_by: []
@@ -36,4 +36,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_26_2002_2002-12-11.txt
   pasal_count: 31
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a3053955ec999616ec958cc3f5f5dd65a1265a6cc62c887fa0e2b05136acc17d
 pdf_sha256: a3053955ec999616ec958cc3f5f5dd65a1265a6cc62c887fa0e2b05136acc17d
+tanggal_pengundangan: '2002-12-11'
+tanggal_berlaku: '2002-12-11'
+lembaran_negara: 'LN. 2002/ No. 129, TLN NO. 4245, LL SETNEG : 20 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-26-tahun-2002
+  source_pdf_url: https://peraturan.go.id/files/uu26-2002.pdf
+bpk:
+  id: 44483
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32755/UU%20Nomor%2026%20Tahun%202002.pdf
+    bpk_file_id: 32755
+    filename: UU Nomor 26 Tahun 2002.pdf
+    sha256: a3053955ec999616ec958cc3f5f5dd65a1265a6cc62c887fa0e2b05136acc17d
+    bytes: 108152
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

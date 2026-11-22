@@ -12,8 +12,8 @@ tanggal_penetapan: '2002-12-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-29-tahun-2002
-source_pdf_url: https://peraturan.go.id/files/uu29-2002.pdf
+source_url: https://peraturan.bpk.go.id/Details/44490/uu-no-29-tahun-2002
+source_pdf_url: https://peraturan.bpk.go.id/Download/32762/UU%20Nomor%2029%20Tahun%202002.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_29_2002_2002-12-24.txt
   pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8e3d3d1db0281703184bc6102456ce25d2a2cc842cbef17555fb6ac6de4854d1
 pdf_sha256: 8e3d3d1db0281703184bc6102456ce25d2a2cc842cbef17555fb6ac6de4854d1
+tanggal_pengundangan: '2002-12-24'
+tanggal_berlaku: '2003-01-01'
+lembaran_negara: 'LN. 2002/ No. 136, TLN NO. 4249, LL SETNEG : 12 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-29-tahun-2002
+  source_pdf_url: https://peraturan.go.id/files/uu29-2002.pdf
+bpk:
+  id: 44490
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32762/UU%20Nomor%2029%20Tahun%202002.pdf
+    bpk_file_id: 32762
+    filename: UU Nomor 29 Tahun 2002.pdf
+    sha256: 8e3d3d1db0281703184bc6102456ce25d2a2cc842cbef17555fb6ac6de4854d1
+    bytes: 102093
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_26_2003
+      citation: UU No. 26 Tahun 2003
+      tentang: Perubahan Atas Undang-Undang Nomor 29 Tahun 2002 tentang Anggaran Pendapatan
+        dan Belanja Negara Tahun Anggaran 2003
+      url: https://peraturan.bpk.go.id/Details/44078/uu-no-26-tahun-2003
+      note: null
+uji_materi: null

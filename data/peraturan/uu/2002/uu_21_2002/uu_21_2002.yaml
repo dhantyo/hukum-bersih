@@ -13,8 +13,8 @@ tanggal_penetapan: '2002-10-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-2002
-source_pdf_url: https://peraturan.go.id/files/UU0212002.pdf
+source_url: https://peraturan.bpk.go.id/Details/44470/uu-no-21-tahun-2002
+source_pdf_url: https://peraturan.bpk.go.id/Download/32742/UU%20Nomor%2021%20Tahun%202002.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2002_2002-10-07.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f4d143612227119d24812aa42e2fbd4584244671a93d8e9ea1a1fad3c67605bf
 pdf_sha256: f4d143612227119d24812aa42e2fbd4584244671a93d8e9ea1a1fad3c67605bf
+tanggal_pengundangan: '2002-10-07'
+tanggal_berlaku: '2002-01-01'
+lembaran_negara: 'LN. 2002/ No. 99, TLN NO. 4229, LL SETNEG : 7 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-2002
+  source_pdf_url: https://peraturan.go.id/files/UU0212002.pdf
+bpk:
+  id: 44470
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32742/UU%20Nomor%2021%20Tahun%202002.pdf
+    bpk_file_id: 32742
+    filename: UU Nomor 21 Tahun 2002.pdf
+    sha256: f4d143612227119d24812aa42e2fbd4584244671a93d8e9ea1a1fad3c67605bf
+    bytes: 101283
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_19_2001
+      citation: UU No. 19 Tahun 2001
+      tentang: Anggaran Pendapatan Dan Belanja Negara Tahun Anggaran 2002
+      url: https://peraturan.bpk.go.id/Details/44899/uu-no-19-tahun-2001
+      note: null
+uji_materi: null

@@ -15,8 +15,8 @@ tanggal_penetapan: '2002-04-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-2002
-source_pdf_url: https://peraturan.go.id/files/uu4-2002.pdf
+source_url: https://peraturan.bpk.go.id/Details/44422/uu-no-4-tahun-2002
+source_pdf_url: https://peraturan.bpk.go.id/Download/32693/UU%20Nomor%204%20Tahun%202002.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,4 +32,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2002_2002-04-10.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 521b84a0443c41ed91d8f15ce8ef26debef51f08708f2b163000092e20d98c2c
 pdf_sha256: 521b84a0443c41ed91d8f15ce8ef26debef51f08708f2b163000092e20d98c2c
+tanggal_pengundangan: '2002-04-10'
+tanggal_berlaku: '2002-04-10'
+lembaran_negara: 'LN. 2002/ No. 17, TLN NO. 4179, LL SETNEG : 14 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-2002
+  source_pdf_url: https://peraturan.go.id/files/uu4-2002.pdf
+bpk:
+  id: 44422
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32693/UU%20Nomor%204%20Tahun%202002.pdf
+    bpk_file_id: 32693
+    filename: UU Nomor 4 Tahun 2002.pdf
+    sha256: 521b84a0443c41ed91d8f15ce8ef26debef51f08708f2b163000092e20d98c2c
+    bytes: 143650
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

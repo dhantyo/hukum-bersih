@@ -11,8 +11,8 @@ tanggal_penetapan: '2002-10-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-24-tahun-2002
-source_pdf_url: https://peraturan.go.id/files/uu24-2002.pdf
+source_url: https://peraturan.bpk.go.id/Details/44476/uu-no-24-tahun-2002
+source_pdf_url: https://peraturan.bpk.go.id/Download/32748/UU%20Nomor%2024%20Tahun%202002.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_2002_2002-10-22.txt
   pasal_count: 22
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6dcf3014340554f3d47148710c73054efba991fc01cf4635db15caf93c472afb
 pdf_sha256: 6dcf3014340554f3d47148710c73054efba991fc01cf4635db15caf93c472afb
+tanggal_pengundangan: '2002-10-22'
+tanggal_berlaku: '2002-10-22'
+lembaran_negara: 'LN. 2002/ No. 110, TLN NO. 4236, LL SETNEG : 8 HLM'
+subjek: PASAR MODAL DAN PERDAGANGAN BERJANGKA KOMODITI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-24-tahun-2002
+  source_pdf_url: https://peraturan.go.id/files/uu24-2002.pdf
+bpk:
+  id: 44476
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32748/UU%20Nomor%2024%20Tahun%202002.pdf
+    bpk_file_id: 32748
+    filename: UU Nomor 24 Tahun 2002.pdf
+    sha256: 6dcf3014340554f3d47148710c73054efba991fc01cf4635db15caf93c472afb
+    bytes: 65268
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+uji_materi: null

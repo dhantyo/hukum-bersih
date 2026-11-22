@@ -19,8 +19,8 @@ tanggal_penetapan: '2002-04-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-2002
-source_pdf_url: https://peraturan.go.id/files/uu16-2002.pdf
+source_url: https://peraturan.bpk.go.id/Details/44454/uu-no-16-tahun-2002
+source_pdf_url: https://peraturan.bpk.go.id/Download/32726/UU%20Nomor%2016%20tahun%202002.pdf
 relationships:
   amends: []
   amended_by: []
@@ -36,4 +36,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2002_2002-04-17.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6b087d00e7943d639a5f96566b2fe56a7ce55a7a51169f6512fad5274818391a
 pdf_sha256: 6b087d00e7943d639a5f96566b2fe56a7ce55a7a51169f6512fad5274818391a
+tanggal_pengundangan: '2002-04-17'
+tanggal_berlaku: '2002-04-17'
+lembaran_negara: 'LN. 2002/ No. 34, TLN NO. 4195, LL SETNEG : 3 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-2002
+  source_pdf_url: https://peraturan.go.id/files/uu16-2002.pdf
+bpk:
+  id: 44454
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32726/UU%20Nomor%2016%20tahun%202002.pdf
+    bpk_file_id: 32726
+    filename: UU Nomor 16 tahun 2002.pdf
+    sha256: 6b087d00e7943d639a5f96566b2fe56a7ce55a7a51169f6512fad5274818391a
+    bytes: 75150
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -8,13 +8,13 @@ title: Undang-Undang Nomor 18 Tahun 2001 tentang Otonomi Khusus Bagi Provinsi Da
 tentang: OTONOMI KHUSUS BAGI PROVINSI DAERAH ISTIMEWA ACEH SEBAGAI PROVINSI NANGGROE
   ACEH DARUSSALAM
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '2001-08-09'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-2001
-source_pdf_url: https://peraturan.go.id/files/uu18-2001.pdf
+source_url: https://peraturan.bpk.go.id/Details/44898/uu-no-18-tahun-2001
+source_pdf_url: https://peraturan.bpk.go.id/Download/33261/UU%20Nomor%2018%20Tahun%202001.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2001_2001-08-09.txt
   pasal_count: 34
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 43cacfda29442b12279bd7e50d837534dfb3cc0e9b75eea3e66337a9d556bf50
 pdf_sha256: 43cacfda29442b12279bd7e50d837534dfb3cc0e9b75eea3e66337a9d556bf50
+tanggal_pengundangan: '2001-08-09'
+tanggal_berlaku: '2001-08-09'
+lembaran_negara: 'LN. 2001/ No. 114, TLN NO. 4134, LL SETNEG : 18 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-2001
+  source_pdf_url: https://peraturan.go.id/files/uu18-2001.pdf
+bpk:
+  id: 44898
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33261/UU%20Nomor%2018%20Tahun%202001.pdf
+    bpk_file_id: 33261
+    filename: UU Nomor 18 Tahun 2001.pdf
+    sha256: 43cacfda29442b12279bd7e50d837534dfb3cc0e9b75eea3e66337a9d556bf50
+    bytes: 134562
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_11_2006
+      citation: UU No. 11 Tahun 2006
+      tentang: Pemerintahan Aceh
+      url: https://peraturan.bpk.go.id/Details/40174/uu-no-11-tahun-2006
+      note: null
+uji_materi: null

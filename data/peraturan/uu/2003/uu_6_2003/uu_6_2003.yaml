@@ -12,8 +12,8 @@ tanggal_penetapan: '2003-02-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0062003.pdf
+source_url: https://peraturan.bpk.go.id/Details/42830/uu-no-6-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/30935/UU%20Nomor%206%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_2003_2003-02-25.txt
   pasal_count: 20
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b69b2106b668059673e5f72aa99279f10635233ae6c2e6f989f926f948e0e7fc
 pdf_sha256: b69b2106b668059673e5f72aa99279f10635233ae6c2e6f989f926f948e0e7fc
+tanggal_pengundangan: '2003-02-25'
+tanggal_berlaku: '2003-02-25'
+lembaran_negara: 'LN. 2003/ No. 26, TLN NO. 4269, LL SETNEG : 11 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0062003.pdf
+bpk:
+  id: 42830
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30935/UU%20Nomor%206%20Tahun%202003.pdf
+    bpk_file_id: 30935
+    filename: UU Nomor 6 Tahun 2003.pdf
+    sha256: b69b2106b668059673e5f72aa99279f10635233ae6c2e6f989f926f948e0e7fc
+    bytes: 65055
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

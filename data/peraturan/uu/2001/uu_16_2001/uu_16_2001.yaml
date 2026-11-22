@@ -11,8 +11,8 @@ tanggal_penetapan: '2001-08-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-2001
-source_pdf_url: https://peraturan.go.id/files/uu16-2001.pdf
+source_url: https://peraturan.bpk.go.id/Details/44893/uu-no-16-tahun-2001
+source_pdf_url: https://peraturan.bpk.go.id/Download/33256/UU%20Nomor%2016%20Tahun%202001.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2001_2001-08-06.txt
   pasal_count: 73
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b5c29f40f61572c6ff87e8c53639fd9faeaf1e66324f12a9f985c7d5ba0b1afb
 pdf_sha256: 40947f1e678924060d0da65171d7676515b28b3b414d95633649310715d6b71e
+tanggal_pengundangan: '2001-08-06'
+tanggal_berlaku: '2001-08-06'
+lembaran_negara: 'LN. 2001/ No. 112, TLN NO. 4132, LL SETNEG : 23 HLM'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-2001
+  source_pdf_url: https://peraturan.go.id/files/uu16-2001.pdf
+bpk:
+  id: 44893
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33256/UU%20Nomor%2016%20Tahun%202001.pdf
+    bpk_file_id: 33256
+    filename: UU Nomor 16 Tahun 2001.pdf
+    sha256: b5c29f40f61572c6ff87e8c53639fd9faeaf1e66324f12a9f985c7d5ba0b1afb
+    bytes: 140076
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_28_2004
+      citation: UU No. 28 Tahun 2004
+      tentang: Perubahan atas Undang-Undang Nomor 16 Tahun 2001 tentang Yayasan
+      url: https://peraturan.bpk.go.id/Details/40703/uu-no-28-tahun-2004
+      note: null
+uji_materi: null

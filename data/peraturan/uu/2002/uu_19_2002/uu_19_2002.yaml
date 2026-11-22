@@ -6,21 +6,19 @@ year: 2002
 title: Undang-Undang Nomor 19 Tahun 2002 tentang Hak Cipta
 tentang: HAK CIPTA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 28 Tahun 2014 Tentang Hak
-  Cipta'
+status: tidak_berlaku
 tanggal_penetapan: '2002-07-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-2002
-source_pdf_url: https://peraturan.go.id/files/uu19-2002.pdf
+source_url: https://peraturan.bpk.go.id/Details/44465/uu-no-19-tahun-2002
+source_pdf_url: https://peraturan.bpk.go.id/Download/32737/UU%20Nomor%2019%20Tahun%202002.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_6_1982
-  revoked_by:
-  - uu_28_2014
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -31,4 +29,48 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_2002_2002-07-29.txt
   pasal_count: 78
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9aa18249b7d848de4e4771c37b96feecb8f85680194d28b8994f6b1442b7b42b
 pdf_sha256: 9aa18249b7d848de4e4771c37b96feecb8f85680194d28b8994f6b1442b7b42b
+tanggal_pengundangan: '2002-07-29'
+tanggal_berlaku: '2003-07-29'
+lembaran_negara: 'LN. 2002/ No. 85, TLN NO. 4220, LL SETNEG : 29 HLM'
+subjek: HAK ATAS KEKAYAAN INTELEKTUAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-2002
+  source_pdf_url: https://peraturan.go.id/files/uu19-2002.pdf
+bpk:
+  id: 44465
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32737/UU%20Nomor%2019%20Tahun%202002.pdf
+    bpk_file_id: 32737
+    filename: UU Nomor 19 Tahun 2002.pdf
+    sha256: 9aa18249b7d848de4e4771c37b96feecb8f85680194d28b8994f6b1442b7b42b
+    bytes: 175965
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_28_2014
+      citation: UU No. 28 Tahun 2014
+      tentang: Hak Cipta
+      url: https://peraturan.bpk.go.id/Details/38690/uu-no-28-tahun-2014
+      note: null
+    Mencabut:
+    - id: uu_12_1997
+      citation: UU No. 12 Tahun 1997
+      tentang: Perubahan atas Undang-Undang Nomor 6 Tahun 1982 tentang Hak Cipta sebagaimana
+        Telah Diubah dengan Undang-Undang Nomor 7 Tahun 1987
+      url: https://peraturan.bpk.go.id/Details/45936/uu-no-12-tahun-1997
+      note: null
+    - id: uu_7_1987
+      citation: UU No. 7 Tahun 1987
+      tentang: Perubahan atas Undang-Undang Nomor 6 Tahun 1982 tentang Hak Cipta
+      url: https://peraturan.bpk.go.id/Details/46826/uu-no-7-tahun-1987
+      note: null
+    - id: uu_6_1982
+      citation: UU No. 6 Tahun 1982
+      tentang: Hak Cipta
+      url: https://peraturan.bpk.go.id/Details/47001/uu-no-6-tahun-1982
+      note: null
+uji_materi: null

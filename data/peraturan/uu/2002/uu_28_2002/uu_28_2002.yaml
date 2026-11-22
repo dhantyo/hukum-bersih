@@ -11,8 +11,8 @@ tanggal_penetapan: '2002-12-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-28-tahun-2002
-source_pdf_url: https://peraturan.go.id/files/uu28-2002.pdf
+source_url: https://peraturan.bpk.go.id/Details/44487/uu-no-28-tahun-2002
+source_pdf_url: https://peraturan.bpk.go.id/Download/32759/UU%20Nomor%2028%20Tahun%202002.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,42 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_28_2002_2002-12-16.txt
   pasal_count: 49
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 401d1fcfb126029cc41144beed1a317a13192ab7bcd62878941f575bfd80815c
 pdf_sha256: 401d1fcfb126029cc41144beed1a317a13192ab7bcd62878941f575bfd80815c
+tanggal_pengundangan: '2002-12-16'
+tanggal_berlaku: '2003-12-16'
+lembaran_negara: 'LN. 2002/ No. 134, TLN NO. 4247, LL SETNEG : 23 HLM'
+subjek: KONSTRUKSI, SIPIL, ARSITEK, BANGUNAN, DAN INFRASTRUKTUR
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-28-tahun-2002
+  source_pdf_url: https://peraturan.go.id/files/uu28-2002.pdf
+bpk:
+  id: 44487
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32759/UU%20Nomor%2028%20Tahun%202002.pdf
+    bpk_file_id: 32759
+    filename: UU Nomor 28 Tahun 2002.pdf
+    sha256: 401d1fcfb126029cc41144beed1a317a13192ab7bcd62878941f575bfd80815c
+    bytes: 137898
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+uji_materi: null

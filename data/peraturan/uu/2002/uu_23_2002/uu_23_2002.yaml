@@ -11,8 +11,8 @@ tanggal_penetapan: '2002-10-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-23-tahun-2002
-source_pdf_url: https://peraturan.go.id/files/uu23-2002.pdf
+source_url: https://peraturan.bpk.go.id/Details/44473/uu-no-23-tahun-2002
+source_pdf_url: https://peraturan.bpk.go.id/Download/32745/UU%20Nomor%2023%20Tahun%202002.pdf
 relationships:
   amends: []
   amended_by:
@@ -30,4 +30,39 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_2002_2002-10-22.txt
   pasal_count: 93
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 18d763363788ee89878d257950be92069d86451e3b0b32a07913189ec5364fd2
 pdf_sha256: 18d763363788ee89878d257950be92069d86451e3b0b32a07913189ec5364fd2
+tanggal_pengundangan: '2002-10-22'
+tanggal_berlaku: '2002-10-22'
+lembaran_negara: 'LN. 2002/ No. 109, TLN NO. 4235, LL SETNEG : 29 HLM'
+subjek: HAK ASASI MANUSIA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-23-tahun-2002
+  source_pdf_url: https://peraturan.go.id/files/uu23-2002.pdf
+bpk:
+  id: 44473
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32745/UU%20Nomor%2023%20Tahun%202002.pdf
+    bpk_file_id: 32745
+    filename: UU Nomor 23 Tahun 2002.pdf
+    sha256: 18d763363788ee89878d257950be92069d86451e3b0b32a07913189ec5364fd2
+    bytes: 110712
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 81 ayat (1) dan Pasal 82 Undang-Undang Nomor 23 Tahun 2002 sebagaimana
+        telah beberapa kali diubah, terakhir dengan Undang-Undang Nomor 17 Tahun 2016
+    Diubah dengan:
+    - id: uu_35_2014
+      citation: UU No. 35 Tahun 2014
+      tentang: Perubahan atas Undang-Undang Nomor 23 Tahun 2002 Tentang Perlindungan
+        Anak
+      url: https://peraturan.bpk.go.id/Details/38723/uu-no-35-tahun-2014
+      note: null
+uji_materi: null

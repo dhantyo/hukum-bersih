@@ -6,21 +6,19 @@ year: 2002
 title: Undang-Undang Nomor 31 Tahun 2002 tentang Partai Politik
 tentang: PARTAI POLITIK
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 2 Tahun 2008 Tentang Partai
-  Politik'
+status: tidak_berlaku
 tanggal_penetapan: '2002-12-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-31-tahun-2002
-source_pdf_url: https://peraturan.go.id/files/uu31-2002.pdf
+source_url: https://peraturan.bpk.go.id/Details/44497/uu-no-31-tahun-2002
+source_pdf_url: https://peraturan.bpk.go.id/Download/32769/UU%20Nomor%2031%20Tahun%202002.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_2_1999
-  revoked_by:
-  - uu_2_2008
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -31,4 +29,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_31_2002_2002-12-27.txt
   pasal_count: 32
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f3b0f7737cc345edc3e0cb69ec73764f000e60124089de59d0424bc91114bc95
 pdf_sha256: f3b0f7737cc345edc3e0cb69ec73764f000e60124089de59d0424bc91114bc95
+tanggal_pengundangan: '2002-12-27'
+tanggal_berlaku: '2002-12-27'
+lembaran_negara: 'LN. 2002/ No. 138, TLN NO. 4251, LL SETNEG : 14 HLM'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-31-tahun-2002
+  source_pdf_url: https://peraturan.go.id/files/uu31-2002.pdf
+bpk:
+  id: 44497
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32769/UU%20Nomor%2031%20Tahun%202002.pdf
+    bpk_file_id: 32769
+    filename: UU Nomor 31 Tahun 2002.pdf
+    sha256: f3b0f7737cc345edc3e0cb69ec73764f000e60124089de59d0424bc91114bc95
+    bytes: 74147
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_2_2008
+      citation: UU No. 2 Tahun 2008
+      tentang: Partai Politik
+      url: https://peraturan.bpk.go.id/Details/38859/uu-no-2-tahun-2008
+      note: null
+    Mencabut:
+    - id: uu_2_1999
+      citation: UU No. 2 Tahun 1999
+      tentang: Partai Politik
+      url: https://peraturan.bpk.go.id/Details/45270/uu-no-2-tahun-1999
+      note: null
+uji_materi: null

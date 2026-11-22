@@ -13,8 +13,8 @@ tanggal_penetapan: '2003-02-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0022003.pdf
+source_url: https://peraturan.bpk.go.id/Details/42822/uu-no-2-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/30927/UU%20Nomor%202%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2003_2003-02-25.txt
   pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d5e2fbb7575797c94b01e6c36a711ae02a66628ae8bb25ec87ba552cf133a110
 pdf_sha256: d5e2fbb7575797c94b01e6c36a711ae02a66628ae8bb25ec87ba552cf133a110
+tanggal_penetapan_bpk: '2003-03-25'
+tanggal_pengundangan: '2003-03-25'
+tanggal_berlaku: '2003-03-25'
+lembaran_negara: 'LN. 2003/ No. 22, TLN NO. 4265, LL SETNEG : 10 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0022003.pdf
+bpk:
+  id: 42822
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30927/UU%20Nomor%202%20Tahun%202003.pdf
+    bpk_file_id: 30927
+    filename: UU Nomor 2 Tahun 2003.pdf
+    sha256: d5e2fbb7575797c94b01e6c36a711ae02a66628ae8bb25ec87ba552cf133a110
+    bytes: 65682
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

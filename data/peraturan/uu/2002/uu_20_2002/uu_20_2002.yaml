@@ -11,8 +11,8 @@ tanggal_penetapan: '2002-09-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-2002
-source_pdf_url: https://peraturan.go.id/files/uu20-2002.pdf
+source_url: https://peraturan.bpk.go.id/Details/44467/uu-no-20-tahun-2002
+source_pdf_url: https://peraturan.bpk.go.id/Download/32739/UU%20Nomor%2020%20Tahun%202002.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,35 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2002_2002-09-23.txt
   pasal_count: 71
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2a887f6e32bf3c25b13a0523a01eed1cea70c43d745da6f38d9beaf2c4ae662f
 pdf_sha256: 2a887f6e32bf3c25b13a0523a01eed1cea70c43d745da6f38d9beaf2c4ae662f
+tanggal_pengundangan: '2002-09-23'
+tanggal_berlaku: '2002-09-23'
+lembaran_negara: 'LN. 2002/ No. 94, TLN NO. 4226, LL SETNEG : 32 HLM'
+subjek: ILMU PENGETAHUAN DAN TEKNOLOGI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-2002
+  source_pdf_url: https://peraturan.go.id/files/uu20-2002.pdf
+bpk:
+  id: 44467
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32739/UU%20Nomor%2020%20Tahun%202002.pdf
+    bpk_file_id: 32739
+    filename: UU Nomor 20 Tahun 2002.pdf
+    sha256: 2a887f6e32bf3c25b13a0523a01eed1cea70c43d745da6f38d9beaf2c4ae662f
+    bytes: 216649
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_15_1985
+      citation: UU No. 15 Tahun 1985
+      tentang: Ketenagalistrikan
+      url: https://peraturan.bpk.go.id/Details/46966/uu-no-15-tahun-1985
+      note: null
+uji_materi:
+- putusan: 001-021-022/PUU-I/2003
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/126/Putusan001021022PUUI2003.pdf
+  amar: UU No. 20 Tahun 2002 tentang Ketenagalistrikan bertentangan dengan UUD NRI
+    Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.

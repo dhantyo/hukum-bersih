@@ -13,8 +13,8 @@ tanggal_penetapan: '2003-02-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-2003
-source_pdf_url: https://peraturan.go.id/files/UU0072003.pdf
+source_url: https://peraturan.bpk.go.id/Details/43007/uu-no-7-tahun-2003
+source_pdf_url: https://peraturan.bpk.go.id/Download/31122/UU%20Nomor%207%20Tahun%202003.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2003_2003-02-25.txt
   pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f7acca6ba96042c7534affcb3f191a90357c12978073111800ddd2d4c1ceffbb
 pdf_sha256: f7acca6ba96042c7534affcb3f191a90357c12978073111800ddd2d4c1ceffbb
+tanggal_pengundangan: '2003-02-25'
+tanggal_berlaku: '2003-02-25'
+lembaran_negara: 'LN.2003/NO.27, TLN NO.4270, LL SETNEG : 10 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-2003
+  source_pdf_url: https://peraturan.go.id/files/UU0072003.pdf
+bpk:
+  id: 43007
+  files:
+  - url: https://peraturan.bpk.go.id/Download/31122/UU%20Nomor%207%20Tahun%202003.pdf
+    bpk_file_id: 31122
+    filename: UU Nomor 7 Tahun 2003.pdf
+    sha256: f7acca6ba96042c7534affcb3f191a90357c12978073111800ddd2d4c1ceffbb
+    bytes: 64106
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

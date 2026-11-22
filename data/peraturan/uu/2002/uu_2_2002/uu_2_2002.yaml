@@ -11,8 +11,8 @@ tanggal_penetapan: '2002-01-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-2002
-source_pdf_url: https://peraturan.go.id/files/uu2-2002.pdf
+source_url: https://peraturan.bpk.go.id/Details/44418/uu-no-2-tahun-2002
+source_pdf_url: https://peraturan.bpk.go.id/Download/32689/UU%20Nomor%202%20Tahun%202002.pdf
 relationships:
   amends: []
   amended_by:
@@ -30,4 +30,61 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2002_2002-01-08.txt
   pasal_count: 45
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5f003fc2773105f00671883c933d5b57dc63728aa90ae291089d40a6656be290
 pdf_sha256: 5f003fc2773105f00671883c933d5b57dc63728aa90ae291089d40a6656be290
+tanggal_pengundangan: '2002-01-08'
+tanggal_berlaku: '2002-01-08'
+lembaran_negara: 'LN. 2002/ No. 2, TLN NO. 4168, LL SETNEG : 17 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-2002
+  source_pdf_url: https://peraturan.go.id/files/uu2-2002.pdf
+bpk:
+  id: 44418
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32689/UU%20Nomor%202%20Tahun%202002.pdf
+    bpk_file_id: 32689
+    filename: UU Nomor 2 Tahun 2002.pdf
+    sha256: 5f003fc2773105f00671883c933d5b57dc63728aa90ae291089d40a6656be290
+    bytes: 174163
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_5_2026
+      citation: UU No. 5 Tahun 2026
+      tentang: Perubahan Ketiga atas Undang-Undang Nomor 2 Tahun 2002 tentang Kepolisian
+        Negara Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/350096/uu-no-5-tahun-2026
+      note: null
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_28_1997
+      citation: UU No. 28 Tahun 1997
+      tentang: Kepolisian Negara Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/46044/uu-no-28-tahun-1997
+      note: null
+uji_materi:
+- putusan: 114/PUU-XXIII/2025
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/205/putusan_mkri_%20114_PUU-XXIII_2025.pdf
+  amar: Frasa “atau tidak berdasarkan penugasan dari Kapolri” dalam Penjelasan Pasal
+    28 ayat (3) Undang-Undang Nomor 2 Tahun 2002 tentang Kepolisian Negara Republik
+    Indonesia (Lembaran Negara Republik Indonesia Tahun 2002 Nomor 2, Tambahan Lembaran
+    Negara Republik Indonesia Nomor 4168) bertentangan dengan Undang-Undang Dasar
+    Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.

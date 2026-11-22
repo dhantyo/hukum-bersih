@@ -13,8 +13,8 @@ tanggal_penetapan: '2002-01-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-2002
-source_pdf_url: https://peraturan.go.id/files/uu1-2002.pdf
+source_url: https://peraturan.bpk.go.id/Details/44416/uu-no-1-tahun-2002
+source_pdf_url: https://peraturan.bpk.go.id/Download/32688/UU%20Nomor%201%20Tahun%202002.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2002_2002-01-07.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: daf2b00e99bb2b1306756a29785bbe4254cc04df445ea29c5a91261ff687d594
 pdf_sha256: daf2b00e99bb2b1306756a29785bbe4254cc04df445ea29c5a91261ff687d594
+tanggal_pengundangan: '2002-01-07'
+tanggal_berlaku: '2001-01-01'
+lembaran_negara: 'LN. 2001/ No. 1, TLN NO. 4167, LL SETNEG : 10 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-2002
+  source_pdf_url: https://peraturan.go.id/files/uu1-2002.pdf
+bpk:
+  id: 44416
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32688/UU%20Nomor%201%20Tahun%202002.pdf
+    bpk_file_id: 32688
+    filename: UU Nomor 1 Tahun 2002.pdf
+    sha256: daf2b00e99bb2b1306756a29785bbe4254cc04df445ea29c5a91261ff687d594
+    bytes: 137274
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_35_2000
+      citation: UU No. 35 Tahun 2000
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2001
+      url: https://peraturan.bpk.go.id/Details/45240/uu-no-35-tahun-2000
+      note: null
+uji_materi: null
