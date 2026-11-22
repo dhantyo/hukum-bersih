@@ -26,6 +26,7 @@ LEAKS = {
     "page no.": re.compile(r"(?:^|\s)-\s*\d{1,3}\s*-(?:\s|$)", re.MULTILINE),
     "watermark": re.compile(r"depkumham|peraturan\.go\.id|jdih\.", re.IGNORECASE),
     "SK No": re.compile(r"\bSK\s*No\b"),
+    "browser": re.compile(r"\d{1,2}:\d{2}\s*[AP]M\b|https?://"),
 }
 
 

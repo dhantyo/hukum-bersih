@@ -98,7 +98,8 @@ def check(law: str, path: Path) -> list[str]:
         problems.append(f"invalid AKN: {type(e).__name__}")
     body = text.split("ATTACHMENT")[0]
     for name, rx in (("page-turn", r"[^.\s]\s*(?:…|\.\s?\.\s?\.)\.?\s*$"), ("page no.", r"(?:^|\s)-\s*\d{1,3}\s*-(?:\s|$)"),
-                     ("watermark", r"depkumham|peraturan\.go\.id"), ("SK No", r"\bSK\s*No\b")):
+                     ("watermark", r"depkumham|peraturan\.go\.id"), ("SK No", r"\bSK\s*No\b"),
+                     ("browser", r"\d{1,2}:\d{2}\s*[AP]M\b|https?://")):
         if n := len(re.findall(rx, body, re.MULTILINE | re.IGNORECASE)):
             problems.append(f"{name} {n}")
     c = parse(conclusions(text))

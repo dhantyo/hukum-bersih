@@ -9,10 +9,11 @@ b after a, ...). That keeps cross-references that happen to start a wrapped line
 from __future__ import annotations
 
 import re
+from collections.abc import Sequence
 from dataclasses import dataclass, field
 from pathlib import Path
 
-PARSER_VERSION = 8  # 8: v7 dropped a Penjelasan after a copy certification (UU 2/2025): fixed;
+PARSER_VERSION = 9  # 9: browser print headers/footers dropped; separate Penjelasan PDF read (UU 19/2003). 8: v7 dropped a Penjelasan after a copy certification (UU 2/2025): fixed;
 #                    Penjelasan of amending laws (Pasal I/II), OCR '1. UMUM'.
 #                   7: amending laws keep quoted articles in Pasal I, white (hidden)
 #                    text dropped, salinan certification left out, MEMORI PENJELASAN;
@@ -452,11 +453,16 @@ def parse_lines(lines: list[str]) -> Document:
     return Parser(lines).run()
 
 
-def parse_pdf(pdf: Path) -> Document:
+def parse_pdf(pdf: Path, extra: Sequence[Path] = ()) -> Document:
+    """``extra``: further PDFs of the same law read after it, such as a Penjelasan that BPK
+    publishes as a separate file (UU 19/2003)."""
     from .extract import clean_lines, page_lines
 
     stats: dict = {}
-    doc = parse_lines(clean_lines(page_lines(pdf, stats)))
+    lines = clean_lines(page_lines(pdf, stats))
+    for more in extra:
+        lines += clean_lines(page_lines(more, stats))
+    doc = parse_lines(lines)
     if stats.get("ocr_pages"):
         doc.warnings.append(f"ocr: {stats['ocr_pages']} scanned page(s) read with Tesseract")
     if stats.get("ocr_missing"):

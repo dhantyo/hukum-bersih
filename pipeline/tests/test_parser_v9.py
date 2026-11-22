@@ -1,0 +1,60 @@
+"""Parser v9 (2026-11-22): BPK's UU 19/2003 is a web page printed from a browser, and its
+Penjelasan is a separate PDF."""
+
+import pymupdf
+
+from hukum_bersih.pdf import extract
+from hukum_bersih.pdf.structure import parse_pdf
+from hukum_bersih.sources.peraturan_bpk import is_penjelasan
+
+
+def pdf(path, lines):
+    doc = pymupdf.open()
+    page = doc.new_page()
+    for i, ln in enumerate(lines):
+        page.insert_text((72, 72 + 16 * i), ln, fontsize=10)
+    doc.save(path)
+    return path
+
+
+def test_browser_print_header_and_footer_are_not_content():
+    for junk in ("4/3/24, 9:34 AM UNDANG", "4/3/24, 9:34 AM", "12/31/2024 10:05 PM Some title",
+                 "https://jdih.kemenkeu.go.id/FullText/2003/19Tahun2003UU.HTM 24/26",
+                 "https://jdih.kemenkeu.go.id/FullText/2003/19Tahun2003UU.HTM"):
+        assert extract.NEVER_CONTENT_RE.match(junk), junk
+    for text in ("Pasal 1", "pada tanggal 19 Juni 2003", "1/2 dari jumlah anggota",
+                 "a. bahwa negara melalui https adalah"):
+        assert not extract.NEVER_CONTENT_RE.match(text), text
+
+
+def test_separate_penjelasan_pdf_is_read_after_the_law(tmp_path):
+    law = pdf(tmp_path / "law.pdf", [
+        "UNDANG-UNDANG REPUBLIK INDONESIA", "NOMOR 19 TAHUN 2003", "TENTANG", "BADAN USAHA MILIK NEGARA",
+        "4/3/24, 9:34 AM UNDANG",
+        "Pasal 1", "Dalam Undang-undang ini yang dimaksud dengan BUMN.",
+        "Pasal 2", "Undang-undang ini mulai berlaku pada tanggal diundangkan.",
+        "https://jdih.kemenkeu.go.id/FullText/2003/19Tahun2003UU.HTM 1/2",
+        "Disahkan di Jakarta", "pada tanggal 19 Juni 2003",
+    ])
+    penj = pdf(tmp_path / "penj.pdf", [
+        "PENJELASAN", "ATAS", "UNDANG-UNDANG REPUBLIK INDONESIA", "NOMOR 19 TAHUN 2003",
+        "I. UMUM", "Badan Usaha Milik Negara mempunyai peranan penting dalam perekonomian nasional.",
+        "II. PASAL DEMI PASAL", "Pasal 1", "Cukup jelas.", "Pasal 2", "Cukup jelas.",
+    ])
+    alone = parse_pdf(law)
+    assert alone.pasal_count == 2
+    assert not any(b.kind == "penjelasan" for b in alone.blocks)
+    doc = parse_pdf(law, [penj])
+    assert doc.pasal_count == 2
+    kinds = {b.kind for b in doc.blocks}
+    assert "penjelasan" in kinds
+    text = " ".join(b.text for b in doc.blocks if b.text)
+    assert "9:34" not in text and "kemenkeu" not in text
+    assert "peranan penting" in text
+
+
+def test_penjelasan_files_are_recognised_by_name():
+    assert is_penjelasan({"filename": "UU Nomor 19 Tahun 2003_ penjelasan.pdf"})
+    assert is_penjelasan({"filename": "PENJELASAN UU 5 2010.pdf"})
+    assert not is_penjelasan({"filename": "undang-undang nomor 19 tahun 2003.pdf"})
+    assert not is_penjelasan({})

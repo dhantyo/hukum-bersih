@@ -34,7 +34,10 @@ NEVER_CONTENT_RE = re.compile(
     r"|(?:www\.)?djpp\.depkumham\.go\.id"
     r"|ditjen\s+Peraturan\s+Perundang-undangan"
     r"|file:///\S+"
-    r"|\d{1,2}/\d{1,2}/\d{4}\s+\d{1,2}:\d{2}\s*(?:AM|PM)?"
+    # a web page printed from a browser (BPK's UU 19/2003): header "4/3/24, 9:34 AM <page title>",
+    # footer "<url> 24/26"
+    r"|\d{1,2}/\d{1,2}/\d{2}(?:\d{2})?,?\s+\d{1,2}[:.]\d{2}(?:\s*[AP]M)?(?:\s+.*)?"
+    r"|(?:https?|file):/+\S+(?:\s+\d{1,3}\s*/\s*\d{1,3})?"
     r"|\d+\s+of\s+\d+"
     r"|\d{4},\s*No\.\s*\d+"                              # gazette header "2022, No.4"
     r")$",

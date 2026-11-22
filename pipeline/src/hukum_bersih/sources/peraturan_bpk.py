@@ -250,11 +250,16 @@ def text_current(rec: dict) -> bool:
     return rec.get("parser_version_tried") == PARSER_VERSION
 
 
+def is_penjelasan(f: dict) -> bool:
+    """A file holding only the Penjelasan of the law ("UU Nomor 19 Tahun 2003_ penjelasan.pdf")."""
+    return "penjelasan" in (f.get("filename") or "").lower()
+
+
 def done(rec: dict) -> bool:
     return files_done(rec) and text_current(rec)
 
 
-def retext(pdf: Path, rec: dict, folder: Path) -> str:
+def retext(pdf: Path, rec: dict, folder: Path, extra: list[Path] | None = None) -> str:
     """Convert BPK's PDF to the record's text with the current parser, unless that was done.
     A stored text is only replaced by a valid one with at least as many pasal (convert_pdf)."""
     from ..pdf.structure import PARSER_VERSION
@@ -262,7 +267,7 @@ def retext(pdf: Path, rec: dict, folder: Path) -> str:
 
     if text_current(rec):
         return "text current"
-    note = convert_pdf(pdf, rec, folder, source=SOURCE)
+    note = convert_pdf(pdf, rec, folder, source=SOURCE, extra=extra)
     if not any(v.get("text") for v in rec.get("versions") or []):
         rec["parser_version_tried"] = PARSER_VERSION
     return note
@@ -397,7 +402,7 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
     item_id = archive_item(version)
     out = []
     with tempfile.TemporaryDirectory() as tmp:
-        main_pdf = None
+        main_pdf, penjelasan = None, []
         for n, f in enumerate(rec["bpk"]["files"], start=1):
             pdf = Path(tmp) / f"{n}.pdf"
             content, mirror_note = download(session, f, data_dir)
@@ -437,9 +442,12 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
             f.update(sha256=entry.sha256, bytes=entry.bytes, archive_url=archive_url)
             if repaired:
                 f["archived_sha256"] = repaired.sha256
-            main_pdf = main_pdf or pdf
+            if is_penjelasan(f):
+                penjelasan.append(pdf)
+            else:
+                main_pdf = main_pdf or pdf
             out.append("archived" if archive_url else "recorded")
-        note = "PDFs only (no text step)" if no_text else retext(main_pdf, rec, path.parent)
+        note = "PDFs only (no text step)" if no_text else retext(main_pdf or penjelasan.pop(0), rec, path.parent, penjelasan)
         notes += check_dates(rec, path.parent)
     path.write_text(yaml.safe_dump(rec, allow_unicode=True, sort_keys=False))
     return (f"ok   {work}: {len(out)} PDF {'/'.join(sorted(set(out)))}; {note}"
@@ -469,19 +477,29 @@ def reparse(data_dir: Path, only: set[str] | None = None) -> Iterator[str]:
         if only and rec["id"] not in only:
             continue
         files = (rec.get("bpk") or {}).get("files") or []
-        if not files or not files_done(rec) or text_current(rec) or not files[0].get("archive_url"):
+        if not files:
+            continue
+        main = [f for f in files if not is_penjelasan(f)][:1] or files[:1]
+        wanted = main + [f for f in files if is_penjelasan(f) and f is not main[0]]
+        if not files_done(rec) or text_current(rec) or not all(f.get("archive_url") for f in wanted):
             continue
         with tempfile.TemporaryDirectory() as tmp:
-            pdf = Path(tmp) / "doc.pdf"
-            try:
-                urllib.request.urlretrieve(files[0]["archive_url"], pdf)
-            except Exception as e:  # noqa: BLE001 - keep going; resumable
-                yield f"FAIL {rec['id']}: archive.org: {e}"
+            pdfs, failed = [], None
+            for n, f in enumerate(wanted):
+                pdf = Path(tmp) / f"{n}.pdf"
+                try:
+                    urllib.request.urlretrieve(f["archive_url"], pdf)
+                except Exception as e:  # noqa: BLE001 - keep going; resumable
+                    failed = f"archive.org: {e}"
+                    break
+                got = sha256_file(pdf)
+                if got not in {f.get("sha256"), f.get("archived_sha256")}:
+                    failed = f"archived file differs from the one recorded ({got[:12]})"
+                    break
+                pdfs.append(pdf)
+            if failed:
+                yield f"FAIL {rec['id']}: {failed}"
                 continue
-            got = sha256_file(pdf)
-            if got not in {files[0].get("sha256"), files[0].get("archived_sha256")}:
-                yield f"FAIL {rec['id']}: archived file differs from the one recorded ({got[:12]})"
-                continue
-            note = retext(pdf, rec, path.parent)
+            note = retext(pdfs[0], rec, path.parent, pdfs[1:])
         path.write_text(yaml.safe_dump(rec, allow_unicode=True, sort_keys=False))
         yield f"ok   {rec['id']}: reparsed, {note}"

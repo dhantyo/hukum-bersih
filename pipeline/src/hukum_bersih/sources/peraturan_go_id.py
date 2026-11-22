@@ -163,10 +163,11 @@ def convert(client: Client, rec: dict, folder: Path, data_dir: Path) -> str:
         return convert_pdf(pdf, rec, folder, source="peraturan.go.id")
 
 
-def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str) -> str:
+def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str, extra: list[Path] | None = None) -> str:
     """Parse a local PDF of the record and (re)write its text version. A failed parse never
     costs the text we already have (2026-11-21: an outage deleted three texts); the new text
-    replaces the old one only once it exists. ``source``: where the PDF came from."""
+    replaces the old one only once it exists. ``source``: where the PDF came from; ``extra``:
+    further PDFs of the law read after it (a Penjelasan published separately)."""
     from ..akn.bluebell import to_bluebell
     from ..akn.build import to_akn
     from ..manifest import sha256_file
@@ -185,7 +186,7 @@ def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str) -> str:
         rec.pop("reparse_error", None)
 
     try:
-        doc = parse_pdf(pdf)
+        doc = parse_pdf(pdf, extra or [])
         if doc.pasal_count == 0:
             if old:                                        # keep the text we have
                 rec["reparse_error"] = f"v{PARSER_VERSION}: no pasal found"
@@ -213,6 +214,7 @@ def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str) -> str:
             "text": f"{version}.txt", "pasal_count": doc.pasal_count,
             "parser_version": PARSER_VERSION,
             "pdf_source": source, "pdf_sha256": sha256_file(pdf),
+            **({"extra_pdf_sha256": [sha256_file(x) for x in extra]} if extra else {}),
             **({"ocr": True} if any(w.startswith("ocr:") for w in doc.warnings) else {}),
         }])
         return f"{doc.pasal_count} pasal"
