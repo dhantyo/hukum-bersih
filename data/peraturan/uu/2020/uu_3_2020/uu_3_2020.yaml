@@ -13,8 +13,8 @@ tanggal_penetapan: '2020-06-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-2020
-source_pdf_url: https://peraturan.go.id/files/uu3-2020bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/138909/uu-no-3-tahun-2020
+source_pdf_url: https://peraturan.bpk.go.id/Download/130200/UU%20Nomor%203%20Tahun%202020.pdf
 relationships:
   amends:
   - id: uu_4_2009
@@ -140,7 +140,6 @@ relationships:
       - 169B
       - 169C
       - 170A
-      - 171A
       - 172A
       - 172B
       - 172C
@@ -183,4 +182,83 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2020_2020-06-10.txt
   pasal_count: 2
+  parser_version: 7
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0b658c6120492bbfd570bb4372a201e1c8d0bb438f699ba20fd14b8f2425c68f
+  ocr: true
 pdf_sha256: a05d66c4d340c4e9ff85846f8958275f73520298fc4b6d7bdad461e6135c4342
+tanggal_pengundangan: '2020-06-10'
+tanggal_berlaku: '2020-06-10'
+lembaran_negara: 'LN.2020/NO.147, TLN NO.6525, JDIH.SETNEG.GO.ID : 67 HLM.'
+subjek: PERTAMBANGAN MIGAS, MINERAL DAN ENERGI - SUMBER DAYA ALAM
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-2020
+  source_pdf_url: https://peraturan.go.id/files/uu3-2020bt.pdf
+bpk:
+  id: 138909
+  files:
+  - url: https://peraturan.bpk.go.id/Download/130200/UU%20Nomor%203%20Tahun%202020.pdf
+    bpk_file_id: 130200
+    filename: UU Nomor 3 Tahun 2020.pdf
+    sha256: 0b658c6120492bbfd570bb4372a201e1c8d0bb438f699ba20fd14b8f2425c68f
+    bytes: 4630137
+    archive_url: https://archive.org/download/uu_3_2020/uu_3_2020_2020-06-10.pdf
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_2_2025
+      citation: UU No. 2 Tahun 2025
+      tentang: Perubahan Keempat atas Undang-Undang Nomor 4 Tahun 2009 tentang Pertambangan
+        Mineral dan Batubara
+      url: https://peraturan.bpk.go.id/Details/316682/uu-no-2-tahun-2025
+      note: null
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mengubah:
+    - id: uu_4_2009
+      citation: UU No. 4 Tahun 2009
+      tentang: Pertambangan Mineral dan Batubara
+      url: https://peraturan.bpk.go.id/Details/38578/uu-no-4-tahun-2009
+      note: null
+uji_materi:
+- putusan: 64/PUU-XVIII/2020
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/203/putusan_mkri_%2064-PUU-XVIII-2020.pdf
+  amar: '1). Pasal 169A ayat (1) Undang-Undang Nomor 3 Tahun 2020 tentang Perubahan
+    Atas Undang-Undang Nomor 4 Tahun 2009 tentang Pertambangan Mineral dan Batubara
+    (Lembaran Negara Republik Indonesia Tahun 2020 Nomor 147, Lembaran Negara Republik
+    Indonesia Nomor 6525) sepanjang frasa “diberikan jaminan” bertentangan dengan
+    Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan
+    hukum mengikat, sepanjang tidak dimaknai “dapat diberikan”; 2). Menyatakan ketentuan
+    Pasal 169A ayat (1) huruf a dan huruf b Undang Undang Nomor 3 Tahun 2020 tentang
+    Perubahan Atas Undang-Undang Nomor 4 Tahun 2009 tentang Pertambangan Mineral dan
+    Batubara (Lembaran Negara Republik Indonesia Tahun 2020 Nomor 147, Lembaran Negara
+    Republik Indonesia Nomor 6525), sepanjang kata “dijamin” bertentangan dengan Undang-Undang
+    Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum
+    mengikat, sepanjang tidak dimaknai “dapat”; 3). Menyatakan ketentuan Pasal 169A
+    ayat (1) Undang-Undang Nomor 3 Tahun 2020 tentang Perubahan Atas Undang-Undang
+    Nomor 4 Tahun 2009 tentang Pertambangan Mineral dan Batubara (Lembaran Negara
+    Republik Indonesia Tahun 2020 Nomor 147, Lembaran Negara Republik Indonesia Nomor
+    6525) selengkapnya berbunyi, “KK dan PKP2B sebagaimana dimaksud dalam Pasal 169
+    dapat diberikan perpanjangan menjadi IUPK sebagai Kelanjutan Operasi Kontrak/Perjanjian
+    setelah memenuhi persyaratan dengan ketentuan: …”; 6. Menyatakan ketentuan Pasal
+    169A ayat (1) huruf a dan huruf b Undang-Undang Nomor 3 Tahun 2020 tentang Perubahan
+    Atas Undang-Undang Nomor 4 tahun 2009 tentang Pertambangan Mineral dan Batubara
+    (Lembaran Negara Republik Indonesia Tahun 2020 Nomor 147, Lembaran Negara Republik
+    Indonesia Nomor 6525), selengkapnya menjadi berbunyi: a. kontrak/perjanjian yang
+    belum memperoleh perpanjangan dapat mendapatkan 2 (dua) kali perpanjangan dalam
+    bentuk IUPK sebagai Kelanjutan Operasi Kontrak/Perjanjian masing-masing untuk
+    jangka waktu paling lama 10 (sepuluh) tahun sebagai kelanjutan operasi 175 setelah
+    berakhirnya KK atau PKP2B dengan mempertimbangkan upaya peningkatan penerimaan
+    negara. b. kontrak/perjanjian yang telah memperoleh perpanjangan pertama dapat
+    untuk diberikan perpanjangan kedua dalam bentuk IUPK sebagai Kelanjutan Operasi
+    Kontrak/Perjanjian untuk jangka waktu paling lama 10 (sepuluh) tahun sebagai kelanjutan
+    operasi setelah berakhirnya perpanjangan pertama KK atau PKP2B dengan mempertimbangkan
+    upaya peningkatan penerimaan negara.'

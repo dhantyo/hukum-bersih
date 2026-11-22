@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 40 Tahun 2007 tentang Perseroan Terbatas
 tentang: PERSEROAN TERBATAS
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2007-08-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-40-tahun-2007
-source_pdf_url: https://peraturan.go.id/files/uu40-2007.pdf
+source_url: https://peraturan.bpk.go.id/Details/39965/uu-no-40-tahun-2007
+source_pdf_url: https://peraturan.bpk.go.id/Download/29563/UU%20Nomor%2040%20Tahun%202007.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,55 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_40_2007_2007
+- id: uu_40_2007_2007-08-16
   kind: asli
   source: official
-  date: null
+  date: '2007-08-16'
   date_basis: tanggal_penetapan
-  text: uu_40_2007_2007.txt
+  text: uu_40_2007_2007-08-16.txt
   pasal_count: 161
+  parser_version: 7
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 46b8cc0283bc99b5fe5bda856d3c3dfdefddce9661e9afe4d0106d3f96c6481b
 pdf_sha256: 2dbced16d6ecbe4a68bff4b456a8d92318d4e9e2da676ccd65c8924807f7aa82
+tanggal_pengundangan: '2007-08-16'
+tanggal_berlaku: '2007-08-16'
+lembaran_negara: 'LN.2007/NO.106, TLN NO.4756, LL SETNEG : 82 HLM'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-40-tahun-2007
+  source_pdf_url: https://peraturan.go.id/files/uu40-2007.pdf
+bpk:
+  id: 39965
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29563/UU%20Nomor%2040%20Tahun%202007.pdf
+    bpk_file_id: 29563
+    filename: UU Nomor 40 Tahun 2007.pdf
+    sha256: 46b8cc0283bc99b5fe5bda856d3c3dfdefddce9661e9afe4d0106d3f96c6481b
+    bytes: 596665
+    archive_url: https://archive.org/download/uu_40_2007/uu_40_2007_2007.pdf
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_1_1995
+      citation: UU No. 1 Tahun 1995
+      tentang: Perseroan Terbatas
+      url: https://peraturan.bpk.go.id/Details/46102/uu-no-1-tahun-1995
+      note: null
+uji_materi: null
