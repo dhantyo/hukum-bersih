@@ -72,10 +72,12 @@ jobs:
         run: |
           git config user.name "hukum-bersih bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          deadline=$(( $(date +%s) + 320 * 60 ))       # stop starting batches after ~5h20m
-          batch=0
-          while [ "$(date +%s)" -lt "$deadline" ]; do
-            batch=$((batch + 1))
+          # The job is stopped at 5h45m (timeout-minutes) and a batch is only saved when it ends,
+          # so a batch starts only if the slowest batch so far (a batch of scans: ~1 h) still fits.
+          end=$(( $(date +%s) + 340 * 60 ))
+          batch=0; slowest=0
+          while [ $(( $(date +%s) + slowest )) -lt "$end" ]; do
+            batch=$((batch + 1)); started=$(date +%s)
             if [ "$MODE" = reparse ]; then
               out=$(cd pipeline && uv run hukum-bersih reparse-bpk --limit "$BATCH" $ONLY 2>&1 | tee /dev/stderr || true)
             else
@@ -94,6 +96,8 @@ jobs:
               done
             fi
             echo "$out" | grep -q '^STOP' && { echo "::error::Cloudflare stopped the import"; exit 1; }
+            took=$(( $(date +%s) - started )); [ "$took" -gt "$slowest" ] && slowest=$took
+            echo "batch $batch: $n law(s) in $((took / 60)) min"
             [ "$n" -eq 0 ] && break
             [ -n "$ONLY" ] && break                      # a list of ids is done in one go
             [ "$BATCHES" -gt 0 ] && [ "$batch" -ge "$BATCHES" ] && break

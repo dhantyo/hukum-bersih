@@ -110,3 +110,11 @@ under 85% of its words, overall or in the Penjelasan (`reparse_error` says which
 Penjelasan of amending laws (Pasal I / Angka n / Pasal II), OCR's '1. UMUM'. Two random surveys
 of the mirror (150 UU each, seeds 20261121 and 7) found no further parser errors after the
 fixes; UU 10/2006 has no President's signature in BPK's copy and is left as printed.
+
+v9-v11 (2026-11-22, from the first batches of the full import): a Penjelasan published as a
+separate PDF is read after the law (UU 19/2003); browser print headers and footers dropped (UU
+19/2003 is a printed web page); OCR specks around a Pasal heading ("' Pasal 8", UU 135/2024;
+"Pasal 4 :", UU 29/2024), not "," or ";" which end a reference broken onto its own line; our
+leaked-markup check no longer rejects a law's own text that starts like a keyword ("TR:
+Tegangan Rendah", UU 59/2024). Scanned pages are OCR'd in parallel (same words, 3.7x faster
+on 4 cores). From v11 a new parser only redoes flagged laws (`PARSER_REDO_BELOW`).

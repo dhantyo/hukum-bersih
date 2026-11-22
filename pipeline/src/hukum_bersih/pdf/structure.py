@@ -13,7 +13,7 @@ from collections.abc import Sequence
 from dataclasses import dataclass, field
 from pathlib import Path
 
-PARSER_VERSION = 10  # 10: OCR speck before a Pasal heading ("' Pasal 8", UU 135/2024). 9: browser print headers/footers dropped; separate Penjelasan PDF read (UU 19/2003). 8: v7 dropped a Penjelasan after a copy certification (UU 2/2025): fixed;
+PARSER_VERSION = 11  # 11: OCR specks after a Pasal heading ("Pasal 4 :", UU 29/2024); parallel OCR (same words). 10: OCR speck before a Pasal heading ("' Pasal 8", UU 135/2024). 9: browser print headers/footers dropped; separate Penjelasan PDF read (UU 19/2003). 8: v7 dropped a Penjelasan after a copy certification (UU 2/2025): fixed;
 #                    Penjelasan of amending laws (Pasal I/II), OCR '1. UMUM'.
 #                   7: amending laws keep quoted articles in Pasal I, white (hidden)
 #                    text dropped, salinan certification left out, MEMORI PENJELASAN;
@@ -23,6 +23,10 @@ PARSER_VERSION = 10  # 10: OCR speck before a Pasal heading ("' Pasal 8", UU 135
 #                    with a full stop ("Pasal 1."), old numbering, closing line by line;
 #                   2: page headers/numbers on every page (Pasal.id rules); 3: old-spelling closings and
 #                    PENDJELASAN; 4: lists between a BAB heading and its first Pasal (UU 19/2003)
+# Texts made by a parser older than this are re-converted on the next import; newer ones only
+# when the record is flagged (kept old text, parse error, no text). Raise it only for a fix
+# that changes laws which pass every check (Dante, 2026-11-22: don't redo good work).
+PARSER_REDO_BELOW = 10
 
 ORDINAL = {"PERTAMA": 1, "KESATU": 1, "KEDUA": 2, "KETIGA": 3, "KEEMPAT": 4, "KELIMA": 5,
            "KEENAM": 6, "KETUJUH": 7, "KEDELAPAN": 8, "KESEMBILAN": 9, "KESEPULUH": 10}
@@ -140,8 +144,10 @@ def normalise(lines: list[str]) -> list[str]:
         if out and out[-1] in ("Pasal", "PASAL") and re.match(r"^\d+[A-Z]?\.?$", line):
             out[-1] = f"Pasal {line.rstrip('.')}"
             continue
-        if m := re.match(r"^[\'‘’`´,.|:;]{1,2}\s*((?:PASAL|Pasal)\s*\S+)$", line):
-            line = m[1]                      # OCR speck before a heading: "' Pasal 8" (UU 135/2024)
+        if m := re.match(r"^[\'‘’`´,.|:;]{0,2}\s*((?:PASAL|Pasal)\s*[0-9IVXLC]+[A-Z]?)\s*[\'‘’`´.|:]{0,2}$", line):
+            line = m[1]                      # OCR specks around a heading: "' Pasal 8" (UU 135/2024),
+            #                                  "Pasal 4 :" (UU 29/2024); not "," or ";", which end a
+            #                                  reference broken onto its own line ("Pasal 5,")
         if m := HEAD_DOT_RE.match(line):
             line = m[1]
         if m := re.match(r"^(?:PASAL|Pasal)\s*(\d+[A-Z]?|[IVXLC]+)$", line):   # OCR: "PasalI"

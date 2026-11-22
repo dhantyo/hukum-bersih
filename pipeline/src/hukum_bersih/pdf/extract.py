@@ -69,21 +69,50 @@ def page_lines(pdf: Path, stats: dict | None = None, ocr: bool = True) -> list[l
 
     stats = stats if stats is not None else {}
     stats.setdefault("ocr_pages", 0)
+    with pymupdf.open(pdf) as doc:
+        scans = [p.number for p in doc if ocr and is_scan(p)] if not stats.get("ocr_missing") else []
+        read: dict[int, list] = {}
+        if scans:
+            try:
+                read = ocr_pages(pdf, scans)
+                stats["ocr_pages"] += len(read)
+            except Exception as e:  # noqa: BLE001 - no Tesseract or no language data
+                stats["ocr_missing"] = f"{type(e).__name__}: {str(e)[:120]}"
+        return [rows(read[p.number] if p.number in read else visible(p, p.get_text("words")))
+                for p in doc]
+
+
+def ocr_pages(pdf: Path, numbers: list[int]) -> dict[int, list]:
+    """Tesseract's words for the given pages, read in parallel: one process per CPU core, each
+    with Tesseract kept to one thread (OCR is ~2.6 s a page; scans have 20-350 pages).
+    The words are the same as reading the pages one after another."""
+    import os
+    from concurrent.futures import ProcessPoolExecutor
+    from multiprocessing import get_context
+
+    workers = min(os.cpu_count() or 1, len(numbers))
+    if workers <= 1:
+        return dict(_ocr_chunk(str(pdf), numbers))
+    chunks = [numbers[i::workers] for i in range(workers)]
+    with ProcessPoolExecutor(workers, mp_context=get_context("spawn"), initializer=_one_thread) as pool:
+        return {n: w for part in pool.map(_ocr_chunk, [str(pdf)] * workers, chunks) for n, w in part}
+
+
+def _one_thread() -> None:
+    import os
+
+    os.environ["OMP_THREAD_LIMIT"] = "1"
+
+
+def _ocr_chunk(pdf: str, numbers: list[int]) -> list[tuple[int, list]]:
+    import pymupdf
+
     out = []
     with pymupdf.open(pdf) as doc:
-        for page in doc:
-            words = None
-            if ocr and is_scan(page) and not stats.get("ocr_missing"):
-                try:
-                    tp = page.get_textpage_ocr(language=OCR_LANGUAGE, dpi=OCR_DPI, full=True,
-                                               tessdata=tessdata())
-                    words = page.get_text("words", textpage=tp)
-                    stats["ocr_pages"] += 1
-                except Exception as e:  # noqa: BLE001 - no Tesseract or no language data
-                    stats["ocr_missing"] = f"{type(e).__name__}: {str(e)[:120]}"
-            if words is None:
-                words = visible(page, page.get_text("words"))
-            out.append(rows(words))
+        for n in numbers:
+            page = doc[n]
+            tp = page.get_textpage_ocr(language=OCR_LANGUAGE, dpi=OCR_DPI, full=True, tessdata=tessdata())
+            out.append((n, [tuple(w) for w in page.get_text("words", textpage=tp)]))
     return out
 
 

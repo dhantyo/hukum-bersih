@@ -72,4 +72,35 @@ def test_ocr_speck_before_a_pasal_heading():
     from hukum_bersih.pdf.structure import normalise
 
     assert normalise(["' Pasal 8", "‘Pasal 9", ". Pasal 10."]) == ["Pasal 8", "Pasal 9", "Pasal 10"]
+    assert normalise(["Pasal 4 :", "Pasal 6'", "Pasal IV :"]) == ["Pasal 4", "Pasal 6", "Pasal IV"]
+    assert normalise(["Pasal 5,", "Pasal 5;"]) == ["Pasal 5,", "Pasal 5;"]       # references
     assert normalise(["'Pasal 8 menyatakan bahwa"]) == ["'Pasal 8 menyatakan bahwa"]
+
+
+def test_keyword_like_word_in_text_is_not_leaked_markup():
+    import pytest
+
+    from hukum_bersih.akn.build import LeakedMarkupError, to_akn
+
+    to_akn("BODY\n  ART 1 -\n    TR: Tegangan Rendah\n", "/akn/id/act/uu/2024/59", "act")
+    with pytest.raises(LeakedMarkupError):
+        to_akn("BODY\n  ART 1 -\n    \\ART 2 - leaked\n", "/akn/id/act/uu/2024/59", "act")
+
+
+def test_a_new_parser_redoes_only_flagged_or_old_texts():
+    from hukum_bersih.pdf.structure import PARSER_REDO_BELOW, PARSER_VERSION
+    from hukum_bersih.sources.peraturan_bpk import SOURCE, text_current
+
+    def rec(pv, **flags):
+        return {"versions": [{"text": "t.txt", "parser_version": pv, "pdf_source": SOURCE}], **flags}
+
+    assert PARSER_REDO_BELOW < PARSER_VERSION
+    assert text_current(rec(PARSER_REDO_BELOW))                      # good older text: kept
+    assert not text_current(rec(PARSER_REDO_BELOW - 1))              # too old: redone
+    assert not text_current(rec(PARSER_REDO_BELOW, reparse_error=f"v{PARSER_VERSION - 1}: 3 pasal"))
+    assert text_current(rec(PARSER_REDO_BELOW, reparse_error=f"v{PARSER_VERSION}: 3 pasal"))
+    assert not text_current(rec(PARSER_REDO_BELOW, parse_error="LeakedMarkupError"))
+    assert not text_current({"versions": [{"text": "t.txt", "parser_version": PARSER_VERSION,
+                                           "pdf_source": "peraturan.go.id"}]})  # not from BPK yet
+    assert not text_current({"parser_version_tried": PARSER_VERSION - 1})
+    assert text_current({"parser_version_tried": PARSER_VERSION})

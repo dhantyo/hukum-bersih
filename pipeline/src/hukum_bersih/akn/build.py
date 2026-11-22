@@ -39,7 +39,9 @@ def _check_no_leaked_markup(xml) -> None:
 
     from .bluebell import KEYWORDS
 
-    leaked = re.compile(rf"^(?:{'|'.join(sorted(KEYWORDS, key=len, reverse=True))})\b")
+    # markup shows as a keyword then a space or the end ("ART 1 -", "POINT (a)", "BODY"); a
+    # keyword-like word in the law's own text is not ("TR: Tegangan Rendah", UU 59/2024)
+    leaked = re.compile(rf"^(?:{'|'.join(sorted(KEYWORDS, key=len, reverse=True))})(?:\s|$)")
     for p in xml.iter("{*}p"):
         text = "".join(p.itertext()).strip()
         if leaked.match(text):

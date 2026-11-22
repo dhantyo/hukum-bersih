@@ -239,15 +239,19 @@ def files_done(rec: dict) -> bool:
 
 
 def text_current(rec: dict) -> bool:
-    """The record's text comes from BPK's PDF and the current parser, or that parser was
-    already tried on it (no text: scanned and unreadable, or no pasal found)."""
-    from ..pdf.structure import PARSER_VERSION
+    """Nothing for the current parser to do: the text comes from BPK's PDF and a parser no
+    older than PARSER_REDO_BELOW, and the record is not flagged; or the current parser was
+    already tried on it (kept old text, parse error, or no text: scanned and unreadable)."""
+    from ..pdf.structure import PARSER_REDO_BELOW, PARSER_VERSION
 
+    if (str(rec.get("reparse_error", "")).startswith(f"v{PARSER_VERSION}:")
+            or rec.get("parser_version_tried") == PARSER_VERSION):
+        return True
+    if rec.get("reparse_error") or rec.get("parse_error"):
+        return False                                     # flagged by an older parser: try again
     texts = [v for v in rec.get("versions") or [] if v.get("text")]
-    if texts:
-        return all(v.get("parser_version") == PARSER_VERSION and v.get("pdf_source") == SOURCE
-                   for v in texts) or str(rec.get("reparse_error", "")).startswith(f"v{PARSER_VERSION}:")
-    return rec.get("parser_version_tried") == PARSER_VERSION
+    return bool(texts) and all((v.get("parser_version") or 0) >= PARSER_REDO_BELOW
+                               and v.get("pdf_source") == SOURCE for v in texts)
 
 
 def is_penjelasan(f: dict) -> bool:
