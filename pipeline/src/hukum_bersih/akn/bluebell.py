@@ -31,6 +31,9 @@ KEYWORDS = {
 }
 INDENT = "  "
 RANK = {"Ayat": 0, "Huruf": 1, "Angka": 2}
+# under an amending law's Pasal I, II …, 'Angka n' is the n-th change, above the ayat of the
+# pasal it quotes (UU 13/2022: 'Angka 10' / 'Pasal 78' / 'Ayat (1)')
+RANK_AMENDING = {"Angka": -1, "Ayat": 0, "Huruf": 1}
 
 
 def escape(text: str) -> str:
@@ -179,7 +182,7 @@ def _front(w: Writer, blocks: list[Block]) -> None:
 def _penjelasan(w: Writer, blocks: list[Block]) -> None:
     w.line(0, "ATTACHMENT Penjelasan")
     head = blocks[0]
-    level, open_labels = 1, []
+    level, open_labels, ranks = 1, [], RANK
     if head.text:
         w.line(1, "PART - PENJELASAN")
         w.para(2, head.text)
@@ -193,10 +196,11 @@ def _penjelasan(w: Writer, blocks: list[Block]) -> None:
         elif b.kind == "p_pasal":
             w.heading(2, "ART", _strip(b.label, "Pasal"))
             level, open_labels = 3, []
+            ranks = RANK_AMENDING if re.fullmatch(r"[IVXLC]+", _strip(b.label, "Pasal").strip()) else RANK
         elif b.kind == "p_label":
             # 'Ayat (1)' > 'Huruf a' > 'Angka 3': explanation headings within a Pasal, nested
             # under the closest open heading of a higher rank.
-            rank = RANK[b.label.split(" ", 1)[0]]
+            rank = ranks[b.label.split(" ", 1)[0]]
             while open_labels and open_labels[-1] >= rank:
                 open_labels.pop()
             d = 3 + len(open_labels)

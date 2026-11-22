@@ -106,3 +106,28 @@ def test_a_new_parser_redoes_only_flagged_or_old_texts():
                                            "pdf_source": "peraturan.go.id"}]})  # not from BPK yet
     assert not text_current({"parser_version_tried": PARSER_VERSION - 1})
     assert text_current({"parser_version_tried": PARSER_VERSION})
+
+
+def test_ocr_letters_for_digits_and_spaced_marks_in_headings():
+    from hukum_bersih.pdf.structure import normalise
+
+    assert normalise(["Pasal S1", "Pasal 1lA", "Pasal 1O", "Pasal 84 ,", "Pasal 9 ;"]) == [
+        "Pasal 51", "Pasal 11A", "Pasal 10", "Pasal 84", "Pasal 9"]
+    assert normalise(["Pasal II", "Pasal 5B", "Pasal 84,"]) == ["Pasal II", "Pasal 5B", "Pasal 84,"]
+
+
+def test_amending_penjelasan_puts_angka_above_ayat():
+    from hukum_bersih.akn.bluebell import to_bluebell
+    from hukum_bersih.akn.build import to_akn
+    from hukum_bersih.pdf.structure import Block, Document
+
+    doc = Document([
+        Block("title", text="UNDANG-UNDANG"), Block("pasal", "Pasal I"), Block("text", text="Beberapa ketentuan diubah."),
+        Block("pasal", "Pasal II"), Block("text", text="Berlaku."),
+        Block("penjelasan", text="PENJELASAN"), Block("pasal_demi_pasal"), Block("p_pasal", "Pasal I"),
+        Block("p_label", "Angka 9", "Pasal 77"), Block("p_label", "Ayat (5)", "Cukup jelas."),
+        Block("p_label", "Angka 10", "Pasal 78"), Block("p_label", "Ayat (1)", "Cukup jelas."),
+    ])
+    text = to_bluebell(doc)
+    assert "      PARA Angka 10" in text and "        PARA Ayat (1)" in text
+    to_akn(text, "/akn/id/act/uu/2022/13", "act")
