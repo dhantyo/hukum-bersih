@@ -12,8 +12,8 @@ tanggal_penetapan: '2000-06-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu9-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/44959/uu-no-9-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33325/UU%20Nomor%209%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2000_2000-06-07.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: bc9f1b4dff4574b681e60c803a8e9759e40a3172f19501184fc3e3970646f5a4
 pdf_sha256: bc9f1b4dff4574b681e60c803a8e9759e40a3172f19501184fc3e3970646f5a4
+tanggal_pengundangan: '2000-06-07'
+tanggal_berlaku: '2000-06-07'
+lembaran_negara: 'LN. 2000/ No. 76, TLN NO. 3964, LL SETNEG : 3 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu9-2000.pdf
+bpk:
+  id: 44959
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33325/UU%20Nomor%209%20Tahun%202000.pdf
+    bpk_file_id: 33325
+    filename: UU Nomor 9 Tahun 2000.pdf
+    sha256: bc9f1b4dff4574b681e60c803a8e9759e40a3172f19501184fc3e3970646f5a4
+    bytes: 59690
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_49_1999
+      citation: UU No. 49 Tahun 1999
+      tentang: Pembentukan Kabupaten Kepulauan Mentawai
+      url: https://peraturan.bpk.go.id/Details/45390/uu-no-49-tahun-1999
+      note: null
+uji_materi: null

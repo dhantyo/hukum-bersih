@@ -11,8 +11,8 @@ tanggal_penetapan: '2001-06-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ABDURRAHMAN WAHID
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-2001
-source_pdf_url: https://peraturan.go.id/files/uu9-2001.pdf
+source_url: https://peraturan.bpk.go.id/Details/44874/uu-no-9-tahun-2001
+source_pdf_url: https://peraturan.bpk.go.id/Download/33235/UU%20Nomor%209%20Tahun%202001.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,36 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2001_2001-06-21.txt
   pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d674d8b9ae9f60294c1692f0f97c37b3e5ef5d486f09a1786c184f7d12abd4ce
 pdf_sha256: 3a04ac2026eb412483ce56f78c14a1ceedd492dde5ca372aa39e9eb5e68766d1
+tanggal_pengundangan: '2001-06-21'
+tanggal_berlaku: '2001-06-21'
+lembaran_negara: 'LN. 2001/ No. 89, TLN NO. 4116, LL SETNEG : 6 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-2001
+  source_pdf_url: https://peraturan.go.id/files/uu9-2001.pdf
+bpk:
+  id: 44874
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33235/UU%20Nomor%209%20Tahun%202001.pdf
+    bpk_file_id: 33235
+    filename: UU Nomor 9 Tahun 2001.pdf
+    sha256: d674d8b9ae9f60294c1692f0f97c37b3e5ef5d486f09a1786c184f7d12abd4ce
+    bytes: 295608
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: pp_29_1975
+      citation: PP No. 29 Tahun 1975
+      tentang: Pembentukan Kota Administratip Cimahi
+      url: https://peraturan.bpk.go.id/Details/67761/pp-no-29-tahun-1975
+      note: null
+    - id: pp_26_1975
+      citation: PP No. 26 Tahun 1975
+      tentang: Pembentukan Kota Administratip Banjar Baru
+      url: https://peraturan.bpk.go.id/Details/67758/pp-no-26-tahun-1975
+      note: null
+uji_materi: null

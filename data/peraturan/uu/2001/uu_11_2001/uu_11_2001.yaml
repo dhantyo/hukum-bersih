@@ -11,8 +11,8 @@ tanggal_penetapan: '2001-06-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ABDURRAHMAN WAHID
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-2001
-source_pdf_url: https://peraturan.go.id/files/uu11-2001.pdf
+source_url: https://peraturan.bpk.go.id/Details/44879/uu-no-11-tahun-2001
+source_pdf_url: https://peraturan.bpk.go.id/Download/33240/UU%20Nomor%2011%20Tahun%202001.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_2001_2001-06-21.txt
   pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 18870392c03e0d5980b70275b232a9a03fff2472e8ad0dd16ddfaad1347e9b7d
 pdf_sha256: 18870392c03e0d5980b70275b232a9a03fff2472e8ad0dd16ddfaad1347e9b7d
+tanggal_pengundangan: '2001-06-21'
+tanggal_berlaku: '2001-06-21'
+lembaran_negara: 'LN. 2001/ No. 91, TLN NO. 4118, LL SETNEG : 8 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-2001
+  source_pdf_url: https://peraturan.go.id/files/uu11-2001.pdf
+bpk:
+  id: 44879
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33240/UU%20Nomor%2011%20Tahun%202001.pdf
+    bpk_file_id: 33240
+    filename: UU Nomor 11 Tahun 2001.pdf
+    sha256: 18870392c03e0d5980b70275b232a9a03fff2472e8ad0dd16ddfaad1347e9b7d
+    bytes: 90843
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

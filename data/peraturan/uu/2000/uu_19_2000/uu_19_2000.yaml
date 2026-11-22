@@ -12,8 +12,8 @@ tanggal_penetapan: '2000-08-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu19-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/44984/uu-no-19-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/412464/UU%2019_2000.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,5 +28,38 @@ versions:
   date: '2000-08-02'
   date_basis: tanggal_penetapan
   text: uu_19_2000_2000-08-02.txt
-  pasal_count: 4
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8c2e7783072dc917b39b3e987460e8f6e33f9ae0d459d354bb80121a72918b46
 pdf_sha256: 7088da5b897ad2eb28a490d0082a857034e74c828d356b4621cfd2f594a9ec4d
+tanggal_pengundangan: '2000-08-02'
+tanggal_berlaku: '2001-01-01'
+lembaran_negara: 'LN. 2000/ No. 129, TLN NO. 3987, LL SETNEG : 20 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu19-2000.pdf
+bpk:
+  id: 44984
+  files:
+  - url: https://peraturan.bpk.go.id/Download/412464/UU%2019_2000.pdf
+    bpk_file_id: 412464
+    filename: UU 19_2000.pdf
+    sha256: 8c2e7783072dc917b39b3e987460e8f6e33f9ae0d459d354bb80121a72918b46
+    bytes: 169829
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_19_1997
+      citation: UU No. 19 Tahun 1997
+      tentang: Penagihan Pajak Dengan Surat Paksa
+      url: https://peraturan.bpk.go.id/Details/46002/uu-no-19-tahun-1997
+      note: null
+    Mengubah:
+    - id: uu_19_1997
+      citation: UU No. 19 Tahun 1997
+      tentang: Penagihan Pajak Dengan Surat Paksa
+      url: https://peraturan.bpk.go.id/Details/46002/uu-no-19-tahun-1997
+      note: null
+uji_materi: null

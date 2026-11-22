@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 32 Tahun 2000 tentang Desain Tata Letak Sirkuit Terpa
 tentang: DESAIN TATA LETAK SIRKUIT TERPADU
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2000-12-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ABDURRAHMAN WAHID
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-32-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/UU-32-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/45236/uu-no-32-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33720/UU%20Nomor%2032%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_32_2000_2000
+- id: uu_32_2000_2000-12-20
   kind: asli
   source: official
-  date: null
+  date: '2000-12-20'
   date_basis: tanggal_penetapan
-  text: uu_32_2000_2000.txt
+  text: uu_32_2000_2000-12-20.txt
   pasal_count: 43
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8fa53f900ad2fdbeb804dfbdae1629838e882fbe0f4252732c658be0e12d98b3
 pdf_sha256: 8fa53f900ad2fdbeb804dfbdae1629838e882fbe0f4252732c658be0e12d98b3
+tanggal_pengundangan: '2000-12-20'
+tanggal_berlaku: '2000-12-20'
+lembaran_negara: 'LN. 2000/ No. 244, LL SETNEG : 17 HLM'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-32-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/UU-32-2000.pdf
+bpk:
+  id: 45236
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33720/UU%20Nomor%2032%20Tahun%202000.pdf
+    bpk_file_id: 33720
+    filename: UU Nomor 32 Tahun 2000.pdf
+    sha256: 8fa53f900ad2fdbeb804dfbdae1629838e882fbe0f4252732c658be0e12d98b3
+    bytes: 85308
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

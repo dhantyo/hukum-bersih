@@ -13,8 +13,8 @@ tanggal_penetapan: '2000-08-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ABDURRAHMAN WAHID
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu18-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/44982/uu-no-18-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33373/UU%20Nomor%2018%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,5 +29,39 @@ versions:
   date: '2000-08-02'
   date_basis: tanggal_penetapan
   text: uu_18_2000_2000-08-02.txt
-  pasal_count: 1
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 95ec3495ab804cdc696bd1b11306c8602a3403646d31b6e4316caf369ca69879
 pdf_sha256: 95ec3495ab804cdc696bd1b11306c8602a3403646d31b6e4316caf369ca69879
+tanggal_pengundangan: '2000-08-02'
+tanggal_berlaku: '2001-01-01'
+lembaran_negara: 'LN. 2000/ No. 128, TLN NO. 3986, LL SETNEG : 15 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu18-2000.pdf
+bpk:
+  id: 44982
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33373/UU%20Nomor%2018%20Tahun%202000.pdf
+    bpk_file_id: 33373
+    filename: UU Nomor 18 Tahun 2000.pdf
+    sha256: 95ec3495ab804cdc696bd1b11306c8602a3403646d31b6e4316caf369ca69879
+    bytes: 155555
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_11_1994
+      citation: UU No. 11 Tahun 1994
+      tentang: Perubahan atas Undang-Undang Nomor 8 Tahun 1983 tentang Pajak Pertambahan
+        Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah
+      url: https://peraturan.bpk.go.id/Details/46235/uu-no-11-tahun-1994
+      note: null
+    - id: uu_8_1983
+      citation: UU No. 8 Tahun 1983
+      tentang: Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang
+        Mewah
+      url: https://peraturan.bpk.go.id/Details/46990/uu-no-8-tahun-1983
+      note: null
+uji_materi: null

@@ -11,8 +11,8 @@ tanggal_penetapan: '2000-10-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-23-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu23-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/44990/uu-no-23-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33383/UU%20Nomor%2023%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_2000_2000-10-17.txt
   pasal_count: 20
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f8bedbe243b4309d89d0ffdbd83d3c96e6b7f3263841ac58977028d02131ae3c
 pdf_sha256: f8bedbe243b4309d89d0ffdbd83d3c96e6b7f3263841ac58977028d02131ae3c
+tanggal_pengundangan: '2000-10-17'
+tanggal_berlaku: '2000-10-17'
+lembaran_negara: 'LN. 2000/ No. 182, LL SETNEG : 8 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-23-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu23-2000.pdf
+bpk:
+  id: 44990
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33383/UU%20Nomor%2023%20Tahun%202000.pdf
+    bpk_file_id: 33383
+    filename: UU Nomor 23 Tahun 2000.pdf
+    sha256: f8bedbe243b4309d89d0ffdbd83d3c96e6b7f3263841ac58977028d02131ae3c
+    bytes: 64995
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

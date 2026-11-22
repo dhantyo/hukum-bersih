@@ -17,8 +17,8 @@ tanggal_penetapan: '2001-05-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ABDURRAHMAN WAHID
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-2001
-source_pdf_url: https://peraturan.go.id/files/uu1-2001.pdf
+source_url: https://peraturan.bpk.go.id/Details/44503/uu-no-1-tahun-2001
+source_pdf_url: https://peraturan.bpk.go.id/Download/32775/UU%20Nomor%20%201%20Tahun%202001.pdf
 relationships:
   amends: []
   amended_by: []
@@ -34,4 +34,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2001_2001-05-08.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8c98c8a5c883a8f877102aff851860c185e867abf3a470904747a28923e4a797
 pdf_sha256: 8c98c8a5c883a8f877102aff851860c185e867abf3a470904747a28923e4a797
+tanggal_pengundangan: '2001-05-08'
+tanggal_berlaku: '2001-05-08'
+lembaran_negara: 'LN. 2001/ No. 43, TLN NO. 4091, LL SETNEG : 3 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-2001
+  source_pdf_url: https://peraturan.go.id/files/uu1-2001.pdf
+bpk:
+  id: 44503
+  files:
+  - url: https://peraturan.bpk.go.id/Download/32775/UU%20Nomor%20%201%20Tahun%202001.pdf
+    bpk_file_id: 32775
+    filename: UU Nomor  1 Tahun 2001.pdf
+    sha256: 8c98c8a5c883a8f877102aff851860c185e867abf3a470904747a28923e4a797
+    bytes: 84393
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

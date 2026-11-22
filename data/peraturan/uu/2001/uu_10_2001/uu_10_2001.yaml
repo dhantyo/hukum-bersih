@@ -11,8 +11,8 @@ tanggal_penetapan: '2001-06-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ABDURRAHMAN WAHID
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2001
-source_pdf_url: https://peraturan.go.id/files/uu10-2001.pdf
+source_url: https://peraturan.bpk.go.id/Details/44878/uu-no-10-tahun-2001
+source_pdf_url: https://peraturan.bpk.go.id/Download/403574/UU%20Nomor%2010%20Tahun%202001.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2001_2001-06-21.txt
   pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2b199c230f7ddb56f7993356fa9972c090c53a1d1f290f57e0477dd0c3699386
 pdf_sha256: a39f0d385d2c4b248a2d5ff99d1f37b33408519af1ad824118080bf24aa483cc
+tanggal_pengundangan: '2001-06-21'
+tanggal_berlaku: '2001-06-21'
+lembaran_negara: 'LN. 2001 (90), TLN (4117) : 7 hlm.; https://berkas.dpr.go.id/'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2001
+  source_pdf_url: https://peraturan.go.id/files/uu10-2001.pdf
+bpk:
+  id: 44878
+  files:
+  - url: https://peraturan.bpk.go.id/Download/403574/UU%20Nomor%2010%20Tahun%202001.pdf
+    bpk_file_id: 403574
+    filename: UU Nomor 10 Tahun 2001.pdf
+    sha256: 2b199c230f7ddb56f7993356fa9972c090c53a1d1f290f57e0477dd0c3699386
+    bytes: 38012
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: pp_22_1976
+      citation: PP No. 22 Tahun 1976
+      tentang: Pembentukan Kota Administratip Tasikmalaya
+      url: https://peraturan.bpk.go.id/Details/67560/pp-no-22-tahun-1976
+      note: null
+uji_materi: null

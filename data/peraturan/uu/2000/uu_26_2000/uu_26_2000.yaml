@@ -11,8 +11,8 @@ tanggal_penetapan: '2000-11-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-26-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu26-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/44993/uu-no-26-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33386/UU%20Nomor%2026%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_26_2000_2000-11-23.txt
   pasal_count: 51
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 440fb0f7c43ace58f23314c7221842766daaf5c321aa6cc79f77b5f4813518cb
 pdf_sha256: 440fb0f7c43ace58f23314c7221842766daaf5c321aa6cc79f77b5f4813518cb
+tanggal_pengundangan: '2000-11-23'
+tanggal_berlaku: '2000-11-23'
+lembaran_negara: 'LN. 2000/ No. 208, TLN NO. 4026, LL SETNEG : 18 HLM'
+subjek: HAK ASASI MANUSIA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-26-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu26-2000.pdf
+bpk:
+  id: 44993
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33386/UU%20Nomor%2026%20Tahun%202000.pdf
+    bpk_file_id: 33386
+    filename: UU Nomor 26 Tahun 2000.pdf
+    sha256: 440fb0f7c43ace58f23314c7221842766daaf5c321aa6cc79f77b5f4813518cb
+    bytes: 112896
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 8, Pasal 9, dan Pasal 36 sampai dengan Pasal 40 Undang-Undang Nomor
+        26 Tahun 2000
+uji_materi:
+- putusan: 18/PUU-V/2007
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/102/putusan_sidang_Putusan%2018_PUU-V_2007%20Baca%2021%20Feb%2020081.pdf
+  amar: Penjelasan Pasal 43 ayat (2) Undang-Undang Nomor 26 Tahun 2000 tentang Pengadilan
+    Hak Asasi Manusia sepanjang mengenai kata ”dugaan” bertentangan dengan UUD NRI
+    Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.

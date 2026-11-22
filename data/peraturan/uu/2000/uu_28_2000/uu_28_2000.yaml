@@ -9,21 +9,18 @@ title: Undang-Undang Nomor 28 Tahun 2000 tentang Penetapan Perpu 3-2000 Tentang 
 tentang: PENETAPAN PERPU 3-2000 TENTANG PERUBAHAN UU 11-1998 TENTANG PERUBAHAN BERLAKUNYA
   UU 25-1997 TENTANG KETENAGAKERJAAN MENJADI UU
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 13 Tahun 2003 Tentang Ketenagakerjaan
-  Undang-Undang Nomor 13 Tahun 2003 Tentang Ketenagakerjaan Undang-Undang Nomor 13
-  Tahun 2003 Tentang Ketenagakerjaan'
+status: tidak_berlaku
 tanggal_penetapan: '2000-12-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ABDURRAHMAN WAHID
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-28-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu28-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/44997/uu-no-28-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33390/UU%20Nomor%2028%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_13_2003
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -34,4 +31,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_28_2000_2000-12-20.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 424890662eb96a71cfdee1533c446779158c405307282d5bc83ef0fdeb16dffe
 pdf_sha256: 424890662eb96a71cfdee1533c446779158c405307282d5bc83ef0fdeb16dffe
+tanggal_pengundangan: '2000-12-20'
+tanggal_berlaku: '2000-12-20'
+lembaran_negara: 'LN. 2001/ No.240, TLN NO. 4042, LL SETNEG : 3 HLM'
+subjek: KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-28-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu28-2000.pdf
+bpk:
+  id: 44997
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33390/UU%20Nomor%2028%20Tahun%202000.pdf
+    bpk_file_id: 33390
+    filename: UU Nomor 28 Tahun 2000.pdf
+    sha256: 424890662eb96a71cfdee1533c446779158c405307282d5bc83ef0fdeb16dffe
+    bytes: 59768
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_13_2003
+      citation: UU No. 13 Tahun 2003
+      tentang: Ketenagakerjaan
+      url: https://peraturan.bpk.go.id/Details/43013/uu-no-13-tahun-2003
+      note: null
+uji_materi: null

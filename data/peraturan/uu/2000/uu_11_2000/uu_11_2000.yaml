@@ -13,8 +13,8 @@ tanggal_penetapan: '2000-06-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu11-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/44961/uu-no-11-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33331/UU%20Nomor%2011%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_2000_2000-06-07.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d4c76d981e2e1d5a3dd0c528d0a0b3b323d35d024443d6223636a242072117f0
 pdf_sha256: d4c76d981e2e1d5a3dd0c528d0a0b3b323d35d024443d6223636a242072117f0
+tanggal_pengundangan: '2000-06-07'
+tanggal_berlaku: '2000-06-07'
+lembaran_negara: 'LN. 2000/ No. 78, TLN NO. 3966, LL SETNEG : 4 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu11-2000.pdf
+bpk:
+  id: 44961
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33331/UU%20Nomor%2011%20Tahun%202000.pdf
+    bpk_file_id: 33331
+    filename: UU Nomor 11 Tahun 2000.pdf
+    sha256: d4c76d981e2e1d5a3dd0c528d0a0b3b323d35d024443d6223636a242072117f0
+    bytes: 61059
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_51_1999
+      citation: UU No. 51 Tahun 1999
+      tentang: Pembentukan Kabupaten Buol, Kabupaten Morowali, dan Kabupaten Banggai
+        Kepulauan
+      url: https://peraturan.bpk.go.id/Details/45394/uu-no-51-tahun-1999
+      note: null
+uji_materi: null

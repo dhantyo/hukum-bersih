@@ -12,8 +12,8 @@ tanggal_penetapan: '2000-12-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ABDURRAHMAN WAHID
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-27-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu27-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/44995/uu-no-27-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33388/UU%20Nomor%2027%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_27_2000_2000-12-04.txt
   pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 111413895ff532e224010913916db56b0c59a133de4501c6eac46bbf420e0b29
 pdf_sha256: 111413895ff532e224010913916db56b0c59a133de4501c6eac46bbf420e0b29
+tanggal_pengundangan: '2000-12-04'
+tanggal_berlaku: '2000-12-04'
+lembaran_negara: 'LN. 2001/ No. 217, TLN NO. 4033, LL SETNEG : 8 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-27-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu27-2000.pdf
+bpk:
+  id: 44995
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33388/UU%20Nomor%2027%20Tahun%202000.pdf
+    bpk_file_id: 33388
+    filename: UU Nomor 27 Tahun 2000.pdf
+    sha256: 111413895ff532e224010913916db56b0c59a133de4501c6eac46bbf420e0b29
+    bytes: 211419
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

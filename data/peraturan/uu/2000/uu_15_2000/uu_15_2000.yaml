@@ -12,8 +12,8 @@ tanggal_penetapan: '2000-06-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu15-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/44965/uu-no-15-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33338/UU%20Nomor%2015%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2000_2000-06-07.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 252eaff0e14827e6c8a334a83b30e43e645d6cc322da3b0ae23edfe0d044817d
 pdf_sha256: 252eaff0e14827e6c8a334a83b30e43e645d6cc322da3b0ae23edfe0d044817d
+tanggal_pengundangan: '2000-06-07'
+tanggal_berlaku: '2000-06-07'
+lembaran_negara: 'LN. 2000/ No. 82, TLN NO. 3970, LL SETNEG : 3 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu15-2000.pdf
+bpk:
+  id: 44965
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33338/UU%20Nomor%2015%20Tahun%202000.pdf
+    bpk_file_id: 33338
+    filename: UU Nomor 15 Tahun 2000.pdf
+    sha256: 252eaff0e14827e6c8a334a83b30e43e645d6cc322da3b0ae23edfe0d044817d
+    bytes: 59540
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_55_1999
+      citation: UU No. 55 Tahun 1999
+      tentang: Pembentukan Kabupaten Landak
+      url: https://peraturan.bpk.go.id/Details/45402/uu-no-55-tahun-1999
+      note: null
+uji_materi: null

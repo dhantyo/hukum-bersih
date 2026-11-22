@@ -7,20 +7,18 @@ title: Undang-Undang Nomor 34 Tahun 2000 tentang Perubahan Uu 18-1997 Tentang Pa
   Daerah Dan Retribusi Daerah
 tentang: PERUBAHAN UU 18-1997 TENTANG PAJAK DAERAH DAN RETRIBUSI DAERAH
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 28 Tahun 2009 Tentang Pajak
-  Daerah dan Retribusi Daerah'
+status: berlaku
 tanggal_penetapan: '2000-12-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ABDURRAHMAN WAHID
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-34-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu34-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/45238/uu-no-34-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33722/UU%20Nomor%2034%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_28_2009
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -31,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_34_2000_2000-12-20.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4208240fe5dd8a02e9d802813701f783ce7a6816867718303a2cd0b95696cd45
 pdf_sha256: 4208240fe5dd8a02e9d802813701f783ce7a6816867718303a2cd0b95696cd45
+tanggal_pengundangan: '2000-12-20'
+tanggal_berlaku: '2000-12-20'
+lembaran_negara: 'LN. 2000/ No. 246, TLN NO. 4048 LL SETNEG : 15 HLM'
+subjek: PAJAK DAN RETRIBUSI DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-34-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu34-2000.pdf
+bpk:
+  id: 45238
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33722/UU%20Nomor%2034%20Tahun%202000.pdf
+    bpk_file_id: 33722
+    filename: UU Nomor 34 Tahun 2000.pdf
+    sha256: 4208240fe5dd8a02e9d802813701f783ce7a6816867718303a2cd0b95696cd45
+    bytes: 115646
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_18_1997
+      citation: UU No. 18 Tahun 1997
+      tentang: Pajak Daerah dan Retribusi Daerah
+      url: https://peraturan.bpk.go.id/Details/45950/uu-no-18-tahun-1997
+      note: null
+uji_materi: null

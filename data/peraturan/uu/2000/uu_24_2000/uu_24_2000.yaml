@@ -11,8 +11,8 @@ tanggal_penetapan: '2000-10-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-24-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu24-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/44991/uu-no-24-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33384/UU%20Nomor%2024%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,35 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_2000_2000-10-23.txt
   pasal_count: 22
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c8043b66c0a79311db855814f9a6dee478f6155864fd63f3164627f7ffb9c463
 pdf_sha256: c8043b66c0a79311db855814f9a6dee478f6155864fd63f3164627f7ffb9c463
+tanggal_pengundangan: '2000-10-23'
+tanggal_berlaku: '2000-10-23'
+lembaran_negara: 'LN. 2000/ No. 185, TLN NO. 4012, LL SETNEG : 9 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-24-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu24-2000.pdf
+bpk:
+  id: 44991
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33384/UU%20Nomor%2024%20Tahun%202000.pdf
+    bpk_file_id: 33384
+    filename: UU Nomor 24 Tahun 2000.pdf
+    sha256: c8043b66c0a79311db855814f9a6dee478f6155864fd63f3164627f7ffb9c463
+    bytes: 158669
+    archive_url: null
+  status_peraturan: null
+uji_materi:
+- putusan: Nomor 13/PUU-XVI/2018
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/149/PULB_MK_13PUUXVI2018_2018.PDF
+  amar: Menyatakan Pasal 10 Undang-Undang Nomor 24 Tahun 2000 (Lembaran Negara Republik
+    Indonesia Tahun 2000 Nomor 185, Tambahan Lembaran Negara Republik Indonesia Nomor
+    4012) bertentangan dengan Undang-Undang Dasar Negara Republik Indonesia Tahun
+    1945 dan tidak mempunyai kekuatan hukum mengikat secara bersyarat sepanjang ditafsirkan
+    bahwa hanya jenisjenis perjanjian internasional sebagaimana disebutkan pada huruf
+    a sampai dengan huruf f dalam Pasal a quo itulah yang mempersyaratkan persetujuan
+    DPR sehingga hanya jenis-jenis perjanjian tersebut yang pengesahannya dilakukan
+    dengan undang-undang;

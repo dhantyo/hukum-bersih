@@ -12,8 +12,8 @@ tanggal_penetapan: '2000-08-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ABDURRAHMAN WAHID
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu20-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/44986/uu-no-20-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33378/UU%20Nomor%2020%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2000_2000-08-02.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3e4285b5ff212016fa2761c907891d896edb81369749d992aab44e242e18efed
 pdf_sha256: 3e4285b5ff212016fa2761c907891d896edb81369749d992aab44e242e18efed
+tanggal_pengundangan: '2000-08-02'
+tanggal_berlaku: '2001-01-01'
+lembaran_negara: 'LN. 2000/ No. 130, TLN NO. 3988, LL SETNEG : 12 HLM'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu20-2000.pdf
+bpk:
+  id: 44986
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33378/UU%20Nomor%2020%20Tahun%202000.pdf
+    bpk_file_id: 33378
+    filename: UU Nomor 20 Tahun 2000.pdf
+    sha256: 3e4285b5ff212016fa2761c907891d896edb81369749d992aab44e242e18efed
+    bytes: 99790
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_21_1997
+      citation: UU No. 21 Tahun 1997
+      tentang: Bea Perolehan atas Tanah dan Bangunan
+      url: https://peraturan.bpk.go.id/Details/46012/uu-no-21-tahun-1997
+      note: null
+uji_materi: null

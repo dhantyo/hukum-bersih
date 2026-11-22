@@ -11,8 +11,8 @@ tanggal_penetapan: '2001-06-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ABDURRAHMAN WAHID
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-2001
-source_pdf_url: https://peraturan.go.id/files/uu13-2001.pdf
+source_url: https://peraturan.bpk.go.id/Details/44883/uu-no-13-tahun-2001
+source_pdf_url: https://peraturan.bpk.go.id/Download/33246/UU%20Nomor%2013%20Tahun%202001.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2001_2001-06-21.txt
   pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9d1c306f73718a690d4f37b693a3615ce0139d8d604d087921642a00cd3257c4
 pdf_sha256: 9d1c306f73718a690d4f37b693a3615ce0139d8d604d087921642a00cd3257c4
+tanggal_pengundangan: '2001-06-21'
+tanggal_berlaku: '2001-06-21'
+lembaran_negara: 'LN. 2001/ No. 93, TLN NO. 4120, LL SETNEG : 9 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-2001
+  source_pdf_url: https://peraturan.go.id/files/uu13-2001.pdf
+bpk:
+  id: 44883
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33246/UU%20Nomor%2013%20Tahun%202001.pdf
+    bpk_file_id: 33246
+    filename: UU Nomor 13 Tahun 2001.pdf
+    sha256: 9d1c306f73718a690d4f37b693a3615ce0139d8d604d087921642a00cd3257c4
+    bytes: 93242
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

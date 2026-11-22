@@ -11,8 +11,8 @@ tanggal_penetapan: '2000-12-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ABDURRAHMAN WAHID
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-31-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu31-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/45076/uu-no-31-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33520/UU%20Nomor%2031%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_31_2000_2000-12-20.txt
   pasal_count: 57
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b522431e9ba1ec8c7558c480798b03c4ef4e525604d539cf01de9723af42414b
 pdf_sha256: b522431e9ba1ec8c7558c480798b03c4ef4e525604d539cf01de9723af42414b
+tanggal_pengundangan: '2000-12-20'
+tanggal_berlaku: '2000-12-20'
+lembaran_negara: 'LN. 2000/ No. 243, TLN NO. 4045, LL SETNEG : 21 HLM'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-31-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu31-2000.pdf
+bpk:
+  id: 45076
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33520/UU%20Nomor%2031%20Tahun%202000.pdf
+    bpk_file_id: 33520
+    filename: UU Nomor 31 Tahun 2000.pdf
+    sha256: b522431e9ba1ec8c7558c480798b03c4ef4e525604d539cf01de9723af42414b
+    bytes: 118520
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

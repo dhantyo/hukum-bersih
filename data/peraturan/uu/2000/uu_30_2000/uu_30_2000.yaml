@@ -11,8 +11,8 @@ tanggal_penetapan: '2000-12-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ABDURRAHMAN WAHID
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-30-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu30-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/45002/uu-no-30-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33395/UU%20Nomor%2030%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_2000_2000-12-20.txt
   pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a4dc3d1bad8695cb1e6a46918235a2a88a02d359b318a4b12bda7d40605fa037
 pdf_sha256: a4dc3d1bad8695cb1e6a46918235a2a88a02d359b318a4b12bda7d40605fa037
+tanggal_pengundangan: '2000-12-20'
+tanggal_berlaku: '2000-12-20'
+lembaran_negara: 'LN. 2000/ No. 242, TLN NO. 4044, LL SETNEG : 8 HLM'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-30-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu30-2000.pdf
+bpk:
+  id: 45002
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33395/UU%20Nomor%2030%20Tahun%202000.pdf
+    bpk_file_id: 33395
+    filename: UU Nomor 30 Tahun 2000.pdf
+    sha256: a4dc3d1bad8695cb1e6a46918235a2a88a02d359b318a4b12bda7d40605fa037
+    bytes: 75136
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

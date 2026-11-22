@@ -11,8 +11,8 @@ tanggal_penetapan: '2000-12-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ABDURRAHMAN WAHID
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-38-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu38-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/45246/uu-no-38-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33730/UU%20Nomor%2038%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_38_2000_2000-12-22.txt
   pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 86dd9709c0af4e79b0a1bd8685dfe4c8a7e5a8c6fee8b869c0c039bb6bf6f0ef
 pdf_sha256: 86dd9709c0af4e79b0a1bd8685dfe4c8a7e5a8c6fee8b869c0c039bb6bf6f0ef
+tanggal_pengundangan: '2000-12-22'
+tanggal_berlaku: '2000-12-22'
+lembaran_negara: 'LN. 2000/ No. 258, TLN NO. 4060, LL SETNEG : 8 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-38-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu38-2000.pdf
+bpk:
+  id: 45246
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33730/UU%20Nomor%2038%20Tahun%202000.pdf
+    bpk_file_id: 33730
+    filename: UU Nomor 38 Tahun 2000.pdf
+    sha256: 86dd9709c0af4e79b0a1bd8685dfe4c8a7e5a8c6fee8b869c0c039bb6bf6f0ef
+    bytes: 77050
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

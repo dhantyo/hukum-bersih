@@ -11,8 +11,8 @@ tanggal_penetapan: '2000-08-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu21-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/44988/uu-no-21-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33380/UU%20Nomor%2021%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2000_2000-08-04.txt
   pasal_count: 47
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3dd9e5856cf9b4107b9db5d67f8c15018be27e883275e9eb6776aff8dc3dc4a8
 pdf_sha256: 3dd9e5856cf9b4107b9db5d67f8c15018be27e883275e9eb6776aff8dc3dc4a8
+tanggal_pengundangan: '2000-08-04'
+tanggal_berlaku: '2000-08-04'
+lembaran_negara: 'LN. 2000/ No. 131, TLN NO. 3989, LL SETNEG : 15 HLM'
+subjek: KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu21-2000.pdf
+bpk:
+  id: 44988
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33380/UU%20Nomor%2021%20Tahun%202000.pdf
+    bpk_file_id: 33380
+    filename: UU Nomor 21 Tahun 2000.pdf
+    sha256: 3dd9e5856cf9b4107b9db5d67f8c15018be27e883275e9eb6776aff8dc3dc4a8
+    bytes: 95662
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

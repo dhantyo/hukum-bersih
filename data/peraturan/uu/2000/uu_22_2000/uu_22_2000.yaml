@@ -12,8 +12,8 @@ tanggal_penetapan: '2000-08-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-22-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu22-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/44989/uu-no-22-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33382/UU%20Nomor%2022%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_2000_2000-08-04.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e787f43addf943dc1c8cc21a3cf26fb892e095d3ab40899671b40383175376a3
 pdf_sha256: e787f43addf943dc1c8cc21a3cf26fb892e095d3ab40899671b40383175376a3
+tanggal_pengundangan: '2000-08-04'
+tanggal_berlaku: '2000-08-04'
+lembaran_negara: 'LN. 2000/ No. 132, TLN NO. 3990, LL SETNEG : 6 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-22-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu22-2000.pdf
+bpk:
+  id: 44989
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33382/UU%20Nomor%2022%20Tahun%202000.pdf
+    bpk_file_id: 33382
+    filename: UU Nomor 22 Tahun 2000.pdf
+    sha256: e787f43addf943dc1c8cc21a3cf26fb892e095d3ab40899671b40383175376a3
+    bytes: 96989
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

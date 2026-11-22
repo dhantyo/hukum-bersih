@@ -12,8 +12,8 @@ tanggal_penetapan: '2000-06-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu12-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/44962/uu-no-12-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33333/UU%20Nomor%2012%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2000_2000-06-07.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 95e0bbc0533b2670fceb523584905cfe7f156a45edea7a0f15b566e4489c97ea
 pdf_sha256: 95e0bbc0533b2670fceb523584905cfe7f156a45edea7a0f15b566e4489c97ea
+tanggal_pengundangan: '2000-06-07'
+tanggal_berlaku: '2000-06-07'
+lembaran_negara: 'LN. 2000/ No. 79, TLN NO. 3967, LL SETNEG : 3 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu12-2000.pdf
+bpk:
+  id: 44962
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33333/UU%20Nomor%2012%20Tahun%202000.pdf
+    bpk_file_id: 33333
+    filename: UU Nomor 12 Tahun 2000.pdf
+    sha256: 95e0bbc0533b2670fceb523584905cfe7f156a45edea7a0f15b566e4489c97ea
+    bytes: 59628
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_52_1999
+      citation: UU No. 52 Tahun 1999
+      tentang: Pembentukan Kabupaten Lembata
+      url: https://peraturan.bpk.go.id/Details/45398/uu-no-52-tahun-1999
+      note: null
+uji_materi: null

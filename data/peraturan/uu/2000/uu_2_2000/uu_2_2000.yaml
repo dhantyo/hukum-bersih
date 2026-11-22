@@ -12,8 +12,8 @@ tanggal_penetapan: '2000-03-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-2000
-source_pdf_url: https://peraturan.go.id/files/uu2-2000.pdf
+source_url: https://peraturan.bpk.go.id/Details/44939/uu-no-2-tahun-2000
+source_pdf_url: https://peraturan.bpk.go.id/Download/33304/UU%20Nomor%202%20Tahun%202000.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2000_2000-03-21.txt
   pasal_count: 14
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6c2921ea5a15ee33a004d2a3178c58adb3021380ba1bba698487e9955af122e3
 pdf_sha256: 6c2921ea5a15ee33a004d2a3178c58adb3021380ba1bba698487e9955af122e3
+tanggal_pengundangan: '2000-03-21'
+lembaran_negara: 'LN. 2000/ No. 38, LL SETNEG : 7 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-2000
+  source_pdf_url: https://peraturan.go.id/files/uu2-2000.pdf
+bpk:
+  id: 44939
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33304/UU%20Nomor%202%20Tahun%202000.pdf
+    bpk_file_id: 33304
+    filename: UU Nomor 2 Tahun 2000.pdf
+    sha256: 6c2921ea5a15ee33a004d2a3178c58adb3021380ba1bba698487e9955af122e3
+    bytes: 65111
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_33_2000
+      citation: UU No. 33 Tahun 2000
+      tentang: Perubahan atas Undang-Undang Nomor 2 Tahun 2000 tentang Anggaran Pendapatan
+        dan Belanja Negara Tahun Anggaran 2000
+      url: https://peraturan.bpk.go.id/Details/45237/uu-no-33-tahun-2000
+      note: null
+uji_materi: null

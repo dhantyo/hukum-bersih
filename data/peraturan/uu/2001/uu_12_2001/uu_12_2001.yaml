@@ -11,8 +11,8 @@ tanggal_penetapan: '2001-06-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ABDURRAHMAN WAHID
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-2001
-source_pdf_url: https://peraturan.go.id/files/uu12-2001.pdf
+source_url: https://peraturan.bpk.go.id/Details/44881/uu-no-12-tahun-2001
+source_pdf_url: https://peraturan.bpk.go.id/Download/33243/UU%20Nomor%2012%20Tahun%202001.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2001_2001-06-21.txt
   pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3c75f4c022e00cddca9e75149ec67ca8f657f95f43919476568eb8c65e1127a5
 pdf_sha256: 3c75f4c022e00cddca9e75149ec67ca8f657f95f43919476568eb8c65e1127a5
+tanggal_pengundangan: '2001-06-21'
+tanggal_berlaku: '2001-06-21'
+lembaran_negara: 'LN. 2001/ No. 92, TLN NO. 4119, LL SETNEG : 9 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-2001
+  source_pdf_url: https://peraturan.go.id/files/uu12-2001.pdf
+bpk:
+  id: 44881
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33243/UU%20Nomor%2012%20Tahun%202001.pdf
+    bpk_file_id: 33243
+    filename: UU Nomor 12 Tahun 2001.pdf
+    sha256: 3c75f4c022e00cddca9e75149ec67ca8f657f95f43919476568eb8c65e1127a5
+    bytes: 94782
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
