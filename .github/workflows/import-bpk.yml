@@ -34,6 +34,10 @@ on:
         description: "PDFs only: download and archive, leave texts alone"
         type: boolean
         default: false
+      archive:
+        description: "Also upload PDFs to archive.org (slow; off: hashes recorded, upload later)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -52,6 +56,7 @@ jobs:
       BATCH: "50"
       ONLY: ${{ inputs.only && format('--only={0}', inputs.only) || '' }}
       NO_TEXT: ${{ inputs.no_text && '--no-text' || '' }}
+      NO_ARCHIVE: ${{ inputs.archive && '' || '--no-archive' }}
       MODE: ${{ inputs.mode || 'import' }}
     steps:
       - uses: actions/checkout@v4
@@ -74,7 +79,7 @@ jobs:
             if [ "$MODE" = reparse ]; then
               out=$(cd pipeline && uv run hukum-bersih reparse-bpk --limit "$BATCH" $ONLY 2>&1 || true)
             else
-              out=$(cd pipeline && xvfb-run -a uv run hukum-bersih import-bpk "$JENIS" --limit "$BATCH" $ONLY $NO_TEXT 2>&1 || true)
+              out=$(cd pipeline && xvfb-run -a uv run hukum-bersih import-bpk "$JENIS" --limit "$BATCH" $ONLY $NO_TEXT $NO_ARCHIVE 2>&1 || true)
             fi
             echo "$out"
             n=$(echo "$out" | grep -c '^ok' || true)
