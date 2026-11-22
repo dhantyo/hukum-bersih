@@ -10,12 +10,12 @@ tentang: PENGESAHAN TREATY ON MUTUAL LEGAL ASSISTANCE IN CRIMINAL MATTERS (PERJA
   TENTANG BANTUAN TIMBAL-BALIK DALAM MASALAH PIDANA)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2008-04-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU+15+Tahun+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39048/uu-no-15-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/28427/UU%20Nomor%2015%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,11 +24,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_15_2008_2008
+- id: uu_15_2008_2008-04-30
   kind: asli
   source: official
-  date: null
+  date: '2008-04-30'
   date_basis: tanggal_penetapan
-  text: uu_15_2008_2008.txt
+  text: uu_15_2008_2008-04-30.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d20cc769428b6e3c09417e6a22cd9d23d40916a1233279b928f608ca35d8d2e8
 pdf_sha256: 078fe46c13063f3756edfac035495912ca090bc571c504b906c5682e9de05c88
+tanggal_pengundangan: '2008-04-30'
+tanggal_berlaku: '2008-04-30'
+lembaran_negara: 'LN.2008/NO.62, TLN NO.4847, LL SETNEG : 3 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU+15+Tahun+2008.pdf
+bpk:
+  id: 39048
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28427/UU%20Nomor%2015%20Tahun%202008.pdf
+    bpk_file_id: 28427
+    filename: UU Nomor 15 Tahun 2008.pdf
+    sha256: d20cc769428b6e3c09417e6a22cd9d23d40916a1233279b928f608ca35d8d2e8
+    bytes: 64032
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

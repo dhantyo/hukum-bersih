@@ -11,12 +11,12 @@ tentang: PENGESAHAN ILO CONVENTION NO. 185 CONCERNING REVISING SEAFARERS' IDENTI
   IDENTITAS PELAUT, 1958)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2008-01-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/uu1-2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/38857/uu-no-1-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/28211/UU%20Nomor%201%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,11 +25,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_1_2008_2008
+- id: uu_1_2008_2008-01-04
   kind: asli
   source: official
-  date: null
+  date: '2008-01-04'
   date_basis: tanggal_penetapan
-  text: uu_1_2008_2008.txt
+  text: uu_1_2008_2008-01-04.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: cfefe2353c1d4d06f39c3cc5e3f970403e63b41d3080efe558d02953aad31560
 pdf_sha256: 5a4d89577e242d8e1eb70c944a43b511e93b778cc92f39852d4b2ed2f919d8ed
+tanggal_pengundangan: '2008-01-04'
+tanggal_berlaku: '2008-01-04'
+lembaran_negara: 'LN.2008/NO.1, TLN NO.4800, LL SETNEG : 4 HLM.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/uu1-2008.pdf
+bpk:
+  id: 38857
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28211/UU%20Nomor%201%20Tahun%202008.pdf
+    bpk_file_id: 28211
+    filename: UU Nomor 1 Tahun 2008.pdf
+    sha256: cfefe2353c1d4d06f39c3cc5e3f970403e63b41d3080efe558d02953aad31560
+    bytes: 121671
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -6,24 +6,19 @@ year: 2008
 title: Undang-Undang Nomor 13 Tahun 2008 tentang Penyelenggaraan Ibadah Haji
 tentang: PENYELENGGARAAN IBADAH HAJI
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 8 Tahun 2019 Tentang Penyelenggaraan
-  Ibadah Haji dan Umrah Undang-Undang Nomor 7 Tahun 2019 Tentang Pengesahan Persetujuan
-  Antara Pemerintah Republik Indonesia dan Pemerintah Federasi Rusia Tentang Kerja
-  Sama di Bidang Pertahanan (agreement Between The Government of The Republic of Indonesia
-  and The Government of The Russian Federation On Cooperation In The Field of Defence)'
+status: tidak_berlaku
 tanggal_penetapan: '2008-04-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU+13+Tahun+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39044/uu-no-13-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/28422/UU%20Nomor%2013%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_17_1999
-  revoked_by:
-  - uu_8_2019
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -34,4 +29,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2008_2008-04-28.txt
   pasal_count: 69
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a88aec8b112a6ac7d86e703bd5291c0e6d9f94675fe24aafc69ce61bb06a328c
 pdf_sha256: 6fd52e460e9b0854b0132139a45fc13cad4172bea4ef86f43715c7afff2c1056
+tanggal_pengundangan: '2008-04-28'
+tanggal_berlaku: '2008-04-28'
+lembaran_negara: 'LN.2008/NO.60, 4845, LL SETNEG : 24 HLM'
+subjek: KEAGAMAAN, IBADAH, DAN PENYELENGGARAAN HAJI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU+13+Tahun+2008.pdf
+bpk:
+  id: 39044
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28422/UU%20Nomor%2013%20Tahun%202008.pdf
+    bpk_file_id: 28422
+    filename: UU Nomor 13 Tahun 2008.pdf
+    sha256: a88aec8b112a6ac7d86e703bd5291c0e6d9f94675fe24aafc69ce61bb06a328c
+    bytes: 124631
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_8_2019
+      citation: UU No. 8 Tahun 2019
+      tentang: Penyelenggaraan Ibadah Haji dan Umrah
+      url: https://peraturan.bpk.go.id/Details/106346/uu-no-8-tahun-2019
+      note: null
+    Mencabut:
+    - id: uu_17_1999
+      citation: UU No. 17 Tahun 1999
+      tentang: Penyelenggaraan Ibadah Haji
+      url: https://peraturan.bpk.go.id/Details/45309/uu-no-17-tahun-1999
+      note: null
+  tanggal_pengundangan: '2017-09-06'
+uji_materi: null

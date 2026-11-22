@@ -8,15 +8,13 @@ title: Undang-Undang Nomor 10 Tahun 2008 tentang Pemilihan Umum Anggota Dewan Pe
 tentang: PEMILIHAN UMUM ANGGOTA DEWAN PERWAKILAN RAKYAT, DEWAN PERWAKILAN DAERAH,
   DAN DEWAN PERWAKILAN RAKYAT DAERAH
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 8 Tahun 2012 Tentang Pemilihan
-  Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan
-  Rakyat Daerah'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '2008-03-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU+NO+10+TH+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39037/uu-no-10-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/28414/UU%20Nomor%2010%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by:
@@ -25,16 +23,97 @@ relationships:
   - uu_20_2004
   - uu_12_2003
   - uu_10_2006
-  revoked_by:
-  - uu_8_2012
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_10_2008_2008
+- id: uu_10_2008_2008-03-31
   kind: asli
   source: official
-  date: null
+  date: '2008-03-31'
   date_basis: tanggal_penetapan
-  text: uu_10_2008_2008.txt
+  text: uu_10_2008_2008-03-31.txt
   pasal_count: 320
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: dd8db3406e0fea57ec32058df2e5275319615d68eb187c8446678d51d8e88573
 pdf_sha256: eff6f9cf80c0da0f113b57f7723a5f7f7f9691ae4aa968fb64224f10f9206c7f
+tanggal_pengundangan: '2008-03-31'
+tanggal_berlaku: '2008-03-31'
+lembaran_negara: 'LN.2008/NO.51, TLN NO.4836, LL SETNEG : 135 HLM'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+10+TH+2008.pdf
+bpk:
+  id: 39037
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28414/UU%20Nomor%2010%20Tahun%202008.pdf
+    bpk_file_id: 28414
+    filename: UU Nomor 10 Tahun 2008.pdf
+    sha256: dd8db3406e0fea57ec32058df2e5275319615d68eb187c8446678d51d8e88573
+    bytes: 649474
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_8_2012
+      citation: UU No. 8 Tahun 2012
+      tentang: Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah,
+        dan Dewan Perwakilan Rakyat Daerah
+      url: https://peraturan.bpk.go.id/Details/37659/uu-no-8-tahun-2012
+      note: null
+    Diubah dengan:
+    - id: uu_17_2009
+      citation: UU No. 17 Tahun 2009
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        2009 tentang Perubahan atas Undang-Undang Nomor 10 Tahun 2008 tentang Pemilihan
+        Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan
+        Rakyat Daerah Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/38631/uu-no-17-tahun-2009
+      note: null
+    Mencabut:
+    - id: uu_10_2006
+      citation: UU No. 10 Tahun 2006
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        2006 tentang Perubahan Kedua atas Undang-Undang Nomor 12 Tahun 2003 tentang
+        Pemilihan Umum Anggota Dewan Perwakilan Rakyat,Dewan Perwakilan Daerah, dan
+        Dewan Perwakilan Rakyat Daerah menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/40171/uu-no-10-tahun-2006
+      note: null
+    - id: uu_12_2003
+      citation: UU No. 12 Tahun 2003
+      tentang: Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah,
+        dan Dewan Perwakilan Rakyat Daerah
+      url: https://peraturan.bpk.go.id/Details/43012/uu-no-12-tahun-2003
+      note: null
+uji_materi:
+- putusan: 27/PUU-VIII/2010
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/113/putusan_sidang_Putusan%20No.27-PUU-2010%20telah%20baca.pdf
+  amar: Pasal 218 ayat (3) Undang-Undang Nomor 10 Tahun 2008 tentang Pemilihan Umum
+    Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan
+    Rakyat Daerah sepanjang frasa “Daftar Calon Tetap” bertentangan dengan Undang-Undang
+    Dasar Negara Republik Indonesia Tahun 1945 secara bersyarat (conditionally unconstitutional)
+    dan tidak mempunyai kekuatan hukum mengikat sepanjang pengertiannya tidak mencakup
+    calon pengganti yang diajukan oleh partai politik yang memiliki kursi di Dewan
+    Perwakilan Rakyat, Dewan Perwakilan Rakyat Daerah provinsi, Dewan Perwakilan Rakyat
+    Daerah kabupaten/kota dalam hal tidak terdapat lagi calon yang terdaftar dalam
+    Daftar Calon Tetap (DCT).
+- putusan: 22-24/PUU-VI/2008
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/73/putusan_sidang_22-24-PUU-VI-2008.pdf
+  amar: Pasal 214 huruf a, huruf b, huruf c, huruf d, dan huruf e Undang-Undang Nomor
+    10 Tahun 2008 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan
+    Daerah, dan Dewan Perwakilan Rakyat Daerah bertentangan dengan UUD NRI Tahun 1945
+    dan tidak mempunyai kekuatan hukum mengikat.
+- putusan: 10/PUU-VI/2008
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/257/putusan_sidang_10_PUU-VI_2008.pdf
+  amar: 1) Pasal 12 huruf c Undang-Undang Nomor 10 Tahun 2008 tentang Pemilihan Umum
+    Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan
+    Rakyat Daerah (Lembaran Negara Republik Indonesia Tahun 2008 Nomor 51, Tambahan
+    Lembaran Negara Republik Indonesia Nomor 4836) tetap konstitusional berdasarkan
+    Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, sepanjang dimaknai memuat
+    syarat domisili di provinsi yang akan diwakili; 2) Pasal 12 huruf c Undang-Undang
+    Nomor 10 Tahun 2008 tentang Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan
+    Perwakilan Daerah dan Dewan Perwakilan Rakyat Daerah (Lembaran Negara Republik
+    Indonesia Tahun 2008 Nomor 51, Tambahan Lembaran Negara Republik Indonesia Nomor
+    4836) tetap mempunyai kekuatan hukum mengikat, sepanjang dimaknai memuat syarat
+    domisili di provinsi yang akan diwakili

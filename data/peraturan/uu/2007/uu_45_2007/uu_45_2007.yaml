@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 45 Tahun 2007 tentang Anggaran Pendapatan Dan Belanja
 tentang: ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 2008
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2007-11-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-45-tahun-2007
-source_pdf_url: https://peraturan.go.id/files/UU+45++2007+APBN+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39976/uu-no-45-tahun-2007
+source_pdf_url: https://peraturan.bpk.go.id/Download/29574/UU%20Nomor%2045%20Tahun%202007.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_45_2007_2007
+- id: uu_45_2007_2007-11-06
   kind: asli
   source: official
-  date: null
+  date: '2007-11-06'
   date_basis: tanggal_penetapan
-  text: uu_45_2007_2007.txt
+  text: uu_45_2007_2007-11-06.txt
   pasal_count: 18
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e6ec5ccc5b272116cb3876939fc42cb9de718a8b0f78960d730fce0878a7abfb
 pdf_sha256: e6ec5ccc5b272116cb3876939fc42cb9de718a8b0f78960d730fce0878a7abfb
+tanggal_pengundangan: '2007-11-06'
+tanggal_berlaku: '2008-01-01'
+lembaran_negara: 'LN.2007/NO.133, TLN NO.4778, LL SETNEG : 18 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-45-tahun-2007
+  source_pdf_url: https://peraturan.go.id/files/UU+45++2007+APBN+2008.pdf
+bpk:
+  id: 39976
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29574/UU%20Nomor%2045%20Tahun%202007.pdf
+    bpk_file_id: 29574
+    filename: UU Nomor 45 Tahun 2007.pdf
+    sha256: e6ec5ccc5b272116cb3876939fc42cb9de718a8b0f78960d730fce0878a7abfb
+    bytes: 200375
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_16_2008
+      citation: UU No. 16 Tahun 2008
+      tentang: Perubahan atas Undang-Undang Nomor 45 Tahun 2007 Tentang Anggaran Pendapatan
+        dan Belanja Negara Tahun anggaran 2008
+      url: https://peraturan.bpk.go.id/Details/39054/uu-no-16-tahun-2008
+      note: null
+uji_materi: null

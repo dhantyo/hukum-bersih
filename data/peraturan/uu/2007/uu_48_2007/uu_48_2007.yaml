@@ -12,12 +12,12 @@ tentang: PENETAPAN PERPU 2-2007 TENTANG PENANGANAN PERMASALAHAN HUKUM DALAM RANG
   ACEH DARUSSALAM DAN KEPULAUAN NIAS PROVINSI SUMATERA UTARA MENJADI UU
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2007-12-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-48-tahun-2007
-source_pdf_url: https://peraturan.go.id/files/uu48-2007.pdf
+source_url: https://peraturan.bpk.go.id/Details/40145/uu-no-48-tahun-2007
+source_pdf_url: https://peraturan.bpk.go.id/Download/29779/UU%20Nomor%2048%20Tahun%202007.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,11 +26,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_48_2007_2007
+- id: uu_48_2007_2007-12-28
   kind: asli
   source: official
-  date: null
+  date: '2007-12-28'
   date_basis: tanggal_penetapan
-  text: uu_48_2007_2007.txt
+  text: uu_48_2007_2007-12-28.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f7baa8e4e8bdb0d7468c9a02dc43c10472213441ee1d7a19a1c52b27c1756bc8
 pdf_sha256: b9bc24de746f7dba0af2baed65200b4e5830c5a33adbc2452311e3adda5fab36
+tanggal_pengundangan: '2007-12-28'
+tanggal_berlaku: '2007-12-28'
+lembaran_negara: 'LN.2007/NO.168, TLN NO.4796, LL SETNEG : 4 HLM'
+subjek: KETATANEGARAAN, KENEGARAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-48-tahun-2007
+  source_pdf_url: https://peraturan.go.id/files/uu48-2007.pdf
+bpk:
+  id: 40145
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29779/UU%20Nomor%2048%20Tahun%202007.pdf
+    bpk_file_id: 29779
+    filename: UU Nomor 48 Tahun 2007.pdf
+    sha256: f7baa8e4e8bdb0d7468c9a02dc43c10472213441ee1d7a19a1c52b27c1756bc8
+    bytes: 11172
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

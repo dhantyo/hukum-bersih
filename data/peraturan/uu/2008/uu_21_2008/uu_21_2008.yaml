@@ -11,8 +11,8 @@ tanggal_penetapan: '2008-07-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU+21+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39655/uu-no-21-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/29223/UU%20Nomor%2021%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,47 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2008_2008-07-16.txt
   pasal_count: 70
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ba044926efef1ab4d9ce708fa715dcd549532ed3ed257d9b9640b61d91c48ecd
 pdf_sha256: d106a1645d4fdc5ce3c3f639b1a83d0733751335e84c8a6f971053550507a415
+tanggal_pengundangan: '2008-07-16'
+tanggal_berlaku: '2008-07-16'
+lembaran_negara: 'LN.2008/NO.94, TLN NO.4867, LL SETNEG : 36 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU+21+2008.pdf
+bpk:
+  id: 39655
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29223/UU%20Nomor%2021%20Tahun%202008.pdf
+    bpk_file_id: 29223
+    filename: UU Nomor 21 Tahun 2008.pdf
+    sha256: ba044926efef1ab4d9ce708fa715dcd549532ed3ed257d9b9640b61d91c48ecd
+    bytes: 223080
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+uji_materi: null

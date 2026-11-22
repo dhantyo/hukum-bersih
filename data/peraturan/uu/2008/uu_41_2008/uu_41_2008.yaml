@@ -12,8 +12,8 @@ tanggal_penetapan: '2008-11-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-41-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU0412008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39736/uu-no-41-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/29318/UU%20Nomor%2041%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by:
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_41_2008_2008-11-10.txt
   pasal_count: 27
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ad3bde166acb562b4ca11980c67b7e4069bbad170f529b15a4234b11c37e8abc
 pdf_sha256: a4cabf2695772ac1b9aa41b091479edc1a985587797e319ed90a0c3fa63434af
+tanggal_pengundangan: '2008-11-10'
+tanggal_berlaku: '2009-01-01'
+lembaran_negara: 'LN.2008/NO.171, TLN NO.4920, LL SETNEG : 28 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-41-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU0412008.pdf
+bpk:
+  id: 39736
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29318/UU%20Nomor%2041%20Tahun%202008.pdf
+    bpk_file_id: 29318
+    filename: UU Nomor 41 Tahun 2008.pdf
+    sha256: ad3bde166acb562b4ca11980c67b7e4069bbad170f529b15a4234b11c37e8abc
+    bytes: 254737
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -12,8 +12,8 @@ tanggal_penetapan: '2008-07-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-30-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU+30+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39675/uu-no-30-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/29244/UU%20Nomor%2030%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_2008_2008-07-21.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 468465e127a4d36c8c714397003320ff4bf2df0bca3fe6d0137bb1437fce8855
 pdf_sha256: 73e215ff01b3159197ad0ed9761c9af8a8e8fc71da17650ce454186f4096e891
+tanggal_pengundangan: '2008-07-21'
+tanggal_berlaku: '2008-07-21'
+lembaran_negara: 'LN.2008/NO.103, TLN NO.4876, LL SETNEG : 14 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-30-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU+30+2008.pdf
+bpk:
+  id: 39675
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29244/UU%20Nomor%2030%20Tahun%202008.pdf
+    bpk_file_id: 29244
+    filename: UU Nomor 30 Tahun 2008.pdf
+    sha256: 468465e127a4d36c8c714397003320ff4bf2df0bca3fe6d0137bb1437fce8855
+    bytes: 113236
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

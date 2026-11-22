@@ -12,8 +12,8 @@ tanggal_penetapan: '2008-07-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-28-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU+28+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39671/uu-no-28-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/29240/UU%20Nomor%2028%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_28_2008_2008-07-21.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 01f7061de714f482b1faf09a596310f11159ebbee30eaf794c95bb07ef5c2a86
 pdf_sha256: 056cdecaf7ffca47b2baecb5339ca5d0deaa5115e77559b5510d90eaf9f9267e
+tanggal_pengundangan: '2008-07-21'
+tanggal_berlaku: '2008-07-21'
+lembaran_negara: 'LN.2008/NO.101, TLN NO.4874, LL SETNEG : 16 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-28-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU+28+2008.pdf
+bpk:
+  id: 39671
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29240/UU%20Nomor%2028%20Tahun%202008.pdf
+    bpk_file_id: 29240
+    filename: UU Nomor 28 Tahun 2008.pdf
+    sha256: 01f7061de714f482b1faf09a596310f11159ebbee30eaf794c95bb07ef5c2a86
+    bytes: 107516
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

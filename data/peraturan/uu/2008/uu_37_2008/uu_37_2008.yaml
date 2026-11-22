@@ -11,8 +11,8 @@ tanggal_penetapan: '2008-10-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-37-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU0372008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39708/uu-no-37-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/29288/UU%20Nomor%2037%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_37_2008_2008-10-07.txt
   pasal_count: 47
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e8631939556dc3983aa1b12508d26064b4069eb5bd2bfc2a9ff1b12ef5fd46e6
 pdf_sha256: 62b566b155ae6e2c86752173341dbde91c19a64d3943d015ccb917cbe782a2a3
+tanggal_pengundangan: '2008-10-07'
+tanggal_berlaku: '2008-10-07'
+lembaran_negara: 'LN.2008/NO.139, TLN NO.4899, LL SETNEG : 22 HLM'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA - PEMBENTUKAN, PERUBAHAN, DAN PEMBUBARAN
+  KOMISI / KOMITE / BADAN / DEWAN / STAF KHUSUS / TIM / PANITIA - DASAR PEMBENTUKAN
+  KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-37-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU0372008.pdf
+bpk:
+  id: 39708
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29288/UU%20Nomor%2037%20Tahun%202008.pdf
+    bpk_file_id: 29288
+    filename: UU Nomor 37 Tahun 2008.pdf
+    sha256: e8631939556dc3983aa1b12508d26064b4069eb5bd2bfc2a9ff1b12ef5fd46e6
+    bytes: 139948
+    archive_url: null
+  status_peraturan: null
+uji_materi:
+- putusan: 62/PUU-VIII/2010
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/109/putusan_sidang_PUTUSAN%2062%20PUU%20VII%202010%20-%20TELAH%20BACA.pdf
+  amar: Pasal 46 ayat (1) dan ayat (2) Undang-Undang Nomor 37 Tahun 2008 tentang Ombudsman
+    Republik Indonesia bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai
+    kekuatan hukum mengikat.

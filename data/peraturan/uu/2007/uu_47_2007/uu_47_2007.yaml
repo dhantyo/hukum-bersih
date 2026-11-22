@@ -11,12 +11,12 @@ tentang: PENGESAHAN PERJANJIAN ANTARA RI DAN AUSTRALIA TENTANG KERANGKA KERJA SA
   FOR SECURITY COOPERATION)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2007-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-47-tahun-2007
-source_pdf_url: https://peraturan.go.id/files/uu47-2007.pdf
+source_url: https://peraturan.bpk.go.id/Details/40144/uu-no-47-tahun-2007
+source_pdf_url: https://peraturan.bpk.go.id/Download/29778/UU%20Nomor%2047%20Tahun%202007.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,11 +25,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_47_2007_2007
+- id: uu_47_2007_2007-12-18
   kind: asli
   source: official
-  date: null
+  date: '2007-12-18'
   date_basis: tanggal_penetapan
-  text: uu_47_2007_2007.txt
+  text: uu_47_2007_2007-12-18.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7989e2df66f08a46cd9389df7382bf7a91ae62ef127ed4158f8e2b68ddb359cb
 pdf_sha256: 64c0be4b82386f5edf6649b8ede4a2b395e2a85942e37a85d1a2a6b7ae406e5b
+tanggal_pengundangan: '2007-12-18'
+tanggal_berlaku: '2007-12-18'
+lembaran_negara: 'LN.2007/NO.167, TLN NO.4795, LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-47-tahun-2007
+  source_pdf_url: https://peraturan.go.id/files/uu47-2007.pdf
+bpk:
+  id: 40144
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29778/UU%20Nomor%2047%20Tahun%202007.pdf
+    bpk_file_id: 29778
+    filename: UU Nomor 47 Tahun 2007.pdf
+    sha256: 7989e2df66f08a46cd9389df7382bf7a91ae62ef127ed4158f8e2b68ddb359cb
+    bytes: 12005
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

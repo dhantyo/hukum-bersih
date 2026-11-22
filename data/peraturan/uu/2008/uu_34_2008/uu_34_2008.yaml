@@ -16,8 +16,8 @@ tanggal_penetapan: '2008-07-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-34-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU+34+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39693/uu-no-34-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/29267/UU%20Nomor%2034%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -33,4 +33,49 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_34_2008_2008-07-21.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: bab07c42d15b1420df5e2f6b3694e842ca88b67103908ab44cd32babc02061d5
 pdf_sha256: 4d78797d0dcd7be40bdf41faf9470d64c3e46f0791af49512ac90ad3c035ac3b
+tanggal_pengundangan: '2008-07-21'
+tanggal_berlaku: '2008-07-21'
+lembaran_negara: 'LN.2008/NO.107, TLN NO.4880, LL SETNEG : 4 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-34-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU+34+2008.pdf
+bpk:
+  id: 39693
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29267/UU%20Nomor%2034%20Tahun%202008.pdf
+    bpk_file_id: 29267
+    filename: UU Nomor 34 Tahun 2008.pdf
+    sha256: bab07c42d15b1420df5e2f6b3694e842ca88b67103908ab44cd32babc02061d5
+    bytes: 44227
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_11_2003
+      citation: UU No. 11 Tahun 2003
+      tentang: Perubahan atas Undang-Undang Republik Indonesia Nomor 53 Tahun 1999
+        tentang Pembentukan Kabupaten Pelalawan, Kabupaten Rokan Hulu, Kabupaten Rokan
+        Hilir, Kabupaten Siak, Kabupaten Karimun, Kabupaten Natuna, Kabupaten Kuantan
+        Singingi, Dan Kota Batam
+      url: https://peraturan.bpk.go.id/Details/43011/uu-no-11-tahun-2003
+      note: null
+    - id: uu_13_2000
+      citation: UU No. 13 Tahun 2000
+      tentang: Perubahan atas Undang-Undang Nomor 53 Tahun 1999 tentang Pembentukan
+        Kabupaten Pelalawan, Kabupaten Rokan Hulu, Kabupaten Rokan Hilir, Kabupaten
+        Siak, Kabupaten Karimun, Kabupaten Natuna, Kabupaten Kuantan Singingi, dan
+        Kota Batam
+      url: https://peraturan.bpk.go.id/Details/44963/uu-no-13-tahun-2000
+      note: null
+    - id: uu_53_1999
+      citation: UU No. 53 Tahun 1999
+      tentang: Pembentukan Kabupaten Pelalawan, Kabupaten Rokan Hulu, Kabupaten Rokan
+        Hilir, Kabupaten Siak, Kabupaten Karimun, Kabupaten Natuna, Kabupaten Kuantan
+        Singingi, dan Kota Batam
+      url: https://peraturan.bpk.go.id/Details/45399/uu-no-53-tahun-1999
+      note: null
+uji_materi: null

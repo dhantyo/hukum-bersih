@@ -10,12 +10,12 @@ tentang: PENGESAHAN PERJANJIAN EKSTRADISI ANTARA RI DAN REPUBLIK KOREA (TREATY O
   EXTRADITION BETWEEN THE REPUBLIC OF INDONESIA AND THE REPUBLIC OF KOREA)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2007-10-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-42-tahun-2007
-source_pdf_url: https://peraturan.go.id/files/uu42-2007.pdf
+source_url: https://peraturan.bpk.go.id/Details/39967/uu-no-42-tahun-2007
+source_pdf_url: https://peraturan.bpk.go.id/Download/29565/UU%20Nomor%2042%20Tahun%202007.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,11 +24,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_42_2007_2007
+- id: uu_42_2007_2007-10-23
   kind: asli
   source: official
-  date: null
+  date: '2007-10-23'
   date_basis: tanggal_penetapan
-  text: uu_42_2007_2007.txt
+  text: uu_42_2007_2007-10-23.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7e0569af653a1a2ee78379f3c7604c330c426025a3624a7d848fe96252330ac0
 pdf_sha256: 314dc5211fc214f8bbb99c5ea7dde73129f9f3f43ad6f2bf95e34b1da141cc85
+tanggal_pengundangan: '2007-10-23'
+tanggal_berlaku: '2007-10-23'
+lembaran_negara: 'LN.2007/NO.126, TLN NO.4771, LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-42-tahun-2007
+  source_pdf_url: https://peraturan.go.id/files/uu42-2007.pdf
+bpk:
+  id: 39967
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29565/UU%20Nomor%2042%20Tahun%202007.pdf
+    bpk_file_id: 29565
+    filename: UU Nomor 42 Tahun 2007.pdf
+    sha256: 7e0569af653a1a2ee78379f3c7604c330c426025a3624a7d848fe96252330ac0
+    bytes: 110890
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

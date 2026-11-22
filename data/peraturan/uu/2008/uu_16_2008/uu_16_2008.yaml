@@ -13,8 +13,8 @@ tanggal_penetapan: '2008-05-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU+16+Tahun+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39054/uu-no-16-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/28442/UU%20Nomor%2016%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,5 +29,32 @@ versions:
   date: '2008-05-07'
   date_basis: tanggal_penetapan
   text: uu_16_2008_2008-05-07.txt
-  pasal_count: 14
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 125ee16210c2c7a662449063514caf1fd225385e891c37f69a74961ecd1a1c37
 pdf_sha256: 46be5b25e0bfd926a532a5f0823c9d9c0ec5ae406b86d8b16ccd2ef53ed87e24
+tanggal_pengundangan: '2008-05-07'
+tanggal_berlaku: '2008-05-07'
+lembaran_negara: 'LN.2008/NO.63, TLN NO.4848, LL SETNEG : 16 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU+16+Tahun+2008.pdf
+bpk:
+  id: 39054
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28442/UU%20Nomor%2016%20Tahun%202008.pdf
+    bpk_file_id: 28442
+    filename: UU Nomor 16 Tahun 2008.pdf
+    sha256: 125ee16210c2c7a662449063514caf1fd225385e891c37f69a74961ecd1a1c37
+    bytes: 173726
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_45_2007
+      citation: UU No. 45 Tahun 2007
+      tentang: Anggaran Pendapatan Dan Belanja Negara Tahun Anggaran 2008
+      url: https://peraturan.bpk.go.id/Details/39976/uu-no-45-tahun-2007
+      note: null
+uji_materi: null

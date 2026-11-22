@@ -9,12 +9,12 @@ tentang: PERUBAHAN UU 18-2006 TENTANG ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAH
   ANGGARAN 2007
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2007-09-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-41-tahun-2007
-source_pdf_url: https://peraturan.go.id/files/UU-41-2007.pdf
+source_url: https://peraturan.bpk.go.id/Details/39966/uu-no-41-tahun-2007
+source_pdf_url: https://peraturan.bpk.go.id/Download/29564/UU%20Nomor%2041%20Tahun%202007.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,38 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_41_2007_2007
+- id: uu_41_2007_2007-09-22
   kind: asli
   source: official
-  date: null
+  date: '2007-09-22'
   date_basis: tanggal_penetapan
-  text: uu_41_2007_2007.txt
-  pasal_count: 8
+  text: uu_41_2007_2007-09-22.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 56c53e048f4a0c027b2ed88ef0f48a50dd4d4d1d28e95d67ee4fd89ada89c6d7
 pdf_sha256: 760d10bfb8f4c463c1fc01a87e401077555aa64b7265a57ab07f9d5135e83294
+tanggal_pengundangan: '2007-09-22'
+tanggal_berlaku: '2007-09-22'
+lembaran_negara: 'LN.2007/NO.122, TLN NO.4767, LL SETNEG : 13 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-41-tahun-2007
+  source_pdf_url: https://peraturan.go.id/files/UU-41-2007.pdf
+bpk:
+  id: 39966
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29564/UU%20Nomor%2041%20Tahun%202007.pdf
+    bpk_file_id: 29564
+    filename: UU Nomor 41 Tahun 2007.pdf
+    sha256: 56c53e048f4a0c027b2ed88ef0f48a50dd4d4d1d28e95d67ee4fd89ada89c6d7
+    bytes: 204457
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_18_2006
+      citation: UU No. 18 Tahun 2006
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2007
+      url: https://peraturan.bpk.go.id/Details/40191/uu-no-18-tahun-2006
+      note: null
+uji_materi: null

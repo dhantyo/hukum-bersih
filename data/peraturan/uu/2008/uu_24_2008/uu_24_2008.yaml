@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 24 Tahun 2008 tentang Pembentukan Kabupaten Bengkulu 
 tentang: PEMBENTUKAN KABUPATEN BENGKULU TENGAH DI PROVINSI BENGKULU
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2008-07-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-24-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU+24+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39659/uu-no-24-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/29227/UU%20Nomor%2024%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_24_2008_2008
+- id: uu_24_2008_2008-07-21
   kind: asli
   source: official
-  date: null
+  date: '2008-07-21'
   date_basis: tanggal_penetapan
-  text: uu_24_2008_2008.txt
+  text: uu_24_2008_2008-07-21.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e8f66c8202dc9ae90453a193b4842a5412bd679de97c3d49e9285b76921288c0
 pdf_sha256: da5ef5c5de9ddb2be3f69884ee9aa394e88b3ae3c630d1e1f4afbec82e96f0b2
+tanggal_pengundangan: '2008-07-21'
+tanggal_berlaku: '2008-07-21'
+lembaran_negara: 'LN.2008/NO.97, TLN NO. 4870, LL SETNEG : 13 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-24-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU+24+2008.pdf
+bpk:
+  id: 39659
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29227/UU%20Nomor%2024%20Tahun%202008.pdf
+    bpk_file_id: 29227
+    filename: UU Nomor 24 Tahun 2008.pdf
+    sha256: e8f66c8202dc9ae90453a193b4842a5412bd679de97c3d49e9285b76921288c0
+    bytes: 100555
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

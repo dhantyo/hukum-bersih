@@ -12,8 +12,8 @@ tanggal_penetapan: '2008-11-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-40-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU0402008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39733/uu-no-40-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/29315/UU%20Nomor%2040%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_40_2008_2008-11-10.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 81c4db83e2880c4ad9951140ee426c78bbb2c79695d75f5749238c538d48b232
 pdf_sha256: edb78861a2502e008b4b41c676c4a9952a0ec3934ef4a85a8f1ffeac23058d7b
+tanggal_pengundangan: '2008-11-10'
+tanggal_berlaku: '2008-11-10'
+lembaran_negara: 'LN.2008/NO.170, TLN NO.4919, LL SETNEG : 12 HLM'
+subjek: HAK ASASI MANUSIA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-40-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU0402008.pdf
+bpk:
+  id: 39733
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29315/UU%20Nomor%2040%20Tahun%202008.pdf
+    bpk_file_id: 29315
+    filename: UU Nomor 40 Tahun 2008.pdf
+    sha256: 81c4db83e2880c4ad9951140ee426c78bbb2c79695d75f5749238c538d48b232
+    bytes: 108314
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 15 dan Pasal 17 Undang-Undang Nomor 40 Tahun 2008
+uji_materi: null

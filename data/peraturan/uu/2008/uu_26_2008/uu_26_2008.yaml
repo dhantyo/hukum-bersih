@@ -12,8 +12,8 @@ tanggal_penetapan: '2008-07-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-26-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU+26+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39661/uu-no-26-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/29229/UU%20Nomor%2026%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_26_2008_2008-07-21.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1fce0df4bafe587a11ea11985aaf93716c809f86b80a07809968a3de0b55312c
 pdf_sha256: 9ca68164fd428ebb5b483ba3979be6e943b003945f7db20f0b9003078ff6bf6e
+tanggal_pengundangan: '2008-07-21'
+tanggal_berlaku: '2008-07-21'
+lembaran_negara: 'LN.2008/NO.99, TLN NO.4872, LL SETNEG : 13 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-26-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU+26+2008.pdf
+bpk:
+  id: 39661
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29229/UU%20Nomor%2026%20Tahun%202008.pdf
+    bpk_file_id: 29229
+    filename: UU Nomor 26 Tahun 2008.pdf
+    sha256: 1fce0df4bafe587a11ea11985aaf93716c809f86b80a07809968a3de0b55312c
+    bytes: 101699
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

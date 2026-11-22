@@ -11,8 +11,8 @@ tanggal_penetapan: '2008-11-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-39-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU0392008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39719/uu-no-39-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/29301/UU%20Nomor%2039%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,43 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_39_2008_2008-11-06.txt
   pasal_count: 28
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f0ef9f4e547bfc67d6e0899225f0cf98087de12c472bea72766ff7ca4c31d73d
 pdf_sha256: df635088b40fcd66ea08dcb0e1d4b15a6354f1b375b7ebf2e2d3291b0cd49fda
+tanggal_pengundangan: '2008-11-06'
+tanggal_berlaku: '2008-11-06'
+lembaran_negara: 'LN.2008/NO.166, TLN NO.4916, LL SETNEG : 12 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-39-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU0392008.pdf
+bpk:
+  id: 39719
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29301/UU%20Nomor%2039%20Tahun%202008.pdf
+    bpk_file_id: 29301
+    filename: UU Nomor 39 Tahun 2008.pdf
+    sha256: f0ef9f4e547bfc67d6e0899225f0cf98087de12c472bea72766ff7ca4c31d73d
+    bytes: 73207
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_61_2024
+      citation: UU No. 61 Tahun 2024
+      tentang: Perubahan atas Undang-Undang Nomor 39 Tahun 2008 tentang Kementerian
+        Negara
+      url: https://peraturan.bpk.go.id/Details/304396/uu-no-61-tahun-2024
+      note: null
+uji_materi:
+- putusan: 128/PUU-XXIII/2025
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/204/putusan_mkri_13098_1756371293.pdf
+  amar: 'Pasal 23 Undang-Undang Nomor 39 Tahun 2008 tentang Kementerian Negara (Lembaran
+    Negara Republik Indonesia Tahun 2008 Nomor 166, Tambahan Lembaran Negara Republik
+    Indonesia Nomor 4916) bertentangan dengan Undang-Undang Dasar Negara Republik
+    Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat secara bersyarat
+    sepanjang tidak dimaknai “Menteri dan Wakil Menteri dilarang merangkap jabatan
+    sebagai: a. Pejabat negara lainnya sesuai dengan peraturan perundang-undangan;
+    b. Komisaris atau direksi pada perusahaan negara atau perusahaan swasta; atau
+    c. Pimpinan organisasi yang dibiayai dari Anggaran Pendapatan Belanja Negara dan/atau
+    Anggaran Pendapatan Belanja Daerah.”'

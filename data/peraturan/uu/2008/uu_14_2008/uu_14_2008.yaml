@@ -11,8 +11,8 @@ tanggal_penetapan: '2008-04-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU+14+Tahun+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39047/uu-no-14-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/28425/UU%20Nomor%2014%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,33 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2008_2008-04-30.txt
   pasal_count: 64
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1265f6ec0dba866732982fe5036f88836967fd87cc346a2e53f75d39f12fd717
 pdf_sha256: 98eb4b06461ac3ccb52237e3c79e48a339a70a2a372611d706424c9ad27edb50
+tanggal_pengundangan: '2008-04-30'
+tanggal_berlaku: '2008-04-30'
+lembaran_negara: 'LN.2008/NO.61, TLN NO.4846, LL SETNEG : 35 HLM'
+subjek: PERIZINAN, PELAYANAN PUBLIK - INFORMASI PUBLIK
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU+14+Tahun+2008.pdf
+bpk:
+  id: 39047
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28425/UU%20Nomor%2014%20Tahun%202008.pdf
+    bpk_file_id: 28425
+    filename: UU Nomor 14 Tahun 2008.pdf
+    sha256: 1265f6ec0dba866732982fe5036f88836967fd87cc346a2e53f75d39f12fd717
+    bytes: 183905
+    archive_url: null
+  status_peraturan: null
+uji_materi:
+- putusan: 77/PUU-XIV/2016
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/16/77_PUU-XIV_2016.pdf
+  amar: Frasa "dapat diangkat kembali" dalam Pasal 33 Undang-Undang Nomor 14 Tahun
+    2008 tentang Keterbukaan Informasi Publik bertentangan secara bersyarat dengan
+    UUD NRI Tahun 1945 dan tidak memiliki kekuatan hukum mengikat sepanjang tidak
+    dimaknai "dipilih kembali melalui suatu proses seleksi sebagaimana diatur dalam
+    Pasal 30 dan Pasal 32 Undang-Undang Nomor 14 Tahun 2008 tentang Keterbukaan Informasi
+    Publik."

@@ -11,8 +11,8 @@ tanggal_penetapan: '2008-05-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU+18+Tahun+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39067/uu-no-18-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/28462/UU%20Nomor%2018%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2008_2008-05-07.txt
   pasal_count: 49
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: dc7735db65d6dedc650ff78c36b6c6f076cf931861b005edab03f30e513026f4
 pdf_sha256: 6344aa84385626c169d917dfd2a9f643424993dfcbc9663799b9e0f18720b3a3
+tanggal_pengundangan: '2008-05-07'
+tanggal_berlaku: '2008-05-07'
+lembaran_negara: 'LN.2008/NO.69, TLN NO. 4851, LL SETNEG : 25 HLM'
+subjek: KESEHATAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU+18+Tahun+2008.pdf
+bpk:
+  id: 39067
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28462/UU%20Nomor%2018%20Tahun%202008.pdf
+    bpk_file_id: 28462
+    filename: UU Nomor 18 Tahun 2008.pdf
+    sha256: dc7735db65d6dedc650ff78c36b6c6f076cf931861b005edab03f30e513026f4
+    bytes: 152069
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

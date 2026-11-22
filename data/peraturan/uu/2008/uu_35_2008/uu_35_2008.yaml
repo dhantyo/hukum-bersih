@@ -13,8 +13,8 @@ tanggal_penetapan: '2008-07-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-35-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU+35+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39700/uu-no-35-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/29277/UU%20Nomor%2035%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,45 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_35_2008_2008-07-25.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e407864d0280fc49116a07e5ebc2d3613013f05bc3f49d92a6991287a122b586
 pdf_sha256: e407864d0280fc49116a07e5ebc2d3613013f05bc3f49d92a6991287a122b586
+tanggal_pengundangan: '2008-07-25'
+tanggal_berlaku: '2008-07-25'
+lembaran_negara: 'LN.2008/NO.102, TLN NO.4884, LL SETNEG : 3 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-35-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU+35+2008.pdf
+bpk:
+  id: 39700
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29277/UU%20Nomor%2035%20Tahun%202008.pdf
+    bpk_file_id: 29277
+    filename: UU Nomor 35 Tahun 2008.pdf
+    sha256: e407864d0280fc49116a07e5ebc2d3613013f05bc3f49d92a6991287a122b586
+    bytes: 66031
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_2_2021
+      citation: UU No. 2 Tahun 2021
+      tentang: Perubahan Kedua atas Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi
+        Khusus bagi Provinsi Papua
+      url: https://peraturan.bpk.go.id/Details/172403/uu-no-2-tahun-2021
+      note: null
+    Menetapkan:
+    - id: perppu_1_2008
+      citation: PERPU No. 1 Tahun 2008
+      tentang: Perubahan Atas Undang-Undang Nomor 21 Tahun 2001 Tentang Otonomi Khusus
+        Bagi Provinsi Papua
+      url: https://peraturan.bpk.go.id/Details/53207/perpu-no-1-tahun-2008
+      note: null
+    Mengubah:
+    - id: uu_21_2001
+      citation: UU No. 21 Tahun 2001
+      tentang: Otonomi Khusus Bagi Provinsi Papua
+      url: https://peraturan.bpk.go.id/Details/44901/uu-no-21-tahun-2001
+      note: null
+uji_materi: null

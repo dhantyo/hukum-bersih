@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 8 Tahun 2008 tentang Pembentukan Kabupaten Dogiyai Di
 tentang: PEMBENTUKAN KABUPATEN DOGIYAI DI PROVINSI PAPUA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2008-01-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU+NO+8+TH+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39020/uu-no-8-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/43532/UU%208%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_8_2008_2008
+- id: uu_8_2008_2008-01-04
   kind: asli
   source: official
-  date: null
+  date: '2008-01-04'
   date_basis: tanggal_penetapan
-  text: uu_8_2008_2008.txt
+  text: uu_8_2008_2008-01-04.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3a49bb6e0cf4edeca4ed5b2ea20e1914c22d315b0475cde527f0528d7c6e51d2
 pdf_sha256: d4c44171fe9f21b490562c1784925dfeb9a92dd1265727405b615400a80e0d2e
+tanggal_pengundangan: '2008-01-04'
+tanggal_berlaku: '2008-01-04'
+lembaran_negara: 'LN.2008/NO.8, TLN NO.4807, LL BPHN : 14 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+8+TH+2008.pdf
+bpk:
+  id: 39020
+  files:
+  - url: https://peraturan.bpk.go.id/Download/43532/UU%208%20Tahun%202008.pdf
+    bpk_file_id: 43532
+    filename: UU 8 Tahun 2008.pdf
+    sha256: 3a49bb6e0cf4edeca4ed5b2ea20e1914c22d315b0475cde527f0528d7c6e51d2
+    bytes: 374590
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -10,28 +10,60 @@ tentang: PENETAPAN PERPU 1-2007 TENTANG PERUBAHAN UU 36-2000 TENTANG PENETAPAN P
   1-2000 TENTANG KAWASAN PERDAGANGAN BEBAS DAN PELABUHAN BEBAS MENJADI UU MENJADI
   UU
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 39 Tahun 2009 Tentang Kawasan
-  Ekonomi Khusus'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '2007-11-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-44-tahun-2007
-source_pdf_url: https://peraturan.go.id/files/UU+44+2007.pdf
+source_url: https://peraturan.bpk.go.id/Details/39971/uu-no-44-tahun-2007
+source_pdf_url: https://peraturan.bpk.go.id/Download/29569/UU%20Nomor%2044%20Tahun%202007.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_39_2009
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_44_2007_2007
+- id: uu_44_2007_2007-11-01
   kind: asli
   source: official
-  date: null
+  date: '2007-11-01'
   date_basis: tanggal_penetapan
-  text: uu_44_2007_2007.txt
+  text: uu_44_2007_2007-11-01.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 25db70e622ec60b16ba68826682084254de7fc41e09f0b0537ff3ed7c7496863
 pdf_sha256: f52ee3ab5763012dae30421ee60328e74beb3d3cc7fb3bc76c40ca0f77ff3eb3
+tanggal_pengundangan: '2007-11-01'
+tanggal_berlaku: '2007-11-01'
+lembaran_negara: 'LN.2007/NO.130, TLN NO.4775, LL SETNEG : 5 HLM'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-44-tahun-2007
+  source_pdf_url: https://peraturan.go.id/files/UU+44+2007.pdf
+bpk:
+  id: 39971
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29569/UU%20Nomor%2044%20Tahun%202007.pdf
+    bpk_file_id: 29569
+    filename: UU Nomor 44 Tahun 2007.pdf
+    sha256: 25db70e622ec60b16ba68826682084254de7fc41e09f0b0537ff3ed7c7496863
+    bytes: 13644
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_39_2009
+      citation: UU No. 39 Tahun 2009
+      tentang: Kawasan Ekonomi Khusus
+      url: https://peraturan.bpk.go.id/Details/54483/uu-no-39-tahun-2009
+      note: null
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+uji_materi: null

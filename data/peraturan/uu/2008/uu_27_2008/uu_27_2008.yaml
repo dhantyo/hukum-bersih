@@ -12,8 +12,8 @@ tanggal_penetapan: '2008-07-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-27-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU+27+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39665/uu-no-27-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/29233/UU%20Nomor%2027%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_27_2008_2008-07-21.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2f0bba63c6dd9143d4e2d673119c1ceed09e63683ffabec7bf552d7313bfae1b
 pdf_sha256: 5df58c0ef82a0b49fc9cfaf0139392133e23c760497b1056644bcdaf5d3a3f07
+tanggal_pengundangan: '2008-07-21'
+tanggal_berlaku: '2008-07-21'
+lembaran_negara: 'LN.2008/NO.100, TLN NO.4873, LL SETNEG : 13 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-27-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU+27+2008.pdf
+bpk:
+  id: 39665
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29233/UU%20Nomor%2027%20Tahun%202008.pdf
+    bpk_file_id: 29233
+    filename: UU Nomor 27 Tahun 2008.pdf
+    sha256: 2f0bba63c6dd9143d4e2d673119c1ceed09e63683ffabec7bf552d7313bfae1b
+    bytes: 97700
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

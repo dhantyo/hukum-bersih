@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 3 Tahun 2008 tentang Pembentukan Kabupaten Mamberamo 
 tentang: PEMBENTUKAN KABUPATEN MAMBERAMO TENGAH DI PROVINSI PAPUA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2008-01-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU+NO+3+TH+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/38863/uu-no-3-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/28219/UU%20Nomor%203%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_3_2008_2008
+- id: uu_3_2008_2008-01-04
   kind: asli
   source: official
-  date: null
+  date: '2008-01-04'
   date_basis: tanggal_penetapan
-  text: uu_3_2008_2008.txt
+  text: uu_3_2008_2008-01-04.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9020fbe7ef0b2ff4fae6239de79c831692b7df9816fb1d28b823c6c5eeaac6ae
 pdf_sha256: 9020fbe7ef0b2ff4fae6239de79c831692b7df9816fb1d28b823c6c5eeaac6ae
+tanggal_pengundangan: '2008-01-04'
+tanggal_berlaku: '2008-01-04'
+lembaran_negara: 'LN.2008/NO.3, TLN NO.4802, LL SETNEG : 14 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+3+TH+2008.pdf
+bpk:
+  id: 38863
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28219/UU%20Nomor%203%20Tahun%202008.pdf
+    bpk_file_id: 28219
+    filename: UU Nomor 3 Tahun 2008.pdf
+    sha256: 9020fbe7ef0b2ff4fae6239de79c831692b7df9816fb1d28b823c6c5eeaac6ae
+    bytes: 174379
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

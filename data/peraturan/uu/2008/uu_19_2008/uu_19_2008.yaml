@@ -11,8 +11,8 @@ tanggal_penetapan: '2008-05-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU+19+Tahun+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39650/uu-no-19-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/29218/UU%20Nomor%2019%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -27,5 +27,26 @@ versions:
   date: '2008-05-07'
   date_basis: tanggal_penetapan
   text: uu_19_2008_2008-05-07.txt
-  pasal_count: 2
+  pasal_count: 32
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e04f6c2cd8a92697351421e1bfe8f78b5a1ec91304f937c4177b5c20c5a6a836
 pdf_sha256: 2f6a7d48f73f945c61e94e5b2787ce568859a5f03621235f2832ee8a5a16f9ba
+tanggal_pengundangan: '2008-05-07'
+tanggal_berlaku: '2008-05-07'
+lembaran_negara: 'LN.2008/NO.70, TLN NO.4852, LL SETNEG : 16 HLM'
+subjek: PASAR MODAL DAN PERDAGANGAN BERJANGKA KOMODITI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU+19+Tahun+2008.pdf
+bpk:
+  id: 39650
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29218/UU%20Nomor%2019%20Tahun%202008.pdf
+    bpk_file_id: 29218
+    filename: UU Nomor 19 Tahun 2008.pdf
+    sha256: e04f6c2cd8a92697351421e1bfe8f78b5a1ec91304f937c4177b5c20c5a6a836
+    bytes: 134550
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -12,8 +12,8 @@ tanggal_penetapan: '2008-07-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-25-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU+25+2008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39660/uu-no-25-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/29228/UU%20Nomor%2025%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_25_2008_2008-07-21.txt
   pasal_count: 22
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 13eadba2f99ac127014b3276088c38b381de1eaa463e10f2f05036d9b41d8d75
 pdf_sha256: f9e406e71c3bfe0518d48a386d66ba1f0b8c23efc3b834916c1f1502734a56df
+tanggal_pengundangan: '2008-07-21'
+tanggal_berlaku: '2008-07-21'
+lembaran_negara: 'LN.2008/NO.98, TLN NO.4871, LL SETNEG : 13 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-25-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU+25+2008.pdf
+bpk:
+  id: 39660
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29228/UU%20Nomor%2025%20Tahun%202008.pdf
+    bpk_file_id: 29228
+    filename: UU Nomor 25 Tahun 2008.pdf
+    sha256: 13eadba2f99ac127014b3276088c38b381de1eaa463e10f2f05036d9b41d8d75
+    bytes: 99551
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
