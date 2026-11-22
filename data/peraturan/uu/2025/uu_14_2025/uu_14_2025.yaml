@@ -21,6 +21,7 @@ relationships:
     order: 3
     changes:
       diubah:
+      - '1'
       - '2'
       - '3'
       - '4'
@@ -90,15 +91,20 @@ relationships:
       - '116'
       - '120'
       - '121'
+      - '122'
       - '123'
+      - '124'
       disisipkan:
+      - 6A
       - 10A
+      - 10B
       - 37A
       - 37B
       - 48A
       - 49A
       - 63A
       - 87A
+      - 88A
       - 94A
       - 106A
       - 112A
@@ -112,12 +118,12 @@ relationships:
       - 130B
       - 130C
       - 130D
-      - lOB
       dihapus:
       - '15'
       - '17'
       - '43'
       - '83'
+      - '84'
       - '99'
       - '100'
       - '101'
@@ -135,7 +141,11 @@ versions:
   date: '2025-09-04'
   date_basis: tanggal_penetapan
   text: uu_14_2025_2025-09-04.txt
-  pasal_count: 10
+  pasal_count: 2
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 97d50c8dadb97fc1e592fb959302d2836d53d1c04a64cf1f8c3e36afe88cac72
+  ocr: true
 pdf_sha256: 97d50c8dadb97fc1e592fb959302d2836d53d1c04a64cf1f8c3e36afe88cac72
 tanggal_pengundangan: '2025-09-04'
 tanggal_berlaku: '2025-09-04'
@@ -172,4 +182,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/106346/uu-no-8-tahun-2019
       note: null
 uji_materi: null
-reparse_error: 'v9: 2 pasal, stored text has 10'

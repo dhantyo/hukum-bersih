@@ -31,6 +31,7 @@ relationships:
       - 3AI
       - 3AK
       - 3AL
+      - 3B
       - 3C
       - 3D
       - 3E
@@ -38,10 +39,12 @@ relationships:
       - 3G
       - 3H
       - 4A
+      - 4B
       - 4C
       - '10'
       - '14'
       - 15A
+      - 15C
       - 15G
       - '27'
       - 27C
@@ -62,8 +65,6 @@ relationships:
       - 62C
       - 62D
       - 62E
-      - 62F
-      - 62H
       - 62J
       - '70'
       - '71'
@@ -72,7 +73,6 @@ relationships:
       - 78B
       - '79'
       - '81'
-      - 86C
       - 86E
       - 86F
       - 86G
@@ -90,6 +90,7 @@ relationships:
       - 94E
       - 94F
       dihapus:
+      - 3AM
       - 9G
   amended_by: []
   revokes: []
@@ -103,7 +104,11 @@ versions:
   date: '2025-10-06'
   date_basis: tanggal_penetapan
   text: uu_16_2025_2025-10-06.txt
-  pasal_count: 16
+  pasal_count: 2
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5eb1957b8b00ebc890061e864277e50cf0534a77e44ddff9faeaf876349cf02d
+  ocr: true
 pdf_sha256: 5eb1957b8b00ebc890061e864277e50cf0534a77e44ddff9faeaf876349cf02d
 tanggal_pengundangan: '2025-10-06'
 tanggal_berlaku: '2025-10-06'
@@ -146,4 +151,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/43919/uu-no-19-tahun-2003
       note: null
 uji_materi: null
-reparse_error: 'v9: 2 pasal, stored text has 16'

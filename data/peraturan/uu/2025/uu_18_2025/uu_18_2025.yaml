@@ -21,6 +21,7 @@ relationships:
     changes:
       diubah:
       - '1'
+      - '2'
       - '4'
       - '5'
       - '6'
@@ -45,6 +46,9 @@ relationships:
       - '61'
       - '69'
       disisipkan:
+      - 1A
+      - 9A
+      - 9B
       - 13A
       - 15A
       - 17A
@@ -61,7 +65,6 @@ relationships:
       - 17M
       - 17N
       - 17P
-      - 17Q
       - 17R
       - 17T
       - 17U
@@ -76,9 +79,8 @@ relationships:
       - 52A
       - 52B
       - 53A
-      - 55A
       - 57A
-      - lA
+      - 555A
       dihapus:
       - '3'
       - '11'
@@ -99,7 +101,11 @@ versions:
   date: '2025-10-29'
   date_basis: tanggal_penetapan
   text: uu_18_2025_2025-10-29.txt
-  pasal_count: 4
+  pasal_count: 2
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: eec25171d5e457dbdfaf8ac8aa4bf945c3a81382f463c85afbfc5356a1644194
+  ocr: true
 pdf_sha256: eec25171d5e457dbdfaf8ac8aa4bf945c3a81382f463c85afbfc5356a1644194
 tanggal_pengundangan: '2025-10-29'
 tanggal_berlaku: '2025-10-29'
@@ -136,4 +142,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/38598/uu-no-10-tahun-2009
       note: null
 uji_materi: null
-reparse_error: 'v9: 2 pasal, stored text has 4'

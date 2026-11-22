@@ -128,9 +128,6 @@ relationships:
       - 62C
       - 62D
       - 62E
-      - 62F
-      - 62G
-      - 62H
       - 62J
       - 62K
       - 62L
@@ -144,9 +141,6 @@ relationships:
       - 78A
       - 78B
       - 86A
-      - 86B
-      - 86C
-      - 86D
       - 86E
       - 86F
       - 86G
@@ -224,7 +218,11 @@ versions:
   date: '2025-02-24'
   date_basis: tanggal_penetapan
   text: uu_1_2025_2025-02-24.txt
-  pasal_count: 31
+  pasal_count: 2
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 94c44baa989346b321835a35686fc0ff0002458e4bad012bcbe8bb2165ee3d5c
+  ocr: true
 pdf_sha256: 2cdeebdcc62c4cf106d591111645c798f072d47b61ae841c0eb093544d99ab90
 tanggal_pengundangan: '2025-02-24'
 tanggal_berlaku: '2025-02-24'
@@ -268,4 +266,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/43919/uu-no-19-tahun-2003
       note: null
 uji_materi: null
-reparse_error: 'v9: 2 pasal, stored text has 31'

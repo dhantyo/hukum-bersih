@@ -29,6 +29,10 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_135_2024_2024-10-28.txt
   pasal_count: 10
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9470db1d8f5a40184fc584fab29712b0e195eac727e847fc27431bb53e72bb4c
+  ocr: true
 pdf_sha256: 9470db1d8f5a40184fc584fab29712b0e195eac727e847fc27431bb53e72bb4c
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'
@@ -55,4 +59,3 @@ bpk:
       note: Ketentuan yang mengatur mengenai Kabupaten Maros dalam Undang-Undang Nomor
         29 Tahun 1959, dicabut dan dinyatakan tidak berlaku.
 uji_materi: null
-reparse_error: 'v9: 7 pasal, stored text has 10'
