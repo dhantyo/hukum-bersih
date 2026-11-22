@@ -11,8 +11,8 @@ tanggal_penetapan: '2008-11-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-43-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU0432008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39738/uu-no-43-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/29320/UU%20Nomor%2043%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_43_2008_2008-11-13.txt
   pasal_count: 26
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8fa902da85823969adc977f6b253091f8ed2dd4b973907c6830fb7ea3cebc55e
 pdf_sha256: 198ee925beb21581418d5e36cc2c26b4b80c0e813cd2318d075a9969374cb11a
+tanggal_pengundangan: '2008-11-14'
+tanggal_berlaku: '2008-11-14'
+lembaran_negara: 'LN.2008/NO.177, TLN NO.4925, LL SETNEG : 12 HLM'
+subjek: KETATANEGARAAN, KENEGARAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-43-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU0432008.pdf
+bpk:
+  id: 39738
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29320/UU%20Nomor%2043%20Tahun%202008.pdf
+    bpk_file_id: 29320
+    filename: UU Nomor 43 Tahun 2008.pdf
+    sha256: 8fa902da85823969adc977f6b253091f8ed2dd4b973907c6830fb7ea3cebc55e
+    bytes: 103742
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

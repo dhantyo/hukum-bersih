@@ -12,8 +12,8 @@ tanggal_penetapan: '2009-01-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu13-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38611/uu-no-13-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/27884/UU%20Nomor%2013%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2009_2009-01-16.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 87f01d58d011746fb8a9eb7ac58a118a96885b0fab185e5561bd409c6c537914
 pdf_sha256: f2493fe155382820b8ba4e7dbd645e638a77ea014885b5f166331ccbd3ea7e3f
+tanggal_pengundangan: '2009-01-16'
+tanggal_berlaku: '2009-01-16'
+lembaran_negara: 'LN. 2009/ No. 14 , TLN NO. 4969 , LL SETNEG : 13 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu13-2009.pdf
+bpk:
+  id: 38611
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27884/UU%20Nomor%2013%20Tahun%202009.pdf
+    bpk_file_id: 27884
+    filename: UU Nomor 13 Tahun 2009.pdf
+    sha256: 87f01d58d011746fb8a9eb7ac58a118a96885b0fab185e5561bd409c6c537914
+    bytes: 116367
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -12,8 +12,8 @@ tanggal_penetapan: '2009-07-09'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-24-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/UU+24+Tahun+2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38661/uu-no-24-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/27970/UU%20Nomor%2024%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,36 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_2009_2009-07-09.txt
   pasal_count: 74
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0d06340e5244cc44f086d72e7af629cd2b15c114e27d68d5e639cadcb7b3c33e
 pdf_sha256: 66444cf319b6376f78e50117d42c457b158e06ed4c4e359f0783257dbdbe76e9
+tanggal_pengundangan: '2009-07-09'
+tanggal_berlaku: '2009-07-09'
+lembaran_negara: 'LN. 2009/ No.109 , TLN NO. 5035, LL SETNEG : 29 HLM'
+subjek: KETATANEGARAAN, KENEGARAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-24-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/UU+24+Tahun+2009.pdf
+bpk:
+  id: 38661
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27970/UU%20Nomor%2024%20Tahun%202009.pdf
+    bpk_file_id: 27970
+    filename: UU Nomor 24 Tahun 2009.pdf
+    sha256: 0d06340e5244cc44f086d72e7af629cd2b15c114e27d68d5e639cadcb7b3c33e
+    bytes: 1737242
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 66 sampai dengan Pasal 71 Undang-Undang Nomor 24 Tahun 2009
+uji_materi:
+- putusan: 4/PUU-X/2012
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/70/putusan_sidang_4-PUU-X-2012_bendera%20lambang%20negara_telah%20baca%2015%20Jan%202013.pdf
+  amar: Pasal 57 huruf d dan Pasal 69 huruf c Undang-Undang Nomor 24 Tahun 2009 tentang
+    Bendera, Bahasa, dan Lambang Negara, serta Lagu Kebangsaan bertentangan dengan
+    UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.

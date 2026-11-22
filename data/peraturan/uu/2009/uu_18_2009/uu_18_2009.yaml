@@ -11,8 +11,8 @@ tanggal_penetapan: '2009-06-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu18-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38634/uu-no-18-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/27909/UU%20Nomor%2018%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by:
@@ -30,4 +30,62 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2009_2009-06-04.txt
   pasal_count: 99
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e93cdd8d01eb5ebc1f961bcd13f2b043d967b5730d89fd604a4d8efb258bfccd
 pdf_sha256: b2b7903e69d5e8ba6bbef17f17f65d220376a278f85e39c749dbb1f36bb5be6b
+tanggal_pengundangan: '2009-06-04'
+tanggal_berlaku: '2009-06-04'
+lembaran_negara: 'LN. 2009/ No. 84, TLN NO. 5015, LL SETNEG : 59 HLM'
+subjek: PANGAN, PERTANIAN DAN PETERNAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu18-2009.pdf
+bpk:
+  id: 38634
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27909/UU%20Nomor%2018%20Tahun%202009.pdf
+    bpk_file_id: 27909
+    filename: UU Nomor 18 Tahun 2009.pdf
+    sha256: e93cdd8d01eb5ebc1f961bcd13f2b043d967b5730d89fd604a4d8efb258bfccd
+    bytes: 376801
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    - id: uu_41_2014
+      citation: UU No. 41 Tahun 2014
+      tentang: Perubahan atas Undang-Undang Nomor 18 Tahun 2009 Tentang Peternakan
+        dan Kesehatan Hewan
+      url: https://peraturan.bpk.go.id/Details/38801/uu-no-41-tahun-2014
+      note: null
+    Mencabut:
+    - id: uu_6_1967
+      citation: UU No. 6 Tahun 1967
+      tentang: Ketentuan-Ketentuan Pokok Peternakan dan Kesehatan Hewan
+      url: https://peraturan.bpk.go.id/Details/49567/uu-no-6-tahun-1967
+      note: Mencabut Stb.1912/432, 1914/486, 1916/656, 1925/163, 1926/451, 1926/569,
+        1928/52, 1936/614, 1936/715, 1937/512, 1937/513
+uji_materi:
+- putusan: 2/PUU-IX/2011
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/69/putusan_sidang_2%20PUU%202011%20TELAH%20BACA.pdf
+  amar: Pasal 58 ayat (4) Undang-Undang Nomor 18 Tahun 2009 tentang Peternakan dan
+    Kesehatan Hewan bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan
+    hukum mengikat sepanjang frasa “...wajib disertai sertifikat veteriner dan sertifikat
+    halal” dimaknai mewajibkan sertifikat halal bagi produk hewan yang memang tidak
+    dihalalkan.

@@ -13,8 +13,8 @@ tanggal_penetapan: '2009-03-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu16-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38624/uu-no-16-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/27897/UU%20Nomor%2016%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,57 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2009_2009-03-25.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0aa0621da8368276bcb2b0c284c404a026a343e279be3da1f8a7af6f16a2f38b
 pdf_sha256: 8ae8a5e6dd7867514310af88b9c4ff0c8311cdc3579c9ad369c621c8bb16171a
+tanggal_pengundangan: '2009-03-25'
+tanggal_berlaku: '2009-03-25'
+lembaran_negara: 'LN. 2009/ No.211, TLN NO. 4953, LL SETNEG : 4 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu16-2009.pdf
+bpk:
+  id: 38624
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27897/UU%20Nomor%2016%20Tahun%202009.pdf
+    bpk_file_id: 27897
+    filename: UU Nomor 16 Tahun 2009.pdf
+    sha256: 0aa0621da8368276bcb2b0c284c404a026a343e279be3da1f8a7af6f16a2f38b
+    bytes: 66013
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_7_2021
+      citation: UU No. 7 Tahun 2021
+      tentang: Harmonisasi Peraturan Perpajakan
+      url: https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021
+      note: null
+    - id: perppu_1_2020
+      citation: PERPU No. 1 Tahun 2020
+      tentang: Kebijakan Keuangan Negara dan Stabilitas Sistem Keuangan untuk Penanganan
+        Pandemi Corona Virus Disease 2019 (COVID-19) dan/atau dalam Rangka Menghadapi
+        Ancaman yang Membahayakan Perekonomian Nasional dan/atau Stabilitas Sistem
+        Keuangan
+      url: https://peraturan.bpk.go.id/Details/135060/perpu-no-1-tahun-2020
+      note: null
+    Mengubah:
+    - id: uu_28_2007
+      citation: UU No. 28 Tahun 2007
+      tentang: Perubahan Ketiga atas Undang-Undang Nomor 6 Tahun 1983 tentang Ketentuan
+        Umum dan Tata Cara Perpajakan
+      url: https://peraturan.bpk.go.id/Details/39916/uu-no-28-tahun-2007
+      note: null
+    - id: uu_9_1994
+      citation: UU No. 9 Tahun 1994
+      tentang: Perubahan atas Undang-Undang Nomor 6 Tahun 1983 tentang Ketentuan Umum
+        dan Tata Cara Perpajakan
+      url: https://peraturan.bpk.go.id/Details/46230/uu-no-9-tahun-1994
+      note: null
+    - id: uu_6_1983
+      citation: UU No. 6 Tahun 1983
+      tentang: Ketentuan Umum dan Tata Cara Perpajakan
+      url: https://peraturan.bpk.go.id/Details/46986/uu-no-6-tahun-1983
+      note: null
+uji_materi: null

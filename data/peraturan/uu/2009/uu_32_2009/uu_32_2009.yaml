@@ -12,8 +12,8 @@ tanggal_penetapan: '2009-10-03'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-32-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/UU+32+Tahun+2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38771/uu-no-32-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28100/UU%20Nomor%2032%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,61 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_32_2009_2009-10-03.txt
   pasal_count: 127
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4bc302ab5c19e085f5e93f8076bab297c58a055f330a788ba8552956c80a2ca3
 pdf_sha256: ccdb9e4d12ce86a908f48f565254308b20cfb57f46f3707844480a85bef24824
+tanggal_pengundangan: '2009-10-03'
+tanggal_berlaku: '2009-10-03'
+lembaran_negara: 'LN. 2009/ No. 140, TLN NO. 5059, LL SETNEG : 71 HLM'
+subjek: LINGKUNGAN HIDUP
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-32-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/UU+32+Tahun+2009.pdf
+bpk:
+  id: 38771
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28100/UU%20Nomor%2032%20Tahun%202009.pdf
+    bpk_file_id: 28100
+    filename: UU Nomor 32 Tahun 2009.pdf
+    sha256: 4bc302ab5c19e085f5e93f8076bab297c58a055f330a788ba8552956c80a2ca3
+    bytes: 330731
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_23_1997
+      citation: UU No. 23 Tahun 1997
+      tentang: Pengelolaan Lingkungan Hidup
+      url: https://peraturan.bpk.go.id/Details/46018/uu-no-23-tahun-1997
+      note: null
+uji_materi:
+- putusan: 119/PUU-XXIII/2025
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/217/119_PUU-XXIII_2025.pdf
+  amar: 'Penjelasan Pasal 66 Undang-Undang Nomor 32 Tahun 2009 tentang Perlindungan
+    dan Pengelolaan Lingkungan Hidup (Lembaran Negara Republik Indonesia Tahun 2009
+    Nomor 140, Tambahan Lembaran Negara Republik Indonesia Nomor 5059) bertentangan
+    dengan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai
+    kekuatan hukum mengikat secara bersyarat sepanjang tidak dimaknai: “ketentuan
+    ini dimaksudkan untuk melindungi setiap orang, termasuk korban, pelapor, saksi,
+    ahli, dan aktivis lingkungan yang berpartisipasi dalam upaya perlindungan dan
+    pengelolaan lingkungan hidup dan/atau menempuh cara hukum akibat adanya pencemaran
+    dan/atau perusakan lingkungan hidup. Perlindungan ini dimaksudkan untuk mencegah
+    tindakan pembalasan melalui pemidanaan, gugatan perdata dan/atau upaya hukum lainnya
+    dengan tetap memperhatikan kemandirian peradilan.”'

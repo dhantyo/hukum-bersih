@@ -11,8 +11,8 @@ tanggal_penetapan: '2009-10-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-35-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu35-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38776/uu-no-35-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28105/UU%20Nomor%2035%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,54 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_35_2009_2009-10-12.txt
   pasal_count: 155
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 94cccf53d6a8a1e6446281a9b15121ca359aa2b1158fa333e35aac93eb81b232
 pdf_sha256: 53672a832db9c4bb9a211ec430079cab39c8dfa58f5f94651c1f1cb484eb9e2a
+tanggal_pengundangan: '2009-10-12'
+tanggal_berlaku: '2009-10-12'
+lembaran_negara: 'LN. 2009/ No. 143, TLN NO. 5062, LL SETNEG : 58 HLM'
+subjek: NARKOTIKA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-35-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu35-2009.pdf
+bpk:
+  id: 38776
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28105/UU%20Nomor%2035%20Tahun%202009.pdf
+    bpk_file_id: 28105
+    filename: UU Nomor 35 Tahun 2009.pdf
+    sha256: 94cccf53d6a8a1e6446281a9b15121ca359aa2b1158fa333e35aac93eb81b232
+    bytes: 383981
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 111 sampai dengan Pasal 126 Undang-Undang Nomor 35 Tahun 2009
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_22_1997
+      citation: UU No. 22 Tahun 1997
+      tentang: Narkotika
+      url: https://peraturan.bpk.go.id/Details/46016/uu-no-22-tahun-1997
+      note: null
+uji_materi: null

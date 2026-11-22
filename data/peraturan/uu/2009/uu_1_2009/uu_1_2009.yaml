@@ -11,8 +11,8 @@ tanggal_penetapan: '2009-01-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu1-2009bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/54656/uu-no-1-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/44082/UU%20Nomor%201%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,3 +30,53 @@ versions:
   text: uu_1_2009_2009-01-12.txt
   pasal_count: 466
 pdf_sha256: cee552708249338382756788f90a0c81b6eb04d9b36e09f12ef9b923745e09d0
+tanggal_pengundangan: '2009-01-12'
+tanggal_berlaku: '2009-01-12'
+lembaran_negara: 'LN. 2009/ No. 1, TLN NO. 4956, LL SETNEG : 157 HLM'
+subjek: TRANSPORTASI DARAT / LAUT / UDARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu1-2009bt.pdf
+bpk:
+  id: 54656
+  files:
+  - url: https://peraturan.bpk.go.id/Download/44082/UU%20Nomor%201%20Tahun%202009.pdf
+    bpk_file_id: 44082
+    filename: UU Nomor 1 Tahun 2009.pdf
+    sha256: be24c6b70eea9ce47ea3e9b75ca17772d9cacfe459f434b6ee21dc4b16ef64f9
+    bytes: 806715
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_21_2025
+      citation: UU No. 21 Tahun 2025
+      tentang: Pengelolaan Ruang Udara
+      url: https://peraturan.bpk.go.id/Details/343632/uu-no-21-tahun-2025
+      note: Pada saat Undang-Undang ini mulai berlaku, ketentuan dalam Pasal 7 ayat
+        (2), ayat (3), dan ayat (4), Pasal 8, Pasal 401, dan Pasal 402 Undang-Undang
+        Nomor 1 Tahun 2009 tentang Penerbangan, dicabut dan dinyatakan tidak berlaku.
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_15_1992
+      citation: UU No. 15 Tahun 1992
+      tentang: Penerbangan
+      url: https://peraturan.bpk.go.id/Details/46609/uu-no-15-tahun-1992
+      note: null
+uji_materi: null
+reparse_error: 'v12: 13 pasal, stored text has 466'

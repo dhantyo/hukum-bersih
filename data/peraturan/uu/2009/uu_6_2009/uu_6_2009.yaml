@@ -13,8 +13,8 @@ tanggal_penetapan: '2009-01-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu6-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38588/uu-no-6-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/27848/UU%20Nomor%206%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,45 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_2009_2009-01-13.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e7fce7ee77e2b123cf3c95710c58168a50f92e27cbf50ce7a2232d4c58052cc1
 pdf_sha256: e67bb5d558ccee29ef8a75eb848aad44cc909f1473de7d4e23625fcc6040f81b
+tanggal_pengundangan: '2009-01-13'
+tanggal_berlaku: '2009-01-13'
+lembaran_negara: 'LN.2009/ No. 7, TLN NO. 4962, LL SETNEG : 4 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu6-2009.pdf
+bpk:
+  id: 38588
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27848/UU%20Nomor%206%20Tahun%202009.pdf
+    bpk_file_id: 27848
+    filename: UU Nomor 6 Tahun 2009.pdf
+    sha256: e7fce7ee77e2b123cf3c95710c58168a50f92e27cbf50ce7a2232d4c58052cc1
+    bytes: 79000
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+    - id: perppu_1_2020
+      citation: PERPU No. 1 Tahun 2020
+      tentang: Kebijakan Keuangan Negara dan Stabilitas Sistem Keuangan untuk Penanganan
+        Pandemi Corona Virus Disease 2019 (COVID-19) dan/atau dalam Rangka Menghadapi
+        Ancaman yang Membahayakan Perekonomian Nasional dan/atau Stabilitas Sistem
+        Keuangan
+      url: https://peraturan.bpk.go.id/Details/135060/perpu-no-1-tahun-2020
+      note: null
+    Mengubah:
+    - id: uu_23_1999
+      citation: UU No. 23 Tahun 1999
+      tentang: Bank Indonesia
+      url: https://peraturan.bpk.go.id/Details/45332/uu-no-23-tahun-1999
+      note: null
+uji_materi: null

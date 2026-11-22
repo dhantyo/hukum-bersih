@@ -13,8 +13,8 @@ tanggal_penetapan: '2009-08-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-26-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu26-2009bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38752/uu-no-26-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28081/UU%20Nomor%2026%20Tahun%202009.pdf
 relationships:
   amends:
   - id: uu_41_2008
@@ -43,5 +43,32 @@ versions:
   date: '2009-08-25'
   date_basis: tanggal_penetapan
   text: uu_26_2009_2009-08-25.txt
-  pasal_count: 6
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1d3a1a3bf94a92dd3163330dffc48aa44ee6ff7c4aa879eab0841cb2a6fd4daf
 pdf_sha256: 2997f218ed6b9c4b87f9a925d8f4e36b2c53fce383e8a7711d5a4a54814117a0
+tanggal_pengundangan: '2009-08-25'
+tanggal_berlaku: '2009-08-25'
+lembaran_negara: 'LN. 2009/ No. 118 , TLN NO. 5041, LL SETNEG : 23 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-26-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu26-2009bt.pdf
+bpk:
+  id: 38752
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28081/UU%20Nomor%2026%20Tahun%202009.pdf
+    bpk_file_id: 28081
+    filename: UU Nomor 26 Tahun 2009.pdf
+    sha256: 1d3a1a3bf94a92dd3163330dffc48aa44ee6ff7c4aa879eab0841cb2a6fd4daf
+    bytes: 229377
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_41_2008
+      citation: UU No. 41 Tahun 2008
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2009
+      url: https://peraturan.bpk.go.id/Details/39736/uu-no-41-tahun-2008
+      note: null
+uji_materi: null

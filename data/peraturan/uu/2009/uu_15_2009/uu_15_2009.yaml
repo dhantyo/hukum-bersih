@@ -18,8 +18,8 @@ tanggal_penetapan: '2009-03-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu15-2009pjl.pdf
+source_url: https://peraturan.bpk.go.id/Details/38618/uu-no-15-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/27891/UU%20Nomor%2015%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -36,3 +36,23 @@ versions:
   text: uu_15_2009_2009-03-16.txt
   pasal_count: 2
 pdf_sha256: 06d036363c32423e75962ad442689270d66916de7e7bd12492d32a49e75a0fba
+tanggal_pengundangan: '2009-03-16'
+tanggal_berlaku: '2009-03-16'
+lembaran_negara: 'LN. 2009/ No. 54 , TLN NO. 4991, LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu15-2009pjl.pdf
+bpk:
+  id: 38618
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27891/UU%20Nomor%2015%20Tahun%202009.pdf
+    bpk_file_id: 27891
+    filename: UU Nomor 15 Tahun 2009.pdf
+    sha256: 743fdfffe4348df7fbc64be3f11e49398054aec81446b11bf09d3d5d9de37abe
+    bytes: 84496
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
+reparse_error: 'v12: LeakedMarkupError: att_2__part_nn_1__p_12: markup in text: ''ARTICLE
+  9 PARAGRAPH (1) SUBPARAGRAPH A, ARTICLE 9'''

@@ -11,8 +11,8 @@ tanggal_penetapan: '2009-06-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-22-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/UU+22+Tahun+2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38654/uu-no-22-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/27961/UU%20Nomor%2022%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,5 +28,54 @@ versions:
   date: '2009-06-22'
   date_basis: tanggal_penetapan
   text: uu_22_2009_2009-06-22.txt
-  pasal_count: 132
+  pasal_count: 326
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 30ca5ae5c81ceb5a9427a71e8babff6585e5399ab3859620bb425b67cff5f16f
 pdf_sha256: e283110101d4b94c3bd1200d3b5f520f590d51251144be5fb210a23f49c4c3a0
+tanggal_pengundangan: '2009-06-22'
+tanggal_berlaku: '2009-06-22'
+lembaran_negara: 'LN. 2009/ No. 96, TLN NO. 5025, LL SETNEG : 143 HLM'
+subjek: TRANSPORTASI DARAT / LAUT / UDARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-22-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/UU+22+Tahun+2009.pdf
+bpk:
+  id: 38654
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27961/UU%20Nomor%2022%20Tahun%202009.pdf
+    bpk_file_id: 27961
+    filename: UU Nomor 22 Tahun 2009.pdf
+    sha256: 30ca5ae5c81ceb5a9427a71e8babff6585e5399ab3859620bb425b67cff5f16f
+    bytes: 642264
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_14_1992
+      citation: UU No. 14 Tahun 1992
+      tentang: Lalu Lintas Dan Angkutan Jalan
+      url: https://peraturan.bpk.go.id/Details/46607/uu-no-14-tahun-1992
+      note: null
+uji_materi:
+- putusan: 3/PUU-XIII/2015
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/32/3_PUU-XIII_2015.pdf
+  amar: Pasal 47 ayat (2) huruf e bagian c Undang-Undang Nomor 22 Tahun 2009 tentang
+    Lalu Lintas dan Angkutan Jalan bertentangan dengan UUD NRI Tahun 1945 dan tidak
+    mempunyai kekuatan hukum mengikat.

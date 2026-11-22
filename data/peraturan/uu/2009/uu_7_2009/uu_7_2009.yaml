@@ -13,8 +13,8 @@ tanggal_penetapan: '2009-01-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu7-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38589/uu-no-7-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/27850/UU%20Nomor%207%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,39 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2009_2009-01-13.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: fa776bc7c2f9f0a6953cb8704b3048789ebc50899e0f26890979a2a95403370d
 pdf_sha256: 21402f3ec281f0af6632669d856c2ab6ebcfd542685e71682aede169c7be6090
+tanggal_penetapan_bpk: '2017-01-13'
+tanggal_pengundangan: '2009-01-13'
+tanggal_berlaku: '2017-01-13'
+lembaran_negara: 'LN. 2009/ No. 8 , TLN NO. 4902, LL SETNEG : 4 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu7-2009.pdf
+bpk:
+  id: 38589
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27850/UU%20Nomor%207%20Tahun%202009.pdf
+    bpk_file_id: 27850
+    filename: UU Nomor 7 Tahun 2009.pdf
+    sha256: fa776bc7c2f9f0a6953cb8704b3048789ebc50899e0f26890979a2a95403370d
+    bytes: 64865
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+    Mengubah:
+    - id: uu_24_2004
+      citation: UU No. 24 Tahun 2004
+      tentang: Lembaga Penjamin Simpanan
+      url: https://peraturan.bpk.go.id/Details/40598/uu-no-24-tahun-2004
+      note: null
+  tanggal_pengundangan: '2017-01-13'
+uji_materi: null

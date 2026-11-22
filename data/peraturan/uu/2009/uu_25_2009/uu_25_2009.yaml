@@ -11,8 +11,8 @@ tanggal_penetapan: '2009-07-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-25-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu25-2009bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38748/uu-no-25-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28077/UU%20Nomor%2025%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -27,5 +27,26 @@ versions:
   date: '2009-07-18'
   date_basis: tanggal_penetapan
   text: uu_25_2009_2009-07-18.txt
-  pasal_count: 47
+  pasal_count: 62
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 37a5dad4b4c3e36b8281f3a7c12360721760125c1bf2a0344385fcc096a9232d
 pdf_sha256: ad947bb833a33abb29b940e28bbaeaa81aab3a6e9ada433743622b071b7fd6c5
+tanggal_pengundangan: '2009-07-18'
+tanggal_berlaku: '2009-07-18'
+lembaran_negara: 'LN. 2009/ No.112 , TLN NO. 5038, LL SETNEG : 45 HLM'
+subjek: PERIZINAN, PELAYANAN PUBLIK
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-25-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu25-2009bt.pdf
+bpk:
+  id: 38748
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28077/UU%20Nomor%2025%20Tahun%202009.pdf
+    bpk_file_id: 28077
+    filename: UU Nomor 25 Tahun 2009.pdf
+    sha256: 37a5dad4b4c3e36b8281f3a7c12360721760125c1bf2a0344385fcc096a9232d
+    bytes: 225917
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

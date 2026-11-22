@@ -6,20 +6,19 @@ year: 2009
 title: Undang-Undang Nomor 36 Tahun 2009 tentang Kesehatan
 tentang: KESEHATAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 17 Tahun 2023 Tentang Kesehatan'
+status: tidak_berlaku
 tanggal_penetapan: '2009-10-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-36-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu36-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38778/uu-no-36-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28107/UU%20Nomor%2036%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_23_1992
-  revoked_by:
-  - uu_17_2023
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -29,5 +28,70 @@ versions:
   date: '2009-10-13'
   date_basis: tanggal_penetapan
   text: uu_36_2009_2009-10-13.txt
-  pasal_count: 9
+  pasal_count: 205
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 36c52e64f5624c6a7065b754159d69e8f0ec288b4eec4faa43826691942bc215
 pdf_sha256: f3f2f0d9a39474f55e34891d73af4d48cdd82be4ae5887e9772f04c724634dc6
+tanggal_pengundangan: '2009-10-13'
+tanggal_berlaku: '2009-10-13'
+lembaran_negara: 'LN. 2009/ No. 144 , TLN NO. 5063, LL SETNEG : 77 HLM'
+subjek: KESEHATAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-36-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu36-2009.pdf
+bpk:
+  id: 38778
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28107/UU%20Nomor%2036%20Tahun%202009.pdf
+    bpk_file_id: 28107
+    filename: UU Nomor 36 Tahun 2009.pdf
+    sha256: 36c52e64f5624c6a7065b754159d69e8f0ec288b4eec4faa43826691942bc215
+    bytes: 327861
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_17_2023
+      citation: UU No. 17 Tahun 2023
+      tentang: Kesehatan
+      url: https://peraturan.bpk.go.id/Details/258028/uu-no-17-tahun-2023
+      note: null
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 192, Pasal 194, dan Pasal 195 Undang-Undang Nomor 36 Tahun 2009
+        sebagaimana telah diubah dengan Undang-Undang Nomor 11 Tahun 2020
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    - id: perppu_1_2020
+      citation: PERPU No. 1 Tahun 2020
+      tentang: Kebijakan Keuangan Negara dan Stabilitas Sistem Keuangan untuk Penanganan
+        Pandemi Corona Virus Disease 2019 (COVID-19) dan/atau dalam Rangka Menghadapi
+        Ancaman yang Membahayakan Perekonomian Nasional dan/atau Stabilitas Sistem
+        Keuangan
+      url: https://peraturan.bpk.go.id/Details/135060/perpu-no-1-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_23_1992
+      citation: UU No. 23 Tahun 1992
+      tentang: Kesehatan
+      url: https://peraturan.bpk.go.id/Details/46620/uu-no-23-tahun-1992
+      note: null
+uji_materi: null

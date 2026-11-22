@@ -11,8 +11,8 @@ tanggal_penetapan: '2009-09-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-30-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/UU0302009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38767/uu-no-30-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28096/UU%20Nomor%2030%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,53 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_2009_2009-09-23.txt
   pasal_count: 58
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4cb3ae117809af83c0cd5df99743aeef301009ff6e3055bc772061153f53c241
 pdf_sha256: 5938840fe6d0ef60832e4941583d3ecbf3bbac0df4ac524293081b5ec2cede01
+tanggal_pengundangan: '2009-09-23'
+tanggal_berlaku: '2009-09-23'
+lembaran_negara: 'LN. 2009/ No.133, TLN NO. 5052, LL SETNEG : 31 HLM'
+subjek: PERTAMBANGAN MIGAS, MINERAL DAN ENERGI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-30-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/UU0302009.pdf
+bpk:
+  id: 38767
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28096/UU%20Nomor%2030%20Tahun%202009.pdf
+    bpk_file_id: 28096
+    filename: UU Nomor 30 Tahun 2009.pdf
+    sha256: 4cb3ae117809af83c0cd5df99743aeef301009ff6e3055bc772061153f53c241
+    bytes: 143633
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_15_1985
+      citation: UU No. 15 Tahun 1985
+      tentang: Ketenagalistrikan
+      url: https://peraturan.bpk.go.id/Details/46966/uu-no-15-tahun-1985
+      note: null
+uji_materi:
+- putusan: 111/PUU-XIII/2015
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/26/111_PUU-XIII_2015.pdf
+  amar: Pasal 10 ayat (2) dan Pasal 11 ayat (1) Undang-Undang Nomor 30 Tahun 2009
+    tentang Ketenagalistrikan bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai
+    kekuatan hukum mengikat secara bersyarat.

@@ -11,8 +11,8 @@ tanggal_penetapan: '2009-09-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-29-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/UU+29+Tahun+2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38765/uu-no-29-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28094/UU%20Nomor%2029%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_29_2009_2009-09-15.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ff6f5eeed40e8aef57ceed0ccab3c602da962ce396fb74209497bb478d61c4ce
 pdf_sha256: 9038c596274c3ac9796a6e17839f73c6d9e8608281f0ea2855a546c7d682c9c0
+tanggal_pengundangan: '2009-09-15'
+tanggal_berlaku: '2009-09-15'
+lembaran_negara: 'LN. 2009/ No. 131 , TLN NO. 5050, LL SETNEG : 17 HLM'
+subjek: KEPENDUDUKAN DAN PERKAWINAN - PROGRAM, RENCANA PEMBANGUNAN DAN RENCANA KERJA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-29-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/UU+29+Tahun+2009.pdf
+bpk:
+  id: 38765
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28094/UU%20Nomor%2029%20Tahun%202009.pdf
+    bpk_file_id: 28094
+    filename: UU Nomor 29 Tahun 2009.pdf
+    sha256: ff6f5eeed40e8aef57ceed0ccab3c602da962ce396fb74209497bb478d61c4ce
+    bytes: 127342
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_15_1997
+      citation: UU No. 15 Tahun 1997
+      tentang: Ketransmigrasian
+      url: https://peraturan.bpk.go.id/Details/45942/uu-no-15-tahun-1997
+      note: null
+uji_materi: null

@@ -11,8 +11,8 @@ tanggal_penetapan: '2009-10-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-31-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/UU+31+Tahun+2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38769/uu-no-31-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28098/UU%20Nomor%2031%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_31_2009_2009-10-01.txt
   pasal_count: 105
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 12b066a8f93b19ad8aadc013df18e422f02d9eb7afd1a52436b9979617338793
 pdf_sha256: 0e51fd9326addf29b0796f04afe17f390ba61c61c42b49b0c9cb77ec87692826
+tanggal_pengundangan: '2009-10-01'
+tanggal_berlaku: '2009-10-01'
+lembaran_negara: 'LN. 2009/ No.139, TLN NO. 5058, LL SETNEG : 39 HLM'
+subjek: ILMU PENGETAHUAN DAN TEKNOLOGI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-31-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/UU+31+Tahun+2009.pdf
+bpk:
+  id: 38769
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28098/UU%20Nomor%2031%20Tahun%202009.pdf
+    bpk_file_id: 28098
+    filename: UU Nomor 31 Tahun 2009.pdf
+    sha256: 12b066a8f93b19ad8aadc013df18e422f02d9eb7afd1a52436b9979617338793
+    bytes: 191462
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -10,20 +10,18 @@ tentang: PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 2 TAHUN 20
   TENTANG PERUBAHAN ATAS UNDANG-UNDANG NOMOR 13 TAHUN 13 TAHUN 2008 TENTANG PENYELENGGARAAN
   IBADAH HAJI MENJADI UNDANG-UNDANG
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 8 Tahun 2019 Tentang Penyelenggaraan
-  Ibadah Haji dan Umrah'
+status: tidak_berlaku
 tanggal_penetapan: '2009-09-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-34-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu34-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38774/uu-no-34-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/28103/UU%20Nomor%2034%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_8_2019
+  revoked_by: []
   enacts:
   - perppu_2_2009
   enacted_by: []
@@ -35,4 +33,45 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_34_2009_2009-09-10.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 50d438b984443ed35ceddd000b855d4fba7b642a27c717369342acbf3252c51b
 pdf_sha256: 8f3e457a49d76da4e4f534327930bdef14e7c2c1b891c5f43eabd9e1b154284d
+tanggal_penetapan_bpk: '2009-10-09'
+tanggal_pengundangan: '2009-10-09'
+tanggal_berlaku: '2009-10-09'
+lembaran_negara: 'LN. 2009/ No. 142, TLN NO. 5036, LL SETNEG : 3 HLM'
+subjek: KEAGAMAAN, IBADAH, DAN PENYELENGGARAAN HAJI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-34-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu34-2009.pdf
+bpk:
+  id: 38774
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28103/UU%20Nomor%2034%20Tahun%202009.pdf
+    bpk_file_id: 28103
+    filename: UU Nomor 34 Tahun 2009.pdf
+    sha256: 50d438b984443ed35ceddd000b855d4fba7b642a27c717369342acbf3252c51b
+    bytes: 59509
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_8_2019
+      citation: UU No. 8 Tahun 2019
+      tentang: Penyelenggaraan Ibadah Haji dan Umrah
+      url: https://peraturan.bpk.go.id/Details/106346/uu-no-8-tahun-2019
+      note: null
+    Menetapkan:
+    - id: perppu_2_2009
+      citation: PERPU No. 2 Tahun 2009
+      tentang: Perubahan Atas Undang-Undang Nomor 13 Tahun 2008 Tentang Penyelenggaraan
+        Ibadah Haji
+      url: https://peraturan.bpk.go.id/Details/53235/perpu-no-2-tahun-2009
+      note: null
+    Mengubah:
+    - id: uu_13_2008
+      citation: UU No. 13 Tahun 2008
+      tentang: Penyelenggaraan Ibadah Haji
+      url: https://peraturan.bpk.go.id/Details/39044/uu-no-13-tahun-2008
+      note: null
+uji_materi: null

@@ -13,8 +13,8 @@ tanggal_penetapan: '2009-01-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu8-2009bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38592/uu-no-8-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/27853/UU%20Nomor%208%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,3 +31,22 @@ versions:
   text: uu_8_2009_2009-01-13.txt
   pasal_count: 11
 pdf_sha256: 59433cee5d5e2cca85277479767aa2eed6e819fa1cd1a32fb3a0af159f111e1f
+tanggal_pengundangan: '2009-01-13'
+tanggal_berlaku: '2009-01-13'
+lembaran_negara: 'LN. 2009/ No.9, TLN NO. 4964, LL SETNEG : 7 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu8-2009bt.pdf
+bpk:
+  id: 38592
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27853/UU%20Nomor%208%20Tahun%202009.pdf
+    bpk_file_id: 27853
+    filename: UU Nomor 8 Tahun 2009.pdf
+    sha256: 2fbb17d0d8aa69b1033061dd0c4c37b77ac15c6640ef71187b9b3ee82bdd0898
+    bytes: 92182
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
+reparse_error: 'v12: new text has 3011 words, stored text 64878'

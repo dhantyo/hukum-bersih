@@ -11,8 +11,8 @@ tanggal_penetapan: '2009-12-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu2-2009bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38570/uu-no-2-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/27822/UU%20Nomor%202%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2009_2009-12-01.txt
   pasal_count: 49
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7c74b48a71305478438db2bfd502839dfb35f8f6ec036412c3da726376d92f61
 pdf_sha256: 26894c451f2f8df391bc1da04095c56ca95c390dbee1c3892f69d48327193850
+tanggal_penetapan_bpk: '2009-01-12'
+tanggal_pengundangan: '2009-01-12'
+tanggal_berlaku: '2009-01-12'
+lembaran_negara: 'LN. 2009/ No. 2 , TLN NO. 4957, LL SETNEG : 20 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu2-2009bt.pdf
+bpk:
+  id: 38570
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27822/UU%20Nomor%202%20Tahun%202009.pdf
+    bpk_file_id: 27822
+    filename: UU Nomor 2 Tahun 2009.pdf
+    sha256: 7c74b48a71305478438db2bfd502839dfb35f8f6ec036412c3da726376d92f61
+    bytes: 169341
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+uji_materi: null

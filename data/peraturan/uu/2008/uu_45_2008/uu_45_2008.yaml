@@ -12,8 +12,8 @@ tanggal_penetapan: '2008-11-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-45-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU0452008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39742/uu-no-45-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/29324/UU%20Nomor%2045%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_45_2008_2008-11-26.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 33ab36daa4d9175d3e5de8d2a33de3d1e11d3ef80200ce3b6748d3eaac776fe5
 pdf_sha256: e1f959a7d7fbc6a93aba7f9282a2763ec44b9d577cc64bc83ab1be22483e169b
+tanggal_pengundangan: '2008-11-26'
+tanggal_berlaku: '2008-11-26'
+lembaran_negara: 'TLN.2008/NO.182, TLN NO.4929, LL SETNEG : 13 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-45-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU0452008.pdf
+bpk:
+  id: 39742
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29324/UU%20Nomor%2045%20Tahun%202008.pdf
+    bpk_file_id: 29324
+    filename: UU Nomor 45 Tahun 2008.pdf
+    sha256: 33ab36daa4d9175d3e5de8d2a33de3d1e11d3ef80200ce3b6748d3eaac776fe5
+    bytes: 100241
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

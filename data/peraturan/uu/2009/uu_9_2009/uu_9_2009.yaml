@@ -11,8 +11,8 @@ tanggal_penetapan: '2009-01-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu9-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38596/uu-no-9-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/27862/UU%20Nomor%209%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,29 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2009_2009-01-16.txt
   pasal_count: 69
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: cd3203aa2112b5f01430311b30c6f426e4fa4e1b56eca08b47625cc1a7779862
 pdf_sha256: 4bfe15288e6b395ba813d49f16682b5b5092478fa96b110c3d1b245d93ee138f
+tanggal_pengundangan: '2009-01-16'
+tanggal_berlaku: '2009-01-16'
+lembaran_negara: 'LN. 2009/ No. 10, TLN NO. 4695, LL SETNEG : 46 HLM'
+subjek: PENDIDIKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu9-2009.pdf
+bpk:
+  id: 38596
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27862/UU%20Nomor%209%20Tahun%202009.pdf
+    bpk_file_id: 27862
+    filename: UU Nomor 9 Tahun 2009.pdf
+    sha256: cd3203aa2112b5f01430311b30c6f426e4fa4e1b56eca08b47625cc1a7779862
+    bytes: 219357
+    archive_url: null
+  status_peraturan: null
+uji_materi:
+- putusan: 11-14-21-126 dan 136/PUU-VII/2009
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/68/PUTUSAN%20UU%20BHP_baca_31%20Maret%202010.pdf
+  amar: Undang-Undang Nomor 9 Tahun 2009 tentang Badan Hukum Pendidikan bertentangan
+    dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.

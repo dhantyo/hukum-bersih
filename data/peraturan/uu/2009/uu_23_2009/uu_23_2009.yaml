@@ -13,8 +13,8 @@ tanggal_penetapan: '2009-07-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-23-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu23-2009pjl.pdf
+source_url: https://peraturan.bpk.go.id/Details/38657/uu-no-23-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/27965/UU%20Nomor%2023%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_2009_2009-07-01.txt
   pasal_count: 11
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d52f3a30c008ed49be247aac8f62e35940c335625d5875893a6451f8cfc84a60
 pdf_sha256: 4d5ccb55f3f9ac1aec6ecb758dbb3b71756d668650c09648dff0805012d5d516
+tanggal_pengundangan: '2009-07-01'
+tanggal_berlaku: '2009-07-01'
+lembaran_negara: 'LN. 2009/ No. 100, TLN NO. 5026, LL SETNEG : 8 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-23-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu23-2009pjl.pdf
+bpk:
+  id: 38657
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27965/UU%20Nomor%2023%20Tahun%202009.pdf
+    bpk_file_id: 27965
+    filename: UU Nomor 23 Tahun 2009.pdf
+    sha256: d52f3a30c008ed49be247aac8f62e35940c335625d5875893a6451f8cfc84a60
+    bytes: 141765
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -12,8 +12,8 @@ tanggal_penetapan: '2008-11-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-56-tahun-2008
-source_pdf_url: https://peraturan.go.id/files/UU0562008.pdf
+source_url: https://peraturan.bpk.go.id/Details/39764/uu-no-56-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/29346/UU%20Nomor%2056%20Tahun%202008.pdf
 relationships:
   amends: []
   amended_by:
@@ -30,4 +30,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_56_2008_2008-11-26.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: fa6ceb01a98414d84e4ac6cf9b2a737b13bce874d5a0036067f3be10537c6377
 pdf_sha256: acc8b06fcb1730d0210f54f78d090a809575ce09b462015867f2eaa575b993f8
+tanggal_pengundangan: '2008-11-26'
+tanggal_berlaku: '2008-11-26'
+lembaran_negara: 'LN.2008/NO.193, TLN NO.4940, LL SETNEG : 13 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-56-tahun-2008
+  source_pdf_url: https://peraturan.go.id/files/UU0562008.pdf
+bpk:
+  id: 39764
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29346/UU%20Nomor%2056%20Tahun%202008.pdf
+    bpk_file_id: 29346
+    filename: UU Nomor 56 Tahun 2008.pdf
+    sha256: fa6ceb01a98414d84e4ac6cf9b2a737b13bce874d5a0036067f3be10537c6377
+    bytes: 103611
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_14_2013
+      citation: UU No. 14 Tahun 2013
+      tentang: Perubahan atas Undang-Undang Nomor 56 Tahun 2008 Tentang Pembentukan
+        Kabupaten Tambrauw di Provinsi Papua Barat
+      url: https://peraturan.bpk.go.id/Details/38865/uu-no-14-tahun-2013
+      note: null
+uji_materi: null

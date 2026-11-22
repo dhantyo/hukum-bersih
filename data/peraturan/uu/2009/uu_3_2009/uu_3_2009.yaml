@@ -12,8 +12,8 @@ tanggal_penetapan: '2009-01-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu3-2009bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38574/uu-no-3-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/27827/UU%20Nomor%203%20Tahun%202009.pdf
 relationships:
   amends:
   - id: uu_14_1985
@@ -54,4 +54,42 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2009_2009-01-12.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8d6229516b65f5a635fd37e692f208f8495be628d35d568d9b81167d9eefc360
 pdf_sha256: a8679f3893e70f6a4509ec37cdb0b0b3e375e2cff422f9686ee56d6c49b90cfa
+lembaran_negara: 'LN. 2009/ No. 3 , TLN NO. 4958, LL SETNEG : 19 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu3-2009bt.pdf
+bpk:
+  id: 38574
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27827/UU%20Nomor%203%20Tahun%202009.pdf
+    bpk_file_id: 27827
+    filename: UU Nomor 3 Tahun 2009.pdf
+    sha256: 8d6229516b65f5a635fd37e692f208f8495be628d35d568d9b81167d9eefc360
+    bytes: 102799
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_5_2004
+      citation: UU No. 5 Tahun 2004
+      tentang: Perubahan atas Undang-Undang Nomor 14 Tahun 1985 tentang Mahkamah Agung
+      url: https://peraturan.bpk.go.id/Details/40491/uu-no-5-tahun-2004
+      note: null
+    - id: uu_14_1985
+      citation: UU No. 14 Tahun 1985
+      tentang: Mahkamah Agung
+      url: https://peraturan.bpk.go.id/Details/46965/uu-no-14-tahun-1985
+      note: null
+uji_materi:
+- putusan: 53/PUU-XIV/2016
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/9/53_PUU-XIV_2016.pdf
+  amar: Pasal 7 huruf b butir 3 Undang-Undang Nomor 3 Tahun 2009 tentang Perubahan
+    Kedua atas Undang-Undang Nomor 14 Tahun 1985 tentang Mahkamah Agung bertentangan
+    dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat secara bersyarat
+    sepanjang tidak dimaknai berijazah doktor dan magister di bidang hukum dengan
+    keahlian di bidang hukum tertentu dengan dasar sarjana hukum atau sarjana lain
+    yang mempunyai keahlian di bidang hukum

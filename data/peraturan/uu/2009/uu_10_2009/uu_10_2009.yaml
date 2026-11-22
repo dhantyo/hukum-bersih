@@ -11,8 +11,8 @@ tanggal_penetapan: '2009-01-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu10-2009.pdf
+source_url: https://peraturan.bpk.go.id/Details/38598/uu-no-10-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/27864/UU%20Nomor%2010%20Tahun%202009.pdf
 relationships:
   amends: []
   amended_by:
@@ -30,4 +30,53 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2009_2009-01-16.txt
   pasal_count: 70
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e0929d5f832ff70af77517f94032d404a6af45f42b351fc60404b6e0b9081eac
 pdf_sha256: aeed8f3879d81048f88abf4b153a86183897930b9c89270ebf166bacef1b4e23
+tanggal_pengundangan: '2009-01-16'
+tanggal_berlaku: '2009-01-16'
+lembaran_negara: 'LN. 2009/ No. 11, TLN NO. 4966, LL SETNEG : 40 HLM'
+subjek: PARIWISATA DAN KEBUDAYAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu10-2009.pdf
+bpk:
+  id: 38598
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27864/UU%20Nomor%2010%20Tahun%202009.pdf
+    bpk_file_id: 27864
+    filename: UU Nomor 10 Tahun 2009.pdf
+    sha256: e0929d5f832ff70af77517f94032d404a6af45f42b351fc60404b6e0b9081eac
+    bytes: 175803
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_18_2025
+      citation: UU No. 18 Tahun 2025
+      tentang: Perubahan Ketiga atas Undang-Undang Nomor 10 Tahun 2009 tentang Kepariwisataan
+      url: https://peraturan.bpk.go.id/Details/334481/uu-no-18-tahun-2025
+      note: null
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_9_1990
+      citation: UU No. 9 Tahun 1990
+      tentang: Kepariwisataan
+      url: https://peraturan.bpk.go.id/Details/46715/uu-no-9-tahun-1990
+      note: null
+uji_materi: null

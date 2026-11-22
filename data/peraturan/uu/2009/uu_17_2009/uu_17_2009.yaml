@@ -12,25 +12,19 @@ tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 20
   Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan Rakyat
   Daerah Menjadi Undang-Undang
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 8 Tahun 2012 Tentang Pemilihan
-  Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan
-  Rakyat Daerah'
+status: tidak_berlaku
 tanggal_penetapan: '2009-05-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-2009
-source_pdf_url: https://peraturan.go.id/files/uu17-2009bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38631/uu-no-17-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/27904/UU%20Nomor%2017%20Tahun%202009.pdf
 relationships:
   amends:
   - id: uu_10_2008
-    changes:
-      diubah:
-      - '176'
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_8_2012
+  revoked_by: []
   enacts:
   - perppu_1_2009
   enacted_by: []
@@ -42,4 +36,39 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_2009_2009-05-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3110998a593fae3d8108f91797b77f4779d21b146e030581a9a5fc88f1d365e1
 pdf_sha256: 4d6a86728ef8a2ae8187c8872e556e5756087ab112768155ed24bf63ab64a04d
+tanggal_pengundangan: '2009-05-29'
+tanggal_berlaku: '2009-05-29'
+lembaran_negara: 'LN. 2009/ No. 78 , TLN NO. 5009, LL SETNEG : 4 HLM'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-2009
+  source_pdf_url: https://peraturan.go.id/files/uu17-2009bt.pdf
+bpk:
+  id: 38631
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27904/UU%20Nomor%2017%20Tahun%202009.pdf
+    bpk_file_id: 27904
+    filename: UU Nomor 17 Tahun 2009.pdf
+    sha256: 3110998a593fae3d8108f91797b77f4779d21b146e030581a9a5fc88f1d365e1
+    bytes: 60397
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_8_2012
+      citation: UU No. 8 Tahun 2012
+      tentang: Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah,
+        dan Dewan Perwakilan Rakyat Daerah
+      url: https://peraturan.bpk.go.id/Details/37659/uu-no-8-tahun-2012
+      note: null
+    Mengubah:
+    - id: uu_10_2008
+      citation: UU No. 10 Tahun 2008
+      tentang: Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah,
+        dan Dewan Perwakilan Rakyat Daerah
+      url: https://peraturan.bpk.go.id/Details/39037/uu-no-10-tahun-2008
+      note: null
+uji_materi: null
