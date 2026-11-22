@@ -193,6 +193,10 @@ def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str) -> str:
             rec.pop("parse_error", None)
             rec["pdf_quality"] = "image_only_or_unparsed"
             return "no pasal found (scanned PDF?)"
+        before = max((v.get("pasal_count") or 0) for v in old) if old else 0
+        if doc.pasal_count < before:                       # never replace a text with a poorer one
+            rec["reparse_error"] = f"v{PARSER_VERSION}: {doc.pasal_count} pasal, stored text has {before}"
+            return f"kept old text (new parse has {doc.pasal_count} pasal, stored {before})"
         text = to_bluebell(doc)
         to_akn(text, rec["akn"], "act")                    # validates structure and markup
         version = f"{work}_{date or rec['year']}"

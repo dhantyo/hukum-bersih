@@ -143,7 +143,8 @@ def test_import_existing_record_keeps_text_and_records_pdf(tmp_path):
     known: dict = {}
 
     line = bpk.import_one(s, item, "uu", tmp_path, known, do_archive=False)
-    assert line.startswith("ok   uu_4_2009: 1 PDF recorded; kept text (175 pasal")
+    # BPK's PDF is tried with the current parser; this one has no pasal, so the old text stays
+    assert line.startswith("ok   uu_4_2009: 1 PDF recorded; kept old text")
     out = yaml.safe_load((folder / "uu_4_2009.yaml").read_text())
     assert (folder / "uu_4_2009_2009-01-12.txt").read_text() == "text from peraturan.go.id"
     assert out["versions"] == rec["versions"]
@@ -198,3 +199,68 @@ def test_no_text_leaves_record_without_text(tmp_path):
     assert line.endswith("PDFs only (no text step)")
     rec = yaml.safe_load((tmp_path / "peraturan/uu/2026/uu_5_2026/uu_5_2026.yaml").read_text())
     assert rec["versions"] == [] and "pdf_quality" not in rec
+
+
+def test_never_replaced_by_a_poorer_text(tmp_path):
+    import yaml
+
+    from hukum_bersih.sources.peraturan_go_id import convert_pdf
+
+    folder = tmp_path / "uu_9_2000"
+    folder.mkdir()
+    (folder / "uu_9_2000_2000-01-01.txt").write_text("old")
+    rec = {"id": "uu_9_2000", "akn": "/akn/id/act/uu/2000/9", "year": 2000, "tanggal_penetapan": "2000-01-01",
+           "versions": [{"id": "uu_9_2000_2000-01-01", "text": "uu_9_2000_2000-01-01.txt", "pasal_count": 40}]}
+    import pymupdf
+
+    doc = pymupdf.open()
+    page = doc.new_page()
+    for k, t in enumerate(["Menimbang : a. bahwa x;", "Pasal 1", "satu.", "Pasal 2", "dua."]):
+        page.insert_text((72, 72 + 20 * k), t)
+    doc.save(tmp_path / "p.pdf")
+    note = convert_pdf(tmp_path / "p.pdf", rec, folder, source="peraturan.bpk.go.id")
+    assert note.startswith("kept old text (new parse has 2 pasal, stored 40)")
+    assert (folder / "uu_9_2000_2000-01-01.txt").read_text() == "old" and "stored text has 40" in rec["reparse_error"]
+    assert yaml.safe_dump(rec)
+
+
+def test_reparse_from_archive_checks_the_hash(tmp_path, monkeypatch):
+    import urllib.request
+
+    import yaml
+
+    from hukum_bersih.manifest import sha256_file
+
+    pdf = tmp_path / "src.pdf"
+    pdf.write_bytes(small_pdf())
+    folder = tmp_path / "peraturan" / "uu" / "2026" / "uu_5_2026"
+    folder.mkdir(parents=True)
+    rec = {"id": "uu_5_2026", "akn": "/akn/id/act/uu/2026/5", "year": 2026, "versions": [],
+           "bpk": {"files": [{"url": "u", "sha256": sha256_file(pdf), "archive_url": "https://archive.org/x"}]}}
+    (folder / "uu_5_2026.yaml").write_text(yaml.safe_dump(rec))
+    monkeypatch.setattr(urllib.request, "urlretrieve", lambda url, dest: dest.write_bytes(pdf.read_bytes()))
+    assert list(bpk.reparse(tmp_path)) == ["ok   uu_5_2026: reparsed, no pasal found (scanned PDF?)"]
+    assert list(bpk.reparse(tmp_path)) == []                        # tried with this parser: done
+    rec["parser_version_tried"] = 0
+    rec["bpk"]["files"][0]["sha256"] = "0" * 64                    # archive copy is not what we recorded
+    (folder / "uu_5_2026.yaml").write_text(yaml.safe_dump(rec))
+    assert next(iter(bpk.reparse(tmp_path))).startswith("FAIL uu_5_2026: archived file differs")
+
+
+def test_mirror_fallback_when_bpk_fails(tmp_path, monkeypatch):
+    import json
+
+    (tmp_path / "sources" / "mirrors").mkdir(parents=True)
+    (tmp_path / "sources" / "mirrors" / "id_reg.json").write_text(json.dumps(
+        {"files": {"UU_Nomor_5_Tahun_2026.pdf": ["batch-9-chunk-1.zip", 1]}}))
+    monkeypatch.setattr(bpk, "from_mirror", lambda name, d: (small_pdf(), f"Azzindani/ID_REG batch-9-chunk-1.zip/{name}")
+                        if name == "UU Nomor 5 Tahun 2026.pdf" else None)
+
+    class Broken:
+        def get(self, url):
+            raise RuntimeError("giving up")
+
+    content, note = bpk.download(Broken(), {"url": "u", "filename": "UU Nomor 5 Tahun 2026.pdf"}, tmp_path)
+    assert content.startswith(b"%PDF") and "mirror" in note and "giving up" in note
+    with pytest.raises(RuntimeError, match="not in the mirror either"):
+        bpk.download(Broken(), {"url": "u", "filename": "UU Nomor 99 Tahun 2026.pdf"}, tmp_path)

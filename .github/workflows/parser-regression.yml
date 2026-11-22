@@ -1,0 +1,37 @@
+name: Parser regression
+
+# The PDF parser on the regression set (pipeline/tests/regression.yaml: 19 UU, 1947-2026, typed
+# and scanned, counts read from the PDFs) and on a random survey of UU from the Hugging Face
+# mirror of BPK. Runs when the parser changes; fails if any law in the set is off.
+on:
+  workflow_dispatch:
+    inputs:
+      survey:
+        description: "Also survey N random UU (0 = no)"
+        default: "50"
+  push:
+    paths: ["pipeline/src/hukum_bersih/pdf/**", "pipeline/src/hukum_bersih/akn/**",
+            "pipeline/src/hukum_bersih/closing.py", "pipeline/tests/regression.yaml",
+            ".github/workflows/parser-regression.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  regression:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ind >/dev/null
+      - run: uv sync
+        working-directory: pipeline
+      - name: Regression set
+        working-directory: pipeline
+        shell: bash          # -o pipefail: the step fails when regress.py does
+        run: uv run python scripts/regress.py 2>&1 | grep -v "MuPDF error\|^$" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Survey
+        if: ${{ (inputs.survey || '50') != '0' }}
+        working-directory: pipeline
+        run: uv run python scripts/survey.py "${{ inputs.survey || '50' }}" 2>&1 | grep -v "MuPDF error\|^$" | grep -v " ok$" | tee -a "$GITHUB_STEP_SUMMARY"

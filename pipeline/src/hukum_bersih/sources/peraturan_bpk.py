@@ -204,10 +204,40 @@ def record_path(data_dir: Path, work: str) -> Path:
     return data_dir / "peraturan" / jenis / tahun / work / f"{work}.yaml"
 
 
-def done(rec: dict) -> bool:
+def files_done(rec: dict) -> bool:
     """Every BPK file of the record is downloaded and archived (or recorded, without keys)."""
     files = (rec.get("bpk") or {}).get("files") or []
     return bool(files) and all(f.get("sha256") for f in files)
+
+
+def text_current(rec: dict) -> bool:
+    """The record's text comes from BPK's PDF and the current parser, or that parser was
+    already tried on it (no text: scanned and unreadable, or no pasal found)."""
+    from ..pdf.structure import PARSER_VERSION
+
+    texts = [v for v in rec.get("versions") or [] if v.get("text")]
+    if texts:
+        return all(v.get("parser_version") == PARSER_VERSION and v.get("pdf_source") == SOURCE
+                   for v in texts) or str(rec.get("reparse_error", "")).startswith(f"v{PARSER_VERSION}:")
+    return rec.get("parser_version_tried") == PARSER_VERSION
+
+
+def done(rec: dict) -> bool:
+    return files_done(rec) and text_current(rec)
+
+
+def retext(pdf: Path, rec: dict, folder: Path) -> str:
+    """Convert BPK's PDF to the record's text with the current parser, unless that was done.
+    A stored text is only replaced by a valid one with at least as many pasal (convert_pdf)."""
+    from ..pdf.structure import PARSER_VERSION
+    from .peraturan_go_id import convert_pdf
+
+    if text_current(rec):
+        return "text current"
+    note = convert_pdf(pdf, rec, folder, source=SOURCE)
+    if not any(v.get("text") for v in rec.get("versions") or []):
+        rec["parser_version_tried"] = PARSER_VERSION
+    return note
 
 
 # ---- archive.org ---------------------------------------------------------------------------
@@ -240,6 +270,45 @@ def file_ids(version: str, item: str, n: int, taken: set[str]) -> tuple[str, str
 
 
 # ---- import --------------------------------------------------------------------------------
+
+MIRROR = "https://huggingface.co/datasets/Azzindani/ID_REG/resolve/main/"
+
+
+def download(session, f: dict, data_dir: Path) -> tuple[bytes, str | None]:
+    """A BPK file's bytes: from BPK, or when that fails, the file of the same name in the
+    Hugging Face mirror of BPK (data/sources/mirrors/id_reg.json). Returns (bytes, note)."""
+    try:
+        r = session.get(f["url"])
+        if r.content[:5].startswith(b"%PDF"):
+            return r.content, None
+        problem = f"not a PDF ({r.headers.get('content-type')})"
+    except Exception as e:
+        from .bpk_session import Challenged
+
+        if isinstance(e, Challenged):
+            raise
+        problem = f"{type(e).__name__}: {str(e)[:120]}"
+    got = from_mirror(f["filename"], data_dir)
+    if got is None:
+        raise RuntimeError(f"{f['url']}: {problem}; not in the mirror either")
+    content, where = got
+    return content, f"BPK download failed ({problem}); bytes from Hugging Face mirror {where}"
+
+
+def from_mirror(filename: str, data_dir: Path) -> tuple[bytes, str] | None:
+    index = data_dir / "sources" / "mirrors" / "id_reg.json"
+    if not index.exists():
+        return None
+    member = filename.replace(" ", "_")
+    hit = json.loads(index.read_text())["files"].get(member)
+    if not hit:
+        return None
+    from remotezip import RemoteZip
+
+    with RemoteZip(MIRROR + hit[0]) as z:
+        content = z.read(member)
+    return (content, f"Azzindani/ID_REG {hit[0]}/{member}") if content[:5].startswith(b"%PDF") else None
+
 
 def listings(session, jenis: str) -> Iterator[Listing]:
     page, last = 1, 1
@@ -276,8 +345,6 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
     from .. import archive
     from ..manifest import entry_for_file, manifest_path
     from ..naming import archive_item
-    from ..pdf.structure import PARSER_VERSION, parse_pdf
-    from .peraturan_go_id import convert_pdf
 
     path = known.get(item.bpk_id)
     if path and done(yaml.safe_load(path.read_text())):
@@ -304,11 +371,9 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
     with tempfile.TemporaryDirectory() as tmp:
         main_pdf = None
         for n, f in enumerate(rec["bpk"]["files"], start=1):
-            r = session.get(f["url"])
             pdf = Path(tmp) / f"{n}.pdf"
-            pdf.write_bytes(r.content)
-            if not r.content[:5].startswith(b"%PDF"):
-                raise RuntimeError(f"{f['url']}: not a PDF ({r.headers.get('content-type')})")
+            content, mirror_note = download(session, f, data_dir)
+            pdf.write_bytes(content)
             entry = entry_for_file(pdf, f["url"], None, None, f["filename"])
             archive_url = by_sha.get(entry.sha256)
             doc_id, repaired = None, None
@@ -321,6 +386,10 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
                 by_sha[entry.sha256] = archive_url
             doc_id = doc_id or (version if n == 1 else f"{version}_{n}")
             entry = entry_for_file(pdf, f["url"], archive_url, doc_id, f["filename"])
+            if mirror_note:
+                from dataclasses import replace
+                entry = replace(entry, note=mirror_note)
+                f["fetched_from"] = mirror_note
             if repaired:
                 from dataclasses import replace
                 entry = replace(entry, archived_sha256=repaired.sha256, note=repaired.note)
@@ -329,21 +398,11 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
             with manifest.open("a") as fh:
                 fh.write(json.dumps(entry.to_dict(), ensure_ascii=False) + "\n")
             f.update(sha256=entry.sha256, bytes=entry.bytes, archive_url=archive_url)
+            if repaired:
+                f["archived_sha256"] = repaired.sha256
             main_pdf = main_pdf or pdf
             out.append("archived" if archive_url else "recorded")
-        if no_text:
-            note = "PDFs only (no text step)"
-        elif texts:                                     # keep our text; parse BPK's to compare
-            try:
-                rec["bpk"]["pasal_count"] = parse_pdf(main_pdf).pasal_count
-            except Exception as e:  # noqa: BLE001
-                rec["bpk"]["pasal_count"] = None
-                notes.append(f"BPK PDF does not parse: {type(e).__name__}")
-            rec["bpk"]["parser_version"] = PARSER_VERSION
-            note = (f"kept text ({texts[0].get('pasal_count')} pasal; "
-                    f"BPK PDF {rec['bpk']['pasal_count']} pasal)")
-        else:
-            note = convert_pdf(main_pdf, rec, path.parent, source=SOURCE)
+        note = "PDFs only (no text step)" if no_text else retext(main_pdf, rec, path.parent)
     path.write_text(yaml.safe_dump(rec, allow_unicode=True, sort_keys=False))
     return (f"ok   {work}: {len(out)} PDF {'/'.join(sorted(set(out)))}; {note}"
             + "".join(f"; {n}" for n in notes))
@@ -357,3 +416,34 @@ def known_records(data_dir: Path) -> dict[int, Path]:
         if (rec.get("bpk") or {}).get("id"):
             out[int(rec["bpk"]["id"])] = path
     return out
+
+
+def reparse(data_dir: Path, only: set[str] | None = None) -> Iterator[str]:
+    """Re-convert texts from the PDFs we archived on archive.org (no BPK, no Cloudflare): for
+    records whose BPK files are all archived but whose text is not from the current parser.
+    The download is checked against the hash recorded at import."""
+    import urllib.request
+
+    from ..manifest import sha256_file
+
+    for path in sorted((data_dir / "peraturan").glob("*/*/*/*.yaml")):
+        rec = yaml.safe_load(path.read_text())
+        if only and rec["id"] not in only:
+            continue
+        files = (rec.get("bpk") or {}).get("files") or []
+        if not files or not files_done(rec) or text_current(rec) or not files[0].get("archive_url"):
+            continue
+        with tempfile.TemporaryDirectory() as tmp:
+            pdf = Path(tmp) / "doc.pdf"
+            try:
+                urllib.request.urlretrieve(files[0]["archive_url"], pdf)
+            except Exception as e:  # noqa: BLE001 - keep going; resumable
+                yield f"FAIL {rec['id']}: archive.org: {e}"
+                continue
+            got = sha256_file(pdf)
+            if got not in {files[0].get("sha256"), files[0].get("archived_sha256")}:
+                yield f"FAIL {rec['id']}: archived file differs from the one recorded ({got[:12]})"
+                continue
+            note = retext(pdf, rec, path.parent)
+        path.write_text(yaml.safe_dump(rec, allow_unicode=True, sort_keys=False))
+        yield f"ok   {rec['id']}: reparsed, {note}"

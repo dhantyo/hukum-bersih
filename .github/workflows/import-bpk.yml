@@ -13,6 +13,11 @@ on:
   #   - cron: "41 */6 * * *"   # every 6 hours
   workflow_dispatch:
     inputs:
+      mode:
+        description: "import: from BPK (metadata, PDFs, texts). reparse: texts from our archive.org copies"
+        type: choice
+        default: import
+        options: [import, reparse]
       jenis:
         description: "Type of regulation"
         default: "uu"
@@ -47,6 +52,7 @@ jobs:
       BATCH: "50"
       ONLY: ${{ inputs.only && format('--only={0}', inputs.only) || '' }}
       NO_TEXT: ${{ inputs.no_text && '--no-text' || '' }}
+      MODE: ${{ inputs.mode || 'import' }}
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
@@ -65,14 +71,18 @@ jobs:
           batch=0
           while [ "$(date +%s)" -lt "$deadline" ]; do
             batch=$((batch + 1))
-            out=$(cd pipeline && xvfb-run -a uv run hukum-bersih import-bpk "$JENIS" --limit "$BATCH" $ONLY $NO_TEXT 2>&1 || true)
+            if [ "$MODE" = reparse ]; then
+              out=$(cd pipeline && uv run hukum-bersih reparse-bpk --limit "$BATCH" $ONLY 2>&1 || true)
+            else
+              out=$(cd pipeline && xvfb-run -a uv run hukum-bersih import-bpk "$JENIS" --limit "$BATCH" $ONLY $NO_TEXT 2>&1 || true)
+            fi
             echo "$out"
             n=$(echo "$out" | grep -c '^ok' || true)
             echo "$out" | grep -E '^(ok|FAIL|STOP|done)' >> "$GITHUB_STEP_SUMMARY" || true
             (cd pipeline && uv run hukum-bersih relations)   # link amendments, revocations
             git add data/
             if ! git diff --cached --quiet; then
-              git commit -qm "peraturan/$JENIS: $n from peraturan.bpk.go.id (PDFs archived)"
+              git commit -qm "peraturan/$JENIS: $MODE $n from peraturan.bpk.go.id"
               for i in 1 2 3 4 5; do
                 git pull -q --no-rebase --no-edit origin "${GITHUB_REF_NAME}" && git push -q && break
                 sleep $((i * 20))

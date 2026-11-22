@@ -613,6 +613,7 @@ dependencies = [
 [package.optional-dependencies]
 bpk = [
     { name = "curl-cffi" },
+    { name = "remotezip" },
     { name = "scrapling", extra = ["fetchers"] },
 ]
 
@@ -633,6 +634,7 @@ requires-dist = [
     { name = "pikepdf", specifier = ">=9.0" },
     { name = "pymupdf", specifier = ">=2.1" },
     { name = "pyyaml", specifier = ">=6.0.3" },
+    { name = "remotezip", marker = "extra == 'bpk'", specifier = ">=0.12" },
     { name = "scrapling", extras = ["fetchers"], marker = "extra == 'bpk'", specifier = ">=0.5.1" },
 ]
 provides-extras = ["bpk"]

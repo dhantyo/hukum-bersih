@@ -92,6 +92,10 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--no-text", action="store_true",
                    help="download and archive PDFs, but leave texts alone (no conversion)")
 
+    p = sub.add_parser("reparse-bpk", help="re-convert texts from the BPK PDFs archived on archive.org")
+    p.add_argument("--only", default="", help="comma-separated ids")
+    p.add_argument("--limit", type=int, default=0)
+
     p = sub.add_parser("archive-pending",
                        help="archive recorded regulation PDFs not yet on archive.org")
     p.add_argument("--limit", type=int, default=150)
@@ -225,6 +229,20 @@ def main(argv: list[str] | None = None) -> int:
             return 1
         print(f"done: {done} imported/updated, {failed} failed, "
               f"{session.clearances} Cloudflare clearance(s)")
+        return 0
+
+    if args.command == "reparse-bpk":
+        from .sources import peraturan_bpk as bpk
+
+        only = {i.strip() for i in args.only.split(",") if i.strip()} or None
+        done = failed = 0
+        for line in bpk.reparse(args.data_dir, only):
+            print(line, flush=True)
+            done += line.startswith("ok")
+            failed += line.startswith("FAIL")
+            if args.limit and done >= args.limit:
+                break
+        print(f"done: {done} reparsed, {failed} failed")
         return 0
 
     if args.command == "archive-pending":
