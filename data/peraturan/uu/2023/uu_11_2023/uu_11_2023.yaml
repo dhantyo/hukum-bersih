@@ -11,8 +11,8 @@ tanggal_penetapan: '2023-05-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-2023
-source_pdf_url: https://peraturan.go.id/files/uu-no-11-tahun-2023.pdf
+source_url: https://peraturan.bpk.go.id/Details/249335/uu-no-11-tahun-2023
+source_pdf_url: https://peraturan.bpk.go.id/Download/305729/UU%20Nomor%2011%20Tahun%202023.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_2023_2023-05-04.txt
   pasal_count: 9
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4b81198d8dd5d95a88bf1955966893f8f09fe927189a58c8fb771f8802970c0c
+  ocr: true
 pdf_sha256: 4b81198d8dd5d95a88bf1955966893f8f09fe927189a58c8fb771f8802970c0c
+tanggal_pengundangan: '2023-05-04'
+tanggal_berlaku: '2023-05-04'
+lembaran_negara: 'LN.2023/No.58, TLN No.6867, jdih.setneg.go.id: 6 hlm.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-2023
+  source_pdf_url: https://peraturan.go.id/files/uu-no-11-tahun-2023.pdf
+bpk:
+  id: 249335
+  files:
+  - url: https://peraturan.bpk.go.id/Download/305729/UU%20Nomor%2011%20Tahun%202023.pdf
+    bpk_file_id: 305729
+    filename: UU Nomor 11 Tahun 2023.pdf
+    sha256: 4b81198d8dd5d95a88bf1955966893f8f09fe927189a58c8fb771f8802970c0c
+    bytes: 487339
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_10_1950
+      citation: UU No. 10 Tahun 1950
+      tentang: Pembentukan Propinsi Djawa Tengah
+      url: https://peraturan.bpk.go.id/Details/38118/uu-no-10-tahun-1950
+      note: null
+uji_materi: null

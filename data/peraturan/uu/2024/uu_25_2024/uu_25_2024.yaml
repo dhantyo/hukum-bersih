@@ -12,8 +12,8 @@ tanggal_penetapan: '2026-07-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-25-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-25-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/290720/uu-no-25-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/349995/UU%20Nomor%2025%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,35 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_25_2024_2026-07-02.txt
   pasal_count: 9
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a2cfecaf1a2e421f8e7f54d85df64c99e05ebff244263cb45a8b69cc07269939
+  ocr: true
 pdf_sha256: 7fe456e2ab10e1b1960e577f1f74ed63110b26fe6579e2f091e3606d375275c5
+tanggal_penetapan_bpk: '2024-07-02'
+tanggal_pengundangan: '2024-07-02'
+tanggal_berlaku: '2024-07-02'
+lembaran_negara: 'LN 2024 (123), TLN (6945): 6 HLM.; JDIH.SETNEG.GO.ID'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-25-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-25-tahun-2024.pdf
+bpk:
+  id: 290720
+  files:
+  - url: https://peraturan.bpk.go.id/Download/349995/UU%20Nomor%2025%20Tahun%202024.pdf
+    bpk_file_id: 349995
+    filename: UU Nomor 25 Tahun 2024.pdf
+    sha256: a2cfecaf1a2e421f8e7f54d85df64c99e05ebff244263cb45a8b69cc07269939
+    bytes: 563523
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: null
+      citation: UUDrt No. 8 Tahun 1956
+      tentang: Pembentukan Daerah Otonom Kota-Kota Besar, Dalam Lingkungan Daerah
+        Propinsi Sumatera Utara
+      url: https://peraturan.bpk.go.id/Details/105541/uudrt-no-8-tahun-1956
+      note: Ketentuan yang mengatur mengenai Kota Pematangsiantar dalam Undang-Undang
+        Darurat Nomor 8 Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

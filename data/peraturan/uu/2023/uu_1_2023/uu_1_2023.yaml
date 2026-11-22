@@ -11,8 +11,8 @@ tanggal_penetapan: '2023-01-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-2023
-source_pdf_url: https://peraturan.go.id/files/uu1-2023.pdf
+source_url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+source_pdf_url: https://peraturan.bpk.go.id/Download/287456/UU%20Nomor%201%20Tahun%202023.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,6 +25,267 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_1_2023_2023-01-02
+  kind: asli
+  source: official
+  date: '2023-01-02'
+  date_basis: tanggal_penetapan
+  text: uu_1_2023_2023-01-02.txt
+  pasal_count: 624
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 975fc86cfa63204ee21810cb7a99918c3a16b5fd47e58dadd9562c5ff3f1dfa0
+  ocr: true
 pdf_sha256: f8ed69187c909a87062f20ffcae77eda22bbb2ab5948aed2d4ec7c6652339ab1
-parse_error: 'LeakedMarkupError: hcontainer_1__p_2: markup in text: ''ART 1 -'''
+tanggal_pengundangan: '2023-01-02'
+tanggal_berlaku: '2026-01-02'
+lembaran_negara: 'LN.2023/No.1, TLN No.6842 , jdih.setneg.go.id: 229 hlm.'
+subjek: HUKUM PIDANA, PERDATA, DAN DAGANG - TINDAK PIDANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-2023
+  source_pdf_url: https://peraturan.go.id/files/uu1-2023.pdf
+bpk:
+  id: 234935
+  files:
+  - url: https://peraturan.bpk.go.id/Download/287456/UU%20Nomor%201%20Tahun%202023.pdf
+    bpk_file_id: 287456
+    filename: UU Nomor 1 Tahun 2023.pdf
+    sha256: 975fc86cfa63204ee21810cb7a99918c3a16b5fd47e58dadd9562c5ff3f1dfa0
+    bytes: 24793845
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_1_2026
+      citation: UU No. 1 Tahun 2026
+      tentang: Penyesuaian Pidana
+      url: https://peraturan.bpk.go.id/Details/337869/uu-no-1-tahun-2026
+      note: null
+    Mencabut:
+    - id: uu_27_1999
+      citation: UU No. 27 Tahun 1999
+      tentang: Perubahan Kitab-Kitab Undang-Undang Hukum Pidana yang Berkaitan dengan
+        Kejahatan Terhadap Keamanan Negara
+      url: https://peraturan.bpk.go.id/Details/45342/uu-no-27-tahun-1999
+      note: null
+    - id: uu_4_1976
+      citation: UU No. 4 Tahun 1976
+      tentang: Perubahan dan Penambahan Beberapa Pasal Dalam Kitab Undang-Undang Hukum
+        Pidana Bertalian Dengan Perluasan Berlakunya Ketentuan Perundang-Undangan
+        Pidana, Kejahatan Penerbangan, dan Kejahatan Terhadap Sarana/Prasarana Penerbangan
+      url: https://peraturan.bpk.go.id/Details/47208/uu-no-4-tahun-1976
+      note: null
+    - id: uu_7_1974
+      citation: UU No. 7 Tahun 1974
+      tentang: Penertiban Perjudian
+      url: https://peraturan.bpk.go.id/Details/47415/uu-no-7-tahun-1974
+      note: null
+    - id: perppu_18_1960
+      citation: PERPU No. 18 Tahun 1960
+      tentang: Perubahan Jumlah Hukuman Denda Dalam Kitab Undang-Undang Hukum Pidana
+        Dan Dalam Ketentuan-Ketentuan Pidana Lainnya Yang Dikeluarkan Sebelum Tanggal
+        17 Agustus 1945
+      url: https://peraturan.bpk.go.id/Details/53472/perpu-no-18-tahun-1960
+      note: null
+    - id: perppu_16_1960
+      citation: PERPU No. 16 Tahun 1960
+      tentang: Beberapa Perubahan Dalam Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/53465/perpu-no-16-tahun-1960
+      note: null
+    - id: uu_1_1960
+      citation: UU No. 1 Tahun 1960
+      tentang: Perubahan Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/51291/uu-no-1-tahun-1960
+      note: null
+    - id: uu_73_1958
+      citation: UU No. 73 Tahun 1958
+      tentang: Menyatakan Berlakunya Undang-Undang No. 1 Tahun 1946 Republik Indonesia
+        Tentang Peraturan Hukum Pidana Untuk Seluruh Wilayah Republik Indonesia Dan
+        Mengubah Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/52862/uu-no-73-tahun-1958
+      note: null
+    - id: uu_1_1946
+      citation: UU No. 1 Tahun 1946
+      tentang: Peraturan tentang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/25029/uu-no-1-tahun-1946
+      note: null
+    Mencabut sebagian:
+    - id: uu_5_2018
+      citation: UU No. 5 Tahun 2018
+      tentang: Perubahan atas Undang-Undang Nomor 15 Tahun 2003 tentang Penetapan
+        Peraturan Pemerintah Pengganti Undang Undang Nomor 1 Tahun 2002 tentang Pemberantasan
+        Tindak Pidana Terorisme Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/82689/uu-no-5-tahun-2018
+      note: Pasal 6 dan Pasal 7 Undang-Undang Nomor 15 Tahun 2003 sebagaimana telah
+        diubah dengan Undang-Undang Nomor 5 Tahun 2018
+    - id: uu_19_2016
+      citation: UU No. 19 Tahun 2016
+      tentang: Perubahan Atas Undang-Undang Nomor 11 Tahun 2008 Tentang Informasi
+        Dan Transaksi Elektronik
+      url: https://peraturan.bpk.go.id/Details/37582/uu-no-19-tahun-2016
+      note: Pasal 27 ayat (1), Pasal 27 ayat (3), Pasal 28 ayat (2), Pasal 30, Pasal
+        31 ayat (1), Pasal 31 ayat (2), Pasal 36, Pasal 45 ayat (1), Pasal 45 ayat
+        (3), Pasal 45A ayat (2), Pasal 46, Pasal 47, dan Pasal 51 ayat (2) Undang-Undang
+        Nomor 11 Tahun 2008 sebagaimana telah diubah dengan Undang-Undang Nomor 19
+        Tahun 2016
+    - id: uu_17_2016
+      citation: UU No. 17 Tahun 2016
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        2016 Tentang Perubahan Kedua Atas Undang-Undang Nomor 23 Tahun 2002 Tentang
+        Perlindungan Anak Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/37575/uu-no-17-tahun-2016
+      note: Pasal 81 ayat (1) dan Pasal 82 Undang-Undang Nomor 23 Tahun 2002 sebagaimana
+        telah beberapa kali diubah, terakhir dengan Undang-Undang Nomor 17 Tahun 2016
+    - id: uu_35_2014
+      citation: UU No. 35 Tahun 2014
+      tentang: Perubahan atas Undang-Undang Nomor 23 Tahun 2002 Tentang Perlindungan
+        Anak
+      url: https://peraturan.bpk.go.id/Details/38723/uu-no-35-tahun-2014
+      note: Pasal 81 ayat (1) dan Pasal 82 Undang-Undang Nomor 23 Tahun 2002 sebagaimana
+        telah beberapa kali diubah, terakhir dengan Undang-Undang Nomor 17 Tahun 2016
+    - id: uu_31_2014
+      citation: UU No. 31 Tahun 2014
+      tentang: Perubahan atas Undang-Undang Nomor 13 Tahun 2006 Tentang Perlindungan
+        Saksi dan Korban
+      url: https://peraturan.bpk.go.id/Details/38701/uu-no-31-tahun-2014
+      note: Pasal 37, Pasal 38, Pasal 39, dan Pasal 41 Undang-Undang Nomor 13 Tahun
+        2006 sebagaimana telah diubah dengan Undang-Undang Nomor 31 Tahun 2014
+    - id: uu_9_2013
+      citation: UU No. 9 Tahun 2013
+      tentang: Pencegahan dan Pemberantasan Tindak Pidana Pendanaan Terorisme
+      url: https://peraturan.bpk.go.id/Details/38846/uu-no-9-tahun-2013
+      note: Pasal 4 Undang-Undang Nomor 9 Tahun 2013
+    - id: uu_18_2012
+      citation: UU No. 18 Tahun 2012
+      tentang: Pangan
+      url: https://peraturan.bpk.go.id/Details/39100/uu-no-18-tahun-2012
+      note: Pasal 136 Undang-Undang Nomor 18 Tahun 2012
+    - id: uu_7_2011
+      citation: UU No. 7 Tahun 2011
+      tentang: Mata Uang
+      url: https://peraturan.bpk.go.id/Details/39182/uu-no-7-tahun-2011
+      note: Pasal 36 ayat (1), ayat (2), ayat (3), dan ayat (4) Undang-Undang Nomor
+        7 Tahun 2011
+    - id: uu_6_2011
+      citation: UU No. 6 Tahun 2011
+      tentang: Keimigrasian
+      url: https://peraturan.bpk.go.id/Details/39140/uu-no-6-tahun-2011
+      note: Pasal 120 ayat (1) dan Pasal 126 huruf e Undang-Undang Nomor 6 Tahun 2011
+    - id: uu_8_2010
+      citation: UU No. 8 Tahun 2010
+      tentang: Pencegahan dan Pemberantasan Tindak Pidana Pencucian Uang
+      url: https://peraturan.bpk.go.id/Details/38547/uu-no-8-tahun-2010
+      note: Pasal 2 ayat (1), Pasal 3, Pasal 4, dan Pasal 5 Undang-Undang Nomor 8
+        Tahun 2010
+    - id: uu_36_2009
+      citation: UU No. 36 Tahun 2009
+      tentang: Kesehatan
+      url: https://peraturan.bpk.go.id/Details/38778/uu-no-36-tahun-2009
+      note: Pasal 192, Pasal 194, dan Pasal 195 Undang-Undang Nomor 36 Tahun 2009
+        sebagaimana telah diubah dengan Undang-Undang Nomor 11 Tahun 2020
+    - id: uu_35_2009
+      citation: UU No. 35 Tahun 2009
+      tentang: Narkotika
+      url: https://peraturan.bpk.go.id/Details/38776/uu-no-35-tahun-2009
+      note: Pasal 111 sampai dengan Pasal 126 Undang-Undang Nomor 35 Tahun 2009
+    - id: uu_24_2009
+      citation: UU No. 24 Tahun 2009
+      tentang: Bendera, Bahasa, dan Lambang Negara, serta Lagu Kebangsaan
+      url: https://peraturan.bpk.go.id/Details/38661/uu-no-24-tahun-2009
+      note: Pasal 66 sampai dengan Pasal 71 Undang-Undang Nomor 24 Tahun 2009
+    - id: uu_44_2008
+      citation: UU No. 44 Tahun 2008
+      tentang: Pornografi
+      url: https://peraturan.bpk.go.id/Details/39740/uu-no-44-tahun-2008
+      note: Pasal 29 Undang-Undang Nomor 44 Tahun 2008
+    - id: uu_40_2008
+      citation: UU No. 40 Tahun 2008
+      tentang: Penghapusan Diskriminasi Ras dan Etnis
+      url: https://peraturan.bpk.go.id/Details/39733/uu-no-40-tahun-2008
+      note: Pasal 15 dan Pasal 17 Undang-Undang Nomor 40 Tahun 2008
+    - id: uu_11_2008
+      citation: UU No. 11 Tahun 2008
+      tentang: Informasi dan Transaksi Elektronik
+      url: https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008
+      note: Pasal 27 ayat (1), Pasal 27 ayat (3), Pasal 28 ayat (2), Pasal 30, Pasal
+        31 ayat (1), Pasal 31 ayat (2), Pasal 36, Pasal 45 ayat (1), Pasal 45 ayat
+        (3), Pasal 45A ayat (2), Pasal 46, Pasal 47, dan Pasal 51 ayat (2) Undang-Undang
+        Nomor 11 Tahun 2008 sebagaimana telah diubah dengan Undang-Undang Nomor 19
+        Tahun 2016
+    - id: uu_21_2007
+      citation: UU No. 21 Tahun 2007
+      tentang: Pemberantasan Tindak Pidana Perdagangan Orang
+      url: https://peraturan.bpk.go.id/Details/39849/uu-no-21-tahun-2007
+      note: Pasal 2 Undang-Undang Nomor 21 Tahun 2007
+    - id: uu_13_2006
+      citation: UU No. 13 Tahun 2006
+      tentang: Perlindungan Saksi dan Korban
+      url: https://peraturan.bpk.go.id/Details/40178/uu-no-13-tahun-2006
+      note: Pasal 37, Pasal 38, Pasal 39, dan Pasal 41 Undang-Undang Nomor 13 Tahun
+        2006 sebagaimana telah diubah dengan Undang-Undang Nomor 31 Tahun 2014
+    - id: uu_20_2003
+      citation: UU No. 20 Tahun 2003
+      tentang: Sistem Pendidikan Nasional
+      url: https://peraturan.bpk.go.id/Details/43920/uu-no-20-tahun-2003
+      note: Pasal 69 Undang-Undang Nomor 20 Tahun 2003
+    - id: uu_15_2003
+      citation: UU No. 15 Tahun 2003
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        2002 Tentang Pemberantasan Tindak Pidana Terorisme, Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/43015/uu-no-15-tahun-2003
+      note: Pasal 6 dan Pasal 7 Undang-Undang Nomor 15 Tahun 2003 sebagaimana telah
+        diubah dengan Undang-Undang Nomor 5 Tahun 2018
+    - id: uu_23_2002
+      citation: UU No. 23 Tahun 2002
+      tentang: Perlindungan Anak
+      url: https://peraturan.bpk.go.id/Details/44473/uu-no-23-tahun-2002
+      note: Pasal 81 ayat (1) dan Pasal 82 Undang-Undang Nomor 23 Tahun 2002 sebagaimana
+        telah beberapa kali diubah, terakhir dengan Undang-Undang Nomor 17 Tahun 2016
+    - id: uu_20_2001
+      citation: UU No. 20 Tahun 2001
+      tentang: Perubahan Atas Undang-Undang Nomor 31 Tahun 1999 tentang Pemberantasan
+        Tindak Pidana Korupsi
+      url: https://peraturan.bpk.go.id/Details/44900/uu-no-20-tahun-2001
+      note: Pasal 2 ayat (1), Pasal 3, Pasal 5, Pasal 11, dan Pasal 13 Undang-Undang
+        Nomor 31 Tahun 1999 sebagaimana telah diubah dengan Undang-Undang Nomor 20
+        Tahun 2001
+    - id: uu_26_2000
+      citation: UU No. 26 Tahun 2000
+      tentang: Pengadilan Hak Asasi Manusia
+      url: https://peraturan.bpk.go.id/Details/44993/uu-no-26-tahun-2000
+      note: Pasal 8, Pasal 9, dan Pasal 36 sampai dengan Pasal 40 Undang-Undang Nomor
+        26 Tahun 2000
+    - id: uu_31_1999
+      citation: UU No. 31 Tahun 1999
+      tentang: Pemberantasan Tindak Pidana Korupsi
+      url: https://peraturan.bpk.go.id/Details/45350/uu-no-31-tahun-1999
+      note: Pasal 2 ayat (1), Pasal 3, Pasal 5, Pasal 11, dan Pasal 13 Undang-Undang
+        Nomor 31 Tahun 1999 sebagaimana telah diubah dengan Undang-Undang Nomor 20
+        Tahun 2001
+    - id: null
+      citation: UUDrt No. 12 Tahun 1951
+      tentang: Mengubah "Ordonnantie Tijdelijke Bijzondere Strafbepalingen" (Stbl.
+        1948 No.17) dan Undang-Undang R.I. Dahulu Nr 8 Tahun 1948
+      url: https://peraturan.bpk.go.id/Details/51959/uudrt-no-12-tahun-1951
+      note: Pasal 1 dan Pasal 2 Undang-Undang Darurat Nomor 12 Tahun 1951
+    - id: null
+      citation: UUDrt No. 1 Tahun 1951
+      tentang: Tindakan-Tindakan Sementara untuk Menyelenggarakan Kesatuan Susunan
+        Kekuasaan dan Acara Pengadilan-Pengadilan Sipil
+      url: https://peraturan.bpk.go.id/Details/51906/uudrt-no-1-tahun-1951
+      note: Pasal 5 ayat (3) huruf b dan huruf c Undang-Undang Darurat Nomor 1 Tahun
+        1951
+    - id: null
+      citation: Pasal 4 Penetapan Presiden Nomor 1 Tahun 1965 tentang Pencegahan Penyalahgunaan
+        dan/atau Penodaan Agama
+      tentang: null
+      url: null
+      note: null
+uji_materi:
+- putusan: 27/PUU-XXIV/2026
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/248/putusan_mkri_27_PUU-XXIV_2026.pdf
+  amar: Pasal 237 huruf c Undang-Undang Nomor 1 Tahun 2023 tentang Kitab Undang-Undang
+    Hukum Pidana (Lembaran Negara Republik Indonesia Tahun 2023 Nomor 1, Tambahan
+    Lembaran Negara Republik Indonesia Nomor 6842) bertentangan dengan Undang-Undang
+    Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum
+    mengikat.

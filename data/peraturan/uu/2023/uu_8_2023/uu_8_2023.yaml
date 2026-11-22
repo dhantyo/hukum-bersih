@@ -11,8 +11,8 @@ tanggal_penetapan: '2023-05-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-2023
-source_pdf_url: https://peraturan.go.id/files/uu-no-8-tahun-2023.pdf
+source_url: https://peraturan.bpk.go.id/Details/249318/uu-no-8-tahun-2023-provinsi-sumatera-utara
+source_pdf_url: https://peraturan.bpk.go.id/Download/305711/UU%20Nomor%208%20Tahun%202023.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,40 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_2023_2023-05-04.txt
   pasal_count: 10
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6d1518f2cb57587a1afc8f02dce5b94f12c79549537c2fb190017a909f2dd3b2
+  ocr: true
 pdf_sha256: 6d1518f2cb57587a1afc8f02dce5b94f12c79549537c2fb190017a909f2dd3b2
+tanggal_pengundangan: '2023-05-04'
+tanggal_berlaku: '2023-05-04'
+lembaran_negara: 'LN.2023/No.55, TLN No.6864, jdih.setneg.go.id: 7 hlm.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-2023
+  source_pdf_url: https://peraturan.go.id/files/uu-no-8-tahun-2023.pdf
+bpk:
+  id: 249318
+  files:
+  - url: https://peraturan.bpk.go.id/Download/305711/UU%20Nomor%208%20Tahun%202023.pdf
+    bpk_file_id: 305711
+    filename: UU Nomor 8 Tahun 2023.pdf
+    sha256: 6d1518f2cb57587a1afc8f02dce5b94f12c79549537c2fb190017a909f2dd3b2
+    bytes: 972956
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_10_1948
+      citation: UU No. 10 Tahun 1948
+      tentang: Pembagian Sumatra dalam Tiga Propinsi
+      url: https://peraturan.bpk.go.id/Details/25549/uu-no-10-tahun-1948
+      note: null
+    Mencabut sebagian:
+    - id: uu_24_1956
+      citation: UU No. 24 Tahun 1956
+      tentang: Pembentukan Daerah Otonom Propinsi Aceh dan Perubahan Peraturan Pembentukan
+        Propinsi Sumatera Utara
+      url: https://peraturan.bpk.go.id/Details/51153/uu-no-24-tahun-1956
+      note: Ketentuan mengenai perubahan peraturan pembentukan Propinsi Sumatera Utara
+        dalam Undang-Undang Nomor 24 Tahun 1956
+uji_materi: null

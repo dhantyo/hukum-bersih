@@ -12,8 +12,8 @@ tanggal_penetapan: '2026-07-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-18-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/290744/uu-no-18-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/350021/UU%20Nomor%2018%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,35 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2024_2026-07-02.txt
   pasal_count: 10
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f3e8fc836b4eb67ec0e71967a17735d8f12415b55292cfcc5088242dd1341534
+  ocr: true
 pdf_sha256: f3e8fc836b4eb67ec0e71967a17735d8f12415b55292cfcc5088242dd1341534
+tanggal_penetapan_bpk: '2024-07-02'
+tanggal_pengundangan: '2024-07-02'
+tanggal_berlaku: '2024-07-02'
+lembaran_negara: 'LN 2024 (116), TLN (6938): 6 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-18-tahun-2024.pdf
+bpk:
+  id: 290744
+  files:
+  - url: https://peraturan.bpk.go.id/Download/350021/UU%20Nomor%2018%20Tahun%202024.pdf
+    bpk_file_id: 350021
+    filename: UU Nomor 18 Tahun 2024.pdf
+    sha256: f3e8fc836b4eb67ec0e71967a17735d8f12415b55292cfcc5088242dd1341534
+    bytes: 889790
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: null
+      citation: UUDrt No. 7 Tahun 1956
+      tentang: Pembentukan Daerah Otonom Kabupaten-Kabupaten Dalam Lingkungan Daerah
+        Propinsi Sumatera Utara
+      url: https://peraturan.bpk.go.id/Details/52943/uudrt-no-7-tahun-1956
+      note: Ketentuan yang mengatur mengenai Kabupaten Deli Serdang dalam Undang-Undang
+        Darurat Nomor 7 Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null
