@@ -11,8 +11,8 @@ tanggal_penetapan: '1999-09-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-42-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu42-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45374/uu-no-42-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33874/UU%20Nomor%2042%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,65 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_42_1999_1999-09-30
+  kind: asli
+  source: official
+  date: '1999-09-30'
+  date_basis: tanggal_penetapan
+  text: uu_42_1999_1999-09-30.txt
+  pasal_count: 41
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: dc14d2ef3c7df8c29ff0a9e852604d0e1cc56eb8faf4c2f304cb65858b85fe0b
 pdf_sha256: dc14d2ef3c7df8c29ff0a9e852604d0e1cc56eb8faf4c2f304cb65858b85fe0b
-parse_error: 'LeakedMarkupError: hcontainer_1__p_2: markup in text: ''ART 1 -'''
+tanggal_pengundangan: '1999-09-30'
+tanggal_berlaku: '1999-09-30'
+lembaran_negara: 'LN. 1999/ No. 168, TLN NO. 3889, LL SETNEG : 13 HLM'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG - HUKUM PIDANA, PERDATA, DAN DAGANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-42-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu42-1999.pdf
+bpk:
+  id: 45374
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33874/UU%20Nomor%2042%20Tahun%201999.pdf
+    bpk_file_id: 33874
+    filename: UU Nomor 42 Tahun 1999.pdf
+    sha256: dc14d2ef3c7df8c29ff0a9e852604d0e1cc56eb8faf4c2f304cb65858b85fe0b
+    bytes: 105002
+    archive_url: null
+  status_peraturan: null
+uji_materi:
+- putusan: PUTUSAN Nomor 18/PUU-XVII/2019
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/158/putusan_mkri_6694.pdf
+  amar: Amar Putusan:1. Mengabulkan permohonan para Pemohon untuk sebagian; 2. Menyatakan
+    Pasal 15 ayat (2) Undang-Undang Nomor 42 Tahun 1999 tentang Jaminan Fidusia (Lembaran
+    Negara Republik Indonesia Tahun 1999 Nomor 168, Tambahan Lembaran Negara Republik
+    Indonesia Nomor 3889) sepanjang frasa “kekuatan eksekutorial” dan frasa “sama
+    dengan putusan pengadilan yang berkekuatan hukum tetap” bertentangan dengan Undang-Undang
+    Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum
+    mengikat sepanjang tidak dimaknai “terhadap jaminan fidusia yang tidak ada kesepakatan
+    tentang cidera janji (wanprestasi) dan debitur keberatan menyerahkan secara sukarela
+    objek yang menjadi jaminan fidusia, maka segala mekanisme dan prosedur hukum dalam
+    pelaksanaan eksekusi Sertifikat Jaminan Fidusia harus dilakukan dan berlaku sama
+    dengan pelaksanaan eksekusi putusan pengadilan yang telah berkekuatan hukum tetap”;
+    3. Menyatakan Pasal 15 ayat (3) Undang-Undang Nomor 42 Tahun 1999 tentang Jaminan
+    Fidusia (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 168, Tambahan Lembaran
+    Negara Republik Indonesia Nomor 3889) sepanjang frasa “cidera janji” bertentangan
+    dengan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai
+    kekuatan hukum mengikat sepanjang tidak dimaknai bahwa “adanya cidera janji tidak
+    ditentukan secara sepihak oleh kreditur melainkan atas dasar kesepakatan antara
+    kreditur dengan debitur atau atas dasar upaya hukum yang menentukan telah terjadinya
+    cidera janji”. 4. Menyatakan Penjelasan Pasal 15 ayat (2) Undang-Undang Nomor
+    42 Tahun 1999 tentang Jaminan Fidusia (Lembaran Negara Republik Indonesia Tahun
+    1999 Nomor 168, Tambahan Lembaran Negara Republik Indonesia Nomor 3889) sepanjang
+    frasa “kekuatan eksekutorial” bertentangan dengan Undang-Undang Dasar Negara Republik
+    Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat sepanjang tidak
+    dimaknai “terhadap jaminan fidusia yang tidak ada kesepakatan tentang cidera janji
+    dan debitur keberatan menyerahkan secara sukarela objek yang menjadi jaminan fidusia,
+    maka segala mekanisme dan prosedur hukum dalam pelaksanaan eksekusi Sertifikat
+    Jaminan Fidusia harus dilakukan dan berlaku sama dengan pelaksanaan eksekusi putusan
+    pengadilan yang telah berkekuatan hukum tetap”; 5. Memerintahkan pemuatan putusan
+    ini dalam Berita Negara Republik Indonesia sebagaimana mestinya; 6. Menolak permohonan
+    para Pemohon untuk selain dan selebihnya.

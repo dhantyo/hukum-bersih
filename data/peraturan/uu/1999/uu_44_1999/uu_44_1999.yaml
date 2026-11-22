@@ -12,8 +12,8 @@ tanggal_penetapan: '1999-10-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-44-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu44-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45380/uu-no-44-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33880/UU%20Nomor%2044%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_44_1999_1999-10-04.txt
   pasal_count: 13
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2fd05840b61308059ad10e4b25b3b01f772f486518c8747a6bc6e2bdb732976f
 pdf_sha256: 2fd05840b61308059ad10e4b25b3b01f772f486518c8747a6bc6e2bdb732976f
+tanggal_pengundangan: '1999-10-04'
+tanggal_berlaku: '1999-10-04'
+lembaran_negara: 'LN. 1999/ No. 172, TLN NO. 3893, LL SETNEG : 6 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-44-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu44-1999.pdf
+bpk:
+  id: 45380
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33880/UU%20Nomor%2044%20Tahun%201999.pdf
+    bpk_file_id: 33880
+    filename: UU Nomor 44 Tahun 1999.pdf
+    sha256: 2fd05840b61308059ad10e4b25b3b01f772f486518c8747a6bc6e2bdb732976f
+    bytes: 69153
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

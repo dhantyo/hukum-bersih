@@ -14,8 +14,8 @@ tanggal_penetapan: '1999-10-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-53-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu53-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45399/uu-no-53-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33899/UU%20Nomor%2053%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,4 +31,50 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_53_1999_1999-10-04.txt
   pasal_count: 30
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 00d881f57ea9f0948a9a19629d3e4c1d515a5d2f8dd4308a8c048f0b1b4e4551
 pdf_sha256: 00d881f57ea9f0948a9a19629d3e4c1d515a5d2f8dd4308a8c048f0b1b4e4551
+tanggal_pengundangan: '1999-10-04'
+tanggal_berlaku: '1999-10-04'
+lembaran_negara: 'LN. 1999/ No. 181, TLN NO. 3902, LL SETNEG : 17 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-53-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu53-1999.pdf
+bpk:
+  id: 45399
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33899/UU%20Nomor%2053%20Tahun%201999.pdf
+    bpk_file_id: 33899
+    filename: UU Nomor 53 Tahun 1999.pdf
+    sha256: 00d881f57ea9f0948a9a19629d3e4c1d515a5d2f8dd4308a8c048f0b1b4e4551
+    bytes: 145052
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_34_2008
+      citation: UU No. 34 Tahun 2008
+      tentang: Perubahan Ketiga atas Undang-Undang Nomor 53 Tahun 1999 tentang Pembentukan
+        Kabupaten Pelalawan, Kabupaten Rokan Hulu, Kabupaten Rokan Hilir, Kabupaten
+        Siak, Kabupaten Karimun, Kabupaten Natuna, Kabupaten Kuantan Singingi, dan
+        Kota Batam
+      url: https://peraturan.bpk.go.id/Details/39693/uu-no-34-tahun-2008
+      note: null
+    - id: uu_11_2003
+      citation: UU No. 11 Tahun 2003
+      tentang: Perubahan atas Undang-Undang Republik Indonesia Nomor 53 Tahun 1999
+        tentang Pembentukan Kabupaten Pelalawan, Kabupaten Rokan Hulu, Kabupaten Rokan
+        Hilir, Kabupaten Siak, Kabupaten Karimun, Kabupaten Natuna, Kabupaten Kuantan
+        Singingi, Dan Kota Batam
+      url: https://peraturan.bpk.go.id/Details/43011/uu-no-11-tahun-2003
+      note: null
+    - id: uu_13_2000
+      citation: UU No. 13 Tahun 2000
+      tentang: Perubahan atas Undang-Undang Nomor 53 Tahun 1999 tentang Pembentukan
+        Kabupaten Pelalawan, Kabupaten Rokan Hulu, Kabupaten Rokan Hilir, Kabupaten
+        Siak, Kabupaten Karimun, Kabupaten Natuna, Kabupaten Kuantan Singingi, dan
+        Kota Batam
+      url: https://peraturan.bpk.go.id/Details/44963/uu-no-13-tahun-2000
+      note: null
+uji_materi: null

@@ -12,8 +12,8 @@ tanggal_penetapan: '1999-04-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu16-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45306/uu-no-16-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33806/UU%20Nomor%2016%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_1999_1999-04-20.txt
   pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6943177616986dd331a1a2ef8af3becaffa19316306e6c33eed29d36e21b8726
 pdf_sha256: 6943177616986dd331a1a2ef8af3becaffa19316306e6c33eed29d36e21b8726
+tanggal_pengundangan: '1999-04-20'
+tanggal_berlaku: '1999-04-20'
+lembaran_negara: 'LN. 1999/ No. 50, TLN NO. 3829, LL SETNEG : 9 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu16-1999.pdf
+bpk:
+  id: 45306
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33806/UU%20Nomor%2016%20Tahun%201999.pdf
+    bpk_file_id: 33806
+    filename: UU Nomor 16 Tahun 1999.pdf
+    sha256: 6943177616986dd331a1a2ef8af3becaffa19316306e6c33eed29d36e21b8726
+    bytes: 75757
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: pp_8_1979
+      citation: PP No. 8 Tahun 1979
+      tentang: Pembentukan Kota Administratif Dumai
+      url: https://peraturan.bpk.go.id/Details/66721/pp-no-8-tahun-1979
+      note: null
+uji_materi: null

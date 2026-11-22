@@ -14,8 +14,8 @@ tanggal_penetapan: '1999-05-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu19-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45317/uu-no-19-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33817/UU%20Nomor%2019%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,4 +31,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_1999_1999-05-07.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2fc259168b9f1dbefb998ea11ccefc51313e84c01663ce82cf142a01610c5de5
 pdf_sha256: 2fc259168b9f1dbefb998ea11ccefc51313e84c01663ce82cf142a01610c5de5
+tanggal_pengundangan: '1999-05-07'
+tanggal_berlaku: '1999-05-07'
+lembaran_negara: 'LN. 1999/ No. 55, TLN NO. 3834, LL SETNEG : 3 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu19-1999.pdf
+bpk:
+  id: 45317
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33817/UU%20Nomor%2019%20Tahun%201999.pdf
+    bpk_file_id: 33817
+    filename: UU Nomor 19 Tahun 1999.pdf
+    sha256: 2fc259168b9f1dbefb998ea11ccefc51313e84c01663ce82cf142a01610c5de5
+    bytes: 48593
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

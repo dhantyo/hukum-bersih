@@ -6,20 +6,18 @@ year: 1999
 title: Undang-Undang Nomor 56 Tahun 1999 tentang Rakyat Terlatih
 tentang: RAKYAT TERLATIH
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 23 Tahun 2019 Tentang Pengelolaan
-  Sumber Daya Nasional Untuk Pertahanan Negara'
+status: tidak_berlaku
 tanggal_penetapan: '1999-10-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-56-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu56-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45405/uu-no-56-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33905/UU%20Nomor%2056%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_23_2019
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,4 +28,29 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_56_1999_1999-10-04.txt
   pasal_count: 44
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1ef2709589c852d833a96e385cdd9bc140a3b9307c856a74f6872d9bee322b83
 pdf_sha256: 1ef2709589c852d833a96e385cdd9bc140a3b9307c856a74f6872d9bee322b83
+lembaran_negara: 'LN. 1999/ No.184, TLN NO. 3905, LL SETNEG : 12 HLM'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER - KETATANEGARAAN, KENEGARAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-56-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu56-1999.pdf
+bpk:
+  id: 45405
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33905/UU%20Nomor%2056%20Tahun%201999.pdf
+    bpk_file_id: 33905
+    filename: UU Nomor 56 Tahun 1999.pdf
+    sha256: 1ef2709589c852d833a96e385cdd9bc140a3b9307c856a74f6872d9bee322b83
+    bytes: 120392
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_23_2019
+      citation: UU No. 23 Tahun 2019
+      tentang: Pengelolaan Sumber Daya Nasional Untuk Pertahanan Negara
+      url: https://peraturan.bpk.go.id/Details/123685/uu-no-23-tahun-2019
+      note: null
+uji_materi: null

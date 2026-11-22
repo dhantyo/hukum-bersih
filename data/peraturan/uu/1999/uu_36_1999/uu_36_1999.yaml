@@ -11,8 +11,8 @@ tanggal_penetapan: '1999-09-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-36-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu36-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45357/uu-no-36-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33857/UU%20Nomor%2036%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,48 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_36_1999_1999-09-08.txt
   pasal_count: 64
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a451093ca2a41f608083822de3826fa73a5e54949d11fb1e9e44197e8e77da1c
 pdf_sha256: a451093ca2a41f608083822de3826fa73a5e54949d11fb1e9e44197e8e77da1c
+tanggal_pengundangan: '1999-09-08'
+tanggal_berlaku: '2000-09-08'
+lembaran_negara: 'LN. 1999/ No. 154, TLN NO. 3881, LL SETNEG : 21 HLM'
+subjek: ILMU PENGETAHUAN DAN TEKNOLOGI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-36-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu36-1999.pdf
+bpk:
+  id: 45357
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33857/UU%20Nomor%2036%20Tahun%201999.pdf
+    bpk_file_id: 33857
+    filename: UU Nomor 36 Tahun 1999.pdf
+    sha256: a451093ca2a41f608083822de3826fa73a5e54949d11fb1e9e44197e8e77da1c
+    bytes: 105452
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_3_1989
+      citation: UU No. 3 Tahun 1989
+      tentang: Telekomunikasi
+      url: https://peraturan.bpk.go.id/Details/46798/uu-no-3-tahun-1989
+      note: null
+uji_materi: null

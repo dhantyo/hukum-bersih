@@ -14,8 +14,8 @@ tanggal_penetapan: '1999-05-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu20-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45322/uu-no-20-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33822/UU%20Nomor%2020%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,4 +31,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_1999_1999-05-07.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4a383e44288dfb42e191ddcfda0e56d8bdf0b28875db3acb0dd55267f1c6695b
 pdf_sha256: 4a383e44288dfb42e191ddcfda0e56d8bdf0b28875db3acb0dd55267f1c6695b
+tanggal_pengundangan: '1999-05-07'
+tanggal_berlaku: '1999-05-07'
+lembaran_negara: 'LN. 1999/ No. 56, TLN NO. 3835, LL SETNEG : 3 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu20-1999.pdf
+bpk:
+  id: 45322
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33822/UU%20Nomor%2020%20Tahun%201999.pdf
+    bpk_file_id: 33822
+    filename: UU Nomor 20 Tahun 1999.pdf
+    sha256: 4a383e44288dfb42e191ddcfda0e56d8bdf0b28875db3acb0dd55267f1c6695b
+    bytes: 76451
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

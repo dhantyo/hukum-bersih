@@ -11,8 +11,8 @@ tanggal_penetapan: '1999-04-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu8-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45288/uu-no-8-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33784/UU%20Nomor%208%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,33 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1999_1999-04-20.txt
   pasal_count: 65
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: df253c489e78e66d9da5337c85bebe1384c68763af2001335b4880b0f225d816
 pdf_sha256: df253c489e78e66d9da5337c85bebe1384c68763af2001335b4880b0f225d816
+tanggal_pengundangan: '1999-04-20'
+tanggal_berlaku: '2000-04-20'
+lembaran_negara: 'LN. 1999/ No. 22, TLN NO. 3821, LL SETNEG : 35 HLM'
+subjek: PERLINDUNGAN KONSUMEN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu8-1999.pdf
+bpk:
+  id: 45288
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33784/UU%20Nomor%208%20Tahun%201999.pdf
+    bpk_file_id: 33784
+    filename: UU Nomor 8 Tahun 1999.pdf
+    sha256: df253c489e78e66d9da5337c85bebe1384c68763af2001335b4880b0f225d816
+    bytes: 192920
+    archive_url: null
+  status_peraturan: null
+uji_materi:
+- putusan: 235/PUU-XXIII/2025
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/237/putusan_mkri_235-PUU-XXIII-2025.pdf
+  amar: Norma Pasal 31 Undang-Undang Nomor 8 Tahun 1999 tentang Perlindungan Konsumen
+    (Lembaran Negara Republik Indonesia Tahun 1999 Nomor 22, Tambahan Lembaran Negara
+    Republik Indonesia Nomor 3821) bertentangan dengan Undang-Undang Dasar Negara
+    Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat secara
+    bersyarat sepanjang tidak dimaknai “Badan Perlindungan Konsumen Nasional yang
+    dalam menjalankan tugas dan wewenangnya bersifat independen”

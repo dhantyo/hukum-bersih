@@ -12,8 +12,8 @@ tanggal_penetapan: '1999-05-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-24-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu24-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45335/uu-no-24-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33835/UU%20Nomor%2024%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_1999_1999-05-17.txt
   pasal_count: 9
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 84f3e7b7ce23fb8859491867d580f5c823bdb3f50a831690f25408eb354c590b
 pdf_sha256: 84f3e7b7ce23fb8859491867d580f5c823bdb3f50a831690f25408eb354c590b
+tanggal_pengundangan: '1999-05-17'
+tanggal_berlaku: '1999-05-17'
+lembaran_negara: 'LN. 1999/ No. 67, TLN NO. 3844, LL SETNEG : 5 HLM'
+subjek: PASAR MODAL DAN PERDAGANGAN BERJANGKA KOMODITI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-24-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu24-1999.pdf
+bpk:
+  id: 45335
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33835/UU%20Nomor%2024%20Tahun%201999.pdf
+    bpk_file_id: 33835
+    filename: UU Nomor 24 Tahun 1999.pdf
+    sha256: 84f3e7b7ce23fb8859491867d580f5c823bdb3f50a831690f25408eb354c590b
+    bytes: 56134
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_32_1964
+      citation: UU No. 32 Tahun 1964
+      tentang: Peraturan Lalu-Lintas Devisa
+      url: https://peraturan.bpk.go.id/Details/50392/uu-no-32-tahun-1964
+      note: null
+uji_materi: null

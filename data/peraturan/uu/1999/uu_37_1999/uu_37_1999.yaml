@@ -11,8 +11,8 @@ tanggal_penetapan: '1999-09-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-37-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu37-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45358/uu-no-37-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33858/UU%20Nomor%2037%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_37_1999_1999-09-14.txt
   pasal_count: 40
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6396cc15abe97e6af6e58da7efc01d6f6144c3912ee4728c310b20299c94db68
 pdf_sha256: 6396cc15abe97e6af6e58da7efc01d6f6144c3912ee4728c310b20299c94db68
+tanggal_pengundangan: '1999-09-14'
+tanggal_berlaku: '1999-09-14'
+lembaran_negara: 'LN.1999/No.156, TLN NO.3882, LL SETNEG : 11 HLM'
+subjek: KETATANEGARAAN, KENEGARAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-37-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu37-1999.pdf
+bpk:
+  id: 45358
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33858/UU%20Nomor%2037%20Tahun%201999.pdf
+    bpk_file_id: 33858
+    filename: UU Nomor 37 Tahun 1999.pdf
+    sha256: 6396cc15abe97e6af6e58da7efc01d6f6144c3912ee4728c310b20299c94db68
+    bytes: 108636
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

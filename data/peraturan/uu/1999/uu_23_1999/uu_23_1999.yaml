@@ -11,8 +11,8 @@ tanggal_penetapan: '1999-05-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-23-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu23-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45332/uu-no-23-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33832/UU%20Nomor%2023%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,58 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_1999_1999-05-17.txt
   pasal_count: 34
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 129238b44e356a09074a931ad8d2ea19372c79e5fed0ee71c6d4cd89172aa378
 pdf_sha256: 129238b44e356a09074a931ad8d2ea19372c79e5fed0ee71c6d4cd89172aa378
+tanggal_pengundangan: '1999-05-17'
+tanggal_berlaku: '1999-05-17'
+lembaran_negara: 'LN. 1999/ No. 66, TLN NO. 3843, LL SETNEG : 24 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-23-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu23-1999.pdf
+bpk:
+  id: 45332
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33832/UU%20Nomor%2023%20Tahun%201999.pdf
+    bpk_file_id: 33832
+    filename: UU Nomor 23 Tahun 1999.pdf
+    sha256: 129238b44e356a09074a931ad8d2ea19372c79e5fed0ee71c6d4cd89172aa378
+    bytes: 235107
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+    - id: perppu_1_2020
+      citation: PERPU No. 1 Tahun 2020
+      tentang: Kebijakan Keuangan Negara dan Stabilitas Sistem Keuangan untuk Penanganan
+        Pandemi Corona Virus Disease 2019 (COVID-19) dan/atau dalam Rangka Menghadapi
+        Ancaman yang Membahayakan Perekonomian Nasional dan/atau Stabilitas Sistem
+        Keuangan
+      url: https://peraturan.bpk.go.id/Details/135060/perpu-no-1-tahun-2020
+      note: null
+    - id: uu_6_2009
+      citation: UU No. 6 Tahun 2009
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2008 Tentang Perubahan Kedua Atas Undang Undang Nomor 23 Tahun 1999 tentang
+        Bank Indonesia menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/38588/uu-no-6-tahun-2009
+      note: null
+    - id: uu_3_2004
+      citation: UU No. 3 Tahun 2004
+      tentang: Perubahan atas Undang-Undang Republik Indonesia Nomor 23 Tahun 1999
+        tentang Bank Indonesia
+      url: https://peraturan.bpk.go.id/Details/40458/uu-no-3-tahun-2004
+      note: null
+    Mencabut:
+    - id: uu_13_1968
+      citation: UU No. 13 Tahun 1968
+      tentang: Bank Sentral
+      url: https://peraturan.bpk.go.id/Details/49173/uu-no-13-tahun-1968
+      note: null
+uji_materi: null

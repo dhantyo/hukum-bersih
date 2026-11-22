@@ -7,20 +7,18 @@ title: Undang-Undang Nomor 43 Tahun 1999 tentang Perubahan Uu 8-1974 Tentang Pok
   Kepegawaian
 tentang: PERUBAHAN UU 8-1974 TENTANG POKOK-POKOK KEPEGAWAIAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 5 Tahun 2014 Tentang Aparatur
-  Sipil Negara'
+status: tidak_berlaku
 tanggal_penetapan: '1999-09-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-43-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu43-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45377/uu-no-43-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33877/UU%20Nomor%2043%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_5_2014
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,5 +28,38 @@ versions:
   date: '1999-09-30'
   date_basis: tanggal_penetapan
   text: uu_43_1999_1999-09-30.txt
-  pasal_count: 4
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 672d2b4eb46d7a4aaf40e339e86affb4974bcb00da52f850dc924d6de229c3e7
 pdf_sha256: 672d2b4eb46d7a4aaf40e339e86affb4974bcb00da52f850dc924d6de229c3e7
+tanggal_pengundangan: '1999-09-30'
+tanggal_berlaku: '1999-09-30'
+lembaran_negara: 'LN. 1999/ No. 169, TLN NO. 3890, LL SETNEG : 11 HLM'
+subjek: KEPEGAWAIAN, APARATUR NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-43-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu43-1999.pdf
+bpk:
+  id: 45377
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33877/UU%20Nomor%2043%20Tahun%201999.pdf
+    bpk_file_id: 33877
+    filename: UU Nomor 43 Tahun 1999.pdf
+    sha256: 672d2b4eb46d7a4aaf40e339e86affb4974bcb00da52f850dc924d6de229c3e7
+    bytes: 110575
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_5_2014
+      citation: UU No. 5 Tahun 2014
+      tentang: Aparatur Sipil Negara
+      url: https://peraturan.bpk.go.id/Details/38580/uu-no-5-tahun-2014
+      note: null
+    Mengubah:
+    - id: uu_8_1974
+      citation: UU No. 8 Tahun 1974
+      tentang: Pokok- Pokok Kepegawaian
+      url: https://peraturan.bpk.go.id/Details/47417/uu-no-8-tahun-1974
+      note: null
+uji_materi: null

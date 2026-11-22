@@ -12,8 +12,8 @@ tanggal_penetapan: '1999-04-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu14-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45300/uu-no-14-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33799/UU%20Nomor%2014%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1999_1999-04-20.txt
   pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 77571979f75fa62d938a70fed6c9c6a1713b50f515ade18c4ff044cdf54b2682
 pdf_sha256: 77571979f75fa62d938a70fed6c9c6a1713b50f515ade18c4ff044cdf54b2682
+tanggal_pengundangan: '1999-04-20'
+tanggal_berlaku: '1999-04-20'
+lembaran_negara: 'LN. 1999/ No. 48, TLN NO. 3827, LL SETNEG : 9 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu14-1999.pdf
+bpk:
+  id: 45300
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33799/UU%20Nomor%2014%20Tahun%201999.pdf
+    bpk_file_id: 33799
+    filename: UU Nomor 14 Tahun 1999.pdf
+    sha256: 77571979f75fa62d938a70fed6c9c6a1713b50f515ade18c4ff044cdf54b2682
+    bytes: 76035
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

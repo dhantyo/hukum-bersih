@@ -11,8 +11,8 @@ tanggal_penetapan: '1999-09-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-41-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu41-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45373/uu-no-41-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33873/UU%20Nomor%2041%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,62 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_41_1999_1999-09-30.txt
   pasal_count: 84
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 19e79b8612fd9f0e6797cb2153ff3f35594b5e1924bbb7b5a61782e319815719
 pdf_sha256: 19e79b8612fd9f0e6797cb2153ff3f35594b5e1924bbb7b5a61782e319815719
+tanggal_pengundangan: '1999-09-30'
+tanggal_berlaku: '1999-09-30'
+lembaran_negara: 'LN. 1999/ No.167, TLN NO. 3888, LL SETNEG : 32 HLM'
+subjek: KEHUTANAN DAN PERKEBUNAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-41-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu41-1999.pdf
+bpk:
+  id: 45373
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33873/UU%20Nomor%2041%20Tahun%201999.pdf
+    bpk_file_id: 33873
+    filename: UU Nomor 41 Tahun 1999.pdf
+    sha256: 19e79b8612fd9f0e6797cb2153ff3f35594b5e1924bbb7b5a61782e319815719
+    bytes: 251620
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    - id: uu_19_2004
+      citation: UU No. 19 Tahun 2004
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        2004 tentang Perubahan atas Undang-Undang Nomor 41 Tahun 1999 tentang Kehutanan
+        Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/40518/uu-no-19-tahun-2004
+      note: null
+    Mencabut:
+    - id: uu_5_1967
+      citation: UU No. 5 Tahun 1967
+      tentang: Ketentuan-Ketentuan Pokok Kehutanan
+      url: https://peraturan.bpk.go.id/Details/49554/uu-no-5-tahun-1967
+      note: null
+uji_materi:
+- putusan: 95/PUU-XII/2014
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/57/95_PUU-XII_2014.pdf
+  amar: Pasal 50 ayat (3) huruf e dan huruf i Undang-Undang Nomor 41 Tahun 1999 tentang
+    Kehutanan bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan
+    hukum mengikat sepanjang tidak dimaknai bahwa ketentuan dimaksud dikecualikan
+    terhadap masyarakat yang hidup secara turun temurun di dalam hutan dan tidak ditujukan
+    untuk kepentingan komersial.

@@ -11,8 +11,8 @@ tanggal_penetapan: '1999-10-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-55-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu55-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45402/uu-no-55-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33902/UU%20Nomor%2055%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_55_1999_1999-10-04.txt
   pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 31e2d1af4c9bcf13f327e5ce612d0e03ec85da36085638af2543cfadb39ed68e
 pdf_sha256: 31e2d1af4c9bcf13f327e5ce612d0e03ec85da36085638af2543cfadb39ed68e
+tanggal_pengundangan: '1999-10-04'
+tanggal_berlaku: '1999-10-04'
+lembaran_negara: 'LN. 1999/ No. 183, TLN NO. 3904, LL SETNEG : 8 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-55-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu55-1999.pdf
+bpk:
+  id: 45402
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33902/UU%20Nomor%2055%20Tahun%201999.pdf
+    bpk_file_id: 33902
+    filename: UU Nomor 55 Tahun 1999.pdf
+    sha256: 31e2d1af4c9bcf13f327e5ce612d0e03ec85da36085638af2543cfadb39ed68e
+    bytes: 72080
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_15_2000
+      citation: UU No. 15 Tahun 2000
+      tentang: Perubahan atas Undang-Undang Nomor 55 Tahun 1999 tentang Pembentukan
+        Kabupaten Landak
+      url: https://peraturan.bpk.go.id/Details/44965/uu-no-15-tahun-2000
+      note: null
+uji_materi: null

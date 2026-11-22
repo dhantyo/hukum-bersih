@@ -6,20 +6,18 @@ year: 1999
 title: Undang-Undang Nomor 38 Tahun 1999 tentang Pengelolaan Zakat
 tentang: PENGELOLAAN ZAKAT
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 23 Tahun 2011 Tentang Pengelolaan
-  Zakat'
+status: tidak_berlaku
 tanggal_penetapan: '1999-09-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-38-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu38-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45359/uu-no-38-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33859/UU%20Nomor%2038%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_23_2011
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_38_1999_1999-09-23.txt
   pasal_count: 25
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b41104f819472912e8aca72e70464370972bc5771179057b90b8a3a18aafbbde
 pdf_sha256: b41104f819472912e8aca72e70464370972bc5771179057b90b8a3a18aafbbde
+tanggal_pengundangan: '1999-09-23'
+tanggal_berlaku: '1999-09-23'
+lembaran_negara: 'LN. 1999/ No. 164, TLN NO. 3885, LL SETNEG : 8 HLM'
+subjek: KEAGAMAAN, IBADAH, DAN PENYELENGGARAAN HAJI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-38-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu38-1999.pdf
+bpk:
+  id: 45359
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33859/UU%20Nomor%2038%20Tahun%201999.pdf
+    bpk_file_id: 33859
+    filename: UU Nomor 38 Tahun 1999.pdf
+    sha256: b41104f819472912e8aca72e70464370972bc5771179057b90b8a3a18aafbbde
+    bytes: 78219
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_23_2011
+      citation: UU No. 23 Tahun 2011
+      tentang: Pengelolaan Zakat
+      url: https://peraturan.bpk.go.id/Details/39267/uu-no-23-tahun-2011
+      note: null
+uji_materi: null

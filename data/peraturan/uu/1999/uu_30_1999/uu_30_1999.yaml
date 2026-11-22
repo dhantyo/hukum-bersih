@@ -12,8 +12,8 @@ tanggal_penetapan: '1999-08-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-30-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu30-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45348/uu-no-30-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/158596/UU_1999_30.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_1999_1999-08-12.txt
   pasal_count: 82
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: dbee4061b9b0b926e2a1342197cf74e7a5d810da28352b3119ca687c6329849e
 pdf_sha256: f10deccb1078b0e1378fca368548419732f27b11fe35a738772bb5bd615ca8c7
+tanggal_pengundangan: '1999-08-12'
+tanggal_berlaku: '1999-08-12'
+lembaran_negara: 'LN. 1999/ No. 138, TLN NO. 3872, LL SETNEG : 26 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-30-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu30-1999.pdf
+bpk:
+  id: 45348
+  files:
+  - url: https://peraturan.bpk.go.id/Download/158596/UU_1999_30.pdf
+    bpk_file_id: 158596
+    filename: UU_1999_30.pdf
+    sha256: dbee4061b9b0b926e2a1342197cf74e7a5d810da28352b3119ca687c6329849e
+    bytes: 103429
+    archive_url: null
+  status_peraturan: null
+uji_materi:
+- putusan: 100/PUU-XXII/2024
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/179/100-PUU-XXII-2024.pdf
+  amar: Kata “dianggap” dalam norma Pasal 1 angka 9 Undang-Undang Nomor 30 Tahun 1999
+    tentang Arbitrase dan Alternatif Penyelesaian Sengketa (Lembaran Negara Republik
+    Indonesia Tahun 1999 Nomor 138, Tambahan Lembaran Negara Republik Indonesia Nomor
+    3872) bertentangan dengan Undang-Undang Dasar Negara Republik Indonesia Tahun
+    1945 dan tidak memiliki kekuatan hukum mengikat, sehingga norma Pasal 1 angka
+    9 Undang-Undang Nomor 30 Tahun 1999 tentang Arbitrase dan Alternatif Penyelesaian
+    Sengketa, selengkapnya menjadi berbunyi, “Putusan Arbitrase Internasional adalah
+    putusan yang dijatuhkan oleh suatu lembaga arbitrase atau arbiter perorangan di
+    luar wilayah hukum Republik Indonesia, atau putusan suatu lembaga arbitrase atau
+    arbiter perorangan yang menurut ketentuan hukum Republik Indonesia sebagai suatu
+    putusan arbitrase internasional.”

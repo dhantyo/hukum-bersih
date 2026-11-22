@@ -14,8 +14,8 @@ tanggal_penetapan: '1999-08-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-32-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu32-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45353/uu-no-32-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33853/UU%20Nomor%2032%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,4 +31,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_32_1999_1999-08-23.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5777cdebea96d3af2d9a3734c132f9c5f4b25232178309218053f7274f74b6f1
 pdf_sha256: 5777cdebea96d3af2d9a3734c132f9c5f4b25232178309218053f7274f74b6f1
+tanggal_pengundangan: '1999-08-23'
+tanggal_berlaku: '1998-04-01'
+lembaran_negara: 'LN. 1999/ No. 144, TLN NO. 3876, LL SETNEG : 8 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-32-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu32-1999.pdf
+bpk:
+  id: 45353
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33853/UU%20Nomor%2032%20Tahun%201999.pdf
+    bpk_file_id: 33853
+    filename: UU Nomor 32 Tahun 1999.pdf
+    sha256: 5777cdebea96d3af2d9a3734c132f9c5f4b25232178309218053f7274f74b6f1
+    bytes: 120682
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_7_1998
+      citation: UU No. 7 Tahun 1998
+      tentang: Perubahan atas Undang-Undang Nomor 3 Tahun 1998 Tentang Anggaran Pendapatan
+        Dan Belanja Negara Tahun Anggaran 1998/1999
+      url: https://peraturan.bpk.go.id/Details/45447/uu-no-7-tahun-1998
+      note: null
+    - id: uu_3_1998
+      citation: UU No. 3 Tahun 1998
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1998/1999
+      url: https://peraturan.bpk.go.id/Details/45431/uu-no-3-tahun-1998
+      note: null
+uji_materi: null

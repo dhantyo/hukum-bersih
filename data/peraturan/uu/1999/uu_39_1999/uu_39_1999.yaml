@@ -11,8 +11,8 @@ tanggal_penetapan: '1999-09-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-39-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu39-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45361/uu-no-39-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33861/UU%20Nomor%2039%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_39_1999_1999-09-23.txt
   pasal_count: 106
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 069c6ddaaafc356ca332779b3bded58e9bf4c3bf78704daaea19241f6604ad6f
 pdf_sha256: 069c6ddaaafc356ca332779b3bded58e9bf4c3bf78704daaea19241f6604ad6f
+tanggal_pengundangan: '1999-09-23'
+tanggal_berlaku: '1999-09-23'
+lembaran_negara: 'LN. 1999/ No. 165, TLN NO. 3886, LL SETNEG : 29 HLM'
+subjek: HAK ASASI MANUSIA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-39-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu39-1999.pdf
+bpk:
+  id: 45361
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33861/UU%20Nomor%2039%20Tahun%201999.pdf
+    bpk_file_id: 33861
+    filename: UU Nomor 39 Tahun 1999.pdf
+    sha256: 069c6ddaaafc356ca332779b3bded58e9bf4c3bf78704daaea19241f6604ad6f
+    bytes: 190041
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -6,20 +6,18 @@ year: 1999
 title: Undang-Undang Nomor 18 Tahun 1999 tentang Jasa Konstruksi
 tentang: JASA KONSTRUKSI
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 2 Tahun 2017 Tentang Jasa
-  Konstruksi'
+status: tidak_berlaku
 tanggal_penetapan: '1999-05-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu18-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/37638/uu-no-18-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/26732/UU%20Nomor%2018%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_2_2017
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_1999_1999-05-07.txt
   pasal_count: 46
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 171481f43c26211a4decd37060f15132ac194efb63fb72255fe67ed18bdb4235
 pdf_sha256: 171481f43c26211a4decd37060f15132ac194efb63fb72255fe67ed18bdb4235
+tanggal_pengundangan: '1999-05-07'
+tanggal_berlaku: '1999-05-07'
+lembaran_negara: 'LN.1999/NO.54, TLN NO.3833, LL SETNEG : 20 HLM'
+subjek: KONSTRUKSI, SIPIL, ARSITEK, BANGUNAN, DAN INFRASTRUKTUR
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu18-1999.pdf
+bpk:
+  id: 37638
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26732/UU%20Nomor%2018%20Tahun%201999.pdf
+    bpk_file_id: 26732
+    filename: UU Nomor 18 Tahun 1999.pdf
+    sha256: 171481f43c26211a4decd37060f15132ac194efb63fb72255fe67ed18bdb4235
+    bytes: 180288
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_2_2017
+      citation: UU No. 2 Tahun 2017
+      tentang: Jasa Konstruksi
+      url: https://peraturan.bpk.go.id/Details/37637/uu-no-2-tahun-2017
+      note: null
+uji_materi: null

@@ -6,20 +6,18 @@ year: 1999
 title: Undang-Undang Nomor 17 Tahun 1999 tentang Penyelenggaraan Ibadah Haji
 tentang: PENYELENGGARAAN IBADAH HAJI
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 13 Tahun 2008 Tentang Penyelenggaraan
-  Ibadah Haji'
+status: tidak_berlaku
 tanggal_penetapan: '1999-05-03'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu17-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45309/uu-no-17-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33809/UU%20Nomor%2017%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_13_2008
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_1999_1999-05-03.txt
   pasal_count: 20
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3552b49cce3442ae29ba5b3c26c3fbd5674e0a1a37065cc58cd7de1611944a52
 pdf_sha256: 3552b49cce3442ae29ba5b3c26c3fbd5674e0a1a37065cc58cd7de1611944a52
+tanggal_pengundangan: '1999-05-03'
+tanggal_berlaku: '1999-05-03'
+lembaran_negara: 'LN. 1999/ No. 53, TLN NO. 3832, LL SETNEG : 12 HLM'
+subjek: KEAGAMAAN, IBADAH, DAN PENYELENGGARAAN HAJI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu17-1999.pdf
+bpk:
+  id: 45309
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33809/UU%20Nomor%2017%20Tahun%201999.pdf
+    bpk_file_id: 33809
+    filename: UU Nomor 17 Tahun 1999.pdf
+    sha256: 3552b49cce3442ae29ba5b3c26c3fbd5674e0a1a37065cc58cd7de1611944a52
+    bytes: 97054
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_13_2008
+      citation: UU No. 13 Tahun 2008
+      tentang: Penyelenggaraan Ibadah Haji
+      url: https://peraturan.bpk.go.id/Details/39044/uu-no-13-tahun-2008
+      note: null
+uji_materi: null

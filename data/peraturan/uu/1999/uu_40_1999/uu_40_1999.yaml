@@ -11,8 +11,8 @@ tanggal_penetapan: '1999-09-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-40-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu40-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45370/uu-no-40-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33870/UU%20Nomor%2040%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,43 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_40_1999_1999-09-23.txt
   pasal_count: 21
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 10614556d6e0aaac9a2318a9f0dfcdccdbfdccf66210246a247e289754f5b8a1
 pdf_sha256: 10614556d6e0aaac9a2318a9f0dfcdccdbfdccf66210246a247e289754f5b8a1
+tanggal_pengundangan: '1999-09-23'
+tanggal_berlaku: '1999-09-23'
+lembaran_negara: 'LN. 1999/ No. 166, TLN NO. 3887, LL SETNEG : 9 HLM'
+subjek: PERS, POS, DAN PERIKLANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-40-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu40-1999.pdf
+bpk:
+  id: 45370
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33870/UU%20Nomor%2040%20Tahun%201999.pdf
+    bpk_file_id: 33870
+    filename: UU Nomor 40 Tahun 1999.pdf
+    sha256: 10614556d6e0aaac9a2318a9f0dfcdccdbfdccf66210246a247e289754f5b8a1
+    bytes: 80580
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_21_1982
+      citation: UU No. 21 Tahun 1982
+      tentang: Perubahan atas Undang-Undang Nomor 11 Tahun 1966 tentang Ketentuan-Ketentuan
+        Pokok Pers sebagaimana telah Diubah dengan Undang-Undang Nomor 4 Tahun 1967
+      url: https://peraturan.bpk.go.id/Details/47032/uu-no-21-tahun-1982
+      note: null
+    - id: uu_4_1967
+      citation: UU No. 4 Tahun 1967
+      tentang: Penambahan Undang-Undang Nomor 11 Tahun 1966 Tentang Ketentuan-Ketentuan
+        Pokok Pers
+      url: https://peraturan.bpk.go.id/Details/49551/uu-no-4-tahun-1967
+      note: null
+    - id: uu_11_1966
+      citation: UU No. 11 Tahun 1966
+      tentang: Ketentuan-Ketentuan Pokok Pers
+      url: https://peraturan.bpk.go.id/Details/49812/uu-no-11-tahun-1966
+      note: null
+uji_materi: null

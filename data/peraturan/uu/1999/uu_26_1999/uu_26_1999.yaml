@@ -12,8 +12,8 @@ tanggal_penetapan: '1999-04-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-26-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu26-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45340/uu-no-26-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33840/UU%20Nomor%2026%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_26_1999_1999-04-20.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9b5ad53ba16e1310396d3ed4675fdc3358c98398b0a2a1bfb5a1ace47cb50010
 pdf_sha256: 9b5ad53ba16e1310396d3ed4675fdc3358c98398b0a2a1bfb5a1ace47cb50010
+tanggal_pengundangan: '1999-05-19'
+tanggal_berlaku: '1999-05-19'
+lembaran_negara: 'LN. 1999/ No. 73, TLN NO. 3849, LL SETNEG : 3 HLM'
+subjek: HUKUM PIDANA, PERDATA, DAN DAGANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-26-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu26-1999.pdf
+bpk:
+  id: 45340
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33840/UU%20Nomor%2026%20Tahun%201999.pdf
+    bpk_file_id: 33840
+    filename: UU Nomor 26 Tahun 1999.pdf
+    sha256: 9b5ad53ba16e1310396d3ed4675fdc3358c98398b0a2a1bfb5a1ace47cb50010
+    bytes: 43072
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
