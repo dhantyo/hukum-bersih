@@ -13,7 +13,7 @@ from collections.abc import Sequence
 from dataclasses import dataclass, field
 from pathlib import Path
 
-PARSER_VERSION = 9  # 9: browser print headers/footers dropped; separate Penjelasan PDF read (UU 19/2003). 8: v7 dropped a Penjelasan after a copy certification (UU 2/2025): fixed;
+PARSER_VERSION = 10  # 10: OCR speck before a Pasal heading ("' Pasal 8", UU 135/2024). 9: browser print headers/footers dropped; separate Penjelasan PDF read (UU 19/2003). 8: v7 dropped a Penjelasan after a copy certification (UU 2/2025): fixed;
 #                    Penjelasan of amending laws (Pasal I/II), OCR '1. UMUM'.
 #                   7: amending laws keep quoted articles in Pasal I, white (hidden)
 #                    text dropped, salinan certification left out, MEMORI PENJELASAN;
@@ -140,6 +140,8 @@ def normalise(lines: list[str]) -> list[str]:
         if out and out[-1] in ("Pasal", "PASAL") and re.match(r"^\d+[A-Z]?\.?$", line):
             out[-1] = f"Pasal {line.rstrip('.')}"
             continue
+        if m := re.match(r"^[\'‘’`´,.|:;]{1,2}\s*((?:PASAL|Pasal)\s*\S+)$", line):
+            line = m[1]                      # OCR speck before a heading: "' Pasal 8" (UU 135/2024)
         if m := HEAD_DOT_RE.match(line):
             line = m[1]
         if m := re.match(r"^(?:PASAL|Pasal)\s*(\d+[A-Z]?|[IVXLC]+)$", line):   # OCR: "PasalI"

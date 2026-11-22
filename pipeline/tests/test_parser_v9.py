@@ -66,3 +66,10 @@ def test_amending_law_is_recognised_from_its_first_pasal():
     assert Document([Block("pasal", "Pasal I"), Block("pasal", "Pasal II")]).amending
     assert not Document([Block("pasal", "Pasal 1"), Block("pasal", "Pasal 2")]).amending
     assert not Document([]).amending
+
+
+def test_ocr_speck_before_a_pasal_heading():
+    from hukum_bersih.pdf.structure import normalise
+
+    assert normalise(["' Pasal 8", "‘Pasal 9", ". Pasal 10."]) == ["Pasal 8", "Pasal 9", "Pasal 10"]
+    assert normalise(["'Pasal 8 menyatakan bahwa"]) == ["'Pasal 8 menyatakan bahwa"]
