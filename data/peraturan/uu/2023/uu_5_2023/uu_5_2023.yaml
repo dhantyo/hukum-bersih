@@ -17,8 +17,8 @@ tanggal_penetapan: '2023-01-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-2023
-source_pdf_url: https://peraturan.go.id/files/uu-no-5-tahun-2023.pdf
+source_url: https://peraturan.bpk.go.id/Details/240345/uu-no-5-tahun-2023
+source_pdf_url: https://peraturan.bpk.go.id/Download/295375/UU%20Nomor%205%20Tahun%202023.pdf
 relationships:
   amends: []
   amended_by: []
@@ -34,4 +34,33 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_2023_2023-01-13.txt
   pasal_count: 2
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 17a14e079370d3cd0936fdb43c1fda3c887bfbfc1afbce71e8ae62da4e2fbadb
+  ocr: true
 pdf_sha256: 17a14e079370d3cd0936fdb43c1fda3c887bfbfc1afbce71e8ae62da4e2fbadb
+tanggal_pengundangan: '2023-01-13'
+tanggal_berlaku: '2023-01-13'
+lembaran_negara: 'LN.2023/No.5, TLN No.6846, jdih.setneg.go.id: 6 hlm.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+  - HUBUNGAN INTERNASIONAL / KERJA SAMA INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-2023
+  source_pdf_url: https://peraturan.go.id/files/uu-no-5-tahun-2023.pdf
+bpk:
+  id: 240345
+  files:
+  - url: https://peraturan.bpk.go.id/Download/295375/UU%20Nomor%205%20Tahun%202023.pdf
+    bpk_file_id: 295375
+    filename: UU Nomor 5 Tahun 2023.pdf
+    sha256: 17a14e079370d3cd0936fdb43c1fda3c887bfbfc1afbce71e8ae62da4e2fbadb
+    bytes: 504604
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/295376/UU%20Nomor%205%20Tahun%202023%20-%20naskah%20terjemahan.pdf
+    bpk_file_id: 295376
+    filename: UU Nomor 5 Tahun 2023 - naskah terjemahan.pdf
+    sha256: 1d3957bf4562fdf908261c6ab97ee2588f9755f8083b0b416586096e86aba64d
+    bytes: 9867339
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

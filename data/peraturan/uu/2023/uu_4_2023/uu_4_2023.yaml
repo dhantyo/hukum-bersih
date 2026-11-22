@@ -12,8 +12,8 @@ tanggal_penetapan: '2023-01-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-2023
-source_pdf_url: https://peraturan.go.id/files/uu-no-4-tahun-2023.pdf
+source_url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+source_pdf_url: https://peraturan.bpk.go.id/Download/295189/UU%20Nomor%204%20Tahun%202023.pdf
 relationships:
   amends: []
   amended_by:
@@ -23,7 +23,209 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_4_2023_2023-01-12
+  kind: asli
+  source: official
+  date: '2023-01-12'
+  date_basis: tanggal_penetapan
+  text: uu_4_2023_2023-01-12.txt
+  pasal_count: 346
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2be1b1e49af7c729fc2b09c16fcd94da0c601f70b9b6066e81e6b56d980b0e12
+  ocr: true
 pdf_sha256: b9fa3b06922d3f727b7189c9cb21f698c04defcdda2c46fbc1da3df64ca16944
-parse_error: 'LeakedMarkupError: chp_III__part_Keempat__intro__p_2: markup in text:
-  ''POINT 1.'''
+tanggal_pengundangan: '2023-01-12'
+tanggal_berlaku: '2023-01-12'
+lembaran_negara: 'LN.2023/No.4, TLN No.6845, jdih.setneg.go.id: 527 hlm.'
+subjek: ASURANSI - PENANAMAN MODAL DAN INVESTASI - PERBANKAN, LEMBAGA KEUANGAN - PEREKONOMIAN
+  - KOPERASI, UMKM
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-2023
+  source_pdf_url: https://peraturan.go.id/files/uu-no-4-tahun-2023.pdf
+bpk:
+  id: 240203
+  files:
+  - url: https://peraturan.bpk.go.id/Download/295189/UU%20Nomor%204%20Tahun%202023.pdf
+    bpk_file_id: 295189
+    filename: UU Nomor 4 Tahun 2023.pdf
+    sha256: 2be1b1e49af7c729fc2b09c16fcd94da0c601f70b9b6066e81e6b56d980b0e12
+    bytes: 81823248
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_4_2026
+      citation: UU No. 4 Tahun 2026
+      tentang: Perubahan atas Undang-Undang Nomor 4 Tahun 2023 tentang Pengembangan
+        dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/350166/uu-no-4-tahun-2026
+      note: null
+    Mencabut:
+    - id: uu_11_1992
+      citation: UU No. 11 Tahun 1992
+      tentang: Dana Pensiun
+      url: https://peraturan.bpk.go.id/Details/46603/uu-no-11-tahun-1992
+      note: null
+    Mencabut sebagian:
+    - id: uu_37_2004
+      citation: UU No. 37 Tahun 2004
+      tentang: Kepailitan Dan Penundaan Kewajiban Pembayaran Utang
+      url: https://peraturan.bpk.go.id/Details/40784/uu-no-37-tahun-2004
+      note: 'Ketentuan mengenai: a. permohonan kepailitan bagi Bank, Perusahaan Efek,
+        Bursa Efek, Lembaga Kliring dan Penjaminan, Lembaga Penyimpanan dan Penyelesaian,
+        dan Dana Pensiun sebagaimana diatur dalam Pasal 2; dan b. penundaan kewajiban
+        pembayaran utang bagi Bank, Perusahaan Efek, Bursa Efek, Lembaga Kliring dan
+        Penjaminan, Lembaga Penyimpanan dan Penyelesaian, Perusahaan Asuransi, Perusahaan
+        Reasuransi, dan Dana Pensiun sebagaimana diatur dalam Pasal 223, Undang-Undang
+        Nomor 37 Tahun 2004, dicabut dan dinyatakan tidak berlaku'
+    Mengubah:
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_9_2016
+      citation: UU No. 9 Tahun 2016
+      tentang: Pencegahan dan Penanganan Krisis Sistem Keuangan
+      url: https://peraturan.bpk.go.id/Details/37298/uu-no-9-tahun-2016
+      note: null
+    - id: uu_9_2016
+      citation: UU No. 9 Tahun 2016
+      tentang: Pencegahan dan Penanganan Krisis Sistem Keuangan
+      url: https://peraturan.bpk.go.id/Details/37298/uu-no-9-tahun-2016
+      note: null
+    - id: uu_1_2016
+      citation: UU No. 1 Tahun 2016
+      tentang: Penjaminan
+      url: https://peraturan.bpk.go.id/Details/37162/uu-no-1-tahun-2016
+      note: null
+    - id: uu_40_2014
+      citation: UU No. 40 Tahun 2014
+      tentang: Perasuransian
+      url: https://peraturan.bpk.go.id/Details/38785/uu-no-40-tahun-2014
+      note: null
+    - id: uu_1_2013
+      citation: UU No. 1 Tahun 2013
+      tentang: Lembaga Keuangan Mikro
+      url: https://peraturan.bpk.go.id/Details/38813/uu-no-1-tahun-2013
+      note: null
+    - id: uu_7_2011
+      citation: UU No. 7 Tahun 2011
+      tentang: Mata Uang
+      url: https://peraturan.bpk.go.id/Details/39182/uu-no-7-tahun-2011
+      note: null
+    - id: uu_21_2011
+      citation: UU No. 21 Tahun 2011
+      tentang: Otoritas Jasa Keuangan
+      url: https://peraturan.bpk.go.id/Details/39257/uu-no-21-tahun-2011
+      note: null
+    - id: uu_10_2011
+      citation: UU No. 10 Tahun 2011
+      tentang: Perubahan atas Undang-Undang Nomor 32 Tahun 1997 Tentang Perdagangan
+        Berjangka Komoditi
+      url: https://peraturan.bpk.go.id/Details/39186/uu-no-10-tahun-2011
+      note: null
+    - id: uu_7_2009
+      citation: UU No. 7 Tahun 2009
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 3 Tahun
+        2008 Tentang Perubahan Atas Undang-Undang Nomor 24 Tahun 2004 Tentang Lembaga
+        Penjamin Simpanan Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/38589/uu-no-7-tahun-2009
+      note: null
+    - id: uu_6_2009
+      citation: UU No. 6 Tahun 2009
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2008 Tentang Perubahan Kedua Atas Undang Undang Nomor 23 Tahun 1999 tentang
+        Bank Indonesia menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/38588/uu-no-6-tahun-2009
+      note: null
+    - id: uu_2_2009
+      citation: UU No. 2 Tahun 2009
+      tentang: Lembaga Pembiayaan Ekspor Indonesia
+      url: https://peraturan.bpk.go.id/Details/38570/uu-no-2-tahun-2009
+      note: null
+    - id: uu_21_2008
+      citation: UU No. 21 Tahun 2008
+      tentang: Perbankan Syariah
+      url: https://peraturan.bpk.go.id/Details/39655/uu-no-21-tahun-2008
+      note: null
+    - id: uu_40_2004
+      citation: UU No. 40 Tahun 2004
+      tentang: Sistem Jaminan Sosial Nasional
+      url: https://peraturan.bpk.go.id/Details/40787/uu-no-40-tahun-2004
+      note: null
+    - id: uu_3_2004
+      citation: UU No. 3 Tahun 2004
+      tentang: Perubahan atas Undang-Undang Republik Indonesia Nomor 23 Tahun 1999
+        tentang Bank Indonesia
+      url: https://peraturan.bpk.go.id/Details/40458/uu-no-3-tahun-2004
+      note: null
+    - id: uu_24_2004
+      citation: UU No. 24 Tahun 2004
+      tentang: Lembaga Penjamin Simpanan
+      url: https://peraturan.bpk.go.id/Details/40598/uu-no-24-tahun-2004
+      note: null
+    - id: uu_24_2002
+      citation: UU No. 24 Tahun 2002
+      tentang: Surat Utang Negara
+      url: https://peraturan.bpk.go.id/Details/44476/uu-no-24-tahun-2002
+      note: null
+    - id: uu_23_1999
+      citation: UU No. 23 Tahun 1999
+      tentang: Bank Indonesia
+      url: https://peraturan.bpk.go.id/Details/45332/uu-no-23-tahun-1999
+      note: null
+    - id: uu_10_1998
+      citation: UU No. 10 Tahun 1998
+      tentang: Perubahan atas Undang-Undang Nomor 7 Tahun 1992 tentang Perbankan
+      url: https://peraturan.bpk.go.id/Details/45486/uu-no-10-tahun-1998
+      note: null
+    - id: uu_32_1997
+      citation: UU No. 32 Tahun 1997
+      tentang: Perdagangan Berjangka Komoditi
+      url: https://peraturan.bpk.go.id/Details/46052/uu-no-32-tahun-1997
+      note: null
+    - id: uu_8_1995
+      citation: UU No. 8 Tahun 1995
+      tentang: Pasar Modal
+      url: https://peraturan.bpk.go.id/Details/46197/uu-no-8-tahun-1995
+      note: null
+    - id: uu_7_1992
+      citation: UU No. 7 Tahun 1992
+      tentang: Perbankan
+      url: https://peraturan.bpk.go.id/Details/46599/uu-no-7-tahun-1992
+      note: null
+    - id: uu_25_1992
+      citation: UU No. 25 Tahun 1992
+      tentang: Perkoperasian
+      url: https://peraturan.bpk.go.id/Details/46650/uu-no-25-tahun-1992
+      note: null
+uji_materi:
+- putusan: 164/PUU-XXIII/2025
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/242/putusan_mkri_164%3APUU-XXIII%3A2025%20.pdf
+  amar: 1.Menyatakan norma Pasal 164 ayat (1) huruf d Undang-Undang Nomor 4 Tahun
+    2023 tentang Pengembangan dan Penguatan Sektor Keuangan (Lembaran Negara Republik
+    Indonesia Tahun 2023 Nomor 4, Tambahan Lembaran Negara Republik Indonesia Nomor
+    6845) bertentangan dengan Undang-Undang Dasar Negara Republik Indonesia Tahun
+    1945 dan tidak mempunyai kekuatan hukum mengikat secara bersyarat sepanjang tidak
+    dimaknai, “dikecualikan untuk pembayaran manfaat pensiun yang kepesertaannya bersifat
+    sukarela, yang terbentuk dari uang pesangon dan/atau uang penghargaan masa kerja
+    dan uang penggantian hak dibayarkan secara sekaligus atau berkala”; 2.Memerintahkan
+    pemuatan putusan a quo dalam Berita Negara Republik Indonesia sebagaimana mestinya;
+    3.Menyatakan pengujian norma Pasal 161 ayat (2) dan Pasal 164 ayat (2) Undang-Undang
+    Nomor 4 Tahun 2023 tentang Pengembangan dan Penguatan Sektor Keuangan (Lembaran
+    Negara Republik Indonesia Tahun 2023 Nomor 4, Tambahan Lembaran Negara Republik
+    Indonesia Nomor 6845) tidak dapat diterima.
+- putusan: 85/PUU-XXII/2024
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/175/85-PUU-XXII-2024.pdf
+  amar: Frasa "untuk mendapat persetujuan" sebagaimana termuat dalam Pasal 86 ayat
+    (4), frasa "Menteri Keuangan memberikan persetujuan" sebagaimana termuat dalam
+    ayat (6), dan frasa "yang telah mendapatkan persetujuan Menteri Keuangan" sebagaimana
+    termuat dalam ayat (7) huruf a dalam Pasal 7 angka 57 Undang-Undang Nomor 4 Tahun
+    2023 tentang Pengembangan dan Penguatan Sektor Keuangan (Lembaran Negara Republik
+    Indonesia Tahun 2023 Nomor 4, Tambahan Lembaran Negara Republik Indonesia Nomor
+    6845) adalah bertentangan dengan Undang-Undang Dasar Negara Republik Indonesia
+    Tahun 1945 dan tidak memiliki kekuatan hukum mengikat secara bersyarat sepanjang
+    tidak dimaknai "persetujuan DPR" berlaku setelah pembentuk undang-undang melakukan
+    perubahan paling lama 2 (dua) tahun sejak putusan a quo diucapkan.

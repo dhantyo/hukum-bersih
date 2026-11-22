@@ -12,8 +12,8 @@ tanggal_penetapan: '2026-07-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-27-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-27-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/290614/uu-no-27-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/349890/UU%20Nomor%2027%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,35 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_27_2024_2026-07-02.txt
   pasal_count: 9
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8eeda6cbed57129ff05d0e622c5745b9672c5214022341791371e6fbb626cf08
+  ocr: true
 pdf_sha256: 97b050291066ee2f2cffad84b07cd38a5d96dad2004a8391c1675a8bb518301e
+tanggal_penetapan_bpk: '2024-07-02'
+tanggal_pengundangan: '2024-07-02'
+tanggal_berlaku: '2024-07-02'
+lembaran_negara: 'LN 2024 (125), TLN (6947): 5 HLM.; JDIH.SETNEG.GO.ID'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-27-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-27-tahun-2024.pdf
+bpk:
+  id: 290614
+  files:
+  - url: https://peraturan.bpk.go.id/Download/349890/UU%20Nomor%2027%20Tahun%202024.pdf
+    bpk_file_id: 349890
+    filename: UU Nomor 27 Tahun 2024.pdf
+    sha256: 8eeda6cbed57129ff05d0e622c5745b9672c5214022341791371e6fbb626cf08
+    bytes: 555112
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: null
+      citation: UUDrt No. 8 Tahun 1956
+      tentang: Pembentukan Daerah Otonom Kota-Kota Besar, Dalam Lingkungan Daerah
+        Propinsi Sumatera Utara
+      url: https://peraturan.bpk.go.id/Details/105541/uudrt-no-8-tahun-1956
+      note: Ketentuan yang mengatur mengenai Kota Sibolga dalam Undang-Undang Darurat
+        Nomor 8 Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

@@ -11,8 +11,8 @@ tanggal_penetapan: '2023-10-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-2023
-source_pdf_url: https://peraturan.go.id/files/uu-no-20-tahun-2023.pdf
+source_url: https://peraturan.bpk.go.id/Details/269470/uu-no-20-tahun-2023
+source_pdf_url: https://peraturan.bpk.go.id/Download/326904/UU%20Nomor%2020%20Tahun%202023.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,51 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_20_2023_2023-10-31
+  kind: asli
+  source: official
+  date: '2023-10-31'
+  date_basis: tanggal_penetapan
+  text: uu_20_2023_2023-10-31.txt
+  pasal_count: 77
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3f68b334f4979a2e81adf92f63c7d13fb2e35e43183cb0075840c4f4338d2e0a
+  ocr: true
 pdf_sha256: 3f68b334f4979a2e81adf92f63c7d13fb2e35e43183cb0075840c4f4338d2e0a
-parse_error: 'LeakedMarkupError: chp_IX__p_2: markup in text: ''POINT a.'''
+tanggal_pengundangan: '2023-10-31'
+tanggal_berlaku: '2023-10-31'
+lembaran_negara: 'LN 2023 (141), TLN (6897): 32 hlm.; jdih.setneg.go.id'
+subjek: KEPEGAWAIAN, APARATUR NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-2023
+  source_pdf_url: https://peraturan.go.id/files/uu-no-20-tahun-2023.pdf
+bpk:
+  id: 269470
+  files:
+  - url: https://peraturan.bpk.go.id/Download/326904/UU%20Nomor%2020%20Tahun%202023.pdf
+    bpk_file_id: 326904
+    filename: UU Nomor 20 Tahun 2023.pdf
+    sha256: 3f68b334f4979a2e81adf92f63c7d13fb2e35e43183cb0075840c4f4338d2e0a
+    bytes: 3798392
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_5_2014
+      citation: UU No. 5 Tahun 2014
+      tentang: Aparatur Sipil Negara
+      url: https://peraturan.bpk.go.id/Details/38580/uu-no-5-tahun-2014
+      note: null
+uji_materi:
+- putusan: 121/PUU-XXII/2024
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/210/121_PUU-XXII_2024.pdf
+  amar: Pasal 26 ayat (2) huruf d Undang-Undang Nomor 20 Tahun 2023 tentang Aparatur
+    Sipil Negara (Lembaran Negara Republik Indonesia Tahun 2023 Nomor 141, Tambahan
+    Lembaran Negara Republik Indonesia Nomor 6897) bertentangan dengan Undang-Undang
+    Dasar Negara Republik Indonesia Tahun 293 1945 dan tidak mempunyai kekuatan hukum
+    mengikat secara bersyarat sepanjang tidak dimaknai, “penerapan pengawasan Sistem
+    Merit, termasuk pengawasan terhadap penerapan asas, nilai dasar, kode etik dan
+    kode perilaku Aparatur Sipil Negara yang dilakukan oleh suatu lembaga independen”.
+    Lembaga independen dimaksud harus dibentuk dalam waktu paling lama 2 (dua) tahun
+    sejak Putusan a quo diucapkan.

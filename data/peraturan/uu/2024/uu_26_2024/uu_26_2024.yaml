@@ -12,8 +12,8 @@ tanggal_penetapan: '2026-07-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-26-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-26-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/290625/uu-no-26-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/349901/UU%20Nomor%2026%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,35 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_26_2024_2026-07-02.txt
   pasal_count: 10
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4d890c170aee296d102191c7a1a11e5fa7367e760c0681c85e21d4277f30bfe8
+  ocr: true
 pdf_sha256: 39795d627c6fdcc832f47661697575a9ee9c8e7385470ccf7654da100b7bce9e
+tanggal_penetapan_bpk: '2024-07-02'
+tanggal_pengundangan: '2024-07-02'
+tanggal_berlaku: '2024-07-02'
+lembaran_negara: 'LN 2024 (124), TLN (6946): 6 HLM.; JDIH.SETNEG.GO.ID'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-26-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-26-tahun-2024.pdf
+bpk:
+  id: 290625
+  files:
+  - url: https://peraturan.bpk.go.id/Download/349901/UU%20Nomor%2026%20Tahun%202024.pdf
+    bpk_file_id: 349901
+    filename: UU Nomor 26 Tahun 2024.pdf
+    sha256: 4d890c170aee296d102191c7a1a11e5fa7367e760c0681c85e21d4277f30bfe8
+    bytes: 620079
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: null
+      citation: UUDrt No. 7 Tahun 1956
+      tentang: Pembentukan Daerah Otonom Kabupaten-Kabupaten Dalam Lingkungan Daerah
+        Propinsi Sumatera Utara
+      url: https://peraturan.bpk.go.id/Details/52943/uudrt-no-7-tahun-1956
+      note: Ketentuan yang mengatur mengenai Kabupaten Simalungun dalam Undang-Undang
+        Darurat Nomor 7 Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

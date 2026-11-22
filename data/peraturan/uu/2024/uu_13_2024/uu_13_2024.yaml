@@ -12,8 +12,8 @@ tanggal_penetapan: '2026-07-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-13-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/290595/uu-no-13-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/349871/UU%20Nomor%2013%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,35 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2024_2026-07-02.txt
   pasal_count: 9
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 281910816a0531f2c3208fef866239d6b8cb84afb2dd34a8a79220d01ff7ac16
+  ocr: true
 pdf_sha256: 281910816a0531f2c3208fef866239d6b8cb84afb2dd34a8a79220d01ff7ac16
+tanggal_penetapan_bpk: '2024-07-02'
+tanggal_pengundangan: '2024-07-02'
+tanggal_berlaku: '2024-07-02'
+lembaran_negara: 'LN 2024 (111), TLN (6933): 5 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-13-tahun-2024.pdf
+bpk:
+  id: 290595
+  files:
+  - url: https://peraturan.bpk.go.id/Download/349871/UU%20Nomor%2013%20Tahun%202024.pdf
+    bpk_file_id: 349871
+    filename: UU Nomor 13 Tahun 2024.pdf
+    sha256: 281910816a0531f2c3208fef866239d6b8cb84afb2dd34a8a79220d01ff7ac16
+    bytes: 706351
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: null
+      citation: UUDrt No. 9 Tahun 1956
+      tentang: Pembentukan Daerah Otonom Kota-Kota Kecil Dalam Lingkungan Daerah Propinsi
+        Sumatera Utara
+      url: https://peraturan.bpk.go.id/Details/52953/uudrt-no-9-tahun-1956
+      note: Ketentuan yang mengatur mengenai Kota Binjai dalam Undang-Undang Darurat
+        Nomor 9 Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

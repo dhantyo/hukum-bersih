@@ -12,8 +12,8 @@ tanggal_penetapan: '2026-07-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-14-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/290605/uu-no-14-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/349881/UU%20Nomor%2014%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,35 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2024_2026-07-02.txt
   pasal_count: 10
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1ad3a0c81d27c2355623c63ddd3c996445dfeff0edd3625e81b59b7f6665cb62
+  ocr: true
 pdf_sha256: 1ad3a0c81d27c2355623c63ddd3c996445dfeff0edd3625e81b59b7f6665cb62
+tanggal_penetapan_bpk: '2024-07-02'
+tanggal_pengundangan: '2024-07-02'
+tanggal_berlaku: '2024-07-02'
+lembaran_negara: 'LN 2024 (112), TLN (6934): 6 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-14-tahun-2024.pdf
+bpk:
+  id: 290605
+  files:
+  - url: https://peraturan.bpk.go.id/Download/349881/UU%20Nomor%2014%20Tahun%202024.pdf
+    bpk_file_id: 349881
+    filename: UU Nomor 14 Tahun 2024.pdf
+    sha256: 1ad3a0c81d27c2355623c63ddd3c996445dfeff0edd3625e81b59b7f6665cb62
+    bytes: 799305
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: null
+      citation: UUDrt No. 7 Tahun 1956
+      tentang: Pembentukan Daerah Otonom Kabupaten-Kabupaten Dalam Lingkungan Daerah
+        Propinsi Sumatera Utara
+      url: https://peraturan.bpk.go.id/Details/52943/uudrt-no-7-tahun-1956
+      note: Ketentuan yang mengatur mengenai Kabupaten Langkat dalam Undang-Undang
+        Darurat Nomor 7 Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

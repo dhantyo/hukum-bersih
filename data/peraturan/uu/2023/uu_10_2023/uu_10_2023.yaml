@@ -11,8 +11,8 @@ tanggal_penetapan: '2023-05-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2023
-source_pdf_url: https://peraturan.go.id/files/uu-no-10-tahun-2023.pdf
+source_url: https://peraturan.bpk.go.id/Details/249334/uu-no-10-tahun-2023
+source_pdf_url: https://peraturan.bpk.go.id/Download/305728/UU%20Nomor%2010%20Tahun%202023.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,5 +28,33 @@ versions:
   date: '2023-05-04'
   date_basis: tanggal_penetapan
   text: uu_10_2023_2023-05-04.txt
-  pasal_count: 1
+  pasal_count: 9
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e2a8faa79c9167f9276e892a80cc39775341e35c707959dc6261acfe4d1b919e
+  ocr: true
 pdf_sha256: e2a8faa79c9167f9276e892a80cc39775341e35c707959dc6261acfe4d1b919e
+tanggal_pengundangan: '2023-05-04'
+tanggal_berlaku: '2023-05-04'
+lembaran_negara: 'LN.2023/No.57, TLN No.6866, jdih.setneg.go.id: 6 hlm.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2023
+  source_pdf_url: https://peraturan.go.id/files/uu-no-10-tahun-2023.pdf
+bpk:
+  id: 249334
+  files:
+  - url: https://peraturan.bpk.go.id/Download/305728/UU%20Nomor%2010%20Tahun%202023.pdf
+    bpk_file_id: 305728
+    filename: UU Nomor 10 Tahun 2023.pdf
+    sha256: e2a8faa79c9167f9276e892a80cc39775341e35c707959dc6261acfe4d1b919e
+    bytes: 659772
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_11_1950
+      citation: UU No. 11 Tahun 1950
+      tentang: Pembentukan Propinsi Djawa Barat
+      url: https://peraturan.bpk.go.id/Details/38121/uu-no-11-tahun-1950
+      note: null
+uji_materi: null

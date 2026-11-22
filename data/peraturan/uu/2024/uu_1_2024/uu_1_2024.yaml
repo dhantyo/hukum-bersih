@@ -13,8 +13,8 @@ tanggal_penetapan: '2024-01-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-1-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/274494/uu-no-1-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/332870/UU%20Nomor%201%20Tahun%202024.pdf
 relationships:
   amends:
   - id: uu_11_2008
@@ -54,4 +54,48 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2024_2024-01-02.txt
   pasal_count: 2
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8cdb6721dd5f46e45f13e8a3588c6c1efc614ea4361ce94efebe40e8e4289d5f
+  ocr: true
 pdf_sha256: 8cdb6721dd5f46e45f13e8a3588c6c1efc614ea4361ce94efebe40e8e4289d5f
+tanggal_pengundangan: '2024-01-02'
+tanggal_berlaku: '2024-01-02'
+lembaran_negara: 'LN 2024 (1), TLN (6905): 21 hlm.; jdih.setneg.go.id'
+subjek: TELEKOMUNIKASI, INFORMATIKA, SIBER, DAN INTERNET - INFORMASI PUBLIK
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-1-tahun-2024.pdf
+bpk:
+  id: 274494
+  files:
+  - url: https://peraturan.bpk.go.id/Download/332870/UU%20Nomor%201%20Tahun%202024.pdf
+    bpk_file_id: 332870
+    filename: UU Nomor 1 Tahun 2024.pdf
+    sha256: 8cdb6721dd5f46e45f13e8a3588c6c1efc614ea4361ce94efebe40e8e4289d5f
+    bytes: 2178368
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_19_2016
+      citation: UU No. 19 Tahun 2016
+      tentang: Perubahan Atas Undang-Undang Nomor 11 Tahun 2008 Tentang Informasi
+        Dan Transaksi Elektronik
+      url: https://peraturan.bpk.go.id/Details/37582/uu-no-19-tahun-2016
+      note: null
+    - id: uu_11_2008
+      citation: UU No. 11 Tahun 2008
+      tentang: Informasi dan Transaksi Elektronik
+      url: https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008
+      note: null
+uji_materi:
+- putusan: 115/PUU-XXII/2024
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/171/115-PUU-XXII-2024.pdf
+  amar: Kata “kerusuhan” dalam Pasal 28 ayat (3) dan Pasal 45A ayat (3) Undang-Undang
+    Nomor 1 Tahun 2024 tentang Perubahan Kedua Atas Undang-Undang Nomor 11 Tahun 2008
+    tentang Informasi dan Transaksi Elektronik (Lembaran Negara Republik Indonesia
+    Tahun 2024 Nomor 1, Tambahan Lembaran Negara Republik Indonesia Nomor 6905) bertentangan
+    dengan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai
+    kekuatan hukum mengikat secara bersyarat sepanjang tidak dimaknai “kerusuhan adalah
+    kondisi yang mengganggu ketertiban umum di ruang fisik, bukan kondisi di ruang
+    digital/siber.”

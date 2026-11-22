@@ -12,8 +12,8 @@ tanggal_penetapan: '2026-07-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-20-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/290752/uu-no-20-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/350028/UU%20Nomor%2020%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,35 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2024_2026-07-02.txt
   pasal_count: 10
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9c768ca59a785f8e9a66fae48e22463b33e3972832353053248faa96ea9325cf
+  ocr: true
 pdf_sha256: 9c768ca59a785f8e9a66fae48e22463b33e3972832353053248faa96ea9325cf
+tanggal_penetapan_bpk: '2024-07-02'
+tanggal_pengundangan: '2024-07-02'
+tanggal_berlaku: '2024-07-02'
+lembaran_negara: 'LN 2024 (118), TLN (6940): 6 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-20-tahun-2024.pdf
+bpk:
+  id: 290752
+  files:
+  - url: https://peraturan.bpk.go.id/Download/350028/UU%20Nomor%2020%20Tahun%202024.pdf
+    bpk_file_id: 350028
+    filename: UU Nomor 20 Tahun 2024.pdf
+    sha256: 9c768ca59a785f8e9a66fae48e22463b33e3972832353053248faa96ea9325cf
+    bytes: 830407
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: null
+      citation: UUDrt No. 7 Tahun 1956
+      tentang: Pembentukan Daerah Otonom Kabupaten-Kabupaten Dalam Lingkungan Daerah
+        Propinsi Sumatera Utara
+      url: https://peraturan.bpk.go.id/Details/52943/uudrt-no-7-tahun-1956
+      note: Ketentuan yang mengatur mengenai Kabupaten Asahan dalam Undang-Undang
+        Darurat Nomor 7 Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

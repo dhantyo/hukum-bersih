@@ -11,8 +11,8 @@ tanggal_penetapan: '2023-08-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-2023
-source_pdf_url: https://peraturan.go.id/files/uu-no-17-tahun-2023.pdf
+source_url: https://peraturan.bpk.go.id/Details/258028/uu-no-17-tahun-2023
+source_pdf_url: https://peraturan.bpk.go.id/Download/314883/UU%20Nomor%2017%20Tahun%202023.pdf
 relationships:
   amends: []
   amended_by: []
@@ -37,5 +37,138 @@ versions:
   date: '2023-08-08'
   date_basis: tanggal_penetapan
   text: uu_17_2023_2023-08-08.txt
-  pasal_count: 10
+  pasal_count: 268
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 612400d634aff1eca403cbbf3d1e7746d73ffb71b43aeb1775c6a494f509ca1a
+  ocr: true
 pdf_sha256: 612400d634aff1eca403cbbf3d1e7746d73ffb71b43aeb1775c6a494f509ca1a
+tanggal_pengundangan: '2023-08-08'
+tanggal_berlaku: '2023-08-08'
+lembaran_negara: 'LN 2023 (105), TLN (6887): 198 hlm.; jdih.setneg.go.id'
+subjek: KESEHATAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-2023
+  source_pdf_url: https://peraturan.go.id/files/uu-no-17-tahun-2023.pdf
+bpk:
+  id: 258028
+  files:
+  - url: https://peraturan.bpk.go.id/Download/314883/UU%20Nomor%2017%20Tahun%202023.pdf
+    bpk_file_id: 314883
+    filename: UU Nomor 17 Tahun 2023.pdf
+    sha256: 612400d634aff1eca403cbbf3d1e7746d73ffb71b43aeb1775c6a494f509ca1a
+    bytes: 19188715
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_4_2019
+      citation: UU No. 4 Tahun 2019
+      tentang: Kebidanan
+      url: https://peraturan.bpk.go.id/Details/104274/uu-no-4-tahun-2019
+      note: null
+    - id: uu_6_2018
+      citation: UU No. 6 Tahun 2018
+      tentang: Kekarantinaan Kesehatan
+      url: https://peraturan.bpk.go.id/Details/90037/uu-no-6-tahun-2018
+      note: null
+    - id: uu_38_2014
+      citation: UU No. 38 Tahun 2014
+      tentang: Keperawatan
+      url: https://peraturan.bpk.go.id/Details/38782/uu-no-38-tahun-2014
+      note: null
+    - id: uu_36_2014
+      citation: UU No. 36 Tahun 2014
+      tentang: Tenaga Kesehatan
+      url: https://peraturan.bpk.go.id/Details/38770/uu-no-36-tahun-2014
+      note: null
+    - id: uu_18_2014
+      citation: UU No. 18 Tahun 2014
+      tentang: Kesehatan Jiwa
+      url: https://peraturan.bpk.go.id/Details/38646/uu-no-18-tahun-2014
+      note: null
+    - id: uu_20_2013
+      citation: UU No. 20 Tahun 2013
+      tentang: Pendidikan Kedokteran
+      url: https://peraturan.bpk.go.id/Details/38895/uu-no-20-tahun-2013
+      note: null
+    - id: uu_44_2009
+      citation: UU No. 44 Tahun 2009
+      tentang: Rumah Sakit
+      url: https://peraturan.bpk.go.id/Details/38789/uu-no-44-tahun-2009
+      note: null
+    - id: uu_36_2009
+      citation: UU No. 36 Tahun 2009
+      tentang: Kesehatan
+      url: https://peraturan.bpk.go.id/Details/38778/uu-no-36-tahun-2009
+      note: null
+    - id: uu_29_2004
+      citation: UU No. 29 Tahun 2004
+      tentang: Praktik Kedokteran
+      url: https://peraturan.bpk.go.id/Details/40752/uu-no-29-tahun-2004
+      note: null
+    - id: uu_4_1984
+      citation: UU No. 4 Tahun 1984
+      tentang: Wabah Penyakit Menular
+      url: https://peraturan.bpk.go.id/Details/46973/uu-no-4-tahun-1984
+      note: null
+    - id: null
+      citation: Undang-Undang Nomor 419 Tahun 1949 tentang Ordonansi Obat Keras (Staatsblad
+        1949 Nomor 419)
+      tentang: null
+      url: null
+      note: null
+uji_materi:
+- putusan: 182/PUU-XXII/2024
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/238/putusan_mkri_182-PUU-XXII-2024.pdf
+  amar: '1) Pasal 268 ayat (2) Undang-Undang Nomor 17 Tahun 2023 tentang Kesehatan
+    (Lembaran Negara Republik Indonesia Tahun 2023 Nomor 105, Tambahan Lembaran Negara
+    Republik Indonesia Nomor 6887) bertentangan dengan Undang-Undang Dasar Negara
+    Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat secara
+    bersyarat sepanjang tidak dimaknai “Konsil sebagaimana dimaksud pada ayat (1)
+    berkedudukan di bawah dan bertanggung jawab kepada Presiden dan dalam menjalankan
+    perannya bersifat independen”; 2). Frasa “Pemerintah Pusat”, dalam norma Pasal
+    270 huruf a Undang-Undang Nomor 17 Tahun 2023 tentang Kesehatan (Lembaran Negara
+    Republik Indonesia Tahun 2023 Nomor 105, Tambahan Lembaran Negara Republik Indonesia
+    Nomor 6887) bertentangan dengan Undang-Undang Dasar Negara Republik Indonesia
+    Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat secara bersyarat sepanjang
+    tidak dimaknai “Pemerintah Pusat yang berasal dari unsur kementerian yang membidangi
+    urusan kesehatan dan kementerian yang membidangi urusan pendidikan tinggi”, sehingga
+    norma Pasal 270 huruf a Undang-Undang Nomor 17 Tahun 2023 tentang Kesehatan (Lembaran
+    Negara Republik Indonesia Tahun 2023 Nomor 105, Tambahan Lembaran Negara Republik
+    Indonesia Nomor 6887) selengkapnya berbunyi “Keanggotaan Konsil berasal dari unsur:
+    a. Pemerintah Pusat yang berasal dari unsur kementerian yang membidangi urusan
+    kesehatan dan kementerian yang membidangi urusan pendidikan tinggi;” 3). Frasa
+    “oleh Konsil serta Kolegium dan ditetapkan oleh Menteri” dalam norma Pasal 291
+    ayat (2) Undang-Undang Nomor 17 Tahun 2023 tentang Kesehatan (Lembaran Negara
+    Republik Indonesia Tahun 2023 Nomor 105, Tambahan Lembaran Negara Republik Indonesia
+    Nomor 6887) bertentangan dengan Undang-Undang Dasar Negara Republik Indonesia
+    Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat secara bersyarat sepanjang
+    tidak dimaknai “dengan melibatkan organisasi profesi yang ditetapkan oleh Menteri
+    yang hanya bersifat administratif”, sehingga norma Pasal 291 ayat (2) Undang-Undang
+    Nomor 17 Tahun 2023 tentang Kesehatan (Lembaran Negara Republik Indonesia Tahun
+    2023 Nomor 105, Tambahan Lembaran Negara Republik Indonesia Nomor 6887) selengkapnya
+    berbunyi “Standar profesi sebagaimana dimaksud pada ayat (1) untuk setiap jenis
+    Tenaga Medis dan Tenaga Kesehatan disusun oleh Konsil serta Kolegium dengan melibatkan
+    organisasi profesi yang ditetapkan oleh Menteri yang hanya bersifat administratif.”
+    5. Menyatakan norma Pasal 311 ayat (1) Undang-Undang Nomor 17 Tahun 2023 tentang
+    Kesehatan (Lembaran Negara Republik Indonesia Tahun 2023 Nomor 105, Tambahan Lembaran
+    Negara Republik Indonesia Nomor 6887) bertentangan dengan Undang-Undang Dasar
+    Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat
+    secara bersyarat sepanjang tidak dimaknai “Tenaga Medis dan Tenaga Kesehatan membentuk
+    wadah tunggal organisasi profesi sebagai “rumah besar” untuk berhimpunnya profesi
+    Tenaga Medis dan Tenaga Kesehatan, yang pembentukannya dikoordinasikan oleh menteri
+    koordinator dengan melibatkan kementerian-kementerian terkait yang dilakukan paling
+    lama 1 (satu) tahun sejak Putusan a quo diucapkan”'
+- putusan: 49/PUU-XXII/2024
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/177/49-PUU-XXII-2024.pdf
+  amar: Pasal 212 ayat (2) Undang-Undang Nomor 17 Tahun 2023 tentang Kesehatan (Lembaran
+    Negara Republik Indonesia Tahun 2023 Nomor 105, Tambahan Lembaran Negara Republik
+    Indonesia Nomor 6887) bertentangan dengan Undang-Undang Dasar Negara Republik
+    Indonesia Tahun 1945 dan tidak memiliki kekuatan hukum mengikat secara bersyarat
+    sepanjang tidak dimaknai, “hanya diberlakukan bagi mahasiswa kesehatan program
+    sarjana yang mengikuti kuliah setelah berlakunya Undang-Undang Nomor 17 Tahun
+    2023 tentang Kesehatan, sedangkan bagi mahasiswa yang terdaftar berdasarkan Undang-Undang
+    Nomor 36 Tahun 2014 tentang Tenaga Kesehatan, pada saat telah lulus dan memiliki
+    sertifikat kompetensi serta mendapatkan STR dan SIP diwajibkan mengikuti pendidikan
+    profesi yang materi dan kurikulumnya dirancang secara khusus dengan waktu yang
+    lebih singkat sebelum perpanjangan SIP dilakukan”;
