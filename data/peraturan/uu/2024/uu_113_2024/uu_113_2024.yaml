@@ -28,7 +28,11 @@ versions:
   date: '2024-10-28'
   date_basis: tanggal_penetapan
   text: uu_113_2024_2024-10-28.txt
-  pasal_count: 9
+  pasal_count: 10
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7b216f6f29a9bb567e4b03a527cda257b6c991cb35042074f7743a753c86a395
+  ocr: true
 pdf_sha256: 7b216f6f29a9bb567e4b03a527cda257b6c991cb35042074f7743a753c86a395
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'
@@ -62,4 +66,3 @@ bpk:
       note: Ketentuan yang mengatur mengenai Kabupaten Majalengka dalam Undang-Undang
         Nomor 14 Tahun 1950 dicabut dan dinyatakan tidak berlaku.
 uji_materi: null
-reparse_error: 'v9: 2 pasal, stored text has 9'
