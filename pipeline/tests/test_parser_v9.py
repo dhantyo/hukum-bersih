@@ -58,3 +58,11 @@ def test_penjelasan_files_are_recognised_by_name():
     assert is_penjelasan({"filename": "PENJELASAN UU 5 2010.pdf"})
     assert not is_penjelasan({"filename": "undang-undang nomor 19 tahun 2003.pdf"})
     assert not is_penjelasan({})
+
+
+def test_amending_law_is_recognised_from_its_first_pasal():
+    from hukum_bersih.pdf.structure import Block, Document
+
+    assert Document([Block("pasal", "Pasal I"), Block("pasal", "Pasal II")]).amending
+    assert not Document([Block("pasal", "Pasal 1"), Block("pasal", "Pasal 2")]).amending
+    assert not Document([]).amending

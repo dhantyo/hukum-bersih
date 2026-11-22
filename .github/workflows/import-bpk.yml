@@ -77,11 +77,11 @@ jobs:
           while [ "$(date +%s)" -lt "$deadline" ]; do
             batch=$((batch + 1))
             if [ "$MODE" = reparse ]; then
-              out=$(cd pipeline && uv run hukum-bersih reparse-bpk --limit "$BATCH" $ONLY 2>&1 || true)
+              out=$(cd pipeline && uv run hukum-bersih reparse-bpk --limit "$BATCH" $ONLY 2>&1 | tee /dev/stderr || true)
             else
-              out=$(cd pipeline && xvfb-run -a uv run hukum-bersih import-bpk "$JENIS" --limit "$BATCH" $ONLY $NO_TEXT $NO_ARCHIVE 2>&1 || true)
+              out=$(cd pipeline && xvfb-run -a uv run hukum-bersih import-bpk "$JENIS" --limit "$BATCH" $ONLY $NO_TEXT $NO_ARCHIVE 2>&1 | tee /dev/stderr || true)
             fi
-            echo "$out"
+            # each law is shown in the log as it is done (tee above); $out is kept for the summary
             n=$(echo "$out" | grep -c '^ok' || true)
             echo "$out" | grep -E '^(ok|FAIL|STOP|done)' >> "$GITHUB_STEP_SUMMARY" || true
             (cd pipeline && uv run hukum-bersih relations)   # link amendments, revocations

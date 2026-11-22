@@ -77,6 +77,13 @@ class Document:
         return sum(1 for b in self.blocks if b.kind == "pasal")
 
     @property
+    def amending(self) -> bool:
+        """An amending law: its own articles are Pasal I, II … (the quoted new wording sits
+        inside Pasal I)."""
+        first = next((b.label for b in self.blocks if b.kind == "pasal"), "")
+        return bool(re.search(r"\b[IVX]+\s*\.?$", first))
+
+    @property
     def bab_count(self) -> int:
         return sum(1 for b in self.blocks if b.kind == "bab")
 

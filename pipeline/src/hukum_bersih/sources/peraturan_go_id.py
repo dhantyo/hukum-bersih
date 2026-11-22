@@ -195,7 +195,10 @@ def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str, extra: list[Pat
             rec["pdf_quality"] = "image_only_or_unparsed"
             return "no pasal found (scanned PDF?)"
         before = max((v.get("pasal_count") or 0) for v in old) if old else 0
-        if doc.pasal_count < before:                       # never replace a text with a poorer one
+        # never replace a text with a poorer one; an amending law's older texts counted the
+        # quoted pasal inside Pasal I as its own (UU 1/2025: 31 for Pasal I, II), so for those
+        # only the word counts below are compared
+        if doc.pasal_count < before and not doc.amending:
             rec["reparse_error"] = f"v{PARSER_VERSION}: {doc.pasal_count} pasal, stored text has {before}"
             return f"kept old text (new parse has {doc.pasal_count} pasal, stored {before})"
         text = to_bluebell(doc)
