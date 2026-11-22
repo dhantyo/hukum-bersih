@@ -65,6 +65,7 @@ PDFs), run with `uv run python scripts/regress.py` in `pipeline/`.
 | v5 (2026-11-21) | 14/15 | page-turn word left in 2 laws; "SK No" serial in 2 scans |
 | v6 (2026-11-21) | 18/19 (set extended with UU 30/1947, 16/1947, 12/1971, 31/1999) | none |
 | v7 (2026-11-21) | **19/19**, all valid Akoma Ntoso, closing fields complete | none |
+| v8 (2026-11-22) | **20/20** (UU 2/2025 added; Penjelasan must have 50+ words) | none |
 
 v5: printed lines rebuilt from word positions (BPK stores justified text one word per line);
 page-turn words at the foot of a page and split page numbers dropped (C, D); headings with a
@@ -100,3 +101,12 @@ the closing lines into fields (order, signed, promulgated with place/date/office
 co-signing ministers, Lembaran Negara) for the Modern view: `web/generated/closing/<id>.json`.
 Quirks kept as printed: UU 19/1997 names SOEHARTO under the State Secretary too and prints
 "pada tanggal tanggal"; UU 31/1999 prints "Disahkan" for the promulgation (read as such, noted).
+
+v8: the skip of the 'Salinan sesuai dengan aslinya' block could run into the Penjelasan and
+swallow it (UU 2/2025: 1,540 -> 10 words, same pasal count), and the importer then replaced the
+stored text with the poorer one. The skip now ends at a Penjelasan or Lampiran heading and
+after 15 lines at most. The importer keeps a stored text when a new parse has fewer pasal or
+under 85% of its words, overall or in the Penjelasan (`reparse_error` says which). Also:
+Penjelasan of amending laws (Pasal I / Angka n / Pasal II), OCR's '1. UMUM'. Two random surveys
+of the mirror (150 UU each, seeds 20261121 and 7) found no further parser errors after the
+fixes; UU 10/2006 has no President's signature in BPK's copy and is left as printed.
