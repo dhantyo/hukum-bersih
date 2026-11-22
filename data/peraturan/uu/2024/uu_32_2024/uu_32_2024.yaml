@@ -9,12 +9,12 @@ tentang: PERUBAHAN ATAS UNDANG.UNDANG NOMOR 5 TAHUN I99O TENTANG KONSERVASI SUMB
   DAYA ALAM HAYATI DAN EKOSISTEMNYA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2024-08-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-32-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-32-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/295135/uu-no-32-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/354517/UU%20Nomor%2032%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,46 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_32_2024_2024
+- id: uu_32_2024_2024-08-07
   kind: asli
   source: official
-  date: null
+  date: '2024-08-07'
   date_basis: tanggal_penetapan
-  text: uu_32_2024_2024.txt
+  text: uu_32_2024_2024-08-07.txt
   pasal_count: 2
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 85cc00b74736eb231bafc0a47b10cf21795ac73ce81a79759f18b159e9635977
+  ocr: true
 pdf_sha256: 85cc00b74736eb231bafc0a47b10cf21795ac73ce81a79759f18b159e9635977
+tanggal_pengundangan: '2024-08-07'
+tanggal_berlaku: '2024-08-07'
+lembaran_negara: 'LN 2024 (138), TLN (6953): 34 hlm.; jdih.setneg.go.id'
+subjek: LINGKUNGAN HIDUP - SUMBER DAYA ALAM
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-32-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-32-tahun-2024.pdf
+bpk:
+  id: 295135
+  files:
+  - url: https://peraturan.bpk.go.id/Download/354517/UU%20Nomor%2032%20Tahun%202024.pdf
+    bpk_file_id: 354517
+    filename: UU Nomor 32 Tahun 2024.pdf
+    sha256: 85cc00b74736eb231bafc0a47b10cf21795ac73ce81a79759f18b159e9635977
+    bytes: 5362571
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_17_2019
+      citation: UU No. 17 Tahun 2019
+      tentang: Sumber Daya Air
+      url: https://peraturan.bpk.go.id/Details/122742/uu-no-17-tahun-2019
+      note: Pasal 33 dan Pasal 69 huruf c Undang-Undang Nomor 17 Tahun 2019, dicabut
+        dan dinyatakan tidak berlaku.
+    Mengubah:
+    - id: uu_5_1990
+      citation: UU No. 5 Tahun 1990
+      tentang: Konservasi Sumber Daya Alam Hayati dan Ekosistemnya
+      url: https://peraturan.bpk.go.id/Details/46710/uu-no-5-tahun-1990
+      note: null
+uji_materi: null

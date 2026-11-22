@@ -12,8 +12,8 @@ tanggal_penetapan: '2024-10-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-61-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uud-no-61-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/304396/uu-no-61-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/364403/UU%20Nomor%2061%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_61_2024_2024-10-15.txt
   pasal_count: 2
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b70cfb88e77c72dd3b936d96052fd2a3705566f13154f1612b88da986c9255b4
+  ocr: true
 pdf_sha256: b70cfb88e77c72dd3b936d96052fd2a3705566f13154f1612b88da986c9255b4
+tanggal_pengundangan: '2024-10-15'
+tanggal_berlaku: '2024-10-15'
+lembaran_negara: 'LN 2024 (225), TLN (6994) : 5 hlm.; jdih.setneg.go.id'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-61-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uud-no-61-tahun-2024.pdf
+bpk:
+  id: 304396
+  files:
+  - url: https://peraturan.bpk.go.id/Download/364403/UU%20Nomor%2061%20Tahun%202024.pdf
+    bpk_file_id: 364403
+    filename: UU Nomor 61 Tahun 2024.pdf
+    sha256: b70cfb88e77c72dd3b936d96052fd2a3705566f13154f1612b88da986c9255b4
+    bytes: 620367
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_39_2008
+      citation: UU No. 39 Tahun 2008
+      tentang: Kementerian Negara
+      url: https://peraturan.bpk.go.id/Details/39719/uu-no-39-tahun-2008
+      note: null
+uji_materi: null

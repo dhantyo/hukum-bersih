@@ -13,8 +13,8 @@ tanggal_penetapan: '2024-09-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-60-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-60-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/304399/uu-no-60-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/364406/UU%20Nomor%2060%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,5 +29,69 @@ versions:
   date: '2024-09-30'
   date_basis: tanggal_penetapan
   text: uu_60_2024_2024-09-30.txt
-  pasal_count: 10
+  pasal_count: 13
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: bf94074be46de6490523865b8c8e8dc75ea93a4f6decfd4916bac2ff82124f5f
+  ocr: true
 pdf_sha256: bf94074be46de6490523865b8c8e8dc75ea93a4f6decfd4916bac2ff82124f5f
+tanggal_pengundangan: '2024-09-30'
+tanggal_berlaku: '2024-09-30'
+lembaran_negara: 'LN 2024 (196), TLN (6988) : 10 hlm.; jdih.setneg.go.id'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-60-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-60-tahun-2024.pdf
+bpk:
+  id: 304399
+  files:
+  - url: https://peraturan.bpk.go.id/Download/364406/UU%20Nomor%2060%20Tahun%202024.pdf
+    bpk_file_id: 364406
+    filename: UU Nomor 60 Tahun 2024.pdf
+    sha256: bf94074be46de6490523865b8c8e8dc75ea93a4f6decfd4916bac2ff82124f5f
+    bytes: 2978954
+    archive_url: https://archive.org/download/uu_60_2024/uu_60_2024_2024-09-30.pdf
+  - url: https://peraturan.bpk.go.id/Download/364407/2.%20Lampiran%20Salinan%20UU%20Nomor%2060%20Tahun%202024%20(i-409).pdf
+    bpk_file_id: 364407
+    filename: 2. Lampiran Salinan UU Nomor 60 Tahun 2024 (i-409).pdf
+    sha256: e1761559c78406e07253551b33524b23791cf953f84bc9e7f1a438dc96eb790f
+    bytes: 58952217
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/364408/3.%20Lampiran%20Salinan%20UU%20Nomor%2060%20Tahun%202024%20(410-900).pdf
+    bpk_file_id: 364408
+    filename: 3. Lampiran Salinan UU Nomor 60 Tahun 2024 (410-900).pdf
+    sha256: e49dcb9f80d754e451cc74ee757077a4262c4ef57eec052d19555a729efa11e3
+    bytes: 38601944
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/364409/4.%20Lampiran%20Salinan%20UU%20Nomor%2060%20Tahun%202024%20(901-1174).pdf
+    bpk_file_id: 364409
+    filename: 4. Lampiran Salinan UU Nomor 60 Tahun 2024 (901-1174).pdf
+    sha256: 0ba0433617499c0b1990cc36d8b039d829133c9f3a1c621fb0d510205caced5a
+    bytes: 20333498
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/364410/5.%20Lampiran%20Salinan%20UU%20Nomor%2060%20Tahun%202024%20(1175-1500).pdf
+    bpk_file_id: 364410
+    filename: 5. Lampiran Salinan UU Nomor 60 Tahun 2024 (1175-1500).pdf
+    sha256: ea05f6a87ca9883de6688e6ef1873231de2b94e756964e342e7de8b8168c251a
+    bytes: 14274102
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/364411/6.%20Lampiran%20Salinan%20UU%20Nomor%2060%20Tahun%202024%20(1501-1934).pdf
+    bpk_file_id: 364411
+    filename: 6. Lampiran Salinan UU Nomor 60 Tahun 2024 (1501-1934).pdf
+    sha256: d8398b3a4003c2b8c5bcd35d33e6ae6610e4b8c39585f3d3c52c5333fad2cc4d
+    bytes: 28230571
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/364412/7.%20Lampiran%20Salinan%20UU%20Nomor%2060%20Tahun%202024%20(1935-2351).pdf
+    bpk_file_id: 364412
+    filename: 7. Lampiran Salinan UU Nomor 60 Tahun 2024 (1935-2351).pdf
+    sha256: 702cf1f6c2cc7eb2f47fa5e14b53987917dec509dcf561077ea481612d7f5c39
+    bytes: 56257392
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/364413/8.%20Lampiran%20Salinan%20UU%20Nomor%2060%20Tahun%202024%20(2352-2689).pdf
+    bpk_file_id: 364413
+    filename: 8. Lampiran Salinan UU Nomor 60 Tahun 2024 (2352-2689).pdf
+    sha256: 3168ac994300866ab7ae7ddef403332052f885adc5da55aca467af4d7b628fbe
+    bytes: 45411988
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

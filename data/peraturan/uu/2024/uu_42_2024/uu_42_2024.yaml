@@ -12,8 +12,8 @@ tanggal_penetapan: '2024-08-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-42-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-42-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/295217/uu-no-42-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/354599/UU%20Nomor%2042%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,42 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_42_2024_2024-08-07.txt
   pasal_count: 10
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3c46ce750993760f5a1ec29962051ed3d99285474e77cc0594dfeb2267ec4566
+  ocr: true
 pdf_sha256: 3c46ce750993760f5a1ec29962051ed3d99285474e77cc0594dfeb2267ec4566
+tanggal_pengundangan: '2024-08-07'
+tanggal_berlaku: '2024-08-07'
+lembaran_negara: 'LN 2024 (148), TLN (6963): 5 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-42-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-42-tahun-2024.pdf
+bpk:
+  id: 295217
+  files:
+  - url: https://peraturan.bpk.go.id/Download/354599/UU%20Nomor%2042%20Tahun%202024.pdf
+    bpk_file_id: 354599
+    filename: UU Nomor 42 Tahun 2024.pdf
+    sha256: 3c46ce750993760f5a1ec29962051ed3d99285474e77cc0594dfeb2267ec4566
+    bytes: 805860
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_6_1965
+      citation: UU No. 6 Tahun 1965
+      tentang: Pembentukan Daerah Tingkat II Inderagiri Hilir Dengan Mengubah Undang-Undang
+        No. 12 Tahun 1956, Tentang Pembentukan Daerah Otonom Kabupaten Dalam Lingkungan
+        Propinsi Sumatera Tengah
+      url: https://peraturan.bpk.go.id/Details/49986/uu-no-6-tahun-1965
+      note: Ketentuan yang mengatur mengenai Kabupaten Indragiri Hulu dalam UU Nomor
+        6 Tahun 1965, dicabut dan dinyatakan tidak berlaku.
+    - id: uu_12_1956
+      citation: UU No. 12 Tahun 1956
+      tentang: Pembentukan Daerah Otonom Kabupaten Dalam Lingkungan Daerah Propinsi
+        Sumatera Tengah
+      url: https://peraturan.bpk.go.id/Details/51095/uu-no-12-tahun-1956
+      note: Ketentuan yang mengatur mengenai Kabupaten Indragiri Hulu dalam UU Nomor
+        12 Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

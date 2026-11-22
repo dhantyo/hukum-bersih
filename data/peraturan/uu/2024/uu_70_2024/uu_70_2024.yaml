@@ -18,8 +18,8 @@ tanggal_penetapan: '2024-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-70-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-70-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/306558/uu-no-70-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/366828/UU%20Nomor%2070%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -35,4 +35,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_70_2024_2024-10-28.txt
   pasal_count: 2
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c51550370804bd6c983d540698b70a8f8ecf280a0730365167d7ffb8e9287ebf
+  ocr: true
 pdf_sha256: c51550370804bd6c983d540698b70a8f8ecf280a0730365167d7ffb8e9287ebf
+tanggal_pengundangan: '2024-10-28'
+tanggal_berlaku: '2024-10-28'
+lembaran_negara: 'LN 2024 (256), TLN (7007) : 4 hlm.; jdih.setneg.go.id'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER - HUBUNGAN INTERNASIONAL / KERJA SAMA INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-70-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-70-tahun-2024.pdf
+bpk:
+  id: 306558
+  files:
+  - url: https://peraturan.bpk.go.id/Download/366828/UU%20Nomor%2070%20Tahun%202024.pdf
+    bpk_file_id: 366828
+    filename: UU Nomor 70 Tahun 2024.pdf
+    sha256: c51550370804bd6c983d540698b70a8f8ecf280a0730365167d7ffb8e9287ebf
+    bytes: 648961
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

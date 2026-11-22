@@ -17,8 +17,8 @@ tanggal_penetapan: '2024-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-71-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-71-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/306561/uu-no-71-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/366832/UU%20Nomor%2071%20Tahun%2020224.pdf
 relationships:
   amends: []
   amended_by: []
@@ -34,4 +34,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_71_2024_2024-10-28.txt
   pasal_count: 2
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1367bfaae87ef1df3fefafb4df58d0bc47d528f408a5bd21b5b03a08188fb8b8
+  ocr: true
 pdf_sha256: 1367bfaae87ef1df3fefafb4df58d0bc47d528f408a5bd21b5b03a08188fb8b8
+tanggal_pengundangan: '2024-10-28'
+tanggal_berlaku: '2024-10-28'
+lembaran_negara: 'LN 2024 (257), TLN (7008) : 4 hlm.; jdih.setneg.go.id'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER - HUBUNGAN INTERNASIONAL / KERJA SAMA INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-71-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-71-tahun-2024.pdf
+bpk:
+  id: 306561
+  files:
+  - url: https://peraturan.bpk.go.id/Download/366832/UU%20Nomor%2071%20Tahun%2020224.pdf
+    bpk_file_id: 366832
+    filename: UU Nomor 71 Tahun 20224.pdf
+    sha256: 1367bfaae87ef1df3fefafb4df58d0bc47d528f408a5bd21b5b03a08188fb8b8
+    bytes: 391896
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

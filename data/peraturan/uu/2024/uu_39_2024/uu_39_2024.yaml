@@ -11,8 +11,8 @@ tanggal_penetapan: '2024-08-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-39-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-39-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/295186/uu-no-39-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/354568/UU%20Nomor%2039%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -27,5 +27,43 @@ versions:
   date: '2024-08-07'
   date_basis: tanggal_penetapan
   text: uu_39_2024_2024-08-07.txt
-  pasal_count: 9
+  pasal_count: 10
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c9059e8ba80dadb6a75b2df767a022f748ef560cef79a0fab16914f1a5005058
+  ocr: true
 pdf_sha256: c9059e8ba80dadb6a75b2df767a022f748ef560cef79a0fab16914f1a5005058
+tanggal_pengundangan: '2024-08-07'
+tanggal_berlaku: '2024-08-07'
+lembaran_negara: 'LN 2024 (145), TLN (6960): 6 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-39-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-39-tahun-2024.pdf
+bpk:
+  id: 295186
+  files:
+  - url: https://peraturan.bpk.go.id/Download/354568/UU%20Nomor%2039%20Tahun%202024.pdf
+    bpk_file_id: 354568
+    filename: UU Nomor 39 Tahun 2024.pdf
+    sha256: c9059e8ba80dadb6a75b2df767a022f748ef560cef79a0fab16914f1a5005058
+    bytes: 935722
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_7_1965
+      citation: UU No. 7 Tahun 1965
+      tentang: Pembentukan Daerah Tingkat II Sarolangun-Bangko Dan Daerah Tingkat
+        II Tanjung Jabung Dengan Mengubah Undang-Undang No. 12 tahun 1956 tentang
+        Pembentukan Daerah Otonom Kabupaten Di Propinsi Sumatera Tengah
+      url: https://peraturan.bpk.go.id/Details/49991/uu-no-7-tahun-1965
+      note: Ketentuan yang mengatur mengenai Kabupaten Merangin dalam UU Nomor 7 Tahun
+        1965, dicabut dan dinyatakan tidak berlaku.
+    - id: uu_12_1956
+      citation: UU No. 12 Tahun 1956
+      tentang: Pembentukan Daerah Otonom Kabupaten Dalam Lingkungan Daerah Propinsi
+        Sumatera Tengah
+      url: https://peraturan.bpk.go.id/Details/51095/uu-no-12-tahun-1956
+      note: Ketentuan yang mengatur mengenai Kabupaten Merangin dalam UU Nomor 12
+        Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

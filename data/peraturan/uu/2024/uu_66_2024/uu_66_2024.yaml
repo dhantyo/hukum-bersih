@@ -12,8 +12,8 @@ tanggal_penetapan: '2024-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-66-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-66-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/306526/uu-no-66-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/366781/UU%20Nomor%2066%20Tahun%202024.pdf
 relationships:
   amends:
   - id: uu_17_2008
@@ -35,6 +35,7 @@ relationships:
       - '84'
       - '85'
       - '86'
+      - '87'
       - '89'
       - '92'
       - '110'
@@ -45,9 +46,20 @@ relationships:
       - '198'
       - '208'
       - '223'
+      - '226'
+      - '227'
       - '230'
+      - '231'
+      - '232'
+      - '234'
       - '235'
+      - '236'
+      - '237'
+      - '251'
       - '253'
+      - '274'
+      - '276'
+      - '277'
       - '278'
       - '281'
       - '284'
@@ -69,8 +81,10 @@ relationships:
       - 107A
       - 223A
       - 251A
+      - 346A
       - 347A
       dihapus:
+      - '279'
       - '280'
       - '352'
   amended_by: []
@@ -86,4 +100,43 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_66_2024_2024-10-28.txt
   pasal_count: 2
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 269fe18899c3f35c791a7b2b4624328a59ededdb0650fc9cf31845640a00c207
+  ocr: true
 pdf_sha256: 269fe18899c3f35c791a7b2b4624328a59ededdb0650fc9cf31845640a00c207
+tanggal_pengundangan: '2024-10-28'
+tanggal_berlaku: '2024-10-28'
+lembaran_negara: 'LN 2024 (252), TLN (7003) : 40 hlm.; jdih.setneg.go.id'
+subjek: PERIKANAN DAN KELAUTAN - TRANSPORTASI DARAT / LAUT / UDARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-66-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-66-tahun-2024.pdf
+bpk:
+  id: 306526
+  files:
+  - url: https://peraturan.bpk.go.id/Download/366781/UU%20Nomor%2066%20Tahun%202024.pdf
+    bpk_file_id: 366781
+    filename: UU Nomor 66 Tahun 2024.pdf
+    sha256: 269fe18899c3f35c791a7b2b4624328a59ededdb0650fc9cf31845640a00c207
+    bytes: 78074535
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    - id: uu_17_2008
+      citation: UU No. 17 Tahun 2008
+      tentang: Pelayaran
+      url: https://peraturan.bpk.go.id/Details/39060/uu-no-17-tahun-2008
+      note: null
+uji_materi: null

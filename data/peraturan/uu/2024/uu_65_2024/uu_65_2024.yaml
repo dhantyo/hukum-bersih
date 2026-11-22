@@ -12,8 +12,8 @@ tanggal_penetapan: '2024-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-65-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/Salinan+UU+Nomor+65+Tahun+2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/306515/uu-no-65-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/366767/UU%20Nomor%2065%20Tahun%202024.pdf
 relationships:
   amends:
   - id: uu_13_2016
@@ -24,7 +24,6 @@ relationships:
       - '4'
       - '6'
       - '9'
-      - '11'
       - '19'
       - '24'
       - '25'
@@ -35,6 +34,7 @@ relationships:
       - '36'
       - '39'
       - '43'
+      - '46'
       - '48'
       - '54'
       - '66'
@@ -46,6 +46,11 @@ relationships:
       - '103'
       - '108'
       - '109'
+      - '111'
+      - '112'
+      - '126'
+      - '128'
+      - '132'
       - '167'
       disisipkan:
       - 20A
@@ -54,11 +59,14 @@ relationships:
       - 71A
       - 82A
       - 84A
+      - 111A
       - 128A
       dihapus:
       - '35'
+      - '73'
       - '85'
       - '93'
+      - '134'
   amended_by: []
   revokes: []
   revoked_by: []
@@ -72,4 +80,43 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_65_2024_2024-10-28.txt
   pasal_count: 2
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e6a53e7cf96f00e1f592bc9b5fc52768bf3329237e28cf6f12144c0b5d25f6ec
+  ocr: true
 pdf_sha256: e6a53e7cf96f00e1f592bc9b5fc52768bf3329237e28cf6f12144c0b5d25f6ec
+tanggal_pengundangan: '2024-10-28'
+tanggal_berlaku: '2024-10-28'
+lembaran_negara: 'LN 2024 (251), TLN (7002) : 38 hlm.; jdih.setneg.go.id'
+subjek: HAK ATAS KEKAYAAN INTELEKTUAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-65-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/Salinan+UU+Nomor+65+Tahun+2024.pdf
+bpk:
+  id: 306515
+  files:
+  - url: https://peraturan.bpk.go.id/Download/366767/UU%20Nomor%2065%20Tahun%202024.pdf
+    bpk_file_id: 366767
+    filename: UU Nomor 65 Tahun 2024.pdf
+    sha256: e6a53e7cf96f00e1f592bc9b5fc52768bf3329237e28cf6f12144c0b5d25f6ec
+    bytes: 92407916
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    - id: uu_13_2016
+      citation: UU No. 13 Tahun 2016
+      tentang: Paten
+      url: https://peraturan.bpk.go.id/Details/37536/uu-no-13-tahun-2016
+      note: null
+uji_materi: null

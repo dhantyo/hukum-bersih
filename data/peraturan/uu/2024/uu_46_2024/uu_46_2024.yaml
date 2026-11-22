@@ -12,8 +12,8 @@ tanggal_penetapan: '2024-08-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-46-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-46-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/295273/uu-no-46-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/354655/UU%20Nomor%2046%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,34 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_46_2024_2024-08-07.txt
   pasal_count: 10
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2c730fbb6e2bdb87382924e099875c7a09a1016878192b22663451eb0dc0ca3f
+  ocr: true
 pdf_sha256: 2c730fbb6e2bdb87382924e099875c7a09a1016878192b22663451eb0dc0ca3f
+tanggal_pengundangan: '2024-08-07'
+tanggal_berlaku: '2024-08-07'
+lembaran_negara: 'LN 2024 (152), TLN (6967): 6 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-46-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-46-tahun-2024.pdf
+bpk:
+  id: 295273
+  files:
+  - url: https://peraturan.bpk.go.id/Download/354655/UU%20Nomor%2046%20Tahun%202024.pdf
+    bpk_file_id: 354655
+    filename: UU Nomor 46 Tahun 2024.pdf
+    sha256: 2c730fbb6e2bdb87382924e099875c7a09a1016878192b22663451eb0dc0ca3f
+    bytes: 804188
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_12_1956
+      citation: UU No. 12 Tahun 1956
+      tentang: Pembentukan Daerah Otonom Kabupaten Dalam Lingkungan Daerah Propinsi
+        Sumatera Tengah
+      url: https://peraturan.bpk.go.id/Details/51095/uu-no-12-tahun-1956
+      note: Ketentuan yang mengatur mengenai Kabupaten Agam dalam UU Nomor 12 Tahun
+        1956, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

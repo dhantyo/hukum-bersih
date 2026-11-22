@@ -12,8 +12,8 @@ tanggal_penetapan: '2024-08-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-37-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-37-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/295177/uu-no-37-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/354559/UU%20Nomor%2037%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,41 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_37_2024_2024-08-07.txt
   pasal_count: 10
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e832de32ac95d9a0680ab2f6dea47a3bb77eb783e41bc8bcf4ca486ad8193206
+  ocr: true
 pdf_sha256: e832de32ac95d9a0680ab2f6dea47a3bb77eb783e41bc8bcf4ca486ad8193206
+tanggal_pengundangan: '2024-08-07'
+tanggal_berlaku: '2024-08-07'
+lembaran_negara: 'LN 2024 (143), TLN (6958): 5 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-37-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-37-tahun-2024.pdf
+bpk:
+  id: 295177
+  files:
+  - url: https://peraturan.bpk.go.id/Download/354559/UU%20Nomor%2037%20Tahun%202024.pdf
+    bpk_file_id: 354559
+    filename: UU Nomor 37 Tahun 2024.pdf
+    sha256: e832de32ac95d9a0680ab2f6dea47a3bb77eb783e41bc8bcf4ca486ad8193206
+    bytes: 579418
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_12_1956
+      citation: UU No. 12 Tahun 1956
+      tentang: Pembentukan Daerah Otonom Kabupaten Dalam Lingkungan Daerah Propinsi
+        Sumatera Tengah
+      url: https://peraturan.bpk.go.id/Details/51095/uu-no-12-tahun-1956
+      note: null
+uji_materi:
+- putusan: 31/PUU-XXIII/2025
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/185/31-PUU-XXIII-2025.pdf
+  amar: Kata “Batanghari” dalam Undang-Undang Nomor 37 Tahun 2024 tentang Kabupaten
+    Batanghari di Provinsi Jambi (Lembaran Negara Republik Indonesia Tahun 2024 Nomor
+    143, Tambahan Lembaran Negara Republik Indonesia Nomor 6958) bertentangan dengan
+    Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan
+    hukum mengikat secara bersyarat sepanjang tidak dimaknai ”Batang Hari”, sehingga
+    ditulis menjadi “Batang Hari.”

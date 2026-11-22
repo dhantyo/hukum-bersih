@@ -12,8 +12,8 @@ tanggal_penetapan: '2026-07-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-30-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-30-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/290543/uu-no-30-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/349819/UU%20Nomor%2030%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_2024_2026-07-02.txt
   pasal_count: 10
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9eb68de991a75ed3a911de4ebb42b344e7d93b9233f5ed4d4045bbc56474dc2d
+  ocr: true
 pdf_sha256: 18db11e84e22ca670c23c2d780d8a9532f9f6c5f8455a82b0c0395059f22bff3
+tanggal_penetapan_bpk: '2024-07-02'
+tanggal_pengundangan: '2024-07-02'
+tanggal_berlaku: '2024-07-02'
+lembaran_negara: 'LN 2024 (128), TLN (6950): 9 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-30-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-30-tahun-2024.pdf
+bpk:
+  id: 290543
+  files:
+  - url: https://peraturan.bpk.go.id/Download/349819/UU%20Nomor%2030%20Tahun%202024.pdf
+    bpk_file_id: 349819
+    filename: UU Nomor 30 Tahun 2024.pdf
+    sha256: 9eb68de991a75ed3a911de4ebb42b344e7d93b9233f5ed4d4045bbc56474dc2d
+    bytes: 670189
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_28_1959
+      citation: UU No. 28 Tahun 1959
+      tentang: Penetapan Undang-Undang darurat No. 4 Tahun 1956 (Lembaran-Negara Tahun
+        1956 No. 55), Undang-Undang Darurat No. 5 Tahun 1956 (Lembaran-Negara Tahun
+        1956 No. 56) dan Undang-Undang Darurat No. 6 Tahun 1956 (Lembaran-Negara Tahun
+        1956 No. 57) Tentang Pembentukan Daerah Tingkat II Termasuk Kotapraja, Dalam
+        Lingkungan Daerah Tingkat I Sumatera Selatan, Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/51524/uu-no-28-tahun-1959
+      note: Ketentuan yang mengatur mengenai Kabupaten Bangka dalam Undang-Undang
+        Nomor 28 Tahun 1959, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

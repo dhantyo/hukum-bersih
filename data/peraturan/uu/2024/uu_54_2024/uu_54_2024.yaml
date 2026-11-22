@@ -12,8 +12,8 @@ tanggal_penetapan: '2024-08-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-54-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-54-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/295285/uu-no-54-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/354667/UU%20Nomor%2054%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,34 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_54_2024_2024-08-07.txt
   pasal_count: 9
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 66bd56990acc46c6916bd0fec8b67da95e0119eccfc6aabd6b3ad3a2b8650a7b
+  ocr: true
 pdf_sha256: 66bd56990acc46c6916bd0fec8b67da95e0119eccfc6aabd6b3ad3a2b8650a7b
+tanggal_pengundangan: '2024-08-07'
+tanggal_berlaku: '2024-08-07'
+lembaran_negara: 'LN 2024 (160), TLN (6975): 5 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-54-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-54-tahun-2024.pdf
+bpk:
+  id: 295285
+  files:
+  - url: https://peraturan.bpk.go.id/Download/354667/UU%20Nomor%2054%20Tahun%202024.pdf
+    bpk_file_id: 354667
+    filename: UU Nomor 54 Tahun 2024.pdf
+    sha256: 66bd56990acc46c6916bd0fec8b67da95e0119eccfc6aabd6b3ad3a2b8650a7b
+    bytes: 827995
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_8_1956
+      citation: UU No. 8 Tahun 1956
+      tentang: Pembentukan Daerah Otonom Kota-Kecil dalam Lingkungan Daerah Propinsi
+        Sumatera Tengah
+      url: https://peraturan.bpk.go.id/Details/51091/uu-no-8-tahun-1956
+      note: Ketentuan yang mengatur mengenai Kota Padang Panjang dalam UU Nomor 8
+        Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

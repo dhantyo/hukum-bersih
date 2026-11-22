@@ -12,8 +12,8 @@ tanggal_penetapan: '2026-07-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-29-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-29-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/290581/uu-no-29-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/349857/UU%20Nomor%2029%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,3 +30,34 @@ versions:
   text: uu_29_2024_2026-07-02.txt
   pasal_count: 9
 pdf_sha256: 96fd0c58ee2df7522333c9495eb876196a75a5b65e99cfd79e444c0b92bf8bf7
+tanggal_penetapan_bpk: '2024-07-02'
+tanggal_pengundangan: '2024-07-02'
+tanggal_berlaku: '2024-07-02'
+lembaran_negara: 'LN 2024 (127), TLN (6949): 6 HLM.; JDIH.SETNEG.GO.ID'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-29-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-29-tahun-2024.pdf
+bpk:
+  id: 290581
+  files:
+  - url: https://peraturan.bpk.go.id/Download/349857/UU%20Nomor%2029%20Tahun%202024.pdf
+    bpk_file_id: 349857
+    filename: UU Nomor 29 Tahun 2024.pdf
+    sha256: ab79697e4a1c7cbe004b32d00dc284e3bc0af2a090bd31e33839cc20f658069b
+    bytes: 658365
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_28_1959
+      citation: UU No. 28 Tahun 1959
+      tentang: Penetapan Undang-Undang darurat No. 4 Tahun 1956 (Lembaran-Negara Tahun
+        1956 No. 55), Undang-Undang Darurat No. 5 Tahun 1956 (Lembaran-Negara Tahun
+        1956 No. 56) dan Undang-Undang Darurat No. 6 Tahun 1956 (Lembaran-Negara Tahun
+        1956 No. 57) Tentang Pembentukan Daerah Tingkat II Termasuk Kotapraja, Dalam
+        Lingkungan Daerah Tingkat I Sumatera Selatan, Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/51524/uu-no-28-tahun-1959
+      note: Ketentuan yang mengatur mengenai Kota Pangkal Pinang dalam Undang-Undang
+        Nomor 28 Tahun 1959, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null
+reparse_error: 'v10: 3 pasal, stored text has 9'

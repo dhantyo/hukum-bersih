@@ -11,8 +11,8 @@ tanggal_penetapan: '2024-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-73-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-73-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/307222/uu-no-73-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/367613/UU%20Nomor%2073%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -27,5 +27,35 @@ versions:
   date: '2024-10-28'
   date_basis: tanggal_penetapan
   text: uu_73_2024_2024-10-28.txt
-  pasal_count: 9
+  pasal_count: 10
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9caf8eaef00feb13c7758bd45d2fff9c77f3f3825f4f98b5633de0e144c3da36
+  ocr: true
 pdf_sha256: 9caf8eaef00feb13c7758bd45d2fff9c77f3f3825f4f98b5633de0e144c3da36
+tanggal_pengundangan: '2024-10-28'
+tanggal_berlaku: '2024-10-28'
+lembaran_negara: 'LN 2024 (259), TLN (7010) : 5 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-73-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-73-tahun-2024.pdf
+bpk:
+  id: 307222
+  files:
+  - url: https://peraturan.bpk.go.id/Download/367613/UU%20Nomor%2073%20Tahun%202024.pdf
+    bpk_file_id: 367613
+    filename: UU Nomor 73 Tahun 2024.pdf
+    sha256: 9caf8eaef00feb13c7758bd45d2fff9c77f3f3825f4f98b5633de0e144c3da36
+    bytes: 539914
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_69_1958
+      citation: UU No. 69 Tahun 1958
+      tentang: Pembentukan Daerah-Daerah Tingkat II Dalam Wilayah Daerah-Daerah Tingkat
+        I Bali, Nusa Tenggara Barat dan Nusa Tenggara Timur
+      url: https://peraturan.bpk.go.id/Details/52348/uu-no-69-tahun-1958
+      note: Ketentuan yang mengatur mengenai Kabupaten Bangli dalam Undang-Undang
+        Nomor 69 Tahun 1958, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

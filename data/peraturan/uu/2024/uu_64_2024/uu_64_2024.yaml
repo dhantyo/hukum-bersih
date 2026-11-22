@@ -13,13 +13,14 @@ tanggal_penetapan: '2024-10-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-64-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-64-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/304920/uu-no-64-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/365035/UU%20Nomor%2064%20Tahun%202024.pdf
 relationships:
   amends:
   - id: uu_19_2006
     changes:
       diubah:
+      - '1'
       - '2'
       - '7'
       - '8'
@@ -39,5 +40,33 @@ versions:
   date: '2024-10-17'
   date_basis: tanggal_penetapan
   text: uu_64_2024_2024-10-17.txt
-  pasal_count: 4
+  pasal_count: 2
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c97e1d11f83bf025828021c4fae2888b9e83a8829c140ee3544629cb09ad9b53
+  ocr: true
 pdf_sha256: c97e1d11f83bf025828021c4fae2888b9e83a8829c140ee3544629cb09ad9b53
+tanggal_pengundangan: '2024-10-17'
+tanggal_berlaku: '2024-10-17'
+lembaran_negara: 'LN 2024 (228), TLN (6997) : 6 hlm.; jdih.setneg.go.id'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-64-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-64-tahun-2024.pdf
+bpk:
+  id: 304920
+  files:
+  - url: https://peraturan.bpk.go.id/Download/365035/UU%20Nomor%2064%20Tahun%202024.pdf
+    bpk_file_id: 365035
+    filename: UU Nomor 64 Tahun 2024.pdf
+    sha256: c97e1d11f83bf025828021c4fae2888b9e83a8829c140ee3544629cb09ad9b53
+    bytes: 530138
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_19_2006
+      citation: UU No. 19 Tahun 2006
+      tentang: Dewan Pertimbangan Presiden
+      url: https://peraturan.bpk.go.id/Details/40192/uu-no-19-tahun-2006
+      note: null
+uji_materi: null

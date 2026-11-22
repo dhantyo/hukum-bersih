@@ -11,8 +11,8 @@ tanggal_penetapan: '2024-08-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-43-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-43-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/295264/uu-no-43-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/354646/UU%20Nomor%2043%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,34 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_43_2024_2024-08-07.txt
   pasal_count: 10
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 21250b0d19cd0e5e78a2c5e39f22a9b60bf97893da2acf0f043ef5c2a292c10d
+  ocr: true
 pdf_sha256: 21250b0d19cd0e5e78a2c5e39f22a9b60bf97893da2acf0f043ef5c2a292c10d
+tanggal_pengundangan: '2024-08-07'
+tanggal_berlaku: '2024-08-07'
+lembaran_negara: 'LN 2024 (149), TLN (6964): 6 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-43-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-43-tahun-2024.pdf
+bpk:
+  id: 295264
+  files:
+  - url: https://peraturan.bpk.go.id/Download/354646/UU%20Nomor%2043%20Tahun%202024.pdf
+    bpk_file_id: 354646
+    filename: UU Nomor 43 Tahun 2024.pdf
+    sha256: 21250b0d19cd0e5e78a2c5e39f22a9b60bf97893da2acf0f043ef5c2a292c10d
+    bytes: 603049
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_12_1956
+      citation: UU No. 12 Tahun 1956
+      tentang: Pembentukan Daerah Otonom Kabupaten Dalam Lingkungan Daerah Propinsi
+        Sumatera Tengah
+      url: https://peraturan.bpk.go.id/Details/51095/uu-no-12-tahun-1956
+      note: Ketentuan yang mengatur mengenai Kabupaten Kampar dalam UU Nomor 12 Tahun
+        1956, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

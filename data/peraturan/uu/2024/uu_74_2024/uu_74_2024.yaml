@@ -11,8 +11,8 @@ tanggal_penetapan: '2024-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-74-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-74-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/307234/uu-no-74-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/367626/UU%20Nomor%2074%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,34 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_74_2024_2024-10-28.txt
   pasal_count: 10
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1b2003328c2468fa3ffa6dde695c2028f0024204e1dc04872cd381f3f37ed580
+  ocr: true
 pdf_sha256: 1b2003328c2468fa3ffa6dde695c2028f0024204e1dc04872cd381f3f37ed580
+tanggal_pengundangan: '2024-10-28'
+tanggal_berlaku: '2024-10-28'
+lembaran_negara: 'LN 2024 (260), TLN (7011): 9 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-74-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-74-tahun-2024.pdf
+bpk:
+  id: 307234
+  files:
+  - url: https://peraturan.bpk.go.id/Download/367626/UU%20Nomor%2074%20Tahun%202024.pdf
+    bpk_file_id: 367626
+    filename: UU Nomor 74 Tahun 2024.pdf
+    sha256: 1b2003328c2468fa3ffa6dde695c2028f0024204e1dc04872cd381f3f37ed580
+    bytes: 369946
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_69_1958
+      citation: UU No. 69 Tahun 1958
+      tentang: Pembentukan Daerah-Daerah Tingkat II Dalam Wilayah Daerah-Daerah Tingkat
+        I Bali, Nusa Tenggara Barat dan Nusa Tenggara Timur
+      url: https://peraturan.bpk.go.id/Details/52348/uu-no-69-tahun-1958
+      note: Ketentuan yang mengatur mengenai Kabupaten Buleleng dalam Undang-Undang
+        Nomor 69 Tahun 1958, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

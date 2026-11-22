@@ -11,8 +11,8 @@ tanggal_penetapan: '2024-08-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-38-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-38-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/295181/uu-no-38-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/354563/UU%20Nomor%2038%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,36 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_38_2024_2024-08-07.txt
   pasal_count: 10
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c440e71b5440ab36de523697f9bb44ba2a6e403af037492ef55761c613645ec7
+  ocr: true
 pdf_sha256: c440e71b5440ab36de523697f9bb44ba2a6e403af037492ef55761c613645ec7
+tanggal_pengundangan: '2024-08-07'
+tanggal_berlaku: '2024-08-07'
+lembaran_negara: 'LN 2024 (144), TLN (6959): 6 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-38-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-38-tahun-2024.pdf
+bpk:
+  id: 295181
+  files:
+  - url: https://peraturan.bpk.go.id/Download/354563/UU%20Nomor%2038%20Tahun%202024.pdf
+    bpk_file_id: 354563
+    filename: UU Nomor 38 Tahun 2024.pdf
+    sha256: c440e71b5440ab36de523697f9bb44ba2a6e403af037492ef55761c613645ec7
+    bytes: 871065
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_58_1958
+      citation: UU No. 58 Tahun 1958
+      tentang: Penetapan "Undang-Undang Darurat No. 21 Tahun 1957 Tentang Pengubahan
+        Undang-Undang No. 12 Tahun 1956 Tentang Pembentukan Daerah Swatantra Tingkat
+        II Dalam Lingkungan Daerah Swatantra Tingkat I Sumatera Tengah" (Lembaran-Negara
+        Tahun 1957 No. 77) Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/52282/uu-no-58-tahun-1958
+      note: Ketentuan yang mengatur mengenai Kabupaten Kerinci dalam UU Nomor 58 Tahun
+        1958, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

@@ -12,8 +12,8 @@ tanggal_penetapan: '2024-08-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-33-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-33-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/295142/uu-no-33-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/354524/UU%20Nomor%2033%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,34 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_33_2024_2024-08-07.txt
   pasal_count: 10
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: db85aa562d6553aa3a7e2164996d7a8e701638467e82887a32d5223388f4b4a4
+  ocr: true
 pdf_sha256: db85aa562d6553aa3a7e2164996d7a8e701638467e82887a32d5223388f4b4a4
+tanggal_pengundangan: '2024-08-07'
+tanggal_berlaku: '2024-08-07'
+lembaran_negara: 'LN 2024 (139), TLN (6954): 5 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-33-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-33-tahun-2024.pdf
+bpk:
+  id: 295142
+  files:
+  - url: https://peraturan.bpk.go.id/Download/354524/UU%20Nomor%2033%20Tahun%202024.pdf
+    bpk_file_id: 354524
+    filename: UU Nomor 33 Tahun 2024.pdf
+    sha256: db85aa562d6553aa3a7e2164996d7a8e701638467e82887a32d5223388f4b4a4
+    bytes: 614965
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_12_1956
+      citation: UU No. 12 Tahun 1956
+      tentang: Pembentukan Daerah Otonom Kabupaten Dalam Lingkungan Daerah Propinsi
+        Sumatera Tengah
+      url: https://peraturan.bpk.go.id/Details/51095/uu-no-12-tahun-1956
+      note: Ketentuan yang mengatur mengenai Kabupaten Bintan dalam Undang-undang
+        Nomor 12 Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

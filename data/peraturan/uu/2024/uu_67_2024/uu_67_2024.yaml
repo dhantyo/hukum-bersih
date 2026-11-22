@@ -17,8 +17,8 @@ tanggal_penetapan: '2024-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-67-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-67-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/306536/uu-no-67-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/366795/UU%20Nomor%2067%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -35,4 +35,35 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_67_2024_2024-10-28.txt
   pasal_count: 3
+  parser_version: 10
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: da8d43f60c2cc159d690f17fb5faefff332852839432105956c254c9e114d4ef
+  ocr: true
 pdf_sha256: da8d43f60c2cc159d690f17fb5faefff332852839432105956c254c9e114d4ef
+tanggal_pengundangan: '2024-10-28'
+tanggal_berlaku: '2024-10-28'
+lembaran_negara: 'LN 2024 (253), TLN (7004) : 5 hlm.; jdih.setneg.go.id'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER - HUBUNGAN INTERNASIONAL / KERJA SAMA INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-67-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-67-tahun-2024.pdf
+bpk:
+  id: 306536
+  files:
+  - url: https://peraturan.bpk.go.id/Download/366795/UU%20Nomor%2067%20Tahun%202024.pdf
+    bpk_file_id: 366795
+    filename: UU Nomor 67 Tahun 2024.pdf
+    sha256: da8d43f60c2cc159d690f17fb5faefff332852839432105956c254c9e114d4ef
+    bytes: 642897
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_21_2006
+      citation: UU No. 21 Tahun 2006
+      tentang: Pengesahan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah
+        Republik India tentang Kegiatan Kerja Sama di Bidang Pertahanan (Agreement
+        Between The Government of The Republic of Indonesia and The Government of
+        The Republic ofIndia on Cooperative Activities In The Field of Defence)
+      url: https://peraturan.bpk.go.id/Details/40199/uu-no-21-tahun-2006
+      note: null
+uji_materi: null
