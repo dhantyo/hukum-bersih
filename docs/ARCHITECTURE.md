@@ -83,7 +83,8 @@ Names follow [NAMING.md](NAMING.md).
 | `fetch.yml` | manual | fetch + archive `id URL` pairs, commit manifest lines |
 | `archive-retitle.yml` | manual | rewrite archive.org titles/descriptions |
 | `archive-delete.yml` | manual | empty obsolete archive.org items |
-| `import-bpk.yml` | manual (schedule paused 2026-11-21 until the parser is fixed; normally every 6 h); `only` + `no_text` inputs fetch chosen ids, PDFs only | import from peraturan.bpk.go.id in batches of 50: metadata, every PDF archived on archive.org as it is downloaded, text for records without one; resumes; recomputes relationships after each batch |
+| `import-bpk.yml` | manual (schedule paused 2026-11-21 until the parser is fixed; normally every 6 h) | `mode: import`: BPK metadata, every PDF archived as downloaded (Hugging Face mirror if BPK's download fails), text from BPK's PDF with the current parser, never replacing a text with one that has fewer pasal. `mode: reparse`: texts re-converted from our archive.org copies (hash-checked), no BPK. `only`, `no_text` for samples |
+| `parser-regression.yml` | push touching the parser + manual | the 19-law regression set (`pipeline/tests/regression.yaml`, fails on any law off) and a random survey of UU from the mirror | import from peraturan.bpk.go.id in batches of 50: metadata, every PDF archived on archive.org as it is downloaded, text for records without one; resumes; recomputes relationships after each batch |
 | `import-peraturan.yml` | manual (schedule removed 2026-11-21) | import from peraturan.go.id (answers only Indonesian IPs: needs WG_INDONESIA) |
 | `archive-pending.yml` | manual (schedule removed 2026-11-21) | archive peraturan.go.id PDFs that were recorded but not archived (skips BPK ones) |
 | `probe-sources.yml` | manual | which sources a GitHub runner can reach |
