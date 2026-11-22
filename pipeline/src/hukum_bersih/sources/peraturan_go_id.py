@@ -198,6 +198,11 @@ def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str) -> str:
             rec["reparse_error"] = f"v{PARSER_VERSION}: {doc.pasal_count} pasal, stored text has {before}"
             return f"kept old text (new parse has {doc.pasal_count} pasal, stored {before})"
         text = to_bluebell(doc)
+        if old:                                            # nor one that lost a share of its words
+            lost = _words_lost(folder / old[0]["text"], text)
+            if lost:
+                rec["reparse_error"] = f"v{PARSER_VERSION}: {lost}"
+                return f"kept old text ({lost})"
         to_akn(text, rec["akn"], "act")                    # validates structure and markup
         version = f"{work}_{date or rec['year']}"
         folder.mkdir(parents=True, exist_ok=True)
@@ -218,6 +223,28 @@ def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str) -> str:
             return f"kept old text (parse error: {err[:80]})"
         rec["parse_error"] = err
         return f"parse error: {err[:80]}"
+
+
+WORDS_KEPT = 0.85   # a new text must keep at least this share of the stored text's words
+
+
+def _words_lost(stored: Path, new: str) -> str | None:
+    """Why ``new`` looks poorer than the stored text, or None: fewer than WORDS_KEPT of its
+    words, in all or in the Penjelasan (UU 2/2025 once lost its Penjelasan to a parser bug
+    while its pasal count stayed the same)."""
+    if not stored.exists():
+        return None
+
+    def count(text: str) -> tuple[int, int]:
+        body, _, penj = text.partition("ATTACHMENT Penjelasan")
+        return len(re.findall(r"\w+", body + penj)), len(re.findall(r"\w+", penj))
+
+    (old_all, old_penj), (new_all, new_penj) = count(stored.read_text()), count(new)
+    if new_all < WORDS_KEPT * old_all:
+        return f"new text has {new_all} words, stored text {old_all}"
+    if old_penj > 50 and new_penj < WORDS_KEPT * old_penj:
+        return f"new Penjelasan has {new_penj} words, stored {old_penj}"
+    return None
 
 
 def reparse(client: Client, jenis: str, data_dir: Path,

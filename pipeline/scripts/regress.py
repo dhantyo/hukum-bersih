@@ -79,8 +79,11 @@ def check(law: str, spec: dict) -> tuple[bool, str]:
                    if not (c.get(f.split(".")[0]) or {}).get(f.split(".")[1])]
         if missing:
             notes.append("closing lacks " + "/".join(missing))
-    if spec.get("penjelasan") and not any(b.kind == "penjelasan" for b in doc.blocks):
-        notes.append("no penjelasan")
+    if spec.get("penjelasan"):
+        words = len(re.findall(r"\w+", text.partition("ATTACHMENT Penjelasan")[2]))
+        if words < 50:
+            notes.append(f"penjelasan missing or empty ({words} words)")
+            ok = False
     line = (f"{law:12} pasal {doc.pasal_count:>3}/{spec['pasal']:<3} bab {doc.bab_count:>2}/{spec['bab']:<2} "
             f"{'ok ' if ok else 'OFF'} {', '.join(notes)}")
     return ok, line

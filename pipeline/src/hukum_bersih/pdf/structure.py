@@ -12,7 +12,9 @@ import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
-PARSER_VERSION = 7  # 7: amending laws keep quoted articles in Pasal I, white (hidden)
+PARSER_VERSION = 8  # 8: v7 dropped a Penjelasan after a copy certification (UU 2/2025): fixed;
+#                    Penjelasan of amending laws (Pasal I/II), OCR '1. UMUM'.
+#                   7: amending laws keep quoted articles in Pasal I, white (hidden)
 #                    text dropped, salinan certification left out, MEMORI PENJELASAN;
 #                   6: scanned pages read with our own OCR (Tesseract ind), page-turn words
 #                    anywhere on a page;
@@ -50,6 +52,7 @@ CLOSING_RE = re.compile(
     r"D[j]?akarta,? (?:pada )?tanggal|"
     r"LEMBARAN NEGARA REPUBLIK INDONESIA TAHUN|TAMBAHAN LEMBARAN NEGARA)"
 )
+SALINAN_MAX = 15  # lines of a copy's certification block ("Salinan sesuai dengan aslinya" …)
 LAMPIRAN_RE = re.compile(r"^LAMPIRAN(?:\s+[IVXLC]+)?$")
 OPENING_RE = re.compile(r"^(DENGAN RAHMAT TUHAN YANG MAHA ESA|PRESIDEN REPUBLIK INDONESIA,?)$")
 
@@ -164,6 +167,8 @@ class Parser:
         self.in_salinan = False
         self.in_lampiran = False
         self.quoted_one = False
+        self.salinan_lines = 0
+        self.p_roman = False
 
     # helpers --------------------------------------------------------------
     def emit(self, block: Block) -> Block:
@@ -255,6 +260,14 @@ class Parser:
         return bool(nxt) and is_caps(nxt) and not PASAL_RE.match(nxt)
 
     def step(self, line: str, i: int) -> int:
+        if self.in_salinan and (PENJELASAN_RE.match(line) or LAMPIRAN_RE.match(line)
+                                or self.salinan_lines >= SALINAN_MAX):
+            # the certification ends where the Penjelasan or a Lampiran starts; it is a few lines,
+            # so a long skip means a misreading: stop and keep the text (UU 2/2025 lost its
+            # Penjelasan to this before)
+            if self.salinan_lines >= SALINAN_MAX:
+                self.doc.warnings.append(f"salinan: no end found after {SALINAN_MAX} lines; text kept")
+            self.in_salinan = False
         if not self.in_penjelasan and PENJELASAN_RE.match(line) and self.last_pasal:
             self.in_penjelasan = True
             umum = re.match(r"^(PEND?JELASAN)\s+UMUM\.?$", line)
@@ -267,9 +280,8 @@ class Parser:
             self.emit(Block("closing", text=line))
             return 1
         if self.in_salinan:
-            if not (PENJELASAN_RE.match(line) or LAMPIRAN_RE.match(line)):
-                return 1
-            self.in_salinan = False
+            self.salinan_lines += 1
+            return 1
         if self.last_pasal and LAMPIRAN_RE.match(line):
             # an annex (maps, tables, schedules) after the closing or the Penjelasan: kept as
             # printed lines in its own part; it ends at a Penjelasan or the next Lampiran
@@ -278,7 +290,7 @@ class Parser:
             return 1
         if self.in_lampiran and not PENJELASAN_RE.match(line):
             if re.match(r"^Salinan sesuai dengan aslinya", line, re.IGNORECASE):
-                self.in_salinan = True
+                self.in_salinan, self.salinan_lines = True, 0
                 return 1
             self.emit(Block("lampiran_text", text=line))
             return 1
@@ -288,7 +300,7 @@ class Parser:
         if self.last_pasal and re.match(r"^Salinan sesuai dengan aslinya", line, re.IGNORECASE):
             # the copy's certification by the State Secretariat, often under a round stamp;
             # not part of the law (and OCR turns the stamp into noise)
-            self.in_salinan = True
+            self.in_salinan, self.salinan_lines = True, 0
             self.doc.warnings.append("salinan: copy certified ('Salinan sesuai dengan aslinya'); left out")
             return 1
         if (self.cur is not None and self.cur.kind == "closing" and not PENJELASAN_RE.match(line)
@@ -400,13 +412,19 @@ class Parser:
         # "I. UMUM" / "II. PASAL DEMI PASAL", with the numeral sometimes on its own line
         if re.match(r"^(?:I|II)\.$", line) and not self.p_last_pasal:
             return 1
-        if re.match(r"^(?:I\.\s*|A\.\s*)?(?:PEND?JELASAN\s+)?UMUM\.?$", line) and not self.p_last_pasal:
+        if re.match(r"^(?:[I1l]\.\s*|A\.\s*)?(?:PEND?JELASAN\s+)?UMUM\.?$", line) and not self.p_last_pasal:
             self.emit(Block("umum", text="Umum"))
             return 1
         if re.match(r"^(?:II\.\s*|B\.\s*)?(?:PEND?JELASAN\s+)?PASAL DEMI PASAL\.?$", line) and not self.p_last_pasal:
             self.emit(Block("pasal_demi_pasal", text="Pasal demi Pasal"))
             return 1
-        if (m := PASAL_RE.match(line)) and m[1][0].isdigit():
+        if (m := PASAL_RE.match(line)) and not m[1][0].isdigit() and self.amending:
+            n = roman(m[1])                      # an amending law's Penjelasan: Pasal I, Pasal II
+            if n == self.p_last_pasal + 1:
+                self.p_last_pasal, self.p_roman = n, True
+                self.emit(Block("p_pasal", label=f"Pasal {m[1]}"))
+                return 1
+        if (m := PASAL_RE.match(line)) and m[1][0].isdigit() and not self.p_roman:
             n = int(re.match(r"\d+", m[1])[0])
             if n == self.p_last_pasal + 1 or (m[1][-1].isalpha() and n == self.p_last_pasal):
                 self.p_last_pasal = n

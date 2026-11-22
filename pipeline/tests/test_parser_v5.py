@@ -231,3 +231,26 @@ def test_own_pasal_2_after_amendments_in_pasal_i():                 # UU 2/1953,
 def test_ocr_serials_and_bars():                                      # UU 2/2021, UU 24/2022
     page = ["teks", "SK Na 103881 A", "| Pasal 1", "SK No 1039N5 A", "SK Ng 103884 A", "isi"]
     assert _clean_page(page, first_page=False) == ["teks", "Pasal 1", "isi"]
+
+
+def test_penjelasan_after_the_copy_certification_is_kept():          # UU 2/2025 lost it before
+    lines = (["Menimbang : a. bahwa x;", "Pasal I", "1. Ketentuan Pasal 1 diubah sehingga berbunyi sebagai berikut:",
+              "Pasal 1", "isi.", "Pasal II", "Berlaku.", "Disahkan di Jakarta", "PRABOWO SUBIANTO",
+              "LEMBARAN NEGARA REPUBLIK INDONESIA TAHUN 2025 NOMOR 29",
+              "Salinan sesuai dengan aslinya", "KEMENTERIAN SEKRETARIAT NEGARA", "Or MS dia Silyanna Djaman",
+              "PENJELASAN", "ATAS", "UNDANG-UNDANG REPUBLIK INDONESIA", "1. UMUM", "Mineral dan Batubara adalah kekayaan.",
+              "II. PASAL DEMI PASAL", "Pasal I", "Angka 1", "Pasal 1", "Cukup jelas.", "Pasal II", "Cukup jelas.",
+              "TAMBAHAN LEMBARAN NEGARA REPUBLIK INDONESIA NOMOR 7100"])
+    doc = parse_lines(lines)
+    text = " ".join(b.text for b in doc.blocks)
+    assert "Mineral dan Batubara adalah kekayaan." in text and "Silyanna" not in text
+    assert [b.label for b in kinds(doc, "p_pasal")] == ["Pasal I", "Pasal II"]
+    assert any(b.kind == "umum" for b in doc.blocks)
+
+
+def test_a_runaway_copy_certification_skip_is_capped():
+    lines = ["Menimbang : a. bahwa x;", "Pasal 1", "isi.", "Disahkan di Jakarta", "Salinan sesuai dengan aslinya"] + \
+            [f"baris {k}" for k in range(40)]
+    doc = parse_lines(lines)
+    assert "baris 39" in " ".join(b.text for b in doc.blocks)
+    assert any("no end found" in w for w in doc.warnings)

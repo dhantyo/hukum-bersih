@@ -264,3 +264,13 @@ def test_mirror_fallback_when_bpk_fails(tmp_path, monkeypatch):
     assert content.startswith(b"%PDF") and "mirror" in note and "giving up" in note
     with pytest.raises(RuntimeError, match="not in the mirror either"):
         bpk.download(Broken(), {"url": "u", "filename": "UU Nomor 99 Tahun 2026.pdf"}, tmp_path)
+
+
+def test_never_replaced_by_a_text_that_lost_its_penjelasan(tmp_path):
+    from hukum_bersih.sources.peraturan_go_id import _words_lost
+
+    stored = tmp_path / "t.txt"
+    stored.write_text("BODY\n  ART 1 -\n    " + "kata " * 2000 + "\nATTACHMENT Penjelasan\n  " + "jelas " * 300)
+    assert "Penjelasan has" in _words_lost(stored, "BODY\n  ART 1 -\n    " + "kata " * 2000)
+    assert _words_lost(stored, "BODY\n  ART 1 -\n    " + "kata " * 1950 + "\nATTACHMENT Penjelasan\n  " + "jelas " * 290) is None
+    assert "words, stored text" in _words_lost(stored, "BODY " + "kata " * 100)
