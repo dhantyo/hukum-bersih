@@ -6,13 +6,13 @@ year: 2006
 title: Undang-Undang Nomor 13 Tahun 2006 tentang Perlindungan Saksi Dan Korban
 tentang: PERLINDUNGAN SAKSI DAN KORBAN
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '2006-08-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-2006
-source_pdf_url: https://peraturan.go.id/files/uu13-2006.pdf
+source_url: https://peraturan.bpk.go.id/Details/40178/uu-no-13-tahun-2006
+source_pdf_url: https://peraturan.bpk.go.id/Download/29813/UU%20Nomor%2013%20Tahun%202006.pdf
 relationships:
   amends: []
   amended_by:
@@ -29,4 +29,45 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2006_2006-08-11.txt
   pasal_count: 46
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 21f7b6b03dc7f859c986afec8f2e9a55ea878b1fcdf5f9dd8cc47711e7c11c63
 pdf_sha256: 47595db2ced400b83e2e2cba408174861a4e0cc1467c171447722f772c2b97be
+tanggal_pengundangan: '2006-08-11'
+tanggal_berlaku: '2006-08-11'
+lembaran_negara: 'LN.2006/NO.64, TLN NO.4635, LL SETNEG : 18 HLM'
+subjek: HAK ASASI MANUSIA - HUKUM PIDANA, PERDATA, DAN DAGANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-2006
+  source_pdf_url: https://peraturan.go.id/files/uu13-2006.pdf
+bpk:
+  id: 40178
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29813/UU%20Nomor%2013%20Tahun%202006.pdf
+    bpk_file_id: 29813
+    filename: UU Nomor 13 Tahun 2006.pdf
+    sha256: 21f7b6b03dc7f859c986afec8f2e9a55ea878b1fcdf5f9dd8cc47711e7c11c63
+    bytes: 36935
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_3_2026
+      citation: UU No. 3 Tahun 2026
+      tentang: Pelindungan Saksi dan Korban
+      url: https://peraturan.bpk.go.id/Details/349942/uu-no-3-tahun-2026
+      note: null
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 37, Pasal 38, Pasal 39, dan Pasal 41 Undang-Undang Nomor 13 Tahun
+        2006 sebagaimana telah diubah dengan Undang-Undang Nomor 31 Tahun 2014
+    Diubah dengan:
+    - id: uu_31_2014
+      citation: UU No. 31 Tahun 2014
+      tentang: Perubahan atas Undang-Undang Nomor 13 Tahun 2006 Tentang Perlindungan
+        Saksi dan Korban
+      url: https://peraturan.bpk.go.id/Details/38701/uu-no-31-tahun-2014
+      note: null
+uji_materi: null

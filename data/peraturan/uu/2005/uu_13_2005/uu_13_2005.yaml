@@ -12,8 +12,8 @@ tanggal_penetapan: '2005-11-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-2005
-source_pdf_url: https://peraturan.go.id/files/uu13-2005.pdf
+source_url: https://peraturan.bpk.go.id/Details/40264/uu-no-13-tahun-2005
+source_pdf_url: https://peraturan.bpk.go.id/Download/29904/UU%20Nomor%2013%20Tahun%202005.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2005_2005-11-18.txt
   pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3f11b5e1cfdf69d32988859633e817db752ba3ef39d952109f81ff10b9950cce
 pdf_sha256: 3f11b5e1cfdf69d32988859633e817db752ba3ef39d952109f81ff10b9950cce
+tanggal_pengundangan: '2005-11-18'
+tanggal_berlaku: '2006-01-01'
+lembaran_negara: 'LN.2005/NO.133, TLN NO.4571, LL SETNEG : 16 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-2005
+  source_pdf_url: https://peraturan.go.id/files/uu13-2005.pdf
+bpk:
+  id: 40264
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29904/UU%20Nomor%2013%20Tahun%202005.pdf
+    bpk_file_id: 29904
+    filename: UU Nomor 13 Tahun 2005.pdf
+    sha256: 3f11b5e1cfdf69d32988859633e817db752ba3ef39d952109f81ff10b9950cce
+    bytes: 164963
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_14_2006
+      citation: UU No. 14 Tahun 2006
+      tentang: Perubahan atas Undang-Undang Nomor 13 Tahun 2005 tentang Anggaran Pendapatan
+        dan Belanja Negara Tahun Anggaran 2006
+      url: https://peraturan.bpk.go.id/Details/40183/uu-no-14-tahun-2006
+      note: null
+uji_materi:
+- putusan: 026/PUU-XIII/2005
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/75/putusan_sidang_026_PUU-III_2005.pdf
+  amar: Undang-undang Republik Indonesia Nomor 13 Tahun 2005 tentang Anggaran Pendapatan
+    dan Belanja Negara Tahun Anggaran 2006 sepanjang menyangkut anggaran pendidikan
+    sebesar 9,1% (sembilan koma satu persen) sebagai batas tertinggi, bertentangan
+    dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.

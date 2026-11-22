@@ -11,8 +11,8 @@ tanggal_penetapan: '2006-08-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-2006
-source_pdf_url: https://peraturan.go.id/files/uu11-2006.pdf
+source_url: https://peraturan.bpk.go.id/Details/40174/uu-no-11-tahun-2006
+source_pdf_url: https://peraturan.bpk.go.id/Download/29809/UU%20Nomor%2011%20Tahun%202006.pdf
 relationships:
   amends: []
   amended_by: []
@@ -27,5 +27,39 @@ versions:
   date: '2006-08-01'
   date_basis: tanggal_penetapan
   text: uu_11_2006_2006-08-01.txt
-  pasal_count: 28
+  pasal_count: 273
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 72c743c444fae30b13a937ae7c8a3a4825ad7aa27f24c35db4c4a86b4b758ed1
 pdf_sha256: 510759c72f7c29859dabd4dfea4abaeacd79066d4d5485022630ffb5aa821191
+tanggal_pengundangan: '2006-08-01'
+tanggal_berlaku: '2006-08-01'
+lembaran_negara: 'LN.2006/NO.62, TLN NO.4633, LL SETNEG : 145 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH - KETATANEGARAAN, KENEGARAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-2006
+  source_pdf_url: https://peraturan.go.id/files/uu11-2006.pdf
+bpk:
+  id: 40174
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29809/UU%20Nomor%2011%20Tahun%202006.pdf
+    bpk_file_id: 29809
+    filename: UU Nomor 11 Tahun 2006.pdf
+    sha256: 72c743c444fae30b13a937ae7c8a3a4825ad7aa27f24c35db4c4a86b4b758ed1
+    bytes: 263556
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_18_2001
+      citation: UU No. 18 Tahun 2001
+      tentang: Otonomi Khusus Bagi Provinsi Daerah Istimewa Aceh Sebagai Provinsi
+        Nanggroe Aceh Darussalam
+      url: https://peraturan.bpk.go.id/Details/44898/uu-no-18-tahun-2001
+      note: null
+uji_materi:
+- putusan: 51/PUU-XIV/2016
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/50/51_PUU-XIV_2016.pdf
+  amar: Pasal 67 ayat (2) huruf g Undang-Undang Nomor 11 Tahun 2006 tentang Pemerintahan
+    Aceh bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum
+    mengikat sepanjang tidak dimaknai dikecualikan bagi mantan terpidana yang secara
+    terbuka dan jujur mengemukakan kepada publik bahwa yang bersangkutan mantan terpidana

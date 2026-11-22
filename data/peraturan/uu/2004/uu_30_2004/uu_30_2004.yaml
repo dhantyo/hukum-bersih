@@ -11,8 +11,8 @@ tanggal_penetapan: '2004-10-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-30-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu30-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40758/uu-no-30-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30494/UU%20Nomor%2030%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by:
@@ -30,4 +30,55 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_2004_2004-10-06.txt
   pasal_count: 92
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c15d0555c5fee1dd6dd9020d711e6c09eea68a279ab756cfa71c3051bab91d9f
 pdf_sha256: c15d0555c5fee1dd6dd9020d711e6c09eea68a279ab756cfa71c3051bab91d9f
+tanggal_pengundangan: '2004-10-06'
+tanggal_berlaku: '2004-10-06'
+lembaran_negara: 'LN. 2004/ NO.117, TLN NO. 4432 LL SETNEG : 34 HLM'
+subjek: JABATAN / PROFESI / KEAHLIAN / SERTIFIKASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-30-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu30-2004.pdf
+bpk:
+  id: 40758
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30494/UU%20Nomor%2030%20Tahun%202004.pdf
+    bpk_file_id: 30494
+    filename: UU Nomor 30 Tahun 2004.pdf
+    sha256: c15d0555c5fee1dd6dd9020d711e6c09eea68a279ab756cfa71c3051bab91d9f
+    bytes: 222836
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_2_2014
+      citation: UU No. 2 Tahun 2014
+      tentang: Perubahan atas Undang-Undang Nomor 30 Tahun 2004 Tentang Jabatan Notaris
+      url: https://peraturan.bpk.go.id/Details/38565/uu-no-2-tahun-2014
+      note: null
+    Mencabut:
+    - id: uu_33_1954
+      citation: UU No. 33 Tahun 1954
+      tentang: Wakil Notaris Dan Wakil Notaris Sementara
+      url: https://peraturan.bpk.go.id/Details/50503/uu-no-33-tahun-1954
+      note: null
+    - id: pp_11_1949
+      citation: PP No. 11 Tahun 1949
+      tentang: Sumpah Jabatan Notaris
+      url: https://peraturan.bpk.go.id/Details/64084/pp-no-11-tahun-1949
+      note: null
+uji_materi:
+- putusan: 84/PUU-XXII/2024
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/174/84-PUU-XXII-2024.pdf
+  amar: Pasal 8 ayat (2) Undang-Undang Nomor 30 Tahun 2004 tentang Jabatan Notaris
+    (Lembaran Negara Republik Indonesia Tahun 2004 Nomor 117, Tambahan Lembaran Negara
+    Republik Indonesia Nomor 4432) bertentangan dengan Undang-Undang Dasar Negara
+    Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat secara
+    bersyarat sepanjang tidak dimaknai "Ketentuan umur sebagaimana dimaksud pada ayat
+    (1) huruf b dapat diperpanjang sampai berumur 67 (enam puluh tujuh) tahun dengan
+    mempertimbangkan kesehatan yang bersangkutan, dan dapat diperpanjang kembali setiap
+    tahun sampai berumur 70 (tujuh puluh) tahun dengan mempertimbangkan kesehatan
+    yang bersangkutan berdasarkan hasil pemeriksaan dokter yang dilakukan secara berkala
+    setiap tahun pada rumah sakit umum pemerintah pusat, rumah sakit umum daerah,
+    atau rumah sakit yang ditunjuk oleh Menteri yang menangani urusan di bidang hukum."

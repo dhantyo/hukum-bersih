@@ -14,8 +14,8 @@ tanggal_penetapan: '2006-04-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-2006
-source_pdf_url: https://peraturan.go.id/files/uu5-2006.pdf
+source_url: https://peraturan.bpk.go.id/Details/40158/uu-no-5-tahun-2006
+source_pdf_url: https://peraturan.bpk.go.id/Download/29793/UU%20Nomor%205%20Tahun%202006.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,3 +32,22 @@ versions:
   text: uu_5_2006_2006-04-05.txt
   pasal_count: 2
 pdf_sha256: e7e5d8a4eba77624e6b8836be07059b1e87cda0c5580cb8e0539039eb5dd9c28
+tanggal_pengundangan: '2006-04-05'
+tanggal_berlaku: '2006-04-05'
+lembaran_negara: 'LN.2008/NO.28, TLN NO.4616, LL SETNEG : 5 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-2006
+  source_pdf_url: https://peraturan.go.id/files/uu5-2006.pdf
+bpk:
+  id: 40158
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29793/UU%20Nomor%205%20Tahun%202006.pdf
+    bpk_file_id: 29793
+    filename: UU Nomor 5 Tahun 2006.pdf
+    sha256: 9830164b614e4212261c36e8ded8e34782d2789735066d18c5b4684dbb1b2943
+    bytes: 26778
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
+reparse_error: 'v12: new text has 2193 words, stored text 9694'

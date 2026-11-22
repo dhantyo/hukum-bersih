@@ -11,8 +11,8 @@ tanggal_penetapan: '2004-10-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-25-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu25-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40694/uu-no-25-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30429/UU%20Nomor%2025%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_25_2004_2004-10-05.txt
   pasal_count: 37
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d74ae2c7536fa71b5a8fc180e4c1c8fb1ec6a1a87c98a21f2334f7108d574776
 pdf_sha256: d74ae2c7536fa71b5a8fc180e4c1c8fb1ec6a1a87c98a21f2334f7108d574776
+tanggal_pengundangan: '2004-10-05'
+tanggal_berlaku: '2004-10-05'
+lembaran_negara: 'LN. 2004/ No. 104, TLN NO. 4421, LL SETNEG : 19 HLM'
+subjek: PROGRAM, RENCANA PEMBANGUNAN DAN RENCANA KERJA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-25-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu25-2004.pdf
+bpk:
+  id: 40694
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30429/UU%20Nomor%2025%20Tahun%202004.pdf
+    bpk_file_id: 30429
+    filename: UU Nomor 25 Tahun 2004.pdf
+    sha256: d74ae2c7536fa71b5a8fc180e4c1c8fb1ec6a1a87c98a21f2334f7108d574776
+    bytes: 168422
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

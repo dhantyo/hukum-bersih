@@ -11,8 +11,8 @@ tanggal_penetapan: '2004-10-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-31-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu31-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40763/uu-no-31-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30499/UU%20Nomor%2031%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,53 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_31_2004_2004-10-06.txt
   pasal_count: 111
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c4054bce57b2f200cceb6c4abc029d91f2dc4acd3148f2846cc3570a9fd0e6d7
 pdf_sha256: c4054bce57b2f200cceb6c4abc029d91f2dc4acd3148f2846cc3570a9fd0e6d7
+tanggal_pengundangan: '2004-10-06'
+tanggal_berlaku: '2004-10-06'
+lembaran_negara: 'LN. 2004/ No. 118, TLN NO. 4433, LL SETNEG : 51 HLM'
+subjek: PERIKANAN DAN KELAUTAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-31-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu31-2004.pdf
+bpk:
+  id: 40763
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30499/UU%20Nomor%2031%20Tahun%202004.pdf
+    bpk_file_id: 30499
+    filename: UU Nomor 31 Tahun 2004.pdf
+    sha256: c4054bce57b2f200cceb6c4abc029d91f2dc4acd3148f2846cc3570a9fd0e6d7
+    bytes: 401462
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    - id: uu_45_2009
+      citation: UU No. 45 Tahun 2009
+      tentang: Perubahan Atas Undang-Undang Nomor 31 Tahun 2004 Tentang Perikanan
+      url: https://peraturan.bpk.go.id/Details/38790/uu-no-45-tahun-2009
+      note: null
+    Mencabut:
+    - id: uu_9_1985
+      citation: UU No. 9 Tahun 1985
+      tentang: Perikanan
+      url: https://peraturan.bpk.go.id/Details/46958/uu-no-9-tahun-1985
+      note: null
+uji_materi: null

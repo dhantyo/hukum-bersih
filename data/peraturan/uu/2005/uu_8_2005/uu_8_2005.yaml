@@ -8,20 +8,18 @@ title: Undang-Undang Nomor 8 Tahun 2005 tentang Penetapan Perpu 3-2005 Tentang P
 tentang: PENETAPAN PERPU 3-2005 TENTANG PERUBAHAN UU 32-2004 TENTANG PEMERINTAHAN
   DAERAH MENJADI UU
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 23 Tahun 2014 Tentang Pemerintahan
-  Daerah'
+status: tidak_berlaku
 tanggal_penetapan: '2005-10-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-2005
-source_pdf_url: https://peraturan.go.id/files/uu8-2005.pdf
+source_url: https://peraturan.bpk.go.id/Details/40250/uu-no-8-tahun-2005
+source_pdf_url: https://peraturan.bpk.go.id/Download/29889/UU%20Nomor%208%20Tahun%202005.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_23_2014
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -32,4 +30,56 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_2005_2005-10-19.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 018243519704e3e2ff709e95dea0aedac83b2b181e95bbb0e5d5409b008b1336
 pdf_sha256: 018243519704e3e2ff709e95dea0aedac83b2b181e95bbb0e5d5409b008b1336
+tanggal_pengundangan: '2005-10-19'
+tanggal_berlaku: '2005-10-19'
+lembaran_negara: 'LN.2005/NO.108, TLN NO.4548, LL SETNEG : 3 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-2005
+  source_pdf_url: https://peraturan.go.id/files/uu8-2005.pdf
+bpk:
+  id: 40250
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29889/UU%20Nomor%208%20Tahun%202005.pdf
+    bpk_file_id: 29889
+    filename: UU Nomor 8 Tahun 2005.pdf
+    sha256: 018243519704e3e2ff709e95dea0aedac83b2b181e95bbb0e5d5409b008b1336
+    bytes: 65869
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_23_2014
+      citation: UU No. 23 Tahun 2014
+      tentang: Pemerintahan Daerah
+      url: https://peraturan.bpk.go.id/Details/38685/uu-no-23-tahun-2014
+      note: null
+    Dicabut sebagian dengan:
+    - id: uu_6_2014
+      citation: UU No. 6 Tahun 2014
+      tentang: Desa
+      url: https://peraturan.bpk.go.id/Details/38582/uu-no-6-tahun-2014
+      note: null
+    Diubah dengan:
+    - id: uu_12_2008
+      citation: UU No. 12 Tahun 2008
+      tentang: Perubahan Kedua atas Undang-Undang Nomor 32 Tahun 2004 tentang Pemerintahan
+        Daerah
+      url: https://peraturan.bpk.go.id/Details/39043/uu-no-12-tahun-2008
+      note: null
+    Diubah sebagian dengan:
+    - id: uu_6_2014
+      citation: UU No. 6 Tahun 2014
+      tentang: Desa
+      url: https://peraturan.bpk.go.id/Details/38582/uu-no-6-tahun-2014
+      note: null
+    Mengubah:
+    - id: uu_32_2004
+      citation: UU No. 32 Tahun 2004
+      tentang: Pemerintahan Daerah
+      url: https://peraturan.bpk.go.id/Details/40768/uu-no-32-tahun-2004
+      note: null
+uji_materi: null

@@ -14,8 +14,8 @@ tanggal_penetapan: '2005-03-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-2005
-source_pdf_url: https://peraturan.go.id/files/uu2-2005.pdf
+source_url: https://peraturan.bpk.go.id/Details/40231/uu-no-2-tahun-2005
+source_pdf_url: https://peraturan.bpk.go.id/Download/29866/UU%20Nomor%202%20Tahun%202005.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,3 +32,23 @@ versions:
   text: uu_2_2005_2005-03-08.txt
   pasal_count: 2
 pdf_sha256: eaa355df2afffb11c4bef4c9822c00fae60adb9eda4cc7c9cdebf0466a508ee0
+tanggal_penetapan_bpk: '2005-08-03'
+tanggal_pengundangan: '2005-08-03'
+tanggal_berlaku: '2005-08-03'
+lembaran_negara: 'LN.2005/NO.73, TLN NO.4523, LL SETNEG : 2 HLM'
+subjek: KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-2005
+  source_pdf_url: https://peraturan.go.id/files/uu2-2005.pdf
+bpk:
+  id: 40231
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29866/UU%20Nomor%202%20Tahun%202005.pdf
+    bpk_file_id: 29866
+    filename: UU Nomor 2 Tahun 2005.pdf
+    sha256: d571ed512431abb897a59d2d01f950732d266e014c448022521695311e26b5c4
+    bytes: 45439
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
+reparse_error: 'v12: new Penjelasan has 0 words, stored 473'

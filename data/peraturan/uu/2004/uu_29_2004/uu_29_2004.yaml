@@ -6,19 +6,18 @@ year: 2004
 title: Undang-Undang Nomor 29 Tahun 2004 tentang Praktik Kedokteran
 tentang: PRAKTIK KEDOKTERAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 17 Tahun 2023 Tentang Kesehatan'
+status: tidak_berlaku
 tanggal_penetapan: '2004-10-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-29-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu29-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40752/uu-no-29-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30487/UU%20Nomor%2029%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_17_2023
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -29,4 +28,39 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_29_2004_2004-10-06.txt
   pasal_count: 88
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 168d0dacf363e612d3e316aaf1de229bf8138f6baa5ee98a5023a92dd88baaa6
 pdf_sha256: 168d0dacf363e612d3e316aaf1de229bf8138f6baa5ee98a5023a92dd88baaa6
+tanggal_pengundangan: '2004-10-06'
+tanggal_berlaku: '2005-10-06'
+lembaran_negara: 'LN. 2004/ No.116, TLN NO. 4431, LL SETNEG : 42 HLM'
+subjek: KESEHATAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-29-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu29-2004.pdf
+bpk:
+  id: 40752
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30487/UU%20Nomor%2029%20Tahun%202004.pdf
+    bpk_file_id: 30487
+    filename: UU Nomor 29 Tahun 2004.pdf
+    sha256: 168d0dacf363e612d3e316aaf1de229bf8138f6baa5ee98a5023a92dd88baaa6
+    bytes: 269306
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_17_2023
+      citation: UU No. 17 Tahun 2023
+      tentang: Kesehatan
+      url: https://peraturan.bpk.go.id/Details/258028/uu-no-17-tahun-2023
+      note: null
+uji_materi:
+- putusan: 10/PUU-XV/2017
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/31/putusan_sidang_2776_20180426160746_10%20PUU%202017_Kedokteran-telahucap-KABUL_SEBAGIAN_edited-%20wmActionWiz.pdf
+  amar: 'Pasal 14 ayat (1) huruf a Undang-Undang Nomor 29 Tahun 2004 tentang Praktik
+    Kedokteran yang menyatakan Jumlah anggota Konsil Kedokteran Indonesia 17 (tujuh
+    belas) orang yang terdiri atas unsur-unsur yang berasal dari: (a) organisasi profesi
+    kedokteran 2 (dua) orang;..." bertentangan dengan UUD NRI Tahun 1945 dan tidak
+    mempunyai kekuatan hukum mengikat sepanjang unsur "organisasi profesi kedokteran"
+    tidak dimaknai sebagai tidak menjadi pengurus organisasi profesi kedokteran.'

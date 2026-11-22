@@ -13,8 +13,8 @@ tanggal_penetapan: '2005-07-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-2005
-source_pdf_url: https://peraturan.go.id/files/uu1-2005.pdf
+source_url: https://peraturan.bpk.go.id/Details/40229/uu-no-1-tahun-2005
+source_pdf_url: https://peraturan.bpk.go.id/Download/29864/UU%20Nomor%201%20Tahun%202005.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,3 +31,35 @@ versions:
   text: uu_1_2005_2005-07-11.txt
   pasal_count: 6
 pdf_sha256: 6a3dc377501a1bd9142348ffa9e1780f94f61e094ce96e9fb405ff01d4c3f356
+tanggal_pengundangan: '2005-07-11'
+tanggal_berlaku: '2005-01-01'
+lembaran_negara: 'LN.2005/NO.61, LL SETNEG : 8 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-2005
+  source_pdf_url: https://peraturan.go.id/files/uu1-2005.pdf
+bpk:
+  id: 40229
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29864/UU%20Nomor%201%20Tahun%202005.pdf
+    bpk_file_id: 29864
+    filename: UU Nomor 1 Tahun 2005.pdf
+    sha256: e97cd2c99d5819c90d0d0498def6a3e2bc349108247ff9376318d74e84ebd107
+    bytes: 44486
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_9_2005
+      citation: UU No. 9 Tahun 2005
+      tentang: Perubahan Kedua atas Undang-Undang Nomor 36 Tahun 2004 tentang Anggaran
+        Pendapatan dan Belanja Negara Tahun Anggaran 2005
+      url: https://peraturan.bpk.go.id/Details/40252/uu-no-9-tahun-2005
+      note: null
+    Mengubah:
+    - id: uu_36_2004
+      citation: UU No. 36 Tahun 2004
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2005
+      url: https://peraturan.bpk.go.id/Details/40782/uu-no-36-tahun-2004
+      note: null
+uji_materi: null
+reparse_error: 'v12: new text has 2384 words, stored text 6880'

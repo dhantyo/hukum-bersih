@@ -12,8 +12,8 @@ tanggal_penetapan: '2004-10-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-37-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu37-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40784/uu-no-37-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30522/UU%20Nomor%2037%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,61 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_37_2004_2004-10-18.txt
   pasal_count: 308
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c49dc0ab828758a11bf88f71d43580a7e600e16d47afd254c5c7d2149d74338b
 pdf_sha256: c49dc0ab828758a11bf88f71d43580a7e600e16d47afd254c5c7d2149d74338b
+tanggal_pengundangan: '2004-10-18'
+tanggal_berlaku: '2004-10-18'
+lembaran_negara: 'LN. 2004/ No. 131, TLN NO.4443, LL SETNEG : 126 HLM'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-37-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu37-2004.pdf
+bpk:
+  id: 40784
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30522/UU%20Nomor%2037%20Tahun%202004.pdf
+    bpk_file_id: 30522
+    filename: UU Nomor 37 Tahun 2004.pdf
+    sha256: c49dc0ab828758a11bf88f71d43580a7e600e16d47afd254c5c7d2149d74338b
+    bytes: 348368
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: 'Ketentuan mengenai: a. permohonan kepailitan bagi Bank, Perusahaan Efek,
+        Bursa Efek, Lembaga Kliring dan Penjaminan, Lembaga Penyimpanan dan Penyelesaian,
+        dan Dana Pensiun sebagaimana diatur dalam Pasal 2; dan b. penundaan kewajiban
+        pembayaran utang bagi Bank, Perusahaan Efek, Bursa Efek, Lembaga Kliring dan
+        Penjaminan, Lembaga Penyimpanan dan Penyelesaian, Perusahaan Asuransi, Perusahaan
+        Reasuransi, dan Dana Pensiun sebagaimana diatur dalam Pasal 223, Undang-Undang
+        Nomor 37 Tahun 2004, dicabut dan dinyatakan tidak berlaku'
+    Mencabut:
+    - id: uu_4_1998
+      citation: UU No. 4 Tahun 1998
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        1998 tentang Perubahan atas Undang-Undang tentang Kepailitan Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/45434/uu-no-4-tahun-1998
+      note: null
+uji_materi:
+- putusan: 74/PUU-XXIV/2026
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/230/putusan_mkri_74-PUU-XXIV-2026.pdf
+  amar: Pasal 74 ayat (1) Undang-Undang Nomor 37 Tahun 2004 tentang Kepailitan dan
+    Penundaan Kewajiban Pembayaran Utang (Lembaran Negara Republik Indonesia Tahun
+    2004 Nomor 131, Tambahan Lembaran Negara Republik Indonesia Nomor 4443) bertentangan
+    dengan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai
+    kekuatan hukum mengikat secara bersyarat sepanjang tidak dimaknai, “kurator menyampaikan
+    laporan kepada hakim pengawas dalam pelaksanaan tugasnya setiap 3 (tiga) bulan
+    mengenai perkembangan penanganan harta pailit dengan tembusan kepada kreditor
+    dan debitor pailit atau kuasanya melalui surat tercatat dan/atau surat elektronik
+    (surel) atau aplikasi
+- putusan: 071/PUU-II/2004_001- 002/PUU-III/2005
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/135/PutusanKepailitan.pdf
+  amar: Pasal 6 ayat (3) beserta Penjelasannya dan Pasal 224 ayat (6) sepanjang menyangkut
+    kata “ayat (3)” UU Nomor 37 Tahun 2004 tentang Kepailitan Dan Penundaan Kewajiban
+    Pembayaran Utang bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan
+    hukum mengikat.

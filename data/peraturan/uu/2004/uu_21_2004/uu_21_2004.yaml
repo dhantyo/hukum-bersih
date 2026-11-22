@@ -15,8 +15,8 @@ tanggal_penetapan: '2004-08-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu21-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40522/uu-no-21-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30213/UU%20Nomor%2021%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,4 +32,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2004_2004-08-16.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8eb179b495e933f15b21531f93c246cd683ed0d3f21a5939b8f9387e868f2f50
 pdf_sha256: 8eb179b495e933f15b21531f93c246cd683ed0d3f21a5939b8f9387e868f2f50
+tanggal_pengundangan: '2004-08-16'
+tanggal_berlaku: '2004-08-16'
+lembaran_negara: 'LN. 2004/ No. 88, TLN NO. 4414, LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu21-2004.pdf
+bpk:
+  id: 40522
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30213/UU%20Nomor%2021%20Tahun%202004.pdf
+    bpk_file_id: 30213
+    filename: UU Nomor 21 Tahun 2004.pdf
+    sha256: 8eb179b495e933f15b21531f93c246cd683ed0d3f21a5939b8f9387e868f2f50
+    bytes: 76758
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

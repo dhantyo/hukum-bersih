@@ -7,20 +7,18 @@ title: Undang-Undang Nomor 39 Tahun 2004 tentang Penempatan Dan Perlindungan Ten
   Kerja Indonesia Di Luar Negeri
 tentang: PENEMPATAN DAN PERLINDUNGAN TENAGA KERJA INDONESIA DI LUAR NEGERI
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 18 Tahun 2017 Tentang Pelindungan
-  Pekerja Migran Indonesia'
+status: tidak_berlaku
 tanggal_penetapan: '2004-10-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-39-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu39-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40786/uu-no-39-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30524/UU%20Nomor%2039%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_18_2017
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -31,4 +29,36 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_39_2004_2004-10-18.txt
   pasal_count: 109
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1ca126056f9b397fac673b3b95293ba0b525c3875b7fd08758874baeca6a59c3
 pdf_sha256: 1ca126056f9b397fac673b3b95293ba0b525c3875b7fd08758874baeca6a59c3
+tanggal_pengundangan: '2004-10-18'
+tanggal_berlaku: '2004-10-18'
+lembaran_negara: 'LN.2004/ No.133, LL SETNEG : 56 HLM'
+subjek: KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-39-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu39-2004.pdf
+bpk:
+  id: 40786
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30524/UU%20Nomor%2039%20Tahun%202004.pdf
+    bpk_file_id: 30524
+    filename: UU Nomor 39 Tahun 2004.pdf
+    sha256: 1ca126056f9b397fac673b3b95293ba0b525c3875b7fd08758874baeca6a59c3
+    bytes: 212293
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_18_2017
+      citation: UU No. 18 Tahun 2017
+      tentang: Pelindungan Pekerja Migran Indonesia
+      url: https://peraturan.bpk.go.id/Details/64508/uu-no-18-tahun-2017
+      note: null
+uji_materi:
+- putusan: 019-020/PUU-III/2005
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/103/putusan_sidang_putusan%20019_PUU-III_2005.pdf
+  amar: Pasal 35 huruf d Undang-undang Republik Indonesia Nomor 39 Tahun 2004 tentang
+    Penempatan dan Perlindungan Tenaga Kerja Indonesia di Luar Negeri bertentangan
+    dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.

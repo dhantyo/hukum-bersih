@@ -15,8 +15,8 @@ tanggal_penetapan: '2005-10-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2005
-source_pdf_url: https://peraturan.go.id/files/uu10-2005.pdf
+source_url: https://peraturan.bpk.go.id/Details/40253/uu-no-10-tahun-2005
+source_pdf_url: https://peraturan.bpk.go.id/Download/29893/UU%20Nomor%2010%20Tahun%202005.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,4 +32,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2005_2005-10-25.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ea13651539d0a641dea4c98974f1153541675f06fa3707e9ee7900b28b2f9001
 pdf_sha256: ea13651539d0a641dea4c98974f1153541675f06fa3707e9ee7900b28b2f9001
+tanggal_pengundangan: '2005-10-25'
+tanggal_berlaku: '2005-10-25'
+lembaran_negara: 'LN.2005/NO.111, TLN NO.4550, LL SETNEG : 4 HLM'
+subjek: BANTUAN, SUMBANGAN, BENCANA / KEBENCANAAN, DAN PENANGGULANGAN BENCANA - DASAR
+  PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2005
+  source_pdf_url: https://peraturan.go.id/files/uu10-2005.pdf
+bpk:
+  id: 40253
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29893/UU%20Nomor%2010%20Tahun%202005.pdf
+    bpk_file_id: 29893
+    filename: UU Nomor 10 Tahun 2005.pdf
+    sha256: ea13651539d0a641dea4c98974f1153541675f06fa3707e9ee7900b28b2f9001
+    bytes: 60771
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

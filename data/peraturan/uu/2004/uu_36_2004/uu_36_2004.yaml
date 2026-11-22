@@ -12,8 +12,8 @@ tanggal_penetapan: '2004-10-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-36-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu36-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40782/uu-no-36-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30520/UU%20Nomor%2036%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_36_2004_2004-10-18.txt
   pasal_count: 18
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9445c9b9ce3becc9c99fb02dae04c1147b1c5d2ac72acd48ec8c258af45cc96f
 pdf_sha256: 9445c9b9ce3becc9c99fb02dae04c1147b1c5d2ac72acd48ec8c258af45cc96f
+tanggal_pengundangan: '2004-10-18'
+tanggal_berlaku: '2005-01-01'
+lembaran_negara: 'LN. 2004/ No. 130, TLN NO.4442 , LL SETNEG : 19 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-36-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu36-2004.pdf
+bpk:
+  id: 40782
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30520/UU%20Nomor%2036%20Tahun%202004.pdf
+    bpk_file_id: 30520
+    filename: UU Nomor 36 Tahun 2004.pdf
+    sha256: 9445c9b9ce3becc9c99fb02dae04c1147b1c5d2ac72acd48ec8c258af45cc96f
+    bytes: 142619
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_9_2005
+      citation: UU No. 9 Tahun 2005
+      tentang: Perubahan Kedua atas Undang-Undang Nomor 36 Tahun 2004 tentang Anggaran
+        Pendapatan dan Belanja Negara Tahun Anggaran 2005
+      url: https://peraturan.bpk.go.id/Details/40252/uu-no-9-tahun-2005
+      note: null
+    - id: uu_1_2005
+      citation: UU No. 1 Tahun 2005
+      tentang: Perubahan atas Undang-Undang Nomor 36 Tahun 2004 tentang Anggaran Pendapatan
+        dan Belanja Negara Tahun Anggaran 2005
+      url: https://peraturan.bpk.go.id/Details/40229/uu-no-1-tahun-2005
+      note: null
+uji_materi: null

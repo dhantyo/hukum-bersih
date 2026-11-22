@@ -10,22 +10,18 @@ tentang: PENETAPAN PERPU 1-2006 TENTANG PERUBAHAN KEDUA UU 12-2003 TENTANG PEMIL
   UMUM ANGGOTA DEWAN PERWAKILAN RAKYAT, DEWAN PERWAKILAN DAERAH, DAN DEWAN PERWAKILAN
   RAKYAT DAERAH MENJADI UU
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 10 Tahun 2008 Tentang Pemilihan
-  Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan
-  Rakyat Daerah Undang-Undang Nomor 22 Tahun 2007 Tentang Penyelenggara Pemilihan
-  Umum'
+status: tidak_berlaku
 tanggal_penetapan: '2006-07-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2006
-source_pdf_url: https://peraturan.go.id/files/uu10-2006.pdf
+source_url: https://peraturan.bpk.go.id/Details/40171/uu-no-10-tahun-2006
+source_pdf_url: https://peraturan.bpk.go.id/Download/29806/UU%20Nomor%2010%20Tahun%202006.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_10_2008
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -36,4 +32,44 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2006_2006-07-20.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 35e96f16a134bb146c64f9461584f083225746de7ae7128fd1a5362586235a27
 pdf_sha256: ac5373e47ba4888b454f7f26a493138ce5d84ed36879887696268c69033eec99
+tanggal_pengundangan: '2006-07-20'
+tanggal_berlaku: '2006-07-20'
+lembaran_negara: 'LN.2006/NO.60, TLN NO.4631, LL SETNEG : 5 HLM'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2006
+  source_pdf_url: https://peraturan.go.id/files/uu10-2006.pdf
+bpk:
+  id: 40171
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29806/UU%20Nomor%2010%20Tahun%202006.pdf
+    bpk_file_id: 29806
+    filename: UU Nomor 10 Tahun 2006.pdf
+    sha256: 35e96f16a134bb146c64f9461584f083225746de7ae7128fd1a5362586235a27
+    bytes: 10555
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_10_2008
+      citation: UU No. 10 Tahun 2008
+      tentang: Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah,
+        dan Dewan Perwakilan Rakyat Daerah
+      url: https://peraturan.bpk.go.id/Details/39037/uu-no-10-tahun-2008
+      note: null
+    - id: uu_22_2007
+      citation: UU No. 22 Tahun 2007
+      tentang: Penyelenggara Pemilihan Umum
+      url: https://peraturan.bpk.go.id/Details/39892/uu-no-22-tahun-2007
+      note: null
+    Mengubah:
+    - id: uu_12_2003
+      citation: UU No. 12 Tahun 2003
+      tentang: Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah,
+        dan Dewan Perwakilan Rakyat Daerah
+      url: https://peraturan.bpk.go.id/Details/43012/uu-no-12-tahun-2003
+      note: null
+uji_materi: null

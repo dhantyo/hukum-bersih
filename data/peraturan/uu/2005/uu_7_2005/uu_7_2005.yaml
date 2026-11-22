@@ -11,8 +11,8 @@ tanggal_penetapan: '2005-10-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-2005
-source_pdf_url: https://peraturan.go.id/files/uu7-2005.pdf
+source_url: https://peraturan.bpk.go.id/Details/40247/uu-no-7-tahun-2005
+source_pdf_url: https://peraturan.bpk.go.id/Download/29885/UU%20Nomor%207%20Tahun%202005.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2005_2005-10-19.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 404e95bd88f548eb33530777d945a7cdf0a134468a368320cc1c3457de36ca5b
 pdf_sha256: 404e95bd88f548eb33530777d945a7cdf0a134468a368320cc1c3457de36ca5b
+tanggal_pengundangan: '2005-10-19'
+tanggal_berlaku: '2006-04-03'
+lembaran_negara: 'LN.2005/NO.107, TLN NO.4547, LL SETNEG : 4 HLM'
+subjek: HUKUM ACARA DAN PERADILAN - DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN
+  / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-2005
+  source_pdf_url: https://peraturan.go.id/files/uu7-2005.pdf
+bpk:
+  id: 40247
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29885/UU%20Nomor%207%20Tahun%202005.pdf
+    bpk_file_id: 29885
+    filename: UU Nomor 7 Tahun 2005.pdf
+    sha256: 404e95bd88f548eb33530777d945a7cdf0a134468a368320cc1c3457de36ca5b
+    bytes: 73020
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

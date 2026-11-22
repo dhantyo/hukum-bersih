@@ -11,8 +11,8 @@ tanggal_penetapan: '2004-10-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-34-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu34-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40774/uu-no-34-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30510/UU%20Nomor%2034%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by:
@@ -30,4 +30,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_34_2004_2004-10-16.txt
   pasal_count: 78
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 484ac9f55eeddec9a3e736d2e2dd89c4229c2be0f7e81e095e1c05e75950e8ee
 pdf_sha256: 484ac9f55eeddec9a3e736d2e2dd89c4229c2be0f7e81e095e1c05e75950e8ee
+tanggal_pengundangan: '2004-10-16'
+tanggal_berlaku: '2004-10-16'
+lembaran_negara: 'LN. 2004/ No. 127, TLN NO. 4439, LL SETNEG : 37 HLM'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-34-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu34-2004.pdf
+bpk:
+  id: 40774
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30510/UU%20Nomor%2034%20Tahun%202004.pdf
+    bpk_file_id: 30510
+    filename: UU Nomor 34 Tahun 2004.pdf
+    sha256: 484ac9f55eeddec9a3e736d2e2dd89c4229c2be0f7e81e095e1c05e75950e8ee
+    bytes: 308714
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_3_2025
+      citation: UU No. 3 Tahun 2025
+      tentang: Perubahan atas Undang-Undang Nomor 34 Tahun 2004 tentang Tentara Nasional
+        Indonesia
+      url: https://peraturan.bpk.go.id/Details/319166/uu-no-3-tahun-2025
+      note: null
+    Mencabut:
+    - id: uu_2_1988
+      citation: UU No. 2 Tahun 1988
+      tentang: Prajurit Angkatan Bersenjata Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/46808/uu-no-2-tahun-1988
+      note: null
+uji_materi: null

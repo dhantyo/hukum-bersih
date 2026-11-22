@@ -12,8 +12,8 @@ tanggal_penetapan: '2006-03-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-2006
-source_pdf_url: https://peraturan.go.id/files/uu3-2006.pdf
+source_url: https://peraturan.bpk.go.id/Details/40154/uu-no-3-tahun-2006
+source_pdf_url: https://peraturan.bpk.go.id/Download/29789/UU%20Nomor%203%20Tahun%202006.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,5 +28,32 @@ versions:
   date: '2006-03-20'
   date_basis: tanggal_penetapan
   text: uu_3_2006_2006-03-20.txt
-  pasal_count: 5
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: bab53217b7fbd6d4db7cc217b0cfe7bb9f29186a2d1d682ae55f7c439536c7ac
 pdf_sha256: 3c1dc51193ad2da97970baea1c80c25f4aebefbd5ab1447373e501fb1dd1348a
+tanggal_pengundangan: '2006-03-20'
+tanggal_berlaku: '2006-03-20'
+lembaran_negara: 'LN.2006/NO.22, TLN NO.4611, LL SETNEG : 18 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-2006
+  source_pdf_url: https://peraturan.go.id/files/uu3-2006.pdf
+bpk:
+  id: 40154
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29789/UU%20Nomor%203%20Tahun%202006.pdf
+    bpk_file_id: 29789
+    filename: UU Nomor 3 Tahun 2006.pdf
+    sha256: bab53217b7fbd6d4db7cc217b0cfe7bb9f29186a2d1d682ae55f7c439536c7ac
+    bytes: 43836
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_7_1989
+      citation: UU No. 7 Tahun 1989
+      tentang: Peradilan Agama
+      url: https://peraturan.bpk.go.id/Details/46804/uu-no-7-tahun-1989
+      note: null
+uji_materi: null

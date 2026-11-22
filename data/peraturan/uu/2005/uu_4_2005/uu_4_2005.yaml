@@ -11,8 +11,8 @@ tanggal_penetapan: '2005-10-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-2005
-source_pdf_url: https://peraturan.go.id/files/uu4-2005.pdf
+source_url: https://peraturan.bpk.go.id/Details/40237/uu-no-4-tahun-2005
+source_pdf_url: https://peraturan.bpk.go.id/Download/29873/UU%20Nomor%204%20Tahun%202005.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2005_2005-10-19.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1ecf25b5553022607de512bbdc0507bfca064da60789e2dddda084e1fb85abea
 pdf_sha256: 1ecf25b5553022607de512bbdc0507bfca064da60789e2dddda084e1fb85abea
+tanggal_pengundangan: '2005-10-19'
+tanggal_berlaku: '2006-04-03'
+lembaran_negara: 'LN.2005/NO.104, TLN NO.4544, LL SETNEG : 4 HLM'
+subjek: HUKUM ACARA DAN PERADILAN - HUKUM PIDANA, PERDATA, DAN DAGANG - DASAR PEMBENTUKAN
+  KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-2005
+  source_pdf_url: https://peraturan.go.id/files/uu4-2005.pdf
+bpk:
+  id: 40237
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29873/UU%20Nomor%204%20Tahun%202005.pdf
+    bpk_file_id: 29873
+    filename: UU Nomor 4 Tahun 2005.pdf
+    sha256: 1ecf25b5553022607de512bbdc0507bfca064da60789e2dddda084e1fb85abea
+    bytes: 72962
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

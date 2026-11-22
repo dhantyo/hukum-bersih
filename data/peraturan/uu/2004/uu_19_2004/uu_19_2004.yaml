@@ -13,8 +13,8 @@ tanggal_penetapan: '2004-08-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu19-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40518/uu-no-19-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30209/UU%20Nomor%2019%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,3 +31,40 @@ versions:
   text: uu_19_2004_2004-08-13.txt
   pasal_count: 2
 pdf_sha256: 2f2c1c4b7f7a0acb6a17da86b438e7688278b8fd8c75169fe785da0992b7bb84
+tanggal_pengundangan: '2004-08-13'
+tanggal_berlaku: '2004-08-13'
+lembaran_negara: 'LN. 2004/ No.86, TLN NO. 4412, LL SETNEG : 3 HLM'
+subjek: KEHUTANAN DAN PERKEBUNAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu19-2004.pdf
+bpk:
+  id: 40518
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30209/UU%20Nomor%2019%20Tahun%202004.pdf
+    bpk_file_id: 30209
+    filename: UU Nomor 19 Tahun 2004.pdf
+    sha256: 3737f0d0ac9e9e88ffc55f1c2167ce1e728f0db2f421822ebc615a60593bb936
+    bytes: 23342
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mengubah:
+    - id: uu_41_1999
+      citation: UU No. 41 Tahun 1999
+      tentang: Kehutanan
+      url: https://peraturan.bpk.go.id/Details/45373/uu-no-41-tahun-1999
+      note: null
+uji_materi: null
+reparse_error: 'v12: new text has 1049 words, stored text 1409'

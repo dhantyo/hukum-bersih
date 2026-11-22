@@ -13,8 +13,8 @@ tanggal_penetapan: '2005-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-2005
-source_pdf_url: https://peraturan.go.id/files/uu12-2005.pdf
+source_url: https://peraturan.bpk.go.id/Details/40261/uu-no-12-tahun-2005
+source_pdf_url: https://peraturan.bpk.go.id/Download/29901/UU%20Nomor%2012%20Tahun%202005.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2005_2005-10-28.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: de82e382dc09b846f397377ff31883f4243c6dfdce12bfe761fd5c5afb9cca05
 pdf_sha256: de82e382dc09b846f397377ff31883f4243c6dfdce12bfe761fd5c5afb9cca05
+tanggal_pengundangan: '2005-10-28'
+tanggal_berlaku: '2005-10-28'
+lembaran_negara: 'LN.2005/NO.119, TLN NO.4558, LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-2005
+  source_pdf_url: https://peraturan.go.id/files/uu12-2005.pdf
+bpk:
+  id: 40261
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29901/UU%20Nomor%2012%20Tahun%202005.pdf
+    bpk_file_id: 29901
+    filename: UU Nomor 12 Tahun 2005.pdf
+    sha256: de82e382dc09b846f397377ff31883f4243c6dfdce12bfe761fd5c5afb9cca05
+    bytes: 106675
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

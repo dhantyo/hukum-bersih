@@ -10,21 +10,18 @@ tentang: PENETAPAN PERPU 2-2004 TENTANG PERUBAHAN UU 12-2003 TENTANG PEMILIHAN U
   ANGGOTA DEWAN PERWAKILAN RAKYAT, DEWAN PERWAKILAN DAERAH, DAN DEWAN PERWAKILAN RAKYAT
   DAERAH MENJADI UU
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 10 Tahun 2008 Tentang Pemilihan
-  Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan
-  Rakyat Daerah'
+status: berlaku
 tanggal_penetapan: '2004-08-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu20-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40519/uu-no-20-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30210/UU%20Nomor%2020%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_10_2008
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -35,4 +32,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2004_2004-08-13.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: aaa16576fcbb4e34f9da0bc28d8e024edef5698cfae3a277c193e10205c2c02d
 pdf_sha256: aaa16576fcbb4e34f9da0bc28d8e024edef5698cfae3a277c193e10205c2c02d
+tanggal_pengundangan: '2004-08-13'
+tanggal_berlaku: '2004-08-13'
+lembaran_negara: 'LN. 2004/ No. 87, TLN NO. 4413, LL SETNEG : 3 HLM'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu20-2004.pdf
+bpk:
+  id: 40519
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30210/UU%20Nomor%2020%20Tahun%202004.pdf
+    bpk_file_id: 30210
+    filename: UU Nomor 20 Tahun 2004.pdf
+    sha256: aaa16576fcbb4e34f9da0bc28d8e024edef5698cfae3a277c193e10205c2c02d
+    bytes: 33668
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_12_2003
+      citation: UU No. 12 Tahun 2003
+      tentang: Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah,
+        dan Dewan Perwakilan Rakyat Daerah
+      url: https://peraturan.bpk.go.id/Details/43012/uu-no-12-tahun-2003
+      note: null
+uji_materi: null

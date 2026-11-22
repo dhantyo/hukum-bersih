@@ -12,8 +12,8 @@ tanggal_penetapan: '2006-03-03'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-2006
-source_pdf_url: https://peraturan.go.id/files/uu1-2006.pdf
+source_url: https://peraturan.bpk.go.id/Details/40151/uu-no-1-tahun-2006
+source_pdf_url: https://peraturan.bpk.go.id/Download/29786/UU%20%20Nomor%201%20Tahun%202006.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2006_2006-03-03.txt
   pasal_count: 60
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 58d2df11ad956738df7cd3953d36dbfb52fdd27ba157b575c366cb3cb8a69364
 pdf_sha256: dcdac49ef39a3cf4ce687cd47c750d6f494c265da717799d6b153a60c8dae1c5
+tanggal_pengundangan: '2006-03-03'
+tanggal_berlaku: '2006-03-03'
+lembaran_negara: 'LN.2006/NO.18, TLN NO.4607, LL SETNEG : 35 HLM'
+subjek: HUKUM PIDANA, PERDATA, DAN DAGANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-2006
+  source_pdf_url: https://peraturan.go.id/files/uu1-2006.pdf
+bpk:
+  id: 40151
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29786/UU%20%20Nomor%201%20Tahun%202006.pdf
+    bpk_file_id: 29786
+    filename: UU  Nomor 1 Tahun 2006.pdf
+    sha256: 58d2df11ad956738df7cd3953d36dbfb52fdd27ba157b575c366cb3cb8a69364
+    bytes: 63319
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

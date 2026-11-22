@@ -11,8 +11,8 @@ tanggal_penetapan: '2004-10-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-26-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu26-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40696/uu-no-26-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30432/UU%20Nomor%2026%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_26_2004_2004-10-05.txt
   pasal_count: 20
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: fd2c370fca797ae3fc04c0fc211319e70ad708e273cd2ceba4f5fce984992577
 pdf_sha256: fd2c370fca797ae3fc04c0fc211319e70ad708e273cd2ceba4f5fce984992577
+tanggal_pengundangan: '2004-10-05'
+tanggal_berlaku: '2004-10-05'
+lembaran_negara: 'LN. 2004/ No.105, TLN NO. 4422, LL SETNEG : 13 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-26-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu26-2004.pdf
+bpk:
+  id: 40696
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30432/UU%20Nomor%2026%20Tahun%202004.pdf
+    bpk_file_id: 30432
+    filename: UU Nomor 26 Tahun 2004.pdf
+    sha256: fd2c370fca797ae3fc04c0fc211319e70ad708e273cd2ceba4f5fce984992577
+    bytes: 85245
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

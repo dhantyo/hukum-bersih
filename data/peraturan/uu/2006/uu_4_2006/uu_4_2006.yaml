@@ -10,12 +10,12 @@ tentang: PENGESAHAN INTERNATIONAL TREATY ON PLANT GENETIC RESOURCES FOR FOOD AND
   (PERJANJIAN MENGENAI SUMBER DAYA GENETIK TANAMAN UNTUK PANGAN DAN PERTANIAN)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2006-03-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-2006
-source_pdf_url: https://peraturan.go.id/files/uu4-2006.pdf
+source_url: https://peraturan.bpk.go.id/Details/40157/uu-no-4-tahun-2006
+source_pdf_url: https://peraturan.bpk.go.id/Download/29792/UU%20Nomor%204%20Tahun%202006.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,11 +24,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_4_2006_2006
+- id: uu_4_2006_2006-03-20
   kind: asli
   source: official
-  date: null
+  date: '2006-03-20'
   date_basis: tanggal_penetapan
-  text: uu_4_2006_2006.txt
+  text: uu_4_2006_2006-03-20.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: fed193ebf74c0bb2dd823d4440a4f5da6ac6a29b92a17a4c645e70b3d80e176a
 pdf_sha256: 4d0605361fddad3330a49226ff034b90ad01e6b55e3bcd6ca23ac571b877253f
+tanggal_pengundangan: '2006-03-20'
+tanggal_berlaku: '2006-03-20'
+lembaran_negara: 'LN.2008/NO.23, TLN NO.4612, LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-2006
+  source_pdf_url: https://peraturan.go.id/files/uu4-2006.pdf
+bpk:
+  id: 40157
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29792/UU%20Nomor%204%20Tahun%202006.pdf
+    bpk_file_id: 29792
+    filename: UU Nomor 4 Tahun 2006.pdf
+    sha256: fed193ebf74c0bb2dd823d4440a4f5da6ac6a29b92a17a4c645e70b3d80e176a
+    bytes: 36065
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

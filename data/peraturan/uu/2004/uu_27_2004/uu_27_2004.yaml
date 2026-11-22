@@ -6,13 +6,13 @@ year: 2004
 title: Undang-Undang Nomor 27 Tahun 2004 tentang Komisi Kebenaran Dan Rekonsiliasi
 tentang: KOMISI KEBENARAN DAN REKONSILIASI
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '2004-10-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MEGAWATI SOEKARNOPUTRI
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-27-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu27-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40699/uu-no-27-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30435/UU%20Nomor%2027%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,44 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_27_2004_2004-10-06
+  kind: asli
+  source: official
+  date: '2004-10-06'
+  date_basis: tanggal_penetapan
+  text: uu_27_2004_2004-10-06.txt
+  pasal_count: 46
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7a766c78adc324315aa41d0796fc9c808bdabdf5220d0589bac4167287a85c5b
 pdf_sha256: 7a766c78adc324315aa41d0796fc9c808bdabdf5220d0589bac4167287a85c5b
-parse_error: 'LeakedMarkupError: hcontainer_1__p_2: markup in text: ''ART 1 -'''
+tanggal_pengundangan: '2004-10-06'
+tanggal_berlaku: '2004-10-06'
+lembaran_negara: 'LN. 2004/ No. 114, TLN NO.4429 , LL SETNEG : 14 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-27-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu27-2004.pdf
+bpk:
+  id: 40699
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30435/UU%20Nomor%2027%20Tahun%202004.pdf
+    bpk_file_id: 30435
+    filename: UU Nomor 27 Tahun 2004.pdf
+    sha256: 7a766c78adc324315aa41d0796fc9c808bdabdf5220d0589bac4167287a85c5b
+    bytes: 122752
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: null
+      citation: Putusan MK Nomor 006/PUU-IV/2006 tanggal 7 Desember 2006
+      tentang: null
+      url: null
+      note: null
+uji_materi:
+- putusan: 006/PUU-IV/2006
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/121/putusan_sidang_Putusan006PUUIV2006ttgKKRtgl07122006.pdf
+  amar: Undang-Undang Republik Indonesia Nomor 27 Tahun 2004 tentang Komisi Kebenaran
+    dan Rekonsiliasi bertentangan dengan Undang-Undang Dasar Republik Indonesia Tahun
+    1945 dan tidak mempunyai kekuatan hukum mengikat

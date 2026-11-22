@@ -11,8 +11,8 @@ tanggal_penetapan: '2004-10-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-41-tahun-2004
-source_pdf_url: https://peraturan.go.id/files/uu41-2004.pdf
+source_url: https://peraturan.bpk.go.id/Details/40788/uu-no-41-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/30526/UU%20Nomor%2041%20Tahun%202004.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_41_2004_2004-10-27.txt
   pasal_count: 71
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 94f6f7e6761238264a99a23e8c7d3d44cc554c7055c51125ae9dae600460edbc
 pdf_sha256: 94f6f7e6761238264a99a23e8c7d3d44cc554c7055c51125ae9dae600460edbc
+tanggal_pengundangan: '2004-10-27'
+tanggal_berlaku: '2004-10-27'
+lembaran_negara: 'LN. 2004/ No.159, TLN NO.4459 , LL SETNEG : 26 HLM'
+subjek: KEAGAMAAN, IBADAH, DAN PENYELENGGARAAN HAJI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-41-tahun-2004
+  source_pdf_url: https://peraturan.go.id/files/uu41-2004.pdf
+bpk:
+  id: 40788
+  files:
+  - url: https://peraturan.bpk.go.id/Download/30526/UU%20Nomor%2041%20Tahun%202004.pdf
+    bpk_file_id: 30526
+    filename: UU Nomor 41 Tahun 2004.pdf
+    sha256: 94f6f7e6761238264a99a23e8c7d3d44cc554c7055c51125ae9dae600460edbc
+    bytes: 152275
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
