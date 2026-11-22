@@ -274,3 +274,32 @@ def test_never_replaced_by_a_text_that_lost_its_penjelasan(tmp_path):
     assert "Penjelasan has" in _words_lost(stored, "BODY\n  ART 1 -\n    " + "kata " * 2000)
     assert _words_lost(stored, "BODY\n  ART 1 -\n    " + "kata " * 1950 + "\nATTACHMENT Penjelasan\n  " + "jelas " * 290) is None
     assert "words, stored text" in _words_lost(stored, "BODY " + "kata " * 100)
+
+
+def test_printed_promulgation_date_wins_over_bpk(tmp_path):              # UU 25/2007
+    folder = tmp_path / "uu_25_2007"
+    folder.mkdir()
+    (folder / "t.txt").write_text("CONCLUSIONS\n  Disahkan di Jakarta\n\n  pada tanggal 26 April 2007\n\n"
+                                  "  Diundangkan di Jakarta\n\n  pada tanggal 26 April 2007\n")
+    rec = {"tanggal_penetapan": "2007-04-26", "tanggal_penetapan_bpk": "2008-04-26",
+           "tanggal_pengundangan": "2008-04-26", "versions": [{"id": "v", "text": "t.txt"}]}
+    notes = bpk.check_dates(rec, folder)
+    assert rec["tanggal_pengundangan"] == "2007-04-26" and rec["bpk"]["tanggal_pengundangan"] == "2008-04-26"
+    assert rec["tanggal_penetapan"] == "2007-04-26" and any("tanggal_penetapan_bpk" in n for n in notes)
+
+
+def test_archive_refusal_does_not_stop_the_law(tmp_path, monkeypatch):    # UU 19/2003
+    from hukum_bersih import archive
+
+    def refuse(*a, **k):
+        raise RuntimeError("error uploading x.pdf, Uploaded content is unacceptable. - pdf file looks like spam")
+
+    monkeypatch.setattr(archive, "upload", refuse)
+    s = FakeSession("details_uu_5_2026.html", small_pdf())
+    line = bpk.import_one(s, bpk.Listing("/Details/350096/uu-no-5-tahun-2026", 350096), "uu", tmp_path, {})
+    assert line.startswith("ok   uu_5_2026") and "archive.org refused" in line
+    import yaml
+
+    rec = yaml.safe_load((tmp_path / "peraturan/uu/2026/uu_5_2026/uu_5_2026.yaml").read_text())
+    assert rec["bpk"]["files"][0]["archive_refused"].startswith("pdf file looks like spam")
+    assert rec["bpk"]["files"][0]["sha256"]

@@ -199,6 +199,34 @@ def update_record(rec: dict | None, d: dict, jenis: str, detail_url: str) -> tup
     return rec, notes
 
 
+def check_dates(rec: dict, folder: Path) -> list[str]:
+    """Compare BPK's dates with the ones printed in the law's closing. The printed date is
+    the evidence: when they differ, the record takes it and keeps BPK's under ``bpk``
+    (UU 25/2007: BPK says 26 April 2008, the law says 2007)."""
+    from ..closing import conclusions, parse
+    from .peraturan_go_id import tanggal_iso
+
+    texts = [v for v in rec.get("versions") or [] if v.get("text")]
+    if not texts or not (folder / texts[0]["text"]).exists():
+        return []
+    c = parse(conclusions((folder / texts[0]["text"]).read_text()))
+
+    def printed(block: str) -> str | None:
+        return tanggal_iso(re.sub(r"^tanggal\s+", "", (c.get(block) or {}).get("date") or ""))
+
+    notes = []
+    signed = printed("signed")
+    for key in ("tanggal_penetapan", "tanggal_penetapan_bpk"):           # ids depend on it: note only
+        if signed and rec.get(key) and str(rec[key]) != signed:
+            notes.append(f"{key} {rec[key]} differs from the printed {signed}")
+    promulgated = printed("promulgated")
+    if promulgated and rec.get("tanggal_pengundangan") and str(rec["tanggal_pengundangan"]) != promulgated:
+        rec.setdefault("bpk", {})["tanggal_pengundangan"] = str(rec["tanggal_pengundangan"])
+        notes.append(f"tanggal_pengundangan: printed {promulgated}, BPK {rec['tanggal_pengundangan']}")
+        rec["tanggal_pengundangan"] = promulgated
+    return notes
+
+
 def record_path(data_dir: Path, work: str) -> Path:
     jenis, _, tahun = work.split("_")
     return data_dir / "peraturan" / jenis / tahun / work / f"{work}.yaml"
@@ -379,11 +407,20 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
             doc_id, repaired = None, None
             if archive_url is None and do_archive:
                 doc_id, filename = file_ids(version, item_id, n, taken.setdefault(item_id, set()))
-                repaired = archive.upload(pdf, doc_id, filename, f["url"], f["filename"], data_dir,
-                                          rec.get("title"))
-                archive_url = f"https://archive.org/download/{item_id}/{filename}"
-                taken[item_id].add(filename)
-                by_sha[entry.sha256] = archive_url
+                try:
+                    repaired = archive.upload(pdf, doc_id, filename, f["url"], f["filename"], data_dir,
+                                              rec.get("title"))
+                    archive_url = f"https://archive.org/download/{item_id}/{filename}"
+                    taken[item_id].add(filename)
+                    by_sha[entry.sha256] = archive_url
+                except Exception as e:
+                    if "unacceptable" not in str(e).lower():
+                        raise
+                    # archive.org refuses some files outright ("pdf file looks like spam", UU 19/2003);
+                    # the law is still imported, the file recorded and flagged for another store
+                    reason = re.sub(r"\s+", " ", str(e)).split("unacceptable", 1)[-1].strip(" .-")[:120]
+                    f["archive_refused"] = reason
+                    notes.append(f"archive.org refused {f['filename']}: {reason}")
             doc_id = doc_id or (version if n == 1 else f"{version}_{n}")
             entry = entry_for_file(pdf, f["url"], archive_url, doc_id, f["filename"])
             if mirror_note:
@@ -403,6 +440,7 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
             main_pdf = main_pdf or pdf
             out.append("archived" if archive_url else "recorded")
         note = "PDFs only (no text step)" if no_text else retext(main_pdf, rec, path.parent)
+        notes += check_dates(rec, path.parent)
     path.write_text(yaml.safe_dump(rec, allow_unicode=True, sort_keys=False))
     return (f"ok   {work}: {len(out)} PDF {'/'.join(sorted(set(out)))}; {note}"
             + "".join(f"; {n}" for n in notes))
