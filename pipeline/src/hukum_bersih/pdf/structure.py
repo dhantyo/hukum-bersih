@@ -144,8 +144,9 @@ def normalise(lines: list[str]) -> list[str]:
         if out and out[-1] in ("Pasal", "PASAL") and re.match(r"^\d+[A-Z]?\.?$", line):
             out[-1] = f"Pasal {line.rstrip('.')}"
             continue
-        if m := re.match(r"^[\'‘’`´,.|:;]{0,2}\s*((?:PASAL|Pasal)\s*[0-9IVXLC]+[A-Z]?)\s*[\'‘’`´.|:]{0,2}$", line):
+        if m := re.match(r"^[^\w\s(]{0,2}\s*((?:PASAL|Pasal)\s*[0-9IVXLC]+[A-Z]?)\s*[\'‘’`´.|:]{0,2}$", line):
             line = m[1]                      # OCR specks around a heading: "' Pasal 8" (UU 135/2024),
+            #                                  "— Pasal 7" (UU 29/2024),
             #                                  "Pasal 4 :" (UU 29/2024); not "," or ";", which end a
             #                                  reference broken onto its own line ("Pasal 5,")
         if m := HEAD_DOT_RE.match(line):

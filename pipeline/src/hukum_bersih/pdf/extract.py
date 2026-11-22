@@ -74,7 +74,10 @@ def page_lines(pdf: Path, stats: dict | None = None, ocr: bool = True) -> list[l
         read: dict[int, list] = {}
         if scans:
             try:
-                read = ocr_pages(pdf, scans)
+                try:
+                    read = ocr_pages(pdf, scans)
+                except Exception:  # noqa: BLE001 - the worker processes failed: one at a time
+                    read = dict(_ocr_chunk(str(pdf), scans))
                 stats["ocr_pages"] += len(read)
             except Exception as e:  # noqa: BLE001 - no Tesseract or no language data
                 stats["ocr_missing"] = f"{type(e).__name__}: {str(e)[:120]}"
@@ -94,7 +97,9 @@ def ocr_pages(pdf: Path, numbers: list[int]) -> dict[int, list]:
     if workers <= 1:
         return dict(_ocr_chunk(str(pdf), numbers))
     chunks = [numbers[i::workers] for i in range(workers)]
-    with ProcessPoolExecutor(workers, mp_context=get_context("spawn"), initializer=_one_thread) as pool:
+    # "fork": the workers do not re-import the calling script ("spawn" does, and fails when the
+    # script has no `if __name__ == "__main__"` guard); this process holds no other threads
+    with ProcessPoolExecutor(workers, mp_context=get_context("fork"), initializer=_one_thread) as pool:
         return {n: w for part in pool.map(_ocr_chunk, [str(pdf)] * workers, chunks) for n, w in part}
 
 
