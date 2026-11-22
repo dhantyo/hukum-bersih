@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 84 Tahun 2024 tentang Kabupaten Lombok Timur Di Provi
 tentang: KABUPATEN LOMBOK TIMUR DI PROVINSI NUSA TENGGARA BARAT
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2024-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-84-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-84-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/307288/uu-no-84-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/367681/UU%20Nomor%2084%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,41 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_84_2024_2024
+- id: uu_84_2024_2024-10-28
   kind: asli
   source: official
-  date: null
+  date: '2024-10-28'
   date_basis: tanggal_penetapan
-  text: uu_84_2024_2024.txt
+  text: uu_84_2024_2024-10-28.txt
   pasal_count: 10
+  parser_version: 9
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 429cf4f91c61d5008c193b82c30cf321e5964a9664b2d8988eb298cbb2d5989e
+  ocr: true
 pdf_sha256: 429cf4f91c61d5008c193b82c30cf321e5964a9664b2d8988eb298cbb2d5989e
+tanggal_pengundangan: '2024-10-28'
+tanggal_berlaku: '2024-10-28'
+lembaran_negara: 'LN 2024 (270), TLN (7021): 6 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-84-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-84-tahun-2024.pdf
+bpk:
+  id: 307288
+  files:
+  - url: https://peraturan.bpk.go.id/Download/367681/UU%20Nomor%2084%20Tahun%202024.pdf
+    bpk_file_id: 367681
+    filename: UU Nomor 84 Tahun 2024.pdf
+    sha256: 429cf4f91c61d5008c193b82c30cf321e5964a9664b2d8988eb298cbb2d5989e
+    bytes: 365992
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_69_1958
+      citation: UU No. 69 Tahun 1958
+      tentang: Pembentukan Daerah-Daerah Tingkat II Dalam Wilayah Daerah-Daerah Tingkat
+        I Bali, Nusa Tenggara Barat dan Nusa Tenggara Timur
+      url: https://peraturan.bpk.go.id/Details/52348/uu-no-69-tahun-1958
+      note: Ketentuan yang mengatur mengenai Kabupaten Lombok Timur dalam Undang-Undang
+        Nomor 69 Tahun 1958, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

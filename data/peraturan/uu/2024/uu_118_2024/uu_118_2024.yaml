@@ -12,8 +12,8 @@ tanggal_penetapan: '2024-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-118-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/Salinan+UU+Nomor+118+Tahun+2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/307430/uu-no-118-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/367830/UU%20Nomor%20118%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,4 +31,40 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_118_2024_2024-10-28.txt
   pasal_count: 10
+  parser_version: 9
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 133f6779a55125e41ac41472719fc6e7188c2abc2eee68007111dcecdf4843ef
+  ocr: true
 pdf_sha256: 133f6779a55125e41ac41472719fc6e7188c2abc2eee68007111dcecdf4843ef
+tanggal_pengundangan: '2024-10-28'
+tanggal_berlaku: '2024-10-28'
+lembaran_negara: 'LN 2024 (304), TLN (7055) : 7 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-118-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/Salinan+UU+Nomor+118+Tahun+2024.pdf
+bpk:
+  id: 307430
+  files:
+  - url: https://peraturan.bpk.go.id/Download/367830/UU%20Nomor%20118%20Tahun%202024.pdf
+    bpk_file_id: 367830
+    filename: UU Nomor 118 Tahun 2024.pdf
+    sha256: 133f6779a55125e41ac41472719fc6e7188c2abc2eee68007111dcecdf4843ef
+    bytes: 719045
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_4_1968
+      citation: UU No. 4 Tahun 1968
+      tentang: Pembentukan Kabupaten Purwakarta dan Kabupaten Subang dengan Mengubah
+        Undang-Undang No.14 Tahun 1950 tentang Pembentukan Daerah-Daerah Kabupaten
+        Dalam Lingkungan Provinsi Jawa Barat
+      url: https://peraturan.bpk.go.id/Details/49136/uu-no-4-tahun-1968
+      note: null
+    - id: uu_14_1950
+      citation: UU No. 14 Tahun 1950
+      tentang: Pemerintahan Daerah Kabupaten dalam Lingkungan Propinsi Djawa Barat
+      url: https://peraturan.bpk.go.id/Details/59691/uu-no-14-tahun-1950
+      note: Ketentuan yang mengatur mengenai Kabupaten Tangerang dalam Undang-Undang
+        Nomor 14 Tahun 1950 dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

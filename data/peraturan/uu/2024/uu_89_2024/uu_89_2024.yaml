@@ -11,8 +11,8 @@ tanggal_penetapan: '2024-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-89-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-89-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/307329/uu-no-89-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/367721/UU%20Nomor%2089%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_89_2024_2024-10-28.txt
   pasal_count: 9
+  parser_version: 9
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ec2ae3c7484f4d7cb6c56e9b908cea16fb5296ccdb8afff62bebaf0dc7db7949
+  ocr: true
 pdf_sha256: ec2ae3c7484f4d7cb6c56e9b908cea16fb5296ccdb8afff62bebaf0dc7db7949
+tanggal_pengundangan: '2024-10-28'
+tanggal_berlaku: '2024-10-28'
+lembaran_negara: 'LN 2024 (275), TLN (7026): 6 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-89-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-89-tahun-2024.pdf
+bpk:
+  id: 307329
+  files:
+  - url: https://peraturan.bpk.go.id/Download/367721/UU%20Nomor%2089%20Tahun%202024.pdf
+    bpk_file_id: 367721
+    filename: UU Nomor 89 Tahun 2024.pdf
+    sha256: ec2ae3c7484f4d7cb6c56e9b908cea16fb5296ccdb8afff62bebaf0dc7db7949
+    bytes: 494684
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_28_1959
+      citation: UU No. 28 Tahun 1959
+      tentang: Penetapan Undang-Undang darurat No. 4 Tahun 1956 (Lembaran-Negara Tahun
+        1956 No. 55), Undang-Undang Darurat No. 5 Tahun 1956 (Lembaran-Negara Tahun
+        1956 No. 56) dan Undang-Undang Darurat No. 6 Tahun 1956 (Lembaran-Negara Tahun
+        1956 No. 57) Tentang Pembentukan Daerah Tingkat II Termasuk Kotapraja, Dalam
+        Lingkungan Daerah Tingkat I Sumatera Selatan, Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/51524/uu-no-28-tahun-1959
+      note: Ketentuan yang mengatur mengenai Kota Bengkulu dalam Undang-Undang Nomor
+        28 Tahun 1959, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

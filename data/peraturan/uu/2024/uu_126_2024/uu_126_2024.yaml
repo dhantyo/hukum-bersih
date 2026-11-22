@@ -12,8 +12,8 @@ tanggal_penetapan: '2024-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-126-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-126-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/307426/uu-no-126-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/367827/UU%20Nomor%20126%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,33 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_126_2024_2024-10-28.txt
   pasal_count: 10
+  parser_version: 9
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c7086562717aa586665205653c39bd383343c13970b982ec6ad1f63895a81c59
+  ocr: true
 pdf_sha256: c7086562717aa586665205653c39bd383343c13970b982ec6ad1f63895a81c59
+tanggal_pengundangan: '2024-10-28'
+tanggal_berlaku: '2024-10-28'
+lembaran_negara: 'LN 2024 (312), TLN (7063) : 6 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-126-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-126-tahun-2024.pdf
+bpk:
+  id: 307426
+  files:
+  - url: https://peraturan.bpk.go.id/Download/367827/UU%20Nomor%20126%20Tahun%202024.pdf
+    bpk_file_id: 367827
+    filename: UU Nomor 126 Tahun 2024.pdf
+    sha256: c7086562717aa586665205653c39bd383343c13970b982ec6ad1f63895a81c59
+    bytes: 320847
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_29_1959
+      citation: UU No. 29 Tahun 1959
+      tentang: Pembentukan Daerah Tingkat II Di Sulawesi
+      url: https://peraturan.bpk.go.id/Details/51529/uu-no-29-tahun-1959
+      note: Ketentuan yang mengatur mengenai Kabupaten Banggai dalam Undang-Undang
+        Nomor 29 Tahun 1959, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

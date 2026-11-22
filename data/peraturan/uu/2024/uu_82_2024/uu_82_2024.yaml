@@ -12,8 +12,8 @@ tanggal_penetapan: '2024-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-82-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-82-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/307275/uu-no-82-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/367669/UU%20Nomor%2082%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,5 +28,35 @@ versions:
   date: '2024-10-28'
   date_basis: tanggal_penetapan
   text: uu_82_2024_2024-10-28.txt
-  pasal_count: 9
+  pasal_count: 10
+  parser_version: 9
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1c1d3f68feed51322ce9eccee4f6383947ccdb58b1d7fc6353badfa763b3c767
+  ocr: true
 pdf_sha256: 1c1d3f68feed51322ce9eccee4f6383947ccdb58b1d7fc6353badfa763b3c767
+tanggal_pengundangan: '2024-10-28'
+tanggal_berlaku: '2024-10-28'
+lembaran_negara: 'LN 2024 (268), TLN (7019): 6 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-82-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-82-tahun-2024.pdf
+bpk:
+  id: 307275
+  files:
+  - url: https://peraturan.bpk.go.id/Download/367669/UU%20Nomor%2082%20Tahun%202024.pdf
+    bpk_file_id: 367669
+    filename: UU Nomor 82 Tahun 2024.pdf
+    sha256: 1c1d3f68feed51322ce9eccee4f6383947ccdb58b1d7fc6353badfa763b3c767
+    bytes: 430123
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_69_1958
+      citation: UU No. 69 Tahun 1958
+      tentang: Pembentukan Daerah-Daerah Tingkat II Dalam Wilayah Daerah-Daerah Tingkat
+        I Bali, Nusa Tenggara Barat dan Nusa Tenggara Timur
+      url: https://peraturan.bpk.go.id/Details/52348/uu-no-69-tahun-1958
+      note: Ketentuan yang mengatur mengenai Kabupaten Lombok Barat dalam Undang-Undang
+        Nomor 69 Tahun 1958, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null
