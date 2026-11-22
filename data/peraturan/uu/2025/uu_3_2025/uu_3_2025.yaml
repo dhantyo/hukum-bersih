@@ -13,8 +13,8 @@ tanggal_penetapan: '2025-03-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-2025
-source_pdf_url: https://peraturan.go.id/files/uu-3-2025.pdf
+source_url: https://peraturan.bpk.go.id/Details/319166/uu-no-3-tahun-2025
+source_pdf_url: https://peraturan.bpk.go.id/Download/380719/UU%20Nomor%203%20Tahun%202025.pdf
 relationships:
   amends:
   - id: uu_34_2004
@@ -24,6 +24,7 @@ relationships:
       - '7'
       - '8'
       - '9'
+      - '10'
       - '47'
       - '53'
   amended_by: []
@@ -39,4 +40,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2025_2025-03-26.txt
   pasal_count: 2
+  parser_version: 9
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 91bd8acb3bb8cbf071aefb5ecb336a4a24bd1743b02a31b8f2cb6fc4e3d9e25b
+  ocr: true
 pdf_sha256: 91bd8acb3bb8cbf071aefb5ecb336a4a24bd1743b02a31b8f2cb6fc4e3d9e25b
+tanggal_pengundangan: '2025-03-26'
+tanggal_berlaku: '2025-03-26'
+lembaran_negara: 'LN 2025 (35), TLN (7104) : 10 hlm.; jdih.setneg.go.id'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-2025
+  source_pdf_url: https://peraturan.go.id/files/uu-3-2025.pdf
+bpk:
+  id: 319166
+  files:
+  - url: https://peraturan.bpk.go.id/Download/380719/UU%20Nomor%203%20Tahun%202025.pdf
+    bpk_file_id: 380719
+    filename: UU Nomor 3 Tahun 2025.pdf
+    sha256: 91bd8acb3bb8cbf071aefb5ecb336a4a24bd1743b02a31b8f2cb6fc4e3d9e25b
+    bytes: 2817904
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_34_2004
+      citation: UU No. 34 Tahun 2004
+      tentang: Tentara Nasional Indonesia
+      url: https://peraturan.bpk.go.id/Details/40774/uu-no-34-tahun-2004
+      note: null
+uji_materi: null

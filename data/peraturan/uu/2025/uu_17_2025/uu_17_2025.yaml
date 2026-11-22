@@ -12,8 +12,8 @@ tanggal_penetapan: '2025-10-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-2025
-source_pdf_url: https://peraturan.go.id/files/uu-no-17-tahun-2025.pdf
+source_url: https://peraturan.bpk.go.id/Details/338666/uu-no-17-tahun-2025
+source_pdf_url: https://peraturan.bpk.go.id/Download/401737/UU%20Nomor%2017%20Tahun%202025.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,5 +28,46 @@ versions:
   date: '2025-10-22'
   date_basis: tanggal_penetapan
   text: uu_17_2025_2025-10-22.txt
-  pasal_count: 19
+  pasal_count: 54
+  parser_version: 9
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d02eb4fc1a4297ca66a4acce9d76a69b5da23a6fddc3de89eea6dcc932e40c87
+  ocr: true
 pdf_sha256: d02eb4fc1a4297ca66a4acce9d76a69b5da23a6fddc3de89eea6dcc932e40c87
+tanggal_pengundangan: '2025-10-22'
+tanggal_berlaku: '2026-01-01'
+lembaran_negara: 'LN 2025 (179), TLN (7144) : 50 hlm.; jdih.setneg.go.id'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-2025
+  source_pdf_url: https://peraturan.go.id/files/uu-no-17-tahun-2025.pdf
+bpk:
+  id: 338666
+  files:
+  - url: https://peraturan.bpk.go.id/Download/401737/UU%20Nomor%2017%20Tahun%202025.pdf
+    bpk_file_id: 401737
+    filename: UU Nomor 17 Tahun 2025.pdf
+    sha256: d02eb4fc1a4297ca66a4acce9d76a69b5da23a6fddc3de89eea6dcc932e40c87
+    bytes: 6843865
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/401738/UU%20Nomor%2017%20Tahun%202025%20-%20Lampiran.pdf
+    bpk_file_id: 401738
+    filename: UU Nomor 17 Tahun 2025 - Lampiran.pdf
+    sha256: ea849b749369e7b3b7798f1b9195f6ba6759d85a863d397c009f9bb23cf73dee
+    bytes: 882179
+    archive_url: null
+  status_peraturan: null
+uji_materi:
+- putusan: 40/PUU-XXIV/2026
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/250/putusan_mkri_40_PUU-XXIV_2026.pdf
+  amar: Penjelasan Pasal 22 ayat (3) Undang-Undang Nomor 17 Tahun 2025 tentang Anggaran
+    Pendapatan dan Belanja Negara Tahun 2026 (Lembaran Negara Republik Indonesia Tahun
+    2025 Nomor 179, Tambahan Lembaran Negara Republik Indonesia Nomor 7144) tidak
+    bertentangan dengan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan
+    memiliki kekuatan hukum mengikat secara bersyarat sepanjang dimaknai “hanya berlaku
+    untuk Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2026 sehingga untuk
+    Anggaran Pendapatan dan Belanja Negara tahun-tahun berikutnya anggaran program
+    makan bergizi yang bukan merupakan komponen utama pendidikan dipisah atau tidak
+    menjadi bagian dari anggaran operasional penyelenggaraan pendidikan dan pemisahan
+    dimaksud berlaku paling lambat dalam Anggaran Pendapatan dan Belanja Negara Tahun
+    Anggaran 2028 atau paling lama 2 (dua) tahun sejak Putusan a quo diucapkan

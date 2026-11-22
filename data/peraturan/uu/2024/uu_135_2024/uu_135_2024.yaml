@@ -12,8 +12,8 @@ tanggal_penetapan: '2024-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-135-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-135-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/307377/uu-no-135-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/367771/UU%20Nomor%20135%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,3 +30,29 @@ versions:
   text: uu_135_2024_2024-10-28.txt
   pasal_count: 10
 pdf_sha256: 9470db1d8f5a40184fc584fab29712b0e195eac727e847fc27431bb53e72bb4c
+tanggal_pengundangan: '2024-10-28'
+tanggal_berlaku: '2024-10-28'
+lembaran_negara: 'LN 2024 (321), TLN (7072) : 6 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-135-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-135-tahun-2024.pdf
+bpk:
+  id: 307377
+  files:
+  - url: https://peraturan.bpk.go.id/Download/367771/UU%20Nomor%20135%20Tahun%202024.pdf
+    bpk_file_id: 367771
+    filename: UU Nomor 135 Tahun 2024.pdf
+    sha256: 9470db1d8f5a40184fc584fab29712b0e195eac727e847fc27431bb53e72bb4c
+    bytes: 308024
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_29_1959
+      citation: UU No. 29 Tahun 1959
+      tentang: Pembentukan Daerah Tingkat II Di Sulawesi
+      url: https://peraturan.bpk.go.id/Details/51529/uu-no-29-tahun-1959
+      note: Ketentuan yang mengatur mengenai Kabupaten Maros dalam Undang-Undang Nomor
+        29 Tahun 1959, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null
+reparse_error: 'v9: 7 pasal, stored text has 10'

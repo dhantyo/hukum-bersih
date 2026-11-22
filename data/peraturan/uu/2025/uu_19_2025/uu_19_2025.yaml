@@ -15,8 +15,8 @@ tanggal_penetapan: '2025-10-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-2025
-source_pdf_url: https://peraturan.go.id/files/uu-no-19-tahun-2025.pdf
+source_url: https://peraturan.bpk.go.id/Details/334498/uu-no-19-tahun-2025
+source_pdf_url: https://peraturan.bpk.go.id/Download/397061/UU%20Nomor%2019%20Tahun%202025.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,4 +32,33 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_2025_2025-10-29.txt
   pasal_count: 2
+  parser_version: 9
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 78329f3f1b7b038c49cab02ac42bc223c568096901a315259051dae64a68d9dc
+  ocr: true
 pdf_sha256: 78329f3f1b7b038c49cab02ac42bc223c568096901a315259051dae64a68d9dc
+tanggal_pengundangan: '2025-10-29'
+tanggal_berlaku: '2025-10-29'
+lembaran_negara: 'LN 2025 (181), TLN (7146) : 5 hlm.; jdih.setneg.go.id'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+  - HUBUNGAN INTERNASIONAL / KERJA SAMA INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-2025
+  source_pdf_url: https://peraturan.go.id/files/uu-no-19-tahun-2025.pdf
+bpk:
+  id: 334498
+  files:
+  - url: https://peraturan.bpk.go.id/Download/397061/UU%20Nomor%2019%20Tahun%202025.pdf
+    bpk_file_id: 397061
+    filename: UU Nomor 19 Tahun 2025.pdf
+    sha256: 78329f3f1b7b038c49cab02ac42bc223c568096901a315259051dae64a68d9dc
+    bytes: 449887
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/397062/UU%20Nomor%2019%20Tahun%202025%20-%20Salinan%20Naskah%20Resmi.pdf
+    bpk_file_id: 397062
+    filename: UU Nomor 19 Tahun 2025 - Salinan Naskah Resmi.pdf
+    sha256: d9763e05cd33f669cbdb64624193b68f39f8945df327eb678ee6a48cb702541e
+    bytes: 14661845
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

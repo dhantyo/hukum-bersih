@@ -11,8 +11,8 @@ tanggal_penetapan: '2025-12-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-2025
-source_pdf_url: https://peraturan.go.id/files/uu-no-20-tahun-2025.pdf
+source_url: https://peraturan.bpk.go.id/Details/337302/uu-no-20-tahun-2025
+source_pdf_url: https://peraturan.bpk.go.id/Download/400351/UU%20Nomor%2020%20Tahun%202025.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,40 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_20_2025_2025-12-17
+  kind: asli
+  source: official
+  date: '2025-12-17'
+  date_basis: tanggal_penetapan
+  text: uu_20_2025_2025-12-17.txt
+  pasal_count: 50
+  parser_version: 9
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 40e8b444aa7efabe1597bf104228e053deec452ae385c0433ca62701161cec3a
+  ocr: true
 pdf_sha256: 40e8b444aa7efabe1597bf104228e053deec452ae385c0433ca62701161cec3a
-parse_error: 'LeakedMarkupError: part_Kesatu__p_2: markup in text: ''POINT a.'''
+tanggal_pengundangan: '2025-12-17'
+tanggal_berlaku: '2026-01-02'
+lembaran_negara: 'LN 2025 (188), TLN (7149) : 184 hlm.; jdih.setneg.go.id'
+subjek: HUKUM ACARA DAN PERADILAN - TINDAK PIDANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-2025
+  source_pdf_url: https://peraturan.go.id/files/uu-no-20-tahun-2025.pdf
+bpk:
+  id: 337302
+  files:
+  - url: https://peraturan.bpk.go.id/Download/400351/UU%20Nomor%2020%20Tahun%202025.pdf
+    bpk_file_id: 400351
+    filename: UU Nomor 20 Tahun 2025.pdf
+    sha256: 40e8b444aa7efabe1597bf104228e053deec452ae385c0433ca62701161cec3a
+    bytes: 13630882
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_8_1981
+      citation: UU No. 8 Tahun 1981
+      tentang: Hukum Acara Pidana
+      url: https://peraturan.bpk.go.id/Details/47041/uu-no-8-tahun-1981
+      note: null
+uji_materi: null

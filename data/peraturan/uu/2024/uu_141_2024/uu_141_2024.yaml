@@ -12,8 +12,8 @@ tanggal_penetapan: '2024-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-141-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-141-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/307350/uu-no-141-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/367744/UU%20Nomor%20141%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,33 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_141_2024_2024-10-28.txt
   pasal_count: 10
+  parser_version: 9
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 58f2fa44d15fff861ce82c3c02961999be9a612aaf80613f0cfd71c07701bc3a
+  ocr: true
 pdf_sha256: 58f2fa44d15fff861ce82c3c02961999be9a612aaf80613f0cfd71c07701bc3a
+tanggal_pengundangan: '2024-10-28'
+tanggal_berlaku: '2024-10-28'
+lembaran_negara: 'LN 2024 (327), TLN (7078) : 6 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-141-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-141-tahun-2024.pdf
+bpk:
+  id: 307350
+  files:
+  - url: https://peraturan.bpk.go.id/Download/367744/UU%20Nomor%20141%20Tahun%202024.pdf
+    bpk_file_id: 367744
+    filename: UU Nomor 141 Tahun 2024.pdf
+    sha256: 58f2fa44d15fff861ce82c3c02961999be9a612aaf80613f0cfd71c07701bc3a
+    bytes: 283633
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_29_1959
+      citation: UU No. 29 Tahun 1959
+      tentang: Pembentukan Daerah Tingkat II Di Sulawesi
+      url: https://peraturan.bpk.go.id/Details/51529/uu-no-29-tahun-1959
+      note: Ketentuan yang mengatur mengenai Kabupaten Bantaeng dalam Undang-Undang
+        Nomor 29 Tahun 1959, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

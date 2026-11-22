@@ -13,8 +13,8 @@ tanggal_penetapan: '2025-09-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-2025
-source_pdf_url: https://peraturan.go.id/files/uu-no-15-tahun-2025.pdf
+source_url: https://peraturan.bpk.go.id/Details/330989/uu-no-15-tahun-2025
+source_pdf_url: https://peraturan.bpk.go.id/Download/393006/1.%20Salinan%20UU%20Nomor%2015%20Tahun%202025.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,56 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2025_2025-09-18.txt
   pasal_count: 13
+  parser_version: 9
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 94c626e1217505467bc8ceee50de20c3dd80123bdf4965111530114ef3f5ecc8
+  ocr: true
 pdf_sha256: 94c626e1217505467bc8ceee50de20c3dd80123bdf4965111530114ef3f5ecc8
+tanggal_pengundangan: '2025-09-18'
+tanggal_berlaku: '2025-09-18'
+lembaran_negara: 'LN 2025 (152), TLN (7137) : 11 hlm.; jdih.setneg.go.id'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-2025
+  source_pdf_url: https://peraturan.go.id/files/uu-no-15-tahun-2025.pdf
+bpk:
+  id: 330989
+  files:
+  - url: https://peraturan.bpk.go.id/Download/393006/1.%20Salinan%20UU%20Nomor%2015%20Tahun%202025.pdf
+    bpk_file_id: 393006
+    filename: 1. Salinan UU Nomor 15 Tahun 2025.pdf
+    sha256: 94c626e1217505467bc8ceee50de20c3dd80123bdf4965111530114ef3f5ecc8
+    bytes: 2093798
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/393007/2.%20Salinan%20Lampiran%20UU%20Nomor%2015%20Tahun%202025%20Halaman%201%20s.d.%20403.pdf
+    bpk_file_id: 393007
+    filename: 2. Salinan Lampiran UU Nomor 15 Tahun 2025 Halaman 1 s.d. 403.pdf
+    sha256: ad473b006834c58620d97ac9fd772fbc3c85fe0be6fa791ef582121935ef96ff
+    bytes: 47753852
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/393011/3.%20Salinan%20Lampiran%20UU%20Nomor%2015%20Tahun%202025%20Halaman%20404%20s.d.%20499.pdf
+    bpk_file_id: 393011
+    filename: 3. Salinan Lampiran UU Nomor 15 Tahun 2025 Halaman 404 s.d. 499.pdf
+    sha256: 1b11dacf087089299dd0c055ac7529fea189e243e77666c8be694deb2af0ef11
+    bytes: 5027135
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/393024/4.%20Salinan%20Lampiran%20UU%20Nomor%2015%20Tahun%202025%20Halaman%20500%20s.d.%20603.pdf
+    bpk_file_id: 393024
+    filename: 4. Salinan Lampiran UU Nomor 15 Tahun 2025 Halaman 500 s.d. 603.pdf
+    sha256: 45603b92254aea32b6851ad2fcf86cb52b1624a3dc87b9ed38c65066e578147b
+    bytes: 83196734
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/393062/6.%20Salinan%20Lampiran%20UU%20Nomor%2015%20Tahun%202025%20Halaman%20809%20s.d.%201708.pdf
+    bpk_file_id: 393062
+    filename: 6. Salinan Lampiran UU Nomor 15 Tahun 2025 Halaman 809 s.d. 1708.pdf
+    sha256: b42dc21970cf80d512610af781324c819d0cdec335e43390a125c6826e5deb8f
+    bytes: 68971797
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/393065/5.%20Salinan%20Lampiran%20UU%20Nomor%2015%20Tahun%202025%20Halaman%20604%20s.d.%20808_.pdf
+    bpk_file_id: 393065
+    filename: 5. Salinan Lampiran UU Nomor 15 Tahun 2025 Halaman 604 s.d. 808_.pdf
+    sha256: 7d9611d43bf3a391112e38f01ea453c6023e7b18e1640f19695759761b6aa923
+    bytes: 22511624
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

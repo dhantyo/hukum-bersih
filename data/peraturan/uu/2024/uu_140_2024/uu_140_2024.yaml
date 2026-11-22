@@ -12,8 +12,8 @@ tanggal_penetapan: '2024-10-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-140-tahun-2024
-source_pdf_url: https://peraturan.go.id/files/uu-no-140-tahun-2024.pdf
+source_url: https://peraturan.bpk.go.id/Details/307351/uu-no-140-tahun-2024
+source_pdf_url: https://peraturan.bpk.go.id/Download/367745/UU%20Nomor%20140%20Tahun%202024.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,5 +28,34 @@ versions:
   date: '2024-10-28'
   date_basis: tanggal_penetapan
   text: uu_140_2024_2024-10-28.txt
-  pasal_count: 9
+  pasal_count: 10
+  parser_version: 9
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: afae065810e4d0b1133e8b57bfe270c396513ad7773e7bbde888f1bd6e4ee619
+  ocr: true
 pdf_sha256: afae065810e4d0b1133e8b57bfe270c396513ad7773e7bbde888f1bd6e4ee619
+tanggal_pengundangan: '2024-10-28'
+tanggal_berlaku: '2024-10-28'
+lembaran_negara: 'LN 2024 (326), TLN (7077) : 6 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-140-tahun-2024
+  source_pdf_url: https://peraturan.go.id/files/uu-no-140-tahun-2024.pdf
+bpk:
+  id: 307351
+  files:
+  - url: https://peraturan.bpk.go.id/Download/367745/UU%20Nomor%20140%20Tahun%202024.pdf
+    bpk_file_id: 367745
+    filename: UU Nomor 140 Tahun 2024.pdf
+    sha256: afae065810e4d0b1133e8b57bfe270c396513ad7773e7bbde888f1bd6e4ee619
+    bytes: 320135
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_29_1959
+      citation: UU No. 29 Tahun 1959
+      tentang: Pembentukan Daerah Tingkat II Di Sulawesi
+      url: https://peraturan.bpk.go.id/Details/51529/uu-no-29-tahun-1959
+      note: Ketentuan yang mengatur mengenai Kabupaten Kepulauan Selayar dalam Undang-Undang
+        Nomor 29 Tahun 1959, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

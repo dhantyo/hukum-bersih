@@ -162,6 +162,9 @@ bpk:
   - url: https://peraturan.bpk.go.id/Download/413875/UU%20Nomor%204%20Tahun%202026.pdf
     bpk_file_id: 413875
     filename: UU Nomor 4 Tahun 2026.pdf
+    sha256: dab7d3f02b6b4755c4f64eb3859ea6d717559465fc7947b0f10d0cb79a884483
+    bytes: 13974767
+    archive_url: null
   status_peraturan:
     Mengubah:
     - id: uu_4_2023
@@ -170,3 +173,4 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
       note: null
 uji_materi: null
+reparse_error: 'v9: 2 pasal, stored text has 3'

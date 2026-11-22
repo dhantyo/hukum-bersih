@@ -12,8 +12,8 @@ tanggal_penetapan: '2025-08-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-2025
-source_pdf_url: https://peraturan.go.id/files/uu-no-12-tahun-2025.pdf
+source_url: https://peraturan.bpk.go.id/Details/331528/uu-no-12-tahun-2025
+source_pdf_url: https://peraturan.bpk.go.id/Download/393561/UU%20Nomor%2012%20Tahun%202025.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,5 +28,34 @@ versions:
   date: '2025-08-20'
   date_basis: tanggal_penetapan
   text: uu_12_2025_2025-08-20.txt
-  pasal_count: 9
+  pasal_count: 10
+  parser_version: 9
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 15874f45eb3f40a875504ddc2f8e3dfa98114221bdfd48b5db3b7d85cc5e823e
+  ocr: true
 pdf_sha256: 15874f45eb3f40a875504ddc2f8e3dfa98114221bdfd48b5db3b7d85cc5e823e
+tanggal_pengundangan: '2025-08-20'
+tanggal_berlaku: '2025-08-20'
+lembaran_negara: 'LN 2025 (133), TLN (7128) : 6 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-2025
+  source_pdf_url: https://peraturan.go.id/files/uu-no-12-tahun-2025.pdf
+bpk:
+  id: 331528
+  files:
+  - url: https://peraturan.bpk.go.id/Download/393561/UU%20Nomor%2012%20Tahun%202025.pdf
+    bpk_file_id: 393561
+    filename: UU Nomor 12 Tahun 2025.pdf
+    sha256: 15874f45eb3f40a875504ddc2f8e3dfa98114221bdfd48b5db3b7d85cc5e823e
+    bytes: 409142
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_29_1959
+      citation: UU No. 29 Tahun 1959
+      tentang: Pembentukan Daerah Tingkat II Di Sulawesi
+      url: https://peraturan.bpk.go.id/Details/51529/uu-no-29-tahun-1959
+      note: Ketentuan yang mengatur mengenai Kabupaten Minahasa dalam Undang-Undang
+        Nomor 29 Tahun 1959, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

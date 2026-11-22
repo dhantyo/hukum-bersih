@@ -12,8 +12,8 @@ tanggal_penetapan: '2025-08-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-2025
-source_pdf_url: https://peraturan.go.id/files/uu-no-9-tahun-2025.pdf
+source_url: https://peraturan.bpk.go.id/Details/331519/uu-no-9-tahun-2025
+source_pdf_url: https://peraturan.bpk.go.id/Download/393552/UU%20Nomor%209%20Tahun%202025.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,5 +28,34 @@ versions:
   date: '2025-08-20'
   date_basis: tanggal_penetapan
   text: uu_9_2025_2025-08-20.txt
-  pasal_count: 8
+  pasal_count: 10
+  parser_version: 9
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 096b41dd0ba1b975bb5748e02c43e08cf316057a7c4034fd1c34dfeba3a7220c
+  ocr: true
 pdf_sha256: 096b41dd0ba1b975bb5748e02c43e08cf316057a7c4034fd1c34dfeba3a7220c
+tanggal_pengundangan: '2025-08-20'
+tanggal_berlaku: '2025-08-20'
+lembaran_negara: 'LN 2025 (130), TLN (7125) : 6 hlm.; jdih.setneg.go.id'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-2025
+  source_pdf_url: https://peraturan.go.id/files/uu-no-9-tahun-2025.pdf
+bpk:
+  id: 331519
+  files:
+  - url: https://peraturan.bpk.go.id/Download/393552/UU%20Nomor%209%20Tahun%202025.pdf
+    bpk_file_id: 393552
+    filename: UU Nomor 9 Tahun 2025.pdf
+    sha256: 096b41dd0ba1b975bb5748e02c43e08cf316057a7c4034fd1c34dfeba3a7220c
+    bytes: 404588
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_29_1959
+      citation: UU No. 29 Tahun 1959
+      tentang: Pembentukan Daerah Tingkat II Di Sulawesi
+      url: https://peraturan.bpk.go.id/Details/51529/uu-no-29-tahun-1959
+      note: Ketentuan yang mengatur mengenai Kabupaten Muna dalam Undang-Undang Nomor
+        29 Tahun 1959, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

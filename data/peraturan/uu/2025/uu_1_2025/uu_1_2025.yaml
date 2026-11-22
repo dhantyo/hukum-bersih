@@ -13,8 +13,8 @@ tanggal_penetapan: '2025-02-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: PRABOWO SUBIANTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-2025
-source_pdf_url: https://peraturan.go.id/files/uud-no-1-tahun-2025.pdf
+source_url: https://peraturan.bpk.go.id/Details/314622/uu-no-1-tahun-2025
+source_pdf_url: https://peraturan.bpk.go.id/Download/375602/UU%20Nomor%201%20Tahun%202025.pdf
 relationships:
   amends:
   - id: uu_19_2003
@@ -226,3 +226,46 @@ versions:
   text: uu_1_2025_2025-02-24.txt
   pasal_count: 31
 pdf_sha256: 2cdeebdcc62c4cf106d591111645c798f072d47b61ae841c0eb093544d99ab90
+tanggal_pengundangan: '2025-02-24'
+tanggal_berlaku: '2025-02-24'
+lembaran_negara: 'LN 2025 (25), TLN (7097) : 94 hlm.; jdih.setneg.go.id'
+subjek: BUMN - DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-2025
+  source_pdf_url: https://peraturan.go.id/files/uud-no-1-tahun-2025.pdf
+bpk:
+  id: 314622
+  files:
+  - url: https://peraturan.bpk.go.id/Download/375602/UU%20Nomor%201%20Tahun%202025.pdf
+    bpk_file_id: 375602
+    filename: UU Nomor 1 Tahun 2025.pdf
+    sha256: 94c44baa989346b321835a35686fc0ff0002458e4bad012bcbe8bb2165ee3d5c
+    bytes: 9729958
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_16_2025
+      citation: UU No. 16 Tahun 2025
+      tentang: Perubahan Keempat atas Undang-Undang Nomor 19 Tahun 2003 tentang Badan
+        Usaha Milik Negara
+      url: https://peraturan.bpk.go.id/Details/330668/uu-no-16-tahun-2025
+      note: null
+    Mengubah:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    - id: uu_19_2003
+      citation: UU No. 19 Tahun 2003
+      tentang: Badan Usaha Milik Negara
+      url: https://peraturan.bpk.go.id/Details/43919/uu-no-19-tahun-2003
+      note: null
+uji_materi: null
+reparse_error: 'v9: 2 pasal, stored text has 31'
