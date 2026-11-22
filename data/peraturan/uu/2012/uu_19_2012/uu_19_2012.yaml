@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 19 Tahun 2012 tentang Anggaran Pendapatan Dan Belanja
 tentang: ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 2013
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2012-11-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-2012
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+19+Tahun+2012.pdf
+source_url: https://peraturan.bpk.go.id/Details/39103/uu-no-19-tahun-2012
+source_pdf_url: https://peraturan.bpk.go.id/Download/28505/UU%20Nomor%2019%20Tahun%202012.pdf
 relationships:
   amends: []
   amended_by:
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_19_2012_2012
+- id: uu_19_2012_2012-11-16
   kind: asli
   source: official
-  date: null
+  date: '2012-11-16'
   date_basis: tanggal_penetapan
-  text: uu_19_2012_2012.txt
+  text: uu_19_2012_2012-11-16.txt
   pasal_count: 37
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 81e34aac73c57e6c9893993889df3d425c0e3dda9eb61339d4a6d7edf1115933
 pdf_sha256: 81e34aac73c57e6c9893993889df3d425c0e3dda9eb61339d4a6d7edf1115933
+tanggal_pengundangan: '2012-11-17'
+tanggal_berlaku: '2013-01-01'
+lembaran_negara: 'LN.2012/No. 228, TLN No. 5361, LL SETNEG: 36 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-2012
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+19+Tahun+2012.pdf
+bpk:
+  id: 39103
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28505/UU%20Nomor%2019%20Tahun%202012.pdf
+    bpk_file_id: 28505
+    filename: UU Nomor 19 Tahun 2012.pdf
+    sha256: 81e34aac73c57e6c9893993889df3d425c0e3dda9eb61339d4a6d7edf1115933
+    bytes: 433481
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

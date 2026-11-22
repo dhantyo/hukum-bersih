@@ -13,8 +13,8 @@ tanggal_penetapan: '2012-01-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-2012
-source_pdf_url: https://peraturan.go.id/files/uu1-2012bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/39007/uu-no-1-tahun-2012
+source_pdf_url: https://peraturan.bpk.go.id/Download/28373/UU%20Nomor%201%20Tahun%202012.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2012_2012-01-04.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: afbd38da06598d8ab6b9519f466c16deb1f0a7e2d3958b1f99667a887d13a1dd
 pdf_sha256: 48c6f36024190576840949fb8e3aa28726dbdd37fb875870ab147dd10e70bd3c
+tanggal_pengundangan: '2012-01-04'
+tanggal_berlaku: '2012-01-04'
+lembaran_negara: 'LN.2012/No. 1, TLN No. 5269, LL SETNEG: 3 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-2012
+  source_pdf_url: https://peraturan.go.id/files/uu1-2012bt.pdf
+bpk:
+  id: 39007
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28373/UU%20Nomor%201%20Tahun%202012.pdf
+    bpk_file_id: 28373
+    filename: UU Nomor 1 Tahun 2012.pdf
+    sha256: afbd38da06598d8ab6b9519f466c16deb1f0a7e2d3958b1f99667a887d13a1dd
+    bytes: 139055
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/28374/Lampiran%20I%20UU%201%20Tahun%202012.pdf
+    bpk_file_id: 28374
+    filename: Lampiran I UU 1 Tahun 2012.pdf
+    sha256: 28e9b8f840e5c682cb6141f57546debebf1a978ccb012e520f7770a6e9bb9556
+    bytes: 305128
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/28375/Lampiran%20II%20UU%201%20Tahun%202012.pdf
+    bpk_file_id: 28375
+    filename: Lampiran II UU 1 Tahun 2012.pdf
+    sha256: 805f851c8cbf735ad275518fa802d9956f22d455e45ee7f011788c7444150410
+    bytes: 650047
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

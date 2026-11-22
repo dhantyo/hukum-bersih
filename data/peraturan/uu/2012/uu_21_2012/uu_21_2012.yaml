@@ -12,8 +12,8 @@ tanggal_penetapan: '2012-11-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-2012
-source_pdf_url: https://peraturan.go.id/files/uu21-2012bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/39113/uu-no-21-tahun-2012
+source_pdf_url: https://peraturan.bpk.go.id/Download/28515/UU%20Nomor%2021%20Tahun%202012.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2012_2012-11-17.txt
   pasal_count: 22
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1911b297031b0d805fda7cce07d946e5c69e75e8c0a0b1dacb2355d82ec46e94
 pdf_sha256: 885c2afe52241f90e7eb753b1943f8427674b7f9b431ccb6561b2e47e5f38142
+tanggal_penetapan_bpk: '2012-11-16'
+tanggal_pengundangan: '2012-11-17'
+tanggal_berlaku: '2012-11-17'
+lembaran_negara: 'LN.2012/No. 230, TLN No. 5363, LL SETNEG: 14 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-2012
+  source_pdf_url: https://peraturan.go.id/files/uu21-2012bt.pdf
+bpk:
+  id: 39113
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28515/UU%20Nomor%2021%20Tahun%202012.pdf
+    bpk_file_id: 28515
+    filename: UU Nomor 21 Tahun 2012.pdf
+    sha256: 1911b297031b0d805fda7cce07d946e5c69e75e8c0a0b1dacb2355d82ec46e94
+    bytes: 402383
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

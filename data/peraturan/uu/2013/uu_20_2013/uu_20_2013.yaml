@@ -6,19 +6,18 @@ year: 2013
 title: Undang-Undang Nomor 20 Tahun 2013 tentang Pendidikan Kodekteran
 tentang: PENDIDIKAN KODEKTERAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 17 Tahun 2023 Tentang Kesehatan'
+status: tidak_berlaku
 tanggal_penetapan: '2013-08-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-2013
-source_pdf_url: https://peraturan.go.id/files/uu20-2013bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38895/uu-no-20-tahun-2013
+source_pdf_url: https://peraturan.bpk.go.id/Download/28251/UU%20Nomor%2020%20Tahun%202013.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_17_2023
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -29,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2013_2013-08-06.txt
   pasal_count: 64
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 386f89e4309dd050a9ab8cfb4679a18a582fea2fd2294f5f41090143034a98a1
 pdf_sha256: e0ecec9355a4534a5c3e717423291f9124100207e5182214f2e0dcbd2b77d8be
+tanggal_pengundangan: '2013-08-06'
+tanggal_berlaku: '2013-08-06'
+lembaran_negara: 'LN.2013/No. 132, TLN No. 5434, LL SETNEG: 41 HLM'
+subjek: KESEHATAN - PENDIDIKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-2013
+  source_pdf_url: https://peraturan.go.id/files/uu20-2013bt.pdf
+bpk:
+  id: 38895
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28251/UU%20Nomor%2020%20Tahun%202013.pdf
+    bpk_file_id: 28251
+    filename: UU Nomor 20 Tahun 2013.pdf
+    sha256: 386f89e4309dd050a9ab8cfb4679a18a582fea2fd2294f5f41090143034a98a1
+    bytes: 337995
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_17_2023
+      citation: UU No. 17 Tahun 2023
+      tentang: Kesehatan
+      url: https://peraturan.bpk.go.id/Details/258028/uu-no-17-tahun-2023
+      note: null
+uji_materi: null

@@ -11,8 +11,8 @@ tanggal_penetapan: '2012-11-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-2012
-source_pdf_url: https://peraturan.go.id/files/uu18-2012bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/39100/uu-no-18-tahun-2012
+source_pdf_url: https://peraturan.bpk.go.id/Download/28501/UU%20Nomor%2018%20Tahun%202012.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,54 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2012_2012-11-16.txt
   pasal_count: 154
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4ac92ce58866a076ea3b40db8b87dbcae1f4f99915de05440fa1ad26ef998328
 pdf_sha256: a270102409b04e7fc548effa01b4b0593be3b2d5857558ce07ab6d801c907760
+tanggal_pengundangan: '2012-11-17'
+tanggal_berlaku: '2012-11-17'
+lembaran_negara: 'LN.2012/No. 227, TLN No. 5360, LL SETNEG: 58 HLM'
+subjek: PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-2012
+  source_pdf_url: https://peraturan.go.id/files/uu18-2012bt.pdf
+bpk:
+  id: 39100
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28501/UU%20Nomor%2018%20Tahun%202012.pdf
+    bpk_file_id: 28501
+    filename: UU Nomor 18 Tahun 2012.pdf
+    sha256: 4ac92ce58866a076ea3b40db8b87dbcae1f4f99915de05440fa1ad26ef998328
+    bytes: 448996
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 136 Undang-Undang Nomor 18 Tahun 2012
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_7_1996
+      citation: UU No. 7 Tahun 1996
+      tentang: Pangan
+      url: https://peraturan.bpk.go.id/Details/46097/uu-no-7-tahun-1996
+      note: null
+uji_materi: null

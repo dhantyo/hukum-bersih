@@ -8,22 +8,20 @@ title: Undang-Undang Nomor 8 Tahun 2012 tentang Pemilihan Umum Anggota Dewan Per
 tentang: PEMILIHAN UMUM ANGGOTA DEWAN PERWAKILAN RAKYAT, DEWAN PERWAKILAN DAERAH,
   DAN DEWAN PERWAKILAN RAKYAT DAERAH
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 7 Tahun 2017 Tentang Pemilihan
-  Umum'
+status: tidak_berlaku
 tanggal_penetapan: '2012-05-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-2012
-source_pdf_url: https://peraturan.go.id/files/uu8-2012bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/37659/uu-no-8-tahun-2012
+source_pdf_url: https://peraturan.bpk.go.id/Download/26759/UU%20Nomor%208%20Tahun%202012.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_10_2008
   - uu_17_2009
-  revoked_by:
-  - uu_7_2017
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -34,4 +32,52 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_2012_2012-05-11.txt
   pasal_count: 328
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6b89fe631cf47254dfa446118e3a3b4fd3bdc55bd3c3467dee57814ef4026d80
 pdf_sha256: 2a74ead73044d4fb44048b8f46634992a2b474d9f9cf4a15e4e9151878715c76
+tanggal_pengundangan: '2012-05-11'
+tanggal_berlaku: '2012-05-11'
+lembaran_negara: 'LN. 2012/ No. 117, TLN NO.5316 , LL SETNEG : 149 HLM'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-2012
+  source_pdf_url: https://peraturan.go.id/files/uu8-2012bt.pdf
+bpk:
+  id: 37659
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26759/UU%20Nomor%208%20Tahun%202012.pdf
+    bpk_file_id: 26759
+    filename: UU Nomor 8 Tahun 2012.pdf
+    sha256: 6b89fe631cf47254dfa446118e3a3b4fd3bdc55bd3c3467dee57814ef4026d80
+    bytes: 808848
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/28439/Lampiran%20UU%20Nomor%208%20Tahun%202012.pdf
+    bpk_file_id: 28439
+    filename: Lampiran UU Nomor 8 Tahun 2012.pdf
+    sha256: d6f2dd96069e9ebd3b8f214c030c992e0968d4762505d4123b52196a4c5318b2
+    bytes: 203132
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_7_2017
+      citation: UU No. 7 Tahun 2017
+      tentang: Pemilihan Umum
+      url: https://peraturan.bpk.go.id/Details/37644/uu-no-7-tahun-2017
+      note: null
+    Mencabut:
+    - id: uu_17_2009
+      citation: UU No. 17 Tahun 2009
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        2009 tentang Perubahan atas Undang-Undang Nomor 10 Tahun 2008 tentang Pemilihan
+        Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan
+        Rakyat Daerah Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/38631/uu-no-17-tahun-2009
+      note: null
+    - id: uu_10_2008
+      citation: UU No. 10 Tahun 2008
+      tentang: Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah,
+        dan Dewan Perwakilan Rakyat Daerah
+      url: https://peraturan.bpk.go.id/Details/39037/uu-no-10-tahun-2008
+      note: null
+uji_materi: null

@@ -16,8 +16,8 @@ tanggal_penetapan: '2012-07-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-2012
-source_pdf_url: https://peraturan.go.id/files/uu9-2012bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/39051/uu-no-9-tahun-2012
+source_pdf_url: https://peraturan.bpk.go.id/Download/28433/UU%20Nomor%209%20Tahun%202012.pdf
 relationships:
   amends: []
   amended_by: []
@@ -33,4 +33,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2012_2012-07-23.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f3566a5319bfd16fb326182b6c2b0eefa536d75df51ef66697cdc7ef2485f7a0
 pdf_sha256: 21cc5d50b2d6efd749d0e3ee226b87a14aa42b7db07abda75fb1bc042a046b0f
+tanggal_pengundangan: '2012-07-23'
+tanggal_berlaku: '2012-07-23'
+lembaran_negara: 'LN.2012/No. 148, TLN No. 5329, LL SETNEG: 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-2012
+  source_pdf_url: https://peraturan.go.id/files/uu9-2012bt.pdf
+bpk:
+  id: 39051
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28433/UU%20Nomor%209%20Tahun%202012.pdf
+    bpk_file_id: 28433
+    filename: UU Nomor 9 Tahun 2012.pdf
+    sha256: f3566a5319bfd16fb326182b6c2b0eefa536d75df51ef66697cdc7ef2485f7a0
+    bytes: 179822
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/28438/Lampiran%20UU%20009%202012.pdf
+    bpk_file_id: 28438
+    filename: Lampiran UU 009 2012.pdf
+    sha256: 877577b7f0cf05fa48c40e1637bce97f6254940ab802b0fd04a193c2729a72f1
+    bytes: 79131
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

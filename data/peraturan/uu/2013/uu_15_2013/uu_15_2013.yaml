@@ -13,8 +13,8 @@ tanggal_penetapan: '2013-06-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-2013
-source_pdf_url: https://peraturan.go.id/files/uu15-2013bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38872/uu-no-15-tahun-2013
+source_pdf_url: https://peraturan.bpk.go.id/Download/28228/UU%20Nomor%2015%20Tahun%202013.pdf
 relationships:
   amends:
   - id: uu_19_2012
@@ -44,4 +44,34 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2013_2013-06-18.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 684589cc56bd6b29f5611870bdd5fa65389d41c32a4e29c87b85e39658e54fe0
 pdf_sha256: 8c8a83b5a47af85faf3cfa41c6b03e11c1639aa833265247d862ef3797018119
+tanggal_pengundangan: '2013-06-18'
+tanggal_berlaku: '2013-06-18'
+lembaran_negara: 'LN.2013/No. 108, TLN No. 5426, LL SETNEG: 16 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-2013
+  source_pdf_url: https://peraturan.go.id/files/uu15-2013bt.pdf
+bpk:
+  id: 38872
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28228/UU%20Nomor%2015%20Tahun%202013.pdf
+    bpk_file_id: 28228
+    filename: UU Nomor 15 Tahun 2013.pdf
+    sha256: 684589cc56bd6b29f5611870bdd5fa65389d41c32a4e29c87b85e39658e54fe0
+    bytes: 408514
+    archive_url: null
+  status_peraturan: null
+uji_materi:
+- putusan: 83/PUU-XI/2013
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/86/putusan_sidang_1662_83%20PUU%202013-26Maret2014.pdf
+  amar: Pasal 9 ayat (1) huruf a Undang-Undang Nomor 15 Tahun 2003 tentang Perubahan
+    atas Undang-Undang Nomor 19 Tahun 2012 tentang Anggaran Pendapatan dan Belanja
+    Negara Tahun Anggaran 2013 bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai
+    kekuatan hukum mengikat sepanjang tidak dimaknai negara dengan kekuasaan yang
+    ada padanya harus dapat menjamin dan memastikan pelunasan ganti kerugian sebagaimana
+    mestinya terhadao masyarakat di dalam wilayah Peta Area Terdampak oleh perusahaan
+    yang bertanggung jawab untuk itu.

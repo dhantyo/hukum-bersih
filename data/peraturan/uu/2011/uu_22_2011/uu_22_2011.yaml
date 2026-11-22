@@ -12,8 +12,8 @@ tanggal_penetapan: '2011-11-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-22-tahun-2011
-source_pdf_url: https://peraturan.go.id/files/uu22-2011bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/39264/uu-no-22-tahun-2011
+source_pdf_url: https://peraturan.bpk.go.id/Download/28695/UU%2022%20Tahun%202011.pdf
 relationships:
   amends: []
   amended_by:
@@ -30,4 +30,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_2011_2011-11-24.txt
   pasal_count: 47
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 35f12b87e4922da309f7bb357f9ef1094fcd6999bde1dae7648ac9b7866bb3f9
 pdf_sha256: 2f0dd4e1bb7da11ec12c76c1cb3ab6e8e14e6930027d35e0b50bb056db3d11a9
+tanggal_pengundangan: '2011-11-24'
+tanggal_berlaku: '2012-01-01'
+lembaran_negara: 'LN.2011/No. 113, TLN No. 5254, LL SETNEG: 42 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-22-tahun-2011
+  source_pdf_url: https://peraturan.go.id/files/uu22-2011bt.pdf
+bpk:
+  id: 39264
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28695/UU%2022%20Tahun%202011.pdf
+    bpk_file_id: 28695
+    filename: UU 22 Tahun 2011.pdf
+    sha256: 35f12b87e4922da309f7bb357f9ef1094fcd6999bde1dae7648ac9b7866bb3f9
+    bytes: 456747
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_4_2012
+      citation: UU No. 4 Tahun 2012
+      tentang: Perubahan atas Undang-Undang Nomor 22 Tahun 2011 tentang Anggaran Pendapatan
+        dan Belanja Negara Tahun Anggaran 2012
+      url: https://peraturan.bpk.go.id/Details/39018/uu-no-4-tahun-2012
+      note: null
+uji_materi: null

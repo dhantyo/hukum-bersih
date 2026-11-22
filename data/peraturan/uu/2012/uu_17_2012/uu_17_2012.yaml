@@ -6,13 +6,13 @@ year: 2012
 title: Undang-Undang Nomor 17 Tahun 2012 tentang Perkoperasian
 tentang: PERKOPERASIAN
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '2012-10-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-2012
-source_pdf_url: https://peraturan.go.id/files/uu17-2012bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/39094/uu-no-17-tahun-2012
+source_pdf_url: https://peraturan.bpk.go.id/Download/28494/UU%20Nomor%2017%20Tahun%202012.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_2012_2012-10-29.txt
   pasal_count: 126
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4ab1ce718acf7cf5faa7935ea8f1201ae9dec0c1e351b7577ebb42fa8def12bb
 pdf_sha256: 912851c3414c4d395b07a47ec45ca95bd00d219c050abc97487a253adf7b926b
+tanggal_pengundangan: '2012-10-30'
+tanggal_berlaku: '2012-10-30'
+lembaran_negara: 'LN.2012/No. 212, TLN No. 5355, LL SETNEG: 52 HLM'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-2012
+  source_pdf_url: https://peraturan.go.id/files/uu17-2012bt.pdf
+bpk:
+  id: 39094
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28494/UU%20Nomor%2017%20Tahun%202012.pdf
+    bpk_file_id: 28494
+    filename: UU Nomor 17 Tahun 2012.pdf
+    sha256: 4ab1ce718acf7cf5faa7935ea8f1201ae9dec0c1e351b7577ebb42fa8def12bb
+    bytes: 342027
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: null
+      citation: Putusan Mahkamah Konstitusi Nomor 28/PUU-XI/2013
+      tentang: null
+      url: null
+      note: null
+uji_materi:
+- putusan: 28/PUU-XI/2013
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/163/Putusan%20MK%2028-PUU-XI-2013_%20UU%20koperasi.pdf
+  amar: UU Nomor 17 Tahun 2012 tentang Perkoperasian bertentangan dengan Undang-Undang
+    Dasar Negera Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum
+    mengikat. Dari putusan MK ini, maka dinyatakan bahwa UU Nomor 25 Tahun 1992 tentang
+    Perkoperasian berlaku untuk sementara waktu sampai dengan terbentuknya Undang-Undang
+    yang baru.

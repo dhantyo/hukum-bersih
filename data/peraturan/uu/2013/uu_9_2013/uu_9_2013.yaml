@@ -12,8 +12,8 @@ tanggal_penetapan: '2013-03-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-2013
-source_pdf_url: https://peraturan.go.id/files/uu9-2013bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38846/uu-no-9-tahun-2013
+source_pdf_url: https://peraturan.bpk.go.id/Download/28197/UU%20Nomor%209%20Tahun%202013.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,33 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2013_2013-03-13.txt
   pasal_count: 49
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 853bded15ac8c4a9e27ef23214fb104e0ce74187d6309db9182fc5c3228f560f
 pdf_sha256: 436301456319d9948023c7b4835d7c1225c74067b1d98885fa43a4a9d36f38c1
+tanggal_penetapan_bpk: '2013-01-13'
+tanggal_pengundangan: '2013-03-13'
+tanggal_berlaku: '2013-01-13'
+lembaran_negara: 'LN.2013/No. 50, TLN No. 5406, LL SETNEG: 33 HLM'
+subjek: TERORISME
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-2013
+  source_pdf_url: https://peraturan.go.id/files/uu9-2013bt.pdf
+bpk:
+  id: 38846
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28197/UU%20Nomor%209%20Tahun%202013.pdf
+    bpk_file_id: 28197
+    filename: UU Nomor 9 Tahun 2013.pdf
+    sha256: 853bded15ac8c4a9e27ef23214fb104e0ce74187d6309db9182fc5c3228f560f
+    bytes: 275460
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 4 Undang-Undang Nomor 9 Tahun 2013
+  tanggal_pengundangan: '2013-01-13'
+uji_materi: null

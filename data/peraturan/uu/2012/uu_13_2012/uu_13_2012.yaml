@@ -11,8 +11,8 @@ tanggal_penetapan: '2012-08-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-2012
-source_pdf_url: https://peraturan.go.id/files/uu13-2012.pdf
+source_url: https://peraturan.bpk.go.id/Details/39064/uu-no-13-tahun-2012
+source_pdf_url: https://peraturan.bpk.go.id/Download/28457/UU%20Nomor%2013%20Tahun%202012.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2012_2012-08-31.txt
   pasal_count: 51
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d9ddedcfa9a92f925d32b81a852b30748c1b05772b3b9bea6d88dca0841a7d9d
 pdf_sha256: ca97a027f313e97fc7d326d25b197aad5097c0167f6694c941e6dff451cad235
+tanggal_pengundangan: '2012-09-03'
+tanggal_berlaku: '2012-09-03'
+lembaran_negara: 'LN.2012/No. 170, TLN No. 5339, LL SETNEG: 35 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-2012
+  source_pdf_url: https://peraturan.go.id/files/uu13-2012.pdf
+bpk:
+  id: 39064
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28457/UU%20Nomor%2013%20Tahun%202012.pdf
+    bpk_file_id: 28457
+    filename: UU Nomor 13 Tahun 2012.pdf
+    sha256: d9ddedcfa9a92f925d32b81a852b30748c1b05772b3b9bea6d88dca0841a7d9d
+    bytes: 425892
+    archive_url: null
+  status_peraturan: null
+uji_materi:
+- putusan: 88/PUU-XIV/2016
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/19/88_PUU-XIV_2016.pdf
+  amar: Frasa "yang memuat, antara lain riwayat pendidikan, pekerjaan, saudara kandung,
+    istri, dan anak" dalam Pasal 18 ayat (1) huruf m Undang-Undang Nomor 13 Tahun
+    2012 tentang Keistimewaan Daerah Istimewa Yogyakarta bertentangan dengan UUD NRI
+    Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.

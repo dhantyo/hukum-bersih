@@ -11,8 +11,8 @@ tanggal_penetapan: '2012-10-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-2012
-source_pdf_url: https://peraturan.go.id/files/uu15-2012bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/39084/uu-no-15-tahun-2012
+source_pdf_url: https://peraturan.bpk.go.id/Download/28481/UU%20Nomor%2015%20Tahun%202012.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2012_2012-10-05.txt
   pasal_count: 27
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b2e2e82c0053a33c7dc98c1575cbab73523d729218765cad20730919c6a09d1b
 pdf_sha256: b6436aa296bfe31bdb1627c89703d4c8c5d4ce83e7017021ef6124b028917816
+tanggal_pengundangan: '2012-10-05'
+tanggal_berlaku: '2012-10-05'
+lembaran_negara: 'LN.2012/No. 182, TLN No. 5342, LL SETNEG: 16 HLM'
+subjek: HONORARIUM, GAJI, PENGHASILAN, UANG KEHORMATAN, TUNJANGAN, PENGHARGAAN, HAK
+  LAINNYA - PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-2012
+  source_pdf_url: https://peraturan.go.id/files/uu15-2012bt.pdf
+bpk:
+  id: 39084
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28481/UU%20Nomor%2015%20Tahun%202012.pdf
+    bpk_file_id: 28481
+    filename: UU Nomor 15 Tahun 2012.pdf
+    sha256: b2e2e82c0053a33c7dc98c1575cbab73523d729218765cad20730919c6a09d1b
+    bytes: 217063
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_7_1967
+      citation: UU No. 7 Tahun 1967
+      tentang: Veteran Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/49572/uu-no-7-tahun-1967
+      note: null
+uji_materi: null

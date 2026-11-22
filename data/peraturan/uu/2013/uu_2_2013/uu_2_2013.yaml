@@ -12,8 +12,8 @@ tanggal_penetapan: '2013-01-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-2013
-source_pdf_url: https://peraturan.go.id/files/uu2-2013bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38821/uu-no-2-tahun-2013
+source_pdf_url: https://peraturan.bpk.go.id/Download/28164/UU%20Nomor%202%20Tahun%202013.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2013_2013-01-11.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8b017902616600bf18c8ffa915b8abdb7441c34c2b7c4e8ed4a1904cbfa976ca
 pdf_sha256: 4b90541ea263ea11ef19e5f9ed2a3df746c131b331bf4856bf13bc6c06a614de
+tanggal_pengundangan: '2013-01-11'
+tanggal_berlaku: '2013-01-11'
+lembaran_negara: 'LN.2013/No. 17, TLN No. 5395, LL SETNEG: 15 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-2013
+  source_pdf_url: https://peraturan.go.id/files/uu2-2013bt.pdf
+bpk:
+  id: 38821
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28164/UU%20Nomor%202%20Tahun%202013.pdf
+    bpk_file_id: 28164
+    filename: UU Nomor 2 Tahun 2013.pdf
+    sha256: 8b017902616600bf18c8ffa915b8abdb7441c34c2b7c4e8ed4a1904cbfa976ca
+    bytes: 479385
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

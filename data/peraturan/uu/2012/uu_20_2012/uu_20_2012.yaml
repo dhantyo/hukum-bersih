@@ -11,8 +11,8 @@ tanggal_penetapan: '2012-11-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-2012
-source_pdf_url: https://peraturan.go.id/files/uu20-2012bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/39108/uu-no-20-tahun-2012
+source_pdf_url: https://peraturan.bpk.go.id/Download/28510/UU%20Nomor%2020%20Tahun%202012.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2012_2012-11-16.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 359f9d1e1515e38ea199a4690cabd3ca9c0a43c9cfe05b60a6be2c1cfdb2321f
 pdf_sha256: fd9a2260ba4daa5f083a2c8c26984be6afc6ca5adfb1728cffe8adc3b50e6aa2
+tanggal_pengundangan: '2012-11-17'
+tanggal_berlaku: '2012-11-17'
+lembaran_negara: 'LN.2012/No. 229, TLN No. 5362, LL SETNEG: 16 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-2012
+  source_pdf_url: https://peraturan.go.id/files/uu20-2012bt.pdf
+bpk:
+  id: 39108
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28510/UU%20Nomor%2020%20Tahun%202012.pdf
+    bpk_file_id: 28510
+    filename: UU Nomor 20 Tahun 2012.pdf
+    sha256: 359f9d1e1515e38ea199a4690cabd3ca9c0a43c9cfe05b60a6be2c1cfdb2321f
+    bytes: 640160
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

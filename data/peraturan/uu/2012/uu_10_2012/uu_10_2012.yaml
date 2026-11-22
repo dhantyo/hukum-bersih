@@ -16,8 +16,8 @@ tanggal_penetapan: '2012-07-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2012
-source_pdf_url: https://peraturan.go.id/files/uu10-2012bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/39052/uu-no-10-tahun-2012
+source_pdf_url: https://peraturan.bpk.go.id/Download/28434/UU%20Nomor%2010%20Tahun%202012.pdf
 relationships:
   amends: []
   amended_by: []
@@ -33,4 +33,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2012_2012-07-23.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 332ecf07f5d2eaa6138e80055d47e680a9c3b440f9360fa69036207551c5d0bf
 pdf_sha256: f6d679c39dcdfba3195e5450d6884782fe87671853b20c6459e9432c5cff9f23
+tanggal_pengundangan: '2012-07-23'
+tanggal_berlaku: '2012-07-23'
+lembaran_negara: 'LN.2012/No. 149, TLN No. 5330, LL SETNEG: 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2012
+  source_pdf_url: https://peraturan.go.id/files/uu10-2012bt.pdf
+bpk:
+  id: 39052
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28434/UU%20Nomor%2010%20Tahun%202012.pdf
+    bpk_file_id: 28434
+    filename: UU Nomor 10 Tahun 2012.pdf
+    sha256: 332ecf07f5d2eaa6138e80055d47e680a9c3b440f9360fa69036207551c5d0bf
+    bytes: 106092
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/28435/Lampiran%20UU%20010%202012.pdf
+    bpk_file_id: 28435
+    filename: Lampiran UU 010 2012.pdf
+    sha256: c09127dda20beb1358d2e3a0107a418eb194113704fe1f87b860d77f59f567a3
+    bytes: 94224
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

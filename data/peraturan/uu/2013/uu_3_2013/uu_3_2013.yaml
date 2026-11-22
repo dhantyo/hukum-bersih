@@ -12,8 +12,8 @@ tanggal_penetapan: '2013-01-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-2013
-source_pdf_url: https://peraturan.go.id/files/uu3-2013bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38828/uu-no-3-tahun-2013
+source_pdf_url: https://peraturan.bpk.go.id/Download/28172/UU%20Nomor%203%20Tahun%202013.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2013_2013-01-11.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 778c667b8ebe799e2117575206bf91209dfa6757356848b4f118fc0bebddc3c2
 pdf_sha256: 57956a0e3bbc4ab4483d38da9817e58a270c47115bbb4b186c3237e46eca62cf
+tanggal_pengundangan: '2013-01-11'
+tanggal_berlaku: '2013-01-11'
+lembaran_negara: 'LN.2013/No. 18, TLN No. 5396, LL SETNEG: 15 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-2013
+  source_pdf_url: https://peraturan.go.id/files/uu3-2013bt.pdf
+bpk:
+  id: 38828
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28172/UU%20Nomor%203%20Tahun%202013.pdf
+    bpk_file_id: 28172
+    filename: UU Nomor 3 Tahun 2013.pdf
+    sha256: 778c667b8ebe799e2117575206bf91209dfa6757356848b4f118fc0bebddc3c2
+    bytes: 383727
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

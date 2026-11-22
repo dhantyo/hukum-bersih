@@ -12,8 +12,8 @@ tanggal_penetapan: '2013-01-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-2013
-source_pdf_url: https://peraturan.go.id/files/uu8-2013bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38839/uu-no-8-tahun-2013
+source_pdf_url: https://peraturan.bpk.go.id/Download/28187/UU%20Nomor%208%20Tahun%202013.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_2013_2013-01-11.txt
   pasal_count: 22
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3f65c971ec747b244e6e258e70bca47e4166752cbffc7b60a8a98c1a30e05ebb
 pdf_sha256: 6c44fc7a1117475692758477c471184c87d1d662523194a2b11ed89b977d4061
+tanggal_pengundangan: '2013-01-11'
+tanggal_berlaku: '2013-01-11'
+lembaran_negara: 'LN.2013/No. 23, TLN No. 5401, LL SETNEG: 16 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-2013
+  source_pdf_url: https://peraturan.go.id/files/uu8-2013bt.pdf
+bpk:
+  id: 38839
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28187/UU%20Nomor%208%20Tahun%202013.pdf
+    bpk_file_id: 28187
+    filename: UU Nomor 8 Tahun 2013.pdf
+    sha256: 3f65c971ec747b244e6e258e70bca47e4166752cbffc7b60a8a98c1a30e05ebb
+    bytes: 388823
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

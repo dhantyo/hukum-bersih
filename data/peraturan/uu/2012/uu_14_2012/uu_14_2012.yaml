@@ -13,8 +13,8 @@ tanggal_penetapan: '2012-09-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-2012
-source_pdf_url: https://peraturan.go.id/files/uu14-2012bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/39081/uu-no-14-tahun-2012
+source_pdf_url: https://peraturan.bpk.go.id/Download/28478/UU%20Nomor%2014%20Tahun%202012.PDF
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2012_2012-09-22.txt
   pasal_count: 11
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ff60188ae3db1660f61b27736f14078697a98a14791998c08b31197a0d8e64c0
 pdf_sha256: ff6a35ed48ba3247484577e02de4f67294f25c97c7d37fc4ed86eb7650022533
+tanggal_pengundangan: '2012-09-22'
+tanggal_berlaku: '2012-09-22'
+lembaran_negara: 'LN.2012/No. 178, TLN No. 5341, LL SETNEG: 10 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-2012
+  source_pdf_url: https://peraturan.go.id/files/uu14-2012bt.pdf
+bpk:
+  id: 39081
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28478/UU%20Nomor%2014%20Tahun%202012.PDF
+    bpk_file_id: 28478
+    filename: UU Nomor 14 Tahun 2012.PDF
+    sha256: ff60188ae3db1660f61b27736f14078697a98a14791998c08b31197a0d8e64c0
+    bytes: 324809
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -19,8 +19,8 @@ tanggal_penetapan: '2013-05-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-2013
-source_pdf_url: https://peraturan.go.id/files/uu11-2013bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38848/uu-no-11-tahun-2013
+source_pdf_url: https://peraturan.bpk.go.id/Download/28201/UU%20Nomor%2011%20Tahun%202013.pdf
 relationships:
   amends: []
   amended_by: []
@@ -36,4 +36,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_2013_2013-05-08.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: cfd2ac3c200df642bb8ba746c2b4a6e0023b50006202e062fcc8d3da0b43b6c8
 pdf_sha256: 7ecffd189bf5cdeb609228b48b5623fdae82c00ab3dc5d32ef1243781f5c0593
+tanggal_pengundangan: '2013-05-08'
+tanggal_berlaku: '2013-05-08'
+lembaran_negara: 'LN.2013/No. 73, TLN No. 5412, LL SETNEG: 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-2013
+  source_pdf_url: https://peraturan.go.id/files/uu11-2013bt.pdf
+bpk:
+  id: 38848
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28201/UU%20Nomor%2011%20Tahun%202013.pdf
+    bpk_file_id: 28201
+    filename: UU Nomor 11 Tahun 2013.pdf
+    sha256: cfd2ac3c200df642bb8ba746c2b4a6e0023b50006202e062fcc8d3da0b43b6c8
+    bytes: 130944
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

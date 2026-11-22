@@ -18,8 +18,8 @@ tanggal_penetapan: '2013-05-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2013
-source_pdf_url: https://peraturan.go.id/files/uu10-2013bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38847/uu-no-10-tahun-2013
+source_pdf_url: https://peraturan.bpk.go.id/Download/28199/UU%20Nomor%2010%20Tahun%202013.pdf
 relationships:
   amends: []
   amended_by: []
@@ -35,4 +35,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2013_2013-05-08.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a279565c291ea49a918e0d520de80f96a106d60e11ff09568455196b4b9c3f2a
 pdf_sha256: 9adc88f94ebdf74af0b972ff51d6525660379b9a4e527d5ec26ff597419c6bf8
+tanggal_pengundangan: '2013-05-08'
+tanggal_berlaku: '2013-05-08'
+lembaran_negara: 'LN.2013/No. 72, TLN No. 5411, LL SETNEG: 5 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2013
+  source_pdf_url: https://peraturan.go.id/files/uu10-2013bt.pdf
+bpk:
+  id: 38847
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28199/UU%20Nomor%2010%20Tahun%202013.pdf
+    bpk_file_id: 28199
+    filename: UU Nomor 10 Tahun 2013.pdf
+    sha256: a279565c291ea49a918e0d520de80f96a106d60e11ff09568455196b4b9c3f2a
+    bytes: 115769
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

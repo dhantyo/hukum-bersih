@@ -13,8 +13,8 @@ tanggal_penetapan: '2012-03-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-2012
-source_pdf_url: https://peraturan.go.id/files/uu4-2012bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/39018/uu-no-4-tahun-2012
+source_pdf_url: https://peraturan.bpk.go.id/Download/28390/UU%20Nomor%204%20Tahun%202012.pdf
 relationships:
   amends:
   - id: uu_22_2011
@@ -61,5 +61,32 @@ versions:
   date: '2012-03-31'
   date_basis: tanggal_penetapan
   text: uu_4_2012_2012-03-31.txt
-  pasal_count: 18
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 31ec3766ff2174b3d4e5142e80c140c444f6c7b0dda6b58daea806507a07c0b6
 pdf_sha256: 6b2fde4f9572c5c134cfbca914ac4efc9393e63e428e49190dede559ab58034f
+tanggal_pengundangan: '2012-03-31'
+tanggal_berlaku: '2012-03-31'
+lembaran_negara: 'LN.2012/No. 87, TLN No. 5303, LL SETNEG: 31 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-2012
+  source_pdf_url: https://peraturan.go.id/files/uu4-2012bt.pdf
+bpk:
+  id: 39018
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28390/UU%20Nomor%204%20Tahun%202012.pdf
+    bpk_file_id: 28390
+    filename: UU Nomor 4 Tahun 2012.pdf
+    sha256: 31ec3766ff2174b3d4e5142e80c140c444f6c7b0dda6b58daea806507a07c0b6
+    bytes: 362900
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_22_2011
+      citation: UU No. 22 Tahun 2011
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2012
+      url: https://peraturan.bpk.go.id/Details/39264/uu-no-22-tahun-2011
+      note: null
+uji_materi: null

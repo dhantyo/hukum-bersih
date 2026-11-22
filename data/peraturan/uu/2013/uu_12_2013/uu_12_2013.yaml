@@ -12,8 +12,8 @@ tanggal_penetapan: '2013-05-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-2013
-source_pdf_url: https://peraturan.go.id/files/uu12-2013bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38849/uu-no-12-tahun-2013
+source_pdf_url: https://peraturan.bpk.go.id/Download/28202/UU%20Nomor%2012%20Tahun%202013.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2013_2013-05-11.txt
   pasal_count: 22
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8b63c24f9aaef19cdba32fa9da629e8fd80835c514670fab5d9c1fc81de1cee5
 pdf_sha256: 64148b1af2433e2cbc9f7e4a7208f3cadca931d2c7bb7311c4f7457a9a0dca73
+tanggal_pengundangan: '2013-05-15'
+tanggal_berlaku: '2013-05-15'
+lembaran_negara: 'LN.2013/No. 83, TLN No. 5414, LL SETNEG: 16 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-2013
+  source_pdf_url: https://peraturan.go.id/files/uu12-2013bt.pdf
+bpk:
+  id: 38849
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28202/UU%20Nomor%2012%20Tahun%202013.pdf
+    bpk_file_id: 28202
+    filename: UU Nomor 12 Tahun 2013.pdf
+    sha256: 8b63c24f9aaef19cdba32fa9da629e8fd80835c514670fab5d9c1fc81de1cee5
+    bytes: 442423
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

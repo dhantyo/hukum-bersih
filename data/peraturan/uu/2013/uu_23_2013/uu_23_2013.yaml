@@ -12,8 +12,8 @@ tanggal_penetapan: '2013-11-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-23-tahun-2013
-source_pdf_url: https://peraturan.go.id/files/uu23-2013bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38979/uu-no-23-tahun-2013
+source_pdf_url: https://peraturan.bpk.go.id/Download/28340/UU%20Nomor%2023%20Tahun%202013.pdf
 relationships:
   amends: []
   amended_by:
@@ -30,4 +30,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_2013_2013-11-14.txt
   pasal_count: 39
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1ec5fe2ba1cdc3b35eb38d889569a8c6864a22b64c21a474e96baca4d7509cf1
 pdf_sha256: f28020562df9cd4e548b8ae9099707d57415c1b325253d37b6d8723061199b93
+tanggal_pengundangan: '2013-11-14'
+tanggal_berlaku: '2014-01-01'
+lembaran_negara: 'LN.2013/No. 182, TLN No. 5462, LL SETNEG: 37 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-23-tahun-2013
+  source_pdf_url: https://peraturan.go.id/files/uu23-2013bt.pdf
+bpk:
+  id: 38979
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28340/UU%20Nomor%2023%20Tahun%202013.pdf
+    bpk_file_id: 28340
+    filename: UU Nomor 23 Tahun 2013.pdf
+    sha256: 1ec5fe2ba1cdc3b35eb38d889569a8c6864a22b64c21a474e96baca4d7509cf1
+    bytes: 524783
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_12_2014
+      citation: UU No. 12 Tahun 2014
+      tentang: Perubahan atas Undang-Undang Nomor 23 Tahun 2013 Tentang Anggaran Pendapatan
+        dan Belanja Negara Tahun Anggaran 2014
+      url: https://peraturan.bpk.go.id/Details/38604/uu-no-12-tahun-2014
+      note: null
+uji_materi: null

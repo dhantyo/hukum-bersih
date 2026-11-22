@@ -12,8 +12,8 @@ tanggal_penetapan: '2013-01-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-2013
-source_pdf_url: https://peraturan.go.id/files/uu5-2013bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38832/uu-no-5-tahun-2013
+source_pdf_url: https://peraturan.bpk.go.id/Download/28178/UU%20Nomor%205%20Tahun%202013.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_2013_2013-01-11.txt
   pasal_count: 22
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 02bfa1f6a39c95e9527e651a4bc202c60e54bf34d8b2eb14114c0bda985d0100
 pdf_sha256: 4bf645ac8c354436ff9e47bd6b828e00b6067797fdc8f75c14270e9c3282b3ab
+tanggal_pengundangan: '2013-01-11'
+tanggal_berlaku: '2013-01-11'
+lembaran_negara: 'LN.2013/No. 20, TLN No. 5398, LL SETNEG: 15 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-2013
+  source_pdf_url: https://peraturan.go.id/files/uu5-2013bt.pdf
+bpk:
+  id: 38832
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28178/UU%20Nomor%205%20Tahun%202013.pdf
+    bpk_file_id: 28178
+    filename: UU Nomor 5 Tahun 2013.pdf
+    sha256: 02bfa1f6a39c95e9527e651a4bc202c60e54bf34d8b2eb14114c0bda985d0100
+    bytes: 376775
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

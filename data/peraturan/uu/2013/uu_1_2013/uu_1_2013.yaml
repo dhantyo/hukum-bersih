@@ -11,8 +11,8 @@ tanggal_penetapan: '2013-01-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-2013
-source_pdf_url: https://peraturan.go.id/files/uu1-2013bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/38813/uu-no-1-tahun-2013
+source_pdf_url: https://peraturan.bpk.go.id/Download/224566/UU%20Nomor%201%20Tahun%202013_.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2013_2013-01-08.txt
   pasal_count: 42
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a2c8f0e83cedee8108df8c8f58a3e42acb8e1cda298e6c7e8b63d22ab150a9c2
 pdf_sha256: 6e010e15e43d5f6271d168bfd23e73b4ee42df42fdb016298b08b94a6b342d7a
+tanggal_pengundangan: '2013-01-08'
+tanggal_berlaku: '2015-01-08'
+lembaran_negara: 'LN.2013/No. 12, TLN No. 5394, peraturan.go.id: 15 hlm.'
+subjek: PERBANKAN, LEMBAGA KEUANGAN - DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN
+  / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-2013
+  source_pdf_url: https://peraturan.go.id/files/uu1-2013bt.pdf
+bpk:
+  id: 38813
+  files:
+  - url: https://peraturan.bpk.go.id/Download/224566/UU%20Nomor%201%20Tahun%202013_.pdf
+    bpk_file_id: 224566
+    filename: UU Nomor 1 Tahun 2013_.pdf
+    sha256: a2c8f0e83cedee8108df8c8f58a3e42acb8e1cda298e6c7e8b63d22ab150a9c2
+    bytes: 106509
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+uji_materi: null

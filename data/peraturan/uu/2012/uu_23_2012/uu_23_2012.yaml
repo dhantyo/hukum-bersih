@@ -12,8 +12,8 @@ tanggal_penetapan: '2012-11-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-23-tahun-2012
-source_pdf_url: https://peraturan.go.id/files/uu23-2012bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/39117/uu-no-23-tahun-2012
+source_pdf_url: https://peraturan.bpk.go.id/Download/28521/UU%20Nomor%2023%20Tahun%202012.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_2012_2012-11-16.txt
   pasal_count: 22
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 983be31e88d1f4aeac33b684ffaae4658910592517277fda9bd2c7fba720d101
 pdf_sha256: c2d9aef4608d7c559c84d171f18dee95c61887cb881f110412b71caa31540459
+tanggal_pengundangan: '2012-11-17'
+tanggal_berlaku: '2012-11-17'
+lembaran_negara: 'LN.2012/No. 232, TLN No. 5365, LL SETNEG: 15 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-23-tahun-2012
+  source_pdf_url: https://peraturan.go.id/files/uu23-2012bt.pdf
+bpk:
+  id: 39117
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28521/UU%20Nomor%2023%20Tahun%202012.pdf
+    bpk_file_id: 28521
+    filename: UU Nomor 23 Tahun 2012.pdf
+    sha256: 983be31e88d1f4aeac33b684ffaae4658910592517277fda9bd2c7fba720d101
+    bytes: 436074
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

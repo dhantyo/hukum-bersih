@@ -11,8 +11,8 @@ tanggal_penetapan: '2011-11-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-24-tahun-2011
-source_pdf_url: https://peraturan.go.id/files/UU+24+Tahun+2011.pdf
+source_url: https://peraturan.bpk.go.id/Details/39268/uu-no-24-tahun-2011
+source_pdf_url: https://peraturan.bpk.go.id/Download/28701/UU%2024%20Tahun%202011.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,55 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_2011_2011-11-25.txt
   pasal_count: 71
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 650b86991e55dbf1ada27294676c451dca85c09d8f9352754d5cb59505680f57
 pdf_sha256: 650b86991e55dbf1ada27294676c451dca85c09d8f9352754d5cb59505680f57
+tanggal_pengundangan: '2011-11-25'
+tanggal_berlaku: '2011-11-25'
+lembaran_negara: 'LN.2011/No. 116, TLN No. 5256, LL SETNEG: 10 HLM'
+subjek: KESEHATAN - DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-24-tahun-2011
+  source_pdf_url: https://peraturan.go.id/files/UU+24+Tahun+2011.pdf
+bpk:
+  id: 39268
+  files:
+  - url: https://peraturan.bpk.go.id/Download/28701/UU%2024%20Tahun%202011.pdf
+    bpk_file_id: 28701
+    filename: UU 24 Tahun 2011.pdf
+    sha256: 650b86991e55dbf1ada27294676c451dca85c09d8f9352754d5cb59505680f57
+    bytes: 296718
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_3_1992
+      citation: UU No. 3 Tahun 1992
+      tentang: Jaminan Sosial Tenaga Kerja
+      url: https://peraturan.bpk.go.id/Details/46595/uu-no-3-tahun-1992
+      note: null
+uji_materi:
+- putusan: 72/PUU-XVII/2019
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/200/putusan_mkri_72-PUU-XVII-2019.pdf
+  amar: Pasal 57 huruf f dan Pasal 65 ayat (2) Undang-Undang Nomor 24 Tahun 2011 tentang
+    Badan Penyelenggara Jaminan Sosial (Lembaran Negara Republik Indonesia Tahun 2011
+    Nomor 116, Tambahan Lembaran Negara Republik Indonesia Nomor 5256) bertentangan
+    dengan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan tidak memiliki
+    kekuatan hukum mengikat.
