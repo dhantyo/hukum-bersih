@@ -15,8 +15,8 @@ tanggal_penetapan: '2018-03-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-2018
-source_pdf_url: https://peraturan.go.id/files/uu2-2018bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/72791/uu-no-2-tahun-2018
+source_pdf_url: https://peraturan.bpk.go.id/Download/63275/UU%20Nomor%202%20Tahun%202018.pdf
 relationships:
   amends:
   - id: uu_17_2014
@@ -69,4 +69,48 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2018_2018-03-15.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1a88750b3db4ac0763c4a286d1a371c6dc814218d5dfec06ccb46410a1882d35
+  ocr: true
 pdf_sha256: 86c1ee6088e1a91216e8cc8709d003de9ebb348a945a03ced459d6c6a4ad5435
+tanggal_pengundangan: '2018-03-15'
+tanggal_berlaku: '2018-03-15'
+lembaran_negara: 'LN.2018/NO.29, TLN NO.6187, LL SETKAB : 31 HLM.'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-2018
+  source_pdf_url: https://peraturan.go.id/files/uu2-2018bt.pdf
+bpk:
+  id: 72791
+  files:
+  - url: https://peraturan.bpk.go.id/Download/63275/UU%20Nomor%202%20Tahun%202018.pdf
+    bpk_file_id: 63275
+    filename: UU Nomor 2 Tahun 2018.pdf
+    sha256: 1a88750b3db4ac0763c4a286d1a371c6dc814218d5dfec06ccb46410a1882d35
+    bytes: 3360509
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_13_2019
+      citation: UU No. 13 Tahun 2019
+      tentang: Perubahan Ketiga atas Undang-Undang Nomor 17 Tahun 2014 tentang Majelis
+        Permusyawaratan Rakyat, Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah,
+        dan Dewan Perwakilan Rakyat Daerah
+      url: https://peraturan.bpk.go.id/Details/121709/uu-no-13-tahun-2019
+      note: null
+    Mengubah:
+    - id: uu_42_2014
+      citation: UU No. 42 Tahun 2014
+      tentang: Perubahan atas Undang-Undang Nomor 17 Tahun 2014 Tentang Majelis Permusyawaratan
+        Rakyat, Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan
+        Rakyat Daerah
+      url: https://peraturan.bpk.go.id/Details/38805/uu-no-42-tahun-2014
+      note: null
+    - id: uu_17_2014
+      citation: UU No. 17 Tahun 2014
+      tentang: Majelis Permusyawaratan Rakyat, Dewan Perwakilan Rakyat, Dewan Perwakilan
+        Daerah, dan Dewan Perwakilan Rakyat Daerah
+      url: https://peraturan.bpk.go.id/Details/38643/uu-no-17-tahun-2014
+      note: null
+uji_materi: null

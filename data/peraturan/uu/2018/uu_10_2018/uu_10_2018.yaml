@@ -12,12 +12,12 @@ tentang: Pengesahan Persetujuan Kerja Sama Pertahanan Antara Pemerintah Republik
   of The Republic of Indonesia and The Government of The Kingdom of Saudi Arabia)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2018-10-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2018
-source_pdf_url: https://peraturan.go.id/files/uu10-2018bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/99207/uu-no-10-tahun-2018
+source_pdf_url: https://peraturan.bpk.go.id/Download/89908/UU%20Nomor%2010%20Tahun%202018.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,11 +26,33 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_10_2018_2018
+- id: uu_10_2018_2018-10-30
   kind: asli
   source: official
-  date: null
+  date: '2018-10-30'
   date_basis: tanggal_penetapan
-  text: uu_10_2018_2018.txt
+  text: uu_10_2018_2018-10-30.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5a2c43233568c2d2deea01dd1faeaa3370267133744a0cd7e9624ec17e0dc9ff
+  ocr: true
 pdf_sha256: 5561e3ab3ef21b1b2eee7b8d14391daff12bbcc5047b209673f3d91ac5c2c5f7
+tanggal_pengundangan: '2018-10-31'
+tanggal_berlaku: '2018-10-31'
+lembaran_negara: 'LN.2018/NO.188, TLN NO.6257, LL SETNEG : 4 HLM.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2018
+  source_pdf_url: https://peraturan.go.id/files/uu10-2018bt.pdf
+bpk:
+  id: 99207
+  files:
+  - url: https://peraturan.bpk.go.id/Download/89908/UU%20Nomor%2010%20Tahun%202018.pdf
+    bpk_file_id: 89908
+    filename: UU Nomor 10 Tahun 2018.pdf
+    sha256: 5a2c43233568c2d2deea01dd1faeaa3370267133744a0cd7e9624ec17e0dc9ff
+    bytes: 553588
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

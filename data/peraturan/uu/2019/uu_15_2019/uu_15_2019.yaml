@@ -13,8 +13,8 @@ tanggal_penetapan: '2019-10-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-2019
-source_pdf_url: https://peraturan.go.id/files/uu15-2019bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/121716/uu-no-15-tahun-2019
+source_pdf_url: https://peraturan.bpk.go.id/Download/112490/UU%20Nomor%2015%20Tahun%202019.pdf
 relationships:
   amends:
   - id: uu_12_2011
@@ -49,4 +49,44 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2019_2019-10-02.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 385b9e71e9c2ae77d7ffc7b03f00967b6030b61b8cf6060e40bd01e0c68a00fd
+  ocr: true
 pdf_sha256: 88867eea2eb4f2796dbb1c052191b699e3b3c25d46551e2a1b71dba2de2ebb4d
+tanggal_pengundangan: '2019-10-04'
+tanggal_berlaku: '2019-10-04'
+lembaran_negara: 'LN.2019/NO.183, TLN NO. 6398, JDIH.SETNEG.GO.ID : 14 HLM.'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-2019
+  source_pdf_url: https://peraturan.go.id/files/uu15-2019bt.pdf
+bpk:
+  id: 121716
+  files:
+  - url: https://peraturan.bpk.go.id/Download/112490/UU%20Nomor%2015%20Tahun%202019.pdf
+    bpk_file_id: 112490
+    filename: UU Nomor 15 Tahun 2019.pdf
+    sha256: 385b9e71e9c2ae77d7ffc7b03f00967b6030b61b8cf6060e40bd01e0c68a00fd
+    bytes: 802946
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_1_2026
+      citation: UU No. 1 Tahun 2026
+      tentang: Penyesuaian Pidana
+      url: https://peraturan.bpk.go.id/Details/337869/uu-no-1-tahun-2026
+      note: Ketentuan Pasal 15 Undang-Undang Nomor 12 Tahun 2011 diubah.
+    - id: uu_13_2022
+      citation: UU No. 13 Tahun 2022
+      tentang: Perubahan Kedua atas Undang-Undang Nomor 12 Tahun 2011 tentang Pembentukan
+        Peraturan Perundang-Undangan
+      url: https://peraturan.bpk.go.id/Details/212810/uu-no-13-tahun-2022
+      note: null
+    Mengubah:
+    - id: uu_12_2011
+      citation: UU No. 12 Tahun 2011
+      tentang: Pembentukan Peraturan Perundang-Undangan
+      url: https://peraturan.bpk.go.id/Details/39188/uu-no-12-tahun-2011
+      note: null
+uji_materi: null

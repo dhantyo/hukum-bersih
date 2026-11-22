@@ -13,12 +13,12 @@ tentang: Pengesahan Protocol to Implement The Sixth Package of Commitments on Fi
   di Bidang Jasa)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2018-05-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-2018
-source_pdf_url: https://peraturan.go.id/files/uu4-2018bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/82684/uu-no-4-tahun-2018
+source_pdf_url: https://peraturan.bpk.go.id/Download/74856/UU%20Nomor%204%20Tahun%202018.pdf
 relationships:
   amends: []
   amended_by: []
@@ -27,11 +27,33 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_4_2018_2018
+- id: uu_4_2018_2018-05-25
   kind: asli
   source: official
-  date: null
+  date: '2018-05-25'
   date_basis: tanggal_penetapan
-  text: uu_4_2018_2018.txt
+  text: uu_4_2018_2018-05-25.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5c2ea59ba287cecdff9157b879fbbd6a44d327462c96332e89cc7afb20730f8a
+  ocr: true
 pdf_sha256: 8d55d680470512255d5693f53747b4b07b6302b33189c9bf4c85232a2ea90ebb
+tanggal_pengundangan: '2018-05-25'
+tanggal_berlaku: '2018-05-25'
+lembaran_negara: 'LN.2018/NO.82, TLN NO.6211, LL SETKAB : 4 HLM.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-2018
+  source_pdf_url: https://peraturan.go.id/files/uu4-2018bt.pdf
+bpk:
+  id: 82684
+  files:
+  - url: https://peraturan.bpk.go.id/Download/74856/UU%20Nomor%204%20Tahun%202018.pdf
+    bpk_file_id: 74856
+    filename: UU Nomor 4 Tahun 2018.pdf
+    sha256: 5c2ea59ba287cecdff9157b879fbbd6a44d327462c96332e89cc7afb20730f8a
+    bytes: 946814
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

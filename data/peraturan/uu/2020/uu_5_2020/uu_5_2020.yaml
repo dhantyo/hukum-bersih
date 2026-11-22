@@ -16,8 +16,8 @@ tanggal_penetapan: '2020-08-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-2020
-source_pdf_url: https://peraturan.go.id/files/uu5-2020bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/143983/uu-no-5-tahun-2020
+source_pdf_url: https://peraturan.bpk.go.id/Download/261612/UU%20Nomor%205%20Tahun%202020.pdf
 relationships:
   amends: []
   amended_by: []
@@ -33,4 +33,33 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_2020_2020-08-05.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7823129f3ef311289f01538579c1fefdedf66f9280155d6da34058513d94b21d
+  ocr: true
 pdf_sha256: 9eabf1b096c980f3e29706004f3b34bb42240b08fd16a958b220675ed2dcb3a2
+tanggal_pengundangan: '2020-08-06'
+tanggal_berlaku: '2020-08-06'
+lembaran_negara: 'LN.2020/NO.188, TLN NO.6544, jdih.setkab.go.id : 4 hlm.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+  - HUBUNGAN INTERNASIONAL / KERJA SAMA INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-2020
+  source_pdf_url: https://peraturan.go.id/files/uu5-2020bt.pdf
+bpk:
+  id: 143983
+  files:
+  - url: https://peraturan.bpk.go.id/Download/261612/UU%20Nomor%205%20Tahun%202020.pdf
+    bpk_file_id: 261612
+    filename: UU Nomor 5 Tahun 2020.pdf
+    sha256: 7823129f3ef311289f01538579c1fefdedf66f9280155d6da34058513d94b21d
+    bytes: 410100
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/261613/UU%20Nomor%205%20Tahun%202020%20-%20Lampiran.pdf
+    bpk_file_id: 261613
+    filename: UU Nomor 5 Tahun 2020 - Lampiran.pdf
+    sha256: f9ddc420e5d1001d644f769b8eb7df3656211a17129329d5de94bdeb91a4dcac
+    bytes: 20542793
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -11,8 +11,8 @@ tanggal_penetapan: '2019-10-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-2019
-source_pdf_url: https://peraturan.go.id/files/uu-no-21-tahun-2019.pdf
+source_url: https://peraturan.bpk.go.id/Details/123687/uu-no-21-tahun-2019
+source_pdf_url: https://peraturan.bpk.go.id/Download/114486/UU%20Nomor%2021%20Tahun%202019.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,5 +28,33 @@ versions:
   date: '2019-10-18'
   date_basis: tanggal_penetapan
   text: uu_21_2019_2019-10-18.txt
-  pasal_count: 10
+  pasal_count: 96
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 371fd829e840cb4eec31cbef9f3c016148aa68ab124daf49b6c2826c1a8fdf54
+  ocr: true
 pdf_sha256: d00bad13914a7be0df6bb9eea97e91b9dd77eff86941dbe20e2610f9a8b6aa25
+tanggal_pengundangan: '2019-10-18'
+tanggal_berlaku: '2019-10-18'
+lembaran_negara: 'LN.2019, No.200, TLN. No.6411, LL. Setneg : 45 Hlm'
+subjek: PERIKANAN DAN KELAUTAN - SUMBER DAYA ALAM
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-2019
+  source_pdf_url: https://peraturan.go.id/files/uu-no-21-tahun-2019.pdf
+bpk:
+  id: 123687
+  files:
+  - url: https://peraturan.bpk.go.id/Download/114486/UU%20Nomor%2021%20Tahun%202019.pdf
+    bpk_file_id: 114486
+    filename: UU Nomor 21 Tahun 2019.pdf
+    sha256: 371fd829e840cb4eec31cbef9f3c016148aa68ab124daf49b6c2826c1a8fdf54
+    bytes: 2958913
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_16_1992
+      citation: UU No. 16 Tahun 1992
+      tentang: Karantina Hewan, Ikan, dan Tumbuhan
+      url: https://peraturan.bpk.go.id/Details/46613/uu-no-16-tahun-1992
+      note: null
+uji_materi: null

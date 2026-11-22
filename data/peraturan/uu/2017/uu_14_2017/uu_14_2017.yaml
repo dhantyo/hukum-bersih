@@ -18,8 +18,8 @@ tanggal_penetapan: '2017-11-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-2017
-source_pdf_url: https://peraturan.go.id/files/uu14-2017bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/64499/uu-no-14-tahun-2017
+source_pdf_url: https://peraturan.bpk.go.id/Download/54714/UU%20Nomor%2014%20Tahun%202017.pdf
 relationships:
   amends: []
   amended_by: []
@@ -35,4 +35,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2017_2017-11-10.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: cbbff64a007a472f6da951a526efaa95aaaed43835b50c665f2e961372f44135
+  ocr: true
 pdf_sha256: b3f74cc527c66b8f3df74f8b97e434337801b9ef84109d08e4ce24d69ce3854b
+tanggal_pengundangan: '2017-11-13'
+tanggal_berlaku: '2017-11-13'
+lembaran_negara: 'LN.2017/NO.232, TLN NO.6137, LL SETNEG : 4 HLM.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-2017
+  source_pdf_url: https://peraturan.go.id/files/uu14-2017bt.pdf
+bpk:
+  id: 64499
+  files:
+  - url: https://peraturan.bpk.go.id/Download/54714/UU%20Nomor%2014%20Tahun%202017.pdf
+    bpk_file_id: 54714
+    filename: UU Nomor 14 Tahun 2017.pdf
+    sha256: cbbff64a007a472f6da951a526efaa95aaaed43835b50c665f2e961372f44135
+    bytes: 611947
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

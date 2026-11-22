@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 13 Tahun 2018 tentang Serah Simpan Karya Cetak Dan Ka
 tentang: Serah Simpan Karya Cetak dan Karya Rekam
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2018-12-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-2018
-source_pdf_url: https://peraturan.go.id/files/uu13-2018bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/99857/uu-no-13-tahun-2018
+source_pdf_url: https://peraturan.bpk.go.id/Download/90567/UU%20Nomor%2013%20Tahun%202018.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_13_2018_2018
+- id: uu_13_2018_2018-12-28
   kind: asli
   source: official
-  date: null
+  date: '2018-12-28'
   date_basis: tanggal_penetapan
-  text: uu_13_2018_2018.txt
+  text: uu_13_2018_2018-12-28.txt
   pasal_count: 36
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b9dba5eb5d327a1e579dadbb31b965ed7dadc54879122ac075d8030efc028726
+  ocr: true
 pdf_sha256: dc92e1b78daf6ed7db6612dd48bcdb20f85b0c2a648c62e32ab94e60e5c3ee22
+tanggal_pengundangan: '2018-12-28'
+tanggal_berlaku: '2018-12-28'
+lembaran_negara: 'LN.2018/NO.265, TLN NO.6291, LL SETNEG : 15 HLM.'
+subjek: ARSIP
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-2018
+  source_pdf_url: https://peraturan.go.id/files/uu13-2018bt.pdf
+bpk:
+  id: 99857
+  files:
+  - url: https://peraturan.bpk.go.id/Download/90567/UU%20Nomor%2013%20Tahun%202018.pdf
+    bpk_file_id: 90567
+    filename: UU Nomor 13 Tahun 2018.pdf
+    sha256: b9dba5eb5d327a1e579dadbb31b965ed7dadc54879122ac075d8030efc028726
+    bytes: 1112231
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_4_1990
+      citation: UU No. 4 Tahun 1990
+      tentang: Serah-Simpan Karya Cetak dan Karya Rekam
+      url: https://peraturan.bpk.go.id/Details/46708/uu-no-4-tahun-1990
+      note: null
+uji_materi: null

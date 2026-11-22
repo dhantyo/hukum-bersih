@@ -17,8 +17,8 @@ tanggal_penetapan: '2020-08-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-2020
-source_pdf_url: https://peraturan.go.id/files/uu4-2020bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/143974/uu-no-4-tahun-2020
+source_pdf_url: https://peraturan.bpk.go.id/Download/261608/UU%20Nomor%204%20Tahun%202020.pdf
 relationships:
   amends: []
   amended_by: []
@@ -34,4 +34,33 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2020_2020-08-05.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1011c344e6f83c7fa3802d0a38828840cb1731e9df54bf05282da02e06f8ded4
+  ocr: true
 pdf_sha256: 0a8c89e144480a3f8aeba74af520a82f04d957a4e030805507c76df66d3c8345
+tanggal_pengundangan: '2020-08-06'
+tanggal_berlaku: '2020-08-06'
+lembaran_negara: 'LN.2020/NO.187, jdih.setkab.go.id : 4 hlm.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+  - HUBUNGAN INTERNASIONAL / KERJA SAMA INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-2020
+  source_pdf_url: https://peraturan.go.id/files/uu4-2020bt.pdf
+bpk:
+  id: 143974
+  files:
+  - url: https://peraturan.bpk.go.id/Download/261608/UU%20Nomor%204%20Tahun%202020.pdf
+    bpk_file_id: 261608
+    filename: UU Nomor 4 Tahun 2020.pdf
+    sha256: 1011c344e6f83c7fa3802d0a38828840cb1731e9df54bf05282da02e06f8ded4
+    bytes: 292236
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/261609/UU%20Nomor%204%20Tahun%202020%20-%20Lampiran.pdf
+    bpk_file_id: 261609
+    filename: UU Nomor 4 Tahun 2020 - Lampiran.pdf
+    sha256: df3374aeb357c2e91f3f942a70e99d15fd27cbdbade60b11ccbe8325890b4bef
+    bytes: 4222617
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

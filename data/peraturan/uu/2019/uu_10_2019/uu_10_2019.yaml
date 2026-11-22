@@ -16,8 +16,8 @@ tanggal_penetapan: '2019-08-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2019
-source_pdf_url: https://peraturan.go.id/files/uu10-2019bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/117019/uu-no-10-tahun-2019
+source_pdf_url: https://peraturan.bpk.go.id/Download/107921/UU%20Nomor%2010%20Tahun%202019.pdf
 relationships:
   amends: []
   amended_by: []
@@ -33,4 +33,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2019_2019-08-01.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c6dd1766ad624fb3c5d21ac05ef4da853deded012e2ddec17aae42aabc977201
+  ocr: true
 pdf_sha256: 84a6feeffae34afb3552362917e62a9e6a88ceff38836c4ae59f92972b815308
+tanggal_pengundangan: '2019-08-01'
+tanggal_berlaku: '2019-08-01'
+lembaran_negara: 'LN.2019/NO.143, TLN NO.6372, SIPUU.SETKAB.GO.ID : 4 HLM.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2019
+  source_pdf_url: https://peraturan.go.id/files/uu10-2019bt.pdf
+bpk:
+  id: 117019
+  files:
+  - url: https://peraturan.bpk.go.id/Download/107921/UU%20Nomor%2010%20Tahun%202019.pdf
+    bpk_file_id: 107921
+    filename: UU Nomor 10 Tahun 2019.pdf
+    sha256: c6dd1766ad624fb3c5d21ac05ef4da853deded012e2ddec17aae42aabc977201
+    bytes: 271535
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/107922/UU%20Nomor%2010%20Tahun%202019%20-%20Lampiran.pdf
+    bpk_file_id: 107922
+    filename: UU Nomor 10 Tahun 2019 - Lampiran.pdf
+    sha256: feeef7a2c333a849186c5bb9410dda03a2f790eae1d792f8f5c54f39c0839588
+    bytes: 12622772
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

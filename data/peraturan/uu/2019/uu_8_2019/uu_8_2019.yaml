@@ -11,8 +11,8 @@ tanggal_penetapan: '2019-04-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-2019
-source_pdf_url: https://peraturan.go.id/files/uu8-2019bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/106346/uu-no-8-tahun-2019
+source_pdf_url: https://peraturan.bpk.go.id/Download/97310/UU%20Nomor%208%20Tahun%202019.pdf
 relationships:
   amends: []
   amended_by:
@@ -31,4 +31,62 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_2019_2019-04-26.txt
   pasal_count: 132
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4a80c5dcdc1b94ae175398e5265539a0c56a9057b449338c3ef026bf12159683
+  ocr: true
 pdf_sha256: 4ba8bede4964802adc9d79340433ab0449fbacd831ac1553bae59c011db57643
+tanggal_pengundangan: '2019-04-29'
+tanggal_berlaku: '2019-04-29'
+lembaran_negara: 'LN.2019/NO.75, TLN NO.6338, LL SETKAB : 63 HLM.'
+subjek: KEAGAMAAN, IBADAH, DAN PENYELENGGARAAN HAJI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-2019
+  source_pdf_url: https://peraturan.go.id/files/uu8-2019bt.pdf
+bpk:
+  id: 106346
+  files:
+  - url: https://peraturan.bpk.go.id/Download/97310/UU%20Nomor%208%20Tahun%202019.pdf
+    bpk_file_id: 97310
+    filename: UU Nomor 8 Tahun 2019.pdf
+    sha256: 4a80c5dcdc1b94ae175398e5265539a0c56a9057b449338c3ef026bf12159683
+    bytes: 3325716
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_14_2025
+      citation: UU No. 14 Tahun 2025
+      tentang: Perubahan Ketiga atas Undang-Undang Nomor 8 Tahun 2019 tentang Ibadah
+        Haji dan Umrah
+      url: https://peraturan.bpk.go.id/Details/331538/uu-no-14-tahun-2025
+      note: null
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_34_2009
+      citation: UU No. 34 Tahun 2009
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2009 tentang Perubahan Atas Undang-Undang Nomor 13 Tahun 2008 tentang Penyelenggaraan
+        Ibadah Haji Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/38774/uu-no-34-tahun-2009
+      note: null
+    - id: uu_13_2008
+      citation: UU No. 13 Tahun 2008
+      tentang: Penyelenggaraan Ibadah Haji
+      url: https://peraturan.bpk.go.id/Details/39044/uu-no-13-tahun-2008
+      note: null
+uji_materi: null

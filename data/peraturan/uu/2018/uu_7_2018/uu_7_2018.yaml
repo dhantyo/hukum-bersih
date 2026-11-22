@@ -13,12 +13,12 @@ tentang: Pengesahan Persetujuan Antara Pemerintah Republik Indonesia dan Pemerin
   In The Field of Defense
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2018-08-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-2018
-source_pdf_url: https://peraturan.go.id/files/uu7-2018bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/90039/uu-no-7-tahun-2018
+source_pdf_url: https://peraturan.bpk.go.id/Download/80917/UU%20Nomor%207%20Tahun%202018.pdf
 relationships:
   amends: []
   amended_by: []
@@ -27,11 +27,33 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_7_2018_2018
+- id: uu_7_2018_2018-08-07
   kind: asli
   source: official
-  date: null
+  date: '2018-08-07'
   date_basis: tanggal_penetapan
-  text: uu_7_2018_2018.txt
+  text: uu_7_2018_2018-08-07.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f53fff60a0a1397d4733a8495e28776abe8b9c19748de8a1dcdcc1f9349dc5c1
+  ocr: true
 pdf_sha256: add8c68ffd6c06b4256426bac7cc6a1b93712f1d3dbb87ad302ff923c074afe9
+tanggal_pengundangan: '2018-08-08'
+tanggal_berlaku: '2018-08-08'
+lembaran_negara: 'LN.2018/NO.129, TLN NO.6237, LL SETKAB : 4 HLM.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-2018
+  source_pdf_url: https://peraturan.go.id/files/uu7-2018bt.pdf
+bpk:
+  id: 90039
+  files:
+  - url: https://peraturan.bpk.go.id/Download/80917/UU%20Nomor%207%20Tahun%202018.pdf
+    bpk_file_id: 80917
+    filename: UU Nomor 7 Tahun 2018.pdf
+    sha256: f53fff60a0a1397d4733a8495e28776abe8b9c19748de8a1dcdcc1f9349dc5c1
+    bytes: 362097
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

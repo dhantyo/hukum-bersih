@@ -11,8 +11,8 @@ tanggal_penetapan: '2019-10-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: Joko Widodo
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-24-tahun-2019
-source_pdf_url: https://peraturan.go.id/files/uu24-2019bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/123686/uu-no-24-tahun-2019
+source_pdf_url: https://peraturan.bpk.go.id/Download/114484/UU%20Nomor%2024%20Tahun%202019.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_2019_2019-10-24.txt
   pasal_count: 34
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d60a0802e270fd2fd4bc8e8f374923e80d41d2f619a4cb30b69931f33ad024c5
 pdf_sha256: a7949ab752c7ea1915dd216111127ce95e0a34fc09ebdcde176e175ef03aa178
+tanggal_pengundangan: '2019-10-24'
+tanggal_berlaku: '2019-10-24'
+lembaran_negara: 'LN.2019, No.212, TLN.6414, peraturan.go.id : 13 Hlm'
+subjek: PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-24-tahun-2019
+  source_pdf_url: https://peraturan.go.id/files/uu24-2019bt.pdf
+bpk:
+  id: 123686
+  files:
+  - url: https://peraturan.bpk.go.id/Download/114484/UU%20Nomor%2024%20Tahun%202019.pdf
+    bpk_file_id: 114484
+    filename: UU Nomor 24 Tahun 2019.pdf
+    sha256: d60a0802e270fd2fd4bc8e8f374923e80d41d2f619a4cb30b69931f33ad024c5
+    bytes: 195722
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/114485/UU%20Nomor%2024%20Tahun%202019_Penj.pdf
+    bpk_file_id: 114485
+    filename: UU Nomor 24 Tahun 2019_Penj.pdf
+    sha256: 4f98dd23c858d8555c78ff73b969ab91ebc13f3697c39e7ac7ad0eb2f3bbd9e4
+    bytes: 169241
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -12,8 +12,8 @@ tanggal_penetapan: '2017-11-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-2017
-source_pdf_url: null
+source_url: https://peraturan.bpk.go.id/Details/64502/uu-no-15-tahun-2017
+source_pdf_url: https://peraturan.bpk.go.id/Download/54717/UU%20Nomor%2015%20Tahun%202017.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,4 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_15_2017_2017-11-20
+  kind: asli
+  source: official
+  date: '2017-11-20'
+  date_basis: tanggal_penetapan
+  text: uu_15_2017_2017-11-20.txt
+  pasal_count: 46
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 51697e8f4821175137c0264b576e743e0ee696f68818281cdb35499388890279
+  ocr: true
+tanggal_pengundangan: '2017-11-22'
+tanggal_berlaku: '2018-01-01'
+lembaran_negara: 'LN.2017/NO.233, TLN NO.6138, LL SETNEG : 46 HLM.'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-2017
+  source_pdf_url: null
+bpk:
+  id: 64502
+  files:
+  - url: https://peraturan.bpk.go.id/Download/54717/UU%20Nomor%2015%20Tahun%202017.pdf
+    bpk_file_id: 54717
+    filename: UU Nomor 15 Tahun 2017.pdf
+    sha256: 51697e8f4821175137c0264b576e743e0ee696f68818281cdb35499388890279
+    bytes: 5494222
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

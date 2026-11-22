@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 12 Tahun 2018 tentang Anggaran Pendapatan Dan Belanja
 tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2019
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2018-11-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-2018
-source_pdf_url: https://peraturan.go.id/files/uu12-2018bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/99211/uu-no-12-tahun-2018
+source_pdf_url: https://peraturan.bpk.go.id/Download/89912/UU%20Nomor%2012%20Tahun%202018.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_12_2018_2018
+- id: uu_12_2018_2018-11-22
   kind: asli
   source: official
-  date: null
+  date: '2018-11-22'
   date_basis: tanggal_penetapan
-  text: uu_12_2018_2018.txt
+  text: uu_12_2018_2018-11-22.txt
   pasal_count: 47
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 582f5e84dd7d9885fdff9699b97cfe3bde64a20180efdda733e998a0f93d4250
+  ocr: true
 pdf_sha256: fc2f59f67a85e4e6c39045575aa25761dfa3dab32699e678e86cb124f133e6c4
+tanggal_pengundangan: '2018-11-23'
+lembaran_negara: 'LN.2018/NO.223, TLN NO.6263, LL SETNEG : 47 HLM.'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-2018
+  source_pdf_url: https://peraturan.go.id/files/uu12-2018bt.pdf
+bpk:
+  id: 99211
+  files:
+  - url: https://peraturan.bpk.go.id/Download/89912/UU%20Nomor%2012%20Tahun%202018.pdf
+    bpk_file_id: 89912
+    filename: UU Nomor 12 Tahun 2018.pdf
+    sha256: 582f5e84dd7d9885fdff9699b97cfe3bde64a20180efdda733e998a0f93d4250
+    bytes: 4275437
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

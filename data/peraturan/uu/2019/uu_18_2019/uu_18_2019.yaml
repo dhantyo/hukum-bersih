@@ -11,8 +11,8 @@ tanggal_penetapan: '2019-10-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-2019
-source_pdf_url: https://peraturan.go.id/files/uu18-2019bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/122743/uu-no-18-tahun-2019
+source_pdf_url: https://peraturan.bpk.go.id/Download/113526/UU%20Nomor%2018%20Tahun%202019.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2019_2019-10-15.txt
   pasal_count: 55
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 439ee4c167e0a409546abf3e057d6fd60b025b5a77646d8e076b89faaa62c369
+  ocr: true
 pdf_sha256: 8388914f14ceb4a86658e8b5c1d06b27f5f8fd4c0b2867728a5d72b22e804af7
+tanggal_pengundangan: '2019-10-16'
+tanggal_berlaku: '2019-10-16'
+lembaran_negara: 'LN.2019/NO.191, TLN NO.6406, JDIH.SETNEG.GO.ID : 27 HLM.'
+subjek: KEAGAMAAN, IBADAH, DAN PENYELENGGARAAN HAJI - PENDIDIKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-2019
+  source_pdf_url: https://peraturan.go.id/files/uu18-2019bt.pdf
+bpk:
+  id: 122743
+  files:
+  - url: https://peraturan.bpk.go.id/Download/113526/UU%20Nomor%2018%20Tahun%202019.pdf
+    bpk_file_id: 113526
+    filename: UU Nomor 18 Tahun 2019.pdf
+    sha256: 439ee4c167e0a409546abf3e057d6fd60b025b5a77646d8e076b89faaa62c369
+    bytes: 2008448
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
