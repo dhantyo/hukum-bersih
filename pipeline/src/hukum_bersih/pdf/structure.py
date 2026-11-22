@@ -13,7 +13,7 @@ from collections.abc import Sequence
 from dataclasses import dataclass, field
 from pathlib import Path
 
-PARSER_VERSION = 11  # 11: OCR specks after a Pasal heading ("Pasal 4 :", UU 29/2024); parallel OCR (same words). 10: OCR speck before a Pasal heading ("' Pasal 8", UU 135/2024). 9: browser print headers/footers dropped; separate Penjelasan PDF read (UU 19/2003). 8: v7 dropped a Penjelasan after a copy certification (UU 2/2025): fixed;
+PARSER_VERSION = 12  # 12: OCR letters for digits in heading numbers ("Pasal S1"), spaced marks ("Pasal 84 ,"); amending Penjelasan: Angka above Ayat (UU 11, 12, 13/2022). 11: OCR specks after a Pasal heading ("Pasal 4 :", UU 29/2024); parallel OCR (same words). 10: OCR speck before a Pasal heading ("' Pasal 8", UU 135/2024). 9: browser print headers/footers dropped; separate Penjelasan PDF read (UU 19/2003). 8: v7 dropped a Penjelasan after a copy certification (UU 2/2025): fixed;
 #                    Penjelasan of amending laws (Pasal I/II), OCR '1. UMUM'.
 #                   7: amending laws keep quoted articles in Pasal I, white (hidden)
 #                    text dropped, salinan certification left out, MEMORI PENJELASAN;
@@ -144,11 +144,15 @@ def normalise(lines: list[str]) -> list[str]:
         if out and out[-1] in ("Pasal", "PASAL") and re.match(r"^\d+[A-Z]?\.?$", line):
             out[-1] = f"Pasal {line.rstrip('.')}"
             continue
-        if m := re.match(r"^[^\w\s(]{0,2}\s*((?:PASAL|Pasal)\s*[0-9IVXLC]+[A-Z]?)\s*[\'‘’`´.|:]{0,2}$", line):
+        if m := re.match(r"^((?:PASAL|Pasal)\s*)([0-9SOolI|]*[0-9][0-9SOolI|]*)([A-Z]?\.?)$", line):
+            # OCR's letters for digits in a heading number: "Pasal S1" (51, UU 12/2022), "Pasal 1lA"
+            line = m[1] + m[2].translate(str.maketrans("SOolI|", "500111")) + m[3]
+        if m := re.match(r"^[^\w\s(]{0,2}\s*((?:PASAL|Pasal)\s*[0-9IVXLC]+[A-Z]?)(?:\s*[\'‘’`´.|:]{1,2}|\s+[^\w\s]{1,2})?$", line):
             line = m[1]                      # OCR specks around a heading: "' Pasal 8" (UU 135/2024),
             #                                  "— Pasal 7" (UU 29/2024),
-            #                                  "Pasal 4 :" (UU 29/2024); not "," or ";", which end a
-            #                                  reference broken onto its own line ("Pasal 5,")
+            #                                  "Pasal 4 :" (UU 29/2024), "Pasal 84 ," (UU 11/2022);
+            #                                  not "Pasal 5," or "Pasal 5;" without a space: a
+            #                                  reference broken onto its own line
         if m := HEAD_DOT_RE.match(line):
             line = m[1]
         if m := re.match(r"^(?:PASAL|Pasal)\s*(\d+[A-Z]?|[IVXLC]+)$", line):   # OCR: "PasalI"
@@ -272,6 +276,9 @@ class Parser:
         return "PERUBAHAN" in title and bool(re.match(
             r"^(Beberapa ketentuan|Ketentuan .{0,80}diubah|Undang-Undang Nomor .{0,200}diubah)", nxt))
 
+    def had_penjelasan(self) -> bool:
+        return any(b.kind == "penjelasan" for b in self.doc.blocks)
+
     def title_follows(self, i: int) -> bool:
         nxt = self.lines[i + 1] if i + 1 < len(self.lines) else ""
         return bool(nxt) and is_caps(nxt) and not PASAL_RE.match(nxt)
@@ -305,7 +312,10 @@ class Parser:
             self.in_lampiran = True
             self.emit(Block("lampiran", label=line))
             return 1
-        if self.in_lampiran and not PENJELASAN_RE.match(line):
+        # a Penjelasan heading ends a Lampiran only if the law's Penjelasan is still to come; after
+        # it, the heading is part of the Lampiran (UU 13/2022's drafting guide quotes example
+        # laws: "PENJELASAN ATAS UNDANG-UNDANG … NOMOR 7 TAHUN 2021")
+        if self.in_lampiran and not (PENJELASAN_RE.match(line) and not self.had_penjelasan()):
             if re.match(r"^Salinan sesuai dengan aslinya", line, re.IGNORECASE):
                 self.in_salinan, self.salinan_lines = True, 0
                 return 1
