@@ -11,8 +11,8 @@ tanggal_penetapan: '2007-04-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-23-tahun-2007
-source_pdf_url: https://peraturan.go.id/files/uu23-2007.pdf
+source_url: https://peraturan.bpk.go.id/Details/39896/uu-no-23-tahun-2007
+source_pdf_url: https://peraturan.bpk.go.id/Download/29487/UU%20Nomor%2023%20Tahun%202007.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,48 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_2007_2007-04-25.txt
   pasal_count: 218
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ad6415b15c38a18992ebe5a31dbb366879da686645e75504dce97e5ae919cd9f
 pdf_sha256: 962327f9326e1c0b52147143682b2beb9bf6703a6494da4c91bde4d4b55c76d2
+tanggal_pengundangan: '2007-04-25'
+tanggal_berlaku: '2007-04-25'
+lembaran_negara: 'LN.2007/NO.65, TLN NO.4722, LL SETNEG : 70 HLM'
+subjek: TRANSPORTASI DARAT / LAUT / UDARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-23-tahun-2007
+  source_pdf_url: https://peraturan.go.id/files/uu23-2007.pdf
+bpk:
+  id: 39896
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29487/UU%20Nomor%2023%20Tahun%202007.pdf
+    bpk_file_id: 29487
+    filename: UU Nomor 23 Tahun 2007.pdf
+    sha256: ad6415b15c38a18992ebe5a31dbb366879da686645e75504dce97e5ae919cd9f
+    bytes: 144752
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_13_1992
+      citation: UU No. 13 Tahun 1992
+      tentang: Perkeretaapian
+      url: https://peraturan.bpk.go.id/Details/46605/uu-no-13-tahun-1992
+      note: null
+uji_materi: null

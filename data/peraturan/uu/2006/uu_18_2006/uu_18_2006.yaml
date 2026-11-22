@@ -12,8 +12,8 @@ tanggal_penetapan: '2006-11-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-2006
-source_pdf_url: https://peraturan.go.id/files/uu18-2006.pdf
+source_url: https://peraturan.bpk.go.id/Details/40191/uu-no-18-tahun-2006
+source_pdf_url: https://peraturan.bpk.go.id/Download/29826/UU%20Nomor%2018%20Tahun%202006.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,3 +30,35 @@ versions:
   text: uu_18_2006_2006-11-15.txt
   pasal_count: 18
 pdf_sha256: c27e71b6ce37784ba8b16da00e2d9af89a2a6c232560111dfcebf211d4e3a16a
+tanggal_pengundangan: '2006-11-15'
+tanggal_berlaku: '2007-01-01'
+lembaran_negara: 'LN.2006/NO.94, TLN NO.4662, LL SETNEG : 11 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-2006
+  source_pdf_url: https://peraturan.go.id/files/uu18-2006.pdf
+bpk:
+  id: 40191
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29826/UU%20Nomor%2018%20Tahun%202006.pdf
+    bpk_file_id: 29826
+    filename: UU Nomor 18 Tahun 2006.pdf
+    sha256: 28efd1e1d276ed3baa21612c711493e995aaa38635b820c6dfd6923213b3c264
+    bytes: 138790
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_41_2007
+      citation: UU No. 41 Tahun 2007
+      tentang: Perubahan atas Undang-Undang Nomor 18 Tahun 2006 tentang Anggaran Pendapatan
+        dan Belanja Negara Tahun Anggaran 2007
+      url: https://peraturan.bpk.go.id/Details/39966/uu-no-41-tahun-2007
+      note: null
+uji_materi:
+- putusan: 026/PUU-IV/2006
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/124/putusan_sidang_Putusan026PUU-IV06ttgAPBN2007tgl010507.pdf
+  amar: Undang-Undang Republik Indonesia Nomor 18 Tahun 2006 tentang Anggaran Pendapatan
+    dan Belanja Negara Tahun Anggaran 2007 sepanjang menyangkut anggaran pendidikan
+    sebesar 11,8% (sebelas koma delapan persen) sebagai batas tertinggi, bertentangan
+    dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.
+reparse_error: 'v12: new text has 8892 words, stored text 33186'

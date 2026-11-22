@@ -12,8 +12,8 @@ tanggal_penetapan: '2007-04-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-2007
-source_pdf_url: https://peraturan.go.id/files/uu21-2007.pdf
+source_url: https://peraturan.bpk.go.id/Details/39849/uu-no-21-tahun-2007
+source_pdf_url: https://peraturan.bpk.go.id/Download/29441/UU%20Nomor%2021%20Tahun%202007.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,50 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2007_2007-04-19.txt
   pasal_count: 67
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3e880d69f1f408a4e58f5bcf0b64db9a7d771c804e8e7489a626de20d41c7bc2
 pdf_sha256: 999abc966f7b335f0212b451f45af13923b0e613d496c892fc83b046cf0ea831
+tanggal_pengundangan: '2007-04-19'
+tanggal_berlaku: '2007-04-19'
+lembaran_negara: 'LN.2007/NO.58, TLN NO.4720, LL SETNEG : 24 HLM'
+subjek: HAK ASASI MANUSIA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-2007
+  source_pdf_url: https://peraturan.go.id/files/uu21-2007.pdf
+bpk:
+  id: 39849
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29441/UU%20Nomor%2021%20Tahun%202007.pdf
+    bpk_file_id: 29441
+    filename: UU Nomor 21 Tahun 2007.pdf
+    sha256: 3e880d69f1f408a4e58f5bcf0b64db9a7d771c804e8e7489a626de20d41c7bc2
+    bytes: 57104
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: Pasal 2 Undang-Undang Nomor 21 Tahun 2007
+    Mencabut:
+    - id: uu_27_1999
+      citation: UU No. 27 Tahun 1999
+      tentang: Perubahan Kitab-Kitab Undang-Undang Hukum Pidana yang Berkaitan dengan
+        Kejahatan Terhadap Keamanan Negara
+      url: https://peraturan.bpk.go.id/Details/45342/uu-no-27-tahun-1999
+      note: null
+    - id: uu_73_1958
+      citation: UU No. 73 Tahun 1958
+      tentang: Menyatakan Berlakunya Undang-Undang No. 1 Tahun 1946 Republik Indonesia
+        Tentang Peraturan Hukum Pidana Untuk Seluruh Wilayah Republik Indonesia Dan
+        Mengubah Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/52862/uu-no-73-tahun-1958
+      note: null
+    - id: uu_1_1946
+      citation: UU No. 1 Tahun 1946
+      tentang: Peraturan tentang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/25029/uu-no-1-tahun-1946
+      note: null
+uji_materi: null

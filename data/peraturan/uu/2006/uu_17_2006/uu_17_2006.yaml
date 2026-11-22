@@ -11,8 +11,8 @@ tanggal_penetapan: '2006-11-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-2006
-source_pdf_url: https://peraturan.go.id/files/uu17-2006.pdf
+source_url: https://peraturan.bpk.go.id/Details/40189/uu-no-17-tahun-2006
+source_pdf_url: https://peraturan.bpk.go.id/Download/29824/UU%20Nomor%2017%20Tahun%202006.pdf
 relationships:
   amends: []
   amended_by: []
@@ -27,5 +27,32 @@ versions:
   date: '2006-11-15'
   date_basis: tanggal_penetapan
   text: uu_17_2006_2006-11-15.txt
-  pasal_count: 19
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b4d8e60965e66151e08fbcabcbe4e0cb56c296f37fc3d61e0d88732072416cc5
 pdf_sha256: b9f3bcd2c8d5d527a1192bdcf63d02c05ec8d61a37bc23420d9bbc64e1875fea
+tanggal_pengundangan: '2006-11-15'
+tanggal_berlaku: '2006-11-15'
+lembaran_negara: 'LN.2006/NO.93, TLN NO.4661, LL SETNEG : 60 HLM'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-2006
+  source_pdf_url: https://peraturan.go.id/files/uu17-2006.pdf
+bpk:
+  id: 40189
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29824/UU%20Nomor%2017%20Tahun%202006.pdf
+    bpk_file_id: 29824
+    filename: UU Nomor 17 Tahun 2006.pdf
+    sha256: b4d8e60965e66151e08fbcabcbe4e0cb56c296f37fc3d61e0d88732072416cc5
+    bytes: 162281
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_10_1995
+      citation: UU No. 10 Tahun 1995
+      tentang: Kepabeanan
+      url: https://peraturan.bpk.go.id/Details/46201/uu-no-10-tahun-1995
+      note: null
+uji_materi: null

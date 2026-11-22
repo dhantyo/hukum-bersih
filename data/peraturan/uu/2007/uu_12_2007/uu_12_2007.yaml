@@ -12,8 +12,8 @@ tanggal_penetapan: '2007-01-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-2007
-source_pdf_url: https://peraturan.go.id/files/uu12-2007.pdf
+source_url: https://peraturan.bpk.go.id/Details/39820/uu-no-12-tahun-2007
+source_pdf_url: https://peraturan.bpk.go.id/Download/29409/UU%20Nomor%2012%20Tahun%202007.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,33 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2007_2007-01-02.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 47385619d7713dafddea128db6775a99724945d5ac2685cf76023903557731d8
+  extra_pdf_sha256:
+  - b04aa37a05bc2f6e1d996e0b875bc177cce042a4ff5641c94303994f5a58e227
 pdf_sha256: 73722a81aa5cc8a7f3fea19079e769e6e8541e3988591948ee6cf90c579ce215
+tanggal_pengundangan: '2007-01-02'
+tanggal_berlaku: '2007-01-02'
+lembaran_negara: 'LN.2007/NO.14, TLN NO.4688, LL SETNEG : 16 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-2007
+  source_pdf_url: https://peraturan.go.id/files/uu12-2007.pdf
+bpk:
+  id: 39820
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29409/UU%20Nomor%2012%20Tahun%202007.pdf
+    bpk_file_id: 29409
+    filename: UU Nomor 12 Tahun 2007.pdf
+    sha256: 47385619d7713dafddea128db6775a99724945d5ac2685cf76023903557731d8
+    bytes: 23013
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/29410/UU%20Nomor%2012%20Tahun%202007_penjelasan.pdf
+    bpk_file_id: 29410
+    filename: UU Nomor 12 Tahun 2007_penjelasan.pdf
+    sha256: b04aa37a05bc2f6e1d996e0b875bc177cce042a4ff5641c94303994f5a58e227
+    bytes: 10802
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

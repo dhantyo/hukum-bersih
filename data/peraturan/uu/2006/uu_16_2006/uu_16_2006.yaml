@@ -12,8 +12,8 @@ tanggal_penetapan: '2006-11-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-2006
-source_pdf_url: https://peraturan.go.id/files/uu16-2006.pdf
+source_url: https://peraturan.bpk.go.id/Details/40187/uu-no-16-tahun-2006
+source_pdf_url: https://peraturan.bpk.go.id/Download/29822/UU%20Nomor%2016%20Tahun%202006.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2006_2006-11-15.txt
   pasal_count: 41
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 44c2add8bb066f75283180d019bbe2f2acf3d936d8ff72afb8594a34c6ad1e1f
 pdf_sha256: e2f47a41c5772942822525f839fcdcce6a2369c0f5c50616d021a6256b915eba
+tanggal_pengundangan: '2006-11-15'
+tanggal_berlaku: '2006-11-15'
+lembaran_negara: 'LN.2006/NO.92, TLN NO.4660, LL SETNEG : 26 HLM'
+subjek: KEHUTANAN DAN PERKEBUNAN - PANGAN, PERTANIAN DAN PETERNAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-2006
+  source_pdf_url: https://peraturan.go.id/files/uu16-2006.pdf
+bpk:
+  id: 40187
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29822/UU%20Nomor%2016%20Tahun%202006.pdf
+    bpk_file_id: 29822
+    filename: UU Nomor 16 Tahun 2006.pdf
+    sha256: 44c2add8bb066f75283180d019bbe2f2acf3d936d8ff72afb8594a34c6ad1e1f
+    bytes: 55703
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

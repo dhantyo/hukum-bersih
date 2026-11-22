@@ -11,8 +11,8 @@ tanggal_penetapan: '2007-04-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-26-tahun-2007
-source_pdf_url: https://peraturan.go.id/files/UU-26-2007.pdf
+source_url: https://peraturan.bpk.go.id/Details/39908/uu-no-26-tahun-2007
+source_pdf_url: https://peraturan.bpk.go.id/Download/29499/UU%20Nomor%2026%20Tahun%202007.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,48 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_26_2007_2007-04-26.txt
   pasal_count: 80
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 051e8df5af03d5e3e2983b93e6deef5b703549976e71a32a5acb60c27ccdc5ad
 pdf_sha256: e1df5d663d7eb0d8a3bc2d4dc65cfdf0787c7eff91faddc1984333ac1093bd14
+tanggal_pengundangan: '2007-04-26'
+tanggal_berlaku: '2007-04-26'
+lembaran_negara: 'LN.2007/NO.68, TLN NO.4725, LL SETNEG : 50 HLM'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-26-tahun-2007
+  source_pdf_url: https://peraturan.go.id/files/UU-26-2007.pdf
+bpk:
+  id: 39908
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29499/UU%20Nomor%2026%20Tahun%202007.pdf
+    bpk_file_id: 29499
+    filename: UU Nomor 26 Tahun 2007.pdf
+    sha256: 051e8df5af03d5e3e2983b93e6deef5b703549976e71a32a5acb60c27ccdc5ad
+    bytes: 152380
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: uu_24_1992
+      citation: UU No. 24 Tahun 1992
+      tentang: Penataan Ruang
+      url: https://peraturan.bpk.go.id/Details/46648/uu-no-24-tahun-1992
+      note: null
+uji_materi: null

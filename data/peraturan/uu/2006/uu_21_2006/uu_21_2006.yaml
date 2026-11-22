@@ -12,23 +12,18 @@ tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH RI DAN PEMERINTAH REPUBLIK IND
   OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT OF THE REPUBLIC OF INDIA ON COOPERATIVE
   ACTIVITIES IN THE FIELD OF DEFENCE)
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 67 Tahun 2024 Tentang Pengesahan
-  Persetujuan Antara Pemerintah Republik Indonesia dan Pemerintah Republik India Mengenai
-  Kerja Sama dalam Bidang Pertahanan (agreement Between The Government of The Republic
-  of Indonesia and The Government of The Republic of India Concerning Cooperation
-  In The Field of Defence)'
+status: tidak_berlaku
 tanggal_penetapan: '2006-12-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-2006
-source_pdf_url: https://peraturan.go.id/files/uu21-2006.pdf
+source_url: https://peraturan.bpk.go.id/Details/40199/uu-no-21-tahun-2006
+source_pdf_url: https://peraturan.bpk.go.id/Download/29834/UU%20Nomor%2021%20Tahun%202006.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_67_2024
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -39,4 +34,34 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2006_2006-12-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d5bbc3833d906f85250718dbff24ccded83661f58e875c3d3c6112f3b17684f3
 pdf_sha256: fea54220a1660c770f4b4fa16e8c826ae96fd59b4b285bc36cc984ff338ab0f2
+tanggal_pengundangan: '2006-12-29'
+tanggal_berlaku: '2006-12-29'
+lembaran_negara: 'LN.2006/NO.122, TLN NO.4672, LL SETNEG : 3 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-2006
+  source_pdf_url: https://peraturan.go.id/files/uu21-2006.pdf
+bpk:
+  id: 40199
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29834/UU%20Nomor%2021%20Tahun%202006.pdf
+    bpk_file_id: 29834
+    filename: UU Nomor 21 Tahun 2006.pdf
+    sha256: d5bbc3833d906f85250718dbff24ccded83661f58e875c3d3c6112f3b17684f3
+    bytes: 11048
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_67_2024
+      citation: UU No. 67 Tahun 2024
+      tentang: Pengesahan Persetujuan antara Pemerintah Republik Indonesia dan Pemerintah
+        Republik India mengenai Kerja Sama dalam Bidang Pertahanan (Agreement between
+        the Government of the Republic of Indonesia and the Government of the Republic
+        of India concerning Cooperation in the Field of Defence)
+      url: https://peraturan.bpk.go.id/Details/306536/uu-no-67-tahun-2024
+      note: null
+uji_materi: null

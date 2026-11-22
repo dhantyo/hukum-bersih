@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 36 Tahun 2007 tentang Pembentukan Kabupaten Manggarai
 tentang: PEMBENTUKAN KABUPATEN MANGGARAI TIMUR DI PROVINSI NUSA TENGGARA TIMUR
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2007-08-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-36-tahun-2007
-source_pdf_url: https://peraturan.go.id/files/uu36-2007.pdf
+source_url: https://peraturan.bpk.go.id/Details/39952/uu-no-36-tahun-2007
+source_pdf_url: https://peraturan.bpk.go.id/Download/29549/UU%20Nomor%2036%20Tahun%202007.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,29 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_36_2007_2007
+- id: uu_36_2007_2007-08-10
   kind: asli
   source: official
-  date: null
+  date: '2007-08-10'
   date_basis: tanggal_penetapan
-  text: uu_36_2007_2007.txt
+  text: uu_36_2007_2007-08-10.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2054fe35cdb62dd93172725eeae4f8166c12a460b6ce621ea9aa9961ce0ea9a0
 pdf_sha256: ca155f437d7dc9713c027c2fe5ad09c727d91cc06c2650a01831b87b4e34bf43
+lembaran_negara: 'LL SETNEG : 17 HLM'
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-36-tahun-2007
+  source_pdf_url: https://peraturan.go.id/files/uu36-2007.pdf
+bpk:
+  id: 39952
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29549/UU%20Nomor%2036%20Tahun%202007.pdf
+    bpk_file_id: 29549
+    filename: UU Nomor 36 Tahun 2007.pdf
+    sha256: 2054fe35cdb62dd93172725eeae4f8166c12a460b6ce621ea9aa9961ce0ea9a0
+    bytes: 168260
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

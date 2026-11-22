@@ -13,8 +13,8 @@ tanggal_penetapan: '2006-10-09'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-2006
-source_pdf_url: https://peraturan.go.id/files/uu14-2006.pdf
+source_url: https://peraturan.bpk.go.id/Details/40183/uu-no-14-tahun-2006
+source_pdf_url: https://peraturan.bpk.go.id/Download/29818/UU%20Nomor%2014%20Tahun%202006.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,5 +29,32 @@ versions:
   date: '2006-10-09'
   date_basis: tanggal_penetapan
   text: uu_14_2006_2006-10-09.txt
-  pasal_count: 5
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2dc6c326fd3ed06578790460801d7d1a2760723b902d84a63cd6b7b914377038
 pdf_sha256: 688602325065f9af60867405f79097ccfc964c1c47ad0db3d904542804092cc1
+tanggal_pengundangan: '2006-10-09'
+tanggal_berlaku: '2006-10-09'
+lembaran_negara: 'LN.2006/NO.84, TLN NO.4653, LL SETNEG : 10 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-2006
+  source_pdf_url: https://peraturan.go.id/files/uu14-2006.pdf
+bpk:
+  id: 40183
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29818/UU%20Nomor%2014%20Tahun%202006.pdf
+    bpk_file_id: 29818
+    filename: UU Nomor 14 Tahun 2006.pdf
+    sha256: 2dc6c326fd3ed06578790460801d7d1a2760723b902d84a63cd6b7b914377038
+    bytes: 55102
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_13_2005
+      citation: UU No. 13 Tahun 2005
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2006
+      url: https://peraturan.bpk.go.id/Details/40264/uu-no-13-tahun-2005
+      note: null
+uji_materi: null

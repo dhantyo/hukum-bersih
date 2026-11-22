@@ -11,8 +11,8 @@ tanggal_penetapan: '2006-10-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-2006
-source_pdf_url: https://peraturan.go.id/files/uu15-2006.pdf
+source_url: https://peraturan.bpk.go.id/Details/40184/uu-no-15-tahun-2006
+source_pdf_url: https://peraturan.bpk.go.id/Download/29819/UU%20Nomor%2015%20Tahun%202006.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2006_2006-10-30.txt
   pasal_count: 40
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 431e3a2a8199cea1e268b122d5fd3ff4baa8b00b5f07050f8da8d6a68366e62d
 pdf_sha256: 30a2c42056e91e2174e8206779b5b6051fa09bfc2ae3fe5aec7b3efed383014b
+tanggal_pengundangan: '2006-10-30'
+tanggal_berlaku: '2006-10-30'
+lembaran_negara: 'LN.2006/NO.85, TLN NO.4654, LL SETNEG : 23 HLM'
+subjek: PEMBENTUKAN, PERUBAHAN, DAN PEMBUBARAN KOMISI / KOMITE / BADAN / DEWAN / STAF
+  KHUSUS / TIM / PANITIA - DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-2006
+  source_pdf_url: https://peraturan.go.id/files/uu15-2006.pdf
+bpk:
+  id: 40184
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29819/UU%20Nomor%2015%20Tahun%202006.pdf
+    bpk_file_id: 29819
+    filename: UU Nomor 15 Tahun 2006.pdf
+    sha256: 431e3a2a8199cea1e268b122d5fd3ff4baa8b00b5f07050f8da8d6a68366e62d
+    bytes: 48757
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_5_1973
+      citation: UU No. 5 Tahun 1973
+      tentang: Badan Pemeriksa Keuangan
+      url: https://peraturan.bpk.go.id/Details/47432/uu-no-5-tahun-1973
+      note: null
+uji_materi:
+- putusan: 13/PUU-XI/2013
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/36/13%20PUU%202013-BPK-telah%20ucap%2010%20September%202013.pdf
+  amar: a. Pasal 22 ayat (1) sepanjang frasa "penggantian antarwaktu," b. Pasal 22
+    ayat (4) dan Pasal 22 ayat (5) Undang-Undang Nomor 15 Tahun 2006 tentang Badan
+    Pemeriksa Keuangan bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai
+    kekuatan hukum mengikat.

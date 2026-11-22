@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 34 Tahun 2007 tentang Pembentukan Kabupaten Tana Tidu
 tentang: PEMBENTUKAN KABUPATEN TANA TIDUNG DI PROVINSI KALIMANTAN TIMUR
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2007-08-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-34-tahun-2007
-source_pdf_url: https://peraturan.go.id/files/uu34-2007.pdf
+source_url: https://peraturan.bpk.go.id/Details/39947/uu-no-34-tahun-2007
+source_pdf_url: https://peraturan.bpk.go.id/Download/29543/UU%20Nomor%2034%20Tahun%202007.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,29 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_34_2007_2007
+- id: uu_34_2007_2007-08-10
   kind: asli
   source: official
-  date: null
+  date: '2007-08-10'
   date_basis: tanggal_penetapan
-  text: uu_34_2007_2007.txt
+  text: uu_34_2007_2007-08-10.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5a02625d61cefb4642782124253522ca2345afcb92f6cd269e1a42af234ff495
 pdf_sha256: 13e090756c5d3bc5c6ce02edca010242dd847469ba6720b86f0d785f05ad188b
+lembaran_negara: 'LN.2007/NO.100, TLN NO.4750, LL SETNEG : 18 HLM'
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-34-tahun-2007
+  source_pdf_url: https://peraturan.go.id/files/uu34-2007.pdf
+bpk:
+  id: 39947
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29543/UU%20Nomor%2034%20Tahun%202007.pdf
+    bpk_file_id: 29543
+    filename: UU Nomor 34 Tahun 2007.pdf
+    sha256: 5a02625d61cefb4642782124253522ca2345afcb92f6cd269e1a42af234ff495
+    bytes: 163937
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

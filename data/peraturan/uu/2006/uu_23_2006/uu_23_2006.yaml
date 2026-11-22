@@ -11,8 +11,8 @@ tanggal_penetapan: '2006-12-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-23-tahun-2006
-source_pdf_url: https://peraturan.go.id/files/uu23-2006.pdf
+source_url: https://peraturan.bpk.go.id/Details/40202/uu-no-23-tahun-2006
+source_pdf_url: https://peraturan.bpk.go.id/Download/29837/UU%20Nomor%2023%20Tahun%202006.pdf
 relationships:
   amends: []
   amended_by:
@@ -29,4 +29,44 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_2006_2006-12-29.txt
   pasal_count: 107
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 145ff131b8b07316325c2a97a6a28fe37562ed99bccb23232361760033938866
 pdf_sha256: 0a8c68d2fc7b4ce67a5ce21d33e037e89d5c1e14ee28e1f74c67fedb8cc2dfe8
+tanggal_pengundangan: '2006-12-29'
+tanggal_berlaku: '2006-12-29'
+lembaran_negara: 'LN.2006/NO.124, TLN NO.4674, LL SETNEG : 52 HLM'
+subjek: KEPENDUDUKAN DAN PERKAWINAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-23-tahun-2006
+  source_pdf_url: https://peraturan.go.id/files/uu23-2006.pdf
+bpk:
+  id: 40202
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29837/UU%20Nomor%2023%20Tahun%202006.pdf
+    bpk_file_id: 29837
+    filename: UU Nomor 23 Tahun 2006.pdf
+    sha256: 145ff131b8b07316325c2a97a6a28fe37562ed99bccb23232361760033938866
+    bytes: 110488
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_24_2013
+      citation: UU No. 24 Tahun 2013
+      tentang: Perubahan atas Undang-Undang Nomor 23 Tahun 2006 tentang Administrasi
+        Kependudukan
+      url: https://peraturan.bpk.go.id/Details/38985/uu-no-24-tahun-2013
+      note: null
+    Mencabut:
+    - id: uu_4_1961
+      citation: UU No. 4 Tahun 1961
+      tentang: Perubahan atau Penambahan Nama Keluarga
+      url: https://peraturan.bpk.go.id/Details/51125/uu-no-4-tahun-1961
+      note: null
+uji_materi:
+- putusan: 97/PUU-XIV/2016
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/23/97_PUU-XIV_2016.pdf
+  amar: Kata "agama" dalam Pasal 61 ayat (1) dan Pasal 64 ayat (1) Undang-Undang Nomor
+    23 Tahun 2006 tentang Administrasi Kependudukan sebagaimana telah diubah dengan
+    Undang-Undang Nomor 24 Tahun 2013 bertentangan dengan UUD NRI Tahun 1945 dan tidak
+    mempunyai kekuatan hukum mengikat secara bersyarat sepanjang tidak termasuk "kepercayaan."

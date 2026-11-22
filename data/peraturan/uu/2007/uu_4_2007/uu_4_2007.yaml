@@ -12,8 +12,8 @@ tanggal_penetapan: '2007-01-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-2007
-source_pdf_url: https://peraturan.go.id/files/uu4-2007.pdf
+source_url: https://peraturan.bpk.go.id/Details/39805/uu-no-4-tahun-2007
+source_pdf_url: https://peraturan.bpk.go.id/Download/29388/UU%20Nomor%204%20Tahun%202007.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2007_2007-01-02.txt
   pasal_count: 22
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: dafdad657cea8b19da7d2b5caa33267c6c2aa4c4f3f3fee214f77ba78ee61f59
 pdf_sha256: a76d19929484ee9d11f05fac9d0f9cd5b20f4ed8aadba1bd580580640023509f
+tanggal_pengundangan: '2007-01-02'
+tanggal_berlaku: '2007-01-02'
+lembaran_negara: 'LN.2007/NO.6, TLN NO.4680, LL SETNEG : 16 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-2007
+  source_pdf_url: https://peraturan.go.id/files/uu4-2007.pdf
+bpk:
+  id: 39805
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29388/UU%20Nomor%204%20Tahun%202007.pdf
+    bpk_file_id: 29388
+    filename: UU Nomor 4 Tahun 2007.pdf
+    sha256: dafdad657cea8b19da7d2b5caa33267c6c2aa4c4f3f3fee214f77ba78ee61f59
+    bytes: 33168
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

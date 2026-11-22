@@ -12,8 +12,8 @@ tanggal_penetapan: '2007-01-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-2007
-source_pdf_url: https://peraturan.go.id/files/uu16-2007.pdf
+source_url: https://peraturan.bpk.go.id/Details/39828/uu-no-16-tahun-2007
+source_pdf_url: https://peraturan.bpk.go.id/Download/29418/UU%20Nomor%2016%20Tahun%202007.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,33 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2007_2007-01-02.txt
   pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 10c399a656c47975fd489fbe55c90f8b1ac777cf1c1aba43502c5e732b422936
+  extra_pdf_sha256:
+  - 7979f80ff3a15e0cbe7cf3fc6fd4c16b3135b68698fac7bb695e249efaa0d099
 pdf_sha256: eb88699409f0d92313b3febc79f8a0f899afeda49f6048df5e38ae6c56d695a2
+tanggal_pengundangan: '2007-01-02'
+tanggal_berlaku: '2007-01-02'
+lembaran_negara: 'LN.2007/NO.18, TLN NO.4692, LL SETNEG : 15 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-2007
+  source_pdf_url: https://peraturan.go.id/files/uu16-2007.pdf
+bpk:
+  id: 39828
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29418/UU%20Nomor%2016%20Tahun%202007.pdf
+    bpk_file_id: 29418
+    filename: UU Nomor 16 Tahun 2007.pdf
+    sha256: 10c399a656c47975fd489fbe55c90f8b1ac777cf1c1aba43502c5e732b422936
+    bytes: 23284
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/29419/UU%20Nomor%2016%20Tahun%202007_penjelasan.pdf
+    bpk_file_id: 29419
+    filename: UU Nomor 16 Tahun 2007_penjelasan.pdf
+    sha256: 7979f80ff3a15e0cbe7cf3fc6fd4c16b3135b68698fac7bb695e249efaa0d099
+    bytes: 10852
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

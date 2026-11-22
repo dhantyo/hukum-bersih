@@ -12,8 +12,8 @@ tanggal_penetapan: '2007-07-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-28-tahun-2007
-source_pdf_url: https://peraturan.go.id/files/uu28-2007.pdf
+source_url: https://peraturan.bpk.go.id/Details/39916/uu-no-28-tahun-2007
+source_pdf_url: https://peraturan.bpk.go.id/Download/29510/UU%20Nomor%2028%20Tahun%202007.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,5 +28,72 @@ versions:
   date: '2007-07-17'
   date_basis: tanggal_penetapan
   text: uu_28_2007_2007-07-17.txt
-  pasal_count: 5
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 559d06446202b82682d49a6b1c4623c80d2afad8c3c769e07595f98f2ccd76ac
+  extra_pdf_sha256:
+  - a0e4379e5467942ac8ec7cfb68dde90493276aa1edbfd3d02e6cb8989e836f70
 pdf_sha256: 2cca78d98d67a5449819ee4720de3eb1148530f0ef0717062aa88b5aed3a732f
+tanggal_pengundangan: '2007-07-17'
+tanggal_berlaku: '2008-01-01'
+lembaran_negara: 'Ln.2007/NO.85, TLN NO.4740, LL SETNEG : 60 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-28-tahun-2007
+  source_pdf_url: https://peraturan.go.id/files/uu28-2007.pdf
+bpk:
+  id: 39916
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29510/UU%20Nomor%2028%20Tahun%202007.pdf
+    bpk_file_id: 29510
+    filename: UU Nomor 28 Tahun 2007.pdf
+    sha256: 559d06446202b82682d49a6b1c4623c80d2afad8c3c769e07595f98f2ccd76ac
+    bytes: 97027
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/29511/UU%20Nomor%2028%20Tahun%202007%20_penjelasan.pdf
+    bpk_file_id: 29511
+    filename: UU Nomor 28 Tahun 2007 _penjelasan.pdf
+    sha256: a0e4379e5467942ac8ec7cfb68dde90493276aa1edbfd3d02e6cb8989e836f70
+    bytes: 108614
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_16_2009
+      citation: UU No. 16 Tahun 2009
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 5 Tahun
+        2008 Tentang Perubahan Keempat Atas Undang-Undang Nomor 6 Tahun 1983 Tentang
+        Ketentuan Umum dan Tata Cara Perpajakan Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/38624/uu-no-16-tahun-2009
+      note: null
+    Mengubah:
+    - id: uu_16_2000
+      citation: UU No. 16 Tahun 2000
+      tentang: Perubahan Kedua atas Undang-Undang Nomor 6 Tahun 1983 tentang Ketentuan
+        Umum dan Tata Cara Perpajakan
+      url: https://peraturan.bpk.go.id/Details/44967/uu-no-16-tahun-2000
+      note: null
+    - id: uu_9_1994
+      citation: UU No. 9 Tahun 1994
+      tentang: Perubahan atas Undang-Undang Nomor 6 Tahun 1983 tentang Ketentuan Umum
+        dan Tata Cara Perpajakan
+      url: https://peraturan.bpk.go.id/Details/46230/uu-no-9-tahun-1994
+      note: null
+    - id: uu_6_1983
+      citation: UU No. 6 Tahun 1983
+      tentang: Ketentuan Umum dan Tata Cara Perpajakan
+      url: https://peraturan.bpk.go.id/Details/46986/uu-no-6-tahun-1983
+      note: null
+uji_materi:
+- putusan: 63/PUU-XV/2017
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/137/63_PUU-XV_2017.pdf
+  amar: Menyatakan frasa "pelaksanaan hak dan kewajiban kuasa" dalam Pasal 32 ayat
+    (3a) Undang-Undang Nomor 28 Tahun 2007 tentang Perubahan Ketiga atas Undang-Undang
+    Nomor 6 Tahun 1983 tentang Ketentuan Umum dan Tata Cara Perpajakan sebagaimana
+    telah diubah terakhir dengan Undang-Undang Nomor 16 Tahun 2009 tentang Penetapan
+    Peraturan Pemerintah Pengganti Undang-Undang Nomor 5 Tahun 2008 tentang Perubahan
+    Keempat atas Undang-Undang Nomor 6 Tahun 1983 Tentang Ketentuan Umum dan Tata
+    Cara Perpajakan Menjadi Undang-Undang bertentangan dengan UUD NRI Tahun 1945 dan
+    tidak mempunyai kekuatan hukum mengikat sepanjang tidak dimaknai hanya berkenaan
+    dengan hal-hal yang bersifat teknis administratif dan bukan pembatasan dan/atau
+    perluasan hak dan kewajiban warga negara

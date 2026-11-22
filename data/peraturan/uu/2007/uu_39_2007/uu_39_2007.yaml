@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 39 Tahun 2007 tentang Perubahan Uu 11-1995 Tentang Cu
 tentang: PERUBAHAN UU 11-1995 TENTANG CUKAI
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2007-08-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-39-tahun-2007
-source_pdf_url: https://peraturan.go.id/files/uu39-2007.pdf
+source_url: https://peraturan.bpk.go.id/Details/39962/uu-no-39-tahun-2007
+source_pdf_url: https://peraturan.bpk.go.id/Download/29560/UU%20Nomor%2039%20Tahun%202007.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,44 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_39_2007_2007
+- id: uu_39_2007_2007-08-15
   kind: asli
   source: official
-  date: null
+  date: '2007-08-15'
   date_basis: tanggal_penetapan
-  text: uu_39_2007_2007.txt
+  text: uu_39_2007_2007-08-15.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 786a75c894b5806e9001689ec6035d6f79bac29793d0b4a42e3f913a831a243c
 pdf_sha256: 8bc73d807919e1b6842efcc0fd535cf75a33523a431067d898fbc921bb55d6d0
+tanggal_pengundangan: '2007-08-15'
+tanggal_berlaku: '2007-08-15'
+lembaran_negara: 'LN.2007/NO.105, TLN NO.4755, LL SETNEG : 29 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-39-tahun-2007
+  source_pdf_url: https://peraturan.go.id/files/uu39-2007.pdf
+bpk:
+  id: 39962
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29560/UU%20Nomor%2039%20Tahun%202007.pdf
+    bpk_file_id: 29560
+    filename: UU Nomor 39 Tahun 2007.pdf
+    sha256: 786a75c894b5806e9001689ec6035d6f79bac29793d0b4a42e3f913a831a243c
+    bytes: 241430
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_7_2021
+      citation: UU No. 7 Tahun 2021
+      tentang: Harmonisasi Peraturan Perpajakan
+      url: https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021
+      note: null
+    Mengubah:
+    - id: uu_11_1995
+      citation: UU No. 11 Tahun 1995
+      tentang: Cukai
+      url: https://peraturan.bpk.go.id/Details/46203/uu-no-11-tahun-1995
+      note: null
+uji_materi: null

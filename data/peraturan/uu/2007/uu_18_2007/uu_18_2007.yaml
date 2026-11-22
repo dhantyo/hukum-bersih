@@ -18,8 +18,8 @@ tanggal_penetapan: '2007-03-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUSILO BAMBANG YUDHOYONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-2007
-source_pdf_url: https://peraturan.go.id/files/uu18-2007.pdf
+source_url: https://peraturan.bpk.go.id/Details/39832/uu-no-18-tahun-2007
+source_pdf_url: https://peraturan.bpk.go.id/Download/29424/UU%20Nomor%2018%20Tahun%202007.pdf
 relationships:
   amends: []
   amended_by: []
@@ -35,4 +35,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2007_2007-03-15.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b8453c7ba48c018cf37a68e1840b27cb614ddda6eede53e878bf548e847921d3
 pdf_sha256: b233b5c0e753a322f8562171b8f1bb899024a61c1a4540895e661d54b1d8e084
+tanggal_pengundangan: '2007-03-15'
+tanggal_berlaku: '2007-03-15'
+lembaran_negara: 'LN.2007/NO.43, TLN NO.4708, LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-2007
+  source_pdf_url: https://peraturan.go.id/files/uu18-2007.pdf
+bpk:
+  id: 39832
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29424/UU%20Nomor%2018%20Tahun%202007.pdf
+    bpk_file_id: 29424
+    filename: UU Nomor 18 Tahun 2007.pdf
+    sha256: b8453c7ba48c018cf37a68e1840b27cb614ddda6eede53e878bf548e847921d3
+    bytes: 17368
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
