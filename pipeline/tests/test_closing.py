@@ -59,3 +59,12 @@ def test_offices_without_comma_and_a_misprinted_disahkan():          # UU 19/199
                "BACHARUDDIN JUSUF HABIBIE", "Disahkan di Jakarta", "pada tanggal 16 Agustus 1999",
                "MENTERI NEGARA SEKRETARIAT NEGARA", "REPUBLIK INDONESIA,", "ttd.", "MULADI"])
     assert c["promulgated"]["name"] == "MULADI" and "Disahkan" in c["promulgated"]["note"]
+
+
+def test_line_breaks_and_blank_place():                                # UU 11/2008, UU 14/2008
+    c = parse(["Disahkan di Jakarta pada", "tanggal 21 April 2008", "PRESIDEN REPUBLIK INDONESIA,", "ttd.", "X",
+               "Diundangkan di Jakarta pada", "tanggal 21 April 2008", "MENTERI,", "Y"])
+    assert c["signed"]["place"] == "Jakarta" and c["signed"]["date"] == "21 April 2008"
+    assert c["promulgated"]["place"] == "Jakarta" and c["promulgated"]["date"] == "21 April 2008"
+    c = parse(["Disahkan di", "pada tanggal 30 April 2008", "PRESIDEN REPUBLIK INDONESIA,", "ttd.", "X"])
+    assert "place" not in c["signed"] and c["signed"]["date"] == "30 April 2008"

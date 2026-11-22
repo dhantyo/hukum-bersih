@@ -151,11 +151,12 @@ def rows(words: list[tuple]) -> list[str]:
 
 # A page number or the "SK No" serial printed level with a line of text ends up on that line
 # ("PPPK. | -7-", "…Nomor 6516), SK No 095251 A '"); OCR adds stray marks ("- 33 - '").
-EDGE_NOISE_RE = re.compile(r"(?:\s*\|?\s*(?:-\s*\d{1,4}\s*-|SK\s*No\.?\s*[\d\s]{5,9}\s*[A-Z]?)\s*['|.,]*)+$")
+EDGE_NOISE_RE = re.compile(r"(?:\s*\|?\s*(?:-\s*\d{1,4}\s*-|SK\s*No\.?\s*[\d\s]{5,9}\s*[A-Z]?(?:\s*[A-Za-z]{1,2}\b)?)\s*['|.,]*)+$")
 LEAD_NOISE_RE = re.compile(r"^(?:-\s*\d{1,4}\s*-\s*['|]*\s*)+(?=\S)")
 
 
 def _strip_edges(ln: str) -> str:
+    ln = re.sub(r"\s+\|\s*$", "", ln)                      # OCR's stray bar ("PENJELASAN |")
     return LEAD_NOISE_RE.sub("", EDGE_NOISE_RE.sub("", ln)).strip()
 
 

@@ -185,8 +185,9 @@ def test_penjelasan_heading_with_a_full_stop():                     # UU 3/1949,
 
 
 def test_page_numbers_and_serials_on_a_text_line():               # UU 20/2023, UU 6/2021, UU 36/2014
-    assert _clean_page(["teks", "PPPK. | -7-", "Nomor 6516), SK No 095251 A '", "- 33 - ' (2) Proses evaluasi"],
-                       first_page=False) == ["teks", "PPPK.", "Nomor 6516),", "(2) Proses evaluasi"]
+    assert _clean_page(["teks", "PPPK. | -7-", "Nomor 6516), SK No 095251 A '", "- 33 - ' (2) Proses evaluasi",
+                        "Defence): SK No 048550A ag"], first_page=False) == [
+        "teks", "PPPK.", "Nomor 6516),", "(2) Proses evaluasi", "Defence):"]
     assert _clean_page(["teks", "Rp 1.000.000,- (satu juta rupiah)."], first_page=False)[1] == \
         "Rp 1.000.000,- (satu juta rupiah)."
 
@@ -213,3 +214,15 @@ def test_page_turn_on_the_same_line_as_text():                     # UU 1/2009
     assert clean_lines([["sanksi administratif berupa: (2) Setiap...", "(2) Setiap orang"]]) == [
         "sanksi administratif berupa:", "(2) Setiap orang"]
     assert clean_lines([["x", "dan seterusnya ...", "lain", "y", "z"]]) == ["x", "dan seterusnya ...", "lain", "y", "z"]
+
+
+def test_own_pasal_2_after_amendments_in_pasal_i():                 # UU 2/1953, UU 12/1957
+    doc = parse_lines(["Menimbang : a. bahwa x;", "Pasal I", "Ordonansi Pajak Rumah tangga 1908 diubah sebagai berikut:",
+                       "XXVI.Pasal 44 akan berbunyi sebagai berikut:", "Pasal 44", "(1) Di mana dalam ordonansi ini.",
+                       "XXVII. Pasal 46 dihapuskan.", "Pasal 2", "(1) Pemungutan pajak tidak dilakukan.",
+                       "Pasal 3", "Undang-undang ini mulai berlaku pada tanggal 1 Januari 1953."])
+    assert [b.label for b in kinds(doc, "pasal")] == ["Pasal I", "Pasal 2", "Pasal 3"]
+    # an amending law that quotes Pasal 1 and Pasal 2 in one instruction keeps both quoted
+    doc = parse_lines(["Menimbang : a. bahwa x;", "Pasal I", "1. Ketentuan Pasal 1 dan Pasal 2 diubah sehingga berbunyi sebagai berikut:",
+                       "Pasal 1", "Satu.", "Pasal 2", "Dua.", "Pasal II", "Berlaku."])
+    assert [b.label for b in kinds(doc, "pasal")] == ["Pasal I", "Pasal II"]

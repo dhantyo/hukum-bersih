@@ -45,7 +45,7 @@ PENJELASAN_RE = re.compile(r"^(?:RANCANGAN\s+|MEMORI\s+)?PEND?JELASAN\.?(?:\s+AT
 # Closing formula and signatures, including old-spelling (Ejaan Lama) laws:
 # "Djakarta, tanggal 23 Nopember 1945", "Diumumkan pada tanggal ...", "Dikeluarkan di ...".
 CLOSING_RE = re.compile(
-    r"^(Agar (?:supaya )?setiap orang (?:dapat )?mengetahui(?:nja|nya)|Disahkan di|Disjahkan di|"
+    r"^(Agar (?:supaya )?setiap orang (?:dapat )?mengetahui(?:nja|nya)|Disahka[nh] di|Disjahkan di|"
     r"Diundangkan di|Diundangkan pada|Diumumkan|Ditetapkan di|Dikeluarkan di|"
     r"D[j]?akarta,? (?:pada )?tanggal|"
     r"LEMBARAN NEGARA REPUBLIK INDONESIA TAHUN|TAMBAHAN LEMBARAN NEGARA)"
@@ -163,6 +163,7 @@ class Parser:
         self.amending = False
         self.in_salinan = False
         self.in_lampiran = False
+        self.quoted_one = False
 
     # helpers --------------------------------------------------------------
     def emit(self, block: Block) -> Block:
@@ -300,9 +301,14 @@ class Parser:
         if self.in_penjelasan:
             return self.step_penjelasan(line)
 
-        if (self.amending and self.last_pasal == 1 and (m := PASAL_RE.match(line)) and m[1] == "2"
-                and not self.amends_so_far()):
-            self.amending = False                # "Pasal I." was a misprint for Pasal 1 (UU 16/1953)
+        if self.amending and self.last_pasal == 1 and (m := PASAL_RE.match(line)) and m[1] == "2" and (
+                not self.amends_so_far()         # "Pasal I." was a misprint for Pasal 1 (UU 16/1953)
+                or (not self.quoted_one and i and self.lines[i - 1].rstrip().endswith("."))):
+            # or the law's own Pasal 2 after amendments in Pasal I (UU 2/1953, 12/1957): it follows
+            # a finished sentence, where a quoted pasal follows "… berbunyi sebagai berikut:"
+            self.amending = False
+        if self.amending and (m := PASAL_RE.match(line)) and m[1] == "1":
+            self.quoted_one = True
         if self.amending and (BAB_RE.match(line) or BAGIAN_RE.match(line) or PARAGRAF_RE.match(line)
                               or (PASAL_RE.match(line) and PASAL_RE.match(line)[1][0].isdigit())):
             self.append(line)

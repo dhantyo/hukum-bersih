@@ -24,9 +24,10 @@ from pathlib import Path
 import yaml
 
 ORDER_RE = re.compile(r"^Agar (?:supaya )?setiap orang", re.IGNORECASE)
-SIGNED_RE = re.compile(r"^(Disahkan|Disjahkan|Ditetapkan|Dikeluarkan)(?: di (?P<place>.+?))?[.,]?$", re.IGNORECASE)
-PROMULGATED_RE = re.compile(r"^(Diundangkan|Diumumkan)(?: di (?P<place>.+?))?(?: pada tanggal (?P<date>.+?))?[.,]?$", re.IGNORECASE)
-DATE_RE = re.compile(r"^pada tanggal (?P<date>.+?)\.?$", re.IGNORECASE)
+# "Disahkan di Jakarta", "Disahkan di Jakarta pada" (date on the next line), "Disahkan di" (place blank)
+SIGNED_RE = re.compile(r"^(Disahkan|Disahkah|Disjahkan|Ditetapkan|Dikeluarkan)(?: di(?: (?P<place>.+?))?)?(?: pada)?[.,]?$", re.IGNORECASE)
+PROMULGATED_RE = re.compile(r"^(Diundangkan|Diumumkan)(?: di(?: (?P<place>.+?))?)?(?: pada(?: tanggal (?P<date>.+?))?)?[.,]?$", re.IGNORECASE)
+DATE_RE = re.compile(r"^(?:pada )?tanggal (?P<date>.+?)\.?$", re.IGNORECASE)
 OLD_PLACE_DATE_RE = re.compile(r"^(?P<place>D[j]?akarta|Jogjakarta|Yogyakarta),? (?:pada )?tanggal (?P<date>.+?)\.?$", re.IGNORECASE)
 LN_RE = re.compile(r"^LEMBARAN NEGARA(?: REPUBLIK INDONESIA)?(?: TAHUN (?P<y1>\d{4}))? NOMOR (?P<n>\d+)(?: TAHUN (?P<y2>\d{4}))?", re.IGNORECASE)
 TTD_RE = re.compile(r"^t\.?t\.?d\.?$", re.IGNORECASE)
