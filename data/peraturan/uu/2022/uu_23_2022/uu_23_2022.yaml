@@ -11,8 +11,8 @@ tanggal_penetapan: '2022-08-03'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-23-tahun-2022
-source_pdf_url: https://peraturan.go.id/files/uu23-2022.pdf
+source_url: https://peraturan.bpk.go.id/Details/218816/uu-no-23-tahun-2022
+source_pdf_url: https://peraturan.bpk.go.id/Download/213209/UU%20Nomor%2023%20Tahun%202022.pdf
 relationships:
   amends: []
   amended_by: []
@@ -27,5 +27,27 @@ versions:
   date: '2022-08-03'
   date_basis: tanggal_penetapan
   text: uu_23_2022_2022-08-03.txt
-  pasal_count: 9
+  pasal_count: 50
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 306edf4e00933cd11e57622b3126bb57bc1329de47810c67e59e8fb8b80c9f98
+  ocr: true
 pdf_sha256: 306edf4e00933cd11e57622b3126bb57bc1329de47810c67e59e8fb8b80c9f98
+tanggal_pengundangan: '2022-08-03'
+tanggal_berlaku: '2022-08-03'
+lembaran_negara: 'LN.2022/No.166, TLN No.6812, jdih.setneg.go.id: 33 hlm.'
+subjek: KESEHATAN - PENDIDIKAN - JABATAN / PROFESI / KEAHLIAN / SERTIFIKASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-23-tahun-2022
+  source_pdf_url: https://peraturan.go.id/files/uu23-2022.pdf
+bpk:
+  id: 218816
+  files:
+  - url: https://peraturan.bpk.go.id/Download/213209/UU%20Nomor%2023%20Tahun%202022.pdf
+    bpk_file_id: 213209
+    filename: UU Nomor 23 Tahun 2022.pdf
+    sha256: 306edf4e00933cd11e57622b3126bb57bc1329de47810c67e59e8fb8b80c9f98
+    bytes: 1729576
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

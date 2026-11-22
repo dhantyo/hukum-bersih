@@ -12,8 +12,8 @@ tanggal_penetapan: '2022-01-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-2022
-source_pdf_url: https://peraturan.go.id/files/uu2-2022.pdf
+source_url: https://peraturan.bpk.go.id/Details/195878/uu-no-2-tahun-2022
+source_pdf_url: https://peraturan.bpk.go.id/Download/189716/UU%20Nomor%202%20Tahun%202022.pdf
 relationships:
   amends:
   - id: uu_38_2004
@@ -51,7 +51,6 @@ relationships:
       - 9A
       - 16A
       - 21A
-      - 51A
       - 51B
       - 52A
       - 67A
@@ -73,5 +72,46 @@ versions:
   date: '2022-01-12'
   date_basis: tanggal_penetapan
   text: uu_2_2022_2022-01-12.txt
-  pasal_count: 4
+  pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d126c647dd14d7117b31b25e9cf1d4b36e390d472192ceab45649f35b7447445
+  ocr: true
 pdf_sha256: c56572331c12436b394929b31f6b38b81f760167f1f87230f557320df4745620
+tanggal_pengundangan: '2022-01-12'
+tanggal_berlaku: '2022-01-12'
+lembaran_negara: 'LN.2022/No.12, TLN No. 6760, jdih.setneg.go.id : 46 hlm.'
+subjek: KONSTRUKSI, SIPIL, ARSITEK, BANGUNAN, DAN INFRASTRUKTUR - LALU LINTAS, JALAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-2022
+  source_pdf_url: https://peraturan.go.id/files/uu2-2022.pdf
+bpk:
+  id: 195878
+  files:
+  - url: https://peraturan.bpk.go.id/Download/189716/UU%20Nomor%202%20Tahun%202022.pdf
+    bpk_file_id: 189716
+    filename: UU Nomor 2 Tahun 2022.pdf
+    sha256: d126c647dd14d7117b31b25e9cf1d4b36e390d472192ceab45649f35b7447445
+    bytes: 4919765
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    Mengubah:
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: Pasal 103 UU Nomor 11 Tahun 2020 menambah satu pasal diantara Pasal 53
+        dan Pasal 54 UU Nomor 38 Tahun 2004 tentang Jalan
+    - id: uu_38_2004
+      citation: UU No. 38 Tahun 2004
+      tentang: Jalan
+      url: https://peraturan.bpk.go.id/Details/40785/uu-no-38-tahun-2004
+      note: null
+uji_materi: null

@@ -13,8 +13,8 @@ tanggal_penetapan: '2021-10-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-2021
-source_pdf_url: https://peraturan.go.id/files/uu3-2021bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/184578/uu-no-3-tahun-2021
+source_pdf_url: https://peraturan.bpk.go.id/Download/178013/UU%20Nomor%203%20Tahun%202021.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,46 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2021_2021-10-06.txt
   pasal_count: 13
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2955946e934e34bbf04e69054fdc1d209a41a2aad603626c44579798f9d8069e
+  ocr: true
 pdf_sha256: 981839743c6b2669afb1322a0cb085e47703394ec240c48bbba47fbbabfd3e96
+tanggal_penetapan_bpk: '2020-10-06'
+tanggal_pengundangan: '2021-10-06'
+tanggal_berlaku: '2020-10-06'
+lembaran_negara: 'LN.2021/No.233, TLN No.6727, jdih.setneg.go.id : 12 hlm.'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-2021
+  source_pdf_url: https://peraturan.go.id/files/uu3-2021bt.pdf
+bpk:
+  id: 184578
+  files:
+  - url: https://peraturan.bpk.go.id/Download/178013/UU%20Nomor%203%20Tahun%202021.pdf
+    bpk_file_id: 178013
+    filename: UU Nomor 3 Tahun 2021.pdf
+    sha256: 2955946e934e34bbf04e69054fdc1d209a41a2aad603626c44579798f9d8069e
+    bytes: 1943670
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/178014/UU%20Nomor%203%20Tahun%202021%20-%20Lampiran_1-310.pdf
+    bpk_file_id: 178014
+    filename: UU Nomor 3 Tahun 2021 - Lampiran_1-310.pdf
+    sha256: 167710d5f67223a9b2b08925515c6490eb399ce28f8ac4eb7ef900e6737b9e03
+    bytes: 25999197
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/178015/UU%20Nomor%203%20Tahun%202021%20-%20Lampiran_311-822-c.pdf
+    bpk_file_id: 178015
+    filename: UU Nomor 3 Tahun 2021 - Lampiran_311-822-c.pdf
+    sha256: d260b77731a82b74901e5f5b9afafc96b3d290e19868808bfeb6e4230958e858
+    bytes: 10778279
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/178016/UU%20Nomor%203%20Tahun%202021%20-%20Lampiran_823-1077.pdf
+    bpk_file_id: 178016
+    filename: UU Nomor 3 Tahun 2021 - Lampiran_823-1077.pdf
+    sha256: feba4b30b7f9a65c13cf22c66facb55e935b2b11fdb2354837c49a5e6ae2db4c
+    bytes: 16732105
+    archive_url: null
+  status_peraturan: null
+  tanggal_pengundangan: '2020-10-06'
+uji_materi: null

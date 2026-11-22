@@ -12,8 +12,8 @@ tanggal_penetapan: '2020-10-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-2020
-source_pdf_url: https://peraturan.go.id/files/uu9-2020bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/149747/uu-no-9-tahun-2020
+source_pdf_url: https://peraturan.bpk.go.id/Download/141983/UU%20Nomor%209%20Tahun%202020.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2020_2020-10-26.txt
   pasal_count: 49
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7ff2c5e8595b519d6deaff41eaf3572d14d1f2c93d7ec471f07d777891bee5bc
+  ocr: true
 pdf_sha256: 3ee962fb9caf2af07e993c8d5ae2f79d0ab1955787e9483e100703b81c58eabe
+tanggal_pengundangan: '2020-10-26'
+tanggal_berlaku: '2021-01-01'
+lembaran_negara: 'LN.2020/No.239, TLN No.6570, jdih.setkab.go.id : 55 hlm.'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-2020
+  source_pdf_url: https://peraturan.go.id/files/uu9-2020bt.pdf
+bpk:
+  id: 149747
+  files:
+  - url: https://peraturan.bpk.go.id/Download/141983/UU%20Nomor%209%20Tahun%202020.pdf
+    bpk_file_id: 141983
+    filename: UU Nomor 9 Tahun 2020.pdf
+    sha256: 7ff2c5e8595b519d6deaff41eaf3572d14d1f2c93d7ec471f07d777891bee5bc
+    bytes: 5185049
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

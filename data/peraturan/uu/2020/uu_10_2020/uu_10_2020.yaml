@@ -11,8 +11,8 @@ tanggal_penetapan: '2020-10-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JOKO WIDODO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2020
-source_pdf_url: https://peraturan.go.id/files/uu10-2020bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/149748/uu-no-10-tahun-2020
+source_pdf_url: https://peraturan.bpk.go.id/Download/141992/UU%20Nomor%2010%20Tahun%202020.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2020_2020-10-26.txt
   pasal_count: 32
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 62553c5140531a32d5dd47315d32204b9bfd599456dbaf8c6272251485696a2f
+  ocr: true
 pdf_sha256: bcd59c45a97939f3432628f58608886c04b8fd374749a540e3070801c2e568ef
+tanggal_pengundangan: '2020-10-26'
+tanggal_berlaku: '2021-01-01'
+lembaran_negara: 'LN.2020/No.240, TLN No.6571, jdih.setkab.go.id : 21 hlm.'
+subjek: PENGELOLAAN KEUANGAN NEGARA / DAERAH - PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2020
+  source_pdf_url: https://peraturan.go.id/files/uu10-2020bt.pdf
+bpk:
+  id: 149748
+  files:
+  - url: https://peraturan.bpk.go.id/Download/141992/UU%20Nomor%2010%20Tahun%202020.pdf
+    bpk_file_id: 141992
+    filename: UU Nomor 10 Tahun 2020.pdf
+    sha256: 62553c5140531a32d5dd47315d32204b9bfd599456dbaf8c6272251485696a2f
+    bytes: 1676277
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_13_1985
+      citation: UU No. 13 Tahun 1985
+      tentang: Bea Materai
+      url: https://peraturan.bpk.go.id/Details/46964/uu-no-13-tahun-1985
+      note: null
+uji_materi: null

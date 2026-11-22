@@ -12,8 +12,8 @@ tanggal_penetapan: '2021-10-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-2021
-source_pdf_url: https://peraturan.go.id/files/uu6-2021bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/185161/uu-no-6-tahun-2021
+source_pdf_url: https://peraturan.bpk.go.id/Download/178617/UU%20Nomor%206%20Tahun%202021.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_2021_2021-10-27.txt
   pasal_count: 49
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f296bb9902efdad5aeea839359d80f057430a20d592dd023f4cd451346994beb
+  ocr: true
 pdf_sha256: 7191c300d4cec87e083e830be65ae1636cf7b2888ff2fe02dbab60b0e0309e45
+tanggal_pengundangan: '2021-10-27'
+tanggal_berlaku: '2022-01-01'
+lembaran_negara: 'LN.2021/No.245, TLN No.6735, jdih.setneg.go.id : 54 hlm.'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-2021
+  source_pdf_url: https://peraturan.go.id/files/uu6-2021bt.pdf
+bpk:
+  id: 185161
+  files:
+  - url: https://peraturan.bpk.go.id/Download/178617/UU%20Nomor%206%20Tahun%202021.pdf
+    bpk_file_id: 178617
+    filename: UU Nomor 6 Tahun 2021.pdf
+    sha256: f296bb9902efdad5aeea839359d80f057430a20d592dd023f4cd451346994beb
+    bytes: 4902061
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/178618/UU%20Nomor%206%20Tahun%202021%20-%20Lampiran%20I.pdf
+    bpk_file_id: 178618
+    filename: UU Nomor 6 Tahun 2021 - Lampiran I.pdf
+    sha256: eb74af681430bc94823a4b41e15bcd606921f975d3617198adb3cc8d47e58edd
+    bytes: 126226
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/178619/UU%20Nomor%206%20Tahun%202021%20-%20Lampiran%20II.pdf
+    bpk_file_id: 178619
+    filename: UU Nomor 6 Tahun 2021 - Lampiran II.pdf
+    sha256: ba9f15e7abf3d9b5ce9293ffda599ce18d9741ace7d9b451cc5e1f23c017cdd2
+    bytes: 55653
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

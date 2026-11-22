@@ -11,8 +11,8 @@ tanggal_penetapan: '2022-03-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-2022
-source_pdf_url: https://peraturan.go.id/files/uu11-2022bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/203148/uu-no-11-tahun-2022
+source_pdf_url: https://peraturan.bpk.go.id/Download/197117/UU%20Nomor%2011%20Tahun%202022.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,3 +29,28 @@ versions:
   text: uu_11_2022_2022-03-16.txt
   pasal_count: 110
 pdf_sha256: cc164991a10484cbf1c371d8a1f87df1fb80a6ac3a700f2a60cb355663bcb392
+tanggal_pengundangan: '2022-03-16'
+tanggal_berlaku: '2022-03-16'
+lembaran_negara: 'LN.2022/No.71, TLN No.6782, jdih.setneg.go.id : 67 hlm.'
+subjek: PEMUDA DAN OLAH RAGA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-2022
+  source_pdf_url: https://peraturan.go.id/files/uu11-2022bt.pdf
+bpk:
+  id: 203148
+  files:
+  - url: https://peraturan.bpk.go.id/Download/197117/UU%20Nomor%2011%20Tahun%202022.pdf
+    bpk_file_id: 197117
+    filename: UU Nomor 11 Tahun 2022.pdf
+    sha256: 54246df05feefb0270920c39833a200a95a0a46ca630b7ce41c97d44c6016d01
+    bytes: 4742090
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_3_2005
+      citation: UU No. 3 Tahun 2005
+      tentang: Sistem Keolahragaan Nasional
+      url: https://peraturan.bpk.go.id/Details/40234/uu-no-3-tahun-2005
+      note: null
+uji_materi: null
+reparse_error: 'v11: 83 pasal, stored text has 110'

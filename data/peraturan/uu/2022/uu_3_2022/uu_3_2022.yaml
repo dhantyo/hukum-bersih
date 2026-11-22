@@ -11,8 +11,8 @@ tanggal_penetapan: '2022-02-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-2022
-source_pdf_url: https://peraturan.go.id/files/uu3-2022pjl.pdf
+source_url: https://peraturan.bpk.go.id/Details/198400/uu-no-3-tahun-2022
+source_pdf_url: https://peraturan.bpk.go.id/Download/192290/UU%20Nomor%203%20Tahun%202022.pdf
 relationships:
   amends: []
   amended_by:
@@ -29,4 +29,63 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2022_2022-02-15.txt
   pasal_count: 44
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b3d5971ff05b16e4aa65ae7efc1127605abf2e5b9a8ae2f91584610bc3918507
+  ocr: true
 pdf_sha256: 870c3ec1db5623e10d6eeae5d63169692e8e1b1920685c14b2a8a521ffe1aa5c
+tanggal_pengundangan: '2022-02-15'
+tanggal_berlaku: '2022-02-15'
+lembaran_negara: 'LN.2022/No.41, TLNNo. 6766, jdih.setneg.go.id : 30 hlm.'
+subjek: PROGRAM, RENCANA PEMBANGUNAN DAN RENCANA KERJA - KEBIJAKAN PEMERINTAH - IBU
+  KOTA NUSANTARA, IKN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-2022
+  source_pdf_url: https://peraturan.go.id/files/uu3-2022pjl.pdf
+bpk:
+  id: 198400
+  files:
+  - url: https://peraturan.bpk.go.id/Download/192290/UU%20Nomor%203%20Tahun%202022.pdf
+    bpk_file_id: 192290
+    filename: UU Nomor 3 Tahun 2022.pdf
+    sha256: b3d5971ff05b16e4aa65ae7efc1127605abf2e5b9a8ae2f91584610bc3918507
+    bytes: 3258305
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/192291/UU%20Nomor%203%20Tahun%202022%20-%20Lampiran%20I.pdf
+    bpk_file_id: 192291
+    filename: UU Nomor 3 Tahun 2022 - Lampiran I.pdf
+    sha256: 1d9559eee2d74cd972ab60e16e5125f8bceddc9598a42b302050587be59592ab
+    bytes: 322849
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/192292/UU%20Nomor%203%20Tahun%202022%20-%20Lampiran%20II.pdf
+    bpk_file_id: 192292
+    filename: UU Nomor 3 Tahun 2022 - Lampiran II.pdf
+    sha256: 3ea04ec4497b0c6d4da838554296bd61986ca74a5b43d56caf084a01277acb5c
+    bytes: 13949154
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_21_2023
+      citation: UU No. 21 Tahun 2023
+      tentang: Perubahan atas Undang-Undang Nomor 3 Tahun 2022 tentang Ibu Kota Negara
+      url: https://peraturan.bpk.go.id/Details/269494/uu-no-21-tahun-2023
+      note: null
+    Mengubah:
+    - id: uu_7_2002
+      citation: UU No. 7 Tahun 2002
+      tentang: Pembentukan Kabupaten Penajam Paser Utara Di Provinsi Kalimantan Timur
+      url: https://peraturan.bpk.go.id/Details/44430/uu-no-7-tahun-2002
+      note: Pasal 3 adan Pasal 5 UU No. 7 Tahun 2002
+    - id: uu_47_1999
+      citation: UU No. 47 Tahun 1999
+      tentang: Pembentukan Kabupaten Nunukan, Kabupaten Malinau, Kabupaten Kutai Barat,
+        Kabupaten Kutai Timur, dan Kota Bontang
+      url: https://peraturan.bpk.go.id/Details/45387/uu-no-47-tahun-1999
+      note: Pasal 5 dan Pasal 6 UU No. 47 Tahun 1999
+    - id: uu_25_1956
+      citation: UU No. 25 Tahun 1956
+      tentang: Pembentukan Daerah-Daerah Otonom Propisi Kalimantan Barat, Kalimantan
+        Selatan dan Kalimantan Timur
+      url: https://peraturan.bpk.go.id/Details/51157/uu-no-25-tahun-1956
+      note: Pasal 1 angka 3 UU No. 25 Tahun 1956
+uji_materi: null

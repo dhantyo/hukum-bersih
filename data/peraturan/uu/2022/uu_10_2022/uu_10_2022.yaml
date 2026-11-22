@@ -11,8 +11,8 @@ tanggal_penetapan: '2022-03-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2022
-source_pdf_url: https://peraturan.go.id/files/uu10-2022bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/202576/uu-no-10-tahun-2022
+source_pdf_url: https://peraturan.bpk.go.id/Download/196546/UU%20Nomor%2010%20Tahun%202022.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,48 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2022_2022-03-16.txt
   pasal_count: 8
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 85457deeb045767a01ef8b17faceaba93db9ba8931d1a715c77174601e0ac5db
+  ocr: true
 pdf_sha256: d0ef44c29c17f5a788d67e0c860e716bf293e641efd0ec81f618a685503ee9b2
+tanggal_pengundangan: '2022-03-16'
+tanggal_berlaku: '2022-03-16'
+lembaran_negara: 'LN.2022/No.70, TLN No.6781, jdih.setkab.go.id : 5 hlm.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2022
+  source_pdf_url: https://peraturan.go.id/files/uu10-2022bt.pdf
+bpk:
+  id: 202576
+  files:
+  - url: https://peraturan.bpk.go.id/Download/196546/UU%20Nomor%2010%20Tahun%202022.pdf
+    bpk_file_id: 196546
+    filename: UU Nomor 10 Tahun 2022.pdf
+    sha256: 85457deeb045767a01ef8b17faceaba93db9ba8931d1a715c77174601e0ac5db
+    bytes: 334976
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_21_1958
+      citation: UU No. 21 Tahun 1958
+      tentang: Penetapan Undang-Undang Darurat No. 10 Tahun 1957 tentang Pembentukan
+        Daerah Swatantra Tingkat I Kalimantan Tengah dan Perubahan Undang-Undang No.
+        25 Tahun 1956 tentang Pembentukan Daerah-Daerah Swatantra Tingkat I Kalimantan
+        Barat, Kalimantan Selatan dan Kalimantan Timur (Lembaran-Negara Tahun 1957
+        No. 83) Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/51721/uu-no-21-tahun-1958
+      note: Ketentuan yang mengatur mengenai Provinsi Kalimantan Timur
+    - id: null
+      citation: UUDrt No. 10 Tahun 1957
+      tentang: Pembentukan Daerah Swatantra Propinsi Kalimantan Tengah dan Pengubahan
+        Undang-Undang No. 25 Tahun 1956 (Lembaran-Negara No. 65 Tahun 1956)
+      url: https://peraturan.bpk.go.id/Details/51866/uudrt-no-10-tahun-1957
+      note: Ketentuan yang mengatur mengenai Provinsi Kalimantan Timur
+    - id: uu_25_1956
+      citation: UU No. 25 Tahun 1956
+      tentang: Pembentukan Daerah-Daerah Otonom Propisi Kalimantan Barat, Kalimantan
+        Selatan dan Kalimantan Timur
+      url: https://peraturan.bpk.go.id/Details/51157/uu-no-25-tahun-1956
+      note: Ketentuan yang mengatur mengenai Provinsi Kalimantan Timur
+uji_materi: null

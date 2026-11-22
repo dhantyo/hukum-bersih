@@ -13,8 +13,8 @@ tanggal_penetapan: '2021-10-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-2021
-source_pdf_url: https://peraturan.go.id/files/ln234tln6728-2021.pdf
+source_url: https://peraturan.bpk.go.id/Details/184579/uu-no-4-tahun-2021
+source_pdf_url: https://peraturan.bpk.go.id/Download/261628/UU%20Nomor%204%20Tahun%202021.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,39 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2021_2021-10-06.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7ee34f3cd10f607fbf8c63cafd69e6332415d89b9ce50458cb88622752abc3f9
+  ocr: true
 pdf_sha256: 8192134d3d31b2efa9619cf872df28aa19f45c125ea6e3c01ac02d26ffe0b6bc
+tanggal_pengundangan: '2021-10-06'
+tanggal_berlaku: '2021-10-06'
+lembaran_negara: 'LN.2021/No.234, TLN No.6728, jdih.setneg.go.id : 4 hlm.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+  - PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-2021
+  source_pdf_url: https://peraturan.go.id/files/ln234tln6728-2021.pdf
+bpk:
+  id: 184579
+  files:
+  - url: https://peraturan.bpk.go.id/Download/261628/UU%20Nomor%204%20Tahun%202021.pdf
+    bpk_file_id: 261628
+    filename: UU Nomor 4 Tahun 2021.pdf
+    sha256: 7ee34f3cd10f607fbf8c63cafd69e6332415d89b9ce50458cb88622752abc3f9
+    bytes: 434347
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/261629/UU%20Nomor%204%20Tahun%202021%20-%20Terjemahan.pdf
+    bpk_file_id: 261629
+    filename: UU Nomor 4 Tahun 2021 - Terjemahan.pdf
+    sha256: 2947c959e97c8899c511d824d5346050aaa68fa19b1c1e2e024769c9d951e906
+    bytes: 4398975
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/261630/UU%20Nomor%204%20Tahun%202021%20-%20Salinan%20Resmi.pdf
+    bpk_file_id: 261630
+    filename: UU Nomor 4 Tahun 2021 - Salinan Resmi.pdf
+    sha256: 7a3dec5c3ee5c5b9e981e9db1e029a31329bd713cea7813fb077107f6289c357
+    bytes: 4214882
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

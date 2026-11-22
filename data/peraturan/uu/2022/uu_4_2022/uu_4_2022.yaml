@@ -11,8 +11,8 @@ tanggal_penetapan: '2022-03-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-2022
-source_pdf_url: https://peraturan.go.id/files/uu4-2022bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/202500/uu-no-4-tahun-2022
+source_pdf_url: https://peraturan.bpk.go.id/Download/196469/UU%20Nomor%204%20Tahun%202022.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,49 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2022_2022-03-16.txt
   pasal_count: 8
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5d824eac3b9f4c59ee2ca43d924da244aa874e978c437d9fcf702f938e8445cc
+  ocr: true
 pdf_sha256: 0031449d8ca8f1d57900369cf50c8c7af96c2096542ae7b074023258a6538d81
+tanggal_pengundangan: '2022-03-16'
+tanggal_berlaku: '2022-03-16'
+lembaran_negara: 'LN.2022/No.64, TLN No.6775, jdih.setkab.go.id : 6 hlm.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-2022
+  source_pdf_url: https://peraturan.go.id/files/uu4-2022bt.pdf
+bpk:
+  id: 202500
+  files:
+  - url: https://peraturan.bpk.go.id/Download/196469/UU%20Nomor%204%20Tahun%202022.pdf
+    bpk_file_id: 196469
+    filename: UU Nomor 4 Tahun 2022.pdf
+    sha256: 5d824eac3b9f4c59ee2ca43d924da244aa874e978c437d9fcf702f938e8445cc
+    bytes: 474823
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: perppu_2_1964
+      citation: PERPU No. 2 Tahun 1964
+      tentang: Pembentukan Daerah Tingkat I Sulawesi Tengah Dan Daerah Tingkat I Sulawesi
+        Tenggara Dengan Mengubah Undang-Undang No. 47 PRP Tahun 1960 Tentang Pembentukan
+        Daerah Tingkat I Sulawesi Utara-Tengah Dan daerah Tingkat I Sulawesi Selatan-Tenggara
+      url: https://peraturan.bpk.go.id/Details/53754/perpu-no-2-tahun-1964
+      note: Ketentuan yang mengatur mengenai Provinsi Sulawesi Selatan
+    - id: uu_13_1964
+      citation: UU No. 13 Tahun 1964
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang No. 2 Tahun
+        1964 Tentang Pembentukan Daerah Tingkat I Sulawesi Tengah Dan Daerah Tingkat
+        I Sulawesi Tenggara Dengan Mengubah Undang-Undang No. 47 Prp Tahun 1960 tentang
+        Pembentukan Daerah Tingkat I Sulawesi Utara -tengah Dan Daerah Tingkat I Sulawesi
+        Selatan-Tenggara (Lembaran Negara Tahun 1964 No. 7) Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/50314/uu-no-13-tahun-1964
+      note: Ketentuan yang mengatur mengenai Provinsi Sulawesi Selatan
+    - id: perppu_47_1960
+      citation: PERPU No. 47 Tahun 1960
+      tentang: Pembentukan Daerah Tingkat I Sulawesi Selatan Tenggara Dan Daerah Tingkat
+        I Sulawesi Utara-Tengah
+      url: https://peraturan.bpk.go.id/Details/53591/perpu-no-47-tahun-1960
+      note: Ketentuan yang mengatur mengenai Provinsi Sulawesi Selatan
+uji_materi: null

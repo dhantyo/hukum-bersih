@@ -22,13 +22,17 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_59_2024_2024
+- id: uu_59_2024_2024-09-13
   kind: asli
   source: official
-  date: null
+  date: '2024-09-13'
   date_basis: tanggal_penetapan
-  text: uu_59_2024_2024.txt
-  pasal_count: 9
+  text: uu_59_2024_2024-09-13.txt
+  pasal_count: 21
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ef7e465b32fe77cc659649ef579d4f471089ab116f29fd49117e40ef81a0601e
+  ocr: true
 pdf_sha256: ef7e465b32fe77cc659649ef579d4f471089ab116f29fd49117e40ef81a0601e
 tanggal_pengundangan: '2024-09-13'
 tanggal_berlaku: '2024-09-13'
@@ -48,5 +52,3 @@ bpk:
     archive_url: null
   status_peraturan: null
 uji_materi: null
-reparse_error: 'v10: LeakedMarkupError: att_2__part_nn_1__p_13357: markup in text:
-  ''TR: Tegangan Rendah'''

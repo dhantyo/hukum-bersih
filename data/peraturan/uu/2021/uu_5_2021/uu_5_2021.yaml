@@ -16,8 +16,8 @@ tanggal_penetapan: '2021-10-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-2021
-source_pdf_url: https://peraturan.go.id/files/uu5-2021bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/187207/uu-no-5-tahun-2021
+source_pdf_url: https://peraturan.bpk.go.id/Download/180787/UU%20Nomor%205%20Tahun%202021.pdf
 relationships:
   amends: []
   amended_by: []
@@ -33,4 +33,33 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_2021_2021-10-19.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 946836381b593fb62a2118c14f2610fbff7aadfecc628df95196e75b416cfddc
+  ocr: true
 pdf_sha256: ad0c85f15586492df0eeb51b8933444b6a4d5a340c5c960f5d2b343280c00be6
+tanggal_pengundangan: '2021-10-19'
+tanggal_berlaku: '2021-10-19'
+lembaran_negara: 'LN.2021/No.242, TLN No.6733, jdih.setneg.go.id : 4 hlm.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+  - HUBUNGAN INTERNASIONAL / KERJA SAMA INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-2021
+  source_pdf_url: https://peraturan.go.id/files/uu5-2021bt.pdf
+bpk:
+  id: 187207
+  files:
+  - url: https://peraturan.bpk.go.id/Download/180787/UU%20Nomor%205%20Tahun%202021.pdf
+    bpk_file_id: 180787
+    filename: UU Nomor 5 Tahun 2021.pdf
+    sha256: 946836381b593fb62a2118c14f2610fbff7aadfecc628df95196e75b416cfddc
+    bytes: 322332
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/180788/UU%20Nomor%205%20Tahun%202021%20-%20Lampiran.pdf
+    bpk_file_id: 180788
+    filename: UU Nomor 5 Tahun 2021 - Lampiran.pdf
+    sha256: 7953b43de091829e05ed0ef606074be05fd94a6b5b9d075d597df921ad25d21a
+    bytes: 17745883
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

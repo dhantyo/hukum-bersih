@@ -11,8 +11,8 @@ tanggal_penetapan: '2022-07-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-2022
-source_pdf_url: https://peraturan.go.id/files/uu17-2022.pdf
+source_url: https://peraturan.bpk.go.id/Details/217800/uu-no-17-tahun-2022
+source_pdf_url: https://peraturan.bpk.go.id/Download/224676/UU%20Nomor%2017%20Tahun%202022-.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,42 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_17_2022_2022-07-25
+  kind: asli
+  source: official
+  date: '2022-07-25'
+  date_basis: tanggal_penetapan
+  text: uu_17_2022_2022-07-25.txt
+  pasal_count: 9
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: fc3358d267b154c3e6656ec48f60de43ee7e58865e2406f3cd4aec4dfd3f7d32
+  ocr: true
 pdf_sha256: f1b5f032eb84254f65cf63f5da771c5ff622b95f1f25ab4ba1bd965cf1dc4356
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '2022-07-25'
+tanggal_berlaku: '2022-07-25'
+lembaran_negara: 'LN.2022/No.160, TLN No.6806, jdih.setneg.go.id: 6 hlm.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-2022
+  source_pdf_url: https://peraturan.go.id/files/uu17-2022.pdf
+bpk:
+  id: 217800
+  files:
+  - url: https://peraturan.bpk.go.id/Download/224676/UU%20Nomor%2017%20Tahun%202022-.pdf
+    bpk_file_id: 224676
+    filename: UU Nomor 17 Tahun 2022-.pdf
+    sha256: fc3358d267b154c3e6656ec48f60de43ee7e58865e2406f3cd4aec4dfd3f7d32
+    bytes: 307515
+    archive_url: null
+  status_peraturan:
+    Mencabut sebagian:
+    - id: uu_61_1958
+      citation: UU No. 61 Tahun 1958
+      tentang: Penetapan "Undang-Undang Darurat No. 19 Tahun 1957 Tentang Pembentukan
+        Daerah-Daerah Swantantra Tingkat I Sumatera Barat, Jambi dan Riau" (Lembaran-Negara
+        Tahun 1957 No. 75), Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/52323/uu-no-61-tahun-1958
+      note: Mencabut ketentuan yang mengatur mengenai Provinsi Sumatera Barat
+uji_materi: null

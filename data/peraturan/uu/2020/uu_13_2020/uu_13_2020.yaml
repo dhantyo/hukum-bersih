@@ -17,8 +17,8 @@ tanggal_penetapan: '2020-11-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-2020
-source_pdf_url: https://peraturan.go.id/files/uu13-2020bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/154401/uu-no-13-tahun-2020
+source_pdf_url: https://peraturan.bpk.go.id/Download/146709/UU%20Nomor%2013%20Tahun%202020.pdf
 relationships:
   amends: []
   amended_by: []
@@ -34,4 +34,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2020_2020-11-02.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 582068e778ed87d3b71017756b4b2b4a4d1586eba43958e17c7a6990f6200ece
+  ocr: true
 pdf_sha256: 78dffc2685aa115f612717397c8ba93224a089c43c3f5ffaaf68587c99c3b6c4
+tanggal_pengundangan: '2020-11-03'
+tanggal_berlaku: '2020-11-03'
+lembaran_negara: 'LN.2020/No.248, TLN No.6575, jdih.setneg.go.id : 5 hlm.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-2020
+  source_pdf_url: https://peraturan.go.id/files/uu13-2020bt.pdf
+bpk:
+  id: 154401
+  files:
+  - url: https://peraturan.bpk.go.id/Download/146709/UU%20Nomor%2013%20Tahun%202020.pdf
+    bpk_file_id: 146709
+    filename: UU Nomor 13 Tahun 2020.pdf
+    sha256: 582068e778ed87d3b71017756b4b2b4a4d1586eba43958e17c7a6990f6200ece
+    bytes: 680408
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

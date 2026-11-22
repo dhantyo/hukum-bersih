@@ -14,8 +14,8 @@ tanggal_penetapan: '2021-12-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-2021
-source_pdf_url: https://peraturan.go.id/files/ln296tln6753-2021.pdf
+source_url: https://peraturan.bpk.go.id/Details/195541/uu-no-9-tahun-2021
+source_pdf_url: https://peraturan.bpk.go.id/Download/189365/UU%20Nomor%209%20Tahun%202021.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,4 +31,27 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2021_2021-12-31.txt
   pasal_count: 11
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 940730e7e846f594b1ed468c7ab3146c82207fa8e63d0cc2f916d3412601de4c
+  ocr: true
 pdf_sha256: ce29369f1a51ac355eb39c103bb05f95157f6e94de87313fc735b33a25e95aba
+tanggal_pengundangan: '2021-12-31'
+tanggal_berlaku: '2021-12-31'
+lembaran_negara: 'LN.2021/No.296, TLN No. 6753, jdih.setneg.go.id : 7 hlm.'
+subjek: HUKUM ACARA DAN PERADILAN - DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN
+  / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-2021
+  source_pdf_url: https://peraturan.go.id/files/ln296tln6753-2021.pdf
+bpk:
+  id: 195541
+  files:
+  - url: https://peraturan.bpk.go.id/Download/189365/UU%20Nomor%209%20Tahun%202021.pdf
+    bpk_file_id: 189365
+    filename: UU Nomor 9 Tahun 2021.pdf
+    sha256: 940730e7e846f594b1ed468c7ab3146c82207fa8e63d0cc2f916d3412601de4c
+    bytes: 573938
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

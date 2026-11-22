@@ -13,8 +13,8 @@ tanggal_penetapan: '2021-12-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-2021
-source_pdf_url: https://peraturan.go.id/files/uu11-2021bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/195550/uu-no-11-tahun-2021
+source_pdf_url: https://peraturan.bpk.go.id/Download/189374/UU%20Nomor%2011%20Tahun%202021.pdf
 relationships:
   amends:
   - id: uu_16_2004
@@ -58,10 +58,10 @@ relationships:
       - 34A
       - 34B
       - 34C
-      - 35A
       - 35B
       - 39A
       - 40A
+      - 355A
   amended_by: []
   revokes: []
   revoked_by: []
@@ -74,5 +74,64 @@ versions:
   date: '2021-12-31'
   date_basis: tanggal_penetapan
   text: uu_11_2021_2021-12-31.txt
-  pasal_count: 4
+  pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 45165ec723f40156144ee9665c42f75c535703643cb4360c54cc873faf53a99a
+  ocr: true
 pdf_sha256: b5b1cfaffeaf64c86d3be1b40984a511929fe2eb154d79c6f10fdd0edf191301
+tanggal_pengundangan: '2021-12-31'
+tanggal_berlaku: '2021-12-31'
+lembaran_negara: 'LN.2021/No.298, TLN No. 6755, jdih.setneg.go.id : 20 hlm.'
+subjek: HUKUM ACARA DAN PERADILAN - KEPEGAWAIAN, APARATUR NEGARA - DASAR PEMBENTUKAN
+  KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-2021
+  source_pdf_url: https://peraturan.go.id/files/uu11-2021bt.pdf
+bpk:
+  id: 195550
+  files:
+  - url: https://peraturan.bpk.go.id/Download/189374/UU%20Nomor%2011%20Tahun%202021.pdf
+    bpk_file_id: 189374
+    filename: UU Nomor 11 Tahun 2021.pdf
+    sha256: 45165ec723f40156144ee9665c42f75c535703643cb4360c54cc873faf53a99a
+    bytes: 1747599
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_16_2004
+      citation: UU No. 16 Tahun 2004
+      tentang: Kejaksaan Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/40511/uu-no-16-tahun-2004
+      note: null
+uji_materi:
+- putusan: 15/PUU-XXIII/2025
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/208/15_PUU-XXIII_2025.pdf
+  amar: '1) Pasal 8 ayat (5) Undang-Undang Nomor 11 Tahun 2021 tentang Perubahan Atas
+    Undang-Undang Nomor 16 Tahun 2004 tentang Kejaksaan Republik Indonesia (Lembaran
+    Negara Republik Indonesia Tahun 2021 Nomor 298, Tambahan Lembaran Negara Republik
+    Indonesia Nomor 6755) bertentangan dengan Undang-Undang Dasar Negara Republik
+    Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat secara bersyarat
+    sepanjang tidak dimaknai memuat pengecualian dalam hal tertangkap tangan melakukan
+    tindak pidana atau berdasarkan bukti permulaan yang cukup disangka melakukan tindak
+    pidana kejahatan yang diancam dengan pidana mati, tindak pidana kejahatan terhadap
+    keamanan negara, atau tindak pidana khusus, sehingga Pasal a quo selengkapnya
+    berbunyi: “Dalam melaksanakan tugas dan wewenangnya, pemanggilan, pemeriksaan,
+    penggeledahan, penangkapan, dan penahanan terhadap Jaksa hanya dapat dilakukan
+    atas izin Jaksa Agung, kecuali dalam hal: a. tertangkap tangan melakukan tindak
+    pidana; atau b. berdasarkan bukti permulaan yang cukup disangka telah melakukan
+    tindak pidana kejahatan yang diancam dengan pidana mati, tindak pidana kejahatan
+    terhadap keamanan negara, atau tindak pidana khusus.” 2) Pasal 35 ayat (1) huruf
+    e beserta Penjelasannya Undang Undang Nomor 11 Tahun 2021 tentang Perubahan Atas
+    Undang-Undang Nomor 16 Tahun 2004 tentang Kejaksaan Republik Indonesia (Lembaran
+    Negara Republik Indonesia Tahun 2021 Nomor 298, Tambahan Lembaran Negara Republik
+    Indonesia Nomor 6755) bertentangan dengan Undang Undang Dasar Negara Republik
+    Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.'
+- putusan: 20/PUU-XXI/2023
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/255/putusan_mkri_20_PUU-XXI_2023.pdf
+  amar: Pasal 30C huruf h dan Penjelasan Pasal 30C huruf h Undang-Undang Nomor 11
+    Tahun 2021 tentang Perubahan Atas Undang-Undang Nomor 16 Tahun 2004 tentang Kejaksaan
+    Republik Indonesia [Lembaran Negara Republik Indonesia Tahun 2021 Nomor 298, Tambahan
+    Lembaran Negara Republik Indonesia Nomor 6755] bertentangan dengan Undang-Undang
+    Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum
+    mengikat.

@@ -11,8 +11,8 @@ tanggal_penetapan: '2022-07-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-2022
-source_pdf_url: https://peraturan.go.id/files/uu14-2022.pdf
+source_url: https://peraturan.bpk.go.id/Details/217796/uu-no-14-tahun-2022
+source_pdf_url: https://peraturan.bpk.go.id/Download/261636/UU%20Nomor%2014%20Tahun%202022.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,34 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_14_2022_2022-07-25
+  kind: asli
+  source: official
+  date: '2022-07-25'
+  date_basis: tanggal_penetapan
+  text: uu_14_2022_2022-07-25.txt
+  pasal_count: 23
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: cb3c8c9d0284e6f1afb39afa4df1ac081cf7b940d14a79207d89e35506e13828
+  ocr: true
 pdf_sha256: 5f0746f31994e7fbaf50e89eb8270213bd2032445d72dde410bad7ac6f254b45
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '2022-07-25'
+tanggal_berlaku: '2022-07-25'
+lembaran_negara: 'LN.2022/No.157, TLN No.6803, jdih.setneg.go.id: 15 hlm.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-2022
+  source_pdf_url: https://peraturan.go.id/files/uu14-2022.pdf
+bpk:
+  id: 217796
+  files:
+  - url: https://peraturan.bpk.go.id/Download/261636/UU%20Nomor%2014%20Tahun%202022.pdf
+    bpk_file_id: 261636
+    filename: UU Nomor 14 Tahun 2022.pdf
+    sha256: cb3c8c9d0284e6f1afb39afa4df1ac081cf7b940d14a79207d89e35506e13828
+    bytes: 1085131
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -17,8 +17,8 @@ tanggal_penetapan: '2022-09-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-25-tahun-2022
-source_pdf_url: https://peraturan.go.id/files/1.+Salinan+UU+Nomor+25+Tahun+2022.pdf
+source_url: https://peraturan.bpk.go.id/Details/228475/uu-no-25-tahun-2022
+source_pdf_url: https://peraturan.bpk.go.id/Download/223296/UU%20Nomor%2025%20Tahun%202022.pdf
 relationships:
   amends: []
   amended_by: []
@@ -33,5 +33,28 @@ versions:
   date: '2022-09-27'
   date_basis: tanggal_penetapan
   text: uu_25_2022_2022-09-27.txt
-  pasal_count: 1
+  pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ed182a2c3a5b661e8cfdbebd3da76becd65de5f3a8e2920625b49e1339623cf9
+  ocr: true
 pdf_sha256: ed182a2c3a5b661e8cfdbebd3da76becd65de5f3a8e2920625b49e1339623cf9
+tanggal_pengundangan: '2022-09-27'
+tanggal_berlaku: '2022-09-27'
+lembaran_negara: 'LN.2022/No.191, TLN No.6818, jdih.setneg.go.id: 4 hlm.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+  - HUBUNGAN INTERNASIONAL / KERJA SAMA INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-25-tahun-2022
+  source_pdf_url: https://peraturan.go.id/files/1.+Salinan+UU+Nomor+25+Tahun+2022.pdf
+bpk:
+  id: 228475
+  files:
+  - url: https://peraturan.bpk.go.id/Download/223296/UU%20Nomor%2025%20Tahun%202022.pdf
+    bpk_file_id: 223296
+    filename: UU Nomor 25 Tahun 2022.pdf
+    sha256: ed182a2c3a5b661e8cfdbebd3da76becd65de5f3a8e2920625b49e1339623cf9
+    bytes: 479372
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

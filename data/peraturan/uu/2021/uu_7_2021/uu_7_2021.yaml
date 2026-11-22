@@ -11,8 +11,8 @@ tanggal_penetapan: '2021-10-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-2021
-source_pdf_url: https://peraturan.go.id/files/uu7-2021bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021
+source_pdf_url: https://peraturan.bpk.go.id/Download/178620/UU%20Nomor%207%20Tahun%202021.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,131 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_7_2021_2021-10-29
+  kind: asli
+  source: official
+  date: '2021-10-29'
+  date_basis: tanggal_penetapan
+  text: uu_7_2021_2021-10-29.txt
+  pasal_count: 20
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ad45e199a739e081e2a1ffb4dfdf7283d59bc29f257215f69fa830dc43a2ea78
+  ocr: true
 pdf_sha256: 296b5bf34c4ec496b1e72ea6c9f878aee26ec68bb05afce2a21e4f469c7f3147
-parse_error: 'LeakedMarkupError: chp_IV__p_2: markup in text: ''POINT 1.'''
+tanggal_pengundangan: '2021-10-29'
+tanggal_berlaku: '2021-10-29'
+lembaran_negara: 'LN.2021/No.246, TLN No.6736, jdih.setneg.go.id : 104 hlm.'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-2021
+  source_pdf_url: https://peraturan.go.id/files/uu7-2021bt.pdf
+bpk:
+  id: 185162
+  files:
+  - url: https://peraturan.bpk.go.id/Download/178620/UU%20Nomor%207%20Tahun%202021.pdf
+    bpk_file_id: 178620
+    filename: UU Nomor 7 Tahun 2021.pdf
+    sha256: ad45e199a739e081e2a1ffb4dfdf7283d59bc29f257215f69fa830dc43a2ea78
+    bytes: 12126450
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    Mengubah:
+    - id: uu_2_2020
+      citation: UU No. 2 Tahun 2020
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        2020 tentang Kebijakan Keuangan Negara dan Stabilitas Sistem Keuangan untuk
+        Penanganan Pandemi Corona Virus Disease 2019 (Covid-19) dan/atau Dalam Rangka
+        Menghadapi Ancaman yang Membahayakan Perekonomian Nasional dan/atau Stabilitas
+        Sistem Keuangan Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/137323/uu-no-2-tahun-2020
+      note: null
+    - id: perppu_1_2020
+      citation: PERPU No. 1 Tahun 2020
+      tentang: Kebijakan Keuangan Negara dan Stabilitas Sistem Keuangan untuk Penanganan
+        Pandemi Corona Virus Disease 2019 (COVID-19) dan/atau dalam Rangka Menghadapi
+        Ancaman yang Membahayakan Perekonomian Nasional dan/atau Stabilitas Sistem
+        Keuangan
+      url: https://peraturan.bpk.go.id/Details/135060/perpu-no-1-tahun-2020
+      note: null
+    - id: uu_42_2009
+      citation: UU No. 42 Tahun 2009
+      tentang: Perubahan Ketiga Atas Undang-Undang Nomor 8 Tahun 1983 tentang Pajak
+        Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan Atas Barang Mewah
+      url: https://peraturan.bpk.go.id/Details/38787/uu-no-42-tahun-2009
+      note: null
+    - id: uu_16_2009
+      citation: UU No. 16 Tahun 2009
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 5 Tahun
+        2008 Tentang Perubahan Keempat Atas Undang-Undang Nomor 6 Tahun 1983 Tentang
+        Ketentuan Umum dan Tata Cara Perpajakan Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/38624/uu-no-16-tahun-2009
+      note: null
+    - id: uu_36_2008
+      citation: UU No. 36 Tahun 2008
+      tentang: Perubahan Keempat Atas Undang-Undang Nomor 7 Tahun 1983 tentang Pajak
+        Penghasilan
+      url: https://peraturan.bpk.go.id/Details/39704/uu-no-36-tahun-2008
+      note: null
+    - id: uu_39_2007
+      citation: UU No. 39 Tahun 2007
+      tentang: Perubahan atas Undang-Undang Nomor 11 Tahun 1995 tentang Cukai
+      url: https://peraturan.bpk.go.id/Details/39962/uu-no-39-tahun-2007
+      note: null
+    - id: uu_11_1995
+      citation: UU No. 11 Tahun 1995
+      tentang: Cukai
+      url: https://peraturan.bpk.go.id/Details/46203/uu-no-11-tahun-1995
+      note: null
+    - id: uu_8_1983
+      citation: UU No. 8 Tahun 1983
+      tentang: Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang
+        Mewah
+      url: https://peraturan.bpk.go.id/Details/46990/uu-no-8-tahun-1983
+      note: null
+    - id: uu_7_1983
+      citation: UU No. 7 Tahun 1983
+      tentang: Pajak Penghasilan
+      url: https://peraturan.bpk.go.id/Details/46988/uu-no-7-tahun-1983
+      note: null
+    - id: uu_6_1983
+      citation: UU No. 6 Tahun 1983
+      tentang: Ketentuan Umum dan Tata Cara Perpajakan
+      url: https://peraturan.bpk.go.id/Details/46986/uu-no-6-tahun-1983
+      note: null
+uji_materi:
+- putusan: 83/PUU-XXI/2023
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/261/putusan_mkri_83_PUU-XXI_2023.pdf
+  amar: 1) Sepanjang frasa “pemeriksaan bukti permulaan sebelum dilakukan penyidikan”
+    dalam Pasal 43A ayat (1) dalam Pasal 2 angka 13 Undang-Undang Nomor 7 Tahun 2021
+    tentang Harmonisasi Peraturan Perpajakan (Lembaran Negara Republik Indonesia Tahun
+    2021 Nomor 246, Tambahan Lembaran Negara Republik Indonesia Nomor 6736) bertentangan
+    dengan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai
+    kekuatan hukum mengikat, sepanjang tidak dimaknai “tidak terdapat tindakan upaya
+    paksa”, sehingga selengkapnya norma Pasal 43A ayat (1) dalam Pasal 2 angka 13
+    Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (Lembaran
+    Negara Republik Indonesia Tahun 2021 Nomor 246, Tambahan Lembaran Negara Republik
+    Indonesia Nomor 6736) menjadi “Direktur Jenderal Pajak berdasarkan informasi,
+    data, laporan, dan pengaduan berwenang melakukan pemeriksaan bukti permulaan sebelum
+    dilakukan penyidikan tindak pidana di bidang perpajakan, sepanjang tidak terdapat
+    tindakan upaya paksa”; 2) Menyatakan Pasal 43A ayat (4) dalam Pasal 2 angka 13
+    Undang-Undang Nomor 7 Tahun 2021 tentang Harmonisasi Peraturan Perpajakan (Lembaran
+    Negara Republik Indonesia Tahun 2021 Nomor 246, Tambahan Lembaran Negara Republik
+    Indonesia Nomor 6736) bertentangan dengan Undang-Undang Dasar Negara Republik
+    Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat, sepanjang tidak
+    dimaknai “tidak melanggar hak asasi wajib pajak”, sehingga selengkapnya norma
+    Pasal 43A ayat (4) dalam Pasal 2 angka 13 Undang-Undang Nomor 7 Tahun 2021 tentang
+    Harmonisasi Peraturan Perpajakan (Lembaran Negara Republik Indonesia Tahun 2021
+    Nomor 246, Tambahan Lembaran Negara Republik Indonesia Nomor 6736) menjadi “Tata
+    cara pemeriksaan bukti permulaan tindak pidana di bidang perpajakan sebagaimana
+    dimaksud pada ayat (1) dan ayat (2) diatur dengan atau berdasarkan Peraturan Menteri
+    Keuangan, sepanjang tidak mengatur hal-hal yang berkaitan dengan upaya paksa dan
+    melanggar hak asasi wajib pajak”.

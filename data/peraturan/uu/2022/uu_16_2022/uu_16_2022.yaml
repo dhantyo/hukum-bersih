@@ -11,8 +11,8 @@ tanggal_penetapan: '2022-07-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-2022
-source_pdf_url: https://peraturan.go.id/files/UU_Nomor_16.pdf
+source_url: https://peraturan.bpk.go.id/Details/217799/uu-no-16-tahun-2022
+source_pdf_url: https://peraturan.bpk.go.id/Download/224675/UU%20Nomor%2016%20Tahun%202022-.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,34 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_16_2022_2022-07-25
+  kind: asli
+  source: official
+  date: '2022-07-25'
+  date_basis: tanggal_penetapan
+  text: uu_16_2022_2022-07-25.txt
+  pasal_count: 23
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4b14a1169e9481d53ff6811a1b62b45ebfc61fcd12fc3fce95f1b29934db4d82
+  ocr: true
 pdf_sha256: 9aacb80c7219c1e84d9cbd0a9f4f9ad781587969a7e2e95e305248d2f2799e2d
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '2022-07-25'
+tanggal_berlaku: '2022-07-25'
+lembaran_negara: 'LN.2022/No.159, TLN No.6805, jdih.setneg.go.id: 14 hlm.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-2022
+  source_pdf_url: https://peraturan.go.id/files/UU_Nomor_16.pdf
+bpk:
+  id: 217799
+  files:
+  - url: https://peraturan.bpk.go.id/Download/224675/UU%20Nomor%2016%20Tahun%202022-.pdf
+    bpk_file_id: 224675
+    filename: UU Nomor 16 Tahun 2022-.pdf
+    sha256: 4b14a1169e9481d53ff6811a1b62b45ebfc61fcd12fc3fce95f1b29934db4d82
+    bytes: 1210791
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

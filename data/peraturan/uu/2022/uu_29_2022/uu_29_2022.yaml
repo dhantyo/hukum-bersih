@@ -12,8 +12,8 @@ tanggal_penetapan: '2022-12-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-29-tahun-2022
-source_pdf_url: https://peraturan.go.id/files/1.+Salinan+UU+Nomor+29+Tahun+2022.pdf
+source_url: https://peraturan.bpk.go.id/Details/232726/uu-no-29-tahun-2022
+source_pdf_url: https://peraturan.bpk.go.id/Download/277991/UU%20Nomor%2029%20Tahun%202022.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,5 +28,34 @@ versions:
   date: '2022-12-08'
   date_basis: tanggal_penetapan
   text: uu_29_2022_2022-12-08.txt
-  pasal_count: 20
+  pasal_count: 23
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 11be614cb68c26ed93438b68d535a852a51d820688fcfdccf30ba2a5a4b799db
+  ocr: true
 pdf_sha256: 11be614cb68c26ed93438b68d535a852a51d820688fcfdccf30ba2a5a4b799db
+tanggal_pengundangan: '2022-12-08'
+tanggal_berlaku: '2022-12-08'
+lembaran_negara: 'LN.2022/No.223, TLN No.6831, jdih.setneg.go.id: 15 hlm.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-29-tahun-2022
+  source_pdf_url: https://peraturan.go.id/files/1.+Salinan+UU+Nomor+29+Tahun+2022.pdf
+bpk:
+  id: 232726
+  files:
+  - url: https://peraturan.bpk.go.id/Download/277991/UU%20Nomor%2029%20Tahun%202022.pdf
+    bpk_file_id: 277991
+    filename: UU Nomor 29 Tahun 2022.pdf
+    sha256: 11be614cb68c26ed93438b68d535a852a51d820688fcfdccf30ba2a5a4b799db
+    bytes: 1475652
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/277992/UU%20Nomor%2029%20Tahun%202022%20-%20Lampiran%20I-II.pdf
+    bpk_file_id: 277992
+    filename: UU Nomor 29 Tahun 2022 - Lampiran I-II.pdf
+    sha256: 85fec887659440768b610fa3096adb5ad5acc6bbe55ddde7b0b97b34d5e23084
+    bytes: 10379771
+    archive_url: null
+  status_peraturan: null
+  tanggal_pengundangan: '2002-12-08'
+uji_materi: null

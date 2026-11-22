@@ -15,8 +15,8 @@ tanggal_penetapan: '2021-05-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-2021
-source_pdf_url: https://peraturan.go.id/files/ln113tln6684-2021.pdf
+source_url: https://peraturan.bpk.go.id/Details/172399/uu-no-1-tahun-2021
+source_pdf_url: https://peraturan.bpk.go.id/Download/261616/UU%20Nomor%201%20Tahun%202021.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,4 +32,51 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2021_2021-05-07.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7d86744d77174ee508a2632795cf8a1bda0bea64241d31906a7a0a5e453faf45
+  ocr: true
 pdf_sha256: 864c06d70e8e222da972cce6e864df88c2086ec44fd65d091e29dc1f914668b3
+tanggal_pengundangan: '2021-05-07'
+tanggal_berlaku: '2021-05-07'
+lembaran_negara: 'LN.2021/No.113, TLN No.6684, jdih.setneg.go.id : 4 hlm.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+  - HUBUNGAN INTERNASIONAL / KERJA SAMA INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-2021
+  source_pdf_url: https://peraturan.go.id/files/ln113tln6684-2021.pdf
+bpk:
+  id: 172399
+  files:
+  - url: https://peraturan.bpk.go.id/Download/261616/UU%20Nomor%201%20Tahun%202021.pdf
+    bpk_file_id: 261616
+    filename: UU Nomor 1 Tahun 2021.pdf
+    sha256: 7d86744d77174ee508a2632795cf8a1bda0bea64241d31906a7a0a5e453faf45
+    bytes: 580404
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/261617/UU%20Nomor%201%20Tahun%202021%20-%20Naskah%20Terjemahan.pdf
+    bpk_file_id: 261617
+    filename: UU Nomor 1 Tahun 2021 - Naskah Terjemahan.pdf
+    sha256: c7c94f9aba17a0098ecf869263a92c4d11381e50de9aceb56987bfa0963b8a48
+    bytes: 753928
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/261618/UU%20Nomor%201%20Tahun%202021%20-%20Naskah%20Resmi.pdf
+    bpk_file_id: 261618
+    filename: UU Nomor 1 Tahun 2021 - Naskah Resmi.pdf
+    sha256: d540e51293c27046e42717900c13c6a78dfd38437f3bc98674505d49e7ed8571
+    bytes: 1489952
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/261619/UU%20Nomor%201%20Tahun%202021%20-%20Lampiran%20IE-CEPA.pdf
+    bpk_file_id: 261619
+    filename: UU Nomor 1 Tahun 2021 - Lampiran IE-CEPA.pdf
+    sha256: 6fda396f64a1a29a32fe4a556ff607416247a7d37e54ad0afe315a5b8293d7d3
+    bytes: 16839458
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/261620/UU%20Nomor%201%20Tahun%202021%20-%20Annex%20IE-CEPA.pdf
+    bpk_file_id: 261620
+    filename: UU Nomor 1 Tahun 2021 - Annex IE-CEPA.pdf
+    sha256: dc44cd5ccac36b5848b81434031d4101d13ce04dc0521091d2d09ba91c575bbe
+    bytes: 8629209
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

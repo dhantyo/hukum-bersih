@@ -17,8 +17,8 @@ tanggal_penetapan: '2020-11-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-2020
-source_pdf_url: https://peraturan.go.id/files/uu12-2020bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/154124/uu-no-12-tahun-2020
+source_pdf_url: https://peraturan.bpk.go.id/Download/146433/UU%20Nomor%2012%20Tahun%202020.pdf
 relationships:
   amends: []
   amended_by: []
@@ -34,4 +34,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2020_2020-11-02.txt
   pasal_count: 2
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2086759d07d9928dae328db1b5aa0678c04f0954fdae42d4767f56912bc2feea
+  ocr: true
 pdf_sha256: 1d48713ee7dc3503d25f46308de96a30cfe10e7d0ec4f24124a6b5ba06ec9565
+tanggal_pengundangan: '2020-11-03'
+tanggal_berlaku: '2020-11-03'
+lembaran_negara: 'LN.2020/No.247, TLN No.6574, jdih.setkab.go.id : 4 hlm.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-2020
+  source_pdf_url: https://peraturan.go.id/files/uu12-2020bt.pdf
+bpk:
+  id: 154124
+  files:
+  - url: https://peraturan.bpk.go.id/Download/146433/UU%20Nomor%2012%20Tahun%202020.pdf
+    bpk_file_id: 146433
+    filename: UU Nomor 12 Tahun 2020.pdf
+    sha256: 2086759d07d9928dae328db1b5aa0678c04f0954fdae42d4767f56912bc2feea
+    bytes: 333786
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

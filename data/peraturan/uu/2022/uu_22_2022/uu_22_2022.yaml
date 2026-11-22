@@ -11,8 +11,8 @@ tanggal_penetapan: '2022-08-03'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-22-tahun-2022
-source_pdf_url: https://peraturan.go.id/files/Salinan_UU_No_22_Tahun_2022.pdf
+source_url: https://peraturan.bpk.go.id/Details/218804/uu-no-22-tahun-2022
+source_pdf_url: https://peraturan.bpk.go.id/Download/213197/UU%20Nomor%2022%20Tahun%202022.pdf
 relationships:
   amends: []
   amended_by: []
@@ -27,5 +27,33 @@ versions:
   date: '2022-08-03'
   date_basis: tanggal_penetapan
   text: uu_22_2022_2022-08-03.txt
-  pasal_count: 8
+  pasal_count: 99
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2f4bec8efbaadcd26ff82e049e8ce89ec5a95ecb51144905c5a936242a3a7103
+  ocr: true
 pdf_sha256: 2f4bec8efbaadcd26ff82e049e8ce89ec5a95ecb51144905c5a936242a3a7103
+tanggal_pengundangan: '2022-08-03'
+tanggal_berlaku: '2022-08-03'
+lembaran_negara: 'LN.2022/No.165, TLN No.6811, jdih.setneg.go.id: 39 hlm.'
+subjek: HAK ASASI MANUSIA - HUKUM PIDANA, PERDATA, DAN DAGANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-22-tahun-2022
+  source_pdf_url: https://peraturan.go.id/files/Salinan_UU_No_22_Tahun_2022.pdf
+bpk:
+  id: 218804
+  files:
+  - url: https://peraturan.bpk.go.id/Download/213197/UU%20Nomor%2022%20Tahun%202022.pdf
+    bpk_file_id: 213197
+    filename: UU Nomor 22 Tahun 2022.pdf
+    sha256: 2f4bec8efbaadcd26ff82e049e8ce89ec5a95ecb51144905c5a936242a3a7103
+    bytes: 2920366
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_12_1995
+      citation: UU No. 12 Tahun 1995
+      tentang: Pemasyarakatan
+      url: https://peraturan.bpk.go.id/Details/46205/uu-no-12-tahun-1995
+      note: null
+uji_materi: null

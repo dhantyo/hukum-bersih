@@ -15,8 +15,8 @@ tanggal_penetapan: '2021-12-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-2021
-source_pdf_url: https://peraturan.go.id/files/ln297tln6754-2021.pdf
+source_url: https://peraturan.bpk.go.id/Details/195543/uu-no-10-tahun-2021
+source_pdf_url: https://peraturan.bpk.go.id/Download/189367/UU%20Nomor%2010%20Tahun%202021.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,4 +32,27 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2021_2021-12-31.txt
   pasal_count: 11
+  parser_version: 11
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f33ee7ad7f28977bc1227bf3ea2ef533a17e3e2ca71c5fda456c3e38aefaff95
+  ocr: true
 pdf_sha256: 8dc8ef222458f477e1c7254a0f2dd1e9d1f19961f2b41fb52f3ef09a1876e766
+tanggal_pengundangan: '2021-12-31'
+tanggal_berlaku: '2021-12-31'
+lembaran_negara: 'LN.2021/No.297, TLN No. 6754, jdih.setneg.go.id : 8 hlm.'
+subjek: HUKUM ACARA DAN PERADILAN - DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN
+  / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-2021
+  source_pdf_url: https://peraturan.go.id/files/ln297tln6754-2021.pdf
+bpk:
+  id: 195543
+  files:
+  - url: https://peraturan.bpk.go.id/Download/189367/UU%20Nomor%2010%20Tahun%202021.pdf
+    bpk_file_id: 189367
+    filename: UU Nomor 10 Tahun 2021.pdf
+    sha256: f33ee7ad7f28977bc1227bf3ea2ef533a17e3e2ca71c5fda456c3e38aefaff95
+    bytes: 834574
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
