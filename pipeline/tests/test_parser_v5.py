@@ -226,3 +226,8 @@ def test_own_pasal_2_after_amendments_in_pasal_i():                 # UU 2/1953,
     doc = parse_lines(["Menimbang : a. bahwa x;", "Pasal I", "1. Ketentuan Pasal 1 dan Pasal 2 diubah sehingga berbunyi sebagai berikut:",
                        "Pasal 1", "Satu.", "Pasal 2", "Dua.", "Pasal II", "Berlaku."])
     assert [b.label for b in kinds(doc, "pasal")] == ["Pasal I", "Pasal II"]
+
+
+def test_ocr_serials_and_bars():                                      # UU 2/2021, UU 24/2022
+    page = ["teks", "SK Na 103881 A", "| Pasal 1", "SK No 1039N5 A", "SK Ng 103884 A", "isi"]
+    assert _clean_page(page, first_page=False) == ["teks", "Pasal 1", "isi"]

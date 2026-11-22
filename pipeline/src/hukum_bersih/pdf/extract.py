@@ -27,6 +27,7 @@ NEVER_CONTENT_RE = re.compile(
     r"^(?:"
     r"Halaman\s+\d+\s+dari\s+\d+"
     r"|SK\s+No\s*[\d'\s]+[A-Z]?"
+    r"|SK\s*N[oa-z9]\.?\s*[0-9A-Z]{5,8}\s*[A-Z]?\W{0,2}"   # OCR: "SK Na 103881 A", "SK No 1039N5 A"
     r"|-\s*\d+\s*-"                                      # page numbers like - 3 -
     r"|(?:www\.)?peraturan\.go\.id"
     r"|(?:www\.)?dpr\.go\.id"
@@ -156,7 +157,7 @@ LEAD_NOISE_RE = re.compile(r"^(?:-\s*\d{1,4}\s*-\s*['|]*\s*)+(?=\S)")
 
 
 def _strip_edges(ln: str) -> str:
-    ln = re.sub(r"\s+\|\s*$", "", ln)                      # OCR's stray bar ("PENJELASAN |")
+    ln = re.sub(r"^\|\s+|\s+\|\s*$", "", ln)               # OCR's stray bar ("PENJELASAN |", "| Pasal 1")
     return LEAD_NOISE_RE.sub("", EDGE_NOISE_RE.sub("", ln)).strip()
 
 
