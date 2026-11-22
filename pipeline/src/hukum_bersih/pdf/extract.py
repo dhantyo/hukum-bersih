@@ -149,8 +149,18 @@ def rows(words: list[tuple]) -> list[str]:
     return [" ".join(w for _, w in sorted(ws)) for _, _, ws in lines]
 
 
+# A page number or the "SK No" serial printed level with a line of text ends up on that line
+# ("PPPK. | -7-", "…Nomor 6516), SK No 095251 A '"); OCR adds stray marks ("- 33 - '").
+EDGE_NOISE_RE = re.compile(r"(?:\s*\|?\s*(?:-\s*\d{1,4}\s*-|SK\s*No\.?\s*[\d\s]{5,9}\s*[A-Z]?)\s*['|.,]*)+$")
+LEAD_NOISE_RE = re.compile(r"^(?:-\s*\d{1,4}\s*-\s*['|]*\s*)+(?=\S)")
+
+
+def _strip_edges(ln: str) -> str:
+    return LEAD_NOISE_RE.sub("", EDGE_NOISE_RE.sub("", ln)).strip()
+
+
 def _clean_page(raw: list[str], first_page: bool) -> list[str]:
-    lines = [NOISE_RE.sub("", re.sub(r"\s+", " ", ln).strip()) for ln in raw]
+    lines = [_strip_edges(NOISE_RE.sub("", re.sub(r"\s+", " ", ln).strip())) for ln in raw]
     lines = [ln for ln in lines if ln]
     # OCR fragments of the crest ("Pas", "4", "£") stand above the running header: drop short
     # bits there, and only there (a real page can start with a short line such as "1.")
@@ -176,14 +186,31 @@ def _clean_page(raw: list[str], first_page: bool) -> list[str]:
     while out and (PAGE_NO_RE.match(out[-1]) or out[-1] == "-"):
         out.pop()
     for k in range(len(out) - 1, max(len(out) - 1 - CATCHWORD_ZONE, -1), -1):
-        if CATCHWORD_RE.match(out[k]):
+        if is_page_turn(out[k]):
             del out[k]
     return [ln for ln in out if not NEVER_CONTENT_RE.match(ln)]
 
 
 # Page-turn words ("catchwords"): the first words of the next page, printed at the foot of a
 # page and ending in an ellipsis: "Pasal 2…", "d. bahwa . . .", "MEMUTUSKAN :..".
-CATCHWORD_RE = re.compile(r"^.{1,70}?(?:…|\.\s?\.\s?\.|:\s?\.\.)\.?\s*$")
+PAGE_TURN_ENDINGS = {"…", "….", "...", "....", ":..", ":...", ":…", ":…."}
+
+
+def is_page_turn(line: str) -> bool:
+    """A page-turn word ends in "…" or three dots ("Pasal 2…", "d. bahwa . . .", "MEMUTUSKAN :..");
+    a longer run of dots is a form's dot leader and content ("Hari lahir:.............", UU 12/1953)."""
+    if len(line) > 70:
+        return False
+    m = re.search(r"[.…:\s]+$", line)
+    if not m or not line[:m.start()].strip():
+        return False
+    tail = re.sub(r"\s", "", m[0])
+    head = line[:m.start()].rstrip()
+    # page-turn words are a few words ("Pasal 2", "d. bahwa", "(5) Ketentuan"); a longer line
+    # ending in dots is text with a page-turn on the same line, handled by _cut_page_turn_tail
+    return tail in PAGE_TURN_ENDINGS and not head.endswith(".") and len(head.split()) <= 4
+
+
 CATCHWORD_ZONE = 2  # only the last lines of a page
 
 
@@ -193,8 +220,27 @@ def clean_lines(pages: list[list[str]]) -> list[str]:
         out.extend(_clean_page(raw, first_page=(k == 0)))
     # Retyped PDFs do not keep the printed page breaks, so a page-turn word can stand anywhere;
     # it is always followed by the words it announces ("Pasal 15…" / "Pasal 15").
-    return [ln for i, ln in enumerate(out)
-            if not (CATCHWORD_RE.match(ln) and i + 1 < len(out) and _announces(ln, out[i + 1]))]
+    kept = []
+    for i, ln in enumerate(out):
+        near = out[max(0, i - 3):i] + out[i + 1:i + 4]
+        if is_page_turn(ln) and any(_announces(ln, o) for o in near):
+            continue
+        kept.append(_cut_page_turn_tail(ln, near))
+    return kept
+
+
+def _cut_page_turn_tail(ln: str, near: list[str]) -> str:
+    """A page-turn printed on the same line as text, right-aligned ("… PESAWAT UDARA BAB VI . . .",
+    UU 1/2009): cut the last words before the ellipsis when a nearby line starts with them."""
+    m = re.search(r"\s*(?:…|\.\s?\.\s?\.)\.?\s*$", ln)
+    if not m or ln[:m.start()].rstrip().endswith("."):
+        return ln
+    words = ln[:m.start()].split()
+    for k in range(1, min(5, len(words) - 1) + 1):
+        stem = " ".join(words[-k:])
+        if len(stem) >= 3 and any(o.replace(" ", "").startswith(stem.replace(" ", "")) for o in near):
+            return " ".join(words[:-k])
+    return ln
 
 
 def _announces(catchword: str, nxt: str) -> bool:

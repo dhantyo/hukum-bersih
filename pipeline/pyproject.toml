@@ -22,6 +22,7 @@ hukum-bersih = "hukum_bersih.cli:main"
 
 [dependency-groups]
 dev = [
+    "huggingface-hub>=2.4.0",
     "pytest>=8",
     "remotezip>=0.12.6",
     "ruff>=0.6",

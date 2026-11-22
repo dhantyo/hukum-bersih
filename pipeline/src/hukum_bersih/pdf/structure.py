@@ -40,7 +40,8 @@ PREAMBLE_RE = re.compile(
 )
 # "PENJELASAN", "PENJELASAN ATAS", old spelling "PENDJELASAN", optionally followed on the
 # same line by the law's citation in capitals ("PENDJELASAN UNDANG-UNDANG 1945 NO. 1").
-PENJELASAN_RE = re.compile(r"^(?:RANCANGAN\s+|MEMORI\s+)?PEND?JELASAN(?:\s+ATAS)?(?:\s+[A-Z0-9 .,/()-]+)?$")
+# "PENJELASAN ATAS UNDANG-UNDANG No. 6 TAHUN 1967" (the "No." is not in capitals)
+PENJELASAN_RE = re.compile(r"^(?:RANCANGAN\s+|MEMORI\s+)?PEND?JELASAN\.?(?:\s+ATAS)?(?:\s+(?:[A-Z0-9 .,/()-]|No\.)+)?$")
 # Closing formula and signatures, including old-spelling (Ejaan Lama) laws:
 # "Djakarta, tanggal 23 Nopember 1945", "Diumumkan pada tanggal ...", "Dikeluarkan di ...".
 CLOSING_RE = re.compile(
@@ -236,6 +237,12 @@ class Parser:
                 break
         return " ".join(parts), j - i
 
+    def amends_so_far(self) -> bool:
+        """Pasal I so far contains amendment wording."""
+        k = max(i for i, b in enumerate(self.doc.blocks) if b.kind == "pasal")
+        text = " ".join(b.text for b in self.doc.blocks[k:])
+        return bool(re.search(r"diubah|disisipkan|dihapus|ditambah|sebagai berikut|berbunyi", text))
+
     def reads_as_amending(self, i: int) -> bool:
         title = " ".join(b.text for b in self.doc.blocks if b.kind == "title").upper()
         nxt = " ".join(self.lines[i + 1:i + 3])
@@ -293,6 +300,9 @@ class Parser:
         if self.in_penjelasan:
             return self.step_penjelasan(line)
 
+        if (self.amending and self.last_pasal == 1 and (m := PASAL_RE.match(line)) and m[1] == "2"
+                and not self.amends_so_far()):
+            self.amending = False                # "Pasal I." was a misprint for Pasal 1 (UU 16/1953)
         if self.amending and (BAB_RE.match(line) or BAGIAN_RE.match(line) or PARAGRAF_RE.match(line)
                               or (PASAL_RE.match(line) and PASAL_RE.match(line)[1][0].isdigit())):
             self.append(line)
@@ -384,10 +394,10 @@ class Parser:
         # "I. UMUM" / "II. PASAL DEMI PASAL", with the numeral sometimes on its own line
         if re.match(r"^(?:I|II)\.$", line) and not self.p_last_pasal:
             return 1
-        if re.match(r"^(?:I\.\s*)?UMUM$", line) and not self.p_last_pasal:
+        if re.match(r"^(?:I\.\s*|A\.\s*)?(?:PEND?JELASAN\s+)?UMUM\.?$", line) and not self.p_last_pasal:
             self.emit(Block("umum", text="Umum"))
             return 1
-        if re.match(r"^(?:II\.\s*)?PASAL DEMI PASAL$", line) and not self.p_last_pasal:
+        if re.match(r"^(?:II\.\s*|B\.\s*)?(?:PEND?JELASAN\s+)?PASAL DEMI PASAL\.?$", line) and not self.p_last_pasal:
             self.emit(Block("pasal_demi_pasal", text="Pasal demi Pasal"))
             return 1
         if (m := PASAL_RE.match(line)) and m[1][0].isdigit():

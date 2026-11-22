@@ -166,3 +166,50 @@ def test_lampiran_after_the_penjelasan():                         # UU 14/2013
     text = to_bluebell(doc)
     assert "ATTACHMENT Lampiran" in text and text.index("ATTACHMENT Penjelasan") < text.index("ATTACHMENT Lampiran")
     to_akn(text, "/akn/id/act/uu/2013/14", "act")                         # valid Akoma Ntoso
+
+
+def test_misprinted_pasal_i_in_an_ordinary_law():                  # UU 16/1953
+    doc = parse_lines(["Menimbang : a. bahwa x;", "Pasal I.", "Peraturan ini berlaku.", "Pasal 2", "dua", "Pasal 3", "tiga"])
+    assert [b.label for b in kinds(doc, "pasal")] == ["Pasal I", "Pasal 2", "Pasal 3"]
+
+
+def test_form_dot_leaders_are_not_page_turn_words():               # UU 12/1953
+    form = ["teks", "Hari lahir:.............Tempat kelahiran:.....", "Di............................"]
+    assert _clean_page(form, first_page=False) == form
+    assert _clean_page(["teks", "Pasal 7…."], first_page=False) == ["teks"]
+
+
+def test_penjelasan_heading_with_a_full_stop():                     # UU 3/1949, UU 4/1956
+    doc = parse_lines(["Menimbang : a. bahwa x;", "Pasal 1", "isi.", "MEMORI PENJELASAN.", "Teks."])
+    assert any(b.kind == "penjelasan" for b in doc.blocks)
+
+
+def test_page_numbers_and_serials_on_a_text_line():               # UU 20/2023, UU 6/2021, UU 36/2014
+    assert _clean_page(["teks", "PPPK. | -7-", "Nomor 6516), SK No 095251 A '", "- 33 - ' (2) Proses evaluasi"],
+                       first_page=False) == ["teks", "PPPK.", "Nomor 6516),", "(2) Proses evaluasi"]
+    assert _clean_page(["teks", "Rp 1.000.000,- (satu juta rupiah)."], first_page=False)[1] == \
+        "Rp 1.000.000,- (satu juta rupiah)."
+
+
+def test_page_turn_word_just_after_its_heading():                  # UU 1/2009
+    from hukum_bersih.pdf.extract import clean_lines
+
+    assert clean_lines([["BAB VI", "RANCANG BANGUN", "BAB VI...", "Bagian Kesatu"]]) == [
+        "BAB VI", "RANCANG BANGUN", "Bagian Kesatu"]
+
+
+def test_penjelasan_with_lettered_sections():                       # UU 6/1967
+    doc = parse_lines(["Menimbang : a. bahwa x;", "Pasal 1", "isi.", "PENJELASAN ATAS UNDANG-UNDANG No. 6 TAHUN 1967",
+                       "A. PENJELASAN UMUM.", "Teks.", "B. PENJELASAN PASAL DEMI PASAL.", "Pasal 1", "Cukup jelas."])
+    assert [b.kind for b in doc.blocks if b.kind in {"penjelasan", "umum", "pasal_demi_pasal", "p_pasal"}] == [
+        "penjelasan", "umum", "pasal_demi_pasal", "p_pasal"]
+
+
+def test_page_turn_on_the_same_line_as_text():                     # UU 1/2009
+    from hukum_bersih.pdf.extract import clean_lines
+
+    assert clean_lines([["BAB VI", "RANCANG BANGUN DAN PRODUKSI PESAWAT UDARA BAB VI . . .", "Bagian Kesatu"]]) == [
+        "BAB VI", "RANCANG BANGUN DAN PRODUKSI PESAWAT UDARA", "Bagian Kesatu"]
+    assert clean_lines([["sanksi administratif berupa: (2) Setiap...", "(2) Setiap orang"]]) == [
+        "sanksi administratif berupa:", "(2) Setiap orang"]
+    assert clean_lines([["x", "dan seterusnya ...", "lain", "y", "z"]]) == ["x", "dan seterusnya ...", "lain", "y", "z"]
