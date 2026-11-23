@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 12 Tahun 1951 tentang Penghapusan Badan Hukum \"Algem
 tentang: PENGHAPUSAN BADAN HUKUM \"ALGEMEENE VOLKSCREDIETBANK\"
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1951-08-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1951
-source_pdf_url: https://peraturan.go.id/files/51uu012.pdf
+source_url: https://peraturan.bpk.go.id/Details/39852/uu-no-12-tahun-1951
+source_pdf_url: https://peraturan.bpk.go.id/Download/29444/UU%20Nomor%2012%20Tahun%201951.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,41 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_12_1951_1951-08-29
+  kind: asli
+  source: official
+  date: '1951-08-29'
+  date_basis: tanggal_penetapan
+  text: uu_12_1951_1951-08-29.txt
+  pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0ea8357f89e5c08c9c92a40f213154a3366696db6229c0e95989c4481cc59f08
 pdf_sha256: 64097fdca333e1c8866377e4b7cc63cfb390f5dd3c3082537ff91e8fc1a79650
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1951-09-10'
+tanggal_berlaku: '1951-09-10'
+lembaran_negara: 'LN.1951/NO.80, LL SETNEG : 3 HLM.'
+subjek: PEMBENTUKAN, PERUBAHAN, DAN PEMBUBARAN KOMISI / KOMITE / BADAN / DEWAN / STAF
+  KHUSUS / TIM / PANITIA - PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1951
+  source_pdf_url: https://peraturan.go.id/files/51uu012.pdf
+bpk:
+  id: 39852
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29444/UU%20Nomor%2012%20Tahun%201951.pdf
+    bpk_file_id: 29444
+    filename: UU Nomor 12 Tahun 1951.pdf
+    sha256: 0ea8357f89e5c08c9c92a40f213154a3366696db6229c0e95989c4481cc59f08
+    bytes: 55156
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: perppu_14_1960
+      citation: PERPU No. 14 Tahun 1960
+      tentang: Perubahan Undang-Undang No. 12 Tahun 1951 Tentang Penghapusan Badan
+        hukum Algemene Volkscredietbank
+      url: https://peraturan.bpk.go.id/Details/53460/perpu-no-14-tahun-1960
+      note: null
+uji_materi: null

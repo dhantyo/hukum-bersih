@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 9 Tahun 1951 tentang Pembagian Tenaga Dokter, Dokter 
   Dan Bidan Secara Rasionil
 tentang: PEMBAGIAN TENAGA DOKTER, DOKTER GIGI DAN BIDAN SECARA RASIONIL
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1951-06-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1951
-source_pdf_url: https://peraturan.go.id/files/uu9-1951.pdf
+source_url: https://peraturan.bpk.go.id/Details/39843/uu-no-9-tahun-1951
+source_pdf_url: https://peraturan.bpk.go.id/Download/29435/UU%20Nomor%209%20Tahun%201951.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_9_1951_1951-06-30
+  kind: asli
+  source: official
+  date: '1951-06-30'
+  date_basis: tanggal_penetapan
+  text: uu_9_1951_1951-06-30.txt
+  pasal_count: 6
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1452c31cf010dbf94554a552832205735661fbcbc94d2867a877dcfead1adb8c
 pdf_sha256: df2e943108361e243da90edab4ab127f50d78a590f806f88ded1c5702d86958d
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1951-07-13'
+tanggal_berlaku: '1951-07-13'
+lembaran_negara: 'LN.1951/NO.45, LL SETNEG : 3 HLM.'
+subjek: KESEHATAN - JABATAN / PROFESI / KEAHLIAN / SERTIFIKASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1951
+  source_pdf_url: https://peraturan.go.id/files/uu9-1951.pdf
+bpk:
+  id: 39843
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29435/UU%20Nomor%209%20Tahun%201951.pdf
+    bpk_file_id: 29435
+    filename: UU Nomor 9 Tahun 1951.pdf
+    sha256: 1452c31cf010dbf94554a552832205735661fbcbc94d2867a877dcfead1adb8c
+    bytes: 55727
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_6_1963
+      citation: UU No. 6 Tahun 1963
+      tentang: Tenaga Kesehatan
+      url: https://peraturan.bpk.go.id/Details/50620/uu-no-6-tahun-1963
+      note: null
+uji_materi: null

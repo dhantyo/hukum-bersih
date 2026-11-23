@@ -10,12 +10,12 @@ tentang: MEMBERIKAN PERSETUJUAN KEPADA PERJANJIAN PINJAMAN ANTARA PEMERINTAH KER
   NEDERLAND DAN PEMERINTAH REPUBLIK INDONESIA SERIKAT
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1951-01-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1951
-source_pdf_url: https://peraturan.go.id/files/uu4-1951.pdf
+source_url: https://peraturan.bpk.go.id/Details/39823/uu-no-4-tahun-1951
+source_pdf_url: https://peraturan.bpk.go.id/Download/29413/UU%20Nomor%204%20Tahun%201951.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,6 +23,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_4_1951_1951-01-31
+  kind: asli
+  source: official
+  date: '1951-01-31'
+  date_basis: tanggal_penetapan
+  text: uu_4_1951_1951-01-31.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: cd0c1a5c04fb180d0125a70ebb6bd8a8971dd35ee9d7a7adf7481b86ffbdfe5d
 pdf_sha256: 629c4610ec680e3cd6d8deb93cd777db345d4402c65a2773b27c05599ee2762e
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1951-01-31'
+tanggal_berlaku: '1951-01-31'
+lembaran_negara: 'LN.1951/NO.17, LL SETNEG : 6 HLM.'
+subjek: PIUTANG, UTANG, DAN HIBAH NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1951
+  source_pdf_url: https://peraturan.go.id/files/uu4-1951.pdf
+bpk:
+  id: 39823
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29413/UU%20Nomor%204%20Tahun%201951.pdf
+    bpk_file_id: 29413
+    filename: UU Nomor 4 Tahun 1951.pdf
+    sha256: cd0c1a5c04fb180d0125a70ebb6bd8a8971dd35ee9d7a7adf7481b86ffbdfe5d
+    bytes: 66562
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

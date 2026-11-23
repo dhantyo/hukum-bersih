@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 14 Tahun 1951 tentang Penggantian Pajak Bumi Dengan P
 tentang: PENGGANTIAN PAJAK BUMI DENGAN PAJAK PERALIHAN 1944
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1951-08-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-1951
-source_pdf_url: https://peraturan.go.id/files/51uu014.pdf
+source_url: https://peraturan.bpk.go.id/Details/39882/uu-no-14-tahun-1951
+source_pdf_url: https://peraturan.bpk.go.id/Download/29473/UU%20Nomor%2014%20Tahun%201951.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_14_1951_1951-08-29
+  kind: asli
+  source: official
+  date: '1951-08-29'
+  date_basis: tanggal_penetapan
+  text: uu_14_1951_1951-08-29.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7c443cb999a7df9254860c9543b634e2d003f6eb01c2c27415638b6989846f5d
 pdf_sha256: 612adf325ccc469ea3daa6e07efb4439e2711f8f96911687eac076d7a676272f
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1951-09-17'
+tanggal_berlaku: '1951-01-01'
+lembaran_negara: 'LN.1951/NO.84, LL SETNEG : 2 HLM.'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-1951
+  source_pdf_url: https://peraturan.go.id/files/51uu014.pdf
+bpk:
+  id: 39882
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29473/UU%20Nomor%2014%20Tahun%201951.pdf
+    bpk_file_id: 29473
+    filename: UU Nomor 14 Tahun 1951.pdf
+    sha256: 7c443cb999a7df9254860c9543b634e2d003f6eb01c2c27415638b6989846f5d
+    bytes: 54657
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_1_1949
+      citation: UU No. 1 Tahun 1949
+      tentang: Penggantian Pajak Bumi dengan Pajak Pendapatan
+      url: https://peraturan.bpk.go.id/Details/33340/uu-no-1-tahun-1949
+      note: null
+uji_materi: null

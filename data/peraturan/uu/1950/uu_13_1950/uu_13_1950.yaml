@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 13 Tahun 1950 tentang Pembentukan Daerah-Daerah Kabup
 tentang: PEMBENTUKAN DAERAH-DAERAH KABUPATEN DALAM LINGKUNGAN PROPINSI DJAWA TENGAH
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1950-08-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1950
-source_pdf_url: null
+source_url: https://peraturan.bpk.go.id/Details/60295/uu-no-13-tahun-1950
+source_pdf_url: https://peraturan.bpk.go.id/Download/50097/UU%20Nomor%2013%20Tahun%201950.pdf
 relationships:
   amends: []
   amended_by:
@@ -22,4 +22,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_13_1950_1950-08-08
+  kind: asli
+  source: official
+  date: '1950-08-08'
+  date_basis: tanggal_penetapan
+  text: uu_13_1950_1950-08-08.txt
+  pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3f176e35c651eb182f47f33f9ec7eef92f1fee83faff99fb13ffcaa1380fc81b
+tanggal_pengundangan: '1950-08-08'
+lembaran_negara: 'bphn.go.id : 4 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1950
+  source_pdf_url: null
+bpk:
+  id: 60295
+  files:
+  - url: https://peraturan.bpk.go.id/Download/50097/UU%20Nomor%2013%20Tahun%201950.pdf
+    bpk_file_id: 50097
+    filename: UU Nomor 13 Tahun 1950.pdf
+    sha256: 3f176e35c651eb182f47f33f9ec7eef92f1fee83faff99fb13ffcaa1380fc81b
+    bytes: 23288
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_9_1965
+      citation: UU No. 9 Tahun 1965
+      tentang: Pembentukan Daerah Tingkat II Batang Dengan Mengubah Undang-Undang
+        No.13 Tahun 1950 Tentang Pembentukan Daerah-Daerah Kabupaten Dalam Lingkungan
+        Propinsi Jawa Tengah
+      url: https://peraturan.bpk.go.id/Details/50008/uu-no-9-tahun-1965
+      note: null
+uji_materi: null

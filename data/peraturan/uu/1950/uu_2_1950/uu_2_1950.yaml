@@ -12,29 +12,53 @@ tentang: MENETAPKAN "UU DRT TENTANG PENERBITAN LEMBARAN NEGARA REPUBLIK INDONESI
   DAN MULAI BERLAKUNYA UU FEDERAL DAN PERATURAN PEMERINTAH" SEBAGAI UNDANG-UNDANG
   FEDERAL
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 10 Tahun 2004 Tentang Pembentukan
-  Peraturan Perundang-undangan Undang-Undang Nomor 12 Tahun 2023 Tentang Provinsi
-  Jawa Timur'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1950-05-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1950
-source_pdf_url: https://peraturan.go.id/files/uu2-1950.pdf
+source_url: https://peraturan.bpk.go.id/Details/25980/uu-no-2-tahun-1950
+source_pdf_url: https://peraturan.bpk.go.id/Download/14782/UU%20Nomor%202%20Tahun%201950.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_10_2004
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_2_1950_1950
+- id: uu_2_1950_1950-05-15
   kind: asli
   source: official
-  date: null
+  date: '1950-05-15'
   date_basis: tanggal_penetapan
-  text: uu_2_1950_1950.txt
-  pasal_count: 9
+  text: uu_2_1950_1950-05-15.txt
+  pasal_count: 1
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9928d8ae36ae88f3dc8b78d477886de095a796c3858fe88ed1b0e5c77a82d389
 pdf_sha256: 3e07073779295894212949bcef7f8200b5d96c4e0045ef937037dc756787d8f1
+tanggal_pengundangan: '1950-05-19'
+tanggal_berlaku: '1950-05-20'
+lembaran_negara: 'LL Setneg : 4 Hlm'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1950
+  source_pdf_url: https://peraturan.go.id/files/uu2-1950.pdf
+bpk:
+  id: 25980
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14782/UU%20Nomor%202%20Tahun%201950.pdf
+    bpk_file_id: 14782
+    filename: UU Nomor 2 Tahun 1950.pdf
+    sha256: 9928d8ae36ae88f3dc8b78d477886de095a796c3858fe88ed1b0e5c77a82d389
+    bytes: 53535
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_12_2023
+      citation: UU No. 12 Tahun 2023
+      tentang: Provinsi Jawa Timur
+      url: https://peraturan.bpk.go.id/Details/249356/uu-no-12-tahun-2023
+      note: null
+uji_materi: null

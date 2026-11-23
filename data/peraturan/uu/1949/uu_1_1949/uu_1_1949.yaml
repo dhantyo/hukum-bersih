@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 1 Tahun 1949 tentang Penggantian Pajak Bumi Dengan Pa
   Pendapatan
 tentang: PENGGANTIAN PAJAK BUMI DENGAN PAJAK PENDAPATAN
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1949-09-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1949
-source_pdf_url: https://peraturan.go.id/files/uu1-1949.pdf
+source_url: https://peraturan.bpk.go.id/Details/33340/uu-no-1-tahun-1949
+source_pdf_url: https://peraturan.bpk.go.id/Download/22387/UU%20Nomor%201%20Tahun%201949.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,38 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_1_1949_1949-09-28
+  kind: asli
+  source: official
+  date: '1949-09-28'
+  date_basis: tanggal_penetapan
+  text: uu_1_1949_1949-09-28.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0b8c30671cd894e855685c6e8f61a8d96639baf690d5a153b1ee5904ad44f979
 pdf_sha256: 0b8c30671cd894e855685c6e8f61a8d96639baf690d5a153b1ee5904ad44f979
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1949-09-28'
+lembaran_negara: 'LL SETNEG: 2 Hlm.'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1949
+  source_pdf_url: https://peraturan.go.id/files/uu1-1949.pdf
+bpk:
+  id: 33340
+  files:
+  - url: https://peraturan.bpk.go.id/Download/22387/UU%20Nomor%201%20Tahun%201949.pdf
+    bpk_file_id: 22387
+    filename: UU Nomor 1 Tahun 1949.pdf
+    sha256: 0b8c30671cd894e855685c6e8f61a8d96639baf690d5a153b1ee5904ad44f979
+    bytes: 40828
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_14_1951
+      citation: UU No. 14 Tahun 1951
+      tentang: Penggantian Pajak Bumi dengan Pajak Peralihan 1944
+      url: https://peraturan.bpk.go.id/Details/39882/uu-no-14-tahun-1951
+      note: null
+uji_materi: null

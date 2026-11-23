@@ -10,12 +10,12 @@ tentang: PEMBEBASAN CUKAI GUNA PEGAWAI-PEGAWAI DIPLOMATIK ATAU KONSULER DARI NEG
   ASING YANG MENJALANKAN TUGASNYA DINEGERI INI
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1951-10-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-1951
-source_pdf_url: https://peraturan.go.id/files/51uu020.pdf
+source_url: https://peraturan.bpk.go.id/Details/39936/uu-no-20-tahun-1951
+source_pdf_url: https://peraturan.bpk.go.id/Download/29531/UU%20Nomor%2020%20Tahun%201951.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,6 +23,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_20_1951_1951-10-30
+  kind: asli
+  source: official
+  date: '1951-10-30'
+  date_basis: tanggal_penetapan
+  text: uu_20_1951_1951-10-30.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: be37e537be4fd346c282fdd46a46f55f2076cc809bcd15845ed76d5ab88593ef
 pdf_sha256: 18dd9c1a30a7950962f595960d6de92ead2532115cd99e58cdc93a5d29d894dc
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1951-11-07'
+tanggal_berlaku: '1951-11-07'
+lembaran_negara: 'LN.1951/NO.107, LL SETNEG : 2 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-1951
+  source_pdf_url: https://peraturan.go.id/files/51uu020.pdf
+bpk:
+  id: 39936
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29531/UU%20Nomor%2020%20Tahun%201951.pdf
+    bpk_file_id: 29531
+    filename: UU Nomor 20 Tahun 1951.pdf
+    sha256: be37e537be4fd346c282fdd46a46f55f2076cc809bcd15845ed76d5ab88593ef
+    bytes: 50743
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

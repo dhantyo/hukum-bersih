@@ -9,12 +9,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NR 22 TAHUN 1950 TENTANG ENURUNAN CUKAI
   SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1951-09-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-1951
-source_pdf_url: https://peraturan.go.id/files/51uu016.pdf
+source_url: https://peraturan.bpk.go.id/Details/39893/uu-no-16-tahun-1951
+source_pdf_url: https://peraturan.bpk.go.id/Download/29484/UU%20Nomor%2016%20Tahun%201951.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_16_1951_1951-09-17
+  kind: asli
+  source: official
+  date: '1951-09-17'
+  date_basis: tanggal_penetapan
+  text: uu_16_1951_1951-09-17.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: dd68917dac80af19731228164b6eeae80198188389d4a448372150f854c3336e
 pdf_sha256: 26ac22141ffe1503301a0812f2c7c1310f4748ab6057e4016c4970b3152b4658
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1951-09-22'
+tanggal_berlaku: '1951-09-22'
+lembaran_negara: 'LN.1951/NO.92, LL SETNEG : 3 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-1951
+  source_pdf_url: https://peraturan.go.id/files/51uu016.pdf
+bpk:
+  id: 39893
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29484/UU%20Nomor%2016%20Tahun%201951.pdf
+    bpk_file_id: 29484
+    filename: UU Nomor 16 Tahun 1951.pdf
+    sha256: dd68917dac80af19731228164b6eeae80198188389d4a448372150f854c3336e
+    bytes: 54739
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

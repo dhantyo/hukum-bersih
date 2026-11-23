@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 10 Tahun 1951 tentang Mengatur Tenaga Dokter Partikul
   Dalam Keadaan Genting
 tentang: MENGATUR TENAGA DOKTER PARTIKULIR DALAM KEADAAN GENTING
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1951-06-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1951
-source_pdf_url: https://peraturan.go.id/files/uu10-1951.pdf
+source_url: https://peraturan.bpk.go.id/Details/39845/uu-no-10-tahun-1951
+source_pdf_url: https://peraturan.bpk.go.id/Download/29437/UU%20Nomor%2010%20Tahun%201951.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_10_1951_1951-06-30
+  kind: asli
+  source: official
+  date: '1951-06-30'
+  date_basis: tanggal_penetapan
+  text: uu_10_1951_1951-06-30.txt
+  pasal_count: 10
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 13f6bc4764c65cf4190257ac1074b36f3f69ceee3bfb2d35c1e82081f95a793e
 pdf_sha256: eaeaf898c013518a54322abb8cae3b3e6fc6dce56ee96eaffa89e027a24a45af
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1951-07-13'
+tanggal_berlaku: '1951-07-13'
+lembaran_negara: 'LN.1951/NO.46, LL SETNEG : 3 HLM.'
+subjek: KESEHATAN - JABATAN / PROFESI / KEAHLIAN / SERTIFIKASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1951
+  source_pdf_url: https://peraturan.go.id/files/uu10-1951.pdf
+bpk:
+  id: 39845
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29437/UU%20Nomor%2010%20Tahun%201951.pdf
+    bpk_file_id: 29437
+    filename: UU Nomor 10 Tahun 1951.pdf
+    sha256: 13f6bc4764c65cf4190257ac1074b36f3f69ceee3bfb2d35c1e82081f95a793e
+    bytes: 57820
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_6_1963
+      citation: UU No. 6 Tahun 1963
+      tentang: Tenaga Kesehatan
+      url: https://peraturan.bpk.go.id/Details/50620/uu-no-6-tahun-1963
+      note: null
+uji_materi: null

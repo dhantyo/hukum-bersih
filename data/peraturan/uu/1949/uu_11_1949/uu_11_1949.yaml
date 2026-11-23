@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 11 Tahun 1949 tentang Pengesahan Konstitusi Republik 
 tentang: PENGESAHAN KONSTITUSI REPUBLIK INDONESIA SERIKAT
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1949-12-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1949
-source_pdf_url: https://peraturan.go.id/files/uu11-1949.pdf
+source_url: https://peraturan.bpk.go.id/Details/33416/uu-no-11-tahun-1949
+source_pdf_url: https://peraturan.bpk.go.id/Download/22470/UU%20Nomor%2011%20Tahun%201949.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,32 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_11_1949_1949-12-14
+  kind: asli
+  source: official
+  date: '1949-12-14'
+  date_basis: tanggal_penetapan
+  text: uu_11_1949_1949-12-14.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a570c986dd2bda34082680fc34663f44aff8fcebfbdcd2bc6486bbcdbc864bd9
 pdf_sha256: a570c986dd2bda34082680fc34663f44aff8fcebfbdcd2bc6486bbcdbc864bd9
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1949-12-14'
+lembaran_negara: 'LL SETNEG: 2 Hlm.'
+subjek: KETATANEGARAAN, KENEGARAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1949
+  source_pdf_url: https://peraturan.go.id/files/uu11-1949.pdf
+bpk:
+  id: 33416
+  files:
+  - url: https://peraturan.bpk.go.id/Download/22470/UU%20Nomor%2011%20Tahun%201949.pdf
+    bpk_file_id: 22470
+    filename: UU Nomor 11 Tahun 1949.pdf
+    sha256: a570c986dd2bda34082680fc34663f44aff8fcebfbdcd2bc6486bbcdbc864bd9
+    bytes: 36436
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -6,22 +6,53 @@ year: 1950
 title: Undang-Undang Nomor 10 Tahun 1950 tentang Pembentukan Propinsi Djawa Tengah
 tentang: PEMBENTUKAN PROPINSI DJAWA TENGAH
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 11 Tahun 2023 Tentang Provinsi
-  Jawa Tengah'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1950-07-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1950
-source_pdf_url: https://peraturan.go.id/files/uu10-1950.pdf
+source_url: https://peraturan.bpk.go.id/Details/38118/uu-no-10-tahun-1950
+source_pdf_url: https://peraturan.bpk.go.id/Download/27251/UU%20Nomor%2010%20Tahun%201950.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_11_2023
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_10_1950_1950-07-04
+  kind: asli
+  source: official
+  date: '1950-07-04'
+  date_basis: tanggal_penetapan
+  text: uu_10_1950_1950-07-04.txt
+  pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 26cd81b4655a9a43d0255204d1e1ecd599775093c935a04717e931836fca5be0
 pdf_sha256: a4fda35bb8ff229fea73bf6f24c8b1245a13b42a9ffeafa0406f0a94fdca453b
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1950-07-04'
+tanggal_berlaku: '1950-07-04'
+lembaran_negara: 'LL SETNEG: 3 Hlm.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1950
+  source_pdf_url: https://peraturan.go.id/files/uu10-1950.pdf
+bpk:
+  id: 38118
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27251/UU%20Nomor%2010%20Tahun%201950.pdf
+    bpk_file_id: 27251
+    filename: UU Nomor 10 Tahun 1950.pdf
+    sha256: 26cd81b4655a9a43d0255204d1e1ecd599775093c935a04717e931836fca5be0
+    bytes: 66668
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_11_2023
+      citation: UU No. 11 Tahun 2023
+      tentang: Provinsi Jawa Tengah
+      url: https://peraturan.bpk.go.id/Details/249335/uu-no-11-tahun-2023
+      note: null
+uji_materi: null

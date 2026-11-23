@@ -10,12 +10,12 @@ tentang: MENGADAKAN PERUBAHAN DALAM UNDANG UNDANG NO.27 TAHUN 1948 MENGENAI SUSU
   DEWAN PERWAKILAN RAKYAT DAN PEMILIHAN ANGAUTA ANGGAUTANYA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1949-12-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1949
-source_pdf_url: https://peraturan.go.id/files/uu12-1949.pdf
+source_url: https://peraturan.bpk.go.id/Details/33420/uu-no-12-tahun-1949
+source_pdf_url: https://peraturan.bpk.go.id/Download/22474/UU%20Nomor%2012%20Tahun%201949.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,6 +23,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_12_1949_1949-12-24
+  kind: asli
+  source: official
+  date: '1949-12-24'
+  date_basis: tanggal_penetapan
+  text: uu_12_1949_1949-12-24.txt
+  pasal_count: 12
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b43f48a227dcd829f71c28d9b276641f06636ddf1e6f6c8eeb6dc57f1bc71964
 pdf_sha256: b43f48a227dcd829f71c28d9b276641f06636ddf1e6f6c8eeb6dc57f1bc71964
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1949-12-24'
+lembaran_negara: 'LL SETNEG: 6 Hlm.'
+subjek: PEMBENTUKAN, PERUBAHAN, DAN PEMBUBARAN KOMISI / KOMITE / BADAN / DEWAN / STAF
+  KHUSUS / TIM / PANITIA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1949
+  source_pdf_url: https://peraturan.go.id/files/uu12-1949.pdf
+bpk:
+  id: 33420
+  files:
+  - url: https://peraturan.bpk.go.id/Download/22474/UU%20Nomor%2012%20Tahun%201949.pdf
+    bpk_file_id: 22474
+    filename: UU Nomor 12 Tahun 1949.pdf
+    sha256: b43f48a227dcd829f71c28d9b276641f06636ddf1e6f6c8eeb6dc57f1bc71964
+    bytes: 59743
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_27_1948
+      citation: UU No. 27 Tahun 1948
+      tentang: Dewan Perwakilan Rakyat dan Pemilihan Anggauta-Anggautanya
+      url: https://peraturan.bpk.go.id/Details/25858/uu-no-27-tahun-1948
+      note: null
+uji_materi: null

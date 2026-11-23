@@ -8,13 +8,13 @@ title: Undang-Undang Nomor 1 Tahun 1951 tentang Pernyataan Berlakunya Undang-Und
 tentang: PERNYATAAN BERLAKUNYA UNDANG-UNDANG KERJA TAHUN 1948 NR. 12 DARI REPUBLIK
   INDONESIA UNTUK SELURUH INDONESIA
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1951-01-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1951
-source_pdf_url: https://peraturan.go.id/files/uu1-1951.pdf
+source_url: https://peraturan.bpk.go.id/Details/39807/uu-no-1-tahun-1951
+source_pdf_url: https://peraturan.bpk.go.id/Download/29390/UU%20Nomor%201%20Tahun%201951.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,43 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_1_1951_1951-01-06
+  kind: asli
+  source: official
+  date: '1951-01-06'
+  date_basis: tanggal_penetapan
+  text: uu_1_1951_1951-01-06.txt
+  pasal_count: 10
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d3052bf524fb429cf5c9eca2fcaf78797d42b0170b8dcd21a805f06b106a3b18
 pdf_sha256: c87900238c844f77c9786d04037d730dfb00270ef9c685d441255aa605691f73
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1951-01-08'
+lembaran_negara: 'LL SETNEG: 7 Hlm.'
+subjek: KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1951
+  source_pdf_url: https://peraturan.go.id/files/uu1-1951.pdf
+bpk:
+  id: 39807
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29390/UU%20Nomor%201%20Tahun%201951.pdf
+    bpk_file_id: 29390
+    filename: UU Nomor 1 Tahun 1951.pdf
+    sha256: d3052bf524fb429cf5c9eca2fcaf78797d42b0170b8dcd21a805f06b106a3b18
+    bytes: 52584
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_13_2003
+      citation: UU No. 13 Tahun 2003
+      tentang: Ketenagakerjaan
+      url: https://peraturan.bpk.go.id/Details/43013/uu-no-13-tahun-2003
+      note: null
+    - id: uu_25_1997
+      citation: UU No. 25 Tahun 1997
+      tentang: Ketenagakerjaan
+      url: https://peraturan.bpk.go.id/Details/46026/uu-no-25-tahun-1997
+      note: null
+uji_materi: null

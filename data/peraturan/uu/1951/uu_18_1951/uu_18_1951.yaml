@@ -12,23 +12,71 @@ tentang: PERUBAHAN UU NO. 15 TAHUN 1950 RI UNTUK PENGGABUNGAN DAERAH-DAERAH KABU
   KABUPATEN YANG BERHAK MENGATUR DAN MENGURUS RUMAH-TANGGANYA SENDIRI DENGAN NAMA
   KABUPATEN KULON-PROGO
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 123 Tahun 2024 Tentang Kabupaten
-  Gunungkidul di Daerah Istimewa Yogyakarta Undang-Undang Nomor 122 Tahun 2024 Tentang
-  Kabupaten Bantul di Daerah Istimewa Yogyakarta Undang-Undang Nomor 120 Tahun 2024
-  Tentang Kabupaten Sleman di Provinsi Istimewa Yogyakarta Undang-Undang Nomor 119
-  Tahun 2024 Tentang Kabupaten Kulon Progo di Provinsi Istimewa Yogyakarta'
-tanggal_penetapan: null
+status: berlaku
+tanggal_penetapan: '1951-10-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-1951
-source_pdf_url: null
+source_url: https://peraturan.bpk.go.id/Details/39907/uu-no-18-tahun-1951
+source_pdf_url: https://peraturan.bpk.go.id/Download/29498/UU%20Nomor%2018%20Tahun%201951.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_123_2024
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_18_1951_1951-10-12
+  kind: asli
+  source: official
+  date: '1951-10-12'
+  date_basis: tanggal_penetapan
+  text: uu_18_1951_1951-10-12.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 944252d2f81ca98b64b2465071ade1e60d8f90aa5108066c74171881905b87a1
+tanggal_pengundangan: '1951-10-15'
+tanggal_berlaku: '1951-10-15'
+lembaran_negara: 'LN.1951/NO.101, LL SETNEG : 2 HLM.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-1951
+  source_pdf_url: null
+bpk:
+  id: 39907
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29498/UU%20Nomor%2018%20Tahun%201951.pdf
+    bpk_file_id: 29498
+    filename: UU Nomor 18 Tahun 1951.pdf
+    sha256: 944252d2f81ca98b64b2465071ade1e60d8f90aa5108066c74171881905b87a1
+    bytes: 54139
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_123_2024
+      citation: UU No. 123 Tahun 2024
+      tentang: Kabupaten Gunungkidul di Daerah Istimewa Yogyakarta
+      url: https://peraturan.bpk.go.id/Details/307443/uu-no-123-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kabupaten Gunungkidul dalam Undang-Undang
+        Nomor 15 Tahun 1950 dicabut dan dinyatakan tidak berlaku.
+    - id: uu_122_2024
+      citation: UU No. 122 Tahun 2024
+      tentang: Kabupaten Bantul di Daerah Istimewa Yograkarta
+      url: https://peraturan.bpk.go.id/Details/307442/uu-no-122-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kabupaten Bantul dalam Undang-Undang
+        Nomor 15 Tahun 1950 dicabut dan dinyatakan tidak berlaku.
+    - id: uu_120_2024
+      citation: UU No. 120 Tahun 2024
+      tentang: Kabupaten Sleman di Daerah Istimewa Yoryakarta
+      url: https://peraturan.bpk.go.id/Details/307438/uu-no-120-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kabupaten Sleman dalam Undang-Undang
+        Nomor 15 Tahun 1950 dicabut dan dinyatakan tidak berlaku.
+    - id: uu_119_2024
+      citation: UU No. 119 Tahun 2024
+      tentang: Kabupaten Kulon Progo di Daerah Istimewa Yograkarta
+      url: https://peraturan.bpk.go.id/Details/307434/uu-no-119-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kabupaten Kulon Progo dalam Undang-Undang
+        Nomor 15 Tahun 1950 dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

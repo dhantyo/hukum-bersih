@@ -9,13 +9,13 @@ title: Undang-Undang Nomor 5 Tahun 1950 tentang Menetapkan "Uu Drt Tentang Susun
 tentang: MENETAPKAN "UU DRT TENTANG SUSUNAN DAN KEKUASAAN PENGADILAN KEJAKSAAN DALAM
   LINGKUNGAN PERADILAN KETENTARAAN" SEBAGAI UNDANG-UNDANG FEDERAL
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1950-07-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1950
-source_pdf_url: https://peraturan.go.id/files/uu5-1950.pdf
+source_url: https://peraturan.bpk.go.id/Details/37969/uu-no-5-tahun-1950
+source_pdf_url: https://peraturan.bpk.go.id/Download/27080/UU%20Nomor%205%20Tahun%201950.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,11 +24,72 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_5_1950_1950
+- id: uu_5_1950_1950-07-20
   kind: asli
   source: official
-  date: null
+  date: '1950-07-20'
   date_basis: tanggal_penetapan
-  text: uu_5_1950_1950.txt
-  pasal_count: 33
+  text: uu_5_1950_1950-07-20.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 90a029cab195725aae9bd93b4a75f5bd68c55f7fafb615bbde23567ad37b914d
 pdf_sha256: a4ca7c9230af28a0003b80deb3b59ee4bcc1dee28d0eee0396166316153418d1
+tanggal_pengundangan: '1950-08-04'
+tanggal_berlaku: '1950-03-31'
+lembaran_negara: 'LL SETNEG: 7 Hlm.'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1950
+  source_pdf_url: https://peraturan.go.id/files/uu5-1950.pdf
+bpk:
+  id: 37969
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27080/UU%20Nomor%205%20Tahun%201950.pdf
+    bpk_file_id: 27080
+    filename: UU Nomor 5 Tahun 1950.pdf
+    sha256: 90a029cab195725aae9bd93b4a75f5bd68c55f7fafb615bbde23567ad37b914d
+    bytes: 68762
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_31_1997
+      citation: UU No. 31 Tahun 1997
+      tentang: Peradilan Militer
+      url: https://peraturan.bpk.go.id/Details/46050/uu-no-31-tahun-1997
+      note: null
+    Mencabut:
+    - id: uu_41_1947
+      citation: UU No. 41 Tahun 1947
+      tentang: Menyesuaikan Peraturan-Peraturan tentang Kepenjaraan Tentara (Staasblad
+        1934, No. 169 dan 170) Dengan Keadaan Sekarang
+      url: https://peraturan.bpk.go.id/Details/25385/uu-no-41-tahun-1947
+      note: null
+    - id: uu_40_1947
+      citation: UU No. 40 Tahun 1947
+      tentang: Menyesuaikan Peraturan-Peraturan Hukum Disiplin Tentara (Staatsblad
+        1934, No.168) Dengan Keadaan Sekarang
+      url: https://peraturan.bpk.go.id/Details/25381/uu-no-40-tahun-1947
+      note: null
+    - id: uu_39_1947
+      citation: UU No. 39 Tahun 1947
+      tentang: Menyesuaikan Hukum Pidana Pidana Tentara (Staatsblad 1934, No.167)
+        Dengan Keadaan Sekarang
+      url: https://peraturan.bpk.go.id/Details/25380/uu-no-39-tahun-1947
+      note: null
+    - id: uu_36_1947
+      citation: UU No. 36 Tahun 1947
+      tentang: Mempercepat Peradilan Pada Pengadilan Tentara
+      url: https://peraturan.bpk.go.id/Details/25375/uu-no-36-tahun-1947
+      note: null
+    - id: uu_8_1946
+      citation: UU No. 8 Tahun 1946
+      tentang: Peraturan tentang Hukum Acara Pidana Guna Pengadilan Tentara
+      url: https://peraturan.bpk.go.id/Details/25091/uu-no-8-tahun-1946
+      note: null
+    - id: uu_7_1946
+      citation: UU No. 7 Tahun 1946
+      tentang: Pengadilan Tentara
+      url: https://peraturan.bpk.go.id/Details/25080/uu-no-7-tahun-1946
+      note: null
+uji_materi: null

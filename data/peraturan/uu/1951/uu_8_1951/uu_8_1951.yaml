@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 8 Tahun 1951 tentang Penangguhan Pemberian Surat Idzi
   Kepada Dokter Dan Dokter Gigi
 tentang: PENANGGUHAN PEMBERIAN SURAT IDZIN KEPADA DOKTER DAN DOKTER GIGI
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1951-06-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1951
-source_pdf_url: https://peraturan.go.id/files/uu8-1951.pdf
+source_url: https://peraturan.bpk.go.id/Details/39840/uu-no-8-tahun-1951
+source_pdf_url: https://peraturan.bpk.go.id/Download/29432/UU%20Nomor%208%20Tahun%201951.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,40 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_8_1951_1951-06-30
+  kind: asli
+  source: official
+  date: '1951-06-30'
+  date_basis: tanggal_penetapan
+  text: uu_8_1951_1951-06-30.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 007d9236cedf83184e1e68f48ee2e656c8304332118af5e8cdf1d388d0c2fb8b
 pdf_sha256: 009128a37c0c7e859c26c1b42a1656bbcd9a87906433eda5e56db154429c47bf
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1951-07-13'
+tanggal_berlaku: '1951-07-31'
+lembaran_negara: 'LN.1951/NO.44, LL SETNEG : 2 HLM.'
+subjek: KESEHATAN - PERIZINAN, PELAYANAN PUBLIK - JABATAN / PROFESI / KEAHLIAN / SERTIFIKASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1951
+  source_pdf_url: https://peraturan.go.id/files/uu8-1951.pdf
+bpk:
+  id: 39840
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29432/UU%20Nomor%208%20Tahun%201951.pdf
+    bpk_file_id: 29432
+    filename: UU Nomor 8 Tahun 1951.pdf
+    sha256: 007d9236cedf83184e1e68f48ee2e656c8304332118af5e8cdf1d388d0c2fb8b
+    bytes: 52035
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_8_1961
+      citation: UU No. 8 Tahun 1961
+      tentang: Wajib Kerja Sarjana
+      url: https://peraturan.bpk.go.id/Details/51154/uu-no-8-tahun-1961
+      note: null
+  tanggal_pengundangan: '1951-07-31'
+uji_materi: null

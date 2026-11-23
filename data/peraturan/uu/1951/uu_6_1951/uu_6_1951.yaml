@@ -9,13 +9,13 @@ title: Undang-Undang Nomor 6 Tahun 1951 tentang Gaji Dan Tunjangan Kepada Ketua,
 tentang: GAJI DAN TUNJANGAN KEPADA KETUA, TUNJANGAN-TUNJANGAN, BIAYA PERJALANAN DAN
   PENGINAPAN KEPADA ANGGAUTA-ANGGAUTA DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1951-06-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1951
-source_pdf_url: https://peraturan.go.id/files/uu6-1951.pdf
+source_url: https://peraturan.bpk.go.id/Details/39831/uu-no-6-tahun-1951
+source_pdf_url: https://peraturan.bpk.go.id/Download/29423/UU%20Nomor%206%20Tahun%201951.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,6 +23,48 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_6_1951_1951-06-30
+  kind: asli
+  source: official
+  date: '1951-06-30'
+  date_basis: tanggal_penetapan
+  text: uu_6_1951_1951-06-30.txt
+  pasal_count: 9
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 99663faaf69f112c9b1b11807b7722bfd9faf5310c00e1acc82f224b2bea1b18
 pdf_sha256: 0986998ef661ac41aa4ccf18d3c8c6a184fa1ab8a84f3757171d881ea0760c32
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1951-07-03'
+tanggal_berlaku: '1951-01-01'
+lembaran_negara: 'LN.1951/NO.40, LL SETNEG : 5 HLM.'
+subjek: HONORARIUM, GAJI, PENGHASILAN, UANG KEHORMATAN, TUNJANGAN, PENGHARGAAN, HAK
+  LAINNYA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1951
+  source_pdf_url: https://peraturan.go.id/files/uu6-1951.pdf
+bpk:
+  id: 39831
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29423/UU%20Nomor%206%20Tahun%201951.pdf
+    bpk_file_id: 29423
+    filename: UU Nomor 6 Tahun 1951.pdf
+    sha256: 99663faaf69f112c9b1b11807b7722bfd9faf5310c00e1acc82f224b2bea1b18
+    bytes: 64879
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_10_1953
+      citation: UU No. 10 Tahun 1953
+      tentang: Kedudukan Keuangan Ketua dan Anggauta Dewan Perwakilan Rakyat Republik
+        Indonesia
+      url: https://peraturan.bpk.go.id/Details/45286/uu-no-10-tahun-1953
+      note: null
+    Mencabut:
+    - id: uu_4_1950
+      citation: UU No. 4 Tahun 1950
+      tentang: Penggantian Kerugian Anggota Dewan Perwakilan Rakyat Republik Indonesia
+        Serikat
+      url: https://peraturan.bpk.go.id/Details/37885/uu-no-4-tahun-1950
+      note: null
+uji_materi: null

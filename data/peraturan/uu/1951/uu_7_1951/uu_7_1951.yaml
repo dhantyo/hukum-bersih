@@ -8,13 +8,13 @@ title: Undang-Undang Nomor 7 Tahun 1951 tentang Perubahan Dan Tambahan Undang-Un
 tentang: PERUBAHAN DAN TAMBAHAN UNDANG-UNDANG LALU-LINTAS JALAN (WEGVERKEERSORDONNANTIE,
   STAATSBLAD 1933 NO. 86)
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1951-06-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1951
-source_pdf_url: https://peraturan.go.id/files/uu7-1951.pdf
+source_url: https://peraturan.bpk.go.id/Details/39837/uu-no-7-tahun-1951
+source_pdf_url: https://peraturan.bpk.go.id/Download/29429/UU%20Nomor%207%20Tahun%201951.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_7_1951_1951-06-30
+  kind: asli
+  source: official
+  date: '1951-06-30'
+  date_basis: tanggal_penetapan
+  text: uu_7_1951_1951-06-30.txt
+  pasal_count: 6
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 848bba74cc1ed1eb9b6e1e94a82d6ebb125eee21bf67f7f63cb02990ec71b398
 pdf_sha256: 0f2c08bf29742e1188f9947180c82bfce08a79da3b52861bc9e46846ad7027ad
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1951-07-09'
+tanggal_berlaku: '1951-07-01'
+lembaran_negara: 'LN.1951/NO.42, TLN NO.114, LL SETNEG : 5 HLM.'
+subjek: LALU LINTAS, JALAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1951
+  source_pdf_url: https://peraturan.go.id/files/uu7-1951.pdf
+bpk:
+  id: 39837
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29429/UU%20Nomor%207%20Tahun%201951.pdf
+    bpk_file_id: 29429
+    filename: UU Nomor 7 Tahun 1951.pdf
+    sha256: 848bba74cc1ed1eb9b6e1e94a82d6ebb125eee21bf67f7f63cb02990ec71b398
+    bytes: 88438
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_3_1965
+      citation: UU No. 3 Tahun 1965
+      tentang: Lalu-Lintas dan Angkutan Jalan Raya
+      url: https://peraturan.bpk.go.id/Details/49975/uu-no-3-tahun-1965
+      note: null
+uji_materi: null

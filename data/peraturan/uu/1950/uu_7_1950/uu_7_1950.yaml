@@ -8,23 +8,53 @@ title: Undang-Undang Nomor 7 Tahun 1950 tentang Perubahan Konstitusi Sementara R
 tentang: PERUBAHAN KONSTITUSI SEMENTARA REPUBLIK INDONESIA SERIKAT MENJADI UNDANG-UNDANG
   DASAR SEMENTARA REPUBLIK INDONESIA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 22 Tahun 1961 Tentang Perguruan
-  Tinggi Undang-Undang Nomor 19 Tahun 1956 Tentang Pemilihan Anggota Dewan Perwakilan
-  Rakyat Daerah'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1950-08-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1950
-source_pdf_url: https://peraturan.go.id/files/uu7-1950.pdf
+source_url: https://peraturan.bpk.go.id/Details/38102/uu-no-7-tahun-1950
+source_pdf_url: https://peraturan.bpk.go.id/Download/27229/UU%20Nomor%207%20Tahun%201950.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_22_1961
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_7_1950_1950-08-15
+  kind: asli
+  source: official
+  date: '1950-08-15'
+  date_basis: tanggal_penetapan
+  text: uu_7_1950_1950-08-15.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 307bf7849fc7dcc0ca712edc63b8c27f1e4608f5e24acaa1ea97af0a38cc7e39
 pdf_sha256: bd9ba0fc2a626869711d71ae7986987d4bec909bdd96f001e7dab70244cf5603
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1950-08-15'
+tanggal_berlaku: '1950-08-17'
+lembaran_negara: 'LL SETNEG: 29 Hlm.'
+subjek: KETATANEGARAAN, KENEGARAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1950
+  source_pdf_url: https://peraturan.go.id/files/uu7-1950.pdf
+bpk:
+  id: 38102
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27229/UU%20Nomor%207%20Tahun%201950.pdf
+    bpk_file_id: 27229
+    filename: UU Nomor 7 Tahun 1950.pdf
+    sha256: 307bf7849fc7dcc0ca712edc63b8c27f1e4608f5e24acaa1ea97af0a38cc7e39
+    bytes: 156316
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_19_1956
+      citation: UU No. 19 Tahun 1956
+      tentang: Pemilihan Anggota Dewan Perwakilan Rakyat Daerah
+      url: https://peraturan.bpk.go.id/Details/51105/uu-no-19-tahun-1956
+      note: null
+uji_materi: null

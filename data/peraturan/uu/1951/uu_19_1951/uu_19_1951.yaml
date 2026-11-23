@@ -10,12 +10,12 @@ tentang: PENETAPAN "UNDANG-UNDANG DARURAT NR 32 TAHUN 1950 TENTANG PENGGABUNGAN 
   WEH KE DALAM DAERAH PABEAN INDONESIA" SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1951-10-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-1951
-source_pdf_url: https://peraturan.go.id/files/51uu019.pdf
+source_url: https://peraturan.bpk.go.id/Details/39930/uu-no-19-tahun-1951
+source_pdf_url: https://peraturan.bpk.go.id/Download/29525/UU%20Nomor%2019%20Tahun%201951.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,6 +23,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_19_1951_1951-10-12
+  kind: asli
+  source: official
+  date: '1951-10-12'
+  date_basis: tanggal_penetapan
+  text: uu_19_1951_1951-10-12.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 15f0696021bebb7966586d0aa84d512238915ddea2a941350517cb02c0b8100a
 pdf_sha256: 4e44d76a464d2d826f515c8ad9c02f8213628da055a1e30a2cdc844d03053131
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1951-10-16'
+tanggal_berlaku: '1951-10-16'
+lembaran_negara: 'LN.1951/NO.102, LL SETNEG : 2 HLM.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH - TERITORIAL INDONESIA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-1951
+  source_pdf_url: https://peraturan.go.id/files/51uu019.pdf
+bpk:
+  id: 39930
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29525/UU%20Nomor%2019%20Tahun%201951.pdf
+    bpk_file_id: 29525
+    filename: UU Nomor 19 Tahun 1951.pdf
+    sha256: 15f0696021bebb7966586d0aa84d512238915ddea2a941350517cb02c0b8100a
+    bytes: 52980
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

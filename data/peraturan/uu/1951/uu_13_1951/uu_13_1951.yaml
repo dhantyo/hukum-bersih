@@ -9,12 +9,12 @@ tentang: MENETAPKAN \"UNDANG-UNDANG DARURAT TENTANG MENAIKKAN JUMLAH MAKSIMUM PO
   DAN BEA\" SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1951-09-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1951
-source_pdf_url: https://peraturan.go.id/files/51uu013.pdf
+source_url: https://peraturan.bpk.go.id/Details/39881/uu-no-13-tahun-1951
+source_pdf_url: https://peraturan.bpk.go.id/Download/29472/UU%20Nomor%2013%20Tahun%201951.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,46 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_13_1951_1951-09-01
+  kind: asli
+  source: official
+  date: '1951-09-01'
+  date_basis: tanggal_penetapan
+  text: uu_13_1951_1951-09-01.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4831838387162d09718a7b4a1f704634bb0371ded9b44ca33879e29d77171b43
 pdf_sha256: 788786632434c2cac2c95d3f41bb3a3944637e8dd8108b9c6c97795cd3aff96c
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1951-09-10'
+tanggal_berlaku: '1951-09-10'
+lembaran_negara: 'LN.1951/NO.81, LL SETNEG : 3 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN - PERS, POS, DAN PERIKLANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1951
+  source_pdf_url: https://peraturan.go.id/files/51uu013.pdf
+bpk:
+  id: 39881
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29472/UU%20Nomor%2013%20Tahun%201951.pdf
+    bpk_file_id: 29472
+    filename: UU Nomor 13 Tahun 1951.pdf
+    sha256: 4831838387162d09718a7b4a1f704634bb0371ded9b44ca33879e29d77171b43
+    bytes: 55185
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_76_1954
+      citation: UU No. 76 Tahun 1954
+      tentang: Penetapan "Undang-Undang Darurat No. 5 Tahun 1953 Tentang Menaikkan
+        Jumlah Maksimum Porto dan Bea" (Lembaran-Negara No. 22 Tahun 1953) Sebagai
+        Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/50981/uu-no-76-tahun-1954
+      note: null
+    - id: null
+      citation: UUDrt No. 5 Tahun 1953
+      tentang: Menaikkan Jumlah Maksimum Porto dan Bea
+      url: https://peraturan.bpk.go.id/Details/52699/uudrt-no-5-tahun-1953
+      note: null
+uji_materi: null

@@ -9,13 +9,13 @@ title: Undang-Undang Nomor 17 Tahun 1951 tentang Menetapkan \"Undang-Undang Daru
 tentang: MENETAPKAN \"UNDANG-UNDANG DARURAT TENTANG PENGELUARAN UANG KERTAS ATAS TANGGUNGAN
   REPUBLIK INDONESIA SERIKAT\" SEBAGAI UNDANG-UNDANG
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1951-10-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-1951
-source_pdf_url: https://peraturan.go.id/files/51uu017.pdf
+source_url: https://peraturan.bpk.go.id/Details/39898/uu-no-17-tahun-1951
+source_pdf_url: https://peraturan.bpk.go.id/Download/29489/UU%20Nomor%2017%20Tahun%201951.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,6 +23,40 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_17_1951_1951-10-12
+  kind: asli
+  source: official
+  date: '1951-10-12'
+  date_basis: tanggal_penetapan
+  text: uu_17_1951_1951-10-12.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0b5e93bb87540e2041e9603b2d114c8429202383244c4121dcd867bc371e5649
 pdf_sha256: 9606eb829d7b1a1bf53e5be4f76ec403ede1daf37b08c3e1bff37796ffeb17f6
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1951-10-15'
+tanggal_berlaku: '1951-10-15'
+lembaran_negara: 'LN.1951/NO.100, LL SETNEG : 2 HLM.'
+subjek: PENGELOLAAN KEUANGAN NEGARA / DAERAH - PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-1951
+  source_pdf_url: https://peraturan.go.id/files/51uu017.pdf
+bpk:
+  id: 39898
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29489/UU%20Nomor%2017%20Tahun%201951.pdf
+    bpk_file_id: 29489
+    filename: UU Nomor 17 Tahun 1951.pdf
+    sha256: 0b5e93bb87540e2041e9603b2d114c8429202383244c4121dcd867bc371e5649
+    bytes: 51839
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: perppu_5_1960
+      citation: PERPU No. 5 Tahun 1960
+      tentang: Penghentian Berlakunya Undang-Undang Nomor 17 Tahun 1951 (Lembaran
+        Negara 1951 Nomor 100)
+      url: https://peraturan.bpk.go.id/Details/53370/perpu-no-5-tahun-1960
+      note: null
+uji_materi: null

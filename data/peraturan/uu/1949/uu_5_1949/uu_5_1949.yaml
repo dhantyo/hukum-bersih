@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 5 Tahun 1949 tentang Penetapan Tarip Pajak Pendapatan
 tentang: PENETAPAN TARIP PAJAK PENDAPATAN DAN PAJAK UPAH
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1949-09-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1949
-source_pdf_url: https://peraturan.go.id/files/uu5-1949.pdf
+source_url: https://peraturan.bpk.go.id/Details/33397/uu-no-5-tahun-1949
+source_pdf_url: https://peraturan.bpk.go.id/Download/22451/UU%20Nomor%205%20Tahun%201949.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,32 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_5_1949_1949-09-30
+  kind: asli
+  source: official
+  date: '1949-09-30'
+  date_basis: tanggal_penetapan
+  text: uu_5_1949_1949-09-30.txt
+  pasal_count: 6
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 16132bdcede467884a8d0b86ee32e58cd8f142d4fb96e6f1b1d7543cb3e720d6
 pdf_sha256: 16132bdcede467884a8d0b86ee32e58cd8f142d4fb96e6f1b1d7543cb3e720d6
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1949-09-30'
+lembaran_negara: 'LL SETNEG: 1 Hlm.'
+subjek: KETENAGAKERJAAN - PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1949
+  source_pdf_url: https://peraturan.go.id/files/uu5-1949.pdf
+bpk:
+  id: 33397
+  files:
+  - url: https://peraturan.bpk.go.id/Download/22451/UU%20Nomor%205%20Tahun%201949.pdf
+    bpk_file_id: 22451
+    filename: UU Nomor 5 Tahun 1949.pdf
+    sha256: 16132bdcede467884a8d0b86ee32e58cd8f142d4fb96e6f1b1d7543cb3e720d6
+    bytes: 47434
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

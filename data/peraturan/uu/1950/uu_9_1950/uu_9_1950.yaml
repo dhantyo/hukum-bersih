@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 9 Tahun 1950 tentang Penetapan Tarip Padjak Pendapata
 tentang: PENETAPAN TARIP PADJAK PENDAPATAN UNTUK TAHUN 1950
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1950-07-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ASSAAT
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1950
-source_pdf_url: https://peraturan.go.id/files/uu9-1950.pdf
+source_url: https://peraturan.bpk.go.id/Details/38114/uu-no-9-tahun-1950
+source_pdf_url: https://peraturan.bpk.go.id/Download/27244/UU%20Nomor%209%20Tahun%201950.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_9_1950_1950-07-04
+  kind: asli
+  source: official
+  date: '1950-07-04'
+  date_basis: tanggal_penetapan
+  text: uu_9_1950_1950-07-04.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ab24e662b5ddd26641e9b1815b36c447acfd0a1a8fdf000a7b4521c48a8f41b3
 pdf_sha256: 1cd335a91efe8923f6a9b4d36e9b6f8a54c45901cf7fad3aab7f78bb94e60106
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1950-07-04'
+tanggal_berlaku: '1950-01-01'
+lembaran_negara: 'LL SETNEG: 3 Hlm.'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1950
+  source_pdf_url: https://peraturan.go.id/files/uu9-1950.pdf
+bpk:
+  id: 38114
+  files:
+  - url: https://peraturan.bpk.go.id/Download/27244/UU%20Nomor%209%20Tahun%201950.pdf
+    bpk_file_id: 27244
+    filename: UU Nomor 9 Tahun 1950.pdf
+    sha256: ab24e662b5ddd26641e9b1815b36c447acfd0a1a8fdf000a7b4521c48a8f41b3
+    bytes: 79092
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

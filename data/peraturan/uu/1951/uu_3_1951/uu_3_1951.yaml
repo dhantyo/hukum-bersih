@@ -9,12 +9,12 @@ tentang: PERNYATAAN BERLAKUNYA UNDANG-UNDANG PENGAWASAN PERBURUHAN TAHUN 1948 NR
   23 DARI REPUBLIK INDONESIA UNTUK SELURUH INDONESIA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1951-01-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1951
-source_pdf_url: https://peraturan.go.id/files/uu3-1951.pdf
+source_url: https://peraturan.bpk.go.id/Details/39819/uu-no-3-tahun-1951
+source_pdf_url: https://peraturan.bpk.go.id/Download/29408/UU%20Nomor%203%20Tahun%201951.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_3_1951_1951-01-06
+  kind: asli
+  source: official
+  date: '1951-01-06'
+  date_basis: tanggal_penetapan
+  text: uu_3_1951_1951-01-06.txt
+  pasal_count: 8
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 282cc88e3370ff875adcbb7fdda7ee247fafa3bdb83173276730cc894e2dffb1
 pdf_sha256: 2857f5274b7eedf43c61e41cdaca7db8a49ccbe65d64035f26305c3a762ffd71
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1951-01-08'
+tanggal_berlaku: '1951-01-08'
+lembaran_negara: 'LN.1951/NO.4, LL SETNEG : 4 HLM.'
+subjek: KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1951
+  source_pdf_url: https://peraturan.go.id/files/uu3-1951.pdf
+bpk:
+  id: 39819
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29408/UU%20Nomor%203%20Tahun%201951.pdf
+    bpk_file_id: 29408
+    filename: UU Nomor 3 Tahun 1951.pdf
+    sha256: 282cc88e3370ff875adcbb7fdda7ee247fafa3bdb83173276730cc894e2dffb1
+    bytes: 58546
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

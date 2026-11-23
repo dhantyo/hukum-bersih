@@ -6,13 +6,13 @@ year: 1950
 title: Undang-Undang Nomor 3 Tahun 1950 tentang Permohonan Grasi
 tentang: PERMOHONAN GRASI
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1950-07-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1950
-source_pdf_url: https://peraturan.go.id/files/uu3-1950.pdf
+source_url: https://peraturan.bpk.go.id/Details/25995/uu-no-3-tahun-1950
+source_pdf_url: https://peraturan.bpk.go.id/Download/14797/UU%20Nomor%203%20Tahun%201950.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,37 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_3_1950_1950
+- id: uu_3_1950_1950-07-01
   kind: asli
   source: official
-  date: null
+  date: '1950-07-01'
   date_basis: tanggal_penetapan
-  text: uu_3_1950_1950.txt
-  pasal_count: 6
+  text: uu_3_1950_1950-07-01.txt
+  pasal_count: 15
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 72b46f477c50fba6282b9f14a3d1f80722de321bca79779e4c7a268f3b5e2dd4
 pdf_sha256: d83cc1371a1188df1793849d553736d3f32afad070bd0e558bfc6426a63ffb84
+tanggal_pengundangan: '1950-07-06'
+lembaran_negara: 'LL Setneg : 4 Hlm'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1950
+  source_pdf_url: https://peraturan.go.id/files/uu3-1950.pdf
+bpk:
+  id: 25995
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14797/UU%20Nomor%203%20Tahun%201950.pdf
+    bpk_file_id: 14797
+    filename: UU Nomor 3 Tahun 1950.pdf
+    sha256: 72b46f477c50fba6282b9f14a3d1f80722de321bca79779e4c7a268f3b5e2dd4
+    bytes: 54842
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_22_2002
+      citation: UU No. 22 Tahun 2002
+      tentang: Grasi
+      url: https://peraturan.bpk.go.id/Details/44471/uu-no-22-tahun-2002
+      note: null
+uji_materi: null
