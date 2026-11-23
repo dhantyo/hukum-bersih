@@ -29,7 +29,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_2008_2008-05-07.txt
   pasal_count: 355
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3ab4cc456dfe4d10e4dff1ec88e395f926719622127bde6e4b20cb63a3738c41
 pdf_sha256: 712431a078fbf4bf473aec4a9a967fef5895a65f56ed48587daeee90ee7de03b
@@ -79,4 +79,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/46618/uu-no-21-tahun-1992
       note: null
 uji_materi: null
-recheck: missed heading in body 259; page-turn 1

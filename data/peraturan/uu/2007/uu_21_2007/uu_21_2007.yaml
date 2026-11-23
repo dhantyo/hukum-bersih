@@ -29,7 +29,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2007_2007-04-19.txt
   pasal_count: 67
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3e880d69f1f408a4e58f5bcf0b64db9a7d771c804e8e7489a626de20d41c7bc2
 pdf_sha256: 999abc966f7b335f0212b451f45af13923b0e613d496c892fc83b046cf0ea831
@@ -76,4 +76,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/25029/uu-no-1-tahun-1946
       note: null
 uji_materi: null
-recheck: missed heading in penjelasan 1

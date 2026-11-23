@@ -29,7 +29,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2008_2008-01-04.txt
   pasal_count: 53
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8940071250b495d3fe1259cedd7a4be1ff7a6ce200de780fc95004ff4ddf1873
 pdf_sha256: 8940071250b495d3fe1259cedd7a4be1ff7a6ce200de780fc95004ff4ddf1873
@@ -63,4 +63,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/44497/uu-no-31-tahun-2002
       note: null
 uji_materi: null
-recheck: missed heading in penjelasan 47; page-turn 1

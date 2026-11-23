@@ -31,7 +31,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_1999_1999-05-07.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4a383e44288dfb42e191ddcfda0e56d8bdf0b28875db3acb0dd55267f1c6695b
 pdf_sha256: 4a383e44288dfb42e191ddcfda0e56d8bdf0b28875db3acb0dd55267f1c6695b
@@ -53,4 +53,3 @@ bpk:
     archive_url: null
   status_peraturan: null
 uji_materi: null
-recheck: missed heading in penjelasan 6

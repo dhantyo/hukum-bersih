@@ -28,7 +28,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_2007_2007-08-10.txt
   pasal_count: 34
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c6695f183fa016d034397314b060fe6294a11275a6fd01abb6f15efe3c4a416b
   ocr: true
@@ -51,4 +51,3 @@ bpk:
     archive_url: null
   status_peraturan: null
 uji_materi: null
-recheck: missed heading in penjelasan 16

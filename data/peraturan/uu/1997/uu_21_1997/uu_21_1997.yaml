@@ -28,8 +28,8 @@ versions:
   date: '1997-05-29'
   date_basis: tanggal_penetapan
   text: uu_21_1997_1997-05-29.txt
-  pasal_count: 3
-  parser_version: 12
+  pasal_count: 21
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d3c02467c4c9be2a7c0e8f94ff8b6481299e26c9913141cb08f5d6a496ad6ef1
   ocr: true
@@ -59,4 +59,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/44986/uu-no-20-tahun-2000
       note: null
 uji_materi: null
-recheck: missed heading in body 9

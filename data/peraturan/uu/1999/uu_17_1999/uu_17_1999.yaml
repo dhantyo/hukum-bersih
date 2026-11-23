@@ -27,8 +27,8 @@ versions:
   date: '1999-05-03'
   date_basis: tanggal_penetapan
   text: uu_17_1999_1999-05-03.txt
-  pasal_count: 20
-  parser_version: 12
+  pasal_count: 30
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3552b49cce3442ae29ba5b3c26c3fbd5674e0a1a37065cc58cd7de1611944a52
 pdf_sha256: 3552b49cce3442ae29ba5b3c26c3fbd5674e0a1a37065cc58cd7de1611944a52
@@ -56,4 +56,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/39044/uu-no-13-tahun-2008
       note: null
 uji_materi: null
-recheck: missed heading in body 3
