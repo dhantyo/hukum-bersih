@@ -14,8 +14,8 @@ tanggal_penetapan: '1998-02-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1998
-source_pdf_url: https://peraturan.go.id/files/uu1-1998.pdf
+source_url: https://peraturan.bpk.go.id/Details/45406/uu-no-1-tahun-1998
+source_pdf_url: https://peraturan.bpk.go.id/Download/33908/UU%20Nomor%201%20Tahun%201998.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,4 +31,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1998_1998-02-16.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 846100452593446f46b75dc4685a16a118ee4fce4755a57f2e6bd86ce54b3b24
 pdf_sha256: 846100452593446f46b75dc4685a16a118ee4fce4755a57f2e6bd86ce54b3b24
+tanggal_pengundangan: '1998-02-16'
+tanggal_berlaku: '1998-02-16'
+lembaran_negara: 'LN. 1998/ No. 37, TLN NO. 3739, LL SETNEG : 4 HLM'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1998
+  source_pdf_url: https://peraturan.go.id/files/uu1-1998.pdf
+bpk:
+  id: 45406
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33908/UU%20Nomor%201%20Tahun%201998.pdf
+    bpk_file_id: 33908
+    filename: UU Nomor 1 Tahun 1998.pdf
+    sha256: 846100452593446f46b75dc4685a16a118ee4fce4755a57f2e6bd86ce54b3b24
+    bytes: 34741
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

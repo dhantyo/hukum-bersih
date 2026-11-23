@@ -11,8 +11,8 @@ tanggal_penetapan: '1997-03-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu5-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/45926/uu-no-5-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34479/UU%20Nomor%205%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,42 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1997_1997-03-11.txt
   pasal_count: 53
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8de159766363c18db596ee83caa4bbc3d56d4434d07b5e094d91065046f5962e
 pdf_sha256: 8de159766363c18db596ee83caa4bbc3d56d4434d07b5e094d91065046f5962e
+tanggal_pengundangan: '1997-03-11'
+tanggal_berlaku: '1997-03-11'
+lembaran_negara: 'LN. 1997/ No. 10, TLN NO. 3671, LL SETNEG : 26 HLM'
+subjek: NARKOTIKA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu5-1997.pdf
+bpk:
+  id: 45926
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34479/UU%20Nomor%205%20Tahun%201997.pdf
+    bpk_file_id: 34479
+    filename: UU Nomor 5 Tahun 1997.pdf
+    sha256: 8de159766363c18db596ee83caa4bbc3d56d4434d07b5e094d91065046f5962e
+    bytes: 105716
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+uji_materi: null

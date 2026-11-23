@@ -6,20 +6,18 @@ year: 1997
 title: Undang-Undang Nomor 28 Tahun 1997 tentang Kepolisian Negara Ri
 tentang: KEPOLISIAN NEGARA RI
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 2 Tahun 2002 Tentang Kepolisian
-  Negara Ri'
+status: tidak_berlaku
 tanggal_penetapan: '1997-10-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-28-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu28-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/46044/uu-no-28-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34600/UU%20Nomor%2028%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_2_2002
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,4 +28,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_28_1997_1997-10-07.txt
   pasal_count: 15
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: bde185ba6af3d2f5eef44b10374e601dc55c4cf58e5c3f5456cba1082ce51e8e
 pdf_sha256: bde185ba6af3d2f5eef44b10374e601dc55c4cf58e5c3f5456cba1082ce51e8e
+tanggal_pengundangan: '1997-10-07'
+tanggal_berlaku: '1997-10-07'
+lembaran_negara: 'LN. 1997/ No. 81, TLN NO. 3710, LL SETNEG : 21 HLM'
+subjek: PEMBENTUKAN, PERUBAHAN, DAN PEMBUBARAN KOMISI / KOMITE / BADAN / DEWAN / STAF
+  KHUSUS / TIM / PANITIA - DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-28-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu28-1997.pdf
+bpk:
+  id: 46044
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34600/UU%20Nomor%2028%20Tahun%201997.pdf
+    bpk_file_id: 34600
+    filename: UU Nomor 28 Tahun 1997.pdf
+    sha256: bde185ba6af3d2f5eef44b10374e601dc55c4cf58e5c3f5456cba1082ce51e8e
+    bytes: 96854
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_2_2002
+      citation: UU No. 2 Tahun 2002
+      tentang: Kepolisian Negara Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/44418/uu-no-2-tahun-2002
+      note: null
+    Mencabut:
+    - id: uu_13_1961
+      citation: UU No. 13 Tahun 1961
+      tentang: Ketentuan-Ketentuan Pokok Kepolisian Negara
+      url: https://peraturan.bpk.go.id/Details/51233/uu-no-13-tahun-1961
+      note: null
+uji_materi: null

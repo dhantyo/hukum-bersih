@@ -6,22 +6,20 @@ year: 1999
 title: Undang-Undang Nomor 2 Tahun 1999 tentang Partai Politik
 tentang: PARTAI POLITIK
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 31 Tahun 2002 Tentang Partai
-  Politik'
+status: tidak_berlaku
 tanggal_penetapan: '1999-02-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu2-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45270/uu-no-2-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33760/UU%20Nomor%202%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_3_1985
   - uu_3_1975
-  revoked_by:
-  - uu_31_2002
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -32,4 +30,43 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1999_1999-02-01.txt
   pasal_count: 22
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 576ff95081282037552fc1d8734147aee3a0a0825863b2a99e7dec0f25cba261
 pdf_sha256: 576ff95081282037552fc1d8734147aee3a0a0825863b2a99e7dec0f25cba261
+tanggal_pengundangan: '1999-02-01'
+tanggal_berlaku: '1999-02-01'
+lembaran_negara: 'LN. 1999/ No. 22, TLN NO. 3809, LL SETNEG : 9 HLM'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu2-1999.pdf
+bpk:
+  id: 45270
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33760/UU%20Nomor%202%20Tahun%201999.pdf
+    bpk_file_id: 33760
+    filename: UU Nomor 2 Tahun 1999.pdf
+    sha256: 576ff95081282037552fc1d8734147aee3a0a0825863b2a99e7dec0f25cba261
+    bytes: 78372
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_31_2002
+      citation: UU No. 31 Tahun 2002
+      tentang: Partai Politik
+      url: https://peraturan.bpk.go.id/Details/44497/uu-no-31-tahun-2002
+      note: null
+    Mencabut:
+    - id: uu_3_1985
+      citation: UU No. 3 Tahun 1985
+      tentang: Perubahan atas Undang-Undang Nomor 3 Tahun 1975 tentang Partai Politik
+        dan Golongan Karya
+      url: https://peraturan.bpk.go.id/Details/46921/uu-no-3-tahun-1985
+      note: null
+    - id: uu_3_1975
+      citation: UU No. 3 Tahun 1975
+      tentang: Partai Politik dan Golongan Karya
+      url: https://peraturan.bpk.go.id/Details/47402/uu-no-3-tahun-1975
+      note: null
+uji_materi: null

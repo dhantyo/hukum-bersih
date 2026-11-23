@@ -12,8 +12,8 @@ tanggal_penetapan: '1997-10-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-30-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu30-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/46048/uu-no-30-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34603/UU%20Nomor%2030%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_1997_1997-10-08.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5f17e92b6d56d71fedcf26bd3ec9db628a10f2e605f43522ced93f584226b164
 pdf_sha256: 5f17e92b6d56d71fedcf26bd3ec9db628a10f2e605f43522ced93f584226b164
+tanggal_pengundangan: '1997-10-08'
+tanggal_berlaku: '1997-10-08'
+lembaran_negara: 'LN. 1997, LL SETNEG : 9 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-30-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu30-1997.pdf
+bpk:
+  id: 46048
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34603/UU%20Nomor%2030%20Tahun%201997.pdf
+    bpk_file_id: 34603
+    filename: UU Nomor 30 Tahun 1997.pdf
+    sha256: 5f17e92b6d56d71fedcf26bd3ec9db628a10f2e605f43522ced93f584226b164
+    bytes: 73928
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

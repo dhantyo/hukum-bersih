@@ -6,19 +6,18 @@ year: 1997
 title: Undang-Undang Nomor 14 Tahun 1997 tentang Perubahan Uu 19-1992 Tentang Merek
 tentang: PERUBAHAN UU 19-1992 TENTANG MEREK
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 15 Tahun 2001 Tentang Merek'
+status: tidak_berlaku
 tanggal_penetapan: '1997-05-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu14-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/45939/uu-no-14-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34492/UU%20Nomor%2014%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_15_2001
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -29,4 +28,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1997_1997-05-07.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5908a1f77587fe2e6b67ff5ca40a7704a67e7b46fdaf083b9e1fa0ba7ed0ce7c
 pdf_sha256: 5908a1f77587fe2e6b67ff5ca40a7704a67e7b46fdaf083b9e1fa0ba7ed0ce7c
+tanggal_pengundangan: '1997-05-07'
+tanggal_berlaku: '1997-05-07'
+lembaran_negara: 'LN. 1997 LL SETNEG : 17 HLM'
+subjek: HAK ATAS KEKAYAAN INTELEKTUAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu14-1997.pdf
+bpk:
+  id: 45939
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34492/UU%20Nomor%2014%20Tahun%201997.pdf
+    bpk_file_id: 34492
+    filename: UU Nomor 14 Tahun 1997.pdf
+    sha256: 5908a1f77587fe2e6b67ff5ca40a7704a67e7b46fdaf083b9e1fa0ba7ed0ce7c
+    bytes: 93556
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_15_2001
+      citation: UU No. 15 Tahun 2001
+      tentang: Merek
+      url: https://peraturan.bpk.go.id/Details/37599/uu-no-15-tahun-2001
+      note: null
+    Mengubah:
+    - id: uu_19_1992
+      citation: UU No. 19 Tahun 1992
+      tentang: Merek
+      url: https://peraturan.bpk.go.id/Details/46616/uu-no-19-tahun-1992
+      note: null
+uji_materi: null

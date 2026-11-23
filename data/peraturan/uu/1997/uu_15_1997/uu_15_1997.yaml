@@ -11,8 +11,8 @@ tanggal_penetapan: '1997-05-09'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu15-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/45942/uu-no-15-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34495/UU%20Nomor%2015%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
@@ -27,5 +27,38 @@ versions:
   date: '1997-05-09'
   date_basis: tanggal_penetapan
   text: uu_15_1997_1997-05-09.txt
-  pasal_count: 9
+  pasal_count: 42
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: efbe42b005d35e5178fb1b0addb9074ef224a69fb2033a7d0b547ad4f0a58c2b
 pdf_sha256: efbe42b005d35e5178fb1b0addb9074ef224a69fb2033a7d0b547ad4f0a58c2b
+tanggal_pengundangan: '1997-05-09'
+tanggal_berlaku: '1997-05-09'
+lembaran_negara: 'LN. 1997/ No. 37, TLN NO. 3682, LL SETNEG : 15 HLM'
+subjek: BANTUAN, SUMBANGAN, BENCANA / KEBENCANAAN, DAN PENANGGULANGAN BENCANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu15-1997.pdf
+bpk:
+  id: 45942
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34495/UU%20Nomor%2015%20Tahun%201997.pdf
+    bpk_file_id: 34495
+    filename: UU Nomor 15 Tahun 1997.pdf
+    sha256: efbe42b005d35e5178fb1b0addb9074ef224a69fb2033a7d0b547ad4f0a58c2b
+    bytes: 107369
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_29_2009
+      citation: UU No. 29 Tahun 2009
+      tentang: Perubahan atas Undang-Undang Nomor 15 Tahun 1997 tentang Ketransmigrasian
+      url: https://peraturan.bpk.go.id/Details/38765/uu-no-29-tahun-2009
+      note: null
+    Mencabut:
+    - id: uu_3_1972
+      citation: UU No. 3 Tahun 1972
+      tentang: Ketentuan-Ketentuan Pokok Transmigrasi
+      url: https://peraturan.bpk.go.id/Details/47549/uu-no-3-tahun-1972
+      note: null
+uji_materi: null

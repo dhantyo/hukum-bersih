@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 4 Tahun 1998 tentang Penetapan Perpu 1-1998 Tentang P
   Uu Kepailitan Menjadi Uu
 tentang: PENETAPAN PERPU 1-1998 TENTANG PERUBAHAN UU KEPAILITAN MENJADI UU
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1998-09-09'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1998
-source_pdf_url: https://peraturan.go.id/files/uu4-1998.pdf
+source_url: https://peraturan.bpk.go.id/Details/45434/uu-no-4-tahun-1998
+source_pdf_url: https://peraturan.bpk.go.id/Download/33950/UU%20Nomor%204%20Tahun%201998.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,37 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_4_1998_1998
+- id: uu_4_1998_1998-09-09
   kind: asli
   source: official
-  date: null
+  date: '1998-09-09'
   date_basis: tanggal_penetapan
-  text: uu_4_1998_1998.txt
+  text: uu_4_1998_1998-09-09.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 58c0430a7bd09e568e2ab88e9669a4b9fe83b94a9b3dcb06ad51c35e2778e076
 pdf_sha256: 58c0430a7bd09e568e2ab88e9669a4b9fe83b94a9b3dcb06ad51c35e2778e076
+tanggal_pengundangan: '1998-09-09'
+tanggal_berlaku: '1998-09-09'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1998
+  source_pdf_url: https://peraturan.go.id/files/uu4-1998.pdf
+bpk:
+  id: 45434
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33950/UU%20Nomor%204%20Tahun%201998.pdf
+    bpk_file_id: 33950
+    filename: UU Nomor 4 Tahun 1998.pdf
+    sha256: 58c0430a7bd09e568e2ab88e9669a4b9fe83b94a9b3dcb06ad51c35e2778e076
+    bytes: 32102
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_37_2004
+      citation: UU No. 37 Tahun 2004
+      tentang: Kepailitan Dan Penundaan Kewajiban Pembayaran Utang
+      url: https://peraturan.bpk.go.id/Details/40784/uu-no-37-tahun-2004
+      note: null
+uji_materi: null

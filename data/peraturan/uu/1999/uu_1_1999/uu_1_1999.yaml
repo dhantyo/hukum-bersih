@@ -15,8 +15,8 @@ tanggal_penetapan: '1999-01-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu1-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45268/uu-no-1-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33758/UU%20Nomor%201%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,4 +32,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1999_1999-01-27.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ca8d82d7c2213c2870969ad785be0579d8cf2faa1a8691b4a44c3a72db2520a4
 pdf_sha256: ca8d82d7c2213c2870969ad785be0579d8cf2faa1a8691b4a44c3a72db2520a4
+tanggal_pengundangan: '1999-01-27'
+tanggal_berlaku: '1999-01-27'
+lembaran_negara: 'LN. 1999/ No. 19, TLN NO. 3807, LL SETNEG : 3 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu1-1999.pdf
+bpk:
+  id: 45268
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33758/UU%20Nomor%201%20Tahun%201999.pdf
+    bpk_file_id: 33758
+    filename: UU Nomor 1 Tahun 1999.pdf
+    sha256: ca8d82d7c2213c2870969ad785be0579d8cf2faa1a8691b4a44c3a72db2520a4
+    bytes: 92541
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

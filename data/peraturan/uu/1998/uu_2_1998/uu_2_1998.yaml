@@ -12,8 +12,8 @@ tanggal_penetapan: '1998-03-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1998
-source_pdf_url: https://peraturan.go.id/files/uu2-1998.pdf
+source_url: https://peraturan.bpk.go.id/Details/45427/uu-no-2-tahun-1998
+source_pdf_url: https://peraturan.bpk.go.id/Download/33937/UU%20Nomor%202%20Tahun%201998.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1998_1998-03-13.txt
   pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5782be6f3123543861aa19d2d2bdcbbf2c8fd2cdfb834c945b21d00300b142ea
 pdf_sha256: 5782be6f3123543861aa19d2d2bdcbbf2c8fd2cdfb834c945b21d00300b142ea
+tanggal_pengundangan: '1998-03-13'
+tanggal_berlaku: '1998-03-13'
+lembaran_negara: 'LN. 1998/ No. 65, TLN NO. 3749, LL SETNEG : 12 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1998
+  source_pdf_url: https://peraturan.go.id/files/uu2-1998.pdf
+bpk:
+  id: 45427
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33937/UU%20Nomor%202%20Tahun%201998.pdf
+    bpk_file_id: 33937
+    filename: UU Nomor 2 Tahun 1998.pdf
+    sha256: 5782be6f3123543861aa19d2d2bdcbbf2c8fd2cdfb834c945b21d00300b142ea
+    bytes: 84962
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

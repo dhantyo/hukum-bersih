@@ -6,20 +6,18 @@ year: 1997
 title: Undang-Undang Nomor 20 Tahun 1997 tentang Penerimaan Negara Bukan Pajak
 tentang: PENERIMAAN NEGARA BUKAN PAJAK
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 9 Tahun 2018 Tentang Penerimaan
-  Negara Bukan Pajak'
+status: tidak_berlaku
 tanggal_penetapan: '1997-05-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu20-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/46006/uu-no-20-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34560/UU%20Nomor%2020%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_9_2018
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_1997_1997-05-23.txt
   pasal_count: 24
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 22519548f3c31ec0789242c12880a883722c52f37b2291043a490706bf85dda0
 pdf_sha256: 22519548f3c31ec0789242c12880a883722c52f37b2291043a490706bf85dda0
+tanggal_pengundangan: '1997-05-23'
+tanggal_berlaku: '1997-05-23'
+lembaran_negara: 'LN. 1997, LL SETNEG : 18 HLM'
+subjek: APBN - PNBP / PENERIMAAN NEGARA BUKAN PAJAK
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu20-1997.pdf
+bpk:
+  id: 46006
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34560/UU%20Nomor%2020%20Tahun%201997.pdf
+    bpk_file_id: 34560
+    filename: UU Nomor 20 Tahun 1997.pdf
+    sha256: 22519548f3c31ec0789242c12880a883722c52f37b2291043a490706bf85dda0
+    bytes: 82217
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_9_2018
+      citation: UU No. 9 Tahun 2018
+      tentang: Penerimaan Negara Bukan Pajak
+      url: https://peraturan.bpk.go.id/Details/90041/uu-no-9-tahun-2018
+      note: null
+uji_materi: null

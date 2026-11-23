@@ -11,8 +11,8 @@ tanggal_penetapan: '1998-11-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1998
-source_pdf_url: https://peraturan.go.id/files/uu10-1998.pdf
+source_url: https://peraturan.bpk.go.id/Details/45486/uu-no-10-tahun-1998
+source_pdf_url: https://peraturan.bpk.go.id/Download/34003/UU%20Nomor%2010%20Tahun%201998.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,74 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_1998_1998-11-10.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c2fbb457d4417e2324c4b002b9158fb3d3e832e2341adde4fdcbda7a46d45548
 pdf_sha256: c2fbb457d4417e2324c4b002b9158fb3d3e832e2341adde4fdcbda7a46d45548
+tanggal_pengundangan: '1998-11-10'
+tanggal_berlaku: '1998-11-10'
+lembaran_negara: 'LN. 1998/ No. 182, TLN NO. 3790, LL SETNEG : 32 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1998
+  source_pdf_url: https://peraturan.go.id/files/uu10-1998.pdf
+bpk:
+  id: 45486
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34003/UU%20Nomor%2010%20Tahun%201998.pdf
+    bpk_file_id: 34003
+    filename: UU Nomor 10 Tahun 1998.pdf
+    sha256: c2fbb457d4417e2324c4b002b9158fb3d3e832e2341adde4fdcbda7a46d45548
+    bytes: 139998
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    Mencabut:
+    - id: perppu_21_1960
+      citation: PERPU No. 21 Tahun 1960
+      tentang: Bank Pembangunan Indonesia
+      url: https://peraturan.bpk.go.id/Details/53482/perpu-no-21-tahun-1960
+      note: null
+uji_materi:
+- putusan: 102/PUU-XVIII/2020
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/198/putusan_mkri_102-PUU-XVIII-2020.pdf
+  amar: Frasa “Bank Umum” dalam Pasal 12A ayat (1) UndangUndang Nomor 10 Tahun 1998
+    tentang Perubahan Atas UndangUndang Nomor 7 Tahun 1992 tentang Perbankan (Lembaran
+    Negara Republik Indonesia Tahun 1998 Nomor 182, Tambahan Lembaran Negara Republik
+    Indonesia Nomor 3790) bertentangan dengan Undang-Undang Dasar Negara Republik
+    Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat sepanjang tidak
+    dimaknai “Bank Umum dan Bank Perkreditan Rakyat”. Sehingga, Pasal 12A ayat (1)
+    Undang-Undang Nomor 10 Tahun 1998 tentang Perubahan Atas Undang-Undang Nomor 7
+    Tahun 1992 tentang Perbankan (Lembaran Negara Republik Indonesia Tahun 1998 Nomor
+    182, Tambahan Lembaran Negara Republik Indonesia Nomor 3790) yang semula berbunyi,
+    “Bank Umum dapat membeli sebagian atau seluruh agunan, baik melalui pelelangan
+    maupun di luar pelelangan berdasarkan penyerahan secara sukarela oleh pemilik
+    agunan atau berdasarkan kuasa untuk menjual di luar lelang dari pemilik agunan
+    dalam hal Nasabah Debitur tidak memenuhi kewajibannya kepada bank, dengan ketentuan
+    agunan yang dibeli tersebut wajib dicairkan secepatnya”, menjadi selengkapnya
+    berbunyi “Bank Umum dan Bank Perkreditan Rakyat dapat membeli sebagian atau seluruh
+    agunan, baik melalui pelelangan maupun di luar pelelangan berdasarkan penyerahan
+    secara sukarela oleh pemilik agunan atau berdasarkan kuasa untuk menjual di luar
+    lelang dari pemilik agunan dalam hal Nasabah Debitur tidak memenuhi kewajibannya
+    kepada bank, dengan ketentuan agunan yang dibeli tersebut wajib dicairkan secepatnya."

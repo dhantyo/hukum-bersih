@@ -11,8 +11,8 @@ tanggal_penetapan: '1997-10-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-31-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu31-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/46050/uu-no-31-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/69294/UU%20Nomor%2031%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,55 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_31_1997_1997-10-15
+  kind: asli
+  source: official
+  date: '1997-10-15'
+  date_basis: tanggal_penetapan
+  text: uu_31_1997_1997-10-15.txt
+  pasal_count: 353
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 20131b95b362296b65ad91dc0cc55ec2e1f8fe7784d4b01ef2888fb51c6c085b
 pdf_sha256: 20131b95b362296b65ad91dc0cc55ec2e1f8fe7784d4b01ef2888fb51c6c085b
-parse_error: 'LeakedMarkupError: hcontainer_1__p_2: markup in text: ''ART 1 -'''
+tanggal_pengundangan: '1997-10-15'
+tanggal_berlaku: '1997-10-15'
+lembaran_negara: 'LN. 1997, LL SETNEG : 139 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-31-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu31-1997.pdf
+bpk:
+  id: 46050
+  files:
+  - url: https://peraturan.bpk.go.id/Download/69294/UU%20Nomor%2031%20Tahun%201997.pdf
+    bpk_file_id: 69294
+    filename: UU Nomor 31 Tahun 1997.pdf
+    sha256: 20131b95b362296b65ad91dc0cc55ec2e1f8fe7784d4b01ef2888fb51c6c085b
+    bytes: 513592
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: pp_8_1958
+      citation: PP No. 8 Tahun 1958
+      tentang: Penetapan Hari Mulai Berlakunya Undang-Undang Darurat No. 1 Tahun 1958
+        (Lembaran-Negara Tahun 1958 No. 1) Tentang Pengubahan Undang-Undang No. 6
+        Tahun 1950 Tentang Hukum Acara Pidana Pada Pengadilan Ketentaraan
+      url: https://peraturan.bpk.go.id/Details/76189/pp-no-8-tahun-1958
+      note: null
+    - id: uu_6_1950
+      citation: UU No. 6 Tahun 1950
+      tentang: Menetapkan "Undang-Undang Darurat Tentang Hukum Acara Pidana Pada Pengadilan
+        Tentara" (Undang-Undang Darurat Nr. 17, Tahun 1950), Sebagai Undang-Undang
+        Federal
+      url: https://peraturan.bpk.go.id/Details/38087/uu-no-6-tahun-1950
+      note: null
+    - id: uu_5_1950
+      citation: UU No. 5 Tahun 1950
+      tentang: Menetapkan “Undang-Undang Darurat tentang Susunan dan Kekuasaan Pengadilan/Kejaksaan
+        dalam Lingkungan Peradilan Ketentaraan” (Undang-Undang Darurat Nr 16. Tahun
+        1950), Sebagai Undang-Undang Federal
+      url: https://peraturan.bpk.go.id/Details/37969/uu-no-5-tahun-1950
+      note: null
+uji_materi: null

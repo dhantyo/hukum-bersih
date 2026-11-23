@@ -7,22 +7,55 @@ title: Undang-Undang Nomor 21 Tahun 1997 tentang Bea Perolehan Hak Atas Tanah Da
   Bangunan
 tentang: BEA PEROLEHAN HAK ATAS TANAH DAN BANGUNAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 20 Tahun 2009 Tentang Gelar,
-  Tanda Jasa, dan Tanda Kehormatan'
+status: berlaku
 tanggal_penetapan: '1997-05-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu21-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/46012/uu-no-21-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/224598/UU%20Nomor%2021%20Tahun%201997_.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_20_2009
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_21_1997_1997-05-29
+  kind: asli
+  source: official
+  date: '1997-05-29'
+  date_basis: tanggal_penetapan
+  text: uu_21_1997_1997-05-29.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d3c02467c4c9be2a7c0e8f94ff8b6481299e26c9913141cb08f5d6a496ad6ef1
+  ocr: true
 pdf_sha256: 41e7e709eda9fa3ab1508c46c822108129a41aa6265b8de19d201f797a293d28
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1997-05-29'
+tanggal_berlaku: '1998-01-01'
+lembaran_negara: 'LN. 1997/ No.44, TLN NO. 3688, LL SETNEG : 22 HLM'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu21-1997.pdf
+bpk:
+  id: 46012
+  files:
+  - url: https://peraturan.bpk.go.id/Download/224598/UU%20Nomor%2021%20Tahun%201997_.pdf
+    bpk_file_id: 224598
+    filename: UU Nomor 21 Tahun 1997_.pdf
+    sha256: d3c02467c4c9be2a7c0e8f94ff8b6481299e26c9913141cb08f5d6a496ad6ef1
+    bytes: 10539370
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_20_2000
+      citation: UU No. 20 Tahun 2000
+      tentang: Perubahan atas Undang-Undang Nomor 21 Tahun 1997 tentang Bea Perolehan
+        Hak atas Tanah dan Bangunan
+      url: https://peraturan.bpk.go.id/Details/44986/uu-no-20-tahun-2000
+      note: null
+uji_materi: null

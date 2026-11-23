@@ -12,8 +12,8 @@ tanggal_penetapan: '1998-10-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1998
-source_pdf_url: https://peraturan.go.id/files/uu8-1998.pdf
+source_url: https://peraturan.bpk.go.id/Details/45473/uu-no-8-tahun-1998
+source_pdf_url: https://peraturan.bpk.go.id/Download/33990/UU%20Nomor%208%20Tahun%201998.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1998_1998-10-01.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b5c6fb69eca752cb07ec4526d547196c79841a59cf19f9db505d7f34e3ca80eb
 pdf_sha256: b5c6fb69eca752cb07ec4526d547196c79841a59cf19f9db505d7f34e3ca80eb
+tanggal_pengundangan: '1998-10-01'
+tanggal_berlaku: '1998-10-01'
+lembaran_negara: 'LN. 1998/ No. 176, TLN NO. 3788, LL SETNEG : 8 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1998
+  source_pdf_url: https://peraturan.go.id/files/uu8-1998.pdf
+bpk:
+  id: 45473
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33990/UU%20Nomor%208%20Tahun%201998.pdf
+    bpk_file_id: 33990
+    filename: UU Nomor 8 Tahun 1998.pdf
+    sha256: b5c6fb69eca752cb07ec4526d547196c79841a59cf19f9db505d7f34e3ca80eb
+    bytes: 70214
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

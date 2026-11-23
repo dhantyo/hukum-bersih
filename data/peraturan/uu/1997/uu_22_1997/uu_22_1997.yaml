@@ -6,19 +6,18 @@ year: 1997
 title: Undang-Undang Nomor 22 Tahun 1997 tentang Narkotika
 tentang: NARKOTIKA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 35 Tahun 2009 Tentang Narkotika'
+status: tidak_berlaku
 tanggal_penetapan: '1997-09-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-22-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu22-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/46016/uu-no-22-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34570/UU%20Nomor%2022%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_35_2009
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -29,4 +28,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_1997_1997-09-01.txt
   pasal_count: 104
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8a79db485b7ed65cd3491cab610c5dee9995f81aee6fad5557710022a1c6f475
 pdf_sha256: 8a79db485b7ed65cd3491cab610c5dee9995f81aee6fad5557710022a1c6f475
+tanggal_pengundangan: '1997-09-01'
+tanggal_berlaku: '1997-09-01'
+lembaran_negara: 'LN. 1997/ No. 67, TLN NO. 3698, LL SETNEG : 58 HLM'
+subjek: NARKOTIKA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-22-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu22-1997.pdf
+bpk:
+  id: 46016
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34570/UU%20Nomor%2022%20Tahun%201997.pdf
+    bpk_file_id: 34570
+    filename: UU Nomor 22 Tahun 1997.pdf
+    sha256: 8a79db485b7ed65cd3491cab610c5dee9995f81aee6fad5557710022a1c6f475
+    bytes: 192398
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_35_2009
+      citation: UU No. 35 Tahun 2009
+      tentang: Narkotika
+      url: https://peraturan.bpk.go.id/Details/38776/uu-no-35-tahun-2009
+      note: null
+    Mencabut:
+    - id: uu_9_1976
+      citation: UU No. 9 Tahun 1976
+      tentang: Narkotika
+      url: https://peraturan.bpk.go.id/Details/47215/uu-no-9-tahun-1976
+      note: null
+uji_materi: null

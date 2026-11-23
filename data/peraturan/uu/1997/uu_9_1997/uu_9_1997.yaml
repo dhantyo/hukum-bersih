@@ -13,8 +13,8 @@ tanggal_penetapan: '1997-04-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu9-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/45930/uu-no-9-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34483/UU%20Nomor%209%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_1997_1997-04-02.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b01b3860bb28a64b699ff2745690f2752250940db7e4daf6f6b4e9b0616d4e1b
 pdf_sha256: b01b3860bb28a64b699ff2745690f2752250940db7e4daf6f6b4e9b0616d4e1b
+tanggal_pengundangan: '1997-04-02'
+tanggal_berlaku: '1997-04-02'
+lembaran_negara: 'LN. 1997/ No. 21, TLN NO. 3675, LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu9-1997.pdf
+bpk:
+  id: 45930
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34483/UU%20Nomor%209%20Tahun%201997.pdf
+    bpk_file_id: 34483
+    filename: UU Nomor 9 Tahun 1997.pdf
+    sha256: b01b3860bb28a64b699ff2745690f2752250940db7e4daf6f6b4e9b0616d4e1b
+    bytes: 46834
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

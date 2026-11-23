@@ -6,15 +6,13 @@ year: 1999
 title: Undang-Undang Nomor 3 Tahun 1999 tentang Pemilihan Umum
 tentang: PEMILIHAN UMUM
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 12 Tahun 2003 Tentang Pemilihan
-  Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, dan Dewan Perwakilan
-  Rakyat Daerah'
+status: tidak_berlaku
 tanggal_penetapan: '1999-02-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu3-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45271/uu-no-3-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33763/UU%20Nomor%203%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,8 +20,7 @@ relationships:
   - uu_2_1980
   - uu_15_1969
   - uu_4_1975
-  revoked_by:
-  - uu_12_2003
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -33,5 +30,66 @@ versions:
   date: '1999-02-01'
   date_basis: tanggal_penetapan
   text: uu_3_1999_1999-02-01.txt
-  pasal_count: 12
+  pasal_count: 67
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: fa8ee35905e81ac3f618a62b590e65c452856ac0b3b5847932da021e418049e9
 pdf_sha256: fa8ee35905e81ac3f618a62b590e65c452856ac0b3b5847932da021e418049e9
+tanggal_pengundangan: '1999-02-01'
+tanggal_berlaku: '1999-02-01'
+lembaran_negara: 'LN. 1999/ No. 23, TLN NO. 3810, LL SETNEG : 30 HLM'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu3-1999.pdf
+bpk:
+  id: 45271
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33763/UU%20Nomor%203%20Tahun%201999.pdf
+    bpk_file_id: 33763
+    filename: UU Nomor 3 Tahun 1999.pdf
+    sha256: fa8ee35905e81ac3f618a62b590e65c452856ac0b3b5847932da021e418049e9
+    bytes: 201205
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_12_2003
+      citation: UU No. 12 Tahun 2003
+      tentang: Pemilihan Umum Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah,
+        dan Dewan Perwakilan Rakyat Daerah
+      url: https://peraturan.bpk.go.id/Details/43012/uu-no-12-tahun-2003
+      note: null
+    Diubah dengan:
+    - id: uu_4_2000
+      citation: UU No. 4 Tahun 2000
+      tentang: Perubahan atas Undang-Undang Nomor 3 Tahun 1999 tentang Pemilihan Umum
+      url: https://peraturan.bpk.go.id/Details/44942/uu-no-4-tahun-2000
+      note: null
+    Mencabut:
+    - id: uu_1_1985
+      citation: UU No. 1 Tahun 1985
+      tentang: Perubahan atas Undang-Undang Nomor 15 Tahun 1969 tentang Pemilihan
+        Umum Anggota-Anggota Badan Permusyawaratan/Perwakilan Rakyat sebagaimana telah
+        Diubah dengan Undang-Undang Nomor 4 Tahun 1975 dan Undang-Undang Nomor 2 Tahun
+        1980
+      url: https://peraturan.bpk.go.id/Details/46917/uu-no-1-tahun-1985
+      note: null
+    - id: uu_2_1980
+      citation: UU No. 2 Tahun 1980
+      tentang: Perubahan atas Undang-Undang Nomor 15 Tahun 1969 tentang Pemilihan
+        Umum Anggota-Anggota Badan Permusyawaratan/Perwakilan Rakyat sebagaimana telah
+        diubah dengan Undang-Undang Nomor 4 Tahun 1975
+      url: https://peraturan.bpk.go.id/Details/47124/uu-no-2-tahun-1980
+      note: null
+    - id: uu_4_1975
+      citation: UU No. 4 Tahun 1975
+      tentang: Perubahan Undang-Undang Nomor 15 Tahun 1969 tentang Pemilihan Umum
+        Angota-Anggota Badan Permusyawaratan/Perwakilan Rakyat
+      url: https://peraturan.bpk.go.id/Details/47404/uu-no-4-tahun-1975
+      note: null
+    - id: uu_15_1969
+      citation: UU No. 15 Tahun 1969
+      tentang: Pemilihan Umum Anggota-Anggota Badan Permusyawaratan/Perwakilan Rakyat
+      url: https://peraturan.bpk.go.id/Details/49120/uu-no-15-tahun-1969
+      note: null
+uji_materi: null

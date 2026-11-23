@@ -12,8 +12,8 @@ tanggal_penetapan: '1997-04-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu11-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/45935/uu-no-11-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34488/UU%20Nomor%2011%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,5 +28,32 @@ versions:
   date: '1997-04-29'
   date_basis: tanggal_penetapan
   text: uu_11_1997_1997-04-29.txt
-  pasal_count: 3
+  pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6cd76027b783d635f9b6d25b2fb20408a6a910c0eb8f20040aee1151f22a3936
 pdf_sha256: 81ccacb051d65a07550d8687ee81aa0f775ccf5de82cd7abea253e39c5890236
+tanggal_pengundangan: '1997-04-29'
+tanggal_berlaku: '1996-04-01'
+lembaran_negara: 'LN. 1997/ No. 27, TLN NO. 3677, LL SETNEG : 10 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu11-1997.pdf
+bpk:
+  id: 45935
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34488/UU%20Nomor%2011%20Tahun%201997.pdf
+    bpk_file_id: 34488
+    filename: UU Nomor 11 Tahun 1997.pdf
+    sha256: 6cd76027b783d635f9b6d25b2fb20408a6a910c0eb8f20040aee1151f22a3936
+    bytes: 80361
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_2_1996
+      citation: UU No. 2 Tahun 1996
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1996/1997
+      url: https://peraturan.bpk.go.id/Details/46066/uu-no-2-tahun-1996
+      note: null
+uji_materi: null

@@ -15,8 +15,8 @@ tanggal_penetapan: '1997-03-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu7-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/56838/uu-no-7-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/46308/UU%20Nomor%207%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,4 +32,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1997_1997-03-24.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: cacbb8d3889a9417abc6440bb48104c7a4f2ea6cf6bac281bade7324930587af
 pdf_sha256: cacbb8d3889a9417abc6440bb48104c7a4f2ea6cf6bac281bade7324930587af
+tanggal_pengundangan: '1997-03-24'
+tanggal_berlaku: '1997-03-24'
+lembaran_negara: LN.1997/NO.17, TLN NO.3673.
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu7-1997.pdf
+bpk:
+  id: 56838
+  files:
+  - url: https://peraturan.bpk.go.id/Download/46308/UU%20Nomor%207%20Tahun%201997.pdf
+    bpk_file_id: 46308
+    filename: UU Nomor 7 Tahun 1997.pdf
+    sha256: cacbb8d3889a9417abc6440bb48104c7a4f2ea6cf6bac281bade7324930587af
+    bytes: 60069
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

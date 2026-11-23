@@ -12,8 +12,8 @@ tanggal_penetapan: '1997-03-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu6-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/45928/uu-no-6-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34481/UU%20Nomor%206%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_6_1997_1997-03-18
+  kind: asli
+  source: official
+  date: '1997-03-18'
+  date_basis: tanggal_penetapan
+  text: uu_6_1997_1997-03-18.txt
+  pasal_count: 14
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 15cc90ea1860ab521552a3918db3415db3fa35ead95101ce13b084052b9e6196
 pdf_sha256: 26707a7afed825d5b143fd0e57d40d47cd6e9af410e83136020d06233bd0a39c
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1997-03-18'
+tanggal_berlaku: '1997-04-01'
+lembaran_negara: 'LN. 1997/ No. 16, TLN NO. 3672, LL SETNEG : 9 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu6-1997.pdf
+bpk:
+  id: 45928
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34481/UU%20Nomor%206%20Tahun%201997.pdf
+    bpk_file_id: 34481
+    filename: UU Nomor 6 Tahun 1997.pdf
+    sha256: 15cc90ea1860ab521552a3918db3415db3fa35ead95101ce13b084052b9e6196
+    bytes: 81094
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

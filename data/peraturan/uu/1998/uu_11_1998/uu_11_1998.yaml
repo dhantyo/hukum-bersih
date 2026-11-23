@@ -7,21 +7,18 @@ title: Undang-Undang Nomor 11 Tahun 1998 tentang Perubahan Berlakunya Uu 25-1997
   Ketenagakerjaan
 tentang: PERUBAHAN BERLAKUNYA UU 25-1997 TENTANG KETENAGAKERJAAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 13 Tahun 2003 Tentang Ketenagakerjaan
-  Undang-Undang Nomor 13 Tahun 2003 Tentang Ketenagakerjaan Undang-Undang Nomor 13
-  Tahun 2003 Tentang Ketenagakerjaan'
+status: tidak_berlaku
 tanggal_penetapan: '1998-11-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1998
-source_pdf_url: https://peraturan.go.id/files/uu11-1998.pdf
+source_url: https://peraturan.bpk.go.id/Details/45490/uu-no-11-tahun-1998
+source_pdf_url: https://peraturan.bpk.go.id/Download/34007/UU%20Nomor%2011%20Tahun%201998.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_13_2003
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -32,4 +29,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1998_1998-11-10.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a230f7906694cc7f7499e7063e1f9b1ab0ab57cbb1e19e0e35d7f2946d32c55a
 pdf_sha256: a230f7906694cc7f7499e7063e1f9b1ab0ab57cbb1e19e0e35d7f2946d32c55a
+tanggal_pengundangan: '1998-11-10'
+tanggal_berlaku: '1998-11-10'
+lembaran_negara: 'LN. 1998/ No. 184, TLN NO. 3791, LL SETNEG : 4 HLM'
+subjek: KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1998
+  source_pdf_url: https://peraturan.go.id/files/uu11-1998.pdf
+bpk:
+  id: 45490
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34007/UU%20Nomor%2011%20Tahun%201998.pdf
+    bpk_file_id: 34007
+    filename: UU Nomor 11 Tahun 1998.pdf
+    sha256: a230f7906694cc7f7499e7063e1f9b1ab0ab57cbb1e19e0e35d7f2946d32c55a
+    bytes: 33405
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_13_2003
+      citation: UU No. 13 Tahun 2003
+      tentang: Ketenagakerjaan
+      url: https://peraturan.bpk.go.id/Details/43013/uu-no-13-tahun-2003
+      note: null
+    Mengubah:
+    - id: uu_25_1997
+      citation: UU No. 25 Tahun 1997
+      tentang: Ketenagakerjaan
+      url: https://peraturan.bpk.go.id/Details/46026/uu-no-25-tahun-1997
+      note: null
+uji_materi: null

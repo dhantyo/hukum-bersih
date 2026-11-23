@@ -11,8 +11,8 @@ tanggal_penetapan: '1998-11-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1998
-source_pdf_url: https://peraturan.go.id/files/uu13-1998.pdf
+source_url: https://peraturan.bpk.go.id/Details/45509/uu-no-13-tahun-1998
+source_pdf_url: https://peraturan.bpk.go.id/Download/34026/UU%20Nomor%2013%20Tahun%201998.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_1998_1998-11-30.txt
   pasal_count: 14
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7771708f704894a09d6c7c8128146aa9e8409e8e5ed4582fab8f7d049921571b
 pdf_sha256: 7771708f704894a09d6c7c8128146aa9e8409e8e5ed4582fab8f7d049921571b
+tanggal_pengundangan: '1998-11-30'
+tanggal_berlaku: '1998-11-30'
+lembaran_negara: 'LN. 1998/ No. 190, TLN NO. 3796, LL SETNEG : 16 HLM'
+subjek: BANTUAN, SUMBANGAN, BENCANA / KEBENCANAAN, DAN PENANGGULANGAN BENCANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1998
+  source_pdf_url: https://peraturan.go.id/files/uu13-1998.pdf
+bpk:
+  id: 45509
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34026/UU%20Nomor%2013%20Tahun%201998.pdf
+    bpk_file_id: 34026
+    filename: UU Nomor 13 Tahun 1998.pdf
+    sha256: 7771708f704894a09d6c7c8128146aa9e8409e8e5ed4582fab8f7d049921571b
+    bytes: 64029
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_4_1965
+      citation: UU No. 4 Tahun 1965
+      tentang: Pemberian Bantuan Penghidupan Orang Jompo
+      url: https://peraturan.bpk.go.id/Details/49978/uu-no-4-tahun-1965
+      note: null
+uji_materi: null

@@ -6,20 +6,18 @@ year: 1997
 title: Undang-Undang Nomor 18 Tahun 1997 tentang Pajak Daerah Dan Retribusi Daerah
 tentang: PAJAK DAERAH DAN RETRIBUSI DAERAH
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 28 Tahun 2009 Tentang Pajak
-  Daerah dan Retribusi Daerah'
+status: tidak_berlaku
 tanggal_penetapan: '1997-05-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu18-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/45950/uu-no-18-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34503/UU%20Nomor%2018%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_28_2009
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,4 +28,93 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_1997_1997-05-23.txt
   pasal_count: 46
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: dedbdd4e8d0a7612dba3ac98618f37a1a1855bbe6e42bfa7f3482f5b3ce2c16a
 pdf_sha256: dedbdd4e8d0a7612dba3ac98618f37a1a1855bbe6e42bfa7f3482f5b3ce2c16a
+tanggal_pengundangan: '1997-05-23'
+tanggal_berlaku: '1997-05-23'
+lembaran_negara: 'LN. 1997, LL SETNEG : 28 HLM'
+subjek: PAJAK DAN RETRIBUSI DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu18-1997.pdf
+bpk:
+  id: 45950
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34503/UU%20Nomor%2018%20Tahun%201997.pdf
+    bpk_file_id: 34503
+    filename: UU Nomor 18 Tahun 1997.pdf
+    sha256: dedbdd4e8d0a7612dba3ac98618f37a1a1855bbe6e42bfa7f3482f5b3ce2c16a
+    bytes: 157736
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_28_2009
+      citation: UU No. 28 Tahun 2009
+      tentang: Pajak Daerah dan Retribusi Daerah
+      url: https://peraturan.bpk.go.id/Details/38763/uu-no-28-tahun-2009
+      note: null
+    Diubah dengan:
+    - id: uu_34_2000
+      citation: UU No. 34 Tahun 2000
+      tentang: Perubahan atas Undang-Undang Republik Indonesia Nomor 18 Tahun 1997
+        tentang Pajak Daerah dan Retribusi Daerah
+      url: https://peraturan.bpk.go.id/Details/45238/uu-no-34-tahun-2000
+      note: null
+    Mencabut:
+    - id: pp_5_1969
+      citation: PP No. 5 Tahun 1969
+      tentang: Pelaksanaan Undang-Undang No 10 Tahun 1968 (Lembaran Negara RI Tahun
+        1968 No 54; Tambahan Lembaran Negara No 2861) Tentang Penyerahan Pajak-Pajak
+        Negara; Bea Balik Nama Kendaraan Bermotor, Pajak Bangsa Asing Dan Pajak Radio
+        Kepada Daerah
+      url: https://peraturan.bpk.go.id/Details/70194/pp-no-5-tahun-1969
+      note: null
+    - id: uu_10_1968
+      citation: UU No. 10 Tahun 1968
+      tentang: 'Penyerahan Pajak-Pajak Negara: Bea Balik Nama Kendaraan Bermotor,
+        Pajak Bangsa Asing dan Pajak Radio Kepada Daerah'
+      url: https://peraturan.bpk.go.id/Details/49167/uu-no-10-tahun-1968
+      note: null
+    - id: uu_87_1958
+      citation: UU No. 87 Tahun 1958
+      tentang: Pengubahan Undang-Undang Pajak Bangsa Asing (Undang-Undang No. 74 Tahun
+        1958)
+      url: https://peraturan.bpk.go.id/Details/52374/uu-no-87-tahun-1958
+      note: null
+    - id: uu_74_1958
+      citation: UU No. 74 Tahun 1958
+      tentang: Penetapan "Undang-Undang Darurat No. 16 Tahun 1957 Tentang Pajak Bangsa
+        Asing (Lembaran-Negara Tahun 1957 No. 63)" Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/52867/uu-no-74-tahun-1958
+      note: null
+    - id: uu_32_1956
+      citation: UU No. 32 Tahun 1956
+      tentang: Perimbangan Keuangan antara Negara Dengan Daerah-Daerah, yang Berhak
+        Mengurus Rumah-Tangganya Sendiri
+      url: https://peraturan.bpk.go.id/Details/51174/uu-no-32-tahun-1956
+      note: Mencabut Pasal 3 ayat (1) huruf e, huruf f, huruf g, dan huruf h
+    - id: uu_21_1948
+      citation: UU No. 21 Tahun 1948
+      tentang: Menambah dan Mengubah Undang-Undang Nomor 12 Tahun 1947 tentang Pajak
+        Radio
+      url: https://peraturan.bpk.go.id/Details/25796/uu-no-21-tahun-1948
+      note: null
+    - id: uu_20_1948
+      citation: UU No. 20 Tahun 1948
+      tentang: Mengadakan Perubahan dan Tambahan Pajak Dalam Undang-Undang Nomor 14
+        Tahun 1947 Dari Hal Pajak Pembangunan I
+      url: https://peraturan.bpk.go.id/Details/25786/uu-no-20-tahun-1948
+      note: null
+    - id: uu_14_1947
+      citation: UU No. 14 Tahun 1947
+      tentang: Pemungutan Pajak Pembangunan di Rumah Makan dan Rumah Penginapan
+      url: https://peraturan.bpk.go.id/Details/25257/uu-no-14-tahun-1947
+      note: null
+    - id: uu_12_1947
+      citation: UU No. 12 Tahun 1947
+      tentang: Menetapkan "Pajak Radio" atas Semua Pesawat Penerimaan Radio
+      url: https://peraturan.bpk.go.id/Details/25253/uu-no-12-tahun-1947
+      note: null
+uji_materi: null

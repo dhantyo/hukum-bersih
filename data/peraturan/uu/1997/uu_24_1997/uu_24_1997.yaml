@@ -6,19 +6,18 @@ year: 1997
 title: Undang-Undang Nomor 24 Tahun 1997 tentang Penyiaran
 tentang: PENYIARAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 32 Tahun 2002 Tentang Penyiaran'
+status: tidak_berlaku
 tanggal_penetapan: '1997-09-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-24-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu24-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/46021/uu-no-24-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34575/UU%20Nomor%2024%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_32_2002
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -29,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_1997_1997-09-29.txt
   pasal_count: 78
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e230d3575b72a791e5ecc6dbb7823e5f5b3ad59ad45135e18d7fb7bc492115d1
 pdf_sha256: e230d3575b72a791e5ecc6dbb7823e5f5b3ad59ad45135e18d7fb7bc492115d1
+tanggal_pengundangan: '1997-09-29'
+tanggal_berlaku: '1997-09-29'
+lembaran_negara: 'LN. 1997/ No. 72, TLN NO. 3701, LL SETNEG : 52 HLM'
+subjek: PERS, POS, DAN PERIKLANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-24-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu24-1997.pdf
+bpk:
+  id: 46021
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34575/UU%20Nomor%2024%20Tahun%201997.pdf
+    bpk_file_id: 34575
+    filename: UU Nomor 24 Tahun 1997.pdf
+    sha256: e230d3575b72a791e5ecc6dbb7823e5f5b3ad59ad45135e18d7fb7bc492115d1
+    bytes: 195144
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_32_2002
+      citation: UU No. 32 Tahun 2002
+      tentang: Penyiaran
+      url: https://peraturan.bpk.go.id/Details/44500/uu-no-32-tahun-2002
+      note: null
+uji_materi: null

@@ -11,8 +11,8 @@ tanggal_penetapan: '1997-12-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-32-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu32-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/46052/uu-no-32-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34607/UU%20Nomor%2032%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by:
@@ -29,4 +29,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_32_1997_1997-12-05.txt
   pasal_count: 81
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 186f105e1979582b3d21a5e0afd81cb87727ff5c988034566d2a5c5038abd37f
 pdf_sha256: 186f105e1979582b3d21a5e0afd81cb87727ff5c988034566d2a5c5038abd37f
+tanggal_pengundangan: '1997-12-05'
+tanggal_berlaku: '1997-12-05'
+lembaran_negara: 'LN. 1997/ No. 93, TLN NO. 3720, LL SETNEG : 47 HLM'
+subjek: PASAR MODAL DAN PERDAGANGAN BERJANGKA KOMODITI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-32-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu32-1997.pdf
+bpk:
+  id: 46052
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34607/UU%20Nomor%2032%20Tahun%201997.pdf
+    bpk_file_id: 34607
+    filename: UU Nomor 32 Tahun 1997.pdf
+    sha256: 186f105e1979582b3d21a5e0afd81cb87727ff5c988034566d2a5c5038abd37f
+    bytes: 194407
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+    - id: uu_10_2011
+      citation: UU No. 10 Tahun 2011
+      tentang: Perubahan atas Undang-Undang Nomor 32 Tahun 1997 Tentang Perdagangan
+        Berjangka Komoditi
+      url: https://peraturan.bpk.go.id/Details/39186/uu-no-10-tahun-2011
+      note: null
+uji_materi: null

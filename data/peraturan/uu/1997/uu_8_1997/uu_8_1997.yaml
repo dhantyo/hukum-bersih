@@ -11,8 +11,8 @@ tanggal_penetapan: '1997-03-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu8-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/45929/uu-no-8-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34482/UU%20Nomor%208%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1997_1997-03-24.txt
   pasal_count: 31
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8e41f7b494ed39d59d37b9afe4d27cf877bce7cd2fdeb8be494aad871f2751f1
 pdf_sha256: 8e41f7b494ed39d59d37b9afe4d27cf877bce7cd2fdeb8be494aad871f2751f1
+tanggal_pengundangan: '1997-03-24'
+tanggal_berlaku: '1997-03-24'
+lembaran_negara: 'LN. 1997/ No. 18, TLN NO. 3674, LL SETNEG : 12 HLM'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu8-1997.pdf
+bpk:
+  id: 45929
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34482/UU%20Nomor%208%20Tahun%201997.pdf
+    bpk_file_id: 34482
+    filename: UU Nomor 8 Tahun 1997.pdf
+    sha256: 8e41f7b494ed39d59d37b9afe4d27cf877bce7cd2fdeb8be494aad871f2751f1
+    bytes: 71266
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

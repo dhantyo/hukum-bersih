@@ -12,8 +12,8 @@ tanggal_penetapan: '1999-03-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1999
-source_pdf_url: https://peraturan.go.id/files/uu7-1999.pdf
+source_url: https://peraturan.bpk.go.id/Details/45285/uu-no-7-tahun-1999
+source_pdf_url: https://peraturan.bpk.go.id/Download/33781/UU%20Nomor%207%20Tahun%201999.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1999_1999-03-29.txt
   pasal_count: 14
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e2118ea4daccdae1e03472c3c47d733f6470e434ff51fce7f0f68b317923d7e5
 pdf_sha256: a184e3ed4a97234e14d58a961e934c3acdb9852cde1f707af5e493dd86e678d0
+tanggal_pengundangan: '1999-03-29'
+tanggal_berlaku: '1999-04-01'
+lembaran_negara: 'LN. 1999/ No. 39, TLN NO. 3986, LL SETNEG : 13 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1999
+  source_pdf_url: https://peraturan.go.id/files/uu7-1999.pdf
+bpk:
+  id: 45285
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33781/UU%20Nomor%207%20Tahun%201999.pdf
+    bpk_file_id: 33781
+    filename: UU Nomor 7 Tahun 1999.pdf
+    sha256: e2118ea4daccdae1e03472c3c47d733f6470e434ff51fce7f0f68b317923d7e5
+    bytes: 67229
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_3_2000
+      citation: UU No. 3 Tahun 2000
+      tentang: Perubahan atas Undang-Undang Nomor 7 Tahun 1999 tentang Anggaran Pendapatan
+        dan Belanja Negara Tahun Anggaran 1999/2000
+      url: https://peraturan.bpk.go.id/Details/44940/uu-no-3-tahun-2000
+      note: null
+uji_materi: null

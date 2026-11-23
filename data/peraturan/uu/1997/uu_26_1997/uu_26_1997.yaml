@@ -7,20 +7,18 @@ title: Undang-Undang Nomor 26 Tahun 1997 tentang Hukum Disiplin Prajurit Angkata
   Bersenjata Ri
 tentang: HUKUM DISIPLIN PRAJURIT ANGKATAN BERSENJATA RI
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 25 Tahun 2014 Tentang Hukum
-  Disiplin Militer'
+status: tidak_berlaku
 tanggal_penetapan: '1997-10-03'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-26-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu26-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/46028/uu-no-26-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34582/UU%20Nomor%2026%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_25_2014
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,5 +28,39 @@ versions:
   date: '1997-10-03'
   date_basis: tanggal_penetapan
   text: uu_26_1997_1997-10-03.txt
-  pasal_count: 30
+  pasal_count: 40
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 91a33a2d9a73c3928dd44ae729cc7757b479d469442de332a67c289e48c56382
 pdf_sha256: 91a33a2d9a73c3928dd44ae729cc7757b479d469442de332a67c289e48c56382
+tanggal_pengundangan: '1997-10-03'
+tanggal_berlaku: '1997-10-03'
+lembaran_negara: 'LN. 1997, LL SETNEG : 21 HLM'
+subjek: KEPEGAWAIAN, APARATUR NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-26-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu26-1997.pdf
+bpk:
+  id: 46028
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34582/UU%20Nomor%2026%20Tahun%201997.pdf
+    bpk_file_id: 34582
+    filename: UU Nomor 26 Tahun 1997.pdf
+    sha256: 91a33a2d9a73c3928dd44ae729cc7757b479d469442de332a67c289e48c56382
+    bytes: 84862
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_25_2014
+      citation: UU No. 25 Tahun 2014
+      tentang: Hukum Disiplin Militer
+      url: https://peraturan.bpk.go.id/Details/38688/uu-no-25-tahun-2014
+      note: null
+    Mencabut:
+    - id: uu_40_1947
+      citation: UU No. 40 Tahun 1947
+      tentang: Menyesuaikan Peraturan-Peraturan Hukum Disiplin Tentara (Staatsblad
+        1934, No.168) Dengan Keadaan Sekarang
+      url: https://peraturan.bpk.go.id/Details/25381/uu-no-40-tahun-1947
+      note: null
+uji_materi: null

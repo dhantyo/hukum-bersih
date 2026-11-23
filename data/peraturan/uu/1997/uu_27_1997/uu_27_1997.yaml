@@ -6,21 +6,19 @@ year: 1997
 title: Undang-Undang Nomor 27 Tahun 1997 tentang Mobilisasi Dan Demobilisasi
 tentang: MOBILISASI DAN DEMOBILISASI
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 23 Tahun 2019 Tentang Pengelolaan
-  Sumber Daya Nasional Untuk Pertahanan Negara'
+status: tidak_berlaku
 tanggal_penetapan: '1997-10-03'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-27-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu27-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/46042/uu-no-27-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34596/UU%20Nomor%2027%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_14_1962
-  revoked_by:
-  - uu_23_2019
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -31,4 +29,40 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_27_1997_1997-10-03.txt
   pasal_count: 36
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e6bebc77a46c3de4ed2802679f0828a5b49730235e40e6ccd99610901818185c
 pdf_sha256: e6bebc77a46c3de4ed2802679f0828a5b49730235e40e6ccd99610901818185c
+tanggal_pengundangan: '1997-10-03'
+tanggal_berlaku: '1997-10-03'
+lembaran_negara: 'LN. 1997, LL SETNEG : 19 HLM'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-27-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu27-1997.pdf
+bpk:
+  id: 46042
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34596/UU%20Nomor%2027%20Tahun%201997.pdf
+    bpk_file_id: 34596
+    filename: UU Nomor 27 Tahun 1997.pdf
+    sha256: e6bebc77a46c3de4ed2802679f0828a5b49730235e40e6ccd99610901818185c
+    bytes: 87180
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_23_2019
+      citation: UU No. 23 Tahun 2019
+      tentang: Pengelolaan Sumber Daya Nasional Untuk Pertahanan Negara
+      url: https://peraturan.bpk.go.id/Details/123685/uu-no-23-tahun-2019
+      note: null
+    Mencabut:
+    - id: uu_14_1962
+      citation: UU No. 14 Tahun 1962
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang No. 1 Tahun
+        1962, Tentang Pemanggilan dan Pengerahan Warga Negara Dalam Rangka Mobilisasi
+        Umum Untuk Kepentingan Keamnan dan Pertahanan Negara (Lembaran Negara Tahun
+        1962 No. 8) Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/50975/uu-no-14-tahun-1962
+      note: null
+uji_materi: null

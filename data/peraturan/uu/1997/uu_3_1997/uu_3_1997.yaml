@@ -6,20 +6,18 @@ year: 1997
 title: Undang-Undang Nomor 3 Tahun 1997 tentang Pengadilan Anak
 tentang: PENGADILAN ANAK
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 11 Tahun 2012 Tentang Sistem
-  Peradilan Pidana Anak'
+status: tidak_berlaku
 tanggal_penetapan: '1997-01-03'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu3-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/45923/uu-no-3-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34476/UU%20Nomor%203%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_11_2012
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,4 +28,39 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1997_1997-01-03.txt
   pasal_count: 63
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8dd2a5f46c1ec5ebe67c4de00228a4e1bb6fa4abbb5f63132a08c42aa74edaf4
 pdf_sha256: 8dd2a5f46c1ec5ebe67c4de00228a4e1bb6fa4abbb5f63132a08c42aa74edaf4
+tanggal_pengundangan: '1997-01-03'
+tanggal_berlaku: '1998-01-03'
+lembaran_negara: 'LN. 1997/ No. 3, TLN NO. 3668, LL SETNEG : 23 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu3-1997.pdf
+bpk:
+  id: 45923
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34476/UU%20Nomor%203%20Tahun%201997.pdf
+    bpk_file_id: 34476
+    filename: UU Nomor 3 Tahun 1997.pdf
+    sha256: 8dd2a5f46c1ec5ebe67c4de00228a4e1bb6fa4abbb5f63132a08c42aa74edaf4
+    bytes: 103839
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_11_2012
+      citation: UU No. 11 Tahun 2012
+      tentang: Sistem Peradilan Pidana Anak
+      url: https://peraturan.bpk.go.id/Details/39061/uu-no-11-tahun-2012
+      note: null
+uji_materi:
+- putusan: 1/PUU-VIII/2010
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/66/Putusan%20nomor%201.PUU.2010.pdf
+  amar: frasa,”... 8 (delapan) tahun...,” dalam Pasal 1 angka 1, Pasal 4 ayat (1),
+    dan Pasal 5 ayat (1) Undang-Undang Nomor 3 Tahun 1997 tentang Pengadilan Anak,
+    beserta penjelasan Undang-Undang tersebut khususnya terkait dengan frasa “...8
+    (delapan) tahun...” adalah bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai
+    kekuatan hukum mengikat secara bersyarat (conditionally unconstitutional), artinya
+    inkonstitusional, kecuali dimaknai “...12 (dua belas) tahun...”;

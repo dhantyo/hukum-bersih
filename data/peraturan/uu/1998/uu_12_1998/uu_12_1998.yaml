@@ -13,8 +13,8 @@ tanggal_penetapan: '1998-11-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1998
-source_pdf_url: https://peraturan.go.id/files/uu12-1998.pdf
+source_url: https://peraturan.bpk.go.id/Details/45491/uu-no-12-tahun-1998
+source_pdf_url: https://peraturan.bpk.go.id/Download/34008/UU%20Nomor%2012%20Tahun%201998.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_1998_1998-11-23.txt
   pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b5a8631a2e5ef35eecf44e073081d295557dab96f36a3382bc926abd1244f24a
 pdf_sha256: b5a8631a2e5ef35eecf44e073081d295557dab96f36a3382bc926abd1244f24a
+tanggal_pengundangan: '1998-11-23'
+tanggal_berlaku: '1998-11-23'
+lembaran_negara: 'LN. 1998/ No. 188, TLN NO. 3794, LL SETNEG : 13 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1998
+  source_pdf_url: https://peraturan.go.id/files/uu12-1998.pdf
+bpk:
+  id: 45491
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34008/UU%20Nomor%2012%20Tahun%201998.pdf
+    bpk_file_id: 34008
+    filename: UU Nomor 12 Tahun 1998.pdf
+    sha256: b5a8631a2e5ef35eecf44e073081d295557dab96f36a3382bc926abd1244f24a
+    bytes: 64912
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

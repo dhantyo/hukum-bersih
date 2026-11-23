@@ -6,20 +6,18 @@ year: 1997
 title: Undang-Undang Nomor 4 Tahun 1997 tentang Penyandang Cacat
 tentang: PENYANDANG CACAT
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 8 Tahun 2016 Tentang Penyandang
-  Disabilitas'
+status: tidak_berlaku
 tanggal_penetapan: '1997-02-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu4-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/37269/uu-no-4-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/26370/UU%20Nomor%204%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_8_2016
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1997_1997-02-28.txt
   pasal_count: 31
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d39147ca8123fb1d826f22065f92fc253cee8bdacb102c5ea0a124433e05ec42
 pdf_sha256: d39147ca8123fb1d826f22065f92fc253cee8bdacb102c5ea0a124433e05ec42
+tanggal_pengundangan: '1997-02-28'
+tanggal_berlaku: '1997-02-28'
+lembaran_negara: 'LN.1997/NO.9, TLN NO.3670, LL SETNEG : 9 HLM'
+subjek: HAK ASASI MANUSIA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu4-1997.pdf
+bpk:
+  id: 37269
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26370/UU%20Nomor%204%20Tahun%201997.pdf
+    bpk_file_id: 26370
+    filename: UU Nomor 4 Tahun 1997.pdf
+    sha256: d39147ca8123fb1d826f22065f92fc253cee8bdacb102c5ea0a124433e05ec42
+    bytes: 58302
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_8_2016
+      citation: UU No. 8 Tahun 2016
+      tentang: Penyandang Disabilitas
+      url: https://peraturan.bpk.go.id/Details/37251/uu-no-8-tahun-2016
+      note: null
+uji_materi: null

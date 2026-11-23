@@ -17,8 +17,8 @@ tanggal_penetapan: '1998-09-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: BACHARUDDIN JUSUF HABIBIE
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1998
-source_pdf_url: https://peraturan.go.id/files/uu6-1998.pdf
+source_url: https://peraturan.bpk.go.id/Details/45442/uu-no-6-tahun-1998
+source_pdf_url: https://peraturan.bpk.go.id/Download/33959/UU%20Nomor%206%20Tahun%201998.pdf
 relationships:
   amends: []
   amended_by: []
@@ -34,4 +34,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1998_1998-09-30.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 012ccaf0efed0b88ff376ec7814f65f429dd8fb37b58dcb1ec17aacfe2f649b3
 pdf_sha256: 012ccaf0efed0b88ff376ec7814f65f429dd8fb37b58dcb1ec17aacfe2f649b3
+tanggal_pengundangan: '1998-09-30'
+tanggal_berlaku: '1998-09-30'
+lembaran_negara: 'LN. 1998/ No. 171, TLN NO. 3786, LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1998
+  source_pdf_url: https://peraturan.go.id/files/uu6-1998.pdf
+bpk:
+  id: 45442
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33959/UU%20Nomor%206%20Tahun%201998.pdf
+    bpk_file_id: 33959
+    filename: UU Nomor 6 Tahun 1998.pdf
+    sha256: 012ccaf0efed0b88ff376ec7814f65f429dd8fb37b58dcb1ec17aacfe2f649b3
+    bytes: 58406
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

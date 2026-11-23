@@ -12,8 +12,8 @@ tanggal_penetapan: '1998-03-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1998
-source_pdf_url: https://peraturan.go.id/files/uu3-1998.pdf
+source_url: https://peraturan.bpk.go.id/Details/45431/uu-no-3-tahun-1998
+source_pdf_url: https://peraturan.bpk.go.id/Download/33946/UU%20Nomor%203%20Tahun%201998.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,47 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1998_1998-03-13.txt
   pasal_count: 14
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 44752fe16a760757a9523285389071ac6a23cfcb4ddc34eb16dd500605028d9e
 pdf_sha256: 44752fe16a760757a9523285389071ac6a23cfcb4ddc34eb16dd500605028d9e
+tanggal_pengundangan: '1998-03-13'
+tanggal_berlaku: '1998-04-01'
+lembaran_negara: 'LN. 1998/ No. 66, TLN NO. 3750, LL SETNEG : 13 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1998
+  source_pdf_url: https://peraturan.go.id/files/uu3-1998.pdf
+bpk:
+  id: 45431
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33946/UU%20Nomor%203%20Tahun%201998.pdf
+    bpk_file_id: 33946
+    filename: UU Nomor 3 Tahun 1998.pdf
+    sha256: 44752fe16a760757a9523285389071ac6a23cfcb4ddc34eb16dd500605028d9e
+    bytes: 78642
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_32_1999
+      citation: UU No. 32 Tahun 1999
+      tentang: Perubahan atas Undang-Undang Nomor 3 Tahun 1998 tentang Anggaran Pendapatan
+        dan Belanja Negara Tahun Anggaran 1998/1999 Sebagaimana telah Diubah dengan
+        Undang-Undang Nomor 7 Tahun 1998
+      url: https://peraturan.bpk.go.id/Details/45353/uu-no-32-tahun-1999
+      note: null
+    - id: uu_7_1998
+      citation: UU No. 7 Tahun 1998
+      tentang: Perubahan atas Undang-Undang Nomor 3 Tahun 1998 Tentang Anggaran Pendapatan
+        Dan Belanja Negara Tahun Anggaran 1998/1999
+      url: https://peraturan.bpk.go.id/Details/45447/uu-no-7-tahun-1998
+      note: null
+    Mencabut:
+    - id: uu_9_1968
+      citation: UU No. 9 Tahun 1968
+      tentang: Perubahan Pasal 7 Indische Comptabiliteitswet (STBL. 1925 Nomor 448)
+        sebagaimana telah diubah dengan Undang-Undang Nomor 3 drt. 1954 (Lembaran
+        Negara Tahun 1954 Nomor 6)
+      url: https://peraturan.bpk.go.id/Details/49165/uu-no-9-tahun-1968
+      note: null
+uji_materi: null

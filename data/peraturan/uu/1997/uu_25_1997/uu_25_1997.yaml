@@ -6,21 +6,18 @@ year: 1997
 title: Undang-Undang Nomor 25 Tahun 1997 tentang Ketenagakerjaan
 tentang: KETENAGAKERJAAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 13 Tahun 2003 Tentang Ketenagakerjaan
-  Undang-Undang Nomor 13 Tahun 2003 Tentang Ketenagakerjaan Undang-Undang Nomor 13
-  Tahun 2003 Tentang Ketenagakerjaan'
+status: tidak_berlaku
 tanggal_penetapan: '1997-10-03'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-25-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu25-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/46026/uu-no-25-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34580/UU%20Nomor%2025%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_13_2003
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -31,4 +28,59 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_25_1997_1997-10-03.txt
   pasal_count: 199
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: bfecbedbb59910889305940f3063f4a99a07cf98d7dde7269aa63419406ee61c
 pdf_sha256: bfecbedbb59910889305940f3063f4a99a07cf98d7dde7269aa63419406ee61c
+tanggal_pengundangan: '1997-10-03'
+tanggal_berlaku: '1998-10-01'
+lembaran_negara: 'LN. 1997/TLN NO. 3702, LL SETNEG : 87HLM'
+subjek: KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-25-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu25-1997.pdf
+bpk:
+  id: 46026
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34580/UU%20Nomor%2025%20Tahun%201997.pdf
+    bpk_file_id: 34580
+    filename: UU Nomor 25 Tahun 1997.pdf
+    sha256: bfecbedbb59910889305940f3063f4a99a07cf98d7dde7269aa63419406ee61c
+    bytes: 254165
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_13_2003
+      citation: UU No. 13 Tahun 2003
+      tentang: Ketenagakerjaan
+      url: https://peraturan.bpk.go.id/Details/43013/uu-no-13-tahun-2003
+      note: null
+    Diubah dengan:
+    - id: uu_11_1998
+      citation: UU No. 11 Tahun 1998
+      tentang: Perubahan Berlakunya Undang-Undang Nomor 25 Tahun 1997 tentang Ketenagakerjaan
+      url: https://peraturan.bpk.go.id/Details/45490/uu-no-11-tahun-1998
+      note: null
+    Mencabut:
+    - id: uu_14_1969
+      citation: UU No. 14 Tahun 1969
+      tentang: Ketentuan-Ketentuan Pokok Mengenai Tenaga Kerja
+      url: https://peraturan.bpk.go.id/Details/49118/uu-no-14-tahun-1969
+      note: null
+    - id: uu_3_1958
+      citation: UU No. 3 Tahun 1958
+      tentang: Penempatan Tenaga Asing
+      url: https://peraturan.bpk.go.id/Details/51603/uu-no-3-tahun-1958
+      note: null
+    - id: uu_21_1954
+      citation: UU No. 21 Tahun 1954
+      tentang: Perjanjian Perburuhan antara Serikat Buruh dan Majikan
+      url: https://peraturan.bpk.go.id/Details/50406/uu-no-21-tahun-1954
+      note: null
+    - id: uu_1_1951
+      citation: UU No. 1 Tahun 1951
+      tentang: Pernyataan Berlakunya Undang-Undang Kerja Tahun 1948 Nr. 12 dari Republik
+        Indonesia untuk Seluruh Indonesia
+      url: https://peraturan.bpk.go.id/Details/39807/uu-no-1-tahun-1951
+      note: null
+uji_materi: null
