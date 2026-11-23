@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN VI (KEMENTRIAN PERTAHANAN) DARI ANGGARAN REPUBLIK INDO
   UNTUK TAHUN-TAHUN DINAS 1952 DAN 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-12-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-45-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu45-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50537/uu-no-45-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39775/UU%20Nomor%2045%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_45_1954_1954
+- id: uu_45_1954_1954-12-29
   kind: asli
   source: official
-  date: null
+  date: '1954-12-29'
   date_basis: tanggal_penetapan
-  text: uu_45_1954_1954.txt
+  text: uu_45_1954_1954-12-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7fb819396f93d74e2305c24c01fbf6092cea4751d46a1b8484354dfe3ad84a79
 pdf_sha256: 24187a9b30eca2755c66e28547b1298dc0474e1ea1ec37cde56dbf14a456d885
+tanggal_pengundangan: '1954-12-31'
+tanggal_berlaku: '1952-01-01'
+lembaran_negara: 'LN.1954/NO.116, LL SETNEG : 6 HLM.'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-45-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu45-1954.pdf
+bpk:
+  id: 50537
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39775/UU%20Nomor%2045%20Tahun%201954.pdf
+    bpk_file_id: 39775
+    filename: UU Nomor 45 Tahun 1954.pdf
+    sha256: 7fb819396f93d74e2305c24c01fbf6092cea4751d46a1b8484354dfe3ad84a79
+    bytes: 33796
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_11_1957
+      citation: UU No. 11 Tahun 1957
+      tentang: Mengubah dan Menambah Undang-Undang Penempatan Bagian VI Dari Anggaran
+        Republik Indonesia Untuk Tahun Dinas 1953
+      url: https://peraturan.bpk.go.id/Details/52414/uu-no-11-tahun-1957
+      note: null
+uji_materi: null

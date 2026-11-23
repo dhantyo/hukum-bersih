@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN VIIIA (KEMENTRIAN PERHUBUNGAN) DARI ANGGARAN REPUBLIK 
   UNTUK TAHUN-TAHUN DINAS 1952 DAN 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-11-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-47-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu47-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50539/uu-no-47-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39778/UU%20Nomor%2047%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_47_1954_1954
+- id: uu_47_1954_1954-11-29
   kind: asli
   source: official
-  date: null
+  date: '1954-11-29'
   date_basis: tanggal_penetapan
-  text: uu_47_1954_1954.txt
+  text: uu_47_1954_1954-11-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 51d640b0718ab42ce1f817def16db9c3354652f05c53023815fcd915fbfa7581
 pdf_sha256: 51d640b0718ab42ce1f817def16db9c3354652f05c53023815fcd915fbfa7581
+tanggal_pengundangan: '1954-12-31'
+tanggal_berlaku: '1952-01-01'
+lembaran_negara: 'LL SETNEG : 6 HLM.'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-47-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu47-1954.pdf
+bpk:
+  id: 50539
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39778/UU%20Nomor%2047%20Tahun%201954.pdf
+    bpk_file_id: 39778
+    filename: UU Nomor 47 Tahun 1954.pdf
+    sha256: 51d640b0718ab42ce1f817def16db9c3354652f05c53023815fcd915fbfa7581
+    bytes: 85360
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_13_1957
+      citation: UU No. 13 Tahun 1957
+      tentang: Mengubah dan Menambah Undang-Undang Penempatan Bagian VIIIA Dari Anggaran
+        Republik Indonesia Untuk Tahun Dinas 1953
+      url: https://peraturan.bpk.go.id/Details/52416/uu-no-13-tahun-1957
+      note: null
+uji_materi: null

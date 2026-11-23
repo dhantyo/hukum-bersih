@@ -10,12 +10,12 @@ tentang: PENETAPAN BAGIAN VIIIB (KEMENTRIAN PERHUBUNGAN-JAWATAN PELAYARAN) DARI 
   REPUBLIK INDONESIA UNTUK TAHUN-TAHUN DINAS 1952 DAN 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-11-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-48-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu48-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50541/uu-no-48-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39780/UU%20Nomor%2048%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,11 +24,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_48_1954_1954
+- id: uu_48_1954_1954-11-29
   kind: asli
   source: official
-  date: null
+  date: '1954-11-29'
   date_basis: tanggal_penetapan
-  text: uu_48_1954_1954.txt
+  text: uu_48_1954_1954-11-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: eead17bcf2170d6ea64324343783cd833f7d981a96b68b74bd3e691705cde04a
 pdf_sha256: 6bcfb8df55ed92ce05bde0f1ee46ffb1e5f86dcbf43fda5213d8749ae38a0e33
+tanggal_pengundangan: '1954-12-31'
+tanggal_berlaku: '1952-01-01'
+lembaran_negara: 'LN.1954/NO.119, LL SETNEG : 6 HLM.'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-48-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu48-1954.pdf
+bpk:
+  id: 50541
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39780/UU%20Nomor%2048%20Tahun%201954.pdf
+    bpk_file_id: 39780
+    filename: UU Nomor 48 Tahun 1954.pdf
+    sha256: eead17bcf2170d6ea64324343783cd833f7d981a96b68b74bd3e691705cde04a
+    bytes: 34237
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_14_1957
+      citation: UU No. 14 Tahun 1957
+      tentang: Mengubah dan Menambah Undang-Undang Penempatan Bagian VIIIB Dari Anggaran
+        Republik Indonesia Untuk Tahun Dinas 1953
+      url: https://peraturan.bpk.go.id/Details/52418/uu-no-14-tahun-1957
+      note: null
+uji_materi: null

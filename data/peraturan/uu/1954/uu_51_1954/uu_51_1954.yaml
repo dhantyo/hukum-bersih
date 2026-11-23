@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN XI (KEMENTRIAN KESEHATAN) DARI ANGGARAN REPUBLIK INDON
   UNTUK TAHUN-TAHUN DINAS 1952 DAN 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-11-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-51-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu51-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50550/uu-no-51-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39791/UU%20Nomor%2051%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_51_1954_1954
+- id: uu_51_1954_1954-11-29
   kind: asli
   source: official
-  date: null
+  date: '1954-11-29'
   date_basis: tanggal_penetapan
-  text: uu_51_1954_1954.txt
+  text: uu_51_1954_1954-11-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2582d95faedb656dece1e542b38ef6bf10fe29255c524fdc4381f0906061f58b
 pdf_sha256: 95fb13d08185577fcd27fd96fb03b9e5d70e3f982935223c92440c4dfa758425
+tanggal_pengundangan: '1954-12-31'
+tanggal_berlaku: '1952-01-01'
+lembaran_negara: 'LN.1954/NO.122, LL SETNEG : 6 HLM.'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-51-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu51-1954.pdf
+bpk:
+  id: 50550
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39791/UU%20Nomor%2051%20Tahun%201954.pdf
+    bpk_file_id: 39791
+    filename: UU Nomor 51 Tahun 1954.pdf
+    sha256: 2582d95faedb656dece1e542b38ef6bf10fe29255c524fdc4381f0906061f58b
+    bytes: 34383
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_16_1957
+      citation: UU No. 16 Tahun 1957
+      tentang: Mengubah dan Menambah Undang-Undang Penempatan Bagian XI Dari Anggaran
+        Republik Indonesia Untuk Tahun Dinas 1953
+      url: https://peraturan.bpk.go.id/Details/52423/uu-no-16-tahun-1957
+      note: null
+uji_materi: null

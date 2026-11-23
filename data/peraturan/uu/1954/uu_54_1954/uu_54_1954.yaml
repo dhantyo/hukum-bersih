@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN XIV (KEMENTRIAN AGAMA) DARI ANGGARAN REPUBLIK INDONESI
   UNTUK TAHUN-TAHUN DINAS 1952 DAN 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-11-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-54-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu54-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50555/uu-no-54-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39796/UU%20Nomor%2054%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_54_1954_1954
+- id: uu_54_1954_1954-11-29
   kind: asli
   source: official
-  date: null
+  date: '1954-11-29'
   date_basis: tanggal_penetapan
-  text: uu_54_1954_1954.txt
+  text: uu_54_1954_1954-11-29.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8c1fcf71ffa60fb46bcbd694899f3750e2f372d4f0225adc2feed1c6dacc41a0
 pdf_sha256: af5a598ae3815e91f0f1793ef36d7efa629af8fba3bad7b474387da86f2623c3
+tanggal_pengundangan: '1954-12-31'
+tanggal_berlaku: '1952-01-01'
+lembaran_negara: 'LN.1954/NO.123, LL SETNEG : 5 HLM.'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-54-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu54-1954.pdf
+bpk:
+  id: 50555
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39796/UU%20Nomor%2054%20Tahun%201954.pdf
+    bpk_file_id: 39796
+    filename: UU Nomor 54 Tahun 1954.pdf
+    sha256: 8c1fcf71ffa60fb46bcbd694899f3750e2f372d4f0225adc2feed1c6dacc41a0
+    bytes: 31465
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_19_1957
+      citation: UU No. 19 Tahun 1957
+      tentang: Mengubah dan Menambah Undang-Undang Penempatan Bagian XIV Dari Anggaran
+        Republik Indonesia Untuk Tahun Dinas 1953
+      url: https://peraturan.bpk.go.id/Details/52433/uu-no-19-tahun-1957
+      note: null
+uji_materi: null

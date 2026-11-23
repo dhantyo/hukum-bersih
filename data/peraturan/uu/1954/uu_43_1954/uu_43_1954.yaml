@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN VA (KEMENTRIAN PERTANIAN) DARI ANGGARAN REPUBLIK INDON
   UNTUK TAHUN-TAHUN DINAS 1952 DAN 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-11-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-43-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu43-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50532/uu-no-43-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39770/UU%20Nomor%2043%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_43_1954_1954
+- id: uu_43_1954_1954-11-29
   kind: asli
   source: official
-  date: null
+  date: '1954-11-29'
   date_basis: tanggal_penetapan
-  text: uu_43_1954_1954.txt
+  text: uu_43_1954_1954-11-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 58828ca697ff592846a4421722cfa78d345fa43f8b495e10295d08823359fc79
 pdf_sha256: 58828ca697ff592846a4421722cfa78d345fa43f8b495e10295d08823359fc79
+tanggal_pengundangan: '1954-12-31'
+tanggal_berlaku: '1952-01-01'
+lembaran_negara: 'LL SETNEG : 9 HLM.'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-43-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu43-1954.pdf
+bpk:
+  id: 50532
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39770/UU%20Nomor%2043%20Tahun%201954.pdf
+    bpk_file_id: 39770
+    filename: UU Nomor 43 Tahun 1954.pdf
+    sha256: 58828ca697ff592846a4421722cfa78d345fa43f8b495e10295d08823359fc79
+    bytes: 96142
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_9_1957
+      citation: UU No. 9 Tahun 1957
+      tentang: Mengubah dan Menambah Undang-Undang Penempatan Bagian VA Dari Anggaran
+        Republik Indonesia Untuk Tahun Dinas 1953
+      url: https://peraturan.bpk.go.id/Details/52410/uu-no-9-tahun-1957
+      note: null
+uji_materi: null

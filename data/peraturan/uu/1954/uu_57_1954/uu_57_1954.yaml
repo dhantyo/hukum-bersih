@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN I.B.W. I (JAWATAN PEGADAIAN) DARI ANGGARAN REPUBLIK IN
   UNTUK TAHUN-TAHUN DINAS 1952 DAN 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-11-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-57-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu57-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50559/uu-no-57-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39800/UU%20Nomor%2057%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_57_1954_1954
+- id: uu_57_1954_1954-11-29
   kind: asli
   source: official
-  date: null
+  date: '1954-11-29'
   date_basis: tanggal_penetapan
-  text: uu_57_1954_1954.txt
+  text: uu_57_1954_1954-11-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 10c1e942122f6f0ffd403e8093ae9fcd456100b5676e8c941be85b69193f6770
 pdf_sha256: 554430aea7b3915e0012fd38d5ea8b125fd10651224f7008cb8e2b93c0818b2d
+tanggal_pengundangan: '1954-12-31'
+tanggal_berlaku: '1952-01-01'
+lembaran_negara: 'LN.1954/NO.128, LL SETNEG : 2 HLM.'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-57-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu57-1954.pdf
+bpk:
+  id: 50559
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39800/UU%20Nomor%2057%20Tahun%201954.pdf
+    bpk_file_id: 39800
+    filename: UU Nomor 57 Tahun 1954.pdf
+    sha256: 10c1e942122f6f0ffd403e8093ae9fcd456100b5676e8c941be85b69193f6770
+    bytes: 26267
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

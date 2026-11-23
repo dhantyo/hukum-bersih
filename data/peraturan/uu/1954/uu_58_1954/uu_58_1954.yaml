@@ -10,12 +10,12 @@ tentang: PENETAPAN BAGIAN I.B.W II (PERUSAHAAN GARAM DAN SODA NEGERI) DARI ANGGA
   REPUBLIK INDONESIA UNTUK TAHUN-TAHUN DINAS 1952 DAN 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-11-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-58-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu58-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50560/uu-no-58-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39801/UU%20Nomor%2058%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,11 +24,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_58_1954_1954
+- id: uu_58_1954_1954-11-29
   kind: asli
   source: official
-  date: null
+  date: '1954-11-29'
   date_basis: tanggal_penetapan
-  text: uu_58_1954_1954.txt
+  text: uu_58_1954_1954-11-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 60be1283d248d4f851e633c65c86f28dc740700beebd562d59b47cf37c9c1796
 pdf_sha256: d3d4c470d7a895f7eafd0ab515cd110e903efd056ff8fd6e9a5ce784a3f36d80
+tanggal_pengundangan: '1954-12-31'
+tanggal_berlaku: '1952-01-01'
+lembaran_negara: 'LN.1954/NO.129, LL SETNEG : 2 HLM.'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-58-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu58-1954.pdf
+bpk:
+  id: 50560
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39801/UU%20Nomor%2058%20Tahun%201954.pdf
+    bpk_file_id: 39801
+    filename: UU Nomor 58 Tahun 1954.pdf
+    sha256: 60be1283d248d4f851e633c65c86f28dc740700beebd562d59b47cf37c9c1796
+    bytes: 26299
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

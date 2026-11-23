@@ -11,12 +11,12 @@ tentang: PENGUBAHAN UNDANG-UNDANG NO. 9 TAHUN 1953 (LEMBARAN-NEGARA NO. 36 TAHUN
   ANGGOTA DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1955-03-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1955
-source_pdf_url: https://peraturan.go.id/files/uu5-1955.pdf
+source_url: https://peraturan.bpk.go.id/Details/51060/uu-no-5-tahun-1955
+source_pdf_url: https://peraturan.bpk.go.id/Download/40311/UU%20Nomor%205%20Tahun%201955.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,6 +24,41 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_5_1955_1955-03-14
+  kind: asli
+  source: official
+  date: '1955-03-14'
+  date_basis: tanggal_penetapan
+  text: uu_5_1955_1955-03-14.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: cf11086abbbd0015e04e9b0caddbb49c9534190228ad9e16186ddfcc1a25ea5b
 pdf_sha256: 33251df1d8b6fc7b20d348269b3fba94bac781f7a9293f48835a531a88961d42
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1955-04-07'
+tanggal_berlaku: '1950-08-17'
+lembaran_negara: 'LL SETNEG : 2 HLM.'
+subjek: HONORARIUM, GAJI, PENGHASILAN, UANG KEHORMATAN, TUNJANGAN, PENGHARGAAN, HAK
+  LAINNYA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1955
+  source_pdf_url: https://peraturan.go.id/files/uu5-1955.pdf
+bpk:
+  id: 51060
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40311/UU%20Nomor%205%20Tahun%201955.pdf
+    bpk_file_id: 40311
+    filename: UU Nomor 5 Tahun 1955.pdf
+    sha256: cf11086abbbd0015e04e9b0caddbb49c9534190228ad9e16186ddfcc1a25ea5b
+    bytes: 39706
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_9_1953
+      citation: UU No. 9 Tahun 1953
+      tentang: Pemberian Tunjangan yang Bersifat Pensiun kepada Bekas Ketua dan Bekas
+        Anggota Dewan Perwakilan Rakyat Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/45282/uu-no-9-tahun-1953
+      note: null
+uji_materi: null

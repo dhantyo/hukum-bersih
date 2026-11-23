@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN I.B.W. IX (PELABUHAN BELAWAN) DARI ANGGARAN REPUBLIK I
   UNTUK TAHUN-TAHUN DINAS 1952 DAN 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-11-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-65-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu65-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50966/uu-no-65-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/40215/UU%20Nomor%2065%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_65_1954_1954
+- id: uu_65_1954_1954-11-29
   kind: asli
   source: official
-  date: null
+  date: '1954-11-29'
   date_basis: tanggal_penetapan
-  text: uu_65_1954_1954.txt
+  text: uu_65_1954_1954-11-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 787e2fed73236f4a9a5833e54f960aacbcf53e913a0f3a86758c23885ffd6352
 pdf_sha256: 25a1fccc1e9479e28c567d471d5b8217730ea12c733e0d0c80f117d14d4a2e20
+tanggal_pengundangan: '1954-12-31'
+tanggal_berlaku: '1952-01-01'
+lembaran_negara: 'LN.1954/NO.136, LL SETNEG : 2 HLM.'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-65-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu65-1954.pdf
+bpk:
+  id: 50966
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40215/UU%20Nomor%2065%20Tahun%201954.pdf
+    bpk_file_id: 40215
+    filename: UU Nomor 65 Tahun 1954.pdf
+    sha256: 787e2fed73236f4a9a5833e54f960aacbcf53e913a0f3a86758c23885ffd6352
+    bytes: 26274
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 6 Tahun 1955 tentang Biaya Surat Kenal Lahir Dan Sura
 tentang: BIAYA SURAT KENAL LAHIR DAN SURAT KENAL MATI)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1955-05-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1955
-source_pdf_url: https://peraturan.go.id/files/uu6-1955.pdf
+source_url: https://peraturan.bpk.go.id/Details/51063/uu-no-6-tahun-1955
+source_pdf_url: https://peraturan.bpk.go.id/Download/40314/UU%20Nomor%206%20Tahun%201955.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_6_1955_1955-05-04
+  kind: asli
+  source: official
+  date: '1955-05-04'
+  date_basis: tanggal_penetapan
+  text: uu_6_1955_1955-05-04.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 667de9dc8454f462d45726719a02b85818032c71cab592906596806d2c5691f0
 pdf_sha256: 71abd8c03cd4437bd6f16e068305008d0a57832318aa2efe3423ac3ce53d7f9e
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1955-05-13'
+tanggal_berlaku: '1955-05-13'
+lembaran_negara: 'LL SETNEG : 1 HLM.'
+subjek: KEPENDUDUKAN DAN PERKAWINAN - PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1955
+  source_pdf_url: https://peraturan.go.id/files/uu6-1955.pdf
+bpk:
+  id: 51063
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40314/UU%20Nomor%206%20Tahun%201955.pdf
+    bpk_file_id: 40314
+    filename: UU Nomor 6 Tahun 1955.pdf
+    sha256: 667de9dc8454f462d45726719a02b85818032c71cab592906596806d2c5691f0
+    bytes: 38372
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -14,8 +14,8 @@ tanggal_penetapan: '1954-11-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-69-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu69-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50971/uu-no-69-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/40220/UU%20Nomor%2069%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,4 +31,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_69_1954_1954-11-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a2fb6252131c4d08a73436030982124d556a33a0614c1ae1307be4493b09f358
 pdf_sha256: a2fb6252131c4d08a73436030982124d556a33a0614c1ae1307be4493b09f358
+tanggal_pengundangan: '1954-12-31'
+tanggal_berlaku: '1952-01-01'
+lembaran_negara: 'LL SETNEG : 2 HLM.'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-69-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu69-1954.pdf
+bpk:
+  id: 50971
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40220/UU%20Nomor%2069%20Tahun%201954.pdf
+    bpk_file_id: 40220
+    filename: UU Nomor 69 Tahun 1954.pdf
+    sha256: a2fb6252131c4d08a73436030982124d556a33a0614c1ae1307be4493b09f358
+    bytes: 69311
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

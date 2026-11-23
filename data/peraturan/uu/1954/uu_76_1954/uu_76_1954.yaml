@@ -12,12 +12,12 @@ tentang: ACARA PIDANA KHUSUS UNTUK ANGGOTA DEWAN PERWAKILAN RAKYAT PENETAPAN "UN
   NO. 22 TAHUN 1953) SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-12-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-76-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu76-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50981/uu-no-76-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/40230/UU%20Nomor%2076%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,11 +26,47 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_76_1954_1954
+- id: uu_76_1954_1954-12-30
   kind: asli
   source: official
-  date: null
+  date: '1954-12-30'
   date_basis: tanggal_penetapan
-  text: uu_76_1954_1954.txt
+  text: uu_76_1954_1954-12-30.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 76e6e8e1be255982b7cb378dd38c861f1588b17db1a4daed620f5addd5931f3c
 pdf_sha256: 0763ebd4607406739e97102915c3951d9a2a2948688ddbbc592df81c33d2001d
+tanggal_pengundangan: '1954-12-31'
+tanggal_berlaku: '1954-12-31'
+lembaran_negara: 'LN.1954/NO.151, TLN NO.740, LL SETNEG : 4 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-76-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu76-1954.pdf
+bpk:
+  id: 50981
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40230/UU%20Nomor%2076%20Tahun%201954.pdf
+    bpk_file_id: 40230
+    filename: UU Nomor 76 Tahun 1954.pdf
+    sha256: 76e6e8e1be255982b7cb378dd38c861f1588b17db1a4daed620f5addd5931f3c
+    bytes: 39012
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_30_1956
+      citation: UU No. 30 Tahun 1956
+      tentang: Pengubahan dan Tambahan "Postordonnantie 1935" Sebagaimana Telah Diubah
+        dan Ditambah dengan Undang-Undang No. 76 Tahun 1954 (Lembaran-Negara Tahun
+        1954 No.151)
+      url: https://peraturan.bpk.go.id/Details/51168/uu-no-30-tahun-1956
+      note: null
+    Mengubah:
+    - id: uu_13_1951
+      citation: UU No. 13 Tahun 1951
+      tentang: Menetapkan "Undang-Undang Darurat tentang Menaikkan Jumlah Maksimum
+        Porto Dan Bea" Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/39881/uu-no-13-tahun-1951
+      note: null
+uji_materi: null

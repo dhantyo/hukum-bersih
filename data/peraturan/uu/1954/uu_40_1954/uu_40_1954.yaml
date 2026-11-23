@@ -10,12 +10,12 @@ tentang: PENETAPAN BAGIAN III (KEMENTRIAN DALAM NEGERI) DARI ANGGARAN REPUBLIK I
   UNTUK TAHUN-TAHUN DINAS 1952 DAN 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-11-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-40-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu40-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50524/uu-no-40-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39761/UU%20Nomor%2040%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,11 +24,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_40_1954_1954
+- id: uu_40_1954_1954-11-29
   kind: asli
   source: official
-  date: null
+  date: '1954-11-29'
   date_basis: tanggal_penetapan
-  text: uu_40_1954_1954.txt
-  pasal_count: 1
+  text: uu_40_1954_1954-11-29.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 721fc95093e72e57824d2e4d53bac0e85679429ae5c9e668057053b8ffddc701
 pdf_sha256: 6b1b5e88459f8f040e27ea52d6e975d5f7ef98fe727e95993606403fe2d8e9d9
+tanggal_pengundangan: '1954-12-31'
+tanggal_berlaku: '1952-01-01'
+lembaran_negara: 'LN.1954/NO.111, LL SETNEG : 10 HLM.'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-40-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu40-1954.pdf
+bpk:
+  id: 50524
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39761/UU%20Nomor%2040%20Tahun%201954.pdf
+    bpk_file_id: 39761
+    filename: UU Nomor 40 Tahun 1954.pdf
+    sha256: 721fc95093e72e57824d2e4d53bac0e85679429ae5c9e668057053b8ffddc701
+    bytes: 39517
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_1957
+      citation: UU No. 6 Tahun 1957
+      tentang: Mengubah dan Menambah Undang-Undang Penempatan Bagian III Dari Anggaran
+        Republik Indonesia Untuk Tahun Dinas 1953
+      url: https://peraturan.bpk.go.id/Details/52402/uu-no-6-tahun-1957
+      note: null
+uji_materi: null

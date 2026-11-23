@@ -10,12 +10,12 @@ tentang: PENETAPAN BAGIANI.B.W. III (PUSAT PERKEBUNAN NEGARA) DARI ANGGARAN REPU
   INDONESIA UNTUK TAHUN-TAHUN DINAS 1952 DAN 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-11-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-59-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu59-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50561/uu-no-59-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39802/UU%20Nomor%2059%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,11 +24,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_59_1954_1954
+- id: uu_59_1954_1954-11-29
   kind: asli
   source: official
-  date: null
+  date: '1954-11-29'
   date_basis: tanggal_penetapan
-  text: uu_59_1954_1954.txt
+  text: uu_59_1954_1954-11-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 209401bee75b818d0937d971fd1b7bc3de6d2bbdb6a3ff788c7c83b947acf6ed
 pdf_sha256: 5580d8c02305fb7c4e29e77bc4a7d654937696ef80013221d8b4fc35f6f05474
+tanggal_pengundangan: '1954-12-31'
+tanggal_berlaku: '1952-01-01'
+lembaran_negara: 'LN.1954/NO.130, LL SETNEG : 2 HLM.'
+subjek: APBN - KEHUTANAN DAN PERKEBUNAN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-59-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu59-1954.pdf
+bpk:
+  id: 50561
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39802/UU%20Nomor%2059%20Tahun%201954.pdf
+    bpk_file_id: 39802
+    filename: UU Nomor 59 Tahun 1954.pdf
+    sha256: 209401bee75b818d0937d971fd1b7bc3de6d2bbdb6a3ff788c7c83b947acf6ed
+    bytes: 26283
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

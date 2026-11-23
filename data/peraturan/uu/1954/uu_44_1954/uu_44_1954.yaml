@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN VB (KEMENTRIAN PERKONOMIAN) DARI ANGGARAN REPUBLIK IND
   UNTUK TAHUN-TAHUN DINAS 1952 DAN 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-11-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-44-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu44-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50534/uu-no-44-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39772/UU%20Nomor%2044%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_44_1954_1954
+- id: uu_44_1954_1954-11-29
   kind: asli
   source: official
-  date: null
+  date: '1954-11-29'
   date_basis: tanggal_penetapan
-  text: uu_44_1954_1954.txt
+  text: uu_44_1954_1954-11-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f8f7ae44be3fb73365cd2cb54d4123978707e9441e2d86ebaaca982b6cf9d0e6
 pdf_sha256: f8f7ae44be3fb73365cd2cb54d4123978707e9441e2d86ebaaca982b6cf9d0e6
+tanggal_pengundangan: '1954-12-31'
+tanggal_berlaku: '1952-01-01'
+lembaran_negara: 'LL SETNEG : 8 HLM.'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-44-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu44-1954.pdf
+bpk:
+  id: 50534
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39772/UU%20Nomor%2044%20Tahun%201954.pdf
+    bpk_file_id: 39772
+    filename: UU Nomor 44 Tahun 1954.pdf
+    sha256: f8f7ae44be3fb73365cd2cb54d4123978707e9441e2d86ebaaca982b6cf9d0e6
+    bytes: 92557
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_10_1957
+      citation: UU No. 10 Tahun 1957
+      tentang: Mengubah dan Menambah Undang-Undang Penempatan Bagian VB Dari Anggaran
+        Republik Indonesia Untuk Tahun Dinas 1953
+      url: https://peraturan.bpk.go.id/Details/52412/uu-no-10-tahun-1957
+      note: null
+uji_materi: null

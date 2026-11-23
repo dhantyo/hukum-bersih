@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN IV (KEMENTRIAN KEUANGAN) DARI ANGGARAN REPUBLIK INDONE
   UNTUK TAHUN-TAHUN DINAS 1952 DAN 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-11-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-41-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu41-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50527/uu-no-41-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39764/UU%20Nomor%2041%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_41_1954_1954
+- id: uu_41_1954_1954-11-29
   kind: asli
   source: official
-  date: null
+  date: '1954-11-29'
   date_basis: tanggal_penetapan
-  text: uu_41_1954_1954.txt
+  text: uu_41_1954_1954-11-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6be82486bb7c922c231599571f59a291b937d7f115737dd5c7e58065e6c14eb0
 pdf_sha256: 1f563610e365cd287c67c65460c7502f807c6a08fc6f4fa02c5bbd1dd226d314
+tanggal_pengundangan: '1954-12-31'
+tanggal_berlaku: '1952-01-01'
+lembaran_negara: 'LN.1954/NO.112, LL SETNEG : 17 HLM.'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-41-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu41-1954.pdf
+bpk:
+  id: 50527
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39764/UU%20Nomor%2041%20Tahun%201954.pdf
+    bpk_file_id: 39764
+    filename: UU Nomor 41 Tahun 1954.pdf
+    sha256: 6be82486bb7c922c231599571f59a291b937d7f115737dd5c7e58065e6c14eb0
+    bytes: 51502
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_7_1957
+      citation: UU No. 7 Tahun 1957
+      tentang: Mengubah dan Menambah Undang-Undang Penempatan Bagian IV Dari Anggaran
+        Republik Indonesia Untuk Tahun Dinas 1953
+      url: https://peraturan.bpk.go.id/Details/52406/uu-no-7-tahun-1957
+      note: null
+uji_materi: null

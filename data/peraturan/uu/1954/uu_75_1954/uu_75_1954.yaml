@@ -11,13 +11,13 @@ tentang: ACARA PIDANA KHUSUS UNTUK ANGGOTA DEWAN PERWAKILAN RAKYAT PENETAPAN "UN
   DARURAT NO. 5 TAHUN 1953 TENTANG MENAIKKAN JUMLAH MAKSIMUM PORTO DAN BEA"(LEMBARAN-NEGARA
   NO. 22 TAHUN 1953) SEBAGAI UNDANG-UNDANG
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1954-12-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-75-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu75-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50979/uu-no-75-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/40228/UU%20Nomor%2075%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,11 +26,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_75_1954_1954
+- id: uu_75_1954_1954-12-30
   kind: asli
   source: official
-  date: null
+  date: '1954-12-30'
   date_basis: tanggal_penetapan
-  text: uu_75_1954_1954.txt
+  text: uu_75_1954_1954-12-30.txt
   pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d80e8aa16f66a3409add4dad37a53e8b07ad80d3848601b42f2163b3eff38da6
 pdf_sha256: 7dc7dc64893b59d53d618b86d5edfe19b2b94cc355d2ff996394d35f10ff5a3c
+tanggal_pengundangan: '1954-12-31'
+tanggal_berlaku: '1954-12-31'
+lembaran_negara: 'LN.1954/NO.150, TLN NO.737, LL SETNEG : 5 HLM.'
+subjek: HUKUM ACARA DAN PERADILAN - HUKUM PIDANA, PERDATA, DAN DAGANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-75-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu75-1954.pdf
+bpk:
+  id: 50979
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40228/UU%20Nomor%2075%20Tahun%201954.pdf
+    bpk_file_id: 40228
+    filename: UU Nomor 75 Tahun 1954.pdf
+    sha256: d80e8aa16f66a3409add4dad37a53e8b07ad80d3848601b42f2163b3eff38da6
+    bytes: 37454
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_13_1970
+      citation: UU No. 13 Tahun 1970
+      tentang: Tata Cara Tindakan Kepolisian Terhadap Anggota-anggota/Pimpinan Majelis
+        Permusyawaratan Rakyat Sementara dan Dewan Perwakilan Rakyat Gotong-Royong
+      url: https://peraturan.bpk.go.id/Details/47923/uu-no-13-tahun-1970
+      note: null
+uji_materi: null

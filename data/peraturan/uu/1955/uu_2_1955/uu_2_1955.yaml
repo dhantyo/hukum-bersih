@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 2 Tahun 1955 tentang Pengubahan Dan Tambahan Ordonans
 tentang: PENGUBAHAN DAN TAMBAHAN ORDONANSI BEA-STATISTIK)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1955-03-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1955
-source_pdf_url: https://peraturan.go.id/files/uu2-1955.pdf
+source_url: https://peraturan.bpk.go.id/Details/51055/uu-no-2-tahun-1955
+source_pdf_url: https://peraturan.bpk.go.id/Download/40306/UU%20Nomor%202%20Tahun%201955.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_2_1955_1955-03-05
+  kind: asli
+  source: official
+  date: '1955-03-05'
+  date_basis: tanggal_penetapan
+  text: uu_2_1955_1955-03-05.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 03b6a73440407d1474a01c798ea48711cce48f2fa1e9b5cc891c74aa947327c5
 pdf_sha256: 269dcddfe71e9f85ca173dd94c00f300668aefc052135ef3cab675dde484ce0b
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1955-03-25'
+tanggal_berlaku: '1955-03-25'
+lembaran_negara: 'LL SETNEG : 2 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1955
+  source_pdf_url: https://peraturan.go.id/files/uu2-1955.pdf
+bpk:
+  id: 51055
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40306/UU%20Nomor%202%20Tahun%201955.pdf
+    bpk_file_id: 40306
+    filename: UU Nomor 2 Tahun 1955.pdf
+    sha256: 03b6a73440407d1474a01c798ea48711cce48f2fa1e9b5cc891c74aa947327c5
+    bytes: 40828
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

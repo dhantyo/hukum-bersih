@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN XII (KEMENTRIAN SOSIAL) DARI ANGGARAN REPUBLIK INDONES
   UNTUK TAHUN-TAHUN DINAS 1952 DAN 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-11-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-52-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu52-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50552/uu-no-52-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39793/UU%20Nomor%2052%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_52_1954_1954
+- id: uu_52_1954_1954-11-29
   kind: asli
   source: official
-  date: null
+  date: '1954-11-29'
   date_basis: tanggal_penetapan
-  text: uu_52_1954_1954.txt
+  text: uu_52_1954_1954-11-29.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2b6faa9fb95dd2a76e571335cd983c331495980643ffeb826c2b56dddae9c906
 pdf_sha256: 9ec2a109913284460fb32f8f2111ada45256e405743200f0e7ac50bada60e80e
+tanggal_pengundangan: '1954-12-31'
+tanggal_berlaku: '1952-01-01'
+lembaran_negara: 'LN.1954/NO.123, LL SETNEG : 8 HLM.'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-52-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu52-1954.pdf
+bpk:
+  id: 50552
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39793/UU%20Nomor%2052%20Tahun%201954.pdf
+    bpk_file_id: 39793
+    filename: UU Nomor 52 Tahun 1954.pdf
+    sha256: 2b6faa9fb95dd2a76e571335cd983c331495980643ffeb826c2b56dddae9c906
+    bytes: 38580
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_17_1957
+      citation: UU No. 17 Tahun 1957
+      tentang: Mengubah dan Menambah Undang-Undang Penempatan Bagian XII Dari Anggaran
+        Republik Indonesia Untuk Tahun Dinas 1953
+      url: https://peraturan.bpk.go.id/Details/52426/uu-no-17-tahun-1957
+      note: null
+uji_materi: null
