@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 23 Tahun 1964 tentang Perubahan Dan Tambahan Ordonans
 tentang: PERUBAHAN DAN TAMBAHAN ORDONANSI PAJAK PENDAPATAN 1944
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1964-11-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-23-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0231964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50341/uu-no-23-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39639/UU%20Nomor%2023%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_23_1964_1964-11-25
+  kind: asli
+  source: official
+  date: '1964-11-25'
+  date_basis: tanggal_penetapan
+  text: uu_23_1964_1964-11-25.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a0d0de28c0c935bb377666073209fc8d63a2e0d07b762bc0888e105ebdc91aa3
 pdf_sha256: a0d0de28c0c935bb377666073209fc8d63a2e0d07b762bc0888e105ebdc91aa3
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-11-25'
+tanggal_berlaku: '1964-11-25'
+lembaran_negara: 'LN. 1964/ No. 114 , TLN NO. 2704 , LL SETNEG : 6 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-23-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0231964.pdf
+bpk:
+  id: 50341
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39639/UU%20Nomor%2023%20Tahun%201964.pdf
+    bpk_file_id: 39639
+    filename: UU Nomor 23 Tahun 1964.pdf
+    sha256: a0d0de28c0c935bb377666073209fc8d63a2e0d07b762bc0888e105ebdc91aa3
+    bytes: 97616
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

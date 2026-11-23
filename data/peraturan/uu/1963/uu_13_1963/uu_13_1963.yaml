@@ -16,8 +16,8 @@ tanggal_penetapan: '1963-11-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1963
-source_pdf_url: https://peraturan.go.id/files/UU0131963.pdf
+source_url: https://peraturan.bpk.go.id/Details/50660/uu-no-13-tahun-1963
+source_pdf_url: https://peraturan.bpk.go.id/Download/39903/UU%20Nomor%2013%20Tahun%201963.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,6 +25,34 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_13_1963_1963-11-28
+  kind: asli
+  source: official
+  date: '1963-11-28'
+  date_basis: tanggal_penetapan
+  text: uu_13_1963_1963-11-28.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 39ea733cfb012f5312e032a4a4841aab9e0fe91166921033bd0af4ce767e457a
 pdf_sha256: 39ea733cfb012f5312e032a4a4841aab9e0fe91166921033bd0af4ce767e457a
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1963-11-28'
+tanggal_berlaku: '1962-06-18'
+lembaran_negara: 'LN. 1963/ No. 109 , TLN NO. 2598, LL SETNEG : 3 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+  - PERTAMBANGAN MIGAS, MINERAL DAN ENERGI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1963
+  source_pdf_url: https://peraturan.go.id/files/UU0131963.pdf
+bpk:
+  id: 50660
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39903/UU%20Nomor%2013%20Tahun%201963.pdf
+    bpk_file_id: 39903
+    filename: UU Nomor 13 Tahun 1963.pdf
+    sha256: 39ea733cfb012f5312e032a4a4841aab9e0fe91166921033bd0af4ce767e457a
+    bytes: 35413
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

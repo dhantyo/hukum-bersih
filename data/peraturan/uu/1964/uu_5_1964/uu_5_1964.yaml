@@ -9,22 +9,60 @@ title: Undang-Undang Nomor 5 Tahun 1964 tentang Penetapan Peraturan Pemerintah P
 tentang: PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG UNDANG NO. 6 TAHUN 1963 TENTANG
   TELEKOMUNIKASI (LEMBARAN NEGARA TAHUN 1963 NO. 66) MENJADI UNDANG UNDANG
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 3 Tahun 1989 Tentang Telekomunikasi'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1964-06-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0051964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50245/uu-no-5-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39524/UU%20Nomor%205%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_3_1989
+  revoked_by: []
   enacts:
   - perppu_6_1963
   enacted_by: []
-versions: []
+versions:
+- id: uu_5_1964_1964-06-04
+  kind: asli
+  source: official
+  date: '1964-06-04'
+  date_basis: tanggal_penetapan
+  text: uu_5_1964_1964-06-04.txt
+  pasal_count: 27
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 86c3371ab8b1ba4e0c1d1dbf770ff5a6fed56bba21abadf7d98e1095757100cb
 pdf_sha256: 86c3371ab8b1ba4e0c1d1dbf770ff5a6fed56bba21abadf7d98e1095757100cb
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-06-04'
+tanggal_berlaku: '1963-05-01'
+lembaran_negara: 'LN. 1964/ No. 59 , TLN NO. 2657, LL SETNEG : 14 HLM'
+subjek: TELEKOMUNIKASI, INFORMATIKA, SIBER, DAN INTERNET
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0051964.pdf
+bpk:
+  id: 50245
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39524/UU%20Nomor%205%20Tahun%201964.pdf
+    bpk_file_id: 39524
+    filename: UU Nomor 5 Tahun 1964.pdf
+    sha256: 86c3371ab8b1ba4e0c1d1dbf770ff5a6fed56bba21abadf7d98e1095757100cb
+    bytes: 104354
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_3_1989
+      citation: UU No. 3 Tahun 1989
+      tentang: Telekomunikasi
+      url: https://peraturan.bpk.go.id/Details/46798/uu-no-3-tahun-1989
+      note: null
+    Menetapkan:
+    - id: perppu_6_1963
+      citation: PERPU No. 6 Tahun 1963
+      tentang: Telekomunikasi
+      url: https://peraturan.bpk.go.id/Details/53739/perpu-no-6-tahun-1963
+      note: null
+uji_materi: null

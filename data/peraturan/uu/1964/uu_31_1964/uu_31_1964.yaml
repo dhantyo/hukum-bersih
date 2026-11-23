@@ -7,21 +7,54 @@ title: Undang-Undang Nomor 31 Tahun 1964 tentang Ketentuan-Ketentuan Pokok Tenag
   Atom
 tentang: KETENTUAN-KETENTUAN POKOK TENAGA ATOM
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 10 Tahun 1997 Tentang Ketenaganukliran'
+status: tidak_berlaku
 tanggal_penetapan: '1964-11-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-31-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0311964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50390/uu-no-31-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39698/UU%20Nomor%2031%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_10_1997
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_31_1964_1964-11-26
+  kind: asli
+  source: official
+  date: '1964-11-26'
+  date_basis: tanggal_penetapan
+  text: uu_31_1964_1964-11-26.txt
+  pasal_count: 27
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9a671a8c9202d0d4a1696431b40c3fa32c496b1da13848b976dd2efaaeb9fee4
 pdf_sha256: 9a671a8c9202d0d4a1696431b40c3fa32c496b1da13848b976dd2efaaeb9fee4
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-12-26'
+tanggal_berlaku: '1964-11-26'
+lembaran_negara: 'LN. 1964/ No.124, TLN NO. 2722, LL SETNEG : 11 HLM'
+subjek: ILMU PENGETAHUAN DAN TEKNOLOGI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-31-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0311964.pdf
+bpk:
+  id: 50390
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39698/UU%20Nomor%2031%20Tahun%201964.pdf
+    bpk_file_id: 39698
+    filename: UU Nomor 31 Tahun 1964.pdf
+    sha256: 9a671a8c9202d0d4a1696431b40c3fa32c496b1da13848b976dd2efaaeb9fee4
+    bytes: 102509
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_10_1997
+      citation: UU No. 10 Tahun 1997
+      tentang: Ketenaganukliran
+      url: https://peraturan.bpk.go.id/Details/45931/uu-no-10-tahun-1997
+      note: null
+  tanggal_pengundangan: '1964-11-26'
+uji_materi: null

@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 25 Tahun 1964 tentang Perubahan Dan Tambahan Ordonans
 tentang: PERUBAHAN DAN TAMBAHAN ORDONANSI ATURAN BEA METERAI 1921
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1964-11-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-25-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0251964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50345/uu-no-25-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39645/UU%20Nomor%2025%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_25_1964_1964-11-25
+  kind: asli
+  source: official
+  date: '1964-11-25'
+  date_basis: tanggal_penetapan
+  text: uu_25_1964_1964-11-25.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ccc3ff215acb4d9ee185490cc1a3a50e082c874fbf55f040e277ab573e5300c9
 pdf_sha256: ccc3ff215acb4d9ee185490cc1a3a50e082c874fbf55f040e277ab573e5300c9
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-11-25'
+tanggal_berlaku: '1964-11-25'
+lembaran_negara: 'LN. 1964/ No. 116 , TLN NO. 2706 , LL SETNEG : 10 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-25-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0251964.pdf
+bpk:
+  id: 50345
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39645/UU%20Nomor%2025%20Tahun%201964.pdf
+    bpk_file_id: 39645
+    filename: UU Nomor 25 Tahun 1964.pdf
+    sha256: ccc3ff215acb4d9ee185490cc1a3a50e082c874fbf55f040e277ab573e5300c9
+    bytes: 86035
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

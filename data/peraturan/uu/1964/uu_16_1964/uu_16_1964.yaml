@@ -11,8 +11,8 @@ tanggal_penetapan: '1964-09-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DR. SUBANDRIO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0161964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50325/uu-no-16-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39612/UU%20Nomor%2016%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_16_1964_1964-09-23
+  kind: asli
+  source: official
+  date: '1964-09-23'
+  date_basis: tanggal_penetapan
+  text: uu_16_1964_1964-09-23.txt
+  pasal_count: 21
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 094e2b77f056b8c63da51c1e89317cd066b4faff689dd4d44fcf18b87bfbd2ca
 pdf_sha256: 094e2b77f056b8c63da51c1e89317cd066b4faff689dd4d44fcf18b87bfbd2ca
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-09-23'
+tanggal_berlaku: '1964-09-23'
+lembaran_negara: 'LN. 1964/ No. 97 , TLN NO. 2690 , LL SETNEG : 17 HLM'
+subjek: PERIKANAN DAN KELAUTAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0161964.pdf
+bpk:
+  id: 50325
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39612/UU%20Nomor%2016%20Tahun%201964.pdf
+    bpk_file_id: 39612
+    filename: UU Nomor 16 Tahun 1964.pdf
+    sha256: 094e2b77f056b8c63da51c1e89317cd066b4faff689dd4d44fcf18b87bfbd2ca
+    bytes: 122377
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -6,13 +6,13 @@ year: 1964
 title: Undang-Undang Nomor 26 Tahun 1964 tentang Pemberian Perangsang Penanaman Modal
 tentang: PEMBERIAN PERANGSANG PENANAMAN MODAL
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1964-11-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-26-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0261964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50347/uu-no-26-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39647/UU%20Nomor%2026%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_26_1964_1964-11-25
+  kind: asli
+  source: official
+  date: '1964-11-25'
+  date_basis: tanggal_penetapan
+  text: uu_26_1964_1964-11-25.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d8914800c2027e17a83f33945dfa8bf5f6aaf7c744f4d81036ed3cc97f50293d
 pdf_sha256: d8914800c2027e17a83f33945dfa8bf5f6aaf7c744f4d81036ed3cc97f50293d
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-11-25'
+tanggal_berlaku: '1964-11-25'
+lembaran_negara: 'LN. 1964/ No. 117 , TLN NO. 2707, LL SETNEG : 2 HLM'
+subjek: PENANAMAN MODAL DAN INVESTASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-26-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0261964.pdf
+bpk:
+  id: 50347
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39647/UU%20Nomor%2026%20Tahun%201964.pdf
+    bpk_file_id: 39647
+    filename: UU Nomor 26 Tahun 1964.pdf
+    sha256: d8914800c2027e17a83f33945dfa8bf5f6aaf7c744f4d81036ed3cc97f50293d
+    bytes: 43422
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_6_1968
+      citation: UU No. 6 Tahun 1968
+      tentang: Penanaman Modal Dalam Negeri
+      url: https://peraturan.bpk.go.id/Details/49144/uu-no-6-tahun-1968
+      note: null
+uji_materi: null

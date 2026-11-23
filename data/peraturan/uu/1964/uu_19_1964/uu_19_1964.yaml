@@ -7,22 +7,53 @@ title: Undang-Undang Nomor 19 Tahun 1964 tentang Ketentuan-Ketentuan Pokok Kekua
   Kehakiman
 tentang: KETENTUAN-KETENTUAN POKOK KEKUASAAN KEHAKIMAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 14 Tahun 1970 Tentang Ketentuan-ketentuan
-  Pokok Kekuasaan Kehakiman'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1964-10-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DR. SUBANDRIO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0191964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50331/uu-no-19-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39618/UU%20Nomor%2019%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_14_1970
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_19_1964_1964-10-31
+  kind: asli
+  source: official
+  date: '1964-10-31'
+  date_basis: tanggal_penetapan
+  text: uu_19_1964_1964-10-31.txt
+  pasal_count: 31
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 229cf3a080b1fa79bfb814c98bc9b55967b5da9d0f7b9c1b0833908161cdb22d
 pdf_sha256: 229cf3a080b1fa79bfb814c98bc9b55967b5da9d0f7b9c1b0833908161cdb22d
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-10-31'
+tanggal_berlaku: '1964-10-31'
+lembaran_negara: 'LN. 1964/ No. 107 , TLN NO. 2699, LL SETNEG : 11 HLM'
+subjek: JABATAN / PROFESI / KEAHLIAN / SERTIFIKASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0191964.pdf
+bpk:
+  id: 50331
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39618/UU%20Nomor%2019%20Tahun%201964.pdf
+    bpk_file_id: 39618
+    filename: UU Nomor 19 Tahun 1964.pdf
+    sha256: 229cf3a080b1fa79bfb814c98bc9b55967b5da9d0f7b9c1b0833908161cdb22d
+    bytes: 110762
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_14_1970
+      citation: UU No. 14 Tahun 1970
+      tentang: Ketentuan-Ketentuan Pokok Kekuasaan Kehakiman
+      url: https://peraturan.bpk.go.id/Details/47929/uu-no-14-tahun-1970
+      note: null
+uji_materi: null

@@ -11,12 +11,12 @@ tentang: PEMBENTUKAN DAERAH TINGKAT II BATANG DENGAN MENGUBAH UNDANG-UNDANG NOMO
   JAWA TENGAH
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1965-06-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1965
-source_pdf_url: https://peraturan.go.id/files/UU0091965.pdf
+source_url: https://peraturan.bpk.go.id/Details/50008/uu-no-9-tahun-1965
+source_pdf_url: https://peraturan.bpk.go.id/Download/39286/UU%20Nomor%209%20Tahun%201965.pdf
 relationships:
   amends:
   - id: uu_13_1950
@@ -25,6 +25,40 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_9_1965_1965-06-14
+  kind: asli
+  source: official
+  date: '1965-06-14'
+  date_basis: tanggal_penetapan
+  text: uu_9_1965_1965-06-14.txt
+  pasal_count: 13
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: fba5af6aaaf72132d68807a306d273f50c5e7be309130d0e562c385cbbb639d1
 pdf_sha256: fba5af6aaaf72132d68807a306d273f50c5e7be309130d0e562c385cbbb639d1
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1965-06-14'
+tanggal_berlaku: '1965-06-14'
+lembaran_negara: 'LN. 1965/ No. 52 , TLN NO. 2757 , LL SETNEG : 8 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1965
+  source_pdf_url: https://peraturan.go.id/files/UU0091965.pdf
+bpk:
+  id: 50008
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39286/UU%20Nomor%209%20Tahun%201965.pdf
+    bpk_file_id: 39286
+    filename: UU Nomor 9 Tahun 1965.pdf
+    sha256: fba5af6aaaf72132d68807a306d273f50c5e7be309130d0e562c385cbbb639d1
+    bytes: 101737
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_13_1950
+      citation: UU No. 13 Tahun 1950
+      tentang: Pembentukan Daerah-Daerah Kabupaten Dalam Lingkungan Propinsi Djawa
+        Tengah
+      url: https://peraturan.bpk.go.id/Details/60295/uu-no-13-tahun-1950
+      note: null
+uji_materi: null

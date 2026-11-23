@@ -9,12 +9,12 @@ tentang: PEMUNGUTAN BEA BEA, CUKAI CUKAI DAN SUMBANGAN SUMBANGAN WAJIB PAJAK IST
   (SWI) DI DAERAH TINGKAT II KEPULAUAN RIAU
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1964-06-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0071964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50288/uu-no-7-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39574/UU%20Nomor%207%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,43 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_7_1964_1964
+- id: uu_7_1964_1964-06-27
   kind: asli
   source: official
-  date: null
+  date: '1964-06-27'
   date_basis: tanggal_penetapan
-  text: uu_7_1964_1964.txt
-  pasal_count: 1
+  text: uu_7_1964_1964-06-27.txt
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 46f89438397318b448d06e528888a8252aa7b965ddb87fdfcc6c67f874920f13
 pdf_sha256: 46f89438397318b448d06e528888a8252aa7b965ddb87fdfcc6c67f874920f13
+tanggal_pengundangan: '1964-06-27'
+lembaran_negara: 'LN. 1964/ No. 66, TLN NO. 2665 , LL SETNEG : 4 HLM'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0071964.pdf
+bpk:
+  id: 50288
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39574/UU%20Nomor%207%20Tahun%201964.pdf
+    bpk_file_id: 39574
+    filename: UU Nomor 7 Tahun 1964.pdf
+    sha256: 46f89438397318b448d06e528888a8252aa7b965ddb87fdfcc6c67f874920f13
+    bytes: 71986
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: perppu_9_1963
+      citation: PERPU No. 9 Tahun 1963
+      tentang: Penangguhan Pelaksanaan Pemungutan Bea-Bea Dan Cukai-Cukai Di Daerah
+        Tingkat II Kepulauan Riau
+      url: https://peraturan.bpk.go.id/Details/53749/perpu-no-9-tahun-1963
+      note: null
+    - id: perppu_8_1963
+      citation: PERPU No. 8 Tahun 1963
+      tentang: Pemasukan Daerah Tingkat II Kepulauan Riau Ke Dalam Daerah Pabean Indonesia
+      url: https://peraturan.bpk.go.id/Details/53746/perpu-no-8-tahun-1963
+      note: null
+uji_materi: null

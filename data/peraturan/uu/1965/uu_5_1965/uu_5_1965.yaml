@@ -11,12 +11,12 @@ tentang: PEMBENTUKAN KOTAPRAJA PALANGKA RAYA DENGAN MENGUBAH UNDANG-UNDANG NO. 2
   DAERAH TINGKAT II DI KALIMANTAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1965-06-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1965
-source_pdf_url: https://peraturan.go.id/files/UU0051965.pdf
+source_url: https://peraturan.bpk.go.id/Details/49982/uu-no-5-tahun-1965
+source_pdf_url: https://peraturan.bpk.go.id/Download/39260/UU%20Nomor%205%20Tahun%201965.pdf
 relationships:
   amends:
   - id: uu_27_1959
@@ -26,11 +26,41 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_5_1965_1965
+- id: uu_5_1965_1965-06-14
   kind: asli
   source: official
-  date: null
+  date: '1965-06-14'
   date_basis: tanggal_penetapan
-  text: uu_5_1965_1965.txt
-  pasal_count: 2
+  text: uu_5_1965_1965-06-14.txt
+  pasal_count: 12
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0ef1e7471e9d662f260b14f83dadc17357bb6bb423cd89decac3f46f0cb2eb7f
 pdf_sha256: 0ef1e7471e9d662f260b14f83dadc17357bb6bb423cd89decac3f46f0cb2eb7f
+tanggal_pengundangan: '1985-06-14'
+tanggal_berlaku: '1965-06-14'
+lembaran_negara: 'LN. 1965/ No. 48 , TLN NO. 2753 , LL SETNEG : 7 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1965
+  source_pdf_url: https://peraturan.go.id/files/UU0051965.pdf
+bpk:
+  id: 49982
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39260/UU%20Nomor%205%20Tahun%201965.pdf
+    bpk_file_id: 39260
+    filename: UU Nomor 5 Tahun 1965.pdf
+    sha256: 0ef1e7471e9d662f260b14f83dadc17357bb6bb423cd89decac3f46f0cb2eb7f
+    bytes: 102681
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_27_1959
+      citation: UU No. 27 Tahun 1959
+      tentang: Penetapan Undang-Undang Darurat No. 3 Tahun 1953 Tentang Perpanjangan
+        Pembentukan Daerah Tingkat II di Kalimantan (Lembaran-Negara Tahun 1953 No.
+        9), Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/51518/uu-no-27-tahun-1959
+      note: null
+  tanggal_pengundangan: '1965-06-14'
+uji_materi: null

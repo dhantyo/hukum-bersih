@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 29 Tahun 1964 tentang Pengeluaran Pinjaman Obligasi P
 tentang: PENGELUARAN PINJAMAN OBLIGASI PEMBANGUNAN TAHUNAN 1964
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1964-11-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-29-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0291964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50385/uu-no-29-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39693/UU%20Nomor%2029%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,32 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_29_1964_1964-11-25
+  kind: asli
+  source: official
+  date: '1964-11-25'
+  date_basis: tanggal_penetapan
+  text: uu_29_1964_1964-11-25.txt
+  pasal_count: 11
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 57df543109304d2557cddd278d2c59b784ba6cd7d4baf44e76920a1d27383d63
 pdf_sha256: 57df543109304d2557cddd278d2c59b784ba6cd7d4baf44e76920a1d27383d63
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-11-25'
+lembaran_negara: 'LN. 1964/ No. 120, TLN NO. 2710, LL SETNEG : 5 HLM'
+subjek: PASAR MODAL DAN PERDAGANGAN BERJANGKA KOMODITI - PENANAMAN MODAL DAN INVESTASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-29-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0291964.pdf
+bpk:
+  id: 50385
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39693/UU%20Nomor%2029%20Tahun%201964.pdf
+    bpk_file_id: 39693
+    filename: UU Nomor 29 Tahun 1964.pdf
+    sha256: 57df543109304d2557cddd278d2c59b784ba6cd7d4baf44e76920a1d27383d63
+    bytes: 79259
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

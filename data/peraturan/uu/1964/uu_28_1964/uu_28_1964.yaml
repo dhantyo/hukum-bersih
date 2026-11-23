@@ -9,12 +9,12 @@ tentang: PENGECUALIAN BEBERAPA MACAM PENYUSUTAN-PENYUSUTAN DAN PENGELUARAN-PENGE
   TERTENTU DARI LABA PERUSAHAAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1964-11-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-28-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0281964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50382/uu-no-28-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39690/UU%20Nomor%2028%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_28_1964_1964-11-25
+  kind: asli
+  source: official
+  date: '1964-11-25'
+  date_basis: tanggal_penetapan
+  text: uu_28_1964_1964-11-25.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 09e5d000b03c0eea77b3a1a252e4768df92e6539001f458a285af64ca4f48b87
 pdf_sha256: 09e5d000b03c0eea77b3a1a252e4768df92e6539001f458a285af64ca4f48b87
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-11-25'
+tanggal_berlaku: '1964-11-25'
+lembaran_negara: 'LN. 1964/ No. 119 , TLN NO. 2709, LL SETNEG : 3 HLM'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-28-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0281964.pdf
+bpk:
+  id: 50382
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39690/UU%20Nomor%2028%20Tahun%201964.pdf
+    bpk_file_id: 39690
+    filename: UU Nomor 28 Tahun 1964.pdf
+    sha256: 09e5d000b03c0eea77b3a1a252e4768df92e6539001f458a285af64ca4f48b87
+    bytes: 65388
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

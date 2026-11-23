@@ -6,17 +6,13 @@ year: 1964
 title: Undang-Undang Nomor 17 Tahun 1964 tentang Larangan Penarikan Cek Kosong
 tentang: LARANGAN PENARIKAN CEK KOSONG
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Peraturan Pemerintah Pengganti Undang-Undang
-  Nomor 1 Tahun 1971 Tentang Pencabutan Undang-undang No. 17 Tahun 1964 Tentang Larangan
-  Penarikan Cek Kosong Undang-Undang Nomor 12 Tahun 1971 Tentang Penetapan Peraturan
-  Pemerintah Pengganti Undang-undang Nomor 1 Tahun 1971 Tentang Pencabutan Undang-undang
-  Nomor 17 Tahun 1964 Tentang Larangan Penarikan Cek Kosong Menjadi Undang-undang'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1964-09-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DR. SUBANDRIO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0171964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50327/uu-no-17-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39614/UU%20Nomor%2017%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,6 +21,41 @@ relationships:
   - uu_12_1971
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_17_1964_1964-09-26
+  kind: asli
+  source: official
+  date: '1964-09-26'
+  date_basis: tanggal_penetapan
+  text: uu_17_1964_1964-09-26.txt
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a36b24d65487625c2077f876a458156c67d046b071049a17760eadc786b3715a
 pdf_sha256: a36b24d65487625c2077f876a458156c67d046b071049a17760eadc786b3715a
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-09-26'
+tanggal_berlaku: '1964-09-26'
+lembaran_negara: 'LN. 1964/ No.101, TLN NO. 2692 , LL SETNEG : 4 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0171964.pdf
+bpk:
+  id: 50327
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39614/UU%20Nomor%2017%20Tahun%201964.pdf
+    bpk_file_id: 39614
+    filename: UU Nomor 17 Tahun 1964.pdf
+    sha256: a36b24d65487625c2077f876a458156c67d046b071049a17760eadc786b3715a
+    bytes: 78126
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_12_1971
+      citation: UU No. 12 Tahun 1971
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang No. 1 Tahun
+        1971 tentang Pencabutan Undang-Undang No. 17 Tahun 1964 tentang Larangan Penarikan
+        Cek Kosong Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/47608/uu-no-12-tahun-1971
+      note: null
+uji_materi: null

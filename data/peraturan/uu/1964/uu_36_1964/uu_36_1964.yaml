@@ -9,12 +9,12 @@ tentang: PUNGUTAN ISTIMEWA ATAS IMPOR UNTUK PEMBIAYAAN PEMBANGUNAN JALAN RAYA LI
   SUMATERA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1964-12-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-36-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0361964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50401/uu-no-36-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39709/UU%20Nomor%2036%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_36_1964_1964-12-31
+  kind: asli
+  source: official
+  date: '1964-12-31'
+  date_basis: tanggal_penetapan
+  text: uu_36_1964_1964-12-31.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4efa96b695092e96fbf885391d2784316b2c1e2a32f932425a4c0f5a829531ca
 pdf_sha256: 4efa96b695092e96fbf885391d2784316b2c1e2a32f932425a4c0f5a829531ca
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-12-31'
+tanggal_berlaku: '1964-12-31'
+lembaran_negara: 'LN. 1964/ No.141, TLN NO.2723, LL SETNEG : 3 HLM'
+subjek: BANTUAN, SUMBANGAN, BENCANA / KEBENCANAAN, DAN PENANGGULANGAN BENCANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-36-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0361964.pdf
+bpk:
+  id: 50401
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39709/UU%20Nomor%2036%20Tahun%201964.pdf
+    bpk_file_id: 39709
+    filename: UU Nomor 36 Tahun 1964.pdf
+    sha256: 4efa96b695092e96fbf885391d2784316b2c1e2a32f932425a4c0f5a829531ca
+    bytes: 67957
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

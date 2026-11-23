@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 30 Tahun 1964 tentang Pengeluaran Pinjaman Obligasi K
 tentang: PENGELUARAN PINJAMAN OBLIGASI KONFRONTASI TAHUN 1964
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1964-11-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-30-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0301964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50388/uu-no-30-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39696/UU%20Nomor%2030%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_30_1964_1964-11-25
+  kind: asli
+  source: official
+  date: '1964-11-25'
+  date_basis: tanggal_penetapan
+  text: uu_30_1964_1964-11-25.txt
+  pasal_count: 11
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5857501fbf7cd25afb075521a99d5afb29ae509dd9087a16d3a2f03789ec694e
 pdf_sha256: 5857501fbf7cd25afb075521a99d5afb29ae509dd9087a16d3a2f03789ec694e
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-11-25'
+tanggal_berlaku: '1964-11-25'
+lembaran_negara: 'LN. 1964/ No.121, TLN NO. 2711, LL SETNEG : 7 HLM'
+subjek: PASAR MODAL DAN PERDAGANGAN BERJANGKA KOMODITI - PENANAMAN MODAL DAN INVESTASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-30-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0301964.pdf
+bpk:
+  id: 50388
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39696/UU%20Nomor%2030%20Tahun%201964.pdf
+    bpk_file_id: 39696
+    filename: UU Nomor 30 Tahun 1964.pdf
+    sha256: 5857501fbf7cd25afb075521a99d5afb29ae509dd9087a16d3a2f03789ec694e
+    bytes: 81138
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

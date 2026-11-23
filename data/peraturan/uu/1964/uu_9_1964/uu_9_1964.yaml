@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 9 Tahun 1964 tentang Gerakan Sukarelawan Indonesia
 tentang: GERAKAN SUKARELAWAN INDONESIA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1964-08-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0091964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50292/uu-no-9-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39579/UU%20Nomor%209%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,34 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_9_1964_1964-08-14
+  kind: asli
+  source: official
+  date: '1964-08-14'
+  date_basis: tanggal_penetapan
+  text: uu_9_1964_1964-08-14.txt
+  pasal_count: 14
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4e1856587a075a2fa12ffd667f4d24e924f95974e622c0da311f04b56c86c395
 pdf_sha256: 4e1856587a075a2fa12ffd667f4d24e924f95974e622c0da311f04b56c86c395
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-08-14'
+tanggal_berlaku: '1964-03-16'
+lembaran_negara: 'LN. 1964/ No. 72 , TLN NO. 2668 , LL SETNEG : 7 HLM'
+subjek: HONORARIUM, GAJI, PENGHASILAN, UANG KEHORMATAN, TUNJANGAN, PENGHARGAAN, HAK
+  LAINNYA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0091964.pdf
+bpk:
+  id: 50292
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39579/UU%20Nomor%209%20Tahun%201964.pdf
+    bpk_file_id: 39579
+    filename: UU Nomor 9 Tahun 1964.pdf
+    sha256: 4e1856587a075a2fa12ffd667f4d24e924f95974e622c0da311f04b56c86c395
+    bytes: 81866
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

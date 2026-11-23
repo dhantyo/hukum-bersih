@@ -11,12 +11,12 @@ tentang: PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG UNDANG NO. 16 TAHUN 196
   TAHUN 1962 NO. 70), MENJADI UNDANG UNDANG.
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1964-05-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0031964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50234/uu-no-3-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39512/UU%20Nomor%203%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,11 +26,38 @@ relationships:
   - perppu_16_1962
   enacted_by: []
 versions:
-- id: uu_3_1964_1964
+- id: uu_3_1964_1964-05-26
   kind: asli
   source: official
-  date: null
+  date: '1964-05-26'
   date_basis: tanggal_penetapan
-  text: uu_3_1964_1964.txt
+  text: uu_3_1964_1964-05-26.txt
   pasal_count: 16
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d772d0b7361ae13a5a0481731860eaed775df54b5aab5259abfbaad543a5242b
 pdf_sha256: d772d0b7361ae13a5a0481731860eaed775df54b5aab5259abfbaad543a5242b
+tanggal_pengundangan: '1964-05-26'
+tanggal_berlaku: '1962-09-24'
+lembaran_negara: 'LN. 1964/ No. 54 , TLN NO. 2653, LL SETNEG : 10 HLM'
+subjek: KONSTRUKSI, SIPIL, ARSITEK, BANGUNAN, DAN INFRASTRUKTUR
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0031964.pdf
+bpk:
+  id: 50234
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39512/UU%20Nomor%203%20Tahun%201964.pdf
+    bpk_file_id: 39512
+    filename: UU Nomor 3 Tahun 1964.pdf
+    sha256: d772d0b7361ae13a5a0481731860eaed775df54b5aab5259abfbaad543a5242b
+    bytes: 97967
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: perppu_16_1962
+      citation: PERPU No. 16 Tahun 1962
+      tentang: Sumbangan Wajib Istimewa Tahun 1962 Atas Bangunan
+      url: https://peraturan.bpk.go.id/Details/53693/perpu-no-16-tahun-1962
+      note: null
+uji_materi: null

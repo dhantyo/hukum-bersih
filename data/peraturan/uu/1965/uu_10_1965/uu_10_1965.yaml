@@ -10,12 +10,12 @@ tentang: PEMBENTUKAN KOTAPRAJA SABANG DENGAN MENGUBAH UNDANG-UNDANG NOMOR 7 DRT 
   1956, TENTANG PEMBENTUKAN DAERAH OTONOM KABUPATEN DI PROPINSI SUMATERA UTARA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1965-06-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1965
-source_pdf_url: https://peraturan.go.id/files/UU0101965.pdf
+source_url: https://peraturan.bpk.go.id/Details/50182/uu-no-10-tahun-1965
+source_pdf_url: https://peraturan.bpk.go.id/Download/39459/UU%20Nomor%2010%20Tahun%201965.pdf
 relationships:
   amends:
   - id: uu-drt_7_1956
@@ -24,6 +24,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_10_1965_1965-06-14
+  kind: asli
+  source: official
+  date: '1965-06-14'
+  date_basis: tanggal_penetapan
+  text: uu_10_1965_1965-06-14.txt
+  pasal_count: 13
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0a159c8d279b40c547927f0b0addaf6d8c77cf1a1459d3aa3e0bd4668ddeb531
 pdf_sha256: 0a159c8d279b40c547927f0b0addaf6d8c77cf1a1459d3aa3e0bd4668ddeb531
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1965-06-14'
+tanggal_berlaku: '1965-06-14'
+lembaran_negara: 'LN. 1965/ No. 56 , TLN NO. 2758 , LL SETNEG : 7 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1965
+  source_pdf_url: https://peraturan.go.id/files/UU0101965.pdf
+bpk:
+  id: 50182
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39459/UU%20Nomor%2010%20Tahun%201965.pdf
+    bpk_file_id: 39459
+    filename: UU Nomor 10 Tahun 1965.pdf
+    sha256: 0a159c8d279b40c547927f0b0addaf6d8c77cf1a1459d3aa3e0bd4668ddeb531
+    bytes: 99812
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

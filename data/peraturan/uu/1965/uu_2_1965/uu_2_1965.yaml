@@ -13,12 +13,12 @@ tentang: PERUBAHAN BATAS WILAYAH KOTAPRAJA SURABAYA DAN DAERAH TINGKAT II SURABA
   ISTIMEWA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1965-02-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1965
-source_pdf_url: https://peraturan.go.id/files/UU0021965.pdf
+source_url: https://peraturan.bpk.go.id/Details/49971/uu-no-2-tahun-1965
+source_pdf_url: https://peraturan.bpk.go.id/Download/39249/UU%20Nomor%202%20Tahun%201965.pdf
 relationships:
   amends:
   - id: uu_12_1950
@@ -28,11 +28,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_2_1965_1965
+- id: uu_2_1965_1965-02-06
   kind: asli
   source: official
-  date: null
+  date: '1965-02-06'
   date_basis: tanggal_penetapan
-  text: uu_2_1965_1965.txt
-  pasal_count: 1
+  text: uu_2_1965_1965-02-06.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 17237e7dc7be751956bb70dfba3c94a8b916e73cad738c6f5ee6afbf32b82388
 pdf_sha256: 17237e7dc7be751956bb70dfba3c94a8b916e73cad738c6f5ee6afbf32b82388
+tanggal_pengundangan: '1965-02-06'
+tanggal_berlaku: '1965-02-06'
+lembaran_negara: 'LN. 1965/ No. 19 , TLN NO. 2730 , LL SETNEG : 4 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1965
+  source_pdf_url: https://peraturan.go.id/files/UU0021965.pdf
+bpk:
+  id: 49971
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39249/UU%20Nomor%202%20Tahun%201965.pdf
+    bpk_file_id: 39249
+    filename: UU Nomor 2 Tahun 1965.pdf
+    sha256: 17237e7dc7be751956bb70dfba3c94a8b916e73cad738c6f5ee6afbf32b82388
+    bytes: 92538
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -13,12 +13,12 @@ tentang: PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 4 TAHUN 19
   UTARA (LEMBAR
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1964-09-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DR. SUBANDRIO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0151964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50321/uu-no-15-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39608/UU%20Nomor%2015%20Tahun%201964.pdf
 relationships:
   amends:
   - id: uu-drt_7_1956
@@ -27,6 +27,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_15_1964_1964-09-23
+  kind: asli
+  source: official
+  date: '1964-09-23'
+  date_basis: tanggal_penetapan
+  text: uu_15_1964_1964-09-23.txt
+  pasal_count: 13
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e3027c692879ce6eaf8aa458ed5daf9e77a4f8303869e4f6de5c16cddddb91ee
 pdf_sha256: e3027c692879ce6eaf8aa458ed5daf9e77a4f8303869e4f6de5c16cddddb91ee
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-09-23'
+tanggal_berlaku: '1964-01-01'
+lembaran_negara: 'LN. 1964/ No. 96 , TLN NO. 2689, LL SETNEG : 9 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0151964.pdf
+bpk:
+  id: 50321
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39608/UU%20Nomor%2015%20Tahun%201964.pdf
+    bpk_file_id: 39608
+    filename: UU Nomor 15 Tahun 1964.pdf
+    sha256: e3027c692879ce6eaf8aa458ed5daf9e77a4f8303869e4f6de5c16cddddb91ee
+    bytes: 85989
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -6,13 +6,13 @@ year: 1965
 title: Undang-Undang Nomor 3 Tahun 1965 tentang Lalu-Lintas Dan Angkutan Jalan Raya
 tentang: LALU-LINTAS DAN ANGKUTAN JALAN RAYA
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1965-04-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1965
-source_pdf_url: https://peraturan.go.id/files/UU0031965.pdf
+source_url: https://peraturan.bpk.go.id/Details/49975/uu-no-3-tahun-1965
+source_pdf_url: https://peraturan.bpk.go.id/Download/39253/UU%20Nomor%203%20Tahun%201965.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,45 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_3_1965_1965
+- id: uu_3_1965_1965-04-01
   kind: asli
   source: official
-  date: null
+  date: '1965-04-01'
   date_basis: tanggal_penetapan
-  text: uu_3_1965_1965.txt
-  pasal_count: 20
+  text: uu_3_1965_1965-04-01.txt
+  pasal_count: 39
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9cbc630bcf3f05560ff4351c1336c455fa2009e48725470499d40c7ef759bb88
 pdf_sha256: 9cbc630bcf3f05560ff4351c1336c455fa2009e48725470499d40c7ef759bb88
+tanggal_pengundangan: '1965-04-01'
+tanggal_berlaku: '1965-04-01'
+lembaran_negara: 'LN. 1965/ No. 25 , TLN NO. 2742 , LL SETNEG : 19 HLM'
+subjek: TRANSPORTASI DARAT / LAUT / UDARA - LALU LINTAS, JALAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1965
+  source_pdf_url: https://peraturan.go.id/files/UU0031965.pdf
+bpk:
+  id: 49975
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39253/UU%20Nomor%203%20Tahun%201965.pdf
+    bpk_file_id: 39253
+    filename: UU Nomor 3 Tahun 1965.pdf
+    sha256: 9cbc630bcf3f05560ff4351c1336c455fa2009e48725470499d40c7ef759bb88
+    bytes: 215517
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_14_1992
+      citation: UU No. 14 Tahun 1992
+      tentang: Lalu Lintas Dan Angkutan Jalan
+      url: https://peraturan.bpk.go.id/Details/46607/uu-no-14-tahun-1992
+      note: null
+    Mencabut:
+    - id: uu_7_1951
+      citation: UU No. 7 Tahun 1951
+      tentang: Perubahan dan Tambahan Undang-Undang Lalu-Lintas Jalan (Wegverkeersordonnantie,
+        Staatsblad 1933 No. 86)
+      url: https://peraturan.bpk.go.id/Details/39837/uu-no-7-tahun-1951
+      note: null
+uji_materi: null

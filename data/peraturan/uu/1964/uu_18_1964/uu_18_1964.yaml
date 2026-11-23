@@ -6,13 +6,13 @@ year: 1964
 title: Undang-Undang Nomor 18 Tahun 1964 tentang Wajib Kerja Tenaga Para-Medis
 tentang: WAJIB KERJA TENAGA PARA-MEDIS
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1964-10-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DR. SUBANDRIO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0181964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50330/uu-no-18-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39617/UU%20Nomor%2018%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_18_1964_1964-10-31
+  kind: asli
+  source: official
+  date: '1964-10-31'
+  date_basis: tanggal_penetapan
+  text: uu_18_1964_1964-10-31.txt
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b25d35a99abe95c3d6a5f524003e3efe6894b9811715e778db56fc32a2d92494
 pdf_sha256: b25d35a99abe95c3d6a5f524003e3efe6894b9811715e778db56fc32a2d92494
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-10-31'
+tanggal_berlaku: '1964-10-31'
+lembaran_negara: 'LN. 1964/ No. 106 , TLN NO. 2698, LL SETNEG : 3 HLM'
+subjek: KESEHATAN - KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0181964.pdf
+bpk:
+  id: 50330
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39617/UU%20Nomor%2018%20Tahun%201964.pdf
+    bpk_file_id: 39617
+    filename: UU Nomor 18 Tahun 1964.pdf
+    sha256: b25d35a99abe95c3d6a5f524003e3efe6894b9811715e778db56fc32a2d92494
+    bytes: 66847
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_23_1992
+      citation: UU No. 23 Tahun 1992
+      tentang: Kesehatan
+      url: https://peraturan.bpk.go.id/Details/46620/uu-no-23-tahun-1992
+      note: null
+uji_materi: null

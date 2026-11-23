@@ -9,12 +9,12 @@ tentang: PEMBENTUKAN PENGADILAN TINGGI DI DENPASAR DAN PERUBAHAN DAERAH HUKUM PE
   TINGGI DI MAKASSAR
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1965-01-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1965
-source_pdf_url: https://peraturan.go.id/files/UU0011965.pdf
+source_url: https://peraturan.bpk.go.id/Details/49964/uu-no-1-tahun-1965
+source_pdf_url: https://peraturan.bpk.go.id/Download/39242/UU%20Nomor%201%20Tahun%201965.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_1_1965_1965-01-27
+  kind: asli
+  source: official
+  date: '1965-01-27'
+  date_basis: tanggal_penetapan
+  text: uu_1_1965_1965-01-27.txt
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 24e70a0b8fda02545101411339ae2261035d67530a2b70c48b7fb275490dfe7f
 pdf_sha256: 24e70a0b8fda02545101411339ae2261035d67530a2b70c48b7fb275490dfe7f
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1965-01-27'
+tanggal_berlaku: '1965-01-27'
+lembaran_negara: 'LN. 1965/ No. 2 , TLN NO. 2725, LL SETNEG : 3 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1965
+  source_pdf_url: https://peraturan.go.id/files/UU0011965.pdf
+bpk:
+  id: 49964
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39242/UU%20Nomor%201%20Tahun%201965.pdf
+    bpk_file_id: 39242
+    filename: UU Nomor 1 Tahun 1965.pdf
+    sha256: 24e70a0b8fda02545101411339ae2261035d67530a2b70c48b7fb275490dfe7f
+    bytes: 81314
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

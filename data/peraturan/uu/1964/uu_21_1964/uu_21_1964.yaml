@@ -6,22 +6,53 @@ year: 1964
 title: Undang-Undang Nomor 21 Tahun 1964 tentang Pengadilan Landreform
 tentang: PENGADILAN LANDREFORM
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 7 Tahun 1970 Tentang Penghapusan
-  Pengadilan Landreform'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1964-10-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DR. SUBANDRIO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0211964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50335/uu-no-21-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39623/UU%20Nomor%2021%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_7_1970
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_21_1964_1964-10-31
+  kind: asli
+  source: official
+  date: '1964-10-31'
+  date_basis: tanggal_penetapan
+  text: uu_21_1964_1964-10-31.txt
+  pasal_count: 39
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b6d41b93e27d93decb286aefb71566b00e1fb7554abcf6b738023dc78d3e9627
 pdf_sha256: b6d41b93e27d93decb286aefb71566b00e1fb7554abcf6b738023dc78d3e9627
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-10-31'
+tanggal_berlaku: '1964-10-31'
+lembaran_negara: 'LN. 1964/ No. 109, TLN NO. 2701 , LL SETNEG : 19 HLM'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0211964.pdf
+bpk:
+  id: 50335
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39623/UU%20Nomor%2021%20Tahun%201964.pdf
+    bpk_file_id: 39623
+    filename: UU Nomor 21 Tahun 1964.pdf
+    sha256: b6d41b93e27d93decb286aefb71566b00e1fb7554abcf6b738023dc78d3e9627
+    bytes: 126385
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_7_1970
+      citation: UU No. 7 Tahun 1970
+      tentang: Penghapusan Pengadilan Landreform
+      url: https://peraturan.bpk.go.id/Details/47624/uu-no-7-tahun-1970
+      note: null
+uji_materi: null

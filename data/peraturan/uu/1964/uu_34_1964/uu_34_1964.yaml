@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 34 Tahun 1964 tentang Dana Pertanggungan Wajib Kecela
 tentang: DANA PERTANGGUNGAN WAJIB KECELAKAAN LALU-LINTAS JALAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1964-12-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-34-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0341964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50395/uu-no-34-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39703/UU%20Nomor%2034%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_34_1964_1964-12-31
+  kind: asli
+  source: official
+  date: '1964-12-31'
+  date_basis: tanggal_penetapan
+  text: uu_34_1964_1964-12-31.txt
+  pasal_count: 9
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3910853841a7dfa4acf9b0ce446d4389cf430dbde1cff12790f1862c96f78227
 pdf_sha256: 3910853841a7dfa4acf9b0ce446d4389cf430dbde1cff12790f1862c96f78227
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-12-31'
+tanggal_berlaku: '1964-12-31'
+lembaran_negara: 'LN. 1964/ No. 138 , TLN NO. 2721, LL SETNEG : 5 HLM'
+subjek: LALU LINTAS, JALAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-34-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0341964.pdf
+bpk:
+  id: 50395
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39703/UU%20Nomor%2034%20Tahun%201964.pdf
+    bpk_file_id: 39703
+    filename: UU Nomor 34 Tahun 1964.pdf
+    sha256: 3910853841a7dfa4acf9b0ce446d4389cf430dbde1cff12790f1862c96f78227
+    bytes: 74775
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

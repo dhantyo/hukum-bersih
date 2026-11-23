@@ -6,22 +6,53 @@ year: 1964
 title: Undang-Undang Nomor 32 Tahun 1964 tentang Peraturan Lalu-Lintas Devisa
 tentang: PERATURAN LALU-LINTAS DEVISA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 24 Tahun 1999 Tentang Lalu
-  Lintas Devisa dan Sistem Nilai Tukar'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1964-12-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-32-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0321964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50392/uu-no-32-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39700/UU%20Nomor%2032%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_24_1999
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_32_1964_1964-12-28
+  kind: asli
+  source: official
+  date: '1964-12-28'
+  date_basis: tanggal_penetapan
+  text: uu_32_1964_1964-12-28.txt
+  pasal_count: 34
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 83177813d163d410aead02d16b9147ef4bb7503345ffc016df8cedf9c8bc8845
 pdf_sha256: 83177813d163d410aead02d16b9147ef4bb7503345ffc016df8cedf9c8bc8845
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-12-28'
+tanggal_berlaku: '1964-12-28'
+lembaran_negara: 'LN. 1964, LL SETNEG : 14 HLM'
+subjek: PASAR MODAL DAN PERDAGANGAN BERJANGKA KOMODITI - PENANAMAN MODAL DAN INVESTASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-32-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0321964.pdf
+bpk:
+  id: 50392
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39700/UU%20Nomor%2032%20Tahun%201964.pdf
+    bpk_file_id: 39700
+    filename: UU Nomor 32 Tahun 1964.pdf
+    sha256: 83177813d163d410aead02d16b9147ef4bb7503345ffc016df8cedf9c8bc8845
+    bytes: 151074
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_24_1999
+      citation: UU No. 24 Tahun 1999
+      tentang: Lalu Lintas Devisa dan Sistem Nilai Tukar
+      url: https://peraturan.bpk.go.id/Details/45335/uu-no-24-tahun-1999
+      note: null
+uji_materi: null

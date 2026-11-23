@@ -8,13 +8,13 @@ title: Undang-Undang Nomor 1 Tahun 1964 tentang Penetapan Peraturan Pemerintah P
 tentang: PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG UNDANG NOMOR 6 TAHUN 1962
   TENTANG POKOK POKOK PERUMAHAN
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1964-01-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DR. J. LEIMENA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0011964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50228/uu-no-1-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39506/UU%20Nomor%201%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,45 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_1_1964_1964-01-20
+  kind: asli
+  source: official
+  date: '1964-01-20'
+  date_basis: tanggal_penetapan
+  text: uu_1_1964_1964-01-20.txt
+  pasal_count: 10
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0920b3e0ff99576915ff69be2cf119e308f9ebc8c2ad47ece23600ae4634ce05
 pdf_sha256: 0920b3e0ff99576915ff69be2cf119e308f9ebc8c2ad47ece23600ae4634ce05
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-01-20'
+tanggal_berlaku: '1962-08-03'
+lembaran_negara: 'LN. 1964/ No.3 , TLN NO. 2611 , LL SETNEG : 7 HLM'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0011964.pdf
+bpk:
+  id: 50228
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39506/UU%20Nomor%201%20Tahun%201964.pdf
+    bpk_file_id: 39506
+    filename: UU Nomor 1 Tahun 1964.pdf
+    sha256: 0920b3e0ff99576915ff69be2cf119e308f9ebc8c2ad47ece23600ae4634ce05
+    bytes: 84950
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_4_1992
+      citation: UU No. 4 Tahun 1992
+      tentang: Perumahan dan Permukiman
+      url: https://peraturan.bpk.go.id/Details/46596/uu-no-4-tahun-1992
+      note: null
+    Menetapkan:
+    - id: perppu_6_1962
+      citation: PERPU No. 6 Tahun 1962
+      tentang: Pokok-Pokok Perumahan
+      url: https://peraturan.bpk.go.id/Details/53651/perpu-no-6-tahun-1962
+      note: null
+uji_materi: null

@@ -7,28 +7,53 @@ title: Undang-Undang Nomor 4 Tahun 1965 tentang Pemberian Bantuan Penghidupan Or
   Jompo
 tentang: PEMBERIAN BANTUAN PENGHIDUPAN ORANG JOMPO
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 13 Tahun 1998 Tentang Kesejahteraan
-  Lanjut Usia'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1965-05-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1965
-source_pdf_url: https://peraturan.go.id/files/UU0041965.pdf
+source_url: https://peraturan.bpk.go.id/Details/49978/uu-no-4-tahun-1965
+source_pdf_url: https://peraturan.bpk.go.id/Download/39256/UU%20Nomor%204%20Tahun%201965.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_13_1998
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_4_1965_1965
+- id: uu_4_1965_1965-05-10
   kind: asli
   source: official
-  date: null
+  date: '1965-05-10'
   date_basis: tanggal_penetapan
-  text: uu_4_1965_1965.txt
-  pasal_count: 11
+  text: uu_4_1965_1965-05-10.txt
+  pasal_count: 14
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 98e394996f6f8ea95665b8d2e8aa9590e8b31c0186041fb9377641a12ee54472
 pdf_sha256: 98e394996f6f8ea95665b8d2e8aa9590e8b31c0186041fb9377641a12ee54472
+tanggal_pengundangan: '1965-05-10'
+tanggal_berlaku: '1965-05-10'
+lembaran_negara: 'LN. 1965/ No. 32 , TLN NO. 2747 , LL SETNEG : 7 HLM'
+subjek: BANTUAN, SUMBANGAN, BENCANA / KEBENCANAAN, DAN PENANGGULANGAN BENCANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1965
+  source_pdf_url: https://peraturan.go.id/files/UU0041965.pdf
+bpk:
+  id: 49978
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39256/UU%20Nomor%204%20Tahun%201965.pdf
+    bpk_file_id: 39256
+    filename: UU Nomor 4 Tahun 1965.pdf
+    sha256: 98e394996f6f8ea95665b8d2e8aa9590e8b31c0186041fb9377641a12ee54472
+    bytes: 131368
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_13_1998
+      citation: UU No. 13 Tahun 1998
+      tentang: Kesejahteraan Lanjut Usia
+      url: https://peraturan.bpk.go.id/Details/45509/uu-no-13-tahun-1998
+      note: null
+uji_materi: null

@@ -12,13 +12,13 @@ tentang: PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 2 TAHUN 19
   TENGGARA DENGAN MENGUBAH UNDANG-UNDANG NOMOR 47 PRP TAHUN 1960 TENTANG PEMBENTUKAN
   DAERAH TING
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1964-09-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DR. SUBANDRIO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1964
-source_pdf_url: https://peraturan.go.id/files/UU0131964.pdf
+source_url: https://peraturan.bpk.go.id/Details/50314/uu-no-13-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/39601/UU%20Nomor%2013%20Tahun%201964.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,6 +26,54 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_13_1964_1964-09-23
+  kind: asli
+  source: official
+  date: '1964-09-23'
+  date_basis: tanggal_penetapan
+  text: uu_13_1964_1964-09-23.txt
+  pasal_count: 13
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e640abf5d22841a95f3a21ccf62e56906b38ac7b6f08aad91a14e82234c47979
 pdf_sha256: e640abf5d22841a95f3a21ccf62e56906b38ac7b6f08aad91a14e82234c47979
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1964-09-23'
+tanggal_berlaku: '1964-01-01'
+lembaran_negara: 'LN. 1964/ No. 94 , TLN NO. 2687, LL SETNEG : 12 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1964
+  source_pdf_url: https://peraturan.go.id/files/UU0131964.pdf
+bpk:
+  id: 50314
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39601/UU%20Nomor%2013%20Tahun%201964.pdf
+    bpk_file_id: 39601
+    filename: UU Nomor 13 Tahun 1964.pdf
+    sha256: e640abf5d22841a95f3a21ccf62e56906b38ac7b6f08aad91a14e82234c47979
+    bytes: 92648
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_7_2022
+      citation: UU No. 7 Tahun 2022
+      tentang: Provinsi Sulawesi Tenggara
+      url: https://peraturan.bpk.go.id/Details/202527/uu-no-7-tahun-2022
+      note: Ketentuan yang mengatur mengenai Provinsi Sulawesi Tenggara
+    - id: uu_6_2022
+      citation: UU No. 6 Tahun 2022
+      tentang: Provinsi Sulawesi Tengah
+      url: https://peraturan.bpk.go.id/Details/202519/uu-no-6-tahun-2022
+      note: Ketentuan yang mengatur mengenai Provinsi Sulawesi Tengah
+    - id: uu_5_2022
+      citation: UU No. 5 Tahun 2022
+      tentang: Provinsi Sulawesi Utara
+      url: https://peraturan.bpk.go.id/Details/202511/uu-no-5-tahun-2022
+      note: Ketentuan yang mengatur mengenai Provinsi Sulawesi Utara
+    - id: uu_4_2022
+      citation: UU No. 4 Tahun 2022
+      tentang: Provinsi Sulawesi Selatan
+      url: https://peraturan.bpk.go.id/Details/202500/uu-no-4-tahun-2022
+      note: Ketentuan yang mengatur mengenai Provinsi Sulawesi Selatan
+uji_materi: null
