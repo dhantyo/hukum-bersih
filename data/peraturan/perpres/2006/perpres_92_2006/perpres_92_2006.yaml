@@ -1,0 +1,31 @@
+id: perpres_92_2006
+akn: /akn/id/act/perpres/2006/92
+type: perpres
+number: '92'
+year: 2006
+title: Peraturan Presiden Nomor 92 Tahun 2006 tentang Pemberian Fasilitas Kredit Bagi
+  Pejabat Negara Pada Lembaga Negara Untuk Pembelian Kendaraan Perorangan
+tentang: PEMBERIAN FASILITAS KREDIT BAGI PEJABAT NEGARA PADA LEMBAGA NEGARA UNTUK
+  PEMBELIAN KENDARAAN PERORANGAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-11-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3e554d1343db06f8518656caea30584df10b8ca1d5d185dd63a3018e97fbe20e
+  source_title: PERPRES_No.92_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:733d5d0f82a30f83db36b47e59800dee897466026a74a83dfd7d5b23f0c0e278
+parse_error: 'v13: rebuilt text has 5 pasal, the dataset lists 6'

@@ -1,0 +1,40 @@
+id: perpres_2_2009
+akn: /akn/id/act/perpres/2009/2
+type: perpres
+number: '2'
+year: 2009
+title: Peraturan Presiden Nomor 2 Tahun 2009 tentang Bantuan Dan Fasilitas Pemerintah
+  Daerah Dalam Penyelenggaraan Pemilihan Umum Tahun 2009
+tentang: BANTUAN DAN FASILITAS PEMERINTAH DAERAH DALAM PENYELENGGARAAN PEMILIHAN UMUM
+  TAHUN 2009
+short_name: null
+status: null
+tanggal_penetapan: '2009-01-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_2_2009_2009-01-12
+  kind: asli
+  source: dataset
+  date: '2009-01-12'
+  date_basis: tanggal_penetapan
+  text: perpres_2_2009_2009-01-12.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bb36e0433a5177fb90d71414f8381f4bdc5b258e3500669f6bea8f067a88dd88
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bb36e0433a5177fb90d71414f8381f4bdc5b258e3500669f6bea8f067a88dd88
+  source_title: PERPRES_No.2_TH_2009
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 18
+  status: none_known

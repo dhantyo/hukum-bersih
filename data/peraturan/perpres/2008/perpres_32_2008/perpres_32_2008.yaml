@@ -1,0 +1,41 @@
+id: perpres_32_2008
+akn: /akn/id/act/perpres/2008/32
+type: perpres
+number: '32'
+year: 2008
+title: Peraturan Presiden Nomor 32 Tahun 2008 tentang Pengesahan Asean Agreement On
+  Disaster Management And Emergency Response (Persetujuan Asean Mengenai Penanggulangan
+  Bencana Dan Penanganan Darurat)
+tentang: PENGESAHAN ASEAN AGREEMENT ON DISASTER MANAGEMENT AND EMERGENCY RESPONSE
+  (PERSETUJUAN ASEAN MENGENAI PENANGGULANGAN BENCANA DAN PENANGANAN DARURAT)
+short_name: null
+status: null
+tanggal_penetapan: '2008-05-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_32_2008_2008-05-15
+  kind: asli
+  source: dataset
+  date: '2008-05-15'
+  date_basis: tanggal_penetapan
+  text: perpres_32_2008_2008-05-15.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a08f0b36f87b87597852b1d0b26832df7fb20f9cac58aa21d8fe4a8357b57c1d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a08f0b36f87b87597852b1d0b26832df7fb20f9cac58aa21d8fe4a8357b57c1d
+  source_title: PERPRES_NO_32_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

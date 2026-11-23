@@ -1,0 +1,40 @@
+id: perpres_55_2008
+akn: /akn/id/act/perpres/2008/55
+type: perpres
+number: '55'
+year: 2008
+title: Peraturan Presiden Nomor 55 Tahun 2008 tentang Kedudukan, Tugas, Fungsi Dan
+  Tanggung Jawab Deputi Gubernur Pemerintah Provinsi Daerah Khusus Ibukota Jakarta
+tentang: KEDUDUKAN, TUGAS, FUNGSI DAN TANGGUNG JAWAB DEPUTI GUBERNUR PEMERINTAH PROVINSI
+  DAERAH KHUSUS IBUKOTA JAKARTA
+short_name: null
+status: null
+tanggal_penetapan: '2008-08-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_55_2008_2008-08-12
+  kind: asli
+  source: dataset
+  date: '2008-08-12'
+  date_basis: tanggal_penetapan
+  text: perpres_55_2008_2008-08-12.txt
+  pasal_count: 18
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:dd8db9da723d43ddeb0a818aa595950b15fea7d1113d11f8b6ac93598d240ef0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:dd8db9da723d43ddeb0a818aa595950b15fea7d1113d11f8b6ac93598d240ef0
+  source_title: PERPRES_NO_55_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 26
+  status: none_known

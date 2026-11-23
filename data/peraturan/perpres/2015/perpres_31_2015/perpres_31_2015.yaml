@@ -1,0 +1,39 @@
+id: perpres_31_2015
+akn: /akn/id/act/perpres/2015/31
+type: perpres
+number: '31'
+year: 2015
+title: Peraturan Presiden Nomor 31 Tahun 2015 tentang Rencana Tata Ruang Kawasan Perbatasan
+  Negara Di Kalimantan
+tentang: RENCANA TATA RUANG KAWASAN PERBATASAN NEGARA DI KALIMANTAN
+short_name: null
+status: null
+tanggal_penetapan: '2014-03-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_31_2015_2014-03-17
+  kind: asli
+  source: dataset
+  date: '2014-03-17'
+  date_basis: tanggal_penetapan
+  text: perpres_31_2015_2014-03-17.txt
+  pasal_count: 118
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d122099cb6b965592dd5e8525d5c9d2eb1092ea3045c2cbfe17c5f62e4485db4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d122099cb6b965592dd5e8525d5c9d2eb1092ea3045c2cbfe17c5f62e4485db4
+  source_title: Perpres_Nomor_31_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 171
+  status: none_known

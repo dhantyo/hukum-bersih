@@ -1,0 +1,42 @@
+id: perpres_49_2013
+akn: /akn/id/act/perpres/2013/49
+type: perpres
+number: '49'
+year: 2013
+title: Peraturan Presiden Nomor 49 Tahun 2013 tentang Pengesahan Agreement For The
+  Establishment Of The International Anti-Corruption Academy As An International Organization
+  (Persetujuan Pendirian Akademi Antikorupsi Internasional Sebagai Organisasi Internasional)
+tentang: PENGESAHAN AGREEMENT FOR THE ESTABLISHMENT OF THE INTERNATIONAL ANTI-CORRUPTION
+  ACADEMY AS AN INTERNATIONAL ORGANIZATION (PERSETUJUAN PENDIRIAN AKADEMI ANTIKORUPSI
+  INTERNASIONAL SEBAGAI ORGANISASI INTERNASIONAL)
+short_name: null
+status: null
+tanggal_penetapan: '2013-07-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_49_2013_2013-07-30
+  kind: asli
+  source: dataset
+  date: '2013-07-30'
+  date_basis: tanggal_penetapan
+  text: perpres_49_2013_2013-07-30.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2f2b199fd319f734ef001c73ee9c46b5918cb1acd28fd930e357aa81ceff5f92
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2f2b199fd319f734ef001c73ee9c46b5918cb1acd28fd930e357aa81ceff5f92
+  source_title: Perpres_49_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 8
+  status: none_known

@@ -1,0 +1,39 @@
+id: perpres_7_1965
+akn: /akn/id/act/perpres/1965/7
+type: perpres
+number: '7'
+year: 1965
+title: Peraturan Presiden Nomor 7 Tahun 1965 tentang Tunjangan Perjalanan Tetap Presiden
+  Republik Indonesia
+tentang: TUNJANGAN PERJALANAN TETAP Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1965-05-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_7_1965_1965-05-24
+  kind: asli
+  source: dataset
+  date: '1965-05-24'
+  date_basis: tanggal_penetapan
+  text: perpres_7_1965_1965-05-24.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:25ca97b488baacac8031b062fc7ed9b3ecc4d89a7630a39c2fbb0ca973749ebb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:25ca97b488baacac8031b062fc7ed9b3ecc4d89a7630a39c2fbb0ca973749ebb
+  source_title: Perpres_No.7_Tahun_1965
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 21
+  status: none_known

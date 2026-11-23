@@ -1,0 +1,39 @@
+id: perpres_87_2016
+akn: /akn/id/act/perpres/2016/87
+type: perpres
+number: '87'
+year: 2016
+title: Peraturan Presiden Nomor 87 Tahun 2016 tentang Satuan Tugas Sapu Bersih Pungutan
+  Liar
+tentang: SATUAN TUGAS SAPU BERSIH PUNGUTAN LIAR
+short_name: null
+status: null
+tanggal_penetapan: '2016-10-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_87_2016_2016-10-20
+  kind: asli
+  source: dataset
+  date: '2016-10-20'
+  date_basis: tanggal_penetapan
+  text: perpres_87_2016_2016-10-20.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bced3088d5ef421ea0eb26970535715537ac069d27d3a183ec01f67abcb5cdda
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bced3088d5ef421ea0eb26970535715537ac069d27d3a183ec01f67abcb5cdda
+  source_title: Perpres_Nomor_87_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: none_known

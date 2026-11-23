@@ -1,0 +1,39 @@
+id: perpres_7_2017
+akn: /akn/id/act/perpres/2017/7
+type: perpres
+number: '7'
+year: 2017
+title: Peraturan Presiden Nomor 7 Tahun 2017 tentang Tunjangan Jabatan Fungsional
+  Analis Ketahanan Pangan
+tentang: TUNJANGAN JABATAN FUNGSIONAL ANALIS KETAHANAN PANGAN
+short_name: null
+status: null
+tanggal_penetapan: '2017-01-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_7_2017_2017-01-19
+  kind: asli
+  source: dataset
+  date: '2017-01-19'
+  date_basis: tanggal_penetapan
+  text: perpres_7_2017_2017-01-19.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e047965150c27585d01f949aaa3486972807813af0ede41b9b5092172c9df8ae
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e047965150c27585d01f949aaa3486972807813af0ede41b9b5092172c9df8ae
+  source_title: Perpres_Nomor_7_Tahun_2017
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

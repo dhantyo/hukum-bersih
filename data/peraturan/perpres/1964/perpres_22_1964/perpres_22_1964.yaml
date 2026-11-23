@@ -1,0 +1,39 @@
+id: perpres_22_1964
+akn: /akn/id/act/perpres/1964/22
+type: perpres
+number: '22'
+year: 1964
+title: Peraturan Presiden Nomor 22 Tahun 1964 tentang Pelaksanaan Pembangunan Pelabuhan
+  Bebas Sabang
+tentang: PELAKSANAAN PEMBANGUNAN PELABUHAN BEBAS SABANG
+short_name: null
+status: null
+tanggal_penetapan: '1964-06-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_22_1964_1964-06-20
+  kind: asli
+  source: dataset
+  date: '1964-06-20'
+  date_basis: tanggal_penetapan
+  text: perpres_22_1964_1964-06-20.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6c19f6bc449344efbf7f5361cfc84dfc72b6071d305630140ff7963829e0aba2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6c19f6bc449344efbf7f5361cfc84dfc72b6071d305630140ff7963829e0aba2
+  source_title: Perpres_No.22_Tahun_1964
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 18
+  status: none_known

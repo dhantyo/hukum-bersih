@@ -1,0 +1,41 @@
+id: perpres_64_2014
+akn: /akn/id/act/perpres/2014/64
+type: perpres
+number: '64'
+year: 2014
+title: Peraturan Presiden Nomor 64 Tahun 2014 tentang Koordinasi Strategis Lintas
+  Sektor Penyelenggaraan Kepariwisataan
+tentang: KOORDINASI STRATEGIS LINTAS SEKTOR PENYELENGGARAAN KEPARIWISATAAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2014-07-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_64_2014_2014-07-03
+  kind: asli
+  source: dataset
+  date: '2014-07-03'
+  date_basis: tanggal_penetapan
+  text: perpres_64_2014_2014-07-03.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bc695665baca2bd8b1d74bea599e54946e96d288cf88a824f82ee1d1f79b6db5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bc695665baca2bd8b1d74bea599e54946e96d288cf88a824f82ee1d1f79b6db5
+  source_title: Perpres_Nomor_64_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: amended
+  amended_by:
+  - sha256:f09b40b8c7b5bfea4bd9b3a0696e7fb502dfd0b27b72841465377c6109587473

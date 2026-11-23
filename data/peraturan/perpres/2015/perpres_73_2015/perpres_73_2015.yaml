@@ -1,0 +1,40 @@
+id: perpres_73_2015
+akn: /akn/id/act/perpres/2015/73
+type: perpres
+number: '73'
+year: 2015
+title: Peraturan Presiden Nomor 73 Tahun 2015 tentang Pelaksanaan Koordinasi Pengelolaan
+  Wilayah Pesisir Dan Pulau-Pulau Kecil Tingkat Nasional
+tentang: PELAKSANAAN KOORDINASI PENGELOLAAN WILAYAH PESISIR DAN PULAU-PULAU KECIL
+  TINGKAT NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2015-06-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_73_2015_2015-06-18
+  kind: asli
+  source: dataset
+  date: '2015-06-18'
+  date_basis: tanggal_penetapan
+  text: perpres_73_2015_2015-06-18.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:45e40f05b83aa575948fba4d7b9ff023a4ed5e23ef8867401d08a718b3cf9877
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:45e40f05b83aa575948fba4d7b9ff023a4ed5e23ef8867401d08a718b3cf9877
+  source_title: Perpres_Nomor_73_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 18
+  status: none_known

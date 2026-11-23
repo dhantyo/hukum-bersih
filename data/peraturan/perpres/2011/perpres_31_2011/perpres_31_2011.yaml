@@ -1,0 +1,44 @@
+id: perpres_31_2011
+akn: /akn/id/act/perpres/2011/31
+type: perpres
+number: '31'
+year: 2011
+title: Peraturan Presiden Nomor 31 Tahun 2011 tentang Pengesahan Framework Agreement
+  On Trade Preferential System Among The Member States Of The Organization Of The
+  Islamic Conference (Persetujuan Kerangka Kerja Mengenai Sistem Preferensi Perdagangan
+  Antar Negara-Negara Anggota Organisasi Konferensi Islam)
+tentang: PENGESAHAN FRAMEWORK AGREEMENT ON TRADE PREFERENTIAL SYSTEM AMONG THE MEMBER
+  STATES OF THE ORGANIZATION OF THE ISLAMIC CONFERENCE (PERSETUJUAN KERANGKA KERJA
+  MENGENAI SISTEM PREFERENSI PERDAGANGAN ANTAR NEGARA-NEGARA ANGGOTA ORGANISASI KONFERENSI
+  ISLAM)
+short_name: null
+status: null
+tanggal_penetapan: '2011-05-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_31_2011_2011-05-20
+  kind: asli
+  source: dataset
+  date: '2011-05-20'
+  date_basis: tanggal_penetapan
+  text: perpres_31_2011_2011-05-20.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2d6eca81876b31649447d2c2524529f3c2cb53438f85da10059d83a822453055
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2d6eca81876b31649447d2c2524529f3c2cb53438f85da10059d83a822453055
+  source_title: Perpres_no_31_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

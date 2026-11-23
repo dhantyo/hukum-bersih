@@ -1,0 +1,41 @@
+id: perpres_83_2005
+akn: /akn/id/act/perpres/2005/83
+type: perpres
+number: '83'
+year: 2005
+title: Peraturan Presiden Nomor 83 Tahun 2005 tentang Badan Koordinasi Nasional Penanganan
+  Bencana
+tentang: BADAN KOORDINASI NASIONAL PENANGANAN BENCANA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2005-12-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_83_2005_2005-12-29
+  kind: asli
+  source: dataset
+  date: '2005-12-29'
+  date_basis: tanggal_penetapan
+  text: perpres_83_2005_2005-12-29.txt
+  pasal_count: 24
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ad7c1e88f7cb90c1d5d9f4bc9527debd5ca4ef8b2a22735ad6cf4ac5cdf627de
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ad7c1e88f7cb90c1d5d9f4bc9527debd5ca4ef8b2a22735ad6cf4ac5cdf627de
+  source_title: PERPRES_NO_83_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 27
+  status: revoked
+  revoked_by:
+  - sha256:fad2756235534d35dfbacad92e393be87164927f9817fb364a1cad5c9f0589d0

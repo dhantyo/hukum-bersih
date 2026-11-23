@@ -1,0 +1,39 @@
+id: perpres_15_2017
+akn: /akn/id/act/perpres/2017/15
+type: perpres
+number: '15'
+year: 2017
+title: Peraturan Presiden Nomor 15 Tahun 2017 tentang Tunjangan Jabatan Fungsional
+  Arsiparis
+tentang: TUNJANGAN JABATAN FUNGSIONAL ARSIPARIS
+short_name: null
+status: null
+tanggal_penetapan: '2017-02-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_15_2017_2017-02-13
+  kind: asli
+  source: dataset
+  date: '2017-02-13'
+  date_basis: tanggal_penetapan
+  text: perpres_15_2017_2017-02-13.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f633e9d73b756ef1b877b20f57a460a7794237c54ebd9bd7463ebde218ae24f8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f633e9d73b756ef1b877b20f57a460a7794237c54ebd9bd7463ebde218ae24f8
+  source_title: Perpres_Nomor_15_Tahun_2017
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

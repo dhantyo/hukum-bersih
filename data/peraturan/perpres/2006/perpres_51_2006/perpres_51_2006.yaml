@@ -1,0 +1,30 @@
+id: perpres_51_2006
+akn: /akn/id/act/perpres/2006/51
+type: perpres
+number: '51'
+year: 2006
+title: Peraturan Presiden Nomor 51 Tahun 2006 tentang Tunjangan Jabatan Fungsional
+  Instruktur
+tentang: TUNJANGAN JABATAN FUNGSIONAL INSTRUKTUR
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-05-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:61e5dc4c91cc41e1d9ed1fe7914fa170c68cf3ca0b3c05dc66f49f6f20ed17ef
+  source_title: PERPRES_No.51_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:b97a558f8fe95b53ba917ab8a04a34f39ec8b5721daa7edf8d558d939f260f46
+parse_error: 'v13: rebuilt text has 7 pasal, the dataset lists 8'

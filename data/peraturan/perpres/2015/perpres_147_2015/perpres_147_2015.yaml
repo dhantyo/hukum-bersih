@@ -1,0 +1,40 @@
+id: perpres_147_2015
+akn: /akn/id/act/perpres/2015/147
+type: perpres
+number: '147'
+year: 2015
+title: Peraturan Presiden Nomor 147 Tahun 2015 tentang Perubahan Sekolah Tinggi Agama
+  Islam Negeri Batusangkar Menjadi Institut Agama Islam Negeri Batusangkar
+tentang: PERUBAHAN SEKOLAH TINGGI AGAMA ISLAM NEGERI BATUSANGKAR MENJADI INSTITUT
+  AGAMA ISLAM NEGERI BATUSANGKAR
+short_name: null
+status: null
+tanggal_penetapan: '2015-12-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_147_2015_2015-12-23
+  kind: asli
+  source: dataset
+  date: '2015-12-23'
+  date_basis: tanggal_penetapan
+  text: perpres_147_2015_2015-12-23.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f9f3b19f862b99c9356ef8994edccb0d7bcc6ec5cd51380e7ecf1ce0c31f7c71
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f9f3b19f862b99c9356ef8994edccb0d7bcc6ec5cd51380e7ecf1ce0c31f7c71
+  source_title: Perpres_Nomor_147_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

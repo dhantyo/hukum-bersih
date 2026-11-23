@@ -1,0 +1,40 @@
+id: perpres_20_1963
+akn: /akn/id/act/perpres/1963/20
+type: perpres
+number: '20'
+year: 1963
+title: Peraturan Presiden Nomor 20 Tahun 1963 tentang Pemberian Fasilitas Bagi Proyek-Proyek
+  Yang Dibiayai Dengan Kredit Luar Negeri Atas Dasar "Production Sharing"
+tentang: PEMBERIAN FASILITAS BAGI PROYEK-PROYEK YANG DIBIAYAI DENGAN KREDIT LUAR NEGERI
+  ATAS DASAR "PRODUCTION SHARING"
+short_name: null
+status: null
+tanggal_penetapan: '1963-09-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_20_1963_1963-09-26
+  kind: asli
+  source: dataset
+  date: '1963-09-26'
+  date_basis: tanggal_penetapan
+  text: perpres_20_1963_1963-09-26.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8c129459a0a4cc9e4d570d36f08a8842956f1dc536b6784863fab8bbf5d7bb3c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8c129459a0a4cc9e4d570d36f08a8842956f1dc536b6784863fab8bbf5d7bb3c
+  source_title: Perpres_No.20_Tahun_1963
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: none_known

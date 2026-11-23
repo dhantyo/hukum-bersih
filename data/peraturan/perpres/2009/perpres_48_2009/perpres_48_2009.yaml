@@ -1,0 +1,40 @@
+id: perpres_48_2009
+akn: /akn/id/act/perpres/2009/48
+type: perpres
+number: '48'
+year: 2009
+title: Peraturan Presiden Nomor 48 Tahun 2009 tentang Perubahan Sekolah Tinggi Agama
+  Islam Negeri Cirebon Menjadi Institut Agama Islam Negeri Syekh Nurjati Cirebon
+tentang: PERUBAHAN SEKOLAH TINGGI AGAMA ISLAM NEGERI CIREBON MENJADI INSTITUT AGAMA
+  ISLAM NEGERI SYEKH NURJATI CIREBON
+short_name: null
+status: null
+tanggal_penetapan: '2009-11-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_48_2009_2009-11-10
+  kind: asli
+  source: dataset
+  date: '2009-11-10'
+  date_basis: tanggal_penetapan
+  text: perpres_48_2009_2009-11-10.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8e4df32494853ed45805af0bd8aed0e4a650cc8cbb2f8deb97ad7cf38ca97a0b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8e4df32494853ed45805af0bd8aed0e4a650cc8cbb2f8deb97ad7cf38ca97a0b
+  source_title: PERPRES_No.48_TH_2009
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

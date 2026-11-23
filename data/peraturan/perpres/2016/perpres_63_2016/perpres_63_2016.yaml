@@ -1,0 +1,47 @@
+id: perpres_63_2016
+akn: /akn/id/act/perpres/2016/63
+type: perpres
+number: '63'
+year: 2016
+title: Peraturan Presiden Nomor 63 Tahun 2016 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Republik Panama Tentang Pembebasan
+  Visa Bagi Pemegang Paspor Diplomatik, Dinas, Konsuler Dan Khusus (Agreement Between
+  The Government Of The Republic Of Indonesia And The Government Of The Republic Of
+  Panama On Visa Exemptioiv For Holders Of Diplomatic, Servicd, Consular And Spectal
+  Passporiq
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  REPUBLIK PANAMA TENTANG PEMBEBASAN VISA BAGI PEMEGANG PASPOR DIPLOMATIK, DINAS,
+  KONSULER DAN KHUSUS (AGREEMENT BETWEEN THE GOVERNMENT OF THE REPUBLIC OF INDONESIA
+  AND THE GOVERNMENT OF THE REPUBLIC OF PANAMA ON VISA EXEMPTIOIV FOR HOLDERS OF DIPLOMATIC,
+  SERVICD, CONSULAR AND SPECTAL PASSPORIq
+short_name: null
+status: null
+tanggal_penetapan: '2016-07-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_63_2016_2016-07-15
+  kind: asli
+  source: dataset
+  date: '2016-07-15'
+  date_basis: tanggal_penetapan
+  text: perpres_63_2016_2016-07-15.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bd65c518f9b1539151ab1042277f132331fbb4a768a7a63036c2ccd710805be2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bd65c518f9b1539151ab1042277f132331fbb4a768a7a63036c2ccd710805be2
+  source_title: Perpres_Nomor_63_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 6
+  status: none_known

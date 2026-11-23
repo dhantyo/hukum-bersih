@@ -1,0 +1,47 @@
+id: perpres_61_2014
+akn: /akn/id/act/perpres/2014/61
+type: perpres
+number: '61'
+year: 2014
+title: Peraturan Presiden Nomor 61 Tahun 2014 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Republik Perancis Mengenai Pembebasan
+  Visa Jangka Pendek Bagi Pemegang Paspor Diplomatik Atau Paspor Dinas ( Accord Entre
+  Le Gouvernement De La République D'Indonesié Et Le Gouvernement De La République
+  Française Sur L'Exemption De Visas De Court Sejour Pour Les Titulaires D'Un Passeport
+  Diplomatique Ou De Service)
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  REPUBLIK PERANCIS MENGENAI PEMBEBASAN VISA JANGKA PENDEK BAGI PEMEGANG PASPOR DIPLOMATIK
+  ATAU PASPOR DINAS ( ACCORD ENTRE LE GOUVERNEMENT DE LA RÉPUBLIQUE D'INDONESIÉ ET
+  LE GOUVERNEMENT DE LA RÉPUBLIQUE FRANÇAISE SUR L'EXEMPTION DE VISAS DE COURT SEJOUR
+  POUR LES TITULAIRES D'UN PASSEPORT DIPLOMATIQUE OU DE SERVICE)
+short_name: null
+status: null
+tanggal_penetapan: '2014-06-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_61_2014_2014-06-11
+  kind: asli
+  source: dataset
+  date: '2014-06-11'
+  date_basis: tanggal_penetapan
+  text: perpres_61_2014_2014-06-11.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5b8c1c111f4390f16db5dae3c2ae43bca454b902cd7ca3e65b0a95dacbd24912
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5b8c1c111f4390f16db5dae3c2ae43bca454b902cd7ca3e65b0a95dacbd24912
+  source_title: Perpres_Nomor_61_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 8
+  status: none_known

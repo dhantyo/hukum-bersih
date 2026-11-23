@@ -1,0 +1,38 @@
+id: perpres_30_2011
+akn: /akn/id/act/perpres/2011/30
+type: perpres
+number: '30'
+year: 2011
+title: Peraturan Presiden Nomor 30 Tahun 2011 tentang Pengendalian Zoonosis
+tentang: PENGENDALIAN ZOONOSIS
+short_name: null
+status: null
+tanggal_penetapan: '2011-05-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_30_2011_2011-05-20
+  kind: asli
+  source: dataset
+  date: '2011-05-20'
+  date_basis: tanggal_penetapan
+  text: perpres_30_2011_2011-05-20.txt
+  pasal_count: 42
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:290f310bb882f4b01a281234c425520a0362da5a0fed26d3a1f0b4957e897c26
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:290f310bb882f4b01a281234c425520a0362da5a0fed26d3a1f0b4957e897c26
+  source_title: Perpres_no_30_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 51
+  status: none_known

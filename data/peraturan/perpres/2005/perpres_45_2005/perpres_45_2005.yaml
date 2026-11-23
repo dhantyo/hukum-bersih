@@ -1,0 +1,41 @@
+id: perpres_45_2005
+akn: /akn/id/act/perpres/2005/45
+type: perpres
+number: '45'
+year: 2005
+title: Peraturan Presiden Nomor 45 Tahun 2005 tentang Biaya Penyelenggaraan Ibadah
+  Haji Tahun 2006
+tentang: BIAYA PENYELENGGARAAN IBADAH HAJI TAHUN 2006
+short_name: null
+status: dicabut
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_45_2005_2005
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: perpres_45_2005_2005.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:758bd11587d7ec103d55845ef82139ae222b8242b6bb4a76adc523c33a79c7de
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:758bd11587d7ec103d55845ef82139ae222b8242b6bb4a76adc523c33a79c7de
+  source_title: PERPRES_NO_45_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:1fa28d029b32760e0b460ec1032e7864a074b7c83ae8ed8166b6fa793b6f88b4

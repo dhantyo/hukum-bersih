@@ -1,0 +1,40 @@
+id: perpres_5_1962
+akn: /akn/id/act/perpres/1962/5
+type: perpres
+number: '5'
+year: 1962
+title: Peraturan Presiden Nomor 5 Tahun 1962 tentang Pedoman Kerja Adminstratif (Peraturan
+  Tata Tertib) Aparatur Pemerintahan Negara Pada Tingkat Tertinggi
+tentang: PEDOMAN KERJA ADMINSTRATIF (PERATURAN TATA TERTIB) APARATUR PEMERINTAHAN
+  NEGARA PADA TINGKAT TERTINGGI
+short_name: null
+status: null
+tanggal_penetapan: '1962-07-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_5_1962_1962-07-26
+  kind: asli
+  source: dataset
+  date: '1962-07-26'
+  date_basis: tanggal_penetapan
+  text: perpres_5_1962_1962-07-26.txt
+  pasal_count: 31
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:380c3d9da9c6fed2798aed5ea472026ce50a3351be0fd3b5a058d6a9b8de8694
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:380c3d9da9c6fed2798aed5ea472026ce50a3351be0fd3b5a058d6a9b8de8694
+  source_title: Perpres_No.5_Tahun_1962
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 39
+  status: none_known

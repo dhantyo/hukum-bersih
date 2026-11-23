@@ -1,0 +1,46 @@
+id: perpres_8_2009
+akn: /akn/id/act/perpres/2009/8
+type: perpres
+number: '8'
+year: 2009
+title: Peraturan Presiden Nomor 8 Tahun 2009 tentang Pengesahan Protocol Amending
+  The Agreement And Protocol Between The Republic Of Indonesia And The Swiss Confederation
+  For The Avoidance Of Double Taxation With Respect To Taxes On Income (Protokol Perubahan
+  Persetujuan Dan Protokol Antara Republik Indonesia Dan Konfederasi Swiss Mengenai
+  Penghindaran Pajak Berganda Yang Berhubungan Dengan Pajak-Pajak Atas Penghasilan)
+tentang: PENGESAHAN PROTOCOL AMENDING THE AGREEMENT AND PROTOCOL BETWEEN THE REPUBLIC
+  OF INDONESIA AND THE SWISS CONFEDERATION FOR THE AVOIDANCE OF DOUBLE TAXATION WITH
+  RESPECT TO TAXES ON INCOME (PROTOKOL PERUBAHAN PERSETUJUAN DAN PROTOKOL ANTARA REPUBLIK
+  INDONESIA DAN KONFEDERASI SWISS MENGENAI PENGHINDARAN PAJAK BERGANDA YANG BERHUBUNGAN
+  DENGAN PAJAK-PAJAK ATAS PENGHASILAN)
+short_name: null
+status: null
+tanggal_penetapan: '2009-03-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_8_2009_2009-03-05
+  kind: asli
+  source: dataset
+  date: '2009-03-05'
+  date_basis: tanggal_penetapan
+  text: perpres_8_2009_2009-03-05.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f5345bebe3c77b29cf535221ee35a2a4229da9f2c1963968a4219f7319f08a0e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f5345bebe3c77b29cf535221ee35a2a4229da9f2c1963968a4219f7319f08a0e
+  source_title: PERPRES_No.8_TH_2009
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

@@ -1,0 +1,39 @@
+id: perpres_38_2016
+akn: /akn/id/act/perpres/2016/38
+type: perpres
+number: '38'
+year: 2016
+title: Peraturan Presiden Nomor 38 Tahun 2016 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Badan Ekonomi Kreatif
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN BADAN EKONOMI KREATIF
+short_name: null
+status: null
+tanggal_penetapan: '2016-05-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_38_2016_2016-05-03
+  kind: asli
+  source: dataset
+  date: '2016-05-03'
+  date_basis: tanggal_penetapan
+  text: perpres_38_2016_2016-05-03.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3478876f32144486f90abdee321a535b24054cac42ccd721538d5813d09506be
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3478876f32144486f90abdee321a535b24054cac42ccd721538d5813d09506be
+  source_title: Perpres_Nomor_38_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: none_known

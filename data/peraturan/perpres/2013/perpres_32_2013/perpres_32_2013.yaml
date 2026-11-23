@@ -1,0 +1,42 @@
+id: perpres_32_2013
+akn: /akn/id/act/perpres/2013/32
+type: perpres
+number: '32'
+year: 2013
+title: Peraturan Presiden Nomor 32 Tahun 2013 tentang Penugasan Kepada Perusahaan
+  Umum Bulog Untuk Pengamanan Harga Dan Penyaluran Kedelai
+tentang: PENUGASAN KEPADA PERUSAHAAN UMUM BULOG UNTUK PENGAMANAN HARGA DAN PENYALURAN
+  KEDELAI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2013-05-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_32_2013_2013-05-08
+  kind: asli
+  source: dataset
+  date: '2013-05-08'
+  date_basis: tanggal_penetapan
+  text: perpres_32_2013_2013-05-08.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a7fb83ff54fbd9bcc29313b2a27fdd4b685119d63d44a570071bcb6f5deec8d6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a7fb83ff54fbd9bcc29313b2a27fdd4b685119d63d44a570071bcb6f5deec8d6
+  source_title: Perpres_No_32_Tahun_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:d7a21eee0f3e2aa6c791e40ab2cb670edf3789efe6b4835005cff8159211ae6a

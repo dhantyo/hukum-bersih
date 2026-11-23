@@ -1,0 +1,39 @@
+id: perpres_155_2015
+akn: /akn/id/act/perpres/2015/155
+type: perpres
+number: '155'
+year: 2015
+title: Peraturan Presiden Nomor 155 Tahun 2015 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Kementerian Koordinator Bidang Kemaritiman
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN KEMENTERIAN KOORDINATOR BIDANG KEMARITIMAN
+short_name: null
+status: null
+tanggal_penetapan: '2015-12-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_155_2015_2015-12-28
+  kind: asli
+  source: dataset
+  date: '2015-12-28'
+  date_basis: tanggal_penetapan
+  text: perpres_155_2015_2015-12-28.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:cbe59117ebf31ae2b87d219c4e1aa1948e9442765aa2843364179ef1612ff04a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:cbe59117ebf31ae2b87d219c4e1aa1948e9442765aa2843364179ef1612ff04a
+  source_title: Perpres_Nomor_155_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: none_known

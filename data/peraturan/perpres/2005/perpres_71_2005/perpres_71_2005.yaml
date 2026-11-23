@@ -1,0 +1,41 @@
+id: perpres_71_2005
+akn: /akn/id/act/perpres/2005/71
+type: perpres
+number: '71'
+year: 2005
+title: Peraturan Presiden Nomor 71 Tahun 2005 tentang Penyediaan Dan Pendistribusian
+  Jenis Bahan Bakar Minyak Tertentu
+tentang: PENYEDIAAN DAN PENDISTRIBUSIAN JENIS BAHAN BAKAR MINYAK TERTENTU
+short_name: null
+status: diubah
+tanggal_penetapan: '2005-11-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_71_2005_2005-11-16
+  kind: asli
+  source: dataset
+  date: '2005-11-16'
+  date_basis: tanggal_penetapan
+  text: perpres_71_2005_2005-11-16.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:06870c8ecf0da47f11d1325ad16f0aae33daafdd5741e3992d28722b3f5dd310
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:06870c8ecf0da47f11d1325ad16f0aae33daafdd5741e3992d28722b3f5dd310
+  source_title: PERPRES_NO_71_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: amended
+  amended_by:
+  - sha256:04874006118830e88efb9a9a33cbc89672bfa95b3ea24bcdaaaa0ee8dd14ec2c

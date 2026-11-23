@@ -1,0 +1,31 @@
+id: perpres_1_2008
+akn: /akn/id/act/perpres/2008/1
+type: perpres
+number: '1'
+year: 2008
+title: Peraturan Presiden Nomor 1 Tahun 2008 tentang Perubahan Atas Peraturan Presiden
+  Nomor 19 Tahun 2005 Tentang Pembiayaan Sekunder Perumahan
+tentang: PERUBAHAN ATAS PERATURAN PRESIDEN NOMOR 19 TAHUN 2005 TENTANG PEMBIAYAAN
+  SEKUNDER PERUMAHAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2008-01-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b32871fe76c78211fdb634d8a2e437e8252420be197267564070e6733f8ea7cb
+  source_title: PERPRES_NO_1_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 25
+  status: amended
+  amended_by:
+  - sha256:67175672058f9a7cbdf106cc01e823e28e469eca276ade377759253bc98e2e56
+parse_error: 'v13: rebuilt text has 1 pasal, the dataset lists 2'

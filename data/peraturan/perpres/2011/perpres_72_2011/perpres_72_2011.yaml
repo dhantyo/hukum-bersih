@@ -1,0 +1,40 @@
+id: perpres_72_2011
+akn: /akn/id/act/perpres/2011/72
+type: perpres
+number: '72'
+year: 2011
+title: Peraturan Presiden Nomor 72 Tahun 2011 tentang Rencana Aksi Implementasi Rekomendasi
+  Komisi Kebenaran Dan Persahabatan Republik Indonesia Dan Republik Demokratik Timor-Leste
+tentang: RENCANA AKSI IMPLEMENTASI REKOMENDASI KOMISI KEBENARAN DAN PERSAHABATAN REPUBLIK
+  INDONESIA DAN REPUBLIK DEMOKRATIK TIMOR-LESTE
+short_name: null
+status: null
+tanggal_penetapan: '2011-10-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_72_2011_2011-10-06
+  kind: asli
+  source: dataset
+  date: '2011-10-06'
+  date_basis: tanggal_penetapan
+  text: perpres_72_2011_2011-10-06.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e8d908e9218ca17db7d5a21f84928353d5e6ebe7a6c7710a50bc9e9b3d41e9db
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e8d908e9218ca17db7d5a21f84928353d5e6ebe7a6c7710a50bc9e9b3d41e9db
+  source_title: Perpres_no_72_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

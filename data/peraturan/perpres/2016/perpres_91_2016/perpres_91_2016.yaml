@@ -1,0 +1,38 @@
+id: perpres_91_2016
+akn: /akn/id/act/perpres/2016/91
+type: perpres
+number: '91'
+year: 2016
+title: Peraturan Presiden Nomor 91 Tahun 2016 tentang Komite Nasional Keuangan Syariah
+tentang: KOMITE NASIONAL KEUANGAN SYARIAH
+short_name: null
+status: null
+tanggal_penetapan: '2016-11-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_91_2016_2016-11-03
+  kind: asli
+  source: dataset
+  date: '2016-11-03'
+  date_basis: tanggal_penetapan
+  text: perpres_91_2016_2016-11-03.txt
+  pasal_count: 27
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:540f9d7a7c5e9c1daadf7e37f5eeac8fa61c4f7a3808fad689f3d2746caa92c0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:540f9d7a7c5e9c1daadf7e37f5eeac8fa61c4f7a3808fad689f3d2746caa92c0
+  source_title: Perpres_Nomor_91_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 34
+  status: none_known

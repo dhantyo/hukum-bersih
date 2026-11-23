@@ -1,0 +1,42 @@
+id: perpres_81_2015
+akn: /akn/id/act/perpres/2015/81
+type: perpres
+number: '81'
+year: 2015
+title: Peraturan Presiden Nomor 81 Tahun 2015 tentang Tata Cara Pemilihan Dan Penetapan
+  Anggota Dewan Pengawas Dan Anggota Direksi Serta Calon Anggota Pengganti Antarwaktu
+  Dewan Pengawas Dan Direksi Badan Penyelenggara Jaminan Sosial
+tentang: TATA CARA PEMILIHAN DAN PENETAPAN ANGGOTA DEWAN PENGAWAS DAN ANGGOTA DIREKSI
+  SERTA CALON ANGGOTA PENGGANTI ANTARWAKTU DEWAN PENGAWAS DAN DIREKSI BADAN PENYELENGGARA
+  JAMINAN SOSIAL
+short_name: null
+status: null
+tanggal_penetapan: '2015-07-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_81_2015_2015-07-09
+  kind: asli
+  source: dataset
+  date: '2015-07-09'
+  date_basis: tanggal_penetapan
+  text: perpres_81_2015_2015-07-09.txt
+  pasal_count: 34
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d5ae723befd1aff4d4226d952e4b3f2dfb431b08df11c21d497979a019af27df
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d5ae723befd1aff4d4226d952e4b3f2dfb431b08df11c21d497979a019af27df
+  source_title: Perpres_Nomor_81_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 52
+  status: none_known

@@ -1,0 +1,38 @@
+id: perpres_4_1966
+akn: /akn/id/act/perpres/1966/4
+type: perpres
+number: '4'
+year: 1966
+title: Peraturan Presiden Nomor 4 Tahun 1966 tentang Bonus Ekspor
+tentang: BONUS EKSPOR
+short_name: null
+status: null
+tanggal_penetapan: '1966-02-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_4_1966_1966-02-09
+  kind: asli
+  source: dataset
+  date: '1966-02-09'
+  date_basis: tanggal_penetapan
+  text: perpres_4_1966_1966-02-09.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:97117be61cfd0fc498afb2bcc5e43d115eacc3358d14bac09039755c0edf01e7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:97117be61cfd0fc498afb2bcc5e43d115eacc3358d14bac09039755c0edf01e7
+  source_title: Perpres_No._4_Tahun_1966
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: none_known

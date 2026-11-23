@@ -1,0 +1,44 @@
+id: perpres_80_2012
+akn: /akn/id/act/perpres/2012/80
+type: perpres
+number: '80'
+year: 2012
+title: Peraturan Presiden Nomor 80 Tahun 2012 tentang Organisasi, Tugas, Fungsi, Wewenang,
+  Dan Tata Kerja Sekretariat Jenderal Badan Pengawas Pemilihan Umum, Sekretariat Badan
+  Pengawas Pemilihan Umum Provinsi, Sekretariat Panitia Pengawas Pemilihan Umum Kabupaten/Kota,
+  Dan Sekretariat Panitia Pengawas Pemilihan Umum Kecamatan
+tentang: ORGANISASI, TUGAS, FUNGSI, WEWENANG, DAN TATA KERJA SEKRETARIAT JENDERAL
+  BADAN PENGAWAS PEMILIHAN UMUM, SEKRETARIAT BADAN PENGAWAS PEMILIHAN UMUM PROVINSI,
+  SEKRETARIAT PANITIA PENGAWAS PEMILIHAN UMUM KABUPATEN/KOTA, DAN SEKRETARIAT PANITIA
+  PENGAWAS PEMILIHAN UMUM KECAMATAN
+short_name: null
+status: null
+tanggal_penetapan: '2012-09-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_80_2012_2012-09-22
+  kind: asli
+  source: dataset
+  date: '2012-09-22'
+  date_basis: tanggal_penetapan
+  text: perpres_80_2012_2012-09-22.txt
+  pasal_count: 38
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e2623d5c766dd9a569b9bfde3700b2eb3f0d58af22a1feb68fecaa810bc215d4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e2623d5c766dd9a569b9bfde3700b2eb3f0d58af22a1feb68fecaa810bc215d4
+  source_title: Peraturan_Presiden_No_80_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 45
+  status: none_known

@@ -1,0 +1,42 @@
+id: perpres_34_2008
+akn: /akn/id/act/perpres/2008/34
+type: perpres
+number: '34'
+year: 2008
+title: Peraturan Presiden Nomor 34 Tahun 2008 tentang Tunjangan Jabatan Fungsional
+  Fisioterapis, Refraksionis Optisien, Terapis Wicara, Okupasi Terapis, Ortotis Prostetis,
+  Teknisi Transfusi Darah Dan Teknisi Gigi
+tentang: TUNJANGAN JABATAN FUNGSIONAL FISIOTERAPIS, REFRAKSIONIS OPTISIEN, TERAPIS
+  WICARA, OKUPASI TERAPIS, ORTOTIS PROSTETIS, TEKNISI TRANSFUSI DARAH DAN TEKNISI
+  GIGI
+short_name: null
+status: null
+tanggal_penetapan: '2008-05-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_34_2008_2008-05-15
+  kind: asli
+  source: dataset
+  date: '2008-05-15'
+  date_basis: tanggal_penetapan
+  text: perpres_34_2008_2008-05-15.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fb783d06b535a12d45c5130299b51f712dcdd8e7f463f0331d2a15db231e3d65
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fb783d06b535a12d45c5130299b51f712dcdd8e7f463f0331d2a15db231e3d65
+  source_title: PERPRES_NO_34_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

@@ -1,0 +1,47 @@
+id: perpres_1_2010
+akn: /akn/id/act/perpres/2010/1
+type: perpres
+number: '1'
+year: 2010
+title: Peraturan Presiden Nomor 1 Tahun 2010 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Federasi Rusia Mengenai Kerja Sama
+  Di Bidang Eksplorasi Dan Pemanfaatan Antariksa Untuk Maksud Damai ( Agreement Between
+  The Government Of The Republic Of Indonesia And The Government Of The Russian Federation
+  On Cooperation In The Field Of The Exploration And Use Of Outer Space For Peaceful
+  Purposes )
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  FEDERASI RUSIA MENGENAI KERJA SAMA DI BIDANG EKSPLORASI DAN PEMANFAATAN ANTARIKSA
+  UNTUK MAKSUD DAMAI ( AGREEMENT BETWEEN THE GOVERNMENT OF THE REPUBLIC OF INDONESIA
+  AND THE GOVERNMENT OF THE RUSSIAN FEDERATION ON COOPERATION IN THE FIELD OF THE
+  EXPLORATION AND USE OF OUTER SPACE FOR PEACEFUL PURPOSES )
+short_name: null
+status: null
+tanggal_penetapan: '2010-01-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_1_2010_2010-01-05
+  kind: asli
+  source: dataset
+  date: '2010-01-05'
+  date_basis: tanggal_penetapan
+  text: perpres_1_2010_2010-01-05.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:533a261b20a65858d72d2e211035a8fdda5a3eebb85035c9684e51204491c9d1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:533a261b20a65858d72d2e211035a8fdda5a3eebb85035c9684e51204491c9d1
+  source_title: Perpres_No.1_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 7
+  status: none_known

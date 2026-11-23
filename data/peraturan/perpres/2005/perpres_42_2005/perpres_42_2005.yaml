@@ -1,0 +1,43 @@
+id: perpres_42_2005
+akn: /akn/id/act/perpres/2005/42
+type: perpres
+number: '42'
+year: 2005
+title: Peraturan Presiden Nomor 42 Tahun 2005 tentang Komite Kebijakan Percepatan
+  Penyediaan Infrastruktur
+tentang: KOMITE KEBIJAKAN PERCEPATAN PENYEDIAAN INFRASTRUKTUR
+short_name: null
+status: dicabut
+tanggal_penetapan: '2005-05-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_42_2005_2005-05-23
+  kind: asli
+  source: dataset
+  date: '2005-05-23'
+  date_basis: tanggal_penetapan
+  text: perpres_42_2005_2005-05-23.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:01b20c4ae6594f4b541c9b6ed0b5eb85ec39ff0e7601fc2037236d7d95acfbe3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:01b20c4ae6594f4b541c9b6ed0b5eb85ec39ff0e7601fc2037236d7d95acfbe3
+  source_title: PERPRES_NO_42_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:c441c8ca05051099f48105fa4f4660d96d07310b437c802c7ac150a82766b947
+  amended_by:
+  - sha256:fbb93fbd58a1346646025a3cf85fb24faeaab7c8a51e84ee1eec4e1a8017d21a

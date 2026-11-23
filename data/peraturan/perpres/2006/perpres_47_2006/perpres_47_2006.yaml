@@ -1,0 +1,47 @@
+id: perpres_47_2006
+akn: /akn/id/act/perpres/2006/47
+type: perpres
+number: '47'
+year: 2006
+title: Peraturan Presiden Nomor 47 Tahun 2006 tentang Tunjangan Jabatan Fungsional
+  Dokter, Dokter Gigi, Apoteker, Asisten Apoteker, Pranata Laboratorium Kesehatan,
+  Epidemiolog Kesehatan, Entomolog Kesehatan, Sanitarian, Administrator Kesehatan,
+  Penyuluh Kesehatan Masyarakat, Perawat Gigi, Nutrisionis, Bidan, Perawat, Radiografer,
+  Perekam Medis, Dan Teknisi Elektromedis
+tentang: TUNJANGAN JABATAN FUNGSIONAL DOKTER, DOKTER GIGI, APOTEKER, ASISTEN APOTEKER,
+  PRANATA LABORATORIUM KESEHATAN, EPIDEMIOLOG KESEHATAN, ENTOMOLOG KESEHATAN, SANITARIAN,
+  ADMINISTRATOR KESEHATAN, PENYULUH KESEHATAN MASYARAKAT, PERAWAT GIGI, NUTRISIONIS,
+  BIDAN, PERAWAT, RADIOGRAFER, PEREKAM MEDIS, DAN TEKNISI ELEKTROMEDIS
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-05-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_47_2006_2006-05-26
+  kind: asli
+  source: dataset
+  date: '2006-05-26'
+  date_basis: tanggal_penetapan
+  text: perpres_47_2006_2006-05-26.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d0d8b092a145cf3040f4b5fc2835a05fa7168a4352848c5edaaf12112b92c7b6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d0d8b092a145cf3040f4b5fc2835a05fa7168a4352848c5edaaf12112b92c7b6
+  source_title: PERPRES_No.47_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 32
+  status: revoked
+  revoked_by:
+  - sha256:ace1c424ede12f59a9cdf16c5fef741de1b33e921a5f96c2fb518a0f52523aac

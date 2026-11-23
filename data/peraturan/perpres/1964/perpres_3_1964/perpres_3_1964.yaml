@@ -1,0 +1,39 @@
+id: perpres_3_1964
+akn: /akn/id/act/perpres/1964/3
+type: perpres
+number: '3'
+year: 1964
+title: Peraturan Presiden Nomor 3 Tahun 1964 tentang Penyesuaian Tugas Dan Organisasi
+  Dewan Bahan Makanan Presiden Republik Indonesia
+tentang: PENYESUAIAN TUGAS DAN ORGANISASI DEWAN BAHAN MAKANAN Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1964-03-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_3_1964_1964-03-09
+  kind: asli
+  source: dataset
+  date: '1964-03-09'
+  date_basis: tanggal_penetapan
+  text: perpres_3_1964_1964-03-09.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1cbacfc948ce5579f327d8d1ac609009a6657ed527d5953a62883ec422075325
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1cbacfc948ce5579f327d8d1ac609009a6657ed527d5953a62883ec422075325
+  source_title: Perpres_No.3_Tahun_1964
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

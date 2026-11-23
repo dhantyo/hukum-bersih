@@ -1,0 +1,40 @@
+id: perpres_153_2015
+akn: /akn/id/act/perpres/2015/153
+type: perpres
+number: '153'
+year: 2015
+title: Peraturan Presiden Nomor 153 Tahun 2015 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Kementerian Pemberdayaan Perempuan Dan Perlindungan Anak
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN KEMENTERIAN PEMBERDAYAAN PEREMPUAN
+  DAN PERLINDUNGAN ANAK
+short_name: null
+status: null
+tanggal_penetapan: '2015-12-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_153_2015_2015-12-28
+  kind: asli
+  source: dataset
+  date: '2015-12-28'
+  date_basis: tanggal_penetapan
+  text: perpres_153_2015_2015-12-28.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ad186c7a7a87296c8b6f6cb08e034a87618e773d1aebf98dadd7c4abb1c170d1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ad186c7a7a87296c8b6f6cb08e034a87618e773d1aebf98dadd7c4abb1c170d1
+  source_title: Perpres_Nomor_153_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: none_known

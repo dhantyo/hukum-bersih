@@ -1,0 +1,39 @@
+id: perpres_38_2017
+akn: /akn/id/act/perpres/2017/38
+type: perpres
+number: '38'
+year: 2017
+title: Peraturan Presiden Nomor 38 Tahun 2017 tentang Universitas Islam Negeri Raden
+  Intan Lampung
+tentang: UNIVERSITAS ISLAM NEGERI RADEN INTAN LAMPUNG
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_38_2017_2017
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: perpres_38_2017_2017.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d7742abb741abdc8c03e95cafec669006e87ad812fb7b15028a4bf9daa7e135b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d7742abb741abdc8c03e95cafec669006e87ad812fb7b15028a4bf9daa7e135b
+  source_title: Perpres_Nomor_38_Tahun_2017
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

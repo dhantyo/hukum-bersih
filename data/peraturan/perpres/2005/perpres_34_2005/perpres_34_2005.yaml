@@ -1,0 +1,45 @@
+id: perpres_34_2005
+akn: /akn/id/act/perpres/2005/34
+type: perpres
+number: '34'
+year: 2005
+title: Peraturan Presiden Nomor 34 Tahun 2005 tentang Susunan Organisasi Dan Tata
+  Kerja Serta Hak Keuangan Badan Rehabilitasi Dan Rekonstruksi Wilayah Dan Kehidupan
+  Masyarakat Provinsi Nanggroe Aceh Darussalam Dan Kepulauan Nias Provinsi Sumatera
+  Utara
+tentang: SUSUNAN ORGANISASI DAN TATA KERJA SERTA HAK KEUANGAN BADAN REHABILITASI DAN
+  REKONSTRUKSI WILAYAH DAN KEHIDUPAN MASYARAKAT PROVINSI NANGGROE ACEH DARUSSALAM
+  DAN KEPULAUAN NIAS PROVINSI SUMATERA UTARA
+short_name: null
+status: diubah
+tanggal_penetapan: '2005-04-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_34_2005_2005-04-29
+  kind: asli
+  source: dataset
+  date: '2005-04-29'
+  date_basis: tanggal_penetapan
+  text: perpres_34_2005_2005-04-29.txt
+  pasal_count: 15
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:08c5b7dedb1da6750a6c0b239b8d86187fdefe023af293c24e5efe2e13c269cd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:08c5b7dedb1da6750a6c0b239b8d86187fdefe023af293c24e5efe2e13c269cd
+  source_title: PERPRES_NO_34_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 22
+  status: amended
+  amended_by:
+  - sha256:7dae54c7e7c4dc6d5f92adb9a8e8154a92b2650a6b0c0b0c7164050650ad26f4

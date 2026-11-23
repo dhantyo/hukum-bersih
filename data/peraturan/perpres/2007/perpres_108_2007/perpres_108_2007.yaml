@@ -1,0 +1,40 @@
+id: perpres_108_2007
+akn: /akn/id/act/perpres/2007/108
+type: perpres
+number: '108'
+year: 2007
+title: Peraturan Presiden Nomor 108 Tahun 2007 tentang Tunjangan Tenaga Kependidikan
+tentang: TUNJANGAN TENAGA KEPENDIDIKAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2007-12-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_108_2007_2007-12-06
+  kind: asli
+  source: dataset
+  date: '2007-12-06'
+  date_basis: tanggal_penetapan
+  text: perpres_108_2007_2007-12-06.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:010308040210fcf5c18589aca54585a2f4f9a0ee81b4f516822efd3d0f57fa86
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:010308040210fcf5c18589aca54585a2f4f9a0ee81b4f516822efd3d0f57fa86
+  source_title: PERPRES_NO_108_TH_2007
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:6caea7988042ca40646e2e11018c8adf72810e36c1c0c8dfdf7cbe56001ca4a3

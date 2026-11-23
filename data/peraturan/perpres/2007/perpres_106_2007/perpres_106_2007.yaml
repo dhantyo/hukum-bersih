@@ -1,0 +1,41 @@
+id: perpres_106_2007
+akn: /akn/id/act/perpres/2007/106
+type: perpres
+number: '106'
+year: 2007
+title: Peraturan Presiden Nomor 106 Tahun 2007 tentang Lembaga Kebijakan Pengadaan
+  Barang/Jasa Pemerintah
+tentang: LEMBAGA KEBIJAKAN PENGADAAN BARANG/JASA PEMERINTAH
+short_name: null
+status: diubah
+tanggal_penetapan: '2007-12-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_106_2007_2007-12-06
+  kind: asli
+  source: dataset
+  date: '2007-12-06'
+  date_basis: tanggal_penetapan
+  text: perpres_106_2007_2007-12-06.txt
+  pasal_count: 44
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2f7821ae0e82a4ff271069953657766dd653603e1cd0bef6b3d11e105b6e0cd1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2f7821ae0e82a4ff271069953657766dd653603e1cd0bef6b3d11e105b6e0cd1
+  source_title: PERPRES_NO_106_TH_2007
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 51
+  status: amended
+  amended_by:
+  - sha256:299bde95d83aee1381290aedc6dd3953569393d8324d2d4642db3b11cf89f712

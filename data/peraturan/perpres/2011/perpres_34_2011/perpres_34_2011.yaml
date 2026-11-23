@@ -1,0 +1,45 @@
+id: perpres_34_2011
+akn: /akn/id/act/perpres/2011/34
+type: perpres
+number: '34'
+year: 2011
+title: Peraturan Presiden Nomor 34 Tahun 2011 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dengan Pemerintah Republik Arab Mesir Mengenai Kerja
+  Sama Ekonomi Dan Teknik ( Agreement Between The Government Of The Republic Of Indonesia
+  And The Government Of The Arab Republic Of Egypt On Economic And Technical Cooperation
+  )
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DENGAN PEMERINTAH
+  REPUBLIK ARAB MESIR MENGENAI KERJA SAMA EKONOMI DAN TEKNIK ( AGREEMENT BETWEEN THE
+  GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT OF THE ARAB REPUBLIC
+  OF EGYPT ON ECONOMIC AND TECHNICAL COOPERATION )
+short_name: null
+status: null
+tanggal_penetapan: '2011-06-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_34_2011_2011-06-24
+  kind: asli
+  source: dataset
+  date: '2011-06-24'
+  date_basis: tanggal_penetapan
+  text: perpres_34_2011_2011-06-24.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:84fd049b40a6d35471ac8739a4b5004278434ae4237c998be8b01e2dd07379da
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:84fd049b40a6d35471ac8739a4b5004278434ae4237c998be8b01e2dd07379da
+  source_title: Perpres_no_34_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

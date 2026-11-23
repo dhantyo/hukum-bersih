@@ -1,0 +1,40 @@
+id: perpres_54_2013
+akn: /akn/id/act/perpres/2013/54
+type: perpres
+number: '54'
+year: 2013
+title: Peraturan Presiden Nomor 54 Tahun 2013 tentang Perubahan Sekolah Tinggi Agama
+  Islam Negeri Ternate Menjadi Institut Agama Islam Negeri Ternate
+tentang: PERUBAHAN SEKOLAH TINGGI AGAMA ISLAM NEGERI TERNATE MENJADI INSTITUT AGAMA
+  ISLAM NEGERI TERNATE
+short_name: null
+status: null
+tanggal_penetapan: '2013-07-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_54_2013_2013-07-30
+  kind: asli
+  source: dataset
+  date: '2013-07-30'
+  date_basis: tanggal_penetapan
+  text: perpres_54_2013_2013-07-30.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9d9ef9d23e2d0238630f506879d51b27a539403f6630e8da366e571123ab2b49
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9d9ef9d23e2d0238630f506879d51b27a539403f6630e8da366e571123ab2b49
+  source_title: Perpres_54_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

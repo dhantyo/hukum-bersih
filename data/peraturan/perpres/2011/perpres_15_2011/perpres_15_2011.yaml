@@ -1,0 +1,40 @@
+id: perpres_15_2011
+akn: /akn/id/act/perpres/2011/15
+type: perpres
+number: '15'
+year: 2011
+title: Peraturan Presiden Nomor 15 Tahun 2011 tentang Perubahan Atas Peraturan Presiden
+  Nomor 77 Tahun 2005 Tentang Penetapan Pupuk Bersubsidi Sebagai Barang Dalam Pengawasan
+tentang: PERUBAHAN ATAS PERATURAN PRESIDEN NOMOR 77 TAHUN 2005 TENTANG PENETAPAN PUPUK
+  BERSUBSIDI SEBAGAI BARANG DALAM PENGAWASAN
+short_name: null
+status: null
+tanggal_penetapan: '2011-03-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_15_2011_2011-03-02
+  kind: asli
+  source: dataset
+  date: '2011-03-02'
+  date_basis: tanggal_penetapan
+  text: perpres_15_2011_2011-03-02.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:647180d1ad2f4ace8698843325dbf7fa4de5c3e207386b91043aaecc0d9b34e3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:647180d1ad2f4ace8698843325dbf7fa4de5c3e207386b91043aaecc0d9b34e3
+  source_title: Perpres_no_15_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 4
+  status: none_known

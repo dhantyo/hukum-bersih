@@ -1,0 +1,40 @@
+id: perpres_34_2010
+akn: /akn/id/act/perpres/2010/34
+type: perpres
+number: '34'
+year: 2010
+title: Peraturan Presiden Nomor 34 Tahun 2010 tentang Badan Intelijen Negara
+tentang: BADAN INTELIJEN NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2010-05-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_34_2010_2010-05-25
+  kind: asli
+  source: dataset
+  date: '2010-05-25'
+  date_basis: tanggal_penetapan
+  text: perpres_34_2010_2010-05-25.txt
+  pasal_count: 58
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ce3694dc2a4507908d1117344c505877e575cb45c27c4c540339505f2524ea04
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ce3694dc2a4507908d1117344c505877e575cb45c27c4c540339505f2524ea04
+  source_title: Perpres_No.34_tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 72
+  status: revoked
+  revoked_by:
+  - sha256:f93426060c05253f583a3f771e65854523c08519e9ab898b407bb0f1e1b5b37d

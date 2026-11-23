@@ -1,0 +1,43 @@
+id: perpres_103_2007
+akn: /akn/id/act/perpres/2007/103
+type: perpres
+number: '103'
+year: 2007
+title: Peraturan Presiden Nomor 103 Tahun 2007 tentang Pengesahan Regional Convention
+  On The Recognition Of Studies, Diplomas And Degrees In Higher Education In Asia
+  And The Pacific (Konvensi Regional Mengenai Pengakuan Studi, Ijazah Dan Gelar Pendidikan
+  Tinggi Di Asia Dan Pasifik)
+tentang: PENGESAHAN REGIONAL CONVENTION ON THE RECOGNITION OF STUDIES, DIPLOMAS AND
+  DEGREES IN HIGHER EDUCATION IN ASIA AND THE PACIFIC (KONVENSI REGIONAL MENGENAI
+  PENGAKUAN STUDI, IJAZAH DAN GELAR PENDIDIKAN TINGGI DI ASIA DAN PASIFIK)
+short_name: null
+status: null
+tanggal_penetapan: '2007-11-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_103_2007_2007-11-16
+  kind: asli
+  source: dataset
+  date: '2007-11-16'
+  date_basis: tanggal_penetapan
+  text: perpres_103_2007_2007-11-16.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:886d7a47ad01f03fbb544c4c21c03b3832ed58ad29c3f5161beee36afc2d6d5c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:886d7a47ad01f03fbb544c4c21c03b3832ed58ad29c3f5161beee36afc2d6d5c
+  source_title: PERPRES_NO_103_TH_2007
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

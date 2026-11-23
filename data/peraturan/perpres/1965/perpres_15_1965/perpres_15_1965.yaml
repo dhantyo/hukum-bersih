@@ -1,0 +1,38 @@
+id: perpres_15_1965
+akn: /akn/id/act/perpres/1965/15
+type: perpres
+number: '15'
+year: 1965
+title: Peraturan Presiden Nomor 15 Tahun 1965 tentang Pendirian Perguruan Tinggi Swasta
+tentang: PENDIRIAN PERGURUAN TINGGI SWASTA
+short_name: null
+status: null
+tanggal_penetapan: '1965-11-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_15_1965_1965-11-10
+  kind: asli
+  source: dataset
+  date: '1965-11-10'
+  date_basis: tanggal_penetapan
+  text: perpres_15_1965_1965-11-10.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5e4445d03c5b2f2bdd274fbe3e9bada6a927df2dea14323ca07ea196992121fd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5e4445d03c5b2f2bdd274fbe3e9bada6a927df2dea14323ca07ea196992121fd
+  source_title: Perpres_No.15_Tahun_1965
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

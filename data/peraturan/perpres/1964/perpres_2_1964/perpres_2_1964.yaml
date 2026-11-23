@@ -1,0 +1,39 @@
+id: perpres_2_1964
+akn: /akn/id/act/perpres/1964/2
+type: perpres
+number: '2'
+year: 1964
+title: Peraturan Presiden Nomor 2 Tahun 1964 tentang Badan Musyawarah Pengusaha Nasional
+  Swasta
+tentang: BADAN MUSYAWARAH PENGUSAHA NASIONAL SWASTA
+short_name: null
+status: null
+tanggal_penetapan: '1964-02-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_2_1964_1964-02-10
+  kind: asli
+  source: dataset
+  date: '1964-02-10'
+  date_basis: tanggal_penetapan
+  text: perpres_2_1964_1964-02-10.txt
+  pasal_count: 25
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a153a5c43238d5b24eb29040cc69c9d3c9d3735aec6d8436dcbf2c8543931500
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a153a5c43238d5b24eb29040cc69c9d3c9d3735aec6d8436dcbf2c8543931500
+  source_title: Perpres_No.2_Tahun_1964
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 37
+  status: none_known

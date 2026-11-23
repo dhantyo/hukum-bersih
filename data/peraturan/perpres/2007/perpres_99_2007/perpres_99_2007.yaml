@@ -1,0 +1,40 @@
+id: perpres_99_2007
+akn: /akn/id/act/perpres/2007/99
+type: perpres
+number: '99'
+year: 2007
+title: Peraturan Presiden Nomor 99 Tahun 2007 tentang Badan Sar Nasional
+tentang: BADAN SAR NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2007-11-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_99_2007_2007-11-15
+  kind: asli
+  source: dataset
+  date: '2007-11-15'
+  date_basis: tanggal_penetapan
+  text: perpres_99_2007_2007-11-15.txt
+  pasal_count: 49
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ed52e3f207bf330a7dbc67ad3e5b30301c435bb4f680f6194f72a05a77d4728d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ed52e3f207bf330a7dbc67ad3e5b30301c435bb4f680f6194f72a05a77d4728d
+  source_title: PERPRES_NO_99_TH_2007
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 52
+  status: revoked
+  revoked_by:
+  - sha256:23f276bc8f695ca300b7aa4bb3cc2d00c487f1c98fdcda37c0612e66520fd68b

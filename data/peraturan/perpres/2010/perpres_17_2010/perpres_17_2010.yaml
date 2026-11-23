@@ -1,0 +1,42 @@
+id: perpres_17_2010
+akn: /akn/id/act/perpres/2010/17
+type: perpres
+number: '17'
+year: 2010
+title: Peraturan Presiden Nomor 17 Tahun 2010 tentang Pengesahan Instrument For The
+  Amendment Of The Constitution Of The International Labour Organisation, 1997 (Instrumen
+  Perubahan Konstitusi Organisasi Ketenagakerjaan Internasional, 1997)
+tentang: PENGESAHAN INSTRUMENT FOR THE AMENDMENT OF THE CONSTITUTION OF THE INTERNATIONAL
+  LABOUR ORGANISATION, 1997 (INSTRUMEN PERUBAHAN KONSTITUSI ORGANISASI KETENAGAKERJAAN
+  INTERNASIONAL, 1997)
+short_name: null
+status: null
+tanggal_penetapan: '2010-03-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_17_2010_2010-03-18
+  kind: asli
+  source: dataset
+  date: '2010-03-18'
+  date_basis: tanggal_penetapan
+  text: perpres_17_2010_2010-03-18.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:81e1f78a5384c93d1488d68eef91873ab378281f66981178a4d7ab4c48b2174a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:81e1f78a5384c93d1488d68eef91873ab378281f66981178a4d7ab4c48b2174a
+  source_title: perpres_No.17_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

@@ -1,0 +1,46 @@
+id: perpres_94_2012
+akn: /akn/id/act/perpres/2012/94
+type: perpres
+number: '94'
+year: 2012
+title: Peraturan Presiden Nomor 94 Tahun 2012 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Kerajaan Thailand Mengenai Pembebasan
+  Visa Bagi Pemegang Paspor Diplomatik Dan Dinas ( Agreement Between The Government
+  Of The Republic Of Indonesia And The Government Of The Kingdom Of Thailand On Visa
+  Exemption For Holders Of Diplomatic And Official/Service Passports )
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  KERAJAAN THAILAND MENGENAI PEMBEBASAN VISA BAGI PEMEGANG PASPOR DIPLOMATIK DAN DINAS
+  ( AGREEMENT BETWEEN THE GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT
+  OF THE KINGDOM OF THAILAND ON VISA EXEMPTION FOR HOLDERS OF DIPLOMATIC AND OFFICIAL/SERVICE
+  PASSPORTS )
+short_name: null
+status: null
+tanggal_penetapan: '2012-10-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_94_2012_2012-10-30
+  kind: asli
+  source: dataset
+  date: '2012-10-30'
+  date_basis: tanggal_penetapan
+  text: perpres_94_2012_2012-10-30.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:dd926640074d02495e726aa3035f435d4da5f59736b75b50f90320bbb6d28cae
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:dd926640074d02495e726aa3035f435d4da5f59736b75b50f90320bbb6d28cae
+  source_title: Peraturan_Presiden_No_94_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

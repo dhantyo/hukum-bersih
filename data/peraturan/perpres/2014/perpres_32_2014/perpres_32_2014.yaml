@@ -1,0 +1,41 @@
+id: perpres_32_2014
+akn: /akn/id/act/perpres/2014/32
+type: perpres
+number: '32'
+year: 2014
+title: Peraturan Presiden Nomor 32 Tahun 2014 tentang Pengelolaan Dan Pemanfaatan
+  Dana Kapitasi Jaminan Kesehatan Nasional Pada Fasilitas Kesehatan Tingkat Pertama
+  Milik Pemerintah Daerah
+tentang: PENGELOLAAN DAN PEMANFAATAN DANA KAPITASI JAMINAN KESEHATAN NASIONAL PADA
+  FASILITAS KESEHATAN TINGKAT PERTAMA MILIK PEMERINTAH DAERAH
+short_name: null
+status: null
+tanggal_penetapan: '2014-04-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_32_2014_2014-04-21
+  kind: asli
+  source: dataset
+  date: '2014-04-21'
+  date_basis: tanggal_penetapan
+  text: perpres_32_2014_2014-04-21.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9c4baef29e6e5251c6c652027888d8f9358a8955dda75c01405e51b56fbb29b6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9c4baef29e6e5251c6c652027888d8f9358a8955dda75c01405e51b56fbb29b6
+  source_title: Perpres_Nomor_32_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 21
+  status: none_known

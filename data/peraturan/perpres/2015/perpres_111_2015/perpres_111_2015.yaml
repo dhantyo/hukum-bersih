@@ -1,0 +1,39 @@
+id: perpres_111_2015
+akn: /akn/id/act/perpres/2015/111
+type: perpres
+number: '111'
+year: 2015
+title: Peraturan Presiden Nomor 111 Tahun 2015 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Kementerian Perindustrian
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN KEMENTERIAN PERINDUSTRIAN
+short_name: null
+status: null
+tanggal_penetapan: '2015-10-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_111_2015_2015-10-15
+  kind: asli
+  source: dataset
+  date: '2015-10-15'
+  date_basis: tanggal_penetapan
+  text: perpres_111_2015_2015-10-15.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:06d44beb05a33bc07aaa57011ce6afc90cb1e477a30a791fe7dcf164cf3f7278
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:06d44beb05a33bc07aaa57011ce6afc90cb1e477a30a791fe7dcf164cf3f7278
+  source_title: Perpres_Nomor_111_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: none_known

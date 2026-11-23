@@ -1,0 +1,39 @@
+id: perpres_18_1964
+akn: /akn/id/act/perpres/1964/18
+type: perpres
+number: '18'
+year: 1964
+title: Peraturan Presiden Nomor 18 Tahun 1964 tentang Pembinaan Organisasi Dan Tata
+  Kerja Pelabuhan Dan Daerah Pelayaran
+tentang: PEMBINAAN ORGANISASI DAN TATA KERJA PELABUHAN DAN DAERAH PELAYARAN
+short_name: null
+status: null
+tanggal_penetapan: '1964-05-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_18_1964_1964-05-19
+  kind: asli
+  source: dataset
+  date: '1964-05-19'
+  date_basis: tanggal_penetapan
+  text: perpres_18_1964_1964-05-19.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:99e5dab40b3d11e8b54eb6cf51b8861c2c8b3379c445cb4b600e63b63a75a957
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:99e5dab40b3d11e8b54eb6cf51b8861c2c8b3379c445cb4b600e63b63a75a957
+  source_title: Perpres_No.18_Tahun_1964
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: none_known

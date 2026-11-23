@@ -1,0 +1,39 @@
+id: perpres_65_2005
+akn: /akn/id/act/perpres/2005/65
+type: perpres
+number: '65'
+year: 2005
+title: Peraturan Presiden Nomor 65 Tahun 2005 tentang Komisi Nasional Anti Kekerasan
+  Terhadap Perempuan
+tentang: KOMISI NASIONAL ANTI KEKERASAN TERHADAP PEREMPUAN
+short_name: null
+status: null
+tanggal_penetapan: '2005-10-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_65_2005_2005-10-18
+  kind: asli
+  source: dataset
+  date: '2005-10-18'
+  date_basis: tanggal_penetapan
+  text: perpres_65_2005_2005-10-18.txt
+  pasal_count: 24
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:30d8da8ace54cbdd19d75ccd6e86ce457f2f638f3c2d524b0c71bfa674e210fb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:30d8da8ace54cbdd19d75ccd6e86ce457f2f638f3c2d524b0c71bfa674e210fb
+  source_title: PERPRES_NO_65_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 29
+  status: none_known

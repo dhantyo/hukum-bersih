@@ -1,0 +1,40 @@
+id: perpres_80_2008
+akn: /akn/id/act/perpres/2008/80
+type: perpres
+number: '80'
+year: 2008
+title: Peraturan Presiden Nomor 80 Tahun 2008 tentang Perubahan Atas Keputusan Presiden
+  Nomor 75 Tahun 1999 Tentang Komisi Pengawas Persaingan Usaha
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 75 TAHUN 1999 TENTANG KOMISI PENGAWAS
+  PERSAINGAN USAHA
+short_name: null
+status: null
+tanggal_penetapan: '2008-12-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_80_2008_2008-12-30
+  kind: asli
+  source: dataset
+  date: '2008-12-30'
+  date_basis: tanggal_penetapan
+  text: perpres_80_2008_2008-12-30.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:782e91633b996d9ed3ea0c4433a0f44ab2213bf0f495ba526b9f6792b95b5554
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:782e91633b996d9ed3ea0c4433a0f44ab2213bf0f495ba526b9f6792b95b5554
+  source_title: PERPRES_NO_80_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

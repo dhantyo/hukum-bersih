@@ -1,0 +1,33 @@
+id: perpres_12_2009
+akn: /akn/id/act/perpres/2009/12
+type: perpres
+number: '12'
+year: 2009
+title: Peraturan Presiden Nomor 12 Tahun 2009 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Sekretariat Negara Dan Sekretariat Kabinet
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN SEKRETARIAT NEGARA DAN SEKRETARIAT
+  KABINET
+short_name: null
+status: diubah
+tanggal_penetapan: '2009-03-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ce32f4ed48f434667af09c36582e26250ab676b633481b0522180de74351150d
+  source_title: PERPRES_No.12_TH_2009
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: amended
+  amended_by:
+  - sha256:0899b10467a7dcef0f0da3812f5bda7774cfb086a04a5c6a06b4512118f6ea6f
+  - sha256:51e40e148854dcd6804132d20c9de78d73bac29b8bfd9c0f11b0870d859e0908
+  - sha256:f8d329c45c70f23909bf2bb77e441e167c7e8dc717b5543d9cb66460990bfa26
+parse_error: 'v13: rebuilt text has 7 pasal, the dataset lists 8'

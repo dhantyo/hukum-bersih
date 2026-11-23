@@ -1,0 +1,39 @@
+id: perpres_106_2016
+akn: /akn/id/act/perpres/2016/106
+type: perpres
+number: '106'
+year: 2016
+title: Peraturan Presiden Nomor 106 Tahun 2016 tentang Tunjangan Kiner.Ia Pegawai
+  Di Lingkungan Kementerian Pariwisata
+tentang: TUNJANGAN KINER.IA PEGAWAI DI LINGKUNGAN KEMENTERIAN PARIWISATA
+short_name: null
+status: null
+tanggal_penetapan: '2016-12-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_106_2016_2016-12-16
+  kind: asli
+  source: dataset
+  date: '2016-12-16'
+  date_basis: tanggal_penetapan
+  text: perpres_106_2016_2016-12-16.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0040a0ef6314727236e183f470b2a2f831bc14781ccda2a3b41809e5a73ab566
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0040a0ef6314727236e183f470b2a2f831bc14781ccda2a3b41809e5a73ab566
+  source_title: Perpres_Nomor_106_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 18
+  status: none_known

@@ -1,0 +1,42 @@
+id: perpres_50_2015
+akn: /akn/id/act/perpres/2015/50
+type: perpres
+number: '50'
+year: 2015
+title: Peraturan Presiden Nomor 50 Tahun 2015 tentang Mekanisme Penyelesaian Sengketa
+  Berdasarkan Persetujuan Kerangka Kerja Mengenai Kerja Sama Ekonomi Menyeluruh Antara
+  Asosiasi Bangsa-Bangsa Asia Tenggara Dan Republik Rakyat Tiongkok)
+tentang: MEKANISME PENYELESAIAN SENGKETA BERDASARKAN PERSETUJUAN KERANGKA KERJA MENGENAI
+  KERJA SAMA EKONOMI MENYELURUH ANTARA ASOSIASI BANGSA-BANGSA ASIA TENGGARA DAN REPUBLIK
+  RAKYAT TIONGKOK)
+short_name: null
+status: null
+tanggal_penetapan: '2015-04-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_50_2015_2015-04-29
+  kind: asli
+  source: dataset
+  date: '2015-04-29'
+  date_basis: tanggal_penetapan
+  text: perpres_50_2015_2015-04-29.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:49317c976909d9eae404cf3d3cd86e841070348bd15e1823468d428fcdbe674b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:49317c976909d9eae404cf3d3cd86e841070348bd15e1823468d428fcdbe674b
+  source_title: Perpres_Nomor_50_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

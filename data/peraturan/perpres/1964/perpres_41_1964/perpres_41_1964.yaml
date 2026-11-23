@@ -1,0 +1,41 @@
+id: perpres_41_1964
+akn: /akn/id/act/perpres/1964/41
+type: perpres
+number: '41'
+year: 1964
+title: Peraturan Presiden Nomor 41 Tahun 1964 tentang Kedudukan Keuangan Pegawai Negeri
+  Sipil Dan Anggota Kepolisian Yang Dipindahkan/Diperbantukan Di Propinsi Irian Barat.
+  Presiden Republik Indonesia
+tentang: KEDUDUKAN KEUANGAN PEGAWAI NEGERI SIPIL DAN ANGGOTA KEPOLISIAN YANG DIPINDAHKAN/DIPERBANTUKAN
+  DI PROPINSI IRIAN BARAT. Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1964-12-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_41_1964_1964-12-12
+  kind: asli
+  source: dataset
+  date: '1964-12-12'
+  date_basis: tanggal_penetapan
+  text: perpres_41_1964_1964-12-12.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b7ccdf0173a566c93e3e55c9fbe98c923be78a52be1ad370e1d4ec30f85ef513
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b7ccdf0173a566c93e3e55c9fbe98c923be78a52be1ad370e1d4ec30f85ef513
+  source_title: Perpres_No.41_Tahun_1964
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 20
+  status: none_known

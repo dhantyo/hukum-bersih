@@ -1,0 +1,40 @@
+id: perpres_52_2014
+akn: /akn/id/act/perpres/2014/52
+type: perpres
+number: '52'
+year: 2014
+title: Peraturan Presiden Nomor 52 Tahun 2014 tentang Pengadaan Dan Standar Rumah
+  Bagi Mantan Presiden Dan/Atau Mantan Wakil Presiden Republik Indonesia
+tentang: PENGADAAN DAN STANDAR RUMAH BAGI MANTAN PRESIDEN DAN/ATAU MANTAN WAKIL PRESIDEN
+  REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2014-06-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_52_2014_2014-06-02
+  kind: asli
+  source: dataset
+  date: '2014-06-02'
+  date_basis: tanggal_penetapan
+  text: perpres_52_2014_2014-06-02.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bd28eec23bbca3c9ecef608a366e56c7ccd9ee70441a99faf12e86238ed7c0ac
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bd28eec23bbca3c9ecef608a366e56c7ccd9ee70441a99faf12e86238ed7c0ac
+  source_title: Perpres_Nomor_52_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

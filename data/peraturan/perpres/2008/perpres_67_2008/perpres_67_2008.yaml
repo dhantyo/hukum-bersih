@@ -1,0 +1,41 @@
+id: perpres_67_2008
+akn: /akn/id/act/perpres/2008/67
+type: perpres
+number: '67'
+year: 2008
+title: Peraturan Presiden Nomor 67 Tahun 2008 tentang Bantuan Administratif Timbal
+  Balik Untuk Penerapan Undang-Undang Pabean Yang Tepat Dan Untuk Pencegahan, Penyidikan
+  Dan Pemberantasan Pelanggaran Kepabeanan)
+tentang: BANTUAN ADMINISTRATIF TIMBAL BALIK UNTUK PENERAPAN UNDANG-UNDANG PABEAN YANG
+  TEPAT DAN UNTUK PENCEGAHAN, PENYIDIKAN DAN PEMBERANTASAN PELANGGARAN KEPABEANAN)
+short_name: null
+status: null
+tanggal_penetapan: '2008-10-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_67_2008_2008-10-21
+  kind: asli
+  source: dataset
+  date: '2008-10-21'
+  date_basis: tanggal_penetapan
+  text: perpres_67_2008_2008-10-21.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5dd8b21c44e0255210d80b8c7cf8ad5ca5d3553e34d3e3cd979e514eb442a6b2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5dd8b21c44e0255210d80b8c7cf8ad5ca5d3553e34d3e3cd979e514eb442a6b2
+  source_title: PERPRES_NO_67_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 7
+  status: none_known

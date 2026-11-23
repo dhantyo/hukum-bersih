@@ -1,0 +1,44 @@
+id: perpres_64_2010
+akn: /akn/id/act/perpres/2010/64
+type: perpres
+number: '64'
+year: 2010
+title: Peraturan Presiden Nomor 64 Tahun 2010 tentang Perubahan Atas Peraturan Presiden
+  Nomor 45 Tahun 2008 Tentang Perpanjangan Batas Usia Pensiun Bagi Pegawai Negeri
+  Sipil Yang Menduduki Jabatan Fungsional Teknik Pengairan, Teknik Jalan Dan Jembatan,
+  Teknik Tata Bangunan Dan Perumahan, Dan Teknik Penyehatan Lingkungan
+tentang: PERUBAHAN ATAS PERATURAN PRESIDEN NOMOR 45 TAHUN 2008 TENTANG PERPANJANGAN
+  BATAS USIA PENSIUN BAGI PEGAWAI NEGERI SIPIL YANG MENDUDUKI JABATAN FUNGSIONAL TEKNIK
+  PENGAIRAN, TEKNIK JALAN DAN JEMBATAN, TEKNIK TATA BANGUNAN DAN PERUMAHAN, DAN TEKNIK
+  PENYEHATAN LINGKUNGAN
+short_name: null
+status: null
+tanggal_penetapan: '2010-11-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_64_2010_2010-11-10
+  kind: asli
+  source: dataset
+  date: '2010-11-10'
+  date_basis: tanggal_penetapan
+  text: perpres_64_2010_2010-11-10.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c372437eb6350af432e54f9780c1c3af992233372b5f66842244634421238c91
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c372437eb6350af432e54f9780c1c3af992233372b5f66842244634421238c91
+  source_title: Perpres_No.64_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

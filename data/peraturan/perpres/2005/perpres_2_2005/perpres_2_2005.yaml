@@ -1,0 +1,41 @@
+id: perpres_2_2005
+akn: /akn/id/act/perpres/2005/2
+type: perpres
+number: '2'
+year: 2005
+title: Peraturan Presiden Nomor 2 Tahun 2005 tentang Perubahan Institut Agama Islam
+  Negeri Sultan Syarif Qasim Pekanbaru Menjadi Universitas Islam Negeri Sultan Syarif
+  Kasim Riau
+tentang: PERUBAHAN INSTITUT AGAMA ISLAM NEGERI SULTAN SYARIF QASIM PEKANBARU MENJADI
+  UNIVERSITAS ISLAM NEGERI SULTAN SYARIF KASIM RIAU
+short_name: null
+status: null
+tanggal_penetapan: '2005-01-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_2_2005_2005-01-04
+  kind: asli
+  source: dataset
+  date: '2005-01-04'
+  date_basis: tanggal_penetapan
+  text: perpres_2_2005_2005-01-04.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6ed8d16a78ea8e65c0ee6a9b4eafd7a8727cfb8b20e542a00b44ef8719c30080
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6ed8d16a78ea8e65c0ee6a9b4eafd7a8727cfb8b20e542a00b44ef8719c30080
+  source_title: PERPRES_NO_2_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

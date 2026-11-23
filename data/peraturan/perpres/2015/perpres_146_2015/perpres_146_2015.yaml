@@ -1,0 +1,39 @@
+id: perpres_146_2015
+akn: /akn/id/act/perpres/2015/146
+type: perpres
+number: '146'
+year: 2015
+title: Peraturan Presiden Nomor 146 Tahun 2015 tentang Pelaksanaan Pembangunan Dan
+  Pengembangan Kilang Minyak Di Dalam Negeri
+tentang: PELAKSANAAN PEMBANGUNAN DAN PENGEMBANGAN KILANG MINYAK DI DALAM NEGERI
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_146_2015_2015
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: perpres_146_2015_2015.txt
+  pasal_count: 33
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a4f9c927c487f84dbe773978d51fef86a9de62119d9c01ec96288bb06bc26ebe
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a4f9c927c487f84dbe773978d51fef86a9de62119d9c01ec96288bb06bc26ebe
+  source_title: Perpres_Nomor_146_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 44
+  status: none_known

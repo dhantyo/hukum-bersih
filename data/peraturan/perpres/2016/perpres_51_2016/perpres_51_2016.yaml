@@ -1,0 +1,38 @@
+id: perpres_51_2016
+akn: /akn/id/act/perpres/2016/51
+type: perpres
+number: '51'
+year: 2016
+title: Peraturan Presiden Nomor 51 Tahun 2016 tentang Batassempadanpantai Denganrahmattuhanyangmahaesa
+tentang: BATASSEMPADANPANTAI DENGANRAHMATTUHANYANGMAHAESA
+short_name: null
+status: null
+tanggal_penetapan: '2016-06-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_51_2016_2016-06-14
+  kind: asli
+  source: dataset
+  date: '2016-06-14'
+  date_basis: tanggal_penetapan
+  text: perpres_51_2016_2016-06-14.txt
+  pasal_count: 22
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3bfa3a5b94c183f10fa8f0fc009a7e8f2734d3cd2652208ae2d71ff778ae92e2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3bfa3a5b94c183f10fa8f0fc009a7e8f2734d3cd2652208ae2d71ff778ae92e2
+  source_title: Perpres_Nomor_51_Tahun_2016-
+  regulation_type: PERATURANPRESIDEN
+  quality: clean
+  chunks: 31
+  status: none_known

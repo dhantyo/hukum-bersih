@@ -1,0 +1,30 @@
+id: perpres_58_2005
+akn: /akn/id/act/perpres/2005/58
+type: perpres
+number: '58'
+year: 2005
+title: Peraturan Presiden Nomor 58 Tahun 2005 tentang Tunjangan Jabatan Fungsional
+  Peneliti
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENELITI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2005-10-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5a5ed101e8fadc29575fa643adde1cbbeae50576aba9c99eca326bbcd6e43331
+  source_title: PERPRES_NO_58_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: revoked
+  revoked_by:
+  - sha256:d724073b026d8c1bc6f5acca9b6a42f05577e7cdb222b71ba72428990f0903cb
+parse_error: 'v13: rebuilt text has 7 pasal, the dataset lists 8'

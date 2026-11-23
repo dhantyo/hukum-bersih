@@ -1,0 +1,42 @@
+id: perpres_70_2010
+akn: /akn/id/act/perpres/2010/70
+type: perpres
+number: '70'
+year: 2010
+title: Peraturan Presiden Nomor 70 Tahun 2010 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Kementerian Koordinator Bidang Politik, Hukum, Dan Keamanan
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN KEMENTERIAN KOORDINATOR BIDANG POLITIK,
+  HUKUM, DAN KEAMANAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2010-12-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_70_2010_2010-12-15
+  kind: asli
+  source: dataset
+  date: '2010-12-15'
+  date_basis: tanggal_penetapan
+  text: perpres_70_2010_2010-12-15.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:73c9a92c41fb5f1a73e180a760bafe3a2d4c488eb8247b1e457d906fcb40f2af
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:73c9a92c41fb5f1a73e180a760bafe3a2d4c488eb8247b1e457d906fcb40f2af
+  source_title: Perpres_No.70_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: revoked
+  revoked_by:
+  - sha256:55e45fa101e00a51ea190d65775740b775be48079c83c6fcd1496c0e4af7aa97

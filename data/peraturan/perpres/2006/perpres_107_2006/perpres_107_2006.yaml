@@ -1,0 +1,39 @@
+id: perpres_107_2006
+akn: /akn/id/act/perpres/2006/107
+type: perpres
+number: '107'
+year: 2006
+title: Peraturan Presiden Nomor 107 Tahun 2006 tentang Tunjangan Jabatan Fungsional
+  Penguji Kendaraan Bermotor
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENGUJI KENDARAAN BERMOTOR
+short_name: null
+status: null
+tanggal_penetapan: '2006-12-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_107_2006_2006-12-28
+  kind: asli
+  source: dataset
+  date: '2006-12-28'
+  date_basis: tanggal_penetapan
+  text: perpres_107_2006_2006-12-28.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d4ae6705140e68edd80437252a5a45fa2310c8aeaf8d2f8d9dc7b9e91caf9fb1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d4ae6705140e68edd80437252a5a45fa2310c8aeaf8d2f8d9dc7b9e91caf9fb1
+  source_title: PRPS_NO_107_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

@@ -1,0 +1,40 @@
+id: perpres_52_2011
+akn: /akn/id/act/perpres/2011/52
+type: perpres
+number: '52'
+year: 2011
+title: Peraturan Presiden Nomor 52 Tahun 2011 tentang Pegawai Negeri, Pejabat Negara,
+  Dan Pembayaran Pensiun Penetapan Pembayaran Gaji Bulan September 2011
+tentang: PEGAWAI NEGERI, PEJABAT NEGARA, DAN PEMBAYARAN PENSIUN PENETAPAN PEMBAYARAN
+  GAJI BULAN SEPTEMBER 2011
+short_name: null
+status: null
+tanggal_penetapan: '2011-08-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_52_2011_2011-08-22
+  kind: asli
+  source: dataset
+  date: '2011-08-22'
+  date_basis: tanggal_penetapan
+  text: perpres_52_2011_2011-08-22.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b2f27ebc8e4f0928e3c03624b24af5108cf6947e14ff239dd70b64f40ad8a8f4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b2f27ebc8e4f0928e3c03624b24af5108cf6947e14ff239dd70b64f40ad8a8f4
+  source_title: Perpres_no_52_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

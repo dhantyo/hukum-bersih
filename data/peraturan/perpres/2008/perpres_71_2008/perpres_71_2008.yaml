@@ -1,0 +1,45 @@
+id: perpres_71_2008
+akn: /akn/id/act/perpres/2008/71
+type: perpres
+number: '71'
+year: 2008
+title: Peraturan Presiden Nomor 71 Tahun 2008 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Meksiko Serikat Tentang Kerja Sama
+  Pendidikan Dan Kebudayaan ( Agreement Between The Government Of The Republic Of
+  Indonesia And The Government Of The United Mexican States On Educational And Cultural
+  Cooperation )
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  MEKSIKO SERIKAT TENTANG KERJA SAMA PENDIDIKAN DAN KEBUDAYAAN ( AGREEMENT BETWEEN
+  THE GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT OF THE UNITED MEXICAN
+  STATES ON EDUCATIONAL AND CULTURAL COOPERATION )
+short_name: null
+status: null
+tanggal_penetapan: '2008-11-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_71_2008_2008-11-13
+  kind: asli
+  source: dataset
+  date: '2008-11-13'
+  date_basis: tanggal_penetapan
+  text: perpres_71_2008_2008-11-13.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b07095c07481f721467da933826c63ebfc8ad3ea7647e4f1171e20fd13926f25
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b07095c07481f721467da933826c63ebfc8ad3ea7647e4f1171e20fd13926f25
+  source_title: PERPRES_NO_71_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

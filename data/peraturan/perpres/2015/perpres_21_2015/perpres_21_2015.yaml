@@ -1,0 +1,42 @@
+id: perpres_21_2015
+akn: /akn/id/act/perpres/2015/21
+type: perpres
+number: '21'
+year: 2015
+title: Peraturan Presiden Nomor 21 Tahun 2015 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Kepaniteraan Dan Sekretariat Jenderal Mahkamah Konstitusi Republik Indonesia
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN KEPANITERAAN DAN SEKRETARIAT JENDERAL
+  MAHKAMAH KONSTITUSI REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2015-02-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_21_2015_2015-02-02
+  kind: asli
+  source: dataset
+  date: '2015-02-02'
+  date_basis: tanggal_penetapan
+  text: perpres_21_2015_2015-02-02.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:be0c806e42dc4067410a67e836dbbb4894c1f773c8867f73a286bcd7bbb881cd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:be0c806e42dc4067410a67e836dbbb4894c1f773c8867f73a286bcd7bbb881cd
+  source_title: Perpres_Nomor_21_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: revoked
+  revoked_by:
+  - sha256:8b39bde9006b418d2015db65af40c90b36eed5213ac7eed3df5d144b02f55a2a

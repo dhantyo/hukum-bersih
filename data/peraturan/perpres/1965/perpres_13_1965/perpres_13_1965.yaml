@@ -1,0 +1,40 @@
+id: perpres_13_1965
+akn: /akn/id/act/perpres/1965/13
+type: perpres
+number: '13'
+year: 1965
+title: Peraturan Presiden Nomor 13 Tahun 1965 tentang Perobahan Atau Penambahan Peraturan
+  Presiden Nomor 17 Tahun 1964, Tentang Otorita Jalan Raya
+tentang: PEROBAHAN ATAU PENAMBAHAN PERATURAN PRESIDEN NOMOR 17 TAHUN 1964, TENTANG
+  OTORITA JALAN RAYA
+short_name: null
+status: null
+tanggal_penetapan: '1965-07-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_13_1965_1965-07-07
+  kind: asli
+  source: dataset
+  date: '1965-07-07'
+  date_basis: tanggal_penetapan
+  text: perpres_13_1965_1965-07-07.txt
+  pasal_count: 26
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2206f0d53e5586062c8e1e725c9663121e7c01d66e1dcbd95d6f1c63be07e6e6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2206f0d53e5586062c8e1e725c9663121e7c01d66e1dcbd95d6f1c63be07e6e6
+  source_title: Perpres_No.13_Tahun_1965
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 42
+  status: none_known

@@ -1,0 +1,41 @@
+id: perpres_41_2015
+akn: /akn/id/act/perpres/2015/41
+type: perpres
+number: '41'
+year: 2015
+title: Peraturan Presiden Nomor 41 Tahun 2015 tentang Kementerian Badan Usaha Milik
+  Negara
+tentang: KEMENTERIAN BADAN USAHA MILIK NEGARA
+short_name: null
+status: diubah
+tanggal_penetapan: '2015-04-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_41_2015_2015-04-01
+  kind: asli
+  source: dataset
+  date: '2015-04-01'
+  date_basis: tanggal_penetapan
+  text: perpres_41_2015_2015-04-01.txt
+  pasal_count: 49
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ea964b2fd9da4d70bdde94935aa5586f180b6602730cf13ea327f0c7472f1252
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ea964b2fd9da4d70bdde94935aa5586f180b6602730cf13ea327f0c7472f1252
+  source_title: Perpres_Nomor_41_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 60
+  status: amended
+  amended_by:
+  - sha256:b3c0e7cc175e7a57cce558a8451b39fea3d12004ee1ed380b7442ce873a7e4ea

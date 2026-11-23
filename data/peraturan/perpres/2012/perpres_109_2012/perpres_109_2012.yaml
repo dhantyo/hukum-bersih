@@ -1,0 +1,41 @@
+id: perpres_109_2012
+akn: /akn/id/act/perpres/2012/109
+type: perpres
+number: '109'
+year: 2012
+title: Peraturan Presiden Nomor 109 Tahun 2012 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Badan Kepegawaian Negara
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN BADAN KEPEGAWAIAN NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2012-11-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_109_2012_2012-11-17
+  kind: asli
+  source: dataset
+  date: '2012-11-17'
+  date_basis: tanggal_penetapan
+  text: perpres_109_2012_2012-11-17.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:31002153bd872d0219ffda7e974ef4bca40fbf15fa3431a3c77dcbcb5b179d4e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:31002153bd872d0219ffda7e974ef4bca40fbf15fa3431a3c77dcbcb5b179d4e
+  source_title: Peraturan_Presiden_No_109_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: revoked
+  revoked_by:
+  - sha256:127506c728352015e6b529055a78e3ffb6a7fa57f20fd3f2c28667b6ff3f8d54

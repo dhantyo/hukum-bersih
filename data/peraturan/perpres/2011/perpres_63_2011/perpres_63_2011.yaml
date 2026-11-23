@@ -1,0 +1,39 @@
+id: perpres_63_2011
+akn: /akn/id/act/perpres/2011/63
+type: perpres
+number: '63'
+year: 2011
+title: Peraturan Presiden Nomor 63 Tahun 2011 tentang Organisasi Dan Tata Kerja Instansi
+  Vertikal Kementerian Agama
+tentang: ORGANISASI DAN TATA KERJA INSTANSI VERTIKAL KEMENTERIAN AGAMA
+short_name: null
+status: null
+tanggal_penetapan: '2010-09-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_63_2011_2010-09-20
+  kind: asli
+  source: dataset
+  date: '2010-09-20'
+  date_basis: tanggal_penetapan
+  text: perpres_63_2011_2010-09-20.txt
+  pasal_count: 25
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:89eb184ad5f3153f7f51b369752ee936bda3d02a1761d2266e58a7c3cfd0460b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:89eb184ad5f3153f7f51b369752ee936bda3d02a1761d2266e58a7c3cfd0460b
+  source_title: Perpres_no_63_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 33
+  status: none_known

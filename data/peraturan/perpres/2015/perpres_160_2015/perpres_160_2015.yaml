@@ -1,0 +1,40 @@
+id: perpres_160_2015
+akn: /akn/id/act/perpres/2015/160
+type: perpres
+number: '160'
+year: 2015
+title: Peraturan Presiden Nomor 160 Tahun 2015 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Badan Kependudukan Dan Keluarga Berencana Nasional
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN BADAN KEPENDUDUKAN DAN KELUARGA BERENCANA
+  NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2015-12-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_160_2015_2015-12-28
+  kind: asli
+  source: dataset
+  date: '2015-12-28'
+  date_basis: tanggal_penetapan
+  text: perpres_160_2015_2015-12-28.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:aaf7a87234739fe7dc83ca8bb3c1fe51ccea1819c658430079a28e254eece83d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:aaf7a87234739fe7dc83ca8bb3c1fe51ccea1819c658430079a28e254eece83d
+  source_title: Perpres_Nomor_160_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 18
+  status: none_known

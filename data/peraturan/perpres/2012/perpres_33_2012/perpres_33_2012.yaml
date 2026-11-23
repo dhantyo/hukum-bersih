@@ -1,0 +1,39 @@
+id: perpres_33_2012
+akn: /akn/id/act/perpres/2012/33
+type: perpres
+number: '33'
+year: 2012
+title: Peraturan Presiden Nomor 33 Tahun 2012 tentang Jaringan Dokumentasi Dan Informasi
+  Hukum Nasional
+tentang: JARINGAN DOKUMENTASI DAN INFORMASI HUKUM NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2012-03-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_33_2012_2012-03-20
+  kind: asli
+  source: dataset
+  date: '2012-03-20'
+  date_basis: tanggal_penetapan
+  text: perpres_33_2012_2012-03-20.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:82444179d6a7f1c8c228a73309798a2e54d367a9ede274d65031eb4042d20e54
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:82444179d6a7f1c8c228a73309798a2e54d367a9ede274d65031eb4042d20e54
+  source_title: Peraturan_Presiden_No_33_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 18
+  status: none_known

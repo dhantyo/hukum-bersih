@@ -1,0 +1,33 @@
+id: perpres_77_2007
+akn: /akn/id/act/perpres/2007/77
+type: perpres
+number: '77'
+year: 2007
+title: Peraturan Presiden Nomor 77 Tahun 2007 tentang Daftar Bidang Usaha Yang Tertutup
+  Dan Bidang Usaha Yang Terbuka Dengan Persyaratan Di Bidang Penanaman Modal
+tentang: DAFTAR BIDANG USAHA YANG TERTUTUP DAN BIDANG USAHA YANG TERBUKA DENGAN PERSYARATAN
+  DI BIDANG PENANAMAN MODAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2007-07-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:af76b50a70b54b301440aed5c2e469bb6ae92389c75e8ef2a4e0cf5dcbbdc9b0
+  source_title: PERPRES_NO_77_TH_2007
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: revoked
+  revoked_by:
+  - sha256:877916a65d2fe268af1b24eb8816d207c566af7014a654bb439fb2aa6724f39f
+  amended_by:
+  - sha256:8db5f837bf608e65ac796af351519a1a2c9bc89de218e0ddee4ab2d0b136522d
+parse_error: 'v13: rebuilt text has 7 pasal, the dataset lists 8'

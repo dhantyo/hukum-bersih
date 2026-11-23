@@ -1,0 +1,42 @@
+id: perpres_77_2010
+akn: /akn/id/act/perpres/2010/77
+type: perpres
+number: '77'
+year: 2010
+title: Peraturan Presiden Nomor 77 Tahun 2010 tentang Tunjangan Kinerja Pegawai Negeri
+  Di Lingkungan Badan Pengawasan Keuangan Dan Pembangunan
+tentang: TUNJANGAN KINERJA PEGAWAI NEGERI DI LINGKUNGAN BADAN PENGAWASAN KEUANGAN
+  DAN PEMBANGUNAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2010-12-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_77_2010_2010-12-15
+  kind: asli
+  source: dataset
+  date: '2010-12-15'
+  date_basis: tanggal_penetapan
+  text: perpres_77_2010_2010-12-15.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ff3ea8297e3d38aa44b43ef37561fd15e5bec852edc6e85befe9f7b055116d18
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ff3ea8297e3d38aa44b43ef37561fd15e5bec852edc6e85befe9f7b055116d18
+  source_title: PP_77_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: revoked
+  revoked_by:
+  - sha256:b5749dab58ad3d040e01d2cf7ce9106e9ff11f39704fb23fedf8cdb454192318

@@ -1,0 +1,39 @@
+id: perpres_126_2014
+akn: /akn/id/act/perpres/2014/126
+type: perpres
+number: '126'
+year: 2014
+title: Peraturan Presiden Nomor 126 Tahun 2014 tentang Pendirian Institut Seni Budaya
+  Indonesia Aceh
+tentang: PENDIRIAN INSTITUT SENI BUDAYA INDONESIA ACEH
+short_name: null
+status: null
+tanggal_penetapan: '2014-10-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_126_2014_2014-10-06
+  kind: asli
+  source: dataset
+  date: '2014-10-06'
+  date_basis: tanggal_penetapan
+  text: perpres_126_2014_2014-10-06.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0e57354a621533397ec39dde0647c176c139dce9edf389b0b225c6929c74f512
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0e57354a621533397ec39dde0647c176c139dce9edf389b0b225c6929c74f512
+  source_title: Perpres_nomor_126_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

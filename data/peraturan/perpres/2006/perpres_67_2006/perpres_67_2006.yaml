@@ -1,0 +1,41 @@
+id: perpres_67_2006
+akn: /akn/id/act/perpres/2006/67
+type: perpres
+number: '67'
+year: 2006
+title: Peraturan Presiden Nomor 67 Tahun 2006 tentang Lembaga Ketahanan Nasional Republik
+  Indonesia
+tentang: LEMBAGA KETAHANAN NASIONAL REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-06-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_67_2006_2006-06-13
+  kind: asli
+  source: dataset
+  date: '2006-06-13'
+  date_basis: tanggal_penetapan
+  text: perpres_67_2006_2006-06-13.txt
+  pasal_count: 52
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6e9eb8a44fb11d2cb8b5156b85f14e76fb76fdfb11abc8af8e7443450033c75a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6e9eb8a44fb11d2cb8b5156b85f14e76fb76fdfb11abc8af8e7443450033c75a
+  source_title: PERPRES_No.67_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 57
+  status: revoked
+  revoked_by:
+  - sha256:61ffe1b2e26a4fb2e232aa5a315a7bb2dd2675d27d1fc5690dea598868c3b83b

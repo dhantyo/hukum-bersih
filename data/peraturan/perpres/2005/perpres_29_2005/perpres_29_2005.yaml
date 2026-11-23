@@ -1,0 +1,30 @@
+id: perpres_29_2005
+akn: /akn/id/act/perpres/2005/29
+type: perpres
+number: '29'
+year: 2005
+title: Peraturan Presiden Nomor 29 Tahun 2005 tentang Rincian Anggaran Belanja Pemerintah
+  Pusat Tahun Anggaran 2005
+tentang: RINCIAN ANGGARAN BELANJA PEMERINTAH PUSAT TAHUN ANGGARAN 2005
+short_name: null
+status: diubah
+tanggal_penetapan: '2005-03-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7bb9257bb732a45e990fc9bf8292d55b055c1201c6913e9c168282e677983414
+  source_title: PERPRES_NO_29_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: amended
+  amended_by:
+  - sha256:3f25fab9d2a9afc702b5c29f4572ad3bb44d0f93fcdda70fd6441cfb5ad193aa
+parse_error: 'v13: rebuilt text has 3 pasal, the dataset lists 4'

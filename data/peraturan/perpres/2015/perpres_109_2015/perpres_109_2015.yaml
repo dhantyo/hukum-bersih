@@ -1,0 +1,40 @@
+id: perpres_109_2015
+akn: /akn/id/act/perpres/2015/109
+type: perpres
+number: '109'
+year: 2015
+title: Peraturan Presiden Nomor 109 Tahun 2015 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Kementerian Koordinator Bidang Pembangunan Manusia Dan Kebudayaan
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN KEMENTERIAN KOORDINATOR BIDANG PEMBANGUNAN
+  MANUSIA DAN KEBUDAYAAN
+short_name: null
+status: null
+tanggal_penetapan: '2015-10-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_109_2015_2015-10-09
+  kind: asli
+  source: dataset
+  date: '2015-10-09'
+  date_basis: tanggal_penetapan
+  text: perpres_109_2015_2015-10-09.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:da9ad00863d6553274774936cb20b2d5981611cbe52f7c8cd8fe6e4e2f00ae30
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:da9ad00863d6553274774936cb20b2d5981611cbe52f7c8cd8fe6e4e2f00ae30
+  source_title: Perpres_Nomor_109_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: none_known

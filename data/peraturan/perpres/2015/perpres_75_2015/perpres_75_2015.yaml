@@ -1,0 +1,41 @@
+id: perpres_75_2015
+akn: /akn/id/act/perpres/2015/75
+type: perpres
+number: '75'
+year: 2015
+title: Peraturan Presiden Nomor 75 Tahun 2015 tentang Rencana Aksi Nasional Hak Asasi
+  Manusia Tahun 2015-2019
+tentang: RENCANA AKSI NASIONAL HAK ASASI MANUSIA TAHUN 2015-2019
+short_name: null
+status: diubah
+tanggal_penetapan: '2015-06-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_75_2015_2015-06-22
+  kind: asli
+  source: dataset
+  date: '2015-06-22'
+  date_basis: tanggal_penetapan
+  text: perpres_75_2015_2015-06-22.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bd62475a2c0a0f13d92197c6bfb696a0a4c46ea1576982adb1edd013025ce700
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bd62475a2c0a0f13d92197c6bfb696a0a4c46ea1576982adb1edd013025ce700
+  source_title: Perpres_Nomor_75_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: amended
+  amended_by:
+  - sha256:131cb18084b400541ea05055ef2d66064b60368c44b9ba680840ff8d5d2b878a

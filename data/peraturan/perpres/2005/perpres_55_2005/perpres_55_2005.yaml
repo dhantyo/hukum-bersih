@@ -1,0 +1,43 @@
+id: perpres_55_2005
+akn: /akn/id/act/perpres/2005/55
+type: perpres
+number: '55'
+year: 2005
+title: Peraturan Presiden Nomor 55 Tahun 2005 tentang Harga Jual Eceran Bahan Bakar
+  Minyak Dalam Negeri
+tentang: HARGA JUAL ECERAN BAHAN BAKAR MINYAK DALAM NEGERI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2005-10-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_55_2005_2005-10-01
+  kind: asli
+  source: dataset
+  date: '2005-10-01'
+  date_basis: tanggal_penetapan
+  text: perpres_55_2005_2005-10-01.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:031f42a97b8b5063867d9f49f63e6ad638e0d270e0c38de33ca182331a6bfac4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:031f42a97b8b5063867d9f49f63e6ad638e0d270e0c38de33ca182331a6bfac4
+  source_title: PERPRES_NO_55_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: revoked
+  revoked_by:
+  - sha256:8f1a0552d1bf6e8c3c63ea8e796cf1af68e2f20cf0de41d8ee6c83578daa0364
+  amended_by:
+  - sha256:c62a8985711ebff3ecfd52f37c50a92b5750840a7b29117ba9a4bdc2c2799b5f

@@ -1,0 +1,39 @@
+id: perpres_114_2016
+akn: /akn/id/act/perpres/2016/114
+type: perpres
+number: '114'
+year: 2016
+title: Peraturan Presiden Nomor 114 Tahun 2016 tentang Tunjangan Jabatan Fungsional
+  Perekam Medis
+tentang: TUNJANGAN JABATAN FUNGSIONAL PEREKAM MEDIS
+short_name: null
+status: null
+tanggal_penetapan: '2016-12-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_114_2016_2016-12-30
+  kind: asli
+  source: dataset
+  date: '2016-12-30'
+  date_basis: tanggal_penetapan
+  text: perpres_114_2016_2016-12-30.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d634fc901f4c2026b30b89b4f244d1025875f84a7d31a81b46c59acfc8e37efb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d634fc901f4c2026b30b89b4f244d1025875f84a7d31a81b46c59acfc8e37efb
+  source_title: Perpres_Nomor_114_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

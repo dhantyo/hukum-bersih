@@ -1,0 +1,41 @@
+id: perpres_3_2011
+akn: /akn/id/act/perpres/2011/3
+type: perpres
+number: '3'
+year: 2011
+title: Peraturan Presiden Nomor 3 Tahun 2011 tentang Staf Khusus Presiden Dan Staf
+  Khusus Wakil Presiden
+tentang: STAF KHUSUS PRESIDEN DAN STAF KHUSUS WAKIL PRESIDEN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2011-01-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_3_2011_2011-01-05
+  kind: asli
+  source: dataset
+  date: '2011-01-05'
+  date_basis: tanggal_penetapan
+  text: perpres_3_2011_2011-01-05.txt
+  pasal_count: 36
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c7f6badc27a4fd0caaaa7469079a7f77ca1980c7832d032d9e99d7732551adc7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c7f6badc27a4fd0caaaa7469079a7f77ca1980c7832d032d9e99d7732551adc7
+  source_title: Perpres_3_Tahun_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 39
+  status: revoked
+  revoked_by:
+  - sha256:8d5951d6b204d0f0f39d0df8e2b634950844946d6df43e6d27faee6036592d48

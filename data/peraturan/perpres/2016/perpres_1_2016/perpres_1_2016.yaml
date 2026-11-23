@@ -1,0 +1,38 @@
+id: perpres_1_2016
+akn: /akn/id/act/perpres/2016/1
+type: perpres
+number: '1'
+year: 2016
+title: Peraturan Presiden Nomor 1 Tahun 2016 tentang Badan Restorasi Gambut
+tentang: BADAN RESTORASI GAMBUT
+short_name: null
+status: null
+tanggal_penetapan: '2016-01-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_1_2016_2016-01-06
+  kind: asli
+  source: dataset
+  date: '2016-01-06'
+  date_basis: tanggal_penetapan
+  text: perpres_1_2016_2016-01-06.txt
+  pasal_count: 31
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bcab2d14cc44287b63a0cc022fce9101468637ba2acbe2318a81edcbd041777a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bcab2d14cc44287b63a0cc022fce9101468637ba2acbe2318a81edcbd041777a
+  source_title: Perpres_Nomor_1_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 36
+  status: none_known

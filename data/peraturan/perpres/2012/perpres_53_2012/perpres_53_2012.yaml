@@ -1,0 +1,44 @@
+id: perpres_53_2012
+akn: /akn/id/act/perpres/2012/53
+type: perpres
+number: '53'
+year: 2012
+title: Peraturan Presiden Nomor 53 Tahun 2012 tentang Kewajiban Pelayanan Publik Dan
+  Subsidi Angkutan Perintis Bidang Perkeretaapian, Biaya Penggunaan Prasarana Perkeretaapian
+  Milik Negara, Serta Perawatan Dan Pengoperasian Prasarana Perkeretaapian Milik Negara
+tentang: KEWAJIBAN PELAYANAN PUBLIK DAN SUBSIDI ANGKUTAN PERINTIS BIDANG PERKERETAAPIAN,
+  BIAYA PENGGUNAAN PRASARANA PERKERETAAPIAN MILIK NEGARA, SERTA PERAWATAN DAN PENGOPERASIAN
+  PRASARANA PERKERETAAPIAN MILIK NEGARA
+short_name: null
+status: diubah
+tanggal_penetapan: '2012-05-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_53_2012_2012-05-14
+  kind: asli
+  source: dataset
+  date: '2012-05-14'
+  date_basis: tanggal_penetapan
+  text: perpres_53_2012_2012-05-14.txt
+  pasal_count: 30
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:74907028daa15d7158e3c41bd8e1f8b4fa3debe781952b40bddf04f89c5c79ba
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:74907028daa15d7158e3c41bd8e1f8b4fa3debe781952b40bddf04f89c5c79ba
+  source_title: Peraturan_Presiden_No_53_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 37
+  status: amended
+  amended_by:
+  - sha256:93a0899b4063901e05ee691936b831b3c4521fa7d574fdba49306e13f1e18ae9

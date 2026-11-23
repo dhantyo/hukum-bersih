@@ -1,0 +1,40 @@
+id: perpres_5_2008
+akn: /akn/id/act/perpres/2008/5
+type: perpres
+number: '5'
+year: 2008
+title: Peraturan Presiden Nomor 5 Tahun 2008 tentang Honorarium Bagi Ketua, Wakil
+  Ketua, Sekretaris Dan Anggota Komisi Kepolisian Nasional
+tentang: HONORARIUM BAGI KETUA, WAKIL KETUA, SEKRETARIS DAN ANGGOTA KOMISI KEPOLISIAN
+  NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2008-01-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_5_2008_2008-01-26
+  kind: asli
+  source: dataset
+  date: '2008-01-26'
+  date_basis: tanggal_penetapan
+  text: perpres_5_2008_2008-01-26.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fad56cece773de7f5d0460ab078761690c438dde376928902359906ff042deb3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fad56cece773de7f5d0460ab078761690c438dde376928902359906ff042deb3
+  source_title: PERPRES_NO_5_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

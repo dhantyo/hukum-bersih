@@ -1,0 +1,30 @@
+id: perpres_77_2005
+akn: /akn/id/act/perpres/2005/77
+type: perpres
+number: '77'
+year: 2005
+title: Peraturan Presiden Nomor 77 Tahun 2005 tentang Penetapan Pupuk Bersubsidi Sebagai
+  Barang Dalam Pengawasan
+tentang: PENETAPAN PUPUK BERSUBSIDI SEBAGAI BARANG DALAM PENGAWASAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2005-12-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:dd18facd9da080b612be977c4c7f23fa32e8740c3f6ad8ac46bfef358386db9b
+  source_title: PERPRES_NO_77_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: amended
+  amended_by:
+  - sha256:647180d1ad2f4ace8698843325dbf7fa4de5c3e207386b91043aaecc0d9b34e3
+parse_error: 'v13: rebuilt text has 4 pasal, the dataset lists 5'

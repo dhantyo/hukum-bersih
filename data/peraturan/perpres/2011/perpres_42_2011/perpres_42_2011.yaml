@@ -1,0 +1,45 @@
+id: perpres_42_2011
+akn: /akn/id/act/perpres/2011/42
+type: perpres
+number: '42'
+year: 2011
+title: Peraturan Presiden Nomor 42 Tahun 2011 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Republik Korea Tentang Kerja Sama Penggunaan
+  Tenaga Nuklir Untuk Maksud-Maksud Damai ( Agreement Between The Government Of The
+  Republic Of Indonesia And The Government Of The Republic Of Korea On Cooperation
+  In The Peaceful Uses Of Nuclear Energy )
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  REPUBLIK KOREA TENTANG KERJA SAMA PENGGUNAAN TENAGA NUKLIR UNTUK MAKSUD-MAKSUD DAMAI
+  ( AGREEMENT BETWEEN THE GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT
+  OF THE REPUBLIC OF KOREA ON COOPERATION IN THE PEACEFUL USES OF NUCLEAR ENERGY )
+short_name: null
+status: null
+tanggal_penetapan: '2011-07-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_42_2011_2011-07-14
+  kind: asli
+  source: dataset
+  date: '2011-07-14'
+  date_basis: tanggal_penetapan
+  text: perpres_42_2011_2011-07-14.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4d2caa5361ffff6d8c9ec7b9753dad724b38e17be6ce57e8096ac4a3a7aa6397
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4d2caa5361ffff6d8c9ec7b9753dad724b38e17be6ce57e8096ac4a3a7aa6397
+  source_title: Perpres_no_42_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

@@ -1,0 +1,40 @@
+id: perpres_51_2012
+akn: /akn/id/act/perpres/2012/51
+type: perpres
+number: '51'
+year: 2012
+title: Peraturan Presiden Nomor 51 Tahun 2012 tentang Perubahan Sekolah Tinggi Agama
+  Islam Negeri Bengkulu Menjadi Institut Agama Islam Negeri Bengkulu
+tentang: PERUBAHAN SEKOLAH TINGGI AGAMA ISLAM NEGERI BENGKULU MENJADI INSTITUT AGAMA
+  ISLAM NEGERI BENGKULU
+short_name: null
+status: null
+tanggal_penetapan: '2012-04-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_51_2012_2012-04-25
+  kind: asli
+  source: dataset
+  date: '2012-04-25'
+  date_basis: tanggal_penetapan
+  text: perpres_51_2012_2012-04-25.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b1f823017e7117401f217e8c646fec65d33875d31e65ab2ac17a0548b3c70693
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b1f823017e7117401f217e8c646fec65d33875d31e65ab2ac17a0548b3c70693
+  source_title: Peraturan_Presiden_No_51_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

@@ -1,0 +1,44 @@
+id: perpres_21_1963
+akn: /akn/id/act/perpres/1963/21
+type: perpres
+number: '21'
+year: 1963
+title: Peraturan Presiden Nomor 21 Tahun 1963 tentang Peraturan Pembayaran Gaji Pegawai
+  Negeri Sipil, Anggota Kepolisian, Anggota Angkatan Perang Republik Indonesia Dan
+  Penjabat-Penjabat Negeri Lainnya Di Daerah Kepulauan Riau Yang Meliputi Kewedanaan
+  Tanjung Pinang, Lingga Karimun Dan Pulau Tujuh
+tentang: PERATURAN PEMBAYARAN GAJI PEGAWAI NEGERI SIPIL, ANGGOTA KEPOLISIAN, ANGGOTA
+  ANGKATAN PERANG REPUBLIK INDONESIA DAN PENJABAT-PENJABAT NEGERI LAINNYA DI DAERAH
+  KEPULAUAN RIAU YANG MELIPUTI KEWEDANAAN TANJUNG PINANG, LINGGA KARIMUN DAN PULAU
+  TUJUH
+short_name: null
+status: null
+tanggal_penetapan: '1963-10-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_21_1963_1963-10-15
+  kind: asli
+  source: dataset
+  date: '1963-10-15'
+  date_basis: tanggal_penetapan
+  text: perpres_21_1963_1963-10-15.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bfb69bbcfce852ba5eb60080b098e5c6ffa84f4ca8884ae5cf07fe5003298665
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bfb69bbcfce852ba5eb60080b098e5c6ffa84f4ca8884ae5cf07fe5003298665
+  source_title: Perpres_No.21_Tahun_1963
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: none_known

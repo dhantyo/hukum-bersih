@@ -1,0 +1,39 @@
+id: perpres_52_2016
+akn: /akn/id/act/perpres/2016/52
+type: perpres
+number: '52'
+year: 2016
+title: Peraturan Presiden Nomor 52 Tahun 2016 tentang Hak Keuangan Asisten Komisi
+  Aparatur Sipil Negara
+tentang: HAK KEUANGAN ASISTEN KOMISI APARATUR SIPIL NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '2016-06-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_52_2016_2016-06-14
+  kind: asli
+  source: dataset
+  date: '2016-06-14'
+  date_basis: tanggal_penetapan
+  text: perpres_52_2016_2016-06-14.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9a1ece6c5b8a90c411f2e271f86ffdd5902f2902087f4330c0d7722cad558bf9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9a1ece6c5b8a90c411f2e271f86ffdd5902f2902087f4330c0d7722cad558bf9
+  source_title: Perpres_Nomor_52_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

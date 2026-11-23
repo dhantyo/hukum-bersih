@@ -1,0 +1,39 @@
+id: perpres_167_2014
+akn: /akn/id/act/perpres/2014/167
+type: perpres
+number: '167'
+year: 2014
+title: Peraturan Presiden Nomor 167 Tahun 2014 tentang Tata Cara Pelantikan Gubernur,
+  Bupati, Dan Walikota
+tentang: TATA CARA PELANTIKAN GUBERNUR, BUPATI, DAN WALIKOTA
+short_name: null
+status: null
+tanggal_penetapan: '2014-11-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_167_2014_2014-11-18
+  kind: asli
+  source: dataset
+  date: '2014-11-18'
+  date_basis: tanggal_penetapan
+  text: perpres_167_2014_2014-11-18.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:59a40075893fa6d0b225834a87e47be03415887c55b1d4222fe516034587b18f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:59a40075893fa6d0b225834a87e47be03415887c55b1d4222fe516034587b18f
+  source_title: PERPRES_Nomor_167_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 24
+  status: none_known

@@ -1,0 +1,39 @@
+id: perpres_152_2014
+akn: /akn/id/act/perpres/2014/152
+type: perpres
+number: '152'
+year: 2014
+title: Peraturan Presiden Nomor 152 Tahun 2014 tentang Pendirianinstitutteknologlbacharuddin
+  Jusuf Habibie . Denganrarmattuhanyangmaraesa
+tentang: PENDIRIANINSTITUTTEKNOLOGlBACHARUDDIN JUSUF HABIBIE . DENGANRARMATTUHANYANGMARAESA
+short_name: null
+status: null
+tanggal_penetapan: '2014-10-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_152_2014_2014-10-17
+  kind: asli
+  source: dataset
+  date: '2014-10-17'
+  date_basis: tanggal_penetapan
+  text: perpres_152_2014_2014-10-17.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:733f3a7d63c54cd0f1c46100f984c9bb4b7c8bf86f665beac8b4a8dcae554a0d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:733f3a7d63c54cd0f1c46100f984c9bb4b7c8bf86f665beac8b4a8dcae554a0d
+  source_title: Perpres_Nomor_152_tahun_2014
+  regulation_type: PERATURANPRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

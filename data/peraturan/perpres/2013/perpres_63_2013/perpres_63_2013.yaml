@@ -1,0 +1,42 @@
+id: perpres_63_2013
+akn: /akn/id/act/perpres/2013/63
+type: perpres
+number: '63'
+year: 2013
+title: Peraturan Presiden Nomor 63 Tahun 2013 tentang Badan Pertanahan Nasional Republik
+  Indonesia
+tentang: BADAN PERTANAHAN NASIONAL REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2013-09-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_63_2013_2013-09-30
+  kind: asli
+  source: dataset
+  date: '2013-09-30'
+  date_basis: tanggal_penetapan
+  text: perpres_63_2013_2013-09-30.txt
+  pasal_count: 58
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5aa8e5a06f1e326e08b47292ecadc974db142cbec2273ca96523186e66425ab0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5aa8e5a06f1e326e08b47292ecadc974db142cbec2273ca96523186e66425ab0
+  source_title: Perpres_63_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 71
+  status: revoked
+  revoked_by:
+  - sha256:90b2e83697ec6ae39f29fd6fcd2dd975acd1679600509f1ca134415044f1caf8
+  - sha256:bae81856250b93bc6dfee440e2b4e5aee57d09c10e494ebbe203c193fa09a6ef

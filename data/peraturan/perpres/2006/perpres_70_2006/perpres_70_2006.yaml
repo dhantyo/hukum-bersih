@@ -1,0 +1,39 @@
+id: perpres_70_2006
+akn: /akn/id/act/perpres/2006/70
+type: perpres
+number: '70'
+year: 2006
+title: Peraturan Presiden Nomor 70 Tahun 2006 tentang Biaya Penyelenggaraan Ibadah
+  Haji Tahun 1427 H/2006 M
+tentang: BIAYA PENYELENGGARAAN IBADAH HAJI TAHUN 1427 H/2006 M
+short_name: null
+status: null
+tanggal_penetapan: '2006-07-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_70_2006_2006-07-01
+  kind: asli
+  source: dataset
+  date: '2006-07-01'
+  date_basis: tanggal_penetapan
+  text: perpres_70_2006_2006-07-01.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1fa28d029b32760e0b460ec1032e7864a074b7c83ae8ed8166b6fa793b6f88b4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1fa28d029b32760e0b460ec1032e7864a074b7c83ae8ed8166b6fa793b6f88b4
+  source_title: PERPRES_No.70_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

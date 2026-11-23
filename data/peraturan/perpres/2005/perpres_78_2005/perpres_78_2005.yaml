@@ -1,0 +1,41 @@
+id: perpres_78_2005
+akn: /akn/id/act/perpres/2005/78
+type: perpres
+number: '78'
+year: 2005
+title: Peraturan Presiden Nomor 78 Tahun 2005 tentang Pengelolaan Pulau-Pulau Kecil
+  Terluar
+tentang: PENGELOLAAN PULAU-PULAU KECIL TERLUAR
+short_name: null
+status: null
+tanggal_penetapan: '2005-12-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_78_2005_2005-12-29
+  kind: asli
+  source: dataset
+  date: '2005-12-29'
+  date_basis: tanggal_penetapan
+  text: perpres_78_2005_2005-12-29.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c25453d01af44df26c95ef1bbc0f52405baa74b17a3515f3de9230f70d831db7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c25453d01af44df26c95ef1bbc0f52405baa74b17a3515f3de9230f70d831db7
+  source_title: PERPRES_NO_78_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 40
+  status: partially_revoked
+  revoked_by:
+  - sha256:d7ab96aa623e1df8df9c4875cabd9b917064047da91780e8a4b027af2807c01a

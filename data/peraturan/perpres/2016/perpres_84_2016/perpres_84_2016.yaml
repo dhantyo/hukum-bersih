@@ -1,0 +1,39 @@
+id: perpres_84_2016
+akn: /akn/id/act/perpres/2016/84
+type: perpres
+number: '84'
+year: 2016
+title: Peraturan Presiden Nomor 84 Tahun 2016 tentang Honorarium Bagi Ketua, Wakil
+  Ketua, Dan Anggota Komisi Pengawas Ha.]I Indonesia
+tentang: HONORARIUM BAGI KETUA, WAKIL KETUA, DAN ANGGOTA KOMISI PENGAWAS HA.]I INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2016-10-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_84_2016_2016-10-04
+  kind: asli
+  source: dataset
+  date: '2016-10-04'
+  date_basis: tanggal_penetapan
+  text: perpres_84_2016_2016-10-04.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8d9f125dda36dedde8a5e9b7711a2af6f2581c445b5176bd03944c755bf49b60
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8d9f125dda36dedde8a5e9b7711a2af6f2581c445b5176bd03944c755bf49b60
+  source_title: Perpres_Nomor_84_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

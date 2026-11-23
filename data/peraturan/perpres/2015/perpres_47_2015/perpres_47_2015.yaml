@@ -1,0 +1,39 @@
+id: perpres_47_2015
+akn: /akn/id/act/perpres/2015/47
+type: perpres
+number: '47'
+year: 2015
+title: Peraturan Presiden Nomor 47 Tahun 2015 tentang Kementerian Pendayagunaan Aparatur
+  Negara Dan Reformasi Birokrasi
+tentang: KEMENTERIAN PENDAYAGUNAAN APARATUR NEGARA DAN REFORMASI BIROKRASI
+short_name: null
+status: null
+tanggal_penetapan: '2015-04-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_47_2015_2015-04-29
+  kind: asli
+  source: dataset
+  date: '2015-04-29'
+  date_basis: tanggal_penetapan
+  text: perpres_47_2015_2015-04-29.txt
+  pasal_count: 40
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:df160504fcf0c3d78c47b9564ccb7fa8ce878f9540e2a5656453fd2f9858950d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:df160504fcf0c3d78c47b9564ccb7fa8ce878f9540e2a5656453fd2f9858950d
+  source_title: Perpres_Nomor_47_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 52
+  status: none_known

@@ -1,0 +1,41 @@
+id: perpres_32_1964
+akn: /akn/id/act/perpres/1964/32
+type: perpres
+number: '32'
+year: 1964
+title: Peraturan Presiden Nomor 32 Tahun 1964 tentang Peraturan Tata Tertib Dpr-Gr
+  Presiden Republik Indonesia
+tentang: PERATURAN TATA TERTIB DPR-GR Presiden Republik Indonesia
+short_name: null
+status: dicabut
+tanggal_penetapan: '1964-09-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_32_1964_1964-09-15
+  kind: asli
+  source: dataset
+  date: '1964-09-15'
+  date_basis: tanggal_penetapan
+  text: perpres_32_1964_1964-09-15.txt
+  pasal_count: 103
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2da23b38f83180b2d9ac1d0e4f5916121ab674d444a1f64c6198354ee2226fad
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2da23b38f83180b2d9ac1d0e4f5916121ab674d444a1f64c6198354ee2226fad
+  source_title: Perpres_No.32_Tahun_1964
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 120
+  status: revoked
+  revoked_by:
+  - sha256:608437a699b674e875c719f4ba04fc79ffd9a07481de284e1c452fa3445ca0e3

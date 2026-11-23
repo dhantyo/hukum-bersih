@@ -1,0 +1,45 @@
+id: perpres_8_2013
+akn: /akn/id/act/perpres/2013/8
+type: perpres
+number: '8'
+year: 2013
+title: Peraturan Presiden Nomor 8 Tahun 2013 tentang Pengesahan Perjanjian Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Republik Ceko Tentang Kegiatan Kerja
+  Sama Di Bidang Pertahanan ( Agreement Between The Government Of The Republic Of
+  Indonesia And The Government Of The Czech Republic On Cooperation Activities In
+  The Field Of Defence )
+tentang: PENGESAHAN PERJANJIAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  REPUBLIK CEKO TENTANG KEGIATAN KERJA SAMA DI BIDANG PERTAHANAN ( AGREEMENT BETWEEN
+  THE GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT OF THE CZECH REPUBLIC
+  ON COOPERATION ACTIVITIES IN THE FIELD OF DEFENCE )
+short_name: null
+status: null
+tanggal_penetapan: '2013-01-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_8_2013_2013-01-10
+  kind: asli
+  source: dataset
+  date: '2013-01-10'
+  date_basis: tanggal_penetapan
+  text: perpres_8_2013_2013-01-10.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9bf1645edb74c411b7631783af48f9fba1047ca697550471793b1794b99b574f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9bf1645edb74c411b7631783af48f9fba1047ca697550471793b1794b99b574f
+  source_title: PERPRES_08_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

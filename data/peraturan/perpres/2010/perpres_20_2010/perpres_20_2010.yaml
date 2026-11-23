@@ -1,0 +1,44 @@
+id: perpres_20_2010
+akn: /akn/id/act/perpres/2010/20
+type: perpres
+number: '20'
+year: 2010
+title: Peraturan Presiden Nomor 20 Tahun 2010 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Negara Kuwait Mengenai Kerja Sama Ekonomi
+  Dan Teknik ( Agreement Between The Government Of The Republic Of Indonesia And The
+  Government Of The State Of Kuwait On Economic And Technical Co-Operation )
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  NEGARA KUWAIT MENGENAI KERJA SAMA EKONOMI DAN TEKNIK ( AGREEMENT BETWEEN THE GOVERNMENT
+  OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT OF THE STATE OF KUWAIT ON ECONOMIC
+  AND TECHNICAL CO-OPERATION )
+short_name: null
+status: null
+tanggal_penetapan: '2010-03-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_20_2010_2010-03-18
+  kind: asli
+  source: dataset
+  date: '2010-03-18'
+  date_basis: tanggal_penetapan
+  text: perpres_20_2010_2010-03-18.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1ddf9064fa64791e2f214c118d7d106dfe8b9c231196ec62653c921cb0e071f0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1ddf9064fa64791e2f214c118d7d106dfe8b9c231196ec62653c921cb0e071f0
+  source_title: perpres_No.20_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

@@ -1,0 +1,40 @@
+id: perpres_83_2012
+akn: /akn/id/act/perpres/2012/83
+type: perpres
+number: '83'
+year: 2012
+title: Peraturan Presiden Nomor 83 Tahun 2012 tentang Organisasi Dan Tata Kerja Instansi
+  Vertikal Kementerian Hukum Dan Hak Asasi Manusia
+tentang: ORGANISASI DAN TATA KERJA INSTANSI VERTIKAL KEMENTERIAN HUKUM DAN HAK ASASI
+  MANUSIA
+short_name: null
+status: null
+tanggal_penetapan: '2012-10-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_83_2012_2012-10-17
+  kind: asli
+  source: dataset
+  date: '2012-10-17'
+  date_basis: tanggal_penetapan
+  text: perpres_83_2012_2012-10-17.txt
+  pasal_count: 17
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a07ac85cd359aa9c47a0f8abe18d28288fdd80ca319ae317b8278a2a8680d519
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a07ac85cd359aa9c47a0f8abe18d28288fdd80ca319ae317b8278a2a8680d519
+  source_title: Peraturan_Presiden_No_83_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 24
+  status: none_known

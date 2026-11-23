@@ -1,0 +1,41 @@
+id: perpres_120_2012
+akn: /akn/id/act/perpres/2012/120
+type: perpres
+number: '120'
+year: 2012
+title: Peraturan Presiden Nomor 120 Tahun 2012 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Lembaga Ilmu Pengetahuan Indonesia
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN LEMBAGA ILMU PENGETAHUAN INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2012-11-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_120_2012_2012-11-17
+  kind: asli
+  source: dataset
+  date: '2012-11-17'
+  date_basis: tanggal_penetapan
+  text: perpres_120_2012_2012-11-17.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:49b576645f86a2c403763325451b8bf433555f6f7d5e747f0967c29f92ccf0c9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:49b576645f86a2c403763325451b8bf433555f6f7d5e747f0967c29f92ccf0c9
+  source_title: Peraturan_Presiden_No_120_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: revoked
+  revoked_by:
+  - sha256:349a972f236d8893d40a9543fd251e70fe5e6c6fc5c20eb39ac589dd650ee02f

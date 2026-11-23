@@ -1,0 +1,41 @@
+id: perpres_82_2008
+akn: /akn/id/act/perpres/2008/82
+type: perpres
+number: '82'
+year: 2008
+title: Peraturan Presiden Nomor 82 Tahun 2008 tentang Kesekretariatan Lembaga Perlindungan
+  Saksi Dan Korban
+tentang: KESEKRETARIATAN LEMBAGA PERLINDUNGAN SAKSI DAN KORBAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2008-12-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_82_2008_2008-12-30
+  kind: asli
+  source: dataset
+  date: '2008-12-30'
+  date_basis: tanggal_penetapan
+  text: perpres_82_2008_2008-12-30.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0d05175a3a8b30f9634291d67801f062987c14908623a4e34cf66d3bcf886703
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0d05175a3a8b30f9634291d67801f062987c14908623a4e34cf66d3bcf886703
+  source_title: PERPRES_NO_82_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:8f33abd6e5d20c44d982e651a1c537a2948af613ac1d81d6d2111a9a8c153655

@@ -1,0 +1,39 @@
+id: perpres_89_2007
+akn: /akn/id/act/perpres/2007/89
+type: perpres
+number: '89'
+year: 2007
+title: Peraturan Presiden Nomor 89 Tahun 2007 tentang Gerakan Nasional Rehabilitasi
+  Hutan Dan Lahan
+tentang: GERAKAN NASIONAL REHABILITASI HUTAN DAN LAHAN
+short_name: null
+status: null
+tanggal_penetapan: '2007-09-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_89_2007_2007-09-03
+  kind: asli
+  source: dataset
+  date: '2007-09-03'
+  date_basis: tanggal_penetapan
+  text: perpres_89_2007_2007-09-03.txt
+  pasal_count: 18
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f0ce388db90eadced9481cf160a984f096c771fb4d396066c2345223b5627b8a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f0ce388db90eadced9481cf160a984f096c771fb4d396066c2345223b5627b8a
+  source_title: PERPRES_NO_89_TH_2007
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 23
+  status: none_known

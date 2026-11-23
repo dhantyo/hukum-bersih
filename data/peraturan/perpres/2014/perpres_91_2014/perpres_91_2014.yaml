@@ -1,0 +1,45 @@
+id: perpres_91_2014
+akn: /akn/id/act/perpres/2014/91
+type: perpres
+number: '91'
+year: 2014
+title: Peraturan Presiden Nomor 91 Tahun 2014 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Jersey Untuk Pertukaran Informasi Berkenaan
+  Dengan Keperluan Perpajakan ( Agreement Between The Government Of The Republic Of
+  Indonesia And The Government Of Jersey For The Exchange Of Information Relating
+  To Tax Matters )
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  JERSEY UNTUK PERTUKARAN INFORMASI BERKENAAN DENGAN KEPERLUAN PERPAJAKAN ( AGREEMENT
+  BETWEEN THE GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT OF JERSEY
+  FOR THE EXCHANGE OF INFORMATION RELATING TO TAX MATTERS )
+short_name: null
+status: null
+tanggal_penetapan: '2014-09-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_91_2014_2014-09-01
+  kind: asli
+  source: dataset
+  date: '2014-09-01'
+  date_basis: tanggal_penetapan
+  text: perpres_91_2014_2014-09-01.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0ed9a0ad5f302ea7153a3e44001420df386d05b6ca874a1ed64598b7950815e0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0ed9a0ad5f302ea7153a3e44001420df386d05b6ca874a1ed64598b7950815e0
+  source_title: Perpres_Nomor_91_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

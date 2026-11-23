@@ -1,0 +1,43 @@
+id: perpres_47_2009
+akn: /akn/id/act/perpres/2009/47
+type: perpres
+number: '47'
+year: 2009
+title: Peraturan Presiden Nomor 47 Tahun 2009 tentang Pembentukan Dan Organisasi Kementerian
+  Negara
+tentang: PEMBENTUKAN DAN ORGANISASI KEMENTERIAN NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2009-11-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_47_2009_2009-11-03
+  kind: asli
+  source: dataset
+  date: '2009-11-03'
+  date_basis: tanggal_penetapan
+  text: perpres_47_2009_2009-11-03.txt
+  pasal_count: 107
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:64a976f28df6c95760f7705dbac1ee5413ae816b0f14b356faf04f9f74c79afd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:64a976f28df6c95760f7705dbac1ee5413ae816b0f14b356faf04f9f74c79afd
+  source_title: PERPRES_No.47_TH_2009
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 119
+  status: revoked
+  revoked_by:
+  - sha256:8a0bc6c207c9a15294f5cc7cb49871a849fad9eb562f66136ff229037b291ab4
+  amended_by:
+  - sha256:3d2979242494e0b9bcfb34cbc3df5bfe8ef4c9ad59472e60135247d3273aa604

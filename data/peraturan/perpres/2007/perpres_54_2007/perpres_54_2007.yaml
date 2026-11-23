@@ -1,0 +1,37 @@
+id: perpres_54_2007
+akn: /akn/id/act/perpres/2007/54
+type: perpres
+number: '54'
+year: 2007
+title: Peraturan Presiden Nomor 54 Tahun 2007 tentang Tunjangan Jabatan Fungsional
+  Dokter, Dokter Gigi, Apoteker, Asisten Apoteker, Pranata Laboratorium Kesehatan,
+  Epidemiolog Kesehatan, Entomolog Kesehatan, Sanitarian, Administrator Kesehatan,
+  Penyuluh Kesehatan Masyarakat, Perawat Gigi, Nutrisionis, Bidan, Perawat, Radiografer,
+  Perekam Medis, Dan Teknisi Elektromedis
+tentang: TUNJANGAN JABATAN FUNGSIONAL DOKTER, DOKTER GIGI, APOTEKER, ASISTEN APOTEKER,
+  PRANATA LABORATORIUM KESEHATAN, EPIDEMIOLOG KESEHATAN, ENTOMOLOG KESEHATAN, SANITARIAN,
+  ADMINISTRATOR KESEHATAN, PENYULUH KESEHATAN MASYARAKAT, PERAWAT GIGI, NUTRISIONIS,
+  BIDAN, PERAWAT, RADIOGRAFER, PEREKAM MEDIS, DAN TEKNISI ELEKTROMEDIS
+short_name: null
+status: dicabut
+tanggal_penetapan: '2007-06-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ace1c424ede12f59a9cdf16c5fef741de1b33e921a5f96c2fb518a0f52523aac
+  source_title: PERPRES_NO_54_TH_2007
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:2ed56b9db7d15ff2ec1b3be429295009aeae999f4ade06bd0b8cdf017ddfcb1e
+  - sha256:3a2a25421c570e7561f00fc19da254c6e77af160daeb6bbe9200a3c09a1634aa
+parse_error: 'v13: rebuilt text has 7 pasal, the dataset lists 8'

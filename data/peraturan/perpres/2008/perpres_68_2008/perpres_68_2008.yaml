@@ -1,0 +1,45 @@
+id: perpres_68_2008
+akn: /akn/id/act/perpres/2008/68
+type: perpres
+number: '68'
+year: 2008
+title: Peraturan Presiden Nomor 68 Tahun 2008 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Republik Yunani Tentang Kerja Sama
+  Kebudayaan Dan Pendidikan ( Agreement Between The Government Of The Republic Of
+  Indonesia And The Government Of The Hellenic Republic On Cultural And Educational
+  Cooperation )
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  REPUBLIK YUNANI TENTANG KERJA SAMA KEBUDAYAAN DAN PENDIDIKAN ( AGREEMENT BETWEEN
+  THE GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT OF THE HELLENIC REPUBLIC
+  ON CULTURAL AND EDUCATIONAL COOPERATION )
+short_name: null
+status: null
+tanggal_penetapan: '2008-11-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_68_2008_2008-11-06
+  kind: asli
+  source: dataset
+  date: '2008-11-06'
+  date_basis: tanggal_penetapan
+  text: perpres_68_2008_2008-11-06.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:046089494b24e082989835c4b2fe6c675eff4582a59caccf34ca0b2f3e983f6b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:046089494b24e082989835c4b2fe6c675eff4582a59caccf34ca0b2f3e983f6b
+  source_title: PERPRES_NO_68_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

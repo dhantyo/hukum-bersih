@@ -1,0 +1,40 @@
+id: perpres_129_2014
+akn: /akn/id/act/perpres/2014/129
+type: perpres
+number: '129'
+year: 2014
+title: Peraturan Presiden Nomor 129 Tahun 2014 tentang Perubahan Institut Agama Islam
+  Negeri Raden Fatah Palembang Menjadi Universitas Islam Negeri Raden Fatah Palembang
+tentang: PERUBAHAN INSTITUT AGAMA ISLAM NEGERI RADEN FATAH PALEMBANG MENJADI UNIVERSITAS
+  ISLAM NEGERI RADEN FATAH PALEMBANG
+short_name: null
+status: null
+tanggal_penetapan: '2014-10-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_129_2014_2014-10-16
+  kind: asli
+  source: dataset
+  date: '2014-10-16'
+  date_basis: tanggal_penetapan
+  text: perpres_129_2014_2014-10-16.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1fb1d1b41bad0c3777ed4a0ceab81099eabbce3f58a90d9d9f3b042fff84ef70
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1fb1d1b41bad0c3777ed4a0ceab81099eabbce3f58a90d9d9f3b042fff84ef70
+  source_title: Perpres_nomor_129_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

@@ -1,0 +1,41 @@
+id: perpres_48_2012
+akn: /akn/id/act/perpres/2012/48
+type: perpres
+number: '48'
+year: 2012
+title: Peraturan Presiden Nomor 48 Tahun 2012 tentang Organisasi Dan Tata Kerja Pusat
+  Pelaporan Dan Analisis Transaksi Keuangan
+tentang: ORGANISASI DAN TATA KERJA PUSAT PELAPORAN DAN ANALISIS TRANSAKSI KEUANGAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2012-04-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_48_2012_2012-04-24
+  kind: asli
+  source: dataset
+  date: '2012-04-24'
+  date_basis: tanggal_penetapan
+  text: perpres_48_2012_2012-04-24.txt
+  pasal_count: 48
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8edec20b00e50ec7000a3f4cc81006dda2adb0537e967c8cc5d57431462cb797
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8edec20b00e50ec7000a3f4cc81006dda2adb0537e967c8cc5d57431462cb797
+  source_title: Peraturan_Presiden_No_48_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 61
+  status: amended
+  amended_by:
+  - sha256:4d46915415bfd72a4c1983e85ab93442c11380d804ceb1c8c7195d1382d69dc8

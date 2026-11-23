@@ -1,0 +1,39 @@
+id: perpres_14_1964
+akn: /akn/id/act/perpres/1964/14
+type: perpres
+number: '14'
+year: 1964
+title: Peraturan Presiden Nomor 14 Tahun 1964 tentang Lembaga Persahabatan Antar Bangsa
+  Di Indonesia
+tentang: LEMBAGA PERSAHABATAN ANTAR BANGSA DI INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '1964-04-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_14_1964_1964-04-18
+  kind: asli
+  source: dataset
+  date: '1964-04-18'
+  date_basis: tanggal_penetapan
+  text: perpres_14_1964_1964-04-18.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3626ec4aa4c5583049ff586465859a993b6e1dee7c952e9376a763882dfcae56
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3626ec4aa4c5583049ff586465859a993b6e1dee7c952e9376a763882dfcae56
+  source_title: Perpres_No.14_Tahun_1964
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 25
+  status: none_known

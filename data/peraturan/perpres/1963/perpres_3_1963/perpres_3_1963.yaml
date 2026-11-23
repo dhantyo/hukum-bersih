@@ -1,0 +1,44 @@
+id: perpres_3_1963
+akn: /akn/id/act/perpres/1963/3
+type: perpres
+number: '3'
+year: 1963
+title: Peraturan Presiden Nomor 3 Tahun 1963 tentang Peraturan Mengenai Status Dan
+  Kedudukan Keuangan Pegawai Negeri Sipil Dan Anggota Angkatan Kepolisian Di Propinsi
+  Irian Barat Kami, Presiden/Panglima Tertinggi Angkatan Perang Republik Indonesia/Panglima
+  Besar Komando Tertinggi Pembebasan Irian Barat
+tentang: PERATURAN MENGENAI STATUS DAN KEDUDUKAN KEUANGAN PEGAWAI NEGERI SIPIL DAN
+  ANGGOTA ANGKATAN KEPOLISIAN DI PROPINSI IRIAN BARAT KAMI, PRESIDEN/PANGLIMA TERTINGGI
+  ANGKATAN PERANG REPUBLIK INDONESIA/PANGLIMA BESAR KOMANDO TERTINGGI PEMBEBASAN IRIAN
+  BARAT
+short_name: null
+status: null
+tanggal_penetapan: '1963-05-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_3_1963_1963-05-01
+  kind: asli
+  source: dataset
+  date: '1963-05-01'
+  date_basis: tanggal_penetapan
+  text: perpres_3_1963_1963-05-01.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1ab0b6fb0e8b6f5f9acda95c5fb4855089cc0e67ab1aef5e137225cb0cb0655b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1ab0b6fb0e8b6f5f9acda95c5fb4855089cc0e67ab1aef5e137225cb0cb0655b
+  source_title: Perpres_No.3_Tahun_1963
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

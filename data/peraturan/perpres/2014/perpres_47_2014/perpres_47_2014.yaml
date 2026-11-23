@@ -1,0 +1,39 @@
+id: perpres_47_2014
+akn: /akn/id/act/perpres/2014/47
+type: perpres
+number: '47'
+year: 2014
+title: Peraturan Presiden Nomor 47 Tahun 2014 tentang Perubahan Akademi Minyak Dan
+  Gas Bumi Menjadi Sekolah Tinggi Energi Dan Mineral
+tentang: PERUBAHAN AKADEMI MINYAK DAN GAS BUMI MENJADI SEKOLAH TINGGI ENERGI DAN MINERAL
+short_name: null
+status: null
+tanggal_penetapan: '2014-05-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_47_2014_2014-05-26
+  kind: asli
+  source: dataset
+  date: '2014-05-26'
+  date_basis: tanggal_penetapan
+  text: perpres_47_2014_2014-05-26.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3a6588e322a19df5ed187fa6dcf98172664fe22c8bdb0045ccfa63ecd953b5a2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3a6588e322a19df5ed187fa6dcf98172664fe22c8bdb0045ccfa63ecd953b5a2
+  source_title: Perpres_Nomor_47_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

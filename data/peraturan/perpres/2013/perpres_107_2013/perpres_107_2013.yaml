@@ -1,0 +1,41 @@
+id: perpres_107_2013
+akn: /akn/id/act/perpres/2013/107
+type: perpres
+number: '107'
+year: 2013
+title: Peraturan Presiden Nomor 107 Tahun 2013 tentang Pelayanan Kesehatan Tertentu
+  Berkaitan Dengan Kegiatan Operasional Kementerian Pertahanan, Tentara Nasional Indonesia,
+  Dan Kepolisian Negara Republik Indonesia
+tentang: PELAYANAN KESEHATAN TERTENTU BERKAITAN DENGAN KEGIATAN OPERASIONAL KEMENTERIAN
+  PERTAHANAN, TENTARA NASIONAL INDONESIA, DAN KEPOLISIAN NEGARA REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2013-12-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_107_2013_2013-12-27
+  kind: asli
+  source: dataset
+  date: '2013-12-27'
+  date_basis: tanggal_penetapan
+  text: perpres_107_2013_2013-12-27.txt
+  pasal_count: 30
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:91fbfbad997c0ec1d8653ba53288b4840a0a6bc4dcb1bc92a14624adcac77a0c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:91fbfbad997c0ec1d8653ba53288b4840a0a6bc4dcb1bc92a14624adcac77a0c
+  source_title: Perpres_107_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 38
+  status: none_known

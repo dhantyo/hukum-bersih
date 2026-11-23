@@ -1,0 +1,39 @@
+id: perpres_1_1964
+akn: /akn/id/act/perpres/1964/1
+type: perpres
+number: '1'
+year: 1964
+title: Peraturan Presiden Nomor 1 Tahun 1964 tentang Musyawarah Pembantu Perencanaan
+  Pembangunan Nasional
+tentang: MUSYAWARAH PEMBANTU PERENCANAAN PEMBANGUNAN NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '1964-02-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_1_1964_1964-02-03
+  kind: asli
+  source: dataset
+  date: '1964-02-03'
+  date_basis: tanggal_penetapan
+  text: perpres_1_1964_1964-02-03.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c376a8c1cd0dc9d062601cb089d558f2e6031aa7308f1d6f80d5033778f94238
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c376a8c1cd0dc9d062601cb089d558f2e6031aa7308f1d6f80d5033778f94238
+  source_title: Perpres_No.1_Tahun_1964__disempurnakan_
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: none_known

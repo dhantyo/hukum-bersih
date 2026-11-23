@@ -1,0 +1,39 @@
+id: perpres_123_2015
+akn: /akn/id/act/perpres/2015/123
+type: perpres
+number: '123'
+year: 2015
+title: Peraturan Presiden Nomor 123 Tahun 2015 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Lembaga Ilmu Pengetahuan Indonesia
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN LEMBAGA ILMU PENGETAHUAN INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2015-10-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_123_2015_2015-10-24
+  kind: asli
+  source: dataset
+  date: '2015-10-24'
+  date_basis: tanggal_penetapan
+  text: perpres_123_2015_2015-10-24.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:349a972f236d8893d40a9543fd251e70fe5e6c6fc5c20eb39ac589dd650ee02f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:349a972f236d8893d40a9543fd251e70fe5e6c6fc5c20eb39ac589dd650ee02f
+  source_title: Perpres_Nomor_123_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: none_known

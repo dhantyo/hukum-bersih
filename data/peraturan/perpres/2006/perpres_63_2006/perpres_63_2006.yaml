@@ -1,0 +1,41 @@
+id: perpres_63_2006
+akn: /akn/id/act/perpres/2006/63
+type: perpres
+number: '63'
+year: 2006
+title: Peraturan Presiden Nomor 63 Tahun 2006 tentang Tunjangan Jabatan Fungsional
+  Teknisi Penerbangan
+tentang: TUNJANGAN JABATAN FUNGSIONAL TEKNISI PENERBANGAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-05-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_63_2006_2006-05-26
+  kind: asli
+  source: dataset
+  date: '2006-05-26'
+  date_basis: tanggal_penetapan
+  text: perpres_63_2006_2006-05-26.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:54118732a409c4751d69871e5a4906a4757fe0c70f6241533a12bb4954d86f1d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:54118732a409c4751d69871e5a4906a4757fe0c70f6241533a12bb4954d86f1d
+  source_title: PERPRES_No.63_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:a741e3a3cbd7e85e2e90401390b2ae4609f0d821885a25f5154e034eb82dfa6e

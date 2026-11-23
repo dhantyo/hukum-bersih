@@ -1,0 +1,39 @@
+id: perpres_29_2017
+akn: /akn/id/act/perpres/2017/29
+type: perpres
+number: '29'
+year: 2017
+title: Peraturan Presiden Nomor 29 Tahun 2017 tentang Tunjangan Jabatan Fungsional
+  Pemeriksa Desain Industri
+tentang: TUNJANGAN JABATAN FUNGSIONAL PEMERIKSA DESAIN INDUSTRI
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_29_2017_2017
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: perpres_29_2017_2017.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b4c89e78dd180c7df43ddab92ab9f47478c4577b9d736b0ad382deb7847854f4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b4c89e78dd180c7df43ddab92ab9f47478c4577b9d736b0ad382deb7847854f4
+  source_title: Perpres_Nomor_29_Tahun_2017
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

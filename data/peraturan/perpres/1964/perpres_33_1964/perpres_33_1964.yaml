@@ -1,0 +1,40 @@
+id: perpres_33_1964
+akn: /akn/id/act/perpres/1964/33
+type: perpres
+number: '33'
+year: 1964
+title: Peraturan Presiden Nomor 33 Tahun 1964 tentang Penetapan, Penghargaan Dan Pembinaan
+  Terhadap Pahlawan Presiden Republik Indonesia
+tentang: PENETAPAN, PENGHARGAAN DAN PEMBINAAN TERHADAP PAHLAWAN Presiden Republik
+  Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1964-09-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_33_1964_1964-09-19
+  kind: asli
+  source: dataset
+  date: '1964-09-19'
+  date_basis: tanggal_penetapan
+  text: perpres_33_1964_1964-09-19.txt
+  pasal_count: 17
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:87e75834f9d8c1405ea516359c758ba484aede2a6a7cc0265def8d8360344426
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:87e75834f9d8c1405ea516359c758ba484aede2a6a7cc0265def8d8360344426
+  source_title: Perpres_No.33_Tahun_1964
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 31
+  status: none_known

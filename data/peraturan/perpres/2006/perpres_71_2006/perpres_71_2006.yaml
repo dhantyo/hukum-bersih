@@ -1,0 +1,45 @@
+id: perpres_71_2006
+akn: /akn/id/act/perpres/2006/71
+type: perpres
+number: '71'
+year: 2006
+title: Peraturan Presiden Nomor 71 Tahun 2006 tentang Penugasan Kepada Pt Perusahaan
+  Listrik Negara (Persero) Untuk Melakukan Percepatan Pembangunan Pembangkit Tenaga
+  Listrik Yang Menggunakan Batubara
+tentang: PENUGASAN KEPADA PT PERUSAHAAN LISTRIK NEGARA (PERSERO) UNTUK MELAKUKAN PERCEPATAN
+  PEMBANGUNAN PEMBANGKIT TENAGA LISTRIK YANG MENGGUNAKAN BATUBARA
+short_name: null
+status: diubah
+tanggal_penetapan: '2006-07-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_71_2006_2006-07-05
+  kind: asli
+  source: dataset
+  date: '2006-07-05'
+  date_basis: tanggal_penetapan
+  text: perpres_71_2006_2006-07-05.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:545bfdd29670fe74422ebfccac1a800158cb6f6729efe0d7ceb489c742adf2b8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:545bfdd29670fe74422ebfccac1a800158cb6f6729efe0d7ceb489c742adf2b8
+  source_title: PERPRES_No.71_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: amended
+  amended_by:
+  - sha256:68471d52993ba04cfb346ea04480aaf4541c9fe33b9bb7f5711617c2b3144226
+  - sha256:c5579bfb92f714cea589b2d15e26ba817eee25d686236712ca9c0d3cb9990d20
+  - sha256:e3d1b642d3ccfadf0280db2e27827b6f629615890ae0cb7672b738d207428eeb

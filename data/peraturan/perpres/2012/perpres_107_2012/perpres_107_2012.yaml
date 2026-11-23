@@ -1,0 +1,41 @@
+id: perpres_107_2012
+akn: /akn/id/act/perpres/2012/107
+type: perpres
+number: '107'
+year: 2012
+title: Peraturan Presiden Nomor 107 Tahun 2012 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Badan Pengkajian Dan Penerapan Teknologi
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN BADAN PENGKAJIAN DAN PENERAPAN TEKNOLOGI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2012-11-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_107_2012_2012-11-17
+  kind: asli
+  source: dataset
+  date: '2012-11-17'
+  date_basis: tanggal_penetapan
+  text: perpres_107_2012_2012-11-17.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d31fb86a7fbafaa5fadc2775af3884c2df6738f58173f6180e38163efb2ae863
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d31fb86a7fbafaa5fadc2775af3884c2df6738f58173f6180e38163efb2ae863
+  source_title: Peraturan_Presiden_No_107_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: revoked
+  revoked_by:
+  - sha256:355261497217db5028eb7856bb01ad3bc844a3fc13b3f17d4b49a2743a16912a

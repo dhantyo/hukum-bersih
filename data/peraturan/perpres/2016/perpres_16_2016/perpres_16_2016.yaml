@@ -1,0 +1,40 @@
+id: perpres_16_2016
+akn: /akn/id/act/perpres/2016/16
+type: perpres
+number: '16'
+year: 2016
+title: Peraturan Presiden Nomor 16 Tahun 2016 tentang Tata Cara Pelantikan Gubernur
+  Dan Wakil Gubernur,Bupati Dan Wakil Bupati, Serta Walikota Dan Wakil Walikota
+tentang: TATA CARA PELANTIKAN GUBERNUR DAN WAKIL GUBERNUR,BUPATI DAN WAKIL BUPATI,
+  SERTA WALIKOTA DAN WAKIL WALIKOTA
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_16_2016_2016
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: perpres_16_2016_2016.txt
+  pasal_count: 25
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:187b133e641b26b86fbfad239cf5ce727521d7fc7d3a64d5df7d17742e854c5a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:187b133e641b26b86fbfad239cf5ce727521d7fc7d3a64d5df7d17742e854c5a
+  source_title: Perpres_Nomor_16_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 28
+  status: none_known

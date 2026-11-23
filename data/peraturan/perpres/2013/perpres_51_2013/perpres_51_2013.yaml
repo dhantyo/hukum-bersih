@@ -1,0 +1,40 @@
+id: perpres_51_2013
+akn: /akn/id/act/perpres/2013/51
+type: perpres
+number: '51'
+year: 2013
+title: Peraturan Presiden Nomor 51 Tahun 2013 tentang Perubahan Sekolah Tinggi Agama
+  Islam Negeri Palu Menjadi Institut Agama Islam Negeri Palu
+tentang: PERUBAHAN SEKOLAH TINGGI AGAMA ISLAM NEGERI PALU MENJADI INSTITUT AGAMA ISLAM
+  NEGERI PALU
+short_name: null
+status: null
+tanggal_penetapan: '2013-07-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_51_2013_2013-07-30
+  kind: asli
+  source: dataset
+  date: '2013-07-30'
+  date_basis: tanggal_penetapan
+  text: perpres_51_2013_2013-07-30.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:cee96d357e43c5067d2f1ae4cf68700492b097db3bb543c1ac5a76ff6f34ac4d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:cee96d357e43c5067d2f1ae4cf68700492b097db3bb543c1ac5a76ff6f34ac4d
+  source_title: Perpres_51_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

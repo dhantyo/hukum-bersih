@@ -1,0 +1,42 @@
+id: perpres_53_2005
+akn: /akn/id/act/perpres/2005/53
+type: perpres
+number: '53'
+year: 2005
+title: Peraturan Presiden Nomor 53 Tahun 2005 tentang Gaji, Tunjangan, Dan Fasilitas
+  Bagi Kepala Dan Wakil Kepala Pusat Pelaporan Dan Analisis Transaksi Keuangan
+tentang: GAJI, TUNJANGAN, DAN FASILITAS BAGI KEPALA DAN WAKIL KEPALA PUSAT PELAPORAN
+  DAN ANALISIS TRANSAKSI KEUANGAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2005-09-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_53_2005_2005-09-10
+  kind: asli
+  source: dataset
+  date: '2005-09-10'
+  date_basis: tanggal_penetapan
+  text: perpres_53_2005_2005-09-10.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2971a82cd0f1fe5da1ef4527e59b8ad89cf7754d0f94b5bc5a768239b7a9d83c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2971a82cd0f1fe5da1ef4527e59b8ad89cf7754d0f94b5bc5a768239b7a9d83c
+  source_title: PERPRES_NO_53_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:e6359ddf1fcfa9f99061948105badb29a9133fa93e7b6679230b64b9f42e1355

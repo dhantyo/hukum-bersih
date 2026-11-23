@@ -1,0 +1,41 @@
+id: perpres_57_2007
+akn: /akn/id/act/perpres/2007/57
+type: perpres
+number: '57'
+year: 2007
+title: Peraturan Presiden Nomor 57 Tahun 2007 tentang Tunjangan Jabatan Fungsional
+  Pengawas Radiasi
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENGAWAS RADIASI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2007-06-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_57_2007_2007-06-28
+  kind: asli
+  source: dataset
+  date: '2007-06-28'
+  date_basis: tanggal_penetapan
+  text: perpres_57_2007_2007-06-28.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2a79115208c2bbfdcd9b4d8528bfce75d29701576918f8ae4cefe1644e368387
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2a79115208c2bbfdcd9b4d8528bfce75d29701576918f8ae4cefe1644e368387
+  source_title: PERPRES_NO_57_TH_2007
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:91c0a89a7e895192be3a4617eca24d00e92ab1767d9c29dca407a77d1cf1a50e

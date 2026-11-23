@@ -1,0 +1,45 @@
+id: perpres_64_2008
+akn: /akn/id/act/perpres/2008/64
+type: perpres
+number: '64'
+year: 2008
+title: Peraturan Presiden Nomor 64 Tahun 2008 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Federasi Brasil Mengenai Pembebasan
+  Visa Untuk Paspor Diplomatik Dan Dinas (Agreement Between The Government Of The
+  Republic Of Indonesia And The Government Of The Federative Republic Of Brazil On
+  Visa Exemption For Diplomatic And Official Or Service Passports)
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  FEDERASI BRASIL MENGENAI PEMBEBASAN VISA UNTUK PASPOR DIPLOMATIK DAN DINAS (AGREEMENT
+  BETWEEN THE GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT OF THE FEDERATIVE
+  REPUBLIC OF BRAZIL ON VISA EXEMPTION FOR DIPLOMATIC AND OFFICIAL OR SERVICE PASSPORTS)
+short_name: null
+status: null
+tanggal_penetapan: '2008-10-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_64_2008_2008-10-19
+  kind: asli
+  source: dataset
+  date: '2008-10-19'
+  date_basis: tanggal_penetapan
+  text: perpres_64_2008_2008-10-19.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9840f3087db77e42b3358ef23519ce059063e0ff0fbf9bab67c852972ccc55f8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9840f3087db77e42b3358ef23519ce059063e0ff0fbf9bab67c852972ccc55f8
+  source_title: PERPRES_NO_64_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

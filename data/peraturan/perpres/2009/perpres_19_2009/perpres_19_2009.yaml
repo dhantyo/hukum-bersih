@@ -1,0 +1,40 @@
+id: perpres_19_2009
+akn: /akn/id/act/perpres/2009/19
+type: perpres
+number: '19'
+year: 2009
+title: Peraturan Presiden Nomor 19 Tahun 2009 tentang Pengesahan Asean Framework Agreement
+  On Visa Exemption (Persetujuan Kerangka Kerja Asean Mengenai Pembebasan Visa)
+tentang: PENGESAHAN ASEAN FRAMEWORK AGREEMENT ON VISA EXEMPTION (PERSETUJUAN KERANGKA
+  KERJA ASEAN MENGENAI PEMBEBASAN VISA)
+short_name: null
+status: null
+tanggal_penetapan: '2009-05-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_19_2009_2009-05-22
+  kind: asli
+  source: dataset
+  date: '2009-05-22'
+  date_basis: tanggal_penetapan
+  text: perpres_19_2009_2009-05-22.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6acf3489b22d0b9ec780debea6beddb282a9415d3de011c252d88362c5f54f37
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6acf3489b22d0b9ec780debea6beddb282a9415d3de011c252d88362c5f54f37
+  source_title: PERPRES_No.19_TH_2009
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

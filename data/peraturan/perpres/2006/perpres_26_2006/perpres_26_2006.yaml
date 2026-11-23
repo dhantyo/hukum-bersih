@@ -1,0 +1,44 @@
+id: perpres_26_2006
+akn: /akn/id/act/perpres/2006/26
+type: perpres
+number: '26'
+year: 2006
+title: Peraturan Presiden Nomor 26 Tahun 2006 tentang Tunjangan Jabatan Fungsional
+  Penyuluh Pertanian, Pengendali Organisme Pengganggu Tumbuhan, Pengawas Benih Tanaman,
+  Pengawas Bibit Ternak, Medik Veteriner, Paramedik Veteriner, Pengawas Perikanan,
+  Pengendali Hama Dan Penyakit Ikan, Dan Pengawas Benih Ikan
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENYULUH PERTANIAN, PENGENDALI ORGANISME PENGGANGGU
+  TUMBUHAN, PENGAWAS BENIH TANAMAN, PENGAWAS BIBIT TERNAK, MEDIK VETERINER, PARAMEDIK
+  VETERINER, PENGAWAS PERIKANAN, PENGENDALI HAMA DAN PENYAKIT IKAN, DAN PENGAWAS BENIH
+  IKAN
+short_name: null
+status: null
+tanggal_penetapan: '2006-05-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_26_2006_2006-05-26
+  kind: asli
+  source: dataset
+  date: '2006-05-26'
+  date_basis: tanggal_penetapan
+  text: perpres_26_2006_2006-05-26.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1a6f1ca5e1928c3894dcbef42f4b7d694fdd1ac44fcb6d38cdcf2fa511fc4482
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1a6f1ca5e1928c3894dcbef42f4b7d694fdd1ac44fcb6d38cdcf2fa511fc4482
+  source_title: PERPRES_No.26_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

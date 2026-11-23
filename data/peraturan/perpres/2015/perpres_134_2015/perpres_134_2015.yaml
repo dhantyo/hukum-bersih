@@ -1,0 +1,39 @@
+id: perpres_134_2015
+akn: /akn/id/act/perpres/2015/134
+type: perpres
+number: '134'
+year: 2015
+title: Peraturan Presiden Nomor 134 Tahun 2015 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Kementerian Pertanian
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN KEMENTERIAN PERTANIAN
+short_name: null
+status: null
+tanggal_penetapan: '2015-11-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_134_2015_2015-11-06
+  kind: asli
+  source: dataset
+  date: '2015-11-06'
+  date_basis: tanggal_penetapan
+  text: perpres_134_2015_2015-11-06.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:35e1e8b43d64e393d40bf7178fa04fb85b42e388c3aba4e72dfe1401f510e6f4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:35e1e8b43d64e393d40bf7178fa04fb85b42e388c3aba4e72dfe1401f510e6f4
+  source_title: Perpres_Nomor_134_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: none_known

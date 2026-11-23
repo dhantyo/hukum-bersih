@@ -1,0 +1,38 @@
+id: perpres_76_2005
+akn: /akn/id/act/perpres/2005/76
+type: perpres
+number: '76'
+year: 2005
+title: Peraturan Presiden Nomor 76 Tahun 2005 tentang Tangerang Banten
+tentang: TANGERANG BANTEN
+short_name: null
+status: null
+tanggal_penetapan: '2005-12-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_76_2005_2005-12-29
+  kind: asli
+  source: dataset
+  date: '2005-12-29'
+  date_basis: tanggal_penetapan
+  text: perpres_76_2005_2005-12-29.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9dd98fb6053f67d5e43fc2e84deac53966098fc568a52d966f5074ac0b4ce80d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9dd98fb6053f67d5e43fc2e84deac53966098fc568a52d966f5074ac0b4ce80d
+  source_title: PERPRES_NO_76_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

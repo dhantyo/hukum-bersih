@@ -1,0 +1,38 @@
+id: perpres_79_2015
+akn: /akn/id/act/perpres/2015/79
+type: perpres
+number: '79'
+year: 2015
+title: Peraturan Presiden Nomor 79 Tahun 2015
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '2015-07-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_79_2015_2015-07-06
+  kind: asli
+  source: dataset
+  date: '2015-07-06'
+  date_basis: tanggal_penetapan
+  text: perpres_79_2015_2015-07-06.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5304524b2963487bc152fdfee22711f79f2351064407e469e2e7d6ec971fd966
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5304524b2963487bc152fdfee22711f79f2351064407e469e2e7d6ec971fd966
+  source_title: Perpres_Nomor_79_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

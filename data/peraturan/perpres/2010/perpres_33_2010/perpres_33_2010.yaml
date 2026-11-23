@@ -1,0 +1,42 @@
+id: perpres_33_2010
+akn: /akn/id/act/perpres/2010/33
+type: perpres
+number: '33'
+year: 2010
+title: Peraturan Presiden Nomor 33 Tahun 2010 tentang Dewan Nasional Dan Dewan Kawasan
+  Kawasan Ekonomi Khusus
+tentang: DEWAN NASIONAL DAN DEWAN KAWASAN KAWASAN EKONOMI KHUSUS
+short_name: null
+status: diubah
+tanggal_penetapan: '2010-05-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_33_2010_2010-05-21
+  kind: asli
+  source: dataset
+  date: '2010-05-21'
+  date_basis: tanggal_penetapan
+  text: perpres_33_2010_2010-05-21.txt
+  pasal_count: 35
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f551d605a853316907303052db9609cb1cb89dc1bb8908a9220eb420a39ad79f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f551d605a853316907303052db9609cb1cb89dc1bb8908a9220eb420a39ad79f
+  source_title: Perpres_No.33_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 50
+  status: amended
+  amended_by:
+  - sha256:32f6c3b77ec2e36fda260ccc05087e78b6f279d1efcb7b1edb36b624b26974b9
+  - sha256:f301bac2f9174e0594579188cd354a232aff5b36a80dbdce5a70e699c513dfc3

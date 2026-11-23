@@ -1,0 +1,40 @@
+id: perpres_147_2014
+akn: /akn/id/act/perpres/2014/147
+type: perpres
+number: '147'
+year: 2014
+title: Peraturan Presiden Nomor 147 Tahun 2014 tentang Perubahan Sekolah Tinggi Agama
+  Islam Negeri Manado Menjadi Institut Agama Islam Negeri Manado
+tentang: PERUBAHAN SEKOLAH TINGGI AGAMA ISLAM NEGERI MANADO MENJADI INSTITUT AGAMA
+  ISLAM NEGERI MANADO
+short_name: null
+status: null
+tanggal_penetapan: '2014-10-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_147_2014_2014-10-17
+  kind: asli
+  source: dataset
+  date: '2014-10-17'
+  date_basis: tanggal_penetapan
+  text: perpres_147_2014_2014-10-17.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6b9d38c7248e2ce4c80b4110a775bd1db3ead8db4956ab92bcdd728cfb3a0d57
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6b9d38c7248e2ce4c80b4110a775bd1db3ead8db4956ab92bcdd728cfb3a0d57
+  source_title: Perpres_Nomor_147_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

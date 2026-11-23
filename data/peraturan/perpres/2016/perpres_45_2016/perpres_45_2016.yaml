@@ -1,0 +1,39 @@
+id: perpres_45_2016
+akn: /akn/id/act/perpres/2016/45
+type: perpres
+number: '45'
+year: 2016
+title: Peraturan Presiden Nomor 45 Tahun 2016 tentang Rencana Kerja Pemerintah Tahun
+  2017
+tentang: RENCANA KERJA PEMERINTAH TAHUN 2017
+short_name: null
+status: null
+tanggal_penetapan: '2016-05-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_45_2016_2016-05-14
+  kind: asli
+  source: dataset
+  date: '2016-05-14'
+  date_basis: tanggal_penetapan
+  text: perpres_45_2016_2016-05-14.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:65f09fe47b0eeaac650f5b5ef0cf6889bddc0d249fcd69047eba6f914121f58e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:65f09fe47b0eeaac650f5b5ef0cf6889bddc0d249fcd69047eba6f914121f58e
+  source_title: Perpres_Nomor_45_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

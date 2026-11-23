@@ -1,0 +1,39 @@
+id: perpres_6_2014
+akn: /akn/id/act/perpres/2014/6
+type: perpres
+number: '6'
+year: 2014
+title: Peraturan Presiden Nomor 6 Tahun 2014 tentang Tunjangan Jabatan Fungsional
+  Analis Pasar Hasil Pertanian
+tentang: TUNJANGAN JABATAN FUNGSIONAL ANALIS PASAR HASIL PERTANIAN
+short_name: null
+status: null
+tanggal_penetapan: '2014-02-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_6_2014_2014-02-06
+  kind: asli
+  source: dataset
+  date: '2014-02-06'
+  date_basis: tanggal_penetapan
+  text: perpres_6_2014_2014-02-06.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:22ab196e1a22f161d196281a2ed08be5faf2f4e94f3fe0ea8595abb47b0aa93c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:22ab196e1a22f161d196281a2ed08be5faf2f4e94f3fe0ea8595abb47b0aa93c
+  source_title: Perpres_Nomor_06_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

@@ -1,0 +1,45 @@
+id: perpres_9_2005
+akn: /akn/id/act/perpres/2005/9
+type: perpres
+number: '9'
+year: 2005
+title: Peraturan Presiden Nomor 9 Tahun 2005 tentang Kedudukan, Tugas, Fungsi, Susunan
+  Organisasi, Dan Tata Kerja Kementerian Negara Republik Indonesia
+tentang: KEDUDUKAN, TUGAS, FUNGSI, SUSUNAN ORGANISASI, DAN TATA KERJA KEMENTERIAN
+  NEGARA REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2005-01-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_9_2005_2005-01-31
+  kind: asli
+  source: dataset
+  date: '2005-01-31'
+  date_basis: tanggal_penetapan
+  text: perpres_9_2005_2005-01-31.txt
+  pasal_count: 148
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:35274a560cbe58beac04321b1033dda0ae16fba0719763cc62963f50beaca259
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:35274a560cbe58beac04321b1033dda0ae16fba0719763cc62963f50beaca259
+  source_title: PERPRES_NO_9_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 175
+  status: revoked
+  revoked_by:
+  - sha256:64a976f28df6c95760f7705dbac1ee5413ae816b0f14b356faf04f9f74c79afd
+  amended_by:
+  - sha256:a051de6bf71ba1fa70a6fcb9495f8e8956b1eb8c2b7424439f4235113d2e1bf3
+  - sha256:bf903b22bcc000aafdb4bb527cab658fb2bdea9ace36eeae0cccf352db756165

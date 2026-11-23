@@ -1,0 +1,42 @@
+id: perpres_16_1964
+akn: /akn/id/act/perpres/1964/16
+type: perpres
+number: '16'
+year: 1964
+title: Peraturan Presiden Nomor 16 Tahun 1964 tentang Perubahan Dan Tambahan Peraturan
+  Pemerintah Nomor 209 Tahun 1961 Tentang Kedudukan Keuangan Ketua, Wakil Ketua Dan
+  Anggotan Dprgr (Lembaran Negara Tahun 1961 No. 250)
+tentang: PERUBAHAN DAN TAMBAHAN PERATURAN PEMERINTAH NOMOR 209 TAHUN 1961 TENTANG
+  KEDUDUKAN KEUANGAN KETUA, WAKIL KETUA DAN ANGGOTAN DPRGR (LEMBARAN NEGARA TAHUN
+  1961 NO. 250)
+short_name: null
+status: null
+tanggal_penetapan: '1964-05-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_16_1964_1964-05-12
+  kind: asli
+  source: dataset
+  date: '1964-05-12'
+  date_basis: tanggal_penetapan
+  text: perpres_16_1964_1964-05-12.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e2a31d006905074a7cdbe43a3a5a75ffdb26063e482d939fa1d56fd1b418db34
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e2a31d006905074a7cdbe43a3a5a75ffdb26063e482d939fa1d56fd1b418db34
+  source_title: Perpres_No.16_Tahun_1964
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

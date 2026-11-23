@@ -1,0 +1,42 @@
+id: perpres_189_2014
+akn: /akn/id/act/perpres/2014/189
+type: perpres
+number: '189'
+year: 2014
+title: Peraturan Presiden Nomor 189 Tahun 2014 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Sekretariat Jenderal Komisi Pemilihan Umum
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN SEKRETARIAT JENDERAL KOMISI PEMILIHAN
+  UMUM
+short_name: null
+status: dicabut
+tanggal_penetapan: '2014-12-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_189_2014_2014-12-24
+  kind: asli
+  source: dataset
+  date: '2014-12-24'
+  date_basis: tanggal_penetapan
+  text: perpres_189_2014_2014-12-24.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:16ac614ee25a1eee0053e751763fcd201f1eede0c71d0c1a5e1d96afc89eaf8d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:16ac614ee25a1eee0053e751763fcd201f1eede0c71d0c1a5e1d96afc89eaf8d
+  source_title: Perpres_Nomor_189_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: revoked
+  revoked_by:
+  - sha256:cb1ff912bdc82f775202036ccc9ec8a29044eaf4aa52a1b1ec003f0441d338b7

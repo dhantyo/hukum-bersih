@@ -1,0 +1,38 @@
+id: perpres_20_2015
+akn: /akn/id/act/perpres/2015/20
+type: perpres
+number: '20'
+year: 2015
+title: Peraturan Presiden Nomor 20 Tahun 2015 tentang Badan Pertanahan Nasional
+tentang: BADAN PERTANAHAN NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2015-01-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_20_2015_2015-01-21
+  kind: asli
+  source: dataset
+  date: '2015-01-21'
+  date_basis: tanggal_penetapan
+  text: perpres_20_2015_2015-01-21.txt
+  pasal_count: 23
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:90b2e83697ec6ae39f29fd6fcd2dd975acd1679600509f1ca134415044f1caf8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:90b2e83697ec6ae39f29fd6fcd2dd975acd1679600509f1ca134415044f1caf8
+  source_title: Perpres_Nomor_20_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 27
+  status: none_known

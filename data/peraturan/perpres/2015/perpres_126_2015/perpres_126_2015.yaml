@@ -1,0 +1,38 @@
+id: perpres_126_2015
+akn: /akn/id/act/perpres/2015/126
+type: perpres
+number: '126'
+year: 2015
+title: Peraturan Presiden Nomor 126 Tahun 2015
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_126_2015_2015
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: perpres_126_2015_2015.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e2ed9161683d560f0d2c437eb00767b4145fca2a1b4ccfe2cdca16e3e2128088
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e2ed9161683d560f0d2c437eb00767b4145fca2a1b4ccfe2cdca16e3e2128088
+  source_title: Perpres_Nomor_126_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 20
+  status: none_known

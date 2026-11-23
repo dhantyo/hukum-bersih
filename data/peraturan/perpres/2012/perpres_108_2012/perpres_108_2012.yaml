@@ -1,0 +1,41 @@
+id: perpres_108_2012
+akn: /akn/id/act/perpres/2012/108
+type: perpres
+number: '108'
+year: 2012
+title: Peraturan Presiden Nomor 108 Tahun 2012 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Badan Pengawasan Obat Dan Makanan
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN BADAN PENGAWASAN OBAT DAN MAKANAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2012-11-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_108_2012_2012-11-17
+  kind: asli
+  source: dataset
+  date: '2012-11-17'
+  date_basis: tanggal_penetapan
+  text: perpres_108_2012_2012-11-17.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6236ba7965e48dad2dfd5a0907e77eafd4efde314095f3cc7dcc40ec0d6f0e6e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6236ba7965e48dad2dfd5a0907e77eafd4efde314095f3cc7dcc40ec0d6f0e6e
+  source_title: Peraturan_Presiden_No_108_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: revoked
+  revoked_by:
+  - sha256:ca699b53aa11663ab7fd88074812928adf700ef44622c76a370db1aaca86d007

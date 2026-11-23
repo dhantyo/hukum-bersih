@@ -1,0 +1,39 @@
+id: perpres_112_2016
+akn: /akn/id/act/perpres/2016/112
+type: perpres
+number: '112'
+year: 2016
+title: Peraturan Presiden Nomor 112 Tahun 2016 tentang Tunjangan Jabatan Fungsional
+  Pembimbing Kesehatan Kerja
+tentang: TUNJANGAN JABATAN FUNGSIONAL PEMBIMBING KESEHATAN KERJA
+short_name: null
+status: null
+tanggal_penetapan: '2016-12-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_112_2016_2016-12-30
+  kind: asli
+  source: dataset
+  date: '2016-12-30'
+  date_basis: tanggal_penetapan
+  text: perpres_112_2016_2016-12-30.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:adc9bfabc2711e7d633f80a869a199e6f11a99d38fca06725ca2e7930425c037
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:adc9bfabc2711e7d633f80a869a199e6f11a99d38fca06725ca2e7930425c037
+  source_title: Perpres_Nomor_112_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

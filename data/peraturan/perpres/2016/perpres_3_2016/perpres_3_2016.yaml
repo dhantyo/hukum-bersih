@@ -1,0 +1,39 @@
+id: perpres_3_2016
+akn: /akn/id/act/perpres/2016/3
+type: perpres
+number: '3'
+year: 2016
+title: Peraturan Presiden Nomor 3 Tahun 2016 tentang Percepatan Pelaksanaan Proyek
+  Strategis Nasional
+tentang: PERCEPATAN PELAKSANAAN PROYEK STRATEGIS NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2016-01-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_3_2016_2016-01-08
+  kind: asli
+  source: dataset
+  date: '2016-01-08'
+  date_basis: tanggal_penetapan
+  text: perpres_3_2016_2016-01-08.txt
+  pasal_count: 33
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:746ba887fa35ef0109d1e74d3aae7ecfba9f14d93f5ed174d083dfc5fb28dd38
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:746ba887fa35ef0109d1e74d3aae7ecfba9f14d93f5ed174d083dfc5fb28dd38
+  source_title: Perpres_Nomor_3_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 40
+  status: none_known

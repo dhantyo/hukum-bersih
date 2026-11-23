@@ -1,0 +1,39 @@
+id: perpres_39_2013
+akn: /akn/id/act/perpres/2013/39
+type: perpres
+number: '39'
+year: 2013
+title: Peraturan Presiden Nomor 39 Tahun 2013 tentang Rencana Kerja Pemerintah Tahun
+  2014
+tentang: RENCANA KERJA PEMERINTAH TAHUN 2014
+short_name: null
+status: null
+tanggal_penetapan: '2013-05-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_39_2013_2013-05-17
+  kind: asli
+  source: dataset
+  date: '2013-05-17'
+  date_basis: tanggal_penetapan
+  text: perpres_39_2013_2013-05-17.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b3798a369acb051a1c42d803c57beee14a798fbdcff1ff6f95b21ad5a351f2d4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b3798a369acb051a1c42d803c57beee14a798fbdcff1ff6f95b21ad5a351f2d4
+  source_title: Perpres_39_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

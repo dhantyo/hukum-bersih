@@ -1,0 +1,38 @@
+id: perpres_28_2012
+akn: /akn/id/act/perpres/2012/28
+type: perpres
+number: '28'
+year: 2012
+title: Peraturan Presiden Nomor 28 Tahun 2012 tentang Rencana Tata Ruang Pulau Jawa-Bali
+tentang: RENCANA TATA RUANG PULAU JAWA-BALI
+short_name: null
+status: null
+tanggal_penetapan: '2012-03-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_28_2012_2012-03-16
+  kind: asli
+  source: dataset
+  date: '2012-03-16'
+  date_basis: tanggal_penetapan
+  text: perpres_28_2012_2012-03-16.txt
+  pasal_count: 141
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a79b9bc9dd4a8287b1dece11800b5887072fbe28640a8d388300cd9487135cbd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a79b9bc9dd4a8287b1dece11800b5887072fbe28640a8d388300cd9487135cbd
+  source_title: Peraturan_Presiden_No_28_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 263
+  status: none_known

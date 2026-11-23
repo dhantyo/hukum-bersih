@@ -1,0 +1,41 @@
+id: perpres_98_2006
+akn: /akn/id/act/perpres/2006/98
+type: perpres
+number: '98'
+year: 2006
+title: Peraturan Presiden Nomor 98 Tahun 2006 tentang Pengesahan Seventh Additional
+  Protocol To The Constitution Of The Universal Postal Union (Protokol Tambahan Ketujuh
+  Konstitusi Perhimpunan Pos Sedunia)
+tentang: PENGESAHAN SEVENTH ADDITIONAL PROTOCOL TO THE CONSTITUTION OF THE UNIVERSAL
+  POSTAL UNION (PROTOKOL TAMBAHAN KETUJUH KONSTITUSI PERHIMPUNAN POS SEDUNIA)
+short_name: null
+status: null
+tanggal_penetapan: '2006-12-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_98_2006_2006-12-09
+  kind: asli
+  source: dataset
+  date: '2006-12-09'
+  date_basis: tanggal_penetapan
+  text: perpres_98_2006_2006-12-09.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0cb1edbcfd5bcdde84f98c9743ec3df5c72fb37a0e504342d796192429c1d3e0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0cb1edbcfd5bcdde84f98c9743ec3df5c72fb37a0e504342d796192429c1d3e0
+  source_title: PRPS_NO_98_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 7
+  status: none_known

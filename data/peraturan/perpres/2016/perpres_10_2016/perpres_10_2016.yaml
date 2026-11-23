@@ -1,0 +1,39 @@
+id: perpres_10_2016
+akn: /akn/id/act/perpres/2016/10
+type: perpres
+number: '10'
+year: 2016
+title: Peraturan Presiden Nomor 10 Tahun 2016 tentang Dosen Dan Tenaga Kependidikan
+  Pada Perguruan Tinggi Negeri Baru
+tentang: DOSEN DAN TENAGA KEPENDIDIKAN PADA PERGURUAN TINGGI NEGERI BARU
+short_name: null
+status: null
+tanggal_penetapan: '2016-02-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_10_2016_2016-02-01
+  kind: asli
+  source: dataset
+  date: '2016-02-01'
+  date_basis: tanggal_penetapan
+  text: perpres_10_2016_2016-02-01.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fee339ab62b261fcc7287598ed85cfe0ef603b60037bbd3ff74ffe9ffb2126a1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fee339ab62b261fcc7287598ed85cfe0ef603b60037bbd3ff74ffe9ffb2126a1
+  source_title: Perpres_Nomor_10_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 18
+  status: none_known

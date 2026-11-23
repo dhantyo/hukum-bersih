@@ -1,0 +1,40 @@
+id: perpres_50_2012
+akn: /akn/id/act/perpres/2012/50
+type: perpres
+number: '50'
+year: 2012
+title: Peraturan Presiden Nomor 50 Tahun 2012 tentang Pendirian Sekolah Tinggi Agama
+  Islam Negeri Gajah Putih Takengon, Aceh Tengah, Aceh
+tentang: PENDIRIAN SEKOLAH TINGGI AGAMA ISLAM NEGERI GAJAH PUTIH TAKENGON, ACEH TENGAH,
+  ACEH
+short_name: null
+status: null
+tanggal_penetapan: '2012-04-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_50_2012_2012-04-25
+  kind: asli
+  source: dataset
+  date: '2012-04-25'
+  date_basis: tanggal_penetapan
+  text: perpres_50_2012_2012-04-25.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:143243b60e2e247514646e367c2ffed4375096d486f71813f5f6d16cd1650537
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:143243b60e2e247514646e367c2ffed4375096d486f71813f5f6d16cd1650537
+  source_title: Peraturan_Presiden_No_50_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

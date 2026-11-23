@@ -1,0 +1,45 @@
+id: perpres_106_2013
+akn: /akn/id/act/perpres/2013/106
+type: perpres
+number: '106'
+year: 2013
+title: Peraturan Presiden Nomor 106 Tahun 2013 tentang Jaminan Pemeliharaan Kesehatan
+  Ketua, Wakil Ketua, Dan Anggota Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah,
+  Badan Pemeriksa Keuangan, Komisi Yudisial, Hakim Mahkamah Konstitusi Dan Hakim Agung
+  Mahkamah Agung
+tentang: JAMINAN PEMELIHARAAN KESEHATAN KETUA, WAKIL KETUA, DAN ANGGOTA DEWAN PERWAKILAN
+  RAKYAT, DEWAN PERWAKILAN DAERAH, BADAN PEMERIKSA KEUANGAN, KOMISI YUDISIAL, HAKIM
+  MAHKAMAH KONSTITUSI DAN HAKIM AGUNG MAHKAMAH AGUNG
+short_name: null
+status: dicabut
+tanggal_penetapan: '2013-12-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_106_2013_2013-12-16
+  kind: asli
+  source: dataset
+  date: '2013-12-16'
+  date_basis: tanggal_penetapan
+  text: perpres_106_2013_2013-12-16.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:245f51622b05c7e7fdb89622fa495689fdb279199cd58d7e02c29e931acafc9b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:245f51622b05c7e7fdb89622fa495689fdb279199cd58d7e02c29e931acafc9b
+  source_title: Perpres_106_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: revoked
+  revoked_by:
+  - sha256:0ea64fd5de55e8ebcf6b535a24009ee3f0a1cd4a97b126f16e9ffeb529cc3b9c

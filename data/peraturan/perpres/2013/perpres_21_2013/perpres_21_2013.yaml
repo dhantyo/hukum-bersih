@@ -1,0 +1,39 @@
+id: perpres_21_2013
+akn: /akn/id/act/perpres/2013/21
+type: perpres
+number: '21'
+year: 2013
+title: Peraturan Presiden Nomor 21 Tahun 2013 tentang Tunjangan Jabatan Fungsional
+  Pranata Laboratorium Pendidikan
+tentang: TUNJANGAN JABATAN FUNGSIONAL PRANATA LABORATORIUM PENDIDIKAN
+short_name: null
+status: null
+tanggal_penetapan: '2013-03-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_21_2013_2013-03-01
+  kind: asli
+  source: dataset
+  date: '2013-03-01'
+  date_basis: tanggal_penetapan
+  text: perpres_21_2013_2013-03-01.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2b8506adb3c8642201ccbf242f2baddfe939f86d1c9fd88afd59d881f348b2e0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2b8506adb3c8642201ccbf242f2baddfe939f86d1c9fd88afd59d881f348b2e0
+  source_title: Perpres_21_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

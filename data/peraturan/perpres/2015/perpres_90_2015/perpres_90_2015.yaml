@@ -1,0 +1,39 @@
+id: perpres_90_2015
+akn: /akn/id/act/perpres/2015/90
+type: perpres
+number: '90'
+year: 2015
+title: Peraturan Presiden Nomor 90 Tahun 2015 tentang Honorarium Ketua, Wakil Ketua,
+  Dan Anggota Komisi Aparatur Sipil Negara
+tentang: HONORARIUM KETUA, WAKIL KETUA, DAN ANGGOTA KOMISI APARATUR SIPIL NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '2015-08-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_90_2015_2015-08-07
+  kind: asli
+  source: dataset
+  date: '2015-08-07'
+  date_basis: tanggal_penetapan
+  text: perpres_90_2015_2015-08-07.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5d0293a1434c0001e72f5174e43ae5b147c7c3234aadb3a55bcd303cd7316b6a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5d0293a1434c0001e72f5174e43ae5b147c7c3234aadb3a55bcd303cd7316b6a
+  source_title: Perpres_Nomor_90_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

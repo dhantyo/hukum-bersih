@@ -1,0 +1,30 @@
+id: perpres_1_2005
+akn: /akn/id/act/perpres/2005/1
+type: perpres
+number: '1'
+year: 2005
+title: Peraturan Presiden Nomor 1 Tahun 2005 tentang Tunjangan Jabatan Fungsional
+  Pekerja Sosial
+tentang: TUNJANGAN JABATAN FUNGSIONAL PEKERJA SOSIAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2005-01-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c435498eb93da47eda0aa83c9849bc336a7fba4c9edc8b509991fd10d241d792
+  source_title: PERPRES_NO_1_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:6280e6e2de5db1bc0e9a144d768bc750ca909f9c1365d9243f669a10a257fa5a
+parse_error: 'v13: rebuilt text has 6 pasal, the dataset lists 7'

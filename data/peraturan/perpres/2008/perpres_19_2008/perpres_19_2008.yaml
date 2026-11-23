@@ -1,0 +1,41 @@
+id: perpres_19_2008
+akn: /akn/id/act/perpres/2008/19
+type: perpres
+number: '19'
+year: 2008
+title: Peraturan Presiden Nomor 19 Tahun 2008 tentang Tunjangan Khusus Kinerja Hakim
+  Dan Pegawai Negeri Di Lingkungan Mahkamah Agung Dan Badan Peradilan Yang Berada
+  Di Bawahnya
+tentang: TUNJANGAN KHUSUS KINERJA HAKIM DAN PEGAWAI NEGERI DI LINGKUNGAN MAHKAMAH
+  AGUNG DAN BADAN PERADILAN YANG BERADA DI BAWAHNYA
+short_name: null
+status: null
+tanggal_penetapan: '2008-03-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_19_2008_2008-03-10
+  kind: asli
+  source: dataset
+  date: '2008-03-10'
+  date_basis: tanggal_penetapan
+  text: perpres_19_2008_2008-03-10.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:32cae6ea13a08e66cc1fc0351df49ab4b600d4d3c5f64016c7ad06cc775eeb37
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:32cae6ea13a08e66cc1fc0351df49ab4b600d4d3c5f64016c7ad06cc775eeb37
+  source_title: PERPRES_NO_19_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: none_known

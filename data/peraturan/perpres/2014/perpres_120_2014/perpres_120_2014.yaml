@@ -1,0 +1,39 @@
+id: perpres_120_2014
+akn: /akn/id/act/perpres/2014/120
+type: perpres
+number: '120'
+year: 2014
+title: Peraturan Presiden Nomor 120 Tahun 2014 tentang Pendirian Universitas Pembangunan
+  Nasional 'Veteran' Jakarta
+tentang: PENDIRIAN UNIVERSITAS PEMBANGUNAN NASIONAL 'VETERAN' JAKARTA
+short_name: null
+status: null
+tanggal_penetapan: '2014-10-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_120_2014_2014-10-06
+  kind: asli
+  source: dataset
+  date: '2014-10-06'
+  date_basis: tanggal_penetapan
+  text: perpres_120_2014_2014-10-06.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:999d6f85266890e75b044e4a744ae783f090adf7f84f436744d47c2d6aff7004
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:999d6f85266890e75b044e4a744ae783f090adf7f84f436744d47c2d6aff7004
+  source_title: Perpres_nomor_120_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

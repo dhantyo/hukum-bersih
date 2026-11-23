@@ -1,0 +1,43 @@
+id: perpres_57_2008
+akn: /akn/id/act/perpres/2008/57
+type: perpres
+number: '57'
+year: 2008
+title: Peraturan Presiden Nomor 57 Tahun 2008 tentang Pengesahan Multilateral Agreement
+  Among D-8 Member Countries On Administrative Assistance In Customs Matters (Persetujuan
+  Multilateral Antar Negara-Negara Anggota D-8 Mengenai Bantuan Administratif Di Bidang
+  Kepabeanan)
+tentang: PENGESAHAN MULTILATERAL AGREEMENT AMONG D-8 MEMBER COUNTRIES ON ADMINISTRATIVE
+  ASSISTANCE IN CUSTOMS MATTERS (PERSETUJUAN MULTILATERAL ANTAR NEGARA-NEGARA ANGGOTA
+  D-8 MENGENAI BANTUAN ADMINISTRATIF DI BIDANG KEPABEANAN)
+short_name: null
+status: null
+tanggal_penetapan: '2008-08-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_57_2008_2008-08-28
+  kind: asli
+  source: dataset
+  date: '2008-08-28'
+  date_basis: tanggal_penetapan
+  text: perpres_57_2008_2008-08-28.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3fcfc2a9b2a45481535901b804388484305657e52b871b21d6b53ba2e74e6a9f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3fcfc2a9b2a45481535901b804388484305657e52b871b21d6b53ba2e74e6a9f
+  source_title: PERPRES_NO_57_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

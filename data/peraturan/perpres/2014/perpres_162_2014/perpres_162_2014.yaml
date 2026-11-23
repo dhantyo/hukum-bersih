@@ -1,0 +1,41 @@
+id: perpres_162_2014
+akn: /akn/id/act/perpres/2014/162
+type: perpres
+number: '162'
+year: 2014
+title: Peraturan Presiden Nomor 162 Tahun 2014 tentang Rincian Anggaran Pendapatan
+  Dan Belanja Negara Tahun Anggaran 2015
+tentang: RINCIAN ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 2015
+short_name: null
+status: dicabut
+tanggal_penetapan: '2014-10-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_162_2014_2014-10-17
+  kind: asli
+  source: dataset
+  date: '2014-10-17'
+  date_basis: tanggal_penetapan
+  text: perpres_162_2014_2014-10-17.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6017abdea06b3ee69932db9419f7b9e52f3d886d4e0f91b7bd97172ba2ae1b5d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6017abdea06b3ee69932db9419f7b9e52f3d886d4e0f91b7bd97172ba2ae1b5d
+  source_title: Perpres_Nomor_162_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: revoked
+  revoked_by:
+  - sha256:96d8b7fff4f15578bd6ed9181f3c6725bdb033ce7c7e1eecafcdf7fd6b860d1d

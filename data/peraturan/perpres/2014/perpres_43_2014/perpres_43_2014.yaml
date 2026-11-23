@@ -1,0 +1,41 @@
+id: perpres_43_2014
+akn: /akn/id/act/perpres/2014/43
+type: perpres
+number: '43'
+year: 2014
+title: Peraturan Presiden Nomor 43 Tahun 2014 tentang Rencana Kerja Pemerintah Tahun
+  2015
+tentang: RENCANA KERJA PEMERINTAH TAHUN 2015
+short_name: null
+status: diubah
+tanggal_penetapan: '2014-05-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_43_2014_2014-05-16
+  kind: asli
+  source: dataset
+  date: '2014-05-16'
+  date_basis: tanggal_penetapan
+  text: perpres_43_2014_2014-05-16.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:454e5728c3907ff4912d0a1b0ab9d4bb5daf9ceec25f5eebf3bba2aeea2d050f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:454e5728c3907ff4912d0a1b0ab9d4bb5daf9ceec25f5eebf3bba2aeea2d050f
+  source_title: Perpres_Nomor_43_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: amended
+  amended_by:
+  - sha256:20758d2b20a80e6bcf9503ea17aecbdf10bfc5c3c31e491556d17145349f73b9

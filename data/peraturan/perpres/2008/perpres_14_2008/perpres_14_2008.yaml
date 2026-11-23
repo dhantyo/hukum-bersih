@@ -1,0 +1,44 @@
+id: perpres_14_2008
+akn: /akn/id/act/perpres/2008/14
+type: perpres
+number: '14'
+year: 2008
+title: Peraturan Presiden Nomor 14 Tahun 2008 tentang Penyesuaian Gaji Pokok Pegawai
+  Negeri Sipil Menurut Peraturan Pemerintah Nomor 9 Tahun 2007 Ke Dalam Gaji Pokok
+  Pegawai Negeri Sipil Menurut Peraturan Pemerintah Nomor 10 Tahun 2008
+tentang: PENYESUAIAN GAJI POKOK PEGAWAI NEGERI SIPIL MENURUT PERATURAN PEMERINTAH
+  NOMOR 9 TAHUN 2007 KE DALAM GAJI POKOK PEGAWAI NEGERI SIPIL MENURUT PERATURAN PEMERINTAH
+  NOMOR 10 TAHUN 2008
+short_name: null
+status: dicabut
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_14_2008_2008
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: perpres_14_2008_2008.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9609225df503a52db372d541d15583bdf9dbd2ceb2cb2ec3b6bae0a20a0ca742
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9609225df503a52db372d541d15583bdf9dbd2ceb2cb2ec3b6bae0a20a0ca742
+  source_title: PERPRES_NO_14_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: revoked
+  revoked_by:
+  - sha256:06aa34871c210dc5ed4479911784b78b97f86ed5c25a2ab4498b0660623a3612

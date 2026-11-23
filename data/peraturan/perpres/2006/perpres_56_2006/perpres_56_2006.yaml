@@ -1,0 +1,41 @@
+id: perpres_56_2006
+akn: /akn/id/act/perpres/2006/56
+type: perpres
+number: '56'
+year: 2006
+title: Peraturan Presiden Nomor 56 Tahun 2006 tentang Tunjangan Jabatan Fungsional
+  Penggerak Swadaya Masyarakat
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENGGERAK SWADAYA MASYARAKAT
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-05-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_56_2006_2006-05-26
+  kind: asli
+  source: dataset
+  date: '2006-05-26'
+  date_basis: tanggal_penetapan
+  text: perpres_56_2006_2006-05-26.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:97963ada561653d526a2a27677c162dd5472006642de5d8b191ac388f177c22e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:97963ada561653d526a2a27677c162dd5472006642de5d8b191ac388f177c22e
+  source_title: PERPRES_No.56_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:1ab3355dff84a06586cf4fbf704630ce9bfcc35da7198b5d8c891dc9b92600f2

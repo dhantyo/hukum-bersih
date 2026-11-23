@@ -1,0 +1,43 @@
+id: perpres_23_1963
+akn: /akn/id/act/perpres/1963/23
+type: perpres
+number: '23'
+year: 1963
+title: Peraturan Presiden Nomor 23 Tahun 1963 tentang Peraturan Penyesuaian Gaji Dan
+  Pangkat Pegawai Negeri Sipil Dan Anggota Kepolisian Negara Di Propinsi Irian Barat
+  Kedalam P.G.P.N.-1961/P.G.-Pol.-1961
+tentang: PERATURAN PENYESUAIAN GAJI DAN PANGKAT PEGAWAI NEGERI SIPIL DAN ANGGOTA KEPOLISIAN
+  NEGARA DI PROPINSI IRIAN BARAT KEDALAM P.G.P.N.-1961/P.G.-POL.-1961
+short_name: null
+status: null
+tanggal_penetapan: '1963-11-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_23_1963_1963-11-04
+  kind: asli
+  source: dataset
+  date: '1963-11-04'
+  date_basis: tanggal_penetapan
+  text: perpres_23_1963_1963-11-04.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c827acbea6ab14ee695641906fde12e17634e14a2d4a19fca00584ae566e2f07
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c827acbea6ab14ee695641906fde12e17634e14a2d4a19fca00584ae566e2f07
+  source_title: Perpres_No.23_Tahun_1963
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 20
+  status: partially_revoked
+  revoked_by:
+  - sha256:56e4a4f087f435bc5844124aacf91304e95f52da57ae5a9c7d18518ec63bf8d1

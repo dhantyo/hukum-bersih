@@ -1,0 +1,41 @@
+id: perpres_70_2011
+akn: /akn/id/act/perpres/2011/70
+type: perpres
+number: '70'
+year: 2011
+title: Peraturan Presiden Nomor 70 Tahun 2011 tentang Pengesahan Protocol 1 Designation
+  Of Transit Transport Routes And Facilities (Protokol 1 Penetapan Rute-Rute Dan Fasilitas
+  Angkutan Transit)
+tentang: PENGESAHAN PROTOCOL 1 DESIGNATION OF TRANSIT TRANSPORT ROUTES AND FACILITIES
+  (PROTOKOL 1 PENETAPAN RUTE-RUTE DAN FASILITAS ANGKUTAN TRANSIT)
+short_name: null
+status: null
+tanggal_penetapan: '2011-10-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_70_2011_2011-10-05
+  kind: asli
+  source: dataset
+  date: '2011-10-05'
+  date_basis: tanggal_penetapan
+  text: perpres_70_2011_2011-10-05.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7a85a0b99a9cbf6fd55a265b931097fc93512426f3679612e2ba5402fd2e3717
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7a85a0b99a9cbf6fd55a265b931097fc93512426f3679612e2ba5402fd2e3717
+  source_title: Perpres_no_70_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

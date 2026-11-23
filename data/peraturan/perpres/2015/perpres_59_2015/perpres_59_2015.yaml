@@ -1,0 +1,39 @@
+id: perpres_59_2015
+akn: /akn/id/act/perpres/2015/59
+type: perpres
+number: '59'
+year: 2015
+title: Peraturan Presiden Nomor 59 Tahun 2015 tentang Kementerian Pemberdayaan Perempuan
+  Dan Perlindungan Anak
+tentang: KEMENTERIAN PEMBERDAYAAN PEREMPUAN DAN PERLINDUNGAN ANAK
+short_name: null
+status: null
+tanggal_penetapan: '2015-05-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_59_2015_2015-05-18
+  kind: asli
+  source: dataset
+  date: '2015-05-18'
+  date_basis: tanggal_penetapan
+  text: perpres_59_2015_2015-05-18.txt
+  pasal_count: 43
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a4eb3457a2277d7272b3bd0ca87b4d1262b22749046c0f7890d8fa86f74a0856
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a4eb3457a2277d7272b3bd0ca87b4d1262b22749046c0f7890d8fa86f74a0856
+  source_title: Perpres_Nomor_59_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 53
+  status: none_known

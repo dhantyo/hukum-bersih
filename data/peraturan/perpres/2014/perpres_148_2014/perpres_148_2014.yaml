@@ -1,0 +1,40 @@
+id: perpres_148_2014
+akn: /akn/id/act/perpres/2014/148
+type: perpres
+number: '148'
+year: 2014
+title: Peraturan Presiden Nomor 148 Tahun 2014 tentang Pengembangan, Pelindungan,
+  Penelitian, Pemanfaatan, Dan Pengelolaan Situs Gunung Padang
+tentang: PENGEMBANGAN, PELINDUNGAN, PENELITIAN, PEMANFAATAN, DAN PENGELOLAAN SITUS
+  GUNUNG PADANG
+short_name: null
+status: null
+tanggal_penetapan: '2014-10-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_148_2014_2014-10-17
+  kind: asli
+  source: dataset
+  date: '2014-10-17'
+  date_basis: tanggal_penetapan
+  text: perpres_148_2014_2014-10-17.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:54121e6b68a13d08a589b54861ecc8870fd5da6b16c2d691c2f4659ac1c61859
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:54121e6b68a13d08a589b54861ecc8870fd5da6b16c2d691c2f4659ac1c61859
+  source_title: Perpres_Nomor_148_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

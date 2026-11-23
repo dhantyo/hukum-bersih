@@ -1,0 +1,42 @@
+id: perpres_19_1963
+akn: /akn/id/act/perpres/1963/19
+type: perpres
+number: '19'
+year: 1963
+title: Peraturan Presiden Nomor 19 Tahun 1963 tentang Ketentuan-Ketentuan Pokok Mengenai
+  Bentuk, Jenis, Warna, Pembuatan Serta Pemakaian Pakaian Seragam Dan Tanda Pengenal
+  Diluar Angkatan Perang Dan Kepolisian Negara
+tentang: KETENTUAN-KETENTUAN POKOK MENGENAI BENTUK, JENIS, WARNA, PEMBUATAN SERTA
+  PEMAKAIAN PAKAIAN SERAGAM DAN TANDA PENGENAL DILUAR ANGKATAN PERANG DAN KEPOLISIAN
+  NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '1963-08-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_19_1963_1963-08-05
+  kind: asli
+  source: dataset
+  date: '1963-08-05'
+  date_basis: tanggal_penetapan
+  text: perpres_19_1963_1963-08-05.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:81b31f053c265803be7acb1bb70dde4bbb2e5fec98023eb52683d695588c8af7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:81b31f053c265803be7acb1bb70dde4bbb2e5fec98023eb52683d695588c8af7
+  source_title: Perpres_No.19_Tahun_1963
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 23
+  status: none_known

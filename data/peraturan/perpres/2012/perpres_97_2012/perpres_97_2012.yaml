@@ -1,0 +1,41 @@
+id: perpres_97_2012
+akn: /akn/id/act/perpres/2012/97
+type: perpres
+number: '97'
+year: 2012
+title: Peraturan Presiden Nomor 97 Tahun 2012 tentang Perubahan Atas Keputusan Presiden
+  Nomor 87 Tahun 1999 Tentang Rumpun Jabatan Fungsional Pegawai Negeri Sipil Dengan
+  Rahmat Tuhan Yang Maha Esa
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 87 TAHUN 1999 TENTANG RUMPUN JABATAN
+  FUNGSIONAL PEGAWAI NEGERI SIPIL DENGAN RAHMAT TUHAN YANG MAHA ESA
+short_name: null
+status: null
+tanggal_penetapan: '2012-11-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_97_2012_2012-11-14
+  kind: asli
+  source: dataset
+  date: '2012-11-14'
+  date_basis: tanggal_penetapan
+  text: perpres_97_2012_2012-11-14.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:58e62e262099b05adf0a8bf22c88995f5eb5abbdff19b5ebfd478074788fa514
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:58e62e262099b05adf0a8bf22c88995f5eb5abbdff19b5ebfd478074788fa514
+  source_title: Peraturan_Presiden_No_97_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

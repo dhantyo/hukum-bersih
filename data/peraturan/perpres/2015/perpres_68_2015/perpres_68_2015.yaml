@@ -1,0 +1,41 @@
+id: perpres_68_2015
+akn: /akn/id/act/perpres/2015/68
+type: perpres
+number: '68'
+year: 2015
+title: Peraturan Presiden Nomor 68 Tahun 2015 tentang Kementerian Energi Dan Sumber
+  Daya Mineral
+tentang: KEMENTERIAN ENERGI DAN SUMBER DAYA MINERAL
+short_name: null
+status: diubah
+tanggal_penetapan: '2015-06-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_68_2015_2015-06-09
+  kind: asli
+  source: dataset
+  date: '2015-06-09'
+  date_basis: tanggal_penetapan
+  text: perpres_68_2015_2015-06-09.txt
+  pasal_count: 52
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:88c750bcfa3376354ff3874116ff37b931db0e3788c5fa114bb4eadb80a3b842
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:88c750bcfa3376354ff3874116ff37b931db0e3788c5fa114bb4eadb80a3b842
+  source_title: Perpres_Nomor_68_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 60
+  status: amended
+  amended_by:
+  - sha256:dfbc02c6a54859852ad6a5c0845542fb796550c7b0ec6151622ae069bf951b35

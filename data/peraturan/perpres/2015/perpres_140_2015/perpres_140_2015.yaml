@@ -1,0 +1,42 @@
+id: perpres_140_2015
+akn: /akn/id/act/perpres/2015/140
+type: perpres
+number: '140'
+year: 2015
+title: Peraturan Presiden Nomor 140 Tahun 2015 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Kementerian Agraria Dan Tata Ruang/Badan Pertanahan Nasional
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN KEMENTERIAN AGRARIA DAN TATA RUANG/BADAN
+  PERTANAHAN NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2015-12-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_140_2015_2015-12-14
+  kind: asli
+  source: dataset
+  date: '2015-12-14'
+  date_basis: tanggal_penetapan
+  text: perpres_140_2015_2015-12-14.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4daaf8f0c156479d03d8d35a41305e567d41345e436c2ed6b3488c0b81c0b052
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4daaf8f0c156479d03d8d35a41305e567d41345e436c2ed6b3488c0b81c0b052
+  source_title: Perpres_Nomor_140_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 19
+  status: revoked
+  revoked_by:
+  - sha256:15e8860a5604e6f02ff0de5f0b0f9c3a3677b8a9c2387008e61237b58830ef8f

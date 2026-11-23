@@ -1,0 +1,39 @@
+id: perpres_61_2011
+akn: /akn/id/act/perpres/2011/61
+type: perpres
+number: '61'
+year: 2011
+title: Peraturan Presiden Nomor 61 Tahun 2011 tentang Rencana Aksi Nasional Penurunan
+  Emisi Gas Rumah Kaca
+tentang: RENCANA AKSI NASIONAL PENURUNAN EMISI GAS RUMAH KACA
+short_name: null
+status: null
+tanggal_penetapan: '2011-09-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_61_2011_2011-09-20
+  kind: asli
+  source: dataset
+  date: '2011-09-20'
+  date_basis: tanggal_penetapan
+  text: perpres_61_2011_2011-09-20.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:148a00960a7dd1c24afc242fbbd6970979fc033c0d6d19fbcf58df4e2c62cbaa
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:148a00960a7dd1c24afc242fbbd6970979fc033c0d6d19fbcf58df4e2c62cbaa
+  source_title: Perpres_no_61_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: none_known

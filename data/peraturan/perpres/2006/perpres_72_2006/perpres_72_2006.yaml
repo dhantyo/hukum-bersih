@@ -1,0 +1,30 @@
+id: perpres_72_2006
+akn: /akn/id/act/perpres/2006/72
+type: perpres
+number: '72'
+year: 2006
+title: Peraturan Presiden Nomor 72 Tahun 2006 tentang Tim Koordinasi Percepatan Pembangunan
+  Pembangkit Tenaga Listrik
+tentang: TIM KOORDINASI PERCEPATAN PEMBANGUNAN PEMBANGKIT TENAGA LISTRIK
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-07-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f848cc88ae253a2cbb20a845636fc584e2916af29ec3ef8ad5bfb24d0e4ae998
+  source_title: PERPRES_No.72_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:bb58b48f1339eb053ed0789fe53c29d15bc0ec931302e4fa1632771f16f66a4c
+parse_error: 'v13: rebuilt text has 5 pasal, the dataset lists 6'

@@ -1,0 +1,41 @@
+id: perpres_100_2015
+akn: /akn/id/act/perpres/2015/100
+type: perpres
+number: '100'
+year: 2015
+title: Peraturan Presiden Nomor 100 Tahun 2015 tentang Pembangunan Dermaga Tentara
+  Nasional Indonesia Angkatan Laut Beserta Sarana Dan Prasarananya Di Desa Tawiri
+  Ambon
+tentang: PEMBANGUNAN DERMAGA TENTARA NASIONAL INDONESIA ANGKATAN LAUT BESERTA SARANA
+  DAN PRASARANANYA DI DESA TAWIRI AMBON
+short_name: null
+status: null
+tanggal_penetapan: '2015-09-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_100_2015_2015-09-02
+  kind: asli
+  source: dataset
+  date: '2015-09-02'
+  date_basis: tanggal_penetapan
+  text: perpres_100_2015_2015-09-02.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4edce3c16dd97154223e478d34afca0737cfc884d09c8e67eaae069661ab686b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4edce3c16dd97154223e478d34afca0737cfc884d09c8e67eaae069661ab686b
+  source_title: Perpres_Nomor_100_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: none_known

@@ -1,0 +1,39 @@
+id: perpres_10_2011
+akn: /akn/id/act/perpres/2011/10
+type: perpres
+number: '10'
+year: 2011
+title: Peraturan Presiden Nomor 10 Tahun 2011 tentang Badan Koordinasi Nasional Penyuluhan
+  Pertanian, Perikanan, Dan Kehutanan
+tentang: BADAN KOORDINASI NASIONAL PENYULUHAN PERTANIAN, PERIKANAN, DAN KEHUTANAN
+short_name: null
+status: null
+tanggal_penetapan: '2011-02-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_10_2011_2011-02-17
+  kind: asli
+  source: dataset
+  date: '2011-02-17'
+  date_basis: tanggal_penetapan
+  text: perpres_10_2011_2011-02-17.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c29d590355ec89de971b381ef00bee4ae3e383aff4d60386fa43f0b249e2ab76
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c29d590355ec89de971b381ef00bee4ae3e383aff4d60386fa43f0b249e2ab76
+  source_title: Perpres_no_10_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 20
+  status: none_known

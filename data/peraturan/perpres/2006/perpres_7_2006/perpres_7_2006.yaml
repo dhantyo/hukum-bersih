@@ -1,0 +1,40 @@
+id: perpres_7_2006
+akn: /akn/id/act/perpres/2006/7
+type: perpres
+number: '7'
+year: 2006
+title: Peraturan Presiden Nomor 7 Tahun 2006 tentang Komite Nasional Pengendalian
+  Flu Burung (Avian Influenza) Dankesiapsiagaan Menghadapi Pandemi Influenza
+tentang: KOMITE NASIONAL PENGENDALIAN FLU BURUNG (AVIAN INFLUENZA) DANKESIAPSIAGAAN
+  MENGHADAPI PANDEMI INFLUENZA
+short_name: null
+status: null
+tanggal_penetapan: '2006-03-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_7_2006_2006-03-13
+  kind: asli
+  source: dataset
+  date: '2006-03-13'
+  date_basis: tanggal_penetapan
+  text: perpres_7_2006_2006-03-13.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e96691cf3ff35011aec77204cdccbb9dc062d9ff07e1a9180a6751f43f534087
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e96691cf3ff35011aec77204cdccbb9dc062d9ff07e1a9180a6751f43f534087
+  source_title: PERPRES_No.7_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: none_known

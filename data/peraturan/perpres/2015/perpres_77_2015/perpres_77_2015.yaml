@@ -1,0 +1,38 @@
+id: perpres_77_2015
+akn: /akn/id/act/perpres/2015/77
+type: perpres
+number: '77'
+year: 2015
+title: Peraturan Presiden Nomor 77 Tahun 2015 tentang Pedoman Organisasi Rumah Sakit
+tentang: PEDOMAN ORGANISASI RUMAH SAKIT
+short_name: null
+status: null
+tanggal_penetapan: '2015-07-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_77_2015_2015-07-03
+  kind: asli
+  source: dataset
+  date: '2015-07-03'
+  date_basis: tanggal_penetapan
+  text: perpres_77_2015_2015-07-03.txt
+  pasal_count: 27
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2b02d87819c9a107ec91e2e3bec571435601917b176c56c8378d71a1e08641fb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2b02d87819c9a107ec91e2e3bec571435601917b176c56c8378d71a1e08641fb
+  source_title: Perpres_Nomor_77_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 38
+  status: none_known

@@ -1,0 +1,41 @@
+id: perpres_78_2010
+akn: /akn/id/act/perpres/2010/78
+type: perpres
+number: '78'
+year: 2010
+title: Peraturan Presiden Nomor 78 Tahun 2010 tentang Penjaminan Infrastruktur Dalam
+  Proyek Kerja Sama Pemerintah Dengan Badan Usaha Yang Dilakukan Melalui Badan Usaha
+  Penjaminan Infrastruktur
+tentang: PENJAMINAN INFRASTRUKTUR DALAM PROYEK KERJA SAMA PEMERINTAH DENGAN BADAN
+  USAHA YANG DILAKUKAN MELALUI BADAN USAHA PENJAMINAN INFRASTRUKTUR
+short_name: null
+status: null
+tanggal_penetapan: '2010-12-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_78_2010_2010-12-21
+  kind: asli
+  source: dataset
+  date: '2010-12-21'
+  date_basis: tanggal_penetapan
+  text: perpres_78_2010_2010-12-21.txt
+  pasal_count: 25
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e4dc3944c382992cc467e903eb651fd0085345114fb48383822ab065d1662180
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e4dc3944c382992cc467e903eb651fd0085345114fb48383822ab065d1662180
+  source_title: Perpres_No.78_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 46
+  status: none_known

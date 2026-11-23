@@ -1,0 +1,38 @@
+id: perpres_28_2015
+akn: /akn/id/act/perpres/2015/28
+type: perpres
+number: '28'
+year: 2015
+title: Peraturan Presiden Nomor 28 Tahun 2015 tentang Kementerian Keuangan
+tentang: KEMENTERIAN KEUANGAN
+short_name: null
+status: null
+tanggal_penetapan: '2015-03-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_28_2015_2015-03-06
+  kind: asli
+  source: dataset
+  date: '2015-03-06'
+  date_basis: tanggal_penetapan
+  text: perpres_28_2015_2015-03-06.txt
+  pasal_count: 86
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:541cec126c1c43b7a459d426d6a2dfa753d091d1c2d9b4d501866c181391061b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:541cec126c1c43b7a459d426d6a2dfa753d091d1c2d9b4d501866c181391061b
+  source_title: Perpres_Nomor_28_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 93
+  status: none_known

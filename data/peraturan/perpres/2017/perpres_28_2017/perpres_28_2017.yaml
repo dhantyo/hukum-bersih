@@ -1,0 +1,39 @@
+id: perpres_28_2017
+akn: /akn/id/act/perpres/2017/28
+type: perpres
+number: '28'
+year: 2017
+title: Peraturan Presiden Nomor 28 Tahun 2017 tentang Tunjangan Jabatan Fungsional
+  Pemeriksa Merek
+tentang: TUNJANGAN JABATAN FUNGSIONAL PEMERIKSA MEREK
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_28_2017_2017
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: perpres_28_2017_2017.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fd9517d88a1175f977d48fa213f38f70935084b7e7192160a25153c29131c0bc
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fd9517d88a1175f977d48fa213f38f70935084b7e7192160a25153c29131c0bc
+  source_title: Perpres_Nomor_28_Tahun_2017
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

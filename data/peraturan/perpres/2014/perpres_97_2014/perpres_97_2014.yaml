@@ -1,0 +1,40 @@
+id: perpres_97_2014
+akn: /akn/id/act/perpres/2014/97
+type: perpres
+number: '97'
+year: 2014
+title: Peraturan Presiden Nomor 97 Tahun 2014 tentang Penyelenggaraan Pelayanan Terpadu
+  Satu Pintu Dengan Rahmat Tuhan Yang Maha Esa Presiden Republik Indonesia
+tentang: PENYELENGGARAAN PELAYANAN TERPADU SATU PINTU DENGAN RAHMAT TUHAN YANG MAHA
+  ESA PRESIDEN REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2014-09-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_97_2014_2014-09-15
+  kind: asli
+  source: dataset
+  date: '2014-09-15'
+  date_basis: tanggal_penetapan
+  text: perpres_97_2014_2014-09-15.txt
+  pasal_count: 34
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:227f5e46f809acfb1dbb87c178359d9180e329ee7315407684ff6ee3e27f7e61
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:227f5e46f809acfb1dbb87c178359d9180e329ee7315407684ff6ee3e27f7e61
+  source_title: Perpres_Nomor_97_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 42
+  status: none_known

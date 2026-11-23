@@ -1,0 +1,27 @@
+id: perpres_24_2015
+akn: /akn/id/act/perpres/2015/24
+type: perpres
+number: '24'
+year: 2015
+title: Peraturan Presiden Nomor 24 Tahun 2015 tentang Kementerian Sekretariat Negara
+tentang: KEMENTERIAN SEKRETARIAT NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '2015-02-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3bd89cd442c3172ab189cd411d6c692b996ca591a7a2eeaaad3839dd86ec795e
+  source_title: Perpres_Nomor_24_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 107
+  status: none_known
+parse_error: 'v13: rebuilt text has 56 pasal, the dataset lists 91'

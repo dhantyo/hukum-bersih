@@ -1,0 +1,39 @@
+id: perpres_69_2011
+akn: /akn/id/act/perpres/2011/69
+type: perpres
+number: '69'
+year: 2011
+title: Peraturan Presiden Nomor 69 Tahun 2011 tentang Pendirian Sekolah Tinggi Agama
+  Kristen Negeri Kupang, Nusa Tenggara Timur
+tentang: PENDIRIAN SEKOLAH TINGGI AGAMA KRISTEN NEGERI KUPANG, NUSA TENGGARA TIMUR
+short_name: null
+status: null
+tanggal_penetapan: '2011-10-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_69_2011_2011-10-03
+  kind: asli
+  source: dataset
+  date: '2011-10-03'
+  date_basis: tanggal_penetapan
+  text: perpres_69_2011_2011-10-03.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9c9d7d28cc4ef1420fa4c10aad25fd67b067be3c4961422393b7dda4250f48f2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9c9d7d28cc4ef1420fa4c10aad25fd67b067be3c4961422393b7dda4250f48f2
+  source_title: Perpres_no_69_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

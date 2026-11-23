@@ -1,0 +1,41 @@
+id: perpres_5_1959
+akn: /akn/id/act/perpres/1959/5
+type: perpres
+number: '5'
+year: 1959
+title: Peraturan Presiden Nomor 5 Tahun 1959 tentang Nama Jabatan, Gelar, Kedudukan
+  Dan Penghasilan Kepala Daerah Serta Kepala Dan Wakil Kepala Daerah Istimewa Yogyakarta
+  Presiden Republik Indonesia
+tentang: NAMA JABATAN, GELAR, KEDUDUKAN DAN PENGHASILAN KEPALA DAERAH SERTA KEPALA
+  DAN WAKIL KEPALA DAERAH ISTIMEWA YOGYAKARTA Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1959-09-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_5_1959_1959-09-26
+  kind: asli
+  source: dataset
+  date: '1959-09-26'
+  date_basis: tanggal_penetapan
+  text: perpres_5_1959_1959-09-26.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:63968a437ba171e42789fba269ad316d175383f57338594b0a63ae3f621c1e3d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:63968a437ba171e42789fba269ad316d175383f57338594b0a63ae3f621c1e3d
+  source_title: '5'
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 21
+  status: none_known

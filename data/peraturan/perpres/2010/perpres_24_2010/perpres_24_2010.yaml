@@ -1,0 +1,45 @@
+id: perpres_24_2010
+akn: /akn/id/act/perpres/2010/24
+type: perpres
+number: '24'
+year: 2010
+title: Peraturan Presiden Nomor 24 Tahun 2010 tentang Kedudukan, Tugas, Dan Fungsi
+  Kementerian Negara Serta Susunan Organisasi, Tugas, Dan Fungsi Eselon I Kementerian
+  Negara
+tentang: KEDUDUKAN, TUGAS, DAN FUNGSI KEMENTERIAN NEGARA SERTA SUSUNAN ORGANISASI,
+  TUGAS, DAN FUNGSI ESELON I KEMENTERIAN NEGARA
+short_name: null
+status: diubah
+tanggal_penetapan: '2010-04-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_24_2010_2010-04-14
+  kind: asli
+  source: dataset
+  date: '2010-04-14'
+  date_basis: tanggal_penetapan
+  text: perpres_24_2010_2010-04-14.txt
+  pasal_count: 709
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7867dd9eaa21294d45edbaad6fac40d233ac3572183b79546969fe82fb919e31
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7867dd9eaa21294d45edbaad6fac40d233ac3572183b79546969fe82fb919e31
+  source_title: Perpres_No.24_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 731
+  status: amended
+  amended_by:
+  - sha256:81714315013b3fcd22023dd2ccaab88e686f3b4aebaca356d60cf0e6a6c8f5f8
+  - sha256:840d196d4e477b8a1db3a5517268d6022efe375401d3a6cb15fe3c728ea6cfb1
+  - sha256:aa38fcf398cc06e405fddaa440e75fbd425f7b17c0c603ddb4b02107817923d1

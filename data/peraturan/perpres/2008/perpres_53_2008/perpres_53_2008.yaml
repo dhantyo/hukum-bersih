@@ -1,0 +1,30 @@
+id: perpres_53_2008
+akn: /akn/id/act/perpres/2008/53
+type: perpres
+number: '53'
+year: 2008
+title: Peraturan Presiden Nomor 53 Tahun 2008 tentang Biaya Penyelenggaraan Ibadah
+  Haji Tahun 1429 H/2008 M
+tentang: BIAYA PENYELENGGARAAN IBADAH HAJI TAHUN 1429 H/2008 M
+short_name: null
+status: dicabut
+tanggal_penetapan: '2008-08-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d4b372c1e048ab4007189b468637217a66fef43244f7cadc0933c36808acde2c
+  source_title: PERPRES_NO_53_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:7c4e4bd14a9c5c82d0785a9c4ced2256553c199201d5de718a755d6fe6e7c856
+parse_error: 'v13: rebuilt text has 8 pasal, the dataset lists 9'

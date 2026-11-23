@@ -1,0 +1,42 @@
+id: perpres_113_2014
+akn: /akn/id/act/perpres/2014/113
+type: perpres
+number: '113'
+year: 2014
+title: Peraturan Presiden Nomor 113 Tahun 2014 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Badan Pertanahan Nasional Republik Indonesia
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN BADAN PERTANAHAN NASIONAL REPUBLIK
+  INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2014-09-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_113_2014_2014-09-17
+  kind: asli
+  source: dataset
+  date: '2014-09-17'
+  date_basis: tanggal_penetapan
+  text: perpres_113_2014_2014-09-17.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:74631afdd1224c11e6182548d1653293d1a2a099d16f146bb4d6d5a7ea6e52a2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:74631afdd1224c11e6182548d1653293d1a2a099d16f146bb4d6d5a7ea6e52a2
+  source_title: Perpres_Nomor_113_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: revoked
+  revoked_by:
+  - sha256:4daaf8f0c156479d03d8d35a41305e567d41345e436c2ed6b3488c0b81c0b052

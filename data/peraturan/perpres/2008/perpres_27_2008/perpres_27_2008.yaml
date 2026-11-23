@@ -1,0 +1,41 @@
+id: perpres_27_2008
+akn: /akn/id/act/perpres/2008/27
+type: perpres
+number: '27'
+year: 2008
+title: Peraturan Presiden Nomor 27 Tahun 2008 tentang Badan Pengembangan Wilayah Surabaya
+  - Madura
+tentang: BADAN PENGEMBANGAN WILAYAH SURABAYA - MADURA
+short_name: null
+status: diubah
+tanggal_penetapan: '2008-05-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_27_2008_2008-05-07
+  kind: asli
+  source: dataset
+  date: '2008-05-07'
+  date_basis: tanggal_penetapan
+  text: perpres_27_2008_2008-05-07.txt
+  pasal_count: 23
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c115e1ea507d086585b1b093a5114c20b4107f26a58eda5b281b3e5dc049ea76
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c115e1ea507d086585b1b093a5114c20b4107f26a58eda5b281b3e5dc049ea76
+  source_title: PERPRES_NO_27_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 28
+  status: amended
+  amended_by:
+  - sha256:8ba9753f2a144a936e58b54061f321303ab3714ba837d1a9008b79506f765115

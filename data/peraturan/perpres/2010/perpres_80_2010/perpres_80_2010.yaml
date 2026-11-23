@@ -1,0 +1,31 @@
+id: perpres_80_2010
+akn: /akn/id/act/perpres/2010/80
+type: perpres
+number: '80'
+year: 2010
+title: Peraturan Presiden Nomor 80 Tahun 2010 tentang Perubahan Atas Peraturan Presiden
+  Nomor 58 Tahun 2010 Tentang Kementerian Sekretariat Negara
+tentang: PERUBAHAN ATAS PERATURAN PRESIDEN NOMOR 58 TAHUN 2010 TENTANG KEMENTERIAN
+  SEKRETARIAT NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2010-12-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2bf4bcbc6df1b194b480472b380a8df7f9d42311f1813c86d731957fb067c970
+  source_title: Perpres_No.80_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 22
+  status: revoked
+  revoked_by:
+  - sha256:3bd89cd442c3172ab189cd411d6c692b996ca591a7a2eeaaad3839dd86ec795e
+parse_error: 'v13: rebuilt text has 1 pasal, the dataset lists 15'

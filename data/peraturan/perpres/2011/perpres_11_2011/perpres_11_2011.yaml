@@ -1,0 +1,40 @@
+id: perpres_11_2011
+akn: /akn/id/act/perpres/2011/11
+type: perpres
+number: '11'
+year: 2011
+title: Peraturan Presiden Nomor 11 Tahun 2011 tentang Pendirian Sekolah Tinggi Agama
+  Buddha Negeri Raden Wijaya Wonogiri, Jawa Tengah
+tentang: PENDIRIAN SEKOLAH TINGGI AGAMA BUDDHA NEGERI RADEN WIJAYA WONOGIRI, JAWA
+  TENGAH
+short_name: null
+status: null
+tanggal_penetapan: '2011-02-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_11_2011_2011-02-24
+  kind: asli
+  source: dataset
+  date: '2011-02-24'
+  date_basis: tanggal_penetapan
+  text: perpres_11_2011_2011-02-24.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f4d370f9f83722bdf946d6a8b8835dd832a1fab588cb3b6158d22aea710ae355
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f4d370f9f83722bdf946d6a8b8835dd832a1fab588cb3b6158d22aea710ae355
+  source_title: Perpres_no_11_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

@@ -1,0 +1,45 @@
+id: perpres_24_1964
+akn: /akn/id/act/perpres/1964/24
+type: perpres
+number: '24'
+year: 1964
+title: Peraturan Presiden Nomor 24 Tahun 1964 tentang Pembayaran Gaji Pensiun Dan
+  Tunjangan Yang Bersifat Pensiun Kepada (Bekas) Pegawai Negeri Sipil, Anggota Kepolisian
+  Negara, Anggota Angkatan Perang Republik Indonesia Dan Pejabat-Pejabat Negeri Lainnya
+  Di Daerah Tingkat Ii Kepulauaun Riau Yang Meliputi Kawedanaan Tanjung Pinang, Lingga,
+  Karimun Dan Puluh Tujuh
+tentang: PEMBAYARAN GAJI PENSIUN DAN TUNJANGAN YANG BERSIFAT PENSIUN KEPADA (BEKAS)
+  PEGAWAI NEGERI SIPIL, ANGGOTA KEPOLISIAN NEGARA, ANGGOTA ANGKATAN PERANG REPUBLIK
+  INDONESIA DAN PEJABAT-PEJABAT NEGERI LAINNYA DI DAERAH TINGKAT II KEPULAUAUN RIAU
+  YANG MELIPUTI KAWEDANAAN TANJUNG PINANG, LINGGA, KARIMUN DAN PULUH TUJUH
+short_name: null
+status: null
+tanggal_penetapan: '1964-07-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_24_1964_1964-07-01
+  kind: asli
+  source: dataset
+  date: '1964-07-01'
+  date_basis: tanggal_penetapan
+  text: perpres_24_1964_1964-07-01.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4992b7aa506f3e5bd61d8bdb2cc620f7b7145f28f50b07b322177b079efab58b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4992b7aa506f3e5bd61d8bdb2cc620f7b7145f28f50b07b322177b079efab58b
+  source_title: Perpres_No.24_Tahun_1964
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: none_known

@@ -1,0 +1,41 @@
+id: perpres_36_2012
+akn: /akn/id/act/perpres/2012/36
+type: perpres
+number: '36'
+year: 2012
+title: Peraturan Presiden Nomor 36 Tahun 2012 tentang Penugasan Kepada Pt Pelabuhan
+  Indonesia Ii (Persero) Untuk Membangun Dan Mengoperasikan Terminal Kalibaru Pelabuhan
+  Tanjung Priok
+tentang: PENUGASAN KEPADA PT PELABUHAN INDONESIA II (PERSERO) UNTUK MEMBANGUN DAN
+  MENGOPERASIKAN TERMINAL KALIBARU PELABUHAN TANJUNG PRIOK
+short_name: null
+status: null
+tanggal_penetapan: '2012-04-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_36_2012_2012-04-05
+  kind: asli
+  source: dataset
+  date: '2012-04-05'
+  date_basis: tanggal_penetapan
+  text: perpres_36_2012_2012-04-05.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:39c7221741ea561e6d537314b356910f2e0cfff6b626956c4b7f5d98416dad37
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:39c7221741ea561e6d537314b356910f2e0cfff6b626956c4b7f5d98416dad37
+  source_title: Peraturan_Presiden_No_36_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

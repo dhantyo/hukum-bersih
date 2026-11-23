@@ -1,0 +1,41 @@
+id: perpres_76_2007
+akn: /akn/id/act/perpres/2007/76
+type: perpres
+number: '76'
+year: 2007
+title: Peraturan Presiden Nomor 76 Tahun 2007 tentang Kriteria Dan Persyaratan Penyusunan
+  Bidang Usaha Yang Tertutup Dan Bidang Usaha Yang Terbuka Dengan Persyaratan Di Bidang
+  Penanaman Modal
+tentang: KRITERIA DAN PERSYARATAN PENYUSUNAN BIDANG USAHA YANG TERTUTUP DAN BIDANG
+  USAHA YANG TERBUKA DENGAN PERSYARATAN DI BIDANG PENANAMAN MODAL
+short_name: null
+status: null
+tanggal_penetapan: '2007-07-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_76_2007_2007-07-03
+  kind: asli
+  source: dataset
+  date: '2007-07-03'
+  date_basis: tanggal_penetapan
+  text: perpres_76_2007_2007-07-03.txt
+  pasal_count: 18
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8f1c629f29de29f1a3780ca3acd9b36e72528e7416c252e163cde4350b8a45e7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8f1c629f29de29f1a3780ca3acd9b36e72528e7416c252e163cde4350b8a45e7
+  source_title: PERPRES_NO_76_TH_2007
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 21
+  status: none_known

@@ -1,0 +1,39 @@
+id: perpres_14_1963
+akn: /akn/id/act/perpres/1963/14
+type: perpres
+number: '14'
+year: 1963
+title: Peraturan Presiden Nomor 14 Tahun 1963 tentang Pemberian Bantuan Berupa Uang
+  Dan Pakaian Kepada Guru
+tentang: PEMBERIAN BANTUAN BERUPA UANG DAN PAKAIAN KEPADA GURU
+short_name: null
+status: null
+tanggal_penetapan: '1963-06-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_14_1963_1963-06-19
+  kind: asli
+  source: dataset
+  date: '1963-06-19'
+  date_basis: tanggal_penetapan
+  text: perpres_14_1963_1963-06-19.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:38766df461a5add42dfe00ffa7e611b2f65457c50a715904a45e07a37b9cae3d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:38766df461a5add42dfe00ffa7e611b2f65457c50a715904a45e07a37b9cae3d
+  source_title: Perpres_No.14_Tahun_1963
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

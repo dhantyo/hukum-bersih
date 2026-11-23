@@ -1,0 +1,39 @@
+id: perpres_33_2008
+akn: /akn/id/act/perpres/2008/33
+type: perpres
+number: '33'
+year: 2008
+title: Peraturan Presiden Nomor 33 Tahun 2008 tentang Tunjangan Jabatan Fungsional
+  Pengendali Frekuensi Radio
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENGENDALI FREKUENSI RADIO
+short_name: null
+status: null
+tanggal_penetapan: '2008-05-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_33_2008_2008-05-15
+  kind: asli
+  source: dataset
+  date: '2008-05-15'
+  date_basis: tanggal_penetapan
+  text: perpres_33_2008_2008-05-15.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8a5fda0082c48ff79a101659d2f06e3619afe7ea6a226d442b2902af9911bd4e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8a5fda0082c48ff79a101659d2f06e3619afe7ea6a226d442b2902af9911bd4e
+  source_title: PERPRES_NO_33_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

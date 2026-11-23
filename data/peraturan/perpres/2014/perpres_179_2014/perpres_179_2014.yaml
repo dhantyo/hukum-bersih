@@ -1,0 +1,39 @@
+id: perpres_179_2014
+akn: /akn/id/act/perpres/2014/179
+type: perpres
+number: '179'
+year: 2014
+title: Peraturan Presiden Nomor 179 Tahun 2014 tentang Rencana Tata Ruang Kawasan
+  Perbatasan Negara Di Provinsi Nusa Tenggara Timur
+tentang: RENCANA TATA RUANG KAWASAN PERBATASAN NEGARA DI PROVINSI NUSA TENGGARA TIMUR
+short_name: null
+status: null
+tanggal_penetapan: '2014-12-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_179_2014_2014-12-08
+  kind: asli
+  source: dataset
+  date: '2014-12-08'
+  date_basis: tanggal_penetapan
+  text: perpres_179_2014_2014-12-08.txt
+  pasal_count: 137
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d93e3983423b81b3f5d254bbceb7a03bb175c65fc1acd4131561c869bd44b292
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d93e3983423b81b3f5d254bbceb7a03bb175c65fc1acd4131561c869bd44b292
+  source_title: Perpres_Nomor_179_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 194
+  status: none_known

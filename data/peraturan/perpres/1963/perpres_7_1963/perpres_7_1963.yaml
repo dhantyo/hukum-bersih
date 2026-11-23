@@ -1,0 +1,39 @@
+id: perpres_7_1963
+akn: /akn/id/act/perpres/1963/7
+type: perpres
+number: '7'
+year: 1963
+title: Peraturan Presiden Nomor 7 Tahun 1963 tentang Aktivitas Perusahaan Dagang Negara
+  Dalam Rangka Pelaksanaan Deklarasi Ekonomi
+tentang: AKTIVITAS PERUSAHAAN DAGANG NEGARA DALAM RANGKA PELAKSANAAN DEKLARASI EKONOMI
+short_name: null
+status: null
+tanggal_penetapan: '1963-05-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_7_1963_1963-05-22
+  kind: asli
+  source: dataset
+  date: '1963-05-22'
+  date_basis: tanggal_penetapan
+  text: perpres_7_1963_1963-05-22.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ef5d30de1e690db7ff2b3c156dfd2abb3447b794749dc512c59ae25f5e65e261
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ef5d30de1e690db7ff2b3c156dfd2abb3447b794749dc512c59ae25f5e65e261
+  source_title: Perpres_No.7_Tahun_1963
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

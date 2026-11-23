@@ -1,0 +1,38 @@
+id: perpres_79_2008
+akn: /akn/id/act/perpres/2008/79
+type: perpres
+number: '79'
+year: 2008
+title: Peraturan Presiden Nomor 79 Tahun 2008 tentang Tunjangan Pengamanan Persandian
+tentang: TUNJANGAN PENGAMANAN PERSANDIAN
+short_name: null
+status: null
+tanggal_penetapan: '2008-12-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_79_2008_2008-12-30
+  kind: asli
+  source: dataset
+  date: '2008-12-30'
+  date_basis: tanggal_penetapan
+  text: perpres_79_2008_2008-12-30.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b525e2823bb26051c7e27d49e47e1e42ec97bbbeddbcbb868bf2e73b0025a56e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b525e2823bb26051c7e27d49e47e1e42ec97bbbeddbcbb868bf2e73b0025a56e
+  source_title: PERPRES_NO_79_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: none_known

@@ -1,0 +1,43 @@
+id: perpres_34_2009
+akn: /akn/id/act/perpres/2009/34
+type: perpres
+number: '34'
+year: 2009
+title: Peraturan Presiden Nomor 34 Tahun 2009 tentang Pengesahan Amendments To The
+  Agreement Establishing The Asean Promotion Centre On Trade, Investment And Tourism
+  (Perubahan Terhadap Persetujuan Mengenai Pendirian Pusat Promosi Asean Dibidang
+  Perdagangan, Penanaman Modal Dan Pariwisata)
+tentang: PENGESAHAN AMENDMENTS TO THE AGREEMENT ESTABLISHING THE ASEAN PROMOTION CENTRE
+  ON TRADE, INVESTMENT AND TOURISM (PERUBAHAN TERHADAP PERSETUJUAN MENGENAI PENDIRIAN
+  PUSAT PROMOSI ASEAN DIBIDANG PERDAGANGAN, PENANAMAN MODAL DAN PARIWISATA)
+short_name: null
+status: null
+tanggal_penetapan: '2009-08-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_34_2009_2009-08-05
+  kind: asli
+  source: dataset
+  date: '2009-08-05'
+  date_basis: tanggal_penetapan
+  text: perpres_34_2009_2009-08-05.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ce7a35dec00dc2b9f1b938ba26ccb112d059913ecf5bd38650eb044d0ed5096a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ce7a35dec00dc2b9f1b938ba26ccb112d059913ecf5bd38650eb044d0ed5096a
+  source_title: PERPRES_No.34_TH_2009
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

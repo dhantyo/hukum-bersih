@@ -1,0 +1,42 @@
+id: perpres_31_2005
+akn: /akn/id/act/perpres/2005/31
+type: perpres
+number: '31'
+year: 2005
+title: Peraturan Presiden Nomor 31 Tahun 2005 tentang Sekretariat Negara Dan Sekretariat
+  Kabinet
+tentang: SEKRETARIAT NEGARA DAN SEKRETARIAT KABINET
+short_name: null
+status: dicabut
+tanggal_penetapan: '2005-04-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_31_2005_2005-04-19
+  kind: asli
+  source: dataset
+  date: '2005-04-19'
+  date_basis: tanggal_penetapan
+  text: perpres_31_2005_2005-04-19.txt
+  pasal_count: 51
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:772765e8dd5250b56e9238bf4cfdd1f73c0c8aab96e986eb55983ab4060c9146
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:772765e8dd5250b56e9238bf4cfdd1f73c0c8aab96e986eb55983ab4060c9146
+  source_title: PERPRES_NO_31_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 62
+  status: revoked
+  revoked_by:
+  - sha256:0e83fd9615117608ed7c762f7cf645fde0d32dbca7ea57ea4aeb29f06288fadb
+  - sha256:d66f7203255d509834171a7a6bef4a428a4f4e57372a2f6896457a606c5a3667

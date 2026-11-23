@@ -1,0 +1,40 @@
+id: perpres_72_2014
+akn: /akn/id/act/perpres/2014/72
+type: perpres
+number: '72'
+year: 2014
+title: Peraturan Presiden Nomor 72 Tahun 2014 tentang Penggunaantenaga Kerja Asing
+  Serta Pelaksanaan Pendidikan Dan Pelatihantenaga Kerja Pendamping Denganrahmattuhanyangmahaesa
+tentang: PENGGUNAANTENAGA KERJA ASING SERTA PELAKSANAAN PENDIDIKAN DAN PELATIHANTENAGA
+  KERJA PENDAMPING DENGANRAHMATTUHANYANGMAHAESA
+short_name: null
+status: null
+tanggal_penetapan: '2014-07-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_72_2014_2014-07-10
+  kind: asli
+  source: dataset
+  date: '2014-07-10'
+  date_basis: tanggal_penetapan
+  text: perpres_72_2014_2014-07-10.txt
+  pasal_count: 18
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e955bb2850302bd9f39ea4f583a19222463764e448b4ce7886edff53e19bd7e3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e955bb2850302bd9f39ea4f583a19222463764e448b4ce7886edff53e19bd7e3
+  source_title: Perpres_Nomor_72_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: none_known

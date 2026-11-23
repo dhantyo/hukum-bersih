@@ -1,0 +1,41 @@
+id: perpres_4_2016
+akn: /akn/id/act/perpres/2016/4
+type: perpres
+number: '4'
+year: 2016
+title: Peraturan Presiden Nomor 4 Tahun 2016 tentang Percepatan Pembangunan Infrastruktur
+  Ketenagalistrikan
+tentang: PERCEPATAN PEMBANGUNAN INFRASTRUKTUR KETENAGALISTRIKAN
+short_name: null
+status: diubah
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_4_2016_2016
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: perpres_4_2016_2016.txt
+  pasal_count: 47
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ef0becda177578889f3eb19c5d5de22876aae5abdbc5e4771b02f484a8652541
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ef0becda177578889f3eb19c5d5de22876aae5abdbc5e4771b02f484a8652541
+  source_title: Perpres_Nomor_4_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 54
+  status: amended
+  amended_by:
+  - sha256:c2cb71406f50ec26f0ca9f0b13ef5d2d635adcd045c773054221a66db48bb900

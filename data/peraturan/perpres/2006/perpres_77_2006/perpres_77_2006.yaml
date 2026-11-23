@@ -1,0 +1,40 @@
+id: perpres_77_2006
+akn: /akn/id/act/perpres/2006/77
+type: perpres
+number: '77'
+year: 2006
+title: Peraturan Presiden Nomor 77 Tahun 2006 tentang Perubahan Sekolah Tinggi Seni
+  Indonesia Surakarta Menjadi Institut Seni Indonesia Surakarta
+tentang: PERUBAHAN SEKOLAH TINGGI SENI INDONESIA SURAKARTA MENJADI INSTITUT SENI INDONESIA
+  SURAKARTA
+short_name: null
+status: null
+tanggal_penetapan: '2006-07-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_77_2006_2006-07-20
+  kind: asli
+  source: dataset
+  date: '2006-07-20'
+  date_basis: tanggal_penetapan
+  text: perpres_77_2006_2006-07-20.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ba2a083731e785939899eed7873c0ccb2f66ad01fda0daa0e45f752477916adb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ba2a083731e785939899eed7873c0ccb2f66ad01fda0daa0e45f752477916adb
+  source_title: PERPRES_No.77_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

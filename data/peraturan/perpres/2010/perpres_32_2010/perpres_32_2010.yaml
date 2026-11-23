@@ -1,0 +1,42 @@
+id: perpres_32_2010
+akn: /akn/id/act/perpres/2010/32
+type: perpres
+number: '32'
+year: 2010
+title: Peraturan Presiden Nomor 32 Tahun 2010 tentang Komite Inovasi Nasional
+tentang: KOMITE INOVASI NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2010-05-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_32_2010_2010-05-20
+  kind: asli
+  source: dataset
+  date: '2010-05-20'
+  date_basis: tanggal_penetapan
+  text: perpres_32_2010_2010-05-20.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:02b754edc76c5d3d2d9fdd840ec05c06c2bfe3ea5eb1f62de9071b63d484f4e9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:02b754edc76c5d3d2d9fdd840ec05c06c2bfe3ea5eb1f62de9071b63d484f4e9
+  source_title: Perpres_No.32_tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 16
+  status: revoked
+  revoked_by:
+  - sha256:32c16726fc51a0388f2df038eba961fb1f82252f9953f7a193cf97c4763e9ede
+  amended_by:
+  - sha256:99c6e0b5870e71a08f20c5435131b4a6ab443197edfd63b72d57224c8508ecb1

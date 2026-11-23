@@ -1,0 +1,39 @@
+id: perpres_64_2015
+akn: /akn/id/act/perpres/2015/64
+type: perpres
+number: '64'
+year: 2015
+title: Peraturan Presiden Nomor 64 Tahun 2015 tentang Biaya Penyelenggaraan Ibadah
+  Haji Tahun 1436H/2015M
+tentang: BIAYA PENYELENGGARAAN IBADAH HAJI TAHUN 1436H/2015M
+short_name: null
+status: null
+tanggal_penetapan: '2015-05-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_64_2015_2015-05-21
+  kind: asli
+  source: dataset
+  date: '2015-05-21'
+  date_basis: tanggal_penetapan
+  text: perpres_64_2015_2015-05-21.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fd91b7051531dbb7893b3671f4f638f210f98aad51c47388bfb2062556c4f42c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fd91b7051531dbb7893b3671f4f638f210f98aad51c47388bfb2062556c4f42c
+  source_title: Perpres_Nomor_64_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

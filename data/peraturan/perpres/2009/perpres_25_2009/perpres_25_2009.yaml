@@ -1,0 +1,41 @@
+id: perpres_25_2009
+akn: /akn/id/act/perpres/2009/25
+type: perpres
+number: '25'
+year: 2009
+title: Peraturan Presiden Nomor 25 Tahun 2009 tentang Pengesahan Asean Framework Agreement
+  For The Integration Of Priority Sectors (Persetujuan Kerangka Kerja Asean Untuk
+  Integrasi Sektor-Sektor Prioritas)
+tentang: PENGESAHAN ASEAN FRAMEWORK AGREEMENT FOR THE INTEGRATION OF PRIORITY SECTORS
+  (PERSETUJUAN KERANGKA KERJA ASEAN UNTUK INTEGRASI SEKTOR-SEKTOR PRIORITAS)
+short_name: null
+status: null
+tanggal_penetapan: '2009-06-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_25_2009_2009-06-11
+  kind: asli
+  source: dataset
+  date: '2009-06-11'
+  date_basis: tanggal_penetapan
+  text: perpres_25_2009_2009-06-11.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5d0538822b9dd2f92f470bee77a92085eb2ae5ba851a52ee0e3da901ab91cc9d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5d0538822b9dd2f92f470bee77a92085eb2ae5ba851a52ee0e3da901ab91cc9d
+  source_title: PERPRES_No.25_TH_2009
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 8
+  status: none_known

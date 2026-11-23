@@ -1,0 +1,39 @@
+id: perpres_108_2013
+akn: /akn/id/act/perpres/2013/108
+type: perpres
+number: '108'
+year: 2013
+title: Peraturan Presiden Nomor 108 Tahun 2013 tentang Bentuk Dan Isi Laporan Pengelolaan
+  Program Jaminan Sosial
+tentang: BENTUK DAN ISI LAPORAN PENGELOLAAN PROGRAM JAMINAN SOSIAL
+short_name: null
+status: null
+tanggal_penetapan: '2013-12-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_108_2013_2013-12-27
+  kind: asli
+  source: dataset
+  date: '2013-12-27'
+  date_basis: tanggal_penetapan
+  text: perpres_108_2013_2013-12-27.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0722ba5151fb1047269f1406ccb3f1476b8add5b457fd43e8097f470b9c3704e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0722ba5151fb1047269f1406ccb3f1476b8add5b457fd43e8097f470b9c3704e
+  source_title: Perpres_108_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 21
+  status: none_known

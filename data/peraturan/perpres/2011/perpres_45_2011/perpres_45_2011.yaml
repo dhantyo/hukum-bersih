@@ -1,0 +1,41 @@
+id: perpres_45_2011
+akn: /akn/id/act/perpres/2011/45
+type: perpres
+number: '45'
+year: 2011
+title: Peraturan Presiden Nomor 45 Tahun 2011 tentang Rencana Tata Ruang Kawasan Perkotaan
+  Denpasar, Badung, Gianyar, Dan Tabanan
+tentang: RENCANA TATA RUANG KAWASAN PERKOTAAN DENPASAR, BADUNG, GIANYAR, DAN TABANAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2011-07-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_45_2011_2011-07-27
+  kind: asli
+  source: dataset
+  date: '2011-07-27'
+  date_basis: tanggal_penetapan
+  text: perpres_45_2011_2011-07-27.txt
+  pasal_count: 124
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:cb32ae09af1be9e7fff29b168001e42e087869934888ab6bef8e799366d6d21e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:cb32ae09af1be9e7fff29b168001e42e087869934888ab6bef8e799366d6d21e
+  source_title: Perpres_no_45_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 159
+  status: amended
+  amended_by:
+  - sha256:f922b38229e4e7458c24f47264fac025669abf1f79e93a6f09f38217297e46ab

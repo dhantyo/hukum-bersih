@@ -1,0 +1,39 @@
+id: perpres_50_2014
+akn: /akn/id/act/perpres/2014/50
+type: perpres
+number: '50'
+year: 2014
+title: Peraturan Presiden Nomor 50 Tahun 2014 tentang Organisasi Dan Tata Kerja Komisi
+  Pengawas Haji Indonesia
+tentang: ORGANISASI DAN TATA KERJA KOMISI PENGAWAS HAJI INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2014-05-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_50_2014_2014-05-30
+  kind: asli
+  source: dataset
+  date: '2014-05-30'
+  date_basis: tanggal_penetapan
+  text: perpres_50_2014_2014-05-30.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ce3821acb0091efda91c2dd539dae1047860e7ad471c7e084f9d9f5237041d69
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ce3821acb0091efda91c2dd539dae1047860e7ad471c7e084f9d9f5237041d69
+  source_title: Perpres_Nomor_50_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 25
+  status: none_known

@@ -1,0 +1,40 @@
+id: perpres_89_2016
+akn: /akn/id/act/perpres/2016/89
+type: perpres
+number: '89'
+year: 2016
+title: Peraturan Presiden Nomor 89 Tahun 2016 tentang Hak Keuangan Dan Fasilitas Lainnya
+  Bagi Anggota Komite Nasional Keselamatan Transportasi Dan Investigator
+tentang: HAK KEUANGAN DAN FASILITAS LAINNYA BAGI ANGGOTA KOMITE NASIONAL KESELAMATAN
+  TRANSPORTASI DAN INVESTIGATOR
+short_name: null
+status: null
+tanggal_penetapan: '2016-10-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_89_2016_2016-10-31
+  kind: asli
+  source: dataset
+  date: '2016-10-31'
+  date_basis: tanggal_penetapan
+  text: perpres_89_2016_2016-10-31.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:64862624570e6c1cab33a1253c3534b0a44e1e3369da33dbc82934157fd493a5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:64862624570e6c1cab33a1253c3534b0a44e1e3369da33dbc82934157fd493a5
+  source_title: Perpres_Nomor_89_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

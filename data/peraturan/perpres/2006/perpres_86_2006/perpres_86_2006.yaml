@@ -1,0 +1,42 @@
+id: perpres_86_2006
+akn: /akn/id/act/perpres/2006/86
+type: perpres
+number: '86'
+year: 2006
+title: Peraturan Presiden Nomor 86 Tahun 2006 tentang Pemberian Jaminan Pemerintah
+  Untuk Percepatan Pembangunan Pembangkit Tenaga Listrik Yang Menggunakan Batubara
+tentang: PEMBERIAN JAMINAN PEMERINTAH UNTUK PERCEPATAN PEMBANGUNAN PEMBANGKIT TENAGA
+  LISTRIK YANG MENGGUNAKAN BATUBARA
+short_name: null
+status: diubah
+tanggal_penetapan: '2006-10-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_86_2006_2006-10-18
+  kind: asli
+  source: dataset
+  date: '2006-10-18'
+  date_basis: tanggal_penetapan
+  text: perpres_86_2006_2006-10-18.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0c6da723edf74cbeb3810010aa2170dc4792e289076200837754b2c60b6fa26a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0c6da723edf74cbeb3810010aa2170dc4792e289076200837754b2c60b6fa26a
+  source_title: PERPRES_No.86_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: amended
+  amended_by:
+  - sha256:607d776a333381a62637ab83632b37dccd78eadca07931fb7965d408dc625efa

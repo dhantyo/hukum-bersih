@@ -1,0 +1,42 @@
+id: perpres_24_1963
+akn: /akn/id/act/perpres/1963/24
+type: perpres
+number: '24'
+year: 1963
+title: Peraturan Presiden Nomor 24 Tahun 1963 tentang Dewan Penerbangan Dan Angkasaluar
+  Nasional Republik Indonesia Presiden Republik Indonesia
+tentang: DEWAN PENERBANGAN DAN ANGKASALUAR NASIONAL REPUBLIK INDONESIA PRESIDEN REPUBLIK
+  INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1963-11-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_24_1963_1963-11-27
+  kind: asli
+  source: dataset
+  date: '1963-11-27'
+  date_basis: tanggal_penetapan
+  text: perpres_24_1963_1963-11-27.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bd23c54a21ac3e269768b07a477553b87c267ee6729f4ea4cfd812661ab6c0bf
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bd23c54a21ac3e269768b07a477553b87c267ee6729f4ea4cfd812661ab6c0bf
+  source_title: Perpres_No.24_Tahun_1963
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 23
+  status: revoked
+  revoked_by:
+  - sha256:833212dd173f0f9ece75eaca96ea5173d364da667c45a83bc75e0945c1b61d46

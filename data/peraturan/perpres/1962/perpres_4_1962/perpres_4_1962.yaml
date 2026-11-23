@@ -1,0 +1,39 @@
+id: perpres_4_1962
+akn: /akn/id/act/perpres/1962/4
+type: perpres
+number: '4'
+year: 1962
+title: Peraturan Presiden Nomor 4 Tahun 1962 tentang Pokok-Pokok Organisasi Aparatur
+  Pemerintahan Negara Pada Tingkat Tertinggi
+tentang: POKOK-POKOK ORGANISASI APARATUR PEMERINTAHAN NEGARA PADA TINGKAT TERTINGGI
+short_name: null
+status: null
+tanggal_penetapan: '1962-07-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_4_1962_1962-07-26
+  kind: asli
+  source: dataset
+  date: '1962-07-26'
+  date_basis: tanggal_penetapan
+  text: perpres_4_1962_1962-07-26.txt
+  pasal_count: 29
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1190bbf71a8be8c73e449ecaa6dfb93da575386bf7aef88a0247828ad8fce239
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1190bbf71a8be8c73e449ecaa6dfb93da575386bf7aef88a0247828ad8fce239
+  source_title: Perpres_No.4_Tahun_1962
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 35
+  status: none_known

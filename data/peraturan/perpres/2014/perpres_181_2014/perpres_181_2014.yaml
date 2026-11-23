@@ -1,0 +1,40 @@
+id: perpres_181_2014
+akn: /akn/id/act/perpres/2014/181
+type: perpres
+number: '181'
+year: 2014
+title: Peraturan Presiden Nomor 181 Tahun 2014 tentang Perubahan Sekolah Tinggi Agama
+  Islam Negeri Bukittinggi Menjadi Institut Agama Islam Negeri Bukittinggi
+tentang: PERUBAHAN SEKOLAH TINGGI AGAMA ISLAM NEGERI BUKITTINGGI MENJADI INSTITUT
+  AGAMA ISLAM NEGERI BUKITTINGGI
+short_name: null
+status: null
+tanggal_penetapan: '2014-12-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_181_2014_2014-12-18
+  kind: asli
+  source: dataset
+  date: '2014-12-18'
+  date_basis: tanggal_penetapan
+  text: perpres_181_2014_2014-12-18.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:25e9071c67e6328d293539ff716f1e6bb4b4ba52c210737377576061ea57aa83
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:25e9071c67e6328d293539ff716f1e6bb4b4ba52c210737377576061ea57aa83
+  source_title: Perpres_Nomor_181_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

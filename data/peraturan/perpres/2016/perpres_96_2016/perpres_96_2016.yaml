@@ -1,0 +1,40 @@
+id: perpres_96_2016
+akn: /akn/id/act/perpres/2016/96
+type: perpres
+number: '96'
+year: 2016
+title: Peraturan Presiden Nomor 96 Tahun 2016 tentang Honorarium/Tunjangan Kerja Ketua,
+  Wakil Ketua, Dan Anggota Lembaga Sensor Film
+tentang: HONORARIUM/TUNJANGAN KERJA KETUA, WAKIL KETUA, DAN ANGGOTA LEMBAGA SENSOR
+  FILM
+short_name: null
+status: null
+tanggal_penetapan: '2016-11-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_96_2016_2016-11-22
+  kind: asli
+  source: dataset
+  date: '2016-11-22'
+  date_basis: tanggal_penetapan
+  text: perpres_96_2016_2016-11-22.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e0a53adbe79ce97aca14f74c68fdfbf461e3cdd9c517736f93bc739d0072e682
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e0a53adbe79ce97aca14f74c68fdfbf461e3cdd9c517736f93bc739d0072e682
+  source_title: Perpres_Nomor_96_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

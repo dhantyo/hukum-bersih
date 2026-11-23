@@ -1,0 +1,39 @@
+id: perpres_76_2014
+akn: /akn/id/act/perpres/2014/76
+type: perpres
+number: '76'
+year: 2014
+title: Peraturan Presiden Nomor 76 Tahun 2014 tentang Pengelola Portal Indonesia National
+  Single Window
+tentang: PENGELOLA PORTAL INDONESIA NATIONAL SINGLE WINDOW
+short_name: null
+status: null
+tanggal_penetapan: '2014-07-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_76_2014_2014-07-17
+  kind: asli
+  source: dataset
+  date: '2014-07-17'
+  date_basis: tanggal_penetapan
+  text: perpres_76_2014_2014-07-17.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:aa2d58e7442aa42fcb9a26abac9ec75304fc80f5b3dd45397a876d6bd344cdf5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:aa2d58e7442aa42fcb9a26abac9ec75304fc80f5b3dd45397a876d6bd344cdf5
+  source_title: Perpres_Nomor_76_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 22
+  status: none_known

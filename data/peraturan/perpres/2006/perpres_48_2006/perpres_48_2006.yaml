@@ -1,0 +1,41 @@
+id: perpres_48_2006
+akn: /akn/id/act/perpres/2006/48
+type: perpres
+number: '48'
+year: 2006
+title: Peraturan Presiden Nomor 48 Tahun 2006 tentang Tunjangan Jabatan Fungsional
+  Pranata Nuklir
+tentang: TUNJANGAN JABATAN FUNGSIONAL PRANATA NUKLIR
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-05-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_48_2006_2006-05-26
+  kind: asli
+  source: dataset
+  date: '2006-05-26'
+  date_basis: tanggal_penetapan
+  text: perpres_48_2006_2006-05-26.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:48ae59f62fe6c0385b707bcc494ea7107153646896d04206bd232b301efc2d3f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:48ae59f62fe6c0385b707bcc494ea7107153646896d04206bd232b301efc2d3f
+  source_title: PERPRES_No.48_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:6dc630f980e379ec37b147a1a39d836d5eac2e3ad0fa3e4256de27d1f34ab492

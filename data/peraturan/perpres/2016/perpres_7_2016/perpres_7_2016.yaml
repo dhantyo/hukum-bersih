@@ -1,0 +1,40 @@
+id: perpres_7_2016
+akn: /akn/id/act/perpres/2016/7
+type: perpres
+number: '7'
+year: 2016
+title: Peraturan Presiden Nomor 7 Tahun 2016 tentang Sertifikasi Bendahara Pada Satuan
+  Kerja Pengelola Anggaran Pendapatan Dan Belanja Negara
+tentang: SERTIFIKASI BENDAHARA PADA SATUAN KERJA PENGELOLA ANGGARAN PENDAPATAN DAN
+  BELANJA NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '2016-01-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_7_2016_2016-01-18
+  kind: asli
+  source: dataset
+  date: '2016-01-18'
+  date_basis: tanggal_penetapan
+  text: perpres_7_2016_2016-01-18.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:478e8b09a32eb695508428b0c7ad661e21303179577cc5368614d6a927948ddc
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:478e8b09a32eb695508428b0c7ad661e21303179577cc5368614d6a927948ddc
+  source_title: Perpres_Nomor_7_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

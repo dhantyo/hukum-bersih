@@ -1,0 +1,44 @@
+id: perpres_50_2009
+akn: /akn/id/act/perpres/2009/50
+type: perpres
+number: '50'
+year: 2009
+title: Peraturan Presiden Nomor 50 Tahun 2009 tentang Pengesahan Agreement On Comprehensive
+  Economic Partnership Among Member States Of The Association Of Southeast Asian Nations
+  And Japan (Persetujuan Kemitraan Ekonomi Menyeluruh Antar Negara-Negara Anggota
+  Perhimpunan Bangsa-Bangsa Asia Tenggara Dan Jepang)
+tentang: PENGESAHAN AGREEMENT ON COMPREHENSIVE ECONOMIC PARTNERSHIP AMONG MEMBER STATES
+  OF THE ASSOCIATION OF SOUTHEAST ASIAN NATIONS AND JAPAN (PERSETUJUAN KEMITRAAN EKONOMI
+  MENYELURUH ANTAR NEGARA-NEGARA ANGGOTA PERHIMPUNAN BANGSA-BANGSA ASIA TENGGARA DAN
+  JEPANG)
+short_name: null
+status: null
+tanggal_penetapan: '2009-11-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_50_2009_2009-11-19
+  kind: asli
+  source: dataset
+  date: '2009-11-19'
+  date_basis: tanggal_penetapan
+  text: perpres_50_2009_2009-11-19.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bf355fa684311914ecec02f1f1c7b048511f8fa6c0e980b662797e9e17e6147b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bf355fa684311914ecec02f1f1c7b048511f8fa6c0e980b662797e9e17e6147b
+  source_title: PERPRES_No.50_TH_2009
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

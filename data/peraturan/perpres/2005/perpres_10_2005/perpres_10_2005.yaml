@@ -1,0 +1,49 @@
+id: perpres_10_2005
+akn: /akn/id/act/perpres/2005/10
+type: perpres
+number: '10'
+year: 2005
+title: Peraturan Presiden Nomor 10 Tahun 2005 tentang Unit Organisasi Dan Tugas Eselon
+  I Kementerian Negara Republik Indonesia
+tentang: UNIT ORGANISASI DAN TUGAS ESELON I KEMENTERIAN NEGARA REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2005-01-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_10_2005_2005-01-31
+  kind: asli
+  source: dataset
+  date: '2005-01-31'
+  date_basis: tanggal_penetapan
+  text: perpres_10_2005_2005-01-31.txt
+  pasal_count: 71
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c163433d2e62f753e89809e9d1195e29abc30bcc0952ea25385cc6dc144ea6f7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c163433d2e62f753e89809e9d1195e29abc30bcc0952ea25385cc6dc144ea6f7
+  source_title: PERPRES_NO_10_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 91
+  status: revoked
+  revoked_by:
+  - sha256:7867dd9eaa21294d45edbaad6fac40d233ac3572183b79546969fe82fb919e31
+  - sha256:94f9d7638b9dd48da85fd5aa110adc4ec1ed803d42fad39bc044b3fe81ed599e
+  - sha256:ed52e3f207bf330a7dbc67ad3e5b30301c435bb4f680f6194f72a05a77d4728d
+  amended_by:
+  - sha256:367d172d421f7f85c6485f44918a8580bcb5ca7d85c4386fc732aa9d9dbe465a
+  - sha256:53e6482e9bdcc50dff289360cd7e7b9dda7ee78e64ffd3eaf2081bb5ff2ad52e
+  - sha256:80ca0487dae0486a562d0cdedcbae216ecfebeb06fc5d3f6fb6b0fc930ea3520
+  - sha256:a4c51a5ca140b75cdcf0c41236126b35ccdbe1bebacf0bd0d4205b8f67e72e3a
+  - sha256:eaea8496e9914e24bf06bf55d0d5bca629ba6e916c500ba435ed657afc545771

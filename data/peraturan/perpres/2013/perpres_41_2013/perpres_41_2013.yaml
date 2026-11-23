@@ -1,0 +1,38 @@
+id: perpres_41_2013
+akn: /akn/id/act/perpres/2013/41
+type: perpres
+number: '41'
+year: 2013
+title: Peraturan Presiden Nomor 41 Tahun 2013
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '2013-05-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_41_2013_2013-05-24
+  kind: asli
+  source: dataset
+  date: '2013-05-24'
+  date_basis: tanggal_penetapan
+  text: perpres_41_2013_2013-05-24.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:868e7bfaec640da458682beed04b4430f96df2128311e60d4736048c07c99958
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:868e7bfaec640da458682beed04b4430f96df2128311e60d4736048c07c99958
+  source_title: Perpres_41_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

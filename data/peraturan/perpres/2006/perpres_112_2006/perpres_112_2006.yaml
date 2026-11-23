@@ -1,0 +1,39 @@
+id: perpres_112_2006
+akn: /akn/id/act/perpres/2006/112
+type: perpres
+number: '112'
+year: 2006
+title: Peraturan Presiden Nomor 112 Tahun 2006 tentang Tim Nasional Pembakuan Nama
+  Rupabumi
+tentang: TIM NASIONAL PEMBAKUAN NAMA RUPABUMI
+short_name: null
+status: null
+tanggal_penetapan: '2006-12-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_112_2006_2006-12-29
+  kind: asli
+  source: dataset
+  date: '2006-12-29'
+  date_basis: tanggal_penetapan
+  text: perpres_112_2006_2006-12-29.txt
+  pasal_count: 17
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7ea5ba2571dd674cca14ba9b969c59af7379123441dd3da9a33f7e618c536982
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7ea5ba2571dd674cca14ba9b969c59af7379123441dd3da9a33f7e618c536982
+  source_title: PRPS_NO_112_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 20
+  status: none_known

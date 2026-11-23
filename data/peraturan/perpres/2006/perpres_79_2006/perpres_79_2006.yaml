@@ -1,0 +1,40 @@
+id: perpres_79_2006
+akn: /akn/id/act/perpres/2006/79
+type: perpres
+number: '79'
+year: 2006
+title: Peraturan Presiden Nomor 79 Tahun 2006 tentang Perubahan Kelima Atas Keputusan
+  Presiden Nomor 80 Tahun 2003 Tentang Pedoman Pelaksanaan Pengadaan Barang/Jasa Pemerintah
+tentang: PERUBAHAN KELIMA ATAS KEPUTUSAN PRESIDEN NOMOR 80 TAHUN 2003 TENTANG PEDOMAN
+  PELAKSANAAN PENGADAAN BARANG/JASA PEMERINTAH
+short_name: null
+status: null
+tanggal_penetapan: '2006-09-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_79_2006_2006-09-08
+  kind: asli
+  source: dataset
+  date: '2006-09-08'
+  date_basis: tanggal_penetapan
+  text: perpres_79_2006_2006-09-08.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:626d3c73a605dc938df44e24a2afb15553db9189caa525635d41bdaf95c512cd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:626d3c73a605dc938df44e24a2afb15553db9189caa525635d41bdaf95c512cd
+  source_title: PERPRES_No.79_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

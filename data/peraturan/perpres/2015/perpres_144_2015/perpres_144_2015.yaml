@@ -1,0 +1,41 @@
+id: perpres_144_2015
+akn: /akn/id/act/perpres/2015/144
+type: perpres
+number: '144'
+year: 2015
+title: Peraturan Presiden Nomor 144 Tahun 2015 tentang Besaran Hak Keuangan Bagi Staf
+  Khusus Presiden, Staf Khusus Wakil Presiden, Wakil Sekretarjs Pribadi Presiden,
+  Asisten, Dan Pembantu Asisten
+tentang: BESARAN HAK KEUANGAN BAGI STAF KHUSUS PRESIDEN, STAF KHUSUS WAKIL PRESIDEN,
+  WAKIL SEKRETARJS PRIBADI PRESIDEN, ASISTEN, DAN PEMBANTU ASISTEN
+short_name: null
+status: null
+tanggal_penetapan: '2015-12-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_144_2015_2015-12-28
+  kind: asli
+  source: dataset
+  date: '2015-12-28'
+  date_basis: tanggal_penetapan
+  text: perpres_144_2015_2015-12-28.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e84f31c1d02bad36755ed8bd5ae747dfb627d7bc1f7724e65b1378083f0935d6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e84f31c1d02bad36755ed8bd5ae747dfb627d7bc1f7724e65b1378083f0935d6
+  source_title: Perpres_Nomor_144_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: none_known

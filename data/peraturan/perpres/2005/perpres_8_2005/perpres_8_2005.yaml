@@ -1,0 +1,30 @@
+id: perpres_8_2005
+akn: /akn/id/act/perpres/2005/8
+type: perpres
+number: '8'
+year: 2005
+title: Peraturan Presiden Nomor 8 Tahun 2005 tentang Tunjangan Jabatan Fungsional
+  Penggerak Swadaya Masyarakat
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENGGERAK SWADAYA MASYARAKAT
+short_name: null
+status: dicabut
+tanggal_penetapan: '2005-01-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6fdb5fd191c2bebaf829f34b988d32f35020aa3ea919a4f017689168e0280e70
+  source_title: PERPRES_NO_8_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:97963ada561653d526a2a27677c162dd5472006642de5d8b191ac388f177c22e
+parse_error: 'v13: rebuilt text has 6 pasal, the dataset lists 7'

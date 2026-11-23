@@ -1,0 +1,39 @@
+id: perpres_192_2014
+akn: /akn/id/act/perpres/2014/192
+type: perpres
+number: '192'
+year: 2014
+title: Peraturan Presiden Nomor 192 Tahun 2014 tentang Badan Pengawasan Keuangan Dan
+  Pembangunan
+tentang: BADAN PENGAWASAN KEUANGAN DAN PEMBANGUNAN
+short_name: null
+status: null
+tanggal_penetapan: '2014-12-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_192_2014_2014-12-31
+  kind: asli
+  source: dataset
+  date: '2014-12-31'
+  date_basis: tanggal_penetapan
+  text: perpres_192_2014_2014-12-31.txt
+  pasal_count: 50
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:eb4dd2b43e4fa9c6ef9a1c487b2f0c133f2fe9d988adcc8534e26e507ca593d8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:eb4dd2b43e4fa9c6ef9a1c487b2f0c133f2fe9d988adcc8534e26e507ca593d8
+  source_title: Perpres_Nomor_192_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 61
+  status: none_known

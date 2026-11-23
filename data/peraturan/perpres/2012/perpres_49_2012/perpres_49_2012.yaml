@@ -1,0 +1,41 @@
+id: perpres_49_2012
+akn: /akn/id/act/perpres/2012/49
+type: perpres
+number: '49'
+year: 2012
+title: Peraturan Presiden Nomor 49 Tahun 2012 tentang Kepaniteraan Dan Sekretariat
+  Jenderal Mahkamah Konstitusi
+tentang: KEPANITERAAN DAN SEKRETARIAT JENDERAL MAHKAMAH KONSTITUSI
+short_name: null
+status: diubah
+tanggal_penetapan: '2012-04-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_49_2012_2012-04-24
+  kind: asli
+  source: dataset
+  date: '2012-04-24'
+  date_basis: tanggal_penetapan
+  text: perpres_49_2012_2012-04-24.txt
+  pasal_count: 25
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:44bfcc4db7bdff460c6cf78b99fa755579ceba6f93af8f3cd164c52d9398cdbd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:44bfcc4db7bdff460c6cf78b99fa755579ceba6f93af8f3cd164c52d9398cdbd
+  source_title: Peraturan_Presiden_No_49_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 32
+  status: amended
+  amended_by:
+  - sha256:830bbaf409d2a6240b9e633178ae01027a30087847d300443a3b63c8f10aed7d

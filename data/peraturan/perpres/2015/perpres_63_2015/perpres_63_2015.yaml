@@ -1,0 +1,38 @@
+id: perpres_63_2015
+akn: /akn/id/act/perpres/2015/63
+type: perpres
+number: '63'
+year: 2015
+title: Peraturan Presiden Nomor 63 Tahun 2015 tentang Kementerian Kelautan Dan Perikanan
+tentang: KEMENTERIAN KELAUTAN DAN PERIKANAN
+short_name: null
+status: null
+tanggal_penetapan: '2015-05-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_63_2015_2015-05-20
+  kind: asli
+  source: dataset
+  date: '2015-05-20'
+  date_basis: tanggal_penetapan
+  text: perpres_63_2015_2015-05-20.txt
+  pasal_count: 55
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e3d7ddf7e4ef150f45f2e14b496e3385c9a150158a36ecb32d89c5f2e1614196
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e3d7ddf7e4ef150f45f2e14b496e3385c9a150158a36ecb32d89c5f2e1614196
+  source_title: Perpres_Nomor_63_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 69
+  status: none_known

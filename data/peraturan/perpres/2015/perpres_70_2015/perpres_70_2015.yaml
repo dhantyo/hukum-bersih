@@ -1,0 +1,42 @@
+id: perpres_70_2015
+akn: /akn/id/act/perpres/2015/70
+type: perpres
+number: '70'
+year: 2015
+title: Peraturan Presiden Nomor 70 Tahun 2015 tentang Penyesuaian Gaji Pokok Pegawai
+  Negeri Sipil Menurut Peraturan Pemerintah Nomor 34 Tahun 2014 Ke Dalam Gaji Pokok
+  Pegawai Negeri Sipil Menurut Peraturan Pemerintah Nomor 30 Tahun 2015
+tentang: PENYESUAIAN GAJI POKOK PEGAWAI NEGERI SIPIL MENURUT PERATURAN PEMERINTAH
+  NOMOR 34 TAHUN 2014 KE DALAM GAJI POKOK PEGAWAI NEGERI SIPIL MENURUT PERATURAN PEMERINTAH
+  NOMOR 30 TAHUN 2015
+short_name: null
+status: null
+tanggal_penetapan: '2015-06-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_70_2015_2015-06-10
+  kind: asli
+  source: dataset
+  date: '2015-06-10'
+  date_basis: tanggal_penetapan
+  text: perpres_70_2015_2015-06-10.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c3b6d4ac4777913e16737dd7d235ea9f53077f165c4071eb13447323f2e889a5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c3b6d4ac4777913e16737dd7d235ea9f53077f165c4071eb13447323f2e889a5
+  source_title: Perpres_Nomor_70_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

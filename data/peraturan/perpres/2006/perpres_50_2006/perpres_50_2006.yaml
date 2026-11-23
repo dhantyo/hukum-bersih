@@ -1,0 +1,41 @@
+id: perpres_50_2006
+akn: /akn/id/act/perpres/2006/50
+type: perpres
+number: '50'
+year: 2006
+title: Peraturan Presiden Nomor 50 Tahun 2006 tentang Tunjangan Jabatan Fungsional
+  Pengawas Radiasi
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENGAWAS RADIASI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-05-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_50_2006_2006-05-26
+  kind: asli
+  source: dataset
+  date: '2006-05-26'
+  date_basis: tanggal_penetapan
+  text: perpres_50_2006_2006-05-26.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b1dc78bddaa7163e0d7d9f1b0c3780f106c59261837f63781dd32527e4c0d8b1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b1dc78bddaa7163e0d7d9f1b0c3780f106c59261837f63781dd32527e4c0d8b1
+  source_title: PERPRES_No.50_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:2a79115208c2bbfdcd9b4d8528bfce75d29701576918f8ae4cefe1644e368387

@@ -1,0 +1,44 @@
+id: perpres_44_2013
+akn: /akn/id/act/perpres/2013/44
+type: perpres
+number: '44'
+year: 2013
+title: Peraturan Presiden Nomor 44 Tahun 2013 tentang Penyesuaian Gaji Pokok Pegawai
+  Negeri Sipil Menurut Peraturan Pemerintah Nomor 15 Tahun 2012 Ke Dalam Gaji Pokok
+  Pegawai Negeri Sipil Menurut Peraturan Pemerintah Nomor 222Tahun 2013
+tentang: PENYESUAIAN GAJI POKOK PEGAWAI NEGERI SIPIL MENURUT PERATURAN PEMERINTAH
+  NOMOR 15 TAHUN 2012 KE DALAM GAJI POKOK PEGAWAI NEGERI SIPIL MENURUT PERATURAN PEMERINTAH
+  NOMOR 222TAHUN 2013
+short_name: null
+status: dicabut
+tanggal_penetapan: '2013-06-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_44_2013_2013-06-13
+  kind: asli
+  source: dataset
+  date: '2013-06-13'
+  date_basis: tanggal_penetapan
+  text: perpres_44_2013_2013-06-13.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f3ea4147d98e48eb55d44f7624f22d3fd40cc422767961a2404577e8faed3168
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f3ea4147d98e48eb55d44f7624f22d3fd40cc422767961a2404577e8faed3168
+  source_title: Perpres_44_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: revoked
+  revoked_by:
+  - sha256:7ad67bf9f5efed429a1fcf0995c8cc5eb412230e581edb52f1b57f13b35cfc6a

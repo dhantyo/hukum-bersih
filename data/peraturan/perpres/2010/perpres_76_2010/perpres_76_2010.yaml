@@ -1,0 +1,43 @@
+id: perpres_76_2010
+akn: /akn/id/act/perpres/2010/76
+type: perpres
+number: '76'
+year: 2010
+title: Peraturan Presiden Nomor 76 Tahun 2010 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Kementerian Perencanaan Pembangunan Nasional / Badan Perencanaan Pembangunan
+  Nasional
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN KEMENTERIAN PERENCANAAN PEMBANGUNAN
+  NASIONAL / BADAN PERENCANAAN PEMBANGUNAN NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2010-12-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_76_2010_2010-12-15
+  kind: asli
+  source: dataset
+  date: '2010-12-15'
+  date_basis: tanggal_penetapan
+  text: perpres_76_2010_2010-12-15.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c986677dde451c270f9800d9aa9b6b7cb4c42a4008875fa806195758937d1c7b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c986677dde451c270f9800d9aa9b6b7cb4c42a4008875fa806195758937d1c7b
+  source_title: Perpres_No.76_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:8c16c3f1800bc6441538687e56a984c1f7c6a39c355e63648335229380bce14d

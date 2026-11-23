@@ -1,0 +1,40 @@
+id: perpres_1_1965
+akn: /akn/id/act/perpres/1965/1
+type: perpres
+number: '1'
+year: 1965
+title: Peraturan Presiden Nomor 1 Tahun 1965 tentang Pemberian Bantuan Berupa Uang
+  Kepada Abdidalem Dan Pensiunan Abdidalem Pura Paku Alaman Presiden Republik Indonesia
+tentang: PEMBERIAN BANTUAN BERUPA UANG KEPADA ABDIDALEM DAN PENSIUNAN ABDIDALEM PURA
+  PAKU ALAMAN Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1965-01-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_1_1965_1965-01-25
+  kind: asli
+  source: dataset
+  date: '1965-01-25'
+  date_basis: tanggal_penetapan
+  text: perpres_1_1965_1965-01-25.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:88d3b97d277a5fea9a28a340e06918453ae4e46b1b33fb12d9c3c72f8061dc19
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:88d3b97d277a5fea9a28a340e06918453ae4e46b1b33fb12d9c3c72f8061dc19
+  source_title: Perpres_No.1_Tahun_1965
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

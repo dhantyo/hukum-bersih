@@ -1,0 +1,44 @@
+id: perpres_9_2012
+akn: /akn/id/act/perpres/2012/9
+type: perpres
+number: '9'
+year: 2012
+title: Peraturan Presiden Nomor 9 Tahun 2012 tentang Penugasan Kepada Menteri Hukum
+  Dan Hak Asasi Manusia, Menteri Sekretaris Negara, Menteri Keuangan, Dan Jaksa Agung
+  Untuk Melakukan Penanganan Pengembalian Aset Hasil Tindak Pidana Terkait Kasus Pt
+  Bank Century, Tbk., Yang Berada Di Luar Negeri
+tentang: PENUGASAN KEPADA MENTERI HUKUM DAN HAK ASASI MANUSIA, MENTERI SEKRETARIS
+  NEGARA, MENTERI KEUANGAN, DAN JAKSA AGUNG UNTUK MELAKUKAN PENANGANAN PENGEMBALIAN
+  ASET HASIL TINDAK PIDANA TERKAIT KASUS PT BANK CENTURY, TBK., YANG BERADA DI LUAR
+  NEGERI
+short_name: null
+status: null
+tanggal_penetapan: '2012-01-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_9_2012_2012-01-20
+  kind: asli
+  source: dataset
+  date: '2012-01-20'
+  date_basis: tanggal_penetapan
+  text: perpres_9_2012_2012-01-20.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:809ae8ba612b84aeb4ae66aa424f434595e44f3ad8cc4f04005eee8d1a44bb15
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:809ae8ba612b84aeb4ae66aa424f434595e44f3ad8cc4f04005eee8d1a44bb15
+  source_title: Peraturan_Presiden_No_9_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

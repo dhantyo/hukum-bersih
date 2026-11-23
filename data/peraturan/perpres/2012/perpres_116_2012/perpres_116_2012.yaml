@@ -1,0 +1,41 @@
+id: perpres_116_2012
+akn: /akn/id/act/perpres/2012/116
+type: perpres
+number: '116'
+year: 2012
+title: Peraturan Presiden Nomor 116 Tahun 2012 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Lembaga Sandi Negara
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN LEMBAGA SANDI NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2012-11-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_116_2012_2012-11-17
+  kind: asli
+  source: dataset
+  date: '2012-11-17'
+  date_basis: tanggal_penetapan
+  text: perpres_116_2012_2012-11-17.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:843311eb1ebfdbc14f8f2beb9213608ca548d00e59905efe47614dd398dcd0fe
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:843311eb1ebfdbc14f8f2beb9213608ca548d00e59905efe47614dd398dcd0fe
+  source_title: Peraturan_Presiden_No_116_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:e943a0d97db91a4f843fd0ea47e07986b626f72b44e25097a95eea93fe66f74e

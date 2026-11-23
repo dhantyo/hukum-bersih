@@ -1,0 +1,44 @@
+id: perpres_27_2011
+akn: /akn/id/act/perpres/2011/27
+type: perpres
+number: '27'
+year: 2011
+title: Peraturan Presiden Nomor 27 Tahun 2011 tentang Penyesuaian Gaji Pokok Pegawai
+  Negeri Sipil Menurut Peraturan Pemerintah Nomor 25 Tahun 2010 Ke Dalam Gaji Pokok
+  Pegawai Negeri Sipil Menurut Peraturan Pemerintah Nomor 11 Tahun 2011
+tentang: PENYESUAIAN GAJI POKOK PEGAWAI NEGERI SIPIL MENURUT PERATURAN PEMERINTAH
+  NOMOR 25 TAHUN 2010 KE DALAM GAJI POKOK PEGAWAI NEGERI SIPIL MENURUT PERATURAN PEMERINTAH
+  NOMOR 11 TAHUN 2011
+short_name: null
+status: dicabut
+tanggal_penetapan: '2011-05-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_27_2011_2011-05-09
+  kind: asli
+  source: dataset
+  date: '2011-05-09'
+  date_basis: tanggal_penetapan
+  text: perpres_27_2011_2011-05-09.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3a31c17e69f0006b1dc66a64f96c18099e65e61e8cf8065db71f67fb43f5af08
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3a31c17e69f0006b1dc66a64f96c18099e65e61e8cf8065db71f67fb43f5af08
+  source_title: Perpres_no_27_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: revoked
+  revoked_by:
+  - sha256:22dd0bfbbc8ff27211a61a627ef8149b1449798e48f280684c21cce43584982b

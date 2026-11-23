@@ -1,0 +1,40 @@
+id: perpres_109_2014
+akn: /akn/id/act/perpres/2014/109
+type: perpres
+number: '109'
+year: 2014
+title: Peraturan Presiden Nomor 109 Tahun 2014 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Kementerian Koperasi Dan Usaha Kecil Menengah
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN KEMENTERIAN KOPERASI DAN USAHA KECIL
+  MENENGAH
+short_name: null
+status: null
+tanggal_penetapan: '2014-09-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_109_2014_2014-09-17
+  kind: asli
+  source: dataset
+  date: '2014-09-17'
+  date_basis: tanggal_penetapan
+  text: perpres_109_2014_2014-09-17.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8b3b4cb8f66966a303d952855db38707a2fcdd7a848d8b221959ed3fd136c4b5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8b3b4cb8f66966a303d952855db38707a2fcdd7a848d8b221959ed3fd136c4b5
+  source_title: Perpres_Nomor_109_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: none_known

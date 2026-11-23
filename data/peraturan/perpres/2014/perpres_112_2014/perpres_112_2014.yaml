@@ -1,0 +1,39 @@
+id: perpres_112_2014
+akn: /akn/id/act/perpres/2014/112
+type: perpres
+number: '112'
+year: 2014
+title: Peraturan Presiden Nomor 112 Tahun 2014 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Badan Nasional Penanggulangan Bencana
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN BADAN NASIONAL PENANGGULANGAN BENCANA
+short_name: null
+status: null
+tanggal_penetapan: '2014-09-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_112_2014_2014-09-17
+  kind: asli
+  source: dataset
+  date: '2014-09-17'
+  date_basis: tanggal_penetapan
+  text: perpres_112_2014_2014-09-17.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:24c458fc26c559a8124bf90156ba02f244733cd338dd2b4d88f0cc1173118617
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:24c458fc26c559a8124bf90156ba02f244733cd338dd2b4d88f0cc1173118617
+  source_title: Perpres_Nomor_112_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: none_known

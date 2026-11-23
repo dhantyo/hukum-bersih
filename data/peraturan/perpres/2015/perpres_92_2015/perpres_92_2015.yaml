@@ -1,0 +1,41 @@
+id: perpres_92_2015
+akn: /akn/id/act/perpres/2015/92
+type: perpres
+number: '92'
+year: 2015
+title: Peraturan Presiden Nomor 92 Tahun 2015 tentang Pengesahan Protocol To Amend
+  The Asean Comprehensive Investment Agreement (Protokol Untuk Mengubah Persetujuan
+  Penanaman Modal Menyeluruh Asean)
+tentang: PENGESAHAN PROTOCOL TO AMEND THE ASEAN COMPREHENSIVE INVESTMENT AGREEMENT
+  (PROTOKOL UNTUK MENGUBAH PERSETUJUAN PENANAMAN MODAL MENYELURUH ASEAN)
+short_name: null
+status: null
+tanggal_penetapan: '2015-08-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_92_2015_2015-08-12
+  kind: asli
+  source: dataset
+  date: '2015-08-12'
+  date_basis: tanggal_penetapan
+  text: perpres_92_2015_2015-08-12.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:80663bde12858c8aaed6d86eee2a98e1e3b481f913e2699f25f5e8c5663cdc8d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:80663bde12858c8aaed6d86eee2a98e1e3b481f913e2699f25f5e8c5663cdc8d
+  source_title: Perpres_Nomor_92_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

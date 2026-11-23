@@ -1,0 +1,41 @@
+id: perpres_159_2014
+akn: /akn/id/act/perpres/2014/159
+type: perpres
+number: '159'
+year: 2014
+title: Peraturan Presiden Nomor 159 Tahun 2014 tentang Pengesahan Convention On Mutual
+  Administrative Assistance In Tax Matters (Konvensi Tentang Bantuan Administratif
+  Bersama Di Bidang Perpajakan)
+tentang: PENGESAHAN CONVENTION ON MUTUAL ADMINISTRATIVE ASSISTANCE IN TAX MATTERS
+  (KONVENSI TENTANG BANTUAN ADMINISTRATIF BERSAMA DI BIDANG PERPAJAKAN)
+short_name: null
+status: null
+tanggal_penetapan: '2014-10-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_159_2014_2014-10-17
+  kind: asli
+  source: dataset
+  date: '2014-10-17'
+  date_basis: tanggal_penetapan
+  text: perpres_159_2014_2014-10-17.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e91a9d4ec8daa1506b990114ae143740cc995ad2a0f0ebedaf734b08a401b539
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e91a9d4ec8daa1506b990114ae143740cc995ad2a0f0ebedaf734b08a401b539
+  source_title: Perpres_Nomor_159_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 10
+  status: none_known

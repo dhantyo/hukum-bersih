@@ -1,0 +1,39 @@
+id: perpres_55_2011
+akn: /akn/id/act/perpres/2011/55
+type: perpres
+number: '55'
+year: 2011
+title: Peraturan Presiden Nomor 55 Tahun 2011 tentang Rencana Tata Ruang Kawasan Perkotaan
+  Makassar, Maros, Sungguminasa, Dan Takalar
+tentang: RENCANA TATA RUANG KAWASAN PERKOTAAN MAKASSAR, MAROS, SUNGGUMINASA, DAN TAKALAR
+short_name: null
+status: null
+tanggal_penetapan: '2011-09-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_55_2011_2011-09-09
+  kind: asli
+  source: dataset
+  date: '2011-09-09'
+  date_basis: tanggal_penetapan
+  text: perpres_55_2011_2011-09-09.txt
+  pasal_count: 152
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0ba592ef1f353857f9cfb044833ad5efb83872fd6144f197777e029542188de2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0ba592ef1f353857f9cfb044833ad5efb83872fd6144f197777e029542188de2
+  source_title: Perpres_no_55_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 185
+  status: none_known

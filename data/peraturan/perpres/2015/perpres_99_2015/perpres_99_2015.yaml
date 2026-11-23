@@ -1,0 +1,38 @@
+id: perpres_99_2015
+akn: /akn/id/act/perpres/2015/99
+type: perpres
+number: '99'
+year: 2015
+title: Peraturan Presiden Nomor 99 Tahun 2015
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_99_2015_2015
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: perpres_99_2015_2015.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5269e0cb4a1e4ecac3e1e9e0583adc89cf1311ed10b8dbb216eaca0eb405a002
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5269e0cb4a1e4ecac3e1e9e0583adc89cf1311ed10b8dbb216eaca0eb405a002
+  source_title: Perpres_Nomor_99_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: none_known

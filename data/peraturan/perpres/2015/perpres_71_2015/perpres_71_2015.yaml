@@ -1,0 +1,39 @@
+id: perpres_71_2015
+akn: /akn/id/act/perpres/2015/71
+type: perpres
+number: '71'
+year: 2015
+title: Peraturan Presiden Nomor 71 Tahun 2015 tentang Penetapan Dan Penyimpanan Barang
+  Kebutuhan Pokok Dan Barang Penting
+tentang: PENETAPAN DAN PENYIMPANAN BARANG KEBUTUHAN POKOK DAN BARANG PENTING
+short_name: null
+status: null
+tanggal_penetapan: '2015-06-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_71_2015_2015-06-15
+  kind: asli
+  source: dataset
+  date: '2015-06-15'
+  date_basis: tanggal_penetapan
+  text: perpres_71_2015_2015-06-15.txt
+  pasal_count: 15
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0cdb06400dd67fbee810c163660ccc572ba2a15397a152d9012206b25b11988e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0cdb06400dd67fbee810c163660ccc572ba2a15397a152d9012206b25b11988e
+  source_title: Perpres_Nomor_71_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 20
+  status: none_known

@@ -1,0 +1,38 @@
+id: perpres_90_2007
+akn: /akn/id/act/perpres/2007/90
+type: perpres
+number: '90'
+year: 2007
+title: Peraturan Presiden Nomor 90 Tahun 2007 tentang Badan Koordinasi Penanaman Modal
+tentang: BADAN KOORDINASI PENANAMAN MODAL
+short_name: null
+status: null
+tanggal_penetapan: '2007-09-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_90_2007_2007-09-03
+  kind: asli
+  source: dataset
+  date: '2007-09-03'
+  date_basis: tanggal_penetapan
+  text: perpres_90_2007_2007-09-03.txt
+  pasal_count: 59
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bc0bc9108a74b694552021a3ae6538c5cf99f82080d5c658f49c0ec702f34804
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bc0bc9108a74b694552021a3ae6538c5cf99f82080d5c658f49c0ec702f34804
+  source_title: PERPRES_NO_90_TH_2007
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 66
+  status: none_known

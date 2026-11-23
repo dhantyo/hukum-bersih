@@ -1,0 +1,39 @@
+id: perpres_96_2011
+akn: /akn/id/act/perpres/2011/96
+type: perpres
+number: '96'
+year: 2011
+title: Peraturan Presiden Nomor 96 Tahun 2011 tentang Dana Alokasi Umum Daerah Provinsi
+  Dan Kabupaten/Kota Tahun Anggaran 2012
+tentang: DANA ALOKASI UMUM DAERAH PROVINSI DAN KABUPATEN/KOTA TAHUN ANGGARAN 2012
+short_name: null
+status: null
+tanggal_penetapan: '2012-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_96_2011_2012-01-01
+  kind: asli
+  source: dataset
+  date: '2012-01-01'
+  date_basis: tanggal_penetapan
+  text: perpres_96_2011_2012-01-01.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e8cecf50be5b65cf3af9356769dfd315241a91d4902c4fa95b0c1eb0d3963245
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e8cecf50be5b65cf3af9356769dfd315241a91d4902c4fa95b0c1eb0d3963245
+  source_title: Perpres_no_96_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

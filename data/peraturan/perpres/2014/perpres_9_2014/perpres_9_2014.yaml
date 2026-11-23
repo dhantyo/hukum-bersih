@@ -1,0 +1,46 @@
+id: perpres_9_2014
+akn: /akn/id/act/perpres/2014/9
+type: perpres
+number: '9'
+year: 2014
+title: Peraturan Presiden Nomor 9 Tahun 2014 tentang Pengesahan Persetujuan Antara
+  Pemerlntah Republik Indonesia Dan Pemerlntah Republik Polandia Mengenal Pembebasan
+  Visa Bagi Pemegang Paspordjplomatik Dan Dinas (Agreement Between The Government
+  Of The Republic Of Indonesia And The Government Of The Republic Of Poland On Visa
+  Exemption For Holders Of Dipwmatic And Service Passports)
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERlNTAH REPUBLIK INDONESIA DAN PEMERlNTAH
+  REPUBLIK POLANDIA MENGENAl PEMBEBASAN VISA BAGI PEMEGANG PASPORDJPLOMATIK DAN DINAS
+  (AGREEMENT BETWEEN THE GOVERNMENT OF THE REPUBliC OF INDONESIA AND THE GOVERNMENT
+  OF THE REPUBLIC OF POLAND ON VISA EXEMPTION FOR HOLDERS OF DIPWMATIC AND SERVICE
+  PASSPORTS)
+short_name: null
+status: null
+tanggal_penetapan: '2014-02-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_9_2014_2014-02-10
+  kind: asli
+  source: dataset
+  date: '2014-02-10'
+  date_basis: tanggal_penetapan
+  text: perpres_9_2014_2014-02-10.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7c78c8fe293c76b8143b1c544ac2f61618bbd4bd35bbb6e7f9ab814bfedd396c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7c78c8fe293c76b8143b1c544ac2f61618bbd4bd35bbb6e7f9ab814bfedd396c
+  source_title: Perpres_Nomor_09_Tahun_2014
+  regulation_type: PERATURANPRESIDEN
+  quality: degraded
+  chunks: 6
+  status: none_known

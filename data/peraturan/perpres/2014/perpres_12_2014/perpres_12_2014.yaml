@@ -1,0 +1,39 @@
+id: perpres_12_2014
+akn: /akn/id/act/perpres/2014/12
+type: perpres
+number: '12'
+year: 2014
+title: Peraturan Presiden Nomor 12 Tahun 2014 tentang Tata Cara Penetapan Prasarana
+  Olahraga
+tentang: TATA CARA PENETAPAN PRASARANA OLAHRAGA
+short_name: null
+status: null
+tanggal_penetapan: '2014-02-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_12_2014_2014-02-10
+  kind: asli
+  source: dataset
+  date: '2014-02-10'
+  date_basis: tanggal_penetapan
+  text: perpres_12_2014_2014-02-10.txt
+  pasal_count: 27
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:94da940c72ac83e4c4e48d401ab1b49d74218cf2b2cab6c427c4ef59a7b44696
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:94da940c72ac83e4c4e48d401ab1b49d74218cf2b2cab6c427c4ef59a7b44696
+  source_title: Perpres_Nomor_12_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 31
+  status: none_known

@@ -1,0 +1,45 @@
+id: perpres_4_2010
+akn: /akn/id/act/perpres/2010/4
+type: perpres
+number: '4'
+year: 2010
+title: Peraturan Presiden Nomor 4 Tahun 2010 tentang Penugasan Kepada Pt Perusahaan
+  Listrik Negara (Persero) Untuk Melakukan Percepatan Pembangunan Pembangkit Tenaga
+  Listrik Yang Menggunakan Energi Terbarukan, Batubara, Dan Gas
+tentang: PENUGASAN KEPADA PT PERUSAHAAN LISTRIK NEGARA (PERSERO) UNTUK MELAKUKAN PERCEPATAN
+  PEMBANGUNAN PEMBANGKIT TENAGA LISTRIK YANG MENGGUNAKAN ENERGI TERBARUKAN, BATUBARA,
+  DAN GAS
+short_name: null
+status: diubah
+tanggal_penetapan: '2010-01-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_4_2010_2010-01-08
+  kind: asli
+  source: dataset
+  date: '2010-01-08'
+  date_basis: tanggal_penetapan
+  text: perpres_4_2010_2010-01-08.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:59b40c4985aa9d8d6d606c5ca9fdb573c925ae284441beadf080930e38e1c460
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:59b40c4985aa9d8d6d606c5ca9fdb573c925ae284441beadf080930e38e1c460
+  source_title: Perpres_No.4_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 18
+  status: amended
+  amended_by:
+  - sha256:38490769526ec0d3ed374288ceb9d83f75e8f8d1d686142d37f867ee81bb960c
+  - sha256:e33b03823fa6665e8d3a9d28b3f4aafb9ae36044b21d4264d8a1de2c802d1595

@@ -1,0 +1,39 @@
+id: perpres_36_2013
+akn: /akn/id/act/perpres/2013/36
+type: perpres
+number: '36'
+year: 2013
+title: Peraturan Presiden Nomor 36 Tahun 2013 tentang Pendirian Universitas Sulawesi
+  Barat
+tentang: PENDIRIAN UNIVERSITAS SULAWESI BARAT
+short_name: null
+status: null
+tanggal_penetapan: '2013-05-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_36_2013_2013-05-13
+  kind: asli
+  source: dataset
+  date: '2013-05-13'
+  date_basis: tanggal_penetapan
+  text: perpres_36_2013_2013-05-13.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c597d705ec2c0e45f636d3ab3690d17941abafb76a3262a019d232d700a21ae1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c597d705ec2c0e45f636d3ab3690d17941abafb76a3262a019d232d700a21ae1
+  source_title: Perpres_36_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

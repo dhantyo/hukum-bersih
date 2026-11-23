@@ -1,0 +1,39 @@
+id: perpres_44_2015
+akn: /akn/id/act/perpres/2015/44
+type: perpres
+number: '44'
+year: 2015
+title: Peraturan Presiden Nomor 44 Tahun 2015 tentang Kementerian Hukum Dan Hak Asasi
+  Manusia
+tentang: KEMENTERIAN HUKUM DAN HAK ASASI MANUSIA
+short_name: null
+status: null
+tanggal_penetapan: '2015-04-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_44_2015_2015-04-22
+  kind: asli
+  source: dataset
+  date: '2015-04-22'
+  date_basis: tanggal_penetapan
+  text: perpres_44_2015_2015-04-22.txt
+  pasal_count: 70
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d0b3cdf014ad314b3dea3a2e6835ea5e9f75977bfe92aadcaef36965ac26062f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d0b3cdf014ad314b3dea3a2e6835ea5e9f75977bfe92aadcaef36965ac26062f
+  source_title: Perpres_Nomor_44_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 82
+  status: none_known

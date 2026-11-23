@@ -1,0 +1,40 @@
+id: perpres_1_2004
+akn: /akn/id/act/perpres/2004/1
+type: perpres
+number: '1'
+year: 2004
+title: Peraturan Presiden Nomor 1 Tahun 2004 tentang Perubahan Sekolah Tinggi Agama
+  Hindu Negeri Denpasar Menjadi Institut Hindu Dharma Negeri Denpasar
+tentang: PERUBAHAN SEKOLAH TINGGI AGAMA HINDU NEGERI DENPASAR MENJADI INSTITUT HINDU
+  DHARMA NEGERI DENPASAR
+short_name: null
+status: null
+tanggal_penetapan: '2004-11-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_1_2004_2004-11-08
+  kind: asli
+  source: dataset
+  date: '2004-11-08'
+  date_basis: tanggal_penetapan
+  text: perpres_1_2004_2004-11-08.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8385944a95091930cbc0a984b7ebc1f040ef09abe3fa63b00daa466ab70e3faf
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8385944a95091930cbc0a984b7ebc1f040ef09abe3fa63b00daa466ab70e3faf
+  source_title: PERPRES_No.1_TH_2004
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

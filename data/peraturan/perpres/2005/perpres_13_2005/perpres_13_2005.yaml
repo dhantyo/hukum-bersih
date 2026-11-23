@@ -1,0 +1,38 @@
+id: perpres_13_2005
+akn: /akn/id/act/perpres/2005/13
+type: perpres
+number: '13'
+year: 2005
+title: Peraturan Presiden Nomor 13 Tahun 2005 tentang Sekretariat Mahkamah Agung
+tentang: SEKRETARIAT MAHKAMAH AGUNG
+short_name: null
+status: null
+tanggal_penetapan: '2005-01-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_13_2005_2005-01-31
+  kind: asli
+  source: dataset
+  date: '2005-01-31'
+  date_basis: tanggal_penetapan
+  text: perpres_13_2005_2005-01-31.txt
+  pasal_count: 38
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ffc11454e5a91a8ef1aeb8edbb7112cf493c2e53e1c80c316535d6976a29fbb0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ffc11454e5a91a8ef1aeb8edbb7112cf493c2e53e1c80c316535d6976a29fbb0
+  source_title: PERPRES_NO_13_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 45
+  status: none_known

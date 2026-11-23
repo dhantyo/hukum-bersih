@@ -1,0 +1,38 @@
+id: perpres_70_2013
+akn: /akn/id/act/perpres/2013/70
+type: perpres
+number: '70'
+year: 2013
+title: Peraturan Presiden Nomor 70 Tahun 2013
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '2013-11-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_70_2013_2013-11-11
+  kind: asli
+  source: dataset
+  date: '2013-11-11'
+  date_basis: tanggal_penetapan
+  text: perpres_70_2013_2013-11-11.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f621acc1edb2d1375180025011fee35064b99f33448132e5a680fa2fb0382ff7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f621acc1edb2d1375180025011fee35064b99f33448132e5a680fa2fb0382ff7
+  source_title: Perpres_70_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

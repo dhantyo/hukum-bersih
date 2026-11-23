@@ -1,0 +1,38 @@
+id: perpres_57_2015
+akn: /akn/id/act/perpres/2015/57
+type: perpres
+number: '57'
+year: 2015
+title: Peraturan Presiden Nomor 57 Tahun 2015 tentang Kementerian Pemuda Dan Olahraga
+tentang: KEMENTERIAN PEMUDA DAN OLAHRAGA
+short_name: null
+status: null
+tanggal_penetapan: '2015-05-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_57_2015_2015-05-18
+  kind: asli
+  source: dataset
+  date: '2015-05-18'
+  date_basis: tanggal_penetapan
+  text: perpres_57_2015_2015-05-18.txt
+  pasal_count: 40
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:60df85b7c8825d9b2e66f6343a5ab050f616f297358ba73aca1dc0f2376bd9d9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:60df85b7c8825d9b2e66f6343a5ab050f616f297358ba73aca1dc0f2376bd9d9
+  source_title: Perpres_Nomor_57_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 52
+  status: none_known

@@ -1,0 +1,40 @@
+id: perpres_22_1965
+akn: /akn/id/act/perpres/1965/22
+type: perpres
+number: '22'
+year: 1965
+title: Peraturan Presiden Nomor 22 Tahun 1965 tentang Pengawasan Atas Perkembangan
+  Harga Barang Dan Jasa Yang Diproduksikan Oleh Perusahaan Swasta
+tentang: PENGAWASAN ATAS PERKEMBANGAN HARGA BARANG DAN JASA YANG DIPRODUKSIKAN OLEH
+  PERUSAHAAN SWASTA
+short_name: null
+status: null
+tanggal_penetapan: '1965-12-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_22_1965_1965-12-31
+  kind: asli
+  source: dataset
+  date: '1965-12-31'
+  date_basis: tanggal_penetapan
+  text: perpres_22_1965_1965-12-31.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:26052a2a21fdb96e4abcfe9f04d15acf1babface68abe62292835482e6397ffd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:26052a2a21fdb96e4abcfe9f04d15acf1babface68abe62292835482e6397ffd
+  source_title: Perpres_No.22_Tahun_1965
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

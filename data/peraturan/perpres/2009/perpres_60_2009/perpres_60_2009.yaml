@@ -1,0 +1,40 @@
+id: perpres_60_2009
+akn: /akn/id/act/perpres/2009/60
+type: perpres
+number: '60'
+year: 2009
+title: Peraturan Presiden Nomor 60 Tahun 2009 tentang Perubahan Sekolah Tinggi Seni
+  Indonesia Padangpanjang Menjadi Institut Seni Indonesia Padangpanjang
+tentang: PERUBAHAN SEKOLAH TINGGI SENI INDONESIA PADANGPANJANG MENJADI INSTITUT SENI
+  INDONESIA PADANGPANJANG
+short_name: null
+status: null
+tanggal_penetapan: '2009-12-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_60_2009_2009-12-31
+  kind: asli
+  source: dataset
+  date: '2009-12-31'
+  date_basis: tanggal_penetapan
+  text: perpres_60_2009_2009-12-31.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2e44523f67ac7e30b6e618dada841b2c06e34e3dfbc469ff070a63fc5aebb0be
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2e44523f67ac7e30b6e618dada841b2c06e34e3dfbc469ff070a63fc5aebb0be
+  source_title: PERPRES_No.60_TH_2009
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

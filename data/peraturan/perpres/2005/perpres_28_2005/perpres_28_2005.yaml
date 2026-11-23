@@ -1,0 +1,40 @@
+id: perpres_28_2005
+akn: /akn/id/act/perpres/2005/28
+type: perpres
+number: '28'
+year: 2005
+title: Peraturan Presiden Nomor 28 Tahun 2005 tentang Dewan Pertimbangan Otonomi Daerah
+tentang: DEWAN PERTIMBANGAN OTONOMI DAERAH
+short_name: null
+status: dicabut
+tanggal_penetapan: '2005-03-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_28_2005_2005-03-28
+  kind: asli
+  source: dataset
+  date: '2005-03-28'
+  date_basis: tanggal_penetapan
+  text: perpres_28_2005_2005-03-28.txt
+  pasal_count: 18
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c8f37afdc183c0d951dc7c05298cdbcdf26e4956c9d08b3133585f70e6df8793
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c8f37afdc183c0d951dc7c05298cdbcdf26e4956c9d08b3133585f70e6df8793
+  source_title: PERPRES_NO_28_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 23
+  status: revoked
+  revoked_by:
+  - sha256:e95abe6e9490a824f62ce55388a9ec1c1489e0e517f3ae86bb6f0217996637ef

@@ -1,0 +1,43 @@
+id: perpres_26_2009
+akn: /akn/id/act/perpres/2009/26
+type: perpres
+number: '26'
+year: 2009
+title: Peraturan Presiden Nomor 26 Tahun 2009 tentang Penerapan Kartu Tanda Penduduk
+  Berbasis Nomor Induk Kependudukan Secara Nasional
+tentang: PENERAPAN KARTU TANDA PENDUDUK BERBASIS NOMOR INDUK KEPENDUDUKAN SECARA NASIONAL
+short_name: null
+status: diubah
+tanggal_penetapan: '2009-06-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_26_2009_2009-06-19
+  kind: asli
+  source: dataset
+  date: '2009-06-19'
+  date_basis: tanggal_penetapan
+  text: perpres_26_2009_2009-06-19.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1343934808f12dcc089d7535f3c6d52e5df5610576a8c7bd3fffd5744b5f33b9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1343934808f12dcc089d7535f3c6d52e5df5610576a8c7bd3fffd5744b5f33b9
+  source_title: PERPRES_No.26_TH_2009
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: amended
+  amended_by:
+  - sha256:1dbab067cb5d230d942154eb3c75cfdb87871b6608ddcad5489220b73b6cd316
+  - sha256:387eb1bcea9159f7d7aba0881a7eaf571f226627a8e68b6b61c09786ba95edf0
+  - sha256:df2b7aee017dfaa1b0bac071e61e06281359ab3dffef0a8dc1dd9281da3cdff5

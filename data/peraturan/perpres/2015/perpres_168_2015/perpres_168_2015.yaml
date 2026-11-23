@@ -1,0 +1,39 @@
+id: perpres_168_2015
+akn: /akn/id/act/perpres/2015/168
+type: perpres
+number: '168'
+year: 2015
+title: Peraturan Presiden Nomor 168 Tahun 2015 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Lembaga Sandi Negara
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN LEMBAGA SANDI NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '2015-12-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_168_2015_2015-12-28
+  kind: asli
+  source: dataset
+  date: '2015-12-28'
+  date_basis: tanggal_penetapan
+  text: perpres_168_2015_2015-12-28.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e943a0d97db91a4f843fd0ea47e07986b626f72b44e25097a95eea93fe66f74e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e943a0d97db91a4f843fd0ea47e07986b626f72b44e25097a95eea93fe66f74e
+  source_title: Perpres_Nomor_168_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: none_known

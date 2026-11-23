@@ -1,0 +1,38 @@
+id: perpres_14_2009
+akn: /akn/id/act/perpres/2009/14
+type: perpres
+number: '14'
+year: 2009
+title: Peraturan Presiden Nomor 14 Tahun 2009 tentang Sekolah Tinggi Intelijen Negara
+tentang: SEKOLAH TINGGI INTELIJEN NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '2009-04-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_14_2009_2009-04-13
+  kind: asli
+  source: dataset
+  date: '2009-04-13'
+  date_basis: tanggal_penetapan
+  text: perpres_14_2009_2009-04-13.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:649790a88fd5f77e52a10aab75ded0f5440494c36158371907d09404f2e40686
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:649790a88fd5f77e52a10aab75ded0f5440494c36158371907d09404f2e40686
+  source_title: PERPRES_No.14_TH_2009
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

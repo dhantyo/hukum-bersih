@@ -1,0 +1,45 @@
+id: perpres_4_2011
+akn: /akn/id/act/perpres/2011/4
+type: perpres
+number: '4'
+year: 2011
+title: Peraturan Presiden Nomor 4 Tahun 2011 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Amerika Serikat Tentang Kerja Sama
+  Ilmiah Dan Teknologi ( Agreement Between The Government Of The Republic Of Indonesia
+  And The Government Of The United States Of America On Scientific And Technological
+  Cooperation )
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  AMERIKA SERIKAT TENTANG KERJA SAMA ILMIAH DAN TEKNOLOGI ( AGREEMENT BETWEEN THE
+  GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT OF THE UNITED STATES
+  OF AMERICA ON SCIENTIFIC AND TECHNOLOGICAL COOPERATION )
+short_name: null
+status: null
+tanggal_penetapan: '2011-01-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_4_2011_2011-01-24
+  kind: asli
+  source: dataset
+  date: '2011-01-24'
+  date_basis: tanggal_penetapan
+  text: perpres_4_2011_2011-01-24.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4feb77f4cf0a3afdef0c419b2ecc587c7eebd4b4d73d0d249ff6faef2daf9e2c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4feb77f4cf0a3afdef0c419b2ecc587c7eebd4b4d73d0d249ff6faef2daf9e2c
+  source_title: Perpres_4_Tahun_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

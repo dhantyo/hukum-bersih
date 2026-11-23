@@ -1,0 +1,30 @@
+id: perpres_55_2006
+akn: /akn/id/act/perpres/2006/55
+type: perpres
+number: '55'
+year: 2006
+title: Peraturan Presiden Nomor 55 Tahun 2006 tentang Tunjangan Jabatan Fungsional
+  Pengantar Kerja
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENGANTAR KERJA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-05-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ffd074bb1a40e63cc99237610d6dcd0393166241192c9683c5a0e88e82a33cc2
+  source_title: PERPRES_No.55_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:321053a435e90f18f25b1dbd415ae1acf0fa5c2bb973c1680085e147b13d2e0d
+parse_error: 'v13: rebuilt text has 7 pasal, the dataset lists 8'

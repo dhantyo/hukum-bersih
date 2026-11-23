@@ -1,0 +1,39 @@
+id: perpres_73_2005
+akn: /akn/id/act/perpres/2005/73
+type: perpres
+number: '73'
+year: 2005
+title: Peraturan Presiden Nomor 73 Tahun 2005 tentang Rincian Anggaran Belanja Pemerintah
+  Pusat Tahun Anggaran 2006
+tentang: RINCIAN ANGGARAN BELANJA PEMERINTAH PUSAT TAHUN ANGGARAN 2006
+short_name: null
+status: null
+tanggal_penetapan: '2005-11-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_73_2005_2005-11-30
+  kind: asli
+  source: dataset
+  date: '2005-11-30'
+  date_basis: tanggal_penetapan
+  text: perpres_73_2005_2005-11-30.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9f8ac6e014aa5855e48e873ac489167c514fb9351644490c5142329e56a90594
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9f8ac6e014aa5855e48e873ac489167c514fb9351644490c5142329e56a90594
+  source_title: PERPRES_NO_73_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

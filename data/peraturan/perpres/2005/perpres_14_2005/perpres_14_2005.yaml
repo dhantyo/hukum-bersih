@@ -1,0 +1,38 @@
+id: perpres_14_2005
+akn: /akn/id/act/perpres/2005/14
+type: perpres
+number: '14'
+year: 2005
+title: Peraturan Presiden Nomor 14 Tahun 2005 tentang Kepaniteraan Mahkamah Agung
+tentang: KEPANITERAAN MAHKAMAH AGUNG
+short_name: null
+status: null
+tanggal_penetapan: '2005-01-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_14_2005_2005-01-31
+  kind: asli
+  source: dataset
+  date: '2005-01-31'
+  date_basis: tanggal_penetapan
+  text: perpres_14_2005_2005-01-31.txt
+  pasal_count: 18
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b8b2001243653850a10b24fbe7560aa9ccac5bfc5ba3cd0b805133d4ab841c9a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b8b2001243653850a10b24fbe7560aa9ccac5bfc5ba3cd0b805133d4ab841c9a
+  source_title: PERPRES_NO_14_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 23
+  status: none_known

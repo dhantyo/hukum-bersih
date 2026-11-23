@@ -1,0 +1,40 @@
+id: perpres_128_2015
+akn: /akn/id/act/perpres/2015/128
+type: perpres
+number: '128'
+year: 2015
+title: Peraturan Presiden Nomor 128 Tahun 2015 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Badan Meteorologi, Klimatologi, Dan Geofisika
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN BADAN METEOROLOGI, KLIMATOLOGI, DAN
+  GEOFISIKA
+short_name: null
+status: null
+tanggal_penetapan: '2015-11-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_128_2015_2015-11-02
+  kind: asli
+  source: dataset
+  date: '2015-11-02'
+  date_basis: tanggal_penetapan
+  text: perpres_128_2015_2015-11-02.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:68321845a4cfe0b34852f911913b0d6fdc3c934164e5947e19f6b7921ff13ffa
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:68321845a4cfe0b34852f911913b0d6fdc3c934164e5947e19f6b7921ff13ffa
+  source_title: Perpres_Nomor_128_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: none_known

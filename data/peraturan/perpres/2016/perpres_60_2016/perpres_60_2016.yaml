@@ -1,0 +1,39 @@
+id: perpres_60_2016
+akn: /akn/id/act/perpres/2016/60
+type: perpres
+number: '60'
+year: 2016
+title: Peraturan Presiden Nomor 60 Tahun 2016 tentang Sekretariat Jenderal Lembaga
+  Perlindungan Saksi Dan Korban
+tentang: SEKRETARIAT JENDERAL LEMBAGA PERLINDUNGAN SAKSI DAN KORBAN
+short_name: null
+status: null
+tanggal_penetapan: '2016-07-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_60_2016_2016-07-12
+  kind: asli
+  source: dataset
+  date: '2016-07-12'
+  date_basis: tanggal_penetapan
+  text: perpres_60_2016_2016-07-12.txt
+  pasal_count: 30
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8f33abd6e5d20c44d982e651a1c537a2948af613ac1d81d6d2111a9a8c153655
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8f33abd6e5d20c44d982e651a1c537a2948af613ac1d81d6d2111a9a8c153655
+  source_title: Perpres_Nomor_60_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 34
+  status: none_known

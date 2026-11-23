@@ -1,0 +1,40 @@
+id: perpres_161_2015
+akn: /akn/id/act/perpres/2015/161
+type: perpres
+number: '161'
+year: 2015
+title: Peraturan Presiden Nomor 161 Tahun 2015 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Lembaga Penerbangan Dan Antariksa Nasional
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN LEMBAGA PENERBANGAN DAN ANTARIKSA
+  NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2015-12-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_161_2015_2015-12-28
+  kind: asli
+  source: dataset
+  date: '2015-12-28'
+  date_basis: tanggal_penetapan
+  text: perpres_161_2015_2015-12-28.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:eef663557b7704b42c2bd90d6081833b3e5d16fa07bd86a1e8c032480f1fdace
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:eef663557b7704b42c2bd90d6081833b3e5d16fa07bd86a1e8c032480f1fdace
+  source_title: Perpres_Nomor_161_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: none_known

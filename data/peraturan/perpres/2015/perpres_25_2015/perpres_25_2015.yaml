@@ -1,0 +1,38 @@
+id: perpres_25_2015
+akn: /akn/id/act/perpres/2015/25
+type: perpres
+number: '25'
+year: 2015
+title: Peraturan Presiden Nomor 25 Tahun 2015 tentang Sekretariatkabinet
+tentang: SEKRETARIATKABINET
+short_name: null
+status: null
+tanggal_penetapan: '2015-02-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_25_2015_2015-02-24
+  kind: asli
+  source: dataset
+  date: '2015-02-24'
+  date_basis: tanggal_penetapan
+  text: perpres_25_2015_2015-02-24.txt
+  pasal_count: 51
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4e17d8935fe85ddaab8851471b350fd5274a36bd4ab18c19d678e77dc90006a9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4e17d8935fe85ddaab8851471b350fd5274a36bd4ab18c19d678e77dc90006a9
+  source_title: Perpres_Nomor_25_Tahun_2015
+  regulation_type: PERATURANPRESIDEN
+  quality: clean
+  chunks: 71
+  status: none_known

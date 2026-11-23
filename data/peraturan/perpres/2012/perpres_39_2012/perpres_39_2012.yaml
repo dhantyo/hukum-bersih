@@ -1,0 +1,42 @@
+id: perpres_39_2012
+akn: /akn/id/act/perpres/2012/39
+type: perpres
+number: '39'
+year: 2012
+title: Peraturan Presiden Nomor 39 Tahun 2012 tentang Pemberian Penghargaan Dan Pengenaan
+  Sanksi Atas Pelaksanaan Anggaran Belanja Kementerian/Lembaga
+tentang: PEMBERIAN PENGHARGAAN DAN PENGENAAN SANKSI ATAS PELAKSANAAN ANGGARAN BELANJA
+  KEMENTERIAN/LEMBAGA
+short_name: null
+status: diubah
+tanggal_penetapan: '2012-04-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_39_2012_2012-04-12
+  kind: asli
+  source: dataset
+  date: '2012-04-12'
+  date_basis: tanggal_penetapan
+  text: perpres_39_2012_2012-04-12.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9b9d69c87ff4b33761e4f0ab2d486b894b1852b909eedfa2eb50c8b71b6a4b3b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9b9d69c87ff4b33761e4f0ab2d486b894b1852b909eedfa2eb50c8b71b6a4b3b
+  source_title: Peraturan_Presiden_No_39_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: amended
+  amended_by:
+  - sha256:67175672058f9a7cbdf106cc01e823e28e469eca276ade377759253bc98e2e56

@@ -1,0 +1,41 @@
+id: perpres_108_2006
+akn: /akn/id/act/perpres/2006/108
+type: perpres
+number: '108'
+year: 2006
+title: Peraturan Presiden Nomor 108 Tahun 2006 tentang Penghasilan Bagi Ketua Dan
+  Anggota Dewan Pengawas Radio Republik Indonesia
+tentang: PENGHASILAN BAGI KETUA DAN ANGGOTA DEWAN PENGAWAS RADIO REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-12-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_108_2006_2006-12-28
+  kind: asli
+  source: dataset
+  date: '2006-12-28'
+  date_basis: tanggal_penetapan
+  text: perpres_108_2006_2006-12-28.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:990fc792f88bc413c4c9a962facc38d332c39e9d12949c61a9557094f07bc979
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:990fc792f88bc413c4c9a962facc38d332c39e9d12949c61a9557094f07bc979
+  source_title: PRPS_NO_108_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: revoked
+  revoked_by:
+  - sha256:6e219ce9239628b114ab06e4adf37327611a15622a03c9a9dfbf730de2b60d19

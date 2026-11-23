@@ -1,0 +1,41 @@
+id: perpres_98_2007
+akn: /akn/id/act/perpres/2007/98
+type: perpres
+number: '98'
+year: 2007
+title: Peraturan Presiden Nomor 98 Tahun 2007 tentang Penghasilan Bagi Ketua Dan Anggota
+  Dewan Pengawas Televisi Republik Indonesia
+tentang: PENGHASILAN BAGI KETUA DAN ANGGOTA DEWAN PENGAWAS TELEVISI REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2007-11-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_98_2007_2007-11-15
+  kind: asli
+  source: dataset
+  date: '2007-11-15'
+  date_basis: tanggal_penetapan
+  text: perpres_98_2007_2007-11-15.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:84085d3c173b6c3dc4afa4de53ecf362ac6608b8524a85b7278820dbf80b3d41
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:84085d3c173b6c3dc4afa4de53ecf362ac6608b8524a85b7278820dbf80b3d41
+  source_title: PERPRES_NO_98_TH_2007
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:d3713dd5d3c1aeb1a7438dd730e01a4becadc52a292be2c3eac990e999333b89

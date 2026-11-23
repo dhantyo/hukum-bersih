@@ -1,0 +1,44 @@
+id: perpres_45_2008
+akn: /akn/id/act/perpres/2008/45
+type: perpres
+number: '45'
+year: 2008
+title: Peraturan Presiden Nomor 45 Tahun 2008 tentang Perpanjangan Batas Usia Pensiun
+  Bagi Pegawai Negeri Sipil Yang Menduduki Jabatan Fungsional Teknik Pengairan, Teknik
+  Jalan Dan Jembatan, Teknik Tata Bangunan Dan Perumahan, Dan Teknik Penyehatan Lingkungan
+tentang: PERPANJANGAN BATAS USIA PENSIUN BAGI PEGAWAI NEGERI SIPIL YANG MENDUDUKI
+  JABATAN FUNGSIONAL TEKNIK PENGAIRAN, TEKNIK JALAN DAN JEMBATAN, TEKNIK TATA BANGUNAN
+  DAN PERUMAHAN, DAN TEKNIK PENYEHATAN LINGKUNGAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2008-06-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_45_2008_2008-06-24
+  kind: asli
+  source: dataset
+  date: '2008-06-24'
+  date_basis: tanggal_penetapan
+  text: perpres_45_2008_2008-06-24.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f4570ad2390c1c18f19faedf57e9cad5a70e9af02bf2534c33e44d80d8b32e1c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f4570ad2390c1c18f19faedf57e9cad5a70e9af02bf2534c33e44d80d8b32e1c
+  source_title: PERPRES_NO_45_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: amended
+  amended_by:
+  - sha256:c372437eb6350af432e54f9780c1c3af992233372b5f66842244634421238c91

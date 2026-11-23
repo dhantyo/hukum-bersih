@@ -1,0 +1,43 @@
+id: perpres_44_1964
+akn: /akn/id/act/perpres/1964/44
+type: perpres
+number: '44'
+year: 1964
+title: Peraturan Presiden Nomor 44 Tahun 1964 tentang Perubahan Dan Tambahan Peraturan
+  Pemerintah Nomor 211 Tahun 1961, Tentang Kedudukan Keuangan Wakil Ketua, Anggota
+  Dan Sekretaris Dewan Pertimbangan Agung Sementara Republik Indonesia Presiden Republik
+  Indonesia
+tentang: PERUBAHAN DAN TAMBAHAN PERATURAN PEMERINTAH NOMOR 211 TAHUN 1961, TENTANG
+  KEDUDUKAN KEUANGAN WAKIL KETUA, ANGGOTA DAN SEKRETARIS DEWAN PERTIMBANGAN AGUNG
+  SEMENTARA REPUBLIK INDONESIA Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1964-12-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_44_1964_1964-12-28
+  kind: asli
+  source: dataset
+  date: '1964-12-28'
+  date_basis: tanggal_penetapan
+  text: perpres_44_1964_1964-12-28.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e65b3d96d77d92ccc496fb93d8064c3db033584c06685a8857de00b379d623b1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e65b3d96d77d92ccc496fb93d8064c3db033584c06685a8857de00b379d623b1
+  source_title: Perpres_No.44_Tahun_1964
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

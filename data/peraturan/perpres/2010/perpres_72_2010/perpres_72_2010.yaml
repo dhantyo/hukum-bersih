@@ -1,0 +1,41 @@
+id: perpres_72_2010
+akn: /akn/id/act/perpres/2010/72
+type: perpres
+number: '72'
+year: 2010
+title: Peraturan Presiden Nomor 72 Tahun 2010 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Tentara Nasional Indonesia
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN TENTARA NASIONAL INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2010-12-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_72_2010_2010-12-15
+  kind: asli
+  source: dataset
+  date: '2010-12-15'
+  date_basis: tanggal_penetapan
+  text: perpres_72_2010_2010-12-15.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d6bbd47e81c42eff6284568605f2840a414ab86d84bc4d3dc08979b9bfe4878e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d6bbd47e81c42eff6284568605f2840a414ab86d84bc4d3dc08979b9bfe4878e
+  source_title: Perpres_No.72_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:756a3d7789e3c1753e727c8d04d7404f7205b734cca16e0274ff0759d249782d

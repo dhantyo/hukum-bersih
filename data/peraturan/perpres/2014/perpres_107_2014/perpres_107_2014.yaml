@@ -1,0 +1,41 @@
+id: perpres_107_2014
+akn: /akn/id/act/perpres/2014/107
+type: perpres
+number: '107'
+year: 2014
+title: Peraturan Presiden Nomor 107 Tahun 2014 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Kementerian Badan Usaha Milik Negara
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN KEMENTERIAN BADAN USAHA MILIK NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2014-09-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_107_2014_2014-09-17
+  kind: asli
+  source: dataset
+  date: '2014-09-17'
+  date_basis: tanggal_penetapan
+  text: perpres_107_2014_2014-09-17.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3315a853b0d1a8d31ea839c2be10097507dc4c7da4a6e2551549a9b96233d106
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3315a853b0d1a8d31ea839c2be10097507dc4c7da4a6e2551549a9b96233d106
+  source_title: Perpres_Nomor_107_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: revoked
+  revoked_by:
+  - sha256:2eb27cfd118a33fbf608a782f9fd5ed4bd3718c039668b6c0f994d7a67d8db54

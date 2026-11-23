@@ -1,0 +1,38 @@
+id: perpres_11_1963
+akn: /akn/id/act/perpres/1963/11
+type: perpres
+number: '11'
+year: 1963
+title: Peraturan Presiden Nomor 11 Tahun 1963 tentang Kopra
+tentang: KOPRA
+short_name: null
+status: null
+tanggal_penetapan: '1963-05-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_11_1963_1963-05-22
+  kind: asli
+  source: dataset
+  date: '1963-05-22'
+  date_basis: tanggal_penetapan
+  text: perpres_11_1963_1963-05-22.txt
+  pasal_count: 24
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5296b936c08b7dfd5852c49977b05a80619e8187cd0423e6b38f5b1368159514
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5296b936c08b7dfd5852c49977b05a80619e8187cd0423e6b38f5b1368159514
+  source_title: Perpres_No.11_Tahun_1963
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 31
+  status: none_known

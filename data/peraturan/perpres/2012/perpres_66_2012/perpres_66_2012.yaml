@@ -1,0 +1,46 @@
+id: perpres_66_2012
+akn: /akn/id/act/perpres/2012/66
+type: perpres
+number: '66'
+year: 2012
+title: Peraturan Presiden Nomor 66 Tahun 2012 tentang Pengesahan Persetujuan Antarapemerintah
+  Republikindonesia Danpemerintah Republik Makedoniatentangpembebasanvisa Kunjungansingkatbagi
+  Pemegang Paspor Diplomatikdan Dinas (Agreement Between The Government Ofthe Republic
+  Ofindonesia And The Government Of The Republic Of Macedonia Onexemption Of Visa
+  Requirements For Holders Ofdiplomatic And Service Passports)
+tentang: PENGESAHAN PERSETUJUAN ANTARAPEMERINTAH REPUBLIKINDONESIA DANPEMERINTAH REPUBLIK
+  MAKEDONIATENTANGPEMBEBASANVISA KUNJUNGANSINGKATBAGI PEMEGANG PASPOR DIPLOMATIKDAN
+  DINAS (AGREEMENT BETWEEN THE GOVERNMENT OFTHE REPUBLIC OFINDONESIA AND THE GOVERNMENT
+  OF THE REPUBLIC OF MACEDONIA ONEXEMPTION OF VISA REQUIREMENTS FOR HOLDERS OFDIPLOMATIC
+  AND SERVICE PASSPORTS)
+short_name: null
+status: null
+tanggal_penetapan: '2012-07-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_66_2012_2012-07-13
+  kind: asli
+  source: dataset
+  date: '2012-07-13'
+  date_basis: tanggal_penetapan
+  text: perpres_66_2012_2012-07-13.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:72f514c5ed530dcb4ab73f072398d9793920affb99be435efa4169f585c44de4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:72f514c5ed530dcb4ab73f072398d9793920affb99be435efa4169f585c44de4
+  source_title: Peraturan_Presiden_No_66_Tahun_2012
+  regulation_type: PERATURANPRESIDEN
+  quality: degraded
+  chunks: 7
+  status: none_known

@@ -1,0 +1,38 @@
+id: perpres_20_1965
+akn: /akn/id/act/perpres/1965/20
+type: perpres
+number: '20'
+year: 1965
+title: Peraturan Presiden Nomor 20 Tahun 1965 tentang Premi Ekspor
+tentang: PREMI EKSPOR
+short_name: null
+status: null
+tanggal_penetapan: '1965-12-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_20_1965_1965-12-21
+  kind: asli
+  source: dataset
+  date: '1965-12-21'
+  date_basis: tanggal_penetapan
+  text: perpres_20_1965_1965-12-21.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2134506bd917a866258a0e252d033a2270cb091db7b4cb39c6dbcde8d951bd7e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2134506bd917a866258a0e252d033a2270cb091db7b4cb39c6dbcde8d951bd7e
+  source_title: Perpres_No.20_Tahun_1965
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

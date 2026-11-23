@@ -1,0 +1,47 @@
+id: perpres_90_2014
+akn: /akn/id/act/perpres/2014/90
+type: perpres
+number: '90'
+year: 2014
+title: Peraturan Presiden Nomor 90 Tahun 2014 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Kelompok Bank Pembangunan Islam Mengenai Pendirian
+  Kantor Perwakilan Kelompok Bank Pembangunan Islam Di Indonesia (Agreement Between
+  The Government Of The Republic Of Indonesia And The Islamic Development Bank Group
+  Concerning The Establishment Of A Country Gateway Office Of The Islamic Development
+  Bank Group In Indonesia)
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN KELOMPOK
+  BANK PEMBANGUNAN ISLAM MENGENAI PENDIRIAN KANTOR PERWAKILAN KELOMPOK BANK PEMBANGUNAN
+  ISLAM DI INDONESIA (AGREEMENT BETWEEN THE GOVERNMENT OF THE REPUBLIC OF INDONESIA
+  AND THE ISLAMIC DEVELOPMENT BANK GROUP CONCERNING THE ESTABLISHMENT OF A COUNTRY
+  GATEWAY OFFICE OF THE ISLAMIC DEVELOPMENT BANK GROUP IN INDONESIA)
+short_name: null
+status: null
+tanggal_penetapan: '2014-09-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_90_2014_2014-09-01
+  kind: asli
+  source: dataset
+  date: '2014-09-01'
+  date_basis: tanggal_penetapan
+  text: perpres_90_2014_2014-09-01.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:10907181e1de36a4851c10525214a916293c02ddc2bed3699063c48c1caef3af
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:10907181e1de36a4851c10525214a916293c02ddc2bed3699063c48c1caef3af
+  source_title: Perpres_Nomor_90_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

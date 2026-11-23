@@ -1,0 +1,39 @@
+id: perpres_35_2017
+akn: /akn/id/act/perpres/2017/35
+type: perpres
+number: '35'
+year: 2017
+title: Peraturan Presiden Nomor 35 Tahun 2017 tentang Universitas Isi.Am Negeri Imam
+  Bonjol Padang
+tentang: UNIVERSITAS ISI.AM NEGERI IMAM BONJOL PADANG
+short_name: null
+status: null
+tanggal_penetapan: '2017-04-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_35_2017_2017-04-03
+  kind: asli
+  source: dataset
+  date: '2017-04-03'
+  date_basis: tanggal_penetapan
+  text: perpres_35_2017_2017-04-03.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d2ce243a8e8d675d252ef82c015833e104afb73ff81b18df99db942b1b47a769
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d2ce243a8e8d675d252ef82c015833e104afb73ff81b18df99db942b1b47a769
+  source_title: Perpres_Nomor_35_Tahun_2017
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

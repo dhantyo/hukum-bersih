@@ -1,0 +1,46 @@
+id: perpres_7_2014
+akn: /akn/id/act/perpres/2014/7
+type: perpres
+number: '7'
+year: 2014
+title: Peraturan Presiden Nomor 7 Tahun 2014 tentang Pengesahan Persetujuan Antarapemerintah
+  Republik Indonesia Dan Pemerlntah Republik Oriental Uruguay Mengenai Pembebasan
+  Visa Bag! Pemegang Paspor Diplomatik Atau Pasp0R Dinas (Agreement Between The Government
+  Of The Republic Of Indonesia And The Government Of The Oriental Republic Of Uruguay
+  On Visa Exemption For Holders Of Diplomatic, Official, Or Service Passports)
+tentang: PENGESAHAN PERSETUJUAN ANTARAPEMERINTAH REPUBLIK INDONESIA DAN PEMERlNTAH
+  REPUBLIK ORIENTAL URUGUAY MENGENAI PEMBEBASAN VISA BAG! PEMEGANG PASPOR DIPLOMATIK
+  ATAU PASP0R DINAS (AGREEMENT BETWEEN THE GOVERNMENT OF THE REPUBLIC OF INDONESIA
+  AND THE GOVERNMENT OF THE ORIENTAL REPUBLIC OF URUGUAY ON VISA EXEMPTION FOR HOLDERS
+  OF DIPLOMATIC, OFFICIAL, OR SERVICE PASSPORTS)
+short_name: null
+status: null
+tanggal_penetapan: '2014-02-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_7_2014_2014-02-06
+  kind: asli
+  source: dataset
+  date: '2014-02-06'
+  date_basis: tanggal_penetapan
+  text: perpres_7_2014_2014-02-06.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:60cfbdd15aef98cc53b2cdb9588e7b151b5ef999ae5716b713535274b68ba3ca
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:60cfbdd15aef98cc53b2cdb9588e7b151b5ef999ae5716b713535274b68ba3ca
+  source_title: Perpres_Nomor_07_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 6
+  status: none_known

@@ -1,0 +1,40 @@
+id: perpres_19_2005
+akn: /akn/id/act/perpres/2005/19
+type: perpres
+number: '19'
+year: 2005
+title: Peraturan Presiden Nomor 19 Tahun 2005 tentang Pembiayaan Sekunder Perumahan
+tentang: PEMBIAYAAN SEKUNDER PERUMAHAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2005-02-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_19_2005_2005-02-07
+  kind: asli
+  source: dataset
+  date: '2005-02-07'
+  date_basis: tanggal_penetapan
+  text: perpres_19_2005_2005-02-07.txt
+  pasal_count: 24
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a36d289783695e850f3d3c6c6de6e69cdcd028a2c9339611baeb83e73d137234
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a36d289783695e850f3d3c6c6de6e69cdcd028a2c9339611baeb83e73d137234
+  source_title: PERPRES_NO_19_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 38
+  status: amended
+  amended_by:
+  - sha256:b32871fe76c78211fdb634d8a2e437e8252420be197267564070e6733f8ea7cb

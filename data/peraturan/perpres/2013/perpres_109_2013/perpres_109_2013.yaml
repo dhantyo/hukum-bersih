@@ -1,0 +1,39 @@
+id: perpres_109_2013
+akn: /akn/id/act/perpres/2013/109
+type: perpres
+number: '109'
+year: 2013
+title: Peraturan Presiden Nomor 109 Tahun 2013 tentang Penahapan Kepesertaan Program
+  Jaminan Sosial
+tentang: PENAHAPAN KEPESERTAAN PROGRAM JAMINAN SOSIAL
+short_name: null
+status: null
+tanggal_penetapan: '2013-12-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_109_2013_2013-12-27
+  kind: asli
+  source: dataset
+  date: '2013-12-27'
+  date_basis: tanggal_penetapan
+  text: perpres_109_2013_2013-12-27.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5bf1c76c312b9ff09670d518333bc71470a547023d1163724f325f086e42c705
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5bf1c76c312b9ff09670d518333bc71470a547023d1163724f325f086e42c705
+  source_title: Perpres_109_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: none_known

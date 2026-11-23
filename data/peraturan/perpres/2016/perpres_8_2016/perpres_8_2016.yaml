@@ -1,0 +1,38 @@
+id: perpres_8_2016
+akn: /akn/id/act/perpres/2016/8
+type: perpres
+number: '8'
+year: 2016
+title: Peraturan Presiden Nomor 8 Tahun 2016 tentang Komite Ekonomi Dan Industri Nasional
+tentang: KOMITE EKONOMI DAN INDUSTRI NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2016-01-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_8_2016_2016-01-19
+  kind: asli
+  source: dataset
+  date: '2016-01-19'
+  date_basis: tanggal_penetapan
+  text: perpres_8_2016_2016-01-19.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:89ecda8488e49bcce06e36575ac2c14060e40d425f5a60445c3175148690a72e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:89ecda8488e49bcce06e36575ac2c14060e40d425f5a60445c3175148690a72e
+  source_title: Perpres_Nomor_8_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 16
+  status: none_known

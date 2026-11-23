@@ -1,0 +1,39 @@
+id: perpres_8_2017
+akn: /akn/id/act/perpres/2017/8
+type: perpres
+number: '8'
+year: 2017
+title: Peraturan Presiden Nomor 8 Tahun 2017 tentang Tunjangan Jabatan Fungsional
+  Analis Keuangan Pusat Dan Daerah
+tentang: TUNJANGAN JABATAN FUNGSIONAL ANALIS KEUANGAN PUSAT DAN DAERAH
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_8_2017_2017
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: perpres_8_2017_2017.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f50ac34ad00420f2cf5915cbe643b93cca299bb44cc620aa3f087e10413cc423
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f50ac34ad00420f2cf5915cbe643b93cca299bb44cc620aa3f087e10413cc423
+  source_title: Perpres_Nomor_8_Tahun_2017
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

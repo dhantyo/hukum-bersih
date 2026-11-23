@@ -1,0 +1,43 @@
+id: perpres_36_2005
+akn: /akn/id/act/perpres/2005/36
+type: perpres
+number: '36'
+year: 2005
+title: Peraturan Presiden Nomor 36 Tahun 2005 tentang Pengadaan Tanah Bagi Pelaksanaan
+  Pembangunan Untuk Kepentingan Umum
+tentang: PENGADAAN TANAH BAGI PELAKSANAAN PEMBANGUNAN UNTUK KEPENTINGAN UMUM
+short_name: null
+status: dicabut
+tanggal_penetapan: '2005-05-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_36_2005_2005-05-03
+  kind: asli
+  source: dataset
+  date: '2005-05-03'
+  date_basis: tanggal_penetapan
+  text: perpres_36_2005_2005-05-03.txt
+  pasal_count: 23
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:54c148b4292c663859b6adf3381db4444080fb665c02e13d12851e0724f704ee
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:54c148b4292c663859b6adf3381db4444080fb665c02e13d12851e0724f704ee
+  source_title: PERPRES_NO_36_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 33
+  status: revoked
+  revoked_by:
+  - sha256:0102a3d7079c57ed35b76ecde97321d9eb1cfca6ad3f00d1e50d7b11d76052f9
+  amended_by:
+  - sha256:bd4f9a66048d8cbd1ae26866eb1339079ff22ee04614e99d50d8999ea4d40b05

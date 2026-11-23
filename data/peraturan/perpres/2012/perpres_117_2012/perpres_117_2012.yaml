@@ -1,0 +1,42 @@
+id: perpres_117_2012
+akn: /akn/id/act/perpres/2012/117
+type: perpres
+number: '117'
+year: 2012
+title: Peraturan Presiden Nomor 117 Tahun 2012 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Lembaga Kebijakan Pengadaan Barang/Jasa Pemerintah
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN LEMBAGA KEBIJAKAN PENGADAAN BARANG/JASA
+  PEMERINTAH
+short_name: null
+status: dicabut
+tanggal_penetapan: '2012-11-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_117_2012_2012-11-17
+  kind: asli
+  source: dataset
+  date: '2012-11-17'
+  date_basis: tanggal_penetapan
+  text: perpres_117_2012_2012-11-17.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d98ea1a204450948abbb1f4ab2e3f2264a408715f9952fce39537520235e3f45
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d98ea1a204450948abbb1f4ab2e3f2264a408715f9952fce39537520235e3f45
+  source_title: Peraturan_Presiden_No_117_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: revoked
+  revoked_by:
+  - sha256:353f2fa44c9c11c0a02d6be546e1ebc1edf459166a59f9bc58725bb6b29f9552

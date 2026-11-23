@@ -1,0 +1,41 @@
+id: perpres_87_2010
+akn: /akn/id/act/perpres/2010/87
+type: perpres
+number: '87'
+year: 2010
+title: Peraturan Presiden Nomor 87 Tahun 2010 tentang Perubahan Atas Peraturan Presiden
+  Nomor 23 Tahun 2008 Tentang Uang Kehormatan Dan Hak-Hak Lainnya Bagi Hakim Ad Hoc
+  Pada Pengadilan Perikanan Di Pengadilan Negeri
+tentang: PERUBAHAN ATAS PERATURAN PRESIDEN NOMOR 23 TAHUN 2008 TENTANG UANG KEHORMATAN
+  DAN HAK-HAK LAINNYA BAGI HAKIM AD HOC PADA PENGADILAN PERIKANAN DI PENGADILAN NEGERI
+short_name: null
+status: null
+tanggal_penetapan: '2010-12-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_87_2010_2010-12-30
+  kind: asli
+  source: dataset
+  date: '2010-12-30'
+  date_basis: tanggal_penetapan
+  text: perpres_87_2010_2010-12-30.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8ed5e1ba6e72cd01fbed8934698a733e96456974288d157bf5d074bebc308781
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8ed5e1ba6e72cd01fbed8934698a733e96456974288d157bf5d074bebc308781
+  source_title: Perpres_No.87_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

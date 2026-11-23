@@ -1,0 +1,39 @@
+id: perpres_105_2006
+akn: /akn/id/act/perpres/2006/105
+type: perpres
+number: '105'
+year: 2006
+title: Peraturan Presiden Nomor 105 Tahun 2006 tentang Tunjangan Jabatan Fungsional
+  Sandiman Dan Operator Transmisi Sandi
+tentang: TUNJANGAN JABATAN FUNGSIONAL SANDIMAN DAN OPERATOR TRANSMISI SANDI
+short_name: null
+status: null
+tanggal_penetapan: '2006-12-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_105_2006_2006-12-26
+  kind: asli
+  source: dataset
+  date: '2006-12-26'
+  date_basis: tanggal_penetapan
+  text: perpres_105_2006_2006-12-26.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c61cab9e8e415a81d0f7c322c675c82584dd8ed32e1c346adcd5eaf0ea08c425
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c61cab9e8e415a81d0f7c322c675c82584dd8ed32e1c346adcd5eaf0ea08c425
+  source_title: PRPS_NO_105_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

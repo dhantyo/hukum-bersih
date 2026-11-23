@@ -1,0 +1,45 @@
+id: perpres_60_2008
+akn: /akn/id/act/perpres/2008/60
+type: perpres
+number: '60'
+year: 2008
+title: Peraturan Presiden Nomor 60 Tahun 2008 tentang Pengesahan Agreement Between
+  The Government Of The Republic Of Indonesia And The Austrian Federal Government
+  On Visa Exemption For Holders Of Diplomatic And Service Passports (Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Federal Austria Mengenai Pembebasan
+  Visa Bagi Pemegang Paspor Diplomatik Dan Dinas)
+tentang: PENGESAHAN AGREEMENT BETWEEN THE GOVERNMENT OF THE REPUBLIC OF INDONESIA
+  AND THE AUSTRIAN FEDERAL GOVERNMENT ON VISA EXEMPTION FOR HOLDERS OF DIPLOMATIC
+  AND SERVICE PASSPORTS (PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  FEDERAL AUSTRIA MENGENAI PEMBEBASAN VISA BAGI PEMEGANG PASPOR DIPLOMATIK DAN DINAS)
+short_name: null
+status: null
+tanggal_penetapan: '2008-09-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_60_2008_2008-09-02
+  kind: asli
+  source: dataset
+  date: '2008-09-02'
+  date_basis: tanggal_penetapan
+  text: perpres_60_2008_2008-09-02.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8682c6497b9b7c2ee07338ecf2c8c69c4a4ec2a1f5e17d3229e38499a480fd31
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8682c6497b9b7c2ee07338ecf2c8c69c4a4ec2a1f5e17d3229e38499a480fd31
+  source_title: PERPRES_NO_60_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 7
+  status: none_known

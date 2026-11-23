@@ -1,0 +1,39 @@
+id: perpres_61_2005
+akn: /akn/id/act/perpres/2005/61
+type: perpres
+number: '61'
+year: 2005
+title: Peraturan Presiden Nomor 61 Tahun 2005 tentang Tata Cara Penyusunan Dan Pengelolaan
+  Program Legislasi Nasional
+tentang: TATA CARA PENYUSUNAN DAN PENGELOLAAN PROGRAM LEGISLASI NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2005-10-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_61_2005_2005-10-13
+  kind: asli
+  source: dataset
+  date: '2005-10-13'
+  date_basis: tanggal_penetapan
+  text: perpres_61_2005_2005-10-13.txt
+  pasal_count: 30
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3ab8f0d92c1ef73664121f656aeb56a4c7d7529ac913d5b6fbb717ca9150cc56
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3ab8f0d92c1ef73664121f656aeb56a4c7d7529ac913d5b6fbb717ca9150cc56
+  source_title: PERPRES_NO_61_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 37
+  status: none_known

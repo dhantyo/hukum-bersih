@@ -1,0 +1,40 @@
+id: perpres_13_2009
+akn: /akn/id/act/perpres/2009/13
+type: perpres
+number: '13'
+year: 2009
+title: Peraturan Presiden Nomor 13 Tahun 2009 tentang Koordinasi Penanggulangan Kemiskinan
+tentang: KOORDINASI PENANGGULANGAN KEMISKINAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2009-03-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_13_2009_2009-03-27
+  kind: asli
+  source: dataset
+  date: '2009-03-27'
+  date_basis: tanggal_penetapan
+  text: perpres_13_2009_2009-03-27.txt
+  pasal_count: 41
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:77cb36e10b009f1987ba5eeb525d96353a29d3f18eff19e0db09c3c54d7f788b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:77cb36e10b009f1987ba5eeb525d96353a29d3f18eff19e0db09c3c54d7f788b
+  source_title: PERPRES_No.13_TH_2009
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 49
+  status: revoked
+  revoked_by:
+  - sha256:6d7093b04303f0da2e564be43cadca90f81885f02c0b8d2d35da9de49f6de705

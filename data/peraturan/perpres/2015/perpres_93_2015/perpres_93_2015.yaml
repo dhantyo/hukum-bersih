@@ -1,0 +1,41 @@
+id: perpres_93_2015
+akn: /akn/id/act/perpres/2015/93
+type: perpres
+number: '93'
+year: 2015
+title: Peraturan Presiden Nomor 93 Tahun 2015 tentang Tim Penilai Proyek Kereta Api
+  Cepat Jakarta-Bandung
+tentang: TIM PENILAI PROYEK KERETA API CEPAT JAKARTA-BANDUNG
+short_name: null
+status: diubah
+tanggal_penetapan: '2015-08-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_93_2015_2015-08-18
+  kind: asli
+  source: dataset
+  date: '2015-08-18'
+  date_basis: tanggal_penetapan
+  text: perpres_93_2015_2015-08-18.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6d45799821bd2dbe924025d72eb5dc874f8531ec89b8d18f38516405bfdb2b9d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6d45799821bd2dbe924025d72eb5dc874f8531ec89b8d18f38516405bfdb2b9d
+  source_title: Perpres_Nomor_93_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: amended
+  amended_by:
+  - sha256:b4ea2adecc6a46a26c2e34e25cf2d0c972feff6e28dece98e7d12ce61b086d08

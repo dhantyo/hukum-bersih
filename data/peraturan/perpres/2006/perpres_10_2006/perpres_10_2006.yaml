@@ -1,0 +1,42 @@
+id: perpres_10_2006
+akn: /akn/id/act/perpres/2006/10
+type: perpres
+number: '10'
+year: 2006
+title: Peraturan Presiden Nomor 10 Tahun 2006 tentang Badan Pertanahan Nasional
+tentang: BADAN PERTANAHAN NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-04-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_10_2006_2006-04-11
+  kind: asli
+  source: dataset
+  date: '2006-04-11'
+  date_basis: tanggal_penetapan
+  text: perpres_10_2006_2006-04-11.txt
+  pasal_count: 56
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:796ff4a60674ed580e1d1fea78e49388221659790e09255d9e7074a7838f4888
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:796ff4a60674ed580e1d1fea78e49388221659790e09255d9e7074a7838f4888
+  source_title: PERPRES_No.10_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 64
+  status: revoked
+  revoked_by:
+  - sha256:5aa8e5a06f1e326e08b47292ecadc974db142cbec2273ca96523186e66425ab0
+  amended_by:
+  - sha256:1f279f89bfded30111edc0aa945ffc6af4b8056290df2d1260f508452f7a8098

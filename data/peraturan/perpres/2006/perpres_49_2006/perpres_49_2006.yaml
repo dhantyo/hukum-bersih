@@ -1,0 +1,41 @@
+id: perpres_49_2006
+akn: /akn/id/act/perpres/2006/49
+type: perpres
+number: '49'
+year: 2006
+title: Peraturan Presiden Nomor 49 Tahun 2006 tentang Tunjangan Jabatan Fungsional
+  Pengamat Meteorologi Dan Geofisika
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENGAMAT METEOROLOGI DAN GEOFISIKA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-05-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_49_2006_2006-05-26
+  kind: asli
+  source: dataset
+  date: '2006-05-26'
+  date_basis: tanggal_penetapan
+  text: perpres_49_2006_2006-05-26.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fd91fb2b020cb3b0bef35dbb57904e8fd892ba82e88b65218778cf2d73054090
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fd91fb2b020cb3b0bef35dbb57904e8fd892ba82e88b65218778cf2d73054090
+  source_title: PERPRES_No.49_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:332910028fad89de33baae0f62c0857e35e54114f73037f501a2e05041528237

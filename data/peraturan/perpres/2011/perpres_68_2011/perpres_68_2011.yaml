@@ -1,0 +1,40 @@
+id: perpres_68_2011
+akn: /akn/id/act/perpres/2011/68
+type: perpres
+number: '68'
+year: 2011
+title: Peraturan Presiden Nomor 68 Tahun 2011 tentang Perubaha N Ketiga Atas Peraturan
+  Presiden Nomor 14 Tahun 2007 Tentang Badan Penanggulangan Lumpur Sidoarjo
+tentang: PERUBAHA N KETIGA ATAS PERATURAN PRESIDEN NOMOR 14 TAHUN 2007 TENTANG BADAN
+  PENANGGULANGAN LUMPUR SIDOARJO
+short_name: null
+status: null
+tanggal_penetapan: '2011-09-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_68_2011_2011-09-27
+  kind: asli
+  source: dataset
+  date: '2011-09-27'
+  date_basis: tanggal_penetapan
+  text: perpres_68_2011_2011-09-27.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8d218c74c573fb44248ebf5dd00a9a341e85e32a9cb79fff82b66de1cc3bef99
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8d218c74c573fb44248ebf5dd00a9a341e85e32a9cb79fff82b66de1cc3bef99
+  source_title: Perpres_no_68_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

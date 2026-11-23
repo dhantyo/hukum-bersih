@@ -1,0 +1,38 @@
+id: perpres_164_2014
+akn: /akn/id/act/perpres/2014/164
+type: perpres
+number: '164'
+year: 2014
+title: Peraturan Presiden Nomor 164 Tahun 2014 tentang Pembubaran Komite Inovasi Nasional
+tentang: PEMBUBARAN KOMITE INOVASI NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2014-10-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_164_2014_2014-10-17
+  kind: asli
+  source: dataset
+  date: '2014-10-17'
+  date_basis: tanggal_penetapan
+  text: perpres_164_2014_2014-10-17.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:32c16726fc51a0388f2df038eba961fb1f82252f9953f7a193cf97c4763e9ede
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:32c16726fc51a0388f2df038eba961fb1f82252f9953f7a193cf97c4763e9ede
+  source_title: Perpres_Nomor_164_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: degraded
+  chunks: 8
+  status: none_known

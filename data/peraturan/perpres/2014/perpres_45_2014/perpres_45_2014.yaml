@@ -1,0 +1,43 @@
+id: perpres_45_2014
+akn: /akn/id/act/perpres/2014/45
+type: perpres
+number: '45'
+year: 2014
+title: Peraturan Presiden Nomor 45 Tahun 2014 tentang Perubahan Ketiga Atas Peraturan
+  Presiden Nomor 71 Tahun 2006 Tentang Penugasan Kepada Pt Perusahaan Listrik Negara
+  (Persero) Untuk Melakukan Percepatan Pembangunan Pembangkit Tenaga Listrik Yang
+  Menggunakan Batubara
+tentang: PERUBAHAN KETIGA ATAS PERATURAN PRESIDEN NOMOR 71 TAHUN 2006 TENTANG PENUGASAN
+  KEPADA PT PERUSAHAAN LISTRIK NEGARA (PERSERO) UNTUK MELAKUKAN PERCEPATAN PEMBANGUNAN
+  PEMBANGKIT TENAGA LISTRIK YANG MENGGUNAKAN BATUBARA
+short_name: null
+status: null
+tanggal_penetapan: '2014-05-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_45_2014_2014-05-19
+  kind: asli
+  source: dataset
+  date: '2014-05-19'
+  date_basis: tanggal_penetapan
+  text: perpres_45_2014_2014-05-19.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e3d1b642d3ccfadf0280db2e27827b6f629615890ae0cb7672b738d207428eeb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e3d1b642d3ccfadf0280db2e27827b6f629615890ae0cb7672b738d207428eeb
+  source_title: Perpres_Nomor_45_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

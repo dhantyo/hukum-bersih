@@ -1,0 +1,41 @@
+id: perpres_64_2006
+akn: /akn/id/act/perpres/2006/64
+type: perpres
+number: '64'
+year: 2006
+title: Peraturan Presiden Nomor 64 Tahun 2006 tentang Tunjangan Jabatan Fungsional
+  Penguji Mutu Barang Dan Penera
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENGUJI MUTU BARANG DAN PENERA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-05-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_64_2006_2006-05-26
+  kind: asli
+  source: dataset
+  date: '2006-05-26'
+  date_basis: tanggal_penetapan
+  text: perpres_64_2006_2006-05-26.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4869ed0ff76cfac37fbe539620da0856d8bf8ed8a5fcf277570123bd8933cdb5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4869ed0ff76cfac37fbe539620da0856d8bf8ed8a5fcf277570123bd8933cdb5
+  source_title: PERPRES_No.64_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:896a664ada14efaf7f30924bfb71a2bfafb8339050bcb5f5170a8d1451367f6e

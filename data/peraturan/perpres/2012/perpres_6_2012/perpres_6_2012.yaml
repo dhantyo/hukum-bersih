@@ -1,0 +1,42 @@
+id: perpres_6_2012
+akn: /akn/id/act/perpres/2012/6
+type: perpres
+number: '6'
+year: 2012
+title: Peraturan Presiden Nomor 6 Tahun 2012 tentang Komite Koordinasi Nasional Pencegahan
+  Dan Pemberantasan Tindak Pidana Pencucian Uang
+tentang: KOMITE KOORDINASI NASIONAL PENCEGAHAN DAN PEMBERANTASAN TINDAK PIDANA PENCUCIAN
+  UANG
+short_name: null
+status: diubah
+tanggal_penetapan: '2012-01-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_6_2012_2012-01-11
+  kind: asli
+  source: dataset
+  date: '2012-01-11'
+  date_basis: tanggal_penetapan
+  text: perpres_6_2012_2012-01-11.txt
+  pasal_count: 16
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fb20ae66c0e04e9ccf860f63f6ef8a248425e525da4717d64c2f48fb5761f2bb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fb20ae66c0e04e9ccf860f63f6ef8a248425e525da4717d64c2f48fb5761f2bb
+  source_title: Peraturan_Presiden_No_6_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 19
+  status: amended
+  amended_by:
+  - sha256:67175672058f9a7cbdf106cc01e823e28e469eca276ade377759253bc98e2e56

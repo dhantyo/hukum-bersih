@@ -1,0 +1,40 @@
+id: perpres_100_2006
+akn: /akn/id/act/perpres/2006/100
+type: perpres
+number: '100'
+year: 2006
+title: Peraturan Presiden Nomor 100 Tahun 2006 tentang Penyelesaian Administrasi Kepegawaian
+  Bagi Pegawai Negeri Sipil Korban Konflik Dan/Atau Terlibat Dalam Gerakan Aceh Merdeka
+tentang: PENYELESAIAN ADMINISTRASI KEPEGAWAIAN BAGI PEGAWAI NEGERI SIPIL KORBAN KONFLIK
+  DAN/ATAU TERLIBAT DALAM GERAKAN ACEH MERDEKA
+short_name: null
+status: null
+tanggal_penetapan: '2005-09-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_100_2006_2005-09-01
+  kind: asli
+  source: dataset
+  date: '2005-09-01'
+  date_basis: tanggal_penetapan
+  text: perpres_100_2006_2005-09-01.txt
+  pasal_count: 18
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7ecd4dc404b8feaa4fda76a41f8cc8d186bbce562a849e65e3804a5fbf24355c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7ecd4dc404b8feaa4fda76a41f8cc8d186bbce562a849e65e3804a5fbf24355c
+  source_title: PRPS_NO_100_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 21
+  status: none_known

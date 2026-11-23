@@ -1,0 +1,39 @@
+id: perpres_3_2017
+akn: /akn/id/act/perpres/2017/3
+type: perpres
+number: '3'
+year: 2017
+title: Peraturan Presiden Nomor 3 Tahun 2017 tentang Rencana Aksi Percepatan Pembangunan
+  Industri Perikanan Nasional
+tentang: RENCANA AKSI PERCEPATAN PEMBANGUNAN INDUSTRI PERIKANAN NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2017-01-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_3_2017_2017-01-11
+  kind: asli
+  source: dataset
+  date: '2017-01-11'
+  date_basis: tanggal_penetapan
+  text: perpres_3_2017_2017-01-11.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2119f6b48956d51da075d5a3bcc523e11813d2e2477237944b3e2caeb059ec27
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2119f6b48956d51da075d5a3bcc523e11813d2e2477237944b3e2caeb059ec27
+  source_title: Perpres_Nomor_3_Tahun_2017
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

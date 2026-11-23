@@ -1,0 +1,39 @@
+id: perpres_112_2007
+akn: /akn/id/act/perpres/2007/112
+type: perpres
+number: '112'
+year: 2007
+title: Peraturan Presiden Nomor 112 Tahun 2007 tentang Penataan Dan Pembinaan Pasar
+  Tradisional, Pusat Perbelanjaan Dan Toko Modern
+tentang: PENATAAN DAN PEMBINAAN PASAR TRADISIONAL, PUSAT PERBELANJAAN DAN TOKO MODERN
+short_name: null
+status: null
+tanggal_penetapan: '2007-12-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_112_2007_2007-12-27
+  kind: asli
+  source: dataset
+  date: '2007-12-27'
+  date_basis: tanggal_penetapan
+  text: perpres_112_2007_2007-12-27.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:815fc9d48ccde1250498eb2fa2b7ab942dfdda04854c2f17dc1bd45d6eae9044
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:815fc9d48ccde1250498eb2fa2b7ab942dfdda04854c2f17dc1bd45d6eae9044
+  source_title: PERPRES_NO_112_TH_2007
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 29
+  status: none_known

@@ -1,0 +1,41 @@
+id: perpres_9_2011
+akn: /akn/id/act/perpres/2011/9
+type: perpres
+number: '9'
+year: 2011
+title: Peraturan Presiden Nomor 9 Tahun 2011 tentang Penugasan Kepada Pusat Investasi
+  Pemerintah Untuk Memberikan Pinjaman Dengan Persyaratan Lunak Kepada Pt Perusahaan
+  Listrik Negara (Persero)
+tentang: PENUGASAN KEPADA PUSAT INVESTASI PEMERINTAH UNTUK MEMBERIKAN PINJAMAN DENGAN
+  PERSYARATAN LUNAK KEPADA PT PERUSAHAAN LISTRIK NEGARA (PERSERO)
+short_name: null
+status: null
+tanggal_penetapan: '2011-02-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_9_2011_2011-02-08
+  kind: asli
+  source: dataset
+  date: '2011-02-08'
+  date_basis: tanggal_penetapan
+  text: perpres_9_2011_2011-02-08.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7dd273c77a5ea4ef32bbfb38aace3d7ba759bb0ab4f1523cd83b356d2a2ab13c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7dd273c77a5ea4ef32bbfb38aace3d7ba759bb0ab4f1523cd83b356d2a2ab13c
+  source_title: Perpres_no_9_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

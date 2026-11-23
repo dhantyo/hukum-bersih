@@ -1,0 +1,41 @@
+id: perpres_54_2009
+akn: /akn/id/act/perpres/2009/54
+type: perpres
+number: '54'
+year: 2009
+title: Peraturan Presiden Nomor 54 Tahun 2009 tentang Unit Kerja Presiden Bidang Pengawasan
+  Dan Pengendalian Pembangunan
+tentang: UNIT KERJA PRESIDEN BIDANG PENGAWASAN DAN PENGENDALIAN PEMBANGUNAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2009-12-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_54_2009_2009-12-08
+  kind: asli
+  source: dataset
+  date: '2009-12-08'
+  date_basis: tanggal_penetapan
+  text: perpres_54_2009_2009-12-08.txt
+  pasal_count: 29
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3dcf4b8c2dc71c629d4838a3c92c5f3dadf7900a7dd24ab1038038c98f6a85dd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3dcf4b8c2dc71c629d4838a3c92c5f3dadf7900a7dd24ab1038038c98f6a85dd
+  source_title: PERPRES_No.54_TH_2009
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 35
+  status: amended
+  amended_by:
+  - sha256:e8fd1c04b75e177ee3692d6d3677f6df34d7f811460b21b2a9e9ac30200ceeee

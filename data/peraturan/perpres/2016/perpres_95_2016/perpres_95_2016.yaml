@@ -1,0 +1,42 @@
+id: perpres_95_2016
+akn: /akn/id/act/perpres/2016/95
+type: perpres
+number: '95'
+year: 2016
+title: Peraturan Presiden Nomor 95 Tahun 2016 tentang Pengesahan Convention For The
+  Unification Of Certain Rules For International Carriage By Air (Konvensi Unifikasi
+  Aturan-Aturan Tertentu Tentang Angkutan Udara Internasional)
+tentang: PENGESAHAN CONVENTION FOR THE UNIFICATION OF CERTAIN RULES FOR INTERNATIONAL
+  CARRIAGE BY AIR (KONVENSI UNIFIKASI ATURAN-ATURAN TERTENTU TENTANG ANGKUTAN UDARA
+  INTERNASIONAL)
+short_name: null
+status: null
+tanggal_penetapan: '2016-11-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_95_2016_2016-11-21
+  kind: asli
+  source: dataset
+  date: '2016-11-21'
+  date_basis: tanggal_penetapan
+  text: perpres_95_2016_2016-11-21.txt
+  pasal_count: 1
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6776fe3f8f0f6645a7560e3f6938870458ddda36b38d3384fb76c407bacc2f93
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6776fe3f8f0f6645a7560e3f6938870458ddda36b38d3384fb76c407bacc2f93
+  source_title: Perpres_Nomor_95_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

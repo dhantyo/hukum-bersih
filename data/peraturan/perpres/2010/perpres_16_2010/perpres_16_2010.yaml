@@ -1,0 +1,40 @@
+id: perpres_16_2010
+akn: /akn/id/act/perpres/2010/16
+type: perpres
+number: '16'
+year: 2010
+title: Peraturan Presiden Nomor 16 Tahun 2010 tentang Penggunaan Bahasa Indonesia
+  Dalam Pidato Resmi Presiden Dan/Atau Wakil Presiden Serta Pejabat Negara Lainnya
+tentang: PENGGUNAAN BAHASA INDONESIA DALAM PIDATO RESMI PRESIDEN DAN/ATAU WAKIL PRESIDEN
+  SERTA PEJABAT NEGARA LAINNYA
+short_name: null
+status: null
+tanggal_penetapan: '2010-03-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_16_2010_2010-03-01
+  kind: asli
+  source: dataset
+  date: '2010-03-01'
+  date_basis: tanggal_penetapan
+  text: perpres_16_2010_2010-03-01.txt
+  pasal_count: 17
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:77e3e3ed117e221dcabe28fe13b30bbe0f84993a7b6218b1c5add92c93eedcdb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:77e3e3ed117e221dcabe28fe13b30bbe0f84993a7b6218b1c5add92c93eedcdb
+  source_title: Perpres_No.16_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 22
+  status: none_known

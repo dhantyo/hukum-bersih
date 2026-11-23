@@ -1,0 +1,41 @@
+id: perpres_30_2006
+akn: /akn/id/act/perpres/2006/30
+type: perpres
+number: '30'
+year: 2006
+title: Peraturan Presiden Nomor 30 Tahun 2006 tentang Tunjangan Jabatan Fungsional
+  Teknik Pengairan, Teknik Jalan Dan Jembatan, Teknik Tata Bangunan Dan Perumahan,
+  Dan Teknik Penyehatan Lingkungan
+tentang: TUNJANGAN JABATAN FUNGSIONAL TEKNIK PENGAIRAN, TEKNIK JALAN DAN JEMBATAN,
+  TEKNIK TATA BANGUNAN DAN PERUMAHAN, DAN TEKNIK PENYEHATAN LINGKUNGAN
+short_name: null
+status: null
+tanggal_penetapan: '2006-05-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_30_2006_2006-05-26
+  kind: asli
+  source: dataset
+  date: '2006-05-26'
+  date_basis: tanggal_penetapan
+  text: perpres_30_2006_2006-05-26.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:eb8be466387a6e4aae08ac9c073e19ce21f0537e322259c4058393c616039dfd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:eb8be466387a6e4aae08ac9c073e19ce21f0537e322259c4058393c616039dfd
+  source_title: PERPRES_No.30_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: none_known

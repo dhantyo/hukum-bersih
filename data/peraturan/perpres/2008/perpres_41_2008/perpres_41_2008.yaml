@@ -1,0 +1,40 @@
+id: perpres_41_2008
+akn: /akn/id/act/perpres/2008/41
+type: perpres
+number: '41'
+year: 2008
+title: Peraturan Presiden Nomor 41 Tahun 2008 tentang Pengesahan Postal Payment Services
+  Agreement (Persetujuan Layanan Pembayaran Pos)
+tentang: PENGESAHAN POSTAL PAYMENT SERVICES AGREEMENT (PERSETUJUAN LAYANAN PEMBAYARAN
+  POS)
+short_name: null
+status: null
+tanggal_penetapan: '2008-06-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_41_2008_2008-06-19
+  kind: asli
+  source: dataset
+  date: '2008-06-19'
+  date_basis: tanggal_penetapan
+  text: perpres_41_2008_2008-06-19.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c3ccb888758becf9e35c1eb672e32d2e4b715b553265b563e7759d751e1c0fb7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c3ccb888758becf9e35c1eb672e32d2e4b715b553265b563e7759d751e1c0fb7
+  source_title: PERPRES_NO_41_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

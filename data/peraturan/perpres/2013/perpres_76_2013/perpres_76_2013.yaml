@@ -1,0 +1,39 @@
+id: perpres_76_2013
+akn: /akn/id/act/perpres/2013/76
+type: perpres
+number: '76'
+year: 2013
+title: Peraturan Presiden Nomor 76 Tahun 2013 tentang Pengelolaan Pengaduan Pelayanan
+  Publik
+tentang: PENGELOLAAN PENGADUAN PELAYANAN PUBLIK
+short_name: null
+status: null
+tanggal_penetapan: '2013-12-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_76_2013_2013-12-06
+  kind: asli
+  source: dataset
+  date: '2013-12-06'
+  date_basis: tanggal_penetapan
+  text: perpres_76_2013_2013-12-06.txt
+  pasal_count: 18
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f602cfd4c39322096432ce90e36f6bf514c1b61c003fbb1c1fd3ae43bb8af81b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f602cfd4c39322096432ce90e36f6bf514c1b61c003fbb1c1fd3ae43bb8af81b
+  source_title: Perpres_76_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 27
+  status: none_known

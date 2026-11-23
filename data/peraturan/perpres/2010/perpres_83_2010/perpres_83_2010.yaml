@@ -1,0 +1,43 @@
+id: perpres_83_2010
+akn: /akn/id/act/perpres/2010/83
+type: perpres
+number: '83'
+year: 2010
+title: Peraturan Presiden Nomor 83 Tahun 2010 tentang Pemberian Uang Penghargaan Bagi
+  Ketua, Wakil Ketua, Dan Anggota Komisi Pemilihan Umum, Ketua Dan Anggota Komisi
+  Pemilihan Umum Provinsi, Dan Ketua Dan Anggota Komisi Pemilihan Umum Kabupaten/Kota
+  Sebagai Penyelenggara Pemilihan Umum Tahun 2004
+tentang: PEMBERIAN UANG PENGHARGAAN BAGI KETUA, WAKIL KETUA, DAN ANGGOTA KOMISI PEMILIHAN
+  UMUM, KETUA DAN ANGGOTA KOMISI PEMILIHAN UMUM PROVINSI, DAN KETUA DAN ANGGOTA KOMISI
+  PEMILIHAN UMUM KABUPATEN/KOTA SEBAGAI PENYELENGGARA PEMILIHAN UMUM TAHUN 2004
+short_name: null
+status: null
+tanggal_penetapan: '2010-12-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_83_2010_2010-12-28
+  kind: asli
+  source: dataset
+  date: '2010-12-28'
+  date_basis: tanggal_penetapan
+  text: perpres_83_2010_2010-12-28.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d233db58a8715fc8e630177641d96276ace438f4856baa0be83140035f41db1a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d233db58a8715fc8e630177641d96276ace438f4856baa0be83140035f41db1a
+  source_title: Perpres_No.83_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

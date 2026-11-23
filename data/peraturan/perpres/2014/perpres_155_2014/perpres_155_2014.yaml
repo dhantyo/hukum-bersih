@@ -1,0 +1,39 @@
+id: perpres_155_2014
+akn: /akn/id/act/perpres/2014/155
+type: perpres
+number: '155'
+year: 2014
+title: Peraturan Presiden Nomor 155 Tahun 2014 tentang Perubahan Universitas Negeri
+  Papua Menjadi Universitas Papua
+tentang: PERUBAHAN UNIVERSITAS NEGERI PAPUA MENJADI UNIVERSITAS PAPUA
+short_name: null
+status: null
+tanggal_penetapan: '2014-10-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_155_2014_2014-10-17
+  kind: asli
+  source: dataset
+  date: '2014-10-17'
+  date_basis: tanggal_penetapan
+  text: perpres_155_2014_2014-10-17.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f5eb2a5b06ca4b445adb31abc5764a2919611c26dbd1a9775194a4a2f42a40e0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f5eb2a5b06ca4b445adb31abc5764a2919611c26dbd1a9775194a4a2f42a40e0
+  source_title: Perpres_Nomor_155_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

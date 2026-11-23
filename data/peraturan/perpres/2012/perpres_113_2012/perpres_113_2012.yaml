@@ -1,0 +1,41 @@
+id: perpres_113_2012
+akn: /akn/id/act/perpres/2012/113
+type: perpres
+number: '113'
+year: 2012
+title: Peraturan Presiden Nomor 113 Tahun 2012 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Lembaga Ketahanan Nasional
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN LEMBAGA KETAHANAN NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2012-11-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_113_2012_2012-11-17
+  kind: asli
+  source: dataset
+  date: '2012-11-17'
+  date_basis: tanggal_penetapan
+  text: perpres_113_2012_2012-11-17.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:eb368a4fb8b968fbcdd36d275365f924c2cd21a9d885237a3c16b04deb42cd50
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:eb368a4fb8b968fbcdd36d275365f924c2cd21a9d885237a3c16b04deb42cd50
+  source_title: Peraturan_Presiden_No_113_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: revoked
+  revoked_by:
+  - sha256:4fecc7381382e831fb64d9cade9ed8be6bbb46dc24495155dd5e301683cb227c

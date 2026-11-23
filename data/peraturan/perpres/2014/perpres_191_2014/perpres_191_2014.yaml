@@ -1,0 +1,39 @@
+id: perpres_191_2014
+akn: /akn/id/act/perpres/2014/191
+type: perpres
+number: '191'
+year: 2014
+title: Peraturan Presiden Nomor 191 Tahun 2014 tentang Penyediaan, Pendistribusian
+  Dan Harga Jual Eceran Bahan Bakar Minyak
+tentang: PENYEDIAAN, PENDISTRIBUSIAN DAN HARGA JUAL ECERAN BAHAN BAKAR MINYAK
+short_name: null
+status: null
+tanggal_penetapan: '2014-12-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_191_2014_2014-12-31
+  kind: asli
+  source: dataset
+  date: '2014-12-31'
+  date_basis: tanggal_penetapan
+  text: perpres_191_2014_2014-12-31.txt
+  pasal_count: 23
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9f6d2de6bf73b362ba0facbd684fe95abd9797e5fb332e93973149b532f8ef39
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9f6d2de6bf73b362ba0facbd684fe95abd9797e5fb332e93973149b532f8ef39
+  source_title: Perpres_Nomor_191_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 38
+  status: none_known

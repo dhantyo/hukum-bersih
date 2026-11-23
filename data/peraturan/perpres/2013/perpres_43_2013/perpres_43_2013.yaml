@@ -1,0 +1,41 @@
+id: perpres_43_2013
+akn: /akn/id/act/perpres/2013/43
+type: perpres
+number: '43'
+year: 2013
+title: Peraturan Presiden Nomor 43 Tahun 2013 tentang Kedudukan Keuangan Ketua Dan
+  Anggota Sadan Pengawas Pemilihan Umum, Sadan Pengawas Pemilihan Umum Prov1Nsi, Dan
+  Dewan Kehormatan Penyelenggara Pemilihan Umum
+tentang: KEDUDUKAN KEUANGAN KETUA DAN ANGGOTA SADAN PENGAWAS PEMILIHAN UMUM, SADAN
+  PENGAWAS PEMILIHAN UMUM PROV1NSI, DAN DEWAN KEHORMATAN PENYELENGGARA PEMILIHAN UMUM
+short_name: null
+status: null
+tanggal_penetapan: '2013-06-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_43_2013_2013-06-13
+  kind: asli
+  source: dataset
+  date: '2013-06-13'
+  date_basis: tanggal_penetapan
+  text: perpres_43_2013_2013-06-13.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:747f5341e41e5ffc8b5a2c9c962b5e5c85cb0315322d185b554e176dc4bb308f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:747f5341e41e5ffc8b5a2c9c962b5e5c85cb0315322d185b554e176dc4bb308f
+  source_title: Perpres_43_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

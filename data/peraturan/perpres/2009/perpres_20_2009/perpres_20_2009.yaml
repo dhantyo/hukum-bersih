@@ -1,0 +1,39 @@
+id: perpres_20_2009
+akn: /akn/id/act/perpres/2009/20
+type: perpres
+number: '20'
+year: 2009
+title: Peraturan Presiden Nomor 20 Tahun 2009 tentang Sekretariat Jenderal Ombudsman
+  Republik Indonesia
+tentang: SEKRETARIAT JENDERAL OMBUDSMAN REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2009-05-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_20_2009_2009-05-25
+  kind: asli
+  source: dataset
+  date: '2009-05-25'
+  date_basis: tanggal_penetapan
+  text: perpres_20_2009_2009-05-25.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1fdd70a74a686bee46c16d324ad533356400b1d7922d15800e129b7a1cce232e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1fdd70a74a686bee46c16d324ad533356400b1d7922d15800e129b7a1cce232e
+  source_title: PERPRES_No.20_TH_2009
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: none_known

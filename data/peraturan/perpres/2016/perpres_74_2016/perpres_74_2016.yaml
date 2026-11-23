@@ -1,0 +1,39 @@
+id: perpres_74_2016
+akn: /akn/id/act/perpres/2016/74
+type: perpres
+number: '74'
+year: 2016
+title: Peraturan Presiden Nomor 74 Tahun 2016 tentang Institut Agama Tslam Negeri
+  Kerinci
+tentang: INSTITUT AGAMA TSLAM NEGERI KERINCI
+short_name: null
+status: null
+tanggal_penetapan: '2016-08-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_74_2016_2016-08-03
+  kind: asli
+  source: dataset
+  date: '2016-08-03'
+  date_basis: tanggal_penetapan
+  text: perpres_74_2016_2016-08-03.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8bc217c59833e3e07d537c9fe18e06b49c8c79469b379b321c277860d7415f18
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8bc217c59833e3e07d537c9fe18e06b49c8c79469b379b321c277860d7415f18
+  source_title: Perpres_Nomor_74_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

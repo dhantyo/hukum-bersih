@@ -1,0 +1,40 @@
+id: perpres_81_2012
+akn: /akn/id/act/perpres/2012/81
+type: perpres
+number: '81'
+year: 2012
+title: Peraturan Presiden Nomor 81 Tahun 2012 tentang Perubahan Atas Peraturan Presiden
+  Nomor 67 Tahun 2012 Tentang Biaya Penyelenggaraan Ibadah Haji Tahun 1433H/2012M
+tentang: PERUBAHAN ATAS PERATURAN PRESIDEN NOMOR 67 TAHUN 2012 TENTANG BIAYA PENYELENGGARAAN
+  IBADAH HAJI TAHUN 1433H/2012M
+short_name: null
+status: null
+tanggal_penetapan: '2012-10-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_81_2012_2012-10-12
+  kind: asli
+  source: dataset
+  date: '2012-10-12'
+  date_basis: tanggal_penetapan
+  text: perpres_81_2012_2012-10-12.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:53de33e0e5cbf9781e7c90f40811a88b2e6c8ea52d12979edaa8e5efc09236e2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:53de33e0e5cbf9781e7c90f40811a88b2e6c8ea52d12979edaa8e5efc09236e2
+  source_title: Peraturan_Presiden_No_81_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 4
+  status: none_known

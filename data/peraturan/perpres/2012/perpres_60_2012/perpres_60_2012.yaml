@@ -1,0 +1,40 @@
+id: perpres_60_2012
+akn: /akn/id/act/perpres/2012/60
+type: perpres
+number: '60'
+year: 2012
+title: Peraturan Presiden Nomor 60 Tahun 2012 tentang Wakil Menteri
+tentang: WAKIL MENTERI
+short_name: null
+status: diubah
+tanggal_penetapan: '2012-06-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_60_2012_2012-06-07
+  kind: asli
+  source: dataset
+  date: '2012-06-07'
+  date_basis: tanggal_penetapan
+  text: perpres_60_2012_2012-06-07.txt
+  pasal_count: 15
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:34a8735867ad3c00ea42a60ad7ca3e79466773d5ad5eac240baf606231063090
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:34a8735867ad3c00ea42a60ad7ca3e79466773d5ad5eac240baf606231063090
+  source_title: Peraturan_Presiden_No_60_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 19
+  status: amended
+  amended_by:
+  - sha256:e9f2c996c7372346c8d832b377b2a5a3869a5a6d869d436ebc15b747c7d2147f

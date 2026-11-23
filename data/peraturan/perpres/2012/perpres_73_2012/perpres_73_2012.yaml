@@ -1,0 +1,39 @@
+id: perpres_73_2012
+akn: /akn/id/act/perpres/2012/73
+type: perpres
+number: '73'
+year: 2012
+title: Peraturan Presiden Nomor 73 Tahun 2012 tentang Strategi Nasional Pengelolaan
+  Ekosistem Mangrove
+tentang: STRATEGI NASIONAL PENGELOLAAN EKOSISTEM MANGROVE
+short_name: null
+status: null
+tanggal_penetapan: '2012-08-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_73_2012_2012-08-16
+  kind: asli
+  source: dataset
+  date: '2012-08-16'
+  date_basis: tanggal_penetapan
+  text: perpres_73_2012_2012-08-16.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a64e1cc67960804c433e1b2e937af6ae4f2e54078c5a2189db03247b7152684c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a64e1cc67960804c433e1b2e937af6ae4f2e54078c5a2189db03247b7152684c
+  source_title: Peraturan_Presiden_No_73_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: none_known

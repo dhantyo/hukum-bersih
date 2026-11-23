@@ -1,0 +1,41 @@
+id: perpres_74_2010
+akn: /akn/id/act/perpres/2010/74
+type: perpres
+number: '74'
+year: 2010
+title: Peraturan Presiden Nomor 74 Tahun 2010 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Kementerian Pertahanan
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN KEMENTERIAN PERTAHANAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2010-12-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_74_2010_2010-12-15
+  kind: asli
+  source: dataset
+  date: '2010-12-15'
+  date_basis: tanggal_penetapan
+  text: perpres_74_2010_2010-12-15.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2abaa87bac5e14a31bc3ffc9aa136d39f9ae8ce28559a35babb102540f676675
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2abaa87bac5e14a31bc3ffc9aa136d39f9ae8ce28559a35babb102540f676675
+  source_title: Perpres_No.74_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:a2185ed3d405fe13d49e5c4dd854aee14f6839c5522b97937f36d0176ee45d80

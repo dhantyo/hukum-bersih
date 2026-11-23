@@ -1,0 +1,44 @@
+id: perpres_99_2006
+akn: /akn/id/act/perpres/2006/99
+type: perpres
+number: '99'
+year: 2006
+title: Peraturan Presiden Nomor 99 Tahun 2006 tentang Pengesahan Persetujuan Tentang
+  Kerjasama Ekonomi Antara Pemerintah Republik Indonesia Dan Pemerintah Republik Slovakia
+  ( Agreement On Economic Cooperation Between The Government Of The Republic Of Indonesia
+  And The Government Of The Slovak Republic )
+tentang: PENGESAHAN PERSETUJUAN TENTANG KERJASAMA EKONOMI ANTARA PEMERINTAH REPUBLIK
+  INDONESIA DAN PEMERINTAH REPUBLIK SLOVAKIA ( AGREEMENT ON ECONOMIC COOPERATION BETWEEN
+  THE GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT OF THE SLOVAK REPUBLIC
+  )
+short_name: null
+status: null
+tanggal_penetapan: '2006-12-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_99_2006_2006-12-09
+  kind: asli
+  source: dataset
+  date: '2006-12-09'
+  date_basis: tanggal_penetapan
+  text: perpres_99_2006_2006-12-09.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:aadaf1f8c6467216ffbf6cd71230b6f355c64123d478ad5939543ba376058216
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:aadaf1f8c6467216ffbf6cd71230b6f355c64123d478ad5939543ba376058216
+  source_title: PRPS_NO_99_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

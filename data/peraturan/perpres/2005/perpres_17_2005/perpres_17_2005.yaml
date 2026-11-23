@@ -1,0 +1,40 @@
+id: perpres_17_2005
+akn: /akn/id/act/perpres/2005/17
+type: perpres
+number: '17'
+year: 2005
+title: Peraturan Presiden Nomor 17 Tahun 2005 tentang Komisi Kepolisian Nasional
+tentang: KOMISI KEPOLISIAN NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2005-02-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_17_2005_2005-02-07
+  kind: asli
+  source: dataset
+  date: '2005-02-07'
+  date_basis: tanggal_penetapan
+  text: perpres_17_2005_2005-02-07.txt
+  pasal_count: 18
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6ceac091e2a0e591d7300b070d1ae6dfa02936333ce3da21ff7ee378e2bc5c74
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6ceac091e2a0e591d7300b070d1ae6dfa02936333ce3da21ff7ee378e2bc5c74
+  source_title: PERPRES_NO_17_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 22
+  status: revoked
+  revoked_by:
+  - sha256:c01e36cd44f147b0f2a30f8092002a52b16e7b80daf9db4125a5b13368a19de0

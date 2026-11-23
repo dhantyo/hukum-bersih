@@ -1,0 +1,41 @@
+id: perpres_111_2012
+akn: /akn/id/act/perpres/2012/111
+type: perpres
+number: '111'
+year: 2012
+title: Peraturan Presiden Nomor 111 Tahun 2012 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Badan Tenaga Nuklir Nasional
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN BADAN TENAGA NUKLIR NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2012-11-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_111_2012_2012-11-17
+  kind: asli
+  source: dataset
+  date: '2012-11-17'
+  date_basis: tanggal_penetapan
+  text: perpres_111_2012_2012-11-17.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:def5705df2aea4bf32e6f8884480a4ebccb79c0376fd7044b63a2a550bc4d960
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:def5705df2aea4bf32e6f8884480a4ebccb79c0376fd7044b63a2a550bc4d960
+  source_title: Peraturan_Presiden_No_111_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: revoked
+  revoked_by:
+  - sha256:ca1fdf63736924c75327b2fd26a83758b513c69aef927c75f8436ee2dc295fbe

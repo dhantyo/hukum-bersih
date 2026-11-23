@@ -1,0 +1,40 @@
+id: perpres_90_2011
+akn: /akn/id/act/perpres/2011/90
+type: perpres
+number: '90'
+year: 2011
+title: Peraturan Presiden Nomor 90 Tahun 2011 tentang Hak Keuangan Ketua, Wak1L Ketua,
+  Dan Anggota Dewan Gelar, Tanda Jasa, Dan Tanda Kehormatan
+tentang: HAK KEUANGAN KETUA, WAK1L KETUA, DAN ANGGOTA DEWAN GELAR, TANDA JASA, DAN
+  TANDA KEHORMATAN
+short_name: null
+status: null
+tanggal_penetapan: '2011-12-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_90_2011_2011-12-06
+  kind: asli
+  source: dataset
+  date: '2011-12-06'
+  date_basis: tanggal_penetapan
+  text: perpres_90_2011_2011-12-06.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8a91ae4cf6e55b1ecbb63742470e47e0f02ea089cf1b3f410996858683bd3b2b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8a91ae4cf6e55b1ecbb63742470e47e0f02ea089cf1b3f410996858683bd3b2b
+  source_title: Perpres_no_90_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

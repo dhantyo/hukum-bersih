@@ -1,0 +1,41 @@
+id: perpres_54_2006
+akn: /akn/id/act/perpres/2006/54
+type: perpres
+number: '54'
+year: 2006
+title: Peraturan Presiden Nomor 54 Tahun 2006 tentang Tunjangan Jabatan Fungsional
+  Pekerja Sosial
+tentang: TUNJANGAN JABATAN FUNGSIONAL PEKERJA SOSIAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-05-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_54_2006_2006-05-26
+  kind: asli
+  source: dataset
+  date: '2006-05-26'
+  date_basis: tanggal_penetapan
+  text: perpres_54_2006_2006-05-26.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6280e6e2de5db1bc0e9a144d768bc750ca909f9c1365d9243f669a10a257fa5a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6280e6e2de5db1bc0e9a144d768bc750ca909f9c1365d9243f669a10a257fa5a
+  source_title: PERPRES_No.54_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:022dad6e758d3040adeb9d8657ba98673d994414e840d2de59c85d4fd45d06d5

@@ -1,0 +1,30 @@
+id: perpres_27_2010
+akn: /akn/id/act/perpres/2010/27
+type: perpres
+number: '27'
+year: 2010
+title: Peraturan Presiden Nomor 27 Tahun 2010 tentang Hakkeuangandanfasilitas Bagi
+  Ketua Harian Dan Anggota Dewan Energi Nasional
+tentang: HAKKEUANGANDANFASILITAS BAGI KETUA HARIAN DAN ANGGOTA DEWAN ENERGI NASIONAL
+short_name: null
+status: diubah
+tanggal_penetapan: '2010-05-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b794df1007a6cd34fd60a2eb4421cea7ae6a3315bfafd5345a479385f622f8be
+  source_title: Perpres_No.27_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: amended
+  amended_by:
+  - sha256:67175672058f9a7cbdf106cc01e823e28e469eca276ade377759253bc98e2e56
+parse_error: 'v13: rebuilt text has 5 pasal, the dataset lists 6'

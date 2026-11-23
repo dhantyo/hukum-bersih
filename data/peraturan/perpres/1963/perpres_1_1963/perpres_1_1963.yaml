@@ -1,0 +1,43 @@
+id: perpres_1_1963
+akn: /akn/id/act/perpres/1963/1
+type: perpres
+number: '1'
+year: 1963
+title: Peraturan Presiden Nomor 1 Tahun 1963 tentang Perubahan Dan Tambahan Peraturan-Peraturan
+  Presiden Nomor 4 Dan Nomor 5 Tahun 1962 (Disempurnakan) Masing-Masing Tentang Pokok-Pokok
+  Organisasi Dan Pedoman Kerja Adminstratif (Peraturan Tata-Tertib) Aparatur Pemerintahan
+  Pada Tingkat Tertinggi
+tentang: PERUBAHAN DAN TAMBAHAN PERATURAN-PERATURAN PRESIDEN NOMOR 4 DAN NOMOR 5 TAHUN
+  1962 (DISEMPURNAKAN) MASING-MASING TENTANG POKOK-POKOK ORGANISASI DAN PEDOMAN KERJA
+  ADMINSTRATIF (PERATURAN TATA-TERTIB) APARATUR PEMERINTAHAN PADA TINGKAT TERTINGGI
+short_name: null
+status: null
+tanggal_penetapan: '1963-01-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_1_1963_1963-01-07
+  kind: asli
+  source: dataset
+  date: '1963-01-07'
+  date_basis: tanggal_penetapan
+  text: perpres_1_1963_1963-01-07.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6490dc0aa6a3c7c0614dbdc76c8a4711bc31a9dc79027081daffdc6d331a175f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6490dc0aa6a3c7c0614dbdc76c8a4711bc31a9dc79027081daffdc6d331a175f
+  source_title: Perpres_No.1_Tahun_1963
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

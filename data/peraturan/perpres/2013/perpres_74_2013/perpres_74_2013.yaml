@@ -1,0 +1,39 @@
+id: perpres_74_2013
+akn: /akn/id/act/perpres/2013/74
+type: perpres
+number: '74'
+year: 2013
+title: Peraturan Presiden Nomor 74 Tahun 2013 tentang Pengendalian Dan Pengawasan
+  Minuman Beralkohol
+tentang: PENGENDALIAN DAN PENGAWASAN MINUMAN BERALKOHOL
+short_name: null
+status: null
+tanggal_penetapan: '2013-12-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_74_2013_2013-12-06
+  kind: asli
+  source: dataset
+  date: '2013-12-06'
+  date_basis: tanggal_penetapan
+  text: perpres_74_2013_2013-12-06.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7e8cbce241d1068c25647feab40e031a3e6db94c20802c8cc68d1a38ea140b57
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7e8cbce241d1068c25647feab40e031a3e6db94c20802c8cc68d1a38ea140b57
+  source_title: Perpres_74_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: none_known

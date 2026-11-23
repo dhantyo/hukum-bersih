@@ -1,0 +1,40 @@
+id: perpres_2_2004
+akn: /akn/id/act/perpres/2004/2
+type: perpres
+number: '2'
+year: 2004
+title: Peraturan Presiden Nomor 2 Tahun 2004 tentang Pernyataan Perpanjangan Keadaan
+  Bahaya Dengan Tingkatan Keadaan Darurat Sipil Di Provinsi Nanggroe Aceh Darussalam
+tentang: PERNYATAAN PERPANJANGAN KEADAAN BAHAYA DENGAN TINGKATAN KEADAAN DARURAT SIPIL
+  DI PROVINSI NANGGROE ACEH DARUSSALAM
+short_name: null
+status: null
+tanggal_penetapan: '2004-11-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_2_2004_2004-11-18
+  kind: asli
+  source: dataset
+  date: '2004-11-18'
+  date_basis: tanggal_penetapan
+  text: perpres_2_2004_2004-11-18.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:079a9ed8b4297337a202f52ad800ce02eb86d09c235c23fe6ff1f00c416a7cd0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:079a9ed8b4297337a202f52ad800ce02eb86d09c235c23fe6ff1f00c416a7cd0
+  source_title: PERPRES_No.2_TH_2004
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

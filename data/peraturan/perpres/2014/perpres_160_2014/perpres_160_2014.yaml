@@ -1,0 +1,45 @@
+id: perpres_160_2014
+akn: /akn/id/act/perpres/2014/160
+type: perpres
+number: '160'
+year: 2014
+title: Peraturan Presiden Nomor 160 Tahun 2014 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Georgia Mengenai Pembebasan Visa Bagi
+  Pemegang Paspor Diplomatik Dan Dinas ( Agreement Between The Government Of The Republic
+  Of Indonesia And The Government Of Georgia On Visa Exemption For Holders Of Diplomatic
+  And Service Passports )
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  GEORGIA MENGENAI PEMBEBASAN VISA BAGI PEMEGANG PASPOR DIPLOMATIK DAN DINAS ( AGREEMENT
+  BETWEEN THE GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT OF GEORGIA
+  ON VISA EXEMPTION FOR HOLDERS OF DIPLOMATIC AND SERVICE PASSPORTS )
+short_name: null
+status: null
+tanggal_penetapan: '2014-10-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_160_2014_2014-10-17
+  kind: asli
+  source: dataset
+  date: '2014-10-17'
+  date_basis: tanggal_penetapan
+  text: perpres_160_2014_2014-10-17.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9e1d4f59c2d55b8643396a9b89625d429b93e499629c69364d828a7311cdc963
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9e1d4f59c2d55b8643396a9b89625d429b93e499629c69364d828a7311cdc963
+  source_title: Perpres_Nomor_160_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

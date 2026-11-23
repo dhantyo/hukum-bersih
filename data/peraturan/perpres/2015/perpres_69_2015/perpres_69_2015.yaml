@@ -1,0 +1,42 @@
+id: perpres_69_2015
+akn: /akn/id/act/perpres/2015/69
+type: perpres
+number: '69'
+year: 2015
+title: Peraturan Presiden Nomor 69 Tahun 2015 tentang Bebas Visa Kunjungan
+tentang: BEBAS VISA KUNJUNGAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2015-06-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_69_2015_2015-06-10
+  kind: asli
+  source: dataset
+  date: '2015-06-10'
+  date_basis: tanggal_penetapan
+  text: perpres_69_2015_2015-06-10.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:01fe3068ed30935b31502f241739b137a0fb3e8a4625c293becbe5d6b9d28f7d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:01fe3068ed30935b31502f241739b137a0fb3e8a4625c293becbe5d6b9d28f7d
+  source_title: Perpres_Nomor_69Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: revoked
+  revoked_by:
+  - sha256:a4e0b52b802d268c8e1d1a2d8b3dc5b04cd3045578005c26dddf7f6dbb858407
+  amended_by:
+  - sha256:e910afcc6e6df322d7c9de860d339f85d4db7ddca6b6e0b471a11076620b0e10

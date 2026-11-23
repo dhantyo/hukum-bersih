@@ -1,0 +1,43 @@
+id: perpres_69_2005
+akn: /akn/id/act/perpres/2005/69
+type: perpres
+number: '69'
+year: 2005
+title: Peraturan Presiden Nomor 69 Tahun 2005 tentang Peran Serta Lembaga/Perorangan
+  Asing Dalam Rangka Hibah Untuk Rehabilitasi Dan Rekonstruksi Wilayah Dan Kehidupan
+  Masyarakat Provinsi Nanggroe Aceh Darussalam Dan Kepulauan Nias Provinsi Sumatera
+  Utara
+tentang: PERAN SERTA LEMBAGA/PERORANGAN ASING DALAM RANGKA HIBAH UNTUK REHABILITASI
+  DAN REKONSTRUKSI WILAYAH DAN KEHIDUPAN MASYARAKAT PROVINSI NANGGROE ACEH DARUSSALAM
+  DAN KEPULAUAN NIAS PROVINSI SUMATERA UTARA
+short_name: null
+status: null
+tanggal_penetapan: '2005-11-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_69_2005_2005-11-14
+  kind: asli
+  source: dataset
+  date: '2005-11-14'
+  date_basis: tanggal_penetapan
+  text: perpres_69_2005_2005-11-14.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:75cbfb3ed4234bc63f164be005f724cf3e7c7f986b04cbb0db744c18790d495d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:75cbfb3ed4234bc63f164be005f724cf3e7c7f986b04cbb0db744c18790d495d
+  source_title: PERPRES_NO_69_TH_2005
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: none_known

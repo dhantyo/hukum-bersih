@@ -1,0 +1,41 @@
+id: perpres_61_2006
+akn: /akn/id/act/perpres/2006/61
+type: perpres
+number: '61'
+year: 2006
+title: Peraturan Presiden Nomor 61 Tahun 2006 tentang Tunjangan Jabatan Fungsional
+  Pengamat Gunungapi
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENGAMAT GUNUNGAPI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-05-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_61_2006_2006-05-26
+  kind: asli
+  source: dataset
+  date: '2006-05-26'
+  date_basis: tanggal_penetapan
+  text: perpres_61_2006_2006-05-26.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:685aef9b0d22d9aa469f6c3b1f5961f0549d330b31ae1f77bd4e2e8281495e1e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:685aef9b0d22d9aa469f6c3b1f5961f0549d330b31ae1f77bd4e2e8281495e1e
+  source_title: PERPRES_No.61_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:75dabeabebb89adb987158527dd10b2c6d160725002ee894398379e24e51a113

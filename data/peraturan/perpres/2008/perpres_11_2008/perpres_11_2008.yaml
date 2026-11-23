@@ -1,0 +1,40 @@
+id: perpres_11_2008
+akn: /akn/id/act/perpres/2008/11
+type: perpres
+number: '11'
+year: 2008
+title: Peraturan Presiden Nomor 11 Tahun 2008 tentang Tata Cara Pengadaan, Penetapan
+  Status, Pengalihan Status, Dan Pengalihan Hak Atas Rumah Negara
+tentang: TATA CARA PENGADAAN, PENETAPAN STATUS, PENGALIHAN STATUS, DAN PENGALIHAN
+  HAK ATAS RUMAH NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '2008-02-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_11_2008_2008-02-26
+  kind: asli
+  source: dataset
+  date: '2008-02-26'
+  date_basis: tanggal_penetapan
+  text: perpres_11_2008_2008-02-26.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:dba43e51328e213cd160a52ab521730fcfb61939d216304b0be1cd75ef56938d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:dba43e51328e213cd160a52ab521730fcfb61939d216304b0be1cd75ef56938d
+  source_title: PERPRES_NO_11_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 25
+  status: none_known

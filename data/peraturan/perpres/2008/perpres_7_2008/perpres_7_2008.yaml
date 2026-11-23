@@ -1,0 +1,29 @@
+id: perpres_7_2008
+akn: /akn/id/act/perpres/2008/7
+type: perpres
+number: '7'
+year: 2008
+title: Peraturan Presiden Nomor 7 Tahun 2008 tentang Kebijakan Umum Pertahanan Negara
+tentang: KEBIJAKAN UMUM PERTAHANAN NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2008-01-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:11ac6a213ff0f79b1cfc1b7cd745418d037d9be5ba142bf01b99c9d47f50a37d
+  source_title: PERPRES_NO_7_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:8e2cefcef644a2655575f4c5a0cbe3455acd0518a19ba292fbaf09acb14b284f
+parse_error: 'v13: rebuilt text has 2 pasal, the dataset lists 3'

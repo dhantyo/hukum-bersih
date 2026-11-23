@@ -1,0 +1,39 @@
+id: perpres_13_1964
+akn: /akn/id/act/perpres/1964/13
+type: perpres
+number: '13'
+year: 1964
+title: Peraturan Presiden Nomor 13 Tahun 1964 tentang Nilai Transaksi Rupiah Dan Perangsang
+  Ekspor
+tentang: NILAI TRANSAKSI RUPIAH DAN PERANGSANG EKSPOR
+short_name: null
+status: null
+tanggal_penetapan: '1964-04-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_13_1964_1964-04-17
+  kind: asli
+  source: dataset
+  date: '1964-04-17'
+  date_basis: tanggal_penetapan
+  text: perpres_13_1964_1964-04-17.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7e9f3190b02e70a28efac963888609f41f09a3fb96f80658d9422f801c1c4dcf
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7e9f3190b02e70a28efac963888609f41f09a3fb96f80658d9422f801c1c4dcf
+  source_title: Perpres_No.13_Tahun_1964
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: none_known

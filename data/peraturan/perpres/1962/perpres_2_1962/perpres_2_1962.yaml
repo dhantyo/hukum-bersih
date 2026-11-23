@@ -1,0 +1,39 @@
+id: perpres_2_1962
+akn: /akn/id/act/perpres/1962/2
+type: perpres
+number: '2'
+year: 1962
+title: Peraturan Presiden Nomor 2 Tahun 1962 tentang Perubahan Pepraturan Premi Jawatan
+  Pajak
+tentang: PERUBAHAN PEPRATURAN PREMI JAWATAN PAJAK
+short_name: null
+status: null
+tanggal_penetapan: '1962-04-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_2_1962_1962-04-25
+  kind: asli
+  source: dataset
+  date: '1962-04-25'
+  date_basis: tanggal_penetapan
+  text: perpres_2_1962_1962-04-25.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1e7296d72d09381e333331fd438df069dcee558a5df1a7f586e4fbe2dc1e9ccc
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1e7296d72d09381e333331fd438df069dcee558a5df1a7f586e4fbe2dc1e9ccc
+  source_title: Perpres_No.2_Tahun_1962
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

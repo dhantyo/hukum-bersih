@@ -1,0 +1,47 @@
+id: perpres_1_2006
+akn: /akn/id/act/perpres/2006/1
+type: perpres
+number: '1'
+year: 2006
+title: Peraturan Presiden Nomor 1 Tahun 2006 tentang Perubahan Atas Peraturan Pemerintah
+  Nomor 7 Tahun 1977 Tentang Peraturan Gaji Pegawai Negeri Sipil Sebagaimana Telah
+  Beberapa Kali Diubah Terakhir Dengan Peraturan Pemerintah Nomor 26 Tahun 2001 Ke
+  Dalam Gaji Pokok Pegawai Negeri Sipil Menurut Peraturan Pemerintah Nomor 66 Tahun
+  2005 Tentang Perubahan Ketujuh Atas Peraturan Pemerintah Nomor 7 Tahun 1977 Tentang
+  Peraturan Gaji Pegawai Negeri Sipil
+tentang: PERUBAHAN ATAS PERATURAN PEMERINTAH NOMOR 7 TAHUN 1977 TENTANG PERATURAN
+  GAJI PEGAWAI NEGERI SIPIL SEBAGAIMANA TELAH BEBERAPA KALI DIUBAH TERAKHIR DENGAN
+  PERATURAN PEMERINTAH NOMOR 26 TAHUN 2001 KE DALAM GAJI POKOK PEGAWAI NEGERI SIPIL
+  MENURUT PERATURAN PEMERINTAH NOMOR 66 TAHUN 2005 TENTANG PERUBAHAN KETUJUH ATAS
+  PERATURAN PEMERINTAH NOMOR 7 TAHUN 1977 TENTANG PERATURAN GAJI PEGAWAI NEGERI SIPIL
+short_name: null
+status: null
+tanggal_penetapan: '2006-01-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_1_2006_2006-01-11
+  kind: asli
+  source: dataset
+  date: '2006-01-11'
+  date_basis: tanggal_penetapan
+  text: perpres_1_2006_2006-01-11.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b7d056343aaa7204f6470dab9f4d64dbafe0ca6ae8d2a0de804c19d3cd1ae125
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b7d056343aaa7204f6470dab9f4d64dbafe0ca6ae8d2a0de804c19d3cd1ae125
+  source_title: PERPRES_No.1_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

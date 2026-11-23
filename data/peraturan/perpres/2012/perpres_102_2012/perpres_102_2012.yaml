@@ -1,0 +1,41 @@
+id: perpres_102_2012
+akn: /akn/id/act/perpres/2012/102
+type: perpres
+number: '102'
+year: 2012
+title: Peraturan Presiden Nomor 102 Tahun 2012 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Kementerian Riset Dan Teknologi
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN KEMENTERIAN RISET DAN TEKNOLOGI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2012-11-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_102_2012_2012-11-17
+  kind: asli
+  source: dataset
+  date: '2012-11-17'
+  date_basis: tanggal_penetapan
+  text: perpres_102_2012_2012-11-17.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e29a7a33e94df069e232bc0a59dac594a2af3a4f566bdfd5b8c17dcf3c52ae46
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e29a7a33e94df069e232bc0a59dac594a2af3a4f566bdfd5b8c17dcf3c52ae46
+  source_title: Peraturan_Presiden_No_102_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:5784db5e2dc4330272cb6473f1398b983238636e8fd17a7e74bcd21cb51752c6

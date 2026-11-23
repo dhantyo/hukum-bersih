@@ -1,0 +1,38 @@
+id: perpres_3_1966
+akn: /akn/id/act/perpres/1966/3
+type: perpres
+number: '3'
+year: 1966
+title: Peraturan Presiden Nomor 3 Tahun 1966 tentang Pengamanan Bidang Iuran Negara
+tentang: PENGAMANAN BIDANG IURAN NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '1966-02-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_3_1966_1966-02-09
+  kind: asli
+  source: dataset
+  date: '1966-02-09'
+  date_basis: tanggal_penetapan
+  text: perpres_3_1966_1966-02-09.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0c6a20175eb84481560b702b6efc8303c4c10c56b676ad0786f6c05c10c159f2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0c6a20175eb84481560b702b6efc8303c4c10c56b676ad0786f6c05c10c159f2
+  source_title: Perpres_No._3_Tahun_1966
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

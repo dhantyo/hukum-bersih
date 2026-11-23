@@ -1,0 +1,39 @@
+id: perpres_136_2014
+akn: /akn/id/act/perpres/2014/136
+type: perpres
+number: '136'
+year: 2014
+title: Peraturan Presiden Nomor 136 Tahun 2014 tentang Programpengembanganpesawattempur
+  If-X Denganrahmattuhanyangmahaesa
+tentang: PROGRAMPENGEMBANGANPESAWATTEMPUR IF-X DENGANRAHMATTUHANYANGMAHAESA
+short_name: null
+status: null
+tanggal_penetapan: '2014-10-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_136_2014_2014-10-17
+  kind: asli
+  source: dataset
+  date: '2014-10-17'
+  date_basis: tanggal_penetapan
+  text: perpres_136_2014_2014-10-17.txt
+  pasal_count: 24
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2f80e005cc7e2f4c7b3e727e0b47703edd5cb880a222185bf248fa488d6e69e4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2f80e005cc7e2f4c7b3e727e0b47703edd5cb880a222185bf248fa488d6e69e4
+  source_title: Perpres_Nomor_136_Tahun_2014
+  regulation_type: PERATURANPRESIDEN
+  quality: clean
+  chunks: 28
+  status: none_known

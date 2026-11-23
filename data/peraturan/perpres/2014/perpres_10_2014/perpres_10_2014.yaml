@@ -1,0 +1,42 @@
+id: perpres_10_2014
+akn: /akn/id/act/perpres/2014/10
+type: perpres
+number: '10'
+year: 2014
+title: Peraturan Presiden Nomor 10 Tahun 2014 tentang Pengesahan Protocol To Amend
+  Certain Asean Economic Agreements Related To Trade In Goods (Protokol Untuk Mengubah
+  Perjanjian Ekonomi Asean Tertentu Terkait Perdagangan Barang)
+tentang: PENGESAHAN PROTOCOL TO AMEND CERTAIN ASEAN ECONOMIC AGREEMENTS RELATED TO
+  TRADE IN GOODS (PROTOKOL UNTUK MENGUBAH PERJANJIAN EKONOMI ASEAN TERTENTU TERKAIT
+  PERDAGANGAN BARANG)
+short_name: null
+status: null
+tanggal_penetapan: '2014-02-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_10_2014_2014-02-10
+  kind: asli
+  source: dataset
+  date: '2014-02-10'
+  date_basis: tanggal_penetapan
+  text: perpres_10_2014_2014-02-10.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2f51371fa95acdab5a4ee3c7383c09d67f9728250d63784172b9d07f2bca21e1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2f51371fa95acdab5a4ee3c7383c09d67f9728250d63784172b9d07f2bca21e1
+  source_title: Perpres_Nomor_10_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

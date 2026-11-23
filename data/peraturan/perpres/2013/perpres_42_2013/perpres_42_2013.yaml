@@ -1,0 +1,39 @@
+id: perpres_42_2013
+akn: /akn/id/act/perpres/2013/42
+type: perpres
+number: '42'
+year: 2013
+title: Peraturan Presiden Nomor 42 Tahun 2013 tentang Gerakan Nasional Percepatan
+  Perbaikan Gizi
+tentang: GERAKAN NASIONAL PERCEPATAN PERBAIKAN GIZI
+short_name: null
+status: null
+tanggal_penetapan: '2013-05-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_42_2013_2013-05-24
+  kind: asli
+  source: dataset
+  date: '2013-05-24'
+  date_basis: tanggal_penetapan
+  text: perpres_42_2013_2013-05-24.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:994667f9145128cdbaf2c2b31d88d2a46c5914dc0515debea03cafbaa2de88cf
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:994667f9145128cdbaf2c2b31d88d2a46c5914dc0515debea03cafbaa2de88cf
+  source_title: Perpres_42_2013
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 26
+  status: none_known

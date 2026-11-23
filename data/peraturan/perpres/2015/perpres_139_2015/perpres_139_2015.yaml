@@ -1,0 +1,42 @@
+id: perpres_139_2015
+akn: /akn/id/act/perpres/2015/139
+type: perpres
+number: '139'
+year: 2015
+title: Peraturan Presiden Nomor 139 Tahun 2015 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Kementerian Lingkungan Hidup Dan Kehutanan
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN KEMENTERIAN LINGKUNGAN HIDUP DAN
+  KEHUTANAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2015-12-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_139_2015_2015-12-14
+  kind: asli
+  source: dataset
+  date: '2015-12-14'
+  date_basis: tanggal_penetapan
+  text: perpres_139_2015_2015-12-14.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5e7858d1856a28252193f80212627acd61260a9e1e0c6bfdb6577fe28adb3037
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5e7858d1856a28252193f80212627acd61260a9e1e0c6bfdb6577fe28adb3037
+  source_title: Perpres_Nomor_139_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 19
+  status: revoked
+  revoked_by:
+  - sha256:68baa6299f88a5a9bccd6bb1dbe8289d4a2d118b49ffe872a0a1b624bfed4cd1

@@ -1,0 +1,30 @@
+id: perpres_51_2010
+akn: /akn/id/act/perpres/2010/51
+type: perpres
+number: '51'
+year: 2010
+title: Peraturan Presiden Nomor 51 Tahun 2010 tentang Biaya Penyelenggaraan Ibadah
+  Haji Tahun 1431 H/2010 M
+tentang: BIAYA PENYELENGGARAAN IBADAH HAJI TAHUN 1431 H/2010 M
+short_name: null
+status: dicabut
+tanggal_penetapan: '2010-07-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3a8b23d4e36a3bbfa09b33820231acf2722b093cede445abbd0073c8044080a8
+  source_title: Perpres_No.51_Tahun_2010
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:a8c472b56a50bf27ff66a5bf1c77b6b5e41d955e8fdeb2fae37f802a3e425689
+parse_error: 'v13: rebuilt text has 8 pasal, the dataset lists 9'

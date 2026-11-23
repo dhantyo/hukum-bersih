@@ -1,0 +1,43 @@
+id: perpres_34_2012
+akn: /akn/id/act/perpres/2012/34
+type: perpres
+number: '34'
+year: 2012
+title: Peraturan Presiden Nomor 34 Tahun 2012 tentang Tunjangan Khusus Wilayah Pulau-Pulau
+  Kecil Terluar Dan/Atau Wilayah Perbatasan Bagi Pegawai Negeri Pada Kepolisian Negara
+  Republik Indonesia Yang Bertugas Secara Penuh Pada Wilayah Pulau-Pulau Kecil Terluar
+  Dan/Atau Wilayah Perbatasan
+tentang: TUNJANGAN KHUSUS WILAYAH PULAU-PULAU KECIL TERLUAR DAN/ATAU WILAYAH PERBATASAN
+  BAGI PEGAWAI NEGERI PADA KEPOLISIAN NEGARA REPUBLIK INDONESIA YANG BERTUGAS SECARA
+  PENUH PADA WILAYAH PULAU-PULAU KECIL TERLUAR DAN/ATAU WILAYAH PERBATASAN
+short_name: null
+status: null
+tanggal_penetapan: '2012-03-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_34_2012_2012-03-20
+  kind: asli
+  source: dataset
+  date: '2012-03-20'
+  date_basis: tanggal_penetapan
+  text: perpres_34_2012_2012-03-20.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d29b428ca5c39284f22438ada4c73c39a0d19f23f45d0330f9da87650b15d523
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d29b428ca5c39284f22438ada4c73c39a0d19f23f45d0330f9da87650b15d523
+  source_title: Peraturan_Presiden_No_34_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

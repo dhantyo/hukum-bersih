@@ -1,0 +1,47 @@
+id: perpres_6_2008
+akn: /akn/id/act/perpres/2008/6
+type: perpres
+number: '6'
+year: 2008
+title: Peraturan Presiden Nomor 6 Tahun 2008 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Federasi Rusia Tentang Pembebasan Visa
+  Kunjungan Singkat Bagi Pemegang Paspor Diplomatik Dan Dinas ( Agreement Between
+  The Government Of The Republic Of Indonesia And The Government Of The Russian Federation
+  On Visa Exemption For Short-Term Visits Of The Holders Diplomatic And Service Passports
+  )
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  FEDERASI RUSIA TENTANG PEMBEBASAN VISA KUNJUNGAN SINGKAT BAGI PEMEGANG PASPOR DIPLOMATIK
+  DAN DINAS ( AGREEMENT BETWEEN THE GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE
+  GOVERNMENT OF THE RUSSIAN FEDERATION ON VISA EXEMPTION FOR SHORT-TERM VISITS OF
+  THE HOLDERS DIPLOMATIC AND SERVICE PASSPORTS )
+short_name: null
+status: null
+tanggal_penetapan: '2008-01-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_6_2008_2008-01-26
+  kind: asli
+  source: dataset
+  date: '2008-01-26'
+  date_basis: tanggal_penetapan
+  text: perpres_6_2008_2008-01-26.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:97032d0883fd368ce3720680c42741ba66d71446fc2b4dbd81ff1d7b7f3a801e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:97032d0883fd368ce3720680c42741ba66d71446fc2b4dbd81ff1d7b7f3a801e
+  source_title: PERPRES_NO_6_TH_2008
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

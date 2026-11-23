@@ -1,0 +1,42 @@
+id: perpres_48_2016
+akn: /akn/id/act/perpres/2016/48
+type: perpres
+number: '48'
+year: 2016
+title: Peraturan Presiden Nomor 48 Tahun 2016 tentang Penugasan Kepada Perusahaan
+  Umum (Perum) Bulog Dalam Rangka Ketahanan Pangan Nasional
+tentang: PENUGASAN KEPADA PERUSAHAAN UMUM (PERUM) BULOG DALAM RANGKA KETAHANAN PANGAN
+  NASIONAL
+short_name: null
+status: diubah
+tanggal_penetapan: '2016-05-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_48_2016_2016-05-25
+  kind: asli
+  source: dataset
+  date: '2016-05-25'
+  date_basis: tanggal_penetapan
+  text: perpres_48_2016_2016-05-25.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d7a21eee0f3e2aa6c791e40ab2cb670edf3789efe6b4835005cff8159211ae6a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d7a21eee0f3e2aa6c791e40ab2cb670edf3789efe6b4835005cff8159211ae6a
+  source_title: Perpres_Nomor_48_Tahun_2016
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 23
+  status: amended
+  amended_by:
+  - sha256:78133d9ea9facbdab5dd5ebe82d28efbb99005cecc4277d6d91987a743108937

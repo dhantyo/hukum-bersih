@@ -1,0 +1,41 @@
+id: perpres_54_2011
+akn: /akn/id/act/perpres/2011/54
+type: perpres
+number: '54'
+year: 2011
+title: Peraturan Presiden Nomor 54 Tahun 2011 tentang Pengesahan Preferential Trade
+  Agreement Among D-8 Member States (Persetujuan Preferensi Perdagangan Antar Negara-Negara
+  Anggota D-8)
+tentang: PENGESAHAN PREFERENTIAL TRADE AGREEMENT AMONG D-8 MEMBER STATES (PERSETUJUAN
+  PREFERENSI PERDAGANGAN ANTAR NEGARA-NEGARA ANGGOTA D-8)
+short_name: null
+status: null
+tanggal_penetapan: '2011-09-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_54_2011_2011-09-09
+  kind: asli
+  source: dataset
+  date: '2011-09-09'
+  date_basis: tanggal_penetapan
+  text: perpres_54_2011_2011-09-09.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5fa469a76c356e5242eb6c6bf844736b14c87419fe058be3c4e962c774556a7c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5fa469a76c356e5242eb6c6bf844736b14c87419fe058be3c4e962c774556a7c
+  source_title: Perpres_no_54_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

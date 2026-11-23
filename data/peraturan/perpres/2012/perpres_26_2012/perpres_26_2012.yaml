@@ -1,0 +1,39 @@
+id: perpres_26_2012
+akn: /akn/id/act/perpres/2012/26
+type: perpres
+number: '26'
+year: 2012
+title: Peraturan Presiden Nomor 26 Tahun 2012 tentang Cetak Biru Pengembangan Sistem
+  Logistik Nasional
+tentang: CETAK BIRU PENGEMBANGAN SISTEM LOGISTIK NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2012-03-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_26_2012_2012-03-05
+  kind: asli
+  source: dataset
+  date: '2012-03-05'
+  date_basis: tanggal_penetapan
+  text: perpres_26_2012_2012-03-05.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b164afd0afa756e71ca39c9305c6fc7a79bc8548013b23a7420fce8050b7fa48
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b164afd0afa756e71ca39c9305c6fc7a79bc8548013b23a7420fce8050b7fa48
+  source_title: Peraturan_Presiden_No_26_Tahun_2012
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

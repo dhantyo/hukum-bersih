@@ -1,0 +1,39 @@
+id: perpres_123_2014
+akn: /akn/id/act/perpres/2014/123
+type: perpres
+number: '123'
+year: 2014
+title: Peraturan Presiden Nomor 123 Tahun 2014 tentang Pendirian Universitas Singaperbangsa
+  Karawang
+tentang: PENDIRIAN UNIVERSITAS SINGAPERBANGSA KARAWANG
+short_name: null
+status: null
+tanggal_penetapan: '2014-10-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_123_2014_2014-10-06
+  kind: asli
+  source: dataset
+  date: '2014-10-06'
+  date_basis: tanggal_penetapan
+  text: perpres_123_2014_2014-10-06.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0c3d915b32e1a7f11f8aaf6749779887a4b3b9183ae2220c2ef6e388b933b567
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0c3d915b32e1a7f11f8aaf6749779887a4b3b9183ae2220c2ef6e388b933b567
+  source_title: Perpres_nomor_123_Tahun_2014
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

@@ -1,0 +1,40 @@
+id: perpres_111_2006
+akn: /akn/id/act/perpres/2006/111
+type: perpres
+number: '111'
+year: 2006
+title: Peraturan Presiden Nomor 111 Tahun 2006 tentang Perubahan Sekolah Tinggi Agama
+  Islam Negeri Ambon Menjadi Institut Agama Islam Negeri Ambon
+tentang: PERUBAHAN SEKOLAH TINGGI AGAMA ISLAM NEGERI AMBON MENJADI INSTITUT AGAMA
+  ISLAM NEGERI AMBON
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_111_2006_2006
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: perpres_111_2006_2006.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f2a47fff839576927c4436c89ff902066cef361e2f6f33bc494bbe0f6e0072fd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f2a47fff839576927c4436c89ff902066cef361e2f6f33bc494bbe0f6e0072fd
+  source_title: PRPS_NO_111_TH_2006
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

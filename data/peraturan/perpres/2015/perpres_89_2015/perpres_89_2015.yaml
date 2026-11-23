@@ -1,0 +1,39 @@
+id: perpres_89_2015
+akn: /akn/id/act/perpres/2015/89
+type: perpres
+number: '89'
+year: 2015
+title: Peraturan Presiden Nomor 89 Tahun 2015 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Kepolisian Negara Republik Indonesia
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN KEPOLISIAN NEGARA REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2015-07-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_89_2015_2015-07-31
+  kind: asli
+  source: dataset
+  date: '2015-07-31'
+  date_basis: tanggal_penetapan
+  text: perpres_89_2015_2015-07-31.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e4ab542687d44b914bb8f759193c5eef75845c6fcada45ee764581df67de4c74
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e4ab542687d44b914bb8f759193c5eef75845c6fcada45ee764581df67de4c74
+  source_title: Perpres_Nomor_89_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 19
+  status: none_known

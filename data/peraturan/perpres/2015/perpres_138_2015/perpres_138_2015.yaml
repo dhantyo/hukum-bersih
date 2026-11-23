@@ -1,0 +1,42 @@
+id: perpres_138_2015
+akn: /akn/id/act/perpres/2015/138
+type: perpres
+number: '138'
+year: 2015
+title: Peraturan Presiden Nomor 138 Tahun 2015 tentang Tunjangan Kinerja Pegawai Di
+  Lingkungan Kementerian Riset, Teknologi, Dan Pendidikan Tinggi
+tentang: TUNJANGAN KINERJA PEGAWAI DI LINGKUNGAN KEMENTERIAN RISET, TEKNOLOGI, DAN
+  PENDIDIKAN TINGGI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2015-12-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_138_2015_2015-12-14
+  kind: asli
+  source: dataset
+  date: '2015-12-14'
+  date_basis: tanggal_penetapan
+  text: perpres_138_2015_2015-12-14.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5784db5e2dc4330272cb6473f1398b983238636e8fd17a7e74bcd21cb51752c6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5784db5e2dc4330272cb6473f1398b983238636e8fd17a7e74bcd21cb51752c6
+  source_title: Perpres_Nomor_138_Tahun_2015
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 19
+  status: revoked
+  revoked_by:
+  - sha256:e8f2d7f8f892b2289f5579658f13f642c446e52cbb79e794481f7860f1f1048f

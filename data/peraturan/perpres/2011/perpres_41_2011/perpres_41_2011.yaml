@@ -1,0 +1,30 @@
+id: perpres_41_2011
+akn: /akn/id/act/perpres/2011/41
+type: perpres
+number: '41'
+year: 2011
+title: Peraturan Presiden Nomor 41 Tahun 2011 tentang Tunjangan Kinerja Bagi Pegawai
+  Di Lingkungan Kejaksaan Republik Indonesia
+tentang: TUNJANGAN KINERJA BAGI PEGAWAI DI LINGKUNGAN KEJAKSAAN REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2011-07-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:72a17dfc784b3ea10841a8ff4993861f14b8e5acc3571c91b148f12fa4f39780
+  source_title: Perpres_no_41_2011
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: revoked
+  revoked_by:
+  - sha256:6376fc40db30f14443c91a534f98e10273045f710abe4e17fdf64d88dd5d99cc
+parse_error: 'v13: rebuilt text has 7 pasal, the dataset lists 8'

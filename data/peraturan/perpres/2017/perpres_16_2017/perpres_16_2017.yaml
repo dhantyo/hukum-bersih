@@ -1,0 +1,38 @@
+id: perpres_16_2017
+akn: /akn/id/act/perpres/2017/16
+type: perpres
+number: '16'
+year: 2017
+title: Peraturan Presiden Nomor 16 Tahun 2017 tentang Kebijakan Kelautan Indonesia
+tentang: KEBIJAKAN KELAUTAN INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2017-02-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perpres_16_2017_2017-02-20
+  kind: asli
+  source: dataset
+  date: '2017-02-20'
+  date_basis: tanggal_penetapan
+  text: perpres_16_2017_2017-02-20.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5fe3c614d7235d162bc972303a6a615d6af96311327ab22f65690f223fc8783c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5fe3c614d7235d162bc972303a6a615d6af96311327ab22f65690f223fc8783c
+  source_title: Perpres_Nomor_16_Tahun_2017
+  regulation_type: PERATURAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known
