@@ -9,13 +9,13 @@ title: Undang-Undang Nomor 74 Tahun 1958 tentang Penetapan "Undang-Undang Darura
 tentang: PENETAPAN "UNDANG-UNDANG DARURAT NO. 16TAHUN 1957 TENTANG PAJAK BANGSA ASING
   (LEMBARAN-NEGARA TAHUN 1957 NO. 63)"SEBAGAI UNDANG-UNDANG
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1958-08-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-74-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu74-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52867/uu-no-74-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/42242/UU%20Nomor%2074%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,6 +24,46 @@ relationships:
   enacts:
   - uu-drt_16_1957
   enacted_by: []
-versions: []
+versions:
+- id: uu_74_1958_1958-08-11
+  kind: asli
+  source: official
+  date: '1958-08-11'
+  date_basis: tanggal_penetapan
+  text: uu_74_1958_1958-08-11.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4dea84b8d1ec04bb4116752bddc09aee7064c94113808b5a958212979b9970c6
 pdf_sha256: 4fcf07df5c5ac7848fcda264f391779aaa22771c81b3ce12de7c1972763d0f0a
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-09-29'
+tanggal_berlaku: '1957-01-01'
+lembaran_negara: 'LL BPHN : 19 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-74-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu74-1958.pdf
+bpk:
+  id: 52867
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42242/UU%20Nomor%2074%20Tahun%201958.pdf
+    bpk_file_id: 42242
+    filename: UU Nomor 74 Tahun 1958.pdf
+    sha256: 4dea84b8d1ec04bb4116752bddc09aee7064c94113808b5a958212979b9970c6
+    bytes: 251438
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_18_1997
+      citation: UU No. 18 Tahun 1997
+      tentang: Pajak Daerah dan Retribusi Daerah
+      url: https://peraturan.bpk.go.id/Details/45950/uu-no-18-tahun-1997
+      note: null
+    Diubah dengan:
+    - id: uu_87_1958
+      citation: UU No. 87 Tahun 1958
+      tentang: Pengubahan Undang-Undang Pajak Bangsa Asing (Undang-Undang No. 74 Tahun
+        1958)
+      url: https://peraturan.bpk.go.id/Details/52374/uu-no-87-tahun-1958
+      note: null
+uji_materi: null

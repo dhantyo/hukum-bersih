@@ -8,23 +8,64 @@ title: Undang-Undang Nomor 64 Tahun 1958 tentang Pembentukan Daerah-Daerah Tingk
 tentang: PEMBENTUKAN DAERAH-DAERAH TINGKAT I BALI, NUSA TENGGARA BARAT DAN NUSA TENGGARA
   TIMUR
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 20 Tahun 2022 Tentang Provinsi
-  Nusa Tenggara Barat Undang-Undang Nomor 21 Tahun 2022 Tentang Provinsi Nusa Tenggara
-  Timur Undang-Undang Nomor 15 Tahun 2023 Tentang Provinsi Bali'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1958-08-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-64-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu64-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52333/uu-no-64-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41664/UU%20Nomor%2064%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_20_2022
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_64_1958_1958-08-11
+  kind: asli
+  source: official
+  date: '1958-08-11'
+  date_basis: tanggal_penetapan
+  text: uu_64_1958_1958-08-11.txt
+  pasal_count: 11
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f4f64aba168beaad18b307d2663b36c1077e5206ff91edcf321abfa3feb4e8ea
 pdf_sha256: c8b96b3bd38aee95f370b287b00479e7201c3f02d64810940a8ad715c1970580
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-08-14'
+tanggal_berlaku: '1958-08-14'
+lembaran_negara: 'LN. 1958 No. 115, LL SETNEG : 10 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-64-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu64-1958.pdf
+bpk:
+  id: 52333
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41664/UU%20Nomor%2064%20Tahun%201958.pdf
+    bpk_file_id: 41664
+    filename: UU Nomor 64 Tahun 1958.pdf
+    sha256: f4f64aba168beaad18b307d2663b36c1077e5206ff91edcf321abfa3feb4e8ea
+    bytes: 45839
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_15_2023
+      citation: UU No. 15 Tahun 2023
+      tentang: Provinsi Bali
+      url: https://peraturan.bpk.go.id/Details/249375/uu-no-15-tahun-2023
+      note: null
+    Dicabut sebagian dengan:
+    - id: uu_21_2022
+      citation: UU No. 21 Tahun 2022
+      tentang: Provinsi Nusa Tenggara Timur
+      url: https://peraturan.bpk.go.id/Details/217806/uu-no-21-tahun-2022
+      note: Mencabut ketentuan yang mengatur mengenai Provinsi Nusa Tenggara Timur
+    - id: uu_20_2022
+      citation: UU No. 20 Tahun 2022
+      tentang: Provinsi Nusa Tenggara Barat
+      url: https://peraturan.bpk.go.id/Details/217804/uu-no-20-tahun-2022
+      note: Mencabut ketentuan yang mengatur mengenai Provinsi Nusa Tenggara Barat
+uji_materi: null

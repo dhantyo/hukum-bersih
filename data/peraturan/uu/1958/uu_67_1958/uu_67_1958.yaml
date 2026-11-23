@@ -9,12 +9,12 @@ tentang: PERUBAHAN BATAS-BATAS WILAYAH KOTAPRAJA SALATIGA DAN DAERAH SWATANTRA T
   II SEMARANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-07-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-67-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu67-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52343/uu-no-67-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41674/UU%20Nomor%2067%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_67_1958_1958-07-31
+  kind: asli
+  source: official
+  date: '1958-07-31'
+  date_basis: tanggal_penetapan
+  text: uu_67_1958_1958-07-31.txt
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 57f0cd0f44b2b39d76b2e212b7cc0e54830c859395bd90f35c56587a4e0fd16a
 pdf_sha256: f97217d1e9c4f75b1344512f4672b57c2eddef6a416a74509b33f09c42797661
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-08-22'
+tanggal_berlaku: '1958-08-22'
+lembaran_negara: 'LN. 1958 No. 118, LL SETNEG : 5 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-67-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu67-1958.pdf
+bpk:
+  id: 52343
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41674/UU%20Nomor%2067%20Tahun%201958.pdf
+    bpk_file_id: 41674
+    filename: UU Nomor 67 Tahun 1958.pdf
+    sha256: 57f0cd0f44b2b39d76b2e212b7cc0e54830c859395bd90f35c56587a4e0fd16a
+    bytes: 36217
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

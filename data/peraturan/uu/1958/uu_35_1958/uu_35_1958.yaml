@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN VIIIA (KEMENTERIAN PERHUBUNGAN) DARI ANGGARAN REPUBLIK
   UNTUK TAHUN DINAS 1955
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-06-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-35-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu35-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52177/uu-no-35-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41486/UU%20Nomor%2035%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_35_1958_1958-06-21
+  kind: asli
+  source: official
+  date: '1958-06-21'
+  date_basis: tanggal_penetapan
+  text: uu_35_1958_1958-06-21.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f437fbc5d6d659b706f1f230cf3dc41d472754094d1136bb2e2973669f26a16c
 pdf_sha256: 99411d8e61d7c2c4e9e817076ad2863b8e3bfaf349aa6ac080d98e04255b20a3
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-07-17'
+tanggal_berlaku: '1955-01-01'
+lembaran_negara: 'LN. 1958 No. 85, LL SETNEG : 8 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-35-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu35-1958.pdf
+bpk:
+  id: 52177
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41486/UU%20Nomor%2035%20Tahun%201958.pdf
+    bpk_file_id: 41486
+    filename: UU Nomor 35 Tahun 1958.pdf
+    sha256: f437fbc5d6d659b706f1f230cf3dc41d472754094d1136bb2e2973669f26a16c
+    bytes: 35022
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

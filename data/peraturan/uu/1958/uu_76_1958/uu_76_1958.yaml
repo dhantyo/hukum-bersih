@@ -11,12 +11,12 @@ tentang: PENETAPAN "UNDANG-UNDANG DARURAT NO. 17 TAHUN 1957 TENTANG KENAIKAN TAR
   TAHUN 1957 NO. 64)" SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-10-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-76-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu76-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52870/uu-no-76-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/42245/UU%20Nomor%2076%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,6 +25,32 @@ relationships:
   enacts:
   - uu-drt_17_1957
   enacted_by: []
-versions: []
+versions:
+- id: uu_76_1958_1958-10-07
+  kind: asli
+  source: official
+  date: '1958-10-07'
+  date_basis: tanggal_penetapan
+  text: uu_76_1958_1958-10-07.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ae235f757dea38f17e8bc1dda3a157249343824a413d380c714a832fd7ddcaf6
 pdf_sha256: 181666b424e94b0945b5199d6730b7d16fb302b555306fa10dd2761115f4bc85
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-10-07'
+lembaran_negara: 'LN. 1958 TLN No. 1346, LL BPHN : 6 HLM'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-76-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu76-1958.pdf
+bpk:
+  id: 52870
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42245/UU%20Nomor%2076%20Tahun%201958.pdf
+    bpk_file_id: 42245
+    filename: UU Nomor 76 Tahun 1958.pdf
+    sha256: ae235f757dea38f17e8bc1dda3a157249343824a413d380c714a832fd7ddcaf6
+    bytes: 182231
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -6,13 +6,13 @@ year: 1958
 title: Undang-Undang Nomor 62 Tahun 1958 tentang Kewarga-Negaraan Republik Indonesia
 tentang: KEWARGA-NEGARAAN REPUBLIK INDONESIA
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1958-07-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-62-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu62-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52324/uu-no-62-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41655/UU%20Nomor%2062%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,45 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_62_1958_1958-07-29
+  kind: asli
+  source: official
+  date: '1958-07-29'
+  date_basis: tanggal_penetapan
+  text: uu_62_1958_1958-07-29.txt
+  pasal_count: 20
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7c7dc61214bfa26d092dfdc61ebbe4847c173684f482f641c7158ef235375faa
 pdf_sha256: e4e87c9f515bda43fdf304225b59fe38aa125dba5ebe66730138f3733990c857
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-08-01'
+lembaran_negara: 'LL SETNEG : 20 HLM'
+subjek: KEWARGANEGARAAN DAN IMIGRASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-62-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu62-1958.pdf
+bpk:
+  id: 52324
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41655/UU%20Nomor%2062%20Tahun%201958.pdf
+    bpk_file_id: 41655
+    filename: UU Nomor 62 Tahun 1958.pdf
+    sha256: 7c7dc61214bfa26d092dfdc61ebbe4847c173684f482f641c7158ef235375faa
+    bytes: 60862
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_12_2006
+      citation: UU No. 12 Tahun 2006
+      tentang: Kewarganegaraan Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/40176/uu-no-12-tahun-2006
+      note: null
+    Diubah dengan:
+    - id: uu_3_1976
+      citation: UU No. 3 Tahun 1976
+      tentang: Perubahan Pasal 18 Undang-Undang Nomor 62 Tahun 1958 tentang Kewarganegaraan
+        Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/47207/uu-no-3-tahun-1976
+      note: null
+uji_materi: null

@@ -12,12 +12,12 @@ tentang: PENETAPAN BAGIAN IVA (URUSAN PENYELENGGARAAN KEUANGAN DAN PERHITUNGAN-P
   SENDIRI) DARI ANGGARAN REPUBLIK INDONESIA UNTUK TAHUN DINAS 1955
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-06-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-30-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu30-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52167/uu-no-30-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41474/UU%20Nomor%2030%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,6 +25,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_30_1958_1958-06-21
+  kind: asli
+  source: official
+  date: '1958-06-21'
+  date_basis: tanggal_penetapan
+  text: uu_30_1958_1958-06-21.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8d0e7a2b96497ca28be36fd8c0da8885faf1845e29caa9fadfeab05e62dc93f7
 pdf_sha256: 3714cb4b232d22927043c1f2f1aa6277a9410c1d25d747ca7b6afb5687d52923
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-07-17'
+tanggal_berlaku: '1955-01-01'
+lembaran_negara: 'LN. 1958 No. 80, LL SETNEG : 15 HLM'
+subjek: APBN - BUMN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-30-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu30-1958.pdf
+bpk:
+  id: 52167
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41474/UU%20Nomor%2030%20Tahun%201958.pdf
+    bpk_file_id: 41474
+    filename: UU Nomor 30 Tahun 1958.pdf
+    sha256: 8d0e7a2b96497ca28be36fd8c0da8885faf1845e29caa9fadfeab05e62dc93f7
+    bytes: 49414
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

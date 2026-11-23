@@ -9,12 +9,12 @@ tentang: IKUT-SERTA NEGARA REPUBLIK INDONESIA DALAM SELURUH KONPENSI JENEWA TANG
   12 AGUSTUS 1949
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-07-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-59-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu59-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52317/uu-no-59-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41647/UU%20Nomor%2059%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_59_1958_1958-07-04
+  kind: asli
+  source: official
+  date: '1958-07-04'
+  date_basis: tanggal_penetapan
+  text: uu_59_1958_1958-07-04.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: afc27e9a3c7d708a0d14420817e7793da5e4d78b6b24dc8dd26a6624a4dd3722
 pdf_sha256: ac56e4d44d474be3cb73a1dd203c17c2ba4699189f703b7b37454179c58ce9f7
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-07-31'
+tanggal_berlaku: '1958-07-31'
+lembaran_negara: 'LN. 1958 No. 109, LL SETNEG : 3 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-59-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu59-1958.pdf
+bpk:
+  id: 52317
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41647/UU%20Nomor%2059%20Tahun%201958.pdf
+    bpk_file_id: 41647
+    filename: UU Nomor 59 Tahun 1958.pdf
+    sha256: afc27e9a3c7d708a0d14420817e7793da5e4d78b6b24dc8dd26a6624a4dd3722
+    bytes: 27814
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

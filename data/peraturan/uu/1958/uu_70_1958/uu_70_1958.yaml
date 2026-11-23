@@ -9,13 +9,13 @@ title: Undang-Undang Nomor 70 Tahun 1958 tentang Penetapan Undang-Undang Darurat
 tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 2 TAHUN 1958 TENTANG TANDA-TANDA PENGHARGAAN
   UNTUK ANGGOTA ANGKATAN PERANG (LEMBARAN-NEGARA TAHUN 1958 NO. 41), SEBAGAI UNDANG-UNDANG
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1958-09-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-70-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu70-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52350/uu-no-70-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41682/UU%20Nomor%2070%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,6 +24,40 @@ relationships:
   enacts:
   - uu-drt_2_1958
   enacted_by: []
-versions: []
+versions:
+- id: uu_70_1958_1958-09-04
+  kind: asli
+  source: official
+  date: '1958-09-04'
+  date_basis: tanggal_penetapan
+  text: uu_70_1958_1958-09-04.txt
+  pasal_count: 1
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c4d715a029fad42f83c9b7e63a53bca69b9f44ca414e4103a71b4d49ede6bba3
 pdf_sha256: 4e9f95b0e0cc5da1c37cd8f114ad53df836f40d8ae5d088b042a4afc2c2c32c7
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-09-06'
+tanggal_berlaku: '1958-09-06'
+lembaran_negara: 'LN. 1958 No. 124, LL SETNEG : 14 HLM'
+subjek: HONORARIUM, GAJI, PENGHASILAN, UANG KEHORMATAN, TUNJANGAN, PENGHARGAAN, HAK
+  LAINNYA - PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-70-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu70-1958.pdf
+bpk:
+  id: 52350
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41682/UU%20Nomor%2070%20Tahun%201958.pdf
+    bpk_file_id: 41682
+    filename: UU Nomor 70 Tahun 1958.pdf
+    sha256: c4d715a029fad42f83c9b7e63a53bca69b9f44ca414e4103a71b4d49ede6bba3
+    bytes: 50905
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_20_2009
+      citation: UU No. 20 Tahun 2009
+      tentang: Gelar, Tanda Jasa, dan Tanda Kehormatan
+      url: https://peraturan.bpk.go.id/Details/38640/uu-no-20-tahun-2009
+      note: null
+uji_materi: null

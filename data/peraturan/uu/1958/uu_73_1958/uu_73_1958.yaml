@@ -10,22 +10,84 @@ tentang: MENYATAKAN BERLAKUNYA UNDANG-UNDANG NO. 1 TAHUN 1946 REPUBLIK INDONESIA
   PERATURAN HUKUM PIDANA UNTUK SELURUH WILAYAH REPUBLIK INDONESIA DAN MENGUBAH KITAB
   UNDANG-UNDANG HUKUM
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 1 Tahun 2023 Tentang Kitab
-  Undang-undang Hukum Pidana'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1958-09-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-73-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu73-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52862/uu-no-73-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/42237/UU%20Nomor%2073%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_1_2023
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_73_1958_1958-09-20
+  kind: asli
+  source: official
+  date: '1958-09-20'
+  date_basis: tanggal_penetapan
+  text: uu_73_1958_1958-09-20.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8f0ec2f35317adb3c95d77691fb7f00dcf1b0058837389e7f68f15b89b61abb5
 pdf_sha256: 150bc3e963f0b3bc87bb932cce190b7d87d56a524db27d501af6564e3c38cc84
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-09-29'
+tanggal_berlaku: '1958-09-29'
+lembaran_negara: 'LN. 1958 No. 127, TLN No. 1660, LL BPHN : 3 HLM'
+subjek: HUKUM PIDANA, PERDATA, DAN DAGANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-73-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu73-1958.pdf
+bpk:
+  id: 52862
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42237/UU%20Nomor%2073%20Tahun%201958.pdf
+    bpk_file_id: 42237
+    filename: UU Nomor 73 Tahun 1958.pdf
+    sha256: 8f0ec2f35317adb3c95d77691fb7f00dcf1b0058837389e7f68f15b89b61abb5
+    bytes: 46300
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: null
+    - id: uu_21_2007
+      citation: UU No. 21 Tahun 2007
+      tentang: Pemberantasan Tindak Pidana Perdagangan Orang
+      url: https://peraturan.bpk.go.id/Details/39849/uu-no-21-tahun-2007
+      note: null
+    - id: uu_20_2001
+      citation: UU No. 20 Tahun 2001
+      tentang: Perubahan Atas Undang-Undang Nomor 31 Tahun 1999 tentang Pemberantasan
+        Tindak Pidana Korupsi
+      url: https://peraturan.bpk.go.id/Details/44900/uu-no-20-tahun-2001
+      note: null
+    Diubah dengan:
+    - id: uu_27_1999
+      citation: UU No. 27 Tahun 1999
+      tentang: Perubahan Kitab-Kitab Undang-Undang Hukum Pidana yang Berkaitan dengan
+        Kejahatan Terhadap Keamanan Negara
+      url: https://peraturan.bpk.go.id/Details/45342/uu-no-27-tahun-1999
+      note: null
+    - id: uu_4_1976
+      citation: UU No. 4 Tahun 1976
+      tentang: Perubahan dan Penambahan Beberapa Pasal Dalam Kitab Undang-Undang Hukum
+        Pidana Bertalian Dengan Perluasan Berlakunya Ketentuan Perundang-Undangan
+        Pidana, Kejahatan Penerbangan, dan Kejahatan Terhadap Sarana/Prasarana Penerbangan
+      url: https://peraturan.bpk.go.id/Details/47208/uu-no-4-tahun-1976
+      note: null
+    Mengubah:
+    - id: uu_1_1946
+      citation: UU No. 1 Tahun 1946
+      tentang: Peraturan tentang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/25029/uu-no-1-tahun-1946
+      note: null
+uji_materi: null

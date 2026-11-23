@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN VI (KEMENTERIAN PERTAHANAN) DARI ANGGARAN REPUBLIK IND
   UNTUK TAHUN DINAS 1955
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-06-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-33-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu33-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52174/uu-no-33-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41482/UU%20Nomor%2033%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_33_1958_1958-06-21
+  kind: asli
+  source: official
+  date: '1958-06-21'
+  date_basis: tanggal_penetapan
+  text: uu_33_1958_1958-06-21.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5ec705eefd2b951b88f7717f3d9ec00f9e8331fd3f04b92618d4915908007892
 pdf_sha256: 1395416c41425ad05e01b10b04da28eb2e96fe643d8319b64322eadb3ecde87e
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-07-17'
+tanggal_berlaku: '1955-01-01'
+lembaran_negara: 'LN. 1958 No. 83, LL SETNEG : 8 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-33-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu33-1958.pdf
+bpk:
+  id: 52174
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41482/UU%20Nomor%2033%20Tahun%201958.pdf
+    bpk_file_id: 41482
+    filename: UU Nomor 33 Tahun 1958.pdf
+    sha256: 5ec705eefd2b951b88f7717f3d9ec00f9e8331fd3f04b92618d4915908007892
+    bytes: 34890
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

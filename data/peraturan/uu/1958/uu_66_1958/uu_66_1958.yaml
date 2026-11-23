@@ -6,22 +6,60 @@ year: 1958
 title: Undang-Undang Nomor 66 Tahun 1958 tentang Wajib-Militer
 tentang: WAJIB-MILITER
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 2 Tahun 1988 Tentang Prajurit
-  Angkatan Bersenjata Ri'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1958-08-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-66-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu66-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52340/uu-no-66-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41671/UU%20Nomor%2066%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_2_1988
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_66_1958_1958-08-01
+  kind: asli
+  source: official
+  date: '1958-08-01'
+  date_basis: tanggal_penetapan
+  text: uu_66_1958_1958-08-01.txt
+  pasal_count: 6
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2a4ef23221a4eee7bf34fe83c9ebfc081e3939c3db601aac549201f309128422
 pdf_sha256: a186e75a0d689a29e985383f53f8a4e28d8a41a685a1e7351c00212593075624
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-08-20'
+tanggal_berlaku: '1958-08-20'
+lembaran_negara: 'LN. 1958 No. 117, LL SETNEG : 60 HLM'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-66-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu66-1958.pdf
+bpk:
+  id: 52340
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41671/UU%20Nomor%2066%20Tahun%201958.pdf
+    bpk_file_id: 41671
+    filename: UU Nomor 66 Tahun 1958.pdf
+    sha256: 2a4ef23221a4eee7bf34fe83c9ebfc081e3939c3db601aac549201f309128422
+    bytes: 143400
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_2_1988
+      citation: UU No. 2 Tahun 1988
+      tentang: Prajurit Angkatan Bersenjata Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/46808/uu-no-2-tahun-1988
+      note: null
+    Diubah dengan:
+    - id: perppu_40_1960
+      citation: PERPU No. 40 Tahun 1960
+      tentang: Perubahan Dan Tambahan Undang-Undang No. 66 Tahun 1958 (Lembaran Negara
+        Tahun 1958 No. 117) Tentang Wajib Militer
+      url: https://peraturan.bpk.go.id/Details/53572/perpu-no-40-tahun-1960
+      note: null
+uji_materi: null

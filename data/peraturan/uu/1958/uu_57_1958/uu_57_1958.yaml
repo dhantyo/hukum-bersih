@@ -13,12 +13,12 @@ tentang: PENETAPAN UNDANG UNDANG DARURAT NO 8 TAHUN 1952 TENTANG MENGUBAH DAN ME
   UNDANGUNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-07-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-57-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu57-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52277/uu-no-57-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41603/UU%20Nomor%2057%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -27,6 +27,33 @@ relationships:
   enacts:
   - uu-drt_8_1952
   enacted_by: []
-versions: []
+versions:
+- id: uu_57_1958_1958-07-17
+  kind: asli
+  source: official
+  date: '1958-07-17'
+  date_basis: tanggal_penetapan
+  text: uu_57_1958_1958-07-17.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 66d738ad549cafaaaadb9d65a91ceb679b70102016d5e442ac7a16e0566ab288
 pdf_sha256: 600b64034eb319e79072cd0f845eec06a9b56fa5790142effe2a53125baa0117
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-07-29'
+tanggal_berlaku: '1950-01-01'
+lembaran_negara: 'LN. 1958 No. 107, TLN No. 1642, LL SETNEG : 3 HLM'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN - PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-57-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu57-1958.pdf
+bpk:
+  id: 52277
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41603/UU%20Nomor%2057%20Tahun%201958.pdf
+    bpk_file_id: 41603
+    filename: UU Nomor 57 Tahun 1958.pdf
+    sha256: 66d738ad549cafaaaadb9d65a91ceb679b70102016d5e442ac7a16e0566ab288
+    bytes: 36805
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

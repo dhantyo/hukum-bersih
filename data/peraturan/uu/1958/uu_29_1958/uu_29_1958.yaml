@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN IV (KEMENTERIAN KEUANGAN) DARI ANGGARAN REPUBLIK INDON
   UNTUK TAHUN DINAS 1955
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-06-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-29-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu29-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/51777/uu-no-29-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/53787/UU%20Nomor%2029%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_29_1958_1958-06-21
+  kind: asli
+  source: official
+  date: '1958-06-21'
+  date_basis: tanggal_penetapan
+  text: uu_29_1958_1958-06-21.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5eb015c6c5d5fdf41996b1f372de850ced797a4f56ebfa03ddab60b9942600be
 pdf_sha256: 665f41b139f515ff50b76f87257220e50ec7d36bc016b704086bf35a4edea47e
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-07-17'
+tanggal_berlaku: '1955-01-01'
+lembaran_negara: 'LN. 1958 No. 79, LL SETNEG : 12 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-29-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu29-1958.pdf
+bpk:
+  id: 51777
+  files:
+  - url: https://peraturan.bpk.go.id/Download/53787/UU%20Nomor%2029%20Tahun%201958.pdf
+    bpk_file_id: 53787
+    filename: UU Nomor 29 Tahun 1958.pdf
+    sha256: 5eb015c6c5d5fdf41996b1f372de850ced797a4f56ebfa03ddab60b9942600be
+    bytes: 42829
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

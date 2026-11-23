@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN I.B.W. XII (PELABUHAN SURABAYA) DARI ANGGARAN REPUBLIK
   UNTUK TAHUN DINAS 1955
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-06-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-51-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu51-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52248/uu-no-51-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41571/UU%20Nomor%2051%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_51_1958_1958-06-21
+  kind: asli
+  source: official
+  date: '1958-06-21'
+  date_basis: tanggal_penetapan
+  text: uu_51_1958_1958-06-21.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: eefc8774c5ed0394a5785fe6bdaba0165b737035485d64069bb7d7bdd9458d49
 pdf_sha256: 798950178a81527d1c4344462f2213dc48243f83f1e84874048d1a788781f791
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-07-17'
+tanggal_berlaku: '1955-01-01'
+lembaran_negara: 'LN. 1958 No. 101, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-51-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu51-1958.pdf
+bpk:
+  id: 52248
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41571/UU%20Nomor%2051%20Tahun%201958.pdf
+    bpk_file_id: 41571
+    filename: UU Nomor 51 Tahun 1958.pdf
+    sha256: eefc8774c5ed0394a5785fe6bdaba0165b737035485d64069bb7d7bdd9458d49
+    bytes: 23635
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

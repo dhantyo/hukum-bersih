@@ -12,21 +12,61 @@ tentang: PENETAPAN UNDANGUNDANG DARURAT NO 21 TAHUN 1957 TENTANG PENGUBAHAN UNDA
   DAERAH SWATANTRA TINGKAT I SUMATERA TENGAHQUOT LEMBARANNEGARA TAHUN 1957 NO 77 SEBAGAI
   UNDANGUNDANG
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 38 Tahun 2024 Tentang Kabupaten
-  Kerinci di Provinsi Jambi'
-tanggal_penetapan: null
+status: berlaku
+tanggal_penetapan: '1958-07-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-58-tahun-1958
-source_pdf_url: null
+source_url: https://peraturan.bpk.go.id/Details/52282/uu-no-58-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41609/UU%20Nomor%2058%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_38_2024
+  revoked_by: []
   enacts:
   - uu-drt_21_1957
   enacted_by: []
-versions: []
+versions:
+- id: uu_58_1958_1958-07-17
+  kind: asli
+  source: official
+  date: '1958-07-17'
+  date_basis: tanggal_penetapan
+  text: uu_58_1958_1958-07-17.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9008e461629781bda3ee25c187ec3dd27054ebaf93e2dfff9157fb55db505dbc
+tanggal_pengundangan: '1958-07-29'
+tanggal_berlaku: '1958-07-29'
+lembaran_negara: 'LN. 1958 No. 108, TLN No. 1643, LL SETNEG : 8 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-58-tahun-1958
+  source_pdf_url: null
+bpk:
+  id: 52282
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41609/UU%20Nomor%2058%20Tahun%201958.pdf
+    bpk_file_id: 41609
+    filename: UU Nomor 58 Tahun 1958.pdf
+    sha256: 9008e461629781bda3ee25c187ec3dd27054ebaf93e2dfff9157fb55db505dbc
+    bytes: 35662
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_38_2024
+      citation: UU No. 38 Tahun 2024
+      tentang: Kabupaten Kerinci di Provinsi Jambi
+      url: https://peraturan.bpk.go.id/Details/295181/uu-no-38-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kabupaten Kerinci dalam UU Nomor 58 Tahun
+        1958, dicabut dan dinyatakan tidak berlaku.
+    Mengubah:
+    - id: uu_12_1956
+      citation: UU No. 12 Tahun 1956
+      tentang: Pembentukan Daerah Otonom Kabupaten Dalam Lingkungan Daerah Propinsi
+        Sumatera Tengah
+      url: https://peraturan.bpk.go.id/Details/51095/uu-no-12-tahun-1956
+      note: null
+uji_materi: null

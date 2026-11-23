@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN I.B.W. XVI (JAWATAN KERETA API) DARI ANGGARAN REPUBLIK
   UNTUK TAHUN DINAS 1955
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-06-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-54-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu54-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52263/uu-no-54-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41587/UU%20Nomor%2054%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_54_1958_1958-06-21
+  kind: asli
+  source: official
+  date: '1958-06-21'
+  date_basis: tanggal_penetapan
+  text: uu_54_1958_1958-06-21.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8fd5fd28b6162545cf95c37a30ed69a803ecb0a1a5adb356c625951009acd68f
 pdf_sha256: 750452639a3aebc83415be89ae48ad5fd38783e5f5a7bb8296741a246d8cda19
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-07-17'
+tanggal_berlaku: '1955-01-01'
+lembaran_negara: 'LN. 1958 No. 104, LL SETNEG : 2 HLM'
+subjek: APBN - BUMN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-54-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu54-1958.pdf
+bpk:
+  id: 52263
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41587/UU%20Nomor%2054%20Tahun%201958.pdf
+    bpk_file_id: 41587
+    filename: UU Nomor 54 Tahun 1958.pdf
+    sha256: 8fd5fd28b6162545cf95c37a30ed69a803ecb0a1a5adb356c625951009acd68f
+    bytes: 23623
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

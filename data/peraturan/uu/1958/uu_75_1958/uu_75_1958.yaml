@@ -15,12 +15,12 @@ tentang: MEMPERPANJANG JANGKA WAKTU PEMBEBASAN BANK INDONESIA DARI KEWAJIBAN YAN
   1958 NO. 58 NO 114)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-09-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-75-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu75-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52869/uu-no-75-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/42244/UU%20Nomor%2075%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,6 +28,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_75_1958_1958-09-02
+  kind: asli
+  source: official
+  date: '1958-09-02'
+  date_basis: tanggal_penetapan
+  text: uu_75_1958_1958-09-02.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9c5d2252d49047e9ab8df7beaf0d4a6721a3ad9b123991802d255e346cd23a75
 pdf_sha256: 0d85031e8c8228145be9b25760d2d3a3b35f5e7aeb50889261b6aabcab055d08
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-09-29'
+tanggal_berlaku: '1957-11-01'
+lembaran_negara: 'LN. 1958 No. 131, TLN No. 1663, LL BPHN : 3 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-75-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu75-1958.pdf
+bpk:
+  id: 52869
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42244/UU%20Nomor%2075%20Tahun%201958.pdf
+    bpk_file_id: 42244
+    filename: UU Nomor 75 Tahun 1958.pdf
+    sha256: 9c5d2252d49047e9ab8df7beaf0d4a6721a3ad9b123991802d255e346cd23a75
+    bytes: 179687
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

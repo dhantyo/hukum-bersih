@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN I.B.W. IV (PERCETAKAN NEGARA) DARI ANGGARAN REPUBLIK I
   UNTUK TAHUN DINAS 1955
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-06-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-44-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu44-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52205/uu-no-44-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41516/UU%20Nomor%2044%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_44_1958_1958-06-21
+  kind: asli
+  source: official
+  date: '1958-06-21'
+  date_basis: tanggal_penetapan
+  text: uu_44_1958_1958-06-21.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 26d6852cb3d7dd39a2b7fc041c382821e7ead4fe8817ae7480f4f5743737c88c
 pdf_sha256: ad554ac1fff68c2d822de451a9d843a93a7b9869004ce83d39a0bd2a79dd1810
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-07-17'
+tanggal_berlaku: '1955-01-01'
+lembaran_negara: 'LN. 1958 No. 94, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-44-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu44-1958.pdf
+bpk:
+  id: 52205
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41516/UU%20Nomor%2044%20Tahun%201958.pdf
+    bpk_file_id: 41516
+    filename: UU Nomor 44 Tahun 1958.pdf
+    sha256: 26d6852cb3d7dd39a2b7fc041c382821e7ead4fe8817ae7480f4f5743737c88c
+    bytes: 23622
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

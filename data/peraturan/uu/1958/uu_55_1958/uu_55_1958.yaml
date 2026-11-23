@@ -11,13 +11,13 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 20 TAHUN 1955 TENTANG PERATURAN-PER
   MENGENAI KEDUDUKAN ANGGOTA ANGKATAN PERANG DALAM DINAS KETENTARAAN SESUDAH AKHIR
   TAHUN 1955 (LEMBARAN-NEGARA TAHUN 1955 NO. 78) SEBAGAI UNDANG-UNDANG
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1958-07-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-55-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu55-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52267/uu-no-55-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41592/UU%20Nomor%2055%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,6 +26,39 @@ relationships:
   enacts:
   - uu-drt_20_1955
   enacted_by: []
-versions: []
+versions:
+- id: uu_55_1958_1958-07-17
+  kind: asli
+  source: official
+  date: '1958-07-17'
+  date_basis: tanggal_penetapan
+  text: uu_55_1958_1958-07-17.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 485f7c9354dbcb73f5d7eda3187681b7e96e70988ffbac55b1b1be0a3852341e
 pdf_sha256: 318f3117ec02479d59ffc71c2b9034945dd6001354b59493c78c0d4a702c46e5
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-07-26'
+tanggal_berlaku: '1956-01-01'
+lembaran_negara: 'LN. 1958 No. 105, TLN No. 1640, LL SETNEG : 2 HLM'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-55-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu55-1958.pdf
+bpk:
+  id: 52267
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41592/UU%20Nomor%2055%20Tahun%201958.pdf
+    bpk_file_id: 41592
+    filename: UU Nomor 55 Tahun 1958.pdf
+    sha256: 485f7c9354dbcb73f5d7eda3187681b7e96e70988ffbac55b1b1be0a3852341e
+    bytes: 28667
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_2_1988
+      citation: UU No. 2 Tahun 1988
+      tentang: Prajurit Angkatan Bersenjata Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/46808/uu-no-2-tahun-1988
+      note: null
+uji_materi: null

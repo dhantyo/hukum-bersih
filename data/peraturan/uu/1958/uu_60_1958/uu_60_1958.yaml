@@ -12,12 +12,12 @@ tentang: PENETAPAN "UNDANG-UNDANG DARURAT NO. 23 TAHUN 1957 TENTANG PEMBENTUKAN 
   TAHUN 1957 NO. 80), SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-07-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-60-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu60-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52321/uu-no-60-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41652/UU%20Nomor%2060%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -27,11 +27,32 @@ relationships:
   - uu-drt_23_1957
   enacted_by: []
 versions:
-- id: uu_60_1958_1958
+- id: uu_60_1958_1958-07-17
   kind: asli
   source: official
-  date: null
+  date: '1958-07-17'
   date_basis: tanggal_penetapan
-  text: uu_60_1958_1958.txt
+  text: uu_60_1958_1958-07-17.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2a20576cb8c523f69d1288f4bf12849698cca526522776c1bf67135f15928068
 pdf_sha256: 6bc03c7890f546c83533d0759210916c4502d21ff9b06aa8eedd442d35d9a6d5
+tanggal_pengundangan: '1958-07-31'
+tanggal_berlaku: '1958-07-31'
+lembaran_negara: 'LL SETNEG : 7 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-60-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu60-1958.pdf
+bpk:
+  id: 52321
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41652/UU%20Nomor%2060%20Tahun%201958.pdf
+    bpk_file_id: 41652
+    filename: UU Nomor 60 Tahun 1958.pdf
+    sha256: 2a20576cb8c523f69d1288f4bf12849698cca526522776c1bf67135f15928068
+    bytes: 38855
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

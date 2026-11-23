@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN I.B.W. IX (PELABUHAN BELAWAN) DARI ANGGARAN REPUBLIK I
   UNTUK TAHUN DINAS 1955
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-06-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-48-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu48-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52224/uu-no-48-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41546/UU%20Nomor%2048%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_48_1958_1958-06-21
+  kind: asli
+  source: official
+  date: '1958-06-21'
+  date_basis: tanggal_penetapan
+  text: uu_48_1958_1958-06-21.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7ff6b92282ccde0515c588efa8bb911c1f4c371a9277d14f197886a7144ede34
 pdf_sha256: 01a687e8cfd51a2da7f871576aacb70cdde27a025e6664cff66e37aed8651a2e
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-07-17'
+tanggal_berlaku: '1955-01-01'
+lembaran_negara: 'LN. 1958 No. 98, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-48-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu48-1958.pdf
+bpk:
+  id: 52224
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41546/UU%20Nomor%2048%20Tahun%201958.pdf
+    bpk_file_id: 41546
+    filename: UU Nomor 48 Tahun 1958.pdf
+    sha256: 7ff6b92282ccde0515c588efa8bb911c1f4c371a9277d14f197886a7144ede34
+    bytes: 23616
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

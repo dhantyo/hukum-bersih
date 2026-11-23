@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN VA (KEMENTERIAN PERTANIAN) DARI ANGGARAN REPUBLIK INDO
   UNTUK TAHUN DINAS 1955
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-06-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-31-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu31-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52172/uu-no-31-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41480/UU%20Nomor%2031%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_31_1958_1958-06-21
+  kind: asli
+  source: official
+  date: '1958-06-21'
+  date_basis: tanggal_penetapan
+  text: uu_31_1958_1958-06-21.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ab5e791c245dc25d34d1e1db8ae639c0aba5b79225591ddb9a15a4cf1226f8fd
 pdf_sha256: a7c4c44c1e775493fabc35b10858ca68b88e9b73fa46a6df59df01f7eb884963
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-07-17'
+tanggal_berlaku: '1955-01-01'
+lembaran_negara: 'LN. 1958 No. 81, LL SETNEG : 12 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-31-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu31-1958.pdf
+bpk:
+  id: 52172
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41480/UU%20Nomor%2031%20Tahun%201958.pdf
+    bpk_file_id: 41480
+    filename: UU Nomor 31 Tahun 1958.pdf
+    sha256: ab5e791c245dc25d34d1e1db8ae639c0aba5b79225591ddb9a15a4cf1226f8fd
+    bytes: 41557
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
