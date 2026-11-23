@@ -3,11 +3,13 @@ import Base from "../layouts/Base.astro";
 import LawRows from "../components/LawRows.astro";
 import { loadRuus, versions } from "../lib/data.ts";
 import { tanggal } from "../lib/labels.ts";
-import { loadRegulations } from "../lib/peraturan.ts";
+import { JENIS, loadRegulations } from "../lib/peraturan.ts";
 
 const base = import.meta.env.BASE_URL;
 const ruus = loadRuus();
 const laws = loadRegulations().filter((r) => r.type === "uu");
+const others = Object.keys(JENIS).filter((t) => t !== "uu")
+  .map((t) => [t, loadRegulations().filter((r) => r.type === t).length] as const).filter(([, n]) => n > 0);
 const withText = laws.filter((r) => r.versions.some((v) => v.text)).length;
 ---
 <Base noindex search={false} title="Beranda" description="Teks hukum Indonesia yang bersih dan mudah dibaca, serta pelacakan RUU beserta setiap versi drafnya.">
@@ -21,6 +23,7 @@ const withText = laws.filter((r) => r.versions.some((v) => v.text)).length;
     </form>
     <p class="stats small muted">
       <a href={`${base}uu/`}>{laws.length.toLocaleString("id-ID")} undang-undang</a> ({withText.toLocaleString("id-ID")} sebagai teks)
+      {others.map(([t, n]) => <> · <a href={`${base}${t}/`}>{n.toLocaleString("id-ID")} {JENIS[t].short}</a></>)}
       · <a href={`${base}ruu/`}>{ruus.length} RUU dilacak</a>
     </p>
   </section>

@@ -2,9 +2,7 @@ name: Import from the Hugging Face dataset
 
 # National regulations we have no text of, rebuilt from the Hugging Face dataset
 # Azzindani/ID_REG_RAG_2611 (decision 0011; pipeline/src/hukum_bersih/sources/id_reg_rag.py).
-# Records that already have a text are never touched. The new types (PP, Perpres, ...) are
-# stored data only until they are added to PUBLISHED_TYPES (naming.py) and PUBLISHED
-# (web/src/lib/peraturan.ts). One commit per type.
+# Records that already have a text are never touched. One commit per type.
 on:
   workflow_dispatch:
     inputs:

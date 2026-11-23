@@ -22,12 +22,6 @@ RUU_DOC_RE = re.compile(
 )
 IA_MAX = 100
 
-# Types the website shows, the Akoma Ntoso build converts and `relations` links (decision 0011).
-# Records of other types (PP, Perpres ... imported from the Hugging Face dataset) are stored in
-# data/ but not yet published; add a type here once it has been checked. Keep in step with
-# PUBLISHED in web/src/lib/peraturan.ts.
-PUBLISHED_TYPES = ("uu",)
-
 JENIS_TITLE = {
     "uu": "Undang-Undang",
     "perppu": "Peraturan Pemerintah Pengganti Undang-Undang",

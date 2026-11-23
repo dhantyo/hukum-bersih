@@ -165,18 +165,23 @@ def _checked(changes: dict, known: set[str]) -> dict:
     return out
 
 
-def build(data_dir: Path) -> dict[str, int]:
-    """Recompute relationships for every regulation record of a published type
-    (naming.PUBLISHED_TYPES) under data/peraturan/."""
-    from .naming import PUBLISHED_TYPES
+LAW_TYPES = {"uu", "uu-drt", "perppu"}   # the types whose titles can amend / revoke / enact a law
 
-    paths = {p.stem: p for jenis in PUBLISHED_TYPES
-             for p in (data_dir / "peraturan" / jenis).glob("*/*/*.yaml")}
+
+def build(data_dir: Path) -> dict[str, int]:
+    """Recompute relationships for every regulation record under data/peraturan/."""
+    paths = {p.stem: p for p in (data_dir / "peraturan").glob("*/*/*/*.yaml")}
     recs = {k: yaml.safe_load(p.read_text()) for k, p in paths.items()}
     rel = {k: {"amends": [], "amended_by": [], "revokes": [], "revoked_by": [],
                "enacts": [], "enacted_by": []} for k in recs}
     for k, rec in recs.items():
-        found = from_title(rec.get("tentang") or "")
+        # only a UU, UU Darurat or Perppu can amend, revoke or enact a law; a PP's title names
+        # the law it implements ("PELAKSANAAN UNDANG-UNDANG NOMOR 8 TAHUN 1983 ... SEBAGAIMANA
+        # TELAH ... DIUBAH", PP 1/2012), which is no amendment
+        if paths[k].parent.parent.parent.name not in LAW_TYPES:      # data/peraturan/<jenis>/<tahun>/<id>/
+            found = {"amends": [], "revokes": [], "enacts": []}
+        else:
+            found = from_title(rec.get("tentang") or "")
         if found["amends"]:
             text = ""
             for v in rec.get("versions") or []:

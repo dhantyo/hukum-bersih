@@ -48,7 +48,9 @@ TYPES = {
 }
 # the dataset's own verdict on a document's text (doc_quality.parquet), best first
 QUALITY = {"clean": 0, "degraded": 1, "unusable": 2, "absent": 3}
-STATUS = {"revoked": "dicabut", "amended": "diubah"}      # none_known / partially_revoked: unknown
+STATUS = {"revoked": "dicabut", "amended": "diubah"}
+# types whose full list we already have (from BPK): the dataset only fills in missing texts
+COMPLETE_TYPES = ("uu",)      # none_known / partially_revoked: unknown
 
 COLUMNS = ["doc_id", "seq", "part_n", "regulation_type", "enacting_body", "regulation_number",
            "year", "about", "effective_date", "heading_path", "source_title", "source_sha256",
@@ -343,8 +345,6 @@ def import_all(data_dir: Path, bundle: Path, revision: str, types: set[str] | No
 
 def import_docs(data_dir: Path, docs: dict[str, Doc], revision: str, types: set[str] | None = None,
                 only: set[str] | None = None, limit: int | None = None) -> Iterator[str]:
-    from ..naming import PUBLISHED_TYPES
-
     done = 0
     for work in sorted(docs, key=lambda w: (docs[w].jenis, docs[w].tahun, docs[w].nomor)):
         doc = docs[work]
@@ -363,10 +363,10 @@ def import_docs(data_dir: Path, docs: dict[str, Doc], revision: str, types: set[
                 yield f"--   {work}: {note} (existing record left unchanged)"
                 continue
             rec["id_reg"] = id_reg_block(doc, revision)
-        elif doc.jenis in PUBLISHED_TYPES:
-            # a published type's list comes from BPK, which lists them all: one the dataset adds
-            # is more likely mislabelled (an Undang-Undang Darurat filed as UU) than missing
-            yield f"skip {work}: published type, not in our records (not created from the dataset)"
+        elif doc.jenis in COMPLETE_TYPES:
+            # our list of these comes from BPK, which lists them all: one the dataset adds is
+            # more likely mislabelled (an Undang-Undang Darurat filed as UU) than missing
+            yield f"skip {work}: not in our records, whose list of {doc.jenis} is complete"
             continue
         else:
             rec = record_for(doc, revision)

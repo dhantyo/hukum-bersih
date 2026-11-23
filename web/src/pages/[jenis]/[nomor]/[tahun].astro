@@ -10,11 +10,11 @@ import StatusBanner from "../../../components/StatusBanner.astro";
 import { tanggal } from "../../../lib/labels.ts";
 import { amendmentSteps, shortName } from "../../../lib/amendments.ts";
 import { koleksiOf, koleksiPath } from "../../../lib/koleksi.ts";
-import { amendmentCount, citeId, lawPath, loadRegulations, loadRegulationText, pasalNotes, pathOf, shortCite, sourceName, STATUS_LABEL, type Regulation } from "../../../lib/peraturan.ts";
+import { amendmentCount, citeId, JENIS, lawPath, loadRegulations, loadRegulationText, pasalNotes, pathOf, shortCite, sourceName, STATUS_LABEL, type Regulation } from "../../../lib/peraturan.ts";
 
 export function getStaticPaths() {
-  return loadRegulations().filter((r) => r.type === "uu").map((r) => ({
-    params: { nomor: r.number, tahun: String(r.year) }, props: { r },
+  return loadRegulations().map((r) => ({
+    params: { jenis: r.type, nomor: r.number, tahun: String(r.year) }, props: { r },
   }));
 }
 const { r } = Astro.props as { r: Regulation };
@@ -33,12 +33,14 @@ const notes = new Map([...pasalNotes(r)].map(([n, ids]) => [n, ids.map((id) => (
 }))]));
 const short = shortName(r);
 const koleksi = koleksiOf(r.id);
+// a text rebuilt from the Hugging Face dataset (decision 0011), not read from an official PDF
+const fromDataset = r.versions.find((v) => v.text)?.source === "dataset";
 ---
 <Base title={`${short ? `${short} (${shortCite(r)})` : shortCite(r)}${r.subject ? ` tentang ${r.subject}` : ""}`} description={`${r.title}${r.subject ? ` tentang ${r.subject}` : ""}`} section="peraturan">
   <DocLayout
     crumbs={koleksi?.named
       ? [{ href: `${base}koleksi/`, label: "Koleksi" }, { href: `${base}${koleksiPath(koleksi)}`, label: koleksi.name }, { label: shortCite(r) }]
-      : [{ href: `${base}uu/`, label: "Undang-Undang" }, { href: `${base}uu/tahun/${r.year}/`, label: String(r.year) }, { label: shortCite(r) }]}
+      : [{ href: `${base}${r.type}/`, label: JENIS[r.type]?.name ?? r.type.toUpperCase() }, { href: `${base}${r.type}/tahun/${r.year}/`, label: String(r.year) }, { label: shortCite(r) }]}
     eyebrow={r.title}
     title={r.subject || r.title}
     panelLabel={doc ? "Daftar isi dan keterangan" : "Keterangan"}
@@ -57,7 +59,7 @@ const koleksi = koleksiOf(r.id);
         { label: "Pemrakarsa", value: r.pemrakarsa },
       ]} />
       <Facts title="Sumber" facts={[
-        { label: "Halaman resmi", value: sourceName(r.source_url), href: r.source_url },
+        { label: fromDataset ? "Sumber teks" : "Halaman resmi", value: sourceName(r.source_url), href: r.source_url },
         { label: "PDF resmi", value: "Unduh PDF", href: r.source_pdf_url ?? undefined },
         { label: "Salinan arsip", value: r.archive_url ? "archive.org" : null, href: r.archive_url },
       ]} />
@@ -68,7 +70,9 @@ const koleksi = koleksiOf(r.id);
     {koleksi ? <KoleksiBox k={koleksi} r={r} /> : <RelationsBanner r={r} />}
     {doc ? (
       <>
-        <p class="notice small" data-pagefind-ignore>Teks ini diambil otomatis dari PDF resmi dan bisa memuat kesalahan baca. Bila ragu, periksa <a href={r.source_pdf_url ?? r.source_url}>PDF resminya</a>.</p>
+        {fromDataset
+          ? <p class="notice small" data-pagefind-ignore><strong>Bukan salinan resmi.</strong> Teks ini disusun ulang otomatis dari <a href={r.source_url}>dataset Hugging Face Azzindani/ID_REG_RAG_2611</a>, bukan dibaca dari PDF resmi. Judul pasal atau bagian Penjelasan bisa hilang atau tergabung. Bila ragu, periksa salinan resminya di <a href="https://peraturan.bpk.go.id/">JDIH BPK</a>.</p>
+          : <p class="notice small" data-pagefind-ignore>Teks ini diambil otomatis dari PDF resmi dan bisa memuat kesalahan baca. Bila ragu, periksa <a href={r.source_pdf_url ?? r.source_url}>PDF resminya</a>.</p>}
         <LawText doc={doc} notes={notes} />
       </>
     ) : (

@@ -82,3 +82,23 @@ def test_revoked_per_source_status(tmp_path):
     new = yaml.safe_load((tmp_path / "peraturan/uu/2007/uu_40_2007/uu_40_2007.yaml").read_text())
     assert old["relationships"]["revoked_by"] == ["uu_40_2007"]
     assert new["relationships"]["revokes"] == ["uu_1_1995"]
+
+
+def test_only_laws_amend_laws(tmp_path):
+    """A PP's title names the law it implements; that is no amendment (PP 1/2012)."""
+    import yaml
+
+    from hukum_bersih.relations import build
+
+    for jenis, rid, tentang in [
+        ("uu", "uu_8_1983", "PAJAK PERTAMBAHAN NILAI"),
+        ("pp", "pp_1_2012", ("PELAKSANAAN UNDANG-UNDANG NOMOR 8 TAHUN 1983 TENTANG PAJAK PERTAMBAHAN NILAI "
+                             "SEBAGAIMANA TELAH BEBERAPA KALI DIUBAH TERAKHIR DENGAN UNDANG-UNDANG NOMOR 42 TAHUN 2009")),
+        ("perppu", "perppu_1_1984", "PERUBAHAN ATAS UNDANG-UNDANG NOMOR 8 TAHUN 1983 TENTANG PAJAK PERTAMBAHAN NILAI"),
+    ]:
+        d = tmp_path / "peraturan" / jenis / rid.split("_")[2] / rid
+        d.mkdir(parents=True)
+        (d / f"{rid}.yaml").write_text(yaml.safe_dump({"id": rid, "tentang": tentang, "versions": []}))
+    build(tmp_path)
+    uu = yaml.safe_load((tmp_path / "peraturan/uu/1983/uu_8_1983/uu_8_1983.yaml").read_text())
+    assert uu["relationships"]["amended_by"] == ["perppu_1_1984"]

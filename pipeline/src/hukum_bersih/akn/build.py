@@ -95,11 +95,8 @@ def build_peraturan(data_dir: Path, out_dir: Path) -> list[Path]:
     texts are skipped)."""
     from concurrent.futures import ProcessPoolExecutor
 
-    from ..naming import PUBLISHED_TYPES
-
     jobs = []
-    for record in sorted(p for jenis in PUBLISHED_TYPES
-                         for p in (data_dir / "peraturan" / jenis).glob("*/*/*.yaml")):
+    for record in sorted((data_dir / "peraturan").glob("*/*/*/*.yaml")):
         rec = yaml.safe_load(record.read_text())
         rel = record.parent.relative_to(data_dir / "peraturan")
         for v in rec.get("versions") or []:

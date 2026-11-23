@@ -1,10 +1,16 @@
 ---
 import Base from "../../layouts/Base.astro";
 import LawRows from "../../components/LawRows.astro";
-import { loadRegulations, SOURCES, sourceHost } from "../../lib/peraturan.ts";
+import { JENIS, loadRegulations, SOURCES, sourceHost, type Regulation } from "../../lib/peraturan.ts";
 
+export function getStaticPaths() {
+  const all = loadRegulations();
+  const types = [...new Set(all.map((r) => r.type))];
+  return types.map((jenis) => ({ params: { jenis }, props: { jenis, laws: all.filter((r) => r.type === jenis), types: types.map((t) => [t, all.filter((r) => r.type === t).length] as const) } }));
+}
+const { jenis, laws, types } = Astro.props as { jenis: string; laws: Regulation[]; types: (readonly [string, number])[] };
 const base = import.meta.env.BASE_URL;
-const laws = loadRegulations().filter((r) => r.type === "uu");
+const name = JENIS[jenis]?.name ?? jenis.toUpperCase();
 const hosts = [...new Set(laws.map((r) => sourceHost(r.source_url)).filter((h): h is string => !!h))]
   .sort((a, b) => laws.filter((r) => sourceHost(r.source_url) === b).length - laws.filter((r) => sourceHost(r.source_url) === a).length);
 const withText = laws.filter((r) => r.versions.some((v) => v.text)).length;
@@ -16,13 +22,16 @@ for (const [y, n] of [...counts].sort((a, b) => b[0] - a[0])) {
   decades.set(d, [...(decades.get(d) ?? []), [y, n]]);
 }
 ---
-<Base noindex title="Undang-Undang" description="Semua undang-undang Republik Indonesia sebagai teks yang bersih dan mudah dibaca." section="peraturan">
-  <h1>Undang-Undang</h1>
+<Base noindex title={name} description={`Semua ${name} Republik Indonesia sebagai teks yang bersih dan mudah dibaca.`} section="peraturan">
+  <nav class="types" aria-label="Jenis peraturan">
+    {types.map(([t, n]) => t === jenis ? <strong>{JENIS[t]?.short ?? t} <span class="muted">{n.toLocaleString("id-ID")}</span></strong>
+      : <a href={`${base}${t}/`}>{JENIS[t]?.short ?? t} <span class="muted">{n.toLocaleString("id-ID")}</span></a>)}
+  </nav>
+  <h1>{name}</h1>
   <p class="lead">
-    {laws.length.toLocaleString("id-ID")} undang-undang dari{" "}
+    {laws.length.toLocaleString("id-ID")} peraturan dari{" "}
     {hosts.map((h, i) => <>{i > 0 && " dan "}<a href={`https://${h}`}>{SOURCES[h]?.name ?? h}</a></>)},{" "}
-    {withText.toLocaleString("id-ID")} di antaranya sudah tersedia sebagai teks. Sisanya berupa PDF hasil
-    pindaian yang masih menunggu OCR.
+    {withText.toLocaleString("id-ID")} di antaranya sudah tersedia sebagai teks.
   </p>
 
   <h2>Menurut tahun</h2>
@@ -31,7 +40,7 @@ for (const [y, n] of [...counts].sort((a, b) => b[0] - a[0])) {
       <div class="decade">
         <h3>{d}-an</h3>
         <ul>
-          {years.map(([y, n]) => <li><a href={`${base}uu/tahun/${y}/`}>{y}</a> <span class="muted">{n}</span></li>)}
+          {years.map(([y, n]) => <li><a href={`${base}${jenis}/tahun/${y}/`}>{y}</a> <span class="muted">{n}</span></li>)}
         </ul>
       </div>
     ))}
@@ -42,6 +51,7 @@ for (const [y, n] of [...counts].sort((a, b) => b[0] - a[0])) {
 </Base>
 
 <style>
+  .types { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-4); font-size: var(--fs-sm); margin-bottom: var(--s-4); }
   .lead { font-size: var(--fs-lg); max-width: var(--measure); color: var(--text-muted); }
   .years { display: grid; grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr)); gap: var(--s-5); }
   .decade h3 { margin: 0 0 var(--s-2); font-size: var(--fs-sm); color: var(--text-muted); }

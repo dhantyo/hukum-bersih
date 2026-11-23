@@ -6,11 +6,6 @@ import { parse as parseYaml } from "yaml";
 import { AKN_DIR, DATA_DIR } from "./data.ts";
 import { parseAkn, type LawDoc } from "./lawdoc.ts";
 
-// Types the site shows (decision 0011). Records of other types (PP, Perpres ... from the
-// Hugging Face dataset) are stored in data/ but not published yet. Keep in step with
-// PUBLISHED_TYPES in pipeline/src/hukum_bersih/naming.py.
-const PUBLISHED = new Set(["uu"]);
-
 export interface Version {
   id: string;
   kind: string;
@@ -60,10 +55,15 @@ export const JENIS: Record<string, { name: string; short: string }> = {
   perppu: { name: "Peraturan Pemerintah Pengganti Undang-Undang", short: "Perppu" },
   pp: { name: "Peraturan Pemerintah", short: "PP" },
   perpres: { name: "Peraturan Presiden", short: "Perpres" },
+  keppres: { name: "Keputusan Presiden", short: "Keppres" },
+  inpres: { name: "Instruksi Presiden", short: "Inpres" },
+  "uu-drt": { name: "Undang-Undang Darurat", short: "UU Darurat" },
 };
 
 // Official sites we take regulations from, by host: how to name them to readers.
 export const SOURCES: Record<string, { name: string; owner: string }> = {
+  // texts rebuilt from a dataset, not an official site (decision 0011)
+  "huggingface.co": { name: "Dataset Hugging Face", owner: "Azzindani/ID_REG_RAG_2611 (tidak resmi)" },
   "peraturan.bpk.go.id": { name: "JDIH BPK", owner: "Badan Pemeriksa Keuangan" },
   "peraturan.go.id": {
     name: "peraturan.go.id",
@@ -133,7 +133,7 @@ export function loadRegulations(): Regulation[] {
   if (existsSync(root)) {
     for (const jenis of readdirSync(root)) {
       const jdir = join(root, jenis);
-      if (!PUBLISHED.has(jenis) || !existsSync(jdir) || jenis.startsWith(".")) continue;
+      if (!existsSync(jdir) || jenis.startsWith(".")) continue;
       for (const year of readdirSync(jdir)) {
         if (year.startsWith(".")) continue;
         for (const id of readdirSync(join(jdir, year))) {

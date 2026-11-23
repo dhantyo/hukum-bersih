@@ -6,11 +6,11 @@ import SynRow from "../../../../../components/SynRow.astro";
 import { koleksiOf, koleksiPath } from "../../../../../lib/koleksi.ts";
 import { amendmentSteps, hasAmendmentSteps, shortName, versionHistory, type PasalChange } from "../../../../../lib/amendments.ts";
 import { tanggal } from "../../../../../lib/labels.ts";
-import { citeId, loadRegulations, loadRegulationText, pathOf, shortCite, type Regulation } from "../../../../../lib/peraturan.ts";
+import { citeId, JENIS, loadRegulations, loadRegulationText, pathOf, shortCite, type Regulation } from "../../../../../lib/peraturan.ts";
 
 export function getStaticPaths() {
-  return loadRegulations().filter((r) => r.type === "uu" && hasAmendmentSteps(r)).map((r) => ({
-    params: { nomor: r.number, tahun: String(r.year) }, props: { r },
+  return loadRegulations().filter((r) => hasAmendmentSteps(r)).map((r) => ({
+    params: { jenis: r.type, nomor: r.number, tahun: String(r.year) }, props: { r },
   }));
 }
 const { r } = Astro.props as { r: Regulation };
@@ -27,7 +27,7 @@ const lawHref = (id: string) => (pathOf(id) ? `${base}${pathOf(id)}` : undefined
 ---
 <Base noindex title={`${name}: perubahan pasal demi pasal`} description={`Pasal-pasal ${shortCite(r)} yang diubah, sebelum dan sesudah tiap perubahan.`} section="peraturan">
   <nav class="breadcrumbs" aria-label="Lokasi">
-    {kol ? <><a href={`${base}koleksi/`}>Koleksi</a><span aria-hidden="true">›</span><a href={`${base}${koleksiPath(kol)}`}>{kol.name}</a></> : <><a href={`${base}uu/`}>Undang-Undang</a><span aria-hidden="true">›</span><a href={`${base}uu/tahun/${r.year}/`}>{r.year}</a></>}<span aria-hidden="true">›</span>
+    {kol ? <><a href={`${base}koleksi/`}>Koleksi</a><span aria-hidden="true">›</span><a href={`${base}${koleksiPath(kol)}`}>{kol.name}</a></> : <><a href={`${base}${r.type}/`}>{JENIS[r.type]?.name ?? r.type.toUpperCase()}</a><span aria-hidden="true">›</span><a href={`${base}${r.type}/tahun/${r.year}/`}>{r.year}</a></>}<span aria-hidden="true">›</span>
     <a href={`${base}${pathOf(r.id)}`}>{shortCite(r)}</a><span aria-hidden="true">›</span>
     <span>Perubahan</span>
   </nav>

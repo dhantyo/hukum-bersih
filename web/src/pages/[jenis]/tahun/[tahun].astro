@@ -1,0 +1,26 @@
+---
+import Base from "../../../layouts/Base.astro";
+import LawRows from "../../../components/LawRows.astro";
+import { JENIS, loadRegulations, type Regulation } from "../../../lib/peraturan.ts";
+
+export function getStaticPaths() {
+  const byYear = new Map<string, Regulation[]>();
+  for (const r of loadRegulations()) {
+    const k = `${r.type}/${r.year}`;
+    byYear.set(k, [...(byYear.get(k) ?? []), r]);
+  }
+  return [...byYear].map(([k, laws]) => {
+    const [jenis, year] = k.split("/");
+    return { params: { jenis, tahun: year }, props: { jenis, year: Number(year), laws } };
+  });
+}
+const { jenis, year, laws } = Astro.props as { jenis: string; year: number; laws: Regulation[] };
+const base = import.meta.env.BASE_URL;
+const name = JENIS[jenis]?.name ?? jenis.toUpperCase();
+---
+<Base noindex title={`${name} tahun ${year}`} section="peraturan">
+  <nav class="breadcrumbs" aria-label="Lokasi"><a href={`${base}${jenis}/`}>{name}</a><span aria-hidden="true">›</span><span>{year}</span></nav>
+  <h1>{name} tahun {year}</h1>
+  <p class="muted">{laws.length} peraturan, terbaru di atas.</p>
+  <LawRows laws={laws} />
+</Base>

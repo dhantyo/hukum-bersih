@@ -92,9 +92,9 @@ def test_failed_rebuild_leaves_existing_record_unchanged(tmp_path: Path):
     assert (folder / "uu_1_1950.yaml").read_text() == "id: uu_1_1950\nversions: []\n"
 
 
-def test_no_new_records_of_published_types(tmp_path: Path):
+def test_no_new_records_of_complete_types(tmp_path: Path):
     out = list(m.import_docs(tmp_path, {"uu_99_2001": doc("uu_99_2001", jenis="uu")}, REV))
-    assert out == ["skip uu_99_2001: published type, not in our records (not created from the dataset)"]
+    assert out == ["skip uu_99_2001: not in our records, whose list of uu is complete"]
     assert not (tmp_path / "peraturan").exists()
 
 
