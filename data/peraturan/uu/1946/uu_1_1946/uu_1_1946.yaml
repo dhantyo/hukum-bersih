@@ -6,23 +6,102 @@ year: 1946
 title: Undang-Undang Nomor 1 Tahun 1946 tentang Peraturan Hukum Pidana
 tentang: PERATURAN HUKUM PIDANA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 21 Tahun 2007 Tentang Pemberantasan
-  Tindak Pidana Perdagangan Orang Undang-Undang Nomor 1 Tahun 2023 Tentang Kitab Undang-undang
-  Hukum Pidana'
+status: tidak_berlaku
 tanggal_penetapan: '1946-02-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1946
-source_pdf_url: https://peraturan.go.id/files/uu1-1946.pdf
+source_url: https://peraturan.bpk.go.id/Details/25029/uu-no-1-tahun-1946
+source_pdf_url: https://peraturan.bpk.go.id/Download/13823/UU%20Nomor%201%20Tahun%201946.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_21_2007
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_1_1946_1946-02-26
+  kind: asli
+  source: official
+  date: '1946-02-26'
+  date_basis: tanggal_penetapan
+  text: uu_1_1946_1946-02-26.txt
+  pasal_count: 17
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 18853c15a6d875155b0ba2d3401a35726970ba4842f4ca420974501a01f30636
 pdf_sha256: 66dd3bbeacdead05b6b54dc2390c5a60a211ee8f6a51ba5934edafb501c33497
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1946-02-26'
+subjek: HUKUM PIDANA, PERDATA, DAN DAGANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1946
+  source_pdf_url: https://peraturan.go.id/files/uu1-1946.pdf
+bpk:
+  id: 25029
+  files:
+  - url: https://peraturan.bpk.go.id/Download/13823/UU%20Nomor%201%20Tahun%201946.pdf
+    bpk_file_id: 13823
+    filename: UU Nomor 1 Tahun 1946.pdf
+    sha256: 18853c15a6d875155b0ba2d3401a35726970ba4842f4ca420974501a01f30636
+    bytes: 82134
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: null
+    - id: uu_21_2007
+      citation: UU No. 21 Tahun 2007
+      tentang: Pemberantasan Tindak Pidana Perdagangan Orang
+      url: https://peraturan.bpk.go.id/Details/39849/uu-no-21-tahun-2007
+      note: null
+    Diubah dengan:
+    - id: uu_27_1999
+      citation: UU No. 27 Tahun 1999
+      tentang: Perubahan Kitab-Kitab Undang-Undang Hukum Pidana yang Berkaitan dengan
+        Kejahatan Terhadap Keamanan Negara
+      url: https://peraturan.bpk.go.id/Details/45342/uu-no-27-tahun-1999
+      note: null
+    - id: uu_4_1976
+      citation: UU No. 4 Tahun 1976
+      tentang: Perubahan dan Penambahan Beberapa Pasal Dalam Kitab Undang-Undang Hukum
+        Pidana Bertalian Dengan Perluasan Berlakunya Ketentuan Perundang-Undangan
+        Pidana, Kejahatan Penerbangan, dan Kejahatan Terhadap Sarana/Prasarana Penerbangan
+      url: https://peraturan.bpk.go.id/Details/47208/uu-no-4-tahun-1976
+      note: null
+    - id: uu_73_1958
+      citation: UU No. 73 Tahun 1958
+      tentang: Menyatakan Berlakunya Undang-Undang No. 1 Tahun 1946 Republik Indonesia
+        Tentang Peraturan Hukum Pidana Untuk Seluruh Wilayah Republik Indonesia Dan
+        Mengubah Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/52862/uu-no-73-tahun-1958
+      note: null
+uji_materi:
+- putusan: 78/PUU-XXI/2023
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/195/putusan_mkri_78_PUU-XXI_2023.pdf
+  amar: 1). Pasal 14 dan Pasal 15 Undang-Undang Nomor 1 Tahun 1946 tentang Peraturan
+    Hukum Pidana (Berita Negara Republik Indonesia II Nomor 9) bertentangan dengan
+    Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan
+    hukum mengikat. 2). Menyatakan Pasal 310 ayat (1) Kitab Undang-Undang Hukum Pidana
+    yang menyatakan, “Barang siapa sengaja menyerang kehormatan atau nama baik seseorang
+    dengan menuduhkan sesuatu hal, yang maksudnya terang supaya hal itu diketahui
+    umum, diancam karena pencemaran dengan pidana penjara paling lama sembilan bulan
+    atau pidana denda paling banyak empat ribu lima ratus rupiah”, bertentangan dengan
+    Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan
+    hukum mengikat sepanjang tidak dimaknai, “Barang siapa sengaja menyerang kehormatan
+    atau nama baik seseorang dengan menuduhkan sesuatu hal dengan cara lisan, yang
+    maksudnya terang supaya hal itu diketahui umum, diancam karena pencemaran dengan
+    pidana penjara paling lama sembilan bulan atau pidana denda paling banyak empat
+    ribu lima ratus rupiah”.
+- putusan: 31/PUU-XIII/2015
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/41/31_PUU-XIII_2015.pdf
+  amar: Pasal 319 Kitab Undang-Undang Hukum Pidana sepanjang frasa "kecuali berdasarkan
+    Pasal 316" bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan
+    hukum mengikat.
+- putusan: 013-022/PUU-IV/2006
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/123/putusan_sidang_Putusan013-022ttgKUHPrev.pdf
+  amar: Pasal 134, Pasal 136 bis, dan Pasal 137 Kitab Undang-Undang Hukum Pidana bertentangan
+    dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.

@@ -12,8 +12,8 @@ tanggal_penetapan: '1946-03-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1946
-source_pdf_url: https://peraturan.go.id/files/uu2-1946.pdf
+source_url: https://peraturan.bpk.go.id/Details/25391/uu-no-2-tahun-1946
+source_pdf_url: https://peraturan.bpk.go.id/Download/22345/UU%20Nomor%202%20Tahun%201946.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_2_1946_1946-03-16
+  kind: asli
+  source: official
+  date: '1946-03-16'
+  date_basis: tanggal_penetapan
+  text: uu_2_1946_1946-03-16.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6a8c2ed829f5ab45440705fd1b2c727b98bb56e8d44eb76be0d01399435ac737
 pdf_sha256: 6a8c2ed829f5ab45440705fd1b2c727b98bb56e8d44eb76be0d01399435ac737
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1946-03-16'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1946
+  source_pdf_url: https://peraturan.go.id/files/uu2-1946.pdf
+bpk:
+  id: 25391
+  files:
+  - url: https://peraturan.bpk.go.id/Download/22345/UU%20Nomor%202%20Tahun%201946.pdf
+    bpk_file_id: 22345
+    filename: UU Nomor 2 Tahun 1946.pdf
+    sha256: 6a8c2ed829f5ab45440705fd1b2c727b98bb56e8d44eb76be0d01399435ac737
+    bytes: 33501
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
