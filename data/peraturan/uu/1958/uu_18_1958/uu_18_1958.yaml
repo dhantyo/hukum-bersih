@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 18 Tahun 1958 tentang Batas-Batas Kotapraja Sukabumi 
 tentang: BATAS-BATAS KOTAPRAJA SUKABUMI DAN DAERAH SWATANTRA TINGKAT II SUKABUMI
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-06-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu18-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/51713/uu-no-18-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/40999/UU%20Nomor%2018%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_18_1958_1958-06-17
+  kind: asli
+  source: official
+  date: '1958-06-17'
+  date_basis: tanggal_penetapan
+  text: uu_18_1958_1958-06-17.txt
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9672ecee564f133f57fc443eff806d8d3017a4aa9832082377fee2ee9be10c38
 pdf_sha256: f67bde2aa4e360b7ed64fcd99ffa293cc0786a3e669415863b8079acb6bf0e7a
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-07-01'
+tanggal_berlaku: '1958-07-01'
+lembaran_negara: 'LN. 1958 No. 59, TLN No. 1615, LL SETNEG : 4 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu18-1958.pdf
+bpk:
+  id: 51713
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40999/UU%20Nomor%2018%20Tahun%201958.pdf
+    bpk_file_id: 40999
+    filename: UU Nomor 18 Tahun 1958.pdf
+    sha256: 9672ecee564f133f57fc443eff806d8d3017a4aa9832082377fee2ee9be10c38
+    bytes: 30920
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

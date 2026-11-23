@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 24 Tahun 1958 tentang Perubahan Batas-Batas Kotapraja
 tentang: PERUBAHAN BATAS-BATAS KOTAPRAJA MADIUN DAN DAERAH SWATANTRA TINGKAT II MADIUN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-06-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-24-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu24-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/51739/uu-no-24-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41026/UU%20Nomor%2024%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_24_1958_1958-06-17
+  kind: asli
+  source: official
+  date: '1958-06-17'
+  date_basis: tanggal_penetapan
+  text: uu_24_1958_1958-06-17.txt
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d84a87c86a492fb111e79a40a29979bf993be4978c27860620f5076b07c9ea92
 pdf_sha256: aecb348c23d62731bebe0c9c8cb759b9f5df2a24dd56782cf799ec60858bdea3
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-07-08'
+tanggal_berlaku: '1958-07-08'
+lembaran_negara: 'LN. 1958 No. 66, TLN No. 1630, LL SETNEG : 4 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-24-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu24-1958.pdf
+bpk:
+  id: 51739
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41026/UU%20Nomor%2024%20Tahun%201958.pdf
+    bpk_file_id: 41026
+    filename: UU Nomor 24 Tahun 1958.pdf
+    sha256: d84a87c86a492fb111e79a40a29979bf993be4978c27860620f5076b07c9ea92
+    bytes: 32497
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

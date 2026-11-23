@@ -10,12 +10,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NOMOR 10 TAHUN 1954 TENTANG NASIONALISA
   BATAVIASCHE VERKEERS MATSCHAPPIJ N.V. (B.V.M.) (LEMBARAN-NEGARA TAHUN 1954 NO. 67
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-10-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-71-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu71-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52723/uu-no-71-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/42094/UU%20Nomor%2071%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,11 +24,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_71_1957_1957
+- id: uu_71_1957_1957-10-26
   kind: asli
   source: official
-  date: null
+  date: '1957-10-26'
   date_basis: tanggal_penetapan
-  text: uu_71_1957_1957.txt
-  pasal_count: 7
+  text: uu_71_1957_1957-10-26.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f82142ac9a4e44744df5ef2b32b65a9b6137ad507a81bd4aa07603aff76c7400
 pdf_sha256: f82142ac9a4e44744df5ef2b32b65a9b6137ad507a81bd4aa07603aff76c7400
+tanggal_pengundangan: '1957-11-10'
+tanggal_berlaku: '1957-11-10'
+lembaran_negara: 'LN. 1957 No. 153, TLN No. 1469, LL SETNEG : 7 HLM'
+subjek: PENANAMAN MODAL DAN INVESTASI - PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA,
+  PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-71-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu71-1957.pdf
+bpk:
+  id: 52723
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42094/UU%20Nomor%2071%20Tahun%201957.pdf
+    bpk_file_id: 42094
+    filename: UU Nomor 71 Tahun 1957.pdf
+    sha256: f82142ac9a4e44744df5ef2b32b65a9b6137ad507a81bd4aa07603aff76c7400
+    bytes: 35926
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: null
+      citation: UUDrt No. 10 Tahun 1954
+      tentang: Nasionalisasi Bataviasche Verkeers Maatschappj (B.V.M.) NV
+      url: https://peraturan.bpk.go.id/Details/52944/uudrt-no-10-tahun-1954
+      note: null
+uji_materi: null

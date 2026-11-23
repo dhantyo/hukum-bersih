@@ -9,12 +9,12 @@ tentang: PERSETUJUAN KEBUDAYAAN DAN PENDIDIKAN ANTARA NEGARA-NEGARA REPUBLIK IND
   DAN REPUBLIK INDIA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-11-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-69-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu69-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52717/uu-no-69-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/42084/UU%20Nomor%2069%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,33 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_69_1957_1957
+- id: uu_69_1957_1957-11-12
   kind: asli
   source: official
-  date: null
+  date: '1957-11-12'
   date_basis: tanggal_penetapan
-  text: uu_69_1957_1957.txt
+  text: uu_69_1957_1957-11-12.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6cee7c3c06416865a1f3b4af6a66df837d24c24325ed84072161e4fa1d106d18
 pdf_sha256: 6cee7c3c06416865a1f3b4af6a66df837d24c24325ed84072161e4fa1d106d18
+tanggal_pengundangan: '1957-11-13'
+tanggal_berlaku: '1957-11-13'
+lembaran_negara: 'LN. 1957 No. 144, TLN No. 1464, LL SETNEG : 3 HLM'
+subjek: PARIWISATA DAN KEBUDAYAAN - PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN /
+  KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-69-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu69-1957.pdf
+bpk:
+  id: 52717
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42084/UU%20Nomor%2069%20Tahun%201957.pdf
+    bpk_file_id: 42084
+    filename: UU Nomor 69 Tahun 1957.pdf
+    sha256: 6cee7c3c06416865a1f3b4af6a66df837d24c24325ed84072161e4fa1d106d18
+    bytes: 29100
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

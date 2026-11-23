@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN IBW XVII(PERUSAHAAN PRODUKSI JAWATAN TOPOGRAPI) DARI A
   REPUBLIK INDONESIA TAHUN DINAS 1954
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-10-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-66-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu66-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52710/uu-no-66-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/42077/UU%20Nomor%2066%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_66_1957_1957-10-26
+  kind: asli
+  source: official
+  date: '1957-10-26'
+  date_basis: tanggal_penetapan
+  text: uu_66_1957_1957-10-26.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: fcd20b3a1f8b018d808aaa1daf2607bd98dd8950ebe49534930759a2a623f66b
 pdf_sha256: fcd20b3a1f8b018d808aaa1daf2607bd98dd8950ebe49534930759a2a623f66b
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1957-11-13'
+tanggal_berlaku: '1954-01-01'
+lembaran_negara: 'LN. 1957 No. 141, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-66-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu66-1957.pdf
+bpk:
+  id: 52710
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42077/UU%20Nomor%2066%20Tahun%201957.pdf
+    bpk_file_id: 42077
+    filename: UU Nomor 66 Tahun 1957.pdf
+    sha256: fcd20b3a1f8b018d808aaa1daf2607bd98dd8950ebe49534930759a2a623f66b
+    bytes: 26248
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

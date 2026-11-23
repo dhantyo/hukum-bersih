@@ -13,32 +13,70 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 10 TAHUN 1957 TENTANG PEMBENTUKAN D
   TENTANG PEMBENTUKAN DAERAH-DAERAH SWATANTRA TINGKAT I KALIMANTAN BARAT, KALIMANTAN
   SELATAN DAN KALIMANTAN TIMUR (LEMBARAN-NEGARA TAHUN 1957 NO. 83) SEBAGAI UNDANG-UNDANG
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 8 Tahun 2022 Tentang Provinsi
-  Kalimantan Selatan Undang-Undang Nomor 9 Tahun 2022 Tentang Provinsi Kalimantan
-  Barat Undang-Undang Nomor 10 Tahun 2022 Tentang Provinsi Kalimantan Timur Undang-Undang
-  Nomor 14 Tahun 2023 Tentang Provinsi Kalimantan Tengah'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1958-06-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu21-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/51721/uu-no-21-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41007/UU%20Nomor%2021%20Tahun%201958.pdf
 relationships:
   amends:
   - id: uu_25_1956
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_8_2022
+  revoked_by: []
   enacts:
   - uu-drt_10_1957
   enacted_by: []
 versions:
-- id: uu_21_1958_1958
+- id: uu_21_1958_1958-06-17
   kind: asli
   source: official
-  date: null
+  date: '1958-06-17'
   date_basis: tanggal_penetapan
-  text: uu_21_1958_1958.txt
-  pasal_count: 5
+  text: uu_21_1958_1958-06-17.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9b9c1924e6970947ffb8b10f56a0bb3ad8af56f9751e898cf6b2694f6302d53f
 pdf_sha256: 57f44f12465cb129bc60663a29f24988ea912d33758345c8bb36ac3282618690
+tanggal_pengundangan: '1958-07-02'
+tanggal_berlaku: '1958-07-02'
+lembaran_negara: 'LN. 1958 No. 62, TLN No. 1622, LL SETNEG : 10 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu21-1958.pdf
+bpk:
+  id: 51721
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41007/UU%20Nomor%2021%20Tahun%201958.pdf
+    bpk_file_id: 41007
+    filename: UU Nomor 21 Tahun 1958.pdf
+    sha256: 9b9c1924e6970947ffb8b10f56a0bb3ad8af56f9751e898cf6b2694f6302d53f
+    bytes: 41014
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_14_2023
+      citation: UU No. 14 Tahun 2023
+      tentang: Provinsi Kalimantan Tengah
+      url: https://peraturan.bpk.go.id/Details/249370/uu-no-14-tahun-2023
+      note: null
+    - id: uu_9_2022
+      citation: UU No. 9 Tahun 2022
+      tentang: Provinsi Kalimantan Barat
+      url: https://peraturan.bpk.go.id/Details/202573/uu-no-9-tahun-2022
+      note: Ketentuan yang mengatur mengenai Provinsi Kalimantan Barat
+    - id: uu_8_2022
+      citation: UU No. 8 Tahun 2022
+      tentang: Provinsi Kalimantan Selatan
+      url: https://peraturan.bpk.go.id/Details/202556/uu-no-8-tahun-2022
+      note: Ketentuan yang mengatur mengenai Provinsi Kalimantan Selatan
+    - id: uu_10_2022
+      citation: UU No. 10 Tahun 2022
+      tentang: Provinsi Kalimantan Timur
+      url: https://peraturan.bpk.go.id/Details/202576/uu-no-10-tahun-2022
+      note: Ketentuan yang mengatur mengenai Provinsi Kalimantan Timur
+uji_materi: null

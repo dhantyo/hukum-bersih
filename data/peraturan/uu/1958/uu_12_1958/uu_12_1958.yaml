@@ -13,12 +13,12 @@ tentang: PENETAPAN UNDANG UNDANG DARURAT NO 1 TAHUN 1957 TENTANG PERUBAHAN JUMLA
   DAERAH PERALIHAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-03-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu12-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/51671/uu-no-12-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/40955/UU%20Nomor%2012%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,6 +26,34 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_12_1958_1958-03-20
+  kind: asli
+  source: official
+  date: '1958-03-20'
+  date_basis: tanggal_penetapan
+  text: uu_12_1958_1958-03-20.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c52d6b5d0d162b8045510f759488e7328eea998a40770ef4e2af79eac6ac5354
 pdf_sha256: 5a47c4f22feff9b13e39606881a5686a37eaec2593ead4f85db2f7aeb7d41d3b
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-03-27'
+tanggal_berlaku: '1956-07-01'
+lembaran_negara: 'LN. 1958 No. 29, LL SETNEG : 3 HLM'
+subjek: PARTAI POLITIK DAN PEMILU - PEMILIHAN UMUM DAERAH, DPRD, PEMILIHAN KEPALA
+  DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu12-1958.pdf
+bpk:
+  id: 51671
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40955/UU%20Nomor%2012%20Tahun%201958.pdf
+    bpk_file_id: 40955
+    filename: UU Nomor 12 Tahun 1958.pdf
+    sha256: c52d6b5d0d162b8045510f759488e7328eea998a40770ef4e2af79eac6ac5354
+    bytes: 26051
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

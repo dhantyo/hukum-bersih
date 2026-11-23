@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 73 Tahun 1957 tentang Perubahan Undang-Undang Tentang
 tentang: PERUBAHAN UNDANG-UNDANG TENTANG POKOK-POKOK PEMERINTAHAN DAERAH 1956
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-12-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-73-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu73-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52752/uu-no-73-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/42125/UU%20Nomor%2073%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,38 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_73_1957_1957
+- id: uu_73_1957_1957-12-05
   kind: asli
   source: official
-  date: null
+  date: '1957-12-05'
   date_basis: tanggal_penetapan
-  text: uu_73_1957_1957.txt
+  text: uu_73_1957_1957-12-05.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0235e1b97d5445542ca3324fa70386c8dc010bd2204e24e15e6777bdd5d69c2a
 pdf_sha256: 0235e1b97d5445542ca3324fa70386c8dc010bd2204e24e15e6777bdd5d69c2a
+tanggal_pengundangan: '1957-12-09'
+tanggal_berlaku: '1957-12-09'
+lembaran_negara: 'LN. 1957 No. 159, LL SETNEG : 3 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-73-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu73-1957.pdf
+bpk:
+  id: 52752
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42125/UU%20Nomor%2073%20Tahun%201957.pdf
+    bpk_file_id: 42125
+    filename: UU Nomor 73 Tahun 1957.pdf
+    sha256: 0235e1b97d5445542ca3324fa70386c8dc010bd2204e24e15e6777bdd5d69c2a
+    bytes: 28998
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_1_1957
+      citation: UU No. 1 Tahun 1957
+      tentang: Pokok-Pokok Pemerintahan Daerah
+      url: https://peraturan.bpk.go.id/Details/52381/uu-no-1-tahun-1957
+      note: null
+uji_materi: null

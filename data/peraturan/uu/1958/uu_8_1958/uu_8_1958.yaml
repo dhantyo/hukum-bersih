@@ -10,12 +10,12 @@ tentang: PENETAPAN UU DRT 9-1954 TENTANG PENGUBAHAN NAMA PROPINSI SUNDA-KECIL ME
   PROPINSI NUSA TENGGARA (LEMBARAN NEGARA TAHUN 1954 NO.66) SEBAGAI UU
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-02-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu8-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/51639/uu-no-8-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/40921/UU%20Nomor%208%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,6 +23,34 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_8_1958_1958-02-17
+  kind: asli
+  source: official
+  date: '1958-02-17'
+  date_basis: tanggal_penetapan
+  text: uu_8_1958_1958-02-17.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: be0369795b1bf6e68901e587a183fe5c2d6c72eae67c5d30c82643c94aaf1c5b
 pdf_sha256: 2586916d2aa19938f2370139a7a9b86153d23c85c97ee8f5f18e7e18c133b399
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-02-27'
+tanggal_berlaku: '1958-02-27'
+lembaran_negara: 'LN. 1958 No. 18, TLN No. 1545, LL SETNEG : 3 HLM'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA - OTONOMI DAERAH DAN PEMERINTAH DAERAH
+  - KETATANEGARAAN, KENEGARAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu8-1958.pdf
+bpk:
+  id: 51639
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40921/UU%20Nomor%208%20Tahun%201958.pdf
+    bpk_file_id: 40921
+    filename: UU Nomor 8 Tahun 1958.pdf
+    sha256: be0369795b1bf6e68901e587a183fe5c2d6c72eae67c5d30c82643c94aaf1c5b
+    bytes: 32205
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

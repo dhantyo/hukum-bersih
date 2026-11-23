@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 11 Tahun 1958 tentang Kenaikan Tarip Uang Rambu
 tentang: KENAIKAN TARIP UANG RAMBU
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-03-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu11-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/51665/uu-no-11-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/40949/UU%20Nomor%2011%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_11_1958_1958
+- id: uu_11_1958_1958-03-06
   kind: asli
   source: official
-  date: null
+  date: '1958-03-06'
   date_basis: tanggal_penetapan
-  text: uu_11_1958_1958.txt
+  text: uu_11_1958_1958-03-06.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ed5f7d9f49c5a59843b916564c19a79d04d207264ae85ec85da1e20542f5fbfe
 pdf_sha256: cf261885f30b8864da1c1436c169b6d93e88c6627d5e023664e6aa604a545083
+tanggal_pengundangan: '1958-03-18'
+tanggal_berlaku: '1958-03-18'
+lembaran_negara: 'LN. 1958 No. 25, TLN No. 1554, LL SETNEG : 3 HLM'
+subjek: PNBP / PENERIMAAN NEGARA BUKAN PAJAK - PERIZINAN, PELAYANAN PUBLIK
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu11-1958.pdf
+bpk:
+  id: 51665
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40949/UU%20Nomor%2011%20Tahun%201958.pdf
+    bpk_file_id: 40949
+    filename: UU Nomor 11 Tahun 1958.pdf
+    sha256: ed5f7d9f49c5a59843b916564c19a79d04d207264ae85ec85da1e20542f5fbfe
+    bytes: 28702
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

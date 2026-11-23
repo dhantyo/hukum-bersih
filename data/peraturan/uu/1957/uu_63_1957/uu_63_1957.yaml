@@ -13,8 +13,8 @@ tanggal_penetapan: '1957-10-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-63-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu63-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52704/uu-no-63-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/42069/UU%20Nomor%2063%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_63_1957_1957-10-26.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: caec652efe7cf1966be0350f0a99a40aaef84e8bc05fb8bc7457c9b1ee3dad0d
 pdf_sha256: caec652efe7cf1966be0350f0a99a40aaef84e8bc05fb8bc7457c9b1ee3dad0d
+tanggal_pengundangan: '1957-11-13'
+tanggal_berlaku: '1954-01-01'
+lembaran_negara: 'LN. 1957 No. 138, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-63-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu63-1957.pdf
+bpk:
+  id: 52704
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42069/UU%20Nomor%2063%20Tahun%201957.pdf
+    bpk_file_id: 42069
+    filename: UU Nomor 63 Tahun 1957.pdf
+    sha256: caec652efe7cf1966be0350f0a99a40aaef84e8bc05fb8bc7457c9b1ee3dad0d
+    bytes: 26234
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

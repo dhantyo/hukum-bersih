@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 7 Tahun 1958 tentang Peralihan Tugas Dan Wewenang Agr
 tentang: PERALIHAN TUGAS DAN WEWENANG AGRARIA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-02-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu7-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/51637/uu-no-7-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/40919/UU%20Nomor%207%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_7_1958_1958
+- id: uu_7_1958_1958-02-17
   kind: asli
   source: official
-  date: null
+  date: '1958-02-17'
   date_basis: tanggal_penetapan
-  text: uu_7_1958_1958.txt
-  pasal_count: 2
+  text: uu_7_1958_1958-02-17.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: df5742f47aa1ca5d0c4782916f894a6e12621fe2e989399d411721cd6a13f90e
 pdf_sha256: 97643e5f4fbd6d526cc4527cb1eb3bd6c657947bec9d36d09ab657f8a8bce97b
+tanggal_pengundangan: '1958-02-27'
+tanggal_berlaku: '1958-02-27'
+lembaran_negara: 'LN. 1958 No. 17, TLN No. 1544, LL SETNEG : 3 HLM'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu7-1958.pdf
+bpk:
+  id: 51637
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40919/UU%20Nomor%207%20Tahun%201958.pdf
+    bpk_file_id: 40919
+    filename: UU Nomor 7 Tahun 1958.pdf
+    sha256: df5742f47aa1ca5d0c4782916f894a6e12621fe2e989399d411721cd6a13f90e
+    bytes: 32496
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

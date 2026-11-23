@@ -10,12 +10,12 @@ tentang: PERSETUJUAN KONPENSI ORGANISASI PERBURUHAN INTERNASIONAL NO. 100 MENGEN
   PENGUPAHAN YANG SAMA BAGI BURUH LAKI-LAKI DAN WANITA UNTUK PEKERJAAN YANG SAMA NILAINYA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-12-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-80-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu80-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52788/uu-no-80-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/42161/UU%20Nomor%2080%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,11 +24,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_80_1957_1957
+- id: uu_80_1957_1957-12-19
   kind: asli
   source: official
-  date: null
+  date: '1957-12-19'
   date_basis: tanggal_penetapan
-  text: uu_80_1957_1957.txt
+  text: uu_80_1957_1957-12-19.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 331b82e9c53804dbd3d3349f99826a1afeaec3e6d6f0a03ae9e17516e2d6db9e
 pdf_sha256: 331b82e9c53804dbd3d3349f99826a1afeaec3e6d6f0a03ae9e17516e2d6db9e
+tanggal_pengundangan: '1957-12-31'
+tanggal_berlaku: '1957-12-31'
+lembaran_negara: 'LN. 1957 No. 171, TLN No. 1492, LL SETNEG : 4 HLM'
+subjek: KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-80-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu80-1957.pdf
+bpk:
+  id: 52788
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42161/UU%20Nomor%2080%20Tahun%201957.pdf
+    bpk_file_id: 42161
+    filename: UU Nomor 80 Tahun 1957.pdf
+    sha256: 331b82e9c53804dbd3d3349f99826a1afeaec3e6d6f0a03ae9e17516e2d6db9e
+    bytes: 30794
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

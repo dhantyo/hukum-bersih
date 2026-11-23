@@ -13,8 +13,8 @@ tanggal_penetapan: '1957-10-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-62-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu62-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52696/uu-no-62-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/42061/UU%20Nomor%2062%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_62_1957_1957-10-26.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6bf7710aa2386780674c4174669fd2a74a80fa686e36c34b4b16f35df6fe6cc0
 pdf_sha256: 6bf7710aa2386780674c4174669fd2a74a80fa686e36c34b4b16f35df6fe6cc0
+tanggal_pengundangan: '1957-11-13'
+tanggal_berlaku: '1954-01-01'
+lembaran_negara: 'LN. 1957 No. 137, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-62-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu62-1957.pdf
+bpk:
+  id: 52696
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42061/UU%20Nomor%2062%20Tahun%201957.pdf
+    bpk_file_id: 42061
+    filename: UU Nomor 62 Tahun 1957.pdf
+    sha256: 6bf7710aa2386780674c4174669fd2a74a80fa686e36c34b4b16f35df6fe6cc0
+    bytes: 26254
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

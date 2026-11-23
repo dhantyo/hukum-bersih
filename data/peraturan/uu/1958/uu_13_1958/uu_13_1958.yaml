@@ -9,12 +9,12 @@ tentang: PERJANJIAN PERDAMAIAN DAN PERSETUJUAN PAMPASAN ANTARA REPUBLIK INDONESI
   DAN JEPANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-03-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu13-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/51674/uu-no-13-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/40958/UU%20Nomor%2013%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_13_1958_1958-03-27
+  kind: asli
+  source: official
+  date: '1958-03-27'
+  date_basis: tanggal_penetapan
+  text: uu_13_1958_1958-03-27.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 423df158022bf75c0e83b621f08e281f489ae980b982f28512769aeda5819ba6
 pdf_sha256: 3828efdc84681c0a8942bf86be38837efaed830d551f8c051c7a3d422a49a7c9
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-03-27'
+tanggal_berlaku: '1958-03-27'
+lembaran_negara: 'LN. 1958 No. 31, TLN No. 1560, LL SETNEG : 2 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu13-1958.pdf
+bpk:
+  id: 51674
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40958/UU%20Nomor%2013%20Tahun%201958.pdf
+    bpk_file_id: 40958
+    filename: UU Nomor 13 Tahun 1958.pdf
+    sha256: 423df158022bf75c0e83b621f08e281f489ae980b982f28512769aeda5819ba6
+    bytes: 30674
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -9,23 +9,54 @@ title: Undang-Undang Nomor 20 Tahun 1958 tentang Penetapan Undang-Undang Darurat
 tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 22 TAHUN 1957 TENTANG PEMBENTUKAN DAERAH
   SWATANTRA TINGKAT I MALUKU (LEMBARAN-NEGARA TAHUN 1957 NO. 79) SEBAGAI UNDANG-UNDANG
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 13 Tahun 2023 Tentang Provinsi
-  Maluku'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1958-06-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu20-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/51717/uu-no-20-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41003/UU%20Nomor%2020%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_13_2023
+  revoked_by: []
   enacts:
   - uu-drt_22_1957
   enacted_by: []
-versions: []
+versions:
+- id: uu_20_1958_1958-06-17
+  kind: asli
+  source: official
+  date: '1958-06-17'
+  date_basis: tanggal_penetapan
+  text: uu_20_1958_1958-06-17.txt
+  pasal_count: 8
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 715e97162eaf9b8077cbb0c8f36c7fbe716cbb02747cd1868c29ebca7808e4fa
 pdf_sha256: f9b2deb1cef4df7f2177b9a74c078b71f35f6aa62bb6ba19d0aae69d9746d878
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-07-01'
+tanggal_berlaku: '1958-07-01'
+lembaran_negara: 'LN. 1958 No. 61, TLN No. 1617, LL SETNEG : 6 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu20-1958.pdf
+bpk:
+  id: 51717
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41003/UU%20Nomor%2020%20Tahun%201958.pdf
+    bpk_file_id: 41003
+    filename: UU Nomor 20 Tahun 1958.pdf
+    sha256: 715e97162eaf9b8077cbb0c8f36c7fbe716cbb02747cd1868c29ebca7808e4fa
+    bytes: 39868
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_13_2023
+      citation: UU No. 13 Tahun 2023
+      tentang: Provinsi Maluku
+      url: https://peraturan.bpk.go.id/Details/249368/uu-no-13-tahun-2023
+      note: null
+uji_materi: null

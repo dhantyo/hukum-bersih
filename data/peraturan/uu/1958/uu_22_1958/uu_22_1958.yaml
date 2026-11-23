@@ -11,12 +11,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 12 TAHUN 1954 (LEMBARAN-NEGARA TAHU
   NO. 604) SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-07-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-22-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu22-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/51728/uu-no-22-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41014/UU%20Nomor%2022%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,6 +25,40 @@ relationships:
   enacts:
   - uu-drt_12_1954
   enacted_by: []
-versions: []
+versions:
+- id: uu_22_1958_1958-07-17
+  kind: asli
+  source: official
+  date: '1958-07-17'
+  date_basis: tanggal_penetapan
+  text: uu_22_1958_1958-07-17.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7c8dbad0459ad5d0daa94afa5a0e57f4da5a6497871d6dbfa0e5afd78b5a27de
 pdf_sha256: f7ab59ef5d527037e0989e892e17818a4fc300b199fd23d138e9d38c03ac78ca
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-07-02'
+tanggal_berlaku: '1958-07-02'
+lembaran_negara: 'LN. 1958 No. 63, TLN No. 1623, LL SETNEG : 3 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-22-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu22-1958.pdf
+bpk:
+  id: 51728
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41014/UU%20Nomor%2022%20Tahun%201958.pdf
+    bpk_file_id: 41014
+    filename: UU Nomor 22 Tahun 1958.pdf
+    sha256: 7c8dbad0459ad5d0daa94afa5a0e57f4da5a6497871d6dbfa0e5afd78b5a27de
+    bytes: 30604
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: null
+      citation: UUDrt No. 12 Tahun 1954
+      tentang: Pengubahan "Krosok-Ordonnantie 1937" (Lembaran-Negara Tahun 1937 No.
+        604)
+      url: https://peraturan.bpk.go.id/Details/52950/uudrt-no-12-tahun-1954
+      note: null
+uji_materi: null

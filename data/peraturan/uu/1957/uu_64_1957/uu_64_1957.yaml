@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN IBW XV(PERUSAHAAN BATUBARA BUKIT ASAM) DARI ANGGARAN R
   INDONESIA TAHUN DINAS 1954
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-10-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-64-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu64-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52706/uu-no-64-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/42072/UU%20Nomor%2064%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_64_1957_1957-10-26
+  kind: asli
+  source: official
+  date: '1957-10-26'
+  date_basis: tanggal_penetapan
+  text: uu_64_1957_1957-10-26.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a2132d298a7610e2f547185c886f685a7036560f1d282c480c92bbd10bba5aa6
 pdf_sha256: a2132d298a7610e2f547185c886f685a7036560f1d282c480c92bbd10bba5aa6
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1957-11-13'
+tanggal_berlaku: '1954-01-01'
+lembaran_negara: 'LN. 1957/No. 139, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-64-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu64-1957.pdf
+bpk:
+  id: 52706
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42072/UU%20Nomor%2064%20Tahun%201957.pdf
+    bpk_file_id: 42072
+    filename: UU Nomor 64 Tahun 1957.pdf
+    sha256: a2132d298a7610e2f547185c886f685a7036560f1d282c480c92bbd10bba5aa6
+    bytes: 26252
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -8,14 +8,13 @@ title: Undang-Undang Nomor 74 Tahun 1957 tentang Pencabutan Quotregeling Po De S
 tentang: PENCABUTAN QUOTREGELING PO DE STAAT VAN OORLOG EN BELEGQUOT DAN PENETAPAN
   QUOTKEADAAN BAHAYA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Peraturan Pemerintah Pengganti Undang-Undang
-  Nomor 23 Tahun 1959 Tentang Keadaan Bahaya'
-tanggal_penetapan: null
+status: berlaku
+tanggal_penetapan: '1957-10-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-74-tahun-1957
-source_pdf_url: null
+source_url: https://peraturan.bpk.go.id/Details/52827/uu-no-74-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/42200/UU%20Nomor%2074%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,4 +23,49 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_74_1957_1957-10-30
+  kind: asli
+  source: official
+  date: '1957-10-30'
+  date_basis: tanggal_penetapan
+  text: uu_74_1957_1957-10-30.txt
+  pasal_count: 61
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 832a7b817a99fe13ee0c3d14154f4e61e62c3f8fd5f0525041e66a40f8205412
+tanggal_pengundangan: '1957-12-17'
+tanggal_berlaku: '1957-12-17'
+lembaran_negara: 'LN. 1957 No. 160, TLN No. 1485, LL SETNEG : 41 HLM'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-74-tahun-1957
+  source_pdf_url: null
+bpk:
+  id: 52827
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42200/UU%20Nomor%2074%20Tahun%201957.pdf
+    bpk_file_id: 42200
+    filename: UU Nomor 74 Tahun 1957.pdf
+    sha256: 832a7b817a99fe13ee0c3d14154f4e61e62c3f8fd5f0525041e66a40f8205412
+    bytes: 68992
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_6_1946
+      citation: UU No. 6 Tahun 1946
+      tentang: Keadaan Bahaya
+      url: https://peraturan.bpk.go.id/Details/25073/uu-no-6-tahun-1946
+      note: null
+    - id: uu_23_1946
+      citation: UU No. 23 Tahun 1946
+      tentang: Pengesahan Peraturan Pemerintah Pengganti Undang-Undang Nomor 9 Tahun
+        1946
+      url: https://peraturan.bpk.go.id/Details/25196/uu-no-23-tahun-1946
+      note: null
+    - id: uu_16_1946
+      citation: UU No. 16 Tahun 1946
+      tentang: Pernyataan Keadaan Bahaya di Seluruh Indonesia
+      url: https://peraturan.bpk.go.id/Details/25175/uu-no-16-tahun-1946
+      note: null
+uji_materi: null

@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 1 Tahun 1958 tentang Penghapusan Tanah-Tanah Partikel
 tentang: PENGHAPUSAN TANAH-TANAH PARTIKELIR
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-01-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu1-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/51547/uu-no-1-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/53748/UU%20Nomor%201%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_1_1958_1958-01-13
+  kind: asli
+  source: official
+  date: '1958-01-13'
+  date_basis: tanggal_penetapan
+  text: uu_1_1958_1958-01-13.txt
+  pasal_count: 13
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 13d2ec761e00e93c933822a9e72f5d23ed0c52eb094c99522e8e905d08b0abdd
 pdf_sha256: 7515ff029da5128e5cc5e17048cb8fe4978b2baf76ad0985cb6a7b1bde2ced86
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-01-24'
+tanggal_berlaku: '1958-01-24'
+lembaran_negara: 'LN. 1958 No. 2, TLN NO. 1571, LL SETNEG : 10 HLM'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu1-1958.pdf
+bpk:
+  id: 51547
+  files:
+  - url: https://peraturan.bpk.go.id/Download/53748/UU%20Nomor%201%20Tahun%201958.pdf
+    bpk_file_id: 53748
+    filename: UU Nomor 1 Tahun 1958.pdf
+    sha256: 13d2ec761e00e93c933822a9e72f5d23ed0c52eb094c99522e8e905d08b0abdd
+    bytes: 103802
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

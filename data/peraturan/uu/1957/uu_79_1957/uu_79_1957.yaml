@@ -10,12 +10,12 @@ tentang: PENYELESAIAN PERNYATAAN KEADAAN PERANG SEBAGAI YANG TELAH DILAKUKAN DEN
   KEPUTUSAN PRESIDEN REPUBLIK INDONESIA NOMOR 225 TAHUN 1957 TANGGAL 17 DESEMBER 1957
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-12-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-79-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu79-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52781/uu-no-79-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/42154/UU%20Nomor%2079%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,11 +24,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_79_1957_1957
+- id: uu_79_1957_1957-12-27
   kind: asli
   source: official
-  date: null
+  date: '1957-12-27'
   date_basis: tanggal_penetapan
-  text: uu_79_1957_1957.txt
+  text: uu_79_1957_1957-12-27.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 04a4ed037de46db455217b43d4f5f73e18c076d497b76c395aa53c6d1b7b5b56
 pdf_sha256: 04a4ed037de46db455217b43d4f5f73e18c076d497b76c395aa53c6d1b7b5b56
+tanggal_pengundangan: '1957-12-27'
+tanggal_berlaku: '1957-12-27'
+lembaran_negara: 'LN. 1957 No. 170, TLN No. 1491, LL SETNEG : 5 HLM'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-79-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu79-1957.pdf
+bpk:
+  id: 52781
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42154/UU%20Nomor%2079%20Tahun%201957.pdf
+    bpk_file_id: 42154
+    filename: UU Nomor 79 Tahun 1957.pdf
+    sha256: 04a4ed037de46db455217b43d4f5f73e18c076d497b76c395aa53c6d1b7b5b56
+    bytes: 32214
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

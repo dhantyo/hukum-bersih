@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN III (KEMENTERIAN DALAM NEGERI) DARI ANGGARAN REPUBLIK 
   UNTUK TAHUN DINAS 1955
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-06-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-27-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu27-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/51760/uu-no-27-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41048/UU%20Nomor%2027%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_27_1958_1958-06-21
+  kind: asli
+  source: official
+  date: '1958-06-21'
+  date_basis: tanggal_penetapan
+  text: uu_27_1958_1958-06-21.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0c2529bbb731d543c2c64cbe4e6f7b3df3bca5b6386e4830d8d051e3148c5cea
 pdf_sha256: 67b1583b746f8385b08aa3a7734bc3319124a66930a5e07c97872529a2be81c4
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-07-17'
+tanggal_berlaku: '1955-01-01'
+lembaran_negara: 'LN. 1958 No. 77, LL SETNEG : 4 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-27-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu27-1958.pdf
+bpk:
+  id: 51760
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41048/UU%20Nomor%2027%20Tahun%201958.pdf
+    bpk_file_id: 41048
+    filename: UU Nomor 27 Tahun 1958.pdf
+    sha256: 0c2529bbb731d543c2c64cbe4e6f7b3df3bca5b6386e4830d8d051e3148c5cea
+    bytes: 28283
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

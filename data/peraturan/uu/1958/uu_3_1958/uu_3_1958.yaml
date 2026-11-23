@@ -6,13 +6,13 @@ year: 1958
 title: Undang-Undang Nomor 3 Tahun 1958 tentang Penempatan Tenaga Asing
 tentang: PENEMPATAN TENAGA ASING
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1958-11-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu3-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/51603/uu-no-3-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/40886/UU%20Nomor%203%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,44 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_3_1958_1958-11-19
+  kind: asli
+  source: official
+  date: '1958-11-19'
+  date_basis: tanggal_penetapan
+  text: uu_3_1958_1958-11-19.txt
+  pasal_count: 16
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7e5deee27ff4755fb38702d6c4676245f235ed91ea2552fe63c9f8235e9dcf3b
 pdf_sha256: 65ac01f2444bd7ad829fe073b749369c694f4a0f429f024b535787ed169c1f50
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-01-19'
+tanggal_berlaku: '1958-01-19'
+lembaran_negara: 'LN. 1958 No. 8, LL SETNEG : 8 HLM'
+subjek: KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu3-1958.pdf
+bpk:
+  id: 51603
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40886/UU%20Nomor%203%20Tahun%201958.pdf
+    bpk_file_id: 40886
+    filename: UU Nomor 3 Tahun 1958.pdf
+    sha256: 7e5deee27ff4755fb38702d6c4676245f235ed91ea2552fe63c9f8235e9dcf3b
+    bytes: 35608
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_13_2003
+      citation: UU No. 13 Tahun 2003
+      tentang: Ketenagakerjaan
+      url: https://peraturan.bpk.go.id/Details/43013/uu-no-13-tahun-2003
+      note: null
+    - id: uu_25_1997
+      citation: UU No. 25 Tahun 1997
+      tentang: Ketenagakerjaan
+      url: https://peraturan.bpk.go.id/Details/46026/uu-no-25-tahun-1997
+      note: null
+uji_materi: null

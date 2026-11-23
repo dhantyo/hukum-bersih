@@ -8,13 +8,13 @@ title: Undang-Undang Nomor 2 Tahun 1958 tentang Persetujuan Antara Republik Indo
 tentang: PERSETUJUAN ANTARA REPUBLIK INDONESIA DAN REPUBLIK RAKYAT TIONGKOK MENGENAI
   SOAL DWIKEWARGANEGARAAN
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1958-01-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu2-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/51552/uu-no-2-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/53751/UU%20Nomor%202%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,47 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_2_1958_1958-01-11
+  kind: asli
+  source: official
+  date: '1958-01-11'
+  date_basis: tanggal_penetapan
+  text: uu_2_1958_1958-01-11.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 243dd444436c7b371db1b404fe404959093a20c0dad7444d462bb94e1555750c
 pdf_sha256: b25b956f4be44421bfe77e8dde0cc4010bf5c876da7930173f62f98a6104a47c
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-01-27'
+tanggal_berlaku: '1958-01-27'
+lembaran_negara: 'LN. 1958 No. 5, LL SETNEG : 3 HLM'
+subjek: KEWARGANEGARAAN DAN IMIGRASI - PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN
+  / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu2-1958.pdf
+bpk:
+  id: 51552
+  files:
+  - url: https://peraturan.bpk.go.id/Download/53751/UU%20Nomor%202%20Tahun%201958.pdf
+    bpk_file_id: 53751
+    filename: UU Nomor 2 Tahun 1958.pdf
+    sha256: 243dd444436c7b371db1b404fe404959093a20c0dad7444d462bb94e1555750c
+    bytes: 24873
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/53752/UU%20Nomor%202%20Tahun%201958(LAMPIRAN).pdf
+    bpk_file_id: 53752
+    filename: UU Nomor 2 Tahun 1958(LAMPIRAN).pdf
+    sha256: 5ce9e90902690a986f73ba2741d8886bce509805749694e0721d0e7120afd711
+    bytes: 47157
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_4_1969
+      citation: UU No. 4 Tahun 1969
+      tentang: Persetujuan Perjanjian antara Republik Indonesia dan Republic Rakyat
+        Tiongkok Mengenai Soal Dwikewarganegaraan
+      url: https://peraturan.bpk.go.id/Details/49099/uu-no-4-tahun-1969
+      note: null
+uji_materi: null

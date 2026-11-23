@@ -9,12 +9,12 @@ tentang: PESETUJUAN MENGENAI WARGA NEGARA YANG BERADA SECARA TIDAK SAH DIDAERAH 
   INDONESIA DAN REPUBLIK PILIPINA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-12-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-77-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu77-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52763/uu-no-77-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/42136/UU%20Nomor%2077%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,33 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_77_1957_1957
+- id: uu_77_1957_1957-12-19
   kind: asli
   source: official
-  date: null
+  date: '1957-12-19'
   date_basis: tanggal_penetapan
-  text: uu_77_1957_1957.txt
+  text: uu_77_1957_1957-12-19.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d714348c20f0214963abc0d4bb54f0d76a62f5c30817f1de88c9c10901b2a91d
 pdf_sha256: d714348c20f0214963abc0d4bb54f0d76a62f5c30817f1de88c9c10901b2a91d
+tanggal_pengundangan: '1957-12-23'
+tanggal_berlaku: '1957-12-23'
+lembaran_negara: 'LN. 1957/No. 167, TLN No. 1489, LL SETNEG : 12 HLM'
+subjek: KEWARGANEGARAAN DAN IMIGRASI - PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN
+  / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-77-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu77-1957.pdf
+bpk:
+  id: 52763
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42136/UU%20Nomor%2077%20Tahun%201957.pdf
+    bpk_file_id: 42136
+    filename: UU Nomor 77 Tahun 1957.pdf
+    sha256: d714348c20f0214963abc0d4bb54f0d76a62f5c30817f1de88c9c10901b2a91d
+    bytes: 46406
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -10,13 +10,13 @@ tentang: PENGUBAHAN DAN PENAMBAHAN UNDANG-UNDANG NO. 2 TAHUN 1954 (LEMBARAN-NEGA
   NO. 9 TAHUN 1954) TENTANG KEDUDUKAN KEUANGAN KETUA, WAKIL KETUA DAN ANGGOTA DEWAN
   PERWAKILAN RAKYAT
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1958-04-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu16-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/51678/uu-no-16-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/40962/UU%20Nomor%2016%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,6 +24,47 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_16_1958_1958-04-16
+  kind: asli
+  source: official
+  date: '1958-04-16'
+  date_basis: tanggal_penetapan
+  text: uu_16_1958_1958-04-16.txt
+  pasal_count: 8
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 64e98897d308e0fdd135c91b34d6baeec71163e566416a76157ec0b718d868e4
 pdf_sha256: 892c35e729c07256789249a56ca35d777dc98960973db0273d4755833e534a7e
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-04-23'
+lembaran_negara: 'LN. 1958 No. 42, TLN No. 1568, LL SETNEG : 4 HLM'
+subjek: HONORARIUM, GAJI, PENGHASILAN, UANG KEHORMATAN, TUNJANGAN, PENGHARGAAN, HAK
+  LAINNYA - DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu16-1958.pdf
+bpk:
+  id: 51678
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40962/UU%20Nomor%2016%20Tahun%201958.pdf
+    bpk_file_id: 40962
+    filename: UU Nomor 16 Tahun 1958.pdf
+    sha256: 64e98897d308e0fdd135c91b34d6baeec71163e566416a76157ec0b718d868e4
+    bytes: 29503
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_81_1958
+      citation: UU No. 81 Tahun 1958
+      tentang: Kedudukan Keuangan Ketua, Wakil Ketua dan Anggota Dewan Perwakilan
+        Rakyat
+      url: https://peraturan.bpk.go.id/Details/52360/uu-no-81-tahun-1958
+      note: null
+    Mengubah:
+    - id: uu_2_1954
+      citation: UU No. 2 Tahun 1954
+      tentang: Kedudukan Keuangan Ketua, Wakil Ketua dan Anggota Dewan Perwakilan
+        Rakyat
+      url: https://peraturan.bpk.go.id/Details/47823/uu-no-2-tahun-1954
+      note: null
+uji_materi: null

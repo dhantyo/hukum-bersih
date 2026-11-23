@@ -7,28 +7,53 @@ title: Undang-Undang Nomor 75 Tahun 1957 tentang Veteran Pejuang Kemerdekaan Rep
   Indonesia
 tentang: VETERAN PEJUANG KEMERDEKAAN REPUBLIK INDONESIA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 15 Tahun 1965 Tentang Veteran
-  Republik Indonesia'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1957-12-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-75-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu75-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52757/uu-no-75-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/42130/UU%20Nomor%2075%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_15_1965
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_75_1957_1957
+- id: uu_75_1957_1957-12-13
   kind: asli
   source: official
-  date: null
+  date: '1957-12-13'
   date_basis: tanggal_penetapan
-  text: uu_75_1957_1957.txt
+  text: uu_75_1957_1957-12-13.txt
   pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9e011f9436f79106266bb545efc7eaee1f203aa16ef46c3433c258fd3f0c97d0
 pdf_sha256: 9e011f9436f79106266bb545efc7eaee1f203aa16ef46c3433c258fd3f0c97d0
+tanggal_pengundangan: '1957-12-17'
+tanggal_berlaku: '1957-12-17'
+lembaran_negara: 'LN. 1957 No. 162, LL SETNEG : 9 HLM'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-75-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu75-1957.pdf
+bpk:
+  id: 52757
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42130/UU%20Nomor%2075%20Tahun%201957.pdf
+    bpk_file_id: 42130
+    filename: UU Nomor 75 Tahun 1957.pdf
+    sha256: 9e011f9436f79106266bb545efc7eaee1f203aa16ef46c3433c258fd3f0c97d0
+    bytes: 38540
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_15_1965
+      citation: UU No. 15 Tahun 1965
+      tentang: Veteran Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/50198/uu-no-15-tahun-1965
+      note: null
+uji_materi: null
