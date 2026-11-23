@@ -6,13 +6,13 @@ year: 1946
 title: Undang-Undang Nomor 7 Tahun 1946 tentang Pengadilan Tentara
 tentang: PENGADILAN TENTARA
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '1946-06-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1946
-source_pdf_url: https://peraturan.go.id/files/uu7-1946.pdf
+source_url: https://peraturan.bpk.go.id/Details/25080/uu-no-7-tahun-1946
+source_pdf_url: https://peraturan.bpk.go.id/Download/13875/UU%20Nomor%207%20Tahun%201946.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_7_1946_1946-06-08
+  kind: asli
+  source: official
+  date: '1946-06-08'
+  date_basis: tanggal_penetapan
+  text: uu_7_1946_1946-06-08.txt
+  pasal_count: 24
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4bd5d65bc6e059ac4bff5ed3f9526e45b4a40115085f8773c46d871182d7d22b
 pdf_sha256: 292b67322a81653aec1e8e70077c2f5d967305c8a4d37947d8b8798086c57f72
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1946-06-08'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1946
+  source_pdf_url: https://peraturan.go.id/files/uu7-1946.pdf
+bpk:
+  id: 25080
+  files:
+  - url: https://peraturan.bpk.go.id/Download/13875/UU%20Nomor%207%20Tahun%201946.pdf
+    bpk_file_id: 13875
+    filename: UU Nomor 7 Tahun 1946.pdf
+    sha256: 4bd5d65bc6e059ac4bff5ed3f9526e45b4a40115085f8773c46d871182d7d22b
+    bytes: 58394
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_5_1950
+      citation: UU No. 5 Tahun 1950
+      tentang: Menetapkan “Undang-Undang Darurat tentang Susunan dan Kekuasaan Pengadilan/Kejaksaan
+        dalam Lingkungan Peradilan Ketentaraan” (Undang-Undang Darurat Nr 16. Tahun
+        1950), Sebagai Undang-Undang Federal
+      url: https://peraturan.bpk.go.id/Details/37969/uu-no-5-tahun-1950
+      note: null
+uji_materi: null

@@ -11,8 +11,8 @@ tanggal_penetapan: '1946-10-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-1946
-source_pdf_url: https://peraturan.go.id/files/uu20-1946.pdf
+source_url: https://peraturan.bpk.go.id/Details/25422/uu-no-20-tahun-1946
+source_pdf_url: https://peraturan.bpk.go.id/Download/14218/UU%20Nomor%2020%20Tahun%201946.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_20_1946_1946-10-31
+  kind: asli
+  source: official
+  date: '1946-10-31'
+  date_basis: tanggal_penetapan
+  text: uu_20_1946_1946-10-31.txt
+  pasal_count: 6
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 76d36b50d76d01f1aa31c08ad2c6d99feab3e7fcecd5f1c438b1de828ebfc630
 pdf_sha256: 5b209d77eb42d1a7fe7408904b40a31ffd9b66e4b7f8510598eada199b2a377f
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1946-11-01'
+subjek: HUKUM PIDANA, PERDATA, DAN DAGANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-1946
+  source_pdf_url: https://peraturan.go.id/files/uu20-1946.pdf
+bpk:
+  id: 25422
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14218/UU%20Nomor%2020%20Tahun%201946.pdf
+    bpk_file_id: 14218
+    filename: UU Nomor 20 Tahun 1946.pdf
+    sha256: 76d36b50d76d01f1aa31c08ad2c6d99feab3e7fcecd5f1c438b1de828ebfc630
+    bytes: 56905
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

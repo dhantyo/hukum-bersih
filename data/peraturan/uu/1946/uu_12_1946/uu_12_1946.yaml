@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 12 Tahun 1946 tentang Pembaharuan Susunan Komite Nasi
   Pusat
 tentang: PEMBAHARUAN SUSUNAN KOMITE NASIONAL PUSAT
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '1946-07-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1946
-source_pdf_url: https://peraturan.go.id/files/uu12-1946.pdf
+source_url: https://peraturan.bpk.go.id/Details/25152/uu-no-12-tahun-1946
+source_pdf_url: https://peraturan.bpk.go.id/Download/13947/UU%20Nomor%2012%20Tahun%201946.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,44 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_12_1946_1946-07-08
+  kind: asli
+  source: official
+  date: '1946-07-08'
+  date_basis: tanggal_penetapan
+  text: uu_12_1946_1946-07-08.txt
+  pasal_count: 21
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 83a8fe9c08801a393dba93367a8be5806a62f2623157fb4279370de10ce85e72
 pdf_sha256: ae7a63f4593c7e1714fcc08615abc2c629db50a0f73243d523edd336fc1d5aff
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1946-07-10'
+subjek: PEMBENTUKAN, PERUBAHAN, DAN PEMBUBARAN KOMISI / KOMITE / BADAN / DEWAN / STAF
+  KHUSUS / TIM / PANITIA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1946
+  source_pdf_url: https://peraturan.go.id/files/uu12-1946.pdf
+bpk:
+  id: 25152
+  files:
+  - url: https://peraturan.bpk.go.id/Download/13947/UU%20Nomor%2012%20Tahun%201946.pdf
+    bpk_file_id: 13947
+    filename: UU Nomor 12 Tahun 1946.pdf
+    sha256: 83a8fe9c08801a393dba93367a8be5806a62f2623157fb4279370de10ce85e72
+    bytes: 58653
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_27_1948
+      citation: UU No. 27 Tahun 1948
+      tentang: Dewan Perwakilan Rakyat dan Pemilihan Anggauta-Anggautanya
+      url: https://peraturan.bpk.go.id/Details/25858/uu-no-27-tahun-1948
+      note: null
+    Mencabut:
+    - id: pp_2_1946
+      citation: PP No. 2 Tahun 1946
+      tentang: Peraturan tentang Susunan dan Pemilihan Anggota Komite Nasional Pusat
+      url: https://peraturan.bpk.go.id/Details/62749/pp-no-2-tahun-1946
+      note: null
+uji_materi: null

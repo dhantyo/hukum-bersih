@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 9 Tahun 1947 tentang Naturalisasi Frans Matheas Hesse
 tentang: NATURALISASI FRANS MATHEAS HESSE
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1947-05-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1947
-source_pdf_url: https://peraturan.go.id/files/uu9-1947.pdf
+source_url: https://peraturan.bpk.go.id/Details/25231/uu-no-9-tahun-1947
+source_pdf_url: https://peraturan.bpk.go.id/Download/14029/UU%20Nomor%209%20Tahun%201947.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_9_1947_1947-05-02
+  kind: asli
+  source: official
+  date: '1947-05-02'
+  date_basis: tanggal_penetapan
+  text: uu_9_1947_1947-05-02.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f97b999c4dda66426221790dfbae48d25a2a94cb2b63ff7748e98b8e3a51dbec
 pdf_sha256: 671ba29ad148a1d5b99c8f165cd9ab703bee24a228af112a2f50213a9d2fc9b7
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1947-05-03'
+subjek: KEWARGANEGARAAN DAN IMIGRASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1947
+  source_pdf_url: https://peraturan.go.id/files/uu9-1947.pdf
+bpk:
+  id: 25231
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14029/UU%20Nomor%209%20Tahun%201947.pdf
+    bpk_file_id: 14029
+    filename: UU Nomor 9 Tahun 1947.pdf
+    sha256: f97b999c4dda66426221790dfbae48d25a2a94cb2b63ff7748e98b8e3a51dbec
+    bytes: 55558
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

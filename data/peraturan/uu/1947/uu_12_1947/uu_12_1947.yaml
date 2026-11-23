@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 12 Tahun 1947 tentang Menetapkan "Pajak Radio" Atas S
   Pesawat Penerimaan Radio
 tentang: MENETAPKAN "PAJAK RADIO" ATAS SEMUA PESAWAT PENERIMAAN RADIO
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1947-05-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1947
-source_pdf_url: https://peraturan.go.id/files/uu12-1947.pdf
+source_url: https://peraturan.bpk.go.id/Details/25253/uu-no-12-tahun-1947
+source_pdf_url: https://peraturan.bpk.go.id/Download/14051/UU%20Nomor%2012%20Tahun%201947.pdf
 relationships:
   amends: []
   amended_by:
@@ -22,6 +22,66 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_12_1947_1947-05-05
+  kind: asli
+  source: official
+  date: '1947-05-05'
+  date_basis: tanggal_penetapan
+  text: uu_12_1947_1947-05-05.txt
+  pasal_count: 12
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b0d66a90ca7bf5d539d4732e643c907e914220a693ad20946f9cfebb12ed5e1a
 pdf_sha256: 986ea2bb3486b14ff2b41d1354f078f763093493aa1ee7fb48f01603e8094a0a
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1947-05-05'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1947
+  source_pdf_url: https://peraturan.go.id/files/uu12-1947.pdf
+bpk:
+  id: 25253
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14051/UU%20Nomor%2012%20Tahun%201947.pdf
+    bpk_file_id: 14051
+    filename: UU Nomor 12 Tahun 1947.pdf
+    sha256: b0d66a90ca7bf5d539d4732e643c907e914220a693ad20946f9cfebb12ed5e1a
+    bytes: 50527
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_18_1997
+      citation: UU No. 18 Tahun 1997
+      tentang: Pajak Daerah dan Retribusi Daerah
+      url: https://peraturan.bpk.go.id/Details/45950/uu-no-18-tahun-1997
+      note: null
+    - id: uu_4_1952
+      citation: UU No. 4 Tahun 1952
+      tentang: Penetapan Undang-Undang Darurat tentang Penetapan Berlakunya Undang-Undang,
+        Undang-Undang Darurat dan Ordonansi-Ordonansi Mengenai Masalah-Masalah Pajak,
+        Dikeluarkan Sebelum Pembentukan Negara Kesatuan Republik Indonesia (Undang-Undang
+        Darurat Nr 36 Tahun 1950) Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/40194/uu-no-4-tahun-1952
+      note: null
+    Diubah dengan:
+    - id: uu_10_1968
+      citation: UU No. 10 Tahun 1968
+      tentang: 'Penyerahan Pajak-Pajak Negara: Bea Balik Nama Kendaraan Bermotor,
+        Pajak Bangsa Asing dan Pajak Radio Kepada Daerah'
+      url: https://peraturan.bpk.go.id/Details/49167/uu-no-10-tahun-1968
+      note: null
+    - id: uu_21_1948
+      citation: UU No. 21 Tahun 1948
+      tentang: Menambah dan Mengubah Undang-Undang Nomor 12 Tahun 1947 tentang Pajak
+        Radio
+      url: https://peraturan.bpk.go.id/Details/25796/uu-no-21-tahun-1948
+      note: null
+    Diubah sebagian dengan:
+    - id: uu_19_1959
+      citation: UU No. 19 Tahun 1959
+      tentang: Penetapan "Undang-Undang Darurat No. 27 Tahun 1957 Tentang Penagihan
+        Pajak Negara Dengan Surat Paksa (Lembaran-Negara Tahun 1957 No. 84)" Sebagai
+        Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/51466/uu-no-19-tahun-1959
+      note: null
+uji_materi: null

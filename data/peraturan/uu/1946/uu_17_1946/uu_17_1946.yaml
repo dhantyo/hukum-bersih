@@ -11,8 +11,8 @@ tanggal_penetapan: '1946-10-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-1946
-source_pdf_url: https://peraturan.go.id/files/uu17-1946.pdf
+source_url: https://peraturan.bpk.go.id/Details/25178/uu-no-17-tahun-1946
+source_pdf_url: https://peraturan.bpk.go.id/Download/13973/UU%20Nomor%2017%20Tahun%201946.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_17_1946_1946-10-01
+  kind: asli
+  source: official
+  date: '1946-10-01'
+  date_basis: tanggal_penetapan
+  text: uu_17_1946_1946-10-01.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 39861f20b76bf763deec48b6948a1d9b8337f912851e777c1f4be28e81576489
 pdf_sha256: 014b4365368636a85c2f36d73815362a7a1692423025f37ae2edf06e940743d6
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1946-10-01'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-1946
+  source_pdf_url: https://peraturan.go.id/files/uu17-1946.pdf
+bpk:
+  id: 25178
+  files:
+  - url: https://peraturan.bpk.go.id/Download/13973/UU%20Nomor%2017%20Tahun%201946.pdf
+    bpk_file_id: 13973
+    filename: UU Nomor 17 Tahun 1946.pdf
+    sha256: 39861f20b76bf763deec48b6948a1d9b8337f912851e777c1f4be28e81576489
+    bytes: 41398
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

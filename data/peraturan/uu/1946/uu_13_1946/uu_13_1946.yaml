@@ -11,8 +11,8 @@ tanggal_penetapan: '1946-09-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1946
-source_pdf_url: https://peraturan.go.id/files/uu13-1946.pdf
+source_url: https://peraturan.bpk.go.id/Details/25158/uu-no-13-tahun-1946
+source_pdf_url: https://peraturan.bpk.go.id/Download/13953/UU%20Nomor%2013%20Tahun%201946.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_13_1946_1946-09-04
+  kind: asli
+  source: official
+  date: '1946-09-04'
+  date_basis: tanggal_penetapan
+  text: uu_13_1946_1946-09-04.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a5fd9acfd5cd962923e52c9bab882cd60b85fed6d5e648262875c358d9f93254
 pdf_sha256: 4e56654e2dd35bcbb794b2019c1a895dd030ab5636aa1fdec4251494204524e6
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1946-09-04'
+subjek: DESA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1946
+  source_pdf_url: https://peraturan.go.id/files/uu13-1946.pdf
+bpk:
+  id: 25158
+  files:
+  - url: https://peraturan.bpk.go.id/Download/13953/UU%20Nomor%2013%20Tahun%201946.pdf
+    bpk_file_id: 13953
+    filename: UU Nomor 13 Tahun 1946.pdf
+    sha256: a5fd9acfd5cd962923e52c9bab882cd60b85fed6d5e648262875c358d9f93254
+    bytes: 41986
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

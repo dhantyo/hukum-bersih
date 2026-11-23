@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 18 Tahun 1947 tentang Peraturan Istimewa Pajak Pendap
 tentang: PERATURAN ISTIMEWA PAJAK PENDAPATAN TERHADAP UPAH
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1947-06-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-1947
-source_pdf_url: https://peraturan.go.id/files/uu18-1947.pdf
+source_url: https://peraturan.bpk.go.id/Details/25272/uu-no-18-tahun-1947
+source_pdf_url: https://peraturan.bpk.go.id/Download/14070/UU%20Nomor%2018%20Tahun%201947.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,38 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_18_1947_1947-06-12
+  kind: asli
+  source: official
+  date: '1947-06-12'
+  date_basis: tanggal_penetapan
+  text: uu_18_1947_1947-06-12.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: aaece5b3dc18f8900f2b322c260689f1c4ae97ae60fd91f11863daaa98e39316
 pdf_sha256: aaece5b3dc18f8900f2b322c260689f1c4ae97ae60fd91f11863daaa98e39316
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1947-06-12'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-1947
+  source_pdf_url: https://peraturan.go.id/files/uu18-1947.pdf
+bpk:
+  id: 25272
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14070/UU%20Nomor%2018%20Tahun%201947.pdf
+    bpk_file_id: 14070
+    filename: UU Nomor 18 Tahun 1947.pdf
+    sha256: aaece5b3dc18f8900f2b322c260689f1c4ae97ae60fd91f11863daaa98e39316
+    bytes: 44808
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_13_1947
+      citation: UU No. 13 Tahun 1947
+      tentang: Penetapan Tarip Pajak Pendapatan, Pajak Upah dan Tambahan Pokok Pajak
+        Tahun Pajak 1947/1948
+      url: https://peraturan.bpk.go.id/Details/25255/uu-no-13-tahun-1947
+      note: null
+uji_materi: null

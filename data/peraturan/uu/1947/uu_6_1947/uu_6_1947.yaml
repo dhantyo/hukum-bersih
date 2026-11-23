@@ -9,12 +9,12 @@ tentang: PERUBAHAN UNDANG UNDANG NO. 3 TAHUN 1946 TENTANG WARGA NEGARA DAN PENDU
   NEGARA REPUBLIK INDONESIA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1947-02-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1947
-source_pdf_url: https://peraturan.go.id/files/uu6-1947.pdf
+source_url: https://peraturan.bpk.go.id/Details/25222/uu-no-6-tahun-1947
+source_pdf_url: https://peraturan.bpk.go.id/Download/14019/UU%20Nomor%206%20Tahun%201947.pdf
 relationships:
   amends:
   - id: uu_3_1946
@@ -23,6 +23,50 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_6_1947_1947-02-27
+  kind: asli
+  source: official
+  date: '1947-02-27'
+  date_basis: tanggal_penetapan
+  text: uu_6_1947_1947-02-27.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9f4963c427853b11afaaedae6033078bb49a1a5ee216eddd20a05d077e1f89d5
 pdf_sha256: 54b5cc7caa646ff9fae0c4908b8ff5519ec6894ea5aa9bfe3ee4b805c65b37bf
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1947-03-03'
+subjek: KEWARGANEGARAAN DAN IMIGRASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1947
+  source_pdf_url: https://peraturan.go.id/files/uu6-1947.pdf
+bpk:
+  id: 25222
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14019/UU%20Nomor%206%20Tahun%201947.pdf
+    bpk_file_id: 14019
+    filename: UU Nomor 6 Tahun 1947.pdf
+    sha256: 9f4963c427853b11afaaedae6033078bb49a1a5ee216eddd20a05d077e1f89d5
+    bytes: 49157
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_11_1948
+      citation: UU No. 11 Tahun 1948
+      tentang: Memperpanjang Waktu Lagi untuk Mengajukan Pernyataan Berhubung dengan
+        Kewarganegaraan Negara Indonesia
+      url: https://peraturan.bpk.go.id/Details/25711/uu-no-11-tahun-1948
+      note: null
+    - id: uu_8_1947
+      citation: UU No. 8 Tahun 1947
+      tentang: Memperpanjang Waktu untuk Mengajukan Pernyataan Berhubung dengan Kewargaan
+        Negara Indonesia
+      url: https://peraturan.bpk.go.id/Details/25229/uu-no-8-tahun-1947
+      note: null
+    Mengubah:
+    - id: uu_3_1946
+      citation: UU No. 3 Tahun 1946
+      tentang: Warga Negara dan Penduduk Negara
+      url: https://peraturan.bpk.go.id/Details/25033/uu-no-3-tahun-1946
+      note: null
+uji_materi: null

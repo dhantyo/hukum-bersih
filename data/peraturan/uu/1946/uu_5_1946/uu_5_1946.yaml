@@ -13,8 +13,8 @@ tanggal_penetapan: '1946-05-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1946
-source_pdf_url: https://peraturan.go.id/files/uu5-1946.pdf
+source_url: https://peraturan.bpk.go.id/Details/25057/uu-no-5-tahun-1946
+source_pdf_url: https://peraturan.bpk.go.id/Download/13852/UU%20Nomor%205%20Tahun%201946.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_5_1946_1946-05-10
+  kind: asli
+  source: official
+  date: '1946-05-10'
+  date_basis: tanggal_penetapan
+  text: uu_5_1946_1946-05-10.txt
+  pasal_count: 6
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4c9d6321aa5c3711cd1a9fc4619093cda7630c7cf3bef4fdfdd3e97e2b67dd91
 pdf_sha256: 6361dd3d5ea4f24f72c97a8fe6dddc4e386792bf4a2b603234adc29bba0251c8
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1946-05-10'
+subjek: PAJAK DAN RETRIBUSI DAERAH - PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1946
+  source_pdf_url: https://peraturan.go.id/files/uu5-1946.pdf
+bpk:
+  id: 25057
+  files:
+  - url: https://peraturan.bpk.go.id/Download/13852/UU%20Nomor%205%20Tahun%201946.pdf
+    bpk_file_id: 13852
+    filename: UU Nomor 5 Tahun 1946.pdf
+    sha256: 4c9d6321aa5c3711cd1a9fc4619093cda7630c7cf3bef4fdfdd3e97e2b67dd91
+    bytes: 50909
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

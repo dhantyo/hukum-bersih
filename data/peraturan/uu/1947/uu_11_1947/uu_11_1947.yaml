@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 11 Tahun 1947 tentang Mengubah Ordonansi Pajak Potong
 tentang: MENGUBAH ORDONANSI PAJAK POTONG 1936, STBL. 1936, NO. 671
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1947-05-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1947
-source_pdf_url: https://peraturan.go.id/files/uu11-1947.pdf
+source_url: https://peraturan.bpk.go.id/Details/25246/uu-no-11-tahun-1947
+source_pdf_url: https://peraturan.bpk.go.id/Download/14044/UU%20Nomor%2011%20Tahun%201947.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,37 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_11_1947_1947-05-05
+  kind: asli
+  source: official
+  date: '1947-05-05'
+  date_basis: tanggal_penetapan
+  text: uu_11_1947_1947-05-05.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c62fd062eba4e51a7a1f71e49c0552555cec99477335578726148e92f7b6039d
 pdf_sha256: 70687ac730409a2cbae959971e85fe43ffc481e4f93d8759c8a8ac388b56d405
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1947-05-05'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1947
+  source_pdf_url: https://peraturan.go.id/files/uu11-1947.pdf
+bpk:
+  id: 25246
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14044/UU%20Nomor%2011%20Tahun%201947.pdf
+    bpk_file_id: 14044
+    filename: UU Nomor 11 Tahun 1947.pdf
+    sha256: c62fd062eba4e51a7a1f71e49c0552555cec99477335578726148e92f7b6039d
+    bytes: 53673
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_3_1949
+      citation: UU No. 3 Tahun 1949
+      tentang: Menambah Pajak Potong 1949
+      url: https://peraturan.bpk.go.id/Details/33380/uu-no-3-tahun-1949
+      note: null
+uji_materi: null

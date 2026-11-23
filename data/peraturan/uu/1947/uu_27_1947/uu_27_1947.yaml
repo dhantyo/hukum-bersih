@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 27 Tahun 1947 tentang Naturalisasi Curt Ulrich Gross
 tentang: NATURALISASI CURT ULRICH GROSS
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1947-08-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-27-tahun-1947
-source_pdf_url: https://peraturan.go.id/files/uu27-1947.pdf
+source_url: https://peraturan.bpk.go.id/Details/25355/uu-no-27-tahun-1947
+source_pdf_url: https://peraturan.bpk.go.id/Download/14153/UU%20Nomor%2027%20Tahun%201947.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_27_1947_1947-08-29
+  kind: asli
+  source: official
+  date: '1947-08-29'
+  date_basis: tanggal_penetapan
+  text: uu_27_1947_1947-08-29.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b4a5cc90fdc76404758620ff5184f1acbbd75f987174c66d7e4e6bff36c89f20
 pdf_sha256: b4a5cc90fdc76404758620ff5184f1acbbd75f987174c66d7e4e6bff36c89f20
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1947-08-29'
+subjek: KEWARGANEGARAAN DAN IMIGRASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-27-tahun-1947
+  source_pdf_url: https://peraturan.go.id/files/uu27-1947.pdf
+bpk:
+  id: 25355
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14153/UU%20Nomor%2027%20Tahun%201947.pdf
+    bpk_file_id: 14153
+    filename: UU Nomor 27 Tahun 1947.pdf
+    sha256: b4a5cc90fdc76404758620ff5184f1acbbd75f987174c66d7e4e6bff36c89f20
+    bytes: 42567
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

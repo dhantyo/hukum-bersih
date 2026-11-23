@@ -12,8 +12,8 @@ tanggal_penetapan: '1946-11-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-24-tahun-1946
-source_pdf_url: https://peraturan.go.id/files/uu24-1946.pdf
+source_url: https://peraturan.bpk.go.id/Details/25199/uu-no-24-tahun-1946
+source_pdf_url: https://peraturan.bpk.go.id/Download/13994/UU%20Nomor%2024%20Tahun%201946.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_24_1946_1946-11-29
+  kind: asli
+  source: official
+  date: '1946-11-29'
+  date_basis: tanggal_penetapan
+  text: uu_24_1946_1946-11-29.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 52083b586e807802b577a5389ff7affade17bf15e7683df7530cabb294a26e91
 pdf_sha256: 33a6d10770f886316717421922f6dc691e5c7541a94d9ffd64b6441d8649c8bc
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1946-11-29'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-24-tahun-1946
+  source_pdf_url: https://peraturan.go.id/files/uu24-1946.pdf
+bpk:
+  id: 25199
+  files:
+  - url: https://peraturan.bpk.go.id/Download/13994/UU%20Nomor%2024%20Tahun%201946.pdf
+    bpk_file_id: 13994
+    filename: UU Nomor 24 Tahun 1946.pdf
+    sha256: 52083b586e807802b577a5389ff7affade17bf15e7683df7530cabb294a26e91
+    bytes: 41069
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

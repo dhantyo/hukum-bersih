@@ -11,8 +11,8 @@ tanggal_penetapan: '1946-09-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-1946
-source_pdf_url: https://peraturan.go.id/files/uu14-1946.pdf
+source_url: https://peraturan.bpk.go.id/Details/25164/uu-no-14-tahun-1946
+source_pdf_url: https://peraturan.bpk.go.id/Download/13959/UU%20Nomor%2014%20Tahun%201946.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_14_1946_1946-09-04
+  kind: asli
+  source: official
+  date: '1946-09-04'
+  date_basis: tanggal_penetapan
+  text: uu_14_1946_1946-09-04.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9e6a0b74c5fdb0ffb44d85dc28dd713187542d9834a25888e0c21302e98104e5
 pdf_sha256: 607aa69e6dddfc87d50114950acac4432a0bcb5b120b20e2acf34248ff9e959d
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1946-09-04'
+subjek: PARTAI POLITIK DAN PEMILU - DESA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-1946
+  source_pdf_url: https://peraturan.go.id/files/uu14-1946.pdf
+bpk:
+  id: 25164
+  files:
+  - url: https://peraturan.bpk.go.id/Download/13959/UU%20Nomor%2014%20Tahun%201946.pdf
+    bpk_file_id: 13959
+    filename: UU Nomor 14 Tahun 1946.pdf
+    sha256: 9e6a0b74c5fdb0ffb44d85dc28dd713187542d9834a25888e0c21302e98104e5
+    bytes: 41539
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -8,13 +8,13 @@ title: Undang-Undang Nomor 11 Tahun 1946 tentang Peraturan Tentang Mengadakan Pe
 tentang: PERATURAN TENTANG MENGADAKAN PERUBAHAN DALAM PERATURAN BEA METERAI QUOTZEGELVERORDENINGQUOT
   1921
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '1946-06-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1946
-source_pdf_url: https://peraturan.go.id/files/uu11-1946.pdf
+source_url: https://peraturan.bpk.go.id/Details/25148/uu-no-11-tahun-1946
+source_pdf_url: https://peraturan.bpk.go.id/Download/13943/UU%20Nomor%2011%20Tahun%201946.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,42 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_11_1946_1946-06-23
+  kind: asli
+  source: official
+  date: '1946-06-23'
+  date_basis: tanggal_penetapan
+  text: uu_11_1946_1946-06-23.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 961358715042e9d50411b3729e3641aa75e35d8fd501b7d6c395e916bcf14b0a
 pdf_sha256: a9295a8291931a0ff2b3d946232d567745d89a62935585b524b873e8561dddc4
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1946-06-24'
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1946
+  source_pdf_url: https://peraturan.go.id/files/uu11-1946.pdf
+bpk:
+  id: 25148
+  files:
+  - url: https://peraturan.bpk.go.id/Download/13943/UU%20Nomor%2011%20Tahun%201946.pdf
+    bpk_file_id: 13943
+    filename: UU Nomor 11 Tahun 1946.pdf
+    sha256: 961358715042e9d50411b3729e3641aa75e35d8fd501b7d6c395e916bcf14b0a
+    bytes: 56596
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_13_1985
+      citation: UU No. 13 Tahun 1985
+      tentang: Bea Materai
+      url: https://peraturan.bpk.go.id/Details/46964/uu-no-13-tahun-1985
+      note: null
+    Diubah dengan:
+    - id: uu_20_1956
+      citation: UU No. 20 Tahun 1956
+      tentang: Pengubahan Aturan Bea Meterai 1921 ("Zegelverordening 1921")
+      url: https://peraturan.bpk.go.id/Details/51106/uu-no-20-tahun-1956
+      note: null
+uji_materi: null

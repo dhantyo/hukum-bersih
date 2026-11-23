@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 14 Tahun 1947 tentang Pemungutan Pajak Pembangunan Di
   Makan Dan Rumah Penginapan
 tentang: PEMUNGUTAN PAJAK PEMBANGUNAN DI RUMAH MAKAN DAN RUMAH PENGINAPAN
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1947-05-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-1947
-source_pdf_url: https://peraturan.go.id/files/uu14-1947.pdf
+source_url: https://peraturan.bpk.go.id/Details/25257/uu-no-14-tahun-1947
+source_pdf_url: https://peraturan.bpk.go.id/Download/14055/UU%20Nomor%2014%20Tahun%201947.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,52 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_14_1947_1947-05-14
+  kind: asli
+  source: official
+  date: '1947-05-14'
+  date_basis: tanggal_penetapan
+  text: uu_14_1947_1947-05-14.txt
+  pasal_count: 15
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b9688b6fd85ff102de62cd89fcba48269a2c25e04d9644780cec0b3144ea5fcd
 pdf_sha256: 39bb0f01b8da625d3a48a833982dc167c9bcd6a6bdbd08e6430b5d352786b923
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1947-05-14'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-1947
+  source_pdf_url: https://peraturan.go.id/files/uu14-1947.pdf
+bpk:
+  id: 25257
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14055/UU%20Nomor%2014%20Tahun%201947.pdf
+    bpk_file_id: 14055
+    filename: UU Nomor 14 Tahun 1947.pdf
+    sha256: b9688b6fd85ff102de62cd89fcba48269a2c25e04d9644780cec0b3144ea5fcd
+    bytes: 67217
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_18_1997
+      citation: UU No. 18 Tahun 1997
+      tentang: Pajak Daerah dan Retribusi Daerah
+      url: https://peraturan.bpk.go.id/Details/45950/uu-no-18-tahun-1997
+      note: null
+    - id: uu_4_1952
+      citation: UU No. 4 Tahun 1952
+      tentang: Penetapan Undang-Undang Darurat tentang Penetapan Berlakunya Undang-Undang,
+        Undang-Undang Darurat dan Ordonansi-Ordonansi Mengenai Masalah-Masalah Pajak,
+        Dikeluarkan Sebelum Pembentukan Negara Kesatuan Republik Indonesia (Undang-Undang
+        Darurat Nr 36 Tahun 1950) Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/40194/uu-no-4-tahun-1952
+      note: null
+    Diubah dengan:
+    - id: uu_20_1948
+      citation: UU No. 20 Tahun 1948
+      tentang: Mengadakan Perubahan dan Tambahan Pajak Dalam Undang-Undang Nomor 14
+        Tahun 1947 Dari Hal Pajak Pembangunan I
+      url: https://peraturan.bpk.go.id/Details/25786/uu-no-20-tahun-1948
+      note: null
+uji_materi: null

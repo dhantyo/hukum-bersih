@@ -11,8 +11,8 @@ tanggal_penetapan: '1946-06-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1946
-source_pdf_url: https://peraturan.go.id/files/uu9-1946.pdf
+source_url: https://peraturan.bpk.go.id/Details/25113/uu-no-9-tahun-1946
+source_pdf_url: https://peraturan.bpk.go.id/Download/13908/UU%20Nomor%209%20Tahun%201946.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,37 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_9_1946_1946-06-12
+  kind: asli
+  source: official
+  date: '1946-06-12'
+  date_basis: tanggal_penetapan
+  text: uu_9_1946_1946-06-12.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 38863edf28d5598d2ec247a603ba22ebfa5f1be9922d22ecc479863132714c6b
 pdf_sha256: f1ec1531a25b78e7e929194fc03770acd23b063e5834cc17c9f2e3ed6bb0ffef
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1946-06-12'
+subjek: PIUTANG, UTANG, DAN HIBAH NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1946
+  source_pdf_url: https://peraturan.go.id/files/uu9-1946.pdf
+bpk:
+  id: 25113
+  files:
+  - url: https://peraturan.bpk.go.id/Download/13908/UU%20Nomor%209%20Tahun%201946.pdf
+    bpk_file_id: 13908
+    filename: UU Nomor 9 Tahun 1946.pdf
+    sha256: 38863edf28d5598d2ec247a603ba22ebfa5f1be9922d22ecc479863132714c6b
+    bytes: 54892
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_4_1946
+      citation: UU No. 4 Tahun 1946
+      tentang: Pinjaman Nasional 1946
+      url: https://peraturan.bpk.go.id/Details/25040/uu-no-4-tahun-1946
+      note: null
+uji_materi: null

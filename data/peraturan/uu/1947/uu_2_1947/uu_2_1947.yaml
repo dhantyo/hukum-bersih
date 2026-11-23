@@ -10,12 +10,12 @@ tentang: DEWAN PERTAHANAN NEGARA, PERATURAN. PENGESYAHAN PERATURAN DEWAN PERTAHA
   NEGARA NO. 6, 10, 12, 13, 15, 18, 19, 23, 24, 25 DAN 26
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '2017-07-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1947
-source_pdf_url: https://peraturan.go.id/files/uu2-1947.pdf
+source_url: https://peraturan.bpk.go.id/Details/25212/uu-no-2-tahun-1947
+source_pdf_url: https://peraturan.bpk.go.id/Download/14009/UU%20Nomor%202%20Tahun%201947.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,6 +23,32 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_2_1947_2017-07-28
+  kind: asli
+  source: official
+  date: '2017-07-28'
+  date_basis: tanggal_penetapan
+  text: uu_2_1947_2017-07-28.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 893aa72844030ce74fab574188d6148bd24651f3ac61148d0935f27f0eeb93fd
 pdf_sha256: bb149924e82f67ca1b0916f11d81180188279c6557edc76abf45df645dfd5dad
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1947-01-15'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1947
+  source_pdf_url: https://peraturan.go.id/files/uu2-1947.pdf
+bpk:
+  id: 25212
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14009/UU%20Nomor%202%20Tahun%201947.pdf
+    bpk_file_id: 14009
+    filename: UU Nomor 2 Tahun 1947.pdf
+    sha256: 893aa72844030ce74fab574188d6148bd24651f3ac61148d0935f27f0eeb93fd
+    bytes: 45200
+    archive_url: null
+  status_peraturan: null
+  tanggal_pengundangan: '2017-07-28'
+uji_materi: null

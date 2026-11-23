@@ -11,8 +11,8 @@ tanggal_penetapan: '1946-10-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-1946
-source_pdf_url: https://peraturan.go.id/files/uu19-1946.pdf
+source_url: https://peraturan.bpk.go.id/Details/25182/uu-no-19-tahun-1946
+source_pdf_url: https://peraturan.bpk.go.id/Download/13977/UU%20Nomor%2019%20Tahun%201946.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,32 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_19_1946_1946-10-26
+  kind: asli
+  source: official
+  date: '1946-10-26'
+  date_basis: tanggal_penetapan
+  text: uu_19_1946_1946-10-26.txt
+  pasal_count: 9
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d3ed0e11ef1e097de15667200be3ecf618e40a177c09ccb15c289bf25cda777b
 pdf_sha256: 791f2173fcf3ab33353fd63dc6d95abdaeb45a9c74a046318811c28bc1451310
-pdf_quality: image_only_or_unparsed
+tanggal_penetapan_bpk: '1946-10-25'
+tanggal_pengundangan: '1946-10-26'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-1946
+  source_pdf_url: https://peraturan.go.id/files/uu19-1946.pdf
+bpk:
+  id: 25182
+  files:
+  - url: https://peraturan.bpk.go.id/Download/13977/UU%20Nomor%2019%20Tahun%201946.pdf
+    bpk_file_id: 13977
+    filename: UU Nomor 19 Tahun 1946.pdf
+    sha256: d3ed0e11ef1e097de15667200be3ecf618e40a177c09ccb15c289bf25cda777b
+    bytes: 49755
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

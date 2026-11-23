@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 15 Tahun 1947 tentang Memperpanjang Waktu Berlakunya 
 tentang: MEMPERPANJANG WAKTU BERLAKUNYA PERATURAN DEWAN PERTAHANAN NEGARA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1947-05-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-1947
-source_pdf_url: https://peraturan.go.id/files/uu15-1947.pdf
+source_url: https://peraturan.bpk.go.id/Details/25259/uu-no-15-tahun-1947
+source_pdf_url: https://peraturan.bpk.go.id/Download/14057/UU%20Nomor%2015%20Tahun%201947.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_15_1947_1947-05-29
+  kind: asli
+  source: official
+  date: '1947-05-29'
+  date_basis: tanggal_penetapan
+  text: uu_15_1947_1947-05-29.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a2dcf32454c72d30f3305711e438a5d4cf445b04579b722ed05cd783567920ca
 pdf_sha256: 1a740061f5aae48d2c2f85f6c95f7344c76b5a0b4bbf60289785e2e4b92b8699
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1947-05-29'
+tanggal_berlaku: '1947-04-11'
+lembaran_negara: 'LL SETNEG : 1 HLM.'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA - PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-1947
+  source_pdf_url: https://peraturan.go.id/files/uu15-1947.pdf
+bpk:
+  id: 25259
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14057/UU%20Nomor%2015%20Tahun%201947.pdf
+    bpk_file_id: 14057
+    filename: UU Nomor 15 Tahun 1947.pdf
+    sha256: a2dcf32454c72d30f3305711e438a5d4cf445b04579b722ed05cd783567920ca
+    bytes: 42381
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

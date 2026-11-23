@@ -11,8 +11,8 @@ tanggal_penetapan: '1946-11-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-22-tahun-1946
-source_pdf_url: https://peraturan.go.id/files/uu22-1946.pdf
+source_url: https://peraturan.bpk.go.id/Details/25193/uu-no-22-tahun-1946
+source_pdf_url: https://peraturan.bpk.go.id/Download/13988/UU%20Nomor%2022%20Tahun%201946.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_22_1946_1946-11-21
+  kind: asli
+  source: official
+  date: '1946-11-21'
+  date_basis: tanggal_penetapan
+  text: uu_22_1946_1946-11-21.txt
+  pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c08151e98013be39083b7a6ebf9ee570ae80c65c82ecaaa8e375baa3e857c620
 pdf_sha256: 70d02d19a8fbfc7a5fafcca0d5acb3920c8a5d4754558eb9df86d4d703ac2270
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1946-11-26'
+subjek: KEPENDUDUKAN DAN PERKAWINAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-22-tahun-1946
+  source_pdf_url: https://peraturan.go.id/files/uu22-1946.pdf
+bpk:
+  id: 25193
+  files:
+  - url: https://peraturan.bpk.go.id/Download/13988/UU%20Nomor%2022%20Tahun%201946.pdf
+    bpk_file_id: 13988
+    filename: UU Nomor 22 Tahun 1946.pdf
+    sha256: c08151e98013be39083b7a6ebf9ee570ae80c65c82ecaaa8e375baa3e857c620
+    bytes: 60612
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_32_1954
+      citation: UU No. 32 Tahun 1954
+      tentang: Penetapan Berlakunya Undang-Undang Republik Indonesia Tanggal 21 Nopember
+        1946 No.22 Tahun 1946 tentang Pencatatan Nikah, Talak dan Rujuk di Seluruh
+        Daerah Luar Jawa dan Madura
+      url: https://peraturan.bpk.go.id/Details/50502/uu-no-32-tahun-1954
+      note: null
+uji_materi: null

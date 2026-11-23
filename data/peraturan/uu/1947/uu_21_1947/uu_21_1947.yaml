@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 21 Tahun 1947 tentang Pemeriksaan Perkara Pidana Dilu
 tentang: PEMERIKSAAN PERKARA PIDANA DILUAR HADIR TERDAKWA PADA PENGADILAN NEGERI
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1947-06-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-1947
-source_pdf_url: https://peraturan.go.id/files/uu21-1947.pdf
+source_url: https://peraturan.bpk.go.id/Details/25276/uu-no-21-tahun-1947
+source_pdf_url: https://peraturan.bpk.go.id/Download/14074/UU%20Nomor%2021%20Tahun%201947.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_21_1947_1947-06-24
+  kind: asli
+  source: official
+  date: '1947-06-24'
+  date_basis: tanggal_penetapan
+  text: uu_21_1947_1947-06-24.txt
+  pasal_count: 11
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2b5649dcbe8dd9df7fba50a664214a868f4a6ff24fbbf7869323e9e60066fb76
 pdf_sha256: 2b5649dcbe8dd9df7fba50a664214a868f4a6ff24fbbf7869323e9e60066fb76
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1947-06-24'
+subjek: HUKUM PIDANA, PERDATA, DAN DAGANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-1947
+  source_pdf_url: https://peraturan.go.id/files/uu21-1947.pdf
+bpk:
+  id: 25276
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14074/UU%20Nomor%2021%20Tahun%201947.pdf
+    bpk_file_id: 14074
+    filename: UU Nomor 21 Tahun 1947.pdf
+    sha256: 2b5649dcbe8dd9df7fba50a664214a868f4a6ff24fbbf7869323e9e60066fb76
+    bytes: 57584
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

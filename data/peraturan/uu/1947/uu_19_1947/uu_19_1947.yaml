@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 19 Tahun 1947 tentang Pembawaan Uang Dan Larangan Ten
 tentang: PEMBAWAAN UANG DAN LARANGAN TENTANG UANG YANG TIDAK BERLAKU LAGI.
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1947-06-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-1947
-source_pdf_url: null
+source_url: https://peraturan.bpk.go.id/Details/25479/uu-no-19-tahun-1947
+source_pdf_url: https://peraturan.bpk.go.id/Download/54114/UU%20Nomor%2019%20Tahun%201947.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,4 +21,36 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_19_1947_1947-06-12
+  kind: asli
+  source: official
+  date: '1947-06-12'
+  date_basis: tanggal_penetapan
+  text: uu_19_1947_1947-06-12.txt
+  pasal_count: 8
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4f6191a4c7d45b6193fca420af10073fe84188a77ac251bac2a5a83777379423
+tanggal_pengundangan: '1947-06-12'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-1947
+  source_pdf_url: null
+bpk:
+  id: 25479
+  files:
+  - url: https://peraturan.bpk.go.id/Download/54114/UU%20Nomor%2019%20Tahun%201947.pdf
+    bpk_file_id: 54114
+    filename: UU Nomor 19 Tahun 1947.pdf
+    sha256: 4f6191a4c7d45b6193fca420af10073fe84188a77ac251bac2a5a83777379423
+    bytes: 16248
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_10_1946
+      citation: UU No. 10 Tahun 1946
+      tentang: Pembawaan Uang dari Satu ke Lain Daerah
+      url: https://peraturan.bpk.go.id/Details/25133/uu-no-10-tahun-1946
+      note: null
+uji_materi: null

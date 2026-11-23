@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 22 Tahun 1947 tentang Pemindahan Tempat Kedudukan Pen
 tentang: PEMINDAHAN TEMPAT KEDUDUKAN PENGADILAN DAN KEJAKSAAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1947-08-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-22-tahun-1947
-source_pdf_url: https://peraturan.go.id/files/uu22-1947.pdf
+source_url: https://peraturan.bpk.go.id/Details/25279/uu-no-22-tahun-1947
+source_pdf_url: https://peraturan.bpk.go.id/Download/14077/UU%20Nomor%2022%20Tahun%201947.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_22_1947_1947-08-29
+  kind: asli
+  source: official
+  date: '1947-08-29'
+  date_basis: tanggal_penetapan
+  text: uu_22_1947_1947-08-29.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 70fa29567f9608828fde461879654815448ee6fd046ea7a8917cc81046f9ea23
 pdf_sha256: 70fa29567f9608828fde461879654815448ee6fd046ea7a8917cc81046f9ea23
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1947-08-29'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA - HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-22-tahun-1947
+  source_pdf_url: https://peraturan.go.id/files/uu22-1947.pdf
+bpk:
+  id: 25279
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14077/UU%20Nomor%2022%20Tahun%201947.pdf
+    bpk_file_id: 14077
+    filename: UU Nomor 22 Tahun 1947.pdf
+    sha256: 70fa29567f9608828fde461879654815448ee6fd046ea7a8917cc81046f9ea23
+    bytes: 45472
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -11,8 +11,8 @@ tanggal_penetapan: '1946-11-09'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-1946
-source_pdf_url: https://peraturan.go.id/files/uu21-1946.pdf
+source_url: https://peraturan.bpk.go.id/Details/25188/uu-no-21-tahun-1946
+source_pdf_url: https://peraturan.bpk.go.id/Download/13983/UU%20Nomor%2021%20Tahun%201946.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_21_1946_1946-11-09
+  kind: asli
+  source: official
+  date: '1946-11-09'
+  date_basis: tanggal_penetapan
+  text: uu_21_1946_1946-11-09.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 668e379dbe709990144e277fc0922f81fdafa0fc62d6825ec9dc7b2bed5e3b21
 pdf_sha256: 982111e83c15847cb05b9cc25f19ce1d12b199382bc4498de3fbca24c5abcb33
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1946-11-09'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-1946
+  source_pdf_url: https://peraturan.go.id/files/uu21-1946.pdf
+bpk:
+  id: 25188
+  files:
+  - url: https://peraturan.bpk.go.id/Download/13983/UU%20Nomor%2021%20Tahun%201946.pdf
+    bpk_file_id: 13983
+    filename: UU Nomor 21 Tahun 1946.pdf
+    sha256: 668e379dbe709990144e277fc0922f81fdafa0fc62d6825ec9dc7b2bed5e3b21
+    bytes: 56144
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
