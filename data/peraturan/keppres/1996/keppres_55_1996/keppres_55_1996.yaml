@@ -1,0 +1,30 @@
+id: keppres_55_1996
+akn: /akn/id/act/keppres/1996/55
+type: keppres
+number: '55'
+year: 1996
+title: Keputusan Presiden Nomor 55 Tahun 1996 tentang Tim Privatisasi Badan Usaha
+  Milik Negara
+tentang: TIM PRIVATISASI BADAN USAHA MILIK NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1996-07-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3cdcf10983290900f76b7170f12bf5e96ab46f872fbc53f882aa1e2a84322a2d
+  source_title: Keputusan_Presiden_no_55_TH_1996
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: revoked
+  revoked_by:
+  - sha256:899c9b71bc3ca14faf0fd376e0a12a6662b9015acc584f16a53386908cbc10e8
+parse_error: 'v13: rebuilt text has 4 pasal, the dataset lists 5'

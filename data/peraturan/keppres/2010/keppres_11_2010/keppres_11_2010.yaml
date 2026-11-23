@@ -1,0 +1,27 @@
+id: keppres_11_2010
+akn: /akn/id/act/keppres/2010/11
+type: keppres
+number: '11'
+year: 2010
+title: Keputusan Presiden Nomor 11 Tahun 2010
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '2010-06-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:45991010a24b0f519f60c89666214316177ed5ad922fca83ac5d6e1c030a1cd5
+  source_title: Keppres_11_Tahun_2010
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 4
+  status: none_known
+parse_error: 'v13: no pasal found in the rebuilt text'

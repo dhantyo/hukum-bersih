@@ -1,0 +1,41 @@
+id: keppres_106_1999
+akn: /akn/id/act/keppres/1999/106
+type: keppres
+number: '106'
+year: 1999
+title: Keputusan Presiden Nomor 106 Tahun 1999 tentang Badan Koordinasi Nasional Penanggulangan
+  Bencana
+tentang: BADAN KOORDINASI NASIONAL PENANGGULANGAN BENCANA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1999-09-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_106_1999_1999-09-02
+  kind: asli
+  source: dataset
+  date: '1999-09-02'
+  date_basis: tanggal_penetapan
+  text: keppres_106_1999_1999-09-02.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:74f3e0fb4a97a65f189c189d2a477680e14c42aeaadb1b9c7b4e08ad8bfff4b6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:74f3e0fb4a97a65f189c189d2a477680e14c42aeaadb1b9c7b4e08ad8bfff4b6
+  source_title: Keppres_No_106_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: revoked
+  revoked_by:
+  - sha256:f5d4e2f5bc7ee8aeb44c54452e8949c243cd192282533a7ce9d56822ebe0cf9c

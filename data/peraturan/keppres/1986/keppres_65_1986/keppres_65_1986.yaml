@@ -1,0 +1,32 @@
+id: keppres_65_1986
+akn: /akn/id/act/keppres/1986/65
+type: keppres
+number: '65'
+year: 1986
+title: Keputusan Presiden Nomor 65 Tahun 1986 tentang Pajak Pertambahan Nilai Yang
+  Terhutang Atas Impor Dan Penyerahan Kertas Koran Untuk Penerbitan Koran Serta Penyerahan
+  Koran
+tentang: PAJAK PERTAMBAHAN NILAI YANG TERHUTANG ATAS IMPOR DAN PENYERAHAN KERTAS KORAN
+  UNTUK PENERBITAN KORAN SERTA PENYERAHAN KORAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1986-12-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:54b97eea694f7b1004335b6f5ed0bfe35d03741419aa25a8a2ff9d5c1af0a043
+  source_title: KEPPRES_NO_65_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: revoked
+  revoked_by:
+  - sha256:4ea293ebe6de5eb83f10dd70871e108d1198840669327e08163105b05451efc7
+parse_error: 'v13: rebuilt text has 1 pasal, the dataset lists 4'

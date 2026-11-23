@@ -1,0 +1,38 @@
+id: keppres_55_1998
+akn: /akn/id/act/keppres/1998/55
+type: keppres
+number: '55'
+year: 1998
+title: Keputusan Presiden Nomor 55 Tahun 1998 tentang Surat Utang
+tentang: SURAT UTANG
+short_name: null
+status: null
+tanggal_penetapan: '1998-04-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_55_1998_1998-04-06
+  kind: asli
+  source: dataset
+  date: '1998-04-06'
+  date_basis: tanggal_penetapan
+  text: keppres_55_1998_1998-04-06.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9a09890c1f908746e165bd20f3749ce9cb9c8eac1925c23ef4760ed94435105f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9a09890c1f908746e165bd20f3749ce9cb9c8eac1925c23ef4760ed94435105f
+  source_title: Keputusan_Presiden_no_55_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

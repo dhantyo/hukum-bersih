@@ -1,0 +1,41 @@
+id: keppres_36_1991
+akn: /akn/id/act/keppres/1991/36
+type: keppres
+number: '36'
+year: 1991
+title: Keputusan Presiden Nomor 36 Tahun 1991 tentang Tunjangan Jabatan Bagi Hakim
+  Dan Panitera Pada Pengadilan Agama
+tentang: TUNJANGAN JABATAN BAGI HAKIM DAN PANITERA PADA PENGADILAN AGAMA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1991-07-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_36_1991_1991-07-29
+  kind: asli
+  source: dataset
+  date: '1991-07-29'
+  date_basis: tanggal_penetapan
+  text: keppres_36_1991_1991-07-29.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:da2c27a6e2f4d24d64a927e9bf4164ee8e96584c39f57a804dbe0b41d895130d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:da2c27a6e2f4d24d64a927e9bf4164ee8e96584c39f57a804dbe0b41d895130d
+  source_title: KEPPRES_NO_36_TH_1991
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:438cb426693f568cbc8818b11d9533380b0a1fa963101b97af61e6d903878950

@@ -1,0 +1,40 @@
+id: keppres_7_2014
+akn: /akn/id/act/keppres/2014/7
+type: keppres
+number: '7'
+year: 2014
+title: Keputusan Presiden Nomor 7 Tahun 2014 tentang Panitianasionalpenyelenggaraekspedisi
+  Negarakesatuan Republik Indonesia Koridor Malukudan Malukuutaratahun2014 Denganrahmal'Tuhanyangmahaesa
+tentang: PANITIANASIONALPENYELENGGARAEKSPEDISI NEGARAKESATUAN REPUBLIK INDONESIA KORIDOR
+  MALUKUDAN MALUKUUTARATAHUN2014 DENGANRAHMAl'TUHANYANGMAHAESA
+short_name: null
+status: null
+tanggal_penetapan: '2014-02-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_7_2014_2014-02-10
+  kind: asli
+  source: dataset
+  date: '2014-02-10'
+  date_basis: tanggal_penetapan
+  text: keppres_7_2014_2014-02-10.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5b3a4342f1c3c79151d0c3b0b54e5ce08fe710aca62e8d2c4c8f985763107588
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5b3a4342f1c3c79151d0c3b0b54e5ce08fe710aca62e8d2c4c8f985763107588
+  source_title: Keppres_Nomor_7_Tahun_2014
+  regulation_type: KEPUTUSANPRESIDEN
+  quality: clean
+  chunks: 15
+  status: none_known

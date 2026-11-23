@@ -1,0 +1,40 @@
+id: keppres_97_2003
+akn: /akn/id/act/keppres/2003/97
+type: keppres
+number: '97'
+year: 2003
+title: Keputusan Presiden Nomor 97 Tahun 2003 tentang Pernyataan Perpanjangan Keadaan
+  Bahaya Dengan Tingkatan Keadaan Darurat Militer Di Provinsi Nanggroe Aceh Darussalam
+tentang: PERNYATAAN PERPANJANGAN KEADAAN BAHAYA DENGAN TINGKATAN KEADAAN DARURAT MILITER
+  DI PROVINSI NANGGROE ACEH DARUSSALAM
+short_name: null
+status: null
+tanggal_penetapan: '2003-11-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_97_2003_2003-11-18
+  kind: asli
+  source: dataset
+  date: '2003-11-18'
+  date_basis: tanggal_penetapan
+  text: keppres_97_2003_2003-11-18.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2a4382ddc587827eefe304159a30538b2e5ee736ad88f8bb69bd0cc34397c622
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2a4382ddc587827eefe304159a30538b2e5ee736ad88f8bb69bd0cc34397c622
+  source_title: KEPPRES_No.97_TH_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

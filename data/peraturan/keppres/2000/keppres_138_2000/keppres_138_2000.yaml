@@ -1,0 +1,40 @@
+id: keppres_138_2000
+akn: /akn/id/act/keppres/2000/138
+type: keppres
+number: '138'
+year: 2000
+title: Keputusan Presiden Nomor 138 Tahun 2000 tentang Tunjangan Panitera
+tentang: TUNJANGAN PANITERA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-09-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_138_2000_2000-09-28
+  kind: asli
+  source: dataset
+  date: '2000-09-28'
+  date_basis: tanggal_penetapan
+  text: keppres_138_2000_2000-09-28.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:96c7819242dae4c70bb810833c8bf260182f22fda6bc71a5041a9840f4f3aa4e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:96c7819242dae4c70bb810833c8bf260182f22fda6bc71a5041a9840f4f3aa4e
+  source_title: Keputusan_Presiden_no_138_TH_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:43a227889d24d8069d290971af35a756bacbe64c78bdaeb760314f553bc1d9fc

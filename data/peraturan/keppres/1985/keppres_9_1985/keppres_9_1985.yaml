@@ -1,0 +1,54 @@
+id: keppres_9_1985
+akn: /akn/id/act/keppres/1985/9
+type: keppres
+number: '9'
+year: 1985
+title: Keputusan Presiden Nomor 9 Tahun 1985 tentang Jenjang Pangkat Dan Tunjangan
+  Jabatan Struktural
+tentang: JENJANG PANGKAT DAN TUNJANGAN JABATAN STRUKTURAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '1985-02-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_9_1985_1985-02-05
+  kind: asli
+  source: dataset
+  date: '1985-02-05'
+  date_basis: tanggal_penetapan
+  text: keppres_9_1985_1985-02-05.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0c3fe27872a643fcfe131c827603c6356169200c7cc3a8448cc5ef8c9467e174
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0c3fe27872a643fcfe131c827603c6356169200c7cc3a8448cc5ef8c9467e174
+  source_title: KEPPRES_NO_9_TH_1985
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: revoked
+  revoked_by:
+  - sha256:5db7ad6ed5b445339e3418fcd94d70a790d0ae362c94fe465b2eaab1dbe02885
+  amended_by:
+  - sha256:03c53ef5d7054f09e8a9297d5e04aab2712099995c5f58c1b5ac3a9bbfdc0a2c
+  - sha256:05298c9cfb169cdebc4e330e3b143a56beea31c9b30a0977468d607c63dd09da
+  - sha256:3b3870e50a2e62bf7ecd46e6b0348b0fb011917c3bf2af253b54ed7c4450aacf
+  - sha256:459e444feff675ed16a0ace07b3473d2909218f233e3238c12867cae80475dd9
+  - sha256:4f4820e68b78c0c74d151eb4eb3edd319926dbb5e6ad3295600ebcdac4cf1856
+  - sha256:6f3dc484dd620e604cf0f2263702db78dbe3658361148417d8861bf693287a42
+  - sha256:716d4fd6029f85d08e74a529076f00b4c852bd909f6346146d82cd6706310e4f
+  - sha256:721b5d4460c7e262cfd55924a16105394a32a345ec8305a843ecd4a31da93456
+  - sha256:aa0ee4db7d02d58ed0f2e402b4c937f9a55c58a9bf7301b0b143f31c2a5ed337
+  - sha256:b88402ff09c52328165fe2214ad3c4b65dab629c6f084a315070742b22262778
+  - sha256:c2c1c29e0117e2167f88441e3a2b7ac2a459a4cc3784c0475f0f4188fe77a2a2
+  - sha256:d1da89ab0a2119b05eeeb8e9ce57ed7f736e73541619b7fe2c82d0d81d202fc0

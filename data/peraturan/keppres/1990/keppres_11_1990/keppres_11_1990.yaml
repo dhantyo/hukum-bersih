@@ -1,0 +1,29 @@
+id: keppres_11_1990
+akn: /akn/id/act/keppres/1990/11
+type: keppres
+number: '11'
+year: 1990
+title: Keputusan Presiden Nomor 11 Tahun 1990 tentang Pokok-Pokok Organisasi Pertamina
+tentang: POKOK-POKOK ORGANISASI PERTAMINA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1990-03-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:44eef1d0c6ae81b82eb07e92da28fb47192471eee22794ee9701e82b5f499ac6
+  source_title: KEPPRES_NO_11_TH_1990
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 41
+  status: revoked
+  revoked_by:
+  - sha256:5b559b1349e85a8b9a17b367e527cdc1a8dc892269b6d2636d008a6f7dc30a8c
+parse_error: 'v13: rebuilt text has 16 pasal, the dataset lists 31'

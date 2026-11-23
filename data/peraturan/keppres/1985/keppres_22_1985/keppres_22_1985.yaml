@@ -1,0 +1,43 @@
+id: keppres_22_1985
+akn: /akn/id/act/keppres/1985/22
+type: keppres
+number: '22'
+year: 1985
+title: Keputusan Presiden Nomor 22 Tahun 1985 tentang Tunjangan Jabatan Peneliti
+tentang: TUNJANGAN JABATAN PENELITI
+short_name: null
+status: dicabut
+tanggal_penetapan: '1985-04-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_22_1985_1985-04-01
+  kind: asli
+  source: dataset
+  date: '1985-04-01'
+  date_basis: tanggal_penetapan
+  text: keppres_22_1985_1985-04-01.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:077b77def26c8d5372d02e75066c44b2ca8870ba1bfb1d4bd4a990cd3a5f5773
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:077b77def26c8d5372d02e75066c44b2ca8870ba1bfb1d4bd4a990cd3a5f5773
+  source_title: KEPPRES_NO_22_TH_1985
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: revoked
+  revoked_by:
+  - sha256:5a5ed101e8fadc29575fa643adde1cbbeae50576aba9c99eca326bbcd6e43331
+  amended_by:
+  - sha256:280f086b9412a1e3169ff64ceafbff9e17f02a45db73b2ae105c55b9b4205a80
+  - sha256:97ecdde4388e1e41ecc80534c29254c55a0b3d38de1e658b6333fc2ded5a9622

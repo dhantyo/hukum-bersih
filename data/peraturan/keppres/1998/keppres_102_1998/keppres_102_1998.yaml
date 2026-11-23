@@ -1,0 +1,41 @@
+id: keppres_102_1998
+akn: /akn/id/act/keppres/1998/102
+type: keppres
+number: '102'
+year: 1998
+title: Keputusan Presiden Nomor 102 Tahun 1998 tentang Perubahan Atas Keputusan Presiden
+  Nomor 61 Tahun 1998 Tentang Kedudukan, Tugas, Susunan Organisasi Dan Tata Kerja
+  Departemen
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 61 TAHUN 1998 TENTANG KEDUDUKAN,
+  TUGAS, SUSUNAN ORGANISASI DAN TATA KERJA DEPARTEMEN
+short_name: null
+status: null
+tanggal_penetapan: '1998-07-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_102_1998_1998-07-20
+  kind: asli
+  source: dataset
+  date: '1998-07-20'
+  date_basis: tanggal_penetapan
+  text: keppres_102_1998_1998-07-20.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c240e3c71eef5170da907caa2892519737413f5d6e970898030d1c5979688c8c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c240e3c71eef5170da907caa2892519737413f5d6e970898030d1c5979688c8c
+  source_title: Keputusan_Presiden_no_102_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

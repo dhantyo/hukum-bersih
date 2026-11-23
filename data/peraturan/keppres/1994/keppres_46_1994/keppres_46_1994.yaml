@@ -1,0 +1,40 @@
+id: keppres_46_1994
+akn: /akn/id/act/keppres/1994/46
+type: keppres
+number: '46'
+year: 1994
+title: Keputusan Presiden Nomor 46 Tahun 1994 tentang Perubahan Atas Keputusan Presiden
+  Nomor 14 Tahun 1993 Tentang Tabungan Perumahan Pegawai Negeri Sipil
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 14 TAHUN 1993 TENTANG TABUNGAN PERUMAHAN
+  PEGAWAI NEGERI SIPIL
+short_name: null
+status: null
+tanggal_penetapan: '1994-07-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_46_1994_1994-07-04
+  kind: asli
+  source: dataset
+  date: '1994-07-04'
+  date_basis: tanggal_penetapan
+  text: keppres_46_1994_1994-07-04.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c46223a837170f8bbf862149c6bb81361f99afcebb431a1a4cfe2f6dbce21ab6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c46223a837170f8bbf862149c6bb81361f99afcebb431a1a4cfe2f6dbce21ab6
+  source_title: Keputusan_Presiden_no_46_TH_1994
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

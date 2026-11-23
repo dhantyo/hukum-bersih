@@ -1,0 +1,41 @@
+id: keppres_52_1997
+akn: /akn/id/act/keppres/1997/52
+type: keppres
+number: '52'
+year: 1997
+title: Keputusan Presiden Nomor 52 Tahun 1997 tentang Sekretariat Badan Penyelesaian
+  Sengketa Pajak
+tentang: SEKRETARIAT BADAN PENYELESAIAN SENGKETA PAJAK
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_52_1997_1998-01-01
+  kind: asli
+  source: dataset
+  date: '1998-01-01'
+  date_basis: tanggal_penetapan
+  text: keppres_52_1997_1998-01-01.txt
+  pasal_count: 17
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:993ab839af5b1858b655ef2a0da45ae5fe73730df99cd05603487a55407b9f9e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:993ab839af5b1858b655ef2a0da45ae5fe73730df99cd05603487a55407b9f9e
+  source_title: Keputusan_Presiden_no_52_TH_1997
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 26
+  status: revoked
+  revoked_by:
+  - sha256:120311f08dccf3fefce0aa4a190fcd78c0766aba4ba71ef4f8ae1305655f9164

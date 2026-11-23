@@ -1,0 +1,41 @@
+id: keppres_45_2001
+akn: /akn/id/act/keppres/2001/45
+type: keppres
+number: '45'
+year: 2001
+title: Keputusan Presiden Nomor 45 Tahun 2001 tentang Harga Jual Eceran Bahan Bakar
+  Minyak Dalam Negeri
+tentang: HARGA JUAL ECERAN BAHAN BAKAR MINYAK DALAM NEGERI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-04-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_45_2001_2001-04-01
+  kind: asli
+  source: dataset
+  date: '2001-04-01'
+  date_basis: tanggal_penetapan
+  text: keppres_45_2001_2001-04-01.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:37351940b8f2752d0b474b5880dfed17445df3ca6a109c63cd865a6c2c5713ff
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:37351940b8f2752d0b474b5880dfed17445df3ca6a109c63cd865a6c2c5713ff
+  source_title: Keputusan_Presiden_no_45_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 18
+  status: revoked
+  revoked_by:
+  - sha256:49b581eaa06fe2ddd23c8630f10be12e49fe368122cc8eb6d73329d4318f9ec4

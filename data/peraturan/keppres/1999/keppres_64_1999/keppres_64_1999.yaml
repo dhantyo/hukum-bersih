@@ -1,0 +1,40 @@
+id: keppres_64_1999
+akn: /akn/id/act/keppres/1999/64
+type: keppres
+number: '64'
+year: 1999
+title: Keputusan Presiden Nomor 64 Tahun 1999 tentang Keanggotaan Indonesia Dan Kontribusi
+  Pemerintah Republik Indonesia Pada Organisasi-Organisasi Internasional
+tentang: KEANGGOTAAN INDONESIA DAN KONTRIBUSI PEMERINTAH REPUBLIK INDONESIA PADA ORGANISASI-ORGANISASI
+  INTERNASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '1999-06-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_64_1999_1999-06-24
+  kind: asli
+  source: dataset
+  date: '1999-06-24'
+  date_basis: tanggal_penetapan
+  text: keppres_64_1999_1999-06-24.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3bef6a015f0edbc7b8981782b6844305b948a1f2f7c13a1c39352288a743f52e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3bef6a015f0edbc7b8981782b6844305b948a1f2f7c13a1c39352288a743f52e
+  source_title: Keppres_No_64_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: none_known

@@ -1,0 +1,39 @@
+id: keppres_63_1995
+akn: /akn/id/act/keppres/1995/63
+type: keppres
+number: '63'
+year: 1995
+title: Keputusan Presiden Nomor 63 Tahun 1995 tentang Besarnya Ongkos Naik Haji Tahun
+  1996
+tentang: BESARNYA ONGKOS NAIK HAJI TAHUN 1996
+short_name: null
+status: null
+tanggal_penetapan: '1995-08-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_63_1995_1995-08-31
+  kind: asli
+  source: dataset
+  date: '1995-08-31'
+  date_basis: tanggal_penetapan
+  text: keppres_63_1995_1995-08-31.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:56a7527450182c6f54d570adca2b9db0670304d6f6482956fe6de124ef17cd83
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:56a7527450182c6f54d570adca2b9db0670304d6f6482956fe6de124ef17cd83
+  source_title: Keputusan_Presiden_no_63_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

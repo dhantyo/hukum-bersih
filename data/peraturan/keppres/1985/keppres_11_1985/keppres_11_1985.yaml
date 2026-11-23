@@ -1,0 +1,44 @@
+id: keppres_11_1985
+akn: /akn/id/act/keppres/1985/11
+type: keppres
+number: '11'
+year: 1985
+title: Keputusan Presiden Nomor 11 Tahun 1985 tentang Perubahan Besarnya Biaya Pengobatan/Perawatan
+  Bagi Jaminan Kecelakaan Kerja Asuransi Sosial Tenaga Kerja
+tentang: PERUBAHAN BESARNYA BIAYA PENGOBATAN/PERAWATAN BAGI JAMINAN KECELAKAAN KERJA
+  ASURANSI SOSIAL TENAGA KERJA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1985-02-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_11_1985_1985-02-27
+  kind: asli
+  source: dataset
+  date: '1985-02-27'
+  date_basis: tanggal_penetapan
+  text: keppres_11_1985_1985-02-27.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f648aee2698e57e2bb9b96eef1f9624d8ff45c7e40797ed050ee02878596adc0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f648aee2698e57e2bb9b96eef1f9624d8ff45c7e40797ed050ee02878596adc0
+  source_title: KEPPRES_NO_11_TH_1985
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: revoked
+  revoked_by:
+  - sha256:bb62d3c8efc69eabee03ffec21c46aa04008462ba28345ffd32afcf2b5295673
+  amended_by:
+  - sha256:2fca43f2c0311c745a59521c457e36592975bfaa7d2d8cb11b1f53d54efe8809

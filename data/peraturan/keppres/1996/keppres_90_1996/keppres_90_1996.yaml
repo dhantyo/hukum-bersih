@@ -1,0 +1,41 @@
+id: keppres_90_1996
+akn: /akn/id/act/keppres/1996/90
+type: keppres
+number: '90'
+year: 1996
+title: Keputusan Presiden Nomor 90 Tahun 1996 tentang Penetapan Kawasan Pengembangan
+  Ekonomi Terpadu Biak
+tentang: PENETAPAN KAWASAN PENGEMBANGAN EKONOMI TERPADU BIAK
+short_name: null
+status: diubah
+tanggal_penetapan: '1996-12-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_90_1996_1996-12-03
+  kind: asli
+  source: dataset
+  date: '1996-12-03'
+  date_basis: tanggal_penetapan
+  text: keppres_90_1996_1996-12-03.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a0feb3bbd603168ed5b6aa06b8b8afd7e30ba14afa7fb9b0bce8442a4235d5dc
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a0feb3bbd603168ed5b6aa06b8b8afd7e30ba14afa7fb9b0bce8442a4235d5dc
+  source_title: Keputusan_Presiden_no_90_TH_1996
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: amended
+  amended_by:
+  - sha256:a3bd78425e063f878abaf4ba176e0794f10c8411167110db8eaf390f5a1bf7ed

@@ -1,0 +1,39 @@
+id: keppres_21_1995
+akn: /akn/id/act/keppres/1995/21
+type: keppres
+number: '21'
+year: 1995
+title: Keputusan Presiden Nomor 21 Tahun 1995 tentang Penjualan, Pemilikan Dan Penggunaan
+  Gergaji Rantai
+tentang: PENJUALAN, PEMILIKAN DAN PENGGUNAAN GERGAJI RANTAI
+short_name: null
+status: null
+tanggal_penetapan: '1995-04-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_21_1995_1995-04-24
+  kind: asli
+  source: dataset
+  date: '1995-04-24'
+  date_basis: tanggal_penetapan
+  text: keppres_21_1995_1995-04-24.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0aa93d037987f11839b9740f858109dac74c4827d091e91268f489091fccad6b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0aa93d037987f11839b9740f858109dac74c4827d091e91268f489091fccad6b
+  source_title: Keputusan_Presiden_no_21_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: none_known

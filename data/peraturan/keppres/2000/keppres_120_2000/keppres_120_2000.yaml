@@ -1,0 +1,46 @@
+id: keppres_120_2000
+akn: /akn/id/act/keppres/2000/120
+type: keppres
+number: '120'
+year: 2000
+title: Keputusan Presiden Nomor 120 Tahun 2000 tentang Penyesuaian Gaji Pokok Hakim
+  Menurut Peraturan Pemerintah Nomor 33 Tahun 1994 Tentang Peraturan Gaji Hakim Ke
+  Dalam Gaji Pokok Hakim Menurut Peraturan Pemerintah Nomor 8 Tahun 2000 Tentang Peraturan
+  Gaji Hakim Peradilan Umum, Peradilan Tata Usaha Negara Dan Peradilan Agama
+tentang: PENYESUAIAN GAJI POKOK HAKIM MENURUT PERATURAN PEMERINTAH NOMOR 33 TAHUN
+  1994 TENTANG PERATURAN GAJI HAKIM KE DALAM GAJI POKOK HAKIM MENURUT PERATURAN PEMERINTAH
+  NOMOR 8 TAHUN 2000 TENTANG PERATURAN GAJI HAKIM PERADILAN UMUM, PERADILAN TATA USAHA
+  NEGARA DAN PERADILAN AGAMA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-08-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_120_2000_2000-08-21
+  kind: asli
+  source: dataset
+  date: '2000-08-21'
+  date_basis: tanggal_penetapan
+  text: keppres_120_2000_2000-08-21.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9a51af417c0a90a5866ef697f3959191aae32ce2f87c2478e45dc0d48bacc203
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9a51af417c0a90a5866ef697f3959191aae32ce2f87c2478e45dc0d48bacc203
+  source_title: Keputusan_Presiden_no_120_TH_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:560cdc49f16b403b68c53348bda68a167485a37b3e039f91ce8a8d60b120bdd6

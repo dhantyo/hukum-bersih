@@ -1,0 +1,41 @@
+id: keppres_28_1985
+akn: /akn/id/act/keppres/1985/28
+type: keppres
+number: '28'
+year: 1985
+title: Keputusan Presiden Nomor 28 Tahun 1985 tentang Tunjangan Pengamanan Dan Penyelamatan
+  Pelayaran Bagi Pegawai Negeri Sipil Yang Ditugaskan Pada Instalasi Keamanan Dan
+  Keselamatan Pelayaran
+tentang: TUNJANGAN PENGAMANAN DAN PENYELAMATAN PELAYARAN BAGI PEGAWAI NEGERI SIPIL
+  YANG DITUGASKAN PADA INSTALASI KEAMANAN DAN KESELAMATAN PELAYARAN
+short_name: null
+status: null
+tanggal_penetapan: '1985-04-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_28_1985_1985-04-01
+  kind: asli
+  source: dataset
+  date: '1985-04-01'
+  date_basis: tanggal_penetapan
+  text: keppres_28_1985_1985-04-01.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e29279fc1fc6c5c2f15bdc66cc80657235e8301324fe0858db22c9437817b3fe
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e29279fc1fc6c5c2f15bdc66cc80657235e8301324fe0858db22c9437817b3fe
+  source_title: KEPPRES_NO_28_TH_1985
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

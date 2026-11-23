@@ -1,0 +1,40 @@
+id: keppres_154_2000
+akn: /akn/id/act/keppres/2000/154
+type: keppres
+number: '154'
+year: 2000
+title: Keputusan Presiden Nomor 154 Tahun 2000 tentang Pengesahan Protocol On The
+  Special Arrangement For Sensitive And Highly Sensitive Products
+tentang: PENGESAHAN PROTOCOL ON THE SPECIAL ARRANGEMENT FOR SENSITIVE AND HIGHLY SENSITIVE
+  PRODUCTS
+short_name: null
+status: null
+tanggal_penetapan: '2000-11-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_154_2000_2000-11-08
+  kind: asli
+  source: dataset
+  date: '2000-11-08'
+  date_basis: tanggal_penetapan
+  text: keppres_154_2000_2000-11-08.txt
+  pasal_count: 1
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5d3098c4257aaa6b9c79ad3bb9091347a387eb782fdfea79704d9a7b43a43fe2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5d3098c4257aaa6b9c79ad3bb9091347a387eb782fdfea79704d9a7b43a43fe2
+  source_title: Keputusan_Presiden_no_154_TH_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 5
+  status: none_known

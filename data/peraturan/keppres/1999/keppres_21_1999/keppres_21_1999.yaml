@@ -1,0 +1,42 @@
+id: keppres_21_1999
+akn: /akn/id/act/keppres/1999/21
+type: keppres
+number: '21'
+year: 1999
+title: Keputusan Presiden Nomor 21 Tahun 1999 tentang Tim Kerja Terpadu Pengkajian
+  Pelaksanaan Ketetapan Majelis Permusyawaratan Rakyat Republik Indonesia Nomor X/Mpr/1998
+  Berkaitan Dengan Pemisahan Yang Tegas Antar Fungsi-Fungsi Yudikatif Dari Eksekutif
+tentang: TIM KERJA TERPADU PENGKAJIAN PELAKSANAAN KETETAPAN MAJELIS PERMUSYAWARATAN
+  RAKYAT REPUBLIK INDONESIA NOMOR X/MPR/1998 BERKAITAN DENGAN PEMISAHAN YANG TEGAS
+  ANTAR FUNGSI-FUNGSI YUDIKATIF DARI EKSEKUTIF
+short_name: null
+status: null
+tanggal_penetapan: '1999-03-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_21_1999_1999-03-17
+  kind: asli
+  source: dataset
+  date: '1999-03-17'
+  date_basis: tanggal_penetapan
+  text: keppres_21_1999_1999-03-17.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f9de4034cf6450f53c11ae0435875dc6528a3ab7bddb3e7ac6e5cabbb44f9a0c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f9de4034cf6450f53c11ae0435875dc6528a3ab7bddb3e7ac6e5cabbb44f9a0c
+  source_title: Keppres_No_21_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 13
+  status: none_known

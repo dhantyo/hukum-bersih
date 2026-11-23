@@ -1,0 +1,41 @@
+id: keppres_28_2001
+akn: /akn/id/act/keppres/2001/28
+type: keppres
+number: '28'
+year: 2001
+title: Keputusan Presiden Nomor 28 Tahun 2001 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Republik Federasi Nigeria Mengenai
+  Kerjasama Ekonomi Dan Teknik
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  REPUBLIK FEDERASI NIGERIA MENGENAI KERJASAMA EKONOMI DAN TEKNIK
+short_name: null
+status: null
+tanggal_penetapan: '2001-02-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_28_2001_2001-02-22
+  kind: asli
+  source: dataset
+  date: '2001-02-22'
+  date_basis: tanggal_penetapan
+  text: keppres_28_2001_2001-02-22.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bac7c9ba81b59d1602c65602590ce9b8773965f7d65dc71311296d265f12618e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bac7c9ba81b59d1602c65602590ce9b8773965f7d65dc71311296d265f12618e
+  source_title: Keputusan_Presiden_no_28_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

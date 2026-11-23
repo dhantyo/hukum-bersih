@@ -1,0 +1,30 @@
+id: keppres_17_2007
+akn: /akn/id/act/keppres/2007/17
+type: keppres
+number: '17'
+year: 2007
+title: Keputusan Presiden Nomor 17 Tahun 2007 tentang Tim Penertiban Barang Milik
+  Negara
+tentang: TIM PENERTIBAN BARANG MILIK NEGARA
+short_name: null
+status: diubah
+tanggal_penetapan: '2007-08-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:95d71c03f818b7a8160d1c229bf9cdab86f5301beec6c14c9e166c2c5ba31370
+  source_title: Keputusan_Presiden_No_17_th_2007
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 4
+  status: amended
+  amended_by:
+  - sha256:9c9916189f7115a111e0be84d208e7e1372f713a1e72d5d31aced7cc078eaa57
+parse_error: 'v13: no pasal found in the rebuilt text'

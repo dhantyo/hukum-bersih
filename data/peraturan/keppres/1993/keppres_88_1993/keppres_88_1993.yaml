@@ -1,0 +1,40 @@
+id: keppres_88_1993
+akn: /akn/id/act/keppres/1993/88
+type: keppres
+number: '88'
+year: 1993
+title: Keputusan Presiden Nomor 88 Tahun 1993 tentang Pembukaan Kedutaan Besar Republik
+  Indonesia Di Kiev-Republik Ukraina Dan Di Tashkent-Republik Uzbekistan
+tentang: PEMBUKAAN KEDUTAAN BESAR REPUBLIK INDONESIA DI KIEV-REPUBLIK UKRAINA DAN
+  DI TASHKENT-REPUBLIK UZBEKISTAN
+short_name: null
+status: null
+tanggal_penetapan: '1993-09-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_88_1993_1993-09-20
+  kind: asli
+  source: dataset
+  date: '1993-09-20'
+  date_basis: tanggal_penetapan
+  text: keppres_88_1993_1993-09-20.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a5d8fa85fe9c67095ee6d11610a195d3546ba1c9c85b9b742a92480497d58bcb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a5d8fa85fe9c67095ee6d11610a195d3546ba1c9c85b9b742a92480497d58bcb
+  source_title: Keputusan_Presiden_no_88_TH_1993
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 10
+  status: none_known

@@ -1,0 +1,45 @@
+id: keppres_24_1998
+akn: /akn/id/act/keppres/1998/24
+type: keppres
+number: '24'
+year: 1998
+title: Keputusan Presiden Nomor 24 Tahun 1998 tentang Penerbitan Jaminan Bank Indonesia,
+  Serta Penerbitan Jaminan Bank Untuk Penerimaan Pinjaman Luar Negeri Oleh Bank Persero
+  Dan Bank Pembangunan Daerah Yang Telah Diizinkan Melakukan Kegiatan Dalam Valuta
+  Asing
+tentang: PENERBITAN JAMINAN BANK INDONESIA, SERTA PENERBITAN JAMINAN BANK UNTUK PENERIMAAN
+  PINJAMAN LUAR NEGERI OLEH BANK PERSERO DAN BANK PEMBANGUNAN DAERAH YANG TELAH DIIZINKAN
+  MELAKUKAN KEGIATAN DALAM VALUTA ASING
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-01-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_24_1998_1998-01-23
+  kind: asli
+  source: dataset
+  date: '1998-01-23'
+  date_basis: tanggal_penetapan
+  text: keppres_24_1998_1998-01-23.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:81aaf708ccd0ddd876eeb12c3b5bd97be789f71c9277cf146957c8438d7aa21f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:81aaf708ccd0ddd876eeb12c3b5bd97be789f71c9277cf146957c8438d7aa21f
+  source_title: Keputusan_Presiden_no_24_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:a2eacf21ce0b396d70a169be7f3ab9cbb8a44c445c41db719905a64df2d9110b

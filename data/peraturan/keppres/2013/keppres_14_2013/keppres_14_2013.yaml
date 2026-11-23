@@ -1,0 +1,27 @@
+id: keppres_14_2013
+akn: /akn/id/act/keppres/2013/14
+type: keppres
+number: '14'
+year: 2013
+title: Keputusan Presiden Nomor 14 Tahun 2013
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bb3465b02c19a9d6805cd9ecfab13a56b2bb3236754fbc1ac66e13736a64da96
+  source_title: Keppres_14_2013
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known
+parse_error: 'v13: no pasal found in the rebuilt text'

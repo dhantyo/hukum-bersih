@@ -1,0 +1,41 @@
+id: keppres_1_2002
+akn: /akn/id/act/keppres/2002/1
+type: keppres
+number: '1'
+year: 2002
+title: Keputusan Presiden Nomor 1 Tahun 2002 tentang Perubahan Atas Keputusan Presiden
+  Nomor 100 Tahun 2001 Tentang Kedudukan, Tugas, Fungsi, Kewenangan, Susunan Organisasi
+  Dan Tata Kerja Menteri Negara Koordinator
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 100 TAHUN 2001 TENTANG KEDUDUKAN,
+  TUGAS, FUNGSI, KEWENANGAN, SUSUNAN ORGANISASI DAN TATA KERJA MENTERI NEGARA KOORDINATOR
+short_name: null
+status: null
+tanggal_penetapan: '2002-01-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_1_2002_2002-01-07
+  kind: asli
+  source: dataset
+  date: '2002-01-07'
+  date_basis: tanggal_penetapan
+  text: keppres_1_2002_2002-01-07.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ed0eb4c2206403610c0c7fb9a57a591ab707f6bbfce32f2a54d3393d0685caa6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ed0eb4c2206403610c0c7fb9a57a591ab707f6bbfce32f2a54d3393d0685caa6
+  source_title: KEPPRES_No.1_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

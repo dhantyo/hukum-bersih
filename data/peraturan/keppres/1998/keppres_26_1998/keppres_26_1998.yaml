@@ -1,0 +1,42 @@
+id: keppres_26_1998
+akn: /akn/id/act/keppres/1998/26
+type: keppres
+number: '26'
+year: 1998
+title: Keputusan Presiden Nomor 26 Tahun 1998 tentang Jaminan Terhadap Kewajiban Pembayaran
+  Bank Umum
+tentang: JAMINAN TERHADAP KEWAJIBAN PEMBAYARAN BANK UMUM
+short_name: null
+status: diubah
+tanggal_penetapan: '1998-01-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_26_1998_1998-01-26
+  kind: asli
+  source: dataset
+  date: '1998-01-26'
+  date_basis: tanggal_penetapan
+  text: keppres_26_1998_1998-01-26.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:68f5081a56c14f4f12c14134bc2b9699003d08a624f10e316c77ecc66eb9683a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:68f5081a56c14f4f12c14134bc2b9699003d08a624f10e316c77ecc66eb9683a
+  source_title: Keputusan_Presiden_no_26_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: amended
+  amended_by:
+  - sha256:a0efe47553dfadaebb930391475e2c95df5a2e2b2a0929fb9c1f80a50e34b6bc
+  - sha256:ad4251fe3230130e231517e05ae57f88808891c783764096b0a2a5840fb8ea23

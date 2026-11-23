@@ -1,0 +1,42 @@
+id: keppres_8_1985
+akn: /akn/id/act/keppres/1985/8
+type: keppres
+number: '8'
+year: 1985
+title: Keputusan Presiden Nomor 8 Tahun 1985 tentang Badan Kebijaksanaan Perumahan
+  Nasional
+tentang: BADAN KEBIJAKSANAAN PERUMAHAN NASIONAL
+short_name: null
+status: diubah
+tanggal_penetapan: '1985-02-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_8_1985_1985-02-04
+  kind: asli
+  source: dataset
+  date: '1985-02-04'
+  date_basis: tanggal_penetapan
+  text: keppres_8_1985_1985-02-04.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bf5ea895dd3ef52def72ce84e146cd934fa3d1655a5c7068e10d736a2c1977e4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bf5ea895dd3ef52def72ce84e146cd934fa3d1655a5c7068e10d736a2c1977e4
+  source_title: KEPPRES_NO_8_TH_1985
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: amended
+  amended_by:
+  - sha256:754b2234a88f667bf0df89a9242d530a0fb18b7459e8c50aa27096e9cb22bdd3
+  - sha256:cb850cfa7c4e40ddd4f8e0f091d9d0bac77fac72177a864dcbe03c80a65370ad

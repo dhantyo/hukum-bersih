@@ -1,0 +1,39 @@
+id: keppres_75_1996
+akn: /akn/id/act/keppres/1996/75
+type: keppres
+number: '75'
+year: 1996
+title: Keputusan Presiden Nomor 75 Tahun 1996 tentang Ketentuan Pokok Perjanjian Karya
+  Pengusahaan Pertambangan Batubara
+tentang: KETENTUAN POKOK PERJANJIAN KARYA PENGUSAHAAN PERTAMBANGAN BATUBARA
+short_name: null
+status: null
+tanggal_penetapan: '1996-09-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_75_1996_1996-09-25
+  kind: asli
+  source: dataset
+  date: '1996-09-25'
+  date_basis: tanggal_penetapan
+  text: keppres_75_1996_1996-09-25.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:96681144cf86daa2d6c2dd2cbca245d40a1208070565a80abf7e0f8e349dbbe9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:96681144cf86daa2d6c2dd2cbca245d40a1208070565a80abf7e0f8e349dbbe9
+  source_title: Keputusan_Presiden_no_75_TH_1996
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: none_known

@@ -1,0 +1,31 @@
+id: keppres_172_1999
+akn: /akn/id/act/keppres/1999/172
+type: keppres
+number: '172'
+year: 1999
+title: Keputusan Presiden Nomor 172 Tahun 1999 tentang Penataan Kembali Tugas Dan
+  Fungsi Departemen Pertanian Dan Departemen Kehutanan Perkebunan
+tentang: PENATAAN KEMBALI TUGAS DAN FUNGSI DEPARTEMEN PERTANIAN DAN DEPARTEMEN KEHUTANAN
+  PERKEBUNAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1999-12-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:24309a628dec047c58e627693b8be4c8c6a9acb61be35ef2edc354a38696653d
+  source_title: Keppres_No_172_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: revoked
+  revoked_by:
+  - sha256:cca0827aca551162cba9d9ed28b52490c4df069e357b36394d0a52aef711ff06
+parse_error: 'v13: no pasal found in the rebuilt text'

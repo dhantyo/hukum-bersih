@@ -1,0 +1,42 @@
+id: keppres_2_1999
+akn: /akn/id/act/keppres/1999/2
+type: keppres
+number: '2'
+year: 1999
+title: Keputusan Presiden Nomor 2 Tahun 1999 tentang Perubahan Atas Keputusan Presiden
+  Nomor 46 Tahun 1980 Tentang Badan Koordinasi Energi Nasional Sebagaimana Telah Dua
+  Kali Diubah Terakhir Dengan Keputusan Presiden Nomor 75 Tahun 1984
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 46 TAHUN 1980 TENTANG BADAN KOORDINASI
+  ENERGI NASIONAL SEBAGAIMANA TELAH DUA KALI DIUBAH TERAKHIR DENGAN KEPUTUSAN PRESIDEN
+  NOMOR 75 TAHUN 1984
+short_name: null
+status: null
+tanggal_penetapan: '1999-01-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_2_1999_1999-01-07
+  kind: asli
+  source: dataset
+  date: '1999-01-07'
+  date_basis: tanggal_penetapan
+  text: keppres_2_1999_1999-01-07.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:478bb6265c52cd095e4d5ae0693d695ef66c445bbbadda1a4e98bffaf6b04ae2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:478bb6265c52cd095e4d5ae0693d695ef66c445bbbadda1a4e98bffaf6b04ae2
+  source_title: Ke_Pres_No.2_Tahun_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

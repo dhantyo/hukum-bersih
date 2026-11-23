@@ -1,0 +1,38 @@
+id: keppres_114_1999
+akn: /akn/id/act/keppres/1999/114
+type: keppres
+number: '114'
+year: 1999
+title: Keputusan Presiden Nomor 114 Tahun 1999 tentang Penataan Ruang Kawasan Bogor-Puncak-Cianjur
+tentang: PENATAAN RUANG KAWASAN BOGOR-PUNCAK-CIANJUR
+short_name: null
+status: null
+tanggal_penetapan: '1999-09-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_114_1999_1999-09-24
+  kind: asli
+  source: dataset
+  date: '1999-09-24'
+  date_basis: tanggal_penetapan
+  text: keppres_114_1999_1999-09-24.txt
+  pasal_count: 30
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:787a6c4e2c6c92339cf2fe68bea0aee3e74d60ac9a37d9c53e80932e4d8532c8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:787a6c4e2c6c92339cf2fe68bea0aee3e74d60ac9a37d9c53e80932e4d8532c8
+  source_title: Keppres_No_114_Tahun_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 40
+  status: none_known

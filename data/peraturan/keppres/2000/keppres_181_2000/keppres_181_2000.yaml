@@ -1,0 +1,40 @@
+id: keppres_181_2000
+akn: /akn/id/act/keppres/2000/181
+type: keppres
+number: '181'
+year: 2000
+title: Keputusan Presiden Nomor 181 Tahun 2000 tentang Dana Alokasi Umum Daerah Propinsi
+  Dan Daerah Kabupaten/Kota Tahun Anggaran 2001
+tentang: DANA ALOKASI UMUM DAERAH PROPINSI DAN DAERAH KABUPATEN/KOTA TAHUN ANGGARAN
+  2001
+short_name: null
+status: null
+tanggal_penetapan: '2001-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_181_2000_2001-01-01
+  kind: asli
+  source: dataset
+  date: '2001-01-01'
+  date_basis: tanggal_penetapan
+  text: keppres_181_2000_2001-01-01.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b900cc827c9c9e1dd9138c91aa4c45c6ff2b06e818ff4204d3428bd8cea8f195
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b900cc827c9c9e1dd9138c91aa4c45c6ff2b06e818ff4204d3428bd8cea8f195
+  source_title: Keputusan_Presiden_no_181_th_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

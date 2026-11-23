@@ -1,0 +1,41 @@
+id: keppres_34_2002
+akn: /akn/id/act/keppres/2002/34
+type: keppres
+number: '34'
+year: 2002
+title: Keputusan Presiden Nomor 34 Tahun 2002 tentang Perubahan Atas Keputusan Presiden
+  Nomor 124 Tahun 2001 Tentang Komite Penanggulangan Kemiskinan Sebagaimana Telah
+  Diubah Dengan Keputusan Presiden Nomor 8 Tahun 2002
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 124 TAHUN 2001 TENTANG KOMITE PENANGGULANGAN
+  KEMISKINAN SEBAGAIMANA TELAH DIUBAH DENGAN KEPUTUSAN PRESIDEN NOMOR 8 TAHUN 2002
+short_name: null
+status: null
+tanggal_penetapan: '2002-05-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_34_2002_2002-05-29
+  kind: asli
+  source: dataset
+  date: '2002-05-29'
+  date_basis: tanggal_penetapan
+  text: keppres_34_2002_2002-05-29.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4e504f1e3dc28db149b91ecc0e817e32fbcaf6006443150827dab5162f3e1f93
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4e504f1e3dc28db149b91ecc0e817e32fbcaf6006443150827dab5162f3e1f93
+  source_title: KEPPRES_No.34_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

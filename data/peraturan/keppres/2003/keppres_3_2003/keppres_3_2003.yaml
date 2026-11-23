@@ -1,0 +1,40 @@
+id: keppres_3_2003
+akn: /akn/id/act/keppres/2003/3
+type: keppres
+number: '3'
+year: 2003
+title: Keputusan Presiden Nomor 3 Tahun 2003
+tentang: null
+short_name: null
+status: dicabut
+tanggal_penetapan: '2003-01-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_3_2003_2003-01-21
+  kind: asli
+  source: dataset
+  date: '2003-01-21'
+  date_basis: tanggal_penetapan
+  text: keppres_3_2003_2003-01-21.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b804ce4d5284ba4b4ee9147e47bd9ff1c88a007ca0cc5792ff1bd9f40978f416
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b804ce4d5284ba4b4ee9147e47bd9ff1c88a007ca0cc5792ff1bd9f40978f416
+  source_title: KEPPRES_No.3_TH_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 19
+  status: revoked
+  revoked_by:
+  - sha256:ee3379ffe0543f2c06ae32bcad9bf2b93abc4f20ca3b85ecab265452b88404f4

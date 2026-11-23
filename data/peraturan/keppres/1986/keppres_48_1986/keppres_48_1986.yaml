@@ -1,0 +1,45 @@
+id: keppres_48_1986
+akn: /akn/id/act/keppres/1986/48
+type: keppres
+number: '48'
+year: 1986
+title: Keputusan Presiden Nomor 48 Tahun 1986 tentang Pemberian Fasilitas Kredit Kepada
+  Anggota Lembaga Tertinggi/Tinggi Negara Untuk Pembelian Kendaraan Perorangan
+tentang: PEMBERIAN FASILITAS KREDIT KEPADA ANGGOTA LEMBAGA TERTINGGI/TINGGI NEGARA
+  UNTUK PEMBELIAN KENDARAAN PERORANGAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1986-09-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_48_1986_1986-09-18
+  kind: asli
+  source: dataset
+  date: '1986-09-18'
+  date_basis: tanggal_penetapan
+  text: keppres_48_1986_1986-09-18.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9ac006f5c641fc93d9263ac238936a0e9de443c4dc5c85c3e2e1b56ac563c4c2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9ac006f5c641fc93d9263ac238936a0e9de443c4dc5c85c3e2e1b56ac563c4c2
+  source_title: KEPPRES_NO_48_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: revoked
+  revoked_by:
+  - sha256:0619c6e49aaa4d8264c61a744e0897cc346960e8d7e2e21739ab36543558e13e
+  - sha256:4e1fbe4bb2a4876deb0938608bb9bfad861e829952b25362e0c0f6aab1f14ebe
+  - sha256:4eb3b0ce202bf404119829e9fc37cfcd336478a3d958a17b2274efffde0f547f
+  - sha256:951b324cd6fdad7709f909bb68ddb17715d898fa62ead1dcea92c4c3ba88ebdb

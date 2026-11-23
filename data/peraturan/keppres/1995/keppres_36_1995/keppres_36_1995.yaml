@@ -1,0 +1,39 @@
+id: keppres_36_1995
+akn: /akn/id/act/keppres/1995/36
+type: keppres
+number: '36'
+year: 1995
+title: Keputusan Presiden Nomor 36 Tahun 1995 tentang Pembukaan Konsulat Republik
+  Indonesia Di Songkhla, Thailand Selatan
+tentang: PEMBUKAAN KONSULAT REPUBLIK INDONESIA DI SONGKHLA, THAILAND SELATAN
+short_name: null
+status: null
+tanggal_penetapan: '1995-06-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_36_1995_1995-06-05
+  kind: asli
+  source: dataset
+  date: '1995-06-05'
+  date_basis: tanggal_penetapan
+  text: keppres_36_1995_1995-06-05.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6a4eb35a5deaaf4bedbd66fd1658b9562279c5245f07e3e1f5eec072cf1fa8fd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6a4eb35a5deaaf4bedbd66fd1658b9562279c5245f07e3e1f5eec072cf1fa8fd
+  source_title: Keputusan_Presiden_no_36_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 11
+  status: none_known

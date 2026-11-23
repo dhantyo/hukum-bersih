@@ -1,0 +1,40 @@
+id: keppres_47_2002
+akn: /akn/id/act/keppres/2002/47
+type: keppres
+number: '47'
+year: 2002
+title: Keputusan Presiden Nomor 47 Tahun 2002 tentang Perubahan Atas Keputusan Presiden
+  Nomor 109 Tahun 2001 Tentang Unit Organisasi Dan Tugas Eselon I Departemen
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 109 TAHUN 2001 TENTANG UNIT ORGANISASI
+  DAN TUGAS ESELON I DEPARTEMEN
+short_name: null
+status: null
+tanggal_penetapan: '2002-07-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_47_2002_2002-07-01
+  kind: asli
+  source: dataset
+  date: '2002-07-01'
+  date_basis: tanggal_penetapan
+  text: keppres_47_2002_2002-07-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e84eed1a11b367bc433b7f300889d8ce05b5cd3a039d932072d6d88471ba0ed9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e84eed1a11b367bc433b7f300889d8ce05b5cd3a039d932072d6d88471ba0ed9
+  source_title: KEPPRES_No.47_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

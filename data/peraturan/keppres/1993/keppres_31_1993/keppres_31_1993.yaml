@@ -1,0 +1,49 @@
+id: keppres_31_1993
+akn: /akn/id/act/keppres/1993/31
+type: keppres
+number: '31'
+year: 1993
+title: Keputusan Presiden Nomor 31 Tahun 1993 tentang Tunjangan Penilai Pajak Bumi
+  Dan Bangunan, Pemeriksa Bea Dan Cukai, Pengawas Ketenagakerjaan, Pengamat Meteorologi
+  Dan Geofisika, Penyuluh Kehutanan, Juru Penerang, Pekerja Sosial, Dan Pengawas Keuangan
+  Dan Pembangunan
+tentang: TUNJANGAN PENILAI PAJAK BUMI DAN BANGUNAN, PEMERIKSA BEA DAN CUKAI, PENGAWAS
+  KETENAGAKERJAAN, PENGAMAT METEOROLOGI DAN GEOFISIKA, PENYULUH KEHUTANAN, JURU PENERANG,
+  PEKERJA SOSIAL, DAN PENGAWAS KEUANGAN DAN PEMBANGUNAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1993-04-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_31_1993_1993-04-22
+  kind: asli
+  source: dataset
+  date: '1993-04-22'
+  date_basis: tanggal_penetapan
+  text: keppres_31_1993_1993-04-22.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c90c84e68c9aa9b096d747f23dda58f13e385856f8ab976e7a068eea4c4ae032
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c90c84e68c9aa9b096d747f23dda58f13e385856f8ab976e7a068eea4c4ae032
+  source_title: Keputusan_Presiden_no_31_TH_1993
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:2a82dcdd242e89c810fe0ec8d835c9512208f772cfbb8579a224424fd7bdd184
+  - sha256:448fd372af5af42979eca477e9208d0ec67a1324a2244b710a4537c9dcf2e438
+  - sha256:6e92c7de9e14945a4e69b16b98710d2ca0de8df8e4dea3d3ba3883a68fbb7b3b
+  - sha256:8821f764697cd460d40410038c87d1744e88ca81de6098bc285f6917d5d69a95
+  - sha256:c435498eb93da47eda0aa83c9849bc336a7fba4c9edc8b509991fd10d241d792

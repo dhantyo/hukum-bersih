@@ -1,0 +1,39 @@
+id: keppres_15_2004
+akn: /akn/id/act/keppres/2004/15
+type: keppres
+number: '15'
+year: 2004
+title: Keputusan Presiden Nomor 15 Tahun 2004 tentang Pengakhiran Tugas Dan Pembubaran
+  Badan Penyehatan Perbankan Nasional
+tentang: PENGAKHIRAN TUGAS DAN PEMBUBARAN BADAN PENYEHATAN PERBANKAN NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2004-02-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_15_2004_2004-02-27
+  kind: asli
+  source: dataset
+  date: '2004-02-27'
+  date_basis: tanggal_penetapan
+  text: keppres_15_2004_2004-02-27.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a0957ee22639344e66ba1071b63ae791063b71e3dbbef6bb154cc9075a4b8aba
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a0957ee22639344e66ba1071b63ae791063b71e3dbbef6bb154cc9075a4b8aba
+  source_title: KEPPRES_No.15_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: none_known

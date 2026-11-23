@@ -1,0 +1,42 @@
+id: keppres_33_1986
+akn: /akn/id/act/keppres/1986/33
+type: keppres
+number: '33'
+year: 1986
+title: Keputusan Presiden Nomor 33 Tahun 1986 tentang Kewajiban Penyampaian Laporan
+  Pajak-Pajak Pribadi Bagi Pejabat Negara, Pegawai Negeri Sipil, Anggota Angkatan
+  Bersenjata Republik Indonesia, Dan Pegawai Badan Usaha Milik Negara Dan Daerah
+tentang: KEWAJIBAN PENYAMPAIAN LAPORAN PAJAK-PAJAK PRIBADI BAGI PEJABAT NEGARA, PEGAWAI
+  NEGERI SIPIL, ANGGOTA ANGKATAN BERSENJATA REPUBLIK INDONESIA, DAN PEGAWAI BADAN
+  USAHA MILIK NEGARA DAN DAERAH
+short_name: null
+status: null
+tanggal_penetapan: '1986-07-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_33_1986_1986-07-29
+  kind: asli
+  source: dataset
+  date: '1986-07-29'
+  date_basis: tanggal_penetapan
+  text: keppres_33_1986_1986-07-29.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:88b5f63dfd00e1a03e93ffce5af485d196785f83b52af4e23f77ca2798b49789
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:88b5f63dfd00e1a03e93ffce5af485d196785f83b52af4e23f77ca2798b49789
+  source_title: KEPPRES_NO_33_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: none_known

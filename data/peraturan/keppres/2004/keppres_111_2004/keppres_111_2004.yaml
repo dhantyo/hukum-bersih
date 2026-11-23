@@ -1,0 +1,30 @@
+id: keppres_111_2004
+akn: /akn/id/act/keppres/2004/111
+type: keppres
+number: '111'
+year: 2004
+title: Keputusan Presiden Nomor 111 Tahun 2004 tentang Pembentukan Tim Pencari Fakta
+  Kasus Meninggalnya Munir
+tentang: PEMBENTUKAN TIM PENCARI FAKTA KASUS MENINGGALNYA MUNIR
+short_name: null
+status: diubah
+tanggal_penetapan: '2004-12-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:38c70a94ef0941116ac5e0837138252184c10f21a9634dce19024cf1be7bda3d
+  source_title: KEPPRES_No.111_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 3
+  status: amended
+  amended_by:
+  - sha256:89c6c5273334b38a16ed138b7cf9196d0d23a0e93d902e1e0ceacda3a6328638
+parse_error: 'v13: no pasal found in the rebuilt text'

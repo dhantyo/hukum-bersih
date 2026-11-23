@@ -1,0 +1,42 @@
+id: keppres_35_1985
+akn: /akn/id/act/keppres/1985/35
+type: keppres
+number: '35'
+year: 1985
+title: Keputusan Presiden Nomor 35 Tahun 1985 tentang Kedudukan, Tugas, Fungsi Dan
+  Susunan Organisasi Badan Koordinasi Penanaman Modal
+tentang: KEDUDUKAN, TUGAS, FUNGSI DAN SUSUNAN ORGANISASI BADAN KOORDINASI PENANAMAN
+  MODAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '1985-03-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_35_1985_1985-03-13
+  kind: asli
+  source: dataset
+  date: '1985-03-13'
+  date_basis: tanggal_penetapan
+  text: keppres_35_1985_1985-03-13.txt
+  pasal_count: 27
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:59eb85fd5ace3443abfaa480d0d1c274c071ae254c34fcb05f48b524f5599e27
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:59eb85fd5ace3443abfaa480d0d1c274c071ae254c34fcb05f48b524f5599e27
+  source_title: KEPPRES_NO_35_TH_1985
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 30
+  status: revoked
+  revoked_by:
+  - sha256:3174aabe25cc342cdd1c9f2ce500719ed220f34d49b826500ff818d977355b56

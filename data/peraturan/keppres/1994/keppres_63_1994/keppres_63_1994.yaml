@@ -1,0 +1,30 @@
+id: keppres_63_1994
+akn: /akn/id/act/keppres/1994/63
+type: keppres
+number: '63'
+year: 1994
+title: Keputusan Presiden Nomor 63 Tahun 1994 tentang Pengesahan Anggaran Dasar Korps
+  Pegawai Republik Indonesia (Korpri)
+tentang: PENGESAHAN ANGGARAN DASAR KORPS PEGAWAI REPUBLIK INDONESIA (KORPRI)
+short_name: null
+status: dicabut
+tanggal_penetapan: '1994-08-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:792614626fcfbd69701e4733bfa60c43ea3e32e8d63648132f46ae6764597f16
+  source_title: Keputusan_Presiden_no_63_TH_1994
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 25
+  status: revoked
+  revoked_by:
+  - sha256:f1768095cb3e55b01bb9b91c7b9d2df5803b8a8966f9f3e62027386fed2ba15c
+parse_error: 'v13: rebuilt text has 2 pasal, the dataset lists 19'

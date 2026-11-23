@@ -1,0 +1,31 @@
+id: keppres_16_2006
+akn: /akn/id/act/keppres/2006/16
+type: keppres
+number: '16'
+year: 2006
+title: Keputusan Presiden Nomor 16 Tahun 2006 tentang Persetujuan Perubahan Anggaran
+  Dasar Dan Anggaran Rumah Tangga Kamar Dagang Dan Industri
+tentang: PERSETUJUAN PERUBAHAN ANGGARAN DASAR DAN ANGGARAN RUMAH TANGGA KAMAR DAGANG
+  DAN INDUSTRI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-09-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:96ae4fef7d253a78d222be6855f9cbf7b50ba7f9a14ac88aa9a02f18a7441ee3
+  source_title: Keputusan_Presiden_no_16_th_2006
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 79
+  status: revoked
+  revoked_by:
+  - sha256:b9c5954c14b1a4cdcd4c5c158b58278d4cbe7c2f9476c9e2598f15e53846d9ad
+parse_error: 'v13: rebuilt text has 2 pasal, the dataset lists 44'

@@ -1,0 +1,41 @@
+id: keppres_59_1995
+akn: /akn/id/act/keppres/1995/59
+type: keppres
+number: '59'
+year: 1995
+title: Keputusan Presiden Nomor 59 Tahun 1995 tentang Pendirian Sekolah Tinggi Seni
+  Indonesia Bandung
+tentang: PENDIRIAN SEKOLAH TINGGI SENI INDONESIA BANDUNG
+short_name: null
+status: dicabut
+tanggal_penetapan: '1995-08-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_59_1995_1995-08-29
+  kind: asli
+  source: dataset
+  date: '1995-08-29'
+  date_basis: tanggal_penetapan
+  text: keppres_59_1995_1995-08-29.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6d576dd3487e934807026443f079a13eeb79268b8f7321e795744f1949ce54bf
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6d576dd3487e934807026443f079a13eeb79268b8f7321e795744f1949ce54bf
+  source_title: Keputusan_Presiden_no_59_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:c944bbb03f3f1492dd5c1d63a62f201824a8a8678da6e36460853c6df967a76c

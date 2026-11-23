@@ -1,0 +1,43 @@
+id: keppres_108_2001
+akn: /akn/id/act/keppres/2001/108
+type: keppres
+number: '108'
+year: 2001
+title: Keputusan Presiden Nomor 108 Tahun 2001 tentang Unit Organisasi Dan Tugas Eselon
+  I Menteri Negara
+tentang: UNIT ORGANISASI DAN TUGAS ESELON I MENTERI NEGARA
+short_name: null
+status: diubah
+tanggal_penetapan: '2001-10-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_108_2001_2001-10-10
+  kind: asli
+  source: dataset
+  date: '2001-10-10'
+  date_basis: tanggal_penetapan
+  text: keppres_108_2001_2001-10-10.txt
+  pasal_count: 25
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b20300ac13ca4c9b7ee1cba301b6a2970a3a7a0a7fed2fdaebbc5ae30769ed5c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b20300ac13ca4c9b7ee1cba301b6a2970a3a7a0a7fed2fdaebbc5ae30769ed5c
+  source_title: Keputusan_Presiden_no_108_th_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 32
+  status: amended
+  amended_by:
+  - sha256:321cad9877aa25b5e5fdbdcb330165a28b731c8a194366a0652b31f7a87a5396
+  - sha256:81b79743c4075733b5776cc7710090d16cc2f1e81a07a708b7ed5deed59157d8
+  - sha256:a6b6bea00e23ae6424fa055594cf4888f15d2643c2ccd982b6ecc3ad10dd91a5

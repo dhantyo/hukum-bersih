@@ -1,0 +1,40 @@
+id: keppres_99_2004
+akn: /akn/id/act/keppres/2004/99
+type: keppres
+number: '99'
+year: 2004
+title: Keputusan Presiden Nomor 99 Tahun 2004 tentang Geofisika
+tentang: GEOFISIKA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2004-10-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_99_2004_2004-10-18
+  kind: asli
+  source: dataset
+  date: '2004-10-18'
+  date_basis: tanggal_penetapan
+  text: keppres_99_2004_2004-10-18.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:448fd372af5af42979eca477e9208d0ec67a1324a2244b710a4537c9dcf2e438
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:448fd372af5af42979eca477e9208d0ec67a1324a2244b710a4537c9dcf2e438
+  source_title: KEPPRES_No.99_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: revoked
+  revoked_by:
+  - sha256:fd91fb2b020cb3b0bef35dbb57904e8fd892ba82e88b65218778cf2d73054090

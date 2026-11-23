@@ -1,0 +1,44 @@
+id: keppres_81_2004
+akn: /akn/id/act/keppres/2004/81
+type: keppres
+number: '81'
+year: 2004
+title: Keputusan Presiden Nomor 81 Tahun 2004 tentang Pengadaan Rumah Bagi Mantan
+  Presiden Dan/Atau Mantan Wakil Presiden Republik Indonesia
+tentang: PENGADAAN RUMAH BAGI MANTAN PRESIDEN DAN/ATAU MANTAN WAKIL PRESIDEN REPUBLIK
+  INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2004-09-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_81_2004_2004-09-27
+  kind: asli
+  source: dataset
+  date: '2004-09-27'
+  date_basis: tanggal_penetapan
+  text: keppres_81_2004_2004-09-27.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7d545efffbef1c65525bada9c8f211c99a9b6af2ca638068e8e9e8d2bf416396
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7d545efffbef1c65525bada9c8f211c99a9b6af2ca638068e8e9e8d2bf416396
+  source_title: KEPPRES_No.81_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:bd28eec23bbca3c9ecef608a366e56c7ccd9ee70441a99faf12e86238ed7c0ac
+  amended_by:
+  - sha256:b630217128acda5e187bb2d19bf5511786d90f6410e284607ffbe2d384a21acd

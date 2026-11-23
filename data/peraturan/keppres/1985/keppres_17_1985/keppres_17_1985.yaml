@@ -1,0 +1,41 @@
+id: keppres_17_1985
+akn: /akn/id/act/keppres/1985/17
+type: keppres
+number: '17'
+year: 1985
+title: Keputusan Presiden Nomor 17 Tahun 1985 tentang Tunjangan Jabatan Hakim Pada
+  Peradilan Agama
+tentang: TUNJANGAN JABATAN HAKIM PADA PERADILAN AGAMA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1985-04-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_17_1985_1985-04-01
+  kind: asli
+  source: dataset
+  date: '1985-04-01'
+  date_basis: tanggal_penetapan
+  text: keppres_17_1985_1985-04-01.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b75c8c46b0c1d7fde84e884e4e1bcd5a6c74e8bb2ca9c5dd6bbba25a06cb8eb7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b75c8c46b0c1d7fde84e884e4e1bcd5a6c74e8bb2ca9c5dd6bbba25a06cb8eb7
+  source_title: KEPPRES_NO_17_TH_1985
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: revoked
+  revoked_by:
+  - sha256:da2c27a6e2f4d24d64a927e9bf4164ee8e96584c39f57a804dbe0b41d895130d

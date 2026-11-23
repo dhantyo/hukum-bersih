@@ -1,0 +1,38 @@
+id: keppres_32_1990
+akn: /akn/id/act/keppres/1990/32
+type: keppres
+number: '32'
+year: 1990
+title: Keputusan Presiden Nomor 32 Tahun 1990 tentang Pengelolaan Kawasan Lindung
+tentang: PENGELOLAAN KAWASAN LINDUNG
+short_name: null
+status: null
+tanggal_penetapan: '1990-07-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_32_1990_1990-07-25
+  kind: asli
+  source: dataset
+  date: '1990-07-25'
+  date_basis: tanggal_penetapan
+  text: keppres_32_1990_1990-07-25.txt
+  pasal_count: 41
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:90d55ccc9b14914186ca91d94a6386e6e9fd75be5c520b558226040b81bfa9d9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:90d55ccc9b14914186ca91d94a6386e6e9fd75be5c520b558226040b81bfa9d9
+  source_title: KEPPRES_NO_32_TH_1990
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 46
+  status: none_known

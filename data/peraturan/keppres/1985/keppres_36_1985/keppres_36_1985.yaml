@@ -1,0 +1,41 @@
+id: keppres_36_1985
+akn: /akn/id/act/keppres/1985/36
+type: keppres
+number: '36'
+year: 1985
+title: Keputusan Presiden Nomor 36 Tahun 1985 tentang Pajak Pertambahan Nilai Yang
+  Terhutang Atas Penyerahan Dan Impor Barang Kena Pajak Tertentu Yang Ditanggung Oleh
+  Pemerintah Presiden Republik Indonesia
+tentang: PAJAK PERTAMBAHAN NILAI YANG TERHUTANG ATAS PENYERAHAN DAN IMPOR BARANG KENA
+  PAJAK TERTENTU YANG DITANGGUNG OLEH PEMERINTAH Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1985-04-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_36_1985_1985-04-01
+  kind: asli
+  source: dataset
+  date: '1985-04-01'
+  date_basis: tanggal_penetapan
+  text: keppres_36_1985_1985-04-01.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b66899f8910865f8990315629a07352d3750d28ea074cfb22b83536945ff1c18
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b66899f8910865f8990315629a07352d3750d28ea074cfb22b83536945ff1c18
+  source_title: KEPPRES_NO_36_TH_1985
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

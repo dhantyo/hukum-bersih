@@ -1,0 +1,45 @@
+id: keppres_7_1990
+akn: /akn/id/act/keppres/1990/7
+type: keppres
+number: '7'
+year: 1990
+title: Keputusan Presiden Nomor 7 Tahun 1990 tentang Pajak Penghasilan Yang Terhutang
+  Oleh Perusahaan-Perusahaan Luar Negeri Atas Permbayaran Royalti Sehubungan Dengan
+  Penggunaan Jasa Teknik, Jasa Manajemen, Dan Lisensi Oleh Pt. Iptn, Pt. Pindad Dan
+  Pt. Pal
+tentang: PAJAK PENGHASILAN YANG TERHUTANG OLEH PERUSAHAAN-PERUSAHAAN LUAR NEGERI ATAS
+  PERMBAYARAN ROYALTI SEHUBUNGAN DENGAN PENGGUNAAN JASA TEKNIK, JASA MANAJEMEN, DAN
+  LISENSI OLEH PT. IPTN, PT. PINDAD DAN PT. PAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '1990-03-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_7_1990_1990-03-03
+  kind: asli
+  source: dataset
+  date: '1990-03-03'
+  date_basis: tanggal_penetapan
+  text: keppres_7_1990_1990-03-03.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b20baf3b053afa0725d1a0c2c4464e6b08860f93f013ecb5cf4338638ce64108
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b20baf3b053afa0725d1a0c2c4464e6b08860f93f013ecb5cf4338638ce64108
+  source_title: KEPPRES_NO_7_TH_1990
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: revoked
+  revoked_by:
+  - sha256:ccf91b391768168c5733c06b6d71e3f15e27611730357f4fd669534681145396

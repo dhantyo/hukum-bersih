@@ -1,0 +1,40 @@
+id: keppres_105_2000
+akn: /akn/id/act/keppres/2000/105
+type: keppres
+number: '105'
+year: 2000
+title: Keputusan Presiden Nomor 105 Tahun 2000 tentang Perubahan Atas Keputusan Presiden
+  Nomor 28 Tahun 1989 Tentang Tunjangan Jabatan Penyuluh Pertanian
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 28 TAHUN 1989 TENTANG TUNJANGAN JABATAN
+  PENYULUH PERTANIAN
+short_name: null
+status: null
+tanggal_penetapan: '2000-07-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_105_2000_2000-07-26
+  kind: asli
+  source: dataset
+  date: '2000-07-26'
+  date_basis: tanggal_penetapan
+  text: keppres_105_2000_2000-07-26.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:74b8de9be2aa99130320ee816fb9898a63f9e86086636f8bd419485b514568ac
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:74b8de9be2aa99130320ee816fb9898a63f9e86086636f8bd419485b514568ac
+  source_title: Keputusan_Presiden_no_105_TH_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

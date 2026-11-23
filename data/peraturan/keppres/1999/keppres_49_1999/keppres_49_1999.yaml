@@ -1,0 +1,39 @@
+id: keppres_49_1999
+akn: /akn/id/act/keppres/1999/49
+type: keppres
+number: '49'
+year: 1999
+title: Keputusan Presiden Nomor 49 Tahun 1999 tentang Organisasi Sekretariat Jenderal
+  Majelis Permusyawaratan Rakyat Republik Indonesia
+tentang: ORGANISASI SEKRETARIAT JENDERAL MAJELIS PERMUSYAWARATAN RAKYAT REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '1999-05-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_49_1999_1999-05-27
+  kind: asli
+  source: dataset
+  date: '1999-05-27'
+  date_basis: tanggal_penetapan
+  text: keppres_49_1999_1999-05-27.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5643f753253dbbc3e2be1bdfe834b23de30207744f348f48f04714f907a9d5ef
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5643f753253dbbc3e2be1bdfe834b23de30207744f348f48f04714f907a9d5ef
+  source_title: Keppres_No_49_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: none_known

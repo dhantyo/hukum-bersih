@@ -1,0 +1,38 @@
+id: keppres_21_2007
+akn: /akn/id/act/keppres/2007/21
+type: keppres
+number: '21'
+year: 2007
+title: Keputusan Presiden Nomor 21 Tahun 2007 tentang Dewan Kelautan Indonesia
+tentang: DEWAN KELAUTAN INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2007-09-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_21_2007_2007-09-21
+  kind: asli
+  source: dataset
+  date: '2007-09-21'
+  date_basis: tanggal_penetapan
+  text: keppres_21_2007_2007-09-21.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:071cba780906ca3808fe6cbadc15fd40aeee471bffe2520e594d5433d06105cf
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:071cba780906ca3808fe6cbadc15fd40aeee471bffe2520e594d5433d06105cf
+  source_title: Keputusan_Presiden_No_21_th_2007
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 20
+  status: none_known

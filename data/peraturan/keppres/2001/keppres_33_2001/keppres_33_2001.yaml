@@ -1,0 +1,42 @@
+id: keppres_33_2001
+akn: /akn/id/act/keppres/2001/33
+type: keppres
+number: '33'
+year: 2001
+title: Keputusan Presiden Nomor 33 Tahun 2001 tentang Pengesahan Amendments Agreement
+  Establishing The Asia Pacific Institute For Broadcasting Development (Perubahan
+  Atas Persetujuan Pendirian Institut Pengembangan Penyiaran Asia Pasifik)
+tentang: PENGESAHAN AMENDMENTS AGREEMENT ESTABLISHING THE ASIA PACIFIC INSTITUTE FOR
+  BROADCASTING DEVELOPMENT (PERUBAHAN ATAS PERSETUJUAN PENDIRIAN INSTITUT PENGEMBANGAN
+  PENYIARAN ASIA PASIFIK)
+short_name: null
+status: null
+tanggal_penetapan: '2001-03-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_33_2001_2001-03-19
+  kind: asli
+  source: dataset
+  date: '2001-03-19'
+  date_basis: tanggal_penetapan
+  text: keppres_33_2001_2001-03-19.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d2bdbcc8cfe5a2f2159183ad424769ccd0cd003bf735a77ef9d6b778004fded5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d2bdbcc8cfe5a2f2159183ad424769ccd0cd003bf735a77ef9d6b778004fded5
+  source_title: Keputusan_Presiden_no_33_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 6
+  status: none_known

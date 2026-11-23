@@ -1,0 +1,40 @@
+id: keppres_82_1993
+akn: /akn/id/act/keppres/1993/82
+type: keppres
+number: '82'
+year: 1993
+title: Keputusan Presiden Nomor 82 Tahun 1993 tentang Pengesahan Convention On Assistance
+  In The Case Of A Nuclear Accident Or Radiological Emergency
+tentang: PENGESAHAN CONVENTION ON ASSISTANCE IN THE CASE OF A NUCLEAR ACCIDENT OR
+  RADIOLOGICAL EMERGENCY
+short_name: null
+status: null
+tanggal_penetapan: '1993-09-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_82_1993_1993-09-01
+  kind: asli
+  source: dataset
+  date: '1993-09-01'
+  date_basis: tanggal_penetapan
+  text: keppres_82_1993_1993-09-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:867eeaa50f8a105a0f6a478e1b1ec3fe9423e03106c161c5106301325ba94813
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:867eeaa50f8a105a0f6a478e1b1ec3fe9423e03106c161c5106301325ba94813
+  source_title: Keputusan_Presiden_no_82_TH_1993
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: unusable
+  chunks: 17
+  status: none_known

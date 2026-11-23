@@ -1,0 +1,42 @@
+id: keppres_75_1998
+akn: /akn/id/act/keppres/1998/75
+type: keppres
+number: '75'
+year: 1998
+title: Keputusan Presiden Nomor 75 Tahun 1998 tentang Perubahan Atas Keputusan Presiden
+  Nomor 120 Tahun 1993 Tentang Dewan Pengembangan Kawasan Timur Indonesia Sebagaimana
+  Telah Beberapa Kali Diubah Terakhir Dengan Keputusan Presiden Nomor 54 Tahun 1995
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 120 TAHUN 1993 TENTANG DEWAN PENGEMBANGAN
+  KAWASAN TIMUR INDONESIA SEBAGAIMANA TELAH BEBERAPA KALI DIUBAH TERAKHIR DENGAN KEPUTUSAN
+  PRESIDEN NOMOR 54 TAHUN 1995
+short_name: null
+status: null
+tanggal_penetapan: '1998-05-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_75_1998_1998-05-07
+  kind: asli
+  source: dataset
+  date: '1998-05-07'
+  date_basis: tanggal_penetapan
+  text: keppres_75_1998_1998-05-07.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ae5bdef845a387dfd3235c1fcde3ec3a1bf8b4ccc1e699c6407f60f8e29cea5e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ae5bdef845a387dfd3235c1fcde3ec3a1bf8b4ccc1e699c6407f60f8e29cea5e
+  source_title: Keputusan_Presiden_no_75_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

@@ -1,0 +1,39 @@
+id: keppres_70_1995
+akn: /akn/id/act/keppres/1995/70
+type: keppres
+number: '70'
+year: 1995
+title: Keputusan Presiden Nomor 70 Tahun 1995 tentang Pembukaan Kedutaan Besar Republik
+  Indonesia Di Beirut, Lebanon
+tentang: PEMBUKAAN KEDUTAAN BESAR REPUBLIK INDONESIA DI BEIRUT, LEBANON
+short_name: null
+status: null
+tanggal_penetapan: '1995-10-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_70_1995_1995-10-02
+  kind: asli
+  source: dataset
+  date: '1995-10-02'
+  date_basis: tanggal_penetapan
+  text: keppres_70_1995_1995-10-02.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f5359cff1d0a4203b285a4ed62a0b2601e1d35464508ca6dda43e5ffd1ff6b3e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f5359cff1d0a4203b285a4ed62a0b2601e1d35464508ca6dda43e5ffd1ff6b3e
+  source_title: Keputusan_Presiden_no_70_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 10
+  status: none_known

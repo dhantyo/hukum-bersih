@@ -1,0 +1,44 @@
+id: keppres_16_2001
+akn: /akn/id/act/keppres/2001/16
+type: keppres
+number: '16'
+year: 2001
+title: Keputusan Presiden Nomor 16 Tahun 2001 tentang Perubahan Atas Keputusan Presiden
+  Nomor 166 Tahun 2000 Tentang Kedudukan, Tugas, Fungsi, Kewenangan, Susunan Organisasi,
+  Dan Tata Kerja Lembaga Pemerintah Non Departemen Sebagaimana Telah Diubah Dengan
+  Keputusan Presiden Nomor 173 Tahun 2000
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 166 TAHUN 2000 TENTANG KEDUDUKAN,
+  TUGAS, FUNGSI, KEWENANGAN, SUSUNAN ORGANISASI, DAN TATA KERJA LEMBAGA PEMERINTAH
+  NON DEPARTEMEN SEBAGAIMANA TELAH DIUBAH DENGAN KEPUTUSAN PRESIDEN NOMOR 173 TAHUN
+  2000
+short_name: null
+status: null
+tanggal_penetapan: '2001-01-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_16_2001_2001-01-23
+  kind: asli
+  source: dataset
+  date: '2001-01-23'
+  date_basis: tanggal_penetapan
+  text: keppres_16_2001_2001-01-23.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ac244dd2c2e2996529981716eb3a0ab38e9aef4df5c8a2472fad6c9045cbe468
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ac244dd2c2e2996529981716eb3a0ab38e9aef4df5c8a2472fad6c9045cbe468
+  source_title: Keputusan_Presiden_no_16_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

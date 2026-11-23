@@ -1,0 +1,39 @@
+id: keppres_185_1998
+akn: /akn/id/act/keppres/1998/185
+type: keppres
+number: '185'
+year: 1998
+title: Keputusan Presiden Nomor 185 Tahun 1998 tentang Pembentukan Pengadilan Negeri
+  Liwa
+tentang: PEMBENTUKAN PENGADILAN NEGERI LIWA
+short_name: null
+status: null
+tanggal_penetapan: '1999-04-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_185_1998_1999-04-01
+  kind: asli
+  source: dataset
+  date: '1999-04-01'
+  date_basis: tanggal_penetapan
+  text: keppres_185_1998_1999-04-01.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3da3d0f217348e991b07a85f50ef164836524c025edf359f28807bac8d0ae405
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3da3d0f217348e991b07a85f50ef164836524c025edf359f28807bac8d0ae405
+  source_title: Keputusan_Presiden_no_185_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

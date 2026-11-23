@@ -1,0 +1,40 @@
+id: keppres_86_2004
+akn: /akn/id/act/keppres/2004/86
+type: keppres
+number: '86'
+year: 2004
+title: Keputusan Presiden Nomor 86 Tahun 2004 tentang Pembukaan Kantor Konsulat Jenderal
+  Republik Indonesia Di Kuching, Sarawak, Malaysia
+tentang: PEMBUKAAN KANTOR KONSULAT JENDERAL REPUBLIK INDONESIA DI KUCHING, SARAWAK,
+  MALAYSIA
+short_name: null
+status: null
+tanggal_penetapan: '2004-10-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_86_2004_2004-10-05
+  kind: asli
+  source: dataset
+  date: '2004-10-05'
+  date_basis: tanggal_penetapan
+  text: keppres_86_2004_2004-10-05.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:febb410e5b64a8a3effa6d10fc61ac5c3d198124f9b2e6d1b55252a99446c151
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:febb410e5b64a8a3effa6d10fc61ac5c3d198124f9b2e6d1b55252a99446c151
+  source_title: KEPPRES_No.86_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

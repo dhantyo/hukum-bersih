@@ -1,0 +1,31 @@
+id: keppres_119_1999
+akn: /akn/id/act/keppres/1999/119
+type: keppres
+number: '119'
+year: 1999
+title: Keputusan Presiden Nomor 119 Tahun 1999 tentang Badan Peningkatan Kerja Sama
+  Ekonomi Indonesia - Organisasi Konferensi Islam (Oki)
+tentang: BADAN PENINGKATAN KERJA SAMA EKONOMI INDONESIA - ORGANISASI KONFERENSI ISLAM
+  (OKI)
+short_name: null
+status: dicabut
+tanggal_penetapan: '1999-10-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:290e62a89aead81f378df940c5b9a803a5213bda6a904c754b8860d52fed416c
+  source_title: Keppres_No_119_Tahun_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 4
+  status: revoked
+  revoked_by:
+  - sha256:6aecee9775da3b1f2a633844b44fe1ebc05d0eb5763b779a71b02f195c807043
+parse_error: 'v13: no pasal found in the rebuilt text'

@@ -1,0 +1,39 @@
+id: keppres_25_2006
+akn: /akn/id/act/keppres/2006/25
+type: keppres
+number: '25'
+year: 2006
+title: Keputusan Presiden Nomor 25 Tahun 2006 tentang Pembentukan Pengadilan Negeri
+  Marisa
+tentang: PEMBENTUKAN PENGADILAN NEGERI MARISA
+short_name: null
+status: null
+tanggal_penetapan: '2006-12-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_25_2006_2006-12-12
+  kind: asli
+  source: dataset
+  date: '2006-12-12'
+  date_basis: tanggal_penetapan
+  text: keppres_25_2006_2006-12-12.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:88b9a2fca79e73bb0c77b2b2a0149081aaa879be0a7bec886009711c2b864862
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:88b9a2fca79e73bb0c77b2b2a0149081aaa879be0a7bec886009711c2b864862
+  source_title: Keputusan_Presiden_No_25_th_2006
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: none_known

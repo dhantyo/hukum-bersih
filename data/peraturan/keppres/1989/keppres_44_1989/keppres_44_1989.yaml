@@ -1,0 +1,40 @@
+id: keppres_44_1989
+akn: /akn/id/act/keppres/1989/44
+type: keppres
+number: '44'
+year: 1989
+title: Keputusan Presiden Nomor 44 Tahun 1989 tentang Badan Pengelola Industri Strategis
+tentang: BADAN PENGELOLA INDUSTRI STRATEGIS
+short_name: null
+status: dicabut
+tanggal_penetapan: '1989-08-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_44_1989_1989-08-28
+  kind: asli
+  source: dataset
+  date: '1989-08-28'
+  date_basis: tanggal_penetapan
+  text: keppres_44_1989_1989-08-28.txt
+  pasal_count: 30
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:65c61602ceb0e7b333a2ebb6849c5a183ef6855dd7f244265a0a16342a99d388
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:65c61602ceb0e7b333a2ebb6849c5a183ef6855dd7f244265a0a16342a99d388
+  source_title: KEPPRES_NO_44_TH_1989
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 35
+  status: revoked
+  revoked_by:
+  - sha256:c7e10ad7c78f5d729135a1d152e1658778f72b94290c1fe5ec43e9a79fd89b1f

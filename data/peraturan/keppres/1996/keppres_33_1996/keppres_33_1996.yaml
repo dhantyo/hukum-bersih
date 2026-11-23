@@ -1,0 +1,40 @@
+id: keppres_33_1996
+akn: /akn/id/act/keppres/1996/33
+type: keppres
+number: '33'
+year: 1996
+title: Keputusan Presiden Nomor 33 Tahun 1996 tentang Tunjangan Petugas Pemasyarakatan
+tentang: TUNJANGAN PETUGAS PEMASYARAKATAN
+short_name: null
+status: diubah
+tanggal_penetapan: '1996-05-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_33_1996_1996-05-03
+  kind: asli
+  source: dataset
+  date: '1996-05-03'
+  date_basis: tanggal_penetapan
+  text: keppres_33_1996_1996-05-03.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3511a4ff1a4a081d19d859a42e7b0826010d99c8ee76a2710afa56d3766ce66b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3511a4ff1a4a081d19d859a42e7b0826010d99c8ee76a2710afa56d3766ce66b
+  source_title: Keputusan_Presiden_no_33_TH_1996
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: amended
+  amended_by:
+  - sha256:0d78b1f22b5a92ed08778cd77b9c60155763d49b6462e20f04aad61b321b369c

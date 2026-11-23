@@ -1,0 +1,41 @@
+id: keppres_2_1997
+akn: /akn/id/act/keppres/1997/2
+type: keppres
+number: '2'
+year: 1997
+title: Keputusan Presiden Nomor 2 Tahun 1997 tentang Pembentukan Pengadilan Tata Usaha
+  Negara Bandaaceh, Pakanbaru, Jambi, Bengkulu, Palangkaraya, Palu, Kendari, Yogyakarta,
+  Mataram, Dan Dili
+tentang: PEMBENTUKAN PENGADILAN TATA USAHA NEGARA BANDAACEH, PAKANBARU, JAMBI, BENGKULU,
+  PALANGKARAYA, PALU, KENDARI, YOGYAKARTA, MATARAM, DAN DILI
+short_name: null
+status: null
+tanggal_penetapan: '1997-01-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_2_1997_1997-01-29
+  kind: asli
+  source: dataset
+  date: '1997-01-29'
+  date_basis: tanggal_penetapan
+  text: keppres_2_1997_1997-01-29.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a05cc4b247662e0ed8e0890bf51ba500882b027aa0c0131a38a69d8c959a3c1e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a05cc4b247662e0ed8e0890bf51ba500882b027aa0c0131a38a69d8c959a3c1e
+  source_title: Keputusan_Presiden_no_02_TH_1997
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: none_known

@@ -1,0 +1,40 @@
+id: keppres_161_1999
+akn: /akn/id/act/keppres/1999/161
+type: keppres
+number: '161'
+year: 1999
+title: Keputusan Presiden Nomor 161 Tahun 1999 tentang Dewan Maritim Indonesia
+tentang: DEWAN MARITIM INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1999-12-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_161_1999_1999-12-13
+  kind: asli
+  source: dataset
+  date: '1999-12-13'
+  date_basis: tanggal_penetapan
+  text: keppres_161_1999_1999-12-13.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:427121429504460cdd056b888ce03a0bc35c5ba949a4d40437d7ffdc8ca061d2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:427121429504460cdd056b888ce03a0bc35c5ba949a4d40437d7ffdc8ca061d2
+  source_title: Keppres_No_161_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:071cba780906ca3808fe6cbadc15fd40aeee471bffe2520e594d5433d06105cf

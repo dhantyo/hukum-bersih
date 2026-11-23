@@ -1,0 +1,49 @@
+id: keppres_30_1986
+akn: /akn/id/act/keppres/1986/30
+type: keppres
+number: '30'
+year: 1986
+title: Keputusan Presiden Nomor 30 Tahun 1986 tentang Pembebasan Bea Masuk Dan Tidak
+  Dipungut Pajak Pertambahan Nilai Serta Pajak Penjualan Atas Barang Mewah Atas Impor
+  Kendararan Bermotor Jenis Sedan Untuk Dipergunakan Dalam Usaha Pertaksian Oleh Koperasi
+  Pengemudi Taksi
+tentang: PEMBEBASAN BEA MASUK DAN TIDAK DIPUNGUT PAJAK PERTAMBAHAN NILAI SERTA PAJAK
+  PENJUALAN ATAS BARANG MEWAH ATAS IMPOR KENDARARAN BERMOTOR JENIS SEDAN UNTUK DIPERGUNAKAN
+  DALAM USAHA PERTAKSIAN OLEH KOPERASI PENGEMUDI TAKSI
+short_name: null
+status: dicabut
+tanggal_penetapan: '1986-07-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_30_1986_1986-07-12
+  kind: asli
+  source: dataset
+  date: '1986-07-12'
+  date_basis: tanggal_penetapan
+  text: keppres_30_1986_1986-07-12.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:dc004bfe09d8100cbfac1ad6792dd9e9196a59080f05bf151a493060b727738d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:dc004bfe09d8100cbfac1ad6792dd9e9196a59080f05bf151a493060b727738d
+  source_title: KEPPRES_NO_30_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:ccf2f46d6b2fc21fe2f3458e6aea465ca0bdf21b636d842dfaf7b3b6e8a040b2
+  amended_by:
+  - sha256:203b8195644c407df5197b63886db1c8e6ea3e1d49d8bfd2d1193692240c9d1a
+  - sha256:2b16e50b8add78f8174c5ae0d33d0a27a7b9f9da6201ee01c1b1aa8ed1953fb6
+  - sha256:7353c4d590e4d53feebe00fd51dd2c22c05b5be3f43f90aeb9625e088140502a

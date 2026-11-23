@@ -1,0 +1,42 @@
+id: keppres_66_1995
+akn: /akn/id/act/keppres/1995/66
+type: keppres
+number: '66'
+year: 1995
+title: Keputusan Presiden Nomor 66 Tahun 1995 tentang Pengesahan Protocol Relating
+  To An Amendment To Article 50 (A) Of The Convention On International Civil Aviation
+  (Protokol Tentang Perubahan Pasal 50 (A) Konvensi Organisasi Penerbangan Sipil Internasional)
+tentang: PENGESAHAN PROTOCOL RELATING TO AN AMENDMENT TO ARTICLE 50 (a) OF THE CONVENTION
+  ON INTERNATIONAL CIVIL AVIATION (PROTOKOL TENTANG PERUBAHAN PASAL 50 (a) KONVENSI
+  ORGANISASI PENERBANGAN SIPIL INTERNASIONAL)
+short_name: null
+status: null
+tanggal_penetapan: '1995-09-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_66_1995_1995-09-22
+  kind: asli
+  source: dataset
+  date: '1995-09-22'
+  date_basis: tanggal_penetapan
+  text: keppres_66_1995_1995-09-22.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2798051f70c1bdba58d1dc2bb18d126eb026f900d0ce8ce93b62938b01a68ed3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2798051f70c1bdba58d1dc2bb18d126eb026f900d0ce8ce93b62938b01a68ed3
+  source_title: Keputusan_Presiden_no_66_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

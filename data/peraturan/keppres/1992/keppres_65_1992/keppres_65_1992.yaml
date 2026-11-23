@@ -1,0 +1,44 @@
+id: keppres_65_1992
+akn: /akn/id/act/keppres/1992/65
+type: keppres
+number: '65'
+year: 1992
+title: Keputusan Presiden Nomor 65 Tahun 1992 tentang Tunjangan Jabatan Pustakawan,
+  Teknisi Penerbangan, Penguji Mutu Barang, Dan Pranata Komputer
+tentang: TUNJANGAN JABATAN PUSTAKAWAN, TEKNISI PENERBANGAN, PENGUJI MUTU BARANG, DAN
+  PRANATA KOMPUTER
+short_name: null
+status: dicabut
+tanggal_penetapan: '1992-11-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_65_1992_1992-11-17
+  kind: asli
+  source: dataset
+  date: '1992-11-17'
+  date_basis: tanggal_penetapan
+  text: keppres_65_1992_1992-11-17.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:27184f9bb76cf56bec0d7b82d71288f989a90461f9e1278d160145249d657757
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:27184f9bb76cf56bec0d7b82d71288f989a90461f9e1278d160145249d657757
+  source_title: Keppres_No_65_TH_1992
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: revoked
+  revoked_by:
+  - sha256:54118732a409c4751d69871e5a4906a4757fe0c70f6241533a12bb4954d86f1d
+  - sha256:67ad7f4afcf3963f56799a57233bfd376fec65290ccd05f48beb64903a57a0a6
+  - sha256:9f723776334966d991dd22283561a55e6da5369e1126475a95623321d551beec

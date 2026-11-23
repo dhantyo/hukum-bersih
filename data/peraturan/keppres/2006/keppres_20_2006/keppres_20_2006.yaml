@@ -1,0 +1,33 @@
+id: keppres_20_2006
+akn: /akn/id/act/keppres/2006/20
+type: keppres
+number: '20'
+year: 2006
+title: Keputusan Presiden Nomor 20 Tahun 2006 tentang Dewan Teknologi Informasi Dan
+  Komunikasi Nasional
+tentang: DEWAN TEKNOLOGI INFORMASI DAN KOMUNIKASI NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-11-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3d84e568aae1dc7cfd95d4fd3977acaec73e5961a6abbbfda45eefcb13c6d99f
+  source_title: Keputusan_Presiden_No_20_th_2006
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: revoked
+  revoked_by:
+  - sha256:2bff595759ba9d73cb939e0edbc1200dfa7b74924ee2e0e27406930972f1e1f8
+  amended_by:
+  - sha256:58c7e3799602e8de013b08137f9533bfab072e76ed38ee38bcde83939d936de0
+  - sha256:e9b86b7580d9c8231e69d85965d57d5a975611930b4fb650f7c4799520a37c68
+parse_error: 'v13: no pasal found in the rebuilt text'

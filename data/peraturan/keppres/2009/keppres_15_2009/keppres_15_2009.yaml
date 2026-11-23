@@ -1,0 +1,42 @@
+id: keppres_15_2009
+akn: /akn/id/act/keppres/2009/15
+type: keppres
+number: '15'
+year: 2009
+title: Keputusan Presiden Nomor 15 Tahun 2009 tentang Pembentukan Kejaksaan Negeri
+  Kabupaten Kediri, Kejaksaan Negeri Andoolo, Kejaksaan Negeri Sei Rampah, Kejaksaan
+  Negeri Pasangkayu, Kejaksaan Negeri Pasarwajo, Dan Kejaksaan Negeri Oelamasi
+tentang: PEMBENTUKAN KEJAKSAAN NEGERI KABUPATEN KEDIRI, KEJAKSAAN NEGERI ANDOOLO,
+  KEJAKSAAN NEGERI SEI RAMPAH, KEJAKSAAN NEGERI PASANGKAYU, KEJAKSAAN NEGERI PASARWAJO,
+  DAN KEJAKSAAN NEGERI OELAMASI
+short_name: null
+status: null
+tanggal_penetapan: '2009-06-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_15_2009_2009-06-11
+  kind: asli
+  source: dataset
+  date: '2009-06-11'
+  date_basis: tanggal_penetapan
+  text: keppres_15_2009_2009-06-11.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fed518dc022f34b83d6d991276167096b1fcc1afbe928345053ff5847d3c3abb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fed518dc022f34b83d6d991276167096b1fcc1afbe928345053ff5847d3c3abb
+  source_title: Keppres_15_Tahun_2009
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

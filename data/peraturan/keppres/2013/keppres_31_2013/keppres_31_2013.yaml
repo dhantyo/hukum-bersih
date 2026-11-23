@@ -1,0 +1,38 @@
+id: keppres_31_2013
+akn: /akn/id/act/keppres/2013/31
+type: keppres
+number: '31'
+year: 2013
+title: Keputusan Presiden Nomor 31 Tahun 2013 tentang Tim Koordinasipercepatanpembangunanrumahsusun
+tentang: TIM KOORDINASIPERCEPATANPEMBANGUNANRUMAHSUSUN
+short_name: null
+status: null
+tanggal_penetapan: '2013-12-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_31_2013_2013-12-06
+  kind: asli
+  source: dataset
+  date: '2013-12-06'
+  date_basis: tanggal_penetapan
+  text: keppres_31_2013_2013-12-06.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d8af2fd129a1425aa154dbe7881ebd044ede140f1516a9ad2ff1fc5967bc806f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d8af2fd129a1425aa154dbe7881ebd044ede140f1516a9ad2ff1fc5967bc806f
+  source_title: Keppres_Nomor_31_Tahun_2013
+  regulation_type: KEPUTUSANPRESIDEN
+  quality: clean
+  chunks: 21
+  status: none_known

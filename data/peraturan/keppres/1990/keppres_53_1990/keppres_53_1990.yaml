@@ -1,0 +1,29 @@
+id: keppres_53_1990
+akn: /akn/id/act/keppres/1990/53
+type: keppres
+number: '53'
+year: 1990
+title: Keputusan Presiden Nomor 53 Tahun 1990 tentang Pasar Modal
+tentang: PASAR MODAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '1990-11-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f81516049f8af1117d7727a34b8e4066a854ff7166d9498aaf6ed5b0f4b8ec44
+  source_title: KEPPRES_NO_53_TH_1990
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 29
+  status: revoked
+  revoked_by:
+  - sha256:296def7355e10cc2afd87b6ed236cbf18a14f1ebc329c40518971f77a6dd6090
+parse_error: 'v13: rebuilt text has 21 pasal, the dataset lists 25'

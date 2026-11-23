@@ -1,0 +1,40 @@
+id: keppres_28_1999
+akn: /akn/id/act/keppres/1999/28
+type: keppres
+number: '28'
+year: 1999
+title: Keputusan Presiden Nomor 28 Tahun 1999 tentang Pengesahan Framework Agreement
+  On The Asean Investment Area (Kerangka Kerja Perjanjian Kawasan Investasi Asean)
+tentang: PENGESAHAN FRAMEWORK AGREEMENT ON THE ASEAN INVESTMENT AREA (KERANGKA KERJA
+  PERJANJIAN KAWASAN INVESTASI ASEAN)
+short_name: null
+status: null
+tanggal_penetapan: '1999-04-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_28_1999_1999-04-06
+  kind: asli
+  source: dataset
+  date: '1999-04-06'
+  date_basis: tanggal_penetapan
+  text: keppres_28_1999_1999-04-06.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e2bdd1ee359e02af44a58ce24a03ef0462db29770dfc04270738678bf872569a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e2bdd1ee359e02af44a58ce24a03ef0462db29770dfc04270738678bf872569a
+  source_title: Keppres_No_28_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

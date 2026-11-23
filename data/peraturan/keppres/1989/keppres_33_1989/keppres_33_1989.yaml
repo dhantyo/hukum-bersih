@@ -1,0 +1,39 @@
+id: keppres_33_1989
+akn: /akn/id/act/keppres/1989/33
+type: keppres
+number: '33'
+year: 1989
+title: Keputusan Presiden Nomor 33 Tahun 1989 tentang Pengesahan International Convention
+  For Safe Containers (Csc)
+tentang: PENGESAHAN INTERNATIONAL CONVENTION FOR SAFE CONTAINERS (CSC)
+short_name: null
+status: null
+tanggal_penetapan: '1989-07-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_33_1989_1989-07-17
+  kind: asli
+  source: dataset
+  date: '1989-07-17'
+  date_basis: tanggal_penetapan
+  text: keppres_33_1989_1989-07-17.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:25a1af483a9291105c4486242b6c35fe34469da6500b532fceb1ae7f79e5ad2e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:25a1af483a9291105c4486242b6c35fe34469da6500b532fceb1ae7f79e5ad2e
+  source_title: KEPPRES_NO_33_TH_1989
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

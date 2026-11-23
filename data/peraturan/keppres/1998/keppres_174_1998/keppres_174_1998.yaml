@@ -1,0 +1,30 @@
+id: keppres_174_1998
+akn: /akn/id/act/keppres/1998/174
+type: keppres
+number: '174'
+year: 1998
+title: Keputusan Presiden Nomor 174 Tahun 1998 tentang Pemanfaatan Kapal Ikan Asin
+  Yang Dinyatakan Dirampas Untuk Negara
+tentang: PEMANFAATAN KAPAL IKAN ASIN YANG DINYATAKAN DIRAMPAS UNTUK NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-09-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2988330c5cbedd64e30130b38a807ac122c1b23237b00148e6117d0f61e9e39a
+  source_title: Keputusan_Presiden_no_174_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 3
+  status: revoked
+  revoked_by:
+  - sha256:5ae762273ed0c91a478e0325ab8cad8ca5974f2804c0ed3d836cacf7e27a3fc2
+parse_error: 'v13: no pasal found in the rebuilt text'

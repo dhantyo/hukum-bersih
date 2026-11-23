@@ -1,0 +1,39 @@
+id: keppres_2_1987
+akn: /akn/id/act/keppres/1987/2
+type: keppres
+number: '2'
+year: 1987
+title: Keputusan Presiden Nomor 2 Tahun 1987 tentang Besarnya Ongkos Naik Haji Tahun
+  1987/1988
+tentang: BESARNYA ONGKOS NAIK HAJI TAHUN 1987/1988
+short_name: null
+status: null
+tanggal_penetapan: '1987-01-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_2_1987_1987-01-26
+  kind: asli
+  source: dataset
+  date: '1987-01-26'
+  date_basis: tanggal_penetapan
+  text: keppres_2_1987_1987-01-26.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:da0a3463f27f3e57d4409c31daf20565c150b0b90fc76c02cc9219db7d747337
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:da0a3463f27f3e57d4409c31daf20565c150b0b90fc76c02cc9219db7d747337
+  source_title: KEPPRES_NO_2_TH_1987
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

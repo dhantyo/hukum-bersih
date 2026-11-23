@@ -1,0 +1,40 @@
+id: keppres_83_1999
+akn: /akn/id/act/keppres/1999/83
+type: keppres
+number: '83'
+year: 1999
+title: Keputusan Presiden Nomor 83 Tahun 1999 tentang Lembaga Koordinasi Dan Pengendalian
+  Peningkatan Kesejahteraan Sosial Penyandang Cacat Presiden Republik Indonesia
+tentang: LEMBAGA KOORDINASI DAN PENGENDALIAN PENINGKATAN KESEJAHTERAAN SOSIAL PENYANDANG
+  CACAT PRESIDEN REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '1999-07-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_83_1999_1999-07-19
+  kind: asli
+  source: dataset
+  date: '1999-07-19'
+  date_basis: tanggal_penetapan
+  text: keppres_83_1999_1999-07-19.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:75ba2e0a3e816fa7d8c363879a8c720d17fd2b187f8602c49ee97818071a9629
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:75ba2e0a3e816fa7d8c363879a8c720d17fd2b187f8602c49ee97818071a9629
+  source_title: Keppres_No_83_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 21
+  status: none_known

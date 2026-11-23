@@ -1,0 +1,38 @@
+id: keppres_38_1994
+akn: /akn/id/act/keppres/1994/38
+type: keppres
+number: '38'
+year: 1994
+title: Keputusan Presiden Nomor 38 Tahun 1994 tentang Pengelolaan Masjid Istiqlal
+tentang: PENGELOLAAN MASJID ISTIQLAL
+short_name: null
+status: null
+tanggal_penetapan: '1994-05-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_38_1994_1994-05-31
+  kind: asli
+  source: dataset
+  date: '1994-05-31'
+  date_basis: tanggal_penetapan
+  text: keppres_38_1994_1994-05-31.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8f73819535a2cb9d11da6937b7a766b91d683161c11531f5bda29ac071620eed
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8f73819535a2cb9d11da6937b7a766b91d683161c11531f5bda29ac071620eed
+  source_title: Keputusan_Presiden_no_38_TH_1994
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

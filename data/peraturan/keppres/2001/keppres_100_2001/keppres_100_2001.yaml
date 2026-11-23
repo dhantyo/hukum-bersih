@@ -1,0 +1,42 @@
+id: keppres_100_2001
+akn: /akn/id/act/keppres/2001/100
+type: keppres
+number: '100'
+year: 2001
+title: Keputusan Presiden Nomor 100 Tahun 2001 tentang Kedudukan, Tugas, Fungsi, Kewenangan,
+  Susunan Organisasi, Dan Tata Kerja Menteri Negara Koordinator
+tentang: KEDUDUKAN, TUGAS, FUNGSI, KEWENANGAN, SUSUNAN ORGANISASI, DAN TATA KERJA
+  MENTERI NEGARA KOORDINATOR
+short_name: null
+status: diubah
+tanggal_penetapan: '2001-09-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_100_2001_2001-09-13
+  kind: asli
+  source: dataset
+  date: '2001-09-13'
+  date_basis: tanggal_penetapan
+  text: keppres_100_2001_2001-09-13.txt
+  pasal_count: 39
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:354aecb887b9432e29cc67d337832a080a8a4fe459942efd029b5da7ace670b1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:354aecb887b9432e29cc67d337832a080a8a4fe459942efd029b5da7ace670b1
+  source_title: Keputusan_Presiden_no_100_th_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 45
+  status: amended
+  amended_by:
+  - sha256:ed0eb4c2206403610c0c7fb9a57a591ab707f6bbfce32f2a54d3393d0685caa6

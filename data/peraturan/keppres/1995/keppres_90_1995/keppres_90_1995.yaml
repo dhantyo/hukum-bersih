@@ -1,0 +1,45 @@
+id: keppres_90_1995
+akn: /akn/id/act/keppres/1995/90
+type: keppres
+number: '90'
+year: 1995
+title: Keputusan Presiden Nomor 90 Tahun 1995 tentang Perlakuan Pajak Penghasilan
+  Atas Bantuan Yang Diberikan Untuk Pembinaan Keluarga Prasejahtera Dan Keluarga Sejahtera
+  I
+tentang: PERLAKUAN PAJAK PENGHASILAN ATAS BANTUAN YANG DIBERIKAN UNTUK PEMBINAAN KELUARGA
+  PRASEJAHTERA DAN KELUARGA SEJAHTERA I
+short_name: null
+status: dicabut
+tanggal_penetapan: '1995-12-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_90_1995_1995-12-30
+  kind: asli
+  source: dataset
+  date: '1995-12-30'
+  date_basis: tanggal_penetapan
+  text: keppres_90_1995_1995-12-30.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e272e62911d3acc067a3fec1c1ab9f00f77bca5d5be2ad2936d3735d9732528c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e272e62911d3acc067a3fec1c1ab9f00f77bca5d5be2ad2936d3735d9732528c
+  source_title: Keputusan_Presiden_no_90_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: revoked
+  revoked_by:
+  - sha256:46522d2ed3504a0631e4b964adb3d1e104853ef2b3473081887492b5d741febc
+  amended_by:
+  - sha256:4d904e846cd8ead07417548d46c587652ad56c3bca321e59782297509bb08c2b

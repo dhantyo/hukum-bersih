@@ -1,0 +1,29 @@
+id: keppres_196_1998
+akn: /akn/id/act/keppres/1998/196
+type: keppres
+number: '196'
+year: 1998
+title: Keputusan Presiden Nomor 196 Tahun 1998 tentang Badan Pengendalian Dampak Lingkungan
+tentang: BADAN PENGENDALIAN DAMPAK LINGKUNGAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-11-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b2d7e6452f81d76db5c5a99e4e294b62b1776eab331b55741de1f107078a950d
+  source_title: Keputusan_Presiden_no_196_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 36
+  status: revoked
+  revoked_by:
+  - sha256:50461ada6d10e105824367aa5b3554de29d9979fa4f2047b0d43803692605f6f
+parse_error: 'v13: rebuilt text has 13 pasal, the dataset lists 27'

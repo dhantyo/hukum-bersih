@@ -1,0 +1,40 @@
+id: keppres_45_1985
+akn: /akn/id/act/keppres/1985/45
+type: keppres
+number: '45'
+year: 1985
+title: Keputusan Presiden Nomor 45 Tahun 1985 tentang Penangguhan Pelaksanaan Beberapa
+  Ketentuan Yang Diatur Dalam Ordonansi Bea Dan Reglemen A Presiden Republik Indonesia
+tentang: PENANGGUHAN PELAKSANAAN BEBERAPA KETENTUAN YANG DIATUR DALAM ORDONANSI BEA
+  DAN REGLEMEN A Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1985-04-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_45_1985_1985-04-11
+  kind: asli
+  source: dataset
+  date: '1985-04-11'
+  date_basis: tanggal_penetapan
+  text: keppres_45_1985_1985-04-11.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5f5affbc5f52d9fb23890bfa476add2fb821d97cee52a6fbf158903bcf5c1374
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5f5affbc5f52d9fb23890bfa476add2fb821d97cee52a6fbf158903bcf5c1374
+  source_title: KEPPRES_NO_45_TH_1985
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

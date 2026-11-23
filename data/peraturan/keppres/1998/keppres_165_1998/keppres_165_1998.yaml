@@ -1,0 +1,38 @@
+id: keppres_165_1998
+akn: /akn/id/act/keppres/1998/165
+type: keppres
+number: '165'
+year: 1998
+title: Keputusan Presiden Nomor 165 Tahun 1998 tentang Terpadu Seram
+tentang: TERPADU SERAM
+short_name: null
+status: null
+tanggal_penetapan: '1998-09-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_165_1998_1998-09-22
+  kind: asli
+  source: dataset
+  date: '1998-09-22'
+  date_basis: tanggal_penetapan
+  text: keppres_165_1998_1998-09-22.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6e1422563cdac462a46c4b90c1017a9a01c214c297489b2db843bb8df56a637a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6e1422563cdac462a46c4b90c1017a9a01c214c297489b2db843bb8df56a637a
+  source_title: Keputusan_Presiden_no_165_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

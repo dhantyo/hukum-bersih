@@ -1,0 +1,39 @@
+id: keppres_173_1998
+akn: /akn/id/act/keppres/1998/173
+type: keppres
+number: '173'
+year: 1998
+title: Keputusan Presiden Nomor 173 Tahun 1998 tentang Perubahan Atas Keputusan Presiden
+  Nomor 120 Tahun 1993 Tentang
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 120 TAHUN 1993 TENTANG
+short_name: null
+status: null
+tanggal_penetapan: '1998-09-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_173_1998_1998-09-24
+  kind: asli
+  source: dataset
+  date: '1998-09-24'
+  date_basis: tanggal_penetapan
+  text: keppres_173_1998_1998-09-24.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:dfe504faea08fce6c334ec6c70a86b36cdab731a56f223a041fcdcb7a65fd673
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:dfe504faea08fce6c334ec6c70a86b36cdab731a56f223a041fcdcb7a65fd673
+  source_title: Keputusan_Presiden_no_173_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 4
+  status: none_known

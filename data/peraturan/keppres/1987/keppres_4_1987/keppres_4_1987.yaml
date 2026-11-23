@@ -1,0 +1,42 @@
+id: keppres_4_1987
+akn: /akn/id/act/keppres/1987/4
+type: keppres
+number: '4'
+year: 1987
+title: Keputusan Presiden Nomor 4 Tahun 1987 tentang Perubahan Keputusan Presiden
+  Nomor 15 Tahun 1984 Tentang Susunan Organisasi Departemen Sebagaimana Telah Diubah
+  Terakhir Dengan Keputusan Presiden Nomor 12 Tahun 1986
+tentang: PERUBAHAN KEPUTUSAN PRESIDEN NOMOR 15 TAHUN 1984 TENTANG SUSUNAN ORGANISASI
+  DEPARTEMEN SEBAGAIMANA TELAH DIUBAH TERAKHIR DENGAN KEPUTUSAN PRESIDEN NOMOR 12
+  TAHUN 1986
+short_name: null
+status: null
+tanggal_penetapan: '1987-02-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_4_1987_1987-02-06
+  kind: asli
+  source: dataset
+  date: '1987-02-06'
+  date_basis: tanggal_penetapan
+  text: keppres_4_1987_1987-02-06.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:364cfd5efbaeb30eb4b3063a1ca5dc4dcc672eb5f50a8fbc8bd6fc8938b3e6ea
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:364cfd5efbaeb30eb4b3063a1ca5dc4dcc672eb5f50a8fbc8bd6fc8938b3e6ea
+  source_title: KEPPRES_NO_4_TH_1987
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

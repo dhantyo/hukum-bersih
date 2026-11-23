@@ -1,0 +1,41 @@
+id: keppres_3_1997
+akn: /akn/id/act/keppres/1997/3
+type: keppres
+number: '3'
+year: 1997
+title: Keputusan Presiden Nomor 3 Tahun 1997 tentang Pengawasan Dan Pengendalian Minuman
+  Beralkohol
+tentang: PENGAWASAN DAN PENGENDALIAN MINUMAN BERALKOHOL
+short_name: null
+status: dicabut
+tanggal_penetapan: '1997-01-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_3_1997_1997-01-31
+  kind: asli
+  source: dataset
+  date: '1997-01-31'
+  date_basis: tanggal_penetapan
+  text: keppres_3_1997_1997-01-31.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:be6ee048ca81ff5e51e6985df2b7c2b00a2a9247539eab330c8413b839a0f5e4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:be6ee048ca81ff5e51e6985df2b7c2b00a2a9247539eab330c8413b839a0f5e4
+  source_title: Keputusan_Presiden_no_03_TH_1997
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:7e8cbce241d1068c25647feab40e031a3e6db94c20802c8cc68d1a38ea140b57

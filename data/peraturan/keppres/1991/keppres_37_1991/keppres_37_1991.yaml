@@ -1,0 +1,39 @@
+id: keppres_37_1991
+akn: /akn/id/act/keppres/1991/37
+type: keppres
+number: '37'
+year: 1991
+title: Keputusan Presiden Nomor 37 Tahun 1991 tentang Pengangkatan Dokter Sebagai
+  Pegawai Tidak Tetap Selama Masa Bakti
+tentang: PENGANGKATAN DOKTER SEBAGAI PEGAWAI TIDAK TETAP SELAMA MASA BAKTI
+short_name: null
+status: null
+tanggal_penetapan: '1991-08-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_37_1991_1991-08-13
+  kind: asli
+  source: dataset
+  date: '1991-08-13'
+  date_basis: tanggal_penetapan
+  text: keppres_37_1991_1991-08-13.txt
+  pasal_count: 22
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c8f7748c064d73463580ac391b01bf825bf547aa8984090116a412447b726ef6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c8f7748c064d73463580ac391b01bf825bf547aa8984090116a412447b726ef6
+  source_title: KEPPRES_NO_37_TH_1991
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 25
+  status: none_known

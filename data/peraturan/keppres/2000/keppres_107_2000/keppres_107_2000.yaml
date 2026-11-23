@@ -1,0 +1,42 @@
+id: keppres_107_2000
+akn: /akn/id/act/keppres/2000/107
+type: keppres
+number: '107'
+year: 2000
+title: Keputusan Presiden Nomor 107 Tahun 2000 tentang Panitia Nasional Pengangkatan
+  Dan Pemanfaatan Benda Berharga Asal Muatan Kapal Yang Tenggelam
+tentang: PANITIA NASIONAL PENGANGKATAN DAN PEMANFAATAN BENDA BERHARGA ASAL MUATAN
+  KAPAL YANG TENGGELAM
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-07-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_107_2000_2000-07-26
+  kind: asli
+  source: dataset
+  date: '2000-07-26'
+  date_basis: tanggal_penetapan
+  text: keppres_107_2000_2000-07-26.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ea89e4e993345052ea546a79c0425cc517e04ece817435d025135493469701e1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ea89e4e993345052ea546a79c0425cc517e04ece817435d025135493469701e1
+  source_title: Keputusan_Presiden_no_107_TH_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:6f3d575fd27093dd8fc802ffbf51a95f9c9a05cda5f4acb779458e1abb848e7f

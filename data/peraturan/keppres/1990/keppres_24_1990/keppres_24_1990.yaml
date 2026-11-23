@@ -1,0 +1,38 @@
+id: keppres_24_1990
+akn: /akn/id/act/keppres/1990/24
+type: keppres
+number: '24'
+year: 1990
+title: Keputusan Presiden Nomor 24 Tahun 1990 tentang Pembubaran Dewan Telekomunikasi
+tentang: PEMBUBARAN DEWAN TELEKOMUNIKASI
+short_name: null
+status: null
+tanggal_penetapan: '1990-06-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_24_1990_1990-06-12
+  kind: asli
+  source: dataset
+  date: '1990-06-12'
+  date_basis: tanggal_penetapan
+  text: keppres_24_1990_1990-06-12.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c4098445ff0068e173b22e5447372f378b8a0fb8c3ff80a5b9db6f09625a64a7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c4098445ff0068e173b22e5447372f378b8a0fb8c3ff80a5b9db6f09625a64a7
+  source_title: KEPPRES_NO_24_TH_1990
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

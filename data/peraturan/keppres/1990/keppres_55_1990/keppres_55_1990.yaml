@@ -1,0 +1,40 @@
+id: keppres_55_1990
+akn: /akn/id/act/keppres/1990/55
+type: keppres
+number: '55'
+year: 1990
+title: Keputusan Presiden Nomor 55 Tahun 1990 tentang Pembangunan Jembatan Surabaya-Madura
+tentang: PEMBANGUNAN JEMBATAN SURABAYA-MADURA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1990-12-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_55_1990_1990-12-14
+  kind: asli
+  source: dataset
+  date: '1990-12-14'
+  date_basis: tanggal_penetapan
+  text: keppres_55_1990_1990-12-14.txt
+  pasal_count: 16
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c7b10e7104ff2c83b3a4ce78e0479ecbcc6bf685ddbffc76b256b52b48386804
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c7b10e7104ff2c83b3a4ce78e0479ecbcc6bf685ddbffc76b256b52b48386804
+  source_title: KEPPRES_NO_55_TH_1990
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 21
+  status: revoked
+  revoked_by:
+  - sha256:edf251eaa72fdec1b7850e443309f5df27683005e8dbfbf7fec0d33a4b0a5e08

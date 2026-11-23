@@ -1,0 +1,43 @@
+id: keppres_32_1986
+akn: /akn/id/act/keppres/1986/32
+type: keppres
+number: '32'
+year: 1986
+title: Keputusan Presiden Nomor 32 Tahun 1986 tentang Tim Pendayagunaan Pelaksanaan
+  Proyek-Proyek Pembangunan Dengan Dana Luar Negeri
+tentang: TIM PENDAYAGUNAAN PELAKSANAAN PROYEK-PROYEK PEMBANGUNAN DENGAN DANA LUAR
+  NEGERI
+short_name: null
+status: diubah
+tanggal_penetapan: '1986-07-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_32_1986_1986-07-29
+  kind: asli
+  source: dataset
+  date: '1986-07-29'
+  date_basis: tanggal_penetapan
+  text: keppres_32_1986_1986-07-29.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6056e6158ab1b68c828c151d57060b61316c1111ee57d300ecf3e5dae4c32aaf
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6056e6158ab1b68c828c151d57060b61316c1111ee57d300ecf3e5dae4c32aaf
+  source_title: KEPPRES_NO_32_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: amended
+  amended_by:
+  - sha256:ccb92d3ba9cc8d3a7eb2f73a4dd50f0d2e053e2fd5193e8b0c3501df34c65094
+  - sha256:f2bdd26db7a0d9401bde8c8399074952fb8d8b2c717b39cba961b9319559db74

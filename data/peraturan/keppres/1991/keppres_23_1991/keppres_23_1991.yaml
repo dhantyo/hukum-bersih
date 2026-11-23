@@ -1,0 +1,39 @@
+id: keppres_23_1991
+akn: /akn/id/act/keppres/1991/23
+type: keppres
+number: '23'
+year: 1991
+title: Keputusan Presiden Nomor 23 Tahun 1991 tentang Daftar Bidang Usaha Yang Tertutup
+  Bagi Penanaman Modal
+tentang: DAFTAR BIDANG USAHA YANG TERTUTUP BAGI PENANAMAN MODAL
+short_name: null
+status: null
+tanggal_penetapan: '1991-06-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_23_1991_1991-06-03
+  kind: asli
+  source: dataset
+  date: '1991-06-03'
+  date_basis: tanggal_penetapan
+  text: keppres_23_1991_1991-06-03.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a56c9add79865a052c1e2ba6e88d7ee570fd8b0308a2aca0c869140faf283695
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a56c9add79865a052c1e2ba6e88d7ee570fd8b0308a2aca0c869140faf283695
+  source_title: KEPPRES_NO_23_TH_1991
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

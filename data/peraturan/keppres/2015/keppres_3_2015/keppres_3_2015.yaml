@@ -1,0 +1,42 @@
+id: keppres_3_2015
+akn: /akn/id/act/keppres/2015/3
+type: keppres
+number: '3'
+year: 2015
+title: Keputusan Presiden Nomor 3 Tahun 2015 tentang Panitia Nasional Penyelenggara
+  Konferensi Tingkat Tinggi Asia-Afrika Tahun 2015 Dalam Rangka Peringatan Ke-60 Konferensi
+  Asia-Afrika Dan Peringatan Ke-10 New Asianafrican Strategic Partnership
+tentang: PANITIA NASIONAL PENYELENGGARA KONFERENSI TINGKAT TINGGI ASIA-AFRIKA TAHUN
+  2015 DALAM RANGKA PERINGATAN KE-60 KONFERENSI ASIA-AFRIKA DAN PERINGATAN KE-10 NEW
+  ASIANAFRICAN STRATEGIC PARTNERSHIP
+short_name: null
+status: null
+tanggal_penetapan: '2015-02-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_3_2015_2015-02-05
+  kind: asli
+  source: dataset
+  date: '2015-02-05'
+  date_basis: tanggal_penetapan
+  text: keppres_3_2015_2015-02-05.txt
+  pasal_count: 15
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:07a5255d2412a8b456ed3b4f7721c821e7b838df12b15f74674cf96b43d05d1b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:07a5255d2412a8b456ed3b4f7721c821e7b838df12b15f74674cf96b43d05d1b
+  source_title: Keppres_Nomor_3_Tahun_2015
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 26
+  status: none_known

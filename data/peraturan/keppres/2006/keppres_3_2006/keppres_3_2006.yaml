@@ -1,0 +1,42 @@
+id: keppres_3_2006
+akn: /akn/id/act/keppres/2006/3
+type: keppres
+number: '3'
+year: 2006
+title: Keputusan Presiden Nomor 3 Tahun 2006 tentang Tim Nasional Peningkatan Ekspor
+  Dan Peningkatan Investasi
+tentang: TIM NASIONAL PENINGKATAN EKSPOR DAN PENINGKATAN INVESTASI
+short_name: null
+status: diubah
+tanggal_penetapan: '2006-03-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_3_2006_2006-03-16
+  kind: asli
+  source: dataset
+  date: '2006-03-16'
+  date_basis: tanggal_penetapan
+  text: keppres_3_2006_2006-03-16.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:98d0a2d730c1c286d6fb4259af01f6ba5b983b6778c8108039805aa5a999a791
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:98d0a2d730c1c286d6fb4259af01f6ba5b983b6778c8108039805aa5a999a791
+  source_title: Kep_Pres_No._3_Tahun_2006
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: amended
+  amended_by:
+  - sha256:6fa3888d87a4f04b72b54eb275ee45f51a7fa62bec3cfefec5816a18e6a6b661
+  - sha256:b3103efbdb8113ff2d3bcf98e799e0cee0d1f48074d4fef792b4b073d417ab1d

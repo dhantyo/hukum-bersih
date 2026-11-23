@@ -1,0 +1,41 @@
+id: keppres_140_1999
+akn: /akn/id/act/keppres/1999/140
+type: keppres
+number: '140'
+year: 1999
+title: Keputusan Presiden Nomor 140 Tahun 1999 tentang Tunjangan Khusus Bagi Veteran
+  Republik Indonesia Penerima Tunjangan Veteran Yang Menetap Dan Bertempat Tinggal
+  Di Daerah Propinsi Irian Jaya
+tentang: TUNJANGAN KHUSUS BAGI VETERAN REPUBLIK INDONESIA PENERIMA TUNJANGAN VETERAN
+  YANG MENETAP DAN BERTEMPAT TINGGAL DI DAERAH PROPINSI IRIAN JAYA
+short_name: null
+status: null
+tanggal_penetapan: '1999-11-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_140_1999_1999-11-20
+  kind: asli
+  source: dataset
+  date: '1999-11-20'
+  date_basis: tanggal_penetapan
+  text: keppres_140_1999_1999-11-20.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:525cfb6fc9db6637f36c025158370ad94a3e85b401e9180001f1ab0f71e963fc
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:525cfb6fc9db6637f36c025158370ad94a3e85b401e9180001f1ab0f71e963fc
+  source_title: Keppres_No_140_Tahun_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

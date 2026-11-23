@@ -1,0 +1,45 @@
+id: keppres_162_1999
+akn: /akn/id/act/keppres/1999/162
+type: keppres
+number: '162'
+year: 1999
+title: Keputusan Presiden Nomor 162 Tahun 1999 tentang Pembentukan Tim Penilai Akhir
+  Pengangkatan, Pemindahan Dan Pemberhentian Dalam Dan Dari Jabatan Struktural Eselon
+  I
+tentang: PEMBENTUKAN TIM PENILAI AKHIR PENGANGKATAN, PEMINDAHAN DAN PEMBERHENTIAN
+  DALAM DAN DARI JABATAN STRUKTURAL ESELON I
+short_name: null
+status: dicabut
+tanggal_penetapan: '1999-12-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_162_1999_1999-12-13
+  kind: asli
+  source: dataset
+  date: '1999-12-13'
+  date_basis: tanggal_penetapan
+  text: keppres_162_1999_1999-12-13.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bd4aaed35e51527f226e270422987701feefb8f057d26a2151d8bf7d24dbad63
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bd4aaed35e51527f226e270422987701feefb8f057d26a2151d8bf7d24dbad63
+  source_title: Keppres_No_162_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:a04d933822e25e2000f81af52d99dca92e3263520d86dfa4d883604e0e8f1f82
+  amended_by:
+  - sha256:7ff7e1b5d77cd88f27bc3ff7f54f10e5156b6a2b1b78a9608e0820dbce19fd26

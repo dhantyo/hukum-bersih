@@ -1,0 +1,41 @@
+id: keppres_62_2004
+akn: /akn/id/act/keppres/2004/62
+type: keppres
+number: '62'
+year: 2004
+title: Keputusan Presiden Nomor 62 Tahun 2004 tentang Penetapan Ketua Dan Wakil Ketua
+  Bidang Panitia Nasional Penyelenggara Konferensi Tingkat Tinggi Asia Afrika 2005
+  Dan Peringatan 50 Tahun Konferensi Asia Afrika
+tentang: PENETAPAN KETUA DAN WAKIL KETUA BIDANG PANITIA NASIONAL PENYELENGGARA KONFERENSI
+  TINGKAT TINGGI ASIA AFRIKA 2005 DAN PERINGATAN 50 TAHUN KONFERENSI ASIA AFRIKA
+short_name: null
+status: null
+tanggal_penetapan: '2004-08-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_62_2004_2004-08-05
+  kind: asli
+  source: dataset
+  date: '2004-08-05'
+  date_basis: tanggal_penetapan
+  text: keppres_62_2004_2004-08-05.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:18cbd38c6ab5b61ad8e74f7902721ce2a070005714ea31930dda857074088c10
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:18cbd38c6ab5b61ad8e74f7902721ce2a070005714ea31930dda857074088c10
+  source_title: KEPPRES_No.62_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

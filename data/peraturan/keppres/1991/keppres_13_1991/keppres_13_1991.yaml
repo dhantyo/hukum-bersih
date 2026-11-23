@@ -1,0 +1,42 @@
+id: keppres_13_1991
+akn: /akn/id/act/keppres/1991/13
+type: keppres
+number: '13'
+year: 1991
+title: Keputusan Presiden Nomor 13 Tahun 1991 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Republik Argentina Untuk Kerjasama
+  Dalam Penggunaan Tenaga Nuklir Untuk Maksud-Maksud Damai
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  REPUBLIK ARGENTINA UNTUK KERJASAMA DALAM PENGGUNAAN TENAGA NUKLIR UNTUK MAKSUD-MAKSUD
+  DAMAI
+short_name: null
+status: null
+tanggal_penetapan: '1991-03-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_13_1991_1991-03-09
+  kind: asli
+  source: dataset
+  date: '1991-03-09'
+  date_basis: tanggal_penetapan
+  text: keppres_13_1991_1991-03-09.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:216c38dc307a8550c57fd28f912907f5e8c47d00a292b64efa244421b5642c51
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:216c38dc307a8550c57fd28f912907f5e8c47d00a292b64efa244421b5642c51
+  source_title: KEPPRES_NO_13_TH_1991
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

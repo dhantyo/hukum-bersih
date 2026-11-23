@@ -1,0 +1,41 @@
+id: keppres_174_2000
+akn: /akn/id/act/keppres/2000/174
+type: keppres
+number: '174'
+year: 2000
+title: Keputusan Presiden Nomor 174 Tahun 2000 tentang Susunan Organisasi Dan Tugas
+  Menteri Negara Koordinator
+tentang: SUSUNAN ORGANISASI DAN TUGAS MENTERI NEGARA KOORDINATOR
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-12-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_174_2000_2000-12-15
+  kind: asli
+  source: dataset
+  date: '2000-12-15'
+  date_basis: tanggal_penetapan
+  text: keppres_174_2000_2000-12-15.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:538482677a132abdc1cd3cdd29b002c17225cc20df393bc741e21a77fdd51f12
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:538482677a132abdc1cd3cdd29b002c17225cc20df393bc741e21a77fdd51f12
+  source_title: Keputusan_Presiden_no_174_TH_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:a599fce152568572dbabc700e6d12a3ec74d85344a455e7f414dcc1d509cffed

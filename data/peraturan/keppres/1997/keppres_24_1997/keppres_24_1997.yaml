@@ -1,0 +1,32 @@
+id: keppres_24_1997
+akn: /akn/id/act/keppres/1997/24
+type: keppres
+number: '24'
+year: 1997
+title: Keputusan Presiden Nomor 24 Tahun 1997 tentang Perubahan Atas Keputusan Nomor
+  29 Tahun 1990 Tentang Dana Reboisasi Sebagaimana Telah Beberapa Kali Diubah, Terakhir
+  Dengan Keputusan Presiden Nomor 40 Tahun 1993
+tentang: PERUBAHAN ATAS KEPUTUSAN NOMOR 29 TAHUN 1990 TENTANG DANA REBOISASI SEBAGAIMANA
+  TELAH BEBERAPA KALI DIUBAH, TERAKHIR DENGAN KEPUTUSAN PRESIDEN NOMOR 40 TAHUN 1993
+short_name: null
+status: dicabut
+tanggal_penetapan: '1997-06-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:37ac3290acf4959b1385b0f83d275771daa085e187663f41f5ba4bb9b8d4a899
+  source_title: Keputusan_Presiden_no_24_TH_1997
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: revoked
+  revoked_by:
+  - sha256:5d69a95ffef1c9a11b9ffbd76eded02bf1cecaf0d8fee38e42d6adeb35cf02d5
+parse_error: 'v13: rebuilt text has 2 pasal, the dataset lists 3'

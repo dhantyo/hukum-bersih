@@ -1,0 +1,41 @@
+id: keppres_54_1999
+akn: /akn/id/act/keppres/1999/54
+type: keppres
+number: '54'
+year: 1999
+title: Keputusan Presiden Nomor 54 Tahun 1999 tentang Pengesahan General Agreement
+  Of Development Cooperation Between The Government Of The Republic Of Indonesia And
+  The Government Of Australia
+tentang: PENGESAHAN GENERAL AGREEMENT OF DEVELOPMENT COOPERATION BETWEEN THE GOVERNMENT
+  OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT OF AUSTRALIA
+short_name: null
+status: null
+tanggal_penetapan: '1999-06-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_54_1999_1999-06-04
+  kind: asli
+  source: dataset
+  date: '1999-06-04'
+  date_basis: tanggal_penetapan
+  text: keppres_54_1999_1999-06-04.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5de409237d0cdd0a4888fc189ba9ca8082f7b25e37e7aa59139bb5bce6155276
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5de409237d0cdd0a4888fc189ba9ca8082f7b25e37e7aa59139bb5bce6155276
+  source_title: Keppres_No_54_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: unusable
+  chunks: 19
+  status: none_known

@@ -1,0 +1,33 @@
+id: keppres_16_1988
+akn: /akn/id/act/keppres/1988/16
+type: keppres
+number: '16'
+year: 1988
+title: Keputusan Presiden Nomor 16 Tahun 1988 tentang Penetapan Jenis Kendaraan Bermotor
+  Dan Besarnya Tarif Tol Untuk Jalan Tol Jakarta-Cikampek
+tentang: PENETAPAN JENIS KENDARAAN BERMOTOR DAN BESARNYA TARIF TOL UNTUK JALAN TOL
+  JAKARTA-CIKAMPEK
+short_name: null
+status: dicabut
+tanggal_penetapan: '1988-05-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:00630e844bb74e82014651836d1f96278d8cd6d105c9cd4b7a85ed46c4a3fb3d
+  source_title: KEPPRES_NO_16_TH_1988
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 4
+  status: revoked
+  revoked_by:
+  - sha256:e228beebeaac81fa54cde108aa929316e54c55abc0b208f823fb43abca940e9f
+  amended_by:
+  - sha256:1ebfa6781806b2e3ea7f2b09b50ba794ff87b0861ca34adcc86204b6d2b7e876
+parse_error: 'v13: no pasal found in the rebuilt text'

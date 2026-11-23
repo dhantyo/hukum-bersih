@@ -1,0 +1,40 @@
+id: keppres_43_1991
+akn: /akn/id/act/keppres/1991/43
+type: keppres
+number: '43'
+year: 1991
+title: Keputusan Presiden Nomor 43 Tahun 1991 tentang Konservasi Energi
+tentang: KONSERVASI ENERGI
+short_name: null
+status: dicabut
+tanggal_penetapan: '1991-09-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_43_1991_1991-09-25
+  kind: asli
+  source: dataset
+  date: '1991-09-25'
+  date_basis: tanggal_penetapan
+  text: keppres_43_1991_1991-09-25.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:739a906c6f9ef502e15f6bfc264f6ae02466319a758f52fac511dcd3f1c3fa55
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:739a906c6f9ef502e15f6bfc264f6ae02466319a758f52fac511dcd3f1c3fa55
+  source_title: KEPPRES_NO_43_TH_1991
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:73003a1075c9fd7d65b14a96da0a881ad7b4d0eb64d2bcd496b60fc100d72c39

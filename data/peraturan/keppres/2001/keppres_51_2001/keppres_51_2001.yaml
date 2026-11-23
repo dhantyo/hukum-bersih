@@ -1,0 +1,40 @@
+id: keppres_51_2001
+akn: /akn/id/act/keppres/2001/51
+type: keppres
+number: '51'
+year: 2001
+title: Keputusan Presiden Nomor 51 Tahun 2001 tentang Pengesahan Persetujuan Perdagangan
+  Antara Pemerintah Republik Indonesia Dan Pemerintah Papua New Guinea
+tentang: PENGESAHAN PERSETUJUAN PERDAGANGAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN
+  PEMERINTAH PAPUA NEW GUINEA
+short_name: null
+status: null
+tanggal_penetapan: '2001-04-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_51_2001_2001-04-17
+  kind: asli
+  source: dataset
+  date: '2001-04-17'
+  date_basis: tanggal_penetapan
+  text: keppres_51_2001_2001-04-17.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:62290ab5de3802f28287ebbe50873efcfff60a6ffd81230370521d254d201ca6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:62290ab5de3802f28287ebbe50873efcfff60a6ffd81230370521d254d201ca6
+  source_title: Keputusan_Presiden_no_51_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

@@ -1,0 +1,38 @@
+id: keppres_63_2003
+akn: /akn/id/act/keppres/2003/63
+type: keppres
+number: '63'
+year: 2003
+title: Keputusan Presiden Nomor 63 Tahun 2003 tentang Dewan Gula Indonesia
+tentang: DEWAN GULA INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2003-08-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_63_2003_2003-08-11
+  kind: asli
+  source: dataset
+  date: '2003-08-11'
+  date_basis: tanggal_penetapan
+  text: keppres_63_2003_2003-08-11.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:cd36b965db77f8e0f9239c2900e064a613b4b49036d788af781e2f48e501207c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:cd36b965db77f8e0f9239c2900e064a613b4b49036d788af781e2f48e501207c
+  source_title: Keputusan_Presiden_no_63_th_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: none_known

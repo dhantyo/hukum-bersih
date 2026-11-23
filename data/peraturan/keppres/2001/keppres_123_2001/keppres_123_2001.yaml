@@ -1,0 +1,43 @@
+id: keppres_123_2001
+akn: /akn/id/act/keppres/2001/123
+type: keppres
+number: '123'
+year: 2001
+title: Keputusan Presiden Nomor 123 Tahun 2001 tentang Tim Koordinasi Pengelolaan
+  Sumberdaya Air
+tentang: TIM KOORDINASI PENGELOLAAN SUMBERDAYA AIR
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-11-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_123_2001_2001-11-30
+  kind: asli
+  source: dataset
+  date: '2001-11-30'
+  date_basis: tanggal_penetapan
+  text: keppres_123_2001_2001-11-30.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5a9dfb705e75ee38184056605c9df596a28ba7726df6edfc10cc8e423ace7dc3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5a9dfb705e75ee38184056605c9df596a28ba7726df6edfc10cc8e423ace7dc3
+  source_title: Keputusan_Presiden_no_123_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 19
+  status: revoked
+  revoked_by:
+  - sha256:34f00e33fcad323c1a9384944d71893dd55272ad341090325d74d8fe9b3b23b8
+  amended_by:
+  - sha256:f05ab85406a3c27191943bd317cefe7f3dfff752e1298204e3e54b6a5d2033c0

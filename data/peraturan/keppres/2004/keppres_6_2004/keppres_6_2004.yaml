@@ -1,0 +1,41 @@
+id: keppres_6_2004
+akn: /akn/id/act/keppres/2004/6
+type: keppres
+number: '6'
+year: 2004
+title: Keputusan Presiden Nomor 6 Tahun 2004 tentang Tunjangan Jabatan Fungsional
+  Pranata Komputer
+tentang: TUNJANGAN JABATAN FUNGSIONAL PRANATA KOMPUTER
+short_name: null
+status: dicabut
+tanggal_penetapan: '2004-01-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_6_2004_2004-01-19
+  kind: asli
+  source: dataset
+  date: '2004-01-19'
+  date_basis: tanggal_penetapan
+  text: keppres_6_2004_2004-01-19.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9f723776334966d991dd22283561a55e6da5369e1126475a95623321d551beec
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9f723776334966d991dd22283561a55e6da5369e1126475a95623321d551beec
+  source_title: KEPPRES_No.6_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:56d02510cd8e28ab8f6720911517f774c3d560b2847d398ed79f6c98448dafcf

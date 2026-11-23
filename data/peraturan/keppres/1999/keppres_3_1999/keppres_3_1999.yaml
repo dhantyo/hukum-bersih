@@ -1,0 +1,40 @@
+id: keppres_3_1999
+akn: /akn/id/act/keppres/1999/3
+type: keppres
+number: '3'
+year: 1999
+title: Keputusan Presiden Nomor 3 Tahun 1999 tentang Pernyataan Persetujuan Atas Kenaikan
+  Kuota Republik Indonesia Pada Dana Moneter Internasional
+tentang: PERNYATAAN PERSETUJUAN ATAS KENAIKAN KUOTA REPUBLIK INDONESIA PADA DANA MONETER
+  INTERNASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '1999-01-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_3_1999_1999-01-08
+  kind: asli
+  source: dataset
+  date: '1999-01-08'
+  date_basis: tanggal_penetapan
+  text: keppres_3_1999_1999-01-08.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:443531253577a929e1bde46d293038005c35494b3e48cf31ff3948e582e8a954
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:443531253577a929e1bde46d293038005c35494b3e48cf31ff3948e582e8a954
+  source_title: Ke_Pres_No.3_Tahun_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

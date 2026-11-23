@@ -1,0 +1,41 @@
+id: keppres_165_1999
+akn: /akn/id/act/keppres/1999/165
+type: keppres
+number: '165'
+year: 1999
+title: Keputusan Presiden Nomor 165 Tahun 1999 tentang Pembentukan Dewan Pengembangan
+  Usaha Nasional
+tentang: PEMBENTUKAN DEWAN PENGEMBANGAN USAHA NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '1999-12-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_165_1999_1999-12-16
+  kind: asli
+  source: dataset
+  date: '1999-12-16'
+  date_basis: tanggal_penetapan
+  text: keppres_165_1999_1999-12-16.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3f22cac94ec5777cf4bdb52f0f8a9738dcff97ef4e16cc16a3198a8de8c74282
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3f22cac94ec5777cf4bdb52f0f8a9738dcff97ef4e16cc16a3198a8de8c74282
+  source_title: Keppres_No_165_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:ed20775fb0a344c8ca4f2214782d851b74b87a8bb9840406d2692282fcd91ddb

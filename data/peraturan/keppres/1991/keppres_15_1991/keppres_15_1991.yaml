@@ -1,0 +1,44 @@
+id: keppres_15_1991
+akn: /akn/id/act/keppres/1991/15
+type: keppres
+number: '15'
+year: 1991
+title: Keputusan Presiden Nomor 15 Tahun 1991 tentang Penerimaan Pinjaman Luar Negeri
+  Dan Penerbitan Jaminan Bank Untuk Penerimaan Pinjaman Luar Negeri Oleh Bank Milik
+  Negara Dan Bank Pembangunan Daerah Yang Ditetapkan Sebagai Bank Devisa
+tentang: PENERIMAAN PINJAMAN LUAR NEGERI DAN PENERBITAN JAMINAN BANK UNTUK PENERIMAAN
+  PINJAMAN LUAR NEGERI OLEH BANK MILIK NEGARA DAN BANK PEMBANGUNAN DAERAH YANG DITETAPKAN
+  SEBAGAI BANK DEVISA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1991-03-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_15_1991_1991-03-18
+  kind: asli
+  source: dataset
+  date: '1991-03-18'
+  date_basis: tanggal_penetapan
+  text: keppres_15_1991_1991-03-18.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:982ca07a513e1fcf3893ff4c9967a418e97df5ed8fc42ac384febf5032ee26be
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:982ca07a513e1fcf3893ff4c9967a418e97df5ed8fc42ac384febf5032ee26be
+  source_title: KEPPRES_NO_15_TH_1991
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: revoked
+  revoked_by:
+  - sha256:81aaf708ccd0ddd876eeb12c3b5bd97be789f71c9277cf146957c8438d7aa21f

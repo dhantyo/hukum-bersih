@@ -1,0 +1,40 @@
+id: keppres_116_2001
+akn: /akn/id/act/keppres/2001/116
+type: keppres
+number: '116'
+year: 2001
+title: Keputusan Presiden Nomor 116 Tahun 2001 tentang Anggotakomisi Pemilihan Umum
+tentang: ANGGOTAKOMISI PEMILIHAN UMUM
+short_name: null
+status: dicabut
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_116_2001_2001
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: keppres_116_2001_2001.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:35ca6738dfc41a4022d62ccd75af28f9124284345738df13e421e1291816b79e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:35ca6738dfc41a4022d62ccd75af28f9124284345738df13e421e1291816b79e
+  source_title: Keputusan_Presiden_no_116_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: revoked
+  revoked_by:
+  - sha256:bf17011435ee9a68d9e043d3efda6ee375dd97626b9c7620ae63133b6c43ecc9

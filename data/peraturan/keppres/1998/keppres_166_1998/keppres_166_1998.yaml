@@ -1,0 +1,39 @@
+id: keppres_166_1998
+akn: /akn/id/act/keppres/1998/166
+type: keppres
+number: '166'
+year: 1998
+title: Keputusan Presiden Nomor 166 Tahun 1998 tentang Penetapan Kawasan Pengembangan
+  Ekonomi Terpadu Bima
+tentang: PENETAPAN KAWASAN PENGEMBANGAN EKONOMI TERPADU BIMA
+short_name: null
+status: null
+tanggal_penetapan: '1998-09-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_166_1998_1998-09-22
+  kind: asli
+  source: dataset
+  date: '1998-09-22'
+  date_basis: tanggal_penetapan
+  text: keppres_166_1998_1998-09-22.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a8c8a000e715866226f33c1183354c9d3e7872874be9375e8f980731411f05f1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a8c8a000e715866226f33c1183354c9d3e7872874be9375e8f980731411f05f1
+  source_title: Keputusan_Presiden_no_166_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

@@ -1,0 +1,38 @@
+id: keppres_48_1996
+akn: /akn/id/act/keppres/1996/48
+type: keppres
+number: '48'
+year: 1996
+title: Keputusan Presiden Nomor 48 Tahun 1996 tentang Freeport Indonesia
+tentang: FREEPORT INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '1996-06-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_48_1996_1996-06-19
+  kind: asli
+  source: dataset
+  date: '1996-06-19'
+  date_basis: tanggal_penetapan
+  text: keppres_48_1996_1996-06-19.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b3e211bff112f70330a11603e4854ec5fffdaa7935fd41c1c550015e55f417c9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b3e211bff112f70330a11603e4854ec5fffdaa7935fd41c1c550015e55f417c9
+  source_title: Keputusan_Presiden_no_48_TH_1996
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

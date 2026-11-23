@@ -1,0 +1,38 @@
+id: keppres_84_2002
+akn: /akn/id/act/keppres/2002/84
+type: keppres
+number: '84'
+year: 2002
+title: Keputusan Presiden Nomor 84 Tahun 2002 tentang Dari Akibat Lonjakan Impor
+tentang: DARI AKIBAT LONJAKAN IMPOR
+short_name: null
+status: null
+tanggal_penetapan: '2002-12-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_84_2002_2002-12-16
+  kind: asli
+  source: dataset
+  date: '2002-12-16'
+  date_basis: tanggal_penetapan
+  text: keppres_84_2002_2002-12-16.txt
+  pasal_count: 32
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2beaad3ea7f1faa16d0682cfad247e40cb8911adf4dabe96b9a116659ce4c9e1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2beaad3ea7f1faa16d0682cfad247e40cb8911adf4dabe96b9a116659ce4c9e1
+  source_title: KEPPRES_No.84_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 37
+  status: none_known

@@ -1,0 +1,42 @@
+id: keppres_28_1988
+akn: /akn/id/act/keppres/1988/28
+type: keppres
+number: '28'
+year: 1988
+title: Keputusan Presiden Nomor 28 Tahun 1988 tentang Besarnya Jaminan Kecelakaan
+  Kerja Dan Jaminan Kematian Asuransi Sosial Tenaga Kerja
+tentang: BESARNYA JAMINAN KECELAKAAN KERJA DAN JAMINAN KEMATIAN ASURANSI SOSIAL TENAGA
+  KERJA
+short_name: null
+status: diubah
+tanggal_penetapan: '1988-08-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_28_1988_1988-08-06
+  kind: asli
+  source: dataset
+  date: '1988-08-06'
+  date_basis: tanggal_penetapan
+  text: keppres_28_1988_1988-08-06.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bb62d3c8efc69eabee03ffec21c46aa04008462ba28345ffd32afcf2b5295673
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bb62d3c8efc69eabee03ffec21c46aa04008462ba28345ffd32afcf2b5295673
+  source_title: KEPPRES_NO_28_TH_1988
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: amended
+  amended_by:
+  - sha256:9003a0c317ac5fc4897e989cec93fad0dea11353b846ff4c08acfdb9e4bdfeb9

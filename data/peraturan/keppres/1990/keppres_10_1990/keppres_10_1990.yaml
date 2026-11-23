@@ -1,0 +1,40 @@
+id: keppres_10_1990
+akn: /akn/id/act/keppres/1990/10
+type: keppres
+number: '10'
+year: 1990
+title: Keputusan Presiden Nomor 10 Tahun 1990 tentang Tunjangan Kompensasi Kerja Bagi
+  Pegawai Negeri Yang Ditugaskan Di Bidang Persandian
+tentang: TUNJANGAN KOMPENSASI KERJA BAGI PEGAWAI NEGERI YANG DITUGASKAN DI BIDANG
+  PERSANDIAN
+short_name: null
+status: null
+tanggal_penetapan: '1990-04-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_10_1990_1990-04-01
+  kind: asli
+  source: dataset
+  date: '1990-04-01'
+  date_basis: tanggal_penetapan
+  text: keppres_10_1990_1990-04-01.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:70b3cced8cf6947b771041ca483e7d35ee3434aa16a9567980801319d771b6ed
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:70b3cced8cf6947b771041ca483e7d35ee3434aa16a9567980801319d771b6ed
+  source_title: KEPPRES_NO_10_TH_1990
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

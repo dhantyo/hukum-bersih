@@ -1,0 +1,40 @@
+id: keppres_54_1989
+akn: /akn/id/act/keppres/1989/54
+type: keppres
+number: '54'
+year: 1989
+title: Keputusan Presiden Nomor 54 Tahun 1989 tentang Pengesahan Third Additional
+  Protocol To The Constitution Of The Universal Postal Union
+tentang: PENGESAHAN THIRD ADDITIONAL PROTOCOL TO THE CONSTITUTION OF THE UNIVERSAL
+  POSTAL UNION
+short_name: null
+status: null
+tanggal_penetapan: '1989-11-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_54_1989_1989-11-01
+  kind: asli
+  source: dataset
+  date: '1989-11-01'
+  date_basis: tanggal_penetapan
+  text: keppres_54_1989_1989-11-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2ab2d5e6048cede62a19e821c06fe932ade0c677a0e3d8ffe4be30b5352a5f8b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2ab2d5e6048cede62a19e821c06fe932ade0c677a0e3d8ffe4be30b5352a5f8b
+  source_title: KEPPRES_NO_54_TH_1989
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 7
+  status: none_known

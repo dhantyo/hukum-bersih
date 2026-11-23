@@ -1,0 +1,30 @@
+id: keppres_184_1998
+akn: /akn/id/act/keppres/1998/184
+type: keppres
+number: '184'
+year: 1998
+title: Keputusan Presiden Nomor 184 Tahun 1998 tentang Tim Koordinasi Dan Sub Tim
+  Koordinasi Kerjasama Ekonomi Sub Regional
+tentang: TIM KOORDINASI DAN SUB TIM KOORDINASI KERJASAMA EKONOMI SUB REGIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-10-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:72a896e3929701d33bf252aafb08b7463b425a95af79e763b8e7e876301c61e8
+  source_title: Keputusan_Presiden_no_184_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:90a763f8bf77f808f1c365ce181bf76df56f1c98b869bb5c23e2fe02d378dd0d
+parse_error: 'v13: no pasal found in the rebuilt text'

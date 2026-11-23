@@ -1,0 +1,39 @@
+id: keppres_87_1998
+akn: /akn/id/act/keppres/1998/87
+type: keppres
+number: '87'
+year: 1998
+title: Keputusan Presiden Nomor 87 Tahun 1998 tentang Badan Koordinasi Survei Dan
+  Pemetaan Nasional
+tentang: BADAN KOORDINASI SURVEI DAN PEMETAAN NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '1998-06-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_87_1998_1998-06-17
+  kind: asli
+  source: dataset
+  date: '1998-06-17'
+  date_basis: tanggal_penetapan
+  text: keppres_87_1998_1998-06-17.txt
+  pasal_count: 21
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3f3d79419888a5b30ef6fc2e785997073669d9826917245d0f4c6cac74ac43c5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3f3d79419888a5b30ef6fc2e785997073669d9826917245d0f4c6cac74ac43c5
+  source_title: Keputusan_Presiden_no_87_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 27
+  status: none_known

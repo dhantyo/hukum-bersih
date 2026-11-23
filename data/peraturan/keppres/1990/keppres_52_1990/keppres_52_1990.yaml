@@ -1,0 +1,39 @@
+id: keppres_52_1990
+akn: /akn/id/act/keppres/1990/52
+type: keppres
+number: '52'
+year: 1990
+title: Keputusan Presiden Nomor 52 Tahun 1990 tentang Perincian Anggaran Belanja Rutin
+  Tahun Anggaran 1990/1991
+tentang: PERINCIAN ANGGARAN BELANJA RUTIN TAHUN ANGGARAN 1990/1991
+short_name: null
+status: null
+tanggal_penetapan: '1990-10-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_52_1990_1990-10-30
+  kind: asli
+  source: dataset
+  date: '1990-10-30'
+  date_basis: tanggal_penetapan
+  text: keppres_52_1990_1990-10-30.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e702f8771f704efbfdbfa5772a3dc0a90952e4341f0ed19d4ac122389b58d471
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e702f8771f704efbfdbfa5772a3dc0a90952e4341f0ed19d4ac122389b58d471
+  source_title: KEPPRES_NO_52_TH_1990
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

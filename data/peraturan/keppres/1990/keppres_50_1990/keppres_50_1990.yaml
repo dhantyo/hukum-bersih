@@ -1,0 +1,40 @@
+id: keppres_50_1990
+akn: /akn/id/act/keppres/1990/50
+type: keppres
+number: '50'
+year: 1990
+title: Keputusan Presiden Nomor 50 Tahun 1990 tentang Perubahan Atas Keputusan Presiden
+  Nomor 18 Tahun 1972 Tentang Jenis-Jenis Pakaian Sipil
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 18 TAHUN 1972 TENTANG JENIS-JENIS
+  PAKAIAN SIPIL
+short_name: null
+status: null
+tanggal_penetapan: '1990-10-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_50_1990_1990-10-15
+  kind: asli
+  source: dataset
+  date: '1990-10-15'
+  date_basis: tanggal_penetapan
+  text: keppres_50_1990_1990-10-15.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:482086402a1a42c78d095612945d68979f36992973867f13457fd17d09184211
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:482086402a1a42c78d095612945d68979f36992973867f13457fd17d09184211
+  source_title: KEPPRES_NO_50_TH_1990
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

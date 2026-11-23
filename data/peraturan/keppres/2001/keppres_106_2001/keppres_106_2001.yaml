@@ -1,0 +1,39 @@
+id: keppres_106_2001
+akn: /akn/id/act/keppres/2001/106
+type: keppres
+number: '106'
+year: 2001
+title: Keputusan Presiden Nomor 106 Tahun 2001 tentang Pengesahan Convention On Nuclear
+  Safety (Konvensi Tentang Keselamatan Nuklir)
+tentang: PENGESAHAN CONVENTION ON NUCLEAR SAFETY (KONVENSI TENTANG KESELAMATAN NUKLIR)
+short_name: null
+status: null
+tanggal_penetapan: '2001-10-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_106_2001_2001-10-04
+  kind: asli
+  source: dataset
+  date: '2001-10-04'
+  date_basis: tanggal_penetapan
+  text: keppres_106_2001_2001-10-04.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6abc577299ac680402da0b6dec3bdb2bbcdcd7b763ea20115e0ba13229b5fe3d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6abc577299ac680402da0b6dec3bdb2bbcdcd7b763ea20115e0ba13229b5fe3d
+  source_title: Keputusan_Presiden_no_106_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

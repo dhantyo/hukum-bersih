@@ -1,0 +1,42 @@
+id: keppres_104_2003
+akn: /akn/id/act/keppres/2003/104
+type: keppres
+number: '104'
+year: 2003
+title: Keputusan Presiden Nomor 104 Tahun 2003 tentang Harga Jual Tenaga Listrik Tahun
+  2004 Yang Disediakan Oleh Perusahaan Perseroan (Persero) Pt Perusahaan Listrik Negara
+tentang: HARGA JUAL TENAGA LISTRIK TAHUN 2004 YANG DISEDIAKAN OLEH PERUSAHAAN PERSEROAN
+  (PERSERO) PT PERUSAHAAN LISTRIK NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2004-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_104_2003_2004-01-01
+  kind: asli
+  source: dataset
+  date: '2004-01-01'
+  date_basis: tanggal_penetapan
+  text: keppres_104_2003_2004-01-01.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3d1a541f0b44020fecd24c5e1ab58b02d5035b777c3997b48b366e51b028b8d7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3d1a541f0b44020fecd24c5e1ab58b02d5035b777c3997b48b366e51b028b8d7
+  source_title: Keputusan_Presiden_no_104_th_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 28
+  status: revoked
+  revoked_by:
+  - sha256:b259a57ff8d1a8fa5e0c288e87af3f3f06bedb47f394ec9c445d5744e65f7c46

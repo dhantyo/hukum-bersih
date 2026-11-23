@@ -1,0 +1,43 @@
+id: keppres_175_2000
+akn: /akn/id/act/keppres/2000/175
+type: keppres
+number: '175'
+year: 2000
+title: Keputusan Presiden Nomor 175 Tahun 2000 tentang Susunan Organisasi Dan Tugas
+  Menteri Negara
+tentang: SUSUNAN ORGANISASI DAN TUGAS MENTERI NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-12-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_175_2000_2000-12-15
+  kind: asli
+  source: dataset
+  date: '2000-12-15'
+  date_basis: tanggal_penetapan
+  text: keppres_175_2000_2000-12-15.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:786406955fab3fb71b588158ee260320b529eb7209f53804c8840d589aab2d8c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:786406955fab3fb71b588158ee260320b529eb7209f53804c8840d589aab2d8c
+  source_title: Keputusan_Presiden_no_175_th_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 20
+  status: revoked
+  revoked_by:
+  - sha256:b20300ac13ca4c9b7ee1cba301b6a2970a3a7a0a7fed2fdaebbc5ae30769ed5c
+  amended_by:
+  - sha256:0d2240400ca2b518576b01de3be040537c32ab9fb3df07906ccd21f09673a0a8

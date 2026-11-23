@@ -1,0 +1,30 @@
+id: keppres_26_2000
+akn: /akn/id/act/keppres/2000/26
+type: keppres
+number: '26'
+year: 2000
+title: Keputusan Presiden Nomor 26 Tahun 2000 tentang Pengesahan Perubahan Anggaran
+  Dasar Korps Pegawai Republik Indonesia
+tentang: PENGESAHAN PERUBAHAN ANGGARAN DASAR KORPS PEGAWAI REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-02-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f1768095cb3e55b01bb9b91c7b9d2df5803b8a8966f9f3e62027386fed2ba15c
+  source_title: Keputusan_Presiden_no_26_th_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 34
+  status: revoked
+  revoked_by:
+  - sha256:bd01573b3865a363bf355620d93f1735f559fba56a53da4d83a316a46b968759
+parse_error: 'v13: rebuilt text has 3 pasal, the dataset lists 16'

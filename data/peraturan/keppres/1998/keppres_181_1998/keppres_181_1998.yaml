@@ -1,0 +1,41 @@
+id: keppres_181_1998
+akn: /akn/id/act/keppres/1998/181
+type: keppres
+number: '181'
+year: 1998
+title: Keputusan Presiden Nomor 181 Tahun 1998 tentang Komisi Nasional Anti Kekerasan
+  Terhadap Perempuan
+tentang: KOMISI NASIONAL ANTI KEKERASAN TERHADAP PEREMPUAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-10-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_181_1998_1998-10-09
+  kind: asli
+  source: dataset
+  date: '1998-10-09'
+  date_basis: tanggal_penetapan
+  text: keppres_181_1998_1998-10-09.txt
+  pasal_count: 17
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c1b56ae37678f130b1b1e08cc7dd2352862103d7b42285556f168eb84d4a153f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c1b56ae37678f130b1b1e08cc7dd2352862103d7b42285556f168eb84d4a153f
+  source_title: Keputusan_Presiden_no_181_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 20
+  status: revoked
+  revoked_by:
+  - sha256:30d8da8ace54cbdd19d75ccd6e86ce457f2f638f3c2d524b0c71bfa674e210fb

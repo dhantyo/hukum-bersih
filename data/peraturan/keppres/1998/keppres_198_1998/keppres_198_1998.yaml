@@ -1,0 +1,43 @@
+id: keppres_198_1998
+akn: /akn/id/act/keppres/1998/198
+type: keppres
+number: '198'
+year: 1998
+title: Keputusan Presiden Nomor 198 Tahun 1998 tentang Madani
+tentang: MADANI
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-12-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_198_1998_1998-12-07
+  kind: asli
+  source: dataset
+  date: '1998-12-07'
+  date_basis: tanggal_penetapan
+  text: keppres_198_1998_1998-12-07.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a7817d31e7768b6695fd3ded1045c54f027504415bf7176a24973e602f4f3030
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a7817d31e7768b6695fd3ded1045c54f027504415bf7176a24973e602f4f3030
+  source_title: Keputusan_Presiden_no_198_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:1a67c62af7337248c1eea4b55db55a5709f1fbcd5481d0a5f5f4d86f4251c2a8
+  amended_by:
+  - sha256:478d24a1f3dc130032bbe52d160300fe7c3a4aded6722f6dbd8f23ba1b417f31
+  - sha256:945121163b088b6e17490ea28073b44c488c0b09b574cebb4077ff9c5bffb9dd

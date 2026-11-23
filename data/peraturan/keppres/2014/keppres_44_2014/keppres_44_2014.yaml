@@ -1,0 +1,39 @@
+id: keppres_44_2014
+akn: /akn/id/act/keppres/2014/44
+type: keppres
+number: '44'
+year: 2014
+title: Keputusan Presiden Nomor 44 Tahun 2014 tentang Dewan Kawasan Kawasan Ekonomi
+  Khusus Provinsi Maluku Utara
+tentang: DEWAN KAWASAN KAWASAN EKONOMI KHUSUS PROVINSI MALUKU UTARA
+short_name: null
+status: null
+tanggal_penetapan: '2014-10-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_44_2014_2014-10-17
+  kind: asli
+  source: dataset
+  date: '2014-10-17'
+  date_basis: tanggal_penetapan
+  text: keppres_44_2014_2014-10-17.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c2489ec374a8594b2877af9cd90e0337c58061988032fcf04d46d3a99418e288
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c2489ec374a8594b2877af9cd90e0337c58061988032fcf04d46d3a99418e288
+  source_title: Keppres_Nomor_44_Tahun_2014
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

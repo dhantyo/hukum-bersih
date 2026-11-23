@@ -1,0 +1,40 @@
+id: keppres_10_1994
+akn: /akn/id/act/keppres/1994/10
+type: keppres
+number: '10'
+year: 1994
+title: Keputusan Presiden Nomor 10 Tahun 1994 tentang Peningkatan Konsulat Republik
+  Indonesia Di Penang -Malaysia Menjadi Konsulat Jenderal Republik Indonesia
+tentang: PENINGKATAN KONSULAT REPUBLIK INDONESIA DI PENANG -MALAYSIA MENJADI KONSULAT
+  JENDERAL REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '1994-02-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_10_1994_1994-02-23
+  kind: asli
+  source: dataset
+  date: '1994-02-23'
+  date_basis: tanggal_penetapan
+  text: keppres_10_1994_1994-02-23.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bb931193ccb8686544306d8101f7447161fe21865c78fa4d39d25e08e68c71c7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bb931193ccb8686544306d8101f7447161fe21865c78fa4d39d25e08e68c71c7
+  source_title: Keputusan_Presiden_no_10_TH_1994
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

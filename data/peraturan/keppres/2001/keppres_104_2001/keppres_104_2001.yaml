@@ -1,0 +1,42 @@
+id: keppres_104_2001
+akn: /akn/id/act/keppres/2001/104
+type: keppres
+number: '104'
+year: 2001
+title: Keputusan Presiden Nomor 104 Tahun 2001 tentang Perubahan Atas Keputusan Presiden
+  Nomor 162 Tahun 1999 Tentang Pembentukan Tim Penilai Akhir Pengangkatan, Pemindahan
+  Dan Pemberhentian Dalam Dan Dari Jabatan Struktural Eselon I
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 162 TAHUN 1999 TENTANG PEMBENTUKAN
+  TIM PENILAI AKHIR PENGANGKATAN, PEMINDAHAN DAN PEMBERHENTIAN DALAM DAN DARI JABATAN
+  STRUKTURAL ESELON I
+short_name: null
+status: null
+tanggal_penetapan: '2001-09-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_104_2001_2001-09-14
+  kind: asli
+  source: dataset
+  date: '2001-09-14'
+  date_basis: tanggal_penetapan
+  text: keppres_104_2001_2001-09-14.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7ff7e1b5d77cd88f27bc3ff7f54f10e5156b6a2b1b78a9608e0820dbce19fd26
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7ff7e1b5d77cd88f27bc3ff7f54f10e5156b6a2b1b78a9608e0820dbce19fd26
+  source_title: Keputusan_Presiden_no_104_th_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

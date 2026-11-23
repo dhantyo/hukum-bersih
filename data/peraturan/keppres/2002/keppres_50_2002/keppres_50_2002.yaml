@@ -1,0 +1,41 @@
+id: keppres_50_2002
+akn: /akn/id/act/keppres/2002/50
+type: keppres
+number: '50'
+year: 2002
+title: Keputusan Presiden Nomor 50 Tahun 2002 tentang Pemberian Uang Kehormatan Bagi
+  Eks Anggota Dewan Perwakilan Rakyat Daerah Propinsi Timor Timur Dan Kabupaten Se
+  Propinsi Timor Timur
+tentang: PEMBERIAN UANG KEHORMATAN BAGI EKS ANGGOTA DEWAN PERWAKILAN RAKYAT DAERAH
+  PROPINSI TIMOR TIMUR DAN KABUPATEN SE PROPINSI TIMOR TIMUR
+short_name: null
+status: null
+tanggal_penetapan: '2002-07-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_50_2002_2002-07-01
+  kind: asli
+  source: dataset
+  date: '2002-07-01'
+  date_basis: tanggal_penetapan
+  text: keppres_50_2002_2002-07-01.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:eb2f8d7b40267d26cab92707acbc35cec819f1588c7e3e8330afb07646a4f1ef
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:eb2f8d7b40267d26cab92707acbc35cec819f1588c7e3e8330afb07646a4f1ef
+  source_title: KEPPRES_No.50_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: none_known

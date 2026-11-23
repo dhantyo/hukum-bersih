@@ -1,0 +1,43 @@
+id: keppres_50_1986
+akn: /akn/id/act/keppres/1986/50
+type: keppres
+number: '50'
+year: 1986
+title: Keputusan Presiden Nomor 50 Tahun 1986 tentang Perubahan Atas Keputusan Presiden
+  Nomor 59 Tahun 1983 Tentang Pembentukan Dewan Pembina Dan Pengelola Industri-Industri
+  Strategis Dan Industri Hankam, Sebagaimana Telah Diubah Dengan Keputusan Presiden
+  Nomor 6 Tahun 1984
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 59 TAHUN 1983 TENTANG PEMBENTUKAN
+  DEWAN PEMBINA DAN PENGELOLA INDUSTRI-INDUSTRI STRATEGIS DAN INDUSTRI HANKAM, SEBAGAIMANA
+  TELAH DIUBAH DENGAN KEPUTUSAN PRESIDEN NOMOR 6 TAHUN 1984
+short_name: null
+status: null
+tanggal_penetapan: '1986-09-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_50_1986_1986-09-30
+  kind: asli
+  source: dataset
+  date: '1986-09-30'
+  date_basis: tanggal_penetapan
+  text: keppres_50_1986_1986-09-30.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:29efa73c794eb49fda2e02e9bfe55d36b21ae1e75ea3ec20a2620fa210c4acba
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:29efa73c794eb49fda2e02e9bfe55d36b21ae1e75ea3ec20a2620fa210c4acba
+  source_title: KEPPRES_NO_50_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

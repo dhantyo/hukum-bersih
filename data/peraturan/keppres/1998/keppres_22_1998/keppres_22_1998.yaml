@@ -1,0 +1,39 @@
+id: keppres_22_1998
+akn: /akn/id/act/keppres/1998/22
+type: keppres
+number: '22'
+year: 1998
+title: Keputusan Presiden Nomor 22 Tahun 1998 tentang Impor Kapal Niaga Dan Kapal
+  Ikan Dalam Keadaan Baru Dan Bukan Baru
+tentang: IMPOR KAPAL NIAGA DAN KAPAL IKAN DALAM KEADAAN BARU DAN BUKAN BARU
+short_name: null
+status: null
+tanggal_penetapan: '1998-02-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_22_1998_1998-02-02
+  kind: asli
+  source: dataset
+  date: '1998-02-02'
+  date_basis: tanggal_penetapan
+  text: keppres_22_1998_1998-02-02.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7712328e7d19aa0ee034aa55f7a856b536f8c472ab28171ce1df2e7a75a2c5c2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7712328e7d19aa0ee034aa55f7a856b536f8c472ab28171ce1df2e7a75a2c5c2
+  source_title: Keputusan_Presiden_no_22_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

@@ -1,0 +1,41 @@
+id: keppres_18_1991
+akn: /akn/id/act/keppres/1991/18
+type: keppres
+number: '18'
+year: 1991
+title: Keputusan Presiden Nomor 18 Tahun 1991 tentang Penyelesaian Tagihan Pajak Penghasilan
+  Badan Atas Nama Pt. Pabrik Kapal Indonesia (Pt. Pal Indonesia) Tahun Pajak 1985,
+  1986, Dan 1987
+tentang: PENYELESAIAN TAGIHAN PAJAK PENGHASILAN BADAN ATAS NAMA PT. PABRIK KAPAL INDONESIA
+  (PT. PAL INDONESIA) TAHUN PAJAK 1985, 1986, DAN 1987
+short_name: null
+status: null
+tanggal_penetapan: '1991-04-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_18_1991_1991-04-06
+  kind: asli
+  source: dataset
+  date: '1991-04-06'
+  date_basis: tanggal_penetapan
+  text: keppres_18_1991_1991-04-06.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2b5662e751960d31765c1998e03f0e53414a217648822d0afc6bd34ddd8111f3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2b5662e751960d31765c1998e03f0e53414a217648822d0afc6bd34ddd8111f3
+  source_title: KEPPRES_NO_18_TH_1991
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

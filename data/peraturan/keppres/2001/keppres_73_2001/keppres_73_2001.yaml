@@ -1,0 +1,30 @@
+id: keppres_73_2001
+akn: /akn/id/act/keppres/2001/73
+type: keppres
+number: '73'
+year: 2001
+title: Keputusan Presiden Nomor 73 Tahun 2001 tentang Harga Jual Eceran Bahan Bakar
+  Minyak Dalam Negeri
+tentang: HARGA JUAL ECERAN BAHAN BAKAR MINYAK DALAM NEGERI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-06-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:49b581eaa06fe2ddd23c8630f10be12e49fe368122cc8eb6d73329d4318f9ec4
+  source_title: Keputusan_Presiden_no_73_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: revoked
+  revoked_by:
+  - sha256:39bcf50164fabb10fda35839e6b67166b42aecaf82ecf2558ceaaa90a32656d6
+parse_error: 'v13: rebuilt text has 9 pasal, the dataset lists 13'

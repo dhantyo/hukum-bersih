@@ -1,0 +1,39 @@
+id: keppres_15_1987
+akn: /akn/id/act/keppres/1987/15
+type: keppres
+number: '15'
+year: 1987
+title: Keputusan Presiden Nomor 15 Tahun 1987 tentang Daftar Skala Prioritas Bidang-Bidang
+  Usaha Penanaman Modal
+tentang: DAFTAR SKALA PRIORITAS BIDANG-BIDANG USAHA PENANAMAN MODAL
+short_name: null
+status: null
+tanggal_penetapan: '1987-05-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_15_1987_1987-05-25
+  kind: asli
+  source: dataset
+  date: '1987-05-25'
+  date_basis: tanggal_penetapan
+  text: keppres_15_1987_1987-05-25.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d8b39205106611c578bd421eac607848113e76beabf9258194ae366d230fcc13
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d8b39205106611c578bd421eac607848113e76beabf9258194ae366d230fcc13
+  source_title: KEPPRES_NO_15_TH_1987
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

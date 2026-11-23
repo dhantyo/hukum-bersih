@@ -1,0 +1,41 @@
+id: keppres_107_1998
+akn: /akn/id/act/keppres/1998/107
+type: keppres
+number: '107'
+year: 1998
+title: Keputusan Presiden Nomor 107 Tahun 1998 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Republik Turki Mengenai Peningkatan
+  Dan Perlindungan Atas Penanaman Modal
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  REPUBLIK TURKI MENGENAI PENINGKATAN DAN PERLINDUNGAN ATAS PENANAMAN MODAL
+short_name: null
+status: null
+tanggal_penetapan: '1998-07-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_107_1998_1998-07-27
+  kind: asli
+  source: dataset
+  date: '1998-07-27'
+  date_basis: tanggal_penetapan
+  text: keppres_107_1998_1998-07-27.txt
+  pasal_count: 1
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:22e8546e2207ab562d8116b510d86e21e4b59a9cc4b787dc1732cc530f1f1fcb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:22e8546e2207ab562d8116b510d86e21e4b59a9cc4b787dc1732cc530f1f1fcb
+  source_title: Keputusan_Presiden_no_107_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

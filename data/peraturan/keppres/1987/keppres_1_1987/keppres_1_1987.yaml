@@ -1,0 +1,41 @@
+id: keppres_1_1987
+akn: /akn/id/act/keppres/1987/1
+type: keppres
+number: '1'
+year: 1987
+title: Keputusan Presiden Nomor 1 Tahun 1987 tentang Pengesahan Amandemen 1979 Atas
+  Convention On International Trade In Endangered Species Of Wild Fauna And Flora,
+  1973
+tentang: PENGESAHAN AMANDEMEN 1979 ATAS CONVENTION ON INTERNATIONAL TRADE IN ENDANGERED
+  SPECIES OF WILD FAUNA AND FLORA, 1973
+short_name: null
+status: null
+tanggal_penetapan: '1987-01-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_1_1987_1987-01-14
+  kind: asli
+  source: dataset
+  date: '1987-01-14'
+  date_basis: tanggal_penetapan
+  text: keppres_1_1987_1987-01-14.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5af2217c5686675271a04ae6dc962ea6d959e6e1f796ae1ec5bed62999f62139
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5af2217c5686675271a04ae6dc962ea6d959e6e1f796ae1ec5bed62999f62139
+  source_title: KEPPRES_NO_1_TH_1987
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 7
+  status: none_known

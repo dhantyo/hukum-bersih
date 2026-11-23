@@ -1,0 +1,29 @@
+id: keppres_53_1985
+akn: /akn/id/act/keppres/1985/53
+type: keppres
+number: '53'
+year: 1985
+title: Keputusan Presiden Nomor 53 Tahun 1985 tentang Badan Pengelola Komplek Kemayoran
+tentang: BADAN PENGELOLA KOMPLEK KEMAYORAN
+short_name: null
+status: diubah
+tanggal_penetapan: '1985-06-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2f57a1d3b44c10571e6c795b6b9de7981c8537e7f0b8cf1325cbdc66d6e399c2
+  source_title: KEPPRES_NO_53_TH_1985
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 4
+  status: amended
+  amended_by:
+  - sha256:9c77f535071bd67fbd94e735840ad85ea9d52d6a962258bf80ad45695f606fa8
+parse_error: 'v13: no pasal found in the rebuilt text'

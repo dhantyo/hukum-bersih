@@ -1,0 +1,42 @@
+id: keppres_6_1985
+akn: /akn/id/act/keppres/1985/6
+type: keppres
+number: '6'
+year: 1985
+title: Keputusan Presiden Nomor 6 Tahun 1985 tentang Pengesahaan Basic Agreement On
+  Asean Industrial Joint Ventures Dan Supplementary Agreement To Amend The Basic Agreement
+  On Asean Industrial Joint Ventures (Baaijv) Presiden Republik Indonesia
+tentang: PENGESAHAAN BASIC AGREEMENT ON ASEAN INDUSTRIAL JOINT VENTURES DAN SUPPLEMENTARY
+  AGREEMENT TO AMEND THE BASIC AGREEMENT ON ASEAN INDUSTRIAL JOINT VENTURES (BAAIJV)
+  Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1985-01-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_6_1985_1985-01-29
+  kind: asli
+  source: dataset
+  date: '1985-01-29'
+  date_basis: tanggal_penetapan
+  text: keppres_6_1985_1985-01-29.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:163397c5fad378cc4f10df27fc5410f877e5988a1cd7a843e59c8366784e31ca
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:163397c5fad378cc4f10df27fc5410f877e5988a1cd7a843e59c8366784e31ca
+  source_title: KEPPRES_NO_6_TH_1985
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

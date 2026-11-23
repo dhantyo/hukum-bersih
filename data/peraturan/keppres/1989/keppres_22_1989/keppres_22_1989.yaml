@@ -1,0 +1,42 @@
+id: keppres_22_1989
+akn: /akn/id/act/keppres/1989/22
+type: keppres
+number: '22'
+year: 1989
+title: Keputusan Presiden Nomor 22 Tahun 1989 tentang Penundaan Pembayaran Pajak Pertambahan
+  Nilai Atas Penyerahan Jasa Pencarian Sumber-Sumber Dan Pemboran Minyak, Gas Bumi,
+  Dan Panas Bumi Bagi Para Kontraktor Yang Belum Berproduksi
+tentang: PENUNDAAN PEMBAYARAN PAJAK PERTAMBAHAN NILAI ATAS PENYERAHAN JASA PENCARIAN
+  SUMBER-SUMBER DAN PEMBORAN MINYAK, GAS BUMI, DAN PANAS BUMI BAGI PARA KONTRAKTOR
+  YANG BELUM BERPRODUKSI
+short_name: null
+status: null
+tanggal_penetapan: '1989-05-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_22_1989_1989-05-24
+  kind: asli
+  source: dataset
+  date: '1989-05-24'
+  date_basis: tanggal_penetapan
+  text: keppres_22_1989_1989-05-24.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8519a33e1f0cb364e0d7d2c963733ba9cd363edd04a34e6162eda54a842efee9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8519a33e1f0cb364e0d7d2c963733ba9cd363edd04a34e6162eda54a842efee9
+  source_title: KEPPRES_NO_22_TH_1989
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

@@ -1,0 +1,42 @@
+id: keppres_111_1993
+akn: /akn/id/act/keppres/1993/111
+type: keppres
+number: '111'
+year: 1993
+title: Keputusan Presiden Nomor 111 Tahun 1993 tentang Perluasan Berlakunya Ordonansi
+  Cukai Alkohol Sulingan, Staatsblad 1898 Nomor 90 Sebagaimana Telah Beberapa Kali
+  Diubah Terakhir Dengan Undang-Undang Nomor 2 Prp Tahun 1965
+tentang: PERLUASAN BERLAKUNYA ORDONANSI CUKAI ALKOHOL SULINGAN, STAATSBLAD 1898 NOMOR
+  90 SEBAGAIMANA TELAH BEBERAPA KALI DIUBAH TERAKHIR DENGAN UNDANG-UNDANG NOMOR 2
+  PRP TAHUN 1965
+short_name: null
+status: null
+tanggal_penetapan: '1993-11-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_111_1993_1993-11-13
+  kind: asli
+  source: dataset
+  date: '1993-11-13'
+  date_basis: tanggal_penetapan
+  text: keppres_111_1993_1993-11-13.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b29cf1c63e11e284ec0502d3b46b0418495a09593969adda4e86206c868fc491
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b29cf1c63e11e284ec0502d3b46b0418495a09593969adda4e86206c868fc491
+  source_title: Keputusan_Presiden_no_111_TH_1993
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

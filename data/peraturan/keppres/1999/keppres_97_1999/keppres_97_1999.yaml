@@ -1,0 +1,42 @@
+id: keppres_97_1999
+akn: /akn/id/act/keppres/1999/97
+type: keppres
+number: '97'
+year: 1999
+title: Keputusan Presiden Nomor 97 Tahun 1999 tentang Pembentukan Pengadilan Niaga
+  Pada Pengadilan Negeri Ujung Pandang, Pengadilan Negeri Medan, Pengadilan Negeri
+  Surabaya, Dan Pengadilan Negeri Semarang Presiden Republik Indonesia
+tentang: PEMBENTUKAN PENGADILAN NIAGA PADA PENGADILAN NEGERI UJUNG PANDANG, PENGADILAN
+  NEGERI MEDAN, PENGADILAN NEGERI SURABAYA, DAN PENGADILAN NEGERI SEMARANG PRESIDEN
+  REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '1999-08-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_97_1999_1999-08-18
+  kind: asli
+  source: dataset
+  date: '1999-08-18'
+  date_basis: tanggal_penetapan
+  text: keppres_97_1999_1999-08-18.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b0ef9ac99aca290788dd345855355a96a1cc62c3e54a16df6c8c3b35430f7a52
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b0ef9ac99aca290788dd345855355a96a1cc62c3e54a16df6c8c3b35430f7a52
+  source_title: Keppres_No_97_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

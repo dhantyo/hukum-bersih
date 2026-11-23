@@ -1,0 +1,41 @@
+id: keppres_188_1998
+akn: /akn/id/act/keppres/1998/188
+type: keppres
+number: '188'
+year: 1998
+title: Keputusan Presiden Nomor 188 Tahun 1998 tentang Tata Cara Mempersiapkan Rancangan
+  Undang-Undang
+tentang: TATA CARA MEMPERSIAPKAN RANCANGAN UNDANG-UNDANG
+short_name: null
+status: dicabut
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_188_1998_1998
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: keppres_188_1998_1998.txt
+  pasal_count: 33
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:cd06e34dc4a4e35f9aaca6d952b2a4b679f12e72f8fe2ab01046ed19186eacbe
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:cd06e34dc4a4e35f9aaca6d952b2a4b679f12e72f8fe2ab01046ed19186eacbe
+  source_title: Keputusan_Presiden_no_188_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 38
+  status: revoked
+  revoked_by:
+  - sha256:907841f7732d8620688d284b5ca9bac4fce5be878add03a3ce11be33f10eadfd

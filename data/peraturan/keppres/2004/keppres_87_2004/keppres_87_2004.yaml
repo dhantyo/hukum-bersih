@@ -1,0 +1,42 @@
+id: keppres_87_2004
+akn: /akn/id/act/keppres/2004/87
+type: keppres
+number: '87'
+year: 2004
+title: Keputusan Presiden Nomor 87 Tahun 2004 tentang Penggabungan Sekolah Tinggi
+  Pemerintahan Dalam Negeri Ke Dalam Institut Ilmu Pemerintahan
+tentang: PENGGABUNGAN SEKOLAH TINGGI PEMERINTAHAN DALAM NEGERI KE DALAM INSTITUT ILMU
+  PEMERINTAHAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2004-10-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_87_2004_2004-10-06
+  kind: asli
+  source: dataset
+  date: '2004-10-06'
+  date_basis: tanggal_penetapan
+  text: keppres_87_2004_2004-10-06.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4b97993937e1357aa28ebf332b5d5b689f01dc8961d2eb7befb961ed35f8d099
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4b97993937e1357aa28ebf332b5d5b689f01dc8961d2eb7befb961ed35f8d099
+  source_title: KEPPRES_No.87_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: amended
+  amended_by:
+  - sha256:c04589653e338ec0999ff80a5d79fb270ee2b55a371fd2a9d65f0ab9f5aea40c

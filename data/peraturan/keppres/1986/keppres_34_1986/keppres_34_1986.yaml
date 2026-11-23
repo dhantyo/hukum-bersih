@@ -1,0 +1,35 @@
+id: keppres_34_1986
+akn: /akn/id/act/keppres/1986/34
+type: keppres
+number: '34'
+year: 1986
+title: Keputusan Presiden Nomor 34 Tahun 1986 tentang Permasalahan Yang Timbul Dalam
+  Pelaksanaan Perundang-Undangan Mengenai Hak Cipta Dan Mengenai Merek Perusahaan
+  Dan Merek Perniagaan
+tentang: PERMASALAHAN YANG TIMBUL DALAM PELAKSANAAN PERUNDANG-UNDANGAN MENGENAI HAK
+  CIPTA DAN MENGENAI MEREK PERUSAHAAN DAN MEREK PERNIAGAAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1986-07-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b66447645dea13a8704a8f543622611735c69a6419877a32c70366b943103673
+  source_title: KEPPRES_NO_34_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: revoked
+  revoked_by:
+  - sha256:fc47426c25ce556caacd9745829063f459c1e4b53e93f8c588d45b3c0c2df513
+  amended_by:
+  - sha256:ccb9f57563af8dd2f3d2ef0e3fd5c7ce2f7555cd0effcfdbffd956499e9b608b
+  - sha256:eb8f88e3da80697d25e1e6c52c5851855487ffd134f03bd88f9d4f6c4ee49dd8
+parse_error: 'v13: no pasal found in the rebuilt text'

@@ -1,0 +1,41 @@
+id: keppres_114_2001
+akn: /akn/id/act/keppres/2001/114
+type: keppres
+number: '114'
+year: 2001
+title: Keputusan Presiden Nomor 114 Tahun 2001 tentang Tunjangan Jabatan Anggota Dan
+  Sekretaris Pengganti Mahkamah Pelayaran
+tentang: TUNJANGAN JABATAN ANGGOTA DAN SEKRETARIS PENGGANTI MAHKAMAH PELAYARAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-10-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_114_2001_2001-10-17
+  kind: asli
+  source: dataset
+  date: '2001-10-17'
+  date_basis: tanggal_penetapan
+  text: keppres_114_2001_2001-10-17.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d8a0254fd574e37974f360c78f37e1a509e411bdc311bb52e724b669a7210e0b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d8a0254fd574e37974f360c78f37e1a509e411bdc311bb52e724b669a7210e0b
+  source_title: Keputusan_Presiden_no_114_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:fd63b2ba86974d220bfc135407f59dbc5a08844c6e5ced384ef04adae71e7637

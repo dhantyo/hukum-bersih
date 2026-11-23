@@ -1,0 +1,30 @@
+id: keppres_75_1993
+akn: /akn/id/act/keppres/1993/75
+type: keppres
+number: '75'
+year: 1993
+title: Keputusan Presiden Nomor 75 Tahun 1993 tentang Koordinasi Pengelolaan Tata
+  Ruang Nasional
+tentang: KOORDINASI PENGELOLAAN TATA RUANG NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '1993-08-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6b8a65b5a7317ad18380f5186f53b637658a08d853bdea60073f53d9c752af25
+  source_title: Keputusan_Presiden_no_75_TH_1993
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 4
+  status: revoked
+  revoked_by:
+  - sha256:e3dfe4de41bdf7bcd0ffee4bdd33e796f34dbc81b7a14a5b4a7aef0463748ef6
+parse_error: 'v13: no pasal found in the rebuilt text'

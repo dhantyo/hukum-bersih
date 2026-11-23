@@ -1,0 +1,41 @@
+id: keppres_40_2001
+akn: /akn/id/act/keppres/2001/40
+type: keppres
+number: '40'
+year: 2001
+title: Keputusan Presiden Nomor 40 Tahun 2001 tentang Pedoman Kelembagaan Dan Pengelolaan
+  Rumah Sakit Daerah
+tentang: PEDOMAN KELEMBAGAAN DAN PENGELOLAAN RUMAH SAKIT DAERAH
+short_name: null
+status: null
+tanggal_penetapan: '2001-03-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_40_2001_2001-03-27
+  kind: asli
+  source: dataset
+  date: '2001-03-27'
+  date_basis: tanggal_penetapan
+  text: keppres_40_2001_2001-03-27.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6faeb16d8d8e9b8f13fa0d1aaaa54a1b2b48dc3891095493e80a5427533f98bb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6faeb16d8d8e9b8f13fa0d1aaaa54a1b2b48dc3891095493e80a5427533f98bb
+  source_title: Keputusan_Presiden_no_40_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: partially_revoked
+  revoked_by:
+  - sha256:2b02d87819c9a107ec91e2e3bec571435601917b176c56c8378d71a1e08641fb

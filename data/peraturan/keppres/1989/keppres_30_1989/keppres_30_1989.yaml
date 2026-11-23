@@ -1,0 +1,43 @@
+id: keppres_30_1989
+akn: /akn/id/act/keppres/1989/30
+type: keppres
+number: '30'
+year: 1989
+title: Keputusan Presiden Nomor 30 Tahun 1989 tentang Badan Pertimbangan Pendidikan
+  Nasional
+tentang: BADAN PERTIMBANGAN PENDIDIKAN NASIONAl
+short_name: null
+status: dicabut
+tanggal_penetapan: '1989-06-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_30_1989_1989-06-21
+  kind: asli
+  source: dataset
+  date: '1989-06-21'
+  date_basis: tanggal_penetapan
+  text: keppres_30_1989_1989-06-21.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0fc8e18aa03feae0d6fc6e5970e72e211b6939d3d8c10e4249d4a13308ebb771
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0fc8e18aa03feae0d6fc6e5970e72e211b6939d3d8c10e4249d4a13308ebb771
+  source_title: KEPPRES_NO_30_TH_1989
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:7cb6a0f53f06f7368a24fc0f7ef50f4c37fc0bbe14526fe66065ad59f027db9a
+  amended_by:
+  - sha256:27a9b1ec455d122c69c8f79b7569dd33edc0c9d0ab1db290f7802476cc4d8bce

@@ -1,0 +1,40 @@
+id: keppres_117_1999
+akn: /akn/id/act/keppres/1999/117
+type: keppres
+number: '117'
+year: 1999
+title: Keputusan Presiden Nomor 117 Tahun 1999 tentang Perubahan Kedua Atas Keputusan
+  Presiden Nomor 97 Tahun 1993 Tentang Tata Cara Penanaman Modal
+tentang: PERUBAHAN KEDUA ATAS KEPUTUSAN PRESIDEN NOMOR 97 TAHUN 1993 TENTANG TATA
+  CARA PENANAMAN MODAL
+short_name: null
+status: null
+tanggal_penetapan: '1999-09-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_117_1999_1999-09-30
+  kind: asli
+  source: dataset
+  date: '1999-09-30'
+  date_basis: tanggal_penetapan
+  text: keppres_117_1999_1999-09-30.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fbaddf985c6f9491c6e4c5ba815298fe9fd12fe9ac85496a2ed984e32baf9393
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fbaddf985c6f9491c6e4c5ba815298fe9fd12fe9ac85496a2ed984e32baf9393
+  source_title: Keppres_No_117_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

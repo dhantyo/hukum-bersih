@@ -1,0 +1,41 @@
+id: keppres_34_1990
+akn: /akn/id/act/keppres/1990/34
+type: keppres
+number: '34'
+year: 1990
+title: Keputusan Presiden Nomor 34 Tahun 1990 tentang Pemberian Tambahan Santunan
+  Bagi Tenaga Kerja Yang Meninggal Dunia Dan Mengalami Cacat Total Tetap Karena Kecelakaan
+  Kerja
+tentang: PEMBERIAN TAMBAHAN SANTUNAN BAGI TENAGA KERJA YANG MENINGGAL DUNIA DAN MENGALAMI
+  CACAT TOTAL TETAP KARENA KECELAKAAN KERJA
+short_name: null
+status: null
+tanggal_penetapan: '1990-08-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_34_1990_1990-08-09
+  kind: asli
+  source: dataset
+  date: '1990-08-09'
+  date_basis: tanggal_penetapan
+  text: keppres_34_1990_1990-08-09.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:186dcac0402682b3381eb967b315303e406c3b5faf6836031e7c73a8d031aa67
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:186dcac0402682b3381eb967b315303e406c3b5faf6836031e7c73a8d031aa67
+  source_title: KEPPRES_NO_34_TH_1990
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

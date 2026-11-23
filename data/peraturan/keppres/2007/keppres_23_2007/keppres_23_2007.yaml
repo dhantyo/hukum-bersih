@@ -1,0 +1,42 @@
+id: keppres_23_2007
+akn: /akn/id/act/keppres/2007/23
+type: keppres
+number: '23'
+year: 2007
+title: Keputusan Presiden Nomor 23 Tahun 2007 tentang Panitia Nasional Penyelenggaraan
+  Konferensi Kelautan Dunia (World Ocean Conference) Tahun 2009
+tentang: PANITIA NASIONAL PENYELENGGARAAN KONFERENSI KELAUTAN DUNIA (WORLD OCEAN CONFERENCE)
+  TAHUN 2009
+short_name: null
+status: diubah
+tanggal_penetapan: '2007-11-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_23_2007_2007-11-15
+  kind: asli
+  source: dataset
+  date: '2007-11-15'
+  date_basis: tanggal_penetapan
+  text: keppres_23_2007_2007-11-15.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6d462fc5a1de5ffc02a95b58003fd8c98f6cb02294a6ba8e00c8fcb0eaa121bf
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6d462fc5a1de5ffc02a95b58003fd8c98f6cb02294a6ba8e00c8fcb0eaa121bf
+  source_title: Keputusan_Presiden_No_23_th_2007
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: amended
+  amended_by:
+  - sha256:09c790d00c38457eb6635430d051cd6c146852d537080b5de983c428513b671a

@@ -1,0 +1,40 @@
+id: keppres_19_2008
+akn: /akn/id/act/keppres/2008/19
+type: keppres
+number: '19'
+year: 2008
+title: Keputusan Presiden Nomor 19 Tahun 2008 tentang Pembentukan Tim Renegosiasi
+  Perjanjian Penjualan Dan Pembelian Liquid Natural Gas Tangguh
+tentang: PEMBENTUKAN TIM RENEGOSIASI PERJANJIAN PENJUALAN DAN PEMBELIAN LIQUID NATURAL
+  GAS TANGGUH
+short_name: null
+status: null
+tanggal_penetapan: '2008-09-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_19_2008_2008-09-15
+  kind: asli
+  source: dataset
+  date: '2008-09-15'
+  date_basis: tanggal_penetapan
+  text: keppres_19_2008_2008-09-15.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:45b0bd4acb261f3777c9b805682e56e60670ece6dad6e61443e71230d028a192
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:45b0bd4acb261f3777c9b805682e56e60670ece6dad6e61443e71230d028a192
+  source_title: Keppres_No_19_Th_2008
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: none_known

@@ -1,0 +1,40 @@
+id: keppres_22_1994
+akn: /akn/id/act/keppres/1994/22
+type: keppres
+number: '22'
+year: 1994
+title: Keputusan Presiden Nomor 22 Tahun 1994 tentang Pembentukan Pengadilan Tata
+  Usaha Negara Di Bandar Lampung, Samarinda, Dan Denpasar
+tentang: PEMBENTUKAN PENGADILAN TATA USAHA NEGARA DI BANDAR LAMPUNG, SAMARINDA, DAN
+  DENPASAR
+short_name: null
+status: null
+tanggal_penetapan: '1994-04-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_22_1994_1994-04-04
+  kind: asli
+  source: dataset
+  date: '1994-04-04'
+  date_basis: tanggal_penetapan
+  text: keppres_22_1994_1994-04-04.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0f1bf72df5b2561055add7355c1b0f9791d3c878c79e474c9294a39dd9f57458
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0f1bf72df5b2561055add7355c1b0f9791d3c878c79e474c9294a39dd9f57458
+  source_title: Keputusan_Presiden_no_22_TH_1994
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

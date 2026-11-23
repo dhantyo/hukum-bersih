@@ -1,0 +1,39 @@
+id: keppres_12_1991
+akn: /akn/id/act/keppres/1991/12
+type: keppres
+number: '12'
+year: 1991
+title: Keputusan Presiden Nomor 12 Tahun 1991 tentang Penyusunan,Penerapan, Dan Pengawasan
+  Standar Nasional Indonesia
+tentang: PENYUSUNAN,PENERAPAN, DAN PENGAWASAN STANDAR NASIONAL INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '1991-03-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_12_1991_1991-03-01
+  kind: asli
+  source: dataset
+  date: '1991-03-01'
+  date_basis: tanggal_penetapan
+  text: keppres_12_1991_1991-03-01.txt
+  pasal_count: 18
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7b1869756278a88b046081acf9e8d03be4509fb8175fbbfdd1c360c57881f0fc
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7b1869756278a88b046081acf9e8d03be4509fb8175fbbfdd1c360c57881f0fc
+  source_title: KEPPRES_NO_12_TH_1991
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 25
+  status: none_known

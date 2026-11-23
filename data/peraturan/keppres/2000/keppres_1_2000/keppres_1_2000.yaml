@@ -1,0 +1,41 @@
+id: keppres_1_2000
+akn: /akn/id/act/keppres/2000/1
+type: keppres
+number: '1'
+year: 2000
+title: Keputusan Presiden Nomor 1 Tahun 2000 tentang Pengesahan Agreement Between
+  The Government Of The Republic Of Indonesia And The Government Of Mongolia On Economic
+  And Technical Cooperation
+tentang: PENGESAHAN AGREEMENT BETWEEN THE GOVERNMENT OF THE REPUBLIC OF INDONESIA
+  AND THE GOVERNMENT OF MONGOLIA ON ECONOMIC AND TECHNICAL COOPERATION
+short_name: null
+status: null
+tanggal_penetapan: '2000-01-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_1_2000_2000-01-03
+  kind: asli
+  source: dataset
+  date: '2000-01-03'
+  date_basis: tanggal_penetapan
+  text: keppres_1_2000_2000-01-03.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1b34e6a31308cf7e3d913d4760bdfb4d5f2c9747627b201ee342bcc90111bf04
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1b34e6a31308cf7e3d913d4760bdfb4d5f2c9747627b201ee342bcc90111bf04
+  source_title: Keputusan_Presiden_no_1_Tahun_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

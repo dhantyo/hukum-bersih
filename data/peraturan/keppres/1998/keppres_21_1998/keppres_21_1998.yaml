@@ -1,0 +1,38 @@
+id: keppres_21_1998
+akn: /akn/id/act/keppres/1998/21
+type: keppres
+number: '21'
+year: 1998
+title: Keputusan Presiden Nomor 21 Tahun 1998 tentang Perdagangan Cengkeh
+tentang: PERDAGANGAN CENGKEH
+short_name: null
+status: null
+tanggal_penetapan: '1998-02-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_21_1998_1998-02-02
+  kind: asli
+  source: dataset
+  date: '1998-02-02'
+  date_basis: tanggal_penetapan
+  text: keppres_21_1998_1998-02-02.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a17493ff5812e4786c10f3b6aee9abc3937e48621d8242abb23a88a7a6aad3ba
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a17493ff5812e4786c10f3b6aee9abc3937e48621d8242abb23a88a7a6aad3ba
+  source_title: Keputusan_Presiden_no_21_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

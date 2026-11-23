@@ -1,0 +1,40 @@
+id: keppres_22_2001
+akn: /akn/id/act/keppres/2001/22
+type: keppres
+number: '22'
+year: 2001
+title: Keputusan Presiden Nomor 22 Tahun 2001 tentang Badan Pengelola Dana Abadi Umat
+tentang: BADAN PENGELOLA DANA ABADI UMAT
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-02-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_22_2001_2001-02-14
+  kind: asli
+  source: dataset
+  date: '2001-02-14'
+  date_basis: tanggal_penetapan
+  text: keppres_22_2001_2001-02-14.txt
+  pasal_count: 22
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:48c37709927950e26ce4e45ade31bbc0b8b76d72035a04ed4cc5c4c3818f6103
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:48c37709927950e26ce4e45ade31bbc0b8b76d72035a04ed4cc5c4c3818f6103
+  source_title: Keputusan_Presiden_no_22_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 28
+  status: revoked
+  revoked_by:
+  - sha256:9bd30c32ab08dddfdb7d66e5f5937becf48e8658288d1d96942a6168fec67391

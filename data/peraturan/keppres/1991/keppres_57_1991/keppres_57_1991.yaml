@@ -1,0 +1,42 @@
+id: keppres_57_1991
+akn: /akn/id/act/keppres/1991/57
+type: keppres
+number: '57'
+year: 1991
+title: Keputusan Presiden Nomor 57 Tahun 1991 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dengan Pemerintah Republik Federal Jerman Untuk Penghindaran
+  Pajak Berganda Mengenai Pajak Atas Penghasilan Dan Kekayaan Beserta Protokolnya
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DENGAN PEMERINTAH
+  REPUBLIK FEDERAL JERMAN UNTUK PENGHINDARAN PAJAK BERGANDA MENGENAI PAJAK ATAS PENGHASILAN
+  DAN KEKAYAAN BESERTA PROTOKOLNYA
+short_name: null
+status: null
+tanggal_penetapan: '1991-11-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_57_1991_1991-11-20
+  kind: asli
+  source: dataset
+  date: '1991-11-20'
+  date_basis: tanggal_penetapan
+  text: keppres_57_1991_1991-11-20.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:12570cb2d10b6a619631fc4a8d6ef01596eb008576632bb79487c5723c2599a6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:12570cb2d10b6a619631fc4a8d6ef01596eb008576632bb79487c5723c2599a6
+  source_title: KEPPRES_NO_57_TH_1991
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

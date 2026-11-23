@@ -1,0 +1,39 @@
+id: keppres_56_2002
+akn: /akn/id/act/keppres/2002/56
+type: keppres
+number: '56'
+year: 2002
+title: Keputusan Presiden Nomor 56 Tahun 2002 tentang Restrukturisasi Kredit Usaha
+  Kecil, Dan Menengah
+tentang: RESTRUKTURISASI KREDIT USAHA KECIL, DAN MENENGAH
+short_name: null
+status: null
+tanggal_penetapan: '2002-07-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_56_2002_2002-07-29
+  kind: asli
+  source: dataset
+  date: '2002-07-29'
+  date_basis: tanggal_penetapan
+  text: keppres_56_2002_2002-07-29.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c05074020a12475afa353018ed35ba91045c7c13b0f5dfb449f4ed422a3c9b9b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c05074020a12475afa353018ed35ba91045c7c13b0f5dfb449f4ed422a3c9b9b
+  source_title: KEPPRES_No.56_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: none_known

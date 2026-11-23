@@ -1,0 +1,42 @@
+id: keppres_66_2003
+akn: /akn/id/act/keppres/2003/66
+type: keppres
+number: '66'
+year: 2003
+title: Keputusan Presiden Nomor 66 Tahun 2003 tentang Menurut Peraturan Pemerintah
+  Nomor 28 Tahun 2001 Ke Dalam Peraturan Pemerintah Nomor 13 Tahun 2003 Penyesuaian
+  Gaji Pokok Anggota Tentara Nasional Indonesia Presiden Republik Indonesia
+tentang: MENURUT PERATURAN PEMERINTAH NOMOR 28 TAHUN 2001 KE DALAM PERATURAN PEMERINTAH
+  NOMOR 13 TAHUN 2003 PENYESUAIAN GAJI POKOK ANGGOTA TENTARA NASIONAL INDONESIA PRESIDEN
+  REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2003-08-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_66_2003_2003-08-20
+  kind: asli
+  source: dataset
+  date: '2003-08-20'
+  date_basis: tanggal_penetapan
+  text: keppres_66_2003_2003-08-20.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d0affb63c9d9bf1c1ff3616df0640e2d8e18b564b2ce32a51192f018c2bd6726
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d0affb63c9d9bf1c1ff3616df0640e2d8e18b564b2ce32a51192f018c2bd6726
+  source_title: Keputusan_Presiden_no_66_th_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 28
+  status: none_known

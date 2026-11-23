@@ -1,0 +1,39 @@
+id: keppres_18_1995
+akn: /akn/id/act/keppres/1995/18
+type: keppres
+number: '18'
+year: 1995
+title: Keputusan Presiden Nomor 18 Tahun 1995 tentang Pembukaan Konsulat Republik
+  Indonesia Di Johor Bahru, Malaysia
+tentang: PEMBUKAAN KONSULAT REPUBLIK INDONESIA DI JOHOR BAHRU, MALAYSIA
+short_name: null
+status: null
+tanggal_penetapan: '1995-03-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_18_1995_1995-03-28
+  kind: asli
+  source: dataset
+  date: '1995-03-28'
+  date_basis: tanggal_penetapan
+  text: keppres_18_1995_1995-03-28.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9a9ec065c3101bb9194b2d2fd907e9200c904e53f5b6d5e9ff574f5457ce682e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9a9ec065c3101bb9194b2d2fd907e9200c904e53f5b6d5e9ff574f5457ce682e
+  source_title: Keputusan_Presiden_no_18_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

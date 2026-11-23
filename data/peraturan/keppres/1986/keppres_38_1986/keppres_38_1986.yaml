@@ -1,0 +1,39 @@
+id: keppres_38_1986
+akn: /akn/id/act/keppres/1986/38
+type: keppres
+number: '38'
+year: 1986
+title: Keputusan Presiden Nomor 38 Tahun 1986 tentang Pembentukan Pengadilan Negeri
+  Kabupaten Langkat
+tentang: PEMBENTUKAN PENGADILAN NEGERI KABUPATEN LANGKAT
+short_name: null
+status: null
+tanggal_penetapan: '1986-08-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_38_1986_1986-08-20
+  kind: asli
+  source: dataset
+  date: '1986-08-20'
+  date_basis: tanggal_penetapan
+  text: keppres_38_1986_1986-08-20.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3b1b229d3c2c3e2e7310722767b84d92375db5f71fe7650800e269f955ab9b80
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3b1b229d3c2c3e2e7310722767b84d92375db5f71fe7650800e269f955ab9b80
+  source_title: KEPPRES_NO_38_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

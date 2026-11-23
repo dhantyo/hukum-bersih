@@ -1,0 +1,30 @@
+id: keppres_4_2004
+akn: /akn/id/act/keppres/2004/4
+type: keppres
+number: '4'
+year: 2004
+title: Keputusan Presiden Nomor 4 Tahun 2004 tentang Tunjangan Jabatan Fungsional
+  Penyelidik Bumi
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENYELIDIK BUMI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2004-01-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f9e456e5ba465b96e7ab3f5bfedacd30b87bce132cbb14153c94be538d1ea62e
+  source_title: KEPPRES_No.4_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:eb84dd724fd50faed211feb0a1f2c8e752b85a963b79f80351f81fca50493e4b
+parse_error: 'v13: rebuilt text has 5 pasal, the dataset lists 6'

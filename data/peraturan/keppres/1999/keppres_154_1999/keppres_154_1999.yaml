@@ -1,0 +1,40 @@
+id: keppres_154_1999
+akn: /akn/id/act/keppres/1999/154
+type: keppres
+number: '154'
+year: 1999
+title: Keputusan Presiden Nomor 154 Tahun 1999 tentang Perubahan Atas Keputusan Presiden
+  Nomor 26 Tahun 1988 Tentang Badan Pertanahan Nasional
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 26 TAHUN 1988 TENTANG BADAN PERTANAHAN
+  NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '1999-12-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_154_1999_1999-12-07
+  kind: asli
+  source: dataset
+  date: '1999-12-07'
+  date_basis: tanggal_penetapan
+  text: keppres_154_1999_1999-12-07.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d662e5861deb60d78d1698f17aca03efc09b5964daec3d64a2cf2a3c865556cd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d662e5861deb60d78d1698f17aca03efc09b5964daec3d64a2cf2a3c865556cd
+  source_title: Keppres_No_154_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

@@ -1,0 +1,42 @@
+id: keppres_28_1989
+akn: /akn/id/act/keppres/1989/28
+type: keppres
+number: '28'
+year: 1989
+title: Keputusan Presiden Nomor 28 Tahun 1989 tentang Tunjangan Jabatan Penyuluh Pertanian
+tentang: TUNJANGAN JABATAN PENYULUH PERTANIAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1989-07-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_28_1989_1989-07-01
+  kind: asli
+  source: dataset
+  date: '1989-07-01'
+  date_basis: tanggal_penetapan
+  text: keppres_28_1989_1989-07-01.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:334d9976241f5c0b2123b759a9f6bc1820293f9dfc4c7a2851da285da55c2717
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:334d9976241f5c0b2123b759a9f6bc1820293f9dfc4c7a2851da285da55c2717
+  source_title: KEPPRES_NO_28_TH_1989
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: revoked
+  revoked_by:
+  - sha256:d31b5d45366fe0098644bd7e4e1b7e1e5bd567945e0eae90e6a9af5b6d1b890f
+  amended_by:
+  - sha256:74b8de9be2aa99130320ee816fb9898a63f9e86086636f8bd419485b514568ac

@@ -1,0 +1,30 @@
+id: keppres_13_2004
+akn: /akn/id/act/keppres/2004/13
+type: keppres
+number: '13'
+year: 2004
+title: Keputusan Presiden Nomor 13 Tahun 2004 tentang Tunjangan Jabatan Anggota Dan
+  Sekretaris Pengganti Mahkamah Pelayaran
+tentang: TUNJANGAN JABATAN ANGGOTA DAN SEKRETARIS PENGGANTI MAHKAMAH PELAYARAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2004-02-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fd63b2ba86974d220bfc135407f59dbc5a08844c6e5ced384ef04adae71e7637
+  source_title: KEPPRES_No.13_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:f4de3af24bbd72f23139203cd18545a8dd503677898e9b5a2f5d82216bee0c9a
+parse_error: 'v13: rebuilt text has 6 pasal, the dataset lists 7'

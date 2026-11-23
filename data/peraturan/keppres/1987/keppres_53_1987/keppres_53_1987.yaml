@@ -1,0 +1,41 @@
+id: keppres_53_1987
+akn: /akn/id/act/keppres/1987/53
+type: keppres
+number: '53'
+year: 1987
+title: Keputusan Presiden Nomor 53 Tahun 1987 tentang Kantor Perwakilan Wilayah Perusahaan
+  Asing
+tentang: KANTOR PERWAKILAN WILAYAH PERUSAHAAN ASING
+short_name: null
+status: dicabut
+tanggal_penetapan: '1987-12-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_53_1987_1987-12-24
+  kind: asli
+  source: dataset
+  date: '1987-12-24'
+  date_basis: tanggal_penetapan
+  text: keppres_53_1987_1987-12-24.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:80ac9b5eecdbf92ca84e30d7ea73cf6f316d9ec3df616c1a1180b0e06bb13a49
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:80ac9b5eecdbf92ca84e30d7ea73cf6f316d9ec3df616c1a1180b0e06bb13a49
+  source_title: KEPPRES_NO_53_TH_1987
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: revoked
+  revoked_by:
+  - sha256:2368e905b74ac078435ddde692206f429b17c962c4cbad12a03e036219db9114

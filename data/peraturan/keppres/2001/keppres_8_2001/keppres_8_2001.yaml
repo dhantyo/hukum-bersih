@@ -1,0 +1,38 @@
+id: keppres_8_2001
+akn: /akn/id/act/keppres/2001/8
+type: keppres
+number: '8'
+year: 2001
+title: Keputusan Presiden Nomor 8 Tahun 2001 tentang Badan Amil Zakat Nasional
+tentang: BADAN AMIL ZAKAT NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2001-01-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_8_2001_2001-01-17
+  kind: asli
+  source: dataset
+  date: '2001-01-17'
+  date_basis: tanggal_penetapan
+  text: keppres_8_2001_2001-01-17.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:95f2a5eaa20b6e5df81ba63fa54716a7ef2fb11b3a86903c850f1d76852838bb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:95f2a5eaa20b6e5df81ba63fa54716a7ef2fb11b3a86903c850f1d76852838bb
+  source_title: Keputusan_Presiden_no_8_th_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 32
+  status: none_known

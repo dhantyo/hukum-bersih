@@ -1,0 +1,41 @@
+id: keppres_136_1998
+akn: /akn/id/act/keppres/1998/136
+type: keppres
+number: '136'
+year: 1998
+title: Keputusan Presiden Nomor 136 Tahun 1998 tentang Pokok-Pokok Organisasi Lembaga
+  Pemerintah Non-Departemen
+tentang: POKOK-POKOK ORGANISASI LEMBAGA PEMERINTAH NON-DEPARTEMEN
+short_name: null
+status: diubah
+tanggal_penetapan: '1998-08-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_136_1998_1998-08-31
+  kind: asli
+  source: dataset
+  date: '1998-08-31'
+  date_basis: tanggal_penetapan
+  text: keppres_136_1998_1998-08-31.txt
+  pasal_count: 32
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b526f429c8ab488e91fee0c9d1a217f2cddfc0ac394875146f17ecc894574a46
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b526f429c8ab488e91fee0c9d1a217f2cddfc0ac394875146f17ecc894574a46
+  source_title: Keputusan_Presiden_no_136_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 36
+  status: amended
+  amended_by:
+  - sha256:0b8d6bd5153cce1886b14737e8c79f9ce8e80b343ba3f8f441ff25fa315a4751

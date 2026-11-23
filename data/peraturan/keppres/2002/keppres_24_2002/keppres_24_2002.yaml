@@ -1,0 +1,39 @@
+id: keppres_24_2002
+akn: /akn/id/act/keppres/2002/24
+type: keppres
+number: '24'
+year: 2002
+title: Keputusan Presiden Nomor 24 Tahun 2002 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2002-04-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_24_2002_2002-04-25
+  kind: asli
+  source: dataset
+  date: '2002-04-25'
+  date_basis: tanggal_penetapan
+  text: keppres_24_2002_2002-04-25.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:20c89b1acd28417aca9604c610cfd72475100ae66ab87ea04c306d8b890848ce
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:20c89b1acd28417aca9604c610cfd72475100ae66ab87ea04c306d8b890848ce
+  source_title: KEPPRES_No.24_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

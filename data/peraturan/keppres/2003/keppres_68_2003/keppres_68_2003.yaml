@@ -1,0 +1,41 @@
+id: keppres_68_2003
+akn: /akn/id/act/keppres/2003/68
+type: keppres
+number: '68'
+year: 2003
+title: Keputusan Presiden Nomor 68 Tahun 2003 tentang Tunjangan Jabatan Fungsional
+  Teknik Pengairan, Teknik Jalan Dan Jembatan, Teknik Tata Bangunan Dan Perumahan,
+  Dan Teknik Penyehatan Lingkungan
+tentang: TUNJANGAN JABATAN FUNGSIONAL TEKNIK PENGAIRAN, TEKNIK JALAN DAN JEMBATAN,
+  TEKNIK TATA BANGUNAN DAN PERUMAHAN, DAN TEKNIK PENYEHATAN LINGKUNGAN
+short_name: null
+status: null
+tanggal_penetapan: '2003-08-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_68_2003_2003-08-26
+  kind: asli
+  source: dataset
+  date: '2003-08-26'
+  date_basis: tanggal_penetapan
+  text: keppres_68_2003_2003-08-26.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9f1929a1a9297f811493c7f4ae32a1bd14c592369f13dd4459650b852852ffa2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9f1929a1a9297f811493c7f4ae32a1bd14c592369f13dd4459650b852852ffa2
+  source_title: Keputusan_Presiden_no_68_th_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: none_known

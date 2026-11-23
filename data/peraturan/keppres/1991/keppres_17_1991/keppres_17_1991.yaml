@@ -1,0 +1,40 @@
+id: keppres_17_1991
+akn: /akn/id/act/keppres/1991/17
+type: keppres
+number: '17'
+year: 1991
+title: Keputusan Presiden Nomor 17 Tahun 1991 tentang Kedudukan Balai Sidang Berdasarkan
+  Rencana Induk Kawasan Gelanggang Olahraga Senayan
+tentang: KEDUDUKAN BALAI SIDANG BERDASARKAN RENCANA INDUK KAWASAN GELANGGANG OLAHRAGA
+  SENAYAN
+short_name: null
+status: null
+tanggal_penetapan: '1991-04-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_17_1991_1991-04-04
+  kind: asli
+  source: dataset
+  date: '1991-04-04'
+  date_basis: tanggal_penetapan
+  text: keppres_17_1991_1991-04-04.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:cb73211af7132a79f72da1e43addd56733b9c270393d1b9862ebc78c3f72609d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:cb73211af7132a79f72da1e43addd56733b9c270393d1b9862ebc78c3f72609d
+  source_title: KEPPRES_NO_17_TH_1991
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

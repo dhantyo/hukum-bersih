@@ -1,0 +1,27 @@
+id: keppres_29_2008
+akn: /akn/id/act/keppres/2008/29
+type: keppres
+number: '29'
+year: 2008
+title: Keputusan Presiden Nomor 29 Tahun 2008
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '2008-12-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b5371223404b6c9d48afdf9f360e0204f1c198bd3f1e9a364721a81ec9623e79
+  source_title: Keppres_No_29_Th_2008
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 4
+  status: none_known
+parse_error: 'v13: no pasal found in the rebuilt text'

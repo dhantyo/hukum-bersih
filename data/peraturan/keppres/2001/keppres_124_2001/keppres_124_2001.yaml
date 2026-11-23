@@ -1,0 +1,43 @@
+id: keppres_124_2001
+akn: /akn/id/act/keppres/2001/124
+type: keppres
+number: '124'
+year: 2001
+title: Keputusan Presiden Nomor 124 Tahun 2001 tentang Komite Penanggulangan Kemiskinan
+tentang: KOMITE PENANGGULANGAN KEMISKINAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-12-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_124_2001_2001-12-07
+  kind: asli
+  source: dataset
+  date: '2001-12-07'
+  date_basis: tanggal_penetapan
+  text: keppres_124_2001_2001-12-07.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0d91df324ffbcb178c1840999aeed490a16a288da0a04a4a0855f21d1b8d64fb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0d91df324ffbcb178c1840999aeed490a16a288da0a04a4a0855f21d1b8d64fb
+  source_title: Keputusan_Presiden_no_124_th_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: revoked
+  revoked_by:
+  - sha256:96b7f786743ac430c4bfcdf3377880796d4abeb4c21fb012630bfd4b839fef61
+  amended_by:
+  - sha256:4e504f1e3dc28db149b91ecc0e817e32fbcaf6006443150827dab5162f3e1f93
+  - sha256:e9cf51af369fb339e983c9b65a142c2d800b6f9aa3c60d6f321be27f8e71e3c0

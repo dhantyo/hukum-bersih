@@ -1,0 +1,47 @@
+id: keppres_110_2001
+akn: /akn/id/act/keppres/2001/110
+type: keppres
+number: '110'
+year: 2001
+title: Keputusan Presiden Nomor 110 Tahun 2001 tentang Unit Organisasi Dan Tugas Eselon
+  I Lembaga Pemerintah Non Departemen
+tentang: UNIT ORGANISASI DAN TUGAS ESELON I LEMBAGA PEMERINTAH NON DEPARTEMEN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-10-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_110_2001_2001-10-10
+  kind: asli
+  source: dataset
+  date: '2001-10-10'
+  date_basis: tanggal_penetapan
+  text: keppres_110_2001_2001-10-10.txt
+  pasal_count: 52
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8317d3dfc2c1e3b7fb10bccd665946e1f94232aaa8e2de19fa2f687949b54766
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8317d3dfc2c1e3b7fb10bccd665946e1f94232aaa8e2de19fa2f687949b54766
+  source_title: Keputusan_Presiden_no_110_th_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 61
+  status: revoked
+  revoked_by:
+  - sha256:0b38d61dde84bca8bf6acb9f8759eb8a3358884fa23186c69c5bf169839f7ce2
+  - sha256:e04ad64515f93e13e6b4f288e3d099fc9c5b10030dd3efdba210df8ab5a66e17
+  amended_by:
+  - sha256:74029314a2db25916669d5babfc0b32b36bceb5084cab6adf376866ec174be0c
+  - sha256:92633cdebb10fcdcb36b0d797e9008f69ac377d1bca79d93b96173852c044086
+  - sha256:9ceb39be1ad9353a9ab4c065e9f0cacf9b1ed1dbc575c4c2afb45fe102f4a744
+  - sha256:cd6dd8b5ee5f10bdb1e61120feaf1e413dbdacf8888d48ebec013c8bddeb8009

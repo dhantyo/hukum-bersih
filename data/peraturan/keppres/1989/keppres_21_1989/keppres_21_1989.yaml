@@ -1,0 +1,39 @@
+id: keppres_21_1989
+akn: /akn/id/act/keppres/1989/21
+type: keppres
+number: '21'
+year: 1989
+title: Keputusan Presiden Nomor 21 Tahun 1989 tentang Daftar Bidang Usaha Yang Tertutup
+  Bagi Penanaman Modai
+tentang: DAFTAR BIDANG USAHA YANG TERTUTUP BAGI PENANAMAN MODAI
+short_name: null
+status: null
+tanggal_penetapan: '1989-05-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_21_1989_1989-05-05
+  kind: asli
+  source: dataset
+  date: '1989-05-05'
+  date_basis: tanggal_penetapan
+  text: keppres_21_1989_1989-05-05.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ff300647b55ae9b3dcfb41dd2a2ccf5266d8664d7c65c521cf4db20ca0829166
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ff300647b55ae9b3dcfb41dd2a2ccf5266d8664d7c65c521cf4db20ca0829166
+  source_title: KEPPRES_NO_21_TH_1989
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 16
+  status: none_known

@@ -1,0 +1,32 @@
+id: keppres_56_1988
+akn: /akn/id/act/keppres/1988/56
+type: keppres
+number: '56'
+year: 1988
+title: Keputusan Presiden Nomor 56 Tahun 1988 tentang Penunjukkan Badan-Badan Tertentu
+  Dan Bendaharawan Untuk Memungut Dan Menyetor Pajak Pertambahan Nilai Dan Pajak Penjualan
+  Atas Barang Mewah
+tentang: PENUNJUKKAN BADAN-BADAN TERTENTU DAN BENDAHARAWAN UNTUK MEMUNGUT DAN MENYETOR
+  PAJAK PERTAMBAHAN NILAI DAN PAJAK PENJUALAN ATAS BARANG MEWAH
+short_name: null
+status: dicabut
+tanggal_penetapan: '1989-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:27c81d5f542fee98bb64134943800d97980e6868a09879e528a2c1e6e4afbfee
+  source_title: KEPPRES_NO_56_TH_1988
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: revoked
+  revoked_by:
+  - sha256:c68ba40f8a35eb6c715b97cafc13ab211fc815423a2527279601ed4f428caf9c
+parse_error: 'v13: rebuilt text has 1 pasal, the dataset lists 5'

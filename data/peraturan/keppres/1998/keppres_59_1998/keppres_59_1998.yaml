@@ -1,0 +1,42 @@
+id: keppres_59_1998
+akn: /akn/id/act/keppres/1998/59
+type: keppres
+number: '59'
+year: 1998
+title: Keputusan Presiden Nomor 59 Tahun 1998 tentang Kedudukan, Tugas, Fungsi, Susunan
+  Organisasi, Dan Tata Kerja Menteri Negara Koordinator
+tentang: KEDUDUKAN, TUGAS, FUNGSI, SUSUNAN ORGANISASI, DAN TATA KERJA MENTERI NEGARA
+  KOORDINATOR
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-04-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_59_1998_1998-04-13
+  kind: asli
+  source: dataset
+  date: '1998-04-13'
+  date_basis: tanggal_penetapan
+  text: keppres_59_1998_1998-04-13.txt
+  pasal_count: 27
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b01967bb41d96fb8681b8ed5d262b80c63ecddb6d967b457f1ade6c89f7834b9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b01967bb41d96fb8681b8ed5d262b80c63ecddb6d967b457f1ade6c89f7834b9
+  source_title: Keputusan_Presiden_no_59_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 39
+  status: revoked
+  revoked_by:
+  - sha256:bad2dc174aef2f0d56946e14fd3be8404282d1c1026b94774ccb6dc5fa9f5eb2

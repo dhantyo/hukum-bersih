@@ -1,0 +1,30 @@
+id: keppres_19_2004
+akn: /akn/id/act/keppres/2004/19
+type: keppres
+number: '19'
+year: 2004
+title: Keputusan Presiden Nomor 19 Tahun 2004 tentang Tunjangan Jabatan Fungsional
+  Statistisi
+tentang: TUNJANGAN JABATAN FUNGSIONAL STATISTISI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2004-03-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b58d8bb8111d2618741a0d91ed08beb6f1922e8e64cb82460795e0b42b4ad332
+  source_title: KEPPRES_No.19_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: revoked
+  revoked_by:
+  - sha256:d23fe0163f19c527105ae7804a9eae8edbca5fed9515e335e11b10b551e0ede6
+parse_error: 'v13: rebuilt text has 6 pasal, the dataset lists 7'

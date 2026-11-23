@@ -1,0 +1,40 @@
+id: keppres_16_1996
+akn: /akn/id/act/keppres/1996/16
+type: keppres
+number: '16'
+year: 1996
+title: Keputusan Presiden Nomor 16 Tahun 1996 tentang Uang Paket Bagi Pimpinan Dan
+  Anggota Dewan Perwakilan Rakyat Dan Dewan Pertimbangan Agung
+tentang: UANG PAKET BAGI PIMPINAN DAN ANGGOTA DEWAN PERWAKILAN RAKYAT DAN DEWAN PERTIMBANGAN
+  AGUNG
+short_name: null
+status: null
+tanggal_penetapan: '1996-02-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_16_1996_1996-02-16
+  kind: asli
+  source: dataset
+  date: '1996-02-16'
+  date_basis: tanggal_penetapan
+  text: keppres_16_1996_1996-02-16.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a43fb9c4705b4c7397be992da1e4141f399297315f56a9cdbd817cef6f66e15e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a43fb9c4705b4c7397be992da1e4141f399297315f56a9cdbd817cef6f66e15e
+  source_title: Keputusan_Presiden_no_16_TH_1996
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

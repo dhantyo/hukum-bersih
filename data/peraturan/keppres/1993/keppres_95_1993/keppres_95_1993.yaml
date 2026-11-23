@@ -1,0 +1,42 @@
+id: keppres_95_1993
+akn: /akn/id/act/keppres/1993/95
+type: keppres
+number: '95'
+year: 1993
+title: Keputusan Presiden Nomor 95 Tahun 1993 tentang Perubahan Keputusan Presiden
+  Republik Indonesia Nomor53 Tahun 1993 Tentang Fasilitas Dan Kemudahan Pabean, Perpajakan
+  Dan Tata Niaga Impor Bagi Entrepot Produksi Untuk Tujuan Ekspor (Epte)
+tentang: PERUBAHAN KEPUTUSAN PRESIDEN REPUBLIK INDONESIA NOMOR53 TAHUN 1993 TENTANG
+  FASILITAS DAN KEMUDAHAN PABEAN, PERPAJAKAN DAN TATA NIAGA IMPOR BAGI ENTREPOT PRODUKSI
+  UNTUK TUJUAN EKSPOR (EPTE)
+short_name: null
+status: null
+tanggal_penetapan: '1993-10-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_95_1993_1993-10-23
+  kind: asli
+  source: dataset
+  date: '1993-10-23'
+  date_basis: tanggal_penetapan
+  text: keppres_95_1993_1993-10-23.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1e9d2368a051a5d047558fb38078702586f7d0f71998113a2a29737b507b1dd6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1e9d2368a051a5d047558fb38078702586f7d0f71998113a2a29737b507b1dd6
+  source_title: Keputusan_Presiden_no_95_TH_1993
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

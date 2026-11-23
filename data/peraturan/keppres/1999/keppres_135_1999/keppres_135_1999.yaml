@@ -1,0 +1,33 @@
+id: keppres_135_1999
+akn: /akn/id/act/keppres/1999/135
+type: keppres
+number: '135'
+year: 1999
+title: Keputusan Presiden Nomor 135 Tahun 1999 tentang Kedudukan, Tugas, Fungsi, Susunan
+  Organisasi, Dan Tata Kerja Menteri Negara Koordinator
+tentang: KEDUDUKAN, TUGAS, FUNGSI, SUSUNAN ORGANISASI, DAN TATA KERJA MENTERI NEGARA
+  KOORDINATOR
+short_name: null
+status: dicabut
+tanggal_penetapan: '1999-11-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:810b7785f51abc8b2323ac933d1de9bba596ec106124933c426e2d354260c441
+  source_title: Keppres_No_135_Tahun_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 30
+  status: revoked
+  revoked_by:
+  - sha256:0ebd67fe1fd0d8f5ba70de7597a090cfc69e8bfd0fe0264d2e9f479f122e2f24
+  amended_by:
+  - sha256:7e15c810f401817913cb24ede678279f244d79849993f54a25c9a2c0294cb5c2
+parse_error: 'v13: rebuilt text has 6 pasal, the dataset lists 24'

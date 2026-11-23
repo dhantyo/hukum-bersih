@@ -1,0 +1,40 @@
+id: keppres_6_2016
+akn: /akn/id/act/keppres/2016/6
+type: keppres
+number: '6'
+year: 2016
+title: Keputusan Presiden Nomor 6 Tahun 2016 tentang Panitia Nasional Penyelenggara
+  Konferensi Tingkat Tinggi Luar Biasa Ke-S Organisasi Kerja Sama Islam Tahun 2016
+tentang: PANITIA NASIONAL PENYELENGGARA KONFERENSI TINGKAT TINGGI LUAR BIASA KE-S
+  ORGANISASI KERJA SAMA ISLAM TAHUN 2016
+short_name: null
+status: null
+tanggal_penetapan: '2016-02-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_6_2016_2016-02-12
+  kind: asli
+  source: dataset
+  date: '2016-02-12'
+  date_basis: tanggal_penetapan
+  text: keppres_6_2016_2016-02-12.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fae5b4c0c6d06167df548df76aac03a79804c4d504f64430918d0be0c4f7b854
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fae5b4c0c6d06167df548df76aac03a79804c4d504f64430918d0be0c4f7b854
+  source_title: Keppres_Nomor_6_Tahun_2016
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 23
+  status: none_known

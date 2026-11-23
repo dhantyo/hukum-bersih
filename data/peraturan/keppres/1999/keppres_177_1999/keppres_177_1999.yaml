@@ -1,0 +1,41 @@
+id: keppres_177_1999
+akn: /akn/id/act/keppres/1999/177
+type: keppres
+number: '177'
+year: 1999
+title: Keputusan Presiden Nomor 177 Tahun 1999 tentang Komite Kebijakan Sektor Keuangan
+tentang: KOMITE KEBIJAKAN SEKTOR KEUANGAN
+short_name: null
+status: diubah
+tanggal_penetapan: '1999-12-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_177_1999_1999-12-28
+  kind: asli
+  source: dataset
+  date: '1999-12-28'
+  date_basis: tanggal_penetapan
+  text: keppres_177_1999_1999-12-28.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b04ab67a59c01f6485b4984250384b28c975e4d8ef99e26b7095a2f5d5b14fda
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b04ab67a59c01f6485b4984250384b28c975e4d8ef99e26b7095a2f5d5b14fda
+  source_title: Keppres_No_177_Tahun_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: amended
+  amended_by:
+  - sha256:2650fc79c054f540d3d32dfea2f0e1c13b48baf856dfb04c2fc264c0ab707e4b
+  - sha256:38ca7800950aa5aa589e12f244b9baddd9005c43098aeb086ad1657ede2f5249

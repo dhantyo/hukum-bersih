@@ -1,0 +1,31 @@
+id: keppres_50_1996
+akn: /akn/id/act/keppres/1996/50
+type: keppres
+number: '50'
+year: 1996
+title: Keputusan Presiden Nomor 50 Tahun 1996 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Australia Tentang Pemeliharaan Keamanan
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  AUSTRALIA TENTANG PEMELIHARAAN KEAMANAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1996-06-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ebf2e6bf33c5c80a4ed599fcd40a75f45768f50378a0d9704c0f8e2108591200
+  source_title: Keputusan_Presiden_no_50_TH_1996
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:1963dec743f20f74f9a7365734ba66ff89dc12a7e2813e3206efc8fd1400b250
+parse_error: 'v13: rebuilt text has 2 pasal, the dataset lists 4'

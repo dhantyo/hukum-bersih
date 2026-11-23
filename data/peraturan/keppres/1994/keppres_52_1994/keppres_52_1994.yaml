@@ -1,0 +1,39 @@
+id: keppres_52_1994
+akn: /akn/id/act/keppres/1994/52
+type: keppres
+number: '52'
+year: 1994
+title: Keputusan Presiden Nomor 52 Tahun 1994 tentang Perincian Anggaran Belanja Pembangunan
+  Tahun Anggaran 1994/95
+tentang: PERINCIAN ANGGARAN BELANJA PEMBANGUNAN TAHUN ANGGARAN 1994/95
+short_name: null
+status: null
+tanggal_penetapan: '1994-07-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_52_1994_1994-07-18
+  kind: asli
+  source: dataset
+  date: '1994-07-18'
+  date_basis: tanggal_penetapan
+  text: keppres_52_1994_1994-07-18.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:55249d8a5515eb518cd6511dd73d27ff1560b1e296712e160d27e9d18ff93baa
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:55249d8a5515eb518cd6511dd73d27ff1560b1e296712e160d27e9d18ff93baa
+  source_title: Keputusan_Presiden_no_52_TH_1994
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

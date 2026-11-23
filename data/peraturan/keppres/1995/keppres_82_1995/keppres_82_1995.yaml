@@ -1,0 +1,44 @@
+id: keppres_82_1995
+akn: /akn/id/act/keppres/1995/82
+type: keppres
+number: '82'
+year: 1995
+title: Keputusan Presiden Nomor 82 Tahun 1995 tentang Pengembangan Lahan Gambut Untuk
+  Pertanian Tanaman Pangan Di Kalimatan Tengah
+tentang: PENGEMBANGAN LAHAN GAMBUT UNTUK PERTANIAN TANAMAN PANGAN DI KALIMATAN TENGAH
+short_name: null
+status: dicabut
+tanggal_penetapan: '1995-12-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_82_1995_1995-12-26
+  kind: asli
+  source: dataset
+  date: '1995-12-26'
+  date_basis: tanggal_penetapan
+  text: keppres_82_1995_1995-12-26.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:612e358b4658a72b66532e6c9b6c53ed9c4d20eaa2290fe08e398a830e6e6bb6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:612e358b4658a72b66532e6c9b6c53ed9c4d20eaa2290fe08e398a830e6e6bb6
+  source_title: Keputusan_Presiden_no_82_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: revoked
+  revoked_by:
+  - sha256:e69812894d6a2d57a5188892206d4f20c945af0aaf422708cce94f574d864075
+  amended_by:
+  - sha256:0044ed08eef838041bb5485aaaa4449582a524b647cc20d56d3b667702c39ce0
+  - sha256:88f7bd2d415a1dd00bd58cd41a9321d0bb7e59dedbf554cedefab5991ec9263c

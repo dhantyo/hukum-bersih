@@ -1,0 +1,30 @@
+id: keppres_113_2001
+akn: /akn/id/act/keppres/2001/113
+type: keppres
+number: '113'
+year: 2001
+title: Keputusan Presiden Nomor 113 Tahun 2001 tentang Tunjangan Jabatan Fungsional
+  Penyuluh Agama
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENYULUH AGAMA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-10-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8245de4d60b27063c8b1eceb97f23f0357abaf630a7957541dd9ba8026b15165
+  source_title: Keputusan_Presiden_no_113_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: revoked
+  revoked_by:
+  - sha256:41bb83ae75903031f695dacf54603cc4440ead9817d8d3668acb7ab153c19325
+parse_error: 'v13: rebuilt text has 4 pasal, the dataset lists 5'

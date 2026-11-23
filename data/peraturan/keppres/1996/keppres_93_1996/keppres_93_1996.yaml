@@ -1,0 +1,39 @@
+id: keppres_93_1996
+akn: /akn/id/act/keppres/1996/93
+type: keppres
+number: '93'
+year: 1996
+title: Keputusan Presiden Nomor 93 Tahun 1996 tentang Bantuan Pinjaman Kepada Pt.
+  Kiani Kertas
+tentang: BANTUAN PINJAMAN KEPADA PT. KIANI KERTAS
+short_name: null
+status: null
+tanggal_penetapan: '1996-12-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_93_1996_1996-12-10
+  kind: asli
+  source: dataset
+  date: '1996-12-10'
+  date_basis: tanggal_penetapan
+  text: keppres_93_1996_1996-12-10.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4f9ba0b4798de1b54c370d5d50f379f9145eecaa83076faaa7029f40cba1f185
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4f9ba0b4798de1b54c370d5d50f379f9145eecaa83076faaa7029f40cba1f185
+  source_title: Keputusan_Presiden_no_93_TH_1996
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

@@ -1,0 +1,42 @@
+id: keppres_49_1991
+akn: /akn/id/act/keppres/1991/49
+type: keppres
+number: '49'
+year: 1991
+title: Keputusan Presiden Nomor 49 Tahun 1991 tentang Perlakuan Pajak Penghasilan,
+  Pajak Pertambahan Nilai Dan Pungutan-Pungutan Lainnya Terhadap Pelaksanaan Kuasa
+  Dan Ijin Pengusahaan Sumberdaya Panas Bumi Untuk Membangkitkan Energi/Listrik
+tentang: PERLAKUAN PAJAK PENGHASILAN, PAJAK PERTAMBAHAN NILAI DAN PUNGUTAN-PUNGUTAN
+  LAINNYA TERHADAP PELAKSANAAN KUASA DAN IJIN PENGUSAHAAN SUMBERDAYA PANAS BUMI UNTUK
+  MEMBANGKITKAN ENERGI/LISTRIK
+short_name: null
+status: null
+tanggal_penetapan: '1991-11-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_49_1991_1991-11-12
+  kind: asli
+  source: dataset
+  date: '1991-11-12'
+  date_basis: tanggal_penetapan
+  text: keppres_49_1991_1991-11-12.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d2d84355d3dac39c7cb8339bfd047ee7223c13780396707054deaa8e9fefff5d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d2d84355d3dac39c7cb8339bfd047ee7223c13780396707054deaa8e9fefff5d
+  source_title: KEPPRES_NO_49_TH_1991
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

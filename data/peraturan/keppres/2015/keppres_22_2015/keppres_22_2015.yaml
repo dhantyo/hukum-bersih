@@ -1,0 +1,27 @@
+id: keppres_22_2015
+akn: /akn/id/act/keppres/2015/22
+type: keppres
+number: '22'
+year: 2015
+title: Keputusan Presiden Nomor 22 Tahun 2015
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:14a35d27d9b9b91bb40c56998f596db43265732548de70308f7bb4da7a968e30
+  source_title: Keppres_Nomor_22_Tahun_2015
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 4
+  status: none_known
+parse_error: 'v13: no pasal found in the rebuilt text'

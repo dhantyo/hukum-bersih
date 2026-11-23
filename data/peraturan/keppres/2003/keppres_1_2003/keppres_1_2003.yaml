@@ -1,0 +1,40 @@
+id: keppres_1_2003
+akn: /akn/id/act/keppres/2003/1
+type: keppres
+number: '1'
+year: 2003
+title: Keputusan Presiden Nomor 1 Tahun 2003 tentang Dana Alokasi Umum Daerah Provinsi
+  Dan Daerah Kabupaten/Kota Tahun Anggaran 2003
+tentang: DANA ALOKASI UMUM DAERAH PROVINSI DAN DAERAH KABUPATEN/KOTA TAHUN ANGGARAN
+  2003
+short_name: null
+status: null
+tanggal_penetapan: '2003-01-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_1_2003_2003-01-06
+  kind: asli
+  source: dataset
+  date: '2003-01-06'
+  date_basis: tanggal_penetapan
+  text: keppres_1_2003_2003-01-06.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b0494934d5a5152261dd285e9c981785cd46cdb282e078d97ed43bbf6722ee5f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b0494934d5a5152261dd285e9c981785cd46cdb282e078d97ed43bbf6722ee5f
+  source_title: KEPPRES_No.1_TH_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 27
+  status: none_known

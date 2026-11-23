@@ -1,0 +1,39 @@
+id: keppres_49_1985
+akn: /akn/id/act/keppres/1985/49
+type: keppres
+number: '49'
+year: 1985
+title: Keputusan Presiden Nomor 49 Tahun 1985 tentang Organisasi Sekretariat Jenderal
+  Dewan Pertimbangan Agung Republik Indonesia
+tentang: ORGANISASI SEKRETARIAT JENDERAL DEWAN PERTIMBANGAN AGUNG REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '1985-05-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_49_1985_1985-05-15
+  kind: asli
+  source: dataset
+  date: '1985-05-15'
+  date_basis: tanggal_penetapan
+  text: keppres_49_1985_1985-05-15.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a83475f56198c3a95dd6287076caf2dd75e093f37d5a6e10020e31b5d76feb26
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a83475f56198c3a95dd6287076caf2dd75e093f37d5a6e10020e31b5d76feb26
+  source_title: KEPPRES_NO_49_TH_1985
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: none_known

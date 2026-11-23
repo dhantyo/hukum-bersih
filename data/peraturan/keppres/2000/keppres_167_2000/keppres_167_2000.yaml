@@ -1,0 +1,42 @@
+id: keppres_167_2000
+akn: /akn/id/act/keppres/2000/167
+type: keppres
+number: '167'
+year: 2000
+title: Keputusan Presiden Nomor 167 Tahun 2000 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Republik Argentina Mengenai Peningkatan
+  Dan Perlindungan Atas Penanaman Modal Beserta Protokol
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  REPUBLIK ARGENTINA MENGENAI PENINGKATAN DAN PERLINDUNGAN ATAS PENANAMAN MODAL BESERTA
+  PROTOKOL
+short_name: null
+status: null
+tanggal_penetapan: '2000-12-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_167_2000_2000-12-01
+  kind: asli
+  source: dataset
+  date: '2000-12-01'
+  date_basis: tanggal_penetapan
+  text: keppres_167_2000_2000-12-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ceded32c502e1708988aac5652f0d2daf5d6d6472fb0e33317bb85576e8d9fb8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ceded32c502e1708988aac5652f0d2daf5d6d6472fb0e33317bb85576e8d9fb8
+  source_title: Keputusan_Presiden_no_167_th_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

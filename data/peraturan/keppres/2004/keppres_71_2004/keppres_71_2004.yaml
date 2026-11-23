@@ -1,0 +1,39 @@
+id: keppres_71_2004
+akn: /akn/id/act/keppres/2004/71
+type: keppres
+number: '71'
+year: 2004
+title: Keputusan Presiden Nomor 71 Tahun 2004 tentang Pengadaan Pegawai Negeri Sipil
+  Tahun Anggaran 2004
+tentang: PENGADAAN PEGAWAI NEGERI SIPIL TAHUN ANGGARAN 2004
+short_name: null
+status: null
+tanggal_penetapan: '2004-08-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_71_2004_2004-08-13
+  kind: asli
+  source: dataset
+  date: '2004-08-13'
+  date_basis: tanggal_penetapan
+  text: keppres_71_2004_2004-08-13.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:19a03373ff156a9a7d6e03900db0b3068363adf4a10472360bf0b243fc80c1d9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:19a03373ff156a9a7d6e03900db0b3068363adf4a10472360bf0b243fc80c1d9
+  source_title: KEPPRES_No.71_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: none_known

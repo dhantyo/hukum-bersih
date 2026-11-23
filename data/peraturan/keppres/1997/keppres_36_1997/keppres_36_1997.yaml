@@ -1,0 +1,39 @@
+id: keppres_36_1997
+akn: /akn/id/act/keppres/1997/36
+type: keppres
+number: '36'
+year: 1997
+title: Keputusan Presiden Nomor 36 Tahun 1997 tentang Besarnya Ongkos Naik Haji Tahun
+  1998
+tentang: BESARNYA ONGKOS NAIK HAJI TAHUN 1998
+short_name: null
+status: null
+tanggal_penetapan: '1997-08-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_36_1997_1997-08-25
+  kind: asli
+  source: dataset
+  date: '1997-08-25'
+  date_basis: tanggal_penetapan
+  text: keppres_36_1997_1997-08-25.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6b7498fe6298e8a620831635e80b702a9c95a8affacbda98e1a63f9b36b7c283
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6b7498fe6298e8a620831635e80b702a9c95a8affacbda98e1a63f9b36b7c283
+  source_title: Keputusan_Presiden_no_36_TH_1997
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

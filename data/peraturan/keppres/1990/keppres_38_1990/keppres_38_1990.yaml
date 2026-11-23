@@ -1,0 +1,39 @@
+id: keppres_38_1990
+akn: /akn/id/act/keppres/1990/38
+type: keppres
+number: '38'
+year: 1990
+title: Keputusan Presiden Nomor 38 Tahun 1990 tentang Perincian Anggaran Belanja Pembangunan
+  Tahun Anggaran 1990/1991
+tentang: PERINCIAN ANGGARAN BELANJA PEMBANGUNAN TAHUN ANGGARAN 1990/1991
+short_name: null
+status: null
+tanggal_penetapan: '1990-08-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_38_1990_1990-08-29
+  kind: asli
+  source: dataset
+  date: '1990-08-29'
+  date_basis: tanggal_penetapan
+  text: keppres_38_1990_1990-08-29.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e597dd3bee5b8d90e1361054382dac3489ea07f07a3c9d68db2c7232cef115a8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e597dd3bee5b8d90e1361054382dac3489ea07f07a3c9d68db2c7232cef115a8
+  source_title: KEPPRES_NO_38_TH_1990
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

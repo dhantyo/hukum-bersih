@@ -1,0 +1,42 @@
+id: keppres_54_2000
+akn: /akn/id/act/keppres/2000/54
+type: keppres
+number: '54'
+year: 2000
+title: Keputusan Presiden Nomor 54 Tahun 2000 tentang Pengesahan Agreement On Economic,
+  Scientific And Technical Cooperation Between The Government Of The Republic Of Indonesia
+  And The Government Of The Republic Of Lebanon
+tentang: PENGESAHAN AGREEMENT ON ECONOMIC, SCIENTIFIC AND TECHNICAL COOPERATION BETWEEN
+  THE GOVERNMENT OF THE REPUBLIC OF INDONESIA AND THE GOVERNMENT OF THE REPUBLIC OF
+  LEBANON
+short_name: null
+status: null
+tanggal_penetapan: '2000-04-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_54_2000_2000-04-18
+  kind: asli
+  source: dataset
+  date: '2000-04-18'
+  date_basis: tanggal_penetapan
+  text: keppres_54_2000_2000-04-18.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fd9d011c385f92b35e9e43d912dcfc249209fdaf23555d7ffe29ed5245c71009
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fd9d011c385f92b35e9e43d912dcfc249209fdaf23555d7ffe29ed5245c71009
+  source_title: Keputusan_Presiden_no_54_TH_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

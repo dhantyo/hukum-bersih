@@ -1,0 +1,40 @@
+id: keppres_27_2001
+akn: /akn/id/act/keppres/2001/27
+type: keppres
+number: '27'
+year: 2001
+title: Keputusan Presiden Nomor 27 Tahun 2001 tentang Pendirian Sekolah Tinggi Agama
+  Hindu Tampung Penyang, Palangkaraya Dan Sekolah Tinggi Agama Hindu Gde Pudja, Mataram
+tentang: PENDIRIAN SEKOLAH TINGGI AGAMA HINDU TAMPUNG PENYANG, PALANGKARAYA DAN SEKOLAH
+  TINGGI AGAMA HINDU GDE PUDJA, MATARAM
+short_name: null
+status: null
+tanggal_penetapan: '2001-02-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_27_2001_2001-02-21
+  kind: asli
+  source: dataset
+  date: '2001-02-21'
+  date_basis: tanggal_penetapan
+  text: keppres_27_2001_2001-02-21.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2f854c69a99a7d1814d8f24fc414212b5db7216217faebf33224698413d93dd8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2f854c69a99a7d1814d8f24fc414212b5db7216217faebf33224698413d93dd8
+  source_title: Keputusan_Presiden_no_27_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

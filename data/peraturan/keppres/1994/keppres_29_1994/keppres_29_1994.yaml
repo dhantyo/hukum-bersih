@@ -1,0 +1,41 @@
+id: keppres_29_1994
+akn: /akn/id/act/keppres/1994/29
+type: keppres
+number: '29'
+year: 1994
+title: Keputusan Presiden Nomor 29 Tahun 1994 tentang Perubahan Keputusan Presiden
+  Nomor 18 Tahun 1984 Tentang Proyek Tambak Inti Rakyat Sebagaimana Telah Diubah Dengan
+  Keputusan Presiden Nomor 9 Tahun 1988
+tentang: PERUBAHAN KEPUTUSAN PRESIDEN NOMOR 18 TAHUN 1984 TENTANG PROYEK TAMBAK INTI
+  RAKYAT SEBAGAIMANA TELAH DIUBAH DENGAN KEPUTUSAN PRESIDEN NOMOR 9 TAHUN 1988
+short_name: null
+status: null
+tanggal_penetapan: '1994-04-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_29_1994_1994-04-30
+  kind: asli
+  source: dataset
+  date: '1994-04-30'
+  date_basis: tanggal_penetapan
+  text: keppres_29_1994_1994-04-30.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:01425bb92e5a1ea389d58b41b485be814a7d23c00ec13430ce7d6b8e59bdd752
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:01425bb92e5a1ea389d58b41b485be814a7d23c00ec13430ce7d6b8e59bdd752
+  source_title: Keputusan_Presiden_no_29_TH_1994
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

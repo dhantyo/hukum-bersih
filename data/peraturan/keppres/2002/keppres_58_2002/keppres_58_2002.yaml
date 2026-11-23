@@ -1,0 +1,42 @@
+id: keppres_58_2002
+akn: /akn/id/act/keppres/2002/58
+type: keppres
+number: '58'
+year: 2002
+title: Keputusan Presiden Nomor 58 Tahun 2002 tentang Pendirian Sekolah Tinggi Penyuluhan
+  Pertanian Medan, Sekolah Tinggi Penyuluhan Pertanian Magelang, Sekolah Tinggipenyuluhan
+  Pertanian Gowa, Dan Sekolah Tinggi Penyuluhan Pertanian Manokwari
+tentang: PENDIRIAN SEKOLAH TINGGI PENYULUHAN PERTANIAN MEDAN, SEKOLAH TINGGI PENYULUHAN
+  PERTANIAN MAGELANG, SEKOLAH TINGGIPENYULUHAN PERTANIAN GOWA, DAN SEKOLAH TINGGI
+  PENYULUHAN PERTANIAN MANOKWARI
+short_name: null
+status: null
+tanggal_penetapan: '2002-08-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_58_2002_2002-08-13
+  kind: asli
+  source: dataset
+  date: '2002-08-13'
+  date_basis: tanggal_penetapan
+  text: keppres_58_2002_2002-08-13.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5a695c2c35b6241b686ab910ab5a59d442a35be574281e53f47f3b25c11bf7a9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5a695c2c35b6241b686ab910ab5a59d442a35be574281e53f47f3b25c11bf7a9
+  source_title: KEPPRES_No.58_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

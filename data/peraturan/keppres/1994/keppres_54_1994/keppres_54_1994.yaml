@@ -1,0 +1,29 @@
+id: keppres_54_1994
+akn: /akn/id/act/keppres/1994/54
+type: keppres
+number: '54'
+year: 1994
+title: Keputusan Presiden Nomor 54 Tahun 1994 tentang Lembaga Sandi Negara
+tentang: LEMBAGA SANDI NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1994-07-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:cd798910316bf6468c31a4c154266a215ab67c029e6a3839b96b90862bf85c09
+  source_title: Keputusan_Presiden_no_54_TH_1994
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 38
+  status: revoked
+  revoked_by:
+  - sha256:38273b9cf3637d9a9e457f405b8784d115c0bf2fa0b14554f680c0bb9a5a2ef7
+parse_error: 'v13: rebuilt text has 14 pasal, the dataset lists 27'

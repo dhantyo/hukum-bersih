@@ -1,0 +1,38 @@
+id: keppres_43_2000
+akn: /akn/id/act/keppres/2000/43
+type: keppres
+number: '43'
+year: 2000
+title: Keputusan Presiden Nomor 43 Tahun 2000 tentang Sekolah Tinggi Penerbangan Indonesia
+tentang: SEKOLAH TINGGI PENERBANGAN INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2000-03-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_43_2000_2000-03-10
+  kind: asli
+  source: dataset
+  date: '2000-03-10'
+  date_basis: tanggal_penetapan
+  text: keppres_43_2000_2000-03-10.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:423adb49cc9d57e553e09d24945eac6d51a1284ff0b288109144a49d8ae58625
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:423adb49cc9d57e553e09d24945eac6d51a1284ff0b288109144a49d8ae58625
+  source_title: Keputusan_Presiden_no_43_TH_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

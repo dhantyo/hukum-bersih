@@ -1,0 +1,40 @@
+id: keppres_51_1986
+akn: /akn/id/act/keppres/1986/51
+type: keppres
+number: '51'
+year: 1986
+title: Keputusan Presiden Nomor 51 Tahun 1986 tentang Perubahan Atas Keputusan Presiden
+  Nomor 68 Tahun 1982 Tentang Susunan Organisasi Universitas Hasanuddin
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 68 TAHUN 1982 TENTANG SUSUNAN ORGANISASI
+  UNIVERSITAS HASANUDDIN
+short_name: null
+status: null
+tanggal_penetapan: '1986-10-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_51_1986_1986-10-11
+  kind: asli
+  source: dataset
+  date: '1986-10-11'
+  date_basis: tanggal_penetapan
+  text: keppres_51_1986_1986-10-11.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:294c5c8073d5656f63d93e69c9b87b83165fe4ab7be618ed0c620e82fa6a1fc3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:294c5c8073d5656f63d93e69c9b87b83165fe4ab7be618ed0c620e82fa6a1fc3
+  source_title: KEPPRES_NO_52_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

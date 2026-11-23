@@ -1,0 +1,30 @@
+id: keppres_21_1997
+akn: /akn/id/act/keppres/1997/21
+type: keppres
+number: '21'
+year: 1997
+title: Keputusan Presiden Nomor 21 Tahun 1997 tentang Pengesahan Anggaran Dasar Dewan
+  Koperasi Indonesia
+tentang: PENGESAHAN ANGGARAN DASAR DEWAN KOPERASI INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1997-06-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5531f17d934011070e1f83d9ece981867649c3c99b4b95cfa29be1c3423f495c
+  source_title: Keputusan_Presiden_no_21_TH_1997
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 32
+  status: revoked
+  revoked_by:
+  - sha256:3ea0f0fff7a9aeab69c28236ced64e385193339fe47ca794a788b43825587c49
+parse_error: 'v13: rebuilt text has 3 pasal, the dataset lists 26'

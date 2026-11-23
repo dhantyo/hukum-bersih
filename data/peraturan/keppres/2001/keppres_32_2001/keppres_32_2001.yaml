@@ -1,0 +1,39 @@
+id: keppres_32_2001
+akn: /akn/id/act/keppres/2001/32
+type: keppres
+number: '32'
+year: 2001
+title: Keputusan Presiden Nomor 32 Tahun 2001 tentang Pendirian Universitas Sultan
+  Ageng Tirtayasa
+tentang: PENDIRIAN UNIVERSITAS SULTAN AGENG TIRTAYASA
+short_name: null
+status: null
+tanggal_penetapan: '2001-03-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_32_2001_2001-03-19
+  kind: asli
+  source: dataset
+  date: '2001-03-19'
+  date_basis: tanggal_penetapan
+  text: keppres_32_2001_2001-03-19.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6db65e50f4e72328f8c86b770f60e2408216c4dd1e90d663681c70ff9afadc23
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6db65e50f4e72328f8c86b770f60e2408216c4dd1e90d663681c70ff9afadc23
+  source_title: Keputusan_Presiden_no_32_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

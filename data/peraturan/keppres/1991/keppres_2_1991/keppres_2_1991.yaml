@@ -1,0 +1,39 @@
+id: keppres_2_1991
+akn: /akn/id/act/keppres/1991/2
+type: keppres
+number: '2'
+year: 1991
+title: Keputusan Presiden Nomor 2 Tahun 1991 tentang Perwakilan Republik Indonesia
+  Untuk Republik Federal Jerman
+tentang: PERWAKILAN REPUBLIK INDONESIA UNTUK REPUBLIK FEDERAL JERMAN
+short_name: null
+status: null
+tanggal_penetapan: '1991-01-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_2_1991_1991-01-17
+  kind: asli
+  source: dataset
+  date: '1991-01-17'
+  date_basis: tanggal_penetapan
+  text: keppres_2_1991_1991-01-17.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:68314952dd59492ff382fe7040ee9f327adbc16bbbdfff88913acaac95f9ecda
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:68314952dd59492ff382fe7040ee9f327adbc16bbbdfff88913acaac95f9ecda
+  source_title: KEPPRES_NO_2_TH_1991
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 10
+  status: none_known

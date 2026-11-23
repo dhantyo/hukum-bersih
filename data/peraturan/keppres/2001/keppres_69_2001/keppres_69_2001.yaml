@@ -1,0 +1,39 @@
+id: keppres_69_2001
+akn: /akn/id/act/keppres/2001/69
+type: keppres
+number: '69'
+year: 2001
+title: Keputusan Presiden Nomor 69 Tahun 2001 tentang Komite Nasional Agenda Habitat
+  Ii
+tentang: KOMITE NASIONAL AGENDA HABITAT II
+short_name: null
+status: null
+tanggal_penetapan: '2001-05-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_69_2001_2001-05-18
+  kind: asli
+  source: dataset
+  date: '2001-05-18'
+  date_basis: tanggal_penetapan
+  text: keppres_69_2001_2001-05-18.txt
+  pasal_count: 15
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9ae9027b6bafd16b95a83ad92bdef7e11fe92081293208cc60fb6079e8415667
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9ae9027b6bafd16b95a83ad92bdef7e11fe92081293208cc60fb6079e8415667
+  source_title: Keputusan_Presiden_no_69_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 21
+  status: none_known

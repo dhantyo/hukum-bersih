@@ -1,0 +1,39 @@
+id: keppres_88_1995
+akn: /akn/id/act/keppres/1995/88
+type: keppres
+number: '88'
+year: 1995
+title: Keputusan Presiden Nomor 88 Tahun 1995 tentang Pengesahan Asean Framework Agreement
+  On Services
+tentang: PENGESAHAN ASEAN FRAMEWORK AGREEMENT ON SERVICES
+short_name: null
+status: null
+tanggal_penetapan: '1995-12-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_88_1995_1995-12-30
+  kind: asli
+  source: dataset
+  date: '1995-12-30'
+  date_basis: tanggal_penetapan
+  text: keppres_88_1995_1995-12-30.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c21c7eb89e13521d9b5874754c883fe41e36b02fbecfb0515b8c4696e46b25ec
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c21c7eb89e13521d9b5874754c883fe41e36b02fbecfb0515b8c4696e46b25ec
+  source_title: Keputusan_Presiden_no_88_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

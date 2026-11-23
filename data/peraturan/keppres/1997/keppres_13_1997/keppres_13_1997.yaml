@@ -1,0 +1,38 @@
+id: keppres_13_1997
+akn: /akn/id/act/keppres/1997/13
+type: keppres
+number: '13'
+year: 1997
+title: Keputusan Presiden Nomor 13 Tahun 1997 tentang Badan Standardisasi Nasional
+tentang: BADAN STANDARDISASI NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '1997-03-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_13_1997_1997-03-26
+  kind: asli
+  source: dataset
+  date: '1997-03-26'
+  date_basis: tanggal_penetapan
+  text: keppres_13_1997_1997-03-26.txt
+  pasal_count: 33
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:61ac849af02c47c6c428ac46e80d5f3fe63d99f48e955950e70f02fa341cc067
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:61ac849af02c47c6c428ac46e80d5f3fe63d99f48e955950e70f02fa341cc067
+  source_title: Keputusan_Presiden_no_13_TH_1997
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 37
+  status: none_known

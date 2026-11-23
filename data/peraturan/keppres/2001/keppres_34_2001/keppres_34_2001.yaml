@@ -1,0 +1,45 @@
+id: keppres_34_2001
+akn: /akn/id/act/keppres/2001/34
+type: keppres
+number: '34'
+year: 2001
+title: Keputusan Presiden Nomor 34 Tahun 2001 tentang Honorarium Bagi Ketua, Wakil
+  Ketua, Dan Anggota Komisi Pemeriksa Kekayaan Penyelenggara Negara Dan Gaji Serta
+  Tunjangan Jabatan Bagi Pegawai Negeri Di Lingkungan Sekretariat Jenderal Komisi
+  Pemeriksa Kekayaan Penyelenggara Negara
+tentang: HONORARIUM BAGI KETUA, WAKIL KETUA, DAN ANGGOTA KOMISI PEMERIKSA KEKAYAAN
+  PENYELENGGARA NEGARA DAN GAJI SERTA TUNJANGAN JABATAN BAGI PEGAWAI NEGERI DI LINGKUNGAN
+  SEKRETARIAT JENDERAL KOMISI PEMERIKSA KEKAYAAN PENYELENGGARA NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-03-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_34_2001_2001-03-20
+  kind: asli
+  source: dataset
+  date: '2001-03-20'
+  date_basis: tanggal_penetapan
+  text: keppres_34_2001_2001-03-20.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ecc38aa5842215628546007536ab3729ce4cf85f80b79ea63f719a829c27d57f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ecc38aa5842215628546007536ab3729ce4cf85f80b79ea63f719a829c27d57f
+  source_title: Keputusan_Presiden_no_34_th_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:2a24fd3fdaeafdf3a09ff4eccc670edc5984a9e37462fb0252cb938eb6dcc6d6

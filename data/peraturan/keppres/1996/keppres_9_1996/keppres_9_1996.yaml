@@ -1,0 +1,30 @@
+id: keppres_9_1996
+akn: /akn/id/act/keppres/1996/9
+type: keppres
+number: '9'
+year: 1996
+title: Keputusan Presiden Nomor 9 Tahun 1996 tentang Pengesahan Agreement On C.A.B.
+  International
+tentang: PENGESAHAN AGREEMENT ON C.A.B. INTERNATIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '1996-02-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:56fe443ed002ebe8d12aeb6dda3449009d8747415dd794470272c04af5ec8615
+  source_title: Keputusan_Presiden_no_09_TH_1996
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: unusable
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:07f32ec76f88d1a4f64c40989c84b004f70e547514c371cf2a1f87c219e07b98
+parse_error: 'LeakedMarkupError: conclusions__p_114: markup in text: ''SCHEDULE'''

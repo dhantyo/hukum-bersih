@@ -1,0 +1,31 @@
+id: keppres_30_1990
+akn: /akn/id/act/keppres/1990/30
+type: keppres
+number: '30'
+year: 1990
+title: Keputusan Presiden Nomor 30 Tahun 1990 tentang Pengenaan, Pemungutan Dan Pembagian
+  Iuran Hasil Hutan
+tentang: PENGENAAN, PEMUNGUTAN DAN PEMBAGIAN IURAN HASIL HUTAN
+short_name: null
+status: diubah
+tanggal_penetapan: '1990-07-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8452ce43d86f2e3e06cec5bed7b833ba1d9bc55ed23b26aa1507cd0c0f738b8d
+  source_title: KEPPRES_NO_30_TH_1990
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 26
+  status: amended
+  amended_by:
+  - sha256:87c06577d72a382bb0049fe3d8509f96d881583b5fe5d097f8f0627fb64d358a
+  - sha256:afc32443c310051116199a6fcee33e96781b732431e9c530395e386858ef4fe1
+parse_error: 'v13: rebuilt text has 17 pasal, the dataset lists 20'

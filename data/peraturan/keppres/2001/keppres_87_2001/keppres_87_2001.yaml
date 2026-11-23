@@ -1,0 +1,42 @@
+id: keppres_87_2001
+akn: /akn/id/act/keppres/2001/87
+type: keppres
+number: '87'
+year: 2001
+title: Keputusan Presiden Nomor 87 Tahun 2001 tentang Panitia Nasional Pertemuan Tingkat
+  Menteri Komisi Persiapan Konferensi Tingkat Tinggi Dunia Untuk Pembangunan Berkelanjutan
+tentang: PANITIA NASIONAL PERTEMUAN TINGKAT MENTERI KOMISI PERSIAPAN KONFERENSI TINGKAT
+  TINGGI DUNIA UNTUK PEMBANGUNAN BERKELANJUTAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-07-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_87_2001_2001-07-11
+  kind: asli
+  source: dataset
+  date: '2001-07-11'
+  date_basis: tanggal_penetapan
+  text: keppres_87_2001_2001-07-11.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6211b5c0e46596304c20882e3a4fbb6fa2d4f7b4f5fafc6011a4fc3fb6ecdba3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6211b5c0e46596304c20882e3a4fbb6fa2d4f7b4f5fafc6011a4fc3fb6ecdba3
+  source_title: Keputusan_Presiden_no_87_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:e694c2702a22e3186f837a36078573e5c51bb1d32b5b7ec98055975f4da3452d

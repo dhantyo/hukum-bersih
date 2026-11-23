@@ -1,0 +1,39 @@
+id: keppres_71_2003
+akn: /akn/id/act/keppres/2003/71
+type: keppres
+number: '71'
+year: 2003
+title: Keputusan Presiden Nomor 71 Tahun 2003 tentang Penghapusan Keadaan Darurat
+  Sipil Di Provinsi Maluku
+tentang: PENGHAPUSAN KEADAAN DARURAT SIPIL DI PROVINSI MALUKU
+short_name: null
+status: null
+tanggal_penetapan: '2003-09-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_71_2003_2003-09-14
+  kind: asli
+  source: dataset
+  date: '2003-09-14'
+  date_basis: tanggal_penetapan
+  text: keppres_71_2003_2003-09-14.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fd57c7ed1090583b57645f351e8f2d5b55e38dca0cc19c32c8eabcc536ca2c2e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fd57c7ed1090583b57645f351e8f2d5b55e38dca0cc19c32c8eabcc536ca2c2e
+  source_title: KEPPRES_No.71_TH_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

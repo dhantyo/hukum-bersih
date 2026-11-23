@@ -1,0 +1,41 @@
+id: keppres_17_1999
+akn: /akn/id/act/keppres/1999/17
+type: keppres
+number: '17'
+year: 1999
+title: Keputusan Presiden Nomor 17 Tahun 1999 tentang Perubahan Atas Keputusan Presiden
+  Nomor 71 Tahun 1996 Tentang Pembangunan Pulau Natuna Sebagai Kawasan Pengembangan
+  Ekonomi Terpadu
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 71 TAHUN 1996 TENTANG PEMBANGUNAN
+  PULAU NATUNA SEBAGAI KAWASAN PENGEMBANGAN EKONOMI TERPADU
+short_name: null
+status: null
+tanggal_penetapan: '1999-02-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_17_1999_1999-02-23
+  kind: asli
+  source: dataset
+  date: '1999-02-23'
+  date_basis: tanggal_penetapan
+  text: keppres_17_1999_1999-02-23.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:41e097a0ddec3a41d18e4c2447a7caaeb507f67004ab05ad1be871f37f3be907
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:41e097a0ddec3a41d18e4c2447a7caaeb507f67004ab05ad1be871f37f3be907
+  source_title: Ke_Pres_No.17_Tahun_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

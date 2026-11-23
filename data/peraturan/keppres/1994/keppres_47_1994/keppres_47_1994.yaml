@@ -1,0 +1,41 @@
+id: keppres_47_1994
+akn: /akn/id/act/keppres/1994/47
+type: keppres
+number: '47'
+year: 1994
+title: Keputusan Presiden Nomor 47 Tahun 1994 tentang Badan Pertimbangan Jabatan Tingkat
+  Nasional
+tentang: BADAN PERTIMBANGAN JABATAN TINGKAT NASIONAL
+short_name: null
+status: diubah
+tanggal_penetapan: '1994-07-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_47_1994_1994-07-06
+  kind: asli
+  source: dataset
+  date: '1994-07-06'
+  date_basis: tanggal_penetapan
+  text: keppres_47_1994_1994-07-06.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1dd271c88b94bec8cbca798d6e2d5fb666c7b51359aaf24a2c9d4e14578b60d9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1dd271c88b94bec8cbca798d6e2d5fb666c7b51359aaf24a2c9d4e14578b60d9
+  source_title: Keputusan_Presiden_no_47_TH_1994
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: amended
+  amended_by:
+  - sha256:a9f1682fd1e3eb89a7c0440f1eefbd510bde132d729ff649066eb95db47e8ad1

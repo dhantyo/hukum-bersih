@@ -1,0 +1,29 @@
+id: keppres_62_2000
+akn: /akn/id/act/keppres/2000/62
+type: keppres
+number: '62'
+year: 2000
+title: Keputusan Presiden Nomor 62 Tahun 2000 tentang Koordinasi Penataan Ruang Nasional
+tentang: KOORDINASI PENATAAN RUANG NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-05-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e3dfe4de41bdf7bcd0ffee4bdd33e796f34dbc81b7a14a5b4a7aef0463748ef6
+  source_title: Keputusan_Presiden_no_62_TH_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:0e526d7a81e3876f433270176797dfd31b4f7968aa98d13a94892c46e402d8b8
+parse_error: 'v13: rebuilt text has 7 pasal, the dataset lists 8'

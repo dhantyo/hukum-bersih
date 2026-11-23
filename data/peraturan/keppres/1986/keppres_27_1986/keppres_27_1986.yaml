@@ -1,0 +1,39 @@
+id: keppres_27_1986
+akn: /akn/id/act/keppres/1986/27
+type: keppres
+number: '27'
+year: 1986
+title: Keputusan Presiden Nomor 27 Tahun 1986 tentang Tata Cara Penyelenggaraan Kampanye
+  Pemilihan Umum
+tentang: TATA CARA PENYELENGGARAAN KAMPANYE PEMILIHAN UMUM
+short_name: null
+status: null
+tanggal_penetapan: '1986-06-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_27_1986_1986-06-18
+  kind: asli
+  source: dataset
+  date: '1986-06-18'
+  date_basis: tanggal_penetapan
+  text: keppres_27_1986_1986-06-18.txt
+  pasal_count: 33
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:87d0f45dbe5b4bc9329bb363982cb500085345ffbbf8e030392bdadc9ad36dcf
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:87d0f45dbe5b4bc9329bb363982cb500085345ffbbf8e030392bdadc9ad36dcf
+  source_title: KEPPRES_NO_27_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 39
+  status: none_known

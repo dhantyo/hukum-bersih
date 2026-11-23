@@ -1,0 +1,40 @@
+id: keppres_65_1999
+akn: /akn/id/act/keppres/1999/65
+type: keppres
+number: '65'
+year: 1999
+title: Keputusan Presiden Nomor 65 Tahun 1999 tentang Panitia Negara Perayaan Hari-Hari
+  Nasional Dan Penerimaan Kepada Negara/Pemerintah Asing/ Pimpinan Organisasi Internasional
+tentang: PANITIA NEGARA PERAYAAN HARI-HARI NASIONAL DAN PENERIMAAN KEPADA NEGARA/PEMERINTAH
+  ASING/ PIMPINAN ORGANISASI INTERNASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '1999-06-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_65_1999_1999-06-25
+  kind: asli
+  source: dataset
+  date: '1999-06-25'
+  date_basis: tanggal_penetapan
+  text: keppres_65_1999_1999-06-25.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:54d65b75acdfa218f1e0e4b052598482924c3e5b86c3d333318d893cba0561cb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:54d65b75acdfa218f1e0e4b052598482924c3e5b86c3d333318d893cba0561cb
+  source_title: Keppres_No_65_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: none_known

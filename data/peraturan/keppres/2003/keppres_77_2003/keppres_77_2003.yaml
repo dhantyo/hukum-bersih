@@ -1,0 +1,40 @@
+id: keppres_77_2003
+akn: /akn/id/act/keppres/2003/77
+type: keppres
+number: '77'
+year: 2003
+title: Keputusan Presiden Nomor 77 Tahun 2003 tentang Komisi Perlindungan Anak Indonesia
+tentang: KOMISI PERLINDUNGAN ANAK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2003-10-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_77_2003_2003-10-14
+  kind: asli
+  source: dataset
+  date: '2003-10-14'
+  date_basis: tanggal_penetapan
+  text: keppres_77_2003_2003-10-14.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4c83b4c060cdddc917ca59ba1416f90eca931f1da0b0fdbb35063a9ec0da81cf
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4c83b4c060cdddc917ca59ba1416f90eca931f1da0b0fdbb35063a9ec0da81cf
+  source_title: KEPPRES_No.77_TH_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 24
+  status: revoked
+  revoked_by:
+  - sha256:922daef536c5616efed6bce1856dbf72c5374075bfaeb5c7d1756f1f4f6b0908

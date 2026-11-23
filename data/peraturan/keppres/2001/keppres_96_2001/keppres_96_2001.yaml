@@ -1,0 +1,41 @@
+id: keppres_96_2001
+akn: /akn/id/act/keppres/2001/96
+type: keppres
+number: '96'
+year: 2001
+title: Keputusan Presiden Nomor 96 Tahun 2001 tentang Perubahan Atas Keputusan Presiden
+  Nomor 53 Tahun 2001 Tentang Pembentukan Pengadilan Hak Asasi Manusia Ad Hoc Pada
+  Pengadilan Negeri Jakarta Pusat
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 53 TAHUN 2001 TENTANG PEMBENTUKAN
+  PENGADILAN HAK ASASI MANUSIA AD HOC PADA PENGADILAN NEGERI JAKARTA PUSAT
+short_name: null
+status: null
+tanggal_penetapan: '2001-08-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_96_2001_2001-08-01
+  kind: asli
+  source: dataset
+  date: '2001-08-01'
+  date_basis: tanggal_penetapan
+  text: keppres_96_2001_2001-08-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:47d8595681dfc955a9b473caf2c650518f04b4d8895fbc3898d8ad8fa4701b68
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:47d8595681dfc955a9b473caf2c650518f04b4d8895fbc3898d8ad8fa4701b68
+  source_title: Keputusan_Presiden_no_96_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

@@ -1,0 +1,39 @@
+id: keppres_35_2002
+akn: /akn/id/act/keppres/2002/35
+type: keppres
+number: '35'
+year: 2002
+title: Keputusan Presiden Nomor 35 Tahun 2002 tentang Daerah Hukum Pengadilan Negeri
+  Malang
+tentang: DAERAH HUKUM PENGADILAN NEGERI MALANG
+short_name: null
+status: null
+tanggal_penetapan: '2002-05-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_35_2002_2002-05-29
+  kind: asli
+  source: dataset
+  date: '2002-05-29'
+  date_basis: tanggal_penetapan
+  text: keppres_35_2002_2002-05-29.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f4559a88cf66e2f7566f1c18f7250027b46f878d59f2801fbf31911357b6b9dd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f4559a88cf66e2f7566f1c18f7250027b46f878d59f2801fbf31911357b6b9dd
+  source_title: KEPPRES_No.35_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

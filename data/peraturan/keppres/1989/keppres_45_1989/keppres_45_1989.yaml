@@ -1,0 +1,39 @@
+id: keppres_45_1989
+akn: /akn/id/act/keppres/1989/45
+type: keppres
+number: '45'
+year: 1989
+title: Keputusan Presiden Nomor 45 Tahun 1989 tentang Pengesahan Customs Convention
+  On Containers, 1972
+tentang: PENGESAHAN CUSTOMS CONVENTION ON CONTAINERS, 1972
+short_name: null
+status: null
+tanggal_penetapan: '1989-08-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_45_1989_1989-08-31
+  kind: asli
+  source: dataset
+  date: '1989-08-31'
+  date_basis: tanggal_penetapan
+  text: keppres_45_1989_1989-08-31.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1fa0537aecaeea8f3136fa71ca2ed79cb9fe323bd5190f1943fe0f7f1854e020
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1fa0537aecaeea8f3136fa71ca2ed79cb9fe323bd5190f1943fe0f7f1854e020
+  source_title: KEPPRES_NO_45_th_1989
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

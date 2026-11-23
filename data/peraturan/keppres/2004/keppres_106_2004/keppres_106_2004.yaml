@@ -1,0 +1,42 @@
+id: keppres_106_2004
+akn: /akn/id/act/keppres/2004/106
+type: keppres
+number: '106'
+year: 2004
+title: Keputusan Presiden Nomor 106 Tahun 2004 tentang Tim Koordinasi Pemulangan Tenaga
+  Kerja Indonesia Bermasalah Dan Keluarganya Dari Malaysia
+tentang: TIM KOORDINASI PEMULANGAN TENAGA KERJA INDONESIA BERMASALAH DAN KELUARGANYA
+  DARI MALAYSIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2004-10-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_106_2004_2004-10-18
+  kind: asli
+  source: dataset
+  date: '2004-10-18'
+  date_basis: tanggal_penetapan
+  text: keppres_106_2004_2004-10-18.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:aa4d0b512e1fbdd5ea1269b436a08960b1a66787bc938a5f86304e067a7709ad
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:aa4d0b512e1fbdd5ea1269b436a08960b1a66787bc938a5f86304e067a7709ad
+  source_title: KEPPRES_No.106_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: revoked
+  revoked_by:
+  - sha256:643558e2d05728464c9ee7ea2ca225664069b5ac80155e335fe122070a00a9f8

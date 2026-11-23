@@ -1,0 +1,38 @@
+id: keppres_52_1995
+akn: /akn/id/act/keppres/1995/52
+type: keppres
+number: '52'
+year: 1995
+title: Keputusan Presiden Nomor 52 Tahun 1995 tentang Reklamasi Pantai Utara Jakarta
+tentang: REKLAMASI PANTAI UTARA JAKARTA
+short_name: null
+status: null
+tanggal_penetapan: '1995-07-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_52_1995_1995-07-13
+  kind: asli
+  source: dataset
+  date: '1995-07-13'
+  date_basis: tanggal_penetapan
+  text: keppres_52_1995_1995-07-13.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:79ed9c683c36d3895c2abfa488b05ac66911d7f017f6a3839ff9b98cbe981ed7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:79ed9c683c36d3895c2abfa488b05ac66911d7f017f6a3839ff9b98cbe981ed7
+  source_title: Keputusan_Presiden_no_52_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: none_known

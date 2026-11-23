@@ -1,0 +1,39 @@
+id: keppres_28_1986
+akn: /akn/id/act/keppres/1986/28
+type: keppres
+number: '28'
+year: 1986
+title: Keputusan Presiden Nomor 28 Tahun 1986 tentang Harga Jual Eceran Bahan Bakar
+  Minyak Bumi
+tentang: HARGA JUAL ECERAN BAHAN BAKAR MINYAK BUMI
+short_name: null
+status: null
+tanggal_penetapan: '1986-07-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_28_1986_1986-07-09
+  kind: asli
+  source: dataset
+  date: '1986-07-09'
+  date_basis: tanggal_penetapan
+  text: keppres_28_1986_1986-07-09.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:da3e86fd04ebfaac9ff9daaf7a715bfc17fb27d41a18cca195162c6279e316b2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:da3e86fd04ebfaac9ff9daaf7a715bfc17fb27d41a18cca195162c6279e316b2
+  source_title: KEPPRES_NO_28_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

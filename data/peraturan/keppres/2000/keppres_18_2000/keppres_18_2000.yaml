@@ -1,0 +1,39 @@
+id: keppres_18_2000
+akn: /akn/id/act/keppres/2000/18
+type: keppres
+number: '18'
+year: 2000
+title: Keputusan Presiden Nomor 18 Tahun 2000 tentang Pedoman Pelaksanaan Pengadaan
+  Barang/Jasa Instansi Pemerintah
+tentang: PEDOMAN PELAKSANAAN PENGADAAN BARANG/JASA INSTANSI PEMERINTAH
+short_name: null
+status: null
+tanggal_penetapan: '2000-02-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_18_2000_2000-02-21
+  kind: asli
+  source: dataset
+  date: '2000-02-21'
+  date_basis: tanggal_penetapan
+  text: keppres_18_2000_2000-02-21.txt
+  pasal_count: 42
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8c6065e2fcc208f0ad9cf581b96e602437ce4ab55424e26ff3a9bf141ba42b53
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8c6065e2fcc208f0ad9cf581b96e602437ce4ab55424e26ff3a9bf141ba42b53
+  source_title: Keputusan_Presiden_no_18_th_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 115
+  status: none_known

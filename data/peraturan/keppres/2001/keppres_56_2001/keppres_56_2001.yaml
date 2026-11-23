@@ -1,0 +1,41 @@
+id: keppres_56_2001
+akn: /akn/id/act/keppres/2001/56
+type: keppres
+number: '56'
+year: 2001
+title: Keputusan Presiden Nomor 56 Tahun 2001 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Republik Belarus Mengenai Kerjasama
+  Ekonomi Dan Teknik
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  REPUBLIK BELARUS MENGENAI KERJASAMA EKONOMI DAN TEKNIK
+short_name: null
+status: null
+tanggal_penetapan: '2001-05-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_56_2001_2001-05-11
+  kind: asli
+  source: dataset
+  date: '2001-05-11'
+  date_basis: tanggal_penetapan
+  text: keppres_56_2001_2001-05-11.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:379c14ae9e28976ab4febe21b4d17a0efc1875704faea965fff80e87bf9f54a5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:379c14ae9e28976ab4febe21b4d17a0efc1875704faea965fff80e87bf9f54a5
+  source_title: Keputusan_Presiden_no_56_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

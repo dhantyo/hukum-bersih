@@ -1,0 +1,43 @@
+id: keppres_12_2015
+akn: /akn/id/act/keppres/2015/12
+type: keppres
+number: '12'
+year: 2015
+title: Keputusan Presiden Nomor 12 Tahun 2015 tentang Panttja Nasionalpenyelenggaraan
+  Asian Games Xv1Z7Tahun 2018
+tentang: PANTTJA NASIONALPENYELENGGARAAN ASIAN GAMES XV1Z7TAHUN 2018
+short_name: null
+status: dicabut
+tanggal_penetapan: '2015-04-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_12_2015_2015-04-30
+  kind: asli
+  source: dataset
+  date: '2015-04-30'
+  date_basis: tanggal_penetapan
+  text: keppres_12_2015_2015-04-30.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:67c8d1280a58509823b530d70c0df64da7586bcbc2792fc4b265041eab3433b6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:67c8d1280a58509823b530d70c0df64da7586bcbc2792fc4b265041eab3433b6
+  source_title: Keppres_Nomor_12_Tahun_2015
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:3e67ebb96670e47dcb5fc3f962c94ba451ae9d340e3d8fbf054dd5b7ab86ae71
+  amended_by:
+  - sha256:722c4584e81f1e1f1e5b67fac543cfc7cd318a522eb252051c3ccff0cee915b7

@@ -1,0 +1,45 @@
+id: keppres_104_1998
+akn: /akn/id/act/keppres/1998/104
+type: keppres
+number: '104'
+year: 1998
+title: Keputusan Presiden Nomor 104 Tahun 1998 tentang Kedudukan, Tugas, Fungsi, Susunan
+  Organisasi, Dan Tata Kerja Sekretariat Negara
+tentang: KEDUDUKAN, TUGAS, FUNGSI, SUSUNAN ORGANISASI, DAN TATA KERJA SEKRETARIAT
+  NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-07-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_104_1998_1998-07-23
+  kind: asli
+  source: dataset
+  date: '1998-07-23'
+  date_basis: tanggal_penetapan
+  text: keppres_104_1998_1998-07-23.txt
+  pasal_count: 25
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:31b45d75f3fe29e56ac31841b401acbe7f3c4bd9fc77222772adf7266a9d7ddf
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:31b45d75f3fe29e56ac31841b401acbe7f3c4bd9fc77222772adf7266a9d7ddf
+  source_title: Keputusan_Presiden_no_104_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 28
+  status: revoked
+  revoked_by:
+  - sha256:7c7e0acaebd5a36959f288a8cdb54c43ee2c09080994cb41a4fae0d6466361d3
+  - sha256:fe84f225868084790376335661fe099ffc6f14db3d13ae24c83320f9b4c2ced0
+  amended_by:
+  - sha256:dc9a4fe8e8820d5379fbf1ed4b60efee6370d6db298f7889c3383aff46482275

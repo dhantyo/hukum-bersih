@@ -1,0 +1,32 @@
+id: keppres_12_1995
+akn: /akn/id/act/keppres/1995/12
+type: keppres
+number: '12'
+year: 1995
+title: Keputusan Presiden Nomor 12 Tahun 1995 tentang Tunjangan Panitera
+tentang: TUNJANGAN PANITERA
+short_name: null
+status: dicabut
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:33ebb3d67461cc5e9672d82c52ec22f4a15af1ec140e3c3355f07500efa2a50a
+  source_title: Keputusan_Presiden_no_12_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:8d6b5abf4515a63e4154e5f2bb96022429c9cea8b156806716e70ed642ef7f29
+  - sha256:96c7819242dae4c70bb810833c8bf260182f22fda6bc71a5041a9840f4f3aa4e
+  amended_by:
+  - sha256:8d6b5abf4515a63e4154e5f2bb96022429c9cea8b156806716e70ed642ef7f29
+parse_error: 'v13: no pasal found in the rebuilt text'

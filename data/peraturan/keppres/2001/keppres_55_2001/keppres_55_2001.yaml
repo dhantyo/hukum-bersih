@@ -1,0 +1,41 @@
+id: keppres_55_2001
+akn: /akn/id/act/keppres/2001/55
+type: keppres
+number: '55'
+year: 2001
+title: Keputusan Presiden Nomor 55 Tahun 2001 tentang Dewan Pengembangan Kawasan Timur
+  Indonesia
+tentang: DEWAN PENGEMBANGAN KAWASAN TIMUR INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-04-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_55_2001_2001-04-25
+  kind: asli
+  source: dataset
+  date: '2001-04-25'
+  date_basis: tanggal_penetapan
+  text: keppres_55_2001_2001-04-25.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:70f863921b0cdb9e54b222a10eaedc4b54e7d74791907b1aa3c1f23da15980d3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:70f863921b0cdb9e54b222a10eaedc4b54e7d74791907b1aa3c1f23da15980d3
+  source_title: Keputusan_Presiden_no_55_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:9ac44328c15411a29ce5df9b156bdda4a0bf0b4e99b1c113d15edd20a114ab76

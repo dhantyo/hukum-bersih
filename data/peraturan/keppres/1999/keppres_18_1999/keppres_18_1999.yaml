@@ -1,0 +1,41 @@
+id: keppres_18_1999
+akn: /akn/id/act/keppres/1999/18
+type: keppres
+number: '18'
+year: 1999
+title: Keputusan Presiden Nomor 18 Tahun 1999 tentang Perubahan Atas Keputusan Presiden
+  Nomor 198 Tahun 1998 Tentang Pembentukan Tim Nasional Reformasi Menuju Masyarakat
+  Madani
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 198 TAHUN 1998 TENTANG PEMBENTUKAN
+  TIM NASIONAL REFORMASI MENUJU MASYARAKAT MADANI
+short_name: null
+status: null
+tanggal_penetapan: '1999-02-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_18_1999_1999-02-24
+  kind: asli
+  source: dataset
+  date: '1999-02-24'
+  date_basis: tanggal_penetapan
+  text: keppres_18_1999_1999-02-24.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:945121163b088b6e17490ea28073b44c488c0b09b574cebb4077ff9c5bffb9dd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:945121163b088b6e17490ea28073b44c488c0b09b574cebb4077ff9c5bffb9dd
+  source_title: Ke_Pres_No.18_Tahun_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

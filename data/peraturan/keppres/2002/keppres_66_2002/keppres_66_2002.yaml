@@ -1,0 +1,43 @@
+id: keppres_66_2002
+akn: /akn/id/act/keppres/2002/66
+type: keppres
+number: '66'
+year: 2002
+title: Keputusan Presiden Nomor 66 Tahun 2002 tentang Honorarium Bagi Ketua, Wakil
+  Ketua, Anggota, Tenaga Tim Asistensi, Dan Staf Administrasi Kesekretariatan Komisi
+  Ombudsman Nasional
+tentang: HONORARIUM BAGI KETUA, WAKIL KETUA, ANGGOTA, TENAGA TIM ASISTENSI, DAN STAF
+  ADMINISTRASI KESEKRETARIATAN KOMISI OMBUDSMAN NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2002-08-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_66_2002_2002-08-31
+  kind: asli
+  source: dataset
+  date: '2002-08-31'
+  date_basis: tanggal_penetapan
+  text: keppres_66_2002_2002-08-31.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bc7aadaa98aa6f252fec33e27cf1af278d087c57262cc0d0a796626b34cb5dc3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bc7aadaa98aa6f252fec33e27cf1af278d087c57262cc0d0a796626b34cb5dc3
+  source_title: KEPPRES_No.66_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:c553e17621537ec219fcec527a01bee1dbe8c07e74e9c0d6b3dd80ca80843bc6

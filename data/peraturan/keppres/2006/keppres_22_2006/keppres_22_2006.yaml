@@ -1,0 +1,30 @@
+id: keppres_22_2006
+akn: /akn/id/act/keppres/2006/22
+type: keppres
+number: '22'
+year: 2006
+title: Keputusan Presiden Nomor 22 Tahun 2006 tentang Tim Koordinasi Percepatan Pembangunan
+  Rumah Susun Di Kawasan Perkotaan
+tentang: TIM KOORDINASI PERCEPATAN PEMBANGUNAN RUMAH SUSUN DI KAWASAN PERKOTAAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-12-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:88e81509b7431107be189b44828c93e5560e69cee0f0bd597c1055f31989449f
+  source_title: Keputusan_Presiden_No_22_th_2006
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 4
+  status: revoked
+  revoked_by:
+  - sha256:d8af2fd129a1425aa154dbe7881ebd044ede140f1516a9ad2ff1fc5967bc806f
+parse_error: 'v13: no pasal found in the rebuilt text'

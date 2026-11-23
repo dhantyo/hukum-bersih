@@ -1,0 +1,39 @@
+id: keppres_159_2000
+akn: /akn/id/act/keppres/2000/159
+type: keppres
+number: '159'
+year: 2000
+title: Keputusan Presiden Nomor 159 Tahun 2000 tentang Pedoman Pembentukan Badan Kepegawaiam
+  Daerah
+tentang: PEDOMAN PEMBENTUKAN BADAN KEPEGAWAIAM DAERAH
+short_name: null
+status: null
+tanggal_penetapan: '2000-11-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_159_2000_2000-11-10
+  kind: asli
+  source: dataset
+  date: '2000-11-10'
+  date_basis: tanggal_penetapan
+  text: keppres_159_2000_2000-11-10.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b8294ba2c486101402d2f313ce1b142975b8b839705691607d3c17cd16eaf346
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b8294ba2c486101402d2f313ce1b142975b8b839705691607d3c17cd16eaf346
+  source_title: Keputusan_Presiden_no_159_TH_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

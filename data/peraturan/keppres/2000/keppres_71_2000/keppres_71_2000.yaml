@@ -1,0 +1,41 @@
+id: keppres_71_2000
+akn: /akn/id/act/keppres/2000/71
+type: keppres
+number: '71'
+year: 2000
+title: Keputusan Presiden Nomor 71 Tahun 2000 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Republik Suriname Mengenai Kerjasama
+  Kebudayaan
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  REPUBLIK SURINAME MENGENAI KERJASAMA KEBUDAYAAN
+short_name: null
+status: null
+tanggal_penetapan: '2000-05-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_71_2000_2000-05-29
+  kind: asli
+  source: dataset
+  date: '2000-05-29'
+  date_basis: tanggal_penetapan
+  text: keppres_71_2000_2000-05-29.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:158cf8232ff1830c95d65adf056cf6f1381846c6b282e7ea089deaa16d3fcd3f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:158cf8232ff1830c95d65adf056cf6f1381846c6b282e7ea089deaa16d3fcd3f
+  source_title: Keputusan_Presiden_no_71_TH_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

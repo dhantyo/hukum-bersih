@@ -1,0 +1,41 @@
+id: keppres_25_2003
+akn: /akn/id/act/keppres/2003/25
+type: keppres
+number: '25'
+year: 2003
+title: Keputusan Presiden Nomor 25 Tahun 2003 tentang Pendataan Penduduk Bekas Propinsi
+  Timor Timur
+tentang: PENDATAAN PENDUDUK BEKAS PROPINSI TIMOR TIMUR
+short_name: null
+status: dicabut
+tanggal_penetapan: '2003-05-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_25_2003_2003-05-05
+  kind: asli
+  source: dataset
+  date: '2003-05-05'
+  date_basis: tanggal_penetapan
+  text: keppres_25_2003_2003-05-05.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9d725e72581a0649cf2febdbf27e25f1fe02d1ca0082dfc2b6a2417798a21001
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9d725e72581a0649cf2febdbf27e25f1fe02d1ca0082dfc2b6a2417798a21001
+  source_title: KEPPRES_No.25_TH_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:624b20bf6f2ec61f14ae29f42e70c3127ee372d361bf5a8a7037dc66ad2c1c8e

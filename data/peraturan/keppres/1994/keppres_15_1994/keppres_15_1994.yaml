@@ -1,0 +1,40 @@
+id: keppres_15_1994
+akn: /akn/id/act/keppres/1994/15
+type: keppres
+number: '15'
+year: 1994
+title: Keputusan Presiden Nomor 15 Tahun 1994 tentang Pemeriksaan Pabean Atas Barang
+  Yang Diimpor Dalam Rangka Proyek Pemerintah Yang Dibiayai Dengan Bantuan Luar Negeri
+tentang: PEMERIKSAAN PABEAN ATAS BARANG YANG DIIMPOR DALAM RANGKA PROYEK PEMERINTAH
+  YANG DIBIAYAI DENGAN BANTUAN LUAR NEGERI
+short_name: null
+status: null
+tanggal_penetapan: '1994-03-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_15_1994_1994-03-03
+  kind: asli
+  source: dataset
+  date: '1994-03-03'
+  date_basis: tanggal_penetapan
+  text: keppres_15_1994_1994-03-03.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7108ebb05af12240fe9f557598846c088e65928a721e76197bd2818df5344860
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7108ebb05af12240fe9f557598846c088e65928a721e76197bd2818df5344860
+  source_title: Keputusan_Presiden_no_15_TH_1994
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

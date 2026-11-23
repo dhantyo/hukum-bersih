@@ -1,0 +1,42 @@
+id: keppres_13_1990
+akn: /akn/id/act/keppres/1990/13
+type: keppres
+number: '13'
+year: 1990
+title: Keputusan Presiden Nomor 13 Tahun 1990 tentang Uang Paket Bagi Pimpinan Dan
+  Anggota Dewan Perwakilan Rakyat Dan Dewan Pertimbangan Agung
+tentang: UANG PAKET BAGI PIMPINAN DAN ANGGOTA DEWAN PERWAKILAN RAKYAT DAN DEWAN PERTIMBANGAN
+  AGUNG
+short_name: null
+status: dicabut
+tanggal_penetapan: '1990-04-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_13_1990_1990-04-01
+  kind: asli
+  source: dataset
+  date: '1990-04-01'
+  date_basis: tanggal_penetapan
+  text: keppres_13_1990_1990-04-01.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f7634e875d3decd25e6a24199619e00910dfee61d66bdbca184edddd80ab6f62
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f7634e875d3decd25e6a24199619e00910dfee61d66bdbca184edddd80ab6f62
+  source_title: KEPPRES_NO_13_TH_1990
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: revoked
+  revoked_by:
+  - sha256:a43fb9c4705b4c7397be992da1e4141f399297315f56a9cdbd817cef6f66e15e

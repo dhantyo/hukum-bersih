@@ -1,0 +1,29 @@
+id: keppres_80_1994
+akn: /akn/id/act/keppres/1994/80
+type: keppres
+number: '80'
+year: 1994
+title: Keputusan Presiden Nomor 80 Tahun 1994 tentang Tim Tarif Dan Fiskal
+tentang: TIM TARIF DAN FISKAL
+short_name: null
+status: diubah
+tanggal_penetapan: '1994-12-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:97c211b8b0f13580c43d8c0fe76c37eeb90ad4fc0e3896c43fe1223a55c48d03
+  source_title: Keputusan_Presiden_no_80_TH_1994
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: amended
+  amended_by:
+  - sha256:f9c69ae54fab2de1396099f408f390bb8a803a34fcae1d2d7a5084d99326a0bd
+parse_error: 'v13: no pasal found in the rebuilt text'

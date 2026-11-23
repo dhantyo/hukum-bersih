@@ -1,0 +1,46 @@
+id: keppres_11_2002
+akn: /akn/id/act/keppres/2002/11
+type: keppres
+number: '11'
+year: 2002
+title: Keputusan Presiden Nomor 11 Tahun 2002 tentang Perubahan Atas Keputusan Presiden
+  Nomor 179 Tahun 2000 Tentang Pembentukan Pengadilan Agama Tarutung, Pengadilan Agama
+  Panyabungan, Pengadilan Agama Pangkalan Kerinci, Pengadilan Agama Ujung Tanjung,
+  Pengadilan Agama Sarolangun, Pengadilan Agama Muara Sabak, Pengadilan Agama Bengkayang,
+  Pengadilan Agama Banjarbaru, Pengadilan Agama Masamba, Dan Pengadilan Agama Lewoleba
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 179 TAHUN 2000 TENTANG PEMBENTUKAN
+  PENGADILAN AGAMA TARUTUNG, PENGADILAN AGAMA PANYABUNGAN, PENGADILAN AGAMA PANGKALAN
+  KERINCI, PENGADILAN AGAMA UJUNG TANJUNG, PENGADILAN AGAMA SAROLANGUN, PENGADILAN
+  AGAMA MUARA SABAK, PENGADILAN AGAMA BENGKAYANG, PENGADILAN AGAMA BANJARBARU, PENGADILAN
+  AGAMA MASAMBA, DAN PENGADILAN AGAMA LEWOLEBA
+short_name: null
+status: null
+tanggal_penetapan: '2002-03-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_11_2002_2002-03-08
+  kind: asli
+  source: dataset
+  date: '2002-03-08'
+  date_basis: tanggal_penetapan
+  text: keppres_11_2002_2002-03-08.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2abe834c41d1aa3c20364111a976a9dd48fc688f98aed9bf4c41f29dc0f585bb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2abe834c41d1aa3c20364111a976a9dd48fc688f98aed9bf4c41f29dc0f585bb
+  source_title: KEPPRES_No.11_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

@@ -1,0 +1,41 @@
+id: keppres_98_1996
+akn: /akn/id/act/keppres/1996/98
+type: keppres
+number: '98'
+year: 1996
+title: Keputusan Presiden Nomor 98 Tahun 1996 tentang Tunjangan Khusus Pensiunan Pegawai
+  Negeri Beserta Janda/Dudanya Yang Menetap Dan Bertempat Tinggal Di Propinsi Daerah
+  Tingkat I Irian Jaya Dan Timor Timur
+tentang: TUNJANGAN KHUSUS PENSIUNAN PEGAWAI NEGERI BESERTA JANDA/DUDANYA YANG MENETAP
+  DAN BERTEMPAT TINGGAL DI PROPINSI DAERAH TINGKAT I IRIAN JAYA DAN TIMOR TIMUR
+short_name: null
+status: null
+tanggal_penetapan: '1996-12-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_98_1996_1996-12-20
+  kind: asli
+  source: dataset
+  date: '1996-12-20'
+  date_basis: tanggal_penetapan
+  text: keppres_98_1996_1996-12-20.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0cd278c2c1e574349e03f498fc1e14c16f48f969d10a13463c3f3d23c68848ef
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0cd278c2c1e574349e03f498fc1e14c16f48f969d10a13463c3f3d23c68848ef
+  source_title: Keputusan_Presiden_no_98_TH_1996
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

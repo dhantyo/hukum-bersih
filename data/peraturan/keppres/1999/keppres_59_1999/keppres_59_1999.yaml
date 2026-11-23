@@ -1,0 +1,40 @@
+id: keppres_59_1999
+akn: /akn/id/act/keppres/1999/59
+type: keppres
+number: '59'
+year: 1999
+title: Keputusan Presiden Nomor 59 Tahun 1999 tentang Pemberian Fasilitas Kredit Kepada
+  Anggota Dewan Pertimbangan Agung Republik Indonesia Untuk Pembelian Kendaraan Perorangan
+tentang: PEMBERIAN FASILITAS KREDIT KEPADA ANGGOTA DEWAN PERTIMBANGAN AGUNG REPUBLIK
+  INDONESIA UNTUK PEMBELIAN KENDARAAN PERORANGAN
+short_name: null
+status: null
+tanggal_penetapan: '1999-06-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_59_1999_1999-06-15
+  kind: asli
+  source: dataset
+  date: '1999-06-15'
+  date_basis: tanggal_penetapan
+  text: keppres_59_1999_1999-06-15.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e1154e7cf531900b79ae72a5556f7588a8fbef5ee9b8a106d5192010e11f7f85
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e1154e7cf531900b79ae72a5556f7588a8fbef5ee9b8a106d5192010e11f7f85
+  source_title: Keppres_No_59_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

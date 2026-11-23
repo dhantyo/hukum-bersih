@@ -1,0 +1,31 @@
+id: keppres_1_2004
+akn: /akn/id/act/keppres/2004/1
+type: keppres
+number: '1'
+year: 2004
+title: Keputusan Presiden Nomor 1 Tahun 2004 tentang Komite Koordinasi Nasional Pencegahan
+  Dan Pemberantasan Tindak Pidana Pencucian Uang
+tentang: KOMITE KOORDINASI NASIONAL PENCEGAHAN DAN PEMBERANTASAN TINDAK PIDANA PENCUCIAN
+  UANG
+short_name: null
+status: dicabut
+tanggal_penetapan: '2004-01-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2aa199dbbd60f0e2f8b8266543811efbafa863f975c627d86ff3af2c19c413df
+  source_title: KEPPRES_No.1_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: revoked
+  revoked_by:
+  - sha256:fb20ae66c0e04e9ccf860f63f6ef8a248425e525da4717d64c2f48fb5761f2bb
+parse_error: 'v13: rebuilt text has 7 pasal, the dataset lists 8'

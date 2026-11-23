@@ -1,0 +1,40 @@
+id: keppres_8_2006
+akn: /akn/id/act/keppres/2006/8
+type: keppres
+number: '8'
+year: 2006
+title: Keputusan Presiden Nomor 8 Tahun 2006 tentang Pengakhiran Tugas Dan Pembubaran
+  Tim Pemberesan Badan Penyehatan Perbankan Nasional
+tentang: PENGAKHIRAN TUGAS DAN PEMBUBARAN TIM PEMBERESAN BADAN PENYEHATAN PERBANKAN
+  NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2006-06-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_8_2006_2006-06-23
+  kind: asli
+  source: dataset
+  date: '2006-06-23'
+  date_basis: tanggal_penetapan
+  text: keppres_8_2006_2006-06-23.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:485cdfdd1ceccfc032b94cdd3968806c5a2238c0601e4902169b718e1360096d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:485cdfdd1ceccfc032b94cdd3968806c5a2238c0601e4902169b718e1360096d
+  source_title: Kep_Pres_No._8_Tahun_2006
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

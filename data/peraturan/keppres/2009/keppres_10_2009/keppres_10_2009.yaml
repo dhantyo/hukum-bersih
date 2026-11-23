@@ -1,0 +1,27 @@
+id: keppres_10_2009
+akn: /akn/id/act/keppres/2009/10
+type: keppres
+number: '10'
+year: 2009
+title: Keputusan Presiden Nomor 10 Tahun 2009
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '2009-04-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:09461c3d6f3a561c5a1023386ff545faaa0cfb7f85cd3e8ce47444f32955a6a4
+  source_title: Keppres_10_Tahun_2009
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 4
+  status: none_known
+parse_error: 'v13: no pasal found in the rebuilt text'

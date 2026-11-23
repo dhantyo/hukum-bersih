@@ -1,0 +1,43 @@
+id: keppres_23_1995
+akn: /akn/id/act/keppres/1995/23
+type: keppres
+number: '23'
+year: 1995
+title: Keputusan Presiden Nomor 23 Tahun 1995 tentang Tunjangan Tenaga Kependidikan
+tentang: TUNJANGAN TENAGA KEPENDIDIKAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1995-04-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_23_1995_1995-04-24
+  kind: asli
+  source: dataset
+  date: '1995-04-24'
+  date_basis: tanggal_penetapan
+  text: keppres_23_1995_1995-04-24.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2991440d499f548fc424cdf40f09927247cb49fedfce8474ba453675f00954af
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2991440d499f548fc424cdf40f09927247cb49fedfce8474ba453675f00954af
+  source_title: Keputusan_Presiden_no_23_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:b804ce4d5284ba4b4ee9147e47bd9ff1c88a007ca0cc5792ff1bd9f40978f416
+  amended_by:
+  - sha256:7079def517bdb0728fc93c2a89748e5c055d98d33ad128d5ed3bb34fd4e716b3
+  - sha256:75f57e586c7f8b2056b9f581caafd91e3edc58e25e4eb898f41cf29259b2d029

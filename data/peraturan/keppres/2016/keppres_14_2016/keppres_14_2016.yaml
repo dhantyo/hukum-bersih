@@ -1,0 +1,27 @@
+id: keppres_14_2016
+akn: /akn/id/act/keppres/2016/14
+type: keppres
+number: '14'
+year: 2016
+title: Keputusan Presiden Nomor 14 Tahun 2016
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '2016-04-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:99cebcd6c04c3eec0027287d46922dfaa5be6cf7956695232e5dde2c8b3a162e
+  source_title: Keppres_Nomor_14_Tahun_2016
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 23
+  status: none_known
+parse_error: 'v13: rebuilt text has 1 pasal, the dataset lists 3'

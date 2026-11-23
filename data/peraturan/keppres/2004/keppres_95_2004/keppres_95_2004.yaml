@@ -1,0 +1,41 @@
+id: keppres_95_2004
+akn: /akn/id/act/keppres/2004/95
+type: keppres
+number: '95'
+year: 2004
+title: Keputusan Presiden Nomor 95 Tahun 2004 tentang Perubahan Kedua Atas Keputusan
+  Presiden Nomor 26 Tahun 1998 Tentang Jaminan Terhadap Kewajiban Pembayaran Bank
+  Umum
+tentang: PERUBAHAN KEDUA ATAS KEPUTUSAN PRESIDEN NOMOR 26 TAHUN 1998 TENTANG JAMINAN
+  TERHADAP KEWAJIBAN PEMBAYARAN BANK UMUM
+short_name: null
+status: null
+tanggal_penetapan: '2004-10-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_95_2004_2004-10-18
+  kind: asli
+  source: dataset
+  date: '2004-10-18'
+  date_basis: tanggal_penetapan
+  text: keppres_95_2004_2004-10-18.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a0efe47553dfadaebb930391475e2c95df5a2e2b2a0929fb9c1f80a50e34b6bc
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a0efe47553dfadaebb930391475e2c95df5a2e2b2a0929fb9c1f80a50e34b6bc
+  source_title: KEPPRES_No.95_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

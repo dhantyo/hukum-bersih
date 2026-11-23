@@ -1,0 +1,33 @@
+id: keppres_64_2003
+akn: /akn/id/act/keppres/2003/64
+type: keppres
+number: '64'
+year: 2003
+title: Keputusan Presiden Nomor 64 Tahun 2003 tentang Penyesuaian Gaji Pokok Pegawai
+  Negeri Sipil Menurut Peraturan Pemerintah Nomor 26 Tahun 2001 Ke Dalam Gaji Pokok
+  Pegawai Negeri Sipil Menurut Peraturan Pemerintah Nomor 11 Tahun 2003
+tentang: PENYESUAIAN GAJI POKOK PEGAWAI NEGERI SIPIL MENURUT PERATURAN PEMERINTAH
+  NOMOR 26 TAHUN 2001 KE DALAM GAJI POKOK PEGAWAI NEGERI SIPIL MENURUT PERATURAN PEMERINTAH
+  NOMOR 11 TAHUN 2003
+short_name: null
+status: dicabut
+tanggal_penetapan: '2003-08-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c2e602e02e80102f37c78eac559a0a5c4e0f9b28becf7e1bcf4d87a4e5ad4038
+  source_title: Keputusan_Presiden_no_64_th_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 24
+  status: revoked
+  revoked_by:
+  - sha256:b7d056343aaa7204f6470dab9f4d64dbafe0ca6ae8d2a0de804c19d3cd1ae125
+parse_error: 'v13: rebuilt text has 4 pasal, the dataset lists 5'

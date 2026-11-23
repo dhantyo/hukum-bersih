@@ -1,0 +1,30 @@
+id: keppres_54_1996
+akn: /akn/id/act/keppres/1996/54
+type: keppres
+number: '54'
+year: 1996
+title: Keputusan Presiden Nomor 54 Tahun 1996 tentang Tim Pengkajian Pemberian Fasilitas
+  Perpajakan Usaha Industri Tertentu
+tentang: TIM PENGKAJIAN PEMBERIAN FASILITAS PERPAJAKAN USAHA INDUSTRI TERTENTU
+short_name: null
+status: diubah
+tanggal_penetapan: '1996-07-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:db5f3eb087576867110b9facf4a524e6e69a7f6c3aea9e891341b683c77cb12f
+  source_title: Keputusan_Presiden_no_54_TH_1996
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: amended
+  amended_by:
+  - sha256:84edf9de84b7ec711c39e5883838b8975479224a47ce4da191412f20ebeff0cd
+parse_error: 'v13: rebuilt text has 6 pasal, the dataset lists 7'

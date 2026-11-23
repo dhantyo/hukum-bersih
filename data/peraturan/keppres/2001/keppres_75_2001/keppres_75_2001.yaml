@@ -1,0 +1,39 @@
+id: keppres_75_2001
+akn: /akn/id/act/keppres/2001/75
+type: keppres
+number: '75'
+year: 2001
+title: Keputusan Presiden Nomor 75 Tahun 2001 tentang Pengesahan E-Asean Framework
+  Agreement (Kerangka Persetujuan E-Asean)
+tentang: PENGESAHAN e-ASEAN FRAMEWORK AGREEMENT (KERANGKA PERSETUJUAN e-ASEAN)
+short_name: null
+status: null
+tanggal_penetapan: '2001-06-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_75_2001_2001-06-21
+  kind: asli
+  source: dataset
+  date: '2001-06-21'
+  date_basis: tanggal_penetapan
+  text: keppres_75_2001_2001-06-21.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1d74ce6a81001f5edcc80d8c6baf613d43c1fe97bfac802a5695347c056b57e1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1d74ce6a81001f5edcc80d8c6baf613d43c1fe97bfac802a5695347c056b57e1
+  source_title: Keputusan_Presiden_no_75_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

@@ -1,0 +1,42 @@
+id: keppres_64_1986
+akn: /akn/id/act/keppres/1986/64
+type: keppres
+number: '64'
+year: 1986
+title: Keputusan Presiden Nomor 64 Tahun 1986 tentang Pengendalian Penggunaan Tanah
+  Dan Ruang Udara Di Sekitar Bandar Udara Internasional Jakarta Soekarno - Hatta
+tentang: PENGENDALIAN PENGGUNAAN TANAH DAN RUANG UDARA DI SEKITAR BANDAR UDARA INTERNASIONAL
+  JAKARTA SOEKARNO - HATTA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1986-12-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_64_1986_1986-12-23
+  kind: asli
+  source: dataset
+  date: '1986-12-23'
+  date_basis: tanggal_penetapan
+  text: keppres_64_1986_1986-12-23.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:484ad11394f82112f9490e943003877156471783fde698bcf238ba7ddaa1ce52
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:484ad11394f82112f9490e943003877156471783fde698bcf238ba7ddaa1ce52
+  source_title: KEPPRES_NO_64_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 27
+  status: revoked
+  revoked_by:
+  - sha256:faa75b1dd06624edc1aec89f228e11b2d55409f9ac50980f705771025b2a489c

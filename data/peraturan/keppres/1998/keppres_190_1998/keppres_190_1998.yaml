@@ -1,0 +1,39 @@
+id: keppres_190_1998
+akn: /akn/id/act/keppres/1998/190
+type: keppres
+number: '190'
+year: 1998
+title: Keputusan Presiden Nomor 190 Tahun 1998 tentang Pembentukan Gugus Tugas Peningkatan
+  Jaring Pengaman Sosial
+tentang: PEMBENTUKAN GUGUS TUGAS PENINGKATAN JARING PENGAMAN SOSIAL
+short_name: null
+status: null
+tanggal_penetapan: '1998-11-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_190_1998_1998-11-03
+  kind: asli
+  source: dataset
+  date: '1998-11-03'
+  date_basis: tanggal_penetapan
+  text: keppres_190_1998_1998-11-03.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:23d74dea37d82b134077ecd74d9170e7a7a9bec160e47b0a6a8d934197740ed0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:23d74dea37d82b134077ecd74d9170e7a7a9bec160e47b0a6a8d934197740ed0
+  source_title: Keputusan_Presiden_no_190_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

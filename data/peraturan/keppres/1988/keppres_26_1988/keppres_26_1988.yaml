@@ -1,0 +1,42 @@
+id: keppres_26_1988
+akn: /akn/id/act/keppres/1988/26
+type: keppres
+number: '26'
+year: 1988
+title: Keputusan Presiden Nomor 26 Tahun 1988 tentang Badan Pertanahan Nasional
+tentang: BADAN PERTANAHAN NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '1988-07-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_26_1988_1988-07-19
+  kind: asli
+  source: dataset
+  date: '1988-07-19'
+  date_basis: tanggal_penetapan
+  text: keppres_26_1988_1988-07-19.txt
+  pasal_count: 38
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3b1a26cae7c69affdf2190dada638a3b274135c1e5479759f5bf66ab129efb86
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3b1a26cae7c69affdf2190dada638a3b274135c1e5479759f5bf66ab129efb86
+  source_title: KEPPRES_NO_26_TH_1988
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 51
+  status: revoked
+  revoked_by:
+  - sha256:c766afd9c6843f84df333dd7b6e600e93a9cc7f3167399d42f1ee5cf28efc04b
+  amended_by:
+  - sha256:d662e5861deb60d78d1698f17aca03efc09b5964daec3d64a2cf2a3c865556cd

@@ -1,0 +1,39 @@
+id: keppres_48_1993
+akn: /akn/id/act/keppres/1993/48
+type: keppres
+number: '48'
+year: 1993
+title: Keputusan Presiden Nomor 48 Tahun 1993 tentang Pengesahan International Convention
+  Against Apartheid In Sports
+tentang: PENGESAHAN INTERNATIONAL CONVENTION AGAINST APARTHEID IN SPORTS
+short_name: null
+status: null
+tanggal_penetapan: '1993-05-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_48_1993_1993-05-22
+  kind: asli
+  source: dataset
+  date: '1993-05-22'
+  date_basis: tanggal_penetapan
+  text: keppres_48_1993_1993-05-22.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:35cec0b946ab4ea6af307b52b09cbd29d2e62a0e2df5cc53afac5d11fc030b79
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:35cec0b946ab4ea6af307b52b09cbd29d2e62a0e2df5cc53afac5d11fc030b79
+  source_title: Keputusan_Presiden_no_48_TH_1993
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

@@ -1,0 +1,41 @@
+id: keppres_127_1999
+akn: /akn/id/act/keppres/1999/127
+type: keppres
+number: '127'
+year: 1999
+title: Keputusan Presiden Nomor 127 Tahun 1999 tentang Pembetukan Komisi Pemeriksa
+  Kekayaan Penyelenggara Negara Dan Sekretariat Jenderal Komisi Pemeriksa Kekayaan
+  Penyelenggara Negara
+tentang: PEMBETUKAN KOMISI PEMERIKSA KEKAYAAN PENYELENGGARA NEGARA DAN SEKRETARIAT
+  JENDERAL KOMISI PEMERIKSA KEKAYAAN PENYELENGGARA NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '1999-11-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_127_1999_1999-11-20
+  kind: asli
+  source: dataset
+  date: '1999-11-20'
+  date_basis: tanggal_penetapan
+  text: keppres_127_1999_1999-11-20.txt
+  pasal_count: 43
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b8950e53345980b778b01ab1bdf2171f9c5a9a9c06839da83cc72c098df37775
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b8950e53345980b778b01ab1bdf2171f9c5a9a9c06839da83cc72c098df37775
+  source_title: Keppres_No_127_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 62
+  status: none_known

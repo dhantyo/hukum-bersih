@@ -1,0 +1,42 @@
+id: keppres_66_1999
+akn: /akn/id/act/keppres/1999/66
+type: keppres
+number: '66'
+year: 1999
+title: Keputusan Presiden Nomor 66 Tahun 1999 tentang Tunjangan Bahaya Radiasi Bagi
+  Pegawai Negeri Di Lingkungan Badan Pengawas Tenaga Nuklir
+tentang: TUNJANGAN BAHAYA RADIASI BAGI PEGAWAI NEGERI DI LINGKUNGAN BADAN PENGAWAS
+  TENAGA NUKLIR
+short_name: null
+status: dicabut
+tanggal_penetapan: '1999-07-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_66_1999_1999-07-02
+  kind: asli
+  source: dataset
+  date: '1999-07-02'
+  date_basis: tanggal_penetapan
+  text: keppres_66_1999_1999-07-02.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:144b73645a05cbabe3a427b31038fb1338200b8e9f01e6ead14b811ca9ca2038
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:144b73645a05cbabe3a427b31038fb1338200b8e9f01e6ead14b811ca9ca2038
+  source_title: Keppres_No_66_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:90c974dd445fdf7f74c54667ce211f1173fcfb0dc6fb582d22086465ea681f50

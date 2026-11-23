@@ -1,0 +1,42 @@
+id: keppres_35_1999
+akn: /akn/id/act/keppres/1999/35
+type: keppres
+number: '35'
+year: 1999
+title: Keputusan Presiden Nomor 35 Tahun 1999 tentang Pengesahan Agreement On The
+  Recognition Of Commercial Vehicle Inspection Certificates For Goods Vehicles And
+  Public Service Vehicles Issues By Asean Member Countries
+tentang: PENGESAHAN AGREEMENT ON THE RECOGNITION OF COMMERCIAL VEHICLE INSPECTION
+  CERTIFICATES FOR GOODS VEHICLES AND PUBLIC SERVICE VEHICLES ISSUES BY ASEAN MEMBER
+  COUNTRIES
+short_name: null
+status: null
+tanggal_penetapan: '1999-05-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_35_1999_1999-05-07
+  kind: asli
+  source: dataset
+  date: '1999-05-07'
+  date_basis: tanggal_penetapan
+  text: keppres_35_1999_1999-05-07.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:707f62b7e3ec3b81f06690010a0fd2c319dee91a5b623a84dab4b7331761e68e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:707f62b7e3ec3b81f06690010a0fd2c319dee91a5b623a84dab4b7331761e68e
+  source_title: Keppres_No_35_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 5
+  status: none_known

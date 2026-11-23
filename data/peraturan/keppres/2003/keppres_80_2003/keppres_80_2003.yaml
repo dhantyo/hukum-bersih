@@ -1,0 +1,37 @@
+id: keppres_80_2003
+akn: /akn/id/act/keppres/2003/80
+type: keppres
+number: '80'
+year: 2003
+title: Keputusan Presiden Nomor 80 Tahun 2003 tentang Pedoman Pelaksanaan Pengadaan
+  Barang/Jasa Pemerintah
+tentang: PEDOMAN PELAKSANAAN PENGADAAN BARANG/JASA PEMERINTAH
+short_name: null
+status: diubah
+tanggal_penetapan: '2003-11-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0df67adeb9351c794c43fcc8fc4a66d91294e4489af38d024242e08ffaf0b408
+  source_title: Keputusan_Presiden_no_80_th_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 254
+  status: amended
+  amended_by:
+  - sha256:1d2badfaa3a961b731dea17ca8bf004550fa6c201abe55785652301f4ac1607c
+  - sha256:2e223106b66d7e3865eaaae8b8a7d32fbf36e20621af1d568a2f8c26c5d3e703
+  - sha256:32d5ac359ad3420206854c6c164ff893464095432dc3f522bf9ab1a5ebfe319f
+  - sha256:550440d8e0867923ff258cab83b2700a0e027fae81ee89c74654dad85346c39b
+  - sha256:626d3c73a605dc938df44e24a2afb15553db9189caa525635d41bdaf95c512cd
+  - sha256:a38404965d59ddc3f34f6bd34e2c248768d0d6e0d10e85053eccd37f93a0c20b
+  - sha256:a86aca73e94e2152bcfaa4f74f7b166ac0d939a3e83c4fb6a1d37966efeea6af
+  - sha256:b126708096f8fcc3ba48eebc86c428bcbf7bad3f3c5d86c73924e65b59028e4b
+parse_error: 'v13: rebuilt text has 22 pasal, the dataset lists 49'

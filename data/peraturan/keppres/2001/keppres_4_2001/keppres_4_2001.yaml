@@ -1,0 +1,30 @@
+id: keppres_4_2001
+akn: /akn/id/act/keppres/2001/4
+type: keppres
+number: '4'
+year: 2001
+title: Keputusan Presiden Nomor 4 Tahun 2001 tentang Tunjangan Jabatan Fungsional
+  Penyuluh Keluarga Berencana
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENYULUH KELUARGA BERENCANA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-01-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bb03b3a466f01452105f0e1fe79f8931565b548968be1c11dd05211d56fc79d9
+  source_title: Keputusan_Presiden_no_4_th_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:94e24b86ae02a23454a6c84c0f32e9eefa91190d62c59fd3bd33bd9070ce66d1
+parse_error: 'v13: no pasal found in the rebuilt text'

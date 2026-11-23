@@ -1,0 +1,39 @@
+id: keppres_10_2001
+akn: /akn/id/act/keppres/2001/10
+type: keppres
+number: '10'
+year: 2001
+title: Keputusan Presiden Nomor 10 Tahun 2001 tentang Pelaksanaan Otonomi Daerah Di
+  Bidang Pertanahan
+tentang: PELAKSANAAN OTONOMI DAERAH DI BIDANG PERTANAHAN
+short_name: null
+status: null
+tanggal_penetapan: '2001-01-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_10_2001_2001-01-17
+  kind: asli
+  source: dataset
+  date: '2001-01-17'
+  date_basis: tanggal_penetapan
+  text: keppres_10_2001_2001-01-17.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3b6500b1362f4069c05e890a87ae72bc9923075714058c7472d7126e2fe4aa83
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3b6500b1362f4069c05e890a87ae72bc9923075714058c7472d7126e2fe4aa83
+  source_title: Keputusan_Presiden_no_10_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

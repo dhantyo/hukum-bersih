@@ -1,0 +1,44 @@
+id: keppres_102_2001
+akn: /akn/id/act/keppres/2001/102
+type: keppres
+number: '102'
+year: 2001
+title: Keputusan Presiden Nomor 102 Tahun 2001 tentang Kedudukan, Tugas, Fungsi, Kewenangan,
+  Susunan Organisasi, Dan Tata Kerja Departemen
+tentang: KEDUDUKAN, TUGAS, FUNGSI, KEWENANGAN, SUSUNAN ORGANISASI, DAN TATA KERJA
+  DEPARTEMEN
+short_name: null
+status: diubah
+tanggal_penetapan: '2001-09-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_102_2001_2001-09-13
+  kind: asli
+  source: dataset
+  date: '2001-09-13'
+  date_basis: tanggal_penetapan
+  text: keppres_102_2001_2001-09-13.txt
+  pasal_count: 85
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b8beb67913bf3b30585aa0235b3534ef8905d15b8a9c24e29148a759fc1cf721
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b8beb67913bf3b30585aa0235b3534ef8905d15b8a9c24e29148a759fc1cf721
+  source_title: Keputusan_Presiden_no_102_th_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 103
+  status: amended
+  amended_by:
+  - sha256:03bd1600c19b2bf5e244864546551505f7b5616faa70cc4e35c9a0b97c08b83f
+  - sha256:b410d795b4947515cc3c88ccb2cdbea7ea6dd1ddb13724912a8a915f2998bdb3
+  - sha256:f89dcba3137339922ebf07ca4fddb62eee4a75e0a9b62b2ec8b98dc8088b91bf

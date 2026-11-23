@@ -1,0 +1,42 @@
+id: keppres_92_2001
+akn: /akn/id/act/keppres/2001/92
+type: keppres
+number: '92'
+year: 2001
+title: Keputusan Presiden Nomor 92 Tahun 2001 tentang Pencabutan Keputusan Presiden
+  Nomor 15 Tahun 2001 Tentang Penugasan Wakil Presiden Untuk Menandatangani Keputusan
+  Presiden Mengenai Penganugerahan Gelar Dan Tanda-Tanda Kehormatan
+tentang: PENCABUTAN KEPUTUSAN PRESIDEN NOMOR 15 TAHUN 2001 TENTANG PENUGASAN WAKIL
+  PRESIDEN UNTUK MENANDATANGANI KEPUTUSAN PRESIDEN MENGENAI PENGANUGERAHAN GELAR DAN
+  TANDA-TANDA KEHORMATAN
+short_name: null
+status: null
+tanggal_penetapan: '2001-07-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_92_2001_2001-07-26
+  kind: asli
+  source: dataset
+  date: '2001-07-26'
+  date_basis: tanggal_penetapan
+  text: keppres_92_2001_2001-07-26.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:040615ca92cd8103e8d67652486cc2091ce01d97542c821cdad00fab1c49eb9f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:040615ca92cd8103e8d67652486cc2091ce01d97542c821cdad00fab1c49eb9f
+  source_title: Keputusan_Presiden_no_92_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

@@ -1,0 +1,40 @@
+id: keppres_44_1987
+akn: /akn/id/act/keppres/1987/44
+type: keppres
+number: '44'
+year: 1987
+title: Keputusan Presiden Nomor 44 Tahun 1987 tentang Perincian Sumber-Sumber Anggaran
+  Rutin Dan Sumber-Sumber Anggaran Pembangunan Tahun Anggaran 1987/1988
+tentang: PERINCIAN SUMBER-SUMBER ANGGARAN RUTIN DAN SUMBER-SUMBER ANGGARAN PEMBANGUNAN
+  TAHUN ANGGARAN 1987/1988
+short_name: null
+status: null
+tanggal_penetapan: '1987-12-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_44_1987_1987-12-05
+  kind: asli
+  source: dataset
+  date: '1987-12-05'
+  date_basis: tanggal_penetapan
+  text: keppres_44_1987_1987-12-05.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7d6873bd197d1a7cf0f7fcb1da82660085aaba1ceef36ceba88a92b7a8ab7cc6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7d6873bd197d1a7cf0f7fcb1da82660085aaba1ceef36ceba88a92b7a8ab7cc6
+  source_title: KEPPRES_NO_44_TH_1987
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

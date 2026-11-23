@@ -1,0 +1,42 @@
+id: keppres_121_2000
+akn: /akn/id/act/keppres/2000/121
+type: keppres
+number: '121'
+year: 2000
+title: Keputusan Presiden Nomor 121 Tahun 2000 tentang Penugasan Presiden Kepada Wakil
+  Presiden Untuk Melaksanakan Tugas Teknis Pemerintahan Sehari-Hari
+tentang: PENUGASAN PRESIDEN KEPADA WAKIL PRESIDEN UNTUK MELAKSANAKAN TUGAS TEKNIS
+  PEMERINTAHAN SEHARI-HARI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-08-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_121_2000_2000-08-23
+  kind: asli
+  source: dataset
+  date: '2000-08-23'
+  date_basis: tanggal_penetapan
+  text: keppres_121_2000_2000-08-23.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:82454043496fd71c26a0bf2405b59b54e5a9add21fb84847c7c1dbc10019b66e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:82454043496fd71c26a0bf2405b59b54e5a9add21fb84847c7c1dbc10019b66e
+  source_title: Keputusan_Presiden_no_121_TH_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: revoked
+  revoked_by:
+  - sha256:ad461f43c5ccf2ddb97533390b5a20740a8963c39574e2b32bbb60a65888538b

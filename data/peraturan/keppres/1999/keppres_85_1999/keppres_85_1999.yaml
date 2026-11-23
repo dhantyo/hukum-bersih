@@ -1,0 +1,39 @@
+id: keppres_85_1999
+akn: /akn/id/act/keppres/1999/85
+type: keppres
+number: '85'
+year: 1999
+title: Keputusan Presiden Nomor 85 Tahun 1999 tentang Badan Pengembangan Kehidupan
+  Bernegara
+tentang: BADAN PENGEMBANGAN KEHIDUPAN BERNEGARA
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_85_1999_1999
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: keppres_85_1999_1999.txt
+  pasal_count: 21
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:207d86db8d4cf224b0fbf2225c3e4195437da985dbfccae73b7d0ddfc022235a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:207d86db8d4cf224b0fbf2225c3e4195437da985dbfccae73b7d0ddfc022235a
+  source_title: Keppres_No_85_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 30
+  status: none_known

@@ -1,0 +1,41 @@
+id: keppres_72_1998
+akn: /akn/id/act/keppres/1998/72
+type: keppres
+number: '72'
+year: 1998
+title: Keputusan Presiden Nomor 72 Tahun 1998 tentang Tim Evaluasi Privatisasi Badan
+  Usaha Milik Negara
+tentang: TIM EVALUASI PRIVATISASI BADAN USAHA MILIK NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-05-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_72_1998_1998-05-06
+  kind: asli
+  source: dataset
+  date: '1998-05-06'
+  date_basis: tanggal_penetapan
+  text: keppres_72_1998_1998-05-06.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:899c9b71bc3ca14faf0fd376e0a12a6662b9015acc584f16a53386908cbc10e8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:899c9b71bc3ca14faf0fd376e0a12a6662b9015acc584f16a53386908cbc10e8
+  source_title: Keputusan_Presiden_no_72_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:c69fd6b3085b54288d3b092275eae648714693a2c12d0a0278c490d101128911

@@ -1,0 +1,45 @@
+id: keppres_89_2003
+akn: /akn/id/act/keppres/2003/89
+type: keppres
+number: '89'
+year: 2003
+title: Keputusan Presiden Nomor 89 Tahun 2003 tentang Pembentukan Kejaksaan Negeri
+  Kajen, Kejaksaan Negeri Namlea, Kejaksaan Negeri Saumlaki, Kejaksaan Negeri Buol,
+  Kejaksaan Negeri Banggai, Kejaksaan Negeri Lewoleba, Kejaksaan Negeri Ngabang, Kejaksaan
+  Negeri Prabumulih, Kejaksaan Negeri Pagar Alam, Kejaksaan Negeri Baa, Kejaksaan
+  Negeri Parigi Dan Kejaksaan Negeri Banjar
+tentang: PEMBENTUKAN KEJAKSAAN NEGERI KAJEN, KEJAKSAAN NEGERI NAMLEA, KEJAKSAAN NEGERI
+  SAUMLAKI, KEJAKSAAN NEGERI BUOL, KEJAKSAAN NEGERI BANGGAI, KEJAKSAAN NEGERI LEWOLEBA,
+  KEJAKSAAN NEGERI NGABANG, KEJAKSAAN NEGERI PRABUMULIH, KEJAKSAAN NEGERI PAGAR ALAM,
+  KEJAKSAAN NEGERI BAA, KEJAKSAAN NEGERI PARIGI DAN KEJAKSAAN NEGERI BANJAR
+short_name: null
+status: null
+tanggal_penetapan: '2003-11-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_89_2003_2003-11-12
+  kind: asli
+  source: dataset
+  date: '2003-11-12'
+  date_basis: tanggal_penetapan
+  text: keppres_89_2003_2003-11-12.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f95aa775a892ae12127edc27154180670cfb9563fe2ed59591a4c30e425152ac
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f95aa775a892ae12127edc27154180670cfb9563fe2ed59591a4c30e425152ac
+  source_title: Keputusan_Presiden_no_89_th_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

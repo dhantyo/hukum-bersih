@@ -1,0 +1,41 @@
+id: keppres_87_2003
+akn: /akn/id/act/keppres/2003/87
+type: keppres
+number: '87'
+year: 2003
+title: Keputusan Presiden Nomor 87 Tahun 2003 tentang Tim Nasional Peningkatan Ekspor
+  Dan Peningkatan Investasi
+tentang: TIM NASIONAL PENINGKATAN EKSPOR DAN PENINGKATAN INVESTASI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2003-11-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_87_2003_2003-11-11
+  kind: asli
+  source: dataset
+  date: '2003-11-11'
+  date_basis: tanggal_penetapan
+  text: keppres_87_2003_2003-11-11.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:51cfffd4da198d074dbe27d17c63cc05b0031d0d9fa3bf110516a6a6316711c0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:51cfffd4da198d074dbe27d17c63cc05b0031d0d9fa3bf110516a6a6316711c0
+  source_title: KEPPRES_No.87_TH_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:98d0a2d730c1c286d6fb4259af01f6ba5b983b6778c8108039805aa5a999a791

@@ -1,0 +1,41 @@
+id: keppres_31_2016
+akn: /akn/id/act/keppres/2016/31
+type: keppres
+number: '31'
+year: 2016
+title: Keputusan Presiden Nomor 31 Tahun 2016 tentang Penetapan Gambar Pahlawannasional
+  Sebagai Gambar Utamapada Bagian Depan Rupiah Kertas Dan Rupiah Logam Negara Kesatuan
+  Republik Indonesia
+tentang: PENETAPAN GAMBAR PAHLAWANNASIONAL SEBAGAI GAMBAR UTAMAPADA BAGIAN DEPAN RUPIAH
+  KERTAS DAN RUPIAH LOGAM NEGARA KESATUAN REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2016-09-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_31_2016_2016-09-05
+  kind: asli
+  source: dataset
+  date: '2016-09-05'
+  date_basis: tanggal_penetapan
+  text: keppres_31_2016_2016-09-05.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f898c4f4f2a04ec27e8537275f44ef7dc7a688f79611691d5c9d373638f5e259
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f898c4f4f2a04ec27e8537275f44ef7dc7a688f79611691d5c9d373638f5e259
+  source_title: Keppres_Nomor_31_Tahun_2016__Distribusi_II___1_
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

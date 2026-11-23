@@ -1,0 +1,38 @@
+id: keppres_72_2001
+akn: /akn/id/act/keppres/2001/72
+type: keppres
+number: '72'
+year: 2001
+title: Keputusan Presiden Nomor 72 Tahun 2001 tentang Komite Olahraga Nasional Indonesia
+tentang: KOMITE OLAHRAGA NASIONAL INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2001-06-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_72_2001_2001-06-14
+  kind: asli
+  source: dataset
+  date: '2001-06-14'
+  date_basis: tanggal_penetapan
+  text: keppres_72_2001_2001-06-14.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4f7b38825cafd975740a29e5763c6c99aaa8d04a6092845da7e4bade6cc6ee52
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4f7b38825cafd975740a29e5763c6c99aaa8d04a6092845da7e4bade6cc6ee52
+  source_title: Keputusan_Presiden_no_72_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

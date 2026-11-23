@@ -1,0 +1,41 @@
+id: keppres_145_1998
+akn: /akn/id/act/keppres/1998/145
+type: keppres
+number: '145'
+year: 1998
+title: Keputusan Presiden Nomor 145 Tahun 1998 tentang Pembentukan Pengadilan Agama
+  Natuna, Tulang Bawang, Tanggamus Cikarang, Kajen, Giri Menang, Badung, Ermera, Manatuto,
+  Sentani, Mimika, Dan Paniai
+tentang: PEMBENTUKAN PENGADILAN AGAMA NATUNA, TULANG BAWANG, TANGGAMUS CIKARANG, KAJEN,
+  GIRI MENANG, BADUNG, ERMERA, MANATUTO, SENTANI, MIMIKA, DAN PANIAI
+short_name: null
+status: null
+tanggal_penetapan: '1998-09-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_145_1998_1998-09-16
+  kind: asli
+  source: dataset
+  date: '1998-09-16'
+  date_basis: tanggal_penetapan
+  text: keppres_145_1998_1998-09-16.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1595c303cfe03a4e56ce20ed07658add8dbfad44480919b4744b4566deb4d8fc
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1595c303cfe03a4e56ce20ed07658add8dbfad44480919b4744b4566deb4d8fc
+  source_title: Keputusan_Presiden_no_145_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

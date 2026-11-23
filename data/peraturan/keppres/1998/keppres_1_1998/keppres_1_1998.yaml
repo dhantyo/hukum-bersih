@@ -1,0 +1,27 @@
+id: keppres_1_1998
+akn: /akn/id/act/keppres/1998/1
+type: keppres
+number: '1'
+year: 1998
+title: Keputusan Presiden Nomor 1 Tahun 1998
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '1998-01-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4f8a490e07c2c02e1e581cf35fc48a1125d6e191d346d7f966a916b15ae8934a
+  source_title: Keputusan_Presiden_no_1_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 2
+  status: none_known
+parse_error: 'v13: no pasal found in the rebuilt text'

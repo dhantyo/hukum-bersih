@@ -1,0 +1,41 @@
+id: keppres_24_1987
+akn: /akn/id/act/keppres/1987/24
+type: keppres
+number: '24'
+year: 1987
+title: Keputusan Presiden Nomor 24 Tahun 1987 tentang Pengesahan Pertukaran Nota Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Republik Arab Mesir Mengenai Pembentukan
+  Komite Bersama Di Bidang Perdagangan
+tentang: PENGESAHAN PERTUKARAN NOTA ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  REPUBLIK ARAB MESIR MENGENAI PEMBENTUKAN KOMITE BERSAMA DI BIDANG PERDAGANGAN
+short_name: null
+status: null
+tanggal_penetapan: '1987-07-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_24_1987_1987-07-15
+  kind: asli
+  source: dataset
+  date: '1987-07-15'
+  date_basis: tanggal_penetapan
+  text: keppres_24_1987_1987-07-15.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e069e11809bcc3b17d6204c63bb4a0b6258b0779d6a3abb4786ec7f82fc544bd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e069e11809bcc3b17d6204c63bb4a0b6258b0779d6a3abb4786ec7f82fc544bd
+  source_title: KEPPRES_NO_24_TH_1987
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

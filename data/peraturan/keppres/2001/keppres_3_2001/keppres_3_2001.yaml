@@ -1,0 +1,43 @@
+id: keppres_3_2001
+akn: /akn/id/act/keppres/2001/3
+type: keppres
+number: '3'
+year: 2001
+title: Keputusan Presiden Nomor 3 Tahun 2001 tentang Badan Koordinasi Nasional Penanggulangan
+  Bencana Dan Penanganan Pengungsi
+tentang: BADAN KOORDINASI NASIONAL PENANGGULANGAN BENCANA DAN PENANGANAN PENGUNGSI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-01-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_3_2001_2001-01-09
+  kind: asli
+  source: dataset
+  date: '2001-01-09'
+  date_basis: tanggal_penetapan
+  text: keppres_3_2001_2001-01-09.txt
+  pasal_count: 18
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f5d4e2f5bc7ee8aeb44c54452e8949c243cd192282533a7ce9d56822ebe0cf9c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f5d4e2f5bc7ee8aeb44c54452e8949c243cd192282533a7ce9d56822ebe0cf9c
+  source_title: Keputusan_Presiden_no_3_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 21
+  status: revoked
+  revoked_by:
+  - sha256:ad7c1e88f7cb90c1d5d9f4bc9527debd5ca4ef8b2a22735ad6cf4ac5cdf627de
+  amended_by:
+  - sha256:0796af729d00e413d8b6cff9ac472bafeab9b8e8d76735de3630ea1c980cccba

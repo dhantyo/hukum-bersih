@@ -1,0 +1,38 @@
+id: keppres_41_1996
+akn: /akn/id/act/keppres/1996/41
+type: keppres
+number: '41'
+year: 1996
+title: Keputusan Presiden Nomor 41 Tahun 1996 tentang Kawasan Industri
+tentang: KAWASAN INDUSTRI
+short_name: null
+status: null
+tanggal_penetapan: '1996-06-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_41_1996_1996-06-04
+  kind: asli
+  source: dataset
+  date: '1996-06-04'
+  date_basis: tanggal_penetapan
+  text: keppres_41_1996_1996-06-04.txt
+  pasal_count: 20
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:be13f9b95c689e3d73c1e5df1b2645d4b4e43dbf6ed8783e43521a979517fde2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:be13f9b95c689e3d73c1e5df1b2645d4b4e43dbf6ed8783e43521a979517fde2
+  source_title: Keputusan_Presiden_no_41_TH_1996
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 26
+  status: none_known

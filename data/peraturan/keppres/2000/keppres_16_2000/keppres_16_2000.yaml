@@ -1,0 +1,45 @@
+id: keppres_16_2000
+akn: /akn/id/act/keppres/2000/16
+type: keppres
+number: '16'
+year: 2000
+title: Keputusan Presiden Nomor 16 Tahun 2000 tentang Tunjangan Jabatan Fungsional
+  Penggerak Swadaya Masyarakat, Instruktur Latihan Kerja, Penera, Jagawana, Dan Teknisi
+  Kehutanan
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENGGERAK SWADAYA MASYARAKAT, INSTRUKTUR LATIHAN
+  KERJA, PENERA, JAGAWANA, DAN TEKNISI KEHUTANAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-02-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_16_2000_2000-02-21
+  kind: asli
+  source: dataset
+  date: '2000-02-21'
+  date_basis: tanggal_penetapan
+  text: keppres_16_2000_2000-02-21.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f6af2e7e1acbfdd2d1366dde48ed588e8ce04780e916284c2fd74c2e0ff07c8b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f6af2e7e1acbfdd2d1366dde48ed588e8ce04780e916284c2fd74c2e0ff07c8b
+  source_title: Keputusan_Presiden_no_16_th_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:6fdb5fd191c2bebaf829f34b988d32f35020aa3ea919a4f017689168e0280e70
+  - sha256:dc62bae886b1ac99c7caccb42d820d083156be2dc6ef9880feb4aa959157a159
+  - sha256:de727f480ac4350c90d26707482327678e5794db86afd5563e086c9a3a56ba3e

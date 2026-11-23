@@ -1,0 +1,32 @@
+id: keppres_83_2004
+akn: /akn/id/act/keppres/2004/83
+type: keppres
+number: '83'
+year: 2004
+title: Keputusan Presiden Nomor 83 Tahun 2004 tentang Pelaksanaan Paten Oleh Pemerintah
+  Terhadap Obat Obat Anti Retroviral
+tentang: PELAKSANAAN PATEN OLEH PEMERINTAH TERHADAP OBAT OBAT ANTI RETROVIRAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2004-10-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d4492344a20801b8396875edc2855a60509878857027cbf2366e22d31397234f
+  source_title: KEPPRES_No.83_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 4
+  status: revoked
+  revoked_by:
+  - sha256:1fc113dc7e5f355854c59dcc7ffdd9699de27a89c86d1debfeba0055cc9ab0a2
+  amended_by:
+  - sha256:746dcc2dcdd92ab4c7d8a6b1078aa132405dab7dd963ba61a5e6fdc60f898cf7
+parse_error: 'v13: no pasal found in the rebuilt text'

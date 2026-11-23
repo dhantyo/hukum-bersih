@@ -1,0 +1,39 @@
+id: keppres_33_2002
+akn: /akn/id/act/keppres/2002/33
+type: keppres
+number: '33'
+year: 2002
+title: Keputusan Presiden Nomor 33 Tahun 2002 tentang Pengendalian Dan Pengawasan
+  Pengusahaan Pasir Laut
+tentang: PENGENDALIAN DAN PENGAWASAN PENGUSAHAAN PASIR LAUT
+short_name: null
+status: null
+tanggal_penetapan: '2002-05-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_33_2002_2002-05-23
+  kind: asli
+  source: dataset
+  date: '2002-05-23'
+  date_basis: tanggal_penetapan
+  text: keppres_33_2002_2002-05-23.txt
+  pasal_count: 22
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0ab172160fc381b9e9534182418b6ef33e4ee6b7cbc56f43235423eaf34b97cd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0ab172160fc381b9e9534182418b6ef33e4ee6b7cbc56f43235423eaf34b97cd
+  source_title: KEPPRES_No.33_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 28
+  status: none_known

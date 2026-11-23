@@ -1,0 +1,40 @@
+id: keppres_18_1986
+akn: /akn/id/act/keppres/1986/18
+type: keppres
+number: '18'
+year: 1986
+title: Keputusan Presiden Nomor 18 Tahun 1986 tentang Pajak Pertambahan Nilai Yang
+  Terhutang Atas Impor Dan Penyerahan Barang Kena Pajak Dan Jasa Kena Pajak Tertentu
+  Yang Ditanggung Oleh Pemerintah
+tentang: PAJAK PERTAMBAHAN NILAI YANG TERHUTANG ATAS IMPOR DAN PENYERAHAN BARANG KENA
+  PAJAK DAN JASA KENA PAJAK TERTENTU YANG DITANGGUNG OLEH PEMERINTAH
+short_name: null
+status: diubah
+tanggal_penetapan: '1986-05-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ef395dce63a4c25081ca7e8da52e381250a8b9cdfcf00a8d6ef0839304bd3bbf
+  source_title: KEPPRES_NO_18_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: amended
+  amended_by:
+  - sha256:5cea356509e668a06439cc4bfa71371f39a7ebbdcfd07e1fce5c24fadf7d37ac
+  - sha256:5dee89051d3e830a25ca81c8cf07bda4ddfd0082f4b7d237a4335f1d323609b8
+  - sha256:63079a6bd5d69873ecc6a912900b8fe6f467214ee33c6e6a223a6f50a246239d
+  - sha256:788df2e80722bc3c1464b096975b1307f4609dd048186b35f4c8beff0330b14f
+  - sha256:974a86ae22d3a8377dae7f2c32cad48638fb86f63d61c9169feb7146f30ce591
+  - sha256:c61a36b367ccbf967979b96fe675b4382a7a4a56e4728e1d61f1fbc20597180d
+  - sha256:cf17d4839a5f8706558ad17b767c6256b1e9969e91e37499675311a88617ad3e
+  - sha256:dfe1279df416ebe2a843755f6988e0a4c1074e6ffc14148af28848e3eebf31b1
+  - sha256:fbc8b48e495f1cc2e9e6c5660ad135fa79e898b732140f8fdc345e29e10a7ba4
+parse_error: 'v13: rebuilt text has 4 pasal, the dataset lists 5'

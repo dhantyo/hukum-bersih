@@ -1,0 +1,32 @@
+id: keppres_48_2000
+akn: /akn/id/act/keppres/2000/48
+type: keppres
+number: '48'
+year: 2000
+title: Keputusan Presiden Nomor 48 Tahun 2000 tentang Harga Jual Tenaga Listrik Yang
+  Disediakan Oleh Perusahaan Perseroan (Persero) Pt Perusahaan Listrik Negara
+tentang: HARGA JUAL TENAGA LISTRIK YANG DISEDIAKAN OLEH PERUSAHAAN PERSEROAN (PERSERO)
+  PT PERUSAHAAN LISTRIK NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-04-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:44a25ccd8e8f73d94299b2aac43ee8bcde10c4f2b78229955234c1762fa42d5a
+  source_title: Keputusan_Presiden_no_48_th_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 23
+  status: revoked
+  revoked_by:
+  - sha256:adf673151154bf88dd610f1371675b50a1d204c59478d3aaebee36bb668ba2f0
+parse_error: 'LeakedMarkupError: conclusions__p_36: markup in text: ''TR = Tegangan
+  Rendah'''

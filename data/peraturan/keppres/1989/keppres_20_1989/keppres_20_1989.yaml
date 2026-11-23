@@ -1,0 +1,40 @@
+id: keppres_20_1989
+akn: /akn/id/act/keppres/1989/20
+type: keppres
+number: '20'
+year: 1989
+title: Keputusan Presiden Nomor 20 Tahun 1989 tentang Lembaga Administrasi Negara
+tentang: LEMBAGA ADMINISTRASI NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1989-05-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_20_1989_1989-05-05
+  kind: asli
+  source: dataset
+  date: '1989-05-05'
+  date_basis: tanggal_penetapan
+  text: keppres_20_1989_1989-05-05.txt
+  pasal_count: 26
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:08aec6f3aa8dec2e0932b18ffa73b9bab3d0fc738f329dfa1b7facfe8a23d2aa
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:08aec6f3aa8dec2e0932b18ffa73b9bab3d0fc738f329dfa1b7facfe8a23d2aa
+  source_title: KEPPRES_NO_20_TH_1989
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 32
+  status: revoked
+  revoked_by:
+  - sha256:9b47f0d6eedd9373d0acc45cea4dc097cddddb2ac78b97243844e5bb7378fdc1

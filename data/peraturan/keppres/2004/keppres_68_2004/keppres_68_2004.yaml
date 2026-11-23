@@ -1,0 +1,42 @@
+id: keppres_68_2004
+akn: /akn/id/act/keppres/2004/68
+type: keppres
+number: '68'
+year: 2004
+title: Keputusan Presiden Nomor 68 Tahun 2004 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Republik Federal Jerman Tentang Peningkatan Dan
+  Perlindungan Timbal Balik Penanaman Modal Beserta Protokol
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN REPUBLIK
+  FEDERAL JERMAN TENTANG PENINGKATAN DAN PERLINDUNGAN TIMBAL BALIK PENANAMAN MODAL
+  BESERTA PROTOKOL
+short_name: null
+status: null
+tanggal_penetapan: '2004-08-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_68_2004_2004-08-10
+  kind: asli
+  source: dataset
+  date: '2004-08-10'
+  date_basis: tanggal_penetapan
+  text: keppres_68_2004_2004-08-10.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0dc4b9731b7a22e30a31b36def3fb4593e645abd613aa0a999c2b7b2fef11e02
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0dc4b9731b7a22e30a31b36def3fb4593e645abd613aa0a999c2b7b2fef11e02
+  source_title: KEPPRES_No.68_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

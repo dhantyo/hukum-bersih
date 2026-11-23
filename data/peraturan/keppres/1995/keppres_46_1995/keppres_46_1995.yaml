@@ -1,0 +1,41 @@
+id: keppres_46_1995
+akn: /akn/id/act/keppres/1995/46
+type: keppres
+number: '46'
+year: 1995
+title: Keputusan Presiden Nomor 46 Tahun 1995 tentang Pengesahan Air Services Agreement
+  Between The Government Of The Republic Of Indonesia And The Government Of The Republic
+  Of Singapore
+tentang: PENGESAHAN AIR SERVICES AGREEMENT BETWEEN THE GOVERNMENT OF THE REPUBLIC
+  OF INDONESIA AND THE GOVERNMENT OF THE REPUBLIC OF SINGAPORE
+short_name: null
+status: null
+tanggal_penetapan: '1995-07-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_46_1995_1995-07-03
+  kind: asli
+  source: dataset
+  date: '1995-07-03'
+  date_basis: tanggal_penetapan
+  text: keppres_46_1995_1995-07-03.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0fe715565d4759ba0769c1737c62c762d672fbbabc932cf71eef77f5da1f141d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0fe715565d4759ba0769c1737c62c762d672fbbabc932cf71eef77f5da1f141d
+  source_title: Keputusan_Presiden_no_46_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

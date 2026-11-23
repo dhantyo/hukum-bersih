@@ -1,0 +1,38 @@
+id: keppres_174_1999
+akn: /akn/id/act/keppres/1999/174
+type: keppres
+number: '174'
+year: 1999
+title: Keputusan Presiden Nomor 174 Tahun 1999 tentang Remisi
+tentang: REMISI
+short_name: null
+status: null
+tanggal_penetapan: '1999-12-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_174_1999_1999-12-23
+  kind: asli
+  source: dataset
+  date: '1999-12-23'
+  date_basis: tanggal_penetapan
+  text: keppres_174_1999_1999-12-23.txt
+  pasal_count: 16
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:41a2753d5f5ecee4e0ffcac734609b8bb473475d05d6f536b3313114c7562852
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:41a2753d5f5ecee4e0ffcac734609b8bb473475d05d6f536b3313114c7562852
+  source_title: Keppres_No_174_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 20
+  status: none_known

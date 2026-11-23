@@ -1,0 +1,39 @@
+id: keppres_53_1986
+akn: /akn/id/act/keppres/1986/53
+type: keppres
+number: '53'
+year: 1986
+title: Keputusan Presiden Nomor 53 Tahun 1986 tentang Koordinasi Penyelenggaraan Dan
+  Pemanfaatan Jasa Meteorologi Dan Geofisika
+tentang: KOORDINASI PENYELENGGARAAN DAN PEMANFAATAN JASA METEOROLOGI DAN GEOFISIKA
+short_name: null
+status: null
+tanggal_penetapan: '1986-10-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_53_1986_1986-10-14
+  kind: asli
+  source: dataset
+  date: '1986-10-14'
+  date_basis: tanggal_penetapan
+  text: keppres_53_1986_1986-10-14.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b1a2b60860b563689f0e900d5ddeed3953549c7b517181de000329819ccb7aed
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b1a2b60860b563689f0e900d5ddeed3953549c7b517181de000329819ccb7aed
+  source_title: KEPPRES_NO_53_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: none_known

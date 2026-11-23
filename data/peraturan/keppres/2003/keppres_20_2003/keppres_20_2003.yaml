@@ -1,0 +1,41 @@
+id: keppres_20_2003
+akn: /akn/id/act/keppres/2003/20
+type: keppres
+number: '20'
+year: 2003
+title: Keputusan Presiden Nomor 20 Tahun 2003 tentang Tunjangan Jabatan Fungsional
+  Penyuluh Kehutanan
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENYULUH KEHUTANAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2003-04-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_20_2003_2003-04-08
+  kind: asli
+  source: dataset
+  date: '2003-04-08'
+  date_basis: tanggal_penetapan
+  text: keppres_20_2003_2003-04-08.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8821f764697cd460d40410038c87d1744e88ca81de6098bc285f6917d5d69a95
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8821f764697cd460d40410038c87d1744e88ca81de6098bc285f6917d5d69a95
+  source_title: KEPPRES_No.20_TH_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:58c42501cd03244e93c8c0ce63754c8feca129efed03c1a338501552aaed8418

@@ -1,0 +1,39 @@
+id: keppres_6_1991
+akn: /akn/id/act/keppres/1991/6
+type: keppres
+number: '6'
+year: 1991
+title: Keputusan Presiden Nomor 6 Tahun 1991 tentang Pelaksanaan Pemilihan Umum Di
+  Propinsi Daerah Tingkat I Timor Timur
+tentang: PELAKSANAAN PEMILIHAN UMUM DI PROPINSI DAERAH TINGKAT I TIMOR TIMUR
+short_name: null
+status: null
+tanggal_penetapan: '1991-02-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_6_1991_1991-02-06
+  kind: asli
+  source: dataset
+  date: '1991-02-06'
+  date_basis: tanggal_penetapan
+  text: keppres_6_1991_1991-02-06.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d53822ee5c84c2453895ee5c2c9f1159e59887d797fea1bc166b873dfdfd4314
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d53822ee5c84c2453895ee5c2c9f1159e59887d797fea1bc166b873dfdfd4314
+  source_title: KEPPRES_NO_6_TH_1991
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: none_known

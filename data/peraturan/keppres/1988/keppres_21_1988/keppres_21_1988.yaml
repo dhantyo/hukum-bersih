@@ -1,0 +1,40 @@
+id: keppres_21_1988
+akn: /akn/id/act/keppres/1988/21
+type: keppres
+number: '21'
+year: 1988
+title: Keputusan Presiden Nomor 21 Tahun 1988 tentang Pengesahan Protocol Of 1978
+  Relating To The International Convention For The Safety Of Life At Sea, 1974
+tentang: PENGESAHAN PROTOCOL OF 1978 RELATING TO THE INTERNATIONAL CONVENTION FOR
+  THE SAFETY OF LIFE AT SEA, 1974
+short_name: null
+status: null
+tanggal_penetapan: '1988-06-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_21_1988_1988-06-29
+  kind: asli
+  source: dataset
+  date: '1988-06-29'
+  date_basis: tanggal_penetapan
+  text: keppres_21_1988_1988-06-29.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a9dbf3bb1c841b3d31ddbefb03d696c4cf8b9c77439e82d9476e2d0af1124a61
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a9dbf3bb1c841b3d31ddbefb03d696c4cf8b9c77439e82d9476e2d0af1124a61
+  source_title: KEPPRES_NO_21_TH_1988
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

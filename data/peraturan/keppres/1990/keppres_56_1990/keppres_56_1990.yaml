@@ -1,0 +1,41 @@
+id: keppres_56_1990
+akn: /akn/id/act/keppres/1990/56
+type: keppres
+number: '56'
+year: 1990
+title: Keputusan Presiden Nomor 56 Tahun 1990 tentang Susunan Organisasi Dan Tata
+  Kerja Panitia Pemilihan Indonesia
+tentang: SUSUNAN ORGANISASI DAN TATA KERJA PANITIA PEMILIHAN INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1990-12-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_56_1990_1990-12-14
+  kind: asli
+  source: dataset
+  date: '1990-12-14'
+  date_basis: tanggal_penetapan
+  text: keppres_56_1990_1990-12-14.txt
+  pasal_count: 44
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1fd76693ebafee0393086180caad7489366f1e6325352696413d4f088c50b4d4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1fd76693ebafee0393086180caad7489366f1e6325352696413d4f088c50b4d4
+  source_title: KEPPRES_NO_56_TH_1990
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 49
+  status: revoked
+  revoked_by:
+  - sha256:4e5954f83820e21acc237bf9d56d6b0cd366f7b9c4b8086d99ebb56a66985a8b

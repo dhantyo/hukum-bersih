@@ -1,0 +1,44 @@
+id: keppres_18_2003
+akn: /akn/id/act/keppres/2003/18
+type: keppres
+number: '18'
+year: 2003
+title: Keputusan Presiden Nomor 18 Tahun 2003 tentang Bebas Visa Kunjungan Singkat
+tentang: BEBAS VISA KUNJUNGAN SINGKAT
+short_name: null
+status: dicabut
+tanggal_penetapan: '2003-03-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_18_2003_2003-03-31
+  kind: asli
+  source: dataset
+  date: '2003-03-31'
+  date_basis: tanggal_penetapan
+  text: keppres_18_2003_2003-03-31.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9ec1858c9d009efa3aa8bbb7ab2a30cbabc2f169c7fd1c3023fa128bba3a7354
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9ec1858c9d009efa3aa8bbb7ab2a30cbabc2f169c7fd1c3023fa128bba3a7354
+  source_title: KEPPRES_No.18_TH_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:01fe3068ed30935b31502f241739b137a0fb3e8a4625c293becbe5d6b9d28f7d
+  amended_by:
+  - sha256:0991e57e0b3d97dd46a9525ae5a9efaabb73dc51969f30bb8e13558852045f52
+  - sha256:a79072dfa2622c4721f88b251e53a8581bf94f8ef9fae343ce9fc293673ed500
+  - sha256:e8d41d545d37cfffeb259d5b137658e3ac4e91886e05e316900a08a1e0ff0208

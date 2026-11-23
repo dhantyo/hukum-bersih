@@ -1,0 +1,39 @@
+id: keppres_51_1997
+akn: /akn/id/act/keppres/1997/51
+type: keppres
+number: '51'
+year: 1997
+title: Keputusan Presiden Nomor 51 Tahun 1997 tentang Penetapan Pelabuhan Laut Kabil
+  Pulau Batam Sebagai Pelabuhan Alih Kapal
+tentang: PENETAPAN PELABUHAN LAUT KABIL PULAU BATAM SEBAGAI PELABUHAN ALIH KAPAL
+short_name: null
+status: null
+tanggal_penetapan: '1997-12-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_51_1997_1997-12-29
+  kind: asli
+  source: dataset
+  date: '1997-12-29'
+  date_basis: tanggal_penetapan
+  text: keppres_51_1997_1997-12-29.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d68816557e17947a461abb64cd0ceb49ced90612f36404a496d6071d2bb3fbe9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d68816557e17947a461abb64cd0ceb49ced90612f36404a496d6071d2bb3fbe9
+  source_title: Keputusan_Presiden_no_51_TH_1997
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

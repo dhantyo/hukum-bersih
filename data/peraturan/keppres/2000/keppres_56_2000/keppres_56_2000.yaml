@@ -1,0 +1,38 @@
+id: keppres_56_2000
+akn: /akn/id/act/keppres/2000/56
+type: keppres
+number: '56'
+year: 2000
+title: Keputusan Presiden Nomor 56 Tahun 2000 tentang Sekretariat Wakil Presiden
+tentang: SEKRETARIAT WAKIL PRESIDEN
+short_name: null
+status: null
+tanggal_penetapan: '2000-04-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_56_2000_2000-04-20
+  kind: asli
+  source: dataset
+  date: '2000-04-20'
+  date_basis: tanggal_penetapan
+  text: keppres_56_2000_2000-04-20.txt
+  pasal_count: 29
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f248dcd4b6a4778afc13b9dcc240029a1ae8fb00806ac357ea35c4d39f9e7d9c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f248dcd4b6a4778afc13b9dcc240029a1ae8fb00806ac357ea35c4d39f9e7d9c
+  source_title: Keputusan_Presiden_no_56_TH_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 37
+  status: none_known

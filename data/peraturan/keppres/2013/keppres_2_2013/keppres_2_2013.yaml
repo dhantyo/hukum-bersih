@@ -1,0 +1,40 @@
+id: keppres_2_2013
+akn: /akn/id/act/keppres/2013/2
+type: keppres
+number: '2'
+year: 2013
+title: Keputusan Presiden Nomor 2 Tahun 2013 tentang Penetapan Keanggotaan Indonesia
+  Pada International Institute For Democracy And Electoral Assistance
+tentang: PENETAPAN KEANGGOTAAN INDONESIA PADA INTERNATIONAL INSTITUTE FOR DEMOCRACY
+  AND ELECTORAL ASSISTANCE
+short_name: null
+status: null
+tanggal_penetapan: '2013-01-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_2_2013_2013-01-10
+  kind: asli
+  source: dataset
+  date: '2013-01-10'
+  date_basis: tanggal_penetapan
+  text: keppres_2_2013_2013-01-10.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:83755281e2cf783d19d5e530a497d3bad295959f03db2c322c24cc885c2a8f15
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:83755281e2cf783d19d5e530a497d3bad295959f03db2c322c24cc885c2a8f15
+  source_title: Keppres_02_2013
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 7
+  status: none_known

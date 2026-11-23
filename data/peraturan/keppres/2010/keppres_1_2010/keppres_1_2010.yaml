@@ -1,0 +1,27 @@
+id: keppres_1_2010
+akn: /akn/id/act/keppres/2010/1
+type: keppres
+number: '1'
+year: 2010
+title: Keputusan Presiden Nomor 1 Tahun 2010
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '2010-03-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fc08420d30322d5f28e6a6db3bb1bf701d5068032ece839f6533b22cb9cfde6c
+  source_title: Keppres_1_Tahun_2010
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 4
+  status: none_known
+parse_error: 'v13: no pasal found in the rebuilt text'

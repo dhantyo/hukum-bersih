@@ -1,0 +1,43 @@
+id: keppres_49_2002
+akn: /akn/id/act/keppres/2002/49
+type: keppres
+number: '49'
+year: 2002
+title: Keputusan Presiden Nomor 49 Tahun 2002 tentang Kedudukan, Tugas, Fungsi, Susunan
+  Organisasi, Dan Tata Kerja Instansi Vertikal Departemen Agama
+tentang: KEDUDUKAN, TUGAS, FUNGSI, SUSUNAN ORGANISASI, DAN TATA KERJA INSTANSI VERTIKAL
+  DEPARTEMEN AGAMA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2002-07-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_49_2002_2002-07-01
+  kind: asli
+  source: dataset
+  date: '2002-07-01'
+  date_basis: tanggal_penetapan
+  text: keppres_49_2002_2002-07-01.txt
+  pasal_count: 24
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f5edfdb9b2ed6040be092c0f293b371ab87dfe90266f0f6a91b3be7c622dd587
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f5edfdb9b2ed6040be092c0f293b371ab87dfe90266f0f6a91b3be7c622dd587
+  source_title: KEPPRES_No.49_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 30
+  status: revoked
+  revoked_by:
+  - sha256:89f4f6cc85e8afbc88f240a620071825a3e889791a5e1236d2c2ba5b65dc70e0
+  - sha256:d677ac06ccad3929ff283672e3deb2ed509ccc4990130aebad16c132bb4450df

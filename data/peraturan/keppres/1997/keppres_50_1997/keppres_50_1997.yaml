@@ -1,0 +1,30 @@
+id: keppres_50_1997
+akn: /akn/id/act/keppres/1997/50
+type: keppres
+number: '50'
+year: 1997
+title: Keputusan Presiden Nomor 50 Tahun 1997 tentang Perpustakaan Nasional Republik
+  Indonesia
+tentang: PERPUSTAKAAN NASIONAL REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1997-12-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:714356ed297487874266ec25c22c94bc24048b32e400dcc10e4694536a04c68d
+  source_title: Keputusan_Presiden_no_50_TH_1997
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 28
+  status: revoked
+  revoked_by:
+  - sha256:7f0ff33dc6b3d2d48727ba546fa7068f3494b33db907f0d05074eac5d969cf12
+parse_error: 'v13: rebuilt text has 2 pasal, the dataset lists 20'

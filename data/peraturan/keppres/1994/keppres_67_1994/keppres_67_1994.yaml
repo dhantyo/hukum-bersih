@@ -1,0 +1,41 @@
+id: keppres_67_1994
+akn: /akn/id/act/keppres/1994/67
+type: keppres
+number: '67'
+year: 1994
+title: Keputusan Presiden Nomor 67 Tahun 1994 tentang Harga Jual Dan Golongan Tarif
+  Tenaga Listrik Yang Disediakan Oleh Perusahaan Perseroan (Persero) Pt. Perusahaan
+  Listrik Negara
+tentang: HARGA JUAL DAN GOLONGAN TARIF TENAGA LISTRIK YANG DISEDIAKAN OLEH PERUSAHAAN
+  PERSEROAN (PERSERO) PT. PERUSAHAAN LISTRIK NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '1994-10-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_67_1994_1994-10-08
+  kind: asli
+  source: dataset
+  date: '1994-10-08'
+  date_basis: tanggal_penetapan
+  text: keppres_67_1994_1994-10-08.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f338e994d8d2edf8eb633800223d7039eab93700e4c64e526033a5392c5c1060
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f338e994d8d2edf8eb633800223d7039eab93700e4c64e526033a5392c5c1060
+  source_title: Keputusan_Presiden_no_67_TH_1994
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

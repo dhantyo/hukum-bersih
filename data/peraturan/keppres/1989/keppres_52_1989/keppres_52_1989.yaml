@@ -1,0 +1,39 @@
+id: keppres_52_1989
+akn: /akn/id/act/keppres/1989/52
+type: keppres
+number: '52'
+year: 1989
+title: Keputusan Presiden Nomor 52 Tahun 1989 tentang Pembangunan Kelompok Hutan Riam
+  Kanan Sebagai Taman Hutan Raya Sultan Adam
+tentang: PEMBANGUNAN KELOMPOK HUTAN RIAM KANAN SEBAGAI TAMAN HUTAN RAYA SULTAN ADAM
+short_name: null
+status: null
+tanggal_penetapan: '1989-10-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_52_1989_1989-10-18
+  kind: asli
+  source: dataset
+  date: '1989-10-18'
+  date_basis: tanggal_penetapan
+  text: keppres_52_1989_1989-10-18.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:af40019bd458b5cc3c1175c84db7069b431d5319b7deba16d745bccebc6beb44
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:af40019bd458b5cc3c1175c84db7069b431d5319b7deba16d745bccebc6beb44
+  source_title: KEPPRES_NO_52_TH_1989
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

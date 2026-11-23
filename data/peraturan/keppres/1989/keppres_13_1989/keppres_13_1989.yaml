@@ -1,0 +1,39 @@
+id: keppres_13_1989
+akn: /akn/id/act/keppres/1989/13
+type: keppres
+number: '13'
+year: 1989
+title: Keputusan Presiden Nomor 13 Tahun 1989 tentang Rencana Pembangunan Lima Tahun
+  Kelima (Repelita V) 1989/90 - 1993/94
+tentang: RENCANA PEMBANGUNAN LIMA TAHUN KELIMA (REPELITA V) 1989/90 - 1993/94
+short_name: null
+status: null
+tanggal_penetapan: '1989-03-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_13_1989_1989-03-20
+  kind: asli
+  source: dataset
+  date: '1989-03-20'
+  date_basis: tanggal_penetapan
+  text: keppres_13_1989_1989-03-20.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:37370170626b4f76929b06bf7e11a43b416e77a62937089c8c325c8dc92add59
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:37370170626b4f76929b06bf7e11a43b416e77a62937089c8c325c8dc92add59
+  source_title: KEPPRES_NO_13_TH_1989
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

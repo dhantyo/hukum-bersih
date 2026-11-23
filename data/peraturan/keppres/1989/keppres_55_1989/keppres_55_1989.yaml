@@ -1,0 +1,41 @@
+id: keppres_55_1989
+akn: /akn/id/act/keppres/1989/55
+type: keppres
+number: '55'
+year: 1989
+title: Keputusan Presiden Nomor 55 Tahun 1989 tentang Badan Pertimbangan Telekomunikasi
+tentang: BADAN PERTIMBANGAN TELEKOMUNIKASI
+short_name: null
+status: diubah
+tanggal_penetapan: '1989-11-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_55_1989_1989-11-01
+  kind: asli
+  source: dataset
+  date: '1989-11-01'
+  date_basis: tanggal_penetapan
+  text: keppres_55_1989_1989-11-01.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c3bd7fa84cf17874df6d398b1e36bfe0d099f48f06d7c4a02e052e9f47346614
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c3bd7fa84cf17874df6d398b1e36bfe0d099f48f06d7c4a02e052e9f47346614
+  source_title: KEPPRES_NO_55_TH_1989
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: amended
+  amended_by:
+  - sha256:96b39150cb74656708fd2451ad36ce4be3c9a64121bcb298a0dc5e5b5e2190de
+  - sha256:eb05c29910f452a9b4562c4145a14d58ef96129c41809cba5d54140877c6ead6

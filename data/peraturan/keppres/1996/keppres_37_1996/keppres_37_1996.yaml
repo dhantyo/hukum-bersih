@@ -1,0 +1,38 @@
+id: keppres_37_1996
+akn: /akn/id/act/keppres/1996/37
+type: keppres
+number: '37'
+year: 1996
+title: Keputusan Presiden Nomor 37 Tahun 1996 tentang Tahun Anggaran 1996/1997
+tentang: TAHUN ANGGARAN 1996/1997
+short_name: null
+status: null
+tanggal_penetapan: '1996-05-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_37_1996_1996-05-23
+  kind: asli
+  source: dataset
+  date: '1996-05-23'
+  date_basis: tanggal_penetapan
+  text: keppres_37_1996_1996-05-23.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3d37ac815acd545ad8c92a6ac73d8c471673926f2f7cb8ed7cf497ce1230b36d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3d37ac815acd545ad8c92a6ac73d8c471673926f2f7cb8ed7cf497ce1230b36d
+  source_title: Keputusan_Presiden_no_37_TH_1996
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

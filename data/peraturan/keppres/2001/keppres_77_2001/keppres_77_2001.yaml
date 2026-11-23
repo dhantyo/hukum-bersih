@@ -1,0 +1,32 @@
+id: keppres_77_2001
+akn: /akn/id/act/keppres/2001/77
+type: keppres
+number: '77'
+year: 2001
+title: Keputusan Presiden Nomor 77 Tahun 2001 tentang Perubahan Atas Keputusan Presiden
+  Nomor 54 Tahun 2001 Tentang Organisasi Dan Tata Kerja Kepolisian Negara Republik
+  Indonesia
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 54 TAHUN 2001 TENTANG ORGANISASI
+  DAN TATA KERJA KEPOLISIAN NEGARA REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-06-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:80b4ae7939ddb125ecea38b94d395e047449432a9c5601f42146a4479664ba17
+  source_title: Keputusan_Presiden_no_77_th_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: revoked
+  revoked_by:
+  - sha256:3ce1b0ca38542c1cf4678a9489a4098c41ab1b2e13d4f3c3aba2a346770c86f5
+parse_error: 'v13: no pasal found in the rebuilt text'

@@ -1,0 +1,40 @@
+id: keppres_22_2002
+akn: /akn/id/act/keppres/2002/22
+type: keppres
+number: '22'
+year: 2002
+title: Keputusan Presiden Nomor 22 Tahun 2002 tentang Panitia Nasional Pertemuan Tingkat
+  Menteri Komisi Persiapan Konferensi Tingkat Tinggi Dunia Untuk Pembangunan Berkelanjutan
+tentang: PANITIA NASIONAL PERTEMUAN TINGKAT MENTERI KOMISI PERSIAPAN KONFERENSI TINGKAT
+  TINGGI DUNIA UNTUK PEMBANGUNAN BERKELANJUTAN
+short_name: null
+status: null
+tanggal_penetapan: '2002-04-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_22_2002_2002-04-17
+  kind: asli
+  source: dataset
+  date: '2002-04-17'
+  date_basis: tanggal_penetapan
+  text: keppres_22_2002_2002-04-17.txt
+  pasal_count: 16
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e694c2702a22e3186f837a36078573e5c51bb1d32b5b7ec98055975f4da3452d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e694c2702a22e3186f837a36078573e5c51bb1d32b5b7ec98055975f4da3452d
+  source_title: KEPPRES_No.22_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 21
+  status: none_known

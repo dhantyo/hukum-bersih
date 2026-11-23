@@ -1,0 +1,39 @@
+id: keppres_26_2010
+akn: /akn/id/act/keppres/2010/26
+type: keppres
+number: '26'
+year: 2010
+title: Keputusan Presiden Nomor 26 Tahun 2010 tentang Rincian Anggaran Belanja Pemerintah
+  Pusat Tahun Anggaran 2011
+tentang: RINCIAN ANGGARAN BELANJA PEMERINTAH PUSAT TAHUN ANGGARAN 2011
+short_name: null
+status: null
+tanggal_penetapan: '2010-11-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_26_2010_2010-11-30
+  kind: asli
+  source: dataset
+  date: '2010-11-30'
+  date_basis: tanggal_penetapan
+  text: keppres_26_2010_2010-11-30.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6fb9ce4b543c3b287b49877aa35e5f98108d572e9e4820df9884a5ac5e1883a9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6fb9ce4b543c3b287b49877aa35e5f98108d572e9e4820df9884a5ac5e1883a9
+  source_title: Keputusan_Presiden_No_26_Tahun_2010
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

@@ -1,0 +1,38 @@
+id: keppres_69_1996
+akn: /akn/id/act/keppres/1996/69
+type: keppres
+number: '69'
+year: 1996
+title: Keputusan Presiden Nomor 69 Tahun 1996 tentang Tunjangan Perekayasa
+tentang: TUNJANGAN PEREKAYASA
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_69_1996_1996
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: keppres_69_1996_1996.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2c6dd8b67f3c3c7c7e3bbac394c3f14593ee28638833773a5af4a4b9630b63ca
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2c6dd8b67f3c3c7c7e3bbac394c3f14593ee28638833773a5af4a4b9630b63ca
+  source_title: Keputusan_Presiden_no_69_TH_1996
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

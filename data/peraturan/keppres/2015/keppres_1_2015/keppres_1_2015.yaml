@@ -1,0 +1,43 @@
+id: keppres_1_2015
+akn: /akn/id/act/keppres/2015/1
+type: keppres
+number: '1'
+year: 2015
+title: Keputusan Presiden Nomor 1 Tahun 2015 tentang Pembentukan Badan Penyelesaian
+  Sengketa Konsumen Pada Kabupaten Indragiri Hilir, Kabupaten Lebak, Kabupaten Rejang
+  Lebong, Kabupaten Asahan, Kabupaten Jayawijaya, Kabupaten Lima Puluh Kota, Dan Kabupaten
+  Kapuas
+tentang: PEMBENTUKAN BADAN PENYELESAIAN SENGKETA KONSUMEN PADA KABUPATEN INDRAGIRI
+  HILIR, KABUPATEN LEBAK, KABUPATEN REJANG LEBONG, KABUPATEN ASAHAN, KABUPATEN JAYAWIJAYA,
+  KABUPATEN LIMA PULUH KOTA, DAN KABUPATEN KAPUAS
+short_name: null
+status: null
+tanggal_penetapan: '2015-01-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_1_2015_2015-01-29
+  kind: asli
+  source: dataset
+  date: '2015-01-29'
+  date_basis: tanggal_penetapan
+  text: keppres_1_2015_2015-01-29.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:78e253e11086e707f66921e2bdd4d8f1d6b309c57b6129ce246c8ac3e5c77f21
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:78e253e11086e707f66921e2bdd4d8f1d6b309c57b6129ce246c8ac3e5c77f21
+  source_title: Keppres_Nomor_1_Tahun_2015
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

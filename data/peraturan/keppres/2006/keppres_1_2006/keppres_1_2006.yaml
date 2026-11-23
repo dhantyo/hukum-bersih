@@ -1,0 +1,45 @@
+id: keppres_1_2006
+akn: /akn/id/act/keppres/2006/1
+type: keppres
+number: '1'
+year: 2006
+title: Keputusan Presiden Nomor 1 Tahun 2006 tentang Pembentukan Pengadilan Negeri
+  Pasaman Barat, Pengadilan Negeri Tebo, Pengadilan Negeri Sarolangun, Pengadilan
+  Negeri Kutai Barat, Pengadilan Negeri Mandailing Natal, Dan Pengadilan Negeri Tanjung
+  Jabung Timur
+tentang: PEMBENTUKAN PENGADILAN NEGERI PASAMAN BARAT, PENGADILAN NEGERI TEBO, PENGADILAN
+  NEGERI SAROLANGUN, PENGADILAN NEGERI KUTAI BARAT, PENGADILAN NEGERI MANDAILING NATAL,
+  DAN PENGADILAN NEGERI TANJUNG JABUNG TIMUR
+short_name: null
+status: diubah
+tanggal_penetapan: '2006-02-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_1_2006_2006-02-14
+  kind: asli
+  source: dataset
+  date: '2006-02-14'
+  date_basis: tanggal_penetapan
+  text: keppres_1_2006_2006-02-14.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e09c56948537bbc92fe52eb8bf41fe9d45dc1315cb809d19757bbf655bcca666
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e09c56948537bbc92fe52eb8bf41fe9d45dc1315cb809d19757bbf655bcca666
+  source_title: Kep_Pres_No._1_Tahun_2006
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: amended
+  amended_by:
+  - sha256:b21903a740f0a2738535fa7e3df2fb82c937fef4289c1df5068d5a22817741ec

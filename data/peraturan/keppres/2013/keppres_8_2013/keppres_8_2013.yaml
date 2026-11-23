@@ -1,0 +1,39 @@
+id: keppres_8_2013
+akn: /akn/id/act/keppres/2013/8
+type: keppres
+number: '8'
+year: 2013
+title: Keputusan Presiden Nomor 8 Tahun 2013 tentang Panitia Nasional Penyelenggara
+  Sail Komodo Tahun 2013
+tentang: PANITIA NASIONAL PENYELENGGARA SAIL KOMODO TAHUN 2013
+short_name: null
+status: null
+tanggal_penetapan: '2013-02-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_8_2013_2013-02-20
+  kind: asli
+  source: dataset
+  date: '2013-02-20'
+  date_basis: tanggal_penetapan
+  text: keppres_8_2013_2013-02-20.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:372ce8199eb5aec28e495e961ef02c3e9d66586dadd0d309ba70e677335a4d31
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:372ce8199eb5aec28e495e961ef02c3e9d66586dadd0d309ba70e677335a4d31
+  source_title: Keppres_08_2013
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: none_known

@@ -1,0 +1,43 @@
+id: keppres_89_1996
+akn: /akn/id/act/keppres/1996/89
+type: keppres
+number: '89'
+year: 1996
+title: Keputusan Presiden Nomor 89 Tahun 1996 tentang Kawasan Pengembangan Ekonomi
+  Terpadu
+tentang: KAWASAN PENGEMBANGAN EKONOMI TERPADU
+short_name: null
+status: dicabut
+tanggal_penetapan: '1996-12-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_89_1996_1996-12-03
+  kind: asli
+  source: dataset
+  date: '1996-12-03'
+  date_basis: tanggal_penetapan
+  text: keppres_89_1996_1996-12-03.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2c7591e9a10f6f4a8efcd1f537c99ac9ffa929cec0ff75e050d2b956251f2066
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2c7591e9a10f6f4a8efcd1f537c99ac9ffa929cec0ff75e050d2b956251f2066
+  source_title: Keputusan_Presiden_no_89_TH_1996
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: revoked
+  revoked_by:
+  - sha256:d47b7c5b9fe12d4baf078ab1761fb1fb0014a137ad1b451c1d00cf05ed76adaf
+  amended_by:
+  - sha256:37c0feb442746f18f5596d6ef1245606c944d3af2186f2ce3521a8fcadea6133

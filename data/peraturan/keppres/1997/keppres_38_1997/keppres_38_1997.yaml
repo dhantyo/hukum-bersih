@@ -1,0 +1,39 @@
+id: keppres_38_1997
+akn: /akn/id/act/keppres/1997/38
+type: keppres
+number: '38'
+year: 1997
+title: Keputusan Presiden Nomor 38 Tahun 1997 tentang Pemberian Fasilitas Perpajakan
+  Kepada Usaha Industri Tertentu
+tentang: PEMBERIAN FASILITAS PERPAJAKAN KEPADA USAHA INDUSTRI TERTENTU
+short_name: null
+status: null
+tanggal_penetapan: '1997-09-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_38_1997_1997-09-01
+  kind: asli
+  source: dataset
+  date: '1997-09-01'
+  date_basis: tanggal_penetapan
+  text: keppres_38_1997_1997-09-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:267b84fa3a5ac269eb222d567fd403d6ba88e228a0d82c868dd71962a500cae8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:267b84fa3a5ac269eb222d567fd403d6ba88e228a0d82c868dd71962a500cae8
+  source_title: Keputusan_Presiden_no_38_TH_1997
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

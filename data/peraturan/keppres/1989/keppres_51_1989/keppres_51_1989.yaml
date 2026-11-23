@@ -1,0 +1,41 @@
+id: keppres_51_1989
+akn: /akn/id/act/keppres/1989/51
+type: keppres
+number: '51'
+year: 1989
+title: Keputusan Presiden Nomor 51 Tahun 1989 tentang Perubahan Keputusan Presiden
+  Nomor 28 Tahun 1988 Tentang Besarnya Jaminan Kecelakaan Kerja Dan Jaminan Kematian
+  Asuransi Sosial Tenaga Kerja
+tentang: PERUBAHAN KEPUTUSAN PRESIDEN NOMOR 28 TAHUN 1988 TENTANG BESARNYA JAMINAN
+  KECELAKAAN KERJA DAN JAMINAN KEMATIAN ASURANSI SOSIAL TENAGA KERJA
+short_name: null
+status: null
+tanggal_penetapan: '1989-10-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_51_1989_1989-10-18
+  kind: asli
+  source: dataset
+  date: '1989-10-18'
+  date_basis: tanggal_penetapan
+  text: keppres_51_1989_1989-10-18.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9003a0c317ac5fc4897e989cec93fad0dea11353b846ff4c08acfdb9e4bdfeb9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9003a0c317ac5fc4897e989cec93fad0dea11353b846ff4c08acfdb9e4bdfeb9
+  source_title: KEPPRES_NO_51_TH_1989
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

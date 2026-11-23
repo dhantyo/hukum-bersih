@@ -1,0 +1,27 @@
+id: keppres_18_2009
+akn: /akn/id/act/keppres/2009/18
+type: keppres
+number: '18'
+year: 2009
+title: Keputusan Presiden Nomor 18 Tahun 2009
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '2009-07-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b90683cc6d9c3c0e23a9e0a8c1ac7e653687728ecbf16aa73468594660640eb4
+  source_title: Keppres_18_Tahun_2009
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 3
+  status: none_known
+parse_error: 'v13: no pasal found in the rebuilt text'

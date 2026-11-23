@@ -1,0 +1,41 @@
+id: keppres_85_1995
+akn: /akn/id/act/keppres/1995/85
+type: keppres
+number: '85'
+year: 1995
+title: Keputusan Presiden Nomor 85 Tahun 1995 tentang Pengesahan Protocol To Amend
+  The Agreement On The Common Effective Preferential Tariff (Cept) Scheme For The
+  Asean Free Trade Area
+tentang: PENGESAHAN PROTOCOL TO AMEND THE AGREEMENT ON THE COMMON EFFECTIVE PREFERENTIAL
+  TARIFF (CEPT) SCHEME FOR THE ASEAN FREE TRADE AREA
+short_name: null
+status: null
+tanggal_penetapan: '1995-12-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_85_1995_1995-12-30
+  kind: asli
+  source: dataset
+  date: '1995-12-30'
+  date_basis: tanggal_penetapan
+  text: keppres_85_1995_1995-12-30.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8e19862bcdf8f300973721d061f13592c8269cd689d80779839f03719a493acb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8e19862bcdf8f300973721d061f13592c8269cd689d80779839f03719a493acb
+  source_title: Keputusan_Presiden_no_85_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

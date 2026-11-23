@@ -1,0 +1,39 @@
+id: keppres_4_2017
+akn: /akn/id/act/keppres/2017/4
+type: keppres
+number: '4'
+year: 2017
+title: Keputusan Presiden Nomor 4 Tahun 2017 tentang Susunankeanggotaanotoritas Nasionalsenjata
+  Kimia
+tentang: SUSUNANKEANGGOTAANOTORITAS NASIONALSENJATA KIMIA
+short_name: null
+status: null
+tanggal_penetapan: '2017-02-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_4_2017_2017-02-22
+  kind: asli
+  source: dataset
+  date: '2017-02-22'
+  date_basis: tanggal_penetapan
+  text: keppres_4_2017_2017-02-22.txt
+  pasal_count: 1
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:24d5cd3dcdbb07f9b360cec7fd784a65bac5f28a35d632e4502dfafc822b85ac
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:24d5cd3dcdbb07f9b360cec7fd784a65bac5f28a35d632e4502dfafc822b85ac
+  source_title: Keppres_No_4_Tahun_2017
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

@@ -1,0 +1,42 @@
+id: keppres_34_1991
+akn: /akn/id/act/keppres/1991/34
+type: keppres
+number: '34'
+year: 1991
+title: Keputusan Presiden Nomor 34 Tahun 1991 tentang Tunjangan Jabatan Struktural
+  Di Departemen Pertahanan Keamanan Dan Angkatan Bersenjata Republik Indonesia
+tentang: TUNJANGAN JABATAN STRUKTURAL DI DEPARTEMEN PERTAHANAN KEAMANAN DAN ANGKATAN
+  BERSENJATA REPUBLIK INDONESIA
+short_name: null
+status: diubah
+tanggal_penetapan: '1991-07-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_34_1991_1991-07-26
+  kind: asli
+  source: dataset
+  date: '1991-07-26'
+  date_basis: tanggal_penetapan
+  text: keppres_34_1991_1991-07-26.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:60089cfcd326248bae1d19a9cae18fe98434114b6c4a0cda8c6dd2703084aae7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:60089cfcd326248bae1d19a9cae18fe98434114b6c4a0cda8c6dd2703084aae7
+  source_title: KEPPRES_NO_34_TH_1991
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 29
+  status: amended
+  amended_by:
+  - sha256:448c9e51f0b24acc3f40ab9de3a711dbdbf07607ae797929cab9d53c3a84277e

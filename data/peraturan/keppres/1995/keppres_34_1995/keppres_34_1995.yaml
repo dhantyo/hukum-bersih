@@ -1,0 +1,29 @@
+id: keppres_34_1995
+akn: /akn/id/act/keppres/1995/34
+type: keppres
+number: '34'
+year: 1995
+title: Keputusan Presiden Nomor 34 Tahun 1995
+tentang: null
+short_name: null
+status: dicabut
+tanggal_penetapan: '1995-05-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0a768bf871aa1a47cac46771564f3dd60753fc104695b9908e524029893b9fc7
+  source_title: Keputusan_Presiden_no_34_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: revoked
+  revoked_by:
+  - sha256:1376e206102ed6030987560a06d31e53ded534406f5fbda96bdc63ee680ed2c7
+parse_error: 'v13: no pasal found in the rebuilt text'

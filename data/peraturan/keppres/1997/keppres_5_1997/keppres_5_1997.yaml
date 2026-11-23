@@ -1,0 +1,41 @@
+id: keppres_5_1997
+akn: /akn/id/act/keppres/1997/5
+type: keppres
+number: '5'
+year: 1997
+title: Keputusan Presiden Nomor 5 Tahun 1997 tentang Pengesahan Convention On Registration
+  Of Objects Launched Into Outer Space, 1975 (Konvensi Tentang Registrasi Benda-Benda
+  Yang Diluncurkan Ke Antariksa, 1975)
+tentang: PENGESAHAN CONVENTION ON REGISTRATION OF OBJECTS LAUNCHED INTO OUTER SPACE,
+  1975 (KONVENSI TENTANG REGISTRASI BENDA-BENDA YANG DILUNCURKAN KE ANTARIKSA, 1975)
+short_name: null
+status: null
+tanggal_penetapan: '1997-03-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_5_1997_1997-03-12
+  kind: asli
+  source: dataset
+  date: '1997-03-12'
+  date_basis: tanggal_penetapan
+  text: keppres_5_1997_1997-03-12.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:990fc622b1eb3e6210654a38487ccecc18e3cb6ba8f8274072a235e612c69ebd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:990fc622b1eb3e6210654a38487ccecc18e3cb6ba8f8274072a235e612c69ebd
+  source_title: Keputusan_Presiden_no_05_TH_1997
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 8
+  status: none_known

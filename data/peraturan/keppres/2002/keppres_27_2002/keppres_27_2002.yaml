@@ -1,0 +1,40 @@
+id: keppres_27_2002
+akn: /akn/id/act/keppres/2002/27
+type: keppres
+number: '27'
+year: 2002
+title: Keputusan Presiden Nomor 27 Tahun 2002 tentang Perubahan Atas Keputusan Presiden
+  Nomor 9 Tahun 2002 Tentang Harga Jual Eceran Bahan Bakar Minyak Dalam Negeri
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 9 TAHUN 2002 TENTANG HARGA JUAL ECERAN
+  BAHAN BAKAR MINYAK DALAM NEGERI
+short_name: null
+status: null
+tanggal_penetapan: '2002-04-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_27_2002_2002-04-30
+  kind: asli
+  source: dataset
+  date: '2002-04-30'
+  date_basis: tanggal_penetapan
+  text: keppres_27_2002_2002-04-30.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:025bb99089e9d1316209b37a448d179d18514b25f82cfe79b9c8e20c73de2f1e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:025bb99089e9d1316209b37a448d179d18514b25f82cfe79b9c8e20c73de2f1e
+  source_title: KEPPRES_No.27_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

@@ -1,0 +1,43 @@
+id: keppres_35_2004
+akn: /akn/id/act/keppres/2004/35
+type: keppres
+number: '35'
+year: 2004
+title: Keputusan Presiden Nomor 35 Tahun 2004 tentang Perubahan Atas Keputusan Presiden
+  Nomor 102 Tahun 2001 Tentang Kedudukan, Tugas, Fungsi, Kewenangan, Susunan Organisasi,
+  Dan Tata Kerja Departemen Sebagaimana Telah Beberapa Kali Diubah Terakhir Dengan
+  Keputusan Presiden Nomor 22 Tahun 2004
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 102 TAHUN 2001 TENTANG KEDUDUKAN,
+  TUGAS, FUNGSI, KEWENANGAN, SUSUNAN ORGANISASI, DAN TATA KERJA DEPARTEMEN SEBAGAIMANA
+  TELAH BEBERAPA KALI DIUBAH TERAKHIR DENGAN KEPUTUSAN PRESIDEN NOMOR 22 TAHUN 2004
+short_name: null
+status: null
+tanggal_penetapan: '2004-05-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_35_2004_2004-05-10
+  kind: asli
+  source: dataset
+  date: '2004-05-10'
+  date_basis: tanggal_penetapan
+  text: keppres_35_2004_2004-05-10.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b410d795b4947515cc3c88ccb2cdbea7ea6dd1ddb13724912a8a915f2998bdb3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b410d795b4947515cc3c88ccb2cdbea7ea6dd1ddb13724912a8a915f2998bdb3
+  source_title: KEPPRES_No.35_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

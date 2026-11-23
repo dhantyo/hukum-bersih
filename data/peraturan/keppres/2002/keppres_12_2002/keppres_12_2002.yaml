@@ -1,0 +1,39 @@
+id: keppres_12_2002
+akn: /akn/id/act/keppres/2002/12
+type: keppres
+number: '12'
+year: 2002
+title: Keputusan Presiden Nomor 12 Tahun 2002 tentang Tim Kerja Dalam Rangka Kerja
+  Sama Ekonomi Indonesia-Jepang
+tentang: TIM KERJA DALAM RANGKA KERJA SAMA EKONOMI INDONESIA-JEPANG
+short_name: null
+status: null
+tanggal_penetapan: '2002-03-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_12_2002_2002-03-13
+  kind: asli
+  source: dataset
+  date: '2002-03-13'
+  date_basis: tanggal_penetapan
+  text: keppres_12_2002_2002-03-13.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8f7d8f69af84920ae0b558d621d9c55061f2d429a844c0ae08d9f0edbb9c38ff
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8f7d8f69af84920ae0b558d621d9c55061f2d429a844c0ae08d9f0edbb9c38ff
+  source_title: KEPPRES_No.12_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

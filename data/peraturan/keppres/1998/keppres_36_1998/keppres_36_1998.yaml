@@ -1,0 +1,31 @@
+id: keppres_36_1998
+akn: /akn/id/act/keppres/1998/36
+type: keppres
+number: '36'
+year: 1998
+title: Keputusan Presiden Nomor 36 Tahun 1998 tentang Pemberian Fasilitas Kredit Kepada
+  Anggota Dewan Perwakilan Rakyat Republik Indonesia Untuk Pembelian Kendaraan Perorangan
+tentang: PEMBERIAN FASILITAS KREDIT KEPADA ANGGOTA DEWAN PERWAKILAN RAKYAT REPUBLIK
+  INDONESIA UNTUK PEMBELIAN KENDARAAN PERORANGAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-03-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ba51e79428fc7c3f162eafab9832b52c7549d4f726d1060984b5579ddf114c15
+  source_title: Keputusan_Presiden_no_36_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: revoked
+  revoked_by:
+  - sha256:56eca3c7f72129ad22fff49f67d5578f541a5a56c756e7cae6dd6d2e3bf41f2e
+parse_error: 'v13: rebuilt text has 3 pasal, the dataset lists 4'

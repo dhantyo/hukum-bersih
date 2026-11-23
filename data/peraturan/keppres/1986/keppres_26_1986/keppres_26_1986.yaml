@@ -1,0 +1,39 @@
+id: keppres_26_1986
+akn: /akn/id/act/keppres/1986/26
+type: keppres
+number: '26'
+year: 1986
+title: Keputusan Presiden Nomor 26 Tahun 1986 tentang Pengesahan Asean Agreement On
+  The Conservation Of Nature And Natural Resources
+tentang: PENGESAHAN ASEAN AGREEMENT ON THE CONSERVATION OF NATURE AND NATURAL RESOURCES
+short_name: null
+status: null
+tanggal_penetapan: '1986-06-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_26_1986_1986-06-16
+  kind: asli
+  source: dataset
+  date: '1986-06-16'
+  date_basis: tanggal_penetapan
+  text: keppres_26_1986_1986-06-16.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:72e5212d16e95a33e1d13271f948716672e8156c1b4b384daa49236871f34e45
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:72e5212d16e95a33e1d13271f948716672e8156c1b4b384daa49236871f34e45
+  source_title: KEPPRES_NO_26_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

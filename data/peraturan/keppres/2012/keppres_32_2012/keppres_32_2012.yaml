@@ -1,0 +1,39 @@
+id: keppres_32_2012
+akn: /akn/id/act/keppres/2012/32
+type: keppres
+number: '32'
+year: 2012
+title: Keputusan Presiden Nomor 32 Tahun 2012 tentang Pengukuhan Penetapan Keanggotaan
+  Indonesia Pada Organisasi Internasional
+tentang: PENGUKUHAN PENETAPAN KEANGGOTAAN INDONESIA PADA ORGANISASI INTERNASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2012-10-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_32_2012_2012-10-16
+  kind: asli
+  source: dataset
+  date: '2012-10-16'
+  date_basis: tanggal_penetapan
+  text: keppres_32_2012_2012-10-16.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:93d59c8c740f41c1f0072f1942e57feedc9dcc639f15d7466ed123e8eeeeca82
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:93d59c8c740f41c1f0072f1942e57feedc9dcc639f15d7466ed123e8eeeeca82
+  source_title: Keppres0322012
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

@@ -1,0 +1,38 @@
+id: keppres_110_1999
+akn: /akn/id/act/keppres/1999/110
+type: keppres
+number: '110'
+year: 1999
+title: Keputusan Presiden Nomor 110 Tahun 1999 tentang Dewan Buku Nasional
+tentang: DEWAN BUKU NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '1999-09-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_110_1999_1999-09-13
+  kind: asli
+  source: dataset
+  date: '1999-09-13'
+  date_basis: tanggal_penetapan
+  text: keppres_110_1999_1999-09-13.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:34cac9f4dcdcafba81767d5acfaf30674a9ae88aa615a55bfe7c627f9ffe8def
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:34cac9f4dcdcafba81767d5acfaf30674a9ae88aa615a55bfe7c627f9ffe8def
+  source_title: Keppres_No_110_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

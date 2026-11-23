@@ -1,0 +1,42 @@
+id: keppres_95_1998
+akn: /akn/id/act/keppres/1998/95
+type: keppres
+number: '95'
+year: 1998
+title: Keputusan Presiden Nomor 95 Tahun 1998 tentang Pembentukan Badan Restrukturisasi
+  Utang Luar Negeri Perusahaan Swasta Indonesia (Indonesian Debt Restructuring Agency)
+tentang: PEMBENTUKAN BADAN RESTRUKTURISASI UTANG LUAR NEGERI PERUSAHAAN SWASTA INDONESIA
+  (INDONESIAN DEBT RESTRUCTURING AGENCY)
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-07-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_95_1998_1998-07-02
+  kind: asli
+  source: dataset
+  date: '1998-07-02'
+  date_basis: tanggal_penetapan
+  text: keppres_95_1998_1998-07-02.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6b4403554280aba45ad3458a7c45d692b4d491cec2a595babd6eca593a490fa0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6b4403554280aba45ad3458a7c45d692b4d491cec2a595babd6eca593a490fa0
+  source_title: Keputusan_Presiden_no_95_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: revoked
+  revoked_by:
+  - sha256:ad472bb3db0031c2ca4df4b4d49b316a8f7a657f3449766fdb8bfaf98260e297

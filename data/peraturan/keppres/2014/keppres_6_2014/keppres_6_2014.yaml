@@ -1,0 +1,40 @@
+id: keppres_6_2014
+akn: /akn/id/act/keppres/2014/6
+type: keppres
+number: '6'
+year: 2014
+title: Keputusan Presiden Nomor 6 Tahun 2014 tentang Pembentukanpengadilan Perikanan
+  Danpengadllannegerimerauke Padapengadilan Negeriambon,Pengadilannegeri Sorong Denganrahmattuhanyangmahaesa
+tentang: PEMBENTUKANPENGADILAN PERIKANAN DANPENGADlLANNEGERIMERAUKE PADAPENGADILAN
+  NEGERIAMBON,PENGADILANNEGERI SORONG DENGANRAHMATTUHANYANGMAHAESA
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_6_2014_2014
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: keppres_6_2014_2014.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bb42763d10fd1e53387ee163dabebc6d08e4e02ddf40b9706c1e5c780b4e6ea5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bb42763d10fd1e53387ee163dabebc6d08e4e02ddf40b9706c1e5c780b4e6ea5
+  source_title: Keppres_Nomor_06_Tahun_2014
+  regulation_type: KEPUTUSANPRESIDEN
+  quality: degraded
+  chunks: 9
+  status: none_known

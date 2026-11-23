@@ -1,0 +1,38 @@
+id: keppres_61_1998
+akn: /akn/id/act/keppres/1998/61
+type: keppres
+number: '61'
+year: 1998
+title: Keputusan Presiden Nomor 61 Tahun 1998 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Republik Djibouti Mengenai Kerjasama
+  Ekonomi Dan Teknik
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  REPUBLIK DJIBOUTI MENGENAI KERJASAMA EKONOMI DAN TEKNIK
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-04-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:24695ad0a0e5cd1dde098aad57d74dadf6b708a96cc3922f35fd094128abb109
+  source_title: Keputusan_Presiden_no_61_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: revoked
+  revoked_by:
+  - sha256:eaa87e781d090c9eb04f1afa5dfc8a71b9d6c5f8aabcc5b9b4bc4e5a6cf24bd8
+  amended_by:
+  - sha256:4687f019929a3eefd5718a5727a551b0979c87d3e9fd4aa48777675bf2f0e2c6
+  - sha256:511cd627f928959650846cde0053fc7c94eb131160066b3eb78d08f6c5cb6404
+  - sha256:8aefef116e2b347f7de47939e58faa264f6ce57bfa1a18f28ec471fcf7230ac4
+  - sha256:96f8edfdf6532919e2a61ce59f5dde78e125987b93cb0ed4d828bd5ab41d63fa
+  - sha256:c240e3c71eef5170da907caa2892519737413f5d6e970898030d1c5979688c8c
+parse_error: 'v13: rebuilt text has 2 pasal, the dataset lists 11'

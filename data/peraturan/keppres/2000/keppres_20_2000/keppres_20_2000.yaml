@@ -1,0 +1,39 @@
+id: keppres_20_2000
+akn: /akn/id/act/keppres/2000/20
+type: keppres
+number: '20'
+year: 2000
+title: Keputusan Presiden Nomor 20 Tahun 2000 tentang Badan Koordinasi Keluarga Berencana
+  Nasional
+tentang: BADAN KOORDINASI KELUARGA BERENCANA NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_20_2000_2000
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: keppres_20_2000_2000.txt
+  pasal_count: 33
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c0f3b3ecb0e77f08b629a0da48ca0981f7c9c049c87c21a0c9ae547dfd0ef7fc
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c0f3b3ecb0e77f08b629a0da48ca0981f7c9c049c87c21a0c9ae547dfd0ef7fc
+  source_title: Keputusan_Presiden_no_20_th_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 47
+  status: none_known

@@ -1,0 +1,41 @@
+id: keppres_101_2000
+akn: /akn/id/act/keppres/2000/101
+type: keppres
+number: '101'
+year: 2000
+title: Keputusan Presiden Nomor 101 Tahun 2000 tentang Perubahan Atas Keputusan Presiden
+  Nomor 23 Tahun 1995 Tentang Tunjangan Tenaga Kependidikan Sebagaimana Telah Diubah
+  Dengan Keputusan Presiden Nomor 9 Tahun 1997
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 23 TAHUN 1995 TENTANG TUNJANGAN TENAGA
+  KEPENDIDIKAN SEBAGAIMANA TELAH DIUBAH DENGAN KEPUTUSAN PRESIDEN NOMOR 9 TAHUN 1997
+short_name: null
+status: null
+tanggal_penetapan: '2000-07-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_101_2000_2000-07-26
+  kind: asli
+  source: dataset
+  date: '2000-07-26'
+  date_basis: tanggal_penetapan
+  text: keppres_101_2000_2000-07-26.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:75f57e586c7f8b2056b9f581caafd91e3edc58e25e4eb898f41cf29259b2d029
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:75f57e586c7f8b2056b9f581caafd91e3edc58e25e4eb898f41cf29259b2d029
+  source_title: Keputusan_Presiden_no_101_th_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: none_known

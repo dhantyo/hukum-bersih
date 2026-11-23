@@ -1,0 +1,40 @@
+id: keppres_7_2000
+akn: /akn/id/act/keppres/2000/7
+type: keppres
+number: '7'
+year: 2000
+title: Keputusan Presiden Nomor 7 Tahun 2000 tentang Perubahan Atas Keputusan Presiden
+  Nomor 153 Tahun 1999 Tentang Badan Informasi Dan Komunikasi Nasional
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 153 TAHUN 1999 TENTANG BADAN INFORMASI
+  DAN KOMUNIKASI NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2000-01-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_7_2000_2000-01-19
+  kind: asli
+  source: dataset
+  date: '2000-01-19'
+  date_basis: tanggal_penetapan
+  text: keppres_7_2000_2000-01-19.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:08ede6d6ac8844b28d491c8aca42badc95bc05cc34ed064ffc71cb326061d7d4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:08ede6d6ac8844b28d491c8aca42badc95bc05cc34ed064ffc71cb326061d7d4
+  source_title: Keputusan_Presiden_no_7_TH_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

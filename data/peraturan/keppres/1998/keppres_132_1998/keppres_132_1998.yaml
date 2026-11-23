@@ -1,0 +1,38 @@
+id: keppres_132_1998
+akn: /akn/id/act/keppres/1998/132
+type: keppres
+number: '132'
+year: 1998
+title: Keputusan Presiden Nomor 132 Tahun 1998
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_132_1998_1998
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: keppres_132_1998_1998.txt
+  pasal_count: 1
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:18afe7aaef77a0b7b5142e6938bffd5d9770b6d03576a1c8058d87bca1a87aeb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:18afe7aaef77a0b7b5142e6938bffd5d9770b6d03576a1c8058d87bca1a87aeb
+  source_title: Keputusan_Presiden_no_132_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 3
+  status: none_known

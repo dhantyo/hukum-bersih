@@ -1,0 +1,38 @@
+id: keppres_77_1999
+akn: /akn/id/act/keppres/1999/77
+type: keppres
+number: '77'
+year: 1999
+title: Keputusan Presiden Nomor 77 Tahun 1999 tentang Lembaga Sandi Negara
+tentang: LEMBAGA SANDI NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '1999-07-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_77_1999_1999-07-09
+  kind: asli
+  source: dataset
+  date: '1999-07-09'
+  date_basis: tanggal_penetapan
+  text: keppres_77_1999_1999-07-09.txt
+  pasal_count: 23
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:38273b9cf3637d9a9e457f405b8784d115c0bf2fa0b14554f680c0bb9a5a2ef7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:38273b9cf3637d9a9e457f405b8784d115c0bf2fa0b14554f680c0bb9a5a2ef7
+  source_title: Keppres_No_77_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 53
+  status: none_known

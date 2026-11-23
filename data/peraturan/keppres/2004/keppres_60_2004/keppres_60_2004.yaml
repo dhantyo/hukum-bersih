@@ -1,0 +1,41 @@
+id: keppres_60_2004
+akn: /akn/id/act/keppres/2004/60
+type: keppres
+number: '60'
+year: 2004
+title: Keputusan Presiden Nomor 60 Tahun 2004 tentang Peningkatan Status Kantor Urusan
+  Kepentingan Republik Indonesia Menjadi Kedutaan Besar Republik Indonesia Di Dili,
+  Republik Demokratik Timor Leste
+tentang: PENINGKATAN STATUS KANTOR URUSAN KEPENTINGAN REPUBLIK INDONESIA MENJADI KEDUTAAN
+  BESAR REPUBLIK INDONESIA DI DILI, REPUBLIK DEMOKRATIK TIMOR LESTE
+short_name: null
+status: null
+tanggal_penetapan: '2004-07-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_60_2004_2004-07-26
+  kind: asli
+  source: dataset
+  date: '2004-07-26'
+  date_basis: tanggal_penetapan
+  text: keppres_60_2004_2004-07-26.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:798842ef80d519acaee0428a72509149f7adf7ee4efc18ed67e2d05095e81bd1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:798842ef80d519acaee0428a72509149f7adf7ee4efc18ed67e2d05095e81bd1
+  source_title: KEPPRES_No.60_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

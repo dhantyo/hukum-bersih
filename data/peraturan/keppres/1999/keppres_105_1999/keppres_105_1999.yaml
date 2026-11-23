@@ -1,0 +1,41 @@
+id: keppres_105_1999
+akn: /akn/id/act/keppres/1999/105
+type: keppres
+number: '105'
+year: 1999
+title: Keputusan Presiden Nomor 105 Tahun 1999 tentang Komite Nasional Keselamatan
+  Transportasi
+tentang: KOMITE NASIONAL KESELAMATAN TRANSPORTASI
+short_name: null
+status: dicabut
+tanggal_penetapan: '1999-09-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_105_1999_1999-09-01
+  kind: asli
+  source: dataset
+  date: '1999-09-01'
+  date_basis: tanggal_penetapan
+  text: keppres_105_1999_1999-09-01.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fd983c4e599573d515d9ce879df57200735aac1c04af6de942735fa8df648452
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fd983c4e599573d515d9ce879df57200735aac1c04af6de942735fa8df648452
+  source_title: Keppres_No_105_Tahun_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:578418fc3f78c4e401b916282106d9de9781009bebf82b34cb6479af9ef18a2a

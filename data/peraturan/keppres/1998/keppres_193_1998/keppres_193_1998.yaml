@@ -1,0 +1,41 @@
+id: keppres_193_1998
+akn: /akn/id/act/keppres/1998/193
+type: keppres
+number: '193'
+year: 1998
+title: Keputusan Presiden Nomor 193 Tahun 1998 tentang Jaminan Terhadap Kewajiban
+  Pembayaran Bank Perkreditan Rakyat
+tentang: JAMINAN TERHADAP KEWAJIBAN PEMBAYARAN BANK PERKREDITAN RAKYAT
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-11-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_193_1998_1998-11-13
+  kind: asli
+  source: dataset
+  date: '1998-11-13'
+  date_basis: tanggal_penetapan
+  text: keppres_193_1998_1998-11-13.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fbd506addc4f8bf4376acb405c6b3ebe69d6ca1b1fedf11e9f0e62814c9f21c3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fbd506addc4f8bf4376acb405c6b3ebe69d6ca1b1fedf11e9f0e62814c9f21c3
+  source_title: Keputusan_Presiden_no_193_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: revoked
+  revoked_by:
+  - sha256:0d259beabf8be713e72574b5c47848b4ad68d5b41fe357e1cb71c94f8f66c48d

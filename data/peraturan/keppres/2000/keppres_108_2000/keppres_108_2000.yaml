@@ -1,0 +1,39 @@
+id: keppres_108_2000
+akn: /akn/id/act/keppres/2000/108
+type: keppres
+number: '108'
+year: 2000
+title: Keputusan Presiden Nomor 108 Tahun 2000 tentang Pendirian Sekolah Tinggi Agama
+  Kristen Protestan Negeri
+tentang: PENDIRIAN SEKOLAH TINGGI AGAMA KRISTEN PROTESTAN NEGERI
+short_name: null
+status: null
+tanggal_penetapan: '2000-07-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_108_2000_2000-07-26
+  kind: asli
+  source: dataset
+  date: '2000-07-26'
+  date_basis: tanggal_penetapan
+  text: keppres_108_2000_2000-07-26.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ff5775f5522249603ab6278e509f7aefd0e30fac35029dfb5260a292ee8d866a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ff5775f5522249603ab6278e509f7aefd0e30fac35029dfb5260a292ee8d866a
+  source_title: Keputusan_Presiden_no_108_TH_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

@@ -1,0 +1,41 @@
+id: keppres_28_2005
+akn: /akn/id/act/keppres/2005/28
+type: keppres
+number: '28'
+year: 2005
+title: Keputusan Presiden Nomor 28 Tahun 2005 tentang Pembentukan Tim Nasional Untuk
+  Perundingan Perdagangan Internasional
+tentang: PEMBENTUKAN TIM NASIONAL UNTUK PERUNDINGAN PERDAGANGAN INTERNASIONAL
+short_name: null
+status: diubah
+tanggal_penetapan: '2005-10-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_28_2005_2005-10-18
+  kind: asli
+  source: dataset
+  date: '2005-10-18'
+  date_basis: tanggal_penetapan
+  text: keppres_28_2005_2005-10-18.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:15b089d1581060b3adc5c2d098dca61bccb528e38b5f8f5ad184a82157e6234a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:15b089d1581060b3adc5c2d098dca61bccb528e38b5f8f5ad184a82157e6234a
+  source_title: KEPPRES_NO_28_TH_2005
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 19
+  status: amended
+  amended_by:
+  - sha256:dcceab499dd74e455e559f52b06f0e9f28d7e7981491ccf38927e9b49436536f

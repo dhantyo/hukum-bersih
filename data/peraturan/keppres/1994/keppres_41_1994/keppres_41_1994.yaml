@@ -1,0 +1,45 @@
+id: keppres_41_1994
+akn: /akn/id/act/keppres/1994/41
+type: keppres
+number: '41'
+year: 1994
+title: Keputusan Presiden Nomor 41 Tahun 1994 tentang Perubahan Atas Keputusan Presiden
+  Nomor 18 Tahun 1986 Tentang Pajak Pertambahan Nilai Yang Terutang Atas Impor Dan
+  Penyerahan Barang Kena Pajak Dan Jasa Kena Pajak Tertentu Yang Ditanggung Oleh Pemerintah
+  Sebagaimana Telah Beberapa Kali Diubah Terakhir Dengan Keputusan Presiden Nomor
+  59 Tahun 1988
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 18 TAHUN 1986 TENTANG PAJAK PERTAMBAHAN
+  NILAI YANG TERUTANG ATAS IMPOR DAN PENYERAHAN BARANG KENA PAJAK DAN JASA KENA PAJAK
+  TERTENTU YANG DITANGGUNG OLEH PEMERINTAH SEBAGAIMANA TELAH BEBERAPA KALI DIUBAH
+  TERAKHIR DENGAN KEPUTUSAN PRESIDEN NOMOR 59 TAHUN 1988
+short_name: null
+status: null
+tanggal_penetapan: '1994-06-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_41_1994_1994-06-02
+  kind: asli
+  source: dataset
+  date: '1994-06-02'
+  date_basis: tanggal_penetapan
+  text: keppres_41_1994_1994-06-02.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:cf17d4839a5f8706558ad17b767c6256b1e9969e91e37499675311a88617ad3e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:cf17d4839a5f8706558ad17b767c6256b1e9969e91e37499675311a88617ad3e
+  source_title: Keputusan_Presiden_no_41_TH_1994
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

@@ -1,0 +1,42 @@
+id: keppres_54_2002
+akn: /akn/id/act/keppres/2002/54
+type: keppres
+number: '54'
+year: 2002
+title: Keputusan Presiden Nomor 54 Tahun 2002 tentang Tim Koordinasi Peningkatan Kelancaran
+  Arus Barang Ekspor Dan Impor
+tentang: TIM KOORDINASI PENINGKATAN KELANCARAN ARUS BARANG EKSPOR DAN IMPOR
+short_name: null
+status: diubah
+tanggal_penetapan: '2002-07-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_54_2002_2002-07-23
+  kind: asli
+  source: dataset
+  date: '2002-07-23'
+  date_basis: tanggal_penetapan
+  text: keppres_54_2002_2002-07-23.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:090f0671e5597b654e345cf3f0e317f9fd21f2becf90d9e115fc7abfe503ca7c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:090f0671e5597b654e345cf3f0e317f9fd21f2becf90d9e115fc7abfe503ca7c
+  source_title: KEPPRES_No.54_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: amended
+  amended_by:
+  - sha256:880c29abab0617368c0806986f78c329bc31b4dd45e9dde31467531621e34ca2
+  - sha256:bb2bdbb3f1810905b2a4bae9249673b34d452c31239ff40fc9d565df822c693a

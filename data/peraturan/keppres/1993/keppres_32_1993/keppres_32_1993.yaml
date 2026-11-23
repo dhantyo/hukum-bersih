@@ -1,0 +1,31 @@
+id: keppres_32_1993
+akn: /akn/id/act/keppres/1993/32
+type: keppres
+number: '32'
+year: 1993
+title: Keputusan Presiden Nomor 32 Tahun 1993 tentang Tim Koordinasi Pembangunan Propinsi
+  Riau
+tentang: TIM KOORDINASI PEMBANGUNAN PROPINSI RIAU
+short_name: null
+status: diubah
+tanggal_penetapan: '1993-05-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7c01d529accfd358ddf1113105b3feb9d14e5562fa09751b04527e1227161d0a
+  source_title: Keputusan_Presiden_no_32_TH_1993
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: amended
+  amended_by:
+  - sha256:b19cd615d12b1d43b6b39ba89e50e41d27b8a4fc8de5ab105a11d85b366dcb6a
+  - sha256:d00f285aa930fc2f91a176a4d66d9e0358193e9d2acc8504c77f3ed34187e519
+parse_error: 'v13: no pasal found in the rebuilt text'

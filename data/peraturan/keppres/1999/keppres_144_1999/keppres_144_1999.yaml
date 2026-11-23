@@ -1,0 +1,29 @@
+id: keppres_144_1999
+akn: /akn/id/act/keppres/1999/144
+type: keppres
+number: '144'
+year: 1999
+title: Keputusan Presiden Nomor 144 Tahun 1999 tentang Dewan Ekonomi Nasional
+tentang: DEWAN EKONOMI NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '1999-11-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:13f44259ea336d1b905fa17e9efaeb5b611cee5ab53c599ce1d76e7eab11fcba
+  source_title: Keppres_No_144_Tahun_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:d249582284b0e062c4f44abe147b967a82c121e86019e247566586926c746372
+parse_error: 'v13: rebuilt text has 8 pasal, the dataset lists 9'

@@ -1,0 +1,30 @@
+id: keppres_75_1995
+akn: /akn/id/act/keppres/1995/75
+type: keppres
+number: '75'
+year: 1995
+title: Keputusan Presiden Nomor 75 Tahun 1995 tentang Penggunaan Tenaga Kerja Warga
+  Negara Asing Pendatang
+tentang: PENGGUNAAN TENAGA KERJA WARGA NEGARA ASING PENDATANG
+short_name: null
+status: dicabut
+tanggal_penetapan: '1995-11-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4e1578a473e46c157067f2259da2260238d509fb2432ebffabb6f23982d446cc
+  source_title: Keputusan_Presiden_no_75_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:e955bb2850302bd9f39ea4f583a19222463764e448b4ce7886edff53e19bd7e3
+parse_error: 'v13: rebuilt text has 5 pasal, the dataset lists 11'

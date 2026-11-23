@@ -1,0 +1,43 @@
+id: keppres_103_2004
+akn: /akn/id/act/keppres/2004/103
+type: keppres
+number: '103'
+year: 2004
+title: Keputusan Presiden Nomor 103 Tahun 2004 tentang Perubahan Susunan Keanggotaan
+  Badan Amil Zakat Nasional Sebagaimana Dimaksud Dalam Keputusan Presiden Nomor 8
+  Tahun 2001 Tentang Badan Amil Zakat Nasional
+tentang: PERUBAHAN SUSUNAN KEANGGOTAAN BADAN AMIL ZAKAT NASIONAL SEBAGAIMANA DIMAKSUD
+  DALAM KEPUTUSAN PRESIDEN NOMOR 8 TAHUN 2001 TENTANG BADAN AMIL ZAKAT NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2004-10-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_103_2004_2004-10-18
+  kind: asli
+  source: dataset
+  date: '2004-10-18'
+  date_basis: tanggal_penetapan
+  text: keppres_103_2004_2004-10-18.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b76d0061a593a8bd4f06657ff783331953c618e814a3fdcf2963d45cc40d1527
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b76d0061a593a8bd4f06657ff783331953c618e814a3fdcf2963d45cc40d1527
+  source_title: KEPPRES_No.103_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 7
+  status: revoked
+  revoked_by:
+  - sha256:d6a1af335adc0858913cbb3ac5db4563001d3db36145dad105e86ab0d06fc2db

@@ -1,0 +1,41 @@
+id: keppres_48_1995
+akn: /akn/id/act/keppres/1995/48
+type: keppres
+number: '48'
+year: 1995
+title: Keputusan Presiden Nomor 48 Tahun 1995 tentang Tunjangan Bahaya Radiasi Bagi
+  Pekerja Radiasi
+tentang: TUNJANGAN BAHAYA RADIASI BAGI PEKERJA RADIASI
+short_name: null
+status: dicabut
+tanggal_penetapan: '1995-07-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_48_1995_1995-07-12
+  kind: asli
+  source: dataset
+  date: '1995-07-12'
+  date_basis: tanggal_penetapan
+  text: keppres_48_1995_1995-07-12.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c4abc4c2aa8593ef330e72c1e5bfed94165d858c48a7f46379e8adfc0fc74e9c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c4abc4c2aa8593ef330e72c1e5bfed94165d858c48a7f46379e8adfc0fc74e9c
+  source_title: Keputusan_Presiden_no_48_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:395f531c930a2190af0ad411f526175847fc6c2d5aa8356db143c53c007f87e2

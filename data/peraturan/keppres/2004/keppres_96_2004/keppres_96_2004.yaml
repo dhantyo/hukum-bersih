@@ -1,0 +1,38 @@
+id: keppres_96_2004
+akn: /akn/id/act/keppres/2004/96
+type: keppres
+number: '96'
+year: 2004
+title: Keputusan Presiden Nomor 96 Tahun 2004
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '2004-10-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_96_2004_2004-10-18
+  kind: asli
+  source: dataset
+  date: '2004-10-18'
+  date_basis: tanggal_penetapan
+  text: keppres_96_2004_2004-10-18.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b2dbac23fd3150affdeaa2d04ce819c355480c1b9c4250c1a799c6eed89bc296
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b2dbac23fd3150affdeaa2d04ce819c355480c1b9c4250c1a799c6eed89bc296
+  source_title: KEPPRES_No.96_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: none_known

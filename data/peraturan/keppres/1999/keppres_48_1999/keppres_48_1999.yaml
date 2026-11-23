@@ -1,0 +1,40 @@
+id: keppres_48_1999
+akn: /akn/id/act/keppres/1999/48
+type: keppres
+number: '48'
+year: 1999
+title: Keputusan Presiden Nomor 48 Tahun 1999 tentang Tim Pengkajian Kebijaksanaan
+  Dan Peraturan Perundang-Undangan Dalam Rangka Pelaksanaan Landreform
+tentang: TIM PENGKAJIAN KEBIJAKSANAAN DAN PERATURAN PERUNDANG-UNDANGAN DALAM RANGKA
+  PELAKSANAAN LANDREFORM
+short_name: null
+status: null
+tanggal_penetapan: '1999-05-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_48_1999_1999-05-27
+  kind: asli
+  source: dataset
+  date: '1999-05-27'
+  date_basis: tanggal_penetapan
+  text: keppres_48_1999_1999-05-27.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:90b9d75d0d2d38c9dd998e99d811c9a6fa9bb12f7669c9652d89f2f13d3785b5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:90b9d75d0d2d38c9dd998e99d811c9a6fa9bb12f7669c9652d89f2f13d3785b5
+  source_title: Keppres_No_48_Tahun_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

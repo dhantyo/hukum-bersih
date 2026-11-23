@@ -1,0 +1,40 @@
+id: keppres_53_1999
+akn: /akn/id/act/keppres/1999/53
+type: keppres
+number: '53'
+year: 1999
+title: Keputusan Presiden Nomor 53 Tahun 1999 tentang Penetapan Hari Pemungutan Suara
+  Pemilihan Umum Tahun 1999 Sebagai Hari Libur Nasional
+tentang: PENETAPAN HARI PEMUNGUTAN SUARA PEMILIHAN UMUM TAHUN 1999 SEBAGAI HARI LIBUR
+  NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '1999-06-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_53_1999_1999-06-03
+  kind: asli
+  source: dataset
+  date: '1999-06-03'
+  date_basis: tanggal_penetapan
+  text: keppres_53_1999_1999-06-03.txt
+  pasal_count: 1
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:72adb095435a9324996ccedf06675c288a6c38aa4356baf754e7e36faa636040
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:72adb095435a9324996ccedf06675c288a6c38aa4356baf754e7e36faa636040
+  source_title: Keppres_No_53_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

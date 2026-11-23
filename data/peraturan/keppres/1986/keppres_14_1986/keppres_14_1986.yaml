@@ -1,0 +1,40 @@
+id: keppres_14_1986
+akn: /akn/id/act/keppres/1986/14
+type: keppres
+number: '14'
+year: 1986
+title: Keputusan Presiden Nomor 14 Tahun 1986 tentang Pengesahan Convention On The
+  International Maritime Satellite Organization (Inmarsat)
+tentang: PENGESAHAN CONVENTION ON THE INTERNATIONAL MARITIME SATELLITE ORGANIZATION
+  (INMARSAT)
+short_name: null
+status: null
+tanggal_penetapan: '1986-04-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_14_1986_1986-04-21
+  kind: asli
+  source: dataset
+  date: '1986-04-21'
+  date_basis: tanggal_penetapan
+  text: keppres_14_1986_1986-04-21.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:eb634f010d775c055b90ceacda66b93481dab45e6c9da31f0a3c2e0125692bf0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:eb634f010d775c055b90ceacda66b93481dab45e6c9da31f0a3c2e0125692bf0
+  source_title: KEPPRES_NO_14_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 7
+  status: none_known

@@ -1,0 +1,41 @@
+id: keppres_81_2001
+akn: /akn/id/act/keppres/2001/81
+type: keppres
+number: '81'
+year: 2001
+title: Keputusan Presiden Nomor 81 Tahun 2001 tentang Komite Kebijakan Percepatan
+  Pembangunan Infrastruktur
+tentang: KOMITE KEBIJAKAN PERCEPATAN PEMBANGUNAN INFRASTRUKTUR
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-06-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_81_2001_2001-06-21
+  kind: asli
+  source: dataset
+  date: '2001-06-21'
+  date_basis: tanggal_penetapan
+  text: keppres_81_2001_2001-06-21.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f4dc147fc1f951da61ccae38160ee4be9db6fe32db02ad343592bb8ee84d1a8d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f4dc147fc1f951da61ccae38160ee4be9db6fe32db02ad343592bb8ee84d1a8d
+  source_title: Keputusan_Presiden_no_81_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:01b20c4ae6594f4b541c9b6ed0b5eb85ec39ff0e7601fc2037236d7d95acfbe3

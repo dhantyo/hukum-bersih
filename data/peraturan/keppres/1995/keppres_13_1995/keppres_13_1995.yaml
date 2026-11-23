@@ -1,0 +1,45 @@
+id: keppres_13_1995
+akn: /akn/id/act/keppres/1995/13
+type: keppres
+number: '13'
+year: 1995
+title: Keputusan Presiden Nomor 13 Tahun 1995 tentang Bea Masuk, Bea Masuk Tambahan,
+  Pajak Pertambahan Nilai Dan Pajak Penjualan Atas Barang Mewah, Dan Pajak Penghasilan
+  Dalam Rangka Pelaksanaan Proyek Pemerintah Yang Dibiayai Dengan Dana Pinjaman Luar
+  Negeri
+tentang: BEA MASUK, BEA MASUK TAMBAHAN, PAJAK PERTAMBAHAN NILAI DAN PAJAK PENJUALAN
+  ATAS BARANG MEWAH, DAN PAJAK PENGHASILAN DALAM RANGKA PELAKSANAAN PROYEK PEMERINTAH
+  YANG DIBIAYAI DENGAN DANA PINJAMAN LUAR NEGERI
+short_name: null
+status: dicabut
+tanggal_penetapan: '1995-02-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_13_1995_1995-02-27
+  kind: asli
+  source: dataset
+  date: '1995-02-27'
+  date_basis: tanggal_penetapan
+  text: keppres_13_1995_1995-02-27.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7dfe4a2b97612d2bcad37ca03a50457d3b4d73ad816ceb28e3171e2dfc1eb7cb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7dfe4a2b97612d2bcad37ca03a50457d3b4d73ad816ceb28e3171e2dfc1eb7cb
+  source_title: Keputusan_Presiden_no_13_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:40d358752c9422e88b56807f7bb2e5b6787a135b735d77182cbf5788d39a6ad5

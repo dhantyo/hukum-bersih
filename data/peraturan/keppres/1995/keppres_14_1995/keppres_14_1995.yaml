@@ -1,0 +1,44 @@
+id: keppres_14_1995
+akn: /akn/id/act/keppres/1995/14
+type: keppres
+number: '14'
+year: 1995
+title: Keputusan Presiden Nomor 14 Tahun 1995 tentang Pengembangan Proyek Natuna
+tentang: PENGEMBANGAN PROYEK NATUNA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1995-03-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_14_1995_1995-03-01
+  kind: asli
+  source: dataset
+  date: '1995-03-01'
+  date_basis: tanggal_penetapan
+  text: keppres_14_1995_1995-03-01.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3d43d15e7d7e2cb7d5dd6ac12f031a3cef7c4026679cf3acb9ae93b1a07924b1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3d43d15e7d7e2cb7d5dd6ac12f031a3cef7c4026679cf3acb9ae93b1a07924b1
+  source_title: Keputusan_Presiden_no_14_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:5c6c8e006a0baab1b47be9d4b56475a085ca4d7e1166539695ea9a305b82c181
+  amended_by:
+  - sha256:b11ccdb9833c354ec373d74db712707c42465c6d280b7bec812c371601941d5d
+  - sha256:c69cf21a5a4487b8dadcc6b8435385d79af6d2495a2a05dc27a86ff218864637
+  - sha256:c878eaffeee4433c9082b71ca0a9dd5804bb16a414a484d2ac93c0ab276ec87d

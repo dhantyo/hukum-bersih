@@ -1,0 +1,39 @@
+id: keppres_68_1998
+akn: /akn/id/act/keppres/1998/68
+type: keppres
+number: '68'
+year: 1998
+title: Keputusan Presiden Nomor 68 Tahun 1998 tentang Pembinaan Kursus Dan Lembaga
+  Pelatihan Kerja
+tentang: PEMBINAAN KURSUS DAN LEMBAGA PELATIHAN KERJA
+short_name: null
+status: null
+tanggal_penetapan: '1998-05-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_68_1998_1998-05-02
+  kind: asli
+  source: dataset
+  date: '1998-05-02'
+  date_basis: tanggal_penetapan
+  text: keppres_68_1998_1998-05-02.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fba5df0ec3876bedfccf2cae52e1a8be1c42fcae4ed129deca2257c442a121af
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fba5df0ec3876bedfccf2cae52e1a8be1c42fcae4ed129deca2257c442a121af
+  source_title: Keputusan_Presiden_no_68_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 9
+  status: none_known

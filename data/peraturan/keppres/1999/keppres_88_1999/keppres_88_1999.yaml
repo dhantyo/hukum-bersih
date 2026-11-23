@@ -1,0 +1,39 @@
+id: keppres_88_1999
+akn: /akn/id/act/keppres/1999/88
+type: keppres
+number: '88'
+year: 1999
+title: Keputusan Presiden Nomor 88 Tahun 1999 tentang Komisi Independen Pengusutan
+  Tindak Kekerasan Di Aceh Presiden Republik Indonesia
+tentang: KOMISI INDEPENDEN PENGUSUTAN TINDAK KEKERASAN DI ACEH PRESIDEN REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '1999-07-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_88_1999_1999-07-30
+  kind: asli
+  source: dataset
+  date: '1999-07-30'
+  date_basis: tanggal_penetapan
+  text: keppres_88_1999_1999-07-30.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:13fc9b4471cd0f9dfe698aebab24b7ba4acb7e0a986aa3990f109721f8e6e552
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:13fc9b4471cd0f9dfe698aebab24b7ba4acb7e0a986aa3990f109721f8e6e552
+  source_title: Keppres_No_88_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 18
+  status: none_known

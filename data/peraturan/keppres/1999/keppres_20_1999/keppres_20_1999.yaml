@@ -1,0 +1,39 @@
+id: keppres_20_1999
+akn: /akn/id/act/keppres/1999/20
+type: keppres
+number: '20'
+year: 1999
+title: Keputusan Presiden Nomor 20 Tahun 1999 tentang Pendirian Sekolah Tinggi Agama
+  Hindu Negeri
+tentang: PENDIRIAN SEKOLAH TINGGI AGAMA HINDU NEGERI
+short_name: null
+status: null
+tanggal_penetapan: '1999-03-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_20_1999_1999-03-03
+  kind: asli
+  source: dataset
+  date: '1999-03-03'
+  date_basis: tanggal_penetapan
+  text: keppres_20_1999_1999-03-03.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:05f6c8fe1f41fa07edf59d68a30eeb2f8d47fbf5b163f82c3576a326c6f7b816
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:05f6c8fe1f41fa07edf59d68a30eeb2f8d47fbf5b163f82c3576a326c6f7b816
+  source_title: Keppres_No_20_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

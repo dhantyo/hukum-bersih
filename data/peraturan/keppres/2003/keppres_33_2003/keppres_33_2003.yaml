@@ -1,0 +1,39 @@
+id: keppres_33_2003
+akn: /akn/id/act/keppres/2003/33
+type: keppres
+number: '33'
+year: 2003
+title: Keputusan Presiden Nomor 33 Tahun 2003 tentang Pendirian Institut Seni Indonesia
+  Denpasar
+tentang: PENDIRIAN INSTITUT SENI INDONESIA DENPASAR
+short_name: null
+status: null
+tanggal_penetapan: '2003-05-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_33_2003_2003-05-26
+  kind: asli
+  source: dataset
+  date: '2003-05-26'
+  date_basis: tanggal_penetapan
+  text: keppres_33_2003_2003-05-26.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:eb563ec81edb61d00e960e456d8ed804ab89c82206fc8593b035530eb0e90b26
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:eb563ec81edb61d00e960e456d8ed804ab89c82206fc8593b035530eb0e90b26
+  source_title: KEPPRES_No.33_TH_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

@@ -1,0 +1,38 @@
+id: keppres_4_1994
+akn: /akn/id/act/keppres/1994/4
+type: keppres
+number: '4'
+year: 1994
+title: Keputusan Presiden Nomor 4 Tahun 1994 tentang Lembaga Ketahanan Nasional
+tentang: LEMBAGA KETAHANAN NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '1994-02-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_4_1994_1994-02-01
+  kind: asli
+  source: dataset
+  date: '1994-02-01'
+  date_basis: tanggal_penetapan
+  text: keppres_4_1994_1994-02-01.txt
+  pasal_count: 23
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1a873023c2da108bfaf20263a3c516bcfaba5223675ed66493623b4b31e2c4c9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1a873023c2da108bfaf20263a3c516bcfaba5223675ed66493623b4b31e2c4c9
+  source_title: Keputusan_Presiden_no_04_TH_1994
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 26
+  status: none_known

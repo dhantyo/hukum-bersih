@@ -1,0 +1,40 @@
+id: keppres_115_1998
+akn: /akn/id/act/keppres/1998/115
+type: keppres
+number: '115'
+year: 1998
+title: Keputusan Presiden Nomor 115 Tahun 1998 tentang Perubahan Atas Keputusan Presiden
+  Nomor 97 Tahun 1993 Tentang Tata Cara Penanaman Modal
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 97 TAHUN 1993 TENTANG TATA CARA PENANAMAN
+  MODAL
+short_name: null
+status: null
+tanggal_penetapan: '1998-07-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_115_1998_1998-07-28
+  kind: asli
+  source: dataset
+  date: '1998-07-28'
+  date_basis: tanggal_penetapan
+  text: keppres_115_1998_1998-07-28.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2e659f3f1beeb78f9b98eddd06c1994f052330c44c03fc2c168206a5c886a2b9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2e659f3f1beeb78f9b98eddd06c1994f052330c44c03fc2c168206a5c886a2b9
+  source_title: Keputusan_Presiden_no_115_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

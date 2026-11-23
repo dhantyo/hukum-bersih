@@ -1,0 +1,43 @@
+id: keppres_50_2003
+akn: /akn/id/act/keppres/2003/50
+type: keppres
+number: '50'
+year: 2003
+title: Keputusan Presiden Nomor 50 Tahun 2003 tentang Tunjangan Jabatan Fungsional
+  Penyuluh Perindustrian Dan Perdagangan, Penguji Mutu Barang, Dan Penera
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENYULUH PERINDUSTRIAN DAN PERDAGANGAN, PENGUJI
+  MUTU BARANG, DAN PENERA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2003-07-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_50_2003_2003-07-08
+  kind: asli
+  source: dataset
+  date: '2003-07-08'
+  date_basis: tanggal_penetapan
+  text: keppres_50_2003_2003-07-08.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e2a6d709de8de15baf88a38a8fabfb58ada07cc19b81d3e0cde6ca100738ffc9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e2a6d709de8de15baf88a38a8fabfb58ada07cc19b81d3e0cde6ca100738ffc9
+  source_title: Keputusan_Presiden_no_50_th_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:3b1e9b4fd1b45148de6b1810d579f2be3294ab660e7a344e94697a54079cb4e9
+  - sha256:4869ed0ff76cfac37fbe539620da0856d8bf8ed8a5fcf277570123bd8933cdb5

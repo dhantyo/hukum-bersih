@@ -1,0 +1,40 @@
+id: keppres_40_1997
+akn: /akn/id/act/keppres/1997/40
+type: keppres
+number: '40'
+year: 1997
+title: Keputusan Presiden Nomor 40 Tahun 1997 tentang Badan Pengendali Bimbingan Massal
+tentang: BADAN PENGENDALI BIMBINGAN MASSAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '1997-09-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_40_1997_1997-09-20
+  kind: asli
+  source: dataset
+  date: '1997-09-20'
+  date_basis: tanggal_penetapan
+  text: keppres_40_1997_1997-09-20.txt
+  pasal_count: 32
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7ef723f8272f2ffbc1e5da51ca3eb326ebe91e97481b02d777a98d3d3e7c9ac7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7ef723f8272f2ffbc1e5da51ca3eb326ebe91e97481b02d777a98d3d3e7c9ac7
+  source_title: Keputusan_Presiden_no_40_Th_1997
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 41
+  status: revoked
+  revoked_by:
+  - sha256:3582cad4deb705e7e94afaa14149205f5be03b863bee42de40087cceb776e9ba

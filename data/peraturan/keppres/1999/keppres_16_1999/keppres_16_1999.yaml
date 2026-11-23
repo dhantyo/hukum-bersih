@@ -1,0 +1,42 @@
+id: keppres_16_1999
+akn: /akn/id/act/keppres/1999/16
+type: keppres
+number: '16'
+year: 1999
+title: Keputusan Presiden Nomor 16 Tahun 1999 tentang Pembentukan Komisi Pemilihan
+  Umum Dan Penetapan Organisasi Dan Tata Kerja Sekretariat Umum Komisi Pemilihan Umum
+tentang: PEMBENTUKAN KOMISI PEMILIHAN UMUM DAN PENETAPAN ORGANISASI DAN TATA KERJA
+  SEKRETARIAT UMUM KOMISI PEMILIHAN UMUM
+short_name: null
+status: diubah
+tanggal_penetapan: '1999-02-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_16_1999_1999-02-19
+  kind: asli
+  source: dataset
+  date: '1999-02-19'
+  date_basis: tanggal_penetapan
+  text: keppres_16_1999_1999-02-19.txt
+  pasal_count: 23
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d5d70bedd526202bdbbb6ed0f56828691f359fd335c57cfa4a42ebdbd8415ad4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d5d70bedd526202bdbbb6ed0f56828691f359fd335c57cfa4a42ebdbd8415ad4
+  source_title: Keppres_No_16_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 33
+  status: amended
+  amended_by:
+  - sha256:c3262aeec4f90dad414975f93cb065bfbada9b8bef7e24cc003d97ed2b442c21

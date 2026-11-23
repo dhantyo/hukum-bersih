@@ -1,0 +1,39 @@
+id: keppres_74_2001
+akn: /akn/id/act/keppres/2001/74
+type: keppres
+number: '74'
+year: 2001
+title: Keputusan Presiden Nomor 74 Tahun 2001 tentang Tata Cara Pengawasan Penyelenggaraan
+  Pemerintahan Daerah
+tentang: TATA CARA PENGAWASAN PENYELENGGARAAN PEMERINTAHAN DAERAH
+short_name: null
+status: null
+tanggal_penetapan: '2001-06-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_74_2001_2001-06-18
+  kind: asli
+  source: dataset
+  date: '2001-06-18'
+  date_basis: tanggal_penetapan
+  text: keppres_74_2001_2001-06-18.txt
+  pasal_count: 24
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1bafbd844e6d289e4172ed85dbe5873bc9d382c7057a6604c3a85f16ce6372a0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1bafbd844e6d289e4172ed85dbe5873bc9d382c7057a6604c3a85f16ce6372a0
+  source_title: Keputusan_Presiden_no_74_th_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 32
+  status: none_known

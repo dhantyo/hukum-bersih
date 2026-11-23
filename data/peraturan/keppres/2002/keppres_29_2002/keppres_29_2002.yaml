@@ -1,0 +1,38 @@
+id: keppres_29_2002
+akn: /akn/id/act/keppres/2002/29
+type: keppres
+number: '29'
+year: 2002
+title: Keputusan Presiden Nomor 29 Tahun 2002 tentang Staf Khusus Wakil Presiden
+tentang: STAF KHUSUS WAKIL PRESIDEN
+short_name: null
+status: null
+tanggal_penetapan: '2002-05-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_29_2002_2002-05-20
+  kind: asli
+  source: dataset
+  date: '2002-05-20'
+  date_basis: tanggal_penetapan
+  text: keppres_29_2002_2002-05-20.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8d6de57b5c4c9a2a1c7a48f714128164fdaf0deb13569875170122d53045850c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8d6de57b5c4c9a2a1c7a48f714128164fdaf0deb13569875170122d53045850c
+  source_title: KEPPRES_No.29_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 14
+  status: none_known

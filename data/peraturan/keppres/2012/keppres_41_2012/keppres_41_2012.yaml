@@ -1,0 +1,39 @@
+id: keppres_41_2012
+akn: /akn/id/act/keppres/2012/41
+type: keppres
+number: '41'
+year: 2012
+title: Keputusan Presiden Nomor 41 Tahun 2012 tentang Dewan Kawasan Kawasan Ekonomi
+  Khusus Provinsi Banten
+tentang: DEWAN KAWASAN KAWASAN EKONOMI KHUSUS PROVINSI BANTEN
+short_name: null
+status: null
+tanggal_penetapan: '2012-12-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_41_2012_2012-12-27
+  kind: asli
+  source: dataset
+  date: '2012-12-27'
+  date_basis: tanggal_penetapan
+  text: keppres_41_2012_2012-12-27.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c4f5a4f8d5c86245c1e8732d66687b01e7fb09854d4e49c988b598b56b7a6036
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c4f5a4f8d5c86245c1e8732d66687b01e7fb09854d4e49c988b598b56b7a6036
+  source_title: Keppres_41_2012
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

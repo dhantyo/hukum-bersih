@@ -1,0 +1,41 @@
+id: keppres_26_1987
+akn: /akn/id/act/keppres/1987/26
+type: keppres
+number: '26'
+year: 1987
+title: Keputusan Presiden Nomor 26 Tahun 1987 tentang Pengesahan Air Transport Agreement
+  Between The Government Of The Republic Of Indonesia And The Austrian Federal Government
+  Relating To Scheduled Air Transport
+tentang: PENGESAHAN AIR TRANSPORT AGREEMENT BETWEEN THE GOVERNMENT OF THE REPUBLIC
+  OF INDONESIA AND THE AUSTRIAN FEDERAL GOVERNMENT RELATING TO SCHEDULED AIR TRANSPORT
+short_name: null
+status: null
+tanggal_penetapan: '1987-07-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_26_1987_1987-07-25
+  kind: asli
+  source: dataset
+  date: '1987-07-25'
+  date_basis: tanggal_penetapan
+  text: keppres_26_1987_1987-07-25.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:092bbfe9bd9dbb109b757f270366cb13ec5926fee9c3944f9d159b34a6369d02
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:092bbfe9bd9dbb109b757f270366cb13ec5926fee9c3944f9d159b34a6369d02
+  source_title: KEPPRES_NO_26_TH_1987
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 6
+  status: none_known

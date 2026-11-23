@@ -1,0 +1,40 @@
+id: keppres_36_1989
+akn: /akn/id/act/keppres/1989/36
+type: keppres
+number: '36'
+year: 1989
+title: Keputusan Presiden Nomor 36 Tahun 1989 tentang Perubahan Keputusan Presiden
+  Nomor 77 Tahun 1985 Tentang Pengenaan, Pemungutan, Dan Pembagian Iuran Hasil Hutan
+tentang: PERUBAHAN KEPUTUSAN PRESIDEN NOMOR 77 TAHUN 1985 TENTANG PENGENAAN, PEMUNGUTAN,
+  DAN PEMBAGIAN IURAN HASIL HUTAN
+short_name: null
+status: null
+tanggal_penetapan: '1989-07-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_36_1989_1989-07-24
+  kind: asli
+  source: dataset
+  date: '1989-07-24'
+  date_basis: tanggal_penetapan
+  text: keppres_36_1989_1989-07-24.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:aba495a48b4b8646f211317f4dabfe554b8d5e055e3e2b56cb7559e0c02425b0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:aba495a48b4b8646f211317f4dabfe554b8d5e055e3e2b56cb7559e0c02425b0
+  source_title: KEPPRES_NO_36_TH_1989
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

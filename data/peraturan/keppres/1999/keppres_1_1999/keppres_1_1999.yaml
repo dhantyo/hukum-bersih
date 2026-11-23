@@ -1,0 +1,41 @@
+id: keppres_1_1999
+akn: /akn/id/act/keppres/1999/1
+type: keppres
+number: '1'
+year: 1999
+title: Keputusan Presiden Nomor 1 Tahun 1999 tentang Penundaan Pemberlakuan Harga
+  Jual Tenaga Listrik Yang Disediakan Oleh Perusahaan Perseroan (Persero) Pt Perusahaan
+  Listrik Negara
+tentang: PENUNDAAN PEMBERLAKUAN HARGA JUAL TENAGA LISTRIK YANG DISEDIAKAN OLEH PERUSAHAAN
+  PERSEROAN (PERSERO) PT PERUSAHAAN LISTRIK NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '1999-01-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_1_1999_1999-01-07
+  kind: asli
+  source: dataset
+  date: '1999-01-07'
+  date_basis: tanggal_penetapan
+  text: keppres_1_1999_1999-01-07.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:26826bada48ba569583b55b66994a7f2f79c179adbb59a76f4e7b9d6f800af9c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:26826bada48ba569583b55b66994a7f2f79c179adbb59a76f4e7b9d6f800af9c
+  source_title: Ke_Pres_No.1_Tahun_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

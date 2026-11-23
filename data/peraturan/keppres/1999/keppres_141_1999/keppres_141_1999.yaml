@@ -1,0 +1,40 @@
+id: keppres_141_1999
+akn: /akn/id/act/keppres/1999/141
+type: keppres
+number: '141'
+year: 1999
+title: Keputusan Presiden Nomor 141 Tahun 1999 tentang Sekretariat Presiden
+tentang: SEKRETARIAT PRESIDEN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1999-11-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_141_1999_1999-11-22
+  kind: asli
+  source: dataset
+  date: '1999-11-22'
+  date_basis: tanggal_penetapan
+  text: keppres_141_1999_1999-11-22.txt
+  pasal_count: 20
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1844b158d5387b1ead8c040cf3ff9e8fd9d5b49eee40ed6fb7a5ebb81303b8cd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1844b158d5387b1ead8c040cf3ff9e8fd9d5b49eee40ed6fb7a5ebb81303b8cd
+  source_title: Keppres_No_141_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 25
+  status: revoked
+  revoked_by:
+  - sha256:f20fc25891ea8687f127e493cab5270b1b11f8df559fba1a7fd7181fe2809242

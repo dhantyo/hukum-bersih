@@ -1,0 +1,42 @@
+id: keppres_103_1999
+akn: /akn/id/act/keppres/1999/103
+type: keppres
+number: '103'
+year: 1999
+title: Keputusan Presiden Nomor 103 Tahun 1999 tentang Pengesahan Second Protocol
+  Amending The Treaty Of Amity And Cooperation In Southeast Asia (Protokol Kedua Perubahan
+  Traktat Persahabatan Dan Kerjasama Di Asia Tenggara)
+tentang: PENGESAHAN SECOND PROTOCOL AMENDING THE TREATY OF AMITY AND COOPERATION IN
+  SOUTHEAST ASIA (PROTOKOL KEDUA PERUBAHAN TRAKTAT PERSAHABATAN DAN KERJASAMA DI ASIA
+  TENGGARA)
+short_name: null
+status: null
+tanggal_penetapan: '1999-09-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_103_1999_1999-09-01
+  kind: asli
+  source: dataset
+  date: '1999-09-01'
+  date_basis: tanggal_penetapan
+  text: keppres_103_1999_1999-09-01.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1667c6c6a5095598a6572ef1f4fce008347d624d8a4fe541bb87bd369497ef83
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1667c6c6a5095598a6572ef1f4fce008347d624d8a4fe541bb87bd369497ef83
+  source_title: Keppres_No_103_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 10
+  status: none_known

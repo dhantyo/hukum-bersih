@@ -1,0 +1,39 @@
+id: keppres_107_2001
+akn: /akn/id/act/keppres/2001/107
+type: keppres
+number: '107'
+year: 2001
+title: Keputusan Presiden Nomor 107 Tahun 2001 tentang Unit Organisasi Dan Tugas Eselon
+  I
+tentang: UNIT ORGANISASI DAN TUGAS ESELON I
+short_name: null
+status: null
+tanggal_penetapan: '2001-10-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_107_2001_2001-10-10
+  kind: asli
+  source: dataset
+  date: '2001-10-10'
+  date_basis: tanggal_penetapan
+  text: keppres_107_2001_2001-10-10.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a599fce152568572dbabc700e6d12a3ec74d85344a455e7f414dcc1d509cffed
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a599fce152568572dbabc700e6d12a3ec74d85344a455e7f414dcc1d509cffed
+  source_title: Keputusan_Presiden_no_107_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 15
+  status: none_known

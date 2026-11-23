@@ -1,0 +1,41 @@
+id: keppres_139_1998
+akn: /akn/id/act/keppres/1998/139
+type: keppres
+number: '139'
+year: 1998
+title: Keputusan Presiden Nomor 139 Tahun 1998 tentang Tim Restrukturisasi Dan Rehabilitasi
+  Pt (Persero) Perusahaan Listrik Negara
+tentang: TIM RESTRUKTURISASI DAN REHABILITASI PT (PERSERO) PERUSAHAAN LISTRIK NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-09-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_139_1998_1998-09-11
+  kind: asli
+  source: dataset
+  date: '1998-09-11'
+  date_basis: tanggal_penetapan
+  text: keppres_139_1998_1998-09-11.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7908777c3884c4cb58d75fbb713b2058d37ae80908d686473ee0191dc8570d05
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7908777c3884c4cb58d75fbb713b2058d37ae80908d686473ee0191dc8570d05
+  source_title: Keputusan_Presiden_no_139_TH_1998
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:468b781e79b58ad443b1515c01f366fbd20f637b8c6b54a8026edbddbce389fd

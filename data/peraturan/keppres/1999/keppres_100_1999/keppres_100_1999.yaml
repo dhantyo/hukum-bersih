@@ -1,0 +1,39 @@
+id: keppres_100_1999
+akn: /akn/id/act/keppres/1999/100
+type: keppres
+number: '100'
+year: 1999
+title: Keputusan Presiden Nomor 100 Tahun 1999 tentang Sekolah Tinggi Ilmu Administrasi
+  Lembaga Administrasi Negara
+tentang: SEKOLAH TINGGI ILMU ADMINISTRASI LEMBAGA ADMINISTRASI NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '1999-08-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_100_1999_1999-08-31
+  kind: asli
+  source: dataset
+  date: '1999-08-31'
+  date_basis: tanggal_penetapan
+  text: keppres_100_1999_1999-08-31.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:199d18b46d51202eca0b15e3379f153274a3acf75082ffc70025454b718c32da
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:199d18b46d51202eca0b15e3379f153274a3acf75082ffc70025454b718c32da
+  source_title: Keppres_No_100_Th_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

@@ -1,0 +1,38 @@
+id: keppres_18_2016
+akn: /akn/id/act/keppres/2016/18
+type: keppres
+number: '18'
+year: 2016
+title: Keputusan Presiden Nomor 18 Tahun 2016
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '2016-04-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_18_2016_2016-04-26
+  kind: asli
+  source: dataset
+  date: '2016-04-26'
+  date_basis: tanggal_penetapan
+  text: keppres_18_2016_2016-04-26.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fe2a5f1938f02d77e1e0f90e3fcd10f081d8501c3c04010ca8faec73c841ad6d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fe2a5f1938f02d77e1e0f90e3fcd10f081d8501c3c04010ca8faec73c841ad6d
+  source_title: Keppres_Nomor_18_Tahun_2016
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

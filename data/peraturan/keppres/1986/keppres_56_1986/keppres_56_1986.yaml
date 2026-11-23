@@ -1,0 +1,46 @@
+id: keppres_56_1986
+akn: /akn/id/act/keppres/1986/56
+type: keppres
+number: '56'
+year: 1986
+title: Keputusan Presiden Nomor 56 Tahun 1986 tentang Tatacara Pengajuan Calon Anggota
+  Tambahan Majelis Permusyawaratan Rakyat Utusan Golongan Karya Angkatan Bersenjata
+  Republik Indonesia Dan Utusan Golongan-Golongan Serta Calon Anggota Dewan Perwakilan
+  Rakyat Dari Golongan Karya Angkatan Bersenjata Republik Indonesia
+tentang: TATACARA PENGAJUAN CALON ANGGOTA TAMBAHAN MAJELIS PERMUSYAWARATAN RAKYAT
+  UTUSAN GOLONGAN KARYA ANGKATAN BERSENJATA REPUBLIK INDONESIA DAN UTUSAN GOLONGAN-GOLONGAN
+  SERTA CALON ANGGOTA DEWAN PERWAKILAN RAKYAT DARI GOLONGAN KARYA ANGKATAN BERSENJATA
+  REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1986-10-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_56_1986_1986-10-28
+  kind: asli
+  source: dataset
+  date: '1986-10-28'
+  date_basis: tanggal_penetapan
+  text: keppres_56_1986_1986-10-28.txt
+  pasal_count: 23
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4f990bd5897bda49f6e465c63fa02ab22d79a83c167e5d5b118c958cebc6dcc8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4f990bd5897bda49f6e465c63fa02ab22d79a83c167e5d5b118c958cebc6dcc8
+  source_title: KEPPRES_NO_56_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 31
+  status: revoked
+  revoked_by:
+  - sha256:7764d3d79e45bf22fe79543ff5597be1eaf3cd6d57c801eb1a8a075796604a34

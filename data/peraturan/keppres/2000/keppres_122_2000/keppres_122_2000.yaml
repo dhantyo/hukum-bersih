@@ -1,0 +1,38 @@
+id: keppres_122_2000
+akn: /akn/id/act/keppres/2000/122
+type: keppres
+number: '122'
+year: 2000
+title: Keputusan Presiden Nomor 122 Tahun 2000 tentang Pembubaran Dewan Ekonomi Nasional
+tentang: PEMBUBARAN DEWAN EKONOMI NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2000-09-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_122_2000_2000-09-01
+  kind: asli
+  source: dataset
+  date: '2000-09-01'
+  date_basis: tanggal_penetapan
+  text: keppres_122_2000_2000-09-01.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d249582284b0e062c4f44abe147b967a82c121e86019e247566586926c746372
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d249582284b0e062c4f44abe147b967a82c121e86019e247566586926c746372
+  source_title: Keputusan_Presiden_no_122_TH_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 8
+  status: none_known

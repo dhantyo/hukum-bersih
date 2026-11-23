@@ -1,0 +1,43 @@
+id: keppres_120_2001
+akn: /akn/id/act/keppres/2001/120
+type: keppres
+number: '120'
+year: 2001
+title: Keputusan Presiden Nomor 120 Tahun 2001 tentang Honorariumbagi Ketua, Ketua
+  Pengganti, Anggota, Dan Anggota Pengganti Panitia Penyelesaian Perselisihan Perburuhan
+  Pusat
+tentang: HONORARIUMBAGI KETUA, KETUA PENGGANTI, ANGGOTA, DAN ANGGOTA PENGGANTI PANITIA
+  PENYELESAIAN PERSELISIHAN PERBURUHAN PUSAT
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-11-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_120_2001_2001-11-27
+  kind: asli
+  source: dataset
+  date: '2001-11-27'
+  date_basis: tanggal_penetapan
+  text: keppres_120_2001_2001-11-27.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:18f5ad619df7b00ed337be804186d61cbb91ceae31894d378e065bf5565bd287
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:18f5ad619df7b00ed337be804186d61cbb91ceae31894d378e065bf5565bd287
+  source_title: Keputusan_Presiden_no_120_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: revoked
+  revoked_by:
+  - sha256:8dca61a257a26192383ef231c3768d1b747289a146b94d28221de666e477e019

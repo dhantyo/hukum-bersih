@@ -1,0 +1,44 @@
+id: keppres_25_1985
+akn: /akn/id/act/keppres/1985/25
+type: keppres
+number: '25'
+year: 1985
+title: Keputusan Presiden Nomor 25 Tahun 1985 tentang Tunjangan Jabatan Bagi Pegawai
+  Negeri Sipil Yang Diangkat Menjadi Penatar Tingkat Nasional Ditugaskan Pada Badan
+  Pembinaan Pendidikan Pelaksanaan Pedoman Penghayatan Dan Pengamalan Pancasila
+tentang: TUNJANGAN JABATAN BAGI PEGAWAI NEGERI SIPIL YANG DIANGKAT MENJADI PENATAR
+  TINGKAT NASIONAL DITUGASKAN PADA BADAN PEMBINAAN PENDIDIKAN PELAKSANAAN PEDOMAN
+  PENGHAYATAN DAN PENGAMALAN PANCASILA
+short_name: null
+status: diubah
+tanggal_penetapan: '1985-04-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_25_1985_1985-04-01
+  kind: asli
+  source: dataset
+  date: '1985-04-01'
+  date_basis: tanggal_penetapan
+  text: keppres_25_1985_1985-04-01.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f253ba2bc295c89f24d42ec5578c98c33a270b73155477b8caf811208651ae5b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f253ba2bc295c89f24d42ec5578c98c33a270b73155477b8caf811208651ae5b
+  source_title: KEPPRES_NO_25_TH_1985
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: amended
+  amended_by:
+  - sha256:4f6b8cbfe5876e8451eb1b8a43228b4f8d41aecd97b008bfc2cdb51542cee047

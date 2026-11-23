@@ -1,0 +1,39 @@
+id: keppres_55_1985
+akn: /akn/id/act/keppres/1985/55
+type: keppres
+number: '55'
+year: 1985
+title: Keputusan Presiden Nomor 55 Tahun 1985 tentang Daftar Skala Prioritas Bidang-Bidang
+  Usaha Penanaman Modal
+tentang: DAFTAR SKALA PRIORITAS BIDANG-BIDANG USAHA PENANAMAN MODAL
+short_name: null
+status: null
+tanggal_penetapan: '1985-07-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_55_1985_1985-07-09
+  kind: asli
+  source: dataset
+  date: '1985-07-09'
+  date_basis: tanggal_penetapan
+  text: keppres_55_1985_1985-07-09.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:50eef0bb80ae3e3af40470be7e0650a65e06f47f5e5b2f89037d4a123b311bf3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:50eef0bb80ae3e3af40470be7e0650a65e06f47f5e5b2f89037d4a123b311bf3
+  source_title: KEPPRES_NO_55_TH_1985
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

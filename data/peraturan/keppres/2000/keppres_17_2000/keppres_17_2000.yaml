@@ -1,0 +1,41 @@
+id: keppres_17_2000
+akn: /akn/id/act/keppres/2000/17
+type: keppres
+number: '17'
+year: 2000
+title: Keputusan Presiden Nomor 17 Tahun 2000 tentang Pelaksanaan Anggaran Pendapatan
+  Dan Belanja Negara
+tentang: PELAKSANAAN ANGGARAN PENDAPATAN DAN BELANJA NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-02-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_17_2000_2000-02-21
+  kind: asli
+  source: dataset
+  date: '2000-02-21'
+  date_basis: tanggal_penetapan
+  text: keppres_17_2000_2000-02-21.txt
+  pasal_count: 78
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:996b43aa6aa7662e9b6452ae379f5ab5b912eae694c3e3db5c8c6ef630db1050
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:996b43aa6aa7662e9b6452ae379f5ab5b912eae694c3e3db5c8c6ef630db1050
+  source_title: Keputusan_Presiden_no_17_th_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 122
+  status: revoked
+  revoked_by:
+  - sha256:58f0c056c466d462526c24bccae8b1a3c4f0caeb41f73584b619eb4c06c9a56d

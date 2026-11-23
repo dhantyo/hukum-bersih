@@ -1,0 +1,38 @@
+id: keppres_52_2004
+akn: /akn/id/act/keppres/2004/52
+type: keppres
+number: '52'
+year: 2004
+title: Keputusan Presiden Nomor 52 Tahun 2004 tentang Komisi Nasional Lanjut Usia
+tentang: KOMISI NASIONAL LANJUT USIA
+short_name: null
+status: null
+tanggal_penetapan: '2004-06-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_52_2004_2004-06-22
+  kind: asli
+  source: dataset
+  date: '2004-06-22'
+  date_basis: tanggal_penetapan
+  text: keppres_52_2004_2004-06-22.txt
+  pasal_count: 22
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2760f36ffd0fac44ab9e7ffd6f211ed2eff828df042f3a58f3703cc071e4ab96
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2760f36ffd0fac44ab9e7ffd6f211ed2eff828df042f3a58f3703cc071e4ab96
+  source_title: KEPPRES_No.52_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 28
+  status: none_known

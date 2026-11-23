@@ -1,0 +1,39 @@
+id: keppres_3_2004
+akn: /akn/id/act/keppres/2004/3
+type: keppres
+number: '3'
+year: 2004
+title: Keputusan Presiden Nomor 3 Tahun 2004 tentang Sistem Kepegawaian Pusat Pelaporan
+  Dan Analisis Transaksi Keuangan
+tentang: SISTEM KEPEGAWAIAN PUSAT PELAPORAN DAN ANALISIS TRANSAKSI KEUANGAN
+short_name: null
+status: null
+tanggal_penetapan: '2004-01-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_3_2004_2004-01-19
+  kind: asli
+  source: dataset
+  date: '2004-01-19'
+  date_basis: tanggal_penetapan
+  text: keppres_3_2004_2004-01-19.txt
+  pasal_count: 15
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f02da3f0761aa99ac10cd2721469ef9c7a4a9216af0b14cccebc7b2342baf70c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f02da3f0761aa99ac10cd2721469ef9c7a4a9216af0b14cccebc7b2342baf70c
+  source_title: KEPPRES_No.3_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 21
+  status: none_known

@@ -1,0 +1,39 @@
+id: keppres_109_2003
+akn: /akn/id/act/keppres/2003/109
+type: keppres
+number: '109'
+year: 2003
+title: Keputusan Presiden Nomor 109 Tahun 2003 tentang Dana Alokasi Umum Provinsi
+  Dan Kabupaten/Kota Tahun Anggaran 2004
+tentang: DANA ALOKASI UMUM PROVINSI DAN KABUPATEN/KOTA TAHUN ANGGARAN 2004
+short_name: null
+status: null
+tanggal_penetapan: '2004-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_109_2003_2004-01-01
+  kind: asli
+  source: dataset
+  date: '2004-01-01'
+  date_basis: tanggal_penetapan
+  text: keppres_109_2003_2004-01-01.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:27943742abf5577b38e2182102532ce466b61f457b86b6d74452e4b78c200bfe
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:27943742abf5577b38e2182102532ce466b61f457b86b6d74452e4b78c200bfe
+  source_title: Keputusan_Presiden_no_109_th_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 30
+  status: none_known

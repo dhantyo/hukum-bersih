@@ -1,0 +1,39 @@
+id: keppres_99_2001
+akn: /akn/id/act/keppres/2001/99
+type: keppres
+number: '99'
+year: 2001
+title: Keputusan Presiden Nomor 99 Tahun 2001 tentang Biaya Penyelenggaraan Ibadah
+  Haji Tahun 2002
+tentang: BIAYA PENYELENGGARAAN IBADAH HAJI TAHUN 2002
+short_name: null
+status: null
+tanggal_penetapan: '2001-08-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_99_2001_2001-08-30
+  kind: asli
+  source: dataset
+  date: '2001-08-30'
+  date_basis: tanggal_penetapan
+  text: keppres_99_2001_2001-08-30.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e5bfdb9e3662efc5a7dacaadbe1da3521ac82e8545d412c4b92cf84a8a67c541
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e5bfdb9e3662efc5a7dacaadbe1da3521ac82e8545d412c4b92cf84a8a67c541
+  source_title: Keputusan_Presiden_no_99_th_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: none_known

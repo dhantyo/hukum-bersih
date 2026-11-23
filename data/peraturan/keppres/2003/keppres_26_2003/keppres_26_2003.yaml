@@ -1,0 +1,41 @@
+id: keppres_26_2003
+akn: /akn/id/act/keppres/2003/26
+type: keppres
+number: '26'
+year: 2003
+title: Keputusan Presiden Nomor 26 Tahun 2003 tentang Tunjangan Jabatan Fungsional
+  Pengawas Farmasi Dan Makanan
+tentang: TUNJANGAN JABATAN FUNGSIONAL PENGAWAS FARMASI DAN MAKANAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2003-05-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_26_2003_2003-05-06
+  kind: asli
+  source: dataset
+  date: '2003-05-06'
+  date_basis: tanggal_penetapan
+  text: keppres_26_2003_2003-05-06.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b1f2a6fc66ed427d031ecd18740a8d91da691844c1459cdc861b8e014c3c8f8f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b1f2a6fc66ed427d031ecd18740a8d91da691844c1459cdc861b8e014c3c8f8f
+  source_title: KEPPRES_No.26_TH_2003
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:76b3b1576e3a2cb7bacf2eb6f9a44c716083f5549bce30063fb448fd60d94d77

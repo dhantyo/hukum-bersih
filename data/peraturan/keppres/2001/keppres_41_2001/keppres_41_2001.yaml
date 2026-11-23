@@ -1,0 +1,41 @@
+id: keppres_41_2001
+akn: /akn/id/act/keppres/2001/41
+type: keppres
+number: '41'
+year: 2001
+title: Keputusan Presiden Nomor 41 Tahun 2001 tentang Dewan Bimbingan Massal Ketahanan
+  Pangan
+tentang: DEWAN BIMBINGAN MASSAL KETAHANAN PANGAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-03-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_41_2001_2001-03-27
+  kind: asli
+  source: dataset
+  date: '2001-03-27'
+  date_basis: tanggal_penetapan
+  text: keppres_41_2001_2001-03-27.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3582cad4deb705e7e94afaa14149205f5be03b863bee42de40087cceb776e9ba
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3582cad4deb705e7e94afaa14149205f5be03b863bee42de40087cceb776e9ba
+  source_title: Keputusan_Presiden_no_41_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 19
+  status: revoked
+  revoked_by:
+  - sha256:33c2889fc6237a57c4ec5ec67edabec79453f6c0fc680a18af9659a10fce3847

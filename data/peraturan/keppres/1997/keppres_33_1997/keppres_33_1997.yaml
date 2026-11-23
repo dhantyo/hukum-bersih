@@ -1,0 +1,39 @@
+id: keppres_33_1997
+akn: /akn/id/act/keppres/1997/33
+type: keppres
+number: '33'
+year: 1997
+title: Keputusan Presiden Nomor 33 Tahun 1997 tentang Pembukaan Kedutaan Besar Republik
+  Indonesia Di Doha, Qatar
+tentang: PEMBUKAAN KEDUTAAN BESAR REPUBLIK INDONESIA DI DOHA, QATAR
+short_name: null
+status: null
+tanggal_penetapan: '1997-08-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_33_1997_1997-08-12
+  kind: asli
+  source: dataset
+  date: '1997-08-12'
+  date_basis: tanggal_penetapan
+  text: keppres_33_1997_1997-08-12.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ed40dc03c346c01c3dce89045e78592a7373e6e8ce9b9f15053897b8c8386588
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ed40dc03c346c01c3dce89045e78592a7373e6e8ce9b9f15053897b8c8386588
+  source_title: Keputusan_Presiden_no_33_TH_1997
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 10
+  status: none_known

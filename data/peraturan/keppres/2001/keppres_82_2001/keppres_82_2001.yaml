@@ -1,0 +1,42 @@
+id: keppres_82_2001
+akn: /akn/id/act/keppres/2001/82
+type: keppres
+number: '82'
+year: 2001
+title: Keputusan Presiden Nomor 82 Tahun 2001 tentang Perubahan Atas Keputusan Presiden
+  Nomor 177 Tahun 2000 Tentang Susunan Organisasi Dan Tugas Departemen Sebagaimana
+  Telah Beberapa Kali Diubah Terakhir Dengan Keputusan Presiden Nomor 58 Tahun 2001
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 177 TAHUN 2000 TENTANG SUSUNAN ORGANISASI
+  DAN TUGAS DEPARTEMEN SEBAGAIMANA TELAH BEBERAPA KALI DIUBAH TERAKHIR DENGAN KEPUTUSAN
+  PRESIDEN NOMOR 58 TAHUN 2001
+short_name: null
+status: null
+tanggal_penetapan: '2001-06-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_82_2001_2001-06-25
+  kind: asli
+  source: dataset
+  date: '2001-06-25'
+  date_basis: tanggal_penetapan
+  text: keppres_82_2001_2001-06-25.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4b341bdcec29d0e82d9288b71f9b7a6052fbd741e5073dcf1515b2774d7588c3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4b341bdcec29d0e82d9288b71f9b7a6052fbd741e5073dcf1515b2774d7588c3
+  source_title: Keputusan_Presiden_no_82_TH_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

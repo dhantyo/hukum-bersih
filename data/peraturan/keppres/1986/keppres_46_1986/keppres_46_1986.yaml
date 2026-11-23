@@ -1,0 +1,43 @@
+id: keppres_46_1986
+akn: /akn/id/act/keppres/1986/46
+type: keppres
+number: '46'
+year: 1986
+title: Keputusan Presiden Nomor 46 Tahun 1986 tentang Pengesahan International Convention
+  For The Prevention Of Pollution From Ships, 1973, Beserta Protokol (The Protocol
+  Of 1978 Relating To The International Convention For The Prevention Of Pollution
+  From Ships, 1973)
+tentang: PENGESAHAN INTERNATIONAL CONVENTION FOR THE PREVENTION OF POLLUTION FROM
+  SHIPS, 1973, BESERTA PROTOKOL (THE PROTOCOL OF 1978 RELATING TO THE INTERNATIONAL
+  CONVENTION FOR THE PREVENTION OF POLLUTION FROM SHIPS, 1973)
+short_name: null
+status: null
+tanggal_penetapan: '1986-09-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_46_1986_1986-09-09
+  kind: asli
+  source: dataset
+  date: '1986-09-09'
+  date_basis: tanggal_penetapan
+  text: keppres_46_1986_1986-09-09.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:895948f61035eefd89b7a1d38737d96756f429835539202fde1f73a9a10adda9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:895948f61035eefd89b7a1d38737d96756f429835539202fde1f73a9a10adda9
+  source_title: KEPPRES_NO_46_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: degraded
+  chunks: 5
+  status: none_known

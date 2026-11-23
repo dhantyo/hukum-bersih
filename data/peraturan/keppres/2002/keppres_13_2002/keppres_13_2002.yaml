@@ -1,0 +1,40 @@
+id: keppres_13_2002
+akn: /akn/id/act/keppres/2002/13
+type: keppres
+number: '13'
+year: 2002
+title: Keputusan Presiden Nomor 13 Tahun 2002 tentang Pembentukan Kejaksaan Tinggi
+  Banten, Kejaksaan Tinggi Kepulauan Bangka Belitung, Dan Kejaksaan Tinggi Gorontalo
+tentang: PEMBENTUKAN KEJAKSAAN TINGGI BANTEN, KEJAKSAAN TINGGI KEPULAUAN BANGKA BELITUNG,
+  DAN KEJAKSAAN TINGGI GORONTALO
+short_name: null
+status: null
+tanggal_penetapan: '2002-03-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_13_2002_2002-03-14
+  kind: asli
+  source: dataset
+  date: '2002-03-14'
+  date_basis: tanggal_penetapan
+  text: keppres_13_2002_2002-03-14.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:955ad25dc8c345682ebed4356e1df22acd145790b58bb8d140d29f0ac075aefb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:955ad25dc8c345682ebed4356e1df22acd145790b58bb8d140d29f0ac075aefb
+  source_title: KEPPRES_No.13_TH_2002
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

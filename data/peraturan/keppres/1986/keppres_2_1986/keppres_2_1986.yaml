@@ -1,0 +1,40 @@
+id: keppres_2_1986
+akn: /akn/id/act/keppres/1986/2
+type: keppres
+number: '2'
+year: 1986
+title: Keputusan Presiden Nomor 2 Tahun 1986 tentang Pencabutan Keputusan Presiden
+  Nomor 47 Tahun 1971 Dan Keputusan Presiden Nomor 4 Tahun 1982
+tentang: PENCABUTAN KEPUTUSAN PRESIDEN NOMOR 47 TAHUN 1971 DAN KEPUTUSAN PRESIDEN
+  NOMOR 4 TAHUN 1982
+short_name: null
+status: null
+tanggal_penetapan: '1986-01-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_2_1986_1986-01-22
+  kind: asli
+  source: dataset
+  date: '1986-01-22'
+  date_basis: tanggal_penetapan
+  text: keppres_2_1986_1986-01-22.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:05c02cd70848a33357f09e3c722f3361118547a80624e0936d46c22ab5fe8ed4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:05c02cd70848a33357f09e3c722f3361118547a80624e0936d46c22ab5fe8ed4
+  source_title: KEPPRES_NO_2_TH_1986
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: none_known

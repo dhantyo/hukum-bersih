@@ -1,0 +1,40 @@
+id: keppres_143_2000
+akn: /akn/id/act/keppres/2000/143
+type: keppres
+number: '143'
+year: 2000
+title: Keputusan Presiden Nomor 143 Tahun 2000 tentang Perubahan Atas Keputusan Presiden
+  Nomor 177 Tahun 1999 Tentang Komite Kebijakan Sektor Keuangan
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 177 TAHUN 1999 TENTANG KOMITE KEBIJAKAN
+  SEKTOR KEUANGAN
+short_name: null
+status: null
+tanggal_penetapan: '2000-10-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_143_2000_2000-10-10
+  kind: asli
+  source: dataset
+  date: '2000-10-10'
+  date_basis: tanggal_penetapan
+  text: keppres_143_2000_2000-10-10.txt
+  pasal_count: 1
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2650fc79c054f540d3d32dfea2f0e1c13b48baf856dfb04c2fc264c0ab707e4b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2650fc79c054f540d3d32dfea2f0e1c13b48baf856dfb04c2fc264c0ab707e4b
+  source_title: Keputusan_Presiden_no_143_TH_2000
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 4
+  status: none_known

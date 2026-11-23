@@ -1,0 +1,42 @@
+id: keppres_23_2006
+akn: /akn/id/act/keppres/2006/23
+type: keppres
+number: '23'
+year: 2006
+title: Keputusan Presiden Nomor 23 Tahun 2006 tentang Pembentukan Badan Penyelesaian
+  Sengketa Konsumen Pada Pemerintah Kota Pekalongan, Kota Parepare, Kota Pekanbaru,
+  Kota Denpasar, Kota Batam, Kabupaten Aceh Utara Dan Kabupaten Serdang Bedagai
+tentang: PEMBENTUKAN BADAN PENYELESAIAN SENGKETA KONSUMEN PADA PEMERINTAH KOTA PEKALONGAN,
+  KOTA PAREPARE, KOTA PEKANBARU, KOTA DENPASAR, KOTA BATAM, KABUPATEN ACEH UTARA DAN
+  KABUPATEN SERDANG BEDAGAI
+short_name: null
+status: null
+tanggal_penetapan: '2006-12-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_23_2006_2006-12-12
+  kind: asli
+  source: dataset
+  date: '2006-12-12'
+  date_basis: tanggal_penetapan
+  text: keppres_23_2006_2006-12-12.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:62598e9c3acbef2d48587dfa057e4548f20068bbfac790379ba9f932ae5f63c8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:62598e9c3acbef2d48587dfa057e4548f20068bbfac790379ba9f932ae5f63c8
+  source_title: Keputusan_Presiden_No_23_th_2006
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 7
+  status: none_known

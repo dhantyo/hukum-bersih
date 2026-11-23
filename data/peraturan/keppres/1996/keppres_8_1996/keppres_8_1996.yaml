@@ -1,0 +1,42 @@
+id: keppres_8_1996
+akn: /akn/id/act/keppres/1996/8
+type: keppres
+number: '8'
+year: 1996
+title: Keputusan Presiden Nomor 8 Tahun 1996 tentang Pengesahan Agreement Between
+  The Government Of The Republic Of Indonesia And The Government Of The Republic Of
+  Singapore On Military Training In Areas 1 And 2
+tentang: PENGESAHAN AGREEMENT BETWEEN THE GOVERNMENT OF THE REPUBLIC OF INDONESIA
+  AND THE GOVERNMENT OF THE REPUBLIC OF SINGAPORE ON MILITARY TRAINING IN AREAS 1
+  AND 2
+short_name: null
+status: null
+tanggal_penetapan: '1996-02-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_8_1996_1996-02-02
+  kind: asli
+  source: dataset
+  date: '1996-02-02'
+  date_basis: tanggal_penetapan
+  text: keppres_8_1996_1996-02-02.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:cc159cd063d94196874977109b4647ab405cdafe066c88af77749bfe3d606a80
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:cc159cd063d94196874977109b4647ab405cdafe066c88af77749bfe3d606a80
+  source_title: Keputusan_Presiden_no_08_TH_1996
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: unusable
+  chunks: 7
+  status: none_known

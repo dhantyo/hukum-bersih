@@ -1,0 +1,38 @@
+id: keppres_22_2011
+akn: /akn/id/act/keppres/2011/22
+type: keppres
+number: '22'
+year: 2011
+title: Keputusan Presiden Nomor 22 Tahun 2011 tentang Badan Promosi Pariwisata Indonesia
+tentang: BADAN PROMOSI PARIWISATA INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2011-08-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_22_2011_2011-08-01
+  kind: asli
+  source: dataset
+  date: '2011-08-01'
+  date_basis: tanggal_penetapan
+  text: keppres_22_2011_2011-08-01.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b33c35e32fc1953a904c6fb9ddb9309cd07b703d70be8a09b6f9bf81b55b6668
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b33c35e32fc1953a904c6fb9ddb9309cd07b703d70be8a09b6f9bf81b55b6668
+  source_title: Kepres_no_22_2011
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 16
+  status: none_known

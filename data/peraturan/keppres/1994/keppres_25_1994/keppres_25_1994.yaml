@@ -1,0 +1,39 @@
+id: keppres_25_1994
+akn: /akn/id/act/keppres/1994/25
+type: keppres
+number: '25'
+year: 1994
+title: Keputusan Presiden Nomor 25 Tahun 1994 tentang Koordinasi Penyelenggaraan Transmigrasi
+  Dan Pemukiman Perambah Hutan
+tentang: KOORDINASI PENYELENGGARAAN TRANSMIGRASI DAN PEMUKIMAN PERAMBAH HUTAN
+short_name: null
+status: null
+tanggal_penetapan: '1994-04-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_25_1994_1994-04-18
+  kind: asli
+  source: dataset
+  date: '1994-04-18'
+  date_basis: tanggal_penetapan
+  text: keppres_25_1994_1994-04-18.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f1280e23f7a4fc9eb481bc6cb53a7a6b71d6d8148074b1a1c13295bc0a0f43c1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f1280e23f7a4fc9eb481bc6cb53a7a6b71d6d8148074b1a1c13295bc0a0f43c1
+  source_title: Keputusan_Presiden_no_25_TH_1994
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 12
+  status: none_known

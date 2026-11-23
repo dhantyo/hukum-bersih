@@ -1,0 +1,41 @@
+id: keppres_22_1990
+akn: /akn/id/act/keppres/1990/22
+type: keppres
+number: '22'
+year: 1990
+title: Keputusan Presiden Nomor 22 Tahun 1990 tentang Pembinaan Usaha Peternakan Ayam
+  Ras
+tentang: PEMBINAAN USAHA PETERNAKAN AYAM RAS
+short_name: null
+status: dicabut
+tanggal_penetapan: '1990-05-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_22_1990_1990-05-28
+  kind: asli
+  source: dataset
+  date: '1990-05-28'
+  date_basis: tanggal_penetapan
+  text: keppres_22_1990_1990-05-28.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:09c65e23cf703da9e2c3529b9c98ae74e5d82fa07cf77e30a7cc2197e1b2a05c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:09c65e23cf703da9e2c3529b9c98ae74e5d82fa07cf77e30a7cc2197e1b2a05c
+  source_title: KEPPRES_NO_22_TH_1990
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 11
+  status: revoked
+  revoked_by:
+  - sha256:95cca522843e402096db402e2c0f2178f11e345022ca487b0af1d91686a80d7c

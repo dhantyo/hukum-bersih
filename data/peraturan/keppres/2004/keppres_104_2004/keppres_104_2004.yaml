@@ -1,0 +1,30 @@
+id: keppres_104_2004
+akn: /akn/id/act/keppres/2004/104
+type: keppres
+number: '104'
+year: 2004
+title: Keputusan Presiden Nomor 104 Tahun 2004 tentang Pengesahan Anggaran Dasar Gerakan
+  Pramuka
+tentang: PENGESAHAN ANGGARAN DASAR GERAKAN PRAMUKA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2004-10-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b620c6b1d5d7d2bd6331fb73d4bc7ad6f3bb7664f56b63dc66cd9ecd5786fa35
+  source_title: KEPPRES_No.104_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 31
+  status: revoked
+  revoked_by:
+  - sha256:60891458511c6e4b24fe7b0e6312601b91a8be3a38d04d4025707ca6c98c2b76
+parse_error: 'v13: rebuilt text has 3 pasal, the dataset lists 18'

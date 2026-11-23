@@ -1,0 +1,40 @@
+id: keppres_8_1999
+akn: /akn/id/act/keppres/1999/8
+type: keppres
+number: '8'
+year: 1999
+title: Keputusan Presiden Nomor 8 Tahun 1999 tentang Lembaga Administrasi Negara
+tentang: LEMBAGA ADMINISTRASI NEGARA
+short_name: null
+status: diubah
+tanggal_penetapan: '1999-01-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_8_1999_1999-01-14
+  kind: asli
+  source: dataset
+  date: '1999-01-14'
+  date_basis: tanggal_penetapan
+  text: keppres_8_1999_1999-01-14.txt
+  pasal_count: 28
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9b47f0d6eedd9373d0acc45cea4dc097cddddb2ac78b97243844e5bb7378fdc1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9b47f0d6eedd9373d0acc45cea4dc097cddddb2ac78b97243844e5bb7378fdc1
+  source_title: Ke_Pres_No.8_Tahun_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 34
+  status: amended
+  amended_by:
+  - sha256:4810baa29b21d05a41a0021d2ed1e780e7310c81ece2d7190ce5be7c963be942

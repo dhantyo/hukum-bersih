@@ -1,0 +1,41 @@
+id: keppres_127_2001
+akn: /akn/id/act/keppres/2001/127
+type: keppres
+number: '127'
+year: 2001
+title: Keputusan Presiden Nomor 127 Tahun 2001 tentang Bidang/Jenis Usaha Yang Dicadangkan
+  Untuk Usaha Kecil Dan Bidang/Jenis Usaha Yang Terbuka Untuk Usaha Menengah Atau
+  Besar Dengan Syarat Kemitraan
+tentang: BIDANG/JENIS USAHA YANG DICADANGKAN UNTUK USAHA KECIL DAN BIDANG/JENIS USAHA
+  YANG TERBUKA UNTUK USAHA MENENGAH ATAU BESAR DENGAN SYARAT KEMITRAAN
+short_name: null
+status: null
+tanggal_penetapan: '2001-12-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_127_2001_2001-12-14
+  kind: asli
+  source: dataset
+  date: '2001-12-14'
+  date_basis: tanggal_penetapan
+  text: keppres_127_2001_2001-12-14.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7372f51062d8c5ede59cd71a9f045f39b63a21b98244509dd4ed63dabd1b8318
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7372f51062d8c5ede59cd71a9f045f39b63a21b98244509dd4ed63dabd1b8318
+  source_title: Keputusan_Presiden_no_127_th_2001
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: none_known

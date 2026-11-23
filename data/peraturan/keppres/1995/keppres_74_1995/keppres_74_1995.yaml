@@ -1,0 +1,41 @@
+id: keppres_74_1995
+akn: /akn/id/act/keppres/1995/74
+type: keppres
+number: '74'
+year: 1995
+title: Keputusan Presiden Nomor 74 Tahun 1995 tentang Reklamasi Pantai Kapuknaga,
+  Tangerang
+tentang: REKLAMASI PANTAI KAPUKNAGA, TANGERANG
+short_name: null
+status: dicabut
+tanggal_penetapan: '1995-10-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_74_1995_1995-10-16
+  kind: asli
+  source: dataset
+  date: '1995-10-16'
+  date_basis: tanggal_penetapan
+  text: keppres_74_1995_1995-10-16.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:35e1eb1702f53424390aa0df86a220cd1bc7c7341c823900af0cddc1617fbcce
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:35e1eb1702f53424390aa0df86a220cd1bc7c7341c823900af0cddc1617fbcce
+  source_title: Keputusan_Presiden_no_73_TH_1995
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 17
+  status: revoked
+  revoked_by:
+  - sha256:ce84b51d2c1849ad87a594579523e3dd051bfc3ca5e5d34588a88bc93cccec61

@@ -1,0 +1,42 @@
+id: keppres_73_1999
+akn: /akn/id/act/keppres/1999/73
+type: keppres
+number: '73'
+year: 1999
+title: Keputusan Presiden Nomor 73 Tahun 1999 tentang Perubahan Atas Keputusan Presiden
+  Nomor 53 Tahun 1985 Tentang Badan Pengelola Komplek Kemayoran Sebagaimana Telah
+  Beberapa Kali Diubah, Terakhir Dengan Keputusan Presiden Nomor 3 Tahun 1991
+tentang: PERUBAHAN ATAS KEPUTUSAN PRESIDEN NOMOR 53 TAHUN 1985 TENTANG BADAN PENGELOLA
+  KOMPLEK KEMAYORAN SEBAGAIMANA TELAH BEBERAPA KALI DIUBAH, TERAKHIR DENGAN KEPUTUSAN
+  PRESIDEN NOMOR 3 TAHUN 1991
+short_name: null
+status: null
+tanggal_penetapan: '1999-07-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_73_1999_1999-07-05
+  kind: asli
+  source: dataset
+  date: '1999-07-05'
+  date_basis: tanggal_penetapan
+  text: keppres_73_1999_1999-07-05.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9c77f535071bd67fbd94e735840ad85ea9d52d6a962258bf80ad45695f606fa8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9c77f535071bd67fbd94e735840ad85ea9d52d6a962258bf80ad45695f606fa8
+  source_title: Keppres_No_73_Tahun_1999
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

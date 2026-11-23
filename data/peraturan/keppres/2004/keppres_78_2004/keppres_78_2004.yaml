@@ -1,0 +1,41 @@
+id: keppres_78_2004
+akn: /akn/id/act/keppres/2004/78
+type: keppres
+number: '78'
+year: 2004
+title: Keputusan Presiden Nomor 78 Tahun 2004 tentang Pengesahan Persetujuan Antara
+  Pemerintah Republik Indonesia Dan Pemerintah Republik Bulgaria Mengenai Peningkatan
+  Dan Perlindungan Atas Penanaman Modal
+tentang: PENGESAHAN PERSETUJUAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINTAH
+  REPUBLIK BULGARIA MENGENAI PENINGKATAN DAN PERLINDUNGAN ATAS PENANAMAN MODAL
+short_name: null
+status: null
+tanggal_penetapan: '2004-09-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_78_2004_2004-09-27
+  kind: asli
+  source: dataset
+  date: '2004-09-27'
+  date_basis: tanggal_penetapan
+  text: keppres_78_2004_2004-09-27.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:11bf6458cad6ef807c8024a0798368a5accc5f64435548ab6756a701a7f5f59c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:11bf6458cad6ef807c8024a0798368a5accc5f64435548ab6756a701a7f5f59c
+  source_title: KEPPRES_No.78_TH_2004
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 6
+  status: none_known

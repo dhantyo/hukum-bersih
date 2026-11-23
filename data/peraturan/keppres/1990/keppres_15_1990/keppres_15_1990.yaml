@@ -1,0 +1,38 @@
+id: keppres_15_1990
+akn: /akn/id/act/keppres/1990/15
+type: keppres
+number: '15'
+year: 1990
+title: Keputusan Presiden Nomor 15 Tahun 1990 tentang Uang Sidang Menteri Negara
+tentang: UANG SIDANG MENTERI NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '1990-04-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_15_1990_1990-04-01
+  kind: asli
+  source: dataset
+  date: '1990-04-01'
+  date_basis: tanggal_penetapan
+  text: keppres_15_1990_1990-04-01.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:588b289e478940a14ed08acd96fb5a0d4cea09b2572575d5764fc15b2c295a30
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:588b289e478940a14ed08acd96fb5a0d4cea09b2572575d5764fc15b2c295a30
+  source_title: KEPPRES_NO_15_TH_1990
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 8
+  status: none_known

@@ -1,0 +1,39 @@
+id: keppres_2_2009
+akn: /akn/id/act/keppres/2009/2
+type: keppres
+number: '2'
+year: 2009
+title: Keputusan Presiden Nomor 2 Tahun 2009 tentang Panitia Nasional Penyelenggaraan
+  Sail Bunaken Tahun 2009
+tentang: PANITIA NASIONAL PENYELENGGARAAN SAIL BUNAKEN TAHUN 2009
+short_name: null
+status: null
+tanggal_penetapan: '2009-02-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: keppres_2_2009_2009-02-27
+  kind: asli
+  source: dataset
+  date: '2009-02-27'
+  date_basis: tanggal_penetapan
+  text: keppres_2_2009_2009-02-27.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6fd746b0fc684515996e7136a2c11cf5dbf244ab5e31eb6d6cd53b1b4ca6d6f1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6fd746b0fc684515996e7136a2c11cf5dbf244ab5e31eb6d6cd53b1b4ca6d6f1
+  source_title: Keppres_2_Tahun_2009
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 13
+  status: none_known

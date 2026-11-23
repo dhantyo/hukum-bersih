@@ -1,0 +1,30 @@
+id: keppres_18_2006
+akn: /akn/id/act/keppres/2006/18
+type: keppres
+number: '18'
+year: 2006
+title: Keputusan Presiden Nomor 18 Tahun 2006 tentang Komite Privatisasi Perusahaan
+  Perseroan (Persero)
+tentang: KOMITE PRIVATISASI PERUSAHAAN PERSEROAN (PERSERO)
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-10-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:308b917453ba16b64e579fec67e2f3ae33b03bcf16b5522a0762a71391ad5465
+  source_title: Keputusan_Presiden_No_18_th_2006
+  regulation_type: KEPUTUSAN PRESIDEN
+  quality: clean
+  chunks: 5
+  status: revoked
+  revoked_by:
+  - sha256:c208a6157edd599a2939dd9c80f31f1304d4bc4a33b9339604dd903c33a35ee1
+parse_error: 'v13: no pasal found in the rebuilt text'
