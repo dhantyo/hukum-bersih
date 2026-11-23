@@ -14,8 +14,8 @@ tanggal_penetapan: '1963-08-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1963
-source_pdf_url: https://peraturan.go.id/files/UU0081963.pdf
+source_url: https://peraturan.bpk.go.id/Details/50648/uu-no-8-tahun-1963
+source_pdf_url: https://peraturan.bpk.go.id/Download/39891/UU%20Nomor%208%20Tahun%201963.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,6 +23,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_8_1963_1963-08-24
+  kind: asli
+  source: official
+  date: '1963-08-24'
+  date_basis: tanggal_penetapan
+  text: uu_8_1963_1963-08-24.txt
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: bfc97679384515bb04277d69bc213c7a895feb720e999bd889b97fa004dbd2f1
 pdf_sha256: bfc97679384515bb04277d69bc213c7a895feb720e999bd889b97fa004dbd2f1
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1963-08-24'
+tanggal_berlaku: '1962-01-01'
+lembaran_negara: 'LN. 1963/ No. 90, TLN NO. , LL SETNEG : 3 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1963
+  source_pdf_url: https://peraturan.go.id/files/UU0081963.pdf
+bpk:
+  id: 50648
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39891/UU%20Nomor%208%20Tahun%201963.pdf
+    bpk_file_id: 39891
+    filename: UU Nomor 8 Tahun 1963.pdf
+    sha256: bfc97679384515bb04277d69bc213c7a895feb720e999bd889b97fa004dbd2f1
+    bytes: 26338
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_9_1962
+      citation: UU No. 9 Tahun 1962
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun 1962
+      url: https://peraturan.bpk.go.id/Details/50685/uu-no-9-tahun-1962
+      note: null
+uji_materi: null

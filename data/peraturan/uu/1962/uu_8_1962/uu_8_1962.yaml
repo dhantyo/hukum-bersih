@@ -9,12 +9,12 @@ tentang: PEMBUATAN PERJANJIAN PERSAHABATAN DAN KERJA SAMA ANTARA REPUBLIK INDONE
   DAN REPUBLIK RAKYAT HONGARIA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1962-06-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1962
-source_pdf_url: https://peraturan.go.id/files/UU0081962.pdf
+source_url: https://peraturan.bpk.go.id/Details/50683/uu-no-8-tahun-1962
+source_pdf_url: https://peraturan.bpk.go.id/Download/39926/UU%20Nomor%208%20Tahun%201962.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_8_1962_1962
+- id: uu_8_1962_1962-06-18
   kind: asli
   source: official
-  date: null
+  date: '1962-06-18'
   date_basis: tanggal_penetapan
-  text: uu_8_1962_1962.txt
+  text: uu_8_1962_1962-06-18.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: fb0886809700f5da6590d800a371e2004d8d6cd34038d2b039980d512e63f153
 pdf_sha256: fb0886809700f5da6590d800a371e2004d8d6cd34038d2b039980d512e63f153
+tanggal_pengundangan: '1962-06-18'
+tanggal_berlaku: '1962-06-18'
+lembaran_negara: 'LN. 1962/ No. 26, TLN NO. 2440, LL SETNEG : 2 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1962
+  source_pdf_url: https://peraturan.go.id/files/UU0081962.pdf
+bpk:
+  id: 50683
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39926/UU%20Nomor%208%20Tahun%201962.pdf
+    bpk_file_id: 39926
+    filename: UU Nomor 8 Tahun 1962.pdf
+    sha256: fb0886809700f5da6590d800a371e2004d8d6cd34038d2b039980d512e63f153
+    bytes: 28626
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

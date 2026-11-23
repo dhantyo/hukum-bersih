@@ -13,8 +13,8 @@ tanggal_penetapan: '1963-09-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1963
-source_pdf_url: https://peraturan.go.id/files/UU0101963.pdf
+source_url: https://peraturan.bpk.go.id/Details/50655/uu-no-10-tahun-1963
+source_pdf_url: https://peraturan.bpk.go.id/Download/39898/UU%20Nomor%2010%20Tahun%201963.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_10_1963_1963-09-04
+  kind: asli
+  source: official
+  date: '1963-09-04'
+  date_basis: tanggal_penetapan
+  text: uu_10_1963_1963-09-04.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4a37afb9b4477bd5f107e18805af72b8106adb2bad9eddde7e9df714762d4feb
 pdf_sha256: 4a37afb9b4477bd5f107e18805af72b8106adb2bad9eddde7e9df714762d4feb
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1963-09-04'
+tanggal_berlaku: '1963-01-01'
+lembaran_negara: 'LN. 1963/ No. 92, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1963
+  source_pdf_url: https://peraturan.go.id/files/UU0101963.pdf
+bpk:
+  id: 50655
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39898/UU%20Nomor%2010%20Tahun%201963.pdf
+    bpk_file_id: 39898
+    filename: UU Nomor 10 Tahun 1963.pdf
+    sha256: 4a37afb9b4477bd5f107e18805af72b8106adb2bad9eddde7e9df714762d4feb
+    bytes: 23974
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

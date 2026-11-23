@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 13 Tahun 1962 tentang Ketentuan Ketentuan Pokok Bank 
   Daerah
 tentang: KETENTUAN KETENTUAN POKOK BANK PEMBANGUNAN DAERAH
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1962-08-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1962
-source_pdf_url: https://peraturan.go.id/files/UU0131962.pdf
+source_url: https://peraturan.bpk.go.id/Details/50698/uu-no-13-tahun-1962
+source_pdf_url: https://peraturan.bpk.go.id/Download/39941/UU%20Nomor%2013%20Tahun%201962.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_13_1962_1962-08-16
+  kind: asli
+  source: official
+  date: '1962-08-16'
+  date_basis: tanggal_penetapan
+  text: uu_13_1962_1962-08-16.txt
+  pasal_count: 31
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b281761adaa1fdddd8f353fce1c043cdba4689502b3a705dfa2c3d9e70d31b8b
 pdf_sha256: b281761adaa1fdddd8f353fce1c043cdba4689502b3a705dfa2c3d9e70d31b8b
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1962-08-16'
+tanggal_berlaku: '1962-08-16'
+lembaran_negara: 'LN. 1962/ No. 59, TLN NO. 2490, LL SETNEG : 18 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1962
+  source_pdf_url: https://peraturan.go.id/files/UU0131962.pdf
+bpk:
+  id: 50698
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39941/UU%20Nomor%2013%20Tahun%201962.pdf
+    bpk_file_id: 39941
+    filename: UU Nomor 13 Tahun 1962.pdf
+    sha256: b281761adaa1fdddd8f353fce1c043cdba4689502b3a705dfa2c3d9e70d31b8b
+    bytes: 76271
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_7_1992
+      citation: UU No. 7 Tahun 1992
+      tentang: Perbankan
+      url: https://peraturan.bpk.go.id/Details/46599/uu-no-7-tahun-1992
+      note: Pasal 54 UU Nomor 7 Tahun 1992 mencabut UU ini
+uji_materi: null

@@ -9,12 +9,12 @@ tentang: PERSETUJUAN KONPENSI ORGANISASI PERBURUHAN INTERNASIONAL NO. 106 MENGEN
   ISTIRAHAT MINGGUAN DALAM PERDAGANGAN DAN KANTOR KANTOR
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1961-02-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1961
-source_pdf_url: https://peraturan.go.id/files/UU0031961.pdf
+source_url: https://peraturan.bpk.go.id/Details/51123/uu-no-3-tahun-1961
+source_pdf_url: https://peraturan.bpk.go.id/Download/40374/UU%20Nomor%203%20Tahun%201961.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_3_1961_1961-02-25
+  kind: asli
+  source: official
+  date: '1961-02-25'
+  date_basis: tanggal_penetapan
+  text: uu_3_1961_1961-02-25.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: de8afbff4b5ca0856c59e40f9088deca89709edee7ab348e932de7e23f1184d7
 pdf_sha256: de8afbff4b5ca0856c59e40f9088deca89709edee7ab348e932de7e23f1184d7
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1961-02-25'
+tanggal_berlaku: '1961-02-25'
+lembaran_negara: 'LN. 1961 No. 14 , TLN NO. 2153, LL SETNEG : 10 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1961
+  source_pdf_url: https://peraturan.go.id/files/UU0031961.pdf
+bpk:
+  id: 51123
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40374/UU%20Nomor%203%20Tahun%201961.pdf
+    bpk_file_id: 40374
+    filename: UU Nomor 3 Tahun 1961.pdf
+    sha256: de8afbff4b5ca0856c59e40f9088deca89709edee7ab348e932de7e23f1184d7
+    bytes: 60725
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/40375/UU%20Nomor%203%20Tahun%201961(LAMPIRAN).pdf
+    bpk_file_id: 40375
+    filename: UU Nomor 3 Tahun 1961(LAMPIRAN).pdf
+    sha256: 03e6779c0ca3e8c3c5d44cf09c1719afe6cc2bd6f174c6fde4d826e737cd0276
+    bytes: 49955
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

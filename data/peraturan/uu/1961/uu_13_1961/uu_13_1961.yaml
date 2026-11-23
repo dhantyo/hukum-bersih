@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 13 Tahun 1961 tentang Ketentuan-Ketentuan Pokok Kepol
   Negara
 tentang: KETENTUAN-KETENTUAN POKOK KEPOLISIAN NEGARA
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1961-06-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JUANDA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1961
-source_pdf_url: https://peraturan.go.id/files/uu-13-1961.pdf
+source_url: https://peraturan.bpk.go.id/Details/51233/uu-no-13-tahun-1961
+source_pdf_url: https://peraturan.bpk.go.id/Download/40486/UU%20Nomor%2013%20Tahun%201961.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,40 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_13_1961_1961-06-30
+  kind: asli
+  source: official
+  date: '1961-06-30'
+  date_basis: tanggal_penetapan
+  text: uu_13_1961_1961-06-30.txt
+  pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 64e14f57219bd815f818d387fdc7341888fba283cd478a0e60fbf74da309ce40
 pdf_sha256: 64e14f57219bd815f818d387fdc7341888fba283cd478a0e60fbf74da309ce40
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1961-06-30'
+tanggal_berlaku: '1961-06-30'
+lembaran_negara: 'LN. 1961 No. 245 , TLN NO. 2289, LL SETNEG : 5 HLM'
+subjek: KEPEGAWAIAN, APARATUR NEGARA - PERTAHANAN DAN KEAMANAN, MILITER - DASAR PEMBENTUKAN
+  KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1961
+  source_pdf_url: https://peraturan.go.id/files/uu-13-1961.pdf
+bpk:
+  id: 51233
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40486/UU%20Nomor%2013%20Tahun%201961.pdf
+    bpk_file_id: 40486
+    filename: UU Nomor 13 Tahun 1961.pdf
+    sha256: 64e14f57219bd815f818d387fdc7341888fba283cd478a0e60fbf74da309ce40
+    bytes: 62664
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_28_1997
+      citation: UU No. 28 Tahun 1997
+      tentang: Kepolisian Negara Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/46044/uu-no-28-tahun-1997
+      note: null
+uji_materi: null

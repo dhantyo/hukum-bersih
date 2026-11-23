@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 20 Tahun 1961 tentang Pencabutan Hak-Hak Atas Tanah D
 tentang: PENCABUTAN HAK-HAK ATAS TANAH DAN BENDA-BENDA YANG ADA DI ATASNYA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1961-09-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-1961
-source_pdf_url: https://peraturan.go.id/files/uu-20-1961.pdf
+source_url: https://peraturan.bpk.go.id/Details/51250/uu-no-20-tahun-1961
+source_pdf_url: https://peraturan.bpk.go.id/Download/40504/UU%20Nomor%2020%20Tahun%201961.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_20_1961_1961-09-26
+  kind: asli
+  source: official
+  date: '1961-09-26'
+  date_basis: tanggal_penetapan
+  text: uu_20_1961_1961-09-26.txt
+  pasal_count: 13
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0244654b8dd16fee6ef06d8585683b3a39e9b983572f30853f6418dbd2b83251
 pdf_sha256: 0244654b8dd16fee6ef06d8585683b3a39e9b983572f30853f6418dbd2b83251
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1961-09-26'
+tanggal_berlaku: '1961-09-26'
+lembaran_negara: 'LN. 1961 No. 288, TLN NO. 2324, LL SETNEG : 5 HLM'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-1961
+  source_pdf_url: https://peraturan.go.id/files/uu-20-1961.pdf
+bpk:
+  id: 51250
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40504/UU%20Nomor%2020%20Tahun%201961.pdf
+    bpk_file_id: 40504
+    filename: UU Nomor 20 Tahun 1961.pdf
+    sha256: 0244654b8dd16fee6ef06d8585683b3a39e9b983572f30853f6418dbd2b83251
+    bytes: 71644
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

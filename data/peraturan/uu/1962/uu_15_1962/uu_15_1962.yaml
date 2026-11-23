@@ -9,22 +9,59 @@ title: Undang-Undang Nomor 15 Tahun 1962 tentang Penetapan Peraturan Pemerintah 
 tentang: PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG UNDANG NO. 2 TAHUN 1962 TENTANG
   KEWAJIBAN PERUSAHAAN MINYAK MEMENUHI KEBUTUHAN DALAM NEGERI
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 22 Tahun 2001 Tentang Minyak
-  dan Gas Bumi'
+status: tidak_berlaku
 tanggal_penetapan: '1962-11-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DJUANDA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-1962
-source_pdf_url: https://peraturan.go.id/files/UU0151962.pdf
+source_url: https://peraturan.bpk.go.id/Details/50978/uu-no-15-tahun-1962
+source_pdf_url: https://peraturan.bpk.go.id/Download/40227/UU%20Nomor%2015%20Tahun%201962.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_22_2001
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_15_1962_1962-11-02
+  kind: asli
+  source: official
+  date: '1962-11-02'
+  date_basis: tanggal_penetapan
+  text: uu_15_1962_1962-11-02.txt
+  pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8928a72bf38acb31d56ff17e98a1f148605a580bbc3c552c8e2acd27227489dc
 pdf_sha256: 8928a72bf38acb31d56ff17e98a1f148605a580bbc3c552c8e2acd27227489dc
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1962-11-02'
+tanggal_berlaku: '1962-05-12'
+lembaran_negara: 'LN. 1962/ No. 80 , TLN NO. 2505, LL SETNEG : 6 HLM'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA - PERTAMBANGAN MIGAS, MINERAL DAN ENERGI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-1962
+  source_pdf_url: https://peraturan.go.id/files/UU0151962.pdf
+bpk:
+  id: 50978
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40227/UU%20Nomor%2015%20Tahun%201962.pdf
+    bpk_file_id: 40227
+    filename: UU Nomor 15 Tahun 1962.pdf
+    sha256: 8928a72bf38acb31d56ff17e98a1f148605a580bbc3c552c8e2acd27227489dc
+    bytes: 31306
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_22_2001
+      citation: UU No. 22 Tahun 2001
+      tentang: Minyak dan Gas Bumi
+      url: https://peraturan.bpk.go.id/Details/44903/uu-no-22-tahun-2001
+      note: null
+    Menetapkan:
+    - id: perppu_2_1962
+      citation: PERPU No. 2 Tahun 1962
+      tentang: Kewajiban Perusahaan Minyak Memenuhi Kebutuhan Dalam Negeri
+      url: https://peraturan.bpk.go.id/Details/53647/perpu-no-2-tahun-1962
+      note: null
+uji_materi: null

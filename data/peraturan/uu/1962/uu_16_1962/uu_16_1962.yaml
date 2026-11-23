@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 16 Tahun 1962 tentang Pembuatan Perdjandjian Antara R
 tentang: PEMBUATAN PERDJANDJIAN ANTARA REPUBLIK INDONESIA DENGAN JEPANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1962-11-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-1962
-source_pdf_url: https://peraturan.go.id/files/UU0161962.pdf
+source_url: https://peraturan.bpk.go.id/Details/50980/uu-no-16-tahun-1962
+source_pdf_url: https://peraturan.bpk.go.id/Download/40229/UU%20Nomor%2016%20Tahun%201962.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,34 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_16_1962_1962-11-01
+  kind: asli
+  source: official
+  date: '1962-11-01'
+  date_basis: tanggal_penetapan
+  text: uu_16_1962_1962-11-01.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 99e1768d6eab62157ae7e20a37883013af60cceaa829aeee52f7ddd57709cc70
 pdf_sha256: 99e1768d6eab62157ae7e20a37883013af60cceaa829aeee52f7ddd57709cc70
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1963-11-01'
+tanggal_berlaku: '1963-11-01'
+lembaran_negara: 'LN. 1962/ No. 81 , TLN NO. 2522, LL SETNEG : 6 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+  - KETATANEGARAAN, KENEGARAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-1962
+  source_pdf_url: https://peraturan.go.id/files/UU0161962.pdf
+bpk:
+  id: 50980
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40229/UU%20Nomor%2016%20Tahun%201962.pdf
+    bpk_file_id: 40229
+    filename: UU Nomor 16 Tahun 1962.pdf
+    sha256: 99e1768d6eab62157ae7e20a37883013af60cceaa829aeee52f7ddd57709cc70
+    bytes: 33083
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

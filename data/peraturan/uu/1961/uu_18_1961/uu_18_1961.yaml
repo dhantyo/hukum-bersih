@@ -6,13 +6,13 @@ year: 1961
 title: Undang-Undang Nomor 18 Tahun 1961 tentang Ketentuan-Ketentuan Pokok Kepegawaian
 tentang: KETENTUAN-KETENTUAN POKOK KEPEGAWAIAN
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1961-07-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-1961
-source_pdf_url: https://peraturan.go.id/files/uu-18-1961.pdf
+source_url: https://peraturan.bpk.go.id/Details/51244/uu-no-18-tahun-1961
+source_pdf_url: https://peraturan.bpk.go.id/Download/40498/UU%20Nomor%2018%20Tahun%201961.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_18_1961_1961-07-21
+  kind: asli
+  source: official
+  date: '1961-07-21'
+  date_basis: tanggal_penetapan
+  text: uu_18_1961_1961-07-21.txt
+  pasal_count: 25
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e6d2f8f0464ec6327fd90eb653187712121c00671e0af3854934cc1f26e04114
 pdf_sha256: e6d2f8f0464ec6327fd90eb653187712121c00671e0af3854934cc1f26e04114
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1961-07-21'
+tanggal_berlaku: '1961-07-21'
+lembaran_negara: 'LN. 1961 No. 263, TLN NO. 2312, LL SETNEG : 9 HLM'
+subjek: KEPEGAWAIAN, APARATUR NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-1961
+  source_pdf_url: https://peraturan.go.id/files/uu-18-1961.pdf
+bpk:
+  id: 51244
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40498/UU%20Nomor%2018%20Tahun%201961.pdf
+    bpk_file_id: 40498
+    filename: UU Nomor 18 Tahun 1961.pdf
+    sha256: e6d2f8f0464ec6327fd90eb653187712121c00671e0af3854934cc1f26e04114
+    bytes: 79938
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_8_1974
+      citation: UU No. 8 Tahun 1974
+      tentang: Pokok- Pokok Kepegawaian
+      url: https://peraturan.bpk.go.id/Details/47417/uu-no-8-tahun-1974
+      note: null
+uji_materi: null

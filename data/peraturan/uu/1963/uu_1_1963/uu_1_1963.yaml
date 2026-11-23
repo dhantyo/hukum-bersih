@@ -15,8 +15,8 @@ tanggal_penetapan: '1963-06-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DJUANDA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1963
-source_pdf_url: https://peraturan.go.id/files/UU0011963.pdf
+source_url: https://peraturan.bpk.go.id/Details/50570/uu-no-1-tahun-1963
+source_pdf_url: https://peraturan.bpk.go.id/Download/39811/UU%20Nomor%201%20Tahun%201963.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,5 +32,26 @@ versions:
   date: '1963-06-22'
   date_basis: tanggal_penetapan
   text: uu_1_1963_1963-06-22.txt
-  pasal_count: 2
+  pasal_count: 11
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b7209f69ac27171f5825c55b1a25a43767a72f31d5320e6443b54036af058301
 pdf_sha256: b7209f69ac27171f5825c55b1a25a43767a72f31d5320e6443b54036af058301
+tanggal_pengundangan: '1963-06-22'
+tanggal_berlaku: '1962-09-01'
+lembaran_negara: 'LN. 1963/ No. 68 , TLN NO. 2560, LL SETNEG : 6 HLM'
+subjek: BANTUAN, SUMBANGAN, BENCANA / KEBENCANAAN, DAN PENANGGULANGAN BENCANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1963
+  source_pdf_url: https://peraturan.go.id/files/UU0011963.pdf
+bpk:
+  id: 50570
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39811/UU%20Nomor%201%20Tahun%201963.pdf
+    bpk_file_id: 39811
+    filename: UU Nomor 1 Tahun 1963.pdf
+    sha256: b7209f69ac27171f5825c55b1a25a43767a72f31d5320e6443b54036af058301
+    bytes: 36821
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

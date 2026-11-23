@@ -6,20 +6,18 @@ year: 1963
 title: Undang-Undang Nomor 5 Tahun 1963 tentang Tanda Kehormatan Bintang Jasa
 tentang: TANDA KEHORMATAN BINTANG JASA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 20 Tahun 2009 Tentang Gelar,
-  Tanda Jasa, dan Tanda Kehormatan'
+status: tidak_berlaku
 tanggal_penetapan: '1963-07-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1963
-source_pdf_url: https://peraturan.go.id/files/UU0051963.pdf
+source_url: https://peraturan.bpk.go.id/Details/50618/uu-no-5-tahun-1963
+source_pdf_url: https://peraturan.bpk.go.id/Download/39860/UU%20Nomor%205%20Tahun%201963.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_20_2009
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,4 +28,40 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1963_1963-07-22.txt
   pasal_count: 8
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: fc89f208101822b8e28a0013b262e55a4e78b130b390eec68366dbe75d4657de
 pdf_sha256: fc89f208101822b8e28a0013b262e55a4e78b130b390eec68366dbe75d4657de
+tanggal_pengundangan: '1963-07-22'
+tanggal_berlaku: '1963-07-22'
+lembaran_negara: 'LN. 1963/ No. 78, TLN NO. 2575 , LL SETNEG : 5 HLM'
+subjek: HONORARIUM, GAJI, PENGHASILAN, UANG KEHORMATAN, TUNJANGAN, PENGHARGAAN, HAK
+  LAINNYA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1963
+  source_pdf_url: https://peraturan.go.id/files/UU0051963.pdf
+bpk:
+  id: 50618
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39860/UU%20Nomor%205%20Tahun%201963.pdf
+    bpk_file_id: 39860
+    filename: UU Nomor 5 Tahun 1963.pdf
+    sha256: fc89f208101822b8e28a0013b262e55a4e78b130b390eec68366dbe75d4657de
+    bytes: 37501
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_20_2009
+      citation: UU No. 20 Tahun 2009
+      tentang: Gelar, Tanda Jasa, dan Tanda Kehormatan
+      url: https://peraturan.bpk.go.id/Details/38640/uu-no-20-tahun-2009
+      note: null
+    Diubah dengan:
+    - id: uu_4_1972
+      citation: UU No. 4 Tahun 1972
+      tentang: Perubahan dan Tambahan Ketentuan Mengenai Beberapa Jenis Tanda Kehormatan
+        Republik Indonesia Yang Berbentuk Bintang dan Tentang Urutan Derajat/Tingkat
+        Jenis Tanda Kehormatan Republik Indonesia yang Berbentuk Bintang
+      url: https://peraturan.bpk.go.id/Details/47551/uu-no-4-tahun-1972
+      note: null
+uji_materi: null

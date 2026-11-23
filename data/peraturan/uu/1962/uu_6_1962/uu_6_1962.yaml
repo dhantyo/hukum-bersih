@@ -6,13 +6,13 @@ year: 1962
 title: Undang-Undang Nomor 6 Tahun 1962 tentang Wabah
 tentang: WABAH
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1962-03-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1962
-source_pdf_url: https://peraturan.go.id/files/UU0061962.pdf
+source_url: https://peraturan.bpk.go.id/Details/50678/uu-no-6-tahun-1962
+source_pdf_url: https://peraturan.bpk.go.id/Download/39921/UU%20Nomor%206%20Tahun%201962.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,45 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_6_1962_1962-03-05
+  kind: asli
+  source: official
+  date: '1962-03-05'
+  date_basis: tanggal_penetapan
+  text: uu_6_1962_1962-03-05.txt
+  pasal_count: 12
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 354a8ef91abf4d0c48ae3769175992ad4297b932c65c2a1efbdf87c42ec8f400
 pdf_sha256: 354a8ef91abf4d0c48ae3769175992ad4297b932c65c2a1efbdf87c42ec8f400
-parse_error: 'LeakedMarkupError: hcontainer_2__p_2: markup in text: ''ART 1 -'''
+tanggal_pengundangan: '1962-03-05'
+tanggal_berlaku: '1962-03-05'
+lembaran_negara: 'LN. 1962/ No.12, TLN NO. 2390, LL SETNEG : 7 HLM'
+subjek: KESEHATAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1962
+  source_pdf_url: https://peraturan.go.id/files/UU0061962.pdf
+bpk:
+  id: 50678
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39921/UU%20Nomor%206%20Tahun%201962.pdf
+    bpk_file_id: 39921
+    filename: UU Nomor 6 Tahun 1962.pdf
+    sha256: 354a8ef91abf4d0c48ae3769175992ad4297b932c65c2a1efbdf87c42ec8f400
+    bytes: 45457
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_4_1984
+      citation: UU No. 4 Tahun 1984
+      tentang: Wabah Penyakit Menular
+      url: https://peraturan.bpk.go.id/Details/46973/uu-no-4-tahun-1984
+      note: null
+    Diubah dengan:
+    - id: uu_7_1968
+      citation: UU No. 7 Tahun 1968
+      tentang: Perubahan Pasal 3 Undang-Undang Nomor 6 Tahun 1962 tentang Wabah
+      url: https://peraturan.bpk.go.id/Details/49146/uu-no-7-tahun-1968
+      note: null
+uji_materi: null

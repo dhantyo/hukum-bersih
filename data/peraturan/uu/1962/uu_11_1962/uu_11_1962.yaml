@@ -7,21 +7,53 @@ title: Undang-Undang Nomor 11 Tahun 1962 tentang Hygiene Untuk Usaha Usaha Bagi 
   12/1962 Bank Pembangunan Swastauu
 tentang: HYGIENE UNTUK USAHA USAHA BAGI UMUMUU 12/1962 BANK PEMBANGUNAN SWASTAUU
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 23 Tahun 1992 Tentang Kesehatan'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1962-08-03'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1962
-source_pdf_url: https://peraturan.go.id/files/UU0111962.pdf
+source_url: https://peraturan.bpk.go.id/Details/50691/uu-no-11-tahun-1962
+source_pdf_url: https://peraturan.bpk.go.id/Download/39934/UU%20Nomor%2011%20Tahun%201962.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_23_1992
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_11_1962_1962-08-03
+  kind: asli
+  source: official
+  date: '1962-08-03'
+  date_basis: tanggal_penetapan
+  text: uu_11_1962_1962-08-03.txt
+  pasal_count: 11
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 94330dfb64d350af7f29be54b364dd2d8df4260a0207543deb04b8dba8766710
 pdf_sha256: 94330dfb64d350af7f29be54b364dd2d8df4260a0207543deb04b8dba8766710
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1962-08-03'
+tanggal_berlaku: '1962-08-03'
+lembaran_negara: 'LN. 1962/ No. 48 , TLN NO. 2475, LL SETNEG : 6 HLM'
+subjek: KESEHATAN - PERIZINAN, PELAYANAN PUBLIK
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1962
+  source_pdf_url: https://peraturan.go.id/files/UU0111962.pdf
+bpk:
+  id: 50691
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39934/UU%20Nomor%2011%20Tahun%201962.pdf
+    bpk_file_id: 39934
+    filename: UU Nomor 11 Tahun 1962.pdf
+    sha256: 94330dfb64d350af7f29be54b364dd2d8df4260a0207543deb04b8dba8766710
+    bytes: 39644
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_23_1992
+      citation: UU No. 23 Tahun 1992
+      tentang: Kesehatan
+      url: https://peraturan.bpk.go.id/Details/46620/uu-no-23-tahun-1992
+      note: null
+uji_materi: null

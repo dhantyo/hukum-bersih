@@ -6,23 +6,54 @@ year: 1961
 title: Undang-Undang Nomor 22 Tahun 1961 tentang Perguruan Tinggi
 tentang: PERGURUAN TINGGI
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 2 Tahun 1989 Tentang Sistem
-  Pendidikan Nasional'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1961-12-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-22-tahun-1961
-source_pdf_url: https://peraturan.go.id/files/61uu022.pdf
+source_url: https://peraturan.bpk.go.id/Details/51255/uu-no-22-tahun-1961
+source_pdf_url: https://peraturan.bpk.go.id/Download/40513/UU%20Nomor%2022%20Tahun%201961.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_7_1950
-  revoked_by:
-  - uu_2_1989
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_22_1961_1961-12-04
+  kind: asli
+  source: official
+  date: '1961-12-04'
+  date_basis: tanggal_penetapan
+  text: uu_22_1961_1961-12-04.txt
+  pasal_count: 37
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6ee8d3332c9bb7bb879162859ca556daa85a71bdf7da28aa6aa943efd809a3ed
 pdf_sha256: a2285c30eab3cdd7e2a082cfb887dcfe3dd64ad2fb85c5cf09d42af15ae5e56d
-parse_error: 'LeakedMarkupError: hcontainer_4__p_2: markup in text: ''ART 1 -'''
+tanggal_pengundangan: '1961-12-04'
+tanggal_berlaku: '1961-12-04'
+lembaran_negara: 'LN. 1961 No. 302, TLN NO. 2361, LL SETNEG : 12 HLM'
+subjek: PENDIDIKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-22-tahun-1961
+  source_pdf_url: https://peraturan.go.id/files/61uu022.pdf
+bpk:
+  id: 51255
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40513/UU%20Nomor%2022%20Tahun%201961.pdf
+    bpk_file_id: 40513
+    filename: UU Nomor 22 Tahun 1961.pdf
+    sha256: 6ee8d3332c9bb7bb879162859ca556daa85a71bdf7da28aa6aa943efd809a3ed
+    bytes: 86929
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_2_1989
+      citation: UU No. 2 Tahun 1989
+      tentang: Sistem Pendidikan Nasional
+      url: https://peraturan.bpk.go.id/Details/46794/uu-no-2-tahun-1989
+      note: null
+uji_materi: null

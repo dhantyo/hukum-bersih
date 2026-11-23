@@ -8,22 +8,54 @@ title: Undang-Undang Nomor 10 Tahun 1961 tentang Penetapan Peraturan Pemerintah 
 tentang: PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 1 TAHUN 1961
   TENTANG BARANG MENJADI UNDANG-UNDANG
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 7 Tahun 2014 Tentang Perdagangan'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1961-05-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DJUANDA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1961
-source_pdf_url: https://peraturan.go.id/files/61uu010.pdf
+source_url: https://peraturan.bpk.go.id/Details/51231/uu-no-10-tahun-1961
+source_pdf_url: https://peraturan.bpk.go.id/Download/40484/UU%20Nomor%2010%20Tahun%201961.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_7_2014
+  revoked_by: []
   enacts:
   - perppu_1_1961
   enacted_by: []
-versions: []
+versions:
+- id: uu_10_1961_1961-05-10
+  kind: asli
+  source: official
+  date: '1961-05-10'
+  date_basis: tanggal_penetapan
+  text: uu_10_1961_1961-05-10.txt
+  pasal_count: 12
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 21416056349468b95bd786a1bbffac0a7c025dc329f765de49bae03dc7bea6a5
 pdf_sha256: ee1694fc53972cdf7466aecee3e02a87fdff9d2ccada8a7f92fdad828ddb8160
-parse_error: 'LeakedMarkupError: hcontainer_7__p_2: markup in text: ''ART 1 -'''
+tanggal_pengundangan: '1961-05-10'
+tanggal_berlaku: '1961-05-10'
+lembaran_negara: 'LN. 1961 No. 215 , TLN NO. 2210, LL SETNEG : 5 HLM'
+subjek: PENGADAAN BARANG / JASA - PENGELOLAAN BARANG MILIK NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1961
+  source_pdf_url: https://peraturan.go.id/files/61uu010.pdf
+bpk:
+  id: 51231
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40484/UU%20Nomor%2010%20Tahun%201961.pdf
+    bpk_file_id: 40484
+    filename: UU Nomor 10 Tahun 1961.pdf
+    sha256: 21416056349468b95bd786a1bbffac0a7c025dc329f765de49bae03dc7bea6a5
+    bytes: 74653
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_7_2014
+      citation: UU No. 7 Tahun 2014
+      tentang: Perdagangan
+      url: https://peraturan.bpk.go.id/Details/38584/uu-no-7-tahun-2014
+      note: null
+uji_materi: null

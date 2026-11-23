@@ -6,22 +6,54 @@ year: 1962
 title: Undang-Undang Nomor 5 Tahun 1962 tentang Perusahaan Daerah
 tentang: PERUSAHAAN DAERAH
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 23 Tahun 2014 Tentang Pemerintahan
-  Daerah'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1962-02-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1962
-source_pdf_url: https://peraturan.go.id/files/UU0051962.pdf
+source_url: https://peraturan.bpk.go.id/Details/50675/uu-no-5-tahun-1962
+source_pdf_url: https://peraturan.bpk.go.id/Download/39918/UU%20Nomor%205%20Tahun%201962.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_23_2014
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_5_1962_1962-02-14
+  kind: asli
+  source: official
+  date: '1962-02-14'
+  date_basis: tanggal_penetapan
+  text: uu_5_1962_1962-02-14.txt
+  pasal_count: 32
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: cc60b99e6ec3a15f11aa47f3896e2c7a40d44d2b6acdbda405a744a4140e7d28
 pdf_sha256: cc60b99e6ec3a15f11aa47f3896e2c7a40d44d2b6acdbda405a744a4140e7d28
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1962-02-14'
+tanggal_berlaku: '1962-02-14'
+lembaran_negara: 'LN. 1962/ No. 10, TLN NO. 2387, LL SETNEG : 20 HLM'
+subjek: BUMD / BADAN USAHA MILIK DAERAH - PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA,
+  PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1962
+  source_pdf_url: https://peraturan.go.id/files/UU0051962.pdf
+bpk:
+  id: 50675
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39918/UU%20Nomor%205%20Tahun%201962.pdf
+    bpk_file_id: 39918
+    filename: UU Nomor 5 Tahun 1962.pdf
+    sha256: cc60b99e6ec3a15f11aa47f3896e2c7a40d44d2b6acdbda405a744a4140e7d28
+    bytes: 104439
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_23_2014
+      citation: UU No. 23 Tahun 2014
+      tentang: Pemerintahan Daerah
+      url: https://peraturan.bpk.go.id/Details/38685/uu-no-23-tahun-2014
+      note: null
+uji_materi: null

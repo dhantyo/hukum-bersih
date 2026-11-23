@@ -6,13 +6,13 @@ year: 1961
 title: Undang-Undang Nomor 4 Tahun 1961 tentang Perubahan Atau Penambahan Nama Keluarga
 tentang: PERUBAHAN ATAU PENAMBAHAN NAMA KELUARGA
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1961-02-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1961
-source_pdf_url: https://peraturan.go.id/files/UU0041961.pdf
+source_url: https://peraturan.bpk.go.id/Details/51125/uu-no-4-tahun-1961
+source_pdf_url: https://peraturan.bpk.go.id/Download/40377/UU%20Nomor%204%20Tahun%201961.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_4_1961_1961-02-25
+  kind: asli
+  source: official
+  date: '1961-02-25'
+  date_basis: tanggal_penetapan
+  text: uu_4_1961_1961-02-25.txt
+  pasal_count: 12
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 041538df0f8f5cabda2b3691882d369bace56e877e16dde9b78ed1fcf1c3dee4
 pdf_sha256: 041538df0f8f5cabda2b3691882d369bace56e877e16dde9b78ed1fcf1c3dee4
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1961-02-25'
+tanggal_berlaku: '1961-02-25'
+lembaran_negara: 'LN. 1961 No. 15 , TLN NO. 2154, LL SETNEG : 3 HLM'
+subjek: KEPENDUDUKAN DAN PERKAWINAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1961
+  source_pdf_url: https://peraturan.go.id/files/UU0041961.pdf
+bpk:
+  id: 51125
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40377/UU%20Nomor%204%20Tahun%201961.pdf
+    bpk_file_id: 40377
+    filename: UU Nomor 4 Tahun 1961.pdf
+    sha256: 041538df0f8f5cabda2b3691882d369bace56e877e16dde9b78ed1fcf1c3dee4
+    bytes: 53441
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_23_2006
+      citation: UU No. 23 Tahun 2006
+      tentang: Administrasi Kependudukan
+      url: https://peraturan.bpk.go.id/Details/40202/uu-no-23-tahun-2006
+      note: null
+uji_materi: null

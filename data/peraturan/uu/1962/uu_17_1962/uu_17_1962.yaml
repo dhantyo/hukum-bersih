@@ -13,12 +13,12 @@ tentang: PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG UNDANG NO. 3 TAHUN 1962
   MENJADI UNDANG-UN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1962-11-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DJUANDA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-1962
-source_pdf_url: https://peraturan.go.id/files/UU0171962.pdf
+source_url: https://peraturan.bpk.go.id/Details/50982/uu-no-17-tahun-1962
+source_pdf_url: https://peraturan.bpk.go.id/Download/40231/UU%20Nomor%2017%20Tahun%201962.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,6 +26,40 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_17_1962_1962-11-17
+  kind: asli
+  source: official
+  date: '1962-11-17'
+  date_basis: tanggal_penetapan
+  text: uu_17_1962_1962-11-17.txt
+  pasal_count: 16
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a07989eb9cb4e622a47972b2d20009243fddff06d5be8430cbb6000d03532904
 pdf_sha256: a07989eb9cb4e622a47972b2d20009243fddff06d5be8430cbb6000d03532904
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1962-11-17'
+tanggal_berlaku: '1962-06-06'
+lembaran_negara: 'LN. 1962/ No. 88 , TLN NO. 2513, LL SETNEG : 9 HLM'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER - KETATANEGARAAN, KENEGARAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-1962
+  source_pdf_url: https://peraturan.go.id/files/UU0171962.pdf
+bpk:
+  id: 50982
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40231/UU%20Nomor%2017%20Tahun%201962.pdf
+    bpk_file_id: 40231
+    filename: UU Nomor 17 Tahun 1962.pdf
+    sha256: a07989eb9cb4e622a47972b2d20009243fddff06d5be8430cbb6000d03532904
+    bytes: 37020
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: perppu_3_1962
+      citation: PERPU No. 3 Tahun 1962
+      tentang: Penerimaan Dan Penggunaan Warga-Negara Asing Yang Dengan Sukarela Turut-Serta
+        Dalam Perjuangan Pembebasan Irian Barat
+      url: https://peraturan.bpk.go.id/Details/53648/perpu-no-3-tahun-1962
+      note: null
+uji_materi: null

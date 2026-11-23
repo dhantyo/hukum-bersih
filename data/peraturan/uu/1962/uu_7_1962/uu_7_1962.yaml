@@ -9,12 +9,12 @@ tentang: PEMBUATAN PERJANJIAN PERSAHABATAN DAN KERJA SAMA ANTARA REPUBLIK INDONE
   DAN REPUBLIK SOSIALIS CEKOSLOVAKIA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1962-06-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1962
-source_pdf_url: https://peraturan.go.id/files/UU0071962.pdf
+source_url: https://peraturan.bpk.go.id/Details/50680/uu-no-7-tahun-1962
+source_pdf_url: https://peraturan.bpk.go.id/Download/39923/UU%20Nomor%207%20Tahun%201962.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_7_1962_1962
+- id: uu_7_1962_1962-06-18
   kind: asli
   source: official
-  date: null
+  date: '1962-06-18'
   date_basis: tanggal_penetapan
-  text: uu_7_1962_1962.txt
+  text: uu_7_1962_1962-06-18.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 91fbddfb03aeeb74c7fc77c570f8f87b5667cfd3831ace97b8f019a16418a1af
 pdf_sha256: 91fbddfb03aeeb74c7fc77c570f8f87b5667cfd3831ace97b8f019a16418a1af
+tanggal_pengundangan: '1962-06-18'
+tanggal_berlaku: '1962-06-18'
+lembaran_negara: 'LN. 1962/ No. 25 , TLN NO. 2439, LL SETNEG : 2 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1962
+  source_pdf_url: https://peraturan.go.id/files/UU0071962.pdf
+bpk:
+  id: 50680
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39923/UU%20Nomor%207%20Tahun%201962.pdf
+    bpk_file_id: 39923
+    filename: UU Nomor 7 Tahun 1962.pdf
+    sha256: 91fbddfb03aeeb74c7fc77c570f8f87b5667cfd3831ace97b8f019a16418a1af
+    bytes: 29188
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 9 Tahun 1962 tentang Anggaran Pendapatan Dan Belanja 
 tentang: ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN 1962
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1962-06-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1962
-source_pdf_url: https://peraturan.go.id/files/UU0091962.pdf
+source_url: https://peraturan.bpk.go.id/Details/50685/uu-no-9-tahun-1962
+source_pdf_url: https://peraturan.bpk.go.id/Download/39928/UU%20Nomor%209%20Tahun%201962.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,40 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_9_1962_1962-06-18
+  kind: asli
+  source: official
+  date: '1962-06-18'
+  date_basis: tanggal_penetapan
+  text: uu_9_1962_1962-06-18.txt
+  pasal_count: 6
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 39d43ed2ad5f45513527553eea2e3ef3030b3077ba0ede508e603c251c648a43
 pdf_sha256: 39d43ed2ad5f45513527553eea2e3ef3030b3077ba0ede508e603c251c648a43
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1962-06-18'
+tanggal_berlaku: '1962-01-01'
+lembaran_negara: 'LN. 1962/ No. 27, LL SETNEG : 3 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1962
+  source_pdf_url: https://peraturan.go.id/files/UU0091962.pdf
+bpk:
+  id: 50685
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39928/UU%20Nomor%209%20Tahun%201962.pdf
+    bpk_file_id: 39928
+    filename: UU Nomor 9 Tahun 1962.pdf
+    sha256: 39d43ed2ad5f45513527553eea2e3ef3030b3077ba0ede508e603c251c648a43
+    bytes: 25949
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_8_1963
+      citation: UU No. 8 Tahun 1963
+      tentang: Perubahan dan Tambahan Atas Anggaran Pendapatan Belanja Negara Tahun
+        1962
+      url: https://peraturan.bpk.go.id/Details/50648/uu-no-8-tahun-1963
+      note: null
+uji_materi: null

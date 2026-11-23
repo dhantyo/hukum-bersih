@@ -8,23 +8,62 @@ title: Undang-Undang Nomor 17 Tahun 1961 tentang Perubahan Undang-Undang Nomor 2
 tentang: PERUBAHAN UNDANG-UNDANG NOMOR 21 TAHUN 1952 TENTANG HAK MENGANGKAT DAN MEMBERHENTIKAN
   PEGAWAI NEGERI SIPIL
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 8 Tahun 1974 Tentang Pokok-pokok
-  Kepegawaian'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1961-07-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-1961
-source_pdf_url: https://peraturan.go.id/files/61uu017.pdf
+source_url: https://peraturan.bpk.go.id/Details/51242/uu-no-17-tahun-1961
+source_pdf_url: https://peraturan.bpk.go.id/Download/40496/UU%20Nomor%2017%20Tahun%201961.pdf
 relationships:
   amends:
   - id: uu_21_1952
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_8_1974
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_17_1961_1961-07-12
+  kind: asli
+  source: official
+  date: '1961-07-12'
+  date_basis: tanggal_penetapan
+  text: uu_17_1961_1961-07-12.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e16375e1b69778d369385467456aa208550c5c9feb50b31b31fc4dfdc1e73f8f
 pdf_sha256: e51d79dcf91974779cab7b677753db624850fdeff4b3dd22466cb054b3eccba9
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1961-07-12'
+tanggal_berlaku: '1961-02-01'
+lembaran_negara: 'LN. 1961 No. 259, TLN NO. 2301, LL SETNEG : 2 HLM'
+subjek: KEPEGAWAIAN, APARATUR NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-1961
+  source_pdf_url: https://peraturan.go.id/files/61uu017.pdf
+bpk:
+  id: 51242
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40496/UU%20Nomor%2017%20Tahun%201961.pdf
+    bpk_file_id: 40496
+    filename: UU Nomor 17 Tahun 1961.pdf
+    sha256: e16375e1b69778d369385467456aa208550c5c9feb50b31b31fc4dfdc1e73f8f
+    bytes: 39838
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_8_1974
+      citation: UU No. 8 Tahun 1974
+      tentang: Pokok- Pokok Kepegawaian
+      url: https://peraturan.bpk.go.id/Details/47417/uu-no-8-tahun-1974
+      note: null
+    Mengubah:
+    - id: uu_21_1952
+      citation: UU No. 21 Tahun 1952
+      tentang: Menetapkan "Undang-Undang Darurat tentang Hak Pengangkatan dan Pemberhentian
+        Pegawai-Pegawai Republik Indonesia Serikat" (Undang-Undang Darurat Nr 25 Dan
+        34 Tahun 1950) Sebagai Undang-Undang Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/40268/uu-no-21-tahun-1952
+      note: null
+uji_materi: null

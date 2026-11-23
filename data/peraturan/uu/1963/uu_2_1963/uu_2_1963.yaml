@@ -15,8 +15,8 @@ tanggal_penetapan: '1963-06-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DJUANDA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1963
-source_pdf_url: https://peraturan.go.id/files/UU0021963.pdf
+source_url: https://peraturan.bpk.go.id/Details/50571/uu-no-2-tahun-1963
+source_pdf_url: https://peraturan.bpk.go.id/Download/39812/UU%20Nomor%202%20Tahun%201963.pdf
 relationships:
   amends: []
   amended_by: []
@@ -33,4 +33,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1963_1963-06-22.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4aff244a3328f3a9e2ade5f302bab83f16134ee3022a43c3dca2efcbc18b4ca6
 pdf_sha256: 4aff244a3328f3a9e2ade5f302bab83f16134ee3022a43c3dca2efcbc18b4ca6
+tanggal_pengundangan: '1963-06-22'
+tanggal_berlaku: '1962-08-03'
+lembaran_negara: 'LN. 1963/ No. 69 , TLN NO. 2561, LL SETNEG : 2 HLM'
+subjek: BANTUAN, SUMBANGAN, BENCANA / KEBENCANAAN, DAN PENANGGULANGAN BENCANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1963
+  source_pdf_url: https://peraturan.go.id/files/UU0021963.pdf
+bpk:
+  id: 50571
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39812/UU%20Nomor%202%20Tahun%201963.pdf
+    bpk_file_id: 39812
+    filename: UU Nomor 2 Tahun 1963.pdf
+    sha256: 4aff244a3328f3a9e2ade5f302bab83f16134ee3022a43c3dca2efcbc18b4ca6
+    bytes: 26587
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

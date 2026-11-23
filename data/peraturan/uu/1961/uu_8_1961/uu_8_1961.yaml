@@ -6,13 +6,13 @@ year: 1961
 title: Undang-Undang Nomor 8 Tahun 1961 tentang Wajib Kerja Sarjana
 tentang: WAJIB KERJA SARJANA
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1961-04-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DJUANDA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1961
-source_pdf_url: https://peraturan.go.id/files/UU0081961.pdf
+source_url: https://peraturan.bpk.go.id/Details/51154/uu-no-8-tahun-1961
+source_pdf_url: https://peraturan.bpk.go.id/Download/40406/UU%20Nomor%208%20Tahun%201961.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,45 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_8_1961_1961-04-29
+  kind: asli
+  source: official
+  date: '1961-04-29'
+  date_basis: tanggal_penetapan
+  text: uu_8_1961_1961-04-29.txt
+  pasal_count: 9
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 37151b61bc725705dc238d02b1bba6dedb0f885800882a14c9d5c0f9da38add7
 pdf_sha256: 37151b61bc725705dc238d02b1bba6dedb0f885800882a14c9d5c0f9da38add7
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1961-04-29'
+tanggal_berlaku: '1961-04-29'
+lembaran_negara: 'LN. 1961 No. 207 , TLN NO. 2270, LL SETNEG : 7 HLM'
+subjek: PENDIDIKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1961
+  source_pdf_url: https://peraturan.go.id/files/UU0081961.pdf
+bpk:
+  id: 51154
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40406/UU%20Nomor%208%20Tahun%201961.pdf
+    bpk_file_id: 40406
+    filename: UU Nomor 8 Tahun 1961.pdf
+    sha256: 37151b61bc725705dc238d02b1bba6dedb0f885800882a14c9d5c0f9da38add7
+    bytes: 52258
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_13_2003
+      citation: UU No. 13 Tahun 2003
+      tentang: Ketenagakerjaan
+      url: https://peraturan.bpk.go.id/Details/43013/uu-no-13-tahun-2003
+      note: null
+    Mencabut:
+    - id: uu_8_1951
+      citation: UU No. 8 Tahun 1951
+      tentang: Penangguhan Pemberian Surat Idzin kepada Dokter dan Dokter Gigi
+      url: https://peraturan.bpk.go.id/Details/39840/uu-no-8-tahun-1951
+      note: null
+uji_materi: null

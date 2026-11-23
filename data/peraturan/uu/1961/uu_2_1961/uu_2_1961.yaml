@@ -7,22 +7,54 @@ title: Undang-Undang Nomor 2 Tahun 1961 tentang Pengeluaran Dan Pemasukan Tanama
   Dan Bibit Tanaman
 tentang: PENGELUARAN DAN PEMASUKAN TANAMAN DAN BIBIT TANAMAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 12 Tahun 1992 Tentang Sistem
-  Budidaya Tanaman'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1961-02-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1961
-source_pdf_url: https://peraturan.go.id/files/UU0021961.pdf
+source_url: https://peraturan.bpk.go.id/Details/51104/uu-no-2-tahun-1961
+source_pdf_url: https://peraturan.bpk.go.id/Download/40355/UU%20Nomor%202%20Tahun%201961.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_12_1992
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_2_1961_1961-02-17
+  kind: asli
+  source: official
+  date: '1961-02-17'
+  date_basis: tanggal_penetapan
+  text: uu_2_1961_1961-02-17.txt
+  pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d133d33f61b1caf811c47d70c77dd4f14c8eae0884c6b6fb507df97e31c48ebf
 pdf_sha256: d133d33f61b1caf811c47d70c77dd4f14c8eae0884c6b6fb507df97e31c48ebf
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1961-02-17'
+tanggal_berlaku: '1961-02-17'
+lembaran_negara: 'LN. 1961 No. 9, TLN NO. 2147, LL SETNEG : 5 HLM'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG - KEHUTANAN DAN PERKEBUNAN - PANGAN, PERTANIAN
+  DAN PETERNAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1961
+  source_pdf_url: https://peraturan.go.id/files/UU0021961.pdf
+bpk:
+  id: 51104
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40355/UU%20Nomor%202%20Tahun%201961.pdf
+    bpk_file_id: 40355
+    filename: UU Nomor 2 Tahun 1961.pdf
+    sha256: d133d33f61b1caf811c47d70c77dd4f14c8eae0884c6b6fb507df97e31c48ebf
+    bytes: 62808
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_12_1992
+      citation: UU No. 12 Tahun 1992
+      tentang: Sistem Budidaya Tanaman
+      url: https://peraturan.bpk.go.id/Details/46604/uu-no-12-tahun-1992
+      note: null
+uji_materi: null

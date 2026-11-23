@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 9 Tahun 1961 tentang Pengumpulan Uang Atau Barang
 tentang: PENGUMPULAN UANG ATAU BARANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1961-05-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DJUANDA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1961
-source_pdf_url: https://peraturan.go.id/files/UU0091961.pdf
+source_url: https://peraturan.bpk.go.id/Details/51166/uu-no-9-tahun-1961
+source_pdf_url: https://peraturan.bpk.go.id/Download/40418/UU%20Nomor%209%20Tahun%201961.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,34 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_9_1961_1961-05-10
+  kind: asli
+  source: official
+  date: '1961-05-10'
+  date_basis: tanggal_penetapan
+  text: uu_9_1961_1961-05-10.txt
+  pasal_count: 9
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 383a9bb03aeb4eb78e9d1ca97a5000aea1b5b8fd5a5ef9e65d77863f38a72cbd
 pdf_sha256: 383a9bb03aeb4eb78e9d1ca97a5000aea1b5b8fd5a5ef9e65d77863f38a72cbd
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1961-05-10'
+tanggal_berlaku: '1961-05-10'
+lembaran_negara: 'LN. 1961 No. 214, TLN NO. 2273, LL SETNEG : 8 HLM'
+subjek: PENGELOLAAN KEUANGAN NEGARA / DAERAH - BANTUAN, SUMBANGAN, BENCANA / KEBENCANAAN,
+  DAN PENANGGULANGAN BENCANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1961
+  source_pdf_url: https://peraturan.go.id/files/UU0091961.pdf
+bpk:
+  id: 51166
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40418/UU%20Nomor%209%20Tahun%201961.pdf
+    bpk_file_id: 40418
+    filename: UU Nomor 9 Tahun 1961.pdf
+    sha256: 383a9bb03aeb4eb78e9d1ca97a5000aea1b5b8fd5a5ef9e65d77863f38a72cbd
+    bytes: 55411
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

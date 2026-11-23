@@ -13,8 +13,8 @@ tanggal_penetapan: '1961-05-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DJUANDA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1961
-source_pdf_url: https://peraturan.go.id/files/UU0111961.pdf
+source_url: https://peraturan.bpk.go.id/Details/51230/uu-no-11-tahun-1961
+source_pdf_url: https://peraturan.bpk.go.id/Download/40483/UU%20Nomor%2011%20Tahun%201961.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,3 +25,28 @@ relationships:
 versions: []
 pdf_sha256: 8ce45bdd6b921f3f626f19482295b6bb7ceb548c34b74691735ee75a088f7855
 pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1961-05-10'
+tanggal_berlaku: '1961-05-10'
+lembaran_negara: 'LN. 1961 No. 216 , TLN NO. 2274, LL SETNEG : 2 HLM'
+subjek: PERTAMBANGAN MIGAS, MINERAL DAN ENERGI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1961
+  source_pdf_url: https://peraturan.go.id/files/UU0111961.pdf
+bpk:
+  id: 51230
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40483/UU%20Nomor%2011%20Tahun%201961.pdf
+    bpk_file_id: 40483
+    filename: UU Nomor 11 Tahun 1961.pdf
+    sha256: 8ce45bdd6b921f3f626f19482295b6bb7ceb548c34b74691735ee75a088f7855
+    bytes: 38715
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_10_1959
+      citation: UU No. 10 Tahun 1959
+      tentang: Pembatalan Hak-Hak Pertambangan
+      url: https://peraturan.bpk.go.id/Details/51459/uu-no-10-tahun-1959
+      note: null
+uji_materi: null
+parser_version_tried: 12

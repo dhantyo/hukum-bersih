@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 7 Tahun 1961 tentang Anggaran Pendapatan Dan Belanja 
 tentang: ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN 1961
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1961-03-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1961
-source_pdf_url: https://peraturan.go.id/files/61uu007.pdf
+source_url: https://peraturan.bpk.go.id/Details/51147/uu-no-7-tahun-1961
+source_pdf_url: https://peraturan.bpk.go.id/Download/40399/UU%20Nomor%207%20Tahun%201961.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_7_1961_1961
+- id: uu_7_1961_1961-03-01
   kind: asli
   source: official
-  date: null
+  date: '1961-03-01'
   date_basis: tanggal_penetapan
-  text: uu_7_1961_1961.txt
+  text: uu_7_1961_1961-03-01.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9797f76592c6ecb6939c8d7d06dc0e655e92363a29628be693a7124b1d2a9b57
 pdf_sha256: 77275e69643a9df9841498c4308e7c970cdd903cc46db1d3ad22060d8d1cff83
+tanggal_pengundangan: '1961-03-01'
+tanggal_berlaku: '1961-01-01'
+lembaran_negara: 'LN. 1961 No. 22, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1961
+  source_pdf_url: https://peraturan.go.id/files/61uu007.pdf
+bpk:
+  id: 51147
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40399/UU%20Nomor%207%20Tahun%201961.pdf
+    bpk_file_id: 40399
+    filename: UU Nomor 7 Tahun 1961.pdf
+    sha256: 9797f76592c6ecb6939c8d7d06dc0e655e92363a29628be693a7124b1d2a9b57
+    bytes: 37102
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_18_1962
+      citation: UU No. 18 Tahun 1962
+      tentang: Perubahan/Penambahan Anggaran Pendapatan dan Belanja Negara Untuk Tahun
+        1961
+      url: https://peraturan.bpk.go.id/Details/50983/uu-no-18-tahun-1962
+      note: null
+uji_materi: null

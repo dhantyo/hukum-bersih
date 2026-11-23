@@ -17,8 +17,8 @@ tanggal_penetapan: '1963-06-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DJUANDA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1963
-source_pdf_url: https://peraturan.go.id/files/UU0041963.pdf
+source_url: https://peraturan.bpk.go.id/Details/69653/uu-no-4-tahun-1963
+source_pdf_url: https://peraturan.bpk.go.id/Download/60108/UU%20Nomor%204%20Tahun%201963.pdf
 relationships:
   amends: []
   amended_by: []
@@ -34,4 +34,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1963_1963-06-12.txt
   pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6a2a90757ee5c4ec63d7790f6573f09e149ceb7720699e0a3453b0fa021c6c5c
 pdf_sha256: 6a2a90757ee5c4ec63d7790f6573f09e149ceb7720699e0a3453b0fa021c6c5c
+tanggal_pengundangan: '1963-06-22'
+tanggal_berlaku: '1962-08-03'
+lembaran_negara: 'LN. 1963, No.71, TLN. No. 2563/LL Setneg : 5 Hlm'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1963
+  source_pdf_url: https://peraturan.go.id/files/UU0041963.pdf
+bpk:
+  id: 69653
+  files:
+  - url: https://peraturan.bpk.go.id/Download/60108/UU%20Nomor%204%20Tahun%201963.pdf
+    bpk_file_id: 60108
+    filename: UU Nomor 4 Tahun 1963.pdf
+    sha256: 6a2a90757ee5c4ec63d7790f6573f09e149ceb7720699e0a3453b0fa021c6c5c
+    bytes: 31810
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

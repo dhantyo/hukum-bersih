@@ -9,12 +9,12 @@ tentang: PENETAPAN ANGGARAN PENDAPATAN DAN BELANJA TAMBAHAN DARI REPUBLIK INDONE
   UNTUK TAHUN 1960
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1962-01-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1962
-source_pdf_url: https://peraturan.go.id/files/UU0031962.pdf
+source_url: https://peraturan.bpk.go.id/Details/50669/uu-no-3-tahun-1962
+source_pdf_url: https://peraturan.bpk.go.id/Download/39912/UU%20Nomor%203%20Tahun%201962.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_3_1962_1962-01-18
+  kind: asli
+  source: official
+  date: '1962-01-18'
+  date_basis: tanggal_penetapan
+  text: uu_3_1962_1962-01-18.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 578c64e58ced02698319571a8269cf97dc9c0be1b501ab3450273c7d9a619604
 pdf_sha256: 578c64e58ced02698319571a8269cf97dc9c0be1b501ab3450273c7d9a619604
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1962-01-18'
+tanggal_berlaku: '1960-01-01'
+lembaran_negara: 'LN. 1962/ No. 4 , LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1962
+  source_pdf_url: https://peraturan.go.id/files/UU0031962.pdf
+bpk:
+  id: 50669
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39912/UU%20Nomor%203%20Tahun%201962.pdf
+    bpk_file_id: 39912
+    filename: UU Nomor 3 Tahun 1962.pdf
+    sha256: 578c64e58ced02698319571a8269cf97dc9c0be1b501ab3450273c7d9a619604
+    bytes: 23837
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

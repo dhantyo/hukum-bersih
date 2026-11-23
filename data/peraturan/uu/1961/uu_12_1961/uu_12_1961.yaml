@@ -9,12 +9,12 @@ tentang: PEMBUATAN PERJANJIAN PERSAHABATAN ANTARA REPUBLIK INDONESIA DAN REPUBLI
   RAKYAT TIONGKOK *)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1961-06-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JUANDA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1961
-source_pdf_url: https://peraturan.go.id/files/UU0121961.pdf
+source_url: https://peraturan.bpk.go.id/Details/51232/uu-no-12-tahun-1961
+source_pdf_url: https://peraturan.bpk.go.id/Download/40485/UU%20Nomor%2012%20Tahun%201961.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_12_1961_1961-06-10
+  kind: asli
+  source: official
+  date: '1961-06-10'
+  date_basis: tanggal_penetapan
+  text: uu_12_1961_1961-06-10.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7b62d7835a8fe90155c05f1546c08b86ed66b46e120c77da103a12d0bb8f6084
 pdf_sha256: 7b62d7835a8fe90155c05f1546c08b86ed66b46e120c77da103a12d0bb8f6084
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1961-06-10'
+tanggal_berlaku: '1961-06-10'
+lembaran_negara: 'LN. 1961 No. 238 , TLN NO. 2279, LL SETNEG : 2 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1961
+  source_pdf_url: https://peraturan.go.id/files/UU0121961.pdf
+bpk:
+  id: 51232
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40485/UU%20Nomor%2012%20Tahun%201961.pdf
+    bpk_file_id: 40485
+    filename: UU Nomor 12 Tahun 1961.pdf
+    sha256: 7b62d7835a8fe90155c05f1546c08b86ed66b46e120c77da103a12d0bb8f6084
+    bytes: 41874
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

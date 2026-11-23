@@ -15,8 +15,8 @@ tanggal_penetapan: '1963-06-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DJUANDA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1963
-source_pdf_url: https://peraturan.go.id/files/UU0031963.pdf
+source_url: https://peraturan.bpk.go.id/Details/50572/uu-no-3-tahun-1963
+source_pdf_url: https://peraturan.bpk.go.id/Download/39813/UU%20Nomor%203%20Tahun%201963.pdf
 relationships:
   amends: []
   amended_by: []
@@ -33,4 +33,27 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1963_1963-06-22.txt
   pasal_count: 8
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 33c1bbd2725236e4831c2f95c2f34ddae08970b38cd61ccc36df33aaef7b91c6
 pdf_sha256: 33c1bbd2725236e4831c2f95c2f34ddae08970b38cd61ccc36df33aaef7b91c6
+tanggal_penetapan_bpk: '1962-06-22'
+tanggal_pengundangan: '1963-06-22'
+tanggal_berlaku: '1962-08-03'
+lembaran_negara: 'LN. 1963/ No. 70 , TLN NO. 2562, LL SETNEG : 7 HLM'
+subjek: BANTUAN, SUMBANGAN, BENCANA / KEBENCANAAN, DAN PENANGGULANGAN BENCANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1963
+  source_pdf_url: https://peraturan.go.id/files/UU0031963.pdf
+bpk:
+  id: 50572
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39813/UU%20Nomor%203%20Tahun%201963.pdf
+    bpk_file_id: 39813
+    filename: UU Nomor 3 Tahun 1963.pdf
+    sha256: 33c1bbd2725236e4831c2f95c2f34ddae08970b38cd61ccc36df33aaef7b91c6
+    bytes: 39841
+    archive_url: null
+  status_peraturan: null
+  tanggal_pengundangan: '1962-06-22'
+uji_materi: null

@@ -6,13 +6,13 @@ year: 1961
 title: Undang-Undang Nomor 16 Tahun 1961 tentang Pembentukan Kejaksaan Tinggi
 tentang: PEMBENTUKAN KEJAKSAAN TINGGI
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1961-06-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: JUANDA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-1961
-source_pdf_url: https://peraturan.go.id/files/61uu016.pdf
+source_url: https://peraturan.bpk.go.id/Details/51240/uu-no-16-tahun-1961
+source_pdf_url: https://peraturan.bpk.go.id/Download/40494/UU%20Nomor%2016%20Tahun%201961.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_16_1961_1961-06-30
+  kind: asli
+  source: official
+  date: '1961-06-30'
+  date_basis: tanggal_penetapan
+  text: uu_16_1961_1961-06-30.txt
+  pasal_count: 10
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: de4d217772d6a0ed2fe5aae04370da7c2ddeb3fd309d2567a0be0d35387a810b
 pdf_sha256: b7b9bd8c845d995d377d467d26b761fb496627dadd89d8de4fcd2bfe75a9b15d
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1961-06-30'
+tanggal_berlaku: '1961-06-30'
+lembaran_negara: 'LN. 1961 No. 255, TLN NO. 2299, LL SETNEG : 3 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-1961
+  source_pdf_url: https://peraturan.go.id/files/61uu016.pdf
+bpk:
+  id: 51240
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40494/UU%20Nomor%2016%20Tahun%201961.pdf
+    bpk_file_id: 40494
+    filename: UU Nomor 16 Tahun 1961.pdf
+    sha256: de4d217772d6a0ed2fe5aae04370da7c2ddeb3fd309d2567a0be0d35387a810b
+    bytes: 43789
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_5_1991
+      citation: UU No. 5 Tahun 1991
+      tentang: Kejaksaan Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/46657/uu-no-5-tahun-1991
+      note: null
+uji_materi: null

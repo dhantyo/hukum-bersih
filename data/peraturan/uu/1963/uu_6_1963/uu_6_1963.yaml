@@ -6,21 +6,65 @@ year: 1963
 title: Undang-Undang Nomor 6 Tahun 1963 tentang Tenaga Kesehatan
 tentang: TENAGA KESEHATAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 23 Tahun 1992 Tentang Kesehatan'
+status: tidak_berlaku
 tanggal_penetapan: '1963-07-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1963
-source_pdf_url: https://peraturan.go.id/files/uu6-1963.pdf
+source_url: https://peraturan.bpk.go.id/Details/50620/uu-no-6-tahun-1963
+source_pdf_url: https://peraturan.bpk.go.id/Download/39862/UU%20Nomor%206%20Tahun%201963.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_23_1992
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_6_1963_1963-07-12
+  kind: asli
+  source: official
+  date: '1963-07-12'
+  date_basis: tanggal_penetapan
+  text: uu_6_1963_1963-07-12.txt
+  pasal_count: 14
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 21f27166f749b8450a3ef5bb316600c2f1706858eb2039390a9494dbd38d18f7
 pdf_sha256: 21f27166f749b8450a3ef5bb316600c2f1706858eb2039390a9494dbd38d18f7
-parse_error: 'LeakedMarkupError: hcontainer_9__p_2: markup in text: ''ART 1 -'''
+tanggal_pengundangan: '1963-07-22'
+tanggal_berlaku: '1963-07-12'
+lembaran_negara: 'LN. 1963/ No. 79, TLN NO. 2576, LL SETNEG : 8 HLM'
+subjek: KESEHATAN - JABATAN / PROFESI / KEAHLIAN / SERTIFIKASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1963
+  source_pdf_url: https://peraturan.go.id/files/uu6-1963.pdf
+bpk:
+  id: 50620
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39862/UU%20Nomor%206%20Tahun%201963.pdf
+    bpk_file_id: 39862
+    filename: UU Nomor 6 Tahun 1963.pdf
+    sha256: 21f27166f749b8450a3ef5bb316600c2f1706858eb2039390a9494dbd38d18f7
+    bytes: 44165
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_23_1992
+      citation: UU No. 23 Tahun 1992
+      tentang: Kesehatan
+      url: https://peraturan.bpk.go.id/Details/46620/uu-no-23-tahun-1992
+      note: null
+    Mencabut:
+    - id: uu_9_1951
+      citation: UU No. 9 Tahun 1951
+      tentang: Pembagian Tenaga Dokter, Dokter Gigi dan Bidan Secara Rasionil
+      url: https://peraturan.bpk.go.id/Details/39843/uu-no-9-tahun-1951
+      note: null
+    - id: uu_10_1951
+      citation: UU No. 10 Tahun 1951
+      tentang: Mengatur Tenaga Dokter Partikulir dalam Keadaan Genting
+      url: https://peraturan.bpk.go.id/Details/39845/uu-no-10-tahun-1951
+      note: null
+  tanggal_pengundangan: '1963-07-12'
+uji_materi: null

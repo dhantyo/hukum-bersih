@@ -12,28 +12,60 @@ tentang: PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG UNDANG NO. 1 TAHUN 1962
   KEPENTINGAN KEAMANAN DAN PERTAHANAN NEGARA (LEMBARAN NEGARA TAHUN 1962 NO. 8) MENJADI
   UNDANG UNDAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 27 Tahun 1997 Tentang Mobilisasi
-  dan Demobilisasi'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1962-09-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-1962
-source_pdf_url: https://peraturan.go.id/files/UU0141962.pdf
+source_url: https://peraturan.bpk.go.id/Details/50975/uu-no-14-tahun-1962
+source_pdf_url: https://peraturan.bpk.go.id/Download/40224/UU%20Nomor%2014%20Tahun%201962.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_27_1997
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_14_1962_1962
+- id: uu_14_1962_1962-09-06
   kind: asli
   source: official
-  date: null
+  date: '1962-09-06'
   date_basis: tanggal_penetapan
-  text: uu_14_1962_1962.txt
-  pasal_count: 1
+  text: uu_14_1962_1962-09-06.txt
+  pasal_count: 14
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 17ef56111d140d71a7b8cd4c1251f90e0b13b168ec28e582101c2be145a66593
 pdf_sha256: 17ef56111d140d71a7b8cd4c1251f90e0b13b168ec28e582101c2be145a66593
+tanggal_pengundangan: '1962-09-06'
+tanggal_berlaku: '1961-12-19'
+lembaran_negara: 'LN. 1962/ No. 64 , TLN NO. 2492 LL SETNEG : 12 HLM'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-1962
+  source_pdf_url: https://peraturan.go.id/files/UU0141962.pdf
+bpk:
+  id: 50975
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40224/UU%20Nomor%2014%20Tahun%201962.pdf
+    bpk_file_id: 40224
+    filename: UU Nomor 14 Tahun 1962.pdf
+    sha256: 17ef56111d140d71a7b8cd4c1251f90e0b13b168ec28e582101c2be145a66593
+    bytes: 43780
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_27_1997
+      citation: UU No. 27 Tahun 1997
+      tentang: Mobilisasi dan Demobilisasi
+      url: https://peraturan.bpk.go.id/Details/46042/uu-no-27-tahun-1997
+      note: null
+    Menetapkan:
+    - id: perppu_1_1962
+      citation: PERPU No. 1 Tahun 1962
+      tentang: Pemanggilan Dan Pengerahan Semua Warga Negara Dalam Rangka Mobilisasi
+        Umum Untuk Kepentingan Keamanan Dan Pertahanan Negara
+      url: https://peraturan.bpk.go.id/Details/53646/perpu-no-1-tahun-1962
+      note: null
+uji_materi: null

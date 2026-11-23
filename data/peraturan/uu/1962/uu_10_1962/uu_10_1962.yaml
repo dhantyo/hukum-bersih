@@ -9,12 +9,12 @@ tentang: PENETAPAN ANGGARAN BAGIAN BAGIAN PERUSAHAAN NEGARA I.B.W. DARI ANGGARAN
   REPUBLIK INDONESIA UNTUK TAHUN 1962
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1962-06-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1962
-source_pdf_url: https://peraturan.go.id/files/UU0101962.pdf
+source_url: https://peraturan.bpk.go.id/Details/50690/uu-no-10-tahun-1962
+source_pdf_url: https://peraturan.bpk.go.id/Download/39933/UU%20Nomor%2010%20Tahun%201962.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_10_1962_1962-06-18
+  kind: asli
+  source: official
+  date: '1962-06-18'
+  date_basis: tanggal_penetapan
+  text: uu_10_1962_1962-06-18.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2e3cdedc46c42b5a774b2dc4b871f1d8e58852b8777b2f2676bd84d165314ce3
 pdf_sha256: 2e3cdedc46c42b5a774b2dc4b871f1d8e58852b8777b2f2676bd84d165314ce3
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1962-06-18'
+tanggal_berlaku: '1962-01-01'
+lembaran_negara: 'LN. 1962/ No. 28, LL SETNEG : 3 HLM'
+subjek: APBN - BUMN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1962
+  source_pdf_url: https://peraturan.go.id/files/UU0101962.pdf
+bpk:
+  id: 50690
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39933/UU%20Nomor%2010%20Tahun%201962.pdf
+    bpk_file_id: 39933
+    filename: UU Nomor 10 Tahun 1962.pdf
+    sha256: 2e3cdedc46c42b5a774b2dc4b871f1d8e58852b8777b2f2676bd84d165314ce3
+    bytes: 25225
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
