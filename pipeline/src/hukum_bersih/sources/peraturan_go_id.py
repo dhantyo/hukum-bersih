@@ -184,6 +184,7 @@ def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str, extra: list[Pat
         rec.pop("pdf_quality", None)
         rec.pop("parse_error", None)
         rec.pop("reparse_error", None)
+        rec.pop("recheck", None)
 
     try:
         doc = parse_pdf(pdf, extra or [])

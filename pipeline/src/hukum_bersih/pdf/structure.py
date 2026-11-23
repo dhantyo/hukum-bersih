@@ -13,7 +13,7 @@ from collections.abc import Sequence
 from dataclasses import dataclass, field
 from pathlib import Path
 
-PARSER_VERSION = 12  # 12: OCR letters for digits in heading numbers ("Pasal S1"), spaced marks ("Pasal 84 ,"); amending Penjelasan: Angka above Ayat (UU 11, 12, 13/2022). 11: OCR specks after a Pasal heading ("Pasal 4 :", UU 29/2024); parallel OCR (same words). 10: OCR speck before a Pasal heading ("' Pasal 8", UU 135/2024). 9: browser print headers/footers dropped; separate Penjelasan PDF read (UU 19/2003). 8: v7 dropped a Penjelasan after a copy certification (UU 2/2025): fixed;
+PARSER_VERSION = 13  # 13: misprinted pasal numbers confirmed by the next heading ("Pasal 9" twice, UU 19/1948). 12: OCR letters for digits in heading numbers ("Pasal S1"), spaced marks ("Pasal 84 ,"); amending Penjelasan: Angka above Ayat (UU 11, 12, 13/2022). 11: OCR specks after a Pasal heading ("Pasal 4 :", UU 29/2024); parallel OCR (same words). 10: OCR speck before a Pasal heading ("' Pasal 8", UU 135/2024). 9: browser print headers/footers dropped; separate Penjelasan PDF read (UU 19/2003). 8: v7 dropped a Penjelasan after a copy certification (UU 2/2025): fixed;
 #                    Penjelasan of amending laws (Pasal I/II), OCR '1. UMUM'.
 #                   7: amending laws keep quoted articles in Pasal I, white (hidden)
 #                    text dropped, salinan certification left out, MEMORI PENJELASAN;
@@ -276,6 +276,27 @@ class Parser:
         return "PERUBAHAN" in title and bool(re.match(
             r"^(Beberapa ketentuan|Ketentuan .{0,80}diubah|Undang-Undang Nomor .{0,200}diubah)", nxt))
 
+    def next_heading(self, i: int) -> int | None:
+        """Number of the next line that is a whole 'Pasal N' heading, within 400 lines."""
+        for ln in self.lines[i + 1:i + 400]:
+            if (m := PASAL_RE.match(ln)) and not m[1][-1].isalpha():
+                return int(m[1]) if m[1].isdigit() else roman(m[1])
+            if PENJELASAN_RE.match(ln) or CLOSING_RE.match(ln):
+                return None
+        return None
+
+    def misprinted(self, i: int, n: int, last: int) -> bool:
+        """A heading whose printed number breaks the sequence but the next heading continues it:
+        a misprint in the copy ('Pasal 9' twice, UU 19/1948; 'Pasal 8' for 3, UU 29/1948; 'Pasal
+        II' for 11, UU 1/1951), or a number the copy skips (the next is one more than this). It
+        must follow the end of a sentence, so a cross-reference wrapped onto its own line is not
+        taken."""
+        prev = self.lines[i - 1].rstrip() if i else ""
+        if not prev.endswith((".", ";", ":", ")")) and not is_caps(prev):
+            return False
+        nxt = self.next_heading(i)
+        return nxt == last + 2 or (last + 1 < n <= last + 3 and nxt == n + 1)
+
     def had_penjelasan(self) -> bool:
         return any(b.kind == "penjelasan" for b in self.doc.blocks)
 
@@ -338,7 +359,7 @@ class Parser:
                 self.emit(Block("closing", text=line))          # signature blocks: as printed
             return 1
         if self.in_penjelasan:
-            return self.step_penjelasan(line)
+            return self.step_penjelasan(line, i)
 
         if self.amending and self.last_pasal == 1 and (m := PASAL_RE.match(line)) and m[1] == "2" and (
                 not self.amends_so_far()         # "Pasal I." was a misprint for Pasal 1 (UU 16/1953)
@@ -373,8 +394,13 @@ class Parser:
                 num = "I"                                # OCR reads the Roman I of Pasal I as 1
                 self.doc.warnings.append("'Pasal 1' read as 'Pasal I' (amending law, OCR)")
             n = int(re.match(r"\d+", num)[0]) if num[0].isdigit() else roman(num)
-            # anything else is a cross-reference that happens to start a wrapped line
-            if n == self.last_pasal + 1 or (num[-1].isalpha() and n == self.last_pasal):
+            # anything else is a cross-reference that happens to start a wrapped line, unless the
+            # number is a misprint the following headings confirm (misprinted())
+            if (n == self.last_pasal + 1 or (num[-1].isalpha() and n == self.last_pasal)
+                    or (self.last_pasal and not self.amending and self.misprinted(i, n, self.last_pasal))):
+                if n != self.last_pasal + 1 and not (num[-1].isalpha() and n == self.last_pasal):
+                    n = self.last_pasal + 1 if self.next_heading(i) == self.last_pasal + 2 else n
+                    self.doc.warnings.append(f"'Pasal {num}' printed where Pasal {n} belongs; kept as printed")
                 if n == 1 and not num[0].isdigit() and not self.last_bab:
                     self.amending = True
                 self.last_pasal = n
@@ -435,7 +461,7 @@ class Parser:
         self.append(line)
         return 1
 
-    def step_penjelasan(self, line: str) -> int:
+    def step_penjelasan(self, line: str, i: int) -> int:
         # "I. UMUM" / "II. PASAL DEMI PASAL", with the numeral sometimes on its own line
         if re.match(r"^(?:I|II)\.$", line) and not self.p_last_pasal:
             return 1
@@ -451,9 +477,12 @@ class Parser:
                 self.p_last_pasal, self.p_roman = n, True
                 self.emit(Block("p_pasal", label=f"Pasal {m[1]}"))
                 return 1
-        if (m := PASAL_RE.match(line)) and m[1][0].isdigit() and not self.p_roman:
-            n = int(re.match(r"\d+", m[1])[0])
-            if n == self.p_last_pasal + 1 or (m[1][-1].isalpha() and n == self.p_last_pasal):
+        if (m := PASAL_RE.match(line)) and not self.p_roman and (m[1][0].isdigit() or self.p_last_pasal):
+            n = int(re.match(r"\d+", m[1])[0]) if m[1][0].isdigit() else roman(m[1])
+            if (n == self.p_last_pasal + 1 or (m[1][-1].isalpha() and n == self.p_last_pasal)
+                    or (self.p_last_pasal and self.misprinted(i, n, self.p_last_pasal))):
+                if self.p_last_pasal and n != self.p_last_pasal + 1 and self.next_heading(i) == self.p_last_pasal + 2:
+                    n = self.p_last_pasal + 1
                 self.p_last_pasal = n
                 self.emit(Block("p_pasal", label=f"Pasal {m[1]}"))
                 return 1
