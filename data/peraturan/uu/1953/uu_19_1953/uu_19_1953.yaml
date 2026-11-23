@@ -9,13 +9,13 @@ title: Undang-Undang Nomor 19 Tahun 1953 tentang Pengubahan Bea Pembubaran Yang 
 tentang: PENGUBAHAN BEA PEMBUBARAN YANG DITETAPKAN DALAM PASAL 5 AYAT 2 ï¿½JACHTORDONNANTIE
   JAVA EN MADURA 1940ï¿½ (STAATSBLAD 1939 NR 733)
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1953-06-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu19-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/45319/uu-no-19-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33819/UU%20Nomor%2019%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,3 +32,28 @@ versions:
   text: uu_19_1953_1953.txt
   pasal_count: 11
 pdf_sha256: ee16c4649aac431b63e4beb1ab20f2eb92a657ca9b421b662521ffaa95235fc2
+tanggal_pengundangan: '1953-06-25'
+tanggal_berlaku: '1953-06-25'
+lembaran_negara: 'LN.1953/NO.53, LL SETNEG : 2 HLM.'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu19-1954.pdf
+bpk:
+  id: 45319
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33819/UU%20Nomor%2019%20Tahun%201953.pdf
+    bpk_file_id: 33819
+    filename: UU Nomor 19 Tahun 1953.pdf
+    sha256: 66da689a714ac555b88c4002d6beee7a8bedb51b6d79d383d3b4883e3bac1a7d
+    bytes: 25734
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_2_1988
+      citation: UU No. 2 Tahun 1988
+      tentang: Prajurit Angkatan Bersenjata Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/46808/uu-no-2-tahun-1988
+      note: null
+uji_materi: null
+reparse_error: 'v12: 2 pasal, stored text has 11'

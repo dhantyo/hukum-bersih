@@ -9,13 +9,13 @@ title: Undang-Undang Nomor 14 Tahun 1953 tentang Perlakuan Terhadap Anggota Angk
 tentang: PERLAKUAN TERHADAP ANGGOTA ANGKATAN PERANG YANG DIPERHENTIKAN DARI DINAS
   KETENTARAAN KARENA TIDAK MEMPERBAHARUI IKATAN DINAS
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1953-05-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu14-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45298/uu-no-14-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33797/UU%20Nomor%2014%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,6 +23,40 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_14_1953_1953-05-20
+  kind: asli
+  source: official
+  date: '1953-05-20'
+  date_basis: tanggal_penetapan
+  text: uu_14_1953_1953-05-20.txt
+  pasal_count: 9
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 422ab5f57f9cd6b7453301f348641491904506490ed852104035b6798307a82a
 pdf_sha256: d0190b9d749defb964ffd275e0e84b28849c2cc40ee92ce6d622f8eb296281e0
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1953-06-11'
+tanggal_berlaku: '1953-09-11'
+lembaran_negara: 'LN.1953/NO.44, LL SETNEG : 6 HLM.'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu14-1953.pdf
+bpk:
+  id: 45298
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33797/UU%20Nomor%2014%20Tahun%201953.pdf
+    bpk_file_id: 33797
+    filename: UU Nomor 14 Tahun 1953.pdf
+    sha256: 422ab5f57f9cd6b7453301f348641491904506490ed852104035b6798307a82a
+    bytes: 32776
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: null
+      citation: UUDrt No. 13 Tahun 1955
+      tentang: Pencabutan Dan Penggantian Undang-Undang No. 14 Tahun 1953 (Lembaran-Negara
+        1953 No. 44)
+      url: https://peraturan.bpk.go.id/Details/53022/uudrt-no-13-tahun-1955
+      note: null
+uji_materi: null

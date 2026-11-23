@@ -7,22 +7,60 @@ title: Undang-Undang Nomor 16 Tahun 1953 tentang Kedudukan Hukum Anggota Angkata
   Perang
 tentang: KEDUDUKAN HUKUM ANGGOTA ANGKATAN PERANG
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 2 Tahun 1988 Tentang Prajurit
-  Angkatan Bersenjata Ri'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1953-05-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu16-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45305/uu-no-16-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33805/UU%20Nomor%2016%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_2_1988
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_16_1953_1953-05-20
+  kind: asli
+  source: official
+  date: '1953-05-20'
+  date_basis: tanggal_penetapan
+  text: uu_16_1953_1953-05-20.txt
+  pasal_count: 21
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4ebdf7318081f3193eac4bdf2662154edd8f816752825c31f4a0b878d72e9fca
 pdf_sha256: 6c6622e32ee70ffa4ae1df8b584ae7ac42f26f0cf84020659fd847753db6ec84
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1953-06-11'
+tanggal_berlaku: '1953-01-01'
+lembaran_negara: 'LN.1953/NO.46, LL SETNEG : 12 HLM.'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu16-1953.pdf
+bpk:
+  id: 45305
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33805/UU%20Nomor%2016%20Tahun%201953.pdf
+    bpk_file_id: 33805
+    filename: UU Nomor 16 Tahun 1953.pdf
+    sha256: 4ebdf7318081f3193eac4bdf2662154edd8f816752825c31f4a0b878d72e9fca
+    bytes: 42860
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_2_1988
+      citation: UU No. 2 Tahun 1988
+      tentang: Prajurit Angkatan Bersenjata Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/46808/uu-no-2-tahun-1988
+      note: null
+    Mencabut:
+    - id: pp_3_1950
+      citation: PP No. 3 Tahun 1950
+      tentang: Pengangkatan Penaikan Pangkat, Pemberhentian, Pernyataan Non-Aktif
+        Dan Sebagai Anggota Angkatan Darat R.I.S.
+      url: https://peraturan.bpk.go.id/Details/77039/pp-no-3-tahun-1950
+      note: null
+uji_materi: null

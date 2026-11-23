@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 8 Tahun 1952 tentang Pemungutan Pajak Verponding Tahu
 tentang: PEMUNGUTAN PAJAK VERPONDING TAHUN 1952
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1952-08-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1952
-source_pdf_url: https://peraturan.go.id/files/uu8-1952.pdf
+source_url: https://peraturan.bpk.go.id/Details/40228/uu-no-8-tahun-1952
+source_pdf_url: https://peraturan.bpk.go.id/Download/29863/UU%20Nomor%208%20Tahun%201952.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_8_1952_1952-08-02
+  kind: asli
+  source: official
+  date: '1952-08-02'
+  date_basis: tanggal_penetapan
+  text: uu_8_1952_1952-08-02.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 404af24b045290e9ccbf273681348e85049acda660606109722ea194b68bb70d
 pdf_sha256: 62d8199d0bd41093819d46f0cfcac71a0bd8a06c405ec69d174944f2b057ab5c
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1952-08-12'
+tanggal_berlaku: '1952-08-12'
+lembaran_negara: 'LN.1952/NO.51, TLN NO.265, LL SETNEG : 1 HLM.'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1952
+  source_pdf_url: https://peraturan.go.id/files/uu8-1952.pdf
+bpk:
+  id: 40228
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29863/UU%20Nomor%208%20Tahun%201952.pdf
+    bpk_file_id: 29863
+    filename: UU Nomor 8 Tahun 1952.pdf
+    sha256: 404af24b045290e9ccbf273681348e85049acda660606109722ea194b68bb70d
+    bytes: 51872
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

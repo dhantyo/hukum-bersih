@@ -11,12 +11,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT TENTANG TAMBAHAN POKOK BEA (OPSENTEN) A
   UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1952-08-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1952
-source_pdf_url: https://peraturan.go.id/files/uu10-1952.pdf
+source_url: https://peraturan.bpk.go.id/Details/40235/uu-no-10-tahun-1952
+source_pdf_url: https://peraturan.bpk.go.id/Download/29870/UU%20Nomor%2010%20Tahun%201952.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,6 +24,40 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_10_1952_1952-08-11
+  kind: asli
+  source: official
+  date: '1952-08-11'
+  date_basis: tanggal_penetapan
+  text: uu_10_1952_1952-08-11.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9085ce06c222775d44da670b12e84d41dc49627222b76ce0a008ad72126deff3
 pdf_sha256: ea6cea9e514cb8a28f7cc60824f8b36360a70bb2232b3f2868dce47acb6544d6
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1952-08-21'
+tanggal_berlaku: '1952-08-21'
+lembaran_negara: 'LN.1952/NO.55, LL SETNEG : 2 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN - PERS, POS, DAN PERIKLANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1952
+  source_pdf_url: https://peraturan.go.id/files/uu10-1952.pdf
+bpk:
+  id: 40235
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29870/UU%20Nomor%2010%20Tahun%201952.pdf
+    bpk_file_id: 29870
+    filename: UU Nomor 10 Tahun 1952.pdf
+    sha256: 9085ce06c222775d44da670b12e84d41dc49627222b76ce0a008ad72126deff3
+    bytes: 50588
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_13_1952
+      citation: UU No. 13 Tahun 1952
+      tentang: Perubahan Berselang dari Jumlah Opsenten atas Beberapa Pos dari Tarip
+        Bea-Bea Masuk
+      url: https://peraturan.bpk.go.id/Details/40249/uu-no-13-tahun-1952
+      note: null
+uji_materi: null

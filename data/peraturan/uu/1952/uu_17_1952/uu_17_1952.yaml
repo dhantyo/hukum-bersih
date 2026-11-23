@@ -9,12 +9,12 @@ tentang: PERSETUJUAN PERJANJIAN PERSAHABATAN ANTARA NEGARA REPUBLIK INDONESIA DA
   NEGARA PAKISTAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1952-10-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-1952
-source_pdf_url: https://peraturan.go.id/files/52uu017.pdf
+source_url: https://peraturan.bpk.go.id/Details/40259/uu-no-17-tahun-1952
+source_pdf_url: https://peraturan.bpk.go.id/Download/29899/UU%20Nomor%2017%20Tahun%201952.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_17_1952_1952
+- id: uu_17_1952_1952-10-02
   kind: asli
   source: official
-  date: null
+  date: '1952-10-02'
   date_basis: tanggal_penetapan
-  text: uu_17_1952_1952.txt
+  text: uu_17_1952_1952-10-02.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9eb74d5a471e904b5680e592a811847b0b6d8fdc9112173bf32aea542a2032a3
 pdf_sha256: aee6e9e44685925926a6ec9a988867145b5e10285be5859e52db2dcb648242ea
+tanggal_pengundangan: '1952-10-07'
+tanggal_berlaku: '1952-10-07'
+lembaran_negara: 'LN.1952/NO.69, LL SETNEG : 2 HLM.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-1952
+  source_pdf_url: https://peraturan.go.id/files/52uu017.pdf
+bpk:
+  id: 40259
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29899/UU%20Nomor%2017%20Tahun%201952.pdf
+    bpk_file_id: 29899
+    filename: UU Nomor 17 Tahun 1952.pdf
+    sha256: 9eb74d5a471e904b5680e592a811847b0b6d8fdc9112173bf32aea542a2032a3
+    bytes: 45194
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

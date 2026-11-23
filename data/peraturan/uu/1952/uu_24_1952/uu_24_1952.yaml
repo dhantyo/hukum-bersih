@@ -12,12 +12,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT TENTANG PUNGUTAN TAMBAHAN POKOK PAJAK M
   1950, LEMBARAN NEGARA NR 77 TAHUN 1950) SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1952-12-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-24-tahun-1952
-source_pdf_url: https://peraturan.go.id/files/52uu024.pdf
+source_url: https://peraturan.bpk.go.id/Details/40273/uu-no-24-tahun-1952
+source_pdf_url: https://peraturan.bpk.go.id/Download/29913/UU%20Nomor%2024%20Tahun%201952.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,6 +25,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_24_1952_1952-12-30
+  kind: asli
+  source: official
+  date: '1952-12-30'
+  date_basis: tanggal_penetapan
+  text: uu_24_1952_1952-12-30.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1c626e5c75ba6d0038d58403a051f76c10cb8efbf12035cce22771530ee9318f
 pdf_sha256: 4692fe51eb5858916325d91316e65aefa41ee3369d2bbd173513e15301380c61
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1953-01-08'
+tanggal_berlaku: '1953-01-08'
+lembaran_negara: 'LN.1952/NO.89, TLN NO.629, LL SETNEG : 2 HLM.'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-24-tahun-1952
+  source_pdf_url: https://peraturan.go.id/files/52uu024.pdf
+bpk:
+  id: 40273
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29913/UU%20Nomor%2024%20Tahun%201952.pdf
+    bpk_file_id: 29913
+    filename: UU Nomor 24 Tahun 1952.pdf
+    sha256: 1c626e5c75ba6d0038d58403a051f76c10cb8efbf12035cce22771530ee9318f
+    bytes: 50574
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 4 Tahun 1953 tentang Apotik Darurat
 tentang: APOTIK DARURAT
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-02-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu4-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45272/uu-no-4-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33764/UU%20Nomor%204%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_4_1953_1953
+- id: uu_4_1953_1953-02-02
   kind: asli
   source: official
-  date: null
+  date: '1953-02-02'
   date_basis: tanggal_penetapan
-  text: uu_4_1953_1953.txt
-  pasal_count: 12
+  text: uu_4_1953_1953-02-02.txt
+  pasal_count: 13
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4847635f6a2a0f66aebeaa6a56fda153bc4fb30ad23df20fd08bafa82ac76393
 pdf_sha256: 8c06cf564af4f61d6eae746cfe610ca1d18cdcf9528d7b979491d2e08bc4e62c
+tanggal_pengundangan: '1953-02-21'
+tanggal_berlaku: '1953-02-21'
+lembaran_negara: 'LN.1953/NO.19, LL SETNEG : 7 HLM.'
+subjek: KESEHATAN - PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu4-1953.pdf
+bpk:
+  id: 45272
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33764/UU%20Nomor%204%20Tahun%201953.pdf
+    bpk_file_id: 33764
+    filename: UU Nomor 4 Tahun 1953.pdf
+    sha256: 4847635f6a2a0f66aebeaa6a56fda153bc4fb30ad23df20fd08bafa82ac76393
+    bytes: 35907
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

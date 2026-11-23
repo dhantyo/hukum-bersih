@@ -11,12 +11,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT TENTANG TAMBAHAN POKOK BEA (OPSENTEN) A
   UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1952-08-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1952
-source_pdf_url: https://peraturan.go.id/files/52uu011.pdf
+source_url: https://peraturan.bpk.go.id/Details/40239/uu-no-11-tahun-1952
+source_pdf_url: https://peraturan.bpk.go.id/Download/29876/UU%20Nomor%2011%20Tahun%201952.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,6 +24,40 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_11_1952_1952-08-11
+  kind: asli
+  source: official
+  date: '1952-08-11'
+  date_basis: tanggal_penetapan
+  text: uu_11_1952_1952-08-11.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: abeffbdbeafce06c06f098b0be935704dbdeef5067470afb59639e106e638613
 pdf_sha256: 5d9329ed1c32fe309a1472c0368292d3100fa0c9e652681951ed557899057d50
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1952-08-21'
+tanggal_berlaku: '1952-08-21'
+lembaran_negara: 'LN.1952/NO.56, LL SETNEG : 2 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1952
+  source_pdf_url: https://peraturan.go.id/files/52uu011.pdf
+bpk:
+  id: 40239
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29876/UU%20Nomor%2011%20Tahun%201952.pdf
+    bpk_file_id: 29876
+    filename: UU Nomor 11 Tahun 1952.pdf
+    sha256: abeffbdbeafce06c06f098b0be935704dbdeef5067470afb59639e106e638613
+    bytes: 48821
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_13_1952
+      citation: UU No. 13 Tahun 1952
+      tentang: Perubahan Berselang dari Jumlah Opsenten atas Beberapa Pos dari Tarip
+        Bea-Bea Masuk
+      url: https://peraturan.bpk.go.id/Details/40249/uu-no-13-tahun-1952
+      note: null
+uji_materi: null

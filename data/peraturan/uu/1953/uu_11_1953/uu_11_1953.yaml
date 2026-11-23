@@ -11,13 +11,13 @@ tentang: PENETAPAN UNDANG-UNDANG POKOK BANK INDONESIA PENETAPAN PERATURAN DALAM 
   DARURAT NOMOR 4 TAHUN 1950 TENTANG PENERIMAAN ANGGOTA ANGKATAN PERANG R.I.S. (LEMBARAN-NEGARA
   NOMOR 5 TAHUN 1950) SEBAGAI UNDANG-UNDANG
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1953-05-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu11-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45291/uu-no-11-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33789/UU%20Nomor%2011%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,6 +25,68 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_11_1953_1953-05-19
+  kind: asli
+  source: official
+  date: '1953-05-19'
+  date_basis: tanggal_penetapan
+  text: uu_11_1953_1953-05-19.txt
+  pasal_count: 43
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 48b6ff773b2e51c759b588628faedcb957868eb8d1edbcc2ad3dacdc86d7f994
 pdf_sha256: 883b6c90a303fb89c38f7990d690f39040223460eb1a1bc825624ed7949e6d8a
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1953-06-02'
+tanggal_berlaku: '1953-07-01'
+lembaran_negara: 'LN.1953/NO.40, LL SETNEG : 29 HLM.'
+subjek: PERBANKAN, LEMBAGA KEUANGAN - DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN
+  / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu11-1953.pdf
+bpk:
+  id: 45291
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33789/UU%20Nomor%2011%20Tahun%201953.pdf
+    bpk_file_id: 33789
+    filename: UU Nomor 11 Tahun 1953.pdf
+    sha256: 48b6ff773b2e51c759b588628faedcb957868eb8d1edbcc2ad3dacdc86d7f994
+    bytes: 83047
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_13_1968
+      citation: UU No. 13 Tahun 1968
+      tentang: Bank Sentral
+      url: https://peraturan.bpk.go.id/Details/49173/uu-no-13-tahun-1968
+      note: null
+    Diubah dengan:
+    - id: uu_84_1958
+      citation: UU No. 84 Tahun 1958
+      tentang: Pengubahan Pasal-Pasal 16 dan 19 Undang-Undang Pokok Bank Indonesia
+        (Undang-Undang No. 11 Tahun 1953)
+      url: https://peraturan.bpk.go.id/Details/52367/uu-no-84-tahun-1958
+      note: null
+    - id: uu_63_1958
+      citation: UU No. 63 Tahun 1958
+      tentang: Penetapan "Undang-Undang darurat No. 14 Tahun 1957 Tentang Penetapan
+        Untuk Membebaskan Bank Indonesia Dari Kewajiban Yang Dimaksudkan Dalam Pasal
+        16 Ayat 1 Undang-Undang Pokok Bank Indonesia 1953 Selama Enam Bulan Setelah
+        Berakhirnya Keputusan Dewan Moneter Tanggal 2 Pebruari 1957 No. 23 Yang Diadakan
+        Berdasarkan Pasal-Pasal 16 Ayat 3 Undang-Undang Pokok Bank Indonesia 1953"
+        (Lembaran-Negara Tahun 1957 No. 61), Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/52330/uu-no-63-tahun-1958
+      note: null
+    - id: null
+      citation: UUDrt No. 14 Tahun 1957
+      tentang: Penetapan Untuk Pembebasan Bank Indonesia Dari Kewajiban Yang Dimaksud
+        Dalam Pasal 16 Ayat 1 Undang-Undang Pokok Bank Indonesia 1953 Selama 6 Bulan
+        Setelah Berakhirnya Keputusan Dewan Moneter Tanggal 2 Pebruari 1957 No. 23
+        (Tambahan Lembaran-Negara No. 1158, Berita Negara Tanggal 22 Pebruari 1957
+        No. 16 Tahun 1957) yang Diadakan Berdasarkan Pasal 16 Ayat 3 Undang-Undang
+        Pokok Bank Indonesia 1953 (Undang-Undang No. 11 Tahun 1953 Lembaran-Negara
+        No. 40 Tahun 1953)
+      url: https://peraturan.bpk.go.id/Details/51877/uudrt-no-14-tahun-1957
+      note: null
+uji_materi: null

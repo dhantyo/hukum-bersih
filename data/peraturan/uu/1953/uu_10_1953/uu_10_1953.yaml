@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 10 Tahun 1953 tentang Kedudukan Keuangan Ketua Dan An
   Dewan Perwakilan Rakyat Republik Indonesia
 tentang: KEDUDUKAN KEUANGAN KETUA DAN ANGGAUTA DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1953-05-09'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu10-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45286/uu-no-10-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33782/UU%20Nomor%2010%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,47 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_10_1953_1953
+- id: uu_10_1953_1953-05-09
   kind: asli
   source: official
-  date: null
+  date: '1953-05-09'
   date_basis: tanggal_penetapan
-  text: uu_10_1953_1953.txt
+  text: uu_10_1953_1953-05-09.txt
   pasal_count: 10
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 23e0b5f4ef8649b3f9e697be6a551df17b661d6f9bf255d27ce44419cac30e9e
 pdf_sha256: 72c9b16807df08bc8efbefe69a508be337211154cb730891bfde558c3badc01b
+tanggal_pengundangan: '1953-05-26'
+tanggal_berlaku: '1953-05-06'
+lembaran_negara: 'LN.1953/NO.37, LL SETNEG : 14 HLM.'
+subjek: HONORARIUM, GAJI, PENGHASILAN, UANG KEHORMATAN, TUNJANGAN, PENGHARGAAN, HAK
+  LAINNYA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu10-1953.pdf
+bpk:
+  id: 45286
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33782/UU%20Nomor%2010%20Tahun%201953.pdf
+    bpk_file_id: 33782
+    filename: UU Nomor 10 Tahun 1953.pdf
+    sha256: 23e0b5f4ef8649b3f9e697be6a551df17b661d6f9bf255d27ce44419cac30e9e
+    bytes: 51854
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_2_1954
+      citation: UU No. 2 Tahun 1954
+      tentang: Kedudukan Keuangan Ketua, Wakil Ketua dan Anggota Dewan Perwakilan
+        Rakyat
+      url: https://peraturan.bpk.go.id/Details/47823/uu-no-2-tahun-1954
+      note: null
+    Mencabut:
+    - id: uu_6_1951
+      citation: UU No. 6 Tahun 1951
+      tentang: Gaji dan Tunjangan Kepada Ketua, Tunjangan-Tunjangan, Biaya Perjalanan
+        dan Penginapan Kepada Anggauta-Anggauta Dewan Perwakilan Rakyat Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/39831/uu-no-6-tahun-1951
+      note: null
+uji_materi: null

@@ -8,13 +8,13 @@ title: Undang-Undang Nomor 15 Tahun 1952 tentang Penetapan Undang-Undang Darurat
 tentang: PENETAPAN UNDANG-UNDANG DARURAT TENTANG \"BURSA\" (LEMBARAN NEGARA NR 79
   TAHUN 1951) SEBAGAI UNDANG-UNDANG
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1952-09-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-1952
-source_pdf_url: https://peraturan.go.id/files/52uu015.pdf
+source_url: https://peraturan.bpk.go.id/Details/40254/uu-no-15-tahun-1952
+source_pdf_url: https://peraturan.bpk.go.id/Download/29894/UU%20Nomor%2015%20Tahun%201952.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_15_1952_1952-09-26
+  kind: asli
+  source: official
+  date: '1952-09-26'
+  date_basis: tanggal_penetapan
+  text: uu_15_1952_1952-09-26.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e33e297902a35694b37c819be8f723875d9cce93b163f8b0ddbf7342f5f499c3
 pdf_sha256: 0bbb04f945308e1d73f95d128d67686bb79447799fa90d728805b9cd36e5262b
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1952-10-03'
+tanggal_berlaku: '1952-10-03'
+lembaran_negara: 'LN.1952/NO.67, LL SETNEG : 4 HLM.'
+subjek: PASAR MODAL DAN PERDAGANGAN BERJANGKA KOMODITI - PENANAMAN MODAL DAN INVESTASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-1952
+  source_pdf_url: https://peraturan.go.id/files/52uu015.pdf
+bpk:
+  id: 40254
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29894/UU%20Nomor%2015%20Tahun%201952.pdf
+    bpk_file_id: 29894
+    filename: UU Nomor 15 Tahun 1952.pdf
+    sha256: e33e297902a35694b37c819be8f723875d9cce93b163f8b0ddbf7342f5f499c3
+    bytes: 57963
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_8_1995
+      citation: UU No. 8 Tahun 1995
+      tentang: Pasar Modal
+      url: https://peraturan.bpk.go.id/Details/46197/uu-no-8-tahun-1995
+      note: null
+uji_materi: null

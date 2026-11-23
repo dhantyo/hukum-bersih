@@ -7,22 +7,53 @@ title: Undang-Undang Nomor 15 Tahun 1953 tentang Penerimaan Anggota Angkatan Per
   Sukarela
 tentang: PENERIMAAN ANGGOTA ANGKATAN PERANG SUKARELA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 2 Tahun 1988 Tentang Prajurit
-  Angkatan Bersenjata Ri'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1953-05-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu15-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45303/uu-no-15-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33803/UU%20Nomor%2015%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_2_1988
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_15_1953_1953-05-20
+  kind: asli
+  source: official
+  date: '1953-05-20'
+  date_basis: tanggal_penetapan
+  text: uu_15_1953_1953-05-20.txt
+  pasal_count: 6
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 552ec9154f999085d3090da3e74e6e17dfeb825951443ae73cedf9f237be3031
 pdf_sha256: d7a79aec3fc311da3228fe80b7ad2f600bc17271279b5dea24d63eea10882213
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1953-06-11'
+tanggal_berlaku: '1953-01-01'
+lembaran_negara: 'LN.1953/NO.45, LL SETNEG : 4 HLM.'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu15-1953.pdf
+bpk:
+  id: 45303
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33803/UU%20Nomor%2015%20Tahun%201953.pdf
+    bpk_file_id: 33803
+    filename: UU Nomor 15 Tahun 1953.pdf
+    sha256: 552ec9154f999085d3090da3e74e6e17dfeb825951443ae73cedf9f237be3031
+    bytes: 29201
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_2_1988
+      citation: UU No. 2 Tahun 1988
+      tentang: Prajurit Angkatan Bersenjata Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/46808/uu-no-2-tahun-1988
+      note: null
+uji_materi: null

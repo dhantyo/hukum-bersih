@@ -8,13 +8,13 @@ title: Undang-Undang Nomor 17 Tahun 1953 tentang Akibat-Akibat Dari Pada Undang-
 tentang: AKIBAT-AKIBAT DARI PADA UNDANG-UNDANG TENTANG KEWAJIBAN ANGGOTA ANGKATAN
   PERANG UNTUK TETAP DALAM DINAS KETENTARAAN
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1953-05-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu17-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45308/uu-no-17-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33808/UU%20Nomor%2017%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_17_1953_1953-05-20
+  kind: asli
+  source: official
+  date: '1953-05-20'
+  date_basis: tanggal_penetapan
+  text: uu_17_1953_1953-05-20.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b3e803456ccf29e3762de8c3394c11e563e6aeb42e88ae40e8c427a01ee25ea0
 pdf_sha256: 556a6f98e2c422c64f8f15b7c8eb9597bb93334186acf1996473fb994ef470ae
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1953-06-11'
+tanggal_berlaku: '1953-01-01'
+lembaran_negara: 'LN.1953/NO.47, LL SETNEG : 4 HLM.'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu17-1953.pdf
+bpk:
+  id: 45308
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33808/UU%20Nomor%2017%20Tahun%201953.pdf
+    bpk_file_id: 33808
+    filename: UU Nomor 17 Tahun 1953.pdf
+    sha256: b3e803456ccf29e3762de8c3394c11e563e6aeb42e88ae40e8c427a01ee25ea0
+    bytes: 28611
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_2_1988
+      citation: UU No. 2 Tahun 1988
+      tentang: Prajurit Angkatan Bersenjata Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/46808/uu-no-2-tahun-1988
+      note: null
+uji_materi: null

@@ -7,29 +7,47 @@ title: Undang-Undang Nomor 2 Tahun 1953 tentang Mengubah Dan Menambah Ordonansi 
   Rumah Tangga 1908
 tentang: MENGUBAH DAN MENAMBAH ORDONANSI PAJAK RUMAH TANGGA 1908
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 25 Tahun 1956 Tentang Pembentukan
-  Daerah-daerah Otonom Propisi Kalimantan Barat Kalimantan Selatan dan Kalimantan
-  Timur'
-tanggal_penetapan: null
+status: berlaku
+tanggal_penetapan: '1953-01-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu2-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45266/uu-no-2-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33755/UU%20Nomor%202%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_25_1956
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_2_1953_1953
+- id: uu_2_1953_1953-01-07
   kind: asli
   source: official
-  date: null
+  date: '1953-01-07'
   date_basis: tanggal_penetapan
-  text: uu_2_1953_1953.txt
+  text: uu_2_1953_1953-01-07.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1aac328c8881ba7883d58ee477054920ebe137bc0791f5800c5ae601ce83c779
 pdf_sha256: e83892adac5a8802135eea8573e055ccb34c2b326ebc2cce58f6f4b83c02179f
+tanggal_pengundangan: '1953-01-12'
+tanggal_berlaku: '1953-01-01'
+lembaran_negara: 'LN.1953/NO.5, TLN NO.670, LL SETNEG : 13 HLM.'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu2-1953.pdf
+bpk:
+  id: 45266
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33755/UU%20Nomor%202%20Tahun%201953.pdf
+    bpk_file_id: 33755
+    filename: UU Nomor 2 Tahun 1953.pdf
+    sha256: 1aac328c8881ba7883d58ee477054920ebe137bc0791f5800c5ae601ce83c779
+    bytes: 67383
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

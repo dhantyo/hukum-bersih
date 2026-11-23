@@ -13,12 +13,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT TENTANG PENETAPAN BERLAKUNYA UNDANG-UND
   36 TAHUN 1950) SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1952-07-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1952
-source_pdf_url: https://peraturan.go.id/files/uu4-1952.pdf
+source_url: https://peraturan.bpk.go.id/Details/40194/uu-no-4-tahun-1952
+source_pdf_url: https://peraturan.bpk.go.id/Download/29829/UU%20Nomor%204%20Tahun%201952.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,6 +26,56 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_4_1952_1952-07-29
+  kind: asli
+  source: official
+  date: '1952-07-29'
+  date_basis: tanggal_penetapan
+  text: uu_4_1952_1952-07-29.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ba633054f03e9778638e877438926b9c24955e491170613ea8545022c8a92a93
 pdf_sha256: 10aa4064caecbaa94435a1e96c94ff65a4d4b9d1e74418ca59950e31e1117075
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1952-08-05'
+tanggal_berlaku: '1952-08-05'
+lembaran_negara: 'LN.1952/NO.43, LL SETNEG : 3 HLM.'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1952
+  source_pdf_url: https://peraturan.go.id/files/uu4-1952.pdf
+bpk:
+  id: 40194
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29829/UU%20Nomor%204%20Tahun%201952.pdf
+    bpk_file_id: 29829
+    filename: UU Nomor 4 Tahun 1952.pdf
+    sha256: ba633054f03e9778638e877438926b9c24955e491170613ea8545022c8a92a93
+    bytes: 54581
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_21_1948
+      citation: UU No. 21 Tahun 1948
+      tentang: Menambah dan Mengubah Undang-Undang Nomor 12 Tahun 1947 tentang Pajak
+        Radio
+      url: https://peraturan.bpk.go.id/Details/25796/uu-no-21-tahun-1948
+      note: null
+    - id: uu_20_1948
+      citation: UU No. 20 Tahun 1948
+      tentang: Mengadakan Perubahan dan Tambahan Pajak Dalam Undang-Undang Nomor 14
+        Tahun 1947 Dari Hal Pajak Pembangunan I
+      url: https://peraturan.bpk.go.id/Details/25786/uu-no-20-tahun-1948
+      note: null
+    - id: uu_14_1947
+      citation: UU No. 14 Tahun 1947
+      tentang: Pemungutan Pajak Pembangunan di Rumah Makan dan Rumah Penginapan
+      url: https://peraturan.bpk.go.id/Details/25257/uu-no-14-tahun-1947
+      note: null
+    - id: uu_12_1947
+      citation: UU No. 12 Tahun 1947
+      tentang: Menetapkan "Pajak Radio" atas Semua Pesawat Penerimaan Radio
+      url: https://peraturan.bpk.go.id/Details/25253/uu-no-12-tahun-1947
+      note: null
+uji_materi: null

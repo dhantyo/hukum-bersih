@@ -9,12 +9,12 @@ tentang: PENETAPAN "UNDANG-UNDANG DARURAT TENTANG MEMPERPANJANG WAKTU MASIH TERB
   DINAS TAHUN-ANGGARAN 1950" SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1952-05-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1952
-source_pdf_url: https://peraturan.go.id/files/uu3-1952.pdf
+source_url: https://peraturan.bpk.go.id/Details/40190/uu-no-3-tahun-1952
+source_pdf_url: https://peraturan.bpk.go.id/Download/29825/UU%20Nomor%203%20Tahun%201952.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_3_1952_1952-05-04
+  kind: asli
+  source: official
+  date: '1952-05-04'
+  date_basis: tanggal_penetapan
+  text: uu_3_1952_1952-05-04.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 38c38609251a686dfc96ab6ba879d2afbdef0104fa6162d6551dd580e4a1889f
 pdf_sha256: 1d66b040e1a6e4bd18a4a0797bf07d80652ed84e2a111a7ec348a8a8735320e6
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1952-05-30'
+tanggal_berlaku: '1952-05-30'
+lembaran_negara: 'LN.1952/NO.37, LL SETNEG : 2 HLM.'
+subjek: PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1952
+  source_pdf_url: https://peraturan.go.id/files/uu3-1952.pdf
+bpk:
+  id: 40190
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29825/UU%20Nomor%203%20Tahun%201952.pdf
+    bpk_file_id: 29825
+    filename: UU Nomor 3 Tahun 1952.pdf
+    sha256: 38c38609251a686dfc96ab6ba879d2afbdef0104fa6162d6551dd580e4a1889f
+    bytes: 49629
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

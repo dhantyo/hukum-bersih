@@ -6,13 +6,13 @@ year: 1953
 title: Undang-Undang Nomor 3 Tahun 1953 tentang Pembukaan Apotik
 tentang: PEMBUKAAN APOTIK
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1953-02-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu3-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45267/uu-no-3-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33756/UU%20Nomor%203%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,38 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_3_1953_1953
+- id: uu_3_1953_1953-02-02
   kind: asli
   source: official
-  date: null
+  date: '1953-02-02'
   date_basis: tanggal_penetapan
-  text: uu_3_1953_1953.txt
-  pasal_count: 1
+  text: uu_3_1953_1953-02-02.txt
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 52e5f71081e93630c8762e82d6445667db82ae43107c673f88a7a2fd92e87252
 pdf_sha256: 980edce08fdafd18bb1853d53a59c323957af96164c6aa434a24bbafcc1c2bb0
+tanggal_pengundangan: '1953-02-21'
+tanggal_berlaku: '1953-02-21'
+lembaran_negara: 'LN.1953/NO.18, LL SETNEG : 3 HLM.'
+subjek: KESEHATAN - PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu3-1953.pdf
+bpk:
+  id: 45267
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33756/UU%20Nomor%203%20Tahun%201953.pdf
+    bpk_file_id: 33756
+    filename: UU Nomor 3 Tahun 1953.pdf
+    sha256: 52e5f71081e93630c8762e82d6445667db82ae43107c673f88a7a2fd92e87252
+    bytes: 27851
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_23_1992
+      citation: UU No. 23 Tahun 1992
+      tentang: Kesehatan
+      url: https://peraturan.bpk.go.id/Details/46620/uu-no-23-tahun-1992
+      note: null
+uji_materi: null

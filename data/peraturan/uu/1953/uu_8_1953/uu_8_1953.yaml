@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 8 Tahun 1953 tentang Penilaian Persediaan Uang Emas D
 tentang: PENILAIAN PERSEDIAAN UANG EMAS DAN BAHAN UANG EMAS PADA DE JAVASCHE BANK
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-04-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu8-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45277/uu-no-8-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33770/UU%20Nomor%208%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_8_1953_1953-04-21
+  kind: asli
+  source: official
+  date: '1953-04-21'
+  date_basis: tanggal_penetapan
+  text: uu_8_1953_1953-04-21.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 30629989e9e6ee1fdfc9deb56fa155dd0529e11c4f04045c5ecbb95a4472d1c1
 pdf_sha256: 264070ed58f9387de497f228db56e6a0e19d243be27ddb40c0f739cc64d321bd
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1953-04-23'
+tanggal_berlaku: '1953-04-23'
+lembaran_negara: 'LN.1953/NO.33, TLN NO.396, LL SETNEG : 2 HLM.'
+subjek: PENGELOLAAN KEUANGAN NEGARA / DAERAH - PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu8-1953.pdf
+bpk:
+  id: 45277
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33770/UU%20Nomor%208%20Tahun%201953.pdf
+    bpk_file_id: 33770
+    filename: UU Nomor 8 Tahun 1953.pdf
+    sha256: 30629989e9e6ee1fdfc9deb56fa155dd0529e11c4f04045c5ecbb95a4472d1c1
+    bytes: 34856
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

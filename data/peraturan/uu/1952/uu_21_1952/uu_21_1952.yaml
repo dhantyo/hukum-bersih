@@ -10,13 +10,13 @@ tentang: MENETAPKAN "UNDANG-UNDANG DARURAT TENTANG HAK PENGANGKATAN DAN PEMBERHE
   PEGAWAI-PEGAWAI REPUBLIK INDONESIA SERIKAT" (UNDANG-UNDANG DARURAT NR 25 DAN 34
   TAHUN 1950) SEBAGAI UNDANG-UNDANG REPUBLIK INDONESIA
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1952-10-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: ''
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-1952
-source_pdf_url: https://peraturan.go.id/files/52uu021.pdf
+source_url: https://peraturan.bpk.go.id/Details/40268/uu-no-21-tahun-1952
+source_pdf_url: https://peraturan.bpk.go.id/Download/29908/UU%20Nomor%2021%20Tahun%201952.pdf
 relationships:
   amends: []
   amended_by:
@@ -25,6 +25,56 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_21_1952_1952-10-24
+  kind: asli
+  source: official
+  date: '1952-10-24'
+  date_basis: tanggal_penetapan
+  text: uu_21_1952_1952-10-24.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 24518ea2f57c33c37a5e153cc798802affcc978bf6474c88cf103a42245f3d63
 pdf_sha256: ee91c470a7f5a3a4af2907e81d56ced5f41bec2664d5a68b9fb7c44c464c25f6
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1952-10-29'
+tanggal_berlaku: '1952-10-29'
+lembaran_negara: 'LN.1952/NO.78, LL SETNEG : 5 HLM.'
+subjek: KEPEGAWAIAN, APARATUR NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-1952
+  source_pdf_url: https://peraturan.go.id/files/52uu021.pdf
+bpk:
+  id: 40268
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29908/UU%20Nomor%2021%20Tahun%201952.pdf
+    bpk_file_id: 29908
+    filename: UU Nomor 21 Tahun 1952.pdf
+    sha256: 24518ea2f57c33c37a5e153cc798802affcc978bf6474c88cf103a42245f3d63
+    bytes: 58673
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_8_1974
+      citation: UU No. 8 Tahun 1974
+      tentang: Pokok- Pokok Kepegawaian
+      url: https://peraturan.bpk.go.id/Details/47417/uu-no-8-tahun-1974
+      note: null
+    Diubah dengan:
+    - id: uu_17_1961
+      citation: UU No. 17 Tahun 1961
+      tentang: Perubahan Undang-Undang Nomor 21 Tahun 1952 Tentang Hak Mengangkat
+        dan Memberhentikan Pegawai Negeri Sipil
+      url: https://peraturan.bpk.go.id/Details/51242/uu-no-17-tahun-1961
+      note: null
+    - id: uu_28_1957
+      citation: UU No. 28 Tahun 1957
+      tentang: Penetapan Undang-Undang Darurat No. 13 Tahun 1957 (Lembaran-Negara
+        Tahun 1957 No. 58) tentang Menambah Undang-Undang No. 21 Tahun 1952 (Lembaran-Negara
+        Tahun 1952 No.78) tentang "Menetapkan Undang-Undang Darurat tentang Hak Pengangkatan
+        dan Pemberhentian Pegawai-Pegawai Republik Indonesia Serikat (Undang-Undang
+        Darurat No. 25 dan 34 Tahun 1950) Sebagai Undang-Undang Republik Indonesia".
+        Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/52465/uu-no-28-tahun-1957
+      note: null
+uji_materi: null

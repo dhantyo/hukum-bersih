@@ -11,12 +11,12 @@ tentang: PENETAPAN "UNDANG-UNDANG NR 6 TAHUN 1951 UNTUK MENGUBAH "GRONDHUUR ORDO
   UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1952-07-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1952
-source_pdf_url: https://peraturan.go.id/files/uu6-1952.pdf
+source_url: https://peraturan.bpk.go.id/Details/40210/uu-no-6-tahun-1952
+source_pdf_url: https://peraturan.bpk.go.id/Download/29845/UU%20Nomor%206%20Tahun%201952.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,6 +24,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_6_1952_1952-07-23
+  kind: asli
+  source: official
+  date: '1952-07-23'
+  date_basis: tanggal_penetapan
+  text: uu_6_1952_1952-07-23.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e91fe7d4e098f252bcb340e05af0a97088e7378871ba45714b44b43ef9f4f43e
 pdf_sha256: 0c4a8b462825ad5727571b67fc07592cbd9c58b57c54d85136c462871465a257
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1952-08-08'
+tanggal_berlaku: '1952-08-08'
+lembaran_negara: 'LN.1952/NO.46, LL SETNEG : 2 HLM.'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1952
+  source_pdf_url: https://peraturan.go.id/files/uu6-1952.pdf
+bpk:
+  id: 40210
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29845/UU%20Nomor%206%20Tahun%201952.pdf
+    bpk_file_id: 29845
+    filename: UU Nomor 6 Tahun 1952.pdf
+    sha256: e91fe7d4e098f252bcb340e05af0a97088e7378871ba45714b44b43ef9f4f43e
+    bytes: 52039
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

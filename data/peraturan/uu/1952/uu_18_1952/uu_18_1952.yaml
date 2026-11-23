@@ -9,12 +9,12 @@ tentang: PERSETUJUAN PERJANJIAN PERSAHABATAN ANTARA NEGARA REPUBLIK INDONESIA DA
   NEGARA UNI BIRMA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1952-10-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-1952
-source_pdf_url: https://peraturan.go.id/files/52uu018.pdf
+source_url: https://peraturan.bpk.go.id/Details/40263/uu-no-18-tahun-1952
+source_pdf_url: https://peraturan.bpk.go.id/Download/29903/UU%20Nomor%2018%20Tahun%201952.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_18_1952_1952
+- id: uu_18_1952_1952-10-02
   kind: asli
   source: official
-  date: null
+  date: '1952-10-02'
   date_basis: tanggal_penetapan
-  text: uu_18_1952_1952.txt
+  text: uu_18_1952_1952-10-02.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1931d02b3c6f99fd87556b6ee393f8b852c4242808edc55f6eecd271a8e28828
 pdf_sha256: 9eee8a1b9ae1cbaa35832162bad471079359ab4d43698cfd58cc7c6e864978cb
+tanggal_pengundangan: '1952-10-07'
+tanggal_berlaku: '1952-10-07'
+lembaran_negara: 'LN.1952/NO.70, LL SETNEG : 2 HLM.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-1952
+  source_pdf_url: https://peraturan.go.id/files/52uu018.pdf
+bpk:
+  id: 40263
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29903/UU%20Nomor%2018%20Tahun%201952.pdf
+    bpk_file_id: 29903
+    filename: UU Nomor 18 Tahun 1952.pdf
+    sha256: 1931d02b3c6f99fd87556b6ee393f8b852c4242808edc55f6eecd271a8e28828
+    bytes: 45247
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

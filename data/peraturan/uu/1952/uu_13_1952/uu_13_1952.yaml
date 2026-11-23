@@ -9,12 +9,12 @@ tentang: PERUBAHAN BERSELANG DARI JUMLAH OPSENTEN ATAS BEBERAPA POS DARI TARIP B
   MASUK
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1952-08-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1952
-source_pdf_url: https://peraturan.go.id/files/52uu013.pdf
+source_url: https://peraturan.bpk.go.id/Details/40249/uu-no-13-tahun-1952
+source_pdf_url: https://peraturan.bpk.go.id/Download/29888/UU%20Nomor%2013%20Tahun%201952.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,48 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_13_1952_1952-08-11
+  kind: asli
+  source: official
+  date: '1952-08-11'
+  date_basis: tanggal_penetapan
+  text: uu_13_1952_1952-08-11.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 61880fd733338200b5053f3e7fd819b613cd3383fb2f205ade5ee25a875352ff
 pdf_sha256: 447d2bc86dc2de435a455202c5e4adc2b059dd0127569a6e87b06576b5906a10
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1952-08-21'
+tanggal_berlaku: '1952-09-20'
+lembaran_negara: 'LN.1952/NO.58, TLN NO.271, LL SETNEG : 2 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN - PERS, POS, DAN PERIKLANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1952
+  source_pdf_url: https://peraturan.go.id/files/52uu013.pdf
+bpk:
+  id: 40249
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29888/UU%20Nomor%2013%20Tahun%201952.pdf
+    bpk_file_id: 29888
+    filename: UU Nomor 13 Tahun 1952.pdf
+    sha256: 61880fd733338200b5053f3e7fd819b613cd3383fb2f205ade5ee25a875352ff
+    bytes: 55655
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_11_1952
+      citation: UU No. 11 Tahun 1952
+      tentang: Penetapan Undang-Undang Darurat tentang Tambahan Pokok Bea (Opsenten)
+        Atas Bea-Bea Masuk Selama Tahun 1952 (Undang-Undang Darurat Nr 4 Tahun 1952)
+        Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/40239/uu-no-11-tahun-1952
+      note: null
+    - id: uu_10_1952
+      citation: UU No. 10 Tahun 1952
+      tentang: Penetapan Undang-Undang Darurat tentang Tambahan Pokok Bea (Opsenten)
+        atas Bea-Bea Masuk Selama Tahun 1951 (Undang-Undang Darurat Nr 39 Tahun 1950)
+        Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/40235/uu-no-10-tahun-1952
+      note: null
+uji_materi: null

@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 22 Tahun 1953 tentang Pembubaran Komisi Urusan Perbur
 tentang: PEMBUBARAN KOMISI URUSAN PERBURUHAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-11-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-22-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu22-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45328/uu-no-22-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33828/UU%20Nomor%2022%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,34 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_22_1953_1953-11-25
+  kind: asli
+  source: official
+  date: '1953-11-25'
+  date_basis: tanggal_penetapan
+  text: uu_22_1953_1953-11-25.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2df0aa62e7a8fdc60c0887e7ef1c28064c103991e318b83d26e944cc5b6016ce
 pdf_sha256: 4c79a43ccbe1328c20ee672e0c03ecc5a7afc75c54f81a6a89e1f595ab8bae2d
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1953-11-25'
+tanggal_berlaku: '1951-01-01'
+lembaran_negara: 'LN.1953/NO.69. TLN NO.470, LL SETNEG : 3 HLM.'
+subjek: PEMBENTUKAN, PERUBAHAN, DAN PEMBUBARAN KOMISI / KOMITE / BADAN / DEWAN / STAF
+  KHUSUS / TIM / PANITIA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-22-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu22-1953.pdf
+bpk:
+  id: 45328
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33828/UU%20Nomor%2022%20Tahun%201953.pdf
+    bpk_file_id: 33828
+    filename: UU Nomor 22 Tahun 1953.pdf
+    sha256: 2df0aa62e7a8fdc60c0887e7ef1c28064c103991e318b83d26e944cc5b6016ce
+    bytes: 34422
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

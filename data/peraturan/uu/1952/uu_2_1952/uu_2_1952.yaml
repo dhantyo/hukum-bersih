@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 2 Tahun 1952 tentang Penetapan "Undang-Undang Darurat
 tentang: PENETAPAN "UNDANG-UNDANG DARURAT TENTANG PINJAMAN DARURAT" SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1952-03-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1952
-source_pdf_url: https://peraturan.go.id/files/uu2-1952.pdf
+source_url: https://peraturan.bpk.go.id/Details/40188/uu-no-2-tahun-1952
+source_pdf_url: https://peraturan.bpk.go.id/Download/29823/UU%20Nomor%202%20Tahun%201952.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_2_1952_1952-03-11
+  kind: asli
+  source: official
+  date: '1952-03-11'
+  date_basis: tanggal_penetapan
+  text: uu_2_1952_1952-03-11.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d1c4f40baadd9d913eafcd1a0e7b9156116380c5f0485e72cf2583869ec5cd63
 pdf_sha256: f93f75c0a8d7bce87b6e29656d91928aaffb2d2480c5b9f61bf44273c5b22c93
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1952-03-21'
+tanggal_berlaku: '1952-03-21'
+lembaran_negara: 'LN.1952/NO.28, LL SETNEG : 5 HLM.'
+subjek: PIUTANG, UTANG, DAN HIBAH NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1952
+  source_pdf_url: https://peraturan.go.id/files/uu2-1952.pdf
+bpk:
+  id: 40188
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29823/UU%20Nomor%202%20Tahun%201952.pdf
+    bpk_file_id: 29823
+    filename: UU Nomor 2 Tahun 1952.pdf
+    sha256: d1c4f40baadd9d913eafcd1a0e7b9156116380c5f0485e72cf2583869ec5cd63
+    bytes: 62323
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

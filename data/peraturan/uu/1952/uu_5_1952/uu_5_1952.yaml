@@ -10,12 +10,12 @@ tentang: PEMBEBASAN BEA-MASUK UNTUK BARANG-BARANG BERUPA KIRIMAN-KIRIMAN HADIAH 
   BERTUJUAN KESEJAHTERAAN ROHANI PENDUDUK, MAKSUD AMAL ATAU KEBUDAYAAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1952-07-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1952
-source_pdf_url: https://peraturan.go.id/files/uu5-1952.pdf
+source_url: https://peraturan.bpk.go.id/Details/40209/uu-no-5-tahun-1952
+source_pdf_url: https://peraturan.bpk.go.id/Download/29844/UU%20Nomor%205%20Tahun%201952.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,6 +23,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_5_1952_1952-07-29
+  kind: asli
+  source: official
+  date: '1952-07-29'
+  date_basis: tanggal_penetapan
+  text: uu_5_1952_1952-07-29.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f7c44b69b19af41032c5485f0f79ef49c7f23a428c577412b461fe9dfd031069
 pdf_sha256: eda85f9a89da4f76823034ed34f61a18bac101de7ba567ce38d636e001de6a47
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1952-08-05'
+tanggal_berlaku: '1952-08-05'
+lembaran_negara: 'LN.1952/NO.44, TLN NO.259, LL SETNEG : 1 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN - PARIWISATA DAN KEBUDAYAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1952
+  source_pdf_url: https://peraturan.go.id/files/uu5-1952.pdf
+bpk:
+  id: 40209
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29844/UU%20Nomor%205%20Tahun%201952.pdf
+    bpk_file_id: 29844
+    filename: UU Nomor 5 Tahun 1952.pdf
+    sha256: f7c44b69b19af41032c5485f0f79ef49c7f23a428c577412b461fe9dfd031069
+    bytes: 51601
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -10,13 +10,13 @@ tentang: PENETAPAN PERATURAN DALAM UNDANG-UNDANG DARURAT NOMOR 4 TAHUN 1950 TENT
   PENERIMAAN ANGGOTA ANGKATAN PERANG R.I.S.(LEMBARAN-NEGARA NOMOR 5 TAHUN 1950) SEBAGAI
   UNDANG-UNDANG
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1953-05-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1953
-source_pdf_url: null
+source_url: https://peraturan.bpk.go.id/Details/45293/uu-no-12-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33791/UU%20Nomor%2012%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,4 +24,44 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_12_1953_1953-05-20
+  kind: asli
+  source: official
+  date: '1953-05-20'
+  date_basis: tanggal_penetapan
+  text: uu_12_1953_1953-05-20.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c3b9b332a9ea5f486b4a74bf92bff1842aa7a972281f804b22fcc1e08f7d4748
+tanggal_pengundangan: '1953-06-11'
+tanggal_berlaku: '1953-06-11'
+lembaran_negara: 'LN.1953/NO.42, LL SETNEG : 6 HLM.'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1953
+  source_pdf_url: null
+bpk:
+  id: 45293
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33791/UU%20Nomor%2012%20Tahun%201953.pdf
+    bpk_file_id: 33791
+    filename: UU Nomor 12 Tahun 1953.pdf
+    sha256: c3b9b332a9ea5f486b4a74bf92bff1842aa7a972281f804b22fcc1e08f7d4748
+    bytes: 37289
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_2_1988
+      citation: UU No. 2 Tahun 1988
+      tentang: Prajurit Angkatan Bersenjata Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/46808/uu-no-2-tahun-1988
+      note: null
+    Diubah dengan:
+    - id: null
+      citation: UUDrt No. 12 Tahun 1955
+      tentang: Perobahan Pasal 4 Ayat 1 Undang-Undang No. 12 Tahun 1953
+      url: https://peraturan.bpk.go.id/Details/53019/uudrt-no-12-tahun-1955
+      note: null
+uji_materi: null

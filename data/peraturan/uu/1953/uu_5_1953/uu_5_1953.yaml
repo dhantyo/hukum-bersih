@@ -11,12 +11,12 @@ tentang: MENETAPKAN UNDANG-UNDANG DARURAT NOMOR 2 TAHUN 1952 TENTANG KENAIKAN TA
   1952) SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-02-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu5-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45273/uu-no-5-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33765/UU%20Nomor%205%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -33,3 +33,22 @@ versions:
   text: uu_5_1953_1953.txt
   pasal_count: 1
 pdf_sha256: 7941cacdf8d62e3f81a637ad9f9717adb54620daf4318bd715845e9b8e964a4d
+tanggal_pengundangan: '1953-02-21'
+tanggal_berlaku: '1953-02-21'
+lembaran_negara: 'LN.1953/NO.20. TLN NO.630, LL SETNEG : 3 HLM.'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN - PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu5-1953.pdf
+bpk:
+  id: 45273
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33765/UU%20Nomor%205%20Tahun%201953.pdf
+    bpk_file_id: 33765
+    filename: UU Nomor 5 Tahun 1953.pdf
+    sha256: fa322c1eedc73c6496e6cfc5fb2f5cc8723ac4e1e80e78e3c80b2accd21f43be
+    bytes: 28941
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
+reparse_error: 'v12: new Penjelasan has 68 words, stored 81'

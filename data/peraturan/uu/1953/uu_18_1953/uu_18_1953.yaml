@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 18 Tahun 1953 tentang Merawat Orang-Orang Miskin Dan 
   Yang Kurang Mampu
 tentang: MERAWAT ORANG-ORANG MISKIN DAN ORANG-ORANG YANG KURANG MAMPU
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1953-06-03'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu18-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45311/uu-no-18-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33811/UU%20Nomor%2018%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,38 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_18_1953_1953
+- id: uu_18_1953_1953-06-03
   kind: asli
   source: official
-  date: null
+  date: '1953-06-03'
   date_basis: tanggal_penetapan
-  text: uu_18_1953_1953.txt
+  text: uu_18_1953_1953-06-03.txt
   pasal_count: 6
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6c90103ee89c21d5935626fcf82c5130c726eb3012fc1ee61676e4f51a125f12
 pdf_sha256: 70751b2a3e07c68944d60bfa215b2a4fce6fe51c5cb73477b9bc1af42f1d440b
+tanggal_pengundangan: '1953-06-11'
+tanggal_berlaku: '1953-06-11'
+lembaran_negara: 'LN.1953/NO.48, LL SETNEG : 4 HLM.'
+subjek: BANTUAN, SUMBANGAN, BENCANA / KEBENCANAAN, DAN PENANGGULANGAN BENCANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu18-1953.pdf
+bpk:
+  id: 45311
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33811/UU%20Nomor%2018%20Tahun%201953.pdf
+    bpk_file_id: 33811
+    filename: UU Nomor 18 Tahun 1953.pdf
+    sha256: 6c90103ee89c21d5935626fcf82c5130c726eb3012fc1ee61676e4f51a125f12
+    bytes: 30104
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_23_1992
+      citation: UU No. 23 Tahun 1992
+      tentang: Kesehatan
+      url: https://peraturan.bpk.go.id/Details/46620/uu-no-23-tahun-1992
+      note: null
+uji_materi: null

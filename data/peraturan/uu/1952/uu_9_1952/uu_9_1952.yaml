@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 9 Tahun 1952 tentang Perubahan Atas Ordonansi Pajak P
 tentang: PERUBAHAN ATAS ORDONANSI PAJAK PERSEROAN TAHUN 1925
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1952-08-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1952
-source_pdf_url: https://peraturan.go.id/files/uu9-1952.pdf
+source_url: https://peraturan.bpk.go.id/Details/40232/uu-no-9-tahun-1952
+source_pdf_url: https://peraturan.bpk.go.id/Download/29867/UU%20Nomor%209%20Tahun%201952.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_9_1952_1952-08-02
+  kind: asli
+  source: official
+  date: '1952-08-02'
+  date_basis: tanggal_penetapan
+  text: uu_9_1952_1952-08-02.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 42d3a0ba041e35ca709ba947632f9efa33703de4c4c84e108b5c48aaebeddb5d
 pdf_sha256: 426d211d7c6b599c0e1ce99e1c47f8c0f3097fa5e012c789c5be8ae86cabcd43
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1952-08-12'
+tanggal_berlaku: '1952-08-12'
+lembaran_negara: 'LN.1952/NO.53, TLN NO.267, LL SETNEG : 1 HLM.'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN - PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1952
+  source_pdf_url: https://peraturan.go.id/files/uu9-1952.pdf
+bpk:
+  id: 40232
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29867/UU%20Nomor%209%20Tahun%201952.pdf
+    bpk_file_id: 29867
+    filename: UU Nomor 9 Tahun 1952.pdf
+    sha256: 42d3a0ba041e35ca709ba947632f9efa33703de4c4c84e108b5c48aaebeddb5d
+    bytes: 50326
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

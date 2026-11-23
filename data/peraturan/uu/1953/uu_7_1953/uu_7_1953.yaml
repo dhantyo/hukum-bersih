@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 7 Tahun 1953 tentang Pemilihan Anggota Konstituante D
 tentang: PEMILIHAN ANGGOTA KONSTITUANTE DAN ANGGOTA DEWAN PERWAKILAN RAKYAT
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-04-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu7-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45275/uu-no-7-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33767/UU%20Nomor%207%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,45 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_7_1953_1953
+- id: uu_7_1953_1953-04-04
   kind: asli
   source: official
-  date: null
+  date: '1953-04-04'
   date_basis: tanggal_penetapan
-  text: uu_7_1953_1953.txt
-  pasal_count: 138
+  text: uu_7_1953_1953-04-04.txt
+  pasal_count: 139
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b175eda79deaed64af741c437f28905a1963a753d0c4484002b151c7debb04cc
 pdf_sha256: 2a6b9c4967469ec0d45d65c62391a86c0390688425f16dafda9b58097d89c151
+tanggal_pengundangan: '1953-03-30'
+tanggal_berlaku: '1953-03-30'
+lembaran_negara: 'LN.1953/NO.29, LL SETNEG : 64 HLM.'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu7-1953.pdf
+bpk:
+  id: 45275
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33767/UU%20Nomor%207%20Tahun%201953.pdf
+    bpk_file_id: 33767
+    filename: UU Nomor 7 Tahun 1953.pdf
+    sha256: b175eda79deaed64af741c437f28905a1963a753d0c4484002b151c7debb04cc
+    bytes: 144563
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_2_1956
+      citation: UU No. 2 Tahun 1956
+      tentang: Pengubahan Undang-Undang Pemilihan Umum (Undang-Undang No. 7 Tahun
+        1953, Lembaran-Negara No. 29 Tahun 1953)
+      url: https://peraturan.bpk.go.id/Details/51076/uu-no-2-tahun-1956
+      note: null
+    - id: null
+      citation: UUDrt No. 18 Tahun 1955
+      tentang: Perubahan Jumlah Anggota Panitia Pemilihan Indonesia, Panitia Pemilihan
+        Dan Panitia Pemilihan Kabupaten
+      url: https://peraturan.bpk.go.id/Details/53040/uudrt-no-18-tahun-1955
+      note: null
+uji_materi: null

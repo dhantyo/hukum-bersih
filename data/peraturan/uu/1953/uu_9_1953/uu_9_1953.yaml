@@ -8,30 +8,71 @@ title: Undang-Undang Nomor 9 Tahun 1953 tentang Pemberian Tunjangan Yang Bersifa
 tentang: PEMBERIAN TUNJANGAN YANG BERSIFAT PENSIUN KEPADA BEKAS KETUA DAN BEKAS ANGGOTA
   DEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 9 Tahun 1992 Tentang Keimigrasian
-  Undang-Undang Nomor 12 Tahun 1980 Tentang Hak Keuangan/administratif Pimpinan dan
-  Anggota Lembaga Tertinggi/tinggi Negara Serta Bekas Pimpinan Lembaga Tertinggi/tinggi
-  Negara dan Bekas Anggota Lembaga Tinggi Negara'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1953-05-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu9-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45282/uu-no-9-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33777/UU%20Nomor%209%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_9_1992
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_9_1953_1953
+- id: uu_9_1953_1953-05-04
   kind: asli
   source: official
-  date: null
+  date: '1953-05-04'
   date_basis: tanggal_penetapan
-  text: uu_9_1953_1953.txt
+  text: uu_9_1953_1953-05-04.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e72e079ea5dae02432b59a91b44ff99eeef28504104a4cfced79f179d0595012
 pdf_sha256: c30a7dce5e0155e49628017223e90ebca560d12ba6d1616d19c59af961b254fd
+tanggal_pengundangan: '1953-05-16'
+tanggal_berlaku: '1950-08-17'
+lembaran_negara: 'LN.1953/NO.36, LL SETNEG : 7 HLM.'
+subjek: HONORARIUM, GAJI, PENGHASILAN, UANG KEHORMATAN, TUNJANGAN, PENGHARGAAN, HAK
+  LAINNYA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu9-1953.pdf
+bpk:
+  id: 45282
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33777/UU%20Nomor%209%20Tahun%201953.pdf
+    bpk_file_id: 33777
+    filename: UU Nomor 9 Tahun 1953.pdf
+    sha256: e72e079ea5dae02432b59a91b44ff99eeef28504104a4cfced79f179d0595012
+    bytes: 36889
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_12_1980
+      citation: UU No. 12 Tahun 1980
+      tentang: Hak Keuangan/Administratif Pimpinan dan Anggota Lembaga Tertinggi/Tinggi
+        Negara serta Bekas Pimpinan Lembaga Tertinggi/Tinggi Negara dan Bekas Anggota
+        Lembaga Tinggi Negara
+      url: https://peraturan.bpk.go.id/Details/47143/uu-no-12-tahun-1980
+      note: null
+    Diubah dengan:
+    - id: uu_10_1971
+      citation: UU No. 10 Tahun 1971
+      tentang: Perubahan terhadap Undang-Undang No. 9 Tahun 1953 tentang Pemberian
+        Tunjangan yang Bersifat Pensiun Kepada Bekas Ketua Dan Bekas Anggota Dewan
+        Perwakilan Rakyat Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/47606/uu-no-10-tahun-1971
+      note: null
+    - id: uu_5_1955
+      citation: UU No. 5 Tahun 1955
+      tentang: Pengubahan Undang-Undang No. 9 Tahun 1953 (Lembaran-Negara No. 36 Tahun
+        1953 ), tentang Pemberian Tunjangan yang Bersifat Pensiun kepada Bekas Ketua
+        dan Bekas Anggota Dewan Perwakilan Rakyat Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/51060/uu-no-5-tahun-1955
+      note: null
+uji_materi: null

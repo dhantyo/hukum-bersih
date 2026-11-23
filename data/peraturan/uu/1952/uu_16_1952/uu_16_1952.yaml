@@ -9,12 +9,12 @@ tentang: PERSETUJUAN PERJANJIAN PERSAHABATAN ANTARA NEGARA REPUBLIK INDONESIA DA
   NEGARA INDIA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1952-10-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-1952
-source_pdf_url: https://peraturan.go.id/files/52uu016.pdf
+source_url: https://peraturan.bpk.go.id/Details/40257/uu-no-16-tahun-1952
+source_pdf_url: https://peraturan.bpk.go.id/Download/29897/UU%20Nomor%2016%20Tahun%201952.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_16_1952_1952-10-02
+  kind: asli
+  source: official
+  date: '1952-10-02'
+  date_basis: tanggal_penetapan
+  text: uu_16_1952_1952-10-02.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6a5bf1c00cae932986ae9d2a5059a5ce3e92c2ca43de19c4ece0ea112e724567
 pdf_sha256: 06d839ba0bb0fade64d173ff25976fddd6b79a1a4461e1066f4ff67ee8ed44ef
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1952-10-07'
+tanggal_berlaku: '1952-10-07'
+lembaran_negara: 'LN.1952/NO.68, LL SETNEG : 2 HLM.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-1952
+  source_pdf_url: https://peraturan.go.id/files/52uu016.pdf
+bpk:
+  id: 40257
+  files:
+  - url: https://peraturan.bpk.go.id/Download/29897/UU%20Nomor%2016%20Tahun%201952.pdf
+    bpk_file_id: 29897
+    filename: UU Nomor 16 Tahun 1952.pdf
+    sha256: 6a5bf1c00cae932986ae9d2a5059a5ce3e92c2ca43de19c4ece0ea112e724567
+    bytes: 47578
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

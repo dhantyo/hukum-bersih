@@ -9,12 +9,12 @@ tentang: PENGESAHAN PERJANJIAN PINJAMAN TAMBAHAN REPUBLIK INDONESIA DENGAN EXPOR
   BANK OF WASHINGTON
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-06-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu20-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45320/uu-no-20-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33820/UU%20Nomor%2020%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_20_1953_1953
+- id: uu_20_1953_1953-06-25
   kind: asli
   source: official
-  date: null
+  date: '1953-06-25'
   date_basis: tanggal_penetapan
-  text: uu_20_1953_1953.txt
+  text: uu_20_1953_1953-06-25.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a05aa9de69f8fee64fa01bb438ac31d673a235302d5e547f5ada0ac30a4fe65c
 pdf_sha256: 11affb4a927e81e5d6bea025c2d67f8de7236991949008ab50650e1e58abc2f9
+tanggal_pengundangan: '1953-07-15'
+tanggal_berlaku: '1953-07-15'
+lembaran_negara: 'LN.1953/NO.56, LL SETNEG : 3 HLM.'
+subjek: PIUTANG, UTANG, DAN HIBAH NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu20-1953.pdf
+bpk:
+  id: 45320
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33820/UU%20Nomor%2020%20Tahun%201953.pdf
+    bpk_file_id: 33820
+    filename: UU Nomor 20 Tahun 1953.pdf
+    sha256: a05aa9de69f8fee64fa01bb438ac31d673a235302d5e547f5ada0ac30a4fe65c
+    bytes: 27357
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
