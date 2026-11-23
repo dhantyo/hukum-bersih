@@ -1,0 +1,43 @@
+id: pp_4_1998
+akn: /akn/id/act/pp/1998/4
+type: pp
+number: '4'
+year: 1998
+title: Peraturan Pemerintah Nomor 4 Tahun 1998 tentang Tata Cara Penjualan Barang
+  Sitaan Yang Dikecualikan Dari Penjualan Secara Lelang Dalam Rangka Penagihan Pajak
+  Dengan Surat Paksa
+tentang: TATA CARA PENJUALAN BARANG SITAAN YANG DIKECUALIKAN DARI PENJUALAN SECARA
+  LELANG DALAM RANGKA PENAGIHAN PAJAK DENGAN SURAT PAKSA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-01-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_4_1998_1998-01-07
+  kind: asli
+  source: dataset
+  date: '1998-01-07'
+  date_basis: tanggal_penetapan
+  text: pp_4_1998_1998-01-07.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:542b85ef6934564d7a9c3760e7f6b51c8c440e1b084b66fa020f849be80773f4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:542b85ef6934564d7a9c3760e7f6b51c8c440e1b084b66fa020f849be80773f4
+  source_title: PP_No._4_Tahun_1998
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:6ff4655cc81ea6aa7c77cce6e3aebb16267fa988f3b47ece6bb79e07a08d81b9

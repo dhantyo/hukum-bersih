@@ -1,0 +1,41 @@
+id: pp_22_2006
+akn: /akn/id/act/pp/2006/22
+type: pp
+number: '22'
+year: 2006
+title: Peraturan Pemerintah Nomor 22 Tahun 2006 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Sang Hyang Seri
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT SANG HYANG SERI
+short_name: null
+status: null
+tanggal_penetapan: '2006-05-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_22_2006_2006-05-31
+  kind: asli
+  source: dataset
+  date: '2006-05-31'
+  date_basis: tanggal_penetapan
+  text: pp_22_2006_2006-05-31.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0687206727805213601866b8d1770c4315c55d9bcc0da1104fb6b1e52a1557de
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0687206727805213601866b8d1770c4315c55d9bcc0da1104fb6b1e52a1557de
+  source_title: PP_no_22_th_2006
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

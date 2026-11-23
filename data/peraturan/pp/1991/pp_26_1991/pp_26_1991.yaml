@@ -1,0 +1,42 @@
+id: pp_26_1991
+akn: /akn/id/act/pp/1991/26
+type: pp
+number: '26'
+year: 1991
+title: Peraturan Pemerintah Nomor 26 Tahun 1991 tentang Tata Cara Pemberhentian Dengan
+  Hormat, Pemberhentian Tidak Dengan Hormat, Dan Pemberhentian Sementara Serta Hak-Hak
+  Hakim Agung Dan Hakim Yang Dikenakan Pemberhentian Presiden Republik Indonesia
+tentang: TATA CARA PEMBERHENTIAN DENGAN HORMAT, PEMBERHENTIAN TIDAK DENGAN HORMAT,
+  DAN PEMBERHENTIAN SEMENTARA SERTA HAK-HAK HAKIM AGUNG DAN HAKIM YANG DIKENAKAN PEMBERHENTIAN
+  Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1991-05-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_26_1991_1991-05-02
+  kind: asli
+  source: dataset
+  date: '1991-05-02'
+  date_basis: tanggal_penetapan
+  text: pp_26_1991_1991-05-02.txt
+  pasal_count: 22
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:18f5065198fcf6003671d6b86bb7104be09838a484947c52c5d5fb6e3cfd908a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:18f5065198fcf6003671d6b86bb7104be09838a484947c52c5d5fb6e3cfd908a
+  source_title: PP_NO_26_TH_1991
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 49
+  status: none_known

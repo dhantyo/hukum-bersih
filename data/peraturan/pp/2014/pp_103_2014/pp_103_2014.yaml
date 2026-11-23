@@ -1,0 +1,38 @@
+id: pp_103_2014
+akn: /akn/id/act/pp/2014/103
+type: pp
+number: '103'
+year: 2014
+title: Peraturan Pemerintah Nomor 103 Tahun 2014 tentang Pelayanan Kesehatan Tradisional
+tentang: PELAYANAN KESEHATAN TRADISIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2014-12-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_103_2014_2014-12-03
+  kind: asli
+  source: dataset
+  date: '2014-12-03'
+  date_basis: tanggal_penetapan
+  text: pp_103_2014_2014-12-03.txt
+  pasal_count: 86
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:14b7eb4f98ce6af4bb905cf0e1883b8981a54c345723ba56c259a33027f23a3d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:14b7eb4f98ce6af4bb905cf0e1883b8981a54c345723ba56c259a33027f23a3d
+  source_title: PP_Nomor_103_Tahun_2014
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 103
+  status: none_known

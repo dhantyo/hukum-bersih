@@ -1,0 +1,39 @@
+id: pp_73_1948
+akn: /akn/id/act/pp/1948/73
+type: pp
+number: '73'
+year: 1948
+title: Peraturan Pemerintah Nomor 73 Tahun 1948 tentang Mendirikan Sekolah Tinggi
+  Hukum
+tentang: MENDIRIKAN SEKOLAH TINGGI HUKUM
+short_name: null
+status: null
+tanggal_penetapan: '1948-12-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_73_1948_1948-12-08
+  kind: asli
+  source: dataset
+  date: '1948-12-08'
+  date_basis: tanggal_penetapan
+  text: pp_73_1948_1948-12-08.txt
+  pasal_count: 28
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c1e59b4cb6c454a49e416910fd16dcd094588bd920eed78f83b155375cd24aef
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c1e59b4cb6c454a49e416910fd16dcd094588bd920eed78f83b155375cd24aef
+  source_title: PP_No_73_Nomor_1948
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 47
+  status: none_known

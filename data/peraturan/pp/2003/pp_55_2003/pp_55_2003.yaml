@@ -1,0 +1,39 @@
+id: pp_55_2003
+akn: /akn/id/act/pp/2003/55
+type: pp
+number: '55'
+year: 2003
+title: Peraturan Pemerintah Nomor 55 Tahun 2003 tentang Tanda Kehormatan Satyalancana
+  Pendidikan
+tentang: TANDA KEHORMATAN SATYALANCANA PENDIDIKAN
+short_name: null
+status: null
+tanggal_penetapan: '2003-11-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_55_2003_2003-11-04
+  kind: asli
+  source: dataset
+  date: '2003-11-04'
+  date_basis: tanggal_penetapan
+  text: pp_55_2003_2003-11-04.txt
+  pasal_count: 22
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:008759a5a493969a5dd2f6c42ad32d00730ebfc0287a5bf9073fb0f0f6501023
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:008759a5a493969a5dd2f6c42ad32d00730ebfc0287a5bf9073fb0f0f6501023
+  source_title: PP_No.55_TH_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 42
+  status: none_known

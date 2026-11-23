@@ -1,0 +1,41 @@
+id: pp_24_2013
+akn: /akn/id/act/pp/2013/24
+type: pp
+number: '24'
+year: 2013
+title: Peraturan Pemerintah Nomor 24 Tahun 2013 tentang Perubahankesembilanatasperaturanpemerintah
+  Nomor 29 Tahun2001 Tentangperaturangaji Anggota Kepolisiannegararepublik Indonesia
+  Denganrahmattuhanyangmahaesa
+tentang: PERUBAHANKESEMBILANATASPERATURANPEMERINTAH NOMOR 29 TAHUN2001 TENTANGPERATURANGAJI
+  ANGGOTA KEPOLISIANNEGARAREPUBLIK INDONESIA DENGANRAHMATTUHANYANGMAHAESA
+short_name: null
+status: null
+tanggal_penetapan: '2013-04-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_24_2013_2013-04-11
+  kind: asli
+  source: dataset
+  date: '2013-04-11'
+  date_basis: tanggal_penetapan
+  text: pp_24_2013_2013-04-11.txt
+  pasal_count: 1
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0e2b18b1d5f290e7664465ebe7f308d013e79b5dea8788b0f5d42a70eb038f81
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0e2b18b1d5f290e7664465ebe7f308d013e79b5dea8788b0f5d42a70eb038f81
+  source_title: PP_Nomor_24_Tahun_2013
+  regulation_type: PERATURANPEMERINTAH
+  quality: degraded
+  chunks: 4
+  status: none_known

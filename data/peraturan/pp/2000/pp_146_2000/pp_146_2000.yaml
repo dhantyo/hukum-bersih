@@ -1,0 +1,43 @@
+id: pp_146_2000
+akn: /akn/id/act/pp/2000/146
+type: pp
+number: '146'
+year: 2000
+title: Peraturan Pemerintah Nomor 146 Tahun 2000 tentang Impor Dan Atau Penyerahan
+  Barang Kena Pajak Tertentu Dan Atau Penyerahan Jasa Kena Pajak Tertentu Yang Dibebaskan
+  Dari Pengenaan Pajak Pertambahan Nilai
+tentang: IMPOR DAN ATAU PENYERAHAN BARANG KENA PAJAK TERTENTU DAN ATAU PENYERAHAN
+  JASA KENA PAJAK TERTENTU YANG DIBEBASKAN DARI PENGENAAN PAJAK PERTAMBAHAN NILAI
+short_name: null
+status: diubah
+tanggal_penetapan: '2001-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_146_2000_2001-01-01
+  kind: asli
+  source: dataset
+  date: '2001-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_146_2000_2001-01-01.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:300431ac0555ad3488dfa22e9530453391a050ee8409ed69d32d9fa4df9c9730
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:300431ac0555ad3488dfa22e9530453391a050ee8409ed69d32d9fa4df9c9730
+  source_title: PP_No.146_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: amended
+  amended_by:
+  - sha256:0e3fab91e2086494e0577f51236c337c1405e9057ec51935fefe197c33c198d3

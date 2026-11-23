@@ -1,0 +1,45 @@
+id: pp_15_2001
+akn: /akn/id/act/pp/2001/15
+type: pp
+number: '15'
+year: 2001
+title: Peraturan Pemerintah Nomor 15 Tahun 2001 tentang Pengalihan Status Anggota
+  Tentara Nasional Indonesia Dan Anggota Kepolisian Negara Republik Indonesia Menjadi
+  Pegawai Negeri Sipil Untuk Menduduki Jabatan Struktural
+tentang: PENGALIHAN STATUS ANGGOTA TENTARA NASIONAL INDONESIA DAN ANGGOTA KEPOLISIAN
+  NEGARA REPUBLIK INDONESIA MENJADI PEGAWAI NEGERI SIPIL UNTUK MENDUDUKI JABATAN STRUKTURAL
+short_name: null
+status: diubah
+tanggal_penetapan: '2001-03-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_15_2001_2001-03-27
+  kind: asli
+  source: dataset
+  date: '2001-03-27'
+  date_basis: tanggal_penetapan
+  text: pp_15_2001_2001-03-27.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:aba7d923efd308ded97ce2d1f2ce5300fd9a2cc751e066021913af5a2525fbb3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:aba7d923efd308ded97ce2d1f2ce5300fd9a2cc751e066021913af5a2525fbb3
+  source_title: PP_NO_15_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 21
+  status: amended
+  amended_by:
+  - sha256:05685b7a8e107c4a8c949357694c9592b2a71c5f278eb56cb8481d6b40e40b50
+  - sha256:8449d6be0a700c177ac10182b9b93cba61235e59bad4bb43d25da9bdd15dedc5
+  - sha256:8bef04623e428d4de3e79853b234c350437f00afb53b5b4a45f47ad136a88fe3

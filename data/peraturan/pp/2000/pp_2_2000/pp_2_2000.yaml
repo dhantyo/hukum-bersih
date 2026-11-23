@@ -1,0 +1,43 @@
+id: pp_2_2000
+akn: /akn/id/act/pp/2000/2
+type: pp
+number: '2'
+year: 2000
+title: Peraturan Pemerintah Nomor 2 Tahun 2000 tentang Penggabungan Perusahaan Perseroan
+  (Persero) Pt. Industri Sodaindonesia Ke Dalam Perusahaan Perseroan (Persero) Pt.
+  Garam
+tentang: PENGGABUNGAN PERUSAHAAN PERSEROAN (PERSERO) PT. INDUSTRI SODAINDONESIA KE
+  DALAM PERUSAHAAN PERSEROAN (PERSERO) PT. GARAM
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-01-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_2_2000_2000-01-28
+  kind: asli
+  source: dataset
+  date: '2000-01-28'
+  date_basis: tanggal_penetapan
+  text: pp_2_2000_2000-01-28.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:06d8602034333b97a06ea73cb3704acddb424679fac5d27282ba9cf19e523fe3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:06d8602034333b97a06ea73cb3704acddb424679fac5d27282ba9cf19e523fe3
+  source_title: PP_No.2_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:927094fd61e0592db4ad879e1630bdf15da5baf72f634d12bda2149605166f84

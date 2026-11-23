@@ -1,0 +1,41 @@
+id: pp_48_2009
+akn: /akn/id/act/pp/2009/48
+type: pp
+number: '48'
+year: 2009
+title: Peraturan Pemerintah Nomor 48 Tahun 2009 tentang Perizinan Pelaksanaan Kegiatan
+  Penelitian, Pengembangan, Dan Penerapan Ilmu Pengetahuan Dan Teknologi Yang Berisiko
+  Tinggi Dan Berbahaya
+tentang: PERIZINAN PELAKSANAAN KEGIATAN PENELITIAN, PENGEMBANGAN, DAN PENERAPAN ILMU
+  PENGETAHUAN DAN TEKNOLOGI YANG BERISIKO TINGGI DAN BERBAHAYA
+short_name: null
+status: null
+tanggal_penetapan: '2009-07-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_48_2009_2009-07-18
+  kind: asli
+  source: dataset
+  date: '2009-07-18'
+  date_basis: tanggal_penetapan
+  text: pp_48_2009_2009-07-18.txt
+  pasal_count: 31
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e56542b0c67b106a7012b104b39cb8ef707b5b59ed1e1302bdced07a06c3bff9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e56542b0c67b106a7012b104b39cb8ef707b5b59ed1e1302bdced07a06c3bff9
+  source_title: PP_No_48_2009
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 49
+  status: none_known

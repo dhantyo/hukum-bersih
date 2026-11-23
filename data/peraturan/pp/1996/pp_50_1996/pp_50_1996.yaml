@@ -1,0 +1,41 @@
+id: pp_50_1996
+akn: /akn/id/act/pp/1996/50
+type: pp
+number: '50'
+year: 1996
+title: Peraturan Pemerintah Nomor 50 Tahun 1996 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Bank Negara Indonesia
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT BANK NEGARA INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '1996-08-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_50_1996_1996-08-09
+  kind: asli
+  source: dataset
+  date: '1996-08-09'
+  date_basis: tanggal_penetapan
+  text: pp_50_1996_1996-08-09.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:079727b2098e73b5f41ba981042c887a82101c100f6b8cfea1cbf00aa3d4e1c6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:079727b2098e73b5f41ba981042c887a82101c100f6b8cfea1cbf00aa3d4e1c6
+  source_title: PP_No._50_Th_1996
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: none_known

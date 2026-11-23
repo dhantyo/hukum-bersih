@@ -1,0 +1,30 @@
+id: pp_81_1998
+akn: /akn/id/act/pp/1998/81
+type: pp
+number: '81'
+year: 1998
+title: Peraturan Pemerintah Nomor 81 Tahun 1998 tentang Lalu Lintas Dan Angkutan Kereta
+  Api
+tentang: LALU LINTAS DAN ANGKUTAN KERETA API
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-11-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a2e8cfe5dfed920991c6bbd5bf36ff6c97c56c9d2ce5a0be081136e892ba847a
+  source_title: PP_No._81_Tahun_1998
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 73
+  status: revoked
+  revoked_by:
+  - sha256:a02528f095bfba0f5e22436b3529945bc26c5af5e646b576005356cfea85db9f
+parse_error: 'v13: rebuilt text has 9 pasal, the dataset lists 40'

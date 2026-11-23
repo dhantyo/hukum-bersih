@@ -1,0 +1,42 @@
+id: pp_9_1991
+akn: /akn/id/act/pp/1991/9
+type: pp
+number: '9'
+year: 1991
+title: Peraturan Pemerintah Nomor 9 Tahun 1991 tentang Pengalihan Bentuk Perusahaan
+  Umum (Perum) Pengerukan Menjadi Perusahaan Perseroan (Persero)
+tentang: PENGALIHAN BENTUK PERUSAHAAN UMUM (PERUM) PENGERUKAN MENJADI PERUSAHAAN PERSEROAN
+  (PERSERO)
+short_name: null
+status: dicabut
+tanggal_penetapan: '1991-02-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_9_1991_1991-02-07
+  kind: asli
+  source: dataset
+  date: '1991-02-07'
+  date_basis: tanggal_penetapan
+  text: pp_9_1991_1991-02-07.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f9b27661d0da13e06de15b67d61a74287f3210c4e2bc533740fe65b7fe0d3132
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f9b27661d0da13e06de15b67d61a74287f3210c4e2bc533740fe65b7fe0d3132
+  source_title: PP_NO_9_TH_1991
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: revoked
+  revoked_by:
+  - sha256:dfb2aaa391e163565e4213023be6d87ec0d61af051667695a4bd1e9ee9a2479b

@@ -1,0 +1,42 @@
+id: pp_1_1996
+akn: /akn/id/act/pp/1996/1
+type: pp
+number: '1'
+year: 1996
+title: Peraturan Pemerintah Nomor 1 Tahun 1996 tentang Pembentukan 9 (Sembilan) Kecamatan
+  Di Wilayah Kebupaten Daerah Tingkat Ii Labuhan Batu, Tapanuli Selatan, Nias Dan
+  Tapanuli Tengah Dalam Wilayah Propinsi Daerah Tingkat I Sumatera Utara
+tentang: PEMBENTUKAN 9 (SEMBILAN) KECAMATAN DI WILAYAH KEBUPATEN DAERAH TINGKAT II
+  LABUHAN BATU, TAPANULI SELATAN, NIAS DAN TAPANULI TENGAH DALAM WILAYAH PROPINSI
+  DAERAH TINGKAT I SUMATERA UTARA
+short_name: null
+status: null
+tanggal_penetapan: '1996-01-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_1_1996_1996-01-03
+  kind: asli
+  source: dataset
+  date: '1996-01-03'
+  date_basis: tanggal_penetapan
+  text: pp_1_1996_1996-01-03.txt
+  pasal_count: 15
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0a1a0eb3c124b684ba95f3753b8aeaf7d17b417bcdb983d0d6b31f887a8614be
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0a1a0eb3c124b684ba95f3753b8aeaf7d17b417bcdb983d0d6b31f887a8614be
+  source_title: PP_No._1_Th_1996
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 20
+  status: none_known

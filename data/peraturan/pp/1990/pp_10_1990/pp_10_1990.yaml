@@ -1,0 +1,32 @@
+id: pp_10_1990
+akn: /akn/id/act/pp/1990/10
+type: pp
+number: '10'
+year: 1990
+title: Peraturan Pemerintah Nomor 10 Tahun 1990 tentang Pengalihan Bentuk Perusahaan
+  Jawatan (Perjan) Pegadaian Menjadi Perusahaan Umum (Perum) Pegadaian
+tentang: PENGALIHAN BENTUK PERUSAHAAN JAWATAN (PERJAN) PEGADAIAN MENJADI PERUSAHAAN
+  UMUM (PERUM) PEGADAIAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1990-04-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fed7d543c5d76c82758519fe213058fad3f4cd6fbe47c232077ab0a487a1e8d4
+  source_title: PP_NO_10_TH_1990
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 58
+  status: revoked
+  revoked_by:
+  - sha256:7b301d21ec894bf018840986bec7ebda560bd17bc011ec16b039247f6344ea60
+  - sha256:c4a13e03b6bae8432ad411338dd096e0c052474dc4f72e21f6489a8edb6be675
+parse_error: 'v13: rebuilt text has 15 pasal, the dataset lists 53'

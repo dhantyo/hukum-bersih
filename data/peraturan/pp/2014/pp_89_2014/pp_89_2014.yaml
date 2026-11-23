@@ -1,0 +1,40 @@
+id: pp_89_2014
+akn: /akn/id/act/pp/2014/89
+type: pp
+number: '89'
+year: 2014
+title: Peraturan Pemerintah Nomor 89 Tahun 2014 tentang Suku Bunga Pinjaman Atau Imbal
+  Hasil Pembiayaan Dan Luas Cakupan Wilayah Usaha Lembaga Keuangan Mikro
+tentang: SUKU BUNGA PINJAMAN ATAU IMBAL HASIL PEMBIAYAAN DAN LUAS CAKUPAN WILAYAH
+  USAHA LEMBAGA KEUANGAN MIKRO
+short_name: null
+status: null
+tanggal_penetapan: '2015-01-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_89_2014_2015-01-08
+  kind: asli
+  source: dataset
+  date: '2015-01-08'
+  date_basis: tanggal_penetapan
+  text: pp_89_2014_2015-01-08.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:98042d2663a029a9b173738f900e39803cf54e0602f3df66a195d866fe6b617d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:98042d2663a029a9b173738f900e39803cf54e0602f3df66a195d866fe6b617d
+  source_title: PP_Nomor_89_Tahun_2014
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 14
+  status: none_known

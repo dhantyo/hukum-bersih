@@ -1,0 +1,40 @@
+id: pp_33_1996
+akn: /akn/id/act/pp/1996/33
+type: pp
+number: '33'
+year: 1996
+title: Peraturan Pemerintah Nomor 33 Tahun 1996 tentang Tempat Penimbunan Berikat
+tentang: TEMPAT PENIMBUNAN BERIKAT
+short_name: null
+status: diubah
+tanggal_penetapan: '1996-06-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_33_1996_1996-06-04
+  kind: asli
+  source: dataset
+  date: '1996-06-04'
+  date_basis: tanggal_penetapan
+  text: pp_33_1996_1996-06-04.txt
+  pasal_count: 35
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7eae406d3365904c23dbb7b38e1e04994b8b9e2716b3c59180aceaef6076e5dc
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7eae406d3365904c23dbb7b38e1e04994b8b9e2716b3c59180aceaef6076e5dc
+  source_title: PP_No._33_Th_1996
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 66
+  status: amended
+  amended_by:
+  - sha256:439f0413fc54f82827b03ca446d634ce580dbfe13df64cc6b32086e6542baea9

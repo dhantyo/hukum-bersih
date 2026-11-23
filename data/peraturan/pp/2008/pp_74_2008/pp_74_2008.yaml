@@ -1,0 +1,41 @@
+id: pp_74_2008
+akn: /akn/id/act/pp/2008/74
+type: pp
+number: '74'
+year: 2008
+title: Peraturan Pemerintah Nomor 74 Tahun 2008 tentang Guru
+tentang: GURU
+short_name: null
+status: diubah
+tanggal_penetapan: '2008-12-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_74_2008_2008-12-01
+  kind: asli
+  source: dataset
+  date: '2008-12-01'
+  date_basis: tanggal_penetapan
+  text: pp_74_2008_2008-12-01.txt
+  pasal_count: 68
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ee5c27716543285a4082e8527ae659428f656cb00c03b9aa23b77f87443891e6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ee5c27716543285a4082e8527ae659428f656cb00c03b9aa23b77f87443891e6
+  source_title: PP_74_Tahun_2008
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 110
+  status: amended
+  amended_by:
+  - sha256:01df2fd65c730d0708550d08bf31ddf65415d8c8184fa46501d32e3c1d7bb50f
+  - sha256:71cdc19bc50a4dacaedcee5d9b49905e479a4d8a9e18226f0376e86446ae2bc5

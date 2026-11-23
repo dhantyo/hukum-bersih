@@ -1,0 +1,41 @@
+id: pp_86_2015
+akn: /akn/id/act/pp/2015/86
+type: pp
+number: '86'
+year: 2015
+title: Peraturan Pemerintah Nomor 86 Tahun 2015 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Pertani
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT PERTANI
+short_name: null
+status: null
+tanggal_penetapan: '2015-11-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_86_2015_2015-11-25
+  kind: asli
+  source: dataset
+  date: '2015-11-25'
+  date_basis: tanggal_penetapan
+  text: pp_86_2015_2015-11-25.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:935d1be25c3c82f7414361dd868570603e0abfc87617acb778bedfde92d6f6e0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:935d1be25c3c82f7414361dd868570603e0abfc87617acb778bedfde92d6f6e0
+  source_title: PP_Nomor_86_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

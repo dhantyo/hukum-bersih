@@ -1,0 +1,41 @@
+id: pp_40_2006
+akn: /akn/id/act/pp/2006/40
+type: pp
+number: '40'
+year: 2006
+title: Peraturan Pemerintah Nomor 40 Tahun 2006 tentang Tata Cara Penyusunan Rencana
+  Pembangunan Nasional
+tentang: TATA CARA PENYUSUNAN RENCANA PEMBANGUNAN NASIONAL
+short_name: null
+status: diubah
+tanggal_penetapan: '2006-11-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_40_2006_2006-11-29
+  kind: asli
+  source: dataset
+  date: '2006-11-29'
+  date_basis: tanggal_penetapan
+  text: pp_40_2006_2006-11-29.txt
+  pasal_count: 29
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:cfe21d74d12065c5c1ac8263a091a892d79c91ad6b7ecc5c641bf6d3f51d9960
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:cfe21d74d12065c5c1ac8263a091a892d79c91ad6b7ecc5c641bf6d3f51d9960
+  source_title: PP_no_40_th_2006
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 59
+  status: amended
+  amended_by:
+  - sha256:71cdc19bc50a4dacaedcee5d9b49905e479a4d8a9e18226f0376e86446ae2bc5

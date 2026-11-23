@@ -1,0 +1,39 @@
+id: pp_125_2000
+akn: /akn/id/act/pp/2000/125
+type: pp
+number: '125'
+year: 2000
+title: Peraturan Pemerintah Nomor 125 Tahun 2000 tentang Pendirian Perusahaan Jawatan
+  Rumah Sakit Dr. Wahidin Sudirohusodo Makassar
+tentang: PENDIRIAN PERUSAHAAN JAWATAN RUMAH SAKIT DR. WAHIDIN SUDIROHUSODO MAKASSAR
+short_name: null
+status: null
+tanggal_penetapan: '2000-12-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_125_2000_2000-12-12
+  kind: asli
+  source: dataset
+  date: '2000-12-12'
+  date_basis: tanggal_penetapan
+  text: pp_125_2000_2000-12-12.txt
+  pasal_count: 53
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:612812bdcbedd20f7b0c02e48368df887efdb4093d3820d261bcb0a734711e33
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:612812bdcbedd20f7b0c02e48368df887efdb4093d3820d261bcb0a734711e33
+  source_title: PP_No.125_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 65
+  status: none_known

@@ -1,0 +1,42 @@
+id: pp_54_2001
+akn: /akn/id/act/pp/2001/54
+type: pp
+number: '54'
+year: 2001
+title: Peraturan Pemerintah Nomor 54 Tahun 2001 tentang Tarif Atas Jenis Penerimaan
+  Negara Bukan Pajak Yang Berlaku Pada Badan Standardisasi Nasional
+tentang: TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA BADAN STANDARDISASI
+  NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-06-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_54_2001_2001-06-30
+  kind: asli
+  source: dataset
+  date: '2001-06-30'
+  date_basis: tanggal_penetapan
+  text: pp_54_2001_2001-06-30.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:39c4a2c45b8514c703124a464bf8d4a3931c6cd67b21c1b280a2a97755d3a135
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:39c4a2c45b8514c703124a464bf8d4a3931c6cd67b21c1b280a2a97755d3a135
+  source_title: PP_NO_54_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:7b6034c4b09c97486bcb266717a620ab5870e396686fbb5daa10f817f9177765

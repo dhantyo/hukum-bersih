@@ -1,0 +1,40 @@
+id: pp_73_2016
+akn: /akn/id/act/pp/2016/73
+type: pp
+number: '73'
+year: 2016
+title: Peraturan Pemerintah Nomor 73 Tahun 2016 tentang Pajak Penghasilan Atas Program
+  Jaminan Sosial Yang Diselenggarakan Badan Penyelenggara Jaminan Sosial
+tentang: PAJAK PENGHASILAN ATAS PROGRAM JAMINAN SOSIAL YANG DISELENGGARAKAN BADAN
+  PENYELENGGARA JAMINAN SOSIAL
+short_name: null
+status: null
+tanggal_penetapan: '2016-12-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_73_2016_2016-12-30
+  kind: asli
+  source: dataset
+  date: '2016-12-30'
+  date_basis: tanggal_penetapan
+  text: pp_73_2016_2016-12-30.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:dea5d40cd04f76228d5e6e13fd020e2259d27b462a5c87a8d7d85f434e3ef2f8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:dea5d40cd04f76228d5e6e13fd020e2259d27b462a5c87a8d7d85f434e3ef2f8
+  source_title: PP_Nomor_73_Tahun_2016
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 21
+  status: none_known

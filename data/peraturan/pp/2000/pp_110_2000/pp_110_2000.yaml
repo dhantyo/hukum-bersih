@@ -1,0 +1,41 @@
+id: pp_110_2000
+akn: /akn/id/act/pp/2000/110
+type: pp
+number: '110'
+year: 2000
+title: Peraturan Pemerintah Nomor 110 Tahun 2000 tentang Kedudukan Keuangan Daerah
+  Perwakilan Rakyat Daerah
+tentang: KEDUDUKAN KEUANGAN DAERAH PERWAKILAN RAKYAT DAERAH
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-11-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_110_2000_2000-11-30
+  kind: asli
+  source: dataset
+  date: '2000-11-30'
+  date_basis: tanggal_penetapan
+  text: pp_110_2000_2000-11-30.txt
+  pasal_count: 21
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:06ae7cac9ec3df02d7e64da720c976b8defa4dcb213a20a7ebfd0cae87c7b3ce
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:06ae7cac9ec3df02d7e64da720c976b8defa4dcb213a20a7ebfd0cae87c7b3ce
+  source_title: PP_No.110_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 41
+  status: revoked
+  revoked_by:
+  - sha256:dc4bf18d026a04d307d9c63912f32efc49d43d15473d9eba1fe6b05810c98a2c

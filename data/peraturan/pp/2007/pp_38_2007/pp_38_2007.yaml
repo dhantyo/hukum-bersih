@@ -1,0 +1,46 @@
+id: pp_38_2007
+akn: /akn/id/act/pp/2007/38
+type: pp
+number: '38'
+year: 2007
+title: Peraturan Pemerintah Nomor 38 Tahun 2007 tentang Pembagian Urusan Pemerintahan
+  Antara Pemerintah, Pemerintahan Daerah Provinsi, Dan Pemerintahan Daerah Kabupaten/Kota
+tentang: PEMBAGIAN URUSAN PEMERINTAHAN ANTARA PEMERINTAH, PEMERINTAHAN DAERAH PROVINSI,
+  DAN PEMERINTAHAN DAERAH KABUPATEN/KOTA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2007-07-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_38_2007_2007-07-09
+  kind: asli
+  source: dataset
+  date: '2007-07-09'
+  date_basis: tanggal_penetapan
+  text: pp_38_2007_2007-07-09.txt
+  pasal_count: 22
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:037879007bafb68d8c3f451121cc88d5030bf74694fc56359ded79dc282bef05
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:037879007bafb68d8c3f451121cc88d5030bf74694fc56359ded79dc282bef05
+  source_title: PP_38_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 28
+  status: revoked
+  revoked_by:
+  - sha256:d4d90d832633788062b46a3c611a3f0c988a2baec01ede6381932807eccf5896
+  amended_by:
+  - sha256:b36558f949cc6530a5a17ba1b3c27ce7750160987fdffcf8e68c82c9401bb8cc
+  - sha256:dc424bcf615b0fc62bca463d2e1de2eea45bd19dc76cbd3b5f55efd848b9444b
+  - sha256:eff1512de95910c4050e969f14c02099c534a9b7987dfb8461a4dfe995a2401f

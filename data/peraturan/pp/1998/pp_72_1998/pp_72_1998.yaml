@@ -1,0 +1,30 @@
+id: pp_72_1998
+akn: /akn/id/act/pp/1998/72
+type: pp
+number: '72'
+year: 1998
+title: Peraturan Pemerintah Nomor 72 Tahun 1998 tentang Pengamanan Sediaan Farmasi
+  Dan Alat Kesehatan
+tentang: PENGAMANAN SEDIAAN FARMASI DAN ALAT KESEHATAN
+short_name: null
+status: diubah
+tanggal_penetapan: '1998-09-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:90f60d484a8e7f41a5834c71680bd98950fee1d8fce93030e3bb9f90207222cd
+  source_title: PP_No._72_Tahun_1998
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 138
+  status: amended
+  amended_by:
+  - sha256:724a0f012a6cc010ff25546471e408f397980c64b502965ab301e5a26b2f7b76
+parse_error: 'v13: rebuilt text has 46 pasal, the dataset lists 72'

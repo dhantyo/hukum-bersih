@@ -1,0 +1,40 @@
+id: pp_6_1985
+akn: /akn/id/act/pp/1985/6
+type: pp
+number: '6'
+year: 1985
+title: Peraturan Pemerintah Nomor 6 Tahun 1985
+tentang: null
+short_name: null
+status: dicabut
+tanggal_penetapan: '1985-02-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_6_1985_1985-02-05
+  kind: asli
+  source: dataset
+  date: '1985-02-05'
+  date_basis: tanggal_penetapan
+  text: pp_6_1985_1985-02-05.txt
+  pasal_count: 60
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9d2f99cc5a6ef63461cbed761aec58c11e38ee622dd7e7c0209f543279d7c6f6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9d2f99cc5a6ef63461cbed761aec58c11e38ee622dd7e7c0209f543279d7c6f6
+  source_title: PP_NO_6_TH_1995
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 73
+  status: revoked
+  revoked_by:
+  - sha256:802bf480c886e400c8dd4b2cd6ca9e635ea31403264420e94deac382569585a9

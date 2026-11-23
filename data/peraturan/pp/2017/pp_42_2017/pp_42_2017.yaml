@@ -1,0 +1,39 @@
+id: pp_42_2017
+akn: /akn/id/act/pp/2017/42
+type: pp
+number: '42'
+year: 2017
+title: Peraturan Pemerintah Nomor 42 Tahun 2017 tentang Kawasan Ekonomi Khusus Gai,Ang
+  Batang
+tentang: KAWASAN EKONOMI KHUSUS GAI,ANG BATANG
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_42_2017_2017
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: pp_42_2017_2017.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b057daf751c9032c3f09c502f1bef60d4ec84d0cbcbd15b2be83b25af61a08f2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b057daf751c9032c3f09c502f1bef60d4ec84d0cbcbd15b2be83b25af61a08f2
+  source_title: PP_Nomor_42_Tahun_2017
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 15
+  status: none_known

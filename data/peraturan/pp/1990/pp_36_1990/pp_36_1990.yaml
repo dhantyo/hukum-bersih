@@ -1,0 +1,40 @@
+id: pp_36_1990
+akn: /akn/id/act/pp/1990/36
+type: pp
+number: '36'
+year: 1990
+title: Peraturan Pemerintah Nomor 36 Tahun 1990 tentang Penjualan Seluruh Kekayaan
+  Negara Yang Tertanam Dalam Modal Perusahaan Umum (Perum) Pengeringan Tembakau Bojonegoro
+tentang: PENJUALAN SELURUH KEKAYAAN NEGARA YANG TERTANAM DALAM MODAL PERUSAHAAN UMUM
+  (PERUM) PENGERINGAN TEMBAKAU BOJONEGORO
+short_name: null
+status: null
+tanggal_penetapan: '1990-07-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_36_1990_1990-07-24
+  kind: asli
+  source: dataset
+  date: '1990-07-24'
+  date_basis: tanggal_penetapan
+  text: pp_36_1990_1990-07-24.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4333ecb72cf048c7f58cd2c7b2ee1b31b470e8ff0c6d2632974df9738f4b5a68
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4333ecb72cf048c7f58cd2c7b2ee1b31b470e8ff0c6d2632974df9738f4b5a68
+  source_title: PP_NO_36_TH_1990
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: none_known

@@ -1,0 +1,40 @@
+id: pp_1_2001
+akn: /akn/id/act/pp/2001/1
+type: pp
+number: '1'
+year: 2001
+title: Peraturan Pemerintah Nomor 1 Tahun 2001 tentang Pedoman Penyusunan Tata Tertib
+tentang: PEDOMAN PENYUSUNAN TATA TERTIB
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-01-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_1_2001_2001-01-03
+  kind: asli
+  source: dataset
+  date: '2001-01-03'
+  date_basis: tanggal_penetapan
+  text: pp_1_2001_2001-01-03.txt
+  pasal_count: 51
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:597052bb1e6d932f865b3ca1941c59e9cb7eeaae83ac3a41e3adbae1ffa60109
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:597052bb1e6d932f865b3ca1941c59e9cb7eeaae83ac3a41e3adbae1ffa60109
+  source_title: PP_NO_1_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 73
+  status: revoked
+  revoked_by:
+  - sha256:f2cf5cbcc813b13ec1ccdbb3883e13551113f250951ddad839ee2c1386b39ed9

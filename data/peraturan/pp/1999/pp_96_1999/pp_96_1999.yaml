@@ -1,0 +1,45 @@
+id: pp_96_1999
+akn: /akn/id/act/pp/1999/96
+type: pp
+number: '96'
+year: 1999
+title: Peraturan Pemerintah Nomor 96 Tahun 1999 tentang Pengalihan Kedudukan, Tugas
+  Dan Kewenangan Menteri Keuangan Selaku Rapat Umum Pemegang Saham (Rups) Atau Pemegang
+  Saham Pada Perusahaan Perseroan (Persero) Dan Perseroan Terbatas Yang Sebagian Sahamnya
+  Dimiliki Oleh Negara Republik Indonesia Kepada Menteri Negara Penanaman Modal Dan
+  Pembinaan Badan Usaha Milik Negara
+tentang: PENGALIHAN KEDUDUKAN, TUGAS DAN KEWENANGAN MENTERI KEUANGAN SELAKU RAPAT
+  UMUM PEMEGANG SAHAM (RUPS) ATAU PEMEGANG SAHAM PADA PERUSAHAAN PERSEROAN (PERSERO)
+  DAN PERSEROAN TERBATAS YANG SEBAGIAN SAHAMNYA DIMILIKI OLEH NEGARA REPUBLIK INDONESIA
+  KEPADA MENTERI NEGARA PENANAMAN MODAL DAN PEMBINAAN BADAN USAHA MILIK NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '1999-12-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_96_1999_1999-12-22
+  kind: asli
+  source: dataset
+  date: '1999-12-22'
+  date_basis: tanggal_penetapan
+  text: pp_96_1999_1999-12-22.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7149394b886aab4bc466cac62231390566e1667d858ddade04884a690ac626cf
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7149394b886aab4bc466cac62231390566e1667d858ddade04884a690ac626cf
+  source_title: PP_No._96_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 14
+  status: none_known

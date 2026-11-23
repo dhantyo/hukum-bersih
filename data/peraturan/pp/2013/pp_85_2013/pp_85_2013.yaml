@@ -1,0 +1,39 @@
+id: pp_85_2013
+akn: /akn/id/act/pp/2013/85
+type: pp
+number: '85'
+year: 2013
+title: Peraturan Pemerintah Nomor 85 Tahun 2013 tentang Tata Cara Hubungan Antar Lembaga
+  Badan Penyelenggara Jaminan Sosial
+tentang: TATA CARA HUBUNGAN ANTAR LEMBAGA BADAN PENYELENGGARA JAMINAN SOSIAL
+short_name: null
+status: null
+tanggal_penetapan: '2013-12-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_85_2013_2013-12-19
+  kind: asli
+  source: dataset
+  date: '2013-12-19'
+  date_basis: tanggal_penetapan
+  text: pp_85_2013_2013-12-19.txt
+  pasal_count: 21
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4a27e78d144e4dd4d5949d70dc415c2828b5f0b84db824f161b4ace229824e52
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4a27e78d144e4dd4d5949d70dc415c2828b5f0b84db824f161b4ace229824e52
+  source_title: PP_Nomor_85_Tahun_2013
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 34
+  status: none_known

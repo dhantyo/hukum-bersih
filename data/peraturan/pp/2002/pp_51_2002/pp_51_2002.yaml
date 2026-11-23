@@ -1,0 +1,38 @@
+id: pp_51_2002
+akn: /akn/id/act/pp/2002/51
+type: pp
+number: '51'
+year: 2002
+title: Peraturan Pemerintah Nomor 51 Tahun 2002 tentang Perkapalan
+tentang: PERKAPALAN
+short_name: null
+status: null
+tanggal_penetapan: '2002-09-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_51_2002_2002-09-23
+  kind: asli
+  source: dataset
+  date: '2002-09-23'
+  date_basis: tanggal_penetapan
+  text: pp_51_2002_2002-09-23.txt
+  pasal_count: 122
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d630885e8f829e73c9d83d35872c14faf7e136869d2b7fd9ac7374408323a34f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d630885e8f829e73c9d83d35872c14faf7e136869d2b7fd9ac7374408323a34f
+  source_title: PP_No.51_TH_2002
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 217
+  status: none_known

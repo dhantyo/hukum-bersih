@@ -1,0 +1,39 @@
+id: pp_71_1948
+akn: /akn/id/act/pp/1948/71
+type: pp
+number: '71'
+year: 1948
+title: Peraturan Pemerintah Nomor 71 Tahun 1948 tentang Susunan Dan Lapang Pekerjaan
+  Kementerian Kesehatan
+tentang: SUSUNAN DAN LAPANG PEKERJAAN KEMENTERIAN KESEHATAN
+short_name: null
+status: null
+tanggal_penetapan: '1948-12-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_71_1948_1948-12-04
+  kind: asli
+  source: dataset
+  date: '1948-12-04'
+  date_basis: tanggal_penetapan
+  text: pp_71_1948_1948-12-04.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7e979f51233b4a208c97c1dd8cce185e2f8a8594e6f93aade30f8b7b7538248c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7e979f51233b4a208c97c1dd8cce185e2f8a8594e6f93aade30f8b7b7538248c
+  source_title: PP_No_71_Tahun1948
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: none_known

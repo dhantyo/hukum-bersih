@@ -1,0 +1,41 @@
+id: pp_65_2009
+akn: /akn/id/act/pp/2009/65
+type: pp
+number: '65'
+year: 2009
+title: Peraturan Pemerintah Nomor 65 Tahun 2009 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Perusahaan Umum (Perum) Jaminan Kredit
+  Indonesia
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL PERUSAHAAN
+  UMUM (PERUM) JAMINAN KREDIT INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2009-10-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_65_2009_2009-10-31
+  kind: asli
+  source: dataset
+  date: '2009-10-31'
+  date_basis: tanggal_penetapan
+  text: pp_65_2009_2009-10-31.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7df4f628d5cbcfc86cbb94f60cf3d41f84f27a029f07aa96141eaa4ba36411d3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7df4f628d5cbcfc86cbb94f60cf3d41f84f27a029f07aa96141eaa4ba36411d3
+  source_title: PP_No_65_2009
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

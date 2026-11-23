@@ -1,0 +1,41 @@
+id: pp_42_1990
+akn: /akn/id/act/pp/1990/42
+type: pp
+number: '42'
+year: 1990
+title: Peraturan Pemerintah Nomor 42 Tahun 1990 tentang Perusahaan Umum (Perum) "Otorita
+  Jatiluhur"
+tentang: PERUSAHAAN UMUM (PERUM) "OTORITA JATILUHUR"
+short_name: null
+status: dicabut
+tanggal_penetapan: '1990-08-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_42_1990_1990-08-23
+  kind: asli
+  source: dataset
+  date: '1990-08-23'
+  date_basis: tanggal_penetapan
+  text: pp_42_1990_1990-08-23.txt
+  pasal_count: 59
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6fb8f76973c5c1bc502ceb9f1e1e6c540055d683fd82dc2cdfc38caa58e44554
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6fb8f76973c5c1bc502ceb9f1e1e6c540055d683fd82dc2cdfc38caa58e44554
+  source_title: PP_NO_42_TH_1990
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 66
+  status: revoked
+  revoked_by:
+  - sha256:91432f2ec145a4137b53405d1635c95c4fce687f7e1447de2fa7c2e87547b520

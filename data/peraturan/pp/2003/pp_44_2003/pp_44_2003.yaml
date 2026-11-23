@@ -1,0 +1,42 @@
+id: pp_44_2003
+akn: /akn/id/act/pp/2003/44
+type: pp
+number: '44'
+year: 2003
+title: Peraturan Pemerintah Nomor 44 Tahun 2003 tentang Tarif Atas Jenis Penerimaan
+  Negara Bukan Pajak Yang Berlaku Pada Departemen Keuangan
+tentang: TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA DEPARTEMEN
+  KEUANGAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2003-07-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_44_2003_2003-07-31
+  kind: asli
+  source: dataset
+  date: '2003-07-31'
+  date_basis: tanggal_penetapan
+  text: pp_44_2003_2003-07-31.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c3aab16495cd1f30b55aab5d8ebc4947f84f5a7e6982c71ddb23ecd6e96d37f0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c3aab16495cd1f30b55aab5d8ebc4947f84f5a7e6982c71ddb23ecd6e96d37f0
+  source_title: PP_No.44_TH_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 16
+  status: revoked
+  revoked_by:
+  - sha256:a46f152fbd9e727ea8490f56b796bd71e47607b636e5e4b656de2b3435a8c52e

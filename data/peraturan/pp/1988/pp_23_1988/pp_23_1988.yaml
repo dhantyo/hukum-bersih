@@ -1,0 +1,42 @@
+id: pp_23_1988
+akn: /akn/id/act/pp/1988/23
+type: pp
+number: '23'
+year: 1988
+title: Peraturan Pemerintah Nomor 23 Tahun 1988 tentang Perubahan Batas Wilayah Kabupaten
+  Daerah Tingkat Ii Palembang, Dan Kabupaten Daerah Tingkat Ii Musi Banyuasin Dan
+  Kabupaten Daerah Tingkat Ii Ogan Komering Ilir Presiden Republik Indonesia
+tentang: PERUBAHAN BATAS WILAYAH KABUPATEN DAERAH TINGKAT II PALEMBANG, DAN KABUPATEN
+  DAERAH TINGKAT II MUSI BANYUASIN DAN KABUPATEN DAERAH TINGKAT II OGAN KOMERING ILIR
+  Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1988-12-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_23_1988_1988-12-06
+  kind: asli
+  source: dataset
+  date: '1988-12-06'
+  date_basis: tanggal_penetapan
+  text: pp_23_1988_1988-12-06.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:00da25d1710b69ce7ff18bde2b5e02bba645a4c8228b33003420847e80641649
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:00da25d1710b69ce7ff18bde2b5e02bba645a4c8228b33003420847e80641649
+  source_title: PP_NO_23_TH_1988
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 23
+  status: none_known

@@ -1,0 +1,40 @@
+id: pp_3_1982
+akn: /akn/id/act/pp/1982/3
+type: pp
+number: '3'
+year: 1982
+title: Peraturan Pemerintah Nomor 3 Tahun 1982 tentang Perubahan Batas Wilayah Kotamadya
+  Daerah Tingkat Ii Tanjungkarang-Telukbetung Presiden Republik Indonesia
+tentang: PERUBAHAN BATAS WILAYAH KOTAMADYA DAERAH TINGKAT II TANJUNGKARANG-TELUKBETUNG
+  Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1982-01-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_3_1982_1982-01-30
+  kind: asli
+  source: dataset
+  date: '1982-01-30'
+  date_basis: tanggal_penetapan
+  text: pp_3_1982_1982-01-30.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f5b8e9d65a6901f84f3f1a479645c14fa09dc97ad34cecd4911f9910b1552349
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f5b8e9d65a6901f84f3f1a479645c14fa09dc97ad34cecd4911f9910b1552349
+  source_title: PP_NO_3_TH_1982
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 17
+  status: none_known

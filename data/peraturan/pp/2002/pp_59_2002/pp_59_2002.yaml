@@ -1,0 +1,39 @@
+id: pp_59_2002
+akn: /akn/id/act/pp/2002/59
+type: pp
+number: '59'
+year: 2002
+title: Peraturan Pemerintah Nomor 59 Tahun 2002 tentang Obligasi Perusahaan Umum (Perum)
+  Pegadaian
+tentang: OBLIGASI PERUSAHAAN UMUM (PERUM) PEGADAIAN
+short_name: null
+status: null
+tanggal_penetapan: '2002-11-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_59_2002_2002-11-12
+  kind: asli
+  source: dataset
+  date: '2002-11-12'
+  date_basis: tanggal_penetapan
+  text: pp_59_2002_2002-11-12.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ddeeedc5f4d27b24e0c6093d011e6a2d990ffd2af3c8a8bd6ee9eca47a72a05e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ddeeedc5f4d27b24e0c6093d011e6a2d990ffd2af3c8a8bd6ee9eca47a72a05e
+  source_title: PP_No.59_TH_2002
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 8
+  status: none_known

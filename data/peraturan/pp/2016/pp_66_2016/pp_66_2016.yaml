@@ -1,0 +1,41 @@
+id: pp_66_2016
+akn: /akn/id/act/pp/2016/66
+type: pp
+number: '66'
+year: 2016
+title: Peraturan Pemerintah Nomor 66 Tahun 2016 tentang Penambahan Pei{Yertaan Modal
+  Negam Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Pertani
+tentang: PENAMBAHAN PEI{YERTAAN MODAL NEGAM REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT PERTANI
+short_name: null
+status: null
+tanggal_penetapan: '2016-12-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_66_2016_2016-12-29
+  kind: asli
+  source: dataset
+  date: '2016-12-29'
+  date_basis: tanggal_penetapan
+  text: pp_66_2016_2016-12-29.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b542c9c07063d2081ae1c5384a71094934785da234d5733edb5aab9bbbbe52e8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b542c9c07063d2081ae1c5384a71094934785da234d5733edb5aab9bbbbe52e8
+  source_title: PP_Nomor_66_Tahun_2016
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

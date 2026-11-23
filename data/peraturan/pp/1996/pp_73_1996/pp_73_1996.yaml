@@ -1,0 +1,41 @@
+id: pp_73_1996
+akn: /akn/id/act/pp/1996/73
+type: pp
+number: '73'
+year: 1996
+title: Peraturan Pemerintah Nomor 73 Tahun 1996 tentang Pajak Penghasilan Atas Penghasilan
+  Dari Usaha Jasa Konstruksi Dan Jasa Konsultan
+tentang: PAJAK PENGHASILAN ATAS PENGHASILAN DARI USAHA JASA KONSTRUKSI DAN JASA KONSULTAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1996-12-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_73_1996_1996-12-20
+  kind: asli
+  source: dataset
+  date: '1996-12-20'
+  date_basis: tanggal_penetapan
+  text: pp_73_1996_1996-12-20.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c918e0e7eaf157f5cade1f6f39aa888d133c35b1ac811644f6b3fc1969990d86
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c918e0e7eaf157f5cade1f6f39aa888d133c35b1ac811644f6b3fc1969990d86
+  source_title: PP_No._73_Th_1996
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:8451d239fcdcd6e78d1c1bb379c3cdb9b275e758d80ada86cbcb542a916e1fce

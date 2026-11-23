@@ -1,0 +1,41 @@
+id: pp_9_1997
+akn: /akn/id/act/pp/1997/9
+type: pp
+number: '9'
+year: 1997
+title: Peraturan Pemerintah Nomor 9 Tahun 1997 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Dok Dan Perkapalan Surabaya
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT DOK DAN PERKAPALAN SURABAYA
+short_name: null
+status: null
+tanggal_penetapan: '1997-04-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_9_1997_1997-04-15
+  kind: asli
+  source: dataset
+  date: '1997-04-15'
+  date_basis: tanggal_penetapan
+  text: pp_9_1997_1997-04-15.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4af773cc4e99fea93f0110fd9611030f4dfff7870fd89f6829fa45626a93112f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4af773cc4e99fea93f0110fd9611030f4dfff7870fd89f6829fa45626a93112f
+  source_title: PP_No._9_Th_1997
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: none_known

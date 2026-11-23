@@ -1,0 +1,39 @@
+id: pp_59_2016
+akn: /akn/id/act/pp/2016/59
+type: pp
+number: '59'
+year: 2016
+title: Peraturan Pemerintah Nomor 59 Tahun 2016 tentang Organisasi Kemasyarakatan
+  Yang Didirikan Oleh Warga Negara Asing
+tentang: ORGANISASI KEMASYARAKATAN YANG DIDIRIKAN OLEH WARGA NEGARA ASING
+short_name: null
+status: null
+tanggal_penetapan: '2016-12-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_59_2016_2016-12-02
+  kind: asli
+  source: dataset
+  date: '2016-12-02'
+  date_basis: tanggal_penetapan
+  text: pp_59_2016_2016-12-02.txt
+  pasal_count: 32
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:379b890708bb1c96aa567c08113e0db9c4ae856fb7d82b4f0300ab94faded000
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:379b890708bb1c96aa567c08113e0db9c4ae856fb7d82b4f0300ab94faded000
+  source_title: PP_Nomor_59_Tahun_2016
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 46
+  status: none_known

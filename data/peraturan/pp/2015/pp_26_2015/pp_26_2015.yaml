@@ -1,0 +1,39 @@
+id: pp_26_2015
+akn: /akn/id/act/pp/2015/26
+type: pp
+number: '26'
+year: 2015
+title: Peraturan Pemerintah Nomor 26 Tahun 2015 tentang Bentuk Dan Mekanisme Pendanaan
+  Perguruan Tinggi Negeri Badan Hukum
+tentang: BENTUK DAN MEKANISME PENDANAAN PERGURUAN TINGGI NEGERI BADAN HUKUM
+short_name: null
+status: null
+tanggal_penetapan: '2015-05-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_26_2015_2015-05-22
+  kind: asli
+  source: dataset
+  date: '2015-05-22'
+  date_basis: tanggal_penetapan
+  text: pp_26_2015_2015-05-22.txt
+  pasal_count: 23
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d7fd2b746f6a5626d6a311b5775f2444cefdb53f61c725a2ff0713b8204564a8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d7fd2b746f6a5626d6a311b5775f2444cefdb53f61c725a2ff0713b8204564a8
+  source_title: PP_Nomor_26_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 34
+  status: none_known

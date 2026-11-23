@@ -1,0 +1,40 @@
+id: pp_23_1996
+akn: /akn/id/act/pp/1996/23
+type: pp
+number: '23'
+year: 1996
+title: Peraturan Pemerintah Nomor 23 Tahun 1996 tentang Penindakan Di Bidang Cukai
+tentang: PENINDAKAN DI BIDANG CUKAI
+short_name: null
+status: dicabut
+tanggal_penetapan: '1996-04-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_23_1996_1996-04-02
+  kind: asli
+  source: dataset
+  date: '1996-04-02'
+  date_basis: tanggal_penetapan
+  text: pp_23_1996_1996-04-02.txt
+  pasal_count: 25
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d39c0fecf20e16eacad272c5bab6da770265c3054a83edc8cc25f2dcff00dce1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d39c0fecf20e16eacad272c5bab6da770265c3054a83edc8cc25f2dcff00dce1
+  source_title: PP_No._23_Th_1996
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 41
+  status: revoked
+  revoked_by:
+  - sha256:881ece8dcaacbff40c33772c9ed7cf613063f2b58187e620b6e702cb6c1ae0df

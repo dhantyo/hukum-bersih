@@ -1,0 +1,45 @@
+id: pp_11_1948
+akn: /akn/id/act/pp/1948/11
+type: pp
+number: '11'
+year: 1948
+title: Peraturan Pemerintah Nomor 11 Tahun 1948 tentang Kantor Urusan Pegawai Negeri.
+  Pasal 1. Untuk Mengurus Segala Sesuatu Yang Mengenai Kedudukan Dan Gaji Pegawai
+  Negeri Dan Mengawasi, Supaya Peraturan-Peraturan Itu Dijalankan Dengan Tepat, Didirikan
+  Suatu Kantor Urusan Pegawai Negeri, Yang Berkedudukan Di Ibu Kota Pemerintahan Dan
+  Dipimpin Seorang Kepala
+tentang: KANTOR URUSAN PEGAWAI NEGERI. Pasal 1. Untuk mengurus segala sesuatu yang
+  mengenai kedudukan dan gaji pegawai Negeri dan mengawasi, supaya peraturan-peraturan
+  itu dijalankan dengan tepat, didirikan suatu kantor Urusan Pegawai Negeri, yang
+  berkedudukan di ibu kota pemerintahan dan dipimpin seorang Kepala
+short_name: null
+status: null
+tanggal_penetapan: '1948-05-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_11_1948_1948-05-30
+  kind: asli
+  source: dataset
+  date: '1948-05-30'
+  date_basis: tanggal_penetapan
+  text: pp_11_1948_1948-05-30.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5caa8d989f631206f415d0e14d1d555544117c8c973ad43819c07c1d31f3b88d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5caa8d989f631206f415d0e14d1d555544117c8c973ad43819c07c1d31f3b88d
+  source_title: PP_No_11_Tahun_1948
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: none_known

@@ -1,0 +1,39 @@
+id: pp_62_2000
+akn: /akn/id/act/pp/2000/62
+type: pp
+number: '62'
+year: 2000
+title: Peraturan Pemerintah Nomor 62 Tahun 2000 tentang Pemindahan Ibukota Kabupaten
+  Lombok Barat
+tentang: PEMINDAHAN IBUKOTA KABUPATEN LOMBOK BARAT
+short_name: null
+status: null
+tanggal_penetapan: '2000-08-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_62_2000_2000-08-07
+  kind: asli
+  source: dataset
+  date: '2000-08-07'
+  date_basis: tanggal_penetapan
+  text: pp_62_2000_2000-08-07.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:74fbab0f9b961c55efada118d8eb8efa965c76daf1b5c9068729a5c78d51b580
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:74fbab0f9b961c55efada118d8eb8efa965c76daf1b5c9068729a5c78d51b580
+  source_title: PP_No.62_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 8
+  status: none_known

@@ -1,0 +1,39 @@
+id: pp_44_2009
+akn: /akn/id/act/pp/2009/44
+type: pp
+number: '44'
+year: 2009
+title: Peraturan Pemerintah Nomor 44 Tahun 2009 tentang Perubahan Atas Peraturan Pemerintah
+  Nomor 15 Tahun 2005 Tentang Jalan Tol
+tentang: PERUBAHAN ATAS PERATURAN PEMERINTAH NOMOR 15 TAHUN 2005 TENTANG JALAN TOL
+short_name: null
+status: null
+tanggal_penetapan: '2009-06-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_44_2009_2009-06-08
+  kind: asli
+  source: dataset
+  date: '2009-06-08'
+  date_basis: tanggal_penetapan
+  text: pp_44_2009_2009-06-08.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a029d3870e99a9ffd5745948ae69e5abf87fc6fa941bb2758dab8fee303b102a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a029d3870e99a9ffd5745948ae69e5abf87fc6fa941bb2758dab8fee303b102a
+  source_title: PP_No_44_2009
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

@@ -1,0 +1,29 @@
+id: pp_77_2001
+akn: /akn/id/act/pp/2001/77
+type: pp
+number: '77'
+year: 2001
+title: Peraturan Pemerintah Nomor 77 Tahun 2001 tentang Irigasi
+tentang: IRIGASI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-12-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6bea6b4311429b21b7eb277d47e2018eeacdb623813cdcf08bfe9e2c01d9e155
+  source_title: PP_NO_77_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 92
+  status: revoked
+  revoked_by:
+  - sha256:6cc77a5b750e041da95570082becc0490591c82b51007d1e784c32ca7ab9c5e0
+parse_error: 'v13: rebuilt text has 31 pasal, the dataset lists 48'

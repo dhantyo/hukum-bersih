@@ -1,0 +1,32 @@
+id: pp_33_2001
+akn: /akn/id/act/pp/2001/33
+type: pp
+number: '33'
+year: 2001
+title: Peraturan Pemerintah Nomor 33 Tahun 2001 tentang Penetapan Pensiun Pokok Purnawirawan/Warakawuri
+  Atau Duda, Tunjangan Anak Yatim/Piatu Dan Anak Yatim-Piatu Anggota Kepolisian Negara
+  Republik Indonesia
+tentang: PENETAPAN PENSIUN POKOK PURNAWIRAWAN/WARAKAWURI ATAU DUDA, TUNJANGAN ANAK
+  YATIM/PIATU DAN ANAK YATIM-PIATU ANGGOTA KEPOLISIAN NEGARA REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-05-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e1a0e9517f6923eb7c24affbc2a1a790bc410b09f8d35bee26af5940f1b9b7c8
+  source_title: PP_NO_33_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:fe190fabb5442ae3e7a354bf7a65674a29f98eac387f8e59a8aeb6c3f37e84ea
+parse_error: 'v13: rebuilt text has 7 pasal, the dataset lists 8'

@@ -1,0 +1,41 @@
+id: pp_23_1991
+akn: /akn/id/act/pp/1991/23
+type: pp
+number: '23'
+year: 1991
+title: Peraturan Pemerintah Nomor 23 Tahun 1991 tentang Penyertaan Modal Negara Republik
+  Indonesia Untuk Pendirian Perusahaan Perseroan (Persero) Bidang Pengusahaan Hutan
+  Di Sumatera Bagian Selatan
+tentang: PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA UNTUK PENDIRIAN PERUSAHAAN PERSEROAN
+  (PERSERO) BIDANG PENGUSAHAAN HUTAN DI SUMATERA BAGIAN SELATAN
+short_name: null
+status: null
+tanggal_penetapan: '1991-04-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_23_1991_1991-04-01
+  kind: asli
+  source: dataset
+  date: '1991-04-01'
+  date_basis: tanggal_penetapan
+  text: pp_23_1991_1991-04-01.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:cd369d58e5d14ad2c2e8151390a931b20142357b7214ce03d6e9f77ca3247824
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:cd369d58e5d14ad2c2e8151390a931b20142357b7214ce03d6e9f77ca3247824
+  source_title: PP_NO_23_TH_1991
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: none_known

@@ -1,0 +1,41 @@
+id: pp_100_2000
+akn: /akn/id/act/pp/2000/100
+type: pp
+number: '100'
+year: 2000
+title: Peraturan Pemerintah Nomor 100 Tahun 2000 tentang Pengangkatan Pegawai Negeri
+  Sipil Dalam Jabatan Struktural
+tentang: PENGANGKATAN PEGAWAI NEGERI SIPIL DALAM JABATAN STRUKTURAL
+short_name: null
+status: diubah
+tanggal_penetapan: '2000-11-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_100_2000_2000-11-10
+  kind: asli
+  source: dataset
+  date: '2000-11-10'
+  date_basis: tanggal_penetapan
+  text: pp_100_2000_2000-11-10.txt
+  pasal_count: 24
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a0ba3df30e75b54ee7f350fdd71cfd070293bc01b65f5765b843ef5307fddf4e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a0ba3df30e75b54ee7f350fdd71cfd070293bc01b65f5765b843ef5307fddf4e
+  source_title: PP_No.100_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 41
+  status: amended
+  amended_by:
+  - sha256:42338a63973bdde29d0515132964a006d4eeb775d7237cf6a265529035d8df7e

@@ -1,0 +1,43 @@
+id: pp_72_2001
+akn: /akn/id/act/pp/2001/72
+type: pp
+number: '72'
+year: 2001
+title: Peraturan Pemerintah Nomor 72 Tahun 2001 tentang Pajak Penghasilan Atas Penghasilan
+  Yang Diterima Oleh Pekerja Sampai Dengan Sebesar Upah Minimum Propinsi Atau Upah
+  Minimum Kabupaten/Kota
+tentang: PAJAK PENGHASILAN ATAS PENGHASILAN YANG DITERIMA OLEH PEKERJA SAMPAI DENGAN
+  SEBESAR UPAH MINIMUM PROPINSI ATAU UPAH MINIMUM KABUPATEN/KOTA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-11-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_72_2001_2001-11-14
+  kind: asli
+  source: dataset
+  date: '2001-11-14'
+  date_basis: tanggal_penetapan
+  text: pp_72_2001_2001-11-14.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a017312b481a41ad40437503d5daf0ff82a2b94a57fb6759789a8fec6063774f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a017312b481a41ad40437503d5daf0ff82a2b94a57fb6759789a8fec6063774f
+  source_title: PP_NO_72_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:1fa7e5be64bf044cff892187ab78f0f06a6b8fb23059eab8ac3bb34e54f9ff44

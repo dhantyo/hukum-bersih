@@ -1,0 +1,45 @@
+id: pp_43_1985
+akn: /akn/id/act/pp/1985/43
+type: pp
+number: '43'
+year: 1985
+title: Peraturan Pemerintah Nomor 43 Tahun 1985 tentang Perubahan Peraturan Pemerintah
+  Nomor 35 Tahun 1985 Tentang Pelaksanaan Undang-Undang Nomor 15 Tahun 1969 Tentang
+  Pemilihan Umum Anggota-Anggota Badan Permusyawaratan/Perwakilan Rakyat Sebagaimana
+  Telah Tiga Kali Diubah Terakhir Dengan Undang-Undang Nomor 1 Tahun 1985 Presiden
+  Republik Indonesia
+tentang: PERUBAHAN PERATURAN PEMERINTAH NOMOR 35 TAHUN 1985 TENTANG PELAKSANAAN UNDANG-UNDANG
+  NOMOR 15 TAHUN 1969 TENTANG PEMILIHAN UMUM ANGGOTA-ANGGOTA BADAN PERMUSYAWARATAN/PERWAKILAN
+  RAKYAT SEBAGAIMANA TELAH TIGA KALI DIUBAH TERAKHIR DENGAN UNDANG-UNDANG NOMOR 1
+  TAHUN 1985 Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1985-11-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_43_1985_1985-11-21
+  kind: asli
+  source: dataset
+  date: '1985-11-21'
+  date_basis: tanggal_penetapan
+  text: pp_43_1985_1985-11-21.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:06fe0414938383b4f978fe3740a52ecf2cb5f4ff6a4c42ee9e64ffa2292537a2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:06fe0414938383b4f978fe3740a52ecf2cb5f4ff6a4c42ee9e64ffa2292537a2
+  source_title: PP_NO_43_TH_1985
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

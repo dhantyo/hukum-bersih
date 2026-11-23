@@ -1,0 +1,40 @@
+id: pp_56_2014
+akn: /akn/id/act/pp/2014/56
+type: pp
+number: '56'
+year: 2014
+title: Peraturan Pemerintah Nomor 56 Tahun 2014 tentang Jenis Dan Tarif Atas Jenis
+  Penerimaan Negara Bukan Pajak Yang Berlaku Pada Badan Pengawas Tenaga Nuklir
+tentang: JENIS DAN TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA
+  BADAN PENGAWAS TENAGA NUKLIR
+short_name: null
+status: null
+tanggal_penetapan: '2014-07-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_56_2014_2014-07-07
+  kind: asli
+  source: dataset
+  date: '2014-07-07'
+  date_basis: tanggal_penetapan
+  text: pp_56_2014_2014-07-07.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:88e24fe8ffb1b38022e5f5fe159af465136bcfae4e4110aee0084b05abf45bfa
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:88e24fe8ffb1b38022e5f5fe159af465136bcfae4e4110aee0084b05abf45bfa
+  source_title: PP_Nomor_56_Tahun_2014
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 78
+  status: none_known

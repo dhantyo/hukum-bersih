@@ -1,0 +1,41 @@
+id: pp_62_2009
+akn: /akn/id/act/pp/2009/62
+type: pp
+number: '62'
+year: 2009
+title: Peraturan Pemerintah Nomor 62 Tahun 2009 tentang Hak Keuangan/Administratif
+  Bagi Ketua, Wakil Ketua, Dan Anggota Komisi Yudisial, Serta Mantan Ketua, Wakil
+  Ketua, Dan Anggota Komisi Yudisial Beserta Janda/Dudanya
+tentang: HAK KEUANGAN/ADMINISTRATIF BAGI KETUA, WAKIL KETUA, DAN ANGGOTA KOMISI YUDISIAL,
+  SERTA MANTAN KETUA, WAKIL KETUA, DAN ANGGOTA KOMISI YUDISIAL BESERTA JANDA/DUDANYA
+short_name: null
+status: null
+tanggal_penetapan: '2009-10-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_62_2009_2009-10-31
+  kind: asli
+  source: dataset
+  date: '2009-10-31'
+  date_basis: tanggal_penetapan
+  text: pp_62_2009_2009-10-31.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:68ebb8340e0168bf4195c55ba895f38b24a1f50cfeb607cec127b6fe3e88f32c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:68ebb8340e0168bf4195c55ba895f38b24a1f50cfeb607cec127b6fe3e88f32c
+  source_title: PP_No_62_2009
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: none_known

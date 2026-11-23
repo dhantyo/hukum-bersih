@@ -1,0 +1,41 @@
+id: pp_72_2009
+akn: /akn/id/act/pp/2009/72
+type: pp
+number: '72'
+year: 2009
+title: Peraturan Pemerintah Nomor 72 Tahun 2009 tentang Lalu Lintas Dan Angkutan Kereta
+  Api
+tentang: LALU LINTAS DAN ANGKUTAN KERETA API
+short_name: null
+status: diubah
+tanggal_penetapan: '2009-12-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_72_2009_2009-12-11
+  kind: asli
+  source: dataset
+  date: '2009-12-11'
+  date_basis: tanggal_penetapan
+  text: pp_72_2009_2009-12-11.txt
+  pasal_count: 188
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a02528f095bfba0f5e22436b3529945bc26c5af5e646b576005356cfea85db9f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a02528f095bfba0f5e22436b3529945bc26c5af5e646b576005356cfea85db9f
+  source_title: PP_No_72_2009
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 247
+  status: amended
+  amended_by:
+  - sha256:71cdc19bc50a4dacaedcee5d9b49905e479a4d8a9e18226f0376e86446ae2bc5

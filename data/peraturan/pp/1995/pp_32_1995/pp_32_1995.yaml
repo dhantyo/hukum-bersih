@@ -1,0 +1,40 @@
+id: pp_32_1995
+akn: /akn/id/act/pp/1995/32
+type: pp
+number: '32'
+year: 1995
+title: Peraturan Pemerintah Nomor 32 Tahun 1995 tentang Komisi Banding Merek
+tentang: KOMISI BANDING MEREK
+short_name: null
+status: dicabut
+tanggal_penetapan: '1995-08-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_32_1995_1995-08-29
+  kind: asli
+  source: dataset
+  date: '1995-08-29'
+  date_basis: tanggal_penetapan
+  text: pp_32_1995_1995-08-29.txt
+  pasal_count: 26
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:39b9709dee0a40fabdcbaa474592fe705cdbe7d631e280694a1dad177fff3357
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:39b9709dee0a40fabdcbaa474592fe705cdbe7d631e280694a1dad177fff3357
+  source_title: PP_No._32_Th_1995
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 61
+  status: revoked
+  revoked_by:
+  - sha256:73c7edf883216f5c4d129db417ca9c37dd62970accf0145bf97962c611db1d2c

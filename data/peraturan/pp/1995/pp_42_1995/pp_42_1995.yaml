@@ -1,0 +1,45 @@
+id: pp_42_1995
+akn: /akn/id/act/pp/1995/42
+type: pp
+number: '42'
+year: 1995
+title: Peraturan Pemerintah Nomor 42 Tahun 1995 tentang Bea Masuk, Bea Masuk Tambahan,
+  Pajak Pertambahan Nilai Dan Pajak Penjualan Atas Barang Mewah Dan Pajak Penghasilan
+  Dalam Rangka Pelaksanaan Proyek Pemerintah Yang Dibiayai Dengan Hibah Atau Dana
+  Pinjaman Luar Negeri
+tentang: BEA MASUK, BEA MASUK TAMBAHAN, PAJAK PERTAMBAHAN NILAI DAN PAJAK PENJUALAN
+  ATAS BARANG MEWAH DAN PAJAK PENGHASILAN DALAM RANGKA PELAKSANAAN PROYEK PEMERINTAH
+  YANG DIBIAYAI DENGAN HIBAH ATAU DANA PINJAMAN LUAR NEGERI
+short_name: null
+status: diubah
+tanggal_penetapan: '1995-08-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_42_1995_1995-08-29
+  kind: asli
+  source: dataset
+  date: '1995-08-29'
+  date_basis: tanggal_penetapan
+  text: pp_42_1995_1995-08-29.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:40d358752c9422e88b56807f7bb2e5b6787a135b735d77182cbf5788d39a6ad5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:40d358752c9422e88b56807f7bb2e5b6787a135b735d77182cbf5788d39a6ad5
+  source_title: PP_No._42_Th_1995
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: amended
+  amended_by:
+  - sha256:d2f8d0ac46ae3b44f581533fb3083e6516c72f055d0b018fc5aefbcaba1c0ceb

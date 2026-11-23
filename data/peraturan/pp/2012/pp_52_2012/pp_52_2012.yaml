@@ -1,0 +1,39 @@
+id: pp_52_2012
+akn: /akn/id/act/pp/2012/52
+type: pp
+number: '52'
+year: 2012
+title: Peraturan Pemerintah Nomor 52 Tahun 2012 tentang Sertifikasi Kompetensi Dan
+  Sertifikasi Usaha Di Bidang Pariwisata
+tentang: SERTIFIKASI KOMPETENSI DAN SERTIFIKASI USAHA DI BIDANG PARIWISATA
+short_name: null
+status: null
+tanggal_penetapan: '2012-04-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_52_2012_2012-04-23
+  kind: asli
+  source: dataset
+  date: '2012-04-23'
+  date_basis: tanggal_penetapan
+  text: pp_52_2012_2012-04-23.txt
+  pasal_count: 33
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d05162a376911455c4616c6927156d43189c50afd6c9c462cf783e4704cbc8c9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d05162a376911455c4616c6927156d43189c50afd6c9c462cf783e4704cbc8c9
+  source_title: PP_Nomor_52_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 60
+  status: none_known

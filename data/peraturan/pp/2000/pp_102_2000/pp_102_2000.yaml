@@ -1,0 +1,38 @@
+id: pp_102_2000
+akn: /akn/id/act/pp/2000/102
+type: pp
+number: '102'
+year: 2000
+title: Peraturan Pemerintah Nomor 102 Tahun 2000 tentang Standardisasi Nasional
+tentang: STANDARDISASI NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2000-11-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_102_2000_2000-11-10
+  kind: asli
+  source: dataset
+  date: '2000-11-10'
+  date_basis: tanggal_penetapan
+  text: pp_102_2000_2000-11-10.txt
+  pasal_count: 25
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7c33963bbedb657496e455ae039ff804a3c4240ca3fabd30d182a0232adb1232
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7c33963bbedb657496e455ae039ff804a3c4240ca3fabd30d182a0232adb1232
+  source_title: PP_No.102_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 48
+  status: none_known

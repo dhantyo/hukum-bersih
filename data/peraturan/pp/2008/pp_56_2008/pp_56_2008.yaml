@@ -1,0 +1,41 @@
+id: pp_56_2008
+akn: /akn/id/act/pp/2008/56
+type: pp
+number: '56'
+year: 2008
+title: Peraturan Pemerintah Nomor 56 Tahun 2008 tentang Perusahaan Penerbit Surat
+  Berharga Syariah Negara
+tentang: PERUSAHAAN PENERBIT SURAT BERHARGA SYARIAH NEGARA
+short_name: null
+status: diubah
+tanggal_penetapan: '2008-08-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_56_2008_2008-08-11
+  kind: asli
+  source: dataset
+  date: '2008-08-11'
+  date_basis: tanggal_penetapan
+  text: pp_56_2008_2008-08-11.txt
+  pasal_count: 22
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:382c39b3c1e8261c593eec9d7afad1fa9b4eb32ce68e8ea5bf2d4815d11c4e04
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:382c39b3c1e8261c593eec9d7afad1fa9b4eb32ce68e8ea5bf2d4815d11c4e04
+  source_title: PP_56_Tahun_2008
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 33
+  status: amended
+  amended_by:
+  - sha256:fc3e3da1c74d66bc1577bcc094fe99fb25ef592ef9b6ea6edb6cae782fe8fe96

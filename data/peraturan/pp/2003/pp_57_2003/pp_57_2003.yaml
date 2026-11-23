@@ -1,0 +1,40 @@
+id: pp_57_2003
+akn: /akn/id/act/pp/2003/57
+type: pp
+number: '57'
+year: 2003
+title: Peraturan Pemerintah Nomor 57 Tahun 2003 tentang Tata Cara Perlindungan Khusus
+  Bagi Pelapor Dan Saksi Tindak Pidana Pencucian Uang
+tentang: TATA CARA PERLINDUNGAN KHUSUS BAGI PELAPOR DAN SAKSI TINDAK PIDANA PENCUCIAN
+  UANG
+short_name: null
+status: null
+tanggal_penetapan: '2003-11-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_57_2003_2003-11-11
+  kind: asli
+  source: dataset
+  date: '2003-11-11'
+  date_basis: tanggal_penetapan
+  text: pp_57_2003_2003-11-11.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:071069e1ff7869f21334feb0ea599d5443047314992eed6d5a2b86276d54a97a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:071069e1ff7869f21334feb0ea599d5443047314992eed6d5a2b86276d54a97a
+  source_title: PP_No.57_TH_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 24
+  status: none_known

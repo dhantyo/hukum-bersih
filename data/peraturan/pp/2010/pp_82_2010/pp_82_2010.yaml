@@ -1,0 +1,41 @@
+id: pp_82_2010
+akn: /akn/id/act/pp/2010/82
+type: pp
+number: '82'
+year: 2010
+title: Peraturan Pemerintah Nomor 82 Tahun 2010 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Perusahaan Umum (Perum) Jaminan Kredit
+  Indonesia Kumham.G
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL PERUSAHAAN
+  UMUM (PERUM) JAMINAN KREDIT INDONESIA kumham.g
+short_name: null
+status: null
+tanggal_penetapan: '2010-12-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_82_2010_2010-12-20
+  kind: asli
+  source: dataset
+  date: '2010-12-20'
+  date_basis: tanggal_penetapan
+  text: pp_82_2010_2010-12-20.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:42f9279d507fd070e4e5c60489c61f3aa3e665e2a1b3f38be587ecb354ca0f20
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:42f9279d507fd070e4e5c60489c61f3aa3e665e2a1b3f38be587ecb354ca0f20
+  source_title: PP_82_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

@@ -1,0 +1,41 @@
+id: pp_45_2013
+akn: /akn/id/act/pp/2013/45
+type: pp
+number: '45'
+year: 2013
+title: Peraturan Pemerintah Nomor 45 Tahun 2013 tentang Tata Cara Pelaksanaan Anggaran
+  Pendapatan Dan Belanja Negara
+tentang: TATA CARA PELAKSANAAN ANGGARAN PENDAPATAN DAN BELANJA NEGARA
+short_name: null
+status: diubah
+tanggal_penetapan: '2013-06-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_45_2013_2013-06-07
+  kind: asli
+  source: dataset
+  date: '2013-06-07'
+  date_basis: tanggal_penetapan
+  text: pp_45_2013_2013-06-07.txt
+  pasal_count: 182
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:825f947fa48050007519648a719029f25c56d812005028e3a8ec46c478204ade
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:825f947fa48050007519648a719029f25c56d812005028e3a8ec46c478204ade
+  source_title: PP_Nomor_45_Tahun_2013
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 270
+  status: amended
+  amended_by:
+  - sha256:71cdc19bc50a4dacaedcee5d9b49905e479a4d8a9e18226f0376e86446ae2bc5

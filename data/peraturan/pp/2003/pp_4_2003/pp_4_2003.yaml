@@ -1,0 +1,41 @@
+id: pp_4_2003
+akn: /akn/id/act/pp/2003/4
+type: pp
+number: '4'
+year: 2003
+title: Peraturan Pemerintah Nomor 4 Tahun 2003 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Jaminan Sosial Tenaga Kerja
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT JAMINAN SOSIAL TENAGA KERJA
+short_name: null
+status: null
+tanggal_penetapan: '2003-01-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_4_2003_2003-01-17
+  kind: asli
+  source: dataset
+  date: '2003-01-17'
+  date_basis: tanggal_penetapan
+  text: pp_4_2003_2003-01-17.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a9e686fd2afb25a782180a1af6c6583f1943d33247353b2a103eea6cc6a5c7ec
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a9e686fd2afb25a782180a1af6c6583f1943d33247353b2a103eea6cc6a5c7ec
+  source_title: PP_No.4_TH_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

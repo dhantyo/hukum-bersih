@@ -1,0 +1,39 @@
+id: pp_87_2013
+akn: /akn/id/act/pp/2013/87
+type: pp
+number: '87'
+year: 2013
+title: Peraturan Pemerintah Nomor 87 Tahun 2013 tentang Pengelolaan Aset Jaminan Sosial
+  Kesehatan
+tentang: PENGELOLAAN ASET JAMINAN SOSIAL KESEHATAN
+short_name: null
+status: null
+tanggal_penetapan: '2014-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_87_2013_2014-01-01
+  kind: asli
+  source: dataset
+  date: '2014-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_87_2013_2014-01-01.txt
+  pasal_count: 49
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5f86a4013c5f4d3cbe6e441ad67d4a079afffd535b1f2a075132d661672339e4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5f86a4013c5f4d3cbe6e441ad67d4a079afffd535b1f2a075132d661672339e4
+  source_title: PP_Nomor_87_Tahun_2013
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 72
+  status: none_known

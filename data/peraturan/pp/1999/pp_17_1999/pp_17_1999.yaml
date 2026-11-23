@@ -1,0 +1,44 @@
+id: pp_17_1999
+akn: /akn/id/act/pp/1999/17
+type: pp
+number: '17'
+year: 1999
+title: Peraturan Pemerintah Nomor 17 Tahun 1999 tentang Badan Penyehatan Perbankan
+  Nasional
+tentang: BADAN PENYEHATAN PERBANKAN NASIONAL
+short_name: null
+status: diubah
+tanggal_penetapan: '1999-02-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_17_1999_1999-02-27
+  kind: asli
+  source: dataset
+  date: '1999-02-27'
+  date_basis: tanggal_penetapan
+  text: pp_17_1999_1999-02-27.txt
+  pasal_count: 59
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:971cc50efe48acb597e8f94a5915d1464aff459e300131e1a5f8471cc3adb053
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:971cc50efe48acb597e8f94a5915d1464aff459e300131e1a5f8471cc3adb053
+  source_title: PP_No._17_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 124
+  status: amended
+  amended_by:
+  - sha256:15cf72a8b4fff632c048ba4ff40466d444b422b58154fe337202316a02ded6af
+  - sha256:99658ac1241c565500c70b8515b374ddec9eabb4aded93e683ff31b14d40c5e5
+  - sha256:e5ac42564a44cbbdd5d7dcabcadf3d29fca7d9c8618cb035f6f7c28c01039735
+  - sha256:ff04fe91ca74e67925baeddd92745ebddb5792d7d7be1ed242bbd52c08b99e69

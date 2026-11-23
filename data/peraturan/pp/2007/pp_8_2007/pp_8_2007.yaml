@@ -1,0 +1,40 @@
+id: pp_8_2007
+akn: /akn/id/act/pp/2007/8
+type: pp
+number: '8'
+year: 2007
+title: Peraturan Pemerintah Nomor 8 Tahun 2007 tentang Investasi Pemerintah
+tentang: INVESTASI PEMERINTAH
+short_name: null
+status: dicabut
+tanggal_penetapan: '2007-01-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_8_2007_2007-01-10
+  kind: asli
+  source: dataset
+  date: '2007-01-10'
+  date_basis: tanggal_penetapan
+  text: pp_8_2007_2007-01-10.txt
+  pasal_count: 40
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:25fc74d87fafdffde166dfaf7d1d2681c380f66bf8823c43415dfcdfc7bb627d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:25fc74d87fafdffde166dfaf7d1d2681c380f66bf8823c43415dfcdfc7bb627d
+  source_title: pp8-2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 69
+  status: revoked
+  revoked_by:
+  - sha256:6a15679ef76f8a228189d42763d35cc32420a401fb0cfde0692cf40bfd70dd43

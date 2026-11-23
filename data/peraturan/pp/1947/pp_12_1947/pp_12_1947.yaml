@@ -1,0 +1,41 @@
+id: pp_12_1947
+akn: /akn/id/act/pp/1947/12
+type: pp
+number: '12'
+year: 1947
+title: Peraturan Pemerintah Nomor 12 Tahun 1947 tentang Pembentukan Badan Exploitasi
+  Tambang Negara Sebagai Badan Pemerintahan Sentral Yang Mengurus Dan Mengatur Exploitasi
+  Pertambangan
+tentang: PEMBENTUKAN BADAN EXPLOITASI TAMBANG NEGARA SEBAGAI BADAN PEMERINTAHAN SENTRAL
+  YANG MENGURUS DAN MENGATUR EXPLOITASI PERTAMBANGAN
+short_name: null
+status: null
+tanggal_penetapan: '1947-05-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_12_1947_1947-05-29
+  kind: asli
+  source: dataset
+  date: '1947-05-29'
+  date_basis: tanggal_penetapan
+  text: pp_12_1947_1947-05-29.txt
+  pasal_count: 15
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4595bd67e9c8d2c0eae99f217c72b3d63d633f387a54fd5f392fedb2cbcff9ca
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4595bd67e9c8d2c0eae99f217c72b3d63d633f387a54fd5f392fedb2cbcff9ca
+  source_title: PP_No.12_Tahun_1947
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 35
+  status: none_known

@@ -1,0 +1,40 @@
+id: pp_18_1985
+akn: /akn/id/act/pp/1985/18
+type: pp
+number: '18'
+year: 1985
+title: Peraturan Pemerintah Nomor 18 Tahun 1985 tentang Penetapan Pensiun Pokok Pensiunan
+  Pegawai Negeri Sipil Dan Janda/Dudanya Presiden Republik Indonesia
+tentang: PENETAPAN PENSIUN POKOK PENSIUNAN PEGAWAI NEGERI SIPIL DAN JANDA/DUDANYA
+  Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1985-04-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_18_1985_1985-04-01
+  kind: asli
+  source: dataset
+  date: '1985-04-01'
+  date_basis: tanggal_penetapan
+  text: pp_18_1985_1985-04-01.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6518acd1a69bd847d5bff63413c968041d2f1afdec3b54f8dacff7d11952a916
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6518acd1a69bd847d5bff63413c968041d2f1afdec3b54f8dacff7d11952a916
+  source_title: PP_NO_18_TH_1985
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

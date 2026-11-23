@@ -1,0 +1,39 @@
+id: pp_30_2012
+akn: /akn/id/act/pp/2012/30
+type: pp
+number: '30'
+year: 2012
+title: Peraturan Pemerintah Nomor 30 Tahun 2012 tentang Pembiayaan Perlindungan Lahan
+  Pertanian Pangan Berkelanjutan
+tentang: PEMBIAYAAN PERLINDUNGAN LAHAN PERTANIAN PANGAN BERKELANJUTAN
+short_name: null
+status: null
+tanggal_penetapan: '2012-02-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_30_2012_2012-02-27
+  kind: asli
+  source: dataset
+  date: '2012-02-27'
+  date_basis: tanggal_penetapan
+  text: pp_30_2012_2012-02-27.txt
+  pasal_count: 39
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5c49a216f1f8d23977e74c35be9c1ddefac05b00934f1d0c5225ea26d8e06200
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5c49a216f1f8d23977e74c35be9c1ddefac05b00934f1d0c5225ea26d8e06200
+  source_title: PP_Nomor_30_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 53
+  status: none_known

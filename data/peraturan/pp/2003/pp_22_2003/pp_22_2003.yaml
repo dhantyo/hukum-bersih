@@ -1,0 +1,46 @@
+id: pp_22_2003
+akn: /akn/id/act/pp/2003/22
+type: pp
+number: '22'
+year: 2003
+title: Peraturan Pemerintah Nomor 22 Tahun 2003 tentang Pembatalan Peraturan Pemerintah
+  Nomor 29 Tahun 1998 Tentang Penambahan Penyertaan Modal Negara Republik Indonesia
+  Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt. Dharma Niaga Dan Penggabungan
+  Perusahaan Perseroan (Persero) Pt Pantja Niaga Dan Perusahaan Perseroan (Persero)
+  Pt Dharma Niaga Ke Dalam Perusahaan Perseroan (Persero) Pt Cipta Niaga
+tentang: PEMBATALAN PERATURAN PEMERINTAH NOMOR 29 TAHUN 1998 TENTANG PENAMBAHAN PENYERTAAN
+  MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM PERUSAHAAN PERSEROAN (PERSERO)
+  PT. DHARMA NIAGA DAN PENGGABUNGAN PERUSAHAAN PERSEROAN (PERSERO) PT PANTJA NIAGA
+  DAN PERUSAHAAN PERSEROAN (PERSERO) PT DHARMA NIAGA KE DALAM PERUSAHAAN PERSEROAN
+  (PERSERO) PT CIPTA NIAGA
+short_name: null
+status: null
+tanggal_penetapan: '2003-03-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_22_2003_2003-03-31
+  kind: asli
+  source: dataset
+  date: '2003-03-31'
+  date_basis: tanggal_penetapan
+  text: pp_22_2003_2003-03-31.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6d90ac70ed679903d4201d252648f6fc58a3a74b1c17a33140bbf3f683c8761b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6d90ac70ed679903d4201d252648f6fc58a3a74b1c17a33140bbf3f683c8761b
+  source_title: PP_No.22_TH_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: none_known

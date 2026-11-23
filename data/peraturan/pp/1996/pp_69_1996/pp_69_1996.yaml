@@ -1,0 +1,31 @@
+id: pp_69_1996
+akn: /akn/id/act/pp/1996/69
+type: pp
+number: '69'
+year: 1996
+title: Peraturan Pemerintah Nomor 69 Tahun 1996 tentang Pelaksanaan Hak Dan Kewajiban,
+  Serta Bentuk Dan Tata Cara Peran Serta Masyarakat Dalam Penataan Ruang
+tentang: PELAKSANAAN HAK DAN KEWAJIBAN, SERTA BENTUK DAN TATA CARA PERAN SERTA MASYARAKAT
+  DALAM PENATAAN RUANG
+short_name: null
+status: dicabut
+tanggal_penetapan: '1996-12-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ae2a0aced7bbdb60c57c81bb14f69c5e9fdd19a2ada54d2d06f9fa3bd61c6e03
+  source_title: PP_No._69_Th_1996
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 63
+  status: revoked
+  revoked_by:
+  - sha256:11822fe8db44ca2b823dbeb61979942390d565d4f9ef036fdd8136b848f9e1e2
+parse_error: 'v13: rebuilt text has 22 pasal, the dataset lists 30'

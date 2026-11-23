@@ -1,0 +1,38 @@
+id: pp_62_2013
+akn: /akn/id/act/pp/2013/62
+type: pp
+number: '62'
+year: 2013
+title: Peraturan Pemerintah Nomor 62 Tahun 2013 tentang Investigasi Kecelakaan Transportasi
+tentang: INVESTIGASI KECELAKAAN TRANSPORTASI
+short_name: null
+status: null
+tanggal_penetapan: '2013-10-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_62_2013_2013-10-01
+  kind: asli
+  source: dataset
+  date: '2013-10-01'
+  date_basis: tanggal_penetapan
+  text: pp_62_2013_2013-10-01.txt
+  pasal_count: 54
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:38ab3754f04e00784c26eea22583e1fa6c54c7657b2596ea6b1fbe375a32b1e5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:38ab3754f04e00784c26eea22583e1fa6c54c7657b2596ea6b1fbe375a32b1e5
+  source_title: PP_Nomor_62_Tahun_2013
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 72
+  status: none_known

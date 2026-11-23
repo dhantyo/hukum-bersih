@@ -1,0 +1,40 @@
+id: pp_80_2008
+akn: /akn/id/act/pp/2008/80
+type: pp
+number: '80'
+year: 2008
+title: Peraturan Pemerintah Nomor 80 Tahun 2008 tentang Pajak Penghasilan Bagi Wajib
+  Pajak Orang Pribadi Dalam Negeri Yang Bertolak Ke Luar Negeri
+tentang: PAJAK PENGHASILAN BAGI WAJIB PAJAK ORANG PRIBADI DALAM NEGERI YANG BERTOLAK
+  KE LUAR NEGERI
+short_name: null
+status: null
+tanggal_penetapan: '2008-12-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_80_2008_2008-12-31
+  kind: asli
+  source: dataset
+  date: '2008-12-31'
+  date_basis: tanggal_penetapan
+  text: pp_80_2008_2008-12-31.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f1f7320e28b0d1cb37e5023628050713da95864d8acf3802ab64bd5153ebbc86
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f1f7320e28b0d1cb37e5023628050713da95864d8acf3802ab64bd5153ebbc86
+  source_title: PP_80_Tahun_2008
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 15
+  status: none_known

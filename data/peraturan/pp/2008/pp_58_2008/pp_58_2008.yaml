@@ -1,0 +1,42 @@
+id: pp_58_2008
+akn: /akn/id/act/pp/2008/58
+type: pp
+number: '58'
+year: 2008
+title: Peraturan Pemerintah Nomor 58 Tahun 2008 tentang Hak Keuangan/Administratif
+  Bagi Ketua, Wakil Ketua, Dan Anggota Dewan Perwakilan Daerah, Serta Mantan Ketua,
+  Wakil Ketua, Dan Anggota Dewan Perwakilan Daerah Beserta Janda/Dudanya
+tentang: HAK KEUANGAN/ADMINISTRATIF BAGI KETUA, WAKIL KETUA, DAN ANGGOTA DEWAN PERWAKILAN
+  DAERAH, SERTA MANTAN KETUA, WAKIL KETUA, DAN ANGGOTA DEWAN PERWAKILAN DAERAH BESERTA
+  JANDA/DUDANYA
+short_name: null
+status: null
+tanggal_penetapan: '2008-08-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_58_2008_2008-08-18
+  kind: asli
+  source: dataset
+  date: '2008-08-18'
+  date_basis: tanggal_penetapan
+  text: pp_58_2008_2008-08-18.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:708cc9d4e2ff14c3dc60350ea6a7c009722478b4f390c908a0ecba5c7edcc529
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:708cc9d4e2ff14c3dc60350ea6a7c009722478b4f390c908a0ecba5c7edcc529
+  source_title: PP_58__Tahun_2008
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

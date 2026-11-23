@@ -1,0 +1,38 @@
+id: pp_38_2017
+akn: /akn/id/act/pp/2017/38
+type: pp
+number: '38'
+year: 2017
+title: Peraturan Pemerintah Nomor 38 Tahun 2017 tentang Inovasi Daerah
+tentang: INOVASI DAERAH
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_38_2017_2017
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: pp_38_2017_2017.txt
+  pasal_count: 34
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:995fefae403a1f2227f072aaa1dbea333f10fc6380b082aa05796ebf169a95b1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:995fefae403a1f2227f072aaa1dbea333f10fc6380b082aa05796ebf169a95b1
+  source_title: PP_Nomor_38_Tahun_2017
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 59
+  status: none_known

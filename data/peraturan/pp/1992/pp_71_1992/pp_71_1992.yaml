@@ -1,0 +1,40 @@
+id: pp_71_1992
+akn: /akn/id/act/pp/1992/71
+type: pp
+number: '71'
+year: 1992
+title: Peraturan Pemerintah Nomor 71 Tahun 1992 tentang Bank Perkreditan Rakyat
+tentang: BANK PERKREDITAN RAKYAT
+short_name: null
+status: dicabut
+tanggal_penetapan: '1992-10-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_71_1992_1992-10-30
+  kind: asli
+  source: dataset
+  date: '1992-10-30'
+  date_basis: tanggal_penetapan
+  text: pp_71_1992_1992-10-30.txt
+  pasal_count: 22
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:34e2a2409934d0f29424123770b8320507630b0b7b480d90a152a898110a5d3f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:34e2a2409934d0f29424123770b8320507630b0b7b480d90a152a898110a5d3f
+  source_title: PP_NO_71_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 38
+  status: revoked
+  revoked_by:
+  - sha256:dde917e16c22c5bb3ac65d5d361e4b36e28b3c11f7ca4856b228493de235fa28

@@ -1,0 +1,39 @@
+id: pp_36_2013
+akn: /akn/id/act/pp/2013/36
+type: pp
+number: '36'
+year: 2013
+title: Peraturan Pemerintah Nomor 36 Tahun 2013 tentang Penjualan Saham Milik Negara
+  Republik Indonesia Pada Pt Kertas Padalarang
+tentang: PENJUALAN SAHAM MILIK NEGARA REPUBLIK INDONESIA PADA PT KERTAS PADALARANG
+short_name: null
+status: null
+tanggal_penetapan: '2013-05-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_36_2013_2013-05-08
+  kind: asli
+  source: dataset
+  date: '2013-05-08'
+  date_basis: tanggal_penetapan
+  text: pp_36_2013_2013-05-08.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:de61038102240d646441274ea87cfa9d609911a4866cfa799f8d7a6dd739631a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:de61038102240d646441274ea87cfa9d609911a4866cfa799f8d7a6dd739631a
+  source_title: PP_Nomor_36_Tahun_2013
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 8
+  status: none_known

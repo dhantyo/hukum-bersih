@@ -1,0 +1,39 @@
+id: pp_43_1991
+akn: /akn/id/act/pp/1991/43
+type: pp
+number: '43'
+year: 1991
+title: Peraturan Pemerintah Nomor 43 Tahun 1991 tentang Ganti Rugi Dan Tata Cara Pelaksanaannya
+  Pada Peradilan Tata Usaha Negara
+tentang: GANTI RUGI DAN TATA CARA PELAKSANAANNYA PADA PERADILAN TATA USAHA NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '1991-07-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_43_1991_1991-07-05
+  kind: asli
+  source: dataset
+  date: '1991-07-05'
+  date_basis: tanggal_penetapan
+  text: pp_43_1991_1991-07-05.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ef824b274c1bef616a41c3f3364e8a219da3a1f3d7473bf5180f7a467f083850
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ef824b274c1bef616a41c3f3364e8a219da3a1f3d7473bf5180f7a467f083850
+  source_title: PP_NO_43_TH_1991
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 35
+  status: none_known

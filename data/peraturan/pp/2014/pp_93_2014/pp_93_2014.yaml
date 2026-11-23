@@ -1,0 +1,40 @@
+id: pp_93_2014
+akn: /akn/id/act/pp/2014/93
+type: pp
+number: '93'
+year: 2014
+title: Peraturan Pemerintah Nomor 93 Tahun 2014 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Pada International Fund For Agricultural Development
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA PADA INTERNATIONAL
+  FUND FOR AGRICULTURAL DEVELOPMENT
+short_name: null
+status: null
+tanggal_penetapan: '2014-10-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_93_2014_2014-10-17
+  kind: asli
+  source: dataset
+  date: '2014-10-17'
+  date_basis: tanggal_penetapan
+  text: pp_93_2014_2014-10-17.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:04ae694d313a6e2190bd3700f7517931d0b27f523b343ad65a71fc44be825a77
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:04ae694d313a6e2190bd3700f7517931d0b27f523b343ad65a71fc44be825a77
+  source_title: PP_Nomor_93_Tahun_2014
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

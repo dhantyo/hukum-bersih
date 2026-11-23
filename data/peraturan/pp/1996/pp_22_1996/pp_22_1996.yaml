@@ -1,0 +1,30 @@
+id: pp_22_1996
+akn: /akn/id/act/pp/1996/22
+type: pp
+number: '22'
+year: 1996
+title: Peraturan Pemerintah Nomor 22 Tahun 1996 tentang Pengenaan Sanksi Administrasi
+  Kepabeanan
+tentang: PENGENAAN SANKSI ADMINISTRASI KEPABEANAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1996-04-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4042c826ecd1baf05ff6523afca311d2c535f65339d210d9673c8c2aa93ae384
+  source_title: PP_No._22_Th_1996
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 20
+  status: revoked
+  revoked_by:
+  - sha256:37920047fdf96efbe167fe93a4d6604c3e9aec38fbb90621e8e5c2d443c5ddc6
+parse_error: 'v13: rebuilt text has 8 pasal, the dataset lists 9'

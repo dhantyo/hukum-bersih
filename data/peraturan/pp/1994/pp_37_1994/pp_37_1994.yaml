@@ -1,0 +1,40 @@
+id: pp_37_1994
+akn: /akn/id/act/pp/1994/37
+type: pp
+number: '37'
+year: 1994
+title: Peraturan Pemerintah Nomor 37 Tahun 1994 tentang Pengalihan Bentuk Perusahaan
+  Umum (Perum) Gas Negara Menjadi Perusahaan Perseroan (Persero)
+tentang: PENGALIHAN BENTUK PERUSAHAAN UMUM (PERUM) GAS NEGARA MENJADI PERUSAHAAN PERSEROAN
+  (PERSERO)
+short_name: null
+status: null
+tanggal_penetapan: '1994-12-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_37_1994_1994-12-06
+  kind: asli
+  source: dataset
+  date: '1994-12-06'
+  date_basis: tanggal_penetapan
+  text: pp_37_1994_1994-12-06.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e396b0d3d61abdecc0078461f0d4ddd2b07d31f440bb94c65a424a751ee7fb3d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e396b0d3d61abdecc0078461f0d4ddd2b07d31f440bb94c65a424a751ee7fb3d
+  source_title: PP_No._37_Th_1994
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: none_known

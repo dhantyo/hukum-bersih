@@ -1,0 +1,34 @@
+id: pp_53_1992
+akn: /akn/id/act/pp/1992/53
+type: pp
+number: '53'
+year: 1992
+title: Peraturan Pemerintah Nomor 53 Tahun 1992 tentang Perubahan Peraturan Pemerintah
+  Nomor 10 Tahun 1980 Tentang Pemberian Tunjangan Kehormatan Kepada Bekas Anggota
+  Komite Nasional Indonesia Pusat Dan Janda/Dudanya Sebagaimana Telah Diubah, Terakhir
+  Dengan Peraturan Pemerintah Nomor 13 Tahun 1985
+tentang: PERUBAHAN PERATURAN PEMERINTAH NOMOR 10 TAHUN 1980 TENTANG PEMBERIAN TUNJANGAN
+  KEHORMATAN KEPADA BEKAS ANGGOTA KOMITE NASIONAL INDONESIA PUSAT DAN JANDA/DUDANYA
+  SEBAGAIMANA TELAH DIUBAH, TERAKHIR DENGAN PERATURAN PEMERINTAH NOMOR 13 TAHUN 1985
+short_name: null
+status: dicabut
+tanggal_penetapan: '1992-09-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:132803bcce0b977783d937617b1a423220db8e57ded1c20c57513a3c65844279
+  source_title: PP_NO_53_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 8
+  status: revoked
+  revoked_by:
+  - sha256:172d1949dc07b8dfce7db793d0ec930fbf08407cea1022b92fa8242e37c41d32
+parse_error: 'v13: rebuilt text has 2 pasal, the dataset lists 3'

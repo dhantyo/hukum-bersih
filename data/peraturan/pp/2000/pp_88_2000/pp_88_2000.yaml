@@ -1,0 +1,41 @@
+id: pp_88_2000
+akn: /akn/id/act/pp/2000/88
+type: pp
+number: '88'
+year: 2000
+title: Peraturan Pemerintah Nomor 88 Tahun 2000 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Pelabuhan Indonesia Iv
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT PELABUHAN INDONESIA IV
+short_name: null
+status: null
+tanggal_penetapan: '2000-10-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_88_2000_2000-10-10
+  kind: asli
+  source: dataset
+  date: '2000-10-10'
+  date_basis: tanggal_penetapan
+  text: pp_88_2000_2000-10-10.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d5cbe43dcca7c36e2b6def9862b46ed69dc804c829a3d51ee6d6374d2acac9f5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d5cbe43dcca7c36e2b6def9862b46ed69dc804c829a3d51ee6d6374d2acac9f5
+  source_title: PP_No.88_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

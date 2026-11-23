@@ -1,0 +1,40 @@
+id: pp_1_1994
+akn: /akn/id/act/pp/1994/1
+type: pp
+number: '1'
+year: 1994
+title: Peraturan Pemerintah Nomor 1 Tahun 1994 tentang Perubahan Atas Peraturan Pemerintah
+  Nomor Tentang Pemberhentian Pegawai Negeri Sipil
+tentang: PERUBAHAN ATAS PERATURAN PEMERINTAH NOMOR TENTANG PEMBERHENTIAN PEGAWAI NEGERI
+  SIPIL
+short_name: null
+status: null
+tanggal_penetapan: '1994-02-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_1_1994_1994-02-02
+  kind: asli
+  source: dataset
+  date: '1994-02-02'
+  date_basis: tanggal_penetapan
+  text: pp_1_1994_1994-02-02.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b26d1a696ef46b5b61bc712b74b25fe5a084e455e1131c0746a591efd83e2b3a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b26d1a696ef46b5b61bc712b74b25fe5a084e455e1131c0746a591efd83e2b3a
+  source_title: PP_No._1_Th_1994
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 5
+  status: none_known

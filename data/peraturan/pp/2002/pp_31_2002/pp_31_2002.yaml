@@ -1,0 +1,38 @@
+id: pp_31_2002
+akn: /akn/id/act/pp/2002/31
+type: pp
+number: '31'
+year: 2002
+title: Peraturan Pemerintah Nomor 31 Tahun 2002 tentang Perusahaan Umum (Perum) Damri
+tentang: PERUSAHAAN UMUM (PERUM) DAMRI
+short_name: null
+status: null
+tanggal_penetapan: '2002-05-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_31_2002_2002-05-20
+  kind: asli
+  source: dataset
+  date: '2002-05-20'
+  date_basis: tanggal_penetapan
+  text: pp_31_2002_2002-05-20.txt
+  pasal_count: 67
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:547ecede77ffa60f4f56ac4f43ae3a752646f3c33f7bd267ce963534ae651788
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:547ecede77ffa60f4f56ac4f43ae3a752646f3c33f7bd267ce963534ae651788
+  source_title: PP_No.31_TH_2002
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 74
+  status: none_known

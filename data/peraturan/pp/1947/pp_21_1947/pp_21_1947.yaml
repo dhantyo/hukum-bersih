@@ -1,0 +1,39 @@
+id: pp_21_1947
+akn: /akn/id/act/pp/1947/21
+type: pp
+number: '21'
+year: 1947
+title: Peraturan Pemerintah Nomor 21 Tahun 1947 tentang Peraturan Tentang Penempatan
+  Komisaris Negara Di Luar Jawa
+tentang: PERATURAN TENTANG PENEMPATAN KOMISARIS NEGARA DI LUAR JAWA
+short_name: null
+status: null
+tanggal_penetapan: '1947-07-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_21_1947_1947-07-27
+  kind: asli
+  source: dataset
+  date: '1947-07-27'
+  date_basis: tanggal_penetapan
+  text: pp_21_1947_1947-07-27.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:61de386166ffe1054e03f8138577f03a17381d5fd270f911238dce48aaa93b7f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:61de386166ffe1054e03f8138577f03a17381d5fd270f911238dce48aaa93b7f
+  source_title: PP_No.21_Tahun1947
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 8
+  status: none_known

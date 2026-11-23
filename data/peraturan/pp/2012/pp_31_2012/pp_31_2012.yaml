@@ -1,0 +1,39 @@
+id: pp_31_2012
+akn: /akn/id/act/pp/2012/31
+type: pp
+number: '31'
+year: 2012
+title: Peraturan Pemerintah Nomor 31 Tahun 2012 tentang Pemberian Dan Penghimpunan
+  Data Dan Informasi Yang Berkaitan Dengan Perpajakan
+tentang: PEMBERIAN DAN PENGHIMPUNAN DATA DAN INFORMASI YANG BERKAITAN DENGAN PERPAJAKAN
+short_name: null
+status: null
+tanggal_penetapan: '2012-02-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_31_2012_2012-02-27
+  kind: asli
+  source: dataset
+  date: '2012-02-27'
+  date_basis: tanggal_penetapan
+  text: pp_31_2012_2012-02-27.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9a46349214efc77b112b404f80548a26f5101abc2225cbace7141ee6ab1f4180
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9a46349214efc77b112b404f80548a26f5101abc2225cbace7141ee6ab1f4180
+  source_title: PP_Nomor_31_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 22
+  status: none_known

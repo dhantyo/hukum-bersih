@@ -1,0 +1,41 @@
+id: pp_44_1985
+akn: /akn/id/act/pp/1985/44
+type: pp
+number: '44'
+year: 1985
+title: Peraturan Pemerintah Nomor 44 Tahun 1985 tentang Perusahaan Umum (Perum) Sang
+  Hyang Seri Presiden Republik Indonesia
+tentang: PERUSAHAAN UMUM (PERUM) SANG HYANG SERI Presiden Republik Indonesia
+short_name: null
+status: dicabut
+tanggal_penetapan: '1985-11-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_44_1985_1985-11-28
+  kind: asli
+  source: dataset
+  date: '1985-11-28'
+  date_basis: tanggal_penetapan
+  text: pp_44_1985_1985-11-28.txt
+  pasal_count: 56
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ec7d1ca58c24c17e0f413b80396a4325212e2961e97ca35527fcba5493c9f716
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ec7d1ca58c24c17e0f413b80396a4325212e2961e97ca35527fcba5493c9f716
+  source_title: PP_NO_44_TH_1985
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 70
+  status: revoked
+  revoked_by:
+  - sha256:d2339ae58db3526c1cd55fa4a8f3e300f48a8315114ca835104c0022fec7144e

@@ -1,0 +1,41 @@
+id: pp_5_1949
+akn: /akn/id/act/pp/1949/5
+type: pp
+number: '5'
+year: 1949
+title: Peraturan Pemerintah Nomor 5 Tahun 1949 tentang Perubahan Dan Tambahan Dalam
+  Peraturan Gaji Pegawai Negeri Tahun 1948, Termuat Dalam Peraturan Pemerintah Nomor
+  21 Tahun 1948
+tentang: PERUBAHAN DAN TAMBAHAN DALAM PERATURAN GAJI PEGAWAI NEGERI TAHUN 1948, TERMUAT
+  DALAM PERATURAN PEMERINTAH NOMOR 21 TAHUN 1948
+short_name: null
+status: null
+tanggal_penetapan: '1948-05-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_5_1949_1948-05-01
+  kind: asli
+  source: dataset
+  date: '1948-05-01'
+  date_basis: tanggal_penetapan
+  text: pp_5_1949_1948-05-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0cca150439eb819675b6f646c75c66eb2170909ed0f5d2d0a0d687f4df93860f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0cca150439eb819675b6f646c75c66eb2170909ed0f5d2d0a0d687f4df93860f
+  source_title: PP_No_5_Tahun_1949
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 19
+  status: none_known

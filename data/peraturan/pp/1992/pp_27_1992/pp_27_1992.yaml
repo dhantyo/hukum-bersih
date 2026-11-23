@@ -1,0 +1,41 @@
+id: pp_27_1992
+akn: /akn/id/act/pp/1992/27
+type: pp
+number: '27'
+year: 1992
+title: Peraturan Pemerintah Nomor 27 Tahun 1992 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt.
+  Rajawali Nusantara Indonesia
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT. RAJAWALI NUSANTARA INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '1992-05-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_27_1992_1992-05-13
+  kind: asli
+  source: dataset
+  date: '1992-05-13'
+  date_basis: tanggal_penetapan
+  text: pp_27_1992_1992-05-13.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c826d5d247beaf6f726008e510a87e7c5b87da172e14c60bb07ce39b89a6cac4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c826d5d247beaf6f726008e510a87e7c5b87da172e14c60bb07ce39b89a6cac4
+  source_title: PP_NO_27_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

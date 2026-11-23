@@ -1,0 +1,40 @@
+id: pp_85_1999
+akn: /akn/id/act/pp/1999/85
+type: pp
+number: '85'
+year: 1999
+title: Peraturan Pemerintah Nomor 85 Tahun 1999 tentang Perubahan Atas Peraturan Pemerintah
+  Nomor 18 Tahun 1999 Tentang Pengelolaan Limbah Bahan Berbahaya Dan Beracun
+tentang: PERUBAHAN ATAS PERATURAN PEMERINTAH NOMOR 18 TAHUN 1999 TENTANG PENGELOLAAN
+  LIMBAH BAHAN BERBAHAYA DAN BERACUN
+short_name: null
+status: null
+tanggal_penetapan: '1999-10-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_85_1999_1999-10-07
+  kind: asli
+  source: dataset
+  date: '1999-10-07'
+  date_basis: tanggal_penetapan
+  text: pp_85_1999_1999-10-07.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:629a3e94c5fc9edb315a256ed2496fd82ccc61a77eccf11bf0b51de32b259054
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:629a3e94c5fc9edb315a256ed2496fd82ccc61a77eccf11bf0b51de32b259054
+  source_title: PP_No._85_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 15
+  status: none_known

@@ -1,0 +1,41 @@
+id: pp_67_2008
+akn: /akn/id/act/pp/2008/67
+type: pp
+number: '67'
+year: 2008
+title: Peraturan Pemerintah Nomor 67 Tahun 2008 tentang Pendirian Perusahaan Penerbit
+  Surat Berharga Syariah Negara Indonesia I
+tentang: PENDIRIAN PERUSAHAAN PENERBIT SURAT BERHARGA SYARIAH NEGARA INDONESIA I
+short_name: null
+status: diubah
+tanggal_penetapan: '2008-10-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_67_2008_2008-10-21
+  kind: asli
+  source: dataset
+  date: '2008-10-21'
+  date_basis: tanggal_penetapan
+  text: pp_67_2008_2008-10-21.txt
+  pasal_count: 15
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6a98c4db05169d6fa496209305006781bc8ee685513ec3badc6cb49e676fd87d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6a98c4db05169d6fa496209305006781bc8ee685513ec3badc6cb49e676fd87d
+  source_title: PP_67_Tahun_2008
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 18
+  status: amended
+  amended_by:
+  - sha256:5b8b5518f65144faded7cf688642e1707bedfbb4ad4e944c8b4c67d8005116d9

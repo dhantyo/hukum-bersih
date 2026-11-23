@@ -1,0 +1,45 @@
+id: pp_19_2016
+akn: /akn/id/act/pp/2016/19
+type: pp
+number: '19'
+year: 2016
+title: Peraturan Pemerintah Nomor 19 Tahun 2016 tentang Pemberian Gaji, Pensiun, Atau
+  Tunjangan Ketiga Belas Kepada Pegawai Negeri Sipil, Prajurit Tentara Nasional Indonesia,
+  Anggota Kepolisian Negara Republik Indonesia, Pejabat Negara, Dan Penerima Pensiun
+  Atau Tunjangan
+tentang: PEMBERIAN GAJI, PENSIUN, ATAU TUNJANGAN KETIGA BELAS KEPADA PEGAWAI NEGERI
+  SIPIL, PRAJURIT TENTARA NASIONAL INDONESIA, ANGGOTA KEPOLISIAN NEGARA REPUBLIK INDONESIA,
+  PEJABAT NEGARA, DAN PENERIMA PENSIUN ATAU TUNJANGAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2016-06-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_19_2016_2016-06-17
+  kind: asli
+  source: dataset
+  date: '2016-06-17'
+  date_basis: tanggal_penetapan
+  text: pp_19_2016_2016-06-17.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:dfe6920c4e9b74b5d3dd1fd54bac26544cd373f08e930c2cf42129dc9f3c8b49
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:dfe6920c4e9b74b5d3dd1fd54bac26544cd373f08e930c2cf42129dc9f3c8b49
+  source_title: PP_Nomor_19_Tahun_2016
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 20
+  status: amended
+  amended_by:
+  - sha256:fc724e2a7d0bd3997efaa8f511d09337fc10bfec9998c28643209de801cbda17

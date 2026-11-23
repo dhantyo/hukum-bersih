@@ -1,0 +1,42 @@
+id: pp_44_2001
+akn: /akn/id/act/pp/2001/44
+type: pp
+number: '44'
+year: 2001
+title: Peraturan Pemerintah Nomor 44 Tahun 2001 tentang Tarif Atas Jenis Penerimaan
+  Negara Bukan Pajak Yang Berlaku Pada Departemen Kebudayaan Dan Pariwisata
+tentang: TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA DEPARTEMEN
+  KEBUDAYAAN DAN PARIWISATA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-06-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_44_2001_2001-06-05
+  kind: asli
+  source: dataset
+  date: '2001-06-05'
+  date_basis: tanggal_penetapan
+  text: pp_44_2001_2001-06-05.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:04e97d9a585f4116e89fb600129328e4e800f7dc0b7d8565b551b9278e157946
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:04e97d9a585f4116e89fb600129328e4e800f7dc0b7d8565b551b9278e157946
+  source_title: PP_NO_44_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:2916c66e6a03b86191f7e9a78b4fb827c24eefb7352d1b4e7a8437b367648d79

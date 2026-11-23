@@ -1,0 +1,42 @@
+id: pp_47_1998
+akn: /akn/id/act/pp/1998/47
+type: pp
+number: '47'
+year: 1998
+title: Peraturan Pemerintah Nomor 47 Tahun 1998 tentang Penyertaan Modal Negara Republik
+  Indonesia Untuk Pendirian Perusahaan Perseroan (Persero) Di Bidang Pengelolaan Kekayaan
+tentang: PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA UNTUK PENDIRIAN PERUSAHAAN PERSEROAN
+  (PERSERO) DI BIDANG PENGELOLAAN KEKAYAAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-04-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_47_1998_1998-04-08
+  kind: asli
+  source: dataset
+  date: '1998-04-08'
+  date_basis: tanggal_penetapan
+  text: pp_47_1998_1998-04-08.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:dfcb13f40a65a5de95f4c1630c9c5514e2da6adca93cd54d76e81e0341d5cca3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:dfcb13f40a65a5de95f4c1630c9c5514e2da6adca93cd54d76e81e0341d5cca3
+  source_title: PP_No._47_Tahun_1998
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: revoked
+  revoked_by:
+  - sha256:4fb331603882523bd3ac97520a3a3d3eb1c4be5bf8e95025a4388a7f0ba74a40

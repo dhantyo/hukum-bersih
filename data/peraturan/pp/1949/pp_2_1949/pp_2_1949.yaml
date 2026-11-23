@@ -1,0 +1,42 @@
+id: pp_2_1949
+akn: /akn/id/act/pp/1949/2
+type: pp
+number: '2'
+year: 1949
+title: Peraturan Pemerintah Nomor 2 Tahun 1949 tentang Peraturan Sementara Tentang
+  Penghargaan Kedudukan Anggota-Anggota Badan Pekerja Komite Nasional Indonesia Pusat
+tentang: PERATURAN SEMENTARA TENTANG PENGHARGAAN KEDUDUKAN ANGGOTA-ANGGOTA BADAN PEKERJA
+  KOMITE NASIONAL INDONESIA PUSAT
+short_name: null
+status: dicabut
+tanggal_penetapan: '1949-07-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_2_1949_1949-07-01
+  kind: asli
+  source: dataset
+  date: '1949-07-01'
+  date_basis: tanggal_penetapan
+  text: pp_2_1949_1949-07-01.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:30cfe8ad1424ebbebedcec61094c2c812f55658d026eed4b3d882a85100f112e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:30cfe8ad1424ebbebedcec61094c2c812f55658d026eed4b3d882a85100f112e
+  source_title: PP_No_2_Tahun_1949
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:a4d60d23b99d3613628a472338c61ccc9d62707261ff678f831409f73667a82a

@@ -1,0 +1,42 @@
+id: pp_41_1994
+akn: /akn/id/act/pp/1994/41
+type: pp
+number: '41'
+year: 1994
+title: Peraturan Pemerintah Nomor 41 Tahun 1994 tentang Pajak Penghasilan Atas Penghasilan
+  Dari Transaksi Penjualan Saham Di Bursa Efek
+tentang: PAJAK PENGHASILAN ATAS PENGHASILAN DARI TRANSAKSI PENJUALAN SAHAM DI BURSA
+  EFEK
+short_name: null
+status: diubah
+tanggal_penetapan: '1995-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_41_1994_1995-01-01
+  kind: asli
+  source: dataset
+  date: '1995-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_41_1994_1995-01-01.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:590190a1915c922469a948c3037f7ad5856442676a228eff9c15dd2cf8608fda
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:590190a1915c922469a948c3037f7ad5856442676a228eff9c15dd2cf8608fda
+  source_title: PP_No._41_Th_1994
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 14
+  status: amended
+  amended_by:
+  - sha256:2900982b3416b2a8ed17ae4198d0ce5eaeea8f9380bc7f64e00bd4e6457e8bd3

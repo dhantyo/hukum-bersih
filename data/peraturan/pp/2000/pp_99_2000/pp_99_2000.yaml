@@ -1,0 +1,41 @@
+id: pp_99_2000
+akn: /akn/id/act/pp/2000/99
+type: pp
+number: '99'
+year: 2000
+title: Peraturan Pemerintah Nomor 99 Tahun 2000 tentang Kenaikan Pangkat Pegawai Negeri
+  Sipil
+tentang: KENAIKAN PANGKAT PEGAWAI NEGERI SIPIL
+short_name: null
+status: diubah
+tanggal_penetapan: '2000-11-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_99_2000_2000-11-10
+  kind: asli
+  source: dataset
+  date: '2000-11-10'
+  date_basis: tanggal_penetapan
+  text: pp_99_2000_2000-11-10.txt
+  pasal_count: 39
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a8527fb29d5bc51de397d0123b2faad394676ea8f7bd52fc85085168a994ca4b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a8527fb29d5bc51de397d0123b2faad394676ea8f7bd52fc85085168a994ca4b
+  source_title: PP_No.99_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 66
+  status: amended
+  amended_by:
+  - sha256:8b83cdfb0bf76bb587d1a881af6412aaf5468602959d5c0acb4e6b329f8c8e2d

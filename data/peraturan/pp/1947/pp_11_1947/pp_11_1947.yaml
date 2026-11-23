@@ -1,0 +1,30 @@
+id: pp_11_1947
+akn: /akn/id/act/pp/1947/11
+type: pp
+number: '11'
+year: 1947
+title: Peraturan Pemerintah Nomor 11 Tahun 1947 tentang Mengurus Barang-Barang Yang
+  Dirampas Dan Barang-Barang Bukti
+tentang: MENGURUS BARANG-BARANG YANG DIRAMPAS DAN BARANG-BARANG BUKTI
+short_name: null
+status: diubah
+tanggal_penetapan: '1947-05-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:33eb408cd8bc87f36524cc4e74c63426d911553fee6ef8289b25c2bfdc208d65
+  source_title: PP_No.11_Tahun_1947
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 10
+  status: amended
+  amended_by:
+  - sha256:e2426b02062169641b1ec02e6047aa774ca898cbaf28c74279e656ddf4c3ad81
+parse_error: 'v13: rebuilt text has 3 pasal, the dataset lists 5'

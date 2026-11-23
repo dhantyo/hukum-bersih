@@ -1,0 +1,40 @@
+id: pp_19_2003
+akn: /akn/id/act/pp/2003/19
+type: pp
+number: '19'
+year: 2003
+title: Peraturan Pemerintah Nomor 19 Tahun 2003 tentang Pengamanan Rokok Bagi Kesehatan
+tentang: PENGAMANAN ROKOK BAGI KESEHATAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2003-03-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_19_2003_2003-03-10
+  kind: asli
+  source: dataset
+  date: '2003-03-10'
+  date_basis: tanggal_penetapan
+  text: pp_19_2003_2003-03-10.txt
+  pasal_count: 42
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4213e2fadfd356179c4a25a83f20589ae6535eefa39e0b297d6332c02949aabf
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4213e2fadfd356179c4a25a83f20589ae6535eefa39e0b297d6332c02949aabf
+  source_title: PP_No.19_TH_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 70
+  status: revoked
+  revoked_by:
+  - sha256:b0000ecc3e3051178db767e8ffd52efe0d847d04c0da32d8295600d8d5083d14

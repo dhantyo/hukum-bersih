@@ -1,0 +1,43 @@
+id: pp_41_1985
+akn: /akn/id/act/pp/1985/41
+type: pp
+number: '41'
+year: 1985
+title: Peraturan Pemerintah Nomor 41 Tahun 1985 tentang Pengalihan Bentuk Perusahaan
+  Negara Perkebunan Xxviii Menjadi Perusahaan Perseroan (Persero) Presiden Republik
+  Indonesia
+tentang: PENGALIHAN BENTUK PERUSAHAAN NEGARA PERKEBUNAN XXVIII MENJADI PERUSAHAAN
+  PERSEROAN (PERSERO) Presiden Republik Indonesia
+short_name: null
+status: dicabut
+tanggal_penetapan: '1985-10-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_41_1985_1985-10-01
+  kind: asli
+  source: dataset
+  date: '1985-10-01'
+  date_basis: tanggal_penetapan
+  text: pp_41_1985_1985-10-01.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1b742cc134d476cf8da840ee171ad7ae4e111b173223585c0a957ee6590ee8b4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1b742cc134d476cf8da840ee171ad7ae4e111b173223585c0a957ee6590ee8b4
+  source_title: PP_NO_41_TH_1985
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: revoked
+  revoked_by:
+  - sha256:66172a836e1f17b22a0aae9201598f1476111123ce5156e0de5addbbcb4f5c67

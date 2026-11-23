@@ -1,0 +1,39 @@
+id: pp_55_1996
+akn: /akn/id/act/pp/1996/55
+type: pp
+number: '55'
+year: 1996
+title: Peraturan Pemerintah Nomor 55 Tahun 1996 tentang Penyidikan Tindak Pidana Di
+  Bidang Kepabeanan Dan Cukai
+tentang: PENYIDIKAN TINDAK PIDANA DI BIDANG KEPABEANAN DAN CUKAI
+short_name: null
+status: null
+tanggal_penetapan: '1996-08-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_55_1996_1996-08-23
+  kind: asli
+  source: dataset
+  date: '1996-08-23'
+  date_basis: tanggal_penetapan
+  text: pp_55_1996_1996-08-23.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:782b336a3d6704ff8f25cb479f35b4c55be12f3249343fe60169a3e01d3d5c67
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:782b336a3d6704ff8f25cb479f35b4c55be12f3249343fe60169a3e01d3d5c67
+  source_title: PP_No._55_Th_1996
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 17
+  status: none_known

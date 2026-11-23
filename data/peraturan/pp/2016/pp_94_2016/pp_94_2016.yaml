@@ -1,0 +1,40 @@
+id: pp_94_2016
+akn: /akn/id/act/pp/2016/94
+type: pp
+number: '94'
+year: 2016
+title: Peraturan Pemerintah Nomor 94 Tahun 2016 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Pada Islamic Development Bank
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA PADA ISLAMIC DEVELOPMENT
+  BANK
+short_name: null
+status: null
+tanggal_penetapan: '2016-12-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_94_2016_2016-12-30
+  kind: asli
+  source: dataset
+  date: '2016-12-30'
+  date_basis: tanggal_penetapan
+  text: pp_94_2016_2016-12-30.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:da51049732e4b0e54a00183e4a903e6d83d4217714033e77e86d8ae537569434
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:da51049732e4b0e54a00183e4a903e6d83d4217714033e77e86d8ae537569434
+  source_title: PP_Nomor_94_Tahun_2016
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

@@ -1,0 +1,41 @@
+id: pp_38_1999
+akn: /akn/id/act/pp/1999/38
+type: pp
+number: '38'
+year: 1999
+title: Peraturan Pemerintah Nomor 38 Tahun 1999 tentang Penyertaan Modal Negara Republik
+  Indonesia Untuk Pendirian Perusahaan Perseroan (Persero) Dalam Rangka Pengembangan
+  Koperasi, Usaha Kecil Dan Menengah
+tentang: PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA UNTUK PENDIRIAN PERUSAHAAN PERSEROAN
+  (PERSERO) DALAM RANGKA PENGEMBANGAN KOPERASI, USAHA KECIL DAN MENENGAH
+short_name: null
+status: null
+tanggal_penetapan: '1999-05-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_38_1999_1999-05-25
+  kind: asli
+  source: dataset
+  date: '1999-05-25'
+  date_basis: tanggal_penetapan
+  text: pp_38_1999_1999-05-25.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:50cff4c82a2baba22321a2f3e5bce740f80e9e736ab5b271a93ec883ae00ae8f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:50cff4c82a2baba22321a2f3e5bce740f80e9e736ab5b271a93ec883ae00ae8f
+  source_title: PP_No._38_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

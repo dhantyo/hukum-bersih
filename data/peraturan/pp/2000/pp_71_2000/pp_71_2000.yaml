@@ -1,0 +1,42 @@
+id: pp_71_2000
+akn: /akn/id/act/pp/2000/71
+type: pp
+number: '71'
+year: 2000
+title: Peraturan Pemerintah Nomor 71 Tahun 2000 tentang Tata Cara Pelaksanaan Peran
+  Serta Masyarakat Dan Pemberian Penghargaan Dalam Pencegahan Dan
+tentang: TATA CARA PELAKSANAAN PERAN SERTA MASYARAKAT DAN PEMBERIAN PENGHARGAAN DALAM
+  PENCEGAHAN DAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2000-08-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_71_2000_2000-08-21
+  kind: asli
+  source: dataset
+  date: '2000-08-21'
+  date_basis: tanggal_penetapan
+  text: pp_71_2000_2000-08-21.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:aac699a508d287859ba1cab67797b81c5bffd7b220f306f873e50a50103e7604
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:aac699a508d287859ba1cab67797b81c5bffd7b220f306f873e50a50103e7604
+  source_title: PP_No.71_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 23
+  status: amended
+  amended_by:
+  - sha256:71cdc19bc50a4dacaedcee5d9b49905e479a4d8a9e18226f0376e86446ae2bc5

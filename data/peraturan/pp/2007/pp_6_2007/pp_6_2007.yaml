@@ -1,0 +1,42 @@
+id: pp_6_2007
+akn: /akn/id/act/pp/2007/6
+type: pp
+number: '6'
+year: 2007
+title: Peraturan Pemerintah Nomor 6 Tahun 2007 tentang Tata Hutan Dan Penyusunan Rencana
+  Pengelolaan Hutan, Serta Pemanfaatan Hutan
+tentang: TATA HUTAN DAN PENYUSUNAN RENCANA PENGELOLAAN HUTAN, SERTA PEMANFAATAN HUTAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2007-01-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_6_2007_2007-01-08
+  kind: asli
+  source: dataset
+  date: '2007-01-08'
+  date_basis: tanggal_penetapan
+  text: pp_6_2007_2007-01-08.txt
+  pasal_count: 144
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d1f3a10ca448a3b728815448cd75c8e17fdf9ffa74d208df6929833cff27f2d1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d1f3a10ca448a3b728815448cd75c8e17fdf9ffa74d208df6929833cff27f2d1
+  source_title: PP_6_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 253
+  status: amended
+  amended_by:
+  - sha256:06b16dfc796c3b635ba45585c53d82c1e5cb2c26c83324d576757f9799f3920b
+  - sha256:71cdc19bc50a4dacaedcee5d9b49905e479a4d8a9e18226f0376e86446ae2bc5

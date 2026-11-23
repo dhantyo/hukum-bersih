@@ -1,0 +1,43 @@
+id: pp_28_2003
+akn: /akn/id/act/pp/2003/28
+type: pp
+number: '28'
+year: 2003
+title: Peraturan Pemerintah Nomor 28 Tahun 2003 tentang Subsidi Dan Iuran Pemerintah
+  Dalam Penyelenggaraan Asuransi Kesehatan Bagi Pegawai Negeri Sipil Dan Penerima
+  Pensiun
+tentang: SUBSIDI DAN IURAN PEMERINTAH DALAM PENYELENGGARAAN ASURANSI KESEHATAN BAGI
+  PEGAWAI NEGERI SIPIL DAN PENERIMA PENSIUN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2003-06-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_28_2003_2003-06-09
+  kind: asli
+  source: dataset
+  date: '2003-06-09'
+  date_basis: tanggal_penetapan
+  text: pp_28_2003_2003-06-09.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:cb64688140a91ad6845035fe53d3470f730b3585b276b3faf78080b013affc92
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:cb64688140a91ad6845035fe53d3470f730b3585b276b3faf78080b013affc92
+  source_title: PP_No.28_TH_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 22
+  status: revoked
+  revoked_by:
+  - sha256:9a5c56046889af867148bac6ff92c45a898c0ef8a79c2178bbe177bde88154e7

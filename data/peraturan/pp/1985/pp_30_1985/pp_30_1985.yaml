@@ -1,0 +1,42 @@
+id: pp_30_1985
+akn: /akn/id/act/pp/1985/30
+type: pp
+number: '30'
+year: 1985
+title: Peraturan Pemerintah Nomor 30 Tahun 1985 tentang Perusahaan Umum (Perum) Percetakan
+  Uang Republik Indonesia Presiden Republik Indonesia
+tentang: PERUSAHAAN UMUM (PERUM) PERCETAKAN UANG REPUBLIK INDONESIA Presiden Republik
+  Indonesia
+short_name: null
+status: dicabut
+tanggal_penetapan: '1985-06-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_30_1985_1985-06-10
+  kind: asli
+  source: dataset
+  date: '1985-06-10'
+  date_basis: tanggal_penetapan
+  text: pp_30_1985_1985-06-10.txt
+  pasal_count: 57
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b74694a3a5416cb61218ab2e7096149a75ae98bc4dbce71819f1faa96806ddcf
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b74694a3a5416cb61218ab2e7096149a75ae98bc4dbce71819f1faa96806ddcf
+  source_title: PP_NO_30_TH_1985
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 69
+  status: revoked
+  revoked_by:
+  - sha256:4e3296fd68f58c061c3ccecf0605c709714692c81dac6381b8b732db2022cb32

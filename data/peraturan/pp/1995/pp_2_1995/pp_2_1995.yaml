@@ -1,0 +1,40 @@
+id: pp_2_1995
+akn: /akn/id/act/pp/1995/2
+type: pp
+number: '2'
+year: 1995
+title: Peraturan Pemerintah Nomor 2 Tahun 1995 tentang Perubahan Batas Wilayah Kotamadya
+  Daerah Tingkat Ii Bogor Dan Kabupaten Daerah Tingkat Ii Bogor
+tentang: PERUBAHAN BATAS WILAYAH KOTAMADYA DAERAH TINGKAT II BOGOR DAN KABUPATEN DAERAH
+  TINGKAT II BOGOR
+short_name: null
+status: null
+tanggal_penetapan: '1995-02-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_2_1995_1995-02-06
+  kind: asli
+  source: dataset
+  date: '1995-02-06'
+  date_basis: tanggal_penetapan
+  text: pp_2_1995_1995-02-06.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c021fc514f6f1727bc6273024592489a3440f5318efb9d18b9080cb8400f0959
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c021fc514f6f1727bc6273024592489a3440f5318efb9d18b9080cb8400f0959
+  source_title: PP_No._2_Th_1995
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 18
+  status: none_known

@@ -1,0 +1,43 @@
+id: pp_59_1998
+akn: /akn/id/act/pp/1998/59
+type: pp
+number: '59'
+year: 1998
+title: Peraturan Pemerintah Nomor 59 Tahun 1998 tentang Tarif Jasa Jenis Penerimaan
+  Negara Bukan Pajak Yang Berlaku Pada Departemen Kehutanan Dan Perkebunan
+tentang: TARIF JASA JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA DEPARTEMEN
+  KEHUTANAN DAN PERKEBUNAN
+short_name: null
+status: diubah
+tanggal_penetapan: '1998-05-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_59_1998_1998-05-05
+  kind: asli
+  source: dataset
+  date: '1998-05-05'
+  date_basis: tanggal_penetapan
+  text: pp_59_1998_1998-05-05.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ba4ead78394ac3cb6d2a0eb9a666472573860882345458fd341e44ef77276705
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ba4ead78394ac3cb6d2a0eb9a666472573860882345458fd341e44ef77276705
+  source_title: PP_No._59_Tahun_1998
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 14
+  status: amended
+  amended_by:
+  - sha256:6ff0bd395c7bff0aa6916a8ff959502fd0594079ac84d6005b3ed8cac4de6f86
+  - sha256:70e3900e6511e38ab605f093879b45b291196041bd776e3ef0f8fb0078374422

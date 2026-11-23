@@ -1,0 +1,40 @@
+id: pp_34_2014
+akn: /akn/id/act/pp/2014/34
+type: pp
+number: '34'
+year: 2014
+title: Peraturan Pemerintah Nomor 34 Tahun 2014 tentang Perubahan Keenam Belas Atas
+  Peraturan Pemerintah Nomor 7 Tahun 1977 Tentang Peraturan Gaji Pegawai Negeri Sipil
+tentang: PERUBAHAN KEENAM BELAS ATAS PERATURAN PEMERINTAH NOMOR 7 TAHUN 1977 TENTANG
+  PERATURAN GAJI PEGAWAI NEGERI SIPIL
+short_name: null
+status: null
+tanggal_penetapan: '2014-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_34_2014_2014-01-01
+  kind: asli
+  source: dataset
+  date: '2014-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_34_2014_2014-01-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f3f71d31e41bece02e84d66e3ac0590086f1d5155052944968e354cce317a5ae
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f3f71d31e41bece02e84d66e3ac0590086f1d5155052944968e354cce317a5ae
+  source_title: PP_Nomor_34_Tahun_2014
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 5
+  status: none_known

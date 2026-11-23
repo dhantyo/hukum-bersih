@@ -1,0 +1,39 @@
+id: pp_70_1948
+akn: /akn/id/act/pp/1948/70
+type: pp
+number: '70'
+year: 1948
+title: Peraturan Pemerintah Nomor 70 Tahun 1948 tentang Kekuasaan Komandan Sub Territorium
+  Dan Kepala Daerah Karesidenan Daerah Istimewa
+tentang: KEKUASAAN KOMANDAN SUB TERRITORIUM DAN KEPALA DAERAH KARESIDENAN DAERAH ISTIMEWA
+short_name: null
+status: null
+tanggal_penetapan: '1948-11-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_70_1948_1948-11-10
+  kind: asli
+  source: dataset
+  date: '1948-11-10'
+  date_basis: tanggal_penetapan
+  text: pp_70_1948_1948-11-10.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7cd2813ec5aeef1961bad53b6cccf98e21898514b491d4627708f42f71beed73
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7cd2813ec5aeef1961bad53b6cccf98e21898514b491d4627708f42f71beed73
+  source_title: PP_No_70_Tahun_1948
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 15
+  status: none_known

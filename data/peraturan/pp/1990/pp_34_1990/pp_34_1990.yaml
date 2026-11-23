@@ -1,0 +1,43 @@
+id: pp_34_1990
+akn: /akn/id/act/pp/1990/34
+type: pp
+number: '34'
+year: 1990
+title: Peraturan Pemerintah Nomor 34 Tahun 1990 tentang Pendirian Perusahaan Perseroan
+  (Persero) Dalam Bidang Pengelolaan Kawasan Industri Tertentu Yang Diberikan Status
+  Sebagai Kawasan Berikat
+tentang: PENDIRIAN PERUSAHAAN PERSEROAN (PERSERO) DALAM BIDANG PENGELOLAAN KAWASAN
+  INDUSTRI TERTENTU YANG DIBERIKAN STATUS SEBAGAI KAWASAN BERIKAT
+short_name: null
+status: dicabut
+tanggal_penetapan: '1990-07-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_34_1990_1990-07-24
+  kind: asli
+  source: dataset
+  date: '1990-07-24'
+  date_basis: tanggal_penetapan
+  text: pp_34_1990_1990-07-24.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:091c1b5a77651a6ee7a1be407d9540a996886358b9fd3499161ee446879ea0e4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:091c1b5a77651a6ee7a1be407d9540a996886358b9fd3499161ee446879ea0e4
+  source_title: PP_NO_34_TH_1990
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:637eedc300634d4ba7569f3b02c7201db3b92ec09e72e4ca6b9300b5e24278dd

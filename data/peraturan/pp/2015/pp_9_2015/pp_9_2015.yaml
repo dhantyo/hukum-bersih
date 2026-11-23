@@ -1,0 +1,40 @@
+id: pp_9_2015
+akn: /akn/id/act/pp/2015/9
+type: pp
+number: '9'
+year: 2015
+title: Peraturan Pemerintah Nomor 9 Tahun 2015 tentang Jenis Dan Tarif Atas Jenis
+  Penerimaan Negara Bukan Pajak Yang Berlaku Pada Kementerian Pariwisata
+tentang: JENIS DAN TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA
+  KEMENTERIAN PARIWISATA
+short_name: null
+status: null
+tanggal_penetapan: '2015-02-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_9_2015_2015-02-24
+  kind: asli
+  source: dataset
+  date: '2015-02-24'
+  date_basis: tanggal_penetapan
+  text: pp_9_2015_2015-02-24.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:95983d4b7f1cae32d5daedb875eaef85f75b25cf8ede853004a9a406019ab8e9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:95983d4b7f1cae32d5daedb875eaef85f75b25cf8ede853004a9a406019ab8e9
+  source_title: PP_Nomor_9_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 50
+  status: none_known

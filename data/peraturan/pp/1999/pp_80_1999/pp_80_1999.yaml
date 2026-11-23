@@ -1,0 +1,39 @@
+id: pp_80_1999
+akn: /akn/id/act/pp/1999/80
+type: pp
+number: '80'
+year: 1999
+title: Peraturan Pemerintah Nomor 80 Tahun 1999 tentang Kawasan Siap Bangun Dan Lingkungan
+  Siap Bangun Yang Berdiri Sendiri
+tentang: KAWASAN SIAP BANGUN DAN LINGKUNGAN SIAP BANGUN YANG BERDIRI SENDIRI
+short_name: null
+status: null
+tanggal_penetapan: '1999-09-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_80_1999_1999-09-30
+  kind: asli
+  source: dataset
+  date: '1999-09-30'
+  date_basis: tanggal_penetapan
+  text: pp_80_1999_1999-09-30.txt
+  pasal_count: 58
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:28b4d20a8ab6ae5c8497a0f1df603cc773e30239f72411ba6ec358a8642cc522
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:28b4d20a8ab6ae5c8497a0f1df603cc773e30239f72411ba6ec358a8642cc522
+  source_title: PP_No._80_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 91
+  status: none_known

@@ -1,0 +1,39 @@
+id: pp_62_1999
+akn: /akn/id/act/pp/1999/62
+type: pp
+number: '62'
+year: 1999
+title: Peraturan Pemerintah Nomor 62 Tahun 1999 tentang Penambahanpenyertaanmodalnegararepublikindonesia
+  Kedalammodalsahamperusahaanperseroan(Persero)Ptpertani
+tentang: PENAMBAHANPENYERTAANMODALNEGARAREPUBLIKINDONESIA KEDALAMMODALSAHAMPERUSAHAANPERSEROAN(PERSERO)PTPERTANI
+short_name: null
+status: null
+tanggal_penetapan: '1999-06-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_62_1999_1999-06-24
+  kind: asli
+  source: dataset
+  date: '1999-06-24'
+  date_basis: tanggal_penetapan
+  text: pp_62_1999_1999-06-24.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e72f8cb8d50a1caffa0df7575da202412eb10ba33db2d38815e8558a2084be81
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e72f8cb8d50a1caffa0df7575da202412eb10ba33db2d38815e8558a2084be81
+  source_title: PP_No._62_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

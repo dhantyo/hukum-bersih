@@ -1,0 +1,40 @@
+id: pp_5_1992
+akn: /akn/id/act/pp/1992/5
+type: pp
+number: '5'
+year: 1992
+title: Peraturan Pemerintah Nomor 5 Tahun 1992 tentang Pengalihan Bentuk Perusahaan
+  Umum (Perum) Angkasa Pura I Menjadi Perusahaan Perseroan (Persero)
+tentang: PENGALIHAN BENTUK PERUSAHAAN UMUM (PERUM) ANGKASA PURA I MENJADI PERUSAHAAN
+  PERSEROAN (PERSERO)
+short_name: null
+status: null
+tanggal_penetapan: '1992-02-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_5_1992_1992-02-04
+  kind: asli
+  source: dataset
+  date: '1992-02-04'
+  date_basis: tanggal_penetapan
+  text: pp_5_1992_1992-02-04.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:640c20be02f65ac2a4b661c641ea1aa42f77a8444fbdf6f27d560f4c4eaf79c6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:640c20be02f65ac2a4b661c641ea1aa42f77a8444fbdf6f27d560f4c4eaf79c6
+  source_title: PP_NO_5_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: none_known

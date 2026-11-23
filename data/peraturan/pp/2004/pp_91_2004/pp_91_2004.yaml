@@ -1,0 +1,40 @@
+id: pp_91_2004
+akn: /akn/id/act/pp/2004/91
+type: pp
+number: '91'
+year: 2004
+title: Peraturan Pemerintah Nomor 91 Tahun 2004 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Pada International Bank For Reconstruction And Development
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA PADA INTERNATIONAL
+  BANK FOR RECONSTRUCTION AND DEVELOPMENT
+short_name: null
+status: null
+tanggal_penetapan: '2014-10-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_91_2004_2014-10-17
+  kind: asli
+  source: dataset
+  date: '2014-10-17'
+  date_basis: tanggal_penetapan
+  text: pp_91_2004_2014-10-17.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:338e5b8640b166f38365220c3dcc9af465f93d8ce98450417151a23d4fdea4f2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:338e5b8640b166f38365220c3dcc9af465f93d8ce98450417151a23d4fdea4f2
+  source_title: PP_Nomor_91_Tahun_2014
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

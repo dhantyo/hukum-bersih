@@ -1,0 +1,48 @@
+id: pp_28_2001
+akn: /akn/id/act/pp/2001/28
+type: pp
+number: '28'
+year: 2001
+title: Peraturan Pemerintah Nomor 28 Tahun 2001 tentang Peraturan Gaji Anggota Tentara
+  Nasional Indonesia
+tentang: PERATURAN GAJI ANGGOTA TENTARA NASIONAL INDONESIA
+short_name: null
+status: diubah
+tanggal_penetapan: '2001-05-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_28_2001_2001-05-18
+  kind: asli
+  source: dataset
+  date: '2001-05-18'
+  date_basis: tanggal_penetapan
+  text: pp_28_2001_2001-05-18.txt
+  pasal_count: 20
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ee22d47c6d27e6a9104fc71480b93c36405f9a4707e3b732a162c2c8dbb50eaf
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ee22d47c6d27e6a9104fc71480b93c36405f9a4707e3b732a162c2c8dbb50eaf
+  source_title: PP_NO_28_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 39
+  status: amended
+  amended_by:
+  - sha256:2c8cc31a8995b673e514cccf8e2a7ee41d77709650932b9f83d4a0393576a736
+  - sha256:3e808dc9f6862f163e56ba1b09acf5c330ef7a2441c94383acd3dcf50ecec3d7
+  - sha256:55acd619401d159a924c0d7e2854a203c08db54b4432f0e85764745babe916d0
+  - sha256:5a0ece064f2663d0c139b0b9927882eaf83dec76e783cc0e458af02b6fb8e3af
+  - sha256:64cd94db93323a2d0bbc8476c21b9c92be30982fd52b3516b20453c159ca28bf
+  - sha256:77dcefc4c7628bda2bc34f6c04f68fa2d2018797cbe6b1bd98023daaad8b97b3
+  - sha256:b527f799a54110865103ea6c1b89b315e6ece73a6b88c48e47779ea5d8b81129
+  - sha256:c8057dcc0c514d1ede19b7815fce295edcf6f58c54134b49133f038022d4a85c

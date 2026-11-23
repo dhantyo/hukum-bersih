@@ -1,0 +1,39 @@
+id: pp_12_1993
+akn: /akn/id/act/pp/1993/12
+type: pp
+number: '12'
+year: 1993
+title: Peraturan Pemerintah Nomor 12 Tahun 1993 tentang Pembentukan Kota Administratif
+  Batu
+tentang: PEMBENTUKAN KOTA ADMINISTRATIF BATU
+short_name: null
+status: null
+tanggal_penetapan: '1993-02-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_12_1993_1993-02-27
+  kind: asli
+  source: dataset
+  date: '1993-02-27'
+  date_basis: tanggal_penetapan
+  text: pp_12_1993_1993-02-27.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:84a796e7b8c07765903d2bfd6b52dbf6bb1fddf846fcd76a8af258c758e4b3e6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:84a796e7b8c07765903d2bfd6b52dbf6bb1fddf846fcd76a8af258c758e4b3e6
+  source_title: PP_No._12_Th_1993
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 16
+  status: none_known

@@ -1,0 +1,38 @@
+id: pp_5_2010
+akn: /akn/id/act/pp/2010/5
+type: pp
+number: '5'
+year: 2010
+title: Peraturan Pemerintah Nomor 5 Tahun 2010 tentang Kenavigasian
+tentang: KENAVIGASIAN
+short_name: null
+status: null
+tanggal_penetapan: '2010-01-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_5_2010_2010-01-06
+  kind: asli
+  source: dataset
+  date: '2010-01-06'
+  date_basis: tanggal_penetapan
+  text: pp_5_2010_2010-01-06.txt
+  pasal_count: 142
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3a94cb854db77efea608ba1736744343973191bf77f88ba285dd00d43ff2789d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3a94cb854db77efea608ba1736744343973191bf77f88ba285dd00d43ff2789d
+  source_title: PP_5_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 177
+  status: none_known

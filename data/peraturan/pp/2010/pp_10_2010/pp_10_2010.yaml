@@ -1,0 +1,42 @@
+id: pp_10_2010
+akn: /akn/id/act/pp/2010/10
+type: pp
+number: '10'
+year: 2010
+title: Peraturan Pemerintah Nomor 10 Tahun 2010 tentang Tata Cara Perubahan Peruntukan
+  Dan Fungsi Kawasan Hutan
+tentang: TATA CARA PERUBAHAN PERUNTUKAN DAN FUNGSI KAWASAN HUTAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2010-01-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_10_2010_2010-01-22
+  kind: asli
+  source: dataset
+  date: '2010-01-22'
+  date_basis: tanggal_penetapan
+  text: pp_10_2010_2010-01-22.txt
+  pasal_count: 54
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:44170470a35bcad367b19c9d5bdb5412d0bfd58846d0e56289930fdcf8741b4d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:44170470a35bcad367b19c9d5bdb5412d0bfd58846d0e56289930fdcf8741b4d
+  source_title: PP_10_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 81
+  status: amended
+  amended_by:
+  - sha256:717ad945228b5a296c29f8dbed724b5cdde8ed451fee4e9464d3f7a4c1d398c1
+  - sha256:71cdc19bc50a4dacaedcee5d9b49905e479a4d8a9e18226f0376e86446ae2bc5

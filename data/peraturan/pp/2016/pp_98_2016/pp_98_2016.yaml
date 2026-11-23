@@ -1,0 +1,40 @@
+id: pp_98_2016
+akn: /akn/id/act/pp/2016/98
+type: pp
+number: '98'
+year: 2016
+title: Peraturan Pemerintah Nomor 98 Tahun 2016 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam *H[:I#Iy, I:::Ifitrtjffi:X,Rpersero)
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM *H[:I#Iy,
+  i:::ifitrTJffi:X,rPERSERO)
+short_name: null
+status: null
+tanggal_penetapan: '2016-12-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_98_2016_2016-12-31
+  kind: asli
+  source: dataset
+  date: '2016-12-31'
+  date_basis: tanggal_penetapan
+  text: pp_98_2016_2016-12-31.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e5f596fd4faaea0b3dead6ffd88ee6aeccbabc997b540a1adbc93c8b5dca6da7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e5f596fd4faaea0b3dead6ffd88ee6aeccbabc997b540a1adbc93c8b5dca6da7
+  source_title: PP_Nomor_98_Tahun_2016
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 8
+  status: none_known

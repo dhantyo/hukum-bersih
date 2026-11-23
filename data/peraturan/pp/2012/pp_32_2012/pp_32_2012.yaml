@@ -1,0 +1,41 @@
+id: pp_32_2012
+akn: /akn/id/act/pp/2012/32
+type: pp
+number: '32'
+year: 2012
+title: Peraturan Pemerintah Nomor 32 Tahun 2012 tentang Pemindahan Ibu Kota Kabupaten
+  Serang Dari Wilayah Kota Serang Ke Wilayah Kecamatan Ciruas, Kabupaten Serang, Provinsi
+  Banten
+tentang: PEMINDAHAN IBU KOTA KABUPATEN SERANG DARI WILAYAH KOTA SERANG KE WILAYAH
+  KECAMATAN CIRUAS, KABUPATEN SERANG, PROVINSI BANTEN
+short_name: null
+status: null
+tanggal_penetapan: '2012-03-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_32_2012_2012-03-01
+  kind: asli
+  source: dataset
+  date: '2012-03-01'
+  date_basis: tanggal_penetapan
+  text: pp_32_2012_2012-03-01.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:10278249ecef22537da3bcc98b5cf6959ef69d89f5de39bde716c0a699f5405b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:10278249ecef22537da3bcc98b5cf6959ef69d89f5de39bde716c0a699f5405b
+  source_title: PP_Nomor_32_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: none_known

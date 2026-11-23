@@ -1,0 +1,41 @@
+id: pp_69_1991
+akn: /akn/id/act/pp/1991/69
+type: pp
+number: '69'
+year: 1991
+title: Peraturan Pemerintah Nomor 69 Tahun 1991 tentang Perintis Kemerdekaan Beserta
+  Keluarganya
+tentang: PERINTIS KEMERDEKAAN BESERTA KELUARGANYA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1991-12-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_69_1991_1991-12-23
+  kind: asli
+  source: dataset
+  date: '1991-12-23'
+  date_basis: tanggal_penetapan
+  text: pp_69_1991_1991-12-23.txt
+  pasal_count: 21
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1d78a5677f3fa20e8e17095eb3e5e2291c888975ba27405bc7c3f6f6c6b055dc
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1d78a5677f3fa20e8e17095eb3e5e2291c888975ba27405bc7c3f6f6c6b055dc
+  source_title: PP_NO_69_TH_1991
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 40
+  status: revoked
+  revoked_by:
+  - sha256:e4a78042ce484e79c998fba411ff8a8548717367e1672442582d7c4c65d4e1e9

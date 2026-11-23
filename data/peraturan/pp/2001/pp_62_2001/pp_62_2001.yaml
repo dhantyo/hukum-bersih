@@ -1,0 +1,41 @@
+id: pp_62_2001
+akn: /akn/id/act/pp/2001/62
+type: pp
+number: '62'
+year: 2001
+title: Peraturan Pemerintah Nomor 62 Tahun 2001 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Pelabuhan Indonesia Iv
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT PELABUHAN INDONESIA IV
+short_name: null
+status: null
+tanggal_penetapan: '2001-08-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_62_2001_2001-08-01
+  kind: asli
+  source: dataset
+  date: '2001-08-01'
+  date_basis: tanggal_penetapan
+  text: pp_62_2001_2001-08-01.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ba366870a7610deee899130897a80bd5f41eb8787d6c2c1e8aeb1e5297bf49b4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ba366870a7610deee899130897a80bd5f41eb8787d6c2c1e8aeb1e5297bf49b4
+  source_title: PP_NO_62_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 8
+  status: none_known

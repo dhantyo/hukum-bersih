@@ -1,0 +1,39 @@
+id: pp_39_1995
+akn: /akn/id/act/pp/1995/39
+type: pp
+number: '39'
+year: 1995
+title: Peraturan Pemerintah Nomor 39 Tahun 1995 tentang Penelitian Dan Pengembangan
+  Kesehatan
+tentang: PENELITIAN DAN PENGEMBANGAN KESEHATAN
+short_name: null
+status: null
+tanggal_penetapan: '1995-11-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_39_1995_1995-11-14
+  kind: asli
+  source: dataset
+  date: '1995-11-14'
+  date_basis: tanggal_penetapan
+  text: pp_39_1995_1995-11-14.txt
+  pasal_count: 21
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:32184ffd1d08d0fbc545feb48337a0df1b437ca391c262065c7f9411a9ee4b91
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:32184ffd1d08d0fbc545feb48337a0df1b437ca391c262065c7f9411a9ee4b91
+  source_title: PP_No._39_Th_1995
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 37
+  status: none_known

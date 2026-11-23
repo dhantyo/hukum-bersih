@@ -1,0 +1,41 @@
+id: pp_77_2015
+akn: /akn/id/act/pp/2015/77
+type: pp
+number: '77'
+year: 2015
+title: Peraturan Pemerintah Nomor 77 Tahun 2015 tentang Penggabungan Perusahaan Perseroan
+  (Persero) Pt Reasuransi Umum Indonesia Ke Dalam Perusahaan Perseroan (Persero) Pt
+  Reasuransi Indonesia Utama
+tentang: PENGGABUNGAN PERUSAHAAN PERSEROAN (PERSERO) PT REASURANSI UMUM INDONESIA
+  KE DALAM PERUSAHAAN PERSEROAN (PERSERO) PT REASURANSI INDONESIA UTAMA
+short_name: null
+status: null
+tanggal_penetapan: '2015-10-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_77_2015_2015-10-07
+  kind: asli
+  source: dataset
+  date: '2015-10-07'
+  date_basis: tanggal_penetapan
+  text: pp_77_2015_2015-10-07.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1a3e2e4c163c5d16e487eaf2b7ccb4cf4a27e6e769ac95f50a7190b7d6d7f741
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1a3e2e4c163c5d16e487eaf2b7ccb4cf4a27e6e769ac95f50a7190b7d6d7f741
+  source_title: PP_Nomor_77_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

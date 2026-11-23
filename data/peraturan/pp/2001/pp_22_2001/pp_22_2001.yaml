@@ -1,0 +1,43 @@
+id: pp_22_2001
+akn: /akn/id/act/pp/2001/22
+type: pp
+number: '22'
+year: 2001
+title: Peraturan Pemerintah Nomor 22 Tahun 2001 tentang Pembubaran Perusahaan Perseroan
+  Pt Perhotelan Dan Perkantoran Indonesia Dan Penambahan Penyertaan Modal Negara Republik
+  Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt Hotel Indonesia
+  Natour
+tentang: PEMBUBARAN PERUSAHAAN PERSEROAN PT PERHOTELAN DAN PERKANTORAN INDONESIA DAN
+  PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM PERUSAHAAN
+  PERSEROAN (PERSERO) PT HOTEL INDONESIA NATOUR
+short_name: null
+status: null
+tanggal_penetapan: '2001-05-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_22_2001_2001-05-18
+  kind: asli
+  source: dataset
+  date: '2001-05-18'
+  date_basis: tanggal_penetapan
+  text: pp_22_2001_2001-05-18.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b1895e867f2661c3472b411c852ec2d71463efb341e27b0c7a198a2d6821396f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b1895e867f2661c3472b411c852ec2d71463efb341e27b0c7a198a2d6821396f
+  source_title: PP_NO_22_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

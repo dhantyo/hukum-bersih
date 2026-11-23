@@ -1,0 +1,41 @@
+id: pp_98_2000
+akn: /akn/id/act/pp/2000/98
+type: pp
+number: '98'
+year: 2000
+title: Peraturan Pemerintah Nomor 98 Tahun 2000 tentang Pengadaan Pegawai Negeri Sipil
+tentang: PENGADAAN PEGAWAI NEGERI SIPIL
+short_name: null
+status: diubah
+tanggal_penetapan: '2000-11-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_98_2000_2000-11-10
+  kind: asli
+  source: dataset
+  date: '2000-11-10'
+  date_basis: tanggal_penetapan
+  text: pp_98_2000_2000-11-10.txt
+  pasal_count: 22
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:58313185993d75f22974e1bd53e978cf6b22218f67a0ce09c7dcb41720fe977d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:58313185993d75f22974e1bd53e978cf6b22218f67a0ce09c7dcb41720fe977d
+  source_title: PP_No.98_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 41
+  status: amended
+  amended_by:
+  - sha256:6d7d74da51459262671f2552c442c4d7966c8ba3f1393a6ab8df4fd29aa6e159
+  - sha256:ad4140dec7b0120600fc0d6e546a209d9df955a238611c6781e3852f1d25f872

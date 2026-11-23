@@ -1,0 +1,39 @@
+id: pp_61_1992
+akn: /akn/id/act/pp/1992/61
+type: pp
+number: '61'
+year: 1992
+title: Peraturan Pemerintah Nomor 61 Tahun 1992 tentang Pajak Penghasilan Perusahaan
+  Reksa Dana
+tentang: PAJAK PENGHASILAN PERUSAHAAN REKSA DANA
+short_name: null
+status: null
+tanggal_penetapan: '1992-09-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_61_1992_1992-09-19
+  kind: asli
+  source: dataset
+  date: '1992-09-19'
+  date_basis: tanggal_penetapan
+  text: pp_61_1992_1992-09-19.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c10c7de483cb32a09a032b2c2d813fb6769f56e615d06a245be05bb2dde8d159
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c10c7de483cb32a09a032b2c2d813fb6769f56e615d06a245be05bb2dde8d159
+  source_title: PP_NO_61_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: none_known

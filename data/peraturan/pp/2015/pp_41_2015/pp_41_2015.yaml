@@ -1,0 +1,38 @@
+id: pp_41_2015
+akn: /akn/id/act/pp/2015/41
+type: pp
+number: '41'
+year: 2015
+title: Peraturan Pemerintah Nomor 41 Tahun 2015 tentang Pembangunan Sumber Daya Industri
+tentang: PEMBANGUNAN SUMBER DAYA INDUSTRI
+short_name: null
+status: null
+tanggal_penetapan: '2015-06-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_41_2015_2015-06-23
+  kind: asli
+  source: dataset
+  date: '2015-06-23'
+  date_basis: tanggal_penetapan
+  text: pp_41_2015_2015-06-23.txt
+  pasal_count: 55
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:eea35ae8cfedd6351e5c2405131dd1188cb6eed17c3b1473194f1024978aa148
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:eea35ae8cfedd6351e5c2405131dd1188cb6eed17c3b1473194f1024978aa148
+  source_title: PP_Nomor_41_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 87
+  status: none_known

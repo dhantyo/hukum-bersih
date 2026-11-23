@@ -1,0 +1,45 @@
+id: pp_80_1992
+akn: /akn/id/act/pp/1992/80
+type: pp
+number: '80'
+year: 1992
+title: Peraturan Pemerintah Nomor 80 Tahun 1992 tentang Perubahan Atas Peraturan Pemerintah
+  Nomor 18 Tahun 1977 Tentang Peraturan Gaji Anggota Angkatan Bersenjata Republik
+  Indonesia Sebagaimana Talah Tiga Kali Diubah Dengan Peraturan Pemerintah Nomor 36
+  Tahun 1991
+tentang: PERUBAHAN ATAS PERATURAN PEMERINTAH NOMOR 18 TAHUN 1977 TENTANG PERATURAN
+  GAJI ANGGOTA ANGKATAN BERSENJATA REPUBLIK INDONESIA SEBAGAIMANA TALAH TIGA KALI
+  DIUBAH DENGAN PERATURAN PEMERINTAH NOMOR 36 TAHUN 1991
+short_name: null
+status: diubah
+tanggal_penetapan: '1992-12-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_80_1992_1992-12-31
+  kind: asli
+  source: dataset
+  date: '1992-12-31'
+  date_basis: tanggal_penetapan
+  text: pp_80_1992_1992-12-31.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:93b76625931a5baa07c15f3a135d353e5e3939d6a4c7ebc483be4da48263ee76
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:93b76625931a5baa07c15f3a135d353e5e3939d6a4c7ebc483be4da48263ee76
+  source_title: PP_NO_80_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: amended
+  amended_by:
+  - sha256:aca370e298777f7261962c0c4260c6cf0124129cfafef11c7d1536d87b865627

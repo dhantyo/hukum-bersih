@@ -1,0 +1,41 @@
+id: pp_22_1988
+akn: /akn/id/act/pp/1988/22
+type: pp
+number: '22'
+year: 1988
+title: Peraturan Pemerintah Nomor 22 Tahun 1988 tentang Perubahan Batas Wilayah Kotamadya
+  Daerah Tingkat Ii Manado Dan Kabupaten Daerah Tingkat Ii Minahasa Presiden Republik
+  Indonesia
+tentang: PERUBAHAN BATAS WILAYAH KOTAMADYA DAERAH TINGKAT II MANADO DAN KABUPATEN
+  DAERAH TINGKAT II MINAHASA Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1988-12-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_22_1988_1988-12-06
+  kind: asli
+  source: dataset
+  date: '1988-12-06'
+  date_basis: tanggal_penetapan
+  text: pp_22_1988_1988-12-06.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:57b7c162597fd2b374b94f3b1062dbd4eb3870b2b0f5b6767a2bc514c48b0653
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:57b7c162597fd2b374b94f3b1062dbd4eb3870b2b0f5b6767a2bc514c48b0653
+  source_title: PP_NO_22_TH_1988
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 25
+  status: none_known

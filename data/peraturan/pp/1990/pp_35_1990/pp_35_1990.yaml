@@ -1,0 +1,41 @@
+id: pp_35_1990
+akn: /akn/id/act/pp/1990/35
+type: pp
+number: '35'
+year: 1990
+title: Peraturan Pemerintah Nomor 35 Tahun 1990 tentang Pengalihan Wewenang Dan Tanggung
+  Jawab Pembinaan Perusahaan Perseroan (Persero) Dalam Bidang Pengusahaan Kawasan
+  Berikat (Bonded Zone)
+tentang: PENGALIHAN WEWENANG DAN TANGGUNG JAWAB PEMBINAAN PERUSAHAAN PERSEROAN (PERSERO)
+  DALAM BIDANG PENGUSAHAAN KAWASAN BERIKAT (BONDED ZONE)
+short_name: null
+status: null
+tanggal_penetapan: '1990-07-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_35_1990_1990-07-24
+  kind: asli
+  source: dataset
+  date: '1990-07-24'
+  date_basis: tanggal_penetapan
+  text: pp_35_1990_1990-07-24.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3ae931927bb1385ee5c245c160933b74a4daefdcb100eae17b628002ea807f5e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3ae931927bb1385ee5c245c160933b74a4daefdcb100eae17b628002ea807f5e
+  source_title: PP_NO_35_TH_1990
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 8
+  status: none_known

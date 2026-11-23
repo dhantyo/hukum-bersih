@@ -1,0 +1,40 @@
+id: pp_13_1995
+akn: /akn/id/act/pp/1995/13
+type: pp
+number: '13'
+year: 1995
+title: Peraturan Pemerintah Nomor 13 Tahun 1995 tentang Izin Usaha Industri
+tentang: IZIN USAHA INDUSTRI
+short_name: null
+status: dicabut
+tanggal_penetapan: '1995-05-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_13_1995_1995-05-23
+  kind: asli
+  source: dataset
+  date: '1995-05-23'
+  date_basis: tanggal_penetapan
+  text: pp_13_1995_1995-05-23.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8fa51f3dc64b06a77932afe96d8cc4043c94c64492a269269fc79ac9ef2cc74d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8fa51f3dc64b06a77932afe96d8cc4043c94c64492a269269fc79ac9ef2cc74d
+  source_title: PP_No._13_Th_1995
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 31
+  status: revoked
+  revoked_by:
+  - sha256:f1c71b022ed27dd8a99536486f650ef1b20c68a023f23548559dc91756909ccd

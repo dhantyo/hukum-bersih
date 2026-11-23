@@ -1,0 +1,39 @@
+id: pp_29_1948
+akn: /akn/id/act/pp/1948/29
+type: pp
+number: '29'
+year: 1948
+title: Peraturan Pemerintah Nomor 29 Tahun 1948 tentang Pemberian Kekuasaan Mengeluarkan
+  Surat Paksa Untuk Memungut Pajak
+tentang: PEMBERIAN KEKUASAAN MENGELUARKAN SURAT PAKSA UNTUK MEMUNGUT PAJAK
+short_name: null
+status: null
+tanggal_penetapan: '1948-09-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_29_1948_1948-09-01
+  kind: asli
+  source: dataset
+  date: '1948-09-01'
+  date_basis: tanggal_penetapan
+  text: pp_29_1948_1948-09-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b4521529235ef9b08a4658b36d83abb6ab0bd3f73b7590b7938ad7b4c81262ff
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b4521529235ef9b08a4658b36d83abb6ab0bd3f73b7590b7938ad7b4c81262ff
+  source_title: PP_No_29_Tahun_1948-kumham
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 6
+  status: none_known

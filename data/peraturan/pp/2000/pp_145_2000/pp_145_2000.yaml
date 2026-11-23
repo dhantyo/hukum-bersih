@@ -1,0 +1,45 @@
+id: pp_145_2000
+akn: /akn/id/act/pp/2000/145
+type: pp
+number: '145'
+year: 2000
+title: Peraturan Pemerintah Nomor 145 Tahun 2000 tentang Kelompok Barang Kena Pajak
+  Yang Tergolong Mewah Yang Dikenakan Pajak Penjualan Atas Barang Mewah
+tentang: KELOMPOK BARANG KENA PAJAK YANG TERGOLONG MEWAH YANG DIKENAKAN PAJAK PENJUALAN
+  ATAS BARANG MEWAH
+short_name: null
+status: diubah
+tanggal_penetapan: '2001-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_145_2000_2001-01-01
+  kind: asli
+  source: dataset
+  date: '2001-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_145_2000_2001-01-01.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:429d3fc7091865a5af2573d9e335affcc642cb9b1e80b89b31ffffb97e1e7612
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:429d3fc7091865a5af2573d9e335affcc642cb9b1e80b89b31ffffb97e1e7612
+  source_title: PP_No.145_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 15
+  status: amended
+  amended_by:
+  - sha256:03ec1142506af107ac7ffbc784d6e31596f4226abc7ecfe1e6ae65b562d351cb
+  - sha256:0988f33c8e5545443a486aca9a38abbd9892294d33ba007551bd655f6a2e6497
+  - sha256:31b87316359a0f2a0bf42ed79ac8f29a46aa401dbdffec514df735f0fba23388
+  - sha256:d19e19344c51a69ef1a0d367c0cf5ebbceb70c8a32e69d6e6b11e34fe14e2191

@@ -1,0 +1,42 @@
+id: pp_21_2011
+akn: /akn/id/act/pp/2011/21
+type: pp
+number: '21'
+year: 2011
+title: Peraturan Pemerintah Nomor 21 Tahun 2011 tentang Pembentukan, Susunan, Dan
+  Tata Kerja Perwakilan Ombudsman Republik Indonesia Di Daerah
+tentang: PEMBENTUKAN, SUSUNAN, DAN TATA KERJA PERWAKILAN OMBUDSMAN REPUBLIK INDONESIA
+  DI DAERAH
+short_name: null
+status: diubah
+tanggal_penetapan: '2011-03-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_21_2011_2011-03-30
+  kind: asli
+  source: dataset
+  date: '2011-03-30'
+  date_basis: tanggal_penetapan
+  text: pp_21_2011_2011-03-30.txt
+  pasal_count: 23
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a7cc53e7c9ac2fbe73602e185dbc21ece91e49c423f68aea17336487c496f614
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a7cc53e7c9ac2fbe73602e185dbc21ece91e49c423f68aea17336487c496f614
+  source_title: PP_21_Tahun_2011
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 41
+  status: amended
+  amended_by:
+  - sha256:d73d03edbc48548334caa58dc2fd919aeb412603bb1950113f12fd7895e8d2d1

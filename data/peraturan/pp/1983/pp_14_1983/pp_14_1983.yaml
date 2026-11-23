@@ -1,0 +1,40 @@
+id: pp_14_1983
+akn: /akn/id/act/pp/1983/14
+type: pp
+number: '14'
+year: 1983
+title: Peraturan Pemerintah Nomor 14 Tahun 1983
+tentang: null
+short_name: null
+status: dicabut
+tanggal_penetapan: '1983-05-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_14_1983_1983-05-01
+  kind: asli
+  source: dataset
+  date: '1983-05-01'
+  date_basis: tanggal_penetapan
+  text: pp_14_1983_1983-05-01.txt
+  pasal_count: 37
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d77be75f75b509a8f511d275bcf9be4c823cc853ecb86f6f575c15bc7f8f21c2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d77be75f75b509a8f511d275bcf9be4c823cc853ecb86f6f575c15bc7f8f21c2
+  source_title: PP_NO._14_TH_1983
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 42
+  status: revoked
+  revoked_by:
+  - sha256:70e9b6f794f4fc01e875640078ebb9bd0315d4ca0f7a8e1938f67bbbb790e36c

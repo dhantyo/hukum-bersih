@@ -1,0 +1,39 @@
+id: pp_7_1990
+akn: /akn/id/act/pp/1990/7
+type: pp
+number: '7'
+year: 1990
+title: Peraturan Pemerintah Nomor 7 Tahun 1990 tentang Hak Pengusahaan Hutan Tanaman
+  Industri Presiden Republik Indonesia
+tentang: HAK PENGUSAHAAN HUTAN TANAMAN INDUSTRI Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1990-03-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_7_1990_1990-03-16
+  kind: asli
+  source: dataset
+  date: '1990-03-16'
+  date_basis: tanggal_penetapan
+  text: pp_7_1990_1990-03-16.txt
+  pasal_count: 22
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:91463d3e5aec861a64d276e16a3cb3cdf1342dc73f54248649566892b18bcabe
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:91463d3e5aec861a64d276e16a3cb3cdf1342dc73f54248649566892b18bcabe
+  source_title: PP_NO_7_TH_1990
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 49
+  status: none_known

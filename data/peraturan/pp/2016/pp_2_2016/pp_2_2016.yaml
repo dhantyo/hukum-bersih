@@ -1,0 +1,41 @@
+id: pp_2_2016
+akn: /akn/id/act/pp/2016/2
+type: pp
+number: '2'
+year: 2016
+title: Peraturan Pemerintah Nomor 2 Tahun 2016 tentang Tata Cara Penyampaian Data
+  Dan Inpormasi Oleh Instansi Pemerintah Dan/Atau Lembaga Swasta Dalam Pencegahan
+  Dan Pemberantasan Tindak Pidana Pencucian Uang
+tentang: TATA CARA PENYAMPAIAN DATA DAN INPORMASI OLEH INSTANSI PEMERINTAH DAN/ATAU
+  LEMBAGA SWASTA DALAM PENCEGAHAN DAN PEMBERANTASAN TINDAK PIDANA PENCUCIAN UANG
+short_name: null
+status: null
+tanggal_penetapan: '2016-02-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_2_2016_2016-02-01
+  kind: asli
+  source: dataset
+  date: '2016-02-01'
+  date_basis: tanggal_penetapan
+  text: pp_2_2016_2016-02-01.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4ea459a935febd32c8c726ba6a4e5db4eb2168481446fe1105b50f578ec1d7c5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4ea459a935febd32c8c726ba6a4e5db4eb2168481446fe1105b50f578ec1d7c5
+  source_title: PP_Nomor_2_Tahun_2016
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 20
+  status: none_known

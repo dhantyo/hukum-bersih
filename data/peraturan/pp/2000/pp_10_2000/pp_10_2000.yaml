@@ -1,0 +1,41 @@
+id: pp_10_2000
+akn: /akn/id/act/pp/2000/10
+type: pp
+number: '10'
+year: 2000
+title: Peraturan Pemerintah Nomor 10 Tahun 2000 tentang Tingkat Ketelitian Peta Untuk
+  Penataan Ruang Wilayah
+tentang: TINGKAT KETELITIAN PETA UNTUK PENATAAN RUANG WILAYAH
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-02-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_10_2000_2000-02-21
+  kind: asli
+  source: dataset
+  date: '2000-02-21'
+  date_basis: tanggal_penetapan
+  text: pp_10_2000_2000-02-21.txt
+  pasal_count: 47
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:217b281bb45e2ef8cc2d87f2de2442d8e155a0e4288aa9b23c9b1bad7e62e2b0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:217b281bb45e2ef8cc2d87f2de2442d8e155a0e4288aa9b23c9b1bad7e62e2b0
+  source_title: PP_No.10_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 54
+  status: revoked
+  revoked_by:
+  - sha256:5ec26eebf8019b58ae2d01b60d5bc9427b1a665cef4f852d0004bcf0150435ac

@@ -1,0 +1,40 @@
+id: pp_4_2005
+akn: /akn/id/act/pp/2005/4
+type: pp
+number: '4'
+year: 2005
+title: Peraturan Pemerintah Nomor 4 Tahun 2005 tentang Tarif Atas Jenis Penerimaan
+  Negara Bukan Pajak Yang Berlaku Pada Departemen Kebudayaan Dan Pariwisata
+tentang: TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA DEPARTEMEN
+  KEBUDAYAAN DAN PARIWISATA
+short_name: null
+status: null
+tanggal_penetapan: '2005-01-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_4_2005_2005-01-18
+  kind: asli
+  source: dataset
+  date: '2005-01-18'
+  date_basis: tanggal_penetapan
+  text: pp_4_2005_2005-01-18.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2916c66e6a03b86191f7e9a78b4fb827c24eefb7352d1b4e7a8437b367648d79
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2916c66e6a03b86191f7e9a78b4fb827c24eefb7352d1b4e7a8437b367648d79
+  source_title: PP_NO_4_TH_2005
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 17
+  status: none_known

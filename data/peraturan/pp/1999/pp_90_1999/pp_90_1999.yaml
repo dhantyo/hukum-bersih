@@ -1,0 +1,41 @@
+id: pp_90_1999
+akn: /akn/id/act/pp/1999/90
+type: pp
+number: '90'
+year: 1999
+title: Peraturan Pemerintah Nomor 90 Tahun 1999 tentang Pengabungan Perusahaan Perseroan
+  (Persero) Pt Industri Sandang I Ke Dalam Perusahaan Perseroan (Persero) Pt Industri
+  Sandang Ii
+tentang: PENGABUNGAN PERUSAHAAN PERSEROAN (PERSERO) PT INDUSTRI SANDANG I KE DALAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT INDUSTRI SANDANG II
+short_name: null
+status: null
+tanggal_penetapan: '1999-10-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_90_1999_1999-10-13
+  kind: asli
+  source: dataset
+  date: '1999-10-13'
+  date_basis: tanggal_penetapan
+  text: pp_90_1999_1999-10-13.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:45bfecdacdca4b3dd5215dc06e0499cb0ff7152f511db5e4dfdc24546fd97002
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:45bfecdacdca4b3dd5215dc06e0499cb0ff7152f511db5e4dfdc24546fd97002
+  source_title: PP_No._90_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

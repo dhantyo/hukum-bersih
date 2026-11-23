@@ -1,0 +1,40 @@
+id: pp_30_2015
+akn: /akn/id/act/pp/2015/30
+type: pp
+number: '30'
+year: 2015
+title: Peraturan Pemerintah Nomor 30 Tahun 2015 tentang Perubahan Ketujuh Belas Atas
+  Peraturan Pemerintah Nomor 7 Tahun 1977 Tentang Peraturan Gaji Pegawai Negeri Sipil
+tentang: PERUBAHAN KETUJUH BELAS ATAS PERATURAN PEMERINTAH NOMOR 7 TAHUN 1977 TENTANG
+  PERATURAN GAJI PEGAWAI NEGERI SIPIL
+short_name: null
+status: null
+tanggal_penetapan: '2015-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_30_2015_2015-01-01
+  kind: asli
+  source: dataset
+  date: '2015-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_30_2015_2015-01-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bf7e764f911628b80d539f486aa43a814e38fed4980925b1b2ddc7277d0b240c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bf7e764f911628b80d539f486aa43a814e38fed4980925b1b2ddc7277d0b240c
+  source_title: PP_Nomor_30_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: none_known

@@ -1,0 +1,41 @@
+id: pp_6_2014
+akn: /akn/id/act/pp/2014/6
+type: pp
+number: '6'
+year: 2014
+title: Peraturan Pemerintah Nomor 6 Tahun 2014 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Asdp Indonesia Ferry
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT ASDP INDONESIA FERRY
+short_name: null
+status: null
+tanggal_penetapan: '2014-02-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_6_2014_2014-02-12
+  kind: asli
+  source: dataset
+  date: '2014-02-12'
+  date_basis: tanggal_penetapan
+  text: pp_6_2014_2014-02-12.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:41c57fb8328e38b37b26fc1a49f5eaed5488a024573addf9ac38b1e3c9ffb864
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:41c57fb8328e38b37b26fc1a49f5eaed5488a024573addf9ac38b1e3c9ffb864
+  source_title: PP_Nomor_06_Tahun_2014
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: none_known

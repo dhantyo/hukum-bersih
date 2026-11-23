@@ -1,0 +1,41 @@
+id: pp_36_2012
+akn: /akn/id/act/pp/2012/36
+type: pp
+number: '36'
+year: 2012
+title: Peraturan Pemerintah Nomor 36 Tahun 2012 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Perusahaan Umum (Perum) Percetakan Negara
+  Republik Indonesia
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL PERUSAHAAN
+  UMUM (PERUM) PERCETAKAN NEGARA REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2012-03-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_36_2012_2012-03-01
+  kind: asli
+  source: dataset
+  date: '2012-03-01'
+  date_basis: tanggal_penetapan
+  text: pp_36_2012_2012-03-01.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:750699305601ab89ac731be489b9ad8c756bc629cd7493ad0987ee9731a158fa
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:750699305601ab89ac731be489b9ad8c756bc629cd7493ad0987ee9731a158fa
+  source_title: PP_Nomor_36_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

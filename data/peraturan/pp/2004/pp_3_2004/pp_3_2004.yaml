@@ -1,0 +1,41 @@
+id: pp_3_2004
+akn: /akn/id/act/pp/2004/3
+type: pp
+number: '3'
+year: 2004
+title: Peraturan Pemerintah Nomor 3 Tahun 2004 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Rajawali Nusantara Indonesia
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT RAJAWALI NUSANTARA INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2004-01-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_3_2004_2004-01-14
+  kind: asli
+  source: dataset
+  date: '2004-01-14'
+  date_basis: tanggal_penetapan
+  text: pp_3_2004_2004-01-14.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9e7b0ad3a423a8e1cc1f0a8c3ec1603e967b5427d8686b9bff971735a50fd9c9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9e7b0ad3a423a8e1cc1f0a8c3ec1603e967b5427d8686b9bff971735a50fd9c9
+  source_title: PP_No.3_TH_2004
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

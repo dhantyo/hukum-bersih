@@ -1,0 +1,41 @@
+id: pp_29_2000
+akn: /akn/id/act/pp/2000/29
+type: pp
+number: '29'
+year: 2000
+title: Peraturan Pemerintah Nomor 29 Tahun 2000 tentang Penyelenggaraan Jasa Konstruksi
+tentang: PENYELENGGARAAN JASA KONSTRUKSI
+short_name: null
+status: diubah
+tanggal_penetapan: '2000-05-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_29_2000_2000-05-30
+  kind: asli
+  source: dataset
+  date: '2000-05-30'
+  date_basis: tanggal_penetapan
+  text: pp_29_2000_2000-05-30.txt
+  pasal_count: 56
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:deda86a323c86dd091ddbb27b0eda40df1b872646d0c86be09ce362394f42198
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:deda86a323c86dd091ddbb27b0eda40df1b872646d0c86be09ce362394f42198
+  source_title: PP_No.29_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 114
+  status: amended
+  amended_by:
+  - sha256:7bf9ddf51edfbbc42d21f981c353720a161b5fc9d9aab440411bf5422af3552f
+  - sha256:f3c64a0102e43899af2dc5c64d0886ae8bcd41022028fbeb21d3b80d264061f0

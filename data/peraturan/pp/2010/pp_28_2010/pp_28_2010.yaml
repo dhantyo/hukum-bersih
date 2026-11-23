@@ -1,0 +1,41 @@
+id: pp_28_2010
+akn: /akn/id/act/pp/2010/28
+type: pp
+number: '28'
+year: 2010
+title: Peraturan Pemerintah Nomor 28 Tahun 2010 tentang Penetapan Pensiun Pokok Pensiunan
+  Pegawai Negeri Sipil Dan Janda/Dudanya
+tentang: PENETAPAN PENSIUN POKOK PENSIUNAN PEGAWAI NEGERI SIPIL DAN JANDA/DUDANYA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2010-02-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_28_2010_2010-02-05
+  kind: asli
+  source: dataset
+  date: '2010-02-05'
+  date_basis: tanggal_penetapan
+  text: pp_28_2010_2010-02-05.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:60acea3473602703a64e19d6ad221a58cc28f10cd6f1427526f8c23e1d6c6b66
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:60acea3473602703a64e19d6ad221a58cc28f10cd6f1427526f8c23e1d6c6b66
+  source_title: PP_28_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:62e9e5e725d542a99811bc98fa07e4809beb338923c3f47df2d634d7960d2e05

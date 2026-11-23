@@ -1,0 +1,38 @@
+id: pp_42_2007
+akn: /akn/id/act/pp/2007/42
+type: pp
+number: '42'
+year: 2007
+title: Peraturan Pemerintah Nomor 42 Tahun 2007 tentang Waralaba
+tentang: WARALABA
+short_name: null
+status: null
+tanggal_penetapan: '2007-07-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_42_2007_2007-07-23
+  kind: asli
+  source: dataset
+  date: '2007-07-23'
+  date_basis: tanggal_penetapan
+  text: pp_42_2007_2007-07-23.txt
+  pasal_count: 22
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:98ab7a8ab404beef461e322398dad6c068890779c8b429f36d31d3b706fb2d14
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:98ab7a8ab404beef461e322398dad6c068890779c8b429f36d31d3b706fb2d14
+  source_title: PP_42_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 34
+  status: none_known

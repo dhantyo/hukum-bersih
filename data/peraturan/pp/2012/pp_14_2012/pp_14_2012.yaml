@@ -1,0 +1,41 @@
+id: pp_14_2012
+akn: /akn/id/act/pp/2012/14
+type: pp
+number: '14'
+year: 2012
+title: Peraturan Pemerintah Nomor 14 Tahun 2012 tentang Kegiatan Usaha Penyediaan
+  Tenaga Listrik
+tentang: KEGIATAN USAHA PENYEDIAAN TENAGA LISTRIK
+short_name: null
+status: diubah
+tanggal_penetapan: '2012-01-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_14_2012_2012-01-24
+  kind: asli
+  source: dataset
+  date: '2012-01-24'
+  date_basis: tanggal_penetapan
+  text: pp_14_2012_2012-01-24.txt
+  pasal_count: 53
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:068205f85eaa6eb0ca32e1f4a11c91442d7adfb5836c3ece09212fe6294571d4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:068205f85eaa6eb0ca32e1f4a11c91442d7adfb5836c3ece09212fe6294571d4
+  source_title: PP_Nomor_14_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 76
+  status: amended
+  amended_by:
+  - sha256:0467b70d8179a27dd7ec4f0ea91c504737e3c27c68f96347108ae8d90065701c

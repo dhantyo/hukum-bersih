@@ -1,0 +1,39 @@
+id: pp_7_1999
+akn: /akn/id/act/pp/1999/7
+type: pp
+number: '7'
+year: 1999
+title: Peraturan Pemerintah Nomor 7 Tahun 1999 tentang Pengawetan Jenis Tumbuhan Dan
+  Satwa
+tentang: PENGAWETAN JENIS TUMBUHAN DAN SATWA
+short_name: null
+status: null
+tanggal_penetapan: '1999-01-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_7_1999_1999-01-27
+  kind: asli
+  source: dataset
+  date: '1999-01-27'
+  date_basis: tanggal_penetapan
+  text: pp_7_1999_1999-01-27.txt
+  pasal_count: 27
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9f983ae9d8dca75eb2b7442c9384265b092e2b27552d518e6a8aa6f9a637bd52
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9f983ae9d8dca75eb2b7442c9384265b092e2b27552d518e6a8aa6f9a637bd52
+  source_title: PP_No._7_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 56
+  status: none_known

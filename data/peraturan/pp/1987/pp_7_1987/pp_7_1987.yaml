@@ -1,0 +1,39 @@
+id: pp_7_1987
+akn: /akn/id/act/pp/1987/7
+type: pp
+number: '7'
+year: 1987
+title: Peraturan Pemerintah Nomor 7 Tahun 1987 tentang Penyerahan Sebagian Urusan
+  Pemerintahan Dalam Bidang Kesehatan Kepada Daerah
+tentang: PENYERAHAN SEBAGIAN URUSAN PEMERINTAHAN DALAM BIDANG KESEHATAN KEPADA DAERAH
+short_name: null
+status: null
+tanggal_penetapan: '1987-02-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_7_1987_1987-02-04
+  kind: asli
+  source: dataset
+  date: '1987-02-04'
+  date_basis: tanggal_penetapan
+  text: pp_7_1987_1987-02-04.txt
+  pasal_count: 25
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f81e0873cfa482f849d99202035ad90a3edfd5f5b63f83c2a1c16b420acdbfc9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f81e0873cfa482f849d99202035ad90a3edfd5f5b63f83c2a1c16b420acdbfc9
+  source_title: PP_NO_7_TH_1987
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 45
+  status: none_known

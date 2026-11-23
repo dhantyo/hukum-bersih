@@ -1,0 +1,40 @@
+id: pp_24_1991
+akn: /akn/id/act/pp/1991/24
+type: pp
+number: '24'
+year: 1991
+title: Peraturan Pemerintah Nomor 24 Tahun 1991 tentang Penyelenggaraan Telekomunikasi
+tentang: PENYELENGGARAAN TELEKOMUNIKASI
+short_name: null
+status: dicabut
+tanggal_penetapan: '1991-04-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_24_1991_1991-04-20
+  kind: asli
+  source: dataset
+  date: '1991-04-20'
+  date_basis: tanggal_penetapan
+  text: pp_24_1991_1991-04-20.txt
+  pasal_count: 38
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0e19fdbcc80dcc75a1eb85712ad6004354fd0678d72b2c30bc6e9f808b0dd737
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0e19fdbcc80dcc75a1eb85712ad6004354fd0678d72b2c30bc6e9f808b0dd737
+  source_title: PP_NO_24_TH_1991
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 66
+  status: revoked
+  revoked_by:
+  - sha256:a2b70be0825d8bdcb56b4cdca2ff7f78f44203edd52e0d54dc6a6c84a0a059c6

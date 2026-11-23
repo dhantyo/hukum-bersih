@@ -1,0 +1,42 @@
+id: pp_55_2014
+akn: /akn/id/act/pp/2014/55
+type: pp
+number: '55'
+year: 2014
+title: Peraturan Pemerintah Nomor 55 Tahun 2014 tentang Hak Keuangan Dan Fasilitas
+  Hakim Agung Dan Hakim Konstitusi
+tentang: HAK KEUANGAN DAN FASILITAS HAKIM AGUNG DAN HAKIM KONSTITUSI
+short_name: null
+status: diubah
+tanggal_penetapan: '2014-07-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_55_2014_2014-07-07
+  kind: asli
+  source: dataset
+  date: '2014-07-07'
+  date_basis: tanggal_penetapan
+  text: pp_55_2014_2014-07-07.txt
+  pasal_count: 16
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e5a9d185cf27b1a5304ab542c66663468e18a39d71560e03fad57ca75f534265
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e5a9d185cf27b1a5304ab542c66663468e18a39d71560e03fad57ca75f534265
+  source_title: PP_Nomor_55_Tahun_2014
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 21
+  status: amended
+  amended_by:
+  - sha256:6d70b061fcb29440daa98b9469202a4c0c579aa86a47d5d09fba464d71b267cc
+  - sha256:fbc03b7efb40c0fd14c7f051756610afa31526e4bf6fe36bc440dd40c959f01a

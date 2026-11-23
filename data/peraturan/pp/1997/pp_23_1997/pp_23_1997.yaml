@@ -1,0 +1,40 @@
+id: pp_23_1997
+akn: /akn/id/act/pp/1997/23
+type: pp
+number: '23'
+year: 1997
+title: Peraturan Pemerintah Nomor 23 Tahun 1997 tentang Pemindahan Sisa Kredit Anggaran
+  Pembangunan Tahun Anggaran 1996/1997 Ke Tahun Anggaran 1997/1998
+tentang: PEMINDAHAN SISA KREDIT ANGGARAN PEMBANGUNAN TAHUN ANGGARAN 1996/1997 KE TAHUN
+  ANGGARAN 1997/1998
+short_name: null
+status: null
+tanggal_penetapan: '1997-07-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_23_1997_1997-07-07
+  kind: asli
+  source: dataset
+  date: '1997-07-07'
+  date_basis: tanggal_penetapan
+  text: pp_23_1997_1997-07-07.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f206e02307318a730b3b375126152e297c5a77066841b4063ce0cb3f838b7786
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f206e02307318a730b3b375126152e297c5a77066841b4063ce0cb3f838b7786
+  source_title: PP_No._23_Th_1997
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 28
+  status: none_known

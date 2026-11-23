@@ -1,0 +1,41 @@
+id: pp_9_1999
+akn: /akn/id/act/pp/1999/9
+type: pp
+number: '9'
+year: 1999
+title: Peraturan Pemerintah Nomor 9 Tahun 1999 tentang Penyelenggaraan Perdagangan
+  Komoditi Berjangka
+tentang: PENYELENGGARAAN PERDAGANGAN KOMODITI BERJANGKA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1999-01-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_9_1999_1999-01-27
+  kind: asli
+  source: dataset
+  date: '1999-01-27'
+  date_basis: tanggal_penetapan
+  text: pp_9_1999_1999-01-27.txt
+  pasal_count: 124
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c45403a476956258647464a4042b7b6348fc3bbc17393613786519c8c07e71a7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c45403a476956258647464a4042b7b6348fc3bbc17393613786519c8c07e71a7
+  source_title: PP_No._9_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 220
+  status: revoked
+  revoked_by:
+  - sha256:e91309fb5cba1fe890db909ea43c72c57f01f4771b507d8bf8ac5265f5f206da

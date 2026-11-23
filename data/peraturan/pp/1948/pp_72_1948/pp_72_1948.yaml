@@ -1,0 +1,39 @@
+id: pp_72_1948
+akn: /akn/id/act/pp/1948/72
+type: pp
+number: '72'
+year: 1948
+title: Peraturan Pemerintah Nomor 72 Tahun 1948 tentang Daerah Hukum Pengadilan Tinggi
+  Di Sumatera
+tentang: DAERAH HUKUM PENGADILAN TINGGI DI SUMATERA
+short_name: null
+status: null
+tanggal_penetapan: '1948-12-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_72_1948_1948-12-06
+  kind: asli
+  source: dataset
+  date: '1948-12-06'
+  date_basis: tanggal_penetapan
+  text: pp_72_1948_1948-12-06.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0c825ef35be208a7e75c84f9d110f84d5b169a1f9a9984c97fdbd941a80dcec5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0c825ef35be208a7e75c84f9d110f84d5b169a1f9a9984c97fdbd941a80dcec5
+  source_title: PP_No_72_Tahun_1948-kumham
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 8
+  status: none_known

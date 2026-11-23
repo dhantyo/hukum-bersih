@@ -1,0 +1,40 @@
+id: pp_1_1985
+akn: /akn/id/act/pp/1985/1
+type: pp
+number: '1'
+year: 1985
+title: Peraturan Pemerintah Nomor 1 Tahun 1985 tentang Penetapan Mulai Berlakunya
+  Undang-Undang Pajak Pertambahan Nilai 1984 Presiden Republik Indonesia
+tentang: PENETAPAN MULAI BERLAKUNYA UNDANG-UNDANG PAJAK PERTAMBAHAN NILAI 1984 Presiden
+  Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1985-04-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_1_1985_1985-04-01
+  kind: asli
+  source: dataset
+  date: '1985-04-01'
+  date_basis: tanggal_penetapan
+  text: pp_1_1985_1985-04-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1eff6b5bc6ad358b543916773d7b4c3c6a0487cdc541be280e007d9f2683b9da
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1eff6b5bc6ad358b543916773d7b4c3c6a0487cdc541be280e007d9f2683b9da
+  source_title: PP_NO_1_TH_1985
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

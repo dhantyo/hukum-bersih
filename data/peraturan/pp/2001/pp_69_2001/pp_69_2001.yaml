@@ -1,0 +1,40 @@
+id: pp_69_2001
+akn: /akn/id/act/pp/2001/69
+type: pp
+number: '69'
+year: 2001
+title: Peraturan Pemerintah Nomor 69 Tahun 2001 tentang Kepelabuhanan
+tentang: KEPELABUHANAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-10-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_69_2001_2001-10-17
+  kind: asli
+  source: dataset
+  date: '2001-10-17'
+  date_basis: tanggal_penetapan
+  text: pp_69_2001_2001-10-17.txt
+  pasal_count: 79
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3a37a929b4372a36bcf010222a377912691516d0f4fd935f2d163d81b0b1e6ec
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3a37a929b4372a36bcf010222a377912691516d0f4fd935f2d163d81b0b1e6ec
+  source_title: PP_NO_69_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 132
+  status: revoked
+  revoked_by:
+  - sha256:458ce79c8c1d902093611cf1ecbe44c5a89cc1193a3695bd5565995e207e4225

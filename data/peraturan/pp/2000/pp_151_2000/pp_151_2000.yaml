@@ -1,0 +1,40 @@
+id: pp_151_2000
+akn: /akn/id/act/pp/2000/151
+type: pp
+number: '151'
+year: 2000
+title: Peraturan Pemerintah Nomor 151 Tahun 2000 tentang Tatacara Pemilihan, Pengesahan,
+  Dan Pemberhentian Kepala Daerah Dan Wakil Kepala Daerah
+tentang: TATACARA PEMILIHAN, PENGESAHAN, DAN PEMBERHENTIAN KEPALA DAERAH DAN WAKIL
+  KEPALA DAERAH
+short_name: null
+status: null
+tanggal_penetapan: '2000-12-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_151_2000_2000-12-26
+  kind: asli
+  source: dataset
+  date: '2000-12-26'
+  date_basis: tanggal_penetapan
+  text: pp_151_2000_2000-12-26.txt
+  pasal_count: 42
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2871250bd6f25abf83d6cb9f0fd300c4ce5d1a0e5a479ede5318d7ba4402082f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2871250bd6f25abf83d6cb9f0fd300c4ce5d1a0e5a479ede5318d7ba4402082f
+  source_title: PP_No.151_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 66
+  status: none_known

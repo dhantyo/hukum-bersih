@@ -1,0 +1,43 @@
+id: pp_6_2002
+akn: /akn/id/act/pp/2002/6
+type: pp
+number: '6'
+year: 2002
+title: Peraturan Pemerintah Nomor 6 Tahun 2002 tentang Pajak Penghasilan Atas Bunga
+  Dan Diskonto Obligasi Yang Diperdagangkan Dan/Atau Dilaporkan Perdagangannya Di
+  Bursa Efek
+tentang: PAJAK PENGHASILAN ATAS BUNGA DAN DISKONTO OBLIGASI YANG DIPERDAGANGKAN DAN/ATAU
+  DILAPORKAN PERDAGANGANNYA DI BURSA EFEK
+short_name: null
+status: dicabut
+tanggal_penetapan: '2002-05-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_6_2002_2002-05-01
+  kind: asli
+  source: dataset
+  date: '2002-05-01'
+  date_basis: tanggal_penetapan
+  text: pp_6_2002_2002-05-01.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:db42758079f78c5313cc583fc39a341ca9a286c53cdc45eb963c566ca075f000
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:db42758079f78c5313cc583fc39a341ca9a286c53cdc45eb963c566ca075f000
+  source_title: PP_No.6_TH_2002
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 16
+  status: revoked
+  revoked_by:
+  - sha256:9a1a33db0bdf19e98526d5c52c47590fdd2ecce6253d3d7b9895f00149074c87

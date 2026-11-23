@@ -1,0 +1,40 @@
+id: pp_4_1994
+akn: /akn/id/act/pp/1994/4
+type: pp
+number: '4'
+year: 1994
+title: Peraturan Pemerintah Nomor 4 Tahun 1994 tentang Persyaratan Dan Tata Cara Pengesahan
+  Akta Pendirian Dan Perubahan Anggaran Dasar Koperasi
+tentang: PERSYARATAN DAN TATA CARA PENGESAHAN AKTA PENDIRIAN DAN PERUBAHAN ANGGARAN
+  DASAR KOPERASI
+short_name: null
+status: null
+tanggal_penetapan: '1994-03-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_4_1994_1994-03-02
+  kind: asli
+  source: dataset
+  date: '1994-03-02'
+  date_basis: tanggal_penetapan
+  text: pp_4_1994_1994-03-02.txt
+  pasal_count: 21
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3aa48f247d2e54ac69817919272a19bf165d1818b053a4141d23af09cc1f503f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3aa48f247d2e54ac69817919272a19bf165d1818b053a4141d23af09cc1f503f
+  source_title: PP_No._4_Th_1994
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 46
+  status: none_known

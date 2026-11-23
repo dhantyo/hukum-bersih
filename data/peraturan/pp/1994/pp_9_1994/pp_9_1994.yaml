@@ -1,0 +1,41 @@
+id: pp_9_1994
+akn: /akn/id/act/pp/1994/9
+type: pp
+number: '9'
+year: 1994
+title: Peraturan Pemerintah Nomor 9 Tahun 1994 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt.
+  Adhi Karya
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT. ADHI KARYA
+short_name: null
+status: null
+tanggal_penetapan: '1994-03-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_9_1994_1994-03-18
+  kind: asli
+  source: dataset
+  date: '1994-03-18'
+  date_basis: tanggal_penetapan
+  text: pp_9_1994_1994-03-18.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9313bdac9ce7082075af56f73d87506d8c5c97e0919607fb39e4f4544eb10544
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9313bdac9ce7082075af56f73d87506d8c5c97e0919607fb39e4f4544eb10544
+  source_title: PP_No._9_Th_1994
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

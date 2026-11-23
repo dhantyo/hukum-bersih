@@ -1,0 +1,41 @@
+id: pp_29_1988
+akn: /akn/id/act/pp/1988/29
+type: pp
+number: '29'
+year: 1988
+title: Peraturan Pemerintah Nomor 29 Tahun 1988 tentang Perubahan Atas Pasal 16 Peraturan
+  Pemerintah Nomor 22 Tahun 1985 Tentang Pelaksanaan Undang-Undang Pajak Pertambahan
+  Nilai 1984 Presiden Republik Indonesia
+tentang: PERUBAHAN ATAS PASAL 16 PERATURAN PEMERINTAH NOMOR 22 TAHUN 1985 TENTANG
+  PELAKSANAAN UNDANG-UNDANG PAJAK PERTAMBAHAN NILAI 1984 Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1989-01-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_29_1988_1989-01-15
+  kind: asli
+  source: dataset
+  date: '1989-01-15'
+  date_basis: tanggal_penetapan
+  text: pp_29_1988_1989-01-15.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d60fbf4f386eae91b6856d4015bcb92cd864ed72aae400394b57fc9c03debdc8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d60fbf4f386eae91b6856d4015bcb92cd864ed72aae400394b57fc9c03debdc8
+  source_title: PP_NO_29_TH_1988
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

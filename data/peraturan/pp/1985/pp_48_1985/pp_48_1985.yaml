@@ -1,0 +1,43 @@
+id: pp_48_1985
+akn: /akn/id/act/pp/1985/48
+type: pp
+number: '48'
+year: 1985
+title: Peraturan Pemerintah Nomor 48 Tahun 1985 tentang Pengalihan Bentuk Perusahaan
+  Negara Penerbitan Dan Percetakan Balai Pustaka Menjadi Perusahaan Umum (Perum) Penerbitan
+  Dan Percetakan Balai Pustaka
+tentang: PENGALIHAN BENTUK PERUSAHAAN NEGARA PENERBITAN DAN PERCETAKAN BALAI PUSTAKA
+  MENJADI PERUSAHAAN UMUM (PERUM) PENERBITAN DAN PERCETAKAN BALAI PUSTAKA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1985-12-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_48_1985_1985-12-28
+  kind: asli
+  source: dataset
+  date: '1985-12-28'
+  date_basis: tanggal_penetapan
+  text: pp_48_1985_1985-12-28.txt
+  pasal_count: 56
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:155d34a58bf1139d6eaa4d14dba1c9412323bbfee8765c9d25d460b15ea4fe77
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:155d34a58bf1139d6eaa4d14dba1c9412323bbfee8765c9d25d460b15ea4fe77
+  source_title: PP_NO_48_TH_1985
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 71
+  status: revoked
+  revoked_by:
+  - sha256:607b09ff840b50c6bec0cc4c24bb230592e3212218afa0c4a463daed2fe0dedf

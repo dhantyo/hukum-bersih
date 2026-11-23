@@ -1,0 +1,40 @@
+id: pp_15_2009
+akn: /akn/id/act/pp/2009/15
+type: pp
+number: '15'
+year: 2009
+title: Peraturan Pemerintah Nomor 15 Tahun 2009 tentang Pajak Penghasilan Atas Bunga
+  Simpanan Yang Dibayarkan Oleh Koperasi Kepada Anggota Koperasi Orang Pribadi
+tentang: PAJAK PENGHASILAN ATAS BUNGA SIMPANAN YANG DIBAYARKAN OLEH KOPERASI KEPADA
+  ANGGOTA KOPERASI ORANG PRIBADI
+short_name: null
+status: null
+tanggal_penetapan: '2009-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_15_2009_2009-01-01
+  kind: asli
+  source: dataset
+  date: '2009-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_15_2009_2009-01-01.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8ed253e237ece898ac7e5813e323e0a68a4ae3b5158774b9e1fe68908ea0d086
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8ed253e237ece898ac7e5813e323e0a68a4ae3b5158774b9e1fe68908ea0d086
+  source_title: PP_No_15_2009
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: none_known

@@ -1,0 +1,42 @@
+id: pp_5_1991
+akn: /akn/id/act/pp/1991/5
+type: pp
+number: '5'
+year: 1991
+title: Peraturan Pemerintah Nomor 5 Tahun 1991 tentang Penyertaan Modal Negara Republik
+  Indonesia Untuk Pendirian Perusahaan Perseroan (Persero) Pt. Perkebunan Xxxii
+tentang: PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA UNTUK PENDIRIAN PERUSAHAAN PERSEROAN
+  (PERSERO) PT. PERKEBUNAN XXXII
+short_name: null
+status: dicabut
+tanggal_penetapan: '1991-01-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_5_1991_1991-01-05
+  kind: asli
+  source: dataset
+  date: '1991-01-05'
+  date_basis: tanggal_penetapan
+  text: pp_5_1991_1991-01-05.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e678ca6c12d86d8cadf39ace6d2ce59fd68b2985bb79bb4e17840cc9526ba601
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e678ca6c12d86d8cadf39ace6d2ce59fd68b2985bb79bb4e17840cc9526ba601
+  source_title: PP_NO_5_TH_1991
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:66172a836e1f17b22a0aae9201598f1476111123ce5156e0de5addbbcb4f5c67

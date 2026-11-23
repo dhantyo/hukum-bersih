@@ -1,0 +1,38 @@
+id: pp_24_1997
+akn: /akn/id/act/pp/1997/24
+type: pp
+number: '24'
+year: 1997
+title: Peraturan Pemerintah Nomor 24 Tahun 1997 tentang Pendaftaran Tanah
+tentang: PENDAFTARAN TANAH
+short_name: null
+status: null
+tanggal_penetapan: '1997-07-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_24_1997_1997-07-08
+  kind: asli
+  source: dataset
+  date: '1997-07-08'
+  date_basis: tanggal_penetapan
+  text: pp_24_1997_1997-07-08.txt
+  pasal_count: 66
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d7a410b93fc977ca26c973c800cb3b3c1cd81911c2cc7d2b5b50e21ff450ea56
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d7a410b93fc977ca26c973c800cb3b3c1cd81911c2cc7d2b5b50e21ff450ea56
+  source_title: PP_No._24_Th_1997
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 148
+  status: none_known

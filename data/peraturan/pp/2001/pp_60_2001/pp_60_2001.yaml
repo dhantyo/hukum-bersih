@@ -1,0 +1,42 @@
+id: pp_60_2001
+akn: /akn/id/act/pp/2001/60
+type: pp
+number: '60'
+year: 2001
+title: Peraturan Pemerintah Nomor 60 Tahun 2001 tentang Perubahan Atas Peraturan Pemerintah
+  Nomor 145 Tahun 2000 Tentang Kelompok Barang Kena Pajak Yang Tergolong Mewah Yang
+  Dikenakan Pajak Penjualan Atas Barang Mewah
+tentang: PERUBAHAN ATAS PERATURAN PEMERINTAH NOMOR 145 TAHUN 2000 TENTANG KELOMPOK
+  BARANG KENA PAJAK YANG TERGOLONG MEWAH YANG DIKENAKAN PAJAK PENJUALAN ATAS BARANG
+  MEWAH
+short_name: null
+status: null
+tanggal_penetapan: '2001-09-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_60_2001_2001-09-01
+  kind: asli
+  source: dataset
+  date: '2001-09-01'
+  date_basis: tanggal_penetapan
+  text: pp_60_2001_2001-09-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0988f33c8e5545443a486aca9a38abbd9892294d33ba007551bd655f6a2e6497
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0988f33c8e5545443a486aca9a38abbd9892294d33ba007551bd655f6a2e6497
+  source_title: PP_NO_60_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: none_known

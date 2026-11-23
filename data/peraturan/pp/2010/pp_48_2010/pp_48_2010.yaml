@@ -1,0 +1,42 @@
+id: pp_48_2010
+akn: /akn/id/act/pp/2010/48
+type: pp
+number: '48'
+year: 2010
+title: Peraturan Pemerintah Nomor 48 Tahun 2010 tentang Jenis Dan Tarif Atas Jenis
+  Penerimaan Negara Bukan Pajak Yang Berlaku Pada Badan Pengawas Obat Dan Makanan
+tentang: JENIS DAN TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA
+  BADAN PENGAWAS OBAT DAN MAKANAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2010-05-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_48_2010_2010-05-25
+  kind: asli
+  source: dataset
+  date: '2010-05-25'
+  date_basis: tanggal_penetapan
+  text: pp_48_2010_2010-05-25.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e342515ec0b91848fc450596a1617f8d4a25eb3149d76f091e5137a526eb56ae
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e342515ec0b91848fc450596a1617f8d4a25eb3149d76f091e5137a526eb56ae
+  source_title: PP_48_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 58
+  status: revoked
+  revoked_by:
+  - sha256:3e15159476d8d5799deeb8b16e2e5b1cf13af0581249292f02fc227a13d74aa4

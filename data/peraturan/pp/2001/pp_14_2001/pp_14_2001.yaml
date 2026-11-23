@@ -1,0 +1,31 @@
+id: pp_14_2001
+akn: /akn/id/act/pp/2001/14
+type: pp
+number: '14'
+year: 2001
+title: Peraturan Pemerintah Nomor 14 Tahun 2001 tentang Pengalihan Bentuk Perusahaan
+  Umum Kehutanan Negara (Perum Perhutani) Menjadi Perusahaan Perseroan (Persero)
+tentang: PENGALIHAN BENTUK PERUSAHAAN UMUM KEHUTANAN NEGARA (PERUM PERHUTANI) MENJADI
+  PERUSAHAAN PERSEROAN (PERSERO)
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-03-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:442ba228d1b5664af0bfb13517269398252e771ac651de195098d1777423255e
+  source_title: PP_NO_14_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: revoked
+  revoked_by:
+  - sha256:ff7a133e03d3d989c2d5ca1b1ddf37551b98b96ab957a7509fc2c8d6ce90e184
+parse_error: 'v13: rebuilt text has 4 pasal, the dataset lists 7'

@@ -1,0 +1,41 @@
+id: pp_5_2015
+akn: /akn/id/act/pp/2015/5
+type: pp
+number: '5'
+year: 2015
+title: Peraturan Pemerintah Nomor 5 Tahun 2015 tentang Jenis Dan Tarif Atas Jenis
+  Penerimaan Negara Bukan Pajak Yang Berlaku Pada Lembaga Penyiaran Publik Radio Republik
+  Indonesia
+tentang: JENIS DAN TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA
+  LEMBAGA PENYIARAN PUBLIK RADIO REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2015-02-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_5_2015_2015-02-24
+  kind: asli
+  source: dataset
+  date: '2015-02-24'
+  date_basis: tanggal_penetapan
+  text: pp_5_2015_2015-02-24.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6ca034c1f2798ffa6856e11c1d81cb71dcaf43f5f709b88fe8fd3ea6fbedebaa
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6ca034c1f2798ffa6856e11c1d81cb71dcaf43f5f709b88fe8fd3ea6fbedebaa
+  source_title: PP_Nomor_5_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 101
+  status: none_known

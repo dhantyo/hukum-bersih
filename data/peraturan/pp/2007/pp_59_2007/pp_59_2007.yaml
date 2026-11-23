@@ -1,0 +1,41 @@
+id: pp_59_2007
+akn: /akn/id/act/pp/2007/59
+type: pp
+number: '59'
+year: 2007
+title: Peraturan Pemerintah Nomor 59 Tahun 2007 tentang Kegiatan Usaha Panas Bumi
+tentang: KEGIATAN USAHA PANAS BUMI
+short_name: null
+status: diubah
+tanggal_penetapan: '2007-11-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_59_2007_2007-11-05
+  kind: asli
+  source: dataset
+  date: '2007-11-05'
+  date_basis: tanggal_penetapan
+  text: pp_59_2007_2007-11-05.txt
+  pasal_count: 86
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c727eb44ccf45214318c76e043e795b15db6feedfa4b35151d92165e032db2c9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c727eb44ccf45214318c76e043e795b15db6feedfa4b35151d92165e032db2c9
+  source_title: PP_59_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 146
+  status: amended
+  amended_by:
+  - sha256:d1fcd75f1810eebcc157488b9206dc5f75f829da222cf7c7325a8a1045c3f73a
+  - sha256:ed40afc6ceb754f459655aa5d3da7673916eed7422b1b60a426502a9c1ba2d95

@@ -1,0 +1,40 @@
+id: pp_18_1947
+akn: /akn/id/act/pp/1947/18
+type: pp
+number: '18'
+year: 1947
+title: Peraturan Pemerintah Nomor 18 Tahun 1947 tentang Mengadakan Perubahan Dan Tambahan
+  Lembaran Dalam Peraturan Pemerintah Nomor 7 Tahun 1947 Dari Hal Permohonan Grasi
+tentang: MENGADAKAN PERUBAHAN DAN TAMBAHAN LEMBARAN DALAM PERATURAN PEMERINTAH NOMOR
+  7 TAHUN 1947 DARI HAL PERMOHONAN GRASI
+short_name: null
+status: null
+tanggal_penetapan: '1947-07-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_18_1947_1947-07-25
+  kind: asli
+  source: dataset
+  date: '1947-07-25'
+  date_basis: tanggal_penetapan
+  text: pp_18_1947_1947-07-25.txt
+  pasal_count: 1
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c93093d526917a1b5b94820a87d1e82ac75539b641e5a620536a37a796726ff7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c93093d526917a1b5b94820a87d1e82ac75539b641e5a620536a37a796726ff7
+  source_title: PP_No.18_Tahun_1947
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

@@ -1,0 +1,29 @@
+id: pp_7_1995
+akn: /akn/id/act/pp/1995/7
+type: pp
+number: '7'
+year: 1995
+title: Peraturan Pemerintah Nomor 7 Tahun 1995 tentang Perubahan Tarif Bea Meterai
+tentang: PERUBAHAN TARIF BEA METERAI
+short_name: null
+status: dicabut
+tanggal_penetapan: '1995-04-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:dd3421d98543b1b395056d3f3cead1f190f3b3774727adf11b0ad99d337680fd
+  source_title: PP_No._7_Th_1995
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:b4e45ec02cc6f992d11cdf0f5589ab4216acebde371253286c086d7e5e81c5e4
+parse_error: 'v13: rebuilt text has 5 pasal, the dataset lists 6'

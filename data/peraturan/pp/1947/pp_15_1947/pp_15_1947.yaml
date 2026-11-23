@@ -1,0 +1,39 @@
+id: pp_15_1947
+akn: /akn/id/act/pp/1947/15
+type: pp
+number: '15'
+year: 1947
+title: Peraturan Pemerintah Nomor 15 Tahun 1947 tentang Penyelenggaraan Tata Usaha
+  Keuangan Di Tiap-Tiap Kementerian
+tentang: PENYELENGGARAAN TATA USAHA KEUANGAN DI TIAP-TIAP KEMENTERIAN
+short_name: null
+status: null
+tanggal_penetapan: '1947-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_15_1947_1947-01-01
+  kind: asli
+  source: dataset
+  date: '1947-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_15_1947_1947-01-01.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:62808d3cca9b7bfc6a1dd1ae1c040a37c0cab6cac2432ebc03ef4531b9ff9965
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:62808d3cca9b7bfc6a1dd1ae1c040a37c0cab6cac2432ebc03ef4531b9ff9965
+  source_title: PP_No.15_Tahun_1947
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 8
+  status: none_known

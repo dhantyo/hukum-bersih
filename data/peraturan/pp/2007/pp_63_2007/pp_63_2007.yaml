@@ -1,0 +1,42 @@
+id: pp_63_2007
+akn: /akn/id/act/pp/2007/63
+type: pp
+number: '63'
+year: 2007
+title: Peraturan Pemerintah Nomor 63 Tahun 2007 tentang Jenis Dan Tarif Atas Jenis
+  Penerimaan Negara Bukan Pajak Yang Berlaku Pada Departemen Perindustrian
+tentang: JENIS DAN TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA
+  DEPARTEMEN PERINDUSTRIAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2007-11-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_63_2007_2007-11-16
+  kind: asli
+  source: dataset
+  date: '2007-11-16'
+  date_basis: tanggal_penetapan
+  text: pp_63_2007_2007-11-16.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c88af971096099e9ff11a7144cda39078a8b21ca7662dfc539b00c9b7ad19c56
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c88af971096099e9ff11a7144cda39078a8b21ca7662dfc539b00c9b7ad19c56
+  source_title: PP_63_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 273
+  status: revoked
+  revoked_by:
+  - sha256:4bff9bd39eed09954e23dfc9ff0aab23ab6f3b2153a7adb921a5c91f7b46e9a5

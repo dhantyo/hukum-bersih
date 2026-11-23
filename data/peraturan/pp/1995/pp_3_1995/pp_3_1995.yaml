@@ -1,0 +1,40 @@
+id: pp_3_1995
+akn: /akn/id/act/pp/1995/3
+type: pp
+number: '3'
+year: 1995
+title: Peraturan Pemerintah Nomor 3 Tahun 1995 tentang Perubahan Batas Wilayah Kotamadya
+  Daerah Tingkat Ii Sukabumi Dan Kabupaten Daerah Tingkat Ii Sukabumi
+tentang: PERUBAHAN BATAS WILAYAH KOTAMADYA DAERAH TINGKAT II SUKABUMI DAN KABUPATEN
+  DAERAH TINGKAT II SUKABUMI
+short_name: null
+status: null
+tanggal_penetapan: '1995-02-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_3_1995_1995-02-06
+  kind: asli
+  source: dataset
+  date: '1995-02-06'
+  date_basis: tanggal_penetapan
+  text: pp_3_1995_1995-02-06.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9733f8fd8e71134170194e33bedc9238722464851c159e0913b75a782fab2add
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9733f8fd8e71134170194e33bedc9238722464851c159e0913b75a782fab2add
+  source_title: PP_No._3_Th_1995
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 15
+  status: none_known

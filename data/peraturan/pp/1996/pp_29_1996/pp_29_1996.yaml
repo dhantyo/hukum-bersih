@@ -1,0 +1,43 @@
+id: pp_29_1996
+akn: /akn/id/act/pp/1996/29
+type: pp
+number: '29'
+year: 1996
+title: Peraturan Pemerintah Nomor 29 Tahun 1996 tentang Pembayaran Pajak Penghasilan
+  Atas Penghasilan Dari Persewaan Tanah Dan/Atau Bangunan
+tentang: PEMBAYARAN PAJAK PENGHASILAN ATAS PENGHASILAN DARI PERSEWAAN TANAH DAN/ATAU
+  BANGUNAN
+short_name: null
+status: diubah
+tanggal_penetapan: '1996-04-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_29_1996_1996-04-18
+  kind: asli
+  source: dataset
+  date: '1996-04-18'
+  date_basis: tanggal_penetapan
+  text: pp_29_1996_1996-04-18.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a52541d1133a4f7d0de4d66204600b81ca43f24b2f4fcd1148785be286006448
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a52541d1133a4f7d0de4d66204600b81ca43f24b2f4fcd1148785be286006448
+  source_title: PP_No._29_Th_1996
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: amended
+  amended_by:
+  - sha256:71cdc19bc50a4dacaedcee5d9b49905e479a4d8a9e18226f0376e86446ae2bc5
+  - sha256:ce4624ed072fe054535d3a936104f29a4ae0a24f7a7930fbe9fe54e53765570c

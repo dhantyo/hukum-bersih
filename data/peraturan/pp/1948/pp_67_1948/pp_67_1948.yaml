@@ -1,0 +1,40 @@
+id: pp_67_1948
+akn: /akn/id/act/pp/1948/67
+type: pp
+number: '67'
+year: 1948
+title: Peraturan Pemerintah Nomor 67 Tahun 1948 tentang Mengatur Hal Permohonan Grasi
+  Dengan Menarik Kembali Segala Peraturan Mengenai Soal Ini Yang Sampai Kini Berlaku
+tentang: MENGATUR HAL PERMOHONAN GRASI DENGAN MENARIK KEMBALI SEGALA PERATURAN MENGENAI
+  SOAL INI YANG SAMPAI KINI BERLAKU
+short_name: null
+status: null
+tanggal_penetapan: '1948-11-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_67_1948_1948-11-15
+  kind: asli
+  source: dataset
+  date: '1948-11-15'
+  date_basis: tanggal_penetapan
+  text: pp_67_1948_1948-11-15.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:85a9857dfeb37e66b458ff4414cb36646f79ab033ba366d9c7775660ed1af88b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:85a9857dfeb37e66b458ff4414cb36646f79ab033ba366d9c7775660ed1af88b
+  source_title: PP_No_67_Tahun_1948-kumham
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 14
+  status: none_known

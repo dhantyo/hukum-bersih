@@ -1,0 +1,39 @@
+id: pp_54_1991
+akn: /akn/id/act/pp/1991/54
+type: pp
+number: '54'
+year: 1991
+title: Peraturan Pemerintah Nomor 54 Tahun 1991 tentang Pembentukan Kota Administratif
+  Banjar
+tentang: PEMBENTUKAN KOTA ADMINISTRATIF BANJAR
+short_name: null
+status: null
+tanggal_penetapan: '1991-10-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_54_1991_1991-10-02
+  kind: asli
+  source: dataset
+  date: '1991-10-02'
+  date_basis: tanggal_penetapan
+  text: pp_54_1991_1991-10-02.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:cf606ab28e956c9b70a70d33764158498343afcf4b21be6ec0273bd7fac0c373
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:cf606ab28e956c9b70a70d33764158498343afcf4b21be6ec0273bd7fac0c373
+  source_title: PP_NO_54_TH_1991
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 17
+  status: none_known

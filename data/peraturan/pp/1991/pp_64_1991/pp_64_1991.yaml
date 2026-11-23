@@ -1,0 +1,39 @@
+id: pp_64_1991
+akn: /akn/id/act/pp/1991/64
+type: pp
+number: '64'
+year: 1991
+title: Peraturan Pemerintah Nomor 64 Tahun 1991 tentang Pembentukan Kota Administratif
+  Langsa
+tentang: PEMBENTUKAN KOTA ADMINISTRATIF LANGSA
+short_name: null
+status: null
+tanggal_penetapan: '1991-10-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_64_1991_1991-10-22
+  kind: asli
+  source: dataset
+  date: '1991-10-22'
+  date_basis: tanggal_penetapan
+  text: pp_64_1991_1991-10-22.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:eaf57206b09c4fab999156d76b5d1471898d1639d26364b15fc094d6606f2353
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:eaf57206b09c4fab999156d76b5d1471898d1639d26364b15fc094d6606f2353
+  source_title: PP_NO_64_TH_1991
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 16
+  status: none_known

@@ -1,0 +1,43 @@
+id: pp_8_2010
+akn: /akn/id/act/pp/2010/8
+type: pp
+number: '8'
+year: 2010
+title: Peraturan Pemerintah Nomor 8 Tahun 2010 tentang Perubahan Ketiga Atas Peraturan
+  Pemerintah Nomor 15 Tahun 2001 Tentang Pengalihan Status Anggota Tentara Nasional
+  Indonesia Dan Anggota Kepolisian Negara Republik Indonesia Menjadi Pegawai Negeri
+  Sipil Untuk Menduduki Jabatan Struktural
+tentang: PERUBAHAN KETIGA ATAS PERATURAN PEMERINTAH NOMOR 15 TAHUN 2001 TENTANG PENGALIHAN
+  STATUS ANGGOTA TENTARA NASIONAL INDONESIA DAN ANGGOTA KEPOLISIAN NEGARA REPUBLIK
+  INDONESIA MENJADI PEGAWAI NEGERI SIPIL UNTUK MENDUDUKI JABATAN STRUKTURAL
+short_name: null
+status: null
+tanggal_penetapan: '2010-01-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_8_2010_2010-01-12
+  kind: asli
+  source: dataset
+  date: '2010-01-12'
+  date_basis: tanggal_penetapan
+  text: pp_8_2010_2010-01-12.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8bef04623e428d4de3e79853b234c350437f00afb53b5b4a45f47ad136a88fe3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8bef04623e428d4de3e79853b234c350437f00afb53b5b4a45f47ad136a88fe3
+  source_title: PP_8_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: none_known

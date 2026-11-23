@@ -1,0 +1,41 @@
+id: pp_64_2000
+akn: /akn/id/act/pp/2000/64
+type: pp
+number: '64'
+year: 2000
+title: Peraturan Pemerintah Nomor 64 Tahun 2000 tentang Perizinan Pemanfaatan Tenaga
+  Nuklir
+tentang: PERIZINAN PEMANFAATAN TENAGA NUKLIR
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-08-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_64_2000_2000-08-21
+  kind: asli
+  source: dataset
+  date: '2000-08-21'
+  date_basis: tanggal_penetapan
+  text: pp_64_2000_2000-08-21.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:773a207e3865dfe178d2a9749691d47b801f8b57e9c24c8da78c58d2e4114098
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:773a207e3865dfe178d2a9749691d47b801f8b57e9c24c8da78c58d2e4114098
+  source_title: PP_No.64_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 35
+  status: revoked
+  revoked_by:
+  - sha256:9a7fc1f33b1269e449a0a6ccec2de6812c102332cfd14c0885a694cca48a4209

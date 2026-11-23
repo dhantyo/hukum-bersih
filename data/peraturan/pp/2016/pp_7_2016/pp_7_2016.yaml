@@ -1,0 +1,41 @@
+id: pp_7_2016
+akn: /akn/id/act/pp/2016/7
+type: pp
+number: '7'
+year: 2016
+title: Peraturan Pemerintah Nomor 7 Tahun 2016 tentang Perubahan Modal Dasar Perseroan
+  Terbatas
+tentang: PERUBAHAN MODAL DASAR PERSEROAN TERBATAS
+short_name: null
+status: dicabut
+tanggal_penetapan: '2007-08-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_7_2016_2007-08-16
+  kind: asli
+  source: dataset
+  date: '2007-08-16'
+  date_basis: tanggal_penetapan
+  text: pp_7_2016_2007-08-16.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:332b6d0cc2a3b968e42039d71febeb0662942b6e2d3700a25ef7386a45a1a4e6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:332b6d0cc2a3b968e42039d71febeb0662942b6e2d3700a25ef7386a45a1a4e6
+  source_title: PP_Nomor_7_Tahun_2016
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:5b90383c19287843314db7a3b7ae1122ba73f64f3ef4ff8143ac05e80000c220

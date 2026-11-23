@@ -1,0 +1,41 @@
+id: pp_111_2012
+akn: /akn/id/act/pp/2012/111
+type: pp
+number: '111'
+year: 2012
+title: Peraturan Pemerintah Nomor 111 Tahun 2012 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Pindad
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT PINDAD
+short_name: null
+status: null
+tanggal_penetapan: '2012-12-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_111_2012_2012-12-24
+  kind: asli
+  source: dataset
+  date: '2012-12-24'
+  date_basis: tanggal_penetapan
+  text: pp_111_2012_2012-12-24.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:febc7ed830491299aa738bd20f4bdff00665a390aaa0c678d2bf54cc0a0d0cd1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:febc7ed830491299aa738bd20f4bdff00665a390aaa0c678d2bf54cc0a0d0cd1
+  source_title: PP_Nomor_111_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

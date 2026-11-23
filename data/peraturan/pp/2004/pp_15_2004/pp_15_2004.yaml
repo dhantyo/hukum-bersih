@@ -1,0 +1,41 @@
+id: pp_15_2004
+akn: /akn/id/act/pp/2004/15
+type: pp
+number: '15'
+year: 2004
+title: Peraturan Pemerintah Nomor 15 Tahun 2004 tentang Perusahaan Umum (Perum) Pembangunan
+  Perumahan Nasional
+tentang: PERUSAHAAN UMUM (PERUM) PEMBANGUNAN PERUMAHAN NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2004-05-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_15_2004_2004-05-10
+  kind: asli
+  source: dataset
+  date: '2004-05-10'
+  date_basis: tanggal_penetapan
+  text: pp_15_2004_2004-05-10.txt
+  pasal_count: 72
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6b73fa9103f6557cc18d84c1b289f14d8412f491e9d0a15413853a18e4b95a48
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6b73fa9103f6557cc18d84c1b289f14d8412f491e9d0a15413853a18e4b95a48
+  source_title: PP_No.15_TH_2004
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 85
+  status: revoked
+  revoked_by:
+  - sha256:5c6edfdddfdc8935beebe5293e24ee49108f797b431e4337a8ff4023cc74c8a9

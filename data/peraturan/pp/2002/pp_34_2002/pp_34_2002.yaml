@@ -1,0 +1,42 @@
+id: pp_34_2002
+akn: /akn/id/act/pp/2002/34
+type: pp
+number: '34'
+year: 2002
+title: Peraturan Pemerintah Nomor 34 Tahun 2002 tentang Tata Hutan Dan Penyusunan
+  Rencana Pengelolaan Hutan, Pemanfaatan Hutan Dan Penggunaan Kawasan Hutan
+tentang: TATA HUTAN DAN PENYUSUNAN RENCANA PENGELOLAAN HUTAN, PEMANFAATAN HUTAN DAN
+  PENGGUNAAN KAWASAN HUTAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2002-06-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_34_2002_2002-06-08
+  kind: asli
+  source: dataset
+  date: '2002-06-08'
+  date_basis: tanggal_penetapan
+  text: pp_34_2002_2002-06-08.txt
+  pasal_count: 100
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bc64de8656d90279684b3970cf3bb74b0f7fccae3ef85c7936749b479754498f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bc64de8656d90279684b3970cf3bb74b0f7fccae3ef85c7936749b479754498f
+  source_title: PP_No.34_TH_2002
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 184
+  status: revoked
+  revoked_by:
+  - sha256:d1f3a10ca448a3b728815448cd75c8e17fdf9ffa74d208df6929833cff27f2d1

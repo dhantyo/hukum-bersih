@@ -1,0 +1,38 @@
+id: pp_14_2010
+akn: /akn/id/act/pp/2010/14
+type: pp
+number: '14'
+year: 2010
+title: Peraturan Pemerintah Nomor 14 Tahun 2010 tentang Pendidikan Kedinasan
+tentang: PENDIDIKAN KEDINASAN
+short_name: null
+status: null
+tanggal_penetapan: '2010-01-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_14_2010_2010-01-22
+  kind: asli
+  source: dataset
+  date: '2010-01-22'
+  date_basis: tanggal_penetapan
+  text: pp_14_2010_2010-01-22.txt
+  pasal_count: 26
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:db29664b2ec4fd92cce2e74a610c296709cdccc9001c4140f022ab660020109c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:db29664b2ec4fd92cce2e74a610c296709cdccc9001c4140f022ab660020109c
+  source_title: PP_14_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 43
+  status: none_known

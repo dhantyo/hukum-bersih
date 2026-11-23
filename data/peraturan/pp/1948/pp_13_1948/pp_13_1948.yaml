@@ -1,0 +1,38 @@
+id: pp_13_1948
+akn: /akn/id/act/pp/1948/13
+type: pp
+number: '13'
+year: 1948
+title: Peraturan Pemerintah Nomor 13 Tahun 1948
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '1948-06-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_13_1948_1948-06-12
+  kind: asli
+  source: dataset
+  date: '1948-06-12'
+  date_basis: tanggal_penetapan
+  text: pp_13_1948_1948-06-12.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:54e2691da61558df4d8128e5b20ac5f8556ba4d3b6946be14ce4cb38547147fc
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:54e2691da61558df4d8128e5b20ac5f8556ba4d3b6946be14ce4cb38547147fc
+  source_title: PP_No_13_Tahun_1948
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 17
+  status: none_known

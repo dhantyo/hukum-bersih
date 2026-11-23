@@ -1,0 +1,39 @@
+id: pp_8_1999
+akn: /akn/id/act/pp/1999/8
+type: pp
+number: '8'
+year: 1999
+title: Peraturan Pemerintah Nomor 8 Tahun 1999 tentang Pemanfaatan Jenis Tumbuhan
+  Dan Satwa Liar
+tentang: PEMANFAATAN JENIS TUMBUHAN DAN SATWA LIAR
+short_name: null
+status: null
+tanggal_penetapan: '1999-01-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_8_1999_1999-01-27
+  kind: asli
+  source: dataset
+  date: '1999-01-27'
+  date_basis: tanggal_penetapan
+  text: pp_8_1999_1999-01-27.txt
+  pasal_count: 68
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3ded44d26a8c17ba9bc3096325d19e6103697629c7c8b94f05b8ed13a2550d1a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3ded44d26a8c17ba9bc3096325d19e6103697629c7c8b94f05b8ed13a2550d1a
+  source_title: PP_No._8_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 109
+  status: none_known

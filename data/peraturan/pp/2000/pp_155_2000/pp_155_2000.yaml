@@ -1,0 +1,30 @@
+id: pp_155_2000
+akn: /akn/id/act/pp/2000/155
+type: pp
+number: '155'
+year: 2000
+title: Peraturan Pemerintah Nomor 155 Tahun 2000 tentang Penetapan Institut Teknologi
+  Bandung Sebagai Badan Hukum Milik Negara
+tentang: PENETAPAN INSTITUT TEKNOLOGI BANDUNG SEBAGAI BADAN HUKUM MILIK NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-12-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:42ce5036bfe67f99190f40152395b71500df4a02730d592f40414d6433af0282
+  source_title: PP_No.155_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 81
+  status: revoked
+  revoked_by:
+  - sha256:37cfc49dd628ebd03f317d5b2d44aa1955986696c44e80d1d56d8c229a0ad091
+parse_error: 'v13: rebuilt text has 8 pasal, the dataset lists 70'

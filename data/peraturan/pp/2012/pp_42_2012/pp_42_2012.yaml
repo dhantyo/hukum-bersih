@@ -1,0 +1,39 @@
+id: pp_42_2012
+akn: /akn/id/act/pp/2012/42
+type: pp
+number: '42'
+year: 2012
+title: Peraturan Pemerintah Nomor 42 Tahun 2012 tentang Jual Beli Tenaga Listrik Lintas
+  Negara
+tentang: JUAL BELI TENAGA LISTRIK LINTAS NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '2012-03-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_42_2012_2012-03-12
+  kind: asli
+  source: dataset
+  date: '2012-03-12'
+  date_basis: tanggal_penetapan
+  text: pp_42_2012_2012-03-12.txt
+  pasal_count: 21
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c2e303782083ac979d5ce83cb4185e5d34321291a7ec85daee1bf8af1351ab0b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c2e303782083ac979d5ce83cb4185e5d34321291a7ec85daee1bf8af1351ab0b
+  source_title: PP_Nomor_42_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 29
+  status: none_known

@@ -1,0 +1,41 @@
+id: pp_13_1984
+akn: /akn/id/act/pp/1984/13
+type: pp
+number: '13'
+year: 1984
+title: Peraturan Pemerintah Nomor 13 Tahun 1984 tentang Penjualan Seluruh Saham Milik
+  Negara Republik Indonesia Pada Perusahaan Perseroan (Persero) Pt. Semen Madura Presiden
+  Republik Indonesia
+tentang: PENJUALAN SELURUH SAHAM MILIK NEGARA REPUBLIK INDONESIA PADA PERUSAHAAN PERSEROAN
+  (PERSERO) PT. SEMEN MADURA Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1984-05-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_13_1984_1984-05-18
+  kind: asli
+  source: dataset
+  date: '1984-05-18'
+  date_basis: tanggal_penetapan
+  text: pp_13_1984_1984-05-18.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2ac417443f75d237eaa6f95a86677bcecb6c62f4566bfbb76b0c989070864e48
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2ac417443f75d237eaa6f95a86677bcecb6c62f4566bfbb76b0c989070864e48
+  source_title: PP_NO_13_TH_1984
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

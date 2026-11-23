@@ -1,0 +1,41 @@
+id: pp_13_1992
+akn: /akn/id/act/pp/1992/13
+type: pp
+number: '13'
+year: 1992
+title: Peraturan Pemerintah Nomor 13 Tahun 1992 tentang Penggabungan Perusahaan Perseroan
+  (Persero) Pt. Dok Dan Galangan Kapal Nusantara Ke Dalam Perusahaan Perseroan (Persero)
+  Pt. Dok Dan Perkapalan Kodja Bahari
+tentang: PENGGABUNGAN PERUSAHAAN PERSEROAN (PERSERO) PT. DOK DAN GALANGAN KAPAL NUSANTARA
+  KE DALAM PERUSAHAAN PERSEROAN (PERSERO) PT. DOK DAN PERKAPALAN KODJA BAHARI
+short_name: null
+status: null
+tanggal_penetapan: '1992-03-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_13_1992_1992-03-16
+  kind: asli
+  source: dataset
+  date: '1992-03-16'
+  date_basis: tanggal_penetapan
+  text: pp_13_1992_1992-03-16.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4a5452b9d9da7aa2c0a078162dc3bc90ed1ccdb0c47aaf36d78852327e95c841
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4a5452b9d9da7aa2c0a078162dc3bc90ed1ccdb0c47aaf36d78852327e95c841
+  source_title: PP_NO_13_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: none_known

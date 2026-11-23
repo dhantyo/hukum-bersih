@@ -1,0 +1,40 @@
+id: pp_67_2005
+akn: /akn/id/act/pp/2005/67
+type: pp
+number: '67'
+year: 2005
+title: Peraturan Pemerintah Nomor 67 Tahun 2005 tentang Perubahan Kedua Atas Peraturan
+  Pemerintah Nomor 28 Tahun 2001 Tentang Peraturan Gaji Anggota Tentara Nasional Indonesia
+tentang: PERUBAHAN KEDUA ATAS PERATURAN PEMERINTAH NOMOR 28 TAHUN 2001 TENTANG PERATURAN
+  GAJI ANGGOTA TENTARA NASIONAL INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2005-12-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_67_2005_2005-12-28
+  kind: asli
+  source: dataset
+  date: '2005-12-28'
+  date_basis: tanggal_penetapan
+  text: pp_67_2005_2005-12-28.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0757233907793159a3e31cb3441df228692011a275a2a6f5b1ecacf279fc7f6c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0757233907793159a3e31cb3441df228692011a275a2a6f5b1ecacf279fc7f6c
+  source_title: PP_NO_67_TH_2005
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: none_known

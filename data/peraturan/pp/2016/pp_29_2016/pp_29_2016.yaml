@@ -1,0 +1,39 @@
+id: pp_29_2016
+akn: /akn/id/act/pp/2016/29
+type: pp
+number: '29'
+year: 2016
+title: Peraturan Pemerintah Nomor 29 Tahun 2016 tentang Perubahan Modal Dasar Perseroan
+  Terbatas
+tentang: PERUBAHAN MODAL DASAR PERSEROAN TERBATAS
+short_name: null
+status: null
+tanggal_penetapan: '2016-07-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_29_2016_2016-07-14
+  kind: asli
+  source: dataset
+  date: '2016-07-14'
+  date_basis: tanggal_penetapan
+  text: pp_29_2016_2016-07-14.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5b90383c19287843314db7a3b7ae1122ba73f64f3ef4ff8143ac05e80000c220
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5b90383c19287843314db7a3b7ae1122ba73f64f3ef4ff8143ac05e80000c220
+  source_title: PP_Nomor_29_Tahun_2016
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: none_known

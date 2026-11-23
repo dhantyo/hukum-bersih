@@ -1,0 +1,39 @@
+id: pp_35_2005
+akn: /akn/id/act/pp/2005/35
+type: pp
+number: '35'
+year: 2005
+title: Peraturan Pemerintah Nomor 35 Tahun 2005 tentang Pungutan Ekspor Atas Barang
+  Ekspor Tertentu
+tentang: PUNGUTAN EKSPOR ATAS BARANG EKSPOR TERTENTU
+short_name: null
+status: null
+tanggal_penetapan: '2005-09-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_35_2005_2005-09-10
+  kind: asli
+  source: dataset
+  date: '2005-09-10'
+  date_basis: tanggal_penetapan
+  text: pp_35_2005_2005-09-10.txt
+  pasal_count: 17
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6b46395699f0093936011953c6a1daaa1470634cb234bc29af202f109e858009
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6b46395699f0093936011953c6a1daaa1470634cb234bc29af202f109e858009
+  source_title: PP_NO_35_TH_2005
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 35
+  status: none_known

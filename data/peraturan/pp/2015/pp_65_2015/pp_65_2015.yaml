@@ -1,0 +1,40 @@
+id: pp_65_2015
+akn: /akn/id/act/pp/2015/65
+type: pp
+number: '65'
+year: 2015
+title: Peraturan Pemerintah Nomor 65 Tahun 2015 tentang Pedoman Pelaksanaan Diversi
+  Dan Penanganan Anak Yang Belum Berumur 12 (Dua Belas) Tahun
+tentang: PEDOMAN PELAKSANAAN DIVERSI DAN PENANGANAN ANAK YANG BELUM BERUMUR 12 (DUA
+  BELAS) TAHUN
+short_name: null
+status: null
+tanggal_penetapan: '2015-08-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_65_2015_2015-08-19
+  kind: asli
+  source: dataset
+  date: '2015-08-19'
+  date_basis: tanggal_penetapan
+  text: pp_65_2015_2015-08-19.txt
+  pasal_count: 92
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1eee6a3b8b6b8ff55f1c6d7c90b5ba6970f96dd92dabcb5597196550f2e18657
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1eee6a3b8b6b8ff55f1c6d7c90b5ba6970f96dd92dabcb5597196550f2e18657
+  source_title: PP_Nomor_65_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 117
+  status: none_known

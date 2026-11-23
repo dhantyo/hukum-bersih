@@ -1,0 +1,40 @@
+id: pp_20_2014
+akn: /akn/id/act/pp/2014/20
+type: pp
+number: '20'
+year: 2014
+title: Peraturan Pemerintah Nomor 20 Tahun 2014 tentang Jenis Dan Tarif Atas Jenis
+  Penerimaan Negara Bukan Pajak Yang Berlaku Pada Badan Pengawasan Keuangan Dan Pembangunan
+tentang: JENIS DAN TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA
+  BADAN PENGAWASAN KEUANGAN DAN PEMBANGUNAN
+short_name: null
+status: null
+tanggal_penetapan: '2014-03-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_20_2014_2014-03-19
+  kind: asli
+  source: dataset
+  date: '2014-03-19'
+  date_basis: tanggal_penetapan
+  text: pp_20_2014_2014-03-19.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ca4d8e0a0f484fd76ca13148ae8d69eefb35a4d5fdff8b9fa8f17fb2a3a6ff15
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ca4d8e0a0f484fd76ca13148ae8d69eefb35a4d5fdff8b9fa8f17fb2a3a6ff15
+  source_title: PP_Nomor_20_Tahun_2014
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 18
+  status: none_known

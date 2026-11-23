@@ -1,0 +1,40 @@
+id: pp_9_2008
+akn: /akn/id/act/pp/2008/9
+type: pp
+number: '9'
+year: 2008
+title: Peraturan Pemerintah Nomor 9 Tahun 2008 tentang Tata Cara Dan Mekanisme Pelayanan
+  Terpadu Bagi Saksi Dan/Atau Korban Tindak Pidana Perdagangan Orang
+tentang: TATA CARA DAN MEKANISME PELAYANAN TERPADU BAGI SAKSI DAN/ATAU KORBAN TINDAK
+  PIDANA PERDAGANGAN ORANG
+short_name: null
+status: null
+tanggal_penetapan: '2008-02-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_9_2008_2008-02-04
+  kind: asli
+  source: dataset
+  date: '2008-02-04'
+  date_basis: tanggal_penetapan
+  text: pp_9_2008_2008-02-04.txt
+  pasal_count: 26
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:84abe7a2544a95b58792b34b67286abb053fa0285f104dd2ca359abed09aafa7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:84abe7a2544a95b58792b34b67286abb053fa0285f104dd2ca359abed09aafa7
+  source_title: PP_9_Tahun_2008
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 47
+  status: none_known

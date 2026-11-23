@@ -1,0 +1,39 @@
+id: pp_35_2006
+akn: /akn/id/act/pp/2006/35
+type: pp
+number: '35'
+year: 2006
+title: Peraturan Pemerintah Nomor 35 Tahun 2006 tentang Pemindahan Ibu Kota Kabupaten
+  Ngada Dari Mbay Kecamatan Aesesa Ke Bajawa
+tentang: PEMINDAHAN IBU KOTA KABUPATEN NGADA DARI MBAY KECAMATAN AESESA KE BAJAWA
+short_name: null
+status: null
+tanggal_penetapan: '2006-11-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_35_2006_2006-11-08
+  kind: asli
+  source: dataset
+  date: '2006-11-08'
+  date_basis: tanggal_penetapan
+  text: pp_35_2006_2006-11-08.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:609fdff2a2cc0f1b740a394d75ef824b6fc12502fef3b49a85b188e9054756eb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:609fdff2a2cc0f1b740a394d75ef824b6fc12502fef3b49a85b188e9054756eb
+  source_title: PP_no_35_th_2006
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 13
+  status: none_known

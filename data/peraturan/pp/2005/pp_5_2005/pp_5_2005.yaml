@@ -1,0 +1,43 @@
+id: pp_5_2005
+akn: /akn/id/act/pp/2005/5
+type: pp
+number: '5'
+year: 2005
+title: Peraturan Pemerintah Nomor 5 Tahun 2005 tentang Penyertaan Modal Negara Republik
+  Indonesia Untuk Pendirian Perusahaan Perseroan (Persero) Di Bidang Pembiayaan Sekunder
+  Perumahan
+tentang: PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA UNTUK PENDIRIAN PERUSAHAAN PERSEROAN
+  (PERSERO) DI BIDANG PEMBIAYAAN SEKUNDER PERUMAHAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2005-02-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_5_2005_2005-02-07
+  kind: asli
+  source: dataset
+  date: '2005-02-07'
+  date_basis: tanggal_penetapan
+  text: pp_5_2005_2005-02-07.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b3af97a6d9d95dd7fe1c78eaec33ab5843b94f315c7e8de93aa65f10a46f3e9b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b3af97a6d9d95dd7fe1c78eaec33ab5843b94f315c7e8de93aa65f10a46f3e9b
+  source_title: PP_NO_5_TH_2005
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: amended
+  amended_by:
+  - sha256:c42d0a2881f3cfda0053bfb60129d1dae8a037559eb10599bab679ec10db8e5d

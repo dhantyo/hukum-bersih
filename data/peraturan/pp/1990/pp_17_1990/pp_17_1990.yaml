@@ -1,0 +1,41 @@
+id: pp_17_1990
+akn: /akn/id/act/pp/1990/17
+type: pp
+number: '17'
+year: 1990
+title: Peraturan Pemerintah Nomor 17 Tahun 1990 tentang Perusahaan Umum (Perum) Listrik
+  Negara
+tentang: PERUSAHAAN UMUM (PERUM) LISTRIK NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1990-05-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_17_1990_1990-05-28
+  kind: asli
+  source: dataset
+  date: '1990-05-28'
+  date_basis: tanggal_penetapan
+  text: pp_17_1990_1990-05-28.txt
+  pasal_count: 58
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:51bfd77be47cd0d17ffba2e1b4c1c98df6c38080ff79e62d8c3f2211e85d7c15
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:51bfd77be47cd0d17ffba2e1b4c1c98df6c38080ff79e62d8c3f2211e85d7c15
+  source_title: PP_NO_17_TH_1990
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 61
+  status: revoked
+  revoked_by:
+  - sha256:9577d78176fe3cb27c599f14a36c8cad5293d32cd09f50ed175a86fe510baa12

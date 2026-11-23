@@ -1,0 +1,42 @@
+id: pp_82_2007
+akn: /akn/id/act/pp/2007/82
+type: pp
+number: '82'
+year: 2007
+title: Peraturan Pemerintah Nomor 82 Tahun 2007 tentang Perubahan Kedua Atas Peraturan
+  Pemerintah Nomor 75 Tahun 2005 Tentang Jenis Dan Tarif Atas Jenis Penerimaan Negara
+  Bukan Pajak Yang Berlaku Pada Departemen Hukum Dan Hak Asasi Manusia
+tentang: PERUBAHAN KEDUA ATAS PERATURAN PEMERINTAH NOMOR 75 TAHUN 2005 TENTANG JENIS
+  DAN TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA DEPARTEMEN
+  HUKUM DAN HAK ASASI MANUSIA
+short_name: null
+status: null
+tanggal_penetapan: '2008-01-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_82_2007_2008-01-02
+  kind: asli
+  source: dataset
+  date: '2008-01-02'
+  date_basis: tanggal_penetapan
+  text: pp_82_2007_2008-01-02.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:60968df76cb498285c0c369a08225c183af73f57c35561dad3e26f131799486a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:60968df76cb498285c0c369a08225c183af73f57c35561dad3e26f131799486a
+  source_title: PP_82_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

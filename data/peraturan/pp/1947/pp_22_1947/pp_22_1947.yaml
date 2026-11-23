@@ -1,0 +1,30 @@
+id: pp_22_1947
+akn: /akn/id/act/pp/1947/22
+type: pp
+number: '22'
+year: 1947
+title: Peraturan Pemerintah Nomor 22 Tahun 1947 tentang Peraturan Mahkamah Tentara
+  Sementara
+tentang: PERATURAN MAHKAMAH TENTARA SEMENTARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1947-08-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f2ac1f251d68b7b044ce087d4b5fa42ea547fffd2cd053cc1745f369122af92b
+  source_title: PP_No.22_Tahun_1947
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 20
+  status: revoked
+  revoked_by:
+  - sha256:cb644f79448449364630843c15dbccd5192fa938a8c75fd08dd587ac182acf1b
+parse_error: 'v13: rebuilt text has 3 pasal, the dataset lists 9'

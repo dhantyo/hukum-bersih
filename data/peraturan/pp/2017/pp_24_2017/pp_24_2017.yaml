@@ -1,0 +1,40 @@
+id: pp_24_2017
+akn: /akn/id/act/pp/2017/24
+type: pp
+number: '24'
+year: 2017
+title: Peraturan Pemerintah Nomor 24 Tahun 2017 tentang Pemberian Penghasii,An Ketiga
+  Belas Kepada Pimpinan Dan Pega\Iiai Nonpegawai Negeri Sipil Pada Lembaga Nonstruktural
+tentang: PEMBERIAN PENGHASII,AN KETIGA BELAS KEPADA PIMPINAN DAN PEGA\IIAI NONPEGAWAI
+  NEGERI SIPIL PADA LEMBAGA NONSTRUKTURAL
+short_name: null
+status: null
+tanggal_penetapan: '2017-06-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_24_2017_2017-06-13
+  kind: asli
+  source: dataset
+  date: '2017-06-13'
+  date_basis: tanggal_penetapan
+  text: pp_24_2017_2017-06-13.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6e15270b9f7c6ee9fd1335fa664c8087388b83513e3aebadd9f20d9f552c1770
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6e15270b9f7c6ee9fd1335fa664c8087388b83513e3aebadd9f20d9f552c1770
+  source_title: PP_24_Tahun_2017
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 20
+  status: none_known

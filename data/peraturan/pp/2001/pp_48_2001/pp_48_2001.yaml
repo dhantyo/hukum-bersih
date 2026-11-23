@@ -1,0 +1,41 @@
+id: pp_48_2001
+akn: /akn/id/act/pp/2001/48
+type: pp
+number: '48'
+year: 2001
+title: Peraturan Pemerintah Nomor 48 Tahun 2001 tentang Perubahan Atas Peraturan Pemerintah
+  Nomor 134 Tahun 2000 Tentang Tarif Atas Jenis Penerimaan Negara Bukan Pajak Yang
+  Berlaku Pada Badan Pengawas Tenaga Nuklir
+tentang: PERUBAHAN ATAS PERATURAN PEMERINTAH NOMOR 134 TAHUN 2000 TENTANG TARIF ATAS
+  JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA BADAN PENGAWAS TENAGA NUKLIR
+short_name: null
+status: null
+tanggal_penetapan: '2001-06-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_48_2001_2001-06-08
+  kind: asli
+  source: dataset
+  date: '2001-06-08'
+  date_basis: tanggal_penetapan
+  text: pp_48_2001_2001-06-08.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f08b5fcab9d94ace5940629e7aa1d990a084091cd7a2b8be464bd90cbf4e3049
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f08b5fcab9d94ace5940629e7aa1d990a084091cd7a2b8be464bd90cbf4e3049
+  source_title: PP_NO_48_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 14
+  status: none_known

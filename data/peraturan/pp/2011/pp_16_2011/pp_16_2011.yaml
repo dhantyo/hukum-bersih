@@ -1,0 +1,44 @@
+id: pp_16_2011
+akn: /akn/id/act/pp/2011/16
+type: pp
+number: '16'
+year: 2011
+title: Peraturan Pemerintah Nomor 16 Tahun 2011 tentang Penetapan Pensiun Pokok Purnawirawan,
+  Warakawuri/Duda, Tunjangan Anak Yatim/Piatu, Anak Yatim Piatu Dan Tunjangan Orang
+  Tua Anggota Kepolisian Negara Republik Indonesia Kumham.G
+tentang: PENETAPAN PENSIUN POKOK PURNAWIRAWAN, WARAKAWURI/DUDA, TUNJANGAN ANAK YATIM/PIATU,
+  ANAK YATIM PIATU DAN TUNJANGAN ORANG TUA ANGGOTA KEPOLISIAN NEGARA REPUBLIK INDONESIA
+  kumham.g
+short_name: null
+status: dicabut
+tanggal_penetapan: '2011-02-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_16_2011_2011-02-16
+  kind: asli
+  source: dataset
+  date: '2011-02-16'
+  date_basis: tanggal_penetapan
+  text: pp_16_2011_2011-02-16.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d10ccf2c01d5e54564d9ec36dd697684ab011b1efea6a64da34c8de3edce6b5c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d10ccf2c01d5e54564d9ec36dd697684ab011b1efea6a64da34c8de3edce6b5c
+  source_title: PP_No.16_TH_2011
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:25f5e0e934070105d31ef8441949733d72e46cc707357c34837e635f17431e3b

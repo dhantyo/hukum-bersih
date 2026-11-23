@@ -1,0 +1,41 @@
+id: pp_42_2003
+akn: /akn/id/act/pp/2003/42
+type: pp
+number: '42'
+year: 2003
+title: Peraturan Pemerintah Nomor 42 Tahun 2003 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Perusahaan Umum (Perum) Pengangkutan Penumpang
+  Djakarta
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL PERUSAHAAN
+  UMUM (PERUM) PENGANGKUTAN PENUMPANG DJAKARTA
+short_name: null
+status: null
+tanggal_penetapan: '2003-07-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_42_2003_2003-07-22
+  kind: asli
+  source: dataset
+  date: '2003-07-22'
+  date_basis: tanggal_penetapan
+  text: pp_42_2003_2003-07-22.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b4530070305420a5b398a93e25ddab6e865b8c49fc61e7cb1a25f4217a1e10c2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b4530070305420a5b398a93e25ddab6e865b8c49fc61e7cb1a25f4217a1e10c2
+  source_title: PP_No.42_TH_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 19
+  status: none_known

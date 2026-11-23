@@ -1,0 +1,42 @@
+id: pp_129_2000
+akn: /akn/id/act/pp/2000/129
+type: pp
+number: '129'
+year: 2000
+title: Peraturan Pemerintah Nomor 129 Tahun 2000 tentang Persyaratan Pembentukan Dan
+  Kriteria Pemekaran, Penghapusan, Dan Penggabungan Daerah
+tentang: PERSYARATAN PEMBENTUKAN DAN KRITERIA PEMEKARAN, PENGHAPUSAN, DAN PENGGABUNGAN
+  DAERAH
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-12-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_129_2000_2000-12-13
+  kind: asli
+  source: dataset
+  date: '2000-12-13'
+  date_basis: tanggal_penetapan
+  text: pp_129_2000_2000-12-13.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6294dab09d788d83e144588dbc279d99bdebf15fdc4974ae3dd5838154ef3980
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6294dab09d788d83e144588dbc279d99bdebf15fdc4974ae3dd5838154ef3980
+  source_title: PP_No.129_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 34
+  status: revoked
+  revoked_by:
+  - sha256:db5443669b7fd52581ba5cae465216fdf3c3cb6abe78b4e8d5b72704b2641238

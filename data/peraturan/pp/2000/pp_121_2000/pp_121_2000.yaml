@@ -1,0 +1,39 @@
+id: pp_121_2000
+akn: /akn/id/act/pp/2000/121
+type: pp
+number: '121'
+year: 2000
+title: Peraturan Pemerintah Nomor 121 Tahun 2000 tentang Pendirian Perusahaan Jawatan
+  Rumah Sakit Dr. Sardjito Yogyakarta
+tentang: PENDIRIAN PERUSAHAAN JAWATAN RUMAH SAKIT DR. SARDJITO YOGYAKARTA
+short_name: null
+status: null
+tanggal_penetapan: '2000-12-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_121_2000_2000-12-12
+  kind: asli
+  source: dataset
+  date: '2000-12-12'
+  date_basis: tanggal_penetapan
+  text: pp_121_2000_2000-12-12.txt
+  pasal_count: 51
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:56151a4b234221a04c3fe8658074eee2055f0f2c1c0377bfd0e16a61c640094c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:56151a4b234221a04c3fe8658074eee2055f0f2c1c0377bfd0e16a61c640094c
+  source_title: PP_No.121_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 63
+  status: none_known

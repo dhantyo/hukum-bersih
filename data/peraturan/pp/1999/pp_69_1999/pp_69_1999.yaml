@@ -1,0 +1,38 @@
+id: pp_69_1999
+akn: /akn/id/act/pp/1999/69
+type: pp
+number: '69'
+year: 1999
+title: Peraturan Pemerintah Nomor 69 Tahun 1999 tentang Label Dan Iklan Pangan
+tentang: LABEL DAN IKLAN PANGAN
+short_name: null
+status: null
+tanggal_penetapan: '1999-07-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_69_1999_1999-07-21
+  kind: asli
+  source: dataset
+  date: '1999-07-21'
+  date_basis: tanggal_penetapan
+  text: pp_69_1999_1999-07-21.txt
+  pasal_count: 60
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9d97901ac61d2c8a41abb43e36c6848b518f7064bfaeb1c0975d0e4ff96483ba
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9d97901ac61d2c8a41abb43e36c6848b518f7064bfaeb1c0975d0e4ff96483ba
+  source_title: PP_No._69_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 116
+  status: none_known

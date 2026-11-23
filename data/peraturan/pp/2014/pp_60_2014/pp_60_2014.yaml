@@ -1,0 +1,43 @@
+id: pp_60_2014
+akn: /akn/id/act/pp/2014/60
+type: pp
+number: '60'
+year: 2014
+title: Peraturan Pemerintah Nomor 60 Tahun 2014 tentang Dana Desa Yang Bersumber Dari
+  Anggaran Pendapatan Dan Belanja Negara
+tentang: DANA DESA YANG BERSUMBER DARI ANGGARAN PENDAPATAN DAN BELANJA NEGARA
+short_name: null
+status: diubah
+tanggal_penetapan: '2014-07-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_60_2014_2014-07-21
+  kind: asli
+  source: dataset
+  date: '2014-07-21'
+  date_basis: tanggal_penetapan
+  text: pp_60_2014_2014-07-21.txt
+  pasal_count: 34
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f4b1e3c37416c50a7d80e837fe83d0a420a2f6217bd108a65848d41656bea8a0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f4b1e3c37416c50a7d80e837fe83d0a420a2f6217bd108a65848d41656bea8a0
+  source_title: PP_Nomor_60_Tahun_2014
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 53
+  status: amended
+  amended_by:
+  - sha256:7dc28883abfdae6803621ad0123746775a7a5b7de50203dea0e3fbd79770f140
+  - sha256:cf30bb2e04045b0ddc1b94cf18723ffa7460fcb712920204f376cafb1ffe6899
+  - sha256:f1bab68d20bd207ab7f99de8e632e1f60fe3f14e378f0bb390c451ed25c14fd7

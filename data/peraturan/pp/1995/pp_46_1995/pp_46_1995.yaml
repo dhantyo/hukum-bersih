@@ -1,0 +1,39 @@
+id: pp_46_1995
+akn: /akn/id/act/pp/1995/46
+type: pp
+number: '46'
+year: 1995
+title: Peraturan Pemerintah Nomor 46 Tahun 1995 tentang Tata Cara Pemeriksaan Di Bidang
+  Pasar Modal
+tentang: TATA CARA PEMERIKSAAN DI BIDANG PASAR MODAL
+short_name: null
+status: null
+tanggal_penetapan: '1996-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_46_1995_1996-01-01
+  kind: asli
+  source: dataset
+  date: '1996-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_46_1995_1996-01-01.txt
+  pasal_count: 17
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e04f6b9c6171b5fb2c4ea3106681235416f331eb40bbc323d18c21cc1f688c9f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e04f6b9c6171b5fb2c4ea3106681235416f331eb40bbc323d18c21cc1f688c9f
+  source_title: PP_No._46_Th_1995
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 36
+  status: none_known

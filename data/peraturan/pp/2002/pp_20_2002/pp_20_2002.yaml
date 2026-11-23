@@ -1,0 +1,41 @@
+id: pp_20_2002
+akn: /akn/id/act/pp/2002/20
+type: pp
+number: '20'
+year: 2002
+title: Peraturan Pemerintah Nomor 20 Tahun 2002 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Angkutan Sungai, Danau Dan Penyeberangan
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT ANGKUTAN SUNGAI, DANAU DAN PENYEBERANGAN
+short_name: null
+status: null
+tanggal_penetapan: '2002-04-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_20_2002_2002-04-23
+  kind: asli
+  source: dataset
+  date: '2002-04-23'
+  date_basis: tanggal_penetapan
+  text: pp_20_2002_2002-04-23.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f91e0d2ee380933f62c4113e4b19926d1af969740fa56a0d744118799d48e45d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f91e0d2ee380933f62c4113e4b19926d1af969740fa56a0d744118799d48e45d
+  source_title: PP_No.20_TH_2002
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 34
+  status: none_known

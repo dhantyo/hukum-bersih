@@ -1,0 +1,43 @@
+id: pp_48_2005
+akn: /akn/id/act/pp/2005/48
+type: pp
+number: '48'
+year: 2005
+title: Peraturan Pemerintah Nomor 48 Tahun 2005 tentang Pengangkatan Tenaga Honorer
+  Menjadi Calon Pegawai Negeri Sipil
+tentang: PENGANGKATAN TENAGA HONORER MENJADI CALON PEGAWAI NEGERI SIPIL
+short_name: null
+status: diubah
+tanggal_penetapan: '2005-11-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_48_2005_2005-11-11
+  kind: asli
+  source: dataset
+  date: '2005-11-11'
+  date_basis: tanggal_penetapan
+  text: pp_48_2005_2005-11-11.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7aa4c4c359858e9084aeacc6190ef93635fd0322877625b9a653aa93359bd1df
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7aa4c4c359858e9084aeacc6190ef93635fd0322877625b9a653aa93359bd1df
+  source_title: PP_NO_48_TH_2005
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 29
+  status: amended
+  amended_by:
+  - sha256:00282f0b7f6cc27f553109247934514fa299d2725ef365ed359d7221188ce0df
+  - sha256:d3b51f8ab0377f864cb018324b79e8047d3eeaa738f9b7c16e3388ec3cb7772f
+  - sha256:f4aa4ec54e1b2bc91740806abeeb30dfa150f3cf121caae15b0782594751a740

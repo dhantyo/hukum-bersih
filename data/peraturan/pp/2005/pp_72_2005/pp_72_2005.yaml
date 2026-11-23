@@ -1,0 +1,42 @@
+id: pp_72_2005
+akn: /akn/id/act/pp/2005/72
+type: pp
+number: '72'
+year: 2005
+title: Peraturan Pemerintah Nomor 72 Tahun 2005 tentang Desa
+tentang: DESA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2005-12-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_72_2005_2005-12-30
+  kind: asli
+  source: dataset
+  date: '2005-12-30'
+  date_basis: tanggal_penetapan
+  text: pp_72_2005_2005-12-30.txt
+  pasal_count: 107
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:42e056449c193afdb9ac0725c5663a232bf6d65b32a06e7ee68f8c7d071da582
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:42e056449c193afdb9ac0725c5663a232bf6d65b32a06e7ee68f8c7d071da582
+  source_title: PP_NO_72_TH_2005
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 164
+  status: revoked
+  revoked_by:
+  - sha256:083204da365a02eeda7f26753d7be559b4cb714e658225b97ecddc3a9beca396
+  - sha256:45f1af50c62b09dd909496324bf660a4b1fcf45d15728134f966790cb349241c
+  - sha256:f68172752624783b1d9d1fdd5bea91e13a56e1f43f0c66843eca138f85ebb179

@@ -1,0 +1,38 @@
+id: pp_34_2006
+akn: /akn/id/act/pp/2006/34
+type: pp
+number: '34'
+year: 2006
+title: Peraturan Pemerintah Nomor 34 Tahun 2006 tentang Jalan
+tentang: JALAN
+short_name: null
+status: null
+tanggal_penetapan: '2006-10-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_34_2006_2006-10-31
+  kind: asli
+  source: dataset
+  date: '2006-10-31'
+  date_basis: tanggal_penetapan
+  text: pp_34_2006_2006-10-31.txt
+  pasal_count: 126
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5f481c7dfdcefa7770d4a3a81ed61955512eb4b56763ef14cd624624b05dbeb0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5f481c7dfdcefa7770d4a3a81ed61955512eb4b56763ef14cd624624b05dbeb0
+  source_title: PP_no_34_th_2006
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 170
+  status: none_known

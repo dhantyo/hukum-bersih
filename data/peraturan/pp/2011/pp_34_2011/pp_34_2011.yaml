@@ -1,0 +1,39 @@
+id: pp_34_2011
+akn: /akn/id/act/pp/2011/34
+type: pp
+number: '34'
+year: 2011
+title: Peraturan Pemerintah Nomor 34 Tahun 2011 tentang Tindakan Antidumping, Tindakan
+  Imbalan, Dan Tindakan Pengamanan Perdagangan
+tentang: TINDAKAN ANTIDUMPING, TINDAKAN IMBALAN, DAN TINDAKAN PENGAMANAN PERDAGANGAN
+short_name: null
+status: null
+tanggal_penetapan: '2011-07-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_34_2011_2011-07-04
+  kind: asli
+  source: dataset
+  date: '2011-07-04'
+  date_basis: tanggal_penetapan
+  text: pp_34_2011_2011-07-04.txt
+  pasal_count: 103
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d6cd4ef3302ea75c5c16266d1d0b030f1b05e358cb4899d25799ed67a08f12e6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d6cd4ef3302ea75c5c16266d1d0b030f1b05e358cb4899d25799ed67a08f12e6
+  source_title: PP_34_Tahun_2011
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 157
+  status: none_known

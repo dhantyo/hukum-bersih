@@ -1,0 +1,40 @@
+id: pp_16_1987
+akn: /akn/id/act/pp/1987/16
+type: pp
+number: '16'
+year: 1987
+title: Peraturan Pemerintah Nomor 16 Tahun 1987 tentang Perubahan Batas Wilayah Kotamadya
+  Daerah Tingkat Ii Bandung Dan Kabupaten Daerah Tingkat Ii Bandung
+tentang: PERUBAHAN BATAS WILAYAH KOTAMADYA DAERAH TINGKAT II BANDUNG DAN KABUPATEN
+  DAERAH TINGKAT II BANDUNG
+short_name: null
+status: null
+tanggal_penetapan: '1987-07-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_16_1987_1987-07-27
+  kind: asli
+  source: dataset
+  date: '1987-07-27'
+  date_basis: tanggal_penetapan
+  text: pp_16_1987_1987-07-27.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:10e24e4482da0bae8adf6de497a2a847fd4abf54e9fc0b3856974e6e75f5742e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:10e24e4482da0bae8adf6de497a2a847fd4abf54e9fc0b3856974e6e75f5742e
+  source_title: PP_NO_16_TH_1987
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 25
+  status: none_known

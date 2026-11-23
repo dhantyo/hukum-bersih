@@ -1,0 +1,39 @@
+id: pp_33_2007
+akn: /akn/id/act/pp/2007/33
+type: pp
+number: '33'
+year: 2007
+title: Peraturan Pemerintah Nomor 33 Tahun 2007 tentang Keselamatan Radiasi Pengion
+  Dan Keamanan Sumber Radioaktif
+tentang: KESELAMATAN RADIASI PENGION DAN KEAMANAN SUMBER RADIOAKTIF
+short_name: null
+status: null
+tanggal_penetapan: '2007-06-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_33_2007_2007-06-08
+  kind: asli
+  source: dataset
+  date: '2007-06-08'
+  date_basis: tanggal_penetapan
+  text: pp_33_2007_2007-06-08.txt
+  pasal_count: 88
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:48d950fc2f5e31d35a02deae878235f40ab6656870c51944108c0643d9b18843
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:48d950fc2f5e31d35a02deae878235f40ab6656870c51944108c0643d9b18843
+  source_title: PP_33_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 122
+  status: none_known

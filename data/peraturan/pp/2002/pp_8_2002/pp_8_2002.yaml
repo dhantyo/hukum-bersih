@@ -1,0 +1,39 @@
+id: pp_8_2002
+akn: /akn/id/act/pp/2002/8
+type: pp
+number: '8'
+year: 2002
+title: Peraturan Pemerintah Nomor 8 Tahun 2002 tentang Perubahan Nama Kabupaten Kutai
+  Menjadi Kabupaten Kutai Kartanegara
+tentang: PERUBAHAN NAMA KABUPATEN KUTAI MENJADI KABUPATEN KUTAI KARTANEGARA
+short_name: null
+status: null
+tanggal_penetapan: '2002-03-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_8_2002_2002-03-23
+  kind: asli
+  source: dataset
+  date: '2002-03-23'
+  date_basis: tanggal_penetapan
+  text: pp_8_2002_2002-03-23.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d0680973fdc04b7b9e81f99d3fbff0acd8ef41a843d54019a54ddc2579a8f22c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d0680973fdc04b7b9e81f99d3fbff0acd8ef41a843d54019a54ddc2579a8f22c
+  source_title: PP_No.8_TH_2002
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 8
+  status: none_known

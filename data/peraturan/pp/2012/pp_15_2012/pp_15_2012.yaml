@@ -1,0 +1,40 @@
+id: pp_15_2012
+akn: /akn/id/act/pp/2012/15
+type: pp
+number: '15'
+year: 2012
+title: Peraturan Pemerintah Nomor 15 Tahun 2012 tentang Perubahan Keempat Belas Atas
+  Peraturan Pemerintah Nomor 7 Tahun 1977 Tentang Peraturan Gaji Pegawai Negeri Sipil
+tentang: PERUBAHAN KEEMPAT BELAS ATAS PERATURAN PEMERINTAH NOMOR 7 TAHUN 1977 TENTANG
+  PERATURAN GAJI PEGAWAI NEGERI SIPIL
+short_name: null
+status: null
+tanggal_penetapan: '2012-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_15_2012_2012-01-01
+  kind: asli
+  source: dataset
+  date: '2012-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_15_2012_2012-01-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4c99580eb85f508a2a4417ad5d221f98ce992d77f1c91ce6a94ea62b88433f5a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4c99580eb85f508a2a4417ad5d221f98ce992d77f1c91ce6a94ea62b88433f5a
+  source_title: PP_Nomor_15_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

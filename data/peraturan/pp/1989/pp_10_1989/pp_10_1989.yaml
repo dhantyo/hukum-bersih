@@ -1,0 +1,44 @@
+id: pp_10_1989
+akn: /akn/id/act/pp/1989/10
+type: pp
+number: '10'
+year: 1989
+title: Peraturan Pemerintah Nomor 10 Tahun 1989 tentang Penyediaan Dan Pemanfaatan
+  Tenaga Listrik
+tentang: PENYEDIAAN DAN PEMANFAATAN TENAGA LISTRIK
+short_name: null
+status: dicabut
+tanggal_penetapan: '1989-07-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_10_1989_1989-07-25
+  kind: asli
+  source: dataset
+  date: '1989-07-25'
+  date_basis: tanggal_penetapan
+  text: pp_10_1989_1989-07-25.txt
+  pasal_count: 40
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6cdf303c0a69732dfb56d3a223f5c3582719fa87f853d680e8979469594576b5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6cdf303c0a69732dfb56d3a223f5c3582719fa87f853d680e8979469594576b5
+  source_title: PP_NO_10_TH_1989
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 71
+  status: revoked
+  revoked_by:
+  - sha256:068205f85eaa6eb0ca32e1f4a11c91442d7adfb5836c3ece09212fe6294571d4
+  amended_by:
+  - sha256:a952145258cb0ffb8c8a8d87cfa106e7559edd9d4665512bc1af669751524a04
+  - sha256:f2a1b89ae538b39562b2a61335608415e846a7341292b6f6d672d053e4df3348

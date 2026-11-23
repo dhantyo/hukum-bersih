@@ -1,0 +1,41 @@
+id: pp_31_1985
+akn: /akn/id/act/pp/1985/31
+type: pp
+number: '31'
+year: 1985
+title: Peraturan Pemerintah Nomor 31 Tahun 1985 tentang Penarikan Kembali Sebagian
+  Kekayaan Negara Yang Tertanam Dalam Modal Perusahaan Umum (Perum) Angkasa Pura Presiden
+  Republik Indonesia
+tentang: PENARIKAN KEMBALI SEBAGIAN KEKAYAAN NEGARA YANG TERTANAM DALAM MODAL PERUSAHAAN
+  UMUM (PERUM) ANGKASA PURA Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1985-06-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_31_1985_1985-06-17
+  kind: asli
+  source: dataset
+  date: '1985-06-17'
+  date_basis: tanggal_penetapan
+  text: pp_31_1985_1985-06-17.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3de593e3566d6bea0cf1762f0fbe39c5b6f4b423ca781e4494acc47b1b097d3f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3de593e3566d6bea0cf1762f0fbe39c5b6f4b423ca781e4494acc47b1b097d3f
+  source_title: PP_NO_31_TH_1985
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

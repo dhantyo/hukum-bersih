@@ -1,0 +1,38 @@
+id: pp_17_2015
+akn: /akn/id/act/pp/2015/17
+type: pp
+number: '17'
+year: 2015
+title: Peraturan Pemerintah Nomor 17 Tahun 2015 tentang Ketahanan Pangan Dan Gizi
+tentang: KETAHANAN PANGAN DAN GIZI
+short_name: null
+status: null
+tanggal_penetapan: '2015-03-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_17_2015_2015-03-19
+  kind: asli
+  source: dataset
+  date: '2015-03-19'
+  date_basis: tanggal_penetapan
+  text: pp_17_2015_2015-03-19.txt
+  pasal_count: 90
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2ce4c84c85f428d8c142002e2469924eebe691b49904728f5c2310c7ccd9badc
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2ce4c84c85f428d8c142002e2469924eebe691b49904728f5c2310c7ccd9badc
+  source_title: PP_Nomor_17_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 121
+  status: none_known

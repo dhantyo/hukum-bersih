@@ -1,0 +1,43 @@
+id: pp_5_2003
+akn: /akn/id/act/pp/2003/5
+type: pp
+number: '5'
+year: 2003
+title: Peraturan Pemerintah Nomor 5 Tahun 2003 tentang Pajak Penghasilan Atas Penghasilan
+  Yang Diterima Oleh Pekerja Sampai Dengan Sebesar Upah Minimum Propinsi Atau Upah
+  Minimum Kabupaten/Kota
+tentang: PAJAK PENGHASILAN ATAS PENGHASILAN YANG DITERIMA OLEH PEKERJA SAMPAI DENGAN
+  SEBESAR UPAH MINIMUM PROPINSI ATAU UPAH MINIMUM KABUPATEN/KOTA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2003-01-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_5_2003_2003-01-20
+  kind: asli
+  source: dataset
+  date: '2003-01-20'
+  date_basis: tanggal_penetapan
+  text: pp_5_2003_2003-01-20.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1fa7e5be64bf044cff892187ab78f0f06a6b8fb23059eab8ac3bb34e54f9ff44
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1fa7e5be64bf044cff892187ab78f0f06a6b8fb23059eab8ac3bb34e54f9ff44
+  source_title: PP_No.5_TH_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:4f5813f1985eb553178b3e57c4e63d75efe63cfe0a83233cf27cfd351dc51678

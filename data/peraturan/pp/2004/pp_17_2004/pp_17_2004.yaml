@@ -1,0 +1,41 @@
+id: pp_17_2004
+akn: /akn/id/act/pp/2004/17
+type: pp
+number: '17'
+year: 2004
+title: Peraturan Pemerintah Nomor 17 Tahun 2004 tentang Pemberian Gaji/Pensiun/Tunjangan
+  Bulan Ketiga Belas Dalam Tahun Anggaran 2004 Kepada Pegawai Negeri, Pejabat Negara,
+  Dan Penerima Pensiun/Tunjangan
+tentang: PEMBERIAN GAJI/PENSIUN/TUNJANGAN BULAN KETIGA BELAS DALAM TAHUN ANGGARAN
+  2004 KEPADA PEGAWAI NEGERI, PEJABAT NEGARA, DAN PENERIMA PENSIUN/TUNJANGAN
+short_name: null
+status: null
+tanggal_penetapan: '2004-05-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_17_2004_2004-05-28
+  kind: asli
+  source: dataset
+  date: '2004-05-28'
+  date_basis: tanggal_penetapan
+  text: pp_17_2004_2004-05-28.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:653ecdaaf493110b4dacda845c65a2d719622a6cdc23e2b3633d3cf0b34cdbea
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:653ecdaaf493110b4dacda845c65a2d719622a6cdc23e2b3633d3cf0b34cdbea
+  source_title: PP_No.17_TH_2004
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 18
+  status: none_known

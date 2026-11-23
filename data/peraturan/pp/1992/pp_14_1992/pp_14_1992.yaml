@@ -1,0 +1,40 @@
+id: pp_14_1992
+akn: /akn/id/act/pp/1992/14
+type: pp
+number: '14'
+year: 1992
+title: Peraturan Pemerintah Nomor 14 Tahun 1992 tentang Pengalihan Bentuk Perusahaan
+  Umum (Perum) Angkasa Pura Ii Menjadi Perusahaan Perseroan (Persero)
+tentang: PENGALIHAN BENTUK PERUSAHAAN UMUM (PERUM) ANGKASA PURA II MENJADI PERUSAHAAN
+  PERSEROAN (PERSERO)
+short_name: null
+status: null
+tanggal_penetapan: '1992-03-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_14_1992_1992-03-17
+  kind: asli
+  source: dataset
+  date: '1992-03-17'
+  date_basis: tanggal_penetapan
+  text: pp_14_1992_1992-03-17.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:79622db150898120126da748efbbd4796450c8c5d5d5ea4b0976e6c1828fc0fd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:79622db150898120126da748efbbd4796450c8c5d5d5ea4b0976e6c1828fc0fd
+  source_title: PP_NO_14_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: none_known

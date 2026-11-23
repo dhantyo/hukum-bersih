@@ -1,0 +1,39 @@
+id: pp_32_2003
+akn: /akn/id/act/pp/2003/32
+type: pp
+number: '32'
+year: 2003
+title: Peraturan Pemerintah Nomor 32 Tahun 2003 tentang Tanda Kehormatan Satyalancana
+  Dharma Nusa
+tentang: TANDA KEHORMATAN SATYALANCANA DHARMA NUSA
+short_name: null
+status: null
+tanggal_penetapan: '2003-07-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_32_2003_2003-07-04
+  kind: asli
+  source: dataset
+  date: '2003-07-04'
+  date_basis: tanggal_penetapan
+  text: pp_32_2003_2003-07-04.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ebcb38f0c7d58bfa94616c5b4775db9d6fcc343ba11080bd5561b866bcd8a322
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ebcb38f0c7d58bfa94616c5b4775db9d6fcc343ba11080bd5561b866bcd8a322
+  source_title: PP_No.32_TH_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 39
+  status: none_known

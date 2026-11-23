@@ -1,0 +1,30 @@
+id: pp_37_2000
+akn: /akn/id/act/pp/2000/37
+type: pp
+number: '37'
+year: 2000
+title: Peraturan Pemerintah Nomor 37 Tahun 2000 tentang Pendirian Perusahaan Jawatan
+  Radio Republik Indonesia
+tentang: PENDIRIAN PERUSAHAAN JAWATAN RADIO REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-06-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:957fe620f17f314309e0d1c0f23fed069f548dbd990dba02ab7537ad20b9c2ed
+  source_title: PP_No.37_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 63
+  status: revoked
+  revoked_by:
+  - sha256:d6e8bfd355a6df9dcc2788174afd1bdb659fd1ad40ad6b763ab7188a31106453
+parse_error: 'v13: rebuilt text has 27 pasal, the dataset lists 53'

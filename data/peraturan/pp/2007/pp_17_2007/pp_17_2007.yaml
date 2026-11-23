@@ -1,0 +1,39 @@
+id: pp_17_2007
+akn: /akn/id/act/pp/2007/17
+type: pp
+number: '17'
+year: 2007
+title: Peraturan Pemerintah Nomor 17 Tahun 2007 tentang Penyelenggaraan Pekan Dan
+  Kejuaraan Olahraga
+tentang: PENYELENGGARAAN PEKAN DAN KEJUARAAN OLAHRAGA
+short_name: null
+status: null
+tanggal_penetapan: '2007-02-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_17_2007_2007-02-05
+  kind: asli
+  source: dataset
+  date: '2007-02-05'
+  date_basis: tanggal_penetapan
+  text: pp_17_2007_2007-02-05.txt
+  pasal_count: 35
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e66ad6350cf8f6b565181cc7509fa439967f16939954205becbb34e2df515c25
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e66ad6350cf8f6b565181cc7509fa439967f16939954205becbb34e2df515c25
+  source_title: PP_17_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 52
+  status: none_known

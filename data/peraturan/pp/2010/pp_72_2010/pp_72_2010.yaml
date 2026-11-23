@@ -1,0 +1,31 @@
+id: pp_72_2010
+akn: /akn/id/act/pp/2010/72
+type: pp
+number: '72'
+year: 2010
+title: Peraturan Pemerintah Nomor 72 Tahun 2010 tentang Perusahaan Umum (Perum) Kehutanan
+  Negara
+tentang: PERUSAHAAN UMUM (PERUM) KEHUTANAN NEGARA
+short_name: null
+status: diubah
+tanggal_penetapan: '2010-10-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f8f5d25342dd0954c32a5f030f94f26bdfa122a8a842da0b656e053b0e7680f9
+  source_title: pp_72_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 97
+  status: amended
+  amended_by:
+  - sha256:71cdc19bc50a4dacaedcee5d9b49905e479a4d8a9e18226f0376e86446ae2bc5
+  - sha256:724a0f012a6cc010ff25546471e408f397980c64b502965ab301e5a26b2f7b76
+parse_error: 'v13: rebuilt text has 4 pasal, the dataset lists 77'

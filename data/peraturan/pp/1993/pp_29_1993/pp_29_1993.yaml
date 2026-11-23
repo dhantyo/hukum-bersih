@@ -1,0 +1,41 @@
+id: pp_29_1993
+akn: /akn/id/act/pp/1993/29
+type: pp
+number: '29'
+year: 1993
+title: Peraturan Pemerintah Nomor 29 Tahun 1993 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt.
+  Garam
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT. GARAM
+short_name: null
+status: null
+tanggal_penetapan: '1993-05-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_29_1993_1993-05-17
+  kind: asli
+  source: dataset
+  date: '1993-05-17'
+  date_basis: tanggal_penetapan
+  text: pp_29_1993_1993-05-17.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:401384d4f4bf9771dd5f3e4ac3caca50b9a4d29b59dc1265c8d2568d6c446229
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:401384d4f4bf9771dd5f3e4ac3caca50b9a4d29b59dc1265c8d2568d6c446229
+  source_title: PP_No._29_Th_1993
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

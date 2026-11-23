@@ -1,0 +1,42 @@
+id: pp_43_1993
+akn: /akn/id/act/pp/1993/43
+type: pp
+number: '43'
+year: 1993
+title: Peraturan Pemerintah Nomor 43 Tahun 1993 tentang Prasarana Dan Lalu Lintas
+  Jalan
+tentang: PRASARANA DAN LALU LINTAS JALAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-09-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_43_1993_1998-09-17
+  kind: asli
+  source: dataset
+  date: '1998-09-17'
+  date_basis: tanggal_penetapan
+  text: pp_43_1993_1998-09-17.txt
+  pasal_count: 103
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0dbcd0fd784352d7b9783bf9088ae5eac507e2f03f547430462454b1fd0d45a3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0dbcd0fd784352d7b9783bf9088ae5eac507e2f03f547430462454b1fd0d45a3
+  source_title: PP_No._43_Th_1993
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 213
+  status: revoked
+  revoked_by:
+  - sha256:30c7abc27ee7cc62086328f1fc9643e3e76d7ae92231d21a5b60d51fc48a97de
+  - sha256:632b8be309ee164d3a514c45a91ae9c68d63a6ae480cb35a76017d373cfc6ed3

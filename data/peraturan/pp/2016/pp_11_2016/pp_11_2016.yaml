@@ -1,0 +1,39 @@
+id: pp_11_2016
+akn: /akn/id/act/pp/2016/11
+type: pp
+number: '11'
+year: 2016
+title: Peraturan Pemerintah Nomor 11 Tahun 2016 tentang Pelayanan Meteo Rologi, Klimatologi,
+  Dan Geofi Sika
+tentang: PELAYANAN METEO ROLOGI, KLIMATOLOGI, DAN GEOFI SIKA
+short_name: null
+status: null
+tanggal_penetapan: '2016-05-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_11_2016_2016-05-04
+  kind: asli
+  source: dataset
+  date: '2016-05-04'
+  date_basis: tanggal_penetapan
+  text: pp_11_2016_2016-05-04.txt
+  pasal_count: 53
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:591a9f9e051016fa64fb5af8a3888aa7e015c767911a61e0ff1fadd775fdb50a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:591a9f9e051016fa64fb5af8a3888aa7e015c767911a61e0ff1fadd775fdb50a
+  source_title: PP_Nomor_11_Tahun_2016
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 81
+  status: none_known

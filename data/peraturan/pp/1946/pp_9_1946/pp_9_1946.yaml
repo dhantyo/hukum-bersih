@@ -1,0 +1,40 @@
+id: pp_9_1946
+akn: /akn/id/act/pp/1946/9
+type: pp
+number: '9'
+year: 1946
+title: Peraturan Pemerintah Nomor 9 Tahun 1946 tentang Susunan Peraturan Akan Menjalankan
+  Undang-Undang Tahun 1946 No. 12 Dari Hal Pembaharuan Susunan Komite Nasional Pusat
+tentang: SUSUNAN PERATURAN AKAN MENJALANKAN UNDANG-UNDANG TAHUN 1946 NO. 12 DARI HAL
+  PEMBAHARUAN SUSUNAN KOMITE NASIONAL PUSAT
+short_name: null
+status: null
+tanggal_penetapan: '1946-09-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_9_1946_1946-09-18
+  kind: asli
+  source: dataset
+  date: '1946-09-18'
+  date_basis: tanggal_penetapan
+  text: pp_9_1946_1946-09-18.txt
+  pasal_count: 44
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:539999a19478fdc938968d3508368bbf0a4969f66ff37b2d6b53fcec6d0c1f18
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:539999a19478fdc938968d3508368bbf0a4969f66ff37b2d6b53fcec6d0c1f18
+  source_title: PP_No._9_Tahun_1946
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 48
+  status: none_known

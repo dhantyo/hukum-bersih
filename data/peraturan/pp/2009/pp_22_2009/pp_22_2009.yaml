@@ -1,0 +1,43 @@
+id: pp_22_2009
+akn: /akn/id/act/pp/2009/22
+type: pp
+number: '22'
+year: 2009
+title: Peraturan Pemerintah Nomor 22 Tahun 2009 tentang Penetapan Pensiun Pokok Purnawirawan,
+  Warakawuri/Duda, Tunjangan Anak Yatim/Piatu, Anak Yatim Piatu Dan Tunjangan Orang
+  Tua Anggota Tentara Nasional Indonesia
+tentang: PENETAPAN PENSIUN POKOK PURNAWIRAWAN, WARAKAWURI/DUDA, TUNJANGAN ANAK YATIM/PIATU,
+  ANAK YATIM PIATU DAN TUNJANGAN ORANG TUA ANGGOTA TENTARA NASIONAL INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2009-02-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_22_2009_2009-02-20
+  kind: asli
+  source: dataset
+  date: '2009-02-20'
+  date_basis: tanggal_penetapan
+  text: pp_22_2009_2009-02-20.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c2373156ba15e9bf522a49febe56026a64bb8fe43db5c187079c2388699f695f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c2373156ba15e9bf522a49febe56026a64bb8fe43db5c187079c2388699f695f
+  source_title: PP_No_22_2009
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:371788e808ab263e14a9b1416dac724f41fb0532946652b143e1c5834c54107f

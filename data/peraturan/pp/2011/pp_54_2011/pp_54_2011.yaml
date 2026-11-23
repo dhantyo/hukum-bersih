@@ -1,0 +1,42 @@
+id: pp_54_2011
+akn: /akn/id/act/pp/2011/54
+type: pp
+number: '54'
+year: 2011
+title: Peraturan Pemerintah Nomor 54 Tahun 2011 tentang Penyertaan Modal Negara Republik
+  Indonesia Ke Dalam Modal Saham Pt Pupuk Iskandar Muda Yang Selanjutnya Dialihkan
+  Seluruhnya Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt Pupuk Sriwidjaja
+tentang: PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM PT PUPUK
+  ISKANDAR MUDA YANG SELANJUTNYA DIALIHKAN SELURUHNYA KE DALAM MODAL SAHAM PERUSAHAAN
+  PERSEROAN (PERSERO) PT PUPUK SRIWIDJAJA
+short_name: null
+status: null
+tanggal_penetapan: '2011-12-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_54_2011_2011-12-22
+  kind: asli
+  source: dataset
+  date: '2011-12-22'
+  date_basis: tanggal_penetapan
+  text: pp_54_2011_2011-12-22.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6f7420e09d8d97cd0e614b93910096d7015d1c2f7ff1794311434cd65d785541
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6f7420e09d8d97cd0e614b93910096d7015d1c2f7ff1794311434cd65d785541
+  source_title: PP_54_Tahun_2011
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

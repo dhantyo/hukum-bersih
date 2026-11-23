@@ -1,0 +1,40 @@
+id: pp_82_2016
+akn: /akn/id/act/pp/2016/82
+type: pp
+number: '82'
+year: 2016
+title: Peraturan Pemerintah Nomor 82 Tahun 2016 tentang Jenis Dan Tarif Atas Jenis
+  Penerimaan Negara Bukan Pajak Yang Berlaku Pada Kementerian Pendidikan Dan Kebudayaan
+tentang: JENIS DAN TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA
+  KEMENTERIAN PENDIDIKAN DAN KEBUDAYAAN
+short_name: null
+status: null
+tanggal_penetapan: '2016-12-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_82_2016_2016-12-30
+  kind: asli
+  source: dataset
+  date: '2016-12-30'
+  date_basis: tanggal_penetapan
+  text: pp_82_2016_2016-12-30.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:dde11d6d4c7289e25f2770cae403df94c1950f4c39fac53d9a6ae0cebdf02647
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:dde11d6d4c7289e25f2770cae403df94c1950f4c39fac53d9a6ae0cebdf02647
+  source_title: PP_Nomor_82_Tahun_2016
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 32
+  status: none_known

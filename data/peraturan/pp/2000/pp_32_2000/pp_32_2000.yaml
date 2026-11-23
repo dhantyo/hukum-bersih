@@ -1,0 +1,42 @@
+id: pp_32_2000
+akn: /akn/id/act/pp/2000/32
+type: pp
+number: '32'
+year: 2000
+title: Peraturan Pemerintah Nomor 32 Tahun 2000 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Bank Negara Indonesia Tbk. Dalam Rangka Program Rekapitalisasi Bank Umum
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT BANK NEGARA INDONESIA Tbk. DALAM RANGKA PROGRAM
+  REKAPITALISASI BANK UMUM
+short_name: null
+status: null
+tanggal_penetapan: '2000-05-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_32_2000_2000-05-30
+  kind: asli
+  source: dataset
+  date: '2000-05-30'
+  date_basis: tanggal_penetapan
+  text: pp_32_2000_2000-05-30.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1d9cad25aae38216ea86ae04f73e6afdef18207ed3c6e68e29814ce2eb86e860
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1d9cad25aae38216ea86ae04f73e6afdef18207ed3c6e68e29814ce2eb86e860
+  source_title: PP_No.32_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: none_known

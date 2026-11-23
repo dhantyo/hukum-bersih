@@ -1,0 +1,39 @@
+id: pp_53_1996
+akn: /akn/id/act/pp/1996/53
+type: pp
+number: '53'
+year: 1996
+title: Peraturan Pemerintah Nomor 53 Tahun 1996 tentang Pembentukan Kabupaten Simeulue
+  Di Wilayah Propinsi Daerah Istimewa Aceh
+tentang: PEMBENTUKAN KABUPATEN SIMEULUE DI WILAYAH PROPINSI DAERAH ISTIMEWA ACEH
+short_name: null
+status: null
+tanggal_penetapan: '1996-08-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_53_1996_1996-08-13
+  kind: asli
+  source: dataset
+  date: '1996-08-13'
+  date_basis: tanggal_penetapan
+  text: pp_53_1996_1996-08-13.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4fad033b1f85886f989436abe4109650e4bc3955fa41a9947a1643460f1b955c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4fad033b1f85886f989436abe4109650e4bc3955fa41a9947a1643460f1b955c
+  source_title: PP_No._53_Th_1996
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 28
+  status: none_known

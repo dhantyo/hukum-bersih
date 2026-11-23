@@ -1,0 +1,38 @@
+id: pp_77_1992
+akn: /akn/id/act/pp/1992/77
+type: pp
+number: '77'
+year: 1992
+title: Peraturan Pemerintah Nomor 77 Tahun 1992 tentang Dana Pensiun Lembaga Keuangan
+tentang: DANA PENSIUN LEMBAGA KEUANGAN
+short_name: null
+status: null
+tanggal_penetapan: '1992-11-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_77_1992_1992-11-30
+  kind: asli
+  source: dataset
+  date: '1992-11-30'
+  date_basis: tanggal_penetapan
+  text: pp_77_1992_1992-11-30.txt
+  pasal_count: 28
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:372418dffc15605d3b5d663ad3cac47e1dc12781c44a99cd2a5181079af99d8c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:372418dffc15605d3b5d663ad3cac47e1dc12781c44a99cd2a5181079af99d8c
+  source_title: PP_NO_77_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 51
+  status: none_known

@@ -1,0 +1,40 @@
+id: pp_32_2009
+akn: /akn/id/act/pp/2009/32
+type: pp
+number: '32'
+year: 2009
+title: Peraturan Pemerintah Nomor 32 Tahun 2009 tentang Tempat Penimbunan Berikat
+tentang: TEMPAT PENIMBUNAN BERIKAT
+short_name: null
+status: diubah
+tanggal_penetapan: '2009-03-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_32_2009_2009-03-24
+  kind: asli
+  source: dataset
+  date: '2009-03-24'
+  date_basis: tanggal_penetapan
+  text: pp_32_2009_2009-03-24.txt
+  pasal_count: 50
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7ff44165cb4852d65b689429ca60c12b50120bb3ae505626caca7868b13812a6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7ff44165cb4852d65b689429ca60c12b50120bb3ae505626caca7868b13812a6
+  source_title: PP_No_32_2009
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 108
+  status: amended
+  amended_by:
+  - sha256:3e83cf0bb7f293494a963cf9446e4d591980380c1975d6d697b6c685513cbe7d

@@ -1,0 +1,29 @@
+id: pp_11_2001
+akn: /akn/id/act/pp/2001/11
+type: pp
+number: '11'
+year: 2001
+title: Peraturan Pemerintah Nomor 11 Tahun 2001 tentang Informasi Keuangan Daerah
+tentang: INFORMASI KEUANGAN DAERAH
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-03-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e22423da747fe1f321131c66ff5d1b1557665e276cdfeaa7ae9c9cd73fff8839
+  source_title: PP_NO_11_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:4e76651be242507734bc1b385a4ac2249a608663f8958f6ed4bc62f6380bbf9a
+parse_error: 'v13: rebuilt text has 3 pasal, the dataset lists 8'

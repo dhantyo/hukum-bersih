@@ -1,0 +1,41 @@
+id: pp_1_2006
+akn: /akn/id/act/pp/2006/1
+type: pp
+number: '1'
+year: 2006
+title: Peraturan Pemerintah Nomor 1 Tahun 2006 tentang Besaran Dan Penggunaan Iuran
+  Badan Usaha Dalam Kegiatan Usaha Penyediaan Dan Pendistribusian Bahan Bakar Minyak
+  Dan Pengangkutan Gas Bumi Melalui Pipa
+tentang: BESARAN DAN PENGGUNAAN IURAN BADAN USAHA DALAM KEGIATAN USAHA PENYEDIAAN
+  DAN PENDISTRIBUSIAN BAHAN BAKAR MINYAK DAN PENGANGKUTAN GAS BUMI MELALUI PIPA
+short_name: null
+status: null
+tanggal_penetapan: '2006-01-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_1_2006_2006-01-30
+  kind: asli
+  source: dataset
+  date: '2006-01-30'
+  date_basis: tanggal_penetapan
+  text: pp_1_2006_2006-01-30.txt
+  pasal_count: 22
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0e0dcf551f5429f640b2f4259b3a6ebb596ab7c0d595602cada44770c0f3362e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0e0dcf551f5429f640b2f4259b3a6ebb596ab7c0d595602cada44770c0f3362e
+  source_title: PP_no_1_th_2006
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 28
+  status: none_known

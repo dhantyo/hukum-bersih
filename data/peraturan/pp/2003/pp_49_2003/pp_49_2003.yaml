@@ -1,0 +1,39 @@
+id: pp_49_2003
+akn: /akn/id/act/pp/2003/49
+type: pp
+number: '49'
+year: 2003
+title: Peraturan Pemerintah Nomor 49 Tahun 2003 tentang Penjualan Saham Pada Perusahaan
+  Perseroan (Persero) Pt Bank Rakyat Indonesia
+tentang: PENJUALAN SAHAM PADA PERUSAHAAN PERSEROAN (PERSERO) PT BANK RAKYAT INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2003-10-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_49_2003_2003-10-13
+  kind: asli
+  source: dataset
+  date: '2003-10-13'
+  date_basis: tanggal_penetapan
+  text: pp_49_2003_2003-10-13.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0d33f6c5dd0989903bceeef2becae530d5e475dc6c5bc6b0248ceda23af55191
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0d33f6c5dd0989903bceeef2becae530d5e475dc6c5bc6b0248ceda23af55191
+  source_title: PP_Nomor_49_Tahun_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: none_known

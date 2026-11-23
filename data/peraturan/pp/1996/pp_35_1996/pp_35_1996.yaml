@@ -1,0 +1,33 @@
+id: pp_35_1996
+akn: /akn/id/act/pp/1996/35
+type: pp
+number: '35'
+year: 1996
+title: Peraturan Pemerintah Nomor 35 Tahun 1996 tentang Perubahan Atas Peraturan Pemerintah
+  Nomor 36 Tahun 1977 Tentang Pengakhiran Kegiatan Usaha Asing Dalam Bidang Perdagangan
+  Sebagaimana Telah Diubah Dengan Peraturan Pemerintah Nomor 19 Tahun 1988
+tentang: PERUBAHAN ATAS PERATURAN PEMERINTAH NOMOR 36 TAHUN 1977 TENTANG PENGAKHIRAN
+  KEGIATAN USAHA ASING DALAM BIDANG PERDAGANGAN SEBAGAIMANA TELAH DIUBAH DENGAN PERATURAN
+  PEMERINTAH NOMOR 19 TAHUN 1988
+short_name: null
+status: diubah
+tanggal_penetapan: '1996-06-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e6aa4a8be31c59b0c272ca7524548757c0514c64ea5cedc6423d9ecc2c3ed93f
+  source_title: PP_No._35_Th_1996
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: amended
+  amended_by:
+  - sha256:88806099b77b6453318ce5e9112315bcf5d05b4e55b67081c5b54fb140ccaf94
+parse_error: 'v13: rebuilt text has 2 pasal, the dataset lists 3'

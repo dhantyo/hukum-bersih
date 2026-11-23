@@ -1,0 +1,41 @@
+id: pp_5_2002
+akn: /akn/id/act/pp/2002/5
+type: pp
+number: '5'
+year: 2002
+title: Peraturan Pemerintah Nomor 5 Tahun 2002 tentang Perubahan Atas Peraturan Pemerintah
+  Nomor 29 Tahun 1996 Tentang Pembayaran Pajak Penghasilan Atas Penghasilan Dari Persewaan
+  Tanah Dan/Atau Bangunan
+tentang: PERUBAHAN ATAS PERATURAN PEMERINTAH NOMOR 29 TAHUN 1996 TENTANG PEMBAYARAN
+  PAJAK PENGHASILAN ATAS PENGHASILAN DARI PERSEWAAN TANAH DAN/ATAU BANGUNAN
+short_name: null
+status: null
+tanggal_penetapan: '2002-05-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_5_2002_2002-05-01
+  kind: asli
+  source: dataset
+  date: '2002-05-01'
+  date_basis: tanggal_penetapan
+  text: pp_5_2002_2002-05-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ce4624ed072fe054535d3a936104f29a4ae0a24f7a7930fbe9fe54e53765570c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ce4624ed072fe054535d3a936104f29a4ae0a24f7a7930fbe9fe54e53765570c
+  source_title: PP_No.5_TH_2002
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

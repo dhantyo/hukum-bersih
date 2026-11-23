@@ -1,0 +1,40 @@
+id: pp_71_2012
+akn: /akn/id/act/pp/2012/71
+type: pp
+number: '71'
+year: 2012
+title: Peraturan Pemerintah Nomor 71 Tahun 2012 tentang Perlakuan Pajak Pertambahan
+  Nilai Atas Penyerahan Avtur Untuk Keperluan Angkutan Udara Luar Negeri
+tentang: PERLAKUAN PAJAK PERTAMBAHAN NILAI ATAS PENYERAHAN AVTUR UNTUK KEPERLUAN ANGKUTAN
+  UDARA LUAR NEGERI
+short_name: null
+status: null
+tanggal_penetapan: '2012-08-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_71_2012_2012-08-13
+  kind: asli
+  source: dataset
+  date: '2012-08-13'
+  date_basis: tanggal_penetapan
+  text: pp_71_2012_2012-08-13.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2f3ca9507f3b45abf9499062ff567a856dbaab6834fcc47dfbf9fb19ca027c18
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2f3ca9507f3b45abf9499062ff567a856dbaab6834fcc47dfbf9fb19ca027c18
+  source_title: PP_Nomor_71_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: none_known

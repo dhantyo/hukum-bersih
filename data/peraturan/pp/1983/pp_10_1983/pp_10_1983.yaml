@@ -1,0 +1,42 @@
+id: pp_10_1983
+akn: /akn/id/act/pp/1983/10
+type: pp
+number: '10'
+year: 1983
+title: Peraturan Pemerintah Nomor 10 Tahun 1983 tentang Izin Perkawinan Dan Perceraian
+  Bagi Pegawai Negeri Sipil Presiden Republik Indonesia
+tentang: IZIN PERKAWINAN DAN PERCERAIAN BAGI PEGAWAI NEGERI SIPIL Presiden Republik
+  Indonesia
+short_name: null
+status: diubah
+tanggal_penetapan: '1983-04-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_10_1983_1983-04-21
+  kind: asli
+  source: dataset
+  date: '1983-04-21'
+  date_basis: tanggal_penetapan
+  text: pp_10_1983_1983-04-21.txt
+  pasal_count: 23
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e7da4e8367324c4b8c6c749932fb79cb0da9826fda40918a847802cdf50822a0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e7da4e8367324c4b8c6c749932fb79cb0da9826fda40918a847802cdf50822a0
+  source_title: PP_NO._10_TH_1983
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 34
+  status: amended
+  amended_by:
+  - sha256:11f2a236fef0f3915a605941114f4ffe19fa363d5d091189a1e8b85495961bc1

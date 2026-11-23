@@ -1,0 +1,42 @@
+id: pp_24_2001
+akn: /akn/id/act/pp/2001/24
+type: pp
+number: '24'
+year: 2001
+title: Peraturan Pemerintah Nomor 24 Tahun 2001 tentang Pencabutan Peraturan Pemerintah
+  Nomor 25 Tahun 1993 Tentang Pengalihan Bentuk Perusahaan Negara Lokananta Menjadi
+  Perusahaan Perseroan (Persero) Dan Pembubaran Perusahaan Negara Lokananta
+tentang: PENCABUTAN PERATURAN PEMERINTAH NOMOR 25 TAHUN 1993 TENTANG PENGALIHAN BENTUK
+  PERUSAHAAN NEGARA LOKANANTA MENJADI PERUSAHAAN PERSEROAN (PERSERO) DAN PEMBUBARAN
+  PERUSAHAAN NEGARA LOKANANTA
+short_name: null
+status: null
+tanggal_penetapan: '2001-05-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_24_2001_2001-05-18
+  kind: asli
+  source: dataset
+  date: '2001-05-18'
+  date_basis: tanggal_penetapan
+  text: pp_24_2001_2001-05-18.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:93919359cf60f76a0ade867a00041706c2c6b1261c66f60c3a6598b7db781952
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:93919359cf60f76a0ade867a00041706c2c6b1261c66f60c3a6598b7db781952
+  source_title: PP_NO_24_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: none_known

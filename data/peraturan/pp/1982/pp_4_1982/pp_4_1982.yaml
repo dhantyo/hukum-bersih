@@ -1,0 +1,40 @@
+id: pp_4_1982
+akn: /akn/id/act/pp/1982/4
+type: pp
+number: '4'
+year: 1982
+title: Peraturan Pemerintah Nomor 4 Tahun 1982 tentang Pemberian Uang Duka Wafat Bagi
+  Keluarga Penerima Pensiun Presiden Republik Indonesia
+tentang: PEMBERIAN UANG DUKA WAFAT BAGI KELUARGA PENERIMA PENSIUN Presiden Republik
+  Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1982-02-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_4_1982_1982-02-11
+  kind: asli
+  source: dataset
+  date: '1982-02-11'
+  date_basis: tanggal_penetapan
+  text: pp_4_1982_1982-02-11.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a9dd857aebdc90fbeae60227f930cd44d362dfda69c5d4ab6239ac577f55a486
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a9dd857aebdc90fbeae60227f930cd44d362dfda69c5d4ab6239ac577f55a486
+  source_title: PP_NO_4_TH_1982
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

@@ -1,0 +1,40 @@
+id: pp_68_2011
+akn: /akn/id/act/pp/2011/68
+type: pp
+number: '68'
+year: 2011
+title: Peraturan Pemerintah Nomor 68 Tahun 2011 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Pada International Fund For Agricultural Development
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA PADA INTERNATIONAL
+  FUND FOR AGRICULTURAL DEVELOPMENT
+short_name: null
+status: null
+tanggal_penetapan: '2011-12-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_68_2011_2011-12-29
+  kind: asli
+  source: dataset
+  date: '2011-12-29'
+  date_basis: tanggal_penetapan
+  text: pp_68_2011_2011-12-29.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8d3dffbbf437b8993614e2be249b0301760367ceb0f157b56f17f4a14637596c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8d3dffbbf437b8993614e2be249b0301760367ceb0f157b56f17f4a14637596c
+  source_title: PP_68_Tahun_2011
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

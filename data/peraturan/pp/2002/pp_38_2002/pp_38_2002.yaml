@@ -1,0 +1,30 @@
+id: pp_38_2002
+akn: /akn/id/act/pp/2002/38
+type: pp
+number: '38'
+year: 2002
+title: Peraturan Pemerintah Nomor 38 Tahun 2002 tentang Daftar Koordinat Geografis
+  Titik-Titik Garis Pangkal Kepulauan Indonesia
+tentang: DAFTAR KOORDINAT GEOGRAFIS TITIK-TITIK GARIS PANGKAL KEPULAUAN INDONESIA
+short_name: null
+status: diubah
+tanggal_penetapan: '2002-06-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:309c4921d9f5bdd67d3d78042fbbbcc67512d1ba229a97e5db96fa2612cbb6eb
+  source_title: PP_No.38_TH_2002
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 100
+  status: amended
+  amended_by:
+  - sha256:06ed916357764fc24f20e8e8e8c790b2be4261c5f03107387fb1cd63ead2c58a
+parse_error: 'v13: rebuilt text has 5 pasal, the dataset lists 13'

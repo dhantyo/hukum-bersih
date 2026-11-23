@@ -1,0 +1,40 @@
+id: pp_17_1995
+akn: /akn/id/act/pp/1995/17
+type: pp
+number: '17'
+year: 1995
+title: Peraturan Pemerintah Nomor 17 Tahun 1995 tentang Pemindahan Sisa Kredit Anggaran
+  Pembangunan Tahun Anggaran 1994/95 Ke Tahun Anggaran 1995/96
+tentang: PEMINDAHAN SISA KREDIT ANGGARAN PEMBANGUNAN TAHUN ANGGARAN 1994/95 KE TAHUN
+  ANGGARAN 1995/96
+short_name: null
+status: null
+tanggal_penetapan: '1995-06-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_17_1995_1995-06-27
+  kind: asli
+  source: dataset
+  date: '1995-06-27'
+  date_basis: tanggal_penetapan
+  text: pp_17_1995_1995-06-27.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:36fd232d79a3bf0734d8983575fd5e4370b5364a2b62c7ed28bc82ebbfc7d0ee
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:36fd232d79a3bf0734d8983575fd5e4370b5364a2b62c7ed28bc82ebbfc7d0ee
+  source_title: PP_No._17_Th_1995
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

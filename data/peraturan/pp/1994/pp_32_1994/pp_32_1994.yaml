@@ -1,0 +1,42 @@
+id: pp_32_1994
+akn: /akn/id/act/pp/1994/32
+type: pp
+number: '32'
+year: 1994
+title: Peraturan Pemerintah Nomor 32 Tahun 1994 tentang Visa, Izin, Masuk, Dan Izin
+  Keimigrasian
+tentang: VISA, IZIN, MASUK, DAN IZIN KEIMIGRASIAN
+short_name: null
+status: diubah
+tanggal_penetapan: '1994-10-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_32_1994_1994-10-14
+  kind: asli
+  source: dataset
+  date: '1994-10-14'
+  date_basis: tanggal_penetapan
+  text: pp_32_1994_1994-10-14.txt
+  pasal_count: 54
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8dd4abd44cdbff12ebf200ffa840d188b8d34b1a7b34b5bee15ce7e5772ba0b3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8dd4abd44cdbff12ebf200ffa840d188b8d34b1a7b34b5bee15ce7e5772ba0b3
+  source_title: PP_No._32_Th_1994
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 87
+  status: amended
+  amended_by:
+  - sha256:5635001a68d88ad471430c2b1d4acb689ba2d5b23cb5174f088bcfe384500ab4
+  - sha256:a893bd28d3db829efdafd81752b1cf4d3c204ac9e28d7ff7e814e6b4f4b75aec

@@ -1,0 +1,40 @@
+id: pp_8_1995
+akn: /akn/id/act/pp/1995/8
+type: pp
+number: '8'
+year: 1995
+title: Peraturan Pemerintah Nomor 8 Tahun 1995 tentang Penyerahan Sebagian Urusan
+  Pemerintahan Kepada 26 (Dua Puluh Enam) Daerah Tingkat Ii Percontohan
+tentang: PENYERAHAN SEBAGIAN URUSAN PEMERINTAHAN KEPADA 26 (DUA PULUH ENAM) DAERAH
+  TINGKAT II PERCONTOHAN
+short_name: null
+status: null
+tanggal_penetapan: '1995-04-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_8_1995_1995-04-21
+  kind: asli
+  source: dataset
+  date: '1995-04-21'
+  date_basis: tanggal_penetapan
+  text: pp_8_1995_1995-04-21.txt
+  pasal_count: 16
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4b5943f5f70259b8a59a7e9bd8755d69c99728beb4edb795b4ee60513372e070
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4b5943f5f70259b8a59a7e9bd8755d69c99728beb4edb795b4ee60513372e070
+  source_title: PP_No._8_Th_1995
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 30
+  status: none_known

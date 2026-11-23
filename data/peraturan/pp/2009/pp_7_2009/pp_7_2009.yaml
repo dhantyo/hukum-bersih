@@ -1,0 +1,42 @@
+id: pp_7_2009
+akn: /akn/id/act/pp/2009/7
+type: pp
+number: '7'
+year: 2009
+title: Peraturan Pemerintah Nomor 7 Tahun 2009 tentang Jenis Dan Tarif Atas Jenis
+  Penerimaan Negara Bukan Pajak Yang Berlaku Pada Departemen Komunikasi Dan Informatika
+tentang: JENIS DAN TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA
+  DEPARTEMEN KOMUNIKASI DAN INFORMATIKA
+short_name: null
+status: diubah
+tanggal_penetapan: '2009-01-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_7_2009_2009-01-16
+  kind: asli
+  source: dataset
+  date: '2009-01-16'
+  date_basis: tanggal_penetapan
+  text: pp_7_2009_2009-01-16.txt
+  pasal_count: 16
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ce0505c703ad74fa19e4df3f4108339717992b9f861c33c55ead597db9680c4d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ce0505c703ad74fa19e4df3f4108339717992b9f861c33c55ead597db9680c4d
+  source_title: PP_No_7_2009
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 80
+  status: amended
+  amended_by:
+  - sha256:8b7e45de16836d2dcefca22b008b195516f7ac646bf8b3e4f88c8d2fe4e7f7ab

@@ -1,0 +1,30 @@
+id: pp_94_1999
+akn: /akn/id/act/pp/1999/94
+type: pp
+number: '94'
+year: 1999
+title: Peraturan Pemerintah Nomor 94 Tahun 1999 tentang Perusahaan Umum (Perum) Jasa
+  Tirta Ii Presiden Republik Indonesia
+tentang: PERUSAHAAN UMUM (PERUM) JASA TIRTA II PRESIDEN REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1999-10-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:91432f2ec145a4137b53405d1635c95c4fce687f7e1447de2fa7c2e87547b520
+  source_title: PP_No._94_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 80
+  status: revoked
+  revoked_by:
+  - sha256:868cc20f87a4ebcd5a16e4e66432ffcea8804d9862bd7fff05ed15c1cce65e62
+parse_error: 'v13: no pasal found in the rebuilt text'

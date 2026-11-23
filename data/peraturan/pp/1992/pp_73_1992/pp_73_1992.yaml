@@ -1,0 +1,42 @@
+id: pp_73_1992
+akn: /akn/id/act/pp/1992/73
+type: pp
+number: '73'
+year: 1992
+title: Peraturan Pemerintah Nomor 73 Tahun 1992 tentang Penyelenggaraan Usaha Perasuransian
+tentang: PENYELENGGARAAN USAHA PERASURANSIAN
+short_name: null
+status: diubah
+tanggal_penetapan: '1992-10-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_73_1992_1992-10-30
+  kind: asli
+  source: dataset
+  date: '1992-10-30'
+  date_basis: tanggal_penetapan
+  text: pp_73_1992_1992-10-30.txt
+  pasal_count: 47
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:be642397416e39b033089395ddc8dee9fd73c7377c48989603af21c6f844f1bb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:be642397416e39b033089395ddc8dee9fd73c7377c48989603af21c6f844f1bb
+  source_title: PP_NO_73_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 91
+  status: amended
+  amended_by:
+  - sha256:c9774b91ff85a5a7b279408b848a78b73c60a478e97188e4ce14b0bcd8f4b363
+  - sha256:cd08c115877479795b57356e033d1c9107dd74c9e2c68ab8369592eed448aaa6
+  - sha256:d68ad3b3b9224396de38a063a9595f916966325f377c198bcc618c4a5d552af4

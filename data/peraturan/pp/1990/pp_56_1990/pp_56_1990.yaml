@@ -1,0 +1,42 @@
+id: pp_56_1990
+akn: /akn/id/act/pp/1990/56
+type: pp
+number: '56'
+year: 1990
+title: Peraturan Pemerintah Nomor 56 Tahun 1990 tentang Pembubaran Perusahaan Umum
+  (Perum) Tambang Batubara Dan Penambahan Penyertaan Modal Negara Republik Indonesia
+  Ke Dalam Saham Perusahaan Perseroan (Persero) Pt. Tambang Batubara Bukit Asam
+tentang: PEMBUBARAN PERUSAHAAN UMUM (PERUM) TAMBANG BATUBARA DAN PENAMBAHAN PENYERTAAN
+  MODAL NEGARA REPUBLIK INDONESIA KE DALAM SAHAM PERUSAHAAN PERSEROAN (PERSERO) PT.
+  TAMBANG BATUBARA BUKIT ASAM
+short_name: null
+status: null
+tanggal_penetapan: '1990-10-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_56_1990_1990-10-30
+  kind: asli
+  source: dataset
+  date: '1990-10-30'
+  date_basis: tanggal_penetapan
+  text: pp_56_1990_1990-10-30.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:477382dd36e487f607bb85cd68ccbbea099fdd384c1b960fdfe1ec1cfad12705
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:477382dd36e487f607bb85cd68ccbbea099fdd384c1b960fdfe1ec1cfad12705
+  source_title: PP_NO_56_TH_1990
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: none_known

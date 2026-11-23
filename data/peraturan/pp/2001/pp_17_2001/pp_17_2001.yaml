@@ -1,0 +1,42 @@
+id: pp_17_2001
+akn: /akn/id/act/pp/2001/17
+type: pp
+number: '17'
+year: 2001
+title: Peraturan Pemerintah Nomor 17 Tahun 2001 tentang Tarif Atas Jenis Penerimaan
+  Negara Bukan Pajak Yang Berlaku Pada Badan Pengawas Obat Dan Makanan
+tentang: TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA BADAN PENGAWAS
+  OBAT DAN MAKANAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-04-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_17_2001_2001-04-16
+  kind: asli
+  source: dataset
+  date: '2001-04-16'
+  date_basis: tanggal_penetapan
+  text: pp_17_2001_2001-04-16.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1820f417a26e284fcdefed8d98e5347fddebb62761450308f60c3832c5aff34c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1820f417a26e284fcdefed8d98e5347fddebb62761450308f60c3832c5aff34c
+  source_title: PP_NO_17_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:e342515ec0b91848fc450596a1617f8d4a25eb3149d76f091e5137a526eb56ae

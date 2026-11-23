@@ -1,0 +1,34 @@
+id: pp_12_2001
+akn: /akn/id/act/pp/2001/12
+type: pp
+number: '12'
+year: 2001
+title: Peraturan Pemerintah Nomor 12 Tahun 2001 tentang Impor Dan Atau Penyerahan
+  Barang Kena Pajak Tertentu Yang Bersifat Strategis Yang Dibebaskan Dari Pengenaan
+  Pajak Pertambahan Nilai
+tentang: IMPOR DAN ATAU PENYERAHAN BARANG KENA PAJAK TERTENTU YANG BERSIFAT STRATEGIS
+  YANG DIBEBASKAN DARI PENGENAAN PAJAK PERTAMBAHAN NILAI
+short_name: null
+status: diubah
+tanggal_penetapan: '2001-03-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8fddb70fbff1962189c10e149cdd4380c07cfc270a79e585a07b03b346e6b167
+  source_title: PP_NO_12_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 18
+  status: amended
+  amended_by:
+  - sha256:0a396fc3b71335ca4a46df219977e829619e1d8f042a797a9de109bc84e9ace0
+  - sha256:710cb49f2e9b89fd5f8940cd26e64f7d9d9c1b87604904196e998f07e20c9c61
+  - sha256:fa88e8d4dcf748f5736d3f88974366d25df6030ddd11108b781632a3edb925bb
+parse_error: 'v13: rebuilt text has 5 pasal, the dataset lists 8'

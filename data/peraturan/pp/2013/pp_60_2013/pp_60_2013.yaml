@@ -1,0 +1,40 @@
+id: pp_60_2013
+akn: /akn/id/act/pp/2013/60
+type: pp
+number: '60'
+year: 2013
+title: Peraturan Pemerintah Nomor 60 Tahun 2013 tentang Susunan Organisasi, Personalia,
+  Dan Mekanisme Kerja Lembaga Permodalan Kewirausahaan Pemuda
+tentang: SUSUNAN ORGANISASI, PERSONALIA, DAN MEKANISME KERJA LEMBAGA PERMODALAN KEWIRAUSAHAAN
+  PEMUDA
+short_name: null
+status: null
+tanggal_penetapan: '2013-09-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_60_2013_2013-09-12
+  kind: asli
+  source: dataset
+  date: '2013-09-12'
+  date_basis: tanggal_penetapan
+  text: pp_60_2013_2013-09-12.txt
+  pasal_count: 23
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8ccb586e859c91e66bbbe01f8ccf3806b9a3eab5832d38553e9a8c89023d509f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8ccb586e859c91e66bbbe01f8ccf3806b9a3eab5832d38553e9a8c89023d509f
+  source_title: PP_Nomor_60_Tahun_2013
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 32
+  status: none_known

@@ -1,0 +1,40 @@
+id: pp_63_2011
+akn: /akn/id/act/pp/2011/63
+type: pp
+number: '63'
+year: 2011
+title: Peraturan Pemerintah Nomor 63 Tahun 2011 tentang Penyertaan Modal Negara Republik
+  Indonesia Untuk Pembentukan Credit Guarantee And Investment Facility
+tentang: PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA UNTUK PEMBENTUKAN CREDIT GUARANTEE
+  AND INVESTMENT FACILITY
+short_name: null
+status: null
+tanggal_penetapan: '2011-12-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_63_2011_2011-12-29
+  kind: asli
+  source: dataset
+  date: '2011-12-29'
+  date_basis: tanggal_penetapan
+  text: pp_63_2011_2011-12-29.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6102cc1d23f7f90554082c2652703b4c36b51c143e24542a53e6a165f6e4940e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6102cc1d23f7f90554082c2652703b4c36b51c143e24542a53e6a165f6e4940e
+  source_title: PP_63_Tahun_2011
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

@@ -1,0 +1,42 @@
+id: pp_5_2004
+akn: /akn/id/act/pp/2004/5
+type: pp
+number: '5'
+year: 2004
+title: Peraturan Pemerintah Nomor 5 Tahun 2004 tentang Tarif Atas Jenis Penerimaan
+  Negara Bukan Pajak Yang Berlaku Pada Lembaga Ilmu Pengetahuan Indonesia
+tentang: TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA LEMBAGA
+  ILMU PENGETAHUAN INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2004-01-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_5_2004_2004-01-19
+  kind: asli
+  source: dataset
+  date: '2004-01-19'
+  date_basis: tanggal_penetapan
+  text: pp_5_2004_2004-01-19.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2ca90ab12046be7cb67db37e0d140769290dd783b6caf228f789805415f497fc
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2ca90ab12046be7cb67db37e0d140769290dd783b6caf228f789805415f497fc
+  source_title: PP_No.5_TH_2004
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 159
+  status: revoked
+  revoked_by:
+  - sha256:c86ca7dd7663e6c9b2e8906f52a149e071345d699790747dbd20de1ce9c95225

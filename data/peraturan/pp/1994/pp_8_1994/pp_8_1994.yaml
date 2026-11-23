@@ -1,0 +1,39 @@
+id: pp_8_1994
+akn: /akn/id/act/pp/1994/8
+type: pp
+number: '8'
+year: 1994
+title: Peraturan Pemerintah Nomor 8 Tahun 1994 tentang Badan Pertimbangan Perfilman
+  Nasional
+tentang: BADAN PERTIMBANGAN PERFILMAN NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '1994-03-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_8_1994_1994-03-03
+  kind: asli
+  source: dataset
+  date: '1994-03-03'
+  date_basis: tanggal_penetapan
+  text: pp_8_1994_1994-03-03.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2365d2d903e6084300f24dba20ce2ceada1533f569cfd0e23372c12229a76363
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2365d2d903e6084300f24dba20ce2ceada1533f569cfd0e23372c12229a76363
+  source_title: PP_No._8_Th_1994
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 21
+  status: none_known

@@ -1,0 +1,41 @@
+id: pp_147_2000
+akn: /akn/id/act/pp/2000/147
+type: pp
+number: '147'
+year: 2000
+title: Peraturan Pemerintah Nomor 147 Tahun 2000 tentang Perubahan Atas Peraturan
+  Pemerintah Nomor 20 Tahun 2000 Tentang Perlakuan Perpajakan Di Kawasan Pengembangan
+  Ekonomi Terpadu
+tentang: PERUBAHAN ATAS PERATURAN PEMERINTAH NOMOR 20 TAHUN 2000 TENTANG PERLAKUAN
+  PERPAJAKAN DI KAWASAN PENGEMBANGAN EKONOMI TERPADU
+short_name: null
+status: null
+tanggal_penetapan: '2000-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_147_2000_2000-01-01
+  kind: asli
+  source: dataset
+  date: '2000-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_147_2000_2000-01-01.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8b9a6d5bb266360fb22f2b12a97f2369d1957f896cd0da669446553f08bce1e3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8b9a6d5bb266360fb22f2b12a97f2369d1957f896cd0da669446553f08bce1e3
+  source_title: PP_No.147_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

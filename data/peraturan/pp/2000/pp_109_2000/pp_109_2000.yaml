@@ -1,0 +1,41 @@
+id: pp_109_2000
+akn: /akn/id/act/pp/2000/109
+type: pp
+number: '109'
+year: 2000
+title: Peraturan Pemerintah Nomor 109 Tahun 2000 tentang Kedudukan Keuangan Kepala
+  Daerah Dan Wakil Kepala Daerah
+tentang: KEDUDUKAN KEUANGAN KEPALA DAERAH DAN WAKIL KEPALA DAERAH
+short_name: null
+status: diubah
+tanggal_penetapan: '2000-11-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_109_2000_2000-11-30
+  kind: asli
+  source: dataset
+  date: '2000-11-30'
+  date_basis: tanggal_penetapan
+  text: pp_109_2000_2000-11-30.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4c52fde31ffe61c3f8ad95eb182b3020b6ebe9c528c780b6aadb49cd38f6ecb9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4c52fde31ffe61c3f8ad95eb182b3020b6ebe9c528c780b6aadb49cd38f6ecb9
+  source_title: PP_No.109_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 23
+  status: amended
+  amended_by:
+  - sha256:eff1512de95910c4050e969f14c02099c534a9b7987dfb8461a4dfe995a2401f

@@ -1,0 +1,41 @@
+id: pp_72_1992
+akn: /akn/id/act/pp/1992/72
+type: pp
+number: '72'
+year: 1992
+title: Peraturan Pemerintah Nomor 72 Tahun 1992 tentang Bank Berdasarkan Prinsip Bagi
+  Hasil
+tentang: BANK BERDASARKAN PRINSIP BAGI HASIL
+short_name: null
+status: dicabut
+tanggal_penetapan: '1992-10-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_72_1992_1992-10-30
+  kind: asli
+  source: dataset
+  date: '1992-10-30'
+  date_basis: tanggal_penetapan
+  text: pp_72_1992_1992-10-30.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:554abdda1aab42b7ef5e3f23c3baeb7602c3ef245e799147d12ec5a6a65e1027
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:554abdda1aab42b7ef5e3f23c3baeb7602c3ef245e799147d12ec5a6a65e1027
+  source_title: PP_NO_72_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 20
+  status: revoked
+  revoked_by:
+  - sha256:dde917e16c22c5bb3ac65d5d361e4b36e28b3c11f7ca4856b228493de235fa28

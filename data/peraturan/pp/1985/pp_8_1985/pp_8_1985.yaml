@@ -1,0 +1,40 @@
+id: pp_8_1985
+akn: /akn/id/act/pp/1985/8
+type: pp
+number: '8'
+year: 1985
+title: Peraturan Pemerintah Nomor 8 Tahun 1985
+tentang: null
+short_name: null
+status: dicabut
+tanggal_penetapan: '1985-02-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_8_1985_1985-02-08
+  kind: asli
+  source: dataset
+  date: '1985-02-08'
+  date_basis: tanggal_penetapan
+  text: pp_8_1985_1985-02-08.txt
+  pasal_count: 57
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4c025d99f0a7e57bc508f7d445eda893ced28a39403ec67ea688ec783d675725
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4c025d99f0a7e57bc508f7d445eda893ced28a39403ec67ea688ec783d675725
+  source_title: PP_NO_8_TH_1985
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 70
+  status: revoked
+  revoked_by:
+  - sha256:b1a80b4b0f33f8f0a6c1660370cedba64cddd3c8a652bde4fa1365d6c0872462

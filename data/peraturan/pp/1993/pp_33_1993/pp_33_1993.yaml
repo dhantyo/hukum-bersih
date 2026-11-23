@@ -1,0 +1,41 @@
+id: pp_33_1993
+akn: /akn/id/act/pp/1993/33
+type: pp
+number: '33'
+year: 1993
+title: Peraturan Pemerintah Nomor 33 Tahun 1993 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt.
+  Pal Indonesia
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT. PAL INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '1993-05-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_33_1993_1993-05-24
+  kind: asli
+  source: dataset
+  date: '1993-05-24'
+  date_basis: tanggal_penetapan
+  text: pp_33_1993_1993-05-24.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:19f2dcea9dad249ca215b2b7417a7ee85c264b487b88c1c14cb9e3d1d5c513cb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:19f2dcea9dad249ca215b2b7417a7ee85c264b487b88c1c14cb9e3d1d5c513cb
+  source_title: PP_No._33_Th_1993
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

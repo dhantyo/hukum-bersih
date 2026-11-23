@@ -1,0 +1,40 @@
+id: pp_66_2002
+akn: /akn/id/act/pp/2002/66
+type: pp
+number: '66'
+year: 2002
+title: Peraturan Pemerintah Nomor 66 Tahun 2002 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Perusahaan Umum (Perum) Damri
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL PERUSAHAAN
+  UMUM (PERUM) DAMRI
+short_name: null
+status: null
+tanggal_penetapan: '2002-12-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_66_2002_2002-12-30
+  kind: asli
+  source: dataset
+  date: '2002-12-30'
+  date_basis: tanggal_penetapan
+  text: pp_66_2002_2002-12-30.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bf0a0b9b35c50d0bf8d07bc2f69dc1a4aa5172c8fbe8d3182c978a8835dd19c6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bf0a0b9b35c50d0bf8d07bc2f69dc1a4aa5172c8fbe8d3182c978a8835dd19c6
+  source_title: PP_No.66_TH_2002
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

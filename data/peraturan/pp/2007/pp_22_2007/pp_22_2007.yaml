@@ -1,0 +1,40 @@
+id: pp_22_2007
+akn: /akn/id/act/pp/2007/22
+type: pp
+number: '22'
+year: 2007
+title: Peraturan Pemerintah Nomor 22 Tahun 2007 tentang Perubahan Batas Wllayah Kota
+  Tegal Dengan Kabupaten Brebes Provinsi Jawa Tengah Di Muara Sungai Kaligangsa
+tentang: PERUBAHAN BATAS WlLAYAH KOTA TEGAL DENGAN KABUPATEN BREBES PROVINSI JAWA
+  TENGAH DI MUARA SUNGAI KALIGANGSA
+short_name: null
+status: null
+tanggal_penetapan: '2007-03-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_22_2007_2007-03-23
+  kind: asli
+  source: dataset
+  date: '2007-03-23'
+  date_basis: tanggal_penetapan
+  text: pp_22_2007_2007-03-23.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:24c4a8bfef550258af3f092bc9462eb7cb2b30b894f635d1d22f93e1d7c0a59b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:24c4a8bfef550258af3f092bc9462eb7cb2b30b894f635d1d22f93e1d7c0a59b
+  source_title: PP_22_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 15
+  status: none_known

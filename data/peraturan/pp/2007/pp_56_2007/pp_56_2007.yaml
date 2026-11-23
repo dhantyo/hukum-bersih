@@ -1,0 +1,41 @@
+id: pp_56_2007
+akn: /akn/id/act/pp/2007/56
+type: pp
+number: '56'
+year: 2007
+title: Peraturan Pemerintah Nomor 56 Tahun 2007 tentang Santunan Dan Tunjangan Cacat
+  Prajurit Tentara Nasional Indonesia
+tentang: SANTUNAN DAN TUNJANGAN CACAT PRAJURIT TENTARA NASIONAL INDONESIA
+short_name: null
+status: diubah
+tanggal_penetapan: '2007-10-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_56_2007_2007-10-09
+  kind: asli
+  source: dataset
+  date: '2007-10-09'
+  date_basis: tanggal_penetapan
+  text: pp_56_2007_2007-10-09.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a28bc94e2757852aed10f98411de02056661c6f8fdce25915717cf12ad5c320e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a28bc94e2757852aed10f98411de02056661c6f8fdce25915717cf12ad5c320e
+  source_title: PP_56_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 25
+  status: amended
+  amended_by:
+  - sha256:87e7fc0795525b9aac585f70cdbdcfa55f3a3dd1db8a1ef4f231fe1bd82eb855

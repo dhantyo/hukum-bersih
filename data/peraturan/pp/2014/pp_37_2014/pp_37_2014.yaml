@@ -1,0 +1,41 @@
+id: pp_37_2014
+akn: /akn/id/act/pp/2014/37
+type: pp
+number: '37'
+year: 2014
+title: Peraturan Pemerintah Nomor 37 Tahun 2014 tentang Penetapan Pensiun Pokok Pensiunan
+  Pegawai Negeri Sipil Dan Janda/Dudanya
+tentang: PENETAPAN PENSIUN POKOK PENSIUNAN PEGAWAI NEGERI SIPIL DAN JANDA/DUDANYA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2014-05-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_37_2014_2014-05-21
+  kind: asli
+  source: dataset
+  date: '2014-05-21'
+  date_basis: tanggal_penetapan
+  text: pp_37_2014_2014-05-21.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a43cf5e03f73f41f5c446732a2e2e87a1f66bdffe3879b28b5e548a807194fb7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a43cf5e03f73f41f5c446732a2e2e87a1f66bdffe3879b28b5e548a807194fb7
+  source_title: PP_Nomor_37_Tahun_2014
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:231b44983efaa42e690761ac437f323308c20b001bebb480176ec618c062b121

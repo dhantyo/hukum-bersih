@@ -1,0 +1,41 @@
+id: pp_26_2002
+akn: /akn/id/act/pp/2002/26
+type: pp
+number: '26'
+year: 2002
+title: Peraturan Pemerintah Nomor 26 Tahun 2002 tentang Keselamatan Pengangkutan Zat
+  Radioaktif
+tentang: KESELAMATAN PENGANGKUTAN ZAT RADIOAKTIF
+short_name: null
+status: dicabut
+tanggal_penetapan: '2002-05-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_26_2002_2002-05-13
+  kind: asli
+  source: dataset
+  date: '2002-05-13'
+  date_basis: tanggal_penetapan
+  text: pp_26_2002_2002-05-13.txt
+  pasal_count: 39
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b721ade3bd200c5fbb4ba7389829b766e19e30be180fb5e471ef252caeffd69e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b721ade3bd200c5fbb4ba7389829b766e19e30be180fb5e471ef252caeffd69e
+  source_title: PP_No.26_TH_2002
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 70
+  status: revoked
+  revoked_by:
+  - sha256:6cef0749f1d211c84fa49fd7e179dba12866a542590616884dcd6d26b6681e9b

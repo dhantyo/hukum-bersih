@@ -1,0 +1,38 @@
+id: pp_2_2012
+akn: /akn/id/act/pp/2012/2
+type: pp
+number: '2'
+year: 2012
+title: Peraturan Pemerintah Nomor 2 Tahun 2012 tentang Hibah Daerah
+tentang: HIBAH DAERAH
+short_name: null
+status: null
+tanggal_penetapan: '2012-01-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_2_2012_2012-01-03
+  kind: asli
+  source: dataset
+  date: '2012-01-03'
+  date_basis: tanggal_penetapan
+  text: pp_2_2012_2012-01-03.txt
+  pasal_count: 32
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8959cd9c3aa47e6b523d48957ae852d41fa09d5f91047203a9f99153fd2dde7d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8959cd9c3aa47e6b523d48957ae852d41fa09d5f91047203a9f99153fd2dde7d
+  source_title: PP_Nomor_2_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 53
+  status: none_known

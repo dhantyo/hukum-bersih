@@ -1,0 +1,42 @@
+id: pp_46_1991
+akn: /akn/id/act/pp/1991/46
+type: pp
+number: '46'
+year: 1991
+title: Peraturan Pemerintah Nomor 46 Tahun 1991 tentang Pengalihan Bentuk Perusahaan
+  Negara Percetakan Negara Republik Indonesia Menjadi Perusahaan Umum (Perum)
+tentang: PENGALIHAN BENTUK PERUSAHAAN NEGARA PERCETAKAN NEGARA REPUBLIK INDONESIA
+  MENJADI PERUSAHAAN UMUM (PERUM)
+short_name: null
+status: dicabut
+tanggal_penetapan: '1991-08-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_46_1991_1991-08-01
+  kind: asli
+  source: dataset
+  date: '1991-08-01'
+  date_basis: tanggal_penetapan
+  text: pp_46_1991_1991-08-01.txt
+  pasal_count: 57
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7a62cc98fd256e3885d026752f84fcad9d4d0ab46a54a5a11247fcc1187b0407
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7a62cc98fd256e3885d026752f84fcad9d4d0ab46a54a5a11247fcc1187b0407
+  source_title: PP_NO_46_TH_1991
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 61
+  status: revoked
+  revoked_by:
+  - sha256:6032f6822fe96b89ed49ea0b77d5b6fb0f04fa5be388bc51d0b54693aa104abb

@@ -1,0 +1,42 @@
+id: pp_13_1988
+akn: /akn/id/act/pp/1988/13
+type: pp
+number: '13'
+year: 1988
+title: Peraturan Pemerintah Nomor 13 Tahun 1988 tentang Pajak Atas Bunga Deposito
+  Berjangka Sertifikat Deposito Dan Tabungan Presiden Republik Indonesia
+tentang: PAJAK ATAS BUNGA DEPOSITO BERJANGKA SERTIFIKAT DEPOSITO DAN TABUNGAN Presiden
+  Republik Indonesia
+short_name: null
+status: dicabut
+tanggal_penetapan: '1988-11-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_13_1988_1988-11-14
+  kind: asli
+  source: dataset
+  date: '1988-11-14'
+  date_basis: tanggal_penetapan
+  text: pp_13_1988_1988-11-14.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b7500bab269e8e6ec8d90f61ab22e0329836c5fe3a35587604c3f908954f8bf5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b7500bab269e8e6ec8d90f61ab22e0329836c5fe3a35587604c3f908954f8bf5
+  source_title: PP_NO_13_TH_1988
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 16
+  status: revoked
+  revoked_by:
+  - sha256:70975e8bd7c25d74c35a3d0089a5398f96f0ccf15ca3effe78b8404ea8052fa4

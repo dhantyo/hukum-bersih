@@ -1,0 +1,43 @@
+id: pp_5_2001
+akn: /akn/id/act/pp/2001/5
+type: pp
+number: '5'
+year: 2001
+title: Peraturan Pemerintah Nomor 5 Tahun 2001 tentang Pemberhentian Pegawai Negeri
+  Dan Pembatalan Surat Keputusan Pensiun Pegawai Negeri Pada Bekas Propinsi Timor
+  Timur
+tentang: PEMBERHENTIAN PEGAWAI NEGERI DAN PEMBATALAN SURAT KEPUTUSAN PENSIUN PEGAWAI
+  NEGERI PADA BEKAS PROPINSI TIMOR TIMUR
+short_name: null
+status: diubah
+tanggal_penetapan: '2001-02-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_5_2001_2001-02-09
+  kind: asli
+  source: dataset
+  date: '2001-02-09'
+  date_basis: tanggal_penetapan
+  text: pp_5_2001_2001-02-09.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a855728ac0e8b472d45d83b617adb184c5e0db77693930a9a4757d22d0081fbf
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a855728ac0e8b472d45d83b617adb184c5e0db77693930a9a4757d22d0081fbf
+  source_title: PP_NO_5_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 17
+  status: amended
+  amended_by:
+  - sha256:35a4b8b3823a7e3b86cc0c3eb0d55be17b2a4d18463a931e4d0564cd696d78e3

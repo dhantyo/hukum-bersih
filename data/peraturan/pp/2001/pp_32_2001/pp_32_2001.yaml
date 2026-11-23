@@ -1,0 +1,32 @@
+id: pp_32_2001
+akn: /akn/id/act/pp/2001/32
+type: pp
+number: '32'
+year: 2001
+title: Peraturan Pemerintah Nomor 32 Tahun 2001 tentang Penetapan Pensiun Pokok Purnawirawan/Warakawuri
+  Atau Duda, Tunjangan Anak Yatim/Piatu Dan Anak Yatim-Piatu Anggota Tentara Nasional
+  Indonesia
+tentang: PENETAPAN PENSIUN POKOK PURNAWIRAWAN/WARAKAWURI ATAU DUDA, TUNJANGAN ANAK
+  YATIM/PIATU DAN ANAK YATIM-PIATU ANGGOTA TENTARA NASIONAL INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-05-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e8e0c789674aed684339a793b38197b42db0cc4e97086b067b18b566076f6fcf
+  source_title: PP_NO_32_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:95d561b7d9a828a18e3b41fec8d7df8ca7b8e2eb9b407ca45d2bd75d8b729b6c
+parse_error: 'v13: rebuilt text has 7 pasal, the dataset lists 8'

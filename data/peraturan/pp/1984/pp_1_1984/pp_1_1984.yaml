@@ -1,0 +1,39 @@
+id: pp_1_1984
+akn: /akn/id/act/pp/1984/1
+type: pp
+number: '1'
+year: 1984
+title: Peraturan Pemerintah Nomor 1 Tahun 1984 tentang Dewan Pers Presiden Republik
+  Indonesia
+tentang: DEWAN PERS Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1984-01-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_1_1984_1984-01-09
+  kind: asli
+  source: dataset
+  date: '1984-01-09'
+  date_basis: tanggal_penetapan
+  text: pp_1_1984_1984-01-09.txt
+  pasal_count: 15
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3ae4ae3d9f212233b5a37cfa4c58fc952cfc24e5a3fa155e1bcdb87befde9d68
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3ae4ae3d9f212233b5a37cfa4c58fc952cfc24e5a3fa155e1bcdb87befde9d68
+  source_title: PP_NO_1_TH_1984
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 19
+  status: none_known

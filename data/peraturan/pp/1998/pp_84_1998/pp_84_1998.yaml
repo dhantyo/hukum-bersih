@@ -1,0 +1,39 @@
+id: pp_84_1998
+akn: /akn/id/act/pp/1998/84
+type: pp
+number: '84'
+year: 1998
+title: Peraturan Pemerintah Nomor 84 Tahun 1998 tentang Program Rekapitalasi Bank
+  Umum
+tentang: PROGRAM REKAPITALASI BANK UMUM
+short_name: null
+status: null
+tanggal_penetapan: '1998-12-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_84_1998_1998-12-31
+  kind: asli
+  source: dataset
+  date: '1998-12-31'
+  date_basis: tanggal_penetapan
+  text: pp_84_1998_1998-12-31.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0ba1878f67773dc9d5e3394bdeeb6dc5df9a6161790ab4b1bec7fa91a754a1f2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0ba1878f67773dc9d5e3394bdeeb6dc5df9a6161790ab4b1bec7fa91a754a1f2
+  source_title: PP_No._84_Tahun_1998
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 20
+  status: none_known

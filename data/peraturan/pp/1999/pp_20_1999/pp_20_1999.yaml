@@ -1,0 +1,41 @@
+id: pp_20_1999
+akn: /akn/id/act/pp/1999/20
+type: pp
+number: '20'
+year: 1999
+title: Peraturan Pemerintah Nomor 20 Tahun 1999 tentang Pembentukan 3 (Tiga) Kecamatan
+  Di Wilayah Kabupaten Daerah Tingkat Ii Kendari, Kolaka, Dan Buton Dalam Wilayah
+  Propinsi Daerah Tingkat I Sulawesi Tenggara
+tentang: PEMBENTUKAN 3 (TIGA) KECAMATAN DI WILAYAH KABUPATEN DAERAH TINGKAT II KENDARI,
+  KOLAKA, DAN BUTON DALAM WILAYAH PROPINSI DAERAH TINGKAT I SULAWESI TENGGARA
+short_name: null
+status: null
+tanggal_penetapan: '1999-03-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_20_1999_1999-03-25
+  kind: asli
+  source: dataset
+  date: '1999-03-25'
+  date_basis: tanggal_penetapan
+  text: pp_20_1999_1999-03-25.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:cf891026ea6fb5b6499d3e8ea8be120866f436c52da053d16cf5efcfc19bcf3a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:cf891026ea6fb5b6499d3e8ea8be120866f436c52da053d16cf5efcfc19bcf3a
+  source_title: PP_No._20_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: none_known

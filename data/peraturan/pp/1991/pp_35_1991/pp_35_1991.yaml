@@ -1,0 +1,40 @@
+id: pp_35_1991
+akn: /akn/id/act/pp/1991/35
+type: pp
+number: '35'
+year: 1991
+title: Peraturan Pemerintah Nomor 35 Tahun 1991 tentang Sungai
+tentang: SUNGAI
+short_name: null
+status: dicabut
+tanggal_penetapan: '1991-12-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_35_1991_1991-12-03
+  kind: asli
+  source: dataset
+  date: '1991-12-03'
+  date_basis: tanggal_penetapan
+  text: pp_35_1991_1991-12-03.txt
+  pasal_count: 35
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ce9c38df66ab7fa28ea6644a43920b71797bace77213c5b57e5bedff08eacf7c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ce9c38df66ab7fa28ea6644a43920b71797bace77213c5b57e5bedff08eacf7c
+  source_title: PP_NO_35_TH_1991
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 80
+  status: revoked
+  revoked_by:
+  - sha256:ff0d15d4ac68515daadab872d87b829620945e338d114dcfe3e97c08482b61b9

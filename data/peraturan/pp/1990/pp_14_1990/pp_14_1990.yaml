@@ -1,0 +1,40 @@
+id: pp_14_1990
+akn: /akn/id/act/pp/1990/14
+type: pp
+number: '14'
+year: 1990
+title: Peraturan Pemerintah Nomor 14 Tahun 1990 tentang Perubahan Atas Peraturan Pemerintah
+  Nomor 22 Tahun 1986 Tentang Kawasan Berikat (Bonded Zone)
+tentang: PERUBAHAN ATAS PERATURAN PEMERINTAH NOMOR 22 TAHUN 1986 TENTANG KAWASAN BERIKAT
+  (BONDED ZONE)
+short_name: null
+status: null
+tanggal_penetapan: '1990-05-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_14_1990_1990-05-25
+  kind: asli
+  source: dataset
+  date: '1990-05-25'
+  date_basis: tanggal_penetapan
+  text: pp_14_1990_1990-05-25.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1a058804caa176d007087ae489e93a065702e7b62d298ae4f5755de4c0c2f69b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1a058804caa176d007087ae489e93a065702e7b62d298ae4f5755de4c0c2f69b
+  source_title: PP_NO_14_TH_1990
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

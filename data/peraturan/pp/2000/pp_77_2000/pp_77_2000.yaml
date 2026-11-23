@@ -1,0 +1,41 @@
+id: pp_77_2000
+akn: /akn/id/act/pp/2000/77
+type: pp
+number: '77'
+year: 2000
+title: Peraturan Pemerintah Nomor 77 Tahun 2000 tentang Pemberian Tunjangan Perbaikan
+  Penghasilan Bagi Penerima Pensiun Serta Janda/Dudanya
+tentang: PEMBERIAN TUNJANGAN PERBAIKAN PENGHASILAN BAGI PENERIMA PENSIUN SERTA JANDA/DUDANYA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-09-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_77_2000_2000-09-15
+  kind: asli
+  source: dataset
+  date: '2000-09-15'
+  date_basis: tanggal_penetapan
+  text: pp_77_2000_2000-09-15.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2d1853c3831e3bafadbfdbf83e0d00e503bf55f2a4c84c13d2c4a698d241ec50
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2d1853c3831e3bafadbfdbf83e0d00e503bf55f2a4c84c13d2c4a698d241ec50
+  source_title: PP_No.77_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:ddf54827e054b0e85265bc651e7347642318c4121fabccdbe50de12d3bd40419

@@ -1,0 +1,42 @@
+id: pp_18_1994
+akn: /akn/id/act/pp/1994/18
+type: pp
+number: '18'
+year: 1994
+title: Peraturan Pemerintah Nomor 18 Tahun 1994 tentang Pengusahaan Pariwisata Alam
+  Di Zona Pemanfaatan Taman Nasional, Taman Hutan Raya, Dan Taman Wisata Alam
+tentang: PENGUSAHAAN PARIWISATA ALAM DI ZONA PEMANFAATAN TAMAN NASIONAL, TAMAN HUTAN
+  RAYA, DAN TAMAN WISATA ALAM
+short_name: null
+status: dicabut
+tanggal_penetapan: '1994-04-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_18_1994_1994-04-21
+  kind: asli
+  source: dataset
+  date: '1994-04-21'
+  date_basis: tanggal_penetapan
+  text: pp_18_1994_1994-04-21.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:045db694bf7fc6d1195625d64464a67d600d931522cdb319e0ce36dbf7284b2d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:045db694bf7fc6d1195625d64464a67d600d931522cdb319e0ce36dbf7284b2d
+  source_title: PP_No._18_Th_1994
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 39
+  status: revoked
+  revoked_by:
+  - sha256:7e176fcd1ca4c3c0671bd2709d6465c8d8f2455e7134c34786ec3347900492db

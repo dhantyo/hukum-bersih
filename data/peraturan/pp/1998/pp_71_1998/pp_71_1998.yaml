@@ -1,0 +1,39 @@
+id: pp_71_1998
+akn: /akn/id/act/pp/1998/71
+type: pp
+number: '71'
+year: 1998
+title: Peraturan Pemerintah Nomor 71 Tahun 1998 tentang Penanggulangan Pemberlakuan
+  Kewajiban Melengkapi Dan Menggunakan Sabuk Keselamatan
+tentang: PENANGGULANGAN PEMBERLAKUAN KEWAJIBAN MELENGKAPI DAN MENGGUNAKAN SABUK KESELAMATAN
+short_name: null
+status: null
+tanggal_penetapan: '1998-09-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_71_1998_1998-09-17
+  kind: asli
+  source: dataset
+  date: '1998-09-17'
+  date_basis: tanggal_penetapan
+  text: pp_71_1998_1998-09-17.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c0d0e1bf41b37c64e34c314582d51f39e3bc60fae5c63489a60674d0aa6f6d73
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c0d0e1bf41b37c64e34c314582d51f39e3bc60fae5c63489a60674d0aa6f6d73
+  source_title: PP_No._71_Tahun_1998
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 8
+  status: none_known

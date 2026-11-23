@@ -1,0 +1,39 @@
+id: pp_19_2000
+akn: /akn/id/act/pp/2000/19
+type: pp
+number: '19'
+year: 2000
+title: Peraturan Pemerintah Nomor 19 Tahun 2000 tentang Tim Gabungan Pemberantasan
+  Tindak Pidana Korupsi
+tentang: TIM GABUNGAN PEMBERANTASAN TINDAK PIDANA KORUPSI
+short_name: null
+status: null
+tanggal_penetapan: '2000-04-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_19_2000_2000-04-05
+  kind: asli
+  source: dataset
+  date: '2000-04-05'
+  date_basis: tanggal_penetapan
+  text: pp_19_2000_2000-04-05.txt
+  pasal_count: 18
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b77803009ec32c9a144df974774130787ca0269e1f4b99e76393a944cf27e080
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b77803009ec32c9a144df974774130787ca0269e1f4b99e76393a944cf27e080
+  source_title: PP_No.19_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 34
+  status: none_known

@@ -1,0 +1,40 @@
+id: pp_71_2010
+akn: /akn/id/act/pp/2010/71
+type: pp
+number: '71'
+year: 2010
+title: Peraturan Pemerintah Nomor 71 Tahun 2010 tentang Standar Akuntansi Pemerintahan
+tentang: STANDAR AKUNTANSI PEMERINTAHAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2010-10-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_71_2010_2010-10-22
+  kind: asli
+  source: dataset
+  date: '2010-10-22'
+  date_basis: tanggal_penetapan
+  text: pp_71_2010_2010-10-22.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:973002623faef4dde7c57d2a70db27f33391b1d98238260bde603391d2cf2487
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:973002623faef4dde7c57d2a70db27f33391b1d98238260bde603391d2cf2487
+  source_title: PP_Nomor_71_Tahun_2010_satu_file
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 535
+  status: amended
+  amended_by:
+  - sha256:5f7dbf14614b08da32d185c421ec93b444043aac3ee0f8778acdb2360c0ee84c

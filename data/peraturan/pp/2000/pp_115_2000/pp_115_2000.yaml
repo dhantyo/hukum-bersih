@@ -1,0 +1,32 @@
+id: pp_115_2000
+akn: /akn/id/act/pp/2000/115
+type: pp
+number: '115'
+year: 2000
+title: Peraturan Pemerintah Nomor 115 Tahun 2000 tentang Pembagian Hasil Penerimaan
+  Pajak Penghasilan Orang Pribadi Dalam Negeri Dan Pajak Penghasilan Pasal 21 Antara
+  Pemerintah Pusat Dan Pemerintah Daerah
+tentang: PEMBAGIAN HASIL PENERIMAAN PAJAK PENGHASILAN ORANG PRIBADI DALAM NEGERI DAN
+  PAJAK PENGHASILAN PASAL 21 ANTARA PEMERINTAH PUSAT DAN PEMERINTAH DAERAH
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e3fd2e2338f971155804dac59c75d0d241cb4af62e7c51c8d9566bed61deb902
+  source_title: PP_No.115_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: revoked
+  revoked_by:
+  - sha256:d4556af26abf1e09ae365f59aa811281df4b81383635049da82642c317dfe256
+parse_error: 'v13: rebuilt text has 4 pasal, the dataset lists 5'

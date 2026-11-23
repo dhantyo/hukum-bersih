@@ -1,0 +1,44 @@
+id: pp_8_2003
+akn: /akn/id/act/pp/2003/8
+type: pp
+number: '8'
+year: 2003
+title: Peraturan Pemerintah Nomor 8 Tahun 2003 tentang Pedoman Organisasi Perangkat
+  Daerah
+tentang: PEDOMAN ORGANISASI PERANGKAT DAERAH
+short_name: null
+status: dicabut
+tanggal_penetapan: '2003-02-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_8_2003_2003-02-17
+  kind: asli
+  source: dataset
+  date: '2003-02-17'
+  date_basis: tanggal_penetapan
+  text: pp_8_2003_2003-02-17.txt
+  pasal_count: 30
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9e9265a3c24974e72a9d266dbee9c1e046908a8ce6393a5d2241009ea01579dd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9e9265a3c24974e72a9d266dbee9c1e046908a8ce6393a5d2241009ea01579dd
+  source_title: PP_No.8_TH_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 74
+  status: revoked
+  revoked_by:
+  - sha256:797738a78a9c62bc5e4475fd42b740981ecc962c9502af561d62624a5e08936a
+  - sha256:8f5b89a82a59ab7df737c8a62bf9c18131315971e77ebe48728d8a2ec9928c49
+  - sha256:be11443bb6c972699793de92a2b0965e834a84a07645a6efc7fc0639f6a20418
+  - sha256:da5c1cb441c91ac37a21ea13e09823dab2008827edfb2ef9929a706e9fff637c

@@ -1,0 +1,39 @@
+id: pp_62_2012
+akn: /akn/id/act/pp/2012/62
+type: pp
+number: '62'
+year: 2012
+title: Peraturan Pemerintah Nomor 62 Tahun 2012 tentang Usaha Jasa Penunjang Tenaga
+  Listrik
+tentang: USAHA JASA PENUNJANG TENAGA LISTRIK
+short_name: null
+status: null
+tanggal_penetapan: '2012-07-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_62_2012_2012-07-06
+  kind: asli
+  source: dataset
+  date: '2012-07-06'
+  date_basis: tanggal_penetapan
+  text: pp_62_2012_2012-07-06.txt
+  pasal_count: 27
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:aae147a18324dfc61524a3b07e81a0ffbeadfc1e625cda05bc74d85641dd0466
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:aae147a18324dfc61524a3b07e81a0ffbeadfc1e625cda05bc74d85641dd0466
+  source_title: PP_Nomor_62_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 45
+  status: none_known

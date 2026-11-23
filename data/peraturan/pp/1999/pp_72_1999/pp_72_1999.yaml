@@ -1,0 +1,41 @@
+id: pp_72_1999
+akn: /akn/id/act/pp/1999/72
+type: pp
+number: '72'
+year: 1999
+title: Peraturan Pemerintah Nomor 72 Tahun 1999 tentang Penangguhan Mulai Berlakunya
+  Peraturan Pemerintah Nomor 26 Tahun 1999 Tentang Tarif Atas Jenis Penerimaan Negara
+  Bukan Pajak Yang Berlaku Pada Departemen Kehakiman
+tentang: PENANGGUHAN MULAI BERLAKUNYA PERATURAN PEMERINTAH NOMOR 26 TAHUN 1999 TENTANG
+  TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA DEPARTEMEN KEHAKIMAN
+short_name: null
+status: null
+tanggal_penetapan: '1999-06-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_72_1999_1999-06-07
+  kind: asli
+  source: dataset
+  date: '1999-06-07'
+  date_basis: tanggal_penetapan
+  text: pp_72_1999_1999-06-07.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b8ac45aaf6009d012ecda99d6a5ad90d451fb3a062b1b064efed5d2645168658
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b8ac45aaf6009d012ecda99d6a5ad90d451fb3a062b1b064efed5d2645168658
+  source_title: PP_No._72_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

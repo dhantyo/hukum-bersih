@@ -1,0 +1,31 @@
+id: pp_6_2009
+akn: /akn/id/act/pp/2009/6
+type: pp
+number: '6'
+year: 2009
+title: Peraturan Pemerintah Nomor 6 Tahun 2009 tentang Jenis Dan Tarif Atas Jenis
+  Penerimmn Negara Bukan Pajak Yang Berlaku Pada Departemen Perhubungan
+tentang: JENIS DAN TARIF ATAS JENIS PENERIMMN NEGARA BUKAN PAJAK YANG BERLAKU PADA
+  DEPARTEMEN PERHUBUNGAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2009-01-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7e0a6012c73fcb8429d03026bcd1f05c03a4a782f709eb7e856466829a0e6653
+  source_title: PP_No_6_2009__s_
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 214
+  status: amended
+  amended_by:
+  - sha256:59b6ac86bb71c5b1e82657f9c106688b181ae6c561b5190d2480e2fc6c2d77f5
+parse_error: 'v13: rebuilt text has 2 pasal, the dataset lists 6'

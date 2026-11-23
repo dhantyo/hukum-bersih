@@ -1,0 +1,41 @@
+id: pp_61_2011
+akn: /akn/id/act/pp/2011/61
+type: pp
+number: '61'
+year: 2011
+title: Peraturan Pemerintah Nomor 61 Tahun 2011 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Perusahaan Umum (Perum) Jaminan Kredit
+  Indonesia
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL PERUSAHAAN
+  UMUM (PERUM) JAMINAN KREDIT INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2011-12-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_61_2011_2011-12-29
+  kind: asli
+  source: dataset
+  date: '2011-12-29'
+  date_basis: tanggal_penetapan
+  text: pp_61_2011_2011-12-29.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:eb4b88f1eb73ea1210707aad7a972e4a0168294699ae59ae33a617db7c52dc42
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:eb4b88f1eb73ea1210707aad7a972e4a0168294699ae59ae33a617db7c52dc42
+  source_title: PP_61_Tahun_2011
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

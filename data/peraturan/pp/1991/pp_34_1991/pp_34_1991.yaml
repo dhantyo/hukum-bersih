@@ -1,0 +1,38 @@
+id: pp_34_1991
+akn: /akn/id/act/pp/1991/34
+type: pp
+number: '34'
+year: 1991
+title: Peraturan Pemerintah Nomor 34 Tahun 1991 tentang Tata Cara Permintaan Paten
+tentang: TATA CARA PERMINTAAN PATEN
+short_name: null
+status: null
+tanggal_penetapan: '1991-06-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_34_1991_1991-06-11
+  kind: asli
+  source: dataset
+  date: '1991-06-11'
+  date_basis: tanggal_penetapan
+  text: pp_34_1991_1991-06-11.txt
+  pasal_count: 73
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2ac21d6f85cf0fa9c63afcd50bc59a4934136cfefc0d48bb18037e7719758073
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2ac21d6f85cf0fa9c63afcd50bc59a4934136cfefc0d48bb18037e7719758073
+  source_title: PP_NO_34_TH_1991
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 159
+  status: none_known

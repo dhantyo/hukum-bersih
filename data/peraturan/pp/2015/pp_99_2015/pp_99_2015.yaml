@@ -1,0 +1,40 @@
+id: pp_99_2015
+akn: /akn/id/act/pp/2015/99
+type: pp
+number: '99'
+year: 2015
+title: Peraturan Pemerintah Nomor 99 Tahun 2015 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Pada International Bank For Reconstruction And Development
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA PADA INTERNATIONAL
+  BANK FOR RECONSTRUCTION AND DEVELOPMENT
+short_name: null
+status: null
+tanggal_penetapan: '2015-12-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_99_2015_2015-12-21
+  kind: asli
+  source: dataset
+  date: '2015-12-21'
+  date_basis: tanggal_penetapan
+  text: pp_99_2015_2015-12-21.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:24a517e4f5919b2b43dc2e6cc7866a8429b5766d6a2aaae149bd0c12a2cc6ed9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:24a517e4f5919b2b43dc2e6cc7866a8429b5766d6a2aaae149bd0c12a2cc6ed9
+  source_title: PP_Nomor_99_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

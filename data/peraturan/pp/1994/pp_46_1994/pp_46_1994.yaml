@@ -1,0 +1,45 @@
+id: pp_46_1994
+akn: /akn/id/act/pp/1994/46
+type: pp
+number: '46'
+year: 1994
+title: Peraturan Pemerintah Nomor 46 Tahun 1994 tentang Pembayaran Pajak Penghasilan
+  Bagi Orang Pribadi Yang Bertolak Ke Luar Negeri
+tentang: PEMBAYARAN PAJAK PENGHASILAN BAGI ORANG PRIBADI YANG BERTOLAK KE LUAR NEGERI
+short_name: null
+status: dicabut
+tanggal_penetapan: '1995-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_46_1994_1995-01-01
+  kind: asli
+  source: dataset
+  date: '1995-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_46_1994_1995-01-01.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:33d6486f7e9e0142d524b679d65cb64e568da8982101eb84ebd59d48845c3086
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:33d6486f7e9e0142d524b679d65cb64e568da8982101eb84ebd59d48845c3086
+  source_title: PP_No._46_Th_1994
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:b72bce6375c51dfc0c1b27bee05d37c6d8d2c51e372a797642831d186304f57a
+  amended_by:
+  - sha256:7bfda41df1bd751724353d7c882f08e265000e92e659029082c715441d326ec2
+  - sha256:9faa0126c164ae91d72202fff555700b43659209ebe0146def01fa4bd97fdb6e
+  - sha256:c53e8f1ec66218b6b5b10fc79b747d0afbf7db7b0b61d413a9e2751d026237e7

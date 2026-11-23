@@ -1,0 +1,39 @@
+id: pp_81_2012
+akn: /akn/id/act/pp/2012/81
+type: pp
+number: '81'
+year: 2012
+title: Peraturan Pemerintah Nomor 81 Tahun 2012 tentang Pengelolaan Sampah Rumah Tangga
+  Dan Sampah Sejenis Sampah Rumah Tangga
+tentang: PENGELOLAAN SAMPAH RUMAH TANGGA DAN SAMPAH SEJENIS SAMPAH RUMAH TANGGA
+short_name: null
+status: null
+tanggal_penetapan: '2012-10-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_81_2012_2012-10-12
+  kind: asli
+  source: dataset
+  date: '2012-10-12'
+  date_basis: tanggal_penetapan
+  text: pp_81_2012_2012-10-12.txt
+  pasal_count: 39
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fbc077c9e5e48d96f8e9ab6d61c3f32e821afccc5b0ff5db6c4d4f15ecdcbed1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fbc077c9e5e48d96f8e9ab6d61c3f32e821afccc5b0ff5db6c4d4f15ecdcbed1
+  source_title: PP_Nomor_81_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 57
+  status: none_known

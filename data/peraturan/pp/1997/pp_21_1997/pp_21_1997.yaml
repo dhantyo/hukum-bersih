@@ -1,0 +1,39 @@
+id: pp_21_1997
+akn: /akn/id/act/pp/1997/21
+type: pp
+number: '21'
+year: 1997
+title: Peraturan Pemerintah Nomor 21 Tahun 1997 tentang Pajak Bahan Bakar Kendaraan
+  Bermotor Presiden Republik Indonesia
+tentang: PAJAK BAHAN BAKAR KENDARAAN BERMOTOR PRESIDEN REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '1997-07-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_21_1997_1997-07-04
+  kind: asli
+  source: dataset
+  date: '1997-07-04'
+  date_basis: tanggal_penetapan
+  text: pp_21_1997_1997-07-04.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5621e1be98984d751824a98e6e1b49b98b7ae6cb025b77dbea943f36544d69fa
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5621e1be98984d751824a98e6e1b49b98b7ae6cb025b77dbea943f36544d69fa
+  source_title: PP_No._21_Th_1997
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 19
+  status: none_known

@@ -1,0 +1,39 @@
+id: pp_39_1992
+akn: /akn/id/act/pp/1992/39
+type: pp
+number: '39'
+year: 1992
+title: Peraturan Pemerintah Nomor 39 Tahun 1992 tentang Peranserta Masyarakat Dalam
+  Pendidikan Nasional
+tentang: PERANSERTA MASYARAKAT DALAM PENDIDIKAN NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '1992-07-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_39_1992_1992-07-17
+  kind: asli
+  source: dataset
+  date: '1992-07-17'
+  date_basis: tanggal_penetapan
+  text: pp_39_1992_1992-07-17.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:54ccee09875102e92a838127d6c85c272a6a5245ead009e74140938be620f9a6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:54ccee09875102e92a838127d6c85c272a6a5245ead009e74140938be620f9a6
+  source_title: PP_NO_39_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 26
+  status: none_known

@@ -1,0 +1,41 @@
+id: pp_19_2005
+akn: /akn/id/act/pp/2005/19
+type: pp
+number: '19'
+year: 2005
+title: Peraturan Pemerintah Nomor 19 Tahun 2005 tentang Standar Nasional Pendidikan
+tentang: STANDAR NASIONAL PENDIDIKAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2005-05-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_19_2005_2005-05-16
+  kind: asli
+  source: dataset
+  date: '2005-05-16'
+  date_basis: tanggal_penetapan
+  text: pp_19_2005_2005-05-16.txt
+  pasal_count: 97
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d77eafa6c092033a780438b5102f913f552f207801365c5ca904bfc5504b39eb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d77eafa6c092033a780438b5102f913f552f207801365c5ca904bfc5504b39eb
+  source_title: PP_NO_19_TH_2005
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 149
+  status: amended
+  amended_by:
+  - sha256:25e12b9530ecce2f18e2305677d82c9e0ae4318c7b596de874d256bb649b47d7
+  - sha256:a02758d2221caaf778fb9c9c6f38d0cfd2309d659b7d4bf717f0fc95b049d763

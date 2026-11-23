@@ -1,0 +1,40 @@
+id: pp_19_2004
+akn: /akn/id/act/pp/2004/19
+type: pp
+number: '19'
+year: 2004
+title: Peraturan Pemerintah Nomor 19 Tahun 2004 tentang Perubahan Atas Peraturan Pemerintah
+  Nomor 11 Tahun 1962 Tentang Perdagangan Barang-Barang Dalam Pengawasan
+tentang: PERUBAHAN ATAS PERATURAN PEMERINTAH NOMOR 11 TAHUN 1962 TENTANG PERDAGANGAN
+  BARANG-BARANG DALAM PENGAWASAN
+short_name: null
+status: null
+tanggal_penetapan: '2004-07-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_19_2004_2004-07-26
+  kind: asli
+  source: dataset
+  date: '2004-07-26'
+  date_basis: tanggal_penetapan
+  text: pp_19_2004_2004-07-26.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b47f438d7c240fec4cb22d737ad455fc473ca351678956a8da581ff985f88ec0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b47f438d7c240fec4cb22d737ad455fc473ca351678956a8da581ff985f88ec0
+  source_title: PP_No.19_TH_2004
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

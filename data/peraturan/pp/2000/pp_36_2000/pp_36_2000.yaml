@@ -1,0 +1,30 @@
+id: pp_36_2000
+akn: /akn/id/act/pp/2000/36
+type: pp
+number: '36'
+year: 2000
+title: Peraturan Pemerintah Nomor 36 Tahun 2000 tentang Pendirian Perjan Jawatan Televisi
+  Republik Indonesia
+tentang: PENDIRIAN PERJAN JAWATAN TELEVISI REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-06-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b5b442d04b13130365f3cb4ba6d2806924d06cf16a71a25e0fa35b01f19511d3
+  source_title: PP_No.36_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 63
+  status: revoked
+  revoked_by:
+  - sha256:5e4a10860fa2e7f5e78ea03396ab157d5b9b7de327d18fe639a1b153df872061
+parse_error: 'v13: rebuilt text has 44 pasal, the dataset lists 52'

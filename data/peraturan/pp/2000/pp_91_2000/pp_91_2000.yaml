@@ -1,0 +1,39 @@
+id: pp_91_2000
+akn: /akn/id/act/pp/2000/91
+type: pp
+number: '91'
+year: 2000
+title: Peraturan Pemerintah Nomor 91 Tahun 2000 tentang Perusahaan Umum (Perum) Pengangkutan
+  Penumpang Djakarta
+tentang: PERUSAHAAN UMUM (PERUM) PENGANGKUTAN PENUMPANG DJAKARTA
+short_name: null
+status: null
+tanggal_penetapan: '2000-10-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_91_2000_2000-10-16
+  kind: asli
+  source: dataset
+  date: '2000-10-16'
+  date_basis: tanggal_penetapan
+  text: pp_91_2000_2000-10-16.txt
+  pasal_count: 66
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6e0414c804aa584063f1aced88996d95e193f8334495d7a9db5a6a9f3ba455f2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6e0414c804aa584063f1aced88996d95e193f8334495d7a9db5a6a9f3ba455f2
+  source_title: PP_No.91_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 76
+  status: none_known

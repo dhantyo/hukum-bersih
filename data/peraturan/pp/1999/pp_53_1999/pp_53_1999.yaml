@@ -1,0 +1,41 @@
+id: pp_53_1999
+akn: /akn/id/act/pp/1999/53
+type: pp
+number: '53'
+year: 1999
+title: Peraturan Pemerintah Nomor 53 Tahun 1999 tentang Perusahaan Umum Kehutanan
+  Negara (Perum Perhutani)
+tentang: PERUSAHAAN UMUM KEHUTANAN NEGARA (PERUM PERHUTANI)
+short_name: null
+status: dicabut
+tanggal_penetapan: '1999-06-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_53_1999_1999-06-11
+  kind: asli
+  source: dataset
+  date: '1999-06-11'
+  date_basis: tanggal_penetapan
+  text: pp_53_1999_1999-06-11.txt
+  pasal_count: 68
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:620dbd2dd23f3443d29dd2c72f2817fb90b46ea72bb84a530a9efa40220733a0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:620dbd2dd23f3443d29dd2c72f2817fb90b46ea72bb84a530a9efa40220733a0
+  source_title: PP_No._53_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 77
+  status: revoked
+  revoked_by:
+  - sha256:442ba228d1b5664af0bfb13517269398252e771ac651de195098d1777423255e

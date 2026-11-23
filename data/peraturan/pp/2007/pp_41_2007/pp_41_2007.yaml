@@ -1,0 +1,42 @@
+id: pp_41_2007
+akn: /akn/id/act/pp/2007/41
+type: pp
+number: '41'
+year: 2007
+title: Peraturan Pemerintah Nomor 41 Tahun 2007 tentang Organisasi Perangkat Daerah
+tentang: ORGANISASI PERANGKAT DAERAH
+short_name: null
+status: dicabut
+tanggal_penetapan: '2007-07-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_41_2007_2007-07-23
+  kind: asli
+  source: dataset
+  date: '2007-07-23'
+  date_basis: tanggal_penetapan
+  text: pp_41_2007_2007-07-23.txt
+  pasal_count: 53
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8f5b89a82a59ab7df737c8a62bf9c18131315971e77ebe48728d8a2ec9928c49
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8f5b89a82a59ab7df737c8a62bf9c18131315971e77ebe48728d8a2ec9928c49
+  source_title: PP_41_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 88
+  status: revoked
+  revoked_by:
+  - sha256:27903f0f9f8e754f0828accb50d794042d62582f9173e4185451bb0b10c1e989
+  amended_by:
+  - sha256:18739584a307c235efa4d8c4802f331db0140c5e4e4c534a426a11967500a186

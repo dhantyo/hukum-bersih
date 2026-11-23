@@ -1,0 +1,41 @@
+id: pp_21_2009
+akn: /akn/id/act/pp/2009/21
+type: pp
+number: '21'
+year: 2009
+title: Peraturan Pemerintah Nomor 21 Tahun 2009 tentang Perubahan Kelima Atas Peraturan
+  Pemerintah Nomor 29 Tahun 2001 Tentang Peraturan Gaji Anggota Kepolisian Negara
+  Republik Indonesia
+tentang: PERUBAHAN KELIMA ATAS PERATURAN PEMERINTAH NOMOR 29 TAHUN 2001 TENTANG PERATURAN
+  GAJI ANGGOTA KEPOLISIAN NEGARA REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2009-02-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_21_2009_2009-02-20
+  kind: asli
+  source: dataset
+  date: '2009-02-20'
+  date_basis: tanggal_penetapan
+  text: pp_21_2009_2009-02-20.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6b82938ec62d6ae1693eb090fc1c081df3d208a503624f743baa725ef8eadf7b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6b82938ec62d6ae1693eb090fc1c081df3d208a503624f743baa725ef8eadf7b
+  source_title: PP_No_21_2009
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 5
+  status: none_known

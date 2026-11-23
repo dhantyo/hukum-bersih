@@ -1,0 +1,41 @@
+id: pp_22_1990
+akn: /akn/id/act/pp/1990/22
+type: pp
+number: '22'
+year: 1990
+title: Peraturan Pemerintah Nomor 22 Tahun 1990 tentang Penyerahan Sebagian Urusan
+  Pemerintahan Dalam Bidang Lalulintas Dan Angkutan Jalan Kepada Daerah Tingkat I
+  Dan Daerah Tingkat Ii
+tentang: PENYERAHAN SEBAGIAN URUSAN PEMERINTAHAN DALAM BIDANG LALULINTAS DAN ANGKUTAN
+  JALAN KEPADA DAERAH TINGKAT I DAN DAERAH TINGKAT II
+short_name: null
+status: null
+tanggal_penetapan: '1990-06-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_22_1990_1990-06-14
+  kind: asli
+  source: dataset
+  date: '1990-06-14'
+  date_basis: tanggal_penetapan
+  text: pp_22_1990_1990-06-14.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:377e6ea774832747047675e45aff462a65aac7911000a7a92f507ecd0f815c66
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:377e6ea774832747047675e45aff462a65aac7911000a7a92f507ecd0f815c66
+  source_title: PP_NO_22_TH_1990
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 41
+  status: none_known

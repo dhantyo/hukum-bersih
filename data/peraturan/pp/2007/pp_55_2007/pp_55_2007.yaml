@@ -1,0 +1,39 @@
+id: pp_55_2007
+akn: /akn/id/act/pp/2007/55
+type: pp
+number: '55'
+year: 2007
+title: Peraturan Pemerintah Nomor 55 Tahun 2007 tentang Pendidikan Agama Dan Pendidikan
+  Keagamaan
+tentang: PENDIDIKAN AGAMA DAN PENDIDIKAN KEAGAMAAN
+short_name: null
+status: null
+tanggal_penetapan: '2007-10-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_55_2007_2007-10-05
+  kind: asli
+  source: dataset
+  date: '2007-10-05'
+  date_basis: tanggal_penetapan
+  text: pp_55_2007_2007-10-05.txt
+  pasal_count: 51
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:918124113f8d128eece666a18cbea88812d5803867c289ff1e8c7eae55d0bce4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:918124113f8d128eece666a18cbea88812d5803867c289ff1e8c7eae55d0bce4
+  source_title: PP_55_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 74
+  status: none_known

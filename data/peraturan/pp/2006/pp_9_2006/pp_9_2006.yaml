@@ -1,0 +1,39 @@
+id: pp_9_2006
+akn: /akn/id/act/pp/2006/9
+type: pp
+number: '9'
+year: 2006
+title: Peraturan Pemerintah Nomor 9 Tahun 2006 tentang Tata Cara Permohonan Pendaftaran
+  Desain Tata Letak Sirkuit Terpadu
+tentang: TATA CARA PERMOHONAN PENDAFTARAN DESAIN TATA LETAK SIRKUIT TERPADU
+short_name: null
+status: null
+tanggal_penetapan: '2006-04-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_9_2006_2006-04-03
+  kind: asli
+  source: dataset
+  date: '2006-04-03'
+  date_basis: tanggal_penetapan
+  text: pp_9_2006_2006-04-03.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c7697bfa5ac51d09e41258cded284e34eeb4ecb71d68d532f3d0851ae1713c9d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c7697bfa5ac51d09e41258cded284e34eeb4ecb71d68d532f3d0851ae1713c9d
+  source_title: PP_no_9_th_2006
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 25
+  status: none_known

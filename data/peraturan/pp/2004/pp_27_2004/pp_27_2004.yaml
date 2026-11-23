@@ -1,0 +1,39 @@
+id: pp_27_2004
+akn: /akn/id/act/pp/2004/27
+type: pp
+number: '27'
+year: 2004
+title: Peraturan Pemerintah Nomor 27 Tahun 2004 tentang Tata Cara Pelaksanaan Paten
+  Oleh Pemerintah
+tentang: TATA CARA PELAKSANAAN PATEN OLEH PEMERINTAH
+short_name: null
+status: null
+tanggal_penetapan: '2004-10-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_27_2004_2004-10-05
+  kind: asli
+  source: dataset
+  date: '2004-10-05'
+  date_basis: tanggal_penetapan
+  text: pp_27_2004_2004-10-05.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4b65bca44533f2610fed11b85811675975f6d3161eea5c47648c51d594d51cd0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4b65bca44533f2610fed11b85811675975f6d3161eea5c47648c51d594d51cd0
+  source_title: PP_No.27_TH_2004
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 21
+  status: none_known

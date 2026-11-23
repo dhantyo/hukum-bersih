@@ -1,0 +1,39 @@
+id: pp_34_2017
+akn: /akn/id/act/pp/2017/34
+type: pp
+number: '34'
+year: 2017
+title: Peraturan Pemerintah Nomor 34 Tahun 2017 tentang Pajak Penghasilan Atas Penghasilan
+  Dari Persewaan Tanah Dan/Atau Bangunan
+tentang: PAJAK PENGHASILAN ATAS PENGHASILAN DARI PERSEWAAN TANAH DAN/ATAU BANGUNAN
+short_name: null
+status: null
+tanggal_penetapan: '2018-01-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_34_2017_2018-01-02
+  kind: asli
+  source: dataset
+  date: '2018-01-02'
+  date_basis: tanggal_penetapan
+  text: pp_34_2017_2018-01-02.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6e8515c6b45c4993868f999b51a7629a983313d6e09a27b7dfd8cdf1c1b489a2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6e8515c6b45c4993868f999b51a7629a983313d6e09a27b7dfd8cdf1c1b489a2
+  source_title: PP_Nomor_34_Tahun_2017
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 17
+  status: none_known

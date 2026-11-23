@@ -1,0 +1,42 @@
+id: pp_11_1983
+akn: /akn/id/act/pp/1983/11
+type: pp
+number: '11'
+year: 1983
+title: Peraturan Pemerintah Nomor 11 Tahun 1983
+tentang: null
+short_name: null
+status: dicabut
+tanggal_penetapan: '1983-04-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_11_1983_1983-04-25
+  kind: asli
+  source: dataset
+  date: '1983-04-25'
+  date_basis: tanggal_penetapan
+  text: pp_11_1983_1983-04-25.txt
+  pasal_count: 24
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c6f3b568f7db034461f9ab1c69d770fff4b4379113f80cf51985c5ed5b30de23
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c6f3b568f7db034461f9ab1c69d770fff4b4379113f80cf51985c5ed5b30de23
+  source_title: PP_NO._11_TH_1983
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 45
+  status: revoked
+  revoked_by:
+  - sha256:77cc57bec9f44f934878843954a0c67370645336b4d2f8bed1009dd67a88a88c
+  amended_by:
+  - sha256:e4e954b6dab9e0d39891a6248b7b62449a846dbf1dcb4493f5fed4aea6fb8b16

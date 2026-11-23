@@ -1,0 +1,42 @@
+id: pp_35_2003
+akn: /akn/id/act/pp/2003/35
+type: pp
+number: '35'
+year: 2003
+title: Peraturan Pemerintah Nomor 35 Tahun 2003 tentang Penetapan Pensiun Pokok Pensiunan
+  Hakim Peradilan Umum, Peradilan Tata Usaha Negara, Dan Peradilan Agama Serta Janda/Dudanya
+tentang: PENETAPAN PENSIUN POKOK PENSIUNAN HAKIM PERADILAN UMUM, PERADILAN TATA USAHA
+  NEGARA, DAN PERADILAN AGAMA SERTA JANDA/DUDANYA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2003-07-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_35_2003_2003-07-08
+  kind: asli
+  source: dataset
+  date: '2003-07-08'
+  date_basis: tanggal_penetapan
+  text: pp_35_2003_2003-07-08.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:459b85d757c1153285f057f792fd4fea4d06a055cb5bcc014243a44f9e957378
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:459b85d757c1153285f057f792fd4fea4d06a055cb5bcc014243a44f9e957378
+  source_title: PP_No.35_TH_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 34
+  status: revoked
+  revoked_by:
+  - sha256:9c32ae6078a6e91ab3552c799ef9b8c1d1079068d216b2f2256b179081fea0e2

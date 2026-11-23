@@ -1,0 +1,40 @@
+id: pp_106_2015
+akn: /akn/id/act/pp/2015/106
+type: pp
+number: '106'
+year: 2015
+title: Peraturan Pemerintah Nomor 106 Tahun 2015 tentang Penyerahan Barang Kena Pajak
+  Tertentu Yang Bersifat Strategis Yang Tidak Dipungut Pajak Pertambahan Nilai
+tentang: PENYERAHAN BARANG KENA PAJAK TERTENTU YANG BERSIFAT STRATEGIS YANG TIDAK
+  DIPUNGUT PAJAK PERTAMBAHAN NILAI
+short_name: null
+status: null
+tanggal_penetapan: '2015-12-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_106_2015_2015-12-22
+  kind: asli
+  source: dataset
+  date: '2015-12-22'
+  date_basis: tanggal_penetapan
+  text: pp_106_2015_2015-12-22.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:dde8d1c600e61ed5024c96d98bf8c2316eb4555f05347b50355944b273d68b09
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:dde8d1c600e61ed5024c96d98bf8c2316eb4555f05347b50355944b273d68b09
+  source_title: PP_Nomor_106_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: none_known

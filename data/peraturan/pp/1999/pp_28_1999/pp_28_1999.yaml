@@ -1,0 +1,39 @@
+id: pp_28_1999
+akn: /akn/id/act/pp/1999/28
+type: pp
+number: '28'
+year: 1999
+title: Peraturan Pemerintah Nomor 28 Tahun 1999 tentang Merger, Konsolidasi Dan Akuisisi
+  Bank
+tentang: MERGER, KONSOLIDASI DAN AKUISISI BANK
+short_name: null
+status: null
+tanggal_penetapan: '1999-05-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_28_1999_1999-05-07
+  kind: asli
+  source: dataset
+  date: '1999-05-07'
+  date_basis: tanggal_penetapan
+  text: pp_28_1999_1999-05-07.txt
+  pasal_count: 41
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e7f9546650d9428b30fb4f384808a8639d6aa48f859349180366a7958a8a2957
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e7f9546650d9428b30fb4f384808a8639d6aa48f859349180366a7958a8a2957
+  source_title: PP_No._28_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 46
+  status: none_known

@@ -1,0 +1,43 @@
+id: pp_16_1948
+akn: /akn/id/act/pp/1948/16
+type: pp
+number: '16'
+year: 1948
+title: 'Peraturan Pemerintah Nomor 16 Tahun 1948 tentang Permohonan Grasi. Pasal 1.
+  Peraturan Pemerintah Tentang Permohonan Grasi Diubah Dan Ditambah Sebagai Berikut:
+  Pasal 3 Diubah Hingga Ayat 2 Menjadi Ayat 3, Sedang Diantara Ayat 1 Dan Ayat 3 Diadakan
+  Ayat 2 Baru Yang Berbunyi Demikian'
+tentang: 'PERMOHONAN GRASI. Pasal 1. Peraturan Pemerintah tentang permohonan grasi
+  diubah dan ditambah sebagai berikut: Pasal 3 diubah hingga ayat 2 menjadi ayat 3,
+  sedang diantara ayat 1 dan ayat 3 diadakan ayat 2 baru yang berbunyi demikian'
+short_name: null
+status: null
+tanggal_penetapan: '1948-08-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_16_1948_1948-08-10
+  kind: asli
+  source: dataset
+  date: '1948-08-10'
+  date_basis: tanggal_penetapan
+  text: pp_16_1948_1948-08-10.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6ca4039465b19335a0f3cf180d8557b16fab3cc4e8d85ee49e3b16e85cbc535b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6ca4039465b19335a0f3cf180d8557b16fab3cc4e8d85ee49e3b16e85cbc535b
+  source_title: PP_No_16_Tahun_1948
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: none_known

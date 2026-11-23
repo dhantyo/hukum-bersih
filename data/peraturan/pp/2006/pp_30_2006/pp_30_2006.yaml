@@ -1,0 +1,41 @@
+id: pp_30_2006
+akn: /akn/id/act/pp/2006/30
+type: pp
+number: '30'
+year: 2006
+title: Peraturan Pemerintah Nomor 30 Tahun 2006 tentang Penetapan Universitas Airlangga
+  Sebagai Badan Hukum Milik Negara
+tentang: PENETAPAN UNIVERSITAS AIRLANGGA SEBAGAI BADAN HUKUM MILIK NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-09-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_30_2006_2006-09-14
+  kind: asli
+  source: dataset
+  date: '2006-09-14'
+  date_basis: tanggal_penetapan
+  text: pp_30_2006_2006-09-14.txt
+  pasal_count: 58
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:aefa5d98e7c583ffdb125060891db1e453d98185d8ea660c6f500ba0de43c21a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:aefa5d98e7c583ffdb125060891db1e453d98185d8ea660c6f500ba0de43c21a
+  source_title: PP_no_30_th_2006
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 83
+  status: revoked
+  revoked_by:
+  - sha256:350758220cf44235c02394806b9b828988eeb6196b5caa831dca66d0fc343dc5

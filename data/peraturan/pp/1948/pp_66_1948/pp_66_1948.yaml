@@ -1,0 +1,40 @@
+id: pp_66_1948
+akn: /akn/id/act/pp/1948/66
+type: pp
+number: '66'
+year: 1948
+title: Peraturan Pemerintah Nomor 66 Tahun 1948 tentang Mengadakan Perubahan Dalam
+  Peraturan Pemerintah Nomor 25 Tahun 1948 Dari Hal Surat Tanda Hutang Negara
+tentang: MENGADAKAN PERUBAHAN DALAM PERATURAN PEMERINTAH NOMOR 25 TAHUN 1948 DARI
+  HAL SURAT TANDA HUTANG NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '1948-09-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_66_1948_1948-09-21
+  kind: asli
+  source: dataset
+  date: '1948-09-21'
+  date_basis: tanggal_penetapan
+  text: pp_66_1948_1948-09-21.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:547176d58ec93f203ffd1100abee7844b9a97ebe9db7d9b7fd7d9577a929bdb7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:547176d58ec93f203ffd1100abee7844b9a97ebe9db7d9b7fd7d9577a929bdb7
+  source_title: PP_No_66_Tahun_1948-kumham
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

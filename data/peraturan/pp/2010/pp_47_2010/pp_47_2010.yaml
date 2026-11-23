@@ -1,0 +1,42 @@
+id: pp_47_2010
+akn: /akn/id/act/pp/2010/47
+type: pp
+number: '47'
+year: 2010
+title: Peraturan Pemerintah Nomor 47 Tahun 2010 tentang Jenis Dan Tarif Atas Jenis
+  Penerimaan Negara Bukan Pajak Yang Berlaku Pada Badan Pengawasan Keuangan Dan Pembangunan
+tentang: JENIS DAN TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA
+  BADAN PENGAWASAN KEUANGAN DAN PEMBANGUNAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2010-05-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_47_2010_2010-05-24
+  kind: asli
+  source: dataset
+  date: '2010-05-24'
+  date_basis: tanggal_penetapan
+  text: pp_47_2010_2010-05-24.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a3c29de2010da8b38d5ff2444cfa228ad230f8835c68b576f1b6610cd9140def
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a3c29de2010da8b38d5ff2444cfa228ad230f8835c68b576f1b6610cd9140def
+  source_title: PP_47_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:ca4d8e0a0f484fd76ca13148ae8d69eefb35a4d5fdff8b9fa8f17fb2a3a6ff15

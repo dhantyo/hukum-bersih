@@ -1,0 +1,39 @@
+id: pp_1_1988
+akn: /akn/id/act/pp/1988/1
+type: pp
+number: '1'
+year: 1988
+title: Peraturan Pemerintah Nomor 1 Tahun 1988 tentang Masa Bakti Dan Praktek Dokter
+  Dan Dokter Gigi
+tentang: MASA BAKTI DAN PRAKTEK DOKTER DAN DOKTER GIGI
+short_name: null
+status: null
+tanggal_penetapan: '1988-06-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_1_1988_1988-06-01
+  kind: asli
+  source: dataset
+  date: '1988-06-01'
+  date_basis: tanggal_penetapan
+  text: pp_1_1988_1988-06-01.txt
+  pasal_count: 17
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7dfe1a29857d97fcda0482eb97201c24a3c209e02a9e569cf97e8ad19a95e7aa
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7dfe1a29857d97fcda0482eb97201c24a3c209e02a9e569cf97e8ad19a95e7aa
+  source_title: PP_NO_1_TH_1988
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 34
+  status: none_known

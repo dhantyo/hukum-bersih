@@ -1,0 +1,41 @@
+id: pp_7_2004
+akn: /akn/id/act/pp/2004/7
+type: pp
+number: '7'
+year: 2004
+title: Peraturan Pemerintah Nomor 7 Tahun 2004 tentang Perubahan Atas Peraturan Pemerintah
+  Nomor 49 Tahun 2002 Tentang Tarif Atas Jenis Penerimaan Negara Bukan Pajak Yang
+  Berlaku Pada Departemen Pertanian
+tentang: PERUBAHAN ATAS PERATURAN PEMERINTAH NOMOR 49 TAHUN 2002 TENTANG TARIF ATAS
+  JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA DEPARTEMEN PERTANIAN
+short_name: null
+status: null
+tanggal_penetapan: '2004-02-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_7_2004_2004-02-11
+  kind: asli
+  source: dataset
+  date: '2004-02-11'
+  date_basis: tanggal_penetapan
+  text: pp_7_2004_2004-02-11.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c320269b5a1e8e6af9e082f2ee746200cb0791d1011c135ba767890aae92a0bd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c320269b5a1e8e6af9e082f2ee746200cb0791d1011c135ba767890aae92a0bd
+  source_title: PP_No.7_TH_2004
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 95
+  status: none_known

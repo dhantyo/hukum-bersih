@@ -1,0 +1,31 @@
+id: pp_139_2000
+akn: /akn/id/act/pp/2000/139
+type: pp
+number: '139'
+year: 2000
+title: Peraturan Pemerintah Nomor 139 Tahun 2000 tentang Pajak Penghasilan Atas Penghasilan
+  Dari Obligasi Yang Diperdagangkan Di Bursa Efek
+tentang: PAJAK PENGHASILAN ATAS PENGHASILAN DARI OBLIGASI YANG DIPERDAGANGKAN DI BURSA
+  EFEK
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1a53d8dd12cc46c258abe8a0981636d8f15ce04d9773e7599df773bd001d34f1
+  source_title: PP_No.139_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 17
+  status: revoked
+  revoked_by:
+  - sha256:db42758079f78c5313cc583fc39a341ca9a286c53cdc45eb963c566ca075f000
+parse_error: 'v13: rebuilt text has 6 pasal, the dataset lists 9'

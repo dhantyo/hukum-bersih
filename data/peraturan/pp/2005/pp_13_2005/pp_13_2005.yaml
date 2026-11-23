@@ -1,0 +1,39 @@
+id: pp_13_2005
+akn: /akn/id/act/pp/2005/13
+type: pp
+number: '13'
+year: 2005
+title: Peraturan Pemerintah Nomor 13 Tahun 2005 tentang Lembaga Penyiaran Publik Televisi
+  Republik Indonesia
+tentang: LEMBAGA PENYIARAN PUBLIK TELEVISI REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2005-03-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_13_2005_2005-03-18
+  kind: asli
+  source: dataset
+  date: '2005-03-18'
+  date_basis: tanggal_penetapan
+  text: pp_13_2005_2005-03-18.txt
+  pasal_count: 47
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:707c04deecb7ebb89e26b78d5a154094245009d26a9fa12c750c93a9c68402b4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:707c04deecb7ebb89e26b78d5a154094245009d26a9fa12c750c93a9c68402b4
+  source_title: PP_NO_13_TH_2005
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 74
+  status: none_known

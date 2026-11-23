@@ -1,0 +1,41 @@
+id: pp_47_2007
+akn: /akn/id/act/pp/2007/47
+type: pp
+number: '47'
+year: 2007
+title: Peraturan Pemerintah Nomor 47 Tahun 2007 tentang Kawasan Perdagangan Bebas
+  Dan Pelabuhan Bebas Bintan
+tentang: KAWASAN PERDAGANGAN BEBAS DAN PELABUHAN BEBAS BINTAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2007-08-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_47_2007_2007-08-20
+  kind: asli
+  source: dataset
+  date: '2007-08-20'
+  date_basis: tanggal_penetapan
+  text: pp_47_2007_2007-08-20.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:45877fe5b751d28fe0e87242d1975d4b1384950e807201a8ad2f1dc4e0db57a2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:45877fe5b751d28fe0e87242d1975d4b1384950e807201a8ad2f1dc4e0db57a2
+  source_title: PP_47_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: amended
+  amended_by:
+  - sha256:cabb4f05252b71d7e50a16095e3c8a1621b9ef0ef6e1bbe23e7c79c8db04c3e8

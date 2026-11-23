@@ -1,0 +1,31 @@
+id: pp_131_2000
+akn: /akn/id/act/pp/2000/131
+type: pp
+number: '131'
+year: 2000
+title: Peraturan Pemerintah Nomor 131 Tahun 2000 tentang Pajak Penghasilan Atas Bunga
+  Deposito Dan Tabungan Serta Diskonto Sertifikat Bank Indonesia
+tentang: PAJAK PENGHASILAN ATAS BUNGA DEPOSITO DAN TABUNGAN SERTA DISKONTO SERTIFIKAT
+  BANK INDONESIA
+short_name: null
+status: diubah
+tanggal_penetapan: '2001-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:df955f39316a1f4b4a0d71fd566ee91c60ba3427ada8b8267ba069ecbfb2e7f3
+  source_title: PP_No.131_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 17
+  status: amended
+  amended_by:
+  - sha256:646e0946ae8eb89ed0492c3b2fe7540b008fa44c3d0ee13d561e63311a2eabb8
+parse_error: 'v13: rebuilt text has 5 pasal, the dataset lists 7'

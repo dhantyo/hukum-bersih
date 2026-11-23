@@ -1,0 +1,40 @@
+id: pp_73_2009
+akn: /akn/id/act/pp/2009/73
+type: pp
+number: '73'
+year: 2009
+title: Peraturan Pemerintah Nomor 73 Tahun 2009 tentang Jenis Dan Tarif Atas Jenis
+  Penerimaan Negara Bukan Pajak Yang Berlaku Pada Lembaga Administrasi Negara
+tentang: JENIS DAN TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA
+  LEMBAGA ADMINISTRASI NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '2009-12-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_73_2009_2009-12-21
+  kind: asli
+  source: dataset
+  date: '2009-12-21'
+  date_basis: tanggal_penetapan
+  text: pp_73_2009_2009-12-21.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1034529f841b339168a1b976320f90abcf08854242af5be7008c990d989d0ec0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1034529f841b339168a1b976320f90abcf08854242af5be7008c990d989d0ec0
+  source_title: PP_No_73_2009
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 27
+  status: none_known

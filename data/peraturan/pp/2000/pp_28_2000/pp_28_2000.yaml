@@ -1,0 +1,44 @@
+id: pp_28_2000
+akn: /akn/id/act/pp/2000/28
+type: pp
+number: '28'
+year: 2000
+title: Peraturan Pemerintah Nomor 28 Tahun 2000 tentang Usaha Dan Peran Masyarakat
+  Jasa Konstruksi
+tentang: USAHA DAN PERAN MASYARAKAT JASA KONSTRUKSI
+short_name: null
+status: diubah
+tanggal_penetapan: '2000-05-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_28_2000_2000-05-30
+  kind: asli
+  source: dataset
+  date: '2000-05-30'
+  date_basis: tanggal_penetapan
+  text: pp_28_2000_2000-05-30.txt
+  pasal_count: 37
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b084973a3e323cca802db6acde777c1aa4e8e9916237cacfa31c6ebff29b06b4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b084973a3e323cca802db6acde777c1aa4e8e9916237cacfa31c6ebff29b06b4
+  source_title: PP_No.28_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 48
+  status: amended
+  amended_by:
+  - sha256:94bd47f1653a52528bdbaa10c8f8c0eb2c25c2e753fe0ed58d57fae663b367f6
+  - sha256:956ebd44ddffa44f65c05ac3ddbaeb1a2e0ef4a99483b9b3d85a57b3ba25f0d0
+  - sha256:95e96bdb6878b287d868400c0095f1b74a9c221d124eb23b6d8248df51b5e8ff
+  - sha256:c9395f3b14b96cf9ada5eb28a47f4d5f9b36e6f92834d037741ce433d391a1c9

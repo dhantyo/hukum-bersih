@@ -1,0 +1,42 @@
+id: pp_89_2013
+akn: /akn/id/act/pp/2013/89
+type: pp
+number: '89'
+year: 2013
+title: Peraturan Pemerintah Nomor 89 Tahun 2013 tentang Pencabutan Peraturan Pemerintah
+  Nomor 69 Tahun 1991 Tentang Pemeliharaan Kesehatan Pegawai Negeri Sipil, Penerima
+  Pensiun, Veteran, Perintis Kemerdekaan Beserta Keluarganya
+tentang: PENCABUTAN PERATURAN PEMERINTAH NOMOR 69 TAHUN 1991 TENTANG PEMELIHARAAN
+  KESEHATAN PEGAWAI NEGERI SIPIL, PENERIMA PENSIUN, VETERAN, PERINTIS KEMERDEKAAN
+  BESERTA KELUARGANYA
+short_name: null
+status: null
+tanggal_penetapan: '2014-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_89_2013_2014-01-01
+  kind: asli
+  source: dataset
+  date: '2014-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_89_2013_2014-01-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e4a78042ce484e79c998fba411ff8a8548717367e1672442582d7c4c65d4e1e9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e4a78042ce484e79c998fba411ff8a8548717367e1672442582d7c4c65d4e1e9
+  source_title: PP_Nomor_89_Tahun_2013
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 8
+  status: none_known

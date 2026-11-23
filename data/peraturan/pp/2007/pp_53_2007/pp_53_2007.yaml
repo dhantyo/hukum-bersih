@@ -1,0 +1,41 @@
+id: pp_53_2007
+akn: /akn/id/act/pp/2007/53
+type: pp
+number: '53'
+year: 2007
+title: Peraturan Pemerintah Nomor 53 Tahun 2007 tentang Perubahan Struktur Kepemilikan
+  Saham Negara Melalui Penerbitan Dan Penjualan Saham Baru Pada Perusahaan Perseroan
+  (Persero) Pt Wijaya Karya
+tentang: PERUBAHAN STRUKTUR KEPEMILIKAN SAHAM NEGARA MELALUI PENERBITAN DAN PENJUALAN
+  SAHAM BARU PADA PERUSAHAAN PERSEROAN (PERSERO) PT WIJAYA KARYA
+short_name: null
+status: null
+tanggal_penetapan: '2007-09-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_53_2007_2007-09-04
+  kind: asli
+  source: dataset
+  date: '2007-09-04'
+  date_basis: tanggal_penetapan
+  text: pp_53_2007_2007-09-04.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:47df644d2de4f6bf1dafdc8a6176d0a485ec88a08f5a5980e7286fe96baddc05
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:47df644d2de4f6bf1dafdc8a6176d0a485ec88a08f5a5980e7286fe96baddc05
+  source_title: PP_53_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

@@ -1,0 +1,41 @@
+id: pp_42_2015
+akn: /akn/id/act/pp/2015/42
+type: pp
+number: '42'
+year: 2015
+title: Peraturan Pemerintah Nomor 42 Tahun 2015 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Perusahaan Listrik Negara
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT PERUSAHAAN LISTRIK NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '2015-06-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_42_2015_2015-06-23
+  kind: asli
+  source: dataset
+  date: '2015-06-23'
+  date_basis: tanggal_penetapan
+  text: pp_42_2015_2015-06-23.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f76269d05ec397fc6c3985350500dcbf0a4055c0d76a44fc560e935ecc4a8b3f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f76269d05ec397fc6c3985350500dcbf0a4055c0d76a44fc560e935ecc4a8b3f
+  source_title: PP_Nomor_42_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 56
+  status: none_known

@@ -1,0 +1,41 @@
+id: pp_29_1997
+akn: /akn/id/act/pp/1997/29
+type: pp
+number: '29'
+year: 1997
+title: Peraturan Pemerintah Nomor 29 Tahun 1997 tentang Pegawai Negeri Sipil Yang
+  Menduduki Jabatan Rangkap
+tentang: PEGAWAI NEGERI SIPIL YANG MENDUDUKI JABATAN RANGKAP
+short_name: null
+status: diubah
+tanggal_penetapan: '1997-08-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_29_1997_1997-08-06
+  kind: asli
+  source: dataset
+  date: '1997-08-06'
+  date_basis: tanggal_penetapan
+  text: pp_29_1997_1997-08-06.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4819333381fcc580eec1f6a2e8683372aa5adc2fa18b9ceb98794af4d29a5255
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4819333381fcc580eec1f6a2e8683372aa5adc2fa18b9ceb98794af4d29a5255
+  source_title: PP_No._29_Th_1997
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 16
+  status: amended
+  amended_by:
+  - sha256:dcfaad28559bcfa812765936622521a1ce92cb2b4a8f7ba316cf0238d363ce5b

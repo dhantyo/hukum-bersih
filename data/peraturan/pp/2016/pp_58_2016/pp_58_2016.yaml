@@ -1,0 +1,39 @@
+id: pp_58_2016
+akn: /akn/id/act/pp/2016/58
+type: pp
+number: '58'
+year: 2016
+title: Peraturan Pemerintah Nomor 58 Tahun 2016 tentang Pelaksanaan Undang-Undang
+  Nomor 17 Tahun 2013 Tentang Organisasi Kemasyarakatan
+tentang: PELAKSANAAN UNDANG-UNDANG NOMOR 17 TAHUN 2013 TENTANG ORGANISASI KEMASYARAKATAN
+short_name: null
+status: null
+tanggal_penetapan: '2016-12-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_58_2016_2016-12-02
+  kind: asli
+  source: dataset
+  date: '2016-12-02'
+  date_basis: tanggal_penetapan
+  text: pp_58_2016_2016-12-02.txt
+  pasal_count: 74
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c37f08cb9b59b020150a15a3e72aff669a0dab2bd5c95fce9fcb1fe02698dd5f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c37f08cb9b59b020150a15a3e72aff669a0dab2bd5c95fce9fcb1fe02698dd5f
+  source_title: PP_Nomor_58_Tahun_2016
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 106
+  status: none_known

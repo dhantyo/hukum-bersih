@@ -1,0 +1,40 @@
+id: pp_35_2007
+akn: /akn/id/act/pp/2007/35
+type: pp
+number: '35'
+year: 2007
+title: Peraturan Pemerintah Nomor 35 Tahun 2007 tentang Pengalokasian Sebagian Pendapatan
+  Badan Usaha Untuk Peningkatan Kemampuan Perekayasaan, Inovasi, Dan Difusi Teknologi
+tentang: PENGALOKASIAN SEBAGIAN PENDAPATAN BADAN USAHA UNTUK PENINGKATAN KEMAMPUAN
+  PEREKAYASAAN, INOVASI, DAN DIFUSI TEKNOLOGI
+short_name: null
+status: null
+tanggal_penetapan: '2007-06-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_35_2007_2007-06-22
+  kind: asli
+  source: dataset
+  date: '2007-06-22'
+  date_basis: tanggal_penetapan
+  text: pp_35_2007_2007-06-22.txt
+  pasal_count: 15
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e411d0a5f39dc4d680eed8643b86acf7123115de975289efa43a68ff4d754dcd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e411d0a5f39dc4d680eed8643b86acf7123115de975289efa43a68ff4d754dcd
+  source_title: PP_35_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 27
+  status: none_known

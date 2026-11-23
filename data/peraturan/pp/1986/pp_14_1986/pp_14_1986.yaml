@@ -1,0 +1,38 @@
+id: pp_14_1986
+akn: /akn/id/act/pp/1986/14
+type: pp
+number: '14'
+year: 1986
+title: Peraturan Pemerintah Nomor 14 Tahun 1986 tentang Dewan Hak Cipta
+tentang: DEWAN HAK CIPTA
+short_name: null
+status: null
+tanggal_penetapan: '1986-03-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_14_1986_1986-03-06
+  kind: asli
+  source: dataset
+  date: '1986-03-06'
+  date_basis: tanggal_penetapan
+  text: pp_14_1986_1986-03-06.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bb8253a7ba783070d83f573453ac17749ee6c76e8c810a11ca466f5360e3a864
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bb8253a7ba783070d83f573453ac17749ee6c76e8c810a11ca466f5360e3a864
+  source_title: PP_NO_14_TH_1986
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 27
+  status: none_known

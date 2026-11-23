@@ -1,0 +1,40 @@
+id: pp_23_2008
+akn: /akn/id/act/pp/2008/23
+type: pp
+number: '23'
+year: 2008
+title: Peraturan Pemerintah Nomor 23 Tahun 2008 tentang Peran Serta Lembaga Internasional
+  Dan Lembaga Asing Nonpemerintah Dalam Penanggulangan Bencana
+tentang: PERAN SERTA LEMBAGA INTERNASIONAL DAN LEMBAGA ASING NONPEMERINTAH DALAM PENANGGULANGAN
+  BENCANA
+short_name: null
+status: null
+tanggal_penetapan: '2008-02-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_23_2008_2008-02-28
+  kind: asli
+  source: dataset
+  date: '2008-02-28'
+  date_basis: tanggal_penetapan
+  text: pp_23_2008_2008-02-28.txt
+  pasal_count: 18
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9604b8e59ce8892e738bfdcbce6edac17aa194f2ac26d370cb0d4d72485746ce
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9604b8e59ce8892e738bfdcbce6edac17aa194f2ac26d370cb0d4d72485746ce
+  source_title: PP_23_Tahun_2008
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 30
+  status: none_known

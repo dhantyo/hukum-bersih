@@ -1,0 +1,47 @@
+id: pp_40_1985
+akn: /akn/id/act/pp/1985/40
+type: pp
+number: '40'
+year: 1985
+title: Peraturan Pemerintah Nomor 40 Tahun 1985 tentang Tunjangan Pajak Penghasilan
+  Bagi Pejabat Negara, Pegawai Negeri Sipil, Anggota Angkatan Bersenjata Republik
+  Indonesia, Dan Para Pensiunan Atas Penghasilan Berupa Gaji, Honorarium, Uang Pensiun,
+  Dan Tunjangan-Tunjangan Lainnya Yang Dibebankan Kepada Keuangan Negara Presiden
+  Republik Indonesia
+tentang: TUNJANGAN PAJAK PENGHASILAN BAGI PEJABAT NEGARA, PEGAWAI NEGERI SIPIL, ANGGOTA
+  ANGKATAN BERSENJATA REPUBLIK INDONESIA, DAN PARA PENSIUNAN ATAS PENGHASILAN BERUPA
+  GAJI, HONORARIUM, UANG PENSIUN, DAN TUNJANGAN-TUNJANGAN LAINNYA YANG DIBEBANKAN
+  KEPADA KEUANGAN NEGARA Presiden Republik Indonesia
+short_name: null
+status: dicabut
+tanggal_penetapan: '1985-09-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_40_1985_1985-09-06
+  kind: asli
+  source: dataset
+  date: '1985-09-06'
+  date_basis: tanggal_penetapan
+  text: pp_40_1985_1985-09-06.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c8042e504451e37d05a5887942a45d688cfccf45b980cbb4475a33effeab0357
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c8042e504451e37d05a5887942a45d688cfccf45b980cbb4475a33effeab0357
+  source_title: PP_NO_40_TH_1985
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:e28fdac5839f3371d8991f60ac6279ac25b3df76b430781e947ed77762596c13

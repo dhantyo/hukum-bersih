@@ -1,0 +1,39 @@
+id: pp_9_2013
+akn: /akn/id/act/pp/2013/9
+type: pp
+number: '9'
+year: 2013
+title: Peraturan Pemerintah Nomor 9 Tahun 2013 tentang Perusahaan Umum (Perum) Perikanan
+  Indonesia
+tentang: PERUSAHAAN UMUM (PERUM) PERIKANAN INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2013-01-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_9_2013_2013-01-23
+  kind: asli
+  source: dataset
+  date: '2013-01-23'
+  date_basis: tanggal_penetapan
+  text: pp_9_2013_2013-01-23.txt
+  pasal_count: 104
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6007299e5ed5f0e7d1f81e3eb893b5de9174d4379bb17ff4b675ea0f5f8b4b7e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6007299e5ed5f0e7d1f81e3eb893b5de9174d4379bb17ff4b675ea0f5f8b4b7e
+  source_title: PP_Nomor_9_Tahun_2013
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 118
+  status: none_known

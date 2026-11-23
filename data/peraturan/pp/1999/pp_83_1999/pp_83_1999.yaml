@@ -1,0 +1,40 @@
+id: pp_83_1999
+akn: /akn/id/act/pp/1999/83
+type: pp
+number: '83'
+year: 1999
+title: Peraturan Pemerintah Nomor 83 Tahun 1999 tentang Kerjasama Antara Pemerintah
+  Dan Bank Umum Dalam Rangka Pembiayaan Kredit Usaha Tani
+tentang: KERJASAMA ANTARA PEMERINTAH DAN BANK UMUM DALAM RANGKA PEMBIAYAAN KREDIT
+  USAHA TANI
+short_name: null
+status: null
+tanggal_penetapan: '1999-10-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_83_1999_1999-10-07
+  kind: asli
+  source: dataset
+  date: '1999-10-07'
+  date_basis: tanggal_penetapan
+  text: pp_83_1999_1999-10-07.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1d976b6b26acc6fe462dfb9a53f78957a001ce74d2b913cff02402b077238514
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1d976b6b26acc6fe462dfb9a53f78957a001ce74d2b913cff02402b077238514
+  source_title: PP_No._83_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: none_known

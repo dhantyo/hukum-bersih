@@ -1,0 +1,41 @@
+id: pp_68_2000
+akn: /akn/id/act/pp/2000/68
+type: pp
+number: '68'
+year: 2000
+title: Peraturan Pemerintah Nomor 68 Tahun 2000 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Perusahaan (Persero) Pt. Bank Tabungan
+  Negara Dalam Rangka Program Rekapitulasi Bank Umum
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL PERUSAHAAN
+  (PERSERO) PT. BANK TABUNGAN NEGARA DALAM RANGKA PROGRAM REKAPITULASI BANK UMUM
+short_name: null
+status: null
+tanggal_penetapan: '2000-08-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_68_2000_2000-08-21
+  kind: asli
+  source: dataset
+  date: '2000-08-21'
+  date_basis: tanggal_penetapan
+  text: pp_68_2000_2000-08-21.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fe499a4706309b712d724b08d6e684806a96c5885e870b44fb2b9981229f00f4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fe499a4706309b712d724b08d6e684806a96c5885e870b44fb2b9981229f00f4
+  source_title: PP_No.68_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: none_known

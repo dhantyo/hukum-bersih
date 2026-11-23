@@ -1,0 +1,39 @@
+id: pp_9_2004
+akn: /akn/id/act/pp/2004/9
+type: pp
+number: '9'
+year: 2004
+title: Peraturan Pemerintah Nomor 9 Tahun 2004 tentang Kampanye Pemilihan Umum Oleh
+  Pejabat Negara
+tentang: KAMPANYE PEMILIHAN UMUM OLEH PEJABAT NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '2004-02-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_9_2004_2004-02-25
+  kind: asli
+  source: dataset
+  date: '2004-02-25'
+  date_basis: tanggal_penetapan
+  text: pp_9_2004_2004-02-25.txt
+  pasal_count: 24
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:68ae88d2a160ce78b133d681767b7d941c5b90ff97abdeb6f04a3d4f8a32aff2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:68ae88d2a160ce78b133d681767b7d941c5b90ff97abdeb6f04a3d4f8a32aff2
+  source_title: PP_No.9_TH_2004
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 46
+  status: none_known

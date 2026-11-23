@@ -1,0 +1,42 @@
+id: pp_39_1990
+akn: /akn/id/act/pp/1990/39
+type: pp
+number: '39'
+year: 1990
+title: Peraturan Pemerintah Nomor 39 Tahun 1990 tentang Pengalihan Bentuk Perusahaan
+  Umum (Perum) Perikanan Maluku Menjadi Perusahaan Perseroan (Persero)
+tentang: PENGALIHAN BENTUK PERUSAHAAN UMUM (PERUM) PERIKANAN MALUKU MENJADI PERUSAHAAN
+  PERSEROAN (PERSERO)
+short_name: null
+status: dicabut
+tanggal_penetapan: '1990-08-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_39_1990_1990-08-22
+  kind: asli
+  source: dataset
+  date: '1990-08-22'
+  date_basis: tanggal_penetapan
+  text: pp_39_1990_1990-08-22.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:63b2b6f6d37e08f82ff88e5e4cafe04306bfde33f244a4a85493680bbbc8abc9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:63b2b6f6d37e08f82ff88e5e4cafe04306bfde33f244a4a85493680bbbc8abc9
+  source_title: PP_NO_39_TH_1990
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:75d40b9f5d04918d066493cc88d37220a05483585f03a907f10fedc155996d75

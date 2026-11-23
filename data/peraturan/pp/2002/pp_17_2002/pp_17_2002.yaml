@@ -1,0 +1,41 @@
+id: pp_17_2002
+akn: /akn/id/act/pp/2002/17
+type: pp
+number: '17'
+year: 2002
+title: Peraturan Pemerintah Nomor 17 Tahun 2002 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Pelabuhan Indonesia Ii
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT PELABUHAN INDONESIA II
+short_name: null
+status: null
+tanggal_penetapan: '2002-04-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_17_2002_2002-04-23
+  kind: asli
+  source: dataset
+  date: '2002-04-23'
+  date_basis: tanggal_penetapan
+  text: pp_17_2002_2002-04-23.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9a0179905f7d40ea951df28324b8eccef66b5a51577afb33ac2ce4e97409ede8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9a0179905f7d40ea951df28324b8eccef66b5a51577afb33ac2ce4e97409ede8
+  source_title: PP_No.17_TH_2002
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 18
+  status: none_known

@@ -1,0 +1,40 @@
+id: pp_33_1994
+akn: /akn/id/act/pp/1994/33
+type: pp
+number: '33'
+year: 1994
+title: Peraturan Pemerintah Nomor 33 Tahun 1994 tentang Peraturan Gaji Hakim
+tentang: PERATURAN GAJI HAKIM
+short_name: null
+status: dicabut
+tanggal_penetapan: '1995-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_33_1994_1995-01-01
+  kind: asli
+  source: dataset
+  date: '1995-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_33_1994_1995-01-01.txt
+  pasal_count: 16
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d747bcb085811bc4da11c7c9fc27649473d4997acb43b70a5810386a6763f952
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d747bcb085811bc4da11c7c9fc27649473d4997acb43b70a5810386a6763f952
+  source_title: PP_No._33_Th_1994
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 19
+  status: revoked
+  revoked_by:
+  - sha256:724903891103f3e4cd35fae23aeb1c3008ba90ffcc18b9b392717be613decca4

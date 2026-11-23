@@ -1,0 +1,40 @@
+id: pp_78_2001
+akn: /akn/id/act/pp/2001/78
+type: pp
+number: '78'
+year: 2001
+title: Peraturan Pemerintah Nomor 78 Tahun 2001 tentang Penjualan Saham Milik Negara
+  Republik Indonesia Pada Pt Telekomunikasi Indonesia Tbk
+tentang: PENJUALAN SAHAM MILIK NEGARA REPUBLIK INDONESIA PADA PT TELEKOMUNIKASI INDONESIA
+  Tbk
+short_name: null
+status: null
+tanggal_penetapan: '2001-12-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_78_2001_2001-12-07
+  kind: asli
+  source: dataset
+  date: '2001-12-07'
+  date_basis: tanggal_penetapan
+  text: pp_78_2001_2001-12-07.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:cc5468155afc1b7a90e3252571de3df24d082414d4d6ebf50097323e22f55a98
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:cc5468155afc1b7a90e3252571de3df24d082414d4d6ebf50097323e22f55a98
+  source_title: PP_NO_78_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

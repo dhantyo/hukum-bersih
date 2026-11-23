@@ -1,0 +1,41 @@
+id: pp_82_2008
+akn: /akn/id/act/pp/2008/82
+type: pp
+number: '82'
+year: 2008
+title: Peraturan Pemerintah Nomor 82 Tahun 2008 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Perusahaan Gas Negara Tbk
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT PERUSAHAAN GAS NEGARA Tbk
+short_name: null
+status: null
+tanggal_penetapan: '2008-12-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_82_2008_2008-12-31
+  kind: asli
+  source: dataset
+  date: '2008-12-31'
+  date_basis: tanggal_penetapan
+  text: pp_82_2008_2008-12-31.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:02230dc589685981f749d8d2d0d02144c9af717ecc7a070d2e5f4e8f7c3ff7c2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:02230dc589685981f749d8d2d0d02144c9af717ecc7a070d2e5f4e8f7c3ff7c2
+  source_title: PP_82_Tahun_2008
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

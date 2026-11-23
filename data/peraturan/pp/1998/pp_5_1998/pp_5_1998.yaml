@@ -1,0 +1,41 @@
+id: pp_5_1998
+akn: /akn/id/act/pp/1998/5
+type: pp
+number: '5'
+year: 1998
+title: Peraturan Pemerintah Nomor 5 Tahun 1998 tentang Penyanderaan Dalam Rangka Penagihan
+  Pajak Dengan Surat Paksa
+tentang: PENYANDERAAN DALAM RANGKA PENAGIHAN PAJAK DENGAN SURAT PAKSA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-01-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_5_1998_1998-01-07
+  kind: asli
+  source: dataset
+  date: '1998-01-07'
+  date_basis: tanggal_penetapan
+  text: pp_5_1998_1998-01-07.txt
+  pasal_count: 16
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7f5c86cd149089eb00d777af49bfecd72cfba121d93290c4ea09aa48883d70d2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7f5c86cd149089eb00d777af49bfecd72cfba121d93290c4ea09aa48883d70d2
+  source_title: PP_No._5_Tahun_1998
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 36
+  status: revoked
+  revoked_by:
+  - sha256:d4cfb94ee4b58d4345cd073091e0a300889402b5030078b66457537f2f83e843

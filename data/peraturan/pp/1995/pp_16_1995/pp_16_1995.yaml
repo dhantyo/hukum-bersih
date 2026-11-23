@@ -1,0 +1,39 @@
+id: pp_16_1995
+akn: /akn/id/act/pp/1995/16
+type: pp
+number: '16'
+year: 1995
+title: Peraturan Pemerintah Nomor 16 Tahun 1995 tentang Penetapan Pensiun Pokok Pensiunan
+  Hakim Dan Janda/Dudanya
+tentang: PENETAPAN PENSIUN POKOK PENSIUNAN HAKIM DAN JANDA/DUDANYA
+short_name: null
+status: null
+tanggal_penetapan: '1995-06-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_16_1995_1995-06-23
+  kind: asli
+  source: dataset
+  date: '1995-06-23'
+  date_basis: tanggal_penetapan
+  text: pp_16_1995_1995-06-23.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:191fc229688846b5b6c282c5c2bc95f4b3729210d4484d01edd2e7ec922d1636
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:191fc229688846b5b6c282c5c2bc95f4b3729210d4484d01edd2e7ec922d1636
+  source_title: PP_No._16_Th_1995
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: none_known

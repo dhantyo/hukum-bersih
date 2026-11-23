@@ -1,0 +1,40 @@
+id: pp_97_2012
+akn: /akn/id/act/pp/2012/97
+type: pp
+number: '97'
+year: 2012
+title: Peraturan Pemerintah Nomor 97 Tahun 2012 tentang Retribusi Pengendalian Lalu
+  Lintas Dan Retribusi Perpanjangan Izin Mempekerjakan Tenaga Kerja Asing
+tentang: RETRIBUSI PENGENDALIAN LALU LINTAS DAN RETRIBUSI PERPANJANGAN IZIN MEMPEKERJAKAN
+  TENAGA KERJA ASING
+short_name: null
+status: null
+tanggal_penetapan: '2013-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_97_2012_2013-01-01
+  kind: asli
+  source: dataset
+  date: '2013-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_97_2012_2013-01-01.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5193053875278d52faa2c3b6ac481f787e16b4f91fe9f81edbb0a18e1fa00819
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5193053875278d52faa2c3b6ac481f787e16b4f91fe9f81edbb0a18e1fa00819
+  source_title: PP_Nomor_97_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 31
+  status: none_known

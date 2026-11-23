@@ -1,0 +1,41 @@
+id: pp_68_2012
+akn: /akn/id/act/pp/2012/68
+type: pp
+number: '68'
+year: 2012
+title: Peraturan Pemerintah Nomor 68 Tahun 2012 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Penjaminan Infrastruktur Indonesia
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT PENJAMINAN INFRASTRUKTUR INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2012-08-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_68_2012_2012-08-10
+  kind: asli
+  source: dataset
+  date: '2012-08-10'
+  date_basis: tanggal_penetapan
+  text: pp_68_2012_2012-08-10.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3120a6756dc3524f901976275e8ae5bffbd76afa62032771d485ee96e4577985
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3120a6756dc3524f901976275e8ae5bffbd76afa62032771d485ee96e4577985
+  source_title: PP_Nomor_68_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 6
+  status: none_known

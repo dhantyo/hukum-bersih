@@ -1,0 +1,39 @@
+id: pp_40_2015
+akn: /akn/id/act/pp/2015/40
+type: pp
+number: '40'
+year: 2015
+title: Peraturan Pemerintah Nomor 40 Tahun 2015 tentang Penyerahan Air Bersih Yang
+  Dibebaskan Dari Pengenaan Pajak Pertambahan Nilai
+tentang: PENYERAHAN AIR BERSIH YANG DIBEBASKAN DARI PENGENAAN PAJAK PERTAMBAHAN NILAI
+short_name: null
+status: null
+tanggal_penetapan: '2015-06-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_40_2015_2015-06-23
+  kind: asli
+  source: dataset
+  date: '2015-06-23'
+  date_basis: tanggal_penetapan
+  text: pp_40_2015_2015-06-23.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d4435ccc146574e4279802fdc90f7c7c7529f3a04bf25bffdf975a5f9fcca73a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d4435ccc146574e4279802fdc90f7c7c7529f3a04bf25bffdf975a5f9fcca73a
+  source_title: PP_Nomor_40_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: none_known

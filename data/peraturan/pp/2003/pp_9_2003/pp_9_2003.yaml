@@ -1,0 +1,41 @@
+id: pp_9_2003
+akn: /akn/id/act/pp/2003/9
+type: pp
+number: '9'
+year: 2003
+title: Peraturan Pemerintah Nomor 9 Tahun 2003 tentang Wewenang Pengangkatan, Pemindahan,
+  Dan Pemberhentian Pegawai Negeri Sipil
+tentang: WEWENANG PENGANGKATAN, PEMINDAHAN, DAN PEMBERHENTIAN PEGAWAI NEGERI SIPIL
+short_name: null
+status: diubah
+tanggal_penetapan: '2003-02-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_9_2003_2003-02-17
+  kind: asli
+  source: dataset
+  date: '2003-02-17'
+  date_basis: tanggal_penetapan
+  text: pp_9_2003_2003-02-17.txt
+  pasal_count: 36
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:384974efa0b19b032b6c275866572c47cafa8d1c151b50c9622b05947c9b66b6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:384974efa0b19b032b6c275866572c47cafa8d1c151b50c9622b05947c9b66b6
+  source_title: PP_No.9_TH_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 68
+  status: amended
+  amended_by:
+  - sha256:1a753acd2da1c03f1097e47cad7af96e1f9ac61dc295115ee2ff8978a61fcfa7

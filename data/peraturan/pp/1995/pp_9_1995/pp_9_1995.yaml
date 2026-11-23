@@ -1,0 +1,39 @@
+id: pp_9_1995
+akn: /akn/id/act/pp/1995/9
+type: pp
+number: '9'
+year: 1995
+title: Peraturan Pemerintah Nomor 9 Tahun 1995 tentang Pelaksanaan Kegiatan Usaha
+  Simpan Pinjam I Oleh Koperasi
+tentang: PELAKSANAAN KEGIATAN USAHA SIMPAN PINJAM I OLEH KOPERASI
+short_name: null
+status: null
+tanggal_penetapan: '1995-04-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_9_1995_1995-04-21
+  kind: asli
+  source: dataset
+  date: '1995-04-21'
+  date_basis: tanggal_penetapan
+  text: pp_9_1995_1995-04-21.txt
+  pasal_count: 38
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b2d0d8cc18f99b7de6ae3bfe6836cdf917e85e7e74e6a7e0ea585fba63829760
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b2d0d8cc18f99b7de6ae3bfe6836cdf917e85e7e74e6a7e0ea585fba63829760
+  source_title: PP_No._9_Th_1996__1_
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 77
+  status: none_known

@@ -1,0 +1,39 @@
+id: pp_22_2008
+akn: /akn/id/act/pp/2008/22
+type: pp
+number: '22'
+year: 2008
+title: Peraturan Pemerintah Nomor 22 Tahun 2008 tentang Pendanaan Dan Pengelolaan
+  Bantuan Bencana
+tentang: PENDANAAN DAN PENGELOLAAN BANTUAN BENCANA
+short_name: null
+status: null
+tanggal_penetapan: '2008-02-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_22_2008_2008-02-28
+  kind: asli
+  source: dataset
+  date: '2008-02-28'
+  date_basis: tanggal_penetapan
+  text: pp_22_2008_2008-02-28.txt
+  pasal_count: 37
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:63d712c1cec595e69fb20b167dcc2ff58652d98c5538a75ae5a4ce34dc9d8858
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:63d712c1cec595e69fb20b167dcc2ff58652d98c5538a75ae5a4ce34dc9d8858
+  source_title: PP_22_Tahun_2008
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 48
+  status: none_known

@@ -1,0 +1,42 @@
+id: pp_31_2013
+akn: /akn/id/act/pp/2013/31
+type: pp
+number: '31'
+year: 2013
+title: Peraturan Pemerintah Nomor 31 Tahun 2013 tentang Peraturan Pelaksanaan Undang-Undang
+  Nomor 6 Tahun 2011 Tentang Keimigrasian
+tentang: PERATURAN PELAKSANAAN UNDANG-UNDANG NOMOR 6 TAHUN 2011 TENTANG KEIMIGRASIAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2011-05-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_31_2013_2011-05-05
+  kind: asli
+  source: dataset
+  date: '2011-05-05'
+  date_basis: tanggal_penetapan
+  text: pp_31_2013_2011-05-05.txt
+  pasal_count: 258
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:35017b8e7ed7d38a39e6d91a61e53418e698bf57505ff280be4772ba4b614c97
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:35017b8e7ed7d38a39e6d91a61e53418e698bf57505ff280be4772ba4b614c97
+  source_title: PP_Nomor_31_Tahun_2013
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 333
+  status: amended
+  amended_by:
+  - sha256:71cdc19bc50a4dacaedcee5d9b49905e479a4d8a9e18226f0376e86446ae2bc5
+  - sha256:ab8df4dc6018fc3ca0bfea00d3a74ec4eecb2e8614ece84f43952a025856305a

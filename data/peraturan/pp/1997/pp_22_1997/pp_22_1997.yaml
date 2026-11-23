@@ -1,0 +1,46 @@
+id: pp_22_1997
+akn: /akn/id/act/pp/1997/22
+type: pp
+number: '22'
+year: 1997
+title: Peraturan Pemerintah Nomor 22 Tahun 1997 tentang Jenis Dan Penyetoran Penerimaan
+  Negara Bukan Pajak
+tentang: JENIS DAN PENYETORAN PENERIMAAN NEGARA BUKAN PAJAK
+short_name: null
+status: dicabut
+tanggal_penetapan: '1997-07-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_22_1997_1997-07-07
+  kind: asli
+  source: dataset
+  date: '1997-07-07'
+  date_basis: tanggal_penetapan
+  text: pp_22_1997_1997-07-07.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b367656f5f9aa26e502970ad923bd64be7f9fe4007eb6a6ba5f4f0280b484ad6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b367656f5f9aa26e502970ad923bd64be7f9fe4007eb6a6ba5f4f0280b484ad6
+  source_title: PP_No._22_Th_1997
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 29
+  status: revoked
+  revoked_by:
+  - sha256:1820f417a26e284fcdefed8d98e5347fddebb62761450308f60c3832c5aff34c
+  - sha256:27ba841be52c9a794d73dcadfbce765d1c92e623d2aed0d9f05579ccca12a57b
+  - sha256:e7a8b7af9df3d1d04422d5d7fa1d074dd077c9aea265abbd4584b8a7aa15667a
+  - sha256:fccdc9e3cc18abf7de75514c3b44c25326bbcabe9e689f1e7710e36258922f87
+  amended_by:
+  - sha256:f43a34a5f61fd5c86805dd3bbc875bde162a27908946286880f308afa4a95dfe

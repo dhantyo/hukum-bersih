@@ -1,0 +1,27 @@
+id: pp_70_2001
+akn: /akn/id/act/pp/2001/70
+type: pp
+number: '70'
+year: 2001
+title: Peraturan Pemerintah Nomor 70 Tahun 2001 tentang Kebandarudaraan
+tentang: KEBANDARUDARAAN
+short_name: null
+status: null
+tanggal_penetapan: '2001-10-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7a6ffb8900f812b094c1f0b2ead26fb8f5472fb05a9d4edde504066a9a5093b0
+  source_title: PP_NO_70_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 104
+  status: none_known
+parse_error: 'v13: rebuilt text has 10 pasal, the dataset lists 57'

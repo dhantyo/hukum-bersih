@@ -1,0 +1,40 @@
+id: pp_52_2000
+akn: /akn/id/act/pp/2000/52
+type: pp
+number: '52'
+year: 2000
+title: Peraturan Pemerintah Nomor 52 Tahun 2000 tentang Penyelenggaraan Telekomunikasi
+tentang: PENYELENGGARAAN TELEKOMUNIKASI
+short_name: null
+status: diubah
+tanggal_penetapan: '2000-09-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_52_2000_2000-09-08
+  kind: asli
+  source: dataset
+  date: '2000-09-08'
+  date_basis: tanggal_penetapan
+  text: pp_52_2000_2000-09-08.txt
+  pasal_count: 98
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5a75ab5017f1a810267387cea4c2a236cbaff3f648eb17a23365aa839a0433d6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5a75ab5017f1a810267387cea4c2a236cbaff3f648eb17a23365aa839a0433d6
+  source_title: PP_No.52_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 161
+  status: amended
+  amended_by:
+  - sha256:71cdc19bc50a4dacaedcee5d9b49905e479a4d8a9e18226f0376e86446ae2bc5

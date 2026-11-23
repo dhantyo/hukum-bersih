@@ -1,0 +1,40 @@
+id: pp_20_1997
+akn: /akn/id/act/pp/1997/20
+type: pp
+number: '20'
+year: 1997
+title: Peraturan Pemerintah Nomor 20 Tahun 1997 tentang Retribusi Daerah
+tentang: RETRIBUSI DAERAH
+short_name: null
+status: diubah
+tanggal_penetapan: '1997-07-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_20_1997_1997-07-04
+  kind: asli
+  source: dataset
+  date: '1997-07-04'
+  date_basis: tanggal_penetapan
+  text: pp_20_1997_1997-07-04.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:029fbf1a1ac4181ec25aa8a3d78cc626fca1b9842e60bb0b4934b71b52e54bda
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:029fbf1a1ac4181ec25aa8a3d78cc626fca1b9842e60bb0b4934b71b52e54bda
+  source_title: PP_No._20_Th_1997
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 36
+  status: amended
+  amended_by:
+  - sha256:b8286b5f54a34180685214b45ab54dba08ac0a2899c730395243520cfef0311b

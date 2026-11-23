@@ -1,0 +1,42 @@
+id: pp_46_2002
+akn: /akn/id/act/pp/2002/46
+type: pp
+number: '46'
+year: 2002
+title: Peraturan Pemerintah Nomor 46 Tahun 2002 tentang Tarif Atas Jenis Penerimaan
+  Negara Bukan Pajak Yang Berlaku Pada Badan Pertanahan Nasional
+tentang: TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA BADAN PERTANAHAN
+  NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2002-08-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_46_2002_2002-08-27
+  kind: asli
+  source: dataset
+  date: '2002-08-27'
+  date_basis: tanggal_penetapan
+  text: pp_46_2002_2002-08-27.txt
+  pasal_count: 25
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e7a8b7af9df3d1d04422d5d7fa1d074dd077c9aea265abbd4584b8a7aa15667a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e7a8b7af9df3d1d04422d5d7fa1d074dd077c9aea265abbd4584b8a7aa15667a
+  source_title: PP_No.46_TH_2002
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 49
+  status: revoked
+  revoked_by:
+  - sha256:30f019b704efd9f3f8d0fa78460b953924b0f9f4e38604fdf44ad9a5a20d80c2

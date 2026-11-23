@@ -1,0 +1,39 @@
+id: pp_46_2016
+akn: /akn/id/act/pp/2016/46
+type: pp
+number: '46'
+year: 2016
+title: Peraturan Pemerintah Nomor 46 Tahun 2016 tentang Tata Cara Penyelenggaraan
+  Kajian Lingkungan Hidup Strategis
+tentang: TATA CARA PENYELENGGARAAN KAJIAN LINGKUNGAN HIDUP STRATEGIS
+short_name: null
+status: null
+tanggal_penetapan: '2016-10-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_46_2016_2016-10-31
+  kind: asli
+  source: dataset
+  date: '2016-10-31'
+  date_basis: tanggal_penetapan
+  text: pp_46_2016_2016-10-31.txt
+  pasal_count: 41
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ec661d8767499b3629c8dab886cf4e163f9f54f8375e576939d1088abf94f11e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ec661d8767499b3629c8dab886cf4e163f9f54f8375e576939d1088abf94f11e
+  source_title: PP_Nomor_46_Tahun_2016
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 73
+  status: none_known

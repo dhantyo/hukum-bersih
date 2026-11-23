@@ -1,0 +1,41 @@
+id: pp_34_2008
+akn: /akn/id/act/pp/2008/34
+type: pp
+number: '34'
+year: 2008
+title: Peraturan Pemerintah Nomor 34 Tahun 2008 tentang Perubahan Keempat Atas Peraturan
+  Pemerintah Nomor 34 Tahun 1985 Tentang Pemberian Tunjangan Veteran Kepada Veteran
+  Republik Indonesia
+tentang: PERUBAHAN KEEMPAT ATAS PERATURAN PEMERINTAH NOMOR 34 TAHUN 1985 TENTANG PEMBERIAN
+  TUNJANGAN VETERAN KEPADA VETERAN REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2008-05-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_34_2008_2008-05-07
+  kind: asli
+  source: dataset
+  date: '2008-05-07'
+  date_basis: tanggal_penetapan
+  text: pp_34_2008_2008-05-07.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5fc23d8d68d7652735af5777ae11f4d3a1b3752d8c4ac54da93b8f27eecaa42b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5fc23d8d68d7652735af5777ae11f4d3a1b3752d8c4ac54da93b8f27eecaa42b
+  source_title: PP_34_Tahun_2008
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 6
+  status: none_known

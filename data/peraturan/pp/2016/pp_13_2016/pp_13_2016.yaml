@@ -1,0 +1,27 @@
+id: pp_13_2016
+akn: /akn/id/act/pp/2016/13
+type: pp
+number: '13'
+year: 2016
+title: Peraturan Pemerintah Nomor 13 Tahun 2016 tentang Perusahaan Umum (Perum) Bulog
+tentang: PERUSAHAAN UMUM (PERUM) BULOG
+short_name: null
+status: null
+tanggal_penetapan: '2016-05-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1b9b09ee1393cb52d8d179d3582363ed57a6aeafa50576a0d6a0a7bf6fdb1cbd
+  source_title: PP_Nomor_13_Tahun_2016
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 118
+  status: none_known
+parse_error: 'v13: rebuilt text has 4 pasal, the dataset lists 82'

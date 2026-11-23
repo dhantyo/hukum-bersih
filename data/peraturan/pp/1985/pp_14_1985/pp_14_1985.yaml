@@ -1,0 +1,49 @@
+id: pp_14_1985
+akn: /akn/id/act/pp/1985/14
+type: pp
+number: '14'
+year: 1985
+title: Peraturan Pemerintah Nomor 14 Tahun 1985 tentang Pemberian Tunjangan Perintis
+  Pergerakan Kebangsaan/Kemerdekaan Presiden Republik Indonesia
+tentang: PEMBERIAN TUNJANGAN PERINTIS PERGERAKAN KEBANGSAAN/KEMERDEKAAN Presiden Republik
+  Indonesia
+short_name: null
+status: diubah
+tanggal_penetapan: '1985-04-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_14_1985_1985-04-01
+  kind: asli
+  source: dataset
+  date: '1985-04-01'
+  date_basis: tanggal_penetapan
+  text: pp_14_1985_1985-04-01.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:82101cc730d9b569cd9b5a69fb23639de15c5ccb96d835e96891c30e0b7969fb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:82101cc730d9b569cd9b5a69fb23639de15c5ccb96d835e96891c30e0b7969fb
+  source_title: PP_NO_14_TH_1985
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: amended
+  amended_by:
+  - sha256:2bbca265060a36063da05d29e428e391b341b37efb2a4b857326ea9fc0abe601
+  - sha256:3385c560c29e6ef6668dc13de95b7753c279a930bb808659f688c1366d22e3b4
+  - sha256:58b7e93494bd65c735aed68eb445c72feb35eb19ff2ef3f9dff1bc65bc06a807
+  - sha256:681dfa9ac8af3b6cfb20706a1de1747a7f8d04e752e1ec9ffeb57a44b784093f
+  - sha256:96c8bb88598e69134d07a2e3c6d4bad9a2a44c3efeecfb1d5091669f1dc06c1c
+  - sha256:b10daf4ea74b1b20ea24d68896ce4a6314d0d32e8f9d2100075977f06bc98769
+  - sha256:bf940e6c1efe71b58de02edc0a8d89b712fcbcea458e063f07c01d41505267bf
+  - sha256:e1d9fef7289f99102593a197a7e55968ee9a10670fc5d4b997bec80b7075ad42

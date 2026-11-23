@@ -1,0 +1,49 @@
+id: pp_34_1985
+akn: /akn/id/act/pp/1985/34
+type: pp
+number: '34'
+year: 1985
+title: Peraturan Pemerintah Nomor 34 Tahun 1985 tentang Indonesia Presiden Republik
+  Indonesia
+tentang: INDONESIA Presiden Republik Indonesia
+short_name: null
+status: diubah
+tanggal_penetapan: '1985-07-08'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_34_1985_1985-07-08
+  kind: asli
+  source: dataset
+  date: '1985-07-08'
+  date_basis: tanggal_penetapan
+  text: pp_34_1985_1985-07-08.txt
+  pasal_count: 17
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:20c4a41e56d405a1f917258422b2691622181be40393e6711cb4c4383040d941
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:20c4a41e56d405a1f917258422b2691622181be40393e6711cb4c4383040d941
+  source_title: PP_NO_34_TH_1985
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 21
+  status: amended
+  amended_by:
+  - sha256:422a3b875073e0e34db6aace3636424189224ea257b4570ec31733bdfce182bf
+  - sha256:5fc23d8d68d7652735af5777ae11f4d3a1b3752d8c4ac54da93b8f27eecaa42b
+  - sha256:66f333bad53cfc14fc322cf34b3776fa29c302ec0948c6ed40f097d47c11cff5
+  - sha256:6a79a430c2f838ad948177302e4361b6a878ff69c65153af2d700202afa66898
+  - sha256:703b30e0b86e282bf8c6a778cd9f1147db122e8cf8e1aeb5de5e86480f50da0b
+  - sha256:9116766f66d84ad7214d40af664da571982bafc870c62506844bec6eb724d713
+  - sha256:a4ac56f8454c41a553365b5236b56274bd7b82504fdf5d97e595ebba7334a2d7
+  - sha256:b320b46bf498aa6d33a47183bf149a011e4b2edaa5193e66acd9f1f565dc9df1
+  - sha256:c14685538bd5f0cd5c4bcc7019d5de21e60bac73612f34ca8cc35a5c0393a01c

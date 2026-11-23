@@ -1,0 +1,41 @@
+id: pp_85_2010
+akn: /akn/id/act/pp/2010/85
+type: pp
+number: '85'
+year: 2010
+title: Peraturan Pemerintah Nomor 85 Tahun 2010 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Sarana Multi Infrastruktur Kumham.Go
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT SARANA MULTI INFRASTRUKTUR kumham.go
+short_name: null
+status: null
+tanggal_penetapan: '2010-12-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_85_2010_2010-12-22
+  kind: asli
+  source: dataset
+  date: '2010-12-22'
+  date_basis: tanggal_penetapan
+  text: pp_85_2010_2010-12-22.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:39206964d6b79bf1bfec971fdb3b1ca84767ab47de900d6a85c88a2e7c095020
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:39206964d6b79bf1bfec971fdb3b1ca84767ab47de900d6a85c88a2e7c095020
+  source_title: PP_85_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 5
+  status: none_known

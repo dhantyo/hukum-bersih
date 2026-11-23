@@ -1,0 +1,29 @@
+id: pp_54_2005
+akn: /akn/id/act/pp/2005/54
+type: pp
+number: '54'
+year: 2005
+title: Peraturan Pemerintah Nomor 54 Tahun 2005 tentang Pinjaman Daerah
+tentang: PINJAMAN DAERAH
+short_name: null
+status: dicabut
+tanggal_penetapan: '2005-12-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e1b58e9912997e9445e54da9636578c33d680b3990409a5365eebccb6e5a86d1
+  source_title: PP_NO_54_TH_2005
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 76
+  status: revoked
+  revoked_by:
+  - sha256:b5220a4707d65cceb50225d968ce9cd37acd8844f2079775fbe4030b223f246a
+parse_error: 'v13: rebuilt text has 1 pasal, the dataset lists 44'

@@ -1,0 +1,42 @@
+id: pp_44_2005
+akn: /akn/id/act/pp/2005/44
+type: pp
+number: '44'
+year: 2005
+title: Peraturan Pemerintah Nomor 44 Tahun 2005 tentang Tata Cara Penyertaan Dan Penatausahaan
+  Modal Negara Pada Badan Usaha Milik Negara Dan Perseroan Terbatas
+tentang: TATA CARA PENYERTAAN DAN PENATAUSAHAAN MODAL NEGARA PADA BADAN USAHA MILIK
+  NEGARA DAN PERSEROAN TERBATAS
+short_name: null
+status: diubah
+tanggal_penetapan: '2005-10-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_44_2005_2005-10-25
+  kind: asli
+  source: dataset
+  date: '2005-10-25'
+  date_basis: tanggal_penetapan
+  text: pp_44_2005_2005-10-25.txt
+  pasal_count: 27
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ad2dbd18c9b615e5114d3aec08726140dd69fb451e9266b8d2148967d17323d6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ad2dbd18c9b615e5114d3aec08726140dd69fb451e9266b8d2148967d17323d6
+  source_title: PP_NO_44_TH_2005
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 49
+  status: amended
+  amended_by:
+  - sha256:e70b98af7b21efc44bbb7bda83b4bb4c58956bd4b56e4e68fb2bd0ca97c8792f

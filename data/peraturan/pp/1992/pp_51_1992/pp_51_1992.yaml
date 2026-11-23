@@ -1,0 +1,42 @@
+id: pp_51_1992
+akn: /akn/id/act/pp/1992/51
+type: pp
+number: '51'
+year: 1992
+title: Peraturan Pemerintah Nomor 51 Tahun 1992 tentang Perubahan Peraturan Pemerintah
+  Nomor 7 Tahun 1977 Tentang Peraturan Gaji Pegawai Negeri Sipil Sebagaimana Telah
+  Diubah, Terakhir Dengan Peraturan Pemerintah Nomor 15 Tahun 1985
+tentang: PERUBAHAN PERATURAN PEMERINTAH NOMOR 7 TAHUN 1977 TENTANG PERATURAN GAJI
+  PEGAWAI NEGERI SIPIL SEBAGAIMANA TELAH DIUBAH, TERAKHIR DENGAN PERATURAN PEMERINTAH
+  NOMOR 15 TAHUN 1985
+short_name: null
+status: null
+tanggal_penetapan: '1992-09-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_51_1992_1992-09-17
+  kind: asli
+  source: dataset
+  date: '1992-09-17'
+  date_basis: tanggal_penetapan
+  text: pp_51_1992_1992-09-17.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f048e586b40faebbf71c9f131c05754ebf52ba8ea2851841e363e789eaea3234
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f048e586b40faebbf71c9f131c05754ebf52ba8ea2851841e363e789eaea3234
+  source_title: PP_NO_51_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 8
+  status: none_known

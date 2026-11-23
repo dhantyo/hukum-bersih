@@ -1,0 +1,47 @@
+id: pp_52_1992
+akn: /akn/id/act/pp/1992/52
+type: pp
+number: '52'
+year: 1992
+title: Peraturan Pemerintah Nomor 52 Tahun 1992 tentang Perubahan Peraturan Pemerintah
+  Nomor 9 Tahun 1980 Tentang Hak Keuangan/Administratif Kepala Daerah/Wakil Kepala
+  Daerah Dan Bekas Kepala Daerah/Bekas Wakil Kepala Daerah Serta Janda/Dudanya Sebagaimana
+  Telah Dua Kali Diubah, Terakhir Dengan Peraturan Pemerintah Nomor 12 Tahun 1985
+  Pesiden Republik Indonesia
+tentang: PERUBAHAN PERATURAN PEMERINTAH NOMOR 9 TAHUN 1980 TENTANG HAK KEUANGAN/ADMINISTRATIF
+  KEPALA DAERAH/WAKIL KEPALA DAERAH DAN BEKAS KEPALA DAERAH/BEKAS WAKIL KEPALA DAERAH
+  SERTA JANDA/DUDANYA SEBAGAIMANA TELAH DUA KALI DIUBAH, TERAKHIR DENGAN PERATURAN
+  PEMERINTAH NOMOR 12 TAHUN 1985 PESIDEN REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1992-09-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_52_1992_1992-09-17
+  kind: asli
+  source: dataset
+  date: '1992-09-17'
+  date_basis: tanggal_penetapan
+  text: pp_52_1992_1992-09-17.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b68ed14fba27866c1b85ce4ab5252a557be224afecd751ee0520e0fcc3bdc33c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b68ed14fba27866c1b85ce4ab5252a557be224afecd751ee0520e0fcc3bdc33c
+  source_title: PP_NO_52_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: revoked
+  revoked_by:
+  - sha256:dd073b63d6a50559ebb53571ae582857aeee006d5cc3a2a34c1ce3e27d3fafe8

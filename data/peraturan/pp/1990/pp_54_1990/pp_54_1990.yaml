@@ -1,0 +1,41 @@
+id: pp_54_1990
+akn: /akn/id/act/pp/1990/54
+type: pp
+number: '54'
+year: 1990
+title: Peraturan Pemerintah Nomor 54 Tahun 1990 tentang Perubahan Atas Peraturan Pemerintah
+  Nomor 21 Tahun 1989 Tentang Pajak Penghasilan Atas Bunga Deposito Berjangka, Sertifikat
+  Deposito Dan Tabungan
+tentang: PERUBAHAN ATAS PERATURAN PEMERINTAH NOMOR 21 TAHUN 1989 TENTANG PAJAK PENGHASILAN
+  ATAS BUNGA DEPOSITO BERJANGKA, SERTIFIKAT DEPOSITO DAN TABUNGAN
+short_name: null
+status: null
+tanggal_penetapan: '1990-10-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_54_1990_1990-10-13
+  kind: asli
+  source: dataset
+  date: '1990-10-13'
+  date_basis: tanggal_penetapan
+  text: pp_54_1990_1990-10-13.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4c2b7c2ddf68bf0188f615d7ee5069c6791c97d0bea745426f52614867880b46
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4c2b7c2ddf68bf0188f615d7ee5069c6791c97d0bea745426f52614867880b46
+  source_title: PP_NO_54_TH_1990
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 5
+  status: none_known

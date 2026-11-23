@@ -1,0 +1,38 @@
+id: pp_27_1990
+akn: /akn/id/act/pp/1990/27
+type: pp
+number: '27'
+year: 1990
+title: Peraturan Pemerintah Nomor 27 Tahun 1990 tentang Pendidikan Prasekolah
+tentang: PENDIDIKAN PRASEKOLAH
+short_name: null
+status: null
+tanggal_penetapan: '1990-07-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_27_1990_1990-07-10
+  kind: asli
+  source: dataset
+  date: '1990-07-10'
+  date_basis: tanggal_penetapan
+  text: pp_27_1990_1990-07-10.txt
+  pasal_count: 22
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7e346a8485f50b25b780983bad26cf0df4e5d1999831eb3703b5975f97ea7a70
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7e346a8485f50b25b780983bad26cf0df4e5d1999831eb3703b5975f97ea7a70
+  source_title: PP_NO_27_TH_1990
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 44
+  status: none_known

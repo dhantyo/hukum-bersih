@@ -1,0 +1,44 @@
+id: pp_14_2006
+akn: /akn/id/act/pp/2006/14
+type: pp
+number: '14'
+year: 2006
+title: Peraturan Pemerintah Nomor 14 Tahun 2006 tentang Penetapan Pensiun Pokok Purnawirawan/Warakawuri
+  Atau Duda, Tunjangan Anak Yatim/ Piatu, Anak Yatim Piatu Dan Pemberian Tunjangan
+  Orang Tua Prajurit Tentara Nasional Indonesia
+tentang: PENETAPAN PENSIUN POKOK PURNAWIRAWAN/WARAKAWURI ATAU DUDA, TUNJANGAN ANAK
+  YATIM/ PIATU, ANAK YATIM PIATU DAN PEMBERIAN TUNJANGAN ORANG TUA PRAJURIT TENTARA
+  NASIONAL INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2006-04-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_14_2006_2006-04-20
+  kind: asli
+  source: dataset
+  date: '2006-04-20'
+  date_basis: tanggal_penetapan
+  text: pp_14_2006_2006-04-20.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:619c47388330c266565564cc1f9cb6b77670fdb49250134c2ec5024fc970396f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:619c47388330c266565564cc1f9cb6b77670fdb49250134c2ec5024fc970396f
+  source_title: PP_no_14_th_2006
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:15e2c7bc1eac62820dcc4c5f602cb95f51ac22d8b1851715476ac5cb25578968

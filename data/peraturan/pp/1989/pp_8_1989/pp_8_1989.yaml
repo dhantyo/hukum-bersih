@@ -1,0 +1,40 @@
+id: pp_8_1989
+akn: /akn/id/act/pp/1989/8
+type: pp
+number: '8'
+year: 1989
+title: Peraturan Pemerintah Nomor 8 Tahun 1989 tentang Pemberhentian Dan Pemberian
+  Pensiun Pegawai Negeri Sipil Serta Pemberian Pensiun Janda/Dudanya
+tentang: PEMBERHENTIAN DAN PEMBERIAN PENSIUN PEGAWAI NEGERI SIPIL SERTA PEMBERIAN
+  PENSIUN JANDA/DUDANYA
+short_name: null
+status: null
+tanggal_penetapan: '1989-04-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_8_1989_1989-04-13
+  kind: asli
+  source: dataset
+  date: '1989-04-13'
+  date_basis: tanggal_penetapan
+  text: pp_8_1989_1989-04-13.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6e940cca3aab61ed41743be0c3fb5a41ce5f738f8803646bbab8cea4effe6a61
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6e940cca3aab61ed41743be0c3fb5a41ce5f738f8803646bbab8cea4effe6a61
+  source_title: PP_NO_8_TH_1989
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 22
+  status: none_known

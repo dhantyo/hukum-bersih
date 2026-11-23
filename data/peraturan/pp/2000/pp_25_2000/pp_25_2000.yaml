@@ -1,0 +1,41 @@
+id: pp_25_2000
+akn: /akn/id/act/pp/2000/25
+type: pp
+number: '25'
+year: 2000
+title: Peraturan Pemerintah Nomor 25 Tahun 2000 tentang Kewenangan Pemerintah Dan
+  Kewenangan Propinsi
+tentang: KEWENANGAN PEMERINTAH DAN KEWENANGAN PROPINSI
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-05-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_25_2000_2000-05-06
+  kind: asli
+  source: dataset
+  date: '2000-05-06'
+  date_basis: tanggal_penetapan
+  text: pp_25_2000_2000-05-06.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:03bc21745e41eccc2c56b54427ce4336831999c5f7316744928ea090873ffeef
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:03bc21745e41eccc2c56b54427ce4336831999c5f7316744928ea090873ffeef
+  source_title: PP_No.25_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 37
+  status: revoked
+  revoked_by:
+  - sha256:037879007bafb68d8c3f451121cc88d5030bf74694fc56359ded79dc282bef05

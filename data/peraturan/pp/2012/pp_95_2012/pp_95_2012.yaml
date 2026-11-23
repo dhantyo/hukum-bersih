@@ -1,0 +1,39 @@
+id: pp_95_2012
+akn: /akn/id/act/pp/2012/95
+type: pp
+number: '95'
+year: 2012
+title: Peraturan Pemerintah Nomor 95 Tahun 2012 tentang Kesehatan Masyarakat Veteriner
+  Dan Kesejahteraan Hewan
+tentang: KESEHATAN MASYARAKAT VETERINER DAN KESEJAHTERAAN HEWAN
+short_name: null
+status: null
+tanggal_penetapan: '2012-10-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_95_2012_2012-10-29
+  kind: asli
+  source: dataset
+  date: '2012-10-29'
+  date_basis: tanggal_penetapan
+  text: pp_95_2012_2012-10-29.txt
+  pasal_count: 112
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:74ce697f0ddb7918978cd807a20677c661efa53b8a6296e59b61d7f32e9ee7cf
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:74ce697f0ddb7918978cd807a20677c661efa53b8a6296e59b61d7f32e9ee7cf
+  source_title: PP_Nomor_95_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 177
+  status: none_known

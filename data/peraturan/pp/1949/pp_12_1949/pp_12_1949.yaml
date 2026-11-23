@@ -1,0 +1,39 @@
+id: pp_12_1949
+akn: /akn/id/act/pp/1949/12
+type: pp
+number: '12'
+year: 1949
+title: Peraturan Pemerintah Nomor 12 Tahun 1949 tentang Tera. Uang Tera. Peraturan
+  Tentang Penetapan Tarif Uang Tera
+tentang: TERA. UANG TERA. PERATURAN TENTANG PENETAPAN TARIF UANG TERA
+short_name: null
+status: null
+tanggal_penetapan: '1949-09-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_12_1949_1949-09-01
+  kind: asli
+  source: dataset
+  date: '1949-09-01'
+  date_basis: tanggal_penetapan
+  text: pp_12_1949_1949-09-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6eecc35ff1330fbaa1b282a28d2ff84a1882ca1775df6c44efd7a26bc9e74a07
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6eecc35ff1330fbaa1b282a28d2ff84a1882ca1775df6c44efd7a26bc9e74a07
+  source_title: PP_No_12_Tahun_1949
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

@@ -1,0 +1,41 @@
+id: pp_44_2013
+akn: /akn/id/act/pp/2013/44
+type: pp
+number: '44'
+year: 2013
+title: Peraturan Pemerintah Nomor 44 Tahun 2013 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Pelabuhan Indonesia Ii
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT PELABUHAN INDONESIA II
+short_name: null
+status: null
+tanggal_penetapan: '2013-06-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_44_2013_2013-06-05
+  kind: asli
+  source: dataset
+  date: '2013-06-05'
+  date_basis: tanggal_penetapan
+  text: pp_44_2013_2013-06-05.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:29c0335a3272665ca6957041acd4e5c99fe3d80ea5b60b4bd2527c9bfde7715d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:29c0335a3272665ca6957041acd4e5c99fe3d80ea5b60b4bd2527c9bfde7715d
+  source_title: PP_Nomor_44_Tahun_2013
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

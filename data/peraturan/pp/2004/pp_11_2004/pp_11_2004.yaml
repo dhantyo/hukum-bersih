@@ -1,0 +1,39 @@
+id: pp_11_2004
+akn: /akn/id/act/pp/2004/11
+type: pp
+number: '11'
+year: 2004
+title: Peraturan Pemerintah Nomor 11 Tahun 2004 tentang Penjualan Saham Pada Perusahaan
+  Perseroan (Persero) Pt Adhi Karya
+tentang: PENJUALAN SAHAM PADA PERUSAHAAN PERSEROAN (PERSERO) PT ADHI KARYA
+short_name: null
+status: null
+tanggal_penetapan: '2004-03-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_11_2004_2004-03-02
+  kind: asli
+  source: dataset
+  date: '2004-03-02'
+  date_basis: tanggal_penetapan
+  text: pp_11_2004_2004-03-02.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:78c540709adee67c7722dc64cc6aae9b2290a78446d6b94aba632563a5f08f5d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:78c540709adee67c7722dc64cc6aae9b2290a78446d6b94aba632563a5f08f5d
+  source_title: PP_No.11_TH_2004
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: none_known

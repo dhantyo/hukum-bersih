@@ -1,0 +1,41 @@
+id: pp_29_2001
+akn: /akn/id/act/pp/2001/29
+type: pp
+number: '29'
+year: 2001
+title: Peraturan Pemerintah Nomor 29 Tahun 2001 tentang Peraturan Gaji Anggota Kepolisian
+  Republik Indonesia
+tentang: PERATURAN GAJI ANGGOTA KEPOLISIAN REPUBLIK INDONESIA
+short_name: null
+status: diubah
+tanggal_penetapan: '2001-05-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:adb919674c86bbbdd5de0243469aca3b53a0fe8e0351ada3876b03b94f4250b2
+  source_title: PP_NO_29_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 23
+  status: amended
+  amended_by:
+  - sha256:0a19f83404384f16de9aa8e3f315e784b92cab18cbef4aa322ae3c0bdeda5f72
+  - sha256:0e2b18b1d5f290e7664465ebe7f308d013e79b5dea8788b0f5d42a70eb038f81
+  - sha256:150cb459958a6016774985d6f71b1a860e0d0ab4312edb0ff8a5356f3e3a1728
+  - sha256:4ae833e6c3b5b7589288dd15dabd1561f415ee5da4a7d095de6a3fe598daf400
+  - sha256:6b82938ec62d6ae1693eb090fc1c081df3d208a503624f743baa725ef8eadf7b
+  - sha256:7499c91444843be1c23f88a624109bed85cc09de68409c0bf3047f295ce0a63c
+  - sha256:a5a1c21ba74b29b07975ca1730eadf9e38ec4bb658c6c9dab0d48ab238873c11
+  - sha256:c3412c4ff72b65c645a243fcb7287f48f27d9c638089f811daccc151e808f56b
+  - sha256:cfbcf6fee87f1914a5a5d0a7e419c127eac2bcfb5015aed2e0b8f0b5ae7d727b
+  - sha256:d10ccf2c01d5e54564d9ec36dd697684ab011b1efea6a64da34c8de3edce6b5c
+  - sha256:e1509290d135400b8ee56eda014f3f51f6f99fcd5c9973e6b1806e6e09aac918
+  - sha256:fc1503bed0ac2cf8abfe7407379849c9da0997a9158f7fd8f2fa0f4ab15f301d
+parse_error: 'v13: rebuilt text has 17 pasal, the dataset lists 20'

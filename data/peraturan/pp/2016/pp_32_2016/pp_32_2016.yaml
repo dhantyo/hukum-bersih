@@ -1,0 +1,40 @@
+id: pp_32_2016
+akn: /akn/id/act/pp/2016/32
+type: pp
+number: '32'
+year: 2016
+title: Peraturan Pemerintah Nomor 32 Tahun 2016 tentang Jenis Dan Tarif Atas Jenis
+  Penerimaan Negara Bukan Pajak Yang Berlaku Pada Lembaga Ilmu Pengetahuan Indonesia
+tentang: JENIS DAN TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA
+  LEMBAGA ILMU PENGETAHUAN INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2016-08-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_32_2016_2016-08-01
+  kind: asli
+  source: dataset
+  date: '2016-08-01'
+  date_basis: tanggal_penetapan
+  text: pp_32_2016_2016-08-01.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6e9526da4191b629dc99f6b3bcd7fea1cf951b560fe76edaed9c69b87e054e29
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6e9526da4191b629dc99f6b3bcd7fea1cf951b560fe76edaed9c69b87e054e29
+  source_title: PP_Nomor_32_Tahun_2016__PP_Nomor_32_Tahun_2016_
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 415
+  status: none_known

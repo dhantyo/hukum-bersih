@@ -1,0 +1,43 @@
+id: pp_33_1997
+akn: /akn/id/act/pp/1997/33
+type: pp
+number: '33'
+year: 1997
+title: Peraturan Pemerintah Nomor 33 Tahun 1997 tentang Pembagian Hasil Penerimaan
+  Bea Perolehan Hak Atas Tanah Dan Bangunan Antara Pemerintah Pusat Dan Pemerintah
+  Daerah
+tentang: PEMBAGIAN HASIL PENERIMAAN BEA PEROLEHAN HAK ATAS TANAH DAN BANGUNAN ANTARA
+  PEMERINTAH PUSAT DAN PEMERINTAH DAERAH
+short_name: null
+status: dicabut
+tanggal_penetapan: '1997-10-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_33_1997_1997-10-07
+  kind: asli
+  source: dataset
+  date: '1997-10-07'
+  date_basis: tanggal_penetapan
+  text: pp_33_1997_1997-10-07.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:647b6dd0ea32bae92e9f951b0fc08f7142f90e8b6799a18f59fe9b9c49a06132
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:647b6dd0ea32bae92e9f951b0fc08f7142f90e8b6799a18f59fe9b9c49a06132
+  source_title: PP_No._33_Th_1997
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:3601f5af0e034ea4ee0652616f155330d161bcd9a4ce71c22c4a383c9de63aa9

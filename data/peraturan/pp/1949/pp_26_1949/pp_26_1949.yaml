@@ -1,0 +1,40 @@
+id: pp_26_1949
+akn: /akn/id/act/pp/1949/26
+type: pp
+number: '26'
+year: 1949
+title: Peraturan Pemerintah Nomor 26 Tahun 1949 tentang Pengesahan Peraturan-Peraturan
+  Wakil Perdana Menteri Pengganti Peraturan Pemerintah, Yang Ditetapkan Di Sumatera
+tentang: PENGESAHAN PERATURAN-PERATURAN WAKIL PERDANA MENTERI PENGGANTI PERATURAN
+  PEMERINTAH, YANG DITETAPKAN DI SUMATERA
+short_name: null
+status: null
+tanggal_penetapan: '1949-11-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_26_1949_1949-11-01
+  kind: asli
+  source: dataset
+  date: '1949-11-01'
+  date_basis: tanggal_penetapan
+  text: pp_26_1949_1949-11-01.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:347f8c5e7a53c654e4a71be223b42014b0e2448c0494af5c11721657672ee156
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:347f8c5e7a53c654e4a71be223b42014b0e2448c0494af5c11721657672ee156
+  source_title: PP_No_26_Tahun_1949
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 29
+  status: none_known

@@ -1,0 +1,38 @@
+id: pp_55_2012
+akn: /akn/id/act/pp/2012/55
+type: pp
+number: '55'
+year: 2012
+title: Peraturan Pemerintah Nomor 55 Tahun 2012 tentang Kendaraan
+tentang: KENDARAAN
+short_name: null
+status: null
+tanggal_penetapan: '2012-05-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_55_2012_2012-05-15
+  kind: asli
+  source: dataset
+  date: '2012-05-15'
+  date_basis: tanggal_penetapan
+  text: pp_55_2012_2012-05-15.txt
+  pasal_count: 188
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1ffc86572f61e79d7d06c488c997505dfcc8960bf87c7c41506538874deb7915
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1ffc86572f61e79d7d06c488c997505dfcc8960bf87c7c41506538874deb7915
+  source_title: PP_Nomor_55_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 264
+  status: none_known

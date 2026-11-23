@@ -1,0 +1,39 @@
+id: pp_4_1992
+akn: /akn/id/act/pp/1992/4
+type: pp
+number: '4'
+year: 1992
+title: Peraturan Pemerintah Nomor 4 Tahun 1992 tentang Penyelenggaraan Telekomunikasi
+  Untuk Keperluan Pertahanan Keamanan Negara
+tentang: PENYELENGGARAAN TELEKOMUNIKASI UNTUK KEPERLUAN PERTAHANAN KEAMANAN NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '1991-01-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_4_1992_1991-01-20
+  kind: asli
+  source: dataset
+  date: '1991-01-20'
+  date_basis: tanggal_penetapan
+  text: pp_4_1992_1991-01-20.txt
+  pasal_count: 16
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:195aed246e356d5dcf4bcbb2f7dba6d10b712a101607981382b390974dac93e6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:195aed246e356d5dcf4bcbb2f7dba6d10b712a101607981382b390974dac93e6
+  source_title: PP_NO_4_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 32
+  status: none_known

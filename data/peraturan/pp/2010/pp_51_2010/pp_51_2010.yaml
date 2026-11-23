@@ -1,0 +1,42 @@
+id: pp_51_2010
+akn: /akn/id/act/pp/2010/51
+type: pp
+number: '51'
+year: 2010
+title: Peraturan Pemerintah Nomor 51 Tahun 2010 tentang Pendirian Perusahaan Penerbit
+  Surat Berharga Syariah Negara Indonesia Ii
+tentang: PENDIRIAN PERUSAHAAN PENERBIT SURAT BERHARGA SYARIAH NEGARA INDONESIA II
+short_name: null
+status: diubah
+tanggal_penetapan: '2010-06-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_51_2010_2010-06-06
+  kind: asli
+  source: dataset
+  date: '2010-06-06'
+  date_basis: tanggal_penetapan
+  text: pp_51_2010_2010-06-06.txt
+  pasal_count: 18
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f75d13cfc2cf4f25402d4ee280d8654576238b1813f79e82eacc5fc2a81988d6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f75d13cfc2cf4f25402d4ee280d8654576238b1813f79e82eacc5fc2a81988d6
+  source_title: PP_51_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 21
+  status: amended
+  amended_by:
+  - sha256:0a6e008d2796d820e6c85f6da0a0ee52878042bf039928e5c5fa0aa581e310e4
+  - sha256:71cdc19bc50a4dacaedcee5d9b49905e479a4d8a9e18226f0376e86446ae2bc5

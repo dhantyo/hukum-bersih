@@ -1,0 +1,35 @@
+id: pp_50_1994
+akn: /akn/id/act/pp/1994/50
+type: pp
+number: '50'
+year: 1994
+title: Peraturan Pemerintah Nomor 50 Tahun 1994 tentang Pelaksanaan Undang-Undang
+  Nomor 8 Tahun 1983 Tentang Pajak Pertambahannilai Barang Dan Jasa Dan Pajak Penjualan
+  Atas Barang Mewah Sebagaimana Telah Diubah Dengan Undang-Undang Nomor 11 Tahun 1994
+tentang: PELAKSANAAN UNDANG-UNDANG NOMOR 8 TAHUN 1983 TENTANG PAJAK PERTAMBAHANNILAI
+  BARANG DAN JASA DAN PAJAK PENJUALAN ATAS BARANG MEWAH SEBAGAIMANA TELAH DIUBAH DENGAN
+  UNDANG-UNDANG NOMOR 11 TAHUN 1994
+short_name: null
+status: diubah
+tanggal_penetapan: '1995-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e56bb23339f77e207b5e2b15a4f350edff70cf4e054e89e93c7637ca5b55bad8
+  source_title: PP_No._50_Th_1994
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 66
+  status: amended
+  amended_by:
+  - sha256:14b994a250b04ef564473664fff910db20fe53845871f6543867322ba4652a95
+  - sha256:8c193b8528377cabaa55b0571aad9ca06abc4b61c9082752168509ab4d0ff6e7
+  - sha256:d7e5cca30e319b7280302ee12c20963b90a5e937a36b510fad1200606074d4eb
+parse_error: 'v13: rebuilt text has 22 pasal, the dataset lists 34'

@@ -1,0 +1,40 @@
+id: pp_126_2000
+akn: /akn/id/act/pp/2000/126
+type: pp
+number: '126'
+year: 2000
+title: Peraturan Pemerintah Nomor 126 Tahun 2000 tentang Pendirian Perusahaan Jawatan
+  Rumah Sakit Jantung Dan Pembuluh Darah Harapan Kita Jakarta
+tentang: PENDIRIAN PERUSAHAAN JAWATAN RUMAH SAKIT JANTUNG DAN PEMBULUH DARAH HARAPAN
+  KITA JAKARTA
+short_name: null
+status: null
+tanggal_penetapan: '2000-12-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_126_2000_2000-12-12
+  kind: asli
+  source: dataset
+  date: '2000-12-12'
+  date_basis: tanggal_penetapan
+  text: pp_126_2000_2000-12-12.txt
+  pasal_count: 51
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:cb88ae6e0af8c78324b9c34d6f8e4b9783016badda74a249163577d46afe83e6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:cb88ae6e0af8c78324b9c34d6f8e4b9783016badda74a249163577d46afe83e6
+  source_title: PP_No.126_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 59
+  status: none_known

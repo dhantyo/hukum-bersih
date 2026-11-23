@@ -1,0 +1,43 @@
+id: pp_14_1947
+akn: /akn/id/act/pp/1947/14
+type: pp
+number: '14'
+year: 1947
+title: Peraturan Pemerintah Nomor 14 Tahun 1947 tentang Tunjangan Kepada Bekas Pegawai
+  Negeri Serta Janda Dan Anak Piatunya
+tentang: TUNJANGAN KEPADA BEKAS PEGAWAI NEGERI SERTA JANDA DAN ANAK PIATUNYA
+short_name: null
+status: null
+tanggal_penetapan: '1947-06-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_14_1947_1947-06-10
+  kind: asli
+  source: dataset
+  date: '1947-06-10'
+  date_basis: tanggal_penetapan
+  text: pp_14_1947_1947-06-10.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:29488c75df34c4764a8751c0861fbf129b00a8115932f517b164e58fc3e48762
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:29488c75df34c4764a8751c0861fbf129b00a8115932f517b164e58fc3e48762
+  source_title: PP_No.14_Tahun1947
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 19
+  status: partially_revoked
+  revoked_by:
+  - sha256:1984cc02d5b75a30fa69965000b0520757186937c495d10c3834793c8e3009a1
+  amended_by:
+  - sha256:2510ca33ce7844511c36b7678a3e66ee2e851b32e88da9825cc9e022b4846307

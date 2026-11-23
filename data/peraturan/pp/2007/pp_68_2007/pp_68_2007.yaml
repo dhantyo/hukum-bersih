@@ -1,0 +1,41 @@
+id: pp_68_2007
+akn: /akn/id/act/pp/2007/68
+type: pp
+number: '68'
+year: 2007
+title: Peraturan Pemerintah Nomor 68 Tahun 2007 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Perkebunan Nusantara Xiv
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT PERKEBUNAN NUSANTARA XIV
+short_name: null
+status: null
+tanggal_penetapan: '2007-12-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_68_2007_2007-12-10
+  kind: asli
+  source: dataset
+  date: '2007-12-10'
+  date_basis: tanggal_penetapan
+  text: pp_68_2007_2007-12-10.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:46efc0332b4952f6cc1a9e32b51ffe718c33f962e5c106325cec42ff5b0111ba
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:46efc0332b4952f6cc1a9e32b51ffe718c33f962e5c106325cec42ff5b0111ba
+  source_title: PP_68_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

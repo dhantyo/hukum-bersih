@@ -1,0 +1,27 @@
+id: pp_7_2000
+akn: /akn/id/act/pp/2000/7
+type: pp
+number: '7'
+year: 2000
+title: Peraturan Pemerintah Nomor 7 Tahun 2000 tentang Kepelautan
+tentang: KEPELAUTAN
+short_name: null
+status: null
+tanggal_penetapan: '2000-02-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2e466ffd8bf8c5812fc190c94a6d610f4317c0363398ae44e84bd197699d410a
+  source_title: PP_No.7_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 71
+  status: none_known
+parse_error: 'v13: rebuilt text has 13 pasal, the dataset lists 45'

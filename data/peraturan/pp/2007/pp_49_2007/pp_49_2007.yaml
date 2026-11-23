@@ -1,0 +1,40 @@
+id: pp_49_2007
+akn: /akn/id/act/pp/2007/49
+type: pp
+number: '49'
+year: 2007
+title: Peraturan Pemerintah Nomor 49 Tahun 2007 tentang Perubahan Nama Kabupaten Pasir
+  Menjadi Kabupaten Paser Provinsi Kalimantan Timur
+tentang: PERUBAHAN NAMA KABUPATEN PASIR MENJADI KABUPATEN PASER PROVINSI KALIMANTAN
+  TIMUR
+short_name: null
+status: null
+tanggal_penetapan: '2007-08-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_49_2007_2007-08-22
+  kind: asli
+  source: dataset
+  date: '2007-08-22'
+  date_basis: tanggal_penetapan
+  text: pp_49_2007_2007-08-22.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2f3e439a9a59f5a326a21e9199c71607d85e3188164e2ced75f2786ea523eb21
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2f3e439a9a59f5a326a21e9199c71607d85e3188164e2ced75f2786ea523eb21
+  source_title: PP_49_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

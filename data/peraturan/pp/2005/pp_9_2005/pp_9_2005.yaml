@@ -1,0 +1,41 @@
+id: pp_9_2005
+akn: /akn/id/act/pp/2005/9
+type: pp
+number: '9'
+year: 2005
+title: Peraturan Pemerintah Nomor 9 Tahun 2005 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Perusahaan Umum (Perum) Pengangkutan Penumpang
+  Djakarta
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL PERUSAHAAN
+  UMUM (PERUM) PENGANGKUTAN PENUMPANG DJAKARTA
+short_name: null
+status: null
+tanggal_penetapan: '2005-03-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_9_2005_2005-03-18
+  kind: asli
+  source: dataset
+  date: '2005-03-18'
+  date_basis: tanggal_penetapan
+  text: pp_9_2005_2005-03-18.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:937f297b4bfbc32e162e81b295ce963a04f00e47a15d8fbe1226ff475c6dc77a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:937f297b4bfbc32e162e81b295ce963a04f00e47a15d8fbe1226ff475c6dc77a
+  source_title: PP_NO_9_TH_2005
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

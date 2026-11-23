@@ -1,0 +1,39 @@
+id: pp_50_2005
+akn: /akn/id/act/pp/2005/50
+type: pp
+number: '50'
+year: 2005
+title: Peraturan Pemerintah Nomor 50 Tahun 2005 tentang Penyelenggaraan Penyiaran
+  Lembaga Penyiaran Swasta
+tentang: PENYELENGGARAAN PENYIARAN LEMBAGA PENYIARAN SWASTA
+short_name: null
+status: null
+tanggal_penetapan: '2005-11-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_50_2005_2005-11-16
+  kind: asli
+  source: dataset
+  date: '2005-11-16'
+  date_basis: tanggal_penetapan
+  text: pp_50_2005_2005-11-16.txt
+  pasal_count: 73
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3bc61cc6587e7d2918d1c9473fe29465c5ef513d18a8587415c2c464410bedf8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3bc61cc6587e7d2918d1c9473fe29465c5ef513d18a8587415c2c464410bedf8
+  source_title: PP_NO_50_TH_2005
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 120
+  status: none_known

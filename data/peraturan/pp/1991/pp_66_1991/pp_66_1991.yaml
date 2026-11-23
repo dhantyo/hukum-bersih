@@ -1,0 +1,40 @@
+id: pp_66_1991
+akn: /akn/id/act/pp/1991/66
+type: pp
+number: '66'
+year: 1991
+title: Peraturan Pemerintah Nomor 66 Tahun 1991 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modalperusahaan Umum (Perum) Angkasa Pura I
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODALPERUSAHAAN
+  UMUM (PERUM) ANGKASA PURA I
+short_name: null
+status: null
+tanggal_penetapan: '1991-12-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_66_1991_1991-12-16
+  kind: asli
+  source: dataset
+  date: '1991-12-16'
+  date_basis: tanggal_penetapan
+  text: pp_66_1991_1991-12-16.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ce2dac1e1fd930fdb6a8e7525d4a62a270bba00cc39bf185eadf4c2db0ed8348
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ce2dac1e1fd930fdb6a8e7525d4a62a270bba00cc39bf185eadf4c2db0ed8348
+  source_title: PP_NO_66_TH_1991
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 8
+  status: none_known

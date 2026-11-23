@@ -1,0 +1,38 @@
+id: pp_8_2011
+akn: /akn/id/act/pp/2011/8
+type: pp
+number: '8'
+year: 2011
+title: Peraturan Pemerintah Nomor 8 Tahun 2011 tentang Angkutan Multimoda
+tentang: ANGKUTAN MULTIMODA
+short_name: null
+status: null
+tanggal_penetapan: '2011-02-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_8_2011_2011-02-04
+  kind: asli
+  source: dataset
+  date: '2011-02-04'
+  date_basis: tanggal_penetapan
+  text: pp_8_2011_2011-02-04.txt
+  pasal_count: 31
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7c52b28b0d48f1d39d45978b91334c7a0bd1f22c66b3a133f919ee10b5758d96
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7c52b28b0d48f1d39d45978b91334c7a0bd1f22c66b3a133f919ee10b5758d96
+  source_title: PP_No.8_TH_2011
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 46
+  status: none_known

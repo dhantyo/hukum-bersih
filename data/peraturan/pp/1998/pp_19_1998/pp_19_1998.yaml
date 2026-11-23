@@ -1,0 +1,40 @@
+id: pp_19_1998
+akn: /akn/id/act/pp/1998/19
+type: pp
+number: '19'
+year: 1998
+title: Peraturan Pemerintah Nomor 19 Tahun 1998 tentang Pengalihan Bentuk Perusahaan
+  Umum (Perum) Kereta Api Menjadi Perusahaan Perseroan (Persero)
+tentang: PENGALIHAN BENTUK PERUSAHAAN UMUM (PERUM) KERETA API MENJADI PERUSAHAAN PERSEROAN
+  (PERSERO)
+short_name: null
+status: null
+tanggal_penetapan: '1998-02-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_19_1998_1998-02-03
+  kind: asli
+  source: dataset
+  date: '1998-02-03'
+  date_basis: tanggal_penetapan
+  text: pp_19_1998_1998-02-03.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a09ea9110e64d96e242dce9b55ea9b9b59808d14d97111141a29261d744273c3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a09ea9110e64d96e242dce9b55ea9b9b59808d14d97111141a29261d744273c3
+  source_title: PP_No._19_Tahun_1998
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

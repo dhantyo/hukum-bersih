@@ -1,0 +1,43 @@
+id: pp_14_1984
+akn: /akn/id/act/pp/1984/14
+type: pp
+number: '14'
+year: 1984
+title: Peraturan Pemerintah Nomor 14 Tahun 1984 tentang Penyertaan Modal Negera Republik
+  Indonesia Untuk Pendirian Perusahaan Perseroan (Persero) Dalam Bidang Usaha Distribusi
+  Dan Pengolahan Kayu Presiden Republik Indonesia
+tentang: PENYERTAAN MODAL NEGERA REPUBLIK INDONESIA UNTUK PENDIRIAN PERUSAHAAN PERSEROAN
+  (PERSERO) DALAM BIDANG USAHA DISTRIBUSI DAN PENGOLAHAN KAYU Presiden Republik Indonesia
+short_name: null
+status: dicabut
+tanggal_penetapan: '1984-06-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_14_1984_1984-06-26
+  kind: asli
+  source: dataset
+  date: '1984-06-26'
+  date_basis: tanggal_penetapan
+  text: pp_14_1984_1984-06-26.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7880a7e41143d167f6bba6d80d4523dc79d24425f83ff2903afeaacb75443f0b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7880a7e41143d167f6bba6d80d4523dc79d24425f83ff2903afeaacb75443f0b
+  source_title: PP_NO_14_TH_1984
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:a5518c19291710aaa52f98e285ddab37f9aa316ab97a91c230a2d666855c4442

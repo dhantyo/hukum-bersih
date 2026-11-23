@@ -1,0 +1,40 @@
+id: pp_2_1947
+akn: /akn/id/act/pp/1947/2
+type: pp
+number: '2'
+year: 1947
+title: Peraturan Pemerintah Nomor 2 Tahun 1947 tentang Pembentukan Badan Industri
+  Negara Yang Berkewajiban Mengurus Dan Mengatur Perindustrian
+tentang: PEMBENTUKAN BADAN INDUSTRI NEGARA YANG BERKEWAJIBAN MENGURUS DAN MENGATUR
+  PERINDUSTRIAN
+short_name: null
+status: null
+tanggal_penetapan: '1947-03-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_2_1947_1947-03-01
+  kind: asli
+  source: dataset
+  date: '1947-03-01'
+  date_basis: tanggal_penetapan
+  text: pp_2_1947_1947-03-01.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:298337437f173c370b7100ea23149a189494f3c5f6329934d13fd88c60f81109
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:298337437f173c370b7100ea23149a189494f3c5f6329934d13fd88c60f81109
+  source_title: PP_No.2_Tahun_1947
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 23
+  status: none_known

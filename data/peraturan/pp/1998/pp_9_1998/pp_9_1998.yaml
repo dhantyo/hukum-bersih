@@ -1,0 +1,41 @@
+id: pp_9_1998
+akn: /akn/id/act/pp/1998/9
+type: pp
+number: '9'
+year: 1998
+title: Peraturan Pemerintah Nomor 9 Tahun 1998 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Kedalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Danareksa
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KEDALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT DANAREKSA
+short_name: null
+status: null
+tanggal_penetapan: '1998-01-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_9_1998_1998-01-09
+  kind: asli
+  source: dataset
+  date: '1998-01-09'
+  date_basis: tanggal_penetapan
+  text: pp_9_1998_1998-01-09.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d067b73be601c63ad7a7623211524634d92fdf904ce7199a2efb26962c3d0604
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d067b73be601c63ad7a7623211524634d92fdf904ce7199a2efb26962c3d0604
+  source_title: PP_No._9_Tahun_1998
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

@@ -1,0 +1,30 @@
+id: pp_24_1996
+akn: /akn/id/act/pp/1996/24
+type: pp
+number: '24'
+year: 1996
+title: Peraturan Pemerintah Nomor 24 Tahun 1996 tentang Pengenaan Sanksi Administrasi
+  Di Bidang Cukai
+tentang: PENGENAAN SANKSI ADMINISTRASI DI BIDANG CUKAI
+short_name: null
+status: dicabut
+tanggal_penetapan: '1996-04-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:979997fb4539305254c0264a443a6a024645cd903b4aa1a1479f03e72821ee03
+  source_title: PP_No._24_Th_1996
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 19
+  status: revoked
+  revoked_by:
+  - sha256:fb4a43ad842249a63f87c4106ff2f1160b7b62461de3909f5f2bb29bd6a66131
+parse_error: 'v13: rebuilt text has 7 pasal, the dataset lists 9'

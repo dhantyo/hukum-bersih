@@ -1,0 +1,43 @@
+id: pp_47_2000
+akn: /akn/id/act/pp/2000/47
+type: pp
+number: '47'
+year: 2000
+title: Peraturan Pemerintah Nomor 47 Tahun 2000 tentang Pelaksanaan Konsultasi Calon
+  Gubernur Dan Wakil Gubernur, Pengesahan Dan Pelantikan Kepala Daerah Dan Wakil Kepala
+  Daerah
+tentang: PELAKSANAAN KONSULTASI CALON GUBERNUR DAN WAKIL GUBERNUR, PENGESAHAN DAN
+  PELANTIKAN KEPALA DAERAH DAN WAKIL KEPALA DAERAH
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-06-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_47_2000_2000-06-26
+  kind: asli
+  source: dataset
+  date: '2000-06-26'
+  date_basis: tanggal_penetapan
+  text: pp_47_2000_2000-06-26.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:44abd018f460dfb8f1ab2e043bdd84f8b082f25980f2d551ef11e22e879c41b4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:44abd018f460dfb8f1ab2e043bdd84f8b082f25980f2d551ef11e22e879c41b4
+  source_title: PP_No.47_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:aac84343a4abbea25f11a6349170656a1f279add5092102a3bcaec32064279c8

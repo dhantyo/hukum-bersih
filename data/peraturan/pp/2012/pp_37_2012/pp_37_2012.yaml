@@ -1,0 +1,39 @@
+id: pp_37_2012
+akn: /akn/id/act/pp/2012/37
+type: pp
+number: '37'
+year: 2012
+title: Peraturan Pemerintah Nomor 37 Tahun 2012 tentang Pengelolaan Daerah Aliran
+  Sungai
+tentang: PENGELOLAAN DAERAH ALIRAN SUNGAI
+short_name: null
+status: null
+tanggal_penetapan: '2012-03-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_37_2012_2012-03-01
+  kind: asli
+  source: dataset
+  date: '2012-03-01'
+  date_basis: tanggal_penetapan
+  text: pp_37_2012_2012-03-01.txt
+  pasal_count: 69
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b2e1c82c7facd23f62fa2533b097597e33fffd6b9baff2bf63be0737ab1dfa37
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b2e1c82c7facd23f62fa2533b097597e33fffd6b9baff2bf63be0737ab1dfa37
+  source_title: PP_Nomor_37_TAHUN_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 114
+  status: none_known

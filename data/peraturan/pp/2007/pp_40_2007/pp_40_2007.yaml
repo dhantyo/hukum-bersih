@@ -1,0 +1,39 @@
+id: pp_40_2007
+akn: /akn/id/act/pp/2007/40
+type: pp
+number: '40'
+year: 2007
+title: Peraturan Pemerintah Nomor 40 Tahun 2007 tentang Perusahaan Umum (Perum) Lembaga
+  Kantor Berita Nasional Antara
+tentang: PERUSAHAAN UMUM (PERUM) LEMBAGA KANTOR BERITA NASIONAL ANTARA
+short_name: null
+status: null
+tanggal_penetapan: '2007-07-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_40_2007_2007-07-18
+  kind: asli
+  source: dataset
+  date: '2007-07-18'
+  date_basis: tanggal_penetapan
+  text: pp_40_2007_2007-07-18.txt
+  pasal_count: 105
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a749f7f3961620f286563abd6d191eb3ba2f8d3c92511e5f5adcb590c5af76f6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a749f7f3961620f286563abd6d191eb3ba2f8d3c92511e5f5adcb590c5af76f6
+  source_title: PP_40_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 117
+  status: none_known

@@ -1,0 +1,39 @@
+id: pp_132_2000
+akn: /akn/id/act/pp/2000/132
+type: pp
+number: '132'
+year: 2000
+title: Peraturan Pemerintah Nomor 132 Tahun 2000 tentang Pajak Penghasilan Atas Hadiah
+  Undian
+tentang: PAJAK PENGHASILAN ATAS HADIAH UNDIAN
+short_name: null
+status: null
+tanggal_penetapan: '2001-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_132_2000_2001-01-01
+  kind: asli
+  source: dataset
+  date: '2001-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_132_2000_2001-01-01.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:82b91b36faa74cd7090247e29ee0ffc50efc3aea5089afd7e8d87de965587c30
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:82b91b36faa74cd7090247e29ee0ffc50efc3aea5089afd7e8d87de965587c30
+  source_title: PP_No.132_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: none_known

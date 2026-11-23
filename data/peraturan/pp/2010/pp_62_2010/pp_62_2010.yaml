@@ -1,0 +1,39 @@
+id: pp_62_2010
+akn: /akn/id/act/pp/2010/62
+type: pp
+number: '62'
+year: 2010
+title: Peraturan Pemerintah Nomor 62 Tahun 2010 tentang Pemanfaatan Pulau-Pulau Kecil
+  Terluar
+tentang: PEMANFAATAN PULAU-PULAU KECIL TERLUAR
+short_name: null
+status: null
+tanggal_penetapan: '2010-08-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_62_2010_2010-08-24
+  kind: asli
+  source: dataset
+  date: '2010-08-24'
+  date_basis: tanggal_penetapan
+  text: pp_62_2010_2010-08-24.txt
+  pasal_count: 18
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:69367e06ba0776526f9a2775b3b3a9eb9cebecae371861e1679e89b9241e78ba
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:69367e06ba0776526f9a2775b3b3a9eb9cebecae371861e1679e89b9241e78ba
+  source_title: PP_62_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 28
+  status: none_known

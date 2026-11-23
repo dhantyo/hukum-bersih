@@ -1,0 +1,40 @@
+id: pp_18_1990
+akn: /akn/id/act/pp/1990/18
+type: pp
+number: '18'
+year: 1990
+title: Peraturan Pemerintah Nomor 18 Tahun 1990 tentang Perubahan Peraturan Pemerintah
+  Nomor 33 Tahun 1977 Tentang Asuransi Sosial Tenaga Kerja
+tentang: PERUBAHAN PERATURAN PEMERINTAH NOMOR 33 TAHUN 1977 TENTANG ASURANSI SOSIAL
+  TENAGA KERJA
+short_name: null
+status: null
+tanggal_penetapan: '1990-05-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_18_1990_1990-05-30
+  kind: asli
+  source: dataset
+  date: '1990-05-30'
+  date_basis: tanggal_penetapan
+  text: pp_18_1990_1990-05-30.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c5c9cc55299ecf0134ff379302e7d081d002f2ef5847cd55fab6dcab404e3f42
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c5c9cc55299ecf0134ff379302e7d081d002f2ef5847cd55fab6dcab404e3f42
+  source_title: PP_NO_18_TH_1990
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 6
+  status: none_known

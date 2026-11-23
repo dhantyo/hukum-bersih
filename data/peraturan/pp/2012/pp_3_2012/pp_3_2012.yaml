@@ -1,0 +1,40 @@
+id: pp_3_2012
+akn: /akn/id/act/pp/2012/3
+type: pp
+number: '3'
+year: 2012
+title: Peraturan Pemerintah Nomor 3 Tahun 2012 tentang Jenis Dan Tarif Atas Jenis
+  Penerimaan Negara Bukan Pajak Yang Berlaku Pada Kementerian Sosial
+tentang: JENIS DAN TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA
+  KEMENTERIAN SOSIAL
+short_name: null
+status: null
+tanggal_penetapan: '2012-01-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_3_2012_2012-01-03
+  kind: asli
+  source: dataset
+  date: '2012-01-03'
+  date_basis: tanggal_penetapan
+  text: pp_3_2012_2012-01-03.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f9395cc5f781dcc7adf9c6923b676232f0f0f52f3e8a0a0e83ded5f699d4a867
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f9395cc5f781dcc7adf9c6923b676232f0f0f52f3e8a0a0e83ded5f699d4a867
+  source_title: PP_Nomor_3_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: none_known

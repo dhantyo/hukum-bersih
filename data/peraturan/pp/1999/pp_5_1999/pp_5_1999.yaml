@@ -1,0 +1,41 @@
+id: pp_5_1999
+akn: /akn/id/act/pp/1999/5
+type: pp
+number: '5'
+year: 1999
+title: Peraturan Pemerintah Nomor 5 Tahun 1999 tentang Pegawai Negeri Sipil Yang Menjadi
+  Anggota Partai Politik
+tentang: PEGAWAI NEGERI SIPIL YANG MENJADI ANGGOTA PARTAI POLITIK
+short_name: null
+status: diubah
+tanggal_penetapan: '1999-01-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_5_1999_1999-01-26
+  kind: asli
+  source: dataset
+  date: '1999-01-26'
+  date_basis: tanggal_penetapan
+  text: pp_5_1999_1999-01-26.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1095b4607f276d99ff410f7bceb0dd5dfdd1356f1af7f6697cca4ac6363a4358
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1095b4607f276d99ff410f7bceb0dd5dfdd1356f1af7f6697cca4ac6363a4358
+  source_title: PP_No._5_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 22
+  status: amended
+  amended_by:
+  - sha256:367f3a74fefafc13a3a18c80936fe5bbbc544acc7efe64acbd3c8038558fd603

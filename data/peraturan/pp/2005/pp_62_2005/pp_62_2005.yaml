@@ -1,0 +1,42 @@
+id: pp_62_2005
+akn: /akn/id/act/pp/2005/62
+type: pp
+number: '62'
+year: 2005
+title: Peraturan Pemerintah Nomor 62 Tahun 2005 tentang Jenis Dan Tarif Atas Jenis
+  Penerimaan Negara Bukan Pajak Yang Berlaku Pada Badan Pusat Statistik
+tentang: JENIS DAN TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA
+  BADAN PUSAT STATISTIK
+short_name: null
+status: dicabut
+tanggal_penetapan: '2005-12-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_62_2005_2005-12-12
+  kind: asli
+  source: dataset
+  date: '2005-12-12'
+  date_basis: tanggal_penetapan
+  text: pp_62_2005_2005-12-12.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:06247b90abc29bda38ace276defa777e634230047d9268bb7a5bdfb816114e9a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:06247b90abc29bda38ace276defa777e634230047d9268bb7a5bdfb816114e9a
+  source_title: PP_NO_62_TH_2005
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 52
+  status: revoked
+  revoked_by:
+  - sha256:3b3e88504fb9b980b56341fd4044065b934c2d9973540e4f574e4f22d8bbe9a8

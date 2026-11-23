@@ -1,0 +1,41 @@
+id: pp_99_2013
+akn: /akn/id/act/pp/2013/99
+type: pp
+number: '99'
+year: 2013
+title: Peraturan Pemerintah Nomor 99 Tahun 2013 tentang Pengelolaan Aset Jaminan Sosial
+  Ketenagakerjaan
+tentang: PENGELOLAAN ASET JAMINAN SOSIAL KETENAGAKERJAAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2014-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_99_2013_2014-01-01
+  kind: asli
+  source: dataset
+  date: '2014-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_99_2013_2014-01-01.txt
+  pasal_count: 66
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d6b92a013129b75bbba6f877179184844709a960ad918dc028cc0be754012872
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d6b92a013129b75bbba6f877179184844709a960ad918dc028cc0be754012872
+  source_title: PP_Nomor_99_Tahun_2013
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 99
+  status: amended
+  amended_by:
+  - sha256:f1aa7fed3d55908e72319df61eefe002b570bd0f44c63a7c21f8815e63123d38

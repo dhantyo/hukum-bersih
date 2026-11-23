@@ -1,0 +1,40 @@
+id: pp_15_1999
+akn: /akn/id/act/pp/1999/15
+type: pp
+number: '15'
+year: 1999
+title: Peraturan Pemerintah Nomor 15 Tahun 1999 tentang Bentuk-Bentuk Tagihan Tertentu
+  Yang Dapat Dikompensasikan Sebagai Setoran Saham
+tentang: BENTUK-BENTUK TAGIHAN TERTENTU YANG DAPAT DIKOMPENSASIKAN SEBAGAI SETORAN
+  SAHAM
+short_name: null
+status: null
+tanggal_penetapan: '1999-02-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_15_1999_1999-02-25
+  kind: asli
+  source: dataset
+  date: '1999-02-25'
+  date_basis: tanggal_penetapan
+  text: pp_15_1999_1999-02-25.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f14a1b2967297b1d6f9fb950a9ecb126167004e1875ff7398b53c72dc13b4945
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f14a1b2967297b1d6f9fb950a9ecb126167004e1875ff7398b53c72dc13b4945
+  source_title: PP_No._15_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 15
+  status: none_known

@@ -1,0 +1,41 @@
+id: pp_50_1993
+akn: /akn/id/act/pp/1993/50
+type: pp
+number: '50'
+year: 1993
+title: Peraturan Pemerintah Nomor 50 Tahun 1993 tentang Persyaratan Pemilikan Saham
+  Dalam Perusahaan Penanaman Modal Asing
+tentang: PERSYARATAN PEMILIKAN SAHAM DALAM PERUSAHAAN PENANAMAN MODAL ASING
+short_name: null
+status: dicabut
+tanggal_penetapan: '1993-10-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_50_1993_1993-10-23
+  kind: asli
+  source: dataset
+  date: '1993-10-23'
+  date_basis: tanggal_penetapan
+  text: pp_50_1993_1993-10-23.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:494bd8edab0f9fd1f7c7c71b7ea42fc6c0b081fecef2b4759d43d09cb0a74231
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:494bd8edab0f9fd1f7c7c71b7ea42fc6c0b081fecef2b4759d43d09cb0a74231
+  source_title: PP_No._50_Th_1993
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 19
+  status: revoked
+  revoked_by:
+  - sha256:30a385f50ba7aede3a6e0b1c7e94d9759b863ef9d95f3674ab82fe6885a1b5dd

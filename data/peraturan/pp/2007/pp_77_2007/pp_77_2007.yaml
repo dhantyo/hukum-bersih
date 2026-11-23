@@ -1,0 +1,38 @@
+id: pp_77_2007
+akn: /akn/id/act/pp/2007/77
+type: pp
+number: '77'
+year: 2007
+title: Peraturan Pemerintah Nomor 77 Tahun 2007 tentang Lambang Daerah
+tentang: LAMBANG DAERAH
+short_name: null
+status: null
+tanggal_penetapan: '2007-12-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_77_2007_2007-12-10
+  kind: asli
+  source: dataset
+  date: '2007-12-10'
+  date_basis: tanggal_penetapan
+  text: pp_77_2007_2007-12-10.txt
+  pasal_count: 23
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3b1790d5ac0b47fcf6db2334d251dd7157826b865b7cf9b7c564db6b02b5044b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3b1790d5ac0b47fcf6db2334d251dd7157826b865b7cf9b7c564db6b02b5044b
+  source_title: PP_77_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 36
+  status: none_known

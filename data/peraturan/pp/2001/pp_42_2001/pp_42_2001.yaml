@@ -1,0 +1,42 @@
+id: pp_42_2001
+akn: /akn/id/act/pp/2001/42
+type: pp
+number: '42'
+year: 2001
+title: Peraturan Pemerintah Nomor 42 Tahun 2001 tentang Tarif Atas Jenis Penerimaan
+  Negara Bukan Pajak Yang Berlaku Pada Badan Koordinasi Survei Dan Pemetaan Nasional
+tentang: TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA BADAN KOORDINASI
+  SURVEI DAN PEMETAAN NASIONAL
+short_name: null
+status: dicabut
+tanggal_penetapan: '2001-06-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_42_2001_2001-06-05
+  kind: asli
+  source: dataset
+  date: '2001-06-05'
+  date_basis: tanggal_penetapan
+  text: pp_42_2001_2001-06-05.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:36ab387c1790383a6f9ae90d402d3333d1a81c53cc15cafecb6d9d92b6bf6331
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:36ab387c1790383a6f9ae90d402d3333d1a81c53cc15cafecb6d9d92b6bf6331
+  source_title: PP_NO_42_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:7108f0794e5927202db4b53ae620085da9b5d5491adb3583ff8fb6c635f51d2a

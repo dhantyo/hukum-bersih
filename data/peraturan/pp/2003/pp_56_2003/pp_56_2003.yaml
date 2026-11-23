@@ -1,0 +1,30 @@
+id: pp_56_2003
+akn: /akn/id/act/pp/2003/56
+type: pp
+number: '56'
+year: 2003
+title: Peraturan Pemerintah Nomor 56 Tahun 2003 tentang Penetapan Universitas Sumatera
+  Utara Sebagai Badan Hukum Milik Negara
+tentang: PENETAPAN UNIVERSITAS SUMATERA UTARA SEBAGAI BADAN HUKUM MILIK NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2003-11-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:25893b2f33924561c567af99a3bb45f8d10855552b1352bb717c315f7d4a4ffd
+  source_title: PP_No.56_TH_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 112
+  status: revoked
+  revoked_by:
+  - sha256:700f3fdaa6f0dc0dc795bc3435f115131ed96c6456d5ece146d39ce6c4bbebc0
+parse_error: 'v13: rebuilt text has 1 pasal, the dataset lists 44'

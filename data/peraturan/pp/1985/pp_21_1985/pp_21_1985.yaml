@@ -1,0 +1,45 @@
+id: pp_21_1985
+akn: /akn/id/act/pp/1985/21
+type: pp
+number: '21'
+year: 1985
+title: Peraturan Pemerintah Nomor 21 Tahun 1985 tentang Perubahan Peraturan Pemerintah
+  Nomor 32 Tahun 1977 Tentang Penetapan Pensiun Pokok Purnawirawan/Warakawuri Atau
+  Duda, Tunjangan Anak Yatim/Piatu Dan Anak Yatim-Piatu Anggota Angkatan Bersenjata
+  Republik Indonesia Presiden Republik Indonesia
+tentang: PERUBAHAN PERATURAN PEMERINTAH NOMOR 32 TAHUN 1977 TENTANG PENETAPAN PENSIUN
+  POKOK PURNAWIRAWAN/WARAKAWURI ATAU DUDA, TUNJANGAN ANAK YATIM/PIATU DAN ANAK YATIM-PIATU
+  ANGGOTA ANGKATAN BERSENJATA REPUBLIK INDONESIA Presiden Republik Indonesia
+short_name: null
+status: diubah
+tanggal_penetapan: '1985-04-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_21_1985_1985-04-01
+  kind: asli
+  source: dataset
+  date: '1985-04-01'
+  date_basis: tanggal_penetapan
+  text: pp_21_1985_1985-04-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:28e6516c7ab36b809738cf99e875074cb5b49523fd7365db9602e9073e0e54cc
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:28e6516c7ab36b809738cf99e875074cb5b49523fd7365db9602e9073e0e54cc
+  source_title: PP_NO_21_TH_1985
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: amended
+  amended_by:
+  - sha256:aca370e298777f7261962c0c4260c6cf0124129cfafef11c7d1536d87b865627

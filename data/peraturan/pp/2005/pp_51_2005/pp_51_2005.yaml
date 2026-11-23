@@ -1,0 +1,39 @@
+id: pp_51_2005
+akn: /akn/id/act/pp/2005/51
+type: pp
+number: '51'
+year: 2005
+title: Peraturan Pemerintah Nomor 51 Tahun 2005 tentang Penyelenggaraan Penyiaran
+  Lembaga Penyiaran Komunitas
+tentang: PENYELENGGARAAN PENYIARAN LEMBAGA PENYIARAN KOMUNITAS
+short_name: null
+status: null
+tanggal_penetapan: '2005-11-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_51_2005_2005-11-16
+  kind: asli
+  source: dataset
+  date: '2005-11-16'
+  date_basis: tanggal_penetapan
+  text: pp_51_2005_2005-11-16.txt
+  pasal_count: 56
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c1830b2bce440e0fc8afb55b12b3438ccc97ec55da1b0748ad37bbe362bcca47
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c1830b2bce440e0fc8afb55b12b3438ccc97ec55da1b0748ad37bbe362bcca47
+  source_title: PP_NO_51_TH_2005
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 85
+  status: none_known

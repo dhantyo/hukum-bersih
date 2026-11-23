@@ -1,0 +1,42 @@
+id: pp_24_2008
+akn: /akn/id/act/pp/2008/24
+type: pp
+number: '24'
+year: 2008
+title: Peraturan Pemerintah Nomor 24 Tahun 2008 tentang Jenis Dan Tarif Atas Jenis
+  Penerimaan Negara Bukan Pajak Yang Berlaku Pada Badan Meteorologi Dan Geofisika
+tentang: JENIS DAN TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA
+  BADAN METEOROLOGI DAN GEOFISIKA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2008-03-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_24_2008_2008-03-10
+  kind: asli
+  source: dataset
+  date: '2008-03-10'
+  date_basis: tanggal_penetapan
+  text: pp_24_2008_2008-03-10.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c259a13e18530040257ffdf41e35ffc8fed26c018d77b88136403e92cff6c7c1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c259a13e18530040257ffdf41e35ffc8fed26c018d77b88136403e92cff6c7c1
+  source_title: PP_24_Tahun_2008
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 26
+  status: revoked
+  revoked_by:
+  - sha256:50413f60daaa4968b8c7afd9028230b699ed3f8bbfc5bb4557379edfa766c703

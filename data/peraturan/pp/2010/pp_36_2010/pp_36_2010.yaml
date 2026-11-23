@@ -1,0 +1,40 @@
+id: pp_36_2010
+akn: /akn/id/act/pp/2010/36
+type: pp
+number: '36'
+year: 2010
+title: Peraturan Pemerintah Nomor 36 Tahun 2010 tentang Pengusahaan Pariwisata Alam
+  Di Suaka Margasatwa, Taman Nasional, Taman Hutan Raya, Dan Taman Wisata Alam
+tentang: PENGUSAHAAN PARIWISATA ALAM DI SUAKA MARGASATWA, TAMAN NASIONAL, TAMAN HUTAN
+  RAYA, DAN TAMAN WISATA ALAM
+short_name: null
+status: null
+tanggal_penetapan: '2010-02-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_36_2010_2010-02-12
+  kind: asli
+  source: dataset
+  date: '2010-02-12'
+  date_basis: tanggal_penetapan
+  text: pp_36_2010_2010-02-12.txt
+  pasal_count: 33
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7e176fcd1ca4c3c0671bd2709d6465c8d8f2455e7134c34786ec3347900492db
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7e176fcd1ca4c3c0671bd2709d6465c8d8f2455e7134c34786ec3347900492db
+  source_title: PP_36_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 50
+  status: none_known

@@ -1,0 +1,40 @@
+id: pp_70_1991
+akn: /akn/id/act/pp/1991/70
+type: pp
+number: '70'
+year: 1991
+title: Peraturan Pemerintah Nomor 70 Tahun 1991 tentang Pelaksanaan Undang-Undang
+  Nomor 4 Tahun 1990 Tentang Serah-Simpan Karya Cetak Dan Karya-Rekam
+tentang: PELAKSANAAN UNDANG-UNDANG NOMOR 4 TAHUN 1990 TENTANG SERAH-SIMPAN KARYA CETAK
+  DAN KARYA-REKAM
+short_name: null
+status: null
+tanggal_penetapan: '1991-12-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_70_1991_1991-12-28
+  kind: asli
+  source: dataset
+  date: '1991-12-28'
+  date_basis: tanggal_penetapan
+  text: pp_70_1991_1991-12-28.txt
+  pasal_count: 23
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f2a03eb03228b5f25e242bb971383d0d7bd9a528042a0efb790864333de9d982
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f2a03eb03228b5f25e242bb971383d0d7bd9a528042a0efb790864333de9d982
+  source_title: PP_NO_70_TH_1991
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 46
+  status: none_known

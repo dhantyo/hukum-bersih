@@ -1,0 +1,41 @@
+id: pp_78_2008
+akn: /akn/id/act/pp/2008/78
+type: pp
+number: '78'
+year: 2008
+title: Peraturan Pemerintah Nomor 78 Tahun 2008 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Perusahaan Pengelola Aset
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT PERUSAHAAN PENGELOLA ASET
+short_name: null
+status: null
+tanggal_penetapan: '2008-12-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_78_2008_2008-12-24
+  kind: asli
+  source: dataset
+  date: '2008-12-24'
+  date_basis: tanggal_penetapan
+  text: pp_78_2008_2008-12-24.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6f99b8d460f22c9aa26cdd4e932fb607fd543563903ffc5ba199d4219d5ced7e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6f99b8d460f22c9aa26cdd4e932fb607fd543563903ffc5ba199d4219d5ced7e
+  source_title: PP_78_Tahun_2008
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

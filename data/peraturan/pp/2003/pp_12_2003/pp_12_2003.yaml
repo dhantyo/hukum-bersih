@@ -1,0 +1,43 @@
+id: pp_12_2003
+akn: /akn/id/act/pp/2003/12
+type: pp
+number: '12'
+year: 2003
+title: Peraturan Pemerintah Nomor 12 Tahun 2003 tentang Perubahan Atas Peraturan Pemerintah
+  Nomor 8 Tahun 2000 Tentang Peraturan Gaji Hakim Peradilan Umum, Peradilan Tata Usaha
+  Negara, Dan Peradilan Agama Sebagaimana Telah Diubah Dengan Peraturan Pemerintah
+  Nomor 27 Tahun 2001
+tentang: PERUBAHAN ATAS PERATURAN PEMERINTAH NOMOR 8 TAHUN 2000 TENTANG PERATURAN
+  GAJI HAKIM PERADILAN UMUM, PERADILAN TATA USAHA NEGARA, DAN PERADILAN AGAMA SEBAGAIMANA
+  TELAH DIUBAH DENGAN PERATURAN PEMERINTAH NOMOR 27 TAHUN 2001
+short_name: null
+status: null
+tanggal_penetapan: '2003-02-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_12_2003_2003-02-17
+  kind: asli
+  source: dataset
+  date: '2003-02-17'
+  date_basis: tanggal_penetapan
+  text: pp_12_2003_2003-02-17.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7e4919a743f5b7a608dde76987a5bf60369a253401c3bcea7af2177a2a0319cd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7e4919a743f5b7a608dde76987a5bf60369a253401c3bcea7af2177a2a0319cd
+  source_title: PP_No.12_TH_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: none_known

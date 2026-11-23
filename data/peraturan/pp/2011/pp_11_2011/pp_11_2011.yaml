@@ -1,0 +1,41 @@
+id: pp_11_2011
+akn: /akn/id/act/pp/2011/11
+type: pp
+number: '11'
+year: 2011
+title: Peraturan Pemerintah Nomor 11 Tahun 2011 tentang Perubahan Ketigabelas Atas
+  Peraturan Pemerintah Nomor 7 Tahun 1977 Tentang Kumham.G Peraturan Gaji Pegawai
+  Negeri Sipil
+tentang: PERUBAHAN KETIGABELAS ATAS PERATURAN PEMERINTAH NOMOR 7 TAHUN 1977 TENTANG
+  kumham.g PERATURAN GAJI PEGAWAI NEGERI SIPIL
+short_name: null
+status: null
+tanggal_penetapan: '2011-02-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_11_2011_2011-02-16
+  kind: asli
+  source: dataset
+  date: '2011-02-16'
+  date_basis: tanggal_penetapan
+  text: pp_11_2011_2011-02-16.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9910235afb00b7cdbc638a847939f3f9eed1a0db01fc7e29d0144d51358050df
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9910235afb00b7cdbc638a847939f3f9eed1a0db01fc7e29d0144d51358050df
+  source_title: PP_No.11_TH_2011
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: none_known

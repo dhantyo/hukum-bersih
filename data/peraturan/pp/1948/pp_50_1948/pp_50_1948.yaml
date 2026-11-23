@@ -1,0 +1,39 @@
+id: pp_50_1948
+akn: /akn/id/act/pp/1948/50
+type: pp
+number: '50'
+year: 1948
+title: Peraturan Pemerintah Nomor 50 Tahun 1948 tentang Militairisasi Beberapa Perusahaan
+  Didalam Lingkungan Kementerian Keuangan
+tentang: MILITAIRISASI BEBERAPA PERUSAHAAN DIDALAM LINGKUNGAN KEMENTERIAN KEUANGAN
+short_name: null
+status: null
+tanggal_penetapan: '1948-10-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_50_1948_1948-10-21
+  kind: asli
+  source: dataset
+  date: '1948-10-21'
+  date_basis: tanggal_penetapan
+  text: pp_50_1948_1948-10-21.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ffe4ead06047fca7df3fa57f9b784ff8707e7d111b112cd0d444c7744ff8c495
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ffe4ead06047fca7df3fa57f9b784ff8707e7d111b112cd0d444c7744ff8c495
+  source_title: PP_No._50_Tahun_1948
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: none_known

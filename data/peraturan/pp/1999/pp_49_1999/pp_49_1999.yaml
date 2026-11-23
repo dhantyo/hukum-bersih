@@ -1,0 +1,42 @@
+id: pp_49_1999
+akn: /akn/id/act/pp/1999/49
+type: pp
+number: '49'
+year: 1999
+title: Peraturan Pemerintah Nomor 49 Tahun 1999 tentang Pembentukan 9 (Sembilan) Kecamatan
+  Di Wilayah Kabupaten Daerah Tingkat Ii Malang, Lamongan, Bojonegoro, Ngawi, Blitar,
+  Lumajang Dan Kediri Ddalam Wilayah Propinsi Daerah Tingkat I Jawa Timur
+tentang: PEMBENTUKAN 9 (SEMBILAN) KECAMATAN DI WILAYAH KABUPATEN DAERAH TINGKAT II
+  MALANG, LAMONGAN, BOJONEGORO, NGAWI, BLITAR, LUMAJANG DAN KEDIRI DDALAM WILAYAH
+  PROPINSI DAERAH TINGKAT I JAWA TIMUR
+short_name: null
+status: null
+tanggal_penetapan: '1999-05-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_49_1999_1999-05-26
+  kind: asli
+  source: dataset
+  date: '1999-05-26'
+  date_basis: tanggal_penetapan
+  text: pp_49_1999_1999-05-26.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:48b037c2ea9277bd8cdf9257bfa4af742b262c4c2cf1bba06a648039cd952e38
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:48b037c2ea9277bd8cdf9257bfa4af742b262c4c2cf1bba06a648039cd952e38
+  source_title: PP_No._49_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 17
+  status: none_known

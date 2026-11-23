@@ -1,0 +1,39 @@
+id: pp_64_1998
+akn: /akn/id/act/pp/1998/64
+type: pp
+number: '64'
+year: 1998
+title: Peraturan Pemerintah Nomor 64 Tahun 1998 tentang Perubahan Atas Peraturan Pemerintah
+  Nomor 19 Tahun 1997 Tentang Pajak Daerah
+tentang: PERUBAHAN ATAS PERATURAN PEMERINTAH NOMOR 19 TAHUN 1997 TENTANG PAJAK DAERAH
+short_name: null
+status: null
+tanggal_penetapan: '1998-07-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_64_1998_1998-07-13
+  kind: asli
+  source: dataset
+  date: '1998-07-13'
+  date_basis: tanggal_penetapan
+  text: pp_64_1998_1998-07-13.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ac9057217e48d27d8d0461a7ef7d4e95ee9533ba8f496d59da7aa075781c58f7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ac9057217e48d27d8d0461a7ef7d4e95ee9533ba8f496d59da7aa075781c58f7
+  source_title: PP_No._64_Tahun_1998
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

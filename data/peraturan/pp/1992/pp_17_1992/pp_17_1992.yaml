@@ -1,0 +1,41 @@
+id: pp_17_1992
+akn: /akn/id/act/pp/1992/17
+type: pp
+number: '17'
+year: 1992
+title: Peraturan Pemerintah Nomor 17 Tahun 1992 tentang Persyaratan Pemilikan Saham
+  Dalam Perusahaan Penanaman Modal Asing
+tentang: PERSYARATAN PEMILIKAN SAHAM DALAM PERUSAHAAN PENANAMAN MODAL ASING
+short_name: null
+status: dicabut
+tanggal_penetapan: '1992-04-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_17_1992_1992-04-16
+  kind: asli
+  source: dataset
+  date: '1992-04-16'
+  date_basis: tanggal_penetapan
+  text: pp_17_1992_1992-04-16.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f8404ab1d823286936404c43a3735da89a274285f4627b58d706a8b05b3edfc8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f8404ab1d823286936404c43a3735da89a274285f4627b58d706a8b05b3edfc8
+  source_title: PP_NO_17_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 25
+  status: revoked
+  revoked_by:
+  - sha256:494bd8edab0f9fd1f7c7c71b7ea42fc6c0b081fecef2b4759d43d09cb0a74231

@@ -1,0 +1,27 @@
+id: pp_103_2000
+akn: /akn/id/act/pp/2000/103
+type: pp
+number: '103'
+year: 2000
+title: Peraturan Pemerintah Nomor 103 Tahun 2000 tentang Perusahaan Umum (Perum) Pegadaian
+tentang: PERUSAHAAN UMUM (PERUM) PEGADAIAN
+short_name: null
+status: null
+tanggal_penetapan: '2000-11-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7b301d21ec894bf018840986bec7ebda560bd17bc011ec16b039247f6344ea60
+  source_title: PP_No.103_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 75
+  status: none_known
+parse_error: 'v13: rebuilt text has 3 pasal, the dataset lists 64'

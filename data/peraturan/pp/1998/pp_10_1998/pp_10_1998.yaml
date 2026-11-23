@@ -1,0 +1,41 @@
+id: pp_10_1998
+akn: /akn/id/act/pp/1998/10
+type: pp
+number: '10'
+year: 1998
+title: Peraturan Pemerintah Nomor 10 Tahun 1998 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Kedalam Modal Saham Perusahaan Perseroan (Persero) Angkasa
+  Pura Ii
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KEDALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) ANGKASA PURA II
+short_name: null
+status: null
+tanggal_penetapan: '1998-01-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_10_1998_1998-01-09
+  kind: asli
+  source: dataset
+  date: '1998-01-09'
+  date_basis: tanggal_penetapan
+  text: pp_10_1998_1998-01-09.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:61fa0993419ae36d308ad090f473d47a62d9ae166ef7daca292d062d25498598
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:61fa0993419ae36d308ad090f473d47a62d9ae166ef7daca292d062d25498598
+  source_title: PP_No._10_Tahun_1998
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: none_known

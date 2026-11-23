@@ -1,0 +1,38 @@
+id: pp_11_1986
+akn: /akn/id/act/pp/1986/11
+type: pp
+number: '11'
+year: 1986
+title: Peraturan Pemerintah Nomor 11 Tahun 1986 tentang Obligasi Perusahaan Umum Telekomunikasi
+tentang: OBLIGASI PERUSAHAAN UMUM TELEKOMUNIKASI
+short_name: null
+status: null
+tanggal_penetapan: '1986-02-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_11_1986_1986-02-10
+  kind: asli
+  source: dataset
+  date: '1986-02-10'
+  date_basis: tanggal_penetapan
+  text: pp_11_1986_1986-02-10.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a38abc9721b7d4ec3631796c7fa2021d534135465361a8bb02344f0c245d2984
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a38abc9721b7d4ec3631796c7fa2021d534135465361a8bb02344f0c245d2984
+  source_title: PP_NO_11_TH_1986
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: none_known

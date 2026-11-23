@@ -1,0 +1,40 @@
+id: pp_38_1992
+akn: /akn/id/act/pp/1992/38
+type: pp
+number: '38'
+year: 1992
+title: Peraturan Pemerintah Nomor 38 Tahun 1992 tentang Tenaga Pendidikan
+tentang: TENAGA PENDIDIKAN
+short_name: null
+status: diubah
+tanggal_penetapan: '1992-07-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_38_1992_1992-07-17
+  kind: asli
+  source: dataset
+  date: '1992-07-17'
+  date_basis: tanggal_penetapan
+  text: pp_38_1992_1992-07-17.txt
+  pasal_count: 64
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:82c656fa356a83718433450241e0059a3ac1fb4b547d1b62d89b45d38b092a83
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:82c656fa356a83718433450241e0059a3ac1fb4b547d1b62d89b45d38b092a83
+  source_title: PP_NO_38_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 112
+  status: amended
+  amended_by:
+  - sha256:c9294d883d283ea52447c63132c9b95e668873bf34f40bee68e808d706ac5eb1

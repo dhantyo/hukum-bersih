@@ -1,0 +1,40 @@
+id: pp_6_2015
+akn: /akn/id/act/pp/2015/6
+type: pp
+number: '6'
+year: 2015
+title: Peraturan Pemerintah Nomor 6 Tahun 2015 tentang Jenis Dan Tarif Atas Jenis
+  Penerimaan Negara Bukan Pajak Yang Berlaku Pada Badan Pengkajian Dan Penerapan Teknologi
+tentang: JENIS DAN TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA
+  BADAN PENGKAJIAN DAN PENERAPAN TEKNOLOGI
+short_name: null
+status: null
+tanggal_penetapan: '2015-02-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_6_2015_2015-02-24
+  kind: asli
+  source: dataset
+  date: '2015-02-24'
+  date_basis: tanggal_penetapan
+  text: pp_6_2015_2015-02-24.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7d847101f16f7be7ed16d2a3787e48a407bb81e29db4a711e3ba34152330dd9d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7d847101f16f7be7ed16d2a3787e48a407bb81e29db4a711e3ba34152330dd9d
+  source_title: PP_Nomor_6_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 288
+  status: none_known

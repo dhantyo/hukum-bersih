@@ -1,0 +1,42 @@
+id: pp_57_2010
+akn: /akn/id/act/pp/2010/57
+type: pp
+number: '57'
+year: 2010
+title: Peraturan Pemerintah Nomor 57 Tahun 2010 tentang Penggabungan Atau Peleburan
+  Badan Usaha Dan Pengambilalihan Saham Perusahaan Yang Dapat Mengakibatkan Terjadinya
+  Praktik Monopoli Dan Persaingan Usaha Tidak Sehat
+tentang: PENGGABUNGAN ATAU PELEBURAN BADAN USAHA DAN PENGAMBILALIHAN SAHAM PERUSAHAAN
+  YANG DAPAT MENGAKIBATKAN TERJADINYA PRAKTIK MONOPOLI DAN PERSAINGAN USAHA TIDAK
+  SEHAT
+short_name: null
+status: null
+tanggal_penetapan: '2010-07-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_57_2010_2010-07-20
+  kind: asli
+  source: dataset
+  date: '2010-07-20'
+  date_basis: tanggal_penetapan
+  text: pp_57_2010_2010-07-20.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d2bda41857e181e449c19af5c42de66ebe5cafa62738554ecb36f248ba9f9b13
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d2bda41857e181e449c19af5c42de66ebe5cafa62738554ecb36f248ba9f9b13
+  source_title: PP_57_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 26
+  status: none_known

@@ -1,0 +1,39 @@
+id: pp_17_2000
+akn: /akn/id/act/pp/2000/17
+type: pp
+number: '17'
+year: 2000
+title: Peraturan Pemerintah Nomor 17 Tahun 2000 tentang Permohonan Pernyataan Pailit
+  Untuk Kepentingan Umum
+tentang: PERMOHONAN PERNYATAAN PAILIT UNTUK KEPENTINGAN UMUM
+short_name: null
+status: null
+tanggal_penetapan: '2000-03-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_17_2000_2000-03-20
+  kind: asli
+  source: dataset
+  date: '2000-03-20'
+  date_basis: tanggal_penetapan
+  text: pp_17_2000_2000-03-20.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:518a3bfa7b2bc5b178a0f11ffda0e4c5205f91c7380cb44fd282f2bfcd984f8e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:518a3bfa7b2bc5b178a0f11ffda0e4c5205f91c7380cb44fd282f2bfcd984f8e
+  source_title: PP_No.17_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

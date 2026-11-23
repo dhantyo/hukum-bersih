@@ -1,0 +1,40 @@
+id: pp_61_2010
+akn: /akn/id/act/pp/2010/61
+type: pp
+number: '61'
+year: 2010
+title: Peraturan Pemerintah Nomor 61 Tahun 2010 tentang Pelaksanaan Undang-Undang
+  Nomor 14 Tahun 2008 Tentang Keterbukaan Informasi Publik
+tentang: PELAKSANAAN UNDANG-UNDANG NOMOR 14 TAHUN 2008 TENTANG KETERBUKAAN INFORMASI
+  PUBLIK
+short_name: null
+status: null
+tanggal_penetapan: '2010-08-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_61_2010_2010-08-20
+  kind: asli
+  source: dataset
+  date: '2010-08-20'
+  date_basis: tanggal_penetapan
+  text: pp_61_2010_2010-08-20.txt
+  pasal_count: 22
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:faa947bae6b808f2e06bc97dfe584f8dfbb4b040ccf7b7c2fd3e389a2b4192f6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:faa947bae6b808f2e06bc97dfe584f8dfbb4b040ccf7b7c2fd3e389a2b4192f6
+  source_title: PP_61_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 43
+  status: none_known

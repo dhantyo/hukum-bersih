@@ -1,0 +1,40 @@
+id: pp_80_2015
+akn: /akn/id/act/pp/2015/80
+type: pp
+number: '80'
+year: 2015
+title: Peraturan Pemerintah Nomor 80 Tahun 2015 tentang ]Enis Dantarif Atas .]Enis
+  Penerimaan Negara Bukan Pajak Yangberlaku Pada Kementerian Komunikasi Dan Informatika
+tentang: ']ENIS DANTARIF ATAS .]ENIS PENERIMAAN NEGARA BUKAN PAJAK YANGBERLAKU PADA
+  KEMENTERIAN KOMUNIKASI DAN INFORMATIKA'
+short_name: null
+status: null
+tanggal_penetapan: '2015-11-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_80_2015_2015-11-02
+  kind: asli
+  source: dataset
+  date: '2015-11-02'
+  date_basis: tanggal_penetapan
+  text: pp_80_2015_2015-11-02.txt
+  pasal_count: 22
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d250f070cb4fa91ec7e62cda73f9b271c0091fdcb7fe63c4de65fb0ff6c6a5e2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d250f070cb4fa91ec7e62cda73f9b271c0091fdcb7fe63c4de65fb0ff6c6a5e2
+  source_title: PP_Nomor_80_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 142
+  status: none_known

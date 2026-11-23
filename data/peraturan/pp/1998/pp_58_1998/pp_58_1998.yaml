@@ -1,0 +1,43 @@
+id: pp_58_1998
+akn: /akn/id/act/pp/1998/58
+type: pp
+number: '58'
+year: 1998
+title: Peraturan Pemerintah Nomor 58 Tahun 1998 tentang Tarif Atas Jenis Penerimaan
+  Negara Bukan Pajak Yang Berlaku Pada Departemen Pertambangan Dan Energi Di Bidang
+  Pertambangan Umum
+tentang: TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA DEPARTEMEN
+  PERTAMBANGAN DAN ENERGI DI BIDANG PERTAMBANGAN UMUM
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-05-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_58_1998_1998-05-05
+  kind: asli
+  source: dataset
+  date: '1998-05-05'
+  date_basis: tanggal_penetapan
+  text: pp_58_1998_1998-05-05.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:09febb2f5cbaa83c7d905d5c2ce04844d226a79dd3d55c34ee8ba0a0a2a5da37
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:09febb2f5cbaa83c7d905d5c2ce04844d226a79dd3d55c34ee8ba0a0a2a5da37
+  source_title: PP_No._58_Tahun_1998
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:b3b29495d8fcb2f8171ad141290877b373ad66165fb905c42e19b6e7b5e51d42

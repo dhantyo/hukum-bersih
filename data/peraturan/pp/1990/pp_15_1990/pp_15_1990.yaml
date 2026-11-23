@@ -1,0 +1,43 @@
+id: pp_15_1990
+akn: /akn/id/act/pp/1990/15
+type: pp
+number: '15'
+year: 1990
+title: Peraturan Pemerintah Nomor 15 Tahun 1990 tentang Usaha Perikanan
+tentang: USAHA PERIKANAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1990-05-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_15_1990_1990-05-28
+  kind: asli
+  source: dataset
+  date: '1990-05-28'
+  date_basis: tanggal_penetapan
+  text: pp_15_1990_1990-05-28.txt
+  pasal_count: 25
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:762279262c34d945ad16badf1f129bc6d84a4f231f1559af6088ab1afff26fb9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:762279262c34d945ad16badf1f129bc6d84a4f231f1559af6088ab1afff26fb9
+  source_title: PP_NO_15_TH_1990
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 44
+  status: revoked
+  revoked_by:
+  - sha256:c531db54b6e23dc0c38a328e46ad211ed324c891dbb1322040fcf85e28538b8c
+  amended_by:
+  - sha256:36a17bf39bc966fc4b4dd8663b4be44c09e84b6b11f39b53e5735be588b042ec
+  - sha256:7aa912afb58071025d4c225b89b33f468c0f9a1078ec5c7c6337103dbbcdf497

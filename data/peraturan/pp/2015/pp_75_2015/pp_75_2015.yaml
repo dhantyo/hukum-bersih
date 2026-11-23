@@ -1,0 +1,40 @@
+id: pp_75_2015
+akn: /akn/id/act/pp/2015/75
+type: pp
+number: '75'
+year: 2015
+title: Peraturan Pemerintah Nomor 75 Tahun 2015 tentang Jenis Dan Tarif Atas Jenis
+  Penerimaan Negara Bukan Pajak Yang Berlaku Pada Kementerian Kelautan Dan Perikanan
+tentang: JENIS DAN TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA
+  KEMENTERIAN KELAUTAN DAN PERIKANAN
+short_name: null
+status: null
+tanggal_penetapan: '2015-10-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_75_2015_2015-10-07
+  kind: asli
+  source: dataset
+  date: '2015-10-07'
+  date_basis: tanggal_penetapan
+  text: pp_75_2015_2015-10-07.txt
+  pasal_count: 18
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bba317bdc127463f66dc33d9de1bb41f9dea6b9b57eab5890b8246cfb800e99a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bba317bdc127463f66dc33d9de1bb41f9dea6b9b57eab5890b8246cfb800e99a
+  source_title: PP_Nomor_75_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 469
+  status: none_known

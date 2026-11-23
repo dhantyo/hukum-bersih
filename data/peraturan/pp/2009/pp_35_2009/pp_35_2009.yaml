@@ -1,0 +1,40 @@
+id: pp_35_2009
+akn: /akn/id/act/pp/2009/35
+type: pp
+number: '35'
+year: 2009
+title: Peraturan Pemerintah Nomor 35 Tahun 2009 tentang Penyertaan Modal Negara Republik
+  Indonesia Untuk Pendirian Perusahaan Perseroan (Persero) Di Bidang Penjaminan Infrastruktur
+tentang: PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA UNTUK PENDIRIAN PERUSAHAAN PERSEROAN
+  (PERSERO) DI BIDANG PENJAMINAN INFRASTRUKTUR
+short_name: null
+status: null
+tanggal_penetapan: '2009-05-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_35_2009_2009-05-05
+  kind: asli
+  source: dataset
+  date: '2009-05-05'
+  date_basis: tanggal_penetapan
+  text: pp_35_2009_2009-05-05.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:cc020aa8ca5b1aca5287ecf3a57b8ae44f791cca711aeef1c3efa584e6d0bd6a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:cc020aa8ca5b1aca5287ecf3a57b8ae44f791cca711aeef1c3efa584e6d0bd6a
+  source_title: PP_No_35_2009
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

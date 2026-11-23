@@ -1,0 +1,43 @@
+id: pp_15_2003
+akn: /akn/id/act/pp/2003/15
+type: pp
+number: '15'
+year: 2003
+title: Peraturan Pemerintah Nomor 15 Tahun 2003 tentang Perubahan Peruntukkan Dana
+  Penyertaan Modal Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan
+  (Persero) Pt Tambang Batubara Bukit Asam Sebagaimana Dimaksud Dalam Peraturan Pemerintah
+  Nomor 11 Tahun 1998
+tentang: PERUBAHAN PERUNTUKKAN DANA PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE
+  DALAM MODAL SAHAM PERUSAHAAN PERSEROAN (PERSERO) PT TAMBANG BATUBARA BUKIT ASAM
+  SEBAGAIMANA DIMAKSUD DALAM PERATURAN PEMERINTAH NOMOR 11 TAHUN 1998
+short_name: null
+status: null
+tanggal_penetapan: '2003-03-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_15_2003_2003-03-06
+  kind: asli
+  source: dataset
+  date: '2003-03-06'
+  date_basis: tanggal_penetapan
+  text: pp_15_2003_2003-03-06.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9a3d498d90749f7c70ccd05c4a8537a2a6a63561a4185c22f053889f2e3a7934
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9a3d498d90749f7c70ccd05c4a8537a2a6a63561a4185c22f053889f2e3a7934
+  source_title: PP_No.15_TH_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

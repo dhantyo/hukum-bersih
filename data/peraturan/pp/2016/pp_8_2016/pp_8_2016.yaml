@@ -1,0 +1,32 @@
+id: pp_8_2016
+akn: /akn/id/act/pp/2016/8
+type: pp
+number: '8'
+year: 2016
+title: Peraturan Pemerintah Nomor 8 Tahun 2016 tentang Perubahan Kedua Atas Peraturan
+  Pemerintah Nomor 60 Tahun 2014 Tentang Dana Desa Yang Bersumber Dari Anggaran Pendapatan
+  Dan Belanja Negara
+tentang: PERUBAHAN KEDUA ATAS PERATURAN PEMERINTAH NOMOR 60 TAHUN 2014 TENTANG DANA
+  DESA YANG BERSUMBER DARI ANGGARAN PENDAPATAN DAN BELANJA NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2016-03-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7a8cb744d4d969aad48d5c1a122abd30e846a04405ef21c504e277ce5197f8cd
+  source_title: PP_Nomor_8_Tahun_2016
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 23
+  status: revoked
+  revoked_by:
+  - sha256:a7d8aff1ec6f843aed4a29c8b9828019d0f64b367e116409d72f2cb8bb50fc32
+parse_error: 'v13: rebuilt text has 2 pasal, the dataset lists 9'

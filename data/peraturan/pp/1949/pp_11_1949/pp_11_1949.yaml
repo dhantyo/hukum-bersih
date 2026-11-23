@@ -1,0 +1,38 @@
+id: pp_11_1949
+akn: /akn/id/act/pp/1949/11
+type: pp
+number: '11'
+year: 1949
+title: Peraturan Pemerintah Nomor 11 Tahun 1949 tentang Sumpah Jabatan Notaris
+tentang: SUMPAH JABATAN NOTARIS
+short_name: null
+status: null
+tanggal_penetapan: '1949-10-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_11_1949_1949-10-01
+  kind: asli
+  source: dataset
+  date: '1949-10-01'
+  date_basis: tanggal_penetapan
+  text: pp_11_1949_1949-10-01.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ad633c6961bff594ca5af51a938b171a9717ffbf4540b102020faa09353d7c27
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ad633c6961bff594ca5af51a938b171a9717ffbf4540b102020faa09353d7c27
+  source_title: PP_No_11_Tahun_1949
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

@@ -1,0 +1,39 @@
+id: pp_53_2003
+akn: /akn/id/act/pp/2003/53
+type: pp
+number: '53'
+year: 2003
+title: Peraturan Pemerintah Nomor 53 Tahun 2003 tentang Badan Pengawas Pasar Tenaga
+  Listrik
+tentang: BADAN PENGAWAS PASAR TENAGA LISTRIK
+short_name: null
+status: null
+tanggal_penetapan: '2003-11-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_53_2003_2003-11-03
+  kind: asli
+  source: dataset
+  date: '2003-11-03'
+  date_basis: tanggal_penetapan
+  text: pp_53_2003_2003-11-03.txt
+  pasal_count: 33
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:10242382fd3547fd1674471df0405ad459511b0cc73b2c491999a6c7df086026
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:10242382fd3547fd1674471df0405ad459511b0cc73b2c491999a6c7df086026
+  source_title: PP_No.53_TH_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 51
+  status: none_known

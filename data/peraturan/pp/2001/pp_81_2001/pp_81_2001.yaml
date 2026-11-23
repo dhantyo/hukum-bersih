@@ -1,0 +1,38 @@
+id: pp_81_2001
+akn: /akn/id/act/pp/2001/81
+type: pp
+number: '81'
+year: 2001
+title: Peraturan Pemerintah Nomor 81 Tahun 2001 tentang Alat Dan Mesin Budidaya Tanaman
+tentang: ALAT DAN MESIN BUDIDAYA TANAMAN
+short_name: null
+status: null
+tanggal_penetapan: '2001-12-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_81_2001_2001-12-07
+  kind: asli
+  source: dataset
+  date: '2001-12-07'
+  date_basis: tanggal_penetapan
+  text: pp_81_2001_2001-12-07.txt
+  pasal_count: 26
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8a832112208d12bb388f0929d6585799c3339769e71e02deefbdafd37e8f1cae
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8a832112208d12bb388f0929d6585799c3339769e71e02deefbdafd37e8f1cae
+  source_title: PP_NO_81_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 45
+  status: none_known

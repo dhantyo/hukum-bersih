@@ -1,0 +1,38 @@
+id: pp_9_1949
+akn: /akn/id/act/pp/1949/9
+type: pp
+number: '9'
+year: 1949
+title: Peraturan Pemerintah Nomor 9 Tahun 1949 tentang Kewajiban Berbakti Bagi Pelajar
+tentang: KEWAJIBAN BERBAKTI BAGI PELAJAR
+short_name: null
+status: null
+tanggal_penetapan: '1949-09-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_9_1949_1949-09-28
+  kind: asli
+  source: dataset
+  date: '1949-09-28'
+  date_basis: tanggal_penetapan
+  text: pp_9_1949_1949-09-28.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:200f707d1a8c3ebab55ca3860bfe5a5dfc635c14fc9a770bb3fc81fbc9e00cd3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:200f707d1a8c3ebab55ca3860bfe5a5dfc635c14fc9a770bb3fc81fbc9e00cd3
+  source_title: PP_No_9_Tahun_1949
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 21
+  status: none_known

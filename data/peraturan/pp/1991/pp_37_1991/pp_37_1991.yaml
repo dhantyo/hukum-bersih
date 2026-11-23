@@ -1,0 +1,39 @@
+id: pp_37_1991
+akn: /akn/id/act/pp/1991/37
+type: pp
+number: '37'
+year: 1991
+title: Peraturan Pemerintah Nomor 37 Tahun 1991 tentang Perlindungan Dan Pengamanan
+  Penyelenggaraan Telekomunikasi
+tentang: PERLINDUNGAN DAN PENGAMANAN PENYELENGGARAAN TELEKOMUNIKASI
+short_name: null
+status: null
+tanggal_penetapan: '1991-06-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_37_1991_1991-06-15
+  kind: asli
+  source: dataset
+  date: '1991-06-15'
+  date_basis: tanggal_penetapan
+  text: pp_37_1991_1991-06-15.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6126cb276312cf4446b8398957da3c7be18c619a3a0c41899f6683823447506b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6126cb276312cf4446b8398957da3c7be18c619a3a0c41899f6683823447506b
+  source_title: PP_NO_37_TH_1991
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 35
+  status: none_known

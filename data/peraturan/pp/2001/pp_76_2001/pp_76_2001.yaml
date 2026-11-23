@@ -1,0 +1,41 @@
+id: pp_76_2001
+akn: /akn/id/act/pp/2001/76
+type: pp
+number: '76'
+year: 2001
+title: Peraturan Pemerintah Nomor 76 Tahun 2001 tentang Pedoman Umum Pengaturan Mengenai
+  Desa
+tentang: PEDOMAN UMUM PENGATURAN MENGENAI DESA
+short_name: null
+status: dicabut
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_76_2001_2001
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: pp_76_2001_2001.txt
+  pasal_count: 73
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:353f3bf7076029fb78c4bc3eb4a9fb9ff9745961fac65f0dbb638a46fbe0598e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:353f3bf7076029fb78c4bc3eb4a9fb9ff9745961fac65f0dbb638a46fbe0598e
+  source_title: PP_NO_76_TH_2001
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 102
+  status: revoked
+  revoked_by:
+  - sha256:42e056449c193afdb9ac0725c5663a232bf6d65b32a06e7ee68f8c7d071da582

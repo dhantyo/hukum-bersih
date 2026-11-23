@@ -1,0 +1,43 @@
+id: pp_8_2006
+akn: /akn/id/act/pp/2006/8
+type: pp
+number: '8'
+year: 2006
+title: Peraturan Pemerintah Nomor 8 Tahun 2006 tentang Pelaporan Keuangan Dan Kinerja
+  Instansi Pemerintah
+tentang: PELAPORAN KEUANGAN DAN KINERJA INSTANSI PEMERINTAH
+short_name: null
+status: diubah
+tanggal_penetapan: '2006-04-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_8_2006_2006-04-03
+  kind: asli
+  source: dataset
+  date: '2006-04-03'
+  date_basis: tanggal_penetapan
+  text: pp_8_2006_2006-04-03.txt
+  pasal_count: 38
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:deebeff5a9f005c08894773b57cc64f1da3ffd46bc9f16d6f6e6d6204e7a62a5
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:deebeff5a9f005c08894773b57cc64f1da3ffd46bc9f16d6f6e6d6204e7a62a5
+  source_title: PP_no_8_th_2006
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 54
+  status: amended
+  amended_by:
+  - sha256:71cdc19bc50a4dacaedcee5d9b49905e479a4d8a9e18226f0376e86446ae2bc5
+  - sha256:724a0f012a6cc010ff25546471e408f397980c64b502965ab301e5a26b2f7b76
+  - sha256:eff1512de95910c4050e969f14c02099c534a9b7987dfb8461a4dfe995a2401f

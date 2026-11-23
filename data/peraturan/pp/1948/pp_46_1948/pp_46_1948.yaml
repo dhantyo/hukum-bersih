@@ -1,0 +1,43 @@
+id: pp_46_1948
+akn: /akn/id/act/pp/1948/46
+type: pp
+number: '46'
+year: 1948
+title: Peraturan Pemerintah Nomor 46 Tahun 1948 tentang Larangan Terhadap Penyimpanan
+  Minyak Bensin Pasal 1. (1) Dilarang Menyimpan Bensin Lebih Dari 5 (Lima) Liter.
+  (2) Larangan Tersebut Pada Ayat 1 Pasal Ini Tidak Berlaku Bagi Perusahaan Tambang
+  Minyak Negara (P.T.M.N.)
+tentang: LARANGAN TERHADAP PENYIMPANAN MINYAK BENSIN Pasal 1. (1) Dilarang menyimpan
+  bensin lebih dari 5 (lima) liter. (2) Larangan tersebut pada ayat 1 pasal ini tidak
+  berlaku bagi Perusahaan Tambang Minyak Negara (P.T.M.N.)
+short_name: null
+status: null
+tanggal_penetapan: '1948-10-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_46_1948_1948-10-09
+  kind: asli
+  source: dataset
+  date: '1948-10-09'
+  date_basis: tanggal_penetapan
+  text: pp_46_1948_1948-10-09.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5ff52b075fe8e9d6adb48c05714dc960f338ad840e79bd306113d3ab163e3374
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5ff52b075fe8e9d6adb48c05714dc960f338ad840e79bd306113d3ab163e3374
+  source_title: PP_No_46_Tahun_1948
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

@@ -1,0 +1,43 @@
+id: pp_38_2003
+akn: /akn/id/act/pp/2003/38
+type: pp
+number: '38'
+year: 2003
+title: Peraturan Pemerintah Nomor 38 Tahun 2003 tentang Perubahan Atas Peraturan Pemerintah
+  Nomor 146 Tahun 2000 Tentang Impor Dan Atau Penyerahan Barang Kena Pajak Tertentu
+  Dan Atau Penyerahan Jasa Kena Pajak Tertentu Yang Dibebaskan Dari Pengenaan Pajak
+  Pertambahan Nilai
+tentang: PERUBAHAN ATAS PERATURAN PEMERINTAH NOMOR 146 TAHUN 2000 TENTANG IMPOR DAN
+  ATAU PENYERAHAN BARANG KENA PAJAK TERTENTU DAN ATAU PENYERAHAN JASA KENA PAJAK TERTENTU
+  YANG DIBEBASKAN DARI PENGENAAN PAJAK PERTAMBAHAN NILAI
+short_name: null
+status: null
+tanggal_penetapan: '2003-07-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_38_2003_2003-07-14
+  kind: asli
+  source: dataset
+  date: '2003-07-14'
+  date_basis: tanggal_penetapan
+  text: pp_38_2003_2003-07-14.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0e3fab91e2086494e0577f51236c337c1405e9057ec51935fefe197c33c198d3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0e3fab91e2086494e0577f51236c337c1405e9057ec51935fefe197c33c198d3
+  source_title: PP_No.38_TH_2003
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 14
+  status: none_known

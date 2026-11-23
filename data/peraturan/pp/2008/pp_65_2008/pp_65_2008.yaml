@@ -1,0 +1,40 @@
+id: pp_65_2008
+akn: /akn/id/act/pp/2008/65
+type: pp
+number: '65'
+year: 2008
+title: Peraturan Pemerintah Nomor 65 Tahun 2008 tentang Perubahan Kedua Atas Peraturan
+  Pemerintah Nomor 32 Tahun 1979 Tentang Pemberhentian Pegawai Negeri Sipil
+tentang: PERUBAHAN KEDUA ATAS PERATURAN PEMERINTAH NOMOR 32 TAHUN 1979 TENTANG PEMBERHENTIAN
+  PEGAWAI NEGERI SIPIL
+short_name: null
+status: null
+tanggal_penetapan: '2008-10-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_65_2008_2008-10-09
+  kind: asli
+  source: dataset
+  date: '2008-10-09'
+  date_basis: tanggal_penetapan
+  text: pp_65_2008_2008-10-09.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:be01a8e07d0800ae44538350696530f29a429a1553a677dbc4e9027d79d21352
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:be01a8e07d0800ae44538350696530f29a429a1553a677dbc4e9027d79d21352
+  source_title: PP_65_Tahun_2008
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

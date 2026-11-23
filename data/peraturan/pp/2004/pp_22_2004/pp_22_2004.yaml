@@ -1,0 +1,41 @@
+id: pp_22_2004
+akn: /akn/id/act/pp/2004/22
+type: pp
+number: '22'
+year: 2004
+title: Peraturan Pemerintah Nomor 22 Tahun 2004 tentang Pengelolaan Dan Investasi
+  Dana Program Jaminan Sosial Tenaga Kerja
+tentang: PENGELOLAAN DAN INVESTASI DANA PROGRAM JAMINAN SOSIAL TENAGA KERJA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2004-08-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_22_2004_2004-08-05
+  kind: asli
+  source: dataset
+  date: '2004-08-05'
+  date_basis: tanggal_penetapan
+  text: pp_22_2004_2004-08-05.txt
+  pasal_count: 38
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bb7b140d9d1a972b02ab3c33a0915012098025a6e817670268d0c22ca43f345e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bb7b140d9d1a972b02ab3c33a0915012098025a6e817670268d0c22ca43f345e
+  source_title: PP_No.22_TH_2004
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 67
+  status: revoked
+  revoked_by:
+  - sha256:d6b92a013129b75bbba6f877179184844709a960ad918dc028cc0be754012872

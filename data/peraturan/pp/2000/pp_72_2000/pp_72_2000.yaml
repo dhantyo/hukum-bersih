@@ -1,0 +1,40 @@
+id: pp_72_2000
+akn: /akn/id/act/pp/2000/72
+type: pp
+number: '72'
+year: 2000
+title: Peraturan Pemerintah Nomor 72 Tahun 2000 tentang Penyesuaian Pensiun Pokok
+  Mantan Pimpinan Dan Hakim Anggota Mahkamah Agung Serta Janda/Dudanya
+tentang: PENYESUAIAN PENSIUN POKOK MANTAN PIMPINAN DAN HAKIM ANGGOTA MAHKAMAH AGUNG
+  SERTA JANDA/DUDANYA
+short_name: null
+status: null
+tanggal_penetapan: '2000-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_72_2000_2000-01-01
+  kind: asli
+  source: dataset
+  date: '2000-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_72_2000_2000-01-01.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:168dee4eb678798e61a421ed2f655c5c504fe97de1b13d5a258745e76e35c5ad
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:168dee4eb678798e61a421ed2f655c5c504fe97de1b13d5a258745e76e35c5ad
+  source_title: PP_No.72_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 14
+  status: none_known

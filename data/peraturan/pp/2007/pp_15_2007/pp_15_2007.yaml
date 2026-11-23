@@ -1,0 +1,40 @@
+id: pp_15_2007
+akn: /akn/id/act/pp/2007/15
+type: pp
+number: '15'
+year: 2007
+title: Peraturan Pemerintah Nomor 15 Tahun 2007 tentang Tata Cara Memperoleh Informasi
+  Ketenagakerjaan Dan Penyusunan Serta Pelaksanaan Perencanaan Tenaga Kerja
+tentang: TATA CARA MEMPEROLEH INFORMASI KETENAGAKERJAAN DAN PENYUSUNAN SERTA PELAKSANAAN
+  PERENCANAAN TENAGA KERJA
+short_name: null
+status: null
+tanggal_penetapan: '2007-02-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_15_2007_2007-02-05
+  kind: asli
+  source: dataset
+  date: '2007-02-05'
+  date_basis: tanggal_penetapan
+  text: pp_15_2007_2007-02-05.txt
+  pasal_count: 45
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bb52f76642ecba2d4f7dfe4685cbf7d508de97e439b14eb5ec8d14b1da0ee93c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bb52f76642ecba2d4f7dfe4685cbf7d508de97e439b14eb5ec8d14b1da0ee93c
+  source_title: PP-15-2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 74
+  status: none_known

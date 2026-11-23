@@ -1,0 +1,38 @@
+id: pp_6_1998
+akn: /akn/id/act/pp/1998/6
+type: pp
+number: '6'
+year: 1998
+title: Peraturan Pemerintah Nomor 6 Tahun 1998 tentang Polisi Pamong Praja
+tentang: POLISI PAMONG PRAJA
+short_name: null
+status: null
+tanggal_penetapan: '1998-01-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_6_1998_1998-01-07
+  kind: asli
+  source: dataset
+  date: '1998-01-07'
+  date_basis: tanggal_penetapan
+  text: pp_6_1998_1998-01-07.txt
+  pasal_count: 16
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e35ab58de5c2ba942dc202a2aa6f4cb47ac86605d1be0d60c7834b1abf641292
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e35ab58de5c2ba942dc202a2aa6f4cb47ac86605d1be0d60c7834b1abf641292
+  source_title: PP_No._6_Tahun_1998
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 30
+  status: none_known

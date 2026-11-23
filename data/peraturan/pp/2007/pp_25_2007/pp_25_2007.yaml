@@ -1,0 +1,41 @@
+id: pp_25_2007
+akn: /akn/id/act/pp/2007/25
+type: pp
+number: '25'
+year: 2007
+title: Peraturan Pemerintah Nomor 25 Tahun 2007 tentang Perubahan Kedua Atas Peraturan
+  Pemerintah Nomor 6 Tahun 2005 Tentang Pemilihan, Pengesahan Pengangkatan, Dan Pemberhentian
+  Kepala Daerah Dan Wakil Kepala Daerah
+tentang: PERUBAHAN KEDUA ATAS PERATURAN PEMERINTAH NOMOR 6 TAHUN 2005 TENTANG PEMILIHAN,
+  PENGESAHAN PENGANGKATAN, DAN PEMBERHENTIAN KEPALA DAERAH DAN WAKIL KEPALA DAERAH
+short_name: null
+status: null
+tanggal_penetapan: '2007-04-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_25_2007_2007-04-18
+  kind: asli
+  source: dataset
+  date: '2007-04-18'
+  date_basis: tanggal_penetapan
+  text: pp_25_2007_2007-04-18.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:25ba57b1138af5d179d5190ac83856d77cc21d6b643dff0fc1e235929e696450
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:25ba57b1138af5d179d5190ac83856d77cc21d6b643dff0fc1e235929e696450
+  source_title: PP_25_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: none_known

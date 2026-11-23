@@ -1,0 +1,39 @@
+id: pp_8_2013
+akn: /akn/id/act/pp/2013/8
+type: pp
+number: '8'
+year: 2013
+title: Peraturan Pemerintah Nomor 8 Tahun 2013 tentang Ketelitian Peta Rencana Tata
+  Ruang
+tentang: KETELITIAN PETA RENCANA TATA RUANG
+short_name: null
+status: null
+tanggal_penetapan: '2013-01-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_8_2013_2013-01-02
+  kind: asli
+  source: dataset
+  date: '2013-01-02'
+  date_basis: tanggal_penetapan
+  text: pp_8_2013_2013-01-02.txt
+  pasal_count: 34
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5ec26eebf8019b58ae2d01b60d5bc9427b1a665cef4f852d0004bcf0150435ac
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5ec26eebf8019b58ae2d01b60d5bc9427b1a665cef4f852d0004bcf0150435ac
+  source_title: PP_Nomor_8_Tahun_2013
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 63
+  status: none_known

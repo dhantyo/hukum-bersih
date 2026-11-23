@@ -1,0 +1,38 @@
+id: pp_31_2006
+akn: /akn/id/act/pp/2006/31
+type: pp
+number: '31'
+year: 2006
+title: Peraturan Pemerintah Nomor 31 Tahun 2006 tentang Sistem Pelatihan Kerja Nasional
+tentang: SISTEM PELATIHAN KERJA NASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '2006-09-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_31_2006_2006-09-22
+  kind: asli
+  source: dataset
+  date: '2006-09-22'
+  date_basis: tanggal_penetapan
+  text: pp_31_2006_2006-09-22.txt
+  pasal_count: 23
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1bba9e0bf6f400c2fd090df8c3edfe79b2be5a73e388ec41dda0e8067fdf48de
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1bba9e0bf6f400c2fd090df8c3edfe79b2be5a73e388ec41dda0e8067fdf48de
+  source_title: PP_no_31_th_2006
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 36
+  status: none_known

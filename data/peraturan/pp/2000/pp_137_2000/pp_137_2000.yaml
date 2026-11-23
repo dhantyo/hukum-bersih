@@ -1,0 +1,41 @@
+id: pp_137_2000
+akn: /akn/id/act/pp/2000/137
+type: pp
+number: '137'
+year: 2000
+title: Peraturan Pemerintah Nomor 137 Tahun 2000 tentang Tempat Dan Tata Cara Penyanderaan,
+  Rehabilitasi Nama Baik Penanggung Pajak, Dan Pemberian Ganti Rugi Dalam Rangka Penagihan
+  Pajak Dengan Surat Paksa
+tentang: TEMPAT DAN TATA CARA PENYANDERAAN, REHABILITASI NAMA BAIK PENANGGUNG PAJAK,
+  DAN PEMBERIAN GANTI RUGI DALAM RANGKA PENAGIHAN PAJAK DENGAN SURAT PAKSA
+short_name: null
+status: null
+tanggal_penetapan: '2001-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_137_2000_2001-01-01
+  kind: asli
+  source: dataset
+  date: '2001-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_137_2000_2001-01-01.txt
+  pasal_count: 15
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d4cfb94ee4b58d4345cd073091e0a300889402b5030078b66457537f2f83e843
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d4cfb94ee4b58d4345cd073091e0a300889402b5030078b66457537f2f83e843
+  source_title: PP_No.137_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 28
+  status: none_known

@@ -1,0 +1,43 @@
+id: pp_26_2007
+akn: /akn/id/act/pp/2007/26
+type: pp
+number: '26'
+year: 2007
+title: Peraturan Pemerintah Nomor 26 Tahun 2007 tentang Penetapan Pensiun Pokok Purnawirawan,
+  Warakawuri Atau Duda, Tunjangan Anak Yatim Dan/Atau Piatu Dan Tunjangan Orang Tua
+  Prajurit Tentara Nasional Indonesia
+tentang: PENETAPAN PENSIUN POKOK PURNAWIRAWAN, WARAKAWURI ATAU DUDA, TUNJANGAN ANAK
+  YATIM DAN/ATAU PIATU DAN TUNJANGAN ORANG TUA PRAJURIT TENTARA NASIONAL INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2007-04-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_26_2007_2007-04-23
+  kind: asli
+  source: dataset
+  date: '2007-04-23'
+  date_basis: tanggal_penetapan
+  text: pp_26_2007_2007-04-23.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:15e2c7bc1eac62820dcc4c5f602cb95f51ac22d8b1851715476ac5cb25578968
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:15e2c7bc1eac62820dcc4c5f602cb95f51ac22d8b1851715476ac5cb25578968
+  source_title: PP_26_Tahun_2007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:70a4eb10ec50dfdd26f25f7687ff02f05326a2bc6900172e6f159aa0b39ba57b

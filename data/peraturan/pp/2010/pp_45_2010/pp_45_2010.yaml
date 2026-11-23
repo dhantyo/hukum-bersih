@@ -1,0 +1,40 @@
+id: pp_45_2010
+akn: /akn/id/act/pp/2010/45
+type: pp
+number: '45'
+year: 2010
+title: Peraturan Pemerintah Nomor 45 Tahun 2010 tentang Penghasilan, Uang Kehormatan,
+  Dan Hak-Hak Lain Ketua, Wakil Ketua, Dan Anggota Ombudsman Republik Indonesia
+tentang: PENGHASILAN, UANG KEHORMATAN, DAN HAK-HAK LAIN KETUA, WAKIL KETUA, DAN ANGGOTA
+  OMBUDSMAN REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '2010-04-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_45_2010_2010-04-14
+  kind: asli
+  source: dataset
+  date: '2010-04-14'
+  date_basis: tanggal_penetapan
+  text: pp_45_2010_2010-04-14.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b8926a4338e39d167ccb40f1afee8963fd5eeda7049e4dc2bd8f402092c30dd6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b8926a4338e39d167ccb40f1afee8963fd5eeda7049e4dc2bd8f402092c30dd6
+  source_title: PP_45_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 24
+  status: none_known

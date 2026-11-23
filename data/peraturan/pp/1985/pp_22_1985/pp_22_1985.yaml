@@ -1,0 +1,44 @@
+id: pp_22_1985
+akn: /akn/id/act/pp/1985/22
+type: pp
+number: '22'
+year: 1985
+title: Peraturan Pemerintah Nomor 22 Tahun 1985 tentang Pelaksanaan Undang-Undang
+  Pajak Pertambahan Nilai 1984
+tentang: PELAKSANAAN UNDANG-UNDANG PAJAK PERTAMBAHAN NILAI 1984
+short_name: null
+status: diubah
+tanggal_penetapan: '1985-04-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_22_1985_1985-04-01
+  kind: asli
+  source: dataset
+  date: '1985-04-01'
+  date_basis: tanggal_penetapan
+  text: pp_22_1985_1985-04-01.txt
+  pasal_count: 27
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:def255b30968dce7a3edcd63424e7c1eb43d8d0bf2d56aabefe0b0d75c7ab1ca
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:def255b30968dce7a3edcd63424e7c1eb43d8d0bf2d56aabefe0b0d75c7ab1ca
+  source_title: PP_NO_22_TH_1985
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 62
+  status: amended
+  amended_by:
+  - sha256:3e2abb5e9dbf66744e5b120b65087079aad9ce5e4dd247c2a5c827144218dc9f
+  - sha256:d1a6bb391a67ecd2f794bf88095fa154a6b4b1f224c4ad657a54b80c0ad7b186
+  - sha256:d60fbf4f386eae91b6856d4015bcb92cd864ed72aae400394b57fc9c03debdc8
+  - sha256:f37b33c83e01703ea92f45c491c752fbaa46c3b5248f5ff4adde737d33e6fbf6

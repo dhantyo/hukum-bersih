@@ -1,0 +1,41 @@
+id: pp_48_2007
+akn: /akn/id/act/pp/2007/48
+type: pp
+number: '48'
+year: 2007
+title: Peraturan Pemerintah Nomor 48 Tahun 2007 tentang Kawasan Perdagangan Bebas
+  Dan Pelabuhan Bebas Karimun
+tentang: KAWASAN PERDAGANGAN BEBAS DAN PELABUHAN BEBAS KARIMUN
+short_name: null
+status: diubah
+tanggal_penetapan: '2007-08-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_48_2007_2007-08-20
+  kind: asli
+  source: dataset
+  date: '2007-08-20'
+  date_basis: tanggal_penetapan
+  text: pp_48_2007_2007-08-20.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9a8e5aab89bb3a90729fca3ba5b22da113952e1a904b454a4f6df579b48cbb99
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9a8e5aab89bb3a90729fca3ba5b22da113952e1a904b454a4f6df579b48cbb99
+  source_title: PP_48_Tahun_007
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: amended
+  amended_by:
+  - sha256:2308b60f6ad69efcea3820160e409397f877210f2c75ba34cd0a5150389f8b86

@@ -1,0 +1,38 @@
+id: pp_109_2015
+akn: /akn/id/act/pp/2015/109
+type: pp
+number: '109'
+year: 2015
+title: Peraturan Pemerintah Nomor 109 Tahun 2015 tentang Pembiayaan Hortikultura
+tentang: PEMBIAYAAN HORTIKULTURA
+short_name: null
+status: null
+tanggal_penetapan: '2015-12-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_109_2015_2015-12-23
+  kind: asli
+  source: dataset
+  date: '2015-12-23'
+  date_basis: tanggal_penetapan
+  text: pp_109_2015_2015-12-23.txt
+  pasal_count: 35
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:762a74fe1a08ab5bf78f8e91c7729d3495d6292f89228fce6102154ac2eb0c37
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:762a74fe1a08ab5bf78f8e91c7729d3495d6292f89228fce6102154ac2eb0c37
+  source_title: PP_Nomor_109_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 54
+  status: none_known

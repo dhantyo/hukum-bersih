@@ -1,0 +1,39 @@
+id: pp_14_2015
+akn: /akn/id/act/pp/2015/14
+type: pp
+number: '14'
+year: 2015
+title: Peraturan Pemerintah Nomor 14 Tahun 2015 tentang Rencana Induk Pembangunan
+  Industri Nasional Tahun 2015-2035
+tentang: RENCANA INDUK PEMBANGUNAN INDUSTRI NASIONAL TAHUN 2015-2035
+short_name: null
+status: null
+tanggal_penetapan: '2015-03-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_14_2015_2015-03-06
+  kind: asli
+  source: dataset
+  date: '2015-03-06'
+  date_basis: tanggal_penetapan
+  text: pp_14_2015_2015-03-06.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e049951c269d2d267c702b1bea1cfe347ec74e3c971e9b9118369f6f7f605f96
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e049951c269d2d267c702b1bea1cfe347ec74e3c971e9b9118369f6f7f605f96
+  source_title: PP_Nomor_14_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 186
+  status: none_known

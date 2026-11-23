@@ -1,0 +1,40 @@
+id: pp_5_1985
+akn: /akn/id/act/pp/1985/5
+type: pp
+number: '5'
+year: 1985
+title: Peraturan Pemerintah Nomor 5 Tahun 1985
+tentang: null
+short_name: null
+status: dicabut
+tanggal_penetapan: '1985-02-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_5_1985_1985-02-05
+  kind: asli
+  source: dataset
+  date: '1985-02-05'
+  date_basis: tanggal_penetapan
+  text: pp_5_1985_1985-02-05.txt
+  pasal_count: 59
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:211a418139068de35960f1f9c38a9d4d5f3bb8f01309978d6370d47b7fa17645
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:211a418139068de35960f1f9c38a9d4d5f3bb8f01309978d6370d47b7fa17645
+  source_title: PP_NO_5_TH_1985
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 73
+  status: revoked
+  revoked_by:
+  - sha256:c9824dd52ace46fcc93f260b40c1d4f3a0a11271fdf70c01122376a8b66fc80b

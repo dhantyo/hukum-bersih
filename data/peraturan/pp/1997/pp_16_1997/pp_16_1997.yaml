@@ -1,0 +1,42 @@
+id: pp_16_1997
+akn: /akn/id/act/pp/1997/16
+type: pp
+number: '16'
+year: 1997
+title: Peraturan Pemerintah Nomor 16 Tahun 1997 tentang Waralaba
+tentang: WARALABA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1997-06-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_16_1997_1997-06-18
+  kind: asli
+  source: dataset
+  date: '1997-06-18'
+  date_basis: tanggal_penetapan
+  text: pp_16_1997_1997-06-18.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:eb0fbdf33ee195ab776e2e94ba45f743c49361349e355fd4f341fc39fb029440
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:eb0fbdf33ee195ab776e2e94ba45f743c49361349e355fd4f341fc39fb029440
+  source_title: PP_No._16_Th_1997
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 25
+  status: revoked
+  revoked_by:
+  - sha256:98ab7a8ab404beef461e322398dad6c068890779c8b429f36d31d3b706fb2d14
+  amended_by:
+  - sha256:d2bc5e26b3361bb931b1a490f3e3a1a864a0c4083cbd18d66c27b3837d817685

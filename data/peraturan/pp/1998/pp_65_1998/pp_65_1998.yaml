@@ -1,0 +1,43 @@
+id: pp_65_1998
+akn: /akn/id/act/pp/1998/65
+type: pp
+number: '65'
+year: 1998
+title: Peraturan Pemerintah Nomor 65 Tahun 1998 tentang Pemindahan Ibukota Kabupaten
+  Daerah Tingkat Ii Ngada Dari Kota Bajawa Kecamatan Ngadabawa Ke Kota Mbay Kecamatan
+  Aesesa
+tentang: PEMINDAHAN IBUKOTA KABUPATEN DAERAH TINGKAT II NGADA DARI KOTA BAJAWA KECAMATAN
+  NGADABAWA KE KOTA MBAY KECAMATAN AESESA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-07-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_65_1998_1998-07-27
+  kind: asli
+  source: dataset
+  date: '1998-07-27'
+  date_basis: tanggal_penetapan
+  text: pp_65_1998_1998-07-27.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:96ba83224cfd1e342bb2edbcf0a45d570e2b66a700246cf35b94d4a9156f59eb
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:96ba83224cfd1e342bb2edbcf0a45d570e2b66a700246cf35b94d4a9156f59eb
+  source_title: PP_No._65_Tahun_1998
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:609fdff2a2cc0f1b740a394d75ef824b6fc12502fef3b49a85b188e9054756eb

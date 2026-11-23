@@ -1,0 +1,41 @@
+id: pp_25_2005
+akn: /akn/id/act/pp/2005/25
+type: pp
+number: '25'
+year: 2005
+title: Peraturan Pemerintah Nomor 25 Tahun 2005 tentang Pemberian Gaji/Pensiun/Tunjangan
+  Bulan Ketiga Belas Dalam Tahun Anggaran 2005 Kepada Pegawai Negeri, Pejabat Negara,
+  Dan Penerima Pensiun/Tunjangan
+tentang: PEMBERIAN GAJI/PENSIUN/TUNJANGAN BULAN KETIGA BELAS DALAM TAHUN ANGGARAN
+  2005 KEPADA PEGAWAI NEGERI, PEJABAT NEGARA, DAN PENERIMA PENSIUN/TUNJANGAN
+short_name: null
+status: null
+tanggal_penetapan: '2005-06-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_25_2005_2005-06-24
+  kind: asli
+  source: dataset
+  date: '2005-06-24'
+  date_basis: tanggal_penetapan
+  text: pp_25_2005_2005-06-24.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ecd4d3c8e8f67646f7882fa23e8f819f3a0511e84ab859ff4c863d77aa5b4b4f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ecd4d3c8e8f67646f7882fa23e8f819f3a0511e84ab859ff4c863d77aa5b4b4f
+  source_title: PP_NO_25_TH_2005
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 21
+  status: none_known

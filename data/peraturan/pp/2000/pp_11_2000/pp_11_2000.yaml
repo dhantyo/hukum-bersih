@@ -1,0 +1,43 @@
+id: pp_11_2000
+akn: /akn/id/act/pp/2000/11
+type: pp
+number: '11'
+year: 2000
+title: Peraturan Pemerintah Nomor 11 Tahun 2000 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Kertas Leces
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT KERTAS LECES
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-02-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_11_2000_2000-02-21
+  kind: asli
+  source: dataset
+  date: '2000-02-21'
+  date_basis: tanggal_penetapan
+  text: pp_11_2000_2000-02-21.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0857e290c77f9ec47d5fb1ec5fc538d025421242fed3c74238a518c42c723658
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0857e290c77f9ec47d5fb1ec5fc538d025421242fed3c74238a518c42c723658
+  source_title: PP_No.11_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: revoked
+  revoked_by:
+  - sha256:39066be3700e7aa675cec9d7e27c921f59327970d256660d728fdbc27067f9c6

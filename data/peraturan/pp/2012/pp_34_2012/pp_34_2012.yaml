@@ -1,0 +1,41 @@
+id: pp_34_2012
+akn: /akn/id/act/pp/2012/34
+type: pp
+number: '34'
+year: 2012
+title: Peraturan Pemerintah Nomor 34 Tahun 2012 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Pelabuhan Indonesia I
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT PELABUHAN INDONESIA I
+short_name: null
+status: null
+tanggal_penetapan: '2012-03-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_34_2012_2012-03-01
+  kind: asli
+  source: dataset
+  date: '2012-03-01'
+  date_basis: tanggal_penetapan
+  text: pp_34_2012_2012-03-01.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:16f3c35234298578901f1879e86cccd277a10c460d46d00de1ad34820ea4fea9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:16f3c35234298578901f1879e86cccd277a10c460d46d00de1ad34820ea4fea9
+  source_title: PP_Nomor_34_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

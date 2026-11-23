@@ -1,0 +1,40 @@
+id: pp_69_1992
+akn: /akn/id/act/pp/1992/69
+type: pp
+number: '69'
+year: 1992
+title: Peraturan Pemerintah Nomor 69 Tahun 1992 tentang Perubahan Batas Wilayah Kotamadya
+  Daerah Tingkat Ii Salatiga Dan Kabupaten Daerah Tingkat Ii Semarang
+tentang: PERUBAHAN BATAS WILAYAH KOTAMADYA DAERAH TINGKAT II SALATIGA DAN KABUPATEN
+  DAERAH TINGKAT II SEMARANG
+short_name: null
+status: null
+tanggal_penetapan: '1992-10-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_69_1992_1992-10-12
+  kind: asli
+  source: dataset
+  date: '1992-10-12'
+  date_basis: tanggal_penetapan
+  text: pp_69_1992_1992-10-12.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8d2b855c90eeebe916001df5dca4691f8e075a6cb4836d37a8b61c3a06443e95
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8d2b855c90eeebe916001df5dca4691f8e075a6cb4836d37a8b61c3a06443e95
+  source_title: PP_NO_69_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 20
+  status: none_known

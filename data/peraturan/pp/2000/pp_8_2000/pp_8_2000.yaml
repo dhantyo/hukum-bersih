@@ -1,0 +1,46 @@
+id: pp_8_2000
+akn: /akn/id/act/pp/2000/8
+type: pp
+number: '8'
+year: 2000
+title: Peraturan Pemerintah Nomor 8 Tahun 2000 tentang Peraturan Gaji Hakim Peradilan
+  Umum, Peradilan Tata Usaha Negara Dan Peradilan Agama
+tentang: PERATURAN GAJI HAKIM PERADILAN UMUM, PERADILAN TATA USAHA NEGARA DAN PERADILAN
+  AGAMA
+short_name: null
+status: diubah
+tanggal_penetapan: '2000-02-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_8_2000_2000-02-21
+  kind: asli
+  source: dataset
+  date: '2000-02-21'
+  date_basis: tanggal_penetapan
+  text: pp_8_2000_2000-02-21.txt
+  pasal_count: 16
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:724903891103f3e4cd35fae23aeb1c3008ba90ffcc18b9b392717be613decca4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:724903891103f3e4cd35fae23aeb1c3008ba90ffcc18b9b392717be613decca4
+  source_title: PP_No.8_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 20
+  status: amended
+  amended_by:
+  - sha256:075b022a56919480e8db1ce74c5c0862237cfbadfa394128ac41efa859ac8840
+  - sha256:2f47b7b2471e94d6337fbb4f07b78f06e95e9902e50e64e4b468876caa1bf135
+  - sha256:61b4692d0a3efbd7e5e85c0a98dedb85d47f304e3d86688bad6baf8409848442
+  - sha256:7e4919a743f5b7a608dde76987a5bf60369a253401c3bcea7af2177a2a0319cd
+  - sha256:c646ccfa003c1240e6bed48040a4dcf5e076b97c28dcf0aebd8d007d7fa64043

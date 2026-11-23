@@ -1,0 +1,41 @@
+id: pp_25_1948
+akn: /akn/id/act/pp/1948/25
+type: pp
+number: '25'
+year: 1948
+title: 'Peraturan Pemerintah Nomor 25 Tahun 1948 tentang Pinjaman Negara Dengan Mengeluarkan
+  Surat-Surat Tanda Hutang Negara Sebagai Berikut: Peraturan Surat Tanda Hutang Negara.
+  Pasal 1'
+tentang: 'PINJAMAN NEGARA DENGAN MENGELUARKAN SURAT-SURAT TANDA HUTANG NEGARA SEBAGAI
+  BERIKUT: PERATURAN SURAT TANDA HUTANG NEGARA. Pasal 1'
+short_name: null
+status: null
+tanggal_penetapan: '1948-09-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_25_1948_1948-09-21
+  kind: asli
+  source: dataset
+  date: '1948-09-21'
+  date_basis: tanggal_penetapan
+  text: pp_25_1948_1948-09-21.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2c74b30ec99d74553d2e5f7923b60d0e6692bb377f843d5cad3262d3b72a515c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2c74b30ec99d74553d2e5f7923b60d0e6692bb377f843d5cad3262d3b72a515c
+  source_title: PP_No_25_Tahun_1948
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: none_known

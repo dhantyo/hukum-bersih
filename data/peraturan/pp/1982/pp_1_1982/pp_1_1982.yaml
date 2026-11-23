@@ -1,0 +1,41 @@
+id: pp_1_1982
+akn: /akn/id/act/pp/1982/1
+type: pp
+number: '1'
+year: 1982
+title: Peraturan Pemerintah Nomor 1 Tahun 1982 tentang Pelaksanaan Ekspor, Impor,
+  Dan Lalu Lintas Devisa Presiden Republik Indonesia
+tentang: PELAKSANAAN EKSPOR, IMPOR, DAN LALU LINTAS DEVISA Presiden Republik Indonesia
+short_name: null
+status: diubah
+tanggal_penetapan: '1982-01-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_1_1982_1982-01-16
+  kind: asli
+  source: dataset
+  date: '1982-01-16'
+  date_basis: tanggal_penetapan
+  text: pp_1_1982_1982-01-16.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a4194f3fe5f3c6c581883c40631d6bb2584d3d9a820f1828a0acd0852ec66732
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a4194f3fe5f3c6c581883c40631d6bb2584d3d9a820f1828a0acd0852ec66732
+  source_title: PP_N0_1_TH_1982
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 16
+  status: amended
+  amended_by:
+  - sha256:132e2719b59d3c9ce99d61ffc47c5fbe73e191967ab4b5ce449e5ac832e745cc

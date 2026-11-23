@@ -1,0 +1,42 @@
+id: pp_73_2008
+akn: /akn/id/act/pp/2008/73
+type: pp
+number: '73'
+year: 2008
+title: Peraturan Pemerintah Nomor 73 Tahun 2008 tentang Jenis Dan Tarif Atas Jenis
+  Penerimaan Negara Bukan Pajak Yang Berlaku Pada Departemen Perdagangan
+tentang: JENIS DAN TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA
+  DEPARTEMEN PERDAGANGAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '2008-11-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_73_2008_2008-11-10
+  kind: asli
+  source: dataset
+  date: '2008-11-10'
+  date_basis: tanggal_penetapan
+  text: pp_73_2008_2008-11-10.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:59bf629122357eada792aa4b4d39b364400e440fe3150f0a1bd3d9be9e18d4d8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:59bf629122357eada792aa4b4d39b364400e440fe3150f0a1bd3d9be9e18d4d8
+  source_title: PP_73_Tahun_2008
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:639cf645e4b999d045010393c4b7f020cf6f4b1b05bb5e6eac8e75fd251901c0

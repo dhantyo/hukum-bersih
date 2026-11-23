@@ -1,0 +1,41 @@
+id: pp_58_2009
+akn: /akn/id/act/pp/2009/58
+type: pp
+number: '58'
+year: 2009
+title: Peraturan Pemerintah Nomor 58 Tahun 2009 tentang Persyaratan Dan Tata Cara
+  Pengangkatan Dan Pemberhentian Sekretaris Daerah Aceh Dan Sekretaris Daerah Kabupaten/Kota
+  Di Aceh
+tentang: PERSYARATAN DAN TATA CARA PENGANGKATAN DAN PEMBERHENTIAN SEKRETARIS DAERAH
+  ACEH DAN SEKRETARIS DAERAH KABUPATEN/KOTA DI ACEH
+short_name: null
+status: null
+tanggal_penetapan: '2009-09-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_58_2009_2009-09-23
+  kind: asli
+  source: dataset
+  date: '2009-09-23'
+  date_basis: tanggal_penetapan
+  text: pp_58_2009_2009-09-23.txt
+  pasal_count: 25
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:25e60493dc1543123662d394f9a891c52f6d6954020cee9903f564ed33f13b84
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:25e60493dc1543123662d394f9a891c52f6d6954020cee9903f564ed33f13b84
+  source_title: PP_No_58_2009
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 69
+  status: none_known

@@ -1,0 +1,41 @@
+id: pp_5_1990
+akn: /akn/id/act/pp/1990/5
+type: pp
+number: '5'
+year: 1990
+title: Peraturan Pemerintah Nomor 5 Tahun 1990 tentang Perusahaan Umum (Perum) Jasa
+  Tirta
+tentang: PERUSAHAAN UMUM (PERUM) JASA TIRTA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1990-02-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_5_1990_1990-02-12
+  kind: asli
+  source: dataset
+  date: '1990-02-12'
+  date_basis: tanggal_penetapan
+  text: pp_5_1990_1990-02-12.txt
+  pasal_count: 55
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5db43f0f0a982063569b507f181db9e542ae9d9e7c2e8b16f3ab663c801698a7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5db43f0f0a982063569b507f181db9e542ae9d9e7c2e8b16f3ab663c801698a7
+  source_title: PP_NO_5_TH_1990
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 72
+  status: revoked
+  revoked_by:
+  - sha256:eea4e27bbf92b8f6f767ebc027dce8eec904b094cb863012981ced53989c5fd0

@@ -1,0 +1,40 @@
+id: pp_35_1949
+akn: /akn/id/act/pp/1949/35
+type: pp
+number: '35'
+year: 1949
+title: Peraturan Pemerintah Nomor 35 Tahun 1949 tentang Pemberian Pensiun Kepada Janda
+  (Anak-Anaknya) Pegawai Negeri Yang Meninggal Dunia
+tentang: PEMBERIAN PENSIUN KEPADA JANDA (ANAK-ANAKNYA) PEGAWAI NEGERI YANG MENINGGAL
+  DUNIA
+short_name: null
+status: null
+tanggal_penetapan: '1949-12-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_35_1949_1949-12-25
+  kind: asli
+  source: dataset
+  date: '1949-12-25'
+  date_basis: tanggal_penetapan
+  text: pp_35_1949_1949-12-25.txt
+  pasal_count: 16
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6b4965fbe309639419c2e298df0e353ee53b62eb20588ba41e85dd2b21a4a8c0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6b4965fbe309639419c2e298df0e353ee53b62eb20588ba41e85dd2b21a4a8c0
+  source_title: PP_No_35_Tahun_1949
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 33
+  status: none_known

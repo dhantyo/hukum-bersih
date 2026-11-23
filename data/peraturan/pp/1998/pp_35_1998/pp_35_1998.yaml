@@ -1,0 +1,42 @@
+id: pp_35_1998
+akn: /akn/id/act/pp/1998/35
+type: pp
+number: '35'
+year: 1998
+title: Peraturan Pemerintah Nomor 35 Tahun 1998 tentang Penyertaan Modal Negara Republik
+  Indonesia Untuk Pendirian Perusahaan Perseroan (Persero) Di Bidang Industri
+tentang: PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA UNTUK PENDIRIAN PERUSAHAAN PERSEROAN
+  (PERSERO) DI BIDANG INDUSTRI
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-03-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_35_1998_1998-03-05
+  kind: asli
+  source: dataset
+  date: '1998-03-05'
+  date_basis: tanggal_penetapan
+  text: pp_35_1998_1998-03-05.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:033660eadfd7671027ad57a76b34c7bf88f1aff551e6174ff0bdbb493cdd2516
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:033660eadfd7671027ad57a76b34c7bf88f1aff551e6174ff0bdbb493cdd2516
+  source_title: PP_No._35_Tahun_1998
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 11
+  status: revoked
+  revoked_by:
+  - sha256:773fb6a1eab25e96290a74ae318dc9ebaf8c021e81257e4396b0335f9000a868

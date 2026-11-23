@@ -1,0 +1,41 @@
+id: pp_35_1995
+akn: /akn/id/act/pp/1995/35
+type: pp
+number: '35'
+year: 1995
+title: Peraturan Pemerintah Nomor 35 Tahun 1995 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt.
+  Indah Karya
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT. INDAH KARYA
+short_name: null
+status: null
+tanggal_penetapan: '1995-09-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_35_1995_1995-09-21
+  kind: asli
+  source: dataset
+  date: '1995-09-21'
+  date_basis: tanggal_penetapan
+  text: pp_35_1995_1995-09-21.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0e913892f4ac23af0ba54628cb5bf1dd054dab474d7d6a09bd52c8d63bb37c3d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0e913892f4ac23af0ba54628cb5bf1dd054dab474d7d6a09bd52c8d63bb37c3d
+  source_title: PP_No._35_Th_1995
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

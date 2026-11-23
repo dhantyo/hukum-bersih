@@ -1,0 +1,39 @@
+id: pp_49_1948
+akn: /akn/id/act/pp/1948/49
+type: pp
+number: '49'
+year: 1948
+title: Peraturan Pemerintah Nomor 49 Tahun 1948 tentang Mengadakan Perubahan Dalam
+  Peraturan Pemerintah Tahun 1948 Nomor 37
+tentang: MENGADAKAN PERUBAHAN DALAM PERATURAN PEMERINTAH TAHUN 1948 NOMOR 37
+short_name: null
+status: null
+tanggal_penetapan: '1948-10-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_49_1948_1948-10-01
+  kind: asli
+  source: dataset
+  date: '1948-10-01'
+  date_basis: tanggal_penetapan
+  text: pp_49_1948_1948-10-01.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5c3457585f5271058e3b1a5990e0a64d28fd04bb90cb08aea910dbb916e90d3b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5c3457585f5271058e3b1a5990e0a64d28fd04bb90cb08aea910dbb916e90d3b
+  source_title: PP_No._49_Tahun_1948
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

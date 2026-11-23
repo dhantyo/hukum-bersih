@@ -1,0 +1,41 @@
+id: pp_30_1992
+akn: /akn/id/act/pp/1992/30
+type: pp
+number: '30'
+year: 1992
+title: Peraturan Pemerintah Nomor 30 Tahun 1992 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt.
+  Brantas Abipraya
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT. BRANTAS ABIPRAYA
+short_name: null
+status: null
+tanggal_penetapan: '1992-06-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_30_1992_1992-06-29
+  kind: asli
+  source: dataset
+  date: '1992-06-29'
+  date_basis: tanggal_penetapan
+  text: pp_30_1992_1992-06-29.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:348c79886ce321e53bfb6939f5a8b4de644d2c170a4ded3ee0c7a903b6369e93
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:348c79886ce321e53bfb6939f5a8b4de644d2c170a4ded3ee0c7a903b6369e93
+  source_title: PP_NO_30_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

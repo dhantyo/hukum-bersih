@@ -1,0 +1,40 @@
+id: pp_68_1999
+akn: /akn/id/act/pp/1999/68
+type: pp
+number: '68'
+year: 1999
+title: Peraturan Pemerintah Nomor 68 Tahun 1999 tentang Tata Cara Pelaksanaan Peran
+  Serta Masyarakat Dalam Penyelenggaraan Negara Presiden Republik Indonesia
+tentang: TATA CARA PELAKSANAAN PERAN SERTA MASYARAKAT DALAM PENYELENGGARAAN NEGARA
+  PRESIDEN REPUBLIK INDONESIA
+short_name: null
+status: null
+tanggal_penetapan: '1999-11-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_68_1999_1999-11-20
+  kind: asli
+  source: dataset
+  date: '1999-11-20'
+  date_basis: tanggal_penetapan
+  text: pp_68_1999_1999-11-20.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:943f0f8ba112e9255a14852c17307d474db4eb28a6cc2f3bd74e4433dd2c120a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:943f0f8ba112e9255a14852c17307d474db4eb28a6cc2f3bd74e4433dd2c120a
+  source_title: PP_No._68_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 23
+  status: none_known

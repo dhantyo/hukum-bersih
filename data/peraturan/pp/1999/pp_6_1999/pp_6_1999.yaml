@@ -1,0 +1,30 @@
+id: pp_6_1999
+akn: /akn/id/act/pp/1999/6
+type: pp
+number: '6'
+year: 1999
+title: Peraturan Pemerintah Nomor 6 Tahun 1999 tentang Pengusahaan Hutan Dan Pemungutan
+  Hasil Hutan Pada Hutan Produksi
+tentang: PENGUSAHAAN HUTAN DAN PEMUNGUTAN HASIL HUTAN PADA HUTAN PRODUKSI
+short_name: null
+status: dicabut
+tanggal_penetapan: '1999-01-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:761ad1fc51278ca5736358345a1f89f5a45c31321abc0ef924b6fac06a7f48cb
+  source_title: PP_No._6_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 77
+  status: revoked
+  revoked_by:
+  - sha256:bc64de8656d90279684b3970cf3bb74b0f7fccae3ef85c7936749b479754498f
+parse_error: 'v13: rebuilt text has 19 pasal, the dataset lists 38'

@@ -1,0 +1,39 @@
+id: pp_17_1949
+akn: /akn/id/act/pp/1949/17
+type: pp
+number: '17'
+year: 1949
+title: Peraturan Pemerintah Nomor 17 Tahun 1949 tentang Mengadakan Perubahan Dan Tambahan
+  Dalam P.G.P. 1948
+tentang: MENGADAKAN PERUBAHAN DAN TAMBAHAN DALAM P.G.P. 1948
+short_name: null
+status: null
+tanggal_penetapan: '1949-07-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_17_1949_1949-07-01
+  kind: asli
+  source: dataset
+  date: '1949-07-01'
+  date_basis: tanggal_penetapan
+  text: pp_17_1949_1949-07-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b7af295df54d15918083d6388f2bffeebf7f79b535625560ec056ae95a6abe42
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b7af295df54d15918083d6388f2bffeebf7f79b535625560ec056ae95a6abe42
+  source_title: PP_No_17_Tahun_1949
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 5
+  status: none_known

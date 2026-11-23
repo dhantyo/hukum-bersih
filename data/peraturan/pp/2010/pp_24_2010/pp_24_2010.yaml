@@ -1,0 +1,41 @@
+id: pp_24_2010
+akn: /akn/id/act/pp/2010/24
+type: pp
+number: '24'
+year: 2010
+title: Peraturan Pemerintah Nomor 24 Tahun 2010 tentang Penggunaan Kawasan Hutan
+tentang: PENGGUNAAN KAWASAN HUTAN
+short_name: null
+status: diubah
+tanggal_penetapan: '2010-02-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_24_2010_2010-02-01
+  kind: asli
+  source: dataset
+  date: '2010-02-01'
+  date_basis: tanggal_penetapan
+  text: pp_24_2010_2010-02-01.txt
+  pasal_count: 27
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4f561b1d8cc45836779f2e849cb23484ca9594331539583977daa31757bf216c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4f561b1d8cc45836779f2e849cb23484ca9594331539583977daa31757bf216c
+  source_title: PP_24_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 38
+  status: amended
+  amended_by:
+  - sha256:31d96f993e2422da90ce5519b1903d35a0f97b97094c980a6b324ea8f18b3dc3
+  - sha256:ad9a7df716264432f21c9ef6c5edc9c31bdf5387f9608681d5a731a182e92bac

@@ -1,0 +1,30 @@
+id: pp_67_2014
+akn: /akn/id/act/pp/2014/67
+type: pp
+number: '67'
+year: 2014
+title: Peraturan Pemerintah Nomor 67 Tahun 2014 tentang Pelaksanaan Undang-Undang
+  Nomor 15 Tahun 2012 Tentang Veteran Republik Indonesia
+tentang: PELAKSANAAN UNDANG-UNDANG NOMOR 15 TAHUN 2012 TENTANG VETERAN REPUBLIK INDONESIA
+short_name: null
+status: diubah
+tanggal_penetapan: '2012-10-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f4f434a36eeb12b60bec95fdc75c2fdffe5fcc667e9217172b7d744e8f9318e1
+  source_title: PP_Nomor_67_Tahun_2014
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 58
+  status: amended
+  amended_by:
+  - sha256:fa6d38f640aa181b14a86745fb44e534db4c1652fa73ea104743c2ffc3bd5e5f
+parse_error: 'v13: rebuilt text has 25 pasal, the dataset lists 34'

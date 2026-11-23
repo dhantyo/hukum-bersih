@@ -1,0 +1,42 @@
+id: pp_8_1990
+akn: /akn/id/act/pp/1990/8
+type: pp
+number: '8'
+year: 1990
+title: Peraturan Pemerintah Nomor 8 Tahun 1990 tentang Jalan Tol
+tentang: JALAN TOL
+short_name: null
+status: dicabut
+tanggal_penetapan: '1990-03-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_8_1990_1990-03-24
+  kind: asli
+  source: dataset
+  date: '1990-03-24'
+  date_basis: tanggal_penetapan
+  text: pp_8_1990_1990-03-24.txt
+  pasal_count: 45
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7227305de42a29a7991ce1383a053bedcbbd3b121a59ed800bd0cbaa06e88f0a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7227305de42a29a7991ce1383a053bedcbbd3b121a59ed800bd0cbaa06e88f0a
+  source_title: PP_NO_8_TH_1990
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 91
+  status: revoked
+  revoked_by:
+  - sha256:01028a4d342349248faec3886f7bb01e72aa732ef6e8929617cba27efa9301ab
+  amended_by:
+  - sha256:baa5a8d9293303fe212081b14a0d71f86610155d967417baa1c6650cca21f559

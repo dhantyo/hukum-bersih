@@ -1,0 +1,38 @@
+id: pp_12_1983
+akn: /akn/id/act/pp/1983/12
+type: pp
+number: '12'
+year: 1983
+title: Peraturan Pemerintah Nomor 12 Tahun 1983
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '1983-04-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_12_1983_1983-04-26
+  kind: asli
+  source: dataset
+  date: '1983-04-26'
+  date_basis: tanggal_penetapan
+  text: pp_12_1983_1983-04-26.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3605141000a23edec97cd6d2cf672968e9b8a4c59dc0e9477b677d894bc60b42
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3605141000a23edec97cd6d2cf672968e9b8a4c59dc0e9477b677d894bc60b42
+  source_title: PP_NO._12_TH_1983
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 18
+  status: none_known

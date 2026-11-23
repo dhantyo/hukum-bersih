@@ -1,0 +1,40 @@
+id: pp_19_1989
+akn: /akn/id/act/pp/1989/19
+type: pp
+number: '19'
+year: 1989
+title: Peraturan Pemerintah Nomor 19 Tahun 1989 tentang Penambahan Penyertaan Modal
+  Negera Republik Indonesia Ke Dalam Modal Perusahaan Umum (Perum) Sang Hyang Seri
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGERA REPUBLIK INDONESIA KE DALAM MODAL PERUSAHAAN
+  UMUM (PERUM) SANG HYANG SERI
+short_name: null
+status: null
+tanggal_penetapan: '1989-11-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_19_1989_1989-11-09
+  kind: asli
+  source: dataset
+  date: '1989-11-09'
+  date_basis: tanggal_penetapan
+  text: pp_19_1989_1989-11-09.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:58d5b42d00e69cf61cee6ddc222ac77dbd13287cabf3957a8d9f82561350ea91
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:58d5b42d00e69cf61cee6ddc222ac77dbd13287cabf3957a8d9f82561350ea91
+  source_title: PP_NO_19_TH_1989
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 7
+  status: none_known

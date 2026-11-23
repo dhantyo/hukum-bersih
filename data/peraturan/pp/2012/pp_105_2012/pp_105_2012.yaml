@@ -1,0 +1,40 @@
+id: pp_105_2012
+akn: /akn/id/act/pp/2012/105
+type: pp
+number: '105'
+year: 2012
+title: Peraturan Pemerintah Nomor 105 Tahun 2012 tentang Pengelolaan Keuangan Pada
+  Badan Pengusahaan Kawasan Perdagangan Bebas Dan Pelabuhan Bebas Sabang
+tentang: PENGELOLAAN KEUANGAN PADA BADAN PENGUSAHAAN KAWASAN PERDAGANGAN BEBAS DAN
+  PELABUHAN BEBAS SABANG
+short_name: null
+status: null
+tanggal_penetapan: '2012-12-14'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_105_2012_2012-12-14
+  kind: asli
+  source: dataset
+  date: '2012-12-14'
+  date_basis: tanggal_penetapan
+  text: pp_105_2012_2012-12-14.txt
+  pasal_count: 20
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:620d5e32ab471be216dc9ea6528a0639c3fb187f0f92d2f071312ec43d99efbd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:620d5e32ab471be216dc9ea6528a0639c3fb187f0f92d2f071312ec43d99efbd
+  source_title: PP_Nomor_105_Tahun_2012
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 38
+  status: none_known

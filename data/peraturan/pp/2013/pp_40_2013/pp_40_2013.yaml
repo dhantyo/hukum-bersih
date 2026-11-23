@@ -1,0 +1,41 @@
+id: pp_40_2013
+akn: /akn/id/act/pp/2013/40
+type: pp
+number: '40'
+year: 2013
+title: Peraturan Pemerintah Nomor 40 Tahun 2013 tentang Pelaksanaan Undang-Undang
+  Nomor 35 Tahun 2009 Tentang Narkotika
+tentang: PELAKSANAAN UNDANG-UNDANG NOMOR 35 TAHUN 2009 TENTANG NARKOTIKA
+short_name: null
+status: diubah
+tanggal_penetapan: '2013-05-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_40_2013_2013-05-23
+  kind: asli
+  source: dataset
+  date: '2013-05-23'
+  date_basis: tanggal_penetapan
+  text: pp_40_2013_2013-05-23.txt
+  pasal_count: 63
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2645c73192551a31234b0361516054c5ba6f6a120e3bafea56e9204393b77d7d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2645c73192551a31234b0361516054c5ba6f6a120e3bafea56e9204393b77d7d
+  source_title: PP_Nomor_40_Tahun_2013
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 83
+  status: amended
+  amended_by:
+  - sha256:71cdc19bc50a4dacaedcee5d9b49905e479a4d8a9e18226f0376e86446ae2bc5

@@ -1,0 +1,30 @@
+id: pp_133_2000
+akn: /akn/id/act/pp/2000/133
+type: pp
+number: '133'
+year: 2000
+title: Peraturan Pemerintah Nomor 133 Tahun 2000 tentang Perusahaan Umum (Perum) Percetakan
+  Negara Republik Indonesia
+tentang: PERUSAHAAN UMUM (PERUM) PERCETAKAN NEGARA REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2000-12-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6032f6822fe96b89ed49ea0b77d5b6fb0f04fa5be388bc51d0b54693aa104abb
+  source_title: PP_No.133_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 80
+  status: revoked
+  revoked_by:
+  - sha256:cd8044b817dd69932d210eb281943231a14749d507c246676b1fbad8b13089cc
+parse_error: 'v13: rebuilt text has 26 pasal, the dataset lists 67'

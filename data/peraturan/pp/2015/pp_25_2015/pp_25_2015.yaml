@@ -1,0 +1,41 @@
+id: pp_25_2015
+akn: /akn/id/act/pp/2015/25
+type: pp
+number: '25'
+year: 2015
+title: Peraturan Pemerintah Nomor 25 Tahun 2015 tentang Perubahan Struktur Kepemilikan
+  Saham Negara Melalui Penerbitan Saham Baru Pada Perusahaan Perseroan (Persero) Pt
+  Kawasan Berikat Nusantara
+tentang: PERUBAHAN STRUKTUR KEPEMILIKAN SAHAM NEGARA MELALUI PENERBITAN SAHAM BARU
+  PADA PERUSAHAAN PERSEROAN (PERSERO) PT KAWASAN BERIKAT NUSANTARA
+short_name: null
+status: null
+tanggal_penetapan: '2015-05-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_25_2015_2015-05-20
+  kind: asli
+  source: dataset
+  date: '2015-05-20'
+  date_basis: tanggal_penetapan
+  text: pp_25_2015_2015-05-20.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a975c3dc603df9d59c2a9e0d834e47691aa667f83fd666e0604d45a0b86fb2b8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a975c3dc603df9d59c2a9e0d834e47691aa667f83fd666e0604d45a0b86fb2b8
+  source_title: PP_Nomor_25_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

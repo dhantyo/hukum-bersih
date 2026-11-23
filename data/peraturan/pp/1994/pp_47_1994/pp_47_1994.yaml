@@ -1,0 +1,44 @@
+id: pp_47_1994
+akn: /akn/id/act/pp/1994/47
+type: pp
+number: '47'
+year: 1994
+title: Peraturan Pemerintah Nomor 47 Tahun 1994 tentang Penghitungan Penghasilan Kena
+  Pajak Dan Pelunasan Pajak Penghasilan Dalam Tahun Berjalan
+tentang: PENGHITUNGAN PENGHASILAN KENA PAJAK DAN PELUNASAN PAJAK PENGHASILAN DALAM
+  TAHUN BERJALAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1995-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_47_1994_1995-01-01
+  kind: asli
+  source: dataset
+  date: '1995-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_47_1994_1995-01-01.txt
+  pasal_count: 17
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5cbda0cc51503c55977022bcd097043a4ee0721cb4ede2b53625903dafa4787b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5cbda0cc51503c55977022bcd097043a4ee0721cb4ede2b53625903dafa4787b
+  source_title: PP_No._47_Th_1994
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 37
+  status: revoked
+  revoked_by:
+  - sha256:f18e1684b7dc6ba4c8f77a6ee9a2902185be5aab8b5889fe6e1445501c8b894d
+  amended_by:
+  - sha256:8db658f5b1ef3faeba3d76302dfd4817faa9bb60d4a4bff57080d6688b3d5e40

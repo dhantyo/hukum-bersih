@@ -1,0 +1,41 @@
+id: pp_42_1999
+akn: /akn/id/act/pp/1999/42
+type: pp
+number: '42'
+year: 1999
+title: Peraturan Pemerintah Nomor 42 Tahun 1999 tentang Pembentukan Dan Penataan Beberapa
+  Kecamatan Di Wilayah Kabupaten Daerah Tingkat Ii Maluku Utara Dalam Wilayah Propinsi
+  Daerah Tingkat I Maluku
+tentang: PEMBENTUKAN DAN PENATAAN BEBERAPA KECAMATAN DI WILAYAH KABUPATEN DAERAH TINGKAT
+  II MALUKU UTARA DALAM WILAYAH PROPINSI DAERAH TINGKAT I MALUKU
+short_name: null
+status: null
+tanggal_penetapan: '1999-05-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_42_1999_1999-05-26
+  kind: asli
+  source: dataset
+  date: '1999-05-26'
+  date_basis: tanggal_penetapan
+  text: pp_42_1999_1999-05-26.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4111224f694227e8f3fad2ef2d5871e1384fc237b15af4e9959b2f1304e30847
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4111224f694227e8f3fad2ef2d5871e1384fc237b15af4e9959b2f1304e30847
+  source_title: PP_No._42_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: unusable
+  chunks: 13
+  status: none_known

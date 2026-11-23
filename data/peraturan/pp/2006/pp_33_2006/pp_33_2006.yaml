@@ -1,0 +1,40 @@
+id: pp_33_2006
+akn: /akn/id/act/pp/2006/33
+type: pp
+number: '33'
+year: 2006
+title: Peraturan Pemerintah Nomor 33 Tahun 2006 tentang Perubahan Atas Peraturan Pemerintah
+  Nomor 14 Tahun 2005 Tentang Tata Cara Penghapusan Piutang Negara/Daerah
+tentang: PERUBAHAN ATAS PERATURAN PEMERINTAH NOMOR 14 TAHUN 2005 TENTANG TATA CARA
+  PENGHAPUSAN PIUTANG NEGARA/DAERAH
+short_name: null
+status: null
+tanggal_penetapan: '2006-10-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_33_2006_2006-10-06
+  kind: asli
+  source: dataset
+  date: '2006-10-06'
+  date_basis: tanggal_penetapan
+  text: pp_33_2006_2006-10-06.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0499d4960a9fbea7ab6d8bfe4df47e7d1a9253c6a69d53c6491b1de82db24cf7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0499d4960a9fbea7ab6d8bfe4df47e7d1a9253c6a69d53c6491b1de82db24cf7
+  source_title: PP_no_33_th_2006
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 8
+  status: none_known

@@ -1,0 +1,41 @@
+id: pp_47_2006
+akn: /akn/id/act/pp/2006/47
+type: pp
+number: '47'
+year: 2006
+title: Peraturan Pemerintah Nomor 47 Tahun 2006 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Kertas Leces
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT KERTAS LECES
+short_name: null
+status: null
+tanggal_penetapan: '2006-12-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_47_2006_2006-12-28
+  kind: asli
+  source: dataset
+  date: '2006-12-28'
+  date_basis: tanggal_penetapan
+  text: pp_47_2006_2006-12-28.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a9532e1317e6534de11ff00c4d99dc4b63d2702a55a7f992e3c6162d12fa78e4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a9532e1317e6534de11ff00c4d99dc4b63d2702a55a7f992e3c6162d12fa78e4
+  source_title: PP_no_47_th_2006
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

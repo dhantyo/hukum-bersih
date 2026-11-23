@@ -1,0 +1,38 @@
+id: pp_1_2008
+akn: /akn/id/act/pp/2008/1
+type: pp
+number: '1'
+year: 2008
+title: Peraturan Pemerintah Nomor 1 Tahun 2008 tentang Investasi Pemerintah
+tentang: INVESTASI PEMERINTAH
+short_name: null
+status: null
+tanggal_penetapan: '2008-02-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_1_2008_2008-02-04
+  kind: asli
+  source: dataset
+  date: '2008-02-04'
+  date_basis: tanggal_penetapan
+  text: pp_1_2008_2008-02-04.txt
+  pasal_count: 34
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6a15679ef76f8a228189d42763d35cc32420a401fb0cfde0692cf40bfd70dd43
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6a15679ef76f8a228189d42763d35cc32420a401fb0cfde0692cf40bfd70dd43
+  source_title: PP_NO_1_TH_2008
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 51
+  status: none_known

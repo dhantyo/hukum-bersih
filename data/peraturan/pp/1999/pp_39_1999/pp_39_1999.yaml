@@ -1,0 +1,41 @@
+id: pp_39_1999
+akn: /akn/id/act/pp/1999/39
+type: pp
+number: '39'
+year: 1999
+title: Peraturan Pemerintah Nomor 39 Tahun 1999 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero) Pt
+  Pakarya Industri
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN PERSEROAN (PERSERO) PT PAKARYA INDUSTRI
+short_name: null
+status: null
+tanggal_penetapan: '1999-05-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_39_1999_1999-05-26
+  kind: asli
+  source: dataset
+  date: '1999-05-26'
+  date_basis: tanggal_penetapan
+  text: pp_39_1999_1999-05-26.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bd8fab4871291e15b6db31bd2eb5f3df9747f7c5a015d48220c964d8a1fa93f2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bd8fab4871291e15b6db31bd2eb5f3df9747f7c5a015d48220c964d8a1fa93f2
+  source_title: PP_No._39_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 9
+  status: none_known

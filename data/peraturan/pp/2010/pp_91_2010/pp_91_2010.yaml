@@ -1,0 +1,42 @@
+id: pp_91_2010
+akn: /akn/id/act/pp/2010/91
+type: pp
+number: '91'
+year: 2010
+title: Peraturan Pemerintah Nomor 91 Tahun 2010 tentang Jenis Pajak Daerah Yang Dipungut
+  Berdasarkan Penetapan Kepala Daerah Atau Dibayar Sendiri Oleh Wajib Pajak
+tentang: JENIS PAJAK DAERAH YANG DIPUNGUT BERDASARKAN PENETAPAN KEPALA DAERAH ATAU
+  DIBAYAR SENDIRI OLEH WAJIB PAJAK
+short_name: null
+status: diubah
+tanggal_penetapan: '2010-12-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_91_2010_2010-12-27
+  kind: asli
+  source: dataset
+  date: '2010-12-27'
+  date_basis: tanggal_penetapan
+  text: pp_91_2010_2010-12-27.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:6c7a32b443c5616e712a65b0ad3eabac09e0010f643eb48f4e25d9736d7119cf
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:6c7a32b443c5616e712a65b0ad3eabac09e0010f643eb48f4e25d9736d7119cf
+  source_title: PP_91_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 16
+  status: amended
+  amended_by:
+  - sha256:71cdc19bc50a4dacaedcee5d9b49905e479a4d8a9e18226f0376e86446ae2bc5

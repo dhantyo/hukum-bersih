@@ -1,0 +1,39 @@
+id: pp_150_2000
+akn: /akn/id/act/pp/2000/150
+type: pp
+number: '150'
+year: 2000
+title: Peraturan Pemerintah Nomor 150 Tahun 2000 tentang Pengendalian Kerusakan Tanah
+  Untuk Produksi Biomassa
+tentang: PENGENDALIAN KERUSAKAN TANAH UNTUK PRODUKSI BIOMASSA
+short_name: null
+status: null
+tanggal_penetapan: '2000-12-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_150_2000_2000-12-23
+  kind: asli
+  source: dataset
+  date: '2000-12-23'
+  date_basis: tanggal_penetapan
+  text: pp_150_2000_2000-12-23.txt
+  pasal_count: 25
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4273bac61f44465adab0900319fac8554953c63b2cafd359eb75dda5b92e6370
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4273bac61f44465adab0900319fac8554953c63b2cafd359eb75dda5b92e6370
+  source_title: PP_No.150_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 50
+  status: none_known

@@ -1,0 +1,51 @@
+id: pp_98_1999
+akn: /akn/id/act/pp/1999/98
+type: pp
+number: '98'
+year: 1999
+title: Peraturan Pemerintah Nomor 98 Tahun 1999 tentang Pengalihan Kedudukan, Tugas,
+  Dan Kewenangan Menteri Keuangan Selaku Rapat Umum Pemegang Saham (Rups) Atau Pemegang
+  Saham Pada Perusahaan Perseroan (Persero) Dan Perseroan Terbatas Yang Sebagian Sahamnya
+  Dimiliki Oleh Negara Republik Indonesia Kepada Menteri Negara Penanaman Modal Dan
+  Pembinaan Badan Usaha Milik Negara
+tentang: PENGALIHAN KEDUDUKAN, TUGAS, DAN KEWENANGAN MENTERI KEUANGAN SELAKU RAPAT
+  UMUM PEMEGANG SAHAM (RUPS) ATAU PEMEGANG SAHAM PADA PERUSAHAAN PERSEROAN (PERSERO)
+  DAN PERSEROAN TERBATAS YANG SEBAGIAN SAHAMNYA DIMILIKI OLEH NEGARA REPUBLIK INDONESIA
+  KEPADA MENTERI NEGARA PENANAMAN MODAL DAN PEMBINAAN BADAN USAHA MILIK NEGARA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1999-12-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_98_1999_1999-12-27
+  kind: asli
+  source: dataset
+  date: '1999-12-27'
+  date_basis: tanggal_penetapan
+  text: pp_98_1999_1999-12-27.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f64c9dc5b705d5c7b124c8ab0249f1050418f1c5906d8ab462d774afc8ec62f2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f64c9dc5b705d5c7b124c8ab0249f1050418f1c5906d8ab462d774afc8ec62f2
+  source_title: PP_No._98_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 15
+  status: revoked
+  revoked_by:
+  - sha256:65fe469ef066f2161e0a119b03472a9f4cf51c796924e36e1d9feed91a5e43db
+  - sha256:f5d1949f3892dc23395d6dc86372167f646049d1666a4a3c235167f3bddc810a
+  amended_by:
+  - sha256:43d7acdc8c5756913d7c37833942245927d6d955b5b4c10e60c64abd39f01a07
+  - sha256:fea3e6f1c1f233778d21ef4713c98b7a606d0c1c99c44f3fe24047bb0210fe9f

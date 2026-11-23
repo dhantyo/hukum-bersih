@@ -1,0 +1,38 @@
+id: pp_20_1948
+akn: /akn/id/act/pp/1948/20
+type: pp
+number: '20'
+year: 1948
+title: Peraturan Pemerintah Nomor 20 Tahun 1948
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '1948-09-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_20_1948_1948-09-03
+  kind: asli
+  source: dataset
+  date: '1948-09-03'
+  date_basis: tanggal_penetapan
+  text: pp_20_1948_1948-09-03.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0960026a5eb3155a4ac8ce912d9cdaf8b0a7d2b876bec21091897e0d3001937b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0960026a5eb3155a4ac8ce912d9cdaf8b0a7d2b876bec21091897e0d3001937b
+  source_title: PP_No._20_Tahun_1948
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 15
+  status: none_known

@@ -1,0 +1,38 @@
+id: pp_82_2000
+akn: /akn/id/act/pp/2000/82
+type: pp
+number: '82'
+year: 2000
+title: Peraturan Pemerintah Nomor 82 Tahun 2000 tentang Karantina Hewan
+tentang: KARANTINA HEWAN
+short_name: null
+status: null
+tanggal_penetapan: '2000-09-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_82_2000_2000-09-19
+  kind: asli
+  source: dataset
+  date: '2000-09-19'
+  date_basis: tanggal_penetapan
+  text: pp_82_2000_2000-09-19.txt
+  pasal_count: 96
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c2035a32b3a0f9aa0f9a3e3858cc3ae866f6381636f16d937d74568520a78e75
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c2035a32b3a0f9aa0f9a3e3858cc3ae866f6381636f16d937d74568520a78e75
+  source_title: PP_No.82_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 165
+  status: none_known

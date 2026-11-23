@@ -1,0 +1,40 @@
+id: pp_56_1999
+akn: /akn/id/act/pp/1999/56
+type: pp
+number: '56'
+year: 1999
+title: Peraturan Pemerintah Nomor 56 Tahun 1999 tentang Penjualan Saham Milik Negara
+  Republik Indonesia Pt Telekomunikasi Indonesia Tbk
+tentang: PENJUALAN SAHAM MILIK NEGARA REPUBLIK INDONESIA PT TELEKOMUNIKASI INDONESIA
+  Tbk
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_56_1999_1999
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: pp_56_1999_1999.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:69c432827046b4d533b5b06a5e547c8213646d30322fb0448f86f25b48b283a7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:69c432827046b4d533b5b06a5e547c8213646d30322fb0448f86f25b48b283a7
+  source_title: PP_No._56_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 8
+  status: none_known

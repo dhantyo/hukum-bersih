@@ -1,0 +1,40 @@
+id: pp_23_1999
+akn: /akn/id/act/pp/1999/23
+type: pp
+number: '23'
+year: 1999
+title: Peraturan Pemerintah Nomor 23 Tahun 1999 tentang Pelaksanaan Serah-Simpan Dan
+  Pengelolaan Karya Rekam Film Ceritera Atau Film Dokumenter
+tentang: PELAKSANAAN SERAH-SIMPAN DAN PENGELOLAAN KARYA REKAM FILM CERITERA ATAU FILM
+  DOKUMENTER
+short_name: null
+status: null
+tanggal_penetapan: '1999-04-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_23_1999_1999-04-12
+  kind: asli
+  source: dataset
+  date: '1999-04-12'
+  date_basis: tanggal_penetapan
+  text: pp_23_1999_1999-04-12.txt
+  pasal_count: 48
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:66cb2ff9ba4bba57473bce2c4310e86c5ebd61a4aa38ecb95414768ae39511da
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:66cb2ff9ba4bba57473bce2c4310e86c5ebd61a4aa38ecb95414768ae39511da
+  source_title: PP_No._23_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 85
+  status: none_known

@@ -1,0 +1,39 @@
+id: pp_25_1994
+akn: /akn/id/act/pp/1994/25
+type: pp
+number: '25'
+year: 1994
+title: Peraturan Pemerintah Nomor 25 Tahun 1994 tentang Tanda Kehormatan Satyalancana
+  Karya Satya
+tentang: TANDA KEHORMATAN SATYALANCANA KARYA SATYA
+short_name: null
+status: null
+tanggal_penetapan: '1994-08-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_25_1994_1994-08-29
+  kind: asli
+  source: dataset
+  date: '1994-08-29'
+  date_basis: tanggal_penetapan
+  text: pp_25_1994_1994-08-29.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f8130bb0cab356535c6db832eb41583afad58720a4c2666d6e396398e6643b6d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f8130bb0cab356535c6db832eb41583afad58720a4c2666d6e396398e6643b6d
+  source_title: PP_No._25_Th_1994
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 23
+  status: none_known

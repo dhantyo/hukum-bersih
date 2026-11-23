@@ -1,0 +1,42 @@
+id: pp_8_1949
+akn: /akn/id/act/pp/1949/8
+type: pp
+number: '8'
+year: 1949
+title: Peraturan Pemerintah Nomor 8 Tahun 1949 tentang Mengadakan Bintang Gerilya
+  Sebagai Tanda Jasa. Persiden Republik Indonesia
+tentang: MENGADAKAN BINTANG GERILYA SEBAGAI TANDA JASA. PERSIDEN REPUBLIK INDONESIA
+short_name: null
+status: dicabut
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_8_1949_1949
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: pp_8_1949_1949.txt
+  pasal_count: 9
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0a16c737d580a46e730a46949ae7528bef7d08286718814e2949ec272b6ed96b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0a16c737d580a46e730a46949ae7528bef7d08286718814e2949ec272b6ed96b
+  source_title: PP_No_8_Tahun_1949
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:483c9a9eb3058ed18a9cfe74bf876635513f2f80b6092485ea6d1dbde757ac61
+  - sha256:edcfbde7d03bc545944716125d1110e0f21efdf86cb2573321c80da2a4e56581

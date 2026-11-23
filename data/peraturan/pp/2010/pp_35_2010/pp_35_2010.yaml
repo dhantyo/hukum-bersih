@@ -1,0 +1,40 @@
+id: pp_35_2010
+akn: /akn/id/act/pp/2010/35
+type: pp
+number: '35'
+year: 2010
+title: Peraturan Pemerintah Nomor 35 Tahun 2010 tentang Pelaksanaan Undang-Undang
+  Nomor 20 Tahun 2009 Tentang Gelar, Tanda Jasa, Dan Tanda Kehormatan
+tentang: PELAKSANAAN UNDANG-UNDANG NOMOR 20 TAHUN 2009 TENTANG GELAR, TANDA JASA,
+  DAN TANDA KEHORMATAN
+short_name: null
+status: null
+tanggal_penetapan: '2010-02-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_35_2010_2010-02-12
+  kind: asli
+  source: dataset
+  date: '2010-02-12'
+  date_basis: tanggal_penetapan
+  text: pp_35_2010_2010-02-12.txt
+  pasal_count: 82
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:02d444a772696fb1a04acc2c0d698d7f034d26e0fc5a40f592b1d2ab101c0338
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:02d444a772696fb1a04acc2c0d698d7f034d26e0fc5a40f592b1d2ab101c0338
+  source_title: PP_35_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: degraded
+  chunks: 117
+  status: none_known

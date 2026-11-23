@@ -1,0 +1,43 @@
+id: pp_16_2010
+akn: /akn/id/act/pp/2010/16
+type: pp
+number: '16'
+year: 2010
+title: Peraturan Pemerintah Nomor 16 Tahun 2010 tentang Pedoman Penyusunan Peraturan
+  Dewan Perwakilan Rakyat Daerah Tentang Tata Tertib Dewan Perwakilan Rakyat Daerah
+tentang: PEDOMAN PENYUSUNAN PERATURAN DEWAN PERWAKILAN RAKYAT DAERAH TENTANG TATA
+  TERTIB DEWAN PERWAKILAN RAKYAT DAERAH
+short_name: null
+status: diubah
+tanggal_penetapan: '2010-01-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_16_2010_2010-01-28
+  kind: asli
+  source: dataset
+  date: '2010-01-28'
+  date_basis: tanggal_penetapan
+  text: pp_16_2010_2010-01-28.txt
+  pasal_count: 121
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a6913b18946c99ba612edba3541f9ded2b11de18cab9957e11549574f3582636
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a6913b18946c99ba612edba3541f9ded2b11de18cab9957e11549574f3582636
+  source_title: PP_16_Tahun_2010
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 164
+  status: amended
+  amended_by:
+  - sha256:e3a69b8d6030b4bef519136aa6539ccad3a1f43b3e91c05841f0a54a6e7a73eb
+  - sha256:eff1512de95910c4050e969f14c02099c534a9b7987dfb8461a4dfe995a2401f

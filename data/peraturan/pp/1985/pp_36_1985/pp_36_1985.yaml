@@ -1,0 +1,47 @@
+id: pp_36_1985
+akn: /akn/id/act/pp/1985/36
+type: pp
+number: '36'
+year: 1985
+title: Peraturan Pemerintah Nomor 36 Tahun 1985 tentang Pelaksanaan Undang-Undang
+  Nomor 16 Tahun 1969 Tentang Susunan Dan Kedudukan Majelis Permusyawaratan Rakyat,
+  Dewan Perwakilan Rakyat, Dan Dewan Perwakilan Rakyat Daerah Sebagaimana Telah Diubah
+  Dengan Undang-Undang Nomor 5 Tahun 1975 Dan Undang-Undang Nomor 2 Tahun 1985 Presiden
+  Republik Indonesia
+tentang: PELAKSANAAN UNDANG-UNDANG NOMOR 16 TAHUN 1969 TENTANG SUSUNAN DAN KEDUDUKAN
+  MAJELIS PERMUSYAWARATAN RAKYAT, DEWAN PERWAKILAN RAKYAT, DAN DEWAN PERWAKILAN RAKYAT
+  DAERAH SEBAGAIMANA TELAH DIUBAH DENGAN UNDANG-UNDANG NOMOR 5 TAHUN 1975 DAN UNDANG-UNDANG
+  NOMOR 2 TAHUN 1985 Presiden Republik Indonesia
+short_name: null
+status: diubah
+tanggal_penetapan: '1985-07-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_36_1985_1985-07-10
+  kind: asli
+  source: dataset
+  date: '1985-07-10'
+  date_basis: tanggal_penetapan
+  text: pp_36_1985_1985-07-10.txt
+  pasal_count: 47
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a8c31194580ca5f2fb862edb3d45924533788538ad526d0ae15fe0164f45ab0d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a8c31194580ca5f2fb862edb3d45924533788538ad526d0ae15fe0164f45ab0d
+  source_title: PP_NO_36_TH_1985
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 103
+  status: amended
+  amended_by:
+  - sha256:1518f66b377e9d01f5fc5d1509b9bf6da09f6e4be26589ee3e18888c096548f5

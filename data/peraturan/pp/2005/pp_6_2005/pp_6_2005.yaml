@@ -1,0 +1,42 @@
+id: pp_6_2005
+akn: /akn/id/act/pp/2005/6
+type: pp
+number: '6'
+year: 2005
+title: Peraturan Pemerintah Nomor 6 Tahun 2005 tentang Pemilihan, Pengesahan Pengangkatan,
+  Dan Pemberhentian Kepala Daerah Dan Wakil Kepala Daerah
+tentang: PEMILIHAN, PENGESAHAN PENGANGKATAN, DAN PEMBERHENTIAN KEPALA DAERAH DAN WAKIL
+  KEPALA DAERAH
+short_name: null
+status: diubah
+tanggal_penetapan: '2005-02-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_6_2005_2005-02-11
+  kind: asli
+  source: dataset
+  date: '2005-02-11'
+  date_basis: tanggal_penetapan
+  text: pp_6_2005_2005-02-11.txt
+  pasal_count: 152
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:aac84343a4abbea25f11a6349170656a1f279add5092102a3bcaec32064279c8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:aac84343a4abbea25f11a6349170656a1f279add5092102a3bcaec32064279c8
+  source_title: PP_NO_6_TH_2005
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 212
+  status: amended
+  amended_by:
+  - sha256:8d3827e78495ecfe39a10e0163a012a03ee527ca9bd52c501979da9b83d83c88

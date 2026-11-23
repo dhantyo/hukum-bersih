@@ -1,0 +1,40 @@
+id: pp_1_1992
+akn: /akn/id/act/pp/1992/1
+type: pp
+number: '1'
+year: 1992
+title: Peraturan Pemerintah Nomor 1 Tahun 1992 tentang Penambahan Penyertaan Modal
+  Negara Republik Indonesia Ke Dalam Modal Saham Perusahaan Umum (Perum) Bio Farma
+tentang: PENAMBAHAN PENYERTAAN MODAL NEGARA REPUBLIK INDONESIA KE DALAM MODAL SAHAM
+  PERUSAHAAN UMUM (PERUM) BIO FARMA
+short_name: null
+status: null
+tanggal_penetapan: '1992-01-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_1_1992_1992-01-03
+  kind: asli
+  source: dataset
+  date: '1992-01-03'
+  date_basis: tanggal_penetapan
+  text: pp_1_1992_1992-01-03.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ced54584f8c81e1f5ecdecb211a778ecef5584562fe9de4bbc0b73d0acdbe06f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ced54584f8c81e1f5ecdecb211a778ecef5584562fe9de4bbc0b73d0acdbe06f
+  source_title: PP_NO_1_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 8
+  status: none_known

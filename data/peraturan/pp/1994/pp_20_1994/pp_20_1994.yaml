@@ -1,0 +1,40 @@
+id: pp_20_1994
+akn: /akn/id/act/pp/1994/20
+type: pp
+number: '20'
+year: 1994
+title: Peraturan Pemerintah Nomor 20 Tahun 1994 tentang Pemilikan Saham Dalam Perusahaan
+  Yang Didirikan Dalam Rangka Penanaman Modal Asing
+tentang: PEMILIKAN SAHAM DALAM PERUSAHAAN YANG DIDIRIKAN DALAM RANGKA PENANAMAN MODAL
+  ASING
+short_name: null
+status: null
+tanggal_penetapan: '1994-05-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_20_1994_1994-05-19
+  kind: asli
+  source: dataset
+  date: '1994-05-19'
+  date_basis: tanggal_penetapan
+  text: pp_20_1994_1994-05-19.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:30a385f50ba7aede3a6e0b1c7e94d9759b863ef9d95f3674ab82fe6885a1b5dd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:30a385f50ba7aede3a6e0b1c7e94d9759b863ef9d95f3674ab82fe6885a1b5dd
+  source_title: PP_No._20_Th_1994
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 24
+  status: none_known

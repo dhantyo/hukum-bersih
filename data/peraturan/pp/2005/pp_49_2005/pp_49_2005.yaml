@@ -1,0 +1,39 @@
+id: pp_49_2005
+akn: /akn/id/act/pp/2005/49
+type: pp
+number: '49'
+year: 2005
+title: Peraturan Pemerintah Nomor 49 Tahun 2005 tentang Pedoman Kegiatan Peliputan
+  Lembaga Penyiaran Asing
+tentang: PEDOMAN KEGIATAN PELIPUTAN LEMBAGA PENYIARAN ASING
+short_name: null
+status: null
+tanggal_penetapan: '2005-11-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_49_2005_2005-11-16
+  kind: asli
+  source: dataset
+  date: '2005-11-16'
+  date_basis: tanggal_penetapan
+  text: pp_49_2005_2005-11-16.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d968e0e340bf56165dc07ffbf81f36c89904b060aae9e8d004984009216b39ae
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d968e0e340bf56165dc07ffbf81f36c89904b060aae9e8d004984009216b39ae
+  source_title: PP_NO_49_TH_2005
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 16
+  status: none_known

@@ -1,0 +1,42 @@
+id: pp_17_2009
+akn: /akn/id/act/pp/2009/17
+type: pp
+number: '17'
+year: 2009
+title: Peraturan Pemerintah Nomor 17 Tahun 2009 tentang Pajak Penghasilan Atas Penghasilan
+  Dari Transaksi Derivatif Berupa Kontrak Berjangka Yang Diperdagangkan Di Bursa
+tentang: PAJAK PENGHASILAN ATAS PENGHASILAN DARI TRANSAKSI DERIVATIF BERUPA KONTRAK
+  BERJANGKA YANG DIPERDAGANGKAN DI BURSA
+short_name: null
+status: dicabut
+tanggal_penetapan: '2009-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_17_2009_2009-01-01
+  kind: asli
+  source: dataset
+  date: '2009-01-01'
+  date_basis: tanggal_penetapan
+  text: pp_17_2009_2009-01-01.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:22bae9cb4f5d9f4c06bdded5b2743b2e1024680d9546e6c1790b414c7d8986a6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:22bae9cb4f5d9f4c06bdded5b2743b2e1024680d9546e6c1790b414c7d8986a6
+  source_title: PP_No_17_2009
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: revoked
+  revoked_by:
+  - sha256:268751fe0cb4993a56210786d06ff712aac0fa7863cf4aae8f5d1f820fb297c7

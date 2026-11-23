@@ -1,0 +1,30 @@
+id: pp_2_1990
+akn: /akn/id/act/pp/1990/2
+type: pp
+number: '2'
+year: 1990
+title: Peraturan Pemerintah Nomor 2 Tahun 1990 tentang Perusahaan Umum (Perum) Prasarana
+  Perikanan Samudera
+tentang: PERUSAHAAN UMUM (PERUM) PRASARANA PERIKANAN SAMUDERA
+short_name: null
+status: dicabut
+tanggal_penetapan: '1990-01-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b898133225b1202e4de006a1052cab65b066d87950c75f3be8068e3090548e27
+  source_title: PP_NO_2_TH_1990
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 72
+  status: revoked
+  revoked_by:
+  - sha256:3f0b6354fc019fe904dfd94ead9caa9aecb22d76cae79655f31dae45407900d7
+parse_error: 'v13: rebuilt text has 4 pasal, the dataset lists 55'

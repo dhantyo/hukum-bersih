@@ -1,0 +1,39 @@
+id: pp_60_1992
+akn: /akn/id/act/pp/1992/60
+type: pp
+number: '60'
+year: 1992
+title: Peraturan Pemerintah Nomor 60 Tahun 1992 tentang Obligasi Perusahaan Umum (Perum)
+  Listrik Negara
+tentang: OBLIGASI PERUSAHAAN UMUM (PERUM) LISTRIK NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '1992-09-19'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_60_1992_1992-09-19
+  kind: asli
+  source: dataset
+  date: '1992-09-19'
+  date_basis: tanggal_penetapan
+  text: pp_60_1992_1992-09-19.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3621841879c1a5f19d05732b1731ce0f0ee6e7ec26dcff0d9ffb3a73e2f93718
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3621841879c1a5f19d05732b1731ce0f0ee6e7ec26dcff0d9ffb3a73e2f93718
+  source_title: PP_NO_60_TH_1992
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 10
+  status: none_known

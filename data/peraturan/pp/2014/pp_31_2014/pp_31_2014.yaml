@@ -1,0 +1,38 @@
+id: pp_31_2014
+akn: /akn/id/act/pp/2014/31
+type: pp
+number: '31'
+year: 2014
+title: Peraturan Pemerintah Nomor 31 Tahun 2014 tentang Kawasan Ekonomi Khusus Palu
+tentang: KAWASAN EKONOMI KHUSUS PALU
+short_name: null
+status: null
+tanggal_penetapan: '2014-05-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_31_2014_2014-05-16
+  kind: asli
+  source: dataset
+  date: '2014-05-16'
+  date_basis: tanggal_penetapan
+  text: pp_31_2014_2014-05-16.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:9e2cf7c0a45a8886d0f1e9e0a6af8c7cf65084bebd26ac03899cb98abbd206fe
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:9e2cf7c0a45a8886d0f1e9e0a6af8c7cf65084bebd26ac03899cb98abbd206fe
+  source_title: PP_Nomor_31_Tahun_2014
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 13
+  status: none_known

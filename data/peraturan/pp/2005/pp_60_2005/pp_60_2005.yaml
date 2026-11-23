@@ -1,0 +1,41 @@
+id: pp_60_2005
+akn: /akn/id/act/pp/2005/60
+type: pp
+number: '60'
+year: 2005
+title: Peraturan Pemerintah Nomor 60 Tahun 2005 tentang Penambahan Penyertaan Modal
+  Pemerintah Republik Indonesia Ke Dalam Modal Saham Perusahaan Perseroan (Persero)
+  Pt Kertas Kraft Aceh
+tentang: PENAMBAHAN PENYERTAAN MODAL PEMERINTAH REPUBLIK INDONESIA KE DALAM MODAL
+  SAHAM PERUSAHAAN PERSEROAN (PERSERO) PT KERTAS KRAFT ACEH
+short_name: null
+status: null
+tanggal_penetapan: '2005-12-12'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_60_2005_2005-12-12
+  kind: asli
+  source: dataset
+  date: '2005-12-12'
+  date_basis: tanggal_penetapan
+  text: pp_60_2005_2005-12-12.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f058d4b72613bbf3792fb9a35e47a505d984d3b7ce493a2e8d8e9bde573df912
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f058d4b72613bbf3792fb9a35e47a505d984d3b7ce493a2e8d8e9bde573df912
+  source_title: PP_NO_60_TH_2005
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 12
+  status: none_known

@@ -1,0 +1,40 @@
+id: pp_142_2000
+akn: /akn/id/act/pp/2000/142
+type: pp
+number: '142'
+year: 2000
+title: Peraturan Pemerintah Nomor 142 Tahun 2000 tentang Tarif Atas Jenis Penerimaan
+  Negara Bukan Pajak Yang Berlaku Pada Departemen Kelautan Dan Perikanan
+tentang: TARIF ATAS JENIS PENERIMAAN NEGARA BUKAN PAJAK YANG BERLAKU PADA DEPARTEMEN
+  KELAUTAN DAN PERIKANAN
+short_name: null
+status: null
+tanggal_penetapan: '2000-12-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_142_2000_2000-12-21
+  kind: asli
+  source: dataset
+  date: '2000-12-21'
+  date_basis: tanggal_penetapan
+  text: pp_142_2000_2000-12-21.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:fccdc9e3cc18abf7de75514c3b44c25326bbcabe9e689f1e7710e36258922f87
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:fccdc9e3cc18abf7de75514c3b44c25326bbcabe9e689f1e7710e36258922f87
+  source_title: PP_No.142_TH_2000
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 14
+  status: none_known

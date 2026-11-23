@@ -1,0 +1,38 @@
+id: pp_122_2015
+akn: /akn/id/act/pp/2015/122
+type: pp
+number: '122'
+year: 2015
+title: Peraturan Pemerintah Nomor 122 Tahun 2015 tentang Sistem Penyediaan Air Minum
+tentang: SISTEM PENYEDIAAN AIR MINUM
+short_name: null
+status: null
+tanggal_penetapan: '2015-12-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_122_2015_2015-12-28
+  kind: asli
+  source: dataset
+  date: '2015-12-28'
+  date_basis: tanggal_penetapan
+  text: pp_122_2015_2015-12-28.txt
+  pasal_count: 67
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e36f74b3c04fe5e79d3aa753f0e0925ee3fa2693cd6de03a7d0bdc696a0ffbfc
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e36f74b3c04fe5e79d3aa753f0e0925ee3fa2693cd6de03a7d0bdc696a0ffbfc
+  source_title: PP_Nomor_122_Tahun_2015
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 108
+  status: none_known

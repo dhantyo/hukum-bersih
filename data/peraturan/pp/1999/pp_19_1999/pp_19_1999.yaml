@@ -1,0 +1,39 @@
+id: pp_19_1999
+akn: /akn/id/act/pp/1999/19
+type: pp
+number: '19'
+year: 1999
+title: Peraturan Pemerintah Nomor 19 Tahun 1999 tentang Pengendalian Pencemaran Dan/Atau
+  Perusakan Laut
+tentang: PENGENDALIAN PENCEMARAN DAN/ATAU PERUSAKAN LAUT
+short_name: null
+status: null
+tanggal_penetapan: '1999-02-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_19_1999_1999-02-27
+  kind: asli
+  source: dataset
+  date: '1999-02-27'
+  date_basis: tanggal_penetapan
+  text: pp_19_1999_1999-02-27.txt
+  pasal_count: 28
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:39591e83c520ff2daf9900ed4ade0acbe1ad0d81f387320b1b156f91b6b03a1c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:39591e83c520ff2daf9900ed4ade0acbe1ad0d81f387320b1b156f91b6b03a1c
+  source_title: PP_No._19_th_1999
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 54
+  status: none_known

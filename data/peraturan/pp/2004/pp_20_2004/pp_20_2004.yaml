@@ -1,0 +1,38 @@
+id: pp_20_2004
+akn: /akn/id/act/pp/2004/20
+type: pp
+number: '20'
+year: 2004
+title: Peraturan Pemerintah Nomor 20 Tahun 2004 tentang Rencana Kerja Pemerintah
+tentang: RENCANA KERJA PEMERINTAH
+short_name: null
+status: null
+tanggal_penetapan: '2004-08-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: pp_20_2004_2004-08-05
+  kind: asli
+  source: dataset
+  date: '2004-08-05'
+  date_basis: tanggal_penetapan
+  text: pp_20_2004_2004-08-05.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:043134a7355e9cfb9c98f3e479ce4c780925baf276e330efba90315f87d0963d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:043134a7355e9cfb9c98f3e479ce4c780925baf276e330efba90315f87d0963d
+  source_title: PP_No.20_TH_2004
+  regulation_type: PERATURAN PEMERINTAH
+  quality: clean
+  chunks: 23
+  status: none_known
