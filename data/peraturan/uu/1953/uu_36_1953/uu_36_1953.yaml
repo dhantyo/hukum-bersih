@@ -27,8 +27,8 @@ versions:
   date: '1953-12-18'
   date_basis: tanggal_penetapan
   text: uu_36_1953_1953-12-18.txt
-  pasal_count: 10
-  parser_version: 12
+  pasal_count: 21
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 39ff1a244e38805ef82df8aad408b48e66a79509dc85f684fb49e1daaef01eaa
 pdf_sha256: 8b829160a3229e13a02df5b42b1ac82d1aedbb1d99f61bd4e7f4226ead856977
@@ -63,4 +63,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/53734/perpu-no-4-tahun-1963
       note: null
 uji_materi: null
-recheck: missed heading in body 11; missed heading in penjelasan 2

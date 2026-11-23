@@ -30,7 +30,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1951_1951-06-30.txt
   pasal_count: 6
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 848bba74cc1ed1eb9b6e1e94a82d6ebb125eee21bf67f7f63cb02990ec71b398
 pdf_sha256: 0f2c08bf29742e1188f9947180c82bfce08a79da3b52861bc9e46846ad7027ad
@@ -58,4 +58,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/49975/uu-no-3-tahun-1965
       note: null
 uji_materi: null
-recheck: missed heading in penjelasan 9

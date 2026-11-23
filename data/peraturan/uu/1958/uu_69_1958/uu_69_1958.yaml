@@ -31,7 +31,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_69_1958_1958-08-09.txt
   pasal_count: 15
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b17410beab1ad09d919af3fe002126cce4a65e544083417a9853e5046650bfbd
 pdf_sha256: 47c4346f4ac651604fba0cd7e8e7b0c7e5f11f32741ef054dc364919ee05a69c
@@ -223,4 +223,3 @@ bpk:
       note: Ketentuan yang mengatur mengenai Kabupaten Badung dalam Undang-Undang
         Nomor 69 Tahun 1958, dicabut dan dinyatakan tidak berlaku.
 uji_materi: null
-recheck: missed heading in penjelasan 1

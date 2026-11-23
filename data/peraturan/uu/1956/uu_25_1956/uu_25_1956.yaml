@@ -31,7 +31,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_25_1956_1956-11-29.txt
   pasal_count: 93
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1400bc065366cdfa604665baa3be35a596c5a8c0aa52158977f8056df4433f7f
 pdf_sha256: 5eeda4c2b4d7d655d9cfb774fa2b48a8d070a0aa1ca4f0d980ed560f9831f656
@@ -91,4 +91,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/52685/uudrt-no-2-tahun-1953
       note: null
 uji_materi: null
-recheck: missed heading in penjelasan 18

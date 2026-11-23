@@ -29,8 +29,8 @@ versions:
   date: '1953-05-04'
   date_basis: tanggal_penetapan
   text: uu_9_1953_1953-05-04.txt
-  pasal_count: 4
-  parser_version: 12
+  pasal_count: 9
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e72e079ea5dae02432b59a91b44ff99eeef28504104a4cfced79f179d0595012
 pdf_sha256: c30a7dce5e0155e49628017223e90ebca560d12ba6d1616d19c59af961b254fd
@@ -76,4 +76,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/51060/uu-no-5-tahun-1955
       note: null
 uji_materi: null
-recheck: missed heading in body 5

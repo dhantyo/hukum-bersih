@@ -28,8 +28,8 @@ versions:
   date: '1954-02-09'
   date_basis: tanggal_penetapan
   text: uu_6_1954_1954-02-09.txt
-  pasal_count: 16
-  parser_version: 12
+  pasal_count: 29
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7db76c111c3b0eaeed5967100cb84af3214eebdf97e6f6c1c5a1e7115f236436
 pdf_sha256: 7db76c111c3b0eaeed5967100cb84af3214eebdf97e6f6c1c5a1e7115f236436
@@ -51,4 +51,3 @@ bpk:
     archive_url: null
   status_peraturan: null
 uji_materi: null
-recheck: missed heading in body 12; missed heading in penjelasan 6

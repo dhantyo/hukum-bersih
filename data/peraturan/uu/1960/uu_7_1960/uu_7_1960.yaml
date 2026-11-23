@@ -28,7 +28,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1960_1960-09-26.txt
   pasal_count: 12
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: efbe7f37705cd0f7a69adaccb5d16f916cad2d4107155bb9ea2b3f4c1d7c59d6
 pdf_sha256: efbe7f37705cd0f7a69adaccb5d16f916cad2d4107155bb9ea2b3f4c1d7c59d6
@@ -56,4 +56,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/45944/uu-no-16-tahun-1997
       note: null
 uji_materi: null
-recheck: missed heading in penjelasan 3

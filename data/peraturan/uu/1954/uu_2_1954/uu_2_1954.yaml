@@ -29,7 +29,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1954_1953-12-29.txt
   pasal_count: 11
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2084199eda4f1523856aaf3dad1ac98264276ef26418af510793c7a1e3cfbeea
 pdf_sha256: ca0f3f50083162657f0beac2cfcd064f1b16220a79febb91424fb129828b2e41
@@ -74,4 +74,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/45286/uu-no-10-tahun-1953
       note: null
 uji_materi: null
-recheck: missed heading in penjelasan 4

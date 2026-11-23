@@ -32,7 +32,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1956_1956-02-07.txt
   pasal_count: 7
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 822d1394f3217c069a420dd4f4ac6b80066f148717a7f55fb78f844c000b933b
 pdf_sha256: 0a986f0765dfe105c90e2c1dfc7394082ace4fdbb8e8a3b13f662a1fba669b6a
@@ -60,4 +60,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/51785/uudrt-no-20-tahun-1950
       note: null
 uji_materi: null
-recheck: missed heading in body 1
