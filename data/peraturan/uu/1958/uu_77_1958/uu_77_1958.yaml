@@ -9,14 +9,13 @@ title: Undang-Undang Nomor 77 Tahun 1958 tentang Penetapan "Undang-Undang Darura
 tentang: PENETAPAN "UNDANG-UNDANG DARURAT NO. 18 TAHUN 1957 TENTANG BANK TANI DAN
   NELAYAN (LEMBARAN-NEGARA TAHUN 1957 NO. 70)" SEBAGAI UNDANG-UNDANG
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Peraturan Pemerintah Pengganti Undang-Undang
-  Nomor 43 Tahun 1960 Tentang Peleburan Perseroan Terbatas Bank Tani dan Nelayan'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1958-09-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-77-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu77-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52871/uu-no-77-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/42246/UU%20Nomor%2077%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,6 +24,39 @@ relationships:
   enacts:
   - uu-drt_18_1957
   enacted_by: []
-versions: []
+versions:
+- id: uu_77_1958_1958-09-02
+  kind: asli
+  source: official
+  date: '1958-09-02'
+  date_basis: tanggal_penetapan
+  text: uu_77_1958_1958-09-02.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: dd449aae24e463c12c39015fcafa839c48892141d784f2c740a06a9bbbc209c7
 pdf_sha256: 8162cbef2aaac3bb8fd6c94f058bc68f9a32e27028f22783a84db3ff99206eda
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-10-08'
+tanggal_berlaku: '1958-10-08'
+lembaran_negara: 'LL BPHN : 5 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-77-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu77-1958.pdf
+bpk:
+  id: 52871
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42246/UU%20Nomor%2077%20Tahun%201958.pdf
+    bpk_file_id: 42246
+    filename: UU Nomor 77 Tahun 1958.pdf
+    sha256: dd449aae24e463c12c39015fcafa839c48892141d784f2c740a06a9bbbc209c7
+    bytes: 211767
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: perppu_43_1960
+      citation: PERPU No. 43 Tahun 1960
+      tentang: Peleburan Perseroan Terbatas Bank Tani Dan Nelayan
+      url: https://peraturan.bpk.go.id/Details/53581/perpu-no-43-tahun-1960
+      note: null
+uji_materi: null

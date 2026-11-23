@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 5 Tahun 1960 tentang Peraturan Dasar Pokok-Pokok Agra
 tentang: PERATURAN DASAR POKOK-POKOK AGRARIA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1960-09-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1960
-source_pdf_url: https://peraturan.go.id/files/UU0051960.pdf
+source_url: https://peraturan.bpk.go.id/Details/51310/uu-no-5-tahun-1960
+source_pdf_url: https://peraturan.bpk.go.id/Download/40571/UU%20Nomor%205%20Tahun%201960.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_5_1960_1960-09-24
+  kind: asli
+  source: official
+  date: '1960-09-24'
+  date_basis: tanggal_penetapan
+  text: uu_5_1960_1960-09-24.txt
+  pasal_count: 58
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ef6fd332f5ed6dda494645d3d1ae247f371fc280d73cf9421abf0405a21c7f36
 pdf_sha256: ef6fd332f5ed6dda494645d3d1ae247f371fc280d73cf9421abf0405a21c7f36
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1960-09-24'
+tanggal_berlaku: '1960-09-24'
+lembaran_negara: 'LN. 1960/No. 104, TLN No. 2043, LL SETNEG : 17 HLM'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1960
+  source_pdf_url: https://peraturan.go.id/files/UU0051960.pdf
+bpk:
+  id: 51310
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40571/UU%20Nomor%205%20Tahun%201960.pdf
+    bpk_file_id: 40571
+    filename: UU Nomor 5 Tahun 1960.pdf
+    sha256: ef6fd332f5ed6dda494645d3d1ae247f371fc280d73cf9421abf0405a21c7f36
+    bytes: 157204
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/116465/UU0051960.pdf
+    bpk_file_id: 116465
+    filename: UU0051960.pdf
+    sha256: ef6fd332f5ed6dda494645d3d1ae247f371fc280d73cf9421abf0405a21c7f36
+    bytes: 157204
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

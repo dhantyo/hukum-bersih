@@ -9,23 +9,67 @@ title: Undang-Undang Nomor 19 Tahun 1959 tentang Penetapan "Undang-Undang Darura
 tentang: PENETAPAN "UNDANG-UNDANG DARURAT NO. 27 TAHUN 1957 TENTANG PENAGIHAN PAJAK
   NEGARA" (LEMBARAN-NEGARA TAHUN 1957 NO. 84 SEBAGAI UNDANG-UNDANG *)
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 19 Tahun 1997 Tentang Penagihan
-  Pajak dengan Surat Paksa'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1959-06-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SARTONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-1959
-source_pdf_url: https://peraturan.go.id/files/uu0191959.pdf
+source_url: https://peraturan.bpk.go.id/Details/51466/uu-no-19-tahun-1959
+source_pdf_url: https://peraturan.bpk.go.id/Download/40742/UU%20Nomor%2019%20Tahun%201959.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_19_1997
+  revoked_by: []
   enacts:
   - uu-drt_27_1957
   enacted_by: []
-versions: []
+versions:
+- id: uu_19_1959_1959-06-26
+  kind: asli
+  source: official
+  date: '1959-06-26'
+  date_basis: tanggal_penetapan
+  text: uu_19_1959_1959-06-26.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: bf33fac90ec477e656a193febcb527822def9e388497a00dad7a036344230cf6
 pdf_sha256: bf33fac90ec477e656a193febcb527822def9e388497a00dad7a036344230cf6
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1959-07-04'
+tanggal_berlaku: '1959-07-04'
+lembaran_negara: 'LN. 1959 No. 83, LL SETNEG : 20 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-1959
+  source_pdf_url: https://peraturan.go.id/files/uu0191959.pdf
+bpk:
+  id: 51466
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40742/UU%20Nomor%2019%20Tahun%201959.pdf
+    bpk_file_id: 40742
+    filename: UU Nomor 19 Tahun 1959.pdf
+    sha256: bf33fac90ec477e656a193febcb527822def9e388497a00dad7a036344230cf6
+    bytes: 62951
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_19_1997
+      citation: UU No. 19 Tahun 1997
+      tentang: Penagihan Pajak Dengan Surat Paksa
+      url: https://peraturan.bpk.go.id/Details/46002/uu-no-19-tahun-1997
+      note: null
+    Diubah dengan:
+    - id: uu_10_1968
+      citation: UU No. 10 Tahun 1968
+      tentang: 'Penyerahan Pajak-Pajak Negara: Bea Balik Nama Kendaraan Bermotor,
+        Pajak Bangsa Asing dan Pajak Radio Kepada Daerah'
+      url: https://peraturan.bpk.go.id/Details/49167/uu-no-10-tahun-1968
+      note: null
+    Mengubah sebagian:
+    - id: uu_12_1947
+      citation: UU No. 12 Tahun 1947
+      tentang: Menetapkan "Pajak Radio" atas Semua Pesawat Penerimaan Radio
+      url: https://peraturan.bpk.go.id/Details/25253/uu-no-12-tahun-1947
+      note: null
+uji_materi: null

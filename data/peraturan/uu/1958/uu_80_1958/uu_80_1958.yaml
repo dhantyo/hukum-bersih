@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 80 Tahun 1958 tentang Dewan Perancang Nasional
 tentang: DEWAN PERANCANG NASIONAL
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-10-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-80-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu80-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52876/uu-no-80-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/42251/UU%20Nomor%2080%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,34 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_80_1958_1958-10-23
+  kind: asli
+  source: official
+  date: '1958-10-23'
+  date_basis: tanggal_penetapan
+  text: uu_80_1958_1958-10-23.txt
+  pasal_count: 13
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 808bb2f61ec758ea6b61de627e5d69339d1d79f801b08ff6bfc23f5ce0ec4f6a
 pdf_sha256: d9e5241aee1eb3609b49c47161ea82d990d1f8ec1ad652010e19a5abb3f2650f
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-10-31'
+tanggal_berlaku: '1958-10-31'
+lembaran_negara: 'LL BPHN : 6 HLM'
+subjek: PROGRAM, RENCANA PEMBANGUNAN DAN RENCANA KERJA - DASAR PEMBENTUKAN KEMENTERIAN
+  / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-80-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu80-1958.pdf
+bpk:
+  id: 52876
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42251/UU%20Nomor%2080%20Tahun%201958.pdf
+    bpk_file_id: 42251
+    filename: UU Nomor 80 Tahun 1958.pdf
+    sha256: 808bb2f61ec758ea6b61de627e5d69339d1d79f801b08ff6bfc23f5ce0ec4f6a
+    bytes: 244702
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

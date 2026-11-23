@@ -13,12 +13,12 @@ tentang: PENETAPAN "UNDANG-UNDANG DARURAT NO. 17 TAHUN 1955 TENTANG PERPANJANGAN
   UND
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1959-07-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-26-tahun-1959
-source_pdf_url: https://peraturan.go.id/files/uu0261959.pdf
+source_url: https://peraturan.bpk.go.id/Details/51515/uu-no-26-tahun-1959
+source_pdf_url: https://peraturan.bpk.go.id/Download/40794/UU%20Nomor%2026%20Tahun%201959.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,6 +26,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_26_1959_1959-07-04
+  kind: asli
+  source: official
+  date: '1959-07-04'
+  date_basis: tanggal_penetapan
+  text: uu_26_1959_1959-07-04.txt
+  pasal_count: 1
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 262eeac2db7e2ae05ec381b1f11d78529d220b0de52165b531241f5a293a32cc
 pdf_sha256: 262eeac2db7e2ae05ec381b1f11d78529d220b0de52165b531241f5a293a32cc
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1959-07-04'
+tanggal_berlaku: '1959-07-04'
+lembaran_negara: LN. 1959 No. 71, TLN NO. 1819, LL SETNEG :3 HLM
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-26-tahun-1959
+  source_pdf_url: https://peraturan.go.id/files/uu0261959.pdf
+bpk:
+  id: 51515
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40794/UU%20Nomor%2026%20Tahun%201959.pdf
+    bpk_file_id: 40794
+    filename: UU Nomor 26 Tahun 1959.pdf
+    sha256: 262eeac2db7e2ae05ec381b1f11d78529d220b0de52165b531241f5a293a32cc
+    bytes: 33017
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

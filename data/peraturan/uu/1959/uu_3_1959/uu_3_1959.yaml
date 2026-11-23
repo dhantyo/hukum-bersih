@@ -9,12 +9,12 @@ tentang: PERSETUJUAN KERJASAMA ILMIAH, PENDIDIKAN DAN KEBUDAYAAN ANTARA REPUBLIK
   DAN REPUBLIK CEKOSLOWAKIA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1959-02-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1959
-source_pdf_url: https://peraturan.go.id/files/uu0031959.pdf
+source_url: https://peraturan.bpk.go.id/Details/51347/uu-no-3-tahun-1959
+source_pdf_url: https://peraturan.bpk.go.id/Download/40608/UU%20Nomor%203%20Tahun%201959.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_3_1959_1959-02-24
+  kind: asli
+  source: official
+  date: '1959-02-24'
+  date_basis: tanggal_penetapan
+  text: uu_3_1959_1959-02-24.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1ed8bb42d437ec0a977b48c83b08180a12fa867196dae39d46a7284d4a259107
 pdf_sha256: 1ed8bb42d437ec0a977b48c83b08180a12fa867196dae39d46a7284d4a259107
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1959-03-12'
+tanggal_berlaku: '1959-03-12'
+lembaran_negara: 'LN. 1959 No. 11, LL SETNEG : 2 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1959
+  source_pdf_url: https://peraturan.go.id/files/uu0031959.pdf
+bpk:
+  id: 51347
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40608/UU%20Nomor%203%20Tahun%201959.pdf
+    bpk_file_id: 40608
+    filename: UU Nomor 3 Tahun 1959.pdf
+    sha256: 1ed8bb42d437ec0a977b48c83b08180a12fa867196dae39d46a7284d4a259107
+    bytes: 25852
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

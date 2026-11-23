@@ -6,13 +6,13 @@ year: 1958
 title: Undang-Undang Nomor 78 Tahun 1958 tentang Penanaman Modal Asing
 tentang: PENANAMAN MODAL ASING
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1958-10-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-78-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu78-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52872/uu-no-78-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/42247/UU%20Nomor%2078%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,48 @@ relationships:
   - uu_16_1965
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_78_1958_1958-10-14
+  kind: asli
+  source: official
+  date: '1958-10-14'
+  date_basis: tanggal_penetapan
+  text: uu_78_1958_1958-10-14.txt
+  pasal_count: 21
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a0802e335551b81a41f97b3fb4782e484ced5c271d5180f4a0702f6feb875945
 pdf_sha256: 33b34f9a9ff1fa57c9b3de4be4718fa05d66564ed0681a73051b5e35897510b3
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-10-27'
+tanggal_berlaku: '1958-10-27'
+lembaran_negara: 'LN. 1958 No. 138, LL BPHN : 5 HLM'
+subjek: PENANAMAN MODAL DAN INVESTASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-78-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu78-1958.pdf
+bpk:
+  id: 52872
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42247/UU%20Nomor%2078%20Tahun%201958.pdf
+    bpk_file_id: 42247
+    filename: UU Nomor 78 Tahun 1958.pdf
+    sha256: a0802e335551b81a41f97b3fb4782e484ced5c271d5180f4a0702f6feb875945
+    bytes: 264761
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_16_1965
+      citation: UU No. 16 Tahun 1965
+      tentang: Pencabutan Undang-Undang No. 78 TAHUN 1958 Tentang Penanaman Modal
+        Asing (Lembaran-Negara Tahun 1958, No. 138) Yang Telah Diubah Dan Ditambah
+        Dengan Undang-Undang No. 15 PRP TAHUN 1960 (Lembaran-Negara Tahun 1960 No.
+        42)
+      url: https://peraturan.bpk.go.id/Details/50202/uu-no-16-tahun-1965
+      note: null
+    Diubah dengan:
+    - id: perppu_15_1960
+      citation: PERPU No. 15 Tahun 1960
+      tentang: Perubahan Undang-Undang No. 78 Tahun 1958 Tentang Penanaman Modal Asing
+      url: https://peraturan.bpk.go.id/Details/53463/perpu-no-15-tahun-1960
+      note: null
+uji_materi: null

@@ -13,12 +13,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 19 TAHUN 1950 TENTANG PERATURAN PEM
   DARURAT NO.28
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1959-02-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1959
-source_pdf_url: https://peraturan.go.id/files/59uu002.pdf
+source_url: https://peraturan.bpk.go.id/Details/51329/uu-no-2-tahun-1959
+source_pdf_url: https://peraturan.bpk.go.id/Download/40590/UU%20Nomor%202%20Tahun%201959.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,6 +26,34 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_2_1959_1959-02-12
+  kind: asli
+  source: official
+  date: '1959-02-12'
+  date_basis: tanggal_penetapan
+  text: uu_2_1959_1959-02-12.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 09279cab11728deca480bec19219b454db441c4115bd5a334b2416175ed6a81a
 pdf_sha256: 8c2e3c4b6e7a609aad62fee6aa4d8d31a4708dc85fe89db94dfa0cd1a53dd7bc
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1959-02-20'
+tanggal_berlaku: '1950-01-01'
+lembaran_negara: 'LN. 1959 No. 4 , LL SETNEG : 19 HLM'
+subjek: HONORARIUM, GAJI, PENGHASILAN, UANG KEHORMATAN, TUNJANGAN, PENGHARGAAN, HAK
+  LAINNYA - KEPEGAWAIAN, APARATUR NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1959
+  source_pdf_url: https://peraturan.go.id/files/59uu002.pdf
+bpk:
+  id: 51329
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40590/UU%20Nomor%202%20Tahun%201959.pdf
+    bpk_file_id: 40590
+    filename: UU Nomor 2 Tahun 1959.pdf
+    sha256: 09279cab11728deca480bec19219b454db441c4115bd5a334b2416175ed6a81a
+    bytes: 62998
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

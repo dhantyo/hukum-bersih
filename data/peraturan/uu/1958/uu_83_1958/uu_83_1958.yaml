@@ -6,13 +6,13 @@ year: 1958
 title: Undang-Undang Nomor 83 Tahun 1958 tentang Penerbangan
 tentang: PENERBANGAN
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1958-12-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-83-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu83-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52364/uu-no-83-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41696/UU%20Nomor%2083%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_83_1958_1958-12-27
+  kind: asli
+  source: official
+  date: '1958-12-27'
+  date_basis: tanggal_penetapan
+  text: uu_83_1958_1958-12-27.txt
+  pasal_count: 28
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5c7520915998e2f36d629baace7177c8d17b528a354135090886f8219839bcf4
 pdf_sha256: f80d33ef9cd6acf68298f5547eb543b7b62e8d24e008325693ffe12bb3c5a465
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-12-31'
+tanggal_berlaku: '1958-12-31'
+lembaran_negara: 'LL SETNEG : 12 HLM'
+subjek: TRANSPORTASI DARAT / LAUT / UDARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-83-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu83-1958.pdf
+bpk:
+  id: 52364
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41696/UU%20Nomor%2083%20Tahun%201958.pdf
+    bpk_file_id: 41696
+    filename: UU Nomor 83 Tahun 1958.pdf
+    sha256: 5c7520915998e2f36d629baace7177c8d17b528a354135090886f8219839bcf4
+    bytes: 61100
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_15_1992
+      citation: UU No. 15 Tahun 1992
+      tentang: Penerbangan
+      url: https://peraturan.bpk.go.id/Details/46609/uu-no-15-tahun-1992
+      note: null
+uji_materi: null

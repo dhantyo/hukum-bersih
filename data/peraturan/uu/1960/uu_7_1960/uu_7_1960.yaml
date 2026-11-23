@@ -6,21 +6,53 @@ year: 1960
 title: Undang-Undang Nomor 7 Tahun 1960 tentang Stastistik
 tentang: STASTISTIK
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 16 Tahun 1997 Tentang Statistik'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1960-09-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DJUANDA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1960
-source_pdf_url: https://peraturan.go.id/files/UU0071960.pdf
+source_url: https://peraturan.bpk.go.id/Details/51316/uu-no-7-tahun-1960
+source_pdf_url: https://peraturan.bpk.go.id/Download/40577/UU%20Nomor%207%20Tahun%201960.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_16_1997
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_7_1960_1960-09-26
+  kind: asli
+  source: official
+  date: '1960-09-26'
+  date_basis: tanggal_penetapan
+  text: uu_7_1960_1960-09-26.txt
+  pasal_count: 12
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: efbe7f37705cd0f7a69adaccb5d16f916cad2d4107155bb9ea2b3f4c1d7c59d6
 pdf_sha256: efbe7f37705cd0f7a69adaccb5d16f916cad2d4107155bb9ea2b3f4c1d7c59d6
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1960-09-26'
+tanggal_berlaku: '1960-09-26'
+lembaran_negara: 'LL SETNEG : 5 HLM'
+subjek: ILMU PENGETAHUAN DAN TEKNOLOGI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1960
+  source_pdf_url: https://peraturan.go.id/files/UU0071960.pdf
+bpk:
+  id: 51316
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40577/UU%20Nomor%207%20Tahun%201960.pdf
+    bpk_file_id: 40577
+    filename: UU Nomor 7 Tahun 1960.pdf
+    sha256: efbe7f37705cd0f7a69adaccb5d16f916cad2d4107155bb9ea2b3f4c1d7c59d6
+    bytes: 68275
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_16_1997
+      citation: UU No. 16 Tahun 1997
+      tentang: Statistik
+      url: https://peraturan.bpk.go.id/Details/45944/uu-no-16-tahun-1997
+      note: null
+uji_materi: null

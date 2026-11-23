@@ -10,13 +10,13 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 2 TAHUN 1959 TENTANG PEMBERIAN TAND
   KEHORMATAN BINTANG GARUDA (LEMBARAN-NEGARA TAHUN 1959 NO. 19), SEBAGAI UNDANG-UNDANG
   *)
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1959-06-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SARTONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-23-tahun-1959
-source_pdf_url: https://peraturan.go.id/files/uu0231959.pdf
+source_url: https://peraturan.bpk.go.id/Details/51495/uu-no-23-tahun-1959
+source_pdf_url: https://peraturan.bpk.go.id/Download/40771/UU%20Nomor%2023%20Tahun%201959.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,6 +25,40 @@ relationships:
   enacts:
   - uu-drt_2_1959
   enacted_by: []
-versions: []
+versions:
+- id: uu_23_1959_1959-06-26
+  kind: asli
+  source: official
+  date: '1959-06-26'
+  date_basis: tanggal_penetapan
+  text: uu_23_1959_1959-06-26.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 63e2440e2313023a4c8804c8e36d43e954baa19cc80834f84645181a1817996c
 pdf_sha256: 63e2440e2313023a4c8804c8e36d43e954baa19cc80834f84645181a1817996c
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1959-07-04'
+tanggal_berlaku: '1959-07-04'
+lembaran_negara: 'LN. 1959 No. 67, TLN NO. 1811, LL SETNEG : 7 HLM'
+subjek: HONORARIUM, GAJI, PENGHASILAN, UANG KEHORMATAN, TUNJANGAN, PENGHARGAAN, HAK
+  LAINNYA - PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-23-tahun-1959
+  source_pdf_url: https://peraturan.go.id/files/uu0231959.pdf
+bpk:
+  id: 51495
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40771/UU%20Nomor%2023%20Tahun%201959.pdf
+    bpk_file_id: 40771
+    filename: UU Nomor 23 Tahun 1959.pdf
+    sha256: 63e2440e2313023a4c8804c8e36d43e954baa19cc80834f84645181a1817996c
+    bytes: 49482
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_20_2009
+      citation: UU No. 20 Tahun 2009
+      tentang: Gelar, Tanda Jasa, dan Tanda Kehormatan
+      url: https://peraturan.bpk.go.id/Details/38640/uu-no-20-tahun-2009
+      note: null
+uji_materi: null

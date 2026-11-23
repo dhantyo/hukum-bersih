@@ -11,12 +11,12 @@ tentang: PENARIKAN KEMBALI UNDANG-UNDANG DARURAT NO. 13 TAHUN 1955 TENTANG PENCA
   38) *)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1959-06-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SARTONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-24-tahun-1959
-source_pdf_url: https://peraturan.go.id/files/uu0241959.pdf
+source_url: https://peraturan.bpk.go.id/Details/51499/uu-no-24-tahun-1959
+source_pdf_url: https://peraturan.bpk.go.id/Download/40775/UU%20Nomor%2024%20Tahun%201959.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,11 +25,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_24_1959_1959
+- id: uu_24_1959_1959-06-26
   kind: asli
   source: official
-  date: null
+  date: '1959-06-26'
   date_basis: tanggal_penetapan
-  text: uu_24_1959_1959.txt
-  pasal_count: 1
+  text: uu_24_1959_1959-06-26.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e3a0056b796c3dbddb02406c12aaef1a3d2ecc4dd251d8423b705a6ffb1f9b6f
 pdf_sha256: e3a0056b796c3dbddb02406c12aaef1a3d2ecc4dd251d8423b705a6ffb1f9b6f
+tanggal_pengundangan: '1959-07-04'
+tanggal_berlaku: '1959-07-04'
+lembaran_negara: 'LN. 1959 No. 69, TLN NO. 1813, LL SETNEG : 3 HLM'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-24-tahun-1959
+  source_pdf_url: https://peraturan.go.id/files/uu0241959.pdf
+bpk:
+  id: 51499
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40775/UU%20Nomor%2024%20Tahun%201959.pdf
+    bpk_file_id: 40775
+    filename: UU Nomor 24 Tahun 1959.pdf
+    sha256: e3a0056b796c3dbddb02406c12aaef1a3d2ecc4dd251d8423b705a6ffb1f9b6f
+    bytes: 32362
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

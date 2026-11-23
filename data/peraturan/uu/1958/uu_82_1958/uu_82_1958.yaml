@@ -14,12 +14,12 @@ tentang: PERPANJANGAN JANGKA-WAKTU SATU TAHUN DAN PADA KEADAAN PERANG YANG TELAH
   1957 NO. 170) UNTUK SELURUH WILAYAH REPUBLIK INDONESIA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-12-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-82-tahun-1958
-source_pdf_url: null
+source_url: https://peraturan.bpk.go.id/Details/52362/uu-no-82-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41694/UU%20Nomor%2082%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -27,4 +27,32 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_82_1958_1958-12-17
+  kind: asli
+  source: official
+  date: '1958-12-17'
+  date_basis: tanggal_penetapan
+  text: uu_82_1958_1958-12-17.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 219a72fb2e8dd5f569490731ef45e37e9b1bba1d13e2aaf03833432a3db54e0c
+tanggal_pengundangan: '1958-12-17'
+tanggal_berlaku: '1958-12-17'
+lembaran_negara: 'LL SETNEG : 3 HLM'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-82-tahun-1958
+  source_pdf_url: null
+bpk:
+  id: 52362
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41694/UU%20Nomor%2082%20Tahun%201958.pdf
+    bpk_file_id: 41694
+    filename: UU Nomor 82 Tahun 1958.pdf
+    sha256: 219a72fb2e8dd5f569490731ef45e37e9b1bba1d13e2aaf03833432a3db54e0c
+    bytes: 28947
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

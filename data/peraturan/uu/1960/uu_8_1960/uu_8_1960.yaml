@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 8 Tahun 1960 tentang Pembuatan Perjanjian Persahabata
 tentang: PEMBUATAN PERJANJIAN PERSAHABATAN ANTAR REPUBLIK INDONESIA DAN KERAJAAN KAMBOJA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1960-10-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: DJUANDA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1960
-source_pdf_url: https://peraturan.go.id/files/UU0081960.pdf
+source_url: https://peraturan.bpk.go.id/Details/51319/uu-no-8-tahun-1960
+source_pdf_url: https://peraturan.bpk.go.id/Download/40580/UU%20Nomor%208%20Tahun%201960.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_8_1960_1960-10-15
+  kind: asli
+  source: official
+  date: '1960-10-15'
+  date_basis: tanggal_penetapan
+  text: uu_8_1960_1960-10-15.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 07c88fee9194caf0746b88072be6a0a6f1ba9a5050219b4a53de6a5f3828ed51
 pdf_sha256: 07c88fee9194caf0746b88072be6a0a6f1ba9a5050219b4a53de6a5f3828ed51
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1960-10-15'
+tanggal_berlaku: '1960-10-15'
+lembaran_negara: 'LL SETNEG : 1 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1960
+  source_pdf_url: https://peraturan.go.id/files/UU0081960.pdf
+bpk:
+  id: 51319
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40580/UU%20Nomor%208%20Tahun%201960.pdf
+    bpk_file_id: 40580
+    filename: UU Nomor 8 Tahun 1960.pdf
+    sha256: 07c88fee9194caf0746b88072be6a0a6f1ba9a5050219b4a53de6a5f3828ed51
+    bytes: 34540
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

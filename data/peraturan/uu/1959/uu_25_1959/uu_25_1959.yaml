@@ -12,24 +12,69 @@ tentang: PENETAPAN "PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NO. 3 TAHUN 195
   NO. 16 TAHUN 1955 TENTANG PERUBAHAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
   NO. 3 TAHUN 1950 (L
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 9 Tahun 2023 Tentang Provinsi
-  Sumatera Selatan'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1959-06-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SARTONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-25-tahun-1959
-source_pdf_url: https://peraturan.go.id/files/uu0251959.pdf
+source_url: https://peraturan.bpk.go.id/Details/51506/uu-no-25-tahun-1959
+source_pdf_url: https://peraturan.bpk.go.id/Download/40784/UU%20Nomor%2025%20Tahun%201959.pdf
 relationships:
   amends:
   - id: perppu_3_1950
   amended_by:
   - uu_14_1964
   revokes: []
-  revoked_by:
-  - uu_9_2023
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_25_1959_1959-06-26
+  kind: asli
+  source: official
+  date: '1959-06-26'
+  date_basis: tanggal_penetapan
+  text: uu_25_1959_1959-06-26.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c8fb4464989b548583dcdc87fd8c6bced8e97a2c761c2b62295a665577213fd3
 pdf_sha256: c8fb4464989b548583dcdc87fd8c6bced8e97a2c761c2b62295a665577213fd3
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1959-07-04'
+tanggal_berlaku: '1959-07-04'
+lembaran_negara: 'LN. 1959 No. 70, TLN NO. 1814, LL SETNEG : 14 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-25-tahun-1959
+  source_pdf_url: https://peraturan.go.id/files/uu0251959.pdf
+bpk:
+  id: 51506
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40784/UU%20Nomor%2025%20Tahun%201959.pdf
+    bpk_file_id: 40784
+    filename: UU Nomor 25 Tahun 1959.pdf
+    sha256: c8fb4464989b548583dcdc87fd8c6bced8e97a2c761c2b62295a665577213fd3
+    bytes: 54799
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_9_2023
+      citation: UU No. 9 Tahun 2023
+      tentang: Provinsi Sumatera Selatan
+      url: https://peraturan.bpk.go.id/Details/249333/uu-no-9-tahun-2023
+      note: null
+    Diubah dengan:
+    - id: uu_9_1967
+      citation: UU No. 9 Tahun 1967
+      tentang: Pembentukan Propinsi Bengkulu
+      url: https://peraturan.bpk.go.id/Details/49581/uu-no-9-tahun-1967
+      note: null
+    - id: uu_14_1964
+      citation: UU No. 14 Tahun 1964
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang No. 3 Tahun
+        1964 Tentang Pembentukan Daerah Tingkat I Lampung Dengan Mengubah Undang-Undang
+        No. 25 Tahun 1959 Tentang Pembentukan Daerah Tingkat I Sumatera Selatan (Lembaran
+        Negara Tahun 1964 No. 8) Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/50317/uu-no-14-tahun-1964
+      note: null
+uji_materi: null

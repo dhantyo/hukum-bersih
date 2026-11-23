@@ -7,23 +7,53 @@ title: Undang-Undang Nomor 5 Tahun 1959 tentang Pengubahan "Regeling Van Het Ber
   In Belastingzaken
 tentang: PENGUBAHAN "REGELING VAN HET BEROEP IN BELASTINGZAKEN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 20 Tahun 2009 Tentang Gelar,
-  Tanda Jasa, dan Tanda Kehormatan Undang-Undang Nomor 17 Tahun 1997 Tentang Badan
-  Penyelesaian Sengketa Pajak'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1959-03-09'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1959
-source_pdf_url: https://peraturan.go.id/files/59uu005.pdf
+source_url: https://peraturan.bpk.go.id/Details/51359/uu-no-5-tahun-1959
+source_pdf_url: https://peraturan.bpk.go.id/Download/40619/UU%20Nomor%205%20Tahun%201959.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_20_2009
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_5_1959_1959-03-09
+  kind: asli
+  source: official
+  date: '1959-03-09'
+  date_basis: tanggal_penetapan
+  text: uu_5_1959_1959-03-09.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 77e6996a51e57616611b936c68affc6329b716b3b4eead2f5113a8666fe9a563
 pdf_sha256: af72582e7b459f7d4a14da19112d62d34d1a3b6f1e9b110c3e1fcedc43253653
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1959-03-14'
+tanggal_berlaku: '1959-03-14'
+lembaran_negara: 'LN. 1959 No. 13 , TLN NO. 1748, LL SETNEG : 4 HLM'
+subjek: HUKUM ACARA DAN PERADILAN - PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1959
+  source_pdf_url: https://peraturan.go.id/files/59uu005.pdf
+bpk:
+  id: 51359
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40619/UU%20Nomor%205%20Tahun%201959.pdf
+    bpk_file_id: 40619
+    filename: UU Nomor 5 Tahun 1959.pdf
+    sha256: 77e6996a51e57616611b936c68affc6329b716b3b4eead2f5113a8666fe9a563
+    bytes: 29528
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_17_1997
+      citation: UU No. 17 Tahun 1997
+      tentang: Badan Penyelesaian Sengketa Pajak
+      url: https://peraturan.bpk.go.id/Details/45946/uu-no-17-tahun-1997
+      note: null
+uji_materi: null

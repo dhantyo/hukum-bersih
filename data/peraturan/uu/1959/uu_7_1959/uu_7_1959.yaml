@@ -9,12 +9,12 @@ tentang: PENGHAPUSAN "PERATURAN UMUM KORBAN PERANG" DAHULU DISEBUT "ALGEMENE OOR
   REGELING"
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1959-04-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1959
-source_pdf_url: https://peraturan.go.id/files/uu0071959.pdf
+source_url: https://peraturan.bpk.go.id/Details/51369/uu-no-7-tahun-1959
+source_pdf_url: https://peraturan.bpk.go.id/Download/40629/UU%20Nomor%207%20Tahun%201959.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_7_1959_1959-04-02
+  kind: asli
+  source: official
+  date: '1959-04-02'
+  date_basis: tanggal_penetapan
+  text: uu_7_1959_1959-04-02.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 91fd54fa9f76bfb97adbd393b1cb32c57b18b94be0c917226bdcd88514a60980
 pdf_sha256: 91fd54fa9f76bfb97adbd393b1cb32c57b18b94be0c917226bdcd88514a60980
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1959-04-14'
+tanggal_berlaku: '1959-05-01'
+lembaran_negara: 'LN. 1959 No. 18 , TLN NO. 1754, LL SETNEG : 7 HLM'
+subjek: HAK ASASI MANUSIA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1959
+  source_pdf_url: https://peraturan.go.id/files/uu0071959.pdf
+bpk:
+  id: 51369
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40629/UU%20Nomor%207%20Tahun%201959.pdf
+    bpk_file_id: 40629
+    filename: UU Nomor 7 Tahun 1959.pdf
+    sha256: 91fd54fa9f76bfb97adbd393b1cb32c57b18b94be0c917226bdcd88514a60980
+    bytes: 35992
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

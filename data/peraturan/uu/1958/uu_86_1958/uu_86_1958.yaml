@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 86 Tahun 1958 tentang Nasionalisasi Perusahaan-Perusa
 tentang: NASIONALISASI PERUSAHAAN-PERUSAHAAN MILIK BELANDA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1958-12-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-86-tahun-1958
-source_pdf_url: https://peraturan.go.id/files/uu86-1958.pdf
+source_url: https://peraturan.bpk.go.id/Details/52372/uu-no-86-tahun-1958
+source_pdf_url: https://peraturan.bpk.go.id/Download/41704/UU%20Nomor%2086%20Tahun%201958.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_86_1958_1958-12-27
+  kind: asli
+  source: official
+  date: '1958-12-27'
+  date_basis: tanggal_penetapan
+  text: uu_86_1958_1958-12-27.txt
+  pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e9b0a7ee5cf9b72535f4b65d0cf1c020d2359feccd3d65be6a935c6f9a3fb07a
 pdf_sha256: c719e03af79aac0a327b626578030dd0d8f5d82f6a0fa40a80c0b3b77a194ba9
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1958-12-31'
+tanggal_berlaku: '1957-12-03'
+lembaran_negara: 'LN. 1958 No. 162, LL SETNEG : 4 HLM'
+subjek: BUMN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-86-tahun-1958
+  source_pdf_url: https://peraturan.go.id/files/uu86-1958.pdf
+bpk:
+  id: 52372
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41704/UU%20Nomor%2086%20Tahun%201958.pdf
+    bpk_file_id: 41704
+    filename: UU Nomor 86 Tahun 1958.pdf
+    sha256: e9b0a7ee5cf9b72535f4b65d0cf1c020d2359feccd3d65be6a935c6f9a3fb07a
+    bytes: 34622
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

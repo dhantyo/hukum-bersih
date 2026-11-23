@@ -8,13 +8,13 @@ title: Undang-Undang Nomor 4 Tahun 1960 tentang Persetujuan Perjanjian Persahaba
 tentang: PERSETUJUAN PERJANJIAN PERSAHABATAN ANTARA REPUBLIK INDONESIA DAN PERSEKUTUAN
   TANAH MELAYU
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1960-02-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1960
-source_pdf_url: https://peraturan.go.id/files/UU0041960.pdf
+source_url: https://peraturan.bpk.go.id/Details/51308/uu-no-4-tahun-1960
+source_pdf_url: https://peraturan.bpk.go.id/Download/40569/UU%20Nomor%204%20Tahun%201960.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_4_1960_1960-02-08
+  kind: asli
+  source: official
+  date: '1960-02-08'
+  date_basis: tanggal_penetapan
+  text: uu_4_1960_1960-02-08.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 47f66aba2e7217499eacca025e445e10137f11bbd06b7ffabc21d302f97999b4
 pdf_sha256: 47f66aba2e7217499eacca025e445e10137f11bbd06b7ffabc21d302f97999b4
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1960-02-08'
+tanggal_berlaku: '1960-02-08'
+lembaran_negara: 'LL SETNEG : 1 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1960
+  source_pdf_url: https://peraturan.go.id/files/UU0041960.pdf
+bpk:
+  id: 51308
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40569/UU%20Nomor%204%20Tahun%201960.pdf
+    bpk_file_id: 40569
+    filename: UU Nomor 4 Tahun 1960.pdf
+    sha256: 47f66aba2e7217499eacca025e445e10137f11bbd06b7ffabc21d302f97999b4
+    bytes: 36465
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_1_1971
+      citation: UU No. 1 Tahun 1971
+      tentang: Perjanjian Persahabatan Antara Republik Indonesia dan Malaysia
+      url: https://peraturan.bpk.go.id/Details/47555/uu-no-1-tahun-1971
+      note: null
+uji_materi: null

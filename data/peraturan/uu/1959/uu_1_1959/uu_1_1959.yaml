@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 1 Tahun 1959 tentang Kedudukan Keuangan Ketua, Wakil 
 tentang: KEDUDUKAN KEUANGAN KETUA, WAKIL KETUA DAN ANGGOTA KONSTITUANTE
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1959-01-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1959
-source_pdf_url: https://peraturan.go.id/files/uu0011959.pdf
+source_url: https://peraturan.bpk.go.id/Details/51325/uu-no-1-tahun-1959
+source_pdf_url: https://peraturan.bpk.go.id/Download/40586/UU%20Nomor%201%20Tahun%201959.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,11 +24,33 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_1_1959_1959
+- id: uu_1_1959_1959-01-14
   kind: asli
   source: official
-  date: null
+  date: '1959-01-14'
   date_basis: tanggal_penetapan
-  text: uu_1_1959_1959.txt
-  pasal_count: 1
+  text: uu_1_1959_1959-01-14.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e0ec7e48fc8cd48109385737ff36f7eb79114ba1a1675edaae1d7339bf7accb9
 pdf_sha256: e0ec7e48fc8cd48109385737ff36f7eb79114ba1a1675edaae1d7339bf7accb9
+tanggal_pengundangan: '1959-01-27'
+tanggal_berlaku: '1958-10-01'
+lembaran_negara: 'LN. 1959 No. 3 , TLN NO. 1729, LL SETNEG : 9 HLM'
+subjek: PEMBENTUKAN, PERUBAHAN, DAN PEMBUBARAN KOMISI / KOMITE / BADAN / DEWAN / STAF
+  KHUSUS / TIM / PANITIA - DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1959
+  source_pdf_url: https://peraturan.go.id/files/uu0011959.pdf
+bpk:
+  id: 51325
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40586/UU%20Nomor%201%20Tahun%201959.pdf
+    bpk_file_id: 40586
+    filename: UU Nomor 1 Tahun 1959.pdf
+    sha256: e0ec7e48fc8cd48109385737ff36f7eb79114ba1a1675edaae1d7339bf7accb9
+    bytes: 56809
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

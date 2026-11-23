@@ -12,12 +12,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 6 TAHUN 1958 TENTANG PERUBAHAN UNDA
   BINTANG SAKTI DAN BINTANG DARMA (LEMBARAN-NEGARA TAHUN 1958 NO. 153), SEBAGAI UNDANG-UND
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1959-06-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SARTONO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-1959
-source_pdf_url: null
+source_url: https://peraturan.bpk.go.id/Details/51478/uu-no-20-tahun-1959
+source_pdf_url: https://peraturan.bpk.go.id/Download/261606/UU%20Nomor%2020%20Tahun%201959.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,4 +25,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_20_1959_1959-06-26
+  kind: asli
+  source: official
+  date: '1959-06-26'
+  date_basis: tanggal_penetapan
+  text: uu_20_1959_1959-06-26.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c19c0770efa8452a8bbc6aa8746115eb84439845bbfbfe9bf9bc14d114ceb41a
+  ocr: true
+tanggal_pengundangan: '1959-07-04'
+tanggal_berlaku: '1959-07-04'
+lembaran_negara: 'LN. 1959 No. 64, LL SETNEG : 3 HLM'
+subjek: KEPEGAWAIAN, APARATUR NEGARA - PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-1959
+  source_pdf_url: null
+bpk:
+  id: 51478
+  files:
+  - url: https://peraturan.bpk.go.id/Download/261606/UU%20Nomor%2020%20Tahun%201959.pdf
+    bpk_file_id: 261606
+    filename: UU Nomor 20 Tahun 1959.pdf
+    sha256: c19c0770efa8452a8bbc6aa8746115eb84439845bbfbfe9bf9bc14d114ceb41a
+    bytes: 818506
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
