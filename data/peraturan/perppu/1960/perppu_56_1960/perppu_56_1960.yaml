@@ -1,0 +1,39 @@
+id: perppu_56_1960
+akn: /akn/id/act/perppu/1960/56
+type: perppu
+number: '56'
+year: 1960
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 56 Tahun 1960 tentang Penetapan
+  Luas Tanah Pertanian
+tentang: PENETAPAN LUAS TANAH PERTANIAN
+short_name: null
+status: null
+tanggal_penetapan: '1961-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_56_1960_1961-01-01
+  kind: asli
+  source: dataset
+  date: '1961-01-01'
+  date_basis: tanggal_penetapan
+  text: perppu_56_1960_1961-01-01.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:924fb3b696cfc85a68076c3f4393f9728cd27a78f15406cb2cd8a804608f9d82
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:924fb3b696cfc85a68076c3f4393f9728cd27a78f15406cb2cd8a804608f9d82
+  source_title: perpu_056_1960
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 35
+  status: none_known

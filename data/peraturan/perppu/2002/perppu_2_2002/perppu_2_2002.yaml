@@ -1,0 +1,43 @@
+id: perppu_2_2002
+akn: /akn/id/act/perppu/2002/2
+type: perppu
+number: '2'
+year: 2002
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2002 tentang Pemberlakuan
+  Peraturan Pemerintah Pengganti Undang-Undang Republik Indonesia Nomor 1 Tahun 2002
+  Tentang Pemberantasan Tindak Pidana Terorisme, Pada Peristiwa Peledakan Bom Di Bali
+  Tanggal 12 Oktober 2002
+tentang: PEMBERLAKUAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG REPUBLIK INDONESIA
+  NOMOR 1 TAHUN 2002 TENTANG PEMBERANTASAN TINDAK PIDANA TERORISME, PADA PERISTIWA
+  PELEDAKAN BOM DI BALI TANGGAL 12 OKTOBER 2002
+short_name: null
+status: null
+tanggal_penetapan: '2002-10-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_2_2002_2002-10-18
+  kind: asli
+  source: dataset
+  date: '2002-10-18'
+  date_basis: tanggal_penetapan
+  text: perppu_2_2002_2002-10-18.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:74b61c32347dc44c5579cf9664874bf030573dbe56882bc15d5928c88326d1a8
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:74b61c32347dc44c5579cf9664874bf030573dbe56882bc15d5928c88326d1a8
+  source_title: PP_Pengganti_UU_No_2_th_2002
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 7
+  status: none_known

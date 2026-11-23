@@ -1,0 +1,41 @@
+id: perppu_4_1963
+akn: /akn/id/act/perppu/1963/4
+type: perppu
+number: '4'
+year: 1963
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 4 Tahun 1963 tentang Perubahan
+  Dan Tambahan Undang-Undang No. 36 Tahun 1953 Tentang Bank Tabungan Pos (Lembaran
+  Negara Tahun 1953 No. 86) Presiden Republik Indonesia
+tentang: PERUBAHAN DAN TAMBAHAN UNDANG-UNDANG NO. 36 TAHUN 1953 TENTANG BANK TABUNGAN
+  POS (LEMBARAN NEGARA TAHUN 1953 NO. 86) Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1963-06-22'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_4_1963_1963-06-22
+  kind: asli
+  source: dataset
+  date: '1963-06-22'
+  date_basis: tanggal_penetapan
+  text: perppu_4_1963_1963-06-22.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1b6577c72312724074b09a9aec715110f54c39acd4dd0c989d56da9c915918c9
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1b6577c72312724074b09a9aec715110f54c39acd4dd0c989d56da9c915918c9
+  source_title: Perpu_No._004_Tahun_1963
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 10
+  status: none_known

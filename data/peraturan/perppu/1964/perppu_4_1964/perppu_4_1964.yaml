@@ -1,0 +1,41 @@
+id: perppu_4_1964
+akn: /akn/id/act/perppu/1964/4
+type: perppu
+number: '4'
+year: 1964
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 4 Tahun 1964 tentang Pembentukan
+  Daerah Tingkat Ii Dairi Dengan Mengubah Undang-Undang No. 7 Drt. 1956 Tentang Pembentukan
+  Daerah Otonom Kabupaten Di Propinsi Sumatera Utara
+tentang: PEMBENTUKAN DAERAH TINGKAT II DAIRI DENGAN MENGUBAH UNDANG-UNDANG NO. 7 DRT.
+  1956 TENTANG PEMBENTUKAN DAERAH OTONOM KABUPATEN DI PROPINSI SUMATERA UTARA
+short_name: null
+status: null
+tanggal_penetapan: '1964-02-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_4_1964_1964-02-13
+  kind: asli
+  source: dataset
+  date: '1964-02-13'
+  date_basis: tanggal_penetapan
+  text: perppu_4_1964_1964-02-13.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b0d3124962ea5a16555bd302620af4e0befcf36587f51d1f5a459c70faa00533
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b0d3124962ea5a16555bd302620af4e0befcf36587f51d1f5a459c70faa00533
+  source_title: PERPRU_No._004_Tahun_1964
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: degraded
+  chunks: 20
+  status: none_known

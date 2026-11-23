@@ -1,0 +1,39 @@
+id: perppu_2_1965
+akn: /akn/id/act/perppu/1965/2
+type: perppu
+number: '2'
+year: 1965
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 1965 tentang Kebijaksanaan
+  Penerimaan Negara Tahun 1966
+tentang: KEBIJAKSANAAN PENERIMAAN NEGARA TAHUN 1966
+short_name: null
+status: null
+tanggal_penetapan: '1965-12-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_2_1965_1965-12-31
+  kind: asli
+  source: dataset
+  date: '1965-12-31'
+  date_basis: tanggal_penetapan
+  text: perppu_2_1965_1965-12-31.txt
+  pasal_count: 14
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2e437e3a1f3369dc0a9065d5c9ad30bbd2aec02dec3173e725031c7e794ae41d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2e437e3a1f3369dc0a9065d5c9ad30bbd2aec02dec3173e725031c7e794ae41d
+  source_title: PERPU_No._002_Tahun_1965
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 35
+  status: none_known

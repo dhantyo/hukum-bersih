@@ -1,0 +1,40 @@
+id: perppu_11_1962
+akn: /akn/id/act/perppu/1962/11
+type: perppu
+number: '11'
+year: 1962
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 11 Tahun 1962 tentang Pemungutan
+  Sumbangan Wajib Istimewa Atas Beberapa Jenis Barang Presiden Republik Indonesia
+tentang: PEMUNGUTAN SUMBANGAN WAJIB ISTIMEWA ATAS BEBERAPA JENIS BARANG Presiden Republik
+  Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1962-09-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_11_1962_1962-09-01
+  kind: asli
+  source: dataset
+  date: '1962-09-01'
+  date_basis: tanggal_penetapan
+  text: perppu_11_1962_1962-09-01.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f2f6081018f0339cb5d85fdc80c0d7b395e27a7223e94bd9ef9bae9eff1366e1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f2f6081018f0339cb5d85fdc80c0d7b395e27a7223e94bd9ef9bae9eff1366e1
+  source_title: PERPU_No._11_Tahun_1962
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 17
+  status: none_known

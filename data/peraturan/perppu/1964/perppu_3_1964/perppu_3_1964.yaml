@@ -1,0 +1,41 @@
+id: perppu_3_1964
+akn: /akn/id/act/perppu/1964/3
+type: perppu
+number: '3'
+year: 1964
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 3 Tahun 1964 tentang Pembentukan
+  Daerah Tingkat I Lampung Dengan Mengubah Undang-Undang No. 25 Tahun 1959 Tentang
+  Pembentukan Daerah Tingkat I Sumatera Selatan
+tentang: PEMBENTUKAN DAERAH TINGKAT I LAMPUNG DENGAN MENGUBAH UNDANG-UNDANG NO. 25
+  TAHUN 1959 TENTANG PEMBENTUKAN DAERAH TINGKAT I SUMATERA SELATAN
+short_name: null
+status: null
+tanggal_penetapan: '1964-02-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_3_1964_1964-02-13
+  kind: asli
+  source: dataset
+  date: '1964-02-13'
+  date_basis: tanggal_penetapan
+  text: perppu_3_1964_1964-02-13.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b4a95d4fed379620ca979c2ee15edc76bce2f1c6e4a7c69a1f43d025c669c85a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b4a95d4fed379620ca979c2ee15edc76bce2f1c6e4a7c69a1f43d025c669c85a
+  source_title: PERPRU_No._003_Tahun_1964
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 20
+  status: none_known

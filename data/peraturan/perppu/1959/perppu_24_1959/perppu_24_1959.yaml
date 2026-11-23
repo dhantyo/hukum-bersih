@@ -1,0 +1,40 @@
+id: perppu_24_1959
+akn: /akn/id/act/perppu/1959/24
+type: perppu
+number: '24'
+year: 1959
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 24 Tahun 1959 tentang Perubahan/Tambahanperaturan-Peraturanpemerintahpengganti
+  Undang-Undangno.7,12,13,15, 16, 17, 18, 19 Dan 20 Tahun 1959
+tentang: PERUBAHAN/TAMBAHANPERATURAN-PERATURANPEMERINTAHPENGGANTI UNDANG-UNDANGNO.7,12,13,15,
+  16, 17, 18, 19 DAN 20 TAHUN 1959
+short_name: null
+status: null
+tanggal_penetapan: '1959-12-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_24_1959_1959-12-21
+  kind: asli
+  source: dataset
+  date: '1959-12-21'
+  date_basis: tanggal_penetapan
+  text: perppu_24_1959_1959-12-21.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:c14548a8f5f0a8bb9e0a4687abd6694c0e94a53e8bad512995f2094895cf68dd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:c14548a8f5f0a8bb9e0a4687abd6694c0e94a53e8bad512995f2094895cf68dd
+  source_title: perpu_024_1959
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 41
+  status: none_known

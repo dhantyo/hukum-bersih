@@ -1,0 +1,39 @@
+id: perppu_2_1971
+akn: /akn/id/act/perppu/1971/2
+type: perppu
+number: '2'
+year: 1971
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 1971 tentang Tanda
+  Kehormatan Bintang Yudha Dharma
+tentang: TANDA KEHORMATAN BINTANG YUDHA DHARMA
+short_name: null
+status: null
+tanggal_penetapan: '1971-10-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_2_1971_1971-10-05
+  kind: asli
+  source: dataset
+  date: '1971-10-05'
+  date_basis: tanggal_penetapan
+  text: perppu_2_1971_1971-10-05.txt
+  pasal_count: 17
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:4ca20f38a75c0cc931153e015b75ed0170dfba96bc820afc55f9aa4e65fd4ba3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4ca20f38a75c0cc931153e015b75ed0170dfba96bc820afc55f9aa4e65fd4ba3
+  source_title: PERPU_No._002_Tahun_1971
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: degraded
+  chunks: 34
+  status: none_known

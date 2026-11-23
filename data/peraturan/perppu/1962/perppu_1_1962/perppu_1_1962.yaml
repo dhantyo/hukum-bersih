@@ -1,0 +1,41 @@
+id: perppu_1_1962
+akn: /akn/id/act/perppu/1962/1
+type: perppu
+number: '1'
+year: 1962
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 1962 tentang Pemanggilan
+  Dan Pengerahan Semua Warga Negara Dalam Rangka Mobilisasi Umum Untuk Kepentingan
+  Keamanan Dan Pertahanan Negara Presiden Republik Indonesia
+tentang: PEMANGGILAN DAN PENGERAHAN SEMUA WARGA NEGARA DALAM RANGKA MOBILISASI UMUM
+  UNTUK KEPENTINGAN KEAMANAN DAN PERTAHANAN NEGARA Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1962-02-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_1_1962_1962-02-06
+  kind: asli
+  source: dataset
+  date: '1962-02-06'
+  date_basis: tanggal_penetapan
+  text: perppu_1_1962_1962-02-06.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2de75b80537825b502fed04b1893b4a96bf5f60d3c589783aaaccce5ec6d63d3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2de75b80537825b502fed04b1893b4a96bf5f60d3c589783aaaccce5ec6d63d3
+  source_title: PERPU_No._1_Tahun_1962
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 21
+  status: none_known

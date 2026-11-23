@@ -1,0 +1,39 @@
+id: perppu_1_2000
+akn: /akn/id/act/perppu/2000/1
+type: perppu
+number: '1'
+year: 2000
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2000 tentang Kawasan
+  Perdagangan Bebas Dan Pelabuhan Bebas
+tentang: KAWASAN PERDAGANGAN BEBAS DAN PELABUHAN BEBAS
+short_name: null
+status: null
+tanggal_penetapan: '2000-09-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_1_2000_2000-09-01
+  kind: asli
+  source: dataset
+  date: '2000-09-01'
+  date_basis: tanggal_penetapan
+  text: perppu_1_2000_2000-09-01.txt
+  pasal_count: 19
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:876aabb2022cad70d123310cb6c8617d3a4920523115811b7cba4c185d205341
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:876aabb2022cad70d123310cb6c8617d3a4920523115811b7cba4c185d205341
+  source_title: PP_Pengganti_UU_No_1_th_2000
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 25
+  status: none_known

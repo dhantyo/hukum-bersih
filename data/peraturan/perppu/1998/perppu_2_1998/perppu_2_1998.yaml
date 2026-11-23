@@ -1,0 +1,41 @@
+id: perppu_2_1998
+akn: /akn/id/act/perppu/1998/2
+type: perppu
+number: '2'
+year: 1998
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 1998 tentang Kemerdekaan
+  Menyampaikan Pendapat Di Muka Umum
+tentang: KEMERDEKAAN MENYAMPAIKAN PENDAPAT DI MUKA UMUM
+short_name: null
+status: dicabut
+tanggal_penetapan: '1998-07-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_2_1998_1998-07-24
+  kind: asli
+  source: dataset
+  date: '1998-07-24'
+  date_basis: tanggal_penetapan
+  text: perppu_2_1998_1998-07-24.txt
+  pasal_count: 17
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:809d4ce729246c6227af66978e5aee3c742f2044824dcc36a05763f2c30895de
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:809d4ce729246c6227af66978e5aee3c742f2044824dcc36a05763f2c30895de
+  source_title: perpu_No._002_Tahun_1998
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 34
+  status: revoked
+  revoked_by:
+  - sha256:12dc6afaceb46eaadaa280ebc9059077468c827b78a7ceef716cd2e7a69795ac

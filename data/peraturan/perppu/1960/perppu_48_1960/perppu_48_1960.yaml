@@ -1,0 +1,39 @@
+id: perppu_48_1960
+akn: /akn/id/act/perppu/1960/48
+type: perppu
+number: '48'
+year: 1960
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 48 Tahun 1960 tentang Pengawasan
+  Pendidikan Dan Pengajaran Asing
+tentang: PENGAWASAN PENDIDIKAN DAN PENGAJARAN ASING
+short_name: null
+status: null
+tanggal_penetapan: '1960-12-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_48_1960_1960-12-16
+  kind: asli
+  source: dataset
+  date: '1960-12-16'
+  date_basis: tanggal_penetapan
+  text: perppu_48_1960_1960-12-16.txt
+  pasal_count: 21
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bae48e62274276bf6ee0689bfb9cc38b02a57013152341e00467ed07cdb596b6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bae48e62274276bf6ee0689bfb9cc38b02a57013152341e00467ed07cdb596b6
+  source_title: perpu_048_1960
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 38
+  status: none_known

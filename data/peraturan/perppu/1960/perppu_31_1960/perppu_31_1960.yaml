@@ -1,0 +1,41 @@
+id: perppu_31_1960
+akn: /akn/id/act/perppu/1960/31
+type: perppu
+number: '31'
+year: 1960
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 31 Tahun 1960 tentang Perubahan
+  Dan Tambahan Undang-Undang Darurat No. 3 Tahun 1959 (Lembaran Negara No. 43) Tentang
+  Pinjaman Obligasi Berhadiah Tahun 1959
+tentang: PERUBAHAN DAN TAMBAHAN UNDANG-UNDANG DARURAT NO. 3 TAHUN 1959 (LEMBARAN NEGARA
+  NO. 43) TENTANG PINJAMAN OBLIGASI BERHADIAH TAHUN 1959
+short_name: null
+status: null
+tanggal_penetapan: '1960-08-23'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_31_1960_1960-08-23
+  kind: asli
+  source: dataset
+  date: '1960-08-23'
+  date_basis: tanggal_penetapan
+  text: perppu_31_1960_1960-08-23.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8eb5acfe98c3eef3c1048ac67c1466eaccbab255e0a1d7214a16cc915af16413
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8eb5acfe98c3eef3c1048ac67c1466eaccbab255e0a1d7214a16cc915af16413
+  source_title: perpu_031_1960
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 7
+  status: none_known

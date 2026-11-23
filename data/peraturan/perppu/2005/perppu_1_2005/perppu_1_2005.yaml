@@ -1,0 +1,41 @@
+id: perppu_1_2005
+akn: /akn/id/act/perppu/2005/1
+type: perppu
+number: '1'
+year: 2005
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2005 tentang Penangguhan
+  Mulai Berlakunya Undang-Undang Nomor 2 Tahun 2004 Tentang Penyelesaian Perselisihan
+  Hubungan Industrial
+tentang: PENANGGUHAN MULAI BERLAKUNYA UNDANG-UNDANG NOMOR 2 TAHUN 2004 TENTANG PENYELESAIAN
+  PERSELISIHAN HUBUNGAN INDUSTRIAL
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_1_2005_2005
+  kind: asli
+  source: dataset
+  date: null
+  date_basis: tahun
+  text: perppu_1_2005_2005.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:22445d3cb71e60709b8483d3f4b3220a97a1062c7d9a9f2d4f6948422210ad76
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:22445d3cb71e60709b8483d3f4b3220a97a1062c7d9a9f2d4f6948422210ad76
+  source_title: PP_Pengganti_UU_No._1_Tahun_2005
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 8
+  status: none_known

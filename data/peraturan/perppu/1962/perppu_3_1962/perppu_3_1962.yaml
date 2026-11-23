@@ -1,0 +1,41 @@
+id: perppu_3_1962
+akn: /akn/id/act/perppu/1962/3
+type: perppu
+number: '3'
+year: 1962
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 3 Tahun 1962 tentang Penerimaan
+  Dan Penggunaan Warga-Negara Asing Yang Dengan Sukarela Turut-Serta Dalam Perujuangan
+  Pembebasan Irian Barat Presiden Republik Indonesia
+tentang: PENERIMAAN DAN PENGGUNAAN WARGA-NEGARA ASING YANG DENGAN SUKARELA TURUT-SERTA
+  DALAM PERUJUANGAN PEMBEBASAN IRIAN BARAT Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1962-06-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_3_1962_1962-06-06
+  kind: asli
+  source: dataset
+  date: '1962-06-06'
+  date_basis: tanggal_penetapan
+  text: perppu_3_1962_1962-06-06.txt
+  pasal_count: 17
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bed1a2b54d8a279f28a0c917752b4b76e6e6ce939a3251a552ab80596a74bd25
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bed1a2b54d8a279f28a0c917752b4b76e6e6ce939a3251a552ab80596a74bd25
+  source_title: PERPU_No._3_Tahun_1962
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 28
+  status: none_known

@@ -1,0 +1,39 @@
+id: perppu_9_1962
+akn: /akn/id/act/perppu/1962/9
+type: perppu
+number: '9'
+year: 1962
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 9 Tahun 1962 tentang Pengendalian
+  Harga Presiden Republik Indonesia
+tentang: PENGENDALIAN HARGA Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1962-08-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_9_1962_1962-08-03
+  kind: asli
+  source: dataset
+  date: '1962-08-03'
+  date_basis: tanggal_penetapan
+  text: perppu_9_1962_1962-08-03.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ae394bef5772fe7ae97480056cd0f15c90ae94b5a339a34adb12d47995f6e497
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ae394bef5772fe7ae97480056cd0f15c90ae94b5a339a34adb12d47995f6e497
+  source_title: PERPU_No._9_Tahun_1962
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 19
+  status: none_known

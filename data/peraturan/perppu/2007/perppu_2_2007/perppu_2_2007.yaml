@@ -1,0 +1,43 @@
+id: perppu_2_2007
+akn: /akn/id/act/perppu/2007/2
+type: perppu
+number: '2'
+year: 2007
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2007 tentang Penanganan
+  Permasalahan Hukum Dalam Rangka Pelaksanaan Rehabilitasi Dan Rekonstruksi Wilayah
+  Dan Kehidupan Masyarakat Di Provinsi Nanggroe Aceh Darussalam Dan Kepulauan Nias
+  Provinsi Sumatera Utara
+tentang: PENANGANAN PERMASALAHAN HUKUM DALAM RANGKA PELAKSANAAN REHABILITASI DAN REKONSTRUKSI
+  WILAYAH DAN KEHIDUPAN MASYARAKAT DI PROVINSI NANGGROE ACEH DARUSSALAM DAN KEPULAUAN
+  NIAS PROVINSI SUMATERA UTARA
+short_name: null
+status: null
+tanggal_penetapan: '2007-09-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_2_2007_2007-09-06
+  kind: asli
+  source: dataset
+  date: '2007-09-06'
+  date_basis: tanggal_penetapan
+  text: perppu_2_2007_2007-09-06.txt
+  pasal_count: 35
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bc7a6422277843bac1d07925e53e3d53e8bec96b02881638a5bd432b456cab3c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bc7a6422277843bac1d07925e53e3d53e8bec96b02881638a5bd432b456cab3c
+  source_title: PP_Pengganti_UU_No_2_th_2007
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 62
+  status: none_known

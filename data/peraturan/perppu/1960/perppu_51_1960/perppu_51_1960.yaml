@@ -1,0 +1,39 @@
+id: perppu_51_1960
+akn: /akn/id/act/perppu/1960/51
+type: perppu
+number: '51'
+year: 1960
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 51 Tahun 1960 tentang Larangan
+  Pemakaian Tanah Tanpa Izin Yang Berhak Atau Kuasanya
+tentang: LARANGAN PEMAKAIAN TANAH TANPA IZIN YANG BERHAK ATAU KUASANYA
+short_name: null
+status: null
+tanggal_penetapan: '1960-12-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_51_1960_1960-12-16
+  kind: asli
+  source: dataset
+  date: '1960-12-16'
+  date_basis: tanggal_penetapan
+  text: perppu_51_1960_1960-12-16.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8d3a37d40c23042af9e762eecfd475d1452c04d069e29a02112b03f7bf1141c2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8d3a37d40c23042af9e762eecfd475d1452c04d069e29a02112b03f7bf1141c2
+  source_title: perpu_051_1960
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 16
+  status: none_known

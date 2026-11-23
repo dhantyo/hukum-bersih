@@ -1,0 +1,40 @@
+id: perppu_1_1965
+akn: /akn/id/act/perppu/1965/1
+type: perppu
+number: '1'
+year: 1965
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 1965 tentang Perubahan/Penambahan
+  Undang-Undang No.7 Tahun 1960 (Lembaran-Negara Tahun 1960 No. 109)
+tentang: PERUBAHAN/PENAMBAHAN UNDANG-UNDANG NO.7 TAHUN 1960 (LEMBARAN-NEGARA TAHUN
+  1960 No. 109)
+short_name: null
+status: null
+tanggal_penetapan: '1965-11-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_1_1965_1965-11-13
+  kind: asli
+  source: dataset
+  date: '1965-11-13'
+  date_basis: tanggal_penetapan
+  text: perppu_1_1965_1965-11-13.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a66cbf30dee98bd1f2d580cccd5aae403cbddc0d69ea9644f2e8c1ec38e56b80
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a66cbf30dee98bd1f2d580cccd5aae403cbddc0d69ea9644f2e8c1ec38e56b80
+  source_title: PERPU_No._001_Tahun_1965
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 9
+  status: none_known

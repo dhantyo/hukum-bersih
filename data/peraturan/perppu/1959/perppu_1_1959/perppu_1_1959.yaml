@@ -1,0 +1,39 @@
+id: perppu_1_1959
+akn: /akn/id/act/perppu/1959/1
+type: perppu
+number: '1'
+year: 1959
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 1959 tentang Bank
+  Umum Negara
+tentang: BANK UMUM NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '1959-08-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_1_1959_1959-08-10
+  kind: asli
+  source: dataset
+  date: '1959-08-10'
+  date_basis: tanggal_penetapan
+  text: perppu_1_1959_1959-08-10.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:e3af6aca4f95b682d28860e861a339ac5fb330ed47b76e0b6a71d53bb395cc84
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:e3af6aca4f95b682d28860e861a339ac5fb330ed47b76e0b6a71d53bb395cc84
+  source_title: perpu_001_1959
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 11
+  status: none_known

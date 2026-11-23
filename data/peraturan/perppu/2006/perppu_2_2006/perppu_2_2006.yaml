@@ -1,0 +1,41 @@
+id: perppu_2_2006
+akn: /akn/id/act/perppu/2006/2
+type: perppu
+number: '2'
+year: 2006
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2006 tentang Penangguhan
+  Pelaksanaan Tugas Dan Fungsi Pengadilan Perikanan Sebagaimana Dimaksud Dalam Pasal
+  71 Ayat (5) Undang-Undang Nomor 31 Tahun 2004 Tentang Perikanan
+tentang: PENANGGUHAN PELAKSANAAN TUGAS DAN FUNGSI PENGADILAN PERIKANAN SEBAGAIMANA
+  DIMAKSUD DALAM PASAL 71 AYAT (5) UNDANG-UNDANG NOMOR 31 TAHUN 2004 TENTANG PERIKANAN
+short_name: null
+status: null
+tanggal_penetapan: '2006-10-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_2_2006_2006-10-02
+  kind: asli
+  source: dataset
+  date: '2006-10-02'
+  date_basis: tanggal_penetapan
+  text: perppu_2_2006_2006-10-02.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:91fac443f42dcd95962f3c6790dafa2fe2b08f9afe7b8a8fb049d23a675198ab
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:91fac443f42dcd95962f3c6790dafa2fe2b08f9afe7b8a8fb049d23a675198ab
+  source_title: PP_Pengganti_UU_No_2_th_2006
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 11
+  status: none_known

@@ -1,0 +1,39 @@
+id: perppu_1_2004
+akn: /akn/id/act/perppu/2004/1
+type: perppu
+number: '1'
+year: 2004
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2004 tentang Perubahan
+  Atas Undang-Undang Nomor 41 Tahun 1999 Tentang Kehutanan
+tentang: PERUBAHAN ATAS UNDANG-UNDANG NOMOR 41 TAHUN 1999 TENTANG KEHUTANAN
+short_name: null
+status: null
+tanggal_penetapan: '2004-03-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_1_2004_2004-03-11
+  kind: asli
+  source: dataset
+  date: '2004-03-11'
+  date_basis: tanggal_penetapan
+  text: perppu_1_2004_2004-03-11.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:80567741933c08887854a02fb713d14b0ccb87b9d8a4b915dc00c66b9b8f6b91
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:80567741933c08887854a02fb713d14b0ccb87b9d8a4b915dc00c66b9b8f6b91
+  source_title: PP_Pengganti_UU_No_1_th_2004
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 7
+  status: none_known

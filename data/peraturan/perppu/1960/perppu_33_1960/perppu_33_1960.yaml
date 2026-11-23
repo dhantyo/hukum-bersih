@@ -1,0 +1,41 @@
+id: perppu_33_1960
+akn: /akn/id/act/perppu/1960/33
+type: perppu
+number: '33'
+year: 1960
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 33 Tahun 1960 tentang Perubahan
+  Dan Tambahan Tarif Bea Masuk, Bea Keluar, Bea Statistik, Bea Berat Barang Dan Pajak
+  Masuk (Pajak Penjualan)
+tentang: PERUBAHAN DAN TAMBAHAN TARIF BEA MASUK, BEA KELUAR, BEA STATISTIK, BEA BERAT
+  BARANG DAN PAJAK MASUK (PAJAK PENJUALAN)
+short_name: null
+status: null
+tanggal_penetapan: '1960-08-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_33_1960_1960-08-25
+  kind: asli
+  source: dataset
+  date: '1960-08-25'
+  date_basis: tanggal_penetapan
+  text: perppu_33_1960_1960-08-25.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:76f4ec6d890483b4e4bd0d974cbe18220cd09f482e2ec40246b31844bc1bd8d1
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:76f4ec6d890483b4e4bd0d974cbe18220cd09f482e2ec40246b31844bc1bd8d1
+  source_title: perpu_033_1960
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 13
+  status: none_known

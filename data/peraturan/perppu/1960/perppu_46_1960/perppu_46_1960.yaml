@@ -1,0 +1,41 @@
+id: perppu_46_1960
+akn: /akn/id/act/perppu/1960/46
+type: perppu
+number: '46'
+year: 1960
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 46 Tahun 1960 tentang Perubahan
+  Nama Dan Kedudukan Hukum Serta Pemindahan Tempat Kedudukan "N.V. Nederlandche-Indische
+  Aardolie Maatschaappij"
+tentang: PERUBAHAN NAMA DAN KEDUDUKAN HUKUM SERTA PEMINDAHAN TEMPAT KEDUDUKAN "N.V.
+  NEDERLANDCHE-INDISCHE AARDOLIE MAATSCHAAPPIJ"
+short_name: null
+status: null
+tanggal_penetapan: '1960-12-03'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_46_1960_1960-12-03
+  kind: asli
+  source: dataset
+  date: '1960-12-03'
+  date_basis: tanggal_penetapan
+  text: perppu_46_1960_1960-12-03.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ed7e764556693b51de4bce72a8a7c24ab195fc65fcc002dc397d441e33fdfe72
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ed7e764556693b51de4bce72a8a7c24ab195fc65fcc002dc397d441e33fdfe72
+  source_title: perpu_046_1960
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: degraded
+  chunks: 14
+  status: none_known

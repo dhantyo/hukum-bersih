@@ -1,0 +1,40 @@
+id: perppu_13_1959
+akn: /akn/id/act/perppu/1959/13
+type: perppu
+number: '13'
+year: 1959
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 13 Tahun 1959 tentang Pengubahan
+  Dan Tambahan Ordonansi Pajak Perseroan 1925 (Staatsblad 1925 No. 319)
+tentang: PENGUBAHAN DAN TAMBAHAN ORDONANSI PAJAK PERSEROAN 1925 (STAATSBLAD 1925 NO.
+  319)
+short_name: null
+status: null
+tanggal_penetapan: '1959-09-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_13_1959_1959-09-26
+  kind: asli
+  source: dataset
+  date: '1959-09-26'
+  date_basis: tanggal_penetapan
+  text: perppu_13_1959_1959-09-26.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2763f2747f1ae0aa58ace286fad22c288fbcdf83e5ec9b5ff7432820f1f45d14
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2763f2747f1ae0aa58ace286fad22c288fbcdf83e5ec9b5ff7432820f1f45d14
+  source_title: perpu_013_1959
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 10
+  status: none_known

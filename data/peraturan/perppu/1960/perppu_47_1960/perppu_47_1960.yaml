@@ -1,0 +1,40 @@
+id: perppu_47_1960
+akn: /akn/id/act/perppu/1960/47
+type: perppu
+number: '47'
+year: 1960
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 47 Tahun 1960 tentang Pembentukan
+  Daerah Tingkat I Sulawesi Selatan Tenggara Dan Daerah Tingkat I Sulawesi Utara-Tengah
+tentang: PEMBENTUKAN DAERAH TINGKAT I SULAWESI SELATAN TENGGARA DAN DAERAH TINGKAT
+  I SULAWESI UTARA-TENGAH
+short_name: null
+status: null
+tanggal_penetapan: '1960-12-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_47_1960_1960-12-13
+  kind: asli
+  source: dataset
+  date: '1960-12-13'
+  date_basis: tanggal_penetapan
+  text: perppu_47_1960_1960-12-13.txt
+  pasal_count: 10
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a8c304070bbca0e9a5a09b9a4fe042d5a431a6206330d51840c04a2a17985307
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a8c304070bbca0e9a5a09b9a4fe042d5a431a6206330d51840c04a2a17985307
+  source_title: perpu_047_1960
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 19
+  status: none_known

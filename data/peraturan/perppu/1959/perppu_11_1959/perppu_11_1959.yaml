@@ -1,0 +1,39 @@
+id: perppu_11_1959
+akn: /akn/id/act/perppu/1959/11
+type: perppu
+number: '11'
+year: 1959
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 11 Tahun 1959 tentang Pajak
+  Hasil Bumi
+tentang: PAJAK HASIL BUMI
+short_name: null
+status: null
+tanggal_penetapan: '1959-09-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_11_1959_1959-09-26
+  kind: asli
+  source: dataset
+  date: '1959-09-26'
+  date_basis: tanggal_penetapan
+  text: perppu_11_1959_1959-09-26.txt
+  pasal_count: 21
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:de4a63b7b2e7f6483d1be116c28232cfe09f103374057c10ce715ef0e708d60f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:de4a63b7b2e7f6483d1be116c28232cfe09f103374057c10ce715ef0e708d60f
+  source_title: perpu_011_1959
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 47
+  status: none_known

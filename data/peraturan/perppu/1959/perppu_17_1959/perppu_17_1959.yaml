@@ -1,0 +1,41 @@
+id: perppu_17_1959
+akn: /akn/id/act/perppu/1959/17
+type: perppu
+number: '17'
+year: 1959
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 17 Tahun 1959 tentang Pengubahan
+  Dan Tambahan Ordonansi Pajak Upah (Staatsblad 1934 No. 611)
+tentang: PENGUBAHAN DAN TAMBAHAN ORDONANSI PAJAK UPAH (STAATSBLAD 1934 NO. 611)
+short_name: null
+status: diubah
+tanggal_penetapan: '1959-09-26'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_17_1959_1959-09-26
+  kind: asli
+  source: dataset
+  date: '1959-09-26'
+  date_basis: tanggal_penetapan
+  text: perppu_17_1959_1959-09-26.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7752e8bb41afb78fa3623a053c8a5918e59ea1e821289ab5435cf8507fa9f1f3
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7752e8bb41afb78fa3623a053c8a5918e59ea1e821289ab5435cf8507fa9f1f3
+  source_title: perpu_017_1959
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 10
+  status: amended
+  amended_by:
+  - sha256:c14548a8f5f0a8bb9e0a4687abd6694c0e94a53e8bad512995f2094895cf68dd

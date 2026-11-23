@@ -1,0 +1,39 @@
+id: perppu_1_2002
+akn: /akn/id/act/perppu/2002/1
+type: perppu
+number: '1'
+year: 2002
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2002 tentang Pemberantasan
+  Tindak Pidana Terorisme
+tentang: PEMBERANTASAN TINDAK PIDANA TERORISME
+short_name: null
+status: null
+tanggal_penetapan: '2002-10-18'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_1_2002_2002-10-18
+  kind: asli
+  source: dataset
+  date: '2002-10-18'
+  date_basis: tanggal_penetapan
+  text: perppu_1_2002_2002-10-18.txt
+  pasal_count: 47
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0e483712d24ca0507729cb2cd0a2d6c26af36fbdcf1c5bb594df8d34322c8200
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0e483712d24ca0507729cb2cd0a2d6c26af36fbdcf1c5bb594df8d34322c8200
+  source_title: 2002PP_Pengganti_UU_No_1_th_2002
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 54
+  status: none_known

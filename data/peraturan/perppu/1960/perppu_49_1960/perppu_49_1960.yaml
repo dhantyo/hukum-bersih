@@ -1,0 +1,39 @@
+id: perppu_49_1960
+akn: /akn/id/act/perppu/1960/49
+type: perppu
+number: '49'
+year: 1960
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 49 Tahun 1960 tentang Panitya
+  Urusan Piutang Negara
+tentang: PANITYA URUSAN PIUTANG NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '1960-12-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_49_1960_1960-12-16
+  kind: asli
+  source: dataset
+  date: '1960-12-16'
+  date_basis: tanggal_penetapan
+  text: perppu_49_1960_1960-12-16.txt
+  pasal_count: 15
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ae6ee4bf01af55e8c6467828ceed767b64b349c27b8197da75649a9e5f55b7c2
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ae6ee4bf01af55e8c6467828ceed767b64b349c27b8197da75649a9e5f55b7c2
+  source_title: perpu_049_1960
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 32
+  status: none_known

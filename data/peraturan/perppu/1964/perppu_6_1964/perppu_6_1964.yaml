@@ -1,0 +1,39 @@
+id: perppu_6_1964
+akn: /akn/id/act/perppu/1964/6
+type: perppu
+number: '6'
+year: 1964
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 6 Tahun 1964 tentang Badan
+  Pemeriksa Keuangan
+tentang: BADAN PEMERIKSA KEUANGAN
+short_name: null
+status: null
+tanggal_penetapan: '1964-05-02'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_6_1964_1964-05-02
+  kind: asli
+  source: dataset
+  date: '1964-05-02'
+  date_basis: tanggal_penetapan
+  text: perppu_6_1964_1964-05-02.txt
+  pasal_count: 21
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:60f6662d8a91f2d89818d30b2b7f3b052fcd30ba72d28998bc3b24d67c5fd104
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:60f6662d8a91f2d89818d30b2b7f3b052fcd30ba72d28998bc3b24d67c5fd104
+  source_title: PERPRU_No._006_Tahun_1964
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 43
+  status: none_known

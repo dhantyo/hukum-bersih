@@ -1,0 +1,38 @@
+id: perppu_1_1961
+akn: /akn/id/act/perppu/1961/1
+type: perppu
+number: '1'
+year: 1961
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 1961 tentang Barang
+tentang: BARANG
+short_name: null
+status: null
+tanggal_penetapan: '1961-02-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_1_1961_1961-02-17
+  kind: asli
+  source: dataset
+  date: '1961-02-17'
+  date_basis: tanggal_penetapan
+  text: perppu_1_1961_1961-02-17.txt
+  pasal_count: 11
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:3adb21f67189bff51dbfb9b790819038473527aac04e01b4062763cb1726ee08
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:3adb21f67189bff51dbfb9b790819038473527aac04e01b4062763cb1726ee08
+  source_title: Perpu_No._1_Tahun_1961
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 25
+  status: none_known

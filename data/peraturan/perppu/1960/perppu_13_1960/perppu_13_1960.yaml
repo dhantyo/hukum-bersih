@@ -1,0 +1,28 @@
+id: perppu_13_1960
+akn: /akn/id/act/perppu/1960/13
+type: perppu
+number: '13'
+year: 1960
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 13 Tahun 1960 tentang Bank
+  Dagang Negara
+tentang: BANK DAGANG NEGARA
+short_name: null
+status: null
+tanggal_penetapan: '1960-04-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:be078d526b4be7db4cf12013992467d14a08791a5d73de6990953834906b3765
+  source_title: perpu_013_1960
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 32
+  status: none_known
+parse_error: 'v13: rebuilt text has 3 pasal, the dataset lists 15'

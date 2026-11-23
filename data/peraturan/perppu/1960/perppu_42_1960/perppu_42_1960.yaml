@@ -1,0 +1,39 @@
+id: perppu_42_1960
+akn: /akn/id/act/perppu/1960/42
+type: perppu
+number: '42'
+year: 1960
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 42 Tahun 1960 tentang Peleburan
+  Bank Rakyat Indonesia Kedalam Bank Koperasi, Tani Dan Nelayan
+tentang: PELEBURAN BANK RAKYAT INDONESIA KEDALAM BANK KOPERASI, TANI DAN NELAYAN
+short_name: null
+status: null
+tanggal_penetapan: '1960-10-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_42_1960_1960-10-31
+  kind: asli
+  source: dataset
+  date: '1960-10-31'
+  date_basis: tanggal_penetapan
+  text: perppu_42_1960_1960-10-31.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ea13320aa155ecb7e87b24e0b9a812611a34f9b3645e56353da83e153a013e9e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ea13320aa155ecb7e87b24e0b9a812611a34f9b3645e56353da83e153a013e9e
+  source_title: perpu_042_1960
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 12
+  status: none_known

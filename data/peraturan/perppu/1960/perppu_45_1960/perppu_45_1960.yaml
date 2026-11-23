@@ -1,0 +1,39 @@
+id: perppu_45_1960
+akn: /akn/id/act/perppu/1960/45
+type: perppu
+number: '45'
+year: 1960
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 45 Tahun 1960 tentang Pembentukan
+  Dewan Perusahaan
+tentang: PEMBENTUKAN DEWAN PERUSAHAAN
+short_name: null
+status: null
+tanggal_penetapan: '1960-11-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_45_1960_1960-11-01
+  kind: asli
+  source: dataset
+  date: '1960-11-01'
+  date_basis: tanggal_penetapan
+  text: perppu_45_1960_1960-11-01.txt
+  pasal_count: 13
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b1db58d670188d7b8cd625fe7f8524d19b9ff0c6625a314f642be1e5dcb86e55
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b1db58d670188d7b8cd625fe7f8524d19b9ff0c6625a314f642be1e5dcb86e55
+  source_title: perpu_045_1960
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 22
+  status: none_known

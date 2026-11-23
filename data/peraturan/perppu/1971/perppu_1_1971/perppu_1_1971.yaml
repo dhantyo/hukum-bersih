@@ -1,0 +1,40 @@
+id: perppu_1_1971
+akn: /akn/id/act/perppu/1971/1
+type: perppu
+number: '1'
+year: 1971
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 1971 tentang Pencabutan
+  Undang-Undang No. 17 Tahun 1964 Tentang Larangan Penarikan Cek Kosong
+tentang: PENCABUTAN UNDANG-UNDANG NO. 17 TAHUN 1964 TENTANG LARANGAN PENARIKAN CEK
+  KOSONG
+short_name: null
+status: null
+tanggal_penetapan: '1971-07-31'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_1_1971_1971-07-31
+  kind: asli
+  source: dataset
+  date: '1971-07-31'
+  date_basis: tanggal_penetapan
+  text: perppu_1_1971_1971-07-31.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a8e82cccc67142d271b6c342ac8dc6e2d06c198dbdfb1ab52ae6e07d00372729
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a8e82cccc67142d271b6c342ac8dc6e2d06c198dbdfb1ab52ae6e07d00372729
+  source_title: PERPU_No._001_Tahun_1971
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 7
+  status: none_known

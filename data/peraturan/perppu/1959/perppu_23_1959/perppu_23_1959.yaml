@@ -1,0 +1,41 @@
+id: perppu_23_1959
+akn: /akn/id/act/perppu/1959/23
+type: perppu
+number: '23'
+year: 1959
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 23 Tahun 1959 tentang Pencabutan
+  Undang-Undang No. 74 Tahun 1957 (Lembaran-Negara No. 160 Tahun 1957) Dan Penetapan
+  Keadaan Bahaya
+tentang: PENCABUTAN UNDANG-UNDANG NO. 74 TAHUN 1957 (LEMBARAN-NEGARA NO. 160 TAHUN
+  1957) DAN PENETAPAN KEADAAN BAHAYA
+short_name: null
+status: null
+tanggal_penetapan: '1959-12-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_23_1959_1959-12-16
+  kind: asli
+  source: dataset
+  date: '1959-12-16'
+  date_basis: tanggal_penetapan
+  text: perppu_23_1959_1959-12-16.txt
+  pasal_count: 62
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:0babd41d3b303fceb6780f8a0eeccc121c0f646a68e72b06cf1d23463c53ac44
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0babd41d3b303fceb6780f8a0eeccc121c0f646a68e72b06cf1d23463c53ac44
+  source_title: perpu_023_1959
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: degraded
+  chunks: 143
+  status: none_known

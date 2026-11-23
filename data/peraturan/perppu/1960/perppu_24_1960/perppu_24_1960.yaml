@@ -1,0 +1,39 @@
+id: perppu_24_1960
+akn: /akn/id/act/perppu/1960/24
+type: perppu
+number: '24'
+year: 1960
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 24 Tahun 1960 tentang Pengusutan,
+  Penuntutan Dan Pemeriksaan Tindak Pidana Korupsi
+tentang: PENGUSUTAN, PENUNTUTAN DAN PEMERIKSAAN TINDAK PIDANA KORUPSI
+short_name: null
+status: null
+tanggal_penetapan: '1960-06-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_24_1960_1960-06-09
+  kind: asli
+  source: dataset
+  date: '1960-06-09'
+  date_basis: tanggal_penetapan
+  text: perppu_24_1960_1960-06-09.txt
+  pasal_count: 25
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1190d78fe3e1be68607542dd0e85094adc88ddfb5d838d14b8caff6fe40ca610
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1190d78fe3e1be68607542dd0e85094adc88ddfb5d838d14b8caff6fe40ca610
+  source_title: perpu_024_1960
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 50
+  status: none_known

@@ -1,0 +1,39 @@
+id: perppu_16_1962
+akn: /akn/id/act/perppu/1962/16
+type: perppu
+number: '16'
+year: 1962
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 16 Tahun 1962 tentang Sumbangan
+  Wajib Istimewa Tahun 1962 Atas Bangunan Presiden Republik Indonesia
+tentang: SUMBANGAN WAJIB ISTIMEWA TAHUN 1962 ATAS BANGUNAN Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1962-09-24'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_16_1962_1962-09-24
+  kind: asli
+  source: dataset
+  date: '1962-09-24'
+  date_basis: tanggal_penetapan
+  text: perppu_16_1962_1962-09-24.txt
+  pasal_count: 16
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d9861ef9dec9cc21d8e28bada402e84ab172a3903a7d2b4d15d45f8edf71d38d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d9861ef9dec9cc21d8e28bada402e84ab172a3903a7d2b4d15d45f8edf71d38d
+  source_title: PERPU_No._16_Tahun_1962
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 30
+  status: none_known

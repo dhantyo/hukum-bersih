@@ -1,0 +1,41 @@
+id: perppu_1_1997
+akn: /akn/id/act/perppu/1997/1
+type: perppu
+number: '1'
+year: 1997
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 1997 tentang Penangguhan
+  Mulai Berlakunya Undang-Undang Nomor 21 Tahun 1997 Tentang Bea Perolehan Hak Atas
+  Tanah Dan Bangunan
+tentang: PENANGGUHAN MULAI BERLAKUNYA UNDANG-UNDANG NOMOR 21 TAHUN 1997 TENTANG BEA
+  PEROLEHAN HAK ATAS TANAH DAN BANGUNAN
+short_name: null
+status: null
+tanggal_penetapan: '1998-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_1_1997_1998-01-01
+  kind: asli
+  source: dataset
+  date: '1998-01-01'
+  date_basis: tanggal_penetapan
+  text: perppu_1_1997_1998-01-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ded537768c419481fa6acc8fce6647f1ffc3d0d8490bd3aa62a30824a82e267b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ded537768c419481fa6acc8fce6647f1ffc3d0d8490bd3aa62a30824a82e267b
+  source_title: PERPU_NOMOR_1_TAHUN_1997
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 9
+  status: none_known

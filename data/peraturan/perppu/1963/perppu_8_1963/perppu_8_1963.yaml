@@ -1,0 +1,38 @@
+id: perppu_8_1963
+akn: /akn/id/act/perppu/1963/8
+type: perppu
+number: '8'
+year: 1963
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 8 Tahun 1963
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '1963-11-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_8_1963_1963-11-10
+  kind: asli
+  source: dataset
+  date: '1963-11-10'
+  date_basis: tanggal_penetapan
+  text: perppu_8_1963_1963-11-10.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:24b2b48d64de14a99011a97d29a14a66801c588c5da69c67e71f5af06579ed1f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:24b2b48d64de14a99011a97d29a14a66801c588c5da69c67e71f5af06579ed1f
+  source_title: Perpu_No._008_Tahun_1963
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 16
+  status: none_known

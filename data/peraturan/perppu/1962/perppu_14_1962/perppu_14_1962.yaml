@@ -1,0 +1,41 @@
+id: perppu_14_1962
+akn: /akn/id/act/perppu/1962/14
+type: perppu
+number: '14'
+year: 1962
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 14 Tahun 1962 tentang Sumbangan
+  Wajib Istimewa Atas Kendaraan Bermotor Yang Diimpor Ke Dalam Daerah Pabean Indonesia
+  Presiden Republik Indonesia
+tentang: SUMBANGAN WAJIB ISTIMEWA ATAS KENDARAAN BERMOTOR YANG DIIMPOR KE DALAM DAERAH
+  PABEAN INDONESIA Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1962-09-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_14_1962_1962-09-01
+  kind: asli
+  source: dataset
+  date: '1962-09-01'
+  date_basis: tanggal_penetapan
+  text: perppu_14_1962_1962-09-01.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7b912ff0390625abe2ff23c1634a3c3d2496c97429eb9e90c38043207ca391ca
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7b912ff0390625abe2ff23c1634a3c3d2496c97429eb9e90c38043207ca391ca
+  source_title: PERPU_No._14_Tahun_1962
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: clean
+  chunks: 13
+  status: none_known

@@ -1,0 +1,39 @@
+id: perppu_5_1964
+akn: /akn/id/act/perppu/1964/5
+type: perppu
+number: '5'
+year: 1964
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 5 Tahun 1964 tentang Nilai
+  Transaksi Rupiah Dan Pembebasan Atas Impor
+tentang: NILAI TRANSAKSI RUPIAH DAN PEMBEBASAN ATAS IMPOR
+short_name: null
+status: null
+tanggal_penetapan: '1964-04-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: perppu_5_1964_1964-04-17
+  kind: asli
+  source: dataset
+  date: '1964-04-17'
+  date_basis: tanggal_penetapan
+  text: perppu_5_1964_1964-04-17.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:d24779943d3d50b8ea9a7c0a9e0d0d2bf30a0d19cd5ed2d7a86ba4ef5ab640d6
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:d24779943d3d50b8ea9a7c0a9e0d0d2bf30a0d19cd5ed2d7a86ba4ef5ab640d6
+  source_title: PERPRU_No._005_Tahun_1964
+  regulation_type: PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG
+  quality: degraded
+  chunks: 17
+  status: none_known
