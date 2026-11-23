@@ -34,6 +34,10 @@ on:
         description: "PDFs only: download and archive, leave texts alone"
         type: boolean
         default: false
+      chain:
+        description: "When the time is up with work left, start the next run automatically"
+        type: boolean
+        default: true
       archive:
         description: "Also upload PDFs to archive.org (slow; off: hashes recorded, upload later)"
         type: boolean
@@ -41,6 +45,7 @@ on:
 
 permissions:
   contents: write
+  actions: write          # to start the next run when this one ends with work left
 
 concurrency:
   group: import-peraturan        # never together with other jobs that write data/
@@ -69,14 +74,17 @@ jobs:
         env:
           IA_ACCESS_KEY: ${{ secrets.IA_ACCESS_KEY }}
           IA_SECRET_KEY: ${{ secrets.IA_SECRET_KEY }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "hukum-bersih bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # The job is stopped at 5h45m (timeout-minutes) and a batch is only saved when it ends,
-          # so a batch starts only if the slowest batch so far (a batch of scans: ~1 h) still fits.
+          # so a batch starts only if it will fit: estimated by the longest of the last three
+          # batches (scans take ~1 h a batch, typed laws ~12 min), plus 5 minutes to commit.
           end=$(( $(date +%s) + 340 * 60 ))
-          batch=0; slowest=0
-          while [ $(( $(date +%s) + slowest )) -lt "$end" ]; do
+          batch=0; recent=""; estimate=0; total=0; left=no
+          while :; do
+            if [ $(( $(date +%s) + estimate + 300 )) -ge "$end" ]; then left=yes; break; fi
             batch=$((batch + 1)); started=$(date +%s)
             if [ "$MODE" = reparse ]; then
               out=$(cd pipeline && uv run hukum-bersih reparse-bpk --limit "$BATCH" $ONLY 2>&1 | tee /dev/stderr || true)
@@ -96,10 +104,19 @@ jobs:
               done
             fi
             echo "$out" | grep -q '^STOP' && { echo "::error::Cloudflare stopped the import"; exit 1; }
-            took=$(( $(date +%s) - started )); [ "$took" -gt "$slowest" ] && slowest=$took
+            took=$(( $(date +%s) - started )); total=$((total + n))
+            recent=$(echo "$recent $took" | awk '{s=(NF>3?NF-2:1); o=""; for(i=s;i<=NF;i++) o=o" "$i; print o}')
+            estimate=$(echo "$recent" | awk '{m=0; for(i=1;i<=NF;i++) if($i>m) m=$i; print m}')
             echo "batch $batch: $n law(s) in $((took / 60)) min"
             [ "$n" -eq 0 ] && break
             [ -n "$ONLY" ] && break                      # a list of ids is done in one go
             [ "$BATCHES" -gt 0 ] && [ "$batch" -ge "$BATCHES" ] && break
           done
           echo "From BPK: $(grep -l '^bpk:' -r data/peraturan/$JENIS --include='*.yaml' | wc -l) of $(find data/peraturan/$JENIS -name '*.yaml' | wc -l) records" | tee -a "$GITHUB_STEP_SUMMARY"
+          # Out of time with work left, and this run got something done (not stuck on errors or
+          # stopped by Cloudflare, which exit above): start the next run with the same inputs.
+          if [ "$left" = yes ] && [ "$total" -gt 0 ] && [ -z "$ONLY" ] && [ "${{ inputs.chain }}" != false ]; then
+            echo "Time is up with work left: starting the next run" | tee -a "$GITHUB_STEP_SUMMARY"
+            gh workflow run import-bpk.yml --ref "${GITHUB_REF_NAME}" -f mode="$MODE" -f jenis="$JENIS" \
+              -f batches="$BATCHES" -f no_text="${{ inputs.no_text }}" -f archive="${{ inputs.archive }}" -f chain=true
+          fi
