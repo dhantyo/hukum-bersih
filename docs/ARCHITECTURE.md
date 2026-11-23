@@ -54,6 +54,7 @@ Names follow [NAMING.md](NAMING.md).
 | `pdf/structure.py` | Lines → structural blocks (BAB … Pasal, ayat, huruf/angka, Penjelasan) |
 | `akn/bluebell.py` | Blocks → Bluebell text (stored in `data/`) |
 | `akn/build.py` | Bluebell → Akoma Ntoso XML (Laws.Africa's `bluebell` parser) |
+| `sources/id_reg_rag.py` | National regulations we have no text of, rebuilt from the Hugging Face dataset `Azzindani/ID_REG_RAG_2611` and parsed with our parser ([decision 0011](decisions/0011-huggingface-dataset.md)) |
 | `relations.py` | Amends / revokes / enacts links from titles, plus the pasal an amending law changes (from its text) → `relationships` in each record ([decision 0008](decisions/0008-law-history.md)) |
 | `amendments.py` | An amending law's Pasal I → numbered instructions and the new wording of each pasal (JSON for the "Perubahan" page) |
 | `cli.py` | `hukum-bersih fetch / parse / build-akn / relations / archive-*` |
@@ -70,7 +71,7 @@ Names follow [NAMING.md](NAMING.md).
 | `pages/cari/` | Grouped search: `laws.json` (short names, citations, titles) + Pagefind JS API for the text |
 | `lib/amendments.ts` | Apply each amendment's new wording in order → before/after per pasal; short names |
 | `components/` | `LawText` / `AknNode` render Akoma Ntoso with `akn-*` classes and eIds as ids; `Riwayat` (history timeline) and `RelationsBanner` (on amending laws) |
-| `pages/` | `/`, `/uu/`, `/uu/tahun/<tahun>/`, `/uu/<nomor>/<tahun>/`, `/uu/<nomor>/<tahun>/perubahan/`, `/koleksi/`, `/koleksi/<slug>/` (with the version comparer), `/ruu/`, `/ruu/<slug>/`, `/ruu/<slug>/<doc id>/`, `/ruu/<slug>/beda/<a>...<b>/`, `/cari/`, `/tentang/` |
+| `pages/` | `/`, `/<jenis>/`, `/<jenis>/tahun/<tahun>/`, `/<jenis>/<nomor>/<tahun>/`, `/<jenis>/<nomor>/<tahun>/perubahan/` (`pages/[jenis]/`: uu, pp, perpres, keppres, inpres, perppu, uu-drt), `/koleksi/`, `/koleksi/<slug>/` (with the version comparer), `/ruu/`, `/ruu/<slug>/`, `/ruu/<slug>/<doc id>/`, `/ruu/<slug>/beda/<a>...<b>/`, `/cari/`, `/tentang/` |
 | `styles/` | `tokens.css` (design tokens, see /DESIGN.md) and `global.css` |
 | `lib/peraturan.ts` | Reads regulation records and their generated Akoma Ntoso |
 
@@ -87,6 +88,7 @@ Names follow [NAMING.md](NAMING.md).
 | `parser-regression.yml` | push touching the parser + manual | the 19-law regression set (`pipeline/tests/regression.yaml`, fails on any law off) and a random survey of UU from the mirror | import from peraturan.bpk.go.id in batches of 50: metadata, every PDF archived on archive.org as it is downloaded, text for records without one; resumes; recomputes relationships after each batch |
 | `import-peraturan.yml` | manual (schedule removed 2026-11-21) | import from peraturan.go.id (answers only Indonesian IPs: needs WG_INDONESIA) |
 | `archive-pending.yml` | manual (schedule removed 2026-11-21) | archive peraturan.go.id PDFs that were recorded but not archived (skips BPK ones) |
+| `import-huggingface.yml` | manual | national regulations without text from the Hugging Face dataset ID_REG_RAG_2611, one commit per type (decision 0011) |
 | `probe-sources.yml` | manual | which sources a GitHub runner can reach |
 | `probe-bpk.yml`, `explore-bpk.yml`, `probe-bpk-app.yml` | manual, or push to `claude/**` | which tool passes BPK's Cloudflare check; save sample BPK pages (test fixtures); look for an API in the BPK app |
 
@@ -112,6 +114,7 @@ evening) peraturan.go.id. See CLAUDE.md for the latest findings.
 | Getting back to the contents on long pages | GOV.UK "back to top" pattern | `DocLayout.astro` |
 | Rendering very long laws | CSS `content-visibility: auto` | per chapter in `LawText.astro` |
 | Search for "pasal 27 ITE" | citation lookup as on legislation.gov.uk / Pasal.id, over our own `laws.json` | `pages/cari/`; Pagefind's prefix fallback ("xyzqq" → "x") is filtered out by checking the highlighted words |
+| Texts of PP, Perpres, Keppres, Perppu, UU Darurat | Hugging Face dataset `Azzindani/ID_REG_RAG_2611` (chunks rebuilt into documents) | [decision 0011](decisions/0011-huggingface-dataset.md); checked and not used: `ID_REG_MD_RAG` (incomplete, wrong labels), `ID_REG_Markdown` (not public) |
 | Indonesian PDF quirks | Pasal.id parser (AGPL) | to port: peraturan.go.id headers/footers, page-break dedup, OCR fixes, amendment laws |
 | BPK PDFs without Cloudflare (up to ~April 2025) | Hugging Face `Azzindani/ID_REG` (Apache-2.0), single files read from its zips by range request | byte-identical to BPK downloads (3/3 checked 2026-11-21); not used in the importer yet. `ID_REG_Parsed` (flat, one row per pasal) only for cross-checks |
 | Getting past peraturan.bpk.go.id's Cloudflare check (managed challenge) | Scrapling `StealthyFetcher(solve_cloudflare=True, real_chrome=True)` (BSD-3) to get `cf_clearance`, then `curl_cffi` with the same cookies and user agent | `probe-bpk.yml`, 2026-11-21: the only one of four that passed from GitHub runners (2/2; PDF fetched in the browser and again with curl_cffi). Failed: plain Playwright (control), SeleniumBase UC mode, Camoufox (checkbox not clicked). Not used: CloakBrowser (binary needs a licence key), FlareSolverr (README: cannot solve CAPTCHAs), origin-IP finders (go around the site's protection), paid CAPTCHA services |
