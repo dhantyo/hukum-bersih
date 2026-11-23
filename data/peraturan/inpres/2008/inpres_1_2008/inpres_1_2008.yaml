@@ -1,0 +1,27 @@
+id: inpres_1_2008
+akn: /akn/id/act/inpres/2008/1
+type: inpres
+number: '1'
+year: 2008
+title: Instruksi Presiden Nomor 1 Tahun 2008 tentang Kebijakan Perberasan
+tentang: KEBIJAKAN PERBERASAN
+short_name: null
+status: null
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5aa7b1ded4d33bf80e119b16f88add1d5afa9b9a6454af953c46391d571938ca
+  source_title: Inpres_1_Tahun_2008
+  regulation_type: INSTRUKSI PRESIDEN
+  quality: clean
+  chunks: 3
+  status: none_known
+parse_error: 'v13: no pasal found in the rebuilt text'

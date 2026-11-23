@@ -1,0 +1,30 @@
+id: inpres_3_2012
+akn: /akn/id/act/inpres/2012/3
+type: inpres
+number: '3'
+year: 2012
+title: Instruksi Presiden Nomor 3 Tahun 2012 tentang Kebijakan Pengadaan Gabah/Beras
+  Dan Penyaluran Beras Oleh Pemerintah
+tentang: KEBIJAKAN PENGADAAN GABAH/BERAS DAN PENYALURAN BERAS OLEH PEMERINTAH
+short_name: null
+status: diubah
+tanggal_penetapan: null
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7b0166b8efd5bfcaba242080c18ff82d3cd9a3dd0afc33c0b188815569876b48
+  source_title: Inpres_No_3_2012
+  regulation_type: INSTRUKSI PRESIDEN
+  quality: clean
+  chunks: 2
+  status: amended
+  amended_by:
+  - sha256:47debc947f1b249451f7fcba81f6357e74a05f3cbc34d39ac5293f8d392f1531
+parse_error: 'v13: no pasal found in the rebuilt text'
