@@ -12,12 +12,12 @@ tentang: MENETAPKAN UNDANG-UNDANG DARURAT NOMOR 14 TAHUN 1952 TENTANG PERUBAHAN 
   TAHUN 1952 NO. 87) SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-01-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-1957
-source_pdf_url: null
+source_url: https://peraturan.bpk.go.id/Details/52802/uu-no-21-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/42201/UU%20Nomor%2021%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,4 +25,41 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_21_1957_1957-01-31
+  kind: asli
+  source: official
+  date: '1957-01-31'
+  date_basis: tanggal_penetapan
+  text: uu_21_1957_1957-01-31.txt
+  pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 134b94fcad01589fe1255ca6670770c30bb8ae39384d161bb7b3e3a9b5ddd0ea
+tanggal_pengundangan: '1957-04-08'
+lembaran_negara: 'LN. 1957 No. 41, TLN No. 1327, LL SETNEG : 12 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-1957
+  source_pdf_url: null
+bpk:
+  id: 52802
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42201/UU%20Nomor%2021%20Tahun%201957.pdf
+    bpk_file_id: 42201
+    filename: UU Nomor 21 Tahun 1957.pdf
+    sha256: 134b94fcad01589fe1255ca6670770c30bb8ae39384d161bb7b3e3a9b5ddd0ea
+    bytes: 57103
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_34_1953
+      citation: UU No. 34 Tahun 1953
+      tentang: Penetapan "Undang-Undang Darurat Nomor 15 Tahun 1951, Penilaian dari
+        Bagian-Bagian Pendapatan dan Kekayaan, Baik yang Diperoleh Maupun yang Berada
+        dalam Uang Asing untuk Pemungutan Pajak Peralihan, Pajak Upah, Pajak Perseroan
+        dan Pajak Kekayaan dan tentang Pengubahan Ordonansi Pajak Peralihan 1944"
+        (Lembaran-Negara Nomor 87 Tahun 1951) Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/45439/uu-no-34-tahun-1953
+      note: null
+uji_materi: null

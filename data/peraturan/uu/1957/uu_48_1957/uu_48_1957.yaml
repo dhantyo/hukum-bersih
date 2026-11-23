@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN XIV (KEMENTRIAN AGAMA) DARI ANGGARAN REPUBLIK INDONESI
   TAHUN DINAS 1954
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-10-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-48-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu48-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52622/uu-no-48-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41986/UU%20Nomor%2048%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_48_1957_1957
+- id: uu_48_1957_1957-10-26
   kind: asli
   source: official
-  date: null
+  date: '1957-10-26'
   date_basis: tanggal_penetapan
-  text: uu_48_1957_1957.txt
+  text: uu_48_1957_1957-10-26.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ab7575cbe492612d94c95cb8a8250c89dbab77bd0b2e2661abc66e66347c074c
 pdf_sha256: ab7575cbe492612d94c95cb8a8250c89dbab77bd0b2e2661abc66e66347c074c
+tanggal_pengundangan: '1957-11-13'
+tanggal_berlaku: '1954-01-01'
+lembaran_negara: 'LN. 1957 No. 123, LL SETNEG : 4 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-48-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu48-1957.pdf
+bpk:
+  id: 52622
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41986/UU%20Nomor%2048%20Tahun%201957.pdf
+    bpk_file_id: 41986
+    filename: UU Nomor 48 Tahun 1957.pdf
+    sha256: ab7575cbe492612d94c95cb8a8250c89dbab77bd0b2e2661abc66e66347c074c
+    bytes: 29003
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

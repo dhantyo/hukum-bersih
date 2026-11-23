@@ -6,22 +6,47 @@ year: 1957
 title: Undang-Undang Nomor 24 Tahun 1957 tentang Pemasukan Anggaran Belanja Negara
 tentang: PEMASUKAN ANGGARAN BELANJA NEGARA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 1 Tahun 1959 Tentang Kedudukan
-  Keuangan Ketua, Wakil Ketua dan Anggota Konstituante'
-tanggal_penetapan: null
+status: berlaku
+tanggal_penetapan: '1957-04-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-24-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu24-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52449/uu-no-24-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41792/UU%20Nomor%2024%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_1_1959
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_24_1957_1957-04-01
+  kind: asli
+  source: official
+  date: '1957-04-01'
+  date_basis: tanggal_penetapan
+  text: uu_24_1957_1957-04-01.txt
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 72a998983175d7bf2fceff164f238154753b4e5f950f1ffe7cb9d8bbfd58f7d3
 pdf_sha256: 72a998983175d7bf2fceff164f238154753b4e5f950f1ffe7cb9d8bbfd58f7d3
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1957-05-23'
+tanggal_berlaku: '1956-12-31'
+lembaran_negara: 'LN. 1957 No. 54, TLN No. 1285, LL SETNEG : 5 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-24-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu24-1957.pdf
+bpk:
+  id: 52449
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41792/UU%20Nomor%2024%20Tahun%201957.pdf
+    bpk_file_id: 41792
+    filename: UU Nomor 24 Tahun 1957.pdf
+    sha256: 72a998983175d7bf2fceff164f238154753b4e5f950f1ffe7cb9d8bbfd58f7d3
+    bytes: 32081
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

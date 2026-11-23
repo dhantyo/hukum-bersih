@@ -9,12 +9,12 @@ tentang: PERSETUJUAN NEGARA REPUBLIK INDONESIA TERHADAP ANGGARAN DASAR DARI BADA
   TENAGA ATOM INTERNASIONAL
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-07-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-25-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu25-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52452/uu-no-25-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41795/UU%20Nomor%2025%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_25_1957_1957
+- id: uu_25_1957_1957-07-22
   kind: asli
   source: official
-  date: null
+  date: '1957-07-22'
   date_basis: tanggal_penetapan
-  text: uu_25_1957_1957.txt
+  text: uu_25_1957_1957-07-22.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6f3a1597e100543a2b684ed38a8e06cff2711472820477d4aea03dd42c801e92
 pdf_sha256: 6f3a1597e100543a2b684ed38a8e06cff2711472820477d4aea03dd42c801e92
+tanggal_pengundangan: '1957-07-22'
+tanggal_berlaku: '1957-07-22'
+lembaran_negara: 'LN. 1957/No. 66, LL SETNEG : 2 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-25-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu25-1957.pdf
+bpk:
+  id: 52452
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41795/UU%20Nomor%2025%20Tahun%201957.pdf
+    bpk_file_id: 41795
+    filename: UU Nomor 25 Tahun 1957.pdf
+    sha256: 6f3a1597e100543a2b684ed38a8e06cff2711472820477d4aea03dd42c801e92
+    bytes: 27227
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

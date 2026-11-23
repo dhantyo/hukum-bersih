@@ -12,12 +12,12 @@ tentang: PENETAPAN URUSAN PENYELENGGARAAN KEUANGAN DAN PERHITUNGAN-PERHITUNGANNY
   SENDIRI/DARI ANGGARAN REPUBLIK INDONESIA UNTUK TAHUN DINAS 1954
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-10-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-36-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu36-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52551/uu-no-36-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41913/UU%20Nomor%2036%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,11 +26,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_36_1957_1957
+- id: uu_36_1957_1957-10-26
   kind: asli
   source: official
-  date: null
+  date: '1957-10-26'
   date_basis: tanggal_penetapan
-  text: uu_36_1957_1957.txt
+  text: uu_36_1957_1957-10-26.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 24aa8894611027c05953c2b29debb18e11637b8d522cd6f4dcd1fcc1d712954c
 pdf_sha256: 24aa8894611027c05953c2b29debb18e11637b8d522cd6f4dcd1fcc1d712954c
+tanggal_pengundangan: '1957-11-13'
+tanggal_berlaku: '1954-01-01'
+lembaran_negara: 'LN. 1957/No. 111, LL SETNEG : 16 HLM'
+subjek: APBN - BUMN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-36-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu36-1957.pdf
+bpk:
+  id: 52551
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41913/UU%20Nomor%2036%20Tahun%201957.pdf
+    bpk_file_id: 41913
+    filename: UU Nomor 36 Tahun 1957.pdf
+    sha256: 24aa8894611027c05953c2b29debb18e11637b8d522cd6f4dcd1fcc1d712954c
+    bytes: 51260
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

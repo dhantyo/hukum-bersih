@@ -9,12 +9,12 @@ tentang: MENGUBAH DAN MENAMBAH UNDANG-UNDANG PENEMPATAN BAGIAN VII DARI ANGGARAN
   INDONESIA UNTUK TAHUN DINAS 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-03-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu12-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52415/uu-no-12-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41754/UU%20Nomor%2012%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_12_1957_1957
+- id: uu_12_1957_1957-03-25
   kind: asli
   source: official
-  date: null
+  date: '1957-03-25'
   date_basis: tanggal_penetapan
-  text: uu_12_1957_1957.txt
+  text: uu_12_1957_1957-03-25.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 20a7a771daa672d63c1d3f21364386e87a11a81313ea4be2559da6ea3fc2db3c
 pdf_sha256: 20a7a771daa672d63c1d3f21364386e87a11a81313ea4be2559da6ea3fc2db3c
+tanggal_pengundangan: '1957-04-08'
+tanggal_berlaku: '1953-01-01'
+lembaran_negara: 'LN. 1957 No. 32, LL SETNEG : 3 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu12-1957.pdf
+bpk:
+  id: 52415
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41754/UU%20Nomor%2012%20Tahun%201957.pdf
+    bpk_file_id: 41754
+    filename: UU Nomor 12 Tahun 1957.pdf
+    sha256: 20a7a771daa672d63c1d3f21364386e87a11a81313ea4be2559da6ea3fc2db3c
+    bytes: 52309
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_46_1954
+      citation: UU No. 46 Tahun 1954
+      tentang: Penetapan Bagian VII (Kementrian Kehakiman) dari Anggaran Republik
+        Indonesia Untuk Tahun-Tahun Dinas 1952 dan 1953
+      url: https://peraturan.bpk.go.id/Details/50538/uu-no-46-tahun-1954
+      note: null
+uji_materi: null

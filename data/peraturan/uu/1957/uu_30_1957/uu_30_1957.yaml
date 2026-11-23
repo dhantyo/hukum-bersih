@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 30 Tahun 1957 tentang Pembebasan Saudara Untung Dari 
 tentang: PEMBEBASAN SAUDARA UNTUNG DARI PENGGANTIAN UANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-10-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-30-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu30-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52479/uu-no-30-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41827/UU%20Nomor%2030%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_30_1957_1957
+- id: uu_30_1957_1957-10-08
   kind: asli
   source: official
-  date: null
+  date: '1957-10-08'
   date_basis: tanggal_penetapan
-  text: uu_30_1957_1957.txt
+  text: uu_30_1957_1957-10-08.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c8e2ab38ec735f5082cf180d513d20be683db6de1d5e06cb8139653f9c6f5082
 pdf_sha256: c8e2ab38ec735f5082cf180d513d20be683db6de1d5e06cb8139653f9c6f5082
+tanggal_pengundangan: '1957-10-16'
+tanggal_berlaku: '1957-10-16'
+lembaran_negara: 'LN.1957/No. 102, LL SETNEG : 3 HLM'
+subjek: PENGELOLAAN KEUANGAN NEGARA / DAERAH - PENYELESAIAN KERUGIAN NEGARA DAN DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-30-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu30-1957.pdf
+bpk:
+  id: 52479
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41827/UU%20Nomor%2030%20Tahun%201957.pdf
+    bpk_file_id: 41827
+    filename: UU Nomor 30 Tahun 1957.pdf
+    sha256: c8e2ab38ec735f5082cf180d513d20be683db6de1d5e06cb8139653f9c6f5082
+    bytes: 28492
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -12,12 +12,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 14 TAHUN 1955 (LEMBARAN-NEGARA NO. 
   PASTEUR DI BANDUNG MENJADI PERUSAHAAN NEGARA DALAM ARTI
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-03-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-23-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu23-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52446/uu-no-23-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41789/UU%20Nomor%2023%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,11 +26,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_23_1957_1957
+- id: uu_23_1957_1957-03-25
   kind: asli
   source: official
-  date: null
+  date: '1957-03-25'
   date_basis: tanggal_penetapan
-  text: uu_23_1957_1957.txt
-  pasal_count: 7
+  text: uu_23_1957_1957-03-25.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 444a31b531458d7971a1d3160984a3908e72b2ac00bcc68f4db6c5283fcd493e
 pdf_sha256: 444a31b531458d7971a1d3160984a3908e72b2ac00bcc68f4db6c5283fcd493e
+tanggal_pengundangan: '1957-04-08'
+tanggal_berlaku: '1955-07-05'
+lembaran_negara: 'LN. 1957 No. 45, TLN No. 1230, LL SETNEG : 7 HLM'
+subjek: BUMN - PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-23-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu23-1957.pdf
+bpk:
+  id: 52446
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41789/UU%20Nomor%2023%20Tahun%201957.pdf
+    bpk_file_id: 41789
+    filename: UU Nomor 23 Tahun 1957.pdf
+    sha256: 444a31b531458d7971a1d3160984a3908e72b2ac00bcc68f4db6c5283fcd493e
+    bytes: 36366
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

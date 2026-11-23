@@ -9,12 +9,12 @@ tentang: MENGUBAH DAN MENAMBAH UNDANG-UNDANG PENEMPATAN BAGIAN VB DARI ANGGARAN 
   INDONESIA UNTUK TAHUN DINAS 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-03-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1957
-source_pdf_url: null
+source_url: https://peraturan.bpk.go.id/Details/52412/uu-no-10-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41749/UU%20Nomor%2010%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,4 +22,45 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_10_1957_1957-03-25
+  kind: asli
+  source: official
+  date: '1957-03-25'
+  date_basis: tanggal_penetapan
+  text: uu_10_1957_1957-03-25.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 08a7ef70dce75322e6aa290b9866617a969b7cbecfbffd1a331f516b4a7a18bc
+tanggal_pengundangan: '1957-04-08'
+tanggal_berlaku: '1953-01-01'
+lembaran_negara: 'LN. 1957 No. 30, LL SETNEG : 3 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1957
+  source_pdf_url: null
+bpk:
+  id: 52412
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41749/UU%20Nomor%2010%20Tahun%201957.pdf
+    bpk_file_id: 41749
+    filename: UU Nomor 10 Tahun 1957.pdf
+    sha256: 08a7ef70dce75322e6aa290b9866617a969b7cbecfbffd1a331f516b4a7a18bc
+    bytes: 28109
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/41750/UU%20Nomor%2010%20Tahun%201957_LAMPIRAN.pdf
+    bpk_file_id: 41750
+    filename: UU Nomor 10 Tahun 1957_LAMPIRAN.pdf
+    sha256: e21201732b3f01efe56999c11cf69876614c8c657b7b07cfd6bd3346e8e67100
+    bytes: 26583
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_44_1954
+      citation: UU No. 44 Tahun 1954
+      tentang: Penetapan Bagian Vb (Kementrian Perkonomian) dari Anggaran Republik
+        Indonesia Untuk Tahun-Tahun Dinas 1952 dan 1953
+      url: https://peraturan.bpk.go.id/Details/50534/uu-no-44-tahun-1954
+      note: null
+uji_materi: null

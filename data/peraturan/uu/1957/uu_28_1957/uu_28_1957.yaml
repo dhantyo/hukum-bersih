@@ -10,28 +10,61 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 13 TAHUN 1957 (LEMBARAN-NEGARA TAHU
   1957 NO. 58) TENTANG MENAMBAH UNDANG-UNDANG NO. 21 TAHUN 1952 (LEMBARAN-NEGARA TAHUN
   1952 NO. 78) TENTANG
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 8 Tahun 1974 Tentang Pokok-pokok
-  Kepegawaian'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1957-10-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-28-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu28-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52465/uu-no-28-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41812/UU%20Nomor%2028%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_8_1974
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_28_1957_1957
+- id: uu_28_1957_1957-10-08
   kind: asli
   source: official
-  date: null
+  date: '1957-10-08'
   date_basis: tanggal_penetapan
-  text: uu_28_1957_1957.txt
+  text: uu_28_1957_1957-10-08.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5dde1e76e5bbf82e69bab60ecec899c9aaa327f12494bd33d58e3ec532a71a3a
 pdf_sha256: 5dde1e76e5bbf82e69bab60ecec899c9aaa327f12494bd33d58e3ec532a71a3a
+tanggal_pengundangan: '1957-10-16'
+tanggal_berlaku: '1957-10-16'
+lembaran_negara: 'LN. 1957/No. 100, TLN No. 1445, LL SETNEG : 4 HLM'
+subjek: KEPEGAWAIAN, APARATUR NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-28-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu28-1957.pdf
+bpk:
+  id: 52465
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41812/UU%20Nomor%2028%20Tahun%201957.pdf
+    bpk_file_id: 41812
+    filename: UU Nomor 28 Tahun 1957.pdf
+    sha256: 5dde1e76e5bbf82e69bab60ecec899c9aaa327f12494bd33d58e3ec532a71a3a
+    bytes: 30572
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_8_1974
+      citation: UU No. 8 Tahun 1974
+      tentang: Pokok- Pokok Kepegawaian
+      url: https://peraturan.bpk.go.id/Details/47417/uu-no-8-tahun-1974
+      note: null
+    Mengubah:
+    - id: uu_21_1952
+      citation: UU No. 21 Tahun 1952
+      tentang: Menetapkan "Undang-Undang Darurat tentang Hak Pengangkatan dan Pemberhentian
+        Pegawai-Pegawai Republik Indonesia Serikat" (Undang-Undang Darurat Nr 25 Dan
+        34 Tahun 1950) Sebagai Undang-Undang Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/40268/uu-no-21-tahun-1952
+      note: null
+uji_materi: null

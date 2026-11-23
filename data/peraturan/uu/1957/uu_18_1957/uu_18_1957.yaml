@@ -9,12 +9,12 @@ tentang: MENGUBAH DAN MENAMBAH UNDANG-UNDANG PENEMPATAN BAGIAN XIII DARI ANGGARA
   REPUBLIK INDONESIA UNTUK TAHUN DINAS 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-03-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-1957
-source_pdf_url: null
+source_url: https://peraturan.bpk.go.id/Details/52430/uu-no-18-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41771/UU%20Nomor%2018%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,4 +22,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_18_1957_1957-03-29
+  kind: asli
+  source: official
+  date: '1957-03-29'
+  date_basis: tanggal_penetapan
+  text: uu_18_1957_1957-03-29.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 36bd225f98d3b581cf904f87111c922c03c5f6b2c6ddaa2beac2ae77c918fe75
+tanggal_pengundangan: '1957-04-08'
+tanggal_berlaku: '1953-01-01'
+lembaran_negara: 'LN. 1957 No. 38, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-1957
+  source_pdf_url: null
+bpk:
+  id: 52430
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41771/UU%20Nomor%2018%20Tahun%201957.pdf
+    bpk_file_id: 41771
+    filename: UU Nomor 18 Tahun 1957.pdf
+    sha256: 36bd225f98d3b581cf904f87111c922c03c5f6b2c6ddaa2beac2ae77c918fe75
+    bytes: 26890
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_53_1954
+      citation: UU No. 53 Tahun 1954
+      tentang: Penetapan Bagian XIII (Kementrian Perburuhan) dari Anggaran Republik
+        Indonesia Untuk Tahun-Tahun Dinas 1952 dan 1953
+      url: https://peraturan.bpk.go.id/Details/50553/uu-no-53-tahun-1954
+      note: null
+uji_materi: null

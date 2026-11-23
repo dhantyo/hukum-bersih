@@ -9,12 +9,12 @@ tentang: PERSETUJUAN PERJANJIAN PERSAHABATAN ANTARA REPUBLIK INDONESIA DAN KERAJ
   IRAK
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-08-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-27-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu27-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52460/uu-no-27-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41805/UU%20Nomor%2027%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_27_1957_1957
+- id: uu_27_1957_1957-08-14
   kind: asli
   source: official
-  date: null
+  date: '1957-08-14'
   date_basis: tanggal_penetapan
-  text: uu_27_1957_1957.txt
+  text: uu_27_1957_1957-08-14.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: fc6801537e471895edbf32203c804a89718d9e6b863eddd27411ed476fe5d28b
 pdf_sha256: fc6801537e471895edbf32203c804a89718d9e6b863eddd27411ed476fe5d28b
+tanggal_pengundangan: '1957-08-27'
+tanggal_berlaku: '1957-08-27'
+lembaran_negara: 'LN. 1957/No. 87, LL SETNEG : 5 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-27-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu27-1957.pdf
+bpk:
+  id: 52460
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41805/UU%20Nomor%2027%20Tahun%201957.pdf
+    bpk_file_id: 41805
+    filename: UU Nomor 27 Tahun 1957.pdf
+    sha256: fc6801537e471895edbf32203c804a89718d9e6b863eddd27411ed476fe5d28b
+    bytes: 11411
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

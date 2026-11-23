@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN IIIA (KEMENTERIAN AGRARIA) DARI ANGGARAN REPUBLIK INDO
   UNTUK TAHUN DINAS 1954
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-10-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-34-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu34-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52545/uu-no-34-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41907/UU%20Nomor%2034%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_34_1957_1957
+- id: uu_34_1957_1957-10-26
   kind: asli
   source: official
-  date: null
+  date: '1957-10-26'
   date_basis: tanggal_penetapan
-  text: uu_34_1957_1957.txt
+  text: uu_34_1957_1957-10-26.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9e9a9dc1031919883799767f569c364791cf462085c7cc0eb30c8b962508af96
 pdf_sha256: 9e9a9dc1031919883799767f569c364791cf462085c7cc0eb30c8b962508af96
+tanggal_pengundangan: '1957-11-13'
+tanggal_berlaku: '1954-01-01'
+lembaran_negara: 'LN. 1957/No. 109, LL SETNEG : 4 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-34-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu34-1957.pdf
+bpk:
+  id: 52545
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41907/UU%20Nomor%2034%20Tahun%201957.pdf
+    bpk_file_id: 41907
+    filename: UU Nomor 34 Tahun 1957.pdf
+    sha256: 9e9a9dc1031919883799767f569c364791cf462085c7cc0eb30c8b962508af96
+    bytes: 28913
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

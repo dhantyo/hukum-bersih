@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN IBW I (JAWATAN PEGADAIAN) DARI ANGGARAN REPUBLIK INDON
   TAHUN DINAS 1954
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-10-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-50-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu50-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52628/uu-no-50-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41992/UU%20Nomor%2050%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_50_1957_1957
+- id: uu_50_1957_1957-10-26
   kind: asli
   source: official
-  date: null
+  date: '1957-10-26'
   date_basis: tanggal_penetapan
-  text: uu_50_1957_1957.txt
+  text: uu_50_1957_1957-10-26.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2f9ffaca1e0f57309fb4159532142a3a9c0505c8a70fd21dc56c4d28a6428abb
 pdf_sha256: 2f9ffaca1e0f57309fb4159532142a3a9c0505c8a70fd21dc56c4d28a6428abb
+tanggal_pengundangan: '1957-11-13'
+tanggal_berlaku: '1954-01-01'
+lembaran_negara: 'LN. 1957 No. 125, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-50-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu50-1957.pdf
+bpk:
+  id: 52628
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41992/UU%20Nomor%2050%20Tahun%201957.pdf
+    bpk_file_id: 41992
+    filename: UU Nomor 50 Tahun 1957.pdf
+    sha256: 2f9ffaca1e0f57309fb4159532142a3a9c0505c8a70fd21dc56c4d28a6428abb
+    bytes: 26173
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN IBW VIII (PELABUHAN TELUK BAYUR) DARI ANGGARAN REPUBLI
   INDONESIA TAHUN DINAS 1954
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-10-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-57-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu57-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52680/uu-no-57-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/42045/UU%20Nomor%2057%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_57_1957_1957
+- id: uu_57_1957_1957-10-26
   kind: asli
   source: official
-  date: null
+  date: '1957-10-26'
   date_basis: tanggal_penetapan
-  text: uu_57_1957_1957.txt
+  text: uu_57_1957_1957-10-26.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d3111a80dfbfdf049f95c1985c6c44c99d0bf048c699520786abfa929fd0bf25
 pdf_sha256: d3111a80dfbfdf049f95c1985c6c44c99d0bf048c699520786abfa929fd0bf25
+tanggal_pengundangan: '1957-11-13'
+tanggal_berlaku: '1954-01-01'
+lembaran_negara: 'LN. 1957 No. 132, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-57-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu57-1957.pdf
+bpk:
+  id: 52680
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42045/UU%20Nomor%2057%20Tahun%201957.pdf
+    bpk_file_id: 42045
+    filename: UU Nomor 57 Tahun 1957.pdf
+    sha256: d3111a80dfbfdf049f95c1985c6c44c99d0bf048c699520786abfa929fd0bf25
+    bytes: 26165
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

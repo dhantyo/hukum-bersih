@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 26 Tahun 1957 tentang Perubahan Undang-Undang Tentang
 tentang: PERUBAHAN UNDANG-UNDANG TENTANG PENYELESAIAN PERSELISIHAN PERBURUHAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-07-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-26-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu26-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52456/uu-no-26-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41799/UU%20Nomor%2026%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,38 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_26_1957_1957
+- id: uu_26_1957_1957-07-27
   kind: asli
   source: official
-  date: null
+  date: '1957-07-27'
   date_basis: tanggal_penetapan
-  text: uu_26_1957_1957.txt
+  text: uu_26_1957_1957-07-27.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 528f044be93d04541596862e19d6652f239d8f6b9dfce4c715dfaec5242e52f5
 pdf_sha256: 528f044be93d04541596862e19d6652f239d8f6b9dfce4c715dfaec5242e52f5
+tanggal_pengundangan: '1957-08-10'
+tanggal_berlaku: '1957-08-10'
+lembaran_negara: 'LN. 1957/No. 72, LL SETNEG : 2 HLM'
+subjek: KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-26-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu26-1957.pdf
+bpk:
+  id: 52456
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41799/UU%20Nomor%2026%20Tahun%201957.pdf
+    bpk_file_id: 41799
+    filename: UU Nomor 26 Tahun 1957.pdf
+    sha256: 528f044be93d04541596862e19d6652f239d8f6b9dfce4c715dfaec5242e52f5
+    bytes: 26737
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_22_1957
+      citation: UU No. 22 Tahun 1957
+      tentang: Penyelesaian Perselisihan Perburuhan
+      url: https://peraturan.bpk.go.id/Details/52441/uu-no-22-tahun-1957
+      note: null
+uji_materi: null

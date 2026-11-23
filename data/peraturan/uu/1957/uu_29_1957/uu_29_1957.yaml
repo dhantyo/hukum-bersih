@@ -9,17 +9,13 @@ title: Undang-Undang Nomor 29 Tahun 1957 tentang Pejabat Yang Menjalankan Pekerj
 tentang: PEJABAT YANG MENJALANKAN PEKERJAAN JABATAN PRESIDEN, JIKA PRESIDEN MANGKAT,
   BERHENTI ATAU BERHALANGAN, SEDANG WAKIL PRESIDEN TIDAK ADA ATAU BERHALANGAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Peraturan Pemerintah Pengganti Undang-Undang
-  Nomor 10 Tahun 1960 Tentang Pejabat yang Menjalankan Pekerjaan Jabatan Presiden,
-  Jika Presiden Mangkat Berhenti atau Berhalangan, Sedang Wakil Presiden Tidak Ada
-  atau Berhalangan Undang-Undang Nomor 138 Tahun 2024 Tentang Kabupaten Soppeng di
-  Provinsi Sulawesi Selatan'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1957-10-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-29-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu29-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52475/uu-no-29-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41823/UU%20Nomor%2029%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,11 +24,40 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_29_1957_1957
+- id: uu_29_1957_1957-10-08
   kind: asli
   source: official
-  date: null
+  date: '1957-10-08'
   date_basis: tanggal_penetapan
-  text: uu_29_1957_1957.txt
+  text: uu_29_1957_1957-10-08.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: aa19fac2a1dfbe3a2a81b42c3a5118a62888c1307b70e01a162ada5af555f44b
 pdf_sha256: aa19fac2a1dfbe3a2a81b42c3a5118a62888c1307b70e01a162ada5af555f44b
+tanggal_pengundangan: '1957-10-16'
+tanggal_berlaku: '1957-10-16'
+lembaran_negara: 'LN. 1957/No. 101, LL SETNEG : 3 HLM'
+subjek: PELIMPAHAN KEWENANGAN / PENUGASAN PEJABAT NEGARA / PENUGASAN BUMN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-29-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu29-1957.pdf
+bpk:
+  id: 52475
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41823/UU%20Nomor%2029%20Tahun%201957.pdf
+    bpk_file_id: 41823
+    filename: UU Nomor 29 Tahun 1957.pdf
+    sha256: aa19fac2a1dfbe3a2a81b42c3a5118a62888c1307b70e01a162ada5af555f44b
+    bytes: 28814
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: perppu_10_1960
+      citation: PERPU No. 10 Tahun 1960
+      tentang: Pejabat Yang Menjalankan Pekerjaan Jabatan Presiden, Jika Presiden
+        Mangkat, Berhenti, Atau Berhalangan, Sedang Wakil Presiden Tidak Ada Atau
+        Berhalangan
+      url: https://peraturan.bpk.go.id/Details/53427/perpu-no-10-tahun-1960
+      note: null
+uji_materi: null

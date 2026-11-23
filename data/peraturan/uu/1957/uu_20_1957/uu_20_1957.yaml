@@ -9,12 +9,12 @@ tentang: MENGUBAH DAN MENAMBAH UNDANG-UNDANG PENEMPATAN BAGIAN XVI DARI ANGGARAN
   INDONESIA UNTUK TAHUN DINAS 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-03-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu20-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52436/uu-no-20-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41777/UU%20Nomor%2020%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,45 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_20_1957_1957
+- id: uu_20_1957_1957-03-25
   kind: asli
   source: official
-  date: null
+  date: '1957-03-25'
   date_basis: tanggal_penetapan
-  text: uu_20_1957_1957.txt
+  text: uu_20_1957_1957-03-25.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c115bdd6aaaa9ede1839de7889173376d7b6db7620953ff6ba35fc3c6ca2327e
 pdf_sha256: c115bdd6aaaa9ede1839de7889173376d7b6db7620953ff6ba35fc3c6ca2327e
+tanggal_pengundangan: '1957-04-08'
+tanggal_berlaku: '1953-01-01'
+lembaran_negara: 'LN. 1957 No. 40, LL SETNEG : 3 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu20-1957.pdf
+bpk:
+  id: 52436
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41777/UU%20Nomor%2020%20Tahun%201957.pdf
+    bpk_file_id: 41777
+    filename: UU Nomor 20 Tahun 1957.pdf
+    sha256: c115bdd6aaaa9ede1839de7889173376d7b6db7620953ff6ba35fc3c6ca2327e
+    bytes: 28277
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/41778/UU%20Nomor%2020%20Tahun%201957_LAMPIRAN.pdf
+    bpk_file_id: 41778
+    filename: UU Nomor 20 Tahun 1957_LAMPIRAN.pdf
+    sha256: 951e8389670c84bb1cbbff93a1cd4dcfa13b8990fa52d9f75e0e41698cd76b53
+    bytes: 24039
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_56_1954
+      citation: UU No. 56 Tahun 1954
+      tentang: Penetapan Bagian XVI (Kementrian Pekerjaan Umum dan Tenaga) dari Anggaran
+        Republik Indonesia Untuk Tahun-Tahun Dinas 1952 dan 1953
+      url: https://peraturan.bpk.go.id/Details/50557/uu-no-56-tahun-1954
+      note: null
+uji_materi: null

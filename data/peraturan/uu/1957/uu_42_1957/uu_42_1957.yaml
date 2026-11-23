@@ -9,12 +9,12 @@ tentang: PENETAPAN BAGIAN VIIIB (KEMENTRIAN PERHUBUNGAN JAWATAN PELAYARAN) DARI 
   REPUBLIK INDONESIA TAHUN DINAS 1954
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-10-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-42-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu42-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52594/uu-no-42-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41957/UU%20Nomor%2042%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,31 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_42_1957_1957
+- id: uu_42_1957_1957-10-26
   kind: asli
   source: official
-  date: null
+  date: '1957-10-26'
   date_basis: tanggal_penetapan
-  text: uu_42_1957_1957.txt
+  text: uu_42_1957_1957-10-26.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 245a0bdaee6799e5afc40726b808051361c6fa195d9317204e3eb33fd3c5d731
 pdf_sha256: 245a0bdaee6799e5afc40726b808051361c6fa195d9317204e3eb33fd3c5d731
+tanggal_pengundangan: '1957-11-13'
+lembaran_negara: 'LN. 1957/No. 117, LL SETNEG : 7 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-42-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu42-1957.pdf
+bpk:
+  id: 52594
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41957/UU%20Nomor%2042%20Tahun%201957.pdf
+    bpk_file_id: 41957
+    filename: UU Nomor 42 Tahun 1957.pdf
+    sha256: 245a0bdaee6799e5afc40726b808051361c6fa195d9317204e3eb33fd3c5d731
+    bytes: 34576
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

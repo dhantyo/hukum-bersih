@@ -9,12 +9,12 @@ tentang: MENGUBAH DAN MENAMBAH UNDANG-UNDANG PENEMPATAN BAGIAN XIV DARI ANGGARAN
   INDONESIA UNTUK TAHUN DINAS 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-03-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu19-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52433/uu-no-19-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41774/UU%20Nomor%2019%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_19_1957_1957
+- id: uu_19_1957_1957-03-25
   kind: asli
   source: official
-  date: null
+  date: '1957-03-25'
   date_basis: tanggal_penetapan
-  text: uu_19_1957_1957.txt
+  text: uu_19_1957_1957-03-25.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4f1c822c20ee66c2b18d9702eb51faf63f651290b93d27bb432890becf522d51
 pdf_sha256: 4f1c822c20ee66c2b18d9702eb51faf63f651290b93d27bb432890becf522d51
+tanggal_pengundangan: '1957-04-08'
+tanggal_berlaku: '1953-01-01'
+lembaran_negara: 'LN. 1957 No. 39, LL SETNEG : 3 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu19-1957.pdf
+bpk:
+  id: 52433
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41774/UU%20Nomor%2019%20Tahun%201957.pdf
+    bpk_file_id: 41774
+    filename: UU Nomor 19 Tahun 1957.pdf
+    sha256: 4f1c822c20ee66c2b18d9702eb51faf63f651290b93d27bb432890becf522d51
+    bytes: 27843
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_54_1954
+      citation: UU No. 54 Tahun 1954
+      tentang: Penetapan Bagian XIV (Kementrian Agama) dari Anggaran Republik Indonesia
+        Untuk Tahun-Tahun Dinas 1952 dan 1953
+      url: https://peraturan.bpk.go.id/Details/50555/uu-no-54-tahun-1954
+      note: null
+uji_materi: null
