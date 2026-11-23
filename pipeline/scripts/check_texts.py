@@ -62,7 +62,7 @@ def check(rec: dict, text: str) -> list[str]:
     # "… Cukup jelas. Pasal 5: Cukup jelas." (UU 147/2024), "… perundang-undangan. ' Pasal 8 Pada"
     glued = re.compile(r"[.;:]\W{0,3}\s+Pasal \d+[A-Z]?\s*[:.]?\s+(?:Cukup jelas|[A-Z(])")
     amending = bool(arts) and bool(re.fullmatch(r"[IVXLC]+", arts[0]))   # quoted pasal stay in Pasal I
-    for part, where in (((penj, "penjelasan"),) if amending else ((body, "body"), (penj, "penjelasan"))):
+    for part, where in (() if amending else ((body, "body"), (penj, "penjelasan"))):
         # not: a reference in the Mengingat list or a list item ("d. Pasal 89 Undang-undang Dasar"),
         # or to another law ("Pasal 33 Undang-Undang Dasar 1945")
         hits = [m for m in glued.finditer(part)
