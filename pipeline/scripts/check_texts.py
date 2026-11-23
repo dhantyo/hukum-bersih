@@ -2,7 +2,11 @@
 gaps, no page furniture, the closing read into a date, and the Penjelasan's 'Pasal demi pasal'
 covering the same pasal as the body (an independent count from the law's other half).
 
-    uv run python scripts/check_texts.py [jenis] [--out report.tsv]
+    uv run python scripts/check_texts.py [jenis] [--out report.tsv] [--flag]
+
+--flag writes `recheck: <problems>` into each record with a problem the parser can fix (missed
+headings, page furniture, no closing date), so the next import re-converts exactly those; the
+field goes when a new text replaces the old one.
 
 Prints one line per law with problems and a summary by kind of problem.
 """
@@ -12,6 +16,7 @@ from __future__ import annotations
 import re
 import sys
 from collections import Counter
+from itertools import pairwise
 from pathlib import Path
 
 import yaml
@@ -43,14 +48,14 @@ def check(rec: dict, text: str) -> list[str]:
         to_akn(text, rec["akn"], "act")
     except Exception as e:  # noqa: BLE001
         problems.append(f"invalid AKN: {type(e).__name__}")
-    body, _, rest = text.partition("ATTACHMENT")
+    body = text.partition("ATTACHMENT")[0]
     penj = text.partition("ATTACHMENT Penjelasan")[2].split("\nATTACHMENT ")[0]
     arts = ART.findall(body)
     nums = [number(a) for a in arts]
     if not arts:
         problems.append("no pasal")
     elif all(n is not None for n in nums):           # Arabic: 1, 2, 3 … (inserted 5A are skipped)
-        gaps = [f"{a}->{b}" for a, b in zip(nums, nums[1:]) if b != a + 1]
+        gaps = [f"{a}->{b}" for a, b in pairwise(nums) if b != a + 1]
         if nums[0] != 1 or gaps:
             problems.append("pasal sequence " + (f"starts {nums[0]} " if nums[0] != 1 else "") + " ".join(gaps[:3]))
     # a heading the parser missed shows as "Pasal N" glued into the text after a sentence:
@@ -58,7 +63,8 @@ def check(rec: dict, text: str) -> list[str]:
     glued = re.compile(r"[.;:]\W{0,3}\s+Pasal \d+[A-Z]?\s*[:.]?\s+(?:Cukup jelas|[A-Z(])")
     amending = bool(arts) and bool(re.fullmatch(r"[IVXLC]+", arts[0]))   # quoted pasal stay in Pasal I
     for part, where in (((penj, "penjelasan"),) if amending else ((body, "body"), (penj, "penjelasan"))):
-        if n := len(glued.findall(part)):
+        hits = [m for m in glued.finditer(part) if "Mengingat" not in part[max(0, m.start() - 12):m.start() + 1]]
+        if n := len(hits):
             problems.append(f"missed heading in {where} {n}")
     for name, rx in LEAKS.items():
         if n := len(rx.findall(body)):
@@ -83,6 +89,10 @@ def main(argv: list[str]) -> int:
         problems = check(rec, (path.parent / v["text"]).read_text())
         if rec.get("reparse_error"):
             problems.append("kept old text: " + str(rec["reparse_error"])[:80])
+        fixable = [p for p in problems if not p.startswith(("kept old text", "invalid AKN"))]
+        if "--flag" in argv and fixable and rec.get("bpk") and rec.get("recheck") != "; ".join(fixable):
+            rec["recheck"] = "; ".join(fixable)
+            path.write_text(yaml.safe_dump(rec, allow_unicode=True, sort_keys=False))
         if problems:
             bad += 1
             for p in problems:

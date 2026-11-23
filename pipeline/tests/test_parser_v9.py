@@ -148,3 +148,24 @@ def test_penjelasan_quoted_in_a_lampiran_after_the_penjelasan_stays_in_the_lampi
     assert sum(b.kind == "penjelasan" for b in doc.blocks) == 1
     lamp = [b.text for b in doc.blocks if b.kind == "lampiran_text"]
     assert "PENJELASAN ATAS UNDANG-UNDANG NOMOR 7 TAHUN 2021" in lamp and lamp[-1] == "Cukup jelas."
+
+
+def test_a_record_flagged_by_the_check_is_redone():
+    from hukum_bersih.pdf.structure import PARSER_VERSION
+    from hukum_bersih.sources.peraturan_bpk import SOURCE, text_current
+
+    rec = {"versions": [{"text": "t.txt", "parser_version": PARSER_VERSION, "pdf_source": SOURCE}]}
+    assert text_current(rec)
+    assert not text_current({**rec, "recheck": "missed heading in body 3"})
+
+
+def test_misprinted_heading_numbers_confirmed_by_the_next_heading():
+    from hukum_bersih.pdf.structure import parse_lines
+
+    head = ["UNDANG-UNDANG", "NOMOR 19 TAHUN 1948", "TENTANG", "CONTOH"]
+    doc = parse_lines(head + ["Pasal 1", "Satu.", "Pasal 2", "Dua.", "Pasal 2", "Tiga.", "Pasal 4", "Empat.",
+                              "Pasal II", "Lima.", "Pasal 6", "sebagaimana dimaksud dalam", "Pasal 9",
+                              "ayat (1).", "Pasal 7", "Tujuh."])
+    labels = [b.label for b in doc.blocks if b.kind == "pasal"]
+    assert labels == ["Pasal 1", "Pasal 2", "Pasal 2", "Pasal 4", "Pasal II", "Pasal 6", "Pasal 7"]
+    assert any("printed where Pasal 3 belongs" in w for w in doc.warnings)

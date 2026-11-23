@@ -247,8 +247,9 @@ def text_current(rec: dict) -> bool:
     if (str(rec.get("reparse_error", "")).startswith(f"v{PARSER_VERSION}:")
             or rec.get("parser_version_tried") == PARSER_VERSION):
         return True
-    if rec.get("reparse_error") or rec.get("parse_error"):
-        return False                                     # flagged by an older parser: try again
+    if rec.get("reparse_error") or rec.get("parse_error") or rec.get("recheck"):
+        return False                                     # flagged (by an older parser or by
+        #                                                  scripts/check_texts.py --flag): try again
     texts = [v for v in rec.get("versions") or [] if v.get("text")]
     return bool(texts) and all((v.get("parser_version") or 0) >= PARSER_REDO_BELOW
                                and v.get("pdf_source") == SOURCE for v in texts)
