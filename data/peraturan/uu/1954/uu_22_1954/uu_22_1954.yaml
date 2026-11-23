@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 22 Tahun 1954 tentang Undian
 tentang: UNDIAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-07-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-22-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu22-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50408/uu-no-22-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39716/UU%20Nomor%2022%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_22_1954_1954
+- id: uu_22_1954_1954-07-27
   kind: asli
   source: official
-  date: null
+  date: '1954-07-27'
   date_basis: tanggal_penetapan
-  text: uu_22_1954_1954.txt
+  text: uu_22_1954_1954-07-27.txt
   pasal_count: 17
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 98bb97b4ae925d984fa10abe96eb9d5d95c838ac66889a6019e090c11c672162
 pdf_sha256: 98bb97b4ae925d984fa10abe96eb9d5d95c838ac66889a6019e090c11c672162
+tanggal_pengundangan: '1954-07-27'
+tanggal_berlaku: '1954-07-27'
+lembaran_negara: 'LL SETNEG : 7 HLM.'
+subjek: PERIZINAN, PELAYANAN PUBLIK
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-22-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu22-1954.pdf
+bpk:
+  id: 50408
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39716/UU%20Nomor%2022%20Tahun%201954.pdf
+    bpk_file_id: 39716
+    filename: UU Nomor 22 Tahun 1954.pdf
+    sha256: 98bb97b4ae925d984fa10abe96eb9d5d95c838ac66889a6019e090c11c672162
+    bytes: 137150
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

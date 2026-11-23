@@ -10,13 +10,13 @@ tentang: KEANGGOTAAN REPUBLIK INDONESIA DARI DANA MONETER INTERNASIONAL (INTERNA
   MONETERY FUND) DAN BANK INTERNASIONAL UNTUK REKONSTRUKSI DAN PEMBANGUNAN (INTERNATIONAL
   BANK FOR RECONSTRUCTION AND DEVELOPMENT)
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1954-01-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu5-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/47915/uu-no-5-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/36968/UU%20Nomor%205%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,11 +25,40 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_5_1954_1954
+- id: uu_5_1954_1954-01-13
   kind: asli
   source: official
-  date: null
+  date: '1954-01-13'
   date_basis: tanggal_penetapan
-  text: uu_5_1954_1954.txt
+  text: uu_5_1954_1954-01-13.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6d4086bc079efab2a7376a6afc1bb62d31e7bc48a2d5adbf346b367f856f563e
 pdf_sha256: 6d4086bc079efab2a7376a6afc1bb62d31e7bc48a2d5adbf346b367f856f563e
+tanggal_pengundangan: '1954-02-01'
+tanggal_berlaku: '1954-02-01'
+lembaran_negara: 'LL SETNEG : 4 HLM.'
+subjek: PIUTANG, UTANG, DAN HIBAH NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu5-1954.pdf
+bpk:
+  id: 47915
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36968/UU%20Nomor%205%20Tahun%201954.pdf
+    bpk_file_id: 36968
+    filename: UU Nomor 5 Tahun 1954.pdf
+    sha256: 6d4086bc079efab2a7376a6afc1bb62d31e7bc48a2d5adbf346b367f856f563e
+    bytes: 128719
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_1_1966
+      citation: UU No. 1 Tahun 1966
+      tentang: Penarikan Diri Republik Indonesia dari Keanggotaan Dana Moneter Internasional
+        (International Monetary Fund) dan Bank Internasional Untuk Rekonstruksi dan
+        Pembangunan (International Bank For Reconstruction And Development)
+      url: https://peraturan.bpk.go.id/Details/49774/uu-no-1-tahun-1966
+      note: null
+uji_materi: null

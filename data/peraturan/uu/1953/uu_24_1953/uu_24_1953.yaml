@@ -11,12 +11,12 @@ tentang: PENETAPAN ï¿½UNDANG-UNDANG DARURAT NOMOR 18 TAHUN 1951 UNTUK MEMBATA
   1951) SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-24-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu24-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45404/uu-no-24-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33904/UU%20Nomor%2024%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,6 +24,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_24_1953_1953-12-18
+  kind: asli
+  source: official
+  date: '1953-12-18'
+  date_basis: tanggal_penetapan
+  text: uu_24_1953_1953-12-18.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b695adb7a81542770c916b5654f8721af60436ae77b5477393d07fbc1373f6a6
 pdf_sha256: 4d94a24a56c23fdc3be060fbdf8eb62ba2e993ff1f274b79150c606f25be6155
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1953-12-28'
+tanggal_berlaku: '1953-12-28'
+lembaran_negara: 'LN.1953/NO.74. TLN NO.479, LL SETNEG : 5 HLM.'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-24-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu24-1953.pdf
+bpk:
+  id: 45404
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33904/UU%20Nomor%2024%20Tahun%201953.pdf
+    bpk_file_id: 33904
+    filename: UU Nomor 24 Tahun 1953.pdf
+    sha256: b695adb7a81542770c916b5654f8721af60436ae77b5477393d07fbc1373f6a6
+    bytes: 47453
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

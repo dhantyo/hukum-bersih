@@ -10,12 +10,12 @@ tentang: PENETAPAN ï¿½UNDANG-UNDANG DARURAT NOMOR 19 TAHUN 1951, TENTANG PEMU
   PAJAK PENJUALANï¿½ (LEMBARAN-NEGARA NOMOR 94 TAHUN 1951) SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-33-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu33-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45436/uu-no-33-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33952/UU%20Nomor%2033%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,11 +24,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_33_1953_1953
+- id: uu_33_1953_1953-12-18
   kind: asli
   source: official
-  date: null
+  date: '1953-12-18'
   date_basis: tanggal_penetapan
-  text: uu_33_1953_1953.txt
-  pasal_count: 3
+  text: uu_33_1953_1953-12-18.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 88bb0b19ee7564edb9404c22965bb9219c65faa4a92b897438c64d279af0777a
 pdf_sha256: 003d67537434ec0714fb450a0d41e6e017e23b08d4f884bb94d531d338274f2f
+tanggal_pengundangan: '1953-12-28'
+tanggal_berlaku: '1953-12-28'
+lembaran_negara: 'LN.1953/NO.83, TLN NO.487, LL SETNEG : 3 HLM.'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-33-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu33-1953.pdf
+bpk:
+  id: 45436
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33952/UU%20Nomor%2033%20Tahun%201953.pdf
+    bpk_file_id: 33952
+    filename: UU Nomor 33 Tahun 1953.pdf
+    sha256: 88bb0b19ee7564edb9404c22965bb9219c65faa4a92b897438c64d279af0777a
+    bytes: 28638
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_7_1952
+      citation: UU No. 7 Tahun 1952
+      tentang: Menetapkan Undang-Undang Darurat Nr 14 Tahun 1951 tentang Pemungutan
+        Pajak Verponding atas Tahun 1951 Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/40225/uu-no-7-tahun-1952
+      note: null
+uji_materi: null

@@ -14,12 +14,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NO.1 TAHUN 1954, TENTANG MEMPERSATUKAN 
   MASUK ATAS BIR (LEMBARAN NEGARA NO. 1 TAHUN 1954) SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-07-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-27-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu27-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50496/uu-no-27-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39735/UU%20Nomor%2027%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,11 +29,40 @@ relationships:
   - uu-drt_1_1954
   enacted_by: []
 versions:
-- id: uu_27_1954_1954
+- id: uu_27_1954_1954-07-30
   kind: asli
   source: official
-  date: null
+  date: '1954-07-30'
   date_basis: tanggal_penetapan
-  text: uu_27_1954_1954.txt
-  pasal_count: 5
+  text: uu_27_1954_1954-07-30.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b85e1be8d7800d12fecbf5802f7de9bd008b50e4294cde8496ec4877188431ca
 pdf_sha256: dde6f5eda410c95b53b5cd2179705a1b56beaeb4570f78db696dc3df50495826
+tanggal_pengundangan: '1954-08-13'
+tanggal_berlaku: '1954-01-01'
+lembaran_negara: 'LN.1954/NO.81, TLN NO.727, LL SETNEG : 6 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-27-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu27-1954.pdf
+bpk:
+  id: 50496
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39735/UU%20Nomor%2027%20Tahun%201954.pdf
+    bpk_file_id: 39735
+    filename: UU Nomor 27 Tahun 1954.pdf
+    sha256: b85e1be8d7800d12fecbf5802f7de9bd008b50e4294cde8496ec4877188431ca
+    bytes: 42549
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: null
+      citation: UUDrt No. 1 Tahun 1954
+      tentang: Mempersatukan Opsenten yang Berlaku dalam Tahun 1953, atas Cukai dari
+        Beberapa Jenis Barang dalam Pokoknya Kenaikan Jumlah Cukai atas Alkohol Sulingan
+        Dalam Negeri dan Bir dan Kenaikan Bea Masuk atas Bir
+      url: https://peraturan.bpk.go.id/Details/52929/uudrt-no-1-tahun-1954
+      note: null
+uji_materi: null

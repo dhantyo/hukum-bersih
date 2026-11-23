@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 23 Tahun 1954 tentang Pencabutan Ï¿½Persbreidel Or
 tentang: PENCABUTAN ï¿½PERSBREIDEL ORDONNANTIEï¿½
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-07-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-23-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu23-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50410/uu-no-23-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39718/UU%20Nomor%2023%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_23_1954_1954
+- id: uu_23_1954_1954-07-12
   kind: asli
   source: official
-  date: null
+  date: '1954-07-12'
   date_basis: tanggal_penetapan
-  text: uu_23_1954_1954.txt
+  text: uu_23_1954_1954-07-12.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: bce913fbd351c762dfe091b6f395c2552b3a55633603963050c22749b53e035b
 pdf_sha256: 97777d510802457046bdd120c0ab9b4fab850562f3adc7477ae19064a523a5e6
+tanggal_pengundangan: '1954-08-02'
+tanggal_berlaku: '1954-08-02'
+lembaran_negara: 'LN.1954/NO.77, TLN NO.625, LL SETNEG : 2 HLM.'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-23-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu23-1954.pdf
+bpk:
+  id: 50410
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39718/UU%20Nomor%2023%20Tahun%201954.pdf
+    bpk_file_id: 39718
+    filename: UU Nomor 23 Tahun 1954.pdf
+    sha256: bce913fbd351c762dfe091b6f395c2552b3a55633603963050c22749b53e035b
+    bytes: 29628
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

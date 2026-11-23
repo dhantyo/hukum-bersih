@@ -9,12 +9,12 @@ tentang: PENETAPAN "UU DRT 4-1953 TENTANG PENGENAAN TAMBAHAN OPSENTEN ATAS BENSI
   DAN SEBAGAINYA"
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-30-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu30-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45428/uu-no-30-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33939/UU%20Nomor%2030%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_30_1953_1953
+- id: uu_30_1953_1953-12-18
   kind: asli
   source: official
-  date: null
+  date: '1953-12-18'
   date_basis: tanggal_penetapan
-  text: uu_30_1953_1953.txt
-  pasal_count: 1
+  text: uu_30_1953_1953-12-18.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1d60a9a421fac9d17a66da30142fedd850aeceb935cd407bb4cf0d25a6257f67
 pdf_sha256: 81eac07573c116a3ae29d7f540c7f33f87e82e716a65245f63f180617649c331
+tanggal_pengundangan: '1953-12-28'
+tanggal_berlaku: '1953-01-01'
+lembaran_negara: 'LN.1953/NO.80, TLN NO.485, LL SETNEG : 3 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-30-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu30-1953.pdf
+bpk:
+  id: 45428
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33939/UU%20Nomor%2030%20Tahun%201953.pdf
+    bpk_file_id: 33939
+    filename: UU Nomor 30 Tahun 1953.pdf
+    sha256: 1d60a9a421fac9d17a66da30142fedd850aeceb935cd407bb4cf0d25a6257f67
+    bytes: 29354
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

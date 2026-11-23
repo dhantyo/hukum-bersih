@@ -15,12 +15,12 @@ tentang: PENETAPAN "UNDANG-UNDANG DARURAT NOMOR 15 TAHUN 1951, PENILAIAN DARI BA
   TAHUN 1951 SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-34-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu34-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45439/uu-no-34-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33956/UU%20Nomor%2034%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,11 +30,40 @@ relationships:
   - uu-drt_15_1951
   enacted_by: []
 versions:
-- id: uu_34_1953_1953
+- id: uu_34_1953_1953-12-18
   kind: asli
   source: official
-  date: null
+  date: '1953-12-18'
   date_basis: tanggal_penetapan
-  text: uu_34_1953_1953.txt
+  text: uu_34_1953_1953-12-18.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3fc529567eef43f7447f48c0b2cd34282a27c3784e148afeff2391dfc93c78c6
 pdf_sha256: 2ab911ac64644c72b901d427e89be7d8bedd9aff097520e71dd9e4cf3fc7e7df
+tanggal_pengundangan: '1953-12-28'
+tanggal_berlaku: '1951-01-01'
+lembaran_negara: 'LN.1953/NO.84, LL SETNEG : 5 HLM.'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-34-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu34-1953.pdf
+bpk:
+  id: 45439
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33956/UU%20Nomor%2034%20Tahun%201953.pdf
+    bpk_file_id: 33956
+    filename: UU Nomor 34 Tahun 1953.pdf
+    sha256: 3fc529567eef43f7447f48c0b2cd34282a27c3784e148afeff2391dfc93c78c6
+    bytes: 33612
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_21_1957
+      citation: UU No. 21 Tahun 1957
+      tentang: Menetapkan Undang-Undang Darurat Nomor 14 Tahun 1952 Tentang Perubahan
+        Dan Penambahan Peraturan Pemungutan Pajak Peralihan, Pajak Upah dan Pajak
+        Kekayaan (Lembaran-Negara Tahun 1952 No. 87) Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/52802/uu-no-21-tahun-1957
+      note: null
+uji_materi: null

@@ -9,12 +9,12 @@ tentang: PENCABUTAN ORDONANSI ï¿½UITVOERVERBOD PLANTENMATERIAAL NEGARA SUMATE
   1949ï¿½ (STAATSBLAD 1949 NR 159)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-02-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu14-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/47970/uu-no-14-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/37021/UU%20Nomor%2014%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,33 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_14_1954_1954
+- id: uu_14_1954_1954-02-27
   kind: asli
   source: official
-  date: null
+  date: '1954-02-27'
   date_basis: tanggal_penetapan
-  text: uu_14_1954_1954.txt
+  text: uu_14_1954_1954-02-27.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 73bb5c7ec04afe87c223d78191d7ead688eb1916574acad3afc4e91495147568
 pdf_sha256: 1f91ee9d8da724303787a4f8df60fa38f4a2071ee6406ef471787b7c28a56d12
+tanggal_pengundangan: '1954-03-20'
+tanggal_berlaku: '1954-03-20'
+lembaran_negara: 'LN.1954/NO.41, TLN NO.552, LL SETNEG : 2 HLM.'
+subjek: KESEHATAN - BANTUAN, SUMBANGAN, BENCANA / KEBENCANAAN, DAN PENANGGULANGAN
+  BENCANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu14-1954.pdf
+bpk:
+  id: 47970
+  files:
+  - url: https://peraturan.bpk.go.id/Download/37021/UU%20Nomor%2014%20Tahun%201954.pdf
+    bpk_file_id: 37021
+    filename: UU Nomor 14 Tahun 1954.pdf
+    sha256: 73bb5c7ec04afe87c223d78191d7ead688eb1916574acad3afc4e91495147568
+    bytes: 29891
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

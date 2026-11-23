@@ -12,12 +12,12 @@ tentang: PENETAPAN "UNDANG-UNDANG DARURAT TENTANG PENGHENTIAN BERLAKUNYA "INDISC
   NOMOR 20 TAHUN 1951 (LEMBARAN-NEGARA NOMOR 95 TAHUN 1951) SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-27-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu27-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45423/uu-no-27-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33930/UU%20Nomor%2027%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,11 +26,46 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_27_1953_1953
+- id: uu_27_1953_1953-12-18
   kind: asli
   source: official
-  date: null
+  date: '1953-12-18'
   date_basis: tanggal_penetapan
-  text: uu_27_1953_1953.txt
-  pasal_count: 11
+  text: uu_27_1953_1953-12-18.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7829bef72b4692a2aaf6a6a4489fdef34a30d0b3bdc46e60919aa920571c7292
 pdf_sha256: 2dcea38dfb79766c9b48d54ed5d0bc4f01f628791f48f092c05b6c6922b4b729
+tanggal_pengundangan: '1953-12-28'
+tanggal_berlaku: '1951-10-03'
+lembaran_negara: 'LN.1953/NO.77, TLN NO.482, LL SETNEG : 7 HLM.'
+subjek: PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-27-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu27-1953.pdf
+bpk:
+  id: 45423
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33930/UU%20Nomor%2027%20Tahun%201953.pdf
+    bpk_file_id: 33930
+    filename: UU Nomor 27 Tahun 1953.pdf
+    sha256: 7829bef72b4692a2aaf6a6a4489fdef34a30d0b3bdc46e60919aa920571c7292
+    bytes: 50037
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_71_1958
+      citation: UU No. 71 Tahun 1958
+      tentang: Penetapan Undang-Undang Darurat No. 4 Tahun 1958 Tentang Pengubahan
+        Undang-Undang Mata Uang Tahun 1953 (Lembaran-Negara Tahun 1958 No. 46), Sebagai
+        Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/52853/uu-no-71-tahun-1958
+      note: null
+    - id: null
+      citation: UUDrt No. 4 Tahun 1958
+      tentang: Pengubahan "Undang-Undang Mata Uang Tahun 1953" (Undang- Undang No.
+        27 Tahun 1953, Lembaran-Negara Tahun 1953 No. 77)
+      url: https://peraturan.bpk.go.id/Details/51778/uudrt-no-4-tahun-1958
+      note: null
+uji_materi: null

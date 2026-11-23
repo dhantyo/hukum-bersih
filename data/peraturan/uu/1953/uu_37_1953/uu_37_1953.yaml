@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 37 Tahun 1953 tentang Penggantian Anggota Dewan Perwa
 tentang: PENGGANTIAN ANGGOTA DEWAN PERWAKILAN RAKYAT
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-12-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-37-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu37-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45445/uu-no-37-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33962/UU%20Nomor%2037%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,34 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_37_1953_1953-12-29
+  kind: asli
+  source: official
+  date: '1953-12-29'
+  date_basis: tanggal_penetapan
+  text: uu_37_1953_1953-12-29.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 40b2e371ceea2c437c0b65c0181937bcc649c8fc82592f5955b59bdef929e4e6
 pdf_sha256: 9b2fbb7a28c857372cdd5fba88eb1086422d1b263d3964597290bf89121a9324
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1953-12-31'
+tanggal_berlaku: '1950-08-17'
+lembaran_negara: 'LN.1953/NO.88, LL SETNEG : 4 HLM.'
+subjek: PEMBENTUKAN, PERUBAHAN, DAN PEMBUBARAN KOMISI / KOMITE / BADAN / DEWAN / STAF
+  KHUSUS / TIM / PANITIA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-37-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu37-1953.pdf
+bpk:
+  id: 45445
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33962/UU%20Nomor%2037%20Tahun%201953.pdf
+    bpk_file_id: 33962
+    filename: UU Nomor 37 Tahun 1953.pdf
+    sha256: 40b2e371ceea2c437c0b65c0181937bcc649c8fc82592f5955b59bdef929e4e6
+    bytes: 28777
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

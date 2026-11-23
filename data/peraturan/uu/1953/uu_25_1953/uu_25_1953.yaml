@@ -14,12 +14,12 @@ tentang: PENETAPAN "UNDANG-UNDANG DARURAT NOMOR 12 TAHUN 1950, TENTANG MENGADAKA
   1950" (LEMBARANNEGARA NOMOR 80 TAHUN 1950), SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-25-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu25-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45407/uu-no-25-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33909/UU%20Nomor%2025%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,11 +29,32 @@ relationships:
   - uu-drt_12_1950
   enacted_by: []
 versions:
-- id: uu_25_1953_1953
+- id: uu_25_1953_1953-12-18
   kind: asli
   source: official
-  date: null
+  date: '1953-12-18'
   date_basis: tanggal_penetapan
-  text: uu_25_1953_1953.txt
-  pasal_count: 37
+  text: uu_25_1953_1953-12-18.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5700fa10658694f04011c4ff2dc2682a8c2d93af3057225ef552162201601bd8
 pdf_sha256: ffa5e25f516fb75073233c795dfc8098d11f67f6ac07ecc85afc7c982aea2faa
+tanggal_pengundangan: '1953-12-28'
+tanggal_berlaku: '1951-01-01'
+lembaran_negara: 'LN.1953/NO.75, TLN NO.480, LL SETNEG : 43 HLM.'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-25-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu25-1953.pdf
+bpk:
+  id: 45407
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33909/UU%20Nomor%2025%20Tahun%201953.pdf
+    bpk_file_id: 33909
+    filename: UU Nomor 25 Tahun 1953.pdf
+    sha256: 5700fa10658694f04011c4ff2dc2682a8c2d93af3057225ef552162201601bd8
+    bytes: 227286
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

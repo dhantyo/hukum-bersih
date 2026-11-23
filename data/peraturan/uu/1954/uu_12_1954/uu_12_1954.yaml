@@ -9,13 +9,13 @@ title: Undang-Undang Nomor 12 Tahun 1954 tentang Pernyataan Berlakunya Undang-Un
 tentang: PERNYATAAN BERLAKUNYA UNDANG-UNDANG NO 4 TAHUN 1950 DARI REPUBLIK INDONESIA
   DAHULU TENTANG DASAR-DASAR PENDIDIKAN DAN PENGAJARAN DI SEKOLAH UNTUK SELURUH INDONESIA
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1954-03-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu12-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/47953/uu-no-12-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/37006/UU%20Nomor%2012%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,3 +32,28 @@ versions:
   text: uu_12_1954_1954.txt
   pasal_count: 2
 pdf_sha256: 2ef606dabbf87d0d8a7bfbafcbee789b1e7875460d37c476081839931bb233db
+tanggal_pengundangan: '1954-03-18'
+tanggal_berlaku: '1954-03-18'
+lembaran_negara: 'LN.1954/NO.38, LL SETNEG : 2 HLM.'
+subjek: PENDIDIKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu12-1954.pdf
+bpk:
+  id: 47953
+  files:
+  - url: https://peraturan.bpk.go.id/Download/37006/UU%20Nomor%2012%20Tahun%201954.pdf
+    bpk_file_id: 37006
+    filename: UU Nomor 12 Tahun 1954.pdf
+    sha256: 8145a8a0d95bc4ab86c892e3f00ac7ae6e60326d8d07f64cbe722e35ebf93396
+    bytes: 27262
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_2_1989
+      citation: UU No. 2 Tahun 1989
+      tentang: Sistem Pendidikan Nasional
+      url: https://peraturan.bpk.go.id/Details/46794/uu-no-2-tahun-1989
+      note: null
+uji_materi: null
+reparse_error: 'v12: new text has 280 words, stored text 3446'

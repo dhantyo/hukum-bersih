@@ -11,12 +11,12 @@ tentang: PENETAPAN BERLAKUNYA UNDANG-UNDANG REPUBLIK INDONESIA TANGGAL 21 NOPEMB
   LUAR JAWA DAN MADURA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-10-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-32-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu32-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50502/uu-no-32-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39741/UU%20Nomor%2032%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,11 +25,44 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_32_1954_1954
+- id: uu_32_1954_1954-10-26
   kind: asli
   source: official
-  date: null
+  date: '1954-10-26'
   date_basis: tanggal_penetapan
-  text: uu_32_1954_1954.txt
+  text: uu_32_1954_1954-10-26.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 29efd9740fec9bf7c744b194abd78dd6d0f3d3ba6957895c39d5a96e11d2bda3
 pdf_sha256: 5d2047ef235574765fef97c7ed16c34103fd122f0c6a6640274855f73d050d97
+tanggal_pengundangan: '1954-11-02'
+tanggal_berlaku: '1954-11-02'
+lembaran_negara: 'LN.1954/NO.98, TLN NO.694, LL SETNEG : 3 HLM.'
+subjek: KEAGAMAAN, IBADAH, DAN PENYELENGGARAAN HAJI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-32-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu32-1954.pdf
+bpk:
+  id: 50502
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39741/UU%20Nomor%2032%20Tahun%201954.pdf
+    bpk_file_id: 39741
+    filename: UU Nomor 32 Tahun 1954.pdf
+    sha256: 29efd9740fec9bf7c744b194abd78dd6d0f3d3ba6957895c39d5a96e11d2bda3
+    bytes: 44524
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/39742/UU%20Nomor%2032%20Tahun%201954_LAMPIRAN.pdf
+    bpk_file_id: 39742
+    filename: UU Nomor 32 Tahun 1954_LAMPIRAN.pdf
+    sha256: 22b444ce0ae2fe862cf063adabbea244b1fe203fe04a4de9d1ff3df44d5c80ba
+    bytes: 39457
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_22_1946
+      citation: UU No. 22 Tahun 1946
+      tentang: Pencatatan Nikah, Talak dan Rujuk
+      url: https://peraturan.bpk.go.id/Details/25193/uu-no-22-tahun-1946
+      note: null
+uji_materi: null

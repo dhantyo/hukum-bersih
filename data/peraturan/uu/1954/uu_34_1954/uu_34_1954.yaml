@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 34 Tahun 1954 tentang Pemakaian Gelar "Akuntan" ("Acc
 tentang: PEMAKAIAN GELAR "AKUNTAN" ("ACCONTANT")
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-11-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-34-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu34-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50504/uu-no-34-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39745/UU%20Nomor%2034%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,38 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_34_1954_1954
+- id: uu_34_1954_1954-11-13
   kind: asli
   source: official
-  date: null
+  date: '1954-11-13'
   date_basis: tanggal_penetapan
-  text: uu_34_1954_1954.txt
+  text: uu_34_1954_1954-11-13.txt
   pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a4d92ee97275c77350f3b5a1c6fe745e00c9536b429e34be4b0523f74b558530
 pdf_sha256: c52a08677607006a447c1628f9b355185c91d82311534988c9d2397c5bef7a1c
+tanggal_pengundangan: '1954-12-02'
+tanggal_berlaku: '1954-12-02'
+lembaran_negara: 'LN.1954/NO.103, TLN NO.705, LL SETNEG : 4 HLM.'
+subjek: JABATAN / PROFESI / KEAHLIAN / SERTIFIKASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-34-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu34-1954.pdf
+bpk:
+  id: 50504
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39745/UU%20Nomor%2034%20Tahun%201954.pdf
+    bpk_file_id: 39745
+    filename: UU Nomor 34 Tahun 1954.pdf
+    sha256: a4d92ee97275c77350f3b5a1c6fe745e00c9536b429e34be4b0523f74b558530
+    bytes: 40497
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/139917/uu34-1954.pdf
+    bpk_file_id: 139917
+    filename: uu34-1954.pdf
+    sha256: c52a08677607006a447c1628f9b355185c91d82311534988c9d2397c5bef7a1c
+    bytes: 33573
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

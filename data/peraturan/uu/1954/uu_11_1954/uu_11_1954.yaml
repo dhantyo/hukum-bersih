@@ -10,12 +10,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 24 TAHUN 1950 TENTANG PERATURAN TAM
   PERJALANAN KE LUAR NEGERI (LEMBARAN-NEGARA NO. 39 TAHUN 1950) SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-02-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu11-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/47947/uu-no-11-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/37000/UU%20Nomor%2011%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,11 +25,38 @@ relationships:
   - uu-drt_24_1950
   enacted_by: []
 versions:
-- id: uu_11_1954_1954
+- id: uu_11_1954_1954-02-27
   kind: asli
   source: official
-  date: null
+  date: '1954-02-27'
   date_basis: tanggal_penetapan
-  text: uu_11_1954_1954.txt
+  text: uu_11_1954_1954-02-27.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5a82903b2ba3a41f2b7f1e8f37461ab18581944e300e0dbaffb3749c40ccb38e
 pdf_sha256: 5a82903b2ba3a41f2b7f1e8f37461ab18581944e300e0dbaffb3749c40ccb38e
+tanggal_pengundangan: '1954-03-13'
+tanggal_berlaku: '1954-03-13'
+lembaran_negara: 'LL SETNEG : 2 HLM.'
+subjek: KEPEGAWAIAN, APARATUR NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu11-1954.pdf
+bpk:
+  id: 47947
+  files:
+  - url: https://peraturan.bpk.go.id/Download/37000/UU%20Nomor%2011%20Tahun%201954.pdf
+    bpk_file_id: 37000
+    filename: UU Nomor 11 Tahun 1954.pdf
+    sha256: 5a82903b2ba3a41f2b7f1e8f37461ab18581944e300e0dbaffb3749c40ccb38e
+    bytes: 90575
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: null
+      citation: UUDrt No. 24 Tahun 1950
+      tentang: Peraturan Tambahan Perjalanan ke Luar Negeri
+      url: https://peraturan.bpk.go.id/Details/51839/uudrt-no-24-tahun-1950
+      note: null
+uji_materi: null

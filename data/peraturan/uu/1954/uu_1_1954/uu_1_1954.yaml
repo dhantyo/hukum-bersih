@@ -13,12 +13,12 @@ tentang: PENETAPAN UNDANGUNDANG DARURAT NO 11 TAHUN 1952 TENTANG PENGUBAHAN DAN 
   SEBAGAI UNDANGUNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-12-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu1-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/47819/uu-no-1-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/36868/UU%20Nomor%201%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,11 +28,44 @@ relationships:
   - uu-drt_11_1952
   enacted_by: []
 versions:
-- id: uu_1_1954_1954
+- id: uu_1_1954_1953-12-29
   kind: asli
   source: official
-  date: null
+  date: '1953-12-29'
   date_basis: tanggal_penetapan
-  text: uu_1_1954_1954.txt
-  pasal_count: 3
+  text: uu_1_1954_1953-12-29.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4919ea7e2c0795a370fb23d1b3f8169e54b9d6051317151d4a864b0bf1bbebde
 pdf_sha256: df5147ea99068e7a449af97a76aa9ef025c48f744ea6920b2e8c8e79eda78420
+tanggal_pengundangan: '1954-01-07'
+tanggal_berlaku: '1954-01-07'
+lembaran_negara: 'LN.1954/NO.8, TLN NO.341, LL SETNEG : 12 HLM.'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu1-1954.pdf
+bpk:
+  id: 47819
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36868/UU%20Nomor%201%20Tahun%201954.pdf
+    bpk_file_id: 36868
+    filename: UU Nomor 1 Tahun 1954.pdf
+    sha256: 4919ea7e2c0795a370fb23d1b3f8169e54b9d6051317151d4a864b0bf1bbebde
+    bytes: 48716
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/36869/UU%20Nomor%201%20Tahun%201954_LAMPIRAN.pdf
+    bpk_file_id: 36869
+    filename: UU Nomor 1 Tahun 1954_LAMPIRAN.pdf
+    sha256: ae75922a504ac385a47f00ce1af4525d14d95cb3a3e7a0c287ef24ccf6feee81
+    bytes: 24147
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_36_1954
+      citation: UU No. 36 Tahun 1954
+      tentang: Penetapan Tarip Pajak Perseroan
+      url: https://peraturan.bpk.go.id/Details/50508/uu-no-36-tahun-1954
+      note: null
+uji_materi: null

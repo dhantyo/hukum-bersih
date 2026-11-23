@@ -10,12 +10,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 23 TAHUN 1950 (LEMBARAN-NEGARA NO. 
   TAHUN 1950) TENTANG PERATURAN TAMBAHAN ISTIRAHAT LUAR NEGERI SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-02-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu8-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/47935/uu-no-8-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/36988/UU%20Nomor%208%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,11 +25,38 @@ relationships:
   - uu-drt_23_1950
   enacted_by: []
 versions:
-- id: uu_8_1954_1954
+- id: uu_8_1954_1954-02-27
   kind: asli
   source: official
-  date: null
+  date: '1954-02-27'
   date_basis: tanggal_penetapan
-  text: uu_8_1954_1954.txt
-  pasal_count: 3
+  text: uu_8_1954_1954-02-27.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e15d00dba405fff17ff96adb44012532e0e24e363cfce26f393449b169ddbd9f
 pdf_sha256: 502a52e213c3df527f80e7850d8a161c08737f14a0fb6583f90383ae345e42b2
+tanggal_pengundangan: '1954-03-12'
+tanggal_berlaku: '1954-03-12'
+lembaran_negara: 'LN.1954/NO.28, TLN NO.534, LL SETNEG : 3 HLM.'
+subjek: KEPEGAWAIAN, APARATUR NEGARA - KEWARGANEGARAAN DAN IMIGRASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu8-1954.pdf
+bpk:
+  id: 47935
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36988/UU%20Nomor%208%20Tahun%201954.pdf
+    bpk_file_id: 36988
+    filename: UU Nomor 8 Tahun 1954.pdf
+    sha256: e15d00dba405fff17ff96adb44012532e0e24e363cfce26f393449b169ddbd9f
+    bytes: 52179
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: null
+      citation: UUDrt No. 23 Tahun 1950
+      tentang: Peraturan Tambahan Istirahat Luar Negeri
+      url: https://peraturan.bpk.go.id/Details/51838/uudrt-no-23-tahun-1950
+      note: null
+uji_materi: null

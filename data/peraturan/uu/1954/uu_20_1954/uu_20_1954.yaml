@@ -14,12 +14,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 8 TAHUN 1953 (LEMBARAN-NEGARA NO. 5
   DITAMBAH KEMUDIAN, SEPANJANG MENGENAI URUSAN PERUMAHAN SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-04-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu20-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/47989/uu-no-20-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/37040/UU%20Nomor%2020%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,6 +28,41 @@ relationships:
   enacts:
   - uu-drt_8_1953
   enacted_by: []
-versions: []
+versions:
+- id: uu_20_1954_1954-04-15
+  kind: asli
+  source: official
+  date: '1954-04-15'
+  date_basis: tanggal_penetapan
+  text: uu_20_1954_1954-04-15.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2c3dc8456ed1268ff86534e3e31b6cb9cb50948843653dec360c4cf414676cf8
 pdf_sha256: 2c3dc8456ed1268ff86534e3e31b6cb9cb50948843653dec360c4cf414676cf8
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1954-06-12'
+tanggal_berlaku: '1953-05-29'
+lembaran_negara: 'LN.1954/NO.54, LL SETNEG : 2 HLM.'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu20-1954.pdf
+bpk:
+  id: 47989
+  files:
+  - url: https://peraturan.bpk.go.id/Download/37040/UU%20Nomor%2020%20Tahun%201954.pdf
+    bpk_file_id: 37040
+    filename: UU Nomor 20 Tahun 1954.pdf
+    sha256: 2c3dc8456ed1268ff86534e3e31b6cb9cb50948843653dec360c4cf414676cf8
+    bytes: 92142
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: null
+      citation: UUDrt No. 8 Tahun 1953
+      tentang: Memperpanjang Waktu Berlakunya Peraturan-Peraturan Militer Militer
+        Termaksud dalam Pasal 34 Ayat 5 Staatsblad 1939 Nomor 582, Sebagaimana Telah
+        Diubah dan/atau Ditambah Kemudian Sepanjang Mengenai Urusan Perumahan
+      url: https://peraturan.bpk.go.id/Details/52923/uudrt-no-8-tahun-1953
+      note: null
+uji_materi: null

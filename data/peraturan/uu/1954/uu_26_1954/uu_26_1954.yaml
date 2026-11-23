@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 26 Tahun 1954 tentang Pembayaran Kembali Pinjaman Nas
 tentang: PEMBAYARAN KEMBALI PINJAMAN NASIONAL 1946
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-07-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-26-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu26-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50491/uu-no-26-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39734/UU%20Nomor%2026%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_26_1954_1954
+- id: uu_26_1954_1954-07-30
   kind: asli
   source: official
-  date: null
+  date: '1954-07-30'
   date_basis: tanggal_penetapan
-  text: uu_26_1954_1954.txt
+  text: uu_26_1954_1954-07-30.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 309516acbd992fb29938b3fa1a3de57896bb9c6fb8db5e96b89fc81acfaa5561
 pdf_sha256: 309516acbd992fb29938b3fa1a3de57896bb9c6fb8db5e96b89fc81acfaa5561
+tanggal_pengundangan: '1954-08-13'
+tanggal_berlaku: '1954-08-13'
+lembaran_negara: 'LN.1954/NO.80, LL SETNEG : 3 HLM.'
+subjek: PIUTANG, UTANG, DAN HIBAH NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-26-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu26-1954.pdf
+bpk:
+  id: 50491
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39734/UU%20Nomor%2026%20Tahun%201954.pdf
+    bpk_file_id: 39734
+    filename: UU Nomor 26 Tahun 1954.pdf
+    sha256: 309516acbd992fb29938b3fa1a3de57896bb9c6fb8db5e96b89fc81acfaa5561
+    bytes: 85570
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

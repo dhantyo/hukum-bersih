@@ -10,12 +10,12 @@ tentang: PEMINDAHAN KEKUASAAN MENTERI URUSAN PEGAWAI KEPADA PERDANA MENTERI BERH
   DENGAN PENGHAPUSAN JABATAN MENTERI URUSAN PEGAWAI
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-02-09'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu7-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/47928/uu-no-7-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/36981/UU%20Nomor%207%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,11 +24,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_7_1954_1954
+- id: uu_7_1954_1954-02-09
   kind: asli
   source: official
-  date: null
+  date: '1954-02-09'
   date_basis: tanggal_penetapan
-  text: uu_7_1954_1954.txt
+  text: uu_7_1954_1954-02-09.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 86a1ce5f95c1ed5b96ec975a7c1c9042626b7bcb3f929b202272611cd66e5b22
 pdf_sha256: 86a1ce5f95c1ed5b96ec975a7c1c9042626b7bcb3f929b202272611cd66e5b22
+tanggal_pengundangan: '1954-02-27'
+tanggal_berlaku: '1953-05-11'
+lembaran_negara: 'LL SETNEG : 2 HLM.'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA - KEPEGAWAIAN, APARATUR NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu7-1954.pdf
+bpk:
+  id: 47928
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36981/UU%20Nomor%207%20Tahun%201954.pdf
+    bpk_file_id: 36981
+    filename: UU Nomor 7 Tahun 1954.pdf
+    sha256: 86a1ce5f95c1ed5b96ec975a7c1c9042626b7bcb3f929b202272611cd66e5b22
+    bytes: 87744
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

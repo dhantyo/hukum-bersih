@@ -11,12 +11,12 @@ tentang: PENETAPAN "UNDANG-UNDANG DARURAT NOMOR 9 TAHUN 1951,TENTANG MEMPERPANJA
   1951) SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-28-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu28-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45424/uu-no-28-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33932/UU%20Nomor%2028%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,6 +25,33 @@ relationships:
   enacts:
   - uu-drt_9_1951
   enacted_by: []
-versions: []
+versions:
+- id: uu_28_1953_1953-12-18
+  kind: asli
+  source: official
+  date: '1953-12-18'
+  date_basis: tanggal_penetapan
+  text: uu_28_1953_1953-12-18.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c25fa64ad9b42f91b9feecf53218f9fde6bc3104d1c8c6b0d77a0f9fff30f429
 pdf_sha256: 4ff2b548042a2ed8c7c8e789db96e53565832e9bbb6deae1d2d13f6c3638e055
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1953-12-28'
+tanggal_berlaku: '1951-07-01'
+lembaran_negara: 'LN.1953/NO.78, TLN NO.483, LL SETNEG : 3 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-28-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu28-1953.pdf
+bpk:
+  id: 45424
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33932/UU%20Nomor%2028%20Tahun%201953.pdf
+    bpk_file_id: 33932
+    filename: UU Nomor 28 Tahun 1953.pdf
+    sha256: c25fa64ad9b42f91b9feecf53218f9fde6bc3104d1c8c6b0d77a0f9fff30f429
+    bytes: 29122
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

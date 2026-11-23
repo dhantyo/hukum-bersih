@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 30 Tahun 1954 tentang Tanda Kehormatan Sewindu Angkat
   Perang Republik Indonesia
 tentang: TANDA KEHORMATAN SEWINDU ANGKATAN PERANG REPUBLIK INDONESIA
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1954-09-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-30-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu30-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50499/uu-no-30-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39738/UU%20Nomor%2030%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,44 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_30_1954_1954
+- id: uu_30_1954_1954-09-14
   kind: asli
   source: official
-  date: null
+  date: '1954-09-14'
   date_basis: tanggal_penetapan
-  text: uu_30_1954_1954.txt
+  text: uu_30_1954_1954-09-14.txt
   pasal_count: 15
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: dc775ec59bfc767aa59dfba44ae679ab3964acfc2bdcd1b21592823b12303477
 pdf_sha256: 993ea74eab17fd9ef3284833e96f0d137d09964b6191de9b4418765250e9dd19
+tanggal_pengundangan: '1954-09-15'
+tanggal_berlaku: '1954-09-15'
+lembaran_negara: 'LN.1954/NO.85, TLN NO.657, LL SETNEG : 8 HLM.'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-30-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu30-1954.pdf
+bpk:
+  id: 50499
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39738/UU%20Nomor%2030%20Tahun%201954.pdf
+    bpk_file_id: 39738
+    filename: UU Nomor 30 Tahun 1954.pdf
+    sha256: dc775ec59bfc767aa59dfba44ae679ab3964acfc2bdcd1b21592823b12303477
+    bytes: 51070
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/39739/UU%20Nomor%2030%20Tahun%201954_LAMPIRAN.pdf
+    bpk_file_id: 39739
+    filename: UU Nomor 30 Tahun 1954_LAMPIRAN.pdf
+    sha256: 570b27a0406b335457cd52dd3f76a76bb74ca0b58f56fa9ad49f4cecbac8f5f5
+    bytes: 22469
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_20_2009
+      citation: UU No. 20 Tahun 2009
+      tentang: Gelar, Tanda Jasa, dan Tanda Kehormatan
+      url: https://peraturan.bpk.go.id/Details/38640/uu-no-20-tahun-2009
+      note: null
+uji_materi: null

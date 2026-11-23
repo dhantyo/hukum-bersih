@@ -11,12 +11,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT TENTANG PEMINDAHAN HAK TANAH-TANAH DAN 
   1 TAHUN 1952) SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-07-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-24-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu24-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50412/uu-no-24-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39720/UU%20Nomor%2024%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,11 +25,40 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_24_1954_1954
+- id: uu_24_1954_1954-07-13
   kind: asli
   source: official
-  date: null
+  date: '1954-07-13'
   date_basis: tanggal_penetapan
-  text: uu_24_1954_1954.txt
+  text: uu_24_1954_1954-07-13.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2e8e4e5e5e948bfe10d141a884862ef96397c7781c6b3250a01762c02364445b
 pdf_sha256: 2ed33515a313482bfe5088053634a4685c5e92831d2a75b5dfceb1af7d910b49
+tanggal_pengundangan: '1954-08-02'
+tanggal_berlaku: '1954-08-02'
+lembaran_negara: 'LN.1954/NO.78, TLN NO.626, LL SETNEG : 3 HLM.'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-24-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu24-1954.pdf
+bpk:
+  id: 50412
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39720/UU%20Nomor%2024%20Tahun%201954.pdf
+    bpk_file_id: 39720
+    filename: UU Nomor 24 Tahun 1954.pdf
+    sha256: 2e8e4e5e5e948bfe10d141a884862ef96397c7781c6b3250a01762c02364445b
+    bytes: 34398
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_76_1957
+      citation: UU No. 76 Tahun 1957
+      tentang: Pengubahan Undang-Undang No. 24 Tahun 1954 dan Undang-Undang No. 28
+        Tahun 1956 Mengenai Penggantian Perkataan "Menteri Kehakiman" Dengan Perkataan
+        "Menteri Agraria"
+      url: https://peraturan.bpk.go.id/Details/52759/uu-no-76-tahun-1957
+      note: null
+uji_materi: null

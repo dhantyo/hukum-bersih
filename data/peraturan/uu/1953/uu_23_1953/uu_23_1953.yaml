@@ -6,28 +6,53 @@ year: 1953
 title: Undang-Undang Nomor 23 Tahun 1953 tentang Kewajiban Melaporkan Perusahaan
 tentang: KEWAJIBAN MELAPORKAN PERUSAHAAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 7 Tahun 1981 Tentang Wajib
-  Lapor Ketenagakerjaan di Perusahaan'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1953-11-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-23-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu23-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45330/uu-no-23-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33830/UU%20Nomor%2023%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_7_1981
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_23_1953_1953
+- id: uu_23_1953_1953-11-25
   kind: asli
   source: official
-  date: null
+  date: '1953-11-25'
   date_basis: tanggal_penetapan
-  text: uu_23_1953_1953.txt
-  pasal_count: 8
+  text: uu_23_1953_1953-11-25.txt
+  pasal_count: 10
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 89e39928b761e0914e9dc4cf1869d458504294319220e7f0c0be628bf9d02226
 pdf_sha256: 246e7a9bd5a10f9cf5a3ecd3b91b78d85dc895ef9a3d0630b2023d54645e465d
+tanggal_pengundangan: '1953-11-25'
+tanggal_berlaku: '1953-12-25'
+lembaran_negara: 'LN.1953/NO.70, TLN NO.471, LL SETNEG : 5 HLM.'
+subjek: KETENAGAKERJAAN - PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-23-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu23-1953.pdf
+bpk:
+  id: 45330
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33830/UU%20Nomor%2023%20Tahun%201953.pdf
+    bpk_file_id: 33830
+    filename: UU Nomor 23 Tahun 1953.pdf
+    sha256: 89e39928b761e0914e9dc4cf1869d458504294319220e7f0c0be628bf9d02226
+    bytes: 37761
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_7_1981
+      citation: UU No. 7 Tahun 1981
+      tentang: Wajib Lapor Ketenaga Kerjaan Di Perusahaan
+      url: https://peraturan.bpk.go.id/Details/47039/uu-no-7-tahun-1981
+      note: null
+uji_materi: null

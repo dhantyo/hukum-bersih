@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 10 Tahun 1954 tentang Penetapan Undang-Undang Darurat
 tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 3 TAHUN 1952 SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-02-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu10-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/47942/uu-no-10-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/36995/UU%20Nomor%2010%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,38 @@ relationships:
   - uu-drt_3_1952
   enacted_by: []
 versions:
-- id: uu_10_1954_1954
+- id: uu_10_1954_1954-02-27
   kind: asli
   source: official
-  date: null
+  date: '1954-02-27'
   date_basis: tanggal_penetapan
-  text: uu_10_1954_1954.txt
-  pasal_count: 8
+  text: uu_10_1954_1954-02-27.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d5f52ebb77378d45b714cff1863d6bc44216c52fd41d3b4868ede53f4a0cb15f
 pdf_sha256: 31d69c7d6446f347e356387209fcfc26297e6cd44b345f927f17d32918380dc7
+tanggal_pengundangan: '1954-03-13'
+tanggal_berlaku: '1954-03-13'
+lembaran_negara: 'LN.1954/NO.32, TLN NO.538, LL SETNEG : 5 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu10-1954.pdf
+bpk:
+  id: 47942
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36995/UU%20Nomor%2010%20Tahun%201954.pdf
+    bpk_file_id: 36995
+    filename: UU Nomor 10 Tahun 1954.pdf
+    sha256: d5f52ebb77378d45b714cff1863d6bc44216c52fd41d3b4868ede53f4a0cb15f
+    bytes: 35715
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: null
+      citation: UUDrt No. 3 Tahun 1952
+      tentang: Mengadakan Bea-Keluar-Tambahan-Sementara atas Beberapa Barang
+      url: https://peraturan.bpk.go.id/Details/52641/uudrt-no-3-tahun-1952
+      note: null
+uji_materi: null

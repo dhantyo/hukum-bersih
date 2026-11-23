@@ -11,12 +11,12 @@ tentang: PENETAPAN ï¿½UNDANG-UNDANG DARURAT NOMOR 4 TAHUN 1953, TENTANG PENGE
   1953), SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-29-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu29-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45426/uu-no-29-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33936/UU%20Nomor%2029%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,11 +25,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_29_1953_1953
+- id: uu_29_1953_1953-12-18
   kind: asli
   source: official
-  date: null
+  date: '1953-12-18'
   date_basis: tanggal_penetapan
-  text: uu_29_1953_1953.txt
+  text: uu_29_1953_1953-12-18.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 051cac58651924d7ff4828d8b9d35b51cae69df006d381bd8c25aa7e6a4b8dda
 pdf_sha256: 418b478e11c5cf6f22b57f21e3610fde3ec2be16787a7295fb393d8e10a4ddc0
+tanggal_pengundangan: '1953-12-28'
+tanggal_berlaku: '1953-12-28'
+lembaran_negara: 'LN.1953/NO.79, TLN NO.484, LL SETNEG : 5 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-29-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu29-1953.pdf
+bpk:
+  id: 45426
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33936/UU%20Nomor%2029%20Tahun%201953.pdf
+    bpk_file_id: 33936
+    filename: UU Nomor 29 Tahun 1953.pdf
+    sha256: 051cac58651924d7ff4828d8b9d35b51cae69df006d381bd8c25aa7e6a4b8dda
+    bytes: 41201
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

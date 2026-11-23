@@ -6,28 +6,53 @@ year: 1954
 title: Undang-Undang Nomor 33 Tahun 1954 tentang Wakil Notaris Dan Wakil Notaris Sementara
 tentang: WAKIL NOTARIS DAN WAKIL NOTARIS SEMENTARA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 30 Tahun 2004 Tentang Jabatan
-  Notaris'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1954-10-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-33-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu33-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50503/uu-no-33-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39743/UU%20Nomor%2033%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_30_2004
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_33_1954_1954
+- id: uu_33_1954_1954-10-13
   kind: asli
   source: official
-  date: null
+  date: '1954-10-13'
   date_basis: tanggal_penetapan
-  text: uu_33_1954_1954.txt
+  text: uu_33_1954_1954-10-13.txt
   pasal_count: 9
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9c6e69acd2b848eae2ec2e592219b8ef02cc93025406b5ac84173c58e31f8cb4
 pdf_sha256: 8eaa1eeb1b84921d096705ea4c9f137e460b561340bf84400b92ad0a254d5fcb
+tanggal_pengundangan: '1954-10-20'
+tanggal_berlaku: '1954-10-20'
+lembaran_negara: 'LN.1954/NO.101, TLN NO.700, LL SETNEG : 5 HLM.'
+subjek: JABATAN / PROFESI / KEAHLIAN / SERTIFIKASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-33-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu33-1954.pdf
+bpk:
+  id: 50503
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39743/UU%20Nomor%2033%20Tahun%201954.pdf
+    bpk_file_id: 39743
+    filename: UU Nomor 33 Tahun 1954.pdf
+    sha256: 9c6e69acd2b848eae2ec2e592219b8ef02cc93025406b5ac84173c58e31f8cb4
+    bytes: 45113
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_30_2004
+      citation: UU No. 30 Tahun 2004
+      tentang: Jabatan Notaris
+      url: https://peraturan.bpk.go.id/Details/40758/uu-no-30-tahun-2004
+      note: null
+uji_materi: null

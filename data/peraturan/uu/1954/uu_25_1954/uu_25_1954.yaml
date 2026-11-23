@@ -6,13 +6,13 @@ year: 1954
 title: Undang-Undang Nomor 25 Tahun 1954 tentang Perjanjian-Perjanjian Pos Sedunia
 tentang: PERJANJIAN-PERJANJIAN POS SEDUNIA
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1954-08-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-25-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu25-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50414/uu-no-25-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39722/UU%20Nomor%2025%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_25_1954_1954-08-12
+  kind: asli
+  source: official
+  date: '1954-08-12'
+  date_basis: tanggal_penetapan
+  text: uu_25_1954_1954-08-12.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ade998bf83ff499c8146a41a09f230c26c12656b27324c8f3c0a0e30d19ef7a1
 pdf_sha256: ade998bf83ff499c8146a41a09f230c26c12656b27324c8f3c0a0e30d19ef7a1
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1954-08-07'
+tanggal_berlaku: '1954-08-07'
+lembaran_negara: 'LL SETNEG : 3 HLM.'
+subjek: PERS, POS, DAN PERIKLANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-25-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu25-1954.pdf
+bpk:
+  id: 50414
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39722/UU%20Nomor%2025%20Tahun%201954.pdf
+    bpk_file_id: 39722
+    filename: UU Nomor 25 Tahun 1954.pdf
+    sha256: ade998bf83ff499c8146a41a09f230c26c12656b27324c8f3c0a0e30d19ef7a1
+    bytes: 85228
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_5_1961
+      citation: UU No. 5 Tahun 1961
+      tentang: Perjanjian Pos Sedunia dan Persetujuannya
+      url: https://peraturan.bpk.go.id/Details/51137/uu-no-5-tahun-1961
+      note: null
+uji_materi: null

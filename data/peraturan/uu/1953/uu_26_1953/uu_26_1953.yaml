@@ -13,12 +13,12 @@ tentang: PENETAPAN "UNDANG-UNDANG DARURAT TENTANG LARANGAN UNTUK MEMPERGUNAKAN D
   86 TAHUN 1952)" SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-26-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu26-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45419/uu-no-26-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33926/UU%20Nomor%2026%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -27,11 +27,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_26_1953_1953
+- id: uu_26_1953_1953-12-18
   kind: asli
   source: official
-  date: null
+  date: '1953-12-18'
   date_basis: tanggal_penetapan
-  text: uu_26_1953_1953.txt
-  pasal_count: 5
+  text: uu_26_1953_1953-12-18.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: cc58b205c6463092d76c6decd8bdde48ff62e61fb3317b78150ed77007ce8d34
 pdf_sha256: 6367e1f57d9875bad00e74a1ca2acff4825f772a1b81acea91df45a989033cb4
+tanggal_pengundangan: '1953-12-28'
+tanggal_berlaku: '1953-01-01'
+lembaran_negara: 'LN.1953/NO.76, TLN NO.481, LL SETNEG : 6 HLM.'
+subjek: PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-26-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu26-1953.pdf
+bpk:
+  id: 45419
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33926/UU%20Nomor%2026%20Tahun%201953.pdf
+    bpk_file_id: 33926
+    filename: UU Nomor 26 Tahun 1953.pdf
+    sha256: cc58b205c6463092d76c6decd8bdde48ff62e61fb3317b78150ed77007ce8d34
+    bytes: 38492
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

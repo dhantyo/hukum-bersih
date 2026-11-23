@@ -11,12 +11,12 @@ tentang: PENETAPAN "UNDANG-UNDANG DARURAT NOMOR 23 TAHUN 1951, TENTANG PENGUBAHA
   1951) SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-32-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu32-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45435/uu-no-32-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33951/UU%20Nomor%2032%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,6 +25,33 @@ relationships:
   enacts:
   - uu-drt_23_1951
   enacted_by: []
-versions: []
+versions:
+- id: uu_32_1953_1953-12-18
+  kind: asli
+  source: official
+  date: '1953-12-18'
+  date_basis: tanggal_penetapan
+  text: uu_32_1953_1953-12-18.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b139ec10b2c7908698cf52f4a2097c740ae25cf5f8ef49a08a9d87a471ef1d85
 pdf_sha256: 39b2ab63e9c772b0adedf57677c4d7f07aa6c1efd9ebd2f31df4779b8da9b825
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1953-12-28'
+tanggal_berlaku: '1953-12-28'
+lembaran_negara: 'LN.1953/NO.82, TLN NO.486, LL SETNEG : 4 HLM.'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-32-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu32-1953.pdf
+bpk:
+  id: 45435
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33951/UU%20Nomor%2032%20Tahun%201953.pdf
+    bpk_file_id: 33951
+    filename: UU Nomor 32 Tahun 1953.pdf
+    sha256: b139ec10b2c7908698cf52f4a2097c740ae25cf5f8ef49a08a9d87a471ef1d85
+    bytes: 31298
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

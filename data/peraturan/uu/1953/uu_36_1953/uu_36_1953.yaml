@@ -6,22 +6,60 @@ year: 1953
 title: Undang-Undang Nomor 36 Tahun 1953 tentang Bank Tabungan Pos
 tentang: BANK TABUNGAN POS
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 2 Tahun 1964 Tentang Bank
-  Tabungan Negara'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1953-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-36-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu36-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45443/uu-no-36-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33960/UU%20Nomor%2036%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_2_1964
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_36_1953_1953-12-18
+  kind: asli
+  source: official
+  date: '1953-12-18'
+  date_basis: tanggal_penetapan
+  text: uu_36_1953_1953-12-18.txt
+  pasal_count: 10
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 39ff1a244e38805ef82df8aad408b48e66a79509dc85f684fb49e1daaef01eaa
 pdf_sha256: 8b829160a3229e13a02df5b42b1ac82d1aedbb1d99f61bd4e7f4226ead856977
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1953-12-28'
+tanggal_berlaku: '1953-12-28'
+lembaran_negara: 'LN.1953/NO.86, TLN NO.490, LL SETNEG : 17 HLM.'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-36-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu36-1953.pdf
+bpk:
+  id: 45443
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33960/UU%20Nomor%2036%20Tahun%201953.pdf
+    bpk_file_id: 33960
+    filename: UU Nomor 36 Tahun 1953.pdf
+    sha256: 39ff1a244e38805ef82df8aad408b48e66a79509dc85f684fb49e1daaef01eaa
+    bytes: 60754
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_2_1964
+      citation: UU No. 2 Tahun 1964
+      tentang: Bank Tabungan Negara
+      url: https://peraturan.bpk.go.id/Details/50231/uu-no-2-tahun-1964
+      note: null
+    Diubah dengan:
+    - id: perppu_4_1963
+      citation: PERPU No. 4 Tahun 1963
+      tentang: Perubahan Dan Tambahan Undang-Undang No. 36 Tahun 1953 Tentang Bank
+        Tabungan Pos (Lembaran Negara Tahun 1953 No.86)
+      url: https://peraturan.bpk.go.id/Details/53734/perpu-no-4-tahun-1963
+      note: null
+uji_materi: null

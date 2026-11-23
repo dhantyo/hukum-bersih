@@ -6,13 +6,13 @@ year: 1954
 title: Undang-Undang Nomor 29 Tahun 1954 tentang Pertahanan Negara Republik Indonesia
 tentang: PERTAHANAN NEGARA REPUBLIK INDONESIA
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1954-09-03'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-29-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu29-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50498/uu-no-29-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39737/UU%20Nomor%2029%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,38 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_29_1954_1954
+- id: uu_29_1954_1954-09-03
   kind: asli
   source: official
-  date: null
+  date: '1954-09-03'
   date_basis: tanggal_penetapan
-  text: uu_29_1954_1954.txt
+  text: uu_29_1954_1954-09-03.txt
   pasal_count: 15
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a89850ba4845074096ad47734e42a129af3047a0c12507b07a6803ec31593743
 pdf_sha256: a89850ba4845074096ad47734e42a129af3047a0c12507b07a6803ec31593743
+tanggal_pengundangan: '1954-09-06'
+tanggal_berlaku: '1954-09-06'
+lembaran_negara: 'LL SETNEG : 9 HLM.'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-29-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu29-1954.pdf
+bpk:
+  id: 50498
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39737/UU%20Nomor%2029%20Tahun%201954.pdf
+    bpk_file_id: 39737
+    filename: UU Nomor 29 Tahun 1954.pdf
+    sha256: a89850ba4845074096ad47734e42a129af3047a0c12507b07a6803ec31593743
+    bytes: 245253
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_20_1982
+      citation: UU No. 20 Tahun 1982
+      tentang: Ketentuan-Ketentuan Pokok Pertahanan Keamanan Negara Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/47031/uu-no-20-tahun-1982
+      note: null
+uji_materi: null

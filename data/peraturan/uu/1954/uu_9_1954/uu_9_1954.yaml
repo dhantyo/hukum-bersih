@@ -10,12 +10,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 24 TAHUN 1951 TENTANG PENGUBAHAN BE
   POS TARIP BEA MASUK (LEMBARAN-NEGARA NO. 104 TAHUN 1951) SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-02-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu9-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/47938/uu-no-9-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/36991/UU%20Nomor%209%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,11 +25,38 @@ relationships:
   - uu-drt_24_1951
   enacted_by: []
 versions:
-- id: uu_9_1954_1954
+- id: uu_9_1954_1954-02-27
   kind: asli
   source: official
-  date: null
+  date: '1954-02-27'
   date_basis: tanggal_penetapan
-  text: uu_9_1954_1954.txt
+  text: uu_9_1954_1954-02-27.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ea612095e5cd1b01c4dae3896160674cff04d0bc323e1bf49a13cd91db417018
 pdf_sha256: 033ab2515a06b194927b336ea8477baf80f8e8b10781d4ebeed5dae803e2ea9c
+tanggal_pengundangan: '1954-03-13'
+tanggal_berlaku: '1954-03-13'
+lembaran_negara: 'LN.1954/NO.31, TLN NO.537, LL SETNEG : 4 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu9-1954.pdf
+bpk:
+  id: 47938
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36991/UU%20Nomor%209%20Tahun%201954.pdf
+    bpk_file_id: 36991
+    filename: UU Nomor 9 Tahun 1954.pdf
+    sha256: ea612095e5cd1b01c4dae3896160674cff04d0bc323e1bf49a13cd91db417018
+    bytes: 46472
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: null
+      citation: UUDrt No. 24 Tahun 1951
+      tentang: Perubahan Beberapa Pos Tarip Bea Masuk
+      url: https://peraturan.bpk.go.id/Details/52000/uudrt-no-24-tahun-1951
+      note: null
+uji_materi: null

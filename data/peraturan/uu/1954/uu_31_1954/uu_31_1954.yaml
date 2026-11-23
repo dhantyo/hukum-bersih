@@ -10,12 +10,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 5 TAHUN 1954 TENTANG PEMUNGUTAN TAM
   PEMBAYARAN ATAS PENGIRIMAN UANG KELUAR NEGERI SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-09-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-31-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu31-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/50500/uu-no-31-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/39740/UU%20Nomor%2031%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,11 +25,38 @@ relationships:
   - uu-drt_5_1954
   enacted_by: []
 versions:
-- id: uu_31_1954_1954
+- id: uu_31_1954_1954-09-07
   kind: asli
   source: official
-  date: null
+  date: '1954-09-07'
   date_basis: tanggal_penetapan
-  text: uu_31_1954_1954.txt
-  pasal_count: 3
+  text: uu_31_1954_1954-09-07.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 540814844de5ed0bf6ec3be691aa67dd6c3d460cc641df87965443043ce506c0
 pdf_sha256: e0261eece1cfca2f11ce65b94df87f589237dae4fc6d9dad96599d2312aa3c8f
+tanggal_pengundangan: '1954-09-17'
+tanggal_berlaku: '1954-09-17'
+lembaran_negara: 'LN.1954/NO.87, TLN NO.659, LL SETNEG : 3 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-31-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu31-1954.pdf
+bpk:
+  id: 50500
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39740/UU%20Nomor%2031%20Tahun%201954.pdf
+    bpk_file_id: 39740
+    filename: UU Nomor 31 Tahun 1954.pdf
+    sha256: 540814844de5ed0bf6ec3be691aa67dd6c3d460cc641df87965443043ce506c0
+    bytes: 30289
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: null
+      citation: UUDrt No. 5 Tahun 1954
+      tentang: Pemungutan Tambahan Pembayaran atas Pengiriman Uang ke Luar Negeri
+      url: https://peraturan.bpk.go.id/Details/52934/uudrt-no-5-tahun-1954
+      note: null
+uji_materi: null

@@ -11,12 +11,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 8 TAHUN 1951 TENTANG PENGUBAHAN REG
   NO. 39 TAHUN 1951) SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-12-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu4-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/47906/uu-no-4-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/36959/UU%20Nomor%204%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,11 +26,39 @@ relationships:
   - uu-drt_8_1951
   enacted_by: []
 versions:
-- id: uu_4_1954_1954
+- id: uu_4_1954_1953-12-30
   kind: asli
   source: official
-  date: null
+  date: '1953-12-30'
   date_basis: tanggal_penetapan
-  text: uu_4_1954_1954.txt
+  text: uu_4_1954_1953-12-30.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b098612a6a217386bbf54ad2530e0e8030fa355f3e131e074f9512adc1fe7e2d
 pdf_sha256: 97d1886ac0cf72ac1131376a3ea8f5f6a54a07ae109bc325610a65e86426a101
+tanggal_pengundangan: '1954-01-07'
+tanggal_berlaku: '1954-01-07'
+lembaran_negara: 'LN.1954/NO.11, TLN NO.504, LL SETNEG : 4 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu4-1954.pdf
+bpk:
+  id: 47906
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36959/UU%20Nomor%204%20Tahun%201954.pdf
+    bpk_file_id: 36959
+    filename: UU Nomor 4 Tahun 1954.pdf
+    sha256: b098612a6a217386bbf54ad2530e0e8030fa355f3e131e074f9512adc1fe7e2d
+    bytes: 33113
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: null
+      citation: UUDrt No. 8 Tahun 1951
+      tentang: Perubahan Reglement A yang Dilampirkan pada Rechtordonnantie (Staatsblad
+        1931 No. 471)
+      url: https://peraturan.bpk.go.id/Details/51948/uudrt-no-8-tahun-1951
+      note: null
+uji_materi: null

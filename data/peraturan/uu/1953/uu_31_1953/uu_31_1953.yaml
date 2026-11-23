@@ -11,12 +11,12 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NOMOR 15 TAHUN 1952, UNTUK PEMUNGUTAN P
   1952) SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1953-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-31-tahun-1953
-source_pdf_url: https://peraturan.go.id/files/uu31-1953.pdf
+source_url: https://peraturan.bpk.go.id/Details/45433/uu-no-31-tahun-1953
+source_pdf_url: https://peraturan.bpk.go.id/Download/33949/UU%20Nomor%2031%20Tahun%201953.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,6 +25,33 @@ relationships:
   enacts:
   - uu-drt_15_1952
   enacted_by: []
-versions: []
+versions:
+- id: uu_31_1953_1953-12-18
+  kind: asli
+  source: official
+  date: '1953-12-18'
+  date_basis: tanggal_penetapan
+  text: uu_31_1953_1953-12-18.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8ca54c490250e8d1f2858e0eba81c2d0d39c356787f0998d54d8bd76f86d8572
 pdf_sha256: 85cd10b07151b2e37d00b144239c2d3676889c6caaebffab9d466db8031cfabd
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1953-12-28'
+tanggal_berlaku: '1953-12-28'
+lembaran_negara: 'LN.1953/NO.81, LL SETNEG : 3 HLM.'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-31-tahun-1953
+  source_pdf_url: https://peraturan.go.id/files/uu31-1953.pdf
+bpk:
+  id: 45433
+  files:
+  - url: https://peraturan.bpk.go.id/Download/33949/UU%20Nomor%2031%20Tahun%201953.pdf
+    bpk_file_id: 33949
+    filename: UU Nomor 31 Tahun 1953.pdf
+    sha256: 8ca54c490250e8d1f2858e0eba81c2d0d39c356787f0998d54d8bd76f86d8572
+    bytes: 27178
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

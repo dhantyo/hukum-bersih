@@ -9,29 +9,54 @@ title: Undang-Undang Nomor 3 Tahun 1954 tentang Penetapan Undang-Undang Darurat 
 tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 1 TAHUN 1953 TENTANG MEMUNGUT OPSENTEN
   ATAS BEA-MASUK (LEMBARAN-NEGARA NO. 7 TAHUN 1953) SEBAGAI UNDANG-UNDANG
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 17 Tahun 2003 Tentang Keuangan
-  Negara'
-tanggal_penetapan: null
+status: berlaku
+tanggal_penetapan: '1953-12-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu3-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/47874/uu-no-3-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/36928/UU%20Nomor%203%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_17_2003
+  revoked_by: []
   enacts:
   - uu-drt_1_1953
   enacted_by: []
 versions:
-- id: uu_3_1954_1954
+- id: uu_3_1954_1953-12-19
   kind: asli
   source: official
-  date: null
+  date: '1953-12-19'
   date_basis: tanggal_penetapan
-  text: uu_3_1954_1954.txt
+  text: uu_3_1954_1953-12-19.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7c7b91e18e703148598c526c86ab69c95c1771d359bb3d9d188beb2462b5830c
 pdf_sha256: 6b819712b2b8eb8656e9a02c920e987b94a80af4e68b28662e8ec6ee1b108399
+tanggal_pengundangan: '1954-01-07'
+tanggal_berlaku: '1953-01-01'
+lembaran_negara: 'LN.1954/NO.10, TLN NO.497, LL SETNEG : 3 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu3-1954.pdf
+bpk:
+  id: 47874
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36928/UU%20Nomor%203%20Tahun%201954.pdf
+    bpk_file_id: 36928
+    filename: UU Nomor 3 Tahun 1954.pdf
+    sha256: 7c7b91e18e703148598c526c86ab69c95c1771d359bb3d9d188beb2462b5830c
+    bytes: 32121
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: null
+      citation: UUDrt No. 1 Tahun 1953
+      tentang: Memungut Opsenten atas Bea-Masuk
+      url: https://peraturan.bpk.go.id/Details/52684/uudrt-no-1-tahun-1953
+      note: null
+uji_materi: null

@@ -9,32 +9,86 @@ title: Undang-Undang Nomor 13 Tahun 1954 tentang Pengubahan Undang-Undang Nr 16 
 tentang: PENGUBAHAN UNDANG-UNDANG NR 16 DAN 17 TAHUN 1950 (REPUBLIK INDONESIA DAHULU)
   TENTANG PEMBENTUKAN KOTA-KOTA BESAR DAN KOTA-KOTA KECIL DI JAWA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 121 Tahun 2024 Tentang Kota
-  Yogyakarta di Daerah Istimewa Yogyakarta Undang-Undang Nomor 108 Tahun 2024 Tentang
-  Kota Cirebon di Provinsi Jawa Barat Undang-Undang Nomor 104 Tahun 2024 Tentang Kota
-  Bandung di Provinsi Jawa Barat Undang-Undang Nomor 100 Tahun 2024 Tentang Kota Bogor
-  di Provinsi Jawa Barat Undang-Undang Nomor 98 Tahun 2024 Tentang Kota Sukabumi di
-  Provinsi Jawa Barat'
-tanggal_penetapan: null
+status: berlaku
+tanggal_penetapan: '1954-03-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SUKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu13-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/47958/uu-no-13-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/37011/UU%20Nomor%2013%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_121_2024
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_13_1954_1954
+- id: uu_13_1954_1954-03-12
   kind: asli
   source: official
-  date: null
+  date: '1954-03-12'
   date_basis: tanggal_penetapan
-  text: uu_13_1954_1954.txt
+  text: uu_13_1954_1954-03-12.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ad109113155f792b57bfcee7aa5e51dff6d801913d74d73184d9015bf37dcf49
 pdf_sha256: ad109113155f792b57bfcee7aa5e51dff6d801913d74d73184d9015bf37dcf49
+tanggal_pengundangan: '1954-03-18'
+tanggal_berlaku: '1954-03-18'
+lembaran_negara: 'LL SETNEG : 3 HLM.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu13-1954.pdf
+bpk:
+  id: 47958
+  files:
+  - url: https://peraturan.bpk.go.id/Download/37011/UU%20Nomor%2013%20Tahun%201954.pdf
+    bpk_file_id: 37011
+    filename: UU Nomor 13 Tahun 1954.pdf
+    sha256: ad109113155f792b57bfcee7aa5e51dff6d801913d74d73184d9015bf37dcf49
+    bytes: 90913
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_98_2024
+      citation: UU No. 98 Tahun 2024
+      tentang: Kota Sukabumi di Provinsi Jawa Barat
+      url: https://peraturan.bpk.go.id/Details/307378/uu-no-98-tahun-2024
+      note: null
+    - id: uu_121_2024
+      citation: UU No. 121 Tahun 2024
+      tentang: Kota Yogyakarta di Daerah Istimewa Yogyakarta
+      url: https://peraturan.bpk.go.id/Details/307440/uu-no-121-tahun-2024
+      note: null
+    - id: uu_108_2024
+      citation: UU No. 108 Tahun 2024
+      tentang: Kota Cirebon di Provinsi Jawa Barat
+      url: https://peraturan.bpk.go.id/Details/307400/uu-no-108-tahun-2024
+      note: null
+    - id: uu_104_2024
+      citation: UU No. 104 Tahun 2024
+      tentang: Kota Bandung di Provinsi Jawa Barat
+      url: https://peraturan.bpk.go.id/Details/307392/uu-no-104-tahun-2024
+      note: null
+    - id: uu_100_2024
+      citation: UU No. 100 Tahun 2024
+      tentang: Kota Bogor di Provinsi Jawa Barat
+      url: https://peraturan.bpk.go.id/Details/307382/uu-no-100-tahun-2024
+      note: null
+    Mengubah:
+    - id: uu_17_1950
+      citation: UU No. 17 Tahun 1950
+      tentang: Pembentukan Daerah-Daerah Kota Kecil dalam Lingkungan Propinsi Jawa
+        Timur, Jawa Tengah dan Jawa Barat
+      url: https://peraturan.bpk.go.id/Details/47964/uu-no-17-tahun-1950
+      note: null
+    - id: uu_16_1950
+      citation: UU No. 16 Tahun 1950
+      tentang: Pembentukan Daerah-Daerah Kota Besar Dalam Lingkungan Propinsi Jawa
+        Timur, Jawa Tengah, Jawa Barat Dan Daerah Istimewa Yogyakarta
+      url: https://peraturan.bpk.go.id/Details/47963/uu-no-16-tahun-1950
+      note: null
+uji_materi: null

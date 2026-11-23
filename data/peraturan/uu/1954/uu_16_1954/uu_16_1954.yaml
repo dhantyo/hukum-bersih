@@ -13,12 +13,12 @@ tentang: PENETAPAN ï¿½UNDANG-UNDANG DARURAT NO. 25 TAHUN 1951 (LEMBARAN-NEGAR
   UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1954-05-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-1954
-source_pdf_url: https://peraturan.go.id/files/uu16-1954.pdf
+source_url: https://peraturan.bpk.go.id/Details/47982/uu-no-16-tahun-1954
+source_pdf_url: https://peraturan.bpk.go.id/Download/37033/UU%20Nomor%2016%20Tahun%201954.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,6 +26,40 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_16_1954_1954-05-10
+  kind: asli
+  source: official
+  date: '1954-05-10'
+  date_basis: tanggal_penetapan
+  text: uu_16_1954_1954-05-10.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c61559b0ce11d63c69de759b927e5db00d5b54e6e6c30520e2c7536224fe3b34
 pdf_sha256: 21213b5547fd6b9a25038392c463bc2da6884d6dfcc90a84694e713e7859f537
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1954-05-18'
+tanggal_berlaku: '1954-05-18'
+lembaran_negara: 'LN.1954/NO.60, TLN NO.583, LL SETNEG : 3 HLM.'
+subjek: PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-1954
+  source_pdf_url: https://peraturan.go.id/files/uu16-1954.pdf
+bpk:
+  id: 47982
+  files:
+  - url: https://peraturan.bpk.go.id/Download/37033/UU%20Nomor%2016%20Tahun%201954.pdf
+    bpk_file_id: 37033
+    filename: UU Nomor 16 Tahun 1954.pdf
+    sha256: c61559b0ce11d63c69de759b927e5db00d5b54e6e6c30520e2c7536224fe3b34
+    bytes: 29908
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: null
+      citation: UUDrt No. 25 Tahun 1951
+      tentang: Memperpanjang Waktu Berlakunya Hukuman Termaksud dalam Pasal 3 Ayat
+        2 Ordonansi (Staatsblad Untuk Indonesia 1948 No. 141)
+      url: https://peraturan.bpk.go.id/Details/52003/uudrt-no-25-tahun-1951
+      note: null
+uji_materi: null
