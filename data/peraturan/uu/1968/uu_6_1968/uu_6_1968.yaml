@@ -28,7 +28,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1968_1968-07-03.txt
   pasal_count: 25
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ff8f7124c60ff94c8deaeeaaf544c8aeb70ee32cc9c00c318377b2e1ef107cea
 pdf_sha256: 6cf1fc768fa76e66eb14bf5b0fe3372005ec26154749ba2ecf5cd15fc97e8acf
@@ -79,4 +79,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/50347/uu-no-26-tahun-1964
       note: null
 uji_materi: null
-recheck: missed heading in penjelasan 1

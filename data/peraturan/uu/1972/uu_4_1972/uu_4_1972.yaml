@@ -33,7 +33,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1972_1972-11-09.txt
   pasal_count: 17
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a32df32606b24fc789a509df061f2d9325654d4b8edabc3861c8f66b29b1d313
 pdf_sha256: a32df32606b24fc789a509df061f2d9325654d4b8edabc3861c8f66b29b1d313
@@ -108,4 +108,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/52337/uu-no-65-tahun-1958
       note: null
 uji_materi: null
-recheck: 'missed heading in body 4; closing: no date of signing'

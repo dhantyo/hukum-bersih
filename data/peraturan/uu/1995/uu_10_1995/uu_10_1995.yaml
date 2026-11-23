@@ -27,8 +27,8 @@ versions:
   date: '1995-12-30'
   date_basis: tanggal_penetapan
   text: uu_10_1995_1995-12-30.txt
-  pasal_count: 25
-  parser_version: 12
+  pasal_count: 118
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b4e898e8edea49ad610b2f6b4a2459a825e29b4f08beddbef2055f8e68f170d6
 pdf_sha256: b4e898e8edea49ad610b2f6b4a2459a825e29b4f08beddbef2055f8e68f170d6
@@ -56,4 +56,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/40189/uu-no-17-tahun-2006
       note: null
 uji_materi: null
-recheck: missed heading in body 60; missed heading in penjelasan 40

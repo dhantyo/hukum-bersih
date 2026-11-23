@@ -29,7 +29,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1990_1990-08-15.txt
   pasal_count: 18
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 29327f6bda250e18da6dd321bf21249c41d3ae95689ed2af53549c4494337cde
 pdf_sha256: 7fe8fcd5b28baafd2e925adaf2063e5a6d560683c36ef2712ab55e9e6baa44cd
@@ -57,4 +57,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/67666/pp-no-4-tahun-1975
       note: null
 uji_materi: null
-recheck: missed heading in penjelasan 2

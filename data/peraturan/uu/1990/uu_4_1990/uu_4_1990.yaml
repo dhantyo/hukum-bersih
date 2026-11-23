@@ -29,7 +29,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1990_1990-08-09.txt
   pasal_count: 14
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6f780ddc8d6ca11e7beb7fe8e6cee951891e4cca2a032ee5c55349dd34722868
 pdf_sha256: 4f2bd5d7c107ae999c735cd94a396095a386fb8b4f2c1d023598827257fd3563
@@ -57,4 +57,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/99857/uu-no-13-tahun-2018
       note: null
 uji_materi: null
-recheck: 'missed heading in penjelasan 1; closing: no date of signing'

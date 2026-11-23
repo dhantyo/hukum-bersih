@@ -28,8 +28,8 @@ versions:
   date: '1969-08-08'
   date_basis: tanggal_penetapan
   text: uu_11_1969_1969-08-08.txt
-  pasal_count: 1
-  parser_version: 12
+  pasal_count: 34
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d6814dca22c4814c4045becf6bcf0be0f757235138d8f44bfa8c8d117364c246
 pdf_sha256: 964e1653c7e4f8c0d1df213a96e4c8139edbf992f98c16c646eefdc5ed00eabc
@@ -64,5 +64,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/40267/uu-no-20-tahun-1952
       note: null
 uji_materi: null
-recheck: missed heading in body 33; missed heading in penjelasan 12; page-turn 3;
-  watermark 13

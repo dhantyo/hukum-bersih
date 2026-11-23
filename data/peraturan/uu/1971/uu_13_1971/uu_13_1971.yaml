@@ -32,7 +32,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_1971_1971-12-11.txt
   pasal_count: 17
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 044e135f1713484c0f1fd55b3a2006c093ac796e2903741b8325d591ecb01cc3
 pdf_sha256: 044e135f1713484c0f1fd55b3a2006c093ac796e2903741b8325d591ecb01cc3
@@ -68,4 +68,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/47551/uu-no-4-tahun-1972
       note: null
 uji_materi: null
-recheck: missed heading in body 1; missed heading in penjelasan 1
