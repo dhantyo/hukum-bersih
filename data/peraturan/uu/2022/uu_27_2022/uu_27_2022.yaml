@@ -27,8 +27,8 @@ versions:
   date: '2022-10-17'
   date_basis: tanggal_penetapan
   text: uu_27_2022_2022-10-17.txt
-  pasal_count: 50
-  parser_version: 11
+  pasal_count: 76
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ed952dea04b87d14ecf037f9f324a65d50b396ddd34fc28ddf9ff014391971f6
   ocr: true
@@ -58,4 +58,3 @@ uji_materi:
     Nomor 196, Tambahan Lembaran Negara Republik Indonesia Nomor 6820) bertentangan
     dengan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai
     kekuatan hukum mengikat secara bersyarat sepanjang tidak dimaknai “dan/atau”.
-recheck: missed heading in body 13; SK No 1

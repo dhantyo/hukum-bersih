@@ -27,8 +27,8 @@ versions:
   date: '2014-10-17'
   date_basis: tanggal_penetapan
   text: uu_39_2014_2014-10-17.txt
-  pasal_count: 49
-  parser_version: 11
+  pasal_count: 58
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d5c9b129b8f249cbf05604a52846a27b6f6810d04f664f7e7e2becd73cedfe57
   ocr: true
@@ -78,4 +78,3 @@ uji_materi:
   amar: Pasal 27 ayat (3), Pasal 29, Pasal 30 ayat (1), Pasal 42, Pasal 55, Pasal
     107 bertentangan dengan UUD NRI Tahun 1945 secara bersyarat dan tidak mempunyai
     kekuatan hukum mengikat.
-recheck: missed heading in body 39; missed heading in penjelasan 57

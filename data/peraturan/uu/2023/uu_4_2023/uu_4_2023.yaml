@@ -30,7 +30,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2023_2023-01-12.txt
   pasal_count: 346
-  parser_version: 10
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2be1b1e49af7c729fc2b09c16fcd94da0c601f70b9b6066e81e6b56d980b0e12
   ocr: true
@@ -228,4 +228,3 @@ uji_materi:
     Tahun 1945 dan tidak memiliki kekuatan hukum mengikat secara bersyarat sepanjang
     tidak dimaknai "persetujuan DPR" berlaku setelah pembentuk undang-undang melakukan
     perubahan paling lama 2 (dua) tahun sejak putusan a quo diucapkan.
-recheck: missed heading in body 367; missed heading in penjelasan 70

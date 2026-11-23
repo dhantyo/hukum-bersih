@@ -28,7 +28,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_2023_2023-05-04.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6d1518f2cb57587a1afc8f02dce5b94f12c79549537c2fb190017a909f2dd3b2
   ocr: true
@@ -65,4 +65,3 @@ bpk:
       note: Ketentuan mengenai perubahan peraturan pembentukan Propinsi Sumatera Utara
         dalam Undang-Undang Nomor 24 Tahun 1956
 uji_materi: null
-recheck: 'closing: no date of signing'

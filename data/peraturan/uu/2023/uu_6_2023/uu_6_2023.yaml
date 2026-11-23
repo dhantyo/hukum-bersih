@@ -31,7 +31,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_2023_2023-03-31.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: de73c84f11d4e721a4c0e66cadadac7f698941ec8adff5934e70f32dc885fdae
   ocr: true
@@ -622,4 +622,3 @@ uji_materi:
     Republik Indonesia Tahun 2023 Nomor 41, Tambahan Lembaran Negara Republik Indonesia
     Nomor 6856), bertentangan dengan Undang-Undang Dasar Negara Republik Indonesia
     Tahun 1945 dan tidak memiliki kekuatan hukum mengikat;
-recheck: missed heading in penjelasan 186

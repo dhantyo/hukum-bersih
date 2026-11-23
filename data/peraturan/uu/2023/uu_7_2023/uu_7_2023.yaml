@@ -33,7 +33,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2023_2022-12-12.txt
   pasal_count: 2
-  parser_version: 10
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 54bc8580e918b8bca73e4ddd7a065cfebdbfec1acfbcb45ea879891fdf289173
   ocr: true
@@ -68,4 +68,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/37644/uu-no-7-tahun-2017
       note: null
 uji_materi: null
-recheck: 'closing: no date of signing'

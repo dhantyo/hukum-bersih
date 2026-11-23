@@ -30,7 +30,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2011_2011-08-12.txt
   pasal_count: 81
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 539b705040f263ebf933b0ab739868a227e94932691407852e95aa0eaa05c8db
 pdf_sha256: 6e437449b68b0964a114373a388c7a13e652316da78b4a46e1a1ee13ae719310
@@ -76,4 +76,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/40503/uu-no-10-tahun-2004
       note: null
 uji_materi: null
-recheck: missed heading in body 16

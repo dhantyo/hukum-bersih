@@ -28,7 +28,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2023_2023-05-04.txt
   pasal_count: 9
-  parser_version: 10
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e2a8faa79c9167f9276e892a80cc39775341e35c707959dc6261acfe4d1b919e
   ocr: true
@@ -57,4 +57,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/38121/uu-no-11-tahun-1950
       note: null
 uji_materi: null
-recheck: 'closing: no date of signing'

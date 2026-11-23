@@ -28,7 +28,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2023_2023-01-02.txt
   pasal_count: 624
-  parser_version: 10
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 975fc86cfa63204ee21810cb7a99918c3a16b5fd47e58dadd9562c5ff3f1dfa0
   ocr: true
@@ -284,4 +284,3 @@ uji_materi:
     Lembaran Negara Republik Indonesia Nomor 6842) bertentangan dengan Undang-Undang
     Dasar Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum
     mengikat.
-recheck: missed heading in penjelasan 567

@@ -28,7 +28,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2019_2019-03-13.txt
   pasal_count: 80
-  parser_version: 11
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 79956789fd91fcf99b5887a1f1dc4a92d456e77da53c82c55c606b0a801241e5
   ocr: true
@@ -57,4 +57,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/258028/uu-no-17-tahun-2023
       note: null
 uji_materi: null
-recheck: page-turn 1; SK No 8

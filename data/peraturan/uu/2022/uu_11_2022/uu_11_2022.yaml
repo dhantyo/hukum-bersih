@@ -28,7 +28,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_2022_2022-03-16.txt
   pasal_count: 110
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 54246df05feefb0270920c39833a200a95a0a46ca630b7ce41c97d44c6016d01
   ocr: true
@@ -57,4 +57,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/40234/uu-no-3-tahun-2005
       note: null
 uji_materi: null
-recheck: page-turn 2; SK No 4

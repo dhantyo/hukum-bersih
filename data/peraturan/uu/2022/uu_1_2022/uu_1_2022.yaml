@@ -29,7 +29,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2022_2022-01-05.txt
   pasal_count: 193
-  parser_version: 11
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f16e323bef2c05a5185f437026618b0105ed2ff415cc1a9a4524883138101854
   ocr: true
@@ -95,4 +95,3 @@ uji_materi:
     Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat
     secara bersyarat, sepanjang tidak dimaknai sebagai "bagian dari jasa pelayanan
     kesehatan tradisional."
-recheck: missed heading in penjelasan 40

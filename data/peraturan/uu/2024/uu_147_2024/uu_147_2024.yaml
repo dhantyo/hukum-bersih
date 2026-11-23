@@ -29,7 +29,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_147_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c19b9a606b7f319cfed49d8e5046e1c25410bd64c1f6849f46b561c300f672d9
   ocr: true
@@ -59,4 +59,3 @@ bpk:
       note: Ketentuan yang mengatur mengenai Kabupaten Tana Toraja dalam Undang-Undang
         Nomor 29 Tahun 1959, dicabut dan dinyatakan tidak berlaku.
 uji_materi: null
-recheck: missed heading in penjelasan 5

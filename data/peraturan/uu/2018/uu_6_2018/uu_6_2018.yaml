@@ -28,7 +28,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_2018_2018-08-07.txt
   pasal_count: 98
-  parser_version: 11
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5dfcf27ad60c50f8241476251971bbae4586a824eec664561b9c798ee770763f
   ocr: true
@@ -68,4 +68,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/50665/uu-no-1-tahun-1962
       note: null
 uji_materi: null
-recheck: missed heading in penjelasan 86

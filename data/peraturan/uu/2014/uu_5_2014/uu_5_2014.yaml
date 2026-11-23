@@ -27,8 +27,8 @@ versions:
   date: '2014-01-15'
   date_basis: tanggal_penetapan
   text: uu_5_2014_2014-01-15.txt
-  pasal_count: 46
-  parser_version: 12
+  pasal_count: 140
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7c80a4e58b75f5ea401fbf1fa7f0d7fc0155fda9d603198e28e8a94af4f13e26
 pdf_sha256: 47e608c392074a111e73e8ed387dcf8c664ee1d4c2e472e1e46ab6c7c8678b45
@@ -79,4 +79,3 @@ uji_materi:
     atau kurungan berdasarkan putusan pengadilan yang telah memiliki kekuatan hukum
     tetap karena melakukan tindak pidana kejahatan jabatan atau tindak pidana kejahatan
     yang ada hubungannya dengan jabatan”;
-recheck: missed heading in body 52

@@ -28,7 +28,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2012_2012-10-05.txt
   pasal_count: 79
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0df78cd4209ac33441e54ce635f91e6cb40c1fdb492bca9650a117044d6b7137
 pdf_sha256: f360c4cfd06f8ce7e99b2b85b042d045f276680d59c3938ade8bc5750d983b31
@@ -67,4 +67,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
       note: null
 uji_materi: null
-recheck: missed heading in penjelasan 76

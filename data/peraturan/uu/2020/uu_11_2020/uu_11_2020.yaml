@@ -27,8 +27,8 @@ versions:
   date: '2020-11-02'
   date_basis: tanggal_penetapan
   text: uu_11_2020_2020-11-02.txt
-  pasal_count: 136
-  parser_version: 11
+  pasal_count: 181
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 70b88855a92b1d0c648902872924739b029d6e8e925429e39581269148e9501d
   ocr: true
@@ -571,4 +571,3 @@ uji_materi:
 - putusan: PUTUSAN Nomor 91/PUU-XVIII/2020
   url: https://peraturan.bpk.go.id/DownloadUjiMateri/160/putusan_mkri_8240.pdf
   amar: ''
-recheck: missed heading in body 981; missed heading in penjelasan 182; SK No 3

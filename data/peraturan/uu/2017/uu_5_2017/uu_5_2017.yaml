@@ -28,7 +28,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_2017_2017-05-24.txt
   pasal_count: 61
-  parser_version: 11
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 27a7205fe07abb944d52a2f576725ec30f30838f5c3e2353b8f8eda7d6de983e
   ocr: true
@@ -51,4 +51,3 @@ bpk:
     archive_url: null
   status_peraturan: null
 uji_materi: null
-recheck: missed heading in penjelasan 40

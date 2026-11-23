@@ -28,7 +28,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2016_2016-01-15.txt
   pasal_count: 24
-  parser_version: 11
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: cdbbf604c9aa2ca49e72929fc4d385fe086b755a40840ec06c40ac95edeae4a2
 pdf_sha256: 37150e2efc80309994a550913460aae11a906fbb2f1de91226fd17267c6821c0
@@ -56,4 +56,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
       note: null
 uji_materi: null
-recheck: missed heading in body 19

@@ -35,7 +35,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2015_2015-02-02.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 663d02023c8d222af24c395d8ee084eb289a8291a2e02c9f5a56d66c8e9a3b1e
 pdf_sha256: 9b2c932de35d81a2473e50bd26095c718082ddbec198e138d096aca2d815e066
@@ -122,4 +122,3 @@ uji_materi:
     bersyarat sepanjang tidak dimaknai “dikecualikan bagi perguruan tinggi yang mendapat
     izin dari penanggung jawab perguruan tinggi atau sebutan lain dan hadir tanpa
     atribut kampanye pemilu”.
-recheck: missed heading in penjelasan 193

@@ -27,8 +27,8 @@ versions:
   date: '2023-08-08'
   date_basis: tanggal_penetapan
   text: uu_17_2023_2023-08-08.txt
-  pasal_count: 268
-  parser_version: 10
+  pasal_count: 458
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 612400d634aff1eca403cbbf3d1e7746d73ffb71b43aeb1775c6a494f509ca1a
   ocr: true
@@ -162,4 +162,3 @@ uji_materi:
     sertifikat kompetensi serta mendapatkan STR dan SIP diwajibkan mengikuti pendidikan
     profesi yang materi dan kurikulumnya dirancang secara khusus dengan waktu yang
     lebih singkat sebelum perpanjangan SIP dilakukan”;
-recheck: missed heading in body 142; missed heading in penjelasan 147

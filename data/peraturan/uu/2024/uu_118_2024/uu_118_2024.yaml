@@ -29,7 +29,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_118_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 133f6779a55125e41ac41472719fc6e7188c2abc2eee68007111dcecdf4843ef
   ocr: true
@@ -66,4 +66,3 @@ bpk:
       note: Ketentuan yang mengatur mengenai Kabupaten Tangerang dalam Undang-Undang
         Nomor 14 Tahun 1950 dicabut dan dinyatakan tidak berlaku.
 uji_materi: null
-recheck: missed heading in penjelasan 2

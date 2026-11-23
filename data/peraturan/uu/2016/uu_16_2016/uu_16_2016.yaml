@@ -32,7 +32,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2016_2016-10-24.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b71c12210b68a688b3829416ad9babb3e8616760efb991f722faa71b737c7227
   ocr: true
@@ -55,4 +55,3 @@ bpk:
     archive_url: null
   status_peraturan: null
 uji_materi: null
-recheck: missed heading in penjelasan 8

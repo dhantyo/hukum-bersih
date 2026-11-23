@@ -28,7 +28,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_34_2014_2014-10-17.txt
   pasal_count: 60
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b04f9fd1acdc35ff95708865f444c09b9160c8755b5f6df89b18b4b5a9e6d232
 pdf_sha256: 55c3ae6217e64db270e7ca3f9ee8b2d450c31f8da08e034265eeffc21539a15d
@@ -50,4 +50,3 @@ bpk:
     archive_url: null
   status_peraturan: null
 uji_materi: null
-recheck: missed heading in penjelasan 30

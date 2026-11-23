@@ -28,7 +28,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2023_2023-05-04.txt
   pasal_count: 9
-  parser_version: 10
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 64a93637ff8db0f8b04674a40bea1eb8644c1e7054262a716fba58cbd875447d
   ocr: true
@@ -64,4 +64,3 @@ bpk:
       url: null
       note: null
 uji_materi: null
-recheck: 'closing: no date of signing'
