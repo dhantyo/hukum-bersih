@@ -6,13 +6,13 @@ year: 1974
 title: Undang-Undang Nomor 11 Tahun 1974 tentang Pengairan
 tentang: PENGAIRAN
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1974-12-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1974
-source_pdf_url: https://peraturan.go.id/files/uu0111974.pdf
+source_url: https://peraturan.bpk.go.id/Details/47422/uu-no-11-tahun-1974
+source_pdf_url: https://peraturan.bpk.go.id/Download/36398/UU%20Nomor%2011%20Tahun%201974.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,44 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_11_1974_1974
+- id: uu_11_1974_1974-12-26
   kind: asli
   source: official
-  date: null
+  date: '1974-12-26'
   date_basis: tanggal_penetapan
-  text: uu_11_1974_1974.txt
+  text: uu_11_1974_1974-12-26.txt
   pasal_count: 17
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5323c40dc3d0bfaa957e0a95f3045eaf65db8a17eb8878a99d409bfff1b20c38
 pdf_sha256: 5323c40dc3d0bfaa957e0a95f3045eaf65db8a17eb8878a99d409bfff1b20c38
+tanggal_pengundangan: '1974-12-26'
+tanggal_berlaku: '1974-12-26'
+lembaran_negara: 'LN. 1974/ No. 65, TLN NO. 3046, LL SETNEG : 14 HLM'
+subjek: LINGKUNGAN HIDUP
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1974
+  source_pdf_url: https://peraturan.go.id/files/uu0111974.pdf
+bpk:
+  id: 47422
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36398/UU%20Nomor%2011%20Tahun%201974.pdf
+    bpk_file_id: 36398
+    filename: UU Nomor 11 Tahun 1974.pdf
+    sha256: 5323c40dc3d0bfaa957e0a95f3045eaf65db8a17eb8878a99d409bfff1b20c38
+    bytes: 74306
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_17_2019
+      citation: UU No. 17 Tahun 2019
+      tentang: Sumber Daya Air
+      url: https://peraturan.bpk.go.id/Details/122742/uu-no-17-tahun-2019
+      note: null
+    - id: uu_7_2004
+      citation: UU No. 7 Tahun 2004
+      tentang: Sumber Daya Air
+      url: https://peraturan.bpk.go.id/Details/40497/uu-no-7-tahun-2004
+      note: UU Nomor 11 Tahun 1974 dinyatakan berlaku kembali sesuai Putusan MK Nomor
+        85/PUU-XI/2013
+uji_materi: null

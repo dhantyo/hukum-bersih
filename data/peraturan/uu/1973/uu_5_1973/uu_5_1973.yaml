@@ -6,29 +6,62 @@ year: 1973
 title: Undang-Undang Nomor 5 Tahun 1973 tentang Badan Pemeriksa Keuangan
 tentang: BADAN PEMERIKSA KEUANGAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 15 Tahun 2006 Tentang Badan
-  Pemeriksa Keuangan'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1973-07-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1973
-source_pdf_url: https://peraturan.go.id/files/UU0051973.pdf
+source_url: https://peraturan.bpk.go.id/Details/47432/uu-no-5-tahun-1973
+source_pdf_url: https://peraturan.bpk.go.id/Download/36408/UU%20Nomor%205%20Tahun%201973.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_17_1965
-  revoked_by:
-  - uu_15_2006
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_5_1973_1973
+- id: uu_5_1973_1973-07-16
   kind: asli
   source: official
-  date: null
+  date: '1973-07-16'
   date_basis: tanggal_penetapan
-  text: uu_5_1973_1973.txt
-  pasal_count: 14
+  text: uu_5_1973_1973-07-16.txt
+  pasal_count: 22
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 81455a4f01fdfa5124c2fd55c69d288bb5df25f55e556e7cfe263e32d7d2dddf
 pdf_sha256: 81455a4f01fdfa5124c2fd55c69d288bb5df25f55e556e7cfe263e32d7d2dddf
+tanggal_pengundangan: '1973-07-16'
+tanggal_berlaku: '1973-07-16'
+lembaran_negara: 'LN. 1973, LL SETNEG : 12 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1973
+  source_pdf_url: https://peraturan.go.id/files/UU0051973.pdf
+bpk:
+  id: 47432
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36408/UU%20Nomor%205%20Tahun%201973.pdf
+    bpk_file_id: 36408
+    filename: UU Nomor 5 Tahun 1973.pdf
+    sha256: 81455a4f01fdfa5124c2fd55c69d288bb5df25f55e556e7cfe263e32d7d2dddf
+    bytes: 64762
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_15_2006
+      citation: UU No. 15 Tahun 2006
+      tentang: Badan Pemeriksa Keuangan
+      url: https://peraturan.bpk.go.id/Details/40184/uu-no-15-tahun-2006
+      note: null
+    Mencabut:
+    - id: uu_17_1965
+      citation: UU No. 17 Tahun 1965
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang No. 6 Tahun
+        1964, Tentang Pembentukan Badan Pemeriksa Keuangan (Lembaran-Negara Tahun
+        1964 No. 41) Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/50205/uu-no-17-tahun-1965
+      note: null
+uji_materi: null

@@ -9,23 +9,62 @@ title: Undang-Undang Nomor 13 Tahun 1971 tentang Penetapan Peraturan Pemerintah 
 tentang: PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 2 TAHUN 1971
   TENTANG TANDA KEHORMATAN BINTANG YUDHA DHARMA MENJADI UNDANG-UNDANG
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 20 Tahun 2009 Tentang Gelar,
-  Tanda Jasa, dan Tanda Kehormatan'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1971-12-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1971
-source_pdf_url: https://peraturan.go.id/files/UU0131971.pdf
+source_url: https://peraturan.bpk.go.id/Details/47611/uu-no-13-tahun-1971
+source_pdf_url: https://peraturan.bpk.go.id/Download/36604/UU%20Nomor%2013%20Tahun%201971.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_20_2009
+  revoked_by: []
   enacts:
   - perppu_2_1971
   enacted_by: []
-versions: []
+versions:
+- id: uu_13_1971_1971-12-11
+  kind: asli
+  source: official
+  date: '1971-12-11'
+  date_basis: tanggal_penetapan
+  text: uu_13_1971_1971-12-11.txt
+  pasal_count: 17
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 044e135f1713484c0f1fd55b3a2006c093ac796e2903741b8325d591ecb01cc3
 pdf_sha256: 044e135f1713484c0f1fd55b3a2006c093ac796e2903741b8325d591ecb01cc3
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1971-12-11'
+tanggal_berlaku: '1971-10-05'
+lembaran_negara: 'LN. 1971, LL SETNEG : 9 HLM'
+subjek: KETATANEGARAAN, KENEGARAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1971
+  source_pdf_url: https://peraturan.go.id/files/UU0131971.pdf
+bpk:
+  id: 47611
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36604/UU%20Nomor%2013%20Tahun%201971.pdf
+    bpk_file_id: 36604
+    filename: UU Nomor 13 Tahun 1971.pdf
+    sha256: 044e135f1713484c0f1fd55b3a2006c093ac796e2903741b8325d591ecb01cc3
+    bytes: 50617
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_20_2009
+      citation: UU No. 20 Tahun 2009
+      tentang: Gelar, Tanda Jasa, dan Tanda Kehormatan
+      url: https://peraturan.bpk.go.id/Details/38640/uu-no-20-tahun-2009
+      note: null
+    Diubah dengan:
+    - id: uu_4_1972
+      citation: UU No. 4 Tahun 1972
+      tentang: Perubahan dan Tambahan Ketentuan Mengenai Beberapa Jenis Tanda Kehormatan
+        Republik Indonesia Yang Berbentuk Bintang dan Tentang Urutan Derajat/Tingkat
+        Jenis Tanda Kehormatan Republik Indonesia yang Berbentuk Bintang
+      url: https://peraturan.bpk.go.id/Details/47551/uu-no-4-tahun-1972
+      note: null
+uji_materi: null

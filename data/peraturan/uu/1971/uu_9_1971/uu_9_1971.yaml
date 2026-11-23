@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 9 Tahun 1971 tentang Perjanjian Persahabatan Antara R
 tentang: PERJANJIAN PERSAHABATAN ANTARA REPUBLIK INDONESIA DAN KERAJAAN SAUDI ARABIA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1971-09-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1971
-source_pdf_url: https://peraturan.go.id/files/UU0091971.pdf
+source_url: https://peraturan.bpk.go.id/Details/47565/uu-no-9-tahun-1971
+source_pdf_url: https://peraturan.bpk.go.id/Download/36552/UU%20Nomor%209%20Tahun%201971.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_9_1971_1971
+- id: uu_9_1971_1971-09-18
   kind: asli
   source: official
-  date: null
+  date: '1971-09-18'
   date_basis: tanggal_penetapan
-  text: uu_9_1971_1971.txt
+  text: uu_9_1971_1971-09-18.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 11bf4922851997e74286aa2b8c6c5a92dc2e098604f44821688c1ee26ddb57b6
 pdf_sha256: 5c9dfddfd91d4f5f2109ddaa6674cc178caab11505d20c0a3a0afa20c382af1c
+tanggal_pengundangan: '1971-09-18'
+tanggal_berlaku: '1971-09-18'
+lembaran_negara: 'LN. 1971/ No. 77, TLN NO. 2972, LL SETNEG : 1 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1971
+  source_pdf_url: https://peraturan.go.id/files/UU0091971.pdf
+bpk:
+  id: 47565
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36552/UU%20Nomor%209%20Tahun%201971.pdf
+    bpk_file_id: 36552
+    filename: UU Nomor 9 Tahun 1971.pdf
+    sha256: 11bf4922851997e74286aa2b8c6c5a92dc2e098604f44821688c1ee26ddb57b6
+    bytes: 12710
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -7,28 +7,61 @@ title: Undang-Undang Nomor 8 Tahun 1971 tentang Perusahaan Pertambangan Minyak D
   Gas Bumi Negara
 tentang: PERUSAHAAN PERTAMBANGAN MINYAK DAN GAS BUMI NEGARA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 22 Tahun 2001 Tentang Minyak
-  dan Gas Bumi'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1971-09-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1971
-source_pdf_url: https://peraturan.go.id/files/UU0081971.pdf
+source_url: https://peraturan.bpk.go.id/Details/47564/uu-no-8-tahun-1971
+source_pdf_url: https://peraturan.bpk.go.id/Download/36551/UU%20Nomor%208%20Tahun%201971.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_22_2001
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_8_1971_1971
+- id: uu_8_1971_1971-09-15
   kind: asli
   source: official
-  date: null
+  date: '1971-09-15'
   date_basis: tanggal_penetapan
-  text: uu_8_1971_1971.txt
-  pasal_count: 21
+  text: uu_8_1971_1971-09-15.txt
+  pasal_count: 34
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3db362a9d4f05282be241eefd64ff17cafbf1bbf44075e816b34d8bf08f6e8c5
 pdf_sha256: 3db362a9d4f05282be241eefd64ff17cafbf1bbf44075e816b34d8bf08f6e8c5
+tanggal_pengundangan: '1971-09-15'
+tanggal_berlaku: '1971-09-15'
+lembaran_negara: 'LN. 1971, LL SETNEG : 18 HLM'
+subjek: PERTAMBANGAN MIGAS, MINERAL DAN ENERGI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1971
+  source_pdf_url: https://peraturan.go.id/files/UU0081971.pdf
+bpk:
+  id: 47564
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36551/UU%20Nomor%208%20Tahun%201971.pdf
+    bpk_file_id: 36551
+    filename: UU Nomor 8 Tahun 1971.pdf
+    sha256: 3db362a9d4f05282be241eefd64ff17cafbf1bbf44075e816b34d8bf08f6e8c5
+    bytes: 92235
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_22_2001
+      citation: UU No. 22 Tahun 2001
+      tentang: Minyak dan Gas Bumi
+      url: https://peraturan.bpk.go.id/Details/44903/uu-no-22-tahun-2001
+      note: null
+    Diubah dengan:
+    - id: uu_10_1974
+      citation: UU No. 10 Tahun 1974
+      tentang: Perubahan Pasal 19 Ayat (1) Undang-Undang Nomor 8 Tahun 1971(Lembaran-Negara
+        Republik Indonesia Tahun 1971 Nomor 76, Tambahan Lembaran-Negara Republik
+        Indonesia Nomor 2971)
+      url: https://peraturan.bpk.go.id/Details/47420/uu-no-10-tahun-1974
+      note: null
+uji_materi: null

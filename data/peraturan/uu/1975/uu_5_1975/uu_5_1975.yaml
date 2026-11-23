@@ -10,15 +10,13 @@ tentang: PERUBAHAN UNDANG-UNDANG NOMOR 16 TAHUN 1969 TENTANG SUSUNAN DAN KEDUDUK
   MAJELIS PERMUSYAWARATAN RAKYAT, DEWAN PERWAKILAN RAKYAT DAN DEWAN PERWAKILAN RAKYAT
   DAERAH
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 4 Tahun 1999 Tentang Susunan
-  dan Kedudukan Majelis Permusyawaratan Rakyat, Dewan Perwakilan Rakyat, dan Dewan
-  Perwakilan Rakyat Daerah'
+status: tidak_berlaku
 tanggal_penetapan: '1975-11-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1975
-source_pdf_url: https://peraturan.go.id/files/uu5-1975.pdf
+source_url: https://peraturan.bpk.go.id/Details/47405/uu-no-5-tahun-1975
+source_pdf_url: https://peraturan.bpk.go.id/Download/36381/UU%20Nomor%205%20Tahun%201975.pdf
 relationships:
   amends:
   - id: uu_16_1969
@@ -29,8 +27,7 @@ relationships:
       - '44'
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_4_1999
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -41,4 +38,57 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1975_1975-11-24.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0e039056d2ac7eac89d2553b25eb9317aa7c3fda1dadd9c4da6d83b9097d281d
 pdf_sha256: e942950a381342e1d89d70c92062d79608e49694ba9e1306edae8c87f44bac52
+tanggal_pengundangan: '1975-11-24'
+tanggal_berlaku: '1975-11-24'
+lembaran_negara: 'LN. 1975/ No.39, TLN NO. 3064, LL SETNEG : 7 HLM'
+subjek: PEMBENTUKAN, PERUBAHAN, DAN PEMBUBARAN KOMISI / KOMITE / BADAN / DEWAN / STAF
+  KHUSUS / TIM / PANITIA - DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1975
+  source_pdf_url: https://peraturan.go.id/files/uu5-1975.pdf
+bpk:
+  id: 47405
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36381/UU%20Nomor%205%20Tahun%201975.pdf
+    bpk_file_id: 36381
+    filename: UU Nomor 5 Tahun 1975.pdf
+    sha256: 0e039056d2ac7eac89d2553b25eb9317aa7c3fda1dadd9c4da6d83b9097d281d
+    bytes: 43864
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_4_1999
+      citation: UU No. 4 Tahun 1999
+      tentang: Susunan dan Kedudukan Majelis Permusyawaratan Rakyat, Dewan Perwakilan
+        Rakyat, dan Dewan Perwakilan Rakyat Daerah
+      url: https://peraturan.bpk.go.id/Details/45276/uu-no-4-tahun-1999
+      note: null
+    Diubah dengan:
+    - id: uu_5_1995
+      citation: UU No. 5 Tahun 1995
+      tentang: Perubahan atas Undang-Undang Nomor 16 Tahun 1969 tentang Susunan dan
+        Kedudukan Majelis Permusyawaratan Rakyat, Dewan Perwakilan Rakyat, dan Dewan
+        Perwakilan Rakyat Daerah Sebagaimana Telah Beberapa Kali Diubah, Terakhir
+        Dengan Undang-Undang Nomor 2 Tahun 1985
+      url: https://peraturan.bpk.go.id/Details/46180/uu-no-5-tahun-1995
+      note: null
+    - id: uu_2_1985
+      citation: UU No. 2 Tahun 1985
+      tentang: Perubahan atas Undang-Undang Nomor 16 Tahun 1969 tentang Susunan dan
+        Kedudukan Majelis Permusyawaratan Rakyat, Dewan Perwakilan Rakyat, dan Dewan
+        Perwakilan Rakyat Daerah Sebagaimana Telah Diubah dengan Undang-Undang Nomor
+        5 Tahun 1975
+      url: https://peraturan.bpk.go.id/Details/46920/uu-no-2-tahun-1985
+      note: null
+    Mengubah:
+    - id: uu_16_1969
+      citation: UU No. 16 Tahun 1969
+      tentang: Susunan dan Kedudukan Majelis Permusyawaratan Rakyat, Dewan Perwakilan
+        Rakyat dan Dewan Perwakilan Rakyat Daerah
+      url: https://peraturan.bpk.go.id/Details/49123/uu-no-16-tahun-1969
+      note: null
+uji_materi: null

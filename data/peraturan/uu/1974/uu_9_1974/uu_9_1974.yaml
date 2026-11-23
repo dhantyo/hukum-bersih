@@ -9,12 +9,12 @@ tentang: PENGESAHAN PERJANJIAN ANTARA PEMERINTAH REPUBLIK INDONESIA DAN PEMERINT
   MALAYSIA MENGENAI EKSTRADISI
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1974-12-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1974
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+9+Tahun+1974-.pdf
+source_url: https://peraturan.bpk.go.id/Details/47418/uu-no-9-tahun-1974
+source_pdf_url: https://peraturan.bpk.go.id/Download/224663/UU%20Nomor%209%20Tahun%201974-.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,34 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_9_1974_1974-12-26
+  kind: asli
+  source: official
+  date: '1974-12-26'
+  date_basis: tanggal_penetapan
+  text: uu_9_1974_1974-12-26.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a77ee8294622df54222ad8fa649f1415958bd86404a0c2a0177977c583fca199
+  ocr: true
 pdf_sha256: a77ee8294622df54222ad8fa649f1415958bd86404a0c2a0177977c583fca199
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1974-12-26'
+tanggal_berlaku: '1974-12-26'
+lembaran_negara: 'LN. 1974/ No. 63, TLN NO. 3044, LL SETNEG : 2HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1974
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+9+Tahun+1974-.pdf
+bpk:
+  id: 47418
+  files:
+  - url: https://peraturan.bpk.go.id/Download/224663/UU%20Nomor%209%20Tahun%201974-.pdf
+    bpk_file_id: 224663
+    filename: UU Nomor 9 Tahun 1974-.pdf
+    sha256: a77ee8294622df54222ad8fa649f1415958bd86404a0c2a0177977c583fca199
+    bytes: 874383
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

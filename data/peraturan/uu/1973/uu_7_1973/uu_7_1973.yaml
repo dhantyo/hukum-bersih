@@ -10,12 +10,12 @@ tentang: PERJANJIAN ANTARA REPUBLIK INDONESIA DAN REPUBLIK SINGAPURA MENGENAI PE
   GARIS BATAS LAUT WILAYAH KEDUA NEGARA DI SELAT SINGAPURA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1973-12-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1973
-source_pdf_url: https://peraturan.go.id/files/UU0071973.pdf
+source_url: https://peraturan.bpk.go.id/Details/47436/uu-no-7-tahun-1973
+source_pdf_url: https://peraturan.bpk.go.id/Download/36412/UU%20Nomor%207%20Tahun%201973.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,11 +24,33 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_7_1973_1973
+- id: uu_7_1973_1973-12-08
   kind: asli
   source: official
-  date: null
+  date: '1973-12-08'
   date_basis: tanggal_penetapan
-  text: uu_7_1973_1973.txt
+  text: uu_7_1973_1973-12-08.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d170f39c74a9bff051ef70db05ccb940146265f116f4e6f4f95dab1ab039246a
 pdf_sha256: d170f39c74a9bff051ef70db05ccb940146265f116f4e6f4f95dab1ab039246a
+tanggal_pengundangan: '1973-12-08'
+tanggal_berlaku: '1973-12-08'
+lembaran_negara: 'LN. 1973, LL SETNEG : 3 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+  - TERITORIAL INDONESIA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1973
+  source_pdf_url: https://peraturan.go.id/files/UU0071973.pdf
+bpk:
+  id: 47436
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36412/UU%20Nomor%207%20Tahun%201973.pdf
+    bpk_file_id: 36412
+    filename: UU Nomor 7 Tahun 1973.pdf
+    sha256: d170f39c74a9bff051ef70db05ccb940146265f116f4e6f4f95dab1ab039246a
+    bytes: 32853
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -10,28 +10,53 @@ tentang: PERUBAHAN PASAL 19 AYAT (1) UNDANG-UNDANG NOMOR 8 TAHUN 1971 (LEMBARAN-
   REPUBLIK INDONESIA TAHUN 1971 NOMOR 76, TAMBAHAN LEMBARAN-NEGARA REPUBLIK INDONESIA
   NOMOR 2971)
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 22 Tahun 2001 Tentang Minyak
-  dan Gas Bumi'
-tanggal_penetapan: null
+status: berlaku
+tanggal_penetapan: '1974-12-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1974
-source_pdf_url: https://peraturan.go.id/files/uu0101974.pdf
+source_url: https://peraturan.bpk.go.id/Details/47420/uu-no-10-tahun-1974
+source_pdf_url: https://peraturan.bpk.go.id/Download/36396/UU%20Nomor%2010%20Tahun%201974.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_22_2001
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_10_1974_1974
+- id: uu_10_1974_1974-12-26
   kind: asli
   source: official
-  date: null
+  date: '1974-12-26'
   date_basis: tanggal_penetapan
-  text: uu_10_1974_1974.txt
+  text: uu_10_1974_1974-12-26.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: deaaaf01fffc6e61d6384d11f3c9758b7d8bb3ec333e54f181ca696850b6c9da
 pdf_sha256: deaaaf01fffc6e61d6384d11f3c9758b7d8bb3ec333e54f181ca696850b6c9da
+tanggal_pengundangan: '1974-12-26'
+tanggal_berlaku: '1974-12-26'
+lembaran_negara: 'LN. 1974/ No.64, TLN NO. 3045, LL SETNEG : 4 HLM'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN - STRUKTUR ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1974
+  source_pdf_url: https://peraturan.go.id/files/uu0101974.pdf
+bpk:
+  id: 47420
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36396/UU%20Nomor%2010%20Tahun%201974.pdf
+    bpk_file_id: 36396
+    filename: UU Nomor 10 Tahun 1974.pdf
+    sha256: deaaaf01fffc6e61d6384d11f3c9758b7d8bb3ec333e54f181ca696850b6c9da
+    bytes: 32144
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_8_1971
+      citation: UU No. 8 Tahun 1971
+      tentang: Perusahaan Pertambangan Minyak dan Gas Bumi Negara
+      url: https://peraturan.bpk.go.id/Details/47564/uu-no-8-tahun-1971
+      note: null
+uji_materi: null

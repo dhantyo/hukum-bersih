@@ -6,28 +6,53 @@ year: 1973
 title: Undang-Undang Nomor 1 Tahun 1973 tentang Landas Kontinen Indonesia
 tentang: LANDAS KONTINEN INDONESIA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 16 Tahun 2023 Tentang Landas
-  Kontinen'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1973-01-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1973
-source_pdf_url: https://peraturan.go.id/files/UU0011973.pdf
+source_url: https://peraturan.bpk.go.id/Details/47423/uu-no-1-tahun-1973
+source_pdf_url: https://peraturan.bpk.go.id/Download/36399/UU%20Nomor%201%20Tahun%201973.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_16_2023
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_1_1973_1973
+- id: uu_1_1973_1973-01-06
   kind: asli
   source: official
-  date: null
+  date: '1973-01-06'
   date_basis: tanggal_penetapan
-  text: uu_1_1973_1973.txt
+  text: uu_1_1973_1973-01-06.txt
   pasal_count: 14
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ffbe7e2456ec5d1a50f8e3b562732e9b694b7f4ddc3bb14db6cc5ba5a00250c6
 pdf_sha256: ffbe7e2456ec5d1a50f8e3b562732e9b694b7f4ddc3bb14db6cc5ba5a00250c6
+tanggal_pengundangan: '1973-01-06'
+tanggal_berlaku: '1973-01-06'
+lembaran_negara: 'LN. 1973, LL SETNEG : 8 HLM'
+subjek: TERITORIAL INDONESIA - KETATANEGARAAN, KENEGARAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1973
+  source_pdf_url: https://peraturan.go.id/files/UU0011973.pdf
+bpk:
+  id: 47423
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36399/UU%20Nomor%201%20Tahun%201973.pdf
+    bpk_file_id: 36399
+    filename: UU Nomor 1 Tahun 1973.pdf
+    sha256: ffbe7e2456ec5d1a50f8e3b562732e9b694b7f4ddc3bb14db6cc5ba5a00250c6
+    bytes: 47339
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_16_2023
+      citation: UU No. 16 Tahun 2023
+      tentang: Landas Kontinen
+      url: https://peraturan.bpk.go.id/Details/249379/uu-no-16-tahun-2023
+      note: null
+uji_materi: null

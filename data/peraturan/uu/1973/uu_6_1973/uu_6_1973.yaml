@@ -9,12 +9,12 @@ tentang: PERJANJIAN ANTARA INDONESIA DAN AUSTRALIA MENGENAI GARIS-GARIS BATAS TE
   ANTARA INDONESIA DAN PAPUA NEW GUINEA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1973-12-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1973
-source_pdf_url: https://peraturan.go.id/files/UU0061973.pdf
+source_url: https://peraturan.bpk.go.id/Details/47434/uu-no-6-tahun-1973
+source_pdf_url: https://peraturan.bpk.go.id/Download/36410/UU%20Nomor%206%20Tahun%201973.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,33 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_6_1973_1973
+- id: uu_6_1973_1973-12-08
   kind: asli
   source: official
-  date: null
+  date: '1973-12-08'
   date_basis: tanggal_penetapan
-  text: uu_6_1973_1973.txt
+  text: uu_6_1973_1973-12-08.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: db667d36692941e18c4f06f5c0bfcecd2e674aa113fe6a5aeca5d45fd925062e
 pdf_sha256: db667d36692941e18c4f06f5c0bfcecd2e674aa113fe6a5aeca5d45fd925062e
+tanggal_pengundangan: '1973-12-08'
+tanggal_berlaku: '1973-12-08'
+lembaran_negara: 'LN. 1973, LL SETNEG : 2 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+  - TERITORIAL INDONESIA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1973
+  source_pdf_url: https://peraturan.go.id/files/UU0061973.pdf
+bpk:
+  id: 47434
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36410/UU%20Nomor%206%20Tahun%201973.pdf
+    bpk_file_id: 36410
+    filename: UU Nomor 6 Tahun 1973.pdf
+    sha256: db667d36692941e18c4f06f5c0bfcecd2e674aa113fe6a5aeca5d45fd925062e
+    bytes: 32278
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

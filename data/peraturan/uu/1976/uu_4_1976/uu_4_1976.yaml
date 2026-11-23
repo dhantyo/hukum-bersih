@@ -11,20 +11,18 @@ tentang: PERUBAHAN DAN PENAMBAHAN BEBERAPA PASAL DALAM KITAB UNDANG-UNDANG HUKUM
   BERTALIAN DENGAN PERLUASAN BERLAKUNYA KETENTUAN PERUNDANG-UNDANGAN PIDANA, KEJAHATAN
   PENERBANGAN, DAN KEJAHATAN TERHADAP SARANA/PRASARANA PENERBANGAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 1 Tahun 2023 Tentang Kitab
-  Undang-undang Hukum Pidana'
+status: tidak_berlaku
 tanggal_penetapan: '1976-04-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1976
-source_pdf_url: https://peraturan.go.id/files/uu4-1976.pdf
+source_url: https://peraturan.bpk.go.id/Details/47208/uu-no-4-tahun-1976
+source_pdf_url: https://peraturan.bpk.go.id/Download/36138/UU%20Nomor%204%20Tahun%201976.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_1_2023
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -36,3 +34,41 @@ versions:
   text: uu_4_1976_1976-04-27.txt
   pasal_count: 4
 pdf_sha256: 0161b588c4c3a54437ef92e300991f32c2e638a2ad0582550cd237c84a3d3609
+tanggal_pengundangan: '1976-04-27'
+tanggal_berlaku: '1976-04-27'
+lembaran_negara: 'LN. 1976, LL SETNEG : 8 HLM'
+subjek: TRANSPORTASI DARAT / LAUT / UDARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1976
+  source_pdf_url: https://peraturan.go.id/files/uu4-1976.pdf
+bpk:
+  id: 47208
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36138/UU%20Nomor%204%20Tahun%201976.pdf
+    bpk_file_id: 36138
+    filename: UU Nomor 4 Tahun 1976.pdf
+    sha256: 0161b588c4c3a54437ef92e300991f32c2e638a2ad0582550cd237c84a3d3609
+    bytes: 71521
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: null
+    Mengubah:
+    - id: uu_73_1958
+      citation: UU No. 73 Tahun 1958
+      tentang: Menyatakan Berlakunya Undang-Undang No. 1 Tahun 1946 Republik Indonesia
+        Tentang Peraturan Hukum Pidana Untuk Seluruh Wilayah Republik Indonesia Dan
+        Mengubah Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/52862/uu-no-73-tahun-1958
+      note: null
+    - id: uu_1_1946
+      citation: UU No. 1 Tahun 1946
+      tentang: Peraturan tentang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/25029/uu-no-1-tahun-1946
+      note: null
+uji_materi: null
+reparse_error: 'v12: new Penjelasan has 0 words, stored 1205'

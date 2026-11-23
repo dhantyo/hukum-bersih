@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 3 Tahun 1973 tentang Anggaran Pendapatan Dan Belanja 
 tentang: ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 1973/1974
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1973-03-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1973
-source_pdf_url: https://peraturan.go.id/files/UU0031973.pdf
+source_url: https://peraturan.bpk.go.id/Details/47428/uu-no-3-tahun-1973
+source_pdf_url: https://peraturan.bpk.go.id/Download/36404/UU%20Nomor%203%20Tahun%201973.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_3_1973_1973
+- id: uu_3_1973_1973-03-14
   kind: asli
   source: official
-  date: null
+  date: '1973-03-14'
   date_basis: tanggal_penetapan
-  text: uu_3_1973_1973.txt
+  text: uu_3_1973_1973-03-14.txt
   pasal_count: 8
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 833ffca1de092acb2563e256fe501bd22d06cd173a7be547f8e2e98ef5f3c74b
 pdf_sha256: 833ffca1de092acb2563e256fe501bd22d06cd173a7be547f8e2e98ef5f3c74b
+tanggal_pengundangan: '1973-03-14'
+tanggal_berlaku: '1973-04-01'
+lembaran_negara: 'LN. 1973, LL SETNEG : 6 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1973
+  source_pdf_url: https://peraturan.go.id/files/UU0031973.pdf
+bpk:
+  id: 47428
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36404/UU%20Nomor%203%20Tahun%201973.pdf
+    bpk_file_id: 36404
+    filename: UU Nomor 3 Tahun 1973.pdf
+    sha256: 833ffca1de092acb2563e256fe501bd22d06cd173a7be547f8e2e98ef5f3c74b
+    bytes: 45572
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_3_1974
+      citation: UU No. 3 Tahun 1974
+      tentang: Tambahan dan Perubahan atas Anggaran Pendapatan dan Belanja Negara
+        Tahun Anggaran 1973/1974
+      url: https://peraturan.bpk.go.id/Details/47410/uu-no-3-tahun-1974
+      note: null
+uji_materi: null

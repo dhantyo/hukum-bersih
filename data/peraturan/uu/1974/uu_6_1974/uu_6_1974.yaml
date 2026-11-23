@@ -7,28 +7,53 @@ title: Undang-Undang Nomor 6 Tahun 1974 tentang Ketentuan-Ketentuan Pokok Keseja
   Sosial
 tentang: KETENTUAN-KETENTUAN POKOK KESEJAHTERAAN SOSIAL
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 11 Tahun 2009 Tentang Kesejahteraan
-  Sosial'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1974-11-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1974
-source_pdf_url: https://peraturan.go.id/files/uu0061974.pdf
+source_url: https://peraturan.bpk.go.id/Details/47414/uu-no-6-tahun-1974
+source_pdf_url: https://peraturan.bpk.go.id/Download/36390/UU%20Nomor%206%20Tahun%201974.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_11_2009
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_6_1974_1974
+- id: uu_6_1974_1974-11-06
   kind: asli
   source: official
-  date: null
+  date: '1974-11-06'
   date_basis: tanggal_penetapan
-  text: uu_6_1974_1974.txt
+  text: uu_6_1974_1974-11-06.txt
   pasal_count: 12
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d9670a526a315b4f58f3137c3f6d895f19f14f309042f73175bfc8298d3e10a0
 pdf_sha256: d9670a526a315b4f58f3137c3f6d895f19f14f309042f73175bfc8298d3e10a0
+tanggal_pengundangan: '1974-11-06'
+tanggal_berlaku: '1974-11-06'
+lembaran_negara: 'LN. 1974/ No. 53, TLN NO.3783, LL SETNEG : 7 HLM'
+subjek: BANTUAN, SUMBANGAN, BENCANA / KEBENCANAAN, DAN PENANGGULANGAN BENCANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1974
+  source_pdf_url: https://peraturan.go.id/files/uu0061974.pdf
+bpk:
+  id: 47414
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36390/UU%20Nomor%206%20Tahun%201974.pdf
+    bpk_file_id: 36390
+    filename: UU Nomor 6 Tahun 1974.pdf
+    sha256: d9670a526a315b4f58f3137c3f6d895f19f14f309042f73175bfc8298d3e10a0
+    bytes: 54296
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_11_2009
+      citation: UU No. 11 Tahun 2009
+      tentang: Kesejahteraan Sosial
+      url: https://peraturan.bpk.go.id/Details/38601/uu-no-11-tahun-2009
+      note: null
+uji_materi: null

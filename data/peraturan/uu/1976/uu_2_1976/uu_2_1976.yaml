@@ -13,8 +13,8 @@ tanggal_penetapan: '1976-03-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1976
-source_pdf_url: https://peraturan.go.id/files/uu2-1976.pdf
+source_url: https://peraturan.bpk.go.id/Details/47206/uu-no-2-tahun-1976
+source_pdf_url: https://peraturan.bpk.go.id/Download/36134/UU%20Nomor%202%20Tahun%201976.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1976_1976-03-31.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 027ade83607b96804f8a47f2ce993663ddf3574b60745f661cc0e06f5885c612
 pdf_sha256: 411cc8cb3a70b828a097f85514d843785667ba0472d32150d4cb93cdbf60bbf5
+tanggal_pengundangan: '1976-03-31'
+tanggal_berlaku: '1976-03-31'
+lembaran_negara: 'LN. 1976, LL SETNEG : 2 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1976
+  source_pdf_url: https://peraturan.go.id/files/uu2-1976.pdf
+bpk:
+  id: 47206
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36134/UU%20Nomor%202%20Tahun%201976.pdf
+    bpk_file_id: 36134
+    filename: UU Nomor 2 Tahun 1976.pdf
+    sha256: 027ade83607b96804f8a47f2ce993663ddf3574b60745f661cc0e06f5885c612
+    bytes: 56204
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

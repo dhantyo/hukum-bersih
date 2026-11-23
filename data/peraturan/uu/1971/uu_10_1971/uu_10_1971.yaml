@@ -10,13 +10,13 @@ tentang: PERUBAHAN TERHADAP UNDANG-UNDANG NOMOR 9 TAHUN 1953 TENTANG PEMBERIAN T
   YANG BERSIFAT PENSIUN KEPADA BEKAS KETUA DAN BEKAS ANGGOTA DEWAN PERWAKILAN RAKYAT
   REPUBLIK INDONESIA
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1971-09-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1971
-source_pdf_url: https://peraturan.go.id/files/UU0101971.pdf
+source_url: https://peraturan.bpk.go.id/Details/47606/uu-no-10-tahun-1971
+source_pdf_url: https://peraturan.bpk.go.id/Download/36597/UU%20Nomor%2010%20Tahun%201971.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,11 +25,48 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_10_1971_1971
+- id: uu_10_1971_1971-09-18
   kind: asli
   source: official
-  date: null
+  date: '1971-09-18'
   date_basis: tanggal_penetapan
-  text: uu_10_1971_1971.txt
+  text: uu_10_1971_1971-09-18.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5c9dfddfd91d4f5f2109ddaa6674cc178caab11505d20c0a3a0afa20c382af1c
 pdf_sha256: 8530a1fbb3d8453bc7c4383b63118b79a8beb7af5cdf4d08b395a6660ebc2d1f
+tanggal_pengundangan: '1971-09-24'
+tanggal_berlaku: '1971-09-24'
+lembaran_negara: 'LN. 1971, LL SETNEG : 2 HLM'
+subjek: HONORARIUM, GAJI, PENGHASILAN, UANG KEHORMATAN, TUNJANGAN, PENGHARGAAN, HAK
+  LAINNYA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1971
+  source_pdf_url: https://peraturan.go.id/files/UU0101971.pdf
+bpk:
+  id: 47606
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36597/UU%20Nomor%2010%20Tahun%201971.pdf
+    bpk_file_id: 36597
+    filename: UU Nomor 10 Tahun 1971.pdf
+    sha256: 5c9dfddfd91d4f5f2109ddaa6674cc178caab11505d20c0a3a0afa20c382af1c
+    bytes: 29344
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_12_1980
+      citation: UU No. 12 Tahun 1980
+      tentang: Hak Keuangan/Administratif Pimpinan dan Anggota Lembaga Tertinggi/Tinggi
+        Negara serta Bekas Pimpinan Lembaga Tertinggi/Tinggi Negara dan Bekas Anggota
+        Lembaga Tinggi Negara
+      url: https://peraturan.bpk.go.id/Details/47143/uu-no-12-tahun-1980
+      note: null
+    Mengubah:
+    - id: uu_9_1953
+      citation: UU No. 9 Tahun 1953
+      tentang: Pemberian Tunjangan yang Bersifat Pensiun kepada Bekas Ketua dan Bekas
+        Anggota Dewan Perwakilan Rakyat Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/45282/uu-no-9-tahun-1953
+      note: null
+uji_materi: null

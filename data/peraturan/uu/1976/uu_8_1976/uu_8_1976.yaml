@@ -12,8 +12,8 @@ tanggal_penetapan: '1976-07-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1976
-source_pdf_url: https://peraturan.go.id/files/uu8-1976.pdf
+source_url: https://peraturan.bpk.go.id/Details/47213/uu-no-8-tahun-1976
+source_pdf_url: https://peraturan.bpk.go.id/Download/36146/UU%20Nomor%208%20Tahun%201976.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1976_1976-07-26.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 698e12b85e7a8e391666cb8c7c1759c5b1bd9508e4d686b661c98210212614b0
 pdf_sha256: 7918bb7b872aed2577bec1ae004f9fd83953b40a605ed3a002117d1ae76d89bb
+tanggal_pengundangan: '1976-07-26'
+tanggal_berlaku: '1976-07-26'
+lembaran_negara: 'LN. 1976, LL SETNEG : 2 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1976
+  source_pdf_url: https://peraturan.go.id/files/uu8-1976.pdf
+bpk:
+  id: 47213
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36146/UU%20Nomor%208%20Tahun%201976.pdf
+    bpk_file_id: 36146
+    filename: UU Nomor 8 Tahun 1976.pdf
+    sha256: 698e12b85e7a8e391666cb8c7c1759c5b1bd9508e4d686b661c98210212614b0
+    bytes: 55467
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

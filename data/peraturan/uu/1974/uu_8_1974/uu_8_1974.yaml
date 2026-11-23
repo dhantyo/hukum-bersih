@@ -6,30 +6,91 @@ year: 1974
 title: Undang-Undang Nomor 8 Tahun 1974 tentang Pokok-Pokok Kepegawaian
 tentang: POKOK-POKOK KEPEGAWAIAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 5 Tahun 2014 Tentang Aparatur
-  Sipil Negara'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1974-11-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1974
-source_pdf_url: https://peraturan.go.id/files/uu0081974.pdf
+source_url: https://peraturan.bpk.go.id/Details/47417/uu-no-8-tahun-1974
+source_pdf_url: https://peraturan.bpk.go.id/Download/36393/UU%20Nomor%208%20Tahun%201974.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_28_1957
   - uu_17_1961
-  revoked_by:
-  - uu_5_2014
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_8_1974_1974
+- id: uu_8_1974_1974-11-06
   kind: asli
   source: official
-  date: null
+  date: '1974-11-06'
   date_basis: tanggal_penetapan
-  text: uu_8_1974_1974.txt
+  text: uu_8_1974_1974-11-06.txt
   pasal_count: 41
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 359f22bff9cc9de0d16285ea1f3f2e817eea8d71196d694cd256b096ad5a0bf2
 pdf_sha256: 359f22bff9cc9de0d16285ea1f3f2e817eea8d71196d694cd256b096ad5a0bf2
+tanggal_pengundangan: '1974-11-06'
+tanggal_berlaku: '1974-11-06'
+lembaran_negara: 'LN. 1974/ No.55, TLN NO. 3041, LL SETNEG : 17 HLM'
+subjek: KEPEGAWAIAN, APARATUR NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1974
+  source_pdf_url: https://peraturan.go.id/files/uu0081974.pdf
+bpk:
+  id: 47417
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36393/UU%20Nomor%208%20Tahun%201974.pdf
+    bpk_file_id: 36393
+    filename: UU Nomor 8 Tahun 1974.pdf
+    sha256: 359f22bff9cc9de0d16285ea1f3f2e817eea8d71196d694cd256b096ad5a0bf2
+    bytes: 123302
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_5_2014
+      citation: UU No. 5 Tahun 2014
+      tentang: Aparatur Sipil Negara
+      url: https://peraturan.bpk.go.id/Details/38580/uu-no-5-tahun-2014
+      note: null
+    Diubah dengan:
+    - id: uu_43_1999
+      citation: UU No. 43 Tahun 1999
+      tentang: Perubahan atas Undang-Undang Nomor 8 Tahun 1974 tentang Pokok-Pokok
+        Kepegawaian
+      url: https://peraturan.bpk.go.id/Details/45377/uu-no-43-tahun-1999
+      note: null
+    Mencabut:
+    - id: uu_18_1961
+      citation: UU No. 18 Tahun 1961
+      tentang: Ketentuan-Ketentuan Pokok Kepegawaian
+      url: https://peraturan.bpk.go.id/Details/51244/uu-no-18-tahun-1961
+      note: null
+    - id: uu_17_1961
+      citation: UU No. 17 Tahun 1961
+      tentang: Perubahan Undang-Undang Nomor 21 Tahun 1952 Tentang Hak Mengangkat
+        dan Memberhentikan Pegawai Negeri Sipil
+      url: https://peraturan.bpk.go.id/Details/51242/uu-no-17-tahun-1961
+      note: null
+    - id: uu_28_1957
+      citation: UU No. 28 Tahun 1957
+      tentang: Penetapan Undang-Undang Darurat No. 13 Tahun 1957 (Lembaran-Negara
+        Tahun 1957 No. 58) tentang Menambah Undang-Undang No. 21 Tahun 1952 (Lembaran-Negara
+        Tahun 1952 No.78) tentang "Menetapkan Undang-Undang Darurat tentang Hak Pengangkatan
+        dan Pemberhentian Pegawai-Pegawai Republik Indonesia Serikat (Undang-Undang
+        Darurat No. 25 dan 34 Tahun 1950) Sebagai Undang-Undang Republik Indonesia".
+        Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/52465/uu-no-28-tahun-1957
+      note: null
+    - id: uu_21_1952
+      citation: UU No. 21 Tahun 1952
+      tentang: Menetapkan "Undang-Undang Darurat tentang Hak Pengangkatan dan Pemberhentian
+        Pegawai-Pegawai Republik Indonesia Serikat" (Undang-Undang Darurat Nr 25 Dan
+        34 Tahun 1950) Sebagai Undang-Undang Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/40268/uu-no-21-tahun-1952
+      note: null
+uji_materi: null

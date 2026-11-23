@@ -12,8 +12,8 @@ tanggal_penetapan: '1972-03-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1972
-source_pdf_url: https://peraturan.go.id/files/UU0011972.pdf
+source_url: https://peraturan.bpk.go.id/Details/47546/uu-no-1-tahun-1972
+source_pdf_url: https://peraturan.bpk.go.id/Download/36528/UU%20Nomor%201%20Tahun%201972.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1972_1972-03-06.txt
   pasal_count: 8
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5e8f902a27af786f1b85053884b3e40f646d24d315b93598a059d6eae6403d09
 pdf_sha256: 5e8f902a27af786f1b85053884b3e40f646d24d315b93598a059d6eae6403d09
+tanggal_pengundangan: '1972-03-07'
+tanggal_berlaku: '1972-04-01'
+lembaran_negara: 'LN. 1972 LL SETNEG : 6 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1972
+  source_pdf_url: https://peraturan.go.id/files/UU0011972.pdf
+bpk:
+  id: 47546
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36528/UU%20Nomor%201%20Tahun%201972.pdf
+    bpk_file_id: 36528
+    filename: UU Nomor 1 Tahun 1972.pdf
+    sha256: 5e8f902a27af786f1b85053884b3e40f646d24d315b93598a059d6eae6403d09
+    bytes: 44488
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_4_1973
+      citation: UU No. 4 Tahun 1973
+      tentang: Tambahan dan Perubahan atas Anggaran Pendapatan dan Belanja Negara
+        Tahun 1972/1973
+      url: https://peraturan.bpk.go.id/Details/47429/uu-no-4-tahun-1973
+      note: null
+uji_materi: null

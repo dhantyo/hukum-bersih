@@ -8,13 +8,13 @@ title: Undang-Undang Nomor 3 Tahun 1976 tentang Perubahan Pasal 18 Undang-Undang
 tentang: PERUBAHAN PASAL 18 UNDANG-UNDANG NOMOR 62 TAHUN 1958 TENTANG KEWARGANEGARAAN
   REPUBLIK INDONESIA
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '1976-04-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1976
-source_pdf_url: https://peraturan.go.id/files/uu3-1976.pdf
+source_url: https://peraturan.bpk.go.id/Details/47207/uu-no-3-tahun-1976
+source_pdf_url: https://peraturan.bpk.go.id/Download/36135/UU%20Nomor%203%20Tahun%201976.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1976_1976-04-05.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9a4675c64cffe27ddde401ed7d75a5a44481b55ad609d52441e6384a32a7b941
 pdf_sha256: de1c0ee17d7555204dffc1fc5e80419fabbb82b4d5d321865a691df4aeeacd73
+tanggal_pengundangan: '1976-04-05'
+tanggal_berlaku: '1976-04-05'
+lembaran_negara: 'LN. 1976, LL SETNEG : 3 HLM'
+subjek: KEWARGANEGARAAN DAN IMIGRASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1976
+  source_pdf_url: https://peraturan.go.id/files/uu3-1976.pdf
+bpk:
+  id: 47207
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36135/UU%20Nomor%203%20Tahun%201976.pdf
+    bpk_file_id: 36135
+    filename: UU Nomor 3 Tahun 1976.pdf
+    sha256: 9a4675c64cffe27ddde401ed7d75a5a44481b55ad609d52441e6384a32a7b941
+    bytes: 59502
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_12_2006
+      citation: UU No. 12 Tahun 2006
+      tentang: Kewarganegaraan Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/40176/uu-no-12-tahun-2006
+      note: null
+    Mengubah:
+    - id: uu_62_1958
+      citation: UU No. 62 Tahun 1958
+      tentang: Kewarga-Negaraan Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/52324/uu-no-62-tahun-1958
+      note: null
+uji_materi: null

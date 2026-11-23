@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 2 Tahun 1974 tentang Anggaran Pendapatan Dan Belanja 
 tentang: ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 1974/1975
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1974-03-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1974
-source_pdf_url: https://peraturan.go.id/files/uu0021974.pdf
+source_url: https://peraturan.bpk.go.id/Details/47409/uu-no-2-tahun-1974
+source_pdf_url: https://peraturan.bpk.go.id/Download/36385/UU%20Nomor%202%20Tahun%201974.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_2_1974_1974
+- id: uu_2_1974_1974-03-14
   kind: asli
   source: official
-  date: null
+  date: '1974-03-14'
   date_basis: tanggal_penetapan
-  text: uu_2_1974_1974.txt
+  text: uu_2_1974_1974-03-14.txt
   pasal_count: 8
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d88a0e8a0d8880f392466b4f0f70228e40753947be32065cd02d08de2089bae2
 pdf_sha256: d88a0e8a0d8880f392466b4f0f70228e40753947be32065cd02d08de2089bae2
+tanggal_pengundangan: '1974-03-14'
+tanggal_berlaku: '1974-04-01'
+lembaran_negara: 'LN. 1974, LL SETNEG : 7 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1974
+  source_pdf_url: https://peraturan.go.id/files/uu0021974.pdf
+bpk:
+  id: 47409
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36385/UU%20Nomor%202%20Tahun%201974.pdf
+    bpk_file_id: 36385
+    filename: UU Nomor 2 Tahun 1974.pdf
+    sha256: d88a0e8a0d8880f392466b4f0f70228e40753947be32065cd02d08de2089bae2
+    bytes: 43250
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_2_1975
+      citation: UU No. 2 Tahun 1975
+      tentang: Tambahan dan Perubahan atas Anggaran Pendapatan dan Belanja Negara
+        Tahun Anggaran 1974/1975
+      url: https://peraturan.bpk.go.id/Details/47401/uu-no-2-tahun-1975
+      note: null
+uji_materi: null

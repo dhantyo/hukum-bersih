@@ -13,8 +13,8 @@ tanggal_penetapan: '1975-06-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1975
-source_pdf_url: https://peraturan.go.id/files/uu2-1975.pdf
+source_url: https://peraturan.bpk.go.id/Details/47401/uu-no-2-tahun-1975
+source_pdf_url: https://peraturan.bpk.go.id/Download/36377/UU%20Nomor%202%20Tahun%201975.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1975_1975-06-16.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: faaa72e3588883200ad1bcb4ae126a61e56a446626e5a75fe9a69e9ddbf3ba27
 pdf_sha256: 6e4c161a64eb4292a2a19ede64c95bef68f730f8983a2117d2be9c5a8298cc57
+tanggal_pengundangan: '1975-06-16'
+tanggal_berlaku: '1974-04-01'
+lembaran_negara: 'LN. 1975/ No. 25, TLN NO.3057 LL SETNEG : 4 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1975
+  source_pdf_url: https://peraturan.go.id/files/uu2-1975.pdf
+bpk:
+  id: 47401
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36377/UU%20Nomor%202%20Tahun%201975.pdf
+    bpk_file_id: 36377
+    filename: UU Nomor 2 Tahun 1975.pdf
+    sha256: faaa72e3588883200ad1bcb4ae126a61e56a446626e5a75fe9a69e9ddbf3ba27
+    bytes: 32817
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_2_1974
+      citation: UU No. 2 Tahun 1974
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1974/1975
+      url: https://peraturan.bpk.go.id/Details/47409/uu-no-2-tahun-1974
+      note: null
+uji_materi: null

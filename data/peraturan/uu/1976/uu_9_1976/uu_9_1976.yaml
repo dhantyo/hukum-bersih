@@ -6,13 +6,13 @@ year: 1976
 title: Undang-Undang Nomor 9 Tahun 1976 tentang Narkotika
 tentang: NARKOTIKA
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '1976-07-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1976
-source_pdf_url: https://peraturan.go.id/files/uu9-1976.pdf
+source_url: https://peraturan.bpk.go.id/Details/47215/uu-no-9-tahun-1976
+source_pdf_url: https://peraturan.bpk.go.id/Download/36148/UU%20Nomor%209%20Tahun%201976.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,3 +29,28 @@ versions:
   text: uu_9_1976_1976-07-26.txt
   pasal_count: 55
 pdf_sha256: d02a3c442c61f6d42a14db169d5c0328ec8a3fa400266b75a1bedcee91561b28
+tanggal_pengundangan: '1976-07-26'
+tanggal_berlaku: '1976-07-26'
+lembaran_negara: 'LN. 1976, LL SETNEG : 19 HLM'
+subjek: NARKOTIKA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1976
+  source_pdf_url: https://peraturan.go.id/files/uu9-1976.pdf
+bpk:
+  id: 47215
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36148/UU%20Nomor%209%20Tahun%201976.pdf
+    bpk_file_id: 36148
+    filename: UU Nomor 9 Tahun 1976.pdf
+    sha256: d02a3c442c61f6d42a14db169d5c0328ec8a3fa400266b75a1bedcee91561b28
+    bytes: 120790
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_22_1997
+      citation: UU No. 22 Tahun 1997
+      tentang: Narkotika
+      url: https://peraturan.bpk.go.id/Details/46016/uu-no-22-tahun-1997
+      note: null
+uji_materi: null
+reparse_error: 'v12: 1 pasal, stored text has 55'

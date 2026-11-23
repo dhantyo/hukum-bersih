@@ -13,8 +13,8 @@ tanggal_penetapan: '1976-06-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1976
-source_pdf_url: https://peraturan.go.id/files/uu5-1976.pdf
+source_url: https://peraturan.bpk.go.id/Details/47209/uu-no-5-tahun-1976
+source_pdf_url: https://peraturan.bpk.go.id/Download/36140/UU%20Nomor%205%20Tahun%201976.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1976_1976-06-17.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: defd2b78cbacfe3000abe2b0b76667ace04825a3ad0b06c04797aff271058016
 pdf_sha256: 6943b3e9713eb5b086cbaa0a141889fee8fcd491c7a555acc192f7d9c5ca7f80
+tanggal_pengundangan: '1976-06-17'
+tanggal_berlaku: '1975-04-01'
+lembaran_negara: 'LN. 1976, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1976
+  source_pdf_url: https://peraturan.go.id/files/uu5-1976.pdf
+bpk:
+  id: 47209
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36140/UU%20Nomor%205%20Tahun%201976.pdf
+    bpk_file_id: 36140
+    filename: UU Nomor 5 Tahun 1976.pdf
+    sha256: defd2b78cbacfe3000abe2b0b76667ace04825a3ad0b06c04797aff271058016
+    bytes: 55501
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_1_1975
+      citation: UU No. 1 Tahun 1975
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1975/1976
+      url: https://peraturan.bpk.go.id/Details/47391/uu-no-1-tahun-1975
+      note: null
+uji_materi: null

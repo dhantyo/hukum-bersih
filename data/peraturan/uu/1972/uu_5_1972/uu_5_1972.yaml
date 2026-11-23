@@ -11,8 +11,8 @@ tanggal_penetapan: '1972-12-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1972
-source_pdf_url: https://peraturan.go.id/files/UU0051972.pdf
+source_url: https://peraturan.bpk.go.id/Details/47552/uu-no-5-tahun-1972
+source_pdf_url: https://peraturan.bpk.go.id/Download/36538/UU%20Nomor%205%20Tahun%201972.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1972_1972-12-13.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 836d1832a057b6565a689e57a875c9440714dda76e4d78e2c485019730c20a6e
 pdf_sha256: 836d1832a057b6565a689e57a875c9440714dda76e4d78e2c485019730c20a6e
+tanggal_pengundangan: '1972-12-13'
+tanggal_berlaku: '1972-12-13'
+lembaran_negara: 'LN. 1972, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1972
+  source_pdf_url: https://peraturan.go.id/files/UU0051972.pdf
+bpk:
+  id: 47552
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36538/UU%20Nomor%205%20Tahun%201972.pdf
+    bpk_file_id: 36538
+    filename: UU Nomor 5 Tahun 1972.pdf
+    sha256: 836d1832a057b6565a689e57a875c9440714dda76e4d78e2c485019730c20a6e
+    bytes: 28114
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

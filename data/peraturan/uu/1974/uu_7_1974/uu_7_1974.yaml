@@ -6,28 +6,53 @@ year: 1974
 title: Undang-Undang Nomor 7 Tahun 1974 tentang Penertiban Perjudian
 tentang: PENERTIBAN PERJUDIAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 1 Tahun 2023 Tentang Kitab
-  Undang-undang Hukum Pidana'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1974-11-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1974
-source_pdf_url: https://peraturan.go.id/files/uu0071974.pdf
+source_url: https://peraturan.bpk.go.id/Details/47415/uu-no-7-tahun-1974
+source_pdf_url: https://peraturan.bpk.go.id/Download/36391/UU%20Nomor%207%20Tahun%201974.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_1_2023
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_7_1974_1974
+- id: uu_7_1974_1974-11-06
   kind: asli
   source: official
-  date: null
+  date: '1974-11-06'
   date_basis: tanggal_penetapan
-  text: uu_7_1974_1974.txt
+  text: uu_7_1974_1974-11-06.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 299d18d162d6fdc64d9a456ce35daa3b40750b3fe162f68200f5e0c8e046d2b0
 pdf_sha256: 299d18d162d6fdc64d9a456ce35daa3b40750b3fe162f68200f5e0c8e046d2b0
+tanggal_pengundangan: '1974-11-06'
+tanggal_berlaku: '1974-11-06'
+lembaran_negara: 'LN. 1974/ No.54, TLN NO. 3040, LL SETNEG : 4 HLM'
+subjek: HUKUM PIDANA, PERDATA, DAN DAGANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1974
+  source_pdf_url: https://peraturan.go.id/files/uu0071974.pdf
+bpk:
+  id: 47415
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36391/UU%20Nomor%207%20Tahun%201974.pdf
+    bpk_file_id: 36391
+    filename: UU Nomor 7 Tahun 1974.pdf
+    sha256: 299d18d162d6fdc64d9a456ce35daa3b40750b3fe162f68200f5e0c8e046d2b0
+    bytes: 35159
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_1_2023
+      citation: UU No. 1 Tahun 2023
+      tentang: Kitab Undang-Undang Hukum Pidana
+      url: https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023
+      note: null
+uji_materi: null

@@ -6,13 +6,13 @@ year: 1972
 title: Undang-Undang Nomor 3 Tahun 1972 tentang Ketentuan-Ketentuan Pokok Transmigrasi
 tentang: KETENTUAN-KETENTUAN POKOK TRANSMIGRASI
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '1972-07-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1972
-source_pdf_url: https://peraturan.go.id/files/UU0031972.pdf
+source_url: https://peraturan.bpk.go.id/Details/47549/uu-no-3-tahun-1972
+source_pdf_url: https://peraturan.bpk.go.id/Download/36534/UU%20Nomor%203%20Tahun%201972.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1972_1972-07-28.txt
   pasal_count: 27
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0cb69b1195c5e6161bbafd876b841200e19ef4f0c5318366ec6f560b72b6bf93
 pdf_sha256: 0cb69b1195c5e6161bbafd876b841200e19ef4f0c5318366ec6f560b72b6bf93
+tanggal_pengundangan: '1972-07-28'
+tanggal_berlaku: '1972-07-28'
+lembaran_negara: 'LN. 1972, LL SETNEG : 11 HLM'
+subjek: BANTUAN, SUMBANGAN, BENCANA / KEBENCANAAN, DAN PENANGGULANGAN BENCANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1972
+  source_pdf_url: https://peraturan.go.id/files/UU0031972.pdf
+bpk:
+  id: 47549
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36534/UU%20Nomor%203%20Tahun%201972.pdf
+    bpk_file_id: 36534
+    filename: UU Nomor 3 Tahun 1972.pdf
+    sha256: 0cb69b1195c5e6161bbafd876b841200e19ef4f0c5318366ec6f560b72b6bf93
+    bytes: 83898
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_15_1997
+      citation: UU No. 15 Tahun 1997
+      tentang: Ketransmigrasian
+      url: https://peraturan.bpk.go.id/Details/45942/uu-no-15-tahun-1997
+      note: null
+uji_materi: null

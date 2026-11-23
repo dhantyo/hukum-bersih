@@ -27,13 +27,16 @@ relationships:
   - perppu_1_1971
   enacted_by: []
 versions:
-- id: uu_12_1971_1971
+- id: uu_12_1971_1971-10-16
   kind: asli
   source: official
-  date: null
+  date: '1971-10-16'
   date_basis: tanggal_penetapan
-  text: uu_12_1971_1971.txt
+  text: uu_12_1971_1971-10-16.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d51b5437a9c056e8a38d3945b99ffa4af1d17f94d2ace1ead6b0baa32b91db91
 pdf_sha256: d51b5437a9c056e8a38d3945b99ffa4af1d17f94d2ace1ead6b0baa32b91db91
 tanggal_pengundangan: '1971-10-16'
 tanggal_berlaku: '1971-10-16'
@@ -48,6 +51,9 @@ bpk:
   - url: https://peraturan.bpk.go.id/Download/36601/UU%20Nomor%2012%20Tahun%201971.pdf
     bpk_file_id: 36601
     filename: UU Nomor 12 Tahun 1971.pdf
+    sha256: d51b5437a9c056e8a38d3945b99ffa4af1d17f94d2ace1ead6b0baa32b91db91
+    bytes: 28683
+    archive_url: null
   status_peraturan:
     Mencabut:
     - id: uu_17_1964

@@ -12,8 +12,8 @@ tanggal_penetapan: '1977-03-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1976
-source_pdf_url: https://peraturan.go.id/files/uu1-1976.pdf
+source_url: https://peraturan.bpk.go.id/Details/47205/uu-no-1-tahun-1976
+source_pdf_url: https://peraturan.bpk.go.id/Download/36132/UU%20Nomor%201%20Tahun%201976.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,33 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1976_1977-03-08.txt
   pasal_count: 8
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 521bcc2a61ede9ac674545db8277a771ac864bfc06b9032be400d4505e349819
 pdf_sha256: b5bcc6737dc8708716abe31f327873df73e806f7964348605965f3703d5b9dce
+tanggal_penetapan_bpk: '1976-03-08'
+tanggal_pengundangan: '1976-03-08'
+tanggal_berlaku: '1976-04-01'
+lembaran_negara: 'LN. 1976, LL SETNEG : 4 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1976
+  source_pdf_url: https://peraturan.go.id/files/uu1-1976.pdf
+bpk:
+  id: 47205
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36132/UU%20Nomor%201%20Tahun%201976.pdf
+    bpk_file_id: 36132
+    filename: UU Nomor 1 Tahun 1976.pdf
+    sha256: 521bcc2a61ede9ac674545db8277a771ac864bfc06b9032be400d4505e349819
+    bytes: 64507
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_2_1977
+      citation: UU No. 2 Tahun 1977
+      tentang: Tambahan dan Perubahan Anggaran Pendapatan dan Belanja Negara Tahun
+        Anggaran 1976/1977
+      url: https://peraturan.bpk.go.id/Details/47198/uu-no-2-tahun-1977
+      note: null
+uji_materi: null

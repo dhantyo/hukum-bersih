@@ -9,22 +9,19 @@ title: Undang-Undang Nomor 11 Tahun 1976 tentang Pengesahan Konvensi Telekomunik
 tentang: PENGESAHAN KONVENSI TELEKOMUNIKASI INTERNASIONAL (INTERNATIONAL TELECOMMUNICATION
   CONVENTION) MALAGA-TORREMOLINOS, 1973
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 11 Tahun 1985 Tentang Pengesahan
-  Konvensi Telekomunikasi Internasional (international Telecommunications Convention)
-  Nairobi 1982'
+status: tidak_berlaku
 tanggal_penetapan: '1976-11-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1976
-source_pdf_url: https://peraturan.go.id/files/uu11-1976.pdf
+source_url: https://peraturan.bpk.go.id/Details/47218/uu-no-11-tahun-1976
+source_pdf_url: https://peraturan.bpk.go.id/Download/36151/UU%20Nomor%2011%20Tahun%201976.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_10_1969
-  revoked_by:
-  - uu_11_1985
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -35,4 +32,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1976_1976-11-22.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f4423a4d855fbbad89dc1b28eb662b984e3e6dbbc93725096cbd129eafd086a6
 pdf_sha256: da7bbcf4ef27dbf56a36056ed225d86518d29bf67572a75f11f910743dd53196
+tanggal_pengundangan: '1976-11-22'
+tanggal_berlaku: '1976-11-22'
+lembaran_negara: 'LN. 1976, LL SETNEG : 2 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1976
+  source_pdf_url: https://peraturan.go.id/files/uu11-1976.pdf
+bpk:
+  id: 47218
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36151/UU%20Nomor%2011%20Tahun%201976.pdf
+    bpk_file_id: 36151
+    filename: UU Nomor 11 Tahun 1976.pdf
+    sha256: f4423a4d855fbbad89dc1b28eb662b984e3e6dbbc93725096cbd129eafd086a6
+    bytes: 42060
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_11_1985
+      citation: UU No. 11 Tahun 1985
+      tentang: Pengesahan Konvensi Telekomunikasi Internasional (International Telecommunication
+        Convention Nairobi, 1982)
+      url: https://peraturan.bpk.go.id/Details/46961/uu-no-11-tahun-1985
+      note: null
+    Mencabut:
+    - id: uu_10_1969
+      citation: UU No. 10 Tahun 1969
+      tentang: Konvensi International Telecomunication Union di Montreux 1965
+      url: https://peraturan.bpk.go.id/Details/49111/uu-no-10-tahun-1969
+      note: null
+uji_materi: null

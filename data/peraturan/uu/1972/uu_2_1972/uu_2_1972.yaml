@@ -13,8 +13,8 @@ tanggal_penetapan: '1972-06-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1972
-source_pdf_url: https://peraturan.go.id/files/UU0021972.pdf
+source_url: https://peraturan.bpk.go.id/Details/47548/uu-no-2-tahun-1972
+source_pdf_url: https://peraturan.bpk.go.id/Download/36532/UU%20Nomor%202%20Tahun%201972.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1972_1972-06-13.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 98526148e1906b062881bbd226979f70241cf95704ad382d451e50410a844913
 pdf_sha256: 98526148e1906b062881bbd226979f70241cf95704ad382d451e50410a844913
+tanggal_pengundangan: '1972-06-13'
+tanggal_berlaku: '1971-04-01'
+lembaran_negara: 'LN. 1972, LL SETNEG : 4 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1972
+  source_pdf_url: https://peraturan.go.id/files/UU0021972.pdf
+bpk:
+  id: 47548
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36532/UU%20Nomor%202%20Tahun%201972.pdf
+    bpk_file_id: 36532
+    filename: UU Nomor 2 Tahun 1972.pdf
+    sha256: 98526148e1906b062881bbd226979f70241cf95704ad382d451e50410a844913
+    bytes: 34727
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_5_1971
+      citation: UU No. 5 Tahun 1971
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1971/1972
+      url: https://peraturan.bpk.go.id/Details/47560/uu-no-5-tahun-1971
+      note: null
+uji_materi: null

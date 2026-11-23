@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 11 Tahun 1971 tentang Perhitungan Anggaran Tahun 1967
 tentang: PERHITUNGAN ANGGARAN TAHUN 1967
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1971-09-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1971
-source_pdf_url: https://peraturan.go.id/files/UU0111971.pdf
+source_url: https://peraturan.bpk.go.id/Details/47607/uu-no-11-tahun-1971
+source_pdf_url: https://peraturan.bpk.go.id/Download/36599/UU%20Nomor%2011%20Tahun%201971.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_11_1971_1971
+- id: uu_11_1971_1971-09-24
   kind: asli
   source: official
-  date: null
+  date: '1971-09-24'
   date_basis: tanggal_penetapan
-  text: uu_11_1971_1971.txt
+  text: uu_11_1971_1971-09-24.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e54d89480fcb90f206e4ef1621e08aaa350f8dce588a1069a06dbceda0824395
 pdf_sha256: e54d89480fcb90f206e4ef1621e08aaa350f8dce588a1069a06dbceda0824395
+tanggal_pengundangan: '1971-09-24'
+tanggal_berlaku: '1971-09-24'
+lembaran_negara: 'LN. 1971, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1971
+  source_pdf_url: https://peraturan.go.id/files/UU0111971.pdf
+bpk:
+  id: 47607
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36599/UU%20Nomor%2011%20Tahun%201971.pdf
+    bpk_file_id: 36599
+    filename: UU Nomor 11 Tahun 1971.pdf
+    sha256: e54d89480fcb90f206e4ef1621e08aaa350f8dce588a1069a06dbceda0824395
+    bytes: 28160
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

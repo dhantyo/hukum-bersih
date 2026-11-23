@@ -12,8 +12,8 @@ tanggal_penetapan: '1972-12-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1972
-source_pdf_url: https://peraturan.go.id/files/UU0061972.pdf
+source_url: https://peraturan.bpk.go.id/Details/47554/uu-no-6-tahun-1972
+source_pdf_url: https://peraturan.bpk.go.id/Download/36541/UU%20Nomor%206%20Tahun%201972.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1972_1972-12-13.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: bf714f2ebddaa7d1af65ca5956101fe6144d7077fbdc83a9e6bad0983d7826e3
 pdf_sha256: bf714f2ebddaa7d1af65ca5956101fe6144d7077fbdc83a9e6bad0983d7826e3
+tanggal_pengundangan: '1972-12-13'
+tanggal_berlaku: '1972-12-13'
+lembaran_negara: 'LN. 1972, LL SETNEG : 3 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1972
+  source_pdf_url: https://peraturan.go.id/files/UU0061972.pdf
+bpk:
+  id: 47554
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36541/UU%20Nomor%206%20Tahun%201972.pdf
+    bpk_file_id: 36541
+    filename: UU Nomor 6 Tahun 1972.pdf
+    sha256: bf714f2ebddaa7d1af65ca5956101fe6144d7077fbdc83a9e6bad0983d7826e3
+    bytes: 29023
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

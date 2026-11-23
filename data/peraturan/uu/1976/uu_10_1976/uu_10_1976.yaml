@@ -9,12 +9,12 @@ tentang: PENGESAHAN PERJANJIAN EKSTRADISI ANTARA REPUBLIK INDONESIA DAN REPUBLIK
   SERTA PROTOKOL
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1976-07-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1976
-source_pdf_url: https://peraturan.go.id/files/uu10-1976.pdf
+source_url: https://peraturan.bpk.go.id/Details/47216/uu-no-10-tahun-1976
+source_pdf_url: https://peraturan.bpk.go.id/Download/36149/UU%20Nomor%2010%20Tahun%201976.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_10_1976_1976
+- id: uu_10_1976_1976-07-26
   kind: asli
   source: official
-  date: null
+  date: '1976-07-26'
   date_basis: tanggal_penetapan
-  text: uu_10_1976_1976.txt
+  text: uu_10_1976_1976-07-26.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 31067e52b4454a4add267cdcdef0fcfd94730be76da0108f9fecc33f41287870
 pdf_sha256: e81b5a8d581d03a19ece5169e88664b50682f0e707608fde688e655c2ab153ff
+tanggal_pengundangan: '1976-07-26'
+tanggal_berlaku: '1976-07-26'
+lembaran_negara: 'LN. 1976, LL SETNEG : 2 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1976
+  source_pdf_url: https://peraturan.go.id/files/uu10-1976.pdf
+bpk:
+  id: 47216
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36149/UU%20Nomor%2010%20Tahun%201976.pdf
+    bpk_file_id: 36149
+    filename: UU Nomor 10 Tahun 1976.pdf
+    sha256: 31067e52b4454a4add267cdcdef0fcfd94730be76da0108f9fecc33f41287870
+    bytes: 53139
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
