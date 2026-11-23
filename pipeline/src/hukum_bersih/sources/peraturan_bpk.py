@@ -250,9 +250,15 @@ def text_current(rec: dict) -> bool:
     if rec.get("reparse_error") or rec.get("parse_error") or rec.get("recheck"):
         return False                                     # flagged (by an older parser or by
         #                                                  scripts/check_texts.py --flag): try again
+    from ..pdf.extract import ocr_engine
+
     texts = [v for v in rec.get("versions") or [] if v.get("text")]
     return bool(texts) and all((v.get("parser_version") or 0) >= PARSER_REDO_BELOW
-                               and v.get("pdf_source") == SOURCE for v in texts)
+                               and v.get("pdf_source") == SOURCE
+                               # a text another OCR engine read is redone with the current one
+                               # (decision 0012: Tesseract -> Indra); typed texts are not
+                               and (not v.get("ocr") or v.get("ocr_engine", "tesseract") == ocr_engine())
+                               for v in texts)
 
 
 def is_penjelasan(f: dict) -> bool:

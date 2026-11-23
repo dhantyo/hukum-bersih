@@ -106,6 +106,7 @@ evening) peraturan.go.id. See CLAUDE.md for the latest findings.
 | XML in the browser build | `@xmldom/xmldom` | |
 | archive.org | `internetarchive` | |
 | PDF text | PyMuPDF | |
+| OCR of scanned pages | Indra OCR (`indra-ocr`, CPU; Tesseract `ind` as fallback) | [decision 0012](decisions/0012-indra-ocr.md): checked on hand-typed ground truth against Tesseract (Ubuntu and `tessdata_best`), PaddleOCR (server, mobile/RapidOCR, VL), GLM-OCR, MinerU2.5-Pro, markitdown |
 | Search | Pagefind | |
 | Showing a law's history | legislation.gov.uk "changes over time", Fedlex "Chronologie" | [decision 0008](decisions/0008-law-history.md); relations parsed with our own regexes over our own data |
 | Repealed / not-yet-consolidated warning | legislation.gov.uk "changes to legislation", Fedlex "nicht mehr in Kraft" banners | `StatusBanner.astro` |
