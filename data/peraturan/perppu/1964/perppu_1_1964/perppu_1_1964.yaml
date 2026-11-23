@@ -17,10 +17,14 @@ status: null
 tanggal_penetapan: '1964-01-06'
 source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
 relationships:
-  amends: []
+  amends:
+  - id: uu_21_1959
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by:
+  - uu_8_1964
 versions:
 - id: perppu_1_1964_1964-01-06
   kind: asli

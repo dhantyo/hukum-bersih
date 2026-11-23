@@ -11,10 +11,13 @@ status: null
 tanggal_penetapan: '1956-10-04'
 source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
 relationships:
-  amends: []
+  amends:
+  - id: uu_2_1956
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: uu-drt_2_1956_1956-10-04
   kind: asli

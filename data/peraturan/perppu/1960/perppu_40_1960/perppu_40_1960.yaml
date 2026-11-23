@@ -13,10 +13,16 @@ status: null
 tanggal_penetapan: '1960-10-15'
 source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
 relationships:
-  amends: []
+  amends:
+  - id: uu_66_1958
+    changes:
+      diubah:
+      - '29'
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions:
 - id: perppu_40_1960_1960-10-15
   kind: asli

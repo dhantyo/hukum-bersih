@@ -15,10 +15,13 @@ status: null
 tanggal_penetapan: '2007-06-04'
 source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
 relationships:
-  amends: []
+  amends:
+  - id: uu_36_2000
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by: []
 versions: []
 id_reg:
   dataset: Azzindani/ID_REG_RAG_2611

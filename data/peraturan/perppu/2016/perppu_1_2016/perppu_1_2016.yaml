@@ -12,10 +12,15 @@ status: null
 tanggal_penetapan: '2016-05-25'
 source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
 relationships:
-  amends: []
+  amends:
+  - id: uu_23_2002
+    order: 2
   amended_by: []
   revokes: []
   revoked_by: []
+  enacts: []
+  enacted_by:
+  - uu_17_2016
 versions: []
 id_reg:
   dataset: Azzindani/ID_REG_RAG_2611
