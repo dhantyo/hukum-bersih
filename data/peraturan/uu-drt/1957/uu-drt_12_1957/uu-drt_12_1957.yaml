@@ -1,0 +1,38 @@
+id: uu-drt_12_1957
+akn: /akn/id/act/uu-drt/1957/12
+type: uu-drt
+number: '12'
+year: 1957
+title: UU-DRT Nomor 12 Tahun 1957 tentang Peraturan Umum Retribusi Daerah
+tentang: PERATURAN UMUM RETRIBUSI DAERAH
+short_name: null
+status: null
+tanggal_penetapan: '1957-05-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_12_1957_1957-05-25
+  kind: asli
+  source: dataset
+  date: '1957-05-25'
+  date_basis: tanggal_penetapan
+  text: uu-drt_12_1957_1957-05-25.txt
+  pasal_count: 33
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:51781f3ff98aebb759f1b8a98e8ebceeda66e68251bab252ee40761a9c77da68
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:51781f3ff98aebb759f1b8a98e8ebceeda66e68251bab252ee40761a9c77da68
+  source_title: UU_Darurat_Nomor_12_Tahun_1957
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 41
+  status: none_known

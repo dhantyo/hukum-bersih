@@ -1,0 +1,39 @@
+id: uu-drt_42_1950
+akn: /akn/id/act/uu-drt/1950/42
+type: uu-drt
+number: '42'
+year: 1950
+title: UU-DRT Nomor 42 Tahun 1950 tentang Bea-Bea Imigrasi 1950 Presiden Republik
+  Indonesia
+tentang: BEA-BEA IMIGRASI 1950 Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1951-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_42_1950_1951-01-01
+  kind: asli
+  source: dataset
+  date: '1951-01-01'
+  date_basis: tanggal_penetapan
+  text: uu-drt_42_1950_1951-01-01.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f5bf2a4d43eb802ac85e32705c553676d36bc96ecc52659431685cd14b53cf3f
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f5bf2a4d43eb802ac85e32705c553676d36bc96ecc52659431685cd14b53cf3f
+  source_title: UU_Darurat_Nomor_42_Tahun_1950
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 22
+  status: none_known

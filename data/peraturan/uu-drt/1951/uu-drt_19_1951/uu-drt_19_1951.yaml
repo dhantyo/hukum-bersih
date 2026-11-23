@@ -1,0 +1,39 @@
+id: uu-drt_19_1951
+akn: /akn/id/act/uu-drt/1951/19
+type: uu-drt
+number: '19'
+year: 1951
+title: UU-DRT Nomor 19 Tahun 1951 tentang Pemungutan Pajak Penjualan Presiden Republik
+  Indonesia
+tentang: PEMUNGUTAN PAJAK PENJUALAN Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1951-10-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_19_1951_1951-10-01
+  kind: asli
+  source: dataset
+  date: '1951-10-01'
+  date_basis: tanggal_penetapan
+  text: uu-drt_19_1951_1951-10-01.txt
+  pasal_count: 48
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ac996659a096c88077f7341d52b97e6d8dd5d82a20dc03c0d55096d33cb7767b
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ac996659a096c88077f7341d52b97e6d8dd5d82a20dc03c0d55096d33cb7767b
+  source_title: UU_Darurat_Nomor_19_Tahun_1951
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 129
+  status: none_known

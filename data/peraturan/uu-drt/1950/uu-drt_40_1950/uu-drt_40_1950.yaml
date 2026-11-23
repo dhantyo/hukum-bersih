@@ -1,0 +1,41 @@
+id: uu-drt_40_1950
+akn: /akn/id/act/uu-drt/1950/40
+type: uu-drt
+number: '40'
+year: 1950
+title: UU-DRT Nomor 40 Tahun 1950 tentang Surat Perjalanan Republik Indonesia Presiden
+  Republik Indonesia
+tentang: SURAT PERJALANAN REPUBLIK INDONESIA Presiden Republik Indonesia
+short_name: null
+status: diubah
+tanggal_penetapan: '1949-12-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_40_1950_1949-12-28
+  kind: asli
+  source: dataset
+  date: '1949-12-28'
+  date_basis: tanggal_penetapan
+  text: uu-drt_40_1950_1949-12-28.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:1a3125b4930da0a3deee894b1846d288f0f21cdbfa5a0177985b14cd08afd9fd
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:1a3125b4930da0a3deee894b1846d288f0f21cdbfa5a0177985b14cd08afd9fd
+  source_title: UU_Darurat_Nomor_40_Tahun_1950
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 31
+  status: amended
+  amended_by:
+  - sha256:67154f2c1f89b5468110ee019b9504c75b565b086a6a83e43c85bfe505c94a71

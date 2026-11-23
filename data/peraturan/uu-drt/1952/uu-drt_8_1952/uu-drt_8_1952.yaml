@@ -1,0 +1,33 @@
+id: uu-drt_8_1952
+akn: /akn/id/act/uu-drt/1952/8
+type: uu-drt
+number: '8'
+year: 1952
+title: UU-DRT Nomor 8 Tahun 1952 tentang Menambah Dan Mengubah Undang-Undang Pelabuhan-Berat-Barang
+  (Goederengeld Ordonnantie) Beserta Peraturan Uang-Berat-Barang (Algemeen Goederengeld
+  Reglement) Presiden Republik Indonesia
+tentang: MENAMBAH DAN MENGUBAH UNDANG-UNDANG PELABUHAN-BERAT-BARANG (GOEDERENGELD
+  ORDONNANTIE) BESERTA PERATURAN UANG-BERAT-BARANG (ALGEMEEN GOEDERENGELD REGLEMENT)
+  Presiden Republik Indonesia
+short_name: null
+status: dicabut
+tanggal_penetapan: '1952-05-28'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:4f6063f5f4644d4909cca1ba09b40217a8705c33982edb31fa36dca979cc9fa4
+  source_title: UU_Darurat_Nomor_8_Tahun_1952
+  regulation_type: UNDANG-UNDANG
+  quality: degraded
+  chunks: 12
+  status: revoked
+  revoked_by:
+  - sha256:6b8f04609a3b405d24c576f2196f36e4b6f9b4c6c5f3668e41f96202af58add9
+parse_error: 'v13: rebuilt text has 2 pasal, the dataset lists 3'

@@ -1,0 +1,38 @@
+id: uu-drt_11_1954
+akn: /akn/id/act/uu-drt/1954/11
+type: uu-drt
+number: '11'
+year: 1954
+title: UU-DRT Nomor 11 Tahun 1954 tentang Amnesti Dan Abolisi
+tentang: AMNESTI DAN ABOLISI
+short_name: null
+status: null
+tanggal_penetapan: '1954-12-27'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_11_1954_1954-12-27
+  kind: asli
+  source: dataset
+  date: '1954-12-27'
+  date_basis: tanggal_penetapan
+  text: uu-drt_11_1954_1954-12-27.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a1514fa17bafacc247047e7689440213f22b9d51dcb9516bd94589e831ba9591
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a1514fa17bafacc247047e7689440213f22b9d51dcb9516bd94589e831ba9591
+  source_title: UU_Darurat_Nomor_11_Tahun_1954
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 10
+  status: none_known

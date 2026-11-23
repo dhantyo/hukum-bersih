@@ -1,0 +1,41 @@
+id: uu-drt_16_1951
+akn: /akn/id/act/uu-drt/1951/16
+type: uu-drt
+number: '16'
+year: 1951
+title: UU-DRT Nomor 16 Tahun 1951 tentang Penyelesaian Perselisihan Perburuhan Presiden
+  Republik Indonesia
+tentang: PENYELESAIAN PERSELISIHAN PERBURUHAN Presiden Republik Indonesia
+short_name: null
+status: dicabut
+tanggal_penetapan: '1951-09-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_16_1951_1951-09-10
+  kind: asli
+  source: dataset
+  date: '1951-09-10'
+  date_basis: tanggal_penetapan
+  text: uu-drt_16_1951_1951-09-10.txt
+  pasal_count: 27
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:de8a82fa567ac15a8482471d4969fc1a5bb35eda0ee94e40ef3132ace0a5a34d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:de8a82fa567ac15a8482471d4969fc1a5bb35eda0ee94e40ef3132ace0a5a34d
+  source_title: UU_Darurat_Nomor_16_Tahun_1951
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 61
+  status: revoked
+  revoked_by:
+  - sha256:f45e9a17b0b433c361832338a9e17dfda06ddf9692dce57d78c2a0441ab02796

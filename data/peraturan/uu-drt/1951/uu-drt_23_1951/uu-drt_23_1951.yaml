@@ -1,0 +1,40 @@
+id: uu-drt_23_1951
+akn: /akn/id/act/uu-drt/1951/23
+type: uu-drt
+number: '23'
+year: 1951
+title: UU-DRT Nomor 23 Tahun 1951 tentang Perubahan Dan Penambahan Ordonansi Pajak
+  Peralihan Tahun 1944 Presiden Republik Indonesia
+tentang: PERUBAHAN DAN PENAMBAHAN ORDONANSI PAJAK PERALIHAN TAHUN 1944 Presiden Republik
+  Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1951-10-20'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_23_1951_1951-10-20
+  kind: asli
+  source: dataset
+  date: '1951-10-20'
+  date_basis: tanggal_penetapan
+  text: uu-drt_23_1951_1951-10-20.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:ae6b6765a0ecbabcff5c4adc42cec2d44d19f92edc8f6a5b1b049a291d91a998
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:ae6b6765a0ecbabcff5c4adc42cec2d44d19f92edc8f6a5b1b049a291d91a998
+  source_title: UU_Darurat_Nomor_23_Tahun_1951
+  regulation_type: UNDANG-UNDANG
+  quality: degraded
+  chunks: 13
+  status: none_known

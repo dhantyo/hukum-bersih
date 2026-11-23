@@ -1,0 +1,41 @@
+id: uu-drt_9_1950
+akn: /akn/id/act/uu-drt/1950/9
+type: uu-drt
+number: '9'
+year: 1950
+title: UU-DRT Nomor 9 Tahun 1950 tentang Perobahan Undang-Undang. Postspaarbank (Staatsblad
+  1934 No. 653. 1937 No. 176 Dan 197 Dan 1941 No. 295) Presiden Republik Indonesia
+  Serikat
+tentang: PEROBAHAN UNDANG-UNDANG. POSTSPAARBANK (STAATSBLAD 1934 NO. 653. 1937 NO.
+  176 DAN 197 DAN 1941 NO. 295) Presiden Republik Indonesia Serikat
+short_name: null
+status: null
+tanggal_penetapan: '1950-02-09'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_9_1950_1950-02-09
+  kind: asli
+  source: dataset
+  date: '1950-02-09'
+  date_basis: tanggal_penetapan
+  text: uu-drt_9_1950_1950-02-09.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7fc678028298fc0767eae0b3493a95716c5bf812ae47f8d74b9dd81652d37e17
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7fc678028298fc0767eae0b3493a95716c5bf812ae47f8d74b9dd81652d37e17
+  source_title: UU_Darurat_Nomor_9_Tahun_1950
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 8
+  status: none_known

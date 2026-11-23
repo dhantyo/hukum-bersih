@@ -1,0 +1,38 @@
+id: uu-drt_5_1958
+akn: /akn/id/act/uu-drt/1958/5
+type: uu-drt
+number: '5'
+year: 1958
+title: UU-DRT Nomor 5 Tahun 1958
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '1958-10-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_5_1958_1958-10-10
+  kind: asli
+  source: dataset
+  date: '1958-10-10'
+  date_basis: tanggal_penetapan
+  text: uu-drt_5_1958_1958-10-10.txt
+  pasal_count: 17
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:2c1305a39df63b546ddf54ab231072e883f138b0d1ed72bbb4ca5079a5ec0b33
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2c1305a39df63b546ddf54ab231072e883f138b0d1ed72bbb4ca5079a5ec0b33
+  source_title: UU_Darurat_Nomor_5_Tahun_1958
+  regulation_type: UNDANG-UNDANG
+  quality: degraded
+  chunks: 21
+  status: none_known

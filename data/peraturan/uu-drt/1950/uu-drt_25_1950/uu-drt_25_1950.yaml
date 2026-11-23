@@ -1,0 +1,30 @@
+id: uu-drt_25_1950
+akn: /akn/id/act/uu-drt/1950/25
+type: uu-drt
+number: '25'
+year: 1950
+title: UU-DRT Nomor 25 Tahun 1950 tentang Hak Pengangkatan Dan Pemberhentian Pegawai-Pegawai
+  Republik Indonesia Serikat
+tentang: HAK PENGANGKATAN DAN PEMBERHENTIAN PEGAWAI-PEGAWAI REPUBLIK INDONESIA SERIKAT
+short_name: null
+status: diubah
+tanggal_penetapan: '1950-04-25'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:2bc5fe29e39354ca95c290d96f238d124f302de5202fbe83fd6791300278ce8d
+  source_title: UU_Darurat_Nomor_25_Tahun_1950
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 14
+  status: amended
+  amended_by:
+  - sha256:c6219195410c1a2aa59c1085bd56409415ba7322ad895ab519e3b9f1ade52a35
+parse_error: 'v13: rebuilt text has 2 pasal, the dataset lists 5'

@@ -1,0 +1,40 @@
+id: uu-drt_35_1950
+akn: /akn/id/act/uu-drt/1950/35
+type: uu-drt
+number: '35'
+year: 1950
+title: UU-DRT Nomor 35 Tahun 1950 tentang Pungutan Tambahan Pokok Pajak Mengenai Pajak
+  Kekayaan Dan Pajak Perseroan Tahun 1951 Presiden Republik Indonesia
+tentang: PUNGUTAN TAMBAHAN POKOK PAJAK MENGENAI PAJAK KEKAYAAN DAN PAJAK PERSEROAN
+  TAHUN 1951 Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1950-12-30'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_35_1950_1950-12-30
+  kind: asli
+  source: dataset
+  date: '1950-12-30'
+  date_basis: tanggal_penetapan
+  text: uu-drt_35_1950_1950-12-30.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:02ff4379fad9b6a2ba39b55b3ecea0c20adec30c4ff4017a7d390636009b4979
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:02ff4379fad9b6a2ba39b55b3ecea0c20adec30c4ff4017a7d390636009b4979
+  source_title: UU_Darurat_Nomor_35_Tahun_1950
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 9
+  status: none_known

@@ -1,0 +1,40 @@
+id: uu-drt_18_1950
+akn: /akn/id/act/uu-drt/1950/18
+type: uu-drt
+number: '18'
+year: 1950
+title: UU-DRT Nomor 18 Tahun 1950 tentang Penghapusan Pengadilan-Pengadilan Landgerecht
+  Dan Appelraad Dan Pembentukan Pengadilan-Pengadilan Negeri Dan Pengadilan Tinggi
+tentang: PENGHAPUSAN PENGADILAN-PENGADILAN LANDGERECHT DAN APPELRAAD DAN PEMBENTUKAN
+  PENGADILAN-PENGADILAN NEGERI DAN PENGADILAN TINGGI
+short_name: null
+status: null
+tanggal_penetapan: '1950-04-17'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_18_1950_1950-04-17
+  kind: asli
+  source: dataset
+  date: '1950-04-17'
+  date_basis: tanggal_penetapan
+  text: uu-drt_18_1950_1950-04-17.txt
+  pasal_count: 4
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f10960b59eba7ae7a23c503db33f42ab727bb1972fd2096a93f384c9356a38aa
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f10960b59eba7ae7a23c503db33f42ab727bb1972fd2096a93f384c9356a38aa
+  source_title: UU_Darurat_Nomor_18_Tahun_1950
+  regulation_type: UNDANG-UNDANG
+  quality: degraded
+  chunks: 9
+  status: none_known

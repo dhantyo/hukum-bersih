@@ -1,0 +1,40 @@
+id: uu-drt_1_1955
+akn: /akn/id/act/uu-drt/1955/1
+type: uu-drt
+number: '1'
+year: 1955
+title: UU-DRT Nomor 1 Tahun 1955 tentang Penyaluran Kredit Guna Pembangunan Perindustrian
+  Dalam Sektor Partikelir Presiden Republik Indonesia
+tentang: PENYALURAN KREDIT GUNA PEMBANGUNAN PERINDUSTRIAN DALAM SEKTOR PARTIKELIR
+  Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1955-01-15'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_1_1955_1955-01-15
+  kind: asli
+  source: dataset
+  date: '1955-01-15'
+  date_basis: tanggal_penetapan
+  text: uu-drt_1_1955_1955-01-15.txt
+  pasal_count: 7
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:223b79c4c6a5aef0ed1f67136ca5b9f2d1d600922328733049b23fc0b927519d
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:223b79c4c6a5aef0ed1f67136ca5b9f2d1d600922328733049b23fc0b927519d
+  source_title: UU_Darurat_Nomor_1_Tahun_1955
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 16
+  status: none_known

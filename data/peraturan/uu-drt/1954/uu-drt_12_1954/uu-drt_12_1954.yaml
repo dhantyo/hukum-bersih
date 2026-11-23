@@ -1,0 +1,39 @@
+id: uu-drt_12_1954
+akn: /akn/id/act/uu-drt/1954/12
+type: uu-drt
+number: '12'
+year: 1954
+title: UU-DRT Nomor 12 Tahun 1954 tentang Pengubahan "Krosok-Ordonnantie 1937" (Lembaran-Negara
+  Tahun 1937 No. 604)
+tentang: PENGUBAHAN "KROSOK-ORDONNANTIE 1937" (LEMBARAN-NEGARA TAHUN 1937 NO. 604)
+short_name: null
+status: null
+tanggal_penetapan: '1955-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_12_1954_1955-01-01
+  kind: asli
+  source: dataset
+  date: '1955-01-01'
+  date_basis: tanggal_penetapan
+  text: uu-drt_12_1954_1955-01-01.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:70a8e893b565deab2bcffa60de957ef7ef2ba42272f1c9d1d6a212088c37393c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:70a8e893b565deab2bcffa60de957ef7ef2ba42272f1c9d1d6a212088c37393c
+  source_title: UU_Darurat_Nomor_12_Tahun_1954
+  regulation_type: UNDANG-UNDANG
+  quality: degraded
+  chunks: 10
+  status: none_known

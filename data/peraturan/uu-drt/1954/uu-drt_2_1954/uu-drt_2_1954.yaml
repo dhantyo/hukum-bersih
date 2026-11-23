@@ -1,0 +1,44 @@
+id: uu-drt_2_1954
+akn: /akn/id/act/uu-drt/1954/2
+type: uu-drt
+number: '2'
+year: 1954
+title: UU-DRT Nomor 2 Tahun 1954 tentang Mencabut Sifat Sebagai Alat Pembayaran Yang
+  Sah Dari Uang Kertas Pemerintah Yang Dikeluarkan Sebelum Penyerahan Kedaulatan
+tentang: MENCABUT SIFAT SEBAGAI ALAT PEMBAYARAN YANG SAH DARI UANG KERTAS PEMERINTAH
+  YANG DIKELUARKAN SEBELUM PENYERAHAN KEDAULATAN
+short_name: null
+status: dicabut
+tanggal_penetapan: '1954-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_2_1954_1954-01-01
+  kind: asli
+  source: dataset
+  date: '1954-01-01'
+  date_basis: tanggal_penetapan
+  text: uu-drt_2_1954_1954-01-01.txt
+  pasal_count: 8
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:b220abd74c39b086112ded69507b297d3447e5f2210ed90e1b6f4b8400591a96
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:b220abd74c39b086112ded69507b297d3447e5f2210ed90e1b6f4b8400591a96
+  source_title: UU_Darurat_Nomor_2_Tahun_1954
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 14
+  status: revoked
+  revoked_by:
+  - sha256:1be5f250a5453aae6d68bb6e23dfe928cb33b4b6e71c79a5f16f12c6be33a285
+  amended_by:
+  - sha256:1be5f250a5453aae6d68bb6e23dfe928cb33b4b6e71c79a5f16f12c6be33a285

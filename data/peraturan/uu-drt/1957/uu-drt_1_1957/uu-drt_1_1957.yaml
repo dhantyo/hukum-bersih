@@ -1,0 +1,44 @@
+id: uu-drt_1_1957
+akn: /akn/id/act/uu-drt/1957/1
+type: uu-drt
+number: '1'
+year: 1957
+title: UU-DRT Nomor 1 Tahun 1957 tentang Pengubahan Jumlah Maksimum Anggota Dewan
+  Pemerintah Daerah Peralihan Yang Dimaksud Dalam Pasal 5 Undang-Undang Nomor 14 Tahun
+  1956 (Lembaran-Negara Nomor 30 Tahun 1956) Tentang Pembentukan Dewan Perwakilan
+  Rakyat Daerah Dan Dewan Pemerintah Daerah Peralihan Presiden Republik Indonesia
+tentang: PENGUBAHAN JUMLAH MAKSIMUM ANGGOTA DEWAN PEMERINTAH DAERAH PERALIHAN YANG
+  DIMAKSUD DALAM PASAL 5 UNDANG-UNDANG NOMOR 14 TAHUN 1956 (LEMBARAN-NEGARA NOMOR
+  30 TAHUN 1956) TENTANG PEMBENTUKAN DEWAN PERWAKILAN RAKYAT DAERAH DAN DEWAN PEMERINTAH
+  DAERAH PERALIHAN Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1957-01-16'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_1_1957_1957-01-16
+  kind: asli
+  source: dataset
+  date: '1957-01-16'
+  date_basis: tanggal_penetapan
+  text: uu-drt_1_1957_1957-01-16.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:5006d1f3922ac68ef4370fad5cfc49c7e62ea2395b3258d5f637417679fd73f0
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:5006d1f3922ac68ef4370fad5cfc49c7e62ea2395b3258d5f637417679fd73f0
+  source_title: UU_Darurat_Nomor_1_Tahun_1957
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 7
+  status: none_known

@@ -1,0 +1,39 @@
+id: uu-drt_3_1959
+akn: /akn/id/act/uu-drt/1959/3
+type: uu-drt
+number: '3'
+year: 1959
+title: UU-DRT Nomor 3 Tahun 1959 tentang Pengeluaran Pinjaman Obligasi Berhadiah Tahun
+  1959
+tentang: PENGELUARAN PINJAMAN OBLIGASI BERHADIAH TAHUN 1959
+short_name: null
+status: null
+tanggal_penetapan: '1959-07-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_3_1959_1959-07-04
+  kind: asli
+  source: dataset
+  date: '1959-07-04'
+  date_basis: tanggal_penetapan
+  text: uu-drt_3_1959_1959-07-04.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:f582533af01ab234ecddce2ce2573a176c1e49846f3cd7d390fe0397db4bb2e4
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:f582533af01ab234ecddce2ce2573a176c1e49846f3cd7d390fe0397db4bb2e4
+  source_title: UU_Darurat_Nomor_3_Tahun_1959
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 23
+  status: none_known

@@ -1,0 +1,41 @@
+id: uu-drt_7_1951
+akn: /akn/id/act/uu-drt/1951/7
+type: uu-drt
+number: '7'
+year: 1951
+title: UU-DRT Nomor 7 Tahun 1951 tentang Memperpanjang Waktu Berlakunya Aturan Hukum
+  Termaksud Dalam Pasal 3 Ayat 2 Ordonansi (Staatsblad 1948 No. 141) Presiden Republik
+  Indonesia
+tentang: MEMPERPANJANG WAKTU BERLAKUNYA ATURAN HUKUM TERMAKSUD DALAM PASAL 3 AYAT
+  2 ORDONANSI (STAATSBLAD 1948 NO. 141) Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1951-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_7_1951_1951-01-01
+  kind: asli
+  source: dataset
+  date: '1951-01-01'
+  date_basis: tanggal_penetapan
+  text: uu-drt_7_1951_1951-01-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:384dccff48dbb1e206587e8731f0661ea80b4843671b3a4d5e7126b19ae37870
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:384dccff48dbb1e206587e8731f0661ea80b4843671b3a4d5e7126b19ae37870
+  source_title: UU_Darurat_Nomor_7_Tahun_1951
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 8
+  status: none_known

@@ -1,0 +1,41 @@
+id: uu-drt_16_1955
+akn: /akn/id/act/uu-drt/1955/16
+type: uu-drt
+number: '16'
+year: 1955
+title: UU-DRT Nomor 16 Tahun 1955 tentang Pengubahan Peraturan Pemerintah Pengganti
+  Undang-Undang Tentang Pembentukan Daerah-Daerah Otonom Propinsi Di Sumatera Presiden
+  Republik Indonesia
+tentang: PENGUBAHAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG TENTANG PEMBENTUKAN
+  DAERAH-DAERAH OTONOM PROPINSI DI SUMATERA Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1955-08-11'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_16_1955_1955-08-11
+  kind: asli
+  source: dataset
+  date: '1955-08-11'
+  date_basis: tanggal_penetapan
+  text: uu-drt_16_1955_1955-08-11.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:bf7c414f875afe69e8c708afe520418960010dabedcf3867f2862d22b6f159ba
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:bf7c414f875afe69e8c708afe520418960010dabedcf3867f2862d22b6f159ba
+  source_title: UU_Darurat_Nomor_16_Tahun_1955
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 14
+  status: none_known

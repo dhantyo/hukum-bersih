@@ -1,0 +1,38 @@
+id: uu-drt_12_1950
+akn: /akn/id/act/uu-drt/1950/12
+type: uu-drt
+number: '12'
+year: 1950
+title: UU-DRT Nomor 12 Tahun 1950 tentang Pajak Peredaran
+tentang: PAJAK PEREDARAN
+short_name: null
+status: null
+tanggal_penetapan: '1950-02-13'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_12_1950_1950-02-13
+  kind: asli
+  source: dataset
+  date: '1950-02-13'
+  date_basis: tanggal_penetapan
+  text: uu-drt_12_1950_1950-02-13.txt
+  pasal_count: 61
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7a46f7ca991796f1971e6ca2cf0b5733e3f6a15e2ba8e4c7095f9c013a4dd9d7
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7a46f7ca991796f1971e6ca2cf0b5733e3f6a15e2ba8e4c7095f9c013a4dd9d7
+  source_title: UU_Darurat_Nomor_12_Tahun_1950
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 152
+  status: none_known

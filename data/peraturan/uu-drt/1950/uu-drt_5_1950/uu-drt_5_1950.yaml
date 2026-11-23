@@ -1,0 +1,32 @@
+id: uu-drt_5_1950
+akn: /akn/id/act/uu-drt/1950/5
+type: uu-drt
+number: '5'
+year: 1950
+title: UU-DRT Nomor 5 Tahun 1950 tentang Peraturan Gaji Militer Tahun 1950, "Peraturan
+  Gaji Militer Tahun 1950" ("P.G.M. 1950")
+tentang: PERATURAN GAJI MILITER TAHUN 1950, "PERATURAN GAJI MILITER TAHUN 1950" ("P.G.M.
+  1950")
+short_name: null
+status: dicabut
+tanggal_penetapan: '1950-01-21'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:0b74da163c3575f1f1831c496c2beb361a181bb7b7ca0be4c0067d60d529bd6f
+  source_title: UU_Darurat_Nomor_5_Tahun_1950
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 19
+  status: revoked
+  revoked_by:
+  - sha256:324e0a4e67a00e6c99322c1fa340bdf8450368e0d9fb3a2f990c017a8b79a8c6
+  - sha256:546769ff35b3b44b6efd7836eb96f8163b7c1f9d339363f31859d5b4e461d518
+parse_error: 'v13: rebuilt text has 10 pasal, the dataset lists 14'

@@ -1,0 +1,30 @@
+id: uu-drt_13_1955
+akn: /akn/id/act/uu-drt/1955/13
+type: uu-drt
+number: '13'
+year: 1955
+title: UU-DRT Nomor 13 Tahun 1955 tentang (Lembaran-Negara 1953 No.44) Presiden Republik
+  Indonesia
+tentang: (LEMBARAN-NEGARA 1953 NO.44) Presiden Republik Indonesia
+short_name: null
+status: dicabut
+tanggal_penetapan: '1955-06-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:17af8de2d72721bd8511046840f2c7ff661207fe61c1acc0a5ef4f331675ca2b
+  source_title: UU_Darurat_Nomor_13_Tahun_1955
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 22
+  status: revoked
+  revoked_by:
+  - sha256:e77a854d478069292a041656e1767b963804476f0d26ecc9139406efd3e952ad
+parse_error: 'v13: rebuilt text has 2 pasal, the dataset lists 10'

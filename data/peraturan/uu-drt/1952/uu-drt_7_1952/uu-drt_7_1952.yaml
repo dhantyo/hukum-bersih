@@ -1,0 +1,39 @@
+id: uu-drt_7_1952
+akn: /akn/id/act/uu-drt/1952/7
+type: uu-drt
+number: '7'
+year: 1952
+title: UU-DRT Nomor 7 Tahun 1952 tentang Kewajiban Penggilingan Padi Dan Perdagangan
+  Bahan Makanan
+tentang: KEWAJIBAN PENGGILINGAN PADI DAN PERDAGANGAN BAHAN MAKANAN
+short_name: null
+status: null
+tanggal_penetapan: '1952-05-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_7_1952_1952-05-05
+  kind: asli
+  source: dataset
+  date: '1952-05-05'
+  date_basis: tanggal_penetapan
+  text: uu-drt_7_1952_1952-05-05.txt
+  pasal_count: 12
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8d9391186dadb42f42724949cc20eb3e64b69972ed5df009469bb5b82093caba
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8d9391186dadb42f42724949cc20eb3e64b69972ed5df009469bb5b82093caba
+  source_title: UU_Darurat_Nomor_7_Tahun_1952
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 26
+  status: none_known

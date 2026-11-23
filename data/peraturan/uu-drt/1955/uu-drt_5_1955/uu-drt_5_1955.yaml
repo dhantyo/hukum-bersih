@@ -1,0 +1,39 @@
+id: uu-drt_5_1955
+akn: /akn/id/act/uu-drt/1955/5
+type: uu-drt
+number: '5'
+year: 1955
+title: UU-DRT Nomor 5 Tahun 1955 tentang Mengadakan Opsenten Atas Cukai Bensin Presiden
+  Republik Indonesia
+tentang: MENGADAKAN OPSENTEN ATAS CUKAI BENSIN Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1955-05-05'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_5_1955_1955-05-05
+  kind: asli
+  source: dataset
+  date: '1955-05-05'
+  date_basis: tanggal_penetapan
+  text: uu-drt_5_1955_1955-05-05.txt
+  pasal_count: 5
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:294cd0d93869873e916153112b9b10e514e9be86af144fb6c51834103523f2ec
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:294cd0d93869873e916153112b9b10e514e9be86af144fb6c51834103523f2ec
+  source_title: UU_Darurat_Nomor_5_Tahun_1955
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 12
+  status: none_known

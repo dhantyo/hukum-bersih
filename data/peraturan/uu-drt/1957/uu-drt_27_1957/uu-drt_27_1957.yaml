@@ -1,0 +1,38 @@
+id: uu-drt_27_1957
+akn: /akn/id/act/uu-drt/1957/27
+type: uu-drt
+number: '27'
+year: 1957
+title: UU-DRT Nomor 27 Tahun 1957 tentang Penagihan Pajak Negara Dengan Surat-Paksa
+tentang: PENAGIHAN PAJAK NEGARA DENGAN SURAT-PAKSA
+short_name: null
+status: null
+tanggal_penetapan: '1957-08-10'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_27_1957_1957-08-10
+  kind: asli
+  source: dataset
+  date: '1957-08-10'
+  date_basis: tanggal_penetapan
+  text: uu-drt_27_1957_1957-08-10.txt
+  pasal_count: 26
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:75a42977a76c5b59a3aeec3471f94e8634c4cc1ad2f398cd2626abf74371cc2a
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:75a42977a76c5b59a3aeec3471f94e8634c4cc1ad2f398cd2626abf74371cc2a
+  source_title: UU_Darurat_Nomor_27_Tahun_1957
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 58
+  status: none_known

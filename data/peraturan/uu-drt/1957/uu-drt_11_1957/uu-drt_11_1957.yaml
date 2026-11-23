@@ -1,0 +1,38 @@
+id: uu-drt_11_1957
+akn: /akn/id/act/uu-drt/1957/11
+type: uu-drt
+number: '11'
+year: 1957
+title: UU-DRT Nomor 11 Tahun 1957 tentang Peraturan Umum Pajak Daerah
+tentang: PERATURAN UMUM PAJAK DAERAH
+short_name: null
+status: null
+tanggal_penetapan: '1957-05-29'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_11_1957_1957-05-29
+  kind: asli
+  source: dataset
+  date: '1957-05-29'
+  date_basis: tanggal_penetapan
+  text: uu-drt_11_1957_1957-05-29.txt
+  pasal_count: 43
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:8b63c123c1952807826915d900bca952a32af2dd8826e2112bba26a1b022d8df
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:8b63c123c1952807826915d900bca952a32af2dd8826e2112bba26a1b022d8df
+  source_title: UU_Darurat_Nomor_11_Tahun_1957
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 57
+  status: none_known

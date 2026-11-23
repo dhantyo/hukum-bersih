@@ -1,0 +1,41 @@
+id: uu-drt_19_1950
+akn: /akn/id/act/uu-drt/1950/19
+type: uu-drt
+number: '19'
+year: 1950
+title: UU-DRT Nomor 19 Tahun 1950 tentang Peraturan Pensiun Dan Onderstand Kepada
+  Para Anggota Tentara Angkatan Darat
+tentang: PERATURAN PENSIUN DAN ONDERSTAND KEPADA PARA ANGGOTA TENTARA ANGKATAN DARAT
+short_name: null
+status: diubah
+tanggal_penetapan: '1950-04-04'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_19_1950_1950-04-04
+  kind: asli
+  source: dataset
+  date: '1950-04-04'
+  date_basis: tanggal_penetapan
+  text: uu-drt_19_1950_1950-04-04.txt
+  pasal_count: 23
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:7318387e444dff0d063f7d309a594fec3dcef84fe223ba0cc14568309408b63e
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:7318387e444dff0d063f7d309a594fec3dcef84fe223ba0cc14568309408b63e
+  source_title: UU_Darurat_Nomor_19_Tahun_1950
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 31
+  status: amended
+  amended_by:
+  - sha256:06ee863a791f9931543b97ea1bca36094c6598271f4cde45c29495e581fc41a3

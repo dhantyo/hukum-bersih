@@ -1,0 +1,42 @@
+id: uu-drt_8_1958
+akn: /akn/id/act/uu-drt/1958/8
+type: uu-drt
+number: '8'
+year: 1958
+title: UU-DRT Nomor 8 Tahun 1958 tentang Penambahan Undang-Undang Darurat No. 7 Tahun
+  1955 (Lembaran-Negara Tahun 1955 No. 27) Tentang Pengusutan, Penuntutan Dan Peradilan
+  Tindak Pidana Ekonomi Presiden Republik Indonesia
+tentang: PENAMBAHAN UNDANG-UNDANG DARURAT NO. 7 TAHUN 1955 (LEMBARAN-NEGARA TAHUN
+  1955 NO. 27) TENTANG PENGUSUTAN, PENUNTUTAN DAN PERADILAN TINDAK PIDANA EKONOMI
+  Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1959-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_8_1958_1959-01-01
+  kind: asli
+  source: dataset
+  date: '1959-01-01'
+  date_basis: tanggal_penetapan
+  text: uu-drt_8_1958_1959-01-01.txt
+  pasal_count: 3
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:544f28c3e54f6a6456547d9bb6f1ffefb0a505260a643efc11a37150ce3bca08
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:544f28c3e54f6a6456547d9bb6f1ffefb0a505260a643efc11a37150ce3bca08
+  source_title: UU_Darurat_Nomor_8_Tahun_1958
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 10
+  status: none_known

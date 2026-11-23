@@ -1,0 +1,38 @@
+id: uu-drt_7_1957
+akn: /akn/id/act/uu-drt/1957/7
+type: uu-drt
+number: '7'
+year: 1957
+title: UU-DRT Nomor 7 Tahun 1957 tentang Dewannasional
+tentang: DEWANNASIONAL
+short_name: null
+status: null
+tanggal_penetapan: '1957-05-06'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_7_1957_1957-05-06
+  kind: asli
+  source: dataset
+  date: '1957-05-06'
+  date_basis: tanggal_penetapan
+  text: uu-drt_7_1957_1957-05-06.txt
+  pasal_count: 6
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a9e282ddef84bb89b59a7823f4ef83eaada7aa7134740035ea209601125f735c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a9e282ddef84bb89b59a7823f4ef83eaada7aa7134740035ea209601125f735c
+  source_title: UU_Darurat_Nomor_7_Tahun_1957
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 12
+  status: none_known

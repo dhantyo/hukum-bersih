@@ -1,0 +1,40 @@
+id: uu-drt_4_1953
+akn: /akn/id/act/uu-drt/1953/4
+type: uu-drt
+number: '4'
+year: 1953
+title: UU-DRT Nomor 4 Tahun 1953 tentang Penetapan Tambahan Opsenten Atas Cukai Bensin
+  Dan Sebagainya Selama Tahun 1953 Presiden Republik Indonesia
+tentang: PENETAPAN TAMBAHAN OPSENTEN ATAS CUKAI BENSIN DAN SEBAGAINYA SELAMA TAHUN
+  1953 Presiden Republik Indonesia
+short_name: null
+status: null
+tanggal_penetapan: '1953-01-01'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions:
+- id: uu-drt_4_1953_1953-01-01
+  kind: asli
+  source: dataset
+  date: '1953-01-01'
+  date_basis: tanggal_penetapan
+  text: uu-drt_4_1953_1953-01-01.txt
+  pasal_count: 2
+  parser_version: 13
+  text_source: huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+  text_revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  text_doc_id: sha256:a204be0077bd3037f95e4413262dbfc860bfd09b0b12469cc200b15125d2513c
+  rebuilt_from_chunks: true
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a204be0077bd3037f95e4413262dbfc860bfd09b0b12469cc200b15125d2513c
+  source_title: UU_Darurat_Nomor_4_Tahun_1953
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 5
+  status: none_known

@@ -1,0 +1,30 @@
+id: uu-drt_2_1953
+akn: /akn/id/act/uu-drt/1953/2
+type: uu-drt
+number: '2'
+year: 1953
+title: UU-DRT Nomor 2 Tahun 1953 tentang Pembentukan Daerah Otonom Propinsi Kalimantan
+  Presiden Republik Indonesia
+tentang: PEMBENTUKAN DAERAH OTONOM PROPINSI KALIMANTAN Presiden Republik Indonesia
+short_name: null
+status: dicabut
+tanggal_penetapan: '1953-01-07'
+source_url: https://huggingface.co/datasets/Azzindani/ID_REG_RAG_2611
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+versions: []
+id_reg:
+  dataset: Azzindani/ID_REG_RAG_2611
+  revision: 340827221a65de669b9edd28f2a890b0310e30dc
+  doc_id: sha256:a8226b428a7cbef2517ba56f5c5f5d0d1b7eebf21aab50340b3fc3a7cdf7a582
+  source_title: UU_Darurat_Nomor_2_Tahun_1953
+  regulation_type: UNDANG-UNDANG
+  quality: clean
+  chunks: 144
+  status: revoked
+  revoked_by:
+  - sha256:df537b0a95abf8ae0f450b7b10c91aade9788ba228929e0fd4a9be6231690833
+parse_error: 'v13: rebuilt text has 36 pasal, the dataset lists 79'
