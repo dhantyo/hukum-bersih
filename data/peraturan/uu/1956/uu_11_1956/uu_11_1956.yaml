@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 11 Tahun 1956 tentang Pembelanjaan Pensiun
 tentang: PEMBELANJAAN PENSIUN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1956-03-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu11-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51094/uu-no-11-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40345/UU%20Nomor%2011%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,34 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_11_1956_1956-03-19
+  kind: asli
+  source: official
+  date: '1956-03-19'
+  date_basis: tanggal_penetapan
+  text: uu_11_1956_1956-03-19.txt
+  pasal_count: 13
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b654c569361d5c400689421ca673293629a041ccc8813ef697f04c4c90f464f3
 pdf_sha256: 62d9fbd2ae6f1ec332933e1b2a02c6d54759ab99cee9cd4416a7c57d5b5d610d
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-03-26'
+tanggal_berlaku: '1951-01-01'
+lembaran_negara: 'LN.1956/NO.23, LL SETNEG : 11 HLM.'
+subjek: HONORARIUM, GAJI, PENGHASILAN, UANG KEHORMATAN, TUNJANGAN, PENGHARGAAN, HAK
+  LAINNYA - KEPEGAWAIAN, APARATUR NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu11-1956.pdf
+bpk:
+  id: 51094
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40345/UU%20Nomor%2011%20Tahun%201956.pdf
+    bpk_file_id: 40345
+    filename: UU Nomor 11 Tahun 1956.pdf
+    sha256: b654c569361d5c400689421ca673293629a041ccc8813ef697f04c4c90f464f3
+    bytes: 45582
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

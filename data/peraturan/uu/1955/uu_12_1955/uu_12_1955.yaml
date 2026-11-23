@@ -10,13 +10,13 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 3 TAHUN 1954 (TENTANG MENGUBAH "IND
   COMPTABILTEITSWET" (STAATSBLAD 1925 NO. 448) DAN "INDONESISCHE BEDRIJVENWET" (STAATSBLAD
   1927 NO. 419) SEBAGAI UNDANG-UNDANG)
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1955-08-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1955
-source_pdf_url: https://peraturan.go.id/files/uu12-1955.pdf
+source_url: https://peraturan.bpk.go.id/Details/51074/uu-no-12-tahun-1955
+source_pdf_url: https://peraturan.bpk.go.id/Download/40325/UU%20Nomor%2012%20Tahun%201955.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,6 +25,46 @@ relationships:
   enacts:
   - uu-drt_3_1954
   enacted_by: []
-versions: []
+versions:
+- id: uu_12_1955_1955-08-08
+  kind: asli
+  source: official
+  date: '1955-08-08'
+  date_basis: tanggal_penetapan
+  text: uu_12_1955_1955-08-08.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e309e896363ba6b8a15fa23a3beb20b319139787f44ce147a07b17cf11d1942c
 pdf_sha256: 84ed31f46af1c5943d89e80676e8484463d99e565a21ed1266fd1d88d322e934
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1955-08-16'
+tanggal_berlaku: '1954-01-01'
+lembaran_negara: 'LL SETNEG : 4 HLM.'
+subjek: PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1955
+  source_pdf_url: https://peraturan.go.id/files/uu12-1955.pdf
+bpk:
+  id: 51074
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40325/UU%20Nomor%2012%20Tahun%201955.pdf
+    bpk_file_id: 40325
+    filename: UU Nomor 12 Tahun 1955.pdf
+    sha256: e309e896363ba6b8a15fa23a3beb20b319139787f44ce147a07b17cf11d1942c
+    bytes: 76638
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_19_2003
+      citation: UU No. 19 Tahun 2003
+      tentang: Badan Usaha Milik Negara
+      url: https://peraturan.bpk.go.id/Details/43919/uu-no-19-tahun-2003
+      note: null
+    Menetapkan:
+    - id: null
+      citation: UUDrt No. 3 Tahun 1954
+      tentang: Mengubah "Indonesische Comptabiliteitswet" (Staatsblad 1925 No. 448)
+        dan "Indonesische Bedrijvenwet" (Staatsblad 1927 No. 419)
+      url: https://peraturan.bpk.go.id/Details/52932/uudrt-no-3-tahun-1954
+      note: null
+uji_materi: null

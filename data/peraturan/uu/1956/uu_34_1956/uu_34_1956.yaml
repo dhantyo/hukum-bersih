@@ -12,12 +12,12 @@ tentang: PENETAPAN ï¿½UNDANG-UNDANG DARURAT NO.15 TAHUN 1955 TENANG MEMBERHEN
   CUKAI BENSIN (LEMBARAN-NEGARA TAHUN 1955 NO. 51)ï¿½ SEBAGAI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1956-12-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-34-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu34-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51180/uu-no-34-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40432/UU%20Nomor%2034%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,6 +25,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_34_1956_1956-12-31
+  kind: asli
+  source: official
+  date: '1956-12-31'
+  date_basis: tanggal_penetapan
+  text: uu_34_1956_1956-12-31.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d028e942133b475b99beaa01bdbca0ca25ed495116f23bca063704a656af0683
 pdf_sha256: 5a510aa43321e4f64d167fcb11c6ecff0f383b9a1d88b7d2a0c68b18c5a651d1
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-12-31'
+tanggal_berlaku: '1955-09-01'
+lembaran_negara: 'LN.1956/NO.79, LL SETNEG : 2 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-34-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu34-1956.pdf
+bpk:
+  id: 51180
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40432/UU%20Nomor%2034%20Tahun%201956.pdf
+    bpk_file_id: 40432
+    filename: UU Nomor 34 Tahun 1956.pdf
+    sha256: d028e942133b475b99beaa01bdbca0ca25ed495116f23bca063704a656af0683
+    bytes: 59263
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

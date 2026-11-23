@@ -10,15 +10,13 @@ tentang: PENETAPAN "UNDANG-UNDANG DARURAT REPUBLIK INDONESIA SERIKAT NO.20 TAHUN
   (LEMBARAN-NEGARA NO.31 TAHUN 1950)TENTANG PEMERINTAHAN JAKARTA RAYA" SEBAGAI UNDANG-UNDANG
   *)
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Peraturan Pemerintah Pengganti Undang-Undang
-  Nomor 51 Tahun 1960 Tentang Larangan Pemakaian Tanah Tanpa Izin yang Berhak atau
-  Kuasanya'
-tanggal_penetapan: null
+status: berlaku
+tanggal_penetapan: '1956-02-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu1-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51075/uu-no-1-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40326/UU%20Nomor%201%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,6 +24,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_1_1956_1956-02-07
+  kind: asli
+  source: official
+  date: '1956-02-07'
+  date_basis: tanggal_penetapan
+  text: uu_1_1956_1956-02-07.txt
+  pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 822d1394f3217c069a420dd4f4ac6b80066f148717a7f55fb78f844c000b933b
 pdf_sha256: 0a986f0765dfe105c90e2c1dfc7394082ace4fdbb8e8a3b13f662a1fba669b6a
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-02-10'
+tanggal_berlaku: '1956-02-10'
+lembaran_negara: 'LN.1956/NO.2, TLN NO.941, LL SETNEG : 3 HLM.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu1-1956.pdf
+bpk:
+  id: 51075
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40326/UU%20Nomor%201%20Tahun%201956.pdf
+    bpk_file_id: 40326
+    filename: UU Nomor 1 Tahun 1956.pdf
+    sha256: 822d1394f3217c069a420dd4f4ac6b80066f148717a7f55fb78f844c000b933b
+    bytes: 41379
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: null
+      citation: UUDrt No. 20 Tahun 1950
+      tentang: Pemerintahan Jakarta Raya
+      url: https://peraturan.bpk.go.id/Details/51785/uudrt-no-20-tahun-1950
+      note: null
+uji_materi: null

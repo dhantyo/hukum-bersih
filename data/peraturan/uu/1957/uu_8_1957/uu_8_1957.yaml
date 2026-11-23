@@ -9,12 +9,12 @@ tentang: MENGUBAH DAN MENAMBAH UNDANG-UNDANG PENEMPATAN BAGIAN IVA DARI ANGGARAN
   INDONESIA UNTUK TAHUN DINAS 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-03-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu8-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52408/uu-no-8-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41743/UU%20Nomor%208%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,47 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_8_1957_1957
+- id: uu_8_1957_1957-03-25
   kind: asli
   source: official
-  date: null
+  date: '1957-03-25'
   date_basis: tanggal_penetapan
-  text: uu_8_1957_1957.txt
+  text: uu_8_1957_1957-03-25.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d54eb445ac4c61d1fb162f0ee6843352336217ae1e1d42e47597c260a25efeae
 pdf_sha256: f9b4ce1532bc2b534219ed833333ee135cdafebad3ee42325509c97a54615239
+tanggal_pengundangan: '1957-04-08'
+tanggal_berlaku: '1953-01-01'
+lembaran_negara: 'LN. 1957 No. 28, LL SETNEG : 5 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu8-1957.pdf
+bpk:
+  id: 52408
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41743/UU%20Nomor%208%20Tahun%201957.pdf
+    bpk_file_id: 41743
+    filename: UU Nomor 8 Tahun 1957.pdf
+    sha256: d54eb445ac4c61d1fb162f0ee6843352336217ae1e1d42e47597c260a25efeae
+    bytes: 31887
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/41744/UU%20Nomor%208%20Tahun%201957_LAMPIRAN.pdf
+    bpk_file_id: 41744
+    filename: UU Nomor 8 Tahun 1957_LAMPIRAN.pdf
+    sha256: 9370636efaaa5ac40d4220139fd8c55fdfd41b23dc194b622448685cdc6297d9
+    bytes: 31292
+    archive_url: null
+  status_peraturan:
+    Mengubah sebagian:
+    - id: uu_42_1954
+      citation: UU No. 42 Tahun 1954
+      tentang: Penetapan Bagian IVa (Urusan Penyelenggaraan Keuangan dan Perhitungan-Perhitungannya
+        Mengenai Perusahaan-Perusahaan dan Jawantan-Jawatan (Pemerintah), yang Mempunyai
+        Pengurus Sendiri) dari Anggaran Republik Indonesia Untuk Tahun-Tahun Dinas
+        1952 dan 1953
+      url: https://peraturan.bpk.go.id/Details/50530/uu-no-42-tahun-1954
+      note: null
+uji_materi: null

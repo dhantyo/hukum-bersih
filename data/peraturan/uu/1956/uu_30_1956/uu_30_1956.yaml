@@ -11,12 +11,12 @@ tentang: PENGUBAHAN DAN TAMBAHAN ï¿½POSTORDONNANTIE 1935ï¿½ SEBAGAIMANA TE
   NO.151)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1956-12-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-30-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu30-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51168/uu-no-30-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40420/UU%20Nomor%2030%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,6 +24,41 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_30_1956_1956-12-26
+  kind: asli
+  source: official
+  date: '1956-12-26'
+  date_basis: tanggal_penetapan
+  text: uu_30_1956_1956-12-26.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1f0822f8b99748a06563a5ada1ce5efbb3da0e0d8a66c208fa4060da27ac496a
 pdf_sha256: 3dfdec0aa41e50e56e2a0c6f46c6ff333f203871429f3b7b1501cd459d6b3fa7
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-12-31'
+tanggal_berlaku: '1956-12-31'
+lembaran_negara: 'LN.1956/NO.75, TLN NO.1132, LL SETNEG : 2 HLM.'
+subjek: PERS, POS, DAN PERIKLANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-30-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu30-1956.pdf
+bpk:
+  id: 51168
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40420/UU%20Nomor%2030%20Tahun%201956.pdf
+    bpk_file_id: 40420
+    filename: UU Nomor 30 Tahun 1956.pdf
+    sha256: 1f0822f8b99748a06563a5ada1ce5efbb3da0e0d8a66c208fa4060da27ac496a
+    bytes: 80933
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_76_1954
+      citation: UU No. 76 Tahun 1954
+      tentang: Penetapan "Undang-Undang Darurat No. 5 Tahun 1953 Tentang Menaikkan
+        Jumlah Maksimum Porto dan Bea" (Lembaran-Negara No. 22 Tahun 1953) Sebagai
+        Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/50981/uu-no-76-tahun-1954
+      note: null
+uji_materi: null

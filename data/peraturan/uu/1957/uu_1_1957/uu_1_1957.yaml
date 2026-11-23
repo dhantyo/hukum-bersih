@@ -6,13 +6,13 @@ year: 1957
 title: Undang-Undang Nomor 1 Tahun 1957 tentang Pokok-Pokok Pemerintahan Daerah
 tentang: POKOK-POKOK PEMERINTAHAN DAERAH
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1957-01-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu1-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52381/uu-no-1-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41713/UU%20Nomor%201%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,51 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_1_1957_1957
+- id: uu_1_1957_1957-01-17
   kind: asli
   source: official
-  date: null
+  date: '1957-01-17'
   date_basis: tanggal_penetapan
-  text: uu_1_1957_1957.txt
+  text: uu_1_1957_1957-01-17.txt
   pasal_count: 76
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 934189753f023534d663f256ec7ad9b44a727c3dab8972ec7f8eba5fd1fa83ef
 pdf_sha256: 4ec0eeed000e216c08f9ea88f902da5e61148c798ca2eef4aed1afc2e02bac76
+tanggal_pengundangan: '1957-01-18'
+tanggal_berlaku: '1957-01-18'
+lembaran_negara: 'LN. 1957 No. 6, TLN No. 1143, LL SETNEG : 46 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu1-1957.pdf
+bpk:
+  id: 52381
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41713/UU%20Nomor%201%20Tahun%201957.pdf
+    bpk_file_id: 41713
+    filename: UU Nomor 1 Tahun 1957.pdf
+    sha256: 934189753f023534d663f256ec7ad9b44a727c3dab8972ec7f8eba5fd1fa83ef
+    bytes: 252718
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_18_1965
+      citation: UU No. 18 Tahun 1965
+      tentang: Pokok-Pokok Pemerintahan Daerah
+      url: https://peraturan.bpk.go.id/Details/50212/uu-no-18-tahun-1965
+      note: null
+    Diubah dengan:
+    - id: uu_73_1957
+      citation: UU No. 73 Tahun 1957
+      tentang: Perubahan Undang-Undang Tentang Pokok-Pokok Pemerintahan Daerah 1956
+      url: https://peraturan.bpk.go.id/Details/52752/uu-no-73-tahun-1957
+      note: null
+    Mencabut:
+    - id: uu_22_1948
+      citation: UU No. 22 Tahun 1948
+      tentang: Penetapan Aturan-Aturan Pokok Mengenai Pemerintahan Sendiri Didaerah-Daerah
+        yang Berhak Mengatur dan Mengurus Rumah Tangganya Sendiri
+      url: https://peraturan.bpk.go.id/Details/25801/uu-no-22-tahun-1948
+      note: null
+uji_materi: null

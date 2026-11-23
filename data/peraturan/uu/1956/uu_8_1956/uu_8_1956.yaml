@@ -8,26 +8,78 @@ title: Undang-Undang Nomor 8 Tahun 1956 tentang Pembentukan Daerah Otonom Kota-K
 tentang: PEMBENTUKAN DAERAH OTONOM KOTA-KECIL DALAM LINGKUNGAN DAERAH PROPINSI SUMATERA
   TENGAH *)
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 44 Tahun 2024 Tentang Kota
-  Pekanbaru di Provinsi Riau Undang-Undang Nomor 54 Tahun 2024 Tentang Kota Padang
-  Panjang di Provinsi Sumatera Barat Undang-Undang Nomor 56 Tahun 2024 Tentang Kota
-  Payakumbuh di Provinsi Sumatera Barat Undang-Undang Nomor 57 Tahun 2024 Tentang
-  Kota Sawahlunto di Provinsi Sumatera Barat Undang-Undang Nomor 58 Tahun 2024 Tentang
-  Kota Solok di Provinsi Sumatera Barat'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1956-03-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu8-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51091/uu-no-8-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40342/UU%20Nomor%208%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_44_2024
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_8_1956_1956-03-19
+  kind: asli
+  source: official
+  date: '1956-03-19'
+  date_basis: tanggal_penetapan
+  text: uu_8_1956_1956-03-19.txt
+  pasal_count: 18
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6eb999eea7359f789af0525d648e4bdb9190c342d9fa359c93f99bf701e89308
 pdf_sha256: 6707cc9a6797a013be82fb7feeb4cafa4a5cd92afd8bbec1893cb2e616b2c519
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-03-23'
+tanggal_berlaku: '1956-03-23'
+lembaran_negara: 'LN.1956/NO.19, LL SETNEG : 6 HLM.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu8-1956.pdf
+bpk:
+  id: 51091
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40342/UU%20Nomor%208%20Tahun%201956.pdf
+    bpk_file_id: 40342
+    filename: UU Nomor 8 Tahun 1956.pdf
+    sha256: 6eb999eea7359f789af0525d648e4bdb9190c342d9fa359c93f99bf701e89308
+    bytes: 50721
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_56_2024
+      citation: UU No. 56 Tahun 2024
+      tentang: Kota Payakumbuh di Provinsi Sumatera Barat
+      url: https://peraturan.bpk.go.id/Details/295287/uu-no-56-tahun-2024
+      note: null
+    Dicabut sebagian dengan:
+    - id: uu_58_2024
+      citation: UU No. 58 Tahun 2024
+      tentang: Kota Solok di Provinsi Sumatera Barat
+      url: https://peraturan.bpk.go.id/Details/295289/uu-no-58-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kota Solok dalam UU Nomor 8 Tahun 1956,
+        dicabut dan dinyatakan tidak berlaku.
+    - id: uu_57_2024
+      citation: UU No. 57 Tahun 2024
+      tentang: Kota Sawahlunto di Provinsi Sumatera Barat
+      url: https://peraturan.bpk.go.id/Details/295288/uu-no-57-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kota Sawahlunto dalam UU Nomor 8 Tahun
+        1956, dicabut dan dinyatakan tidak berlaku.
+    - id: uu_54_2024
+      citation: UU No. 54 Tahun 2024
+      tentang: Kota Padang Panjang di Provinsi Sumatera Barat
+      url: https://peraturan.bpk.go.id/Details/295285/uu-no-54-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kota Padang Panjang dalam UU Nomor 8
+        Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+    - id: uu_44_2024
+      citation: UU No. 44 Tahun 2024
+      tentang: Kota Pekanbaru di Provinsi Riau
+      url: https://peraturan.bpk.go.id/Details/295266/uu-no-44-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kota Pekanbaru dalam UU Nomor 8 Tahun
+        1956, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

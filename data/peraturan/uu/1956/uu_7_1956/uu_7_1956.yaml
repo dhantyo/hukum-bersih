@@ -10,12 +10,12 @@ tentang: PERPANJANGAN JANGKA WAKTU MASA-KERJA DEWAN PERWAKILAN RAKYAT DAERAH YAN
   TERBENTUKBERDASARKAN PERATURAN PEMERINTAH NO. 39 TAHUN 1950 *)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1956-03-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu7-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51089/uu-no-7-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40340/UU%20Nomor%207%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,6 +23,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_7_1956_1956-03-19
+  kind: asli
+  source: official
+  date: '1956-03-19'
+  date_basis: tanggal_penetapan
+  text: uu_7_1956_1956-03-19.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 67f6d2740cda7ea71a2ac9cb1d5c56f937be03a94ebd08dfe77cd47a3eee0e5a
 pdf_sha256: 0d6777096e335ffa7d8b163aeb2869c1042547e9a3bb75137bc29772105af9d0
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-03-23'
+tanggal_berlaku: '1956-03-23'
+lembaran_negara: 'LN.1956/NO.18, TLN NO.973, LL SETNEG : 2 HLM.'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu7-1956.pdf
+bpk:
+  id: 51089
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40340/UU%20Nomor%207%20Tahun%201956.pdf
+    bpk_file_id: 40340
+    filename: UU Nomor 7 Tahun 1956.pdf
+    sha256: 67f6d2740cda7ea71a2ac9cb1d5c56f937be03a94ebd08dfe77cd47a3eee0e5a
+    bytes: 43447
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

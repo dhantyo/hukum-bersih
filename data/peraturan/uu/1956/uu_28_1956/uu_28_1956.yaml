@@ -12,8 +12,8 @@ tanggal_penetapan: '1956-12-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-28-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu28-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51163/uu-no-28-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40415/UU%20Nomor%2028%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,5 +28,34 @@ versions:
   date: '1956-12-31'
   date_basis: tanggal_penetapan
   text: uu_28_1956_1956-12-31.txt
-  pasal_count: 1
+  pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b8cdfd673c5425bea324f7e2833f2325dc49496e88d3c42cf1f967fac4f2e955
 pdf_sha256: 5196c6a910aaf849ff44a1f073d70d5412b248fec821f7b685050e1af89eeb67
+tanggal_pengundangan: '1956-12-31'
+tanggal_berlaku: '1956-12-31'
+lembaran_negara: 'LN.1956/NO.73, LL SETNEG : 6 HLM.'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG - KEHUTANAN DAN PERKEBUNAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-28-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu28-1956.pdf
+bpk:
+  id: 51163
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40415/UU%20Nomor%2028%20Tahun%201956.pdf
+    bpk_file_id: 40415
+    filename: UU Nomor 28 Tahun 1956.pdf
+    sha256: b8cdfd673c5425bea324f7e2833f2325dc49496e88d3c42cf1f967fac4f2e955
+    bytes: 88247
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_76_1957
+      citation: UU No. 76 Tahun 1957
+      tentang: Pengubahan Undang-Undang No. 24 Tahun 1954 dan Undang-Undang No. 28
+        Tahun 1956 Mengenai Penggantian Perkataan "Menteri Kehakiman" Dengan Perkataan
+        "Menteri Agraria"
+      url: https://peraturan.bpk.go.id/Details/52759/uu-no-76-tahun-1957
+      note: null
+uji_materi: null

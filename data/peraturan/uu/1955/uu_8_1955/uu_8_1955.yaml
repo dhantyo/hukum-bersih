@@ -13,22 +13,55 @@ tentang: PENETAPAN UNDANG-UNDANG DARURAT NO. 10 TAHUN 1951 TENTANG PENCABUTAN PE
   SERIKAT NO.5 TAHUN 1950 DAN DIUBAH DENGAN UNDANG-UNDANG DARURAT REPUBLIK INDONESIA
   SERIKAT NO. 27 TAHUN 1950, SEBAGAI UNDANG-UNDANG)
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 9 Tahun 1992 Tentang Keimigrasian'
-tanggal_penetapan: null
+status: berlaku
+tanggal_penetapan: '1955-04-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1955
-source_pdf_url: https://peraturan.go.id/files/uu8-1955.pdf
+source_url: https://peraturan.bpk.go.id/Details/51066/uu-no-8-tahun-1955
+source_pdf_url: https://peraturan.bpk.go.id/Download/40317/UU%20Nomor%208%20Tahun%201955.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_9_1992
+  revoked_by: []
   enacts:
   - uu-drt_10_1951
   enacted_by: []
-versions: []
+versions:
+- id: uu_8_1955_1955-04-24
+  kind: asli
+  source: official
+  date: '1955-04-24'
+  date_basis: tanggal_penetapan
+  text: uu_8_1955_1955-04-24.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 25475a73fba4f8dfaa119285f3264f1735aa4f6bb124e9b2d6a9377da1416552
 pdf_sha256: e4503c74deb3bae2b27a3da899772b9ac362efd9de910b8aadcd67ba89b3de26
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1955-06-15'
+tanggal_berlaku: '1955-06-15'
+lembaran_negara: 'LL SETNEG : 2 HLM.'
+subjek: HONORARIUM, GAJI, PENGHASILAN, UANG KEHORMATAN, TUNJANGAN, PENGHARGAAN, HAK
+  LAINNYA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1955
+  source_pdf_url: https://peraturan.go.id/files/uu8-1955.pdf
+bpk:
+  id: 51066
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40317/UU%20Nomor%208%20Tahun%201955.pdf
+    bpk_file_id: 40317
+    filename: UU Nomor 8 Tahun 1955.pdf
+    sha256: 25475a73fba4f8dfaa119285f3264f1735aa4f6bb124e9b2d6a9377da1416552
+    bytes: 59915
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: null
+      citation: UUDrt No. 10 Tahun 1951
+      tentang: Pencabutan Kembali Gaji Militer Tahun 1950
+      url: https://peraturan.bpk.go.id/Details/51952/uudrt-no-10-tahun-1951
+      note: null
+uji_materi: null

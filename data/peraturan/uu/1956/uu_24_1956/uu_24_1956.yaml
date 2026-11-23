@@ -9,12 +9,12 @@ tentang: PEMBENTUKAN DAERAH OTONOM PROPINSI ACEH DAN PERUBAHAN PERATURAN PEMBENT
   PROPINSI SUMATERA UTARA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1956-11-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-24-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu24-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51153/uu-no-24-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40405/UU%20Nomor%2024%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,46 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_24_1956_1956-11-29
+  kind: asli
+  source: official
+  date: '1956-11-29'
+  date_basis: tanggal_penetapan
+  text: uu_24_1956_1956-11-29.txt
+  pasal_count: 23
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 34a98a90a1dcd5408d3bf1a88f77f345414e0bf1dba6777e09a2abd9e91ca0c4
 pdf_sha256: a2ed73df505eeed45ebc5a57636bebbe840ee048c1641f075668112d89b672f0
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-12-07'
+tanggal_berlaku: '1956-12-07'
+lembaran_negara: 'LN.1956/NO.64, TLN NO.1103, LL SETNEG : 15 HLM.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-24-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu24-1956.pdf
+bpk:
+  id: 51153
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40405/UU%20Nomor%2024%20Tahun%201956.pdf
+    bpk_file_id: 40405
+    filename: UU Nomor 24 Tahun 1956.pdf
+    sha256: 34a98a90a1dcd5408d3bf1a88f77f345414e0bf1dba6777e09a2abd9e91ca0c4
+    bytes: 185630
+    archive_url: null
+  status_peraturan:
+    Dicabut sebagian dengan:
+    - id: uu_8_2023
+      citation: UU No. 8 Tahun 2023
+      tentang: Provinsi Sumatera Utara
+      url: https://peraturan.bpk.go.id/Details/249318/uu-no-8-tahun-2023-provinsi-sumatera-utara
+      note: Ketentuan mengenai perubahan peraturan pembentukan Propinsi Sumatera Utara
+        dalam Undang-Undang Nomor 24 Tahun 1956
+    Diubah dengan:
+    - id: uu_4_1974
+      citation: UU No. 4 Tahun 1974
+      tentang: Pembentukan Kabupaten Aceh Tenggara
+      url: https://peraturan.bpk.go.id/Details/47412/uu-no-4-tahun-1974
+      note: null
+uji_materi: null

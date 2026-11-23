@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 14 Tahun 1956 tentang Pembentukan Dewan Perwakilan Ra
 tentang: PEMBENTUKAN DEWAN PERWAKILAN RAKYAT DAERAH DAN DEWAN PEMERINTAH DAERAH PERALIHAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1956-07-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu14-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51097/uu-no-14-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40348/UU%20Nomor%2014%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,48 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_14_1956_1956-07-16
+  kind: asli
+  source: official
+  date: '1956-07-16'
+  date_basis: tanggal_penetapan
+  text: uu_14_1956_1956-07-16.txt
+  pasal_count: 11
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 52e31c33722d6fdc1e6e40debcc69a825433fbb90074bc31c7981af806eb9b48
 pdf_sha256: 66ffbb460860e5ab738938178f28b0439e8296e15f8c4221ca12d3e7d15124f5
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-07-17'
+tanggal_berlaku: '1956-07-01'
+lembaran_negara: 'LN.1956/NO.30, TLN NO.1017, LL SETNEG : 6 HLM.'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu14-1956.pdf
+bpk:
+  id: 51097
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40348/UU%20Nomor%2014%20Tahun%201956.pdf
+    bpk_file_id: 40348
+    filename: UU Nomor 14 Tahun 1956.pdf
+    sha256: 52e31c33722d6fdc1e6e40debcc69a825433fbb90074bc31c7981af806eb9b48
+    bytes: 40242
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: null
+      citation: UUDrt No. 9 Tahun 1957
+      tentang: Perpanjangan Jangka Waktu Masa Kerja Dewan Perwakilan Rakyat Daerah
+        Peralihan Dan Dewan Pemerintah Daerah Peralihan
+      url: https://peraturan.bpk.go.id/Details/51854/uudrt-no-9-tahun-1957
+      note: null
+    - id: null
+      citation: UUDrt No. 1 Tahun 1957
+      tentang: Pengubahan Jumlah Maksimum Anggota Dewan Pemerintah Daerah Peralihan
+        Yang Dimaksud Dalam Pasal 5 Undang-Undang Nomor 14 Tahun 1956 (Lembaran-Negara
+        Nomor 30 Tahun 1956) tentang Pembentukan Dewan Perwakilan Rakyat Daerah Dan
+        Dewan Pemerintah Daerah Peralihan
+      url: https://peraturan.bpk.go.id/Details/51824/uudrt-no-1-tahun-1957
+      note: null
+uji_materi: null

@@ -8,13 +8,13 @@ title: Undang-Undang Nomor 32 Tahun 1956 tentang Perimbangan Keuangan Antara Neg
 tentang: PERIMBANGAN KEUANGAN ANTARA NEGARA DENGAN DAERAH-DAERAH, YANG BERHAK MENGURUS
   RUMAH-TANGGANYA SENDIRI
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1956-12-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-32-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu32-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51174/uu-no-32-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40426/UU%20Nomor%2032%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,44 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_32_1956_1956-12-31
+  kind: asli
+  source: official
+  date: '1956-12-31'
+  date_basis: tanggal_penetapan
+  text: uu_32_1956_1956-12-31.txt
+  pasal_count: 13
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 556830af0c69748328e2f276f6b162a9d0de9d7f42efaafd5c12dc818fff1b2d
 pdf_sha256: d177cc5459571bdd52a643ae8119658e46deeec3bcb351a8cf80d5b6657d4a3d
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-12-31'
+tanggal_berlaku: '1957-01-01'
+lembaran_negara: 'LN.1956/NO.77, LL SETNEG : 7 HLM.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-32-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu32-1956.pdf
+bpk:
+  id: 51174
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40426/UU%20Nomor%2032%20Tahun%201956.pdf
+    bpk_file_id: 40426
+    filename: UU Nomor 32 Tahun 1956.pdf
+    sha256: 556830af0c69748328e2f276f6b162a9d0de9d7f42efaafd5c12dc818fff1b2d
+    bytes: 90900
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_25_1999
+      citation: UU No. 25 Tahun 1999
+      tentang: Perimbangan Keuangan antara Pemerintah Pusat dan Daerah
+      url: https://peraturan.bpk.go.id/Details/45337/uu-no-25-tahun-1999
+      note: null
+    - id: uu_18_1997
+      citation: UU No. 18 Tahun 1997
+      tentang: Pajak Daerah dan Retribusi Daerah
+      url: https://peraturan.bpk.go.id/Details/45950/uu-no-18-tahun-1997
+      note: Mencabut Pasal 3 ayat (1) huruf e, huruf f, huruf g, dan huruf h
+uji_materi: null

@@ -9,12 +9,12 @@ tentang: MENGUBAH DAN MENAMBAH UNDANG-UNDANG PENEMPATAN BAGIAN II DARI ANGGARAN 
   INDONESIA UNTUK TAHUN DINAS 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-03-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu5-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52400/uu-no-5-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41734/UU%20Nomor%205%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_5_1957_1957
+- id: uu_5_1957_1957-03-25
   kind: asli
   source: official
-  date: null
+  date: '1957-03-25'
   date_basis: tanggal_penetapan
-  text: uu_5_1957_1957.txt
+  text: uu_5_1957_1957-03-25.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8f631c39836799721b7cc5cdda44660bc71495b62a324d1a56bce549234159b3
 pdf_sha256: 1a1432c24ebe9bdb19486c1e6461b1532fbb4a36f020f1e0562cb8370708317d
+tanggal_pengundangan: '1957-04-08'
+tanggal_berlaku: '1953-01-01'
+lembaran_negara: 'LN. 1957 No. 25, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu5-1957.pdf
+bpk:
+  id: 52400
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41734/UU%20Nomor%205%20Tahun%201957.pdf
+    bpk_file_id: 41734
+    filename: UU Nomor 5 Tahun 1957.pdf
+    sha256: 8f631c39836799721b7cc5cdda44660bc71495b62a324d1a56bce549234159b3
+    bytes: 26741
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_39_1954
+      citation: UU No. 39 Tahun 1954
+      tentang: Penetapan Bagian II (Kementrian Luar Negeri) dari Anggaran Republik
+        Indonesia Untuk Tahun-Tahun Dinas 1952 dan 1953
+      url: https://peraturan.bpk.go.id/Details/50522/uu-no-39-tahun-1954
+      note: null
+uji_materi: null

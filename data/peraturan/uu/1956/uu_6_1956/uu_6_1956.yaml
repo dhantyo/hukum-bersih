@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 6 Tahun 1956 tentang Pembentukan Majelis Ilmu Pengeta
   Indonesia *)
 tentang: PEMBENTUKAN MAJELIS ILMU PENGETAHUAN INDONESIA *)
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1956-03-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu6-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51088/uu-no-6-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40339/UU%20Nomor%206%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_6_1956_1956-03-08
+  kind: asli
+  source: official
+  date: '1956-03-08'
+  date_basis: tanggal_penetapan
+  text: uu_6_1956_1956-03-08.txt
+  pasal_count: 22
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1310a7421e9af43e18f90a49f68d44d5292ccca2f927d807dd329eb9860b712e
 pdf_sha256: 294a4cba92a3f5670aa445013bdc17aeb3b7a10dcdb4dd8ba44c8191eb509840
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-03-19'
+tanggal_berlaku: '1956-03-19'
+lembaran_negara: 'LN.1956/NO.14, TLN NO.971, LL SETNEG : 7 HLM.'
+subjek: ILMU PENGETAHUAN DAN TEKNOLOGI - PENDIDIKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu6-1956.pdf
+bpk:
+  id: 51088
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40339/UU%20Nomor%206%20Tahun%201956.pdf
+    bpk_file_id: 40339
+    filename: UU Nomor 6 Tahun 1956.pdf
+    sha256: 1310a7421e9af43e18f90a49f68d44d5292ccca2f927d807dd329eb9860b712e
+    bytes: 68106
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_8_1990
+      citation: UU No. 8 Tahun 1990
+      tentang: Akademi Ilmu Pengetahuan Indonesia
+      url: https://peraturan.bpk.go.id/Details/46713/uu-no-8-tahun-1990
+      note: null
+uji_materi: null

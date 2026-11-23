@@ -13,12 +13,12 @@ tentang: PENETAPAN ï¿½UNDANG-UNDANG DARURAT NO. 4 TAHUN 1955 (LEMBARAN-NEGARA
   UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1956-09-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: MOHAMMAD HATTA
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu21-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51145/uu-no-21-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40397/UU%20Nomor%2021%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -27,11 +27,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_21_1956_1956
+- id: uu_21_1956_1956-09-01
   kind: asli
   source: official
-  date: null
+  date: '1956-09-01'
   date_basis: tanggal_penetapan
-  text: uu_21_1956_1956.txt
+  text: uu_21_1956_1956-09-01.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f489d0b08b786283ff254510995a870e9436ba33e7cc81117491c01fc319e968
 pdf_sha256: c15524e41e17a458340fcf5dd9eedea374269b99e0d1c41dc5f5c8d9c1c9b174
+tanggal_pengundangan: '1956-10-15'
+tanggal_berlaku: '1956-10-15'
+lembaran_negara: 'LN.1956/NO.53, TLN NO.1140, LL SETNEG : 7 HLM.'
+subjek: PENGELOLAAN KEUANGAN NEGARA / DAERAH - PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu21-1956.pdf
+bpk:
+  id: 51145
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40397/UU%20Nomor%2021%20Tahun%201956.pdf
+    bpk_file_id: 40397
+    filename: UU Nomor 21 Tahun 1956.pdf
+    sha256: f489d0b08b786283ff254510995a870e9436ba33e7cc81117491c01fc319e968
+    bytes: 106128
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

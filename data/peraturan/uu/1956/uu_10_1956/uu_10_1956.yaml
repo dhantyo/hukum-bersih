@@ -17,12 +17,12 @@ tentang: PENETAPAN "UNDANG-UNDANG DARURAT NO. 7 TAHUN 1954 TENTANG DASAR HUKUM K
   *)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1956-03-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu10-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51093/uu-no-10-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40344/UU%20Nomor%2010%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,6 +31,41 @@ relationships:
   enacts:
   - uu-drt_7_1954
   enacted_by: []
-versions: []
+versions:
+- id: uu_10_1956_1956-03-19
+  kind: asli
+  source: official
+  date: '1956-03-19'
+  date_basis: tanggal_penetapan
+  text: uu_10_1956_1956-03-19.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 20ab3af8c318bad906768a00e3eaf5af280eb9f87c9d7828ce028ed16e833d53
 pdf_sha256: 339c4a039a8f6c27ea12242aa2ee00252d7893838820632b1bdac854b58ef329
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-03-26'
+tanggal_berlaku: '1956-03-26'
+lembaran_negara: 'LN.1956/NO.22, TLN NO.974, LL SETNEG : 3 HLM.'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu10-1956.pdf
+bpk:
+  id: 51093
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40344/UU%20Nomor%2010%20Tahun%201956.pdf
+    bpk_file_id: 40344
+    filename: UU Nomor 10 Tahun 1956.pdf
+    sha256: 20ab3af8c318bad906768a00e3eaf5af280eb9f87c9d7828ce028ed16e833d53
+    bytes: 42984
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: null
+      citation: UUDrt No. 7 Tahun 1954
+      tentang: Dasar Hukum Keputusan Kepala Daerah Otonom dalam Keadaan Dewan Perwakilan
+        Rakyat Daerah/Dewan Pemerintah Daerah Tidak Ada atau Tidak Dapat Menjalankan
+        Tugas Kewajibannya
+      url: https://peraturan.bpk.go.id/Details/52938/uudrt-no-7-tahun-1954
+      note: null
+uji_materi: null

@@ -12,12 +12,12 @@ tentang: PEMBERIAN KUASA KEPADA MENTERI KEUANGAN UNTUK MENGAMBIL UANG-MUKA PADA 
   POKOK BANK INDONESIA 1953 (UNDANG-UNDANG NO. 11 TAHUN 1953)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1955-07-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1955
-source_pdf_url: https://peraturan.go.id/files/uu11-1955.pdf
+source_url: https://peraturan.bpk.go.id/Details/51072/uu-no-11-tahun-1955
+source_pdf_url: https://peraturan.bpk.go.id/Download/40323/UU%20Nomor%2011%20Tahun%201955.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,6 +25,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_11_1955_1955-07-16
+  kind: asli
+  source: official
+  date: '1955-07-16'
+  date_basis: tanggal_penetapan
+  text: uu_11_1955_1955-07-16.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 282e8fb1d460df2715316cf402049b62d31b857fc0ffa85835afafe576bb16d8
 pdf_sha256: 793109afc81e07d1c94e02a86442c2bb198a006489d36c900f6343b790c65466
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1955-08-01'
+tanggal_berlaku: '1955-08-01'
+lembaran_negara: 'LL SETNEG : 2 HLM.'
+subjek: PENGELOLAAN KEUANGAN NEGARA / DAERAH - PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1955
+  source_pdf_url: https://peraturan.go.id/files/uu11-1955.pdf
+bpk:
+  id: 51072
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40323/UU%20Nomor%2011%20Tahun%201955.pdf
+    bpk_file_id: 40323
+    filename: UU Nomor 11 Tahun 1955.pdf
+    sha256: 282e8fb1d460df2715316cf402049b62d31b857fc0ffa85835afafe576bb16d8
+    bytes: 46257
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

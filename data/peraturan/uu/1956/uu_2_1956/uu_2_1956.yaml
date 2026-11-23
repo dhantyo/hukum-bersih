@@ -9,12 +9,12 @@ tentang: PENGUBAHAN UNDANG-UNDANG PEMILIHAN UMUM (UNDANG-UNDANG NO. 7 TAHUN 1953
   LEMBARAN-NEGARA NO. 29 TAHUN 1953) *)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1956-02-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu2-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51076/uu-no-2-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40327/UU%20Nomor%202%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_2_1956_1956-02-20
+  kind: asli
+  source: official
+  date: '1956-02-20'
+  date_basis: tanggal_penetapan
+  text: uu_2_1956_1956-02-20.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 224a7a66c54e459c2289d36a30a41cef836a8416b2bcd034e8f9ffa5ac5a2869
 pdf_sha256: 761a531687a973dcb8237c81a6f7f286e882fac396a712b33b59b5ae2f93c329
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-02-22'
+tanggal_berlaku: '1956-02-22'
+lembaran_negara: 'LN.1956/NO.4, TLN NO.951, LL SETNEG : 3 HLM.'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu2-1956.pdf
+bpk:
+  id: 51076
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40327/UU%20Nomor%202%20Tahun%201956.pdf
+    bpk_file_id: 40327
+    filename: UU Nomor 2 Tahun 1956.pdf
+    sha256: 224a7a66c54e459c2289d36a30a41cef836a8416b2bcd034e8f9ffa5ac5a2869
+    bytes: 49191
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_7_1953
+      citation: UU No. 7 Tahun 1953
+      tentang: Pemilihan Anggota Konstituante dan Anggota Dewan Perwakilan Rakyat
+      url: https://peraturan.bpk.go.id/Details/45275/uu-no-7-tahun-1953
+      note: null
+uji_materi: null

@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 27 Tahun 1956 tentang Mengadakan Suatu Tarip Minimum 
 tentang: MENGADAKAN SUATU TARIP MINIMUM DAN MAKSIMUM DALAM TARIP BEA-MASUK
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1956-12-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-27-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu27-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51161/uu-no-27-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40413/UU%20Nomor%2027%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_27_1956_1956-12-26
+  kind: asli
+  source: official
+  date: '1956-12-26'
+  date_basis: tanggal_penetapan
+  text: uu_27_1956_1956-12-26.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3550c09fee8e29a4611eb0fc0ef575449cd73400b4d2c9a369ffde04040944b7
 pdf_sha256: 180cef2f6e5675356f06f892204f3e2a736158faecb04ad0f6fb33843e6660a5
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-12-31'
+tanggal_berlaku: '1956-12-31'
+lembaran_negara: 'LN.1956/NO.70, TLN NO.1121, LL SETNEG : 3 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-27-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu27-1956.pdf
+bpk:
+  id: 51161
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40413/UU%20Nomor%2027%20Tahun%201956.pdf
+    bpk_file_id: 40413
+    filename: UU Nomor 27 Tahun 1956.pdf
+    sha256: 3550c09fee8e29a4611eb0fc0ef575449cd73400b4d2c9a369ffde04040944b7
+    bytes: 93972
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

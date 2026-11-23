@@ -10,12 +10,12 @@ tentang: PENGUBAHAN REDAKSI BAGIAN I BAB A DAN BAGIAN II BAB A DARI POS 173 DARI
   BEA MASUK DAN KENAIKAN JUMLAH BEA DALAM BAGIAN POS YANG TERSEBUT TERAKHIR
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1956-12-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-35-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu35-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51182/uu-no-35-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40434/UU%20Nomor%2035%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,6 +23,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_35_1956_1956-12-31
+  kind: asli
+  source: official
+  date: '1956-12-31'
+  date_basis: tanggal_penetapan
+  text: uu_35_1956_1956-12-31.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 254d52ed0f93559e4a15c19728ff1756ccc836a52d72614139b5191053b00f80
 pdf_sha256: 7e1846f9be3b28fdf6be571c31eb2c42d27db5e9c9393957baeec32da946c5fd
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-12-31'
+tanggal_berlaku: '1957-01-30'
+lembaran_negara: 'LN.1956/NO.80, TLN NO.1136, LL SETNEG : 2 HLM.'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-35-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu35-1956.pdf
+bpk:
+  id: 51182
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40434/UU%20Nomor%2035%20Tahun%201956.pdf
+    bpk_file_id: 40434
+    filename: UU Nomor 35 Tahun 1956.pdf
+    sha256: 254d52ed0f93559e4a15c19728ff1756ccc836a52d72614139b5191053b00f80
+    bytes: 83367
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

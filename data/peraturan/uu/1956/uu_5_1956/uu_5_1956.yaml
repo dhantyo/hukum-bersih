@@ -9,12 +9,12 @@ tentang: PENGESAHAN PERNYATAAN PEMERINTAH REPUBLIK INDONESIA PADA PERSETUJUAN TI
   INTERNASIONAL 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1956-02-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu5-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51084/uu-no-5-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40335/UU%20Nomor%205%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_5_1956_1956-02-20
+  kind: asli
+  source: official
+  date: '1956-02-20'
+  date_basis: tanggal_penetapan
+  text: uu_5_1956_1956-02-20.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 66cbb455985ca595477810f6ed3cd649bb730a8365013f311d6cb204cede5a04
 pdf_sha256: 6f7d87da1786918e1de06d5a781e1d617e96c297ed84b7223c711a969aa53ff6
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-03-19'
+tanggal_berlaku: '1956-03-19'
+lembaran_negara: 'LN.1956/NO.13, LL SETNEG : 2 HLM.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu5-1956.pdf
+bpk:
+  id: 51084
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40335/UU%20Nomor%205%20Tahun%201956.pdf
+    bpk_file_id: 40335
+    filename: UU Nomor 5 Tahun 1956.pdf
+    sha256: 66cbb455985ca595477810f6ed3cd649bb730a8365013f311d6cb204cede5a04
+    bytes: 33478
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

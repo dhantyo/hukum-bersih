@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 23 Tahun 1956 tentang Pengadilan Dan Acara Pidana Khu
 tentang: PENGADILAN DAN ACARA PIDANA KHUSUS UNTUK ANGGOTA KONSTITUANTE
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1956-11-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-23-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/UU231956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51152/uu-no-23-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40404/UU%20Nomor%2023%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_23_1956_1956-11-29
+  kind: asli
+  source: official
+  date: '1956-11-29'
+  date_basis: tanggal_penetapan
+  text: uu_23_1956_1956-11-29.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7731f053f50e5dd31423944b913bd3149cf94cd76a76a1fb290280470550650c
 pdf_sha256: 89ae7c1e014cf02bcb97bf259e185d852e1ae4a9031433ca1687e0d92f5c2640
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-12-07'
+tanggal_berlaku: '1956-11-10'
+lembaran_negara: 'LN.1956/NO.63, TLN NO.1102, LL SETNEG : 2 HLM.'
+subjek: HUKUM ACARA DAN PERADILAN - PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-23-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/UU231956.pdf
+bpk:
+  id: 51152
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40404/UU%20Nomor%2023%20Tahun%201956.pdf
+    bpk_file_id: 40404
+    filename: UU Nomor 23 Tahun 1956.pdf
+    sha256: 7731f053f50e5dd31423944b913bd3149cf94cd76a76a1fb290280470550650c
+    bytes: 80076
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

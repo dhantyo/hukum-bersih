@@ -8,27 +8,13 @@ title: Undang-Undang Nomor 12 Tahun 1956 tentang Pembentukan Daerah Otonom Kabup
 tentang: PEMBENTUKAN DAERAH OTONOM KABUPATEN DALAM LINGKUNGAN DAERAH PROPINSI SUMATERA
   TENGAH
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 33 Tahun 2024 Tentang Kabupaten
-  Bintan di Provinsi Kepulauan Riau Undang-Undang Nomor 37 Tahun 2024 Tentang Kabupaten
-  Batanghari di Provinsi Jambi Undang-Undang Nomor 39 Tahun 2024 Tentang Kabupaten
-  Merangin di Provinsi Jambi Undang-Undang Nomor 41 Tahun 2024 Tentang Kabupaten Bengkalis
-  di Provinsi Riau Undang-Undang Nomor 42 Tahun 2024 Tentang Kabupaten Indragiri Hulu
-  di Provinsi Riau Undang-Undang Nomor 43 Tahun 2024 Tentang Kabupaten Kampar di Provinsi
-  Riau Undang-Undang Nomor 45 Tahun 2024 Tentang Kabupaten Lima Puluh Kota di Provinsi
-  Sumatera Barat Undang-Undang Nomor 46 Tahun 2024 Tentang Kabupaten Agam di Provinsi
-  Sumatera Barat Undang-Undang Nomor 47 Tahun 2024 Tentang Kabupaten Padang Pariaman
-  di Provinsi Sumatera Barat Undang-Undang Nomor 48 Tahun 2024 Tentang Kabupaten Pasaman
-  di Provinsi Sumatera Barat Undang-Undang Nomor 49 Tahun 2024 Tentang Kabupaten Pesisir
-  Selatan di Provinsi Sumatera Barat Undang-Undang Nomor 50 Tahun 2024 Tentang Kabupaten
-  Sijunjung di Provinsi Sumatera Barat Undang-Undang Nomor 51 Tahun 2024 Tentang Kabupaten
-  Solok di Provinsi Sumatera Barat Undang-Undang Nomor 52 Tahun 2024 Tentang Kabupaten
-  Tanah Datar di Provinsi Sumatera Barat'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1956-03-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu12-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51095/uu-no-12-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40346/UU%20Nomor%2012%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by:
@@ -36,10 +22,162 @@ relationships:
   - uu_7_1965
   - uu_8_1965
   revokes: []
-  revoked_by:
-  - uu_33_2024
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_12_1956_1956-03-19
+  kind: asli
+  source: official
+  date: '1956-03-19'
+  date_basis: tanggal_penetapan
+  text: uu_12_1956_1956-03-19.txt
+  pasal_count: 18
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7c9a4f37aaf2e95aff43b51e6ae42889a891b194d06192ee7cf8d6b058aeec3f
 pdf_sha256: f39c435c769ade07fad40c622d7b9a5a6cc1d6f27ddb431ca4a7656cab17dc91
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-03-29'
+tanggal_berlaku: '1956-03-29'
+lembaran_negara: 'LN.1956/NO.25, LL SETNEG : 16 HLM.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu12-1956.pdf
+bpk:
+  id: 51095
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40346/UU%20Nomor%2012%20Tahun%201956.pdf
+    bpk_file_id: 40346
+    filename: UU Nomor 12 Tahun 1956.pdf
+    sha256: 7c9a4f37aaf2e95aff43b51e6ae42889a891b194d06192ee7cf8d6b058aeec3f
+    bytes: 52134
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_42_2024
+      citation: UU No. 42 Tahun 2024
+      tentang: Kabupaten Indragiri Hulu di Provinsi Riau
+      url: https://peraturan.bpk.go.id/Details/295217/uu-no-42-tahun-2024
+      note: null
+    - id: uu_41_2024
+      citation: UU No. 41 Tahun 2024
+      tentang: Kabupaten Bengkalis di Provinsi Riau
+      url: https://peraturan.bpk.go.id/Details/295212/uu-no-41-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kabupaten Bengkalis dalam UU Nomor 12
+        Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+    - id: uu_37_2024
+      citation: UU No. 37 Tahun 2024
+      tentang: Kabupaten Batanghari di Provinsi Jambi
+      url: https://peraturan.bpk.go.id/Details/295177/uu-no-37-tahun-2024
+      note: null
+    Dicabut sebagian dengan:
+    - id: uu_52_2024
+      citation: UU No. 52 Tahun 2024
+      tentang: Kabupaten Tanah Datar di Provinsi Sumatera Barat
+      url: https://peraturan.bpk.go.id/Details/295283/uu-no-52-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kabupaten Tanah Datar dalam UU Nomor
+        12 Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+    - id: uu_51_2024
+      citation: UU No. 51 Tahun 2024
+      tentang: Kabupaten Solok di Provinsi Sumatera Barat
+      url: https://peraturan.bpk.go.id/Details/295282/uu-no-51-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kabupaten Solok dalam UU Nomor 12 Tahun
+        1956, dicabut dan dinyatakan tidak berlaku.
+    - id: uu_50_2024
+      citation: UU No. 50 Tahun 2024
+      tentang: Kabupaten Sijunjung di Provinsi Sumatera Barat
+      url: https://peraturan.bpk.go.id/Details/295280/uu-no-50-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kabupaten Sijunjung dalam UU Nomor 12
+        Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+    - id: uu_49_2024
+      citation: UU No. 49 Tahun 2024
+      tentang: Kabupaten Pesisir Selatan di Provinsi Sumatera Barat
+      url: https://peraturan.bpk.go.id/Details/295278/uu-no-49-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kabupaten Pesisir Selatan dalam UU Nomor
+        12 Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+    - id: uu_48_2024
+      citation: UU No. 48 Tahun 2024
+      tentang: Kabupaten Pasaman di Provinsi Sumatera Barat
+      url: https://peraturan.bpk.go.id/Details/295276/uu-no-48-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kabupaten Pasaman dalam UU Nomor 12 Tahun
+        1956, dicabut dan dinyatakan tidak berlaku.
+    - id: uu_47_2024
+      citation: UU No. 47 Tahun 2024
+      tentang: Kabupaten Padang Pariaman di Provinsi Sumatera Barat
+      url: https://peraturan.bpk.go.id/Details/295275/uu-no-47-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kabupaten Padang Pariaman dalam UU Nomor
+        12 Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+    - id: uu_46_2024
+      citation: UU No. 46 Tahun 2024
+      tentang: Kabupaten Agam di Provinsi Sumatera Barat
+      url: https://peraturan.bpk.go.id/Details/295273/uu-no-46-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kabupaten Agam dalam UU Nomor 12 Tahun
+        1956, dicabut dan dinyatakan tidak berlaku.
+    - id: uu_45_2024
+      citation: UU No. 45 Tahun 2024
+      tentang: Kabupaten Lima Puluh Kota di Provinsi Sumatera Barat
+      url: https://peraturan.bpk.go.id/Details/295268/uu-no-45-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kabupaten Lima Puluh Kota dalam UU Nomor
+        12 Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+    - id: uu_43_2024
+      citation: UU No. 43 Tahun 2024
+      tentang: Kabupaten Kampar di Provinsi Riau
+      url: https://peraturan.bpk.go.id/Details/295264/uu-no-43-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kabupaten Kampar dalam UU Nomor 12 Tahun
+        1956, dicabut dan dinyatakan tidak berlaku.
+    - id: uu_42_2024
+      citation: UU No. 42 Tahun 2024
+      tentang: Kabupaten Indragiri Hulu di Provinsi Riau
+      url: https://peraturan.bpk.go.id/Details/295217/uu-no-42-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kabupaten Indragiri Hulu dalam UU Nomor
+        12 Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+    - id: uu_39_2024
+      citation: UU No. 39 Tahun 2024
+      tentang: Kabupaten Merangin di Provinsi Jambi
+      url: https://peraturan.bpk.go.id/Details/295186/uu-no-39-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kabupaten Merangin dalam UU Nomor 12
+        Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+    - id: uu_33_2024
+      citation: UU No. 33 Tahun 2024
+      tentang: Kabupaten Bintan di Provinsi Kepulauan Riau
+      url: https://peraturan.bpk.go.id/Details/295142/uu-no-33-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kabupaten Bintan dalam Undang-undang
+        Nomor 12 Tahun 1956, dicabut dan dinyatakan tidak berlaku.
+    Diubah dengan:
+    - id: uu_7_1965
+      citation: UU No. 7 Tahun 1965
+      tentang: Pembentukan Daerah Tingkat II Sarolangun-Bangko Dan Daerah Tingkat
+        II Tanjung Jabung Dengan Mengubah Undang-Undang No. 12 tahun 1956 tentang
+        Pembentukan Daerah Otonom Kabupaten Di Propinsi Sumatera Tengah
+      url: https://peraturan.bpk.go.id/Details/49991/uu-no-7-tahun-1965
+      note: null
+    - id: uu_6_1965
+      citation: UU No. 6 Tahun 1965
+      tentang: Pembentukan Daerah Tingkat II Inderagiri Hilir Dengan Mengubah Undang-Undang
+        No. 12 Tahun 1956, Tentang Pembentukan Daerah Otonom Kabupaten Dalam Lingkungan
+        Propinsi Sumatera Tengah
+      url: https://peraturan.bpk.go.id/Details/49986/uu-no-6-tahun-1965
+      note: null
+    - id: uu_61_1958
+      citation: UU No. 61 Tahun 1958
+      tentang: Penetapan "Undang-Undang Darurat No. 19 Tahun 1957 Tentang Pembentukan
+        Daerah-Daerah Swantantra Tingkat I Sumatera Barat, Jambi dan Riau" (Lembaran-Negara
+        Tahun 1957 No. 75), Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/52323/uu-no-61-tahun-1958
+      note: null
+    - id: uu_58_1958
+      citation: UU No. 58 Tahun 1958
+      tentang: Penetapan "Undang-Undang Darurat No. 21 Tahun 1957 Tentang Pengubahan
+        Undang-Undang No. 12 Tahun 1956 Tentang Pembentukan Daerah Swatantra Tingkat
+        II Dalam Lingkungan Daerah Swatantra Tingkat I Sumatera Tengah" (Lembaran-Negara
+        Tahun 1957 No. 77) Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/52282/uu-no-58-tahun-1958
+      note: null
+    - id: null
+      citation: UUDrt No. 21 Tahun 1957
+      tentang: Perubahan Undang-Undang No. 12 Tahun 1956 tentang Pembentukan Daerah
+        Otonom Kabupaten Dalam Lingkungan Daerah Propinsi Sumatera Tengah
+      url: https://peraturan.bpk.go.id/Details/51907/uudrt-no-21-tahun-1957
+      note: null
+uji_materi: null

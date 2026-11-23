@@ -9,12 +9,12 @@ tentang: MENGUBAH DAN MENAMBAH UNDANG-UNDANG PENEMPATAN BAGIAN III DARI ANGGARAN
   INDONESIA UNTUK TAHUN DINAS 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-03-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu6-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52402/uu-no-6-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41736/UU%20Nomor%206%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_6_1957_1957
+- id: uu_6_1957_1957-03-25
   kind: asli
   source: official
-  date: null
+  date: '1957-03-25'
   date_basis: tanggal_penetapan
-  text: uu_6_1957_1957.txt
+  text: uu_6_1957_1957-03-25.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: eb66b381672bc235cf1ba62b6531ebc1799e5ea50e70ecefbf5f989005429227
 pdf_sha256: 2c0f51529cff820c3ab51289854ccc33fcdd87f21c08eb735bacd6e98cad50b9
+tanggal_pengundangan: '1957-04-08'
+tanggal_berlaku: '1953-01-01'
+lembaran_negara: 'LN. 1957 No. 26, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu6-1957.pdf
+bpk:
+  id: 52402
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41736/UU%20Nomor%206%20Tahun%201957.pdf
+    bpk_file_id: 41736
+    filename: UU Nomor 6 Tahun 1957.pdf
+    sha256: eb66b381672bc235cf1ba62b6531ebc1799e5ea50e70ecefbf5f989005429227
+    bytes: 26867
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_40_1954
+      citation: UU No. 40 Tahun 1954
+      tentang: Penetapan Bagian III (Kementrian Dalam Negeri) dari Anggaran Republik
+        Indonesia Untuk Tahun-Tahun Dinas 1952 dan 1953
+      url: https://peraturan.bpk.go.id/Details/50524/uu-no-40-tahun-1954
+      note: null
+uji_materi: null

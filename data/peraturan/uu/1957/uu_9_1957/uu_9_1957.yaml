@@ -9,12 +9,12 @@ tentang: MENGUBAH DAN MENAMBAH UNDANG-UNDANG PENEMPATAN BAGIAN VA DARI ANGGARAN 
   INDONESIA UNTUK TAHUN DINAS 1953
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-03-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu9-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52410/uu-no-9-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41746/UU%20Nomor%209%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,45 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_9_1957_1957
+- id: uu_9_1957_1957-03-25
   kind: asli
   source: official
-  date: null
+  date: '1957-03-25'
   date_basis: tanggal_penetapan
-  text: uu_9_1957_1957.txt
+  text: uu_9_1957_1957-03-25.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0123ffbe0fd72cf7da5cc257da4e9d3c41746f84eeb76f1bf1929f6e7ca88cf8
 pdf_sha256: bb23d70527636820e9c4ed6887d481ba66d30f3313d8bc98ed61ee44321733b0
+tanggal_pengundangan: '1957-04-08'
+tanggal_berlaku: '1953-01-01'
+lembaran_negara: 'LN. 1957 No. 29, LL SETNEG : 3 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu9-1957.pdf
+bpk:
+  id: 52410
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41746/UU%20Nomor%209%20Tahun%201957.pdf
+    bpk_file_id: 41746
+    filename: UU Nomor 9 Tahun 1957.pdf
+    sha256: 0123ffbe0fd72cf7da5cc257da4e9d3c41746f84eeb76f1bf1929f6e7ca88cf8
+    bytes: 27861
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/41747/UU%20NOmor%209%20Tahun%201957_LAMPIRAN.pdf
+    bpk_file_id: 41747
+    filename: UU NOmor 9 Tahun 1957_LAMPIRAN.pdf
+    sha256: 8fc360c99d11dfd120adc8234f3cc7477efa67bbe8f434846572388661432c11
+    bytes: 23476
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_43_1954
+      citation: UU No. 43 Tahun 1954
+      tentang: Penetapan Bagian Va (Kementrian Pertanian) dari Anggaran Republik Indonesia
+        Untuk Tahun-Tahun Dinas 1952 dan 1953
+      url: https://peraturan.bpk.go.id/Details/50532/uu-no-43-tahun-1954
+      note: null
+uji_materi: null

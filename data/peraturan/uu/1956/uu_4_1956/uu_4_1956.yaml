@@ -10,12 +10,12 @@ tentang: PENGUBAHAN "OVERSCHRIJVINGSTARIEF" YANG DILAMPIRKAN PADA ORDONANSI YANG
   BIAYA BALIK-NAMA BARANG-BARANG TETAP(STAATSBLAD 1949 NO. 282) *)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1956-02-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu1-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51079/uu-no-4-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40330/UU%20Nomor%204%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,6 +23,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_4_1956_1956-02-29
+  kind: asli
+  source: official
+  date: '1956-02-29'
+  date_basis: tanggal_penetapan
+  text: uu_4_1956_1956-02-29.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1f220d7bb38e979389164927411047cc3e21226a8eb629924e4b19149e84a963
 pdf_sha256: 0a986f0765dfe105c90e2c1dfc7394082ace4fdbb8e8a3b13f662a1fba669b6a
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-03-07'
+tanggal_berlaku: '1956-03-07'
+lembaran_negara: 'LN.1956/NO.12, TLN NO.963, LL SETNEG : 2 HLM.'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu1-1956.pdf
+bpk:
+  id: 51079
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40330/UU%20Nomor%204%20Tahun%201956.pdf
+    bpk_file_id: 40330
+    filename: UU Nomor 4 Tahun 1956.pdf
+    sha256: 1f220d7bb38e979389164927411047cc3e21226a8eb629924e4b19149e84a963
+    bytes: 37637
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

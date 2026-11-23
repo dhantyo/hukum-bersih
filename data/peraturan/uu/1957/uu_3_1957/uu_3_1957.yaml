@@ -12,12 +12,12 @@ tentang: PEMBERIAN KUASA KEPADA MENTERI KEUANGAN UNTUK MENGAMBIL UANG MUKA PADA 
   POKOK BANK INDONESIA 1963 (LEMBARAN-NEGARA TAHUN 1953 NO. 40)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1957-02-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1957
-source_pdf_url: https://peraturan.go.id/files/uu3-1957.pdf
+source_url: https://peraturan.bpk.go.id/Details/52388/uu-no-3-tahun-1957
+source_pdf_url: https://peraturan.bpk.go.id/Download/41722/UU%20Nomor%203%20Tahun%201957.pdf
 relationships:
   amends: []
   amended_by: []
@@ -26,11 +26,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_3_1957_1957
+- id: uu_3_1957_1957-02-06
   kind: asli
   source: official
-  date: null
+  date: '1957-02-06'
   date_basis: tanggal_penetapan
-  text: uu_3_1957_1957.txt
+  text: uu_3_1957_1957-02-06.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 49a9c0e39fc7b84103a98a0f79ff71556d0180162c1fb2f1a3714f17f8891563
 pdf_sha256: 49a9c0e39fc7b84103a98a0f79ff71556d0180162c1fb2f1a3714f17f8891563
+tanggal_pengundangan: '1957-02-19'
+tanggal_berlaku: '1956-01-01'
+lembaran_negara: 'LN. 1957 No. 16, TLN NO. 1167, LL SETNEG : 3 HLM'
+subjek: APBN - PENGELOLAAN KEUANGAN NEGARA / DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1957
+  source_pdf_url: https://peraturan.go.id/files/uu3-1957.pdf
+bpk:
+  id: 52388
+  files:
+  - url: https://peraturan.bpk.go.id/Download/41722/UU%20Nomor%203%20Tahun%201957.pdf
+    bpk_file_id: 41722
+    filename: UU Nomor 3 Tahun 1957.pdf
+    sha256: 49a9c0e39fc7b84103a98a0f79ff71556d0180162c1fb2f1a3714f17f8891563
+    bytes: 32781
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

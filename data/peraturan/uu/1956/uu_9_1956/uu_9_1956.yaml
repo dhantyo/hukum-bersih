@@ -8,24 +8,66 @@ title: Undang-Undang Nomor 9 Tahun 1956 tentang Pembentukan Daerah Otonom Kota-B
 tentang: PEMBENTUKAN DAERAH OTONOM KOTA-BESAR DALAM LINGKUNGAN DAERAH PROPISI SUMATERA
   TENGAH *)
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 40 Tahun 2024 Tentang Kota
-  Jambi di Provinsi Jambi Undang-Undang Nomor 53 Tahun 2024 Tentang Kota Bukittinggi
-  di Provinsi Sumatera Barat Undang-Undang Nomor 55 Tahun 2024 Tentang Kota Padang
-  di Provinsi Sumatera Barat'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1956-03-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu9-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51092/uu-no-9-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40343/UU%20Nomor%209%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_40_2024
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_9_1956_1956-03-19
+  kind: asli
+  source: official
+  date: '1956-03-19'
+  date_basis: tanggal_penetapan
+  text: uu_9_1956_1956-03-19.txt
+  pasal_count: 18
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 309208ea974b0570545939bfb1cdc4237b816330280e2aeabf7b9067ee5f19d8
 pdf_sha256: 8dcc40b04bd52e283d4a9263fe7a1832a3cd74f420132767494447d124b29829
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-03-23'
+tanggal_berlaku: '1956-03-23'
+lembaran_negara: 'LL SETNEG : 6 HLM.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu9-1956.pdf
+bpk:
+  id: 51092
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40343/UU%20Nomor%209%20Tahun%201956.pdf
+    bpk_file_id: 40343
+    filename: UU Nomor 9 Tahun 1956.pdf
+    sha256: 309208ea974b0570545939bfb1cdc4237b816330280e2aeabf7b9067ee5f19d8
+    bytes: 50589
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_40_2024
+      citation: UU No. 40 Tahun 2024
+      tentang: Kota Jambi di Provinsi Jambi
+      url: https://peraturan.bpk.go.id/Details/295197/uu-no-40-tahun-2024
+      note: null
+    Dicabut sebagian dengan:
+    - id: uu_55_2024
+      citation: UU No. 55 Tahun 2024
+      tentang: Kota Padang di Provinsi Sumatera Barat
+      url: https://peraturan.bpk.go.id/Details/295286/uu-no-55-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kota Padang dalam UU Nomor 9 Tahun 1956,
+        dicabut dan dinyatakan tidak berlaku.
+    - id: uu_53_2024
+      citation: UU No. 53 Tahun 2024
+      tentang: Kota Bukittinggi di Provinsi Sumatera Barat
+      url: https://peraturan.bpk.go.id/Details/295284/uu-no-53-tahun-2024
+      note: Ketentuan yang mengatur mengenai Kota Bukittinggi dalam UU Nomor 9 Tahun
+        1956, dicabut dan dinyatakan tidak berlaku.
+uji_materi: null

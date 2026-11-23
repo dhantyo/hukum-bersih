@@ -9,12 +9,12 @@ tentang: PEMBATALAN HUBUNGAN INDONESIA-NEDERLAND BERDASARKAN PERJANJIAN KONPEREN
   MEJA BUNDAR
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1956-05-03'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1956
-source_pdf_url: https://peraturan.go.id/files/uu13-1956.pdf
+source_url: https://peraturan.bpk.go.id/Details/51096/uu-no-13-tahun-1956
+source_pdf_url: https://peraturan.bpk.go.id/Download/40347/UU%20Nomor%2013%20Tahun%201956.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_13_1956_1956-05-03
+  kind: asli
+  source: official
+  date: '1956-05-03'
+  date_basis: tanggal_penetapan
+  text: uu_13_1956_1956-05-03.txt
+  pasal_count: 10
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b9e4a8ad9e4258051a2592f95a2434a5215ddb70e690f1e7b8986c9388dc762e
 pdf_sha256: b2af8c0ceb07ccede8916b1599dcc5d6df7a7d3f75c2a0da1d52558620c7830d
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1956-05-22'
+tanggal_berlaku: '1956-02-15'
+lembaran_negara: 'LN.1955/NO.27, LL SETNEG : 5 HLM.'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1956
+  source_pdf_url: https://peraturan.go.id/files/uu13-1956.pdf
+bpk:
+  id: 51096
+  files:
+  - url: https://peraturan.bpk.go.id/Download/40347/UU%20Nomor%2013%20Tahun%201956.pdf
+    bpk_file_id: 40347
+    filename: UU Nomor 13 Tahun 1956.pdf
+    sha256: b9e4a8ad9e4258051a2592f95a2434a5215ddb70e690f1e7b8986c9388dc762e
+    bytes: 32414
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
