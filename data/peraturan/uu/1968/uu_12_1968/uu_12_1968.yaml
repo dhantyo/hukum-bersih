@@ -9,12 +9,12 @@ tentang: PEMBENTUKAN PENGADILAN TINGGI DI MENADO DAN PERUBAHAN DAERAH HUKUM PENG
   TINGGI DI MAKASAR
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1968-11-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1968
-source_pdf_url: null
+source_url: https://peraturan.bpk.go.id/Details/49171/uu-no-12-tahun-1968
+source_pdf_url: https://peraturan.bpk.go.id/Download/38453/UU%20Nomor%2012%20Tahun%201968.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,4 +22,32 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_12_1968_1968-11-26
+  kind: asli
+  source: official
+  date: '1968-11-26'
+  date_basis: tanggal_penetapan
+  text: uu_12_1968_1968-11-26.txt
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9c572288fb4eb2c828d4ad1ea3969d5b1d6fac567b728a782b8a37b877cd841c
+tanggal_pengundangan: '1968-11-26'
+tanggal_berlaku: '1968-11-26'
+lembaran_negara: 'LN. 1968/ No. 62 , Hukum Online : 2 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1968
+  source_pdf_url: null
+bpk:
+  id: 49171
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38453/UU%20Nomor%2012%20Tahun%201968.pdf
+    bpk_file_id: 38453
+    filename: UU Nomor 12 Tahun 1968.pdf
+    sha256: 9c572288fb4eb2c828d4ad1ea3969d5b1d6fac567b728a782b8a37b877cd841c
+    bytes: 60652
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

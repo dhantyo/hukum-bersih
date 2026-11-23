@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 5 Tahun 1969 tentang Pernyataan Berbagai Penpres Dan 
 tentang: PERNYATAAN BERBAGAI PENPRES DAN PERPRES SEBAGAI UU
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1969-07-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1969
-source_pdf_url: https://peraturan.go.id/files/UU0051969.pdf
+source_url: https://peraturan.bpk.go.id/Details/49100/uu-no-5-tahun-1969
+source_pdf_url: https://peraturan.bpk.go.id/Download/38370/UU%20Nomor%205%20Tahun%201969.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_5_1969_1969-07-05
+  kind: asli
+  source: official
+  date: '1969-07-05'
+  date_basis: tanggal_penetapan
+  text: uu_5_1969_1969-07-05.txt
+  pasal_count: 6
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: acc3eb1a47697e7b4650ca7fc5a13a5ea78e5d22acfdb8a17acf03963dd41263
 pdf_sha256: acc3eb1a47697e7b4650ca7fc5a13a5ea78e5d22acfdb8a17acf03963dd41263
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1969-07-05'
+tanggal_berlaku: '1969-07-05'
+lembaran_negara: 'LN. 1969, LL SETNEG : 3 HLM'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1969
+  source_pdf_url: https://peraturan.go.id/files/UU0051969.pdf
+bpk:
+  id: 49100
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38370/UU%20Nomor%205%20Tahun%201969.pdf
+    bpk_file_id: 38370
+    filename: UU Nomor 5 Tahun 1969.pdf
+    sha256: acc3eb1a47697e7b4650ca7fc5a13a5ea78e5d22acfdb8a17acf03963dd41263
+    bytes: 39190
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

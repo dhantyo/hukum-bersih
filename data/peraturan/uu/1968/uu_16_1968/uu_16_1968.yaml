@@ -13,8 +13,8 @@ tanggal_penetapan: '1968-12-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-1968
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+16+Tahun+1968.pdf
+source_url: https://peraturan.bpk.go.id/Details/49176/uu-no-16-tahun-1968
+source_pdf_url: https://peraturan.bpk.go.id/Download/49292/UU%20Nomor%2016%20Tahun%201968.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_16_1968_1968-12-17
+  kind: asli
+  source: official
+  date: '1968-12-17'
+  date_basis: tanggal_penetapan
+  text: uu_16_1968_1968-12-17.txt
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c5f4f39ac7f77f72ad88716170eeeec8073147050bb308545b76c6d4d1fac598
 pdf_sha256: c5f4f39ac7f77f72ad88716170eeeec8073147050bb308545b76c6d4d1fac598
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1968-12-17'
+tanggal_berlaku: '1968-12-17'
+lembaran_negara: 'LN. 1968/ No. 69, TLN NO.2869, LL : 2 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-1968
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+16+Tahun+1968.pdf
+bpk:
+  id: 49176
+  files:
+  - url: https://peraturan.bpk.go.id/Download/49292/UU%20Nomor%2016%20Tahun%201968.pdf
+    bpk_file_id: 49292
+    filename: UU Nomor 16 Tahun 1968.pdf
+    sha256: c5f4f39ac7f77f72ad88716170eeeec8073147050bb308545b76c6d4d1fac598
+    bytes: 14976
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

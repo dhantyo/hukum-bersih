@@ -12,8 +12,8 @@ tanggal_penetapan: '1968-10-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1968
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+11+Tahun+1968.pdf
+source_url: https://peraturan.bpk.go.id/Details/49169/uu-no-11-tahun-1968
+source_pdf_url: https://peraturan.bpk.go.id/Download/49279/UU%20Nomor%2011%20Tahun%201968.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_11_1968_1968-10-25
+  kind: asli
+  source: official
+  date: '1968-10-25'
+  date_basis: tanggal_penetapan
+  text: uu_11_1968_1968-10-25.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b85bb101b8991f7b5b6f2f9dc0f5eb20ba391f3ad677105e9e8d0266c19f156d
 pdf_sha256: b85bb101b8991f7b5b6f2f9dc0f5eb20ba391f3ad677105e9e8d0266c19f156d
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1968-10-25'
+tanggal_berlaku: '1968-10-25'
+lembaran_negara: 'LN. 1968/ No.55, LL SETNEG : 2 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1968
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+11+Tahun+1968.pdf
+bpk:
+  id: 49169
+  files:
+  - url: https://peraturan.bpk.go.id/Download/49279/UU%20Nomor%2011%20Tahun%201968.pdf
+    bpk_file_id: 49279
+    filename: UU Nomor 11 Tahun 1968.pdf
+    sha256: b85bb101b8991f7b5b6f2f9dc0f5eb20ba391f3ad677105e9e8d0266c19f156d
+    bytes: 8898
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

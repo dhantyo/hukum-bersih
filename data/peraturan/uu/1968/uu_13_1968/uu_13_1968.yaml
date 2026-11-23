@@ -6,22 +6,58 @@ year: 1968
 title: Undang-Undang Nomor 13 Tahun 1968 tentang Bank Sentral
 tentang: BANK SENTRAL
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 23 Tahun 1999 Tentang Bank
-  Indonesia'
+status: tidak_berlaku
 tanggal_penetapan: '1968-12-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1968
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+13+Tahun+1968.pdf
+source_url: https://peraturan.bpk.go.id/Details/49173/uu-no-13-tahun-1968
+source_pdf_url: https://peraturan.bpk.go.id/Download/49288/UU%20Nomor%2013%20Tahun%201968.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_23_1999
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_13_1968_1968-12-07
+  kind: asli
+  source: official
+  date: '1968-12-07'
+  date_basis: tanggal_penetapan
+  text: uu_13_1968_1968-12-07.txt
+  pasal_count: 56
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5e3c0ba12d7b903548fd390d7aed404b98c40e0c735141fba0336b7ee1f3e4ed
 pdf_sha256: 5e3c0ba12d7b903548fd390d7aed404b98c40e0c735141fba0336b7ee1f3e4ed
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1968-12-07'
+lembaran_negara: 'LN. 1968/ No. 63 , LL : 13 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1968
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+13+Tahun+1968.pdf
+bpk:
+  id: 49173
+  files:
+  - url: https://peraturan.bpk.go.id/Download/49288/UU%20Nomor%2013%20Tahun%201968.pdf
+    bpk_file_id: 49288
+    filename: UU Nomor 13 Tahun 1968.pdf
+    sha256: 5e3c0ba12d7b903548fd390d7aed404b98c40e0c735141fba0336b7ee1f3e4ed
+    bytes: 130980
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_23_1999
+      citation: UU No. 23 Tahun 1999
+      tentang: Bank Indonesia
+      url: https://peraturan.bpk.go.id/Details/45332/uu-no-23-tahun-1999
+      note: null
+    Mencabut:
+    - id: uu_11_1953
+      citation: UU No. 11 Tahun 1953
+      tentang: Penetapan Undang-Undang Pokok Bank Indonesia
+      url: https://peraturan.bpk.go.id/Details/45291/uu-no-11-tahun-1953
+      note: null
+uji_materi: null

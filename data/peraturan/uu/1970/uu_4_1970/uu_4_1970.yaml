@@ -7,22 +7,54 @@ title: Undang-Undang Nomor 4 Tahun 1970 tentang Pembentukan Daerah Perdagangan B
   Dengan Pelabuhan Bebas Sabang
 tentang: PEMBENTUKAN DAERAH PERDAGANGAN BEBAS DENGAN PELABUHAN BEBAS SABANG
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 10 Tahun 1985 Tentang Pencabutan
-  Uu 4-1970 Tentang Pembentukan Daerah Perdagangan Bebas dengan Pelabuhan Bebas Sabang'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1970-03-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1970
-source_pdf_url: https://peraturan.go.id/files/UU0041970.pdf
+source_url: https://peraturan.bpk.go.id/Details/47618/uu-no-4-tahun-1970
+source_pdf_url: https://peraturan.bpk.go.id/Download/36615/UU%20Nomor%204%20Tahun%201970.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_10_1985
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_4_1970_1970-03-27
+  kind: asli
+  source: official
+  date: '1970-03-27'
+  date_basis: tanggal_penetapan
+  text: uu_4_1970_1970-03-27.txt
+  pasal_count: 15
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: efb7c979dbdb825f2f60f760717de454e8acf758a7104d89271f75c17e11b01d
 pdf_sha256: efb7c979dbdb825f2f60f760717de454e8acf758a7104d89271f75c17e11b01d
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1970-03-27'
+tanggal_berlaku: '1970-03-27'
+lembaran_negara: 'LN. 1970, LL SETNEG : 7 HLM'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN - PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1970
+  source_pdf_url: https://peraturan.go.id/files/UU0041970.pdf
+bpk:
+  id: 47618
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36615/UU%20Nomor%204%20Tahun%201970.pdf
+    bpk_file_id: 36615
+    filename: UU Nomor 4 Tahun 1970.pdf
+    sha256: efb7c979dbdb825f2f60f760717de454e8acf758a7104d89271f75c17e11b01d
+    bytes: 46308
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_10_1985
+      citation: UU No. 10 Tahun 1985
+      tentang: Pencabutan Undang-Undang Nomor 4 Tahun 1970 tentang Pembentukan Daerah
+        Perdagangan Bebas dengan Pelabuhan Bebas Sabang
+      url: https://peraturan.bpk.go.id/Details/46960/uu-no-10-tahun-1985
+      note: null
+uji_materi: null

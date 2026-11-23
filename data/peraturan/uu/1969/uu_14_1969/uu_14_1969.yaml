@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 14 Tahun 1969 tentang Ketentuan Ketentuan Pokok Menge
   Tenaga Kerja
 tentang: KETENTUAN KETENTUAN POKOK MENGENAI TENAGA KERJA
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1969-11-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-1969
-source_pdf_url: https://peraturan.go.id/files/UU0141969.pdf
+source_url: https://peraturan.bpk.go.id/Details/49118/uu-no-14-tahun-1969
+source_pdf_url: https://peraturan.bpk.go.id/Download/38388/UU%20Nomor%2014%20Tahun%201969.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,44 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_14_1969_1969-11-19
+  kind: asli
+  source: official
+  date: '1969-11-19'
+  date_basis: tanggal_penetapan
+  text: uu_14_1969_1969-11-19.txt
+  pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: baaa894b77f0dc5ffd76e28bcfbe253cf706057466f23e34d6f389668e4398b3
 pdf_sha256: baaa894b77f0dc5ffd76e28bcfbe253cf706057466f23e34d6f389668e4398b3
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1969-11-19'
+tanggal_berlaku: '1969-11-19'
+lembaran_negara: 'LN. 1969, LL SETNEG : 6 HLM'
+subjek: KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-1969
+  source_pdf_url: https://peraturan.go.id/files/UU0141969.pdf
+bpk:
+  id: 49118
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38388/UU%20Nomor%2014%20Tahun%201969.pdf
+    bpk_file_id: 38388
+    filename: UU Nomor 14 Tahun 1969.pdf
+    sha256: baaa894b77f0dc5ffd76e28bcfbe253cf706057466f23e34d6f389668e4398b3
+    bytes: 49398
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_13_2003
+      citation: UU No. 13 Tahun 2003
+      tentang: Ketenagakerjaan
+      url: https://peraturan.bpk.go.id/Details/43013/uu-no-13-tahun-2003
+      note: null
+    - id: uu_25_1997
+      citation: UU No. 25 Tahun 1997
+      tentang: Ketenagakerjaan
+      url: https://peraturan.bpk.go.id/Details/46026/uu-no-25-tahun-1997
+      note: null
+uji_materi: null

@@ -9,12 +9,12 @@ tentang: PEMBENTUKAN PROPINSI OTONOM IRIAN BARAT DAN KABUPATEN-KABUPATEN OTONOM 
   PROPINSI IRIAN BARAT
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1969-09-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1969
-source_pdf_url: https://peraturan.go.id/files/UU0121969.pdf
+source_url: https://peraturan.bpk.go.id/Details/49114/uu-no-12-tahun-1969
+source_pdf_url: https://peraturan.bpk.go.id/Download/38384/UU%20Nomor%2012%20Tahun%201969.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_12_1969_1969-09-10
+  kind: asli
+  source: official
+  date: '1969-09-10'
+  date_basis: tanggal_penetapan
+  text: uu_12_1969_1969-09-10.txt
+  pasal_count: 16
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2e5cb57c13adeca331b3413f8c92cc1175948223237844d5e586a07e783aff9e
 pdf_sha256: 2e5cb57c13adeca331b3413f8c92cc1175948223237844d5e586a07e783aff9e
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1969-09-10'
+tanggal_berlaku: '1969-09-10'
+lembaran_negara: 'LN. 1969, LL SETNEG : 8 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1969
+  source_pdf_url: https://peraturan.go.id/files/UU0121969.pdf
+bpk:
+  id: 49114
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38384/UU%20Nomor%2012%20Tahun%201969.pdf
+    bpk_file_id: 38384
+    filename: UU Nomor 12 Tahun 1969.pdf
+    sha256: 2e5cb57c13adeca331b3413f8c92cc1175948223237844d5e586a07e783aff9e
+    bytes: 48536
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

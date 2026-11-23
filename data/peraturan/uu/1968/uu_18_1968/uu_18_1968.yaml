@@ -6,13 +6,13 @@ year: 1968
 title: Undang-Undang Nomor 18 Tahun 1968 tentang Bank Dagang Negara
 tentang: BANK DAGANG NEGARA
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '1968-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-1968
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+18+Tahun+1968.pdf
+source_url: https://peraturan.bpk.go.id/Details/49178/uu-no-18-tahun-1968
+source_pdf_url: https://peraturan.bpk.go.id/Download/38460/UU%20Nomor%2018%20Tahun%201968.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_18_1968_1968-12-18
+  kind: asli
+  source: official
+  date: '1968-12-18'
+  date_basis: tanggal_penetapan
+  text: uu_18_1968_1968-12-18.txt
+  pasal_count: 25
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 47a0f2fdd763f627c1da76709fcdcf460551654e902f7701e56fba42dc43971c
 pdf_sha256: 47a0f2fdd763f627c1da76709fcdcf460551654e902f7701e56fba42dc43971c
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1968-12-18'
+lembaran_negara: 'LN. 1968/ No. 71 , TLN NO. 2871 , Hukum Online : 8 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN - DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN
+  / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-1968
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+18+Tahun+1968.pdf
+bpk:
+  id: 49178
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38460/UU%20Nomor%2018%20Tahun%201968.pdf
+    bpk_file_id: 38460
+    filename: UU Nomor 18 Tahun 1968.pdf
+    sha256: 47a0f2fdd763f627c1da76709fcdcf460551654e902f7701e56fba42dc43971c
+    bytes: 48440
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_7_1992
+      citation: UU No. 7 Tahun 1992
+      tentang: Perbankan
+      url: https://peraturan.bpk.go.id/Details/46599/uu-no-7-tahun-1992
+      note: Pasal 54 UU Nomor 7 Tahun 1992 mencabut UU ini
+uji_materi: null

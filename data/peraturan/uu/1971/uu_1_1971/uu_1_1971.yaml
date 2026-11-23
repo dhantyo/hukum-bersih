@@ -12,8 +12,8 @@ tanggal_penetapan: '1971-03-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1971
-source_pdf_url: https://peraturan.go.id/files/UU0011971.pdf
+source_url: https://peraturan.bpk.go.id/Details/47555/uu-no-1-tahun-1971
+source_pdf_url: https://peraturan.bpk.go.id/Download/36542/UU%20Nomor%201%20Tahun%201971.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1971_1971-03-10.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 09d8be9094572fc2c9785bb9e0f05b1c7a9a42af9ef5742a583579fc8258a3fd
 pdf_sha256: 09d8be9094572fc2c9785bb9e0f05b1c7a9a42af9ef5742a583579fc8258a3fd
+tanggal_pengundangan: '1971-03-10'
+tanggal_berlaku: '1971-03-10'
+lembaran_negara: 'LN. 1971, LL SETNEG : 2 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1971
+  source_pdf_url: https://peraturan.go.id/files/UU0011971.pdf
+bpk:
+  id: 47555
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36542/UU%20Nomor%201%20Tahun%201971.pdf
+    bpk_file_id: 36542
+    filename: UU Nomor 1 Tahun 1971.pdf
+    sha256: 09d8be9094572fc2c9785bb9e0f05b1c7a9a42af9ef5742a583579fc8258a3fd
+    bytes: 35526
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_4_1960
+      citation: UU No. 4 Tahun 1960
+      tentang: Persetujuan Perjanjian Persahabatan Antara Republik Indonesia dan Persekutuan
+        Tanah Melayu
+      url: https://peraturan.bpk.go.id/Details/51308/uu-no-4-tahun-1960
+      note: null
+uji_materi: null

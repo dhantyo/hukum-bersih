@@ -9,12 +9,12 @@ tentang: TAMBAHAN DAN PERUBAHAN ATAS ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHU
   1969/1970
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1970-07-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1970
-source_pdf_url: https://peraturan.go.id/files/UU0061970.pdf
+source_url: https://peraturan.bpk.go.id/Details/47623/uu-no-6-tahun-1970
+source_pdf_url: https://peraturan.bpk.go.id/Download/36621/UU%20Nomor%206%20Tahun%201970.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,38 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_6_1970_1970
+- id: uu_6_1970_1970-07-17
   kind: asli
   source: official
-  date: null
+  date: '1970-07-17'
   date_basis: tanggal_penetapan
-  text: uu_6_1970_1970.txt
+  text: uu_6_1970_1970-07-17.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a1f6c5d0f44b16aa3f4d1420acd5e658e53d25b9dac17d1060db803d5bd5099c
 pdf_sha256: a1f6c5d0f44b16aa3f4d1420acd5e658e53d25b9dac17d1060db803d5bd5099c
+tanggal_pengundangan: '1970-07-17'
+tanggal_berlaku: '1969-04-01'
+lembaran_negara: 'LN. 1970, LL SETNEG : 3 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1970
+  source_pdf_url: https://peraturan.go.id/files/UU0061970.pdf
+bpk:
+  id: 47623
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36621/UU%20Nomor%206%20Tahun%201970.pdf
+    bpk_file_id: 36621
+    filename: UU Nomor 6 Tahun 1970.pdf
+    sha256: a1f6c5d0f44b16aa3f4d1420acd5e658e53d25b9dac17d1060db803d5bd5099c
+    bytes: 31914
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_2_1969
+      citation: UU No. 2 Tahun 1969
+      tentang: Anggaran dan Pendapatan Belanja Negara Tahun 1969/1970
+      url: https://peraturan.bpk.go.id/Details/49095/uu-no-2-tahun-1969
+      note: null
+uji_materi: null

@@ -11,22 +11,60 @@ tentang: PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 1 TAHUN 19
   (LEMBARAN-NEGARA TAHUN 1968 NOMOR 49, TAMBAHAN LEMBARAN NEGARA NOMOR 2858) TANDA
   KEHORMATAN BINTANG KARTIKA EKA PAKCI MENDJADI UNDANG-UNDANG
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 20 Tahun 2009 Tentang Gelar,
-  Tanda Jasa, dan Tanda Kehormatan'
+status: tidak_berlaku
 tanggal_penetapan: '1968-12-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-23-tahun-1968
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+23+Tahun+1968-.pdf
+source_url: https://peraturan.bpk.go.id/Details/49190/uu-no-23-tahun-1968
+source_pdf_url: https://peraturan.bpk.go.id/Download/273252/UU_NO_23_1968_Lampiran.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_20_2009
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions: []
 pdf_sha256: 96068591f52cb088d997f3273bce69080f2bf13b604a58e0cf0a0a730dee22b2
 pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1968-12-27'
+tanggal_berlaku: '1968-10-01'
+lembaran_negara: 'LN. 1968/ No.76, TLN NO.2876, LL : 7 HLM'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA - HONORARIUM, GAJI, PENGHASILAN, UANG KEHORMATAN,
+  TUNJANGAN, PENGHARGAAN, HAK LAINNYA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-23-tahun-1968
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+23+Tahun+1968-.pdf
+bpk:
+  id: 49190
+  files:
+  - url: https://peraturan.bpk.go.id/Download/273252/UU_NO_23_1968_Lampiran.pdf
+    bpk_file_id: 273252
+    filename: UU_NO_23_1968_Lampiran.pdf
+    sha256: 540b219932bfc40cb0366cad5b199c07cf96defe55d5b10f25d397acdc44b701
+    bytes: 107553
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/273276/UU%20Nomor%2023%20Tahun%201968-.pdf
+    bpk_file_id: 273276
+    filename: UU Nomor 23 Tahun 1968-.pdf
+    sha256: 96068591f52cb088d997f3273bce69080f2bf13b604a58e0cf0a0a730dee22b2
+    bytes: 4526190
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_20_2009
+      citation: UU No. 20 Tahun 2009
+      tentang: Gelar, Tanda Jasa, dan Tanda Kehormatan
+      url: https://peraturan.bpk.go.id/Details/38640/uu-no-20-tahun-2009
+      note: null
+    Diubah dengan:
+    - id: uu_4_1972
+      citation: UU No. 4 Tahun 1972
+      tentang: Perubahan dan Tambahan Ketentuan Mengenai Beberapa Jenis Tanda Kehormatan
+        Republik Indonesia Yang Berbentuk Bintang dan Tentang Urutan Derajat/Tingkat
+        Jenis Tanda Kehormatan Republik Indonesia yang Berbentuk Bintang
+      url: https://peraturan.bpk.go.id/Details/47551/uu-no-4-tahun-1972
+      note: null
+uji_materi: null
+parser_version_tried: 12

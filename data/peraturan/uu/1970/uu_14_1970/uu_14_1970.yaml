@@ -7,23 +7,68 @@ title: Undang-Undang Nomor 14 Tahun 1970 tentang Ketentuan-Ketentuan Pokok Kekua
   Kehakiman
 tentang: KETENTUAN-KETENTUAN POKOK KEKUASAAN KEHAKIMAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 4 Tahun 2004 Tentang Kekuasaan
-  Kehakiman'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1970-12-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-1970
-source_pdf_url: https://peraturan.go.id/files/UU0141970.pdf
+source_url: https://peraturan.bpk.go.id/Details/47929/uu-no-14-tahun-1970
+source_pdf_url: https://peraturan.bpk.go.id/Download/36982/UU%20Nomor%2014%20Tahun%201970.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_19_1964
-  revoked_by:
-  - uu_4_2004
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_14_1970_1970-12-17
+  kind: asli
+  source: official
+  date: '1970-12-17'
+  date_basis: tanggal_penetapan
+  text: uu_14_1970_1970-12-17.txt
+  pasal_count: 15
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: dd333ee42223e3beafa4a6ee58be7e784ea5f2416be19a28a2257435f6bb7216
 pdf_sha256: dd333ee42223e3beafa4a6ee58be7e784ea5f2416be19a28a2257435f6bb7216
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1970-12-17'
+tanggal_berlaku: '1970-12-17'
+lembaran_negara: 'LN. 1970, LL SETNEG : 12 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI - JABATAN / PROFESI
+  / KEAHLIAN / SERTIFIKASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-1970
+  source_pdf_url: https://peraturan.go.id/files/UU0141970.pdf
+bpk:
+  id: 47929
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36982/UU%20Nomor%2014%20Tahun%201970.pdf
+    bpk_file_id: 36982
+    filename: UU Nomor 14 Tahun 1970.pdf
+    sha256: dd333ee42223e3beafa4a6ee58be7e784ea5f2416be19a28a2257435f6bb7216
+    bytes: 84858
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_4_2004
+      citation: UU No. 4 Tahun 2004
+      tentang: Kekuasaan Kehakiman
+      url: https://peraturan.bpk.go.id/Details/40464/uu-no-4-tahun-2004
+      note: null
+    Diubah dengan:
+    - id: uu_35_1999
+      citation: UU No. 35 Tahun 1999
+      tentang: Perubahan atas Undang-Undang Nomor 14 Tahun 1970 tentang Ketentuan-Ketentuan
+        Pokok Kekuasaan Kehakiman
+      url: https://peraturan.bpk.go.id/Details/45356/uu-no-35-tahun-1999
+      note: null
+    Mencabut:
+    - id: uu_19_1964
+      citation: UU No. 19 Tahun 1964
+      tentang: Ketentuan-Ketentuan Pokok Kekuasaan Kehakiman
+      url: https://peraturan.bpk.go.id/Details/50331/uu-no-19-tahun-1964
+      note: null
+uji_materi: null

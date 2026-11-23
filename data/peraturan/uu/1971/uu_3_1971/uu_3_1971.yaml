@@ -6,22 +6,59 @@ year: 1971
 title: Undang-Undang Nomor 3 Tahun 1971 tentang Pemberantasan Tindak Pidana Korupsi
 tentang: PEMBERANTASAN TINDAK PIDANA KORUPSI
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 31 Tahun 1999 Tentang Pemberantasan
-  Tindak Pidana Korupsi'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1971-03-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1971
-source_pdf_url: https://peraturan.go.id/files/UU0031971.pdf
+source_url: https://peraturan.bpk.go.id/Details/47558/uu-no-3-tahun-1971
+source_pdf_url: https://peraturan.bpk.go.id/Download/36545/UU%20Nomor%203%20Tahun%201971.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_31_1999
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_3_1971_1971-03-29
+  kind: asli
+  source: official
+  date: '1971-03-29'
+  date_basis: tanggal_penetapan
+  text: uu_3_1971_1971-03-29.txt
+  pasal_count: 37
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9506827bfa2ebb60d44ad61093c063d74998d67013e5b22a5c2325ae1b15381b
 pdf_sha256: 9506827bfa2ebb60d44ad61093c063d74998d67013e5b22a5c2325ae1b15381b
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1971-03-29'
+tanggal_berlaku: '1971-03-29'
+lembaran_negara: 'LN. 1971, LL SETNEG : 15 HLM'
+subjek: TINDAK PIDANA KORUPSI, PENCEGAHAN KORUPSI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1971
+  source_pdf_url: https://peraturan.go.id/files/UU0031971.pdf
+bpk:
+  id: 47558
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36545/UU%20Nomor%203%20Tahun%201971.pdf
+    bpk_file_id: 36545
+    filename: UU Nomor 3 Tahun 1971.pdf
+    sha256: 9506827bfa2ebb60d44ad61093c063d74998d67013e5b22a5c2325ae1b15381b
+    bytes: 99777
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_31_1999
+      citation: UU No. 31 Tahun 1999
+      tentang: Pemberantasan Tindak Pidana Korupsi
+      url: https://peraturan.bpk.go.id/Details/45350/uu-no-31-tahun-1999
+      note: null
+    Mencabut:
+    - id: perppu_24_1960
+      citation: PERPU No. 24 Tahun 1960
+      tentang: Pengusutan, Penuntutan, Dan Pemeriksaan Tindak Pidana Korupsi
+      url: https://peraturan.bpk.go.id/Details/53496/perpu-no-24-tahun-1960
+      note: null
+uji_materi: null

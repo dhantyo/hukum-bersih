@@ -7,28 +7,65 @@ title: Undang-Undang Nomor 12 Tahun 1970 tentang Perubahan Dan Tambahan Uu 6-196
   Tentang Penanaman Modal Dalam Negeri
 tentang: PERUBAHAN DAN TAMBAHAN UU 6-1968 TENTANG PENANAMAN MODAL DALAM NEGERI
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 25 Tahun 2007 Tentang Penanaman
-  Modal'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1970-08-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1970
-source_pdf_url: https://peraturan.go.id/files/UU0121970.pdf
+source_url: https://peraturan.bpk.go.id/Details/47914/uu-no-12-tahun-1970
+source_pdf_url: https://peraturan.bpk.go.id/Download/36967/UU%20Nomor%2012%20Tahun%201970.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_25_2007
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_12_1970_1970
+- id: uu_12_1970_1970-08-07
   kind: asli
   source: official
-  date: null
+  date: '1970-08-07'
   date_basis: tanggal_penetapan
-  text: uu_12_1970_1970.txt
+  text: uu_12_1970_1970-08-07.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ac8b3dd5056d92b83beea56d01b667a278083bb28919f827d53c6bd9f6d36788
 pdf_sha256: ac8b3dd5056d92b83beea56d01b667a278083bb28919f827d53c6bd9f6d36788
+tanggal_pengundangan: '1970-08-07'
+tanggal_berlaku: '1970-08-07'
+lembaran_negara: 'LN. 1970, LL SETNEG : 5 HLM'
+subjek: PENANAMAN MODAL DAN INVESTASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1970
+  source_pdf_url: https://peraturan.go.id/files/UU0121970.pdf
+bpk:
+  id: 47914
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36967/UU%20Nomor%2012%20Tahun%201970.pdf
+    bpk_file_id: 36967
+    filename: UU Nomor 12 Tahun 1970.pdf
+    sha256: ac8b3dd5056d92b83beea56d01b667a278083bb28919f827d53c6bd9f6d36788
+    bytes: 43755
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_25_2007
+      citation: UU No. 25 Tahun 2007
+      tentang: Penanaman Modal
+      url: https://peraturan.bpk.go.id/Details/39903/uu-no-25-tahun-2007
+      note: null
+    Diubah dengan:
+    - id: uu_7_1983
+      citation: UU No. 7 Tahun 1983
+      tentang: Pajak Penghasilan
+      url: https://peraturan.bpk.go.id/Details/46988/uu-no-7-tahun-1983
+      note: null
+    Mengubah:
+    - id: uu_6_1968
+      citation: UU No. 6 Tahun 1968
+      tentang: Penanaman Modal Dalam Negeri
+      url: https://peraturan.bpk.go.id/Details/49144/uu-no-6-tahun-1968
+      note: null
+uji_materi: null

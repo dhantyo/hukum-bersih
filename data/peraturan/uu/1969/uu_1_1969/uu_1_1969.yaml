@@ -9,12 +9,12 @@ tentang: PEMBENTUKAN PENGADILAN TINGGI DI BANDUNG DAN PERUBAHAN DAERAH HUKUM PEN
   TINGGI DI JAKARTA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1969-03-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1969
-source_pdf_url: https://peraturan.go.id/files/UU0011969.pdf
+source_url: https://peraturan.bpk.go.id/Details/49094/uu-no-1-tahun-1969
+source_pdf_url: https://peraturan.bpk.go.id/Download/38364/UU%20Nomor%201%20Tahun%201969.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_1_1969_1969-03-11
+  kind: asli
+  source: official
+  date: '1969-03-11'
+  date_basis: tanggal_penetapan
+  text: uu_1_1969_1969-03-11.txt
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c52aab94f4c963778ac59589f696417dc27a8d7aece0a2fbfd3691d61500828f
 pdf_sha256: c52aab94f4c963778ac59589f696417dc27a8d7aece0a2fbfd3691d61500828f
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1969-03-11'
+tanggal_berlaku: '1969-03-11'
+lembaran_negara: 'LN. 1969, LL SETNEG : 3 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1969
+  source_pdf_url: https://peraturan.go.id/files/UU0011969.pdf
+bpk:
+  id: 49094
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38364/UU%20Nomor%201%20Tahun%201969.pdf
+    bpk_file_id: 38364
+    filename: UU Nomor 1 Tahun 1969.pdf
+    sha256: c52aab94f4c963778ac59589f696417dc27a8d7aece0a2fbfd3691d61500828f
+    bytes: 31138
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

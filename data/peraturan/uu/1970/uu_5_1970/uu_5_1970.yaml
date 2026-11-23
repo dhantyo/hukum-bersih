@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 5 Tahun 1970 tentang Anggaran Pendapatan Dan Belanja 
 tentang: ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 1970/1971
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1970-03-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1970
-source_pdf_url: https://peraturan.go.id/files/UU0051970.pdf
+source_url: https://peraturan.bpk.go.id/Details/47620/uu-no-5-tahun-1970
+source_pdf_url: https://peraturan.bpk.go.id/Download/36618/UU%20Nomor%205%20Tahun%201970.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,40 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_5_1970_1970-03-30
+  kind: asli
+  source: official
+  date: '1970-03-30'
+  date_basis: tanggal_penetapan
+  text: uu_5_1970_1970-03-30.txt
+  pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ba29c38cd52cd650c94e7234c5745430c22db03aad1101a5f910d50fd767ba4a
 pdf_sha256: ba29c38cd52cd650c94e7234c5745430c22db03aad1101a5f910d50fd767ba4a
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1970-03-30'
+tanggal_berlaku: '1970-04-01'
+lembaran_negara: 'LN. 1970, LL SETNEG : 5 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1970
+  source_pdf_url: https://peraturan.go.id/files/UU0051970.pdf
+bpk:
+  id: 47620
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36618/UU%20Nomor%205%20Tahun%201970.pdf
+    bpk_file_id: 36618
+    filename: UU Nomor 5 Tahun 1970.pdf
+    sha256: ba29c38cd52cd650c94e7234c5745430c22db03aad1101a5f910d50fd767ba4a
+    bytes: 43689
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_1971
+      citation: UU No. 6 Tahun 1971
+      tentang: Tambahan dan Perubahan atas Anggaran Pendapatan dan Belanja Negara
+        Tahun Anggaran 1970/1971
+      url: https://peraturan.bpk.go.id/Details/47561/uu-no-6-tahun-1971
+      note: null
+uji_materi: null

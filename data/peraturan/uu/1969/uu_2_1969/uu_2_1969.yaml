@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 2 Tahun 1969 tentang Anggaran Dan Pendapatan Belanja 
 tentang: ANGGARAN DAN PENDAPATAN BELANJA NEGARA TAHUN 1969/1970
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1969-03-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1969
-source_pdf_url: https://peraturan.go.id/files/UU0021969.pdf
+source_url: https://peraturan.bpk.go.id/Details/49095/uu-no-2-tahun-1969
+source_pdf_url: https://peraturan.bpk.go.id/Download/38365/UU%20Nomor%202%20Tahun%201969.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_2_1969_1969
+- id: uu_2_1969_1969-03-31
   kind: asli
   source: official
-  date: null
+  date: '1969-03-31'
   date_basis: tanggal_penetapan
-  text: uu_2_1969_1969.txt
-  pasal_count: 2
+  text: uu_2_1969_1969-03-31.txt
+  pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 447754279086919fc0fd4e937350232525e2ffaf5bf98abb9fb0f2f8c90b76b8
 pdf_sha256: 447754279086919fc0fd4e937350232525e2ffaf5bf98abb9fb0f2f8c90b76b8
+tanggal_pengundangan: '1969-03-31'
+tanggal_berlaku: '1969-04-01'
+lembaran_negara: 'LN. 1969, LL SETNEG : 5 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1969
+  source_pdf_url: https://peraturan.go.id/files/UU0021969.pdf
+bpk:
+  id: 49095
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38365/UU%20Nomor%202%20Tahun%201969.pdf
+    bpk_file_id: 38365
+    filename: UU Nomor 2 Tahun 1969.pdf
+    sha256: 447754279086919fc0fd4e937350232525e2ffaf5bf98abb9fb0f2f8c90b76b8
+    bytes: 45808
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_1970
+      citation: UU No. 6 Tahun 1970
+      tentang: Tambahan dan Perubahan atas Anggaran Pendapatan dan Belanja Negara
+        Tahun 1969/1970
+      url: https://peraturan.bpk.go.id/Details/47623/uu-no-6-tahun-1970
+      note: null
+uji_materi: null

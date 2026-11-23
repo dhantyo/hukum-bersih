@@ -7,22 +7,60 @@ title: Undang-Undang Nomor 9 Tahun 1970 tentang Perubahan Dan Tambahan Ordonansi
   Pendapatan 1944
 tentang: PERUBAHAN DAN TAMBAHAN ORDONANSI PAJAK PENDAPATAN 1944
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 6 Tahun 1983 Tentang Ketentuan
-  Umum dan Tata Cara Perpajakan'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1970-08-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1970
-source_pdf_url: https://peraturan.go.id/files/UU0091970.pdf
+source_url: https://peraturan.bpk.go.id/Details/47627/uu-no-9-tahun-1970
+source_pdf_url: https://peraturan.bpk.go.id/Download/36626/UU%20Nomor%209%20Tahun%201970.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_6_1983
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_9_1970_1970-08-07
+  kind: asli
+  source: official
+  date: '1970-08-07'
+  date_basis: tanggal_penetapan
+  text: uu_9_1970_1970-08-07.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2217c80f59c1e844b2d8bdcfd27b9ba059a591a2d341adbb2d8b97ba2ecd085d
 pdf_sha256: 2217c80f59c1e844b2d8bdcfd27b9ba059a591a2d341adbb2d8b97ba2ecd085d
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1970-08-07'
+tanggal_berlaku: '1970-08-07'
+lembaran_negara: 'LN. 1970, LL SETNEG : 4 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1970
+  source_pdf_url: https://peraturan.go.id/files/UU0091970.pdf
+bpk:
+  id: 47627
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36626/UU%20Nomor%209%20Tahun%201970.pdf
+    bpk_file_id: 36626
+    filename: UU Nomor 9 Tahun 1970.pdf
+    sha256: 2217c80f59c1e844b2d8bdcfd27b9ba059a591a2d341adbb2d8b97ba2ecd085d
+    bytes: 35671
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_6_1983
+      citation: UU No. 6 Tahun 1983
+      tentang: Ketentuan Umum dan Tata Cara Perpajakan
+      url: https://peraturan.bpk.go.id/Details/46986/uu-no-6-tahun-1983
+      note: null
+    Mengubah:
+    - id: uu_8_1967
+      citation: UU No. 8 Tahun 1967
+      tentang: Perubahan dan Penyempurnaan Tata Cara Pemungutan Pajak Pendapatan 1944,
+        Pajak Kekayaan 1932 dan Pajak Perseroan 1925
+      url: https://peraturan.bpk.go.id/Details/49575/uu-no-8-tahun-1967
+      note: null
+uji_materi: null

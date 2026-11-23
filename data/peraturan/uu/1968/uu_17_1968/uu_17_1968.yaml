@@ -6,13 +6,13 @@ year: 1968
 title: Undang-Undang Nomor 17 Tahun 1968 tentang Bank Negara Indonesia 1946
 tentang: BANK NEGARA INDONESIA 1946
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '1968-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-1968
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+17+Tahun+1968.pdf
+source_url: https://peraturan.bpk.go.id/Details/49177/uu-no-17-tahun-1968
+source_pdf_url: https://peraturan.bpk.go.id/Download/49293/UU%20Nomor%2017%20Tahun%201968.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_17_1968_1968-12-18
+  kind: asli
+  source: official
+  date: '1968-12-18'
+  date_basis: tanggal_penetapan
+  text: uu_17_1968_1968-12-18.txt
+  pasal_count: 28
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5bc720a9c288b5f93c94b102c2470962687681dc8280f7273defcc126ca34f58
 pdf_sha256: 5bc720a9c288b5f93c94b102c2470962687681dc8280f7273defcc126ca34f58
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1968-12-18'
+lembaran_negara: 'LN. 1968/ No. 70 , TLN NO. 2870, Hukum Online : 9 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN - DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN
+  / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-1968
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+17+Tahun+1968.pdf
+bpk:
+  id: 49177
+  files:
+  - url: https://peraturan.bpk.go.id/Download/49293/UU%20Nomor%2017%20Tahun%201968.pdf
+    bpk_file_id: 49293
+    filename: UU Nomor 17 Tahun 1968.pdf
+    sha256: 5bc720a9c288b5f93c94b102c2470962687681dc8280f7273defcc126ca34f58
+    bytes: 67093
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_7_1992
+      citation: UU No. 7 Tahun 1992
+      tentang: Perbankan
+      url: https://peraturan.bpk.go.id/Details/46599/uu-no-7-tahun-1992
+      note: Pasal 54 UU Nomor 7 Tahun 1992 mencabut UU ini
+uji_materi: null

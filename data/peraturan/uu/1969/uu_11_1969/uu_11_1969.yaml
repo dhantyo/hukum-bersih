@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 11 Tahun 1969 tentang Pensiun Pegawai Dan Pensiun Jan
 tentang: PENSIUN PEGAWAI DAN PENSIUN JANDA/DUDA PEGAWAI
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1969-08-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1969
-source_pdf_url: https://peraturan.go.id/files/UU0111969.pdf
+source_url: https://peraturan.bpk.go.id/Details/49112/uu-no-11-tahun-1969
+source_pdf_url: https://peraturan.bpk.go.id/Download/383936/UU%20Nomor%2011%20Tahun%201969.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,46 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_11_1969_1969-08-08
+  kind: asli
+  source: official
+  date: '1969-08-08'
+  date_basis: tanggal_penetapan
+  text: uu_11_1969_1969-08-08.txt
+  pasal_count: 1
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d6814dca22c4814c4045becf6bcf0be0f757235138d8f44bfa8c8d117364c246
 pdf_sha256: 964e1653c7e4f8c0d1df213a96e4c8139edbf992f98c16c646eefdc5ed00eabc
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1969-08-08'
+tanggal_berlaku: '1969-11-01'
+lembaran_negara: 'LN 1969 (42), TLN (2906) : 13 hlm.; https://jdih.kemenkeu.go.id/'
+subjek: HONORARIUM, GAJI, PENGHASILAN, UANG KEHORMATAN, TUNJANGAN, PENGHARGAAN, HAK
+  LAINNYA - KEPEGAWAIAN, APARATUR NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1969
+  source_pdf_url: https://peraturan.go.id/files/UU0111969.pdf
+bpk:
+  id: 49112
+  files:
+  - url: https://peraturan.bpk.go.id/Download/383936/UU%20Nomor%2011%20Tahun%201969.pdf
+    bpk_file_id: 383936
+    filename: UU Nomor 11 Tahun 1969.pdf
+    sha256: d6814dca22c4814c4045becf6bcf0be0f757235138d8f44bfa8c8d117364c246
+    bytes: 330866
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: pp_20_1960
+      citation: PP No. 20 Tahun 1960
+      tentang: Masa Kerja yang Dihitung untuk Pensiun, Seperti dimaksud dalam Pasal
+        2 Ayat (2) Undang-Undang No. 20 Tahun 1952
+      url: https://peraturan.bpk.go.id/Details/74589/pp-no-20-tahun-1960
+      note: null
+    - id: uu_20_1952
+      citation: UU No. 20 Tahun 1952
+      tentang: Pensiun Pegawai Negeri Sipil
+      url: https://peraturan.bpk.go.id/Details/40267/uu-no-20-tahun-1952
+      note: null
+uji_materi: null

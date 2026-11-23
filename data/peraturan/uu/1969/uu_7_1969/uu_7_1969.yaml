@@ -6,22 +6,60 @@ year: 1969
 title: Undang-Undang Nomor 7 Tahun 1969 tentang Penetapan Berbagai Perpu Menjadi Uu
 tentang: PENETAPAN BERBAGAI PERPU MENJADI UU
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 13 Tahun 1985 Tentang Bea
-  Meterai'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1969-07-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1969
-source_pdf_url: https://peraturan.go.id/files/UU0071969.pdf
+source_url: https://peraturan.bpk.go.id/Details/49103/uu-no-7-tahun-1969
+source_pdf_url: https://peraturan.bpk.go.id/Download/38373/UU%20Nomor%207%20Tahun%201969.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_13_1985
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_7_1969_1969-07-05
+  kind: asli
+  source: official
+  date: '1969-07-05'
+  date_basis: tanggal_penetapan
+  text: uu_7_1969_1969-07-05.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3f2b9f8cd74ed0e7c4d5d01d8baae465defcb3739ba508e20fb70c71169e8243
 pdf_sha256: 3f2b9f8cd74ed0e7c4d5d01d8baae465defcb3739ba508e20fb70c71169e8243
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1969-07-05'
+tanggal_berlaku: '1969-07-05'
+lembaran_negara: 'LN. 1969, LL SETNEG : 2 HLM'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1969
+  source_pdf_url: https://peraturan.go.id/files/UU0071969.pdf
+bpk:
+  id: 49103
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38373/UU%20Nomor%207%20Tahun%201969.pdf
+    bpk_file_id: 38373
+    filename: UU Nomor 7 Tahun 1969.pdf
+    sha256: 3f2b9f8cd74ed0e7c4d5d01d8baae465defcb3739ba508e20fb70c71169e8243
+    bytes: 29448
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_13_1985
+      citation: UU No. 13 Tahun 1985
+      tentang: Bea Materai
+      url: https://peraturan.bpk.go.id/Details/46964/uu-no-13-tahun-1985
+      note: null
+    Diubah dengan:
+    - id: uu_10_1970
+      citation: UU No. 10 Tahun 1970
+      tentang: Perubahan dan Tambahan Ordonansi Pajak Dividen 1959 Undang-Undang.
+        Pajak dividen 1959. Perubahan dan Tambahan
+      url: https://peraturan.bpk.go.id/Details/47632/uu-no-10-tahun-1970
+      note: null
+uji_materi: null

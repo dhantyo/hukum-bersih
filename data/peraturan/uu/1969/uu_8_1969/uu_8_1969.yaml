@@ -9,12 +9,12 @@ tentang: TAMBAHAN DAN PERUBAHAN ATAS ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHU
   1968
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1969-07-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1969
-source_pdf_url: https://peraturan.go.id/files/UU0081969.pdf
+source_url: https://peraturan.bpk.go.id/Details/49104/uu-no-8-tahun-1969
+source_pdf_url: https://peraturan.bpk.go.id/Download/38374/UU%20Nomor%208%20Tahun%201969.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_8_1969_1969-07-05
+  kind: asli
+  source: official
+  date: '1969-07-05'
+  date_basis: tanggal_penetapan
+  text: uu_8_1969_1969-07-05.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3ab1fe2d7535b74416ae53325340edd156eeaf87673bd71fb8b07fae0c0a0daf
 pdf_sha256: 3ab1fe2d7535b74416ae53325340edd156eeaf87673bd71fb8b07fae0c0a0daf
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1969-07-05'
+tanggal_berlaku: '1968-01-01'
+lembaran_negara: 'LN. 1969, LL SETNEG : 3 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1969
+  source_pdf_url: https://peraturan.go.id/files/UU0081969.pdf
+bpk:
+  id: 49104
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38374/UU%20Nomor%208%20Tahun%201969.pdf
+    bpk_file_id: 38374
+    filename: UU Nomor 8 Tahun 1969.pdf
+    sha256: 3ab1fe2d7535b74416ae53325340edd156eeaf87673bd71fb8b07fae0c0a0daf
+    bytes: 31504
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_13_1967
+      citation: UU No. 13 Tahun 1967
+      tentang: Anggaran Pendapatan Dan Belanja Negara Tahun 1968
+      url: https://peraturan.bpk.go.id/Details/49590/uu-no-13-tahun-1967
+      note: null
+uji_materi: null

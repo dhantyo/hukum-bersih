@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 13 Tahun 1969 tentang Konstitusi Perhimpunan Pos Sedu
 tentang: KONSTITUSI PERHIMPUNAN POS SEDUNIA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1969-10-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1969
-source_pdf_url: https://peraturan.go.id/files/UU0131969.pdf
+source_url: https://peraturan.bpk.go.id/Details/49116/uu-no-13-tahun-1969
+source_pdf_url: https://peraturan.bpk.go.id/Download/38386/UU%20Nomor%2013%20Tahun%201969.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_13_1969_1969-10-25
+  kind: asli
+  source: official
+  date: '1969-10-25'
+  date_basis: tanggal_penetapan
+  text: uu_13_1969_1969-10-25.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3b45e2171f111f34a2e79c73acf47f9b750e4e1a3a3087faeea798d9ca62c2a6
 pdf_sha256: 3b45e2171f111f34a2e79c73acf47f9b750e4e1a3a3087faeea798d9ca62c2a6
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1969-10-25'
+tanggal_berlaku: '1969-10-25'
+lembaran_negara: 'LN. 1969, LL SETNEG : 2 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1969
+  source_pdf_url: https://peraturan.go.id/files/UU0131969.pdf
+bpk:
+  id: 49116
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38386/UU%20Nomor%2013%20Tahun%201969.pdf
+    bpk_file_id: 38386
+    filename: UU Nomor 13 Tahun 1969.pdf
+    sha256: 3b45e2171f111f34a2e79c73acf47f9b750e4e1a3a3087faeea798d9ca62c2a6
+    bytes: 36391
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_5_1961
+      citation: UU No. 5 Tahun 1961
+      tentang: Perjanjian Pos Sedunia dan Persetujuannya
+      url: https://peraturan.bpk.go.id/Details/51137/uu-no-5-tahun-1961
+      note: null
+uji_materi: null

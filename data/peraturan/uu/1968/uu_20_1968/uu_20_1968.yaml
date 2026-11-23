@@ -6,13 +6,13 @@ year: 1968
 title: Undang-Undang Nomor 20 Tahun 1968 tentang Bank Tabungan Negara
 tentang: BANK TABUNGAN NEGARA
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '1968-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-1968
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+20+Tahun+1968.pdf
+source_url: https://peraturan.bpk.go.id/Details/49187/uu-no-20-tahun-1968
+source_pdf_url: https://peraturan.bpk.go.id/Download/49298/UU%20Nomor%2020%20Tahun%201968.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,38 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_20_1968_1968-12-18
+  kind: asli
+  source: official
+  date: '1968-12-18'
+  date_basis: tanggal_penetapan
+  text: uu_20_1968_1968-12-18.txt
+  pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 584fac02f6e387f53b1eb3101674f6316f3a12798200ac2bf2817a84b50623f3
 pdf_sha256: 584fac02f6e387f53b1eb3101674f6316f3a12798200ac2bf2817a84b50623f3
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1968-12-18'
+lembaran_negara: 'LN. 1968/ No.73, TLN NO. 2873 , LL : 10 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-1968
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+20+Tahun+1968.pdf
+bpk:
+  id: 49187
+  files:
+  - url: https://peraturan.bpk.go.id/Download/49298/UU%20Nomor%2020%20Tahun%201968.pdf
+    bpk_file_id: 49298
+    filename: UU Nomor 20 Tahun 1968.pdf
+    sha256: 584fac02f6e387f53b1eb3101674f6316f3a12798200ac2bf2817a84b50623f3
+    bytes: 69446
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_7_1992
+      citation: UU No. 7 Tahun 1992
+      tentang: Perbankan
+      url: https://peraturan.bpk.go.id/Details/46599/uu-no-7-tahun-1992
+      note: Pasal 54 UU Nomor 7 Tahun 1992 mencabut UU ini
+uji_materi: null
