@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 5 Tahun 1989 tentang Perhitungan Anggaran Negara Tahu
 tentang: PERHITUNGAN ANGGARAN NEGARA TAHUN ANGGARAN 1986/1987
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1989-07-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1989
-source_pdf_url: https://peraturan.go.id/files/uu5-1989.pdf
+source_url: https://peraturan.bpk.go.id/Details/46802/uu-no-5-tahun-1989
+source_pdf_url: https://peraturan.bpk.go.id/Download/35574/UU%20Nomor%205%20Tahun%201989.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_5_1989_1989
+- id: uu_5_1989_1989-07-20
   kind: asli
   source: official
-  date: null
+  date: '1989-07-20'
   date_basis: tanggal_penetapan
-  text: uu_5_1989_1989.txt
+  text: uu_5_1989_1989-07-20.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 551e4ac6835ed123b6f9e958471f140f43dd5f9fcbac59c3e65622b55c491a0c
 pdf_sha256: 551e4ac6835ed123b6f9e958471f140f43dd5f9fcbac59c3e65622b55c491a0c
+tanggal_pengundangan: '1989-07-20'
+tanggal_berlaku: '1989-07-20'
+lembaran_negara: 'LN. 1989/ No.23 , TLN NO. 3394, Website dpr.go.id : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1989
+  source_pdf_url: https://peraturan.go.id/files/uu5-1989.pdf
+bpk:
+  id: 46802
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35574/UU%20Nomor%205%20Tahun%201989.pdf
+    bpk_file_id: 35574
+    filename: UU Nomor 5 Tahun 1989.pdf
+    sha256: 551e4ac6835ed123b6f9e958471f140f43dd5f9fcbac59c3e65622b55c491a0c
+    bytes: 20061
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -11,8 +11,8 @@ tanggal_penetapan: '1989-12-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1989
-source_pdf_url: https://peraturan.go.id/files/uu7-1989.pdf
+source_url: https://peraturan.bpk.go.id/Details/46804/uu-no-7-tahun-1989
+source_pdf_url: https://peraturan.bpk.go.id/Download/35577/UU%20Nomor%207%20Tahun%201989.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,51 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_7_1989_1989-12-29
+  kind: asli
+  source: official
+  date: '1989-12-29'
+  date_basis: tanggal_penetapan
+  text: uu_7_1989_1989-12-29.txt
+  pasal_count: 108
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0a0020bc29e02c49e2edc00cc70e5893c200cb9ffc008d905a77b8e18dcb3e59
 pdf_sha256: 0a0020bc29e02c49e2edc00cc70e5893c200cb9ffc008d905a77b8e18dcb3e59
-parse_error: 'LeakedMarkupError: hcontainer_1__p_2: markup in text: ''ART 1 -'''
+tanggal_pengundangan: '1989-12-29'
+tanggal_berlaku: '1989-12-29'
+lembaran_negara: 'LN.1989/ No.49 , TLN NO. 3400, website dpr.go.id : 24 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1989
+  source_pdf_url: https://peraturan.go.id/files/uu7-1989.pdf
+bpk:
+  id: 46804
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35577/UU%20Nomor%207%20Tahun%201989.pdf
+    bpk_file_id: 35577
+    filename: UU Nomor 7 Tahun 1989.pdf
+    sha256: 0a0020bc29e02c49e2edc00cc70e5893c200cb9ffc008d905a77b8e18dcb3e59
+    bytes: 126714
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_50_2009
+      citation: UU No. 50 Tahun 2009
+      tentang: Perubahan Kedua atas Undang-Undang Nomor 7 Tahun 1989 tentang Peradilan
+        Agama
+      url: https://peraturan.bpk.go.id/Details/38795/uu-no-50-tahun-2009
+      note: null
+    - id: uu_3_2006
+      citation: UU No. 3 Tahun 2006
+      tentang: Perubahan atas Undang-Undang Nomor 7 Tahun 1989 tentang Peradilan Agama
+      url: https://peraturan.bpk.go.id/Details/40154/uu-no-3-tahun-2006
+      note: null
+    Mencabut:
+    - id: pp_45_1957
+      citation: PP No. 45 Tahun 1957
+      tentang: Menetapkan Peraturan Tentang Pengadilan Agama di Luar Jawa-Madura
+      url: https://peraturan.bpk.go.id/Details/76867/pp-no-45-tahun-1957
+      note: null
+uji_materi: null

@@ -7,20 +7,18 @@ title: Undang-Undang Nomor 4 Tahun 1990 tentang Serah-Simpan Karya Cetak Dan Kar
   Rekam
 tentang: SERAH-SIMPAN KARYA CETAK DAN KARYA REKAM
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 13 Tahun 2018 Tentang Serah
-  Simpan Karya Cetak dan Karya Rekam'
+status: tidak_berlaku
 tanggal_penetapan: '1990-08-09'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1990
-source_pdf_url: https://peraturan.go.id/files/uu4-1990.pdf
+source_url: https://peraturan.bpk.go.id/Details/46708/uu-no-4-tahun-1990
+source_pdf_url: https://peraturan.bpk.go.id/Download/35453/UU%20Nomor%204%20Tahun%201990.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_13_2018
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -31,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1990_1990-08-09.txt
   pasal_count: 14
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6f780ddc8d6ca11e7beb7fe8e6cee951891e4cca2a032ee5c55349dd34722868
 pdf_sha256: 4f2bd5d7c107ae999c735cd94a396095a386fb8b4f2c1d023598827257fd3563
+tanggal_pengundangan: '1990-08-09'
+tanggal_berlaku: '1990-08-09'
+lembaran_negara: website peraturan.go.id
+subjek: ILMU PENGETAHUAN DAN TEKNOLOGI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1990
+  source_pdf_url: https://peraturan.go.id/files/uu4-1990.pdf
+bpk:
+  id: 46708
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35453/UU%20Nomor%204%20Tahun%201990.pdf
+    bpk_file_id: 35453
+    filename: UU Nomor 4 Tahun 1990.pdf
+    sha256: 6f780ddc8d6ca11e7beb7fe8e6cee951891e4cca2a032ee5c55349dd34722868
+    bytes: 40874
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_13_2018
+      citation: UU No. 13 Tahun 2018
+      tentang: Serah Simpan Karya Cetak dan Karya Rekam
+      url: https://peraturan.bpk.go.id/Details/99857/uu-no-13-tahun-2018
+      note: null
+uji_materi: null

@@ -12,8 +12,8 @@ tanggal_penetapan: '1990-08-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1990
-source_pdf_url: https://peraturan.go.id/files/uu7-1990.pdf
+source_url: https://peraturan.bpk.go.id/Details/46712/uu-no-7-tahun-1990
+source_pdf_url: https://peraturan.bpk.go.id/Download/35458/UU%20Nomor%207%20Tahun%201990.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1990_1990-08-15.txt
   pasal_count: 18
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 29327f6bda250e18da6dd321bf21249c41d3ae95689ed2af53549c4494337cde
 pdf_sha256: 7fe8fcd5b28baafd2e925adaf2063e5a6d560683c36ef2712ab55e9e6baa44cd
+tanggal_pengundangan: '1990-08-15'
+tanggal_berlaku: '1990-08-15'
+lembaran_negara: 'website peraturan.go.id : 7 hlm'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1990
+  source_pdf_url: https://peraturan.go.id/files/uu7-1990.pdf
+bpk:
+  id: 46712
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35458/UU%20Nomor%207%20Tahun%201990.pdf
+    bpk_file_id: 35458
+    filename: UU Nomor 7 Tahun 1990.pdf
+    sha256: 29327f6bda250e18da6dd321bf21249c41d3ae95689ed2af53549c4494337cde
+    bytes: 43238
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: pp_4_1975
+      citation: PP No. 4 Tahun 1975
+      tentang: Pembentukan Kota Administratip Bitung
+      url: https://peraturan.bpk.go.id/Details/67666/pp-no-4-tahun-1975
+      note: null
+uji_materi: null

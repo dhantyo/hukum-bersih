@@ -6,19 +6,18 @@ year: 1990
 title: Undang-Undang Nomor 9 Tahun 1990 tentang Kepariwisataan
 tentang: KEPARIWISATAAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 10 Tahun 2009 Tentang Kepariwisataan'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1990-10-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1990
-source_pdf_url: https://peraturan.go.id/files/uu9-1990.pdf
+source_url: https://peraturan.bpk.go.id/Details/46715/uu-no-9-tahun-1990
+source_pdf_url: https://peraturan.bpk.go.id/Download/35462/UU%20Nomor%209%20Tahun%201990.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_10_2009
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,3 +29,28 @@ versions:
   text: uu_9_1990_1990.txt
   pasal_count: 16
 pdf_sha256: 610da871ab9c84e616c6b5651b601fd0e91e05f807cd542ace1d6025b140924b
+tanggal_pengundangan: '1990-10-18'
+tanggal_berlaku: '1990-10-18'
+lembaran_negara: 'LN. 1990/ No.78 , TLN NO. 3427, website DPR : 13 HLM'
+subjek: PARIWISATA DAN KEBUDAYAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1990
+  source_pdf_url: https://peraturan.go.id/files/uu9-1990.pdf
+bpk:
+  id: 46715
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35462/UU%20Nomor%209%20Tahun%201990.pdf
+    bpk_file_id: 35462
+    filename: UU Nomor 9 Tahun 1990.pdf
+    sha256: 57ce08138563cfded6903c749ff6908ac90426aeaff0bacccb399e3c66f2e875
+    bytes: 2768559
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_10_2009
+      citation: UU No. 10 Tahun 2009
+      tentang: Kepariwisataan
+      url: https://peraturan.bpk.go.id/Details/38598/uu-no-10-tahun-2009
+      note: null
+uji_materi: null
+reparse_error: 'v12: 2 pasal, stored text has 16'

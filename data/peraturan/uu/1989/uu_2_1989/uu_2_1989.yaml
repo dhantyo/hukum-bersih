@@ -6,29 +6,67 @@ year: 1989
 title: Undang-Undang Nomor 2 Tahun 1989 tentang Sistem Pendidikan Nasional
 tentang: SISTEM PENDIDIKAN NASIONAL
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 20 Tahun 2003 Tentang Sistem
-  Pendidikan Nasional'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1989-03-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1989
-source_pdf_url: https://peraturan.go.id/files/uu2-1989.pdf
+source_url: https://peraturan.bpk.go.id/Details/46794/uu-no-2-tahun-1989
+source_pdf_url: https://peraturan.bpk.go.id/Download/35566/UU%20Nomor%202%20Tahun%201989.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_22_1961
-  revoked_by:
-  - uu_20_2003
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_2_1989_1989
+- id: uu_2_1989_1989-03-27
   kind: asli
   source: official
-  date: null
+  date: '1989-03-27'
   date_basis: tanggal_penetapan
-  text: uu_2_1989_1989.txt
+  text: uu_2_1989_1989-03-27.txt
   pasal_count: 59
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4aaf171fd36d51ef36affd9d1dc76816bf92540edc6a01e72c12050117b6d688
 pdf_sha256: 4aaf171fd36d51ef36affd9d1dc76816bf92540edc6a01e72c12050117b6d688
+tanggal_pengundangan: '1989-03-27'
+tanggal_berlaku: '1989-03-27'
+lembaran_negara: 'LN. 1989/ No.6 , TLN NO. 3390, website dpr.go.id : 16 HLM'
+subjek: PENDIDIKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1989
+  source_pdf_url: https://peraturan.go.id/files/uu2-1989.pdf
+bpk:
+  id: 46794
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35566/UU%20Nomor%202%20Tahun%201989.pdf
+    bpk_file_id: 35566
+    filename: UU Nomor 2 Tahun 1989.pdf
+    sha256: 4aaf171fd36d51ef36affd9d1dc76816bf92540edc6a01e72c12050117b6d688
+    bytes: 106443
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_20_2003
+      citation: UU No. 20 Tahun 2003
+      tentang: Sistem Pendidikan Nasional
+      url: https://peraturan.bpk.go.id/Details/43920/uu-no-20-tahun-2003
+      note: null
+    Mencabut:
+    - id: uu_22_1961
+      citation: UU No. 22 Tahun 1961
+      tentang: Perguruan Tinggi
+      url: https://peraturan.bpk.go.id/Details/51255/uu-no-22-tahun-1961
+      note: null
+    - id: uu_12_1954
+      citation: UU No. 12 Tahun 1954
+      tentang: Pernyataan Berlakunya Undang-Undang Nr 4 Tahun 1950 dari Republik Indonesia
+        Dahulu tentang Dasar-Dasar Pendidikan dan Pengajaran di Sekolah Untuk Seluruh
+        Indonesia
+      url: https://peraturan.bpk.go.id/Details/47953/uu-no-12-tahun-1954
+      note: null
+uji_materi: null

@@ -6,14 +6,13 @@ year: 1988
 title: Undang-Undang Nomor 2 Tahun 1988 tentang Prajurit Angkatan Bersenjata Ri
 tentang: PRAJURIT ANGKATAN BERSENJATA RI
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 34 Tahun 2004 Tentang Tentara
-  Nasional Indonesia'
+status: tidak_berlaku
 tanggal_penetapan: '1988-03-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1988
-source_pdf_url: https://peraturan.go.id/files/uu2-1988.pdf
+source_url: https://peraturan.bpk.go.id/Details/46808/uu-no-2-tahun-1988
+source_pdf_url: https://peraturan.bpk.go.id/Download/35581/UU%20Nomor%202%20Tahun%201988.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,8 +21,7 @@ relationships:
   - uu_15_1953
   - uu_16_1953
   - uu_13_1953
-  revoked_by:
-  - uu_34_2004
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -34,4 +32,87 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1988_1988-03-01.txt
   pasal_count: 45
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4b769315ab4fa804e89f7b2a4793b57ac333735edd0b68f390dc4227b43d4ae6
 pdf_sha256: c675e2e396fefbcdee625403cc5f52ebb261845c3c4f1e77441cf63e4003562e
+tanggal_pengundangan: '1988-03-01'
+tanggal_berlaku: '1988-03-01'
+lembaran_negara: 'LN. 1988/ No.4 , TLN NO.3369 , website dpr.go.id : 16 HLM'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1988
+  source_pdf_url: https://peraturan.go.id/files/uu2-1988.pdf
+bpk:
+  id: 46808
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35581/UU%20Nomor%202%20Tahun%201988.pdf
+    bpk_file_id: 35581
+    filename: UU Nomor 2 Tahun 1988.pdf
+    sha256: 4b769315ab4fa804e89f7b2a4793b57ac333735edd0b68f390dc4227b43d4ae6
+    bytes: 170425
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_34_2004
+      citation: UU No. 34 Tahun 2004
+      tentang: Tentara Nasional Indonesia
+      url: https://peraturan.bpk.go.id/Details/40774/uu-no-34-tahun-2004
+      note: null
+    Mencabut:
+    - id: uu_66_1958
+      citation: UU No. 66 Tahun 1958
+      tentang: Wajib-Militer
+      url: https://peraturan.bpk.go.id/Details/52340/uu-no-66-tahun-1958
+      note: null
+    - id: uu_55_1958
+      citation: UU No. 55 Tahun 1958
+      tentang: Penetapan Undang-Undang Darurat No. 20 Tahun 1955 tentang Peraturan-Peraturan
+        Mengenai Kedudukan Anggota Angkatan Perang Dalam Dinas Ketentaraan Sesudah
+        Akhir Tahun 1955 (Lembaran-Negara Tahun 1955 No. 78) Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/52267/uu-no-55-tahun-1958
+      note: null
+    - id: uu_19_1958
+      citation: UU No. 19 Tahun 1958
+      tentang: Penetapan Undang-Undang Darurat No. 26 Tahun 1957 Tentang Anggota Angkatan
+        Perang Berdasarkan Ikatan Dinas Sukarela (Militer Sukarela) (Lembaran-Negara
+        Tahun 1957 No. 83) Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/51716/uu-no-19-tahun-1958
+      note: null
+    - id: uu_19_1953
+      citation: UU No. 19 Tahun 1953
+      tentang: Pengubahan Bea Pembubaran yang Ditetapkan dalam Pasal 5 Ayat 2 "Jachtordonnantie
+        Java en Madura 1940" (Staatsblad 1939 Nr 733)
+      url: https://peraturan.bpk.go.id/Details/45319/uu-no-19-tahun-1953
+      note: null
+    - id: uu_17_1953
+      citation: UU No. 17 Tahun 1953
+      tentang: Akibat-Akibat dari pada Undang-Undang tentang Kewajiban Anggota Angkatan
+        Perang untuk Tetap dalam Dinas Ketentaraan
+      url: https://peraturan.bpk.go.id/Details/45308/uu-no-17-tahun-1953
+      note: null
+    - id: uu_16_1953
+      citation: UU No. 16 Tahun 1953
+      tentang: Kedudukan Hukum Anggota Angkatan Perang
+      url: https://peraturan.bpk.go.id/Details/45305/uu-no-16-tahun-1953
+      note: null
+    - id: uu_15_1953
+      citation: UU No. 15 Tahun 1953
+      tentang: Penerimaan Anggota Angkatan Perang Sukarela
+      url: https://peraturan.bpk.go.id/Details/45303/uu-no-15-tahun-1953
+      note: null
+    - id: uu_13_1953
+      citation: UU No. 13 Tahun 1953
+      tentang: Penetapan Peraturan Dalam Undang-Undang Darurat Nomor 12 Tahun 1952
+        (Lembaran-Negara Nomor 84 Tahun 1952) tentang Kewajiban Anggota Angkatan Perang
+        untuk Tetap Dalam Dinas Ketentaraan Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/45295/uu-no-13-tahun-1953
+      note: null
+    - id: uu_12_1953
+      citation: UU No. 12 Tahun 1953
+      tentang: Penetapan Peraturan Dalam Undang-Undang Darurat Nomor 4 Tahun 1950
+        tentang Penerimaan Anggota Angkatan Perang R.I.S. (Lembaran-Negara Nomor 5
+        Tahun 1950) Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/45293/uu-no-12-tahun-1953
+      note: null
+uji_materi: null

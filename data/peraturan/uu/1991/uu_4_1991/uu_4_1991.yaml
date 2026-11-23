@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 4 Tahun 1991 tentang Perhitungan Anggaran Negara Tahu
 tentang: PERHITUNGAN ANGGARAN NEGARA TAHUN ANGGARAN 1988/1989
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1991-07-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1991
-source_pdf_url: https://peraturan.go.id/files/UU+NO+4+TH+1991.pdf
+source_url: https://peraturan.bpk.go.id/Details/46656/uu-no-4-tahun-1991
+source_pdf_url: https://peraturan.bpk.go.id/Download/35394/UU%20Nomor%204%20Tahun%201991.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_4_1991_1991
+- id: uu_4_1991_1991-07-18
   kind: asli
   source: official
-  date: null
+  date: '1991-07-18'
   date_basis: tanggal_penetapan
-  text: uu_4_1991_1991.txt
+  text: uu_4_1991_1991-07-18.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6e88a83ca7e0deeb09df87d722431069e9da85fdab57b96853f348bb15716557
 pdf_sha256: 6e88a83ca7e0deeb09df87d722431069e9da85fdab57b96853f348bb15716557
+tanggal_pengundangan: '1991-07-18'
+tanggal_berlaku: '1991-07-18'
+lembaran_negara: 'LN. 1991, LL SETNEG : 3 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1991
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+4+TH+1991.pdf
+bpk:
+  id: 46656
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35394/UU%20Nomor%204%20Tahun%201991.pdf
+    bpk_file_id: 35394
+    filename: UU Nomor 4 Tahun 1991.pdf
+    sha256: 6e88a83ca7e0deeb09df87d722431069e9da85fdab57b96853f348bb15716557
+    bytes: 26721
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -6,13 +6,13 @@ year: 1992
 title: Undang-Undang Nomor 9 Tahun 1992 tentang Keimigrasian
 tentang: KEIMIGRASIAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 6 Tahun 2011 Tentang Keimigrasian'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1992-03-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1992
-source_pdf_url: https://peraturan.go.id/files/UU+NO+9+TH+1992.pdf
+source_url: https://peraturan.bpk.go.id/Details/46601/uu-no-9-tahun-1992
+source_pdf_url: https://peraturan.bpk.go.id/Download/35319/UU%20Nomor%209%20Tahun%201992.pdf
 relationships:
   amends: []
   amended_by:
@@ -20,16 +20,50 @@ relationships:
   revokes:
   - uu_8_1955
   - uu_9_1953
-  revoked_by:
-  - uu_6_2011
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_9_1992_1992
+- id: uu_9_1992_1992-03-31
   kind: asli
   source: official
-  date: null
+  date: '1992-03-31'
   date_basis: tanggal_penetapan
-  text: uu_9_1992_1992.txt
+  text: uu_9_1992_1992-03-31.txt
   pasal_count: 68
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f6abab8567344048ef3940f0add3bc6da80fe8fd5aeeb9f69d372ce5fb4b6bd9
 pdf_sha256: f6abab8567344048ef3940f0add3bc6da80fe8fd5aeeb9f69d372ce5fb4b6bd9
+tanggal_pengundangan: '1992-03-31'
+tanggal_berlaku: '1992-03-31'
+lembaran_negara: 'LN. 1992, LL SETNEG : 29 HLM'
+subjek: KEWARGANEGARAAN DAN IMIGRASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1992
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+9+TH+1992.pdf
+bpk:
+  id: 46601
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35319/UU%20Nomor%209%20Tahun%201992.pdf
+    bpk_file_id: 35319
+    filename: UU Nomor 9 Tahun 1992.pdf
+    sha256: f6abab8567344048ef3940f0add3bc6da80fe8fd5aeeb9f69d372ce5fb4b6bd9
+    bytes: 146605
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_6_2011
+      citation: UU No. 6 Tahun 2011
+      tentang: Keimigrasian
+      url: https://peraturan.bpk.go.id/Details/39140/uu-no-6-tahun-2011
+      note: null
+    Diubah dengan:
+    - id: uu_37_2009
+      citation: UU No. 37 Tahun 2009
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 3 tahun
+        2009 tentang Perubahan Atas Undang-Undang Nomor 9 tahun 1992 tentang Keimigrasian
+        menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/38780/uu-no-37-tahun-2009
+      note: null
+uji_materi: null

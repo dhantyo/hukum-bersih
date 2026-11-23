@@ -6,27 +6,53 @@ year: 1992
 title: Undang-Undang Nomor 13 Tahun 1992 tentang Perkeretaapian
 tentang: PERKERETAAPIAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 23 Tahun 2007 Tentang Perkeretaapian'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1992-05-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1992
-source_pdf_url: https://peraturan.go.id/files/UU+NO+13+TH+1992.pdf
+source_url: https://peraturan.bpk.go.id/Details/46605/uu-no-13-tahun-1992
+source_pdf_url: https://peraturan.bpk.go.id/Download/35323/UU%20Nomor%2013%20Tahun%201992.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_23_2007
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_13_1992_1992
+- id: uu_13_1992_1992-05-11
   kind: asli
   source: official
-  date: null
+  date: '1992-05-11'
   date_basis: tanggal_penetapan
-  text: uu_13_1992_1992.txt
+  text: uu_13_1992_1992-05-11.txt
   pasal_count: 46
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f158bf4758f3ad85452e8a7b198caa56e220f35cd03314104f8c18fcca117d3e
 pdf_sha256: f158bf4758f3ad85452e8a7b198caa56e220f35cd03314104f8c18fcca117d3e
+tanggal_pengundangan: '1992-05-11'
+tanggal_berlaku: '1992-09-17'
+lembaran_negara: 'LN. 1992, LL SETNEG : 19 HLM'
+subjek: TRANSPORTASI DARAT / LAUT / UDARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1992
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+13+TH+1992.pdf
+bpk:
+  id: 46605
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35323/UU%20Nomor%2013%20Tahun%201992.pdf
+    bpk_file_id: 35323
+    filename: UU Nomor 13 Tahun 1992.pdf
+    sha256: f158bf4758f3ad85452e8a7b198caa56e220f35cd03314104f8c18fcca117d3e
+    bytes: 111815
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_23_2007
+      citation: UU No. 23 Tahun 2007
+      tentang: Perkeretaapian
+      url: https://peraturan.bpk.go.id/Details/39896/uu-no-23-tahun-2007
+      note: null
+uji_materi: null

@@ -6,28 +6,53 @@ year: 1992
 title: Undang-Undang Nomor 5 Tahun 1992 tentang Benda Cagar Budaya
 tentang: BENDA CAGAR BUDAYA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 11 Tahun 2010 Tentang Cagar
-  Budaya'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1992-03-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1992
-source_pdf_url: https://peraturan.go.id/files/UU+NO+5+TH+1992.pdf
+source_url: https://peraturan.bpk.go.id/Details/46597/uu-no-5-tahun-1992
+source_pdf_url: https://peraturan.bpk.go.id/Download/35315/UU%20Nomor%205%20Tahun%201992.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_11_2010
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_5_1992_1992
+- id: uu_5_1992_1992-03-21
   kind: asli
   source: official
-  date: null
+  date: '1992-03-21'
   date_basis: tanggal_penetapan
-  text: uu_5_1992_1992.txt
+  text: uu_5_1992_1992-03-21.txt
   pasal_count: 32
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 902e7c5a039c00b1edff965b68c0171357a6d5d4a6ab92e0cb87efdc1e3ae89e
 pdf_sha256: 902e7c5a039c00b1edff965b68c0171357a6d5d4a6ab92e0cb87efdc1e3ae89e
+tanggal_pengundangan: '1992-03-21'
+tanggal_berlaku: '1992-03-21'
+lembaran_negara: 'LN. 1993/ No. 10, TLN NO. 3513, LL SETNEG : 5 HLM'
+subjek: PARIWISATA DAN KEBUDAYAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1992
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+5+TH+1992.pdf
+bpk:
+  id: 46597
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35315/UU%20Nomor%205%20Tahun%201992.pdf
+    bpk_file_id: 35315
+    filename: UU Nomor 5 Tahun 1992.pdf
+    sha256: 902e7c5a039c00b1edff965b68c0171357a6d5d4a6ab92e0cb87efdc1e3ae89e
+    bytes: 77688
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_11_2010
+      citation: UU No. 11 Tahun 2010
+      tentang: Cagar Budaya
+      url: https://peraturan.bpk.go.id/Details/38552/uu-no-11-tahun-2010
+      note: null
+uji_materi: null

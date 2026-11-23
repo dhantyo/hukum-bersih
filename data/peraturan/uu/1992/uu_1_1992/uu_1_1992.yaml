@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 1 Tahun 1992 tentang Pembentukan Kotamadya Daerah Tin
 tentang: PEMBENTUKAN KOTAMADYA DAERAH TINGKAT II DENPASAR
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1992-01-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1992
-source_pdf_url: https://peraturan.go.id/files/UU+NO+1+TH+1992.pdf
+source_url: https://peraturan.bpk.go.id/Details/46590/uu-no-1-tahun-1992
+source_pdf_url: https://peraturan.bpk.go.id/Download/35308/UU%20Nomor%201%20Tahun%201992.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,38 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_1_1992_1992
+- id: uu_1_1992_1992-01-15
   kind: asli
   source: official
-  date: null
+  date: '1992-01-15'
   date_basis: tanggal_penetapan
-  text: uu_1_1992_1992.txt
+  text: uu_1_1992_1992-01-15.txt
   pasal_count: 18
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ef19860e721fd60fbf43eb91f309263a8d9074b17ff5cea4f11ba00d85935d13
 pdf_sha256: ef19860e721fd60fbf43eb91f309263a8d9074b17ff5cea4f11ba00d85935d13
+tanggal_pengundangan: '1992-01-15'
+tanggal_berlaku: '1992-01-15'
+lembaran_negara: 'LN. 1993, LL SETNEG : 11 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1992
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+1+TH+1992.pdf
+bpk:
+  id: 46590
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35308/UU%20Nomor%201%20Tahun%201992.pdf
+    bpk_file_id: 35308
+    filename: UU Nomor 1 Tahun 1992.pdf
+    sha256: ef19860e721fd60fbf43eb91f309263a8d9074b17ff5cea4f11ba00d85935d13
+    bytes: 58168
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: pp_20_1978
+      citation: PP No. 20 Tahun 1978
+      tentang: Pembentukan Kota Administratif Denpasar
+      url: https://peraturan.bpk.go.id/Details/66938/pp-no-20-tahun-1978
+      note: null
+uji_materi: null

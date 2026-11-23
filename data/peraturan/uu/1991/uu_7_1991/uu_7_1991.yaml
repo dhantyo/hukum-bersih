@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 7 Tahun 1991 tentang Perubahan Uu 7-1983 Tentang Paja
 tentang: PERUBAHAN UU 7-1983 TENTANG PAJAK PENGHASILAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1991-12-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1991
-source_pdf_url: https://peraturan.go.id/files/UU+NO+7+TH+1991.pdf
+source_url: https://peraturan.bpk.go.id/Details/46659/uu-no-7-tahun-1991
+source_pdf_url: https://peraturan.bpk.go.id/Download/35397/UU%20Nomor%207%20Tahun%201991.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,57 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_7_1991_1991
+- id: uu_7_1991_1991-12-30
   kind: asli
   source: official
-  date: null
+  date: '1991-12-30'
   date_basis: tanggal_penetapan
-  text: uu_7_1991_1991.txt
+  text: uu_7_1991_1991-12-30.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 183dd8aac7a58c3b1231669f0e5648b59dc4b474ed7327fbcece4086f40a5cf7
 pdf_sha256: 183dd8aac7a58c3b1231669f0e5648b59dc4b474ed7327fbcece4086f40a5cf7
+tanggal_pengundangan: '1991-12-30'
+tanggal_berlaku: '1992-01-01'
+lembaran_negara: 'LN. 1991, LL SETNEG : 7 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1991
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+7+TH+1991.pdf
+bpk:
+  id: 46659
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35397/UU%20Nomor%207%20Tahun%201991.pdf
+    bpk_file_id: 35397
+    filename: UU Nomor 7 Tahun 1991.pdf
+    sha256: 183dd8aac7a58c3b1231669f0e5648b59dc4b474ed7327fbcece4086f40a5cf7
+    bytes: 60046
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_36_2008
+      citation: UU No. 36 Tahun 2008
+      tentang: Perubahan Keempat Atas Undang-Undang Nomor 7 Tahun 1983 tentang Pajak
+        Penghasilan
+      url: https://peraturan.bpk.go.id/Details/39704/uu-no-36-tahun-2008
+      note: null
+    - id: uu_17_2000
+      citation: UU No. 17 Tahun 2000
+      tentang: Perubahan Ketiga atas Undang-Undang Nomor 7 Tahun 1983 tentang Pajak
+        Penghasilan
+      url: https://peraturan.bpk.go.id/Details/44968/uu-no-17-tahun-2000
+      note: null
+    - id: uu_10_1994
+      citation: UU No. 10 Tahun 1994
+      tentang: Perubahan atas Undang-Undang Nomor 7 Tahun 1983 tentang Pajak Penghasilan
+        sebagaimana telah Diubah Dengan Undang-Undang Nomor 7 Tahun 1991
+      url: https://peraturan.bpk.go.id/Details/46232/uu-no-10-tahun-1994
+      note: null
+    Mengubah:
+    - id: uu_7_1983
+      citation: UU No. 7 Tahun 1983
+      tentang: Pajak Penghasilan
+      url: https://peraturan.bpk.go.id/Details/46988/uu-no-7-tahun-1983
+      note: null
+uji_materi: null

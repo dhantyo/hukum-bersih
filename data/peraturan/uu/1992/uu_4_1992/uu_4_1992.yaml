@@ -6,28 +6,61 @@ year: 1992
 title: Undang-Undang Nomor 4 Tahun 1992 tentang Perumahan Dan Pemukiman
 tentang: PERUMAHAN DAN PEMUKIMAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 1 Tahun 2011 Tentang Perumahan
-  dan Kawasan Pemukiman'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1992-03-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1992
-source_pdf_url: https://peraturan.go.id/files/UU+NO+4+TH+1992.pdf
+source_url: https://peraturan.bpk.go.id/Details/46596/uu-no-4-tahun-1992
+source_pdf_url: https://peraturan.bpk.go.id/Download/35314/UU%20Nomor%204%20Tahun%201992.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_1_2011
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_4_1992_1992
+- id: uu_4_1992_1992-03-10
   kind: asli
   source: official
-  date: null
+  date: '1992-03-10'
   date_basis: tanggal_penetapan
-  text: uu_4_1992_1992.txt
+  text: uu_4_1992_1992-03-10.txt
   pasal_count: 42
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0f05273dbd7649a137524a1b20c5fdc4ba90e8ed8e86248f373217c0ac3c7ab5
 pdf_sha256: 0f05273dbd7649a137524a1b20c5fdc4ba90e8ed8e86248f373217c0ac3c7ab5
+tanggal_pengundangan: '1992-03-10'
+tanggal_berlaku: '1992-03-10'
+lembaran_negara: 'LN. 1992, LL SETNEG : 20 HLM'
+subjek: BANTUAN, SUMBANGAN, BENCANA / KEBENCANAAN, DAN PENANGGULANGAN BENCANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1992
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+4+TH+1992.pdf
+bpk:
+  id: 46596
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35314/UU%20Nomor%204%20Tahun%201992.pdf
+    bpk_file_id: 35314
+    filename: UU Nomor 4 Tahun 1992.pdf
+    sha256: 0f05273dbd7649a137524a1b20c5fdc4ba90e8ed8e86248f373217c0ac3c7ab5
+    bytes: 142601
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_1_2011
+      citation: UU No. 1 Tahun 2011
+      tentang: Perumahan dan Kawasan Permukiman
+      url: https://peraturan.bpk.go.id/Details/39128/uu-no-1-tahun-2011
+      note: null
+    Mencabut:
+    - id: uu_1_1964
+      citation: UU No. 1 Tahun 1964
+      tentang: Penetapan peraturan pemerintah pengganti undang-undang No. 6 tahun
+        1962 tentang Pokok-Pokok Perumahan (Lembaran Negara Tahun 1962 NO. 40) Menjadi
+        Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/50228/uu-no-1-tahun-1964
+      note: null
+uji_materi: null

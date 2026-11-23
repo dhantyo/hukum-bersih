@@ -9,12 +9,12 @@ tentang: TAMBAHAN DAN PERUBAHAN ATAS ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHU
   ANGGARAN 1988/1989
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1989-07-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1989
-source_pdf_url: https://peraturan.go.id/files/uu4-1989.pdf
+source_url: https://peraturan.bpk.go.id/Details/46800/uu-no-4-tahun-1989
+source_pdf_url: https://peraturan.bpk.go.id/Download/35572/UU%20Nomor%204%20Tahun%201989.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,38 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_4_1989_1989
+- id: uu_4_1989_1989-07-20
   kind: asli
   source: official
-  date: null
+  date: '1989-07-20'
   date_basis: tanggal_penetapan
-  text: uu_4_1989_1989.txt
+  text: uu_4_1989_1989-07-20.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7cfc19fd1413a4ea5d66823dedd904affca55bc7cd516c65fac0d0def0b75d07
 pdf_sha256: 7cfc19fd1413a4ea5d66823dedd904affca55bc7cd516c65fac0d0def0b75d07
+tanggal_pengundangan: '1989-07-20'
+tanggal_berlaku: '1988-04-01'
+lembaran_negara: 'LN. 1989/ No.22 , TLN NO. 3393, LL SETNEG : 3 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1989
+  source_pdf_url: https://peraturan.go.id/files/uu4-1989.pdf
+bpk:
+  id: 46800
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35572/UU%20Nomor%204%20Tahun%201989.pdf
+    bpk_file_id: 35572
+    filename: UU Nomor 4 Tahun 1989.pdf
+    sha256: 7cfc19fd1413a4ea5d66823dedd904affca55bc7cd516c65fac0d0def0b75d07
+    bytes: 25770
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_3_1988
+      citation: UU No. 3 Tahun 1988
+      tentang: Anggaran Pendapatan Dan Belanja Negara Tahun Anggaran 1988/1989
+      url: https://peraturan.bpk.go.id/Details/46810/uu-no-3-tahun-1988
+      note: null
+uji_materi: null

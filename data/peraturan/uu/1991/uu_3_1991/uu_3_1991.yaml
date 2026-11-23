@@ -9,12 +9,12 @@ tentang: TAMBAHAN DAN PERUBAHAN ATAS ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHU
   ANGGARAN 1990/1991
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1991-07-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1991
-source_pdf_url: https://peraturan.go.id/files/UU+NO+3+TH+1991.pdf
+source_url: https://peraturan.bpk.go.id/Details/46655/uu-no-3-tahun-1991
+source_pdf_url: https://peraturan.bpk.go.id/Download/35393/UU%20Nomor%203%20Tahun%201991.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_3_1991_1991
+- id: uu_3_1991_1991-07-18
   kind: asli
   source: official
-  date: null
+  date: '1991-07-18'
   date_basis: tanggal_penetapan
-  text: uu_3_1991_1991.txt
+  text: uu_3_1991_1991-07-18.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b90b150007d36f7850f81460760d104ee73eb5baa330dd71f184ffc13d1d98f3
 pdf_sha256: b90b150007d36f7850f81460760d104ee73eb5baa330dd71f184ffc13d1d98f3
+tanggal_pengundangan: '1991-07-18'
+tanggal_berlaku: '1990-04-01'
+lembaran_negara: 'LN. 1991, LL SETNEG : 4 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1991
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+3+TH+1991.pdf
+bpk:
+  id: 46655
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35393/UU%20Nomor%203%20Tahun%201991.pdf
+    bpk_file_id: 35393
+    filename: UU Nomor 3 Tahun 1991.pdf
+    sha256: b90b150007d36f7850f81460760d104ee73eb5baa330dd71f184ffc13d1d98f3
+    bytes: 34039
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

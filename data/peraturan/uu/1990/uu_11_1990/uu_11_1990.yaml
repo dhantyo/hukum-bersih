@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 11 Tahun 1990 tentang Susunan Pemerintahan Daerah Khu
   Ibukota Negara Ri Jakarta
 tentang: SUSUNAN PEMERINTAHAN DAERAH KHUSUS IBUKOTA NEGARA RI JAKARTA
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '1990-11-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1990
-source_pdf_url: https://peraturan.go.id/files/uu11-1990.pdf
+source_url: https://peraturan.bpk.go.id/Details/46741/uu-no-11-tahun-1990
+source_pdf_url: https://peraturan.bpk.go.id/Download/35494/UU%20Nomor%2011%20Tahun%201990.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,3 +30,36 @@ versions:
   text: uu_11_1990_1990-11-14.txt
   pasal_count: 21
 pdf_sha256: a3a33fde9afbef7cb1549291ea5d25d8fad445c7736068573198ed81adc34e56
+tanggal_pengundangan: '1990-11-14'
+tanggal_berlaku: '1990-11-14'
+lembaran_negara: 'website peraturan.go.id : 8 hlm'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH - STRUKTUR ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1990
+  source_pdf_url: https://peraturan.go.id/files/uu11-1990.pdf
+bpk:
+  id: 46741
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35494/UU%20Nomor%2011%20Tahun%201990.pdf
+    bpk_file_id: 35494
+    filename: UU Nomor 11 Tahun 1990.pdf
+    sha256: 55360492b158b43f1602c4601a84002d0d964aa5f6e3ca2e814180612922ff21
+    bytes: 52125
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_34_1999
+      citation: UU No. 34 Tahun 1999
+      tentang: Pemerintahan Propinsi Daerah Khusus Ibukota Negara Republik Indonesia
+        Jakarta
+      url: https://peraturan.bpk.go.id/Details/45355/uu-no-34-tahun-1999
+      note: null
+    Mencabut:
+    - id: uu_10_1964
+      citation: UU No. 10 Tahun 1964
+      tentang: Pernyataan Daerah Khusus Ibukota Jakarta Raya Tetap Sebagai Ibu Kota
+        Negera Republik Indonesia Dengan Nama Jakarta
+      url: https://peraturan.bpk.go.id/Details/50294/uu-no-10-tahun-1964
+      note: null
+uji_materi: null
+reparse_error: 'v12: 8 pasal, stored text has 21'

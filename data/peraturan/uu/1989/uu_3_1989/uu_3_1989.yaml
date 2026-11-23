@@ -6,28 +6,61 @@ year: 1989
 title: Undang-Undang Nomor 3 Tahun 1989 tentang Telekomunikasi
 tentang: TELEKOMUNIKASI
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 36 Tahun 1999 Tentang Telekomunikasi'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1989-04-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1989
-source_pdf_url: https://peraturan.go.id/files/uu3-1989.pdf
+source_url: https://peraturan.bpk.go.id/Details/46798/uu-no-3-tahun-1989
+source_pdf_url: https://peraturan.bpk.go.id/Download/35570/UU%20Nomor%203%20Tahun%201989.pdf
 relationships:
   amends: []
   amended_by: []
   revokes:
   - uu_5_1964
-  revoked_by:
-  - uu_36_1999
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_3_1989_1989
+- id: uu_3_1989_1989-04-01
   kind: asli
   source: official
-  date: null
+  date: '1989-04-01'
   date_basis: tanggal_penetapan
-  text: uu_3_1989_1989.txt
+  text: uu_3_1989_1989-04-01.txt
   pasal_count: 43
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ebe932aff0d4d3009de7d5d0978572d29b0a1f172c46d1e529acb05b489719ec
 pdf_sha256: ebe932aff0d4d3009de7d5d0978572d29b0a1f172c46d1e529acb05b489719ec
+tanggal_pengundangan: '1989-04-01'
+tanggal_berlaku: '1989-04-01'
+lembaran_negara: 'LN. 1989/ No.11, TLN NO. 3391, Website dpr.go.id : 12 HLM'
+subjek: ILMU PENGETAHUAN DAN TEKNOLOGI - TELEKOMUNIKASI, INFORMATIKA, SIBER, DAN INTERNET
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1989
+  source_pdf_url: https://peraturan.go.id/files/uu3-1989.pdf
+bpk:
+  id: 46798
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35570/UU%20Nomor%203%20Tahun%201989.pdf
+    bpk_file_id: 35570
+    filename: UU Nomor 3 Tahun 1989.pdf
+    sha256: ebe932aff0d4d3009de7d5d0978572d29b0a1f172c46d1e529acb05b489719ec
+    bytes: 97445
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_36_1999
+      citation: UU No. 36 Tahun 1999
+      tentang: Telekomunikasi
+      url: https://peraturan.bpk.go.id/Details/45357/uu-no-36-tahun-1999
+      note: null
+    Mencabut:
+    - id: uu_5_1964
+      citation: UU No. 5 Tahun 1964
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang No. 6 Tahun1963 Tentang
+        Telekomunikasi (Lembaran Negara Tahun 1963 No. 66) Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/50245/uu-no-5-tahun-1964
+      note: null
+uji_materi: null

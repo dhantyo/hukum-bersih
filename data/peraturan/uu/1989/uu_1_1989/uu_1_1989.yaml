@@ -12,8 +12,8 @@ tanggal_penetapan: '1989-03-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1989
-source_pdf_url: https://peraturan.go.id/files/uu1-1989.pdf
+source_url: https://peraturan.bpk.go.id/Details/46791/uu-no-1-tahun-1989
+source_pdf_url: https://peraturan.bpk.go.id/Download/35563/UU%20Nomor%201%20Tahun%201989.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,3 +30,22 @@ versions:
   text: uu_1_1989_1989-03-27.txt
   pasal_count: 8
 pdf_sha256: c07a12eaf98673c6182a24deceb6cc798ab2db15e2e7707356efaab7aa6d4d13
+tanggal_pengundangan: '1989-03-27'
+tanggal_berlaku: '1989-04-01'
+lembaran_negara: 'LN. 1989/ No. 5, website dpr.go.id : 4 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1989
+  source_pdf_url: https://peraturan.go.id/files/uu1-1989.pdf
+bpk:
+  id: 46791
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35563/UU%20Nomor%201%20Tahun%201989.pdf
+    bpk_file_id: 35563
+    filename: UU Nomor 1 Tahun 1989.pdf
+    sha256: e038d953da138baf1f148d125bad4883b62e2bfa3c8f60df2894fdace3df2eab
+    bytes: 36176
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
+reparse_error: 'v12: new text has 979 words, stored text 2108'

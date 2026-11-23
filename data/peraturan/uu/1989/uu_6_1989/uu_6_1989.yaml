@@ -6,19 +6,18 @@ year: 1989
 title: Undang-Undang Nomor 6 Tahun 1989 tentang Paten
 tentang: PATEN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 14 Tahun 2001 Tentang Paten'
+status: tidak_berlaku
 tanggal_penetapan: '1989-11-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1989
-source_pdf_url: https://peraturan.go.id/files/uu6-1989.pdf
+source_url: https://peraturan.bpk.go.id/Details/37565/uu-no-6-tahun-1989
+source_pdf_url: https://peraturan.bpk.go.id/Download/26658/UU%20Nomor%20%206%20Tahun%201989.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_14_2001
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -29,4 +28,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1989_1989-11-01.txt
   pasal_count: 68
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 63f4702ca8aaf25c301447389d757fdb0a4dc3bc10b12d660358d7f9e8b3dfe2
 pdf_sha256: bec190210c0784d22de37b97d2f6a955bafa6f72315a542ab87dadec55371be0
+tanggal_pengundangan: '1989-11-01'
+tanggal_berlaku: '1991-08-01'
+lembaran_negara: 'LL SETNEG : 56 HLM'
+subjek: HAK ATAS KEKAYAAN INTELEKTUAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1989
+  source_pdf_url: https://peraturan.go.id/files/uu6-1989.pdf
+bpk:
+  id: 37565
+  files:
+  - url: https://peraturan.bpk.go.id/Download/26658/UU%20Nomor%20%206%20Tahun%201989.pdf
+    bpk_file_id: 26658
+    filename: UU Nomor  6 Tahun 1989.pdf
+    sha256: 63f4702ca8aaf25c301447389d757fdb0a4dc3bc10b12d660358d7f9e8b3dfe2
+    bytes: 302405
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_14_2001
+      citation: UU No. 14 Tahun 2001
+      tentang: Paten
+      url: https://peraturan.bpk.go.id/Details/37540/uu-no-14-tahun-2001
+      note: null
+    Diubah dengan:
+    - id: uu_13_1997
+      citation: UU No. 13 Tahun 1997
+      tentang: Perubahan atas Undang-Undang Nomor 6 Tahun 1989 tentang Paten
+      url: https://peraturan.bpk.go.id/Details/37560/uu-no-13-tahun-1997
+      note: null
+uji_materi: null

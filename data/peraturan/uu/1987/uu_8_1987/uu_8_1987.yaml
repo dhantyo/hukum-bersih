@@ -6,19 +6,18 @@ year: 1987
 title: Undang-Undang Nomor 8 Tahun 1987 tentang Protokol
 tentang: PROTOKOL
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 9 Tahun 2010 Tentang Keprotokolan'
+status: tidak_berlaku
 tanggal_penetapan: '1987-09-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1987
-source_pdf_url: https://peraturan.go.id/files/uu8-1987.pdf
+source_url: https://peraturan.bpk.go.id/Details/46828/uu-no-8-tahun-1987
+source_pdf_url: https://peraturan.bpk.go.id/Download/35602/UU%20Nomor%208%20Tahun%201987.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_9_2010
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -29,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1987_1987-09-28.txt
   pasal_count: 9
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7005f163d9f46ec0879e46850ea0ff939813090b6b23486e3d6c33fd99d85b72
 pdf_sha256: 8c3afe68f936618c703ec82d832640b5c1e736b880c9de834f82760c785d7554
+tanggal_pengundangan: '1987-09-28'
+tanggal_berlaku: '1987-09-28'
+lembaran_negara: 'LN. 1987/ No.43 , TLN NO.3363, website dpr.go.id : 4 HLM'
+subjek: KETATANEGARAAN, KENEGARAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1987
+  source_pdf_url: https://peraturan.go.id/files/uu8-1987.pdf
+bpk:
+  id: 46828
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35602/UU%20Nomor%208%20Tahun%201987.pdf
+    bpk_file_id: 35602
+    filename: UU Nomor 8 Tahun 1987.pdf
+    sha256: 7005f163d9f46ec0879e46850ea0ff939813090b6b23486e3d6c33fd99d85b72
+    bytes: 46529
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_9_2010
+      citation: UU No. 9 Tahun 2010
+      tentang: Keprotokolan
+      url: https://peraturan.bpk.go.id/Details/38549/uu-no-9-tahun-2010
+      note: null
+uji_materi: null

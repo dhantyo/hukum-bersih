@@ -7,28 +7,54 @@ title: Undang-Undang Nomor 10 Tahun 1992 tentang Perkembangan Kependudukan Dan P
   Keluarga Sejahtera
 tentang: PERKEMBANGAN KEPENDUDUKAN DAN PEMBANGUNAN KELUARGA SEJAHTERA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 52 Tahun 2009 Tentang Perkembangan
-  Kependudukan dan Pembangunan Keluarga'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1992-04-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1992
-source_pdf_url: https://peraturan.go.id/files/UU+NO+10+TH+1992.pdf
+source_url: https://peraturan.bpk.go.id/Details/46602/uu-no-10-tahun-1992
+source_pdf_url: https://peraturan.bpk.go.id/Download/35320/UU%20Nomor%2010%20Tahun%201992.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_52_2009
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_10_1992_1992
+- id: uu_10_1992_1992-04-16
   kind: asli
   source: official
-  date: null
+  date: '1992-04-16'
   date_basis: tanggal_penetapan
-  text: uu_10_1992_1992.txt
+  text: uu_10_1992_1992-04-16.txt
   pasal_count: 29
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 97f141961fb74d1b217a417609187f08f2cd3d28ed815a0f2869eae20efcb203
 pdf_sha256: 97f141961fb74d1b217a417609187f08f2cd3d28ed815a0f2869eae20efcb203
+tanggal_pengundangan: '1992-04-16'
+tanggal_berlaku: '1992-04-16'
+lembaran_negara: 'LN. 1992, LL SETNEG : 18 HLM'
+subjek: KEPENDUDUKAN DAN PERKAWINAN - BANTUAN, SUMBANGAN, BENCANA / KEBENCANAAN, DAN
+  PENANGGULANGAN BENCANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1992
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+10+TH+1992.pdf
+bpk:
+  id: 46602
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35320/UU%20Nomor%2010%20Tahun%201992.pdf
+    bpk_file_id: 35320
+    filename: UU Nomor 10 Tahun 1992.pdf
+    sha256: 97f141961fb74d1b217a417609187f08f2cd3d28ed815a0f2869eae20efcb203
+    bytes: 110159
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_52_2009
+      citation: UU No. 52 Tahun 2009
+      tentang: Perkembangan Kependudukan dan Pembangunan Keluarga
+      url: https://peraturan.bpk.go.id/Details/38852/uu-no-52-tahun-2009
+      note: null
+uji_materi: null

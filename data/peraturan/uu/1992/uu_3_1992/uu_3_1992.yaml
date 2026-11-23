@@ -6,28 +6,84 @@ year: 1992
 title: Undang-Undang Nomor 3 Tahun 1992 tentang Jaminan Sosial Tenaga Kerja
 tentang: JAMINAN SOSIAL TENAGA KERJA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 24 Tahun 2011 Tentang Badan
-  Penyelenggara Jaminan Sosial'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1992-02-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1992
-source_pdf_url: https://peraturan.go.id/files/UU+NO+3+TH+1992.pdf
+source_url: https://peraturan.bpk.go.id/Details/46595/uu-no-3-tahun-1992
+source_pdf_url: https://peraturan.bpk.go.id/Download/35313/UU%20Nomor%203%20Tahun%201992.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_24_2011
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_3_1992_1992
+- id: uu_3_1992_1992-02-17
   kind: asli
   source: official
-  date: null
+  date: '1992-02-17'
   date_basis: tanggal_penetapan
-  text: uu_3_1992_1992.txt
+  text: uu_3_1992_1992-02-17.txt
   pasal_count: 35
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a11c6c254d7f92804cec04e70a3c1fa909bddd77d72a52b3622998bc422b9979
 pdf_sha256: a11c6c254d7f92804cec04e70a3c1fa909bddd77d72a52b3622998bc422b9979
+tanggal_pengundangan: '1992-02-17'
+tanggal_berlaku: '1992-02-17'
+lembaran_negara: 'LN. 1992, LL SETNEG : 19 HLM'
+subjek: KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1992
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+3+TH+1992.pdf
+bpk:
+  id: 46595
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35313/UU%20Nomor%203%20Tahun%201992.pdf
+    bpk_file_id: 35313
+    filename: UU Nomor 3 Tahun 1992.pdf
+    sha256: a11c6c254d7f92804cec04e70a3c1fa909bddd77d72a52b3622998bc422b9979
+    bytes: 111892
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_24_2011
+      citation: UU No. 24 Tahun 2011
+      tentang: Badan Penyelenggara Jaminan Sosial
+      url: https://peraturan.bpk.go.id/Details/39268/uu-no-24-tahun-2011
+      note: null
+    Mencabut:
+    - id: pp_3_1951
+      citation: PP No. 3 Tahun 1951
+      tentang: Pernyataan Berlakunya "Peraturan Kecelakaan Tahun 1947" (Peraturan
+        Pemerintah No. 2 Tahun 1948), dari Republik Indonesia, sebagaimana Telah Diubah
+        Dalam Peraturan Pemerintah No. 18 Tahun 1948, Untuk Seluruh Indonesia.
+      url: https://peraturan.bpk.go.id/Details/77376/pp-no-3-tahun-1951
+      note: null
+    - id: uu_2_1951
+      citation: UU No. 2 Tahun 1951
+      tentang: Pernyataan Berlakunya Undang-Undang Kecelakaan Tahun 1947 Nr. 33, dari
+        Republik Indonesia untuk Seluruh Indonesia
+      url: https://peraturan.bpk.go.id/Details/39813/uu-no-2-tahun-1951
+      note: null
+    - id: pp_2_1948
+      citation: PP No. 2 Tahun 1948
+      tentang: Peraturan Kecelakaan 1947
+      url: https://peraturan.bpk.go.id/Details/63004/pp-no-2-tahun-1948
+      note: null
+    - id: pp_18_1948
+      citation: PP No. 18 Tahun 1948
+      tentang: Mengadakan Perubahan Dalam Peraturan Pemerintah No. 2, Tahun 1948 Dari
+        Hal Peraturan Kecelakaan
+      url: https://peraturan.bpk.go.id/Details/63046/pp-no-18-tahun-1948
+      note: null
+    - id: uu_33_1947
+      citation: UU No. 33 Tahun 1947
+      tentang: Pembayaran Ganti Kerugian Kepada Buruh yang Mendapat Kecelakaan Berhubung
+        Dengan Hubungan Kerja
+      url: https://peraturan.bpk.go.id/Details/25367/uu-no-33-tahun-1947
+      note: null
+uji_materi: null

@@ -6,28 +6,53 @@ year: 1992
 title: Undang-Undang Nomor 11 Tahun 1992 tentang Dana Pensiun
 tentang: DANA PENSIUN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 4 Tahun 2023 Tentang Pengembangan
-  dan Penguatan Sektor Keuangan'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1992-04-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1992
-source_pdf_url: https://peraturan.go.id/files/UU+NO+11+TH+1992.pdf
+source_url: https://peraturan.bpk.go.id/Details/46603/uu-no-11-tahun-1992
+source_pdf_url: https://peraturan.bpk.go.id/Download/35321/UU%20Nomor%2011%20Tahun%201992.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_4_2023
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_11_1992_1992
+- id: uu_11_1992_1992-04-20
   kind: asli
   source: official
-  date: null
+  date: '1992-04-20'
   date_basis: tanggal_penetapan
-  text: uu_11_1992_1992.txt
+  text: uu_11_1992_1992-04-20.txt
   pasal_count: 63
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4d47e6d152ce04d670a9ac479d3304b5ea671fc362943168a1b348a696567176
 pdf_sha256: 4d47e6d152ce04d670a9ac479d3304b5ea671fc362943168a1b348a696567176
+tanggal_pengundangan: '1992-04-20'
+tanggal_berlaku: '1992-04-20'
+lembaran_negara: 'LN. 1992, LL SETNEG : 34 HLM'
+subjek: KEPEGAWAIAN, APARATUR NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1992
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+11+TH+1992.pdf
+bpk:
+  id: 46603
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35321/UU%20Nomor%2011%20Tahun%201992.pdf
+    bpk_file_id: 35321
+    filename: UU Nomor 11 Tahun 1992.pdf
+    sha256: 4d47e6d152ce04d670a9ac479d3304b5ea671fc362943168a1b348a696567176
+    bytes: 177441
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+uji_materi: null

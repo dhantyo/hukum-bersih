@@ -11,8 +11,8 @@ tanggal_penetapan: '1990-10-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1990
-source_pdf_url: https://peraturan.go.id/files/uu8-1990.pdf
+source_url: https://peraturan.bpk.go.id/Details/46713/uu-no-8-tahun-1990
+source_pdf_url: https://peraturan.bpk.go.id/Download/35459/UU%20Nomor%208%20Tahun%201990.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,3 +29,33 @@ versions:
   text: uu_8_1990_1990-10-13.txt
   pasal_count: 16
 pdf_sha256: 987fd88e3be8a615a39274439eb38b74c728a816e11dcca21425a3d8c73bcbe2
+tanggal_pengundangan: '1990-10-13'
+tanggal_berlaku: '1990-10-13'
+lembaran_negara: 'website peraturan.go.id : 7 hlm'
+subjek: ILMU PENGETAHUAN DAN TEKNOLOGI - PENDIDIKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1990
+  source_pdf_url: https://peraturan.go.id/files/uu8-1990.pdf
+bpk:
+  id: 46713
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35459/UU%20Nomor%208%20Tahun%201990.pdf
+    bpk_file_id: 35459
+    filename: UU Nomor 8 Tahun 1990.pdf
+    sha256: 0113bdfe79488bb3802ceb20d958614cfdfa85096aa606b45caf333f62126b5b
+    bytes: 55890
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_6_1956
+      citation: UU No. 6 Tahun 1956
+      tentang: Pembentukan Majelis Ilmu Pengetahuan Indonesia
+      url: https://peraturan.bpk.go.id/Details/51088/uu-no-6-tahun-1956
+      note: null
+    - id: uu_6_1956
+      citation: UU No. 6 Tahun 1956
+      tentang: Pembentukan Majelis Ilmu Pengetahuan Indonesia
+      url: https://peraturan.bpk.go.id/Details/51088/uu-no-6-tahun-1956
+      note: null
+uji_materi: null
+reparse_error: 'v12: 11 pasal, stored text has 16'

@@ -8,20 +8,18 @@ title: Undang-Undang Nomor 1 Tahun 1988 tentang Perubahan Uu 20-1982 Tentang Ket
 tentang: PERUBAHAN UU 20-1982 TENTANG KETENTUAN-KETENTUAN POKOK PERTAHANAN KEAMANAN
   NEGARA RI
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 3 Tahun 2002 Tentang Pertahanan
-  Negara'
+status: tidak_berlaku
 tanggal_penetapan: '1988-03-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1988
-source_pdf_url: https://peraturan.go.id/files/uu1-1988.pdf
+source_url: https://peraturan.bpk.go.id/Details/46807/uu-no-1-tahun-1988
+source_pdf_url: https://peraturan.bpk.go.id/Download/35580/UU%20Nomor%201%20Tahun%201988.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_3_2002
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -32,4 +30,37 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1988_1988-03-01.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e5756bbe4346c6499b025fda08f1d6bdbf399f4baf0a5d671dc9ef0d4fca93fa
 pdf_sha256: c40c43a3129e6dc55434e75893dfb13972b77862902c9a73cc4ab065ce02016c
+tanggal_pengundangan: '1988-03-01'
+tanggal_berlaku: '1988-03-01'
+lembaran_negara: 'LN. 1988/ No.3 , TLN NO. 3368, website dpr.go.id : 3HLM'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1988
+  source_pdf_url: https://peraturan.go.id/files/uu1-1988.pdf
+bpk:
+  id: 46807
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35580/UU%20Nomor%201%20Tahun%201988.pdf
+    bpk_file_id: 35580
+    filename: UU Nomor 1 Tahun 1988.pdf
+    sha256: e5756bbe4346c6499b025fda08f1d6bdbf399f4baf0a5d671dc9ef0d4fca93fa
+    bytes: 56161
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_3_2002
+      citation: UU No. 3 Tahun 2002
+      tentang: Pertahanan Negara
+      url: https://peraturan.bpk.go.id/Details/44421/uu-no-3-tahun-2002
+      note: null
+    Mengubah:
+    - id: uu_20_1982
+      citation: UU No. 20 Tahun 1982
+      tentang: Ketentuan-Ketentuan Pokok Pertahanan Keamanan Negara Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/47031/uu-no-20-tahun-1982
+      note: null
+uji_materi: null

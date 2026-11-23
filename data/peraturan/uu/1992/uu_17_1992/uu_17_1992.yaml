@@ -12,8 +12,8 @@ tanggal_penetapan: '1992-08-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-1992
-source_pdf_url: https://peraturan.go.id/files/UU+NO+17+TH+1992.pdf
+source_url: https://peraturan.bpk.go.id/Details/46614/uu-no-17-tahun-1992
+source_pdf_url: https://peraturan.bpk.go.id/Download/35338/UU%20Nomor%2017%20Tahun%201992.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_1992_1992-08-24.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6f98f6db671db96b72bccf78e8d3753e340b4b4215c201b0a0cc305bfd1a1b3f
 pdf_sha256: 6f98f6db671db96b72bccf78e8d3753e340b4b4215c201b0a0cc305bfd1a1b3f
+tanggal_pengundangan: '1992-08-24'
+tanggal_berlaku: '1991-04-01'
+lembaran_negara: 'LN. 1992, LL SETNEG : 4 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-1992
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+17+TH+1992.pdf
+bpk:
+  id: 46614
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35338/UU%20Nomor%2017%20Tahun%201992.pdf
+    bpk_file_id: 35338
+    filename: UU Nomor 17 Tahun 1992.pdf
+    sha256: 6f98f6db671db96b72bccf78e8d3753e340b4b4215c201b0a0cc305bfd1a1b3f
+    bytes: 34328
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_2_1991
+      citation: UU No. 2 Tahun 1991
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1991/1992
+      url: https://peraturan.bpk.go.id/Details/46654/uu-no-2-tahun-1991
+      note: null
+uji_materi: null

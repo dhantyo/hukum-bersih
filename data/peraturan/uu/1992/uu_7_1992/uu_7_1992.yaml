@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 7 Tahun 1992 tentang Perbankan
 tentang: PERBANKAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1992-03-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1992
-source_pdf_url: https://peraturan.go.id/files/UU+NO+7+TH+1992.pdf
+source_url: https://peraturan.bpk.go.id/Details/46599/uu-no-7-tahun-1992
+source_pdf_url: https://peraturan.bpk.go.id/Download/35317/UU%20Nomor%207%20Tahun%201992.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,111 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_7_1992_1992
+- id: uu_7_1992_1992-03-25
   kind: asli
   source: official
-  date: null
+  date: '1992-03-25'
   date_basis: tanggal_penetapan
-  text: uu_7_1992_1992.txt
+  text: uu_7_1992_1992-03-25.txt
   pasal_count: 61
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8e3a861bb0a9691d9a591633375a3c74a6e28b61291bc971419019c1510cddc4
 pdf_sha256: 8e3a861bb0a9691d9a591633375a3c74a6e28b61291bc971419019c1510cddc4
+tanggal_pengundangan: '1992-03-25'
+tanggal_berlaku: '1992-03-25'
+lembaran_negara: 'LN. 1992, LL SETNEG : 33 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1992
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+7+TH+1992.pdf
+bpk:
+  id: 46599
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35317/UU%20Nomor%207%20Tahun%201992.pdf
+    bpk_file_id: 35317
+    filename: UU Nomor 7 Tahun 1992.pdf
+    sha256: 8e3a861bb0a9691d9a591633375a3c74a6e28b61291bc971419019c1510cddc4
+    bytes: 179045
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    - id: uu_10_1998
+      citation: UU No. 10 Tahun 1998
+      tentang: Perubahan atas Undang-Undang Nomor 7 Tahun 1992 tentang Perbankan
+      url: https://peraturan.bpk.go.id/Details/45486/uu-no-10-tahun-1998
+      note: null
+    Mencabut:
+    - id: uu_22_1968
+      citation: UU No. 22 Tahun 1968
+      tentang: Bank Ekspor Impor Indonesia
+      url: https://peraturan.bpk.go.id/Details/49189/uu-no-22-tahun-1968
+      note: Pasal 54 UU Nomor 7 Tahun 1992 mencabut UU ini
+    - id: uu_21_1968
+      citation: UU No. 21 Tahun 1968
+      tentang: Bank Rakyat Indonesia
+      url: https://peraturan.bpk.go.id/Details/49188/uu-no-21-tahun-1968
+      note: Pasal 54 UU Nomor 7 Tahun 1992 mencabut UU ini
+    - id: uu_20_1968
+      citation: UU No. 20 Tahun 1968
+      tentang: Bank Tabungan Negara
+      url: https://peraturan.bpk.go.id/Details/49187/uu-no-20-tahun-1968
+      note: Pasal 54 UU Nomor 7 Tahun 1992 mencabut UU ini
+    - id: uu_19_1968
+      citation: UU No. 19 Tahun 1968
+      tentang: Bank Bumi Daya
+      url: https://peraturan.bpk.go.id/Details/49186/uu-no-19-tahun-1968
+      note: Pasal 54 UU Nomor 7 Tahun 1992 mencabut UU ini
+    - id: uu_18_1968
+      citation: UU No. 18 Tahun 1968
+      tentang: Bank Dagang Negara
+      url: https://peraturan.bpk.go.id/Details/49178/uu-no-18-tahun-1968
+      note: Pasal 54 UU Nomor 7 Tahun 1992 mencabut UU ini
+    - id: uu_17_1968
+      citation: UU No. 17 Tahun 1968
+      tentang: Bank Negara Indonesia 1946
+      url: https://peraturan.bpk.go.id/Details/49177/uu-no-17-tahun-1968
+      note: Pasal 54 UU Nomor 7 Tahun 1992 mencabut UU ini
+    - id: uu_14_1967
+      citation: UU No. 14 Tahun 1967
+      tentang: Pokok-Pokok Perbankan
+      url: https://peraturan.bpk.go.id/Details/49592/uu-no-14-tahun-1967
+      note: null
+    - id: perppu_17_1962
+      citation: PERPU No. 17 Tahun 1962
+      tentang: Perubahan Dan Tambahan Undang-Undang No. 21 PRP Tahun 1960 Tentang
+        Bank Pembangunan Indonesia
+      url: https://peraturan.bpk.go.id/Details/53694/perpu-no-17-tahun-1962
+      note: Pasal 54 UU Nomor 7 Tahun 1992 mencabut Perpu Nomor 21 Tahun 1960
+    - id: uu_13_1962
+      citation: UU No. 13 Tahun 1962
+      tentang: Ketentuan-Ketentuan Pokok Bank Pembangunan Daerah
+      url: https://peraturan.bpk.go.id/Details/50698/uu-no-13-tahun-1962
+      note: Pasal 54 UU Nomor 7 Tahun 1992 mencabut UU ini
+    - id: uu_12_1962
+      citation: UU No. 12 Tahun 1962
+      tentang: Bank Pembangunan Swasta
+      url: https://peraturan.bpk.go.id/Details/50697/uu-no-12-tahun-1962
+      note: null
+uji_materi: null

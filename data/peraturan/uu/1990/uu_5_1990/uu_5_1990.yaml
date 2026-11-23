@@ -12,8 +12,8 @@ tanggal_penetapan: '1990-08-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1990
-source_pdf_url: https://peraturan.go.id/files/uu5-1990.pdf
+source_url: https://peraturan.bpk.go.id/Details/46710/uu-no-5-tahun-1990
+source_pdf_url: https://peraturan.bpk.go.id/Download/35455/UU%20Nomor%205%20Tahun%201990.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,3 +30,29 @@ versions:
   text: uu_5_1990_1990-08-10.txt
   pasal_count: 45
 pdf_sha256: 22d3100e82ed074afde652b2ea821a0c294c7c1e552d8f49f8bbaeede6fe50ca
+tanggal_pengundangan: '1990-08-10'
+tanggal_berlaku: '1990-08-10'
+lembaran_negara: 'website peraturan.go.id : 14 hlm'
+subjek: KEHUTANAN DAN PERKEBUNAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1990
+  source_pdf_url: https://peraturan.go.id/files/uu5-1990.pdf
+bpk:
+  id: 46710
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35455/UU%20Nomor%205%20Tahun%201990.pdf
+    bpk_file_id: 35455
+    filename: UU Nomor 5 Tahun 1990.pdf
+    sha256: 0cb88b03f10baa3eaa62fa7e2aa9308530b318c27ebd74c720fc4d57a6282d98
+    bytes: 93259
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_32_2024
+      citation: UU No. 32 Tahun 2024
+      tentang: Perubahan atas Undang-Undang Nomor 5 Tahun 1990 tentang Konservasi
+        Sumber Daya Alam Hayati dan Ekosistemnya
+      url: https://peraturan.bpk.go.id/Details/295135/uu-no-32-tahun-2024
+      note: null
+uji_materi: null
+reparse_error: 'v12: 19 pasal, stored text has 45'

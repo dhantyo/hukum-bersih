@@ -6,22 +6,64 @@ year: 1991
 title: Undang-Undang Nomor 5 Tahun 1991 tentang Kejaksaan Ri
 tentang: KEJAKSAAN RI
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 16 Tahun 2004 Tentang Kejaksaan
-  Ri'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1991-07-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1991
-source_pdf_url: https://peraturan.go.id/files/UU+NO+5+TH+1991.pdf
+source_url: https://peraturan.bpk.go.id/Details/46657/uu-no-5-tahun-1991
+source_pdf_url: https://peraturan.bpk.go.id/Download/35395/UU%20Nomor%205%20Tahun%201991.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_16_2004
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_5_1991_1991-07-22
+  kind: asli
+  source: official
+  date: '1991-07-22'
+  date_basis: tanggal_penetapan
+  text: uu_5_1991_1991-07-22.txt
+  pasal_count: 36
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3adee04fd5247b9a0bcda02d1ead7a963ca12757de7642583b5fb2a5385802ec
 pdf_sha256: 3adee04fd5247b9a0bcda02d1ead7a963ca12757de7642583b5fb2a5385802ec
-parse_error: 'LeakedMarkupError: hcontainer_1__p_2: markup in text: ''ART 1 -'''
+tanggal_pengundangan: '1991-07-22'
+tanggal_berlaku: '1991-07-22'
+lembaran_negara: 'LN. 1991, LL SETNEG : 17 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1991
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+5+TH+1991.pdf
+bpk:
+  id: 46657
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35395/UU%20Nomor%205%20Tahun%201991.pdf
+    bpk_file_id: 35395
+    filename: UU Nomor 5 Tahun 1991.pdf
+    sha256: 3adee04fd5247b9a0bcda02d1ead7a963ca12757de7642583b5fb2a5385802ec
+    bytes: 101524
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_16_2004
+      citation: UU No. 16 Tahun 2004
+      tentang: Kejaksaan Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/40511/uu-no-16-tahun-2004
+      note: null
+    Mencabut:
+    - id: uu_16_1961
+      citation: UU No. 16 Tahun 1961
+      tentang: Pembentukan Kejaksaan Tinggi
+      url: https://peraturan.bpk.go.id/Details/51240/uu-no-16-tahun-1961
+      note: null
+    - id: uu_15_1961
+      citation: UU No. 15 Tahun 1961
+      tentang: Ketentuan-Ketentuan Pokok Kejaksaan Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/51237/uu-no-15-tahun-1961
+      note: null
+uji_materi: null

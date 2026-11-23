@@ -12,8 +12,8 @@ tanggal_penetapan: '1990-08-15'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1990
-source_pdf_url: https://peraturan.go.id/files/uu6-1990.pdf
+source_url: https://peraturan.bpk.go.id/Details/46711/uu-no-6-tahun-1990
+source_pdf_url: https://peraturan.bpk.go.id/Download/35457/UU%20Nomor%206%20Tahun%201990.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,3 +30,22 @@ versions:
   text: uu_6_1990_1990-08-15.txt
   pasal_count: 17
 pdf_sha256: 466fbc8ada0a48e363f76488492cab9a8b0648d18b0d689c9f9409709a08f26d
+tanggal_pengundangan: '1990-08-15'
+tanggal_berlaku: '1990-08-15'
+lembaran_negara: 'website peraturan.go.id : 7 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1990
+  source_pdf_url: https://peraturan.go.id/files/uu6-1990.pdf
+bpk:
+  id: 46711
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35457/UU%20Nomor%206%20Tahun%201990.pdf
+    bpk_file_id: 35457
+    filename: UU Nomor 6 Tahun 1990.pdf
+    sha256: 600f05df64eb648ef695f31ce14127c50f7e1d527fc7b4b46db258c823dab547
+    bytes: 44514
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
+reparse_error: 'v12: 5 pasal, stored text has 17'

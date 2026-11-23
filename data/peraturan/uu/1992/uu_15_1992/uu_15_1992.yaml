@@ -6,27 +6,59 @@ year: 1992
 title: Undang-Undang Nomor 15 Tahun 1992 tentang Penerbangan
 tentang: PENERBANGAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 1 Tahun 2009 Tentang Penerbangan'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1992-05-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-1992
-source_pdf_url: https://peraturan.go.id/files/UU+NO+15+TH+1992.pdf
+source_url: https://peraturan.bpk.go.id/Details/46609/uu-no-15-tahun-1992
+source_pdf_url: https://peraturan.bpk.go.id/Download/35327/UU%20Nomor%2015%20Tahun%201992.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_1_2009
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_15_1992_1992
+- id: uu_15_1992_1992-05-25
   kind: asli
   source: official
-  date: null
+  date: '1992-05-25'
   date_basis: tanggal_penetapan
-  text: uu_15_1992_1992.txt
+  text: uu_15_1992_1992-05-25.txt
   pasal_count: 76
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5968561118df8f64324431a6c5ef488f35cbf8add4ae97021196146dbebd5bad
 pdf_sha256: 5968561118df8f64324431a6c5ef488f35cbf8add4ae97021196146dbebd5bad
+tanggal_pengundangan: '1992-05-25'
+tanggal_berlaku: '1992-09-17'
+lembaran_negara: 'LN. 1992, LL SETNEG : 28 HLM'
+subjek: TRANSPORTASI DARAT / LAUT / UDARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-1992
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+15+TH+1992.pdf
+bpk:
+  id: 46609
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35327/UU%20Nomor%2015%20Tahun%201992.pdf
+    bpk_file_id: 35327
+    filename: UU Nomor 15 Tahun 1992.pdf
+    sha256: 5968561118df8f64324431a6c5ef488f35cbf8add4ae97021196146dbebd5bad
+    bytes: 149645
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_1_2009
+      citation: UU No. 1 Tahun 2009
+      tentang: Penerbangan
+      url: https://peraturan.bpk.go.id/Details/54656/uu-no-1-tahun-2009
+      note: null
+    Mencabut:
+    - id: uu_83_1958
+      citation: UU No. 83 Tahun 1958
+      tentang: Penerbangan
+      url: https://peraturan.bpk.go.id/Details/52364/uu-no-83-tahun-1958
+      note: null
+uji_materi: null
