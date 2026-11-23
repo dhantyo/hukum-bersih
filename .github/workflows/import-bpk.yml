@@ -69,7 +69,8 @@ jobs:
       - name: Install (stealth browser, Tesseract for scanned PDFs)
         run: |
           sudo apt-get install -y -qq xvfb tesseract-ocr tesseract-ocr-ind >/dev/null   # OCR for scans
-          cd pipeline && uv sync --extra bpk && uv run scrapling install
+          cd pipeline && uv sync --extra bpk --extra ocr && uv run scrapling install
+          uv run python -c 'import indra_ocr; indra_ocr.load()'   # Indra's models (~76 MB) once, before the parallel OCR workers
       - name: Import in batches
         env:
           IA_ACCESS_KEY: ${{ secrets.IA_ACCESS_KEY }}
