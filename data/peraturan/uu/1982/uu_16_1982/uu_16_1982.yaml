@@ -13,8 +13,8 @@ tanggal_penetapan: '1982-08-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-1982
-source_pdf_url: https://peraturan.go.id/files/uu16-1982.pdf
+source_url: https://peraturan.bpk.go.id/Details/47025/uu-no-16-tahun-1982
+source_pdf_url: https://peraturan.bpk.go.id/Download/35854/UU%20Nomor%2016%20Tahun%201982.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_1982_1982-08-20.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 41440bf3630b56e783a9c0138c515ceb8378faa7d0d0bde775de8bf5bab669a0
 pdf_sha256: f85eff6971c1545e02ff5fab57fc9552d222b0724f006b95e5babc624d067909
+tanggal_pengundangan: '1982-08-20'
+tanggal_berlaku: '1982-08-20'
+lembaran_negara: 'LN. 1982/ No.43, TLN. No.3230, LL SETNEG : 3 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-1982
+  source_pdf_url: https://peraturan.go.id/files/uu16-1982.pdf
+bpk:
+  id: 47025
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35854/UU%20Nomor%2016%20Tahun%201982.pdf
+    bpk_file_id: 35854
+    filename: UU Nomor 16 Tahun 1982.pdf
+    sha256: 41440bf3630b56e783a9c0138c515ceb8378faa7d0d0bde775de8bf5bab669a0
+    bytes: 30608
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

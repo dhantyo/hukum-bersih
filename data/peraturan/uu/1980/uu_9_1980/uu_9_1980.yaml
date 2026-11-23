@@ -9,12 +9,12 @@ tentang: PEMBENTUKAN PENGADILAN TINGGI TANJUNG KARANG DAN PERUBAHAN WILAYAH HUKU
   PENGADILAN TINGGI PELEMBANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1980-07-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1980
-source_pdf_url: https://peraturan.go.id/files/UU0091980.pdf
+source_url: https://peraturan.bpk.go.id/Details/47139/uu-no-9-tahun-1980
+source_pdf_url: https://peraturan.bpk.go.id/Download/36006/UU%20Nomor%209%20Tahun%201980.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_9_1980_1980
+- id: uu_9_1980_1980-07-29
   kind: asli
   source: official
-  date: null
+  date: '1980-07-29'
   date_basis: tanggal_penetapan
-  text: uu_9_1980_1980.txt
+  text: uu_9_1980_1980-07-29.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 572c800cf82412353c858fb2b618c2377af65eb3d076d967c48ad13b762efd6a
 pdf_sha256: 572c800cf82412353c858fb2b618c2377af65eb3d076d967c48ad13b762efd6a
+tanggal_pengundangan: '1980-07-29'
+tanggal_berlaku: '1980-07-29'
+lembaran_negara: 'LN. 1980, LL SETNEG : 3 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1980
+  source_pdf_url: https://peraturan.go.id/files/UU0091980.pdf
+bpk:
+  id: 47139
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36006/UU%20Nomor%209%20Tahun%201980.pdf
+    bpk_file_id: 36006
+    filename: UU Nomor 9 Tahun 1980.pdf
+    sha256: 572c800cf82412353c858fb2b618c2377af65eb3d076d967c48ad13b762efd6a
+    bytes: 41067
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

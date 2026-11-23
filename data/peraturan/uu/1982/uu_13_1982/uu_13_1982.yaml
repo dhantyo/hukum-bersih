@@ -13,8 +13,8 @@ tanggal_penetapan: '1982-08-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1982
-source_pdf_url: https://peraturan.go.id/files/uu13-1982.pdf
+source_url: https://peraturan.bpk.go.id/Details/47009/uu-no-13-tahun-1982
+source_pdf_url: https://peraturan.bpk.go.id/Download/35835/UU%20Nomor%2013%20Tahun%201982.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_1982_1982-08-20.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b6a1e0ec1541fa68e24f4f442f4731c378f8e68abddfbbb190580d9a72b7d8a4
 pdf_sha256: e1129f75035f83745c2e67bed8694e1d5fc9469dcf1d734c29f8313a7341a2d1
+tanggal_pengundangan: '1982-08-20'
+tanggal_berlaku: '1982-08-20'
+lembaran_negara: 'LN. 1982/ No. 40, TLN. No. 3227, LL SETNEG : 3 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1982
+  source_pdf_url: https://peraturan.go.id/files/uu13-1982.pdf
+bpk:
+  id: 47009
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35835/UU%20Nomor%2013%20Tahun%201982.pdf
+    bpk_file_id: 35835
+    filename: UU Nomor 13 Tahun 1982.pdf
+    sha256: b6a1e0ec1541fa68e24f4f442f4731c378f8e68abddfbbb190580d9a72b7d8a4
+    bytes: 30147
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

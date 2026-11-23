@@ -6,13 +6,13 @@ year: 1979
 title: Undang-Undang Nomor 5 Tahun 1979 tentang Pemerintahan Desa
 tentang: PEMERINTAHAN DESA
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '1979-12-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1979
-source_pdf_url: https://peraturan.go.id/files/UU5-1979.pdf
+source_url: https://peraturan.bpk.go.id/Details/47151/uu-no-5-tahun-1979
+source_pdf_url: https://peraturan.bpk.go.id/Download/36042/UU%20Nomor%205%20Tahun%201979.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1979_1979-12-01.txt
   pasal_count: 40
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b58dc69d6b8d426f046ad63039df711e8997175eff5c13a5c7e09b2469e21e9b
 pdf_sha256: 014b43032922a4ae3d218ae25d7d851f13031752bde8c883716598a80100f8ff
+tanggal_pengundangan: '1979-12-01'
+tanggal_berlaku: '1979-12-01'
+lembaran_negara: 'LN. 1979/ No. 56, TLN NO. 3153, LL SETNEG : 16 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH - DESA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1979
+  source_pdf_url: https://peraturan.go.id/files/UU5-1979.pdf
+bpk:
+  id: 47151
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36042/UU%20Nomor%205%20Tahun%201979.pdf
+    bpk_file_id: 36042
+    filename: UU Nomor 5 Tahun 1979.pdf
+    sha256: b58dc69d6b8d426f046ad63039df711e8997175eff5c13a5c7e09b2469e21e9b
+    bytes: 96546
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_22_1999
+      citation: UU No. 22 Tahun 1999
+      tentang: Pemerintahan Daerah
+      url: https://peraturan.bpk.go.id/Details/45329/uu-no-22-tahun-1999
+      note: null
+    Mencabut:
+    - id: uu_19_1965
+      citation: UU No. 19 Tahun 1965
+      tentang: Desapraja Sebagai Bentuk Peralihan Untuk Mempercepat Terwujudnya Daerah
+        Tingkat III Di Seluruh Wilayah Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/50215/uu-no-19-tahun-1965
+      note: null
+uji_materi: null

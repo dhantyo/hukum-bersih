@@ -11,8 +11,8 @@ tanggal_penetapan: '1980-10-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1980
-source_pdf_url: https://peraturan.go.id/files/uu11-1980.pdf
+source_url: https://peraturan.bpk.go.id/Details/47142/uu-no-11-tahun-1980
+source_pdf_url: https://peraturan.bpk.go.id/Download/36010/UU%20Nomor%2011%20Tahun%201980.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1980_1980-10-27.txt
   pasal_count: 6
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 767c8bf03024b1a01cba42425c8b4d9bbf9d54a5246d8f0f44fc3ccf7a1e92d3
 pdf_sha256: a93fe4231e8d99578c2b81b5032cf6cdc191d5824e92662effb063855e1bab12
+tanggal_pengundangan: '1980-10-27'
+tanggal_berlaku: '1980-10-27'
+lembaran_negara: 'LN. 1980, LL SETNEG : 3 HLM'
+subjek: TINDAK PIDANA KORUPSI, PENCEGAHAN KORUPSI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1980
+  source_pdf_url: https://peraturan.go.id/files/uu11-1980.pdf
+bpk:
+  id: 47142
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36010/UU%20Nomor%2011%20Tahun%201980.pdf
+    bpk_file_id: 36010
+    filename: UU Nomor 11 Tahun 1980.pdf
+    sha256: 767c8bf03024b1a01cba42425c8b4d9bbf9d54a5246d8f0f44fc3ccf7a1e92d3
+    bytes: 43400
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

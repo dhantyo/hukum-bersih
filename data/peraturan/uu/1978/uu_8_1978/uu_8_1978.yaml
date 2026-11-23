@@ -12,8 +12,8 @@ tanggal_penetapan: '1978-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1978
-source_pdf_url: https://peraturan.go.id/files/uu8-1978.pdf
+source_url: https://peraturan.bpk.go.id/Details/47168/uu-no-8-tahun-1978
+source_pdf_url: https://peraturan.bpk.go.id/Download/36069/UU%20Nomor%208%20Tahun%201978.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1978_1978-12-18.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5b673d7009e387d41cfd585869ac9fb9d9062538c8989cf8e05518c437ce5e46
 pdf_sha256: d185457e8e4ee85d8cd5c2f1b424e42e238a9e913f45d930192921966a727426
+tanggal_pengundangan: '1978-12-18'
+tanggal_berlaku: '1978-12-18'
+lembaran_negara: 'LN. 1978/ No. 53, TLN NO. 3129, LL SETNEG : 3 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1978
+  source_pdf_url: https://peraturan.go.id/files/uu8-1978.pdf
+bpk:
+  id: 47168
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36069/UU%20Nomor%208%20Tahun%201978.pdf
+    bpk_file_id: 36069
+    filename: UU Nomor 8 Tahun 1978.pdf
+    sha256: 5b673d7009e387d41cfd585869ac9fb9d9062538c8989cf8e05518c437ce5e46
+    bytes: 35736
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

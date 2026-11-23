@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 4 Tahun 1979 tentang Kesejahteraan Anak
 tentang: KESEJAHTERAAN ANAK
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1979-07-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1979
-source_pdf_url: https://peraturan.go.id/files/UU0041979.pdf
+source_url: https://peraturan.bpk.go.id/Details/47148/uu-no-4-tahun-1979
+source_pdf_url: https://peraturan.bpk.go.id/Download/36020/UU%20Nomor%204%20Tahun%201979.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_4_1979_1979
+- id: uu_4_1979_1979-07-23
   kind: asli
   source: official
-  date: null
+  date: '1979-07-23'
   date_basis: tanggal_penetapan
-  text: uu_4_1979_1979.txt
+  text: uu_4_1979_1979-07-23.txt
   pasal_count: 16
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b1ac9563e42345cbc44e0c9d240e4ad21f8f6d7dcb7bbd62473812f1558c20b5
 pdf_sha256: b1ac9563e42345cbc44e0c9d240e4ad21f8f6d7dcb7bbd62473812f1558c20b5
+tanggal_pengundangan: '1979-07-23'
+tanggal_berlaku: '1979-07-23'
+lembaran_negara: 'LN. 1979/ No. 32, TLN NO. 3143, LL SETNEG : 5 HLM'
+subjek: BANTUAN, SUMBANGAN, BENCANA / KEBENCANAAN, DAN PENANGGULANGAN BENCANA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1979
+  source_pdf_url: https://peraturan.go.id/files/UU0041979.pdf
+bpk:
+  id: 47148
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36020/UU%20Nomor%204%20Tahun%201979.pdf
+    bpk_file_id: 36020
+    filename: UU Nomor 4 Tahun 1979.pdf
+    sha256: b1ac9563e42345cbc44e0c9d240e4ad21f8f6d7dcb7bbd62473812f1558c20b5
+    bytes: 40379
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -6,19 +6,18 @@ year: 1980
 title: Undang-Undang Nomor 13 Tahun 1980 tentang Jalan
 tentang: JALAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 38 Tahun 2004 Tentang Jalan'
+status: tidak_berlaku
 tanggal_penetapan: '1980-12-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1980
-source_pdf_url: https://peraturan.go.id/files/uu13-1980.pdf
+source_url: https://peraturan.bpk.go.id/Details/47144/uu-no-13-tahun-1980
+source_pdf_url: https://peraturan.bpk.go.id/Download/36012/UU%20Nomor%2013%20Tahun%201980.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_38_2004
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -29,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_1980_1980-12-27.txt
   pasal_count: 19
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 521a56fe34634aabc2d5c823d4b838ecc6072f7d66989b71d3f4f44159995c76
 pdf_sha256: f194f0e9c85bed4adff01cd4d79ff212a1f3851bf2055aad651598fa63ac819d
+tanggal_pengundangan: '1980-12-27'
+tanggal_berlaku: '1980-12-27'
+lembaran_negara: 'LN. 1980, LL SETNEG : 9 HLM'
+subjek: LALU LINTAS, JALAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1980
+  source_pdf_url: https://peraturan.go.id/files/uu13-1980.pdf
+bpk:
+  id: 47144
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36012/UU%20Nomor%2013%20Tahun%201980.pdf
+    bpk_file_id: 36012
+    filename: UU Nomor 13 Tahun 1980.pdf
+    sha256: 521a56fe34634aabc2d5c823d4b838ecc6072f7d66989b71d3f4f44159995c76
+    bytes: 85443
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_38_2004
+      citation: UU No. 38 Tahun 2004
+      tentang: Jalan
+      url: https://peraturan.bpk.go.id/Details/40785/uu-no-38-tahun-2004
+      note: null
+uji_materi: null

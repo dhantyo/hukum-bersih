@@ -13,8 +13,8 @@ tanggal_penetapan: '1978-07-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1978
-source_pdf_url: https://peraturan.go.id/files/uu4-1978.pdf
+source_url: https://peraturan.bpk.go.id/Details/47157/uu-no-4-tahun-1978
+source_pdf_url: https://peraturan.bpk.go.id/Download/36051/UU%20Nomor%204%20Tahun%201978.pdf
 relationships:
   amends:
   - id: uu_3_1967
@@ -33,5 +33,32 @@ versions:
   date: '1978-07-26'
   date_basis: tanggal_penetapan
   text: uu_4_1978_1978-07-26.txt
-  pasal_count: 6
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ada4cf5946ec8725aa210e0e439cd45816dc3722b466d0d7f2c2f1ac880bc4e9
 pdf_sha256: 544c42f3a9bf5cc0a761034a03a6c537083b30b1fa9e502a0cfab359fdbae13a
+tanggal_pengundangan: '1978-07-26'
+tanggal_berlaku: '1978-07-26'
+lembaran_negara: 'LN. 1978/ No. 33, TLN NO. 3123, LL SETNEG : 6 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1978
+  source_pdf_url: https://peraturan.go.id/files/uu4-1978.pdf
+bpk:
+  id: 47157
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36051/UU%20Nomor%204%20Tahun%201978.pdf
+    bpk_file_id: 36051
+    filename: UU Nomor 4 Tahun 1978.pdf
+    sha256: ada4cf5946ec8725aa210e0e439cd45816dc3722b466d0d7f2c2f1ac880bc4e9
+    bytes: 38062
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_3_1967
+      citation: UU No. 3 Tahun 1967
+      tentang: Dewan Pertimbangan Agung
+      url: https://peraturan.bpk.go.id/Details/49550/uu-no-3-tahun-1967
+      note: null
+uji_materi: null

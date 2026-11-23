@@ -13,8 +13,8 @@ tanggal_penetapan: '1980-06-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1980
-source_pdf_url: https://peraturan.go.id/files/uu3-1980.pdf
+source_url: https://peraturan.bpk.go.id/Details/47126/uu-no-3-tahun-1980
+source_pdf_url: https://peraturan.bpk.go.id/Download/35993/UU%20Nomor%203%20Tahun%201980.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1980_1980-06-28.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9aefa899eee71a970030efd96c43bfe2b788c8e16b11b0ad164f67996af7bc76
 pdf_sha256: 1fe219c308f5707e5135dda9c7154562203d448283f069a4d58900a1eacdcd21
+tanggal_pengundangan: '1980-06-28'
+tanggal_berlaku: '1979-04-01'
+lembaran_negara: 'LN. 1980, LL SETNEG : 3 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1980
+  source_pdf_url: https://peraturan.go.id/files/uu3-1980.pdf
+bpk:
+  id: 47126
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35993/UU%20Nomor%203%20Tahun%201980.pdf
+    bpk_file_id: 35993
+    filename: UU Nomor 3 Tahun 1980.pdf
+    sha256: 9aefa899eee71a970030efd96c43bfe2b788c8e16b11b0ad164f67996af7bc76
+    bytes: 42880
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_2_1979
+      citation: UU No. 2 Tahun 1979
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1979/1980
+      url: https://peraturan.bpk.go.id/Details/47146/uu-no-2-tahun-1979
+      note: null
+uji_materi: null

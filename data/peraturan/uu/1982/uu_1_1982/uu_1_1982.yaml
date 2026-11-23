@@ -24,8 +24,8 @@ tanggal_penetapan: '1982-01-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1982
-source_pdf_url: https://peraturan.go.id/files/uu1-1982.pdf
+source_url: https://peraturan.bpk.go.id/Details/46993/uu-no-1-tahun-1982
+source_pdf_url: https://peraturan.bpk.go.id/Download/35817/UU%20Nomor%201%20Tahun%201982.pdf
 relationships:
   amends: []
   amended_by: []
@@ -41,4 +41,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1982_1982-01-25.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5d9ac48a14053b592b5b98960415ffa59285c187a11f19c2834dd4bc3a91677f
 pdf_sha256: 5ea3cc5f7a1868e0ed7a18bdb960f17247967c51127185fca78abcbeb8327489
+tanggal_pengundangan: '1982-01-25'
+tanggal_berlaku: '1982-01-25'
+lembaran_negara: 'LN. 1982/ No.2, TLN. No. 3211, LL SETNEG : 3 HLM'
+subjek: KEWARGANEGARAAN DAN IMIGRASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1982
+  source_pdf_url: https://peraturan.go.id/files/uu1-1982.pdf
+bpk:
+  id: 46993
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35817/UU%20Nomor%201%20Tahun%201982.pdf
+    bpk_file_id: 35817
+    filename: UU Nomor 1 Tahun 1982.pdf
+    sha256: 5d9ac48a14053b592b5b98960415ffa59285c187a11f19c2834dd4bc3a91677f
+    bytes: 84778
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

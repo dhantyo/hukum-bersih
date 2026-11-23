@@ -12,8 +12,8 @@ tanggal_penetapan: '1981-07-04'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1981
-source_pdf_url: https://peraturan.go.id/files/uu5-1981.pdf
+source_url: https://peraturan.bpk.go.id/Details/47037/uu-no-5-tahun-1981
+source_pdf_url: https://peraturan.bpk.go.id/Download/35871/UU%20Nomor%205%20Tahun%201981.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1981_1981-07-04.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2ba3763855e74ece981d5da7e2e3bc570488897221c6fc07d88dff4e47cf5be4
 pdf_sha256: 117acd658505cfa72b664efc3ef0293055f597ad502e64419b94862233a1c476
+tanggal_pengundangan: '1981-07-04'
+tanggal_berlaku: '1981-07-04'
+lembaran_negara: 'LN. 1981, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1981
+  source_pdf_url: https://peraturan.go.id/files/uu5-1981.pdf
+bpk:
+  id: 47037
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35871/UU%20Nomor%205%20Tahun%201981.pdf
+    bpk_file_id: 35871
+    filename: UU Nomor 5 Tahun 1981.pdf
+    sha256: 2ba3763855e74ece981d5da7e2e3bc570488897221c6fc07d88dff4e47cf5be4
+    bytes: 34746
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

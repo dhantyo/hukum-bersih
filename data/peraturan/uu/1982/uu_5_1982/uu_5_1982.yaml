@@ -13,8 +13,8 @@ tanggal_penetapan: '1982-03-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1982
-source_pdf_url: https://peraturan.go.id/files/uu5-1982.pdf
+source_url: https://peraturan.bpk.go.id/Details/47000/uu-no-5-tahun-1982
+source_pdf_url: https://peraturan.bpk.go.id/Download/35824/UU%20Nomor%205%20Tahun%201982.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1982_1982-03-11.txt
   pasal_count: 8
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: fb3d1c7d080afd985e2a27ced6dc17bedb0216e0b19f8b1eccc991d4c2c749a9
 pdf_sha256: fb3d1c7d080afd985e2a27ced6dc17bedb0216e0b19f8b1eccc991d4c2c749a9
+tanggal_pengundangan: '1982-03-11'
+tanggal_berlaku: '1982-04-01'
+lembaran_negara: 'LN. 1982/ No. 13, TLN. No. 3216, LL SETNEG : 4 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1982
+  source_pdf_url: https://peraturan.go.id/files/uu5-1982.pdf
+bpk:
+  id: 47000
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35824/UU%20Nomor%205%20Tahun%201982.pdf
+    bpk_file_id: 35824
+    filename: UU Nomor 5 Tahun 1982.pdf
+    sha256: fb3d1c7d080afd985e2a27ced6dc17bedb0216e0b19f8b1eccc991d4c2c749a9
+    bytes: 37503
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_3_1983
+      citation: UU No. 3 Tahun 1983
+      tentang: Tambahan dan Perubahan atas Anggaran Pendapatan dan Belanja Negara
+        Tahun Anggaran 1982/1983
+      url: https://peraturan.bpk.go.id/Details/46982/uu-no-3-tahun-1983
+      note: null
+uji_materi: null

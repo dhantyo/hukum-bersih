@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 2 Tahun 1979 tentang Anggaran Pendapatan Dan Belanja 
 tentang: ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 1979/1980
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1979-03-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1979
-source_pdf_url: https://peraturan.go.id/files/UU0021979.pdf
+source_url: https://peraturan.bpk.go.id/Details/47146/uu-no-2-tahun-1979
+source_pdf_url: https://peraturan.bpk.go.id/Download/36018/UU%20Nomor%202%20Tahun%201979.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_2_1979_1979
+- id: uu_2_1979_1979-03-12
   kind: asli
   source: official
-  date: null
+  date: '1979-03-12'
   date_basis: tanggal_penetapan
-  text: uu_2_1979_1979.txt
+  text: uu_2_1979_1979-03-12.txt
   pasal_count: 8
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c1909587f04a778e8b285b1badf7b7da91d1e9136fb4c12b870c969ad6ff284a
 pdf_sha256: c1909587f04a778e8b285b1badf7b7da91d1e9136fb4c12b870c969ad6ff284a
+tanggal_pengundangan: '1979-03-12'
+tanggal_berlaku: '1979-04-01'
+lembaran_negara: 'LN. 1979/ No.6, TLN NO.3131, LL SETNEG : 4 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1979
+  source_pdf_url: https://peraturan.go.id/files/UU0021979.pdf
+bpk:
+  id: 47146
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36018/UU%20Nomor%202%20Tahun%201979.pdf
+    bpk_file_id: 36018
+    filename: UU Nomor 2 Tahun 1979.pdf
+    sha256: c1909587f04a778e8b285b1badf7b7da91d1e9136fb4c12b870c969ad6ff284a
+    bytes: 38656
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_3_1980
+      citation: UU No. 3 Tahun 1980
+      tentang: Tambahan dan Perubahan atas Anggaran Pendapatan dan Belanja Negara
+        Tahun Anggaran 1979/1980
+      url: https://peraturan.bpk.go.id/Details/47126/uu-no-3-tahun-1980
+      note: null
+uji_materi: null

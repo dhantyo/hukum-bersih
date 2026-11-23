@@ -13,8 +13,8 @@ tanggal_penetapan: '1980-07-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1980
-source_pdf_url: https://peraturan.go.id/files/uu8-1980.pdf
+source_url: https://peraturan.bpk.go.id/Details/47137/uu-no-8-tahun-1980
+source_pdf_url: https://peraturan.bpk.go.id/Download/36004/UU%20Nomor%208%20Tahun%201980.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1980_1980-07-29.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ed6e0eec87ddf6797292adc43fb28176b573ece1d3e2b791f1c5e5f511b06eea
 pdf_sha256: 07238be5f2fe83d812b21b9cc8ea20809fa34cc0149226aeb62eff54e070ae71
+tanggal_pengundangan: '1980-07-29'
+tanggal_berlaku: '1980-07-29'
+lembaran_negara: 'LN. 1980, LL SETNEG : 2 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1980
+  source_pdf_url: https://peraturan.go.id/files/uu8-1980.pdf
+bpk:
+  id: 47137
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36004/UU%20Nomor%208%20Tahun%201980.pdf
+    bpk_file_id: 36004
+    filename: UU Nomor 8 Tahun 1980.pdf
+    sha256: ed6e0eec87ddf6797292adc43fb28176b573ece1d3e2b791f1c5e5f511b06eea
+    bytes: 55539
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

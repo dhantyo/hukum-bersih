@@ -13,8 +13,8 @@ tanggal_penetapan: '1978-08-03'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1978
-source_pdf_url: https://peraturan.go.id/files/uu5-1978.pdf
+source_url: https://peraturan.bpk.go.id/Details/47165/uu-no-5-tahun-1978
+source_pdf_url: https://peraturan.bpk.go.id/Download/36064/UU%20Nomor%205%20Tahun%201978.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1978_1978-08-03.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d11f421fc079fb2c764ea649d3e15278ae95a9b65a893e1d2c19b9d3820a07b9
 pdf_sha256: aeee50100c2c4a4243f94717680fa679f8e32076dacd08b84f50477458c7a2dc
+tanggal_pengundangan: '1978-08-03'
+tanggal_berlaku: '1978-08-03'
+lembaran_negara: 'LN. 1978/ No. 35, TLN NO. 3124, LL SETNEG : 4 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1978
+  source_pdf_url: https://peraturan.go.id/files/uu5-1978.pdf
+bpk:
+  id: 47165
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36064/UU%20Nomor%205%20Tahun%201978.pdf
+    bpk_file_id: 36064
+    filename: UU Nomor 5 Tahun 1978.pdf
+    sha256: d11f421fc079fb2c764ea649d3e15278ae95a9b65a893e1d2c19b9d3820a07b9
+    bytes: 33118
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

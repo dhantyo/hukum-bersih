@@ -13,8 +13,8 @@ tanggal_penetapan: '1982-01-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1982
-source_pdf_url: https://peraturan.go.id/files/uu2-1982.pdf
+source_url: https://peraturan.bpk.go.id/Details/46995/uu-no-2-tahun-1982
+source_pdf_url: https://peraturan.bpk.go.id/Download/35819/UU%20Nomor%202%20Tahun%201982.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1982_1982-01-25.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ed1f82f630b4668a26d99f3ef17133d671583c1116e3c377eafbe3f3cf3eaa31
 pdf_sha256: 04b40eb687fb90942cfd6e09d59022fc4d17ef5acc964fe977902db41f567642
+tanggal_pengundangan: '1982-01-25'
+tanggal_berlaku: '1982-01-25'
+lembaran_negara: 'LN. 1982/ No. 3, TLN. No. 3212, LL SETNEG : 2 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1982
+  source_pdf_url: https://peraturan.go.id/files/uu2-1982.pdf
+bpk:
+  id: 46995
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35819/UU%20Nomor%202%20Tahun%201982.pdf
+    bpk_file_id: 35819
+    filename: UU Nomor 2 Tahun 1982.pdf
+    sha256: ed1f82f630b4668a26d99f3ef17133d671583c1116e3c377eafbe3f3cf3eaa31
+    bytes: 29390
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

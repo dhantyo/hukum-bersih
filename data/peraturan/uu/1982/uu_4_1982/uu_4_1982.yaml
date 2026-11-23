@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 4 Tahun 1982 tentang Ketentuan-Ketentuan Pokok Pengel
   Lingkungan Hidup
 tentang: KETENTUAN-KETENTUAN POKOK PENGELOLAAN LINGKUNGAN HIDUP
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '1982-03-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1982
-source_pdf_url: https://peraturan.go.id/files/uu4-1983.pdf
+source_url: https://peraturan.bpk.go.id/Details/46998/uu-no-4-tahun-1982
+source_pdf_url: https://peraturan.bpk.go.id/Download/35822/UU%20Nomor%204%20Tahun%201982.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,5 +28,32 @@ versions:
   date: '1982-03-11'
   date_basis: tanggal_penetapan
   text: uu_4_1982_1982-03-11.txt
-  pasal_count: 2
+  pasal_count: 24
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 78c25a76d3fcd45b337c801c193a03dd53b25d6c6dd154464c22949f96d55abb
 pdf_sha256: 765aef8f6c1865ac672a35bbb9d934353aab55207671b1c781ba6f3bb1ec1748
+tanggal_pengundangan: '1982-03-11'
+tanggal_berlaku: '1982-03-11'
+lembaran_negara: 'LN. 1982/ No. 12, TLN. No. 3215, LL SETNEG : 8 HLM'
+subjek: LINGKUNGAN HIDUP
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1982
+  source_pdf_url: https://peraturan.go.id/files/uu4-1983.pdf
+bpk:
+  id: 46998
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35822/UU%20Nomor%204%20Tahun%201982.pdf
+    bpk_file_id: 35822
+    filename: UU Nomor 4 Tahun 1982.pdf
+    sha256: 78c25a76d3fcd45b337c801c193a03dd53b25d6c6dd154464c22949f96d55abb
+    bytes: 62505
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_23_1997
+      citation: UU No. 23 Tahun 1997
+      tentang: Pengelolaan Lingkungan Hidup
+      url: https://peraturan.bpk.go.id/Details/46018/uu-no-23-tahun-1997
+      note: null
+uji_materi: null

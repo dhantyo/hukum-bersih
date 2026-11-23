@@ -12,8 +12,8 @@ tanggal_penetapan: '1982-06-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1982
-source_pdf_url: https://peraturan.go.id/files/uu10-1982.pdf
+source_url: https://peraturan.bpk.go.id/Details/47006/uu-no-10-tahun-1982
+source_pdf_url: https://peraturan.bpk.go.id/Download/35830/UU%20Nomor%2010%20Tahun%201982.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_1982_1982-06-29.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: bc6360ea0a7371ed9a3cb88a4d3a3540112f5c8c509159fb9bb33c6f0eb00abd
 pdf_sha256: 46672f06e87ba9cb4e80376f7dedcc5ef18292ddce95b47bb56e3deec58e9863
+tanggal_pengundangan: '1982-06-29'
+tanggal_berlaku: '1982-06-29'
+lembaran_negara: 'LN. 1982/ No. 32, TLN. No. 3221, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1982
+  source_pdf_url: https://peraturan.go.id/files/uu10-1982.pdf
+bpk:
+  id: 47006
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35830/UU%20Nomor%2010%20Tahun%201982.pdf
+    bpk_file_id: 35830
+    filename: UU Nomor 10 Tahun 1982.pdf
+    sha256: bc6360ea0a7371ed9a3cb88a4d3a3540112f5c8c509159fb9bb33c6f0eb00abd
+    bytes: 26385
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

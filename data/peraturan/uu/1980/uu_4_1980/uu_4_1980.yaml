@@ -12,8 +12,8 @@ tanggal_penetapan: '1980-07-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1980
-source_pdf_url: https://peraturan.go.id/files/uu4-1980.pdf
+source_url: https://peraturan.bpk.go.id/Details/47127/uu-no-4-tahun-1980
+source_pdf_url: https://peraturan.bpk.go.id/Download/35994/UU%20Nomor%204%20Tahun%201980.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1980_1980-07-05.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e1f3324aee811a48d09fa098d786baf78756e72f2c2e7ab19d06fc28ccf8773b
 pdf_sha256: aa36cbb04e922ab2f493bb9205c8f22fda448c12b7882e2acc220fa0eb6d1222
+tanggal_pengundangan: '1980-07-05'
+tanggal_berlaku: '1980-07-05'
+lembaran_negara: 'LN. 1980, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1980
+  source_pdf_url: https://peraturan.go.id/files/uu4-1980.pdf
+bpk:
+  id: 47127
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35994/UU%20Nomor%204%20Tahun%201980.pdf
+    bpk_file_id: 35994
+    filename: UU Nomor 4 Tahun 1980.pdf
+    sha256: e1f3324aee811a48d09fa098d786baf78756e72f2c2e7ab19d06fc28ccf8773b
+    bytes: 36112
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

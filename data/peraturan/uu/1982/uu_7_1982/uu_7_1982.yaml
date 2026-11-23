@@ -13,8 +13,8 @@ tanggal_penetapan: '1982-06-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1982
-source_pdf_url: https://peraturan.go.id/files/uu7-1982.pdf
+source_url: https://peraturan.bpk.go.id/Details/47002/uu-no-7-tahun-1982
+source_pdf_url: https://peraturan.bpk.go.id/Download/35826/UU%20Nomor%207%20Tahun%201982.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1982_1982-06-29.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1ba38a08686fa1544687f544e7ee57d80f19cf901a5c7093242887ea59465bd4
 pdf_sha256: 35b1f971fdcc2c337f2ef6dd503508e3d01c784565d1481fb7c5d05ca2236c87
+tanggal_pengundangan: '1982-06-29'
+tanggal_berlaku: '1981-04-01'
+lembaran_negara: 'LN. 1982/ No. 29, TLN. No. 3218, LL SETNEG : 3 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1982
+  source_pdf_url: https://peraturan.go.id/files/uu7-1982.pdf
+bpk:
+  id: 47002
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35826/UU%20Nomor%207%20Tahun%201982.pdf
+    bpk_file_id: 35826
+    filename: UU Nomor 7 Tahun 1982.pdf
+    sha256: 1ba38a08686fa1544687f544e7ee57d80f19cf901a5c7093242887ea59465bd4
+    bytes: 31000
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_1_1981
+      citation: UU No. 1 Tahun 1981
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1981/1982
+      url: https://peraturan.bpk.go.id/Details/47033/uu-no-1-tahun-1981
+      note: null
+uji_materi: null

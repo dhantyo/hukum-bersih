@@ -13,8 +13,8 @@ tanggal_penetapan: '1981-06-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1981
-source_pdf_url: https://peraturan.go.id/files/uu3-1981.pdf
+source_url: https://peraturan.bpk.go.id/Details/47035/uu-no-3-tahun-1981
+source_pdf_url: https://peraturan.bpk.go.id/Download/35868/UU%20Nomor%203%20Tahun%201981.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1981_1981-06-26.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 15f475629b159f7de72c25854f546e1e3223e67dc72c1f249f2eeef62f4042ea
 pdf_sha256: a1d2068afb96be2bbb9ec8e13c889b1b073bed260057265ff60aeaf1c6642b1d
+tanggal_pengundangan: '1981-06-26'
+tanggal_berlaku: '1980-04-01'
+lembaran_negara: 'LN. 1981, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1981
+  source_pdf_url: https://peraturan.go.id/files/uu3-1981.pdf
+bpk:
+  id: 47035
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35868/UU%20Nomor%203%20Tahun%201981.pdf
+    bpk_file_id: 35868
+    filename: UU Nomor 3 Tahun 1981.pdf
+    sha256: 15f475629b159f7de72c25854f546e1e3223e67dc72c1f249f2eeef62f4042ea
+    bytes: 38967
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_1_1980
+      citation: UU No. 1 Tahun 1980
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1980/1981
+      url: https://peraturan.bpk.go.id/Details/47072/uu-no-1-tahun-1980
+      note: null
+uji_materi: null

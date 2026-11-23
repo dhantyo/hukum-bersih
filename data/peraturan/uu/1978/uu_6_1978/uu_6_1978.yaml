@@ -13,8 +13,8 @@ tanggal_penetapan: '1978-08-03'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1978
-source_pdf_url: https://peraturan.go.id/files/uu6-1978.pdf
+source_url: https://peraturan.bpk.go.id/Details/47166/uu-no-6-tahun-1978
+source_pdf_url: https://peraturan.bpk.go.id/Download/36065/UU%20Nomor%206%20Tahun%201978.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1978_1978-08-03.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: dfcf960535612b1be0fa1d7b36c5df6e180391b9fde264cffe6fea897b1f14a2
 pdf_sha256: 52c42ff288b9af9dcd6d73899498090f1c5d354d25f50439ec2b346ea6e1334c
+tanggal_pengundangan: '1978-08-03'
+tanggal_berlaku: '1978-08-03'
+lembaran_negara: 'LN. 1978/ No. 36, TLN NO. 3125, LL SETNEG : 4 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1978
+  source_pdf_url: https://peraturan.go.id/files/uu6-1978.pdf
+bpk:
+  id: 47166
+  files:
+  - url: https://peraturan.bpk.go.id/Download/36065/UU%20Nomor%206%20Tahun%201978.pdf
+    bpk_file_id: 36065
+    filename: UU Nomor 6 Tahun 1978.pdf
+    sha256: dfcf960535612b1be0fa1d7b36c5df6e180391b9fde264cffe6fea897b1f14a2
+    bytes: 33770
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
