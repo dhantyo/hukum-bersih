@@ -12,8 +12,8 @@ tanggal_penetapan: '1983-12-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1983
-source_pdf_url: https://peraturan.go.id/files/uu8-1983bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/46990/uu-no-8-tahun-1983
+source_pdf_url: https://peraturan.bpk.go.id/Download/35808/UU%20Nomor%208%20Tahun%201983.pdf
 relationships:
   amends: []
   amended_by:
@@ -25,6 +25,85 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_8_1983_1983-12-31
+  kind: asli
+  source: official
+  date: '1983-12-31'
+  date_basis: tanggal_penetapan
+  text: uu_8_1983_1983-12-31.txt
+  pasal_count: 21
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 21a2d3ace57b8500f517ed3885b9c2188face95c3dd8616eecbb09cdfdbd0a5d
 pdf_sha256: b1ebab5ac4cdea2868fab755ffb98316ca8698fa981146c638ab9068ed75ff3f
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1983-12-31'
+tanggal_berlaku: '1984-07-01'
+lembaran_negara: 'LN. 1983/ No. 51, TLN. No. 3264, LL SETNEG : 12 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1983
+  source_pdf_url: https://peraturan.go.id/files/uu8-1983bt.pdf
+bpk:
+  id: 46990
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35808/UU%20Nomor%208%20Tahun%201983.pdf
+    bpk_file_id: 35808
+    filename: UU Nomor 8 Tahun 1983.pdf
+    sha256: 21a2d3ace57b8500f517ed3885b9c2188face95c3dd8616eecbb09cdfdbd0a5d
+    bytes: 103576
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_7_2021
+      citation: UU No. 7 Tahun 2021
+      tentang: Harmonisasi Peraturan Perpajakan
+      url: https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    - id: uu_42_2009
+      citation: UU No. 42 Tahun 2009
+      tentang: Perubahan Ketiga Atas Undang-Undang Nomor 8 Tahun 1983 tentang Pajak
+        Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan Atas Barang Mewah
+      url: https://peraturan.bpk.go.id/Details/38787/uu-no-42-tahun-2009
+      note: null
+    - id: uu_18_2000
+      citation: UU No. 18 Tahun 2000
+      tentang: Perubahan Kedua atas Undang-Undang Nomor 8 Tahun 1983 tentang Pajak
+        Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah
+      url: https://peraturan.bpk.go.id/Details/44982/uu-no-18-tahun-2000
+      note: null
+    - id: uu_11_1994
+      citation: UU No. 11 Tahun 1994
+      tentang: Perubahan atas Undang-Undang Nomor 8 Tahun 1983 tentang Pajak Pertambahan
+        Nilai Barang dan Jasa dan Pajak Penjualan atas Barang Mewah
+      url: https://peraturan.bpk.go.id/Details/46235/uu-no-11-tahun-1994
+      note: null
+    Mencabut:
+    - id: uu_2_1968
+      citation: UU No. 2 Tahun 1968
+      tentang: Perobahan/Tambahan Undang-Undang Pajak Penjualan 1951
+      url: https://peraturan.bpk.go.id/Details/49130/uu-no-2-tahun-1968
+      note: null
+    - id: uu_35_1953
+      citation: UU No. 35 Tahun 1953
+      tentang: Penetapan "Undang-Undang Darurat Nomor 19 Tahun 1951, tentang Pemungutan
+        Pajak Penjualan" (Lembaran-Negara Nomor 94 Tahun 1951) Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/45440/uu-no-35-tahun-1953
+      note: null
+uji_materi: null

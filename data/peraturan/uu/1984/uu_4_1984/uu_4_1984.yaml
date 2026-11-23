@@ -6,19 +6,18 @@ year: 1984
 title: Undang-Undang Nomor 4 Tahun 1984 tentang Wabah Penyakit Menular
 tentang: WABAH PENYAKIT MENULAR
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 17 Tahun 2023 Tentang Kesehatan'
+status: tidak_berlaku
 tanggal_penetapan: '1984-06-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1984
-source_pdf_url: https://peraturan.go.id/files/uu4-1984.pdf
+source_url: https://peraturan.bpk.go.id/Details/46973/uu-no-4-tahun-1984
+source_pdf_url: https://peraturan.bpk.go.id/Download/35780/UU%20Nomor%204%20Tahun%201984.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_17_2023
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -29,4 +28,42 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1984_1984-06-22.txt
   pasal_count: 17
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 90006013b22de83d25d8c5c61bc0f385c85a77126e7b893d71016f70b62616cd
 pdf_sha256: 92e60e41add09051797bd9bf4511e177a74ad5559106264e20fa0758b73938ce
+tanggal_pengundangan: '1984-06-22'
+tanggal_berlaku: '1984-06-22'
+lembaran_negara: 'LN. 1984/ No. 20, TLN. No. 3273, LL SETNEG : 7 HLM'
+subjek: KESEHATAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1984
+  source_pdf_url: https://peraturan.go.id/files/uu4-1984.pdf
+bpk:
+  id: 46973
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35780/UU%20Nomor%204%20Tahun%201984.pdf
+    bpk_file_id: 35780
+    filename: UU Nomor 4 Tahun 1984.pdf
+    sha256: 90006013b22de83d25d8c5c61bc0f385c85a77126e7b893d71016f70b62616cd
+    bytes: 59505
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_17_2023
+      citation: UU No. 17 Tahun 2023
+      tentang: Kesehatan
+      url: https://peraturan.bpk.go.id/Details/258028/uu-no-17-tahun-2023
+      note: null
+    Mencabut:
+    - id: uu_7_1968
+      citation: UU No. 7 Tahun 1968
+      tentang: Perubahan Pasal 3 Undang-Undang Nomor 6 Tahun 1962 tentang Wabah
+      url: https://peraturan.bpk.go.id/Details/49146/uu-no-7-tahun-1968
+      note: null
+    - id: uu_6_1962
+      citation: UU No. 6 Tahun 1962
+      tentang: Wabah
+      url: https://peraturan.bpk.go.id/Details/50678/uu-no-6-tahun-1962
+      note: null
+uji_materi: null

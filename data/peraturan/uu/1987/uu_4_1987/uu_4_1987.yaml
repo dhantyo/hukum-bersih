@@ -13,8 +13,8 @@ tanggal_penetapan: '1987-07-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1987
-source_pdf_url: https://peraturan.go.id/files/uu4-1987.pdf
+source_url: https://peraturan.bpk.go.id/Details/46820/uu-no-4-tahun-1987
+source_pdf_url: https://peraturan.bpk.go.id/Download/35594/UU%20Nomor%204%20Tahun%201987.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1987_1987-07-25.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8e32d3b2761e9f4e371e28fc51402d910a2823ec06dacde1ce4ba8165f3ec829
 pdf_sha256: 93741c410ce02e1d4026c3a3c2ceaac5246b7312bdae91e42a64ea881bc08ee2
+tanggal_pengundangan: '1987-07-25'
+tanggal_berlaku: '1986-04-01'
+lembaran_negara: 'LN. 1987/ No. 31, TLN NO.3355, website dpr.go.id : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1987
+  source_pdf_url: https://peraturan.go.id/files/uu4-1987.pdf
+bpk:
+  id: 46820
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35594/UU%20Nomor%204%20Tahun%201987.pdf
+    bpk_file_id: 35594
+    filename: UU Nomor 4 Tahun 1987.pdf
+    sha256: 8e32d3b2761e9f4e371e28fc51402d910a2823ec06dacde1ce4ba8165f3ec829
+    bytes: 30546
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_1_1986
+      citation: UU No. 1 Tahun 1986
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1986/1987
+      url: https://peraturan.bpk.go.id/Details/46872/uu-no-1-tahun-1986
+      note: null
+uji_materi: null

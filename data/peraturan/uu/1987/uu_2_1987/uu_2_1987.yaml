@@ -14,8 +14,8 @@ tanggal_penetapan: '1987-02-21'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1987
-source_pdf_url: https://peraturan.go.id/files/uu2-1987.pdf
+source_url: https://peraturan.bpk.go.id/Details/46818/uu-no-2-tahun-1987
+source_pdf_url: https://peraturan.bpk.go.id/Download/35592/UU%20Nomor%202%20Tahun%201987.pdf
 relationships:
   amends: []
   amended_by: []
@@ -32,3 +32,22 @@ versions:
   text: uu_2_1987_1987-02-21.txt
   pasal_count: 2
 pdf_sha256: 36a2b0266d2fe799a0373e5ba13e2bd68283a7503dd207f5be98e4cd65c0155d
+tanggal_pengundangan: '1987-02-21'
+tanggal_berlaku: '1987-02-21'
+lembaran_negara: 'LN. 1987/ No.11 , TLN NO.3348, website dpr.go.id : 2 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1987
+  source_pdf_url: https://peraturan.go.id/files/uu2-1987.pdf
+bpk:
+  id: 46818
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35592/UU%20Nomor%202%20Tahun%201987.pdf
+    bpk_file_id: 35592
+    filename: UU Nomor 2 Tahun 1987.pdf
+    sha256: 2ff8437c7ba2f4e1a938c0bb9a00bf4f2b038a4d092cbd753cd7db7ec6d66ea9
+    bytes: 28570
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
+reparse_error: 'v12: new text has 654 words, stored text 2589'

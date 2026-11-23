@@ -11,8 +11,8 @@ tanggal_penetapan: '1987-01-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1987
-source_pdf_url: https://peraturan.go.id/files/uu1-1987.pdf
+source_url: https://peraturan.bpk.go.id/Details/46815/uu-no-1-tahun-1987
+source_pdf_url: https://peraturan.bpk.go.id/Download/35589/UU%20Nomor%201%20Tahun%201987.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1987_1987-01-28.txt
   pasal_count: 14
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0e9db9c55bff78c230042919aa79e3e25e8ac8c9ea366bb880081235a4621da6
 pdf_sha256: fe049c23c1356a8bd6d332571190b442b4cbd31b1dd6e54bc80d3fee854ab112
+tanggal_pengundangan: '1987-01-28'
+tanggal_berlaku: '1987-01-28'
+lembaran_negara: 'LN. 1987/ No.8 , TLN NO.3346, website dpr.go.id : 5 HLM'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN - DASAR PEMBENTUKAN
+  KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI - PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1987
+  source_pdf_url: https://peraturan.go.id/files/uu1-1987.pdf
+bpk:
+  id: 46815
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35589/UU%20Nomor%201%20Tahun%201987.pdf
+    bpk_file_id: 35589
+    filename: UU Nomor 1 Tahun 1987.pdf
+    sha256: 0e9db9c55bff78c230042919aa79e3e25e8ac8c9ea366bb880081235a4621da6
+    bytes: 55259
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

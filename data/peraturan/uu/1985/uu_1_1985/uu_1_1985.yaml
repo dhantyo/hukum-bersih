@@ -9,13 +9,13 @@ title: Undang-Undang Nomor 1 Tahun 1985 tentang Perubahan Uu 15-1969 Tentang Pem
 tentang: PERUBAHAN UU 15-1969 TENTANG PEMILIHAN UMUM ANGGOTA-ANGGOTA BADAN PERMUSYAWARATAN/PERWAKILAN
   RAKYAT SEBAGAIMANA TELAH DIUBAH DENGAN UU 4-1975 DAN UU 2-1980
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1985-01-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1985
-source_pdf_url: https://peraturan.go.id/files/uu1-1985.pdf
+source_url: https://peraturan.bpk.go.id/Details/46917/uu-no-1-tahun-1985
+source_pdf_url: https://peraturan.bpk.go.id/Download/35709/UU%20Nomor%201%20Tahun%201985.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,11 +24,57 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_1_1985_1985
+- id: uu_1_1985_1985-01-07
   kind: asli
   source: official
-  date: null
+  date: '1985-01-07'
   date_basis: tanggal_penetapan
-  text: uu_1_1985_1985.txt
+  text: uu_1_1985_1985-01-07.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c6e5aa1c62de04ef87c0188078668881b623808b90e32f4cce758714c5129fe7
 pdf_sha256: c6e5aa1c62de04ef87c0188078668881b623808b90e32f4cce758714c5129fe7
+tanggal_pengundangan: '1985-01-07'
+tanggal_berlaku: '1985-01-07'
+lembaran_negara: 'LN. 1985/ No.1, TLN. NO. 3281, website dpr.go.id : 5 HLM'
+subjek: PARTAI POLITIK DAN PEMILU
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1985
+  source_pdf_url: https://peraturan.go.id/files/uu1-1985.pdf
+bpk:
+  id: 46917
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35709/UU%20Nomor%201%20Tahun%201985.pdf
+    bpk_file_id: 35709
+    filename: UU Nomor 1 Tahun 1985.pdf
+    sha256: c6e5aa1c62de04ef87c0188078668881b623808b90e32f4cce758714c5129fe7
+    bytes: 52413
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_3_1999
+      citation: UU No. 3 Tahun 1999
+      tentang: Pemilihan Umum
+      url: https://peraturan.bpk.go.id/Details/45271/uu-no-3-tahun-1999
+      note: null
+    Mengubah:
+    - id: uu_2_1980
+      citation: UU No. 2 Tahun 1980
+      tentang: Perubahan atas Undang-Undang Nomor 15 Tahun 1969 tentang Pemilihan
+        Umum Anggota-Anggota Badan Permusyawaratan/Perwakilan Rakyat sebagaimana telah
+        diubah dengan Undang-Undang Nomor 4 Tahun 1975
+      url: https://peraturan.bpk.go.id/Details/47124/uu-no-2-tahun-1980
+      note: null
+    - id: uu_4_1975
+      citation: UU No. 4 Tahun 1975
+      tentang: Perubahan Undang-Undang Nomor 15 Tahun 1969 tentang Pemilihan Umum
+        Angota-Anggota Badan Permusyawaratan/Perwakilan Rakyat
+      url: https://peraturan.bpk.go.id/Details/47404/uu-no-4-tahun-1975
+      note: null
+    - id: uu_15_1969
+      citation: UU No. 15 Tahun 1969
+      tentang: Pemilihan Umum Anggota-Anggota Badan Permusyawaratan/Perwakilan Rakyat
+      url: https://peraturan.bpk.go.id/Details/49120/uu-no-15-tahun-1969
+      note: null
+uji_materi: null

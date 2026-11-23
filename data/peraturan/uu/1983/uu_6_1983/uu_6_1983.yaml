@@ -11,8 +11,8 @@ tanggal_penetapan: '1983-12-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1983
-source_pdf_url: https://peraturan.go.id/files/uu6-1983bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/46986/uu-no-6-tahun-1983
+source_pdf_url: https://peraturan.bpk.go.id/Download/35803/UU%20Nomor%206%20Tahun%201983.pdf
 relationships:
   amends: []
   amended_by:
@@ -33,4 +33,103 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1983_1983-12-31.txt
   pasal_count: 50
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2dd6a59899a0262c52b08bc216ed8653a13f2c25524b93f17a388a7f75e0667e
 pdf_sha256: 81227762cfb5aeae3e73b4aed3bcd2646ab3d347c23d620e910b20488c060137
+tanggal_pengundangan: '1983-12-31'
+tanggal_berlaku: '1984-01-01'
+lembaran_negara: 'LN. 1983/ No. 49, TLN. No. 3262, LL SETNEG : 22 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1983
+  source_pdf_url: https://peraturan.go.id/files/uu6-1983bt.pdf
+bpk:
+  id: 46986
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35803/UU%20Nomor%206%20Tahun%201983.pdf
+    bpk_file_id: 35803
+    filename: UU Nomor 6 Tahun 1983.pdf
+    sha256: 2dd6a59899a0262c52b08bc216ed8653a13f2c25524b93f17a388a7f75e0667e
+    bytes: 155121
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_6_2023
+      citation: UU No. 6 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun
+        2022 tentang Cipta Kerja menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/246523/uu-no-6-tahun-2023
+      note: null
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+    - id: uu_7_2021
+      citation: UU No. 7 Tahun 2021
+      tentang: Harmonisasi Peraturan Perpajakan
+      url: https://peraturan.bpk.go.id/Details/185162/uu-no-7-tahun-2021
+      note: null
+    - id: uu_11_2020
+      citation: UU No. 11 Tahun 2020
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
+      note: null
+    - id: perppu_1_2020
+      citation: PERPU No. 1 Tahun 2020
+      tentang: Kebijakan Keuangan Negara dan Stabilitas Sistem Keuangan untuk Penanganan
+        Pandemi Corona Virus Disease 2019 (COVID-19) dan/atau dalam Rangka Menghadapi
+        Ancaman yang Membahayakan Perekonomian Nasional dan/atau Stabilitas Sistem
+        Keuangan
+      url: https://peraturan.bpk.go.id/Details/135060/perpu-no-1-tahun-2020
+      note: null
+    - id: uu_16_2009
+      citation: UU No. 16 Tahun 2009
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 5 Tahun
+        2008 Tentang Perubahan Keempat Atas Undang-Undang Nomor 6 Tahun 1983 Tentang
+        Ketentuan Umum dan Tata Cara Perpajakan Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/38624/uu-no-16-tahun-2009
+      note: null
+    - id: uu_28_2007
+      citation: UU No. 28 Tahun 2007
+      tentang: Perubahan Ketiga atas Undang-Undang Nomor 6 Tahun 1983 tentang Ketentuan
+        Umum dan Tata Cara Perpajakan
+      url: https://peraturan.bpk.go.id/Details/39916/uu-no-28-tahun-2007
+      note: null
+    - id: uu_16_2000
+      citation: UU No. 16 Tahun 2000
+      tentang: Perubahan Kedua atas Undang-Undang Nomor 6 Tahun 1983 tentang Ketentuan
+        Umum dan Tata Cara Perpajakan
+      url: https://peraturan.bpk.go.id/Details/44967/uu-no-16-tahun-2000
+      note: null
+    - id: uu_9_1994
+      citation: UU No. 9 Tahun 1994
+      tentang: Perubahan atas Undang-Undang Nomor 6 Tahun 1983 tentang Ketentuan Umum
+        dan Tata Cara Perpajakan
+      url: https://peraturan.bpk.go.id/Details/46230/uu-no-9-tahun-1994
+      note: null
+    Mencabut:
+    - id: uu_9_1970
+      citation: UU No. 9 Tahun 1970
+      tentang: Perubahan dan Tambahan Ordonansi Pajak Pendapatan 1944
+      url: https://peraturan.bpk.go.id/Details/47627/uu-no-9-tahun-1970
+      note: null
+    - id: uu_8_1970
+      citation: UU No. 8 Tahun 1970
+      tentang: Perubahan dan Tambahan Ordonansi Pajak Perseroan 1925
+      url: https://peraturan.bpk.go.id/Details/47626/uu-no-8-tahun-1970
+      note: null
+    - id: uu_10_1970
+      citation: UU No. 10 Tahun 1970
+      tentang: Perubahan dan Tambahan Ordonansi Pajak Dividen 1959 Undang-Undang.
+        Pajak dividen 1959. Perubahan dan Tambahan
+      url: https://peraturan.bpk.go.id/Details/47632/uu-no-10-tahun-1970
+      note: null
+    - id: uu_8_1967
+      citation: UU No. 8 Tahun 1967
+      tentang: Perubahan dan Penyempurnaan Tata Cara Pemungutan Pajak Pendapatan 1944,
+        Pajak Kekayaan 1932 dan Pajak Perseroan 1925
+      url: https://peraturan.bpk.go.id/Details/49575/uu-no-8-tahun-1967
+      note: null
+uji_materi: null

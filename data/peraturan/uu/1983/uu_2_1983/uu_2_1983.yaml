@@ -12,8 +12,8 @@ tanggal_penetapan: '1983-02-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1983
-source_pdf_url: https://peraturan.go.id/files/uu2-1983.pdf
+source_url: https://peraturan.bpk.go.id/Details/46981/uu-no-2-tahun-1983
+source_pdf_url: https://peraturan.bpk.go.id/Download/35795/UU%20Nomor%202%20Tahun%201983.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1983_1983-02-28.txt
   pasal_count: 8
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6f02fa7e3072ce0837f8323375c35088c4689a9a0028f0be923dbfb9befd140c
 pdf_sha256: 95d1c0a296f887dfca6db487e8b840271177b558904d3cd92564622a0738cc88
+tanggal_pengundangan: '1983-02-28'
+tanggal_berlaku: '1983-04-01'
+lembaran_negara: 'LN. 1983/ No. 8, TLN. No. 3249, LL SETNEG : 4 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1983
+  source_pdf_url: https://peraturan.go.id/files/uu2-1983.pdf
+bpk:
+  id: 46981
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35795/UU%20Nomor%202%20Tahun%201983.pdf
+    bpk_file_id: 35795
+    filename: UU Nomor 2 Tahun 1983.pdf
+    sha256: 6f02fa7e3072ce0837f8323375c35088c4689a9a0028f0be923dbfb9befd140c
+    bytes: 39307
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

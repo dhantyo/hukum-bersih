@@ -14,8 +14,8 @@ tanggal_penetapan: '1984-07-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1984
-source_pdf_url: https://peraturan.go.id/files/uu7-1984.pdf
+source_url: https://peraturan.bpk.go.id/Details/46978/uu-no-7-tahun-1984
+source_pdf_url: https://peraturan.bpk.go.id/Download/35789/UU%20Nomor%207%20Tahun%201984.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,4 +31,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1984_1984-07-24.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b6f36c85129eee946ee59f4d0fe1461247c3efe2fd355778f5ec0c44817dd2cd
 pdf_sha256: 85f9aafecae87c4d998d80d43963dd91e861bf04481f25bd4b014567865a2261
+tanggal_pengundangan: '1984-07-24'
+tanggal_berlaku: '1984-07-24'
+lembaran_negara: 'LN. 1984/ No. 29, TLN. No. 3277, pih.kemlu.go.id : 3 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1984
+  source_pdf_url: https://peraturan.go.id/files/uu7-1984.pdf
+bpk:
+  id: 46978
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35789/UU%20Nomor%207%20Tahun%201984.pdf
+    bpk_file_id: 35789
+    filename: UU Nomor 7 Tahun 1984.pdf
+    sha256: b6f36c85129eee946ee59f4d0fe1461247c3efe2fd355778f5ec0c44817dd2cd
+    bytes: 34815
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/175140/UU_1984_7.pdf
+    bpk_file_id: 175140
+    filename: UU_1984_7.pdf
+    sha256: 1625806124de60c7a917f30b22088037209dd3256bf6f502d3c3baee4c50d5cf
+    bytes: 243351
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -12,8 +12,8 @@ tanggal_penetapan: '1984-03-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1984
-source_pdf_url: https://peraturan.go.id/files/uu1-1984.pdf
+source_url: https://peraturan.bpk.go.id/Details/46969/uu-no-1-tahun-1984
+source_pdf_url: https://peraturan.bpk.go.id/Download/35774/UU%20Nomor%201%20Tahun%201984.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1984_1984-03-10.txt
   pasal_count: 8
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 77b6978b6a67eb5c0cde90bbe700225dd609741cfdc7f237b32cf42c1117bff8
 pdf_sha256: f6ff7ff0547ae25ae8b5ed483791920d243aa44f35c1d92a0976b0c045497079
+tanggal_pengundangan: '1984-03-10'
+tanggal_berlaku: '1984-04-01'
+lembaran_negara: 'LN. 1984/ No.8, TLN. No.3268, LL SETNEG : 5 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1984
+  source_pdf_url: https://peraturan.go.id/files/uu1-1984.pdf
+bpk:
+  id: 46969
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35774/UU%20Nomor%201%20Tahun%201984.pdf
+    bpk_file_id: 35774
+    filename: UU Nomor 1 Tahun 1984.pdf
+    sha256: 77b6978b6a67eb5c0cde90bbe700225dd609741cfdc7f237b32cf42c1117bff8
+    bytes: 40294
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/315477/UU%20Nomor%201%20Tahun%201984%20_%20Lamp..pdf
+    bpk_file_id: 315477
+    filename: UU Nomor 1 Tahun 1984 _ Lamp..pdf
+    sha256: 73471a06d851165d6359141df77bd8d68cf061965e290f5972d016a3dea0c805
+    bytes: 539211
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_7_1985
+      citation: UU No. 7 Tahun 1985
+      tentang: Tambahan dan Perubahan atas Anggaran Pendapatan dan Belanja Negara
+        Tahun Anggaran 1984/1985
+      url: https://peraturan.bpk.go.id/Details/46928/uu-no-7-tahun-1985
+      note: null
+uji_materi: null

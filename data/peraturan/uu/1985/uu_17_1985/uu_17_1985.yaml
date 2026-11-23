@@ -13,8 +13,8 @@ tanggal_penetapan: '1985-12-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-1985
-source_pdf_url: https://peraturan.go.id/files/uu17-1985.pdf
+source_url: https://peraturan.bpk.go.id/Details/46968/uu-no-17-tahun-1985
+source_pdf_url: https://peraturan.bpk.go.id/Download/35773/UU%20Nomor%2017%20Tahun%201985.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_1985_1985-12-31.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 59233f702b8c1246f5041ff8cce93c87581de9c15d7cf5fb1dd5611eea40e482
 pdf_sha256: 39ce75ffaf45a95958c15d3a82277c6fd29ca7be72f5e05021889e2592fe63e4
+tanggal_pengundangan: '1985-12-31'
+tanggal_berlaku: '1985-12-31'
+lembaran_negara: 'LN. 1985/ No.76, TLN. No. 3319, website dpr.go.id : 2 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-1985
+  source_pdf_url: https://peraturan.go.id/files/uu17-1985.pdf
+bpk:
+  id: 46968
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35773/UU%20Nomor%2017%20Tahun%201985.pdf
+    bpk_file_id: 35773
+    filename: UU Nomor 17 Tahun 1985.pdf
+    sha256: 59233f702b8c1246f5041ff8cce93c87581de9c15d7cf5fb1dd5611eea40e482
+    bytes: 56823
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

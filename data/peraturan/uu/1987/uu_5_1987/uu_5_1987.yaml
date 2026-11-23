@@ -12,8 +12,8 @@ tanggal_penetapan: '1987-07-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1987
-source_pdf_url: https://peraturan.go.id/files/uu5-1987.pdf
+source_url: https://peraturan.bpk.go.id/Details/46822/uu-no-5-tahun-1987
+source_pdf_url: https://peraturan.bpk.go.id/Download/35596/UU%20Nomor%205%20Tahun%201987.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1987_1987-07-25.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6989a1ab468bf6303a6ccf1ec7186236a8604b6e3a4ca7fc4ee534753d9fb9bc
 pdf_sha256: 25ee322680704216e8af576121c75f839a834ddd075d9b9f7ffe5768ebce41c4
+tanggal_pengundangan: '1987-07-25'
+tanggal_berlaku: '1987-07-25'
+lembaran_negara: 'LN. 1987/ No.32 , TLN NO.3356, website dpr.go.id : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1987
+  source_pdf_url: https://peraturan.go.id/files/uu5-1987.pdf
+bpk:
+  id: 46822
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35596/UU%20Nomor%205%20Tahun%201987.pdf
+    bpk_file_id: 35596
+    filename: UU Nomor 5 Tahun 1987.pdf
+    sha256: 6989a1ab468bf6303a6ccf1ec7186236a8604b6e3a4ca7fc4ee534753d9fb9bc
+    bytes: 27504
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

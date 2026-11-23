@@ -11,8 +11,8 @@ tanggal_penetapan: '1986-03-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1986
-source_pdf_url: https://peraturan.go.id/files/uu2-1986.pdf
+source_url: https://peraturan.bpk.go.id/Details/46874/uu-no-2-tahun-1986
+source_pdf_url: https://peraturan.bpk.go.id/Download/35654/UU%20Nomor%202%20Tahun%201986.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,51 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_2_1986_1986-03-08
+  kind: asli
+  source: official
+  date: '1986-03-08'
+  date_basis: tanggal_penetapan
+  text: uu_2_1986_1986-03-08.txt
+  pasal_count: 10
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6061c445f869da7f9bd3c839fc7da89cba725db097dd16893a5d790a7d38f164
 pdf_sha256: 6061c445f869da7f9bd3c839fc7da89cba725db097dd16893a5d790a7d38f164
-parse_error: 'LeakedMarkupError: hcontainer_1__p_2: markup in text: ''ART 1 -'''
+tanggal_pengundangan: '1986-03-08'
+tanggal_berlaku: '1986-03-08'
+lembaran_negara: 'LN. 1986/ No. 20, TLN. NO. 3327, website dpr.go.id : 17 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1986
+  source_pdf_url: https://peraturan.go.id/files/uu2-1986.pdf
+bpk:
+  id: 46874
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35654/UU%20Nomor%202%20Tahun%201986.pdf
+    bpk_file_id: 35654
+    filename: UU Nomor 2 Tahun 1986.pdf
+    sha256: 6061c445f869da7f9bd3c839fc7da89cba725db097dd16893a5d790a7d38f164
+    bytes: 116040
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_49_2009
+      citation: UU No. 49 Tahun 2009
+      tentang: Perubahan Kedua Atas Undang-Undang Nomor 2 Tahun 1986 Tentang Peradilan
+        Umum
+      url: https://peraturan.bpk.go.id/Details/38794/uu-no-49-tahun-2009
+      note: null
+    - id: uu_8_2004
+      citation: UU No. 8 Tahun 2004
+      tentang: Perubahan atas Undang-Undang Nomor 2 Tahun 1986 tentang Peradilan Umum
+      url: https://peraturan.bpk.go.id/Details/40498/uu-no-8-tahun-2004
+      note: null
+    Mencabut:
+    - id: uu_13_1965
+      citation: UU No. 13 Tahun 1965
+      tentang: Pengadilan Dalam Lingkungan Peradilan Umum dan Mahkamah Agung
+      url: https://peraturan.bpk.go.id/Details/50194/uu-no-13-tahun-1965
+      note: null
+uji_materi: null

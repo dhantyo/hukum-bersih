@@ -12,8 +12,8 @@ tanggal_penetapan: '1984-06-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1984
-source_pdf_url: https://peraturan.go.id/files/uu2-1984.pdf
+source_url: https://peraturan.bpk.go.id/Details/46970/uu-no-2-tahun-1984
+source_pdf_url: https://peraturan.bpk.go.id/Download/35775/UU%20Nomor%202%20Tahun%201984.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1984_1984-06-05.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 72954329ba0278b95f02f799591dc6c5c65f7492d996579368f1f2348e3ad056
 pdf_sha256: e3c6a816568568279cba5e32e54733bf6396780c87743b05354e8e4c3c57ebb2
+tanggal_pengundangan: '1984-06-05'
+tanggal_berlaku: '1984-06-05'
+lembaran_negara: 'LN. 1984/ No.17, TLN. No. 3270 , LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1984
+  source_pdf_url: https://peraturan.go.id/files/uu2-1984.pdf
+bpk:
+  id: 46970
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35775/UU%20Nomor%202%20Tahun%201984.pdf
+    bpk_file_id: 35775
+    filename: UU Nomor 2 Tahun 1984.pdf
+    sha256: 72954329ba0278b95f02f799591dc6c5c65f7492d996579368f1f2348e3ad056
+    bytes: 27763
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

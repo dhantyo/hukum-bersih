@@ -12,8 +12,8 @@ tanggal_penetapan: '1983-06-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1983
-source_pdf_url: https://peraturan.go.id/files/uu4-1983.pdf
+source_url: https://peraturan.bpk.go.id/Details/46983/uu-no-4-tahun-1983
+source_pdf_url: https://peraturan.bpk.go.id/Download/35799/UU%20Nomor%204%20Tahun%201983.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1983_1983-06-28.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 26c1652f710ab908f9d7828dcbc4f638d966c32792988578e14c0dc18fcb5696
 pdf_sha256: 765aef8f6c1865ac672a35bbb9d934353aab55207671b1c781ba6f3bb1ec1748
+tanggal_pengundangan: '1983-06-28'
+tanggal_berlaku: '1983-06-28'
+lembaran_negara: 'LN. 1983/ No. 34, TLN. No. 3256, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1983
+  source_pdf_url: https://peraturan.go.id/files/uu4-1983.pdf
+bpk:
+  id: 46983
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35799/UU%20Nomor%204%20Tahun%201983.pdf
+    bpk_file_id: 35799
+    filename: UU Nomor 4 Tahun 1983.pdf
+    sha256: 26c1652f710ab908f9d7828dcbc4f638d966c32792988578e14c0dc18fcb5696
+    bytes: 27887
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -11,8 +11,8 @@ tanggal_penetapan: '1983-10-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1983
-source_pdf_url: https://peraturan.go.id/files/uu5-1983.pdf
+source_url: https://peraturan.bpk.go.id/Details/46985/uu-no-5-tahun-1983
+source_pdf_url: https://peraturan.bpk.go.id/Download/35802/UU%20Nomor%205%20Tahun%201983.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1983_1983-10-18.txt
   pasal_count: 21
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 28128048278b5705dc9b4d94fa0124262de1ffe6353a5ea6ea1102b9483faa45
 pdf_sha256: 7d36c250914c7c3b9c2e92ae6f4ade9a1fe6564bf567438c871c239aab8229e0
+tanggal_pengundangan: '1983-10-18'
+tanggal_berlaku: '1983-10-18'
+lembaran_negara: 'LN. 1983/ No. 44, TLN No. 3260, LL SETNEG : 9 HLM'
+subjek: TERITORIAL INDONESIA - KETATANEGARAAN, KENEGARAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1983
+  source_pdf_url: https://peraturan.go.id/files/uu5-1983.pdf
+bpk:
+  id: 46985
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35802/UU%20Nomor%205%20Tahun%201983.pdf
+    bpk_file_id: 35802
+    filename: UU Nomor 5 Tahun 1983.pdf
+    sha256: 28128048278b5705dc9b4d94fa0124262de1ffe6353a5ea6ea1102b9483faa45
+    bytes: 65428
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

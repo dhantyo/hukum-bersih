@@ -13,8 +13,8 @@ tanggal_penetapan: '1983-06-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1983
-source_pdf_url: https://peraturan.go.id/files/uu3-1983.pdf
+source_url: https://peraturan.bpk.go.id/Details/46982/uu-no-3-tahun-1983
+source_pdf_url: https://peraturan.bpk.go.id/Download/35797/UU%20Nomor%203%20Tahun%201983.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,5 +29,32 @@ versions:
   date: '1983-06-28'
   date_basis: tanggal_penetapan
   text: uu_3_1983_1983-06-28.txt
-  pasal_count: 1
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 73b681417600fbd4f3d14644b5d9b0ff95e7173068227a5cc28b1cd57d3cf136
 pdf_sha256: 89460f8d4dfe5d2c3e2454334d22162d37db828226a20b171ebf5b8c415bb99d
+tanggal_pengundangan: '1983-06-28'
+tanggal_berlaku: '1982-04-01'
+lembaran_negara: 'LN. 1983/ No. 3, TLN. No. 3255, LL SETNEG : 33 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1983
+  source_pdf_url: https://peraturan.go.id/files/uu3-1983.pdf
+bpk:
+  id: 46982
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35797/UU%20Nomor%203%20Tahun%201983.pdf
+    bpk_file_id: 35797
+    filename: UU Nomor 3 Tahun 1983.pdf
+    sha256: 73b681417600fbd4f3d14644b5d9b0ff95e7173068227a5cc28b1cd57d3cf136
+    bytes: 30960
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_5_1982
+      citation: UU No. 5 Tahun 1982
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1982/1983
+      url: https://peraturan.bpk.go.id/Details/47000/uu-no-5-tahun-1982
+      note: null
+uji_materi: null

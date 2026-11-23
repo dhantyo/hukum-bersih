@@ -6,20 +6,18 @@ year: 1985
 title: Undang-Undang Nomor 8 Tahun 1985 tentang Organisasi Kemasyarakatan
 tentang: ORGANISASI KEMASYARAKATAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 17 Tahun 2013 Tentang Organisasi
-  Kemasyarakatan'
+status: tidak_berlaku
 tanggal_penetapan: '1985-06-17'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1985
-source_pdf_url: https://peraturan.go.id/files/uu8-1985.pdf
+source_url: https://peraturan.bpk.go.id/Details/46956/uu-no-8-tahun-1985
+source_pdf_url: https://peraturan.bpk.go.id/Download/35761/UU%20Nomor%208%20Tahun%201985.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_17_2013
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,4 +28,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1985_1985-06-17.txt
   pasal_count: 20
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 42ba706a7a9e12ebad583e4e414c3e7e78c1491f820932f258174f51f1bce8a2
 pdf_sha256: 42ba706a7a9e12ebad583e4e414c3e7e78c1491f820932f258174f51f1bce8a2
+tanggal_pengundangan: '1985-06-17'
+tanggal_berlaku: '1985-06-17'
+lembaran_negara: 'LN. 1985/ No. 44, TLN. NO. 3298, website djpp.depkumham.go.id :
+  6 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1985
+  source_pdf_url: https://peraturan.go.id/files/uu8-1985.pdf
+bpk:
+  id: 46956
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35761/UU%20Nomor%208%20Tahun%201985.pdf
+    bpk_file_id: 35761
+    filename: UU Nomor 8 Tahun 1985.pdf
+    sha256: 42ba706a7a9e12ebad583e4e414c3e7e78c1491f820932f258174f51f1bce8a2
+    bytes: 40938
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_17_2013
+      citation: UU No. 17 Tahun 2013
+      tentang: Organisasi Kemasyarakatan
+      url: https://peraturan.bpk.go.id/Details/38876/uu-no-17-tahun-2013
+      note: null
+uji_materi: null

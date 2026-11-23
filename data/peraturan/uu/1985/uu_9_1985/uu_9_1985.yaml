@@ -6,23 +6,53 @@ year: 1985
 title: Undang-Undang Nomor 9 Tahun 1985 tentang Perikanan
 tentang: PERIKANAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 31 Tahun 2004 Tentang Perikanan
-  Undang-Undang Nomor 45 Tahun 2009 Tentang Perubahan Atas Uu Nomor 31 Tahun 2004
-  Tentang Perikanan'
+status: tidak_berlaku
 tanggal_penetapan: '1985-06-19'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1985
-source_pdf_url: https://peraturan.go.id/files/uu9-1985.pdf
+source_url: https://peraturan.bpk.go.id/Details/46958/uu-no-9-tahun-1985
+source_pdf_url: https://peraturan.bpk.go.id/Download/35763/UU%20Nomor%209%20Tahun%201985.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_31_2004
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_9_1985_1985-06-19
+  kind: asli
+  source: official
+  date: '1985-06-19'
+  date_basis: tanggal_penetapan
+  text: uu_9_1985_1985-06-19.txt
+  pasal_count: 35
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 851be00d4d0b5e428872b28f815dd7693d374ec72d45c56d6bd92f2e5a21b558
 pdf_sha256: 851be00d4d0b5e428872b28f815dd7693d374ec72d45c56d6bd92f2e5a21b558
-parse_error: 'LeakedMarkupError: hcontainer_1__p_2: markup in text: ''ART 1 -'''
+tanggal_pengundangan: '1985-06-19'
+tanggal_berlaku: '1985-06-19'
+lembaran_negara: 'LN. 1985/ No. 46, TLN. NO.3299, website depkumham.go.id: 10 HLM'
+subjek: PERIKANAN DAN KELAUTAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1985
+  source_pdf_url: https://peraturan.go.id/files/uu9-1985.pdf
+bpk:
+  id: 46958
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35763/UU%20Nomor%209%20Tahun%201985.pdf
+    bpk_file_id: 35763
+    filename: UU Nomor 9 Tahun 1985.pdf
+    sha256: 851be00d4d0b5e428872b28f815dd7693d374ec72d45c56d6bd92f2e5a21b558
+    bytes: 74923
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_31_2004
+      citation: UU No. 31 Tahun 2004
+      tentang: Perikanan
+      url: https://peraturan.bpk.go.id/Details/40763/uu-no-31-tahun-2004
+      note: null
+uji_materi: null

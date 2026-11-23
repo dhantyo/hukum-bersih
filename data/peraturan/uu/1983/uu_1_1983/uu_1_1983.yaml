@@ -17,8 +17,8 @@ tanggal_penetapan: '1983-02-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1983
-source_pdf_url: https://peraturan.go.id/files/uu1-1983bt.pdf
+source_url: https://peraturan.bpk.go.id/Details/46980/uu-no-1-tahun-1983
+source_pdf_url: https://peraturan.bpk.go.id/Download/35793/UU%20Nomor%201%20Tahun%201983.pdf
 relationships:
   amends: []
   amended_by: []
@@ -34,4 +34,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1983_1983-02-25.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 73de46091b4adfca5828df61120a0c92e5d9ad93be454fce977b81bb8d430ec6
 pdf_sha256: a55f2cab4acb71e12bff1d657171aa3d7b6fa65d81b53a190a42071bb572e7ad
+tanggal_pengundangan: '1983-02-25'
+tanggal_berlaku: '1983-02-25'
+lembaran_negara: 'LN. 1983/NO.., TLN NO. 3248, website dpr.go.id : 17 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1983
+  source_pdf_url: https://peraturan.go.id/files/uu1-1983bt.pdf
+bpk:
+  id: 46980
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35793/UU%20Nomor%201%20Tahun%201983.pdf
+    bpk_file_id: 35793
+    filename: UU Nomor 1 Tahun 1983.pdf
+    sha256: 73de46091b4adfca5828df61120a0c92e5d9ad93be454fce977b81bb8d430ec6
+    bytes: 52497
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -13,8 +13,8 @@ tanggal_penetapan: '1982-08-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-1982
-source_pdf_url: https://peraturan.go.id/files/uu19-1982.pdf
+source_url: https://peraturan.bpk.go.id/Details/47030/uu-no-19-tahun-1982
+source_pdf_url: https://peraturan.bpk.go.id/Download/35860/UU%20Nomor%2019%20Tahun%201982.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_1982_1982-08-20.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f20bb723e0b859f20a9bd438688b9f65a7a520f46461e8c8470c4c91f56c5860
 pdf_sha256: a0a083179d3621cae53227fe4f8c89f5f59db54ff664b61e20be9c19efb87dba
+tanggal_pengundangan: '1982-08-20'
+tanggal_berlaku: '1982-08-20'
+lembaran_negara: 'LN. 1982/ No. 46, TLN. No. 3233, LL SETNEG : 3 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-1982
+  source_pdf_url: https://peraturan.go.id/files/uu19-1982.pdf
+bpk:
+  id: 47030
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35860/UU%20Nomor%2019%20Tahun%201982.pdf
+    bpk_file_id: 35860
+    filename: UU Nomor 19 Tahun 1982.pdf
+    sha256: f20bb723e0b859f20a9bd438688b9f65a7a520f46461e8c8470c4c91f56c5860
+    bytes: 29496
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

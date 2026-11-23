@@ -11,8 +11,8 @@ tanggal_penetapan: '1985-12-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-1985
-source_pdf_url: https://peraturan.go.id/files/uu14-1985.pdf
+source_url: https://peraturan.bpk.go.id/Details/46965/uu-no-14-tahun-1985
+source_pdf_url: https://peraturan.bpk.go.id/Download/35770/UU%20Nomor%2014%20Tahun%201985.pdf
 relationships:
   amends: []
   amended_by:
@@ -21,6 +21,51 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_14_1985_1985-12-30
+  kind: asli
+  source: official
+  date: '1985-12-30'
+  date_basis: tanggal_penetapan
+  text: uu_14_1985_1985-12-30.txt
+  pasal_count: 82
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ffab554c3f4d516f7614b2b8a09b5da2c8cf80b6d24334609c34f1e1877cce54
 pdf_sha256: 21e97ec08b59648d3f34adb173284219716e03b68ecfb2bcf1fbffdd268f73c3
-parse_error: 'LeakedMarkupError: hcontainer_1__p_2: markup in text: ''ART 1 -'''
+tanggal_pengundangan: '1985-12-30'
+tanggal_berlaku: '1985-12-30'
+lembaran_negara: 'LN. 1985/ No. 73, TLN. No. 3316, website. dpr.go.id : 19 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-1985
+  source_pdf_url: https://peraturan.go.id/files/uu14-1985.pdf
+bpk:
+  id: 46965
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35770/UU%20Nomor%2014%20Tahun%201985.pdf
+    bpk_file_id: 35770
+    filename: UU Nomor 14 Tahun 1985.pdf
+    sha256: ffab554c3f4d516f7614b2b8a09b5da2c8cf80b6d24334609c34f1e1877cce54
+    bytes: 137750
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_3_2009
+      citation: UU No. 3 Tahun 2009
+      tentang: Perubahan Kedua Atas Undang-Undang Nomor 14 Tahun 1985 tentang Mahkamah
+        Agung
+      url: https://peraturan.bpk.go.id/Details/38574/uu-no-3-tahun-2009
+      note: null
+    - id: uu_5_2004
+      citation: UU No. 5 Tahun 2004
+      tentang: Perubahan atas Undang-Undang Nomor 14 Tahun 1985 tentang Mahkamah Agung
+      url: https://peraturan.bpk.go.id/Details/40491/uu-no-5-tahun-2004
+      note: null
+    Mengubah:
+    - id: uu_13_1965
+      citation: UU No. 13 Tahun 1965
+      tentang: Pengadilan Dalam Lingkungan Peradilan Umum dan Mahkamah Agung
+      url: https://peraturan.bpk.go.id/Details/50194/uu-no-13-tahun-1965
+      note: null
+uji_materi: null

@@ -11,8 +11,8 @@ tanggal_penetapan: '1986-12-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1986
-source_pdf_url: https://peraturan.go.id/files/uu5-1986.pdf
+source_url: https://peraturan.bpk.go.id/Details/46914/uu-no-5-tahun-1986
+source_pdf_url: https://peraturan.bpk.go.id/Download/47520/UU%20Nomor%205%20Tahun%201986.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,58 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_5_1986_1986-12-29
+  kind: asli
+  source: official
+  date: '1986-12-29'
+  date_basis: tanggal_penetapan
+  text: uu_5_1986_1986-12-29.txt
+  pasal_count: 145
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8dabcc6be5312e1212b6cbed52560b86b309ffca28de6bf15eaef6378f4fab94
 pdf_sha256: 0248ee5d64e7c9b54406b7c5bc18fe21fe2530b5e3615e29dc74ca961affeb16
-parse_error: 'LeakedMarkupError: hcontainer_1__p_2: markup in text: ''ART 1 -'''
+tanggal_pengundangan: '1986-12-29'
+tanggal_berlaku: '1986-12-29'
+lembaran_negara: 'LN. 1986/ No.77, TLN NO.3344, LL SETNEG : 36 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1986
+  source_pdf_url: https://peraturan.go.id/files/uu5-1986.pdf
+bpk:
+  id: 46914
+  files:
+  - url: https://peraturan.bpk.go.id/Download/47520/UU%20Nomor%205%20Tahun%201986.pdf
+    bpk_file_id: 47520
+    filename: UU Nomor 5 Tahun 1986.pdf
+    sha256: 8dabcc6be5312e1212b6cbed52560b86b309ffca28de6bf15eaef6378f4fab94
+    bytes: 139721
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/47525/UU_NO_5_1986-1.pdf
+    bpk_file_id: 47525
+    filename: UU_NO_5_1986-1.pdf
+    sha256: e7e98ac83cfe7fc3a4a7c2f7ad4b93c9d1729433c54ce1c62c86e8716dc96bdc
+    bytes: 238563
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_51_2009
+      citation: UU No. 51 Tahun 2009
+      tentang: Perubahan Kedua Atas Undang-Undang Nomor 5 Tahun 1986 tentang Peradilan
+        Tata Usaha Negara
+      url: https://peraturan.bpk.go.id/Details/38851/uu-no-51-tahun-2009
+      note: null
+    - id: uu_9_2004
+      citation: UU No. 9 Tahun 2004
+      tentang: Perubahan Atas Undang-Undang Nomor 5 Tahun 1986 tentang Peradilan Tata
+        Usaha Negara
+      url: https://peraturan.bpk.go.id/Details/40500/uu-no-9-tahun-2004
+      note: null
+uji_materi:
+- putusan: 17/PUU-IX/2011
+  url: https://peraturan.bpk.go.id/DownloadUjiMateri/72/putusan_sidang_17%20puu%202011%20-%20TELAH%20BACA.pdf
+  amar: Pasal 109 ayat (3) Undang-Undang Nomor 5 Tahun 1986 sebagaimana telah diubah
+    dengan Undang-Undang Nomor 9 Tahun 2004 dan terakhir dengan Undang-Undang Nomor
+    51 Tahun 2009 tentang Peradilan Tata Usaha Negara bertentangan dengan Pasal 28D
+    ayat (1) UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.

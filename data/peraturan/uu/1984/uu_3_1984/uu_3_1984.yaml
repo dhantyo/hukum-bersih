@@ -13,8 +13,8 @@ tanggal_penetapan: '1984-06-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1984
-source_pdf_url: https://peraturan.go.id/files/uu3-1984.pdf
+source_url: https://peraturan.bpk.go.id/Details/46972/uu-no-3-tahun-1984
+source_pdf_url: https://peraturan.bpk.go.id/Download/35778/UU%20Nomor%203%20Tahun%201984.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1984_1984-06-05.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1853ee0f77e3be66a7204d7140e4c33db39cb6f9076bfad06751766ac0c369c8
 pdf_sha256: cae96d033b370b8fc1cd0f3473470eaad590c79c7de13965d00bdf35c31d48a9
+tanggal_pengundangan: '1984-06-05'
+tanggal_berlaku: '1983-04-01'
+lembaran_negara: 'LN. 1984/ No. 18, TLN. No.3271, LL SETNEG : 3 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1984
+  source_pdf_url: https://peraturan.go.id/files/uu3-1984.pdf
+bpk:
+  id: 46972
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35778/UU%20Nomor%203%20Tahun%201984.pdf
+    bpk_file_id: 35778
+    filename: UU Nomor 3 Tahun 1984.pdf
+    sha256: 1853ee0f77e3be66a7204d7140e4c33db39cb6f9076bfad06751766ac0c369c8
+    bytes: 33107
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

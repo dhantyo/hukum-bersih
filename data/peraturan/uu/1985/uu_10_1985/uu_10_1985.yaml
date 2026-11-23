@@ -13,8 +13,8 @@ tanggal_penetapan: '1985-10-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1985
-source_pdf_url: https://peraturan.go.id/files/uu10-1985.pdf
+source_url: https://peraturan.bpk.go.id/Details/46960/uu-no-10-tahun-1985
+source_pdf_url: https://peraturan.bpk.go.id/Download/35765/UU%20Nomor%2010%20Tahun%201985.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,4 +31,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_1985_1985-10-02.txt
   pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 28c80eae45a9163fecae8531923759e872bac9b6b97d0422b8ba76c9b43aa3e0
 pdf_sha256: 28c80eae45a9163fecae8531923759e872bac9b6b97d0422b8ba76c9b43aa3e0
+tanggal_pengundangan: '1985-10-02'
+tanggal_berlaku: '1985-10-02'
+lembaran_negara: 'LN. 1985/ No. 61, TLN. NO. 3307, website djpp.depkumham.go.id: 2
+  HLM'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN - PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1985
+  source_pdf_url: https://peraturan.go.id/files/uu10-1985.pdf
+bpk:
+  id: 46960
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35765/UU%20Nomor%2010%20Tahun%201985.pdf
+    bpk_file_id: 35765
+    filename: UU Nomor 10 Tahun 1985.pdf
+    sha256: 28c80eae45a9163fecae8531923759e872bac9b6b97d0422b8ba76c9b43aa3e0
+    bytes: 31688
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: uu_4_1970
+      citation: UU No. 4 Tahun 1970
+      tentang: Pembentukan Daerah Perdagangan Bebas dengan Pelabuhan Bebas Sabang
+      url: https://peraturan.bpk.go.id/Details/47618/uu-no-4-tahun-1970
+      note: null
+uji_materi: null

@@ -6,20 +6,18 @@ year: 1985
 title: Undang-Undang Nomor 16 Tahun 1985 tentang Rumah Susun
 tentang: RUMAH SUSUN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 20 Tahun 2011 Tentang Rumah
-  Susun'
+status: tidak_berlaku
 tanggal_penetapan: '1985-12-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-16-tahun-1985
-source_pdf_url: https://peraturan.go.id/files/uu16-1985.pdf
+source_url: https://peraturan.bpk.go.id/Details/46967/uu-no-16-tahun-1985
+source_pdf_url: https://peraturan.bpk.go.id/Download/35772/UU%20Nomor%2016%20Tahun%201985.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_20_2011
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -31,3 +29,28 @@ versions:
   text: uu_16_1985_1985-12-31.txt
   pasal_count: 26
 pdf_sha256: 08741c9e76a11bd6ebdb6539db20600aa12037ae017610fd687f9ecc98e5d181
+tanggal_pengundangan: '1985-12-31'
+tanggal_berlaku: '1985-12-31'
+lembaran_negara: 'LN. 1985/ No. 75, TLN. No.3318, website dpr.go.id : 11 HLM'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-16-tahun-1985
+  source_pdf_url: https://peraturan.go.id/files/uu16-1985.pdf
+bpk:
+  id: 46967
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35772/UU%20Nomor%2016%20Tahun%201985.pdf
+    bpk_file_id: 35772
+    filename: UU Nomor 16 Tahun 1985.pdf
+    sha256: 08741c9e76a11bd6ebdb6539db20600aa12037ae017610fd687f9ecc98e5d181
+    bytes: 106259
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_20_2011
+      citation: UU No. 20 Tahun 2011
+      tentang: Rumah Susun
+      url: https://peraturan.bpk.go.id/Details/39256/uu-no-20-tahun-2011
+      note: null
+uji_materi: null
+reparse_error: 'v12: new Penjelasan has 0 words, stored 3932'

@@ -6,20 +6,18 @@ year: 1985
 title: Undang-Undang Nomor 5 Tahun 1985 tentang Referendum
 tentang: REFERENDUM
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 6 Tahun 1999 Tentang Pencabutan
-  Uu 5-1985 Tentang Referendum'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1985-03-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1985
-source_pdf_url: https://peraturan.go.id/files/uu5-1985.pdf
+source_url: https://peraturan.bpk.go.id/Details/46924/uu-no-5-tahun-1985
+source_pdf_url: https://peraturan.bpk.go.id/Download/261596/UU%20Nomor%205%20Tahun%201985.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_6_1999
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -31,3 +29,29 @@ versions:
   text: uu_5_1985_1985.txt
   pasal_count: 32
 pdf_sha256: 0a318c485d19fbf53c1b9dfe790c55bd210fc56d7e881fb7a8bb982c55002180
+tanggal_pengundangan: '1984-06-29'
+tanggal_berlaku: '1985-03-18'
+lembaran_negara: 'LN. 1985/ No.29, TLN NO.3288, website bphn.go.id : 7 HLM'
+subjek: KETATANEGARAAN, KENEGARAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1985
+  source_pdf_url: https://peraturan.go.id/files/uu5-1985.pdf
+bpk:
+  id: 46924
+  files:
+  - url: https://peraturan.bpk.go.id/Download/261596/UU%20Nomor%205%20Tahun%201985.pdf
+    bpk_file_id: 261596
+    filename: UU Nomor 5 Tahun 1985.pdf
+    sha256: 4a867946c37f90b4045359115927d564c2aac977456480b4e534f5780dc9f86c
+    bytes: 94507
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_6_1999
+      citation: UU No. 6 Tahun 1999
+      tentang: Pencabutan Undang-Undang Nomor 5 Tahun 1985 tentang Referendum
+      url: https://peraturan.bpk.go.id/Details/45283/uu-no-6-tahun-1999
+      note: null
+  tanggal_pengundangan: '1985-03-18'
+uji_materi: null
+reparse_error: 'v12: 26 pasal, stored text has 32'

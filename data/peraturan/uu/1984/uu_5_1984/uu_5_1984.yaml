@@ -6,20 +6,18 @@ year: 1984
 title: Undang-Undang Nomor 5 Tahun 1984 tentang Perindustrian
 tentang: PERINDUSTRIAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 3 Tahun 2014 Tentang Perindustrian
-  Undang-Undang Nomor 31 Tahun 2000 Tentang Desain Industri'
+status: tidak_berlaku
 tanggal_penetapan: '1984-06-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1984
-source_pdf_url: https://peraturan.go.id/files/uu5-1984.pdf
+source_url: https://peraturan.bpk.go.id/Details/46975/uu-no-5-tahun-1984
+source_pdf_url: https://peraturan.bpk.go.id/Download/35783/UU%20Nomor%205%20Tahun%201984.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_3_2014
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1984_1984-06-29.txt
   pasal_count: 32
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 30944a9ef890bb41a9a54abc173a04824d5691b579fb36014d53266e03f87176
 pdf_sha256: dc49e569078e8c22827d02b242a49c4cb1fe49aa3870a485b439957009da6f7e
+tanggal_pengundangan: '1984-06-29'
+tanggal_berlaku: '1984-06-29'
+lembaran_negara: 'LN. 1984/ No. 22, TLN. No. 3274, LL SETNEG : 13 HLM'
+subjek: PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1984
+  source_pdf_url: https://peraturan.go.id/files/uu5-1984.pdf
+bpk:
+  id: 46975
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35783/UU%20Nomor%205%20Tahun%201984.pdf
+    bpk_file_id: 35783
+    filename: UU Nomor 5 Tahun 1984.pdf
+    sha256: 30944a9ef890bb41a9a54abc173a04824d5691b579fb36014d53266e03f87176
+    bytes: 79762
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_3_2014
+      citation: UU No. 3 Tahun 2014
+      tentang: Perindustrian
+      url: https://peraturan.bpk.go.id/Details/38572/uu-no-3-tahun-2014
+      note: null
+uji_materi: null

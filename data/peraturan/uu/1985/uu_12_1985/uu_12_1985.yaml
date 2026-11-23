@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 12 Tahun 1985 tentang Pajak Bumi Dan Bangunan
 tentang: PAJAK BUMI DAN BANGUNAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1985-12-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1985
-source_pdf_url: https://peraturan.go.id/files/uu12-1985.pdf
+source_url: https://peraturan.bpk.go.id/Details/46963/uu-no-12-tahun-1985
+source_pdf_url: https://peraturan.bpk.go.id/Download/35768/UU%20Nomor%2012%20Tahun%201985.pdf
 relationships:
   amends: []
   amended_by:
@@ -22,11 +22,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_12_1985_1985
+- id: uu_12_1985_1985-12-27
   kind: asli
   source: official
-  date: null
+  date: '1985-12-27'
   date_basis: tanggal_penetapan
-  text: uu_12_1985_1985.txt
+  text: uu_12_1985_1985-12-27.txt
   pasal_count: 31
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d30dab656b6635f02c7c2430b514a29d2ef437796cbd7fe62a76b5b7ea3b3175
 pdf_sha256: 9a68dfc623cb70cca48392ae339ef7d1c60b5e62e98c90928172bdd77731aa1c
+tanggal_pengundangan: '1985-12-27'
+tanggal_berlaku: '1986-01-01'
+lembaran_negara: 'LN. 1985/ No. 68, TLN. No.3312, website dpr.go.id : 10 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1985
+  source_pdf_url: https://peraturan.go.id/files/uu12-1985.pdf
+bpk:
+  id: 46963
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35768/UU%20Nomor%2012%20Tahun%201985.pdf
+    bpk_file_id: 35768
+    filename: UU Nomor 12 Tahun 1985.pdf
+    sha256: d30dab656b6635f02c7c2430b514a29d2ef437796cbd7fe62a76b5b7ea3b3175
+    bytes: 107609
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_12_1994
+      citation: UU No. 12 Tahun 1994
+      tentang: Perubahan atas Undang-Undang Nomor 12 Tahun 1985 tentang Pajak Bumi
+        dan Bangunan
+      url: https://peraturan.bpk.go.id/Details/46237/uu-no-12-tahun-1994
+      note: null
+uji_materi: null
