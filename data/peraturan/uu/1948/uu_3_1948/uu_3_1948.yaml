@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 3 Tahun 1948 tentang Susunan Kementerian Pertahanan D
 tentang: SUSUNAN KEMENTERIAN PERTAHANAN DAN ANGKATAN PERANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1948-03-05'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1948
-source_pdf_url: https://peraturan.go.id/files/uu3-1948.pdf
+source_url: https://peraturan.bpk.go.id/Details/25521/uu-no-3-tahun-1948
+source_pdf_url: https://peraturan.bpk.go.id/Download/14313/UU%20Nomor%203%20Tahun%201948.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_3_1948_1948-03-05
+  kind: asli
+  source: official
+  date: '1948-03-05'
+  date_basis: tanggal_penetapan
+  text: uu_3_1948_1948-03-05.txt
+  pasal_count: 37
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: bf6ce9c45648963d69b014c57e42f6dea895fecfbb5fa42603e04942f3eda526
 pdf_sha256: 7a8e48c064db89a29fb95de4a8dd7a8ad90a44d59e78e36b6031ab55bd87ba92
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1948-03-06'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1948
+  source_pdf_url: https://peraturan.go.id/files/uu3-1948.pdf
+bpk:
+  id: 25521
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14313/UU%20Nomor%203%20Tahun%201948.pdf
+    bpk_file_id: 14313
+    filename: UU Nomor 3 Tahun 1948.pdf
+    sha256: bf6ce9c45648963d69b014c57e42f6dea895fecfbb5fa42603e04942f3eda526
+    bytes: 83882
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

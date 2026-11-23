@@ -9,12 +9,12 @@ tentang: PENGESAHAN PERJANJIAN PERSABATAN ANTARA REPUBLIK INDONESIA DAN NEGARA K
   MESIR
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1948-01-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1948
-source_pdf_url: https://peraturan.go.id/files/uu2-1948.pdf
+source_url: https://peraturan.bpk.go.id/Details/25514/uu-no-2-tahun-1948
+source_pdf_url: https://peraturan.bpk.go.id/Download/14307/UU%20Nomor%202%20Tahun%201948.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_2_1948_1948-01-20
+  kind: asli
+  source: official
+  date: '1948-01-20'
+  date_basis: tanggal_penetapan
+  text: uu_2_1948_1948-01-20.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 965e53fbac2b0f5c8ec7cf138400b117570598713f2c830a94a27aba068cdce2
 pdf_sha256: 048f946822132269a954cc8501aecb03c1db4210a055c864b41afeb9ef648207
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1948-01-20'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1948
+  source_pdf_url: https://peraturan.go.id/files/uu2-1948.pdf
+bpk:
+  id: 25514
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14307/UU%20Nomor%202%20Tahun%201948.pdf
+    bpk_file_id: 14307
+    filename: UU Nomor 2 Tahun 1948.pdf
+    sha256: 965e53fbac2b0f5c8ec7cf138400b117570598713f2c830a94a27aba068cdce2
+    bytes: 55311
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

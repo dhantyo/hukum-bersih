@@ -6,13 +6,13 @@ year: 1947
 title: Undang-Undang Nomor 36 Tahun 1947 tentang Susunan Dan Acara Pengadilan Tentara
 tentang: SUSUNAN DAN ACARA PENGADILAN TENTARA
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1947-11-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-36-tahun-1947
-source_pdf_url: https://peraturan.go.id/files/uu36-1947.pdf
+source_url: https://peraturan.bpk.go.id/Details/25375/uu-no-36-tahun-1947
+source_pdf_url: https://peraturan.bpk.go.id/Download/14173/UU%20Nomor%2036%20Tahun%201947.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_36_1947_1947-11-28
+  kind: asli
+  source: official
+  date: '1947-11-28'
+  date_basis: tanggal_penetapan
+  text: uu_36_1947_1947-11-28.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 80d536b61592931c2d3385e66cbfd1efefe933408fd9f985631dcbc0862ca77e
 pdf_sha256: 80d536b61592931c2d3385e66cbfd1efefe933408fd9f985631dcbc0862ca77e
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1947-11-28'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-36-tahun-1947
+  source_pdf_url: https://peraturan.go.id/files/uu36-1947.pdf
+bpk:
+  id: 25375
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14173/UU%20Nomor%2036%20Tahun%201947.pdf
+    bpk_file_id: 14173
+    filename: UU Nomor 36 Tahun 1947.pdf
+    sha256: 80d536b61592931c2d3385e66cbfd1efefe933408fd9f985631dcbc0862ca77e
+    bytes: 46885
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_5_1950
+      citation: UU No. 5 Tahun 1950
+      tentang: Menetapkan “Undang-Undang Darurat tentang Susunan dan Kekuasaan Pengadilan/Kejaksaan
+        dalam Lingkungan Peradilan Ketentaraan” (Undang-Undang Darurat Nr 16. Tahun
+        1950), Sebagai Undang-Undang Federal
+      url: https://peraturan.bpk.go.id/Details/37969/uu-no-5-tahun-1950
+      note: null
+uji_materi: null

@@ -9,12 +9,12 @@ tentang: PENCABUTAN PERATURAN PEMERINTAH TAHUN 1947 NOMOR 22 TENTANG SUSUNAN DAN
   PENGADILAN TENTARA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1948-03-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1948
-source_pdf_url: https://peraturan.go.id/files/uu7-1948.pdf
+source_url: https://peraturan.bpk.go.id/Details/25543/uu-no-7-tahun-1948
+source_pdf_url: https://peraturan.bpk.go.id/Download/14334/UU%20Nomor%207%20Tahun%201948.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,37 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_7_1948_1948-03-30
+  kind: asli
+  source: official
+  date: '1948-03-30'
+  date_basis: tanggal_penetapan
+  text: uu_7_1948_1948-03-30.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 21929330510cc38a78de6352b8806fcbb0aabe6dee5da7ce3a456c5fe994715f
 pdf_sha256: 9902eaaa827f2f959720fdb750b155f6b323904ca2de9ec33ebedb6507b73174
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1948-03-31'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1948
+  source_pdf_url: https://peraturan.go.id/files/uu7-1948.pdf
+bpk:
+  id: 25543
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14334/UU%20Nomor%207%20Tahun%201948.pdf
+    bpk_file_id: 14334
+    filename: UU Nomor 7 Tahun 1948.pdf
+    sha256: 21929330510cc38a78de6352b8806fcbb0aabe6dee5da7ce3a456c5fe994715f
+    bytes: 44331
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: pp_22_1947
+      citation: PP No. 22 Tahun 1947
+      tentang: Peraturan Mahkamah Tentara Sementara
+      url: https://peraturan.bpk.go.id/Details/62871/pp-no-22-tahun-1947
+      note: null
+uji_materi: null

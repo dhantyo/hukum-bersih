@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 15 Tahun 1948 tentang Penetapan Barang-Barang Yang Di
 tentang: PENETAPAN BARANG-BARANG YANG DIKENAKAN BEA KELUAR
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1948-05-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-15-tahun-1948
-source_pdf_url: https://peraturan.go.id/files/uu15-1948.pdf
+source_url: https://peraturan.bpk.go.id/Details/25747/uu-no-15-tahun-1948
+source_pdf_url: https://peraturan.bpk.go.id/Download/14550/UU%20Nomor%2015%20Tahun%201948.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,37 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_15_1948_1948-05-31
+  kind: asli
+  source: official
+  date: '1948-05-31'
+  date_basis: tanggal_penetapan
+  text: uu_15_1948_1948-05-31.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 53b77202d7520081aba8ee6ffe5067167ea5fd1d3e56abd8ea07b1811aa9d567
 pdf_sha256: 53b77202d7520081aba8ee6ffe5067167ea5fd1d3e56abd8ea07b1811aa9d567
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1948-05-31'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-15-tahun-1948
+  source_pdf_url: https://peraturan.go.id/files/uu15-1948.pdf
+bpk:
+  id: 25747
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14550/UU%20Nomor%2015%20Tahun%201948.pdf
+    bpk_file_id: 14550
+    filename: UU Nomor 15 Tahun 1948.pdf
+    sha256: 53b77202d7520081aba8ee6ffe5067167ea5fd1d3e56abd8ea07b1811aa9d567
+    bytes: 43751
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_3_1947
+      citation: UU No. 3 Tahun 1947
+      tentang: Pengesyahan Peraturan Pemerintah Nomor 1 Tahun 1947
+      url: https://peraturan.bpk.go.id/Details/25213/uu-no-3-tahun-1947
+      note: null
+uji_materi: null

@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 32 Tahun 1948 tentang Peredaran Uang Dengan Perantara
 tentang: PEREDARAN UANG DENGAN PERANTARAAN BANK
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1948-10-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-32-tahun-1948
-source_pdf_url: https://peraturan.go.id/files/uu32-1948.pdf
+source_url: https://peraturan.bpk.go.id/Details/25888/uu-no-32-tahun-1948
+source_pdf_url: https://peraturan.bpk.go.id/Download/14690/UU%20Nomor%2032%20Tahun%201948.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,37 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_32_1948_1948-10-30
+  kind: asli
+  source: official
+  date: '1948-10-30'
+  date_basis: tanggal_penetapan
+  text: uu_32_1948_1948-10-30.txt
+  pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c18f0e1e5cf7b8a7e6abf7728fd44a4eeb817900841216ea94b165d78d55b84f
 pdf_sha256: c18f0e1e5cf7b8a7e6abf7728fd44a4eeb817900841216ea94b165d78d55b84f
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1948-10-30'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-32-tahun-1948
+  source_pdf_url: https://peraturan.go.id/files/uu32-1948.pdf
+bpk:
+  id: 25888
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14690/UU%20Nomor%2032%20Tahun%201948.pdf
+    bpk_file_id: 14690
+    filename: UU Nomor 32 Tahun 1948.pdf
+    sha256: c18f0e1e5cf7b8a7e6abf7728fd44a4eeb817900841216ea94b165d78d55b84f
+    bytes: 46537
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: pp_34_1948
+      citation: PP No. 34 Tahun 1948
+      tentang: Peredaran Uang Dengan Perantaraan Bank.
+      url: https://peraturan.bpk.go.id/Details/63436/pp-no-34-tahun-1948
+      note: null
+uji_materi: null

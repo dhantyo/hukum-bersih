@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 12 Tahun 1948 tentang Undang-Undang Kerja Tahun 1948
 tentang: UNDANG-UNDANG KERJA TAHUN 1948
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1948-04-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1948
-source_pdf_url: https://peraturan.go.id/files/uu12-1948.pdf
+source_url: https://peraturan.bpk.go.id/Details/25721/uu-no-12-tahun-1948
+source_pdf_url: https://peraturan.bpk.go.id/Download/14524/UU%20Nomor%2012%20Tahun%201948.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_12_1948_1948-04-20
+  kind: asli
+  source: official
+  date: '1948-04-20'
+  date_basis: tanggal_penetapan
+  text: uu_12_1948_1948-04-20.txt
+  pasal_count: 22
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8197394df59054f9b4eee287b54cb7e300d3a3acece29457c5caa1170236ac13
 pdf_sha256: 8197394df59054f9b4eee287b54cb7e300d3a3acece29457c5caa1170236ac13
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1948-04-15'
+subjek: KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1948
+  source_pdf_url: https://peraturan.go.id/files/uu12-1948.pdf
+bpk:
+  id: 25721
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14524/UU%20Nomor%2012%20Tahun%201948.pdf
+    bpk_file_id: 14524
+    filename: UU Nomor 12 Tahun 1948.pdf
+    sha256: 8197394df59054f9b4eee287b54cb7e300d3a3acece29457c5caa1170236ac13
+    bytes: 80019
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

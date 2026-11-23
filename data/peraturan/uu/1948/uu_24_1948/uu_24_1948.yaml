@@ -9,12 +9,12 @@ tentang: MEMPERPANJANG WAKTU PERATURAN DPN NO. 5, 7, JO. 31, 8 JO. 34, 9 JO. 34,
   DAN 16
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1948-08-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-24-tahun-1948
-source_pdf_url: https://peraturan.go.id/files/uu24-1948.pdf
+source_url: https://peraturan.bpk.go.id/Details/25815/uu-no-24-tahun-1948
+source_pdf_url: https://peraturan.bpk.go.id/Download/14616/UU%20Nomor%2024%20Tahun%201948.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_24_1948_1948-08-13
+  kind: asli
+  source: official
+  date: '1948-08-13'
+  date_basis: tanggal_penetapan
+  text: uu_24_1948_1948-08-13.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b75f24261ebca7df8a935de0fe86b3e22386c485fb626d5660b04c4ff173c830
 pdf_sha256: b75f24261ebca7df8a935de0fe86b3e22386c485fb626d5660b04c4ff173c830
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1948-08-13'
+tanggal_berlaku: '1948-07-11'
+lembaran_negara: 'LL SETNEG : 1 HLM.'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-24-tahun-1948
+  source_pdf_url: https://peraturan.go.id/files/uu24-1948.pdf
+bpk:
+  id: 25815
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14616/UU%20Nomor%2024%20Tahun%201948.pdf
+    bpk_file_id: 14616
+    filename: UU Nomor 24 Tahun 1948.pdf
+    sha256: b75f24261ebca7df8a935de0fe86b3e22386c485fb626d5660b04c4ff173c830
+    bytes: 42478
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

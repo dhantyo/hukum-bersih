@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 40 Tahun 1947 tentang Perubahan Kitab Undang-Undang H
   Disiplin Tentara
 tentang: PERUBAHAN KITAB UNDANG-UNDANG HUKUM DISIPLIN TENTARA
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1947-12-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-40-tahun-1947
-source_pdf_url: https://peraturan.go.id/files/uu40-1947.pdf
+source_url: https://peraturan.bpk.go.id/Details/25381/uu-no-40-tahun-1947
+source_pdf_url: https://peraturan.bpk.go.id/Download/14179/UU%20Nomor%2040%20Tahun%201947.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,44 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_40_1947_1947-12-27
+  kind: asli
+  source: official
+  date: '1947-12-27'
+  date_basis: tanggal_penetapan
+  text: uu_40_1947_1947-12-27.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a47f9693c9875bd46a27c053190c57474669bb21497e557b8cc88c1b2d011f10
 pdf_sha256: a47f9693c9875bd46a27c053190c57474669bb21497e557b8cc88c1b2d011f10
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1947-12-27'
+subjek: SISTEM PENGENDALIAN INTERN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-40-tahun-1947
+  source_pdf_url: https://peraturan.go.id/files/uu40-1947.pdf
+bpk:
+  id: 25381
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14179/UU%20Nomor%2040%20Tahun%201947.pdf
+    bpk_file_id: 14179
+    filename: UU Nomor 40 Tahun 1947.pdf
+    sha256: a47f9693c9875bd46a27c053190c57474669bb21497e557b8cc88c1b2d011f10
+    bytes: 50758
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_26_1997
+      citation: UU No. 26 Tahun 1997
+      tentang: Hukum Disiplin Prajurit Angkatan Bersenjata Republik Indonesia
+      url: https://peraturan.bpk.go.id/Details/46028/uu-no-26-tahun-1997
+      note: null
+    - id: uu_5_1950
+      citation: UU No. 5 Tahun 1950
+      tentang: Menetapkan “Undang-Undang Darurat tentang Susunan dan Kekuasaan Pengadilan/Kejaksaan
+        dalam Lingkungan Peradilan Ketentaraan” (Undang-Undang Darurat Nr 16. Tahun
+        1950), Sebagai Undang-Undang Federal
+      url: https://peraturan.bpk.go.id/Details/37969/uu-no-5-tahun-1950
+      note: null
+uji_materi: null

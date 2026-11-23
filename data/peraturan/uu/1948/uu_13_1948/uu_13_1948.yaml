@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 13 Tahun 1948 tentang Mengadakan Perubahan Dalam Vors
 tentang: MENGADAKAN PERUBAHAN DALAM VORSTENLANDS GRONDHUURREGLEMENT
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1948-04-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1948
-source_pdf_url: https://peraturan.go.id/files/uu13-1948.pdf
+source_url: https://peraturan.bpk.go.id/Details/25735/uu-no-13-tahun-1948
+source_pdf_url: https://peraturan.bpk.go.id/Download/14538/UU%20Nomor%2013%20Tahun%201948.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_13_1948_1948-04-26
+  kind: asli
+  source: official
+  date: '1948-04-26'
+  date_basis: tanggal_penetapan
+  text: uu_13_1948_1948-04-26.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 474aeaa0666146d90ccf2fafd330321bd7e849d890c7ce1b01cc291bb41f0b38
 pdf_sha256: 474aeaa0666146d90ccf2fafd330321bd7e849d890c7ce1b01cc291bb41f0b38
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1948-04-27'
+subjek: AGRARIA, PERTANAHAN, TATA RUANG
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1948
+  source_pdf_url: https://peraturan.go.id/files/uu13-1948.pdf
+bpk:
+  id: 25735
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14538/UU%20Nomor%2013%20Tahun%201948.pdf
+    bpk_file_id: 14538
+    filename: UU Nomor 13 Tahun 1948.pdf
+    sha256: 474aeaa0666146d90ccf2fafd330321bd7e849d890c7ce1b01cc291bb41f0b38
+    bytes: 60916
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

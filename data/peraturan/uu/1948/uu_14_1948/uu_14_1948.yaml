@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 14 Tahun 1948 tentang Menetapkan Bea Tambahan Atas Be
 tentang: MENETAPKAN BEA TAMBAHAN ATAS BEA MASUK
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1948-05-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-1948
-source_pdf_url: https://peraturan.go.id/files/uu14-1948.pdf
+source_url: https://peraturan.bpk.go.id/Details/25741/uu-no-14-tahun-1948
+source_pdf_url: https://peraturan.bpk.go.id/Download/14544/UU%20Nomor%2014%20Tahun%201948.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,37 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_14_1948_1948-05-31
+  kind: asli
+  source: official
+  date: '1948-05-31'
+  date_basis: tanggal_penetapan
+  text: uu_14_1948_1948-05-31.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5a9c087558125f1f434939faab80b3967493690bf2904f30bd9cee0b4ca017ed
 pdf_sha256: 5a9c087558125f1f434939faab80b3967493690bf2904f30bd9cee0b4ca017ed
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1948-05-31'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-1948
+  source_pdf_url: https://peraturan.go.id/files/uu14-1948.pdf
+bpk:
+  id: 25741
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14544/UU%20Nomor%2014%20Tahun%201948.pdf
+    bpk_file_id: 14544
+    filename: UU Nomor 14 Tahun 1948.pdf
+    sha256: 5a9c087558125f1f434939faab80b3967493690bf2904f30bd9cee0b4ca017ed
+    bytes: 41891
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_3_1947
+      citation: UU No. 3 Tahun 1947
+      tentang: Pengesyahan Peraturan Pemerintah Nomor 1 Tahun 1947
+      url: https://peraturan.bpk.go.id/Details/25213/uu-no-3-tahun-1947
+      note: null
+uji_materi: null

@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 23 Tahun 1948 tentang Pengawasan Perburuhan
 tentang: PENGAWASAN PERBURUHAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1948-07-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-23-tahun-1948
-source_pdf_url: https://peraturan.go.id/files/uu23-1948.pdf
+source_url: https://peraturan.bpk.go.id/Details/25808/uu-no-23-tahun-1948
+source_pdf_url: https://peraturan.bpk.go.id/Download/14609/UU%20Nomor%2023%20Tahun%201948.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,11 +21,30 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_23_1948_1948
+- id: uu_23_1948_1948-07-23
   kind: asli
   source: official
-  date: null
+  date: '1948-07-23'
   date_basis: tanggal_penetapan
-  text: uu_23_1948_1948.txt
-  pasal_count: 2
+  text: uu_23_1948_1948-07-23.txt
+  pasal_count: 9
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f299d63510058e8c3ac3b3c7414f4719e296545a231250049e13c67dc31913d7
 pdf_sha256: f299d63510058e8c3ac3b3c7414f4719e296545a231250049e13c67dc31913d7
+tanggal_pengundangan: '1948-07-23'
+subjek: KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-23-tahun-1948
+  source_pdf_url: https://peraturan.go.id/files/uu23-1948.pdf
+bpk:
+  id: 25808
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14609/UU%20Nomor%2023%20Tahun%201948.pdf
+    bpk_file_id: 14609
+    filename: UU Nomor 23 Tahun 1948.pdf
+    sha256: f299d63510058e8c3ac3b3c7414f4719e296545a231250049e13c67dc31913d7
+    bytes: 58808
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

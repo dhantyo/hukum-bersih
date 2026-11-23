@@ -10,12 +10,12 @@ tentang: PENETAPAN TARIP PAJAK PENDAPATAN TAHUN 1948/1949 DAN PEMUNGUTAN PAJAK T
   ATAS PAJAK PERSEROAN, KEKAYAAN, SERTA PAJAK UNTUNG PERANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1948-08-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-25-tahun-1948
-source_pdf_url: https://peraturan.go.id/files/uu25-1948.pdf
+source_url: https://peraturan.bpk.go.id/Details/25822/uu-no-25-tahun-1948
+source_pdf_url: https://peraturan.bpk.go.id/Download/14623/UU%20Nomor%2025%20Tahun%201948.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,6 +23,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_25_1948_1948-08-13
+  kind: asli
+  source: official
+  date: '1948-08-13'
+  date_basis: tanggal_penetapan
+  text: uu_25_1948_1948-08-13.txt
+  pasal_count: 6
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5f00ec2ac40992e9dd611619d741cb919936d78350bcadfb9a09901fba776380
 pdf_sha256: 5f00ec2ac40992e9dd611619d741cb919936d78350bcadfb9a09901fba776380
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1948-08-13'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-25-tahun-1948
+  source_pdf_url: https://peraturan.go.id/files/uu25-1948.pdf
+bpk:
+  id: 25822
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14623/UU%20Nomor%2025%20Tahun%201948.pdf
+    bpk_file_id: 14623
+    filename: UU Nomor 25 Tahun 1948.pdf
+    sha256: 5f00ec2ac40992e9dd611619d741cb919936d78350bcadfb9a09901fba776380
+    bytes: 59648
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

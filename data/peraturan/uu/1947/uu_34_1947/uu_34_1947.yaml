@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 34 Tahun 1947 tentang Kecelakaan Perang
 tentang: KECELAKAAN PERANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1947-10-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-34-tahun-1947
-source_pdf_url: https://peraturan.go.id/files/uu34-1947.pdf
+source_url: https://peraturan.bpk.go.id/Details/25369/uu-no-34-tahun-1947
+source_pdf_url: https://peraturan.bpk.go.id/Download/14167/UU%20Nomor%2034%20Tahun%201947.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_34_1947_1947-10-18
+  kind: asli
+  source: official
+  date: '1947-10-18'
+  date_basis: tanggal_penetapan
+  text: uu_34_1947_1947-10-18.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 89e3aeafa669bea96f0f5d4c439c450dd12b59fab06219b99daabec21a1127c4
 pdf_sha256: 89e3aeafa669bea96f0f5d4c439c450dd12b59fab06219b99daabec21a1127c4
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1947-10-18'
+subjek: KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-34-tahun-1947
+  source_pdf_url: https://peraturan.go.id/files/uu34-1947.pdf
+bpk:
+  id: 25369
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14167/UU%20Nomor%2034%20Tahun%201947.pdf
+    bpk_file_id: 14167
+    filename: UU Nomor 34 Tahun 1947.pdf
+    sha256: 89e3aeafa669bea96f0f5d4c439c450dd12b59fab06219b99daabec21a1127c4
+    bytes: 44728
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

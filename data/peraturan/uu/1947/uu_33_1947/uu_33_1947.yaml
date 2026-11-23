@@ -6,13 +6,13 @@ year: 1947
 title: Undang-Undang Nomor 33 Tahun 1947 tentang Kecelakaan 1947
 tentang: KECELAKAAN 1947
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1947-10-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-33-tahun-1947
-source_pdf_url: https://peraturan.go.id/files/uu33-1947.pdf
+source_url: https://peraturan.bpk.go.id/Details/25367/uu-no-33-tahun-1947
+source_pdf_url: https://peraturan.bpk.go.id/Download/14165/UU%20Nomor%2033%20Tahun%201947.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_33_1947_1947-10-18
+  kind: asli
+  source: official
+  date: '1947-10-18'
+  date_basis: tanggal_penetapan
+  text: uu_33_1947_1947-10-18.txt
+  pasal_count: 38
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d5b82ee4c19263eb43859ae523375029f63af002a3a69d6138d81317bc7f48ca
 pdf_sha256: d5b82ee4c19263eb43859ae523375029f63af002a3a69d6138d81317bc7f48ca
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1947-10-18'
+tanggal_berlaku: '1947-07-21'
+lembaran_negara: 'LL SETNEG : 10 HLM.'
+subjek: KETENAGAKERJAAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-33-tahun-1947
+  source_pdf_url: https://peraturan.go.id/files/uu33-1947.pdf
+bpk:
+  id: 25367
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14165/UU%20Nomor%2033%20Tahun%201947.pdf
+    bpk_file_id: 14165
+    filename: UU Nomor 33 Tahun 1947.pdf
+    sha256: d5b82ee4c19263eb43859ae523375029f63af002a3a69d6138d81317bc7f48ca
+    bytes: 124031
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_3_1992
+      citation: UU No. 3 Tahun 1992
+      tentang: Jaminan Sosial Tenaga Kerja
+      url: https://peraturan.bpk.go.id/Details/46595/uu-no-3-tahun-1992
+      note: null
+uji_materi: null

@@ -9,12 +9,12 @@ tentang: MENGADAKAN PERUBAHAN DALAM UNDANG-UNDANG PAJAK PENDAPATAN 1932. (ORDONN
   OP DE INKOMSTENBELASTING 1932)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1948-08-13'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-26-tahun-1948
-source_pdf_url: https://peraturan.go.id/files/uu26-1948.pdf
+source_url: https://peraturan.bpk.go.id/Details/25832/uu-no-26-tahun-1948
+source_pdf_url: https://peraturan.bpk.go.id/Download/14633/UU%20Nomor%2026%20Tahun%201948.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_26_1948_1948-08-13
+  kind: asli
+  source: official
+  date: '1948-08-13'
+  date_basis: tanggal_penetapan
+  text: uu_26_1948_1948-08-13.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1f78eb41cb45db0cb7865e514aabf703ee5d420195eca96faafb4d9ecd2937f6
 pdf_sha256: 1f78eb41cb45db0cb7865e514aabf703ee5d420195eca96faafb4d9ecd2937f6
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1948-08-13'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-26-tahun-1948
+  source_pdf_url: https://peraturan.go.id/files/uu26-1948.pdf
+bpk:
+  id: 25832
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14633/UU%20Nomor%2026%20Tahun%201948.pdf
+    bpk_file_id: 14633
+    filename: UU Nomor 26 Tahun 1948.pdf
+    sha256: 1f78eb41cb45db0cb7865e514aabf703ee5d420195eca96faafb4d9ecd2937f6
+    bytes: 62329
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

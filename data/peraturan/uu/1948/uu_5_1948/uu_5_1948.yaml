@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 5 Tahun 1948 tentang Beberapa Peraturan-Peraturan Ist
 tentang: BEBERAPA PERATURAN-PERATURAN ISTIMEWA MENGENAI PENCATATAN JIWA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1948-03-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1948
-source_pdf_url: https://peraturan.go.id/files/uu5-1948.pdf
+source_url: https://peraturan.bpk.go.id/Details/25533/uu-no-5-tahun-1948
+source_pdf_url: https://peraturan.bpk.go.id/Download/14324/UU%20Nomor%205%20Tahun%201948.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_5_1948_1948-03-24
+  kind: asli
+  source: official
+  date: '1948-03-24'
+  date_basis: tanggal_penetapan
+  text: uu_5_1948_1948-03-24.txt
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a0ba35c5e6c3ffdc0536d3902a2e09f490c6dde6bbad163c8be1513ff7f2acac
 pdf_sha256: dc1f9ee94b19757b4bcb95573d4b7620b3a494c83b56066eecfdd1198fbba02c
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1948-03-25'
+subjek: KEPENDUDUKAN DAN PERKAWINAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1948
+  source_pdf_url: https://peraturan.go.id/files/uu5-1948.pdf
+bpk:
+  id: 25533
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14324/UU%20Nomor%205%20Tahun%201948.pdf
+    bpk_file_id: 14324
+    filename: UU Nomor 5 Tahun 1948.pdf
+    sha256: a0ba35c5e6c3ffdc0536d3902a2e09f490c6dde6bbad163c8be1513ff7f2acac
+    bytes: 45521
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

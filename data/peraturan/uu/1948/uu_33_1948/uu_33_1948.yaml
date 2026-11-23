@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 33 Tahun 1948 tentang Penetapan Uang Berat Barang, Se
 tentang: PENETAPAN UANG BERAT BARANG, SEBAGAI BEA PEMAKAIAN PERLENGKAPAN PELABUHAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1948-11-09'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-33-tahun-1948
-source_pdf_url: https://peraturan.go.id/files/uu33-1948.pdf
+source_url: https://peraturan.bpk.go.id/Details/25901/uu-no-33-tahun-1948
+source_pdf_url: https://peraturan.bpk.go.id/Download/14703/UU%20Nomor%2033%20Tahun%201948.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_33_1948_1948-11-09
+  kind: asli
+  source: official
+  date: '1948-11-09'
+  date_basis: tanggal_penetapan
+  text: uu_33_1948_1948-11-09.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: abd7b67418c8ef956d3c4abf4e3710cc871918e86a9584c9996990a23fd72d42
 pdf_sha256: abd7b67418c8ef956d3c4abf4e3710cc871918e86a9584c9996990a23fd72d42
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1948-11-09'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-33-tahun-1948
+  source_pdf_url: https://peraturan.go.id/files/uu33-1948.pdf
+bpk:
+  id: 25901
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14703/UU%20Nomor%2033%20Tahun%201948.pdf
+    bpk_file_id: 14703
+    filename: UU Nomor 33 Tahun 1948.pdf
+    sha256: abd7b67418c8ef956d3c4abf4e3710cc871918e86a9584c9996990a23fd72d42
+    bytes: 44470
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 1 Tahun 1948 tentang Penambahan Undang Undang Keadaan
 tentang: PENAMBAHAN UNDANG UNDANG KEADAAN BAHAYA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1948-01-09'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1948
-source_pdf_url: https://peraturan.go.id/files/uu1-1948.pdf
+source_url: https://peraturan.bpk.go.id/Details/25505/uu-no-1-tahun-1948
+source_pdf_url: https://peraturan.bpk.go.id/Download/14298/UU%20Nomor%201%20Tahun%201948.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_1_1948_1948-01-09
+  kind: asli
+  source: official
+  date: '1948-01-09'
+  date_basis: tanggal_penetapan
+  text: uu_1_1948_1948-01-09.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: cf9cabe5c5eeb4b562e9a0d3adadf7f4b2bbaec242c8eb2a9fa9e8b9e1cd3ed3
 pdf_sha256: 60725e48789f779252ad34ae6172c8504110ef6f71546f4fc3c2ea72dd22052c
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1948-01-10'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1948
+  source_pdf_url: https://peraturan.go.id/files/uu1-1948.pdf
+bpk:
+  id: 25505
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14298/UU%20Nomor%201%20Tahun%201948.pdf
+    bpk_file_id: 14298
+    filename: UU Nomor 1 Tahun 1948.pdf
+    sha256: cf9cabe5c5eeb4b562e9a0d3adadf7f4b2bbaec242c8eb2a9fa9e8b9e1cd3ed3
+    bytes: 41735
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

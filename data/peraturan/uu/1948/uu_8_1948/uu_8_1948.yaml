@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 8 Tahun 1948 tentang Pendaftaran Dan Pemberian Idzin 
 tentang: PENDAFTARAN DAN PEMBERIAN IDZIN PEMAKAIAN SENJATA API
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1948-03-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1948
-source_pdf_url: https://peraturan.go.id/files/uu8-1948.pdf
+source_url: https://peraturan.bpk.go.id/Details/25545/uu-no-8-tahun-1948
+source_pdf_url: https://peraturan.bpk.go.id/Download/14336/UU%20Nomor%208%20Tahun%201948.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_8_1948_1948-03-31
+  kind: asli
+  source: official
+  date: '1948-03-31'
+  date_basis: tanggal_penetapan
+  text: uu_8_1948_1948-03-31.txt
+  pasal_count: 15
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ff7e85d4b047bb9237cec65706a9bffbc75084d0fff36db20f40f710505c357c
 pdf_sha256: a94451755fd9e9fff65a729d333cd7364637de98750f8c633d2438cbdf8867fc
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1948-04-01'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1948
+  source_pdf_url: https://peraturan.go.id/files/uu8-1948.pdf
+bpk:
+  id: 25545
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14336/UU%20Nomor%208%20Tahun%201948.pdf
+    bpk_file_id: 14336
+    filename: UU Nomor 8 Tahun 1948.pdf
+    sha256: ff7e85d4b047bb9237cec65706a9bffbc75084d0fff36db20f40f710505c357c
+    bytes: 53267
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

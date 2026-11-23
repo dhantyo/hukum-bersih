@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 4 Tahun 1948 tentang Naturalisasi Jean Henry Joseph D
 tentang: NATURALISASI JEAN HENRY JOSEPH DE QUINZE
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1948-03-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1948
-source_pdf_url: https://peraturan.go.id/files/uu4-1948.pdf
+source_url: https://peraturan.bpk.go.id/Details/25526/uu-no-4-tahun-1948
+source_pdf_url: https://peraturan.bpk.go.id/Download/14318/UU%20Nomor%204%20Tahun%201948.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,31 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_4_1948_1948-03-23
+  kind: asli
+  source: official
+  date: '1948-03-23'
+  date_basis: tanggal_penetapan
+  text: uu_4_1948_1948-03-23.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d9bd6ed9dc9ff3aaa70831c7e6c3d607b9d2c2e265f6d862897be8819470603d
 pdf_sha256: 3c6154b4782f08e2f6e7bb1586a90f9a470ca42da0130fd32c7a15cf506ad424
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1948-03-23'
+subjek: KEWARGANEGARAAN DAN IMIGRASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1948
+  source_pdf_url: https://peraturan.go.id/files/uu4-1948.pdf
+bpk:
+  id: 25526
+  files:
+  - url: https://peraturan.bpk.go.id/Download/14318/UU%20Nomor%204%20Tahun%201948.pdf
+    bpk_file_id: 14318
+    filename: UU Nomor 4 Tahun 1948.pdf
+    sha256: d9bd6ed9dc9ff3aaa70831c7e6c3d607b9d2c2e265f6d862897be8819470603d
+    bytes: 44465
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
