@@ -16,6 +16,8 @@ dependencies = [
 [project.optional-dependencies]
 # peraturan.bpk.go.id: a stealth browser clears Cloudflare once, curl_cffi downloads
 bpk = ["scrapling[fetchers]>=0.5.1", "curl-cffi>=0.17.0", "remotezip>=0.12"]
+# the Hugging Face dataset Azzindani/ID_REG_RAG_2611 (import-hf, decision 0011)
+hf = ["pyarrow>=18"]
 
 [project.scripts]
 hukum-bersih = "hukum_bersih.cli:main"

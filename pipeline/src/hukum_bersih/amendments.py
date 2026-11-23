@@ -280,7 +280,10 @@ def build(data_dir: Path, out_dir: Path) -> int:
     target = out_dir / "amendments"
     target.mkdir(parents=True, exist_ok=True)
     count = 0
-    for path in sorted((data_dir / "peraturan").glob("*/*/*/*.yaml")):
+    from .naming import PUBLISHED_TYPES
+
+    for path in sorted(p for jenis in PUBLISHED_TYPES
+                       for p in (data_dir / "peraturan" / jenis).glob("*/*/*.yaml")):
         rec = yaml.safe_load(path.read_text())
         amends = (rec.get("relationships") or {}).get("amends") or []
         texts = [v["text"] for v in rec.get("versions") or [] if v.get("text")]

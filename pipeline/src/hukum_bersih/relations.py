@@ -166,8 +166,12 @@ def _checked(changes: dict, known: set[str]) -> dict:
 
 
 def build(data_dir: Path) -> dict[str, int]:
-    """Recompute relationships for every regulation record under data/peraturan/."""
-    paths = {p.stem: p for p in (data_dir / "peraturan").glob("*/*/*/*.yaml")}
+    """Recompute relationships for every regulation record of a published type
+    (naming.PUBLISHED_TYPES) under data/peraturan/."""
+    from .naming import PUBLISHED_TYPES
+
+    paths = {p.stem: p for jenis in PUBLISHED_TYPES
+             for p in (data_dir / "peraturan" / jenis).glob("*/*/*.yaml")}
     recs = {k: yaml.safe_load(p.read_text()) for k, p in paths.items()}
     rel = {k: {"amends": [], "amended_by": [], "revokes": [], "revoked_by": [],
                "enacts": [], "enacted_by": []} for k in recs}

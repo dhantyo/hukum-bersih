@@ -6,6 +6,7 @@
     import-bpk       import regulations from peraturan.bpk.go.id, archiving every PDF
     relations        link amending / revoking / enacting laws
     import-pdf       archive, record and convert hand-downloaded PDFs (uploads.py)
+    import-hf        national regulations we lack, rebuilt from the Hugging Face dataset ID_REG_RAG_2611
     manifest         print a manifest entry for a local file
     archive-retitle  rewrite titles/descriptions of archived items (files untouched)
     archive-delete   empty obsolete archive.org items we uploaded
@@ -109,6 +110,15 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--source-url", default="", help="where they can be found again "
                    "(default: https://<source>/)")
     p.add_argument("--no-archive", action="store_true")
+
+    p = sub.add_parser("import-hf", help="national regulations we lack, from the Hugging Face "
+                       "dataset Azzindani/ID_REG_RAG_2611 (decision 0011)")
+    p.add_argument("--cache", type=Path, default=REPO_ROOT / ".cache" / "id_reg_rag",
+                   help="where the dataset files are downloaded (about 360 MB)")
+    p.add_argument("--revision", default="main", help="dataset revision (branch or commit sha)")
+    p.add_argument("--types", default="", help="comma-separated jenis, e.g. pp,perpres (default: all national)")
+    p.add_argument("--only", default="", help="comma-separated ids")
+    p.add_argument("--limit", type=int, default=0)
 
     p = sub.add_parser("manifest", help="print a manifest entry for a local file")
     p.add_argument("path", type=Path)
@@ -264,6 +274,22 @@ def main(argv: list[str] | None = None) -> int:
         url = args.source_url or f"https://{args.source}/"
         return _each([str(p) for p in args.pdfs], lambda p: import_pdf(
             Path(p), args.data_dir, args.source, url, do_archive=not args.no_archive))
+
+    if args.command == "import-hf":
+        from .sources import id_reg_rag
+
+        bundle, revision = id_reg_rag.download(args.cache, args.revision)
+        print(f"dataset {id_reg_rag.DATASET} at {revision}", flush=True)
+        split = lambda v: {i.strip() for i in v.split(",") if i.strip()} or None
+        counts = {"ok": 0, "skip": 0, "--": 0}
+        for line in id_reg_rag.import_all(args.data_dir, bundle, revision, split(args.types),
+                                          split(args.only), args.limit or None):
+            print(line, flush=True)
+            for k in counts:
+                counts[k] += line.startswith(k)
+        print(f"done: {counts['ok']} written, {counts['--']} existing records unchanged, "
+              f"{counts['skip']} skipped")
+        return 0
 
     if args.command == "relations":
         from .relations import build

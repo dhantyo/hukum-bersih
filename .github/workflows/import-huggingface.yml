@@ -1,0 +1,61 @@
+name: Import from the Hugging Face dataset
+
+# National regulations we have no text of, rebuilt from the Hugging Face dataset
+# Azzindani/ID_REG_RAG_2611 (decision 0011; pipeline/src/hukum_bersih/sources/id_reg_rag.py).
+# Records that already have a text are never touched. The new types (PP, Perpres, ...) are
+# stored data only until they are added to PUBLISHED_TYPES (naming.py) and PUBLISHED
+# (web/src/lib/peraturan.ts). One commit per type.
+on:
+  workflow_dispatch:
+    inputs:
+      types:
+        description: "Comma-separated jenis (empty: uu,uu-drt,perppu,pp,perpres,keppres,inpres)"
+        default: ""
+      revision:
+        description: "Dataset revision (branch or commit sha)"
+        default: "main"
+      limit:
+        description: "At most this many regulations per type (0: all)"
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-peraturan        # never at the same time as the other importers: all write data/
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --extra hf
+        working-directory: pipeline
+      - name: Import, one commit per type
+        working-directory: pipeline
+        env:
+          TYPES: ${{ inputs.types }}
+          REVISION: ${{ inputs.revision }}
+          LIMIT: ${{ inputs.limit }}
+        run: |
+          git config user.name "hukum-bersih bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for jenis in $(echo "${TYPES:-uu,uu-drt,perppu,pp,perpres,keppres,inpres}" | tr ',' ' '); do
+            uv run hukum-bersih import-hf --types "$jenis" --revision "$REVISION" --limit "$LIMIT" \
+              > "$RUNNER_TEMP/$jenis.log"
+            tail -n 1 "$RUNNER_TEMP/$jenis.log" | sed "s/^/$jenis: /" | tee -a "$GITHUB_STEP_SUMMARY"
+            git add ../data/
+            git diff --cached --quiet && continue
+            sha=$(grep -m1 -o 'at [0-9a-f]\{40\}' "$RUNNER_TEMP/$jenis.log" | cut -c4-)
+            git commit -qm "peraturan/$jenis: import from Hugging Face dataset Azzindani/ID_REG_RAG_2611 (${sha:0:8})"
+          done
+      - name: Push
+        run: |
+          for i in 1 2 3 4 5; do
+            git pull -q --no-rebase --no-edit origin "${GITHUB_REF_NAME}" && git push -q && exit 0
+            sleep $((i * 20))
+          done
+          exit 1

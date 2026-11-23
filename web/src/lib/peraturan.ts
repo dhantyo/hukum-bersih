@@ -6,6 +6,11 @@ import { parse as parseYaml } from "yaml";
 import { AKN_DIR, DATA_DIR } from "./data.ts";
 import { parseAkn, type LawDoc } from "./lawdoc.ts";
 
+// Types the site shows (decision 0011). Records of other types (PP, Perpres ... from the
+// Hugging Face dataset) are stored in data/ but not published yet. Keep in step with
+// PUBLISHED_TYPES in pipeline/src/hukum_bersih/naming.py.
+const PUBLISHED = new Set(["uu"]);
+
 export interface Version {
   id: string;
   kind: string;
@@ -128,7 +133,7 @@ export function loadRegulations(): Regulation[] {
   if (existsSync(root)) {
     for (const jenis of readdirSync(root)) {
       const jdir = join(root, jenis);
-      if (!existsSync(jdir) || jenis.startsWith(".")) continue;
+      if (!PUBLISHED.has(jenis) || !existsSync(jdir) || jenis.startsWith(".")) continue;
       for (const year of readdirSync(jdir)) {
         if (year.startsWith(".")) continue;
         for (const id of readdirSync(join(jdir, year))) {
