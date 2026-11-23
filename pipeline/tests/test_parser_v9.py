@@ -169,3 +169,14 @@ def test_misprinted_heading_numbers_confirmed_by_the_next_heading():
     labels = [b.label for b in doc.blocks if b.kind == "pasal"]
     assert labels == ["Pasal 1", "Pasal 2", "Pasal 2", "Pasal 4", "Pasal II", "Pasal 6", "Pasal 7"]
     assert any("printed where Pasal 3 belongs" in w for w in doc.warnings)
+
+
+def test_penjelasan_may_skip_pasal():
+    from hukum_bersih.pdf.structure import parse_lines
+
+    doc = parse_lines(["UNDANG-UNDANG", "NOMOR 2 TAHUN 1962", "TENTANG", "CONTOH"]
+                      + [x for k in range(1, 14) for x in (f"Pasal {k}", f"Isi {k}.")]
+                      + ["Disahkan di Jakarta", "pada tanggal 1 Januari 1962",
+                         "PENJELASAN", "UMUM", "Umum.", "PASAL DEMI PASAL", "Pasal 1.", "Cukup jelas.",
+                         "Pasal 5.", "Lihat juga", "Pasal 7.", "Pasal 12.", "Cukup jelas", "Pasal 13.", "Jelas."])
+    assert [b.label for b in doc.blocks if b.kind == "p_pasal"] == ["Pasal 1", "Pasal 5", "Pasal 12", "Pasal 13"]
