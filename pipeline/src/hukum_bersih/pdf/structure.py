@@ -285,14 +285,19 @@ class Parser:
                 return None
         return None
 
+    def after_sentence(self, i: int) -> bool:
+        """The line before ends a sentence or is a heading ("Cukup jelas" ends without a stop)."""
+        prev = self.lines[i - 1].rstrip() if i else ""
+        return (prev.endswith((".", ";", ":", ")")) or is_caps(prev) or bool(PASAL_RE.match(prev))
+                or prev.lower().endswith("cukup jelas"))
+
     def misprinted(self, i: int, n: int, last: int) -> bool:
         """A heading whose printed number breaks the sequence but the next heading continues it:
         a misprint in the copy ('Pasal 9' twice, UU 19/1948; 'Pasal 8' for 3, UU 29/1948; 'Pasal
         II' for 11, UU 1/1951), or a number the copy skips (the next is one more than this). It
         must follow the end of a sentence, so a cross-reference wrapped onto its own line is not
         taken."""
-        prev = self.lines[i - 1].rstrip() if i else ""
-        if not prev.endswith((".", ";", ":", ")")) and not is_caps(prev):
+        if not self.after_sentence(i):
             return False
         nxt = self.next_heading(i)
         return nxt == last + 2 or (last + 1 < n <= last + 3 and nxt == n + 1)
@@ -479,7 +484,10 @@ class Parser:
                 return 1
         if (m := PASAL_RE.match(line)) and not self.p_roman and (m[1][0].isdigit() or self.p_last_pasal):
             n = int(re.match(r"\d+", m[1])[0]) if m[1][0].isdigit() else roman(m[1])
-            if (n == self.p_last_pasal + 1 or (m[1][-1].isalpha() and n == self.p_last_pasal)
+            # a Penjelasan often explains only some pasal (old laws): any later pasal of the law
+            # after the end of a sentence is a heading there (UU 2/1962: Pasal 5, then Pasal 12)
+            skipped = self.p_last_pasal < n <= self.last_pasal and m[1][0].isdigit() and self.after_sentence(i)
+            if (n == self.p_last_pasal + 1 or (m[1][-1].isalpha() and n == self.p_last_pasal) or skipped
                     or (self.p_last_pasal and self.misprinted(i, n, self.p_last_pasal))):
                 if self.p_last_pasal and n != self.p_last_pasal + 1 and self.next_heading(i) == self.p_last_pasal + 2:
                     n = self.p_last_pasal + 1
