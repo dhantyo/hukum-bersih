@@ -13,8 +13,8 @@ tanggal_penetapan: '1966-10-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1966
-source_pdf_url: https://peraturan.go.id/files/UU0051966.pdf
+source_url: https://peraturan.bpk.go.id/Details/49789/uu-no-5-tahun-1966
+source_pdf_url: https://peraturan.bpk.go.id/Download/39067/UU%20Nomor%205%20Tahun%201966.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_5_1966_1966-10-27
+  kind: asli
+  source: official
+  date: '1966-10-27'
+  date_basis: tanggal_penetapan
+  text: uu_5_1966_1966-10-27.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 369bb41a3dc2020f7ac3078ebbdd8651f5e0ff65cb717b5dd44f2d627697f9de
 pdf_sha256: 369bb41a3dc2020f7ac3078ebbdd8651f5e0ff65cb717b5dd44f2d627697f9de
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1966-10-27'
+tanggal_berlaku: '1966-10-27'
+lembaran_negara: 'LN. 1966/ No. 32, LL SETNEG : 2 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1966
+  source_pdf_url: https://peraturan.go.id/files/UU0051966.pdf
+bpk:
+  id: 49789
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39067/UU%20Nomor%205%20Tahun%201966.pdf
+    bpk_file_id: 39067
+    filename: UU Nomor 5 Tahun 1966.pdf
+    sha256: 369bb41a3dc2020f7ac3078ebbdd8651f5e0ff65cb717b5dd44f2d627697f9de
+    bytes: 37480
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

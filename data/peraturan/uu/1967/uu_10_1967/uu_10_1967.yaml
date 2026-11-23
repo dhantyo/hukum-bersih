@@ -9,12 +9,12 @@ tentang: PERUBAHAN DAN TAMBAHAN ATAS PERUBAHAN DAN TAMBAHAN ANGGARAN MONETER TAH
   ANGGARAN 1966
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1967-10-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-10-tahun-1967
-source_pdf_url: null
+source_url: https://peraturan.bpk.go.id/Details/49583/uu-no-10-tahun-1967
+source_pdf_url: https://peraturan.bpk.go.id/Download/38861/UU%20Nomor%2010%20Tahun%201967.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,4 +22,43 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_10_1967_1967-10-11
+  kind: asli
+  source: official
+  date: '1967-10-11'
+  date_basis: tanggal_penetapan
+  text: uu_10_1967_1967-10-11.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0de6cf99b4e84c73694499997787946e2de949bcdfa89ea7437f723d9d462d5c
+tanggal_pengundangan: '1967-10-11'
+tanggal_berlaku: '1966-01-01'
+lembaran_negara: 'LN. 1967, Hukum Online : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-10-tahun-1967
+  source_pdf_url: null
+bpk:
+  id: 49583
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38861/UU%20Nomor%2010%20Tahun%201967.pdf
+    bpk_file_id: 38861
+    filename: UU Nomor 10 Tahun 1967.pdf
+    sha256: 0de6cf99b4e84c73694499997787946e2de949bcdfa89ea7437f723d9d462d5c
+    bytes: 69448
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_13_1966
+      citation: UU No. 13 Tahun 1966
+      tentang: Perubahan dan Tambahan Atas Anggaran Moneter Tahun 1966
+      url: https://peraturan.bpk.go.id/Details/49820/uu-no-13-tahun-1966
+      note: null
+    - id: uu_22_1965
+      citation: UU No. 22 Tahun 1965
+      tentang: Anggaran Moneter Tahun-Anggaran 1966
+      url: https://peraturan.bpk.go.id/Details/50224/uu-no-22-tahun-1965
+      note: null
+uji_materi: null

@@ -7,12 +7,12 @@ title: Undang-Undang Nomor 22 Tahun 1965 tentang Anggaran Moneter Tahun-Anggaran
 tentang: ANGGARAN MONETER TAHUN-ANGGARAN 1966
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1965-12-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-22-tahun-1965
-source_pdf_url: https://peraturan.go.id/files/UU0221965.pdf
+source_url: https://peraturan.bpk.go.id/Details/50224/uu-no-22-tahun-1965
+source_pdf_url: https://peraturan.bpk.go.id/Download/39502/UU%20Nomor%2022%20Tahun%201965.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,45 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_22_1965_1965-12-31
+  kind: asli
+  source: official
+  date: '1965-12-31'
+  date_basis: tanggal_penetapan
+  text: uu_22_1965_1965-12-31.txt
+  pasal_count: 13
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 503a3547b5d184fec6c97a928d26d33946d20b7ea22bad8481c0b238d60d9f62
 pdf_sha256: 503a3547b5d184fec6c97a928d26d33946d20b7ea22bad8481c0b238d60d9f62
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1965-12-31'
+tanggal_berlaku: '1965-12-31'
+lembaran_negara: 'LN. 1965/ No. 117 , LL SETNEG : 7 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-22-tahun-1965
+  source_pdf_url: https://peraturan.go.id/files/UU0221965.pdf
+bpk:
+  id: 50224
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39502/UU%20Nomor%2022%20Tahun%201965.pdf
+    bpk_file_id: 39502
+    filename: UU Nomor 22 Tahun 1965.pdf
+    sha256: 503a3547b5d184fec6c97a928d26d33946d20b7ea22bad8481c0b238d60d9f62
+    bytes: 91280
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_10_1967
+      citation: UU No. 10 Tahun 1967
+      tentang: Perubahan dan Tambahan Atas Perubahan dan Tambahan Anggaran Moneter
+        Tahun Anggaran 1966
+      url: https://peraturan.bpk.go.id/Details/49583/uu-no-10-tahun-1967
+      note: null
+    - id: uu_13_1966
+      citation: UU No. 13 Tahun 1966
+      tentang: Perubahan dan Tambahan Atas Anggaran Moneter Tahun 1966
+      url: https://peraturan.bpk.go.id/Details/49820/uu-no-13-tahun-1966
+      note: null
+uji_materi: null

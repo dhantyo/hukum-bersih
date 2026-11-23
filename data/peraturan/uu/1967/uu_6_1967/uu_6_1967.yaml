@@ -7,22 +7,54 @@ title: Undang-Undang Nomor 6 Tahun 1967 tentang Ketentuan-Ketentuan Pokok Petern
   Dan Kesehatan Hewan
 tentang: KETENTUAN-KETENTUAN POKOK PETERNAKAN DAN KESEHATAN HEWAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 18 Tahun 2009 Tentang Peternakan
-  dan Kesehatan Hewan'
+status: tidak_berlaku
 tanggal_penetapan: '1967-07-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1967
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+6+Tahun+1967.pdf
+source_url: https://peraturan.bpk.go.id/Details/49567/uu-no-6-tahun-1967
+source_pdf_url: https://peraturan.bpk.go.id/Download/38846/UU%20Nomor%206%20Tahun%201967.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_18_2009
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_6_1967_1967-07-08
+  kind: asli
+  source: official
+  date: '1967-07-08'
+  date_basis: tanggal_penetapan
+  text: uu_6_1967_1967-07-08.txt
+  pasal_count: 27
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: bd913f9fe14f406ad5f485a18493ac24d688da6aede088769c916539b34f77ef
 pdf_sha256: bd913f9fe14f406ad5f485a18493ac24d688da6aede088769c916539b34f77ef
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1967-07-08'
+tanggal_berlaku: '1967-07-08'
+lembaran_negara: 'LN. 1967/ No. 10, TLN NO. 2824, LL SETNEG : 12 HLM'
+subjek: PANGAN, PERTANIAN DAN PETERNAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1967
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+6+Tahun+1967.pdf
+bpk:
+  id: 49567
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38846/UU%20Nomor%206%20Tahun%201967.pdf
+    bpk_file_id: 38846
+    filename: UU Nomor 6 Tahun 1967.pdf
+    sha256: bd913f9fe14f406ad5f485a18493ac24d688da6aede088769c916539b34f77ef
+    bytes: 70649
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_18_2009
+      citation: UU No. 18 Tahun 2009
+      tentang: Peternakan dan Kesehatan Hewan
+      url: https://peraturan.bpk.go.id/Details/38634/uu-no-18-tahun-2009
+      note: Mencabut Stb.1912/432, 1914/486, 1916/656, 1925/163, 1926/451, 1926/569,
+        1928/52, 1936/614, 1936/715, 1937/512, 1937/513
+uji_materi: null

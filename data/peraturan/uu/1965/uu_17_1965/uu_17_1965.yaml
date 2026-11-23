@@ -10,23 +10,66 @@ tentang: PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 6 TAHUN 19
   TENTANG PEMBENTUKAN BADAN PEMERIKSA KEUANGAN (LEMBARAN-NEGARA TAHUN 1964 NOMOR 41)
   MENJADI UNDANG-UNDANG
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 5 Tahun 1973 Tentang Badan
-  Pemeriksa Keuangan'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1965-08-23'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-17-tahun-1965
-source_pdf_url: https://peraturan.go.id/files/UU0171965.pdf
+source_url: https://peraturan.bpk.go.id/Details/50205/uu-no-17-tahun-1965
+source_pdf_url: https://peraturan.bpk.go.id/Download/39482/UU%20Nomor%2017%20Tahun%201965.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_5_1973
+  revoked_by: []
   enacts:
   - perppu_6_1964
   enacted_by: []
-versions: []
+versions:
+- id: uu_17_1965_1965-08-23
+  kind: asli
+  source: official
+  date: '1965-08-23'
+  date_basis: tanggal_penetapan
+  text: uu_17_1965_1965-08-23.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7323f40e124fec3042ea7f44f04cc1c06d79ef9b0bc855d08ebed5937b2e66c3
 pdf_sha256: 7323f40e124fec3042ea7f44f04cc1c06d79ef9b0bc855d08ebed5937b2e66c3
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1965-08-23'
+tanggal_berlaku: '1965-08-23'
+lembaran_negara: 'LN. 1965/ No. 79 , TLN NO. 2776 , LL SETNEG : 20 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-17-tahun-1965
+  source_pdf_url: https://peraturan.go.id/files/UU0171965.pdf
+bpk:
+  id: 50205
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39482/UU%20Nomor%2017%20Tahun%201965.pdf
+    bpk_file_id: 39482
+    filename: UU Nomor 17 Tahun 1965.pdf
+    sha256: 7323f40e124fec3042ea7f44f04cc1c06d79ef9b0bc855d08ebed5937b2e66c3
+    bytes: 155726
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_5_1973
+      citation: UU No. 5 Tahun 1973
+      tentang: Badan Pemeriksa Keuangan
+      url: https://peraturan.bpk.go.id/Details/47432/uu-no-5-tahun-1973
+      note: null
+    Mencabut:
+    - id: perppu_7_1963
+      citation: PERPU No. 7 Tahun 1963
+      tentang: Badan Pemeriksa Keuangan
+      url: https://peraturan.bpk.go.id/Details/53742/perpu-no-7-tahun-1963
+      note: null
+    Menetapkan:
+    - id: perppu_6_1964
+      citation: PERPU No. 6 Tahun 1964
+      tentang: Badan Pemeriksa Keuangan
+      url: https://peraturan.bpk.go.id/Details/53786/perpu-no-6-tahun-1964
+      note: null
+uji_materi: null

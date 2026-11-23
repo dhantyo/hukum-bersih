@@ -6,13 +6,13 @@ year: 1967
 title: Undang-Undang Nomor 1 Tahun 1967 tentang Penanaman Modal Asing
 tentang: PENANAMAN MODAL ASING
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '1967-01-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1967
-source_pdf_url: https://peraturan.go.id/files/UU0011967.pdf
+source_url: https://peraturan.bpk.go.id/Details/49513/uu-no-1-tahun-1967
+source_pdf_url: https://peraturan.bpk.go.id/Download/38792/UU%20Nomor%201%20Tahun%201967.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,43 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1967_1967-01-10.txt
   pasal_count: 31
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2e258bd01045c6b8a893e0ead784b7006877acf0f732726058c09a2731e73eb4
 pdf_sha256: 2e258bd01045c6b8a893e0ead784b7006877acf0f732726058c09a2731e73eb4
+tanggal_pengundangan: '1967-01-10'
+tanggal_berlaku: '1967-01-10'
+lembaran_negara: 'LN. 1967/ No.1 , TLN NO. 2818 , LL SETNEG : 15 HLM'
+subjek: PENANAMAN MODAL DAN INVESTASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1967
+  source_pdf_url: https://peraturan.go.id/files/UU0011967.pdf
+bpk:
+  id: 49513
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38792/UU%20Nomor%201%20Tahun%201967.pdf
+    bpk_file_id: 38792
+    filename: UU Nomor 1 Tahun 1967.pdf
+    sha256: 2e258bd01045c6b8a893e0ead784b7006877acf0f732726058c09a2731e73eb4
+    bytes: 69211
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_25_2007
+      citation: UU No. 25 Tahun 2007
+      tentang: Penanaman Modal
+      url: https://peraturan.bpk.go.id/Details/39903/uu-no-25-tahun-2007
+      note: null
+    Diubah dengan:
+    - id: uu_7_1983
+      citation: UU No. 7 Tahun 1983
+      tentang: Pajak Penghasilan
+      url: https://peraturan.bpk.go.id/Details/46988/uu-no-7-tahun-1983
+      note: null
+    - id: uu_11_1970
+      citation: UU No. 11 Tahun 1970
+      tentang: Perubahan dan Tambahan Undang-Undang No. 1 Tahun 1967 tentang Penanaman
+        Modal Asing
+      url: https://peraturan.bpk.go.id/Details/47864/uu-no-11-tahun-1970
+      note: null
+uji_materi: null

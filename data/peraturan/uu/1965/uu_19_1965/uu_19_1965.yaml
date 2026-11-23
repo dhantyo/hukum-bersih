@@ -8,22 +8,53 @@ title: Undang-Undang Nomor 19 Tahun 1965 tentang Desapraja Sebagai Bentuk Perali
 tentang: DESAPRAJA SEBAGAI BENTUK PERALIHAN UNTUK MEMPERCEPAT TERWUJUDNYA DAERAH TINGKAT
   III DI SELURUH WILAYAH REPUBLIK INDONESIA
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 5 Tahun 1979 Tentang Pemerintahan
-  Desa'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1965-09-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-1965
-source_pdf_url: https://peraturan.go.id/files/UU0191965.pdf
+source_url: https://peraturan.bpk.go.id/Details/50215/uu-no-19-tahun-1965
+source_pdf_url: https://peraturan.bpk.go.id/Download/39492/UU%20Nomor%2019%20Tahun%201965.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_5_1979
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_19_1965_1965-09-01
+  kind: asli
+  source: official
+  date: '1965-09-01'
+  date_basis: tanggal_penetapan
+  text: uu_19_1965_1965-09-01.txt
+  pasal_count: 69
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c8ffa458f56786d14bacddcb777478ba68e0170f59635ce80ca11b3da6d7d340
 pdf_sha256: c8ffa458f56786d14bacddcb777478ba68e0170f59635ce80ca11b3da6d7d340
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1965-09-01'
+tanggal_berlaku: '1965-09-01'
+lembaran_negara: 'LN. 1965/ No. 84 , TLN NO. 2779 , LL SETNEG : 36 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-1965
+  source_pdf_url: https://peraturan.go.id/files/UU0191965.pdf
+bpk:
+  id: 50215
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39492/UU%20Nomor%2019%20Tahun%201965.pdf
+    bpk_file_id: 39492
+    filename: UU Nomor 19 Tahun 1965.pdf
+    sha256: c8ffa458f56786d14bacddcb777478ba68e0170f59635ce80ca11b3da6d7d340
+    bytes: 326794
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_5_1979
+      citation: UU No. 5 Tahun 1979
+      tentang: Pemerintahan Desa
+      url: https://peraturan.bpk.go.id/Details/47151/uu-no-5-tahun-1979
+      note: null
+uji_materi: null

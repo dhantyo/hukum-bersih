@@ -10,13 +10,13 @@ tentang: PENARIKAN DIRI RI DARI KEANGGOTAAN DANA MONETER INTERNASIONAL (INTERNAT
   MONETARY FUND) DAN BANK INTERNASIONAL UNTUK REKONSTRUKSI DAN PEMBANGUNAN (INTERNATIONAL
   BANK FOR RECONSTRUCTION AND DEVELOPMENT)
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '1966-02-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1966
-source_pdf_url: https://peraturan.go.id/files/UU0011966.pdf
+source_url: https://peraturan.bpk.go.id/Details/49774/uu-no-1-tahun-1966
+source_pdf_url: https://peraturan.bpk.go.id/Download/39052/UU%20Nomor%201%20Tahun%201966.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,6 +24,49 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_1_1966_1966-02-14
+  kind: asli
+  source: official
+  date: '1966-02-14'
+  date_basis: tanggal_penetapan
+  text: uu_1_1966_1966-02-14.txt
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: bd4178c59d8540985da132241ad559122fe88ccd214c653848ed226d7c2f237c
 pdf_sha256: bd4178c59d8540985da132241ad559122fe88ccd214c653848ed226d7c2f237c
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1966-02-14'
+tanggal_berlaku: '1965-08-17'
+lembaran_negara: 'LN. 1966/ No.10 , TLN NO. 2798 , LL SETNEG : 5 HLM'
+subjek: PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1966
+  source_pdf_url: https://peraturan.go.id/files/UU0011966.pdf
+bpk:
+  id: 49774
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39052/UU%20Nomor%201%20Tahun%201966.pdf
+    bpk_file_id: 39052
+    filename: UU Nomor 1 Tahun 1966.pdf
+    sha256: bd4178c59d8540985da132241ad559122fe88ccd214c653848ed226d7c2f237c
+    bytes: 39017
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_9_1966
+      citation: UU No. 9 Tahun 1966
+      tentang: Keanggotaan Kembali Republik Indonesia Dalam Dana Moneter Inernasional
+        (International Monetary Fund) dan Bank Internasional Untuk Rekonstruksi dan
+        Pembangunan (International Bank For Reconstruction And Development)
+      url: https://peraturan.bpk.go.id/Details/49808/uu-no-9-tahun-1966
+      note: null
+    Mencabut:
+    - id: uu_5_1954
+      citation: UU No. 5 Tahun 1954
+      tentang: Keanggotaan Republik Indonesia dari Dana Moneter Internasional (International
+        Monetery Fund) dan Bank Internasional Untuk Rekonstruksi dan Pembangunan (International
+        Bank For Reconstruction And Development)
+      url: https://peraturan.bpk.go.id/Details/47915/uu-no-5-tahun-1954
+      note: null
+uji_materi: null

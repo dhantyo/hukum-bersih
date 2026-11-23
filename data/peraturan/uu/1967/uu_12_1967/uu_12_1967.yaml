@@ -6,13 +6,13 @@ year: 1967
 title: Undang-Undang Nomor 12 Tahun 1967 tentang Pokok-Pokok Perkoprasian
 tentang: POKOK-POKOK PERKOPRASIAN
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '1967-12-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1967
-source_pdf_url: https://peraturan.go.id/files/UU0121967.pdf
+source_url: https://peraturan.bpk.go.id/Details/49587/uu-no-12-tahun-1967
+source_pdf_url: https://peraturan.bpk.go.id/Download/38865/UU%20Nomor%2012%20Tahun%201967.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_1967_1967-12-18.txt
   pasal_count: 58
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 05cfe9ab033299758973fd2381f0569ab3ea84e4d020c5804ec00e0c32433a23
 pdf_sha256: 05cfe9ab033299758973fd2381f0569ab3ea84e4d020c5804ec00e0c32433a23
+tanggal_pengundangan: '1967-12-18'
+tanggal_berlaku: '1967-12-18'
+lembaran_negara: 'LN. 1967/ No. 23 , TLN NO. 2832 , LL SETNEG : 32 HLM'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN - DASAR PEMBENTUKAN
+  KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1967
+  source_pdf_url: https://peraturan.go.id/files/UU0121967.pdf
+bpk:
+  id: 49587
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38865/UU%20Nomor%2012%20Tahun%201967.pdf
+    bpk_file_id: 38865
+    filename: UU Nomor 12 Tahun 1967.pdf
+    sha256: 05cfe9ab033299758973fd2381f0569ab3ea84e4d020c5804ec00e0c32433a23
+    bytes: 141688
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_25_1992
+      citation: UU No. 25 Tahun 1992
+      tentang: Perkoperasian
+      url: https://peraturan.bpk.go.id/Details/46650/uu-no-25-tahun-1992
+      note: null
+    Mencabut:
+    - id: uu_14_1965
+      citation: UU No. 14 Tahun 1965
+      tentang: Perkoperasian
+      url: https://peraturan.bpk.go.id/Details/50196/uu-no-14-tahun-1965
+      note: null
+uji_materi: null

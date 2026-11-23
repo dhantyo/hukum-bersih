@@ -15,8 +15,8 @@ tanggal_penetapan: '1966-11-08'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1966
-source_pdf_url: https://peraturan.go.id/files/UU0091966.pdf
+source_url: https://peraturan.bpk.go.id/Details/49808/uu-no-9-tahun-1966
+source_pdf_url: https://peraturan.bpk.go.id/Download/39086/UU%20Nomor%209%20Tahun%201966.pdf
 relationships:
   amends: []
   amended_by:
@@ -25,6 +25,49 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_9_1966_1966-11-08
+  kind: asli
+  source: official
+  date: '1966-11-08'
+  date_basis: tanggal_penetapan
+  text: uu_9_1966_1966-11-08.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 388bfbcf9a5bd354001479f98e56c2e52ee49f4cef0ff8457a8825feb635f5d9
 pdf_sha256: 388bfbcf9a5bd354001479f98e56c2e52ee49f4cef0ff8457a8825feb635f5d9
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1966-11-08'
+tanggal_berlaku: '1966-11-08'
+lembaran_negara: 'LN. 1966/ No. 36, LL SETNEG : 4 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1966
+  source_pdf_url: https://peraturan.go.id/files/UU0091966.pdf
+bpk:
+  id: 49808
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39086/UU%20Nomor%209%20Tahun%201966.pdf
+    bpk_file_id: 39086
+    filename: UU Nomor 9 Tahun 1966.pdf
+    sha256: 388bfbcf9a5bd354001479f98e56c2e52ee49f4cef0ff8457a8825feb635f5d9
+    bytes: 29860
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_2_1967
+      citation: UU No. 2 Tahun 1967
+      tentang: Perubahan Undang-Undang No. 9 tahun 1966, tentang Keanggotaan Kembali
+        Republik Indonesia Dalam International Monetary Fund dan Bank For Reconstruction
+        and development (Lembaran-Negara Tahun 1966 No. 36).
+      url: https://peraturan.bpk.go.id/Details/49520/uu-no-2-tahun-1967
+      note: null
+    Mencabut:
+    - id: uu_1_1966
+      citation: UU No. 1 Tahun 1966
+      tentang: Penarikan Diri Republik Indonesia dari Keanggotaan Dana Moneter Internasional
+        (International Monetary Fund) dan Bank Internasional Untuk Rekonstruksi dan
+        Pembangunan (International Bank For Reconstruction And Development)
+      url: https://peraturan.bpk.go.id/Details/49774/uu-no-1-tahun-1966
+      note: null
+uji_materi: null

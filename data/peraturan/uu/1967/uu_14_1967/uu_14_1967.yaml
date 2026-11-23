@@ -6,13 +6,13 @@ year: 1967
 title: Undang-Undang Nomor 14 Tahun 1967 tentang Pokok-Pokok Perbankan
 tentang: POKOK-POKOK PERBANKAN
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '1967-12-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-1967
-source_pdf_url: https://peraturan.go.id/files/UU0141967.pdf
+source_url: https://peraturan.bpk.go.id/Details/49592/uu-no-14-tahun-1967
+source_pdf_url: https://peraturan.bpk.go.id/Download/38871/UU%20Nomor%2014%20Tahun%201967.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,30 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1967_1967-12-30.txt
   pasal_count: 48
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ecbd8da8b2dee192c5f283ea8ca741f64d1084dde551ce5b143c1eda526ce515
 pdf_sha256: ecbd8da8b2dee192c5f283ea8ca741f64d1084dde551ce5b143c1eda526ce515
+tanggal_pengundangan: '1967-12-30'
+lembaran_negara: 'LN. 1967/ No. 34 , TLN NO. 2842, LL SETNEG : 26 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-1967
+  source_pdf_url: https://peraturan.go.id/files/UU0141967.pdf
+bpk:
+  id: 49592
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38871/UU%20Nomor%2014%20Tahun%201967.pdf
+    bpk_file_id: 38871
+    filename: UU Nomor 14 Tahun 1967.pdf
+    sha256: ecbd8da8b2dee192c5f283ea8ca741f64d1084dde551ce5b143c1eda526ce515
+    bytes: 97877
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_7_1992
+      citation: UU No. 7 Tahun 1992
+      tentang: Perbankan
+      url: https://peraturan.bpk.go.id/Details/46599/uu-no-7-tahun-1992
+      note: null
+uji_materi: null

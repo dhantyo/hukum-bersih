@@ -11,12 +11,12 @@ tentang: PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 10 TAHUN 1
   44 MENJADI UNDANG-UNDANG
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1965-06-14'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1965
-source_pdf_url: https://peraturan.go.id/files/UU0121965.pdf
+source_url: https://peraturan.bpk.go.id/Details/50189/uu-no-12-tahun-1965
+source_pdf_url: https://peraturan.bpk.go.id/Download/39466/UU%20Nomor%2012%20Tahun%201965.pdf
 relationships:
   amends: []
   amended_by: []
@@ -25,6 +25,40 @@ relationships:
   enacts:
   - perppu_10_1962
   enacted_by: []
-versions: []
+versions:
+- id: uu_12_1965_1965-06-14
+  kind: asli
+  source: official
+  date: '1965-06-14'
+  date_basis: tanggal_penetapan
+  text: uu_12_1965_1965-06-14.txt
+  pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d17c15ff1ccf7327955b92093d8998106771b2dfe8b82eb7bc49e03a45592198
 pdf_sha256: d17c15ff1ccf7327955b92093d8998106771b2dfe8b82eb7bc49e03a45592198
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1985-06-14'
+tanggal_berlaku: '1965-08-03'
+lembaran_negara: 'LN. 1965/ No. 55 , TLN NO. 2760 , LL SETNEG : 2 HLM'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1965
+  source_pdf_url: https://peraturan.go.id/files/UU0121965.pdf
+bpk:
+  id: 50189
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39466/UU%20Nomor%2012%20Tahun%201965.pdf
+    bpk_file_id: 39466
+    filename: UU Nomor 12 Tahun 1965.pdf
+    sha256: d17c15ff1ccf7327955b92093d8998106771b2dfe8b82eb7bc49e03a45592198
+    bytes: 78970
+    archive_url: null
+  status_peraturan:
+    Menetapkan:
+    - id: perppu_10_1962
+      citation: PERPU No. 10 Tahun 1962
+      tentang: Pencabutan Undang-Undang Krisis Impor 1933
+      url: https://peraturan.bpk.go.id/Details/53661/perpu-no-10-tahun-1962
+      note: null
+  tanggal_pengundangan: '1965-06-14'
+uji_materi: null

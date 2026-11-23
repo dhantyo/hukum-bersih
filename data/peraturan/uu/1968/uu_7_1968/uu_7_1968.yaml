@@ -7,13 +7,13 @@ title: Undang-Undang Nomor 7 Tahun 1968 tentang Perubahan Pasal 3 Undang-Undang 
   6 Tahun 1962 Tentang Wabah
 tentang: PERUBAHAN PASAL 3 UNDANG-UNDANG NOMOR 6 TAHUN 1962 TENTANG WABAH
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '1968-07-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1968
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+7+Tahun+1968.pdf
+source_url: https://peraturan.bpk.go.id/Details/49146/uu-no-7-tahun-1968
+source_pdf_url: https://peraturan.bpk.go.id/Download/38418/UU%20Nomor%207%20Tahun%201968.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,3 +24,34 @@ relationships:
 versions: []
 pdf_sha256: 174fb04326ba2f06f3554bfb359b8b8b8eb92d65bc44f0279caa66feeedaa9f7
 pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1968-07-16'
+tanggal_berlaku: '1968-07-16'
+lembaran_negara: 'LN. 1968/ No. 38, TLN No. 2855 , LL SETNEG : 2 HLM'
+subjek: KESEHATAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1968
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+7+Tahun+1968.pdf
+bpk:
+  id: 49146
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38418/UU%20Nomor%207%20Tahun%201968.pdf
+    bpk_file_id: 38418
+    filename: UU Nomor 7 Tahun 1968.pdf
+    sha256: 174fb04326ba2f06f3554bfb359b8b8b8eb92d65bc44f0279caa66feeedaa9f7
+    bytes: 12863
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_4_1984
+      citation: UU No. 4 Tahun 1984
+      tentang: Wabah Penyakit Menular
+      url: https://peraturan.bpk.go.id/Details/46973/uu-no-4-tahun-1984
+      note: null
+    Mengubah:
+    - id: uu_6_1962
+      citation: UU No. 6 Tahun 1962
+      tentang: Wabah
+      url: https://peraturan.bpk.go.id/Details/50678/uu-no-6-tahun-1962
+      note: null
+uji_materi: null
+parser_version_tried: 12

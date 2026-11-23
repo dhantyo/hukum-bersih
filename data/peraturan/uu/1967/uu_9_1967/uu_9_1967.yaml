@@ -11,8 +11,8 @@ tanggal_penetapan: '1967-09-12'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1967
-source_pdf_url: https://peraturan.go.id/files/UU0091967.pdf
+source_url: https://peraturan.bpk.go.id/Details/49581/uu-no-9-tahun-1967
+source_pdf_url: https://peraturan.bpk.go.id/Download/38859/UU%20Nomor%209%20Tahun%201967.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,42 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_1967_1967-09-12.txt
   pasal_count: 15
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 97c8178e0099129a2f8add9cfd3b0736f175613c4d71fbf1a0c7bfd6c2a83a92
 pdf_sha256: 97c8178e0099129a2f8add9cfd3b0736f175613c4d71fbf1a0c7bfd6c2a83a92
+tanggal_pengundangan: '1967-09-12'
+lembaran_negara: 'LN. 1967/ No. 19 , TLN NO.2828 , LL SETNEG : HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1967
+  source_pdf_url: https://peraturan.go.id/files/UU0091967.pdf
+bpk:
+  id: 49581
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38859/UU%20Nomor%209%20Tahun%201967.pdf
+    bpk_file_id: 38859
+    filename: UU Nomor 9 Tahun 1967.pdf
+    sha256: 97c8178e0099129a2f8add9cfd3b0736f175613c4d71fbf1a0c7bfd6c2a83a92
+    bytes: 42380
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_14_1964
+      citation: UU No. 14 Tahun 1964
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang No. 3 Tahun
+        1964 Tentang Pembentukan Daerah Tingkat I Lampung Dengan Mengubah Undang-Undang
+        No. 25 Tahun 1959 Tentang Pembentukan Daerah Tingkat I Sumatera Selatan (Lembaran
+        Negara Tahun 1964 No. 8) Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/50317/uu-no-14-tahun-1964
+      note: null
+    - id: uu_25_1959
+      citation: UU No. 25 Tahun 1959
+      tentang: Penetapan "Peraturan Pemerintah Pengganti Undang-Undang No. 3 Tahun
+        1950 Tentang Pembentukan Daerah Tingkat I Sumatera Selatan" dan "Undang-Undang
+        Darurat No. 16 Tahun 1955 Tentang Perubahan Peraturan Pemerintah Pengganti
+        Undang-Undang No. 3 Tahun 1950 (Lembaran-Negara Tahun 1955 No. 52), Sebagai
+        Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/51506/uu-no-25-tahun-1959
+      note: null
+uji_materi: null

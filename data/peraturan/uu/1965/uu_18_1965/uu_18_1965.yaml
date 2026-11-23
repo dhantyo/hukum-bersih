@@ -6,13 +6,13 @@ year: 1965
 title: Undang-Undang Nomor 18 Tahun 1965 tentang Pokok-Pokok Pemerintahan Daerah
 tentang: POKOK-POKOK PEMERINTAHAN DAERAH
 short_name: null
-status: berlaku
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1965-09-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-18-tahun-1965
-source_pdf_url: https://peraturan.go.id/files/UU0181965.pdf
+source_url: https://peraturan.bpk.go.id/Details/50212/uu-no-18-tahun-1965
+source_pdf_url: https://peraturan.bpk.go.id/Download/39489/UU%20Nomor%2018%20Tahun%201965.pdf
 relationships:
   amends: []
   amended_by: []
@@ -20,6 +20,45 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_18_1965_1965-09-01
+  kind: asli
+  source: official
+  date: '1965-09-01'
+  date_basis: tanggal_penetapan
+  text: uu_18_1965_1965-09-01.txt
+  pasal_count: 30
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 41c5851a6eb7bac455f5e15a3a596c6481f085b65cfc6c7c7b3ddf8791992940
 pdf_sha256: 41c5851a6eb7bac455f5e15a3a596c6481f085b65cfc6c7c7b3ddf8791992940
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1965-09-01'
+tanggal_berlaku: '1965-09-01'
+lembaran_negara: 'LN. 1965, LL SETNEG : 33 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-18-tahun-1965
+  source_pdf_url: https://peraturan.go.id/files/UU0181965.pdf
+bpk:
+  id: 50212
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39489/UU%20Nomor%2018%20Tahun%201965.pdf
+    bpk_file_id: 39489
+    filename: UU Nomor 18 Tahun 1965.pdf
+    sha256: 41c5851a6eb7bac455f5e15a3a596c6481f085b65cfc6c7c7b3ddf8791992940
+    bytes: 333566
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_5_1974
+      citation: UU No. 5 Tahun 1974
+      tentang: Pokok-Pokok Pemerintahan di Daerah
+      url: https://peraturan.bpk.go.id/Details/47413/uu-no-5-tahun-1974
+      note: null
+    Mencabut:
+    - id: uu_1_1957
+      citation: UU No. 1 Tahun 1957
+      tentang: Pokok-Pokok Pemerintahan Daerah
+      url: https://peraturan.bpk.go.id/Details/52381/uu-no-1-tahun-1957
+      note: null
+uji_materi: null

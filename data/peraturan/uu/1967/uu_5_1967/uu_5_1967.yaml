@@ -6,19 +6,18 @@ year: 1967
 title: Undang-Undang Nomor 5 Tahun 1967 tentang Ketentuan-Ketentuan Pokok Kehutanan
 tentang: KETENTUAN-KETENTUAN POKOK KEHUTANAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 41 Tahun 1999 Tentang Kehutanan'
+status: tidak_berlaku
 tanggal_penetapan: '1967-05-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1967
-source_pdf_url: https://peraturan.go.id/files/uu0051967.pdf
+source_url: https://peraturan.bpk.go.id/Details/49554/uu-no-5-tahun-1967
+source_pdf_url: https://peraturan.bpk.go.id/Download/38833/UU%20Nomor%205%20Tahun%201967.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_41_1999
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -29,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1967_1967-05-24.txt
   pasal_count: 21
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f381f75cd9efc9dedd5fff98fc35629f48c218aab65d1a19b5be119e8061f0bc
 pdf_sha256: f381f75cd9efc9dedd5fff98fc35629f48c218aab65d1a19b5be119e8061f0bc
+tanggal_pengundangan: '1967-05-24'
+tanggal_berlaku: '1967-05-24'
+lembaran_negara: 'LN. 1967/ No. 8 , TLN NO. 2823 , LL SETNEG : 13 HLM'
+subjek: KEHUTANAN DAN PERKEBUNAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1967
+  source_pdf_url: https://peraturan.go.id/files/uu0051967.pdf
+bpk:
+  id: 49554
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38833/UU%20Nomor%205%20Tahun%201967.pdf
+    bpk_file_id: 38833
+    filename: UU Nomor 5 Tahun 1967.pdf
+    sha256: f381f75cd9efc9dedd5fff98fc35629f48c218aab65d1a19b5be119e8061f0bc
+    bytes: 82929
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_41_1999
+      citation: UU No. 41 Tahun 1999
+      tentang: Kehutanan
+      url: https://peraturan.bpk.go.id/Details/45373/uu-no-41-tahun-1999
+      note: null
+uji_materi: null

@@ -7,20 +7,61 @@ title: Undang-Undang Nomor 2 Tahun 1968 tentang Perobahan/Tambahan Undang-Undang
   Penjualan 1951
 tentang: PEROBAHAN/TAMBAHAN UNDANG-UNDANG PAJAK PENJUALAN 1951
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 8 Tahun 1983 Tentang Pajak
-  Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan Atas Barang Mewah'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1968-03-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1968
-source_pdf_url: null
+source_url: https://peraturan.bpk.go.id/Details/49130/uu-no-2-tahun-1968
+source_pdf_url: https://peraturan.bpk.go.id/Download/273281/UU%20Nomor%202%20Tahun%201968.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_8_1983
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_2_1968_1968-03-22
+  kind: asli
+  source: official
+  date: '1968-03-22'
+  date_basis: tanggal_penetapan
+  text: uu_2_1968_1968-03-22.txt
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f6181bd761d1be5b71e73790629790c165d9a3be92642efec7a4c83d6ea9bc18
+  ocr: true
+tanggal_pengundangan: '1968-03-22'
+tanggal_berlaku: '1968-03-22'
+lembaran_negara: 'LN. 1968/ No.14 , TLN NO. 2847 , LL SETNEG : 2 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1968
+  source_pdf_url: null
+bpk:
+  id: 49130
+  files:
+  - url: https://peraturan.bpk.go.id/Download/273281/UU%20Nomor%202%20Tahun%201968.pdf
+    bpk_file_id: 273281
+    filename: UU Nomor 2 Tahun 1968.pdf
+    sha256: f6181bd761d1be5b71e73790629790c165d9a3be92642efec7a4c83d6ea9bc18
+    bytes: 977874
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_8_1983
+      citation: UU No. 8 Tahun 1983
+      tentang: Pajak Pertambahan Nilai Barang dan Jasa dan Pajak Penjualan atas Barang
+        Mewah
+      url: https://peraturan.bpk.go.id/Details/46990/uu-no-8-tahun-1983
+      note: null
+    Mengubah:
+    - id: uu_35_1953
+      citation: UU No. 35 Tahun 1953
+      tentang: Penetapan "Undang-Undang Darurat Nomor 19 Tahun 1951, tentang Pemungutan
+        Pajak Penjualan" (Lembaran-Negara Nomor 94 Tahun 1951) Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/45440/uu-no-35-tahun-1953
+      note: null
+uji_materi: null

@@ -9,12 +9,12 @@ tentang: PEMBENTUKAN PENGADILAN TINGGI DI BUKIT TINGGI DAN PERUBAHAN DAERAH HUKU
   PENGADILAN TINGGI DI MEDAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1965-11-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-21-tahun-1965
-source_pdf_url: https://peraturan.go.id/files/UU0211965.pdf
+source_url: https://peraturan.bpk.go.id/Details/50221/uu-no-21-tahun-1965
+source_pdf_url: https://peraturan.bpk.go.id/Download/39498/UU%20Nomor%2021%20Tahun%201965.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_21_1965_1965-11-24
+  kind: asli
+  source: official
+  date: '1965-11-24'
+  date_basis: tanggal_penetapan
+  text: uu_21_1965_1965-11-24.txt
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 23a90e801d842c9c22ee3b29348477267e8c4d2b27c0c926abca799a8fae1a23
 pdf_sha256: 23a90e801d842c9c22ee3b29348477267e8c4d2b27c0c926abca799a8fae1a23
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1965-11-24'
+tanggal_berlaku: '1965-11-24'
+lembaran_negara: 'LN. 1965/ No. 101 , TLN NO. 2785 , LL SETNEG : 3 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-21-tahun-1965
+  source_pdf_url: https://peraturan.go.id/files/UU0211965.pdf
+bpk:
+  id: 50221
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39498/UU%20Nomor%2021%20Tahun%201965.pdf
+    bpk_file_id: 39498
+    filename: UU Nomor 21 Tahun 1965.pdf
+    sha256: 23a90e801d842c9c22ee3b29348477267e8c4d2b27c0c926abca799a8fae1a23
+    bytes: 80811
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

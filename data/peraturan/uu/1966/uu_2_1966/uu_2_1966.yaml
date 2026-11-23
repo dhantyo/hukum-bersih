@@ -6,21 +6,53 @@ year: 1966
 title: Undang-Undang Nomor 2 Tahun 1966 tentang Hygiene
 tentang: HYGIENE
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 23 Tahun 1992 Tentang Kesehatan'
+status: tidak_berlaku
 tanggal_penetapan: '1966-06-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1966
-source_pdf_url: https://peraturan.go.id/files/UU0021966.pdf
+source_url: https://peraturan.bpk.go.id/Details/49780/uu-no-2-tahun-1966
+source_pdf_url: https://peraturan.bpk.go.id/Download/39058/UU%20Nomor%202%20Tahun%201966.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_23_1992
+  revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_2_1966_1966-06-11
+  kind: asli
+  source: official
+  date: '1966-06-11'
+  date_basis: tanggal_penetapan
+  text: uu_2_1966_1966-06-11.txt
+  pasal_count: 8
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d41c380ddba4ff5e9bb5fb1a803d0bc2e5f0d2d7a1cbdd5ba72fd17b394cfb1b
 pdf_sha256: d41c380ddba4ff5e9bb5fb1a803d0bc2e5f0d2d7a1cbdd5ba72fd17b394cfb1b
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1966-06-11'
+tanggal_berlaku: '1966-06-11'
+lembaran_negara: 'LN. 1966/ No. 22, TLN NO. 2804 , LL SETNEG : 5 HLM'
+subjek: KESEHATAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1966
+  source_pdf_url: https://peraturan.go.id/files/UU0021966.pdf
+bpk:
+  id: 49780
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39058/UU%20Nomor%202%20Tahun%201966.pdf
+    bpk_file_id: 39058
+    filename: UU Nomor 2 Tahun 1966.pdf
+    sha256: d41c380ddba4ff5e9bb5fb1a803d0bc2e5f0d2d7a1cbdd5ba72fd17b394cfb1b
+    bytes: 37659
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_23_1992
+      citation: UU No. 23 Tahun 1992
+      tentang: Kesehatan
+      url: https://peraturan.bpk.go.id/Details/46620/uu-no-23-tahun-1992
+      note: null
+uji_materi: null

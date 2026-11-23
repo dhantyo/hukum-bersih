@@ -8,13 +8,13 @@ title: Undang-Undang Nomor 4 Tahun 1967 tentang Perubahan Undang-Undang Nomor 11
 tentang: PERUBAHAN UNDANG-UNDANG NOMOR 11 TAHUN 1966, TENTANG KETENTUAN-KETENTUAN
   POKOK PERS
 short_name: null
-status: berlaku
+status: tidak_berlaku
 tanggal_penetapan: '1967-05-06'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1967
-source_pdf_url: https://peraturan.go.id/files/UU0041967.pdf
+source_url: https://peraturan.bpk.go.id/Details/49551/uu-no-4-tahun-1967
+source_pdf_url: https://peraturan.bpk.go.id/Download/38830/UU%20Nomor%204%20Tahun%201967.pdf
 relationships:
   amends:
   - id: uu_11_1966
@@ -31,4 +31,44 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1967_1967-05-06.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e756289e9a327ab82607dbf478688107ebd50ae5f29e37c82059c2b7d34fc249
 pdf_sha256: e756289e9a327ab82607dbf478688107ebd50ae5f29e37c82059c2b7d34fc249
+tanggal_pengundangan: '1967-05-06'
+tanggal_berlaku: '1967-05-06'
+lembaran_negara: 'LN. 1967/ No. 7 , TLN NO. 2822 , LL SETNEG : 3 HLM'
+subjek: PERS, POS, DAN PERIKLANAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1967
+  source_pdf_url: https://peraturan.go.id/files/UU0041967.pdf
+bpk:
+  id: 49551
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38830/UU%20Nomor%204%20Tahun%201967.pdf
+    bpk_file_id: 38830
+    filename: UU Nomor 4 Tahun 1967.pdf
+    sha256: e756289e9a327ab82607dbf478688107ebd50ae5f29e37c82059c2b7d34fc249
+    bytes: 29654
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_40_1999
+      citation: UU No. 40 Tahun 1999
+      tentang: Pers
+      url: https://peraturan.bpk.go.id/Details/45370/uu-no-40-tahun-1999
+      note: null
+    Diubah dengan:
+    - id: uu_21_1982
+      citation: UU No. 21 Tahun 1982
+      tentang: Perubahan atas Undang-Undang Nomor 11 Tahun 1966 tentang Ketentuan-Ketentuan
+        Pokok Pers sebagaimana telah Diubah dengan Undang-Undang Nomor 4 Tahun 1967
+      url: https://peraturan.bpk.go.id/Details/47032/uu-no-21-tahun-1982
+      note: null
+    Mengubah:
+    - id: uu_11_1966
+      citation: UU No. 11 Tahun 1966
+      tentang: Ketentuan-Ketentuan Pokok Pers
+      url: https://peraturan.bpk.go.id/Details/49812/uu-no-11-tahun-1966
+      note: null
+uji_materi: null

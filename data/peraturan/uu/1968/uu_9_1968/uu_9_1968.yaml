@@ -10,22 +10,18 @@ tentang: PERUBAHAN PASAL 7 INDISCHE COMPTABILITEITSWET (STBL. 1925 NOMOR 448) SE
   TELAH DIUBAH DENGAN UNDANG-UNDANG NOMOR 3 DRT. 1954 (LEMBARAN NEGARA TAHUN 1954
   NOMOR 6)
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 17 Tahun 2003 Tentang Keuangan
-  Negara Undang-Undang Nomor 1 Tahun 2004 Tentang Perbendaharaan Negara Undang-Undang
-  Nomor 5 Tahun 1993 Tentang Tambahan dan Perubahan Anggaran Pendapatan dan Belanja
-  Negara Tahun Anggaran 1992/93'
+status: tidak_berlaku
 tanggal_penetapan: '1968-10-25'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1968
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+9+Tahun+1968.pdf
+source_url: https://peraturan.bpk.go.id/Details/49165/uu-no-9-tahun-1968
+source_pdf_url: https://peraturan.bpk.go.id/Download/38439/UU%20Nomor%209%20Tahun%201968.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_17_2003
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -35,5 +31,45 @@ versions:
   date: '1968-10-25'
   date_basis: tanggal_penetapan
   text: uu_9_1968_1968-10-25.txt
-  pasal_count: 1
+  pasal_count: 3
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 56192f4d6df04c83d31c1b078c74291a172ce8058699ba6585e77b93b0e959ab
 pdf_sha256: 56192f4d6df04c83d31c1b078c74291a172ce8058699ba6585e77b93b0e959ab
+tanggal_pengundangan: '1968-10-25'
+tanggal_berlaku: '1968-10-25'
+lembaran_negara: 'LN. 1968/ No. 53, TLN NO. 2860, LL SETNEG : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1968
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+9+Tahun+1968.pdf
+bpk:
+  id: 49165
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38439/UU%20Nomor%209%20Tahun%201968.pdf
+    bpk_file_id: 38439
+    filename: UU Nomor 9 Tahun 1968.pdf
+    sha256: 56192f4d6df04c83d31c1b078c74291a172ce8058699ba6585e77b93b0e959ab
+    bytes: 17217
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_1_2004
+      citation: UU No. 1 Tahun 2004
+      tentang: Perbendaharaan Negara
+      url: https://peraturan.bpk.go.id/Details/40446/uu-no-1-tahun-2004
+      note: null
+    Mencabut:
+    - id: null
+      citation: UUDrt No. 3 Tahun 1954
+      tentang: Mengubah "Indonesische Comptabiliteitswet" (Staatsblad 1925 No. 448)
+        dan "Indonesische Bedrijvenwet" (Staatsblad 1927 No. 419)
+      url: https://peraturan.bpk.go.id/Details/52932/uudrt-no-3-tahun-1954
+      note: null
+    - id: null
+      citation: Pasal 7 "Indische Comptabiliteitswet" (Stbl. 1925 Nomor 448) sebagaimana
+        telah diubah dengan Pasal 1 Undang-undang Nomor 3 Drt. Tahun 1954,
+      tentang: null
+      url: null
+      note: null
+uji_materi: null

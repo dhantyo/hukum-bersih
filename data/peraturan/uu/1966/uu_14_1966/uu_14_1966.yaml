@@ -12,8 +12,8 @@ tanggal_penetapan: '1966-12-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-14-tahun-1966
-source_pdf_url: https://peraturan.go.id/files/UU0141966.pdf
+source_url: https://peraturan.bpk.go.id/Details/49822/uu-no-14-tahun-1966
+source_pdf_url: https://peraturan.bpk.go.id/Download/39100/UU%20Nomor%2014%20Tahun%201966.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,40 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_14_1966_1966-12-31
+  kind: asli
+  source: official
+  date: '1966-12-31'
+  date_basis: tanggal_penetapan
+  text: uu_14_1966_1966-12-31.txt
+  pasal_count: 8
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d137d56a0891a77e51e41c4f3e74b0bc4f099ac5580bdd97b5ff5fe3315f7b88
 pdf_sha256: d137d56a0891a77e51e41c4f3e74b0bc4f099ac5580bdd97b5ff5fe3315f7b88
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1966-12-31'
+tanggal_berlaku: '1967-01-01'
+lembaran_negara: 'LN. 1966/ No. 44, LL SETNEG : 5 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-14-tahun-1966
+  source_pdf_url: https://peraturan.go.id/files/UU0141966.pdf
+bpk:
+  id: 49822
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39100/UU%20Nomor%2014%20Tahun%201966.pdf
+    bpk_file_id: 39100
+    filename: UU Nomor 14 Tahun 1966.pdf
+    sha256: d137d56a0891a77e51e41c4f3e74b0bc4f099ac5580bdd97b5ff5fe3315f7b88
+    bytes: 31175
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_8_1968
+      citation: UU No. 8 Tahun 1968
+      tentang: Perubahan dan Tambahan atas Anggaran Pendapatan dan Belanja Negara
+        Tahun 1967 Sebagaimana Ditetapkan Dengan Undang-Undang Nomor 14 Tahun 1966
+      url: https://peraturan.bpk.go.id/Details/49164/uu-no-8-tahun-1968
+      note: null
+uji_materi: null

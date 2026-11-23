@@ -16,8 +16,8 @@ tanggal_penetapan: '1967-01-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1967
-source_pdf_url: https://peraturan.go.id/files/UU0021967.pdf
+source_url: https://peraturan.bpk.go.id/Details/49520/uu-no-2-tahun-1967
+source_pdf_url: https://peraturan.bpk.go.id/Download/38799/UU%20Nomor%202%20Tahun%201967.pdf
 relationships:
   amends:
   - id: uu_9_1966
@@ -34,4 +34,33 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1967_1967-01-10.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5585402a58182281e325dafdd882e670664e633841b136eda772c68c66982d94
 pdf_sha256: 5585402a58182281e325dafdd882e670664e633841b136eda772c68c66982d94
+tanggal_pengundangan: '1967-01-10'
+tanggal_berlaku: '1967-01-10'
+lembaran_negara: 'LN. 1967/ No. 2, TLN NO. 2819, LL SETNEG : 3 HLM'
+subjek: PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1967
+  source_pdf_url: https://peraturan.go.id/files/UU0021967.pdf
+bpk:
+  id: 49520
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38799/UU%20Nomor%202%20Tahun%201967.pdf
+    bpk_file_id: 38799
+    filename: UU Nomor 2 Tahun 1967.pdf
+    sha256: 5585402a58182281e325dafdd882e670664e633841b136eda772c68c66982d94
+    bytes: 30191
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_9_1966
+      citation: UU No. 9 Tahun 1966
+      tentang: Keanggotaan Kembali Republik Indonesia Dalam Dana Moneter Inernasional
+        (International Monetary Fund) dan Bank Internasional Untuk Rekonstruksi dan
+        Pembangunan (International Bank For Reconstruction And Development)
+      url: https://peraturan.bpk.go.id/Details/49808/uu-no-9-tahun-1966
+      note: null
+uji_materi: null

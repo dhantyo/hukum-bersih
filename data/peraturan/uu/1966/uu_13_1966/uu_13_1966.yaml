@@ -12,8 +12,8 @@ tanggal_penetapan: '1966-12-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-13-tahun-1966
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+13+Tahun+1966.pdf
+source_url: https://peraturan.bpk.go.id/Details/49820/uu-no-13-tahun-1966
+source_pdf_url: https://peraturan.bpk.go.id/Download/49428/UU%20Nomor%2013%20Tahun%201966.pdf
 relationships:
   amends: []
   amended_by: []
@@ -21,6 +21,46 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_13_1966_1966-12-31
+  kind: asli
+  source: official
+  date: '1966-12-31'
+  date_basis: tanggal_penetapan
+  text: uu_13_1966_1966-12-31.txt
+  pasal_count: 6
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c4ddc049ea7ae9dc4a2e34fa9717aabc8b68e342ac4739fedf48684f45b5368a
 pdf_sha256: c4ddc049ea7ae9dc4a2e34fa9717aabc8b68e342ac4739fedf48684f45b5368a
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1966-12-31'
+tanggal_berlaku: '1966-01-01'
+lembaran_negara: 'LN.1966/NO.43, TLN NO.2817, LL : 3 HLM.'
+subjek: APBN - PEREKONOMIAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-13-tahun-1966
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+13+Tahun+1966.pdf
+bpk:
+  id: 49820
+  files:
+  - url: https://peraturan.bpk.go.id/Download/49428/UU%20Nomor%2013%20Tahun%201966.pdf
+    bpk_file_id: 49428
+    filename: UU Nomor 13 Tahun 1966.pdf
+    sha256: c4ddc049ea7ae9dc4a2e34fa9717aabc8b68e342ac4739fedf48684f45b5368a
+    bytes: 67251
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_10_1967
+      citation: UU No. 10 Tahun 1967
+      tentang: Perubahan dan Tambahan Atas Perubahan dan Tambahan Anggaran Moneter
+        Tahun Anggaran 1966
+      url: https://peraturan.bpk.go.id/Details/49583/uu-no-10-tahun-1967
+      note: null
+    Mengubah:
+    - id: uu_22_1965
+      citation: UU No. 22 Tahun 1965
+      tentang: Anggaran Moneter Tahun-Anggaran 1966
+      url: https://peraturan.bpk.go.id/Details/50224/uu-no-22-tahun-1965
+      note: null
+uji_materi: null

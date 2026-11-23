@@ -13,8 +13,8 @@ tanggal_penetapan: '1968-07-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1968
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+8+Tahun+1968.pdf
+source_url: https://peraturan.bpk.go.id/Details/49164/uu-no-8-tahun-1968
+source_pdf_url: https://peraturan.bpk.go.id/Download/49264/UU%20Nomor%208%20Tahun%201968.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,39 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_8_1968_1968-07-16
+  kind: asli
+  source: official
+  date: '1968-07-16'
+  date_basis: tanggal_penetapan
+  text: uu_8_1968_1968-07-16.txt
+  pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e791c3f635f47a002a19adc975a3a633aae277c6c41d500692023369ed84e89c
 pdf_sha256: e791c3f635f47a002a19adc975a3a633aae277c6c41d500692023369ed84e89c
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1968-07-16'
+tanggal_berlaku: '1967-12-31'
+lembaran_negara: 'LN. 1968/ No.39, LL BPHN : 2 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1968
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+8+Tahun+1968.pdf
+bpk:
+  id: 49164
+  files:
+  - url: https://peraturan.bpk.go.id/Download/49264/UU%20Nomor%208%20Tahun%201968.pdf
+    bpk_file_id: 49264
+    filename: UU Nomor 8 Tahun 1968.pdf
+    sha256: e791c3f635f47a002a19adc975a3a633aae277c6c41d500692023369ed84e89c
+    bytes: 9847
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_14_1966
+      citation: UU No. 14 Tahun 1966
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun 1967
+      url: https://peraturan.bpk.go.id/Details/49822/uu-no-14-tahun-1966
+      note: null
+uji_materi: null

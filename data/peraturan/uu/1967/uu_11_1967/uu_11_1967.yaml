@@ -6,20 +6,18 @@ year: 1967
 title: Undang-Undang Nomor 11 Tahun 1967 tentang Ketentuan-Ketentuan Pokok Pertambangan
 tentang: KETENTUAN-KETENTUAN POKOK PERTAMBANGAN
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 4 Tahun 2009 Tentang Pertambangan
-  Mineral dan Batubara'
+status: tidak_berlaku
 tanggal_penetapan: '1967-12-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-11-tahun-1967
-source_pdf_url: https://peraturan.go.id/files/UU0111967.pdf
+source_url: https://peraturan.bpk.go.id/Details/49585/uu-no-11-tahun-1967
+source_pdf_url: https://peraturan.bpk.go.id/Download/38863/UU%20Nomor%2011%20Tahun%201967.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_4_2009
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1967_1967-12-02.txt
   pasal_count: 37
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c1bbc68fb9777b38a98e18a0870c233538e29d491cf048d1c7d60cf957ae70e5
 pdf_sha256: c1bbc68fb9777b38a98e18a0870c233538e29d491cf048d1c7d60cf957ae70e5
+tanggal_pengundangan: '1967-12-02'
+tanggal_berlaku: '1967-12-02'
+lembaran_negara: 'LN. 1967/ No. 22, TLN NO. 2831 , LL SETNEG : 22 HLM'
+subjek: PERTAMBANGAN MIGAS, MINERAL DAN ENERGI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-11-tahun-1967
+  source_pdf_url: https://peraturan.go.id/files/UU0111967.pdf
+bpk:
+  id: 49585
+  files:
+  - url: https://peraturan.bpk.go.id/Download/38863/UU%20Nomor%2011%20Tahun%201967.pdf
+    bpk_file_id: 38863
+    filename: UU Nomor 11 Tahun 1967.pdf
+    sha256: c1bbc68fb9777b38a98e18a0870c233538e29d491cf048d1c7d60cf957ae70e5
+    bytes: 87390
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_4_2009
+      citation: UU No. 4 Tahun 2009
+      tentang: Pertambangan Mineral dan Batubara
+      url: https://peraturan.bpk.go.id/Details/38578/uu-no-4-tahun-2009
+      note: null
+uji_materi: null

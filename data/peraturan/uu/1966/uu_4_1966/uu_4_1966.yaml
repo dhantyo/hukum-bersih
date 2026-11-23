@@ -13,8 +13,8 @@ tanggal_penetapan: '1966-10-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEKARNO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1966
-source_pdf_url: https://peraturan.go.id/files/UU0041966.pdf
+source_url: https://peraturan.bpk.go.id/Details/49787/uu-no-4-tahun-1966
+source_pdf_url: https://peraturan.bpk.go.id/Download/39065/UU%20Nomor%204%20Tahun%201966.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_4_1966_1966-10-27
+  kind: asli
+  source: official
+  date: '1966-10-27'
+  date_basis: tanggal_penetapan
+  text: uu_4_1966_1966-10-27.txt
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 8590bd0e61252e8c49ef1d1a329c736fb4c0ba4685c7e31fd85d5f65f03e920f
 pdf_sha256: 8590bd0e61252e8c49ef1d1a329c736fb4c0ba4685c7e31fd85d5f65f03e920f
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1966-10-27'
+tanggal_berlaku: '1966-10-27'
+lembaran_negara: 'LN. 1966/ No. 31 , TLN NO. 2810 , LL SETNEG : 3 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1966
+  source_pdf_url: https://peraturan.go.id/files/UU0041966.pdf
+bpk:
+  id: 49787
+  files:
+  - url: https://peraturan.bpk.go.id/Download/39065/UU%20Nomor%204%20Tahun%201966.pdf
+    bpk_file_id: 39065
+    filename: UU Nomor 4 Tahun 1966.pdf
+    sha256: 8590bd0e61252e8c49ef1d1a329c736fb4c0ba4685c7e31fd85d5f65f03e920f
+    bytes: 30262
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

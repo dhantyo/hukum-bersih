@@ -13,8 +13,8 @@ tanggal_penetapan: '1968-06-29'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1968
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+5+Tahun+1968.pdf
+source_url: https://peraturan.bpk.go.id/Details/49141/uu-no-5-tahun-1968
+source_pdf_url: https://peraturan.bpk.go.id/Download/49260/UU%20Nomor%205%20Tahun%201968.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,6 +22,33 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_5_1968_1968-06-29
+  kind: asli
+  source: official
+  date: '1968-06-29'
+  date_basis: tanggal_penetapan
+  text: uu_5_1968_1968-06-29.txt
+  pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: cbc19c999a77391f682eca28953ce08ba9a2c8fa91e88c66ccd56f8f7fc63875
 pdf_sha256: cbc19c999a77391f682eca28953ce08ba9a2c8fa91e88c66ccd56f8f7fc63875
-pdf_quality: image_only_or_unparsed
+tanggal_pengundangan: '1968-06-29'
+tanggal_berlaku: '1968-06-29'
+lembaran_negara: 'LN.1968/No.32, TLN NO.2852, LL : 3 HLM'
+subjek: ADMINISTRASI DAN TATA USAHA NEGARA - PENANAMAN MODAL DAN INVESTASI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1968
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+5+Tahun+1968.pdf
+bpk:
+  id: 49141
+  files:
+  - url: https://peraturan.bpk.go.id/Download/49260/UU%20Nomor%205%20Tahun%201968.pdf
+    bpk_file_id: 49260
+    filename: UU Nomor 5 Tahun 1968.pdf
+    sha256: cbc19c999a77391f682eca28953ce08ba9a2c8fa91e88c66ccd56f8f7fc63875
+    bytes: 21955
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
