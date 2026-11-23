@@ -13,8 +13,8 @@ tanggal_penetapan: '1995-04-27'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1995
-source_pdf_url: https://peraturan.go.id/files/uu3-1995.pdf
+source_url: https://peraturan.bpk.go.id/Details/46172/uu-no-3-tahun-1995
+source_pdf_url: https://peraturan.bpk.go.id/Download/34732/UU%20Nomor%203%20Tahun%201995.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1995_1995-04-27.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: f146dbc81c08e3cb4c78ea1ac410d616f312ff26e894012768ac54eaadf91fec
 pdf_sha256: f146dbc81c08e3cb4c78ea1ac410d616f312ff26e894012768ac54eaadf91fec
+tanggal_pengundangan: '1995-04-27'
+tanggal_berlaku: '1995-04-27'
+lembaran_negara: 'LN. 1995/ No. 20, LL SETNEG : 5 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1995
+  source_pdf_url: https://peraturan.go.id/files/uu3-1995.pdf
+bpk:
+  id: 46172
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34732/UU%20Nomor%203%20Tahun%201995.pdf
+    bpk_file_id: 34732
+    filename: UU Nomor 3 Tahun 1995.pdf
+    sha256: f146dbc81c08e3cb4c78ea1ac410d616f312ff26e894012768ac54eaadf91fec
+    bytes: 37526
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

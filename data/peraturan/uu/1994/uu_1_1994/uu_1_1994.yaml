@@ -12,8 +12,8 @@ tanggal_penetapan: '1994-03-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1994
-source_pdf_url: https://peraturan.go.id/files/UU0011994.pdf
+source_url: https://peraturan.bpk.go.id/Details/46212/uu-no-1-tahun-1994
+source_pdf_url: https://peraturan.bpk.go.id/Download/34775/UU%20Nomor%201%20Tahun%201994.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1994_1994-03-22.txt
   pasal_count: 14
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 291b1cc6328e4bb21407ba9d4d9c3f9e7339dd9cc3a4f5505b4090b56a047c67
 pdf_sha256: 291b1cc6328e4bb21407ba9d4d9c3f9e7339dd9cc3a4f5505b4090b56a047c67
+tanggal_pengundangan: '1994-03-22'
+tanggal_berlaku: '1994-04-01'
+lembaran_negara: 'LN. 1994/ No. 18, TLN NO. 3543, LL SETNEG : 16 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1994
+  source_pdf_url: https://peraturan.go.id/files/UU0011994.pdf
+bpk:
+  id: 46212
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34775/UU%20Nomor%201%20Tahun%201994.pdf
+    bpk_file_id: 34775
+    filename: UU Nomor 1 Tahun 1994.pdf
+    sha256: 291b1cc6328e4bb21407ba9d4d9c3f9e7339dd9cc3a4f5505b4090b56a047c67
+    bytes: 85388
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_4_1995
+      citation: UU No. 4 Tahun 1995
+      tentang: Tambahan dan Perubahan atas Anggaran Pendapatan dan Belanja Negara
+        Tahun Anggaran 1994/95
+      url: https://peraturan.bpk.go.id/Details/46176/uu-no-4-tahun-1995
+      note: null
+uji_materi: null

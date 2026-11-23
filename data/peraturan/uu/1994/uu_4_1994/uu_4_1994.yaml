@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 4 Tahun 1994 tentang Pembentukan Kotamadya Daerah Tin
 tentang: PEMBENTUKAN KOTAMADYA DAERAH TINGKAT II PALU
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1994-07-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-4-tahun-1994
-source_pdf_url: https://peraturan.go.id/files/UU0041994.pdf
+source_url: https://peraturan.bpk.go.id/Details/46218/uu-no-4-tahun-1994
+source_pdf_url: https://peraturan.bpk.go.id/Download/34782/UU%20Nomor%204%20Tahun%201994.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,38 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_4_1994_1994
+- id: uu_4_1994_1994-07-22
   kind: asli
   source: official
-  date: null
+  date: '1994-07-22'
   date_basis: tanggal_penetapan
-  text: uu_4_1994_1994.txt
+  text: uu_4_1994_1994-07-22.txt
   pasal_count: 18
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1f560edf9cd25d6845f21733fd80510d059f508e1dc2766667228a2089aa7f74
 pdf_sha256: 1f560edf9cd25d6845f21733fd80510d059f508e1dc2766667228a2089aa7f74
+tanggal_pengundangan: '1994-07-22'
+tanggal_berlaku: '1994-07-22'
+lembaran_negara: 'LN. 1994/ No. 38, TLN NO.3555, LL SETNEG : 13 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-4-tahun-1994
+  source_pdf_url: https://peraturan.go.id/files/UU0041994.pdf
+bpk:
+  id: 46218
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34782/UU%20Nomor%204%20Tahun%201994.pdf
+    bpk_file_id: 34782
+    filename: UU Nomor 4 Tahun 1994.pdf
+    sha256: 1f560edf9cd25d6845f21733fd80510d059f508e1dc2766667228a2089aa7f74
+    bytes: 59884
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: pp_18_1978
+      citation: PP No. 18 Tahun 1978
+      tentang: Pembentukan Kota Administratif Palu
+      url: https://peraturan.bpk.go.id/Details/66934/pp-no-18-tahun-1978
+      note: null
+uji_materi: null

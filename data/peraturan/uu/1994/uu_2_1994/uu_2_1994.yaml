@@ -9,12 +9,12 @@ tentang: TAMBAHAN DAN PERUBAHAN ATAS ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHU
   ANGGARAN 1993/94
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1994-04-20'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1994
-source_pdf_url: https://peraturan.go.id/files/UU0021994.pdf
+source_url: https://peraturan.bpk.go.id/Details/46215/uu-no-2-tahun-1994
+source_pdf_url: https://peraturan.bpk.go.id/Download/34778/UU%20Nomor%202%20Tahun%201994.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,44 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_2_1994_1994
+- id: uu_2_1994_1994-04-20
   kind: asli
   source: official
-  date: null
+  date: '1994-04-20'
   date_basis: tanggal_penetapan
-  text: uu_2_1994_1994.txt
+  text: uu_2_1994_1994-04-20.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ffb11e60029c4948eb04ef5a752d472001ad8831cf8058c6ed5bdbbaf7ae25e7
 pdf_sha256: ffb11e60029c4948eb04ef5a752d472001ad8831cf8058c6ed5bdbbaf7ae25e7
+tanggal_pengundangan: '1994-04-20'
+tanggal_berlaku: '1993-04-01'
+lembaran_negara: 'LN. 1994/ No. 23, TLN NO. 3548, LL SETNEG : 5 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1994
+  source_pdf_url: https://peraturan.go.id/files/UU0021994.pdf
+bpk:
+  id: 46215
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34778/UU%20Nomor%202%20Tahun%201994.pdf
+    bpk_file_id: 34778
+    filename: UU Nomor 2 Tahun 1994.pdf
+    sha256: ffb11e60029c4948eb04ef5a752d472001ad8831cf8058c6ed5bdbbaf7ae25e7
+    bytes: 36810
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/34779/UU%20Nomor%202%20Tahun%201994(LAMPIRAN).pdf
+    bpk_file_id: 34779
+    filename: UU Nomor 2 Tahun 1994(LAMPIRAN).pdf
+    sha256: 0efee2e6c3a3c81842cfcdde5cd7da6b0e11368c80fa975f038544fb034485a8
+    bytes: 54175
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_3_1993
+      citation: UU No. 3 Tahun 1993
+      tentang: Anggaran Pendapatan Dan Belanja Negara Tahun Anggaran 1993/1994
+      url: https://peraturan.bpk.go.id/Details/46495/uu-no-3-tahun-1993
+      note: null
+uji_materi: null

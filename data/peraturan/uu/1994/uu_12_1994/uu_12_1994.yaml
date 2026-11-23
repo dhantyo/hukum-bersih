@@ -12,8 +12,8 @@ tanggal_penetapan: '1994-11-09'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-12-tahun-1994
-source_pdf_url: https://peraturan.go.id/files/UU+Nomor+12+Tahun+1994.pdf
+source_url: https://peraturan.bpk.go.id/Details/46237/uu-no-12-tahun-1994
+source_pdf_url: https://peraturan.bpk.go.id/Download/34835/UU%20Nomor%2012%20Tahun%201994.pdf
 relationships:
   amends:
   - id: uu_12_1985
@@ -37,4 +37,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_1994_1994-11-09.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: dcd549a51a7c88569540a7692e5cd9cc3feaeecbbf0107ba9aa0efecc13da39c
 pdf_sha256: 05a81cc6b7e8c1b932c7b4eeac4efc01bfa4be0864306f0ec34f34a62c2f015b
+tanggal_pengundangan: '1994-11-09'
+tanggal_berlaku: '1995-01-01'
+lembaran_negara: 'LN. 1994/ No. 62, TLN NO. 3569, LL SETNEG : 4 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-12-tahun-1994
+  source_pdf_url: https://peraturan.go.id/files/UU+Nomor+12+Tahun+1994.pdf
+bpk:
+  id: 46237
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34835/UU%20Nomor%2012%20Tahun%201994.pdf
+    bpk_file_id: 34835
+    filename: UU Nomor 12 Tahun 1994.pdf
+    sha256: dcd549a51a7c88569540a7692e5cd9cc3feaeecbbf0107ba9aa0efecc13da39c
+    bytes: 21291
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_12_1985
+      citation: UU No. 12 Tahun 1985
+      tentang: Pajak Bumi Dan Bangunan
+      url: https://peraturan.bpk.go.id/Details/46963/uu-no-12-tahun-1985
+      note: null
+uji_materi: null

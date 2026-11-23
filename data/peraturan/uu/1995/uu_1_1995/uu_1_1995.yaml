@@ -6,20 +6,18 @@ year: 1995
 title: Undang-Undang Nomor 1 Tahun 1995 tentang Perseroan Terbatas
 tentang: PERSEROAN TERBATAS
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 40 Tahun 2007 Tentang Perseroan
-  Terbatas'
+status: tidak_berlaku
 tanggal_penetapan: '1995-03-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1995
-source_pdf_url: https://peraturan.go.id/files/uu1-1995.pdf
+source_url: https://peraturan.bpk.go.id/Details/46102/uu-no-1-tahun-1995
+source_pdf_url: https://peraturan.bpk.go.id/Download/34657/UU%20Nomor%201%20Tahun%201995.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_40_2007
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,4 +28,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1995_1995-03-07.txt
   pasal_count: 129
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5c1bba21fc8d4b3762e0e764a798d9035a0663d93c411cff4a80265dbd07ac0b
 pdf_sha256: 5c1bba21fc8d4b3762e0e764a798d9035a0663d93c411cff4a80265dbd07ac0b
+tanggal_pengundangan: '1995-03-07'
+tanggal_berlaku: '1996-03-07'
+lembaran_negara: 'LN. 1995/ No. 13, TLN NO. 3587, LL SETNEG : 65 HLM'
+subjek: PASAR MODAL DAN PERDAGANGAN BERJANGKA KOMODITI - PERLINDUNGAN USAHA, PERUSAHAAN,
+  BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1995
+  source_pdf_url: https://peraturan.go.id/files/uu1-1995.pdf
+bpk:
+  id: 46102
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34657/UU%20Nomor%201%20Tahun%201995.pdf
+    bpk_file_id: 34657
+    filename: UU Nomor 1 Tahun 1995.pdf
+    sha256: 5c1bba21fc8d4b3762e0e764a798d9035a0663d93c411cff4a80265dbd07ac0b
+    bytes: 199106
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_40_2007
+      citation: UU No. 40 Tahun 2007
+      tentang: Perseroan Terbatas
+      url: https://peraturan.bpk.go.id/Details/39965/uu-no-40-tahun-2007
+      note: null
+uji_materi: null

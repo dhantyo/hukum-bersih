@@ -12,8 +12,8 @@ tanggal_penetapan: '1996-03-22'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1996
-source_pdf_url: https://peraturan.go.id/files/UU2-1996.pdf
+source_url: https://peraturan.bpk.go.id/Details/46066/uu-no-2-tahun-1996
+source_pdf_url: https://peraturan.bpk.go.id/Download/34621/UU%20Nomor%202%20Tahun%201996.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,32 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1996_1996-03-22.txt
   pasal_count: 14
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6b47ea1dc58f25b7fa0a9dee36f3b79c987ce860f0501c137983ef24419bea54
 pdf_sha256: f57ea8c498db965c090f9b7013c93d5409f0fcc764d78676707e2dc22f122953
+tanggal_pengundangan: '1996-03-22'
+tanggal_berlaku: '1996-04-01'
+lembaran_negara: 'LN. 1996, LL SETNEG : 10 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1996
+  source_pdf_url: https://peraturan.go.id/files/UU2-1996.pdf
+bpk:
+  id: 46066
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34621/UU%20Nomor%202%20Tahun%201996.pdf
+    bpk_file_id: 34621
+    filename: UU Nomor 2 Tahun 1996.pdf
+    sha256: 6b47ea1dc58f25b7fa0a9dee36f3b79c987ce860f0501c137983ef24419bea54
+    bytes: 82918
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_11_1997
+      citation: UU No. 11 Tahun 1997
+      tentang: Perubahan atas Anggaran Pendapatan dan Belanja Negara Tahun Anggaran
+        1996/1997
+      url: https://peraturan.bpk.go.id/Details/45935/uu-no-11-tahun-1997
+      note: null
+uji_materi: null

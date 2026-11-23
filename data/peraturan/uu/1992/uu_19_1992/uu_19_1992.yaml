@@ -6,27 +6,65 @@ year: 1992
 title: Undang-Undang Nomor 19 Tahun 1992 tentang Merek
 tentang: MEREK
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 15 Tahun 2001 Tentang Merek'
-tanggal_penetapan: null
+status: tidak_berlaku
+tanggal_penetapan: '1992-08-28'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-19-tahun-1992
-source_pdf_url: https://peraturan.go.id/files/UU+NO+19+TH+1992.pdf
+source_url: https://peraturan.bpk.go.id/Details/46616/uu-no-19-tahun-1992
+source_pdf_url: https://peraturan.bpk.go.id/Download/35345/UU%20Nomor%2019%20Tahun%201992.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_15_2001
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
-- id: uu_19_1992_1992
+- id: uu_19_1992_1992-08-28
   kind: asli
   source: official
-  date: null
+  date: '1992-08-28'
   date_basis: tanggal_penetapan
-  text: uu_19_1992_1992.txt
+  text: uu_19_1992_1992-08-28.txt
   pasal_count: 71
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4b1d98a3491900ba7338be85e9f3c681ba5dda275f8b9f2e28ac66cb29469882
 pdf_sha256: 4b1d98a3491900ba7338be85e9f3c681ba5dda275f8b9f2e28ac66cb29469882
+tanggal_pengundangan: '1992-08-28'
+tanggal_berlaku: '1993-04-01'
+lembaran_negara: 'LN. 1992, LL SETNEG : 42 HLM'
+subjek: HAK ATAS KEKAYAAN INTELEKTUAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-19-tahun-1992
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+19+TH+1992.pdf
+bpk:
+  id: 46616
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35345/UU%20Nomor%2019%20Tahun%201992.pdf
+    bpk_file_id: 35345
+    filename: UU Nomor 19 Tahun 1992.pdf
+    sha256: 4b1d98a3491900ba7338be85e9f3c681ba5dda275f8b9f2e28ac66cb29469882
+    bytes: 185890
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_15_2001
+      citation: UU No. 15 Tahun 2001
+      tentang: Merek
+      url: https://peraturan.bpk.go.id/Details/37599/uu-no-15-tahun-2001
+      note: null
+    Diubah dengan:
+    - id: uu_14_1997
+      citation: UU No. 14 Tahun 1997
+      tentang: Perubahan atas Undang-Undang Nomor 19 Tahun 1992 tentang Merek
+      url: https://peraturan.bpk.go.id/Details/45939/uu-no-14-tahun-1997
+      note: null
+    Mencabut:
+    - id: uu_21_1961
+      citation: UU No. 21 Tahun 1961
+      tentang: Merek Perusahaan dan Merek Perniagaan
+      url: https://peraturan.bpk.go.id/Details/51253/uu-no-21-tahun-1961
+      note: null
+uji_materi: null

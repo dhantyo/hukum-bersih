@@ -12,8 +12,8 @@ tanggal_penetapan: '1996-12-16'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1996
-source_pdf_url: https://peraturan.go.id/files/uu9-1996.pdf
+source_url: https://peraturan.bpk.go.id/Details/46099/uu-no-9-tahun-1996
+source_pdf_url: https://peraturan.bpk.go.id/Download/34654/UU%20Nomor%209%20Tahun%201996.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_1996_1996-12-16.txt
   pasal_count: 18
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 4f7fd4b8b3f505f42f8b762897405c1c8b82b1c0c75fa5983d86cb3b45e07bdf
 pdf_sha256: 4f7fd4b8b3f505f42f8b762897405c1c8b82b1c0c75fa5983d86cb3b45e07bdf
+tanggal_pengundangan: '1996-12-16'
+tanggal_berlaku: '1996-12-16'
+lembaran_negara: 'LN. 1996, LL SETNEG : 12 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1996
+  source_pdf_url: https://peraturan.go.id/files/uu9-1996.pdf
+bpk:
+  id: 46099
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34654/UU%20Nomor%209%20Tahun%201996.pdf
+    bpk_file_id: 34654
+    filename: UU Nomor 9 Tahun 1996.pdf
+    sha256: 4f7fd4b8b3f505f42f8b762897405c1c8b82b1c0c75fa5983d86cb3b45e07bdf
+    bytes: 56670
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

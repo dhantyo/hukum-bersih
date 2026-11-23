@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 1 Tahun 1993 tentang Pembentukan Pengadilan Tinggi Ta
 tentang: PEMBENTUKAN PENGADILAN TINGGI TATA USAHA NEGARA SURABAYA
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1993-02-11'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-1-tahun-1993
-source_pdf_url: https://peraturan.go.id/files/UU0011993.pdf
+source_url: https://peraturan.bpk.go.id/Details/46493/uu-no-1-tahun-1993
+source_pdf_url: https://peraturan.bpk.go.id/Download/35185/UU%20Nomor%201%20Tahun%201993.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_1_1993_1993
+- id: uu_1_1993_1993-02-11
   kind: asli
   source: official
-  date: null
+  date: '1993-02-11'
   date_basis: tanggal_penetapan
-  text: uu_1_1993_1993.txt
+  text: uu_1_1993_1993-02-11.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 74ee9d40aacb751da3028c3db67e00bc9b772f21b2edf543a1c5bf9ce4051eae
 pdf_sha256: 74ee9d40aacb751da3028c3db67e00bc9b772f21b2edf543a1c5bf9ce4051eae
+tanggal_pengundangan: '1993-02-11'
+tanggal_berlaku: '1993-02-11'
+lembaran_negara: 'LN. 1993/ No. 10, TLN NO. 3513, LL SETNEG : 5 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-1-tahun-1993
+  source_pdf_url: https://peraturan.go.id/files/UU0011993.pdf
+bpk:
+  id: 46493
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35185/UU%20Nomor%201%20Tahun%201993.pdf
+    bpk_file_id: 35185
+    filename: UU Nomor 1 Tahun 1993.pdf
+    sha256: 74ee9d40aacb751da3028c3db67e00bc9b772f21b2edf543a1c5bf9ce4051eae
+    bytes: 35879
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

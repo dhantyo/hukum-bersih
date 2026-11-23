@@ -14,8 +14,8 @@ tanggal_penetapan: '1994-08-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1994
-source_pdf_url: https://peraturan.go.id/files/UU0051994.pdf
+source_url: https://peraturan.bpk.go.id/Details/46221/uu-no-5-tahun-1994
+source_pdf_url: https://peraturan.bpk.go.id/Download/34793/UU%20Nomor%205%20Tahun%201994.pdf
 relationships:
   amends: []
   amended_by: []
@@ -31,4 +31,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1994_1994-08-01.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c30f35ac9ca59934736897f00e93d0fb24604dd6d479fc8caa7a2315d2a4b29a
 pdf_sha256: c30f35ac9ca59934736897f00e93d0fb24604dd6d479fc8caa7a2315d2a4b29a
+tanggal_pengundangan: '1994-08-01'
+tanggal_berlaku: '1994-08-01'
+lembaran_negara: 'LN. 1994/ No. 41, TLN NO. 3556, LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1994
+  source_pdf_url: https://peraturan.go.id/files/UU0051994.pdf
+bpk:
+  id: 46221
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34793/UU%20Nomor%205%20Tahun%201994.pdf
+    bpk_file_id: 34793
+    filename: UU Nomor 5 Tahun 1994.pdf
+    sha256: c30f35ac9ca59934736897f00e93d0fb24604dd6d479fc8caa7a2315d2a4b29a
+    bytes: 53648
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

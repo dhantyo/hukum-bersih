@@ -13,8 +13,8 @@ tanggal_penetapan: '1997-01-03'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-2-tahun-1997
-source_pdf_url: https://peraturan.go.id/files/uu2-1997.pdf
+source_url: https://peraturan.bpk.go.id/Details/45922/uu-no-2-tahun-1997
+source_pdf_url: https://peraturan.bpk.go.id/Download/34475/UU%20Nomor%202%20Tahun%201997.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1997_1997-01-03.txt
   pasal_count: 20
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b7473fb695387bba1449f6480fc2d0b10d7ef6eb31fac1dfe0f572c5f673f80e
 pdf_sha256: b7473fb695387bba1449f6480fc2d0b10d7ef6eb31fac1dfe0f572c5f673f80e
+tanggal_pengundangan: '1997-01-03'
+tanggal_berlaku: '1997-01-03'
+lembaran_negara: 'LN. 1997/ No. 2, TLN NO. 3667, LL SETNEG : 13 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-2-tahun-1997
+  source_pdf_url: https://peraturan.go.id/files/uu2-1997.pdf
+bpk:
+  id: 45922
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34475/UU%20Nomor%202%20Tahun%201997.pdf
+    bpk_file_id: 34475
+    filename: UU Nomor 2 Tahun 1997.pdf
+    sha256: b7473fb695387bba1449f6480fc2d0b10d7ef6eb31fac1dfe0f572c5f673f80e
+    bytes: 86784
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

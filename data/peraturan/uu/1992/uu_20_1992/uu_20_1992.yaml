@@ -9,12 +9,12 @@ tentang: PEMBENTUKAN PENGADILAN TINGGI AGAMA DI YOGYAKARTA, DI BANDAR LAMPUNG DA
   DI JAMBI
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1992-08-31'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-20-tahun-1992
-source_pdf_url: https://peraturan.go.id/files/UU+NO+20+TH+1992.pdf
+source_url: https://peraturan.bpk.go.id/Details/46617/uu-no-20-tahun-1992
+source_pdf_url: https://peraturan.bpk.go.id/Download/35347/UU%20Nomor%2020%20Tahun%201992.pdf
 relationships:
   amends: []
   amended_by: []
@@ -23,11 +23,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_20_1992_1992
+- id: uu_20_1992_1992-08-31
   kind: asli
   source: official
-  date: null
+  date: '1992-08-31'
   date_basis: tanggal_penetapan
-  text: uu_20_1992_1992.txt
+  text: uu_20_1992_1992-08-31.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1b3b6baaa775ae22ff5c0785942c0eede951d51e0bece697e7a05367ab1be71b
 pdf_sha256: 1b3b6baaa775ae22ff5c0785942c0eede951d51e0bece697e7a05367ab1be71b
+tanggal_pengundangan: '1992-08-31'
+tanggal_berlaku: '1992-08-31'
+lembaran_negara: 'LN. 1992, LL SETNEG : 4 HLM'
+subjek: HUKUM ACARA DAN PERADILAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-20-tahun-1992
+  source_pdf_url: https://peraturan.go.id/files/UU+NO+20+TH+1992.pdf
+bpk:
+  id: 46617
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35347/UU%20Nomor%2020%20Tahun%201992.pdf
+    bpk_file_id: 35347
+    filename: UU Nomor 20 Tahun 1992.pdf
+    sha256: 1b3b6baaa775ae22ff5c0785942c0eede951d51e0bece697e7a05367ab1be71b
+    bytes: 36652
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

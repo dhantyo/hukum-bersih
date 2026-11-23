@@ -12,8 +12,8 @@ tanggal_penetapan: '1994-11-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1994
-source_pdf_url: https://peraturan.go.id/files/UU0081994.pdf
+source_url: https://peraturan.bpk.go.id/Details/46228/uu-no-8-tahun-1994
+source_pdf_url: https://peraturan.bpk.go.id/Download/34816/UU%20Nomor%208%20Tahun%201994.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1994_1994-11-02.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6877de03cf5a0e8011b7c5848baf9a9ccda288925039f814d906402c409680ce
 pdf_sha256: 6877de03cf5a0e8011b7c5848baf9a9ccda288925039f814d906402c409680ce
+tanggal_pengundangan: '1994-11-02'
+tanggal_berlaku: '1994-11-02'
+lembaran_negara: 'LN. 1994/ No.58, TLN NO. 3565, LL SETNEG : 3 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1994
+  source_pdf_url: https://peraturan.go.id/files/UU0081994.pdf
+bpk:
+  id: 46228
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34816/UU%20Nomor%208%20Tahun%201994.pdf
+    bpk_file_id: 34816
+    filename: UU Nomor 8 Tahun 1994.pdf
+    sha256: 6877de03cf5a0e8011b7c5848baf9a9ccda288925039f814d906402c409680ce
+    bytes: 73569
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

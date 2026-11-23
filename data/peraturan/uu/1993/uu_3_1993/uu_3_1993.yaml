@@ -8,12 +8,12 @@ title: Undang-Undang Nomor 3 Tahun 1993 tentang Anggaran Pendapatan Dan Belanja 
 tentang: ANGGARAN PENDAPATAN DAN BELANJA NEGARA TAHUN ANGGARAN 1993/1994
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1993-03-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1993
-source_pdf_url: https://peraturan.go.id/files/UU0031993.pdf
+source_url: https://peraturan.bpk.go.id/Details/46495/uu-no-3-tahun-1993
+source_pdf_url: https://peraturan.bpk.go.id/Download/35187/UU%20Nomor%203%20Tahun%201993.pdf
 relationships:
   amends: []
   amended_by: []
@@ -22,11 +22,39 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_3_1993_1993
+- id: uu_3_1993_1993-03-10
   kind: asli
   source: official
-  date: null
+  date: '1993-03-10'
   date_basis: tanggal_penetapan
-  text: uu_3_1993_1993.txt
+  text: uu_3_1993_1993-03-10.txt
   pasal_count: 8
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: fde588d424c2d8fef9ea05090d838d3525b245e7e34eb8b085074bcd98c35b2e
 pdf_sha256: fde588d424c2d8fef9ea05090d838d3525b245e7e34eb8b085074bcd98c35b2e
+tanggal_pengundangan: '1993-03-10'
+tanggal_berlaku: '1993-04-01'
+lembaran_negara: 'LN. 1993/ No. 29, TLN NO. 3521, LL SETNEG : 6 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1993
+  source_pdf_url: https://peraturan.go.id/files/UU0031993.pdf
+bpk:
+  id: 46495
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35187/UU%20Nomor%203%20Tahun%201993.pdf
+    bpk_file_id: 35187
+    filename: UU Nomor 3 Tahun 1993.pdf
+    sha256: fde588d424c2d8fef9ea05090d838d3525b245e7e34eb8b085074bcd98c35b2e
+    bytes: 45781
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_2_1994
+      citation: UU No. 2 Tahun 1994
+      tentang: Tambahan dan Perubahan atas Anggaran Pendapatan dan Belanja Negara
+        Tahun Anggaran 1993/94
+      url: https://peraturan.bpk.go.id/Details/46215/uu-no-2-tahun-1994
+      note: null
+uji_materi: null

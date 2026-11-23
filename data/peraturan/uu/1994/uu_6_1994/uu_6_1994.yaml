@@ -10,12 +10,12 @@ tentang: PENGESAHAN UNITED NATIONS FRAMEWORK CONVENTION ON CLIMATE CHANGE (KONVE
   KERANGKA KERJA PERSERIKATAN BANGSA-BANGSA MENGENAI PERUBAHAN IKLIM)
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1994-08-01'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1994
-source_pdf_url: https://peraturan.go.id/files/UU0061994.pdf
+source_url: https://peraturan.bpk.go.id/Details/46223/uu-no-6-tahun-1994
+source_pdf_url: https://peraturan.bpk.go.id/Download/34803/UU%20Nomor%206%20Tahun%201994.pdf
 relationships:
   amends: []
   amended_by: []
@@ -24,11 +24,32 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_6_1994_1994
+- id: uu_6_1994_1994-08-01
   kind: asli
   source: official
-  date: null
+  date: '1994-08-01'
   date_basis: tanggal_penetapan
-  text: uu_6_1994_1994.txt
+  text: uu_6_1994_1994-08-01.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 909ce864d5ea1425897d704bf6663cb91e0d81290847c974ce48042eca286d95
 pdf_sha256: 909ce864d5ea1425897d704bf6663cb91e0d81290847c974ce48042eca286d95
+tanggal_pengundangan: '1994-08-01'
+tanggal_berlaku: '1994-08-01'
+lembaran_negara: 'LN. 1994/ No. 42, TLN NO. 3557, LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1994
+  source_pdf_url: https://peraturan.go.id/files/UU0061994.pdf
+bpk:
+  id: 46223
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34803/UU%20Nomor%206%20Tahun%201994.pdf
+    bpk_file_id: 34803
+    filename: UU Nomor 6 Tahun 1994.pdf
+    sha256: 909ce864d5ea1425897d704bf6663cb91e0d81290847c974ce48042eca286d95
+    bytes: 49024
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

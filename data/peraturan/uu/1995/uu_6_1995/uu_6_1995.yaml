@@ -12,8 +12,8 @@ tanggal_penetapan: '1995-08-03'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1995
-source_pdf_url: https://peraturan.go.id/files/uu6-1995.pdf
+source_url: https://peraturan.bpk.go.id/Details/46184/uu-no-6-tahun-1995
+source_pdf_url: https://peraturan.bpk.go.id/Download/34744/UU%20Nomor%206%20Tahun%201995.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1995_1995-08-03.txt
   pasal_count: 18
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7a533311ff5a2e88f8ae9f26230da85bac3c953f7595b946c93f2fa7e8170b96
 pdf_sha256: 7a533311ff5a2e88f8ae9f26230da85bac3c953f7595b946c93f2fa7e8170b96
+tanggal_pengundangan: '1995-08-03'
+tanggal_berlaku: '1995-08-03'
+lembaran_negara: 'LN. 1995/ No. 44, TLN NO. 3602, LL SETNEG : 12 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1995
+  source_pdf_url: https://peraturan.go.id/files/uu6-1995.pdf
+bpk:
+  id: 46184
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34744/UU%20Nomor%206%20Tahun%201995.pdf
+    bpk_file_id: 34744
+    filename: UU Nomor 6 Tahun 1995.pdf
+    sha256: 7a533311ff5a2e88f8ae9f26230da85bac3c953f7595b946c93f2fa7e8170b96
+    bytes: 56137
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: pp_19_1978
+      citation: PP No. 19 Tahun 1978
+      tentang: Pembentukan Kota Administratif Kendari
+      url: https://peraturan.bpk.go.id/Details/66936/pp-no-19-tahun-1978
+      note: null
+uji_materi: null

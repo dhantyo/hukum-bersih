@@ -6,20 +6,18 @@ year: 1995
 title: Undang-Undang Nomor 9 Tahun 1995 tentang Usaha Kecil
 tentang: USAHA KECIL
 short_name: null
-status: 'Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 20 Tahun 2008 Tentang Usaha
-  Mikro, Kecil, dan Menengah'
+status: tidak_berlaku
 tanggal_penetapan: '1995-12-26'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1995
-source_pdf_url: https://peraturan.go.id/files/uu9-1995.pdf
+source_url: https://peraturan.bpk.go.id/Details/46199/uu-no-9-tahun-1995
+source_pdf_url: https://peraturan.bpk.go.id/Download/34760/UU%20Nomor%209%20Tahun%201995.pdf
 relationships:
   amends: []
   amended_by: []
   revokes: []
-  revoked_by:
-  - uu_20_2008
+  revoked_by: []
   enacts: []
   enacted_by: []
 versions:
@@ -30,4 +28,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_1995_1995-12-26.txt
   pasal_count: 38
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 782842480ce68c1713d26d1b8b2ab7c089bfa4f6afb9fa3c2f6e0adbfc47e1d4
 pdf_sha256: 782842480ce68c1713d26d1b8b2ab7c089bfa4f6afb9fa3c2f6e0adbfc47e1d4
+tanggal_pengundangan: '1995-12-26'
+tanggal_berlaku: '1995-12-26'
+lembaran_negara: 'LN. 1995/ No. 74, TLN NO. 3611, LL SETNEG : 19 HLM'
+subjek: PERLINDUNGAN USAHA, PERUSAHAAN, BADAN USAHA, PERDAGANGAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1995
+  source_pdf_url: https://peraturan.go.id/files/uu9-1995.pdf
+bpk:
+  id: 46199
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34760/UU%20Nomor%209%20Tahun%201995.pdf
+    bpk_file_id: 34760
+    filename: UU Nomor 9 Tahun 1995.pdf
+    sha256: 782842480ce68c1713d26d1b8b2ab7c089bfa4f6afb9fa3c2f6e0adbfc47e1d4
+    bytes: 85492
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_20_2008
+      citation: UU No. 20 Tahun 2008
+      tentang: Usaha Mikro, Kecil, dan Menengah
+      url: https://peraturan.bpk.go.id/Details/39653/uu-no-20-tahun-2008
+      note: null
+uji_materi: null

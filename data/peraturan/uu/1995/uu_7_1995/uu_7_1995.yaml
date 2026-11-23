@@ -12,8 +12,8 @@ tanggal_penetapan: '1995-08-24'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1995
-source_pdf_url: https://peraturan.go.id/files/uu7-1995.pdf
+source_url: https://peraturan.bpk.go.id/Details/46187/uu-no-7-tahun-1995
+source_pdf_url: https://peraturan.bpk.go.id/Download/34747/UU%20Nomor%207%20Tahun%201995.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1995_1995-08-24.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9f328ddf4ab1b0fd40b34c7dfaab2fb0511b0542273ee56034ebf8622ea6c167
 pdf_sha256: 9f328ddf4ab1b0fd40b34c7dfaab2fb0511b0542273ee56034ebf8622ea6c167
+tanggal_pengundangan: '1995-08-24'
+tanggal_berlaku: '1995-08-24'
+lembaran_negara: 'LN. 1995/ No. 53, TLN NO. 3605, LL SETNEG : 4HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1995
+  source_pdf_url: https://peraturan.go.id/files/uu7-1995.pdf
+bpk:
+  id: 46187
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34747/UU%20Nomor%207%20Tahun%201995.pdf
+    bpk_file_id: 34747
+    filename: UU Nomor 7 Tahun 1995.pdf
+    sha256: 9f328ddf4ab1b0fd40b34c7dfaab2fb0511b0542273ee56034ebf8622ea6c167
+    bytes: 32923
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -11,8 +11,8 @@ tanggal_penetapan: '1995-11-10'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1995
-source_pdf_url: https://peraturan.go.id/files/uu8-1995.pdf
+source_url: https://peraturan.bpk.go.id/Details/46197/uu-no-8-tahun-1995
+source_pdf_url: https://peraturan.bpk.go.id/Download/34758/UU%20Nomor%208%20Tahun%201995.pdf
 relationships:
   amends: []
   amended_by: []
@@ -28,4 +28,38 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1995_1995-11-10.txt
   pasal_count: 116
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c351fd912aa91aa7810bee573eaec3637f2251609f9fdc7dc8dbb6614a67fe22
 pdf_sha256: c351fd912aa91aa7810bee573eaec3637f2251609f9fdc7dc8dbb6614a67fe22
+tanggal_pengundangan: '1995-11-10'
+tanggal_berlaku: '1996-01-01'
+lembaran_negara: 'LN. 1995/ No. 64, TLN NO. 3608, LL SETNEG : 62 HLM'
+subjek: PASAR MODAL DAN PERDAGANGAN BERJANGKA KOMODITI
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1995
+  source_pdf_url: https://peraturan.go.id/files/uu8-1995.pdf
+bpk:
+  id: 46197
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34758/UU%20Nomor%208%20Tahun%201995.pdf
+    bpk_file_id: 34758
+    filename: UU Nomor 8 Tahun 1995.pdf
+    sha256: c351fd912aa91aa7810bee573eaec3637f2251609f9fdc7dc8dbb6614a67fe22
+    bytes: 298646
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_4_2023
+      citation: UU No. 4 Tahun 2023
+      tentang: Pengembangan dan Penguatan Sektor Keuangan
+      url: https://peraturan.bpk.go.id/Details/240203/uu-no-4-tahun-2023
+      note: null
+    Mencabut:
+    - id: uu_15_1952
+      citation: UU No. 15 Tahun 1952
+      tentang: Penetapan Undang-Undang Darurat tentang "Bursa" (Lembaran Negara Nr
+        79 Tahun 1951) Sebagai Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/40254/uu-no-15-tahun-1952
+      note: null
+uji_materi: null

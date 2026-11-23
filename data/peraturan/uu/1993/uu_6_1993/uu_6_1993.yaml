@@ -12,8 +12,8 @@ tanggal_penetapan: '1992-08-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-6-tahun-1993
-source_pdf_url: https://peraturan.go.id/files/UU0061993.pdf
+source_url: https://peraturan.bpk.go.id/Details/46584/uu-no-6-tahun-1993
+source_pdf_url: https://peraturan.bpk.go.id/Download/35302/UU%20Nomor%206%20Tahun%201993.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1993_1992-08-02.txt
   pasal_count: 18
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 23c507e5b9805bbe9221f927d2be6248eca4cfa3e093ea687167fd447b2c0de4
 pdf_sha256: 23c507e5b9805bbe9221f927d2be6248eca4cfa3e093ea687167fd447b2c0de4
+tanggal_pengundangan: '1993-08-02'
+tanggal_berlaku: '1993-08-02'
+lembaran_negara: 'LN. 1993/ No. 68, TLN NO. 3533, LL SETNEG : 11 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-6-tahun-1993
+  source_pdf_url: https://peraturan.go.id/files/UU0061993.pdf
+bpk:
+  id: 46584
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35302/UU%20Nomor%206%20Tahun%201993.pdf
+    bpk_file_id: 35302
+    filename: UU Nomor 6 Tahun 1993.pdf
+    sha256: 23c507e5b9805bbe9221f927d2be6248eca4cfa3e093ea687167fd447b2c0de4
+    bytes: 54705
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: pp_26_1979
+      citation: PP No. 26 Tahun 1979
+      tentang: Pembentukan Kota Adminstratif Jayapura
+      url: https://peraturan.bpk.go.id/Details/66821/pp-no-26-tahun-1979
+      note: null
+uji_materi: null

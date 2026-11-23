@@ -9,12 +9,12 @@ tentang: PERUBAHAN ATAS UNDANGUNDANG NOMOR 6 TAHUN 1983 TENTANG KETENTUAN UMUM D
   TATA CARA PERPAJAKAN
 short_name: null
 status: berlaku
-tanggal_penetapan: null
+tanggal_penetapan: '1994-11-09'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-9-tahun-1994
-source_pdf_url: https://peraturan.go.id/files/uu9-1994.pdf
+source_url: https://peraturan.bpk.go.id/Details/46230/uu-no-9-tahun-1994
+source_pdf_url: https://peraturan.bpk.go.id/Download/34818/UU%20Nomor%209%20tahun%201994.pdf
 relationships:
   amends:
   - id: uu_6_1983
@@ -60,11 +60,58 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_9_1994_1994
+- id: uu_9_1994_1994-11-09
   kind: asli
   source: official
-  date: null
+  date: '1994-11-09'
   date_basis: tanggal_penetapan
-  text: uu_9_1994_1994.txt
+  text: uu_9_1994_1994-11-09.txt
   pasal_count: 4
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: b686436cedfb60991ec33bb1f6206e4939b85c629bcab220d4553fd0e3b8deae
 pdf_sha256: b686436cedfb60991ec33bb1f6206e4939b85c629bcab220d4553fd0e3b8deae
+tanggal_pengundangan: '1994-11-09'
+tanggal_berlaku: '1995-01-01'
+lembaran_negara: 'LN. 1994/ No. 59, TLN NO. 3566, LL SETNEG : 31 HLM'
+subjek: PERPAJAKAN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-9-tahun-1994
+  source_pdf_url: https://peraturan.go.id/files/uu9-1994.pdf
+bpk:
+  id: 46230
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34818/UU%20Nomor%209%20tahun%201994.pdf
+    bpk_file_id: 34818
+    filename: UU Nomor 9 tahun 1994.pdf
+    sha256: b686436cedfb60991ec33bb1f6206e4939b85c629bcab220d4553fd0e3b8deae
+    bytes: 194925
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: uu_16_2009
+      citation: UU No. 16 Tahun 2009
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 5 Tahun
+        2008 Tentang Perubahan Keempat Atas Undang-Undang Nomor 6 Tahun 1983 Tentang
+        Ketentuan Umum dan Tata Cara Perpajakan Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/38624/uu-no-16-tahun-2009
+      note: null
+    - id: uu_28_2007
+      citation: UU No. 28 Tahun 2007
+      tentang: Perubahan Ketiga atas Undang-Undang Nomor 6 Tahun 1983 tentang Ketentuan
+        Umum dan Tata Cara Perpajakan
+      url: https://peraturan.bpk.go.id/Details/39916/uu-no-28-tahun-2007
+      note: null
+    - id: uu_16_2000
+      citation: UU No. 16 Tahun 2000
+      tentang: Perubahan Kedua atas Undang-Undang Nomor 6 Tahun 1983 tentang Ketentuan
+        Umum dan Tata Cara Perpajakan
+      url: https://peraturan.bpk.go.id/Details/44967/uu-no-16-tahun-2000
+      note: null
+    Mengubah:
+    - id: uu_6_1983
+      citation: UU No. 6 Tahun 1983
+      tentang: Ketentuan Umum dan Tata Cara Perpajakan
+      url: https://peraturan.bpk.go.id/Details/46986/uu-no-6-tahun-1983
+      note: null
+uji_materi: null

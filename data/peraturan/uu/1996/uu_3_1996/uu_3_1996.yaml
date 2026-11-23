@@ -12,8 +12,8 @@ tanggal_penetapan: '1996-04-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1996
-source_pdf_url: https://peraturan.go.id/files/uu3-1996.pdf
+source_url: https://peraturan.bpk.go.id/Details/46092/uu-no-3-tahun-1996
+source_pdf_url: https://peraturan.bpk.go.id/Download/34648/UU%20Nomor%203%20Tahun%201996.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1996_1996-04-02.txt
   pasal_count: 7
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 45ab4978aff934530dcc716c660f72882d6c96db01a64c3f482c5b17fd728b49
 pdf_sha256: 45ab4978aff934530dcc716c660f72882d6c96db01a64c3f482c5b17fd728b49
+tanggal_pengundangan: '1996-04-02'
+tanggal_berlaku: '1995-04-01'
+lembaran_negara: 'LN. 1996, LL SETNEG : 10 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1996
+  source_pdf_url: https://peraturan.go.id/files/uu3-1996.pdf
+bpk:
+  id: 46092
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34648/UU%20Nomor%203%20Tahun%201996.pdf
+    bpk_file_id: 34648
+    filename: UU Nomor 3 Tahun 1996.pdf
+    sha256: 45ab4978aff934530dcc716c660f72882d6c96db01a64c3f482c5b17fd728b49
+    bytes: 76441
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_2_1995
+      citation: UU No. 2 Tahun 1995
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1995/96
+      url: https://peraturan.bpk.go.id/Details/46169/uu-no-2-tahun-1995
+      note: null
+uji_materi: null

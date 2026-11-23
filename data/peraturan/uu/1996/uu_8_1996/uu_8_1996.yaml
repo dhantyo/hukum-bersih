@@ -13,8 +13,8 @@ tanggal_penetapan: '1996-11-07'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-8-tahun-1996
-source_pdf_url: https://peraturan.go.id/files/UU+8-1996.pdf
+source_url: https://peraturan.bpk.go.id/Details/46098/uu-no-8-tahun-1996
+source_pdf_url: https://peraturan.bpk.go.id/Download/34653/UU%20Nomor%208%20Tahun%201996.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1996_1996-11-07.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6dca2a9a35c030ca27a1d1a0796693251d929bc6838028536cce4ee6839ce616
 pdf_sha256: 6641d4c150fccf4efc312f0fe1afa3987b4fd2c6f93f493e208d5940de15d20c
+tanggal_pengundangan: '1996-11-07'
+tanggal_berlaku: '1996-11-07'
+lembaran_negara: 'LN. 1996/ No. 100, TLN NO. 3657, LL SETNEG : 4HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-8-tahun-1996
+  source_pdf_url: https://peraturan.go.id/files/UU+8-1996.pdf
+bpk:
+  id: 46098
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34653/UU%20Nomor%208%20Tahun%201996.pdf
+    bpk_file_id: 34653
+    filename: UU Nomor 8 Tahun 1996.pdf
+    sha256: 6dca2a9a35c030ca27a1d1a0796693251d929bc6838028536cce4ee6839ce616
+    bytes: 138949
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

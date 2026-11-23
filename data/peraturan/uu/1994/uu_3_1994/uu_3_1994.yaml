@@ -12,8 +12,8 @@ tanggal_penetapan: '1994-07-18'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-3-tahun-1994
-source_pdf_url: https://peraturan.go.id/files/UU0031994.pdf
+source_url: https://peraturan.bpk.go.id/Details/46216/uu-no-3-tahun-1994
+source_pdf_url: https://peraturan.bpk.go.id/Download/34780/UU%20Nomor%203%20Tahun%20%201994.pdf
 relationships:
   amends: []
   amended_by: []
@@ -29,4 +29,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1994_1994-07-18.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 75e88fef6790b09f22acc7695bae1aa59a8a38ee67b587b844a95498dedc6830
 pdf_sha256: 75e88fef6790b09f22acc7695bae1aa59a8a38ee67b587b844a95498dedc6830
+tanggal_pengundangan: '1994-07-18'
+tanggal_berlaku: '1994-07-18'
+lembaran_negara: 'LN. 1994/ No. 35, TLN NO. 3554, LL SETNEG : 3 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-3-tahun-1994
+  source_pdf_url: https://peraturan.go.id/files/UU0031994.pdf
+bpk:
+  id: 46216
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34780/UU%20Nomor%203%20Tahun%20%201994.pdf
+    bpk_file_id: 34780
+    filename: UU Nomor 3 Tahun  1994.pdf
+    sha256: 75e88fef6790b09f22acc7695bae1aa59a8a38ee67b587b844a95498dedc6830
+    bytes: 31696
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

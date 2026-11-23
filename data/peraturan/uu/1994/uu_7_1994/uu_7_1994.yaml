@@ -13,8 +13,8 @@ tanggal_penetapan: '1994-11-02'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-7-tahun-1994
-source_pdf_url: https://peraturan.go.id/files/UU0071994.pdf
+source_url: https://peraturan.bpk.go.id/Details/46225/uu-no-7-tahun-1994
+source_pdf_url: https://peraturan.bpk.go.id/Download/34810/UU%20Nomor%207%20tahun%201994.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,24 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1994_1994-11-02.txt
   pasal_count: 2
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 3369aa9a4b7093bdbb6ba448d89d77b05be865f082797bac7f9bf64e2a42441a
 pdf_sha256: 3369aa9a4b7093bdbb6ba448d89d77b05be865f082797bac7f9bf64e2a42441a
+tanggal_pengundangan: '1994-11-02'
+lembaran_negara: 'LN. 1994/ No. 57, TLN NO. 3564, LL SETNEG : 4 HLM'
+subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-7-tahun-1994
+  source_pdf_url: https://peraturan.go.id/files/UU0071994.pdf
+bpk:
+  id: 46225
+  files:
+  - url: https://peraturan.bpk.go.id/Download/34810/UU%20Nomor%207%20tahun%201994.pdf
+    bpk_file_id: 34810
+    filename: UU Nomor 7 tahun 1994.pdf
+    sha256: 3369aa9a4b7093bdbb6ba448d89d77b05be865f082797bac7f9bf64e2a42441a
+    bytes: 155292
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

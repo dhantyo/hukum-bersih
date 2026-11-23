@@ -13,8 +13,8 @@ tanggal_penetapan: '1993-06-30'
 tempat_penetapan: Jakarta
 pejabat_penetapan: SOEHARTO
 pemrakarsa: PEMERINTAH PUSAT
-source_url: https://peraturan.go.id/id/uu-no-5-tahun-1993
-source_pdf_url: https://peraturan.go.id/files/UU0051993.pdf
+source_url: https://peraturan.bpk.go.id/Details/46578/uu-no-5-tahun-1993
+source_pdf_url: https://peraturan.bpk.go.id/Download/35296/UU%20Nomor%205%20Tahun%201993.pdf
 relationships:
   amends: []
   amended_by: []
@@ -30,4 +30,31 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1993_1993-06-30.txt
   pasal_count: 5
+  parser_version: 12
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 84eb23e2b7bfd0c2bf32e3767310c553ec3d15a8d1f6e5596cbad1982e320ca2
 pdf_sha256: 84eb23e2b7bfd0c2bf32e3767310c553ec3d15a8d1f6e5596cbad1982e320ca2
+tanggal_pengundangan: '1993-07-30'
+tanggal_berlaku: '1992-04-01'
+lembaran_negara: 'LN. 1993/ No. 67, TLN NO. 3532, LL SETNEG : 5 HLM'
+subjek: APBN
+other_sources:
+- source_url: https://peraturan.go.id/id/uu-no-5-tahun-1993
+  source_pdf_url: https://peraturan.go.id/files/UU0051993.pdf
+bpk:
+  id: 46578
+  files:
+  - url: https://peraturan.bpk.go.id/Download/35296/UU%20Nomor%205%20Tahun%201993.pdf
+    bpk_file_id: 35296
+    filename: UU Nomor 5 Tahun 1993.pdf
+    sha256: 84eb23e2b7bfd0c2bf32e3767310c553ec3d15a8d1f6e5596cbad1982e320ca2
+    bytes: 37033
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_6_1992
+      citation: UU No. 6 Tahun 1992
+      tentang: Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 1992/1993
+      url: https://peraturan.bpk.go.id/Details/46598/uu-no-6-tahun-1992
+      note: null
+uji_materi: null
