@@ -27,8 +27,8 @@ versions:
   date: '1948-09-03'
   date_basis: tanggal_penetapan
   text: uu_29_1948_1948-09-03.txt
-  pasal_count: 2
-  parser_version: 12
+  pasal_count: 9
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6677638cd4ae28c54b8d5c2bb2be6b8a6acdc3d5a547d153de19ddf9c1d6c7a4
 pdf_sha256: 6677638cd4ae28c54b8d5c2bb2be6b8a6acdc3d5a547d153de19ddf9c1d6c7a4
@@ -58,4 +58,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/63969/pp-no-68-tahun-1948
       note: null
 uji_materi: null
-recheck: missed heading in body 6; missed heading in penjelasan 2

@@ -29,8 +29,8 @@ versions:
   date: '1951-01-06'
   date_basis: tanggal_penetapan
   text: uu_1_1951_1951-01-06.txt
-  pasal_count: 10
-  parser_version: 12
+  pasal_count: 21
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d3052bf524fb429cf5c9eca2fcaf78797d42b0170b8dcd21a805f06b106a3b18
 pdf_sha256: c87900238c844f77c9786d04037d730dfb00270ef9c685d441255aa605691f73
@@ -62,4 +62,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/46026/uu-no-25-tahun-1997
       note: null
 uji_materi: null
-recheck: missed heading in body 11
