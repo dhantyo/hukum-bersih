@@ -58,13 +58,27 @@ HEADER_ZONE = 5  # lines at the top of a page that may hold headers
 
 OCR_LANGUAGE = "ind"
 OCR_DPI = 300
+# Which OCR reads scanned pages: "indra" (Indra OCR, the default since 2026-11-23, decision 0012)
+# or "tesseract" (Tesseract `ind` through PyMuPDF, used before). Set with $HUKUM_BERSIH_OCR.
+# When Indra cannot be loaded (package or model missing), Tesseract reads the pages instead.
+OCR_ENGINES = ("indra", "tesseract")
+
+
+def ocr_engine() -> str:
+    import os
+
+    engine = os.environ.get("HUKUM_BERSIH_OCR", "indra").strip().lower()
+    if engine not in OCR_ENGINES:
+        raise ValueError(f"HUKUM_BERSIH_OCR={engine!r}: expected one of {OCR_ENGINES}")
+    return engine
 
 
 def page_lines(pdf: Path, stats: dict | None = None, ocr: bool = True) -> list[list[str]]:
     """Printed lines per page. Scanned pages (a picture filling the page) are read with our own
-    OCR (Tesseract ``ind`` through PyMuPDF), not with the text layer that came with the PDF:
-    BPK's scans carry someone else's OCR ("2OO2", "REPUBUK"; docs/parser-review-2026-11.md).
-    ``stats`` receives ``ocr_pages`` and, when Tesseract is missing, ``ocr_missing``."""
+    OCR (``ocr_engine()``), not with the text layer that came with the PDF: BPK's scans carry
+    someone else's OCR ("2OO2", "REPUBUK"; docs/parser-review-2026-11.md). ``stats`` receives
+    ``ocr_pages``, ``ocr_engine`` (the engine that read them) and, when no OCR could run,
+    ``ocr_missing``."""
     import pymupdf
 
     stats = stats if stats is not None else {}
@@ -73,51 +87,103 @@ def page_lines(pdf: Path, stats: dict | None = None, ocr: bool = True) -> list[l
         scans = [p.number for p in doc if ocr and is_scan(p)] if not stats.get("ocr_missing") else []
         read: dict[int, list] = {}
         if scans:
-            try:
+            engines = [ocr_engine()]
+            if engines[0] == "indra":
+                engines.append("tesseract")          # fallback when Indra cannot be loaded
+            errors = []
+            for engine in engines:
                 try:
-                    read = ocr_pages(pdf, scans)
-                except Exception:  # noqa: BLE001 - the worker processes failed: one at a time
-                    read = dict(_ocr_chunk(str(pdf), scans))
-                stats["ocr_pages"] += len(read)
-            except Exception as e:  # noqa: BLE001 - no Tesseract or no language data
-                stats["ocr_missing"] = f"{type(e).__name__}: {str(e)[:120]}"
+                    try:
+                        read = ocr_pages(pdf, scans, engine)
+                    except Exception:  # noqa: BLE001 - the worker processes failed: one at a time
+                        read = dict(_ocr_chunk(str(pdf), scans, engine))
+                    stats["ocr_pages"] += len(read)
+                    stats["ocr_engine"] = engine
+                    if errors:
+                        stats["ocr_fallback"] = errors[0]
+                    break
+                except Exception as e:  # noqa: BLE001 - engine, model or language data missing
+                    errors.append(f"{engine}: {type(e).__name__}: {str(e)[:120]}")
+            else:
+                stats["ocr_missing"] = "; ".join(errors)
         return [rows(read[p.number] if p.number in read else visible(p, p.get_text("words")))
                 for p in doc]
 
 
-def ocr_pages(pdf: Path, numbers: list[int]) -> dict[int, list]:
-    """Tesseract's words for the given pages, read in parallel: one process per CPU core, each
-    with Tesseract kept to one thread (OCR is ~2.6 s a page; scans have 20-350 pages).
-    The words are the same as reading the pages one after another."""
+def ocr_pages(pdf: Path, numbers: list[int], engine: str = "tesseract") -> dict[int, list]:
+    """OCR words (Tesseract) or lines (Indra) for the given pages, read in parallel: one process
+    per CPU core, each engine kept to one thread (Tesseract ~2.6 s a page; scans have 20-350
+    pages). The result is the same as reading the pages one after another."""
     import os
     from concurrent.futures import ProcessPoolExecutor
     from multiprocessing import get_context
 
     workers = min(os.cpu_count() or 1, len(numbers))
     if workers <= 1:
-        return dict(_ocr_chunk(str(pdf), numbers))
+        return dict(_ocr_chunk(str(pdf), numbers, engine))
     chunks = [numbers[i::workers] for i in range(workers)]
     # "fork": the workers do not re-import the calling script ("spawn" does, and fails when the
     # script has no `if __name__ == "__main__"` guard); this process holds no other threads
     with ProcessPoolExecutor(workers, mp_context=get_context("fork"), initializer=_one_thread) as pool:
-        return {n: w for part in pool.map(_ocr_chunk, [str(pdf)] * workers, chunks) for n, w in part}
+        return {n: w for part in pool.map(_ocr_chunk, [str(pdf)] * workers, chunks, [engine] * workers)
+                for n, w in part}
 
 
 def _one_thread() -> None:
     import os
 
     os.environ["OMP_THREAD_LIMIT"] = "1"
+    os.environ["OMP_NUM_THREADS"] = "1"
 
 
-def _ocr_chunk(pdf: str, numbers: list[int]) -> list[tuple[int, list]]:
+def _ocr_chunk(pdf: str, numbers: list[int], engine: str = "tesseract") -> list[tuple[int, list]]:
     import pymupdf
 
     out = []
     with pymupdf.open(pdf) as doc:
+        if engine == "indra":
+            conv = _indra()
+            for n in numbers:
+                out.append((n, _indra_lines(conv, doc[n])))
+            return out
         for n in numbers:
             page = doc[n]
             tp = page.get_textpage_ocr(language=OCR_LANGUAGE, dpi=OCR_DPI, full=True, tessdata=tessdata())
             out.append((n, [tuple(w) for w in page.get_text("words", textpage=tp)]))
+    return out
+
+
+_INDRA = None
+
+
+def _indra():
+    """Indra OCR (datalab-to/indra, Apache-2.0 code, OpenRAIL-M weights; decision 0012), loaded
+    once per process with one thread (the pages are spread over processes). Its models come from
+    Hugging Face on first use (about 76 MB) or from $INDRA_OCR_MODEL_DIR."""
+    global _INDRA
+    if _INDRA is None:
+        import indra_ocr
+
+        _INDRA = indra_ocr.load(threads=1, mode="ocr")
+    return _INDRA
+
+
+def _indra_lines(conv, page) -> list[tuple]:
+    """Indra's lines of a page as (x0, y0, x1, y1, text) in page coordinates, the shape of
+    PyMuPDF's words, so ``rows`` joins lines printed level with each other ("Menimbang" and
+    ": a. bahwa ...") as it joins words."""
+    import numpy as np
+    import pymupdf
+
+    pix = page.get_pixmap(dpi=OCR_DPI, colorspace=pymupdf.csGRAY, alpha=False)
+    gray = np.frombuffer(pix.samples, dtype=np.uint8).reshape(pix.height, pix.stride)[:, : pix.width]
+    scale = 72 / OCR_DPI
+    out = []
+    for line in conv.ocr(np.ascontiguousarray(gray)).lines:
+        if not line.text.strip():
+            continue
+        x0, y0, x1, y1 = line.box
+        out.append((x0 * scale, y0 * scale, x1 * scale, y1 * scale, line.text))
     return out
 
 

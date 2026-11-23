@@ -219,7 +219,8 @@ def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str, extra: list[Pat
             "parser_version": PARSER_VERSION,
             "pdf_source": source, "pdf_sha256": sha256_file(pdf),
             **({"extra_pdf_sha256": [sha256_file(x) for x in extra]} if extra else {}),
-            **({"ocr": True} if any(w.startswith("ocr:") for w in doc.warnings) else {}),
+            **({"ocr": True, "ocr_engine": _ocr_engine(doc.warnings)}
+               if any(w.startswith("ocr:") for w in doc.warnings) else {}),
         }])
         return f"{doc.pasal_count} pasal"
     except Exception as e:  # noqa: BLE001 - record and move on; never guess
@@ -229,6 +230,14 @@ def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str, extra: list[Pat
             return f"kept old text (parse error: {err[:80]})"
         rec["parse_error"] = err
         return f"parse error: {err[:80]}"
+
+
+def _ocr_engine(warnings: list[str]) -> str:
+    """The OCR engine named in the parser's "ocr: N scanned page(s) read with <engine>"."""
+    for w in warnings:
+        if w.startswith("ocr:"):
+            return w.rsplit(" ", 1)[-1].lower()
+    return "unknown"
 
 
 WORDS_KEPT = 0.85   # a new text must keep at least this share of the stored text's words

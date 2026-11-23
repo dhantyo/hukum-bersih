@@ -16,6 +16,8 @@ dependencies = [
 [project.optional-dependencies]
 # peraturan.bpk.go.id: a stealth browser clears Cloudflare once, curl_cffi downloads
 bpk = ["scrapling[fetchers]>=0.5.1", "curl-cffi>=0.17.0", "remotezip>=0.12"]
+# OCR of scanned pages with Indra OCR (decision 0012); without it, Tesseract reads them
+ocr = ["indra-ocr>=1.1.2"]
 
 [project.scripts]
 hukum-bersih = "hukum_bersih.cli:main"
