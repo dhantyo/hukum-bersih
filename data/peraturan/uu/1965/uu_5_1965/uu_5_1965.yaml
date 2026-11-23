@@ -33,7 +33,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1965_1965-06-14.txt
   pasal_count: 12
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0ef1e7471e9d662f260b14f83dadc17357bb6bb423cd89decac3f46f0cb2eb7f
 pdf_sha256: 0ef1e7471e9d662f260b14f83dadc17357bb6bb423cd89decac3f46f0cb2eb7f
@@ -64,4 +64,3 @@ bpk:
       note: null
   tanggal_pengundangan: '1965-06-14'
 uji_materi: null
-recheck: missed heading in penjelasan 3

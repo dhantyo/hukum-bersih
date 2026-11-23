@@ -29,7 +29,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1966_1966-12-12.txt
   pasal_count: 21
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 622fdbbfa19baf8e75497157e09cab99c4160140147350039eadb3d278b8ba2a
 pdf_sha256: 005c2d99e97ed9fb5a3a85e4515ef077ab29ec60e6fea915056d61335e8ed248
@@ -70,4 +70,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/49551/uu-no-4-tahun-1967
       note: null
 uji_materi: null
-recheck: missed heading in penjelasan 9

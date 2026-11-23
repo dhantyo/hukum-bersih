@@ -29,7 +29,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_31_1964_1964-11-26.txt
   pasal_count: 27
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9a671a8c9202d0d4a1696431b40c3fa32c496b1da13848b976dd2efaaeb9fee4
 pdf_sha256: 9a671a8c9202d0d4a1696431b40c3fa32c496b1da13848b976dd2efaaeb9fee4
@@ -58,4 +58,3 @@ bpk:
       note: null
   tanggal_pengundangan: '1964-11-26'
 uji_materi: null
-recheck: missed heading in penjelasan 11

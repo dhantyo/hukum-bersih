@@ -29,7 +29,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_1964_1964-11-25.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: bbc820ee7dabd62be13cfcfe4965b2384b47a63f9df13d7ce2452c57a86902c8
 pdf_sha256: bbc820ee7dabd62be13cfcfe4965b2384b47a63f9df13d7ce2452c57a86902c8
@@ -51,4 +51,3 @@ bpk:
     archive_url: null
   status_peraturan: null
 uji_materi: null
-recheck: missed heading in body 1; missed heading in penjelasan 2

@@ -29,7 +29,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_1962_1962-08-16.txt
   pasal_count: 31
-  parser_version: 12
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b281761adaa1fdddd8f353fce1c043cdba4689502b3a705dfa2c3d9e70d31b8b
 pdf_sha256: b281761adaa1fdddd8f353fce1c043cdba4689502b3a705dfa2c3d9e70d31b8b
@@ -57,4 +57,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/46599/uu-no-7-tahun-1992
       note: Pasal 54 UU Nomor 7 Tahun 1992 mencabut UU ini
 uji_materi: null
-recheck: missed heading in penjelasan 13

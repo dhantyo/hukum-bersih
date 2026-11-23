@@ -27,8 +27,8 @@ versions:
   date: '1965-09-01'
   date_basis: tanggal_penetapan
   text: uu_18_1965_1965-09-01.txt
-  pasal_count: 30
-  parser_version: 12
+  pasal_count: 89
+  parser_version: 13
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 41c5851a6eb7bac455f5e15a3a596c6481f085b65cfc6c7c7b3ddf8791992940
 pdf_sha256: 41c5851a6eb7bac455f5e15a3a596c6481f085b65cfc6c7c7b3ddf8791992940
@@ -62,4 +62,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/52381/uu-no-1-tahun-1957
       note: null
 uji_materi: null
-recheck: missed heading in body 56; missed heading in penjelasan 26
