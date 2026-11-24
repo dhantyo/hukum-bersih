@@ -85,3 +85,39 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/47405/uu-no-5-tahun-1975
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_16_1969_1969-12-17
+    kind: asli
+    date: '1969-12-17'
+    date_basis: tanggal_berlaku
+    text: uu_16_1969_1969-12-17.txt
+  - id: uu_16_1969_1975-11-24
+    kind: gabungan
+    date: '1975-11-24'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_5_1975
+    order: 1
+    counts:
+      diubah: 1
+      disisipkan: 0
+      dihapus: 1
+    missing_before: 0
+    unreadable:
+    - '45'
+    not_applied: []
+    complete: false
+  changes:
+  - pasal: '44'
+    type: dihapus
+    by: uu_5_1975
+    instruction: 1
+    point: uu_16_1969_1975-11-24
+    wording: none
+  - pasal: '45'
+    type: diubah
+    by: uu_5_1975
+    instruction: 1
+    point: uu_16_1969_1975-11-24
+    wording: unreadable

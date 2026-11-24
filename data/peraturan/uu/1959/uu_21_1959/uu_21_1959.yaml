@@ -80,3 +80,30 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/53752/perpu-no-1-tahun-1964
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_21_1959_1959-06-26
+    kind: asli
+    date: '1959-07-04'
+    date_basis: tanggal_berlaku
+    text: uu_21_1959_1959-06-26.txt
+  - id: uu_21_1959_1964-01-06
+    kind: gabungan
+    date: '1964-01-06'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_1_1964
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: perppu_1_1964
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes: []

@@ -131,3 +131,179 @@ uji_materi:
     baik berdasarkan Undang-Undang Republik Indonesia Nomor 6 Tahun 2014 tentang Desa
     maupun berdasarkan undang-undang sebelumnya masih diberi kesempatan untuk menjabat
     1 (satu) periode”.
+history:
+  points:
+  - id: uu_6_2014_2014-01-15
+    kind: asli
+    date: '2014-01-15'
+    date_basis: tanggal_berlaku
+    text: uu_6_2014_2014-01-15.txt
+  - id: uu_6_2014_2024-04-25
+    kind: gabungan
+    date: '2024-04-25'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_3_2024
+    order: 2
+    counts:
+      diubah: 17
+      disisipkan: 7
+      dihapus: 0
+    missing_before: 1
+    unreadable: []
+    not_applied:
+    - by: uu_3_2024
+      instruction: 4
+      header: Penjelasan Pasal 8 ayat (3) huruf h diubah sebagaimana tercantum dalam
+        penjelasan.
+      affects_wording: false
+    - by: uu_3_2024
+      instruction: 10
+      header: Penjelasan Pasal 48 diubah sebagaimana tercantum dalam penjelasan.
+      affects_wording: false
+    complete: false
+  changes:
+  - pasal: '2'
+    type: diubah
+    by: uu_3_2024
+    instruction: 1
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: '4'
+    type: diubah
+    by: uu_3_2024
+    instruction: 2
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: 5A
+    type: disisipkan
+    by: uu_3_2024
+    instruction: 3
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: '26'
+    type: diubah
+    by: uu_3_2024
+    instruction: 5
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: '27'
+    type: diubah
+    by: uu_3_2024
+    instruction: 6
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: '33'
+    type: diubah
+    by: uu_3_2024
+    instruction: 7
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: 34A
+    type: disisipkan
+    by: uu_3_2024
+    instruction: 8
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: '39'
+    type: diubah
+    by: uu_3_2024
+    instruction: 9
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: '50'
+    type: diubah
+    by: uu_3_2024
+    instruction: 11
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: 50A
+    type: disisipkan
+    by: uu_3_2024
+    instruction: 12
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: 53A
+    type: disisipkan
+    by: uu_3_2024
+    instruction: 13
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: '56'
+    type: diubah
+    by: uu_3_2024
+    instruction: 14
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: '57'
+    type: diubah
+    by: uu_3_2024
+    instruction: 15
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: '62'
+    type: diubah
+    by: uu_3_2024
+    instruction: 16
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: '67'
+    type: diubah
+    by: uu_3_2024
+    instruction: 17
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: '72'
+    type: diubah
+    by: uu_3_2024
+    instruction: 18
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: 72A
+    type: disisipkan
+    by: uu_3_2024
+    instruction: 19
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: '74'
+    type: diubah
+    by: uu_3_2024
+    instruction: 20
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: '78'
+    type: diubah
+    by: uu_3_2024
+    instruction: 21
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: '79'
+    type: diubah
+    by: uu_3_2024
+    instruction: 22
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: '86'
+    type: diubah
+    by: uu_3_2024
+    instruction: 23
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: 87A
+    type: disisipkan
+    by: uu_3_2024
+    instruction: 24
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: '118'
+    type: diubah
+    by: uu_3_2024
+    instruction: 25
+    point: uu_6_2014_2024-04-25
+    wording: read
+  - pasal: 121A
+    type: disisipkan
+    by: uu_3_2024
+    instruction: 26
+    point: uu_6_2014_2024-04-25
+    wording: read

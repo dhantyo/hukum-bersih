@@ -89,3 +89,57 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/45271/uu-no-3-tahun-1999
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_12_2003_2003-03-11
+    kind: asli
+    date: '2003-03-11'
+    date_basis: tanggal_berlaku
+    text: uu_12_2003_2003-03-11.txt
+  - id: uu_12_2003_2004-04-02
+    kind: gabungan
+    date: '2004-04-02'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_2_2004
+    order: 1
+    counts:
+      diubah: 2
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  - id: uu_12_2003_2006-03-07
+    kind: gabungan
+    date: '2006-03-07'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_1_2006
+    order: 2
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: perppu_1_2006
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes:
+  - pasal: '45'
+    type: diubah
+    by: perppu_2_2004
+    instruction: 1
+    point: uu_12_2003_2004-04-02
+    wording: read
+  - pasal: '119'
+    type: diubah
+    by: perppu_2_2004
+    instruction: 2
+    point: uu_12_2003_2004-04-02
+    wording: read

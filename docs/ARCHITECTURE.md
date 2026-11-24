@@ -29,7 +29,7 @@ Git is the source of truth; everything else is generated from it.
 ```
 data/
   peraturan/<jenis>/<tahun>/<id>/          one folder per regulation
-    <id>.yaml                              title, status, relationships, versions
+    <id>.yaml                              title, status, relationships, versions, history
     <id>_<YYYY-MM-DD>.txt                  each text version, dated (Bluebell)
   koleksi/<slug>.yaml                      a named law family: short name, base law, aliases
   ruu/<slug>/
@@ -57,6 +57,7 @@ Names follow [NAMING.md](NAMING.md).
 | `akn/build.py` | Bluebell → Akoma Ntoso XML (Laws.Africa's `bluebell` parser) |
 | `relations.py` | Amends / revokes / enacts links from titles, plus the pasal an amending law changes (from its text) → `relationships` in each record ([decision 0008](decisions/0008-law-history.md)) |
 | `amendments.py` | An amending law's Pasal I → numbered instructions and the new wording of each pasal (JSON for the "Perubahan" page) |
+| `history.py` | The versions of an amended law and every change to its pasal → `history` in its record, recomputed with `relations` ([decision 0010](decisions/0010-versions-and-merged-text.md)) |
 | `cli.py` | `hukum-bersih parse / build-akn / import-bpk / import-peraturan / reparse-bpk / import-pdf / relations / manifest` |
 
 ### web/src/

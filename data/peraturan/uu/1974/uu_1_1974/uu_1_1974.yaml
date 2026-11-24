@@ -72,3 +72,38 @@ uji_materi:
     terhadap Undang-Undang Nomor 1 Tahun 1974 tentang Perkawinan (Lembaran Negara
     Republik Indonesia Tahun 1974 Nomor 1, Tambahan Lembaran Negara Republik Indonesia
     Nomor 3019), khususnya berkenaan dengan batas minimal usia perkawinan bagi perempuan;
+history:
+  points:
+  - id: uu_1_1974_1974-01-02
+    kind: asli
+    date: '1974-01-02'
+    date_basis: tanggal_berlaku
+    text: uu_1_1974_1974-01-02.txt
+  - id: uu_1_1974_2019-10-15
+    kind: gabungan
+    date: '2019-10-15'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_16_2019
+    order: 1
+    counts:
+      diubah: 1
+      disisipkan: 1
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  changes:
+  - pasal: '7'
+    type: diubah
+    by: uu_16_2019
+    instruction: 1
+    point: uu_1_1974_2019-10-15
+    wording: read
+  - pasal: 65A
+    type: disisipkan
+    by: uu_16_2019
+    instruction: 2
+    point: uu_1_1974_2019-10-15
+    wording: read

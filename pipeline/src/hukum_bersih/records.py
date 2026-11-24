@@ -8,13 +8,13 @@ wrote before the schema existed (``allow_unicode=True, sort_keys=False``).
 
 Derived from the 1,930 records in ``data/`` and from the code that writes them
 (``sources/peraturan_bpk.py``, ``sources/peraturan_go_id.py``, ``relations.py``,
-``uploads.py``). A new key goes in here first, then in the code that writes it.
+``history.py``, ``uploads.py``). A new key goes in here first, then in the code that writes it.
 """
 from pathlib import Path
-from typing import Annotated
+from typing import Annotated, Literal
 
 import yaml
-from pydantic import BaseModel, ConfigDict, StringConstraints
+from pydantic import BaseModel, ConfigDict, Field, StringConstraints
 
 # YYYY-MM-DD, as a string (yaml.safe_dump quotes it, so it loads back as a string)
 Date = Annotated[str, StringConstraints(pattern=r"^\d{4}-\d{2}-\d{2}$")]
@@ -115,6 +115,61 @@ class Version(_Model):
     ocr_unknown: int | None = None
 
 
+class AsliPoint(_Model):
+    """A point in a law's history that is a stored text version: the law as enacted."""
+    id: str
+    kind: Literal["asli"]
+    date: str                  # a full date, or a bare year when the record knows no more
+    date_basis: str            # the record field that gave the date, or "year"
+    text: str | None = None    # the version's .txt file; absent when we hold no text
+
+
+class NotApplied(_Model):
+    """An instruction of an amending law that was not split into pasal changes."""
+    by: str
+    instruction: int | None    # its number in Pasal I; None when the text could not be read
+    header: str
+    affects_wording: bool      # False for headings and the Penjelasan
+
+
+class Counts(_Model):
+    diubah: int
+    disisipkan: int
+    dihapus: int
+
+
+class GabunganPoint(_Model):
+    """A point merged by us: the text before it plus the amending law(s) in ``after``.
+    Never stored as text; the website builds it (decision 0010)."""
+    id: str
+    kind: Literal["gabungan"]
+    date: str | None           # None when the amending law is not in data/
+    date_basis: str | None
+    after: list[str]
+    order: int                 # "Perubahan Pertama" -> 1
+    counts: Counts
+    missing_before: int        # earlier amendments we do not have
+    unreadable: list[str]      # pasal whose new wording could not be read, so far
+    not_applied: list[NotApplied]
+    complete: bool             # every pasal's wording is known at this point
+
+
+class Change(_Model):
+    """One change to one pasal by one instruction of an amending law."""
+    pasal: str
+    type: Literal["diubah", "disisipkan", "dihapus"]
+    by: str
+    instruction: int | None
+    point: str
+    wording: Literal["read", "unreadable", "none"]
+
+
+class History(_Model):
+    """The versions of an amended law and every change to it (``history.py``, decision 0010)."""
+    points: list[Annotated[AsliPoint | GabunganPoint, Field(discriminator="kind")]]
+    changes: list[Change]
+
+
 class Record(_Model):
     # --- identity (every writer sets these) ---
     id: str
@@ -143,6 +198,8 @@ class Record(_Model):
     uji_materi: list[UjiMateri] | None = None
     bpk: Bpk | None = None
     other_sources: list[OtherSource] | None = None
+    # --- written by history.py, only for a law that has been amended ---
+    history: History | None = None
     # --- conversion state ---
     pdf_sha256: str | None = None
     pdf_quality: str | None = None

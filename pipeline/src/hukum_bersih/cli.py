@@ -3,7 +3,7 @@
     parse            PDF -> Bluebell text (the format stored in data/)
     build-akn        Bluebell text in data/ -> Akoma Ntoso XML (+ amendment JSON) for the website
     import-bpk       import regulations from peraturan.bpk.go.id, recording every PDF's sha256
-    relations        link amending / revoking / enacting laws
+    relations        link amending / revoking / enacting laws; versions of amended laws
     import-pdf       record and convert hand-downloaded PDFs (uploads.py)
     manifest         print a manifest entry for a local file
     reparse-bpk      re-convert texts from the PDFs on archive.org (read only)
@@ -203,9 +203,11 @@ def main(argv: list[str] | None = None) -> int:
             Path(p), args.data_dir, args.source, url))
 
     if args.command == "relations":
+        from .history import build as build_history
         from .relations import build
 
         print(build(args.data_dir))
+        print(build_history(args.data_dir))     # versions and changes of amended laws (0010)
         return 0
 
     if args.command == "manifest":

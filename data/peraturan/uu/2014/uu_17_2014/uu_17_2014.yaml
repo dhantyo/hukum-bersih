@@ -200,3 +200,314 @@ uji_materi:
     Daerah, dan Dewan Perwakilan Rakyat Daerah selengkapnya menjadi "Pemanggilan dan
     permintaan keterangan untuk penyidikan terhadap anggota DPR yang diduga melakukan
     tindak pidana harus mendapat persetujuan tertulis dari Presiden."
+history:
+  points:
+  - id: uu_17_2014_2014-08-05
+    kind: asli
+    date: '2014-08-05'
+    date_basis: tanggal_berlaku
+    text: uu_17_2014_2014-08-05.txt
+  - id: uu_17_2014_2014-12-15
+    kind: gabungan
+    date: '2014-12-15'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_42_2014
+    order: 1
+    counts:
+      diubah: 8
+      disisipkan: 1
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  - id: uu_17_2014_2018-03-15
+    kind: gabungan
+    date: '2018-03-15'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_2_2018
+    order: 2
+    counts:
+      diubah: 15
+      disisipkan: 17
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  - id: uu_17_2014_2019-09-30
+    kind: gabungan
+    date: '2019-09-30'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_13_2019
+    order: 3
+    counts:
+      diubah: 1
+      disisipkan: 0
+      dihapus: 1
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  changes:
+  - pasal: '74'
+    type: diubah
+    by: uu_42_2014
+    instruction: 1
+    point: uu_17_2014_2014-12-15
+    wording: read
+  - pasal: '97'
+    type: diubah
+    by: uu_42_2014
+    instruction: 2
+    point: uu_17_2014_2014-12-15
+    wording: read
+  - pasal: '98'
+    type: diubah
+    by: uu_42_2014
+    instruction: 3
+    point: uu_17_2014_2014-12-15
+    wording: read
+  - pasal: '104'
+    type: diubah
+    by: uu_42_2014
+    instruction: 4
+    point: uu_17_2014_2014-12-15
+    wording: read
+  - pasal: '109'
+    type: diubah
+    by: uu_42_2014
+    instruction: 5
+    point: uu_17_2014_2014-12-15
+    wording: read
+  - pasal: '115'
+    type: diubah
+    by: uu_42_2014
+    instruction: 6
+    point: uu_17_2014_2014-12-15
+    wording: read
+  - pasal: '121'
+    type: diubah
+    by: uu_42_2014
+    instruction: 7
+    point: uu_17_2014_2014-12-15
+    wording: read
+  - pasal: '152'
+    type: diubah
+    by: uu_42_2014
+    instruction: 8
+    point: uu_17_2014_2014-12-15
+    wording: read
+  - pasal: 425A
+    type: disisipkan
+    by: uu_42_2014
+    instruction: 9
+    point: uu_17_2014_2014-12-15
+    wording: read
+  - pasal: '15'
+    type: diubah
+    by: uu_2_2018
+    instruction: 1
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: '71'
+    type: diubah
+    by: uu_2_2018
+    instruction: 2
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: '74'
+    type: diubah
+    by: uu_2_2018
+    instruction: 3
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: '83'
+    type: diubah
+    by: uu_2_2018
+    instruction: 4
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: '84'
+    type: diubah
+    by: uu_2_2018
+    instruction: 5
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: '105'
+    type: diubah
+    by: uu_2_2018
+    instruction: 6
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: 112A
+    type: disisipkan
+    by: uu_2_2018
+    instruction: 7
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: 112B
+    type: disisipkan
+    by: uu_2_2018
+    instruction: 7
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: 112C
+    type: disisipkan
+    by: uu_2_2018
+    instruction: 7
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: 112D
+    type: disisipkan
+    by: uu_2_2018
+    instruction: 7
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: 112E
+    type: disisipkan
+    by: uu_2_2018
+    instruction: 7
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: 112F
+    type: disisipkan
+    by: uu_2_2018
+    instruction: 7
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: 112G
+    type: disisipkan
+    by: uu_2_2018
+    instruction: 7
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: '121'
+    type: diubah
+    by: uu_2_2018
+    instruction: 8
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: 121A
+    type: disisipkan
+    by: uu_2_2018
+    instruction: 9
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: '122'
+    type: diubah
+    by: uu_2_2018
+    instruction: 10
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: 122A
+    type: disisipkan
+    by: uu_2_2018
+    instruction: 11
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: 122B
+    type: disisipkan
+    by: uu_2_2018
+    instruction: 11
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: '164'
+    type: diubah
+    by: uu_2_2018
+    instruction: 12
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: 180A
+    type: disisipkan
+    by: uu_2_2018
+    instruction: 13
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: '204'
+    type: diubah
+    by: uu_2_2018
+    instruction: 14
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: '224'
+    type: diubah
+    by: uu_2_2018
+    instruction: 15
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: '249'
+    type: diubah
+    by: uu_2_2018
+    instruction: 16
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: '250'
+    type: diubah
+    by: uu_2_2018
+    instruction: 17
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: '260'
+    type: diubah
+    by: uu_2_2018
+    instruction: 18
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: 413A
+    type: disisipkan
+    by: uu_2_2018
+    instruction: 19
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: '424'
+    type: diubah
+    by: uu_2_2018
+    instruction: 20
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: 427A
+    type: disisipkan
+    by: uu_2_2018
+    instruction: 21
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: 427B
+    type: disisipkan
+    by: uu_2_2018
+    instruction: 21
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: 427C
+    type: disisipkan
+    by: uu_2_2018
+    instruction: 21
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: 427D
+    type: disisipkan
+    by: uu_2_2018
+    instruction: 21
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: 427E
+    type: disisipkan
+    by: uu_2_2018
+    instruction: 21
+    point: uu_17_2014_2018-03-15
+    wording: read
+  - pasal: '15'
+    type: diubah
+    by: uu_13_2019
+    instruction: 1
+    point: uu_17_2014_2019-09-30
+    wording: read
+  - pasal: 427C
+    type: dihapus
+    by: uu_13_2019
+    instruction: 2
+    point: uu_17_2014_2019-09-30
+    wording: none

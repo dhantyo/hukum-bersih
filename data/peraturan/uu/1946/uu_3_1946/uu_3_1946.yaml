@@ -69,3 +69,30 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/25222/uu-no-6-tahun-1947
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_3_1946_1946-04-10
+    kind: asli
+    date: '1946-04-10'
+    date_basis: tanggal_pengundangan
+    text: uu_3_1946_1946-04-10.txt
+  - id: uu_3_1946_1947-03-03
+    kind: gabungan
+    date: '1947-03-03'
+    date_basis: tanggal_pengundangan
+    after:
+    - uu_6_1947
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_6_1947
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes: []

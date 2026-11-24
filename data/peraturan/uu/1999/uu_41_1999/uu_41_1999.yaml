@@ -88,3 +88,30 @@ uji_materi:
     hukum mengikat sepanjang tidak dimaknai bahwa ketentuan dimaksud dikecualikan
     terhadap masyarakat yang hidup secara turun temurun di dalam hutan dan tidak ditujukan
     untuk kepentingan komersial.
+history:
+  points:
+  - id: uu_41_1999_1999-09-30
+    kind: asli
+    date: '1999-09-30'
+    date_basis: tanggal_berlaku
+    text: uu_41_1999_1999-09-30.txt
+  - id: uu_41_1999_2004-03-11
+    kind: gabungan
+    date: '2004-03-11'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_1_2004
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: perppu_1_2004
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes: []

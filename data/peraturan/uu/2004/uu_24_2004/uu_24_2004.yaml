@@ -85,3 +85,33 @@ uji_materi:
     hapus buku dan hapus tagih terhadap aset berupa piutang sepanjang memenuhi ketentuan
     Pasal 46 ayat (5) Undang-Undang Nomor 9 Tahun 2016 tentang Pencegahan dan Penanganan
     Krisis Sistem Keuangan”;
+history:
+  points:
+  - id: uu_24_2004_2004-09-22
+    kind: asli
+    date: '2005-09-22'
+    date_basis: tanggal_berlaku
+    text: uu_24_2004_2004-09-22.txt
+  - id: uu_24_2004_2008-10-13
+    kind: gabungan
+    date: '2008-10-13'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_3_2008
+    order: 1
+    counts:
+      diubah: 1
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable:
+    - '11'
+    not_applied: []
+    complete: false
+  changes:
+  - pasal: '11'
+    type: diubah
+    by: perppu_3_2008
+    instruction: null
+    point: uu_24_2004_2008-10-13
+    wording: unreadable

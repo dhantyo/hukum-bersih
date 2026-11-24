@@ -79,3 +79,289 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/47144/uu-no-13-tahun-1980
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_38_2004_2004-10-18
+    kind: asli
+    date: '2004-10-18'
+    date_basis: tanggal_berlaku
+    text: uu_38_2004_2004-10-18.txt
+  - id: uu_38_2004_2022-01-12
+    kind: gabungan
+    date: '2022-01-12'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_2_2022
+    order: 2
+    counts:
+      diubah: 27
+      disisipkan: 7
+      dihapus: 5
+    missing_before: 1
+    unreadable:
+    - '12'
+    - '47'
+    not_applied:
+    - by: uu_2_2022
+      instruction: 23
+      header: Ketentuan Bagian Ketujuh
+      affects_wording: true
+    - by: uu_2_2022
+      instruction: 24
+      header: 'Bab IV diubah sehingga Bagian Ketujuh Bab IV berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_2_2022
+      instruction: 40
+      header: 'Di antara Bab V dan Bab VI disisipkan 1 (satu) Bab yakni Bab VA sehingga
+        Bab VA berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_2_2022
+      instruction: 41
+      header: 'Di antara Bab VI dan Bab VII disisipkan 1 (satu) bab, yakni Bab VIA
+        sehingga Bab VIA berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_2_2022
+      instruction: 42
+      header: 'Ketentuan Bab VII diubah sehingga Bab VII berbunyi sebagai berikut:'
+      affects_wording: true
+    - by: uu_2_2022
+      instruction: 43
+      header: 'Di antara Bab VII dan Bab VIII disisipkan 1 (satu) bab, yakni Bab VIIA
+        sehingga Bab VIIA berbunyi sebagai berikut:'
+      affects_wording: false
+    complete: false
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_2_2022
+    instruction: 1
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '2'
+    type: diubah
+    by: uu_2_2022
+    instruction: 2
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '3'
+    type: diubah
+    by: uu_2_2022
+    instruction: 3
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '4'
+    type: diubah
+    by: uu_2_2022
+    instruction: 4
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_2_2022
+    instruction: 5
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '8'
+    type: diubah
+    by: uu_2_2022
+    instruction: 6
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '9'
+    type: diubah
+    by: uu_2_2022
+    instruction: 7
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: 9A
+    type: disisipkan
+    by: uu_2_2022
+    instruction: 8
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '11'
+    type: diubah
+    by: uu_2_2022
+    instruction: 9
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '12'
+    type: diubah
+    by: uu_2_2022
+    instruction: 10
+    point: uu_38_2004_2022-01-12
+    wording: unreadable
+  - pasal: '13'
+    type: diubah
+    by: uu_2_2022
+    instruction: 11
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '14'
+    type: diubah
+    by: uu_2_2022
+    instruction: 12
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '15'
+    type: diubah
+    by: uu_2_2022
+    instruction: 13
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '16'
+    type: diubah
+    by: uu_2_2022
+    instruction: 14
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: 16A
+    type: disisipkan
+    by: uu_2_2022
+    instruction: 15
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '17'
+    type: diubah
+    by: uu_2_2022
+    instruction: 16
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '18'
+    type: diubah
+    by: uu_2_2022
+    instruction: 17
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '19'
+    type: diubah
+    by: uu_2_2022
+    instruction: 18
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '20'
+    type: diubah
+    by: uu_2_2022
+    instruction: 19
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '21'
+    type: diubah
+    by: uu_2_2022
+    instruction: 20
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: 21A
+    type: disisipkan
+    by: uu_2_2022
+    instruction: 21
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '22'
+    type: diubah
+    by: uu_2_2022
+    instruction: 22
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '36'
+    type: diubah
+    by: uu_2_2022
+    instruction: 25
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '37'
+    type: dihapus
+    by: uu_2_2022
+    instruction: 26
+    point: uu_38_2004_2022-01-12
+    wording: none
+  - pasal: '38'
+    type: dihapus
+    by: uu_2_2022
+    instruction: 27
+    point: uu_38_2004_2022-01-12
+    wording: none
+  - pasal: '39'
+    type: dihapus
+    by: uu_2_2022
+    instruction: 28
+    point: uu_38_2004_2022-01-12
+    wording: none
+  - pasal: '40'
+    type: dihapus
+    by: uu_2_2022
+    instruction: 29
+    point: uu_38_2004_2022-01-12
+    wording: none
+  - pasal: '41'
+    type: dihapus
+    by: uu_2_2022
+    instruction: 30
+    point: uu_38_2004_2022-01-12
+    wording: none
+  - pasal: '43'
+    type: diubah
+    by: uu_2_2022
+    instruction: 31
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '47'
+    type: diubah
+    by: uu_2_2022
+    instruction: 32
+    point: uu_38_2004_2022-01-12
+    wording: unreadable
+  - pasal: '48'
+    type: diubah
+    by: uu_2_2022
+    instruction: 33
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '50'
+    type: diubah
+    by: uu_2_2022
+    instruction: 34
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: 51A
+    type: disisipkan
+    by: uu_2_2022
+    instruction: 35
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: 51B
+    type: disisipkan
+    by: uu_2_2022
+    instruction: 35
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '52'
+    type: diubah
+    by: uu_2_2022
+    instruction: 36
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: 52A
+    type: disisipkan
+    by: uu_2_2022
+    instruction: 37
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '55'
+    type: diubah
+    by: uu_2_2022
+    instruction: 38
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: '57'
+    type: diubah
+    by: uu_2_2022
+    instruction: 39
+    point: uu_38_2004_2022-01-12
+    wording: read
+  - pasal: 67A
+    type: disisipkan
+    by: uu_2_2022
+    instruction: 44
+    point: uu_38_2004_2022-01-12
+    wording: read

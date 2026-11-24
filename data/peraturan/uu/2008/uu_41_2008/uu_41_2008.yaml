@@ -52,3 +52,104 @@ bpk:
     archive_url: null
   status_peraturan: null
 uji_materi: null
+history:
+  points:
+  - id: uu_41_2008_2008-11-10
+    kind: asli
+    date: '2009-01-01'
+    date_basis: tanggal_berlaku
+    text: uu_41_2008_2008-11-10.txt
+  - id: uu_41_2008_2009-08-25
+    kind: gabungan
+    date: '2009-08-25'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_26_2009
+    order: 1
+    counts:
+      diubah: 13
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_26_2009
+    instruction: 1
+    point: uu_41_2008_2009-08-25
+    wording: read
+  - pasal: '2'
+    type: diubah
+    by: uu_26_2009
+    instruction: 2
+    point: uu_41_2008_2009-08-25
+    wording: read
+  - pasal: '3'
+    type: diubah
+    by: uu_26_2009
+    instruction: 3
+    point: uu_41_2008_2009-08-25
+    wording: read
+  - pasal: '4'
+    type: diubah
+    by: uu_26_2009
+    instruction: 4
+    point: uu_41_2008_2009-08-25
+    wording: read
+  - pasal: '5'
+    type: diubah
+    by: uu_26_2009
+    instruction: 5
+    point: uu_41_2008_2009-08-25
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_26_2009
+    instruction: 6
+    point: uu_41_2008_2009-08-25
+    wording: read
+  - pasal: 11A
+    type: diubah
+    by: uu_26_2009
+    instruction: 7
+    point: uu_41_2008_2009-08-25
+    wording: read
+  - pasal: 13A
+    type: diubah
+    by: uu_26_2009
+    instruction: 8
+    point: uu_41_2008_2009-08-25
+    wording: read
+  - pasal: '15'
+    type: diubah
+    by: uu_26_2009
+    instruction: 9
+    point: uu_41_2008_2009-08-25
+    wording: read
+  - pasal: '16'
+    type: diubah
+    by: uu_26_2009
+    instruction: 10
+    point: uu_41_2008_2009-08-25
+    wording: read
+  - pasal: '17'
+    type: diubah
+    by: uu_26_2009
+    instruction: 11
+    point: uu_41_2008_2009-08-25
+    wording: read
+  - pasal: '18'
+    type: diubah
+    by: uu_26_2009
+    instruction: 12
+    point: uu_41_2008_2009-08-25
+    wording: read
+  - pasal: '19'
+    type: diubah
+    by: uu_26_2009
+    instruction: 13
+    point: uu_41_2008_2009-08-25
+    wording: read

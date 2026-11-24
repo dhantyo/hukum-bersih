@@ -67,3 +67,30 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/53463/perpu-no-15-tahun-1960
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_78_1958_1958-10-14
+    kind: asli
+    date: '1958-10-27'
+    date_basis: tanggal_berlaku
+    text: uu_78_1958_1958-10-14.txt
+  - id: uu_78_1958_1960-04-07
+    kind: gabungan
+    date: '1960-04-07'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_15_1960
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: perppu_15_1960
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes: []

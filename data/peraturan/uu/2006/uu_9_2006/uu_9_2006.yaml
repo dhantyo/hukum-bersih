@@ -58,3 +58,91 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/39184/uu-no-9-tahun-2011
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_9_2006_2006-07-14
+    kind: asli
+    date: '2006-07-14'
+    date_basis: tanggal_berlaku
+    text: uu_9_2006_2006-07-14.txt
+  - id: uu_9_2006_2011-08-08
+    kind: gabungan
+    date: '2011-08-08'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_9_2011
+    order: 1
+    counts:
+      diubah: 7
+      disisipkan: 3
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_9_2011
+      instruction: 7
+      header: 'Di antara BAB IV dan BAB V disisipkan 1 (satu) bab, yakni BAB IVA sehingga
+        berbunyi sebagai berikut:'
+      affects_wording: false
+    complete: true
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_9_2011
+    instruction: 1
+    point: uu_9_2006_2011-08-08
+    wording: read
+  - pasal: '5'
+    type: diubah
+    by: uu_9_2011
+    instruction: 2
+    point: uu_9_2006_2011-08-08
+    wording: read
+  - pasal: '21'
+    type: diubah
+    by: uu_9_2011
+    instruction: 3
+    point: uu_9_2006_2011-08-08
+    wording: read
+  - pasal: '29'
+    type: diubah
+    by: uu_9_2011
+    instruction: 4
+    point: uu_9_2006_2011-08-08
+    wording: read
+  - pasal: '32'
+    type: diubah
+    by: uu_9_2011
+    instruction: 5
+    point: uu_9_2006_2011-08-08
+    wording: read
+  - pasal: '33'
+    type: diubah
+    by: uu_9_2011
+    instruction: 6
+    point: uu_9_2006_2011-08-08
+    wording: read
+  - pasal: '40'
+    type: diubah
+    by: uu_9_2011
+    instruction: 8
+    point: uu_9_2006_2011-08-08
+    wording: read
+  - pasal: 40A
+    type: disisipkan
+    by: uu_9_2011
+    instruction: 9
+    point: uu_9_2006_2011-08-08
+    wording: read
+  - pasal: 42A
+    type: disisipkan
+    by: uu_9_2011
+    instruction: 10
+    point: uu_9_2006_2011-08-08
+    wording: read
+  - pasal: 44A
+    type: disisipkan
+    by: uu_9_2011
+    instruction: 11
+    point: uu_9_2006_2011-08-08
+    wording: read

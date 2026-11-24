@@ -82,3 +82,190 @@ uji_materi:
     Otonomi Khusus Bagi Provinsi Papua, yang bakal menjadi calon gubernur dan/atau
     calon wakil gubernur, adalah berdasarkan pengakuan dari suku asli di Papua asal
     bakal calon gubernur dan/atau wakil gubernur yang bersangkutan
+history:
+  points:
+  - id: uu_21_2001_2001-11-21
+    kind: asli
+    date: '2001-11-21'
+    date_basis: tanggal_berlaku
+    text: uu_21_2001_2001-11-21.txt
+  - id: uu_21_2001_2008-04-16
+    kind: gabungan
+    date: '2008-04-16'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_1_2008
+    order: 1
+    counts:
+      diubah: 2
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  - id: uu_21_2001_2021-07-19
+    kind: gabungan
+    date: '2021-07-19'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_2_2021
+    order: 2
+    counts:
+      diubah: 18
+      disisipkan: 2
+      dihapus: 0
+    missing_before: 0
+    unreadable:
+    - '24'
+    not_applied:
+    - by: uu_2_2021
+      instruction: 4
+      header: Ketentuan Bagian Kedua
+      affects_wording: true
+    - by: uu_2_2021
+      instruction: 5
+      header: 'Bab V diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_2_2021
+      instruction: 9
+      header: Ketentuan Bagian Ketiga
+      affects_wording: true
+    - by: uu_2_2021
+      instruction: 10
+      header: 'Bab V diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    complete: false
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: perppu_1_2008
+    instruction: 1
+    point: uu_21_2001_2008-04-16
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: perppu_1_2008
+    instruction: 2
+    point: uu_21_2001_2008-04-16
+    wording: read
+  - pasal: '1'
+    type: diubah
+    by: uu_2_2021
+    instruction: 1
+    point: uu_21_2001_2021-07-19
+    wording: read
+  - pasal: '4'
+    type: diubah
+    by: uu_2_2021
+    instruction: 2
+    point: uu_21_2001_2021-07-19
+    wording: read
+  - pasal: '5'
+    type: diubah
+    by: uu_2_2021
+    instruction: 3
+    point: uu_21_2001_2021-07-19
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_2_2021
+    instruction: 6
+    point: uu_21_2001_2021-07-19
+    wording: read
+  - pasal: 6A
+    type: disisipkan
+    by: uu_2_2021
+    instruction: 7
+    point: uu_21_2001_2021-07-19
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: uu_2_2021
+    instruction: 8
+    point: uu_21_2001_2021-07-19
+    wording: read
+  - pasal: '11'
+    type: diubah
+    by: uu_2_2021
+    instruction: 11
+    point: uu_21_2001_2021-07-19
+    wording: read
+  - pasal: '17'
+    type: diubah
+    by: uu_2_2021
+    instruction: 12
+    point: uu_21_2001_2021-07-19
+    wording: read
+  - pasal: '20'
+    type: diubah
+    by: uu_2_2021
+    instruction: 13
+    point: uu_21_2001_2021-07-19
+    wording: read
+  - pasal: '24'
+    type: diubah
+    by: uu_2_2021
+    instruction: 14
+    point: uu_21_2001_2021-07-19
+    wording: unreadable
+  - pasal: '28'
+    type: diubah
+    by: uu_2_2021
+    instruction: 15
+    point: uu_21_2001_2021-07-19
+    wording: read
+  - pasal: '34'
+    type: diubah
+    by: uu_2_2021
+    instruction: 16
+    point: uu_21_2001_2021-07-19
+    wording: read
+  - pasal: '36'
+    type: diubah
+    by: uu_2_2021
+    instruction: 17
+    point: uu_21_2001_2021-07-19
+    wording: read
+  - pasal: '38'
+    type: diubah
+    by: uu_2_2021
+    instruction: 18
+    point: uu_21_2001_2021-07-19
+    wording: read
+  - pasal: '56'
+    type: diubah
+    by: uu_2_2021
+    instruction: 19
+    point: uu_21_2001_2021-07-19
+    wording: read
+  - pasal: '59'
+    type: diubah
+    by: uu_2_2021
+    instruction: 20
+    point: uu_21_2001_2021-07-19
+    wording: read
+  - pasal: '68'
+    type: diubah
+    by: uu_2_2021
+    instruction: 21
+    point: uu_21_2001_2021-07-19
+    wording: read
+  - pasal: 68A
+    type: disisipkan
+    by: uu_2_2021
+    instruction: 22
+    point: uu_21_2001_2021-07-19
+    wording: read
+  - pasal: '75'
+    type: diubah
+    by: uu_2_2021
+    instruction: 23
+    point: uu_21_2001_2021-07-19
+    wording: read
+  - pasal: '76'
+    type: diubah
+    by: uu_2_2021
+    instruction: 24
+    point: uu_21_2001_2021-07-19
+    wording: read

@@ -59,3 +59,134 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/38604/uu-no-12-tahun-2014
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_23_2013_2013-11-14
+    kind: asli
+    date: '2014-01-01'
+    date_basis: tanggal_berlaku
+    text: uu_23_2013_2013-11-14.txt
+  - id: uu_23_2013_2014-07-01
+    kind: gabungan
+    date: '2014-07-01'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_12_2014
+    order: 1
+    counts:
+      diubah: 16
+      disisipkan: 1
+      dihapus: 1
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_12_2014
+    instruction: 1
+    point: uu_23_2013_2014-07-01
+    wording: read
+  - pasal: '3'
+    type: diubah
+    by: uu_12_2014
+    instruction: 2
+    point: uu_23_2013_2014-07-01
+    wording: read
+  - pasal: '4'
+    type: diubah
+    by: uu_12_2014
+    instruction: 3
+    point: uu_23_2013_2014-07-01
+    wording: read
+  - pasal: '5'
+    type: diubah
+    by: uu_12_2014
+    instruction: 4
+    point: uu_23_2013_2014-07-01
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_12_2014
+    instruction: 5
+    point: uu_23_2013_2014-07-01
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: uu_12_2014
+    instruction: 6
+    point: uu_23_2013_2014-07-01
+    wording: read
+  - pasal: '8'
+    type: diubah
+    by: uu_12_2014
+    instruction: 7
+    point: uu_23_2013_2014-07-01
+    wording: read
+  - pasal: '9'
+    type: diubah
+    by: uu_12_2014
+    instruction: 8
+    point: uu_23_2013_2014-07-01
+    wording: read
+  - pasal: '10'
+    type: diubah
+    by: uu_12_2014
+    instruction: 9
+    point: uu_23_2013_2014-07-01
+    wording: read
+  - pasal: '12'
+    type: dihapus
+    by: uu_12_2014
+    instruction: 10
+    point: uu_23_2013_2014-07-01
+    wording: none
+  - pasal: '14'
+    type: diubah
+    by: uu_12_2014
+    instruction: 11
+    point: uu_23_2013_2014-07-01
+    wording: read
+  - pasal: '17'
+    type: diubah
+    by: uu_12_2014
+    instruction: 12
+    point: uu_23_2013_2014-07-01
+    wording: read
+  - pasal: '19'
+    type: diubah
+    by: uu_12_2014
+    instruction: 13
+    point: uu_23_2013_2014-07-01
+    wording: read
+  - pasal: '20'
+    type: diubah
+    by: uu_12_2014
+    instruction: 14
+    point: uu_23_2013_2014-07-01
+    wording: read
+  - pasal: 20A
+    type: disisipkan
+    by: uu_12_2014
+    instruction: 15
+    point: uu_23_2013_2014-07-01
+    wording: read
+  - pasal: '34'
+    type: diubah
+    by: uu_12_2014
+    instruction: 16
+    point: uu_23_2013_2014-07-01
+    wording: read
+  - pasal: '35'
+    type: diubah
+    by: uu_12_2014
+    instruction: 17
+    point: uu_23_2013_2014-07-01
+    wording: read
+  - pasal: '38'
+    type: diubah
+    by: uu_12_2014
+    instruction: 18
+    point: uu_23_2013_2014-07-01
+    wording: read

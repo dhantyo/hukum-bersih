@@ -92,3 +92,127 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/51157/uu-no-25-tahun-1956
       note: Pasal 1 angka 3 UU No. 25 Tahun 1956
 uji_materi: null
+history:
+  points:
+  - id: uu_3_2022_2022-02-15
+    kind: asli
+    date: '2022-02-15'
+    date_basis: tanggal_berlaku
+    text: uu_3_2022_2022-02-15.txt
+  - id: uu_3_2022_2023-10-31
+    kind: gabungan
+    date: '2023-10-31'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_21_2023
+    order: 1
+    counts:
+      diubah: 10
+      disisipkan: 6
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_21_2023
+      instruction: 13
+      header: 'Di antara Bagian Ketiga BAB VII dan BAB VIII disisipkan 1 (satu) bagian,
+        yakni Bagian Keempat yang berbunyi sebagai berikut:'
+      affects_wording: false
+    complete: true
+  changes:
+  - pasal: '6'
+    type: diubah
+    by: uu_21_2023
+    instruction: 1
+    point: uu_3_2022_2023-10-31
+    wording: read
+  - pasal: '12'
+    type: diubah
+    by: uu_21_2023
+    instruction: 2
+    point: uu_3_2022_2023-10-31
+    wording: read
+  - pasal: '15'
+    type: diubah
+    by: uu_21_2023
+    instruction: 3
+    point: uu_3_2022_2023-10-31
+    wording: read
+  - pasal: 15A
+    type: disisipkan
+    by: uu_21_2023
+    instruction: 4
+    point: uu_3_2022_2023-10-31
+    wording: read
+  - pasal: 16A
+    type: disisipkan
+    by: uu_21_2023
+    instruction: 5
+    point: uu_3_2022_2023-10-31
+    wording: read
+  - pasal: '23'
+    type: diubah
+    by: uu_21_2023
+    instruction: 6
+    point: uu_3_2022_2023-10-31
+    wording: read
+  - pasal: '24'
+    type: diubah
+    by: uu_21_2023
+    instruction: 7
+    point: uu_3_2022_2023-10-31
+    wording: read
+  - pasal: 24A
+    type: disisipkan
+    by: uu_21_2023
+    instruction: 8
+    point: uu_3_2022_2023-10-31
+    wording: read
+  - pasal: 24B
+    type: disisipkan
+    by: uu_21_2023
+    instruction: 8
+    point: uu_3_2022_2023-10-31
+    wording: read
+  - pasal: '25'
+    type: diubah
+    by: uu_21_2023
+    instruction: 9
+    point: uu_3_2022_2023-10-31
+    wording: read
+  - pasal: '26'
+    type: diubah
+    by: uu_21_2023
+    instruction: 10
+    point: uu_3_2022_2023-10-31
+    wording: read
+  - pasal: '32'
+    type: diubah
+    by: uu_21_2023
+    instruction: 11
+    point: uu_3_2022_2023-10-31
+    wording: read
+  - pasal: '36'
+    type: diubah
+    by: uu_21_2023
+    instruction: 12
+    point: uu_3_2022_2023-10-31
+    wording: read
+  - pasal: 36A
+    type: disisipkan
+    by: uu_21_2023
+    instruction: 14
+    point: uu_3_2022_2023-10-31
+    wording: read
+  - pasal: 36B
+    type: disisipkan
+    by: uu_21_2023
+    instruction: 14
+    point: uu_3_2022_2023-10-31
+    wording: read
+  - pasal: '42'
+    type: diubah
+    by: uu_21_2023
+    instruction: 15
+    point: uu_3_2022_2023-10-31
+    wording: read

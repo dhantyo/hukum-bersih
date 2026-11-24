@@ -97,3 +97,86 @@ uji_materi:
   amar: Pasal 97 ayat (1) Undang-Undang Nomor 6 Tahun 2011 tentang Keimigrasian sepanjang
     frasa “setiap kali” adalah bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai
     kekuatan hukum mengikat.
+history:
+  points:
+  - id: uu_6_2011_2011-05-05
+    kind: asli
+    date: '2011-05-05'
+    date_basis: tanggal_berlaku
+    text: uu_6_2011_2011-05-05.txt
+  - id: uu_6_2011_2024-10-17
+    kind: gabungan
+    date: '2024-10-17'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_63_2024
+    order: 3
+    counts:
+      diubah: 9
+      disisipkan: 1
+      dihapus: 0
+    missing_before: 2
+    unreadable: []
+    not_applied: []
+    complete: false
+  changes:
+  - pasal: '3'
+    type: diubah
+    by: uu_63_2024
+    instruction: 1
+    point: uu_6_2011_2024-10-17
+    wording: read
+  - pasal: '16'
+    type: diubah
+    by: uu_63_2024
+    instruction: 2
+    point: uu_6_2011_2024-10-17
+    wording: read
+  - pasal: 24A
+    type: disisipkan
+    by: uu_63_2024
+    instruction: 3
+    point: uu_6_2011_2024-10-17
+    wording: read
+  - pasal: '64'
+    type: diubah
+    by: uu_63_2024
+    instruction: 4
+    point: uu_6_2011_2024-10-17
+    wording: read
+  - pasal: '72'
+    type: diubah
+    by: uu_63_2024
+    instruction: 5
+    point: uu_6_2011_2024-10-17
+    wording: read
+  - pasal: '97'
+    type: diubah
+    by: uu_63_2024
+    instruction: 6
+    point: uu_6_2011_2024-10-17
+    wording: read
+  - pasal: '102'
+    type: diubah
+    by: uu_63_2024
+    instruction: 7
+    point: uu_6_2011_2024-10-17
+    wording: read
+  - pasal: '103'
+    type: diubah
+    by: uu_63_2024
+    instruction: 8
+    point: uu_6_2011_2024-10-17
+    wording: read
+  - pasal: '117'
+    type: diubah
+    by: uu_63_2024
+    instruction: 9
+    point: uu_6_2011_2024-10-17
+    wording: read
+  - pasal: '137'
+    type: diubah
+    by: uu_63_2024
+    instruction: 10
+    point: uu_6_2011_2024-10-17
+    wording: read

@@ -64,3 +64,68 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/46808/uu-no-2-tahun-1988
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_34_2004_2004-10-16
+    kind: asli
+    date: '2004-10-16'
+    date_basis: tanggal_berlaku
+    text: uu_34_2004_2004-10-16.txt
+  - id: uu_34_2004_2025-03-26
+    kind: gabungan
+    date: '2025-03-26'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_3_2025
+    order: 1
+    counts:
+      diubah: 7
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  changes:
+  - pasal: '3'
+    type: diubah
+    by: uu_3_2025
+    instruction: 1
+    point: uu_34_2004_2025-03-26
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: uu_3_2025
+    instruction: 2
+    point: uu_34_2004_2025-03-26
+    wording: read
+  - pasal: '8'
+    type: diubah
+    by: uu_3_2025
+    instruction: 3
+    point: uu_34_2004_2025-03-26
+    wording: read
+  - pasal: '9'
+    type: diubah
+    by: uu_3_2025
+    instruction: 4
+    point: uu_34_2004_2025-03-26
+    wording: read
+  - pasal: '10'
+    type: diubah
+    by: uu_3_2025
+    instruction: 5
+    point: uu_34_2004_2025-03-26
+    wording: read
+  - pasal: '47'
+    type: diubah
+    by: uu_3_2025
+    instruction: 6
+    point: uu_34_2004_2025-03-26
+    wording: read
+  - pasal: '53'
+    type: diubah
+    by: uu_3_2025
+    instruction: 7
+    point: uu_34_2004_2025-03-26
+    wording: read

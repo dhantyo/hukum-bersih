@@ -94,3 +94,220 @@ uji_materi:
     kejaksaan, dan/atau institusi penegak hukum lainnya yang ditetapkan berdasarkan
     undang-undang sebagaimana ditentukan dalam Pasal 31 ayat (3) Undang-Undang Nomor
     11 Tahun 2008 tentang Informasi dan Transaksi Elektronik.
+history:
+  points:
+  - id: uu_11_2008_2008-04-21
+    kind: asli
+    date: '2010-04-21'
+    date_basis: tanggal_berlaku
+    text: uu_11_2008_2008-04-21.txt
+  - id: uu_11_2008_2016-11-25
+    kind: gabungan
+    date: '2016-11-25'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_19_2016
+    order: 1
+    counts:
+      diubah: 6
+      disisipkan: 2
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_19_2016
+      instruction: 2
+      header: Ketentuan Pasal 5 tetap dengan perubahan penjelasan ayat (1) dan ayat
+        (2) sehingga penjelasan Pasal 5 menjadi sebagaimana ditetapkan dalam penjelasan
+        pasal demi
+      affects_wording: false
+    - by: uu_19_2016
+      instruction: 4
+      header: Ketentuan Pasal 27 tetap dengan perubahan penjelasan ayat (1), ayat
+        (3), dan ayat (4) sehingga penjelasan Pasal 27 menjadi sebagaimana ditetapkan
+        dalam penjelas
+      affects_wording: false
+    complete: true
+  - id: uu_11_2008_2024-01-02
+    kind: gabungan
+    date: '2024-01-02'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_1_2024
+    order: 2
+    counts:
+      diubah: 12
+      disisipkan: 7
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_1_2024
+      instruction: 4
+      header: Penjelasan ayat (1) dan ayat (2) Pasal 15 diubah sebagaimana tercantum
+        dalam penjelasan.
+      affects_wording: false
+    complete: true
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_19_2016
+    instruction: 1
+    point: uu_11_2008_2016-11-25
+    wording: read
+  - pasal: '26'
+    type: diubah
+    by: uu_19_2016
+    instruction: 3
+    point: uu_11_2008_2016-11-25
+    wording: read
+  - pasal: '31'
+    type: diubah
+    by: uu_19_2016
+    instruction: 5
+    point: uu_11_2008_2016-11-25
+    wording: read
+  - pasal: '40'
+    type: diubah
+    by: uu_19_2016
+    instruction: 6
+    point: uu_11_2008_2016-11-25
+    wording: read
+  - pasal: '43'
+    type: diubah
+    by: uu_19_2016
+    instruction: 7
+    point: uu_11_2008_2016-11-25
+    wording: read
+  - pasal: '45'
+    type: diubah
+    by: uu_19_2016
+    instruction: 8
+    point: uu_11_2008_2016-11-25
+    wording: read
+  - pasal: 45A
+    type: disisipkan
+    by: uu_19_2016
+    instruction: 8
+    point: uu_11_2008_2016-11-25
+    wording: read
+  - pasal: 45B
+    type: disisipkan
+    by: uu_19_2016
+    instruction: 8
+    point: uu_11_2008_2016-11-25
+    wording: read
+  - pasal: '5'
+    type: diubah
+    by: uu_1_2024
+    instruction: 1
+    point: uu_11_2008_2024-01-02
+    wording: read
+  - pasal: '13'
+    type: diubah
+    by: uu_1_2024
+    instruction: 2
+    point: uu_11_2008_2024-01-02
+    wording: read
+  - pasal: 13A
+    type: disisipkan
+    by: uu_1_2024
+    instruction: 3
+    point: uu_11_2008_2024-01-02
+    wording: read
+  - pasal: 16A
+    type: disisipkan
+    by: uu_1_2024
+    instruction: 5
+    point: uu_11_2008_2024-01-02
+    wording: read
+  - pasal: 16B
+    type: disisipkan
+    by: uu_1_2024
+    instruction: 5
+    point: uu_11_2008_2024-01-02
+    wording: read
+  - pasal: '17'
+    type: diubah
+    by: uu_1_2024
+    instruction: 6
+    point: uu_11_2008_2024-01-02
+    wording: read
+  - pasal: 18A
+    type: disisipkan
+    by: uu_1_2024
+    instruction: 7
+    point: uu_11_2008_2024-01-02
+    wording: read
+  - pasal: '27'
+    type: diubah
+    by: uu_1_2024
+    instruction: 8
+    point: uu_11_2008_2024-01-02
+    wording: read
+  - pasal: 27A
+    type: disisipkan
+    by: uu_1_2024
+    instruction: 9
+    point: uu_11_2008_2024-01-02
+    wording: read
+  - pasal: 27B
+    type: disisipkan
+    by: uu_1_2024
+    instruction: 9
+    point: uu_11_2008_2024-01-02
+    wording: read
+  - pasal: '28'
+    type: diubah
+    by: uu_1_2024
+    instruction: 10
+    point: uu_11_2008_2024-01-02
+    wording: read
+  - pasal: '29'
+    type: diubah
+    by: uu_1_2024
+    instruction: 11
+    point: uu_11_2008_2024-01-02
+    wording: read
+  - pasal: '36'
+    type: diubah
+    by: uu_1_2024
+    instruction: 12
+    point: uu_11_2008_2024-01-02
+    wording: read
+  - pasal: '40'
+    type: diubah
+    by: uu_1_2024
+    instruction: 13
+    point: uu_11_2008_2024-01-02
+    wording: read
+  - pasal: 40A
+    type: disisipkan
+    by: uu_1_2024
+    instruction: 14
+    point: uu_11_2008_2024-01-02
+    wording: read
+  - pasal: '43'
+    type: diubah
+    by: uu_1_2024
+    instruction: 15
+    point: uu_11_2008_2024-01-02
+    wording: read
+  - pasal: '45'
+    type: diubah
+    by: uu_1_2024
+    instruction: 16
+    point: uu_11_2008_2024-01-02
+    wording: read
+  - pasal: 45A
+    type: diubah
+    by: uu_1_2024
+    instruction: 17
+    point: uu_11_2008_2024-01-02
+    wording: read
+  - pasal: 45B
+    type: diubah
+    by: uu_1_2024
+    instruction: 18
+    point: uu_11_2008_2024-01-02
+    wording: read

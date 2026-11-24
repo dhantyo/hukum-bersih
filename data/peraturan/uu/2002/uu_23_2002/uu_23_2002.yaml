@@ -67,3 +67,620 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/38723/uu-no-35-tahun-2014
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_23_2002_2002-10-22
+    kind: asli
+    date: '2002-10-22'
+    date_basis: tanggal_berlaku
+    text: uu_23_2002_2002-10-22.txt
+  - id: uu_23_2002_2014-10-17
+    kind: gabungan
+    date: '2014-10-17'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_35_2014
+    order: 1
+    counts:
+      diubah: 51
+      disisipkan: 30
+      dihapus: 1
+    missing_before: 0
+    unreadable:
+    - '761'
+    not_applied:
+    - by: uu_35_2014
+      instruction: 1
+      header: 'Ketentuan angka 7, angka 8, angka 12, angka 15, dan angka 17 diubah,
+        di antara angka 15 dan angka 16 disisipkan 1 (satu) angka, yakni angka 15a,
+        dan ditambah 1 '
+      affects_wording: true
+    - by: uu_35_2014
+      instruction: 3
+      header: 'Ketentuan ayat (1) dan ayat (2) diubah dan di antara ayat (1) dan ayat
+        (2) disisipkan 1 (satu) ayat, yakni ayat (1a) sehingga Pasal 9 berbunyi sebagai
+        berikut:'
+      affects_wording: true
+    - by: uu_35_2014
+      instruction: 8
+      header: 'BAB IV diubah, sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_35_2014
+      instruction: 14
+      header: 'BAB IV diubah, sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_35_2014
+      instruction: 20
+      header: Ketentuan ayat (1), ayat (2), dan ayat (5) diubah, di antara ayat (2)
+        dan ayat (3) disisipkan 1 (satu) ayat, yakni ayat (2a), dan di antara ayat
+        (4) dan ayat (5
+      affects_wording: true
+    - by: uu_35_2014
+      instruction: 52
+      header: 'Di antara BAB IX dan BAB X disisipkan 1 (satu) bab, yakni BAB IXA sehingga
+        berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_35_2014
+      instruction: 56
+      header: 'Di antara BAB X dan BAB XI disisipkan 1 (satu) bab, yakni BAB XA, sehingga
+        berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_35_2014
+      instruction: 61
+      header: 'Di antara BAB XI dan BAB XII disisipkan 1 (satu) bab, yakni BAB XIA,
+        sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    complete: false
+  - id: uu_23_2002_2016-05-25
+    kind: gabungan
+    date: '2016-05-25'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_1_2016
+    order: 2
+    counts:
+      diubah: 2
+      disisipkan: 2
+      dihapus: 0
+    missing_before: 0
+    unreadable:
+    - '761'
+    not_applied: []
+    complete: false
+  - id: uu_23_2002_2016-11-09
+    kind: gabungan
+    date: '2016-11-09'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_17_2016
+    order: 2
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable:
+    - '761'
+    not_applied:
+    - by: uu_17_2016
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes:
+  - pasal: '6'
+    type: diubah
+    by: uu_35_2014
+    instruction: 2
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '12'
+    type: diubah
+    by: uu_35_2014
+    instruction: 4
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '14'
+    type: diubah
+    by: uu_35_2014
+    instruction: 5
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '15'
+    type: diubah
+    by: uu_35_2014
+    instruction: 6
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '20'
+    type: diubah
+    by: uu_35_2014
+    instruction: 7
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '21'
+    type: diubah
+    by: uu_35_2014
+    instruction: 9
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '22'
+    type: diubah
+    by: uu_35_2014
+    instruction: 10
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '23'
+    type: diubah
+    by: uu_35_2014
+    instruction: 11
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '24'
+    type: diubah
+    by: uu_35_2014
+    instruction: 12
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '25'
+    type: diubah
+    by: uu_35_2014
+    instruction: 13
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '26'
+    type: diubah
+    by: uu_35_2014
+    instruction: 15
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '27'
+    type: diubah
+    by: uu_35_2014
+    instruction: 16
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '28'
+    type: diubah
+    by: uu_35_2014
+    instruction: 17
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '33'
+    type: diubah
+    by: uu_35_2014
+    instruction: 18
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 38A
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 19
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '41'
+    type: diubah
+    by: uu_35_2014
+    instruction: 21
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 41A
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 22
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '43'
+    type: diubah
+    by: uu_35_2014
+    instruction: 23
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '44'
+    type: diubah
+    by: uu_35_2014
+    instruction: 24
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '45'
+    type: diubah
+    by: uu_35_2014
+    instruction: 25
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 45A
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 26
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 45B
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 26
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '46'
+    type: diubah
+    by: uu_35_2014
+    instruction: 27
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '47'
+    type: diubah
+    by: uu_35_2014
+    instruction: 28
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '48'
+    type: diubah
+    by: uu_35_2014
+    instruction: 29
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '49'
+    type: diubah
+    by: uu_35_2014
+    instruction: 30
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '51'
+    type: diubah
+    by: uu_35_2014
+    instruction: 31
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '53'
+    type: diubah
+    by: uu_35_2014
+    instruction: 32
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '54'
+    type: diubah
+    by: uu_35_2014
+    instruction: 33
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '55'
+    type: diubah
+    by: uu_35_2014
+    instruction: 34
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '56'
+    type: diubah
+    by: uu_35_2014
+    instruction: 35
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '58'
+    type: diubah
+    by: uu_35_2014
+    instruction: 36
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '59'
+    type: diubah
+    by: uu_35_2014
+    instruction: 37
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 59A
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 38
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '60'
+    type: diubah
+    by: uu_35_2014
+    instruction: 39
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '63'
+    type: dihapus
+    by: uu_35_2014
+    instruction: 40
+    point: uu_23_2002_2014-10-17
+    wording: none
+  - pasal: '64'
+    type: diubah
+    by: uu_35_2014
+    instruction: 41
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '65'
+    type: diubah
+    by: uu_35_2014
+    instruction: 42
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '66'
+    type: diubah
+    by: uu_35_2014
+    instruction: 43
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '67'
+    type: diubah
+    by: uu_35_2014
+    instruction: 44
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 67A
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 45
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 67B
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 45
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 67C
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 45
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '68'
+    type: diubah
+    by: uu_35_2014
+    instruction: 46
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '69'
+    type: diubah
+    by: uu_35_2014
+    instruction: 47
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 69A
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 48
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 69B
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 48
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '70'
+    type: diubah
+    by: uu_35_2014
+    instruction: 49
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '71'
+    type: diubah
+    by: uu_35_2014
+    instruction: 50
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 71A
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 51
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 71B
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 51
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 71C
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 51
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 71D
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 51
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 71E
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 53
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '72'
+    type: diubah
+    by: uu_35_2014
+    instruction: 54
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '73'
+    type: diubah
+    by: uu_35_2014
+    instruction: 55
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 73A
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 57
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '74'
+    type: diubah
+    by: uu_35_2014
+    instruction: 58
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '75'
+    type: diubah
+    by: uu_35_2014
+    instruction: 59
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '76'
+    type: diubah
+    by: uu_35_2014
+    instruction: 60
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 76A
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 62
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 76B
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 62
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 76C
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 62
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 76D
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 62
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 76E
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 62
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 76F
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 62
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 76G
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 62
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 76H
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 62
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 76J
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 62
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '761'
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 62
+    point: uu_23_2002_2014-10-17
+    wording: unreadable
+  - pasal: '77'
+    type: diubah
+    by: uu_35_2014
+    instruction: 63
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 77A
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 64
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 77B
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 64
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '80'
+    type: diubah
+    by: uu_35_2014
+    instruction: 65
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '81'
+    type: diubah
+    by: uu_35_2014
+    instruction: 66
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '82'
+    type: diubah
+    by: uu_35_2014
+    instruction: 67
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '83'
+    type: diubah
+    by: uu_35_2014
+    instruction: 68
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 86A
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 69
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '87'
+    type: diubah
+    by: uu_35_2014
+    instruction: 70
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '88'
+    type: diubah
+    by: uu_35_2014
+    instruction: 71
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '89'
+    type: diubah
+    by: uu_35_2014
+    instruction: 72
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: 91A
+    type: disisipkan
+    by: uu_35_2014
+    instruction: 73
+    point: uu_23_2002_2014-10-17
+    wording: read
+  - pasal: '81'
+    type: diubah
+    by: perppu_1_2016
+    instruction: 1
+    point: uu_23_2002_2016-05-25
+    wording: read
+  - pasal: 81A
+    type: disisipkan
+    by: perppu_1_2016
+    instruction: 2
+    point: uu_23_2002_2016-05-25
+    wording: read
+  - pasal: '82'
+    type: diubah
+    by: perppu_1_2016
+    instruction: 3
+    point: uu_23_2002_2016-05-25
+    wording: read
+  - pasal: 82A
+    type: disisipkan
+    by: perppu_1_2016
+    instruction: 4
+    point: uu_23_2002_2016-05-25
+    wording: read

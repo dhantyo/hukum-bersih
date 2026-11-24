@@ -78,3 +78,30 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/52465/uu-no-28-tahun-1957
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_21_1952_1952-10-24
+    kind: asli
+    date: '1952-10-29'
+    date_basis: tanggal_berlaku
+    text: uu_21_1952_1952-10-24.txt
+  - id: uu_21_1952_1961-02-01
+    kind: gabungan
+    date: '1961-02-01'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_17_1961
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_17_1961
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes: []

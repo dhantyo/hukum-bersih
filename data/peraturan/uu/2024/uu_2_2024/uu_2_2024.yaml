@@ -68,3 +68,54 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/39922/uu-no-29-tahun-2007
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_2_2024_2024-04-25
+    kind: asli
+    date: '2024-04-25'
+    date_basis: tanggal_pengundangan
+    text: uu_2_2024_2024-04-25.txt
+  - id: uu_2_2024_2024-11-30
+    kind: gabungan
+    date: '2024-11-30'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_151_2024
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 4
+      dihapus: 0
+    missing_before: 0
+    unreadable:
+    - 70A
+    - 70B
+    - 70C
+    - 70D
+    not_applied: []
+    complete: false
+  changes:
+  - pasal: 70A
+    type: disisipkan
+    by: uu_151_2024
+    instruction: null
+    point: uu_2_2024_2024-11-30
+    wording: unreadable
+  - pasal: 70B
+    type: disisipkan
+    by: uu_151_2024
+    instruction: null
+    point: uu_2_2024_2024-11-30
+    wording: unreadable
+  - pasal: 70C
+    type: disisipkan
+    by: uu_151_2024
+    instruction: null
+    point: uu_2_2024_2024-11-30
+    wording: unreadable
+  - pasal: 70D
+    type: disisipkan
+    by: uu_151_2024
+    instruction: null
+    point: uu_2_2024_2024-11-30
+    wording: unreadable

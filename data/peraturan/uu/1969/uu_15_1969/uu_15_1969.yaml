@@ -92,3 +92,32 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/77300/pp-no-9-tahun-1954
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_15_1969_1969-12-17
+    kind: asli
+    date: '1969-12-17'
+    date_basis: tanggal_berlaku
+    text: uu_15_1969_1969-12-17.txt
+  - id: uu_15_1969_1975-11-24
+    kind: gabungan
+    date: '1975-11-24'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_4_1975
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 1
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: false
+  changes:
+  - pasal: '34'
+    type: dihapus
+    by: uu_4_1975
+    instruction: null
+    point: uu_15_1969_1975-11-24
+    wording: none

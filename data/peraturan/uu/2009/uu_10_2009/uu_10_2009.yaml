@@ -79,3 +79,609 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/46715/uu-no-9-tahun-1990
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_10_2009_2009-01-16
+    kind: asli
+    date: '2009-01-16'
+    date_basis: tanggal_berlaku
+    text: uu_10_2009_2009-01-16.txt
+  - id: uu_10_2009_2025-10-29
+    kind: gabungan
+    date: '2025-10-29'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_18_2025
+    order: 3
+    counts:
+      diubah: 43
+      disisipkan: 39
+      dihapus: 7
+    missing_before: 2
+    unreadable:
+    - '110'
+    - '111'
+    - '170'
+    - '171'
+    - '175'
+    not_applied:
+    - by: uu_18_2025
+      instruction: 2
+      header: 'Judul BAB II diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_18_2025
+      instruction: 8
+      header: 'Judul BAB IV diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_18_2025
+      instruction: 16
+      header: 'Judul Bab V diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_18_2025
+      instruction: 20
+      header: 'Judul Bab VI diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_18_2025
+      instruction: 24
+      header: 'Judul Bab VII diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_18_2025
+      instruction: 33
+      header: 'Judul BAB VIII diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_18_2025
+      instruction: 37
+      header: 'Judul Bab XII diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_18_2025
+      instruction: 38
+      header: Judul Bagian Kesatu Bab XII dihapus.
+      affects_wording: false
+    - by: uu_18_2025
+      instruction: 41
+      header: Judul Bagian Kedua Bab XII dihapus.
+      affects_wording: false
+    - by: uu_18_2025
+      instruction: 45
+      header: Judul Bagian Ketiga BAB XII dihapus.
+      affects_wording: false
+    - by: uu_18_2025
+      instruction: 52
+      header: Judul BAB XV dihapus.
+      affects_wording: false
+    complete: false
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_18_2025
+    instruction: 1
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 1A
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 3
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '2'
+    type: diubah
+    by: uu_18_2025
+    instruction: 4
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '3'
+    type: dihapus
+    by: uu_18_2025
+    instruction: 5
+    point: uu_10_2009_2025-10-29
+    wording: none
+  - pasal: '4'
+    type: diubah
+    by: uu_18_2025
+    instruction: 6
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '5'
+    type: diubah
+    by: uu_18_2025
+    instruction: 7
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_18_2025
+    instruction: 9
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: uu_18_2025
+    instruction: 10
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '8'
+    type: diubah
+    by: uu_18_2025
+    instruction: 11
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '9'
+    type: diubah
+    by: uu_18_2025
+    instruction: 12
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 9A
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 13
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 9B
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 13
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '11'
+    type: dihapus
+    by: uu_18_2025
+    instruction: 14
+    point: uu_10_2009_2025-10-29
+    wording: none
+  - pasal: 11A
+    type: diubah
+    by: uu_18_2025
+    instruction: 15
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 11B
+    type: diubah
+    by: uu_18_2025
+    instruction: 15
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 11C
+    type: diubah
+    by: uu_18_2025
+    instruction: 15
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 11D
+    type: diubah
+    by: uu_18_2025
+    instruction: 15
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 11E
+    type: diubah
+    by: uu_18_2025
+    instruction: 15
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 11F
+    type: diubah
+    by: uu_18_2025
+    instruction: 15
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 11G
+    type: diubah
+    by: uu_18_2025
+    instruction: 15
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 11H
+    type: diubah
+    by: uu_18_2025
+    instruction: 15
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 11J
+    type: diubah
+    by: uu_18_2025
+    instruction: 15
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 11K
+    type: diubah
+    by: uu_18_2025
+    instruction: 15
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 11L
+    type: diubah
+    by: uu_18_2025
+    instruction: 15
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 11M
+    type: diubah
+    by: uu_18_2025
+    instruction: 15
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 11N
+    type: diubah
+    by: uu_18_2025
+    instruction: 15
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 11P
+    type: diubah
+    by: uu_18_2025
+    instruction: 15
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 11Q
+    type: diubah
+    by: uu_18_2025
+    instruction: 15
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 11R
+    type: diubah
+    by: uu_18_2025
+    instruction: 15
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '111'
+    type: diubah
+    by: uu_18_2025
+    instruction: 15
+    point: uu_10_2009_2025-10-29
+    wording: unreadable
+  - pasal: '110'
+    type: diubah
+    by: uu_18_2025
+    instruction: 15
+    point: uu_10_2009_2025-10-29
+    wording: unreadable
+  - pasal: '12'
+    type: diubah
+    by: uu_18_2025
+    instruction: 17
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '13'
+    type: diubah
+    by: uu_18_2025
+    instruction: 18
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 13A
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 19
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 15A
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 21
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '17'
+    type: diubah
+    by: uu_18_2025
+    instruction: 22
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17A
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17B
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17C
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17D
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17E
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17F
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17G
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17H
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17J
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17K
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17L
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17M
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17N
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17P
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17Q
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17R
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17T
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17U
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17V
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17W
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17X
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17Y
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 17Z
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '171'
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: unreadable
+  - pasal: '170'
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: unreadable
+  - pasal: '175'
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 23
+    point: uu_10_2009_2025-10-29
+    wording: unreadable
+  - pasal: '18'
+    type: dihapus
+    by: uu_18_2025
+    instruction: 25
+    point: uu_10_2009_2025-10-29
+    wording: none
+  - pasal: '19'
+    type: diubah
+    by: uu_18_2025
+    instruction: 26
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '20'
+    type: diubah
+    by: uu_18_2025
+    instruction: 27
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '21'
+    type: dihapus
+    by: uu_18_2025
+    instruction: 28
+    point: uu_10_2009_2025-10-29
+    wording: none
+  - pasal: '22'
+    type: diubah
+    by: uu_18_2025
+    instruction: 29
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '23'
+    type: dihapus
+    by: uu_18_2025
+    instruction: 30
+    point: uu_10_2009_2025-10-29
+    wording: none
+  - pasal: '24'
+    type: diubah
+    by: uu_18_2025
+    instruction: 31
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '25'
+    type: diubah
+    by: uu_18_2025
+    instruction: 32
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '28'
+    type: diubah
+    by: uu_18_2025
+    instruction: 34
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 30A
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 35
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 30B
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 35
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 30C
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 35
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '31'
+    type: diubah
+    by: uu_18_2025
+    instruction: 36
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '52'
+    type: diubah
+    by: uu_18_2025
+    instruction: 39
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 52A
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 40
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 52B
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 40
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '53'
+    type: diubah
+    by: uu_18_2025
+    instruction: 42
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 53A
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 43
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '55'
+    type: diubah
+    by: uu_18_2025
+    instruction: 44
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 55A
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 46
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '57'
+    type: diubah
+    by: uu_18_2025
+    instruction: 47
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: 57A
+    type: disisipkan
+    by: uu_18_2025
+    instruction: 48
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '58'
+    type: diubah
+    by: uu_18_2025
+    instruction: 49
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '60'
+    type: dihapus
+    by: uu_18_2025
+    instruction: 50
+    point: uu_10_2009_2025-10-29
+    wording: none
+  - pasal: '61'
+    type: diubah
+    by: uu_18_2025
+    instruction: 51
+    point: uu_10_2009_2025-10-29
+    wording: read
+  - pasal: '66'
+    type: dihapus
+    by: uu_18_2025
+    instruction: 53
+    point: uu_10_2009_2025-10-29
+    wording: none
+  - pasal: '69'
+    type: diubah
+    by: uu_18_2025
+    instruction: 54
+    point: uu_10_2009_2025-10-29
+    wording: read

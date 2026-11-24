@@ -76,3 +76,50 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/149750/uu-no-11-tahun-2020
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_36_2000_2000-12-21
+    kind: asli
+    date: '2000-12-21'
+    date_basis: tanggal_berlaku
+    text: uu_36_2000_2000-12-21.txt
+  - id: uu_36_2000_2007-06-04
+    kind: gabungan
+    date: '2007-06-04'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_1_2007
+    order: 1
+    counts:
+      diubah: 4
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  changes:
+  - pasal: '2'
+    type: diubah
+    by: perppu_1_2007
+    instruction: 1
+    point: uu_36_2000_2007-06-04
+    wording: read
+  - pasal: '3'
+    type: diubah
+    by: perppu_1_2007
+    instruction: 2
+    point: uu_36_2000_2007-06-04
+    wording: read
+  - pasal: '4'
+    type: diubah
+    by: perppu_1_2007
+    instruction: 3
+    point: uu_36_2000_2007-06-04
+    wording: read
+  - pasal: 17A
+    type: diubah
+    by: perppu_1_2007
+    instruction: 4
+    point: uu_36_2000_2007-06-04
+    wording: read

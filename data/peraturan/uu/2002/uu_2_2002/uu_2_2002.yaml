@@ -87,3 +87,128 @@ uji_materi:
     Indonesia (Lembaran Negara Republik Indonesia Tahun 2002 Nomor 2, Tambahan Lembaran
     Negara Republik Indonesia Nomor 4168) bertentangan dengan Undang-Undang Dasar
     Negara Republik Indonesia Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.
+history:
+  points:
+  - id: uu_2_2002_2002-01-08
+    kind: asli
+    date: '2002-01-08'
+    date_basis: tanggal_berlaku
+    text: uu_2_2002_2002-01-08.txt
+  - id: uu_2_2002_2026-06-17
+    kind: gabungan
+    date: '2026-06-17'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_5_2026
+    order: 3
+    counts:
+      diubah: 10
+      disisipkan: 7
+      dihapus: 0
+    missing_before: 2
+    unreadable: []
+    not_applied: []
+    complete: false
+  changes:
+  - pasal: '9'
+    type: diubah
+    by: uu_5_2026
+    instruction: 1
+    point: uu_2_2002_2026-06-17
+    wording: read
+  - pasal: '14'
+    type: diubah
+    by: uu_5_2026
+    instruction: 2
+    point: uu_2_2002_2026-06-17
+    wording: read
+  - pasal: '19'
+    type: diubah
+    by: uu_5_2026
+    instruction: 3
+    point: uu_2_2002_2026-06-17
+    wording: read
+  - pasal: 19A
+    type: disisipkan
+    by: uu_5_2026
+    instruction: 4
+    point: uu_2_2002_2026-06-17
+    wording: read
+  - pasal: '21'
+    type: diubah
+    by: uu_5_2026
+    instruction: 5
+    point: uu_2_2002_2026-06-17
+    wording: read
+  - pasal: '26'
+    type: diubah
+    by: uu_5_2026
+    instruction: 6
+    point: uu_2_2002_2026-06-17
+    wording: read
+  - pasal: '28'
+    type: diubah
+    by: uu_5_2026
+    instruction: 7
+    point: uu_2_2002_2026-06-17
+    wording: read
+  - pasal: 28A
+    type: disisipkan
+    by: uu_5_2026
+    instruction: 8
+    point: uu_2_2002_2026-06-17
+    wording: read
+  - pasal: '30'
+    type: diubah
+    by: uu_5_2026
+    instruction: 9
+    point: uu_2_2002_2026-06-17
+    wording: read
+  - pasal: 32A
+    type: disisipkan
+    by: uu_5_2026
+    instruction: 10
+    point: uu_2_2002_2026-06-17
+    wording: read
+  - pasal: '37'
+    type: diubah
+    by: uu_5_2026
+    instruction: 11
+    point: uu_2_2002_2026-06-17
+    wording: read
+  - pasal: '38'
+    type: diubah
+    by: uu_5_2026
+    instruction: 12
+    point: uu_2_2002_2026-06-17
+    wording: read
+  - pasal: '39'
+    type: diubah
+    by: uu_5_2026
+    instruction: 13
+    point: uu_2_2002_2026-06-17
+    wording: read
+  - pasal: 39A
+    type: disisipkan
+    by: uu_5_2026
+    instruction: 14
+    point: uu_2_2002_2026-06-17
+    wording: read
+  - pasal: 39B
+    type: disisipkan
+    by: uu_5_2026
+    instruction: 14
+    point: uu_2_2002_2026-06-17
+    wording: read
+  - pasal: 39C
+    type: disisipkan
+    by: uu_5_2026
+    instruction: 14
+    point: uu_2_2002_2026-06-17
+    wording: read
+  - pasal: 39D
+    type: disisipkan
+    by: uu_5_2026
+    instruction: 14
+    point: uu_2_2002_2026-06-17
+    wording: read

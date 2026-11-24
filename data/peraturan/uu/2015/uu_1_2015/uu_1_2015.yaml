@@ -123,3 +123,1271 @@ uji_materi:
     bersyarat sepanjang tidak dimaknai “dikecualikan bagi perguruan tinggi yang mendapat
     izin dari penanggung jawab perguruan tinggi atau sebutan lain dan hadir tanpa
     atribut kampanye pemilu”.
+history:
+  points:
+  - id: uu_1_2015_2015-02-02
+    kind: asli
+    date: '2015-02-02'
+    date_basis: tanggal_berlaku
+    text: uu_1_2015_2015-02-02.txt
+  - id: uu_1_2015_2015-03-18
+    kind: gabungan
+    date: '2015-03-18'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_8_2015
+    order: 1
+    counts:
+      diubah: 95
+      disisipkan: 7
+      dihapus: 16
+    missing_before: 0
+    unreadable:
+    - '71'
+    not_applied: []
+    complete: false
+  - id: uu_1_2015_2016-07-01
+    kind: gabungan
+    date: '2016-07-01'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_10_2016
+    order: 2
+    counts:
+      diubah: 49
+      disisipkan: 27
+      dihapus: 1
+    missing_before: 0
+    unreadable:
+    - '20'
+    not_applied:
+    - by: uu_10_2016
+      instruction: 49
+      header: 'Ketentuan ayat (2) dihapus sehingga Pasal 166 berbunyi sebagai berikut:'
+      affects_wording: true
+    complete: false
+  - id: uu_1_2015_2020-05-04
+    kind: gabungan
+    date: '2020-05-04'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_2_2020
+    order: 3
+    counts:
+      diubah: 1
+      disisipkan: 2
+      dihapus: 0
+    missing_before: 0
+    unreadable:
+    - '20'
+    not_applied: []
+    complete: false
+  - id: uu_1_2015_2020-08-11
+    kind: gabungan
+    date: '2020-08-11'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_6_2020
+    order: 3
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable:
+    - '20'
+    not_applied:
+    - by: uu_6_2020
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_8_2015
+    instruction: 1
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '3'
+    type: diubah
+    by: uu_8_2015
+    instruction: 2
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '4'
+    type: dihapus
+    by: uu_8_2015
+    instruction: 3
+    point: uu_1_2015_2015-03-18
+    wording: none
+  - pasal: '5'
+    type: diubah
+    by: uu_8_2015
+    instruction: 4
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_8_2015
+    instruction: 5
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: uu_8_2015
+    instruction: 6
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '8'
+    type: diubah
+    by: uu_8_2015
+    instruction: 7
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '10'
+    type: diubah
+    by: uu_8_2015
+    instruction: 8
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: 10A
+    type: disisipkan
+    by: uu_8_2015
+    instruction: 9
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '11'
+    type: diubah
+    by: uu_8_2015
+    instruction: 10
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '12'
+    type: diubah
+    by: uu_8_2015
+    instruction: 11
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '13'
+    type: diubah
+    by: uu_8_2015
+    instruction: 12
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '14'
+    type: diubah
+    by: uu_8_2015
+    instruction: 13
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '20'
+    type: diubah
+    by: uu_8_2015
+    instruction: 14
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: 22A
+    type: disisipkan
+    by: uu_8_2015
+    instruction: 15
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: 22B
+    type: disisipkan
+    by: uu_8_2015
+    instruction: 15
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: 22C
+    type: disisipkan
+    by: uu_8_2015
+    instruction: 15
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: 22D
+    type: disisipkan
+    by: uu_8_2015
+    instruction: 15
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '27'
+    type: diubah
+    by: uu_8_2015
+    instruction: 16
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '28'
+    type: diubah
+    by: uu_8_2015
+    instruction: 17
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '37'
+    type: dihapus
+    by: uu_8_2015
+    instruction: 18
+    point: uu_1_2015_2015-03-18
+    wording: none
+  - pasal: '38'
+    type: dihapus
+    by: uu_8_2015
+    instruction: 19
+    point: uu_1_2015_2015-03-18
+    wording: none
+  - pasal: '39'
+    type: diubah
+    by: uu_8_2015
+    instruction: 20
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '40'
+    type: diubah
+    by: uu_8_2015
+    instruction: 21
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '41'
+    type: diubah
+    by: uu_8_2015
+    instruction: 22
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '42'
+    type: diubah
+    by: uu_8_2015
+    instruction: 23
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '44'
+    type: diubah
+    by: uu_8_2015
+    instruction: 24
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '45'
+    type: diubah
+    by: uu_8_2015
+    instruction: 25
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '47'
+    type: diubah
+    by: uu_8_2015
+    instruction: 26
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '48'
+    type: diubah
+    by: uu_8_2015
+    instruction: 27
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '49'
+    type: diubah
+    by: uu_8_2015
+    instruction: 28
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '50'
+    type: diubah
+    by: uu_8_2015
+    instruction: 29
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '51'
+    type: diubah
+    by: uu_8_2015
+    instruction: 30
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '52'
+    type: diubah
+    by: uu_8_2015
+    instruction: 31
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '53'
+    type: diubah
+    by: uu_8_2015
+    instruction: 32
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '54'
+    type: diubah
+    by: uu_8_2015
+    instruction: 33
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '55'
+    type: dihapus
+    by: uu_8_2015
+    instruction: 34
+    point: uu_1_2015_2015-03-18
+    wording: none
+  - pasal: '57'
+    type: diubah
+    by: uu_8_2015
+    instruction: 35
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '58'
+    type: diubah
+    by: uu_8_2015
+    instruction: 36
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '59'
+    type: diubah
+    by: uu_8_2015
+    instruction: 37
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '61'
+    type: diubah
+    by: uu_8_2015
+    instruction: 38
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '63'
+    type: diubah
+    by: uu_8_2015
+    instruction: 39
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '64'
+    type: diubah
+    by: uu_8_2015
+    instruction: 40
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '65'
+    type: diubah
+    by: uu_8_2015
+    instruction: 41
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '66'
+    type: diubah
+    by: uu_8_2015
+    instruction: 42
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '67'
+    type: diubah
+    by: uu_8_2015
+    instruction: 43
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '68'
+    type: diubah
+    by: uu_8_2015
+    instruction: 44
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '69'
+    type: diubah
+    by: uu_8_2015
+    instruction: 45
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '70'
+    type: diubah
+    by: uu_8_2015
+    instruction: 46
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '71'
+    type: diubah
+    by: uu_8_2015
+    instruction: 47
+    point: uu_1_2015_2015-03-18
+    wording: unreadable
+  - pasal: '74'
+    type: diubah
+    by: uu_8_2015
+    instruction: 48
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '75'
+    type: diubah
+    by: uu_8_2015
+    instruction: 49
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '76'
+    type: diubah
+    by: uu_8_2015
+    instruction: 50
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '87'
+    type: diubah
+    by: uu_8_2015
+    instruction: 51
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '89'
+    type: diubah
+    by: uu_8_2015
+    instruction: 52
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '90'
+    type: diubah
+    by: uu_8_2015
+    instruction: 53
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '91'
+    type: diubah
+    by: uu_8_2015
+    instruction: 54
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '94'
+    type: diubah
+    by: uu_8_2015
+    instruction: 55
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '95'
+    type: diubah
+    by: uu_8_2015
+    instruction: 56
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '98'
+    type: diubah
+    by: uu_8_2015
+    instruction: 57
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '100'
+    type: dihapus
+    by: uu_8_2015
+    instruction: 58
+    point: uu_1_2015_2015-03-18
+    wording: none
+  - pasal: '101'
+    type: dihapus
+    by: uu_8_2015
+    instruction: 59
+    point: uu_1_2015_2015-03-18
+    wording: none
+  - pasal: '102'
+    type: dihapus
+    by: uu_8_2015
+    instruction: 60
+    point: uu_1_2015_2015-03-18
+    wording: none
+  - pasal: '103'
+    type: diubah
+    by: uu_8_2015
+    instruction: 61
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '104'
+    type: diubah
+    by: uu_8_2015
+    instruction: 62
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '105'
+    type: diubah
+    by: uu_8_2015
+    instruction: 63
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '106'
+    type: diubah
+    by: uu_8_2015
+    instruction: 64
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '107'
+    type: diubah
+    by: uu_8_2015
+    instruction: 65
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '108'
+    type: diubah
+    by: uu_8_2015
+    instruction: 66
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '109'
+    type: diubah
+    by: uu_8_2015
+    instruction: 67
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '115'
+    type: diubah
+    by: uu_8_2015
+    instruction: 68
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '116'
+    type: diubah
+    by: uu_8_2015
+    instruction: 69
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '117'
+    type: diubah
+    by: uu_8_2015
+    instruction: 70
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '118'
+    type: diubah
+    by: uu_8_2015
+    instruction: 71
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '119'
+    type: diubah
+    by: uu_8_2015
+    instruction: 72
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '122'
+    type: diubah
+    by: uu_8_2015
+    instruction: 73
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '124'
+    type: diubah
+    by: uu_8_2015
+    instruction: 74
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '125'
+    type: diubah
+    by: uu_8_2015
+    instruction: 75
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '127'
+    type: diubah
+    by: uu_8_2015
+    instruction: 76
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '130'
+    type: diubah
+    by: uu_8_2015
+    instruction: 77
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '131'
+    type: diubah
+    by: uu_8_2015
+    instruction: 78
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '134'
+    type: diubah
+    by: uu_8_2015
+    instruction: 79
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '138'
+    type: diubah
+    by: uu_8_2015
+    instruction: 80
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '142'
+    type: diubah
+    by: uu_8_2015
+    instruction: 81
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '157'
+    type: diubah
+    by: uu_8_2015
+    instruction: 82
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '158'
+    type: diubah
+    by: uu_8_2015
+    instruction: 83
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '159'
+    type: dihapus
+    by: uu_8_2015
+    instruction: 84
+    point: uu_1_2015_2015-03-18
+    wording: none
+  - pasal: '160'
+    type: diubah
+    by: uu_8_2015
+    instruction: 85
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: 160A
+    type: disisipkan
+    by: uu_8_2015
+    instruction: 86
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '161'
+    type: diubah
+    by: uu_8_2015
+    instruction: 87
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '162'
+    type: diubah
+    by: uu_8_2015
+    instruction: 88
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '163'
+    type: diubah
+    by: uu_8_2015
+    instruction: 89
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '164'
+    type: diubah
+    by: uu_8_2015
+    instruction: 90
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '165'
+    type: diubah
+    by: uu_8_2015
+    instruction: 91
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '166'
+    type: diubah
+    by: uu_8_2015
+    instruction: 92
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '167'
+    type: dihapus
+    by: uu_8_2015
+    instruction: 93
+    point: uu_1_2015_2015-03-18
+    wording: none
+  - pasal: '168'
+    type: dihapus
+    by: uu_8_2015
+    instruction: 94
+    point: uu_1_2015_2015-03-18
+    wording: none
+  - pasal: '169'
+    type: dihapus
+    by: uu_8_2015
+    instruction: 95
+    point: uu_1_2015_2015-03-18
+    wording: none
+  - pasal: '170'
+    type: dihapus
+    by: uu_8_2015
+    instruction: 96
+    point: uu_1_2015_2015-03-18
+    wording: none
+  - pasal: '171'
+    type: dihapus
+    by: uu_8_2015
+    instruction: 97
+    point: uu_1_2015_2015-03-18
+    wording: none
+  - pasal: '172'
+    type: dihapus
+    by: uu_8_2015
+    instruction: 98
+    point: uu_1_2015_2015-03-18
+    wording: none
+  - pasal: '173'
+    type: diubah
+    by: uu_8_2015
+    instruction: 99
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '174'
+    type: diubah
+    by: uu_8_2015
+    instruction: 100
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '175'
+    type: dihapus
+    by: uu_8_2015
+    instruction: 101
+    point: uu_1_2015_2015-03-18
+    wording: none
+  - pasal: '176'
+    type: diubah
+    by: uu_8_2015
+    instruction: 102
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '184'
+    type: diubah
+    by: uu_8_2015
+    instruction: 103
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '185'
+    type: diubah
+    by: uu_8_2015
+    instruction: 104
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '189'
+    type: diubah
+    by: uu_8_2015
+    instruction: 105
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '191'
+    type: diubah
+    by: uu_8_2015
+    instruction: 106
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '192'
+    type: dihapus
+    by: uu_8_2015
+    instruction: 107
+    point: uu_1_2015_2015-03-18
+    wording: none
+  - pasal: '193'
+    type: diubah
+    by: uu_8_2015
+    instruction: 108
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '195'
+    type: diubah
+    by: uu_8_2015
+    instruction: 109
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '196'
+    type: diubah
+    by: uu_8_2015
+    instruction: 110
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '197'
+    type: diubah
+    by: uu_8_2015
+    instruction: 111
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '200'
+    type: diubah
+    by: uu_8_2015
+    instruction: 112
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '201'
+    type: diubah
+    by: uu_8_2015
+    instruction: 113
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '202'
+    type: diubah
+    by: uu_8_2015
+    instruction: 114
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: 205A
+    type: disisipkan
+    by: uu_8_2015
+    instruction: 115
+    point: uu_1_2015_2015-03-18
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: uu_10_2016
+    instruction: 1
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '9'
+    type: diubah
+    by: uu_10_2016
+    instruction: 2
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '10'
+    type: diubah
+    by: uu_10_2016
+    instruction: 3
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '16'
+    type: diubah
+    by: uu_10_2016
+    instruction: 4
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '19'
+    type: diubah
+    by: uu_10_2016
+    instruction: 5
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '20'
+    type: diubah
+    by: uu_10_2016
+    instruction: 6
+    point: uu_1_2015_2016-07-01
+    wording: unreadable
+  - pasal: '21'
+    type: diubah
+    by: uu_10_2016
+    instruction: 7
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 22B
+    type: diubah
+    by: uu_10_2016
+    instruction: 8
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '30'
+    type: diubah
+    by: uu_10_2016
+    instruction: 9
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '33'
+    type: diubah
+    by: uu_10_2016
+    instruction: 10
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '40'
+    type: diubah
+    by: uu_10_2016
+    instruction: 11
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 40A
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 12
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '41'
+    type: diubah
+    by: uu_10_2016
+    instruction: 13
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '42'
+    type: diubah
+    by: uu_10_2016
+    instruction: 14
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '45'
+    type: diubah
+    by: uu_10_2016
+    instruction: 15
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '48'
+    type: diubah
+    by: uu_10_2016
+    instruction: 16
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '54'
+    type: diubah
+    by: uu_10_2016
+    instruction: 17
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 54A
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 18
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 54B
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 18
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 54C
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 18
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 54D
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 18
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '57'
+    type: diubah
+    by: uu_10_2016
+    instruction: 19
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '58'
+    type: diubah
+    by: uu_10_2016
+    instruction: 20
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '59'
+    type: diubah
+    by: uu_10_2016
+    instruction: 21
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '61'
+    type: diubah
+    by: uu_10_2016
+    instruction: 22
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '63'
+    type: diubah
+    by: uu_10_2016
+    instruction: 23
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '65'
+    type: diubah
+    by: uu_10_2016
+    instruction: 24
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '68'
+    type: diubah
+    by: uu_10_2016
+    instruction: 25
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '70'
+    type: diubah
+    by: uu_10_2016
+    instruction: 26
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '71'
+    type: diubah
+    by: uu_10_2016
+    instruction: 27
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '73'
+    type: diubah
+    by: uu_10_2016
+    instruction: 28
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '74'
+    type: diubah
+    by: uu_10_2016
+    instruction: 29
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '85'
+    type: diubah
+    by: uu_10_2016
+    instruction: 30
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '107'
+    type: diubah
+    by: uu_10_2016
+    instruction: 31
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '109'
+    type: diubah
+    by: uu_10_2016
+    instruction: 32
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 133A
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 33
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 135A
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 34
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '144'
+    type: diubah
+    by: uu_10_2016
+    instruction: 35
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '146'
+    type: diubah
+    by: uu_10_2016
+    instruction: 36
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '152'
+    type: diubah
+    by: uu_10_2016
+    instruction: 37
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '153'
+    type: diubah
+    by: uu_10_2016
+    instruction: 38
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '154'
+    type: diubah
+    by: uu_10_2016
+    instruction: 39
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '156'
+    type: diubah
+    by: uu_10_2016
+    instruction: 40
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '157'
+    type: diubah
+    by: uu_10_2016
+    instruction: 41
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '158'
+    type: diubah
+    by: uu_10_2016
+    instruction: 42
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 160A
+    type: diubah
+    by: uu_10_2016
+    instruction: 43
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '162'
+    type: diubah
+    by: uu_10_2016
+    instruction: 44
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '163'
+    type: diubah
+    by: uu_10_2016
+    instruction: 45
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '164'
+    type: diubah
+    by: uu_10_2016
+    instruction: 46
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 164A
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 47
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 164B
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 47
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '165'
+    type: diubah
+    by: uu_10_2016
+    instruction: 48
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '173'
+    type: diubah
+    by: uu_10_2016
+    instruction: 50
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '174'
+    type: diubah
+    by: uu_10_2016
+    instruction: 51
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '176'
+    type: diubah
+    by: uu_10_2016
+    instruction: 52
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 177A
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 53
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 177B
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 53
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 178A
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 54
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 178H
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 54
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '180'
+    type: diubah
+    by: uu_10_2016
+    instruction: 55
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 182A
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 56
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 182B
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 56
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 185A
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 57
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 185B
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 57
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 186A
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 58
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 187A
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 59
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 187D
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 59
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 190A
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 60
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '193'
+    type: diubah
+    by: uu_10_2016
+    instruction: 61
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 193A
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 62
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 193B
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 62
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '196'
+    type: dihapus
+    by: uu_10_2016
+    instruction: 63
+    point: uu_1_2015_2016-07-01
+    wording: none
+  - pasal: 198A
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 64
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 200A
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 65
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '201'
+    type: diubah
+    by: uu_10_2016
+    instruction: 66
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 205B
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 67
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: 205C
+    type: disisipkan
+    by: uu_10_2016
+    instruction: 67
+    point: uu_1_2015_2016-07-01
+    wording: read
+  - pasal: '120'
+    type: diubah
+    by: perppu_2_2020
+    instruction: 1
+    point: uu_1_2015_2020-05-04
+    wording: read
+  - pasal: 122A
+    type: disisipkan
+    by: perppu_2_2020
+    instruction: 2
+    point: uu_1_2015_2020-05-04
+    wording: read
+  - pasal: 201A
+    type: disisipkan
+    by: perppu_2_2020
+    instruction: 3
+    point: uu_1_2015_2020-05-04
+    wording: read

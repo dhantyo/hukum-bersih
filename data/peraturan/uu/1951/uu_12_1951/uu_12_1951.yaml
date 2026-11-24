@@ -60,3 +60,30 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/53460/perpu-no-14-tahun-1960
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_12_1951_1951-08-29
+    kind: asli
+    date: '1951-09-10'
+    date_basis: tanggal_berlaku
+    text: uu_12_1951_1951-08-29.txt
+  - id: uu_12_1951_1960-04-07
+    kind: gabungan
+    date: '1960-04-07'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_14_1960
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: perppu_14_1960
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes: []

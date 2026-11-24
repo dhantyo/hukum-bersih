@@ -59,3 +59,68 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/304920/uu-no-64-tahun-2024
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_19_2006_2006-12-28
+    kind: asli
+    date: '2006-12-28'
+    date_basis: tanggal_berlaku
+    text: uu_19_2006_2006-12-28.txt
+  - id: uu_19_2006_2024-10-17
+    kind: gabungan
+    date: '2024-10-17'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_64_2024
+    order: 1
+    counts:
+      diubah: 6
+      disisipkan: 1
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_64_2024
+    instruction: 1
+    point: uu_19_2006_2024-10-17
+    wording: read
+  - pasal: 1A
+    type: disisipkan
+    by: uu_64_2024
+    instruction: 2
+    point: uu_19_2006_2024-10-17
+    wording: read
+  - pasal: '2'
+    type: diubah
+    by: uu_64_2024
+    instruction: 3
+    point: uu_19_2006_2024-10-17
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: uu_64_2024
+    instruction: 4
+    point: uu_19_2006_2024-10-17
+    wording: read
+  - pasal: '8'
+    type: diubah
+    by: uu_64_2024
+    instruction: 5
+    point: uu_19_2006_2024-10-17
+    wording: read
+  - pasal: '9'
+    type: diubah
+    by: uu_64_2024
+    instruction: 6
+    point: uu_19_2006_2024-10-17
+    wording: read
+  - pasal: '12'
+    type: diubah
+    by: uu_64_2024
+    instruction: 7
+    point: uu_19_2006_2024-10-17
+    wording: read

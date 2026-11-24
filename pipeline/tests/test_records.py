@@ -92,6 +92,40 @@ def test_missing_required_key_is_rejected():
         validate_record(rec)
 
 
+def _history() -> dict:
+    return {
+        "points": [
+            {"id": "uu_5_2026_2026-01-02", "kind": "asli", "date": "2026-01-02",
+             "date_basis": "tanggal_penetapan", "text": "uu_5_2026_2026-01-02.txt"},
+            {"id": "uu_5_2026_2027-03-04", "kind": "gabungan", "date": "2027-03-04",
+             "date_basis": "tanggal_berlaku", "after": ["uu_6_2027"], "order": 1,
+             "counts": {"diubah": 1, "disisipkan": 0, "dihapus": 0}, "missing_before": 0,
+             "unreadable": [], "not_applied": [], "complete": True}],
+        "changes": [{"pasal": "4", "type": "diubah", "by": "uu_6_2027", "instruction": 1,
+                     "point": "uu_5_2026_2027-03-04", "wording": "read"}]}
+
+
+def test_a_history_block_is_valid():
+    rec = valid()
+    rec["history"] = _history()
+    assert validate_record(rec)["history"]["changes"][0]["pasal"] == "4"
+
+
+@pytest.mark.parametrize("edit", [
+    lambda h: h["points"][0].update(after=["uu_6_2027"]),      # only a merged point has `after`
+    lambda h: h["points"][1].update(kind="konsolidasi"),       # unknown kind
+    lambda h: h["changes"][0].update(type="diganti"),
+    lambda h: h["changes"][0].update(wording="maybe"),
+    lambda h: h["points"][1]["counts"].update(diubah="1"),
+])
+def test_a_malformed_history_is_rejected(edit):
+    rec = valid()
+    rec["history"] = _history()
+    edit(rec["history"])
+    with pytest.raises(ValidationError):
+        validate_record(rec)
+
+
 def test_save_refuses_and_writes_nothing(tmp_path):
     rec = valid()
     rec["staus"] = "berlaku"

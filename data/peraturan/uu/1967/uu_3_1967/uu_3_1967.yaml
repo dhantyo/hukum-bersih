@@ -58,3 +58,32 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/47157/uu-no-4-tahun-1978
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_3_1967_1967-05-06
+    kind: asli
+    date: '1967-05-06'
+    date_basis: tanggal_berlaku
+    text: uu_3_1967_1967-05-06.txt
+  - id: uu_3_1967_1978-07-26
+    kind: gabungan
+    date: '1978-07-26'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_4_1978
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 1
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: false
+  changes:
+  - pasal: '11'
+    type: dihapus
+    by: uu_4_1978
+    instruction: null
+    point: uu_3_1967_1978-07-26
+    wording: none

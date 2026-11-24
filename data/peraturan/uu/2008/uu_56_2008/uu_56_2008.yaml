@@ -59,3 +59,74 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/38865/uu-no-14-tahun-2013
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_56_2008_2008-11-26
+    kind: asli
+    date: '2008-11-26'
+    date_basis: tanggal_berlaku
+    text: uu_56_2008_2008-11-26.txt
+  - id: uu_56_2008_2013-05-15
+    kind: gabungan
+    date: '2013-05-15'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_14_2013
+    order: 1
+    counts:
+      diubah: 4
+      disisipkan: 4
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_14_2013
+    instruction: 1
+    point: uu_56_2008_2013-05-15
+    wording: read
+  - pasal: '3'
+    type: diubah
+    by: uu_14_2013
+    instruction: 2
+    point: uu_56_2008_2013-05-15
+    wording: read
+  - pasal: '4'
+    type: diubah
+    by: uu_14_2013
+    instruction: 3
+    point: uu_56_2008_2013-05-15
+    wording: read
+  - pasal: '5'
+    type: diubah
+    by: uu_14_2013
+    instruction: 4
+    point: uu_56_2008_2013-05-15
+    wording: read
+  - pasal: 6A
+    type: disisipkan
+    by: uu_14_2013
+    instruction: 5
+    point: uu_56_2008_2013-05-15
+    wording: read
+  - pasal: 14A
+    type: disisipkan
+    by: uu_14_2013
+    instruction: 6
+    point: uu_56_2008_2013-05-15
+    wording: read
+  - pasal: 19A
+    type: disisipkan
+    by: uu_14_2013
+    instruction: 7
+    point: uu_56_2008_2013-05-15
+    wording: read
+  - pasal: 20A
+    type: disisipkan
+    by: uu_14_2013
+    instruction: 8
+    point: uu_56_2008_2013-05-15
+    wording: read

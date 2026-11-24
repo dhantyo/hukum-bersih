@@ -77,9 +77,16 @@ Ids never contain the project name.
 
 ```
 data/peraturan/uu/2008/uu_11_2008/
-  uu_11_2008.yaml                 details: title, status, relationships, versions (short names: data/koleksi/)
+  uu_11_2008.yaml                 details: title, status, relationships, versions, history (its versions and
+                                  changes, decision 0010); short names: data/koleksi/
   uu_11_2008_2008-04-21.txt       text as enacted (Bluebell / Akoma Ntoso)
-  uu_11_2008_2024-01-02.txt       (later) consolidated text, marked unofficial
+```
+
+A merged version (`kind: gabungan` in `history.points`) has an id like any dated version
+(`uu_11_2008_2016-12-25`: dated by when the amending law it adds took effect) but no text
+file: the website builds it from the text as enacted and the amending laws (decision 0010).
+
+```
 data/ruu/perampasan-aset/
   ruu.yaml
   versions/ruu_perampasan-aset_2026-11-19_draft-final.txt

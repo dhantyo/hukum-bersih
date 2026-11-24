@@ -81,3 +81,294 @@ uji_materi:
     yang bersangkutan berdasarkan hasil pemeriksaan dokter yang dilakukan secara berkala
     setiap tahun pada rumah sakit umum pemerintah pusat, rumah sakit umum daerah,
     atau rumah sakit yang ditunjuk oleh Menteri yang menangani urusan di bidang hukum."
+history:
+  points:
+  - id: uu_30_2004_2004-10-06
+    kind: asli
+    date: '2004-10-06'
+    date_basis: tanggal_berlaku
+    text: uu_30_2004_2004-10-06.txt
+  - id: uu_30_2004_2014-01-15
+    kind: gabungan
+    date: '2014-01-15'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_2_2014
+    order: 1
+    counts:
+      diubah: 36
+      disisipkan: 5
+      dihapus: 1
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_2_2014
+      instruction: 14
+      header: Judul Bagian Kedua
+      affects_wording: false
+    - by: uu_2_2014
+      instruction: 15
+      header: 'BAB V diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_2_2014
+      instruction: 35
+      header: 'Judul Bab VIII diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_2_2014
+      instruction: 43
+      header: Ketentuan Bab XI dihapus.
+      affects_wording: true
+    complete: false
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_2_2014
+    instruction: 1
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '3'
+    type: diubah
+    by: uu_2_2014
+    instruction: 2
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: uu_2_2014
+    instruction: 3
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '9'
+    type: diubah
+    by: uu_2_2014
+    instruction: 4
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '11'
+    type: diubah
+    by: uu_2_2014
+    instruction: 5
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '15'
+    type: diubah
+    by: uu_2_2014
+    instruction: 6
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '16'
+    type: diubah
+    by: uu_2_2014
+    instruction: 7
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: 16A
+    type: disisipkan
+    by: uu_2_2014
+    instruction: 8
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '17'
+    type: diubah
+    by: uu_2_2014
+    instruction: 9
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '19'
+    type: diubah
+    by: uu_2_2014
+    instruction: 10
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '20'
+    type: diubah
+    by: uu_2_2014
+    instruction: 11
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '22'
+    type: diubah
+    by: uu_2_2014
+    instruction: 12
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '32'
+    type: diubah
+    by: uu_2_2014
+    instruction: 13
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '33'
+    type: diubah
+    by: uu_2_2014
+    instruction: 16
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '34'
+    type: dihapus
+    by: uu_2_2014
+    instruction: 17
+    point: uu_30_2004_2014-01-15
+    wording: none
+  - pasal: '35'
+    type: diubah
+    by: uu_2_2014
+    instruction: 18
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '37'
+    type: diubah
+    by: uu_2_2014
+    instruction: 19
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '38'
+    type: diubah
+    by: uu_2_2014
+    instruction: 20
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '39'
+    type: diubah
+    by: uu_2_2014
+    instruction: 21
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '40'
+    type: diubah
+    by: uu_2_2014
+    instruction: 22
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '41'
+    type: diubah
+    by: uu_2_2014
+    instruction: 23
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '43'
+    type: diubah
+    by: uu_2_2014
+    instruction: 24
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '44'
+    type: diubah
+    by: uu_2_2014
+    instruction: 25
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '48'
+    type: diubah
+    by: uu_2_2014
+    instruction: 26
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '49'
+    type: diubah
+    by: uu_2_2014
+    instruction: 27
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '50'
+    type: diubah
+    by: uu_2_2014
+    instruction: 28
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '51'
+    type: diubah
+    by: uu_2_2014
+    instruction: 29
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '54'
+    type: diubah
+    by: uu_2_2014
+    instruction: 30
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '60'
+    type: diubah
+    by: uu_2_2014
+    instruction: 31
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '63'
+    type: diubah
+    by: uu_2_2014
+    instruction: 32
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '65'
+    type: diubah
+    by: uu_2_2014
+    instruction: 33
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: 65A
+    type: disisipkan
+    by: uu_2_2014
+    instruction: 34
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '66'
+    type: diubah
+    by: uu_2_2014
+    instruction: 36
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: 66A
+    type: disisipkan
+    by: uu_2_2014
+    instruction: 37
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '67'
+    type: diubah
+    by: uu_2_2014
+    instruction: 38
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '69'
+    type: diubah
+    by: uu_2_2014
+    instruction: 39
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '73'
+    type: diubah
+    by: uu_2_2014
+    instruction: 40
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '81'
+    type: diubah
+    by: uu_2_2014
+    instruction: 41
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '82'
+    type: diubah
+    by: uu_2_2014
+    instruction: 42
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: '88'
+    type: diubah
+    by: uu_2_2014
+    instruction: 44
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: 91A
+    type: disisipkan
+    by: uu_2_2014
+    instruction: 45
+    point: uu_30_2004_2014-01-15
+    wording: read
+  - pasal: 91B
+    type: disisipkan
+    by: uu_2_2014
+    instruction: 45
+    point: uu_30_2004_2014-01-15
+    wording: read

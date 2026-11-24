@@ -181,3 +181,54 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/51907/uudrt-no-21-tahun-1957
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_12_1956_1956-03-19
+    kind: asli
+    date: '1956-03-29'
+    date_basis: tanggal_berlaku
+    text: uu_12_1956_1956-03-19.txt
+  - id: uu_12_1956_1965-06-14
+    kind: gabungan
+    date: '1965-06-14'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_6_1965
+    - uu_7_1965
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_6_1965
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    - by: uu_7_1965
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  - id: uu_12_1956_1965-07-14
+    kind: gabungan
+    date: '1965-07-14'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_8_1965
+    order: 3
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_8_1965
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes: []

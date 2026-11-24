@@ -58,3 +58,30 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/50008/uu-no-9-tahun-1965
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_13_1950_1950-08-08
+    kind: asli
+    date: '1950-08-08'
+    date_basis: tanggal_pengundangan
+    text: uu_13_1950_1950-08-08.txt
+  - id: uu_13_1950_1965-06-14
+    kind: gabungan
+    date: '1965-06-14'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_9_1965
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_9_1965
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes: []
