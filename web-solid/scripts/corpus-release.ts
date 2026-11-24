@@ -11,13 +11,17 @@ import {
   writeFile,
 } from "node:fs/promises";
 import { tmpdir } from "node:os";
-import { join, resolve } from "node:path";
+import path from "node:path";
 
-type Target = { kind: "local"; root: string } | { kind: "r2"; remote: string };
+import * as v from "valibot";
 
-interface PagefindEntry {
-  languages?: Record<string, { page_count: number }>;
-}
+import { isPresent } from "../src/lib/text.ts";
+
+const pagefindEntry = v.object({
+  languages: v.optional(
+    v.record(v.string(), v.object({ page_count: v.number() }))
+  ),
+});
 
 const USAGE =
   "Use publish <indexed-directory> or activate <release-id> with either HUKUM_CORPUS_DIR or HUKUM_CORPUS_REMOTE.";
@@ -25,18 +29,22 @@ const USAGE =
 const READY_FILE = "release-id";
 const releaseIdPattern = /^[a-f0-9]{64}$/u;
 
-const readTarget = (): Target => {
+const readTarget = () => {
   const root = process.env.HUKUM_CORPUS_DIR;
   const remote = process.env.HUKUM_CORPUS_REMOTE;
 
-  if (Boolean(root) === Boolean(remote)) {
-    throw new Error(USAGE);
+  if (isPresent(root) && !isPresent(remote)) {
+    return { kind: "local", root } as const;
   }
 
-  return root
-    ? { kind: "local", root }
-    : { kind: "r2", remote: remote as string };
+  if (isPresent(remote) && !isPresent(root)) {
+    return { kind: "r2", remote } as const;
+  }
+
+  throw new Error(USAGE);
 };
+
+type Target = ReturnType<typeof readTarget>;
 
 const rclone = (...args: string[]) =>
   execFileSync("rclone", args, { encoding: "utf-8" });
@@ -50,11 +58,17 @@ const validateRelease = async (directory: string) => {
     throw new Error("The release contains no law documents");
   }
 
-  const entry = JSON.parse(
-    await readFile(join(directory, "pagefind/pagefind-entry.json"), "utf-8")
-  ) as PagefindEntry;
+  const entry = v.parse(
+    pagefindEntry,
+    JSON.parse(
+      await readFile(
+        path.join(directory, "pagefind/pagefind-entry.json"),
+        "utf-8"
+      )
+    )
+  );
 
-  await readFile(join(directory, "pagefind/pagefind.js"));
+  await readFile(path.join(directory, "pagefind/pagefind.js"));
 
   const searchable = Object.values(entry.languages ?? {}).some(
     (language) => language.page_count > 0
@@ -78,7 +92,7 @@ const releaseDigest = async (directory: string) => {
 
   const keys = files
     .map((entry) =>
-      join(entry.parentPath, entry.name).slice(directory.length + 1)
+      path.join(entry.parentPath, entry.name).slice(directory.length + 1)
     )
     .toSorted();
 
@@ -86,7 +100,7 @@ const releaseDigest = async (directory: string) => {
 
   for (const key of keys) {
     // oxlint-disable-next-line no-await-in-loop -- the digest hashes files in key order
-    const content = await readFile(join(directory, key));
+    const content = await readFile(path.join(directory, key));
     const checksum = createHash("sha256").update(content).digest("hex");
     hash.update(`${JSON.stringify([key, checksum])}\n`);
   }
@@ -104,7 +118,7 @@ const assertReleaseReady = async (target: Target, release: string) => {
   const marker =
     target.kind === "r2"
       ? rclone("cat", `${target.remote}/${key}`)
-      : await readFile(join(target.root, key), "utf-8");
+      : await readFile(path.join(target.root, key), "utf-8");
 
   if (marker.trim() !== release) {
     throw new Error(`Release ${release} is incomplete`);
@@ -128,7 +142,7 @@ const storeRelease = async (
     );
     rclone(
       "copyto",
-      join(directory, READY_FILE),
+      path.join(directory, READY_FILE),
       `${prefix}/${READY_FILE}`,
       "--immutable"
     );
@@ -136,12 +150,12 @@ const storeRelease = async (
     return;
   }
 
-  await mkdir(join(target.root, "releases"), { recursive: true });
+  await mkdir(path.join(target.root, "releases"), { recursive: true });
 
   try {
-    await rename(directory, join(target.root, "releases", release));
+    await rename(directory, path.join(target.root, "releases", release));
   } catch (error) {
-    const { code } = error as NodeJS.ErrnoException;
+    const code = error instanceof Error && "code" in error ? error.code : "";
 
     if (code !== "EEXIST" && code !== "ENOTEMPTY") {
       throw error;
@@ -157,7 +171,7 @@ const activateRelease = async (
   release: string
 ) => {
   await assertReleaseReady(target, release);
-  const pointer = join(scratch, "active-release");
+  const pointer = path.join(scratch, "active-release");
   await writeFile(pointer, `${release}\n`, { flag: "wx" });
 
   if (target.kind === "r2") {
@@ -168,7 +182,7 @@ const activateRelease = async (
       "--ignore-times"
     );
   } else {
-    await rename(pointer, join(target.root, "active-release"));
+    await rename(pointer, path.join(target.root, "active-release"));
   }
 };
 
@@ -177,23 +191,27 @@ const publishRelease = async (
   scratch: string,
   source: string
 ) => {
-  const directory = join(scratch, "release");
+  const directory = path.join(scratch, "release");
   await mkdir(directory);
   await Promise.all(
     ["laws", "pagefind", "law-catalog.json"].map(async (group) => {
-      await cp(join(source, group), join(directory, group), {
+      await cp(path.join(source, group), path.join(directory, group), {
         recursive: true,
       });
     })
   );
 
   for await (const group of glob("{collections,drafts}", { cwd: source })) {
-    await cp(join(source, group), join(directory, group), { recursive: true });
+    await cp(path.join(source, group), path.join(directory, group), {
+      recursive: true,
+    });
   }
 
   await validateRelease(directory);
   const release = await releaseDigest(directory);
-  await writeFile(join(directory, READY_FILE), `${release}\n`, { flag: "wx" });
+  await writeFile(path.join(directory, READY_FILE), `${release}\n`, {
+    flag: "wx",
+  });
   await storeRelease(target, directory, release);
 
   return release;
@@ -201,22 +219,26 @@ const publishRelease = async (
 
 const [command, argument] = process.argv.slice(2);
 
-if (!argument || (command !== "publish" && command !== "activate")) {
+if (
+  argument === undefined ||
+  (command !== "publish" && command !== "activate")
+) {
   throw new Error(USAGE);
 }
 
 const target = readTarget();
 
-const stagingRoot = target.kind === "local" ? resolve(target.root) : tmpdir();
+const stagingRoot =
+  target.kind === "local" ? path.resolve(target.root) : tmpdir();
 
 await mkdir(stagingRoot, { recursive: true });
 
-const scratch = await mkdtemp(join(stagingRoot, ".corpus-release-"));
+const scratch = await mkdtemp(path.join(stagingRoot, ".corpus-release-"));
 
 try {
   const release =
     command === "publish"
-      ? await publishRelease(target, scratch, resolve(argument))
+      ? await publishRelease(target, scratch, path.resolve(argument))
       : argument;
 
   await activateRelease(target, scratch, release);

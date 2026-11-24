@@ -9,7 +9,7 @@ import {
   writeFile,
 } from "node:fs/promises";
 import { tmpdir } from "node:os";
-import { dirname, join, resolve } from "node:path";
+import path from "node:path";
 
 import { handleRequest } from "../dist/server/server.js";
 import type { CorpusBucket } from "../src/server/corpus.ts";
@@ -20,7 +20,7 @@ if (!releaseDirectory) {
   throw new Error("Usage: pnpm run index-corpus <release-directory>");
 }
 
-const renderDocument = async (site: string, path: string, key: string) => {
+const renderDocument = async (site: string, pagePath: string, key: string) => {
   const corpus: CorpusBucket = {
     async get(requestKey) {
       if (requestKey === "active-release") {
@@ -31,21 +31,21 @@ const renderDocument = async (site: string, path: string, key: string) => {
         return null;
       }
 
-      return new Response(await readFile(join(releaseDirectory, key)));
+      return new Response(await readFile(path.join(releaseDirectory, key)));
     },
   };
 
   const response = await handleRequest(
-    new Request(`https://index.invalid${path}`),
+    new Request(`https://index.invalid${pagePath}`),
     { event: { locals: { corpus } } }
   );
 
   if (!response.ok) {
-    throw new Error(`Could not render ${path}: ${response.status}`);
+    throw new Error(`Could not render ${pagePath}: ${response.status}`);
   }
 
-  const destination = join(site, path, "index.html");
-  await mkdir(dirname(destination), { recursive: true });
+  const destination = path.join(site, pagePath, "index.html");
+  await mkdir(path.dirname(destination), { recursive: true });
   await writeFile(destination, await response.text());
 };
 
@@ -65,14 +65,17 @@ const runPagefind = (site: string, output: string) => {
   }
 };
 
-const site = await mkdtemp(join(tmpdir(), "hukum-pagefind-"));
-const scratch = await mkdtemp(join(resolve(releaseDirectory), ".pagefind-"));
+const site = await mkdtemp(path.join(tmpdir(), "hukum-pagefind-"));
+
+const scratch = await mkdtemp(
+  path.join(path.resolve(releaseDirectory), ".pagefind-")
+);
 
 try {
   let count = 0;
 
   for await (const file of glob("uu/*/*/index.json", {
-    cwd: join(releaseDirectory, "laws"),
+    cwd: path.join(releaseDirectory, "laws"),
   })) {
     await renderDocument(
       site,
@@ -98,7 +101,7 @@ try {
   }
 
   runPagefind(site, scratch);
-  await rename(scratch, resolve(releaseDirectory, "pagefind"));
+  await rename(scratch, path.resolve(releaseDirectory, "pagefind"));
 } finally {
   await rm(scratch, { recursive: true, force: true });
   await rm(site, { recursive: true, force: true });

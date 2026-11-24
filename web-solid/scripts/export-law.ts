@@ -1,44 +1,49 @@
-import { mkdir, mkdtemp, rename, rm, writeFile } from "node:fs/promises";
-import { dirname, join, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
+import {
+  mkdirSync,
+  mkdtempSync,
+  renameSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
+import path from "node:path";
+
+import * as v from "valibot";
+
+import { lawPath } from "../src/lib/schemas.ts";
+import { isPresent } from "../src/lib/text.ts";
+import {
+  amendments,
+  fromInvocation,
+  lawtext,
+  peraturan,
+} from "./astro-data.ts";
+import { readerText } from "./reader-text.ts";
+
+type Regulation = ReturnType<typeof peraturan.loadRegulations>[number];
 
 const [lawId, output] = process.argv.slice(2);
 
-if (!lawId || !output) {
+if (lawId === undefined || output === undefined) {
   throw new Error(
     "Use pnpm run export-law <law-id> <output.json> or pnpm run export-law --all <release-directory>."
   );
 }
 
-const destination = resolve(output);
+const destination = fromInvocation(output);
 
-// The current loaders resolve the generated corpus relative to the Astro project.
-process.chdir(fileURLToPath(new URL("../../web/", import.meta.url)));
-
-const { loadRegulations, loadRegulationText, lawPath, citeId, pathOf } =
-  await import("../../web/src/lib/peraturan.ts");
-
-const { amendmentSteps, shortName } =
-  await import("../../web/src/lib/amendments.ts");
-
-const { readerText } = await import("./reader-text.ts");
-
-const { pasalText } = await import("../../web/src/lib/lawtext.ts");
-
-type Regulation = ReturnType<typeof loadRegulations>[number];
-
-function readerAmendments(
+const readerAmendments = (
   regulation: Regulation,
-  text: ReturnType<typeof loadRegulationText>
-) {
-  return amendmentSteps(regulation, text).map(
-    ({ by, changes, headerOnly, date, gap }) => {
-      const href = pathOf(by.id);
+  text: ReturnType<typeof peraturan.loadRegulationText>
+) =>
+  amendments
+    .amendmentSteps(regulation, text)
+    .map(({ by, changes, headerOnly, date, gap }) => {
+      const href = peraturan.pathOf(by.id);
 
       return {
         id: by.id,
-        label: citeId(by.id),
-        href: href && `/${href}`,
+        label: peraturan.citeId(by.id),
+        href: href === undefined ? undefined : `/${href}`,
         date,
         gap,
         instructions: headerOnly.map(({ header }) => header),
@@ -49,27 +54,25 @@ function readerAmendments(
             kind,
             missingBefore,
             missingAfter,
-            before: row.a ? pasalText(row.a) : null,
-            after: row.b ? pasalText(row.b) : null,
+            before: row.a ? lawtext.pasalText(row.a) : null,
+            after: row.b ? lawtext.pasalText(row.b) : null,
           })
         ),
       };
-    }
-  );
-}
+    });
 
-function readerLaw(law: Regulation) {
-  const document = loadRegulationText(law);
+const readerLaw = (law: Regulation) => {
+  const document = peraturan.loadRegulationText(law);
 
-  if (!document && law.versions.some((version) => version.text)) {
+  if (!document && law.versions.some((version) => isPresent(version.text))) {
     throw new Error(`Generated Akoma Ntoso is missing for ${law.id}`);
   }
 
   return {
-    path: `/${lawPath(law)}`,
+    path: `/${peraturan.lawPath(law)}`,
     title: law.title,
     subject: law.subject,
-    shortName: shortName(law),
+    shortName: amendments.shortName(law),
     status: law.status,
     source: law.source_url,
     pdf: law.source_pdf_url,
@@ -77,44 +80,44 @@ function readerLaw(law: Regulation) {
     text: document ? readerText(document) : null,
     amendments: readerAmendments(law, document),
   };
-}
+};
 
-async function writeLaw(law: Regulation, file: string, flag = "w") {
-  await mkdir(dirname(file), { recursive: true });
-  await writeFile(file, `${JSON.stringify(readerLaw(law))}\n`, { flag });
-}
+const writeLaw = (law: Regulation, file: string, flag = "w") => {
+  mkdirSync(path.dirname(file), { recursive: true });
+  writeFileSync(file, `${JSON.stringify(readerLaw(law))}\n`, { flag });
+};
 
-async function exportCorpus(laws: Regulation[], directory: string) {
-  if (!laws.length) {
+const exportCorpus = (laws: Regulation[], directory: string) => {
+  if (laws.length === 0) {
     throw new Error("The corpus contains no laws");
   }
 
-  await mkdir(directory, { recursive: true });
-  const scratch = await mkdtemp(join(directory, ".laws-"));
+  mkdirSync(directory, { recursive: true });
+  const scratch = mkdtempSync(path.join(directory, ".laws-"));
 
   try {
     for (const law of laws) {
-      const path = lawPath(law);
+      const lawDirectory = peraturan.lawPath(law);
 
-      if (!/^uu\/\d+\/\d{4}\/$/.test(path)) {
-        throw new Error(`Invalid law path: ${path}`);
+      if (!v.is(lawPath, `/${lawDirectory}`)) {
+        throw new Error(`Invalid law path: ${lawDirectory}`);
       }
 
-      await writeLaw(law, join(scratch, path, "index.json"), "wx");
+      writeLaw(law, path.join(scratch, lawDirectory, "index.json"), "wx");
     }
 
-    await rename(scratch, join(directory, "laws"));
+    renameSync(scratch, path.join(directory, "laws"));
   } finally {
-    await rm(scratch, { recursive: true, force: true });
+    rmSync(scratch, { recursive: true, force: true });
   }
 
   console.log(`Exported ${laws.length} laws`);
-}
+};
 
-const laws = loadRegulations().filter((law) => law.type === "uu");
+const laws = peraturan.loadRegulations().filter((law) => law.type === "uu");
 
 if (lawId === "--all") {
-  await exportCorpus(laws, destination);
+  exportCorpus(laws, destination);
 } else {
   const law = laws.find((record) => record.id === lawId);
 
@@ -122,5 +125,5 @@ if (lawId === "--all") {
     throw new Error(`Unknown law: ${lawId}`);
   }
 
-  await writeLaw(law, destination);
+  writeLaw(law, destination);
 }

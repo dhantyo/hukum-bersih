@@ -1,24 +1,21 @@
 import { glob, writeFile } from "node:fs/promises";
-import { join, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
+import path from "node:path";
+
+import { fromInvocation, searchCatalog } from "./astro-data.ts";
 
 const [stage] = process.argv.slice(2);
 
-if (!stage) {
+if (stage === undefined) {
   throw new Error("Use pnpm run export-catalog <release-directory>.");
 }
 
-const destination = resolve(stage);
-
-process.chdir(fileURLToPath(new URL("../../web/", import.meta.url)));
-
-const { searchCatalog } = await import("../../web/src/lib/search-catalog.ts");
+const destination = fromInvocation(stage);
 
 const files = await Array.fromAsync(
-  glob("uu/*/*/index.json", { cwd: join(destination, "laws") })
+  glob("uu/*/*/index.json", { cwd: path.join(destination, "laws") })
 );
 
-if (!files.length) {
+if (files.length === 0) {
   throw new Error("The release contains no exported law documents");
 }
 
@@ -27,14 +24,14 @@ const paths = new Set(
 );
 
 const drafts = await Array.fromAsync(
-  glob("*/index.json", { cwd: join(destination, "drafts") })
+  glob("*/index.json", { cwd: path.join(destination, "drafts") })
 );
 
 for (const file of drafts) {
   paths.add(`/ruu/${file.slice(0, -"index.json".length)}`);
 }
 
-const catalog = searchCatalog("/");
+const catalog = searchCatalog.searchCatalog("/");
 
 const complete = catalog.laws
   .filter((law) => law.u.startsWith("/uu/"))
@@ -48,6 +45,6 @@ const published = {
 };
 
 await writeFile(
-  join(destination, "law-catalog.json"),
+  path.join(destination, "law-catalog.json"),
   `${JSON.stringify(published)}\n`
 );

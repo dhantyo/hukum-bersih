@@ -1,51 +1,49 @@
-import { mkdir, writeFile } from "node:fs/promises";
-import { join, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
+import { mkdirSync, writeFileSync } from "node:fs";
+import path from "node:path";
 
+import * as v from "valibot";
+
+import { collectionVersion, slug } from "../src/lib/schemas.ts";
+import { isPresent } from "../src/lib/text.ts";
+import {
+  amendments,
+  fromInvocation,
+  koleksi,
+  merge,
+  peraturan,
+  versions,
+} from "./astro-data.ts";
 import { readerText } from "./reader-text.ts";
+
+type Collection = ReturnType<typeof koleksi.loadKoleksi>[number];
+
+type Merged = NonNullable<ReturnType<typeof merge.mergedDoc>>;
+
+type VersionRows = ReturnType<typeof versions.versionRows>;
 
 const [stage] = process.argv.slice(2);
 
-if (!stage) {
+if (stage === undefined) {
   throw new Error("Use pnpm run export-collections <release-directory>.");
 }
 
-const root = resolve(stage, "collections");
+const root = fromInvocation(stage, "collections");
 
-process.chdir(fileURLToPath(new URL("../../web/", import.meta.url)));
-
-const { loadKoleksi } = await import("../../web/src/lib/koleksi.ts");
-
-const { citeId, lawPath, loadRegulationText } =
-  await import("../../web/src/lib/peraturan.ts");
-
-const { compareData, hasAmendmentSteps, versionHistory } =
-  await import("../../web/src/lib/amendments.ts");
-
-const { historyOf, versionRows } =
-  await import("../../web/src/lib/versions.ts");
-
-const { mergedDoc } = await import("../../web/src/lib/merge.ts");
-
-type Collection = ReturnType<typeof loadKoleksi>[number];
-
-type Merged = NonNullable<ReturnType<typeof mergedDoc>>;
-
-function mergedRecord(
+const mergedRecord = (
   collection: Collection,
   merged: Merged,
-  versions: ReturnType<typeof versionRows>
-) {
+  rows: VersionRows
+) => {
   const { point, doc, unreadable, notes } = merged;
 
   return {
     date: point.date,
     base: {
-      label: citeId(collection.base.id),
-      href: `/${lawPath(collection.base)}`,
+      label: peraturan.citeId(collection.base.id),
+      href: `/${peraturan.lawPath(collection.base)}`,
     },
-    amendments: (point.after ?? []).map(citeId),
-    versions: versions.map(({ label, date, href, sub }) => ({
+    amendments: (point.after ?? []).map(peraturan.citeId),
+    versions: rows.map(({ label, date, href, sub }) => ({
       label,
       date,
       href,
@@ -60,58 +58,61 @@ function mergedRecord(
     notes: Object.fromEntries(notes),
     text: readerText(doc),
   };
-}
+};
 
-async function writeJson(directory: string, name: string, record: unknown) {
-  await mkdir(directory, { recursive: true });
-  await writeFile(join(directory, `${name}.json`), JSON.stringify(record));
-}
+const writeJson = (directory: string, name: string, json: string) => {
+  mkdirSync(directory, { recursive: true });
+  writeFileSync(path.join(directory, `${name}.json`), json);
+};
 
-async function exportCollection(collection: Collection, directory: string) {
-  const document = loadRegulationText(collection.base);
+const exportCollection = (collection: Collection, directory: string) => {
+  const document = peraturan.loadRegulationText(collection.base);
 
   if (!document) {
     return;
   }
 
-  if (hasAmendmentSteps(collection.base)) {
-    const comparison = compareData(versionHistory(collection.base, document));
-    await writeJson(directory, "perubahan", comparison);
+  if (amendments.hasAmendmentSteps(collection.base)) {
+    const comparison = amendments.compareData(
+      amendments.versionHistory(collection.base, document)
+    );
+
+    writeJson(directory, "perubahan", JSON.stringify(comparison));
   }
 
-  const points = historyOf(collection.base)?.points ?? [];
+  const points = versions.historyOf(collection.base)?.points ?? [];
   const latest = points.at(-1);
-  const versions = versionRows(collection);
+  const rows = versions.versionRows(collection);
 
   for (const point of points) {
-    if (point.kind !== "gabungan" || (point !== latest && !point.date)) {
+    if (
+      point.kind !== "gabungan" ||
+      (point !== latest && !isPresent(point.date))
+    ) {
       continue;
     }
 
-    const merged = mergedDoc(collection, point.id);
+    const merged = merge.mergedDoc(collection, point.id);
 
     if (!merged) {
       continue;
     }
 
-    const name = point === latest ? "latest" : point.date;
+    const name = v.parse(
+      collectionVersion,
+      point === latest ? "latest" : point.date
+    );
 
-    if (!name || !/^(?:latest|\d{4}-\d{2}-\d{2})$/.test(name)) {
-      throw new Error(`Invalid collection version date: ${name}`);
-    }
-
-    await writeJson(
+    writeJson(
       directory,
       name,
-      mergedRecord(collection, merged, versions)
+      JSON.stringify(mergedRecord(collection, merged, rows))
     );
   }
-}
+};
 
-for (const collection of loadKoleksi()) {
-  if (!/^[a-z0-9-]+$/.test(collection.slug)) {
-    throw new Error(`Invalid collection: ${collection.slug}`);
-  }
+for (const collection of koleksi.loadKoleksi()) {
+  const collectionSlug = v.parse(slug, collection.slug);
 
-  await exportCollection(collection, join(root, collection.slug));
+  exportCollection(collection, path.join(root, collectionSlug));
 }

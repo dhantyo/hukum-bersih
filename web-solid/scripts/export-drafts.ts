@@ -1,25 +1,23 @@
-import { mkdir, writeFile } from "node:fs/promises";
-import { join, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
+import { mkdirSync, writeFileSync } from "node:fs";
+import path from "node:path";
 
+import * as v from "valibot";
+
+import { draftDocumentId, slug } from "../src/lib/schemas.ts";
+import { data, fromInvocation } from "./astro-data.ts";
 import { readerText } from "./reader-text.ts";
+
+type Draft = ReturnType<typeof data.loadRuus>[number];
 
 const [stage] = process.argv.slice(2);
 
-if (!stage) {
+if (stage === undefined) {
   throw new Error("Use pnpm run export-drafts <release-directory>.");
 }
 
-const root = resolve(stage, "drafts");
+const root = fromInvocation(stage, "drafts");
 
-process.chdir(fileURLToPath(new URL("../../web/", import.meta.url)));
-
-const { loadRuus, loadText, versions } =
-  await import("../../web/src/lib/data.ts");
-
-type Draft = ReturnType<typeof loadRuus>[number];
-
-function documentMetadata(document: Draft["documents"][number]) {
+const documentMetadata = (document: Draft["documents"][number]) => {
   const {
     id,
     type,
@@ -46,15 +44,11 @@ function documentMetadata(document: Draft["documents"][number]) {
     ruu_title,
     hasText: Boolean(document.text),
   };
-}
+};
 
-async function exportDraft(bill: Draft) {
-  if (!/^[a-z0-9-]+$/.test(bill.slug)) {
-    throw new Error(`Invalid draft slug: ${bill.slug}`);
-  }
-
-  const directory = join(root, bill.slug);
-  await mkdir(join(directory, "documents"), { recursive: true });
+const exportDraft = (bill: Draft) => {
+  const directory = path.join(root, v.parse(slug, bill.slug));
+  mkdirSync(path.join(directory, "documents"), { recursive: true });
   const name = bill.short_name ?? bill.title;
 
   const record = {
@@ -63,29 +57,27 @@ async function exportDraft(bill: Draft) {
     documents: bill.documents.map(documentMetadata),
   };
 
-  await writeFile(join(directory, "index.json"), JSON.stringify(record));
+  writeFileSync(path.join(directory, "index.json"), JSON.stringify(record));
 
-  for (const document of versions(bill)) {
-    if (!/^[a-z0-9_-]+$/.test(document.id)) {
-      throw new Error(`Invalid draft document: ${document.id}`);
-    }
-
-    const text = readerText(loadText(bill, document));
-
+  for (const document of data.versions(bill)) {
     const exported = {
       name,
       title: bill.title,
       document: documentMetadata(document),
-      text,
+      text: readerText(data.loadText(bill, document)),
     };
 
-    await writeFile(
-      join(directory, "documents", `${document.id}.json`),
+    writeFileSync(
+      path.join(
+        directory,
+        "documents",
+        `${v.parse(draftDocumentId, document.id)}.json`
+      ),
       JSON.stringify(exported)
     );
   }
-}
+};
 
-for (const bill of loadRuus()) {
-  await exportDraft(bill);
+for (const bill of data.loadRuus()) {
+  exportDraft(bill);
 }
