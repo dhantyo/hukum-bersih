@@ -25,7 +25,7 @@ const parts = view ? [
   view.penutup && { key: "penutup", label: "Penutup" },
 ].filter(Boolean) as { key: string; label: string }[] : [];
 ---
-<details class:list={["reading", { law: view }]}>
+<details class:list={["reading", { "with-law": view }]}>
   <summary aria-label="Tampilan teks"><span aria-hidden="true">Aa</span></summary>
   <div class="pop" role="group" aria-label="Tampilan teks">
     {view && (
@@ -145,7 +145,7 @@ const parts = view ? [
     background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md);
     box-shadow: var(--shadow-pop); padding: var(--s-4);
   }
-  .law .pop { width: min(23rem, calc(100vw - 2 * var(--s-4))); }
+  .with-law .pop { width: min(23rem, calc(100vw - 2 * var(--s-4))); }
   fieldset { border: 0; margin: 0 0 var(--s-4); padding: 0; min-width: 0; }
   legend { font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: var(--s-2); padding: 0; }
   .opt { display: grid; grid-template-columns: auto 1fr; column-gap: var(--s-2); align-items: baseline; padding: var(--s-2); border-radius: var(--r-sm); cursor: pointer; }

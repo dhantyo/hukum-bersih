@@ -251,6 +251,10 @@ doc.preamble.forEach((n, i) => {
     font-size: var(--fs-base); border-top: 0; padding-top: 0; margin: var(--s-6) 0 var(--s-2);
   }
   :global(:root:not([data-format="asli"])) .law :global(.akn-subpart > h2) { color: var(--text-muted); }
+  /* Bagian: one step between BAB (--fs-lg) and Pasal (--fs-base) */
+  :global(:root:not([data-format="asli"])) .law :global(.akn-part > h2) { font-size: var(--fs-md); }
+  /* a heading sits closer to the pasal it introduces than to the one before it */
+  :global(:root:not([data-format="asli"])) .law :global(.fold-c > .akn-article:first-child > h3) { margin-top: var(--s-2); }
   :global(:root:not([data-format="asli"])) .law :global(.akn-article > h3) {
     font-family: var(--font-ui); font-size: var(--fs-base); font-weight: 600; margin: var(--s-5) 0 var(--s-2);
   }
@@ -273,7 +277,7 @@ doc.preamble.forEach((n, i) => {
     font-family: var(--font-ui); font-size: var(--fs-sm); line-height: 1.55;
   }
   :global(:root:not([data-format="asli"])) .law :global(.akn-conclusions .akn-p) { margin-bottom: var(--s-3); }
-  :global(:root:not([data-format="asli"])) .law :global(.penjelasan .akn-part > h2) { font-size: var(--fs-base); border-top: 0; padding-top: 0; }
+  :global(:root:not([data-format="asli"])) .law :global(.penjelasan .akn-part > h2) { font-size: var(--fs-md); border-top: 0; padding-top: 0; }
   :global(:root:not([data-format="asli"])) .law :global(.pj-entry:not(.pj-inline) > h3) {
     font-family: var(--font-ui); font-size: var(--fs-base); font-weight: 600; margin: var(--s-5) 0 var(--s-1);
   }

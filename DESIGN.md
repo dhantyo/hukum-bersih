@@ -48,6 +48,7 @@ No brand red: in this product red means "deleted". No gradients.
 | `--fs-sm` | 14.5px / 1.5 | metadata, captions, panels |
 | `--fs-base` | 16px / 1.6 | interface text |
 | `--fs-law` | 17.5px / 1.65 | legal text (serif), measure ≤ 70ch |
+| `--fs-md` | 17.5px | sub-headings in law text (Bagian, Penjelasan's "Umum") |
 | `--fs-lg` | 20px / 1.4 | section headings (h2) |
 | `--fs-xl` | 26px / 1.25 | page titles on small screens |
 | `--fs-2xl` | 32px / 1.2 | page titles (h1) |
@@ -86,8 +87,11 @@ Radius `--r-sm` 4px (badges, inputs, buttons), `--r-md` 8px (cards, panels). No 
 - **Law text**: serif, hanging numbers for ayat/huruf/angka. Two formats, chosen by the reader
   ([decision 0009](docs/decisions/0009-law-view-asli-modern.md)); the text is the same, only
   the layout changes:
-  - *Modern* (default): headings left-aligned in the interface font and normal capitals
-    ("Bab I  Ketentuan Umum", number muted; Bagian smaller, Paragraf muted; "Pasal 5"),
+  - *Modern* (default): headings left-aligned in the interface font and normal capitals, one
+    size per level: BAB `--fs-lg` with a rule above ("Bab I  Ketentuan Umum", number muted),
+    Bagian `--fs-md`, Paragraf `--fs-base` muted, Pasal `--fs-base` (bold sans at 16px reads as
+    large as the 17.5px serif text). A heading sits closer to its first pasal than to the text
+    before it,
     a thin rule above each BAB, no boxes. Pembukaan folded to one line with what it contains
     ("Menimbang (7) · Mengingat"); the closing under "Pengesahan dan pengundangan".
   - *Asli*: as the official copy: title, BAB and Pasal centred in capitals, Pembukaan open.
