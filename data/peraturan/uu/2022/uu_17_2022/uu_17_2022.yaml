@@ -28,10 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_2022_2022-07-25.txt
   pasal_count: 9
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: fc3358d267b154c3e6656ec48f60de43ee7e58865e2406f3cd4aec4dfd3f7d32
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 18
 pdf_sha256: f1b5f032eb84254f65cf63f5da771c5ff622b95f1f25ab4ba1bd965cf1dc4356
 tanggal_pengundangan: '2022-07-25'
 tanggal_berlaku: '2022-07-25'

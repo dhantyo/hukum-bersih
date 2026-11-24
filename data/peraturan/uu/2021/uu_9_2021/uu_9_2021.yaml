@@ -31,10 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2021_2021-12-31.txt
   pasal_count: 11
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 940730e7e846f594b1ed468c7ab3146c82207fa8e63d0cc2f916d3412601de4c
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 7
 pdf_sha256: ce29369f1a51ac355eb39c103bb05f95157f6e94de87313fc735b33a25e95aba
 tanggal_pengundangan: '2021-12-31'
 tanggal_berlaku: '2021-12-31'

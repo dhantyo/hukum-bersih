@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_2021_2021-10-27.txt
   pasal_count: 49
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f296bb9902efdad5aeea839359d80f057430a20d592dd023f4cd451346994beb
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 3
+  ocr_unknown: 48
 pdf_sha256: 7191c300d4cec87e083e830be65ae1636cf7b2888ff2fe02dbab60b0e0309e45
 tanggal_pengundangan: '2021-10-27'
 tanggal_berlaku: '2022-01-01'

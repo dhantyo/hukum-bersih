@@ -28,10 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_27_2022_2022-10-17.txt
   pasal_count: 76
-  parser_version: 13
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ed952dea04b87d14ecf037f9f324a65d50b396ddd34fc28ddf9ff014391971f6
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 2
+  ocr_unknown: 16
 pdf_sha256: ed952dea04b87d14ecf037f9f324a65d50b396ddd34fc28ddf9ff014391971f6
 tanggal_pengundangan: '2022-10-17'
 tanggal_berlaku: '2022-10-17'

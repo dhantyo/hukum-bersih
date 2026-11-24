@@ -28,10 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2022_2022-03-16.txt
   pasal_count: 8
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 85457deeb045767a01ef8b17faceaba93db9ba8931d1a715c77174601e0ac5db
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 6
 pdf_sha256: d0ef44c29c17f5a788d67e0c860e716bf293e641efd0ec81f618a685503ee9b2
 tanggal_pengundangan: '2022-03-16'
 tanggal_berlaku: '2022-03-16'

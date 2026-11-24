@@ -30,10 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_2020_2020-10-13.txt
   pasal_count: 13
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8011160cebcd852fb11ae2d4155dd75d7f4ded49aac85a1a695fec158b7b6ef7
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 21
 pdf_sha256: 72a17e5920af79ea69eff3bf4d8fdc33d2d3cbf28f50dc442dcf1536ef920ba2
 tanggal_pengundangan: '2020-10-14'
 tanggal_berlaku: '2020-10-14'

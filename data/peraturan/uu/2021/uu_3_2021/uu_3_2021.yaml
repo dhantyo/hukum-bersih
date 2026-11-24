@@ -30,10 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2021_2021-10-06.txt
   pasal_count: 13
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2955946e934e34bbf04e69054fdc1d209a41a2aad603626c44579798f9d8069e
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 14
 pdf_sha256: 981839743c6b2669afb1322a0cb085e47703394ec240c48bbba47fbbabfd3e96
 tanggal_penetapan_bpk: '2020-10-06'
 tanggal_pengundangan: '2021-10-06'
