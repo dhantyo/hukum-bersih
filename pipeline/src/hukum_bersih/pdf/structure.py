@@ -525,9 +525,9 @@ def parse_pdf(pdf: Path, extra: Sequence[Path] = ()) -> Document:
     from .extract import clean_lines, page_lines
 
     stats: dict = {}
-    lines = clean_lines(page_lines(pdf, stats))
+    lines = clean_lines(page_lines(pdf, stats), stats)
     for more in extra:
-        lines += clean_lines(page_lines(more, stats))
+        lines += clean_lines(page_lines(more, stats), stats)
     doc = parse_lines(lines)
     if stats.get("ocr_pages"):
         doc.warnings.append(f"ocr: {stats['ocr_pages']} scanned page(s) read with {stats.get('ocr_engine', 'tesseract')}")

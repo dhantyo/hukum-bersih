@@ -14,10 +14,15 @@ corrected only when all of these hold:
   ("jang", "Djakarta") stay as read;
 - the law reads it at most ``MAX_REPEATS`` times: a misread is a one-off, a name or term the
   dictionaries lack repeats ("Perkada", "IUPK");
-- the best candidate occurs at least ``MIN_HERE`` times in the same law and in at least
-  ``MIN_DOCS`` of our typed texts, and holds at least ``CONFIDENCE`` of all candidates' scores
+- the best candidate occurs at least ``MIN_HERE`` times in the same law (or is a common word,
+  in at least ``COMMON_DOCS`` typed texts: "seteiah" -> "setelah" in a short law) and in at
+  least ``MIN_DOCS`` of our typed texts, and holds at least ``CONFIDENCE`` of all candidates' scores
   (number of typed texts it appears in, times ``SHAPE_WEIGHT`` when a shape confusion explains
   it).
+
+A point label that lost its space ("hurufb", "Hurufj") is split ("huruf b"): labels are always
+printed with one, and the Penjelasan's structure is found by them. Other joined words
+("danatau") may be printed so and stay as read.
 
 Everything else unknown is left as read and counted (``Fixes.suspects``) for a person to check.
 Without Hunspell nothing is corrected.
@@ -44,10 +49,12 @@ DICTIONARIES = "id_ID,en_US"     # Hunspell's; found through $DICPATH or the sys
 MIN_LENGTH = 4
 MAX_REPEATS = 2
 MIN_HERE = 2
+COMMON_DOCS = 500   # a correction this common in our typed texts need not occur elsewhere in the law
 MIN_DOCS = 20
 SHAPE_WEIGHT = 20
 CONFIDENCE = 0.9
 WORD = re.compile(r"[A-Za-z]+")
+LABEL = re.compile(r"(huruf)([a-z])", re.IGNORECASE)   # "Hurufj": "Huruf j" without its space
 ROMAN = re.compile(r"[IVXLC]+[A-Z]?")   # "XIIA" (an inserted BAB): a number, never a word
 
 
@@ -109,7 +116,7 @@ def correction(word: str, here: Counter[str], name: bool = False) -> str | None:
     shapes = _shapes(word)
     pool = shapes if name else _substitutions(word) | shapes
     scores = {w: words[w] * (SHAPE_WEIGHT if w in shapes else 1)
-              for w in pool if words.get(w) and here[w] >= MIN_HERE}
+              for w in pool if words.get(w) and (here[w] >= MIN_HERE or words[w] >= COMMON_DOCS)}
     if not scores:
         return None
     best = max(scores, key=scores.get)
@@ -140,6 +147,9 @@ def fix_lines(lines: list[str]) -> tuple[list[str], Fixes]:
 
     def one(m: re.Match) -> str:
         word = m[0]
+        if label := LABEL.fullmatch(word):
+            fixes.changed.append((word, f"{label[1]} {label[2]}"))
+            return f"{label[1]} {label[2]}"
         if word not in unknown or (real is not None and word in real):
             return word
         new = correction(word.lower(), here, not word.islower()) if real is not None else None

@@ -82,7 +82,8 @@ def check(law: str, path: Path) -> list[str]:
     from hukum_bersih.pdf.extract import clean_lines, page_lines
     from hukum_bersih.pdf.structure import parse_lines
 
-    lines = clean_lines(page_lines(path))
+    stats: dict = {}
+    lines = clean_lines(page_lines(path, stats), stats)
     doc = parse_lines(lines)
     text = to_bluebell(doc)
     problems = []
