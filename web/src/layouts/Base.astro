@@ -39,6 +39,8 @@ const nav = [
         if (fm && fm !== "atkinson") document.documentElement.dataset.fontModern = fm;
         if (z && z !== "normal") document.documentElement.dataset.size = z;
       } catch (e) {}
+      // side panel of document pages hidden on wide screens (components/DocLayout.astro)
+      try { if (localStorage.getItem("hb-panel") === "hidden") document.documentElement.dataset.panel = "hidden"; } catch (e) {}
       // reader's view of law texts (components/ReadingSettings.astro): format, Penjelasan, parts
       try {
         var v = JSON.parse(localStorage.getItem("hb-view") || "{}"), d = document.documentElement.dataset;

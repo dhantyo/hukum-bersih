@@ -43,6 +43,7 @@
   --r-sm: 4px;
   --r-md: 8px;
   --shadow-pop: 0 6px 24px rgb(0 0 0 / 0.12);
+  --scrim: rgb(17 20 24 / 0.4);   /* behind the phone drawer */
   color-scheme: light;
 }
 
@@ -52,7 +53,7 @@
     --text-muted: #a3abb5; --line: #2d343c; --line-strong: #69727d; --primary: #8cb4f0; --primary-bg: #1a2a40;
     --ok: #6fcf97; --warn: #e7b75f; --gone: #9aa3ad;
     --ins-bg: #163a24; --ins-text: #b9ecc8; --del-bg: #43201f; --del-text: #f6c3c0;
-    --shadow-pop: 0 6px 24px rgb(0 0 0 / 0.5);
+    --shadow-pop: 0 6px 24px rgb(0 0 0 / 0.5); --scrim: rgb(0 0 0 / 0.6);
     color-scheme: dark;
   }
 }
@@ -61,7 +62,7 @@
   --text-muted: #a3abb5; --line: #2d343c; --line-strong: #69727d; --primary: #8cb4f0; --primary-bg: #1a2a40;
   --ok: #6fcf97; --warn: #e7b75f; --gone: #9aa3ad;
   --ins-bg: #163a24; --ins-text: #b9ecc8; --del-bg: #43201f; --del-text: #f6c3c0;
-  --shadow-pop: 0 6px 24px rgb(0 0 0 / 0.5);
+  --shadow-pop: 0 6px 24px rgb(0 0 0 / 0.5); --scrim: rgb(0 0 0 / 0.6);
   color-scheme: dark;
 }
 

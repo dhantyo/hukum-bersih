@@ -1,16 +1,22 @@
 ---
-// Document page: breadcrumbs, title block, then a side panel (facts, versions, contents) next
+// Document page: breadcrumbs, title block, then a side panel (versions, contents, facts) next
 // to the main text. Pattern from legislation.gov.uk / Fedlex (see DESIGN.md).
+//
+// Wide screens: the panel is sticky beside the text and can be hidden (a slim strip with a
+// "show" button stays; the choice is remembered as data-panel on <html>, set before first paint
+// in layouts/Base.astro). Up to 960px: the panel is a drawer that slides in over the text,
+// opened by a button that is always on screen.
 interface Crumb { href?: string; label: string }
 interface Props {
   crumbs: Crumb[];
   eyebrow?: string;
   title: string;
   subtitle?: string;
-  /** Label of the folded side panel on phones. */
+  /** Label of the drawer button on phones and of the panel. */
   panelLabel?: string;
 }
-const { crumbs, eyebrow, title, subtitle, panelLabel = "Keterangan dan daftar isi" } = Astro.props;
+const { crumbs, eyebrow, title, subtitle, panelLabel = "Daftar isi" } = Astro.props;
+const Chevrons = (dir: "left" | "right") => `<svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="${dir === "left" ? "M9.5 3.5 5 8l4.5 4.5" : "M6.5 3.5 11 8l-4.5 4.5"}" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 ---
 <nav class="breadcrumbs" aria-label="Lokasi">
   {crumbs.map((c, k) => (
@@ -27,74 +33,163 @@ const { crumbs, eyebrow, title, subtitle, panelLabel = "Keterangan dan daftar is
   <div data-pagefind-ignore><slot name="head" /></div>
 </header>
 <div class="doc">
-  <aside class="panel" aria-label="Keterangan" data-pagefind-ignore>
-    <details class="panel-fold" open>
-      <summary>{panelLabel}</summary>
-      <slot name="panel" />
-    </details>
+  <div class="rail" data-pagefind-ignore>
+    <button type="button" class="rail-btn" data-panel-show aria-controls="panel" aria-expanded="false">
+      <Fragment set:html={Chevrons("right")} /><span class="visually-hidden">Tampilkan panel ({panelLabel.toLowerCase()})</span>
+    </button>
+  </div>
+  <aside class="panel" id="panel" aria-label={panelLabel} data-pagefind-ignore>
+    <div class="panel-bar">
+      <span class="panel-name">{panelLabel}</span>
+      <button type="button" class="panel-hide" data-panel-hide aria-controls="panel">
+        <Fragment set:html={Chevrons("left")} /><span class="label">Sembunyikan</span>
+      </button>
+      <button type="button" class="panel-close" data-drawer-close aria-label="Tutup">×</button>
+    </div>
+    <slot name="panel" />
   </aside>
   <div class="doc-main">
     <slot />
   </div>
 </div>
-<a class="to-toc" href="#daftar-isi" hidden data-pagefind-ignore>Daftar isi ↑</a>
+<div class="scrim" data-drawer-close hidden></div>
+<button type="button" class="drawer-btn" data-drawer-open aria-controls="panel" aria-expanded="false" data-pagefind-ignore>
+  <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3 4.5h10M3 8h10M3 11.5h6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+  {panelLabel}
+</button>
 
 <script>
-  // the side panel folds away on phones so the text comes first (DESIGN.md)
+  const root = document.documentElement;
+  const panel = document.getElementById("panel");
   const narrow = matchMedia("(max-width: 960px)");
-  const sync = () => document.querySelectorAll<HTMLDetailsElement>(".panel-fold").forEach((d) => { d.open = !narrow.matches; });
-  sync();
-  narrow.addEventListener("change", sync);
+  const set = (k: string, v: string) => { try { localStorage.setItem(k, v); } catch { /* private mode */ } };
 
-  // Long laws on phones: once the contents are scrolled away, a button brings them back
-  // (GOV.UK "back to top" pattern). On wide screens the side panel is sticky instead.
-  const toc = document.getElementById("daftar-isi");
-  const btn = document.querySelector<HTMLAnchorElement>(".to-toc");
-  const panel = document.querySelector(".panel");
-  if (toc && btn && panel) {
-    new IntersectionObserver(([e]) => {
-      btn.hidden = e.isIntersecting || e.boundingClientRect.top > 0;
-    }).observe(panel);
-    btn.addEventListener("click", (ev) => {
-      ev.preventDefault();
-      const fold = toc.closest("details");
-      if (fold) fold.open = true;
-      toc.scrollIntoView();
-      toc.querySelector<HTMLAnchorElement>("a[aria-current]")?.scrollIntoView({ block: "nearest" });
-      toc.querySelector<HTMLAnchorElement>("a[aria-current], a")?.focus({ preventScroll: true });
-    });
-  }
+  // wide screens: hide / show, remembered
+  const showBtn = document.querySelector<HTMLButtonElement>("[data-panel-show]");
+  const syncWide = () => showBtn?.setAttribute("aria-expanded", String(root.dataset.panel !== "hidden"));
+  document.querySelector("[data-panel-hide]")?.addEventListener("click", () => {
+    root.dataset.panel = "hidden"; set("hb-panel", "hidden"); syncWide(); showBtn?.focus();
+  });
+  showBtn?.addEventListener("click", () => {
+    delete root.dataset.panel; set("hb-panel", "shown"); syncWide();
+    panel?.querySelector<HTMLElement>("[data-panel-hide]")?.focus();
+  });
+  syncWide();
+
+  // up to 960px: a drawer over the text
+  const openBtn = document.querySelector<HTMLButtonElement>("[data-drawer-open]");
+  const scrim = document.querySelector<HTMLElement>(".scrim");
+  const outside = () => [document.querySelector("header.site"), document.querySelector(".doc-main"),
+    document.querySelector(".doc-head"), document.querySelector(".breadcrumbs"), document.querySelector("footer.site"), openBtn]
+    .filter((e): e is HTMLElement => !!e);
+  let returnTo: HTMLElement | null = null;
+  const openDrawer = () => {
+    if (!panel) return;
+    returnTo = document.activeElement as HTMLElement | null;
+    root.dataset.drawer = "open";
+    openBtn?.setAttribute("aria-expanded", "true");
+    if (scrim) scrim.hidden = false;
+    outside().forEach((e) => { e.inert = true; });
+    // the current chapter in view, then the panel itself
+    const here = panel.querySelector<HTMLElement>(".toc a[aria-current]");
+    here?.scrollIntoView({ block: "center" });
+    (here ?? panel.querySelector<HTMLElement>("[data-drawer-close]"))?.focus({ preventScroll: true });
+  };
+  const closeDrawer = (restore = true) => {
+    if (root.dataset.drawer !== "open") return;
+    delete root.dataset.drawer;
+    openBtn?.setAttribute("aria-expanded", "false");
+    if (scrim) scrim.hidden = true;
+    outside().forEach((e) => { e.inert = false; });
+    if (restore) returnTo?.focus({ preventScroll: true });
+  };
+  openBtn?.addEventListener("click", openDrawer);
+  document.querySelectorAll("[data-drawer-close]").forEach((e) => e.addEventListener("click", () => closeDrawer()));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeDrawer(); });
+  // following a link in the drawer (contents, versions) closes it
+  panel?.addEventListener("click", (e) => {
+    const a = (e.target as Element).closest("a[href]");
+    if (a && narrow.matches) closeDrawer(false);
+  });
+  narrow.addEventListener("change", () => { if (!narrow.matches) closeDrawer(false); });
 </script>
 
 <style>
-  .panel-fold > summary { display: none; }
   .doc-head { margin: var(--s-4) 0 var(--s-6); max-width: 52rem; }
   .doc-head h1 { margin-bottom: var(--s-2); }
   .doc-head :global([slot="head"]) { margin-top: var(--s-3); }
   .subtitle { color: var(--text-muted); font-size: var(--fs-lg); margin: 0; }
   .doc { display: grid; grid-template-columns: var(--panel) minmax(0, 1fr); gap: var(--s-7); align-items: start; }
+  .doc-main { min-width: 0; }
+  .rail { display: none; }
+
+  /* ---------- the panel beside the text (wide screens) ---------- */
   .panel {
+    grid-column: 1; grid-row: 1;
     position: sticky; top: var(--s-4); max-height: calc(100vh - var(--s-6)); overflow-y: auto;
     font-size: var(--fs-sm); padding-right: var(--s-2);
   }
-  .doc-main { min-width: 0; }
-  .to-toc {
-    position: fixed; right: var(--s-4); bottom: var(--s-4); z-index: 5;
-    background: var(--primary); color: var(--bg); text-decoration: none; font-weight: 600; font-size: var(--fs-sm);
-    padding: var(--s-3) var(--s-4); border-radius: 999px; box-shadow: var(--shadow-pop);
+  .doc-main { grid-column: 2; grid-row: 1; }
+  .panel-bar { display: flex; align-items: center; justify-content: space-between; gap: var(--s-2); margin-bottom: var(--s-3); }
+  .panel-name { display: none; }
+  .panel-hide, .rail-btn, .panel-close {
+    display: inline-flex; align-items: center; gap: var(--s-1); font: inherit; font-size: var(--fs-xs);
+    color: var(--text-muted); background: none; border: 0; cursor: pointer; border-radius: var(--r-sm);
+    padding: var(--s-1) var(--s-2) var(--s-1) 0; min-height: var(--s-6);
   }
-  .to-toc[hidden] { display: none; }
-  @media (min-width: 961px) { .to-toc { display: none; } }
-  @media print { .to-toc { display: none; } }
+  .panel-hide:hover, .rail-btn:hover { color: var(--primary); }
+  .panel-close { display: none; }
+
+  /* hidden: a slim strip with a "show" button; the text column centres */
+  :global(:root[data-panel="hidden"]) .doc { grid-template-columns: var(--tap) minmax(0, 1fr); }
+  :global(:root[data-panel="hidden"]) .panel { display: none; }
+  :global(:root[data-panel="hidden"]) .rail {
+    display: block; grid-column: 1; grid-row: 1; position: sticky; top: var(--s-4);
+  }
+  :global(:root[data-panel="hidden"]) .doc-main { justify-self: center; width: min(100%, var(--measure)); }
+  .rail-btn {
+    width: var(--tap); height: var(--tap); justify-content: center; padding: 0;
+    border: 1px solid var(--line-strong); color: var(--text);
+  }
+
+  /* ---------- up to 960px: a drawer over the text ---------- */
+  .drawer-btn, .scrim { display: none; }
   @media (max-width: 960px) {
-    .doc { grid-template-columns: 1fr; gap: var(--s-5); }
-    .panel { position: static; max-height: none; overflow: visible; padding: 0; }
-    .panel-fold { border: 1px solid var(--line); border-radius: var(--r-md); padding: var(--s-3) var(--s-4); }
-    .panel-fold > summary { display: list-item; cursor: pointer; font-weight: 600; padding: var(--s-2) 0; }
-    .panel-fold[open] > summary { margin-bottom: var(--s-4); }
+    .doc, :global(:root[data-panel="hidden"]) .doc { grid-template-columns: 1fr; gap: 0; }
+    .doc-main, :global(:root[data-panel="hidden"]) .doc-main { grid-column: 1; justify-self: stretch; width: auto; }
+    .rail, :global(:root[data-panel="hidden"]) .rail { display: none; }
+    .panel, :global(:root[data-panel="hidden"]) .panel {
+      display: block; position: fixed; z-index: 30; inset: 0 auto 0 0; top: 0;
+      width: min(22rem, calc(100vw - var(--s-7))); max-height: none; overflow-y: auto;
+      background: var(--bg); border-right: 1px solid var(--line); box-shadow: var(--shadow-pop);
+      padding: var(--s-4); padding-left: max(var(--s-4), env(safe-area-inset-left, 0px));
+      padding-top: max(var(--s-4), env(safe-area-inset-top, 0px));
+      transform: translateX(-105%); visibility: hidden;
+      transition: transform 0.2s ease, visibility 0s linear 0.2s;
+    }
+    :global(:root[data-drawer="open"]) .panel { transform: none; visibility: visible; transition: transform 0.2s ease; }
+    .panel-bar { position: sticky; top: calc(-1 * var(--s-4)); background: var(--bg); padding: var(--s-2) 0; z-index: 1; }
+    .panel-name { display: block; font-weight: 600; font-size: var(--fs-base); color: var(--text); }
+    .panel-hide { display: none; }
+    .panel-close {
+      display: inline-flex; justify-content: center; font-size: var(--fs-lg); color: var(--text);
+      width: var(--tap); height: var(--tap); padding: 0; border: 1px solid var(--line-strong);
+    }
+    .scrim:not([hidden]) {
+      display: block; position: fixed; inset: 0; z-index: 25; background: var(--scrim);
+    }
+    .drawer-btn {
+      display: inline-flex; align-items: center; gap: var(--s-2); position: fixed; z-index: 20;
+      left: max(var(--s-4), env(safe-area-inset-left, 0px)); bottom: max(var(--s-4), env(safe-area-inset-bottom, 0px));
+      min-height: var(--tap); padding: 0 var(--s-4); border: 0; border-radius: 999px; cursor: pointer;
+      background: var(--primary); color: var(--bg); font: inherit; font-weight: 600; font-size: var(--fs-sm);
+      box-shadow: var(--shadow-pop);
+    }
   }
   @media (max-width: 640px) {
     .doc-head h1 { font-size: var(--fs-xl); }
     .subtitle { font-size: var(--fs-base); }
   }
+  @media (prefers-reduced-motion: reduce) { .panel { transition: none !important; } }
+  @media print { .drawer-btn, .scrim, .rail, .panel { display: none !important; } }
 </style>

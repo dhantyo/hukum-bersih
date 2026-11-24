@@ -72,13 +72,18 @@ anchored on the text (see "Law text").
 `--s-8` 64; `--s-0` 2 only for the vertical padding of pills. `--tap` 44px: minimum size of
 anything tapped (buttons, the "Aa" control). Page width 72rem; reading column 42rem; side panel 17rem. Phone gutter 16px.
 
-Document pages: breadcrumbs, title block, then two columns: side panel (status, facts, versions,
-table of contents; sticky) and the text. Below 960px the panel comes first, collapsed.
+Document pages: breadcrumbs, title block, then two columns: side panel (Versi, table of
+contents, facts; sticky) and the text (`components/DocLayout.astro`). On wide screens the
+reader can hide the panel ("Sembunyikan"): a slim strip with a "›" button stays and the text
+column centres; remembered (`hb-panel`, applied before first paint). Up to 960px the panel is a
+drawer from the left over the text (`--scrim` behind it), opened by a "Daftar isi" button that
+is always on screen; Escape, the scrim or a link closes it, and the page behind is inert.
 
 ## Shape and depth
 
 Radius `--r-sm` 4px (badges, inputs, buttons), `--r-md` 8px (cards, panels). No shadows except
-`--shadow-pop` for the search dropdown. Borders do the separating.
+`--shadow-pop` for floating things (popovers, the phone drawer and its button). Borders do the
+separating.
 
 ## Components
 
@@ -90,11 +95,16 @@ Radius `--r-sm` 4px (badges, inputs, buttons), `--r-md` 8px (cards, panels). No 
   links to what repealed it (border `--gone`); an amended law says the text is the original
   wording and links to the pasal-by-pasal changes (border `--warn`). Pattern from
   legislation.gov.uk and Fedlex. `components/StatusBanner.astro`.
-- **Contents button** (phones, document pages): "Daftar isi ↑", fixed bottom-right once the side
-  panel has scrolled away; opens the panel at the current section (GOV.UK back-to-top pattern).
+- **Versi** (side panel, first; `components/Versions.astro`): every version of a law family,
+  oldest first, like Fedlex's "All versions of this law": date, "Teks asli" / "Setelah UU
+  3/2020", what it changed, "belum lengkap" when incomplete; dots `--ok` (in force), `--gone`
+  (earlier), dashed (a known amendment we lack). The version on screen gets `--primary-bg`.
+  Data: each record's `history` (decision 0010).
 - **Fact list** (side panel): label above value, `--fs-sm`.
 - **Table of contents**: BAB headings with their pasal range; current item marked with
-  `--primary` left border.
+  `--primary` left border. The BAB being read opens to a grid of its pasal numbers (the pasal in
+  view on `--primary-bg`); laws without BAB show the grid of all pasal. A "Ke pasal" field jumps
+  to `#pasal-<n>`.
 - **Law text**: serif, hanging numbers for ayat/huruf/angka. Two formats, chosen by the reader
   ([decision 0009](docs/decisions/0009-law-view-asli-modern.md)); the text is the same, only
   the layout changes:

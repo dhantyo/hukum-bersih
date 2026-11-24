@@ -5,6 +5,8 @@ import Facts from "../../../components/Facts.astro";
 import LawText from "../../../components/LawText.astro";
 import Toc from "../../../components/Toc.astro";
 import KoleksiBox from "../../../components/KoleksiBox.astro";
+import Versions from "../../../components/Versions.astro";
+import { historyOf, versionRows } from "../../../lib/versions.ts";
 import RelationsBanner from "../../../components/RelationsBanner.astro";
 import StatusBanner from "../../../components/StatusBanner.astro";
 import { tanggal } from "../../../lib/labels.ts";
@@ -33,6 +35,9 @@ const notes = new Map([...pasalNotes(r)].map(([n, ids]) => [n, ids.map((id) => (
 }))]));
 const short = shortName(r);
 const koleksi = koleksiOf(r.id);
+// the family's versions go in the side panel; the Koleksi box stays only for families without
+const hasVersions = !!koleksi && versionRows(koleksi).length > 0;
+const asliPoint = koleksi && koleksi.base.id === r.id ? historyOf(r)?.points[0]?.id : undefined;
 ---
 <Base title={`${short ? `${short} (${shortCite(r)})` : shortCite(r)}${r.subject ? ` tentang ${r.subject}` : ""}`} description={`${r.title}${r.subject ? ` tentang ${r.subject}` : ""}`} section="peraturan"
   view={doc ? { penjelasan: doc.penjelasan.length > 0, pembukaan: doc.preface.length + doc.preamble.length > 0, penutup: doc.conclusions.length > 0 } : undefined}>
@@ -42,7 +47,7 @@ const koleksi = koleksiOf(r.id);
       : [{ href: `${base}uu/`, label: "Undang-Undang" }, { href: `${base}uu/tahun/${r.year}/`, label: String(r.year) }, { label: shortCite(r) }]}
     eyebrow={r.title}
     title={r.subject || r.title}
-    panelLabel={doc ? "Daftar isi dan keterangan" : "Keterangan"}
+    panelLabel={doc ? "Daftar isi" : "Keterangan"}
   >
     <div slot="head" class="head-meta">
       {status && <span class={`badge ${status}`}>{STATUS_LABEL[status] ?? status}</span>}
@@ -51,6 +56,7 @@ const koleksi = koleksiOf(r.id);
       {amendments > 0 && <a class="badge diubah" href={koleksi ? `${base}${koleksiPath(koleksi)}#riwayat` : undefined}>diubah {amendments}×</a>}
     </div>
     <Fragment slot="panel">
+      {hasVersions && <Versions k={koleksi!} current={asliPoint} law={koleksi!.base.id === r.id ? undefined : r.id} />}
       {doc && <Toc doc={doc} />}
       <Facts title="Keterangan" facts={[
         { label: "Ditetapkan", value: r.tanggal_penetapan ? `${tanggal(r.tanggal_penetapan)}${r.tempat_penetapan ? `, ${r.tempat_penetapan}` : ""}` : null },
@@ -66,7 +72,7 @@ const koleksi = koleksiOf(r.id);
     <StatusBanner r={r} hasText={!!doc}
       perubahanHref={steps.length > 0 ? `${base}${lawPath(r)}perubahan/` : undefined}
       riwayatHref={koleksi ? `${base}${koleksiPath(koleksi)}#riwayat` : undefined} />
-    {koleksi ? <KoleksiBox k={koleksi} r={r} /> : <RelationsBanner r={r} />}
+    {koleksi ? !hasVersions && <KoleksiBox k={koleksi} r={r} /> : <RelationsBanner r={r} />}
     {doc ? (
       <>
         <p class="notice small" data-pagefind-ignore>Teks ini diambil otomatis dari PDF resmi dan bisa memuat kesalahan baca. Bila ragu, periksa <a href={r.source_pdf_url ?? r.source_url}>PDF resminya</a>.</p>
