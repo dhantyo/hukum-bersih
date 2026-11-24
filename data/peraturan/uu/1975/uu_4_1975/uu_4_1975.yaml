@@ -18,6 +18,9 @@ source_pdf_url: https://peraturan.bpk.go.id/Download/224603/UU%20Nomor%204%20Tah
 relationships:
   amends:
   - id: uu_15_1969
+    changes:
+      dihapus:
+      - '34'
   amended_by: []
   revokes: []
   revoked_by: []
@@ -30,7 +33,14 @@ versions:
   date: '1975-11-24'
   date_basis: tanggal_penetapan
   text: uu_4_1975_1975-11-24.txt
-  pasal_count: 7
+  pasal_count: 4
+  parser_version: 16
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5a4090ec8d4dc54cd87d639e3ea51b3dd533200fc6d103ac0fe580c532ec8d72
+  ocr: true
+  ocr_engine: indra
+  ocr_fixed: 12
+  ocr_unknown: 42
 pdf_sha256: 08ea7d13c73b185270efb7edd2d034097f74eada161f010f4665adafc37c928f
 tanggal_pengundangan: '1975-11-24'
 tanggal_berlaku: '1975-11-24'
@@ -78,5 +88,3 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/49120/uu-no-15-tahun-1969
       note: null
 uji_materi: null
-reparse_error: 'v13: 1 pasal, stored text has 7'
-recheck: 'watermark 4; closing: no date of signing'
