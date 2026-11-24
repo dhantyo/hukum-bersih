@@ -73,6 +73,8 @@ jobs:
           uv run python -c 'import indra_ocr; indra_ocr.load()'   # Indra's models (~76 MB) once, before the parallel OCR workers
       - name: Import in batches
         env:
+          # one Cloudflare clearance and one walk of the listing for all batches of this run
+          HUKUM_BERSIH_BPK_CACHE: ${{ runner.temp }}/bpk
           IA_ACCESS_KEY: ${{ secrets.IA_ACCESS_KEY }}
           IA_SECRET_KEY: ${{ secrets.IA_SECRET_KEY }}
           GH_TOKEN: ${{ github.token }}
