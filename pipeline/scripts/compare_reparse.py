@@ -131,6 +131,16 @@ def heading_diff(old: str, new: str) -> list[str]:
     return [ln for ln in difflib.unified_diff(pick(old), pick(new), "stored", "new", n=0, lineterm="") if ln[:1] in "+-" and ln[:3] not in ("+++", "---")]
 
 
+def word_balance(old: str, new: str, top: int = 40) -> tuple[list[str], list[str]]:
+    """Words (as typed) there are more of in the stored text, and more of in the new one, with the
+    surplus. Reordered or restructured text cancels out; lost or added text does not."""
+    from collections import Counter
+
+    o, n = Counter(re.findall(r"\w+", old)), Counter(re.findall(r"\w+", new))
+    fmt = lambda c: [f"{w} x{k}" for w, k in c.most_common(top)]
+    return fmt(o - n), fmt(n - o)
+
+
 def compare(law: str, max_diff: int, pages: list[int], save: str = "") -> None:
     rec = load_record(record_path(law))
     version = next((v for v in rec.get("versions") or [] if v.get("text")), None)
@@ -168,6 +178,9 @@ def compare(law: str, max_diff: int, pages: list[int], save: str = "") -> None:
     for page, text in stats["edge_at"]:
         print(f"- p{page}: `{text}`")
 
+    lost, gained = word_balance(stored, new)
+    print(f"\nwords with more occurrences in the stored text (lost, or misread there): {' | '.join(lost)}")
+    print(f"\nwords with more occurrences in the new text: {' | '.join(gained)}")
     big, small = block_changes(stored, new, max_diff)
     print("\nstructure lines (ART / CHAPTER / PART / SECTION / ATTACHMENT) that differ:\n```diff")
     print("\n".join(heading_diff(stored, new)) or "(none)")
