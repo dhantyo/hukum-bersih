@@ -1,0 +1,57 @@
+id: perppu_14_1960
+akn: /akn/id/act/perppu/1960/14
+type: perppu
+number: '14'
+year: 1960
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 14 Tahun 1960 tentang Perubahan
+  Undang-Undang No. 12 Tahun 1951 Tentang Penghapusan Badan hukum Algemene Volkscredietbank
+tentang: Perubahan Undang-Undang No. 12 Tahun 1951 Tentang Penghapusan Badan hukum
+  Algemene Volkscredietbank
+short_name: null
+status: berlaku
+tanggal_penetapan: '1960-04-07'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53460/perpu-no-14-tahun-1960
+source_pdf_url: https://peraturan.bpk.go.id/Download/42843/perpu%20014%201960.pdf
+relationships:
+  amends:
+  - id: uu_12_1951
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+versions:
+- id: perppu_14_1960_1960-04-07
+  kind: asli
+  source: official
+  date: '1960-04-07'
+  date_basis: tanggal_penetapan
+  text: perppu_14_1960_1960-04-07.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 6e7f747a33403a3e4763ad542985dd1e8a236d9b50774161064109faa439ea62
+tanggal_pengundangan: '1960-04-07'
+tanggal_berlaku: '1960-04-07'
+lembaran_negara: 'LN. 1960 No. 41, TLN. No. 1960, LL SETNEG : 4 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+bpk:
+  id: 53460
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42843/perpu%20014%201960.pdf
+    bpk_file_id: 42843
+    filename: perpu 014 1960.pdf
+    sha256: 6e7f747a33403a3e4763ad542985dd1e8a236d9b50774161064109faa439ea62
+    bytes: 29411
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_12_1951
+      citation: UU No. 12 Tahun 1951
+      tentang: Penghapusan Badan Hukum "Algemeene Volkscredietbank"
+      url: https://peraturan.bpk.go.id/Details/39852/uu-no-12-tahun-1951
+      note: null
+uji_materi: null

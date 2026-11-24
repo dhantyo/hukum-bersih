@@ -1,0 +1,56 @@
+id: perppu_15_1960
+akn: /akn/id/act/perppu/1960/15
+type: perppu
+number: '15'
+year: 1960
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 15 Tahun 1960 tentang Perubahan
+  Undang-Undang No. 78 Tahun 1958 Tentang Penanaman Modal Asing
+tentang: Perubahan Undang-Undang No. 78 Tahun 1958 Tentang Penanaman Modal Asing
+short_name: null
+status: berlaku
+tanggal_penetapan: '1960-04-07'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53463/perpu-no-15-tahun-1960
+source_pdf_url: https://peraturan.bpk.go.id/Download/42846/perpu%20015%201960.pdf
+relationships:
+  amends:
+  - id: uu_78_1958
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+versions:
+- id: perppu_15_1960_1960-04-07
+  kind: asli
+  source: official
+  date: '1960-04-07'
+  date_basis: tanggal_penetapan
+  text: perppu_15_1960_1960-04-07.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: d113b9a4666b10a71b39cea560f0e1ed1c9a8f786cf16ea8fc3ec5f89c329f17
+tanggal_pengundangan: '1960-04-07'
+tanggal_berlaku: '1960-04-07'
+lembaran_negara: 'LN. 1960 No. 42, TLN. No. 1968, LL SETNEG : 4 HLM'
+subjek: PENANAMAN MODAL DAN INVESTASI
+bpk:
+  id: 53463
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42846/perpu%20015%201960.pdf
+    bpk_file_id: 42846
+    filename: perpu 015 1960.pdf
+    sha256: d113b9a4666b10a71b39cea560f0e1ed1c9a8f786cf16ea8fc3ec5f89c329f17
+    bytes: 29190
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_78_1958
+      citation: UU No. 78 Tahun 1958
+      tentang: Penanaman Modal Asing
+      url: https://peraturan.bpk.go.id/Details/52872/uu-no-78-tahun-1958
+      note: null
+uji_materi: null
