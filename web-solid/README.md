@@ -24,7 +24,7 @@ To prepare all laws, create a fresh staging directory and run `pnpm run export-l
 
 For a full corpus release, run `pnpm run export-collections "$stage"` before publishing. It adds the latest and historical consolidated texts and the comparison data used by `/koleksi/<slug>/perubahan.json`.
 
-Run `pnpm run export-drafts "$stage"` before exporting the catalog and building the search index to include draft bill timelines and searchable draft documents.
+Run `pnpm run export-drafts "$stage"` before exporting the catalog and building the search index to include draft bill timelines, searchable draft documents and the comparison of every pair of draft versions that have text (`drafts/<slug>/comparisons/<older>...<newer>.json`).
 
 `export-catalog` also writes `listings/` (the `/uu/` overview, one file per `/uu/tahun/<year>/` and the `/ruu/` rows, with the dates, status labels and counts already formatted). Releases published before it lack these files, so the home, `/uu/`, `/uu/tahun/` and `/ruu/` pages need a release made after it.
 

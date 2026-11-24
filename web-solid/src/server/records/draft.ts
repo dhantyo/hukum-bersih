@@ -5,7 +5,7 @@ import { readActiveReleaseText } from "../corpus.ts";
 import { parseRecord } from "./parse.ts";
 import { readerText } from "./reader-text.ts";
 
-const document = v.object({
+export const draftDocument = v.object({
   id: draftDocumentId,
   type: v.string(),
   label: v.optional(v.string()),
@@ -33,17 +33,19 @@ const bill = v.object({
       note: v.optional(v.string()),
     })
   ),
-  documents: v.array(document),
+  documents: v.array(draftDocument),
 });
 
 const draft = v.object({
   name: v.string(),
   title: v.string(),
-  document,
+  document: draftDocument,
   text: readerText,
 });
 
-export type DraftDocument = v.InferOutput<typeof document>;
+export type DraftBill = v.InferOutput<typeof bill>;
+
+export type DraftDocument = v.InferOutput<typeof draftDocument>;
 
 export const readDraftBill = async (slug: string) => {
   const text = await readActiveReleaseText(`drafts/${slug}/index.json`);

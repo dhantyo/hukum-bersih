@@ -9,6 +9,7 @@ export const fromInvocation = (location: string, ...rest: string[]) =>
   path.resolve(invocationDirectory, location, ...rest);
 
 export const amendments = await import("../../web/src/lib/amendments.ts");
+export const compare = await import("../../web/src/lib/compare.ts");
 export const data = await import("../../web/src/lib/data.ts");
 export const koleksi = await import("../../web/src/lib/koleksi.ts");
 export const labels = await import("../../web/src/lib/labels.ts");
