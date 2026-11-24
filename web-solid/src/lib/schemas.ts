@@ -45,3 +45,10 @@ export const searchText = v.fallback(
   ),
   ""
 );
+
+export const compareSearch = v.object({
+  bandingkan: v.fallback(v.optional(v.string()), undefined),
+  dari: v.fallback(v.optional(v.string()), undefined),
+});
+
+export const searchPage = v.object({ q: v.optional(searchText, "") });

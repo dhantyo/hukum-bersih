@@ -1,6 +1,5 @@
 import solid from "@solidjs/vite-plugin";
 import stylexPlugin from "@stylexjs/unplugin";
-import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import { defineConfig } from "vitest/config";
 
 // oxlint-disable-next-line import/no-named-as-default-member -- the package types declare only the default export
@@ -9,12 +8,11 @@ const { vite: stylexVite } = stylexPlugin;
 export default defineConfig({
   plugins: [
     stylexVite({ useCSSLayers: true, runtimeInjection: false }),
-    tanstackRouter({ target: "solid", autoCodeSplitting: true }),
     solid({
       start: {
         middleware: "./src/middleware.ts",
         document: "./src/document.tsx",
-        serverRenderSetup: "./src/setup.tsx",
+        renderMode: "async",
         nodeServer: true,
       },
       ssr: true,

@@ -1,75 +1,31 @@
-import { QueryClient, queryOptions } from "@tanstack/solid-query";
+import { query } from "@solidjs/router";
 
 import { getCollection, getCollections } from "./collections";
 import { getDraftBill, getDraftText, listDraftBills } from "./drafts";
 import { getLaw, getLawComparison, getLawOverview, getLawYear } from "./laws";
 import { getSearchResults } from "./search";
 
-export const createQueryClient = () =>
-  new QueryClient({
-    defaultOptions: { queries: { staleTime: 30_000 } },
-  });
-
-export const readerQuery = (
+const fetchReader = async (
   path: string,
   compareTo?: string,
   compareFrom?: string
-) =>
-  queryOptions({
-    queryKey: ["laws", "reader", path, compareTo, compareFrom],
-    queryFn: async () => await getLaw(path, compareTo, compareFrom),
-  });
+) => {
+  if (compareTo === undefined) {
+    return await getLaw(path);
+  }
 
-export const comparisonQuery = (path: string) =>
-  queryOptions({
-    queryKey: ["laws", "comparison", path],
-    queryFn: async () => await getLawComparison(path),
-  });
+  return compareFrom === undefined
+    ? await getLaw(path, compareTo)
+    : await getLaw(path, compareTo, compareFrom);
+};
 
-export const overviewQuery = () =>
-  queryOptions({
-    queryKey: ["laws", "overview"],
-    queryFn: async () => await getLawOverview(),
-  });
-
-export const yearQuery = (year: string) =>
-  queryOptions({
-    queryKey: ["laws", "year", year],
-    queryFn: async () => await getLawYear(year),
-  });
-
-export const collectionsQuery = () =>
-  queryOptions({
-    queryKey: ["collections"],
-    queryFn: async () => await getCollections(),
-  });
-
-export const collectionQuery = (slug: string, version = "latest") =>
-  queryOptions({
-    queryKey: ["collections", slug, version],
-    queryFn: async () => await getCollection(slug, version),
-  });
-
-export const searchQuery = (query: string) =>
-  queryOptions({
-    queryKey: ["search", query],
-    queryFn: async () => await getSearchResults(query),
-  });
-
-export const draftBillsQuery = () =>
-  queryOptions({
-    queryKey: ["drafts"],
-    queryFn: async () => await listDraftBills(),
-  });
-
-export const draftBillQuery = (slug: string) =>
-  queryOptions({
-    queryKey: ["drafts", slug],
-    queryFn: async () => await getDraftBill(slug),
-  });
-
-export const draftTextQuery = (slug: string, id: string) =>
-  queryOptions({
-    queryKey: ["drafts", slug, id],
-    queryFn: async () => await getDraftText(slug, id),
-  });
+export const readerQuery = query(fetchReader, "reader");
+export const comparisonQuery = query(getLawComparison, "comparison");
+export const overviewQuery = query(getLawOverview, "overview");
+export const yearQuery = query(getLawYear, "year");
+export const collectionsQuery = query(getCollections, "collections");
+export const collectionQuery = query(getCollection, "collection");
+export const searchQuery = query(getSearchResults, "search");
+export const draftBillsQuery = query(listDraftBills, "drafts");
+export const draftBillQuery = query(getDraftBill, "draft");
+export const draftTextQuery = query(getDraftText, "draft-text");

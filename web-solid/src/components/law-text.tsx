@@ -101,7 +101,9 @@ const DocumentSection = (props: {
       {props.node.tag === "article" ? (
         <h3 id={isPresent(props.id) ? `${props.id}-h` : undefined}>
           {props.explanation === true && isPresent(props.node.num) ? (
-            <a href={`#pasal-${pasalKey(props.node.num)}`}>{headingLabel()}</a>
+            <a href={`#pasal-${pasalKey(props.node.num)}`} target="_self">
+              {headingLabel()}
+            </a>
           ) : (
             headingLabel()
           )}
@@ -109,6 +111,7 @@ const DocumentSection = (props: {
             <a
               class={css(styles.permalink)}
               href={`#${permalink()}`}
+              target="_self"
               aria-label={`Tautan ke ${heading()}`}
               data-pagefind-ignore
             >

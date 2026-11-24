@@ -1,29 +1,118 @@
-import type { QueryClient } from "@tanstack/solid-query";
-import { createRouter } from "@tanstack/solid-router";
-import type { RouterHistory } from "@tanstack/solid-router";
+import { createRouter, defineRoute, intentPreload } from "@solidjs/router";
+import { lazy } from "solid-js";
+import * as v from "valibot";
 
-import { routeTree } from "./routeTree.gen";
+import { lawUrl } from "./lib/paths.ts";
+import {
+  collectionQuery,
+  collectionsQuery,
+  comparisonQuery,
+  draftBillQuery,
+  draftBillsQuery,
+  draftTextQuery,
+  overviewQuery,
+  readerQuery,
+  searchQuery,
+  yearQuery,
+} from "./lib/queries.ts";
+import { compareSearch, searchPage, versionDate } from "./lib/schemas.ts";
 
-export interface RouterContext {
-  queryClient: QueryClient;
-}
+export const Router = createRouter({
+  routes: [
+    {
+      path: "/",
+      component: lazy(async () => await import("./routes/home.tsx")),
+    },
+    {
+      path: "/uu",
+      component: lazy(async () => await import("./routes/law-overview.tsx")),
+      preload: () => {
+        void overviewQuery();
+      },
+    },
+    defineRoute({
+      path: "/uu/tahun/:tahun",
+      component: lazy(async () => await import("./routes/law-year.tsx")),
+      preload: ({ params }) => {
+        void yearQuery(params.tahun);
+      },
+    }),
+    defineRoute({
+      path: "/uu/:nomor/:tahun/perubahan",
+      component: lazy(async () => await import("./routes/law-amendments.tsx")),
+      preload: ({ params }) => {
+        void comparisonQuery(lawUrl(params));
+      },
+    }),
+    defineRoute({
+      path: "/uu/:nomor/:tahun",
+      search: compareSearch,
+      component: lazy(async () => await import("./routes/law.tsx")),
+      preload: ({ params, location }) => {
+        const search = v.parse(compareSearch, location.query);
 
-export const createAppRouter = (
-  queryClient: QueryClient,
-  history?: RouterHistory
-) =>
-  createRouter({
-    routeTree,
-    trailingSlash: "always",
-    history,
-    context: { queryClient },
-    defaultPreload: "intent",
-    defaultPendingComponent: () => <main>Memuat…</main>,
-    disableGlobalCatchBoundary: true,
-  });
-
-declare module "@tanstack/solid-router" {
-  interface Register {
-    router: ReturnType<typeof createAppRouter>;
-  }
-}
+        void readerQuery(lawUrl(params), search.bandingkan, search.dari);
+      },
+    }),
+    {
+      path: "/koleksi",
+      component: lazy(
+        async () => await import("./routes/collection-index.tsx")
+      ),
+      preload: () => {
+        void collectionsQuery();
+      },
+    },
+    defineRoute({
+      path: "/koleksi/:slug/:versi",
+      matchFilters: { versi: (versi: string) => v.is(versionDate, versi) },
+      component: lazy(
+        async () => await import("./routes/collection-version.tsx")
+      ),
+      preload: ({ params }) => {
+        void collectionQuery(params.slug, params.versi);
+      },
+    }),
+    defineRoute({
+      path: "/koleksi/:slug",
+      component: lazy(async () => await import("./routes/collection.tsx")),
+      preload: ({ params }) => {
+        void collectionQuery(params.slug, "latest");
+      },
+    }),
+    {
+      path: "/ruu",
+      component: lazy(async () => await import("./routes/draft-index.tsx")),
+      preload: () => {
+        void draftBillsQuery();
+      },
+    },
+    defineRoute({
+      path: "/ruu/:slug/:doc",
+      component: lazy(async () => await import("./routes/draft-document.tsx")),
+      preload: ({ params }) => {
+        void draftTextQuery(params.slug, params.doc);
+      },
+    }),
+    defineRoute({
+      path: "/ruu/:slug",
+      component: lazy(async () => await import("./routes/draft.tsx")),
+      preload: ({ params }) => {
+        void draftBillQuery(params.slug);
+      },
+    }),
+    {
+      path: "/cari",
+      search: searchPage,
+      component: lazy(async () => await import("./routes/search.tsx")),
+      preload: ({ location }) => {
+        void searchQuery(v.parse(searchPage, location.query).q);
+      },
+    },
+    {
+      path: "*404",
+      component: lazy(async () => await import("./routes/not-found.tsx")),
+    },
+  ],
+  preloadLinks: intentPreload(),
+});

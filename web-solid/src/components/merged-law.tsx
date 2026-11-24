@@ -14,7 +14,10 @@ const Completeness = (props: { version: CollectionVersion }) => (
     <For each={props.version.unreadable}>
       {(article) => (
         <li>
-          Teks baru <a href={`#pasal-${pasalKey(article)}`}>Pasal {article}</a>{" "}
+          Teks baru{" "}
+          <a href={`#pasal-${pasalKey(article)}`} target="_self">
+            Pasal {article}
+          </a>{" "}
           belum terbaca. Teks sebelumnya ditampilkan.
         </li>
       )}
