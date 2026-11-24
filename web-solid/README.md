@@ -10,6 +10,7 @@ Use Node.js 24 and the pnpm version in `package.json`. From this directory run `
 stage="$(mktemp -d)"
 mkdir -p "$stage/laws/uu/11/2008"
 pnpm run export-law uu_11_2008 "$stage/laws/uu/11/2008/index.json"
+pnpm run export-catalog "$stage"
 pnpm run index-corpus "$stage"
 
 export HUKUM_CORPUS_DIR="$(mktemp -d)"

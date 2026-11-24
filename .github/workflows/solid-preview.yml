@@ -43,6 +43,7 @@ jobs:
           pnpm run export-law uu_11_2008 "$stage/laws/uu/11/2008/index.json"
           pnpm run export-law uu_11_2020 "$stage/laws/uu/11/2020/index.json"
           pnpm run export-law uu_9_1960 "$stage/laws/uu/9/1960/index.json"
+          pnpm run export-catalog "$stage"
           pnpm run index-corpus "$stage"
       - name: Install rclone
         run: |

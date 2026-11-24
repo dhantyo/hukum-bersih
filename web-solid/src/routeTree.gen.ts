@@ -11,7 +11,9 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CariRouteImport } from './routes/cari'
+import { Route as UuIndexRouteImport } from './routes/uu.index'
 import { Route as UuNomorTahunRouteImport } from './routes/uu.$nomor.$tahun'
+import { Route as UuTahunTahunRouteImport } from './routes/uu.tahun.$tahun'
 import { Route as UuNomorTahunPerubahanRouteImport } from './routes/uu.$nomor.$tahun_.perubahan'
 
 const IndexRoute = IndexRouteImport.update({
@@ -24,9 +26,19 @@ const CariRoute = CariRouteImport.update({
   path: '/cari',
   getParentRoute: () => rootRouteImport,
 } as any)
+const UuIndexRoute = UuIndexRouteImport.update({
+  id: '/uu/',
+  path: '/uu/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const UuNomorTahunRoute = UuNomorTahunRouteImport.update({
   id: '/uu/$nomor/$tahun',
   path: '/uu/$nomor/$tahun',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UuTahunTahunRoute = UuTahunTahunRouteImport.update({
+  id: '/uu/tahun/$tahun',
+  path: '/uu/tahun/$tahun',
   getParentRoute: () => rootRouteImport,
 } as any)
 const UuNomorTahunPerubahanRoute = UuNomorTahunPerubahanRouteImport.update({
@@ -38,39 +50,61 @@ const UuNomorTahunPerubahanRoute = UuNomorTahunPerubahanRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/cari': typeof CariRoute
+  '/uu/': typeof UuIndexRoute
   '/uu/$nomor/$tahun': typeof UuNomorTahunRoute
+  '/uu/tahun/$tahun': typeof UuTahunTahunRoute
   '/uu/$nomor/$tahun/perubahan': typeof UuNomorTahunPerubahanRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/cari': typeof CariRoute
+  '/uu': typeof UuIndexRoute
   '/uu/$nomor/$tahun': typeof UuNomorTahunRoute
+  '/uu/tahun/$tahun': typeof UuTahunTahunRoute
   '/uu/$nomor/$tahun/perubahan': typeof UuNomorTahunPerubahanRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/cari': typeof CariRoute
+  '/uu/': typeof UuIndexRoute
   '/uu/$nomor/$tahun': typeof UuNomorTahunRoute
+  '/uu/tahun/$tahun': typeof UuTahunTahunRoute
   '/uu/$nomor/$tahun_/perubahan': typeof UuNomorTahunPerubahanRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/cari' | '/uu/$nomor/$tahun' | '/uu/$nomor/$tahun/perubahan'
+  fullPaths:
+    | '/'
+    | '/cari'
+    | '/uu/'
+    | '/uu/$nomor/$tahun'
+    | '/uu/tahun/$tahun'
+    | '/uu/$nomor/$tahun/perubahan'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/cari' | '/uu/$nomor/$tahun' | '/uu/$nomor/$tahun/perubahan'
+  to:
+    | '/'
+    | '/cari'
+    | '/uu'
+    | '/uu/$nomor/$tahun'
+    | '/uu/tahun/$tahun'
+    | '/uu/$nomor/$tahun/perubahan'
   id:
     | '__root__'
     | '/'
     | '/cari'
+    | '/uu/'
     | '/uu/$nomor/$tahun'
+    | '/uu/tahun/$tahun'
     | '/uu/$nomor/$tahun_/perubahan'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CariRoute: typeof CariRoute
+  UuIndexRoute: typeof UuIndexRoute
   UuNomorTahunRoute: typeof UuNomorTahunRoute
+  UuTahunTahunRoute: typeof UuTahunTahunRoute
   UuNomorTahunPerubahanRoute: typeof UuNomorTahunPerubahanRoute
 }
 
@@ -90,11 +124,25 @@ declare module '@tanstack/solid-router' {
       preLoaderRoute: typeof CariRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/uu/': {
+      id: '/uu/'
+      path: '/uu'
+      fullPath: '/uu/'
+      preLoaderRoute: typeof UuIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/uu/$nomor/$tahun': {
       id: '/uu/$nomor/$tahun'
       path: '/uu/$nomor/$tahun'
       fullPath: '/uu/$nomor/$tahun'
       preLoaderRoute: typeof UuNomorTahunRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/uu/tahun/$tahun': {
+      id: '/uu/tahun/$tahun'
+      path: '/uu/tahun/$tahun'
+      fullPath: '/uu/tahun/$tahun'
+      preLoaderRoute: typeof UuTahunTahunRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/uu/$nomor/$tahun_/perubahan': {
@@ -110,7 +158,9 @@ declare module '@tanstack/solid-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CariRoute: CariRoute,
+  UuIndexRoute: UuIndexRoute,
   UuNomorTahunRoute: UuNomorTahunRoute,
+  UuTahunTahunRoute: UuTahunTahunRoute,
   UuNomorTahunPerubahanRoute: UuNomorTahunPerubahanRoute,
 }
 export const routeTree = rootRouteImport

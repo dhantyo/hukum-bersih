@@ -78,7 +78,7 @@ async function activateRelease(scratch, release) {
 async function publishRelease(scratch, source) {
   const directory = join(scratch, 'release');
   await mkdir(directory);
-  await Promise.all(['laws', 'pagefind'].map((group) =>
+  await Promise.all(['laws', 'pagefind', 'law-catalog.json'].map((group) =>
     cp(join(source, group), join(directory, group), { recursive: true })));
   await validateRelease(directory);
   const release = await releaseDigest(directory);
