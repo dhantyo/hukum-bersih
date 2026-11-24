@@ -7,7 +7,16 @@ import { usePageTitle } from "../lib/head.ts";
 import { lawUrl } from "../lib/paths.ts";
 import { readerQuery } from "../lib/queries.ts";
 import { compareSearch } from "../lib/schemas.ts";
+import { isPresent } from "../lib/text.ts";
+import type { LawRecord } from "../server/records/law.ts";
 import NotFound from "./not-found.tsx";
+
+const pageTitle = (law: LawRecord) => {
+  const name =
+    law.shortName === undefined ? law.cite : `${law.shortName} (${law.cite})`;
+
+  return isPresent(law.subject) ? `${name} tentang ${law.subject}` : name;
+};
 
 const LawPage = (props: RouteProps<"/uu/:nomor/:tahun">) => {
   const reader = createMemo(async () => {
@@ -23,9 +32,9 @@ const LawPage = (props: RouteProps<"/uu/:nomor/:tahun">) => {
   return (
     <Show when={reader()} fallback={<NotFound />} keyed>
       {(record) => {
-        usePageTitle(() => record.law.shortName ?? record.law.title);
+        usePageTitle(() => pageTitle(record.law));
 
-        return <LawReader {...record} />;
+        return <LawReader law={record.law} comparison={record.comparison} />;
       }}
     </Show>
   );

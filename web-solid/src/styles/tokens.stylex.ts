@@ -29,6 +29,7 @@ export const font = stylex.defineVars({
   ui: "var(--font-ui)",
   sourceSerif: "var(--font-source-serif)",
   atkinson: "var(--font-atkinson)",
+  literata: "var(--font-literata)",
 });
 
 export const size = stylex.defineVars({
@@ -43,6 +44,8 @@ export const size = stylex.defineVars({
   law: "var(--fs-law)",
   measure: "var(--measure)",
   hang: "var(--hang)",
+  panel: "var(--panel)",
+  lawLarge: "1.25rem",
 });
 
 export const synopsis = stylex.defineVars({
@@ -62,4 +65,15 @@ export const synopsis = stylex.defineVars({
   s7: "var(--s-7)",
   radius: "var(--r-sm)",
   pageWide: "var(--page-wide)",
+});
+
+export const reader = stylex.defineVars({
+  raised: "var(--surface)",
+  accent: "var(--primary-bg)",
+  shadow: "var(--shadow-pop)",
+  modBg: "var(--mod-bg)",
+  modText: "var(--mod-text)",
+  radiusMd: "var(--r-md)",
+  tap: "var(--tap)",
+  textMd: "var(--fs-md)",
 });

@@ -5,41 +5,93 @@ import { readActiveReleaseText } from "../corpus.ts";
 import { parseRecord } from "./parse.ts";
 import { readerText } from "./reader-text.ts";
 
-const change = v.object({
-  anchor: v.string(),
-  num: v.string(),
-  kind: v.picklist(["diubah", "disisipkan", "dihapus"]),
-  missingBefore: v.boolean(),
-  missingAfter: v.boolean(),
-  before: v.nullable(v.string()),
-  after: v.nullable(v.string()),
+const lawText = v.nullable(readerText);
+const maybeText = v.optional(v.string());
+const href = v.optional(internalLink);
+const link = v.object({ label: v.string(), href });
+
+const note = v.object({ label: v.string(), href, by: maybeText });
+
+const version = v.object({
+  kind: v.picklist(["point", "missing"]),
+  label: v.string(),
+  sub: maybeText,
+  date: v.nullable(v.string()),
+  href,
+  inForce: v.boolean(),
+  here: v.boolean(),
+  made: v.boolean(),
 });
 
-const amendment = v.object({
-  id: v.string(),
+const step = v.object({
+  kind: v.picklist([
+    "pendahulu",
+    "pokok",
+    "perubahan",
+    "ditetapkan-dari",
+    "missing",
+  ]),
   label: v.string(),
-  href: v.optional(internalLink),
-  date: v.nullable(v.string()),
-  gap: v.pipe(v.number(), v.integer(), v.minValue(0)),
-  instructions: v.array(v.string()),
-  changes: v.array(change),
+  title: maybeText,
+  here: v.optional(v.boolean()),
+  href,
+  order: v.optional(v.string()),
+});
+
+const family = v.object({
+  slug: v.string(),
+  name: v.string(),
+  named: v.boolean(),
+  isBase: v.boolean(),
+  role: v.string(),
+  versions: v.array(version),
+  latestHref: href,
+  comparable: v.boolean(),
+  steps: v.array(step),
 });
 
 const law = v.object({
   path: lawPath,
   title: v.string(),
   subject: v.string(),
-  shortName: v.optional(v.string()),
+  shortName: maybeText,
+  cite: v.string(),
+  year: v.number(),
+  status: v.nullish(v.string()),
+  statusLabel: v.nullish(v.string()),
+  date: v.nullable(v.string()),
+  place: v.nullable(v.string()),
+  official: v.nullable(v.string()),
+  initiator: v.nullable(v.string()),
+  pasalCount: v.optional(v.number()),
+  amendmentCount: v.number(),
   source: webLink,
+  sourceName: v.string(),
   pdf: v.nullable(webLink),
   archive: v.optional(webLink),
-  text: v.nullable(readerText),
-  amendments: v.array(amendment),
+  text: lawText,
+  missingText: v.optional(v.picklist(["ocr", "unparsed", "pending"])),
+  revokedBy: v.array(
+    v.object({ ...link.entries, date: v.nullable(v.string()) })
+  ),
+  relations: v.array(
+    v.object({
+      ...link.entries,
+      verb: v.string(),
+      count: v.number(),
+      history: v.boolean(),
+    })
+  ),
+  notes: v.record(v.string(), v.array(note)),
+  family: v.optional(family),
+  perubahanTarget: internalLink,
 });
 
-type LawRecord = v.InferOutput<typeof law>;
+export type LawRecord = v.InferOutput<typeof law>;
 
-export type Amendment = LawRecord["amendments"][number];
+export type Family = NonNullable<LawRecord["family"]>;
+
+export type PasalNote = v.InferOutput<typeof note>;
 
 export const parseLawRecord = (text: string, path: string) => {
   const record = parseRecord(law, text, `law at ${path}`);
@@ -58,28 +110,3 @@ export const readLaw = async (path: string) => {
 
   return text === null ? null : parseLawRecord(text, path);
 };
-
-export const toReaderLaw = (record: LawRecord) => ({
-  title: record.title,
-  hasAmendments: record.amendments.length > 0,
-  subject: record.subject,
-  shortName: record.shortName,
-  source: record.source,
-  pdf: record.pdf,
-  archive: record.archive,
-  text: record.text,
-});
-
-export type ReaderLaw = ReturnType<typeof toReaderLaw>;
-
-export const toComparison = (record: LawRecord) =>
-  record.shortName === undefined
-    ? { path: record.path, title: record.title, amendments: record.amendments }
-    : {
-        path: record.path,
-        title: record.title,
-        shortName: record.shortName,
-        amendments: record.amendments,
-      };
-
-export type Comparison = ReturnType<typeof toComparison>;

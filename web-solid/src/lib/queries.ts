@@ -11,7 +11,7 @@ import {
   getDraftText,
   listDraftBills,
 } from "./drafts";
-import { getLaw, getLawComparison, getLawOverview, getLawYear } from "./laws";
+import { getLaw, getLawOverview, getLawPerubahan, getLawYear } from "./laws";
 import { getSearchResults } from "./search";
 
 const fetchReader = async (
@@ -29,7 +29,7 @@ const fetchReader = async (
 };
 
 export const readerQuery = query(fetchReader, "reader");
-export const comparisonQuery = query(getLawComparison, "comparison");
+export const perubahanQuery = query(getLawPerubahan, "perubahan");
 export const overviewQuery = query(getLawOverview, "overview");
 export const yearQuery = query(getLawYear, "year");
 export const collectionsQuery = query(getCollections, "collections");

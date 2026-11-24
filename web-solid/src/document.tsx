@@ -17,7 +17,7 @@ const styles = stylex.create({
 });
 
 const Document = (props: ParentProps) => (
-  <html lang="id">
+  <html lang="id" class={css(stylex.defaultMarker())}>
     <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />

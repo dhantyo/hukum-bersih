@@ -11,6 +11,7 @@ import { CollectionHistory } from "./collection-timeline.tsx";
 import { CollectionVersions } from "./collection-versions.tsx";
 import { LawText } from "./law-text.tsx";
 import { MergedBanner } from "./merged-banner.tsx";
+import { ReadingSettings } from "./reading-settings.tsx";
 
 const Breadcrumbs = (props: {
   collection: Collection;
@@ -74,6 +75,7 @@ const MergedCollection = (props: {
       <CollectionCompare comparison={props.comparison} />
     )}
     <div class={readerClass}>
+      <ReadingSettings text={props.version.text} />
       <LawText text={props.version.text} notes={props.version.notes} />
     </div>
   </>

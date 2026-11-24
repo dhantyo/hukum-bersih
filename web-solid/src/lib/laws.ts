@@ -1,7 +1,9 @@
 import { GET } from "@solidjs/web/server-functions";
 import * as v from "valibot";
 
-import { readLaw, toComparison, toReaderLaw } from "../server/records/law.ts";
+import { compareVersions } from "../server/law-comparison.ts";
+import { readCollectionComparison } from "../server/records/collection-comparison.ts";
+import { readLaw } from "../server/records/law.ts";
 import {
   readLawOverview,
   readYearListing,
@@ -28,41 +30,40 @@ export const getLaw = GET(
       return null;
     }
 
-    const record = await readLaw(path);
+    const law = await readLaw(path);
 
-    if (record === null) {
+    if (law === null) {
       return null;
     }
 
-    const law = toReaderLaw(record);
-
-    if (compareTo === undefined) {
+    if (
+      compareTo === undefined ||
+      law.family?.comparable !== true ||
+      law.text === null
+    ) {
       return { law };
     }
 
-    if (!law.hasAmendments || compareFrom !== undefined) {
-      return { law, comparisonRequested: true };
-    }
+    const data = await readCollectionComparison(law.family.slug);
 
-    const amendment =
-      compareTo === ""
-        ? record.amendments.at(-1)
-        : record.amendments.find((entry) => entry.id === compareTo);
-
-    return { law, amendment, comparisonRequested: true };
+    return {
+      law,
+      comparison:
+        data === null
+          ? undefined
+          : compareVersions(data, law.text, compareTo, compareFrom),
+    };
   }
 );
 
-export const getLawComparison = GET(async (path: string) => {
+export const getLawPerubahan = GET(async (path: string) => {
   "use server";
 
   if (!v.is(lawPath, path)) {
     return null;
   }
 
-  const record = await readLaw(path);
+  const law = await readLaw(path);
 
-  return record === null || record.amendments.length === 0
-    ? null
-    : toComparison(record);
+  return law === null ? null : { target: law.perubahanTarget };
 });

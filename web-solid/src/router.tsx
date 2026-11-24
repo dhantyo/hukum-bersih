@@ -6,12 +6,12 @@ import { preloadCollection } from "./lib/collection-page.ts";
 import { lawUrl } from "./lib/paths.ts";
 import {
   collectionsQuery,
-  comparisonQuery,
   draftBillQuery,
   draftBillsQuery,
   draftComparisonQuery,
   draftTextQuery,
   overviewQuery,
+  perubahanQuery,
   readerQuery,
   searchQuery,
   yearQuery,
@@ -44,9 +44,9 @@ export const Router = createRouter({
     }),
     defineRoute({
       path: "/uu/:nomor/:tahun/perubahan",
-      component: lazy(async () => await import("./routes/law-amendments.tsx")),
+      component: lazy(async () => await import("./routes/law-perubahan.tsx")),
       preload: ({ params }) => {
-        void comparisonQuery(lawUrl(params));
+        void perubahanQuery(lawUrl(params));
       },
     }),
     defineRoute({

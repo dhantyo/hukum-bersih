@@ -6,6 +6,7 @@ import {
   draftDocumentTitle,
 } from "../components/draft-provenance.tsx";
 import { LawText } from "../components/law-text.tsx";
+import { ReadingSettings } from "../components/reading-settings.tsx";
 import { usePageTitle } from "../lib/head.ts";
 import { slashed } from "../lib/paths.ts";
 import { draftTextQuery } from "../lib/queries.ts";
@@ -36,6 +37,7 @@ const DraftDocument = (props: RouteProps<"/ruu/:slug/:doc">) => {
             <p>
               Teks diambil otomatis dari PDF dan bisa memuat kesalahan baca.
             </p>
+            <ReadingSettings text={record.text} />
             <LawText text={record.text} />
           </main>
         );
