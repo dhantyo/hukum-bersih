@@ -643,6 +643,7 @@ ocr = [
 [package.dev-dependencies]
 dev = [
     { name = "huggingface-hub" },
+    { name = "lxml" },
     { name = "pytest" },
     { name = "remotezip" },
     { name = "ruff" },
@@ -668,6 +669,7 @@ provides-extras = ["bpk", "ocr"]
 [package.metadata.requires-dev]
 dev = [
     { name = "huggingface-hub", specifier = ">=2.4.0" },
+    { name = "lxml", specifier = ">=5" },
     { name = "pytest", specifier = ">=8" },
     { name = "remotezip", specifier = ">=0.12.6" },
     { name = "ruff", specifier = ">=0.6" },
