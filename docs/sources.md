@@ -37,4 +37,4 @@ What we know about each site we read, and from where it answers. Dated, newest f
 | `jdih.esdm.go.id` | 301 | |
 | `web.archive.org`, `archive.org` | 200 | connection reset |
 
-Re-check with `probe-sources.yml`.
+These came from `probe-sources.yml`, removed 2026-11-24. To re-check, restore it from git history (7f6dcaed).
