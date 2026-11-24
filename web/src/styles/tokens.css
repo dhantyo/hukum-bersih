@@ -66,7 +66,13 @@
 }
 
 /* Reader's choice of font and size for law text (set on <html> by ReadingSettings). */
-:root[data-font="literata"] { --font-law: var(--font-literata); }
-:root[data-font="sans"] { --font-law: var(--font-ui); }
-:root[data-font="atkinson"] { --font-law: var(--font-atkinson); }
+/* One choice per format (decision 0009): Asli defaults to Source Serif 4, Modern (the default
+   format) to Atkinson Hyperlegible Next. */
+:root:not([data-format="asli"]) { --font-law: var(--font-atkinson); }
+:root:not([data-format="asli"])[data-font-modern="serif"] { --font-law: var(--font-source-serif); }
+:root:not([data-format="asli"])[data-font-modern="literata"] { --font-law: var(--font-literata); }
+:root:not([data-format="asli"])[data-font-modern="sans"] { --font-law: var(--font-ui); }
+:root[data-format="asli"][data-font-asli="literata"] { --font-law: var(--font-literata); }
+:root[data-format="asli"][data-font-asli="sans"] { --font-law: var(--font-ui); }
+:root[data-format="asli"][data-font-asli="atkinson"] { --font-law: var(--font-atkinson); }
 :root[data-size="large"] { --fs-law: 1.25rem; }

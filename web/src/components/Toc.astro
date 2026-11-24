@@ -28,8 +28,8 @@ const range = (arts: AknNode[]) =>
       return (
         <li>
           <a href={`#${c.eId}`}>
-            <span class="toc-label"><span class="f-asli">BAB {c.num}</span><span class="f-modern">Bab {c.num}</span></span>{" "}
-            {c.heading && <><span class="toc-title"><span class="f-asli">{c.heading}</span><span class="f-modern">{modernHeading(c.heading)}</span></span>{" "}</>}
+            <span class="toc-label">Bab {c.num}</span>{" "}
+            {c.heading && <><span class="toc-title">{modernHeading(c.heading)}</span>{" "}</>}
             {range(arts) && <span class="toc-range">{range(arts)}</span>}
           </a>
         </li>

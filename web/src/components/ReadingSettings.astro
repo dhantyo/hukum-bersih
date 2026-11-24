@@ -8,10 +8,10 @@ export interface LawView { penjelasan: boolean; pembukaan: boolean; penutup: boo
 interface Props { view?: LawView }
 const { view } = Astro.props;
 const fonts = [
-  { key: "serif", label: "Source Serif", note: "serif, bawaan" },
+  { key: "serif", label: "Source Serif", note: "serif, bawaan format Asli" },
   { key: "literata", label: "Literata", note: "serif buku" },
   { key: "sans", label: "Public Sans", note: "tanpa kait" },
-  { key: "atkinson", label: "Atkinson Hyperlegible", note: "paling mudah dibaca" },
+  { key: "atkinson", label: "Atkinson Hyperlegible", note: "paling mudah dibaca, bawaan format Modern" },
 ];
 const sizes = [{ key: "normal", label: "Normal" }, { key: "large", label: "Besar" }];
 const formats = [
@@ -58,10 +58,10 @@ const parts = view ? [
       </>
     )}
     <fieldset>
-      <legend>Huruf teks peraturan</legend>
+      <legend>Huruf teks peraturan{view && <span class="for-format"> · format <span data-font-format>Modern</span></span>}</legend>
       {fonts.map((f) => (
         <label class="opt">
-          <input type="radio" name="hb-font" value={f.key} checked={f.key === "serif"} />
+          <input type="radio" name="hb-font" value={f.key} />
           <span class="sample" data-font-sample={f.key}>{f.label}</span>
           <span class="note">{f.note}</span>
         </label>
@@ -85,8 +85,26 @@ const parts = view ? [
   const set = (k: string, v: string) => { try { localStorage.setItem(k, v); } catch { /* private mode */ } };
   const inputs = (name: string) => document.querySelectorAll<HTMLInputElement>(`details.reading input[name="${name}"]`);
 
-  // font and size
-  for (const [name, attr, def] of [["hb-font", "font", "serif"], ["hb-size", "size", "normal"]] as const) {
+  // font: one choice per format (Asli default serif, Modern default Atkinson); the list edits
+  // the format being read
+  const FONT_DEFAULT = { asli: "serif", modern: "atkinson" } as const;
+  const fmtNow = () => (root.dataset.format === "asli" ? "asli" : "modern");
+  const fontAttr = (f: "asli" | "modern") => (f === "asli" ? "fontAsli" : "fontModern");
+  const showFont = () => {
+    const f = fmtNow();
+    const current = root.dataset[fontAttr(f)] ?? FONT_DEFAULT[f];
+    inputs("hb-font").forEach((i) => { i.checked = i.value === current; });
+    document.querySelectorAll("[data-font-format]").forEach((e) => { e.textContent = f === "asli" ? "Asli" : "Modern"; });
+  };
+  inputs("hb-font").forEach((input) => input.addEventListener("change", () => {
+    const f = fmtNow();
+    set(`hb-font-${f}`, input.value);
+    if (input.value === FONT_DEFAULT[f]) delete root.dataset[fontAttr(f)];
+    else root.dataset[fontAttr(f)] = input.value;
+  }));
+  showFont();
+  // size
+  for (const [name, attr, def] of [["hb-size", "size", "normal"]] as const) {
     const current = get(name) ?? def;
     inputs(name).forEach((input) => {
       input.checked = input.value === current;
@@ -119,6 +137,7 @@ const parts = view ? [
     set("hb-view", JSON.stringify({ format: fmt, penjelasan: pj, cj, hide }));
     (window as unknown as { hbLawView?: { sync: () => void } }).hbLawView?.sync();
     showView();
+    showFont();
   };
   for (const name of ["hb-format", "hb-penjelasan", "hb-cj", "hb-part"]) inputs(name).forEach((i) => i.addEventListener("change", applyView));
   showView();

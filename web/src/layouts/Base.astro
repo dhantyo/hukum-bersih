@@ -34,8 +34,9 @@ const nav = [
     <script is:inline>
       // reader's font / size for law text (components/ReadingSettings.astro), before first paint
       try {
-        var f = localStorage.getItem("hb-font"), z = localStorage.getItem("hb-size");
-        if (f && f !== "serif") document.documentElement.dataset.font = f;
+        var fa = localStorage.getItem("hb-font-asli"), fm = localStorage.getItem("hb-font-modern"), z = localStorage.getItem("hb-size");
+        if (fa && fa !== "serif") document.documentElement.dataset.fontAsli = fa;
+        if (fm && fm !== "atkinson") document.documentElement.dataset.fontModern = fm;
         if (z && z !== "normal") document.documentElement.dataset.size = z;
       } catch (e) {}
       // reader's view of law texts (components/ReadingSettings.astro): format, Penjelasan, parts
