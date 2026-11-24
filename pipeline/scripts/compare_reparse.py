@@ -37,7 +37,7 @@ from hukum_bersih.manifest import sha256_file
 from hukum_bersih.pdf import extract
 from hukum_bersih.pdf.structure import PARSER_VERSION, parse_pdf
 from hukum_bersih.records import load_record
-from hukum_bersih.sources.peraturan_go_id import _words_lost
+from hukum_bersih.sources.peraturan_go_id import _poorer_than_stored, measure
 
 CONTEXT = 2          # unchanged lines kept around a changed hunk
 
@@ -167,9 +167,13 @@ def compare(law: str, max_diff: int, pages: list[int], save: str = "") -> None:
     print(f"| body words | {old_body} | {new_body} ({new_body - old_body:+d}) |")
     print(f"| Penjelasan words (proper: before its TLN line or a Lampiran) | {old_penj} | {new_penj} ({new_penj - old_penj:+d}) |")
     print(f"| words after it (TLN line, Lampiran) | {old_tail} | {new_tail} ({new_tail - old_tail:+d}) |")
-    print(f"\nimporter: {_words_lost(stored_path, new) if stored else 'no stored text'}"
-          f"; pasal {doc.pasal_count} vs {version.get('pasal_count') if version else 0}"
-          f"{' (amending: pasal not compared)' if doc.amending else ''}\n")
+    print(f"| pasal the importer compares (ART lines of the body) | {measure(stored).pasal} | {measure(new).pasal} |")
+    if stored:
+        refusal = _poorer_than_stored(stored_path, new, doc.amending)
+        verdict = f"REFUSED: {refusal}" if refusal else "ACCEPTED"
+    else:
+        verdict = "ACCEPTED (no stored text)"
+    print(f"\nimporter: **{verdict}**{' (amending: pasal not compared)' if doc.amending else ''}\n")
 
     print("warnings:")
     for w in doc.warnings:
