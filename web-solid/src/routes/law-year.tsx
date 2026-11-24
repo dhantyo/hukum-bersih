@@ -1,32 +1,51 @@
 import type { RouteProps } from "@solidjs/router";
+import * as stylex from "@stylexjs/stylex";
 import { createMemo, Show } from "solid-js";
 
-import { LawCatalog } from "../components/law-catalog.tsx";
+import { LawRows } from "../components/law-rows.tsx";
 import { useNoindex, usePageTitle } from "../lib/head.ts";
 import { slashed } from "../lib/paths.ts";
 import { yearQuery } from "../lib/queries.ts";
 import { Router } from "../router.tsx";
+import { css } from "../styles/css.ts";
+import { color, size, space } from "../styles/tokens.stylex.ts";
 import NotFound from "./not-found.tsx";
 
-const LawYear = (props: RouteProps<"/uu/tahun/:tahun">) => {
-  const laws = createMemo(async () => {
-    const items = await yearQuery(props.params.tahun);
+const styles = stylex.create({
+  crumbs: {
+    color: color.textMuted,
+    fontSize: size.sm,
+  },
+  crumbLink: { color: color.textMuted },
+  separator: { marginInline: space.s2 },
+  muted: { color: color.textMuted },
+});
 
-    return items.length > 0 ? items : undefined;
-  });
+const LawYear = (props: RouteProps<"/uu/tahun/:tahun">) => {
+  const listing = createMemo(async () => await yearQuery(props.params.tahun));
 
   return (
-    <Show when={laws()} fallback={<NotFound />} keyed>
+    <Show when={listing()} fallback={<NotFound />} keyed>
       {(items) => {
-        usePageTitle(() => `Undang-Undang tahun ${props.params.tahun}`);
+        usePageTitle(() => `Undang-Undang tahun ${items.year}`);
         useNoindex();
 
         return (
           <main>
-            <a href={slashed(Router.paths.uu)}>Undang-Undang</a>
-            <h1>Undang-Undang tahun {props.params.tahun}</h1>
-            <p>{items.length} undang-undang, terbaru di atas.</p>
-            <LawCatalog laws={items} />
+            <nav class={css(styles.crumbs)} aria-label="Lokasi">
+              <a class={css(styles.crumbLink)} href={slashed(Router.paths.uu)}>
+                Undang-Undang
+              </a>
+              <span class={css(styles.separator)} aria-hidden="true">
+                ›
+              </span>
+              <span>{items.year}</span>
+            </nav>
+            <h1>Undang-Undang tahun {items.year}</h1>
+            <p class={css(styles.muted)}>
+              {items.rows.length} undang-undang, terbaru di atas.
+            </p>
+            <LawRows laws={items.rows} />
           </main>
         );
       }}

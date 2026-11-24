@@ -1,16 +1,14 @@
 import { GET } from "@solidjs/web/server-functions";
 import * as v from "valibot";
 
-import { readCatalog } from "../server/records/catalog.ts";
 import { readDraftBill, readDraftText } from "../server/records/draft.ts";
+import { readDraftListings } from "../server/records/listings.ts";
 import { draftDocumentId, slug } from "./schemas.ts";
 
 export const listDraftBills = GET(async () => {
   "use server";
 
-  const catalog = await readCatalog();
-
-  return catalog.laws.filter((law) => law.c === "RUU");
+  return await readDraftListings();
 });
 
 export const getDraftBill = GET(async (billSlug: string) => {

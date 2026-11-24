@@ -1,17 +1,64 @@
-import { createMemo } from "solid-js";
+import * as stylex from "@stylexjs/stylex";
+import { createMemo, For, Show } from "solid-js";
 
-import { LawCatalog } from "../components/law-catalog.tsx";
-import { usePageTitle } from "../lib/head.ts";
+import { usePageDescription, usePageTitle } from "../lib/head.ts";
+import { slashed } from "../lib/paths.ts";
 import { draftBillsQuery } from "../lib/queries.ts";
+import { Router } from "../router.tsx";
+import { css } from "../styles/css.ts";
+import { color, size, space } from "../styles/tokens.stylex.ts";
+
+const styles = stylex.create({
+  muted: { color: color.textMuted },
+  list: { margin: 0, padding: 0, listStyle: "none" },
+  card: {
+    borderColor: color.line,
+    borderRadius: space.s2,
+    borderStyle: "solid",
+    borderWidth: 1,
+    marginBlock: space.s3,
+    paddingBlock: space.s4,
+    paddingInline: space.s5,
+    backgroundColor: color.backgroundSubtle,
+  },
+  small: { fontSize: size.sm },
+  meta: { color: color.textMuted, fontSize: size.sm },
+});
 
 const DraftIndex = () => {
-  usePageTitle(() => "Rancangan Undang-Undang");
+  usePageTitle(() => "RUU");
+  usePageDescription(
+    "Rancangan undang-undang yang dilacak beserta versi-versinya."
+  );
   const bills = createMemo(async () => await draftBillsQuery());
 
   return (
     <main>
       <h1>Rancangan Undang-Undang</h1>
-      <LawCatalog laws={bills()} />
+      <p class={css(styles.muted)}>
+        Setiap RUU dilacak beserta semua versi draf yang pernah muncul dan
+        asal-usulnya.
+      </p>
+      <ul class={css(styles.list)}>
+        <For each={bills()}>
+          {(bill) => (
+            <li class={css(styles.card)}>
+              <a href={slashed(Router.paths.ruu(bill.slug))}>
+                <strong>{bill.name}</strong>
+              </a>
+              <div class={css(styles.small)}>{bill.title}</div>
+              <div class={css(styles.meta)}>
+                {bill.versions} versi teks
+                <Show when={bill.last} keyed>
+                  {(last) => (
+                    <>{` · tahap terakhir: ${last.date}${last.note === null ? "" : ` (${last.note})`}`}</>
+                  )}
+                </Show>
+              </div>
+            </li>
+          )}
+        </For>
+      </ul>
     </main>
   );
 };

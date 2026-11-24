@@ -1,41 +1,23 @@
 import { GET } from "@solidjs/web/server-functions";
 import * as v from "valibot";
 
-import { readCatalog } from "../server/records/catalog.ts";
 import { readLaw, toComparison, toReaderLaw } from "../server/records/law.ts";
+import {
+  readLawOverview,
+  readYearListing,
+} from "../server/records/listings.ts";
 import { lawPath, year } from "./schemas.ts";
-
-const readLawCatalog = async () => {
-  const { laws } = await readCatalog();
-
-  return laws.filter((law) => v.is(lawPath, law.u));
-};
 
 export const getLawOverview = GET(async () => {
   "use server";
-  const laws = await readLawCatalog();
-  const years = Map.groupBy(laws, (law) => law.y);
 
-  return {
-    total: laws.length,
-    years: [...years].map(([lawYear, items]) => ({
-      year: lawYear,
-      count: items.length,
-    })),
-    recent: laws.slice(0, 20),
-  };
+  return await readLawOverview();
 });
 
 export const getLawYear = GET(async (lawYear: string) => {
   "use server";
 
-  if (!v.is(year, lawYear)) {
-    return [];
-  }
-
-  const laws = await readLawCatalog();
-
-  return laws.filter((law) => law.y === Number(lawYear));
+  return v.is(year, lawYear) ? await readYearListing(lawYear) : null;
 });
 
 export const getLaw = GET(

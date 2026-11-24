@@ -6,3 +6,8 @@ export const slashed = (path: { toString: () => string }) => {
 
 export const lawUrl = (params: { nomor: string; tahun: string }) =>
   `/uu/${params.nomor}/${params.tahun}/`;
+
+export const draftChangesUrl = (
+  draft: string,
+  changes: { from: string; to: string }
+) => `/ruu/${draft}/beda/${changes.from}...${changes.to}/`;
