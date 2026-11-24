@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_2025_2025-10-22.txt
   pasal_count: 54
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d02eb4fc1a4297ca66a4acce9d76a69b5da23a6fddc3de89eea6dcc932e40c87
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 40
 pdf_sha256: d02eb4fc1a4297ca66a4acce9d76a69b5da23a6fddc3de89eea6dcc932e40c87
 tanggal_pengundangan: '2025-10-22'
 tanggal_berlaku: '2026-01-01'

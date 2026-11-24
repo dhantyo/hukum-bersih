@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_145_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 43f10a4571c23d718f47e1282a61a79be8ea1600da8b3ccfbf2e818d78435abe
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 20
 pdf_sha256: 43f10a4571c23d718f47e1282a61a79be8ea1600da8b3ccfbf2e818d78435abe
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

@@ -49,6 +49,8 @@ relationships:
       - 60B
       - 75A
       - 141B
+      - 171B
+      - 171C
   amended_by: []
   revokes: []
   revoked_by: []
@@ -62,10 +64,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2025_2025-03-19.txt
   pasal_count: 2
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d028674a86e8ec58de146e80e67d734d79c4a6ce0d0ac2fee4d6bf5e127679f3
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 165
 pdf_sha256: d028674a86e8ec58de146e80e67d734d79c4a6ce0d0ac2fee4d6bf5e127679f3
 tanggal_pengundangan: '2025-03-19'
 tanggal_berlaku: '2025-03-19'

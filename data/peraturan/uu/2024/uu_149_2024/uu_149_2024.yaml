@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_149_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 686d2c6ee32be745a5ee60f57f155326a72d09e4b51bdbfa982b96ec45491ae6
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 17
 pdf_sha256: 686d2c6ee32be745a5ee60f57f155326a72d09e4b51bdbfa982b96ec45491ae6
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

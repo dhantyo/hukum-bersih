@@ -40,10 +40,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2025_2025-03-26.txt
   pasal_count: 2
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 91bd8acb3bb8cbf071aefb5ecb336a4a24bd1743b02a31b8f2cb6fc4e3d9e25b
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 6
 pdf_sha256: 91bd8acb3bb8cbf071aefb5ecb336a4a24bd1743b02a31b8f2cb6fc4e3d9e25b
 tanggal_pengundangan: '2025-03-26'
 tanggal_berlaku: '2025-03-26'

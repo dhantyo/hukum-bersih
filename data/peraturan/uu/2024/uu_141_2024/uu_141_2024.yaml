@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_141_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 58f2fa44d15fff861ce82c3c02961999be9a612aaf80613f0cfd71c07701bc3a
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 38
 pdf_sha256: 58f2fa44d15fff861ce82c3c02961999be9a612aaf80613f0cfd71c07701bc3a
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

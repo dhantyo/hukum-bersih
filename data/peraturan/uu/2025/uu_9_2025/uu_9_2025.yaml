@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2025_2025-08-20.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 096b41dd0ba1b975bb5748e02c43e08cf316057a7c4034fd1c34dfeba3a7220c
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 29
 pdf_sha256: 096b41dd0ba1b975bb5748e02c43e08cf316057a7c4034fd1c34dfeba3a7220c
 tanggal_pengundangan: '2025-08-20'
 tanggal_berlaku: '2025-08-20'

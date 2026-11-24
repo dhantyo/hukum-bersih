@@ -28,10 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2026_2026-09-30.txt
   pasal_count: 52
-  parser_version: 13
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1608af2d0b9f242f3cb344629a45884fae88216424239ab10f5524d8331df669
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 1
+  ocr_unknown: 265
 tanggal_pengundangan: '2026-09-30'
 tanggal_berlaku: '2026-09-30'
 lembaran_negara: 'LN 2026 (144), TLN (7201) : 50 hlm.; jdih.setneg.go.id'

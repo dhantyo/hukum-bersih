@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_137_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b08190d8f3d4179ca86409e474e4da62d48c86cf6034dc9121ffcbb50d72e917
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 15
 pdf_sha256: b08190d8f3d4179ca86409e474e4da62d48c86cf6034dc9121ffcbb50d72e917
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

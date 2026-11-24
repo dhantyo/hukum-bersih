@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_143_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1fce567ccba76e56e4787977a3b8d275be9d44bce342a25f18cfeedbc0161d54
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 21
 pdf_sha256: 1fce567ccba76e56e4787977a3b8d275be9d44bce342a25f18cfeedbc0161d54
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'
