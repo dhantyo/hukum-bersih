@@ -1,6 +1,8 @@
 """Page furniture (headers, page numbers, serials, page-turn words, crest fragments, browser print
 marks) left out of the text, with lines as printed in the sample PDFs (docs/parser-review-2026-11.md)."""
 
+import pytest
+
 from hukum_bersih.pdf import extract
 from hukum_bersih.pdf.extract import _clean_page, rows
 
@@ -95,3 +97,14 @@ def test_browser_print_header_and_footer_are_not_content():
     for text in ("Pasal 1", "pada tanggal 19 Juni 2003", "1/2 dari jumlah anggota",
                  "a. bahwa negara melalui https adalah"):
         assert not extract.NEVER_CONTENT_RE.match(text), text
+
+
+def test_peraturan_go_id_banner_is_dropped():                       # old UU from peraturan.go.id
+    assert _clean_page(["UNDANG-UNDANG", "Teks tidak dalam format asli. Kembali: tekan backspace", "isi"],
+                       first_page=True) == ["UNDANG-UNDANG", "isi"]
+
+
+@pytest.mark.parametrize("junk", ["Halaman 2 dari 10", "3 of 12", "www.djpp.depkumham.go.id",
+                                  "ditjen Peraturan Perundang-undangan", "file:///C:/UU/2003/19.htm"])
+def test_print_and_site_marks_are_dropped_anywhere_on_a_page(junk):
+    assert _clean_page(["teks", junk, "isi"], first_page=False) == ["teks", "isi"]

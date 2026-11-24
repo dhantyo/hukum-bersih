@@ -1,6 +1,7 @@
 """Penjelasan, Lampiran and the copy certification after a law's closing."""
 
 import pymupdf
+import pytest
 
 from hukum_bersih.pdf.structure import parse_lines, parse_pdf
 
@@ -44,6 +45,31 @@ def test_penjelasan_may_skip_pasal():
                          "PENJELASAN", "UMUM", "Umum.", "PASAL DEMI PASAL", "Pasal 1.", "Cukup jelas.",
                          "Pasal 5.", "Lihat juga", "Pasal 7.", "Pasal 12.", "Cukup jelas", "Pasal 13.", "Jelas."])
     assert [b.label for b in doc.blocks if b.kind == "p_pasal"] == ["Pasal 1", "Pasal 5", "Pasal 12", "Pasal 13"]
+
+
+LAW = ["Menimbang : a. bahwa x;", "Pasal 1", "Satu.", "Pasal 2", "Dua.", "Pasal 3", "Tiga."]
+
+
+def test_penjelasan_sections_with_the_numeral_on_its_own_line():
+    doc = parse_lines(LAW + ["PENJELASAN", "I.", "UMUM", "Kalimat satu.", "Kalimat dua.", "II.", "PASAL DEMI PASAL",
+                             "Pasal 1", "Cukup jelas."])
+    start = [b.kind for b in doc.blocks].index("penjelasan")
+    assert [(b.kind, b.text or b.label) for b in doc.blocks[start + 1:]] == [
+        ("umum", "Umum"), ("text", "Kalimat satu."), ("text", "Kalimat dua."),   # one paragraph per sentence
+        ("pasal_demi_pasal", "Pasal demi Pasal"), ("p_pasal", "Pasal 1"), ("text", "Cukup jelas.")]
+
+
+def test_penjelasan_labels_for_ayat_huruf_and_angka():               # Lampiran II item 190
+    doc = parse_lines(LAW + ["PENJELASAN", "II. PASAL DEMI PASAL", "Pasal 1", "Ayat (1)", "Cukup jelas.",
+                             "Pasal 2", "Huruf a", "Cukup jelas.", "Angka 2 Yang dimaksud dengan “x” adalah y."])
+    assert [(b.label, b.text) for b in kinds(doc, "p_label")] == [
+        ("Ayat (1)", "Cukup jelas."), ("Huruf a", "Cukup jelas."), ("Angka 2", "Yang dimaksud dengan “x” adalah y.")]
+
+
+def test_misprinted_pasal_in_the_penjelasan_is_kept_when_the_next_one_confirms_it():
+    doc = parse_lines(LAW + ["PENJELASAN", "II. PASAL DEMI PASAL", "Pasal 1", "Cukup jelas.",
+                             "Pasal 9", "Cukup jelas.", "Pasal 3", "Cukup jelas."])
+    assert [b.label for b in kinds(doc, "p_pasal")] == ["Pasal 1", "Pasal 9", "Pasal 3"]
 
 
 def test_separate_penjelasan_pdf_is_read_after_the_law(tmp_path):
@@ -105,6 +131,24 @@ def test_penjelasan_quoted_in_a_lampiran_after_the_penjelasan_stays_in_the_lampi
     assert sum(b.kind == "penjelasan" for b in doc.blocks) == 1
     lamp = [b.text for b in doc.blocks if b.kind == "lampiran_text"]
     assert "PENJELASAN ATAS UNDANG-UNDANG NOMOR 7 TAHUN 2021" in lamp and lamp[-1] == "Cukup jelas."
+
+
+@pytest.mark.xfail(strict=True, reason="known gap: closing lines are taken out of a Lampiran")
+def test_closing_formula_quoted_in_a_lampiran_stays_in_the_lampiran():
+    # UU 12/2011 Lampiran II items 161-173 (52 lines lost), UU 17/2016's attached Perppu (5 lines)
+    doc = parse_lines(LAW + ["Disahkan di Jakarta", "LAMPIRAN II", "161. Rumusan perintah pengundangan:", "Contoh:",
+                             "Agar setiap orang mengetahuinya, memerintahkan pengundangan …", "Disahkan di Jakarta",
+                             "pada tanggal …"])
+    assert [b.text for b in kinds(doc, "closing")] == ["Disahkan di Jakarta"]
+
+
+@pytest.mark.xfail(strict=True, reason="known gap: a quoted LAMPIRAN heading starts a new Lampiran")
+def test_lampiran_heading_quoted_as_an_example_does_not_start_a_lampiran():
+    # UU 12/2011 Lampiran II item 194 ("Contoh: LAMPIRAN I" / "LAMPIRAN II"): 4 Lampiran instead of 2
+    doc = parse_lines(LAW + ["Disahkan di Jakarta", "LAMPIRAN I", "Naskah akademik.", "LAMPIRAN II",
+                             "194. Tiap lampiran diberi nomor urut.", "Contoh: LAMPIRAN I", "LAMPIRAN II",
+                             "195. Judul lampiran."])
+    assert [b.label for b in kinds(doc, "lampiran")] == ["LAMPIRAN I", "LAMPIRAN II"]
 
 
 def test_penjelasan_after_the_copy_certification_is_kept():          # UU 2/2025 lost it before

@@ -84,3 +84,39 @@ def test_ocr_letters_for_digits_and_spaced_marks_in_headings():
     assert normalise(["Pasal S1", "Pasal 1lA", "Pasal 1O", "Pasal 84 ,", "Pasal 9 ;"]) == [
         "Pasal 51", "Pasal 11A", "Pasal 10", "Pasal 84", "Pasal 9"]
     assert normalise(["Pasal II", "Pasal 5B", "Pasal 84,"]) == ["Pasal II", "Pasal 5B", "Pasal 84,"]
+
+
+def test_ocr_glued_or_capital_pasal_heading_is_read_as_pasal_n():
+    from hukum_bersih.pdf.structure import normalise
+
+    assert normalise(["PasalI", "PASAL 3", "Pasal12"]) == ["Pasal I", "Pasal 3", "Pasal 12"]
+
+
+def test_bab_numbered_in_words():                                     # 1950s: "Bab Pertama"
+    doc = parse_lines(["Menimbang : a. bahwa x;", "Bab Pertama", "Ketentuan Umum", "Pasal 1", "x.",
+                       "Bab Kedua", "Pajak", "Pasal 2", "y."])
+    assert [(b.label, b.text) for b in kinds(doc, "bab")] == [("BAB Pertama", "Ketentuan Umum"),
+                                                               ("BAB Kedua", "Pajak")]
+
+
+def test_bagian_and_paragraf_have_one_title_line_and_need_a_bab():
+    # UU 12/2011 Lampiran II items 70, 73-76: Bagian Kesatu / title, Paragraf 1 / title, inside a BAB
+    doc = parse_lines(["Menimbang : a. bahwa x;", "Bagian Kesatu", "Umum", "Pasal 1", "x.",
+                       "BAB I", "KETENTUAN", "Bagian Kesatu", "Susunan dan Kedudukan",
+                       "Paragraf 1", "Ketua, Wakil Ketua, dan Hakim", "Pasal 2", "y."])
+    assert [(b.label, b.text) for b in kinds(doc, "bagian")] == [("Bagian Kesatu", "Susunan dan Kedudukan")]
+    assert [(b.label, b.text) for b in kinds(doc, "paragraf")] == [("Paragraf 1", "Ketua, Wakil Ketua, dan Hakim")]
+
+
+def test_enacting_formula_lines_are_preamble_not_title():
+    doc = parse_lines(["UNDANG-UNDANG REPUBLIK INDONESIA", "NOMOR 1 TAHUN 2020", "DENGAN RAHMAT TUHAN YANG MAHA ESA",
+                       "PRESIDEN REPUBLIK INDONESIA,", "Menimbang : a. bahwa x;", "Pasal 1", "x."])
+    assert [b.text for b in kinds(doc, "title")] == ["UNDANG-UNDANG REPUBLIK INDONESIA NOMOR 1 TAHUN 2020"]
+    assert [b.text for b in kinds(doc, "preamble")][:2] == ["DENGAN RAHMAT TUHAN YANG MAHA ESA",
+                                                            "PRESIDEN REPUBLIK INDONESIA,"]
+
+
+def test_inserted_pasal_with_a_letter_follows_its_number():          # Lampiran II item 234: Pasal 128A
+    doc = parse_lines(["Menimbang : a. bahwa x;", "Pasal 1", "Satu.", "Pasal 2", "Dua.", "Pasal 2A",
+                       "Sisipan.", "Pasal 3", "Tiga."])
+    assert [b.label for b in kinds(doc, "pasal")] == ["Pasal 1", "Pasal 2", "Pasal 2A", "Pasal 3"]

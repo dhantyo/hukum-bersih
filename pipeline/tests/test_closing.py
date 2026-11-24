@@ -1,5 +1,7 @@
 """Closing fields from the closing lines as printed, four eras of the BPK sample."""
 
+import pytest
+
 from hukum_bersih.closing import parse
 from hukum_bersih.pdf.structure import parse_lines
 
@@ -71,8 +73,30 @@ def test_line_breaks_and_blank_place():                                # UU 11/2
     assert "place" not in c["signed"] and c["signed"]["date"] == "30 April 2008"
 
 
+def test_old_place_and_date_line_is_the_signing():                   # UU 1/1945
+    c = parse(["Djakarta, tanggal 23 Nopember 1945.", "PRESIDEN REPUBLIK INDONESIA,", "SOEKARNO."])
+    assert c["signed"] == {"place": "Djakarta", "date": "23 Nopember 1945", "office": "PRESIDEN REPUBLIK INDONESIA",
+                           "name": "SOEKARNO"}
+
+
+def test_closing_lines_are_read_back_from_a_stored_text():
+    from hukum_bersih.closing import conclusions
+
+    text = "BODY\n  ART 1 -\n    x\nCONCLUSIONS\n  Disahkan di Jakarta\n\n  pada tanggal 1 Mei 2020\nATTACHMENT Penjelasan\n  y\n"
+    assert conclusions(text) == ["Disahkan di Jakarta", "pada tanggal 1 Mei 2020"]
+    assert conclusions("BODY\n  ART 1 -\n    x\n") == []
+
+
 def kinds(doc, kind):
     return [b for b in doc.blocks if b.kind == kind]
+
+
+@pytest.mark.parametrize("first", ["Dikeluarkan di Jakarta", "Disahkah di Jakarta", "Disjahkan di Djakarta",
+                                   "Djakarta, tanggal 1 Djuli 1950", "Diumumkan pada tanggal 1 Djuli 1950."])
+def test_closing_variants_end_the_last_pasal(first):                  # old spelling, OCR "Disahkah"
+    doc = parse_lines(["Menimbang : a. bahwa x;", "Pasal 1", "Isi.", first, "PRESIDEN,"])
+    assert [b.text for b in kinds(doc, "closing")] == [first, "PRESIDEN,"]
+    assert kinds(doc, "text")[-1].text == "Isi."
 
 
 def test_closing_kept_line_by_line():                             # UU 4/2009

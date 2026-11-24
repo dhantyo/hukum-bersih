@@ -1,3 +1,5 @@
+import pytest
+
 from hukum_bersih.akn.bluebell import escape, to_bluebell
 from hukum_bersih.akn.build import to_akn
 from hukum_bersih.pdf.extract import clean_lines
@@ -99,6 +101,24 @@ def test_numbers_inside_letters_and_back():
     lines = ["Pasal 1", "Meliputi:", "a.", "satu:", "1.", "x;", "2.", "y;", "b.", "dua."]
     items = [(b.label, b.level) for b in parse_lines(lines).blocks if b.kind == "item"]
     assert items == [("a.", 1), ("1.", 2), ("2.", 2), ("b.", 1)]
+
+
+def test_a_list_starts_only_at_a_or_1():
+    # "c." at a line start is a reference wrapped onto the line ("… pada huruf" / "c. …"), not an item
+    doc = parse_lines(["Pasal 1", "Ketentuan sebagaimana dimaksud pada huruf", "c. berlaku juga."])
+    assert [b.kind for b in doc.blocks] == ["pasal", "text"]
+
+
+def test_spacing_of_joined_lines_is_tidied():
+    doc = parse_lines(["Pasal 1", "Dalam Undang- Undang ini ( satu ) , “ kata ” ."])
+    assert doc.blocks[-1].text == "Dalam Undang-Undang ini (satu), “kata”."
+
+
+@pytest.mark.xfail(strict=True, reason="known gap: list levels a) and 1) (Lampiran II items 94-95) are text")
+def test_third_and_fourth_list_levels_are_items():
+    doc = parse_lines(["Pasal 1", "(1) Meliputi:", "a. satu:", "1. dua:", "a) tiga:", "1) empat.", "2. lima."])
+    assert [(b.label, b.level) for b in doc.blocks if b.kind == "item"] == [
+        ("a.", 1), ("1.", 2), ("a)", 3), ("1)", 4), ("2.", 2)]
 
 
 def test_leaked_markup_is_rejected():
