@@ -21,7 +21,8 @@ Kept, because they only read:
   the recorded hash;
 - the parser regression set's archive.org URLs (`pipeline/tests/regression.yaml`);
 - `import-bpk.yml` still declares an `archive` input, ignored, so a run that started the next
-  run with `-f archive=...` does not fail.
+  run with `-f archive=...` does not fail. (Addendum, 2026-11-24: removed once no running chain
+  passed it.)
 
 ## Why
 

@@ -38,10 +38,6 @@ on:
         description: "When the time is up with work left, start the next run automatically"
         type: boolean
         default: true
-      archive:
-        description: "ignored: archive.org upload was removed 2026-11-24"
-        type: boolean
-        default: false
 
 permissions:
   contents: write
