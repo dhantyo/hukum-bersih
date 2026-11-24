@@ -119,10 +119,27 @@ def test_other_characters_are_never_changed(text):
 
 
 @needs_hunspell
-def test_a_mapped_word_is_then_spell_fixed():
-    lines, fixes = fix_lines([CONTEXT + "meningkatkan " * 2, "untuk meningkatkarı mutu"])
-    assert lines[1] == "untuk meningkatkan mutu"
-    assert fixes.changed == [("meningkatkarı", "meningkatkari"), ("meningkatkari", "meningkatkan")]
+@pytest.mark.parametrize("read,meant", [         # Indra-read UU on main, 2026-11-24
+    ("BАB", "BAB"),                                  # Cyrillic А: a BAB heading the parser missed
+    ("հuruf", "huruf"),                              # Armenian h
+    ("Ꭺnak", "Anak"),                                # Cherokee A
+])
+def test_real_lookalikes_are_mapped(read, meant):
+    lines, fixes = fix_lines([f"menurut {read} ini"])
+    assert lines == [f"menurut {meant} ini"]
+    assert (read, meant) in fixes.changed
+
+
+def test_only_letters_the_standard_calls_lookalikes():
+    """UTS #39 maps Cyrillic р/а but not и (no Latin lookalike) and not dotted İ: "Рариa"
+    (Papua) and "İbu" from Indra stay partly unmapped; no hand-made exceptions."""
+    assert fix_lines(["Рариa İbu"])[0] == ["Papиa İbu"]
+
+
+def test_french_and_accented_words_are_kept():
+    """BPK's texts quote French titles (République, française); OCR's own accents stay too."""
+    line = "République française RÉPUBLIQUE Ekönomi"
+    assert fix_lines([line])[0] == [line]
 
 
 def test_without_hunspell_nothing_is_corrected(monkeypatch):
