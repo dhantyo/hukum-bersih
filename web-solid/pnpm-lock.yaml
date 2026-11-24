@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@solidjs/web':
-        specifier: ^2.0.1
+        specifier: ^2.0.3
         version: 2.0.3(solid-js@2.0.3)
       '@stylexjs/stylex':
         specifier: 0.19.2
@@ -18,26 +18,26 @@ importers:
         specifier: 6.0.0-rc.6
         version: 6.0.0-rc.6(@solidjs/web@2.0.3(solid-js@2.0.3))(solid-js@2.0.3)
       '@tanstack/solid-router':
-        specifier: ^2.0.0-rc.11
+        specifier: 2.0.0-rc.12
         version: 2.0.0-rc.12(@solidjs/web@2.0.3(solid-js@2.0.3))(solid-js@2.0.3)
       solid-js:
-        specifier: ^2.0.1
+        specifier: ^2.0.3
         version: 2.0.3
       valibot:
-        specifier: ^1.4.2
+        specifier: ^1.5.0
         version: 1.5.0(typescript@7.0.2)
     devDependencies:
       '@interfere/landmines':
         specifier: ^0.1.1
         version: 0.1.1(oxlint@1.95.0(oxlint-tsgolint@7.0.2008))
       '@solidjs/diagnostics':
-        specifier: ^2.0.1
+        specifier: ^2.0.3
         version: 2.0.3(@solidjs/web@2.0.3(solid-js@2.0.3))(solid-js@2.0.3)(vitest@5.1.1(@types/node@26.6.6)(jsdom@31.0.1)(vite@8.3.8(@types/node@26.6.6)(jiti@2.7.0)(yaml@2.9.1)))
       '@solidjs/start-devtools':
-        specifier: ^1.0.0-next.4
+        specifier: ^1.0.1
         version: 1.0.1(@solidjs/web@2.0.3(solid-js@2.0.3))(solid-js@2.0.3)
       '@solidjs/vite-plugin':
-        specifier: ^3.0.0
+        specifier: ^3.0.1
         version: 3.0.1(@babel/core@7.29.13)(@solidjs/start-devtools@1.0.1(@solidjs/web@2.0.3(solid-js@2.0.3))(solid-js@2.0.3))(@solidjs/web@2.0.3(solid-js@2.0.3))(@testing-library/jest-dom@7.0.1(@testing-library/dom@10.4.2)(vitest@5.1.1(@types/node@26.6.6)(jsdom@31.0.1)(vite@8.3.8(@types/node@26.6.6)(jiti@2.7.0)(yaml@2.9.1))))(solid-js@2.0.3)(vite@8.3.8(@types/node@26.6.6)(jiti@2.7.0)(yaml@2.9.1))
       '@stylexjs/eslint-plugin':
         specifier: 0.19.2
@@ -58,7 +58,7 @@ importers:
         specifier: ^0.79.0
         version: 0.79.0
       oxlint:
-        specifier: ^1.94.0
+        specifier: ^1.95.0
         version: 1.95.0(oxlint-tsgolint@7.0.2008)
       oxlint-tsgolint:
         specifier: ^7.0.2008
@@ -76,7 +76,7 @@ importers:
         specifier: ^8.3.8
         version: 8.3.8(@types/node@26.6.6)(jiti@2.7.0)(yaml@2.9.1)
       vitest:
-        specifier: ^5.1.0
+        specifier: ^5.1.1
         version: 5.1.1(@types/node@26.6.6)(jsdom@31.0.1)(vite@8.3.8(@types/node@26.6.6)(jiti@2.7.0)(yaml@2.9.1))
 
 packages:
