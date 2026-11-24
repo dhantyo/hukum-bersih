@@ -34,12 +34,17 @@ async function loadCatalog() {
   return await file.text();
 }
 
+export async function readCatalog() {
+  return v.parse(catalog, JSON.parse(await loadCatalog()));
+}
+
 export async function listLaws() {
-  const { laws } = v.parse(catalog, JSON.parse(await loadCatalog()));
+  const { laws } = await readCatalog();
   return laws.filter((law) => /^\/uu\/\d+\/\d{4}\/$/.test(law.u));
 }
 
 export type LawCatalogEntry = v.InferOutput<typeof entry>;
+export type SearchCatalog = v.InferOutput<typeof catalog>;
 
 export async function catalogResponse() {
   const body = await loadCatalog();

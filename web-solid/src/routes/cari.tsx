@@ -1,6 +1,7 @@
 import { createFileRoute } from '@tanstack/solid-router';
-import { createSignal, For } from 'solid-js';
-import { getSearchRelease } from '../lib/search';
+import { createEffect, createSignal, For, Show } from 'solid-js';
+import { LawCatalog } from '../LawCatalog';
+import { getSearchResults } from '../lib/search';
 
 interface SearchHit {
   url: string;
@@ -18,61 +19,83 @@ function legalLink(url: string): boolean {
 }
 
 export const Route = createFileRoute('/cari')({
-  loader: () => getSearchRelease(),
+  validateSearch: (search: Record<string, unknown>): { q?: string } => ({
+    q: typeof search.q === 'string' ? search.q.trim().slice(0, 200) : '',
+  }),
+  loaderDeps: ({ search }) => ({ query: search.q ?? '' }),
+  loader: ({ deps }) => getSearchResults(deps.query),
   head: () => ({ meta: [{ title: 'Cari | Hukum Bersih' }] }),
   component: SearchPage,
 });
 
 function SearchPage() {
-  const release = Route.useLoaderData();
-  const [hits, setHits] = createSignal<SearchHit[]>([]);
-  const [message, setMessage] = createSignal('');
-  const [busy, setBusy] = createSignal(false);
-  let index: { release: string; pagefind: Promise<Pagefind> } | undefined;
-
-  async function search(event: SubmitEvent) {
-    if (!(event.currentTarget instanceof HTMLFormElement)) return;
-    event.preventDefault();
-    const query = new FormData(event.currentTarget).get('q');
-    if (typeof query !== 'string' || !query.trim() || busy()) return;
-    setBusy(true);
-    try {
-      const currentRelease = release();
-      if (index?.release !== currentRelease) {
-        index = { release: currentRelease, pagefind: loadIndex(currentRelease) };
-      }
-      const { results } = await (await index.pagefind).search(query.trim());
-      const matches = await Promise.all(results.slice(0, 10).map((result) => result.data()));
-      const legalHits = matches.filter((match) => legalLink(match.url));
-      setHits(legalHits);
-      setMessage(legalHits.length ? '' : 'Tidak ada hasil.');
-    } catch (error) {
-      console.error('Pagefind search failed', error);
-      index = undefined;
-      setHits([]);
-      setMessage('Pencarian gagal. Coba lagi.');
-    } finally {
-      setBusy(false);
-    }
-  }
-
+  const search = Route.useLoaderData();
   return <main>
     <h1>Cari teks hukum</h1>
-    <form onSubmit={search} role="search">
+    <form role="search" method="get" action="/cari/">
       <label for="search-query">Kata kunci</label>
-      <input id="search-query" name="q" type="search" required />
-      <button type="submit" disabled={busy()}>Cari</button>
+      <input id="search-query" name="q" type="search" value={search().query} maxlength={200} required />
+      <button type="submit">Cari</button>
     </form>
-    <p role="status">{message()}</p>
-    <ul><For each={hits()}>{(hit) => <SearchResult hit={hit} />}</For></ul>
+    <Show when={search().catalog} keyed>{(catalog) => <>
+      <Show when={catalog.articles.length}>
+        <h2>Pasal</h2>
+        <ul><For each={catalog.articles}>{(article) => <li><a href={article.url}>{article.label}</a></li>}</For></ul>
+      </Show>
+      <Show when={catalog.collections.length}>
+        <h2>Koleksi</h2>
+        <ul><For each={catalog.collections}>{(collection) => <li><a href={collection.u}>{collection.name}</a></li>}</For></ul>
+      </Show>
+      <Show when={catalog.laws.length}>
+        <h2>Nomor dan judul</h2>
+        <LawCatalog laws={catalog.laws} />
+      </Show>
+      <FullTextSearch release={search().release} query={search().query} hasCatalogHits={
+        Boolean(catalog.articles.length || catalog.collections.length || catalog.laws.length)
+      } />
+    </>}</Show>
   </main>;
 }
 
-async function loadIndex(release: string): Promise<Pagefind> {
+function FullTextSearch(props: { release: string; query: string; hasCatalogHits: boolean }) {
+  const [hits, setHits] = createSignal<SearchHit[]>([]);
+  const [state, setState] = createSignal<'loading' | 'ready' | 'error'>('loading');
+
+  createEffect(() => ({ release: props.release, query: props.query }), ({ release, query }) => {
+    let cancelled = false;
+    setState('loading');
+    void findText(release, query).then((matches) => {
+      if (cancelled) return;
+      setHits(matches);
+      setState('ready');
+    }, (error: unknown) => {
+      if (cancelled) return;
+      console.error('Pagefind search failed', error);
+      setHits([]);
+      setState('error');
+    });
+    return () => { cancelled = true; };
+  });
+
+  return <>
+    <Show when={state() === 'error'}><p role="status">Pencarian teks gagal. Coba lagi.</p></Show>
+    <Show when={state() === 'ready' && !hits().length && !props.hasCatalogHits}>
+      <p role="status">Tidak ada hasil.</p>
+    </Show>
+    <Show when={state() === 'ready' && hits().length}>
+      <h2>Isi teks</h2>
+      <ul><For each={hits()}>{(hit) => <SearchResult hit={hit} />}</For></ul>
+    </Show>
+  </>;
+}
+
+async function findText(release: string, query: string) {
   const modulePath = `/search-index/${release}/pagefind.js`;
   const pagefind: Pagefind = await import(/* @vite-ignore */ modulePath);
   await pagefind.init();
-  return pagefind;
+  const { results } = await pagefind.search(query);
+  const matches = await Promise.all(results.slice(0, 10).map((result) => result.data()));
+  return matches.filter((match) => legalLink(match.url));
 }
 
 function SearchResult(props: { hit: SearchHit }) {
