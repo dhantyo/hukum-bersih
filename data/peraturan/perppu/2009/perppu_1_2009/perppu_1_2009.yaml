@@ -1,0 +1,58 @@
+id: perppu_1_2009
+akn: /akn/id/act/perppu/2009/1
+type: perppu
+number: '1'
+year: 2009
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2009 tentang Perubahan
+  atas Undang-Undang Nomor 10 Tahun 2008 Tentang Pemilihan Umum Anggota Dewan Perwakilan
+  Rakyat, Dewan Perwakilan Daerah, Dan Dewan Perwakilan Rakyat Daerah
+tentang: Perubahan atas Undang-Undang Nomor 10 Tahun 2008 Tentang Pemilihan Umum Anggota
+  Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, Dan Dewan Perwakilan Rakyat Daerah
+short_name: null
+status: berlaku
+tanggal_penetapan: '2009-02-26'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53233/perpu-no-1-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/42611/Perpu%201%20Tahun%202009.pdf
+relationships:
+  amends:
+  - id: uu_10_2008
+    changes:
+      diubah:
+      - '47'
+      - '176'
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by:
+  - uu_17_2009
+versions:
+- id: perppu_1_2009_2009-02-26
+  kind: asli
+  source: official
+  date: '2009-02-26'
+  date_basis: tanggal_penetapan
+  text: perppu_1_2009_2009-02-26.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 296300e05f28fb37259e337a2d3193d587db05f329786569b1ad59bd88843181
+tanggal_pengundangan: '2009-02-26'
+tanggal_berlaku: '2009-02-26'
+lembaran_negara: 'LN. 2009 No. 41, TLN. No. 4986, LL SETNEG : 5 HLM'
+subjek: PARTAI POLITIK DAN PEMILU - PEMILIHAN UMUM DAERAH, DPRD, PEMILIHAN KEPALA
+  DAERAH
+bpk:
+  id: 53233
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42611/Perpu%201%20Tahun%202009.pdf
+    bpk_file_id: 42611
+    filename: Perpu 1 Tahun 2009.pdf
+    sha256: 296300e05f28fb37259e337a2d3193d587db05f329786569b1ad59bd88843181
+    bytes: 43664
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

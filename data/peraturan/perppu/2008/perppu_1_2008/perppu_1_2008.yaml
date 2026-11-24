@@ -1,0 +1,69 @@
+id: perppu_1_2008
+akn: /akn/id/act/perppu/2008/1
+type: perppu
+number: '1'
+year: 2008
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2008 tentang Perubahan
+  Atas Undang-Undang Nomor 21 Tahun 2001 Tentang Otonomi Khusus Bagi Provinsi Papua
+tentang: Perubahan Atas Undang-Undang Nomor 21 Tahun 2001 Tentang Otonomi Khusus Bagi
+  Provinsi Papua
+short_name: null
+status: berlaku
+tanggal_penetapan: '2008-04-16'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53207/perpu-no-1-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/42585/Perpu%201%20Tahun%202008.pdf
+relationships:
+  amends:
+  - id: uu_21_2001
+    changes:
+      diubah:
+      - '1'
+      - '7'
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+versions:
+- id: perppu_1_2008_2008-04-16
+  kind: asli
+  source: official
+  date: '2008-04-16'
+  date_basis: tanggal_penetapan
+  text: perppu_1_2008_2008-04-16.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 92c056d39f3278111524b168f923e9cd079551879d7aa573777db090bf0f2e38
+tanggal_pengundangan: '2008-04-16'
+tanggal_berlaku: '2008-04-16'
+lembaran_negara: 'LN. 2008 No. 57, TLN. No. 4842, LL SETNEG : 9 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+bpk:
+  id: 53207
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42585/Perpu%201%20Tahun%202008.pdf
+    bpk_file_id: 42585
+    filename: Perpu 1 Tahun 2008.pdf
+    sha256: 92c056d39f3278111524b168f923e9cd079551879d7aa573777db090bf0f2e38
+    bytes: 53821
+    archive_url: null
+  status_peraturan:
+    Ditetapkan dengan:
+    - id: uu_35_2008
+      citation: UU No. 35 Tahun 2008
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        2008 tentang Perubahan atas Undang-Undang Nomor 21 Tahun 2001 tentang Otonomi
+        Khusus Bagi Provinsi Papua Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/39700/uu-no-35-tahun-2008
+      note: null
+    Mengubah:
+    - id: uu_21_2001
+      citation: UU No. 21 Tahun 2001
+      tentang: Otonomi Khusus Bagi Provinsi Papua
+      url: https://peraturan.bpk.go.id/Details/44901/uu-no-21-tahun-2001
+      note: null
+uji_materi: null

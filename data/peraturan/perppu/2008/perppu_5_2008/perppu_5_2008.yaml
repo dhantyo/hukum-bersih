@@ -1,0 +1,53 @@
+id: perppu_5_2008
+akn: /akn/id/act/perppu/2008/5
+type: perppu
+number: '5'
+year: 2008
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 5 Tahun 2008 tentang Perubahan
+  Keempat Atas Undang-Undang Nomor 6 Tahun 1983 Tentang Ketentuan Umum Dan Tata Cara
+  Perpajakan
+tentang: Perubahan Keempat Atas Undang-Undang Nomor 6 Tahun 1983 Tentang Ketentuan
+  Umum Dan Tata Cara Perpajakan
+short_name: null
+status: berlaku
+tanggal_penetapan: '2008-12-31'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53229/perpu-no-5-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/42607/Perpu%205%20Tahun%202008.pdf
+relationships:
+  amends:
+  - id: uu_6_1983
+    order: 4
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+versions:
+- id: perppu_5_2008_2008-12-31
+  kind: asli
+  source: official
+  date: '2008-12-31'
+  date_basis: tanggal_penetapan
+  text: perppu_5_2008_2008-12-31.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: a1a1ffe96d6ea8289871d513e63554a8f192ae44c2746fed5ac591801a0f2f8a
+tanggal_pengundangan: '2008-12-31'
+tanggal_berlaku: '2009-01-01'
+lembaran_negara: 'LN. 2008 No. 211, TLN. No. 4953, LL SETNEG : 4 HLM'
+subjek: PERPAJAKAN
+bpk:
+  id: 53229
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42607/Perpu%205%20Tahun%202008.pdf
+    bpk_file_id: 42607
+    filename: Perpu 5 Tahun 2008.pdf
+    sha256: a1a1ffe96d6ea8289871d513e63554a8f192ae44c2746fed5ac591801a0f2f8a
+    bytes: 48176
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

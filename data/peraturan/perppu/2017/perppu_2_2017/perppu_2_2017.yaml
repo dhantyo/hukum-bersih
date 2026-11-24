@@ -1,0 +1,86 @@
+id: perppu_2_2017
+akn: /akn/id/act/perppu/2017/2
+type: perppu
+number: '2'
+year: 2017
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2017 tentang Perubahan
+  Atas Undang-Undang Nomor 17 Tahun 2013 Tentang Organisasi Kemasyarakatan
+tentang: Perubahan Atas Undang-Undang Nomor 17 Tahun 2013 Tentang Organisasi Kemasyarakatan
+short_name: null
+status: berlaku
+tanggal_penetapan: '2017-07-10'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53279/perpu-no-2-tahun-2017
+source_pdf_url: https://peraturan.bpk.go.id/Download/42660/Perpu%20Nomor%202%20Tahun%202017.pdf
+relationships:
+  amends:
+  - id: uu_17_2013
+    changes:
+      diubah:
+      - '1'
+      - '59'
+      - '60'
+      - '61'
+      - '62'
+      disisipkan:
+      - 80A
+      - 82A
+      - 83A
+      dihapus:
+      - '63'
+      - '64'
+      - '65'
+      - '66'
+      - '67'
+      - '68'
+      - '69'
+      - '70'
+      - '71'
+      - '72'
+      - '73'
+      - '74'
+      - '75'
+      - '76'
+      - '77'
+      - '78'
+      - '79'
+      - '80'
+      - '81'
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by:
+  - uu_16_2017
+versions:
+- id: perppu_2_2017_2017-07-10
+  kind: asli
+  source: official
+  date: '2017-07-10'
+  date_basis: tanggal_penetapan
+  text: perppu_2_2017_2017-07-10.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 9e94724cb08b9c8572886f4f504cdabda58fe684c5f6f77de9ef3261f5389a8c
+  ocr: true
+  ocr_engine: indra
+  ocr_fixed: 12
+  ocr_unknown: 16
+tanggal_pengundangan: '2017-07-10'
+tanggal_berlaku: '2017-07-10'
+lembaran_negara: 'LN. 2017 No. 138, TLN. No. 6084, LL SETNEG : 9 HLM'
+subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI
+bpk:
+  id: 53279
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42660/Perpu%20Nomor%202%20Tahun%202017.pdf
+    bpk_file_id: 42660
+    filename: Perpu Nomor 2 Tahun 2017.pdf
+    sha256: 9e94724cb08b9c8572886f4f504cdabda58fe684c5f6f77de9ef3261f5389a8c
+    bytes: 1363750
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

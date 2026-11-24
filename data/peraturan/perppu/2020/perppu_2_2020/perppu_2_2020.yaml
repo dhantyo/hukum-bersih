@@ -1,0 +1,86 @@
+id: perppu_2_2020
+akn: /akn/id/act/perppu/2020/2
+type: perppu
+number: '2'
+year: 2020
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2020 tentang Perubahan
+  Ketiga atas Undang-Undang Nomor 1 Tahun 2015 tentang Penetapan Peraturan Pemerintah
+  Pengganti Undang-Undang Nomor 1 Tahun 2014 Tentang Pemilihan Gubernur, Bupati, dan
+  Walikota Menjadi Undang-Undang
+tentang: Perubahan Ketiga atas Undang-Undang Nomor 1 Tahun 2015 tentang Penetapan
+  Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2014 Tentang Pemilihan
+  Gubernur, Bupati, dan Walikota Menjadi Undang-Undang
+short_name: null
+status: berlaku
+tanggal_penetapan: '2020-05-04'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/136554/perpu-no-2-tahun-2020
+source_pdf_url: https://peraturan.bpk.go.id/Download/127439/Perpu%20Nomor%202%20Tahun%202020.pdf
+relationships:
+  amends:
+  - id: uu_1_2015
+    order: 3
+    changes:
+      disisipkan:
+      - 122A
+      - 201A
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by:
+  - uu_6_2020
+versions:
+- id: perppu_2_2020_2020-05-04
+  kind: asli
+  source: official
+  date: '2020-05-04'
+  date_basis: tanggal_penetapan
+  text: perppu_2_2020_2020-05-04.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 78532a7178fc8528b773760828af6a6ca9c328a8ad9a22b91b551d14f5d16ce0
+  ocr: true
+  ocr_engine: indra
+  ocr_fixed: 1
+  ocr_unknown: 2
+tanggal_pengundangan: '2020-05-04'
+tanggal_berlaku: '2020-05-04'
+lembaran_negara: 'LN.2020/NO.128, TLN NO.6512, JDIH.SETKAB.GO.ID : 6 HLM.'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH - PARTAI POLITIK DAN PEMILU - PEMILIHAN
+  UMUM DAERAH, DPRD, PEMILIHAN KEPALA DAERAH
+bpk:
+  id: 136554
+  files:
+  - url: https://peraturan.bpk.go.id/Download/127439/Perpu%20Nomor%202%20Tahun%202020.pdf
+    bpk_file_id: 127439
+    filename: Perpu Nomor 2 Tahun 2020.pdf
+    sha256: 78532a7178fc8528b773760828af6a6ca9c328a8ad9a22b91b551d14f5d16ce0
+    bytes: 440050
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_10_2016
+      citation: UU No. 10 Tahun 2016
+      tentang: Perubahan Kedua Atas Undang-Undang Nomor 1 Tahun 2015 Tentang Penetapan
+        Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2014 Tentang Pemilihan
+        Gubernur, Bupati, Dan Walikota Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/37311/uu-no-10-tahun-2016
+      note: null
+    - id: uu_8_2015
+      citation: UU No. 8 Tahun 2015
+      tentang: Perubahan atas Undang-Undang Nomor 1 Tahun 2015 tentang Penetapan Peraturan
+        Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2014 Tentang Pemilihan Gubernur,
+        Bupati, dan Walikota Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/38208/uu-no-8-tahun-2015
+      note: null
+    - id: uu_1_2015
+      citation: UU No. 1 Tahun 2015
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        2014 Tentang Pemilihan Gubernur, Bupati, Dan Walikota Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/37341/uu-no-1-tahun-2015
+      note: null
+uji_materi: null

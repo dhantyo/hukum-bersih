@@ -1,0 +1,54 @@
+id: perppu_1_2015
+akn: /akn/id/act/perppu/2015/1
+type: perppu
+number: '1'
+year: 2015
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2015 tentang Perubahan
+  atas Undang-Undang Nomor 30 Tahun 2002 Tentang Komisi Pemberantasan Tindak Pidana
+  Korupsi
+tentang: Perubahan atas Undang-Undang Nomor 30 Tahun 2002 Tentang Komisi Pemberantasan
+  Tindak Pidana Korupsi
+short_name: null
+status: berlaku
+tanggal_penetapan: '2015-02-18'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53266/perpu-no-1-tahun-2015
+source_pdf_url: https://peraturan.bpk.go.id/Download/225090/Perpu%20Nomor%201%20Tahun%202015_.pdf
+relationships:
+  amends:
+  - id: uu_30_2002
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by:
+  - uu_10_2015
+versions:
+- id: perppu_1_2015_2015-02-18
+  kind: asli
+  source: official
+  date: '2015-02-18'
+  date_basis: tanggal_penetapan
+  text: perppu_1_2015_2015-02-18.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 2e2554a8231381e756602e2925dc77bc69fb6b1af61a13d21e1ab572df7bff7a
+tanggal_pengundangan: '2015-02-18'
+tanggal_berlaku: '2015-02-18'
+lembaran_negara: 'LN. 2015 No. 31, TLN No.5661, peraturan.go.id : 3 hlm.'
+subjek: PEMBENTUKAN, PERUBAHAN, DAN PEMBUBARAN KOMISI / KOMITE / BADAN / DEWAN / STAF
+  KHUSUS / TIM / PANITIA - TINDAK PIDANA KORUPSI, PENCEGAHAN KORUPSI
+bpk:
+  id: 53266
+  files:
+  - url: https://peraturan.bpk.go.id/Download/225090/Perpu%20Nomor%201%20Tahun%202015_.pdf
+    bpk_file_id: 225090
+    filename: Perpu Nomor 1 Tahun 2015_.pdf
+    sha256: 2e2554a8231381e756602e2925dc77bc69fb6b1af61a13d21e1ab572df7bff7a
+    bytes: 251129
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

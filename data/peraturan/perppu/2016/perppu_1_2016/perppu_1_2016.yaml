@@ -1,0 +1,60 @@
+id: perppu_1_2016
+akn: /akn/id/act/perppu/2016/1
+type: perppu
+number: '1'
+year: 2016
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2016 tentang Perubahan
+  Kedua atas Undang-Undang Nomor 23 Tahun 2002 tentang Perlindungan Anak
+tentang: Perubahan Kedua atas Undang-Undang Nomor 23 Tahun 2002 tentang Perlindungan
+  Anak
+short_name: null
+status: berlaku
+tanggal_penetapan: '2016-05-25'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/61883/perpu-no-1-tahun-2016
+source_pdf_url: https://peraturan.bpk.go.id/Download/51923/Perpu%20Nomor%201%20Tahun%202016.pdf
+relationships:
+  amends:
+  - id: uu_23_2002
+    order: 2
+    changes:
+      diubah:
+      - '81'
+      - '82'
+      disisipkan:
+      - 81A
+      - 82A
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by:
+  - uu_17_2016
+versions:
+- id: perppu_1_2016_2016-05-25
+  kind: asli
+  source: official
+  date: '2016-05-25'
+  date_basis: tanggal_penetapan
+  text: perppu_1_2016_2016-05-25.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 504bb92e746e9281c5606f0e59e57cdcbc9ac2bf1c6612986d13d5f9394e352b
+tanggal_pengundangan: '2016-05-25'
+tanggal_berlaku: '2016-05-25'
+lembaran_negara: 'LN. 2016 No.99/TLN. No.5882 : 7 HLM'
+subjek: HAK ASASI MANUSIA
+bpk:
+  id: 61883
+  files:
+  - url: https://peraturan.bpk.go.id/Download/51923/Perpu%20Nomor%201%20Tahun%202016.pdf
+    bpk_file_id: 51923
+    filename: Perpu Nomor 1 Tahun 2016.pdf
+    sha256: 504bb92e746e9281c5606f0e59e57cdcbc9ac2bf1c6612986d13d5f9394e352b
+    bytes: 224923
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

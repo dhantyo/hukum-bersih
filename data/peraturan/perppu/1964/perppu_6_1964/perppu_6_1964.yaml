@@ -1,0 +1,65 @@
+id: perppu_6_1964
+akn: /akn/id/act/perppu/1964/6
+type: perppu
+number: '6'
+year: 1964
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 6 Tahun 1964 tentang Badan
+  Pemeriksa Keuangan
+tentang: Badan Pemeriksa Keuangan
+short_name: null
+status: berlaku
+tanggal_penetapan: '1964-05-02'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53786/perpu-no-6-tahun-1964
+source_pdf_url: https://peraturan.bpk.go.id/Download/43186/PERPRU%20No.%20006%20Tahun%201964.pdf
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by:
+  - uu_17_1965
+versions:
+- id: perppu_6_1964_1964-05-02
+  kind: asli
+  source: official
+  date: '1964-05-02'
+  date_basis: tanggal_penetapan
+  text: perppu_6_1964_1964-05-02.txt
+  pasal_count: 21
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1c757c4cb3520429d41233aeada3839c1f4f409f6e46352b21c5140ca2c781d6
+tanggal_pengundangan: '1964-05-02'
+tanggal_berlaku: '1964-05-02'
+lembaran_negara: 'LN. 1964 No. 41, TLN. No. 2645, LL SETNEG : 7 HLM'
+subjek: PENGELOLAAN KEUANGAN NEGARA / DAERAH - DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA
+  / BADAN / ORGANISASI
+bpk:
+  id: 53786
+  files:
+  - url: https://peraturan.bpk.go.id/Download/43186/PERPRU%20No.%20006%20Tahun%201964.pdf
+    bpk_file_id: 43186
+    filename: PERPRU No. 006 Tahun 1964.pdf
+    sha256: 1c757c4cb3520429d41233aeada3839c1f4f409f6e46352b21c5140ca2c781d6
+    bytes: 84464
+    archive_url: null
+  status_peraturan:
+    Ditetapkan dengan:
+    - id: uu_17_1965
+      citation: UU No. 17 Tahun 1965
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang No. 6 Tahun
+        1964, Tentang Pembentukan Badan Pemeriksa Keuangan (Lembaran-Negara Tahun
+        1964 No. 41) Menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/50205/uu-no-17-tahun-1965
+      note: null
+    Mencabut:
+    - id: perppu_7_1963
+      citation: PERPU No. 7 Tahun 1963
+      tentang: Badan Pemeriksa Keuangan
+      url: https://peraturan.bpk.go.id/Details/53742/perpu-no-7-tahun-1963
+      note: null
+uji_materi: null

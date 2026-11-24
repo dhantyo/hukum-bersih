@@ -1,0 +1,56 @@
+id: perppu_1_2004
+akn: /akn/id/act/perppu/2004/1
+type: perppu
+number: '1'
+year: 2004
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2004 tentang Perubahan
+  Atas Undang-Undang Nomor 41 Tahun 1999 Tentang Kehutanan
+tentang: Perubahan Atas Undang-Undang Nomor 41 Tahun 1999 Tentang Kehutanan
+short_name: null
+status: berlaku
+tanggal_penetapan: '2004-03-11'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53114/perpu-no-1-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/42492/PP_Pengganti_UU_No_1_th_2004.pdf
+relationships:
+  amends:
+  - id: uu_41_1999
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+versions:
+- id: perppu_1_2004_2004-03-11
+  kind: asli
+  source: official
+  date: '2004-03-11'
+  date_basis: tanggal_penetapan
+  text: perppu_1_2004_2004-03-11.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 400a9a42c0962097d80131c8b1703b3d484389fe8f519af80a9c175598bd4858
+tanggal_pengundangan: '2004-03-11'
+tanggal_berlaku: '2004-03-11'
+lembaran_negara: 'LN. 2004 No. 29, TLN. No. 4374, LL SETNEG : 3 HLM'
+subjek: KEHUTANAN DAN PERKEBUNAN
+bpk:
+  id: 53114
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42492/PP_Pengganti_UU_No_1_th_2004.pdf
+    bpk_file_id: 42492
+    filename: PP_Pengganti_UU_No_1_th_2004.pdf
+    sha256: 400a9a42c0962097d80131c8b1703b3d484389fe8f519af80a9c175598bd4858
+    bytes: 18510
+    archive_url: null
+  status_peraturan:
+    Diubah dengan:
+    - id: perppu_2_2022
+      citation: PERPU No. 2 Tahun 2022
+      tentang: Cipta Kerja
+      url: https://peraturan.bpk.go.id/Details/234926/perpu-no-2-tahun-2022
+      note: null
+uji_materi: null

@@ -1,0 +1,57 @@
+id: perppu_2_2004
+akn: /akn/id/act/perppu/2004/2
+type: perppu
+number: '2'
+year: 2004
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2004 tentang Perubahan
+  Atas Undang-Undang Nomor 12 Tahun 2003 Tentang Pemilihan Umum Anggota Dewan Perwakilan
+  Rakyat, Dewan Perwakilan Daerah, Dan Dewan Perwakilan Rakyat Daerah
+tentang: Perubahan Atas Undang-Undang Nomor 12 Tahun 2003 Tentang Pemilihan Umum Anggota
+  Dewan Perwakilan Rakyat, Dewan Perwakilan Daerah, Dan Dewan Perwakilan Rakyat Daerah
+short_name: null
+status: berlaku
+tanggal_penetapan: '2004-04-02'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53116/perpu-no-2-tahun-2004
+source_pdf_url: https://peraturan.bpk.go.id/Download/42494/PP_Pengganti_UU_No_2_th_2004.pdf
+relationships:
+  amends:
+  - id: uu_12_2003
+    changes:
+      diubah:
+      - '45'
+      - '119'
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+versions:
+- id: perppu_2_2004_2004-04-02
+  kind: asli
+  source: official
+  date: '2004-04-02'
+  date_basis: tanggal_penetapan
+  text: perppu_2_2004_2004-04-02.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c669350f138aef32595f44fd32f5b1af07e033a16fedbf09eb41dd063ee30d7a
+tanggal_pengundangan: '2004-04-02'
+tanggal_berlaku: '2004-04-02'
+lembaran_negara: 'LN. 2004 No. 37, TLN. No. 4381, LL SETNEG : 5 HLM'
+subjek: PARTAI POLITIK DAN PEMILU - PEMILIHAN UMUM DAERAH, DPRD, PEMILIHAN KEPALA
+  DAERAH
+bpk:
+  id: 53116
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42494/PP_Pengganti_UU_No_2_th_2004.pdf
+    bpk_file_id: 42494
+    filename: PP_Pengganti_UU_No_2_th_2004.pdf
+    sha256: c669350f138aef32595f44fd32f5b1af07e033a16fedbf09eb41dd063ee30d7a
+    bytes: 26024
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

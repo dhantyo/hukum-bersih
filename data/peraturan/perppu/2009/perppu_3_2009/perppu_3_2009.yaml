@@ -1,0 +1,56 @@
+id: perppu_3_2009
+akn: /akn/id/act/perppu/2009/3
+type: perppu
+number: '3'
+year: 2009
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 3 Tahun 2009 tentang Perubahan
+  atas Undang-Undang Nomor 9 Tahun 1992 tentang Keimigrasian
+tentang: Perubahan atas Undang-Undang Nomor 9 Tahun 1992 tentang Keimigrasian
+short_name: null
+status: berlaku
+tanggal_penetapan: '2009-07-17'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53242/perpu-no-3-tahun-2009
+source_pdf_url: https://peraturan.bpk.go.id/Download/42620/Perpu%203%20Tahun%202009.pdf
+relationships:
+  amends:
+  - id: uu_9_1992
+    changes:
+      diubah:
+      - '29'
+      dihapus:
+      - '33'
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by:
+  - uu_37_2009
+versions:
+- id: perppu_3_2009_2009-07-17
+  kind: asli
+  source: official
+  date: '2009-07-17'
+  date_basis: tanggal_penetapan
+  text: perppu_3_2009_2009-07-17.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: e63b327a09612de820c87ff1e39fbcb7e03b76f5b596eac4ca92bb0d9a048a03
+tanggal_pengundangan: '2009-07-17'
+tanggal_berlaku: '2009-07-17'
+lembaran_negara: 'LN. 2009 No. 111, TLN. No. 5037, LL SETNEG : 3 HLM'
+subjek: KEWARGANEGARAAN DAN IMIGRASI
+bpk:
+  id: 53242
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42620/Perpu%203%20Tahun%202009.pdf
+    bpk_file_id: 42620
+    filename: Perpu 3 Tahun 2009.pdf
+    sha256: e63b327a09612de820c87ff1e39fbcb7e03b76f5b596eac4ca92bb0d9a048a03
+    bytes: 43211
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

@@ -1,0 +1,54 @@
+id: perppu_3_2008
+akn: /akn/id/act/perppu/2008/3
+type: perppu
+number: '3'
+year: 2008
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 3 Tahun 2008 tentang Perubahan
+  Atas Undang-Undang Nomor 24 Tahun 2004 Tentang Lembaga Penjamin Simpanan
+tentang: Perubahan Atas Undang-Undang Nomor 24 Tahun 2004 Tentang Lembaga Penjamin
+  Simpanan
+short_name: null
+status: berlaku
+tanggal_penetapan: '2008-10-13'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53220/perpu-no-3-tahun-2008
+source_pdf_url: https://peraturan.bpk.go.id/Download/42598/PERPU%203%20tahun%202008.pdf
+relationships:
+  amends:
+  - id: uu_24_2004
+    changes:
+      diubah:
+      - '11'
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+versions:
+- id: perppu_3_2008_2008-10-13
+  kind: asli
+  source: official
+  date: '2008-10-13'
+  date_basis: tanggal_penetapan
+  text: perppu_3_2008_2008-10-13.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 30058fa9f4f00ce05344eb74a58f31f866cc2e2179d0238d87411a46a148a934
+tanggal_pengundangan: '2008-10-13'
+tanggal_berlaku: '2008-10-13'
+lembaran_negara: 'LN. 2008 No. 143, TLN. No. 4902, LL SETNEG : 4 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+bpk:
+  id: 53220
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42598/PERPU%203%20tahun%202008.pdf
+    bpk_file_id: 42598
+    filename: PERPU 3 tahun 2008.pdf
+    sha256: 30058fa9f4f00ce05344eb74a58f31f866cc2e2179d0238d87411a46a148a934
+    bytes: 47087
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

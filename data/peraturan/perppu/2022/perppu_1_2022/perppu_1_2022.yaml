@@ -1,0 +1,80 @@
+id: perppu_1_2022
+akn: /akn/id/act/perppu/2022/1
+type: perppu
+number: '1'
+year: 2022
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2022 tentang Perubahan
+  atas Undang-Undang Nomor 7 Tahun 2017 tentang Pemilihan Umum
+tentang: Perubahan atas Undang-Undang Nomor 7 Tahun 2017 tentang Pemilihan Umum
+short_name: null
+status: berlaku
+tanggal_penetapan: '2022-12-12'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/232762/perpu-no-1-tahun-2022
+source_pdf_url: https://peraturan.bpk.go.id/Download/278453/Perpu%20Nomor%201%20tahun%202022.pdf
+relationships:
+  amends:
+  - id: uu_7_2017
+    changes:
+      diubah:
+      - '117'
+      - '173'
+      - '179'
+      - '186'
+      - '243'
+      - '276'
+      disisipkan:
+      - 10A
+      - 92A
+      - 568A
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+versions:
+- id: perppu_1_2022_2022-12-12
+  kind: asli
+  source: official
+  date: '2022-12-12'
+  date_basis: tanggal_penetapan
+  text: perppu_1_2022_2022-12-12.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 719b64500e79a035a89a436f625323bf80ac0270d425ce5fad1c78e50d6a126e
+  ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 97
+tanggal_pengundangan: '2022-12-12'
+tanggal_berlaku: '2022-12-12'
+lembaran_negara: 'LN.2022/No.224, TLN No.6832, jdih.setneg.go.id: 14 hlm.'
+subjek: PARTAI POLITIK DAN PEMILU
+bpk:
+  id: 232762
+  files:
+  - url: https://peraturan.bpk.go.id/Download/278453/Perpu%20Nomor%201%20tahun%202022.pdf
+    bpk_file_id: 278453
+    filename: Perpu Nomor 1 tahun 2022.pdf
+    sha256: 719b64500e79a035a89a436f625323bf80ac0270d425ce5fad1c78e50d6a126e
+    bytes: 1797190
+    archive_url: null
+  status_peraturan:
+    Ditetapkan dengan:
+    - id: uu_7_2023
+      citation: UU No. 7 Tahun 2023
+      tentang: Penetapan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun
+        2022 tentang Perubahan atas Undang-Undang Nomor 7 Tahun 2017 tentang Pemilihan
+        Umum menjadi Undang-Undang
+      url: https://peraturan.bpk.go.id/Details/249312/uu-no-7-tahun-2023-penetapan-peraturan-pemerintah-pengganti-undang-undang-nomor
+      note: null
+    Mengubah:
+    - id: uu_7_2017
+      citation: UU No. 7 Tahun 2017
+      tentang: Pemilihan Umum
+      url: https://peraturan.bpk.go.id/Details/37644/uu-no-7-tahun-2017
+      note: null
+uji_materi: null

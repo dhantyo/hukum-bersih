@@ -1,0 +1,52 @@
+id: perppu_1_1971
+akn: /akn/id/act/perppu/1971/1
+type: perppu
+number: '1'
+year: 1971
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 1971 tentang Pencabutan
+  Undang-Undang No. 17 Tahun 1964 Tentang Larangan Penarikan Cek Kosong
+tentang: Pencabutan Undang-Undang No. 17 Tahun 1964 Tentang Larangan Penarikan Cek
+  Kosong
+short_name: null
+status: berlaku
+tanggal_penetapan: '1971-07-30'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/54062/perpu-no-1-tahun-1971
+source_pdf_url: https://peraturan.bpk.go.id/Download/43467/PERPU%20No.%20001%20Tahun%201971.pdf
+relationships:
+  amends: []
+  amended_by: []
+  revokes:
+  - uu_17_1964
+  revoked_by: []
+  enacts: []
+  enacted_by:
+  - uu_12_1971
+versions:
+- id: perppu_1_1971_1971-07-30
+  kind: asli
+  source: official
+  date: '1971-07-30'
+  date_basis: tanggal_penetapan
+  text: perppu_1_1971_1971-07-30.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 695c69f762e1d7b8fc0d61bd91309018ccc1c37a5401f58f35e5ec5808a48199
+tanggal_pengundangan: '1971-07-31'
+tanggal_berlaku: '1971-07-31'
+lembaran_negara: 'LN. 1971 No. 55, LL SETNEG : 2 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+bpk:
+  id: 54062
+  files:
+  - url: https://peraturan.bpk.go.id/Download/43467/PERPU%20No.%20001%20Tahun%201971.pdf
+    bpk_file_id: 43467
+    filename: PERPU No. 001 Tahun 1971.pdf
+    sha256: 695c69f762e1d7b8fc0d61bd91309018ccc1c37a5401f58f35e5ec5808a48199
+    bytes: 32356
+    archive_url: null
+  status_peraturan: null
+uji_materi: null

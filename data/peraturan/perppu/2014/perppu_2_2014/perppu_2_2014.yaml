@@ -1,0 +1,63 @@
+id: perppu_2_2014
+akn: /akn/id/act/perppu/2014/2
+type: perppu
+number: '2'
+year: 2014
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2014 tentang Perubahan
+  Atas Undang-Undang Nomor 23 Tahun 2014 Tentang Pemerintahan Daerah
+tentang: Perubahan Atas Undang-Undang Nomor 23 Tahun 2014 Tentang Pemerintahan Daerah
+short_name: null
+status: berlaku
+tanggal_penetapan: '2014-10-02'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53262/perpu-no-2-tahun-2014
+source_pdf_url: https://peraturan.bpk.go.id/Download/42641/Perpu%20Nomor%202%20Tahun%202014.pdf
+relationships:
+  amends:
+  - id: uu_23_2014
+    changes:
+      diubah:
+      - '101'
+      - '154'
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by:
+  - uu_2_2015
+versions:
+- id: perppu_2_2014_2014-10-02
+  kind: asli
+  source: official
+  date: '2014-10-02'
+  date_basis: tanggal_penetapan
+  text: perppu_2_2014_2014-10-02.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 869b184ecfa7c60c0b9a7e1623d66b80bfde1bbd27dabadfe62175cf76926ce3
+  extra_pdf_sha256:
+  - a35295ad76851b32caeb8411394f9cf135e9124c226806058e9e6bdac52bda0e
+tanggal_pengundangan: '2014-10-02'
+tanggal_berlaku: '2014-10-02'
+lembaran_negara: 'LN. 2014 No. 246, LL SETNEG : 6 HLM'
+subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH
+bpk:
+  id: 53262
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42641/Perpu%20Nomor%202%20Tahun%202014.pdf
+    bpk_file_id: 42641
+    filename: Perpu Nomor 2 Tahun 2014.pdf
+    sha256: 869b184ecfa7c60c0b9a7e1623d66b80bfde1bbd27dabadfe62175cf76926ce3
+    bytes: 182303
+    archive_url: null
+  - url: https://peraturan.bpk.go.id/Download/42642/Perpu%20Nomor%202%20Tahun%202014%20-%20Penjelasan.pdf
+    bpk_file_id: 42642
+    filename: Perpu Nomor 2 Tahun 2014 - Penjelasan.pdf
+    sha256: a35295ad76851b32caeb8411394f9cf135e9124c226806058e9e6bdac52bda0e
+    bytes: 172970
+    archive_url: null
+  status_peraturan: null
+uji_materi: null
