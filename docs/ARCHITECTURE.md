@@ -83,7 +83,7 @@ Names follow [NAMING.md](NAMING.md).
 | `deploy.yml` | push to default branch | build AKN + site, deploy to Cloudflare Pages |
 | `import-bpk.yml` | manual (schedule paused 2026-11-21 until the parser is fixed; normally every 6 h) | `mode: import`: BPK metadata, every PDF's sha256 recorded (Hugging Face mirror if BPK's download fails; nothing is uploaded to archive.org since 2026-11-24, the `archive` input is ignored), text from BPK's PDF with the current parser, never replacing a text with one that has fewer pasal. `mode: reparse`: texts re-converted from our archive.org copies (hash-checked), no BPK. `only`, `no_text` for samples |
 | `parser-regression.yml` | push touching the parser + manual | the 19-law regression set (`pipeline/tests/regression.yaml`, fails on any law off) and a random survey of UU from the mirror |
-| `import-peraturan.yml` | manual (schedule removed 2026-11-21) | import from peraturan.go.id (answers only Indonesian IPs: needs WG_INDONESIA) |
+| `import-peraturan.yml` | manual (schedule removed 2026-11-21) | import from peraturan.go.id (answers only Indonesian IPs; the Indonesian VPN action was removed 2026-11-24, so it works only when the site lets other IPs in) |
 | `import-uploads.yml` | manual | PDFs attached to a GitHub release → manifest line (sha256) + text (`import-pdf`) |
 | `probe-sources.yml` | manual | which sources a GitHub runner can reach |
 | ~~`fetch.yml`, `archive-pending.yml`, `archive-retitle.yml`, `archive-delete.yml`~~ | removed 2026-11-24 ([decision 0014](decisions/0014-no-archive-uploads.md)) | download + upload to archive.org, retitle, delete |

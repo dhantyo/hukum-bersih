@@ -7,7 +7,7 @@ name: Import regulations
 # depend on anyone's computer or a Claude session.
 on:
   # no schedule since 2026-11-21: import-bpk.yml is the main import (peraturan.go.id
-  # answers only Indonesian IPs); run by hand, e.g. with the WG_INDONESIA tunnel
+  # answers only Indonesian IPs, so this works only when the site lets non-Indonesian IPs in)
   workflow_dispatch:
     inputs:
       jenis:
@@ -42,9 +42,6 @@ jobs:
       ONLY: ${{ inputs.only && format('--only={0}', inputs.only) || '' }}
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/actions/indonesia-vpn
-        with:
-          config: ${{ secrets.WG_INDONESIA }}
       - uses: astral-sh/setup-uv@v6
       - uses: ./.github/actions/ocr-cache
         with:

@@ -13,9 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/actions/indonesia-vpn
-        with:
-          config: ${{ secrets.WG_INDONESIA }}
       - name: Probe
         run: |
           ua="hukum-bersih/0.1 (+https://github.com/dhantyo/hukum-bersih)"
