@@ -1,0 +1,65 @@
+id: perppu_42_1960
+akn: /akn/id/act/perppu/1960/42
+type: perppu
+number: '42'
+year: 1960
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 42 Tahun 1960 tentang Peleburan
+  Bank Rakyat Indonesia Kedalam Bank Koperasi, Tani Dan Nelayan
+tentang: Peleburan Bank Rakyat Indonesia Kedalam Bank Koperasi, Tani Dan Nelayan
+short_name: null
+status: berlaku
+tanggal_penetapan: '1960-10-26'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53578/perpu-no-42-tahun-1960
+source_pdf_url: https://peraturan.bpk.go.id/Download/42962/perpu%20042%201960.pdf
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+versions:
+- id: perppu_42_1960_1960-10-26
+  kind: asli
+  source: official
+  date: '1960-10-26'
+  date_basis: tanggal_penetapan
+  text: perppu_42_1960_1960-10-26.txt
+  pasal_count: 5
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 01d85d957fe0f2f596d360198b7b2c9a157b9dffe472f8fed16dda390bb700e0
+tanggal_pengundangan: '1960-10-26'
+tanggal_berlaku: '1960-10-31'
+lembaran_negara: 'LN. 1960 No. 129, TLN. No. 2066, LL SETNEG : 5 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+bpk:
+  id: 53578
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42962/perpu%20042%201960.pdf
+    bpk_file_id: 42962
+    filename: perpu 042 1960.pdf
+    sha256: 01d85d957fe0f2f596d360198b7b2c9a157b9dffe472f8fed16dda390bb700e0
+    bytes: 31302
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: pp_8_1954
+      citation: PP No. 8 Tahun 1954
+      tentang: Pengubahan Peraturan Tentang Bank Rakyat Indonesia
+      url: https://peraturan.bpk.go.id/Details/77295/pp-no-8-tahun-1954
+      note: null
+    - id: pp_25_1951
+      citation: PP No. 25 Tahun 1951
+      tentang: Peraturan Mengenai Bank Rakyat Indonesia
+      url: https://peraturan.bpk.go.id/Details/77462/pp-no-25-tahun-1951
+      note: null
+    - id: null
+      citation: PP No. 25 Tahun 1951
+      tentang: null
+      url: null
+      note: null
+uji_materi: null

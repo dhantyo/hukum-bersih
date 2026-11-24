@@ -1,0 +1,61 @@
+id: perppu_40_1960
+akn: /akn/id/act/perppu/1960/40
+type: perppu
+number: '40'
+year: 1960
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 40 Tahun 1960 tentang Perubahan
+  Dan Tambahan Undang-Undang No. 66 Tahun 1958 (Lembaran Negara Tahun 1958 No. 117)
+  Tentang Wajib Militer
+tentang: Perubahan Dan Tambahan Undang-Undang No. 66 Tahun 1958 (Lembaran Negara Tahun
+  1958 No. 117) Tentang Wajib Militer
+short_name: null
+status: berlaku
+tanggal_penetapan: '1960-10-15'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53572/perpu-no-40-tahun-1960
+source_pdf_url: https://peraturan.bpk.go.id/Download/42956/perpu%20040%201960.pdf
+relationships:
+  amends:
+  - id: uu_66_1958
+    changes:
+      diubah:
+      - '29'
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+versions:
+- id: perppu_40_1960_1960-10-15
+  kind: asli
+  source: official
+  date: '1960-10-15'
+  date_basis: tanggal_penetapan
+  text: perppu_40_1960_1960-10-15.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 5da14489c3426f8713bb394017913dc527a2a476caf5a0bcaa9faf3d58ab69d9
+tanggal_pengundangan: '1960-10-15'
+tanggal_berlaku: '1960-10-15'
+lembaran_negara: 'LN. 1960 No. 125, TLN. No. 2063, LL SETNEG : 8 HLM'
+subjek: PERTAHANAN DAN KEAMANAN, MILITER
+bpk:
+  id: 53572
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42956/perpu%20040%201960.pdf
+    bpk_file_id: 42956
+    filename: perpu 040 1960.pdf
+    sha256: 5da14489c3426f8713bb394017913dc527a2a476caf5a0bcaa9faf3d58ab69d9
+    bytes: 37702
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: uu_66_1958
+      citation: UU No. 66 Tahun 1958
+      tentang: Wajib-Militer
+      url: https://peraturan.bpk.go.id/Details/52340/uu-no-66-tahun-1958
+      note: null
+uji_materi: null
