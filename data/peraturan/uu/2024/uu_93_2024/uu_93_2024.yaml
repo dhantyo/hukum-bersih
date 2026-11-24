@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_93_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7514c63234b0fb4ceee5243d5fe2440d0c5287de8a9c89d9e28eb0e5dc7637a9
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 15
 pdf_sha256: 7514c63234b0fb4ceee5243d5fe2440d0c5287de8a9c89d9e28eb0e5dc7637a9
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_128_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 774c50cc0669e99febdcaf8ccd485fe9cd02c21ab23790523abf60ceb0667c4e
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 12
 pdf_sha256: 774c50cc0669e99febdcaf8ccd485fe9cd02c21ab23790523abf60ceb0667c4e
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

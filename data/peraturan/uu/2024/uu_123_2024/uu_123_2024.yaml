@@ -30,10 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_123_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7c47457534b59518da1be3f743b3ea5fb42af7256db165885786e0fbd62eff2b
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 46
 pdf_sha256: 7c47457534b59518da1be3f743b3ea5fb42af7256db165885786e0fbd62eff2b
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

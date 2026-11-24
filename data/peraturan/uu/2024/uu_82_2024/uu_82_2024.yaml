@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_82_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1c1d3f68feed51322ce9eccee4f6383947ccdb58b1d7fc6353badfa763b3c767
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 1
+  ocr_unknown: 14
 pdf_sha256: 1c1d3f68feed51322ce9eccee4f6383947ccdb58b1d7fc6353badfa763b3c767
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'
