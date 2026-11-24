@@ -40,12 +40,14 @@ class Marker:
     pattern: re.Pattern
     top: float
     bottom: float
-    align: Literal["centre", "left", "right"]
+    align: Literal["centre", "left", "right", "any"]
 
     def matches(self, row: Row, width: float, height: float) -> bool:
         cy = (row.y0 + row.y1) / 2 / height
         if not (self.top <= cy <= self.bottom and self.pattern.match(row.text.strip())):
             return False
+        if self.align == "any":
+            return True
         if self.align == "centre":
             return abs((row.x0 + row.x1) / 2 - width / 2) <= 0.15 * width
         if self.align == "left":
@@ -64,12 +66,15 @@ class Layout:
     serial: Marker
     page_turn: Marker
     title: Marker | None = None
+    stamp: Marker | None = None       # a stamp beside the letterhead on page 1 ("SALINAN")
 
 
 # Setneg layout, the UU, Perppu, PP and Perpres PDFs of BPK, top to bottom (UU 100/2024):
 #     crest, "PRESIDEN" / "REPUBLIK INDONESIA" (centred; page 1 adds "UNDANG-UNDANG REPUBLIK
 #     INDONESIA" below it), "- 2 -" (pages 2+), body, a right-aligned page-turn word ("Mengingat
 #     . .", "Pasal 2 . . .", "c. sebelah . . ."), "SK No 208513 A" (bottom left).
+LETTERHEAD_BAND_STAMP = 0.25
+
 SETNEG = Layout(
     name="setneg",
     # "- 2 -", also read as "-2 -", "- 2-", "— 2 —": digits between dashes, at most a speck beside them
@@ -83,6 +88,8 @@ SETNEG = Layout(
     # the title that ends page 1's letterhead, or the page where the Penjelasan starts
     title=Marker(re.compile(r"^(?:UN[DO]ANG|PERATURAN|KEPUTUSAN|INSTRUKSI|PENJELASAN)\b", re.IGNORECASE),
                  0.0, 0.35, "centre"),
+    # "SALINAN" (copy) in a box top right of page 1, level with the crest (Perpres 46/2026)
+    stamp=Marker(re.compile(r"^\W{0,3}SALINAN\W{0,3}$", re.IGNORECASE), 0.0, LETTERHEAD_BAND_STAMP, "any"),
 )
 LAYOUTS = (SETNEG,)
 
@@ -141,7 +148,8 @@ def edge_rows(rows: list[Row], width: float, height: float, layout: Layout | Non
         head.update(range(number + 1))
     elif first and layout.title is not None:
         title = _find(layout.title, rows, width, height) or 0
-        head.update(i for i in range(title) if _letterhead(rows[i], width, height))
+        head.update(i for i in range(title) if _letterhead(rows[i], width, height)
+                    or (layout.stamp is not None and layout.stamp.matches(rows[i], width, height)))
     foot: set[int] = set()
     serial = _find(layout.serial, rows, width, height)
     if serial is not None:

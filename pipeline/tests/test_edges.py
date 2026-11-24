@@ -55,10 +55,30 @@ def texts(rs, gone):
 def test_page_1_letterhead_and_footer_are_cut_but_the_enacting_formula_stays():
     rs = rows(UU_PAGE1)
     edges = edge_rows(rs, W, H, SETNEG, first=True)
-    assert texts(rs, edges.gone) == ["SALINAN", "UNDANG-UNDANG REPUBLIK INDONESIA", "NOMOR 100 TAHUN 2024",
+    assert texts(rs, edges.gone) == ["UNDANG-UNDANG REPUBLIK INDONESIA", "NOMOR 100 TAHUN 2024",
                                      "PRESIDEN REPUBLIK INDONESIA,", "Menimbang: a. bahwa Kota Bogor merupakan"]
-    assert [rs[i].text for i in sorted(edges.gone)] == ["RESIDEN", "REPUBlK INDONESIA", "Mengingat . .",
-                                                         "SK No 208513 A"]
+    assert [rs[i].text for i in sorted(edges.gone)] == ["SALINAN", "RESIDEN", "REPUBlK INDONESIA",
+                                                         "Mengingat . .", "SK No 208513 A"]
+
+
+def test_salinan_stamp_beside_the_crest_is_cut_but_not_the_word_in_the_body():
+    """Perpres 46/2026, page 1: "SALINAN" boxed top right; the page-turn "Mengingat . . ." with
+    spaced dots above "SK No 292234 A"."""
+    page = [
+        box(88, "SALINAN", 430, 545, 20),
+        box(150, "PRESIDEN"), box(165, "REPUBLIK INDONESIA"),
+        box(232, "PERATURAN PRESIDEN REPUBLIK INDONESIA", 165, 461),
+        box(262, "NOMOR 46 TAHUN 2026"),
+        box(440, "PRESIDEN REPUBLIK INDONESIA,", 200, 409),
+        box(470, "Menimbang : a. bahwa dalam rangka melaksanakan", 83, 560, 12),
+        box(700, "SALINAN", 80, 140),                 # the word in the body: lower down, stays
+        box(925, "Mengingat . . .", 455, 545),
+        box(960, "SK No 292234 A", 30, 120),
+    ]
+    rs = rows(page)
+    edges = edge_rows(rs, W, 1000, SETNEG, first=True)
+    assert [rs[i].text for i in sorted(edges.gone)] == ["SALINAN", "PRESIDEN", "REPUBLIK INDONESIA",
+                                                         "Mengingat . . .", "SK No 292234 A"]
 
 
 def test_page_2_header_down_to_the_number_and_footer_are_cut_by_position():
@@ -163,7 +183,7 @@ def test_uu_100_2024_header_and_footer_never_reach_the_text(tmp_path, fake_ocr):
     # the law's own words stay, with the short "dan" above the enacting formula
     assert text.count("dan") == 2 and text.count("PRESIDEN REPUBLIK INDONESIA") == 2
     assert text.count("PRESIDEN REPUBLIK INDONESIA,") == 1
-    assert len(stats["edge_lines"]) == 4 + 2 * 5 and stats["edge_head"] == [0, 1, 2]
+    assert len(stats["edge_lines"]) == 5 + 2 * 5 and stats["edge_head"] == [0, 1, 2]
 
 
 @pytest.mark.parametrize("page1", [PERDA_PAGE1, PERATURAN_BPK_PAGE1])
