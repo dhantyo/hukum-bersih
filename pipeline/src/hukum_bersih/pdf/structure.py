@@ -29,6 +29,10 @@ PARSER_VERSION = 16  # 16: page header and footer of scanned pages removed by wh
 # when the record is flagged (kept old text, parse error, no text). Raise it only for a fix
 # that changes laws which pass every check (Dante, 2026-11-22: don't redo good work).
 PARSER_REDO_BELOW = 10
+# Same, for texts read with OCR (scanned pages) only: a fix that changes only scanned pages
+# redoes the ~330 OCR'd laws without the ~1,600 typed ones. 16: page header/footer by
+# position (Frenico, 2026-11-24: UU 100/2024 kept "RESIDEN REPUBlK INDONESIA" in its title).
+OCR_REDO_BELOW = 16
 
 ORDINAL = {"PERTAMA": 1, "KESATU": 1, "KEDUA": 2, "KETIGA": 3, "KEEMPAT": 4, "KELIMA": 5,
            "KEENAM": 6, "KETUJUH": 7, "KEDELAPAN": 8, "KESEMBILAN": 9, "KESEPULUH": 10}

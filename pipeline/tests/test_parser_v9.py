@@ -102,6 +102,7 @@ def test_a_new_parser_redoes_only_flagged_or_old_texts():
     assert not text_current(rec(PARSER_REDO_BELOW, reparse_error=f"v{PARSER_VERSION - 1}: 3 pasal"))
     assert text_current(rec(PARSER_REDO_BELOW, reparse_error=f"v{PARSER_VERSION}: 3 pasal"))
     assert not text_current(rec(PARSER_REDO_BELOW, parse_error="LeakedMarkupError"))
+
     assert not text_current({"versions": [{"text": "t.txt", "parser_version": PARSER_VERSION,
                                            "pdf_source": "peraturan.go.id"}]})  # not from BPK yet
     assert not text_current({"parser_version_tried": PARSER_VERSION - 1})
@@ -180,3 +181,19 @@ def test_penjelasan_may_skip_pasal():
                          "PENJELASAN", "UMUM", "Umum.", "PASAL DEMI PASAL", "Pasal 1.", "Cukup jelas.",
                          "Pasal 5.", "Lihat juga", "Pasal 7.", "Pasal 12.", "Cukup jelas", "Pasal 13.", "Jelas."])
     assert [b.label for b in doc.blocks if b.kind == "p_pasal"] == ["Pasal 1", "Pasal 5", "Pasal 12", "Pasal 13"]
+
+
+def test_ocr_texts_have_their_own_redo_threshold():
+    """A fix to scanned pages only (OCR_REDO_BELOW) redoes OCR'd texts, not typed ones."""
+    from hukum_bersih.pdf.structure import OCR_REDO_BELOW, PARSER_REDO_BELOW
+    from hukum_bersih.sources.peraturan_bpk import SOURCE, text_current
+
+    def rec(version, ocr):
+        v = {"id": "x", "text": "x.txt", "parser_version": version, "pdf_source": SOURCE,
+             **({"ocr": True, "ocr_engine": "indra"} if ocr else {})}
+        return {"versions": [v]}
+
+    assert PARSER_REDO_BELOW < OCR_REDO_BELOW
+    assert text_current(rec(OCR_REDO_BELOW - 1, ocr=False))          # typed: kept
+    assert not text_current(rec(OCR_REDO_BELOW - 1, ocr=True))       # scanned: redone
+    assert text_current(rec(OCR_REDO_BELOW, ocr=True))
