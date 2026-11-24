@@ -18,7 +18,8 @@ const p = PROVENANCE[provenanceKey(doc.provenance)];
 const type = DOC_TYPE[doc.type] ?? doc.type;
 const others = versions(ruu).filter((v) => v.id !== doc.id);
 ---
-<Base title={`${ruu.short_name ?? ruu.title}: ${type} (${tanggal(doc.date)})`} description={doc.label ?? ruu.title} section="ruu">
+<Base title={`${ruu.short_name ?? ruu.title}: ${type} (${tanggal(doc.date)})`} description={doc.label ?? ruu.title} section="ruu"
+  view={{ penjelasan: text.penjelasan.length > 0, pembukaan: text.preface.length + text.preamble.length > 0, penutup: text.conclusions.length > 0 }}>
   <DocLayout
     crumbs={[{ href: `${base}ruu/`, label: "RUU" }, { href: `${base}ruu/${ruu.slug}/`, label: ruu.short_name ?? ruu.title }, { label: `${type} (${tanggal(doc.date)})` }]}
     eyebrow={ruu.short_name ?? ruu.title}

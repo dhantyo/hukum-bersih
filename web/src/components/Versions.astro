@@ -1,0 +1,93 @@
+---
+// "Versi" in the side panel: every version of a law family's text, oldest first, like Fedlex's
+// "All versions of this law" (decision 0010). The text as enacted, then one merged version per
+// amending law, with known but missing amendments as their own rows. Dots: in force (--ok),
+// earlier (--gone), missing (dashed). The version on screen is marked.
+import { tanggal } from "../lib/labels.ts";
+import { versionRows } from "../lib/versions.ts";
+import type { Koleksi } from "../lib/koleksi.ts";
+
+interface Props {
+  k: Koleksi;
+  /** the point on screen (a history point id), if this page shows one */
+  current?: string;
+  /** on an amending law's page: its id, to mark the version it made */
+  law?: string;
+  /** the page can compare versions in place (components/CompareMode.astro) */
+  compare?: boolean;
+}
+const { k, current, law, compare = false } = Astro.props;
+const rows = versionRows(k);
+---
+{rows.length > 0 && (
+  <details class="versi" open>
+    <summary><span class="panel-title">Versi</span><span class="count">{rows.filter((r) => r.kind === "point").length}</span></summary>
+    <ol>
+      {rows.map((r) => {
+        const here = r.point && r.point.id === current;
+        const made = r.point && law && r.point.after?.includes(law);
+        const dot = r.kind === "missing" ? "missing" : r.inForce ? "now" : "past";
+        return (
+          <li class:list={[dot, { here }]}>
+            <span class="dot" aria-hidden="true"></span>
+            {r.href && !here ? (
+              <a href={r.href}>
+                <span class="when">{r.date ? tanggal(r.date) : "tanggal tidak diketahui"}</span>
+                <span class="what">{r.label}{r.inForce && <span class="state"> · berlaku</span>}</span>
+              </a>
+            ) : (
+              <span class="row" aria-current={here ? "page" : undefined}>
+                <span class="when">{r.date ? tanggal(r.date) : r.kind === "missing" ? "—" : "tanggal tidak diketahui"}</span>
+                <span class="what">{r.label}{r.inForce && <span class="state"> · berlaku</span>}</span>
+              </span>
+            )}
+            {r.sub && <span class="sub">{r.sub}{made && " · dibuat oleh UU ini"}</span>}
+          </li>
+        );
+      })}
+    </ol>
+    {compare && <button type="button" class="cmp-open" data-cmp-open>Bandingkan versi</button>}
+    <p class="note">Versi gabungan disusun otomatis dari teks asli dan undang-undang perubahannya; bukan teks konsolidasi resmi.</p>
+  </details>
+)}
+
+<style>
+  .versi { margin-bottom: var(--s-5); }
+  summary { display: flex; align-items: baseline; gap: var(--s-2); cursor: pointer; list-style: none; margin-bottom: var(--s-2); }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: ""; margin-left: auto; align-self: center; width: 6px; height: 6px;
+    border-right: 1.6px solid var(--text-muted); border-bottom: 1.6px solid var(--text-muted); transform: rotate(45deg);
+  }
+  .versi[open] summary::after { transform: rotate(-135deg); }
+  summary .panel-title { margin: 0; }
+  .count { font-size: var(--fs-xs); color: var(--text-muted); }
+  ol { list-style: none; margin: 0; padding: 0; position: relative; }
+  /* the line through the dots */
+  ol::before { content: ""; position: absolute; left: 4px; top: var(--s-2); bottom: var(--s-2); width: 1px; background: var(--line); }
+  li { position: relative; padding: var(--s-1) 0 var(--s-1) var(--s-5); }
+  .dot {
+    position: absolute; left: 0; top: calc(var(--s-1) + 0.35em); width: 9px; height: 9px; border-radius: 50%;
+    background: var(--gone); box-shadow: 0 0 0 3px var(--bg);
+  }
+  .now .dot { background: var(--ok); }
+  .missing .dot { background: var(--bg); border: 1px dashed var(--gone); }
+  a, .row { display: grid; color: var(--text); text-decoration: none; border-radius: var(--r-sm); }
+  a:hover .what { color: var(--primary); text-decoration: underline; }
+  .when { font-size: var(--fs-xs); color: var(--text-muted); font-variant-numeric: tabular-nums; }
+  .what { font-weight: 600; }
+  .state { font-weight: 400; color: var(--ok); }
+  .sub { display: block; font-size: var(--fs-xs); color: var(--text-muted); }
+  .missing .what { font-weight: 400; color: var(--text-muted); }
+  .here { background: var(--primary-bg); border-radius: var(--r-sm); margin-left: calc(-1 * var(--s-1)); padding-left: calc(var(--s-5) + var(--s-1)); }
+  .here .dot { left: var(--s-1); }
+  .here .what { color: var(--primary); }
+  .note { margin: var(--s-2) 0 0; font-size: var(--fs-xs); color: var(--text-muted); }
+  .cmp-open {
+    margin-top: var(--s-2); width: 100%; min-height: var(--s-6); font: inherit; font-weight: 600; color: var(--primary);
+    background: var(--bg); border: 1px solid var(--line-strong); border-radius: var(--r-sm); cursor: pointer;
+    padding: var(--s-1) var(--s-3);
+  }
+  .cmp-open:hover { border-color: var(--primary); background: var(--primary-bg); }
+  @media (pointer: coarse) { a, .row { padding: var(--s-2) 0; } }
+</style>

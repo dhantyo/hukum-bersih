@@ -1,0 +1,63 @@
+---
+// A law family's merged text at one point in time (decision 0010): the Koleksi page shows the
+// latest, /koleksi/<slug>/<date>/ the older ones. Same reading view as a law page (side panel
+// with Versi and contents, Asli / Modern, folding), with the merged-text banner above and a note
+// under every changed pasal saying which amending law changed it.
+import Base from "../layouts/Base.astro";
+import DocLayout from "./DocLayout.astro";
+import Facts from "./Facts.astro";
+import LawText from "./LawText.astro";
+import Toc from "./Toc.astro";
+import Versions from "./Versions.astro";
+import MergedBanner from "./MergedBanner.astro";
+import CompareMode from "./CompareMode.astro";
+import { hasAmendmentSteps } from "../lib/amendments.ts";
+import { tanggal } from "../lib/labels.ts";
+import { amendments, koleksiPath, members, type Koleksi } from "../lib/koleksi.ts";
+import { citeId, lawPath, STATUS_LABEL } from "../lib/peraturan.ts";
+import type { Merged } from "../lib/merge.ts";
+
+interface Props { k: Koleksi; merged: Merged; latest: boolean }
+const { k, merged, latest } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const { doc, point, notes, unreadable } = merged;
+const status = k.base.status ?? "";
+const after = (point.after ?? []).map(citeId).join(" dan ");
+const list = members(k);
+const replaced = list.filter((m) => m.role === "pendahulu");
+const amending = list.filter((m) => m.role === "perubahan");
+const title = k.named ? k.name : k.base.subject || k.base.title;
+// versions can be compared in place (perubahan.json is built for every family that has steps)
+const comparable = hasAmendmentSteps(k.base);
+const crumbs = [{ href: `${base}koleksi/`, label: "Koleksi" },
+  latest ? { label: k.name } : { href: `${base}${koleksiPath(k)}`, label: k.name },
+  ...(latest ? [] : [{ label: point.date ? tanggal(point.date) : point.id }])];
+---
+<Base noindex title={`${title}${latest ? "" : ` (versi ${point.date ? tanggal(point.date) : point.id})`}`}
+  description={`${k.base.title}${k.base.subject ? ` tentang ${k.base.subject}` : ""}, digabung dengan perubahannya sampai ${after}.`}
+  section="koleksi"
+  view={{ penjelasan: doc.penjelasan.length > 0, pembukaan: doc.preface.length + doc.preamble.length > 0, penutup: doc.conclusions.length > 0 }}>
+  <DocLayout crumbs={crumbs} eyebrow={`${k.base.title}, versi gabungan`} title={title} subtitle={k.named ? k.title : undefined} panelLabel="Daftar isi">
+    <div slot="head" class="head-meta">
+      {status && <span class={`badge ${status}`}>{STATUS_LABEL[status] ?? status}</span>}
+      <span class="muted small">Versi {point.date ? tanggal(point.date) : "?"} · setelah {after}</span>
+      {amendments(k) > 0 && <span class="badge diubah">diubah {amendments(k)}×</span>}
+    </div>
+    <Fragment slot="panel">
+      <Versions k={k} current={point.id} compare={comparable} />
+      <Toc doc={doc} />
+      <Facts title="Undang-undang" facts={[
+        { label: "Undang-undang pokok", value: citeId(k.base.id), href: `${base}${lawPath(k.base)}` },
+        ...amending.map((m) => ({ label: `Perubahan${m.order ? ` ke-${m.order}` : ""}`, ...(("subject" in m.law) ? { value: citeId(m.law.id), href: `${base}${lawPath(m.law)}` } : { value: citeId(m.law.id) }) })),
+        ...replaced.map((m) => ({ label: "Menggantikan", ...(("subject" in m.law) ? { value: citeId(m.law.id), href: `${base}${lawPath(m.law)}` } : { value: citeId(m.law.id) }) })),
+      ]} />
+    </Fragment>
+    <MergedBanner k={k} point={point} unreadable={unreadable} penjelasan={doc.penjelasan.length > 0} />
+    {comparable && <CompareMode src={`${base}${koleksiPath(k)}perubahan.json`} current={(point.after ?? []).at(-1) ?? k.base.id} />}
+    <LawText doc={doc} notes={notes} />
+  </DocLayout>
+</Base>
+
+<style>
+  .head-meta { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-4); align-items: center; }
+</style>

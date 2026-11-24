@@ -161,6 +161,7 @@ const { data } = Astro.props;
       const cols = chosen.map((id) => ids.indexOf(id));
       grid.style.setProperty("--cols", String(cols.length));
       const head = el("div", "row head");
+      head.dataset.underHeader = "";
       for (const vi of cols) {
         const v = V[vi];
         head.append(el("div", "cell", el("strong", "", v.label), v.date ? el("span", "muted", ` · ${v.date}`) : ""));
@@ -210,29 +211,29 @@ const { data } = Astro.props;
   .slots { display: contents; list-style: none; }
   .vc :global(.slot) {
     display: flex; align-items: center; gap: var(--s-1); padding: var(--s-1); background: var(--bg);
-    border: 1px solid var(--line); border-radius: var(--r-sm); min-height: var(--tap);
+    border: 1px solid var(--line-strong); border-radius: var(--r-sm); min-height: var(--tap);
   }
   .vc :global(.slot.dragging) { opacity: 0.5; }
   .vc :global(.slot.over) { border-color: var(--primary); }
   .vc :global(.grip) { cursor: grab; color: var(--text-muted); padding: 0 var(--s-1); user-select: none; line-height: 2rem; }
   .vc :global(.grip:focus-visible) { outline: 2px solid var(--primary); border-radius: var(--r-sm); }
   .vc :global(.slot select) { font: inherit; font-size: var(--fs-sm); border: 0; background: transparent; color: var(--text); min-height: 2rem; max-width: 15rem; }
-  .vc :global(.rm) { border: 0; background: none; color: var(--text-muted); font-size: var(--fs-lg); width: var(--tap); height: var(--tap); cursor: pointer; border-radius: var(--r-sm); }
+  .vc :global(.rm) { border: 0; background: none; color: var(--text-muted); font: inherit; font-size: var(--fs-lg); width: var(--tap); height: var(--tap); cursor: pointer; border-radius: var(--r-sm); }
   .vc :global(.rm:hover:not(:disabled)) { background: var(--del-bg); color: var(--del-text); }
   .vc :global(.rm:disabled) { opacity: 0.3; cursor: default; }
   .add { font: inherit; font-size: var(--fs-sm); font-weight: 600; color: var(--primary); background: none; border: 1px dashed var(--primary); border-radius: var(--r-sm); min-height: var(--tap); padding: 0 var(--s-3); cursor: pointer; }
   .add:disabled { opacity: 0.4; cursor: default; }
   .tools { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--s-2) var(--s-4); align-items: center; margin: var(--s-3) 0; }
   .presets { display: flex; flex-wrap: wrap; gap: var(--s-2); align-items: center; }
-  .presets button { font: inherit; background: none; border: 1px solid var(--line); border-radius: 999px; padding: 0.2rem var(--s-3); color: var(--text); cursor: pointer; }
+  .presets button { font: inherit; background: none; border: 1px solid var(--line-strong); border-radius: 999px; padding: 0.2rem var(--s-3); color: var(--text); cursor: pointer; }
   .presets button:hover { border-color: var(--primary); color: var(--primary); }
   .find { display: flex; gap: var(--s-2); align-items: center; }
-  .find input { font: inherit; padding: var(--s-1) var(--s-2); border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--bg); color: var(--text); width: 9rem; }
+  .find input { font: inherit; padding: var(--s-1) var(--s-2); border: 1px solid var(--line-strong); border-radius: var(--r-sm); background: var(--bg); color: var(--text); width: 9rem; }
   .gapnote { border: 1px solid var(--warn); border-radius: var(--r-md); padding: var(--s-2) var(--s-3); max-width: var(--measure); }
 
   .grid { overflow-x: auto; }
   .vc :global(.row) { display: grid; grid-template-columns: repeat(var(--cols), minmax(17rem, 1fr)); column-gap: var(--s-4); padding: var(--s-3) 0; border-bottom: 1px solid var(--line); }
-  .vc :global(.row.head) { position: sticky; top: 0; z-index: 1; background: var(--bg); border-bottom: 2px solid var(--line); font-size: var(--fs-sm); padding: var(--s-2) 0; }
+  .vc :global(.row.head) { position: sticky; top: var(--header-shown, 0px); z-index: 1; background: var(--bg); border-bottom: 2px solid var(--line); font-size: var(--fs-sm); padding: var(--s-2) 0; }
   .vc :global(.pasal-title) { grid-column: 1 / -1; font-size: var(--fs-base); margin: 0 0 var(--s-2); }
   .vc :global(.cell) { min-width: 0; }
   .vc :global(.cell .none) { color: var(--text-muted); font-style: italic; margin: 0; }
@@ -256,5 +257,5 @@ const { data } = Astro.props;
     .vc :global(.slot) { flex: 1 1 100%; }
     .vc :global(.slot select) { flex: 1; max-width: none; }
   }
-  .more { margin-top: var(--s-3); font: inherit; font-size: var(--fs-sm); background: none; border: 1px solid var(--line); border-radius: var(--r-sm); padding: var(--s-1) var(--s-3); color: var(--primary); cursor: pointer; }
+  .more { margin-top: var(--s-3); font: inherit; font-size: var(--fs-sm); background: none; border: 1px solid var(--line-strong); border-radius: var(--r-sm); padding: var(--s-1) var(--s-3); color: var(--primary); cursor: pointer; }
 </style>

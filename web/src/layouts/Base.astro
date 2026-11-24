@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import ReadingSettings from "../components/ReadingSettings.astro";
+import ReadingSettings, { type LawView } from "../components/ReadingSettings.astro";
 
 interface Props {
   title: string;
@@ -11,8 +11,10 @@ interface Props {
   section?: string;
   /** Show the search field in the header (off on the home page, which has its own). */
   search?: boolean;
+  /** A page with a law text: the "Aa" settings also offer its view (decision 0009). */
+  view?: LawView;
 }
-const { title, description, noindex = false, section, search = true } = Astro.props;
+const { title, description, noindex = false, section, search = true, view } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const nav = [
   { key: "peraturan", href: `${base}uu/`, label: "Peraturan" },
@@ -32,14 +34,26 @@ const nav = [
     <script is:inline>
       // reader's font / size for law text (components/ReadingSettings.astro), before first paint
       try {
-        var f = localStorage.getItem("hb-font"), z = localStorage.getItem("hb-size");
-        if (f && f !== "serif") document.documentElement.dataset.font = f;
+        var fa = localStorage.getItem("hb-font-asli"), fm = localStorage.getItem("hb-font-modern"), z = localStorage.getItem("hb-size");
+        if (fa && fa !== "serif") document.documentElement.dataset.fontAsli = fa;
+        if (fm && fm !== "atkinson") document.documentElement.dataset.fontModern = fm;
         if (z && z !== "normal") document.documentElement.dataset.size = z;
+      } catch (e) {}
+      // side panel of document pages hidden on wide screens (components/DocLayout.astro)
+      try { if (localStorage.getItem("hb-panel") === "hidden") document.documentElement.dataset.panel = "hidden"; } catch (e) {}
+      // reader's view of law texts (components/ReadingSettings.astro): format, Penjelasan, parts
+      try {
+        var v = JSON.parse(localStorage.getItem("hb-view") || "{}"), d = document.documentElement.dataset;
+        d.format = v.format === "asli" ? "asli" : "modern";
+        d.penjelasan = v.penjelasan === "pasal" || v.penjelasan === "sembunyi" ? v.penjelasan : "akhir";
+        if (v.cj === false) d.cj = "hide";
+        if (Array.isArray(v.hide) && v.hide.length) d.hide = v.hide.join(" ");
       } catch (e) {}
     </script>
   </head>
   <body>
     <a class="skip" href="#main">Langsung ke isi</a>
+    <div class="site-slot">
     <header class="site">
       <div class={`wrap bar${search ? "" : " no-search"}`}>
         <a class="brand" href={base}>Hukum Bersih</a>
@@ -54,9 +68,10 @@ const nav = [
             <input id="q" name="q" type="search" placeholder="Cari undang-undang, pasal, kata…" autocomplete="off" />
           </form>
         )}
-        <ReadingSettings />
+        <ReadingSettings view={view} />
       </div>
     </header>
+    </div>
     <main id="main" class="wrap" data-pagefind-body={noindex ? undefined : true}>
       {!noindex && <span hidden data-pagefind-meta={`title:${title}`}></span>}
       <slot />
@@ -75,6 +90,86 @@ const nav = [
         </p>
       </div>
     </footer>
+    <script>
+      // The header follows the scroll like a phone browser's address bar (lib/barscroll.ts, as in
+      // Sapu Berita). The browser moves it, like the text: script only switches it between in the
+      // page ("free"), pinned to the top and hidden above, so it never lags the page. It stays
+      // while "Aa" is open or focus is inside it, and tucks away after a jump within the page.
+      // [data-under-header] elements (sticky panel, comparison bar) get --header-shown: the
+      // header's height while it is pinned, else 0.
+      import { settledBarOffset, shownPx, step, type HeaderState } from "../lib/barscroll.ts";
+      const root = document.documentElement;
+      const header = document.querySelector<HTMLElement>("header.site");
+      const slot = header?.parentElement;
+      if (header && slot) {
+        let s: HeaderState = { mode: "free", y: 0 };
+        let lastTop = Math.max(0, scrollY), dir = 0, frame = 0, h = header.offsetHeight, under = -1;
+        let settle: ReturnType<typeof setTimeout> | undefined;
+        const maxTop = () => root.scrollHeight - innerHeight;
+        const held = () => !!header.querySelector("details[open]") || header.contains(document.activeElement);
+        const setUnder = () => {
+          const px = s.mode === "pinned" ? h : 0;
+          if (px === under) return;
+          under = px;
+          document.querySelectorAll<HTMLElement>("[data-under-header]").forEach((e) => e.style.setProperty("--header-shown", `${px}px`));
+        };
+        /** draw the state; `from` (px pushed up) slides a fixed header from there to its place */
+        const draw = (from?: number) => {
+          header.dataset.mode = s.mode;
+          header.style.top = s.mode === "free" ? `${s.y}px` : "";
+          header.toggleAttribute("data-hidden", s.mode === "hidden");
+          if (from !== undefined && s.mode !== "free") {
+            header.style.transition = "none";
+            header.style.transform = `translateY(${-from}px)`;
+            header.offsetHeight;   // start the slide from there
+            header.style.removeProperty("transition");
+          }
+          header.style.transform = s.mode === "hidden" ? `translateY(${-h}px)` : "";
+          setUnder();
+        };
+        const to = (mode: "pinned" | "hidden") => {
+          const from = h - shownPx(s, lastTop, h);
+          s = { mode } as HeaderState;
+          draw(from);
+        };
+        const follow = () => {
+          frame = 0;
+          // the rubber band past either end of the page is not a scroll
+          const top = Math.min(Math.max(0, scrollY), Math.max(0, maxTop()));
+          if (top === lastTop) return;
+          dir = Math.sign(top - lastTop);
+          if (held()) { lastTop = top; if (s.mode !== "pinned") to("pinned"); return; }
+          const next = step(s, lastTop, top, h);
+          lastTop = top;
+          if (next.mode !== s.mode || (next.mode === "free" && s.mode === "free" && next.y !== s.y)) { s = next; draw(); }
+          clearTimeout(settle);
+          settle = setTimeout(() => {
+            if (s.mode !== "free") return;
+            const shown = shownPx(s, lastTop, h);
+            if (shown === 0 || (shown === h && lastTop === s.y)) return;
+            if (lastTop <= h && s.y === 0) return;   // the top of the page: it is just in its place
+            to(settledBarOffset(h - shown, lastTop, h, dir) === 0 ? "pinned" : "hidden");
+          }, 140);
+        };
+        addEventListener("scroll", () => { if (!frame) frame = requestAnimationFrame(follow); }, { passive: true });
+        header.addEventListener("focusin", () => { if (s.mode !== "pinned" && lastTop > 0) to("pinned"); });
+        header.addEventListener("toggle", () => { if (s.mode !== "pinned" && lastTop > 0) to("pinned"); }, true);
+        // a jump within the page (contents, "#" links): out of the way of what was jumped to
+        addEventListener("hashchange", () => requestAnimationFrame(() => {
+          lastTop = Math.max(0, scrollY);
+          if (lastTop > h) to("hidden");
+        }));
+        // keep the header's place in the page as tall as the header
+        new ResizeObserver(() => {
+          h = header.offsetHeight;
+          slot.style.height = `${h}px`;
+          under = -1; setUnder();
+        }).observe(header);
+        slot.style.height = `${h}px`;
+        root.classList.add("hb-follow");
+        draw();
+      }
+    </script>
   </body>
 </html>
 
@@ -82,6 +177,16 @@ const nav = [
   .skip { position: absolute; left: -999px; top: 0; }
   .skip:focus { left: var(--s-4); top: var(--s-2); background: var(--bg); padding: var(--s-2); z-index: 10; }
   header.site { border-bottom: 1px solid var(--line); background: var(--bg); }
+  /* following the scroll (script below; without it the header just sits in the page): the slot
+     keeps its place, the header is either in the page at a script-set position ("free"), or
+     fixed at the top of the window, slid out of it when hidden */
+  :global(.hb-follow) header.site { position: absolute; left: 0; right: 0; top: 0; z-index: 15; }
+  :global(.hb-follow) header.site:is([data-mode="pinned"], [data-mode="hidden"]) {
+    position: fixed; transition: transform 0.24s ease-out;
+  }
+  /* fully away: out of the tab order too, once the slide has finished */
+  header.site[data-hidden] { visibility: hidden; transition: transform 0.24s ease-out, visibility 0s 0.24s; }
+  @media (prefers-reduced-motion: reduce) { header.site, header.site[data-hidden] { transition: none !important; } }
   .bar { display: flex; align-items: center; gap: var(--s-5); min-height: 4rem; flex-wrap: wrap; }
   .brand { font-weight: 700; font-size: var(--fs-lg); color: var(--text); text-decoration: none; letter-spacing: -0.01em; }
   nav { display: flex; gap: var(--s-4); }
@@ -95,7 +200,7 @@ const nav = [
   nav { margin-right: var(--s-3); }
   .search input {
     width: 100%; font: inherit; font-size: var(--fs-sm); color: var(--text);
-    background: var(--bg-subtle); border: 1px solid var(--line); border-radius: var(--r-sm);
+    background: var(--bg-subtle); border: 1px solid var(--line-strong); border-radius: var(--r-sm);
     padding: var(--s-2) var(--s-3);
   }
   .search input:focus { background: var(--bg); }

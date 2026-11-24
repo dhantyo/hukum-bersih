@@ -1,22 +1,67 @@
 ---
-// "Aa": the reader picks the font and size of law text. Stored in this browser only
-// (localStorage) and applied before first paint by the inline script in layouts/Base.astro.
+// "Aa": how law text is shown, in one place (DESIGN.md "Tampilan"). Font and size on every
+// page; on pages with a law text also Format (Modern/Asli), Penjelasan and which parts to show
+// (decision 0009). Stored in this browser only (localStorage "hb-font", "hb-size", "hb-view")
+// and applied before first paint by the inline script in layouts/Base.astro; components/
+// LawText.astro reads the attributes. The text itself never changes.
+export interface LawView { penjelasan: boolean; pembukaan: boolean; penutup: boolean }
+interface Props { view?: LawView }
+const { view } = Astro.props;
 const fonts = [
-  { key: "serif", label: "Source Serif", note: "serif, bawaan" },
+  { key: "serif", label: "Source Serif", note: "serif, bawaan format Asli" },
   { key: "literata", label: "Literata", note: "serif buku" },
   { key: "sans", label: "Public Sans", note: "tanpa kait" },
-  { key: "atkinson", label: "Atkinson Hyperlegible", note: "paling mudah dibaca" },
+  { key: "atkinson", label: "Atkinson Hyperlegible", note: "paling mudah dibaca, bawaan format Modern" },
 ];
 const sizes = [{ key: "normal", label: "Normal" }, { key: "large", label: "Besar" }];
+const formats = [
+  { key: "modern", label: "Modern", note: "untuk layar: judul huruf biasa, Pembukaan dilipat" },
+  { key: "asli", label: "Asli", note: "seperti salinan resmi: judul rata tengah, kapital" },
+];
+const placements = [{ key: "akhir", label: "Di akhir" }, { key: "pasal", label: "Per pasal" }, { key: "sembunyi", label: "Sembunyi" }];
+const parts = view ? [
+  view.pembukaan && { key: "pembukaan", label: "Pembukaan" },
+  { key: "batang", label: "Batang tubuh" },
+  view.penutup && { key: "penutup", label: "Penutup" },
+].filter(Boolean) as { key: string; label: string }[] : [];
 ---
-<details class="reading">
-  <summary aria-label="Tampilan teks: huruf dan ukuran"><span aria-hidden="true">Aa</span></summary>
+<details class:list={["reading", { "with-law": view }]}>
+  <summary aria-label="Tampilan teks"><span aria-hidden="true">Aa</span></summary>
   <div class="pop" role="group" aria-label="Tampilan teks">
+    {view && (
+      <>
+        <fieldset>
+          <legend>Format</legend>
+          {formats.map((f) => (
+            <label class="opt">
+              <input type="radio" name="hb-format" value={f.key} />
+              <span>{f.label}</span>
+              <span class="note">{f.note}</span>
+            </label>
+          ))}
+        </fieldset>
+        {view.penjelasan && (
+          <fieldset>
+            <legend>Penjelasan</legend>
+            <div class="chips">
+              {placements.map((p) => <label class="chip"><input type="radio" name="hb-penjelasan" value={p.key} /> {p.label}</label>)}
+            </div>
+            <label class="check"><input type="checkbox" name="hb-cj" /> Tampilkan “Cukup jelas”</label>
+          </fieldset>
+        )}
+        <fieldset>
+          <legend>Bagian yang ditampilkan</legend>
+          <div class="chips">
+            {parts.map((p) => <label class="chip"><input type="checkbox" name="hb-part" value={p.key} /> {p.label}</label>)}
+          </div>
+        </fieldset>
+      </>
+    )}
     <fieldset>
-      <legend>Huruf teks peraturan</legend>
+      <legend>Huruf teks peraturan{view && <span class="for-format"> · format <span data-font-format>Modern</span></span>}</legend>
       {fonts.map((f) => (
         <label class="opt">
-          <input type="radio" name="hb-font" value={f.key} checked={f.key === "serif"} />
+          <input type="radio" name="hb-font" value={f.key} />
           <span class="sample" data-font-sample={f.key}>{f.label}</span>
           <span class="note">{f.note}</span>
         </label>
@@ -24,7 +69,7 @@ const sizes = [{ key: "normal", label: "Normal" }, { key: "large", label: "Besar
     </fieldset>
     <fieldset>
       <legend>Ukuran</legend>
-      <div class="sizes">
+      <div class="chips">
         {sizes.map((s) => (
           <label class="chip"><input type="radio" name="hb-size" value={s.key} checked={s.key === "normal"} /> {s.label}</label>
         ))}
@@ -38,9 +83,30 @@ const sizes = [{ key: "normal", label: "Normal" }, { key: "large", label: "Besar
   const root = document.documentElement;
   const get = (k: string) => { try { return localStorage.getItem(k); } catch { return null; } };
   const set = (k: string, v: string) => { try { localStorage.setItem(k, v); } catch { /* private mode */ } };
-  for (const [name, attr, def] of [["hb-font", "font", "serif"], ["hb-size", "size", "normal"]] as const) {
+  const inputs = (name: string) => document.querySelectorAll<HTMLInputElement>(`details.reading input[name="${name}"]`);
+
+  // font: one choice per format (Asli default serif, Modern default Atkinson); the list edits
+  // the format being read
+  const FONT_DEFAULT = { asli: "serif", modern: "atkinson" } as const;
+  const fmtNow = () => (root.dataset.format === "asli" ? "asli" : "modern");
+  const fontAttr = (f: "asli" | "modern") => (f === "asli" ? "fontAsli" : "fontModern");
+  const showFont = () => {
+    const f = fmtNow();
+    const current = root.dataset[fontAttr(f)] ?? FONT_DEFAULT[f];
+    inputs("hb-font").forEach((i) => { i.checked = i.value === current; });
+    document.querySelectorAll("[data-font-format]").forEach((e) => { e.textContent = f === "asli" ? "Asli" : "Modern"; });
+  };
+  inputs("hb-font").forEach((input) => input.addEventListener("change", () => {
+    const f = fmtNow();
+    set(`hb-font-${f}`, input.value);
+    if (input.value === FONT_DEFAULT[f]) delete root.dataset[fontAttr(f)];
+    else root.dataset[fontAttr(f)] = input.value;
+  }));
+  showFont();
+  // size
+  for (const [name, attr, def] of [["hb-size", "size", "normal"]] as const) {
     const current = get(name) ?? def;
-    document.querySelectorAll<HTMLInputElement>(`input[name="${name}"]`).forEach((input) => {
+    inputs(name).forEach((input) => {
       input.checked = input.value === current;
       input.addEventListener("change", () => {
         set(name, input.value);
@@ -49,6 +115,33 @@ const sizes = [{ key: "normal", label: "Normal" }, { key: "large", label: "Besar
       });
     });
   }
+
+  // law view: format, Penjelasan, parts (attributes set before first paint by Base.astro)
+  const showView = () => {
+    const pj = root.dataset.penjelasan ?? "akhir";
+    const hide = (root.dataset.hide ?? "").split(" ");
+    inputs("hb-format").forEach((i) => { i.checked = i.value === (root.dataset.format ?? "modern"); });
+    inputs("hb-penjelasan").forEach((i) => { i.checked = i.value === pj; });
+    inputs("hb-cj").forEach((i) => { i.checked = root.dataset.cj !== "hide"; i.disabled = pj === "sembunyi"; });
+    inputs("hb-part").forEach((i) => { i.checked = !hide.includes(i.value); });
+  };
+  const applyView = () => {
+    const fmt = [...inputs("hb-format")].find((i) => i.checked)?.value ?? "modern";
+    const pj = [...inputs("hb-penjelasan")].find((i) => i.checked)?.value ?? root.dataset.penjelasan ?? "akhir";
+    const cj = inputs("hb-cj").length ? [...inputs("hb-cj")].every((i) => i.checked) : root.dataset.cj !== "hide";
+    const hide = [...inputs("hb-part")].filter((i) => !i.checked).map((i) => i.value);
+    root.dataset.format = fmt;
+    root.dataset.penjelasan = pj;
+    if (cj) delete root.dataset.cj; else root.dataset.cj = "hide";
+    if (hide.length) root.dataset.hide = hide.join(" "); else delete root.dataset.hide;
+    set("hb-view", JSON.stringify({ format: fmt, penjelasan: pj, cj, hide }));
+    (window as unknown as { hbLawView?: { sync: () => void } }).hbLawView?.sync();
+    showView();
+    showFont();
+  };
+  for (const name of ["hb-format", "hb-penjelasan", "hb-cj", "hb-part"]) inputs(name).forEach((i) => i.addEventListener("change", applyView));
+  showView();
+
   // close when clicking elsewhere or pressing Escape
   const box = document.querySelector<HTMLDetailsElement>("details.reading");
   document.addEventListener("click", (e) => { if (box?.open && !box.contains(e.target as Node)) box.open = false; });
@@ -59,7 +152,7 @@ const sizes = [{ key: "normal", label: "Normal" }, { key: "large", label: "Besar
   .reading { position: relative; }
   summary {
     list-style: none; cursor: pointer; display: grid; place-items: center;
-    min-width: var(--tap); min-height: var(--tap); border: 1px solid var(--line); border-radius: var(--r-sm);
+    min-width: var(--tap); min-height: var(--tap); border: 1px solid var(--line-strong); border-radius: var(--r-sm);
     font-family: var(--font-law); font-weight: 600; font-size: var(--fs-base); color: var(--text);
     background: var(--bg);
   }
@@ -67,11 +160,13 @@ const sizes = [{ key: "normal", label: "Normal" }, { key: "large", label: "Besar
   summary:hover, .reading[open] summary { background: var(--bg-subtle); }
   .pop {
     position: absolute; right: 0; top: calc(100% + var(--s-2)); z-index: 20; width: min(19rem, calc(100vw - 2 * var(--s-4)));
+    max-height: calc(100vh - 6rem); overflow-y: auto; overscroll-behavior: contain;
     background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md);
     box-shadow: var(--shadow-pop); padding: var(--s-4);
   }
-  fieldset { border: 0; margin: 0 0 var(--s-4); padding: 0; }
-  legend { font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: var(--s-2); }
+  .with-law .pop { width: min(23rem, calc(100vw - 2 * var(--s-4))); }
+  fieldset { border: 0; margin: 0 0 var(--s-4); padding: 0; min-width: 0; }
+  legend { font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: var(--s-2); padding: 0; }
   .opt { display: grid; grid-template-columns: auto 1fr; column-gap: var(--s-2); align-items: baseline; padding: var(--s-2); border-radius: var(--r-sm); cursor: pointer; }
   .opt:hover { background: var(--bg-subtle); }
   .opt:has(input:checked) { background: var(--primary-bg); }
@@ -81,8 +176,15 @@ const sizes = [{ key: "normal", label: "Normal" }, { key: "large", label: "Besar
   [data-font-sample="literata"] { font-family: var(--font-literata); }
   [data-font-sample="sans"] { font-family: var(--font-ui); }
   [data-font-sample="atkinson"] { font-family: var(--font-atkinson); }
-  .sizes { display: flex; gap: var(--s-2); }
-  .chip { display: flex; gap: var(--s-1); align-items: center; padding: var(--s-1) var(--s-3); border: 1px solid var(--line); border-radius: 999px; cursor: pointer; font-size: var(--fs-sm); }
+  .chips { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+  .chip { display: flex; gap: var(--s-1); align-items: center; padding: var(--s-1) var(--s-2); border: 1px solid var(--line-strong); border-radius: 999px; cursor: pointer; font-size: var(--fs-sm); }
   .chip:has(input:checked) { border-color: var(--primary); background: var(--primary-bg); }
+  .check { display: flex; align-items: center; gap: var(--s-2); margin-top: var(--s-2); font-size: var(--fs-sm); cursor: pointer; }
+  .check:has(input:disabled) { color: var(--text-muted); cursor: default; }
+  input { accent-color: var(--primary); }
   .preview { margin: 0; padding-top: var(--s-3); border-top: 1px solid var(--line); font-family: var(--font-law); font-size: var(--fs-law); line-height: 1.6; }
+  @media (pointer: coarse) {
+    .chip { min-height: var(--tap); }
+    .check { min-height: var(--tap); margin-top: 0; }
+  }
 </style>

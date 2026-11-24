@@ -84,7 +84,8 @@ const SMALL = new Set(["dan", "atau", "di", "ke", "dari", "yang", "untuk", "tent
   "terhadap", "dengan", "pada", "dalam", "oleh", "serta", "bagi", "sebagai", "antara", "menjadi",
   "kepada", "tanpa", "melalui", "secara", "beserta", "mengenai", "of", "the"]);
 // Acronyms and roman numerals stay upper case.
-const KEEP_UPPER = /^(?:[IVXLC]+|RI|NRI|DPR|DPD|MPR|BPK|APBN|APBD|KUHP|KUHAP|ITE|TNI|POLRI|BUMN|BUMD|PNPS|UUD)$/;
+// (also used for law headings in the "Modern" view, so legal abbreviations are listed too)
+const KEEP_UPPER = /^(?:[IVXLC]+|RI|NRI|NKRI|DPR|DPRD|DPD|MPR|BPK|BPKP|KPK|OJK|BI|APBN|APBD|KUHP|KUHAP|ITE|TNI|POLRI|BUMN|BUMD|BUMDES|PNPS|UUD|UU|PP|HAM|ASN|PNS|BPJS|LN|TLN|IUP|IUPK|IPR|WIUP|WIUPK|WPR|WUP|WPN|WP|AMDAL|NPWP|PPN|PPH|PPNBM|PBB|SDA|SDM)$/;
 
 /** "PELINDUNGAN SAKSI DAN KORBAN" -> "Pelindungan Saksi dan Korban". */
 export function judul(text: string): string {

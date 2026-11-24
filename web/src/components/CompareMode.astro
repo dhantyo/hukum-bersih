@@ -1,0 +1,564 @@
+---
+// Comparing versions inside the reading view (decision 0010; replaces the Perubahan page).
+// Ways in: "Diubah oleh UU 3/2020" under a pasal (links with data-cmp-by) compares the version
+// before that amendment with the one it made; "Bandingkan versi" (Versi panel, data-cmp-open);
+// ?bandingkan=<id>[&dari=<id>]. Either way the whole law is compared and the reader stays where
+// they were: the pasal they clicked keeps its place on screen.
+//
+// Every pasal that differs opens in place, old wording and new side by side, one row per ayat or
+// item; pasal the text does not have yet are placed after their neighbour; the contents mark
+// them and count them per BAB. Above the text a sticky bar: one module per column, centred over
+// it and joined by a rail. A module holds that column's version; drag a module across (or press
+// the swap button between them) and the columns slide over with it. Colours stay chronological
+// whichever side a version is on: the older text shows what was deleted, the newer what was
+// inserted. Phones: one column, changes inline.
+//
+// Notation after Fedlex: inserted --ins-*, deleted --del-* (struck), reworded --mod-*, "tidak
+// ada padanan" grey; pasal marks lib/marks.ts. Motion (motion.dev, MIT) animates: springs for
+// the drag and swap, blocks growing out of the text they replace, the panel sliding away. All
+// of it is skipped under prefers-reduced-motion.
+// Data: /koleksi/<slug>/perubahan.json (lib/amendments.ts compareData), fetched on first use.
+import { MARK } from "../lib/marks.ts";
+/** src: the family's perubahan.json; current: the version on screen (the base law's id for the
+ * original text, else the last amending law merged into it) */
+interface Props { src: string; current: string }
+const { src, current } = Astro.props;
+const swapIcon = `<svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3 5.5h9.5m0 0L10 3m2.5 2.5L10 8M13 10.5H3.5m0 0L6 8m-2.5 2.5L6 13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const grip = `<svg class="grip" viewBox="0 0 10 16" width="10" height="16" aria-hidden="true"><g fill="currentColor"><circle cx="3" cy="4" r="1.2"/><circle cx="7" cy="4" r="1.2"/><circle cx="3" cy="8" r="1.2"/><circle cx="7" cy="8" r="1.2"/><circle cx="3" cy="12" r="1.2"/><circle cx="7" cy="12" r="1.2"/></g></svg>`;
+---
+<div class="cmp-bar" data-under-header data-cmp-bar data-src={src} data-current={current} hidden data-pagefind-ignore>
+  <div class="cmp-top">
+    <span class="cmp-title">Bandingkan versi</span>
+    <span class="cmp-summary" data-cmp-summary aria-live="polite"></span>
+    <label class="cmp-check"><input type="checkbox" data-cmp-only /> Yang berubah saja</label>
+    <button type="button" class="cmp-close" data-cmp-close>Tutup</button>
+  </div>
+  <div class="cmp-mods" data-cmp-mods>
+    <div class="cmp-mod" data-slot="0" title="Geser ke sisi lain untuk menukar kolom">
+      <Fragment set:html={grip} /><select aria-label="Versi di kolom kiri" data-cmp-pick="0"></select>
+    </div>
+    <button type="button" class="cmp-swap" data-cmp-swap aria-label="Tukar kolom kiri dan kanan" title="Tukar kolom"><Fragment set:html={swapIcon} /></button>
+    <div class="cmp-mod" data-slot="1" title="Geser ke sisi lain untuk menukar kolom">
+      <Fragment set:html={grip} /><select aria-label="Versi di kolom kanan" data-cmp-pick="1"></select>
+    </div>
+  </div>
+  <p class="cmp-legend">
+    <span class="lg"><span class="mk ins"><Fragment set:html={MARK.ins} /></span>pasal disisipkan</span>
+    <span class="lg"><span class="mk del"><Fragment set:html={MARK.del} /></span>dihapus</span>
+    <span class="lg"><span class="mk mod"><Fragment set:html={MARK.mod} /></span>diubah</span>
+    <span class="lg"><ins>disisipkan</ins> <del>dihapus</del> <mark class="mod">diubah</mark> <span class="none">tidak ada padanan</span></span>
+  </p>
+</div>
+
+<script>
+  import { animate, drag, motionValue } from "motion";
+  import { diffLines, type LineDiff, type Part } from "../lib/compare.ts";
+  import type { Pasal } from "../lib/lawtext.ts";
+  import type { CompareData, CompactSlot } from "../lib/amendments.ts";
+  import { MARK, type MarkKind } from "../lib/marks.ts";
+
+  const bar = document.querySelector<HTMLElement>("[data-cmp-bar]");
+  if (bar) {
+    const root = document.documentElement;
+    const src = bar.dataset.src!;
+    const currentId = bar.dataset.current ?? "";
+    let current = 0;
+    const picks = [...bar.querySelectorAll<HTMLSelectElement>("[data-cmp-pick]")];
+    const mods = [...bar.querySelectorAll<HTMLElement>(".cmp-mod")];
+    const only = bar.querySelector<HTMLInputElement>("[data-cmp-only]")!;
+    const summary = bar.querySelector<HTMLElement>("[data-cmp-summary]")!;
+    let data: CompareData | undefined;
+    /** the version in each column, left to right */
+    let pick: [number, number] = [0, 0];
+    const load = async () => {
+      if (!data) {
+        data = (await (await fetch(src)).json()) as CompareData;
+        current = Math.max(0, data.versions.findIndex((v) => v.id === currentId));
+      }
+      return data;
+    };
+
+    // ---------- motion ----------
+    const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+    const SPRING = { type: "spring", visualDuration: 0.38, bounce: 0.18 } as const;
+    const QUICK = { duration: 0.16, ease: "easeIn" } as const;
+    const still = () => reduced.matches;
+    const inView = (e: Element) => { const r = e.getBoundingClientRect(); return r.bottom > 0 && r.top < innerHeight; };
+    /** keeps `anchor` where it is on screen across a change of the page (and below the bar) */
+    function keepPlace(anchor: HTMLElement | null, change: () => void) {
+      const y0 = anchor?.getBoundingClientRect().top;
+      change();
+      if (!anchor || y0 === undefined) return;
+      const floor = bar!.hidden ? 0 : bar!.getBoundingClientRect().height + 8;
+      window.scrollBy({ top: anchor.getBoundingClientRect().top - Math.max(y0, floor), behavior: "instant" });
+    }
+    const clearStyle = (e: HTMLElement, ...props: string[]) => props.forEach((p) => e.style.removeProperty(p));
+    /** the side panel folds away while comparing at these widths (DocLayout.astro) */
+    const panelFolds = matchMedia("(min-width: 961px) and (max-width: 1499px)");
+    const panel = document.querySelector<HTMLElement>(".panel");
+
+    // ---------- building blocks ----------
+    const el = <K extends keyof HTMLElementTagNameMap>(tag: K, cls = "", text?: string) => {
+      const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e;
+    };
+    const cite = (k: number) => data!.versions[k].cite;
+    const order = (x: string, y: string) => {
+      const a = x.match(/^(\d+)(.*)$/), b = y.match(/^(\d+)(.*)$/);
+      return (Number(a?.[1]) - Number(b?.[1])) || (a?.[2] ?? "").localeCompare(b?.[2] ?? "");
+    };
+    const key = (num: string) => num.toLowerCase().replace(/[^0-9a-z]+/g, "");
+    /** a pasal at version k: lines, "d" deleted, "u" unreadable, null not there yet */
+    const slotAt = (num: string, k: number): CompactSlot | undefined => {
+      const hist = data!.pasal.find(([n]) => n === num)?.[1];
+      if (!hist) return undefined;
+      let s: CompactSlot | undefined;
+      for (const [i, slot] of hist) if (i <= k) s = slot;
+      return s;
+    };
+    const toPasal = (num: string, s: CompactSlot | undefined): Pasal | undefined =>
+      Array.isArray(s) ? { label: `Pasal ${num}`, num, eId: `cmp-${num}`, lines: s.map(([n, text, indent]) => ({ num: n ?? undefined, text, indent })) } : undefined;
+    const REPEALED = /^dihapus\.?$/i;
+
+    /** word parts with a deletion followed by an insertion read as one rewording ("diubah") */
+    const pieces = (parts: Part[]) => {
+      const out: { kind: "same" | "ins" | "del" | "modOld" | "modNew"; value: string }[] = [];
+      for (let i = 0; i < parts.length; i++) {
+        const p = parts[i], n = parts[i + 1];
+        if (p.removed && n?.added) { out.push({ kind: "modOld", value: p.value }, { kind: "modNew", value: n.value }); i++; }
+        else out.push({ kind: p.added ? "ins" : p.removed ? "del" : "same", value: p.value });
+      }
+      return out;
+    };
+    type Piece = { kind: string; value: string };
+    const fill = (cell: HTMLElement, items: Piece[]) => {
+      for (const it of items) {
+        if (it.kind === "same") cell.append(it.value);
+        else if (it.kind === "ins") cell.append(el("ins", "", it.value));
+        else if (it.kind === "del") cell.append(el("del", "", it.value));
+        else if (it.kind === "gone") cell.append(el("span", "gone", it.value));
+        else cell.append(el("mark", it.kind === "modOld" ? "mod old" : "mod", it.value));
+      }
+    };
+
+    /** one pasal, older version (ko) against newer (kn): a grid of rows, old and new cells
+     * placed in whichever column their version is in; and the same inline for phones */
+    function block(num: string, so: CompactSlot | undefined, sn: CompactSlot | undefined, ko: number, kn: number) {
+      const box = el("div", "cmp-block");
+      const po = toPasal(num, so), pn = toPasal(num, sn);
+      const rows: LineDiff[] = po && pn ? diffLines(po, pn, undefined, { byNumber: true })
+        : pn ? pn.lines.map((l) => ({ kind: "baru", b: l, parts: [{ value: l.text, added: true }] }))
+        : po ? po.lines.map((l) => ({ kind: "dihapus", a: l, parts: [{ value: l.text, removed: true }] }))
+        : [];
+      const status = (s: CompactSlot | undefined, older: boolean) =>
+        s === "u" ? "teks belum terbaca dari PDF" : s === "d" ? "pasal ini dihapus" : s == null ? (older ? "pasal ini belum ada" : "pasal ini tidak ada") : "";
+      const note = [status(so, true) && `${cite(ko)}: ${status(so, true)}`, status(sn, false) && `${cite(kn)}: ${status(sn, false)}`].filter(Boolean).join(" · ");
+      if (note) box.append(el("p", "cmp-note", note));
+      // a whole side missing (a new or deleted pasal) is said once, in the note
+      const gap = (): Piece[] => (po && pn ? [{ kind: "none", value: "" }] : []);
+      const cols = el("div", "cmp-cols"), inline = el("div", "cmp-inline");
+      rows.forEach((r, n) => {
+        const line = r.b ?? r.a!;
+        let o: Piece[], w: Piece[], i: Piece[];
+        if (r.b && REPEALED.test(r.b.text.trim()) && !(r.a && REPEALED.test(r.a.text.trim()))) {
+          o = r.a ? [{ kind: "del", value: r.a.text }] : gap(); w = [{ kind: "gone", value: r.b.text }];
+          i = [...(r.a ? [{ kind: "del", value: r.a.text }, { kind: "same", value: " " }] : []), { kind: "gone", value: r.b.text }];
+        } else if (r.kind === "sama") { o = [{ kind: "same", value: r.a!.text }]; w = [{ kind: "same", value: r.b!.text }]; i = w; }
+        else if (r.kind === "baru") { o = gap(); w = [{ kind: "ins", value: r.b!.text }]; i = w; }
+        else if (r.kind === "dihapus") { o = [{ kind: "del", value: r.a!.text }]; w = gap(); i = o; }
+        else if (r.kind === "diganti") {
+          o = [{ kind: "modOld", value: r.a!.text }]; w = [{ kind: "modNew", value: r.b!.text }];
+          i = [...o, { kind: "same", value: " " }, ...w];
+        } else {
+          const ps = pieces(r.parts);
+          o = ps.filter((p) => p.kind !== "ins" && p.kind !== "modNew");
+          w = ps.filter((p) => p.kind !== "del" && p.kind !== "modOld");
+          i = ps;
+        }
+        const cell = (side: string, num: string | undefined, items: Piece[]) => {
+          const c = el("p", `cmp-cell ${side} ${r.kind}`);
+          c.style.setProperty("--i", String(line.indent));
+          if (side !== "one") c.style.gridRow = String(n + 1);
+          c.append(el("span", "cmp-num", num ?? ""));
+          const t = el("span", "cmp-txt");
+          if (items.length === 1 && items[0].kind === "none") t.append(el("span", "none", "tidak ada padanan"));
+          else fill(t, items);
+          c.append(t);
+          return c;
+        };
+        cols.append(cell("old", r.a?.num, o), cell("new", r.b?.num, w));
+        inline.append(cell("one", line.num, i));
+      });
+      box.append(cols, inline);
+      return box;
+    }
+
+    // ---------- the text ----------
+    const sectionOf = (num: string) => document.querySelector<HTMLElement>(`.law .akn-article[data-num="${CSS.escape(num)}"]`);
+    const gridLink = (id: string) => document.querySelector<HTMLElement>(`.toc-pasal a[data-pasal="${CSS.escape(id)}"]`);
+    /** a pasal this text does not have (inserted later, or on the original text): a section of
+     * its own after the pasal before it, and a cell in the contents grid */
+    function addedSection(num: string) {
+      const prev = [...document.querySelectorAll<HTMLElement>(".law .part-batang .akn-article[data-num]")]
+        .filter((s) => order(s.dataset.num!, num) < 0).at(-1);
+      if (!prev) return null;
+      const sec = el("section", "akn-article cmp-added");
+      sec.id = `cmp-pasal-${key(num)}`;
+      sec.dataset.num = num;
+      sec.append(el("h3", "fold-h cmp-added-h", `Pasal ${num}`));
+      prev.after(sec);
+      const li = prev.id ? gridLink(prev.id)?.parentElement : null;
+      if (li) {
+        const nli = el("li", "cmp-tmp"), a = el("a", "", num);
+        a.setAttribute("href", `#${sec.id}`); a.dataset.pasal = sec.id;
+        nli.append(a); li.after(nli);
+      }
+      return sec;
+    }
+    function clearAll() {
+      document.querySelectorAll(".cmp-added, .toc-pasal .cmp-tmp, .toc-cmp").forEach((s) => s.remove());
+      document.querySelectorAll<HTMLElement>(".akn-article.cmp-on").forEach((sec) => {
+        sec.querySelector(":scope > .cmp-block")?.remove();
+        sec.classList.remove("cmp-on");
+      });
+      document.querySelectorAll(".toc-pasal a[data-mk]").forEach((a) => a.removeAttribute("data-mk"));
+      document.querySelectorAll(".toc-ch.cmp-open").forEach((c) => c.classList.remove("cmp-open"));
+    }
+    function place(sec: HTMLElement, box: HTMLElement) {
+      sec.querySelector(":scope > .cmp-block")?.remove();
+      sec.insertBefore(box, sec.querySelector(":scope > .fold-c"));
+      sec.classList.add("cmp-on");
+    }
+    /** BAB in the contents: open them and count their changes by kind */
+    function markContents(marks: Map<HTMLElement, MarkKind>) {
+      const perBab = new Map<HTMLElement, Record<MarkKind, number>>();
+      for (const [a, kind] of marks) {
+        a.dataset.mk = kind;
+        const ch = a.closest<HTMLElement>(".toc-ch");
+        if (!ch) continue;
+        const c = perBab.get(ch) ?? { mod: 0, ins: 0, del: 0 };
+        c[kind]++; perBab.set(ch, c);
+      }
+      for (const [ch, c] of perBab) {
+        ch.classList.add("cmp-open");
+        const span = el("span", "toc-cmp");
+        for (const kind of ["mod", "ins", "del"] as MarkKind[]) {
+          if (!c[kind]) continue;
+          const s = el("span", `mk ${kind}`);
+          s.innerHTML = MARK[kind];
+          s.append(String(c[kind]));
+          span.append(s);
+        }
+        ch.querySelector(".toc-ch-link")?.append(span);
+      }
+    }
+
+    /** draws the comparison of the two picked versions into the text */
+    function draw() {
+      clearAll();
+      const ko = Math.min(...pick), kn = Math.max(...pick);
+      if (pick[0] > pick[1]) root.dataset.cmpFlip = ""; else delete root.dataset.cmpFlip;
+      let shown = 0;
+      const marks = new Map<HTMLElement, MarkKind>();
+      for (const [num, hist] of data!.pasal) {
+        if (ko === kn || !hist.some(([i]) => i > ko && i <= kn)) continue;
+        const so = slotAt(num, ko), sn = slotAt(num, kn);
+        const kind: MarkKind = !Array.isArray(so) && Array.isArray(sn) ? "ins" : sn === "d" && so !== "d" ? "del" : "mod";
+        const sec = sectionOf(num) ?? addedSection(num);
+        if (!sec) continue;
+        place(sec, block(num, so, sn, ko, kn));
+        const a = gridLink(sec.id);
+        if (a) marks.set(a, kind);
+        shown++;
+      }
+      markContents(marks);
+      summary.textContent = ko === kn ? "Dua versi yang sama." : `${shown} pasal berbeda`;
+    }
+    function syncPicks() {
+      picks.forEach((s, n) => { s.value = String(pick[n]); });
+      const url = new URL(location.href);
+      url.searchParams.set("dari", data!.versions[pick[0]].id);
+      url.searchParams.set("bandingkan", data!.versions[pick[1]].id);
+      history.replaceState(null, "", url);
+    }
+    /** the first pasal on screen, to keep in place */
+    const firstOnScreen = () => [...document.querySelectorAll<HTMLElement>(".law .part-batang .akn-article")]
+      .find((s) => s.getBoundingClientRect().bottom > (bar.hidden ? 0 : bar.getBoundingClientRect().bottom) + 8) ?? null;
+
+    // ---------- open, change, close ----------
+    async function open(left?: number, right?: number, anchor: HTMLElement | null = firstOnScreen()) {
+      await load();
+      if (!picks[0].options.length) data!.versions.forEach((v, k) => picks.forEach((s) => s.add(new Option(v.cite, String(k)))));
+      const last = data!.versions.length - 1;
+      // on the original text: original -> latest; on a merged version: the step that made it
+      pick = [left ?? (current > 0 ? current - 1 : 0), right ?? (current > 0 ? current : last)];
+      const wasOpen = !bar!.hidden;
+      // the pasal on screen now: their text's height, so their comparison grows out of it
+      const from = new Map<HTMLElement, number>();
+      document.querySelectorAll<HTMLElement>(".law .akn-article").forEach((s) => {
+        if (inView(s)) from.set(s, (s.querySelector(":scope > .cmp-block, :scope > .fold-c") as HTMLElement | null)?.offsetHeight ?? 0);
+      });
+      if (!wasOpen && panel && panelFolds.matches && !still() && !root.dataset.panel) await animate(panel, { opacity: 0, x: -24 }, QUICK);
+      keepPlace(anchor, () => {
+        bar!.hidden = false;
+        draw();
+        root.dataset.compare = "all";
+        syncPicks();
+      });
+      if (panel) clearStyle(panel, "opacity", "transform");
+      if (still()) return;
+      if (!wasOpen) animate(bar!, { opacity: [0, 1], y: [-8, 0] }, SPRING);
+      document.querySelectorAll<HTMLElement>(".cmp-block").forEach((b, n) => {
+        if (!inView(b)) return;
+        const h = b.offsetHeight, h0 = from.get(b.parentElement!) ?? 0;
+        b.style.overflow = "hidden";
+        animate(b, { height: [Math.min(h0, h), h], opacity: [0.2, 1] }, { ...SPRING, delay: Math.min(n, 6) * 0.025 })
+          .then(() => clearStyle(b, "height", "overflow", "opacity"));
+      });
+    }
+    async function close() {
+      const anchor = firstOnScreen();
+      if (!still()) {
+        const shrinking = [...document.querySelectorAll<HTMLElement>(".cmp-block")].filter(inView);
+        await Promise.all([
+          ...shrinking.map((b) => { b.style.overflow = "hidden"; return animate(b, { height: 0, opacity: 0 }, QUICK); }),
+          animate(bar!, { opacity: 0, y: -8 }, QUICK),
+        ]);
+      }
+      keepPlace(anchor, () => {
+        clearAll();
+        bar!.hidden = true;
+        clearStyle(bar!, "opacity", "transform");
+        for (const k of ["compare", "cmpPanel", "cmpOnly", "cmpFlip"]) delete root.dataset[k];
+        only.checked = false;
+      });
+      const url = new URL(location.href);
+      url.searchParams.delete("bandingkan"); url.searchParams.delete("dari");
+      history.replaceState(null, "", url);
+      if (still()) return;
+      if (panel && panelFolds.matches && !root.dataset.panel) animate(panel, { opacity: [0, 1], x: [-24, 0] }, SPRING).then(() => clearStyle(panel, "opacity", "transform"));
+      document.querySelectorAll<HTMLElement>(".law .akn-article > .fold-c").forEach((c) => {
+        if (inView(c)) animate(c, { opacity: [0, 1] }, { duration: 0.25 }).then(() => clearStyle(c, "opacity"));
+      });
+    }
+    /** a version picked in one module: redraw, visible changes fade in */
+    function repick(n: 0 | 1, k: number) {
+      pick[n] = k;
+      keepPlace(firstOnScreen(), () => { draw(); syncPicks(); });
+      if (still()) return;
+      document.querySelectorAll<HTMLElement>(".cmp-block").forEach((b) => {
+        if (inView(b)) animate(b, { opacity: [0.25, 1], y: [4, 0] }, SPRING).then(() => clearStyle(b, "opacity", "transform"));
+      });
+    }
+
+    // ---------- swapping columns: drag a module across, or the swap button ----------
+    // progress 0 (as is) .. 1 (swapped) drives --cmp-p; the modules and the visible columns are
+    // translated by it (CSS), so the text moves with the hand. Done: the picks swap and --cmp-p
+    // drops back to 0 in the same frame, so nothing jumps.
+    const progress = motionValue(0);
+    progress.on("change", (p) => root.style.setProperty("--cmp-p", String(p)));
+    function startSwap(held: -1 | 0 | 1 = -1) {
+      root.style.setProperty("--cmp-h", held === -1 ? "0" : held === 0 ? "1" : "-1");
+      if (held >= 0) mods[held].classList.add("held");
+      const d = mods[1].getBoundingClientRect().left + mods[1].offsetWidth / 2 - (mods[0].getBoundingClientRect().left + mods[0].offsetWidth / 2);
+      root.style.setProperty("--cmp-dist", `${d}px`);
+      document.querySelectorAll(".cmp-block").forEach((b) => b.classList.toggle("cmp-live", inView(b)));
+      root.dataset.cmpDrag = "";
+      return d;
+    }
+    function endSwap(done: boolean) {
+      if (done) { pick = [pick[1], pick[0]]; if (pick[0] > pick[1]) root.dataset.cmpFlip = ""; else delete root.dataset.cmpFlip; syncPicks(); }
+      progress.jump(0);
+      delete root.dataset.cmpDrag;
+      mods.forEach((m) => m.classList.remove("held"));
+      document.querySelectorAll(".cmp-live").forEach((b) => b.classList.remove("cmp-live"));
+    }
+    async function settle(to: 0 | 1) {
+      if (!still()) await animate(progress, to, SPRING);
+      endSwap(to === 1);
+    }
+    bar.querySelector("[data-cmp-swap]")!.addEventListener("click", () => { startSwap(); settle(1); });
+    let dist = 0;
+    /** one column (phones, tablets): nothing to swap */
+    const narrow = matchMedia("(max-width: 960px)");
+    mods.forEach((m, n) => {
+      const dx = motionValue(0);
+      // the select inside still opens normally
+      m.querySelector("select")!.addEventListener("pointerdown", (e) => e.stopPropagation());
+      drag(m, {
+        axis: "x", x: dx, momentum: false,
+        onStart: () => { if (narrow.matches) return; dist = startSwap(n as 0 | 1); },
+        onMove: () => {
+          if (narrow.matches) return;
+          const p = (n === 0 ? dx.get() : -dx.get()) / dist;
+          progress.set(p < 0 ? p * 0.15 : p > 1 ? 1 + (p - 1) * 0.15 : p);   // a little give at the ends
+        },
+        onEnd: (_e, info) => {
+          dx.jump(0);
+          if (narrow.matches) return;
+          const v = (n === 0 ? 1 : -1) * info.velocity.x / dist;
+          settle(progress.get() + v * 0.15 > 0.5 ? 1 : 0);
+        },
+      });
+    });
+
+    // ---------- wiring ----------
+    picks.forEach((s, n) => s.addEventListener("change", () => repick(n as 0 | 1, Number(s.value))));
+    only.addEventListener("change", () => {
+      keepPlace(firstOnScreen(), () => { if (only.checked) root.dataset.cmpOnly = "1"; else delete root.dataset.cmpOnly; });
+    });
+    bar.querySelector("[data-cmp-close]")!.addEventListener("click", close);
+    document.querySelectorAll("[data-cmp-open]").forEach((b) => b.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (root.dataset.drawer) document.querySelector<HTMLElement>("[data-drawer-close]")?.click();
+      open();
+    }));
+    // "Diubah oleh UU 3/2020" under a pasal: the version before it against the one it made,
+    // with that pasal kept where it is on screen
+    document.addEventListener("click", async (e) => {
+      const a = (e.target as Element).closest<HTMLAnchorElement>("a[data-cmp-by]");
+      if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;
+      const sec = a.closest<HTMLElement>(".akn-article");
+      e.preventDefault();
+      await load();
+      const kb = data!.versions.findIndex((v) => v.id === a.dataset.cmpBy);
+      if (kb < 1) { location.href = a.href; return; }
+      open(kb - 1, kb, sec);
+    });
+    // the side panel can still be brought back while comparing
+    document.querySelector("[data-panel-show]")?.addEventListener("click", () => { if (root.dataset.compare) root.dataset.cmpPanel = "1"; });
+    document.querySelector("[data-panel-hide]")?.addEventListener("click", () => { delete root.dataset.cmpPanel; });
+
+    // ?bandingkan=<id>[&dari=<id>] (shared links, and the old Perubahan page's redirect)
+    const q = new URLSearchParams(location.search);
+    if (q.has("bandingkan")) {
+      load().then(() => {
+        const find = (id: string | null) => (id ? data!.versions.findIndex((v) => v.id === id) : -1);
+        const kb = find(q.get("bandingkan")), ka = find(q.get("dari"));
+        const target = location.hash ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null;
+        const sec = target?.closest<HTMLElement>(".akn-article") ?? null;
+        open(ka >= 0 ? ka : kb > 0 ? kb - 1 : undefined, kb >= 0 ? kb : undefined, sec).then(() => {
+          if (sec) sec.scrollIntoView({ block: "start", behavior: "instant" });
+        });
+      });
+    }
+  }
+</script>
+
+<style>
+  .cmp-bar {
+    position: sticky; top: var(--header-shown, 0px); z-index: 4; background: var(--bg); font-family: var(--font-ui); font-size: var(--fs-sm);
+    transition: top 0.24s ease-out;
+    border-bottom: 1px solid var(--line); padding: var(--s-3) 0 var(--s-2); margin-bottom: var(--s-5);
+    box-shadow: calc(-1 * var(--s-6)) 0 0 var(--bg);   /* covers the fold arrows in the margin */
+  }
+  .cmp-bar[hidden] { display: none; }
+  .cmp-top { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-1) var(--s-4); }
+  .cmp-title { font-weight: 600; font-size: var(--fs-base); }
+  .cmp-summary { color: var(--text-muted); }
+  .cmp-check { display: inline-flex; align-items: center; gap: var(--s-1); margin-left: auto; }
+  .cmp-check input { accent-color: var(--primary); }
+  .cmp-close {
+    font: inherit; color: var(--primary); background: none; cursor: pointer;
+    border: 1px solid var(--line-strong); border-radius: var(--r-sm); padding: var(--s-1) var(--s-3); min-height: var(--s-6);
+  }
+
+  /* the modules: one per column, centred over it, joined by a rail */
+  .cmp-mods { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: var(--s-6); margin-top: var(--s-3); }
+  .cmp-mods::before {
+    content: ""; position: absolute; left: 25%; right: 25%; top: 50%; height: 2px; margin-top: -1px;
+    background: var(--line-strong); border-radius: 1px;
+  }
+  .cmp-mod {
+    position: relative; justify-self: center; display: inline-flex; align-items: center; gap: var(--s-1);
+    background: var(--bg); border: 1px solid var(--line-strong); border-radius: var(--r-md);
+    padding: var(--s-0) var(--s-1) var(--s-0) var(--s-2); box-shadow: var(--shadow-sm);
+    cursor: grab; touch-action: pan-y; user-select: none; --dir: 1;
+  }
+  .cmp-mod[data-slot="1"] { --dir: -1; }
+  .cmp-mod:active { cursor: grabbing; }
+  .cmp-mod :global(.grip) { color: var(--text-muted); flex: none; }
+  .cmp-mod select {
+    font: inherit; font-weight: 600; font-size: var(--fs-base); color: var(--text); background: transparent;
+    border: 0; border-radius: var(--r-sm); padding: var(--s-1) var(--s-1); min-height: var(--s-6); cursor: pointer;
+  }
+  .cmp-mod select:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
+  .cmp-swap {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1;
+    display: inline-flex; align-items: center; justify-content: center; width: var(--s-6); height: var(--s-6);
+    color: var(--text-muted); background: var(--bg); border: 1px solid var(--line-strong); border-radius: 50%; cursor: pointer;
+  }
+  .cmp-swap:hover { color: var(--primary); border-color: var(--primary); }
+  :global(:root[data-cmp-drag]) .cmp-mod { transform: translateX(calc(var(--cmp-p, 0) * var(--cmp-dist, 0px) * var(--dir))); z-index: 2; }
+  :global(:root[data-cmp-drag]) .cmp-mod.held { z-index: 3; box-shadow: var(--shadow-pop); }
+
+  .cmp-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--s-1) var(--s-4); margin: var(--s-2) 0 0; font-size: var(--fs-xs); color: var(--text-muted); }
+  .lg { display: inline-flex; align-items: center; gap: var(--s-1); }
+  :global(.mk) { display: inline-flex; align-items: center; gap: var(--s-0); }
+  :global(.mk .mark) { flex: none; }
+  :global(.mk.ins) { color: var(--ok); } :global(.mk.del) { color: var(--del-text); } :global(.mk.mod) { color: var(--warn); }
+  :global(mark.mod) { background: var(--mod-bg); color: var(--mod-text); border-radius: 2px; }
+  :global(mark.mod.old) { text-decoration: line-through; }
+  :global(.cmp-bar .none), :global(.cmp-block .none) { color: var(--text-muted); background: var(--bg-subtle); font-style: italic; padding: 0 var(--s-1); border-radius: 2px; }
+  :global(.cmp-block .gone) { color: var(--gone); font-style: italic; }
+
+  /* a pasal compared, in place of its text */
+  :global(.law .cmp-on > .fold-c) { display: none; }
+  :global(.cmp-block) { margin: var(--s-2) 0 var(--s-4); padding: var(--s-3) 0 0; border-top: 1px solid var(--line); font-size: var(--fs-law); }
+  :global(.cmp-added-h) { margin: var(--s-5) 0 var(--s-1); font-family: var(--font-ui); font-size: var(--h-pasal, var(--fs-md)); }
+  :global(.cmp-note) { margin: 0 0 var(--s-2); font-family: var(--font-ui); font-size: var(--fs-sm); color: var(--text-muted); }
+  :global(.cmp-cols) { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: var(--s-6); }
+  :global(.cmp-cell) {
+    margin: 0 0 var(--s-2); display: grid; grid-template-columns: var(--hang) minmax(0, 1fr); column-gap: var(--s-1);
+    padding-left: calc(var(--i, 0) * var(--hang)); line-height: 1.65; align-self: start;
+  }
+  /* columns follow the picks: the older text left unless the reader swapped them */
+  :global(.cmp-cell.old) { grid-column: 1; --dir: 1; }
+  :global(.cmp-cell.new) { grid-column: 2; --dir: -1; }
+  :global(:root[data-cmp-flip] .cmp-cell.old) { grid-column: 2; --dir: -1; }
+  :global(:root[data-cmp-flip] .cmp-cell.new) { grid-column: 1; --dir: 1; }
+  /* while swapping: both columns slide; where they cross, the one not held fades so the held
+     one stays readable (--cmp-h: 1 left module held, -1 right, 0 the swap button) */
+  :global(:root[data-cmp-drag] .cmp-live .cmp-cell) {
+    transform: translateX(calc(var(--cmp-p, 0) * var(--cmp-dist, 0px) * var(--dir)));
+    opacity: calc(1 - 0.4 * (1 - var(--dir) * var(--cmp-h, 0)) * sin(clamp(0, var(--cmp-p, 0), 1) * 180deg));
+    will-change: transform, opacity;
+  }
+  :global(.cmp-num) { font-variant-numeric: tabular-nums; }
+  :global(.cmp-inline) { display: none; }
+
+  /* the page while comparing: wider, two columns (the panel folding is in DocLayout.astro) */
+  :global(:root[data-compare]) :global(.wrap) { max-width: var(--page-wide); }
+  @media (min-width: 961px) {
+    :global(:root[data-compare]) :global(.law) { max-width: none; }
+    :global(:root[data-compare]) :global(.law .akn-article > .fold-c), :global(:root[data-compare]) :global(.law .akn-preamble),
+    :global(:root[data-compare]) :global(.law .akn-conclusions), :global(:root[data-compare]) :global(.law .penjelasan),
+    :global(:root[data-compare]) :global(.law .akn-note), :global(:root[data-compare]) :global(.law .merged-banner) { max-width: var(--measure); }
+  }
+  /* comparing reshapes the whole text and jumps between distant pasal: render it all, so
+     positions are real (LawText skips off-screen BAB otherwise) */
+  :global(:root[data-compare]) :global(.law .akn-body > section) { content-visibility: visible; }
+  /* "Yang berubah saja" */
+  :global(:root[data-cmp-only]) :global(.law .akn-article:not(.cmp-on)) { display: none; }
+
+  /* the contents: changed BAB open, with their counts; pasal cells tinted like the text */
+  :global(.toc-ch.cmp-open > .toc-pasal) { display: flex; }
+  :global(.toc-cmp) { display: flex; gap: var(--s-2); margin-top: var(--s-0); font-size: var(--fs-xs); font-weight: 600; }
+  :global(.toc-pasal a[data-mk]) { font-weight: 600; }
+  :global(.toc-pasal a[data-mk="ins"]) { background: var(--ins-bg); color: var(--ins-text); }
+  :global(.toc-pasal a[data-mk="del"]) { background: var(--del-bg); color: var(--del-text); text-decoration: line-through; }
+  :global(.toc-pasal a[data-mk="mod"]) { background: var(--mod-bg); color: var(--mod-text); }
+
+  /* phones and tablets: one column, changes inline; no dragging */
+  @media (max-width: 960px) {
+    .cmp-bar { position: static; }
+    .cmp-check { margin-left: 0; }
+    .cmp-mods { column-gap: var(--s-3); }
+    .cmp-mod { cursor: default; }
+    .cmp-mod :global(.grip), .cmp-swap { display: none; }
+    :global(.cmp-inline mark.mod.old + mark.mod) { margin-left: var(--s-1); }
+    :global(.cmp-cols) { display: none; }
+    :global(.cmp-inline) { display: block; }
+    :global(.cmp-block) { font-size: var(--fs-base); }
+  }
+  @media (max-width: 640px) { :global(.cmp-cell) { grid-template-columns: var(--hang-sm) minmax(0, 1fr); padding-left: calc(var(--i, 0) * var(--hang-sm)); } }
+</style>

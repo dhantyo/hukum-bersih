@@ -190,7 +190,8 @@ export function pasalThrough(h: VersionHistory, num: string) {
  * lines ([num, text, indent][]), "d" (deleted), "u" (unreadable) or null (not there yet). */
 export type CompactSlot = [string | null, string, number][] | "d" | "u" | null;
 export interface CompareData {
-  versions: { id: string; label: string; date: string | null; gap: number }[];
+  /** cite: the law's short citation ("UU 3/2020"), the version's name in the comparison view */
+  versions: { id: string; label: string; cite: string; date: string | null; gap: number }[];
   pasal: [string, [number, CompactSlot][]][];
 }
 
@@ -202,7 +203,7 @@ export function compareData(h: VersionHistory): CompareData {
     return (Number(a?.[1]) - Number(b?.[1])) || (a?.[2] ?? "").localeCompare(b?.[2] ?? "");
   });
   return {
-    versions: h.versions.map((v) => ({ id: v.id, label: v.label, date: v.date, gap: v.gapBefore })),
+    versions: h.versions.map((v) => ({ id: v.id, label: v.label, cite: citeId(v.id), date: v.date, gap: v.gapBefore })),
     pasal: nums.map((n) => [n, [0, ...h.changedIn.get(n)!].map((k) => [k, slot(h.states[k].get(n))] as [number, CompactSlot])]),
   };
 }

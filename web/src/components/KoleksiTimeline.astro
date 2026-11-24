@@ -6,6 +6,7 @@
 // and Fedlex ("Chronologie"); see docs/decisions/0008.
 import { tanggal } from "../lib/labels.ts";
 import { ordinal, timeline, type Koleksi } from "../lib/koleksi.ts";
+import { pasalKey } from "../lib/display.ts";
 import { citeId, lawPath, rel, STATUS_LABEL, type Changes, type Regulation } from "../lib/peraturan.ts";
 
 interface Props { k: Koleksi; compared: Set<string>; anchors: Map<string, string> }
@@ -17,7 +18,7 @@ const GROUPS = [["diubah", "Diubah"], ["disisipkan", "Pasal baru"], ["dihapus", 
 const changesOf = (law: Regulation): Changes | undefined => rel(law).amends.find((a) => a.id === k.base.id)?.changes;
 const total = (c?: Changes) => (c ? (c.diubah?.length ?? 0) + (c.disisipkan?.length ?? 0) + (c.dihapus?.length ?? 0) : 0);
 const chipHref = (by: string, kind: string, n: string) =>
-  compared.has(by) ? `${baseHref}perubahan/#${by}-pasal-${n}` : kind !== "disisipkan" && anchors.get(n) ? `${baseHref}#${anchors.get(n)}` : undefined;
+  compared.has(by) ? `${baseHref}?bandingkan=${by}#pasal-${pasalKey(n)}` : kind !== "disisipkan" && anchors.get(n) ? `${baseHref}#${anchors.get(n)}` : undefined;
 const KIND: Record<string, string> = { pendahulu: "Digantikan", pokok: "Undang-undang pokok", dicabut: "Dicabut", "ditetapkan-dari": "Ditetapkan menjadi undang-undang" };
 ---
 <ol class="timeline">
@@ -67,7 +68,7 @@ const KIND: Record<string, string> = { pendahulu: "Digantikan", pokok: "Undang-u
                   </ul>
                 </div>
               ) : null)}
-              {compared.has(law.id) && <a class="go" href={`${baseHref}perubahan/#${law.id}`}>Sebelum dan sesudah, pasal demi pasal →</a>}
+              {compared.has(law.id) && <a class="go" href={`${baseHref}?bandingkan=${law.id}`}>Sebelum dan sesudah, pasal demi pasal →</a>}
             </div>
           </details>
         )}

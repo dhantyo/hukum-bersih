@@ -160,8 +160,17 @@ function unchangedShare(parts: Part[], a: string, b: string): number {
 
 /** Ayat-by-ayat diff: align lines (TF-IDF cosine, so reworded ayat still pair up), then word
  * diff only inside matched lines. */
-export function diffLines(a: Pasal, b: Pasal, vec: LineVectors = linesVectors([a, b])): LineDiff[] {
-  const simOf = (x: PasalLine, y: PasalLine) => cosine(vec.get(x)!, vec.get(y)!);
+/** Bonus for lines with the same number at the same depth when `byNumber` is set: in versions
+ * of one law the numbering is authoritative ("8. Dihapus." is still item 8), while between RUU
+ * drafts items are renumbered, so there content alone decides. */
+export const SAME_NUMBER_BONUS = 0.6;
+
+export function diffLines(a: Pasal, b: Pasal, vec: LineVectors = linesVectors([a, b]),
+                          opts: { byNumber?: boolean } = {}): LineDiff[] {
+  const simOf = (x: PasalLine, y: PasalLine) => {
+    const sim = cosine(vec.get(x)!, vec.get(y)!);
+    return opts.byNumber && x.num && x.num === y.num && x.indent === y.indent ? sim + SAME_NUMBER_BONUS : sim;
+  };
   return align(a.lines, b.lines, LINE_THRESHOLD, simOf).flatMap(({ i, j }): LineDiff[] => {
     const la = i === undefined ? undefined : a.lines[i];
     const lb = j === undefined ? undefined : b.lines[j];

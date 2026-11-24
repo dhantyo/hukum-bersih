@@ -5,3 +5,5 @@
 - Display names of source sites live in `SOURCES` in `src/lib/peraturan.ts`.
 - Hosting is Cloudflare Pages (decision 0002). Watch the free-plan limits on files per deployment.
 - Test and build: `npm test`, `npm run build` (Astro, then Pagefind).
+- Law pages keep the original transcript (decision 0009: Asli/Modern, folding and the "Aa" reading settings in `ReadingSettings.astro`). The one exception to "never reconstruct a version" is the Koleksi page's merged text (decision 0010): built by the site from the original and the amending laws, labelled as not official, with its gaps stated, never stored in `data/`.
+- Versions and changes of an amended law come from its record's `history` (written by `hukum-bersih relations`, `pipeline/src/hukum_bersih/history.py`). Don't hand-edit it; change the code and rerun.

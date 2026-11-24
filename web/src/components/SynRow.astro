@@ -2,7 +2,7 @@
 // One row of a synopsis (side-by-side comparison): a pasal before and after, ayat by ayat,
 // with deleted words struck through on the left and new words marked on the right. On phones
 // it becomes one column with the changes marked in place. Used for RUU drafts
-// (pages/ruu/[slug]/beda) and for amended laws (pages/uu/[nomor]/[tahun]/perubahan).
+// (pages/ruu/[slug]/beda); amended laws are compared in the reading view (CompareMode.astro).
 import type { PasalComparison } from "../lib/compare.ts";
 import type { Pasal } from "../lib/lawdoc.ts";
 import { STATUS } from "../lib/labels.ts";
@@ -90,7 +90,7 @@ const { r, anchor, verA, verB, refVer = () => "", anchorOf = new Map(), weak = f
   .berubah .syn-meta a { background: transparent; color: var(--warn); border: 1px solid currentColor; }
   .baru .syn-meta a { color: var(--ok); }
   .dihapus .syn-meta a { color: var(--del-text); }
-  .syn-meta .tag { color: var(--text-muted); font-weight: 500; }
+  .syn-meta .tag { color: var(--text-muted); font-weight: 600; }
   .cell h3 { font-size: var(--fs-base); margin: var(--s-1) 0 var(--s-2); }
   .cell h3 .ver { font-weight: 400; color: var(--text-muted); font-size: var(--fs-sm); }
   .cell .none { color: var(--text-muted); font-style: italic; font-size: var(--fs-sm); margin: var(--s-1) 0; }
