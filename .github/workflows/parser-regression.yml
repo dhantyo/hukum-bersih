@@ -1,15 +1,11 @@
 name: Parser regression
 
 # The PDF parser on the regression set (pipeline/tests/regression.yaml: UU from 1947-2026, typed
-# and scanned, counts read from the PDFs) and on a random survey of UU from the Hugging Face
-# mirror of BPK, and what the OCR spell fix (pdf/ocr_fix.py) changes on random scanned UU. Runs
+# and scanned, counts read from the PDFs), and what the OCR spell fix (pdf/ocr_fix.py) changes on random scanned UU. Runs
 # when the parser changes; fails if any law in the set is off.
 on:
   workflow_dispatch:
     inputs:
-      survey:
-        description: "Also survey N random UU (0 = no)"
-        default: "50"
       ocr_fix:
         description: "OCR spell fix report on N random scanned UU (0 = no)"
         default: "30"
@@ -50,10 +46,6 @@ jobs:
         working-directory: pipeline
         shell: bash          # -o pipefail: the step fails when regress.py does
         run: uv run python scripts/regress.py 2>&1 | grep -v "MuPDF error\|^$" | tee -a "$GITHUB_STEP_SUMMARY"
-      - name: Survey
-        if: ${{ (inputs.survey || '50') != '0' }}
-        working-directory: pipeline
-        run: uv run python scripts/survey.py "${{ inputs.survey || '50' }}" 2>&1 | grep -v "MuPDF error\|^$" | grep -v " ok$" | tee -a "$GITHUB_STEP_SUMMARY"
       - name: OCR spell fix report
         if: ${{ (inputs.ocr_fix || '30') != '0' }}
         working-directory: pipeline
