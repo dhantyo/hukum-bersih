@@ -25,3 +25,27 @@ def test_placeholder_date_is_unknown():
 
     assert tanggal_iso("01 Januari 1970") is None       # peraturan.go.id's empty date
     assert tanggal_iso("12 Januari 2009") == "2009-01-12"
+
+
+def test_import_pdf_records_the_hash_and_converts_without_uploading(tmp_path, monkeypatch):
+    import json
+
+    import yaml
+    from recfactory import make_record
+
+    from hukum_bersih import uploads
+
+    folder = tmp_path / "peraturan" / "uu" / "2009" / "uu_4_2009"
+    folder.mkdir(parents=True)
+    (folder / "uu_4_2009.yaml").write_text(yaml.safe_dump(
+        make_record("uu_4_2009", tanggal_penetapan="2009-01-12")))
+    pdf = tmp_path / "UU Nomor 4 Tahun 2009.pdf"
+    pdf.write_bytes(b"%PDF-1.4 test")
+    monkeypatch.setattr("hukum_bersih.sources.peraturan_go_id.convert_pdf",
+                        lambda *a, **k: "converted")
+    line = uploads.import_pdf(pdf, tmp_path, "peraturan.bpk.go.id", "https://peraturan.bpk.go.id/")
+    assert line == "ok   uu_4_2009: converted"
+    m = [json.loads(x) for x in (tmp_path / "sources/manifests/peraturan.bpk.go.id.jsonl")
+         .read_text().splitlines()]
+    assert len(m[0]["sha256"]) == 64 and m[0]["archive_url"] is None
+    assert m[0]["doc_id"] == "uu_4_2009_2009-01-12"

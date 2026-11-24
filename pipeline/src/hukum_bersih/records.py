@@ -56,9 +56,9 @@ class BpkFile(_Model):
     filename: str
     sha256: str | None = None
     bytes: int | None = None
-    archive_url: str | None = None
-    archived_sha256: str | None = None   # archive.org's copy differs (repaired PDF)
-    archive_refused: str | None = None   # archive.org refused the file; reason
+    archive_url: str | None = None       # our archive.org copy (existing data only; nothing is uploaded any more)
+    archived_sha256: str | None = None   # archive.org's copy differs (repaired PDF; existing data)
+    archive_refused: str | None = None   # archive.org refused the file; reason (existing data)
     fetched_from: str | None = None      # BPK failed; note naming the mirror used
 
 

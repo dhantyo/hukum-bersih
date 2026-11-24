@@ -1,9 +1,9 @@
 name: Import from BPK
 
 # Imports regulations from peraturan.bpk.go.id (JDIH BPK), the main source since 2026-11-21:
-# metadata into data/, every PDF archived on archive.org as soon as it is downloaded, text for
+# metadata into data/, every PDF's sha256 recorded in the manifest (PDFs are not kept), text for
 # records that have none. Records imported earlier from peraturan.go.id keep their text (the BPK
-# PDF is archived and parsed for comparison). Batches of 50, committed and pushed after each, so
+# PDF is parsed for comparison). Batches of 50, committed and pushed after each, so
 # runs resume; once everything is in, runs only pick up new regulations.
 # Cloudflare: a stealth browser (Scrapling) clears the check, curl_cffi downloads
 # (pipeline/src/hukum_bersih/sources/bpk_session.py). No VPN needed: BPK is not geo-blocked.
@@ -31,7 +31,7 @@ on:
         type: string
         default: ""
       no_text:
-        description: "PDFs only: download and archive, leave texts alone"
+        description: "PDFs only: download and record hashes, leave texts alone"
         type: boolean
         default: false
       chain:
@@ -39,7 +39,7 @@ on:
         type: boolean
         default: true
       archive:
-        description: "Also upload PDFs to archive.org (slow; off: hashes recorded, upload later)"
+        description: "ignored: archive.org upload was removed 2026-11-24"
         type: boolean
         default: false
 
@@ -62,7 +62,6 @@ jobs:
       BATCH: "50"
       ONLY: ${{ inputs.only && format('--only={0}', inputs.only) || '' }}
       NO_TEXT: ${{ inputs.no_text && '--no-text' || '' }}
-      NO_ARCHIVE: ${{ inputs.archive && '' || '--no-archive' }}
       MODE: ${{ inputs.mode || 'import' }}
     steps:
       - uses: actions/checkout@v4
@@ -80,8 +79,6 @@ jobs:
         env:
           # one Cloudflare clearance and one walk of the listing for all batches of this run
           HUKUM_BERSIH_BPK_CACHE: ${{ runner.temp }}/bpk
-          IA_ACCESS_KEY: ${{ secrets.IA_ACCESS_KEY }}
-          IA_SECRET_KEY: ${{ secrets.IA_SECRET_KEY }}
           GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "hukum-bersih bot"
@@ -97,7 +94,7 @@ jobs:
             if [ "$MODE" = reparse ]; then
               out=$(cd pipeline && uv run hukum-bersih reparse-bpk --limit "$BATCH" $ONLY 2>&1 | tee /dev/stderr || true)
             else
-              out=$(cd pipeline && xvfb-run -a uv run hukum-bersih import-bpk "$JENIS" --limit "$BATCH" $ONLY $NO_TEXT $NO_ARCHIVE 2>&1 | tee /dev/stderr || true)
+              out=$(cd pipeline && xvfb-run -a uv run hukum-bersih import-bpk "$JENIS" --limit "$BATCH" $ONLY $NO_TEXT 2>&1 | tee /dev/stderr || true)
             fi
             # each law is shown in the log as it is done (tee above); $out is kept for the summary
             n=$(echo "$out" | grep -c '^ok' || true)
@@ -126,7 +123,7 @@ jobs:
           if [ "$left" = yes ] && [ "$total" -gt 0 ] && [ -z "$ONLY" ] && [ "${{ inputs.chain }}" != false ]; then
             echo "Time is up with work left: starting the next run" | tee -a "$GITHUB_STEP_SUMMARY"
             gh workflow run import-bpk.yml --ref "${GITHUB_REF_NAME}" -f mode="$MODE" -f jenis="$JENIS" \
-              -f batches="$BATCHES" -f no_text="${{ inputs.no_text }}" -f archive="${{ inputs.archive }}" -f chain=true
+              -f batches="$BATCHES" -f no_text="${{ inputs.no_text }}" -f chain=true
           fi
       - uses: ./.github/actions/ocr-cache
         if: always()

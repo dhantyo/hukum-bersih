@@ -1,18 +1,18 @@
 # Naming rule
 
 Agreed with Dante on 2026-11-20 after looking at Switzerland (Fedlex) and Germany (NeuRIS).
-This rule applies everywhere: archive.org, files in `data/`, ids in YAML, and site URLs.
+This rule applies everywhere: files in `data/`, ids in YAML, and site URLs (and the archive.org items made before 2026-11-24).
 It replaces the example file names in `docs/BRIEF.md` §6.
 
 ## Three names per document
 
 | Name | For | Example |
 |---|---|---|
-| **id** | machines: archive.org, file names, links between records | `uu_11_2008` |
+| **id** | machines: file names, links between records | `uu_11_2008` |
 | **title** | people: the official citation, in Indonesian | Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik |
 | **short name** | search: the popular name, when one exists | UU ITE |
 
-Ids never contain the project name. The project is mentioned only in archive.org descriptions.
+Ids never contain the project name.
 
 ## Id format
 
@@ -35,7 +35,7 @@ Ids never contain the project name. The project is mentioned only in archive.org
   text is dated by when the last amendment it includes took effect.
 - When the source splits one version into several files (e.g. the body and a lampiran), the
   first file has the version id and the others add `_<n>`: `uu_6_2023_2023-03-31_2`.
-  The same applies when a second copy of a version (another source's PDF) is archived.
+  The same applies when a second copy of a version (another source's PDF) is recorded.
 - An amendment is its own regulation with its own id (`uu_19_2016` amends `uu_11_2008`).
 - Types: `uu`, `perppu`, `pp`, `perpres`, `keppres`, `inpres`, `tap-mpr`; ministerial and
   agency regulations use the standard abbreviation (`permenkeu`, `permenkumham`, …).
@@ -89,22 +89,9 @@ Year folders keep every folder small (GitHub's file browser stops at 1,000 entri
 
 ### archive.org
 
-Titles put the identifying words first, because archive.org cards cut titles off after
-about 40 characters. Titles and descriptions can be rewritten later without re-uploading
-(`hukum-bersih archive-retitle`, "Retitle archive.org items" workflow).
-
-Only original source files (PDFs) go to archive.org. Our consolidated texts do not.
-
-| | Regulation | RUU document |
-|---|---|---|
-| Item identifier | work id: `uu_11_2008` | document id: `ruu_perampasan-aset_2026-11-19_draft-final` |
-| File in the item | version id: `uu_11_2008_2008-04-21.pdf` | `ruu_perampasan-aset_2026-11-19_draft-final.pdf` |
-| Title (short, shown on cards) | `<short name> – <citation>`, e.g. UU ITE – Undang-Undang Nomor 11 Tahun 2008 | `<bill short name> – <short label> (<date>)`, e.g. RUU Perampasan Aset – Draf RUU Final (19 November 2026) |
-| Description | full title with "tentang …", source URL, original file name, one line about the project | full label + the bill's title as it was then, source URL, original file name, project line |
-
-If the source later publishes a different file for the same version, it goes into the same item
-with the fetch date appended. If an identifier is already taken by someone else on archive.org,
-the upload fails and a variant is chosen by hand; nothing is ever overwritten.
+Nothing is uploaded any more (decision 0014). Copies made before 2026-11-24 use the work id as
+the item identifier and the version id as the file name (`uu_11_2008/uu_11_2008_2008-04-21.pdf`);
+the links stay in `archive_url` fields.
 
 ### Website
 

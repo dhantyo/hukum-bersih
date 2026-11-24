@@ -1,14 +1,12 @@
 """Command-line entry point: ``hukum-bersih <command>``.
 
-    fetch            download sources, archive them on archive.org, record in manifests
     parse            PDF -> Bluebell text (the format stored in data/)
     build-akn        Bluebell text in data/ -> Akoma Ntoso XML (+ amendment JSON) for the website
-    import-bpk       import regulations from peraturan.bpk.go.id, archiving every PDF
+    import-bpk       import regulations from peraturan.bpk.go.id, recording every PDF's sha256
     relations        link amending / revoking / enacting laws
-    import-pdf       archive, record and convert hand-downloaded PDFs (uploads.py)
+    import-pdf       record and convert hand-downloaded PDFs (uploads.py)
     manifest         print a manifest entry for a local file
-    archive-retitle  rewrite titles/descriptions of archived items (files untouched)
-    archive-delete   empty obsolete archive.org items we uploaded
+    reparse-bpk      re-convert texts from the PDFs on archive.org (read only)
 """
 
 from __future__ import annotations
@@ -40,33 +38,11 @@ def _each(items: Iterable[str], action: Callable[[str], str], delay: float = 0) 
     return 1 if failures else 0
 
 
-def _pairs(parser: argparse.ArgumentParser, values: list[str]) -> list[tuple[str, str]]:
-    from .naming import validate_id
-
-    if len(values) % 2:
-        parser.error("arguments must be ID URL pairs")
-    pairs = list(zip(values[::2], values[1::2], strict=True))
-    for doc_id, url in pairs:
-        if not url.startswith(("http://", "https://")):
-            parser.error(f"expected ID URL, got {doc_id!r} {url!r}")
-        try:
-            validate_id(doc_id)
-        except ValueError as e:
-            parser.error(str(e))
-    return pairs
-
-
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="hukum-bersih")
     parser.add_argument("--version", action="version", version=__version__)
     parser.add_argument("--data-dir", type=Path, default=DATA_DIR)
     sub = parser.add_subparsers(dest="command", required=True)
-
-    p = sub.add_parser("fetch", help="download, archive on archive.org, record in manifests")
-    p.add_argument("pairs", nargs="+", metavar="ID URL", help="id + URL pairs (docs/NAMING.md)")
-    p.add_argument("--title", help="archive.org title (single pair only)")
-    p.add_argument("--no-archive", action="store_true", help="hash only, skip archive.org")
-    p.add_argument("--delay", type=float, default=2.0, help="seconds between requests")
 
     p = sub.add_parser("parse", help="PDF -> Bluebell text")
     p.add_argument("pdf", type=Path)
@@ -84,61 +60,31 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--only", default="", help="comma-separated ids: re-convert just these")
 
     p = sub.add_parser("import-bpk", help="import regulations from peraturan.bpk.go.id: "
-                       "metadata, PDFs (archived at once), text for records without one")
+                       "metadata, PDF hashes, text for records without one")
     p.add_argument("jenis", choices=["uu", "perppu", "pp", "perpres"])
     p.add_argument("--limit", type=int, default=0, help="stop after N regulations done (0 = all)")
     p.add_argument("--delay", type=float, default=3.0, help="seconds between requests")
-    p.add_argument("--no-archive", action="store_true", help="record hashes, skip archive.org")
     p.add_argument("--only", default="", help="comma-separated ids (uu_4_2009,…): just these")
     p.add_argument("--no-text", action="store_true",
-                   help="download and archive PDFs, but leave texts alone (no conversion)")
+                   help="download PDFs and record hashes, but leave texts alone (no conversion)")
 
     p = sub.add_parser("reparse-bpk", help="re-convert texts from the BPK PDFs archived on archive.org")
     p.add_argument("--only", default="", help="comma-separated ids")
     p.add_argument("--limit", type=int, default=0)
 
-    p = sub.add_parser("archive-pending",
-                       help="archive recorded regulation PDFs not yet on archive.org")
-    p.add_argument("--limit", type=int, default=150)
-    p.add_argument("--delay", type=float, default=2.0)
-
     sub.add_parser("relations", help="recompute amends/revokes/enacts links between regulations")
 
-    p = sub.add_parser("import-pdf", help="archive, record and convert hand-downloaded PDFs")
+    p = sub.add_parser("import-pdf", help="record and convert hand-downloaded PDFs")
     p.add_argument("pdfs", nargs="+", type=Path, help="named like 'UU Nomor 4 Tahun 2009.pdf'")
     p.add_argument("--source", default="peraturan.bpk.go.id", help="host the PDFs came from")
     p.add_argument("--source-url", default="", help="where they can be found again "
                    "(default: https://<source>/)")
-    p.add_argument("--no-archive", action="store_true")
 
     p = sub.add_parser("manifest", help="print a manifest entry for a local file")
     p.add_argument("path", type=Path)
     p.add_argument("--source-url", required=True)
 
-    p = sub.add_parser("archive-retitle", help="rewrite archive.org titles (files untouched)")
-    p.add_argument("ids", nargs="+")
-
-    p = sub.add_parser("archive-delete", help="empty obsolete archive.org items we uploaded")
-    p.add_argument("items", nargs="+")
-
     args = parser.parse_args(argv)
-
-    if args.command == "fetch":
-        from .fetch import fetch_and_archive
-
-        pairs = _pairs(parser, args.pairs)
-        if args.title and len(pairs) > 1:
-            parser.error("--title can only be used with a single pair")
-        urls = dict(pairs)
-
-        def fetch(doc_id: str) -> str:
-            r = fetch_and_archive(urls[doc_id], doc_id, args.data_dir, args.title,
-                                  do_archive=not args.no_archive)
-            state = "skipped (unchanged)" if r.skipped else "archived"
-            return (f"{state}  {doc_id}  {urls[doc_id]}\n        sha256={r.entry.sha256} "
-                    f"bytes={r.entry.bytes}\n        {r.entry.archive_url}")
-
-        return _each(urls, fetch, args.delay)
 
     if args.command == "parse":
         from .akn.bluebell import to_bluebell
@@ -200,7 +146,7 @@ def main(argv: list[str] | None = None) -> int:
             cache.mkdir(parents=True, exist_ok=True)
         session, done, failed = Session(args.delay, state=cache and cache / "session.json"), 0, 0
         known = bpk.known_records(args.data_dir)
-        archived = bpk.archived_files(args.data_dir)
+        archived = bpk.archive_urls(args.data_dir)
         only = [i.strip() for i in args.only.split(",") if i.strip()]
 
         def items():
@@ -216,8 +162,7 @@ def main(argv: list[str] | None = None) -> int:
             for item in items():
                 try:
                     line = bpk.import_one(session, item, args.jenis, args.data_dir, known,
-                                          do_archive=not args.no_archive, cache=archived,
-                                          no_text=args.no_text)
+                                          cache=archived, no_text=args.no_text)
                 except Challenged:
                     raise
                 except Exception as e:  # noqa: BLE001 - keep going; the run is resumable
@@ -250,25 +195,12 @@ def main(argv: list[str] | None = None) -> int:
         print(f"done: {done} reparsed, {failed} failed")
         return 0
 
-    if args.command == "archive-pending":
-        from .fetch import fetch_and_archive, pending
-
-        todo = {p.version: p for p in pending(args.data_dir)[: args.limit]}
-        print(f"{len(todo)} PDF(s) to archive")
-
-        def archive_one(version: str) -> str:
-            p = todo[version]
-            r = fetch_and_archive(p.url, version, args.data_dir, p.title)
-            return f"archived {r.item}  {r.entry.archive_url}"
-
-        return _each(todo, archive_one, args.delay)
-
     if args.command == "import-pdf":
         from .uploads import import_pdf
 
         url = args.source_url or f"https://{args.source}/"
         return _each([str(p) for p in args.pdfs], lambda p: import_pdf(
-            Path(p), args.data_dir, args.source, url, do_archive=not args.no_archive))
+            Path(p), args.data_dir, args.source, url))
 
     if args.command == "relations":
         from .relations import build
@@ -281,17 +213,6 @@ def main(argv: list[str] | None = None) -> int:
 
         print(json.dumps(entry_for_file(args.path, args.source_url).to_dict(), indent=2))
         return 0
-
-    if args.command == "archive-retitle":
-        from .archive import retitle
-
-        return _each(args.ids, lambda i: f"retitled {i}\n        "
-                     f"{retitle(i, args.data_dir)['title']}")
-
-    if args.command == "archive-delete":
-        from .archive import empty_item
-
-        return _each(args.items, lambda i: f"emptied {i}: removed {empty_item(i) or 'nothing'}")
 
     return 0
 

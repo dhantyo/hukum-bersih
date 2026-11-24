@@ -32,7 +32,7 @@ cd web && npm ci && npm test && npm run build
 
 ## Ground rules
 
-- PDFs never go into git; they are archived on the Internet Archive and referenced by URL + sha256.
+- PDFs never go into git; only their URL and sha256 are recorded (copies archived on the Internet Archive before 2026-11-24 stay linked).
 - Every document carries provenance (`official`, `media`, `archive`, `leak`). Missing versions are recorded as missing, never reconstructed.
 - History in `data/` is never rewritten. Corrections are new commits.
 - Be polite to government servers: rate-limit, cache, identify the client.

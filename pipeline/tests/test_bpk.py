@@ -1,3 +1,4 @@
+import hashlib
 from pathlib import Path
 
 import pytest
@@ -90,13 +91,6 @@ def test_new_record():
     assert rec["tanggal_penetapan"] == "2026-06-17" and rec["status"] == "berlaku"
 
 
-def test_file_ids_skip_taken_names():
-    v = "uu_4_2009_2009-01-12"
-    assert bpk.file_ids(v, "uu_4_2009", 1, set()) == (v, f"{v}.pdf")
-    assert bpk.file_ids(v, "uu_4_2009", 1, {f"{v}.pdf"}) == (f"{v}_2", f"{v}_2.pdf")
-    assert bpk.file_ids(v, "uu_4_2009", 2, set()) == (f"{v}_2", f"{v}_2.pdf")
-
-
 class FakeResponse:
     def __init__(self, content: bytes, ctype: str):
         self.content, self.text = content, content.decode("latin-1")
@@ -141,7 +135,7 @@ def test_import_existing_record_keeps_text_and_records_pdf(tmp_path):
     item = bpk.Listing("/Details/38578/uu-no-4-tahun-2009", 38578)
     known: dict = {}
 
-    line = bpk.import_one(s, item, "uu", tmp_path, known, do_archive=False)
+    line = bpk.import_one(s, item, "uu", tmp_path, known)
     # BPK's PDF is tried with the current parser; this one has no pasal, so the old text stays
     assert line.startswith("ok   uu_4_2009: 1 PDF recorded; kept old text")
     out = yaml.safe_load((folder / "uu_4_2009.yaml").read_text())
@@ -154,7 +148,7 @@ def test_import_existing_record_keeps_text_and_records_pdf(tmp_path):
     assert m[0]["original_filename"] == "UU Nomor 4 Tahun 2009.pdf"
 
     n = len(s.calls)                       # resumes: nothing fetched again
-    assert bpk.import_one(s, item, "uu", tmp_path, known, do_archive=False).startswith("skip")
+    assert bpk.import_one(s, item, "uu", tmp_path, known).startswith("skip")
     assert len(s.calls) == n
 
 
@@ -163,7 +157,7 @@ def test_import_new_record(tmp_path):
 
     s = FakeSession("details_uu_5_2026.html", small_pdf())
     line = bpk.import_one(s, bpk.Listing("/Details/350096/uu-no-5-tahun-2026", 350096), "uu",
-                          tmp_path, {}, do_archive=False)
+                          tmp_path, {})
     assert line.startswith("ok   uu_5_2026: 1 PDF recorded; no pasal found")
     rec = yaml.safe_load((tmp_path / "peraturan/uu/2026/uu_5_2026/uu_5_2026.yaml").read_text())
     assert rec["source_url"].endswith("/Details/350096/uu-no-5-tahun-2026")
@@ -174,7 +168,7 @@ def test_not_a_pdf_fails_without_writing_manifest(tmp_path):
     s = FakeSession("details_uu_5_2026.html", b"<html>challenge</html>")
     with pytest.raises(RuntimeError, match="not a PDF"):
         bpk.import_one(s, bpk.Listing("/Details/350096/uu-no-5-tahun-2026", 350096), "uu",
-                       tmp_path, {}, do_archive=False)
+                       tmp_path, {})
     assert not (tmp_path / "sources").exists()
 
 
@@ -194,7 +188,7 @@ def test_no_text_leaves_record_without_text(tmp_path):
 
     s = FakeSession("details_uu_5_2026.html", small_pdf())
     line = bpk.import_one(s, bpk.Listing("/Details/350096/uu-no-5-tahun-2026", 350096), "uu",
-                          tmp_path, {}, do_archive=False, no_text=True)
+                          tmp_path, {}, no_text=True)
     assert line.endswith("PDFs only (no text step)")
     rec = yaml.safe_load((tmp_path / "peraturan/uu/2026/uu_5_2026/uu_5_2026.yaml").read_text())
     assert rec["versions"] == [] and "pdf_quality" not in rec
@@ -288,18 +282,14 @@ def test_printed_promulgation_date_wins_over_bpk(tmp_path):              # UU 25
     assert rec["tanggal_penetapan"] == "2007-04-26" and any("tanggal_penetapan_bpk" in n for n in notes)
 
 
-def test_archive_refusal_does_not_stop_the_law(tmp_path, monkeypatch):    # UU 19/2003
-    from hukum_bersih import archive
-
-    def refuse(*a, **k):
-        raise RuntimeError("error uploading x.pdf, Uploaded content is unacceptable. - pdf file looks like spam")
-
-    monkeypatch.setattr(archive, "upload", refuse)
-    s = FakeSession("details_uu_5_2026.html", small_pdf())
-    line = bpk.import_one(s, bpk.Listing("/Details/350096/uu-no-5-tahun-2026", 350096), "uu", tmp_path, {})
-    assert line.startswith("ok   uu_5_2026") and "archive.org refused" in line
+def test_known_archive_copy_keeps_its_link(tmp_path):    # copies archived before 2026-11-24
     import yaml
 
+    pdf = small_pdf()
+    sha = hashlib.sha256(pdf).hexdigest()
+    link = "https://archive.org/download/uu_5_2026/uu_5_2026_2026-06-17.pdf"
+    s = FakeSession("details_uu_5_2026.html", pdf)
+    bpk.import_one(s, bpk.Listing("/Details/350096/uu-no-5-tahun-2026", 350096), "uu", tmp_path, {},
+                   cache={sha: link})
     rec = yaml.safe_load((tmp_path / "peraturan/uu/2026/uu_5_2026/uu_5_2026.yaml").read_text())
-    assert rec["bpk"]["files"][0]["archive_refused"].startswith("pdf file looks like spam")
-    assert rec["bpk"]["files"][0]["sha256"]
+    assert rec["bpk"]["files"][0]["archive_url"] == link

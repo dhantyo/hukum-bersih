@@ -4,8 +4,8 @@ Writes, per regulation (docs/NAMING.md):
     data/peraturan/<jenis>/<tahun>/<jenis>_<nomor>_<tahun>/<id>.yaml
     data/peraturan/<jenis>/<tahun>/<id>/<id>_<date>.txt         (when the PDF parses)
 and a manifest line in data/sources/manifests/peraturan.go.id.jsonl. PDFs are not kept.
-Already imported regulations are skipped, so runs resume. No archive.org upload here (keys
-live in GitHub secrets); the fetch workflow can archive later from the manifest.
+Already imported regulations are skipped, so runs resume. Nothing is uploaded to archive.org
+(decision 0014).
 """
 
 from __future__ import annotations

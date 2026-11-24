@@ -1,13 +1,13 @@
-"""peraturan.bpk.go.id (Database Peraturan JDIH BPK): listing -> detail -> PDFs -> archive.org
-and the manifest -> text, the main source for regulations since 2026-11-21.
+"""peraturan.bpk.go.id (Database Peraturan JDIH BPK): listing -> detail -> PDFs -> the manifest
+(sha256) -> text, the main source for regulations since 2026-11-21.
 
 Per regulation (docs/NAMING.md):
     data/peraturan/<jenis>/<tahun>/<id>/<id>.yaml        record (created, or updated)
     data/peraturan/<jenis>/<tahun>/<id>/<version>.txt    text, when the record has none yet
-and per PDF one line in data/sources/manifests/peraturan.bpk.go.id.jsonl. Every PDF is
-archived on archive.org as soon as it is downloaded (nothing is downloaded and thrown away).
+and per PDF one line in data/sources/manifests/peraturan.bpk.go.id.jsonl (sha256; PDFs are not
+kept or uploaded anywhere since 2026-11-24, but copies archived earlier stay linked).
 
-Records imported earlier from peraturan.go.id keep their text: the BPK PDF is archived and
+Records imported earlier from peraturan.go.id keep their text: the BPK PDF is
 parsed for comparison only (``bpk.pasal_count``); switching texts is a separate decision.
 Their peraturan.go.id links move to ``other_sources``. Metadata already in a record is never
 overwritten with a blank, and a differing date is recorded next to ours, not swapped in.
@@ -232,7 +232,7 @@ def record_path(data_dir: Path, work: str) -> Path:
 
 
 def files_done(rec: dict) -> bool:
-    """Every BPK file of the record is downloaded and archived (or recorded, without keys)."""
+    """Every BPK file of the record is downloaded and its hash recorded."""
     files = (rec.get("bpk") or {}).get("files") or []
     return bool(files) and all(f.get("sha256") for f in files)
 
@@ -299,33 +299,18 @@ def retext(pdf: Path, rec: dict, folder: Path, extra: list[Path] | None = None) 
     return note
 
 
-# ---- archive.org ---------------------------------------------------------------------------
+# ---- copies archived earlier ---------------------------------------------------------------
 
-def archived_files(data_dir: Path) -> tuple[dict[str, str], dict[str, set[str]]]:
-    """From the manifests: sha256 -> archive_url, and archive.org item -> file names taken."""
+def archive_urls(data_dir: Path) -> dict[str, str]:
+    """From the manifests: sha256 -> archive_url of copies archived before 2026-11-24, so a file
+    already there keeps its link."""
     from ..manifest import records
 
-    by_sha, taken = {}, {}
+    out = {}
     for r in records(data_dir):
-        url = r.get("archive_url")
-        if not url:
-            continue
-        by_sha.setdefault(r["sha256"], url)
-        m = re.match(r"https://archive\.org/download/([^/]+)/(.+)$", url)
-        if m:
-            taken.setdefault(m[1], set()).add(m[2])
-    return by_sha, taken
-
-
-def file_ids(version: str, item: str, n: int, taken: set[str]) -> tuple[str, str]:
-    """(doc id, file name) for the ``n``-th file of a version (1-based): the version id, then
-    ``_2``, ``_3`` … (docs/NAMING.md); a name already used in the item by another file moves on."""
-    k = n
-    while True:
-        doc_id = version if k == 1 else f"{version}_{k}"
-        if f"{doc_id}.pdf" not in taken:
-            return doc_id, f"{doc_id}.pdf"
-        k += 1
+        if r.get("archive_url"):
+            out.setdefault(r["sha256"], r["archive_url"])
+    return out
 
 
 # ---- import --------------------------------------------------------------------------------
@@ -406,13 +391,11 @@ def find(session, work: str) -> Listing:
 
 
 def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[int, Path],
-               do_archive: bool = True, cache: tuple | None = None, no_text: bool = False) -> str:
-    """Fetch one detail page, update or create the record, download + archive its PDFs, and
+               cache: dict[str, str] | None = None, no_text: bool = False) -> str:
+    """Fetch one detail page, update or create the record, download its PDFs (hash recorded), and
     convert the main PDF when the record has no text (not with ``no_text``: PDFs only, e.g.
     to collect samples while the parser is being fixed). ``known``: bpk id -> record path."""
-    from .. import archive
     from ..manifest import entry_for_file, manifest_path
-    from ..naming import archive_item
 
     path = known.get(item.bpk_id)
     if path and done(load_record(path)):
@@ -435,11 +418,9 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
     if not d["files"]:
         return f"ok   {work}: no PDF on BPK" + "".join(f"; {n}" for n in notes)
 
-    by_sha, taken = cache or archived_files(data_dir)
+    by_sha = archive_urls(data_dir) if cache is None else cache
     texts = [v for v in rec.get("versions") or [] if v.get("text")]
     version = texts[0]["id"] if texts else f"{work}_{rec.get('tanggal_penetapan') or rec['year']}"
-    item_id = archive_item(version)
-    out = []
     with tempfile.TemporaryDirectory() as tmp:
         main_pdf, penjelasan = None, []
         for n, f in enumerate(rec["bpk"]["files"], start=1):
@@ -447,49 +428,26 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
             content, mirror_note = download(session, f, data_dir)
             pdf.write_bytes(content)
             entry = entry_for_file(pdf, f["url"], None, None, f["filename"])
-            archive_url = by_sha.get(entry.sha256)
-            doc_id, repaired = None, None
-            if archive_url is None and do_archive:
-                doc_id, filename = file_ids(version, item_id, n, taken.setdefault(item_id, set()))
-                try:
-                    repaired = archive.upload(pdf, doc_id, filename, f["url"], f["filename"], data_dir,
-                                              rec.get("title"))
-                    archive_url = f"https://archive.org/download/{item_id}/{filename}"
-                    taken[item_id].add(filename)
-                    by_sha[entry.sha256] = archive_url
-                except Exception as e:
-                    if "unacceptable" not in str(e).lower():
-                        raise
-                    # archive.org refuses some files outright ("pdf file looks like spam", UU 19/2003);
-                    # the law is still imported, the file recorded and flagged for another store
-                    reason = re.sub(r"\s+", " ", str(e)).split("unacceptable", 1)[-1].strip(" .-")[:120]
-                    f["archive_refused"] = reason
-                    notes.append(f"archive.org refused {f['filename']}: {reason}")
-            doc_id = doc_id or (version if n == 1 else f"{version}_{n}")
+            archive_url = by_sha.get(entry.sha256)   # a copy archived before 2026-11-24
+            doc_id = version if n == 1 else f"{version}_{n}"
             entry = entry_for_file(pdf, f["url"], archive_url, doc_id, f["filename"])
             if mirror_note:
                 from dataclasses import replace
                 entry = replace(entry, note=mirror_note)
                 f["fetched_from"] = mirror_note
-            if repaired:
-                from dataclasses import replace
-                entry = replace(entry, archived_sha256=repaired.sha256, note=repaired.note)
             manifest = manifest_path(data_dir, f["url"])
             manifest.parent.mkdir(parents=True, exist_ok=True)
             with manifest.open("a") as fh:
                 fh.write(json.dumps(entry.to_dict(), ensure_ascii=False) + "\n")
             f.update(sha256=entry.sha256, bytes=entry.bytes, archive_url=archive_url)
-            if repaired:
-                f["archived_sha256"] = repaired.sha256
             if is_penjelasan(f):
                 penjelasan.append(pdf)
             else:
                 main_pdf = main_pdf or pdf
-            out.append("archived" if archive_url else "recorded")
         note = "PDFs only (no text step)" if no_text else retext(main_pdf or penjelasan.pop(0), rec, path.parent, penjelasan)
         notes += check_dates(rec, path.parent)
     save_record(path, rec)
-    return (f"ok   {work}: {len(out)} PDF {'/'.join(sorted(set(out)))}; {note}"
+    return (f"ok   {work}: {len(rec['bpk']['files'])} PDF recorded; {note}"
             + "".join(f"; {n}" for n in notes))
 
 

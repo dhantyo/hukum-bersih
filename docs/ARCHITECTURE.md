@@ -5,8 +5,7 @@ Git is the source of truth; everything else is generated from it.
 ```
  government sites ─┐
  Wayback Machine  ─┤  pipeline/ (Python)
-                   ├─► fetch ──► archive.org (original PDFs, named by id)
-                   │            └► data/sources/manifests/*.jsonl (url, sha256, archive url)
+                   ├─► download ─► data/sources/manifests/*.jsonl (url, sha256; the PDF is not kept)
                    └─► parse ──► data/**/<id>.txt (Bluebell text) + YAML records
                                           │  git push
                                           ▼
@@ -21,7 +20,7 @@ Git is the source of truth; everything else is generated from it.
 | Path | What | License |
 |---|---|---|
 | `data/` | Source of truth: texts (Bluebell), YAML records, source manifests. No PDFs. | CC0 |
-| `pipeline/` | Python package `hukum_bersih`: fetch, archive, PDF parsing, Akoma Ntoso | AGPL-3.0 |
+| `pipeline/` | Python package `hukum_bersih`: BPK import, PDF parsing, Akoma Ntoso | AGPL-3.0 |
 | `web/` | Astro site: reads Akoma Ntoso XML, renders laws, RUU pages and comparisons | AGPL-3.0 |
 | `docs/` | Brief, naming rule, this file, decision records | AGPL-3.0 |
 
@@ -46,10 +45,9 @@ Names follow [NAMING.md](NAMING.md).
 | Module | Job |
 |---|---|
 | `sources/` | One module per upstream site (`http.py` shared: User-Agent, retries; `wayback.py`). `peraturan_bpk.py` (main source since 2026-11-21) with `bpk_session.py` (Cloudflare: Scrapling browser once, then curl_cffi); `peraturan_go_id.py` (earlier imports; `convert_pdf` is shared) |
-| `fetch.py` | Download → archive.org → manifest line; skips unchanged files by sha256 |
-| `archive.py` | archive.org upload, retitle, empty obsolete items |
-| `manifest.py` | Source manifest records |
-| `naming.py` | Ids and titles (NAMING.md) |
+| `uploads.py` | Hand-downloaded PDFs (from a GitHub release) → manifest line (sha256) + text |
+| `manifest.py` | Source manifest records (sha256 per downloaded file; `archive_url` only on lines from before 2026-11-24) |
+| `naming.py` | Id validation (NAMING.md) |
 | `records.py` | The schema of a law record (Pydantic, `extra="forbid"`, strict types). `load_record` / `save_record` are the only way to read and write `data/peraturan/**/<id>.yaml`: records stay dicts, `save_record` validates and then dumps the same dict (`allow_unicode`, no key sorting), so a misspelt key or a wrong type fails before anything is written. A new field is added here first |
 | `pdf/extract.py` | PDF → cleaned lines (headers, page numbers, footers, signature boxes removed) |
 | `pdf/ocr_cache.py` | The engine's raw OCR of each scanned page, kept by the PDF's sha256 + engine + DPI + `OCR_CACHE_VERSION` in `$HUKUM_BERSIH_OCR_CACHE` (default `~/.cache/hukum-bersih/ocr`, `<engine>/<sha256>.json.gz`; `off` disables), so a page is OCR'd once, ever; the spell fix is not cached. Workflows keep it between runs with `.github/actions/ocr-cache` |
@@ -59,7 +57,7 @@ Names follow [NAMING.md](NAMING.md).
 | `akn/build.py` | Bluebell → Akoma Ntoso XML (Laws.Africa's `bluebell` parser) |
 | `relations.py` | Amends / revokes / enacts links from titles, plus the pasal an amending law changes (from its text) → `relationships` in each record ([decision 0008](decisions/0008-law-history.md)) |
 | `amendments.py` | An amending law's Pasal I → numbered instructions and the new wording of each pasal (JSON for the "Perubahan" page) |
-| `cli.py` | `hukum-bersih fetch / parse / build-akn / relations / archive-*` |
+| `cli.py` | `hukum-bersih parse / build-akn / import-bpk / import-peraturan / reparse-bpk / import-pdf / relations / manifest` |
 
 ### web/src/
 
@@ -83,14 +81,12 @@ Names follow [NAMING.md](NAMING.md).
 |---|---|---|
 | `ci.yml` | every push | pipeline lint + tests; build AKN; web tests (incl. M1 check) + build; no PDFs in git |
 | `deploy.yml` | push to default branch | build AKN + site, deploy to Cloudflare Pages |
-| `fetch.yml` | manual | fetch + archive `id URL` pairs, commit manifest lines |
-| `archive-retitle.yml` | manual | rewrite archive.org titles/descriptions |
-| `archive-delete.yml` | manual | empty obsolete archive.org items |
-| `import-bpk.yml` | manual (schedule paused 2026-11-21 until the parser is fixed; normally every 6 h) | `mode: import`: BPK metadata, every PDF archived as downloaded (Hugging Face mirror if BPK's download fails), text from BPK's PDF with the current parser, never replacing a text with one that has fewer pasal. `mode: reparse`: texts re-converted from our archive.org copies (hash-checked), no BPK. `only`, `no_text` for samples |
-| `parser-regression.yml` | push touching the parser + manual | the 19-law regression set (`pipeline/tests/regression.yaml`, fails on any law off) and a random survey of UU from the mirror | import from peraturan.bpk.go.id in batches of 50: metadata, every PDF archived on archive.org as it is downloaded, text for records without one; resumes; recomputes relationships after each batch |
+| `import-bpk.yml` | manual (schedule paused 2026-11-21 until the parser is fixed; normally every 6 h) | `mode: import`: BPK metadata, every PDF's sha256 recorded (Hugging Face mirror if BPK's download fails; nothing is uploaded to archive.org since 2026-11-24, the `archive` input is ignored), text from BPK's PDF with the current parser, never replacing a text with one that has fewer pasal. `mode: reparse`: texts re-converted from our archive.org copies (hash-checked), no BPK. `only`, `no_text` for samples |
+| `parser-regression.yml` | push touching the parser + manual | the 19-law regression set (`pipeline/tests/regression.yaml`, fails on any law off) and a random survey of UU from the mirror |
 | `import-peraturan.yml` | manual (schedule removed 2026-11-21) | import from peraturan.go.id (answers only Indonesian IPs: needs WG_INDONESIA) |
-| `archive-pending.yml` | manual (schedule removed 2026-11-21) | archive peraturan.go.id PDFs that were recorded but not archived (skips BPK ones) |
+| `import-uploads.yml` | manual | PDFs attached to a GitHub release → manifest line (sha256) + text (`import-pdf`) |
 | `probe-sources.yml` | manual | which sources a GitHub runner can reach |
+| ~~`fetch.yml`, `archive-pending.yml`, `archive-retitle.yml`, `archive-delete.yml`~~ | removed 2026-11-24 ([decision 0014](decisions/0014-no-archive-uploads.md)) | download + upload to archive.org, retitle, delete |
 | ~~`probe-bpk.yml`, `explore-bpk.yml`, `probe-bpk-app.yml`~~ | removed 2026-11-24 (last in c3332cfb) | one-off probes: which tool passes BPK's Cloudflare check (Scrapling won, `sources/bpk_session.py`); sample BPK pages (now `pipeline/tests/fixtures/bpk/`); BPK's Android app (never got the APK) |
 
 Where things run: everything recurring runs on GitHub Actions (no Claude session or personal
@@ -109,7 +105,7 @@ evening) peraturan.go.id. See CLAUDE.md for the latest findings.
 | Matching reworded ayat, finding where text went | TF-IDF cosine similarity (standard information-retrieval weighting) | common legal words weigh little; a pointer is shown only for a clear best match |
 | Comparison layout | Synopsis / DIM-style side-by-side table | [decision 0006](decisions/0006-comparison-as-synopsis.md); `xmldiff` tried and rejected |
 | XML in the browser build | `@xmldom/xmldom` | |
-| archive.org | `internetarchive` | |
+| archive.org | (nothing: no uploads since 2026-11-24, [decision 0014](decisions/0014-no-archive-uploads.md)); existing copies are read with `urllib` | `internetarchive` and `pikepdf` dependencies removed |
 | PDF text | PyMuPDF | |
 | OCR of scanned pages | Indra OCR (`indra-ocr`, CPU; Tesseract `ind` as fallback) | [decision 0012](decisions/0012-indra-ocr.md): checked on hand-typed ground truth against Tesseract (Ubuntu and `tessdata_best`), PaddleOCR (server, mobile/RapidOCR, VL), GLM-OCR, MinerU2.5-Pro, markitdown |
 | Lookalike letters in OCR'd words (ı, Greek/Cyrillic) | `confusable-homoglyphs` (Unicode UTS #39 `confusables.txt` data, MIT) | checked: `confusables` (normalizes whole strings with several readings, no per-letter mapping), PyICU spoof checker (needs system ICU, only reports, does not map), `confusables.txt` by hand (the package ships the same data with a lookup). Applied only inside words with a Latin letter ([decision 0013](decisions/0013-ocr-spell-fix.md)) |
