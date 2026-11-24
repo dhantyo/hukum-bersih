@@ -34,7 +34,7 @@ jobs:
         with:
           step: restore
           path: ${{ env.HUKUM_BERSIH_OCR_CACHE }}
-      - name: Tesseract for scanned PDFs
+      - name: OCR tools for scanned PDFs (Indra reads them, Tesseract is the fallback)
         run: sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ind hunspell hunspell-id hunspell-en-us >/dev/null
       - run: |
           uv sync --extra ocr
