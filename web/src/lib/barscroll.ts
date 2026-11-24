@@ -14,9 +14,11 @@ export function nextBarOffset(offset: number, prevTop: number, top: number, heig
   return Math.min(next, top);
 }
 
-/** Where a half-hidden header comes to rest once the scroll stops: hidden if mostly hidden and
- * past the header's own height, else shown. */
-export function settledBarOffset(offset: number, top: number, height: number): number {
+/** Where a half-hidden header comes to rest once the scroll stops: shown if the last movement
+ * was upward (the reader was bringing it back; added here, Sapu Berita settles by position
+ * only), else hidden if mostly hidden and past the header's own height, else shown. */
+export function settledBarOffset(offset: number, top: number, height: number, lastDirection = 0): number {
   if (offset <= 0 || offset >= height) return offset;
+  if (lastDirection < 0) return 0;
   return offset > height / 2 && top > height ? height : 0;
 }

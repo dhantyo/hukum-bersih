@@ -16,3 +16,8 @@ test("a half-hidden header settles", () => {
   assert.equal(settledBarOffset(40, 50, 60), 0);       // still within the header's height: show
   assert.equal(settledBarOffset(60, 800, 60), 60);     // already settled
 });
+
+test("a header the reader was pulling back settles shown", () => {
+  assert.equal(settledBarOffset(40, 800, 60, -1), 0);   // last moved up: show even if mostly hidden
+  assert.equal(settledBarOffset(40, 800, 60, 1), 60);   // last moved down: hide
+});

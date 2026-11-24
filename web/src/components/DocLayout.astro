@@ -33,12 +33,12 @@ const Chevrons = (dir: "left" | "right") => `<svg viewBox="0 0 16 16" width="16"
   <div data-pagefind-ignore><slot name="head" /></div>
 </header>
 <div class="doc">
-  <div class="rail" data-pagefind-ignore>
+  <div class="rail" data-pagefind-ignore data-under-header>
     <button type="button" class="rail-btn" data-panel-show aria-controls="panel" aria-expanded="false">
       <Fragment set:html={Chevrons("right")} /><span class="visually-hidden">Tampilkan panel ({panelLabel.toLowerCase()})</span>
     </button>
   </div>
-  <aside class="panel" id="panel" aria-label={panelLabel} data-pagefind-ignore>
+  <aside class="panel" id="panel" aria-label={panelLabel} data-pagefind-ignore data-under-header>
     <div class="panel-bar">
       <span class="panel-name">{panelLabel}</span>
       <button type="button" class="panel-hide" data-panel-hide aria-controls="panel">
@@ -200,7 +200,7 @@ const Chevrons = (dir: "left" | "right") => `<svg viewBox="0 0 16 16" width="16"
   }
   /* while the header follows the finger, sticky things follow it exactly (Base.astro) */
   @media (min-width: 961px) {
-    :global(:root[data-header-tracking]) .panel, :global(:root[data-header-tracking]) .rail { transition: none; }
+    .panel.tracking, .rail.tracking { transition: none; }
   }
   :global(:root[data-panel="hidden"]) .doc-main { justify-self: center; width: min(100%, var(--measure)); }
   /* comparing versions (CompareMode.astro): the text takes the width. Below 1500px the panel

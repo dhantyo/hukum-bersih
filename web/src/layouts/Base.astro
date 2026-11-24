@@ -94,32 +94,50 @@ const nav = [
       // hidden. It stays while "Aa" is open or focus is inside it, and tucks away when a link
       // jumps within the page. --header-shown (px of it on screen) lets sticky things sit below it.
       import { nextBarOffset, settledBarOffset } from "../lib/barscroll.ts";
-      const root = document.documentElement;
       const header = document.querySelector<HTMLElement>("header.site");
       if (header) {
-        let offset = 0, lastTop = scrollY, frame = 0;
+        // Per frame only the header and the few sticky things under it ([data-under-header]) are
+        // written to, and only when a value changes: writing to the root restyles the whole page
+        // (3.4ms a frame on a merged law on desktop, several times that on phones).
+        let offset = 0, lastTop = scrollY, dir = 0, frame = 0, height = header.offsetHeight, tracking = false;
+        let shown = -1, followers: HTMLElement[] = [];
         let settle: ReturnType<typeof setTimeout> | undefined;
-        const height = () => header.offsetHeight;
+        // sticky things can be added by script later (comparison head rows): looked up again
+        // whenever the header settles, not per frame
+        const findFollowers = () => {
+          const now = [...document.querySelectorAll<HTMLElement>("[data-under-header]")];
+          if (now.length !== followers.length || now.some((e, i) => e !== followers[i])) { followers = now; shown = -1; }
+        };
         const held = () => !!header.querySelector("details[open]") || header.contains(document.activeElement);
+        const maxTop = () => document.documentElement.scrollHeight - innerHeight;
+        const setTracking = (on: boolean) => {
+          if (on === tracking) return;
+          tracking = on;
+          for (const e of [header, ...followers]) e.classList.toggle("tracking", on);
+        };
         /** glide: animate to `offset` (settling); otherwise follow the scroll exactly */
         const place = (glide: boolean) => {
-          root.toggleAttribute("data-header-tracking", !glide);
+          setTracking(!glide);
           header.style.transform = offset ? `translateY(${-offset}px)` : "";
-          header.toggleAttribute("data-hidden", offset >= height());
-          root.style.setProperty("--header-shown", `${Math.max(0, height() - offset)}px`);
+          header.toggleAttribute("data-hidden", offset >= height);
+          const px = Math.max(0, height - offset);
+          if (px !== shown) { shown = px; for (const e of followers) e.style.setProperty("--header-shown", `${px}px`); }
         };
-        const to = (next: number) => { offset = next; place(true); };
+        const to = (next: number) => { offset = next; findFollowers(); place(true); };
         const follow = () => {
           frame = 0;
-          const top = scrollY;
+          // the rubber band past either end of the page is not a scroll
+          const top = Math.min(Math.max(0, scrollY), Math.max(0, maxTop()));
+          if (top === lastTop) return;
           if (held()) { if (offset) to(0); lastTop = top; return; }
-          offset = nextBarOffset(offset, lastTop, top, height());
+          dir = Math.sign(top - lastTop);
+          offset = nextBarOffset(offset, lastTop, top, height);
           lastTop = top;
           place(false);
           clearTimeout(settle);
           settle = setTimeout(() => {
-            const s = settledBarOffset(offset, scrollY, height());
-            if (s !== offset) to(s); else root.removeAttribute("data-header-tracking");
+            const s = settledBarOffset(offset, lastTop, height, dir);
+            if (s !== offset) to(s); else { setTracking(false); findFollowers(); place(true); }
           }, 140);
         };
         addEventListener("scroll", () => { if (!frame) frame = requestAnimationFrame(follow); }, { passive: true });
@@ -128,9 +146,16 @@ const nav = [
         // a jump within the page (contents, "#" links): out of the way of what was jumped to
         addEventListener("hashchange", () => requestAnimationFrame(() => {
           lastTop = scrollY;
-          if (scrollY > height()) to(height());
+          if (scrollY > height) to(height);
         }));
-        addEventListener("resize", () => place(true));
+        // the header's height changes with the window (phones: also while the browser's own
+        // toolbar collapses mid-scroll): measure again, but don't interrupt following the finger
+        new ResizeObserver(() => {
+          const h = header.offsetHeight;
+          if (h === height) return;
+          height = h; offset = Math.min(offset, h); shown = -1; place(!tracking);
+        }).observe(header);
+        findFollowers();
         place(true);
       }
     </script>
@@ -144,7 +169,7 @@ const nav = [
     border-bottom: 1px solid var(--line); background: var(--bg);
     position: sticky; top: 0; z-index: 15; transition: transform 0.24s ease-out; will-change: transform;
   }
-  :global(:root[data-header-tracking]) header.site { transition: none; }
+  header.site.tracking { transition: none; }
   /* fully away: out of the tab order too, once the slide has finished */
   header.site[data-hidden] { visibility: hidden; transition: transform 0.24s ease-out, visibility 0s 0.24s; }
   @media (prefers-reduced-motion: reduce) { header.site { transition: none; } }

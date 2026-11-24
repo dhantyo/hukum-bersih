@@ -161,6 +161,7 @@ const { data } = Astro.props;
       const cols = chosen.map((id) => ids.indexOf(id));
       grid.style.setProperty("--cols", String(cols.length));
       const head = el("div", "row head");
+      head.dataset.underHeader = "";
       for (const vi of cols) {
         const v = V[vi];
         head.append(el("div", "cell", el("strong", "", v.label), v.date ? el("span", "muted", ` · ${v.date}`) : ""));
