@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_2024_2026-07-02.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ea7689a9f67cf5ce72d66a38b22da114b231e9b2afa0fe617df4f439b43773d4
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 26
 pdf_sha256: ea7689a9f67cf5ce72d66a38b22da114b231e9b2afa0fe617df4f439b43773d4
 tanggal_penetapan_bpk: '2024-07-02'
 tanggal_pengundangan: '2024-07-02'

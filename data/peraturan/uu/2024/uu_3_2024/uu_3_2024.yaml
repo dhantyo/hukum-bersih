@@ -58,10 +58,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2024_2024-04-25.txt
   pasal_count: 2
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2f3bd5079b792cb82af35f51874b37a951f6425895cc8f6dddb712e653f1e010
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 14
 pdf_sha256: 2f3bd5079b792cb82af35f51874b37a951f6425895cc8f6dddb712e653f1e010
 tanggal_pengundangan: '2024-04-25'
 tanggal_berlaku: '2024-04-25'

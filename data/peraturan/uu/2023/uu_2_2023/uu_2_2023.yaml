@@ -34,10 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2023_2023-01-03.txt
   pasal_count: 2
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2e9dbd9eb7e03046526a1322afbafeb4e1828adea4afab498ca815e28ba9c190
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 6
 pdf_sha256: 2e9dbd9eb7e03046526a1322afbafeb4e1828adea4afab498ca815e28ba9c190
 tanggal_pengundangan: '2023-01-03'
 tanggal_berlaku: '2023-01-03'
