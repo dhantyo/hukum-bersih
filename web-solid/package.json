@@ -12,6 +12,7 @@
     "test": "vitest",
     "corpus-release": "node scripts/corpus-release.mjs",
     "index-corpus": "node scripts/index-corpus.mjs",
+    "export-collections": "node --experimental-strip-types scripts/export-collections.ts",
     "export-catalog": "node --experimental-strip-types scripts/export-catalog.ts",
     "export-law": "node --experimental-strip-types scripts/export-law.ts",
     "check": "ultracite check",

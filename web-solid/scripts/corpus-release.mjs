@@ -80,6 +80,9 @@ async function publishRelease(scratch, source) {
   await mkdir(directory);
   await Promise.all(['laws', 'pagefind', 'law-catalog.json'].map((group) =>
     cp(join(source, group), join(directory, group), { recursive: true })));
+  for await (const group of glob('collections', { cwd: source })) {
+    await cp(join(source, group), join(directory, group), { recursive: true });
+  }
   await validateRelease(directory);
   const release = await releaseDigest(directory);
   await writeFile(join(directory, readyFile), `${release}\n`, { flag: 'wx' });

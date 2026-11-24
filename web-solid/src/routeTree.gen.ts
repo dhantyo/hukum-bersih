@@ -11,6 +11,8 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CariRouteImport } from './routes/cari'
+import { Route as KoleksiIndexRouteImport } from './routes/koleksi.index'
+import { Route as KoleksiSlugRouteImport } from './routes/koleksi.$slug'
 import { Route as UuIndexRouteImport } from './routes/uu.index'
 import { Route as UuNomorTahunRouteImport } from './routes/uu.$nomor.$tahun'
 import { Route as UuTahunTahunRouteImport } from './routes/uu.tahun.$tahun'
@@ -24,6 +26,16 @@ const IndexRoute = IndexRouteImport.update({
 const CariRoute = CariRouteImport.update({
   id: '/cari',
   path: '/cari',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KoleksiIndexRoute = KoleksiIndexRouteImport.update({
+  id: '/koleksi/',
+  path: '/koleksi/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KoleksiSlugRoute = KoleksiSlugRouteImport.update({
+  id: '/koleksi/$slug',
+  path: '/koleksi/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const UuIndexRoute = UuIndexRouteImport.update({
@@ -50,6 +62,8 @@ const UuNomorTahunPerubahanRoute = UuNomorTahunPerubahanRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/cari': typeof CariRoute
+  '/koleksi/$slug': typeof KoleksiSlugRoute
+  '/koleksi/': typeof KoleksiIndexRoute
   '/uu/': typeof UuIndexRoute
   '/uu/$nomor/$tahun': typeof UuNomorTahunRoute
   '/uu/tahun/$tahun': typeof UuTahunTahunRoute
@@ -58,6 +72,8 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/cari': typeof CariRoute
+  '/koleksi/$slug': typeof KoleksiSlugRoute
+  '/koleksi': typeof KoleksiIndexRoute
   '/uu': typeof UuIndexRoute
   '/uu/$nomor/$tahun': typeof UuNomorTahunRoute
   '/uu/tahun/$tahun': typeof UuTahunTahunRoute
@@ -67,6 +83,8 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/cari': typeof CariRoute
+  '/koleksi/$slug': typeof KoleksiSlugRoute
+  '/koleksi/': typeof KoleksiIndexRoute
   '/uu/': typeof UuIndexRoute
   '/uu/$nomor/$tahun': typeof UuNomorTahunRoute
   '/uu/tahun/$tahun': typeof UuTahunTahunRoute
@@ -77,6 +95,8 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/cari'
+    | '/koleksi/$slug'
+    | '/koleksi/'
     | '/uu/'
     | '/uu/$nomor/$tahun'
     | '/uu/tahun/$tahun'
@@ -85,6 +105,8 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/cari'
+    | '/koleksi/$slug'
+    | '/koleksi'
     | '/uu'
     | '/uu/$nomor/$tahun'
     | '/uu/tahun/$tahun'
@@ -93,6 +115,8 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/cari'
+    | '/koleksi/$slug'
+    | '/koleksi/'
     | '/uu/'
     | '/uu/$nomor/$tahun'
     | '/uu/tahun/$tahun'
@@ -102,6 +126,8 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CariRoute: typeof CariRoute
+  KoleksiSlugRoute: typeof KoleksiSlugRoute
+  KoleksiIndexRoute: typeof KoleksiIndexRoute
   UuIndexRoute: typeof UuIndexRoute
   UuNomorTahunRoute: typeof UuNomorTahunRoute
   UuTahunTahunRoute: typeof UuTahunTahunRoute
@@ -122,6 +148,20 @@ declare module '@tanstack/solid-router' {
       path: '/cari'
       fullPath: '/cari'
       preLoaderRoute: typeof CariRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/koleksi/': {
+      id: '/koleksi/'
+      path: '/koleksi'
+      fullPath: '/koleksi/'
+      preLoaderRoute: typeof KoleksiIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/koleksi/$slug': {
+      id: '/koleksi/$slug'
+      path: '/koleksi/$slug'
+      fullPath: '/koleksi/$slug'
+      preLoaderRoute: typeof KoleksiSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/uu/': {
@@ -158,6 +198,8 @@ declare module '@tanstack/solid-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CariRoute: CariRoute,
+  KoleksiSlugRoute: KoleksiSlugRoute,
+  KoleksiIndexRoute: KoleksiIndexRoute,
   UuIndexRoute: UuIndexRoute,
   UuNomorTahunRoute: UuNomorTahunRoute,
   UuTahunTahunRoute: UuTahunTahunRoute,

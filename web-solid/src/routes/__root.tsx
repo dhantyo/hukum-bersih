@@ -7,6 +7,7 @@ export const Route = createRootRoute({
     <nav class="site-nav" aria-label="Navigasi utama">
       <Link to="/">Hukum Bersih</Link>
       <Link to="/uu/">Undang-Undang</Link>
+      <Link to="/koleksi/">Koleksi</Link>
       <Link to="/cari/">Cari</Link>
     </nav>
     <Outlet />
