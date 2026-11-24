@@ -2,6 +2,7 @@
 // Table of contents from an Akoma Ntoso body: BAB with title and pasal range; pasal links when
 // a law has no BAB. Current section is highlighted by the script below.
 import type { AknNode, LawDoc } from "../lib/lawdoc.ts";
+import { modernHeading } from "../lib/display.ts";
 
 interface Props { doc: LawDoc }
 const { doc } = Astro.props;
@@ -21,15 +22,15 @@ const range = (arts: AknNode[]) =>
       return (
         <li>
           <a href={`#${c.eId}`}>
-            <span class="toc-label">BAB {c.num}</span>{" "}
-            {c.heading && <><span class="toc-title">{c.heading}</span>{" "}</>}
+            <span class="toc-label"><span class="f-asli">BAB {c.num}</span><span class="f-modern">Bab {c.num}</span></span>{" "}
+            {c.heading && <><span class="toc-title"><span class="f-asli">{c.heading}</span><span class="f-modern">{modernHeading(c.heading)}</span></span>{" "}</>}
             {range(arts) && <span class="toc-range">{range(arts)}</span>}
           </a>
         </li>
       );
     })}
     {loose.map((a) => <li><a href={`#${a.eId}`}><span class="toc-label">Pasal {a.num}</span></a></li>)}
-    {doc.penjelasan.length > 0 && <li><a href="#penjelasan"><span class="toc-label">Penjelasan</span></a></li>}
+    {doc.penjelasan.length > 0 && <li class="toc-pj"><a href="#penjelasan"><span class="toc-label">Penjelasan</span></a></li>}
   </ol>
 </nav>
 
@@ -66,6 +67,7 @@ const range = (arts: AknNode[]) =>
   .toc-title { display: block; }
   .toc-range { display: block; font-size: var(--fs-xs); color: var(--text-muted); }
   .toc ol { columns: 1; }
+  :global(:root[data-penjelasan="sembunyi"]) .toc-pj { display: none; }
   @media (max-width: 960px) {
     .toc ol { max-height: 20rem; overflow-y: auto; }
     .toc a { padding-top: var(--s-3); padding-bottom: var(--s-3); }

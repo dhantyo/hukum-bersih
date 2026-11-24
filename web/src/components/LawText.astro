@@ -1,7 +1,12 @@
 ---
-// A law or draft rendered from Akoma Ntoso (lib/lawdoc.ts).
+// A law or draft rendered from Akoma Ntoso (lib/lawdoc.ts), in the reader's view (DESIGN.md
+// "Law text"): Format Asli (as printed) or Modern (screen layout), Penjelasan at the end, under
+// each pasal or hidden, "Cukup jelas" shown or hidden, parts shown or hidden. The choices are
+// attributes on <html> (components/ViewSettings.astro), applied before first paint, so the page
+// is rendered once and CSS does the switching.
 import AknNode, { type PasalNote } from "./AknNode.astro";
 import type { AknNode as Node, LawDoc } from "../lib/lawdoc.ts";
+import { pasalKey } from "../lib/display.ts";
 
 interface Props { doc: LawDoc; notes?: Map<string, PasalNote[]> }
 const { doc, notes } = Astro.props;
@@ -11,62 +16,289 @@ const aliases = new Map<string, string>();
 const taken = new Set<string>();
 const walk = (n: Node) => {
   if (n.tag === "article" && n.num && n.eId) {
-    const a = `pasal-${n.num.toLowerCase().replace(/[^0-9a-z]+/g, "")}`;
+    const a = `pasal-${pasalKey(n.num)}`;
     if (!taken.has(a)) { taken.add(a); aliases.set(n.eId, a); }
   }
   n.children.forEach(walk);
 };
 doc.body.forEach(walk);
+
+// What the opening contains, for its folded summary in Modern: "Menimbang (7) · Mengingat (3)"
+const opening: string[] = [];
+doc.preamble.forEach((n, i) => {
+  const m = n.tag === "p" ? (n.text ?? "").match(/^(Menimbang|Mengingat|Memperhatikan)\b/i) : null;
+  if (!m) return;
+  const next = doc.preamble[i + 1];
+  const count = next && next.tag === "blockList" ? next.children.length : 0;
+  opening.push(count ? `${m[1]} (${count})` : m[1]);
+});
 ---
-<article class="law">
-  <div class="akn-preface">{doc.preface.map((n) => <AknNode node={n} />)}</div>
-  <div class="akn-preamble">{doc.preamble.map((n) => <AknNode node={n} />)}</div>
-  <div class="akn-body">{doc.body.map((n) => <AknNode node={n} notes={notes} aliases={aliases} />)}</div>
-  {doc.conclusions.length > 0 && <div class="akn-conclusions">{doc.conclusions.map((n) => <AknNode node={n} />)}</div>}
+<article class="law" data-law>
+  {doc.preface.length > 0 && <div class="akn-preface part-pembukaan">{doc.preface.map((n) => <AknNode node={n} />)}</div>}
+  {doc.preamble.length > 0 && (
+    <details class="akn-preamble part-pembukaan" open>
+      <summary><span class="sum-title">Pembukaan</span>{opening.length > 0 && <span class="sum-meta">{opening.join(" · ")}</span>}</summary>
+      {doc.preamble.map((n) => <AknNode node={n} />)}
+    </details>
+  )}
+  <div class="akn-body part-batang">{doc.body.map((n) => <AknNode node={n} notes={notes} aliases={aliases} />)}</div>
+  {doc.conclusions.length > 0 && (
+    <section class="akn-conclusions part-penutup" id="penutup">
+      <h2 class="f-modern part-title">Pengesahan dan pengundangan</h2>
+      {doc.conclusions.map((n) => <AknNode node={n} />)}
+    </section>
+  )}
   {doc.penjelasan.length > 0 && (
     <section class="penjelasan" id="penjelasan">
-      <h2 class="penjelasan-title">Penjelasan</h2>
+      <h2 class="penjelasan-title part-title">Penjelasan</h2>
       {doc.penjelasan.map((n) => <AknNode node={n} penjelasan />)}
     </section>
   )}
 </article>
 
+<script is:inline>
+  // Runs as soon as the text is parsed (before first paint): put each Penjelasan entry under
+  // its pasal, or back at the end; open the opening section in Asli, fold it in Modern.
+  (function () {
+    var law = document.querySelector("[data-law]");
+    if (!law) return;
+    function place() {
+      var under = document.documentElement.dataset.penjelasan === "pasal";
+      law.querySelectorAll("[data-pj-for]").forEach(function (entry) {
+        var moved = entry.classList.contains("pj-inline");
+        if (under && !moved) {
+          var anchor = document.getElementById("pasal-" + entry.dataset.pjFor);
+          var body = anchor && anchor.parentElement.querySelector(":scope > .fold-c");
+          if (!body) return;
+          var home = document.createElement("span");
+          home.hidden = true;
+          home.dataset.pjHome = entry.id;
+          entry.before(home);
+          entry.classList.add("pj-inline");
+          body.append(entry);
+        } else if (!under && moved) {
+          var back = law.querySelector('[data-pj-home="' + entry.id + '"]');
+          if (!back) return;
+          entry.classList.remove("pj-inline");
+          back.replaceWith(entry);
+        }
+      });
+    }
+    function sync() {
+      place();
+      var pre = law.querySelector(".akn-preamble");
+      if (pre) pre.open = document.documentElement.dataset.format === "asli";
+    }
+    window.hbLawView = { sync: sync };
+    sync();
+  })();
+</script>
+
+<script>
+  // Folding: BAB / Bagian / Paragraf / Pasal headings are buttons. Folded content uses
+  // hidden="until-found", so the browser's find-in-page still finds it and opens it.
+  const setOpen = (btn: HTMLButtonElement, open: boolean) => {
+    btn.setAttribute("aria-expanded", String(open));
+    const c = document.getElementById(btn.getAttribute("aria-controls") ?? "");
+    if (!c) return;
+    if (open) c.removeAttribute("hidden"); else c.setAttribute("hidden", "until-found");
+  };
+  document.addEventListener("click", (e) => {
+    const btn = (e.target as Element).closest<HTMLButtonElement>(".law .fold-btn");
+    if (btn) setOpen(btn, btn.getAttribute("aria-expanded") !== "true");
+  });
+  // find-in-page opened a folded block: mark its heading open
+  document.addEventListener("beforematch", (e) => {
+    const c = e.target as HTMLElement;
+    const btn = document.querySelector<HTMLButtonElement>(`[aria-controls="${c.id}"]`);
+    if (btn) btn.setAttribute("aria-expanded", "true");
+  }, true);
+  // "Buka semua / Tutup semua" (ViewSettings): chapters and pasal
+  document.addEventListener("hb:fold", (e) => {
+    const open = (e as CustomEvent<boolean>).detail;
+    document.querySelectorAll<HTMLButtonElement>(".law .fold-btn").forEach((b) => setOpen(b, open));
+  });
+  // a link to a pasal or chapter opens the blocks around it
+  const reveal = () => {
+    const id = decodeURIComponent(location.hash.slice(1));
+    const el = id && document.getElementById(id);
+    if (!el) return;
+    let changed = false;
+    // the pasal anchor (#pasal-27) sits beside its folded content: open that too
+    const own = el.parentElement?.classList.contains("fold") ? el.parentElement.querySelector<HTMLButtonElement>(":scope > .fold-h .fold-btn") : null;
+    if (own && own.getAttribute("aria-expanded") === "false") { setOpen(own, true); changed = true; }
+    for (let n: HTMLElement | null = el; n; n = n.parentElement) {
+      if (n.classList.contains("fold-c") && n.hasAttribute("hidden")) {
+        const btn = document.querySelector<HTMLButtonElement>(`[aria-controls="${n.id}"]`);
+        if (btn) { setOpen(btn, true); changed = true; }
+      }
+    }
+    if (changed) el.scrollIntoView();
+  };
+  window.addEventListener("hashchange", reveal);
+  reveal();
+</script>
+
 <style>
-  /* Legal text: serif, readable measure, hanging numbers (DESIGN.md) */
+  /* ---------- Shared: serif text, readable measure, hanging numbers ---------- */
   .law { font-family: var(--font-law); font-size: var(--fs-law); line-height: 1.65; max-width: var(--measure); }
-  .law :global(.akn-preface .akn-p) { font-family: var(--font-ui); font-weight: 600; text-align: center; font-size: var(--fs-base); letter-spacing: 0.02em; margin: 0 0 var(--s-5); }
+  .law :global(.akn-p) { margin: 0 0 var(--s-2); }
+  .law :global(.numbered) { display: grid; grid-template-columns: 2.4rem minmax(0, 1fr); column-gap: var(--s-1); }
+  .law :global(.akn-num) { font-variant-numeric: tabular-nums; }
+  .law :global(.akn-article) { scroll-margin-top: var(--s-4); }
+  .law :global(.alias) { display: block; scroll-margin-top: var(--s-4); }
+  .law :global(.akn-article:has(> .alias:target)), .law :global(:target) {
+    background: var(--primary-bg); border-radius: var(--r-sm); box-shadow: 0 0 0 6px var(--primary-bg);
+  }
+  /* skip rendering off-screen parts of very long laws (rendered on demand, still found by Ctrl+F) */
+  .law :global(.akn-body > section) { content-visibility: auto; contain-intrinsic-size: auto 60rem; }
+  @media (min-width: 961px) {
+    /* content-visibility clips painting to the box: widen it so the fold arrows in the margin show */
+    .law :global(.akn-body > section) { padding-left: var(--s-6); margin-left: calc(-1 * var(--s-6)); }
+  }
+  .law :global(.akn-note) { font-family: var(--font-ui); font-size: var(--fs-sm); color: var(--warn); margin: 0 0 var(--s-3); }
+  .law :global(.akn-conclusions) { margin-top: var(--s-7); }
+  .penjelasan { margin-top: var(--s-8); }
+
+  /* headings: the whole heading is the fold button; the arrow hangs in the left margin */
+  .law :global(.fold-h) { position: relative; }
+  .law :global(.fold-btn) {
+    all: unset; box-sizing: border-box; display: block; width: 100%; cursor: pointer;
+    text-align: inherit; position: relative; min-height: var(--s-6); border-radius: var(--r-sm);
+  }
+  .law :global(.fold-btn:focus-visible) { outline: 3px solid var(--primary); outline-offset: 2px; }
+  .law :global(.chev) {
+    position: absolute; left: calc(-1 * var(--s-6)); top: 0.15em; color: var(--text-muted);
+    transition: transform 0.15s ease;
+  }
+  .law :global(.fold-btn[aria-expanded="true"] .chev) { transform: rotate(90deg); }
+  .law :global(.fold-btn:hover .chev) { color: var(--primary); }
+  .law :global(.fold-preview) { display: none; }
+  .law :global(.fold-btn[aria-expanded="false"] ~ .fold-preview) {
+    display: block; font-family: var(--font-ui); font-size: var(--fs-sm); font-weight: 400;
+    color: var(--text-muted); letter-spacing: 0; text-transform: none;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .law :global(.perma) {
+    position: absolute; right: 0; top: 0; font-family: var(--font-ui); font-size: var(--fs-sm);
+    font-weight: 400; color: var(--text-muted); text-decoration: none; opacity: 0; padding: 0 var(--s-1);
+  }
+  .law :global(.fold-h:hover .perma), .law :global(.perma:focus-visible) { opacity: 1; }
+  @media (hover: none) { .law :global(.perma) { opacity: 1; } }
+
+  /* Penjelasan entries */
+  .law :global(.pj-inline-label) { display: none; }
+  .law :global(.pj-entry > h3 a) { color: inherit; text-decoration: none; }
+  .law :global(.pj-entry > h3 a:hover) { color: var(--primary); text-decoration: underline; }
+  /* under its pasal: a thin rule, interface type, the label "Penjelasan" */
+  .law :global(.pj-inline) {
+    margin: var(--s-3) 0 var(--s-2); padding: var(--s-1) 0 var(--s-1) var(--s-4);
+    border-left: 2px solid var(--line); font-family: var(--font-ui); font-size: var(--fs-sm); line-height: 1.55;
+    background: none; box-shadow: none;
+  }
+  .law :global(.pj-inline > h3) {
+    all: unset; display: block; font-family: var(--font-ui); font-size: var(--fs-xs); line-height: 1.4; font-weight: 600; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--text-muted); margin-bottom: var(--s-1);
+  }
+  .law :global(.pj-inline .pj-pasal) { display: none; }
+  .law :global(.pj-inline .pj-inline-label) { display: inline; }
+  .law :global(.pj-inline .numbered) { grid-template-columns: 2.4rem minmax(0, 1fr); }
+
+  /* the opening: a plain block in Asli, a fold with a summary in Modern */
   .law :global(.akn-preamble) { margin-bottom: var(--s-6); }
-  .law :global(h2) {
+  .law :global(.akn-preamble > summary) { display: none; }
+
+  /* ---------- Asli: as the official copy lays it out ---------- */
+  :global(:root[data-format="asli"]) .law :global(.akn-preface .akn-p) {
+    font-family: var(--font-ui); font-weight: 600; text-align: center; font-size: var(--fs-base);
+    letter-spacing: 0.02em; margin: 0 0 var(--s-5);
+  }
+  :global(:root[data-format="asli"]) .law :global(h2) {
     font-family: var(--font-ui); text-align: center; font-size: var(--fs-sm); font-weight: 600;
     letter-spacing: 0.06em; text-transform: uppercase; margin: var(--s-7) 0 var(--s-4);
   }
-  .law :global(h2 .sub) { display: block; font-size: var(--fs-base); letter-spacing: 0.02em; margin-top: var(--s-1); }
-  .law :global(.akn-article) { scroll-margin-top: var(--s-4); }
-  .law :global(.akn-article h3) {
+  :global(:root[data-format="asli"]) .law :global(h2 .sub) { display: block; font-size: var(--fs-base); letter-spacing: 0.02em; margin-top: var(--s-1); }
+  :global(:root[data-format="asli"]) .law :global(.akn-article > h3) {
     font-family: var(--font-ui); text-align: center; margin: var(--s-6) 0 var(--s-3);
     font-size: var(--fs-sm); font-weight: 600; letter-spacing: 0.04em;
   }
-  .law :global(.akn-article h3 a) { color: inherit; text-decoration: none; }
-  .law :global(.akn-article h3 a:hover) { color: var(--primary); text-decoration: underline; }
-  .law :global(.akn-p) { margin: 0 0 var(--s-2); }
-  .law :global(.akn-note) {
-    font-family: var(--font-ui); font-size: var(--fs-sm); text-align: center; color: var(--warn);
-    margin: calc(-1 * var(--s-2)) 0 var(--s-3);
+  :global(:root[data-format="asli"]) .law :global(.akn-note) { text-align: center; margin-top: calc(-1 * var(--s-2)); }
+  :global(:root[data-format="asli"]) .law :global(.penjelasan .numbered) { grid-template-columns: 5.5rem minmax(0, 1fr); }
+  :global(:root[data-format="asli"]) .penjelasan { padding-top: var(--s-6); border-top: 2px solid var(--line); }
+  :global(:root[data-format="asli"]) .penjelasan:has(.pj-title) > .penjelasan-title { display: none; }
+  :global(:root[data-format="asli"]) .law :global(.pj-title .akn-p) {
+    font-family: var(--font-ui); font-weight: 600; text-align: center; font-size: var(--fs-base); letter-spacing: 0.02em;
   }
-  .law :global(.numbered) { display: grid; grid-template-columns: 2.4rem minmax(0, 1fr); column-gap: var(--s-1); }
-  .law :global(.akn-num) { font-variant-numeric: tabular-nums; }
-  .law :global(.akn-conclusions) { margin-top: var(--s-7); color: var(--text-muted); font-size: var(--fs-base); }
-  .penjelasan { margin-top: var(--s-8); padding-top: var(--s-6); border-top: 2px solid var(--line); }
-  .penjelasan-title { text-align: center; font-family: var(--font-ui); }
-  .law :global(.penjelasan .numbered) { grid-template-columns: 5.5rem minmax(0, 1fr); }
-  .law :global(.akn-article:has(> .alias:target)) { background: var(--primary-bg); border-radius: var(--r-sm); box-shadow: 0 0 0 6px var(--primary-bg); }
-  .law :global(.alias) { display: block; scroll-margin-top: var(--s-4); }
-  /* skip rendering off-screen parts of very long laws (rendered on demand, still found by Ctrl+F) */
-  .law :global(.akn-body > section) { content-visibility: auto; contain-intrinsic-size: auto 60rem; }
-  .law :global(:target) { background: var(--primary-bg); border-radius: var(--r-sm); box-shadow: 0 0 0 6px var(--primary-bg); }
+  :global(:root[data-format="asli"]) .law :global(.fold-preview) { text-align: center; }
+
+  /* ---------- Modern: screen layout (default) ---------- */
+  :global(:root:not([data-format="asli"])) .law :global(.akn-preface),
+  :global(:root:not([data-format="asli"])) .law :global(.pj-title) { display: none; }
+  :global(:root:not([data-format="asli"])) .law :global(h2) {
+    font-family: var(--font-ui); font-size: var(--fs-lg); font-weight: 600; line-height: 1.3;
+    margin: var(--s-7) 0 var(--s-3); padding-top: var(--s-4); border-top: 1px solid var(--line);
+  }
+  :global(:root:not([data-format="asli"])) .law :global(h2 .hnum) { color: var(--text-muted); font-weight: 400; margin-right: var(--s-2); }
+  :global(:root:not([data-format="asli"])) .law :global(.akn-part > h2),
+  :global(:root:not([data-format="asli"])) .law :global(.akn-subpart > h2) {
+    font-size: var(--fs-base); border-top: 0; padding-top: 0; margin: var(--s-6) 0 var(--s-2);
+  }
+  :global(:root:not([data-format="asli"])) .law :global(.akn-subpart > h2) { color: var(--text-muted); }
+  :global(:root:not([data-format="asli"])) .law :global(.akn-article > h3) {
+    font-family: var(--font-ui); font-size: var(--fs-base); font-weight: 600; margin: var(--s-5) 0 var(--s-2);
+  }
+  :global(:root:not([data-format="asli"])) .law :global(.akn-preamble) {
+    font-size: var(--fs-base); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-bottom: 0;
+  }
+  :global(:root:not([data-format="asli"])) .law :global(.akn-body > section:first-child > h2) { margin-top: var(--s-5); border-top: 0; }
+  /* folded: an outline of headings */
+  :global(:root:not([data-format="asli"])) .law :global(.fold:has(> .fold-c[hidden]) > h2) { margin: var(--s-2) 0 0; padding-top: var(--s-2); }
+  :global(:root:not([data-format="asli"])) .law :global(.fold:has(> .fold-c[hidden]) > h3) { margin: var(--s-2) 0 0; }
+  :global(:root:not([data-format="asli"])) .law :global(.akn-preamble > summary) {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s-1) var(--s-3); cursor: pointer;
+    font-family: var(--font-ui); padding: var(--s-3) 0; min-height: var(--tap); list-style: none; position: relative;
+  }
+  :global(:root:not([data-format="asli"])) .law :global(.akn-preamble > summary::-webkit-details-marker) { display: none; }
+  :global(:root:not([data-format="asli"])) .law :global(.akn-preamble > summary::before) {
+    content: ""; position: absolute; left: calc(-1 * var(--s-6) + 5px); top: calc(var(--s-3) + 0.45em);
+    width: 6px; height: 6px; border-right: 1.6px solid var(--text-muted); border-bottom: 1.6px solid var(--text-muted);
+    transform: rotate(-45deg); transition: transform 0.15s ease;
+  }
+  :global(:root:not([data-format="asli"])) .law :global(.akn-preamble[open] > summary::before) { transform: rotate(45deg); }
+  :global(:root:not([data-format="asli"])) .law :global(.akn-preamble[open]) { padding-bottom: var(--s-4); }
+  .law :global(.sum-title) { font-weight: 600; }
+  .law :global(.sum-meta) { font-size: var(--fs-sm); color: var(--text-muted); }
+  :global(:root:not([data-format="asli"])) .law :global(.akn-conclusions) {
+    font-family: var(--font-ui); font-size: var(--fs-sm); line-height: 1.55;
+  }
+  :global(:root:not([data-format="asli"])) .law :global(.akn-conclusions .akn-p) { margin-bottom: var(--s-3); }
+  :global(:root:not([data-format="asli"])) .law :global(.penjelasan .akn-part > h2) { font-size: var(--fs-base); border-top: 0; padding-top: 0; }
+  :global(:root:not([data-format="asli"])) .law :global(.pj-entry:not(.pj-inline) > h3) {
+    font-family: var(--font-ui); font-size: var(--fs-base); font-weight: 600; margin: var(--s-5) 0 var(--s-1);
+  }
+
+  /* ---------- Reader choices ---------- */
+  :global(:root[data-cj="hide"]) .law :global(.cj) { display: none; }
+  :global(:root[data-penjelasan="sembunyi"]) .penjelasan,
+  :global(:root[data-penjelasan="sembunyi"]) .law :global(.pj-inline) { display: none; }
+  /* Penjelasan under each pasal: "Pasal demi Pasal" at the end is then empty */
+  :global(:root[data-penjelasan="pasal"]) .law :global(.pj-pdp) { display: none; }
+  :global(:root[data-hide~="pembukaan"]) .law :global(.part-pembukaan),
+  :global(:root[data-hide~="batang"]) .law :global(.part-batang),
+  :global(:root[data-hide~="penutup"]) .law :global(.part-penutup) { display: none; }
+
+  @media (max-width: 960px) {
+    /* no margin for the arrow: it sits before the heading */
+    .law :global(.chev), :global(:root:not([data-format="asli"])) .law :global(.akn-preamble > summary::before) { position: static; display: inline-block; margin-right: var(--s-1); vertical-align: -0.15em; }
+  }
   @media (max-width: 640px) {
     .law { font-size: var(--fs-base); }
-    .law :global(.numbered) { grid-template-columns: 1.9rem minmax(0, 1fr); }
-    .law :global(.penjelasan .numbered) { grid-template-columns: 1fr; }
+    .law :global(.numbered), .law :global(.pj-inline .numbered) { grid-template-columns: 1.9rem minmax(0, 1fr); }
+    :global(:root[data-format="asli"]) .law :global(.penjelasan .numbered) { grid-template-columns: 1fr; }
   }
+  @media print {
+    .law :global([hidden="until-found"]) { display: block !important; content-visibility: visible !important; }
+    .law :global(.chev), .law :global(.perma), .law :global(.fold-preview) { display: none !important; }
+  }
+  @media (prefers-reduced-motion: reduce) { .law :global(.chev) { transition: none; } }
 </style>

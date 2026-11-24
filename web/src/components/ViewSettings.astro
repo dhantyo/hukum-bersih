@@ -1,0 +1,134 @@
+---
+// "Tampilan" in the side panel of a law page: how the text is shown. Stored in this browser
+// only (localStorage "hb-view"), applied before first paint by the inline script in
+// layouts/Base.astro, read by components/LawText.astro. The text itself never changes.
+interface Props { penjelasan?: boolean; pembukaan?: boolean; penutup?: boolean }
+const { penjelasan = false, pembukaan = true, penutup = true } = Astro.props;
+const parts = [
+  pembukaan && { key: "pembukaan", label: "Pembukaan" },
+  { key: "batang", label: "Batang tubuh" },
+  penutup && { key: "penutup", label: "Penutup" },
+].filter(Boolean) as { key: string; label: string }[];
+---
+<details class="view" data-pagefind-ignore>
+  <summary>
+    <span class="panel-title">Tampilan</span>
+    <span class="now" data-view-now></span>
+  </summary>
+  <div class="body">
+    <fieldset>
+      <legend>Format</legend>
+      <div class="seg">
+        <label><input type="radio" name="hb-format" value="modern" /><span>Modern</span></label>
+        <label><input type="radio" name="hb-format" value="asli" /><span>Asli</span></label>
+      </div>
+      <p class="hint" data-format-hint></p>
+    </fieldset>
+    {penjelasan && (
+      <fieldset>
+        <legend>Penjelasan</legend>
+        <div class="seg three">
+          <label><input type="radio" name="hb-penjelasan" value="akhir" /><span>Di akhir</span></label>
+          <label><input type="radio" name="hb-penjelasan" value="pasal" /><span>Per pasal</span></label>
+          <label><input type="radio" name="hb-penjelasan" value="sembunyi" /><span>Sembunyi</span></label>
+        </div>
+        <label class="check"><input type="checkbox" name="hb-cj" /> Tampilkan “Cukup jelas”</label>
+      </fieldset>
+    )}
+    <fieldset>
+      <legend>Bagian</legend>
+      <div class="checks">
+        {parts.map((p) => <label class="check"><input type="checkbox" name="hb-part" value={p.key} /> {p.label}</label>)}
+      </div>
+    </fieldset>
+    <p class="folds">
+      <button type="button" data-fold="true">Buka semua</button>
+      <button type="button" data-fold="false">Tutup semua</button>
+    </p>
+  </div>
+</details>
+
+<script>
+  const root = document.documentElement;
+  const box = document.querySelector<HTMLDetailsElement>("details.view");
+  if (box) {
+    const HINT: Record<string, string> = {
+      modern: "Untuk layar: judul dalam huruf biasa, Pembukaan dilipat.",
+      asli: "Seperti salinan resmi: judul rata tengah dalam huruf kapital.",
+    };
+    const inputs = (name: string) => box.querySelectorAll<HTMLInputElement>(`input[name="${name}"]`);
+    const state = () => ({
+      format: root.dataset.format ?? "modern",
+      penjelasan: root.dataset.penjelasan ?? "akhir",
+      cj: root.dataset.cj !== "hide",
+      hide: (root.dataset.hide ?? "").split(" ").filter(Boolean),
+    });
+    const show = () => {
+      const s = state();
+      inputs("hb-format").forEach((i) => { i.checked = i.value === s.format; });
+      inputs("hb-penjelasan").forEach((i) => { i.checked = i.value === s.penjelasan; });
+      inputs("hb-cj").forEach((i) => { i.checked = s.cj; i.disabled = s.penjelasan === "sembunyi"; });
+      inputs("hb-part").forEach((i) => { i.checked = !s.hide.includes(i.value); });
+      const hint = box.querySelector("[data-format-hint]");
+      if (hint) hint.textContent = HINT[s.format];
+      const now = box.querySelector("[data-view-now]");
+      if (now) now.textContent = s.format === "asli" ? "Asli" : "Modern";
+    };
+    const apply = () => {
+      const fmt = [...inputs("hb-format")].find((i) => i.checked)?.value ?? "modern";
+      const pj = [...inputs("hb-penjelasan")].find((i) => i.checked)?.value ?? root.dataset.penjelasan ?? "akhir";
+      const cj = [...inputs("hb-cj")].every((i) => i.checked);
+      const hide = [...inputs("hb-part")].filter((i) => !i.checked).map((i) => i.value);
+      root.dataset.format = fmt;
+      root.dataset.penjelasan = pj;
+      if (cj) delete root.dataset.cj; else root.dataset.cj = "hide";
+      if (hide.length) root.dataset.hide = hide.join(" "); else delete root.dataset.hide;
+      try { localStorage.setItem("hb-view", JSON.stringify({ format: fmt, penjelasan: pj, cj, hide })); } catch { /* private mode */ }
+      (window as unknown as { hbLawView?: { sync: () => void } }).hbLawView?.sync();
+      show();
+    };
+    box.addEventListener("change", apply);
+    box.querySelectorAll<HTMLButtonElement>("[data-fold]").forEach((b) => b.addEventListener("click", () => {
+      document.dispatchEvent(new CustomEvent("hb:fold", { detail: b.dataset.fold === "true" }));
+    }));
+    show();
+  }
+</script>
+
+<style>
+  .view { margin-bottom: var(--s-5); border-bottom: 1px solid var(--line); }
+  summary {
+    display: flex; align-items: baseline; justify-content: space-between; gap: var(--s-3);
+    cursor: pointer; list-style: none; padding: var(--s-2) 0; min-height: var(--tap); box-sizing: border-box;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary .panel-title { margin: 0; }
+  summary::after {
+    content: ""; align-self: center; flex: none; width: 6px; height: 6px; margin-right: var(--s-1);
+    border-right: 1.6px solid var(--text-muted); border-bottom: 1.6px solid var(--text-muted); transform: rotate(45deg);
+  }
+  .view[open] summary::after { transform: rotate(-135deg); }
+  .now { margin-left: auto; font-size: var(--fs-xs); color: var(--text-muted); text-align: right; }
+  .body { padding: var(--s-1) 0 var(--s-4); display: grid; gap: var(--s-4); }
+  fieldset { border: 0; margin: 0; padding: 0; min-width: 0; display: grid; gap: var(--s-2); }
+  legend { font-size: var(--fs-sm); font-weight: 600; padding: 0; margin-bottom: var(--s-2); }
+  /* segmented control from native radios */
+  .seg { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; border: 1px solid var(--line); border-radius: var(--r-sm); overflow: hidden; }
+  .seg label { position: relative; display: grid; place-items: center; min-height: var(--tap); cursor: pointer; font-size: var(--fs-sm); text-align: center; padding: 0 var(--s-1); }
+  .seg label + label { border-left: 1px solid var(--line); }
+  .seg input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+  .seg label:has(input:checked) { background: var(--primary); color: var(--bg); font-weight: 600; }
+  .seg label:has(input:focus-visible) { outline: 3px solid var(--primary); outline-offset: 2px; z-index: 1; }
+  .seg label:not(:has(input:checked)):hover { background: var(--bg-subtle); }
+  .hint { margin: 0; font-size: var(--fs-xs); color: var(--text-muted); }
+  .check { display: flex; align-items: center; gap: var(--s-2); font-size: var(--fs-sm); min-height: var(--s-6); cursor: pointer; }
+  .check input { width: 1.05rem; height: 1.05rem; margin: 0; accent-color: var(--primary); }
+  .check:has(input:disabled) { color: var(--text-muted); cursor: default; }
+  .checks { display: grid; }
+  .folds { margin: 0; display: flex; gap: var(--s-2); }
+  .folds button {
+    flex: 1; font: inherit; font-size: var(--fs-sm); color: var(--primary); background: none; cursor: pointer;
+    border: 1px solid var(--line); border-radius: var(--r-sm); min-height: var(--tap);
+  }
+  .folds button:hover { background: var(--bg-subtle); }
+</style>

@@ -4,6 +4,7 @@ import DocLayout from "../../../components/DocLayout.astro";
 import Facts from "../../../components/Facts.astro";
 import LawText from "../../../components/LawText.astro";
 import Toc from "../../../components/Toc.astro";
+import ViewSettings from "../../../components/ViewSettings.astro";
 import KoleksiBox from "../../../components/KoleksiBox.astro";
 import RelationsBanner from "../../../components/RelationsBanner.astro";
 import StatusBanner from "../../../components/StatusBanner.astro";
@@ -41,7 +42,7 @@ const koleksi = koleksiOf(r.id);
       : [{ href: `${base}uu/`, label: "Undang-Undang" }, { href: `${base}uu/tahun/${r.year}/`, label: String(r.year) }, { label: shortCite(r) }]}
     eyebrow={r.title}
     title={r.subject || r.title}
-    panelLabel={doc ? "Daftar isi dan keterangan" : "Keterangan"}
+    panelLabel={doc ? "Daftar isi, tampilan, keterangan" : "Keterangan"}
   >
     <div slot="head" class="head-meta">
       {status && <span class={`badge ${status}`}>{STATUS_LABEL[status] ?? status}</span>}
@@ -50,6 +51,7 @@ const koleksi = koleksiOf(r.id);
       {amendments > 0 && <a class="badge diubah" href={koleksi ? `${base}${koleksiPath(koleksi)}#riwayat` : undefined}>diubah {amendments}×</a>}
     </div>
     <Fragment slot="panel">
+      {doc && <ViewSettings penjelasan={doc.penjelasan.length > 0} pembukaan={doc.preface.length + doc.preamble.length > 0} penutup={doc.conclusions.length > 0} />}
       {doc && <Toc doc={doc} />}
       <Facts title="Keterangan" facts={[
         { label: "Ditetapkan", value: r.tanggal_penetapan ? `${tanggal(r.tanggal_penetapan)}${r.tempat_penetapan ? `, ${r.tempat_penetapan}` : ""}` : null },

@@ -83,11 +83,29 @@ Radius `--r-sm` 4px (badges, inputs, buttons), `--r-md` 8px (cards, panels). No 
 - **Fact list** (side panel): label above value, `--fs-sm`.
 - **Table of contents**: BAB headings with their pasal range; current item marked with
   `--primary` left border.
-- **Law text**: serif, hanging numbers for ayat/huruf/angka, pasal headings centered small caps
-  style (600, letter-spacing), anchor link on hover. Each pasal has a short anchor `#pasal-27`
-  (first pasal with that number) beside its Akoma Ntoso eId; the heading links to it.
-  Long laws use `content-visibility: auto` per chapter. Print: text, title and status banner
-  only, always light.
+- **Law text**: serif, hanging numbers for ayat/huruf/angka. Two formats, chosen by the reader
+  ([decision 0009](docs/decisions/0009-law-view-asli-modern.md)); the text is the same, only
+  the layout changes:
+  - *Modern* (default): headings left-aligned in the interface font and normal capitals
+    ("Bab I  Ketentuan Umum", number muted; Bagian smaller, Paragraf muted; "Pasal 5"),
+    a thin rule above each BAB, no boxes. Pembukaan folded to one line with what it contains
+    ("Menimbang (7) · Mengingat"); the closing under "Pengesahan dan pengundangan".
+  - *Asli*: as the official copy: title, BAB and Pasal centred in capitals, Pembukaan open.
+  - BAB, Bagian, Paragraf and Pasal headings are buttons that fold their content; the arrow
+    hangs in the left margin (before the heading on narrow screens). A folded pasal shows its
+    first words. Folded content uses `hidden="until-found"` so find-in-page still finds it.
+  - Penjelasan at the end, under each pasal (thin left rule, interface type, label
+    "Penjelasan"), or hidden; "Cukup jelas" can be hidden; labels "Ayat (1)", "Huruf d",
+    "Angka 3" shown as (1), d., 3. in Modern.
+  - Each pasal has a short anchor `#pasal-27` (first pasal with that number) beside its Akoma
+    Ntoso eId; "#" after the heading links to it (on hover; always on touch screens).
+  - Long laws use `content-visibility: auto` per chapter. Print: text, title and status banner
+    only, always light, everything unfolded.
+- **Tampilan** (side panel of law and draft pages, folded to one line "Tampilan · Modern"):
+  Format (Modern/Asli), Penjelasan (Di akhir/Per pasal/Sembunyi) with "Cukup jelas", Bagian
+  (Pembukaan, Batang tubuh, Penutup), Buka semua / Tutup semua. Native radios and checkboxes;
+  segmented control = radios in a bordered row, checked one filled `--primary`. Remembered in
+  the browser (`hb-view`), applied before first paint. Font and size stay under "Aa".
 - **Synopsis (comparison)**: two columns, old left, new right, one row per pasal pair;
   deletions `--del-*`, insertions `--ins-*`; one inline column on phones.
 - **Buttons**: primary (filled `--primary`), secondary (outline), quiet (text). Focus: 3px

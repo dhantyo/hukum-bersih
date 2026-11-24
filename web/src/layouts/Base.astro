@@ -36,6 +36,14 @@ const nav = [
         if (f && f !== "serif") document.documentElement.dataset.font = f;
         if (z && z !== "normal") document.documentElement.dataset.size = z;
       } catch (e) {}
+      // reader's view of law texts (components/ViewSettings.astro): format, Penjelasan, parts
+      try {
+        var v = JSON.parse(localStorage.getItem("hb-view") || "{}"), d = document.documentElement.dataset;
+        d.format = v.format === "asli" ? "asli" : "modern";
+        d.penjelasan = v.penjelasan === "pasal" || v.penjelasan === "sembunyi" ? v.penjelasan : "akhir";
+        if (v.cj === false) d.cj = "hide";
+        if (Array.isArray(v.hide) && v.hide.length) d.hide = v.hide.join(" ");
+      } catch (e) {}
     </script>
   </head>
   <body>
