@@ -1,22 +1,29 @@
-import type { QueryClient } from '@tanstack/solid-query';
-import { createRouter, type RouterHistory } from '@tanstack/solid-router';
-import { routeTree } from './routeTree.gen';
+import type { QueryClient } from "@tanstack/solid-query";
+import { createRouter } from "@tanstack/solid-router";
+import type { RouterHistory } from "@tanstack/solid-router";
 
-export interface RouterContext { queryClient: QueryClient }
+import { routeTree } from "./routeTree.gen";
 
-export function createAppRouter(queryClient: QueryClient, history?: RouterHistory) {
+export interface RouterContext {
+  queryClient: QueryClient;
+}
+
+export function createAppRouter(
+  queryClient: QueryClient,
+  history?: RouterHistory
+) {
   return createRouter({
     routeTree,
-    trailingSlash: 'always',
+    trailingSlash: "always",
     history,
     context: { queryClient },
-    defaultPreload: 'intent',
+    defaultPreload: "intent",
     defaultPendingComponent: () => <main>Memuat…</main>,
     disableGlobalCatchBoundary: true,
   });
 }
 
-declare module '@tanstack/solid-router' {
+declare module "@tanstack/solid-router" {
   interface Register {
     router: ReturnType<typeof createAppRouter>;
   }

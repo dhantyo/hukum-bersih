@@ -1,5 +1,5 @@
-import type { ParentProps } from 'solid-js';
-import { HydrationScript } from '@solidjs/web';
+import { HydrationScript } from "@solidjs/web";
+import type { ParentProps } from "solid-js";
 
 export default function Document(props: ParentProps) {
   return (
@@ -7,7 +7,9 @@ export default function Document(props: ParentProps) {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {import.meta.env.DEV && <link rel="stylesheet" href="/virtual:stylex.css" />}
+        {import.meta.env.DEV && (
+          <link rel="stylesheet" href="/virtual:stylex.css" />
+        )}
         <HydrationScript />
       </head>
       <body>{props.children}</body>

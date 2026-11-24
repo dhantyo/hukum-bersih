@@ -1,7 +1,12 @@
-import * as v from 'valibot';
-import { readActiveRelease, readReleaseObject } from './corpus';
+import * as v from "valibot";
 
-const catalogPath = v.pipe(v.string(), v.regex(/^\/[a-z-]+\/[a-z0-9_-]+(?:\/\d{4})?\/$/i));
+import { readActiveRelease, readReleaseObject } from "./corpus";
+
+const catalogPath = v.pipe(
+  v.string(),
+  v.regex(/^\/[a-z-]+\/[a-z0-9_-]+(?:\/\d{4})?\/$/i)
+);
+
 const entry = v.object({
   id: v.string(),
   s: v.nullable(v.string()),
@@ -26,11 +31,21 @@ const collection = v.object({
   mem: v.array(v.tuple([v.string(), v.string()])),
 });
 
-const catalog = v.object({ laws: v.array(entry), koleksi: v.array(collection) });
+const catalog = v.object({
+  laws: v.array(entry),
+  koleksi: v.array(collection),
+});
 
 async function loadCatalog() {
-  const file = await readReleaseObject(await readActiveRelease(), 'law-catalog.json');
-  if (!file) throw new Error('The active release has no law catalog');
+  const file = await readReleaseObject(
+    await readActiveRelease(),
+    "law-catalog.json"
+  );
+
+  if (!file) {
+    throw new Error("The active release has no law catalog");
+  }
+
   return await file.text();
 }
 
@@ -40,15 +55,23 @@ export async function readCatalog() {
 
 export async function listLaws() {
   const { laws } = await readCatalog();
+
   return laws.filter((law) => /^\/uu\/\d+\/\d{4}\/$/.test(law.u));
 }
 
 export type LawCatalogEntry = v.InferOutput<typeof entry>;
+
 export type SearchCatalog = v.InferOutput<typeof catalog>;
 
 export async function catalogResponse() {
   const body = await loadCatalog();
   // Validate the published object before exposing the original JSON contract.
   v.parse(catalog, JSON.parse(body));
-  return new Response(body, { headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' } });
+
+  return new Response(body, {
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
+      "Cache-Control": "no-store",
+    },
+  });
 }
