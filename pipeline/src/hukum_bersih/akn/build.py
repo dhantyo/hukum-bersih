@@ -6,6 +6,8 @@ from pathlib import Path
 
 import yaml
 
+from ..records import load_record
+
 LANGUAGE = "ind"
 
 
@@ -97,7 +99,7 @@ def build_peraturan(data_dir: Path, out_dir: Path) -> list[Path]:
 
     jobs = []
     for record in sorted((data_dir / "peraturan").glob("*/*/*/*.yaml")):
-        rec = yaml.safe_load(record.read_text())
+        rec = load_record(record)
         rel = record.parent.relative_to(data_dir / "peraturan")
         for v in rec.get("versions") or []:
             if not v.get("text"):

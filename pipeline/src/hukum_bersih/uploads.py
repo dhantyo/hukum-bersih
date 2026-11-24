@@ -13,7 +13,7 @@ import json
 import re
 from pathlib import Path
 
-import yaml
+from .records import load_record, save_record
 
 JENIS = {"uu": "uu", "undang-undang": "uu", "perppu": "perppu", "pp": "pp", "perpres": "perpres"}
 
@@ -52,7 +52,7 @@ def import_pdf(pdf: Path, data_dir: Path, source: str, source_url: str, do_archi
     rec_path = record_path(data_dir, work)
     if not rec_path:
         return f"skip {pdf.name}: no record for {work} (import it from peraturan.go.id first)"
-    rec = yaml.safe_load(rec_path.read_text())
+    rec = load_record(rec_path)
     version = f"{work}_{rec.get('tanggal_penetapan') or rec['year']}"
     filename = f"{version}.pdf"
     archive_url = f"https://archive.org/download/{work}/{filename}" if do_archive else None
@@ -64,5 +64,5 @@ def import_pdf(pdf: Path, data_dir: Path, source: str, source_url: str, do_archi
     with manifest.open("a") as f:
         f.write(json.dumps(entry.to_dict(), ensure_ascii=False) + "\n")
     note = convert_pdf(pdf, rec, rec_path.parent, source=source)
-    rec_path.write_text(yaml.safe_dump(rec, allow_unicode=True, sort_keys=False))
+    save_record(rec_path, rec)
     return f"ok   {work}: {note}" + (f"; archived {archive_url}" if archive_url else "")

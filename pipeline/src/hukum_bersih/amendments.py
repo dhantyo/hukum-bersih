@@ -24,8 +24,7 @@ import re
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
-import yaml
-
+from .records import load_record
 from .relations import _num, _sequence
 
 # A pasal number in an instruction, as OCR may have read it ("l73A", "lSC", "141El").
@@ -281,7 +280,7 @@ def build(data_dir: Path, out_dir: Path) -> int:
     target.mkdir(parents=True, exist_ok=True)
     count = 0
     for path in sorted((data_dir / "peraturan").glob("*/*/*/*.yaml")):
-        rec = yaml.safe_load(path.read_text())
+        rec = load_record(path)
         amends = (rec.get("relationships") or {}).get("amends") or []
         texts = [v["text"] for v in rec.get("versions") or [] if v.get("text")]
         if len(amends) != 1 or not texts:

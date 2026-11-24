@@ -19,9 +19,11 @@ from collections import Counter
 from itertools import pairwise
 from pathlib import Path
 
-import yaml
-
 HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE.parent / "src"))
+
+from hukum_bersih.records import load_record, save_record
+
 DATA = HERE.parent.parent / "data"
 LEAKS = {
     "page-turn": re.compile(r"[^.\s]\s*(?:…|\.\s?\.\s?\.)\.?\s*$", re.MULTILINE),
@@ -84,7 +86,7 @@ def main(argv: list[str]) -> int:
     out = argv[argv.index("--out") + 1] if "--out" in argv else None
     kinds, bad, total, rows = Counter(), 0, 0, []
     for path in sorted((DATA / "peraturan" / jenis).glob("*/*/*.yaml")):
-        rec = yaml.safe_load(path.read_text())
+        rec = load_record(path)
         texts = [v for v in rec.get("versions") or [] if v.get("text")]
         if not texts:
             continue
@@ -96,7 +98,7 @@ def main(argv: list[str]) -> int:
         fixable = [p for p in problems if not p.startswith(("kept old text", "invalid AKN"))]
         if "--flag" in argv and fixable and rec.get("bpk") and rec.get("recheck") != "; ".join(fixable):
             rec["recheck"] = "; ".join(fixable)
-            path.write_text(yaml.safe_dump(rec, allow_unicode=True, sort_keys=False))
+            save_record(path, rec)
         if problems:
             bad += 1
             for p in problems:

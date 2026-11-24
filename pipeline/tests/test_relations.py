@@ -68,6 +68,7 @@ def test_ocr_misreads_in_numbers_only():
 
 def test_revoked_per_source_status(tmp_path):
     import yaml
+    from recfactory import make_record
 
     from hukum_bersih.relations import build
 
@@ -76,7 +77,7 @@ def test_revoked_per_source_status(tmp_path):
         y = rid.split("_")[2]
         d = tmp_path / "peraturan" / "uu" / y / rid
         d.mkdir(parents=True)
-        (d / f"{rid}.yaml").write_text(yaml.safe_dump({"id": rid, "tentang": "PERSEROAN TERBATAS", "status": status, "versions": []}))
+        (d / f"{rid}.yaml").write_text(yaml.safe_dump(make_record(rid, tentang="PERSEROAN TERBATAS", status=status)))
     build(tmp_path)
     old = yaml.safe_load((tmp_path / "peraturan/uu/1995/uu_1_1995/uu_1_1995.yaml").read_text())
     new = yaml.safe_load((tmp_path / "peraturan/uu/2007/uu_40_2007/uu_40_2007.yaml").read_text())

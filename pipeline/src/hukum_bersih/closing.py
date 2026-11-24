@@ -21,7 +21,7 @@ import json
 import re
 from pathlib import Path
 
-import yaml
+from .records import load_record
 
 ORDER_RE = re.compile(r"^Agar (?:supaya )?setiap orang", re.IGNORECASE)
 # "Disahkan di Jakarta", "Disahkan di Jakarta pada" (date on the next line), "Disahkan di" (place blank)
@@ -114,7 +114,7 @@ def build(data_dir: Path, out_dir: Path) -> int:
     target.mkdir(parents=True, exist_ok=True)
     count = 0
     for path in sorted((data_dir / "peraturan").glob("*/*/*/*.yaml")):
-        rec = yaml.safe_load(path.read_text())
+        rec = load_record(path)
         for v in rec.get("versions") or []:
             if not v.get("text"):
                 continue

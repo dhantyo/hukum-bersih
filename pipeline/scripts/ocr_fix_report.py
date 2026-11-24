@@ -19,8 +19,6 @@ import urllib.request
 from collections import Counter
 from pathlib import Path
 
-import yaml
-
 HERE = Path(__file__).resolve().parent
 DATA = HERE.parent.parent / "data"
 CACHE = Path.home() / ".cache" / "hukum-bersih" / "pdf"
@@ -29,6 +27,7 @@ sys.path.insert(0, str(HERE.parent / "src"))
 
 from hukum_bersih.pdf import extract, ocr_fix
 from hukum_bersih.pdf.structure import parse_pdf
+from hukum_bersih.records import load_record
 
 
 def scanned_versions() -> list[tuple[str, str]]:
@@ -42,7 +41,7 @@ def scanned_versions() -> list[tuple[str, str]]:
     mirror = json.loads((DATA / "sources" / "mirrors" / "id_reg.json").read_text())["files"]
     out = []
     for path in sorted((DATA / "peraturan" / "uu").glob("*/*/*.yaml")):
-        rec = yaml.safe_load(path.read_text()) or {}
+        rec = load_record(path)
         for v in rec.get("versions") or []:
             if not v.get("ocr"):
                 continue
