@@ -32,4 +32,5 @@ Code, tests and workflow files are the source of truth for numbers, thresholds a
 - After writing or changing code, run the `clean-code-guard` skill. After tests, run `test-guard`. After docs, run `docs-guard`. The skills live in `.agents/skills/` (pinned in `skills-lock.json`).
 - Other agents share this checkout. Stage files by name, never `git add -A`.
 - Use Conventional Commits for every commit and PR title: `type(scope): subject`, with type `feat`, `fix`, `refactor`, `perf`, `test`, `docs`, `chore` or `ci` (`fix(pdf): ...`). Name branches `type/short-topic` with the same types (`fix/refused-ocr-reparse`). Branch from `main`.
+- Delete the branch once its PR is merged: merge with `gh pr merge <n> --merge --delete-branch` (removes the remote and local branch), and `git fetch --prune`.
 - Tell every agent you start to follow these naming rules too.
