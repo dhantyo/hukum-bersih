@@ -1,7 +1,13 @@
-import { glob, writeFile } from "node:fs/promises";
+import { glob, mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-import { fromInvocation, searchCatalog } from "./astro-data.ts";
+import {
+  data,
+  fromInvocation,
+  peraturan,
+  searchCatalog,
+} from "./astro-data.ts";
+import { draftListing, overviewListing, yearListings } from "./law-listings.ts";
 
 const [stage] = process.argv.slice(2);
 
@@ -47,4 +53,38 @@ const published = {
 await writeFile(
   path.join(destination, "law-catalog.json"),
   `${JSON.stringify(published)}\n`
+);
+
+const writeJson = async (file: string, json: string) => {
+  await mkdir(path.dirname(file), { recursive: true });
+  await writeFile(file, `${json}\n`);
+};
+
+const listings = path.join(destination, "listings");
+
+const listedLaws = peraturan
+  .loadRegulations()
+  .filter(
+    (law) =>
+      law.type === "uu" && (complete || paths.has(`/${peraturan.lawPath(law)}`))
+  );
+
+const lists = [
+  ["overview.json", overviewListing(listedLaws)],
+  ...yearListings(listedLaws).map(
+    (listing) => [`years/${listing.year}.json`, listing] as const
+  ),
+  [
+    "drafts.json",
+    data
+      .loadRuus()
+      .filter((draft) => paths.has(`/ruu/${draft.slug}/`))
+      .map(draftListing),
+  ],
+] as const;
+
+await Promise.all(
+  lists.map(async ([name, listing]) => {
+    await writeJson(path.join(listings, name), JSON.stringify(listing));
+  })
 );

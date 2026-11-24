@@ -194,7 +194,7 @@ const publishRelease = async (
   const directory = path.join(scratch, "release");
   await mkdir(directory);
   await Promise.all(
-    ["laws", "pagefind", "law-catalog.json"].map(async (group) => {
+    ["laws", "pagefind", "law-catalog.json", "listings"].map(async (group) => {
       await cp(path.join(source, group), path.join(directory, group), {
         recursive: true,
       });

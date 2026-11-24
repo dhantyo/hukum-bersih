@@ -26,6 +26,8 @@ For a full corpus release, run `pnpm run export-collections "$stage"` before pub
 
 Run `pnpm run export-drafts "$stage"` before exporting the catalog and building the search index to include draft bill timelines and searchable draft documents.
 
+`export-catalog` also writes `listings/` (the `/uu/` overview, one file per `/uu/tahun/<year>/` and the `/ruu/` rows, with the dates, status labels and counts already formatted). Releases published before it lack these files, so the home, `/uu/`, `/uu/tahun/` and `/ruu/` pages need a release made after it.
+
 Run `pnpm run check`, `pnpm exec tsc --noEmit`, and `pnpm run test --run` to check the preview code.
 
 To prove a refactor changed no output, build, run `scripts/build-snapshot-corpus.sh .snapshots/corpus` once, then `CORPUS=.snapshots/corpus/corpus scripts/route-snapshot.sh .snapshots/before`. Make the change, rebuild, snapshot to `.snapshots/after`, and run `diff -r .snapshots/before .snapshots/after`. The script header lists the few bytes it normalises. The `.snapshots/` folder is ignored by git.

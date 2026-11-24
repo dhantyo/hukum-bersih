@@ -11,6 +11,7 @@ export const fromInvocation = (location: string, ...rest: string[]) =>
 export const amendments = await import("../../web/src/lib/amendments.ts");
 export const data = await import("../../web/src/lib/data.ts");
 export const koleksi = await import("../../web/src/lib/koleksi.ts");
+export const labels = await import("../../web/src/lib/labels.ts");
 export const lawtext = await import("../../web/src/lib/lawtext.ts");
 export const merge = await import("../../web/src/lib/merge.ts");
 export const peraturan = await import("../../web/src/lib/peraturan.ts");

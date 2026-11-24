@@ -38,12 +38,17 @@ draft=/ruu/perampasan-aset
 urls=(
   /
   /tentang/
+  /tentang
+  /favicon.ico
   /tidak-ada/
   /uu
   /uu/
   /uu/tahun/2008/
   /uu/tahun/1800/
   /uu/tahun/abc/
+  /uu/tahun/2026/
+  /uu/tahun/1960/
+  /uu/tahun/02008/
   /uu/11/2008
   /uu/11/2008/
   '/uu/11/2008/?bandingkan'
