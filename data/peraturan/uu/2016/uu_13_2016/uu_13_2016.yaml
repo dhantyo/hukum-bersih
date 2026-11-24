@@ -83,3 +83,317 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/37540/uu-no-14-tahun-2001
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_13_2016_2016-08-26
+    kind: asli
+    date: '2016-08-26'
+    date_basis: tanggal_berlaku
+    text: uu_13_2016_2016-08-26.txt
+  - id: uu_13_2016_2024-10-28
+    kind: gabungan
+    date: '2024-10-28'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_65_2024
+    order: 3
+    counts:
+      diubah: 32
+      disisipkan: 8
+      dihapus: 5
+    missing_before: 2
+    unreadable: []
+    not_applied:
+    - by: uu_65_2024
+      instruction: 5
+      header: Penjelasan ayat (3) Pasal 14 diubah sebagaimana tercantum dalam penjelasan.
+      affects_wording: false
+    - by: uu_65_2024
+      instruction: 14
+      header: Ketentuan ayat (3)
+      affects_wording: true
+    - by: uu_65_2024
+      instruction: 27
+      header: 'Bagian Kedua Bab VI diubah, sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_65_2024
+      instruction: 29
+      header: 'Ketentuan ayat (2), ayat (5), ayat (6), dan ayat (9) diubah dan ditambahkan
+        1 (satu) ayat, yakni ayat (10), sehingga Pasal 70 berbunyi sebagai berikut:'
+      affects_wording: true
+    - by: uu_65_2024
+      instruction: 48
+      header: Ketentuan ayat (1)
+      affects_wording: true
+    complete: false
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_65_2024
+    instruction: 1
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '4'
+    type: diubah
+    by: uu_65_2024
+    instruction: 2
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_65_2024
+    instruction: 3
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '9'
+    type: diubah
+    by: uu_65_2024
+    instruction: 4
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '19'
+    type: diubah
+    by: uu_65_2024
+    instruction: 6
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: 20A
+    type: disisipkan
+    by: uu_65_2024
+    instruction: 7
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '24'
+    type: diubah
+    by: uu_65_2024
+    instruction: 8
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '25'
+    type: diubah
+    by: uu_65_2024
+    instruction: 9
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '26'
+    type: diubah
+    by: uu_65_2024
+    instruction: 10
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '28'
+    type: diubah
+    by: uu_65_2024
+    instruction: 11
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '30'
+    type: diubah
+    by: uu_65_2024
+    instruction: 12
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '34'
+    type: diubah
+    by: uu_65_2024
+    instruction: 13
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '35'
+    type: dihapus
+    by: uu_65_2024
+    instruction: 15
+    point: uu_13_2016_2024-10-28
+    wording: none
+  - pasal: '36'
+    type: diubah
+    by: uu_65_2024
+    instruction: 16
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '39'
+    type: diubah
+    by: uu_65_2024
+    instruction: 17
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '43'
+    type: diubah
+    by: uu_65_2024
+    instruction: 18
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '46'
+    type: diubah
+    by: uu_65_2024
+    instruction: 19
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '48'
+    type: diubah
+    by: uu_65_2024
+    instruction: 20
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '54'
+    type: diubah
+    by: uu_65_2024
+    instruction: 21
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: 55A
+    type: disisipkan
+    by: uu_65_2024
+    instruction: 22
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: 63A
+    type: disisipkan
+    by: uu_65_2024
+    instruction: 23
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '66'
+    type: diubah
+    by: uu_65_2024
+    instruction: 24
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '67'
+    type: diubah
+    by: uu_65_2024
+    instruction: 25
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '68'
+    type: diubah
+    by: uu_65_2024
+    instruction: 26
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '69'
+    type: diubah
+    by: uu_65_2024
+    instruction: 28
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: 71A
+    type: disisipkan
+    by: uu_65_2024
+    instruction: 30
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '72'
+    type: diubah
+    by: uu_65_2024
+    instruction: 31
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '73'
+    type: dihapus
+    by: uu_65_2024
+    instruction: 32
+    point: uu_13_2016_2024-10-28
+    wording: none
+  - pasal: '81'
+    type: diubah
+    by: uu_65_2024
+    instruction: 33
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: 82A
+    type: disisipkan
+    by: uu_65_2024
+    instruction: 34
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: 84A
+    type: disisipkan
+    by: uu_65_2024
+    instruction: 35
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '85'
+    type: dihapus
+    by: uu_65_2024
+    instruction: 36
+    point: uu_13_2016_2024-10-28
+    wording: none
+  - pasal: '93'
+    type: dihapus
+    by: uu_65_2024
+    instruction: 37
+    point: uu_13_2016_2024-10-28
+    wording: none
+  - pasal: '103'
+    type: diubah
+    by: uu_65_2024
+    instruction: 38
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '108'
+    type: diubah
+    by: uu_65_2024
+    instruction: 39
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '109'
+    type: diubah
+    by: uu_65_2024
+    instruction: 40
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '111'
+    type: diubah
+    by: uu_65_2024
+    instruction: 41
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: 111A
+    type: disisipkan
+    by: uu_65_2024
+    instruction: 42
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '112'
+    type: diubah
+    by: uu_65_2024
+    instruction: 43
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '126'
+    type: diubah
+    by: uu_65_2024
+    instruction: 44
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '128'
+    type: diubah
+    by: uu_65_2024
+    instruction: 45
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: 128A
+    type: disisipkan
+    by: uu_65_2024
+    instruction: 46
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '132'
+    type: diubah
+    by: uu_65_2024
+    instruction: 47
+    point: uu_13_2016_2024-10-28
+    wording: read
+  - pasal: '134'
+    type: dihapus
+    by: uu_65_2024
+    instruction: 49
+    point: uu_13_2016_2024-10-28
+    wording: none
+  - pasal: '167'
+    type: diubah
+    by: uu_65_2024
+    instruction: 50
+    point: uu_13_2016_2024-10-28
+    wording: read

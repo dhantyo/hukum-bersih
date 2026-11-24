@@ -278,3 +278,30 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/49136/uu-no-4-tahun-1968
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_14_1950_1950-08-08
+    kind: asli
+    date: '1950-08-08'
+    date_basis: tanggal_pengundangan
+    text: uu_14_1950_1950-08-08.txt
+  - id: uu_14_1950_1968-06-29
+    kind: gabungan
+    date: '1968-06-29'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_4_1968
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_4_1968
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes: []

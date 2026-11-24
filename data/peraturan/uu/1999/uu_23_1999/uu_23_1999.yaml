@@ -84,3 +84,33 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/49173/uu-no-13-tahun-1968
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_23_1999_1999-05-17
+    kind: asli
+    date: '1999-05-17'
+    date_basis: tanggal_berlaku
+    text: uu_23_1999_1999-05-17.txt
+  - id: uu_23_1999_2008-10-13
+    kind: gabungan
+    date: '2008-10-13'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_2_2008
+    order: 2
+    counts:
+      diubah: 1
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 1
+    unreadable:
+    - '11'
+    not_applied: []
+    complete: false
+  changes:
+  - pasal: '11'
+    type: diubah
+    by: perppu_2_2008
+    instruction: null
+    point: uu_23_1999_2008-10-13
+    wording: unreadable

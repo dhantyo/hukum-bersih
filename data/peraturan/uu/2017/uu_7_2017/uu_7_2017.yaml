@@ -217,3 +217,99 @@ uji_materi:
     NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.
 reparse_error: 'v16: 227 pasal, stored text has 573'
 recheck: 'page no. 187; closing: no date of signing'
+history:
+  points:
+  - id: uu_7_2017_2017-08-15
+    kind: asli
+    date: '2017-08-16'
+    date_basis: tanggal_berlaku
+    text: uu_7_2017_2017-08-15.txt
+  - id: uu_7_2017_2022-12-12
+    kind: gabungan
+    date: '2022-12-12'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_1_2022
+    order: 1
+    counts:
+      diubah: 6
+      disisipkan: 3
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  - id: uu_7_2017_2023-05-04
+    kind: gabungan
+    date: '2023-05-04'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_7_2023
+    order: 2
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_7_2023
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes:
+  - pasal: 10A
+    type: disisipkan
+    by: perppu_1_2022
+    instruction: 1
+    point: uu_7_2017_2022-12-12
+    wording: read
+  - pasal: 92A
+    type: disisipkan
+    by: perppu_1_2022
+    instruction: 2
+    point: uu_7_2017_2022-12-12
+    wording: read
+  - pasal: '117'
+    type: diubah
+    by: perppu_1_2022
+    instruction: 3
+    point: uu_7_2017_2022-12-12
+    wording: read
+  - pasal: '173'
+    type: diubah
+    by: perppu_1_2022
+    instruction: 4
+    point: uu_7_2017_2022-12-12
+    wording: read
+  - pasal: '179'
+    type: diubah
+    by: perppu_1_2022
+    instruction: 5
+    point: uu_7_2017_2022-12-12
+    wording: read
+  - pasal: '186'
+    type: diubah
+    by: perppu_1_2022
+    instruction: 6
+    point: uu_7_2017_2022-12-12
+    wording: read
+  - pasal: '243'
+    type: diubah
+    by: perppu_1_2022
+    instruction: 7
+    point: uu_7_2017_2022-12-12
+    wording: read
+  - pasal: '276'
+    type: diubah
+    by: perppu_1_2022
+    instruction: 8
+    point: uu_7_2017_2022-12-12
+    wording: read
+  - pasal: 568A
+    type: disisipkan
+    by: perppu_1_2022
+    instruction: 9
+    point: uu_7_2017_2022-12-12
+    wording: read

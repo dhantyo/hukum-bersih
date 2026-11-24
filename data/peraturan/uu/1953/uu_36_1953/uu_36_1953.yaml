@@ -64,3 +64,30 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/53734/perpu-no-4-tahun-1963
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_36_1953_1953-12-18
+    kind: asli
+    date: '1953-12-28'
+    date_basis: tanggal_berlaku
+    text: uu_36_1953_1953-12-18.txt
+  - id: uu_36_1953_1963-01-01
+    kind: gabungan
+    date: '1963-01-01'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_4_1963
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: perppu_4_1963
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes: []

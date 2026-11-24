@@ -116,3 +116,389 @@ uji_materi:
     (conditionally unconstitutional), kecuali harus dimaknai “pimpinan KPK berhenti
     atau diberhentikan secara tetap setelah dijatuhi pidana berdasarkan putusan pengadilan
     yang telah memperoleh kekuatan hukum tetap.”
+history:
+  points:
+  - id: uu_30_2002_2002-12-27
+    kind: asli
+    date: '2002-12-27'
+    date_basis: tanggal_berlaku
+    text: uu_30_2002_2002-12-27.txt
+  - id: uu_30_2002_2009-09-22
+    kind: gabungan
+    date: '2009-09-22'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_4_2009
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: perppu_4_2009
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  - id: uu_30_2002_2015-02-18
+    kind: gabungan
+    date: '2015-02-18'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_1_2015
+    order: 2
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: perppu_1_2015
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  - id: uu_30_2002_2015-05-25
+    kind: gabungan
+    date: '2015-05-25'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_10_2015
+    order: 3
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_10_2015
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  - id: uu_30_2002_2019-10-17
+    kind: gabungan
+    date: '2019-10-17'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_19_2019
+    order: 2
+    counts:
+      diubah: 25
+      disisipkan: 22
+      dihapus: 3
+    missing_before: 0
+    unreadable:
+    - '3'
+    not_applied:
+    - by: uu_19_2019
+      instruction: 25
+      header: 'Di antara Bab V dan Bab VI disisipkan 1 (satu) bab yakni Bab VA yang
+        berbunyi sebagai berikut:'
+      affects_wording: false
+    complete: false
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_19_2019
+    instruction: 1
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '3'
+    type: diubah
+    by: uu_19_2019
+    instruction: 2
+    point: uu_30_2002_2019-10-17
+    wording: unreadable
+  - pasal: '5'
+    type: diubah
+    by: uu_19_2019
+    instruction: 3
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_19_2019
+    instruction: 4
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: uu_19_2019
+    instruction: 5
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '8'
+    type: diubah
+    by: uu_19_2019
+    instruction: 6
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '9'
+    type: diubah
+    by: uu_19_2019
+    instruction: 7
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '10'
+    type: diubah
+    by: uu_19_2019
+    instruction: 8
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 10A
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 9
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '11'
+    type: diubah
+    by: uu_19_2019
+    instruction: 10
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '12'
+    type: diubah
+    by: uu_19_2019
+    instruction: 11
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 12A
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 12
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 12B
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 12
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 12C
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 12
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 12D
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 12
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '13'
+    type: diubah
+    by: uu_19_2019
+    instruction: 13
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '14'
+    type: dihapus
+    by: uu_19_2019
+    instruction: 14
+    point: uu_30_2002_2019-10-17
+    wording: none
+  - pasal: '15'
+    type: diubah
+    by: uu_19_2019
+    instruction: 15
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '19'
+    type: diubah
+    by: uu_19_2019
+    instruction: 16
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '21'
+    type: diubah
+    by: uu_19_2019
+    instruction: 17
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '22'
+    type: dihapus
+    by: uu_19_2019
+    instruction: 18
+    point: uu_30_2002_2019-10-17
+    wording: none
+  - pasal: '23'
+    type: dihapus
+    by: uu_19_2019
+    instruction: 19
+    point: uu_30_2002_2019-10-17
+    wording: none
+  - pasal: '24'
+    type: diubah
+    by: uu_19_2019
+    instruction: 20
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '29'
+    type: diubah
+    by: uu_19_2019
+    instruction: 21
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '32'
+    type: diubah
+    by: uu_19_2019
+    instruction: 22
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '33'
+    type: diubah
+    by: uu_19_2019
+    instruction: 23
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '37'
+    type: diubah
+    by: uu_19_2019
+    instruction: 24
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 37A
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 26
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 37B
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 26
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 37C
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 26
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 37D
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 26
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 37E
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 26
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 37F
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 26
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 37G
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 26
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '38'
+    type: diubah
+    by: uu_19_2019
+    instruction: 27
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '40'
+    type: diubah
+    by: uu_19_2019
+    instruction: 28
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '43'
+    type: diubah
+    by: uu_19_2019
+    instruction: 29
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 43A
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 30
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '45'
+    type: diubah
+    by: uu_19_2019
+    instruction: 31
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 45A
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 32
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '46'
+    type: diubah
+    by: uu_19_2019
+    instruction: 33
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: '47'
+    type: diubah
+    by: uu_19_2019
+    instruction: 34
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 47A
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 35
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 69A
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 36
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 69B
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 36
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 69C
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 36
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 69D
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 36
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 70A
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 37
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 70B
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 37
+    point: uu_30_2002_2019-10-17
+    wording: read
+  - pasal: 70C
+    type: disisipkan
+    by: uu_19_2019
+    instruction: 37
+    point: uu_30_2002_2019-10-17
+    wording: read

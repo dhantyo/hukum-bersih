@@ -72,3 +72,30 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/49982/uu-no-5-tahun-1965
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_27_1959_1959-06-26
+    kind: asli
+    date: '1959-07-04'
+    date_basis: tanggal_berlaku
+    text: uu_27_1959_1959-06-26.txt
+  - id: uu_27_1959_1965-06-14
+    kind: gabungan
+    date: '1965-06-14'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_5_1965
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_5_1965
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes: []

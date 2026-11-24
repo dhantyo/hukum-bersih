@@ -59,3 +59,144 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/37487/uu-no-12-tahun-2016
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_14_2015_2015-11-25
+    kind: asli
+    date: '2016-01-01'
+    date_basis: tanggal_berlaku
+    text: uu_14_2015_2015-11-25.txt
+  - id: uu_14_2015_2016-07-27
+    kind: gabungan
+    date: '2016-07-27'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_12_2016
+    order: 1
+    counts:
+      diubah: 16
+      disisipkan: 2
+      dihapus: 1
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_12_2016
+      instruction: 18
+      header: Ketentuan ayat (2)
+      affects_wording: true
+    complete: false
+  changes:
+  - pasal: '3'
+    type: diubah
+    by: uu_12_2016
+    instruction: 1
+    point: uu_14_2015_2016-07-27
+    wording: read
+  - pasal: '4'
+    type: diubah
+    by: uu_12_2016
+    instruction: 2
+    point: uu_14_2015_2016-07-27
+    wording: read
+  - pasal: '5'
+    type: diubah
+    by: uu_12_2016
+    instruction: 3
+    point: uu_14_2015_2016-07-27
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_12_2016
+    instruction: 4
+    point: uu_14_2015_2016-07-27
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: uu_12_2016
+    instruction: 5
+    point: uu_14_2015_2016-07-27
+    wording: read
+  - pasal: '8'
+    type: diubah
+    by: uu_12_2016
+    instruction: 6
+    point: uu_14_2015_2016-07-27
+    wording: read
+  - pasal: '9'
+    type: diubah
+    by: uu_12_2016
+    instruction: 7
+    point: uu_14_2015_2016-07-27
+    wording: read
+  - pasal: '10'
+    type: diubah
+    by: uu_12_2016
+    instruction: 8
+    point: uu_14_2015_2016-07-27
+    wording: read
+  - pasal: '11'
+    type: diubah
+    by: uu_12_2016
+    instruction: 9
+    point: uu_14_2015_2016-07-27
+    wording: read
+  - pasal: '12'
+    type: diubah
+    by: uu_12_2016
+    instruction: 10
+    point: uu_14_2015_2016-07-27
+    wording: read
+  - pasal: '14'
+    type: diubah
+    by: uu_12_2016
+    instruction: 11
+    point: uu_14_2015_2016-07-27
+    wording: read
+  - pasal: '16'
+    type: diubah
+    by: uu_12_2016
+    instruction: 12
+    point: uu_14_2015_2016-07-27
+    wording: read
+  - pasal: '20'
+    type: diubah
+    by: uu_12_2016
+    instruction: 13
+    point: uu_14_2015_2016-07-27
+    wording: read
+  - pasal: 20A
+    type: disisipkan
+    by: uu_12_2016
+    instruction: 14
+    point: uu_14_2015_2016-07-27
+    wording: read
+  - pasal: '21'
+    type: diubah
+    by: uu_12_2016
+    instruction: 15
+    point: uu_14_2015_2016-07-27
+    wording: read
+  - pasal: 30A
+    type: disisipkan
+    by: uu_12_2016
+    instruction: 16
+    point: uu_14_2015_2016-07-27
+    wording: read
+  - pasal: '31'
+    type: diubah
+    by: uu_12_2016
+    instruction: 17
+    point: uu_14_2015_2016-07-27
+    wording: read
+  - pasal: '37'
+    type: dihapus
+    by: uu_12_2016
+    instruction: 19
+    point: uu_14_2015_2016-07-27
+    wording: none
+  - pasal: '40'
+    type: diubah
+    by: uu_12_2016
+    instruction: 20
+    point: uu_14_2015_2016-07-27
+    wording: read

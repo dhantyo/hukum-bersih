@@ -64,3 +64,51 @@ bpk:
       note: null
   tanggal_pengundangan: '2017-09-06'
 uji_materi: null
+history:
+  points:
+  - id: uu_13_2008_2008-04-28
+    kind: asli
+    date: '2008-04-28'
+    date_basis: tanggal_berlaku
+    text: uu_13_2008_2008-04-28.txt
+  - id: uu_13_2008_2009-07-17
+    kind: gabungan
+    date: '2009-07-17'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_2_2009
+    order: 1
+    counts:
+      diubah: 4
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable:
+    - '1'
+    not_applied: []
+    complete: false
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: perppu_2_2009
+    instruction: 1
+    point: uu_13_2008_2009-07-17
+    wording: unreadable
+  - pasal: '7'
+    type: diubah
+    by: perppu_2_2009
+    instruction: 2
+    point: uu_13_2008_2009-07-17
+    wording: read
+  - pasal: '32'
+    type: diubah
+    by: perppu_2_2009
+    instruction: 3
+    point: uu_13_2008_2009-07-17
+    wording: read
+  - pasal: '40'
+    type: diubah
+    by: perppu_2_2009
+    instruction: 4
+    point: uu_13_2008_2009-07-17
+    wording: read

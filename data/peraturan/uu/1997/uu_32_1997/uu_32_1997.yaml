@@ -63,3 +63,264 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/39186/uu-no-10-tahun-2011
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_32_1997_1997-12-05
+    kind: asli
+    date: '1997-12-05'
+    date_basis: tanggal_berlaku
+    text: uu_32_1997_1997-12-05.txt
+  - id: uu_32_1997_2011-08-08
+    kind: gabungan
+    date: '2011-08-08'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_10_2011
+    order: 1
+    counts:
+      diubah: 29
+      disisipkan: 8
+      dihapus: 1
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_10_2011
+      instruction: 19
+      header: 'Di antara Bab III dan Bab IV disisipkan 1 (satu) bab, yakni Bab IIIA
+        sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_10_2011
+      instruction: 20
+      header: 'Di antara Bab V dan Bab VI disisipkan 1 (satu) Bab, yakni Bab VA sehingga
+        berbunyi sebagai berikut:'
+      affects_wording: false
+    complete: true
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_10_2011
+    instruction: 1
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '2'
+    type: diubah
+    by: uu_10_2011
+    instruction: 2
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '3'
+    type: diubah
+    by: uu_10_2011
+    instruction: 3
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '4'
+    type: diubah
+    by: uu_10_2011
+    instruction: 4
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '5'
+    type: diubah
+    by: uu_10_2011
+    instruction: 5
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_10_2011
+    instruction: 6
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '10'
+    type: diubah
+    by: uu_10_2011
+    instruction: 7
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '12'
+    type: diubah
+    by: uu_10_2011
+    instruction: 8
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '13'
+    type: diubah
+    by: uu_10_2011
+    instruction: 9
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '15'
+    type: diubah
+    by: uu_10_2011
+    instruction: 10
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '16'
+    type: diubah
+    by: uu_10_2011
+    instruction: 11
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '17'
+    type: diubah
+    by: uu_10_2011
+    instruction: 12
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '18'
+    type: diubah
+    by: uu_10_2011
+    instruction: 13
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '24'
+    type: diubah
+    by: uu_10_2011
+    instruction: 14
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '25'
+    type: diubah
+    by: uu_10_2011
+    instruction: 15
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '26'
+    type: diubah
+    by: uu_10_2011
+    instruction: 16
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '27'
+    type: diubah
+    by: uu_10_2011
+    instruction: 17
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '28'
+    type: diubah
+    by: uu_10_2011
+    instruction: 18
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '49'
+    type: diubah
+    by: uu_10_2011
+    instruction: 21
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '51'
+    type: diubah
+    by: uu_10_2011
+    instruction: 22
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '52'
+    type: diubah
+    by: uu_10_2011
+    instruction: 23
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '53'
+    type: diubah
+    by: uu_10_2011
+    instruction: 24
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '57'
+    type: diubah
+    by: uu_10_2011
+    instruction: 25
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '58'
+    type: diubah
+    by: uu_10_2011
+    instruction: 26
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '63'
+    type: diubah
+    by: uu_10_2011
+    instruction: 27
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '68'
+    type: diubah
+    by: uu_10_2011
+    instruction: 28
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '71'
+    type: diubah
+    by: uu_10_2011
+    instruction: 29
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '73'
+    type: diubah
+    by: uu_10_2011
+    instruction: 30
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: 73A
+    type: disisipkan
+    by: uu_10_2011
+    instruction: 31
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: 73B
+    type: disisipkan
+    by: uu_10_2011
+    instruction: 31
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: 73C
+    type: disisipkan
+    by: uu_10_2011
+    instruction: 31
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: 73D
+    type: disisipkan
+    by: uu_10_2011
+    instruction: 31
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: 73E
+    type: disisipkan
+    by: uu_10_2011
+    instruction: 31
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: 73F
+    type: disisipkan
+    by: uu_10_2011
+    instruction: 31
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: 73G
+    type: disisipkan
+    by: uu_10_2011
+    instruction: 31
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: '76'
+    type: dihapus
+    by: uu_10_2011
+    instruction: 32
+    point: uu_32_1997_2011-08-08
+    wording: none
+  - pasal: '77'
+    type: diubah
+    by: uu_10_2011
+    instruction: 33
+    point: uu_32_1997_2011-08-08
+    wording: read
+  - pasal: 80A
+    type: disisipkan
+    by: uu_10_2011
+    instruction: 34
+    point: uu_32_1997_2011-08-08
+    wording: read

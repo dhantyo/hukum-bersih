@@ -184,3 +184,112 @@ uji_materi:
     Kabupaten/Kota dan;" dan frasa "Perda Kabupaten/Kota atau" dalam Pasal 251 ayat
     (8) Undang-Undang Nomor 23 Tahun 2014 tentang Pemerintahan Daerah bertentangan
     dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.
+history:
+  points:
+  - id: uu_23_2014_2014-09-30
+    kind: asli
+    date: '2014-10-02'
+    date_basis: tanggal_berlaku
+    text: uu_23_2014_2014-09-30.txt
+  - id: uu_23_2014_2014-10-02
+    kind: gabungan
+    date: '2014-10-02'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_2_2014
+    order: 1
+    counts:
+      diubah: 2
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  - id: uu_23_2014_2015-02-02
+    kind: gabungan
+    date: '2015-02-02'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_2_2015
+    order: 2
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_2_2015
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  - id: uu_23_2014_2015-03-18
+    kind: gabungan
+    date: '2015-03-18'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_9_2015
+    order: 2
+    counts:
+      diubah: 5
+      disisipkan: 0
+      dihapus: 1
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_9_2015
+      instruction: 2
+      header: Ketentuan ayat (1) huruf f
+      affects_wording: true
+    complete: false
+  changes:
+  - pasal: '101'
+    type: diubah
+    by: perppu_2_2014
+    instruction: 1
+    point: uu_23_2014_2014-10-02
+    wording: read
+  - pasal: '154'
+    type: diubah
+    by: perppu_2_2014
+    instruction: 2
+    point: uu_23_2014_2014-10-02
+    wording: read
+  - pasal: '63'
+    type: diubah
+    by: uu_9_2015
+    instruction: 1
+    point: uu_23_2014_2015-03-18
+    wording: read
+  - pasal: '65'
+    type: dihapus
+    by: uu_9_2015
+    instruction: 3
+    point: uu_23_2014_2015-03-18
+    wording: none
+  - pasal: '66'
+    type: diubah
+    by: uu_9_2015
+    instruction: 4
+    point: uu_23_2014_2015-03-18
+    wording: read
+  - pasal: '88'
+    type: diubah
+    by: uu_9_2015
+    instruction: 5
+    point: uu_23_2014_2015-03-18
+    wording: read
+  - pasal: '101'
+    type: diubah
+    by: uu_9_2015
+    instruction: 6
+    point: uu_23_2014_2015-03-18
+    wording: read
+  - pasal: '154'
+    type: diubah
+    by: uu_9_2015
+    instruction: 7
+    point: uu_23_2014_2015-03-18
+    wording: read

@@ -83,3 +83,178 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/38521/uu-no-1-tahun-2014
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_27_2007_2007-07-17
+    kind: asli
+    date: '2007-07-17'
+    date_basis: tanggal_berlaku
+    text: uu_27_2007_2007-07-17.txt
+  - id: uu_27_2007_2014-01-15
+    kind: gabungan
+    date: '2014-01-15'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_1_2014
+    order: 1
+    counts:
+      diubah: 17
+      disisipkan: 7
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_1_2014
+      instruction: 3
+      header: Judul Bagian Kesatu pada
+      affects_wording: false
+    - by: uu_1_2014
+      instruction: 4
+      header: 'Bab V diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    complete: true
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_1_2014
+    instruction: 1
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: '14'
+    type: diubah
+    by: uu_1_2014
+    instruction: 2
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: '16'
+    type: diubah
+    by: uu_1_2014
+    instruction: 5
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: '17'
+    type: diubah
+    by: uu_1_2014
+    instruction: 6
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: '18'
+    type: diubah
+    by: uu_1_2014
+    instruction: 7
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: '19'
+    type: diubah
+    by: uu_1_2014
+    instruction: 8
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: '20'
+    type: diubah
+    by: uu_1_2014
+    instruction: 9
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: '21'
+    type: diubah
+    by: uu_1_2014
+    instruction: 10
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: '22'
+    type: diubah
+    by: uu_1_2014
+    instruction: 11
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: 22A
+    type: disisipkan
+    by: uu_1_2014
+    instruction: 12
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: 22B
+    type: disisipkan
+    by: uu_1_2014
+    instruction: 12
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: 22C
+    type: disisipkan
+    by: uu_1_2014
+    instruction: 12
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: '23'
+    type: diubah
+    by: uu_1_2014
+    instruction: 13
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: 26A
+    type: disisipkan
+    by: uu_1_2014
+    instruction: 14
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: '30'
+    type: diubah
+    by: uu_1_2014
+    instruction: 15
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: '50'
+    type: diubah
+    by: uu_1_2014
+    instruction: 16
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: '51'
+    type: diubah
+    by: uu_1_2014
+    instruction: 17
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: '60'
+    type: diubah
+    by: uu_1_2014
+    instruction: 18
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: '63'
+    type: diubah
+    by: uu_1_2014
+    instruction: 19
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: '71'
+    type: diubah
+    by: uu_1_2014
+    instruction: 20
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: '75'
+    type: diubah
+    by: uu_1_2014
+    instruction: 21
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: 75A
+    type: disisipkan
+    by: uu_1_2014
+    instruction: 22
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: 78A
+    type: disisipkan
+    by: uu_1_2014
+    instruction: 23
+    point: uu_27_2007_2014-01-15
+    wording: read
+  - pasal: 78B
+    type: disisipkan
+    by: uu_1_2014
+    instruction: 23
+    point: uu_27_2007_2014-01-15
+    wording: read

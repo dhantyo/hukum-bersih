@@ -63,3 +63,63 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/25995/uu-no-3-tahun-1950
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_22_2002_2002-10-22
+    kind: asli
+    date: '2002-10-22'
+    date_basis: tanggal_berlaku
+    text: uu_22_2002_2002-10-22.txt
+  - id: uu_22_2002_2010-08-23
+    kind: gabungan
+    date: '2010-08-23'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_5_2010
+    order: 1
+    counts:
+      diubah: 4
+      disisipkan: 2
+      dihapus: 0
+    missing_before: 0
+    unreadable:
+    - 15A
+    not_applied: []
+    complete: false
+  changes:
+  - pasal: '2'
+    type: diubah
+    by: uu_5_2010
+    instruction: 1
+    point: uu_22_2002_2010-08-23
+    wording: read
+  - pasal: 6A
+    type: disisipkan
+    by: uu_5_2010
+    instruction: 2
+    point: uu_22_2002_2010-08-23
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: uu_5_2010
+    instruction: 3
+    point: uu_22_2002_2010-08-23
+    wording: read
+  - pasal: '10'
+    type: diubah
+    by: uu_5_2010
+    instruction: 4
+    point: uu_22_2002_2010-08-23
+    wording: read
+  - pasal: '15'
+    type: diubah
+    by: uu_5_2010
+    instruction: 5
+    point: uu_22_2002_2010-08-23
+    wording: read
+  - pasal: 15A
+    type: disisipkan
+    by: uu_5_2010
+    instruction: 5
+    point: uu_22_2002_2010-08-23
+    wording: unreadable

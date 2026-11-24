@@ -66,3 +66,57 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/38780/uu-no-37-tahun-2009
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_9_1992_1992-03-31
+    kind: asli
+    date: '1992-03-31'
+    date_basis: tanggal_berlaku
+    text: uu_9_1992_1992-03-31.txt
+  - id: uu_9_1992_2009-07-17
+    kind: gabungan
+    date: '2009-07-17'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_3_2009
+    order: 1
+    counts:
+      diubah: 1
+      disisipkan: 0
+      dihapus: 1
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  - id: uu_9_1992_2009-10-14
+    kind: gabungan
+    date: '2009-10-14'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_37_2009
+    order: 2
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_37_2009
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes:
+  - pasal: '29'
+    type: diubah
+    by: perppu_3_2009
+    instruction: 1
+    point: uu_9_1992_2009-07-17
+    wording: read
+  - pasal: '33'
+    type: dihapus
+    by: perppu_3_2009
+    instruction: 2
+    point: uu_9_1992_2009-07-17
+    wording: none

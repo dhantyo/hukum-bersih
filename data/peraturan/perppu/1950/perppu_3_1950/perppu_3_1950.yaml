@@ -29,3 +29,29 @@ bpk:
   status_peraturan: null
   no_pdf_checked: '2026-11-24'
 uji_materi: null
+history:
+  points:
+  - id: perppu_3_1950_1950
+    kind: asli
+    date: '1950'
+    date_basis: year
+  - id: perppu_3_1950_1959-07-04
+    kind: gabungan
+    date: '1959-07-04'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_25_1959
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_25_1959
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes: []

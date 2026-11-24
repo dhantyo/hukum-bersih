@@ -69,3 +69,234 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/82689/uu-no-5-tahun-2018
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_15_2003_2003-04-04
+    kind: asli
+    date: '2003-03-04'
+    date_basis: tanggal_berlaku
+    text: uu_15_2003_2003-04-04.txt
+  - id: uu_15_2003_2018-06-22
+    kind: gabungan
+    date: '2018-06-22'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_5_2018
+    order: 1
+    counts:
+      diubah: 12
+      disisipkan: 14
+      dihapus: 7
+    missing_before: 0
+    unreadable:
+    - '43'
+    not_applied:
+    - by: uu_5_2018
+      instruction: 18
+      header: 'Judul BAB VI diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_5_2018
+      instruction: 29
+      header: 'Di antara BAB VII dan BAB VIII ditambahkan 3 (tiga) BAB baru, yakni
+        BAB VIIA, BAB VIIB, dan BAB VIIC sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    complete: false
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_5_2018
+    instruction: 1
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: '5'
+    type: diubah
+    by: uu_5_2018
+    instruction: 2
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_5_2018
+    instruction: 3
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: 10A
+    type: disisipkan
+    by: uu_5_2018
+    instruction: 4
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: 12A
+    type: disisipkan
+    by: uu_5_2018
+    instruction: 5
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: 12B
+    type: disisipkan
+    by: uu_5_2018
+    instruction: 5
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: 13A
+    type: disisipkan
+    by: uu_5_2018
+    instruction: 6
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: '14'
+    type: diubah
+    by: uu_5_2018
+    instruction: 7
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: '15'
+    type: diubah
+    by: uu_5_2018
+    instruction: 8
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: 16A
+    type: disisipkan
+    by: uu_5_2018
+    instruction: 9
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: '25'
+    type: diubah
+    by: uu_5_2018
+    instruction: 10
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: '28'
+    type: diubah
+    by: uu_5_2018
+    instruction: 11
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: 28A
+    type: disisipkan
+    by: uu_5_2018
+    instruction: 12
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: '31'
+    type: diubah
+    by: uu_5_2018
+    instruction: 13
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: 31A
+    type: disisipkan
+    by: uu_5_2018
+    instruction: 14
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: '33'
+    type: diubah
+    by: uu_5_2018
+    instruction: 15
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: '34'
+    type: diubah
+    by: uu_5_2018
+    instruction: 16
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: 34A
+    type: disisipkan
+    by: uu_5_2018
+    instruction: 17
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: 35A
+    type: disisipkan
+    by: uu_5_2018
+    instruction: 19
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: 35B
+    type: disisipkan
+    by: uu_5_2018
+    instruction: 19
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: '36'
+    type: diubah
+    by: uu_5_2018
+    instruction: 20
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: 36A
+    type: disisipkan
+    by: uu_5_2018
+    instruction: 21
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: 36B
+    type: disisipkan
+    by: uu_5_2018
+    instruction: 21
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: '37'
+    type: dihapus
+    by: uu_5_2018
+    instruction: 22
+    point: uu_15_2003_2018-06-22
+    wording: none
+  - pasal: '38'
+    type: dihapus
+    by: uu_5_2018
+    instruction: 23
+    point: uu_15_2003_2018-06-22
+    wording: none
+  - pasal: '39'
+    type: dihapus
+    by: uu_5_2018
+    instruction: 24
+    point: uu_15_2003_2018-06-22
+    wording: none
+  - pasal: '40'
+    type: dihapus
+    by: uu_5_2018
+    instruction: 25
+    point: uu_15_2003_2018-06-22
+    wording: none
+  - pasal: '41'
+    type: dihapus
+    by: uu_5_2018
+    instruction: 26
+    point: uu_15_2003_2018-06-22
+    wording: none
+  - pasal: '42'
+    type: dihapus
+    by: uu_5_2018
+    instruction: 27
+    point: uu_15_2003_2018-06-22
+    wording: none
+  - pasal: '43'
+    type: diubah
+    by: uu_5_2018
+    instruction: 28
+    point: uu_15_2003_2018-06-22
+    wording: unreadable
+  - pasal: '46'
+    type: dihapus
+    by: uu_5_2018
+    instruction: 30
+    point: uu_15_2003_2018-06-22
+    wording: none
+  - pasal: 46A
+    type: disisipkan
+    by: uu_5_2018
+    instruction: 31
+    point: uu_15_2003_2018-06-22
+    wording: read
+  - pasal: 46B
+    type: disisipkan
+    by: uu_5_2018
+    instruction: 31
+    point: uu_15_2003_2018-06-22
+    wording: read

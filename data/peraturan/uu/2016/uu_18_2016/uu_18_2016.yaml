@@ -56,3 +56,140 @@ bpk:
     archive_url: null
   status_peraturan: null
 uji_materi: null
+history:
+  points:
+  - id: uu_18_2016_2016-11-17
+    kind: asli
+    date: '2017-01-01'
+    date_basis: tanggal_berlaku
+    text: uu_18_2016_2016-11-17.txt
+  - id: uu_18_2016_2017-08-21
+    kind: gabungan
+    date: '2017-08-21'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_8_2017
+    order: 1
+    counts:
+      diubah: 18
+      disisipkan: 0
+      dihapus: 1
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  changes:
+  - pasal: '3'
+    type: diubah
+    by: uu_8_2017
+    instruction: 1
+    point: uu_18_2016_2017-08-21
+    wording: read
+  - pasal: '4'
+    type: diubah
+    by: uu_8_2017
+    instruction: 2
+    point: uu_18_2016_2017-08-21
+    wording: read
+  - pasal: '5'
+    type: diubah
+    by: uu_8_2017
+    instruction: 3
+    point: uu_18_2016_2017-08-21
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_8_2017
+    instruction: 4
+    point: uu_18_2016_2017-08-21
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: uu_8_2017
+    instruction: 5
+    point: uu_18_2016_2017-08-21
+    wording: read
+  - pasal: '8'
+    type: diubah
+    by: uu_8_2017
+    instruction: 6
+    point: uu_18_2016_2017-08-21
+    wording: read
+  - pasal: '9'
+    type: diubah
+    by: uu_8_2017
+    instruction: 7
+    point: uu_18_2016_2017-08-21
+    wording: read
+  - pasal: '10'
+    type: diubah
+    by: uu_8_2017
+    instruction: 8
+    point: uu_18_2016_2017-08-21
+    wording: read
+  - pasal: '11'
+    type: diubah
+    by: uu_8_2017
+    instruction: 9
+    point: uu_18_2016_2017-08-21
+    wording: unreadable
+  - pasal: '11'
+    type: dihapus
+    by: uu_8_2017
+    instruction: 10
+    point: uu_18_2016_2017-08-21
+    wording: none
+  - pasal: '12'
+    type: diubah
+    by: uu_8_2017
+    instruction: 11
+    point: uu_18_2016_2017-08-21
+    wording: read
+  - pasal: '14'
+    type: diubah
+    by: uu_8_2017
+    instruction: 12
+    point: uu_18_2016_2017-08-21
+    wording: read
+  - pasal: '16'
+    type: diubah
+    by: uu_8_2017
+    instruction: 13
+    point: uu_18_2016_2017-08-21
+    wording: read
+  - pasal: '18'
+    type: diubah
+    by: uu_8_2017
+    instruction: 14
+    point: uu_18_2016_2017-08-21
+    wording: read
+  - pasal: '21'
+    type: diubah
+    by: uu_8_2017
+    instruction: 15
+    point: uu_18_2016_2017-08-21
+    wording: read
+  - pasal: '22'
+    type: diubah
+    by: uu_8_2017
+    instruction: 16
+    point: uu_18_2016_2017-08-21
+    wording: read
+  - pasal: '31'
+    type: diubah
+    by: uu_8_2017
+    instruction: 17
+    point: uu_18_2016_2017-08-21
+    wording: read
+  - pasal: '40'
+    type: diubah
+    by: uu_8_2017
+    instruction: 18
+    point: uu_18_2016_2017-08-21
+    wording: read
+  - pasal: '41'
+    type: diubah
+    by: uu_8_2017
+    instruction: 19
+    point: uu_18_2016_2017-08-21
+    wording: read

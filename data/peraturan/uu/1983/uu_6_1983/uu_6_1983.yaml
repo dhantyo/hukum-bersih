@@ -130,3 +130,247 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/49575/uu-no-8-tahun-1967
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_6_1983_1983-12-31
+    kind: asli
+    date: '1984-01-01'
+    date_basis: tanggal_berlaku
+    text: uu_6_1983_1983-12-31.txt
+  - id: uu_6_1983_1995-01-01
+    kind: gabungan
+    date: '1995-01-01'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_9_1994
+    order: 1
+    counts:
+      diubah: 31
+      disisipkan: 0
+      dihapus: 2
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_9_1994
+      instruction: 2
+      header: 'Judul Bab II diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    complete: true
+  - id: uu_6_1983_2009-01-01
+    kind: gabungan
+    date: '2009-01-01'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_5_2008
+    order: 4
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 2
+    unreadable: []
+    not_applied:
+    - by: perppu_5_2008
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_9_1994
+    instruction: 1
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '2'
+    type: diubah
+    by: uu_9_1994
+    instruction: 3
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '3'
+    type: diubah
+    by: uu_9_1994
+    instruction: 4
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_9_1994
+    instruction: 5
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: uu_9_1994
+    instruction: 6
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '8'
+    type: diubah
+    by: uu_9_1994
+    instruction: 7
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '9'
+    type: diubah
+    by: uu_9_1994
+    instruction: 8
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '11'
+    type: diubah
+    by: uu_9_1994
+    instruction: 9
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '13'
+    type: diubah
+    by: uu_9_1994
+    instruction: 10
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '14'
+    type: diubah
+    by: uu_9_1994
+    instruction: 11
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '15'
+    type: diubah
+    by: uu_9_1994
+    instruction: 12
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '16'
+    type: diubah
+    by: uu_9_1994
+    instruction: 13
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '17'
+    type: diubah
+    by: uu_9_1994
+    instruction: 14
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '18'
+    type: diubah
+    by: uu_9_1994
+    instruction: 15
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '20'
+    type: diubah
+    by: uu_9_1994
+    instruction: 16
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '21'
+    type: diubah
+    by: uu_9_1994
+    instruction: 17
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '22'
+    type: diubah
+    by: uu_9_1994
+    instruction: 18
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '23'
+    type: diubah
+    by: uu_9_1994
+    instruction: 19
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '25'
+    type: diubah
+    by: uu_9_1994
+    instruction: 20
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '27'
+    type: diubah
+    by: uu_9_1994
+    instruction: 21
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '28'
+    type: diubah
+    by: uu_9_1994
+    instruction: 22
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '29'
+    type: diubah
+    by: uu_9_1994
+    instruction: 23
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '31'
+    type: diubah
+    by: uu_9_1994
+    instruction: 24
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '32'
+    type: diubah
+    by: uu_9_1994
+    instruction: 25
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '34'
+    type: diubah
+    by: uu_9_1994
+    instruction: 26
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '35'
+    type: diubah
+    by: uu_9_1994
+    instruction: 27
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '38'
+    type: diubah
+    by: uu_9_1994
+    instruction: 28
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '39'
+    type: diubah
+    by: uu_9_1994
+    instruction: 29
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '41'
+    type: diubah
+    by: uu_9_1994
+    instruction: 30
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '42'
+    type: dihapus
+    by: uu_9_1994
+    instruction: 31
+    point: uu_6_1983_1995-01-01
+    wording: none
+  - pasal: '43'
+    type: diubah
+    by: uu_9_1994
+    instruction: 32
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '44'
+    type: diubah
+    by: uu_9_1994
+    instruction: 33
+    point: uu_6_1983_1995-01-01
+    wording: read
+  - pasal: '47'
+    type: dihapus
+    by: uu_9_1994
+    instruction: 34
+    point: uu_6_1983_1995-01-01
+    wording: none

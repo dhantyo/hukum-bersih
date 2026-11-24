@@ -76,3 +76,284 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/40503/uu-no-10-tahun-2004
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_12_2011_2011-08-12
+    kind: asli
+    date: '2011-08-12'
+    date_basis: tanggal_berlaku
+    text: uu_12_2011_2011-08-12.txt
+  - id: uu_12_2011_2019-10-04
+    kind: gabungan
+    date: '2019-10-04'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_15_2019
+    order: 1
+    counts:
+      diubah: 13
+      disisipkan: 4
+      dihapus: 0
+    missing_before: 0
+    unreadable:
+    - '72'
+    not_applied:
+    - by: uu_15_2019
+      instruction: 13
+      header: Penjelasan Pasal 72 diubah sebagaimana tercantum dalam penjelasan pasal
+        demi pasal. 13.
+      affects_wording: false
+    - by: uu_15_2019
+      instruction: 16
+      header: 'Di antara BAB X dan BAB XI disisipkan 1 (satu) bab, yakni BAB XA sehingga
+        berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_15_2019
+      instruction: 18
+      header: 'Di antara BAB XII dan BAB XIII disisipkan 1 (satu) bab, yakni BAB XIIA
+        sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    complete: false
+  - id: uu_12_2011_2022-06-16
+    kind: gabungan
+    date: '2022-06-16'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_13_2022
+    order: 2
+    counts:
+      diubah: 11
+      disisipkan: 5
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_13_2022
+      instruction: 1
+      header: Penjelasan Pasal 5 huruf g diubah sebagaimana tercantum dalam penjelasan.
+      affects_wording: false
+    - by: uu_13_2022
+      instruction: 3
+      header: 'Setelah Bagian Keenam Bab IV ditambahkan 1 (satu) bagian, yakni Bagian
+        Ketujuh sehingga berbunyi sebagai berikut:'
+      affects_wording: true
+    - by: uu_13_2022
+      instruction: 10
+      header: Penjelasan Pasal 78 diubah sebagaimana tercantum dalam penjelasan.
+      affects_wording: false
+    - by: uu_13_2022
+      instruction: 12
+      header: Penjelasan Pasal 95 diubah sebagaimana tercantum dalam penjelasan.
+      affects_wording: false
+    - by: uu_13_2022
+      instruction: 18
+      header: Ketentuan huruf D Bab II sebagaimana tercantum dalam Lampiran I Undang-Undang
+        Nomor 12 Tahun 2011 tentang Pembentukan Peraturan Perundang-undangan sebagaimana
+        t
+      affects_wording: true
+    - by: uu_13_2022
+      instruction: 19
+      header: Ketentuan angka 2, angka 3, angka 4, angka 5, angka 6, angka 7, angka
+        9, angka 10, angka 19, angka 31, angka 33, angka 77, angka 98, angka 104,
+        angka 111, angka
+      affects_wording: true
+    complete: false
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_15_2019
+    instruction: 1
+    point: uu_12_2011_2019-10-04
+    wording: read
+  - pasal: '20'
+    type: diubah
+    by: uu_15_2019
+    instruction: 2
+    point: uu_12_2011_2019-10-04
+    wording: read
+  - pasal: '21'
+    type: diubah
+    by: uu_15_2019
+    instruction: 3
+    point: uu_12_2011_2019-10-04
+    wording: read
+  - pasal: '23'
+    type: diubah
+    by: uu_15_2019
+    instruction: 4
+    point: uu_12_2011_2019-10-04
+    wording: read
+  - pasal: '26'
+    type: diubah
+    by: uu_15_2019
+    instruction: 5
+    point: uu_12_2011_2019-10-04
+    wording: read
+  - pasal: '47'
+    type: diubah
+    by: uu_15_2019
+    instruction: 6
+    point: uu_12_2011_2019-10-04
+    wording: read
+  - pasal: '49'
+    type: diubah
+    by: uu_15_2019
+    instruction: 7
+    point: uu_12_2011_2019-10-04
+    wording: read
+  - pasal: '54'
+    type: diubah
+    by: uu_15_2019
+    instruction: 8
+    point: uu_12_2011_2019-10-04
+    wording: read
+  - pasal: '55'
+    type: diubah
+    by: uu_15_2019
+    instruction: 9
+    point: uu_12_2011_2019-10-04
+    wording: read
+  - pasal: '58'
+    type: diubah
+    by: uu_15_2019
+    instruction: 10
+    point: uu_12_2011_2019-10-04
+    wording: read
+  - pasal: 71A
+    type: disisipkan
+    by: uu_15_2019
+    instruction: 11
+    point: uu_12_2011_2019-10-04
+    wording: read
+  - pasal: '72'
+    type: diubah
+    by: uu_15_2019
+    instruction: 12
+    point: uu_12_2011_2019-10-04
+    wording: unreadable
+  - pasal: '85'
+    type: diubah
+    by: uu_15_2019
+    instruction: 14
+    point: uu_12_2011_2019-10-04
+    wording: read
+  - pasal: '91'
+    type: diubah
+    by: uu_15_2019
+    instruction: 15
+    point: uu_12_2011_2019-10-04
+    wording: read
+  - pasal: 95A
+    type: disisipkan
+    by: uu_15_2019
+    instruction: 17
+    point: uu_12_2011_2019-10-04
+    wording: read
+  - pasal: 95B
+    type: disisipkan
+    by: uu_15_2019
+    instruction: 17
+    point: uu_12_2011_2019-10-04
+    wording: read
+  - pasal: 99A
+    type: disisipkan
+    by: uu_15_2019
+    instruction: 19
+    point: uu_12_2011_2019-10-04
+    wording: read
+  - pasal: '9'
+    type: diubah
+    by: uu_13_2022
+    instruction: 2
+    point: uu_12_2011_2022-06-16
+    wording: read
+  - pasal: 42A
+    type: disisipkan
+    by: uu_13_2022
+    instruction: 4
+    point: uu_12_2011_2022-06-16
+    wording: read
+  - pasal: '49'
+    type: diubah
+    by: uu_13_2022
+    instruction: 5
+    point: uu_12_2011_2022-06-16
+    wording: read
+  - pasal: '58'
+    type: diubah
+    by: uu_13_2022
+    instruction: 6
+    point: uu_12_2011_2022-06-16
+    wording: read
+  - pasal: '64'
+    type: diubah
+    by: uu_13_2022
+    instruction: 7
+    point: uu_12_2011_2022-06-16
+    wording: read
+  - pasal: '72'
+    type: diubah
+    by: uu_13_2022
+    instruction: 8
+    point: uu_12_2011_2022-06-16
+    wording: read
+  - pasal: '73'
+    type: diubah
+    by: uu_13_2022
+    instruction: 9
+    point: uu_12_2011_2022-06-16
+    wording: read
+  - pasal: '85'
+    type: diubah
+    by: uu_13_2022
+    instruction: 11
+    point: uu_12_2011_2022-06-16
+    wording: read
+  - pasal: 95A
+    type: diubah
+    by: uu_13_2022
+    instruction: 13
+    point: uu_12_2011_2022-06-16
+    wording: read
+  - pasal: '96'
+    type: diubah
+    by: uu_13_2022
+    instruction: 14
+    point: uu_12_2011_2022-06-16
+    wording: read
+  - pasal: 97A
+    type: disisipkan
+    by: uu_13_2022
+    instruction: 15
+    point: uu_12_2011_2022-06-16
+    wording: read
+  - pasal: 97B
+    type: disisipkan
+    by: uu_13_2022
+    instruction: 15
+    point: uu_12_2011_2022-06-16
+    wording: read
+  - pasal: 97C
+    type: disisipkan
+    by: uu_13_2022
+    instruction: 15
+    point: uu_12_2011_2022-06-16
+    wording: read
+  - pasal: 97D
+    type: disisipkan
+    by: uu_13_2022
+    instruction: 15
+    point: uu_12_2011_2022-06-16
+    wording: read
+  - pasal: '98'
+    type: diubah
+    by: uu_13_2022
+    instruction: 16
+    point: uu_12_2011_2022-06-16
+    wording: read
+  - pasal: '99'
+    type: diubah
+    by: uu_13_2022
+    instruction: 17
+    point: uu_12_2011_2022-06-16
+    wording: read

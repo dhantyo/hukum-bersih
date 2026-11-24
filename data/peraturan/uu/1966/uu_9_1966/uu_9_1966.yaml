@@ -71,3 +71,30 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/49774/uu-no-1-tahun-1966
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_9_1966_1966-11-08
+    kind: asli
+    date: '1966-11-08'
+    date_basis: tanggal_berlaku
+    text: uu_9_1966_1966-11-08.txt
+  - id: uu_9_1966_1967-01-10
+    kind: gabungan
+    date: '1967-01-10'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_2_1967
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_2_1967
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes: []

@@ -69,3 +69,205 @@ uji_materi:
     Pasal 34 ayat (3) Undang-Undang Republik Indonesia Nomor 4 Tahun 2004 tentang
     Kekuasaan Kehakiman, bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai
     kekuatan hukum mengikat
+history:
+  points:
+  - id: uu_22_2004_2004-08-13
+    kind: asli
+    date: '2004-08-13'
+    date_basis: tanggal_berlaku
+    text: uu_22_2004_2004-08-13.txt
+  - id: uu_22_2004_2011-11-09
+    kind: gabungan
+    date: '2011-11-09'
+    date_basis: tanggal_penetapan
+    after:
+    - uu_18_2011
+    order: 1
+    counts:
+      diubah: 15
+      disisipkan: 11
+      dihapus: 3
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_18_2011
+      instruction: 17
+      header: 'Ketentuan Bagian Pertama Pengangkatan diubah sehingga berbunyi sebagai
+        berikut:'
+      affects_wording: true
+    complete: false
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_18_2011
+    instruction: 1
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: '3'
+    type: diubah
+    by: uu_18_2011
+    instruction: 2
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_18_2011
+    instruction: 3
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: '11'
+    type: diubah
+    by: uu_18_2011
+    instruction: 4
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: '12'
+    type: diubah
+    by: uu_18_2011
+    instruction: 5
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: '13'
+    type: diubah
+    by: uu_18_2011
+    instruction: 6
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: '18'
+    type: diubah
+    by: uu_18_2011
+    instruction: 7
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: 19A
+    type: disisipkan
+    by: uu_18_2011
+    instruction: 8
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: '20'
+    type: diubah
+    by: uu_18_2011
+    instruction: 9
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: 20A
+    type: disisipkan
+    by: uu_18_2011
+    instruction: 10
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: '21'
+    type: dihapus
+    by: uu_18_2011
+    instruction: 11
+    point: uu_22_2004_2011-11-09
+    wording: none
+  - pasal: '22'
+    type: diubah
+    by: uu_18_2011
+    instruction: 12
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: 22A
+    type: disisipkan
+    by: uu_18_2011
+    instruction: 13
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: 22B
+    type: disisipkan
+    by: uu_18_2011
+    instruction: 13
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: 22C
+    type: disisipkan
+    by: uu_18_2011
+    instruction: 13
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: 22D
+    type: disisipkan
+    by: uu_18_2011
+    instruction: 13
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: 22E
+    type: disisipkan
+    by: uu_18_2011
+    instruction: 13
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: 22F
+    type: disisipkan
+    by: uu_18_2011
+    instruction: 13
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: 22G
+    type: disisipkan
+    by: uu_18_2011
+    instruction: 13
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: '23'
+    type: dihapus
+    by: uu_18_2011
+    instruction: 14
+    point: uu_22_2004_2011-11-09
+    wording: none
+  - pasal: '24'
+    type: dihapus
+    by: uu_18_2011
+    instruction: 15
+    point: uu_22_2004_2011-11-09
+    wording: none
+  - pasal: '25'
+    type: diubah
+    by: uu_18_2011
+    instruction: 16
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: '26'
+    type: diubah
+    by: uu_18_2011
+    instruction: 18
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: '28'
+    type: diubah
+    by: uu_18_2011
+    instruction: 19
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: '29'
+    type: diubah
+    by: uu_18_2011
+    instruction: 20
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: '37'
+    type: diubah
+    by: uu_18_2011
+    instruction: 21
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: '38'
+    type: diubah
+    by: uu_18_2011
+    instruction: 22
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: 40A
+    type: disisipkan
+    by: uu_18_2011
+    instruction: 23
+    point: uu_22_2004_2011-11-09
+    wording: read
+  - pasal: 40B
+    type: disisipkan
+    by: uu_18_2011
+    instruction: 23
+    point: uu_22_2004_2011-11-09
+    wording: read

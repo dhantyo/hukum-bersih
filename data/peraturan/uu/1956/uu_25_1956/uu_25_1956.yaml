@@ -91,3 +91,30 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/52685/uudrt-no-2-tahun-1953
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_25_1956_1956-11-29
+    kind: asli
+    date: '1956-12-07'
+    date_basis: tanggal_pengundangan
+    text: uu_25_1956_1956-11-29.txt
+  - id: uu_25_1956_1958-07-02
+    kind: gabungan
+    date: '1958-07-02'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_21_1958
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_21_1958
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes: []

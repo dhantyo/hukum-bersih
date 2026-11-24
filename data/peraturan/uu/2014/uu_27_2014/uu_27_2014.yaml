@@ -59,3 +59,135 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/37679/uu-no-3-tahun-2015
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_27_2014_2014-10-14
+    kind: asli
+    date: '2014-10-14'
+    date_basis: tanggal_berlaku
+    text: uu_27_2014_2014-10-14.txt
+  - id: uu_27_2014_2015-03-06
+    kind: gabungan
+    date: '2015-03-06'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_3_2015
+    order: 1
+    counts:
+      diubah: 14
+      disisipkan: 3
+      dihapus: 0
+    missing_before: 0
+    unreadable:
+    - 23B
+    not_applied:
+    - by: uu_3_2015
+      instruction: 15
+      header: Ketentuan Pasal 26 tetap dengan perubahan penjelasan Pasal 26 ayat (3)
+        sehingga penjelasan Pasal 26 menjadi sebagaimana ditetapkan dalam penjelasan
+        pasal demi p
+      affects_wording: false
+    complete: false
+  changes:
+  - pasal: '3'
+    type: diubah
+    by: uu_3_2015
+    instruction: 1
+    point: uu_27_2014_2015-03-06
+    wording: read
+  - pasal: '4'
+    type: diubah
+    by: uu_3_2015
+    instruction: 2
+    point: uu_27_2014_2015-03-06
+    wording: read
+  - pasal: '5'
+    type: diubah
+    by: uu_3_2015
+    instruction: 3
+    point: uu_27_2014_2015-03-06
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_3_2015
+    instruction: 4
+    point: uu_27_2014_2015-03-06
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: uu_3_2015
+    instruction: 5
+    point: uu_27_2014_2015-03-06
+    wording: read
+  - pasal: '8'
+    type: diubah
+    by: uu_3_2015
+    instruction: 6
+    point: uu_27_2014_2015-03-06
+    wording: read
+  - pasal: '9'
+    type: diubah
+    by: uu_3_2015
+    instruction: 7
+    point: uu_27_2014_2015-03-06
+    wording: read
+  - pasal: '10'
+    type: diubah
+    by: uu_3_2015
+    instruction: 8
+    point: uu_27_2014_2015-03-06
+    wording: read
+  - pasal: '11'
+    type: diubah
+    by: uu_3_2015
+    instruction: 9
+    point: uu_27_2014_2015-03-06
+    wording: read
+  - pasal: '12'
+    type: diubah
+    by: uu_3_2015
+    instruction: 10
+    point: uu_27_2014_2015-03-06
+    wording: read
+  - pasal: '13'
+    type: diubah
+    by: uu_3_2015
+    instruction: 11
+    point: uu_27_2014_2015-03-06
+    wording: read
+  - pasal: '17'
+    type: diubah
+    by: uu_3_2015
+    instruction: 12
+    point: uu_27_2014_2015-03-06
+    wording: read
+  - pasal: '18'
+    type: diubah
+    by: uu_3_2015
+    instruction: 13
+    point: uu_27_2014_2015-03-06
+    wording: read
+  - pasal: 23A
+    type: disisipkan
+    by: uu_3_2015
+    instruction: 14
+    point: uu_27_2014_2015-03-06
+    wording: read
+  - pasal: 23B
+    type: disisipkan
+    by: uu_3_2015
+    instruction: 14
+    point: uu_27_2014_2015-03-06
+    wording: unreadable
+  - pasal: 31A
+    type: disisipkan
+    by: uu_3_2015
+    instruction: 16
+    point: uu_27_2014_2015-03-06
+    wording: read
+  - pasal: '32'
+    type: diubah
+    by: uu_3_2015
+    instruction: 17
+    point: uu_27_2014_2015-03-06
+    wording: read

@@ -58,3 +58,378 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/46956/uu-no-8-tahun-1985
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_17_2013_2013-07-22
+    kind: asli
+    date: '2013-07-22'
+    date_basis: tanggal_berlaku
+    text: uu_17_2013_2013-07-22.txt
+  - id: uu_17_2013_2017-07-10
+    kind: gabungan
+    date: '2017-07-10'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_2_2017
+    order: 1
+    counts:
+      diubah: 5
+      disisipkan: 3
+      dihapus: 19
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: perppu_2_2017
+      instruction: 26
+      header: 'Di antara BAB XVII dan BAB XVIII disisipkan 1 (satu) BAB, yakni BAB
+        XVIIA yang berbunyi sebagai berikut:'
+      affects_wording: false
+    complete: true
+  - id: uu_17_2013_2017-11-22
+    kind: gabungan
+    date: '2017-11-22'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_16_2017
+    order: 2
+    counts:
+      diubah: 5
+      disisipkan: 3
+      dihapus: 19
+    missing_before: 0
+    unreadable:
+    - '1'
+    - '59'
+    - '60'
+    - '61'
+    - '62'
+    - 80A
+    - 82A
+    - 83A
+    not_applied: []
+    complete: false
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: perppu_2_2017
+    instruction: 1
+    point: uu_17_2013_2017-07-10
+    wording: read
+  - pasal: '59'
+    type: diubah
+    by: perppu_2_2017
+    instruction: 2
+    point: uu_17_2013_2017-07-10
+    wording: read
+  - pasal: '60'
+    type: diubah
+    by: perppu_2_2017
+    instruction: 3
+    point: uu_17_2013_2017-07-10
+    wording: read
+  - pasal: '61'
+    type: diubah
+    by: perppu_2_2017
+    instruction: 4
+    point: uu_17_2013_2017-07-10
+    wording: read
+  - pasal: '62'
+    type: diubah
+    by: perppu_2_2017
+    instruction: 5
+    point: uu_17_2013_2017-07-10
+    wording: read
+  - pasal: '63'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 6
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: '64'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 7
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: '65'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 8
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: '66'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 9
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: '67'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 10
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: '68'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 11
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: '69'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 12
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: '70'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 13
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: '71'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 14
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: '72'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 15
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: '73'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 16
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: '74'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 17
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: '75'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 18
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: '76'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 19
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: '77'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 20
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: '78'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 21
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: '79'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 22
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: '80'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 23
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: 80A
+    type: disisipkan
+    by: perppu_2_2017
+    instruction: 24
+    point: uu_17_2013_2017-07-10
+    wording: read
+  - pasal: '81'
+    type: dihapus
+    by: perppu_2_2017
+    instruction: 25
+    point: uu_17_2013_2017-07-10
+    wording: none
+  - pasal: 82A
+    type: disisipkan
+    by: perppu_2_2017
+    instruction: 27
+    point: uu_17_2013_2017-07-10
+    wording: read
+  - pasal: 83A
+    type: disisipkan
+    by: perppu_2_2017
+    instruction: 28
+    point: uu_17_2013_2017-07-10
+    wording: read
+  - pasal: '1'
+    type: diubah
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: unreadable
+  - pasal: '59'
+    type: diubah
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: unreadable
+  - pasal: '60'
+    type: diubah
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: unreadable
+  - pasal: '61'
+    type: diubah
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: unreadable
+  - pasal: '62'
+    type: diubah
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: unreadable
+  - pasal: 80A
+    type: disisipkan
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: unreadable
+  - pasal: 82A
+    type: disisipkan
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: unreadable
+  - pasal: 83A
+    type: disisipkan
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: unreadable
+  - pasal: '63'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none
+  - pasal: '64'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none
+  - pasal: '65'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none
+  - pasal: '66'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none
+  - pasal: '67'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none
+  - pasal: '68'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none
+  - pasal: '69'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none
+  - pasal: '70'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none
+  - pasal: '71'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none
+  - pasal: '72'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none
+  - pasal: '73'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none
+  - pasal: '74'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none
+  - pasal: '75'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none
+  - pasal: '76'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none
+  - pasal: '77'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none
+  - pasal: '78'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none
+  - pasal: '79'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none
+  - pasal: '80'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none
+  - pasal: '81'
+    type: dihapus
+    by: uu_16_2017
+    instruction: null
+    point: uu_17_2013_2017-11-22
+    wording: none

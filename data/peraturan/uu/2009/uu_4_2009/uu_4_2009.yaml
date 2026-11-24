@@ -93,3 +93,1125 @@ uji_materi:
     52 ayat (1) sepanjang frasa “dengan luas paling sedikit 5.000 (lima ribu) hektare
     dan” Undang-Undang Nomor 4 Tahun 2009 tentang Pertambangan Mineral dan Batubara,
     bertentangan dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.
+history:
+  points:
+  - id: uu_4_2009_2009-01-12
+    kind: asli
+    date: '2009-01-12'
+    date_basis: tanggal_berlaku
+    text: uu_4_2009_2009-01-12.txt
+  - id: uu_4_2009_2020-06-10
+    kind: gabungan
+    date: '2020-06-10'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_3_2020
+    order: 1
+    counts:
+      diubah: 77
+      disisipkan: 51
+      dihapus: 20
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_3_2020
+      instruction: 7
+      header: 'Di antara BAB IV dan BAB V disisipkan 1 (satu) bab, yakni BAB IVA sehingga
+        berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_3_2020
+      instruction: 51
+      header: Ketentuan huruf d
+      affects_wording: true
+    - by: uu_3_2020
+      instruction: 64
+      header: 'Di antara BAB XI dan BAB XII disisipkan 1 (satu) bab, yakni BAB XIA
+        sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_3_2020
+      instruction: 113
+      header: Ketentuan ayat (1)
+      affects_wording: true
+    complete: false
+  - id: uu_4_2009_2025-03-19
+    kind: gabungan
+    date: '2025-03-19'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_2_2025
+    order: 4
+    counts:
+      diubah: 21
+      disisipkan: 8
+      dihapus: 0
+    missing_before: 2
+    unreadable: []
+    not_applied:
+    - by: uu_2_2025
+      instruction: 8
+      header: Penjelasan Pasal 38 huruf a diubah sebagaimana tercantum dalam penjelasan.
+      affects_wording: false
+    complete: false
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_3_2020
+    instruction: 1
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '4'
+    type: diubah
+    by: uu_3_2020
+    instruction: 2
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '5'
+    type: diubah
+    by: uu_3_2020
+    instruction: 3
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_3_2020
+    instruction: 4
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '7'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 5
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: '8'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 6
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: 8A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 8
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 8B
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 8
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '9'
+    type: diubah
+    by: uu_3_2020
+    instruction: 9
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '10'
+    type: diubah
+    by: uu_3_2020
+    instruction: 10
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '11'
+    type: diubah
+    by: uu_3_2020
+    instruction: 11
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '13'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 12
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: '14'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 13
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: 14A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 14
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '15'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 15
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: '17'
+    type: diubah
+    by: uu_3_2020
+    instruction: 16
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 17A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 17
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 17B
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 17
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '18'
+    type: diubah
+    by: uu_3_2020
+    instruction: 18
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '21'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 19
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: '22'
+    type: diubah
+    by: uu_3_2020
+    instruction: 20
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 22A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 21
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '27'
+    type: diubah
+    by: uu_3_2020
+    instruction: 22
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 27A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 23
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '28'
+    type: diubah
+    by: uu_3_2020
+    instruction: 24
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 31A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 25
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '35'
+    type: diubah
+    by: uu_3_2020
+    instruction: 26
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '36'
+    type: diubah
+    by: uu_3_2020
+    instruction: 27
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 36A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 28
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '37'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 29
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: '38'
+    type: diubah
+    by: uu_3_2020
+    instruction: 30
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '39'
+    type: diubah
+    by: uu_3_2020
+    instruction: 31
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '40'
+    type: diubah
+    by: uu_3_2020
+    instruction: 32
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '42'
+    type: diubah
+    by: uu_3_2020
+    instruction: 33
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 42A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 34
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '43'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 35
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: '44'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 36
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: '45'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 37
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: '46'
+    type: diubah
+    by: uu_3_2020
+    instruction: 38
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '47'
+    type: diubah
+    by: uu_3_2020
+    instruction: 39
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '48'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 40
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: '51'
+    type: diubah
+    by: uu_3_2020
+    instruction: 41
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '52'
+    type: diubah
+    by: uu_3_2020
+    instruction: 42
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '54'
+    type: diubah
+    by: uu_3_2020
+    instruction: 43
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '55'
+    type: diubah
+    by: uu_3_2020
+    instruction: 44
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '57'
+    type: diubah
+    by: uu_3_2020
+    instruction: 45
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '58'
+    type: diubah
+    by: uu_3_2020
+    instruction: 46
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '60'
+    type: diubah
+    by: uu_3_2020
+    instruction: 47
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '61'
+    type: diubah
+    by: uu_3_2020
+    instruction: 48
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 62A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 49
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '65'
+    type: diubah
+    by: uu_3_2020
+    instruction: 50
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '66'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 52
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: '67'
+    type: diubah
+    by: uu_3_2020
+    instruction: 53
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '68'
+    type: diubah
+    by: uu_3_2020
+    instruction: 54
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '70'
+    type: diubah
+    by: uu_3_2020
+    instruction: 55
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 70A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 56
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '72'
+    type: diubah
+    by: uu_3_2020
+    instruction: 57
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '73'
+    type: diubah
+    by: uu_3_2020
+    instruction: 58
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '75'
+    type: diubah
+    by: uu_3_2020
+    instruction: 59
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '81'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 60
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: '82'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 61
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: '83'
+    type: diubah
+    by: uu_3_2020
+    instruction: 62
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 83A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 63
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 83B
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 63
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 86A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 65
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 86B
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 65
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 86C
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 65
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 86D
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 65
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 86E
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 65
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 86F
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 65
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 86G
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 65
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 86H
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 65
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 87A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 66
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 87B
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 66
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 87C
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 66
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 87D
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 66
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '89'
+    type: diubah
+    by: uu_3_2020
+    instruction: 67
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '91'
+    type: diubah
+    by: uu_3_2020
+    instruction: 68
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '92'
+    type: diubah
+    by: uu_3_2020
+    instruction: 69
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '93'
+    type: diubah
+    by: uu_3_2020
+    instruction: 70
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 93A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 71
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 93B
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 71
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 93C
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 71
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '96'
+    type: diubah
+    by: uu_3_2020
+    instruction: 72
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '99'
+    type: diubah
+    by: uu_3_2020
+    instruction: 73
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '100'
+    type: diubah
+    by: uu_3_2020
+    instruction: 74
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '101'
+    type: diubah
+    by: uu_3_2020
+    instruction: 75
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 101A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 76
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '102'
+    type: diubah
+    by: uu_3_2020
+    instruction: 77
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '103'
+    type: diubah
+    by: uu_3_2020
+    instruction: 78
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '104'
+    type: diubah
+    by: uu_3_2020
+    instruction: 79
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 104A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 80
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 104B
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 80
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '105'
+    type: diubah
+    by: uu_3_2020
+    instruction: 81
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '106'
+    type: diubah
+    by: uu_3_2020
+    instruction: 82
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '108'
+    type: diubah
+    by: uu_3_2020
+    instruction: 83
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '112'
+    type: diubah
+    by: uu_3_2020
+    instruction: 84
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 112A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 85
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '113'
+    type: diubah
+    by: uu_3_2020
+    instruction: 86
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '114'
+    type: diubah
+    by: uu_3_2020
+    instruction: 87
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '118'
+    type: diubah
+    by: uu_3_2020
+    instruction: 88
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '119'
+    type: diubah
+    by: uu_3_2020
+    instruction: 89
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '121'
+    type: diubah
+    by: uu_3_2020
+    instruction: 90
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '122'
+    type: diubah
+    by: uu_3_2020
+    instruction: 91
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '123'
+    type: diubah
+    by: uu_3_2020
+    instruction: 92
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 123A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 93
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 123B
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 93
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '124'
+    type: diubah
+    by: uu_3_2020
+    instruction: 94
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '125'
+    type: diubah
+    by: uu_3_2020
+    instruction: 95
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '128'
+    type: diubah
+    by: uu_3_2020
+    instruction: 96
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '129'
+    type: diubah
+    by: uu_3_2020
+    instruction: 97
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '133'
+    type: diubah
+    by: uu_3_2020
+    instruction: 98
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 137A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 99
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '139'
+    type: diubah
+    by: uu_3_2020
+    instruction: 100
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '140'
+    type: diubah
+    by: uu_3_2020
+    instruction: 101
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '141'
+    type: diubah
+    by: uu_3_2020
+    instruction: 102
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 141A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 103
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '142'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 104
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: '143'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 105
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: '145'
+    type: diubah
+    by: uu_3_2020
+    instruction: 106
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '151'
+    type: diubah
+    by: uu_3_2020
+    instruction: 107
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '152'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 108
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: '156'
+    type: diubah
+    by: uu_3_2020
+    instruction: 109
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '157'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 110
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: '158'
+    type: diubah
+    by: uu_3_2020
+    instruction: 111
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '159'
+    type: diubah
+    by: uu_3_2020
+    instruction: 112
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '160'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 114
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: '161'
+    type: diubah
+    by: uu_3_2020
+    instruction: 115
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 161A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 116
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 161B
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 116
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '162'
+    type: diubah
+    by: uu_3_2020
+    instruction: 117
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '164'
+    type: diubah
+    by: uu_3_2020
+    instruction: 118
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '165'
+    type: dihapus
+    by: uu_3_2020
+    instruction: 119
+    point: uu_4_2009_2020-06-10
+    wording: none
+  - pasal: '168'
+    type: diubah
+    by: uu_3_2020
+    instruction: 120
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 169A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 121
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 169B
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 121
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 169C
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 121
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 170A
+    type: diubah
+    by: uu_3_2020
+    instruction: 122
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 171A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 123
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 172A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 124
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 172B
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 124
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 172C
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 124
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 172D
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 124
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 172E
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 124
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 173A
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 125
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 173B
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 125
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: 173C
+    type: disisipkan
+    by: uu_3_2020
+    instruction: 125
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '174'
+    type: diubah
+    by: uu_3_2020
+    instruction: 126
+    point: uu_4_2009_2020-06-10
+    wording: read
+  - pasal: '1'
+    type: diubah
+    by: uu_2_2025
+    instruction: 1
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: '5'
+    type: diubah
+    by: uu_2_2025
+    instruction: 2
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: '17'
+    type: diubah
+    by: uu_2_2025
+    instruction: 3
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: 17A
+    type: diubah
+    by: uu_2_2025
+    instruction: 4
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: 22A
+    type: diubah
+    by: uu_2_2025
+    instruction: 5
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: 31A
+    type: diubah
+    by: uu_2_2025
+    instruction: 6
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: '35'
+    type: diubah
+    by: uu_2_2025
+    instruction: 7
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: '47'
+    type: diubah
+    by: uu_2_2025
+    instruction: 9
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: '51'
+    type: diubah
+    by: uu_2_2025
+    instruction: 10
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: 51A
+    type: disisipkan
+    by: uu_2_2025
+    instruction: 11
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: 51B
+    type: disisipkan
+    by: uu_2_2025
+    instruction: 11
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: '60'
+    type: diubah
+    by: uu_2_2025
+    instruction: 12
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: 60A
+    type: disisipkan
+    by: uu_2_2025
+    instruction: 13
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: 60B
+    type: disisipkan
+    by: uu_2_2025
+    instruction: 13
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: '74'
+    type: diubah
+    by: uu_2_2025
+    instruction: 14
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: '75'
+    type: diubah
+    by: uu_2_2025
+    instruction: 15
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: 75A
+    type: disisipkan
+    by: uu_2_2025
+    instruction: 16
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: '100'
+    type: diubah
+    by: uu_2_2025
+    instruction: 17
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: 104A
+    type: diubah
+    by: uu_2_2025
+    instruction: 18
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: '108'
+    type: diubah
+    by: uu_2_2025
+    instruction: 19
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: '124'
+    type: diubah
+    by: uu_2_2025
+    instruction: 20
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: 141B
+    type: disisipkan
+    by: uu_2_2025
+    instruction: 21
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: '151'
+    type: diubah
+    by: uu_2_2025
+    instruction: 22
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: 169A
+    type: diubah
+    by: uu_2_2025
+    instruction: 23
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: 171B
+    type: disisipkan
+    by: uu_2_2025
+    instruction: 24
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: 171C
+    type: disisipkan
+    by: uu_2_2025
+    instruction: 24
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: 172B
+    type: diubah
+    by: uu_2_2025
+    instruction: 25
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: 173A
+    type: diubah
+    by: uu_2_2025
+    instruction: 26
+    point: uu_4_2009_2025-03-19
+    wording: read
+  - pasal: '174'
+    type: diubah
+    by: uu_2_2025
+    instruction: 27
+    point: uu_4_2009_2025-03-19
+    wording: read

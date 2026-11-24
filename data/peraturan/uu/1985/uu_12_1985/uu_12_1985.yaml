@@ -58,3 +58,50 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/46237/uu-no-12-tahun-1994
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_12_1985_1985-12-27
+    kind: asli
+    date: '1986-01-01'
+    date_basis: tanggal_berlaku
+    text: uu_12_1985_1985-12-27.txt
+  - id: uu_12_1985_1995-01-01
+    kind: gabungan
+    date: '1995-01-01'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_12_1994
+    order: 1
+    counts:
+      diubah: 2
+      disisipkan: 0
+      dihapus: 2
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  changes:
+  - pasal: '3'
+    type: diubah
+    by: uu_12_1994
+    instruction: 1
+    point: uu_12_1985_1995-01-01
+    wording: read
+  - pasal: '17'
+    type: dihapus
+    by: uu_12_1994
+    instruction: 2
+    point: uu_12_1985_1995-01-01
+    wording: none
+  - pasal: '23'
+    type: diubah
+    by: uu_12_1994
+    instruction: 3
+    point: uu_12_1985_1995-01-01
+    wording: read
+  - pasal: '27'
+    type: dihapus
+    by: uu_12_1994
+    instruction: 4
+    point: uu_12_1985_1995-01-01
+    wording: none

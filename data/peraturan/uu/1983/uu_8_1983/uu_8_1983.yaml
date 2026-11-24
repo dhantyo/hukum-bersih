@@ -105,3 +105,262 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/45440/uu-no-35-tahun-1953
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_8_1983_1983-12-31
+    kind: asli
+    date: '1984-07-01'
+    date_basis: tanggal_berlaku
+    text: uu_8_1983_1983-12-31.txt
+  - id: uu_8_1983_1995-01-01
+    kind: gabungan
+    date: '1995-01-01'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_11_1994
+    order: 1
+    counts:
+      diubah: 14
+      disisipkan: 0
+      dihapus: 3
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  - id: uu_8_1983_2010-04-01
+    kind: gabungan
+    date: '2010-04-01'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_42_2009
+    order: 3
+    counts:
+      diubah: 15
+      disisipkan: 4
+      dihapus: 0
+    missing_before: 1
+    unreadable:
+    - '11'
+    not_applied:
+    - by: uu_42_2009
+      instruction: 13
+      header: 'Penjelasan ayat (2) diubah sehingga Pasal 11 berbunyi sebagai berikut:'
+      affects_wording: false
+    complete: false
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_11_1994
+    instruction: 1
+    point: uu_8_1983_1995-01-01
+    wording: read
+  - pasal: '2'
+    type: diubah
+    by: uu_11_1994
+    instruction: 2
+    point: uu_8_1983_1995-01-01
+    wording: read
+  - pasal: '3'
+    type: dihapus
+    by: uu_11_1994
+    instruction: 3
+    point: uu_8_1983_1995-01-01
+    wording: none
+  - pasal: '4'
+    type: diubah
+    by: uu_11_1994
+    instruction: 4
+    point: uu_8_1983_1995-01-01
+    wording: read
+  - pasal: '5'
+    type: diubah
+    by: uu_11_1994
+    instruction: 5
+    point: uu_8_1983_1995-01-01
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_11_1994
+    instruction: 6
+    point: uu_8_1983_1995-01-01
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: uu_11_1994
+    instruction: 7
+    point: uu_8_1983_1995-01-01
+    wording: read
+  - pasal: '8'
+    type: diubah
+    by: uu_11_1994
+    instruction: 8
+    point: uu_8_1983_1995-01-01
+    wording: read
+  - pasal: '9'
+    type: diubah
+    by: uu_11_1994
+    instruction: 9
+    point: uu_8_1983_1995-01-01
+    wording: read
+  - pasal: '10'
+    type: diubah
+    by: uu_11_1994
+    instruction: 10
+    point: uu_8_1983_1995-01-01
+    wording: read
+  - pasal: '11'
+    type: diubah
+    by: uu_11_1994
+    instruction: 11
+    point: uu_8_1983_1995-01-01
+    wording: read
+  - pasal: '12'
+    type: diubah
+    by: uu_11_1994
+    instruction: 12
+    point: uu_8_1983_1995-01-01
+    wording: read
+  - pasal: '13'
+    type: diubah
+    by: uu_11_1994
+    instruction: 13
+    point: uu_8_1983_1995-01-01
+    wording: read
+  - pasal: '14'
+    type: diubah
+    by: uu_11_1994
+    instruction: 14
+    point: uu_8_1983_1995-01-01
+    wording: read
+  - pasal: '15'
+    type: dihapus
+    by: uu_11_1994
+    instruction: 15
+    point: uu_8_1983_1995-01-01
+    wording: none
+  - pasal: '16'
+    type: dihapus
+    by: uu_11_1994
+    instruction: 16
+    point: uu_8_1983_1995-01-01
+    wording: none
+  - pasal: '17'
+    type: diubah
+    by: uu_11_1994
+    instruction: 17
+    point: uu_8_1983_1995-01-01
+    wording: read
+  - pasal: '1'
+    type: diubah
+    by: uu_42_2009
+    instruction: 1
+    point: uu_8_1983_2010-04-01
+    wording: read
+  - pasal: 1A
+    type: diubah
+    by: uu_42_2009
+    instruction: 2
+    point: uu_8_1983_2010-04-01
+    wording: read
+  - pasal: 3A
+    type: diubah
+    by: uu_42_2009
+    instruction: 3
+    point: uu_8_1983_2010-04-01
+    wording: read
+  - pasal: '4'
+    type: diubah
+    by: uu_42_2009
+    instruction: 4
+    point: uu_8_1983_2010-04-01
+    wording: read
+  - pasal: 4A
+    type: diubah
+    by: uu_42_2009
+    instruction: 5
+    point: uu_8_1983_2010-04-01
+    wording: read
+  - pasal: '5'
+    type: diubah
+    by: uu_42_2009
+    instruction: 6
+    point: uu_8_1983_2010-04-01
+    wording: read
+  - pasal: 5A
+    type: diubah
+    by: uu_42_2009
+    instruction: 7
+    point: uu_8_1983_2010-04-01
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: uu_42_2009
+    instruction: 8
+    point: uu_8_1983_2010-04-01
+    wording: read
+  - pasal: '8'
+    type: diubah
+    by: uu_42_2009
+    instruction: 9
+    point: uu_8_1983_2010-04-01
+    wording: read
+  - pasal: 8A
+    type: disisipkan
+    by: uu_42_2009
+    instruction: 10
+    point: uu_8_1983_2010-04-01
+    wording: read
+  - pasal: '9'
+    type: diubah
+    by: uu_42_2009
+    instruction: 11
+    point: uu_8_1983_2010-04-01
+    wording: read
+  - pasal: '11'
+    type: diubah
+    by: uu_42_2009
+    instruction: 12
+    point: uu_8_1983_2010-04-01
+    wording: unreadable
+  - pasal: '12'
+    type: diubah
+    by: uu_42_2009
+    instruction: 14
+    point: uu_8_1983_2010-04-01
+    wording: read
+  - pasal: '13'
+    type: diubah
+    by: uu_42_2009
+    instruction: 15
+    point: uu_8_1983_2010-04-01
+    wording: read
+  - pasal: 15A
+    type: disisipkan
+    by: uu_42_2009
+    instruction: 16
+    point: uu_8_1983_2010-04-01
+    wording: read
+  - pasal: 16B
+    type: diubah
+    by: uu_42_2009
+    instruction: 17
+    point: uu_8_1983_2010-04-01
+    wording: read
+  - pasal: 16D
+    type: diubah
+    by: uu_42_2009
+    instruction: 18
+    point: uu_8_1983_2010-04-01
+    wording: read
+  - pasal: 16E
+    type: disisipkan
+    by: uu_42_2009
+    instruction: 19
+    point: uu_8_1983_2010-04-01
+    wording: read
+  - pasal: 16F
+    type: disisipkan
+    by: uu_42_2009
+    instruction: 19
+    point: uu_8_1983_2010-04-01
+    wording: read

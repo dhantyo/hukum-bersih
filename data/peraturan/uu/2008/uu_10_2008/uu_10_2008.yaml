@@ -115,3 +115,57 @@ uji_materi:
     Indonesia Tahun 2008 Nomor 51, Tambahan Lembaran Negara Republik Indonesia Nomor
     4836) tetap mempunyai kekuatan hukum mengikat, sepanjang dimaknai memuat syarat
     domisili di provinsi yang akan diwakili
+history:
+  points:
+  - id: uu_10_2008_2008-03-31
+    kind: asli
+    date: '2008-03-31'
+    date_basis: tanggal_berlaku
+    text: uu_10_2008_2008-03-31.txt
+  - id: uu_10_2008_2009-02-26
+    kind: gabungan
+    date: '2009-02-26'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_1_2009
+    order: 1
+    counts:
+      diubah: 2
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  - id: uu_10_2008_2009-05-29
+    kind: gabungan
+    date: '2009-05-29'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_17_2009
+    order: 2
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_17_2009
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes:
+  - pasal: '47'
+    type: diubah
+    by: perppu_1_2009
+    instruction: 1
+    point: uu_10_2008_2009-02-26
+    wording: read
+  - pasal: '176'
+    type: diubah
+    by: perppu_1_2009
+    instruction: 2
+    point: uu_10_2008_2009-02-26
+    wording: read

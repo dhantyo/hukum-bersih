@@ -64,3 +64,32 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/46026/uu-no-25-tahun-1997
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_11_1998_1998-11-10
+    kind: asli
+    date: '1998-11-10'
+    date_basis: tanggal_berlaku
+    text: uu_11_1998_1998-11-10.txt
+  - id: uu_11_1998_2000-09-25
+    kind: gabungan
+    date: '2000-09-25'
+    date_basis: tanggal_penetapan
+    after:
+    - perppu_3_2000
+    order: 1
+    counts:
+      diubah: 1
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied: []
+    complete: true
+  changes:
+  - pasal: '199'
+    type: diubah
+    by: perppu_3_2000
+    instruction: 1
+    point: uu_11_1998_2000-09-25
+    wording: read

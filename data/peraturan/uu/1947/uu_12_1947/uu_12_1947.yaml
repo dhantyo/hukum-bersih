@@ -85,3 +85,30 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/51466/uu-no-19-tahun-1959
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_12_1947_1947-05-05
+    kind: asli
+    date: '1947-05-05'
+    date_basis: tanggal_pengundangan
+    text: uu_12_1947_1947-05-05.txt
+  - id: uu_12_1947_1948-06-12
+    kind: gabungan
+    date: '1948-06-12'
+    date_basis: tanggal_pengundangan
+    after:
+    - uu_21_1948
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_21_1948
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes: []

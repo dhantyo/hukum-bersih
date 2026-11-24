@@ -79,3 +79,467 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/46618/uu-no-21-tahun-1992
       note: null
 uji_materi: null
+history:
+  points:
+  - id: uu_17_2008_2008-05-07
+    kind: asli
+    date: '2008-05-07'
+    date_basis: tanggal_berlaku
+    text: uu_17_2008_2008-05-07.txt
+  - id: uu_17_2008_2024-10-28
+    kind: gabungan
+    date: '2024-10-28'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_66_2024
+    order: 3
+    counts:
+      diubah: 45
+      disisipkan: 18
+      dihapus: 3
+    missing_before: 2
+    unreadable: []
+    not_applied:
+    - by: uu_66_2024
+      instruction: 5
+      header: Judul Bagian Kelima
+      affects_wording: false
+    - by: uu_66_2024
+      instruction: 6
+      header: 'Bab V diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_66_2024
+      instruction: 33
+      header: Penjelasan Pasal 195 huruf b diubah menjadi sebagaimana tercantum dalam
+        penjelasan.
+      affects_wording: false
+    - by: uu_66_2024
+      instruction: 35
+      header: Penjelasan Pasal 202 diubah menjadi sebagaimana tercantum dalam penjelasan.
+      affects_wording: false
+    - by: uu_66_2024
+      instruction: 36
+      header: Penjelasan Pasal 203 diubah menjadi sebagaimana tercantum dalam penjelasan.
+      affects_wording: false
+    - by: uu_66_2024
+      instruction: 41
+      header: Judul Bagian Kedua
+      affects_wording: false
+    - by: uu_66_2024
+      instruction: 42
+      header: 'BAB XII diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_66_2024
+      instruction: 47
+      header: Judul Bagian Ketiga
+      affects_wording: false
+    - by: uu_66_2024
+      instruction: 48
+      header: 'BAB XII diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_66_2024
+      instruction: 56
+      header: Penjelasan Pasal 272 diubah menjadi sebagaimana tercantum dalam penjelasan.
+      affects_wording: false
+    - by: uu_66_2024
+      instruction: 58
+      header: 'Judul BAB XVII diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    complete: false
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_66_2024
+    instruction: 1
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: 15A
+    type: disisipkan
+    by: uu_66_2024
+    instruction: 2
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: 15B
+    type: disisipkan
+    by: uu_66_2024
+    instruction: 2
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: 15C
+    type: disisipkan
+    by: uu_66_2024
+    instruction: 2
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: 15D
+    type: disisipkan
+    by: uu_66_2024
+    instruction: 2
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: 15E
+    type: disisipkan
+    by: uu_66_2024
+    instruction: 2
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '16'
+    type: diubah
+    by: uu_66_2024
+    instruction: 3
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '17'
+    type: diubah
+    by: uu_66_2024
+    instruction: 4
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '24'
+    type: diubah
+    by: uu_66_2024
+    instruction: 7
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: 25A
+    type: disisipkan
+    by: uu_66_2024
+    instruction: 8
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '26'
+    type: diubah
+    by: uu_66_2024
+    instruction: 9
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: 26A
+    type: disisipkan
+    by: uu_66_2024
+    instruction: 10
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: 26B
+    type: disisipkan
+    by: uu_66_2024
+    instruction: 10
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: 26C
+    type: disisipkan
+    by: uu_66_2024
+    instruction: 10
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: 26D
+    type: disisipkan
+    by: uu_66_2024
+    instruction: 10
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '29'
+    type: diubah
+    by: uu_66_2024
+    instruction: 11
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: 33A
+    type: disisipkan
+    by: uu_66_2024
+    instruction: 12
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '48'
+    type: diubah
+    by: uu_66_2024
+    instruction: 13
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '56'
+    type: diubah
+    by: uu_66_2024
+    instruction: 14
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '57'
+    type: diubah
+    by: uu_66_2024
+    instruction: 15
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '81'
+    type: diubah
+    by: uu_66_2024
+    instruction: 16
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '82'
+    type: diubah
+    by: uu_66_2024
+    instruction: 17
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '83'
+    type: diubah
+    by: uu_66_2024
+    instruction: 18
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '84'
+    type: diubah
+    by: uu_66_2024
+    instruction: 19
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '85'
+    type: diubah
+    by: uu_66_2024
+    instruction: 20
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '86'
+    type: diubah
+    by: uu_66_2024
+    instruction: 21
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '87'
+    type: diubah
+    by: uu_66_2024
+    instruction: 22
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '89'
+    type: diubah
+    by: uu_66_2024
+    instruction: 23
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: 90A
+    type: disisipkan
+    by: uu_66_2024
+    instruction: 24
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '92'
+    type: diubah
+    by: uu_66_2024
+    instruction: 25
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: 107A
+    type: disisipkan
+    by: uu_66_2024
+    instruction: 26
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '110'
+    type: diubah
+    by: uu_66_2024
+    instruction: 27
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '123'
+    type: diubah
+    by: uu_66_2024
+    instruction: 28
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '146'
+    type: diubah
+    by: uu_66_2024
+    instruction: 29
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: 158A
+    type: disisipkan
+    by: uu_66_2024
+    instruction: 30
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '172'
+    type: diubah
+    by: uu_66_2024
+    instruction: 31
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '185'
+    type: diubah
+    by: uu_66_2024
+    instruction: 32
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '198'
+    type: diubah
+    by: uu_66_2024
+    instruction: 34
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '208'
+    type: diubah
+    by: uu_66_2024
+    instruction: 37
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '223'
+    type: diubah
+    by: uu_66_2024
+    instruction: 38
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: 223A
+    type: disisipkan
+    by: uu_66_2024
+    instruction: 39
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '226'
+    type: diubah
+    by: uu_66_2024
+    instruction: 40
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '227'
+    type: diubah
+    by: uu_66_2024
+    instruction: 43
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '230'
+    type: diubah
+    by: uu_66_2024
+    instruction: 44
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '231'
+    type: diubah
+    by: uu_66_2024
+    instruction: 45
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '232'
+    type: diubah
+    by: uu_66_2024
+    instruction: 46
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '234'
+    type: diubah
+    by: uu_66_2024
+    instruction: 49
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '235'
+    type: diubah
+    by: uu_66_2024
+    instruction: 50
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '236'
+    type: diubah
+    by: uu_66_2024
+    instruction: 51
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '237'
+    type: diubah
+    by: uu_66_2024
+    instruction: 52
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '251'
+    type: diubah
+    by: uu_66_2024
+    instruction: 53
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: 251A
+    type: disisipkan
+    by: uu_66_2024
+    instruction: 54
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '253'
+    type: diubah
+    by: uu_66_2024
+    instruction: 55
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '274'
+    type: diubah
+    by: uu_66_2024
+    instruction: 57
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '276'
+    type: diubah
+    by: uu_66_2024
+    instruction: 59
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '277'
+    type: diubah
+    by: uu_66_2024
+    instruction: 60
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '278'
+    type: diubah
+    by: uu_66_2024
+    instruction: 61
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '279'
+    type: dihapus
+    by: uu_66_2024
+    instruction: 62
+    point: uu_17_2008_2024-10-28
+    wording: none
+  - pasal: '280'
+    type: dihapus
+    by: uu_66_2024
+    instruction: 63
+    point: uu_17_2008_2024-10-28
+    wording: none
+  - pasal: '281'
+    type: diubah
+    by: uu_66_2024
+    instruction: 64
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '284'
+    type: diubah
+    by: uu_66_2024
+    instruction: 65
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '337'
+    type: diubah
+    by: uu_66_2024
+    instruction: 66
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: 346A
+    type: disisipkan
+    by: uu_66_2024
+    instruction: 67
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '347'
+    type: diubah
+    by: uu_66_2024
+    instruction: 68
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: 347A
+    type: disisipkan
+    by: uu_66_2024
+    instruction: 69
+    point: uu_17_2008_2024-10-28
+    wording: read
+  - pasal: '352'
+    type: dihapus
+    by: uu_66_2024
+    instruction: 70
+    point: uu_17_2008_2024-10-28
+    wording: none

@@ -52,3 +52,98 @@ bpk:
     archive_url: null
   status_peraturan: null
 uji_materi: null
+history:
+  points:
+  - id: uu_19_2012_2012-11-16
+    kind: asli
+    date: '2013-01-01'
+    date_basis: tanggal_berlaku
+    text: uu_19_2012_2012-11-16.txt
+  - id: uu_19_2012_2013-06-18
+    kind: gabungan
+    date: '2013-06-18'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_15_2013
+    order: 1
+    counts:
+      diubah: 11
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uu_15_2013
+      instruction: 8
+      header: Ketentuan Pasal 11 tetap dengan perubahan penjelasan Pasal 11 ayat (1)
+        huruf a angka 2 sehingga penjelasan Pasal 11 menjadi sebagaimana ditetapkan
+        dalam penjela
+      affects_wording: false
+    complete: true
+  changes:
+  - pasal: '3'
+    type: diubah
+    by: uu_15_2013
+    instruction: 1
+    point: uu_19_2012_2013-06-18
+    wording: read
+  - pasal: '4'
+    type: diubah
+    by: uu_15_2013
+    instruction: 2
+    point: uu_19_2012_2013-06-18
+    wording: read
+  - pasal: '5'
+    type: diubah
+    by: uu_15_2013
+    instruction: 3
+    point: uu_19_2012_2013-06-18
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_15_2013
+    instruction: 4
+    point: uu_19_2012_2013-06-18
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: uu_15_2013
+    instruction: 5
+    point: uu_19_2012_2013-06-18
+    wording: read
+  - pasal: '8'
+    type: diubah
+    by: uu_15_2013
+    instruction: 6
+    point: uu_19_2012_2013-06-18
+    wording: read
+  - pasal: '9'
+    type: diubah
+    by: uu_15_2013
+    instruction: 7
+    point: uu_19_2012_2013-06-18
+    wording: read
+  - pasal: '13'
+    type: diubah
+    by: uu_15_2013
+    instruction: 9
+    point: uu_19_2012_2013-06-18
+    wording: read
+  - pasal: '14'
+    type: diubah
+    by: uu_15_2013
+    instruction: 10
+    point: uu_19_2012_2013-06-18
+    wording: read
+  - pasal: '16'
+    type: diubah
+    by: uu_15_2013
+    instruction: 11
+    point: uu_19_2012_2013-06-18
+    wording: read
+  - pasal: '17'
+    type: diubah
+    by: uu_15_2013
+    instruction: 12
+    point: uu_19_2012_2013-06-18
+    wording: read

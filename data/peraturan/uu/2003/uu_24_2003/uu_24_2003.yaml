@@ -98,3 +98,446 @@ uji_materi:
   url: https://peraturan.bpk.go.id/DownloadUjiMateri/133/Putusan066PUUII2004tgl120405ttgKADIN.pdf
   amar: Pasal 50 Undang-undang Nomor 24 Tahun 2003 tentang Mahkamah Konstitusi bertentangan
     dengan UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.
+history:
+  points:
+  - id: uu_24_2003_2003-08-13
+    kind: asli
+    date: '2003-08-13'
+    date_basis: tanggal_berlaku
+    text: uu_24_2003_2003-08-13.txt
+  - id: uu_24_2003_2011-07-20
+    kind: gabungan
+    date: '2011-07-20'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_8_2011
+    order: 1
+    counts:
+      diubah: 18
+      disisipkan: 9
+      dihapus: 3
+    missing_before: 0
+    unreadable:
+    - '35'
+    not_applied:
+    - by: uu_8_2011
+      instruction: 4
+      header: Judul Bagian Ketiga
+      affects_wording: false
+    - by: uu_8_2011
+      instruction: 5
+      header: 'Bab II diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_8_2011
+      instruction: 9
+      header: 'Penjelasan Pasal 10 diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_8_2011
+      instruction: 14
+      header: 'Di antara BAB IV dan BAB V disisipkan 1 (satu) bab, yakni BAB IVA yang
+        berbunyi sebagai berikut:'
+      affects_wording: false
+    complete: false
+  - id: uu_24_2003_2013-10-17
+    kind: gabungan
+    date: '2013-10-17'
+    date_basis: tanggal_berlaku
+    after:
+    - perppu_1_2013
+    order: 2
+    counts:
+      diubah: 5
+      disisipkan: 3
+      dihapus: 0
+    missing_before: 0
+    unreadable:
+    - '35'
+    not_applied:
+    - by: perppu_1_2013
+      instruction: 6
+      header: 'Judul Bab IVA diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    complete: false
+  - id: uu_24_2003_2014-09-15
+    kind: gabungan
+    date: '2014-09-15'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_4_2014
+    order: 2
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable:
+    - '35'
+    not_applied:
+    - by: uu_4_2014
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  - id: uu_24_2003_2020-09-29
+    kind: gabungan
+    date: '2020-09-29'
+    date_basis: tanggal_berlaku
+    after:
+    - uu_7_2020
+    order: 3
+    counts:
+      diubah: 6
+      disisipkan: 0
+      dihapus: 9
+    missing_before: 0
+    unreadable:
+    - '35'
+    not_applied:
+    - by: uu_7_2020
+      instruction: 6
+      header: Judul Bagian Kedua Bab IV dihapus.
+      affects_wording: false
+    - by: uu_7_2020
+      instruction: 8
+      header: Judul Bagian Ketiga
+      affects_wording: false
+    - by: uu_7_2020
+      instruction: 9
+      header: 'Bab IV diubah sehingga berbunyi sebagai berikut:'
+      affects_wording: false
+    - by: uu_7_2020
+      instruction: 10
+      header: Ketentuan huruf d ayat (1)
+      affects_wording: true
+    - by: uu_7_2020
+      instruction: 12
+      header: Ketentuan huruf b ayat (1) dan ayat (5)
+      affects_wording: true
+    - by: uu_7_2020
+      instruction: 18
+      header: Ketentuan ayat (2a)
+      affects_wording: true
+    - by: uu_7_2020
+      instruction: 20
+      header: Ketentuan ayat (2)
+      affects_wording: true
+    complete: false
+  changes:
+  - pasal: '1'
+    type: diubah
+    by: uu_8_2011
+    instruction: 1
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: '4'
+    type: diubah
+    by: uu_8_2011
+    instruction: 2
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: '6'
+    type: diubah
+    by: uu_8_2011
+    instruction: 3
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: '7'
+    type: diubah
+    by: uu_8_2011
+    instruction: 6
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: 7A
+    type: disisipkan
+    by: uu_8_2011
+    instruction: 7
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: 7B
+    type: disisipkan
+    by: uu_8_2011
+    instruction: 7
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: '8'
+    type: diubah
+    by: uu_8_2011
+    instruction: 8
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: '15'
+    type: diubah
+    by: uu_8_2011
+    instruction: 10
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: '16'
+    type: dihapus
+    by: uu_8_2011
+    instruction: 11
+    point: uu_24_2003_2011-07-20
+    wording: none
+  - pasal: '23'
+    type: diubah
+    by: uu_8_2011
+    instruction: 12
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: '26'
+    type: diubah
+    by: uu_8_2011
+    instruction: 13
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: '32'
+    type: diubah
+    by: uu_8_2011
+    instruction: 15
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: 33A
+    type: disisipkan
+    by: uu_8_2011
+    instruction: 16
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: '34'
+    type: diubah
+    by: uu_8_2011
+    instruction: 17
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: '35'
+    type: diubah
+    by: uu_8_2011
+    instruction: 18
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: 35A
+    type: disisipkan
+    by: uu_8_2011
+    instruction: 19
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: '35'
+    type: diubah
+    by: uu_8_2011
+    instruction: 19
+    point: uu_24_2003_2011-07-20
+    wording: unreadable
+  - pasal: '41'
+    type: diubah
+    by: uu_8_2011
+    instruction: 20
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: 42A
+    type: disisipkan
+    by: uu_8_2011
+    instruction: 21
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: 45A
+    type: disisipkan
+    by: uu_8_2011
+    instruction: 22
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: 48A
+    type: disisipkan
+    by: uu_8_2011
+    instruction: 23
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: '50'
+    type: dihapus
+    by: uu_8_2011
+    instruction: 24
+    point: uu_24_2003_2011-07-20
+    wording: none
+  - pasal: 50A
+    type: disisipkan
+    by: uu_8_2011
+    instruction: 25
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: 51A
+    type: disisipkan
+    by: uu_8_2011
+    instruction: 26
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: '57'
+    type: diubah
+    by: uu_8_2011
+    instruction: 27
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: '59'
+    type: diubah
+    by: uu_8_2011
+    instruction: 28
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: '60'
+    type: diubah
+    by: uu_8_2011
+    instruction: 29
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: '65'
+    type: dihapus
+    by: uu_8_2011
+    instruction: 30
+    point: uu_24_2003_2011-07-20
+    wording: none
+  - pasal: '79'
+    type: diubah
+    by: uu_8_2011
+    instruction: 30
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: '87'
+    type: diubah
+    by: uu_8_2011
+    instruction: 31
+    point: uu_24_2003_2011-07-20
+    wording: read
+  - pasal: '1'
+    type: diubah
+    by: perppu_1_2013
+    instruction: 1
+    point: uu_24_2003_2013-10-17
+    wording: read
+  - pasal: '15'
+    type: diubah
+    by: perppu_1_2013
+    instruction: 2
+    point: uu_24_2003_2013-10-17
+    wording: read
+  - pasal: 18A
+    type: disisipkan
+    by: perppu_1_2013
+    instruction: 3
+    point: uu_24_2003_2013-10-17
+    wording: read
+  - pasal: 18B
+    type: disisipkan
+    by: perppu_1_2013
+    instruction: 3
+    point: uu_24_2003_2013-10-17
+    wording: read
+  - pasal: 18C
+    type: disisipkan
+    by: perppu_1_2013
+    instruction: 3
+    point: uu_24_2003_2013-10-17
+    wording: read
+  - pasal: '20'
+    type: diubah
+    by: perppu_1_2013
+    instruction: 4
+    point: uu_24_2003_2013-10-17
+    wording: read
+  - pasal: '26'
+    type: diubah
+    by: perppu_1_2013
+    instruction: 5
+    point: uu_24_2003_2013-10-17
+    wording: read
+  - pasal: 27A
+    type: diubah
+    by: perppu_1_2013
+    instruction: 7
+    point: uu_24_2003_2013-10-17
+    wording: read
+  - pasal: '4'
+    type: diubah
+    by: uu_7_2020
+    instruction: 1
+    point: uu_24_2003_2020-09-29
+    wording: unreadable
+  - pasal: '4'
+    type: dihapus
+    by: uu_7_2020
+    instruction: 2
+    point: uu_24_2003_2020-09-29
+    wording: none
+  - pasal: 7A
+    type: diubah
+    by: uu_7_2020
+    instruction: 3
+    point: uu_24_2003_2020-09-29
+    wording: read
+  - pasal: '15'
+    type: diubah
+    by: uu_7_2020
+    instruction: 4
+    point: uu_24_2003_2020-09-29
+    wording: read
+  - pasal: '20'
+    type: diubah
+    by: uu_7_2020
+    instruction: 5
+    point: uu_24_2003_2020-09-29
+    wording: read
+  - pasal: '22'
+    type: dihapus
+    by: uu_7_2020
+    instruction: 7
+    point: uu_24_2003_2020-09-29
+    wording: none
+  - pasal: '23'
+    type: dihapus
+    by: uu_7_2020
+    instruction: 11
+    point: uu_24_2003_2020-09-29
+    wording: none
+  - pasal: '26'
+    type: dihapus
+    by: uu_7_2020
+    instruction: 13
+    point: uu_24_2003_2020-09-29
+    wording: none
+  - pasal: 27A
+    type: diubah
+    by: uu_7_2020
+    instruction: 14
+    point: uu_24_2003_2020-09-29
+    wording: unreadable
+  - pasal: 27A
+    type: dihapus
+    by: uu_7_2020
+    instruction: 15
+    point: uu_24_2003_2020-09-29
+    wording: none
+  - pasal: 45A
+    type: dihapus
+    by: uu_7_2020
+    instruction: 16
+    point: uu_24_2003_2020-09-29
+    wording: none
+  - pasal: 50A
+    type: dihapus
+    by: uu_7_2020
+    instruction: 17
+    point: uu_24_2003_2020-09-29
+    wording: none
+  - pasal: '57'
+    type: dihapus
+    by: uu_7_2020
+    instruction: 19
+    point: uu_24_2003_2020-09-29
+    wording: none
+  - pasal: '59'
+    type: dihapus
+    by: uu_7_2020
+    instruction: 21
+    point: uu_24_2003_2020-09-29
+    wording: none
+  - pasal: '87'
+    type: diubah
+    by: uu_7_2020
+    instruction: 22
+    point: uu_24_2003_2020-09-29
+    wording: read
