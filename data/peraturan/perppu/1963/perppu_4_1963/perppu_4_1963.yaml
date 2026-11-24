@@ -1,0 +1,64 @@
+id: perppu_4_1963
+akn: /akn/id/act/perppu/1963/4
+type: perppu
+number: '4'
+year: 1963
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 4 Tahun 1963 tentang Perubahan
+  Dan Tambahan Undang-Undang No. 36 Tahun 1953 Tentang Bank Tabungan Pos (Lembaran
+  Negara Tahun 1953 No.86)
+tentang: Perubahan Dan Tambahan Undang-Undang No. 36 Tahun 1953 Tentang Bank Tabungan
+  Pos (Lembaran Negara Tahun 1953 No.86)
+short_name: null
+status: tidak_berlaku
+tanggal_penetapan: '1963-06-22'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53734/perpu-no-4-tahun-1963
+source_pdf_url: https://peraturan.bpk.go.id/Download/43130/Perpu%20No.%20004%20Tahun%201963.pdf
+relationships:
+  amends:
+  - id: uu_36_1953
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+versions:
+- id: perppu_4_1963_1963-06-22
+  kind: asli
+  source: official
+  date: '1963-06-22'
+  date_basis: tanggal_penetapan
+  text: perppu_4_1963_1963-06-22.txt
+  pasal_count: 3
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c7d4ccb22ff3798548bbdf70670a3553592f30f613c9d53e5d99b075f09c0f44
+tanggal_pengundangan: '1963-06-22'
+tanggal_berlaku: '1963-01-01'
+lembaran_negara: 'LN. 1963 No. 62, TLN. No. 2556, LL SETNEG : 5 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+bpk:
+  id: 53734
+  files:
+  - url: https://peraturan.bpk.go.id/Download/43130/Perpu%20No.%20004%20Tahun%201963.pdf
+    bpk_file_id: 43130
+    filename: Perpu No. 004 Tahun 1963.pdf
+    sha256: c7d4ccb22ff3798548bbdf70670a3553592f30f613c9d53e5d99b075f09c0f44
+    bytes: 29797
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_2_1964
+      citation: UU No. 2 Tahun 1964
+      tentang: Bank Tabungan Negara
+      url: https://peraturan.bpk.go.id/Details/50231/uu-no-2-tahun-1964
+      note: null
+    Mengubah:
+    - id: uu_36_1953
+      citation: UU No. 36 Tahun 1953
+      tentang: Bank Tabungan Pos
+      url: https://peraturan.bpk.go.id/Details/45443/uu-no-36-tahun-1953
+      note: null
+uji_materi: null

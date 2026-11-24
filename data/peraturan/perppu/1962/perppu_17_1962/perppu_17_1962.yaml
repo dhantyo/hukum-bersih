@@ -1,0 +1,62 @@
+id: perppu_17_1962
+akn: /akn/id/act/perppu/1962/17
+type: perppu
+number: '17'
+year: 1962
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 17 Tahun 1962 tentang Perubahan
+  Dan Tambahan Undang-Undang No. 21 PRP Tahun 1960 Tentang Bank Pembangunan Indonesia
+tentang: Perubahan Dan Tambahan Undang-Undang No. 21 PRP Tahun 1960 Tentang Bank Pembangunan
+  Indonesia
+short_name: null
+status: tidak_berlaku
+tanggal_penetapan: '1962-11-23'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53694/perpu-no-17-tahun-1962
+source_pdf_url: https://peraturan.bpk.go.id/Download/43090/PERPU%20No.%2017%20Tahun%201962.pdf
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+versions:
+- id: perppu_17_1962_1962-11-23
+  kind: asli
+  source: official
+  date: '1962-11-23'
+  date_basis: tanggal_penetapan
+  text: perppu_17_1962_1962-11-23.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 1274e46470fdc7c3236696bd0dc724a56f0a41b769120a2d8ef329f19353a1fe
+tanggal_pengundangan: '1962-11-23'
+tanggal_berlaku: '1962-11-23'
+lembaran_negara: 'LN. 1962 No. 91, TLN. No. 2519, LL SETNEG : 5 HLM'
+subjek: PERBANKAN, LEMBAGA KEUANGAN
+bpk:
+  id: 53694
+  files:
+  - url: https://peraturan.bpk.go.id/Download/43090/PERPU%20No.%2017%20Tahun%201962.pdf
+    bpk_file_id: 43090
+    filename: PERPU No. 17 Tahun 1962.pdf
+    sha256: 1274e46470fdc7c3236696bd0dc724a56f0a41b769120a2d8ef329f19353a1fe
+    bytes: 30018
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: uu_7_1992
+      citation: UU No. 7 Tahun 1992
+      tentang: Perbankan
+      url: https://peraturan.bpk.go.id/Details/46599/uu-no-7-tahun-1992
+      note: Pasal 54 UU Nomor 7 Tahun 1992 mencabut Perpu Nomor 21 Tahun 1960
+    Mengubah:
+    - id: perppu_21_1960
+      citation: PERPU No. 21 Tahun 1960
+      tentang: Bank Pembangunan Indonesia
+      url: https://peraturan.bpk.go.id/Details/53482/perpu-no-21-tahun-1960
+      note: null
+uji_materi: null

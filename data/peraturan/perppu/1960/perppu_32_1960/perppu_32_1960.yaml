@@ -1,0 +1,62 @@
+id: perppu_32_1960
+akn: /akn/id/act/perppu/1960/32
+type: perppu
+number: '32'
+year: 1960
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 32 Tahun 1960 tentang Penggunaan
+  Mata Uang Rupiah Dalam Lalu-Lintas Pembayaran Luar Negeri
+tentang: Penggunaan Mata Uang Rupiah Dalam Lalu-Lintas Pembayaran Luar Negeri
+short_name: null
+status: tidak_berlaku
+tanggal_penetapan: '1960-08-24'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53539/perpu-no-32-tahun-1960
+source_pdf_url: https://peraturan.bpk.go.id/Download/42922/perpu%20032%201960.pdf
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+versions:
+- id: perppu_32_1960_1960-08-24
+  kind: asli
+  source: official
+  date: '1960-08-24'
+  date_basis: tanggal_penetapan
+  text: perppu_32_1960_1960-08-24.txt
+  pasal_count: 10
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 284fcc61e5a89ed56e886339783a28e85ea1da86311c556989e8b4f3bde0204e
+tanggal_pengundangan: '1960-08-24'
+tanggal_berlaku: '1960-08-25'
+lembaran_negara: 'LN. 1960 No. 92, TLN. No. 2029, LL SETNEG : 10 HLM'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
+bpk:
+  id: 53539
+  files:
+  - url: https://peraturan.bpk.go.id/Download/42922/perpu%20032%201960.pdf
+    bpk_file_id: 42922
+    filename: perpu 032 1960.pdf
+    sha256: 284fcc61e5a89ed56e886339783a28e85ea1da86311c556989e8b4f3bde0204e
+    bytes: 41490
+    archive_url: null
+  status_peraturan:
+    Dicabut dengan:
+    - id: perppu_3_1963
+      citation: PERPU No. 3 Tahun 1963
+      tentang: Perubahan Undang-Undang No. 4 PRP Tahun 1959 Dan Pencabutan Undang-Undang
+        32 PRP Tahun 1960 Dan Undang-Undang No. 34 PRP Tahun 1960
+      url: https://peraturan.bpk.go.id/Details/53731/perpu-no-3-tahun-1963
+      note: null
+    Mencabut:
+    - id: pp_42_1959
+      citation: PP No. 42 Tahun 1959
+      tentang: Pungutan Ekspor dan Impor (Pueks dan Puim)
+      url: https://peraturan.bpk.go.id/Details/75804/pp-no-42-tahun-1959
+      note: null
+uji_materi: null

@@ -1,0 +1,62 @@
+id: perppu_3_1963
+akn: /akn/id/act/perppu/1963/3
+type: perppu
+number: '3'
+year: 1963
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 3 Tahun 1963 tentang Perubahan
+  Undang-Undang No. 4 PRP Tahun 1959 Dan Pencabutan Undang-Undang 32 PRP Tahun 1960
+  Dan Undang-Undang No. 34 PRP Tahun 1960
+tentang: Perubahan Undang-Undang No. 4 PRP Tahun 1959 Dan Pencabutan Undang-Undang
+  32 PRP Tahun 1960 Dan Undang-Undang No. 34 PRP Tahun 1960
+short_name: null
+status: berlaku
+tanggal_penetapan: '1963-05-22'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53731/perpu-no-3-tahun-1963
+source_pdf_url: https://peraturan.bpk.go.id/Download/43127/Perpu%20No.%20003%20Tahun%201963.pdf
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+versions:
+- id: perppu_3_1963_1963-05-22
+  kind: asli
+  source: official
+  date: '1963-05-22'
+  date_basis: tanggal_penetapan
+  text: perppu_3_1963_1963-05-22.txt
+  pasal_count: 3
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 0502be5d4636133e41cc6d77bd7a4554b05cff24a3b607b68c08e59c65e9113a
+tanggal_pengundangan: '1963-05-26'
+tanggal_berlaku: '1963-05-27'
+lembaran_negara: 'LN. 1963 No. 39, LL SETNEG : 3 HLM'
+subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN - PEREKONOMIAN
+bpk:
+  id: 53731
+  files:
+  - url: https://peraturan.bpk.go.id/Download/43127/Perpu%20No.%20003%20Tahun%201963.pdf
+    bpk_file_id: 43127
+    filename: Perpu No. 003 Tahun 1963.pdf
+    sha256: 0502be5d4636133e41cc6d77bd7a4554b05cff24a3b607b68c08e59c65e9113a
+    bytes: 25885
+    archive_url: null
+  status_peraturan:
+    Mencabut:
+    - id: perppu_34_1960
+      citation: PERPU No. 34 Tahun 1960
+      tentang: Pajak Transfer
+      url: https://peraturan.bpk.go.id/Details/53550/perpu-no-34-tahun-1960
+      note: null
+    - id: perppu_32_1960
+      citation: PERPU No. 32 Tahun 1960
+      tentang: Penggunaan Mata Uang Rupiah Dalam Lalu-Lintas Pembayaran Luar Negeri
+      url: https://peraturan.bpk.go.id/Details/53539/perpu-no-32-tahun-1960
+      note: null
+uji_materi: null

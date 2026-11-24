@@ -1,0 +1,55 @@
+id: perppu_53_1960
+akn: /akn/id/act/perppu/1960/53
+type: perppu
+number: '53'
+year: 1960
+title: Peraturan Pemerintah Pengganti Undang-Undang Nomor 53 Tahun 1960 tentang Perubahan
+  dan Tambahan Pajak Deviden
+tentang: Perubahan dan Tambahan Pajak Deviden
+short_name: null
+status: berlaku
+tanggal_penetapan: '1960-12-29'
+tempat_penetapan: Jakarta
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/53616/perpu-no-53-tahun-1960
+source_pdf_url: https://peraturan.bpk.go.id/Download/43005/perpu%20053%201960.pdf
+relationships:
+  amends: []
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+versions:
+- id: perppu_53_1960_1960-12-29
+  kind: asli
+  source: official
+  date: '1960-12-29'
+  date_basis: tanggal_penetapan
+  text: perppu_53_1960_1960-12-29.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 979a1ae7b0e8d0bd949737e2fce893446013526ccfd5a3774cb27560acdec065
+tanggal_pengundangan: '1960-12-20'
+tanggal_berlaku: '1960-12-20'
+lembaran_negara: 'LN. 1960 No. 171, TLN. No. 2114, LL SETNEG : 4 HLM'
+subjek: PERPAJAKAN
+bpk:
+  id: 53616
+  files:
+  - url: https://peraturan.bpk.go.id/Download/43005/perpu%20053%201960.pdf
+    bpk_file_id: 43005
+    filename: perpu 053 1960.pdf
+    sha256: 979a1ae7b0e8d0bd949737e2fce893446013526ccfd5a3774cb27560acdec065
+    bytes: 29796
+    archive_url: null
+  status_peraturan:
+    Mengubah:
+    - id: perppu_12_1959
+      citation: PERPU No. 12 Tahun 1959
+      tentang: Pajak Dividen
+      url: https://peraturan.bpk.go.id/Details/53885/perpu-no-12-tahun-1959
+      note: null
+uji_materi: null
