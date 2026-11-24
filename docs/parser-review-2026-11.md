@@ -73,7 +73,7 @@ full stop, BAGIAN/Bab Pertama numbering, BAB printed twice, "Pasal" and number o
 lines (A, B, I); multi-line chapter titles in normal capitals; lists on the label's line and
 after a lone ":" (E); "Dengan persetujuan …" as its own part (F); crest caption kept out of the
 title (G, partly); "PENJELASAN UMUM" on one line; old closing formula ("Agar supaya …"); the
-closing kept line by line as printed. Tests: `pipeline/tests/test_parser_v5.py`.
+closing kept line by line as printed. Tests: `pipeline/tests/` by topic (`test_page_furniture.py`, `test_headings.py`, `test_penjelasan.py`, `test_amending_laws.py`, `test_closing.py`).
 
 Still open: amending laws (J, UU 18/2025 counts 4 instead of Pasal I/II); OCR for scans (H;
 "SK No" serials, G); Lampiran (L); closing as structured fields for the Modern view; stored

@@ -1,6 +1,7 @@
 """Closing fields from the closing lines as printed, four eras of the BPK sample."""
 
 from hukum_bersih.closing import parse
+from hukum_bersih.pdf.structure import parse_lines
 
 UU_30_1947 = ["Ditetapkan di Yogyakarta", "pada tanggal 30 Agustus 1947.", "PRESIDEN REPUBLIK INDONESIA,",
               "SOEKARNO.", "Menteri Keuangan,", "A.A. MARAMIS.", "Diumumkan pada tanggal 30 Agustus 1947.",
@@ -68,3 +69,31 @@ def test_line_breaks_and_blank_place():                                # UU 11/2
     assert c["promulgated"]["place"] == "Jakarta" and c["promulgated"]["date"] == "21 April 2008"
     c = parse(["Disahkan di", "pada tanggal 30 April 2008", "PRESIDEN REPUBLIK INDONESIA,", "ttd.", "X"])
     assert "place" not in c["signed"] and c["signed"]["date"] == "30 April 2008"
+
+
+def kinds(doc, kind):
+    return [b for b in doc.blocks if b.kind == kind]
+
+
+def test_closing_kept_line_by_line():                             # UU 4/2009
+    doc = parse_lines(["Menimbang : a. bahwa x;", "Pasal 1",
+                       "Undang-Undang ini mulai berlaku pada tanggal diundangkan.",
+                       "Agar setiap orang mengetahuinya, memerintahkan pengundangan",
+                       "Undang-Undang ini dengan penempatannya dalam Lembaran Negara Republik Indonesia.",
+                       "Disahkan di Jakarta", "pada tanggal 12 Januari 2009", "PRESIDEN REPUBLIK INDONESIA,",
+                       "ttd.", "DR. H. SUSILO BAMBANG YUDHOYONO",
+                       "LEMBARAN NEGARA REPUBLIK INDONESIA TAHUN 2009 NOMOR 4"])
+    assert kinds(doc, "pasal")[-1].label == "Pasal 1"
+    assert "Agar" not in " ".join(b.text for b in doc.blocks if b.kind not in {"closing"})
+    closing = [b.text for b in kinds(doc, "closing")]
+    assert closing[0].startswith("Agar setiap orang") and closing[0].endswith("Indonesia.")
+    assert closing[1:5] == ["Disahkan di Jakarta", "pada tanggal 12 Januari 2009",
+                            "PRESIDEN REPUBLIK INDONESIA,", "ttd."]
+
+
+def test_old_closing_formula():                                   # UU 25/1956
+    doc = parse_lines(["Menimbang : a. bahwa x;", "Pasal 1", "isi.",
+                       "Agar supaya setiap orang dapat mengetahuinya, memerintahkan", "pengundangan.",
+                       "Disahkan di Jakarta"])
+    assert [b.text for b in kinds(doc, "closing")][:2] == [
+        "Agar supaya setiap orang dapat mengetahuinya, memerintahkan pengundangan.", "Disahkan di Jakarta"]

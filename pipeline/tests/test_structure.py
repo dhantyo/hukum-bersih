@@ -155,3 +155,13 @@ def test_list_between_chapter_and_first_pasal_is_text():
     xml = to_akn(text, "/akn/id/act/uu/2003/19", "act")
     xml = xml.decode() if isinstance(xml, bytes) else xml
     assert "pertama" in xml and xml.count("<article") == 2
+
+
+def test_keyword_like_word_in_text_is_not_leaked_markup():
+    import pytest
+
+    from hukum_bersih.akn.build import LeakedMarkupError, to_akn
+
+    to_akn("BODY\n  ART 1 -\n    TR: Tegangan Rendah\n", "/akn/id/act/uu/2024/59", "act")
+    with pytest.raises(LeakedMarkupError):
+        to_akn("BODY\n  ART 1 -\n    \\ART 2 - leaked\n", "/akn/id/act/uu/2024/59", "act")
