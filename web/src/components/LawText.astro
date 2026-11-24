@@ -23,6 +23,8 @@ const walk = (n: Node) => {
 };
 doc.body.forEach(walk);
 
+const Chevron = `<svg class="chev" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
 // What the opening contains, for its folded summary in Modern: "Menimbang (7) · Mengingat (3)"
 const opening: string[] = [];
 doc.preamble.forEach((n, i) => {
@@ -37,7 +39,7 @@ doc.preamble.forEach((n, i) => {
   {doc.preface.length > 0 && <div class="akn-preface part-pembukaan">{doc.preface.map((n) => <AknNode node={n} />)}</div>}
   {doc.preamble.length > 0 && (
     <details class="akn-preamble part-pembukaan" open>
-      <summary><span class="sum-title">Pembukaan</span>{opening.length > 0 && <span class="sum-meta">{opening.join(" · ")}</span>}</summary>
+      <summary><Fragment set:html={Chevron} /><span class="sum-title">Pembukaan</span>{opening.length > 0 && <span class="sum-meta">{opening.join(" · ")}</span>}</summary>
       {doc.preamble.map((n) => <AknNode node={n} />)}
     </details>
   )}
@@ -164,14 +166,19 @@ doc.preamble.forEach((n, i) => {
   .law :global(.fold-h) { position: relative; }
   .law :global(.fold-btn) {
     all: unset; box-sizing: border-box; display: block; width: 100%; cursor: pointer;
-    text-align: inherit; position: relative; min-height: var(--s-6); border-radius: var(--r-sm);
+    text-align: inherit; position: relative; border-radius: var(--r-sm);
+    /* padding, not min-height: a button centres its content in a min-height, which would move
+       the text away from the arrow (and keeps the target at least 28px tall) */
+    padding-block: var(--s-1);
   }
   .law :global(.fold-btn:focus-visible) { outline: 3px solid var(--primary); outline-offset: 2px; }
   .law :global(.chev) {
-    position: absolute; left: calc(-1 * var(--s-6)); top: 0.15em; color: var(--text-muted);
+    position: absolute; left: calc(-1 * var(--s-6)); top: calc(var(--s-1) + (1lh - 16px) / 2); color: var(--text-muted);
     transition: transform 0.15s ease;
   }
-  .law :global(.fold-btn[aria-expanded="true"] .chev) { transform: rotate(90deg); }
+  .law :global(.fold-btn[aria-expanded="true"] .chev), .law :global(.akn-preamble[open] > summary .chev) { transform: rotate(90deg); }
+  .law :global(.akn-preamble > summary .chev) { top: calc(var(--s-3) + (1lh - 16px) / 2); }
+  .law :global(.akn-preamble > summary:hover .chev) { color: var(--primary); }
   .law :global(.fold-btn:hover .chev) { color: var(--primary); }
   .law :global(.fold-preview) { display: none; }
   .law :global(.fold-btn[aria-expanded="false"] ~ .fold-preview) {
@@ -259,12 +266,6 @@ doc.preamble.forEach((n, i) => {
     font-family: var(--font-ui); padding: var(--s-3) 0; min-height: var(--tap); list-style: none; position: relative;
   }
   :global(:root:not([data-format="asli"])) .law :global(.akn-preamble > summary::-webkit-details-marker) { display: none; }
-  :global(:root:not([data-format="asli"])) .law :global(.akn-preamble > summary::before) {
-    content: ""; position: absolute; left: calc(-1 * var(--s-6) + 5px); top: calc(var(--s-3) + 0.45em);
-    width: 6px; height: 6px; border-right: 1.6px solid var(--text-muted); border-bottom: 1.6px solid var(--text-muted);
-    transform: rotate(-45deg); transition: transform 0.15s ease;
-  }
-  :global(:root:not([data-format="asli"])) .law :global(.akn-preamble[open] > summary::before) { transform: rotate(45deg); }
   :global(:root:not([data-format="asli"])) .law :global(.akn-preamble[open]) { padding-bottom: var(--s-4); }
   .law :global(.sum-title) { font-weight: 600; }
   .law :global(.sum-meta) { font-size: var(--fs-sm); color: var(--text-muted); }
@@ -289,7 +290,11 @@ doc.preamble.forEach((n, i) => {
 
   @media (max-width: 960px) {
     /* no margin for the arrow: it sits before the heading */
-    .law :global(.chev), :global(:root:not([data-format="asli"])) .law :global(.akn-preamble > summary::before) { position: static; display: inline-block; margin-right: var(--s-1); vertical-align: -0.15em; }
+    .law :global(.chev), .law :global(.akn-preamble > summary .chev) {
+      position: static; display: inline-block; margin: calc((1lh - 16px) / 2) var(--s-1) 0 0; vertical-align: top;
+    }
+    /* the Pembukaan summary is a flex row: align the arrow to the top of its first line */
+    .law :global(.akn-preamble > summary .chev) { align-self: flex-start; margin-right: 0; }
   }
   @media (max-width: 640px) {
     .law { font-size: var(--fs-base); }
