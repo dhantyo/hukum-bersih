@@ -10,10 +10,7 @@ export default defineConfig({
   env: core.env,
   extends: [core, solid, vitest, landmines, antiSlop],
   ignorePatterns: ["dist"],
-  jsPlugins: [
-    "eslint-plugin-solid",
-    "@stylexjs/eslint-plugin",
-  ],
+  jsPlugins: ["eslint-plugin-solid", "@stylexjs/eslint-plugin"],
   options: { typeAware: true },
   settings: solidV2.settings,
   rules: {
