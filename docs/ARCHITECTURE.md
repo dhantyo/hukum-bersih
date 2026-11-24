@@ -82,7 +82,7 @@ Names follow [NAMING.md](NAMING.md).
 | `ci.yml` | every push | pipeline lint + tests; build AKN; web tests (incl. M1 check) + build; no PDFs in git |
 | `deploy.yml` | push to default branch | build AKN + site, deploy to Cloudflare Pages |
 | `import-bpk.yml` | manual (schedule paused 2026-11-21 until the parser is fixed; normally every 6 h) | `mode: import`: BPK metadata, every PDF's sha256 recorded (Hugging Face mirror if BPK's download fails; nothing is uploaded to archive.org since 2026-11-24, the `archive` input is ignored), text from BPK's PDF with the current parser, never replacing a text with one that has fewer pasal. `mode: reparse`: texts re-converted from our archive.org copies (hash-checked), no BPK. `only`, `no_text` for samples |
-| `parser-regression.yml` | push touching the parser + manual | the 19-law regression set (`pipeline/tests/regression.yaml`, fails on any law off) and a random survey of UU from the mirror |
+| `parser-regression.yml` | push touching the parser + manual | the regression set (`pipeline/tests/regression.yaml`, fails on any law off) and a random survey of UU from the mirror |
 | `import-peraturan.yml` | manual (schedule removed 2026-11-21) | import from peraturan.go.id (answers only Indonesian IPs; the Indonesian VPN action was removed 2026-11-24, so it works only when the site lets other IPs in) |
 | `import-uploads.yml` | manual | PDFs attached to a GitHub release → manifest line (sha256) + text (`import-pdf`) |
 | `probe-sources.yml` | manual | which sources a GitHub runner can reach |
@@ -90,8 +90,8 @@ Names follow [NAMING.md](NAMING.md).
 | ~~`probe-bpk.yml`, `explore-bpk.yml`, `probe-bpk-app.yml`~~ | removed 2026-11-24 (last in c3332cfb) | one-off probes: which tool passes BPK's Cloudflare check (Scrapling won, `sources/bpk_session.py`); sample BPK pages (now `pipeline/tests/fixtures/bpk/`); BPK's Android app (never got the APK) |
 
 Where things run: everything recurring runs on GitHub Actions (no Claude session or personal
-computer needed). GitHub runners reach DPR files, the Wayback Machine and (since 2026-11-20
-evening) peraturan.go.id. See CLAUDE.md for the latest findings.
+computer needed). GitHub runners reach DPR files and the Wayback Machine, but peraturan.go.id only while it
+lets non-Indonesian IPs in. See [sources.md](sources.md) for what each site answers.
 
 ## Reused instead of written
 
@@ -99,7 +99,7 @@ evening) peraturan.go.id. See CLAUDE.md for the latest findings.
 |---|---|---|
 | Legal document model | Akoma Ntoso (OASIS LegalDocML) | [decision 0004](decisions/0004-akoma-ntoso-bluebell.md) |
 | Text format ↔ Akoma Ntoso | `bluebell-akn` (Laws.Africa) | |
-| Check that generated XML is valid Akoma Ntoso | OASIS Akoma Ntoso 3.0 XSD (downloaded in CI, sha256 pinned in `pipeline/scripts/validate_akn.py`) + `lxml` | report-only until the generator's year-only Work `FRBRdate` is fixed |
+| Check that generated XML is valid Akoma Ntoso | OASIS Akoma Ntoso 3.0 XSD (downloaded in CI, sha256 pinned in `pipeline/scripts/validate_akn.py`) + `lxml` | blocks CI; laws with no known date keep the year and are listed |
 | Check workflow files | `actionlint` (rhysd, pinned v1.7.7), job `actionlint` in `ci.yml` | shellcheck integration off (style notes only) |
 | Word diff | `@sanity/diff-match-patch` (Google's diff-match-patch) | semantic cleanup groups edits |
 | Matching reworded ayat, finding where text went | TF-IDF cosine similarity (standard information-retrieval weighting) | common legal words weigh little; a pointer is shown only for a clear best match |
@@ -118,5 +118,5 @@ evening) peraturan.go.id. See CLAUDE.md for the latest findings.
 | Rendering very long laws | CSS `content-visibility: auto` | per chapter in `LawText.astro` |
 | Search for "pasal 27 ITE" | citation lookup as on legislation.gov.uk / Pasal.id, over our own `laws.json` | `pages/cari/`; Pagefind's prefix fallback ("xyzqq" → "x") is filtered out by checking the highlighted words |
 | Indonesian PDF quirks | Pasal.id parser (AGPL) | to port: peraturan.go.id headers/footers, page-break dedup, OCR fixes, amendment laws |
-| BPK PDFs without Cloudflare (up to ~April 2025) | Hugging Face `Azzindani/ID_REG` (Apache-2.0), single files read from its zips by range request | byte-identical to BPK downloads (3/3 checked 2026-11-21); not used in the importer yet. `ID_REG_Parsed` (flat, one row per pasal) only for cross-checks |
+| BPK PDFs without Cloudflare (up to ~April 2025) | Hugging Face `Azzindani/ID_REG` (Apache-2.0), single files read from its zips by range request | byte-identical to BPK downloads (3/3 checked 2026-11-21); the importer falls back to it when a BPK download fails. `ID_REG_Parsed` (flat, one row per pasal) only for cross-checks |
 | Getting past peraturan.bpk.go.id's Cloudflare check (managed challenge) | Scrapling `StealthyFetcher(solve_cloudflare=True, real_chrome=True)` (BSD-3) to get `cf_clearance`, then `curl_cffi` with the same cookies and user agent | `probe-bpk.yml`, 2026-11-21: the only one of four that passed from GitHub runners (2/2; PDF fetched in the browser and again with curl_cffi). Failed: plain Playwright (control), SeleniumBase UC mode, Camoufox (checkbox not clicked). Not used: CloakBrowser (binary needs a licence key), FlareSolverr (README: cannot solve CAPTCHAs), origin-IP finders (go around the site's protection), paid CAPTCHA services |
