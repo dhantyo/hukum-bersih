@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import time
 from collections.abc import Callable, Iterable
 from pathlib import Path
@@ -193,14 +194,18 @@ def main(argv: list[str] | None = None) -> int:
         from .sources import peraturan_bpk as bpk
         from .sources.bpk_session import Challenged, Session
 
-        session, done, failed = Session(args.delay), 0, 0
+        # kept between the workflow's batches (one process each): clearance, listing pages
+        cache = Path(os.environ["HUKUM_BERSIH_BPK_CACHE"]) if os.environ.get("HUKUM_BERSIH_BPK_CACHE") else None
+        if cache:
+            cache.mkdir(parents=True, exist_ok=True)
+        session, done, failed = Session(args.delay, state=cache and cache / "session.json"), 0, 0
         known = bpk.known_records(args.data_dir)
-        cache = bpk.archived_files(args.data_dir)
+        archived = bpk.archived_files(args.data_dir)
         only = [i.strip() for i in args.only.split(",") if i.strip()]
 
         def items():
             if not only:
-                yield from bpk.listings(session, args.jenis)
+                yield from bpk.listings(session, args.jenis, cache)
             for work in only:
                 try:
                     yield bpk.find(session, work)
@@ -211,7 +216,7 @@ def main(argv: list[str] | None = None) -> int:
             for item in items():
                 try:
                     line = bpk.import_one(session, item, args.jenis, args.data_dir, known,
-                                          do_archive=not args.no_archive, cache=cache,
+                                          do_archive=not args.no_archive, cache=archived,
                                           no_text=args.no_text)
                 except Challenged:
                     raise

@@ -266,8 +266,23 @@ def is_penjelasan(f: dict) -> bool:
     return "penjelasan" in (f.get("filename") or "").lower()
 
 
+NO_PDF_RECHECK_DAYS = 7   # a law BPK lists without a PDF is looked at again after this
+
+
+def no_pdf_lately(rec: dict) -> bool:
+    """BPK was checked lately and lists no PDF for the law: nothing to do until the recheck.
+    Without this, such laws were fetched again in every batch (3 of them took 9 batches,
+    ~2 h, on 2026-11-23)."""
+    from datetime import date
+
+    bpk = rec.get("bpk") or {}
+    checked = bpk.get("no_pdf_checked")
+    return (bpk.get("files") == [] and bool(checked)
+            and (date.today() - date.fromisoformat(str(checked))).days < NO_PDF_RECHECK_DAYS)
+
+
 def done(rec: dict) -> bool:
-    return files_done(rec) and text_current(rec)
+    return no_pdf_lately(rec) or (files_done(rec) and text_current(rec))
 
 
 def retext(pdf: Path, rec: dict, folder: Path, extra: list[Path] | None = None) -> str:
@@ -354,10 +369,19 @@ def from_mirror(filename: str, data_dir: Path) -> tuple[bytes, str] | None:
     return (content, f"Azzindani/ID_REG {hit[0]}/{member}") if content[:5].startswith(b"%PDF") else None
 
 
-def listings(session, jenis: str) -> Iterator[Listing]:
+def listings(session, jenis: str, cache: Path | None = None) -> Iterator[Listing]:
+    """Every regulation of ``jenis`` in BPK's listing, newest first. ``cache``: a folder that
+    keeps the listing pages, so later batches of one workflow run read them from disk instead
+    of walking ~190 pages again (~9.5 min a batch); a new run starts with an empty folder."""
     page, last = 1, 1
     while page <= last:
-        text = session.get(f"/Search?jenis={JENIS_ID[jenis]}&p={page}").text
+        saved = cache / f"{jenis}_{page}.html" if cache else None
+        if saved and saved.exists():
+            text = saved.read_text()
+        else:
+            text = session.get(f"/Search?jenis={JENIS_ID[jenis]}&p={page}").text
+            if saved:
+                saved.write_text(text)
         last = max(last, last_page(text))
         items = parse_listing(text)
         if not items:
@@ -401,6 +425,10 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
     path = record_path(data_dir, work)
     existing = yaml.safe_load(path.read_text()) if path.exists() else None
     rec, notes = update_record(existing, d, jenis, detail_url)
+    if not d["files"]:
+        from datetime import date
+
+        rec["bpk"]["no_pdf_checked"] = date.today().isoformat()
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(yaml.safe_dump(rec, allow_unicode=True, sort_keys=False))   # metadata first
     known[item.bpk_id] = path
