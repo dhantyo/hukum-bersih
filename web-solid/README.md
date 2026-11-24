@@ -4,7 +4,7 @@ The Solid 2 rewrite serves law pages on demand. Public law data and Pagefind ass
 
 ## Run locally
 
-Use Node.js 24 and the pnpm version in `package.json`. From this directory run `pnpm install --frozen-lockfile` and `pnpm run build`. The export command reads the generated Akoma Ntoso and dependencies in the sibling Astro project. Build the Akoma Ntoso corpus and install the Astro dependencies before exporting.
+Use the Node.js version in `.node-version` and the pnpm version in `package.json`. From this directory run `pnpm install --frozen-lockfile` and `pnpm run build`. The export command reads the generated Akoma Ntoso and dependencies in the sibling Astro project. Build the Akoma Ntoso corpus and install the Astro dependencies before exporting.
 
 ```sh
 stage="$(mktemp -d)"

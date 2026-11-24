@@ -69,7 +69,7 @@ jobs:
           package_json_file: web-solid/package.json
       - uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version-file: web-solid/.node-version
           cache: pnpm
           cache-dependency-path: web-solid/pnpm-lock.yaml
       # The Solid app type-checks and reads shared legal logic from web/src/lib, which needs web's dependencies.
