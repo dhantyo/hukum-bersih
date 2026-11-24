@@ -21,6 +21,8 @@ const Document = (props: ParentProps) => (
     <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="color-scheme" content="light dark" />
+      <link rel="icon" href="data:," />
       {import.meta.env.DEV && (
         <link rel="stylesheet" href="/virtual:stylex.css" />
       )}

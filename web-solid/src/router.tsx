@@ -22,6 +22,10 @@ export const Router = createRouter({
     {
       path: "/",
       component: lazy(async () => await import("./routes/home.tsx")),
+      preload: () => {
+        void overviewQuery();
+        void draftBillsQuery();
+      },
     },
     {
       path: "/uu",
@@ -108,6 +112,10 @@ export const Router = createRouter({
       preload: ({ location }) => {
         void searchQuery(v.parse(searchPage, location.query).q);
       },
+    },
+    {
+      path: "/tentang",
+      component: lazy(async () => await import("./routes/about.tsx")),
     },
     {
       path: "*404",

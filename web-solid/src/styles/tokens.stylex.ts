@@ -5,6 +5,12 @@ export const color = stylex.defineVars({
   text: "var(--text)",
   link: "var(--primary)",
   line: "var(--line)",
+  lineStrong: "var(--line-strong)",
+  backgroundSubtle: "var(--bg-subtle)",
+  textMuted: "var(--text-muted)",
+  ok: "var(--ok)",
+  warn: "var(--warn)",
+  gone: "var(--gone)",
 });
 
 export const space = stylex.defineVars({
@@ -12,6 +18,10 @@ export const space = stylex.defineVars({
   s2: "var(--s-2)",
   s3: "var(--s-3)",
   s4: "var(--s-4)",
+  s5: "var(--s-5)",
+  s6: "var(--s-6)",
+  s7: "var(--s-7)",
+  s8: "var(--s-8)",
 });
 
 export const font = stylex.defineVars({
@@ -21,7 +31,14 @@ export const font = stylex.defineVars({
 });
 
 export const size = stylex.defineVars({
+  xs: "var(--fs-xs)",
+  sm: "var(--fs-sm)",
   base: "var(--fs-base)",
+  lg: "var(--fs-lg)",
+  xl: "var(--fs-xl)",
+  xxl: "var(--fs-2xl)",
+  page: "var(--page)",
+  radius: "var(--r-sm)",
   law: "var(--fs-law)",
   measure: "var(--measure)",
   hang: "var(--hang)",
