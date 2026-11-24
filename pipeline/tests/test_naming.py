@@ -1,6 +1,6 @@
 import pytest
 
-from hukum_bersih.naming import archive_item, default_title, full_title, tanggal, validate_id
+from hukum_bersih.naming import validate_id
 
 
 @pytest.mark.parametrize(
@@ -40,59 +40,3 @@ def test_valid_ids(good):
 def test_invalid_ids(bad):
     with pytest.raises(ValueError):
         validate_id(bad)
-
-
-def test_archive_item():
-    assert archive_item("uu_11_2008_2008-04-21") == "uu_11_2008"
-    assert archive_item("uu_11_2008") == "uu_11_2008"
-    assert archive_item("uu_6_2023_2023-03-31_2") == "uu_6_2023"
-    assert archive_item("ruu_perampasan-aset_2026-11-19_draft-final") == (
-        "ruu_perampasan-aset_2026-11-19_draft-final"
-    )
-
-
-def test_tanggal():
-    assert tanggal("2026-11-19") == "19 November 2026"
-    assert tanggal("2023-05") == "Mei 2023"
-    assert tanggal("2008") == "2008"
-    assert tanggal("2024-01-02") == "2 Januari 2024"
-
-
-def test_default_title_regulation(tmp_path):
-    assert default_title("uu_11_2008_2008-04-21", tmp_path) == "Undang-Undang Nomor 11 Tahun 2008"
-    assert default_title("perppu_2_2022", tmp_path) == (
-        "Peraturan Pemerintah Pengganti Undang-Undang Nomor 2 Tahun 2022"
-    )
-
-
-def test_titles_ruu(tmp_path):
-    d = tmp_path / "ruu" / "contoh"
-    d.mkdir(parents=True)
-    (d / "ruu.yaml").write_text(
-        "title: RUU tentang Contoh Baru\n"
-        "short_name: RUU Contoh\n"
-        "documents:\n"
-        "  - id: ruu_contoh_2023-05_draft_pemerintah\n"
-        "    ruu_title: RUU tentang Contoh Lama\n"
-    )
-    assert default_title("ruu_contoh_2023-05_draft_pemerintah", tmp_path) == (
-        "RUU Contoh – Draf RUU Pemerintah (Mei 2023)"
-    )
-    assert full_title("ruu_contoh_2023-05_draft_pemerintah", tmp_path) == (
-        "Draf RUU Pemerintah – RUU tentang Contoh Lama (Mei 2023)"
-    )
-    assert default_title("ruu_contoh_2026-11-19_draft-final", tmp_path) == (
-        "RUU Contoh – Draf RUU Final (19 November 2026)"
-    )
-    assert default_title("ruu_contoh_2026-11-09_dim_2", tmp_path) == (
-        "RUU Contoh – DIM bagian 2 (9 November 2026)"
-    )
-    assert full_title("ruu_contoh_2026-11-09_dim_2", tmp_path) == (
-        "Daftar Inventaris Masalah (DIM) bagian 2 – RUU tentang Contoh Baru (9 November 2026)"
-    )
-
-
-def test_title_without_tracker_falls_back_to_slug(tmp_path):
-    assert default_title("ruu_perampasan-aset_2026-11-19_draft-final", tmp_path) == (
-        "RUU Perampasan Aset – Draf RUU Final (19 November 2026)"
-    )

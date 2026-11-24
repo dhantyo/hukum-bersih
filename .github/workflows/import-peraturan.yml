@@ -3,8 +3,8 @@ name: Import regulations
 # Imports regulations from peraturan.go.id into data/ (Bluebell text + YAML records), in batches
 # of 50, committing and pushing after each batch. Already imported regulations are skipped, so
 # every run resumes where the last one stopped; once everything is in, runs only pick up new
-# regulations. PDFs are archived separately by archive-pending.yml. Runs on GitHub, so it does
-# not depend on anyone's computer or a Claude session.
+# regulations. Runs on GitHub, so it does not
+# depend on anyone's computer or a Claude session.
 on:
   # no schedule since 2026-11-21: import-bpk.yml is the main import (peraturan.go.id
   # answers only Indonesian IPs); run by hand, e.g. with the WG_INDONESIA tunnel

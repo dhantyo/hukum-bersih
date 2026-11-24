@@ -1,7 +1,7 @@
 """HTTP session for peraturan.bpk.go.id, which sits behind a Cloudflare managed challenge.
 
 A real browser clears the challenge once (Scrapling's StealthyFetcher, chosen in
-docs/ARCHITECTURE.md "Reused instead of written" after the probe-bpk.yml comparison); its
+docs/ARCHITECTURE.md "Reused instead of written" after a comparison of four tools); its
 cookies (cf_clearance) and user agent then go into a curl_cffi session that looks like the
 same Chrome, which does the actual requests. When Cloudflare challenges again (clearance
 expired), the browser runs again. With ``state`` (a file), the cookies and user agent are kept

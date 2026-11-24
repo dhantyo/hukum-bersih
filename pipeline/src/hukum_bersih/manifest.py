@@ -17,7 +17,7 @@ class ManifestEntry:
     archive_url: str | None = None
     doc_id: str | None = None
     original_filename: str | None = None
-    archived_sha256: str | None = None   # only when the archived copy differs (archive.Repaired)
+    archived_sha256: str | None = None   # only when the archived copy differs (old lines, from a qpdf-rewritten upload)
     note: str | None = None
 
     def to_dict(self) -> dict:
@@ -73,23 +73,3 @@ def records(data_dir: Path):
         for line in manifest.read_text().splitlines():
             if line.strip():
                 yield json.loads(line)
-
-
-def already_archived(manifest: Path, url: str, sha256: str, archive_url: str | None) -> bool:
-    import json
-
-    if not manifest.exists():
-        return False
-    return any(
-        (rec.get("source_url"), rec.get("sha256"), rec.get("archive_url")) == (url, sha256, archive_url)
-        for rec in map(json.loads, filter(str.strip, manifest.read_text().splitlines()))
-    )
-
-
-def latest_entry(data_dir: Path, doc_id: str) -> dict | None:
-    """Most recent manifest line recorded for a document id."""
-    found = None
-    for rec in records(data_dir):
-        if rec.get("doc_id") == doc_id and (found is None or rec["fetched_at"] > found["fetched_at"]):
-            found = rec
-    return found

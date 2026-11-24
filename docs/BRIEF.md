@@ -157,7 +157,7 @@ Reusing this code makes `hukum-web` AGPL-3.0. That's fine; it's meant to be open
 ### 5.3 Archiving rules
 
 For every fetched file, record in a source manifest: `source_url`, `fetched_at`, `sha256`, `bytes`, `archive_url`.
-- **PDFs never go into git.** Push them to the Internet Archive instead: upload as items with the `internetarchive` CLI, which also works for geo-blocked DPR files the Wayback crawler can't reach. Also request a Wayback capture of public URLs.
+- **PDFs never go into git.** (Superseded 2026-11-24, decision 0014: nothing is uploaded any more; only the sha256 is kept.) Push them to the Internet Archive instead: upload as items with the `internetarchive` CLI, which also works for geo-blocked DPR files the Wayback crawler can't reach. Also request a Wayback capture of public URLs.
 - Skip unchanged files by hash (idempotent runs).
 - One commit per document change, with a meaningful message, e.g. `ruu/perampasan-aset: add Draft RUU Final (DPR, 2026-11-19)`.
 - **Never rewrite history** in the data repo. Corrections are new commits.
