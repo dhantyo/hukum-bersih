@@ -1,6 +1,7 @@
 from pathlib import Path
 
 import pytest
+from recfactory import make_record, make_version
 
 from hukum_bersih.sources import peraturan_bpk as bpk
 
@@ -131,12 +132,10 @@ def test_import_existing_record_keeps_text_and_records_pdf(tmp_path):
     folder = tmp_path / "peraturan" / "uu" / "2009" / "uu_4_2009"
     folder.mkdir(parents=True)
     (folder / "uu_4_2009_2009-01-12.txt").write_text("text from peraturan.go.id")
-    rec = {"id": "uu_4_2009", "type": "uu", "number": "4", "year": 2009, "tentang": "X",
-           "tanggal_penetapan": "2009-01-12", "status": "berlaku",
-           "source_url": "https://peraturan.go.id/id/uu-no-4-tahun-2009",
-           "source_pdf_url": "https://peraturan.go.id/files/uu4-2009bt.pdf",
-           "versions": [{"id": "uu_4_2009_2009-01-12", "text": "uu_4_2009_2009-01-12.txt",
-                         "pasal_count": 175}]}
+    rec = make_record("uu_4_2009", tentang="X", tanggal_penetapan="2009-01-12", status="berlaku",
+                      source_url="https://peraturan.go.id/id/uu-no-4-tahun-2009",
+                      source_pdf_url="https://peraturan.go.id/files/uu4-2009bt.pdf",
+                      versions=[make_version("uu_4_2009", pasal_count=175)])
     (folder / "uu_4_2009.yaml").write_text(yaml.safe_dump(rec))
     s = FakeSession("details_uu_4_2009.html", small_pdf())
     item = bpk.Listing("/Details/38578/uu-no-4-tahun-2009", 38578)
@@ -235,8 +234,9 @@ def test_reparse_from_archive_checks_the_hash(tmp_path, monkeypatch):
     pdf.write_bytes(small_pdf())
     folder = tmp_path / "peraturan" / "uu" / "2026" / "uu_5_2026"
     folder.mkdir(parents=True)
-    rec = {"id": "uu_5_2026", "akn": "/akn/id/act/uu/2026/5", "year": 2026, "versions": [],
-           "bpk": {"files": [{"url": "u", "sha256": sha256_file(pdf), "archive_url": "https://archive.org/x"}]}}
+    rec = make_record("uu_5_2026", bpk={"id": 1, "files": [
+        {"url": "u", "bpk_file_id": 1, "filename": "f.pdf", "sha256": sha256_file(pdf),
+         "archive_url": "https://archive.org/x"}]})
     (folder / "uu_5_2026.yaml").write_text(yaml.safe_dump(rec))
     monkeypatch.setattr(urllib.request, "urlretrieve", lambda url, dest: dest.write_bytes(pdf.read_bytes()))
     assert list(bpk.reparse(tmp_path)) == ["ok   uu_5_2026: reparsed, no pasal found (scanned PDF?)"]

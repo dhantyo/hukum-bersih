@@ -50,6 +50,7 @@ Names follow [NAMING.md](NAMING.md).
 | `archive.py` | archive.org upload, retitle, empty obsolete items |
 | `manifest.py` | Source manifest records |
 | `naming.py` | Ids and titles (NAMING.md) |
+| `records.py` | The schema of a law record (Pydantic, `extra="forbid"`, strict types). `load_record` / `save_record` are the only way to read and write `data/peraturan/**/<id>.yaml`: records stay dicts, `save_record` validates and then dumps the same dict (`allow_unicode`, no key sorting), so a misspelt key or a wrong type fails before anything is written. A new field is added here first |
 | `pdf/extract.py` | PDF → cleaned lines (headers, page numbers, footers, signature boxes removed) |
 | `pdf/ocr_fix.py` | Misread words of scanned pages corrected when a spell check is confident; word lists and shape confusions in `pdf/ocr_rules/` ([decision 0013](decisions/0013-ocr-spell-fix.md)) |
 | `pdf/structure.py` | Lines → structural blocks (BAB … Pasal, ayat, huruf/angka, Penjelasan) |
@@ -109,6 +110,7 @@ evening) peraturan.go.id. See CLAUDE.md for the latest findings.
 | PDF text | PyMuPDF | |
 | OCR of scanned pages | Indra OCR (`indra-ocr`, CPU; Tesseract `ind` as fallback) | [decision 0012](decisions/0012-indra-ocr.md): checked on hand-typed ground truth against Tesseract (Ubuntu and `tessdata_best`), PaddleOCR (server, mobile/RapidOCR, VL), GLM-OCR, MinerU2.5-Pro, markitdown |
 | Correcting OCR misreads | Norvig's spelling corrector (one edit) over our own typed texts' words, Hunspell `id_ID` + `en_US` (system packages) as the list of real words never changed | [decision 0013](decisions/0013-ocr-spell-fix.md). Checked: Pasal.id's `ocr_correct.py` (one regex per misread word, changes case: not used), SymSpell/`symspellpy` (fast edit-distance lookup, but no weights for letter shapes and speed is not the limit: not used) |
+| Validating law records before they are written | Pydantic v2 (`records.py`) | models are the gate only: the code keeps working with dicts and the YAML is dumped from the dict, byte for byte as before |
 | Search | Pagefind | |
 | Showing a law's history | legislation.gov.uk "changes over time", Fedlex "Chronologie" | [decision 0008](decisions/0008-law-history.md); relations parsed with our own regexes over our own data |
 | Repealed / not-yet-consolidated warning | legislation.gov.uk "changes to legislation", Fedlex "nicht mehr in Kraft" banners | `StatusBanner.astro` |

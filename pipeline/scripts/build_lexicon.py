@@ -18,9 +18,11 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-import yaml
-
 HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE.parent / "src"))
+
+from hukum_bersih.records import load_record
+
 OUT = HERE.parent / "src" / "hukum_bersih" / "pdf" / "ocr_rules" / "lexicon.txt"
 WORD = re.compile(r"[A-Za-z]+")
 MISREAD_RATIO = 100
@@ -35,7 +37,7 @@ def main() -> None:
     docs: Counter[str] = Counter()
     texts = 0
     for path in sorted((args.data / "peraturan").glob("*/*/*/*.yaml")):
-        rec = yaml.safe_load(path.read_text()) or {}
+        rec = load_record(path)
         for v in rec.get("versions") or []:
             text = path.parent / (v.get("text") or "")
             if v.get("ocr") or (v.get("parser_version") or 0) < 6 or not text.is_file():

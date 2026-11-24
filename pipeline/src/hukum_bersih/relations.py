@@ -19,7 +19,7 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
-import yaml
+from .records import load_record, save_record
 
 ORDINAL = {"KEDUA": 2, "KETIGA": 3, "KEEMPAT": 4, "KELIMA": 5, "KEENAM": 6, "KETUJUH": 7,
            "KEDELAPAN": 8, "KESEMBILAN": 9, "KESEPULUH": 10}
@@ -168,7 +168,7 @@ def _checked(changes: dict, known: set[str]) -> dict:
 def build(data_dir: Path) -> dict[str, int]:
     """Recompute relationships for every regulation record under data/peraturan/."""
     paths = {p.stem: p for p in (data_dir / "peraturan").glob("*/*/*/*.yaml")}
-    recs = {k: yaml.safe_load(p.read_text()) for k, p in paths.items()}
+    recs = {k: load_record(p) for k, p in paths.items()}
     rel = {k: {"amends": [], "amended_by": [], "revokes": [], "revoked_by": [],
                "enacts": [], "enacted_by": []} for k in recs}
     for k, rec in recs.items():
@@ -238,6 +238,6 @@ def build(data_dir: Path) -> dict[str, int]:
         stats["with_changes"] += sum(1 for a in r["amends"] if a.get("changes"))
         if rec.get("relationships") != r:
             rec["relationships"] = r
-            paths[k].write_text(yaml.safe_dump(rec, allow_unicode=True, sort_keys=False))
+            save_record(paths[k], rec)
             stats["updated"] += 1
     return stats

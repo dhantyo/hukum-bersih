@@ -66,9 +66,8 @@ class Pending:
 
 def pending(data_dir: Path) -> list[Pending]:
     """Regulation PDFs the importer recorded but that are not on archive.org yet."""
-    import yaml
-
     from .manifest import records
+    from .records import load_record
 
     archived = set()
     for r in records(data_dir):
@@ -79,7 +78,7 @@ def pending(data_dir: Path) -> list[Pending]:
                 pass  # lines from before the naming rule (docs/NAMING.md) are history only
     out = []
     for path in sorted((data_dir / "peraturan").glob("*/*/*/*.yaml")):
-        rec = yaml.safe_load(path.read_text())
+        rec = load_record(path)
         if rec["id"] in archived or not rec.get("source_pdf_url"):
             continue
         if "peraturan.bpk.go.id" in rec["source_pdf_url"]:

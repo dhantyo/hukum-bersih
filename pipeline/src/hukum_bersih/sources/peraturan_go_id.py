@@ -20,10 +20,10 @@ from dataclasses import dataclass
 from pathlib import Path
 
 import httpx
-import yaml
 
 from .. import USER_AGENT
 from ..manifest import entry_for_file, manifest_path
+from ..records import load_record, save_record
 
 BASE = "https://peraturan.go.id"
 BULAN = {b: i for i, b in enumerate(
@@ -141,7 +141,7 @@ def import_one(client: Client, item: Listing, jenis: str, data_dir: Path) -> str
     }
     note = convert(client, rec, folder, data_dir) if pdf_path else "no PDF"
     folder.mkdir(parents=True, exist_ok=True)
-    record.write_text(yaml.safe_dump(rec, allow_unicode=True, sort_keys=False))
+    save_record(record, rec)
     return f"ok   {work}: {note}"
 
 
@@ -275,7 +275,7 @@ def reparse(client: Client, jenis: str, data_dir: Path,
     if only:
         records = [r for r in records if r.stem in only]
     for record in records:
-        rec = yaml.safe_load(record.read_text())
+        rec = load_record(record)
         versions = rec.get("versions") or []
         if versions and all(v.get("parser_version") == PARSER_VERSION for v in versions):
             continue
@@ -292,5 +292,5 @@ def reparse(client: Client, jenis: str, data_dir: Path,
             continue
         if not rec["versions"]:
             rec["parser_version_tried"] = PARSER_VERSION
-        record.write_text(yaml.safe_dump(rec, allow_unicode=True, sort_keys=False))
+        save_record(record, rec)
         yield f"ok   {rec['id']}: reparsed, {note}"

@@ -26,8 +26,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from urllib.parse import unquote
 
-import yaml
-
+from ..records import load_record, save_record
 from .bpk_session import BASE
 
 SOURCE = "peraturan.bpk.go.id"
@@ -415,7 +414,7 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
     from ..naming import archive_item
 
     path = known.get(item.bpk_id)
-    if path and done(yaml.safe_load(path.read_text())):
+    if path and done(load_record(path)):
         return f"skip {path.stem}: already from BPK"
     detail_url = BASE + item.path
     d = parse_detail(session.get(item.path).text)
@@ -423,14 +422,14 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
         return f"skip {item.path}: no metadata"
     work = work_id(d["meta"], jenis)
     path = record_path(data_dir, work)
-    existing = yaml.safe_load(path.read_text()) if path.exists() else None
+    existing = load_record(path) if path.exists() else None
     rec, notes = update_record(existing, d, jenis, detail_url)
     if not d["files"]:
         from datetime import date
 
         rec["bpk"]["no_pdf_checked"] = date.today().isoformat()
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(yaml.safe_dump(rec, allow_unicode=True, sort_keys=False))   # metadata first
+    save_record(path, rec)   # metadata first
     known[item.bpk_id] = path
     if not d["files"]:
         return f"ok   {work}: no PDF on BPK" + "".join(f"; {n}" for n in notes)
@@ -488,7 +487,7 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
             out.append("archived" if archive_url else "recorded")
         note = "PDFs only (no text step)" if no_text else retext(main_pdf or penjelasan.pop(0), rec, path.parent, penjelasan)
         notes += check_dates(rec, path.parent)
-    path.write_text(yaml.safe_dump(rec, allow_unicode=True, sort_keys=False))
+    save_record(path, rec)
     return (f"ok   {work}: {len(out)} PDF {'/'.join(sorted(set(out)))}; {note}"
             + "".join(f"; {n}" for n in notes))
 
@@ -497,7 +496,7 @@ def known_records(data_dir: Path) -> dict[int, Path]:
     """bpk id -> record path, for records already linked to BPK."""
     out = {}
     for path in (data_dir / "peraturan").glob("*/*/*/*.yaml"):
-        rec = yaml.safe_load(path.read_text())
+        rec = load_record(path)
         if (rec.get("bpk") or {}).get("id"):
             out[int(rec["bpk"]["id"])] = path
     return out
@@ -512,7 +511,7 @@ def reparse(data_dir: Path, only: set[str] | None = None) -> Iterator[str]:
     from ..manifest import sha256_file
 
     for path in sorted((data_dir / "peraturan").glob("*/*/*/*.yaml")):
-        rec = yaml.safe_load(path.read_text())
+        rec = load_record(path)
         if only and rec["id"] not in only:
             continue
         files = (rec.get("bpk") or {}).get("files") or []
@@ -540,5 +539,5 @@ def reparse(data_dir: Path, only: set[str] | None = None) -> Iterator[str]:
                 yield f"FAIL {rec['id']}: {failed}"
                 continue
             note = retext(pdfs[0], rec, path.parent, pdfs[1:])
-        path.write_text(yaml.safe_dump(rec, allow_unicode=True, sort_keys=False))
+        save_record(path, rec)
         yield f"ok   {rec['id']}: reparsed, {note}"
