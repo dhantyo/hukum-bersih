@@ -13,9 +13,15 @@ on:
       ocr_fix:
         description: "OCR spell fix report on N random scanned UU (0 = no)"
         default: "30"
+      compare:
+        description: "Compare the current parser's text with the stored text for these law ids (comma-separated, e.g. uu_16_2022,uu_7_2021; empty = skip)"
+        default: ""
+      compare_pages:
+        description: "With compare: 1-based pages whose cleaned lines to print (comma-separated)"
+        default: ""
   push:
     paths: ["pipeline/src/hukum_bersih/pdf/**", "pipeline/src/hukum_bersih/akn/**",
-            "pipeline/src/hukum_bersih/closing.py", "pipeline/tests/regression.yaml", "pipeline/scripts/ocr_fix_report.py",
+            "pipeline/src/hukum_bersih/closing.py", "pipeline/tests/regression.yaml", "pipeline/scripts/ocr_fix_report.py", "pipeline/scripts/compare_reparse.py",
             ".github/workflows/parser-regression.yml", ".github/actions/ocr-cache/**"]
 
 permissions:
@@ -52,6 +58,13 @@ jobs:
         if: ${{ (inputs.ocr_fix || '30') != '0' }}
         working-directory: pipeline
         run: uv run python scripts/ocr_fix_report.py "${{ inputs.ocr_fix || '30' }}" 2>/dev/null | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Compare with the stored texts
+        if: ${{ inputs.compare != '' }}
+        working-directory: pipeline
+        env:
+          COMPARE: ${{ inputs.compare }}
+          COMPARE_PAGES: ${{ inputs.compare_pages }}
+        run: uv run python scripts/compare_reparse.py --pages "$COMPARE_PAGES" ${COMPARE//,/ } 2>/dev/null | tee -a "$GITHUB_STEP_SUMMARY"
       - uses: ./.github/actions/ocr-cache
         if: always()
         with:

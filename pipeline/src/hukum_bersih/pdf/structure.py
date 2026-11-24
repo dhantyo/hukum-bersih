@@ -523,12 +523,13 @@ def parse_lines(lines: list[str]) -> Document:
     return Parser(lines).run()
 
 
-def parse_pdf(pdf: Path, extra: Sequence[Path] = ()) -> Document:
+def parse_pdf(pdf: Path, extra: Sequence[Path] = (), stats: dict | None = None) -> Document:
     """``extra``: further PDFs of the same law read after it, such as a Penjelasan that BPK
-    publishes as a separate file (UU 19/2003)."""
+    publishes as a separate file (UU 19/2003). ``stats``: filled by the page reading (OCR
+    pages, the header/footer lines cut by position, ...) for a caller that wants to see them."""
     from .extract import clean_lines, page_lines
 
-    stats: dict = {}
+    stats = stats if stats is not None else {}
     lines = clean_lines(page_lines(pdf, stats), stats)
     for more in extra:
         lines += clean_lines(page_lines(more, stats), stats)
