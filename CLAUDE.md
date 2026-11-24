@@ -22,7 +22,7 @@ Code, tests and workflow files are the source of truth for numbers, thresholds a
 - Don't scrape pasal.id.
 - Ask before adding a new source or regulation type (ministry rules such as Permen are not imported).
 - Reuse before writing (decision 0005): look for a tested solution first, and record what you checked in the "Reused instead of written" table of `docs/ARCHITECTURE.md`.
-- Imports and other heavy runs (OCR, surveys) run on GitHub Actions, not on a local computer or a personal server. Scheduled workflows run only from the default branch.
+- Imports and other heavy runs (OCR, regression checks) run on GitHub Actions, not on a local computer or a personal server. Scheduled workflows run only from the default branch.
 - No personal names in code, comments, tests or workflows. Attribute a rule by date and example ("2026-11-24: UU 100/2024 ...").
 - Record a lasting choice as a new file in `docs/decisions/`, not here. Record a finding about a site in `docs/sources.md`.
 

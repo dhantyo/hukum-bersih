@@ -201,7 +201,8 @@ def test_never_replaced_by_a_poorer_text(tmp_path):
 
     folder = tmp_path / "uu_9_2000"
     folder.mkdir()
-    (folder / "uu_9_2000_2000-01-01.txt").write_text("old")
+    stored = "BODY\n" + "".join(f"  ART {n} -\n    kata.\n" for n in range(1, 41))
+    (folder / "uu_9_2000_2000-01-01.txt").write_text(stored)
     rec = {"id": "uu_9_2000", "akn": "/akn/id/act/uu/2000/9", "year": 2000, "tanggal_penetapan": "2000-01-01",
            "versions": [{"id": "uu_9_2000_2000-01-01", "text": "uu_9_2000_2000-01-01.txt", "pasal_count": 40}]}
     import pymupdf
@@ -212,8 +213,8 @@ def test_never_replaced_by_a_poorer_text(tmp_path):
         page.insert_text((72, 72 + 20 * k), t)
     doc.save(tmp_path / "p.pdf")
     note = convert_pdf(tmp_path / "p.pdf", rec, folder, source="peraturan.bpk.go.id")
-    assert note.startswith("kept old text (new parse has 2 pasal, stored 40)")
-    assert (folder / "uu_9_2000_2000-01-01.txt").read_text() == "old" and "stored text has 40" in rec["reparse_error"]
+    assert note.startswith("kept old text (new text has 2 pasal, stored text 40)")
+    assert (folder / "uu_9_2000_2000-01-01.txt").read_text() == stored and "stored text 40" in rec["reparse_error"]
     assert yaml.safe_dump(rec)
 
 
@@ -261,13 +262,13 @@ def test_mirror_fallback_when_bpk_fails(tmp_path, monkeypatch):
 
 
 def test_never_replaced_by_a_text_that_lost_its_penjelasan(tmp_path):
-    from hukum_bersih.sources.peraturan_go_id import _words_lost
+    from hukum_bersih.sources.peraturan_go_id import _poorer_than_stored
 
     stored = tmp_path / "t.txt"
     stored.write_text("BODY\n  ART 1 -\n    " + "kata " * 2000 + "\nATTACHMENT Penjelasan\n  " + "jelas " * 300)
-    assert "Penjelasan has" in _words_lost(stored, "BODY\n  ART 1 -\n    " + "kata " * 2000)
-    assert _words_lost(stored, "BODY\n  ART 1 -\n    " + "kata " * 1950 + "\nATTACHMENT Penjelasan\n  " + "jelas " * 290) is None
-    assert "words, stored text" in _words_lost(stored, "BODY " + "kata " * 100)
+    assert "Penjelasan has" in _poorer_than_stored(stored, "BODY\n  ART 1 -\n    " + "kata " * 2000, False)
+    assert _poorer_than_stored(stored, "BODY\n  ART 1 -\n    " + "kata " * 1950 + "\nATTACHMENT Penjelasan\n  " + "jelas " * 290, False) is None
+    assert "words, stored text" in _poorer_than_stored(stored, "BODY\n  ART 1 -\n    " + "kata " * 100, False)
 
 
 def test_printed_promulgation_date_wins_over_bpk(tmp_path):              # UU 25/2007

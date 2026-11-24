@@ -61,6 +61,6 @@ jobs:
       - name: Refuse committed PDFs
         run: |
           if git ls-files | grep -iE '\.pdf$'; then
-            echo "PDFs must not be committed (archive them on the Internet Archive instead)." >&2
+            echo "PDFs must not be committed (only their sha256 goes in data/sources/manifests/)." >&2
             exit 1
           fi
