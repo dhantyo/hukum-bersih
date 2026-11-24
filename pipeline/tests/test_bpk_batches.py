@@ -1,6 +1,8 @@
 """The workflow's batches (one process each) share one Cloudflare clearance and one walk of the
 listing, and laws BPK lists without a PDF are not fetched again in every batch."""
 
+import sys
+import types
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -34,9 +36,10 @@ class FakeHttp:
 
 
 def session(tmp_path, monkeypatch, cookie="fresh"):
-    import curl_cffi.requests
-
-    monkeypatch.setattr(curl_cffi.requests, "Session", FakeHttp)
+    # curl_cffi is in the `bpk` extra, which the unit-test job does not install: a stand-in
+    fake = types.ModuleType("curl_cffi")
+    fake.requests = types.SimpleNamespace(Session=FakeHttp)
+    monkeypatch.setitem(sys.modules, "curl_cffi", fake)
     monkeypatch.setattr(bpk_session.time, "sleep", lambda s: None)
     browser = []
 
