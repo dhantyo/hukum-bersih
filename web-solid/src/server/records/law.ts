@@ -37,7 +37,7 @@ const law = v.object({
   amendments: v.array(amendment),
 });
 
-export type LawRecord = v.InferOutput<typeof law>;
+type LawRecord = v.InferOutput<typeof law>;
 
 export type Amendment = LawRecord["amendments"][number];
 

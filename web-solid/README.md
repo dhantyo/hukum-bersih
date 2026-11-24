@@ -28,6 +28,8 @@ Run `pnpm run export-drafts "$stage"` before exporting the catalog and building 
 
 Run `pnpm run check`, `pnpm exec tsc --noEmit`, and `pnpm run test --run` to check the preview code.
 
+To prove a refactor changed no output, build, run `scripts/build-snapshot-corpus.sh .snapshots/corpus` once, then `CORPUS=.snapshots/corpus/corpus scripts/route-snapshot.sh .snapshots/before`. Make the change, rebuild, snapshot to `.snapshots/after`, and run `diff -r .snapshots/before .snapshots/after`. The script header lists the few bytes it normalises. The `.snapshots/` folder is ignored by git.
+
 ## Cloudflare preview
 
 The manual **Deploy Solid preview** workflow builds the Worker and publishes three laws, including UU ITE and the larger UU 11/2020. It targets the `hukum-bersih-solid-preview` Worker and R2 bucket.
