@@ -293,3 +293,10 @@ def test_known_archive_copy_keeps_its_link(tmp_path):    # copies archived befor
                    cache={sha: link})
     rec = yaml.safe_load((tmp_path / "peraturan/uu/2026/uu_5_2026/uu_5_2026.yaml").read_text())
     assert rec["bpk"]["files"][0]["archive_url"] == link
+
+
+def test_penjelasan_files_are_recognised_by_name():
+    assert bpk.is_penjelasan({"filename": "UU Nomor 19 Tahun 2003_ penjelasan.pdf"})
+    assert bpk.is_penjelasan({"filename": "PENJELASAN UU 5 2010.pdf"})
+    assert not bpk.is_penjelasan({"filename": "undang-undang nomor 19 tahun 2003.pdf"})
+    assert not bpk.is_penjelasan({})

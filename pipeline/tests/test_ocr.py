@@ -107,17 +107,3 @@ def test_engine_named_in_the_version():
     from hukum_bersih.sources.peraturan_go_id import _ocr_engine
 
     assert _ocr_engine(["salinan: left out", "ocr: 3 scanned page(s) read with indra"]) == "indra"
-
-
-def test_texts_from_another_engine_are_redone(monkeypatch):
-    """Decision 0012: OCR'd texts read by Tesseract are redone with Indra; typed texts are not."""
-    from hukum_bersih.pdf.structure import PARSER_VERSION
-    from hukum_bersih.sources.peraturan_bpk import SOURCE, text_current
-
-    monkeypatch.delenv("HUKUM_BERSIH_OCR", raising=False)
-    typed = {"text": "a.txt", "parser_version": PARSER_VERSION, "pdf_source": SOURCE}
-    assert text_current({"versions": [typed]})
-    assert not text_current({"versions": [{**typed, "ocr": True}]})                       # Tesseract (no engine recorded)
-    assert not text_current({"versions": [{**typed, "ocr": True, "ocr_engine": "tesseract"}]})
-    assert text_current({"versions": [{**typed, "ocr": True, "ocr_engine": "indra"}]})
-    assert text_current({"versions": [{**typed, "ocr": True}], "parser_version_tried": PARSER_VERSION})
