@@ -28,10 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_41_2024_2024-08-07.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 852e1c9c0539b2b606d3706dca010bb59ac138fba409a21963299129e3ebc41d
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 12
 pdf_sha256: 852e1c9c0539b2b606d3706dca010bb59ac138fba409a21963299129e3ebc41d
 tanggal_pengundangan: '2024-08-07'
 tanggal_berlaku: '2024-08-07'

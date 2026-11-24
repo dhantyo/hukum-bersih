@@ -34,10 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_67_2024_2024-10-28.txt
   pasal_count: 3
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: da8d43f60c2cc159d690f17fb5faefff332852839432105956c254c9e114d4ef
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 6
 pdf_sha256: da8d43f60c2cc159d690f17fb5faefff332852839432105956c254c9e114d4ef
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_45_2024_2024-08-07.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: fa58fb1e63d4f00da054cb4a31279859e872483cb14e86473f151e41348b378f
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 30
 pdf_sha256: fa58fb1e63d4f00da054cb4a31279859e872483cb14e86473f151e41348b378f
 tanggal_pengundangan: '2024-08-07'
 tanggal_berlaku: '2024-08-07'

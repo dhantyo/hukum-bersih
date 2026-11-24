@@ -35,10 +35,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_70_2024_2024-10-28.txt
   pasal_count: 2
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c51550370804bd6c983d540698b70a8f8ecf280a0730365167d7ffb8e9287ebf
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 11
 pdf_sha256: c51550370804bd6c983d540698b70a8f8ecf280a0730365167d7ffb8e9287ebf
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_36_2024_2024-08-07.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: eb4d69316d17337b98006af1f5b311cbf19c4a53bad2fdb50c7b202c710a9072
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 16
 pdf_sha256: eb4d69316d17337b98006af1f5b311cbf19c4a53bad2fdb50c7b202c710a9072
 tanggal_pengundangan: '2024-08-07'
 tanggal_berlaku: '2024-08-07'

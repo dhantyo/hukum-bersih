@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_61_2024_2024-10-15.txt
   pasal_count: 2
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b70cfb88e77c72dd3b936d96052fd2a3705566f13154f1612b88da986c9255b4
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 5
 pdf_sha256: b70cfb88e77c72dd3b936d96052fd2a3705566f13154f1612b88da986c9255b4
 tanggal_pengundangan: '2024-10-15'
 tanggal_berlaku: '2024-10-15'

@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_31_2024_2024-07-02.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e0a13d90a8c0185e7ab5db041cbb97104f85851a780cb99b12709343d1e729a0
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 14
 pdf_sha256: e0a13d90a8c0185e7ab5db041cbb97104f85851a780cb99b12709343d1e729a0
 tanggal_pengundangan: '2024-07-02'
 tanggal_berlaku: '2024-07-02'

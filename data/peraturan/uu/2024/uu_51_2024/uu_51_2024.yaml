@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_51_2024_2024-08-07.txt
   pasal_count: 10
-  parser_version: 10
+  parser_version: 15
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 98f119c997033edcbe91f9c1e64a4727c0c1d42675b78ab3398b05c99d9351ad
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 30
 pdf_sha256: 98f119c997033edcbe91f9c1e64a4727c0c1d42675b78ab3398b05c99d9351ad
 tanggal_pengundangan: '2024-08-07'
 tanggal_berlaku: '2024-08-07'
