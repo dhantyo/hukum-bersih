@@ -1,10 +1,13 @@
 import type { RequestEvent, ResponseStub } from '@solidjs/web';
+import { QueryClientProvider } from '@tanstack/solid-query';
 import { RouterProvider, createMemoryHistory } from '@tanstack/solid-router';
+import { createQueryClient } from './lib/queries';
 import { createAppRouter } from './router';
 
 export default async function setup(event: RequestEvent & { response: ResponseStub }) {
   const url = new URL(event.request.url);
-  const router = createAppRouter(createMemoryHistory({ initialEntries: [url.pathname + url.search] }));
+  const queryClient = createQueryClient();
+  const router = createAppRouter(queryClient, createMemoryHistory({ initialEntries: [url.pathname + url.search] }));
   await router.load();
 
   // Transfer router status and redirects before Solid sends the response head.
@@ -15,5 +18,7 @@ export default async function setup(event: RequestEvent & { response: ResponseSt
     return () => null;
   }
   if (result) event.response.status = result.status;
-  return () => <RouterProvider router={router} />;
+  return () => <QueryClientProvider client={queryClient}>
+    <RouterProvider router={router} />
+  </QueryClientProvider>;
 }

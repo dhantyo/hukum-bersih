@@ -1,7 +1,8 @@
+import { useQuery } from '@tanstack/solid-query';
 import { createFileRoute } from '@tanstack/solid-router';
 import { createEffect, createSignal, For, Show } from 'solid-js';
 import { LawCatalog } from '../LawCatalog';
-import { getSearchResults } from '../lib/search';
+import { searchQuery } from '../lib/queries';
 
 interface SearchHit {
   url: string;
@@ -23,21 +24,22 @@ export const Route = createFileRoute('/cari')({
     q: typeof search.q === 'string' ? search.q.trim().slice(0, 200) : '',
   }),
   loaderDeps: ({ search }) => ({ query: search.q ?? '' }),
-  loader: ({ deps }) => getSearchResults(deps.query),
+  loader: async ({ context, deps }) => { await context.queryClient.ensureQueryData(searchQuery(deps.query)); },
   head: () => ({ meta: [{ title: 'Cari | Hukum Bersih' }] }),
   component: SearchPage,
 });
 
 function SearchPage() {
-  const search = Route.useLoaderData();
+  const searchParams = Route.useSearch();
+  const search = useQuery(() => searchQuery(searchParams().q ?? ''));
   return <main>
     <h1>Cari teks hukum</h1>
     <form role="search" method="get" action="/cari/">
       <label for="search-query">Kata kunci</label>
-      <input id="search-query" name="q" type="search" value={search().query} maxlength={200} required />
+      <input id="search-query" name="q" type="search" value={search.data.query} maxlength={200} required />
       <button type="submit">Cari</button>
     </form>
-    <Show when={search().catalog} keyed>{(catalog) => <>
+    <Show when={search.data.catalog} keyed>{(catalog) => <>
       <Show when={catalog.articles.length}>
         <h2>Pasal</h2>
         <ul><For each={catalog.articles}>{(article) => <li><a href={article.url}>{article.label}</a></li>}</For></ul>
@@ -50,7 +52,7 @@ function SearchPage() {
         <h2>Nomor dan judul</h2>
         <LawCatalog laws={catalog.laws} />
       </Show>
-      <FullTextSearch release={search().release} query={search().query} hasCatalogHits={
+      <FullTextSearch release={search.data.release} query={search.data.query} hasCatalogHits={
         Boolean(catalog.articles.length || catalog.collections.length || catalog.laws.length)
       } />
     </>}</Show>

@@ -1,6 +1,8 @@
-import { createRootRoute, HeadContent, Link, Outlet } from '@tanstack/solid-router';
+import { createRootRouteWithContext, HeadContent, Link, Outlet } from '@tanstack/solid-router';
 
-export const Route = createRootRoute({
+import type { RouterContext } from '../router';
+
+export const Route = createRootRouteWithContext<RouterContext>()({
   head: () => ({ meta: [{ title: 'Hukum Bersih' }] }),
   component: () => <>
     <HeadContent />

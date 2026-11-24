@@ -1,11 +1,15 @@
+import type { QueryClient } from '@tanstack/solid-query';
 import { createRouter, type RouterHistory } from '@tanstack/solid-router';
 import { routeTree } from './routeTree.gen';
 
-export function createAppRouter(history?: RouterHistory) {
+export interface RouterContext { queryClient: QueryClient }
+
+export function createAppRouter(queryClient: QueryClient, history?: RouterHistory) {
   return createRouter({
     routeTree,
     trailingSlash: 'always',
     history,
+    context: { queryClient },
     defaultPreload: 'intent',
     defaultPendingComponent: () => <main>Memuat…</main>,
     disableGlobalCatchBoundary: true,

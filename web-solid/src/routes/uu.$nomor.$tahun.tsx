@@ -1,6 +1,8 @@
+import { useQuery } from '@tanstack/solid-query';
 import { createFileRoute, notFound } from '@tanstack/solid-router';
+import { Show } from 'solid-js';
 import { LawReader } from '../LawReader';
-import { getLaw } from '../lib/laws';
+import { readerQuery } from '../lib/queries';
 import '../reader.css';
 
 export const Route = createFileRoute('/uu/$nomor/$tahun')({
@@ -9,18 +11,23 @@ export const Route = createFileRoute('/uu/$nomor/$tahun')({
     dari: typeof search.dari === 'string' ? search.dari : undefined,
   }),
   loaderDeps: ({ search }) => ({ compareTo: search.bandingkan, compareFrom: search.dari }),
-  loader: async ({ params, deps }) => {
-    const reader = await getLaw(`/uu/${params.nomor}/${params.tahun}/`, deps.compareTo, deps.compareFrom);
+  loader: async ({ context, params, deps }) => {
+    const path = `/uu/${params.nomor}/${params.tahun}/`;
+    const reader = await context.queryClient.ensureQueryData(readerQuery(path, deps.compareTo, deps.compareFrom));
     if (!reader) throw notFound();
-    return reader;
+    return { title: reader.law.shortName ?? reader.law.title };
   },
   head: ({ loaderData }) => ({
-    meta: [{ title: `${loaderData?.law.shortName ?? loaderData?.law.title ?? 'Undang-undang'} | Hukum Bersih` }],
+    meta: [{ title: `${loaderData?.title ?? 'Undang-undang'} | Hukum Bersih` }],
   }),
   component: LawPage,
 });
 
 function LawPage() {
-  const reader = Route.useLoaderData();
-  return <LawReader {...reader()} />;
+  const params = Route.useParams();
+  const search = Route.useSearch();
+  const reader = useQuery(() => readerQuery(
+    `/uu/${params().nomor}/${params().tahun}/`, search().bandingkan, search().dari,
+  ));
+  return <Show when={reader.data} keyed>{(record) => <LawReader {...record} />}</Show>;
 }
