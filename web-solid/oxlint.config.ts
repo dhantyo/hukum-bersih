@@ -4,13 +4,12 @@ import antiSlop from "ultracite/oxlint/anti-slop";
 import core from "ultracite/oxlint/core";
 import landmines from "ultracite/oxlint/landmines";
 import solid from "ultracite/oxlint/solid";
-import tanstack from "ultracite/oxlint/tanstack";
 import vitest from "ultracite/oxlint/vitest";
 
 export default defineConfig({
   env: core.env,
-  extends: [core, solid, tanstack, vitest, landmines, antiSlop],
-  ignorePatterns: ["**/*.gen.*", "dist"],
+  extends: [core, solid, vitest, landmines, antiSlop],
+  ignorePatterns: ["dist"],
   jsPlugins: [
     "eslint-plugin-solid",
     "@stylexjs/eslint-plugin",
@@ -19,18 +18,6 @@ export default defineConfig({
   settings: solidV2.settings,
   rules: {
     ...solidV2.rules,
-    "typescript/only-throw-error": [
-      "error",
-      {
-        allow: [
-          {
-            from: "package",
-            package: "@tanstack/router-core",
-            name: "NotFoundError",
-          },
-        ],
-      },
-    ],
     "@stylexjs/enforce-extension": "error",
     "@stylexjs/valid-styles": "error",
     "@stylexjs/valid-shorthands": "error",
