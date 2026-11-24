@@ -147,6 +147,14 @@ const Chevrons = (dir: "left" | "right") => `<svg viewBox="0 0 16 16" width="16"
     display: block; grid-column: 1; grid-row: 1; position: sticky; top: var(--s-4);
   }
   :global(:root[data-panel="hidden"]) .doc-main { justify-self: center; width: min(100%, var(--measure)); }
+  /* comparing versions (CompareMode.astro): the panel folds away and the text takes the width,
+     unless the reader brings the panel back (data-cmp-panel) */
+  @media (min-width: 961px) {
+    :global(:root[data-compare]:not([data-cmp-panel])) .doc { grid-template-columns: var(--tap) minmax(0, 1fr); }
+    :global(:root[data-compare]:not([data-cmp-panel])) .panel { display: none; }
+    :global(:root[data-compare]:not([data-cmp-panel])) .rail { display: block; grid-column: 1; grid-row: 1; position: sticky; top: var(--s-4); }
+    :global(:root[data-compare]) .doc-main { justify-self: stretch; width: auto; }
+  }
   .rail-btn {
     width: var(--tap); height: var(--tap); justify-content: center; padding: 0;
     border: 1px solid var(--line-strong); color: var(--text);

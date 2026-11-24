@@ -29,6 +29,7 @@ Tokens live in `web/src/styles/tokens.css`; components use the names, never raw 
 | `--gone` | `#6b7280` | `#9aa3ad` | *dicabut*, *tidak berlaku*, not found |
 | `--ins-bg` / `--ins-text` | `#e3f4e8` / `#14532d` | `#163a24` / `#b9ecc8` | inserted text in comparisons |
 | `--del-bg` / `--del-text` | `#fbe4e4` / `#7f1d1d` | `#43201f` / `#f6c3c0` | deleted text in comparisons |
+| `--mod-bg` / `--mod-text` | `#fbefd5` / `#6b4400` | `#3d2f12` / `#f3d9a4` | reworded text in comparisons (Fedlex "modified"; 7.5:1 / 9.5:1) |
 
 No brand red: in this product red means "deleted". No gradients.
 
@@ -70,7 +71,7 @@ anchored on the text (see "Law text").
 
 4px base: `--s-1` 4, `--s-2` 8, `--s-3` 12, `--s-4` 16, `--s-5` 24, `--s-6` 32, `--s-7` 48,
 `--s-8` 64; `--s-0` 2 only for the vertical padding of pills. `--tap` 44px: minimum size of
-anything tapped (buttons, the "Aa" control). Page width 72rem; reading column 42rem; side panel 17rem. Phone gutter 16px.
+anything tapped (buttons, the "Aa" control). Page width 72rem (`--page`; 100rem `--page-wide` while comparing versions); reading column 42rem; side panel 17rem; hanging numbers 2.4rem (`--hang`, 1.9rem `--hang-sm` on phones). Phone gutter 16px.
 
 Document pages: breadcrumbs, title block, then two columns: side panel (Versi, table of
 contents, facts; sticky) and the text (`components/DocLayout.astro`). On wide screens the
@@ -93,7 +94,7 @@ separating.
   Resmi/Arsip/Media/Belum ditemukan).
 - **Status banner** (law pages, above the text): a repealed law says "sudah tidak berlaku" and
   links to what repealed it (border `--gone`); an amended law says the text is the original
-  wording and links to the pasal-by-pasal changes (border `--warn`). Pattern from
+  wording and links to the latest merged version (border `--warn`). Pattern from
   legislation.gov.uk and Fedlex. `components/StatusBanner.astro`.
 - **Versi** (side panel, first; `components/Versions.astro`): every version of a law family,
   oldest first, like Fedlex's "All versions of this law": date, "Teks asli" / "Setelah UU
@@ -151,6 +152,16 @@ separating.
   everything turns the text into an outline of BAB and Pasal.
 - **Synopsis (comparison)**: two columns, old left, new right, one row per pasal pair;
   deletions `--del-*`, insertions `--ins-*`; one inline column on phones.
+- **Comparing versions in place** (`components/CompareMode.astro`, decision 0010; replaces the
+  Perubahan page): "Diubah oleh UU 3/2020" under a pasal opens that pasal before / after the
+  amendment where its text was; "Bandingkan versi" (Versi panel) or `?bandingkan=<id>[&dari=<id>]`
+  compares two whole versions: a sticky bar with Dari / Ke, "Tampilkan yang berubah saja", a
+  legend. While comparing, the side panel folds to its rail and the page widens to
+  `--page-wide` (two columns; unchanged text stays at `--measure`); one inline column up to
+  960px. Notation after Fedlex: inserted `--ins-*`, deleted `--del-*` struck, reworded
+  `--mod-*` (struck on the old side), "tidak ada padanan" grey italic on `--bg-subtle`; pasal
+  in the contents grid outlined `--ok` (⊞ inserted), `--del-text` (⊟ deleted), `--warn`
+  (⊡ changed). Opens and closes with a View Transition, none under reduced motion.
 - **Buttons**: primary (filled `--primary`), secondary (outline), quiet (text). Focus: 3px
   outline `--primary` with 2px offset, always visible on keyboard focus.
 - **Lists of laws**: rows, not cards: title, number/year, status badge, one line of meta.

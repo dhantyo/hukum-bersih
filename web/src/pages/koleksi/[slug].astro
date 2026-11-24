@@ -44,7 +44,7 @@ const merged = latest && latest.kind === "gabungan" ? mergedDoc(k, latest.id) : 
   <KoleksiTimeline k={k} compared={compared} anchors={anchors} />
   <p class="small links">
     <a href={`${base}${lawPath(k.base)}`}>Baca teks {citeId(k.base.id)}</a>
-    {compare && <> · <a href={`${base}${lawPath(k.base)}perubahan/`}>Rincian tiap perubahan, pasal demi pasal</a></>}
+    {compare && <> · <a href={`${base}${lawPath(k.base)}?bandingkan`}>Rincian tiap perubahan, pasal demi pasal</a></>}
   </p>
 
   {compare ? <VersionCompare data={compare} /> : (

@@ -1,0 +1,369 @@
+---
+// Comparison inside the reading view (decision 0010, replaces the Perubahan page). Two ways in:
+//  - "Diubah oleh UU 3/2020" under a pasal (links with data-cmp-by): that pasal before / after
+//    that amendment, opened in place;
+//  - "Bandingkan versi" (Versi panel, data-cmp-open) or ?bandingkan=<id>[&dari=<id>]: two
+//    versions of the whole law; every pasal that changed between them opens in place, the
+//    contents grid marks them, "Tampilkan yang berubah saja" hides the rest.
+// While comparing, the side panel folds away and the page widens: old left, new right, one row
+// per ayat (phones: one column, changes inline). Notation after Fedlex: inserted (--ins-*),
+// deleted (--del-*), reworded (--mod-*), no counterpart (grey); pasal marks ⊞ ⊟ ⊡.
+// Data: /koleksi/<slug>/perubahan.json (lib/amendments.ts CompareData), fetched on first use.
+/** src: the family's perubahan.json; current: the version on screen (the base law's id for the
+ * original text, else the last amending law merged into it) */
+interface Props { src: string; current: string }
+const { src, current } = Astro.props;
+---
+<div class="cmp-bar" data-cmp-bar data-src={src} data-current={current} hidden data-pagefind-ignore>
+  <div class="cmp-row">
+    <span class="cmp-title">Bandingkan</span>
+    <label>Dari <select data-cmp-from aria-label="Versi lama"></select></label>
+    <span aria-hidden="true">→</span>
+    <label>Ke <select data-cmp-to aria-label="Versi baru"></select></label>
+    <label class="cmp-check"><input type="checkbox" data-cmp-only /> Tampilkan yang berubah saja</label>
+    <button type="button" class="cmp-close" data-cmp-close>Tutup perbandingan</button>
+  </div>
+  <p class="cmp-legend">
+    <span>Pasal: <b class="mk ins">⊞</b> disisipkan <b class="mk del">⊟</b> dihapus <b class="mk mod">⊡</b> diubah</span>
+    <span>Teks: <ins>disisipkan</ins> <del>dihapus</del> <mark class="mod">diubah</mark> <span class="none">tidak ada padanan</span></span>
+  </p>
+  <p class="cmp-summary" data-cmp-summary aria-live="polite"></p>
+</div>
+
+<script>
+  import { diffLines, type LineDiff, type Part } from "../lib/compare.ts";
+  import type { Pasal } from "../lib/lawtext.ts";
+  import type { CompareData, CompactSlot } from "../lib/amendments.ts";
+
+  const bar = document.querySelector<HTMLElement>("[data-cmp-bar]");
+  if (bar) {
+    const root = document.documentElement;
+    const src = bar.dataset.src!;
+    const currentId = bar.dataset.current ?? "";
+    let current = 0;
+    const from = bar.querySelector<HTMLSelectElement>("[data-cmp-from]")!;
+    const to = bar.querySelector<HTMLSelectElement>("[data-cmp-to]")!;
+    const only = bar.querySelector<HTMLInputElement>("[data-cmp-only]")!;
+    const summary = bar.querySelector<HTMLElement>("[data-cmp-summary]")!;
+    let data: CompareData | undefined;
+    const load = async () => {
+      if (!data) {
+        data = (await (await fetch(src)).json()) as CompareData;
+        current = Math.max(0, data.versions.findIndex((v) => v.id === currentId));
+      }
+      return data;
+    };
+    const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+    /** runs fn inside a View Transition; resolves once the page is updated (so scrolling after
+     * it lands on the right place) */
+    const animate = async (fn: () => void) => {
+      const d = document as Document & { startViewTransition?: (f: () => void) => { updateCallbackDone: Promise<void> } };
+      if (d.startViewTransition && !reduced.matches) await d.startViewTransition(fn).updateCallbackDone.catch(() => {});
+      else fn();
+    };
+    const el = <K extends keyof HTMLElementTagNameMap>(tag: K, cls = "", text?: string) => {
+      const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e;
+    };
+    const label = (k: number) => {
+      const v = data!.versions[k];
+      return k === 0 ? v.label : `Setelah ${v.label}`;
+    };
+
+    /** a pasal at version k: lines, "d" deleted, "u" unreadable, null not there yet */
+    const slotAt = (num: string, k: number): CompactSlot | undefined => {
+      const hist = data!.pasal.find(([n]) => n === num)?.[1];
+      if (!hist) return undefined;
+      let s: CompactSlot | undefined;
+      for (const [i, slot] of hist) if (i <= k) s = slot;
+      return s;
+    };
+    const toPasal = (num: string, s: CompactSlot | undefined): Pasal | undefined =>
+      Array.isArray(s) ? { label: `Pasal ${num}`, num, eId: `cmp-${num}`, lines: s.map(([n, text, indent]) => ({ num: n ?? undefined, text, indent })) } : undefined;
+
+    /** word parts with a deletion followed by an insertion read as one rewording ("diubah") */
+    const pieces = (parts: Part[]) => {
+      const out: { kind: "same" | "ins" | "del" | "modOld" | "modNew"; value: string }[] = [];
+      for (let i = 0; i < parts.length; i++) {
+        const p = parts[i], n = parts[i + 1];
+        if (p.removed && n?.added) { out.push({ kind: "modOld", value: p.value }, { kind: "modNew", value: n.value }); i++; }
+        else out.push({ kind: p.added ? "ins" : p.removed ? "del" : "same", value: p.value });
+      }
+      return out;
+    };
+    const fill = (cell: HTMLElement, items: { kind: string; value: string }[]) => {
+      for (const it of items) {
+        if (it.kind === "same") cell.append(it.value);
+        else if (it.kind === "ins") cell.append(el("ins", "", it.value));
+        else if (it.kind === "del") cell.append(el("del", "", it.value));
+        else cell.append(el("mark", it.kind === "modOld" ? "mod old" : "mod", it.value));
+      }
+    };
+    const numCell = (n?: string) => el("span", "cmp-num", n ?? "");
+
+    /** before / after of one pasal: two aligned columns, and the same inline for phones */
+    function block(num: string, a: CompactSlot | undefined, b: CompactSlot | undefined, ka: number, kb: number, closable: boolean) {
+      const box = el("div", "cmp-block");
+      const head = el("div", "cmp-head");
+      head.append(el("span", "cmp-side", label(ka)), el("span", "cmp-side", label(kb)));
+      if (closable) {
+        const x = el("button", "cmp-x", "Tutup");
+        x.type = "button";
+        x.addEventListener("click", () => animate(() => closeOne(box.closest<HTMLElement>(".akn-article")!)));
+        box.append(x);
+      }
+      const pa = toPasal(num, a), pb = toPasal(num, b);
+      const rows: LineDiff[] = pa && pb ? diffLines(pa, pb)
+        : pb ? pb.lines.map((l) => ({ kind: "baru", b: l, parts: [{ value: l.text, added: true }] }))
+        : pa ? pa.lines.map((l) => ({ kind: "dihapus", a: l, parts: [{ value: l.text, removed: true }] }))
+        : [];
+      const cols = el("div", "cmp-cols"), inline = el("div", "cmp-inline");
+      cols.append(head);
+      const status = (s: CompactSlot | undefined, side: "a" | "b") =>
+        s === "u" ? "teks belum terbaca dari PDF" : s === "d" ? "pasal ini dihapus" : s == null ? (side === "a" ? "pasal ini belum ada" : "pasal ini tidak ada") : "";
+      // a whole side missing (a new or deleted pasal) is said once, in the note above
+      const gap = () => (pa && pb ? el("span", "none", "tidak ada padanan") : "");
+      if (!rows.length || status(a, "a") || status(b, "b")) {
+        const note = [status(a, "a") && `${label(ka)}: ${status(a, "a")}`, status(b, "b") && `${label(kb)}: ${status(b, "b")}`].filter(Boolean).join(" · ");
+        if (note) box.append(el("p", "cmp-note", note));
+      }
+      for (const r of rows) {
+        const line = r.b ?? r.a!;
+        const left = el("p", `cmp-cell ${r.kind}`), right = el("p", `cmp-cell ${r.kind}`), one = el("p", `cmp-cell ${r.kind}`);
+        for (const c of [left, right, one]) c.style.setProperty("--i", String(line.indent));
+        left.append(numCell(r.a?.num)); right.append(numCell(r.b?.num)); one.append(numCell(line.num));
+        const lt = el("span", "cmp-txt"), rt = el("span", "cmp-txt"), ot = el("span", "cmp-txt");
+        if (r.kind === "sama") { lt.append(r.a!.text); rt.append(r.b!.text); ot.append(r.b!.text); }
+        else if (r.kind === "baru") { lt.append(gap()); fill(rt, [{ kind: "ins", value: r.b!.text }]); fill(ot, [{ kind: "ins", value: r.b!.text }]); }
+        else if (r.kind === "dihapus") { fill(lt, [{ kind: "del", value: r.a!.text }]); rt.append(gap()); fill(ot, [{ kind: "del", value: r.a!.text }]); }
+        else if (r.kind === "diganti") { fill(lt, [{ kind: "modOld", value: r.a!.text }]); fill(rt, [{ kind: "modNew", value: r.b!.text }]); fill(ot, [{ kind: "modOld", value: r.a!.text }, { kind: "same", value: " " }, { kind: "modNew", value: r.b!.text }]); }
+        else {
+          const ps = pieces(r.parts);
+          fill(lt, ps.filter((p) => p.kind !== "ins" && p.kind !== "modNew"));
+          fill(rt, ps.filter((p) => p.kind !== "del" && p.kind !== "modOld"));
+          fill(ot, ps);
+        }
+        left.append(lt); right.append(rt); one.append(ot);
+        cols.append(left, right); inline.append(one);
+      }
+      box.append(cols, inline);
+      return box;
+    }
+
+    const sectionOf = (num: string) => document.querySelector<HTMLElement>(`.law .akn-article[data-num="${CSS.escape(num)}"]`);
+    const gridLink = (num: string) => {
+      const id = sectionOf(num)?.id;
+      return id ? document.querySelector<HTMLElement>(`.toc-pasal a[data-pasal="${CSS.escape(id)}"]`) : null;
+    };
+    function closeOne(sec: HTMLElement) {
+      sec.querySelector(":scope > .cmp-block")?.remove();
+      sec.classList.remove("cmp-on");
+      if (!document.querySelector(".akn-article.cmp-on")) { delete root.dataset.compare; delete root.dataset.cmpPanel; }
+    }
+    const order = (x: string, y: string) => {
+      const a = x.match(/^(\d+)(.*)$/), b = y.match(/^(\d+)(.*)$/);
+      return (Number(a?.[1]) - Number(b?.[1])) || (a?.[2] ?? "").localeCompare(b?.[2] ?? "");
+    };
+    /** a pasal this text does not have (inserted later, or on the original text): a section of
+     * its own after the pasal before it */
+    function addedSection(num: string) {
+      const prev = [...document.querySelectorAll<HTMLElement>(".law .part-batang .akn-article[data-num]")]
+        .filter((s) => order(s.dataset.num!, num) < 0).at(-1);
+      if (!prev) return null;
+      const sec = el("section", "akn-article cmp-added");
+      sec.dataset.num = num;
+      sec.append(el("h3", "fold-h cmp-added-h", `Pasal ${num}`));
+      prev.after(sec);
+      return sec;
+    }
+    function clearAll() {
+      document.querySelectorAll(".akn-article.cmp-added").forEach((s) => s.remove());
+      document.querySelectorAll<HTMLElement>(".akn-article.cmp-on").forEach(closeOne);
+      document.querySelectorAll(".toc-pasal a.cmp-ins, .toc-pasal a.cmp-del, .toc-pasal a.cmp-mod")
+        .forEach((a) => a.classList.remove("cmp-ins", "cmp-del", "cmp-mod"));
+    }
+    function place(sec: HTMLElement, box: HTMLElement) {
+      sec.querySelector(":scope > .cmp-block")?.remove();
+      const anchor = sec.querySelector(":scope > .fold-c");
+      sec.insertBefore(box, anchor);
+      sec.classList.add("cmp-on");
+    }
+
+    // one pasal, before / after one amendment (the links under a pasal)
+    async function comparePasal(num: string, by: string) {
+      await load();
+      const kb = data!.versions.findIndex((v) => v.id === by);
+      const sec = sectionOf(num);
+      if (kb < 1 || !sec || !data!.pasal.some(([n, h]) => n === num && h.some(([i]) => i === kb))) return false;
+      await animate(() => {
+        place(sec, block(num, slotAt(num, kb - 1), slotAt(num, kb), kb - 1, kb, true));
+        root.dataset.compare = "pasal";
+      });
+      sec.scrollIntoView({ block: "start" });
+      return true;
+    }
+
+    // two whole versions
+    function fillSelects() {
+      if (from.options.length) return;
+      data!.versions.forEach((_, k) => { from.add(new Option(label(k), String(k))); to.add(new Option(label(k), String(k))); });
+    }
+    function drawWhole(a: number, b: number) {
+      clearAll();
+      const lo = Math.min(a, b), hi = Math.max(a, b);
+      let shown = 0;
+      const elsewhere: string[] = [];
+      for (const [num, hist] of data!.pasal) {
+        if (!hist.some(([i]) => i > lo && i <= hi)) continue;
+        const sa = slotAt(num, a), sb = slotAt(num, b);
+        const kind = !Array.isArray(sa) && Array.isArray(sb) ? "ins" : sb === "d" && sa !== "d" ? "del" : "mod";
+        gridLink(num)?.classList.add(`cmp-${kind}`);
+        const sec = sectionOf(num) ?? addedSection(num);
+        if (!sec) { elsewhere.push(num); continue; }
+        place(sec, block(num, sa, sb, a, b, false));
+        shown++;
+      }
+      summary.textContent = `${shown} pasal berbeda antara ${label(a)} dan ${label(b)}.`
+        + (elsewhere.length ? ` Tidak ada di teks ini: Pasal ${elsewhere.join(", ")}.` : "");
+      root.dataset.compare = "all";
+    }
+    async function openWhole(a?: number, b?: number) {
+      await load();
+      fillSelects();
+      const last = data!.versions.length - 1;
+      // on the original text: original -> latest; on a merged version: the step that made it
+      const kb = b ?? (current > 0 ? current : last);
+      const ka = a ?? (current > 0 ? current - 1 : 0);
+      from.value = String(ka); to.value = String(kb);
+      await animate(() => { bar.hidden = false; drawWhole(ka, kb); });
+      const url = new URL(location.href);
+      url.searchParams.set("bandingkan", data!.versions[kb].id);
+      url.searchParams.set("dari", data!.versions[ka].id);
+      history.replaceState(null, "", url);
+    }
+    function closeWhole() {
+      animate(() => { clearAll(); bar.hidden = true; delete root.dataset.compare; delete root.dataset.cmpPanel; delete root.dataset.cmpOnly; only.checked = false; });
+      const url = new URL(location.href);
+      url.searchParams.delete("bandingkan"); url.searchParams.delete("dari");
+      history.replaceState(null, "", url);
+    }
+
+    from.addEventListener("change", () => openWhole(Number(from.value), Number(to.value)));
+    to.addEventListener("change", () => openWhole(Number(from.value), Number(to.value)));
+    only.addEventListener("change", () => { if (only.checked) root.dataset.cmpOnly = "1"; else delete root.dataset.cmpOnly; });
+    bar.querySelector("[data-cmp-close]")!.addEventListener("click", closeWhole);
+    document.querySelectorAll("[data-cmp-open]").forEach((b) => b.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.documentElement.dataset.drawer && document.querySelector<HTMLElement>("[data-drawer-close]")?.click();
+      openWhole().then(() => bar.scrollIntoView({ block: "start" }));
+    }));
+    // "Diubah oleh UU 3/2020" under a pasal: compare in place instead of leaving the page
+    document.addEventListener("click", async (e) => {
+      const a = (e.target as Element).closest<HTMLAnchorElement>("a[data-cmp-by]");
+      if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;
+      const num = a.closest<HTMLElement>(".akn-article")?.dataset.num;
+      if (!num) return;
+      e.preventDefault();
+      if (!(await comparePasal(num, a.dataset.cmpBy!))) location.href = a.href;
+    });
+    // the side panel can still be brought back while comparing
+    document.querySelector("[data-panel-show]")?.addEventListener("click", () => { if (root.dataset.compare) root.dataset.cmpPanel = "1"; });
+    document.querySelector("[data-panel-hide]")?.addEventListener("click", () => { delete root.dataset.cmpPanel; });
+
+    // ?bandingkan=<id>[&dari=<id>] (shared links, and the old Perubahan page's redirect)
+    const q = new URLSearchParams(location.search);
+    if (q.has("bandingkan")) {
+      load().then(() => {
+        const find = (id: string | null) => (id ? data!.versions.findIndex((v) => v.id === id) : -1);
+        const kb = find(q.get("bandingkan")), ka = find(q.get("dari"));
+        openWhole(ka >= 0 ? ka : kb > 0 ? kb - 1 : undefined, kb >= 0 ? kb : undefined).then(() => {
+          if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
+        });
+      });
+    }
+  }
+</script>
+
+<style>
+  .cmp-bar {
+    position: sticky; top: 0; z-index: 4; background: var(--bg); font-family: var(--font-ui); font-size: var(--fs-sm);
+    border-bottom: 1px solid var(--line); padding: var(--s-3) 0; margin-bottom: var(--s-5);
+    box-shadow: calc(-1 * var(--s-6)) 0 0 var(--bg);   /* covers the fold arrows in the margin */
+  }
+  .cmp-bar[hidden] { display: none; }
+  .cmp-row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2) var(--s-3); }
+  .cmp-title { font-weight: 600; font-size: var(--fs-base); }
+  .cmp-bar select {
+    font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--line-strong);
+    border-radius: var(--r-sm); padding: var(--s-1) var(--s-2); min-height: var(--s-6); max-width: calc(var(--panel) - var(--s-4));
+  }
+  .cmp-check { display: inline-flex; align-items: center; gap: var(--s-1); }
+  .cmp-check input { accent-color: var(--primary); }
+  .cmp-close {
+    margin-left: auto; font: inherit; color: var(--primary); background: none; cursor: pointer;
+    border: 1px solid var(--line-strong); border-radius: var(--r-sm); padding: var(--s-1) var(--s-3); min-height: var(--s-6);
+  }
+  .cmp-legend { display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s-5); margin: var(--s-2) 0 0; font-size: var(--fs-xs); color: var(--text-muted); }
+  .cmp-summary { margin: var(--s-1) 0 0; font-size: var(--fs-xs); color: var(--text-muted); }
+  .cmp-summary:empty { display: none; }
+  .mk { font-weight: 600; }
+  .mk.ins { color: var(--ok); } .mk.del { color: var(--del-text); } .mk.mod { color: var(--warn); }
+  :global(mark.mod) { background: var(--mod-bg); color: var(--mod-text); border-radius: 2px; }
+  :global(mark.mod.old) { text-decoration: line-through; }
+  :global(.cmp-bar .none), :global(.cmp-block .none) { color: var(--text-muted); background: var(--bg-subtle); font-style: italic; padding: 0 var(--s-1); border-radius: 2px; }
+
+  /* one pasal compared, in place of its text */
+  :global(.law .cmp-on > .fold-c) { display: none; }
+  :global(.cmp-block) {
+    position: relative; margin: var(--s-2) 0 var(--s-4); padding: var(--s-3) 0 0; border-top: 1px solid var(--line);
+    font-size: var(--fs-law);
+  }
+  :global(.cmp-x) {
+    position: absolute; right: 0; top: var(--s-2); font: inherit; font-family: var(--font-ui); font-size: var(--fs-xs);
+    color: var(--primary); background: none; border: 0; cursor: pointer; padding: var(--s-1) 0; text-decoration: underline;
+  }
+  :global(.cmp-added-h) { margin: var(--s-5) 0 var(--s-1); font-family: var(--font-ui); font-size: var(--h-pasal, var(--fs-md)); }
+  :global(.cmp-note) { margin: 0 0 var(--s-2); font-family: var(--font-ui); font-size: var(--fs-sm); color: var(--text-muted); }
+  :global(.cmp-cols) { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: var(--s-6); }
+  :global(.cmp-head) { display: contents; }
+  :global(.cmp-side) {
+    font-family: var(--font-ui); font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--text-muted); padding-bottom: var(--s-2);
+  }
+  :global(.cmp-cell) {
+    margin: 0 0 var(--s-2); display: grid; grid-template-columns: var(--hang) minmax(0, 1fr); column-gap: var(--s-1);
+    padding-left: calc(var(--i, 0) * var(--hang)); line-height: 1.65;
+  }
+  :global(.cmp-num) { font-variant-numeric: tabular-nums; }
+  :global(.cmp-inline) { display: none; }
+
+  /* the page while comparing: panel folded away, wider, two columns */
+  :global(:root[data-compare]) :global(.wrap) { max-width: var(--page-wide); }
+  /* (the panel folding itself is in DocLayout.astro) */
+  @media (min-width: 961px) {
+    :global(:root[data-compare]) :global(.law) { max-width: none; }
+    :global(:root[data-compare]) :global(.law .akn-article > .fold-c), :global(:root[data-compare]) :global(.law .akn-preamble),
+    :global(:root[data-compare]) :global(.law .akn-conclusions), :global(:root[data-compare]) :global(.law .penjelasan),
+    :global(:root[data-compare]) :global(.law .akn-note), :global(:root[data-compare]) :global(.law .merged-banner) { max-width: var(--measure); }
+  }
+  /* comparing reshapes the whole text and jumps between distant pasal: render it all, so
+     positions are real (LawText skips off-screen BAB otherwise) */
+  :global(:root[data-compare]) :global(.law .akn-body > section) { content-visibility: visible; }
+  /* "Tampilkan yang berubah saja" */
+  :global(:root[data-cmp-only]) :global(.law .akn-article:not(.cmp-on)) { display: none; }
+  /* pasal marks in the contents grid */
+  :global(.toc-pasal a.cmp-ins), :global(.toc-pasal a.cmp-del), :global(.toc-pasal a.cmp-mod) { position: relative; font-weight: 600; }
+  :global(.toc-pasal a.cmp-ins) { box-shadow: inset 0 0 0 1px var(--ok); color: var(--ok); }
+  :global(.toc-pasal a.cmp-del) { box-shadow: inset 0 0 0 1px var(--del-text); color: var(--del-text); }
+  :global(.toc-pasal a.cmp-mod) { box-shadow: inset 0 0 0 1px var(--warn); color: var(--warn); }
+  /* phones and tablets: one column, changes inline */
+  @media (max-width: 960px) {
+    .cmp-bar { position: static; }
+    :global(.cmp-inline mark.mod.old + mark.mod) { margin-left: var(--s-1); }
+    :global(.cmp-cols) { display: none; }
+    :global(.cmp-inline) { display: block; }
+    :global(.cmp-block) { font-size: var(--fs-base); }
+    .cmp-close { margin-left: 0; }
+  }
+  @media (max-width: 640px) { :global(.cmp-cell) { grid-template-columns: var(--hang-sm) minmax(0, 1fr); padding-left: calc(var(--i, 0) * var(--hang-sm)); } }
+  :global(::view-transition-old(root)), :global(::view-transition-new(root)) { animation-duration: 0.22s; }
+</style>

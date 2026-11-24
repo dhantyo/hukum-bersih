@@ -149,7 +149,7 @@ doc.preamble.forEach((n, i) => {
     --h-bab: var(--fs-xl); --h-bagian: var(--fs-lg); --h-pasal: var(--fs-md);
   }
   .law :global(.akn-p) { margin: 0 0 var(--s-2); }
-  .law :global(.numbered) { display: grid; grid-template-columns: 2.4rem minmax(0, 1fr); column-gap: var(--s-1); }
+  .law :global(.numbered) { display: grid; grid-template-columns: var(--hang) minmax(0, 1fr); column-gap: var(--s-1); }
   .law :global(.akn-num) { font-variant-numeric: tabular-nums; }
   .law :global(.akn-article) { scroll-margin-top: var(--s-4); }
   .law :global(.alias) { display: block; scroll-margin-top: var(--s-4); }
@@ -215,7 +215,7 @@ doc.preamble.forEach((n, i) => {
   }
   .law :global(.pj-inline .pj-pasal) { display: none; }
   .law :global(.pj-inline .pj-inline-label) { display: inline; }
-  .law :global(.pj-inline .numbered) { grid-template-columns: 2.4rem minmax(0, 1fr); }
+  .law :global(.pj-inline .numbered) { grid-template-columns: var(--hang) minmax(0, 1fr); }
 
   /* the opening: a plain block in Asli, a fold with a summary in Modern */
   .law :global(.akn-preamble) { margin-bottom: var(--s-6); }
@@ -303,7 +303,7 @@ doc.preamble.forEach((n, i) => {
   }
   @media (max-width: 640px) {
     .law { font-size: var(--fs-base); --h-bab: var(--fs-lg); --h-bagian: var(--fs-md); --h-pasal: var(--fs-base); }
-    .law :global(.numbered), .law :global(.pj-inline .numbered) { grid-template-columns: 1.9rem minmax(0, 1fr); }
+    .law :global(.numbered), .law :global(.pj-inline .numbered) { grid-template-columns: var(--hang-sm) minmax(0, 1fr); }
     :global(:root[data-format="asli"]) .law :global(.penjelasan .numbered) { grid-template-columns: 1fr; }
   }
   @media print {

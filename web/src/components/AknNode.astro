@@ -11,8 +11,9 @@ import type { AknNode } from "../lib/lawdoc.ts";
 import { cukupJelas, modernHeading, modernLabel, pasalKey, preview } from "../lib/display.ts";
 
 /** "Diubah oleh UU 3/2020". kind: how (default diubah); "unreadable": changed, but the new
- * wording could not be read, so the text shown is the one before (merged texts, lib/merge.ts). */
-export interface PasalNote { label: string; href?: string; kind?: "diubah" | "disisipkan" | "dihapus" | "unreadable" }
+ * wording could not be read, so the text shown is the one before (merged texts, lib/merge.ts).
+ * by: the amending law, when its change to this pasal can be compared in place (CompareMode). */
+export interface PasalNote { label: string; href?: string; kind?: "diubah" | "disisipkan" | "dihapus" | "unreadable"; by?: string }
 interface Props { node: AknNode; penjelasan?: boolean; notes?: Map<string, PasalNote[]>; aliases?: Map<string, string> }
 const { node, penjelasan = false, notes, aliases } = Astro.props;
 const alias = !penjelasan && node.eId ? aliases?.get(node.eId) : undefined;
@@ -42,7 +43,7 @@ const Chevron = `<svg class="chev" viewBox="0 0 16 16" width="16" height="16" ar
 {node.tag === "p" ? (
   <p class="akn-p" id={id}>{node.text}</p>
 ) : node.tag === "article" && !penjelasan ? (
-  <section class="akn-article fold" id={id}>
+  <section class="akn-article fold" id={id} data-num={node.num}>
     {alias && <span class="alias" id={alias}></span>}
     <h3 class="fold-h" id={id ? `${id}-h` : undefined}>
       <button type="button" class="fold-btn" aria-expanded="true" aria-controls={cid}><Fragment set:html={Chevron} />{label}</button>
@@ -51,7 +52,7 @@ const Chevron = `<svg class="chev" viewBox="0 0 16 16" width="16" height="16" ar
     </h3>
     {note && noteGroups(note).map(([kind, list]) => (
       <p class:list={["akn-note", { "akn-note-warn": kind === "unreadable" }]}>
-        {VERB[kind]} {list.map((n, i) => <>{i > 0 && (i === list.length - 1 ? " dan " : ", ")}{n.href ? <a href={n.href}>{n.label}</a> : n.label}</>)}
+        {VERB[kind]} {list.map((n, i) => <>{i > 0 && (i === list.length - 1 ? " dan " : ", ")}{n.href ? <a href={n.href} data-cmp-by={n.by}>{n.label}</a> : n.label}</>)}
         {kind === "unreadable" && "; teks barunya belum terbaca, di bawah ini teks sebelumnya"}
       </p>
     ))}

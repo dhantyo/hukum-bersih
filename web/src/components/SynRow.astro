@@ -2,7 +2,7 @@
 // One row of a synopsis (side-by-side comparison): a pasal before and after, ayat by ayat,
 // with deleted words struck through on the left and new words marked on the right. On phones
 // it becomes one column with the changes marked in place. Used for RUU drafts
-// (pages/ruu/[slug]/beda) and for amended laws (pages/uu/[nomor]/[tahun]/perubahan).
+// (pages/ruu/[slug]/beda); amended laws are compared in the reading view (CompareMode.astro).
 import type { PasalComparison } from "../lib/compare.ts";
 import type { Pasal } from "../lib/lawdoc.ts";
 import { STATUS } from "../lib/labels.ts";

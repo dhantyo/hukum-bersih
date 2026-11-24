@@ -13,8 +13,10 @@ interface Props {
   current?: string;
   /** on an amending law's page: its id, to mark the version it made */
   law?: string;
+  /** the page can compare versions in place (components/CompareMode.astro) */
+  compare?: boolean;
 }
-const { k, current, law } = Astro.props;
+const { k, current, law, compare = false } = Astro.props;
 const rows = versionRows(k);
 ---
 {rows.length > 0 && (
@@ -44,6 +46,7 @@ const rows = versionRows(k);
         );
       })}
     </ol>
+    {compare && <button type="button" class="cmp-open" data-cmp-open>Bandingkan versi</button>}
     <p class="note">Versi gabungan disusun otomatis dari teks asli dan undang-undang perubahannya; bukan teks konsolidasi resmi.</p>
   </details>
 )}
@@ -80,5 +83,11 @@ const rows = versionRows(k);
   .here .dot { left: var(--s-1); }
   .here .what { color: var(--primary); }
   .note { margin: var(--s-2) 0 0; font-size: var(--fs-xs); color: var(--text-muted); }
+  .cmp-open {
+    margin-top: var(--s-2); width: 100%; min-height: var(--s-6); font: inherit; font-weight: 600; color: var(--primary);
+    background: var(--bg); border: 1px solid var(--line-strong); border-radius: var(--r-sm); cursor: pointer;
+    padding: var(--s-1) var(--s-3);
+  }
+  .cmp-open:hover { border-color: var(--primary); background: var(--primary-bg); }
   @media (pointer: coarse) { a, .row { padding: var(--s-2) 0; } }
 </style>

@@ -10,6 +10,8 @@ import LawText from "./LawText.astro";
 import Toc from "./Toc.astro";
 import Versions from "./Versions.astro";
 import MergedBanner from "./MergedBanner.astro";
+import CompareMode from "./CompareMode.astro";
+import { hasAmendmentSteps } from "../lib/amendments.ts";
 import { tanggal } from "../lib/labels.ts";
 import { amendments, koleksiPath, members, type Koleksi } from "../lib/koleksi.ts";
 import { citeId, lawPath, STATUS_LABEL } from "../lib/peraturan.ts";
@@ -25,6 +27,8 @@ const list = members(k);
 const replaced = list.filter((m) => m.role === "pendahulu");
 const amending = list.filter((m) => m.role === "perubahan");
 const title = k.named ? k.name : k.base.subject || k.base.title;
+// versions can be compared in place (perubahan.json is built for every family that has steps)
+const comparable = hasAmendmentSteps(k.base);
 const crumbs = [{ href: `${base}koleksi/`, label: "Koleksi" },
   latest ? { label: k.name } : { href: `${base}${koleksiPath(k)}`, label: k.name },
   ...(latest ? [] : [{ label: point.date ? tanggal(point.date) : point.id }])];
@@ -40,7 +44,7 @@ const crumbs = [{ href: `${base}koleksi/`, label: "Koleksi" },
       {amendments(k) > 0 && <span class="badge diubah">diubah {amendments(k)}×</span>}
     </div>
     <Fragment slot="panel">
-      <Versions k={k} current={point.id} />
+      <Versions k={k} current={point.id} compare={comparable} />
       <Toc doc={doc} />
       <Facts title="Undang-undang" facts={[
         { label: "Undang-undang pokok", value: citeId(k.base.id), href: `${base}${lawPath(k.base)}` },
@@ -49,6 +53,7 @@ const crumbs = [{ href: `${base}koleksi/`, label: "Koleksi" },
       ]} />
     </Fragment>
     <MergedBanner k={k} point={point} unreadable={unreadable} penjelasan={doc.penjelasan.length > 0} />
+    {comparable && <CompareMode src={`${base}${koleksiPath(k)}perubahan.json`} current={(point.after ?? []).at(-1) ?? k.base.id} />}
     <LawText doc={doc} notes={notes} />
   </DocLayout>
 </Base>

@@ -44,3 +44,14 @@ merged text rather than hiding it.
 Given up: a merged text is only as good as the amendment parsing; it is not reviewed by a
 lawyer. Omnibus amendments (Cipta Kerja) are not linked yet, so families amended only through
 them show no merged version.
+
+## Comparing versions inside the reading view
+
+The separate Perubahan page (`/uu/<nomor>/<tahun>/perubahan/`) is gone; its links forward to
+the reading view with `?bandingkan=<amending law id>`. Comparison happens where the text is
+(`web/src/components/CompareMode.astro`): "Diubah oleh UU 3/2020" under a pasal shows that pasal
+before and after that amendment in its place; "Bandingkan versi" in the Versi panel compares
+any two versions of the whole law, opening every changed pasal in place and marking them in the
+contents. The notation follows Fedlex's comparison view (inserted, deleted, reworded, no
+counterpart; pasal inserted / deleted / changed). Data: `/koleksi/<slug>/perubahan.json`
+(`lib/amendments.ts` `compareData`), fetched only when a comparison is opened.
