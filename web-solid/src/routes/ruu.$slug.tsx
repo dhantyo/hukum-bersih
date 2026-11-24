@@ -3,7 +3,10 @@ import { createFileRoute, notFound } from "@tanstack/solid-router";
 import { For, Show } from "solid-js";
 
 import { STAGE, tanggal } from "../../../web/src/lib/labels.ts";
-import { DraftProvenance, draftDocumentTitle } from "../DraftProvenance";
+import {
+  DraftProvenance,
+  draftDocumentTitle,
+} from "../components/draft-provenance.tsx";
 import { draftBillQuery } from "../lib/queries";
 
 export const Route = createFileRoute("/ruu/$slug")({

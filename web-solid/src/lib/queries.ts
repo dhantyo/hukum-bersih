@@ -1,9 +1,8 @@
 import { QueryClient, queryOptions } from "@tanstack/solid-query";
 
-import { getLawOverview, getLawYear } from "./catalog";
 import { getCollection, getCollections } from "./collections";
 import { getDraftBill, getDraftText, listDraftBills } from "./drafts";
-import { getLaw, getLawComparison } from "./laws";
+import { getLaw, getLawComparison, getLawOverview, getLawYear } from "./laws";
 import { getSearchResults } from "./search";
 
 export function createQueryClient() {

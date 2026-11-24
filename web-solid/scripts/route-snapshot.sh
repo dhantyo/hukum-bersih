@@ -11,7 +11,9 @@
 #
 # Normalised, because these bytes differ run to run or build to build:
 #   updatedAt:/t:<epoch ms> in the router and query payloads; content-hashed /assets/<chunk>.js|css paths
-#   and the router's asset-id map (chunk names follow the file layout); <link rel="modulepreload"> tags.
+#   and the router's asset-id map (chunk names follow the file layout); <link rel="modulepreload"> tags;
+#   the _hk hydration ids, which count reactive owners and so shift when an expression is written another way
+#   (server and client derive them from the same compiled code, so they cannot disagree).
 # Stylesheet <link> tags, class attributes and everything else are kept.
 set -euo pipefail
 corpus="$(realpath "${CORPUS:-.snapshots/corpus/corpus}")"
@@ -104,6 +106,7 @@ for url in "${urls[@]}"; do
     sed -E \
       -e 's/\b(t|updatedAt):[0-9]{12,}/\1:TIME/g' \
       -e 's#<link rel="modulepreload" href="[^"]*">##g' \
+      -e 's/ _hk=[0-9A-Za-z]+/ _hk=ID/g' \
       -e 's#\{"[0-9A-F]+":"/assets/[^}]*\}#{ASSET-MAP}#g' \
       -e 's#/assets/[A-Za-z0-9_.$-]+\.(js|css)#/assets/ASSET.\1#g' "$out/.b"
   } > "$out/$name.txt"

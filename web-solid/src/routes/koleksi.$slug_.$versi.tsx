@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/solid-query";
 import { createFileRoute, notFound } from "@tanstack/solid-router";
 import { Show } from "solid-js";
 
-import { CollectionReader } from "../CollectionReader";
+import { CollectionReader } from "../components/collection-reader.tsx";
 import { collectionQuery } from "../lib/queries";
 
 export const Route = createFileRoute("/koleksi/$slug_/$versi")({

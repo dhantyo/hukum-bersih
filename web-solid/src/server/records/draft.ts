@@ -1,13 +1,12 @@
 import * as v from "valibot";
 
-import { isLawText } from "../law-record";
-import type { LawText } from "../law-record";
-import { readActiveRelease, readReleaseObject } from "./corpus";
-
-const webLink = v.pipe(v.string(), v.url(), v.regex(/^https?:\/\//));
+import { draftDocumentId, webLink } from "../../lib/schemas.ts";
+import { readActiveReleaseText } from "../corpus.ts";
+import { parseRecord } from "./parse.ts";
+import { readerText } from "./reader-text.ts";
 
 const document = v.object({
-  id: v.pipe(v.string(), v.regex(/^[a-z0-9_-]+$/)),
+  id: draftDocumentId,
   type: v.string(),
   label: v.optional(v.string()),
   date: v.string(),
@@ -41,38 +40,31 @@ const draft = v.object({
   name: v.string(),
   title: v.string(),
   document,
-  text: v.custom<LawText>(isLawText),
+  text: readerText,
 });
-
-async function readDraftObject(key: string) {
-  const file = await readReleaseObject(
-    await readActiveRelease(),
-    `drafts/${key}`
-  );
-
-  return file ? JSON.parse(await file.text()) : null;
-}
 
 export type DraftDocument = v.InferOutput<typeof document>;
 
-export async function readDraftBill(slug: string) {
-  const record = await readDraftObject(`${slug}/index.json`);
+export const readDraftBill = async (slug: string) => {
+  const text = await readActiveReleaseText(`drafts/${slug}/index.json`);
 
-  return record === null ? null : v.parse(bill, record);
-}
+  return text === null ? null : parseRecord(bill, text, `draft bill ${slug}`);
+};
 
-export async function readDraftText(slug: string, id: string) {
-  const record = await readDraftObject(`${slug}/documents/${id}.json`);
+export const readDraftText = async (slug: string, id: string) => {
+  const text = await readActiveReleaseText(
+    `drafts/${slug}/documents/${id}.json`
+  );
 
-  if (record === null) {
+  if (text === null) {
     return null;
   }
 
-  const result = v.parse(draft, record);
+  const record = parseRecord(draft, text, `draft ${slug}/${id}`);
 
-  if (result.document.id !== id) {
+  if (record.document.id !== id) {
     throw new Error(`Published draft does not match ${slug}/${id}`);
   }
 
-  return result;
-}
+  return record;
+};

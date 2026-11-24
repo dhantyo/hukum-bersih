@@ -1,14 +1,18 @@
 import type { StartMiddleware } from "@solidjs/vite-plugin";
 
-import { readReleaseObject, releaseIdPattern } from "./corpus";
+import { readReleaseObject, releaseIdPattern } from "../corpus.ts";
 
-const contentTypes: Record<string, string> = {
-  js: "text/javascript; charset=utf-8",
-  css: "text/css; charset=utf-8",
-  json: "application/json",
-  wasm: "application/wasm",
-  gz: "application/octet-stream",
-};
+const assetPartPattern = /^[a-zA-Z0-9_-]+(?:\.[a-zA-Z0-9_-]+)*$/u;
+
+const contentTypes = new Map([
+  ["js", "text/javascript; charset=utf-8"],
+  ["css", "text/css; charset=utf-8"],
+  ["json", "application/json"],
+  ["wasm", "application/wasm"],
+]);
+
+const contentTypeOf = (extension: string) =>
+  contentTypes.get(extension) ?? "application/octet-stream";
 
 export const searchAssets: StartMiddleware = async (event, next) => {
   const { pathname } = new URL(event.request.url);
@@ -25,8 +29,8 @@ export const searchAssets: StartMiddleware = async (event, next) => {
 
   if (
     !releaseIdPattern.test(release) ||
-    !parts.length ||
-    !parts.every((part) => /^[a-zA-Z0-9_-]+(?:\.[a-zA-Z0-9_-]+)*$/.test(part))
+    parts.length === 0 ||
+    !parts.every((part) => assetPartPattern.test(part))
   ) {
     return new Response(null, { status: 404 });
   }
@@ -43,7 +47,7 @@ export const searchAssets: StartMiddleware = async (event, next) => {
     event.request.method === "HEAD" ? null : await file.arrayBuffer(),
     {
       headers: {
-        "Content-Type": contentTypes[extension] ?? "application/octet-stream",
+        "Content-Type": contentTypeOf(extension),
         "Cache-Control": "public, max-age=31536000, immutable",
       },
     }

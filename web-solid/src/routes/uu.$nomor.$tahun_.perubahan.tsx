@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/solid-query";
 import { createFileRoute, notFound } from "@tanstack/solid-router";
 import { Show } from "solid-js";
 
-import { AmendmentComparison } from "../AmendmentComparison";
+import { AmendmentComparison } from "../components/amendment-comparison.tsx";
 import { comparisonQuery } from "../lib/queries";
 
 import "../reader.css";

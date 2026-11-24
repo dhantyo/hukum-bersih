@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/solid-query";
 import { createFileRoute } from "@tanstack/solid-router";
 
-import { LawCatalog } from "../LawCatalog";
+import { LawCatalog } from "../components/law-catalog.tsx";
 import { draftBillsQuery } from "../lib/queries";
 
 export const Route = createFileRoute("/ruu/")({

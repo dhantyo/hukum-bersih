@@ -1,28 +1,56 @@
 import { GET } from "@solidjs/web/server-functions";
+import * as v from "valibot";
 
-import { parseComparisonRecord } from "../amendment-record";
-import { parseLawRecord } from "../law-record";
-import { readLawObject } from "../server/corpus";
+import { readCatalog } from "../server/records/catalog.ts";
+import { readLaw, toComparison, toReaderLaw } from "../server/records/law.ts";
+import { lawPath, year } from "./schemas.ts";
 
-function isLawPath(path: string) {
-  return /^\/uu\/\d+\/\d{4}\/$/.test(path);
-}
+const readLawCatalog = async () => {
+  const { laws } = await readCatalog();
+
+  return laws.filter((law) => v.is(lawPath, law.u));
+};
+
+export const getLawOverview = GET(async () => {
+  "use server";
+  const laws = await readLawCatalog();
+  const years = Map.groupBy(laws, (law) => law.y);
+
+  return {
+    total: laws.length,
+    years: [...years].map(([lawYear, items]) => ({
+      year: lawYear,
+      count: items.length,
+    })),
+    recent: laws.slice(0, 20),
+  };
+});
+
+export const getLawYear = GET(async (lawYear: string) => {
+  "use server";
+
+  if (!v.is(year, lawYear)) {
+    return [];
+  }
+
+  return (await readLawCatalog()).filter((law) => law.y === Number(lawYear));
+});
 
 export const getLaw = GET(
   async (path: string, compareTo?: string, compareFrom?: string) => {
     "use server";
 
-    if (!isLawPath(path)) {
+    if (!v.is(lawPath, path)) {
       return null;
     }
 
-    const publishedLaw = await readLawObject(path);
+    const record = await readLaw(path);
 
-    if (publishedLaw === null) {
+    if (record === null) {
       return null;
     }
 
-    const law = parseLawRecord(publishedLaw, path);
+    const law = toReaderLaw(record);
 
     if (compareTo === undefined) {
       return { law };
@@ -32,12 +60,10 @@ export const getLaw = GET(
       return { law, comparisonRequested: true };
     }
 
-    const { amendments } = parseComparisonRecord(publishedLaw, path);
-
     const amendment =
       compareTo === ""
-        ? amendments.at(-1)
-        : amendments.find((entry) => entry.id === compareTo);
+        ? record.amendments.at(-1)
+        : record.amendments.find((entry) => entry.id === compareTo);
 
     return { law, amendment, comparisonRequested: true };
   }
@@ -46,17 +72,13 @@ export const getLaw = GET(
 export const getLawComparison = GET(async (path: string) => {
   "use server";
 
-  if (!isLawPath(path)) {
+  if (!v.is(lawPath, path)) {
     return null;
   }
 
-  const publishedLaw = await readLawObject(path);
+  const record = await readLaw(path);
 
-  if (publishedLaw === null) {
-    return null;
-  }
-
-  const comparison = parseComparisonRecord(publishedLaw, path);
-
-  return comparison.amendments.length > 0 ? comparison : null;
+  return record === null || record.amendments.length === 0
+    ? null
+    : toComparison(record);
 });

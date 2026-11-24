@@ -1,17 +1,11 @@
 import * as v from "valibot";
 
-import { isLawText } from "../law-record";
-import type { LawText } from "../law-record";
-import { readActiveRelease, readReleaseObject } from "./corpus";
+import { internalLink } from "../../lib/schemas.ts";
+import { readActiveReleaseText } from "../corpus.ts";
+import { parseRecord } from "./parse.ts";
+import { readerText } from "./reader-text.ts";
 
-const internalLink = v.pipe(
-  v.string(),
-  v.regex(
-    /^\/(?:[a-z-]+\/[a-z0-9]+\/\d{4}|koleksi\/[a-z0-9-]+(?:\/\d{4}-\d{2}-\d{2})?)\/$/
-  )
-);
-
-const mergedVersion = v.object({
+const collectionVersion = v.object({
   date: v.nullable(v.string()),
   base: v.object({ label: v.string(), href: internalLink }),
   amendments: v.array(v.string()),
@@ -38,18 +32,17 @@ const mergedVersion = v.object({
       })
     )
   ),
-  text: v.custom<LawText>(isLawText),
+  text: readerText,
 });
 
-export type MergedVersion = v.InferOutput<typeof mergedVersion>;
+export type CollectionVersion = v.InferOutput<typeof collectionVersion>;
 
-export async function readCollectionVersion(slug: string, version: string) {
-  const release = await readActiveRelease();
-
-  const file = await readReleaseObject(
-    release,
+export const readCollectionVersion = async (slug: string, version: string) => {
+  const text = await readActiveReleaseText(
     `collections/${slug}/${version}.json`
   );
 
-  return file ? v.parse(mergedVersion, JSON.parse(await file.text())) : null;
-}
+  return text === null
+    ? null
+    : parseRecord(collectionVersion, text, `collection ${slug}/${version}`);
+};

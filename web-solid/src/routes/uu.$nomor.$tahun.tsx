@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/solid-query";
 import { createFileRoute, notFound } from "@tanstack/solid-router";
 import { Show } from "solid-js";
 
-import { LawReader } from "../LawReader";
+import { LawReader } from "../components/law-reader.tsx";
 import { readerQuery } from "../lib/queries";
 
 import "../reader.css";

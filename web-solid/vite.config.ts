@@ -10,6 +10,7 @@ export default defineConfig({
     solid({
       start: {
         middleware: "./src/middleware.ts",
+        document: "./src/document.tsx",
         serverRenderSetup: "./src/setup.tsx",
         nodeServer: true,
       },

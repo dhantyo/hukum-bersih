@@ -1,49 +1,45 @@
 import type { StartMiddleware } from "@solidjs/vite-plugin";
+import * as v from "valibot";
 
-import { readActiveRelease } from "./corpus";
+import { publicDocumentPath } from "../../lib/schemas.ts";
+import { readActiveRelease } from "../corpus.ts";
 
 declare module "@solidjs/web" {
   interface RequestEventLocals {
     publicPages?: {
       version: string;
       cache: Pick<Cache, "match" | "put">;
-      defer(task: Promise<void>): void;
+      defer: (task: Promise<void>) => void;
     };
   }
 }
 
-function isPublicLawRequest(request: Request, url: URL) {
-  const documentPath =
-    /^\/uu\/\d+\/\d{4}\/(?:perubahan\/)?$/.test(url.pathname) ||
-    /^\/koleksi\/[a-z0-9-]+\/(?:\d{4}-\d{2}-\d{2}\/)?$/.test(url.pathname) ||
-    /^\/ruu\/[a-z0-9-]+\/[a-z0-9_-]+\/$/.test(url.pathname);
+const uncacheableRequestHeaders = [
+  "Cookie",
+  "Authorization",
+  "Range",
+  "If-None-Match",
+  "If-Modified-Since",
+];
 
-  return (
-    request.method === "GET" &&
-    !url.search &&
-    documentPath &&
-    request.headers.get("Accept")?.includes("text/html") &&
-    [
-      "Cookie",
-      "Authorization",
-      "Range",
-      "If-None-Match",
-      "If-Modified-Since",
-    ].every((header) => !request.headers.has(header))
-  );
-}
+const isPublicLawRequest = (request: Request, url: URL) =>
+  request.method === "GET" &&
+  url.search === "" &&
+  v.is(publicDocumentPath, url.pathname) &&
+  request.headers.get("Accept")?.includes("text/html") === true &&
+  uncacheableRequestHeaders.every((header) => !request.headers.has(header));
 
-function cacheable(response: Response) {
+const cacheable = (response: Response) => {
   const directives = response.headers.get("Cache-Control");
 
   return (
     response.status === 200 &&
     !response.headers.has("Set-Cookie") &&
     !response.headers.has("Vary") &&
-    !/private|no-store/i.test(directives ?? "") &&
-    response.headers.get("Content-Type")?.startsWith("text/html")
+    !/private|no-store/iu.test(directives ?? "") &&
+    response.headers.get("Content-Type")?.startsWith("text/html") === true
   );
-}
+};
 
 export const publicLawCache: StartMiddleware = async (event, next) => {
   const options = event.locals.publicPages;

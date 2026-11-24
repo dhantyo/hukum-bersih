@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/solid-query";
 import { createFileRoute } from "@tanstack/solid-router";
 import { createEffect, createSignal, For, Show } from "solid-js";
 
-import { LawCatalog } from "../LawCatalog";
+import { LawCatalog } from "../components/law-catalog.tsx";
 import { searchQuery } from "../lib/queries";
 
 interface SearchHit {

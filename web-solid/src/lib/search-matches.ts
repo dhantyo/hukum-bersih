@@ -1,5 +1,5 @@
 import { citeOf, norm, pasalOf } from "../../../web/src/lib/search-query.ts";
-import type { LawCatalogEntry, SearchCatalog } from "../server/catalog";
+import type { Catalog, LawCatalogEntry } from "../server/records/catalog.ts";
 
 function matchesWords(query: string) {
   const words = norm(query)
@@ -20,7 +20,7 @@ function hasCitation(law: LawCatalogEntry, citation: string) {
   return law.c.toLowerCase().endsWith(` ${citation}`);
 }
 
-function articleMatches(query: string, catalog: SearchCatalog) {
+function articleMatches(query: string, catalog: Catalog) {
   const article = pasalOf(query);
 
   if (!article) {
@@ -52,7 +52,7 @@ function articleMatches(query: string, catalog: SearchCatalog) {
   }));
 }
 
-export function searchMatches(query: string, catalog: SearchCatalog) {
+export function searchMatches(query: string, catalog: Catalog) {
   const cite = citeOf(query);
   const matches = matchesWords(query);
 

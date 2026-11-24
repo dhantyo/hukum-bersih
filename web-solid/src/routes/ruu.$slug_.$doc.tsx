@@ -2,8 +2,11 @@ import { useQuery } from "@tanstack/solid-query";
 import { createFileRoute, notFound } from "@tanstack/solid-router";
 import { Show } from "solid-js";
 
-import { DraftProvenance, draftDocumentTitle } from "../DraftProvenance";
-import { LawText } from "../LawReader";
+import {
+  DraftProvenance,
+  draftDocumentTitle,
+} from "../components/draft-provenance.tsx";
+import { LawText } from "../components/law-text.tsx";
 import { draftTextQuery } from "../lib/queries";
 
 import "../reader.css";

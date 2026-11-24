@@ -1,11 +1,9 @@
 import { GET } from "@solidjs/web/server-functions";
+import * as v from "valibot";
 
-import { readCatalog } from "../server/catalog";
-import { readDraftBill, readDraftText } from "../server/draft-record";
-
-function validSlug(slug: unknown): slug is string {
-  return typeof slug === "string" && /^[a-z0-9-]+$/.test(slug);
-}
+import { readCatalog } from "../server/records/catalog.ts";
+import { readDraftBill, readDraftText } from "../server/records/draft.ts";
+import { draftDocumentId, slug } from "./schemas.ts";
 
 export const listDraftBills = GET(async () => {
   "use server";
@@ -13,18 +11,18 @@ export const listDraftBills = GET(async () => {
   return (await readCatalog()).laws.filter((law) => law.c === "RUU");
 });
 
-export const getDraftBill = GET(async (slug: string) => {
+export const getDraftBill = GET(async (billSlug: string) => {
   "use server";
 
-  return validSlug(slug) ? await readDraftBill(slug) : null;
+  return v.is(slug, billSlug) ? await readDraftBill(billSlug) : null;
 });
 
-export const getDraftText = GET(async (slug: string, id: string) => {
+export const getDraftText = GET(async (billSlug: string, id: string) => {
   "use server";
 
-  if (!validSlug(slug) || typeof id !== "string" || !/^[a-z0-9_-]+$/.test(id)) {
+  if (!v.is(slug, billSlug) || !v.is(draftDocumentId, id)) {
     return null;
   }
 
-  return await readDraftText(slug, id);
+  return await readDraftText(billSlug, id);
 });

@@ -4,12 +4,12 @@ import { join } from "node:path";
 import { getRequestEvent } from "@solidjs/web";
 
 interface CorpusObject {
-  text(): Promise<string>;
-  arrayBuffer(): Promise<ArrayBuffer>;
+  text: () => Promise<string>;
+  arrayBuffer: () => Promise<ArrayBuffer>;
 }
 
 export interface CorpusBucket {
-  get(key: string): Promise<CorpusObject | null>;
+  get: (key: string) => Promise<CorpusObject | null>;
 }
 
 declare module "@solidjs/web" {
@@ -19,7 +19,7 @@ declare module "@solidjs/web" {
   }
 }
 
-async function readCorpusObject(key: string): Promise<CorpusObject | null> {
+const readCorpusObject = async (key: string) => {
   const bucket = getRequestEvent()?.locals.corpus;
 
   if (bucket) {
@@ -41,11 +41,11 @@ async function readCorpusObject(key: string): Promise<CorpusObject | null> {
 
     throw error;
   }
-}
+};
 
-export const releaseIdPattern = /^[a-z0-9][a-z0-9-]{0,63}$/;
+export const releaseIdPattern = /^[a-z0-9][a-z0-9-]{0,63}$/u;
 
-async function loadActiveRelease() {
+const loadActiveRelease = async () => {
   const pointer = await readCorpusObject("active-release");
   const release = (await pointer?.text())?.trim();
 
@@ -54,25 +54,21 @@ async function loadActiveRelease() {
   }
 
   return release;
-}
+};
 
-export async function readActiveRelease() {
+export const readActiveRelease = async () => {
   const locals = getRequestEvent()?.locals;
 
   return locals
     ? await (locals.activeCorpusRelease ??= loadActiveRelease())
     : await loadActiveRelease();
-}
+};
 
-export async function readReleaseObject(release: string, key: string) {
-  return await readCorpusObject(`releases/${release}/${key}`);
-}
+export const readReleaseObject = async (release: string, key: string) =>
+  await readCorpusObject(`releases/${release}/${key}`);
 
-export async function readLawObject(path: string): Promise<unknown> {
-  const document = await readReleaseObject(
-    await readActiveRelease(),
-    `laws${path}index.json`
-  );
+export const readActiveReleaseText = async (key: string) => {
+  const object = await readReleaseObject(await readActiveRelease(), key);
 
-  return document === null ? null : JSON.parse(await document.text());
-}
+  return object === null ? null : await object.text();
+};

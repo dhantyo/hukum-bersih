@@ -1,17 +1,18 @@
 import { GET } from "@solidjs/web/server-functions";
+import * as v from "valibot";
 
-import { readCatalog } from "../server/catalog";
-import { readActiveRelease } from "../server/corpus";
-import { searchMatches } from "./search-matches";
+import { readActiveRelease } from "../server/corpus.ts";
+import { readCatalog } from "../server/records/catalog.ts";
+import { searchText } from "./schemas.ts";
+import { searchMatches } from "./search-matches.ts";
 
 export const getSearchResults = GET(async (query: string) => {
   "use server";
   const release = await readActiveRelease();
-  const cleaned = typeof query === "string" ? query.trim().slice(0, 200) : "";
+  const cleaned = v.parse(searchText, query);
 
-  const catalog = cleaned
-    ? searchMatches(cleaned, await readCatalog())
-    : undefined;
+  const catalog =
+    cleaned === "" ? undefined : searchMatches(cleaned, await readCatalog());
 
   return { release, catalog, query: cleaned };
 });

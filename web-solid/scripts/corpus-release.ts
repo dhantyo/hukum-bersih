@@ -180,12 +180,11 @@ const publishRelease = async (
   const directory = join(scratch, "release");
   await mkdir(directory);
   await Promise.all(
-    ["laws", "pagefind", "law-catalog.json"].map(
-      async (group) =>
-        await cp(join(source, group), join(directory, group), {
-          recursive: true,
-        })
-    )
+    ["laws", "pagefind", "law-catalog.json"].map(async (group) => {
+      await cp(join(source, group), join(directory, group), {
+        recursive: true,
+      });
+    })
   );
 
   for await (const group of glob("{collections,drafts}", { cwd: source })) {
