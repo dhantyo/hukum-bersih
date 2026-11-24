@@ -91,7 +91,7 @@ Names follow [NAMING.md](NAMING.md).
 | `import-peraturan.yml` | manual (schedule removed 2026-11-21) | import from peraturan.go.id (answers only Indonesian IPs: needs WG_INDONESIA) |
 | `archive-pending.yml` | manual (schedule removed 2026-11-21) | archive peraturan.go.id PDFs that were recorded but not archived (skips BPK ones) |
 | `probe-sources.yml` | manual | which sources a GitHub runner can reach |
-| `probe-bpk.yml`, `explore-bpk.yml`, `probe-bpk-app.yml` | manual, or push to `claude/**` | which tool passes BPK's Cloudflare check; save sample BPK pages (test fixtures); look for an API in the BPK app |
+| ~~`probe-bpk.yml`, `explore-bpk.yml`, `probe-bpk-app.yml`~~ | removed 2026-11-24 (last in c3332cfb) | one-off probes: which tool passes BPK's Cloudflare check (Scrapling won, `sources/bpk_session.py`); sample BPK pages (now `pipeline/tests/fixtures/bpk/`); BPK's Android app (never got the APK) |
 
 Where things run: everything recurring runs on GitHub Actions (no Claude session or personal
 computer needed). GitHub runners reach DPR files, the Wayback Machine and (since 2026-11-20
