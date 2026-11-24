@@ -1,0 +1,59 @@
+---
+// Above a merged text (decision 0010): what it is (built automatically, not an official
+// consolidation) and, when the point is not complete, exactly what is missing: amendments we do
+// not have, pasal whose new wording could not be read, instructions that could not be applied.
+import { tanggal } from "../lib/labels.ts";
+import { citeId, pathOf } from "../lib/peraturan.ts";
+import { pasalKey } from "../lib/display.ts";
+import type { HistoryPoint } from "../lib/versions.ts";
+import type { Koleksi } from "../lib/koleksi.ts";
+
+interface Props { k: Koleksi; point: HistoryPoint; unreadable: Set<string>; penjelasan: boolean }
+const { k, point, unreadable, penjelasan } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const link = (id: string) => (pathOf(id) ? `${base}${pathOf(id)}` : undefined);
+const after = point.after ?? [];
+const notApplied = (point.not_applied ?? []).filter((n) => n.affects_wording);
+const missing = point.missing_before ?? 0;
+const unread = [...unreadable];
+const complete = point.complete !== false && unread.length === 0;
+---
+<aside class:list={["merged-banner", { incomplete: !complete }]} aria-label="Tentang teks gabungan">
+  <p class="head">Teks gabungan per {point.date ? tanggal(point.date) : "tanggal tidak diketahui"}, disusun otomatis.</p>
+  <p>
+    Gabungan <a href={link(k.base.id)}>{citeId(k.base.id)}</a> dan perubahannya sampai{" "}
+    {after.map((id, i) => <>{i > 0 && " dan "}{link(id) ? <a href={link(id)}>{citeId(id)}</a> : citeId(id)}</>)}.
+    Bukan teks konsolidasi resmi; teks asli setiap undang-undang ada di halamannya.
+  </p>
+  {!complete && (
+    <>
+      <p class="head gap">Belum lengkap:</p>
+      <ul>
+        {missing > 0 && <li>{missing} perubahan sebelumnya belum tersedia di sini; pasal yang diubahnya mungkin belum sesuai.</li>}
+        {unread.length > 0 && (
+          <li>Teks baru {unread.length} pasal belum terbaca, jadi yang ditampilkan teks sebelumnya:{" "}
+            {unread.map((n, i) => <>{i > 0 && ", "}<a href={`#pasal-${pasalKey(n)}`}>Pasal {n}</a></>)}.</li>
+        )}
+        {notApplied.map((n) => (
+          <li>Ketentuan {n.instruction ? `angka ${n.instruction} ` : ""}{link(n.by) ? <a href={link(n.by)}>{citeId(n.by)}</a> : citeId(n.by)} belum diterapkan: “{n.header}”</li>
+        ))}
+      </ul>
+    </>
+  )}
+  {penjelasan && <p class="small">Penjelasan di bawah menurut teks asli {citeId(k.base.id)}; perubahan penjelasan belum digabung.</p>}
+</aside>
+
+<style>
+  .merged-banner {
+    max-width: var(--measure); border: 1px solid var(--line); border-radius: var(--r-md);
+    padding: var(--s-3) var(--s-4); margin-bottom: var(--s-5); font-size: var(--fs-sm);
+  }
+  .merged-banner.incomplete { border-color: var(--warn); }
+  p { margin: 0; }
+  p + p, ul { margin-top: var(--s-2); }
+  .head { font-weight: 600; font-size: var(--fs-base); }
+  .head.gap { font-size: var(--fs-sm); }
+  ul { margin-bottom: 0; padding-left: var(--s-5); }
+  li + li { margin-top: var(--s-1); }
+  .small { color: var(--text-muted); }
+</style>

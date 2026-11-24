@@ -70,7 +70,7 @@ const asliPoint = koleksi && koleksi.base.id === r.id ? historyOf(r)?.points[0]?
       ]} />
     </Fragment>
     <StatusBanner r={r} hasText={!!doc}
-      perubahanHref={steps.length > 0 ? `${base}${lawPath(r)}perubahan/` : undefined}
+      latestHref={hasVersions && koleksi!.base.id === r.id && versionRows(koleksi!).at(-1)?.href ? versionRows(koleksi!).at(-1)!.href : undefined}
       riwayatHref={koleksi ? `${base}${koleksiPath(koleksi)}#riwayat` : undefined} />
     {koleksi ? !hasVersions && <KoleksiBox k={koleksi} r={r} /> : <RelationsBanner r={r} />}
     {doc ? (

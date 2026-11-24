@@ -4,6 +4,9 @@
 import Base from "../../layouts/Base.astro";
 import VersionCompare from "../../components/VersionCompare.astro";
 import KoleksiTimeline from "../../components/KoleksiTimeline.astro";
+import MergedView from "../../components/MergedView.astro";
+import { mergedDoc } from "../../lib/merge.ts";
+import { historyOf } from "../../lib/versions.ts";
 import { amendmentSteps, compareData, hasAmendmentSteps, versionHistory } from "../../lib/amendments.ts";
 import { amendments, loadKoleksi, members, type Koleksi } from "../../lib/koleksi.ts";
 import { citeId, lawPath, loadRegulationText, STATUS_LABEL } from "../../lib/peraturan.ts";
@@ -19,7 +22,11 @@ const compare = hasAmendmentSteps(k.base) ? compareData(versionHistory(k.base, d
 const compared = new Set(amendmentSteps(k.base, doc).map((s) => s.by.id));
 const anchors = new Map((doc?.pasal ?? []).map((p) => [p.num, p.eId]));
 const count = list.filter((m) => m.role !== "pendahulu").length;
+// decision 0010: a family with versions opens on its latest version, merged automatically
+const latest = historyOf(k.base)?.points.at(-1);
+const merged = latest && latest.kind === "gabungan" ? mergedDoc(k, latest.id) : undefined;
 ---
+{merged ? <MergedView k={k} merged={merged} latest /> : (
 <Base noindex title={k.name} description={`${k.name}${k.named ? ` (${k.title})` : ""}: undang-undang pokok beserta semua perubahannya.`} section="koleksi">
   <nav class="breadcrumbs" aria-label="Lokasi">
     <a href={`${base}koleksi/`}>Koleksi</a><span aria-hidden="true">›</span><span>{k.name}</span>
@@ -44,6 +51,7 @@ const count = list.filter((m) => m.role !== "pendahulu").length;
     amendments(k) > 0 && <p class="muted small">Perubahan-perubahan di koleksi ini belum dapat dibandingkan pasal demi pasal (teksnya belum terbaca).</p>
   )}
 </Base>
+)}
 
 <style>
   .eyebrow { margin: var(--s-4) 0 0; font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--primary); }

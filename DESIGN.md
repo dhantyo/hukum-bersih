@@ -100,6 +100,13 @@ separating.
   3/2020", what it changed, "belum lengkap" when incomplete; dots `--ok` (in force), `--gone`
   (earlier), dashed (a known amendment we lack). The version on screen gets `--primary-bg`.
   Data: each record's `history` (decision 0010).
+- **Merged text** (Koleksi page; `components/MergedView.astro`, decision 0010): the latest
+  version of a law family, merged automatically; older versions at `/koleksi/<slug>/<date>/`.
+  Same reading view as a law page. Above it a banner (`MergedBanner.astro`): "Teks gabungan per
+  <date>, disusun otomatis", what it merges, "bukan teks konsolidasi resmi", and when incomplete
+  (`--warn` border) exactly what is missing. Under each changed pasal: "Diubah oleh / Disisipkan
+  oleh / Dihapus oleh UU n/yyyy"; a change whose wording could not be read keeps the previous text
+  and says so (`--bg-subtle` tint).
 - **Fact list** (side panel): label above value, `--fs-sm`.
 - **Table of contents**: BAB headings with their pasal range; current item marked with
   `--primary` left border. The BAB being read opens to a grid of its pasal numbers (the pasal in

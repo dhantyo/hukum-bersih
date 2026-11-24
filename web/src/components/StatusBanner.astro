@@ -6,8 +6,9 @@
 import { tanggal } from "../lib/labels.ts";
 import { amendmentCount, byId, citeId, pasalNotes, pathOf, rel, sourceName, type Regulation } from "../lib/peraturan.ts";
 
-interface Props { r: Regulation; hasText: boolean; perubahanHref?: string; riwayatHref?: string }
-const { r, hasText, perubahanHref, riwayatHref } = Astro.props;
+/** latestHref: the family's latest merged version (decision 0010); riwayatHref: its Koleksi page */
+interface Props { r: Regulation; hasText: boolean; latestHref?: string; riwayatHref?: string }
+const { r, hasText, latestHref, riwayatHref } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const R = rel(r);
 const gone = r.status === "dicabut" || r.status === "tidak_berlaku";
@@ -23,7 +24,7 @@ const revokers = R.revoked_by.map((id) => {
 const times = amendmentCount(r);
 const changedPasal = pasalNotes(r).size;
 const year = r.tanggal_penetapan?.slice(0, 4) ?? String(r.year);
-const changesHref = perubahanHref ?? riwayatHref;
+const changesHref = latestHref ?? riwayatHref;
 ---
 {gone ? (
   <aside class="status-banner gone" aria-label="Status undang-undang">
@@ -47,8 +48,8 @@ const changesHref = perubahanHref ?? riwayatHref;
     <p class="head">Ini teks asli tahun {year}, belum memuat perubahannya.</p>
     <p>
       Undang-undang ini sudah diubah {times}×{changedPasal > 0 && <>; {changedPasal} pasal ditandai “Diubah oleh” di bawah</>}.
-      Teks yang sudah digabung dengan perubahannya belum tersedia di sini.
-      {changesHref && <> <a href={changesHref}>{perubahanHref ? "Lihat perubahan pasal demi pasal →" : "Lihat riwayat perubahan →"}</a></>}
+      {latestHref ? "Versi yang sudah digabung dengan perubahannya (disusun otomatis) ada di halaman koleksinya." : "Teks yang sudah digabung dengan perubahannya belum tersedia di sini."}
+      {changesHref && <> <a href={changesHref}>{latestHref ? "Baca versi gabungan terbaru →" : "Lihat riwayat perubahan →"}</a></>}
     </p>
   </aside>
 ) : null}

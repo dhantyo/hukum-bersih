@@ -67,13 +67,14 @@ Names follow [NAMING.md](NAMING.md).
 | `lib/data.ts` | Reads RUU records from `data/` and generated XML from `web/generated/` |
 | `lib/lawdoc.ts` | Akoma Ntoso → render tree + each Pasal as lines |
 | `lib/compare.ts` | Match pasal by content, then ayat, then words (diff-match-patch) |
+| `lib/versions.ts`, `lib/merge.ts` | A family's versions from the records' `history`; the merged text at one version (original text + amending laws' instructions), with a note per changed pasal (decision 0010) |
 | `lib/koleksi.ts` | Collections: `data/koleksi/*.yaml` + automatic ones; members from the relations |
 | `lib/lawtext.ts` | Pasal-as-lines types and helpers, shared with the browser (no XML parser) |
 | `lib/display.ts` | Reader view helpers: headings in normal capitals, Penjelasan labels in the body's style, "Cukup jelas" ([decision 0009](decisions/0009-law-view-asli-modern.md)) |
 | `pages/cari/` | Grouped search: `laws.json` (short names, citations, titles) + Pagefind JS API for the text |
 | `lib/amendments.ts` | Apply each amendment's new wording in order → before/after per pasal; short names |
 | `components/` | `LawText` / `AknNode` render Akoma Ntoso with `akn-*` classes and eIds as ids, in the reader's view (`ViewSettings`: Asli/Modern, Penjelasan placement, folding); `Riwayat` (history timeline) and `RelationsBanner` (on amending laws) |
-| `pages/` | `/`, `/uu/`, `/uu/tahun/<tahun>/`, `/uu/<nomor>/<tahun>/`, `/uu/<nomor>/<tahun>/perubahan/`, `/koleksi/`, `/koleksi/<slug>/` (with the version comparer), `/ruu/`, `/ruu/<slug>/`, `/ruu/<slug>/<doc id>/`, `/ruu/<slug>/beda/<a>...<b>/`, `/cari/`, `/tentang/` |
+| `pages/` | `/`, `/uu/`, `/uu/tahun/<tahun>/`, `/uu/<nomor>/<tahun>/`, `/uu/<nomor>/<tahun>/perubahan/`, `/koleksi/`, `/koleksi/<slug>/` (the latest version merged automatically, decision 0010; families without versions: their history and the version comparer), `/koleksi/<slug>/<date>/` (older merged versions), `/ruu/`, `/ruu/<slug>/`, `/ruu/<slug>/<doc id>/`, `/ruu/<slug>/beda/<a>...<b>/`, `/cari/`, `/tentang/` |
 | `styles/` | `tokens.css` (design tokens, see /DESIGN.md) and `global.css` |
 | `lib/peraturan.ts` | Reads regulation records and their generated Akoma Ntoso |
 

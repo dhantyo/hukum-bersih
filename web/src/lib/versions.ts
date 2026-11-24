@@ -1,7 +1,7 @@
 // The versions of a law family, from the base law's `history` (pipeline/src/hukum_bersih/
 // history.py, decision 0010): the text as enacted, then one merged version per amending law.
 // Used by the "Versi" list in the side panel (components/Versions.astro) and the Koleksi pages.
-import { citeId, lawPath, type Regulation } from "./peraturan.ts";
+import { citeId, lawPath, loadRegulationText, type Regulation } from "./peraturan.ts";
 import { koleksiPath, ordinal, type Koleksi } from "./koleksi.ts";
 
 export interface HistoryPoint {
@@ -61,6 +61,8 @@ export function versionRows(k: Koleksi): VersionRow[] {
   const h = historyOf(k.base);
   if (!h || h.points.length < 2) return [];
   const latest = h.points.at(-1)!;
+  // merged versions can only be built from the base law's text
+  const mergeable = !!loadRegulationText(k.base);
   const inForce = !["dicabut", "tidak_berlaku"].includes(k.base.status ?? "");
   const rows: VersionRow[] = [];
   let missingSoFar = 0;
@@ -77,7 +79,7 @@ export function versionRows(k: Koleksi): VersionRow[] {
     const isLatest = p.id === latest.id;
     rows.push({
       kind: "point", point: p, date: p.date, latest: isLatest, inForce: isLatest && inForce,
-      href: pointHref(k, p, latest),
+      href: p.kind === "asli" || mergeable ? pointHref(k, p, latest) : undefined,
       label: p.kind === "asli" ? "Teks asli" : `Setelah ${(p.after ?? []).map(citeId).join(" dan ")}`,
       sub: p.kind === "asli" ? citeId(k.base.id)
         : [p.order ? `perubahan ${ordinal(p.order)}` : "", plural(p.counts), p.complete === false ? "belum lengkap" : ""]

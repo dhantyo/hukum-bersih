@@ -10,11 +10,20 @@
 import type { AknNode } from "../lib/lawdoc.ts";
 import { cukupJelas, modernHeading, modernLabel, pasalKey, preview } from "../lib/display.ts";
 
-export interface PasalNote { label: string; href?: string }
+/** "Diubah oleh UU 3/2020". kind: how (default diubah); "unreadable": changed, but the new
+ * wording could not be read, so the text shown is the one before (merged texts, lib/merge.ts). */
+export interface PasalNote { label: string; href?: string; kind?: "diubah" | "disisipkan" | "dihapus" | "unreadable" }
 interface Props { node: AknNode; penjelasan?: boolean; notes?: Map<string, PasalNote[]>; aliases?: Map<string, string> }
 const { node, penjelasan = false, notes, aliases } = Astro.props;
 const alias = !penjelasan && node.eId ? aliases?.get(node.eId) : undefined;
 const note = node.tag === "article" && !penjelasan && node.num ? notes?.get(node.num) : undefined;
+const VERB = { diubah: "Diubah oleh", disisipkan: "Disisipkan oleh", dihapus: "Dihapus oleh", unreadable: "Diubah oleh" } as const;
+/** notes grouped by how, in the order they first happened */
+const noteGroups = (list: PasalNote[]) => {
+  const out = new Map<keyof typeof VERB, PasalNote[]>();
+  for (const n of list) out.set(n.kind ?? "diubah", [...(out.get(n.kind ?? "diubah") ?? []), n]);
+  return [...out];
+};
 const LABEL: Record<string, [string, string]> = {
   chapter: ["BAB", "Bab"], part: ["Bagian", "Bagian"], subpart: ["Paragraf", "Paragraf"], article: ["Pasal", "Pasal"],
 };
@@ -40,9 +49,12 @@ const Chevron = `<svg class="chev" viewBox="0 0 16 16" width="16" height="16" ar
       <span class="fold-preview" aria-hidden="true" data-pagefind-ignore>{preview(node)}</span>
       <a class="perma" href={`#${alias ?? id}`} aria-label={`Tautan ke ${label}`} data-pagefind-ignore>#</a>
     </h3>
-    {note && (
-      <p class="akn-note">Diubah oleh {note.map((n, i) => <>{i > 0 && (i === note.length - 1 ? " dan " : ", ")}{n.href ? <a href={n.href}>{n.label}</a> : n.label}</>)}</p>
-    )}
+    {note && noteGroups(note).map(([kind, list]) => (
+      <p class:list={["akn-note", { "akn-note-warn": kind === "unreadable" }]}>
+        {VERB[kind]} {list.map((n, i) => <>{i > 0 && (i === list.length - 1 ? " dan " : ", ")}{n.href ? <a href={n.href}>{n.label}</a> : n.label}</>)}
+        {kind === "unreadable" && "; teks barunya belum terbaca, di bawah ini teks sebelumnya"}
+      </p>
+    ))}
     <div class="fold-c" id={cid}>
       {kids.map((c) => <Astro.self node={c} notes={notes} aliases={aliases} />)}
     </div>

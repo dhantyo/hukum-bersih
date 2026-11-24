@@ -1,0 +1,19 @@
+---
+// An older merged version of a law family: /koleksi/<slug>/<date>/ (decision 0010). The latest
+// is the Koleksi page itself; the text as enacted is the base law's page.
+import MergedView from "../../../components/MergedView.astro";
+import { loadKoleksi, type Koleksi } from "../../../lib/koleksi.ts";
+import { mergedDoc } from "../../../lib/merge.ts";
+import { historyOf } from "../../../lib/versions.ts";
+
+export function getStaticPaths() {
+  return loadKoleksi().flatMap((k) => {
+    const points = historyOf(k.base)?.points ?? [];
+    return points.slice(0, -1).filter((p) => p.kind === "gabungan" && p.date && mergedDoc(k, p.id))
+      .map((p) => ({ params: { slug: k.slug, versi: p.date! }, props: { k, pointId: p.id } }));
+  });
+}
+const { k, pointId } = Astro.props as { k: Koleksi; pointId: string };
+const merged = mergedDoc(k, pointId)!;
+---
+<MergedView k={k} merged={merged} latest={false} />
