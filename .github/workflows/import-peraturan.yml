@@ -36,6 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 345
     env:
+      HUKUM_BERSIH_OCR_CACHE: /home/runner/ocr-cache      # raw OCR of scanned pages, kept between runs (.github/actions/ocr-cache)
       JENIS: ${{ inputs.jenis || 'uu' }}
       REPARSE: ${{ inputs.reparse && '--reparse' || '' }}
       ONLY: ${{ inputs.only && format('--only={0}', inputs.only) || '' }}
@@ -45,6 +46,10 @@ jobs:
         with:
           config: ${{ secrets.WG_INDONESIA }}
       - uses: astral-sh/setup-uv@v6
+      - uses: ./.github/actions/ocr-cache
+        with:
+          step: restore
+          path: ${{ env.HUKUM_BERSIH_OCR_CACHE }}
       - name: Tesseract for scanned PDFs
         run: sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ind hunspell hunspell-id hunspell-en-us >/dev/null
       - run: |
@@ -74,3 +79,8 @@ jobs:
             [ "$n" -eq 0 ] && break
           done
           echo "Records: $(find data/peraturan/$JENIS -name '*.yaml' | wc -l), with text: $(find data/peraturan/$JENIS -name '*.txt' | wc -l)" | tee -a "$GITHUB_STEP_SUMMARY"
+      - uses: ./.github/actions/ocr-cache
+        if: always()
+        with:
+          step: save
+          path: ${{ env.HUKUM_BERSIH_OCR_CACHE }}

@@ -56,6 +56,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 345
     env:
+      HUKUM_BERSIH_OCR_CACHE: /home/runner/ocr-cache      # raw OCR of scanned pages, kept between runs (.github/actions/ocr-cache)
       JENIS: ${{ inputs.jenis || 'uu' }}
       BATCHES: ${{ inputs.batches || '0' }}
       BATCH: "50"
@@ -66,6 +67,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
+      - uses: ./.github/actions/ocr-cache
+        with:
+          step: restore
+          path: ${{ env.HUKUM_BERSIH_OCR_CACHE }}
       - name: Install (stealth browser, Tesseract for scanned PDFs)
         run: |
           sudo apt-get install -y -qq xvfb tesseract-ocr tesseract-ocr-ind hunspell hunspell-id hunspell-en-us >/dev/null   # OCR for scans
@@ -123,3 +128,8 @@ jobs:
             gh workflow run import-bpk.yml --ref "${GITHUB_REF_NAME}" -f mode="$MODE" -f jenis="$JENIS" \
               -f batches="$BATCHES" -f no_text="${{ inputs.no_text }}" -f archive="${{ inputs.archive }}" -f chain=true
           fi
+      - uses: ./.github/actions/ocr-cache
+        if: always()
+        with:
+          step: save
+          path: ${{ env.HUKUM_BERSIH_OCR_CACHE }}

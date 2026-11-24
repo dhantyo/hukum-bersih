@@ -52,6 +52,7 @@ Names follow [NAMING.md](NAMING.md).
 | `naming.py` | Ids and titles (NAMING.md) |
 | `records.py` | The schema of a law record (Pydantic, `extra="forbid"`, strict types). `load_record` / `save_record` are the only way to read and write `data/peraturan/**/<id>.yaml`: records stay dicts, `save_record` validates and then dumps the same dict (`allow_unicode`, no key sorting), so a misspelt key or a wrong type fails before anything is written. A new field is added here first |
 | `pdf/extract.py` | PDF → cleaned lines (headers, page numbers, footers, signature boxes removed) |
+| `pdf/ocr_cache.py` | The engine's raw OCR of each scanned page, kept by the PDF's sha256 + engine + DPI + `OCR_CACHE_VERSION` in `$HUKUM_BERSIH_OCR_CACHE` (default `~/.cache/hukum-bersih/ocr`, `<engine>/<sha256>.json.gz`; `off` disables), so a page is OCR'd once, ever; the spell fix is not cached. Workflows keep it between runs with `.github/actions/ocr-cache` |
 | `pdf/ocr_fix.py` | Misread words of scanned pages corrected when a spell check is confident; word lists and shape confusions in `pdf/ocr_rules/` ([decision 0013](decisions/0013-ocr-spell-fix.md)) |
 | `pdf/structure.py` | Lines → structural blocks (BAB … Pasal, ayat, huruf/angka, Penjelasan) |
 | `akn/bluebell.py` | Blocks → Bluebell text (stored in `data/`) |

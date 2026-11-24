@@ -1,0 +1,47 @@
+name: OCR cache
+description: >
+  Keeps the raw OCR output of scanned PDFs between runs (pipeline/src/hukum_bersih/pdf/ocr_cache.py)
+  so a page is read once, ever. Use it twice in a job: `step: restore` before anything OCRs, and
+  `step: save` (with `if: always()`, so a job that fails or times out keeps what it read) at the end.
+  Set HUKUM_BERSIH_OCR_CACHE on the job to the same folder as `path`. GitHub drops caches not used
+  for 7 days and keeps 10 GB per repo; every save is a new key, the newest run holds the union of
+  all earlier ones (restore-keys picks the newest), and a run that read no new page saves nothing.
+inputs:
+  step:
+    description: "restore | save"
+    required: true
+  path:
+    description: "Cache folder, the same as $HUKUM_BERSIH_OCR_CACHE"
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Restore the OCR cache
+      id: restore
+      if: ${{ inputs.step == 'restore' }}
+      uses: actions/cache/restore@v4
+      with:
+        path: ${{ inputs.path }}
+        key: ocr-${{ github.run_id }}-${{ github.run_attempt }}
+        restore-keys: ocr-
+    - name: Mark the restored state
+      if: ${{ inputs.step == 'restore' }}
+      shell: bash
+      run: |
+        mkdir -p "${{ inputs.path }}"
+        touch "$RUNNER_TEMP/ocr-cache-restored"
+        echo "OCR cache: $(find "${{ inputs.path }}" -name '*.json.gz' | wc -l) PDF(s), $(du -sh "${{ inputs.path }}" | cut -f1)"
+    - name: Anything new to save?
+      id: changed
+      if: ${{ inputs.step == 'save' }}
+      shell: bash
+      run: |
+        n=$(find "${{ inputs.path }}" -name '*.json.gz' -newer "$RUNNER_TEMP/ocr-cache-restored" 2>/dev/null | wc -l)
+        echo "OCR cache: $n new or changed PDF(s), $(du -sh "${{ inputs.path }}" 2>/dev/null | cut -f1) in all"
+        echo "new=$n" >> "$GITHUB_OUTPUT"
+    - name: Save the OCR cache
+      if: ${{ inputs.step == 'save' && steps.changed.outputs.new != '0' }}
+      uses: actions/cache/save@v4
+      with:
+        path: ${{ inputs.path }}
+        key: ocr-${{ github.run_id }}-${{ github.run_attempt }}
