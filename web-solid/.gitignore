@@ -21,3 +21,6 @@ gitignore
 # System Files
 .DS_Store
 Thumbs.db
+
+# Route snapshots and staged corpora (scripts/route-snapshot.sh)
+.snapshots
