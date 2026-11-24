@@ -118,3 +118,17 @@ separate PDF is read after the law (UU 19/2003); browser print headers and foote
 leaked-markup check no longer rejects a law's own text that starts like a keyword ("TR:
 Tegangan Rendah", UU 59/2024). Scanned pages are OCR'd in parallel (same words, 3.7x faster
 on 4 cores). From v11 a new parser only redoes flagged laws (`PARSER_REDO_BELOW`).
+
+v17 (2026-11-24, three OCR'd texts the importer refused at v16: UU 16/2022, 17/2016, 7/2021).
+`pipeline/scripts/compare_reparse.py <id>...` (workflow input `compare` of parser-regression.yml)
+puts a re-parse next to the stored text: counts, importer verdict, every header/footer line cut by
+position, substantive differences apart from small edits, and the word balance. Findings: the
+position cut removed only furniture (UU 7/2021: 1,091 lines, all crest fragments, page numbers,
+serials and page-turn words). UU 16/2022 was refused because a map's OCR noise in the Lampiran
+counts as Penjelasan words (the Penjelasan itself is 752 words in both texts), UU 17/2016
+because the stored text counted an orphan "Cukup jelas." block as a third pasal. UU 7/2021 was a
+real parser fault: the v13 skip tolerance of `misprinted` took the amended law's quoted
+headings ("Pasal 6" after "... berbunyi sebagai berikut:") for the law's own and lost Pasal 5
+and 8; a heading after such a lead-in is now never a misprint or a skip. Still open: in an
+amending law with Arabic pasal the amended law's first quoted heading in sequence (UU 7/2021:
+Pasal 4 in BAB III) is still taken for the law's own Pasal 4.

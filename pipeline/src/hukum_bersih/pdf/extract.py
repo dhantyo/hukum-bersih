@@ -91,6 +91,7 @@ def page_lines(pdf: Path, stats: dict | None = None, ocr: bool = True) -> list[l
     stats.setdefault("ocr_pages", 0)
     stats.setdefault("ocr_cached", 0)
     stats.setdefault("edge_lines", [])
+    stats.setdefault("edge_at", [])                  # the same lines with their page: (page, text)
     with pymupdf.open(pdf) as doc:
         scans = [p.number for p in doc if ocr and is_scan(p)] if not stats.get("ocr_missing") else []
         read: dict[int, list] = {}
@@ -137,6 +138,7 @@ def page_lines(pdf: Path, stats: dict | None = None, ocr: bool = True) -> list[l
             page_rows, width, height = boxes[p.number]
             edges = edge_rows(page_rows, width, height, layout, first=p.number == 0)
             stats["edge_lines"] += [page_rows[i].text for i in sorted(edges.gone)]
+            stats["edge_at"] += [(p.number + 1, page_rows[i].text) for i in sorted(edges.gone)]
             if edges.head:
                 stats["edge_head"].append(p.number)
             out.append([r.text for i, r in enumerate(page_rows) if i not in edges.gone])
