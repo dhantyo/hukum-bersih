@@ -28,6 +28,11 @@ jobs:
       - name: Build Akoma Ntoso XML from data/
         working-directory: pipeline
         run: uv run hukum-bersih build-akn --out ../web/generated/akn
+      # Baseline 2026-11-24: every file fails on one error (Work FRBRdate holds a bare year,
+      # which the OASIS 3.0 schema rejects), so this only reports. Drop --report-only once fixed.
+      - name: Validate the XML against the OASIS Akoma Ntoso 3.0 schema
+        working-directory: pipeline
+        run: uv run python scripts/validate_akn.py ../web/generated/akn --report-only
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -36,6 +41,18 @@ jobs:
       - run: npm ci
       - run: npm test     # includes the M1 check: Pasal 5(2) of RUU Perampasan Aset changed
       - run: npm run build
+
+  actionlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Pinned release. shellcheck integration is off: it only raised style notes
+      # (quoting, ls) on our scripts. actionlint does not lint a local action's own
+      # action.yml; its inputs are checked where workflows call it.
+      - name: Lint workflows with actionlint
+        run: |
+          bash <(curl -sSfL https://raw.githubusercontent.com/rhysd/actionlint/v1.7.7/scripts/download-actionlint.bash) 1.7.7
+          ./actionlint -color -shellcheck= -verbose
 
   no-pdfs:
     runs-on: ubuntu-latest
