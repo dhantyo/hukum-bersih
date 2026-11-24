@@ -31,7 +31,7 @@ The current route files cover:
 
 | Area | Solid routes in the current tree | Remaining parity work |
 |---|---|---|
-| Laws | `/uu/`, `/uu/tahun/:tahun`, `/uu/:nomor/:tahun`, and a comparison for one amendment step | Verify Asli and Modern controls against Astro. The route selects the latest step or one named step. A two-version comparison using `dari` is currently unavailable. |
+| Laws | `/uu/`, `/uu/tahun/:tahun`, `/uu/:nomor/:tahun` (reading settings, status and relations banners, versions, contents, facts, `?bandingkan=<id>&dari=<id>` comparison) and `/uu/:nomor/:tahun/perubahan` (forwards to the comparison, as in Astro) | Folding of BAB and Pasal, the hide/show and drawer behaviour of the side panel, and the drag-to-swap columns of the comparison are not ported. |
 | Collections | `/koleksi/`, `/koleksi/:slug`, `/koleksi/:slug/:versi`, and `/koleksi/:slug/perubahan.json` | Two-version comparison on the collection pages (`?dari=<id>&bandingkan=<id>`, ui-sdk pickers) is in place. Still open: the contents panel and the comparison inside the text (see `CompareMode.astro`). |
 | Draft bills | `/ruu/`, `/ruu/:slug`, `/ruu/:slug/:doc`, and `/ruu/:slug/beda/:pair` | None known. Comparisons are computed by `web-solid/scripts/export-drafts.ts` and read from the active release. |
 | Search | `/cari/`, law catalog JSON, citation lookup, and Pagefind-backed full-text results | Verify search results open the exact article in the deployed preview. |
