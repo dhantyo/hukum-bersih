@@ -49,6 +49,17 @@ def error_kind(message: str) -> str:
     return msg[:300]
 
 
+# A law whose record has no full date (tanggal_penetapan and version date unknown) keeps the
+# year cobalt puts in the Work's FRBRdate (akn/build.py); the schema wants a full date, but
+# making one up would be fabricating data (CLAUDE.md). Such files are listed, not failed.
+BARE_YEAR = "Element 'FRBRdate', attribute 'date': 'V' is not a valid value of the local union type."
+
+
+def _work_date_is_a_year(tree) -> bool:
+    dates = tree.xpath("//*[local-name()='FRBRWork']/*[local-name()='FRBRdate']/@date")
+    return bool(dates) and all(re.fullmatch(r"\d{4}", d) for d in dates)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("dir", nargs="?", type=Path, default=DEFAULT_DIR)
@@ -64,14 +75,18 @@ def main() -> int:
 
     kinds: Counter[str] = Counter()
     examples: dict[str, list[str]] = defaultdict(list)
-    invalid = 0
+    invalid, undated = 0, []
     for f in files:
         try:
-            ok = schema.validate(etree.parse(str(f)))
+            tree = etree.parse(str(f))
+            ok = schema.validate(tree)
             errors = [error_kind(e.message) for e in schema.error_log]
         except etree.XMLSyntaxError as e:
             ok, errors = False, [f"XML syntax: {error_kind(str(e))}"]
         if ok:
+            continue
+        if set(errors) == {BARE_YEAR} and _work_date_is_a_year(tree):
+            undated.append(str(f))        # no full date known for the law: not made up
             continue
         invalid += 1
         for kind in set(errors):
@@ -79,7 +94,9 @@ def main() -> int:
             if len(examples[kind]) < args.examples:
                 examples[kind].append(str(f))
 
-    print(f"{len(files)} files checked, {invalid} invalid")
+    print(f"{len(files)} files checked, {invalid} invalid, {len(undated)} with no known date")
+    for f in undated:
+        print(f"  no known date (Work FRBRdate is the year only): {f}")
     for kind, n in kinds.most_common():
         print(f"\n{n:6d} files  {kind}")
         for ex in examples[kind]:

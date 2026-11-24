@@ -17,7 +17,10 @@ class LeakedMarkupError(ValueError):
 
 
 def to_akn(text: str, frbr_uri: str, root: str = "act", expression_date: str | None = None,
-           title: str | None = None) -> bytes:
+           title: str | None = None, work_date: str | None = None) -> bytes:
+    """``work_date``: the full date of the Work (a law's tanggal penetapan). cobalt fills the
+    Work's FRBRdate with the URI's bare year ("2009"), which the AKN 3.0 schema rejects
+    (scripts/validate_akn.py); without a full date the year stays."""
     from bluebell.parser import AkomaNtosoParser
     from cobalt import FrbrUri
     from lxml import etree
@@ -29,6 +32,10 @@ def to_akn(text: str, frbr_uri: str, root: str = "act", expression_date: str | N
     parser = AkomaNtosoParser(uri)
     xml = parser.parse_to_xml(text, root)
     _check_no_leaked_markup(xml)
+    if work_date and len(work_date) == 10:
+        for d in xml.iter("{*}FRBRWork"):
+            for el in d.iter("{*}FRBRdate"):
+                el.set("date", work_date)
     if title:
         for alias in xml.iter("{*}FRBRalias"):
             if alias.get("name") == "title":
@@ -68,7 +75,8 @@ def build_ruu(data_dir: Path, out_dir: Path) -> list[Path]:
             date = str(doc["date"])
             full_date = date if len(date) == 10 else None
             xml = to_akn(text, ruu_frbr_uri(slug, date), root="bill",
-                         expression_date=full_date, title=doc.get("ruu_title") or rec["title"])
+                         expression_date=full_date, title=doc.get("ruu_title") or rec["title"],
+                         work_date=full_date)
             target = out_dir / "ruu" / slug / f"{doc['id']}.xml"
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(xml)
@@ -76,14 +84,15 @@ def build_ruu(data_dir: Path, out_dir: Path) -> list[Path]:
     return written
 
 
-def _build_version(args: tuple[str, str, str | None, str, str]) -> str | None:
-    text_path, akn, date, title, target = args
+def _build_version(args: tuple[str, str, str | None, str, str, str | None]) -> str | None:
+    text_path, akn, date, title, target, work_date = args
     target_path = Path(target)
     source = Path(text_path)
     if target_path.exists() and target_path.stat().st_mtime >= source.stat().st_mtime:
         return target                                    # up to date
     try:
-        xml = to_akn(source.read_text(), akn, "act", expression_date=date, title=title)
+        xml = to_akn(source.read_text(), akn, "act", expression_date=date, title=title,
+                     work_date=work_date)
     except Exception as e:  # noqa: BLE001 - one bad text must not stop the site build
         print(f"skip {source.name}: {type(e).__name__}: {str(e)[:120]}")
         return None
@@ -105,8 +114,9 @@ def build_peraturan(data_dir: Path, out_dir: Path) -> list[Path]:
             if not v.get("text"):
                 continue
             date = v.get("date")
-            jobs.append((str(record.parent / v["text"]), rec["akn"],
-                         date if date and len(str(date)) == 10 else None, rec.get("title"),
-                         str(out_dir / "peraturan" / rel / f"{v['id']}.xml")))
+            full = date if date and len(str(date)) == 10 else None
+            jobs.append((str(record.parent / v["text"]), rec["akn"], full, rec.get("title"),
+                         str(out_dir / "peraturan" / rel / f"{v['id']}.xml"),
+                         rec.get("tanggal_penetapan") or full))
     with ProcessPoolExecutor() as pool:
         return [Path(t) for t in pool.map(_build_version, jobs, chunksize=16) if t]
