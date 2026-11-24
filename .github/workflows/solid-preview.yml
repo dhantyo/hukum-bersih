@@ -1,0 +1,89 @@
+name: Deploy Solid preview
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: solid-preview
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web-solid
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - uses: pnpm/action-setup@v4
+        with:
+          package_json_file: web-solid/package.json
+      - name: Build Akoma Ntoso XML
+        working-directory: pipeline
+        run: uv run hukum-bersih build-akn --out ../web/generated/akn
+      - name: Install shared corpus parser dependencies
+        working-directory: web
+        run: npm ci
+      - run: pnpm install --frozen-lockfile
+      - name: Build Solid Worker
+        run: |
+          pnpm exec tsc --noEmit
+          pnpm run test --run
+          pnpm run build
+      - name: Prepare preview corpus
+        run: |
+          stage="$RUNNER_TEMP/solid-corpus"
+          pnpm run export-law uu_11_2008 "$stage/laws/uu/11/2008/index.json"
+          pnpm run export-law uu_11_2020 "$stage/laws/uu/11/2020/index.json"
+          pnpm run export-law uu_9_1960 "$stage/laws/uu/9/1960/index.json"
+          pnpm run index-corpus "$stage"
+      - name: Install rclone
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y rclone
+      - name: Publish laws and search to preview R2
+        id: corpus
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          RCLONE_CONFIG_PREVIEW_TYPE: s3
+          RCLONE_CONFIG_PREVIEW_PROVIDER: Cloudflare
+          RCLONE_CONFIG_PREVIEW_ACCESS_KEY_ID: ${{ secrets.SOLID_PREVIEW_R2_ACCESS_KEY_ID }}
+          RCLONE_CONFIG_PREVIEW_SECRET_ACCESS_KEY: ${{ secrets.SOLID_PREVIEW_R2_SECRET_ACCESS_KEY }}
+          HUKUM_CORPUS_REMOTE: preview:hukum-bersih-solid-preview
+        run: |
+          : "${CLOUDFLARE_ACCOUNT_ID:?Cloudflare account ID is required}"
+          : "${RCLONE_CONFIG_PREVIEW_ACCESS_KEY_ID:?Preview R2 access key is required}"
+          : "${RCLONE_CONFIG_PREVIEW_SECRET_ACCESS_KEY:?Preview R2 secret key is required}"
+          export RCLONE_CONFIG_PREVIEW_ENDPOINT="https://$CLOUDFLARE_ACCOUNT_ID.r2.cloudflarestorage.com"
+          release="$(pnpm --silent run corpus-release publish "$RUNNER_TEMP/solid-corpus")"
+          printf 'release=%s\n' "$release" >> "$GITHUB_OUTPUT"
+      - name: Deploy preview Worker
+        id: worker
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.SOLID_PREVIEW_WORKERS_API_TOKEN }}
+        run: |
+          : "${CLOUDFLARE_API_TOKEN:?Preview Workers API token is required}"
+          export WRANGLER_OUTPUT_FILE_PATH="$RUNNER_TEMP/solid-deploy.jsonl"
+          node ../web/node_modules/wrangler/bin/wrangler.js deploy
+          url="$(jq -ers '[.[] | select(.type == "deploy") | .targets[] | select(test("^https://hukum-bersih-solid-preview\\.[a-z0-9-]+\\.workers\\.dev/?$"))] | last' "$WRANGLER_OUTPUT_FILE_PATH")"
+          printf 'url=%s\n' "${url%/}" >> "$GITHUB_OUTPUT"
+      - name: Smoke test deployed preview
+        env:
+          PREVIEW_URL: ${{ steps.worker.outputs.url }}
+          RELEASE: ${{ steps.corpus.outputs.release }}
+        run: |
+          curl --retry 4 --fail-with-body -sS "$PREVIEW_URL/uu/11/2008/" -o "$RUNNER_TEMP/solid-law.html"
+          grep -Fq 'id="pasal-27"' "$RUNNER_TEMP/solid-law.html"
+          curl --fail-with-body -sS "$PREVIEW_URL/uu/11/2008/perubahan/" -o "$RUNNER_TEMP/solid-comparison.html"
+          grep -Fq 'id="uu_1_2024-pasal-27"' "$RUNNER_TEMP/solid-comparison.html"
+          curl --fail-with-body -sS "$PREVIEW_URL/search-index/$RELEASE/pagefind-entry.json" -o "$RUNNER_TEMP/solid-index.json"
+          jq -e '.languages.id.page_count == 2' "$RUNNER_TEMP/solid-index.json"
+          printf 'Preview: %s\n\nCorpus release: `%s`\n' "$PREVIEW_URL" "$RELEASE" >> "$GITHUB_STEP_SUMMARY"
