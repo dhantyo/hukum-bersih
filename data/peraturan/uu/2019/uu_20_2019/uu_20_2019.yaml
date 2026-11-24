@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2019_2019-10-18.txt
   pasal_count: 48
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: aecb22b85c6735b00eb24574df135a8c10c187e70b9e4550152b8b41117a2b50
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 5
+  ocr_unknown: 35
 pdf_sha256: aa0727380fa3798bd858c623c2bdc8d0d8739f9e449941951a6078591a4b5f7c
 tanggal_pengundangan: '2019-10-18'
 lembaran_negara: 'LN.2019/NO.198, TLN NO.6410, JDIH.SETNEG.GO.ID : 47 HLM.'

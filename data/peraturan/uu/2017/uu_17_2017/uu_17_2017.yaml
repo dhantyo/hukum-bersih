@@ -32,10 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_2017_2017-11-22.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2e7b4688787ec77f5a39fe3024ba1bed5dc9c04f45c1816bbd5c273505b3e958
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 5
 tanggal_pengundangan: '2017-11-22'
 tanggal_berlaku: '2017-11-22'
 lembaran_negara: 'LN.2017/NO.240, TLN NO.6140, LL SETNEG : 4 HLM.'

@@ -49,10 +49,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2019_2019-10-02.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 385b9e71e9c2ae77d7ffc7b03f00967b6030b61b8cf6060e40bd01e0c68a00fd
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 32
 pdf_sha256: 88867eea2eb4f2796dbb1c052191b699e3b3c25d46551e2a1b71dba2de2ebb4d
 tanggal_pengundangan: '2019-10-04'
 tanggal_berlaku: '2019-10-04'

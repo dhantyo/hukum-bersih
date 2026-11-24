@@ -34,10 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2018_2018-05-09.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 31ca688cc0b81d4cb9e658c3e4092b183c63c9b0be180fc5eab5b10afea2a220
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 3
 pdf_sha256: e9515ade583ed1d3fcf63ec5de475e63970f5e466954e432c4398e9118ef46c6
 tanggal_pengundangan: '2018-05-09'
 tanggal_berlaku: '2018-05-09'

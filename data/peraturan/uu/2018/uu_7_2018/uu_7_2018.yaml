@@ -34,10 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2018_2018-08-07.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f53fff60a0a1397d4733a8495e28776abe8b9c19748de8a1dcdcc1f9349dc5c1
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 4
 pdf_sha256: add8c68ffd6c06b4256426bac7cc6a1b93712f1d3dbb87ad302ff923c074afe9
 tanggal_pengundangan: '2018-08-08'
 tanggal_berlaku: '2018-08-08'

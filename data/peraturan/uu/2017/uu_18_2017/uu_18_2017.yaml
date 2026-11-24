@@ -28,10 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2017_2017-11-22.txt
   pasal_count: 91
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7543cd847528e859cce299026dd341a249e9314eeaea8bb3cabaaf77dcf8c1bc
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 1
+  ocr_unknown: 14
 pdf_sha256: 4aa56b8a0a8fe56be6b08e6b3c720aa2e2b9b4fb0958c7b7f65127b5543ddd48
 tanggal_pengundangan: '2017-11-22'
 tanggal_berlaku: '2017-11-22'

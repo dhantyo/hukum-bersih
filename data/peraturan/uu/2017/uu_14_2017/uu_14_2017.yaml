@@ -35,10 +35,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2017_2017-11-10.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: cbbff64a007a472f6da951a526efaa95aaaed43835b50c665f2e961372f44135
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 6
 pdf_sha256: b3f74cc527c66b8f3df74f8b97e434337801b9ef84109d08e4ce24d69ce3854b
 tanggal_pengundangan: '2017-11-13'
 tanggal_berlaku: '2017-11-13'

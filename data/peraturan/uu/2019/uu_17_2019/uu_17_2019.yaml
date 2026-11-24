@@ -28,10 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_2019_2019-10-15.txt
   pasal_count: 79
-  parser_version: 13
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c01f4282e40bfdca649b9407a4f51a64a9b1acaa21836b585d6ade4081c6f3ab
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 12
+  ocr_unknown: 79
 pdf_sha256: 4ec6b4c87bd756a1d0f8c09b91c9b5fc18b42044bf75447d0118b788ea7bea19
 tanggal_pengundangan: '2019-10-16'
 tanggal_berlaku: '2019-10-16'

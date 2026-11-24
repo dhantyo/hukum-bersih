@@ -33,10 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2019_2019-08-01.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c6dd1766ad624fb3c5d21ac05ef4da853deded012e2ddec17aae42aabc977201
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 5
+  ocr_unknown: 14
 pdf_sha256: 84a6feeffae34afb3552362917e62a9e6a88ceff38836c4ae59f92972b815308
 tanggal_pengundangan: '2019-08-01'
 tanggal_berlaku: '2019-08-01'

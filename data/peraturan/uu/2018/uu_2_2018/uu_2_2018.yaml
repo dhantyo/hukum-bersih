@@ -69,10 +69,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2018_2018-03-15.txt
   pasal_count: 2
-  parser_version: 13
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1a88750b3db4ac0763c4a286d1a371c6dc814218d5dfec06ccb46410a1882d35
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 24
 pdf_sha256: 86c1ee6088e1a91216e8cc8709d003de9ebb348a945a03ced459d6c6a4ad5435
 tanggal_pengundangan: '2018-03-15'
 tanggal_berlaku: '2018-03-15'

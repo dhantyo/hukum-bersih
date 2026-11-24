@@ -34,10 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2020_2020-08-05.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1011c344e6f83c7fa3802d0a38828840cb1731e9df54bf05282da02e06f8ded4
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 2
 pdf_sha256: 0a8c89e144480a3f8aeba74af520a82f04d957a4e030805507c76df66d3c8345
 tanggal_pengundangan: '2020-08-06'
 tanggal_berlaku: '2020-08-06'
