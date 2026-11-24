@@ -14,18 +14,18 @@ const contentTypes = new Map([
 const contentTypeOf = (extension: string) =>
   contentTypes.get(extension) ?? "application/octet-stream";
 
-export const searchAssets: StartMiddleware = async (event, next) => {
+export const searchAssets: StartMiddleware = async (event, proceed) => {
   const { pathname } = new URL(event.request.url);
 
   if (!pathname.startsWith("/search-index/")) {
-    return await next();
+    return await proceed();
   }
 
   if (event.request.method !== "GET" && event.request.method !== "HEAD") {
     return new Response(null, { status: 405, headers: { Allow: "GET, HEAD" } });
   }
 
-  const [, , release, ...parts] = pathname.split("/");
+  const [release, ...parts] = pathname.split("/").slice(2);
 
   if (
     !releaseIdPattern.test(release) ||

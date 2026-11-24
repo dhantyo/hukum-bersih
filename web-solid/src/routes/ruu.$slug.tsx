@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/solid-query";
-import { createFileRoute, notFound } from "@tanstack/solid-router";
+import { createFileRoute, getRouteApi, notFound } from "@tanstack/solid-router";
 import { For, Show } from "solid-js";
 
 import { STAGE, tanggal } from "../../../web/src/lib/labels.ts";
@@ -8,27 +8,12 @@ import {
   draftDocumentTitle,
 } from "../components/draft-provenance.tsx";
 import { draftBillQuery } from "../lib/queries";
+import { isPresent } from "../lib/text.ts";
 
-export const Route = createFileRoute("/ruu/$slug")({
-  loader: async ({ context, params }) => {
-    const draft = await context.queryClient.ensureQueryData(
-      draftBillQuery(params.slug)
-    );
+const route = getRouteApi("/ruu/$slug");
 
-    if (!draft) {
-      throw notFound();
-    }
-
-    return { title: draft.name };
-  },
-  head: ({ loaderData }) => ({
-    meta: [{ title: `${loaderData?.title ?? "RUU"} | Hukum Bersih` }],
-  }),
-  component: DraftBill,
-});
-
-function DraftBill() {
-  const params = Route.useParams();
+const DraftBill = () => {
+  const params = route.useParams();
   const query = useQuery(() => draftBillQuery(params().slug));
 
   return (
@@ -39,15 +24,15 @@ function DraftBill() {
           <h1>{draft.name}</h1>
           {draft.title !== draft.name && <p>{draft.title}</p>}
           <p>
-            {draft.enacted_as
+            {isPresent(draft.enacted_as)
               ? `Disahkan sebagai ${draft.enacted_as}`
               : "Belum diundangkan"}
           </p>
-          {draft.initiator && <p>Pengusul: {draft.initiator}</p>}
-          {draft.former_titles?.length ? (
-            <p>Judul sebelumnya: {draft.former_titles.join(", ")}</p>
-          ) : null}
-          {draft.dpr_page && (
+          {isPresent(draft.initiator) && <p>Pengusul: {draft.initiator}</p>}
+          {(draft.former_titles?.length ?? 0) > 0 && (
+            <p>Judul sebelumnya: {draft.former_titles?.join(", ")}</p>
+          )}
+          {isPresent(draft.dpr_page) && (
             <p>
               <a href={draft.dpr_page}>Halaman DPR</a>
             </p>
@@ -58,7 +43,7 @@ function DraftBill() {
               {(stage) => (
                 <li>
                   {STAGE[stage.stage] ?? stage.stage} · {tanggal(stage.date)}
-                  {stage.note ? ` · ${stage.note}` : ""}
+                  {isPresent(stage.note) ? ` · ${stage.note}` : ""}
                 </li>
               )}
             </For>
@@ -88,4 +73,23 @@ function DraftBill() {
       )}
     </Show>
   );
-}
+};
+
+export const Route = createFileRoute("/ruu/$slug")({
+  loader: async ({ context, params }) => {
+    const draft = await context.queryClient.query({
+      ...draftBillQuery(params.slug),
+      staleTime: "static",
+    });
+
+    if (draft === null) {
+      throw notFound();
+    }
+
+    return { title: draft.name };
+  },
+  head: ({ loaderData }) => ({
+    meta: [{ title: `${loaderData?.title ?? "RUU"} | Hukum Bersih` }],
+  }),
+  component: DraftBill,
+});

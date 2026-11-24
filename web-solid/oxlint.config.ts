@@ -19,6 +19,18 @@ export default defineConfig({
   settings: solidV2.settings,
   rules: {
     ...solidV2.rules,
+    "typescript/only-throw-error": [
+      "error",
+      {
+        allow: [
+          {
+            from: "package",
+            package: "@tanstack/router-core",
+            name: "NotFoundError",
+          },
+        ],
+      },
+    ],
     "stylex/enforce-extension": "error",
     "stylex/valid-styles": "error",
     "stylex/valid-shorthands": "error",

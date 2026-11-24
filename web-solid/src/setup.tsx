@@ -5,9 +5,7 @@ import { RouterProvider, createMemoryHistory } from "@tanstack/solid-router";
 import { createQueryClient } from "./lib/queries";
 import { createAppRouter } from "./router";
 
-export default async function setup(
-  event: RequestEvent & { response: ResponseStub }
-) {
+const setup = async (event: RequestEvent & { response: ResponseStub }) => {
   const url = new URL(event.request.url);
   const queryClient = createQueryClient();
 
@@ -18,13 +16,13 @@ export default async function setup(
 
   await router.load();
 
-  // Transfer router status and redirects before Solid sends the response head.
   const result = router._serverResult;
 
   if (result?.type === "redirect") {
-    result.redirect.headers.forEach((value, key) => {
+    for (const [key, value] of result.redirect.headers) {
       event.response.headers.set(key, value);
-    });
+    }
+
     event.response.status = result.redirect.status;
 
     return () => null;
@@ -39,4 +37,6 @@ export default async function setup(
       <RouterProvider router={router} />
     </QueryClientProvider>
   );
-}
+};
+
+export default setup;

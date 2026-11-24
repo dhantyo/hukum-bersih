@@ -1,4 +1,4 @@
-import { expect, test } from "vitest";
+import { describe, expect, it } from "vitest";
 
 import { parseLawRecord } from "./law.ts";
 
@@ -14,16 +14,18 @@ const law = {
   amendments: [],
 };
 
-test("a known law can be published before its text is available", () => {
-  expect(parseLawRecord(JSON.stringify(law), path).text).toBeNull();
-});
+describe(parseLawRecord, () => {
+  it("a known law can be published before its text is available", () => {
+    expect(parseLawRecord(JSON.stringify(law), path).text).toBeNull();
+  });
 
-test.each([
-  { path: "/uu/10/1960/" },
-  { source: "javascript:alert(1)" },
-  { text: { preface: [{ tag: "p", children: "x" }] } },
-])("rejects an invalid published record: %j", (invalid) => {
-  expect(() =>
-    parseLawRecord(JSON.stringify({ ...law, ...invalid }), path)
-  ).toThrow("Invalid published law");
+  it.each([
+    { path: "/uu/10/1960/" },
+    { source: "file:///etc/passwd" },
+    { text: { preface: [{ tag: "p", children: "x" }] } },
+  ])("rejects an invalid published record: %j", (invalid) => {
+    expect(() =>
+      parseLawRecord(JSON.stringify({ ...law, ...invalid }), path)
+    ).toThrow("Invalid published law");
+  });
 });

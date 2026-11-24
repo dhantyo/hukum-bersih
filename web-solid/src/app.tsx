@@ -9,10 +9,10 @@ import "./App.css";
 const queryClient = createQueryClient();
 const router = createAppRouter(queryClient);
 
-export default function App() {
-  return (
-    <QueryClientProvider client={queryClient}>
-      <RouterProvider router={router} />
-    </QueryClientProvider>
-  );
-}
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <RouterProvider router={router} />
+  </QueryClientProvider>
+);
+
+export default App;

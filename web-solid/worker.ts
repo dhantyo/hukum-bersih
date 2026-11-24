@@ -1,4 +1,5 @@
 import { handleRequest } from "./dist/server/server.js";
+import { isPresent } from "./src/lib/text.ts";
 import type { CorpusBucket } from "./src/server/corpus.ts";
 
 interface Env {
@@ -7,18 +8,18 @@ interface Env {
 }
 
 interface WorkerContext {
-  waitUntil(task: Promise<unknown>): void;
+  waitUntil: (task: Promise<unknown>) => void;
 }
 
 export default {
   async fetch(request: Request, env: Env, context?: WorkerContext) {
     const version = env.CF_VERSION_METADATA?.id;
 
-    const cache = (globalThis.caches as { default?: Cache } | undefined)
-      ?.default;
+    const cache =
+      "caches" in globalThis ? globalThis.caches.default : undefined;
 
     const publicPages =
-      version && cache && context
+      isPresent(version) && cache !== undefined && context !== undefined
         ? {
             version,
             cache,

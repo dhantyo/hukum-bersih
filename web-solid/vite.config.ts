@@ -1,11 +1,14 @@
 import solid from "@solidjs/vite-plugin";
-import stylex from "@stylexjs/unplugin";
+import stylexPlugin from "@stylexjs/unplugin";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import { defineConfig } from "vitest/config";
 
+// oxlint-disable-next-line import/no-named-as-default-member -- the package types declare only the default export
+const { vite: stylexVite } = stylexPlugin;
+
 export default defineConfig({
   plugins: [
-    stylex.vite({ useCSSLayers: true, runtimeInjection: false }),
+    stylexVite({ useCSSLayers: true, runtimeInjection: false }),
     tanstackRouter({ target: "solid", autoCodeSplitting: true }),
     solid({
       start: {

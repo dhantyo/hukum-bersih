@@ -135,11 +135,9 @@ const DocumentSection = (props: {
 };
 
 const elementId = (node: AknNode, explanation: boolean) => {
-  if (!isPresent(node.eId)) {
-    return;
-  }
+  const prefix = explanation ? "penjelasan-" : "";
 
-  return explanation ? `penjelasan-${node.eId}` : node.eId;
+  return isPresent(node.eId) ? `${prefix}${node.eId}` : undefined;
 };
 
 interface DocumentNodesProps {

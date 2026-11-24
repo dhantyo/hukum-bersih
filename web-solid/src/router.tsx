@@ -8,11 +8,11 @@ export interface RouterContext {
   queryClient: QueryClient;
 }
 
-export function createAppRouter(
+export const createAppRouter = (
   queryClient: QueryClient,
   history?: RouterHistory
-) {
-  return createRouter({
+) =>
+  createRouter({
     routeTree,
     trailingSlash: "always",
     history,
@@ -21,7 +21,6 @@ export function createAppRouter(
     defaultPendingComponent: () => <main>Memuat…</main>,
     disableGlobalCatchBoundary: true,
   });
-}
 
 declare module "@tanstack/solid-router" {
   interface Register {

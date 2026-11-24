@@ -4,18 +4,18 @@ import * as v from "valibot";
 import { collectionComparisonPath } from "../../lib/schemas.ts";
 import { readCollectionComparisonJson } from "../records/collection-comparison.ts";
 
-export const collectionComparison: StartMiddleware = async (event, next) => {
+export const collectionComparison: StartMiddleware = async (event, proceed) => {
   const { pathname } = new URL(event.request.url);
 
   if (
     event.request.method !== "GET" ||
     !v.is(collectionComparisonPath, pathname)
   ) {
-    return await next();
+    return await proceed();
   }
 
-  const [, , slug] = pathname.split("/");
-  const body = await readCollectionComparisonJson(slug);
+  const segments = pathname.split("/");
+  const body = await readCollectionComparisonJson(segments[2]);
 
   if (body === null) {
     return new Response(null, { status: 404 });

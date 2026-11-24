@@ -5,22 +5,20 @@ import { getDraftBill, getDraftText, listDraftBills } from "./drafts";
 import { getLaw, getLawComparison, getLawOverview, getLawYear } from "./laws";
 import { getSearchResults } from "./search";
 
-export function createQueryClient() {
-  return new QueryClient({
+export const createQueryClient = () =>
+  new QueryClient({
     defaultOptions: { queries: { staleTime: 30_000 } },
   });
-}
 
-export function readerQuery(
+export const readerQuery = (
   path: string,
   compareTo?: string,
   compareFrom?: string
-) {
-  return queryOptions({
+) =>
+  queryOptions({
     queryKey: ["laws", "reader", path, compareTo, compareFrom],
     queryFn: async () => await getLaw(path, compareTo, compareFrom),
   });
-}
 
 export const comparisonQuery = (path: string) =>
   queryOptions({

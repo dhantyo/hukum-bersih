@@ -8,7 +8,9 @@ import { collectionVersion, slug } from "./schemas.ts";
 export const getCollections = GET(async () => {
   "use server";
 
-  return (await readCatalog()).koleksi;
+  const catalog = await readCatalog();
+
+  return catalog.koleksi;
 });
 
 export const getCollection = GET(

@@ -4,20 +4,7 @@ import { For } from "solid-js";
 
 import { collectionsQuery } from "../lib/queries";
 
-export const Route = createFileRoute("/koleksi/")({
-  loader: async ({ context }) => {
-    await context.queryClient.ensureQueryData(collectionsQuery());
-  },
-  head: () => ({
-    meta: [
-      { title: "Koleksi | Hukum Bersih" },
-      { name: "robots", content: "noindex" },
-    ],
-  }),
-  component: CollectionIndex,
-});
-
-function CollectionIndex() {
+const CollectionIndex = () => {
   const collections = useQuery(() => collectionsQuery());
 
   return (
@@ -37,4 +24,20 @@ function CollectionIndex() {
       </ul>
     </main>
   );
-}
+};
+
+export const Route = createFileRoute("/koleksi/")({
+  loader: async ({ context }) => {
+    await context.queryClient.query({
+      ...collectionsQuery(),
+      staleTime: "static",
+    });
+  },
+  head: () => ({
+    meta: [
+      { title: "Koleksi | Hukum Bersih" },
+      { name: "robots", content: "noindex" },
+    ],
+  }),
+  component: CollectionIndex,
+});

@@ -33,7 +33,9 @@ export const getLawYear = GET(async (lawYear: string) => {
     return [];
   }
 
-  return (await readLawCatalog()).filter((law) => law.y === Number(lawYear));
+  const laws = await readLawCatalog();
+
+  return laws.filter((law) => law.y === Number(lawYear));
 });
 
 export const getLaw = GET(

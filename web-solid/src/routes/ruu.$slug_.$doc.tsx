@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/solid-query";
-import { createFileRoute, notFound } from "@tanstack/solid-router";
+import { createFileRoute, getRouteApi, notFound } from "@tanstack/solid-router";
 import { Show } from "solid-js";
 
 import {
@@ -11,26 +11,10 @@ import { draftTextQuery } from "../lib/queries";
 
 import "../reader.css";
 
-export const Route = createFileRoute("/ruu/$slug_/$doc")({
-  loader: async ({ context, params }) => {
-    const draft = await context.queryClient.ensureQueryData(
-      draftTextQuery(params.slug, params.doc)
-    );
+const route = getRouteApi("/ruu/$slug_/$doc");
 
-    if (!draft) {
-      throw notFound();
-    }
-
-    return { title: `${draft.name}: ${draftDocumentTitle(draft.document)}` };
-  },
-  head: ({ loaderData }) => ({
-    meta: [{ title: `${loaderData?.title ?? "RUU"} | Hukum Bersih` }],
-  }),
-  component: DraftText,
-});
-
-function DraftText() {
-  const params = Route.useParams();
+const DraftText = () => {
+  const params = route.useParams();
   const draft = useQuery(() => draftTextQuery(params().slug, params().doc));
 
   return (
@@ -47,4 +31,23 @@ function DraftText() {
       )}
     </Show>
   );
-}
+};
+
+export const Route = createFileRoute("/ruu/$slug_/$doc")({
+  loader: async ({ context, params }) => {
+    const draft = await context.queryClient.query({
+      ...draftTextQuery(params.slug, params.doc),
+      staleTime: "static",
+    });
+
+    if (draft === null) {
+      throw notFound();
+    }
+
+    return { title: `${draft.name}: ${draftDocumentTitle(draft.document)}` };
+  },
+  head: ({ loaderData }) => ({
+    meta: [{ title: `${loaderData?.title ?? "RUU"} | Hukum Bersih` }],
+  }),
+  component: DraftText,
+});

@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/solid-query";
-import { createFileRoute, notFound } from "@tanstack/solid-router";
+import { createFileRoute, getRouteApi, notFound } from "@tanstack/solid-router";
 import { Show } from "solid-js";
 
 import { AmendmentComparison } from "../components/amendment-comparison.tsx";
@@ -7,13 +7,30 @@ import { comparisonQuery } from "../lib/queries";
 
 import "../reader.css";
 
+const route = getRouteApi("/uu/$nomor/$tahun_/perubahan");
+
+const ComparisonPage = () => {
+  const params = route.useParams();
+
+  const comparison = useQuery(() =>
+    comparisonQuery(`/uu/${params().nomor}/${params().tahun}/`)
+  );
+
+  return (
+    <Show when={comparison.data} keyed>
+      {(record) => <AmendmentComparison comparison={record} />}
+    </Show>
+  );
+};
+
 export const Route = createFileRoute("/uu/$nomor/$tahun_/perubahan")({
   loader: async ({ context, params }) => {
-    const comparison = await context.queryClient.ensureQueryData(
-      comparisonQuery(`/uu/${params.nomor}/${params.tahun}/`)
-    );
+    const comparison = await context.queryClient.query({
+      ...comparisonQuery(`/uu/${params.nomor}/${params.tahun}/`),
+      staleTime: "static",
+    });
 
-    if (!comparison) {
+    if (comparison === null) {
       throw notFound();
     }
   },
@@ -25,17 +42,3 @@ export const Route = createFileRoute("/uu/$nomor/$tahun_/perubahan")({
   }),
   component: ComparisonPage,
 });
-
-function ComparisonPage() {
-  const params = Route.useParams();
-
-  const comparison = useQuery(() =>
-    comparisonQuery(`/uu/${params().nomor}/${params().tahun}/`)
-  );
-
-  return (
-    <Show when={comparison.data} keyed>
-      {(record) => <AmendmentComparison comparison={record} />}
-    </Show>
-  );
-}

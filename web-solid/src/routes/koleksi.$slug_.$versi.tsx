@@ -1,21 +1,40 @@
 import { useQuery } from "@tanstack/solid-query";
-import { createFileRoute, notFound } from "@tanstack/solid-router";
+import { createFileRoute, getRouteApi, notFound } from "@tanstack/solid-router";
 import { Show } from "solid-js";
+import * as v from "valibot";
 
 import { CollectionReader } from "../components/collection-reader.tsx";
 import { collectionQuery } from "../lib/queries";
+import { versionDate } from "../lib/schemas.ts";
+
+const route = getRouteApi("/koleksi/$slug_/$versi");
+
+const DatedCollectionPage = () => {
+  const params = route.useParams();
+
+  const collection = useQuery(() =>
+    collectionQuery(params().slug, params().versi)
+  );
+
+  return (
+    <Show when={collection.data} keyed>
+      {(record) => <CollectionReader collection={record} />}
+    </Show>
+  );
+};
 
 export const Route = createFileRoute("/koleksi/$slug_/$versi")({
   loader: async ({ context, params }) => {
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(params.versi)) {
+    if (!v.is(versionDate, params.versi)) {
       throw notFound();
     }
 
-    const collection = await context.queryClient.ensureQueryData(
-      collectionQuery(params.slug, params.versi)
-    );
+    const collection = await context.queryClient.query({
+      ...collectionQuery(params.slug, params.versi),
+      staleTime: "static",
+    });
 
-    if (!collection) {
+    if (collection === null) {
       throw notFound();
     }
 
@@ -31,17 +50,3 @@ export const Route = createFileRoute("/koleksi/$slug_/$versi")({
   }),
   component: DatedCollectionPage,
 });
-
-function DatedCollectionPage() {
-  const params = Route.useParams();
-
-  const collection = useQuery(() =>
-    collectionQuery(params().slug, params().versi)
-  );
-
-  return (
-    <Show when={collection.data} keyed>
-      {(record) => <CollectionReader collection={record} />}
-    </Show>
-  );
-}

@@ -5,20 +5,7 @@ import { For } from "solid-js";
 import { LawCatalog } from "../components/law-catalog.tsx";
 import { overviewQuery } from "../lib/queries";
 
-export const Route = createFileRoute("/uu/")({
-  loader: async ({ context }) => {
-    await context.queryClient.ensureQueryData(overviewQuery());
-  },
-  head: () => ({
-    meta: [
-      { title: "Undang-Undang | Hukum Bersih" },
-      { name: "robots", content: "noindex" },
-    ],
-  }),
-  component: LawOverview,
-});
-
-function LawOverview() {
+const LawOverview = () => {
   const overview = useQuery(() => overviewQuery());
 
   return (
@@ -39,4 +26,20 @@ function LawOverview() {
       <LawCatalog laws={overview.data.recent} />
     </main>
   );
-}
+};
+
+export const Route = createFileRoute("/uu/")({
+  loader: async ({ context }) => {
+    await context.queryClient.query({
+      ...overviewQuery(),
+      staleTime: "static",
+    });
+  },
+  head: () => ({
+    meta: [
+      { title: "Undang-Undang | Hukum Bersih" },
+      { name: "robots", content: "noindex" },
+    ],
+  }),
+  component: LawOverview,
+});

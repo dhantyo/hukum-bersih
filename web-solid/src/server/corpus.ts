@@ -1,7 +1,9 @@
 import { readFile } from "node:fs/promises";
-import { join } from "node:path";
+import path from "node:path";
 
 import { getRequestEvent } from "@solidjs/web";
+
+import { isPresent } from "../lib/text.ts";
 
 interface CorpusObject {
   text: () => Promise<string>;
@@ -28,12 +30,12 @@ const readCorpusObject = async (key: string) => {
 
   const directory = process.env.HUKUM_CORPUS_DIR;
 
-  if (!directory) {
+  if (!isPresent(directory)) {
     throw new Error("The published corpus is unavailable");
   }
 
   try {
-    return new Response(await readFile(join(directory, key)));
+    return new Response(await readFile(path.join(directory, key)));
   } catch (error) {
     if (error instanceof Error && "code" in error && error.code === "ENOENT") {
       return null;
@@ -47,9 +49,10 @@ export const releaseIdPattern = /^[a-z0-9][a-z0-9-]{0,63}$/u;
 
 const loadActiveRelease = async () => {
   const pointer = await readCorpusObject("active-release");
-  const release = (await pointer?.text())?.trim();
+  const pointerText = await pointer?.text();
+  const release = pointerText?.trim();
 
-  if (!release || !releaseIdPattern.test(release)) {
+  if (!isPresent(release) || !releaseIdPattern.test(release)) {
     throw new Error("The corpus has no valid active release");
   }
 

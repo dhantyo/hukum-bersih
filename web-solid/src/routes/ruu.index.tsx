@@ -4,16 +4,8 @@ import { createFileRoute } from "@tanstack/solid-router";
 import { LawCatalog } from "../components/law-catalog.tsx";
 import { draftBillsQuery } from "../lib/queries";
 
-export const Route = createFileRoute("/ruu/")({
-  loader: async ({ context }) => {
-    await context.queryClient.ensureQueryData(draftBillsQuery());
-  },
-  head: () => ({ meta: [{ title: "Rancangan Undang-Undang | Hukum Bersih" }] }),
-  component: DraftIndex,
-});
-
-function DraftIndex() {
-  const bills = useQuery(draftBillsQuery);
+const DraftIndex = () => {
+  const bills = useQuery(() => draftBillsQuery());
 
   return (
     <main>
@@ -21,4 +13,15 @@ function DraftIndex() {
       <LawCatalog laws={bills.data} />
     </main>
   );
-}
+};
+
+export const Route = createFileRoute("/ruu/")({
+  loader: async ({ context }) => {
+    await context.queryClient.query({
+      ...draftBillsQuery(),
+      staleTime: "static",
+    });
+  },
+  head: () => ({ meta: [{ title: "Rancangan Undang-Undang | Hukum Bersih" }] }),
+  component: DraftIndex,
+});

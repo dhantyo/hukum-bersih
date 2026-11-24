@@ -41,12 +41,24 @@ const cacheable = (response: Response) => {
   );
 };
 
-export const publicLawCache: StartMiddleware = async (event, next) => {
+const storePage = async (
+  cache: Pick<Cache, "put">,
+  key: Request,
+  page: Response
+) => {
+  try {
+    await cache.put(key, page);
+  } catch (error) {
+    console.error("Public law cache write failed", error);
+  }
+};
+
+export const publicLawCache: StartMiddleware = async (event, proceed) => {
   const options = event.locals.publicPages;
   const url = new URL(event.request.url);
 
   if (!options || !isPublicLawRequest(event.request, url)) {
-    return await next();
+    return await proceed();
   }
 
   const release = await readActiveRelease();
@@ -62,16 +74,12 @@ export const publicLawCache: StartMiddleware = async (event, next) => {
     return response;
   }
 
-  const response = await next();
+  const response = await proceed();
 
   if (cacheable(response)) {
     const copy = response.clone();
     copy.headers.set("Cache-Control", "public, max-age=86400");
-    options.defer(
-      options.cache.put(key, copy).catch((error: unknown) => {
-        console.error("Public law cache write failed", error);
-      })
-    );
+    options.defer(storePage(options.cache, key, copy));
     response.headers.set("Cache-Control", "no-store");
   }
 

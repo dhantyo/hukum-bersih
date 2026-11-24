@@ -8,7 +8,9 @@ import { draftDocumentId, slug } from "./schemas.ts";
 export const listDraftBills = GET(async () => {
   "use server";
 
-  return (await readCatalog()).laws.filter((law) => law.c === "RUU");
+  const catalog = await readCatalog();
+
+  return catalog.laws.filter((law) => law.c === "RUU");
 });
 
 export const getDraftBill = GET(async (billSlug: string) => {
