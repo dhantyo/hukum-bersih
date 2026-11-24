@@ -107,8 +107,8 @@ swallow it (UU 2/2025: 1,540 -> 10 words, same pasal count), and the importer th
 stored text with the poorer one. The skip now ends at a Penjelasan or Lampiran heading and
 after 15 lines at most. The importer keeps a stored text when a new parse has fewer pasal or
 under 85% of its words, overall or in the Penjelasan (`reparse_error` says which). Also:
-Penjelasan of amending laws (Pasal I / Angka n / Pasal II), OCR's '1. UMUM'. Two random surveys
-of the mirror (150 UU each, seeds 20261121 and 7) found no further parser errors after the
+Penjelasan of amending laws (Pasal I / Angka n / Pasal II), OCR's '1. UMUM'. Two checks of 150
+random UU each from the mirror found no further parser errors after the
 fixes; UU 10/2006 has no President's signature in BPK's copy and is left as printed.
 
 v9-v11 (2026-11-22, from the first batches of the full import): a Penjelasan published as a
