@@ -31,7 +31,7 @@ main.wrap > .breadcrumbs:first-child { margin-top: 0; }
 .small { font-size: var(--fs-sm); }
 .eyebrow { font-size: var(--fs-sm); color: var(--text-muted); margin: 0; font-weight: 500; }
 /* Reader view of law texts: the same heading as printed (.f-asli) or in normal capitals
-   (.f-modern); Modern is the default (components/LawText.astro, ViewSettings.astro). */
+   (.f-modern); Modern is the default (components/LawText.astro, ReadingSettings.astro). */
 :root:not([data-format="asli"]) .f-asli, :root[data-format="asli"] .f-modern { display: none; }
 
 .visually-hidden {

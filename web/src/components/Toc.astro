@@ -15,7 +15,13 @@ const range = (arts: AknNode[]) =>
   arts.length === 0 ? "" : arts.length === 1 ? `Pasal ${arts[0].num}` : `Pasal ${arts[0].num}–${arts.at(-1)!.num}`;
 ---
 <nav class="toc" id="daftar-isi" aria-label="Daftar isi">
-  <h2 class="panel-title">Daftar isi</h2>
+  <div class="toc-head">
+    <h2 class="panel-title">Daftar isi</h2>
+    <span class="toc-folds">
+      <button type="button" data-fold="false">Tutup semua</button>
+      <button type="button" data-fold="true">Buka semua</button>
+    </span>
+  </div>
   <ol>
     {chapters.map((c) => {
       const arts = articles(c);
@@ -35,6 +41,10 @@ const range = (arts: AknNode[]) =>
 </nav>
 
 <script>
+  // fold or unfold every BAB and Pasal (handled in LawText.astro)
+  document.querySelectorAll<HTMLButtonElement>(".toc [data-fold]").forEach((b) => b.addEventListener("click", () => {
+    document.dispatchEvent(new CustomEvent("hb:fold", { detail: b.dataset.fold === "true" }));
+  }));
   // highlight the section in view
   const links = new Map<string, HTMLAnchorElement>();
   document.querySelectorAll<HTMLAnchorElement>(".toc a").forEach((a) => links.set(a.hash.slice(1), a));
@@ -67,6 +77,15 @@ const range = (arts: AknNode[]) =>
   .toc-title { display: block; }
   .toc-range { display: block; font-size: var(--fs-xs); color: var(--text-muted); }
   .toc ol { columns: 1; }
+  .toc-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s-2); margin-bottom: var(--s-2); }
+  .toc-head .panel-title { margin: 0; }
+  .toc-folds { display: flex; gap: var(--s-3); }
+  .toc-folds button {
+    font: inherit; font-size: var(--fs-xs); color: var(--primary); background: none; border: 0; padding: 0;
+    cursor: pointer; text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 1px;
+  }
+  .toc-folds button:hover { text-decoration-thickness: 2px; }
+  @media (pointer: coarse) { .toc-folds button { min-height: var(--tap); } }
   :global(:root[data-penjelasan="sembunyi"]) .toc-pj { display: none; }
   @media (max-width: 960px) {
     .toc ol { max-height: 20rem; overflow-y: auto; }

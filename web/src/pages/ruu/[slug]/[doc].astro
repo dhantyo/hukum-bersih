@@ -4,7 +4,6 @@ import DocLayout from "../../../components/DocLayout.astro";
 import Facts from "../../../components/Facts.astro";
 import LawText from "../../../components/LawText.astro";
 import Toc from "../../../components/Toc.astro";
-import ViewSettings from "../../../components/ViewSettings.astro";
 import { loadRuus, loadText, versions, type Ruu, type RuuDocument } from "../../../lib/data.ts";
 import { DOC_TYPE, PROVENANCE, provenanceKey, tanggal } from "../../../lib/labels.ts";
 
@@ -19,7 +18,8 @@ const p = PROVENANCE[provenanceKey(doc.provenance)];
 const type = DOC_TYPE[doc.type] ?? doc.type;
 const others = versions(ruu).filter((v) => v.id !== doc.id);
 ---
-<Base title={`${ruu.short_name ?? ruu.title}: ${type} (${tanggal(doc.date)})`} description={doc.label ?? ruu.title} section="ruu">
+<Base title={`${ruu.short_name ?? ruu.title}: ${type} (${tanggal(doc.date)})`} description={doc.label ?? ruu.title} section="ruu"
+  view={{ penjelasan: text.penjelasan.length > 0, pembukaan: text.preface.length + text.preamble.length > 0, penutup: text.conclusions.length > 0 }}>
   <DocLayout
     crumbs={[{ href: `${base}ruu/`, label: "RUU" }, { href: `${base}ruu/${ruu.slug}/`, label: ruu.short_name ?? ruu.title }, { label: `${type} (${tanggal(doc.date)})` }]}
     eyebrow={ruu.short_name ?? ruu.title}
@@ -41,7 +41,6 @@ const others = versions(ruu).filter((v) => v.id !== doc.id);
           <p class="small"><a href={`${base}ruu/${ruu.slug}/beda/${o.date < doc.date ? `${o.id}...${doc.id}` : `${doc.id}...${o.id}`}/`}>Bandingkan dengan {DOC_TYPE[o.type] ?? o.type} ({tanggal(o.date)})</a></p>
         ))}
       </Facts>
-      <ViewSettings penjelasan={text.penjelasan.length > 0} pembukaan={text.preface.length + text.preamble.length > 0} penutup={text.conclusions.length > 0} />
       <Toc doc={text} />
     </Fragment>
     <p class="notice small">Teks diambil otomatis dari PDF dan bisa memuat kesalahan baca; PDF-nya yang berlaku.</p>

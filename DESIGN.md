@@ -101,11 +101,14 @@ Radius `--r-sm` 4px (badges, inputs, buttons), `--r-md` 8px (cards, panels). No 
     Ntoso eId; "#" after the heading links to it (on hover; always on touch screens).
   - Long laws use `content-visibility: auto` per chapter. Print: text, title and status banner
     only, always light, everything unfolded.
-- **Tampilan** (side panel of law and draft pages, folded to one line "Tampilan · Modern"):
-  Format (Modern/Asli), Penjelasan (Di akhir/Per pasal/Sembunyi) with "Cukup jelas", Bagian
-  (Pembukaan, Batang tubuh, Penutup), Buka semua / Tutup semua. Native radios and checkboxes;
-  segmented control = radios in a bordered row, checked one filled `--primary`. Remembered in
-  the browser (`hb-view`), applied before first paint. Font and size stay under "Aa".
+- **Reading settings ("Aa" in the header)**: one popover for how text is shown. Every page:
+  font and size. Pages with a law or draft text add, first: Format (Modern/Asli, option rows
+  like the fonts), Penjelasan (chips: Di akhir / Per pasal / Sembunyi, and "Tampilkan Cukup
+  jelas"), Bagian yang ditampilkan (chips: Pembukaan, Batang tubuh, Penutup). Option rows and
+  chips are native radios/checkboxes; the checked one gets `--primary-bg`. Remembered in the
+  browser (`hb-font`, `hb-size`, `hb-view`), applied before first paint.
+- **Table of contents**: "Tutup semua · Buka semua" as quiet links beside its title; closing
+  everything turns the text into an outline of BAB and Pasal.
 - **Synopsis (comparison)**: two columns, old left, new right, one row per pasal pair;
   deletions `--del-*`, insertions `--ins-*`; one inline column on phones.
 - **Buttons**: primary (filled `--primary`), secondary (outline), quiet (text). Focus: 3px

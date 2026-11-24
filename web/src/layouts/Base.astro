@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import ReadingSettings from "../components/ReadingSettings.astro";
+import ReadingSettings, { type LawView } from "../components/ReadingSettings.astro";
 
 interface Props {
   title: string;
@@ -11,8 +11,10 @@ interface Props {
   section?: string;
   /** Show the search field in the header (off on the home page, which has its own). */
   search?: boolean;
+  /** A page with a law text: the "Aa" settings also offer its view (decision 0009). */
+  view?: LawView;
 }
-const { title, description, noindex = false, section, search = true } = Astro.props;
+const { title, description, noindex = false, section, search = true, view } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const nav = [
   { key: "peraturan", href: `${base}uu/`, label: "Peraturan" },
@@ -36,7 +38,7 @@ const nav = [
         if (f && f !== "serif") document.documentElement.dataset.font = f;
         if (z && z !== "normal") document.documentElement.dataset.size = z;
       } catch (e) {}
-      // reader's view of law texts (components/ViewSettings.astro): format, Penjelasan, parts
+      // reader's view of law texts (components/ReadingSettings.astro): format, Penjelasan, parts
       try {
         var v = JSON.parse(localStorage.getItem("hb-view") || "{}"), d = document.documentElement.dataset;
         d.format = v.format === "asli" ? "asli" : "modern";
@@ -62,7 +64,7 @@ const nav = [
             <input id="q" name="q" type="search" placeholder="Cari undang-undang, pasal, kata…" autocomplete="off" />
           </form>
         )}
-        <ReadingSettings />
+        <ReadingSettings view={view} />
       </div>
     </header>
     <main id="main" class="wrap" data-pagefind-body={noindex ? undefined : true}>

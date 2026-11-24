@@ -15,6 +15,11 @@ official layout one click away. Pattern from legislation.gov.uk ("Original (As e
 Fedlex (expand/collapse, notes under articles), e-Gov (show/hide parts)
 (docs/research-law-display-2026-11.md).
 
+Where: in the existing "Aa" reading settings (one place for how text is shown, same option
+rows and chips as font and size); "Tutup semua / Buka semua" beside the table of contents.
+A first version put the settings in their own panel with switches and filled segmented
+buttons, as in the mockup; it did not match the rest of the site and was replaced the same day.
+
 How: the page is rendered once; the choices are attributes on `<html>` set before first paint
 (like the "Aa" font setting), and CSS switches. Modern headings are generated at build time
 next to the printed ones (only one is shown; search indexes the printed one). Penjelasan entries

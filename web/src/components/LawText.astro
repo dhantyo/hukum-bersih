@@ -2,7 +2,7 @@
 // A law or draft rendered from Akoma Ntoso (lib/lawdoc.ts), in the reader's view (DESIGN.md
 // "Law text"): Format Asli (as printed) or Modern (screen layout), Penjelasan at the end, under
 // each pasal or hidden, "Cukup jelas" shown or hidden, parts shown or hidden. The choices are
-// attributes on <html> (components/ViewSettings.astro), applied before first paint, so the page
+// attributes on <html> (set in the "Aa" settings, components/ReadingSettings.astro), applied before first paint, so the page
 // is rendered once and CSS does the switching.
 import AknNode, { type PasalNote } from "./AknNode.astro";
 import type { AknNode as Node, LawDoc } from "../lib/lawdoc.ts";
@@ -113,7 +113,7 @@ doc.preamble.forEach((n, i) => {
     const btn = document.querySelector<HTMLButtonElement>(`[aria-controls="${c.id}"]`);
     if (btn) btn.setAttribute("aria-expanded", "true");
   }, true);
-  // "Buka semua / Tutup semua" (ViewSettings): chapters and pasal
+  // "Buka semua / Tutup semua" (in the table of contents, Toc.astro): chapters and pasal
   document.addEventListener("hb:fold", (e) => {
     const open = (e as CustomEvent<boolean>).detail;
     document.querySelectorAll<HTMLButtonElement>(".law .fold-btn").forEach((b) => setOpen(b, open));
