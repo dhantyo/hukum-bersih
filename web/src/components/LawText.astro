@@ -5,23 +5,14 @@
 // attributes on <html> (set in the "Aa" settings, components/ReadingSettings.astro), applied before first paint, so the page
 // is rendered once and CSS does the switching.
 import AknNode, { type PasalNote } from "./AknNode.astro";
-import type { AknNode as Node, LawDoc } from "../lib/lawdoc.ts";
-import { pasalKey } from "../lib/display.ts";
+import type { LawDoc } from "../lib/lawdoc.ts";
+import { articleAliases } from "../lib/article-anchors.ts";
 
 interface Props { doc: LawDoc; notes?: Map<string, PasalNote[]> }
 const { doc, notes } = Astro.props;
 // Short, guessable anchors for sharing a pasal ("#pasal-27"), next to the Akoma Ntoso eIds.
 // Only the first pasal with a number gets one (amending laws quote pasal of other laws).
-const aliases = new Map<string, string>();
-const taken = new Set<string>();
-const walk = (n: Node) => {
-  if (n.tag === "article" && n.num && n.eId) {
-    const a = `pasal-${pasalKey(n.num)}`;
-    if (!taken.has(a)) { taken.add(a); aliases.set(n.eId, a); }
-  }
-  n.children.forEach(walk);
-};
-doc.body.forEach(walk);
+const aliases = articleAliases(doc.body);
 
 const Chevron = `<svg class="chev" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
