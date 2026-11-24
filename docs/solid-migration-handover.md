@@ -25,15 +25,15 @@ The shared checkout has unrelated, uncommitted agent-file changes and a local `.
 
 ## Current implementation
 
-`web-solid/` uses Solid 2 through `@solidjs/vite-plugin`, TanStack Router, TanStack Query, StyleX, and Oxlint. Route loaders use query options and a request-scoped query client. The runtime reads JSON from an active immutable corpus release in R2, renders document routes on demand, and caches public HTML. The release also carries Pagefind assets. `web-solid/scripts/corpus-release.ts` publishes a release, writes its ready marker, then switches `active-release`.
+`web-solid/` uses Solid 2 through `@solidjs/vite-plugin`, `@solidjs/router` with its `query` ([decision 0015](decisions/0015-solid-router.md)), StyleX, and Oxlint. Route `preload` functions and pages share one `query` per server function. The runtime reads JSON from an active immutable corpus release in R2, renders document routes on demand, and caches public HTML. The release also carries Pagefind assets. `web-solid/scripts/corpus-release.ts` publishes a release, writes its ready marker, then switches `active-release`.
 
 The current route files cover:
 
 | Area | Solid routes in the current tree | Remaining parity work |
 |---|---|---|
-| Laws | `/uu/`, `/uu/tahun/$tahun`, `/uu/$nomor/$tahun`, and a comparison for one amendment step | Verify Asli and Modern controls against Astro. The route selects the latest step or one named step. A two-version comparison using `dari` is currently unavailable. |
-| Collections | `/koleksi/`, `/koleksi/$slug`, `/koleksi/$slug/$versi`, and `/koleksi/$slug/perubahan.json` | Restore a user-facing version comparison flow and verify all links and notes. |
-| Draft bills | `/ruu/`, `/ruu/$slug`, and `/ruu/$slug/$doc` | Add `/ruu/$slug/beda/$pair` draft comparisons. |
+| Laws | `/uu/`, `/uu/tahun/:tahun`, `/uu/:nomor/:tahun`, and a comparison for one amendment step | Verify Asli and Modern controls against Astro. The route selects the latest step or one named step. A two-version comparison using `dari` is currently unavailable. |
+| Collections | `/koleksi/`, `/koleksi/:slug`, `/koleksi/:slug/:versi`, and `/koleksi/:slug/perubahan.json` | Restore a user-facing version comparison flow and verify all links and notes. |
+| Draft bills | `/ruu/`, `/ruu/:slug`, and `/ruu/:slug/:doc` | Add `/ruu/:slug/beda/:pair` draft comparisons. |
 | Search | `/cari/`, law catalog JSON, citation lookup, and Pagefind-backed full-text results | Verify search results open the exact article in the deployed preview. |
 | Standalone | `/` | Add `/tentang/` and compare homepage behavior with Astro. |
 
