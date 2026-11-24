@@ -46,7 +46,7 @@ jobs:
           config: ${{ secrets.WG_INDONESIA }}
       - uses: astral-sh/setup-uv@v6
       - name: Tesseract for scanned PDFs
-        run: sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ind >/dev/null
+        run: sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ind hunspell hunspell-id hunspell-en-us >/dev/null
       - run: |
           uv sync --extra ocr
           uv run python -c 'import indra_ocr; indra_ocr.load()'   # Indra's models (~76 MB) once, before the parallel OCR workers

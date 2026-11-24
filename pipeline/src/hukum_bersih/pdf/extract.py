@@ -12,6 +12,8 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
+from .ocr_fix import fix_lines
+
 # Signature boxes printed on every page of DPR "draft final" documents.
 HEADER_TOKENS = {
     "F", "FP", "PDIP", "FPG", "GERINDRA", "FPKB", "NASDEM", "PAN", "PKS", "FPD", "PEMERINTAH",
@@ -106,8 +108,15 @@ def page_lines(pdf: Path, stats: dict | None = None, ocr: bool = True) -> list[l
                     errors.append(f"{engine}: {type(e).__name__}: {str(e)[:120]}")
             else:
                 stats["ocr_missing"] = "; ".join(errors)
-        return [rows(read[p.number] if p.number in read else visible(p, p.get_text("words")))
-                for p in doc]
+        pages = [rows(read[p.number] if p.number in read else visible(p, p.get_text("words")))
+                 for p in doc]
+    if read:                                              # misread words (ocr_fix.py)
+        scanned = sorted(read)
+        fixed, fixes = fix_lines([ln for n in scanned for ln in pages[n]])
+        stats.setdefault("ocr_fixes", []).append(fixes)          # one per PDF of the law
+        for n in scanned:
+            pages[n], fixed = fixed[:len(pages[n])], fixed[len(pages[n]):]
+    return pages
 
 
 def ocr_pages(pdf: Path, numbers: list[int], engine: str = "tesseract") -> dict[int, list]:
