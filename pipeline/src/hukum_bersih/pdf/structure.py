@@ -15,7 +15,7 @@ from pathlib import Path
 
 from .ocr_fix import Fixes
 
-PARSER_VERSION = 15  # 15: misread words of scanned pages corrected when the spell check is confident (pdf/ocr_fix.py, decision 0013). 14: scanned pages read with Indra OCR instead of Tesseract (decision 0012; parser unchanged). 13: misprinted pasal numbers confirmed by the next heading ("Pasal 9" twice, UU 19/1948). 12: OCR letters for digits in heading numbers ("Pasal S1"), spaced marks ("Pasal 84 ,"); amending Penjelasan: Angka above Ayat (UU 11, 12, 13/2022). 11: OCR specks after a Pasal heading ("Pasal 4 :", UU 29/2024); parallel OCR (same words). 10: OCR speck before a Pasal heading ("' Pasal 8", UU 135/2024). 9: browser print headers/footers dropped; separate Penjelasan PDF read (UU 19/2003). 8: v7 dropped a Penjelasan after a copy certification (UU 2/2025): fixed;
+PARSER_VERSION = 16  # 16: page header and footer of scanned pages removed by where the OCR put them, not by their (misread) text (pdf/edges.py). 15: misread words of scanned pages corrected when the spell check is confident (pdf/ocr_fix.py, decision 0013). 14: scanned pages read with Indra OCR instead of Tesseract (decision 0012; parser unchanged). 13: misprinted pasal numbers confirmed by the next heading ("Pasal 9" twice, UU 19/1948). 12: OCR letters for digits in heading numbers ("Pasal S1"), spaced marks ("Pasal 84 ,"); amending Penjelasan: Angka above Ayat (UU 11, 12, 13/2022). 11: OCR specks after a Pasal heading ("Pasal 4 :", UU 29/2024); parallel OCR (same words). 10: OCR speck before a Pasal heading ("' Pasal 8", UU 135/2024). 9: browser print headers/footers dropped; separate Penjelasan PDF read (UU 19/2003). 8: v7 dropped a Penjelasan after a copy certification (UU 2/2025): fixed;
 #                    Penjelasan of amending laws (Pasal I/II), OCR '1. UMUM'.
 #                   7: amending laws keep quoted articles in Pasal I, white (hidden)
 #                    text dropped, salinan certification left out, MEMORI PENJELASAN;
@@ -531,6 +531,8 @@ def parse_pdf(pdf: Path, extra: Sequence[Path] = ()) -> Document:
     doc = parse_lines(lines)
     if stats.get("ocr_pages"):
         doc.warnings.append(f"ocr: {stats['ocr_pages']} scanned page(s) read with {stats.get('ocr_engine', 'tesseract')}")
+    if stats.get("edge_lines"):
+        doc.warnings.append(f"edges: {len(stats['edge_lines'])} page header/footer line(s) of scanned pages removed by position")
     if parts := stats.get("ocr_fixes"):
         doc.ocr_fixes = fixes = Fixes(
             [c for f in parts for c in f.changed], [s for f in parts for s in f.suspects],
