@@ -71,7 +71,7 @@ jobs:
         with:
           step: restore
           path: ${{ env.HUKUM_BERSIH_OCR_CACHE }}
-      - name: Install (stealth browser, OCR for scanned PDFs: Indra, Tesseract as fallback)
+      - name: "Install (stealth browser, OCR for scanned PDFs: Indra, Tesseract as fallback)"
         run: |
           sudo apt-get install -y -qq xvfb tesseract-ocr tesseract-ocr-ind hunspell hunspell-id hunspell-en-us >/dev/null   # OCR for scans
           cd pipeline && uv sync --extra bpk --extra ocr && uv run scrapling install
