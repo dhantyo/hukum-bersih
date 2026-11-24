@@ -153,8 +153,13 @@ doc.preamble.forEach((n, i) => {
   .law :global(.akn-num) { font-variant-numeric: tabular-nums; }
   .law :global(.akn-article) { scroll-margin-top: var(--s-4); }
   .law :global(.alias) { display: block; scroll-margin-top: var(--s-4); }
+  /* the pasal a link jumped to: marked so the eye finds it, then fades out */
   .law :global(.akn-article:has(> .alias:target)), .law :global(:target) {
-    background: var(--primary-bg); border-radius: var(--r-sm); box-shadow: 0 0 0 6px var(--primary-bg);
+    border-radius: var(--r-sm); animation: hb-target-fade 2.6s ease-out both;
+  }
+  @keyframes hb-target-fade {
+    0%, 45% { background: var(--primary-bg); box-shadow: 0 0 0 6px var(--primary-bg); }
+    100% { background: transparent; box-shadow: 0 0 0 6px transparent; }
   }
   /* skip rendering off-screen parts of very long laws (rendered on demand, still found by Ctrl+F) */
   .law :global(.akn-body > section) { content-visibility: auto; contain-intrinsic-size: auto 60rem; }

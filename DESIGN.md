@@ -108,6 +108,8 @@ separating.
   (`--warn` border) exactly what is missing. Under each changed pasal: "Diubah oleh / Disisipkan
   oleh / Dihapus oleh UU n/yyyy"; a change whose wording could not be read keeps the previous text
   and says so (`--bg-subtle` tint).
+- **Jump target**: the pasal a link jumped to gets `--primary-bg`, which fades out after about two
+  seconds (it marks where you landed; it is not a selection).
 - **Fact list** (side panel): label above value, `--fs-sm`.
 - **Table of contents**: BAB headings with their pasal range; current item marked with
   `--primary` left border. The BAB being read opens to a grid of its pasal numbers (the pasal in
