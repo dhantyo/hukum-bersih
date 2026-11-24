@@ -60,6 +60,10 @@ urls=(
   '/uu/11/2008/?bandingkan=uu_0_0000'
   '/uu/11/2008/?bandingkan&dari=uu_19_2016'
   '/uu/11/2008/?dari=uu_19_2016'
+  '/uu/11/2008/?bandingkan=uu_1_2024&dari=uu_11_2008'
+  '/uu/11/2008/?bandingkan=uu_11_2008&dari=uu_1_2024'
+  '/uu/11/2008/?bandingkan=uu_19_2016&dari=uu_19_2016'
+  '/uu/11/2008/?bandingkan=uu_1_2024&dari=uu_0_0000'
   /uu/11/2008/perubahan/
   /uu/19/2016/
   '/uu/19/2016/?bandingkan'
@@ -67,6 +71,9 @@ urls=(
   /uu/9/1960/
   '/uu/9/1960/?bandingkan'
   /uu/9/1960/perubahan/
+  /uu/15/1950/
+  /uu/15/1950/perubahan/
+  /uu/11/2020/
   /uu/9999/2008/
   /uu/abc/2008/
   /uu/11/20080/
