@@ -94,6 +94,37 @@ def test_a_common_word_needs_no_second_occurrence():
     assert out == ["setelah itu, ini merupakan"]
 
 
+LOOKALIKES = [                                 # read -> mapped (a letter of another script)
+    ("meningkatkarı", "meningkatkari"),        # Turkish dotless ı (Indra, CI 2026-11-24)
+    ("Ρasal", "Pasal"),                        # Greek capital Rho
+    ("раsal", "pasal"),                        # Cyrillic р, а
+    ("ΡASAL", "PASAL"),
+]
+
+UNCHANGED = ["ıı", "Ρασ", "привет", "“kutipan”", "§", "½", "1ı", "café", "Zürich", "Pasal 5 ayat (1)"]
+
+
+@pytest.mark.parametrize("read,mapped", LOOKALIKES)
+def test_a_lookalike_letter_in_a_latin_word_is_mapped(read, mapped):
+    lines, fixes = fix_lines([f"menurut {read} ini"])
+    assert lines == [f"menurut {mapped} ini"]
+    assert fixes.changed[0] == (read, mapped)
+
+
+@pytest.mark.parametrize("text", UNCHANGED)
+def test_other_characters_are_never_changed(text):
+    lines, fixes = fix_lines([f"menurut {text} ini"])
+    assert lines == [f"menurut {text} ini"]
+    assert all(read != text for read, _ in fixes.changed)
+
+
+@needs_hunspell
+def test_a_mapped_word_is_then_spell_fixed():
+    lines, fixes = fix_lines([CONTEXT + "meningkatkan " * 2, "untuk meningkatkarı mutu"])
+    assert lines[1] == "untuk meningkatkan mutu"
+    assert fixes.changed == [("meningkatkarı", "meningkatkari"), ("meningkatkari", "meningkatkan")]
+
+
 def test_without_hunspell_nothing_is_corrected(monkeypatch):
     monkeypatch.setattr(ocr_fix.shutil, "which", lambda _: None)
     out, fixes = fix_lines([CONTEXT, "menurut keselamalan ini"])

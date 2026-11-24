@@ -110,6 +110,7 @@ evening) peraturan.go.id. See CLAUDE.md for the latest findings.
 | archive.org | `internetarchive` | |
 | PDF text | PyMuPDF | |
 | OCR of scanned pages | Indra OCR (`indra-ocr`, CPU; Tesseract `ind` as fallback) | [decision 0012](decisions/0012-indra-ocr.md): checked on hand-typed ground truth against Tesseract (Ubuntu and `tessdata_best`), PaddleOCR (server, mobile/RapidOCR, VL), GLM-OCR, MinerU2.5-Pro, markitdown |
+| Lookalike letters in OCR'd words (ı, Greek/Cyrillic) | `confusable-homoglyphs` (Unicode UTS #39 `confusables.txt` data, MIT) | checked: `confusables` (normalizes whole strings with several readings, no per-letter mapping), PyICU spoof checker (needs system ICU, only reports, does not map), `confusables.txt` by hand (the package ships the same data with a lookup). Applied only inside words with a Latin letter ([decision 0013](decisions/0013-ocr-spell-fix.md)) |
 | Correcting OCR misreads | Norvig's spelling corrector (one edit) over our own typed texts' words, Hunspell `id_ID` + `en_US` (system packages) as the list of real words never changed | [decision 0013](decisions/0013-ocr-spell-fix.md). Checked: Pasal.id's `ocr_correct.py` (one regex per misread word, changes case: not used), SymSpell/`symspellpy` (fast edit-distance lookup, but no weights for letter shapes and speed is not the limit: not used) |
 | Validating law records before they are written | Pydantic v2 (`records.py`) | models are the gate only: the code keeps working with dicts and the YAML is dumped from the dict, byte for byte as before |
 | Search | Pagefind | |
