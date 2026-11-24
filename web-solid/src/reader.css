@@ -1,0 +1,8 @@
+
+.law-reader { margin: var(--s-4) auto; max-width: var(--measure); text-align: start; color: var(--text); background: var(--bg); font: var(--fs-base) / 1.6 var(--font-ui); }
+.law-reader a { color: var(--primary); }
+.law { font-family: var(--font-atkinson); font-size: var(--fs-law); }
+.original-label { display: none; }
+.law-reader:has(input[value="asli"]:checked) .original-label { display: inline; }
+.law-reader:has(input[value="asli"]:checked) .modern-label { display: none; }
+.law-reader:has(input[value="asli"]:checked) .law { font-family: var(--font-source-serif); }

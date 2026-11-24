@@ -1,0 +1,23 @@
+@import '../../web/src/styles/tokens.css';
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: var(--fs-base) / 1.6 var(--font-ui);
+}
+
+main {
+  padding-inline: var(--s-4);
+}
+
+a {
+  color: var(--primary);
+}
+
+.site-nav {
+  display: flex;
+  gap: var(--s-4);
+  padding: var(--s-3) var(--s-4);
+  border-block-end: 1px solid var(--line);
+}
