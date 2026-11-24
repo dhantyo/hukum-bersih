@@ -21,6 +21,7 @@ Tokens live in `web/src/styles/tokens.css`; components use the names, never raw 
 | `--text` | `#1b1f24` | `#e6e8eb` | body text (15.9:1 / 14.6:1) |
 | `--text-muted` | `#59616b` | `#a3abb5` | meta, captions (6.3:1 / 7.6:1) |
 | `--line` | `#dde1e5` | `#2d343c` | borders, rules |
+| `--line-strong` | `#808993` | `#69727d` | edges of controls: inputs, buttons, chips, "Aa" (3.6:1 / 3.8:1 on `--bg`; WCAG 1.4.11 asks 3:1) |
 | `--primary` | `#1d4f91` | `#8cb4f0` | links, buttons, focus, current nav (7.9:1 / 8.6:1) |
 | `--primary-bg` | `#e8f0fa` | `#1a2a40` | selected items, highlights |
 | `--ok` | `#17683a` | `#6fcf97` | *berlaku*, *Resmi* |

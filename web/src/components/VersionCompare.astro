@@ -210,7 +210,7 @@ const { data } = Astro.props;
   .slots { display: contents; list-style: none; }
   .vc :global(.slot) {
     display: flex; align-items: center; gap: var(--s-1); padding: var(--s-1); background: var(--bg);
-    border: 1px solid var(--line); border-radius: var(--r-sm); min-height: var(--tap);
+    border: 1px solid var(--line-strong); border-radius: var(--r-sm); min-height: var(--tap);
   }
   .vc :global(.slot.dragging) { opacity: 0.5; }
   .vc :global(.slot.over) { border-color: var(--primary); }
@@ -224,10 +224,10 @@ const { data } = Astro.props;
   .add:disabled { opacity: 0.4; cursor: default; }
   .tools { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--s-2) var(--s-4); align-items: center; margin: var(--s-3) 0; }
   .presets { display: flex; flex-wrap: wrap; gap: var(--s-2); align-items: center; }
-  .presets button { font: inherit; background: none; border: 1px solid var(--line); border-radius: 999px; padding: 0.2rem var(--s-3); color: var(--text); cursor: pointer; }
+  .presets button { font: inherit; background: none; border: 1px solid var(--line-strong); border-radius: 999px; padding: 0.2rem var(--s-3); color: var(--text); cursor: pointer; }
   .presets button:hover { border-color: var(--primary); color: var(--primary); }
   .find { display: flex; gap: var(--s-2); align-items: center; }
-  .find input { font: inherit; padding: var(--s-1) var(--s-2); border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--bg); color: var(--text); width: 9rem; }
+  .find input { font: inherit; padding: var(--s-1) var(--s-2); border: 1px solid var(--line-strong); border-radius: var(--r-sm); background: var(--bg); color: var(--text); width: 9rem; }
   .gapnote { border: 1px solid var(--warn); border-radius: var(--r-md); padding: var(--s-2) var(--s-3); max-width: var(--measure); }
 
   .grid { overflow-x: auto; }
@@ -256,5 +256,5 @@ const { data } = Astro.props;
     .vc :global(.slot) { flex: 1 1 100%; }
     .vc :global(.slot select) { flex: 1; max-width: none; }
   }
-  .more { margin-top: var(--s-3); font: inherit; font-size: var(--fs-sm); background: none; border: 1px solid var(--line); border-radius: var(--r-sm); padding: var(--s-1) var(--s-3); color: var(--primary); cursor: pointer; }
+  .more { margin-top: var(--s-3); font: inherit; font-size: var(--fs-sm); background: none; border: 1px solid var(--line-strong); border-radius: var(--r-sm); padding: var(--s-1) var(--s-3); color: var(--primary); cursor: pointer; }
 </style>
