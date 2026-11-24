@@ -34,10 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2018_2018-05-25.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5c2ea59ba287cecdff9157b879fbbd6a44d327462c96332e89cc7afb20730f8a
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 21
 pdf_sha256: 8d55d680470512255d5693f53747b4b07b6302b33189c9bf4c85232a2ea90ebb
 tanggal_pengundangan: '2018-05-25'
 tanggal_berlaku: '2018-05-25'

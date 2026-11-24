@@ -33,10 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2018_2018-10-30.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5a2c43233568c2d2deea01dd1faeaa3370267133744a0cd7e9624ec17e0dc9ff
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 4
 pdf_sha256: 5561e3ab3ef21b1b2eee7b8d14391daff12bbcc5047b209673f3d91ac5c2c5f7
 tanggal_pengundangan: '2018-10-31'
 tanggal_berlaku: '2018-10-31'

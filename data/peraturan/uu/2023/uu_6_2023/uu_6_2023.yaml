@@ -31,10 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_2023_2023-03-31.txt
   pasal_count: 2
-  parser_version: 13
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: de73c84f11d4e721a4c0e66cadadac7f698941ec8adff5934e70f32dc885fdae
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 10
+  ocr_unknown: 393
 pdf_sha256: 590093603e55b1564cc94e016a8d98b453a86fca0db0df49e4579035caaa776f
 tanggal_pengundangan: '2023-03-31'
 tanggal_berlaku: '2023-03-31'

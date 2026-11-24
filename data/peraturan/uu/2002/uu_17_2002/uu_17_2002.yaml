@@ -28,11 +28,14 @@ versions:
   date: '2002-06-28'
   date_basis: tanggal_penetapan
   text: uu_17_2002_2002-06-28.txt
-  pasal_count: 6
-  parser_version: 13
+  pasal_count: 7
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c70c9a628e575f74d0970ce81a263bec7c50fdfd7743e868d4bccb748586fe98
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 1
+  ocr_unknown: 20
 pdf_sha256: e0d457eb7da2aa61cc01e164e6fd0d9e921f63f6f812d4abb39ce55eb3351d75
 tanggal_pengundangan: '2002-06-28'
 tanggal_berlaku: '2002-06-28'

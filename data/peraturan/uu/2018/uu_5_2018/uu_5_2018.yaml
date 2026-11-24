@@ -51,10 +51,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_2018_2018-06-21.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 41395f938a86a60fa231a1b2aaed0b8e21a7fec815601079c9a4e05e8ada7ec0
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 19
 pdf_sha256: cdeca9445fc109f476e206df9b29adc63ee5139705ed3b4296e58072ee73453a
 tanggal_pengundangan: '2018-06-22'
 tanggal_berlaku: '2018-06-22'

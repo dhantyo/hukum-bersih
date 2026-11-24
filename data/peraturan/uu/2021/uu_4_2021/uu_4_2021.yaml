@@ -30,10 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2021_2021-10-06.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7ee34f3cd10f607fbf8c63cafd69e6332415d89b9ce50458cb88622752abc3f9
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 1
+  ocr_unknown: 19
 pdf_sha256: 8192134d3d31b2efa9619cf872df28aa19f45c125ea6e3c01ac02d26ffe0b6bc
 tanggal_pengundangan: '2021-10-06'
 tanggal_berlaku: '2021-10-06'

@@ -35,10 +35,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2019_2019-10-14.txt
   pasal_count: 2
-  parser_version: 13
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2e33862e2a3c0eb4bb71315b3e3230a13932eff2aed5c280738088609ea02e40
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 2
+  ocr_unknown: 6
 pdf_sha256: 046901cb8c493d70b8d3930cdab3bd4eed98014e4cf98c6fb6b7da7741cfb5c8
 tanggal_pengundangan: '2019-10-15'
 tanggal_berlaku: '2019-10-15'

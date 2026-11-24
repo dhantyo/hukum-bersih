@@ -33,10 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_2019_2019-03-13.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 763360acf1ef1f4e82884ad8c703e207d0c9a1e37f77916f2171e276664386b2
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 4
 tanggal_pengundangan: '2019-03-15'
 tanggal_berlaku: '2019-03-15'
 lembaran_negara: 'LN.2019/NO.58, TLN NO.6327, LL SETKAB : 4 HLM.'

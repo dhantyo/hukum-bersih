@@ -27,11 +27,14 @@ versions:
   date: '2020-11-02'
   date_basis: tanggal_penetapan
   text: uu_11_2020_2020-11-02.txt
-  pasal_count: 181
-  parser_version: 13
+  pasal_count: 182
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 70b88855a92b1d0c648902872924739b029d6e8e925429e39581269148e9501d
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 29
+  ocr_unknown: 551
 pdf_sha256: 532d8d725a4cebe9bf0bb0cd5408c01a899d5a5f5211905c9618a6f07da6132b
 tanggal_pengundangan: '2020-11-02'
 tanggal_berlaku: '2020-11-02'

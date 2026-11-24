@@ -28,10 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_2022_2022-07-25.txt
   pasal_count: 9
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c24598803ca3898b93724582b44ea4b97ea12f2834f219fc7ad58fca7de17258
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 1
+  ocr_unknown: 6
 pdf_sha256: 06bf7d13c4f54796ef74a4d341576bd3a7ec2783063bf5ba06d0ce712b3ffd89
 tanggal_pengundangan: '2022-07-25'
 tanggal_berlaku: '2022-07-25'

@@ -27,11 +27,14 @@ versions:
   date: '2014-10-17'
   date_basis: tanggal_penetapan
   text: uu_39_2014_2014-10-17.txt
-  pasal_count: 58
-  parser_version: 13
+  pasal_count: 118
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d5c9b129b8f249cbf05604a52846a27b6f6810d04f664f7e7e2becd73cedfe57
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 8
+  ocr_unknown: 53
 tanggal_pengundangan: '2014-10-17'
 tanggal_berlaku: '2014-10-17'
 lembaran_negara: 'LN.2014/No. 308, TLN No. 5613, LL SETNEG: 48 HLM'

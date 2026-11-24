@@ -42,10 +42,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_2016_2016-12-25.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1ecbeed2f762355a13b31691d19b474cb02b4912b445762c4f354c9a4ba5a1d0
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 2
+  ocr_unknown: 27
 pdf_sha256: d412325d49f6c61beb403f69c4ed5c4b6df9ab216c72531054ff75988f5f170a
 tanggal_penetapan_bpk: '2016-11-25'
 tanggal_pengundangan: '2016-11-25'

@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_2019_2019-04-26.txt
   pasal_count: 132
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4a80c5dcdc1b94ae175398e5265539a0c56a9057b449338c3ef026bf12159683
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 3
+  ocr_unknown: 204
 pdf_sha256: 4ba8bede4964802adc9d79340433ab0449fbacd831ac1553bae59c011db57643
 tanggal_pengundangan: '2019-04-29'
 tanggal_berlaku: '2019-04-29'

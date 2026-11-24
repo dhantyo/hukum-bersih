@@ -29,10 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_28_2022_2022-10-27.txt
   pasal_count: 55
-  parser_version: 13
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 49e3562ca03be99633b36e92bfb52477176078168b1785bfcb303e248f608ddf
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 1
+  ocr_unknown: 53
 pdf_sha256: 49e3562ca03be99633b36e92bfb52477176078168b1785bfcb303e248f608ddf
 tanggal_pengundangan: '2022-10-27'
 lembaran_negara: 'LN.2022/No.208, TLN No.6827, jdih.setneg.go.id: 54 hlm.'

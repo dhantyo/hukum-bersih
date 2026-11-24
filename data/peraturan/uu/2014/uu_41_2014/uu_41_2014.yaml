@@ -61,10 +61,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_41_2014_2014-10-17.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 14f044027e35cc982c12ddb78d79ce6b7d03988badd6f8d02039e0861e59e4a6
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 43
 pdf_sha256: b3399f705167f15d0982867fea910f9b16858ba54ac711ec17094b028eaed413
 tanggal_pengundangan: '2014-10-17'
 tanggal_berlaku: '2014-10-17'

@@ -28,10 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2016_2016-11-25.txt
   pasal_count: 109
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 01cd439b7fddde8634acecb8959a67612a7d6a7064ba38765b64a543f9174cb5
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 17
+  ocr_unknown: 32
 pdf_sha256: 9a635b2a7d61c00b6661b3cd25588ab81d3306654f5f7dca61d51d7db80d0c08
 tanggal_pengundangan: '2016-11-25'
 tanggal_berlaku: '2016-11-25'

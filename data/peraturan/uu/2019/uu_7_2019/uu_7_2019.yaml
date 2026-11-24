@@ -34,10 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2019_2019-04-26.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c6486698cc3f87df1094735bc889cc04ec10f5e002b83138bd1cffeaf6e1d04d
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 6
 pdf_sha256: 99ab2a2c80d1a95bb018e757a6c094f8fb769940e2d8cd8b681b2b8f023f3ebe
 tanggal_pengundangan: '2019-04-26'
 tanggal_berlaku: '2019-04-26'

@@ -28,10 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_2007_2007-08-10.txt
   pasal_count: 34
-  parser_version: 13
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c6695f183fa016d034397314b060fe6294a11275a6fd01abb6f15efe3c4a416b
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 3
+  ocr_unknown: 14
 pdf_sha256: 6e985835d997ebeb1c35666eb21e884fc1c46c1aa9c654b5f4e250ddd9f40b2c
 tanggal_pengundangan: '2007-08-10'
 tanggal_berlaku: '2007-08-10'

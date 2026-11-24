@@ -28,11 +28,14 @@ versions:
   date: '2016-08-26'
   date_basis: tanggal_penetapan
   text: uu_13_2016_2016-08-26.txt
-  pasal_count: 172
-  parser_version: 13
+  pasal_count: 173
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 909a68bb95c996cc45e46de9ecfdfc898340938b3987bc30fb2824757a0b9367
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 3
+  ocr_unknown: 79
 pdf_sha256: 909a68bb95c996cc45e46de9ecfdfc898340938b3987bc30fb2824757a0b9367
 tanggal_pengundangan: '2016-08-26'
 tanggal_berlaku: '2016-08-26'

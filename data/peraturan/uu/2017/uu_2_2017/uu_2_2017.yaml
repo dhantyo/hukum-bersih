@@ -28,10 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2017_2017-01-12.txt
   pasal_count: 106
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: edd5edf2a9856d42d7a1b1ef2825ef3989d5ab303411e5753d28084ca384522e
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 1
+  ocr_unknown: 43
 pdf_sha256: f6059eec0c59dcd0be2ad6b94a174db7dd7b2b9898475063f1c678127cab3890
 tanggal_pengundangan: '2017-01-12'
 tanggal_berlaku: '2017-01-12'

@@ -47,10 +47,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2022_2022-06-16.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1feca7ed8b1bdf635b9e332df8fd21d03bed7e44d280e9adf083f77f03b352ae
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 28
 pdf_sha256: bdcdf76cb1b023b098963b525493063899a71f02bb43ae119347b3ddd1ca9e95
 tanggal_pengundangan: '2022-06-16'
 tanggal_berlaku: '2022-06-16'

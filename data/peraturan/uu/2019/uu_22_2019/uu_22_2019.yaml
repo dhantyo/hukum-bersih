@@ -28,10 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_2019_2019-10-18.txt
   pasal_count: 132
-  parser_version: 12
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 31bb83111101f443dbc9c2f990121d884d838328fccea9276a9829d5a9c6b6f6
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 20
 pdf_sha256: 6c221b63f8933dfc5be8bd9997c0561eef6bc3c7c28052fdfbb7f94fde555009
 tanggal_pengundangan: '2019-10-18'
 tanggal_berlaku: '2019-10-18'
