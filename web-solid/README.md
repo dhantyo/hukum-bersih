@@ -26,7 +26,7 @@ For a full corpus release, run `pnpm run export-collections "$stage"` before pub
 
 Run `pnpm run export-drafts "$stage"` before exporting the catalog and building the search index to include draft bill timelines and searchable draft documents.
 
-Run `pnpm run lint`, `pnpm exec tsc --noEmit`, and `pnpm run test --run` to check the preview code.
+Run `pnpm run check`, `pnpm exec tsc --noEmit`, and `pnpm run test --run` to check the preview code.
 
 ## Cloudflare preview
 
