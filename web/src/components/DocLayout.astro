@@ -53,9 +53,9 @@ const Chevrons = (dir: "left" | "right") => `<svg viewBox="0 0 16 16" width="16"
   </div>
 </div>
 <div class="scrim" data-drawer-close hidden></div>
-<button type="button" class="drawer-btn" data-drawer-open aria-controls="panel" aria-expanded="false" data-pagefind-ignore>
-  <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3 4.5h10M3 8h10M3 11.5h6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-  {panelLabel}
+<button type="button" class="drawer-btn" data-drawer-open aria-controls="panel" aria-expanded="false" data-pagefind-ignore
+  aria-label={`Buka ${panelLabel.toLowerCase()}`} title={`${panelLabel}: ketuk atau tarik`}>
+  <svg viewBox="0 0 10 16" width="10" height="16" aria-hidden="true"><path d="M3 3.5 7.5 8 3 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </button>
 
 <script>
@@ -103,7 +103,57 @@ const Chevrons = (dir: "left" | "right") => `<svg viewBox="0 0 16 16" width="16"
     outside().forEach((e) => { e.inert = false; });
     if (restore) returnTo?.focus({ preventScroll: true });
   };
-  openBtn?.addEventListener("click", openDrawer);
+  openBtn?.addEventListener("click", () => { if (!pulled) openDrawer(); pulled = false; });
+
+  // pull: the chevron tab can be dragged right and the drawer follows the finger; the open
+  // drawer can be pushed back left. Past a third of its width (or a flick) it opens / closes,
+  // otherwise it goes back. Pattern from Sapu Berita's tray (swipe to close).
+  let pulled = false;
+  const follow = (dx: number, opening: boolean) => {
+    if (!panel) return;
+    const w = panel.offsetWidth;
+    const x = opening ? Math.min(0, dx - w) : Math.min(0, dx);
+    panel.style.transition = "none";
+    panel.style.visibility = "visible";
+    panel.style.transform = `translateX(${x}px)`;
+    if (scrim) { scrim.hidden = false; scrim.style.transition = "none"; scrim.style.opacity = String(1 + x / w); }
+    return w;
+  };
+  const release = (dx: number, dt: number, opening: boolean) => {
+    if (!panel) return;
+    const w = panel.offsetWidth;
+    const flick = Math.abs(dx) > 30 && Math.abs(dx) / Math.max(1, dt) > 0.5;
+    const open = opening ? dx > w / 3 || (flick && dx > 0) : !(-dx > w / 3 || (flick && dx < 0));
+    for (const e of [panel, scrim]) e?.style.removeProperty("transition");
+    panel.style.removeProperty("transform"); panel.style.removeProperty("visibility");
+    scrim?.style.removeProperty("opacity");
+    if (open && root.dataset.drawer !== "open") openDrawer();
+    else if (!open) { if (root.dataset.drawer === "open") closeDrawer(); else if (scrim) scrim.hidden = true; }
+  };
+  const pull = (el: Element | null, opening: boolean) => el?.addEventListener("pointerdown", (ev) => {
+    const e = ev as PointerEvent;
+    if (!narrow.matches || (e.pointerType === "mouse" && e.button !== 0)) return;
+    const x0 = e.clientX, y0 = e.clientY, t0 = performance.now();
+    let dx = 0, dragging = false, decided = false;
+    const move = (m: PointerEvent) => {
+      dx = m.clientX - x0;
+      if (!decided) {
+        if (Math.abs(dx) < 6 && Math.abs(m.clientY - y0) < 6) return;
+        decided = true;
+        // horizontal and the right way: a pull; otherwise leave it to scrolling
+        dragging = Math.abs(dx) > Math.abs(m.clientY - y0) && (opening ? dx > 0 : dx < 0);
+        if (!dragging) return stop();
+        (el as HTMLElement).setPointerCapture?.(e.pointerId);
+      }
+      if (dragging) follow(dx, opening);
+    };
+    // a pull ends in a click on the tab: that click must not open the drawer again
+    const up = () => { stop(); if (dragging) { pulled = opening; setTimeout(() => { pulled = false; }); release(dx, performance.now() - t0, opening); } };
+    const stop = () => { removeEventListener("pointermove", move); removeEventListener("pointerup", up); removeEventListener("pointercancel", up); };
+    addEventListener("pointermove", move); addEventListener("pointerup", up); addEventListener("pointercancel", up);
+  });
+  pull(openBtn, true);
+  pull(panel, false);
   document.querySelectorAll("[data-drawer-close]").forEach((e) => e.addEventListener("click", () => closeDrawer()));
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeDrawer(); });
   // following a link in the drawer (contents, versions) closes it
@@ -126,7 +176,8 @@ const Chevrons = (dir: "left" | "right") => `<svg viewBox="0 0 16 16" width="16"
   /* ---------- the panel beside the text (wide screens) ---------- */
   .panel {
     grid-column: 1; grid-row: 1;
-    position: sticky; top: var(--s-4); max-height: calc(100vh - var(--s-6)); overflow-y: auto;
+    position: sticky; top: calc(var(--s-4) + var(--header-shown, 0px)); max-height: calc(100vh - var(--s-6) - var(--header-shown, 0px)); overflow-y: auto;
+    transition: top 0.24s ease-out, max-height 0.24s ease-out;
     font-size: var(--fs-sm); padding-right: var(--s-2);
   }
   .doc-main { grid-column: 2; grid-row: 1; }
@@ -144,7 +195,12 @@ const Chevrons = (dir: "left" | "right") => `<svg viewBox="0 0 16 16" width="16"
   :global(:root[data-panel="hidden"]) .doc { grid-template-columns: var(--tap) minmax(0, 1fr); }
   :global(:root[data-panel="hidden"]) .panel { display: none; }
   :global(:root[data-panel="hidden"]) .rail {
-    display: block; grid-column: 1; grid-row: 1; position: sticky; top: var(--s-4);
+    display: block; grid-column: 1; grid-row: 1; position: sticky; top: calc(var(--s-4) + var(--header-shown, 0px));
+    transition: top 0.24s ease-out;
+  }
+  /* while the header follows the finger, sticky things follow it exactly (Base.astro) */
+  @media (min-width: 961px) {
+    :global(:root[data-header-tracking]) .panel, :global(:root[data-header-tracking]) .rail { transition: none; }
   }
   :global(:root[data-panel="hidden"]) .doc-main { justify-self: center; width: min(100%, var(--measure)); }
   /* comparing versions (CompareMode.astro): the text takes the width. Below 1500px the panel
@@ -157,7 +213,7 @@ const Chevrons = (dir: "left" | "right") => `<svg viewBox="0 0 16 16" width="16"
   @media (min-width: 961px) and (max-width: 1499px) {
     :global(:root[data-compare]:not([data-cmp-panel])) .doc { grid-template-columns: var(--tap) minmax(0, 1fr); }
     :global(:root[data-compare]:not([data-cmp-panel])) .panel { display: none; }
-    :global(:root[data-compare]:not([data-cmp-panel])) .rail { display: block; grid-column: 1; grid-row: 1; position: sticky; top: var(--s-4); }
+    :global(:root[data-compare]:not([data-cmp-panel])) .rail { display: block; grid-column: 1; grid-row: 1; position: sticky; top: calc(var(--s-4) + var(--header-shown, 0px)); }
   }
   .rail-btn {
     width: var(--tap); height: var(--tap); justify-content: center; padding: 0;
@@ -176,7 +232,7 @@ const Chevrons = (dir: "left" | "right") => `<svg viewBox="0 0 16 16" width="16"
       background: var(--bg); border-right: 1px solid var(--line); box-shadow: var(--shadow-pop);
       padding: var(--s-4); padding-left: max(var(--s-4), env(safe-area-inset-left, 0px));
       padding-top: max(var(--s-4), env(safe-area-inset-top, 0px));
-      transform: translateX(-105%); visibility: hidden;
+      transform: translateX(-105%); visibility: hidden; touch-action: pan-y;
       transition: transform 0.2s ease, visibility 0s linear 0.2s;
     }
     :global(:root[data-drawer="open"]) .panel { transform: none; visibility: visible; transition: transform 0.2s ease; }
@@ -190,13 +246,19 @@ const Chevrons = (dir: "left" | "right") => `<svg viewBox="0 0 16 16" width="16"
     .scrim:not([hidden]) {
       display: block; position: fixed; inset: 0; z-index: 25; background: var(--scrim);
     }
+    /* a slim tab on the left edge: tap it or pull it to the right */
     .drawer-btn {
-      display: inline-flex; align-items: center; gap: var(--s-2); position: fixed; z-index: 20;
-      left: max(var(--s-4), env(safe-area-inset-left, 0px)); bottom: max(var(--s-4), env(safe-area-inset-bottom, 0px));
-      min-height: var(--tap); padding: 0 var(--s-4); border: 0; border-radius: 999px; cursor: pointer;
-      background: var(--primary); color: var(--bg); font: inherit; font-weight: 600; font-size: var(--fs-sm);
-      box-shadow: var(--shadow-pop);
+      display: grid; place-items: center; position: fixed; z-index: 20;
+      left: env(safe-area-inset-left, 0px); top: 50%; transform: translateY(-50%);
+      width: var(--s-4); height: var(--s-8); padding: 0; cursor: pointer; touch-action: none;
+      color: var(--text-muted); background: var(--surface); box-shadow: var(--shadow-sm);
+      border: 1px solid var(--line-strong); border-left: 0; border-radius: 0 var(--r-md) var(--r-md) 0;
     }
+    /* the visible tab is narrow; the touch target is the full 44px */
+    .drawer-btn::before { content: ""; position: absolute; inset: 0 calc(var(--s-4) - var(--tap)) 0 0; }
+    .drawer-btn:hover, .drawer-btn:focus-visible { color: var(--primary); }
+    :global(:root[data-drawer="open"]) .drawer-btn { visibility: hidden; }
+    .scrim { transition: opacity 0.2s ease; }
   }
   @media (max-width: 640px) {
     .doc-head h1 { font-size: var(--fs-xl); }

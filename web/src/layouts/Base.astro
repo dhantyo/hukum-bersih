@@ -88,13 +88,66 @@ const nav = [
         </p>
       </div>
     </footer>
+    <script>
+      // The header follows the scroll (lib/barscroll.ts, as in Sapu Berita): it slides away by the
+      // distance scrolled down and comes back by the distance scrolled up, then settles shown or
+      // hidden. It stays while "Aa" is open or focus is inside it, and tucks away when a link
+      // jumps within the page. --header-shown (px of it on screen) lets sticky things sit below it.
+      import { nextBarOffset, settledBarOffset } from "../lib/barscroll.ts";
+      const root = document.documentElement;
+      const header = document.querySelector<HTMLElement>("header.site");
+      if (header) {
+        let offset = 0, lastTop = scrollY, frame = 0;
+        let settle: ReturnType<typeof setTimeout> | undefined;
+        const height = () => header.offsetHeight;
+        const held = () => !!header.querySelector("details[open]") || header.contains(document.activeElement);
+        /** glide: animate to `offset` (settling); otherwise follow the scroll exactly */
+        const place = (glide: boolean) => {
+          root.toggleAttribute("data-header-tracking", !glide);
+          header.style.transform = offset ? `translateY(${-offset}px)` : "";
+          header.toggleAttribute("data-hidden", offset >= height());
+          root.style.setProperty("--header-shown", `${Math.max(0, height() - offset)}px`);
+        };
+        const to = (next: number) => { offset = next; place(true); };
+        const follow = () => {
+          frame = 0;
+          const top = scrollY;
+          if (held()) { if (offset) to(0); lastTop = top; return; }
+          offset = nextBarOffset(offset, lastTop, top, height());
+          lastTop = top;
+          place(false);
+          clearTimeout(settle);
+          settle = setTimeout(() => {
+            const s = settledBarOffset(offset, scrollY, height());
+            if (s !== offset) to(s); else root.removeAttribute("data-header-tracking");
+          }, 140);
+        };
+        addEventListener("scroll", () => { if (!frame) frame = requestAnimationFrame(follow); }, { passive: true });
+        header.addEventListener("focusin", () => { if (offset) to(0); });
+        header.addEventListener("toggle", () => { if (offset) to(0); }, true);
+        // a jump within the page (contents, "#" links): out of the way of what was jumped to
+        addEventListener("hashchange", () => requestAnimationFrame(() => {
+          lastTop = scrollY;
+          if (scrollY > height()) to(height());
+        }));
+        addEventListener("resize", () => place(true));
+        place(true);
+      }
+    </script>
   </body>
 </html>
 
 <style>
   .skip { position: absolute; left: -999px; top: 0; }
   .skip:focus { left: var(--s-4); top: var(--s-2); background: var(--bg); padding: var(--s-2); z-index: 10; }
-  header.site { border-bottom: 1px solid var(--line); background: var(--bg); }
+  header.site {
+    border-bottom: 1px solid var(--line); background: var(--bg);
+    position: sticky; top: 0; z-index: 15; transition: transform 0.24s ease-out; will-change: transform;
+  }
+  :global(:root[data-header-tracking]) header.site { transition: none; }
+  /* fully away: out of the tab order too, once the slide has finished */
+  header.site[data-hidden] { visibility: hidden; transition: transform 0.24s ease-out, visibility 0s 0.24s; }
+  @media (prefers-reduced-motion: reduce) { header.site { transition: none; } }
   .bar { display: flex; align-items: center; gap: var(--s-5); min-height: 4rem; flex-wrap: wrap; }
   .brand { font-weight: 700; font-size: var(--fs-lg); color: var(--text); text-decoration: none; letter-spacing: -0.01em; }
   nav { display: flex; gap: var(--s-4); }

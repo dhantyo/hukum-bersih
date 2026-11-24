@@ -232,7 +232,7 @@ const { data } = Astro.props;
 
   .grid { overflow-x: auto; }
   .vc :global(.row) { display: grid; grid-template-columns: repeat(var(--cols), minmax(17rem, 1fr)); column-gap: var(--s-4); padding: var(--s-3) 0; border-bottom: 1px solid var(--line); }
-  .vc :global(.row.head) { position: sticky; top: 0; z-index: 1; background: var(--bg); border-bottom: 2px solid var(--line); font-size: var(--fs-sm); padding: var(--s-2) 0; }
+  .vc :global(.row.head) { position: sticky; top: var(--header-shown, 0px); z-index: 1; background: var(--bg); border-bottom: 2px solid var(--line); font-size: var(--fs-sm); padding: var(--s-2) 0; }
   .vc :global(.pasal-title) { grid-column: 1 / -1; font-size: var(--fs-base); margin: 0 0 var(--s-2); }
   .vc :global(.cell) { min-width: 0; }
   .vc :global(.cell .none) { color: var(--text-muted); font-style: italic; margin: 0; }

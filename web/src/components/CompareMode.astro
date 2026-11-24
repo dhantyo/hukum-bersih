@@ -446,11 +446,13 @@ const grip = `<svg class="grip" viewBox="0 0 10 16" width="10" height="16" aria-
 
 <style>
   .cmp-bar {
-    position: sticky; top: 0; z-index: 4; background: var(--bg); font-family: var(--font-ui); font-size: var(--fs-sm);
+    position: sticky; top: var(--header-shown, 0px); z-index: 4; background: var(--bg); font-family: var(--font-ui); font-size: var(--fs-sm);
+    transition: top 0.24s ease-out;
     border-bottom: 1px solid var(--line); padding: var(--s-3) 0 var(--s-2); margin-bottom: var(--s-5);
     box-shadow: calc(-1 * var(--s-6)) 0 0 var(--bg);   /* covers the fold arrows in the margin */
   }
   .cmp-bar[hidden] { display: none; }
+  :global(:root[data-header-tracking]) .cmp-bar { transition: none; }
   .cmp-top { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-1) var(--s-4); }
   .cmp-title { font-weight: 600; font-size: var(--fs-base); }
   .cmp-summary { color: var(--text-muted); }

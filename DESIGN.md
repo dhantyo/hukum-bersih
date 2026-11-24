@@ -77,8 +77,17 @@ Document pages: breadcrumbs, title block, then two columns: side panel (Versi, t
 contents, facts; sticky) and the text (`components/DocLayout.astro`). On wide screens the
 reader can hide the panel ("Sembunyikan"): a slim strip with a "›" button stays and the text
 column centres; remembered (`hb-panel`, applied before first paint). Up to 960px the panel is a
-drawer from the left over the text (`--scrim` behind it), opened by a "Daftar isi" button that
-is always on screen; Escape, the scrim or a link closes it, and the page behind is inert.
+drawer from the left over the text (`--scrim` behind it), opened from a slim chevron tab on the
+left edge (16px wide, 44px touch target): tap it, or pull it right and the drawer follows the
+finger; push the drawer left to close. Past a third of its width or a flick it opens / closes,
+otherwise it goes back. Escape, the scrim or a link also close it; the page behind is inert.
+
+The site header is sticky and follows the scroll like a phone browser's address bar (ported
+from Sapu Berita, `lib/barscroll.ts`): scrolling down slides it away by the distance scrolled,
+scrolling up brings it back by the distance scrolled up, and 140ms after the scroll stops it
+settles fully shown or hidden (0.24s ease-out). It stays while "Aa" is open or focus is in it,
+and tucks away after a jump within the page. Sticky things below it (side panel, comparison
+bar) sit at `--header-shown`.
 
 ## Shape and depth
 
