@@ -210,8 +210,8 @@ def build(data_dir: Path) -> dict[str, int]:
         return str(r.get("tanggal_penetapan") or r.get("year") or ""), i
 
     for k, rec in recs.items():
-        for key in ("amended_by", "revoked_by", "enacted_by"):
-            rel[k][key] = sorted(set(rel[k][key]), key=date_key)
+        for key in ("amended_by", "revoked_by", "enacted_by", "revokes", "enacts"):
+            rel[k][key] = sorted(set(rel[k][key]), key=date_key)   # same order on every machine
     for k in rel:                               # inserted pasal always carry a letter (27A):
         for entry in rel[k]["amends"]:          # a trailing digit is an OCR misread (16B->168)
             ins = (entry.get("changes") or {}).get("disisipkan")
