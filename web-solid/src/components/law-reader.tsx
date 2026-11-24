@@ -1,5 +1,6 @@
 import { isPresent } from "../lib/text.ts";
 import type { Amendment, ReaderLaw } from "../server/records/law.ts";
+import { readerClass } from "../styles/reading.ts";
 import { LawText } from "./law-text.tsx";
 
 export const LawReader = (props: {
@@ -7,7 +8,7 @@ export const LawReader = (props: {
   amendment?: Amendment;
   comparisonRequested?: boolean;
 }) => (
-  <main class="law-reader">
+  <main class={readerClass}>
     <header>
       <p>{props.law.title}</p>
       <h1>

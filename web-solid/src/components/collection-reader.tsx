@@ -3,8 +3,6 @@ import { For } from "solid-js";
 import type { Collection } from "../lib/collections.ts";
 import { MergedLaw } from "./merged-law.tsx";
 
-import "../reader.css";
-
 export const CollectionReader = (props: { collection: Collection }) => (
   <main>
     <a href="/koleksi/">Koleksi</a>

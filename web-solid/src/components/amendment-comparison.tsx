@@ -1,6 +1,7 @@
 import { For } from "solid-js";
 
 import type { Amendment, Comparison } from "../server/records/law.ts";
+import { readerClass } from "../styles/reading.ts";
 import { ArticleChange } from "./article-change.tsx";
 
 const AmendmentEntry = (props: { amendment: Amendment }) => (
@@ -28,7 +29,7 @@ const AmendmentEntry = (props: { amendment: Amendment }) => (
 );
 
 export const AmendmentComparison = (props: { comparison: Comparison }) => (
-  <main class="law-reader">
+  <main class={readerClass}>
     <a href="../">Kembali ke undang-undang</a>
     <h1>Perubahan {props.comparison.shortName ?? props.comparison.title}</h1>
     <For each={props.comparison.amendments}>

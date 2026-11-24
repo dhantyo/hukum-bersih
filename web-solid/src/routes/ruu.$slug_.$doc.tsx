@@ -8,8 +8,7 @@ import {
 } from "../components/draft-provenance.tsx";
 import { LawText } from "../components/law-text.tsx";
 import { draftTextQuery } from "../lib/queries";
-
-import "../reader.css";
+import { readerClass } from "../styles/reading.ts";
 
 const route = getRouteApi("/ruu/$slug_/$doc");
 
@@ -20,7 +19,7 @@ const DraftText = () => {
   return (
     <Show when={draft.data} keyed>
       {(record) => (
-        <main class="law-reader">
+        <main class={readerClass}>
           <a href={`/ruu/${params().slug}/`}>{record.name}</a>
           <h1>{draftDocumentTitle(record.document)}</h1>
           <p>{record.document.ruu_title ?? record.title}</p>

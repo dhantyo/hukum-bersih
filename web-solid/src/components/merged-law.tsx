@@ -3,6 +3,7 @@ import { For } from "solid-js";
 import { pasalKey } from "../../../web/src/lib/display.ts";
 import { isPresent } from "../lib/text.ts";
 import type { CollectionVersion } from "../server/records/collection-version.ts";
+import { readerClass } from "../styles/reading.ts";
 import { LawText } from "./law-text.tsx";
 
 const Completeness = (props: { version: CollectionVersion }) => (
@@ -25,7 +26,7 @@ const Completeness = (props: { version: CollectionVersion }) => (
 );
 
 export const MergedLaw = (props: { version: CollectionVersion }) => (
-  <div class="law-reader">
+  <div class={readerClass}>
     <aside aria-label="Tentang teks gabungan" data-pagefind-ignore>
       <p>
         Teks gabungan per {props.version.date ?? "tanggal tidak diketahui"},

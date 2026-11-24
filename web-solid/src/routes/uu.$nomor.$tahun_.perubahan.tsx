@@ -5,8 +5,6 @@ import { Show } from "solid-js";
 import { AmendmentComparison } from "../components/amendment-comparison.tsx";
 import { comparisonQuery } from "../lib/queries";
 
-import "../reader.css";
-
 const route = getRouteApi("/uu/$nomor/$tahun_/perubahan");
 
 const ComparisonPage = () => {

@@ -1,3 +1,4 @@
+import * as stylex from "@stylexjs/stylex";
 import {
   createRootRouteWithContext,
   HeadContent,
@@ -6,13 +7,27 @@ import {
 } from "@tanstack/solid-router";
 
 import type { RouterContext } from "../router";
+import { css } from "../styles/css.ts";
+import { color, space } from "../styles/tokens.stylex.ts";
+
+const styles = stylex.create({
+  nav: {
+    gap: space.s4,
+    paddingBlock: space.s3,
+    paddingInline: space.s4,
+    borderBlockEndColor: color.line,
+    borderBlockEndStyle: "solid",
+    borderBlockEndWidth: 1,
+    display: "flex",
+  },
+});
 
 export const Route = createRootRouteWithContext<RouterContext>()({
   head: () => ({ meta: [{ title: "Hukum Bersih" }] }),
   component: () => (
     <>
       <HeadContent />
-      <nav class="site-nav" aria-label="Navigasi utama">
+      <nav class={css(styles.nav)} aria-label="Navigasi utama">
         <Link to="/">Hukum Bersih</Link>
         <Link to="/uu/">Undang-Undang</Link>
         <Link to="/koleksi/">Koleksi</Link>

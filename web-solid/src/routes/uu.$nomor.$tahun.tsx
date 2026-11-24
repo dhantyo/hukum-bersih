@@ -6,8 +6,6 @@ import * as v from "valibot";
 import { LawReader } from "../components/law-reader.tsx";
 import { readerQuery } from "../lib/queries";
 
-import "../reader.css";
-
 const route = getRouteApi("/uu/$nomor/$tahun");
 
 const compareParams = v.object({

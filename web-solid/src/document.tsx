@@ -1,5 +1,20 @@
 import { HydrationScript } from "@solidjs/web";
+import * as stylex from "@stylexjs/stylex";
 import type { ParentProps } from "solid-js";
+
+import { css } from "./styles/css.ts";
+import { color, font, size } from "./styles/tokens.stylex.ts";
+
+const styles = stylex.create({
+  body: {
+    margin: 0,
+    backgroundColor: color.background,
+    color: color.text,
+    fontFamily: font.ui,
+    fontSize: size.base,
+    lineHeight: 1.6,
+  },
+});
 
 const Document = (props: ParentProps) => (
   <html lang="id">
@@ -11,7 +26,7 @@ const Document = (props: ParentProps) => (
       )}
       <HydrationScript />
     </head>
-    <body>{props.children}</body>
+    <body class={css(styles.body)}>{props.children}</body>
   </html>
 );
 

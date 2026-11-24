@@ -2,10 +2,11 @@ import * as stylex from "@stylexjs/stylex";
 
 import type { Amendment } from "../server/records/law.ts";
 import { css } from "../styles/css.ts";
+import { font } from "../styles/tokens.stylex.ts";
 
 const styles = stylex.create({
   wording: {
-    fontFamily: "var(--font-source-serif)",
+    fontFamily: font.sourceSerif,
     overflowWrap: "anywhere",
     whiteSpace: "pre-wrap",
   },

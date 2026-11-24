@@ -13,16 +13,18 @@ import { isPresent } from "../lib/text.ts";
 import type { Amendment } from "../server/records/law.ts";
 import type { ReaderText } from "../server/records/reader-text.ts";
 import { css } from "../styles/css.ts";
+import { reading } from "../styles/reading.ts";
+import { size, space } from "../styles/tokens.stylex.ts";
 import { ArticleChange } from "./article-change.tsx";
 
 const styles = stylex.create({
   numbered: {
-    gap: "var(--s-1)",
+    gap: space.s1,
     display: "grid",
-    gridTemplateColumns: "var(--hang) minmax(0, 1fr)",
+    gridTemplateColumns: `${size.hang} minmax(0, 1fr)`,
   },
   permalink: {
-    marginInlineStart: "var(--s-2)",
+    marginInlineStart: space.s2,
   },
 });
 
@@ -42,8 +44,8 @@ const noteLabels = {
 
 const ReadingLabel = (props: { original: string; modern: string }) => (
   <Show when={props.original !== props.modern} fallback={props.original}>
-    <span class="original-label">{props.original}</span>
-    <span class="modern-label" data-pagefind-ignore>
+    <span class={css(reading.originalLabel)}>{props.original}</span>
+    <span class={css(reading.modernLabel)} data-pagefind-ignore>
       {props.modern}
     </span>
   </Show>
@@ -245,7 +247,7 @@ export const LawText = (props: {
           <input type="radio" name="format" value="asli" /> Asli
         </label>
       </fieldset>
-      <article class="law" data-pagefind-body>
+      <article class={css(reading.law)} data-pagefind-body>
         <DocumentNodes nodes={props.text.preface} />
         {props.text.preamble.length > 0 && (
           <details open>
