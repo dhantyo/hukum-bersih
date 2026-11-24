@@ -4,9 +4,12 @@
 #   diff -r .snapshots/before .snapshots/after        (empty output means identical)
 #
 # Usage, from web-solid/ after `pnpm run build`:
-#   scripts/build-snapshot-corpus.sh .snapshots/corpus-before   # once per code state, about a minute
-#   CORPUS=.snapshots/corpus-before/corpus scripts/route-snapshot.sh .snapshots/before
-# Env:  CORPUS  a published corpus dir (HUKUM_CORPUS_DIR). Default .snapshots/corpus/corpus.
+#   CORPUS=.snapshots/corpus-before scripts/route-snapshot.sh .snapshots/before
+# Env:  CORPUS  a corpus dir (HUKUM_CORPUS_DIR). Default .snapshots/corpus.
+#               When it holds no release yet, the script exports the full corpus from the repo data
+#               (`pnpm run export-corpus`, a minute or two), publishes it there and prints the release id.
+#               The release id hashes every released file, so two builds with the same id are byte-identical.
+#               That path needs the Astro app's ignored folders (web/node_modules, web/generated).
 #       PORT    server port. Default 3199.
 #
 # Normalised, because these bytes differ run to run or build to build:
@@ -17,10 +20,21 @@
 #   same compiled code, so they cannot disagree). The payload values (the served records) are kept.
 # Stylesheet <link> tags, class attributes and everything else are kept.
 set -euo pipefail
-corpus="$(realpath "${CORPUS:-.snapshots/corpus/corpus}")"
+corpus="$(realpath -m "${CORPUS:-.snapshots/corpus}")"
 out="$(realpath -m "${1:?usage: route-snapshot.sh <outdir>}")"
 port="${PORT:-3199}"
+if [ ! -f "$corpus/active-release" ]; then
+  stage="$corpus.stage"
+  rm -rf "$stage"
+  mkdir -p "$corpus"
+  export HUKUM_CORPUS_DIR="$corpus"
+  unset HUKUM_CORPUS_REMOTE
+  pnpm --silent run export-corpus "$stage" >&2
+  pnpm --silent run corpus-release publish "$stage" >&2
+  rm -rf "$stage"
+fi
 release="$(tr -d '\n' < "$corpus/active-release")"
+echo "corpus release: $release"
 rm -rf "$out"
 mkdir -p "$out"
 log="$(mktemp)"

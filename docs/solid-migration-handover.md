@@ -33,7 +33,7 @@ The current route files cover:
 |---|---|---|
 | Laws | `/uu/`, `/uu/tahun/:tahun`, `/uu/:nomor/:tahun` (reading settings, status and relations banners, versions, contents, facts, `?bandingkan=<id>&dari=<id>` comparison) and `/uu/:nomor/:tahun/perubahan` (forwards to the comparison, as in Astro) | Folding of BAB and Pasal, the hide/show and drawer behaviour of the side panel, and the drag-to-swap columns of the comparison are not ported. |
 | Collections | `/koleksi/`, `/koleksi/:slug`, `/koleksi/:slug/:versi`, and `/koleksi/:slug/perubahan.json` | Two-version comparison on the collection pages (`?dari=<id>&bandingkan=<id>`, ui-sdk pickers) is in place. Still open: the contents panel and the comparison inside the text (see `CompareMode.astro`). |
-| Draft bills | `/ruu/`, `/ruu/:slug`, `/ruu/:slug/:doc`, and `/ruu/:slug/beda/:pair` | None known. Comparisons are computed by `web-solid/scripts/export-drafts.ts` and read from the active release. |
+| Draft bills | `/ruu/`, `/ruu/:slug`, `/ruu/:slug/:doc`, and `/ruu/:slug/beda/:pair` | None known. Comparisons are computed by `web-solid/scripts/export-drafts.ts` (run by `pnpm run export-corpus`) and read from the active release. |
 | Search | `/cari/`, law catalog JSON, citation lookup, and Pagefind-backed full-text results | Verify search results open the exact article in the deployed preview. |
 | Standalone | `/` | Add `/tentang/` and compare homepage behavior with Astro. |
 
@@ -41,7 +41,7 @@ These are source-tree observations, not proof of a deployed preview. The detaile
 
 ## Remaining proof and follow-up
 
-The manual Cloudflare workflow is `.github/workflows/solid-preview.yml`. The Worker configuration is `web-solid/wrangler.jsonc`. The Astro Pages configuration and its external DNS note are in `web/wrangler.jsonc`. The workflow has not been verified by a successful remote run in this checkout. The last credential check found these preview secrets absent: `SOLID_PREVIEW_WORKERS_API_TOKEN`, `SOLID_PREVIEW_R2_ACCESS_KEY_ID`, and `SOLID_PREVIEW_R2_SECRET_ACCESS_KEY`. Do not copy credentials into this document or the repository.
+The manual Cloudflare workflow is `.github/workflows/solid-preview.yml`. It exports the full corpus with `pnpm run export-corpus`, the one command that runs every export and builds the search index. The Worker configuration is `web-solid/wrangler.jsonc`. The Astro Pages configuration and its external DNS note are in `web/wrangler.jsonc`. The workflow has not been verified by a successful remote run in this checkout. The last credential check found these preview secrets absent: `SOLID_PREVIEW_WORKERS_API_TOKEN`, `SOLID_PREVIEW_R2_ACCESS_KEY_ID`, and `SOLID_PREVIEW_R2_SECRET_ACCESS_KEY`. Do not copy credentials into this document or the repository.
 
 Finish the missing route parity, then prove one amended law end to end. Verify preview access through the actual production hostname before planning cutover. Measure a large law on the deployed Worker and compare the observed CPU time with the current Cloudflare limit. A local render time does not establish Worker CPU usage. Keep Astro rollback intact until this evidence is complete.
 
@@ -56,4 +56,4 @@ pnpm run test --run
 pnpm run build
 ```
 
-For the architecture and legal behavior, read [the repository architecture](ARCHITECTURE.md), the relevant [decision records](decisions/), and the Astro source. [`web-solid/README.md`](../web-solid/README.md) describes local corpus export and preview setup. Its `pnpm run lint` instruction is stale: `web-solid/package.json` defines `check`, not `lint`.
+For the architecture and legal behavior, read [the repository architecture](ARCHITECTURE.md), the relevant [decision records](decisions/), and the Astro source. [`web-solid/README.md`](../web-solid/README.md) describes local corpus export and preview setup.

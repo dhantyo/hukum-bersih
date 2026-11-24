@@ -11,26 +11,10 @@ import * as v from "valibot";
 
 import { lawPath } from "../src/lib/schemas.ts";
 import { isPresent } from "../src/lib/text.ts";
-import {
-  amendments,
-  fromInvocation,
-  koleksi,
-  peraturan,
-  versions,
-} from "./astro-data.ts";
+import { amendments, koleksi, peraturan, versions } from "./astro-data.ts";
 import { readerText } from "./reader-text.ts";
 
 type Regulation = ReturnType<typeof peraturan.loadRegulations>[number];
-
-const [lawId, output] = process.argv.slice(2);
-
-if (lawId === undefined || output === undefined) {
-  throw new Error(
-    "Use pnpm run export-law <law-id> <output.json> or pnpm run export-law --all <release-directory>."
-  );
-}
-
-const destination = fromInvocation(output);
 
 const lawHref = (id: string) => {
   const target = peraturan.pathOf(id);
@@ -245,18 +229,15 @@ const readerLaw = (law: Regulation) => {
   };
 };
 
-const writeLaw = (law: Regulation, file: string, flag = "w") => {
-  mkdirSync(path.dirname(file), { recursive: true });
-  writeFileSync(file, `${JSON.stringify(readerLaw(law))}\n`, { flag });
-};
+export const exportLaws = (stage: string) => {
+  const laws = peraturan.loadRegulations().filter((law) => law.type === "uu");
 
-const exportCorpus = (laws: Regulation[], directory: string) => {
   if (laws.length === 0) {
     throw new Error("The corpus contains no laws");
   }
 
-  mkdirSync(directory, { recursive: true });
-  const scratch = mkdtempSync(path.join(directory, ".laws-"));
+  mkdirSync(stage, { recursive: true });
+  const scratch = mkdtempSync(path.join(stage, ".laws-"));
 
   try {
     for (const law of laws) {
@@ -266,27 +247,17 @@ const exportCorpus = (laws: Regulation[], directory: string) => {
         throw new Error(`Invalid law path: ${lawDirectory}`);
       }
 
-      writeLaw(law, path.join(scratch, lawDirectory, "index.json"), "wx");
+      const file = path.join(scratch, lawDirectory, "index.json");
+      mkdirSync(path.dirname(file), { recursive: true });
+      writeFileSync(file, `${JSON.stringify(readerLaw(law))}\n`, {
+        flag: "wx",
+      });
     }
 
-    renameSync(scratch, path.join(directory, "laws"));
+    renameSync(scratch, path.join(stage, "laws"));
   } finally {
     rmSync(scratch, { recursive: true, force: true });
   }
 
   console.log(`Exported ${laws.length} laws`);
 };
-
-const laws = peraturan.loadRegulations().filter((law) => law.type === "uu");
-
-if (lawId === "--all") {
-  exportCorpus(laws, destination);
-} else {
-  const law = laws.find((record) => record.id === lawId);
-
-  if (!law) {
-    throw new Error(`Unknown law: ${lawId}`);
-  }
-
-  writeLaw(law, destination);
-}

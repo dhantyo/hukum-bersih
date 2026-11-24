@@ -4,19 +4,11 @@ import path from "node:path";
 import * as v from "valibot";
 
 import { draftDocumentId, draftPair, slug } from "../src/lib/schemas.ts";
-import { compare, data, fromInvocation } from "./astro-data.ts";
+import { compare, data } from "./astro-data.ts";
 import { draftComparisonRows } from "./draft-comparison.ts";
 import { readerText } from "./reader-text.ts";
 
 type Draft = ReturnType<typeof data.loadRuus>[number];
-
-const [stage] = process.argv.slice(2);
-
-if (stage === undefined) {
-  throw new Error("Use pnpm run export-drafts <release-directory>.");
-}
-
-const root = fromInvocation(stage, "drafts");
 
 const documentMetadata = (document: Draft["documents"][number]) => {
   const {
@@ -74,7 +66,7 @@ const exportComparisons = (bill: Draft, directory: string, name: string) => {
   }
 };
 
-const exportDraft = (bill: Draft) => {
+const exportDraft = (bill: Draft, root: string) => {
   const directory = path.join(root, v.parse(slug, bill.slug));
   mkdirSync(path.join(directory, "documents"), { recursive: true });
   mkdirSync(path.join(directory, "comparisons"), { recursive: true });
@@ -109,6 +101,10 @@ const exportDraft = (bill: Draft) => {
   exportComparisons(bill, directory, name);
 };
 
-for (const bill of data.loadRuus()) {
-  exportDraft(bill);
-}
+export const exportDrafts = (stage: string) => {
+  const root = path.join(stage, "drafts");
+
+  for (const bill of data.loadRuus()) {
+    exportDraft(bill, root);
+  }
+};

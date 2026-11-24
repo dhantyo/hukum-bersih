@@ -38,18 +38,12 @@ jobs:
           pnpm run test --run
           pnpm run build
       - name: Prepare preview corpus
-        run: |
-          stage="$RUNNER_TEMP/solid-corpus"
-          pnpm run export-law uu_11_2008 "$stage/laws/uu/11/2008/index.json"
-          pnpm run export-law uu_11_2020 "$stage/laws/uu/11/2020/index.json"
-          pnpm run export-law uu_9_1960 "$stage/laws/uu/9/1960/index.json"
-          pnpm run export-catalog "$stage"
-          pnpm run index-corpus "$stage"
+        run: pnpm run export-corpus "$RUNNER_TEMP/solid-corpus"
       - name: Install rclone
         run: |
           sudo apt-get update
           sudo apt-get install -y rclone
-      - name: Publish laws and search to preview R2
+      - name: Publish the corpus to preview R2
         id: corpus
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
@@ -86,5 +80,7 @@ jobs:
           curl --fail-with-body -sS "$PREVIEW_URL/uu/11/2008/perubahan/" -o "$RUNNER_TEMP/solid-comparison.html"
           grep -Fq 'id="uu_1_2024-pasal-27"' "$RUNNER_TEMP/solid-comparison.html"
           curl --fail-with-body -sS "$PREVIEW_URL/search-index/$RELEASE/pagefind-entry.json" -o "$RUNNER_TEMP/solid-index.json"
-          jq -e '.languages.id.page_count == 2' "$RUNNER_TEMP/solid-index.json"
+          jq -e '.languages.id.page_count > 1000' "$RUNNER_TEMP/solid-index.json"
+          curl --fail-with-body -sS "$PREVIEW_URL/koleksi/ite/" -o /dev/null
+          curl --fail-with-body -sS "$PREVIEW_URL/ruu/perampasan-aset/" -o /dev/null
           printf 'Preview: %s\n\nCorpus release: `%s`\n' "$PREVIEW_URL" "$RELEASE" >> "$GITHUB_STEP_SUMMARY"

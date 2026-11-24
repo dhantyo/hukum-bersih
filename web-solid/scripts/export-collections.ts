@@ -7,7 +7,6 @@ import { collectionVersion, slug } from "../src/lib/schemas.ts";
 import { isPresent } from "../src/lib/text.ts";
 import {
   amendments,
-  fromInvocation,
   koleksi,
   merge,
   peraturan,
@@ -21,14 +20,6 @@ type Collection = ReturnType<typeof koleksi.loadKoleksi>[number];
 type Merged = NonNullable<ReturnType<typeof merge.mergedDoc>>;
 
 type VersionRows = ReturnType<typeof versions.versionRows>;
-
-const [stage] = process.argv.slice(2);
-
-if (stage === undefined) {
-  throw new Error("Use pnpm run export-collections <release-directory>.");
-}
-
-const root = fromInvocation(stage, "collections");
 
 const lawLink = (id: string) => {
   const lawPath = peraturan.pathOf(id);
@@ -177,8 +168,13 @@ const exportCollection = (collection: Collection, directory: string) => {
   );
 };
 
-for (const collection of koleksi.loadKoleksi()) {
-  const collectionSlug = v.parse(slug, collection.slug);
+export const exportCollections = (stage: string) => {
+  for (const collection of koleksi.loadKoleksi()) {
+    const collectionSlug = v.parse(slug, collection.slug);
 
-  exportCollection(collection, path.join(root, collectionSlug));
-}
+    exportCollection(
+      collection,
+      path.join(stage, "collections", collectionSlug)
+    );
+  }
+};

@@ -4,36 +4,27 @@ The Solid 2 rewrite serves law pages on demand. Public law data and Pagefind ass
 
 ## Run locally
 
-Use the Node.js version in `.node-version` and the pnpm version in `package.json`. From this directory run `pnpm install --frozen-lockfile` and `pnpm run build`. The export command reads the generated Akoma Ntoso and dependencies in the sibling Astro project. Build the Akoma Ntoso corpus and install the Astro dependencies before exporting.
+Use the Node.js version in `.node-version` and the pnpm version in `package.json`. From this directory run `pnpm install --frozen-lockfile` and `pnpm run build`. The export reads the generated Akoma Ntoso and the dependencies of the sibling Astro project, so build the Akoma Ntoso corpus and install the Astro dependencies first.
 
 ```sh
 stage="$(mktemp -d)"
-mkdir -p "$stage/laws/uu/11/2008"
-pnpm run export-law uu_11_2008 "$stage/laws/uu/11/2008/index.json"
-pnpm run export-catalog "$stage"
-pnpm run index-corpus "$stage"
+pnpm run export-corpus "$stage"
 
 export HUKUM_CORPUS_DIR="$(mktemp -d)"
 pnpm run corpus-release publish "$stage"
 pnpm run start
 ```
 
+`export-corpus` writes the whole corpus into the staging directory, in this order: the laws (`laws/`), the collections (`collections/`: the consolidated texts, `perubahan.json`, version comparisons and the timeline of a collection with no merged text), the drafts (`drafts/`: timelines, documents and the comparison of every pair of versions that have text), the catalog (`law-catalog.json` and the `listings/` rows for the home page, `/uu/`, `/uu/tahun/` and `/ruu/`), and last the Pagefind index (`pagefind/`). The index step renders pages with the built server, so run `pnpm run build` first. Use a new staging directory: the command does not replace an existing `laws/`.
+
 Open `http://localhost:3000/uu/11/2008/` for the reader and `http://localhost:3000/cari/` for full-text search. To switch to an earlier published release, run `pnpm run corpus-release activate <release-id>` with the same corpus directory.
-
-To prepare all laws, create a fresh staging directory and run `pnpm run export-law --all "$stage"` before indexing. The exporter creates the `laws/` directory. An existing export in that directory is kept intact.
-
-For a full corpus release, run `pnpm run export-collections "$stage"` before publishing. It adds the latest and historical consolidated texts and the comparison data used by `/koleksi/<slug>/perubahan.json` and by the version comparison on `/koleksi/<slug>/` (`?dari=<id>&bandingkan=<id>`). A collection with no merged text gets `collections/<slug>/timeline.json` instead, for the timeline the page shows.
-
-Run `pnpm run export-drafts "$stage"` before exporting the catalog and building the search index to include draft bill timelines, searchable draft documents and the comparison of every pair of draft versions that have text (`drafts/<slug>/comparisons/<older>...<newer>.json`).
-
-`export-catalog` also writes `listings/` (the `/uu/` overview, one file per `/uu/tahun/<year>/` and the `/ruu/` rows, with the dates, status labels and counts already formatted). Releases published before it lack these files, so the home, `/uu/`, `/uu/tahun/` and `/ruu/` pages need a release made after it.
 
 Run `pnpm run check`, `pnpm exec tsc --noEmit`, and `pnpm run test --run` to check the preview code.
 
-To prove a refactor changed no output, build, run `scripts/build-snapshot-corpus.sh .snapshots/corpus` once, then `CORPUS=.snapshots/corpus/corpus scripts/route-snapshot.sh .snapshots/before`. Make the change, rebuild, snapshot to `.snapshots/after`, and run `diff -r .snapshots/before .snapshots/after`. The script header lists the few bytes it normalises. The `.snapshots/` folder is ignored by git.
+To prove a refactor changed no output, build, then run `CORPUS=.snapshots/before-corpus scripts/route-snapshot.sh .snapshots/before`. The first run exports and publishes the corpus into that directory and prints its release id. Make the change, rebuild, run `CORPUS=.snapshots/before-corpus scripts/route-snapshot.sh .snapshots/after`, and run `diff -r .snapshots/before .snapshots/after`. The release id hashes every released file, so an unchanged id after re-exporting means the export is unchanged. The script header lists the few bytes it normalises. The `.snapshots/` folder is ignored by git.
 
 ## Cloudflare preview
 
-The manual **Deploy Solid preview** workflow builds the Worker and publishes three laws, including UU ITE and the larger UU 11/2020. It targets the `hukum-bersih-solid-preview` Worker and R2 bucket.
+The manual **Deploy Solid preview** workflow builds the Worker and publishes the full corpus with `export-corpus`: every law, the collections, the draft bills and the search index. A subset would leave the draft and collection pages out, and `export-corpus` has no subset option. It targets the `hukum-bersih-solid-preview` Worker and R2 bucket.
 
-Create the preview bucket and enable a `workers.dev` subdomain for the Cloudflare account. Configure the repository secrets `CLOUDFLARE_ACCOUNT_ID`, `SOLID_PREVIEW_WORKERS_API_TOKEN` for Worker deployment, and `SOLID_PREVIEW_R2_ACCESS_KEY_ID` and `SOLID_PREVIEW_R2_SECRET_ACCESS_KEY` for object access to the preview bucket. The workflow verifies the deployed article permalink, comparison permalink, and Pagefind index. Its summary records the preview URL and corpus release ID.
+Create the preview bucket and enable a `workers.dev` subdomain for the Cloudflare account. Configure the repository secrets `CLOUDFLARE_ACCOUNT_ID`, `SOLID_PREVIEW_WORKERS_API_TOKEN` for Worker deployment, and `SOLID_PREVIEW_R2_ACCESS_KEY_ID` and `SOLID_PREVIEW_R2_SECRET_ACCESS_KEY` for object access to the preview bucket. The workflow verifies the deployed article permalink, comparison permalink, a collection page, a draft page and the Pagefind index. Its summary records the preview URL and corpus release ID.

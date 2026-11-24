@@ -14,13 +14,12 @@ import path from "node:path";
 import { handleRequest } from "../dist/server/server.js";
 import type { CorpusBucket } from "../src/server/corpus.ts";
 
-const [releaseDirectory] = process.argv.slice(2);
-
-if (!releaseDirectory) {
-  throw new Error("Usage: pnpm run index-corpus <release-directory>");
-}
-
-const renderDocument = async (site: string, pagePath: string, key: string) => {
+const renderDocument = async (
+  releaseDirectory: string,
+  site: string,
+  pagePath: string,
+  key: string
+) => {
   const corpus: CorpusBucket = {
     async get(requestKey) {
       if (requestKey === "active-release") {
@@ -65,44 +64,48 @@ const runPagefind = (site: string, output: string) => {
   }
 };
 
-const site = await mkdtemp(path.join(tmpdir(), "hukum-pagefind-"));
+export const indexCorpus = async (releaseDirectory: string) => {
+  const site = await mkdtemp(path.join(tmpdir(), "hukum-pagefind-"));
 
-const scratch = await mkdtemp(
-  path.join(path.resolve(releaseDirectory), ".pagefind-")
-);
+  const scratch = await mkdtemp(
+    path.join(path.resolve(releaseDirectory), ".pagefind-")
+  );
 
-try {
-  let count = 0;
+  try {
+    let count = 0;
 
-  for await (const file of glob("uu/*/*/index.json", {
-    cwd: path.join(releaseDirectory, "laws"),
-  })) {
-    await renderDocument(
-      site,
-      `/${file.slice(0, -"index.json".length)}`,
-      `laws/${file}`
-    );
-    count += 1;
+    for await (const file of glob("uu/*/*/index.json", {
+      cwd: path.join(releaseDirectory, "laws"),
+    })) {
+      await renderDocument(
+        releaseDirectory,
+        site,
+        `/${file.slice(0, -"index.json".length)}`,
+        `laws/${file}`
+      );
+      count += 1;
+    }
+
+    if (count === 0) {
+      throw new Error("The release has no law documents to index");
+    }
+
+    for await (const file of glob("drafts/*/documents/*.json", {
+      cwd: releaseDirectory,
+    })) {
+      const [, slug, , document] = file.split("/");
+      await renderDocument(
+        releaseDirectory,
+        site,
+        `/ruu/${slug}/${document.slice(0, -".json".length)}/`,
+        file
+      );
+    }
+
+    runPagefind(site, scratch);
+    await rename(scratch, path.resolve(releaseDirectory, "pagefind"));
+  } finally {
+    await rm(scratch, { recursive: true, force: true });
+    await rm(site, { recursive: true, force: true });
   }
-
-  if (count === 0) {
-    throw new Error("The release has no law documents to index");
-  }
-
-  for await (const file of glob("drafts/*/documents/*.json", {
-    cwd: releaseDirectory,
-  })) {
-    const [, slug, , document] = file.split("/");
-    await renderDocument(
-      site,
-      `/ruu/${slug}/${document.slice(0, -".json".length)}/`,
-      file
-    );
-  }
-
-  runPagefind(site, scratch);
-  await rename(scratch, path.resolve(releaseDirectory, "pagefind"));
-} finally {
-  await rm(scratch, { recursive: true, force: true });
-  await rm(site, { recursive: true, force: true });
-}
+};
