@@ -12,6 +12,7 @@ import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 
 import { handleRequest } from "../dist/server/server.js";
+import type { CorpusBucket } from "../src/server/corpus.ts";
 
 const [releaseDirectory] = process.argv.slice(2);
 
@@ -19,8 +20,8 @@ if (!releaseDirectory) {
   throw new Error("Usage: pnpm run index-corpus <release-directory>");
 }
 
-async function renderDocument(site, path, key) {
-  const corpus = {
+const renderDocument = async (site: string, path: string, key: string) => {
+  const corpus: CorpusBucket = {
     async get(requestKey) {
       if (requestKey === "active-release") {
         return new Response("staging");
@@ -36,9 +37,7 @@ async function renderDocument(site, path, key) {
 
   const response = await handleRequest(
     new Request(`https://index.invalid${path}`),
-    {
-      event: { locals: { corpus } },
-    }
+    { event: { locals: { corpus } } }
   );
 
   if (!response.ok) {
@@ -48,9 +47,9 @@ async function renderDocument(site, path, key) {
   const destination = join(site, path, "index.html");
   await mkdir(dirname(destination), { recursive: true });
   await writeFile(destination, await response.text());
-}
+};
 
-function runPagefind(site, output) {
+const runPagefind = (site: string, output: string) => {
   const pagefind = spawnSync(
     "pagefind",
     ["--site", site, "--output-path", output],
@@ -64,7 +63,7 @@ function runPagefind(site, output) {
   if (pagefind.status !== 0) {
     throw new Error(`Pagefind exited with status ${pagefind.status}`);
   }
-}
+};
 
 const site = await mkdtemp(join(tmpdir(), "hukum-pagefind-"));
 const scratch = await mkdtemp(join(resolve(releaseDirectory), ".pagefind-"));
@@ -80,10 +79,10 @@ try {
       `/${file.slice(0, -"index.json".length)}`,
       `laws/${file}`
     );
-    count++;
+    count += 1;
   }
 
-  if (!count) {
+  if (count === 0) {
     throw new Error("The release has no law documents to index");
   }
 
