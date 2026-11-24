@@ -1,7 +1,7 @@
 {
-  "name": "example-fullstack-tanstack",
-  "version": "0.0.0",
-  "description": "",
+  "name": "hukum-bersih-web-solid",
+  "version": "0.1.0",
+  "private": true,
   "type": "module",
   "packageManager": "pnpm@10.34.9",
   "scripts": {
@@ -18,7 +18,7 @@
     "check": "ultracite check",
     "fix": "ultracite fix"
   },
-  "license": "MIT",
+  "license": "AGPL-3.0-or-later",
   "devDependencies": {
     "@interfere/landmines": "^0.1.1",
     "@solidjs/diagnostics": "^2.0.1",
