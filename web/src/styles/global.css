@@ -13,6 +13,7 @@ body {
   font: 400 var(--fs-base) / 1.6 var(--font-ui);
 }
 h1, h2, h3 { line-height: 1.25; font-weight: 600; }
+strong, b { font-weight: 600; } /* 700 is for the site name only */
 h1 { font-size: var(--fs-2xl); margin: var(--s-2) 0 var(--s-4); letter-spacing: -0.01em; }
 h2 { font-size: var(--fs-lg); margin: var(--s-7) 0 var(--s-4); }
 h3 { font-size: var(--fs-base); margin: var(--s-5) 0 var(--s-2); }
@@ -29,7 +30,7 @@ main.wrap { padding-top: var(--s-5); }
 main.wrap > .breadcrumbs:first-child { margin-top: 0; }
 .muted { color: var(--text-muted); }
 .small { font-size: var(--fs-sm); }
-.eyebrow { font-size: var(--fs-sm); color: var(--text-muted); margin: 0; font-weight: 500; }
+.eyebrow { font-size: var(--fs-sm); color: var(--text-muted); margin: 0; }
 /* Reader view of law texts: the same heading as printed (.f-asli) or in normal capitals
    (.f-modern); Modern is the default (components/LawText.astro, ReadingSettings.astro). */
 :root:not([data-format="asli"]) .f-asli, :root[data-format="asli"] .f-modern { display: none; }

@@ -53,7 +53,13 @@ No brand red: in this product red means "deleted". No gradients.
 | `--fs-xl` | 26px / 1.25 | page titles on small screens |
 | `--fs-2xl` | 32px / 1.2 | page titles (h1) |
 
-Weights: 400 text, 600 headings and labels, 700 only for the site name (`--fs-lg`).
+Weights: 400 text, 600 headings, labels and `<strong>`, 500 only for the main navigation,
+700 only for the site name (`--fs-lg`).
+
+Hierarchy, checked against the rendered pages (2026-11-21): interface pages use page title
+`--fs-2xl` · section heading `--fs-lg` · item title (law rows, cards) `--fs-base`/`--fs-md`
+600 · text `--fs-base` · meta `--fs-sm` · labels `--fs-xs`. Law text has its own scale,
+anchored on the text (see "Law text").
 
 ## Spacing and layout
 
@@ -88,13 +94,21 @@ Radius `--r-sm` 4px (badges, inputs, buttons), `--r-md` 8px (cards, panels). No 
   ([decision 0009](docs/decisions/0009-law-view-asli-modern.md)); the text is the same, only
   the layout changes:
   - *Modern* (default): headings left-aligned in the interface font and normal capitals, one
-    size per level: BAB `--fs-lg` with a rule above ("Bab I  Ketentuan Umum", number muted),
-    Bagian `--fs-md`, Paragraf `--fs-base` muted, Pasal `--fs-base` (bold sans at 16px reads as
-    large as the 17.5px serif text). A heading sits closer to its first pasal than to the text
-    before it,
+    token step per level, anchored on the text (17.5px; phones one step smaller):
+
+    | Level | Desktop | Phone | vs text |
+    |---|---|---|---|
+    | BAB (rule above, number muted) | `--fs-xl` 26 | `--fs-lg` 20 | 1.5× |
+    | Bagian (number muted) | `--fs-lg` 20 | `--fs-md` 17.5 | 1.1× |
+    | Pasal, Penjelasan entry | `--fs-md` 17.5 | `--fs-base` 16 | 1× bold sans |
+    | Paragraf (rare) | `--fs-md`, muted | `--fs-base`, muted | 1× |
+
+    Set as `--h-bab`, `--h-bagian`, `--h-pasal` on `.law`. A heading sits closer to its first
+    pasal than to the text before it,
     a thin rule above each BAB, no boxes. Pembukaan folded to one line with what it contains
     ("Menimbang (7) · Mengingat"); the closing under "Pengesahan dan pengundangan".
-  - *Asli*: as the official copy: title, BAB and Pasal centred in capitals, Pembukaan open.
+  - *Asli*: as the official copy: headings in the law's own serif at text size, bold, centred,
+    capitals exactly as stored (never forced); Pembukaan open.
   - BAB, Bagian, Paragraf and Pasal headings are buttons that fold their content; the arrow
     hangs in the left margin (before the heading on narrow screens). A folded pasal shows its
     first words. Folded content uses `hidden="until-found"` so find-in-page still finds it.
