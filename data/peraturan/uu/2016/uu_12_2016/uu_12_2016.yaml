@@ -54,10 +54,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2016_2016-07-26.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 27e61adf12cb2268200c5f3aac6571cc2a86be8850e292717b1a9f58f1e8bd48
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 3
+  ocr_unknown: 23
 pdf_sha256: 81b917b7656d89a08cf694163583fa4bf92a0d216d4727b64939241e33ef6002
 tanggal_pengundangan: '2016-07-27'
 tanggal_berlaku: '2016-07-27'

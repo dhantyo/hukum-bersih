@@ -30,10 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2016_2016-11-17.txt
   pasal_count: 44
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a75496a615f49eec2ac83ed3d2c21eb63d04862a7c6dd556877337cc38c11e50
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 34
 pdf_sha256: 3c2b40756ab4ca2ed32072a0904de3944516226862414246815be7d8ec94a5cc
 tanggal_pengundangan: '2016-11-18'
 tanggal_berlaku: '2017-01-01'

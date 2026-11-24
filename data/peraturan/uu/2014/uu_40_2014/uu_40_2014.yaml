@@ -28,10 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_40_2014_2014-10-17.txt
   pasal_count: 92
-  parser_version: 11
+  parser_version: 16
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 15e4c53bb6de140a8bb8ae855c7dd67017876575317341a8664dfd23817c70b4
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 1
+  ocr_unknown: 50
 pdf_sha256: 835d871fade7e997b29207d0554904f7edee971c9c797c21fd0e0099eaba87f8
 tanggal_pengundangan: '2014-10-17'
 tanggal_berlaku: '2014-10-17'
