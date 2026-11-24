@@ -24,6 +24,12 @@ A point label that lost its space ("hurufb", "Hurufj") is split ("huruf b"): lab
 printed with one, and the Penjelasan's structure is found by them. Other joined words
 ("danatau") may be printed so and stay as read.
 
+Before that, a letter of another script that looks like a Latin one inside an otherwise Latin
+word (Turkish dotless ı in "meningkatkarı", a Greek Rho in "Ρasal") is mapped to the Latin letter
+by Unicode's confusables data (UTS #39, through ``confusable_homoglyphs``), so the spell fix sees
+whole words. Words with no Latin letter, digits, punctuation, symbols and accented Latin letters
+are never touched.
+
 Everything else unknown is left as read and counted (``Fixes.suspects``) for a person to check.
 Without Hunspell nothing is corrected.
 
@@ -43,6 +49,7 @@ from functools import cache
 from pathlib import Path
 
 import yaml
+from confusable_homoglyphs import confusables as uts39
 
 RULES = Path(__file__).parent / "ocr_rules"
 DICTIONARIES = "id_ID,en_US"     # Hunspell's; found through $DICPATH or the system's folders
@@ -56,6 +63,29 @@ CONFIDENCE = 0.9
 WORD = re.compile(r"[A-Za-z]+")
 LABEL = re.compile(r"(huruf)([a-z])", re.IGNORECASE)   # "Hurufj": "Huruf j" without its space
 ROMAN = re.compile(r"[IVXLC]+[A-Z]?")   # "XIIA" (an inserted BAB): a number, never a word
+
+
+LETTERS = re.compile(r"[^\W\d_]+")   # a run of letters of any script
+LATIN = re.compile(r"[A-Za-z]")
+
+
+@cache
+def _latin_lookalike(ch: str) -> str | None:
+    """The ASCII letter UTS #39 says ``ch`` is confusable with, or None (also for accented
+    letters like é and ü, which are not confusable with a plain one)."""
+    if ch.isascii():
+        return None
+    for found in uts39.is_confusable(ch, greedy=True) or []:
+        for glyph in found["homoglyphs"]:
+            if len(glyph["c"]) == 1 and glyph["c"].isascii() and glyph["c"].isalpha():
+                return glyph["c"]
+    return None
+
+
+def _map_lookalikes(word: str) -> str:
+    if word.isascii() or not LATIN.search(word):
+        return word
+    return "".join(_latin_lookalike(ch) or ch for ch in word)
 
 
 @dataclass
@@ -137,13 +167,22 @@ def _same_case(new: str, like: str) -> str | None:
 
 def fix_lines(lines: list[str]) -> tuple[list[str], Fixes]:
     """One law's OCR'd lines with its confident corrections made."""
+    mapped: list[tuple[str, str]] = []
+
+    def lookalikes(m: re.Match) -> str:
+        new = _map_lookalikes(m[0])
+        if new != m[0]:
+            mapped.append((m[0], new))
+        return new
+
+    lines = [LETTERS.sub(lookalikes, ln) for ln in lines]
     here = Counter(w.lower() for ln in lines for w in WORD.findall(ln))
     known = lexicon()
     unknown = {w for ln in lines for w in WORD.findall(ln)
                if len(w) >= MIN_LENGTH and w.lower() not in known and _same_case("x", w)
                and not ROMAN.fullmatch(w)}
     real = dictionary_words(unknown)
-    fixes = Fixes(checker="hunspell" if real is not None else "none")
+    fixes = Fixes(changed=mapped, checker="hunspell" if real is not None else "none")
 
     def one(m: re.Match) -> str:
         word = m[0]
