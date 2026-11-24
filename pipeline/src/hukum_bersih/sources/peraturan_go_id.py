@@ -18,6 +18,7 @@ import time
 from collections.abc import Iterator
 from dataclasses import dataclass
 from pathlib import Path
+from typing import NamedTuple
 
 import httpx
 
@@ -195,19 +196,12 @@ def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str, extra: list[Pat
             rec.pop("parse_error", None)
             rec["pdf_quality"] = "image_only_or_unparsed"
             return "no pasal found (scanned PDF?)"
-        before = max((v.get("pasal_count") or 0) for v in old) if old else 0
-        # never replace a text with a poorer one; an amending law's older texts counted the
-        # quoted pasal inside Pasal I as its own (UU 1/2025: 31 for Pasal I, II), so for those
-        # only the word counts below are compared
-        if doc.pasal_count < before and not doc.amending:
-            rec["reparse_error"] = f"v{PARSER_VERSION}: {doc.pasal_count} pasal, stored text has {before}"
-            return f"kept old text (new parse has {doc.pasal_count} pasal, stored {before})"
         text = to_bluebell(doc)
-        if old:                                            # nor one that lost a share of its words
-            lost = _words_lost(folder / old[0]["text"], text)
-            if lost:
-                rec["reparse_error"] = f"v{PARSER_VERSION}: {lost}"
-                return f"kept old text ({lost})"
+        if old:                                            # never replace a text with a poorer one
+            reason = _poorer_than_stored(folder / old[0]["text"], text, doc.amending)
+            if reason:
+                rec["reparse_error"] = f"v{PARSER_VERSION}: {reason}"
+                return f"kept old text ({reason})"
         to_akn(text, rec["akn"], "act")                    # validates structure and markup
         version = f"{work}_{date or rec['year']}"
         folder.mkdir(parents=True, exist_ok=True)
@@ -243,24 +237,49 @@ def _ocr_engine(warnings: list[str]) -> str:
 
 
 WORDS_KEPT = 0.85   # a new text must keep at least this share of the stored text's words
+BODY_END = re.compile(r"^ATTACHMENT\b", re.MULTILINE)
+# The Penjelasan's own "TAMBAHAN LEMBARAN NEGARA REPUBLIK INDONESIA NOMOR n" line closes it;
+# what follows is no Penjelasan (a map's OCR noise in UU 16/2022). Upper case only: quoted
+# references inside the text read "Tambahan Lembaran Negara"; "-" and spacing as OCR gives them.
+PENJELASAN_END = re.compile(r"^[ \t]*TAMBAHAN\s+LEMBARAN[\s-]+NEGARA\b", re.MULTILINE)
 
 
-def _words_lost(stored: Path, new: str) -> str | None:
-    """Why ``new`` looks poorer than the stored text, or None: fewer than WORDS_KEPT of its
-    words, in all or in the Penjelasan (UU 2/2025 once lost its Penjelasan to a parser bug
-    while its pasal count stayed the same)."""
+class Counts(NamedTuple):
+    pasal: int        # ART lines of the body (not of the Penjelasan or a Lampiran)
+    words: int        # all words of the text
+    penjelasan: int   # words of the Penjelasan proper
+
+
+def measure(text: str) -> Counts:
+    """What the importer compares between a stored text and a new one, read from the Bluebell
+    text itself (a record's ``pasal_count`` can be stale: uu_17_2016 says 3, its text has 2)."""
+    cut = BODY_END.search(text)
+    body = text[:cut.start()] if cut else text
+    _, _, rest = text.partition("ATTACHMENT Penjelasan")
+    end = PENJELASAN_END.search(rest)
+    penjelasan = rest[:end.start()] if end else rest
+    return Counts(len(re.findall(r"^\s*ART\b", body, re.MULTILINE)), _words(text), _words(penjelasan))
+
+
+def _words(text: str) -> int:
+    return len(re.findall(r"\w+", text))
+
+
+def _poorer_than_stored(stored: Path, new: str, amending: bool) -> str | None:
+    """Why ``new`` looks poorer than the stored text, or None: fewer pasal (not for an
+    amending law, whose older texts counted the quoted pasal inside Pasal I as their own:
+    UU 1/2025, 31 for Pasal I, II; its word counts are still compared), or fewer than
+    WORDS_KEPT of the words, in all or in the Penjelasan (UU 2/2025 once lost its Penjelasan to
+    a parser bug while its pasal count stayed the same). No stored text, nothing to lose."""
     if not stored.exists():
         return None
-
-    def count(text: str) -> tuple[int, int]:
-        body, _, penj = text.partition("ATTACHMENT Penjelasan")
-        return len(re.findall(r"\w+", body + penj)), len(re.findall(r"\w+", penj))
-
-    (old_all, old_penj), (new_all, new_penj) = count(stored.read_text()), count(new)
-    if new_all < WORDS_KEPT * old_all:
-        return f"new text has {new_all} words, stored text {old_all}"
-    if old_penj > 50 and new_penj < WORDS_KEPT * old_penj:
-        return f"new Penjelasan has {new_penj} words, stored {old_penj}"
+    old, now = measure(stored.read_text()), measure(new)
+    if now.pasal < old.pasal and not amending:
+        return f"new text has {now.pasal} pasal, stored text {old.pasal}"
+    if now.words < WORDS_KEPT * old.words:
+        return f"new text has {now.words} words, stored text {old.words}"
+    if old.penjelasan > 50 and now.penjelasan < WORDS_KEPT * old.penjelasan:
+        return f"new Penjelasan has {now.penjelasan} words, stored {old.penjelasan}"
     return None
 
 
