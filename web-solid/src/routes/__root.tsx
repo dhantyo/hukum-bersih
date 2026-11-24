@@ -10,6 +10,7 @@ export const Route = createRootRouteWithContext<RouterContext>()({
       <Link to="/">Hukum Bersih</Link>
       <Link to="/uu/">Undang-Undang</Link>
       <Link to="/koleksi/">Koleksi</Link>
+      <Link to="/ruu/">RUU</Link>
       <Link to="/cari/">Cari</Link>
     </nav>
     <Outlet />

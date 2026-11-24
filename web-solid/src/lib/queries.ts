@@ -1,6 +1,7 @@
 import { QueryClient, queryOptions } from '@tanstack/solid-query';
 import { getLawOverview, getLawYear } from './catalog';
 import { getCollection, getCollections } from './collections';
+import { getDraftBill, getDraftText, listDraftBills } from './drafts';
 import { getLaw, getLawComparison } from './laws';
 import { getSearchResults } from './search';
 
@@ -43,4 +44,19 @@ export const collectionQuery = (slug: string, version = 'latest') => queryOption
 export const searchQuery = (query: string) => queryOptions({
   queryKey: ['search', query],
   queryFn: () => getSearchResults(query),
+});
+
+export const draftBillsQuery = () => queryOptions({
+  queryKey: ['drafts'],
+  queryFn: () => listDraftBills(),
+});
+
+export const draftBillQuery = (slug: string) => queryOptions({
+  queryKey: ['drafts', slug],
+  queryFn: () => getDraftBill(slug),
+});
+
+export const draftTextQuery = (slug: string, id: string) => queryOptions({
+  queryKey: ['drafts', slug, id],
+  queryFn: () => getDraftText(slug, id),
 });

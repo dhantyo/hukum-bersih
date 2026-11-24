@@ -13,7 +13,8 @@ declare module '@solidjs/web' {
 
 function isPublicLawRequest(request: Request, url: URL) {
   const documentPath = /^\/uu\/\d+\/\d{4}\/(?:perubahan\/)?$/.test(url.pathname) ||
-    /^\/koleksi\/[a-z0-9-]+\/(?:\d{4}-\d{2}-\d{2}\/)?$/.test(url.pathname);
+    /^\/koleksi\/[a-z0-9-]+\/(?:\d{4}-\d{2}-\d{2}\/)?$/.test(url.pathname) ||
+    /^\/ruu\/[a-z0-9-]+\/[a-z0-9_-]+\/$/.test(url.pathname);
   return request.method === 'GET' && !url.search &&
     documentPath &&
     request.headers.get('Accept')?.includes('text/html') &&
