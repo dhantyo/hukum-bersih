@@ -25,7 +25,7 @@ The shared checkout has unrelated, uncommitted agent-file changes and a local `.
 
 ## Current implementation
 
-`web-solid/` uses Solid 2 through `@solidjs/vite-plugin`, TanStack Router, TanStack Query, StyleX, and Oxlint. Route loaders use query options and a request-scoped query client. The runtime reads JSON from an active immutable corpus release in R2, renders document routes on demand, and caches public HTML. The release also carries Pagefind assets. `web-solid/scripts/corpus-release.mjs` publishes a release, writes its ready marker, then switches `active-release`.
+`web-solid/` uses Solid 2 through `@solidjs/vite-plugin`, TanStack Router, TanStack Query, StyleX, and Oxlint. Route loaders use query options and a request-scoped query client. The runtime reads JSON from an active immutable corpus release in R2, renders document routes on demand, and caches public HTML. The release also carries Pagefind assets. `web-solid/scripts/corpus-release.ts` publishes a release, writes its ready marker, then switches `active-release`.
 
 The current route files cover:
 
