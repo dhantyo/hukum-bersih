@@ -53,6 +53,7 @@ const nav = [
   </head>
   <body>
     <a class="skip" href="#main">Langsung ke isi</a>
+    <div class="site-slot">
     <header class="site">
       <div class={`wrap bar${search ? "" : " no-search"}`}>
         <a class="brand" href={base}>Hukum Bersih</a>
@@ -70,6 +71,7 @@ const nav = [
         <ReadingSettings view={view} />
       </div>
     </header>
+    </div>
     <main id="main" class="wrap" data-pagefind-body={noindex ? undefined : true}>
       {!noindex && <span hidden data-pagefind-meta={`title:${title}`}></span>}
       <slot />
@@ -89,74 +91,83 @@ const nav = [
       </div>
     </footer>
     <script>
-      // The header follows the scroll (lib/barscroll.ts, as in Sapu Berita): it slides away by the
-      // distance scrolled down and comes back by the distance scrolled up, then settles shown or
-      // hidden. It stays while "Aa" is open or focus is inside it, and tucks away when a link
-      // jumps within the page. --header-shown (px of it on screen) lets sticky things sit below it.
-      import { nextBarOffset, settledBarOffset } from "../lib/barscroll.ts";
+      // The header follows the scroll like a phone browser's address bar (lib/barscroll.ts, as in
+      // Sapu Berita). The browser moves it, like the text: script only switches it between in the
+      // page ("free"), pinned to the top and hidden above, so it never lags the page. It stays
+      // while "Aa" is open or focus is inside it, and tucks away after a jump within the page.
+      // [data-under-header] elements (sticky panel, comparison bar) get --header-shown: the
+      // header's height while it is pinned, else 0.
+      import { settledBarOffset, shownPx, step, type HeaderState } from "../lib/barscroll.ts";
+      const root = document.documentElement;
       const header = document.querySelector<HTMLElement>("header.site");
-      if (header) {
-        // Per frame only the header and the few sticky things under it ([data-under-header]) are
-        // written to, and only when a value changes: writing to the root restyles the whole page
-        // (3.4ms a frame on a merged law on desktop, several times that on phones).
-        let offset = 0, lastTop = scrollY, dir = 0, frame = 0, height = header.offsetHeight, tracking = false;
-        let shown = -1, followers: HTMLElement[] = [];
+      const slot = header?.parentElement;
+      if (header && slot) {
+        let s: HeaderState = { mode: "free", y: 0 };
+        let lastTop = Math.max(0, scrollY), dir = 0, frame = 0, h = header.offsetHeight, under = -1;
         let settle: ReturnType<typeof setTimeout> | undefined;
-        // sticky things can be added by script later (comparison head rows): looked up again
-        // whenever the header settles, not per frame
-        const findFollowers = () => {
-          const now = [...document.querySelectorAll<HTMLElement>("[data-under-header]")];
-          if (now.length !== followers.length || now.some((e, i) => e !== followers[i])) { followers = now; shown = -1; }
-        };
+        const maxTop = () => root.scrollHeight - innerHeight;
         const held = () => !!header.querySelector("details[open]") || header.contains(document.activeElement);
-        const maxTop = () => document.documentElement.scrollHeight - innerHeight;
-        const setTracking = (on: boolean) => {
-          if (on === tracking) return;
-          tracking = on;
-          for (const e of [header, ...followers]) e.classList.toggle("tracking", on);
+        const setUnder = () => {
+          const px = s.mode === "pinned" ? h : 0;
+          if (px === under) return;
+          under = px;
+          document.querySelectorAll<HTMLElement>("[data-under-header]").forEach((e) => e.style.setProperty("--header-shown", `${px}px`));
         };
-        /** glide: animate to `offset` (settling); otherwise follow the scroll exactly */
-        const place = (glide: boolean) => {
-          setTracking(!glide);
-          header.style.transform = offset ? `translateY(${-offset}px)` : "";
-          header.toggleAttribute("data-hidden", offset >= height);
-          const px = Math.max(0, height - offset);
-          if (px !== shown) { shown = px; for (const e of followers) e.style.setProperty("--header-shown", `${px}px`); }
+        /** draw the state; `from` (px pushed up) slides a fixed header from there to its place */
+        const draw = (from?: number) => {
+          header.dataset.mode = s.mode;
+          header.style.top = s.mode === "free" ? `${s.y}px` : "";
+          header.toggleAttribute("data-hidden", s.mode === "hidden");
+          if (from !== undefined && s.mode !== "free") {
+            header.style.transition = "none";
+            header.style.transform = `translateY(${-from}px)`;
+            header.offsetHeight;   // start the slide from there
+            header.style.removeProperty("transition");
+          }
+          header.style.transform = s.mode === "hidden" ? `translateY(${-h}px)` : "";
+          setUnder();
         };
-        const to = (next: number) => { offset = next; findFollowers(); place(true); };
+        const to = (mode: "pinned" | "hidden") => {
+          const from = h - shownPx(s, lastTop, h);
+          s = { mode } as HeaderState;
+          draw(from);
+        };
         const follow = () => {
           frame = 0;
           // the rubber band past either end of the page is not a scroll
           const top = Math.min(Math.max(0, scrollY), Math.max(0, maxTop()));
           if (top === lastTop) return;
-          if (held()) { if (offset) to(0); lastTop = top; return; }
           dir = Math.sign(top - lastTop);
-          offset = nextBarOffset(offset, lastTop, top, height);
+          if (held()) { lastTop = top; if (s.mode !== "pinned") to("pinned"); return; }
+          const next = step(s, lastTop, top, h);
           lastTop = top;
-          place(false);
+          if (next.mode !== s.mode || (next.mode === "free" && s.mode === "free" && next.y !== s.y)) { s = next; draw(); }
           clearTimeout(settle);
           settle = setTimeout(() => {
-            const s = settledBarOffset(offset, lastTop, height, dir);
-            if (s !== offset) to(s); else { setTracking(false); findFollowers(); place(true); }
+            if (s.mode !== "free") return;
+            const shown = shownPx(s, lastTop, h);
+            if (shown === 0 || (shown === h && lastTop === s.y)) return;
+            if (lastTop <= h && s.y === 0) return;   // the top of the page: it is just in its place
+            to(settledBarOffset(h - shown, lastTop, h, dir) === 0 ? "pinned" : "hidden");
           }, 140);
         };
         addEventListener("scroll", () => { if (!frame) frame = requestAnimationFrame(follow); }, { passive: true });
-        header.addEventListener("focusin", () => { if (offset) to(0); });
-        header.addEventListener("toggle", () => { if (offset) to(0); }, true);
+        header.addEventListener("focusin", () => { if (s.mode !== "pinned" && lastTop > 0) to("pinned"); });
+        header.addEventListener("toggle", () => { if (s.mode !== "pinned" && lastTop > 0) to("pinned"); }, true);
         // a jump within the page (contents, "#" links): out of the way of what was jumped to
         addEventListener("hashchange", () => requestAnimationFrame(() => {
-          lastTop = scrollY;
-          if (scrollY > height) to(height);
+          lastTop = Math.max(0, scrollY);
+          if (lastTop > h) to("hidden");
         }));
-        // the header's height changes with the window (phones: also while the browser's own
-        // toolbar collapses mid-scroll): measure again, but don't interrupt following the finger
+        // keep the header's place in the page as tall as the header
         new ResizeObserver(() => {
-          const h = header.offsetHeight;
-          if (h === height) return;
-          height = h; offset = Math.min(offset, h); shown = -1; place(!tracking);
+          h = header.offsetHeight;
+          slot.style.height = `${h}px`;
+          under = -1; setUnder();
         }).observe(header);
-        findFollowers();
-        place(true);
+        slot.style.height = `${h}px`;
+        root.classList.add("hb-follow");
+        draw();
       }
     </script>
   </body>
@@ -165,14 +176,17 @@ const nav = [
 <style>
   .skip { position: absolute; left: -999px; top: 0; }
   .skip:focus { left: var(--s-4); top: var(--s-2); background: var(--bg); padding: var(--s-2); z-index: 10; }
-  header.site {
-    border-bottom: 1px solid var(--line); background: var(--bg);
-    position: sticky; top: 0; z-index: 15; transition: transform 0.24s ease-out; will-change: transform;
+  header.site { border-bottom: 1px solid var(--line); background: var(--bg); }
+  /* following the scroll (script below; without it the header just sits in the page): the slot
+     keeps its place, the header is either in the page at a script-set position ("free"), or
+     fixed at the top of the window, slid out of it when hidden */
+  :global(.hb-follow) header.site { position: absolute; left: 0; right: 0; top: 0; z-index: 15; }
+  :global(.hb-follow) header.site:is([data-mode="pinned"], [data-mode="hidden"]) {
+    position: fixed; transition: transform 0.24s ease-out;
   }
-  header.site.tracking { transition: none; }
   /* fully away: out of the tab order too, once the slide has finished */
   header.site[data-hidden] { visibility: hidden; transition: transform 0.24s ease-out, visibility 0s 0.24s; }
-  @media (prefers-reduced-motion: reduce) { header.site { transition: none; } }
+  @media (prefers-reduced-motion: reduce) { header.site, header.site[data-hidden] { transition: none !important; } }
   .bar { display: flex; align-items: center; gap: var(--s-5); min-height: 4rem; flex-wrap: wrap; }
   .brand { font-weight: 700; font-size: var(--fs-lg); color: var(--text); text-decoration: none; letter-spacing: -0.01em; }
   nav { display: flex; gap: var(--s-4); }

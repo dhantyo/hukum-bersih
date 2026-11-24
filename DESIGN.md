@@ -82,12 +82,14 @@ left edge (16px wide, 44px touch target): tap it, or pull it right and the drawe
 finger; push the drawer left to close. Past a third of its width or a flick it opens / closes,
 otherwise it goes back. Escape, the scrim or a link also close it; the page behind is inert.
 
-The site header is sticky and follows the scroll like a phone browser's address bar (ported
-from Sapu Berita, `lib/barscroll.ts`): scrolling down slides it away by the distance scrolled,
-scrolling up brings it back by the distance scrolled up, and 140ms after the scroll stops it
-settles fully shown or hidden (0.24s ease-out). It stays while "Aa" is open or focus is in it,
-and tucks away after a jump within the page. Sticky things below it (side panel, comparison
-bar) sit at `--header-shown`.
+The site header follows the scroll like a phone browser's address bar (behaviour from Sapu
+Berita, `lib/barscroll.ts`): scrolling down it leaves with the page, scrolling up it comes back
+by the distance scrolled up, and 140ms after the scroll stops a half-shown header settles fully
+shown or hidden (0.24s ease-out; shown if the last movement was up). The browser moves it like
+the text (it sits in the page, or is fixed at the top when fully back), never script per frame,
+which lags the page on phones. It stays while "Aa" is open or focus is in it, and tucks away
+after a jump within the page. Sticky things below it (side panel, comparison bar) sit at
+`--header-shown`: its height while pinned, else 0.
 
 ## Shape and depth
 

@@ -199,9 +199,6 @@ const Chevrons = (dir: "left" | "right") => `<svg viewBox="0 0 16 16" width="16"
     transition: top 0.24s ease-out;
   }
   /* while the header follows the finger, sticky things follow it exactly (Base.astro) */
-  @media (min-width: 961px) {
-    .panel.tracking, .rail.tracking { transition: none; }
-  }
   :global(:root[data-panel="hidden"]) .doc-main { justify-self: center; width: min(100%, var(--measure)); }
   /* comparing versions (CompareMode.astro): the text takes the width. Below 1500px the panel
      folds away to make room for two columns, unless the reader brings it back (data-cmp-panel);
