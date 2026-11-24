@@ -9,6 +9,7 @@ import {
   comparisonQuery,
   draftBillQuery,
   draftBillsQuery,
+  draftComparisonQuery,
   draftTextQuery,
   overviewQuery,
   readerQuery,
@@ -91,6 +92,15 @@ export const Router = createRouter({
         void draftBillsQuery();
       },
     },
+    defineRoute({
+      path: "/ruu/:slug/beda/:pair",
+      component: lazy(
+        async () => await import("./routes/draft-comparison.tsx")
+      ),
+      preload: ({ params }) => {
+        void draftComparisonQuery(params.slug, params.pair);
+      },
+    }),
     defineRoute({
       path: "/ruu/:slug/:doc",
       component: lazy(async () => await import("./routes/draft-document.tsx")),

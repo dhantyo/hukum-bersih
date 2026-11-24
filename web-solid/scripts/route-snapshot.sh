@@ -35,6 +35,8 @@ done
 
 ite=/koleksi/ite
 draft=/ruu/perampasan-aset
+older=ruu_perampasan-aset_2023-05_draft_pemerintah
+newer=ruu_perampasan-aset_2026-11-19_draft-final
 urls=(
   /
   /tentang/
@@ -84,6 +86,18 @@ urls=(
   "$draft/ruu_tidak-ada/"
   /ruu/tidak-ada/
   /ruu/tidak-ada/ruu_x/
+  "$draft/beda/$older...$newer/"
+  "$draft/beda/$older...$newer"
+  "$draft/beda/$newer...$older/"
+  "$draft/beda/$older...$older/"
+  "$draft/beda/$older...ruu_tidak-ada/"
+  "$draft/beda/ruu_tidak-ada...$newer/"
+  "$draft/beda/$older/"
+  "$draft/beda/$older..$newer/"
+  "$draft/beda/$older...$newer...$newer/"
+  "$draft/beda/${older^^}...$newer/"
+  "$draft/beda/"
+  "/ruu/tidak-ada/beda/$older...$newer/"
   /cari/
   '/cari/?q='
   '/cari/?q=ite'

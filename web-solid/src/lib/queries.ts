@@ -1,7 +1,12 @@
 import { query } from "@solidjs/router";
 
 import { getCollection, getCollections } from "./collections";
-import { getDraftBill, getDraftText, listDraftBills } from "./drafts";
+import {
+  getDraftBill,
+  getDraftComparison,
+  getDraftText,
+  listDraftBills,
+} from "./drafts";
 import { getLaw, getLawComparison, getLawOverview, getLawYear } from "./laws";
 import { getSearchResults } from "./search";
 
@@ -29,3 +34,8 @@ export const searchQuery = query(getSearchResults, "search");
 export const draftBillsQuery = query(listDraftBills, "drafts");
 export const draftBillQuery = query(getDraftBill, "draft");
 export const draftTextQuery = query(getDraftText, "draft-text");
+
+export const draftComparisonQuery = query(
+  getDraftComparison,
+  "draft-comparison"
+);

@@ -115,6 +115,7 @@ lets non-Indonesian IPs in. See [sources.md](sources.md) for what each site answ
 | Validating law records before they are written | Pydantic v2 (`records.py`) | models are the gate only: the code keeps working with dicts and the YAML is dumped from the dict, byte for byte as before |
 | Search | Pagefind | |
 | Routing and data reads in `web-solid/` | `@solidjs/router` 2 (`query`, `preload`, `intentPreload`) | [decision 0015](decisions/0015-solid-router.md). Used until 2026-11-24: TanStack Router and Query (a second cache and a generated route tree for an immutable corpus). Not used: the router's `filesystem-routing` plugin (a config list is shorter and needs no extra package) |
+| Checkbox in `web-solid/` (the draft comparison "show unchanged pasal" toggle) | ui-sdk `Checkbox` (`@ui-sdk/solid`, `@ui-sdk/core`), styled with StyleX through its `data-checked` state | keyboard, `aria-checked` and label behaviour come from ui-sdk; Astro's version is a bare checkbox with a script |
 | Showing a law's history | legislation.gov.uk "changes over time", Fedlex "Chronologie" | [decision 0008](decisions/0008-law-history.md); relations parsed with our own regexes over our own data |
 | Repealed / not-yet-consolidated warning | legislation.gov.uk "changes to legislation", Fedlex "nicht mehr in Kraft" banners | `StatusBanner.astro` |
 | Getting back to the contents on long pages | GOV.UK "back to top" pattern | `DocLayout.astro` |

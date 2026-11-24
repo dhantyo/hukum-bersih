@@ -10,6 +10,10 @@ import type { DraftDocument } from "../server/records/draft.ts";
 export const draftDocumentTitle = (document: DraftDocument) =>
   `${DOC_TYPE[document.type] ?? document.type} · ${tanggal(document.date)}`;
 
+/** "Draf RUU (Mei 2023)": a version as the comparison names it. */
+export const draftVersionName = (document: DraftDocument) =>
+  `${DOC_TYPE[document.type] ?? document.type} (${tanggal(document.date)})`;
+
 export const DraftProvenance = (props: { document: DraftDocument }) => {
   const provenance = () => PROVENANCE[provenanceKey(props.document.provenance)];
 

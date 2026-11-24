@@ -43,3 +43,22 @@ export const size = stylex.defineVars({
   measure: "var(--measure)",
   hang: "var(--hang)",
 });
+
+export const synopsis = stylex.defineVars({
+  muted: "var(--text-muted)",
+  ok: "var(--ok)",
+  warn: "var(--warn)",
+  insBackground: "var(--ins-bg)",
+  insText: "var(--ins-text)",
+  delBackground: "var(--del-bg)",
+  delText: "var(--del-text)",
+  fontLaw: "var(--font-law)",
+  small: "var(--fs-sm)",
+  tiny: "var(--fs-xs)",
+  hairline: "var(--s-0)",
+  s5: "var(--s-5)",
+  s6: "var(--s-6)",
+  s7: "var(--s-7)",
+  radius: "var(--r-sm)",
+  pageWide: "var(--page-wide)",
+});

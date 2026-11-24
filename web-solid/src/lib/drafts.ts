@@ -1,9 +1,10 @@
 import { GET } from "@solidjs/web/server-functions";
 import * as v from "valibot";
 
+import { readDraftComparison } from "../server/records/draft-comparison.ts";
 import { readDraftBill, readDraftText } from "../server/records/draft.ts";
 import { readDraftListings } from "../server/records/listings.ts";
-import { draftDocumentId, slug } from "./schemas.ts";
+import { draftDocumentId, draftPair, slug } from "./schemas.ts";
 
 export const listDraftBills = GET(async () => {
   "use server";
@@ -26,3 +27,15 @@ export const getDraftText = GET(async (billSlug: string, id: string) => {
 
   return await readDraftText(billSlug, id);
 });
+
+export const getDraftComparison = GET(
+  async (billSlug: string, pair: string) => {
+    "use server";
+
+    if (!v.is(slug, billSlug) || !v.is(draftPair, pair)) {
+      return null;
+    }
+
+    return await readDraftComparison(billSlug, pair);
+  }
+);

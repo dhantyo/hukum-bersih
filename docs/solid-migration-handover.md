@@ -33,27 +33,17 @@ The current route files cover:
 |---|---|---|
 | Laws | `/uu/`, `/uu/tahun/:tahun`, `/uu/:nomor/:tahun`, and a comparison for one amendment step | Verify Asli and Modern controls against Astro. The route selects the latest step or one named step. A two-version comparison using `dari` is currently unavailable. |
 | Collections | `/koleksi/`, `/koleksi/:slug`, `/koleksi/:slug/:versi`, and `/koleksi/:slug/perubahan.json` | Restore a user-facing version comparison flow and verify all links and notes. |
-| Draft bills | `/ruu/`, `/ruu/:slug`, and `/ruu/:slug/:doc` | Add `/ruu/:slug/beda/:pair` draft comparisons. |
+| Draft bills | `/ruu/`, `/ruu/:slug`, `/ruu/:slug/:doc`, and `/ruu/:slug/beda/:pair` | None known. Comparisons are computed by `web-solid/scripts/export-drafts.ts` and read from the active release. |
 | Search | `/cari/`, law catalog JSON, citation lookup, and Pagefind-backed full-text results | Verify search results open the exact article in the deployed preview. |
 | Standalone | `/` | Add `/tentang/` and compare homepage behavior with Astro. |
 
 These are source-tree observations, not proof of a deployed preview. The detailed route files are under `web-solid/src/routes/`. The matching Astro route list is under `web/src/pages/`.
 
-## Next slice: draft comparisons
-
-Implement the missing `/ruu/<slug>/beda/<older-id>...<newer-id>/` route. The Astro reference is `web/src/pages/ruu/[slug]/beda/[pair].astro`, with row rendering in `web/src/components/SynRow.astro` and matching logic in `web/src/lib/compare.ts`.
-
-Before changing the route, inspect those files and record representative output from the current Astro site. Preserve the version names, dates, provenance, change counts, matched and unmatched pasal, renumbered and moved markers, word-level changes, low-similarity notes, cross-references, and row anchors. Preserve links from each comparison back to its source draft document.
-
-Keep comparison computation out of request-time UI code if it can be generated during corpus export. Validate stored comparison records at the read boundary. Include the comparison files in the same release as their draft documents. Then add the Solid route and verify direct SSR requests, known and unknown pairs, article anchors, counts, and the same-row toggle. Test release activation and rollback with the comparison data present.
-
-Commit this slice separately, for example `feat(web-solid): restore draft comparisons`.
-
 ## Remaining proof and follow-up
 
 The manual Cloudflare workflow is `.github/workflows/solid-preview.yml`. The Worker configuration is `web-solid/wrangler.jsonc`. The Astro Pages configuration and its external DNS note are in `web/wrangler.jsonc`. The workflow has not been verified by a successful remote run in this checkout. The last credential check found these preview secrets absent: `SOLID_PREVIEW_WORKERS_API_TOKEN`, `SOLID_PREVIEW_R2_ACCESS_KEY_ID`, and `SOLID_PREVIEW_R2_SECRET_ACCESS_KEY`. Do not copy credentials into this document or the repository.
 
-After draft comparisons, finish the missing route parity, then prove one amended law end to end. Verify preview access through the actual production hostname before planning cutover. Measure a large law on the deployed Worker and compare the observed CPU time with the current Cloudflare limit. A local render time does not establish Worker CPU usage. Keep Astro rollback intact until this evidence is complete.
+Finish the missing route parity, then prove one amended law end to end. Verify preview access through the actual production hostname before planning cutover. Measure a large law on the deployed Worker and compare the observed CPU time with the current Cloudflare limit. A local render time does not establish Worker CPU usage. Keep Astro rollback intact until this evidence is complete.
 
 ## Checks and project references
 
