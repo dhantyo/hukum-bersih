@@ -5,22 +5,46 @@ import { readActiveReleaseText } from "../corpus.ts";
 import { parseRecord } from "./parse.ts";
 import { readerText } from "./reader-text.ts";
 
+const citation = v.object({
+  label: v.string(),
+  href: v.optional(internalLink),
+});
+
 const collectionVersion = v.object({
   date: v.nullable(v.string()),
+  title: v.string(),
+  baseTitle: v.string(),
+  status: v.nullable(v.object({ key: v.string(), label: v.string() })),
+  amended: v.number(),
   base: v.object({ label: v.string(), href: internalLink }),
-  amendments: v.array(v.string()),
+  amendments: v.array(citation),
+  facts: v.array(
+    v.object({
+      label: v.string(),
+      value: v.string(),
+      href: v.optional(internalLink),
+    })
+  ),
   versions: v.array(
     v.object({
       label: v.string(),
       date: v.nullable(v.string()),
       href: v.optional(internalLink),
       sub: v.optional(v.string()),
+      missing: v.boolean(),
+      inForce: v.boolean(),
     })
   ),
   incomplete: v.boolean(),
   missing: v.number(),
   unreadable: v.array(v.string()),
-  unapplied: v.array(v.string()),
+  unapplied: v.array(
+    v.object({
+      header: v.string(),
+      instruction: v.nullable(v.number()),
+      by: citation,
+    })
+  ),
   notes: v.record(
     v.string(),
     v.array(

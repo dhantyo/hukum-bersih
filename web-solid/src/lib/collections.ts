@@ -2,15 +2,29 @@ import { GET } from "@solidjs/web/server-functions";
 import * as v from "valibot";
 
 import { readCatalog } from "../server/records/catalog.ts";
+import { readCollectionComparison } from "../server/records/collection-comparison.ts";
+import { readCollectionTimeline } from "../server/records/collection-timeline.ts";
 import { readCollectionVersion } from "../server/records/collection-version.ts";
-import { collectionVersion, slug } from "./schemas.ts";
+import { compareVersions } from "./collection-compare.ts";
+import { collectionCompare, collectionVersion, slug } from "./schemas.ts";
 
 export const getCollections = GET(async () => {
   "use server";
 
   const catalog = await readCatalog();
+  const laws = new Map(catalog.laws.map((law) => [law.id, law]));
 
-  return catalog.koleksi;
+  return catalog.koleksi.map((group) => {
+    const baseId = group.mem.find(([, role]) => role === "pokok")?.[0];
+    const base = baseId === undefined ? undefined : laws.get(baseId);
+
+    return {
+      ...group,
+      cite: base?.c ?? baseId ?? "",
+      year: base?.y ?? 0,
+      laws: group.mem.filter(([, role]) => role !== "digantikan").length,
+    };
+  });
 });
 
 export const getCollection = GET(
@@ -31,22 +45,55 @@ export const getCollection = GET(
       return null;
     }
 
-    const laws = new Map(catalog.laws.map((law) => [law.id, law]));
-
-    const members = collection.mem.map(([id, role]) => ({
-      id,
-      role,
-      law: laws.get(id),
-    }));
-
     const merged = await readCollectionVersion(collectionSlug, version);
 
-    if (!merged && version !== "latest") {
+    const timeline =
+      merged === null && version === "latest"
+        ? await readCollectionTimeline(collectionSlug)
+        : null;
+
+    if (merged === null && timeline === null) {
       return null;
     }
 
-    return { name: collection.name, title: collection.t, members, merged };
+    return {
+      name: collection.name,
+      named: collection.named,
+      title: collection.t,
+      path: version === "latest" ? collection.u : `${collection.u}${version}/`,
+      merged,
+      timeline,
+    };
   }
 );
+
+export const getCollectionComparison = GET(
+  async (
+    collectionSlug: string,
+    pair: v.InferInput<typeof collectionCompare>
+  ) => {
+    "use server";
+
+    if (!v.is(slug, collectionSlug)) {
+      return null;
+    }
+
+    const data = await readCollectionComparison(collectionSlug);
+
+    if (data === null) {
+      return null;
+    }
+
+    const choice = v.safeParse(collectionCompare, pair);
+
+    return choice.success
+      ? compareVersions(data, choice.output.bandingkan, choice.output.dari)
+      : { ...compareVersions(data), unknown: true };
+  }
+);
+
+export type CollectionComparisonView = NonNullable<
+  Awaited<ReturnType<typeof getCollectionComparison>>
+>;
 
 export type Collection = NonNullable<Awaited<ReturnType<typeof getCollection>>>;

@@ -22,14 +22,28 @@ const comparison = v.object({
   pasal: v.array(v.tuple([v.string(), v.array(v.tuple([v.number(), slot]))])),
 });
 
+export type CollectionComparison = v.InferOutput<typeof comparison>;
+
+export type CompareSlot = v.InferOutput<typeof slot>;
+
+const readComparisonText = async (slug: string) =>
+  await readActiveReleaseText(`collections/${slug}/perubahan.json`);
+
+const parseComparison = (text: string, slug: string) =>
+  parseRecord(comparison, text, `collection comparison ${slug}`);
+
 export const readCollectionComparisonJson = async (slug: string) => {
-  const text = await readActiveReleaseText(
-    `collections/${slug}/perubahan.json`
-  );
+  const text = await readComparisonText(slug);
 
   if (text !== null) {
-    parseRecord(comparison, text, `collection comparison ${slug}`);
+    parseComparison(text, slug);
   }
 
   return text;
+};
+
+export const readCollectionComparison = async (slug: string) => {
+  const text = await readComparisonText(slug);
+
+  return text === null ? null : parseComparison(text, slug);
 };

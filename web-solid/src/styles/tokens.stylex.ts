@@ -11,6 +11,7 @@ export const color = stylex.defineVars({
   ok: "var(--ok)",
   warn: "var(--warn)",
   gone: "var(--gone)",
+  linkBackground: "var(--primary-bg)",
 });
 
 export const space = stylex.defineVars({

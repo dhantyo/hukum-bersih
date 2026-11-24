@@ -32,7 +32,7 @@ The current route files cover:
 | Area | Solid routes in the current tree | Remaining parity work |
 |---|---|---|
 | Laws | `/uu/`, `/uu/tahun/:tahun`, `/uu/:nomor/:tahun`, and a comparison for one amendment step | Verify Asli and Modern controls against Astro. The route selects the latest step or one named step. A two-version comparison using `dari` is currently unavailable. |
-| Collections | `/koleksi/`, `/koleksi/:slug`, `/koleksi/:slug/:versi`, and `/koleksi/:slug/perubahan.json` | Restore a user-facing version comparison flow and verify all links and notes. |
+| Collections | `/koleksi/`, `/koleksi/:slug`, `/koleksi/:slug/:versi`, and `/koleksi/:slug/perubahan.json` | Two-version comparison on the collection pages (`?dari=<id>&bandingkan=<id>`, ui-sdk pickers) is in place. Still open: the contents panel and the comparison inside the text (see `CompareMode.astro`). |
 | Draft bills | `/ruu/`, `/ruu/:slug`, `/ruu/:slug/:doc`, and `/ruu/:slug/beda/:pair` | None known. Comparisons are computed by `web-solid/scripts/export-drafts.ts` and read from the active release. |
 | Search | `/cari/`, law catalog JSON, citation lookup, and Pagefind-backed full-text results | Verify search results open the exact article in the deployed preview. |
 | Standalone | `/` | Add `/tentang/` and compare homepage behavior with Astro. |

@@ -2,9 +2,9 @@ import { createRouter, defineRoute, intentPreload } from "@solidjs/router";
 import { lazy } from "solid-js";
 import * as v from "valibot";
 
+import { preloadCollection } from "./lib/collection-page.ts";
 import { lawUrl } from "./lib/paths.ts";
 import {
-  collectionQuery,
   collectionsQuery,
   comparisonQuery,
   draftBillQuery,
@@ -71,18 +71,28 @@ export const Router = createRouter({
     defineRoute({
       path: "/koleksi/:slug/:versi",
       matchFilters: { versi: (versi: string) => v.is(versionDate, versi) },
+      search: compareSearch,
       component: lazy(
         async () => await import("./routes/collection-version.tsx")
       ),
-      preload: ({ params }) => {
-        void collectionQuery(params.slug, params.versi);
+      preload: ({ params, location }) => {
+        preloadCollection(
+          params.slug,
+          params.versi,
+          v.parse(compareSearch, location.query)
+        );
       },
     }),
     defineRoute({
       path: "/koleksi/:slug",
+      search: compareSearch,
       component: lazy(async () => await import("./routes/collection.tsx")),
-      preload: ({ params }) => {
-        void collectionQuery(params.slug, "latest");
+      preload: ({ params, location }) => {
+        preloadCollection(
+          params.slug,
+          "latest",
+          v.parse(compareSearch, location.query)
+        );
       },
     }),
     {

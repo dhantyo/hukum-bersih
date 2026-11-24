@@ -17,8 +17,21 @@ export const draftPair = matching(DRAFT_PAIR);
 export const versionDate = matching(VERSION_DATE);
 export const collectionVersion = matching(`(?:latest|${VERSION_DATE})`);
 
+const compareTarget = v.union([v.literal(""), matching("[a-z0-9_-]+")]);
+
+/** The two versions a collection page compares: `bandingkan` is the newer, `dari` the older. */
+export const collectionCompare = v.object({
+  bandingkan: v.optional(compareTarget),
+  dari: v.optional(compareTarget),
+});
+
 export const internalLink = matching(
   `/[a-z-]+/[a-z0-9_-]+(?:/(?:\\d{4}|${VERSION_DATE}))?/`,
+  "iu"
+);
+
+export const lawAnchorLink = matching(
+  `${LAW_PATH}(?:\\?bandingkan=[a-z0-9_-]+)?(?:#[a-z0-9_.:%-]+)?`,
   "iu"
 );
 

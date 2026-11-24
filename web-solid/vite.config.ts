@@ -21,6 +21,7 @@ export default defineConfig({
     }),
   ],
   server: { port: 3000 },
+  optimizeDeps: { exclude: ["@ui-sdk/core"] },
   build: { target: "esnext", assetsInlineLimit: 0 },
   test: { passWithNoTests: true },
 });

@@ -79,6 +79,25 @@ urls=(
   /koleksi/tidak-ada/
   /koleksi/tidak-ada/perubahan.json
   /koleksi/Bad_Slug/
+  "$ite/?dari=uu_11_2008&bandingkan=uu_1_2024"
+  "$ite/?bandingkan"
+  "$ite/?bandingkan="
+  "$ite/?bandingkan=uu_19_2016"
+  "$ite/?bandingkan=uu_11_2008"
+  "$ite/?dari=uu_1_2024"
+  "$ite/?dari=uu_1_2024&bandingkan=uu_11_2008"
+  "$ite/?dari=uu_1_2024&bandingkan=uu_1_2024"
+  "$ite/?bandingkan=uu_9_9999"
+  "$ite/?bandingkan=BAD%20ID"
+  "$ite/2016-11-25/?dari=uu_11_2008&bandingkan=uu_19_2016"
+  /koleksi/bumn/
+  '/koleksi/bumn/?dari=uu_19_2003&bandingkan=uu_16_2025'
+  /koleksi/cipta-kerja/
+  '/koleksi/cipta-kerja/?bandingkan'
+  /koleksi/bank-indonesia/
+  '/koleksi/bank-indonesia/?bandingkan'
+  /koleksi/tidak-ada/2016-11-25/
+  '/koleksi/tidak-ada/?bandingkan'
   /ruu/
   "$draft/"
   "$draft/ruu_perampasan-aset_2023-05_draft_pemerintah/"
