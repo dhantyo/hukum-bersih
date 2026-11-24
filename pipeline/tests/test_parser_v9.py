@@ -172,6 +172,23 @@ def test_misprinted_heading_numbers_confirmed_by_the_next_heading():
     assert any("printed where Pasal 3 belongs" in w for w in doc.warnings)
 
 
+def test_quoted_pasal_of_an_amended_law_is_not_taken_as_a_skipped_number():
+    """UU 7/2021 amends laws with Arabic pasal. The quoted heading after "... berbunyi sebagai
+    berikut:" ("Pasal 4", "Pasal 5" of the amended law) continued the sequence after the law's own
+    Pasal 2 (the skip tolerance of ``misprinted``) and the real Pasal 3 to 5 were lost."""
+    from hukum_bersih.pdf.structure import parse_lines
+
+    head = ["UNDANG-UNDANG", "NOMOR 7 TAHUN 2021", "TENTANG", "CONTOH"]
+    doc = parse_lines(head + [
+        "Pasal 1", "Satu.", "Pasal 2",
+        "Beberapa ketentuan dalam Undang-Undang Nomor 6 Tahun 1983 diubah sebagai berikut:",
+        "1. Ketentuan ayat (1) Pasal 4 diubah sehingga berbunyi sebagai berikut:", "Pasal 4", "(1) Kutipan empat.",
+        "2. Ketentuan ayat (1) Pasal 5 diubah sehingga berbunyi sebagai berikut:", "Pasal 5", "(1) Kutipan lima.",
+        "Pasal 3", "Tiga.", "Pasal 4", "Empat.", "Pasal 5", "Lima."])
+    assert [b.label for b in doc.blocks if b.kind == "pasal"] == [f"Pasal {k}" for k in range(1, 6)]
+    assert not any("belongs" in w for w in doc.warnings)
+
+
 def test_penjelasan_may_skip_pasal():
     from hukum_bersih.pdf.structure import parse_lines
 
