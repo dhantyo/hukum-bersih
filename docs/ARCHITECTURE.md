@@ -56,7 +56,7 @@ Names follow [NAMING.md](NAMING.md).
 | `akn/bluebell.py` | Blocks → Bluebell text (stored in `data/`) |
 | `akn/build.py` | Bluebell → Akoma Ntoso XML (Laws.Africa's `bluebell` parser) |
 | `relations.py` | Amends / revokes / enacts links from titles, plus the pasal an amending law changes (from its text) → `relationships` in each record ([decision 0008](decisions/0008-law-history.md)) |
-| `amendments.py` | An amending law's Pasal I → numbered instructions and the new wording of each pasal (JSON for the "Perubahan" page) |
+| `amendments.py` | An amending law's Pasal I → numbered instructions and the new wording of each pasal (JSON for the website) |
 | `history.py` | The versions of an amended law and every change to its pasal → `history` in its record, recomputed with `relations` ([decision 0010](decisions/0010-versions-and-merged-text.md)) |
 | `cli.py` | `hukum-bersih parse / build-akn / import-bpk / import-peraturan / reparse-bpk / import-pdf / relations / manifest` |
 
@@ -73,7 +73,7 @@ Names follow [NAMING.md](NAMING.md).
 | `lib/display.ts` | Reader view helpers: headings in normal capitals, Penjelasan labels in the body's style, "Cukup jelas" ([decision 0009](decisions/0009-law-view-asli-modern.md)) |
 | `pages/cari/` | Grouped search: `laws.json` (short names, citations, titles) + Pagefind JS API for the text |
 | `lib/amendments.ts` | Apply each amendment's new wording in order → before/after per pasal; short names |
-| `components/` | `LawText` / `AknNode` render Akoma Ntoso with `akn-*` classes and eIds as ids, in the reader's view (`ViewSettings`: Asli/Modern, Penjelasan placement, folding); `Riwayat` (history timeline) and `RelationsBanner` (on amending laws); `CompareMode` compares versions inside the reading view |
+| `components/` | `LawText` / `AknNode` render Akoma Ntoso with `akn-*` classes and eIds as ids, in the reader's view (`ReadingSettings`, the "Aa" popover: Asli/Modern, Penjelasan placement, parts shown; folding); `KoleksiTimeline` (history timeline), `Versions` (the side panel's version list) and `RelationsBanner` (on amending laws); `MergedView` / `MergedBanner` (merged text, decision 0010); `CompareMode` compares versions inside the reading view |
 | `pages/` | `/`, `/uu/`, `/uu/tahun/<tahun>/`, `/uu/<nomor>/<tahun>/`, `/uu/<nomor>/<tahun>/perubahan/` (forwards to the in-place comparison), `/koleksi/`, `/koleksi/<slug>/` (the latest version merged automatically, decision 0010; families without versions: their history and the version comparer), `/koleksi/<slug>/<date>/` (older merged versions), `/koleksi/<slug>/perubahan.json` (data for comparing versions in place, `CompareMode`), `/ruu/`, `/ruu/<slug>/`, `/ruu/<slug>/<doc id>/`, `/ruu/<slug>/beda/<a>...<b>/`, `/cari/`, `/tentang/` |
 | `styles/` | `tokens.css` (design tokens, see /DESIGN.md) and `global.css` |
 | `lib/peraturan.ts` | Reads regulation records and their generated Akoma Ntoso |
