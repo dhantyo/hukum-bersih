@@ -94,6 +94,43 @@ def trimmed_diff(old: str, new: str, limit: int) -> list[str]:
     return out
 
 
+SIMILAR = 0.9        # a changed block whose words are at least this alike is a small edit, not new content
+HEADING_RE = re.compile(r"^\s*(?:ART|CHAPTER|PART|SECTION|ATTACHMENT)\b.*$")
+
+
+def block_changes(old: str, new: str, limit: int) -> tuple[list[str], list[str]]:
+    """Changed line blocks of stored vs new text, split into (substantive, small edits). A block
+    is small when the words of both sides (punctuation aside) are at least SIMILAR alike; its changed words print as
+    ``old -> new``. Everything else (lines lost or added, text that differs) prints in full."""
+    a, b = old.splitlines(), new.splitlines()
+    big: list[str] = []
+    small: list[str] = []
+    for op, i1, i2, j1, j2 in difflib.SequenceMatcher(None, a, b, autojunk=False).get_opcodes():
+        if op == "equal":
+            continue
+        ow, nw = " ".join(a[i1:i2]).split(), " ".join(b[j1:j2]).split()
+        sm = difflib.SequenceMatcher(None, ow, nw, autojunk=False)
+        # alike by their words, punctuation aside ("Papua," -> "Papua;" is a small edit)
+        alike = difflib.SequenceMatcher(None, re.findall(r"\w+", " ".join(ow)), re.findall(r"\w+", " ".join(nw)),
+                                        autojunk=False).ratio()
+        if ow and nw and alike >= SIMILAR:
+            small += [f"{' '.join(ow[x1:x2]) or '∅'} -> {' '.join(nw[y1:y2]) or '∅'}   (old line {i1 + 1})"
+                      for tag, x1, x2, y1, y2 in sm.get_opcodes() if tag != "equal"]
+        else:
+            big += [f"@@ stored lines {i1 + 1}-{i2}, new lines {j1 + 1}-{j2} @@"]
+            big += [f"- {ln[:300]}" for ln in a[i1:i2] if ln.strip()]
+            big += [f"+ {ln[:300]}" for ln in b[j1:j2] if ln.strip()]
+    for name, lines in (("substantive", big), ("small", small)):
+        if len(lines) > limit:
+            lines[limit:] = [f"... more {name} lines (raise --max-diff)"]
+    return big, small
+
+
+def heading_diff(old: str, new: str) -> list[str]:
+    pick = lambda t: [ln.strip() for ln in t.splitlines() if HEADING_RE.match(ln)]
+    return [ln for ln in difflib.unified_diff(pick(old), pick(new), "stored", "new", n=0, lineterm="") if ln[:1] in "+-" and ln[:3] not in ("+++", "---")]
+
+
 def compare(law: str, max_diff: int, pages: list[int], save: str = "") -> None:
     rec = load_record(record_path(law))
     version = next((v for v in rec.get("versions") or [] if v.get("text")), None)
@@ -131,7 +168,17 @@ def compare(law: str, max_diff: int, pages: list[int], save: str = "") -> None:
     for page, text in stats["edge_at"]:
         print(f"- p{page}: `{text}`")
 
-    print("\n```diff")
+    big, small = block_changes(stored, new, max_diff)
+    print("\nstructure lines (ART / CHAPTER / PART / SECTION / ATTACHMENT) that differ:\n```diff")
+    print("\n".join(heading_diff(stored, new)) or "(none)")
+    print("```")
+    print(f"\nsubstantive differences (lost, added or rewritten text): {sum(ln.startswith('@@') for ln in big)} block(s)\n```diff")
+    print("\n".join(big) or "(none)")
+    print("```")
+    print(f"\nsmall edits (stored -> new, words only): {len(small)}\n```")
+    print("\n".join(small))
+    print("```")
+    print("\nunified diff, trimmed:\n```diff")
     print("\n".join(trimmed_diff(stored, new, max_diff)))
     print("```")
 
@@ -146,7 +193,7 @@ def compare(law: str, max_diff: int, pages: list[int], save: str = "") -> None:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("ids", nargs="+")
-    ap.add_argument("--max-diff", type=int, default=400, help="diff lines printed per law")
+    ap.add_argument("--max-diff", type=int, default=300, help="lines printed per part of the diff, per law")
     ap.add_argument("--save", default="", help="directory to write each new text to (<id>.txt, for a closer look)")
     ap.add_argument("--pages", default="", help="1-based pages whose cleaned lines to print, all laws")
     args = ap.parse_args()
