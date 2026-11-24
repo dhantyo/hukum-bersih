@@ -241,7 +241,7 @@ def text_current(rec: dict) -> bool:
     """Nothing for the current parser to do: the text comes from BPK's PDF and a parser no
     older than PARSER_REDO_BELOW, and the record is not flagged; or the current parser was
     already tried on it (kept old text, parse error, or no text: scanned and unreadable)."""
-    from ..pdf.structure import PARSER_REDO_BELOW, PARSER_VERSION
+    from ..pdf.structure import OCR_REDO_BELOW, PARSER_REDO_BELOW, PARSER_VERSION
 
     if (str(rec.get("reparse_error", "")).startswith(f"v{PARSER_VERSION}:")
             or rec.get("parser_version_tried") == PARSER_VERSION):
@@ -252,7 +252,8 @@ def text_current(rec: dict) -> bool:
     from ..pdf.extract import ocr_engine
 
     texts = [v for v in rec.get("versions") or [] if v.get("text")]
-    return bool(texts) and all((v.get("parser_version") or 0) >= PARSER_REDO_BELOW
+    return bool(texts) and all((v.get("parser_version") or 0)
+                               >= (OCR_REDO_BELOW if v.get("ocr") else PARSER_REDO_BELOW)
                                and v.get("pdf_source") == SOURCE
                                # a text another OCR engine read is redone with the current one
                                # (decision 0012: Tesseract -> Indra); typed texts are not

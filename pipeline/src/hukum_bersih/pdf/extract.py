@@ -12,6 +12,7 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
+from .edges import Row, detect_layout, edge_rows
 from .ocr_cache import OcrCache, file_sha256
 from .ocr_fix import fix_lines
 
@@ -89,6 +90,7 @@ def page_lines(pdf: Path, stats: dict | None = None, ocr: bool = True) -> list[l
     stats = stats if stats is not None else {}
     stats.setdefault("ocr_pages", 0)
     stats.setdefault("ocr_cached", 0)
+    stats.setdefault("edge_lines", [])
     with pymupdf.open(pdf) as doc:
         scans = [p.number for p in doc if ocr and is_scan(p)] if not stats.get("ocr_missing") else []
         read: dict[int, list] = {}
@@ -121,8 +123,24 @@ def page_lines(pdf: Path, stats: dict | None = None, ocr: bool = True) -> list[l
             else:
                 stats["ocr_missing"] = "; ".join(errors)
         stats["ocr_scanned"] = sorted(read)              # for clean_lines: pages to spell-fix
-        return [rows(read[p.number] if p.number in read else visible(p, p.get_text("words")))
-                for p in doc]
+        # Header and footer of scanned pages are cut by position (edges.py), only in a layout
+        # the document's own pages show. ``edge_head``: pages whose header that took off, which
+        # clean_lines then does not look at again.
+        boxes = {n: (row_boxes(words), doc[n].rect.width, doc[n].rect.height) for n, words in read.items()}
+        layout = detect_layout([b for n, b in boxes.items() if n > 0])
+        stats["edge_head"] = []
+        out = []
+        for p in doc:
+            if p.number not in read:
+                out.append(rows(visible(p, p.get_text("words"))))
+                continue
+            page_rows, width, height = boxes[p.number]
+            edges = edge_rows(page_rows, width, height, layout, first=p.number == 0)
+            stats["edge_lines"] += [page_rows[i].text for i in sorted(edges.gone)]
+            if edges.head:
+                stats["edge_head"].append(p.number)
+            out.append([r.text for i, r in enumerate(page_rows) if i not in edges.gone])
+        return out
 
 
 def ocr_pages(pdf: Path, numbers: list[int], engine: str = "tesseract") -> dict[int, list]:
@@ -258,14 +276,24 @@ def rows(words: list[tuple]) -> list[str]:
     ``get_text()`` returns "Agar" / "setiap" / "orang" … on separate lines and markers at the
     start of a printed line are lost. Words whose vertical centres lie within half a line
     height of each other are one printed line; they are joined left to right."""
-    items = sorted(((w[1] + w[3]) / 2, w[0], max(w[3] - w[1], 1.0), w[4]) for w in words if w[4].strip())
-    lines: list[list] = []                       # [centre, height, [(x, word), ...]]
-    for cy, x, h, word in items:
+    return [r.text for r in row_boxes(words)]
+
+
+def row_boxes(words: list[tuple]) -> list[Row]:
+    """``rows`` with each printed line's box."""
+    items = sorted(((w[1] + w[3]) / 2, w[0], max(w[3] - w[1], 1.0), w) for w in words if w[4].strip())
+    lines: list[list] = []                       # [centre, height, [word, ...]]
+    for cy, _, h, w in items:
         if lines and abs(cy - lines[-1][0]) <= 0.5 * min(h, lines[-1][1]):
-            lines[-1][2].append((x, word))
+            lines[-1][2].append(w)
         else:
-            lines.append([cy, h, [(x, word)]])
-    return [" ".join(w for _, w in sorted(ws)) for _, _, ws in lines]
+            lines.append([cy, h, [w]])
+    out = []
+    for _, _, ws in lines:
+        ws.sort(key=lambda w: w[0])
+        out.append(Row(min(w[0] for w in ws), min(w[1] for w in ws), max(w[2] for w in ws),
+                       max(w[3] for w in ws), " ".join(w[4] for w in ws)))
+    return out
 
 
 # A page number or the "SK No" serial printed level with a line of text ends up on that line
@@ -279,12 +307,16 @@ def _strip_edges(ln: str) -> str:
     return LEAD_NOISE_RE.sub("", EDGE_NOISE_RE.sub("", ln)).strip()
 
 
-def _clean_page(raw: list[str], first_page: bool) -> list[str]:
+def _clean_page(raw: list[str], first_page: bool, header_cut: bool = False) -> list[str]:
+    """``header_cut``: the running header is already gone (cut by position, ``edges.py``), so
+    its text rules are not applied: a "PRESIDEN REPUBLIK INDONESIA" now at the top is the law's
+    own enacting formula, and the short lines above it ("dan") are law text too."""
     lines = [_strip_edges(NOISE_RE.sub("", re.sub(r"\s+", " ", ln).strip())) for ln in raw]
     lines = [ln for ln in lines if ln]
     # OCR fragments of the crest ("Pas", "4", "£") stand above the running header: drop short
     # bits there, and only there (a real page can start with a short line such as "1.")
-    head = next((k for k, ln in enumerate(lines[:HEADER_ZONE + 4]) if RUNNING_HEADER_RE.match(ln)), 0)
+    head = 0 if header_cut else next(
+        (k for k, ln in enumerate(lines[:HEADER_ZONE + 4]) if RUNNING_HEADER_RE.match(ln)), 0)
     lines = [ln for k, ln in enumerate(lines)
              if not (k < head and (len(ln) <= 4 or sum(c.isalpha() for c in ln) < 3))]
     # header zone: page numbers, running header, SALINAN stamp, DPR signature boxes
@@ -296,7 +328,7 @@ def _clean_page(raw: list[str], first_page: bool) -> list[str]:
                     or ln == "-"):
                 continue
             # on page 1 the title block legitimately starts with "PRESIDEN REPUBLIK INDONESIA"
-            if not first_page and RUNNING_HEADER_RE.match(ln):
+            if not first_page and not header_cut and RUNNING_HEADER_RE.match(ln):
                 continue
             if first_page and ln.upper().endswith("SALINAN"):
                 continue                                 # stamp
@@ -338,7 +370,8 @@ def clean_lines(pages: list[list[str]], stats: dict | None = None) -> list[str]:
     """``stats`` from ``page_lines``: misread words of its OCR'd pages (``ocr_scanned``) are
     corrected (ocr_fix.py) once headers and page numbers are gone, so they are judged on the
     law's own words; the result is added to ``ocr_fixes`` (one per PDF)."""
-    cleaned = [_clean_page(raw, first_page=(k == 0)) for k, raw in enumerate(pages)]
+    cut = set((stats or {}).get("edge_head") or [])
+    cleaned = [_clean_page(raw, first_page=(k == 0), header_cut=k in cut) for k, raw in enumerate(pages)]
     scanned = (stats or {}).get("ocr_scanned") or []
     if scanned:
         fixed, fixes = fix_lines([ln for n in scanned for ln in cleaned[n]])
