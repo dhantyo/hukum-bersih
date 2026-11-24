@@ -12,6 +12,7 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
+from .ocr_cache import OcrCache, file_sha256
 from .ocr_fix import fix_lines
 
 # Signature boxes printed on every page of DPR "draft final" documents.
@@ -79,12 +80,15 @@ def page_lines(pdf: Path, stats: dict | None = None, ocr: bool = True) -> list[l
     """Printed lines per page. Scanned pages (a picture filling the page) are read with our own
     OCR (``ocr_engine()``), not with the text layer that came with the PDF: BPK's scans carry
     someone else's OCR ("2OO2", "REPUBUK"; docs/parser-review-2026-11.md). ``stats`` receives
-    ``ocr_pages``, ``ocr_engine`` (the engine that read them) and, when no OCR could run,
-    ``ocr_missing``."""
+    ``ocr_pages``, ``ocr_engine`` (the engine that read them), ``ocr_cached`` (how many of those
+    pages came from the OCR cache, ``ocr_cache.py``, instead of being read again) and, when no
+    OCR could run, ``ocr_missing``. Only the engine's raw output is cached; cleaning and the
+    spell fix run on it every time."""
     import pymupdf
 
     stats = stats if stats is not None else {}
     stats.setdefault("ocr_pages", 0)
+    stats.setdefault("ocr_cached", 0)
     with pymupdf.open(pdf) as doc:
         scans = [p.number for p in doc if ocr and is_scan(p)] if not stats.get("ocr_missing") else []
         read: dict[int, list] = {}
@@ -93,13 +97,21 @@ def page_lines(pdf: Path, stats: dict | None = None, ocr: bool = True) -> list[l
             if engines[0] == "indra":
                 engines.append("tesseract")          # fallback when Indra cannot be loaded
             errors = []
+            sha = file_sha256(pdf)
             for engine in engines:
                 try:
-                    try:
-                        read = ocr_pages(pdf, scans, engine)
-                    except Exception:  # noqa: BLE001 - the worker processes failed: one at a time
-                        read = dict(_ocr_chunk(str(pdf), scans, engine))
+                    cache = OcrCache(pdf, engine, OCR_DPI, sha)
+                    read = {n: cache.pages[n] for n in scans if n in cache.pages}
+                    missing = [n for n in scans if n not in read]
+                    if missing:                          # only these go to the OCR workers
+                        try:
+                            fresh = ocr_pages(pdf, missing, engine)
+                        except Exception:  # noqa: BLE001 - the worker processes failed: one at a time
+                            fresh = dict(_ocr_chunk(str(pdf), missing, engine))
+                        read.update(cache.add(fresh))
+                        cache.save()
                     stats["ocr_pages"] += len(read)
+                    stats["ocr_cached"] += len(scans) - len(missing)
                     stats["ocr_engine"] = engine
                     if errors:
                         stats["ocr_fallback"] = errors[0]
