@@ -24,10 +24,10 @@ function isAnchors(input: unknown): input is Record<string, string> {
     typeof anchor === "string" && /^pasal-[a-z0-9]+$/.test(anchor));
 }
 
-type LawText = Pick<import("../../web/src/lib/lawdoc.ts").LawDoc,
+export type LawText = Pick<import("../../web/src/lib/lawdoc.ts").LawDoc,
   "preface" | "preamble" | "body" | "conclusions" | "penjelasan"> & { anchors: Record<string, string> };
 
-function isLawText(input: unknown): input is LawText {
+export function isLawText(input: unknown): input is LawText {
   return isRecord(input) && isNodes(input.preface) && isNodes(input.preamble) &&
     isNodes(input.body) && isNodes(input.conclusions) && isNodes(input.penjelasan) &&
     isAnchors(input.anchors);

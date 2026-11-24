@@ -14,6 +14,7 @@ import { Route as CariRouteImport } from './routes/cari'
 import { Route as KoleksiIndexRouteImport } from './routes/koleksi.index'
 import { Route as KoleksiSlugRouteImport } from './routes/koleksi.$slug'
 import { Route as UuIndexRouteImport } from './routes/uu.index'
+import { Route as KoleksiSlugVersiRouteImport } from './routes/koleksi.$slug_.$versi'
 import { Route as UuNomorTahunRouteImport } from './routes/uu.$nomor.$tahun'
 import { Route as UuTahunTahunRouteImport } from './routes/uu.tahun.$tahun'
 import { Route as UuNomorTahunPerubahanRouteImport } from './routes/uu.$nomor.$tahun_.perubahan'
@@ -43,6 +44,11 @@ const UuIndexRoute = UuIndexRouteImport.update({
   path: '/uu/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const KoleksiSlugVersiRoute = KoleksiSlugVersiRouteImport.update({
+  id: '/koleksi/$slug_/$versi',
+  path: '/koleksi/$slug/$versi',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const UuNomorTahunRoute = UuNomorTahunRouteImport.update({
   id: '/uu/$nomor/$tahun',
   path: '/uu/$nomor/$tahun',
@@ -65,6 +71,7 @@ export interface FileRoutesByFullPath {
   '/koleksi/$slug': typeof KoleksiSlugRoute
   '/koleksi/': typeof KoleksiIndexRoute
   '/uu/': typeof UuIndexRoute
+  '/koleksi/$slug/$versi': typeof KoleksiSlugVersiRoute
   '/uu/$nomor/$tahun': typeof UuNomorTahunRoute
   '/uu/tahun/$tahun': typeof UuTahunTahunRoute
   '/uu/$nomor/$tahun/perubahan': typeof UuNomorTahunPerubahanRoute
@@ -75,6 +82,7 @@ export interface FileRoutesByTo {
   '/koleksi/$slug': typeof KoleksiSlugRoute
   '/koleksi': typeof KoleksiIndexRoute
   '/uu': typeof UuIndexRoute
+  '/koleksi/$slug/$versi': typeof KoleksiSlugVersiRoute
   '/uu/$nomor/$tahun': typeof UuNomorTahunRoute
   '/uu/tahun/$tahun': typeof UuTahunTahunRoute
   '/uu/$nomor/$tahun/perubahan': typeof UuNomorTahunPerubahanRoute
@@ -86,6 +94,7 @@ export interface FileRoutesById {
   '/koleksi/$slug': typeof KoleksiSlugRoute
   '/koleksi/': typeof KoleksiIndexRoute
   '/uu/': typeof UuIndexRoute
+  '/koleksi/$slug_/$versi': typeof KoleksiSlugVersiRoute
   '/uu/$nomor/$tahun': typeof UuNomorTahunRoute
   '/uu/tahun/$tahun': typeof UuTahunTahunRoute
   '/uu/$nomor/$tahun_/perubahan': typeof UuNomorTahunPerubahanRoute
@@ -98,6 +107,7 @@ export interface FileRouteTypes {
     | '/koleksi/$slug'
     | '/koleksi/'
     | '/uu/'
+    | '/koleksi/$slug/$versi'
     | '/uu/$nomor/$tahun'
     | '/uu/tahun/$tahun'
     | '/uu/$nomor/$tahun/perubahan'
@@ -108,6 +118,7 @@ export interface FileRouteTypes {
     | '/koleksi/$slug'
     | '/koleksi'
     | '/uu'
+    | '/koleksi/$slug/$versi'
     | '/uu/$nomor/$tahun'
     | '/uu/tahun/$tahun'
     | '/uu/$nomor/$tahun/perubahan'
@@ -118,6 +129,7 @@ export interface FileRouteTypes {
     | '/koleksi/$slug'
     | '/koleksi/'
     | '/uu/'
+    | '/koleksi/$slug_/$versi'
     | '/uu/$nomor/$tahun'
     | '/uu/tahun/$tahun'
     | '/uu/$nomor/$tahun_/perubahan'
@@ -129,6 +141,7 @@ export interface RootRouteChildren {
   KoleksiSlugRoute: typeof KoleksiSlugRoute
   KoleksiIndexRoute: typeof KoleksiIndexRoute
   UuIndexRoute: typeof UuIndexRoute
+  KoleksiSlugVersiRoute: typeof KoleksiSlugVersiRoute
   UuNomorTahunRoute: typeof UuNomorTahunRoute
   UuTahunTahunRoute: typeof UuTahunTahunRoute
   UuNomorTahunPerubahanRoute: typeof UuNomorTahunPerubahanRoute
@@ -171,6 +184,13 @@ declare module '@tanstack/solid-router' {
       preLoaderRoute: typeof UuIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/koleksi/$slug_/$versi': {
+      id: '/koleksi/$slug_/$versi'
+      path: '/koleksi/$slug/$versi'
+      fullPath: '/koleksi/$slug/$versi'
+      preLoaderRoute: typeof KoleksiSlugVersiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/uu/$nomor/$tahun': {
       id: '/uu/$nomor/$tahun'
       path: '/uu/$nomor/$tahun'
@@ -201,6 +221,7 @@ const rootRouteChildren: RootRouteChildren = {
   KoleksiSlugRoute: KoleksiSlugRoute,
   KoleksiIndexRoute: KoleksiIndexRoute,
   UuIndexRoute: UuIndexRoute,
+  KoleksiSlugVersiRoute: KoleksiSlugVersiRoute,
   UuNomorTahunRoute: UuNomorTahunRoute,
   UuTahunTahunRoute: UuTahunTahunRoute,
   UuNomorTahunPerubahanRoute: UuNomorTahunPerubahanRoute,

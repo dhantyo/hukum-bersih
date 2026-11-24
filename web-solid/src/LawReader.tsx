@@ -3,6 +3,7 @@ import type { JSX } from "@solidjs/web";
 import * as stylex from "@stylexjs/stylex";
 import { modernHeading, modernLabel, pasalKey } from "../../web/src/lib/display.ts";
 import type { AknNode } from "../../web/src/lib/lawdoc.ts";
+import type { MergeNote } from "../../web/src/lib/merge.ts";
 import type { ReaderLaw } from "./law-record.ts";
 import { ArticleChange, type Amendment } from "./AmendmentComparison.tsx";
 
@@ -26,6 +27,7 @@ interface DocumentNodesProps {
   anchors?: Readonly<Record<string, string>>;
   explanation?: boolean;
   changes?: ReadonlyMap<string, Amendment["changes"]>;
+  notes?: Record<string, MergeNote[]>;
 }
 
 function ReadingLabel(props: { original: string; modern: string }) {
@@ -44,7 +46,9 @@ function DocumentNodes(props: DocumentNodesProps) {
     if (node.tag === "p") return <p id={id}>{node.text}</p>;
     if (Object.hasOwn(headingLabels, node.tag)) {
       return <DocumentSection node={node} id={id} alias={alias} explanation={props.explanation}
-        changes={alias ? props.changes?.get(alias) : undefined}>
+        changes={alias ? props.changes?.get(alias) : undefined}
+        notes={alias && node.num && props.notes && Object.hasOwn(props.notes, node.num)
+          ? props.notes[node.num] : undefined}>
         {children()}
       </DocumentSection>;
     }
@@ -58,6 +62,7 @@ function DocumentNodes(props: DocumentNodesProps) {
 function DocumentSection(props: {
   node: AknNode; id?: string; alias?: string; explanation?: boolean; children: JSX.Element;
   changes?: Amendment["changes"];
+  notes?: MergeNote[];
 }) {
   const node = props.node;
   const label = headingLabels[node.tag];
@@ -72,12 +77,25 @@ function DocumentSection(props: {
       {props.explanation && node.num ? <a href={`#pasal-${pasalKey(node.num)}`}>{headingLabel}</a> : headingLabel}
       {permalink && !props.explanation && <a class={stylex.props(styles.permalink).className} href={`#${permalink}`} aria-label={`Tautan ke ${heading}`} data-pagefind-ignore>#</a>}
     </h3> : <h2>{headingLabel}</h2>}
+    <For each={props.notes}>{(note) => <ArticleNote note={note} />}</For>
     <div id={props.id && !props.explanation ? `${props.id}-c` : undefined}>{props.children}</div>
     <For each={props.changes}>{(change) => <ArticleChange change={change} />}</For>
   </section>;
 }
 
-function LawText(props: { text: NonNullable<ReaderLaw["text"]>; amendment?: Amendment }) {
+const noteLabels = {
+  diubah: "Diubah oleh", disisipkan: "Disisipkan oleh", dihapus: "Dihapus oleh", unreadable: "Diubah oleh",
+};
+
+function ArticleNote(props: { note: MergeNote }) {
+  return <p data-pagefind-ignore>
+    {noteLabels[props.note.kind]}{" "}
+    {props.note.href ? <a href={props.note.href}>{props.note.label}</a> : props.note.label}
+    {props.note.kind === "unreadable" && "; teks baru belum terbaca"}
+  </p>;
+}
+
+export function LawText(props: { text: NonNullable<ReaderLaw["text"]>; amendment?: Amendment; notes?: Record<string, MergeNote[]> }) {
   const changes = createMemo(() => Map.groupBy(props.amendment?.changes ?? [],
     (change) => `pasal-${pasalKey(change.num)}`));
   const unplacedChanges = createMemo(() => {
@@ -96,7 +114,7 @@ function LawText(props: { text: NonNullable<ReaderLaw["text"]>; amendment?: Amen
       {props.text.preamble.length > 0 && <details open>
         <summary>Pembukaan</summary><DocumentNodes nodes={props.text.preamble} />
       </details>}
-      <DocumentNodes nodes={props.text.body} anchors={props.text.anchors} changes={changes()} />
+      <DocumentNodes nodes={props.text.body} anchors={props.text.anchors} changes={changes()} notes={props.notes} />
       <For each={unplacedChanges()}>{(change) => <ArticleChange change={change} />}</For>
       {props.text.conclusions.length > 0 && <section id="penutup">
         <h2>Pengesahan dan pengundangan</h2><DocumentNodes nodes={props.text.conclusions} />

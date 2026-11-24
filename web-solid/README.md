@@ -22,7 +22,7 @@ Open `http://localhost:3000/uu/11/2008/` for the reader and `http://localhost:30
 
 To prepare all laws, create a fresh staging directory and run `pnpm run export-law --all "$stage"` before indexing. The exporter creates the `laws/` directory. An existing export in that directory is kept intact.
 
-For a full corpus release, run `pnpm run export-collections "$stage"` before publishing. It adds the comparison data used by `/koleksi/<slug>/perubahan.json`.
+For a full corpus release, run `pnpm run export-collections "$stage"` before publishing. It adds the latest and historical consolidated texts and the comparison data used by `/koleksi/<slug>/perubahan.json`.
 
 Run `pnpm run lint`, `pnpm exec tsc --noEmit`, and `pnpm run test --run` to check the preview code.
 

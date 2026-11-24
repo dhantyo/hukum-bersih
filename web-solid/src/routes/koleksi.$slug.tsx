@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/solid-query';
 import { createFileRoute, notFound } from '@tanstack/solid-router';
-import { For, Show } from 'solid-js';
+import { Show } from 'solid-js';
+import { CollectionReader } from '../CollectionReader';
 import { collectionQuery } from '../lib/queries';
 
 export const Route = createFileRoute('/koleksi/$slug')({
@@ -18,14 +19,7 @@ export const Route = createFileRoute('/koleksi/$slug')({
 function CollectionPage() {
   const params = Route.useParams();
   const collection = useQuery(() => collectionQuery(params().slug));
-  return <Show when={collection.data} keyed>{(record) => <main>
-    <a href="/koleksi/">Koleksi</a>
-    <h1>{record.name}</h1>
-    <p>{record.title}</p>
-    <h2 id="riwayat">Riwayat</h2>
-    <ol><For each={record.members}>{(member) => <li>
-      <span>{member.role}</span>{' · '}
-      {member.law ? <a href={member.law.u}>{member.law.c} · {member.law.t}</a> : member.id}
-    </li>}</For></ol>
-  </main>}</Show>;
+  return <Show when={collection.data} keyed>{(record) =>
+    <CollectionReader collection={record} />
+  }</Show>;
 }

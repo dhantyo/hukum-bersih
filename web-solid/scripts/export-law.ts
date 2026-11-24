@@ -12,20 +12,9 @@ const destination = resolve(output);
 process.chdir(fileURLToPath(new URL("../../web/", import.meta.url)));
 const { loadRegulations, loadRegulationText, lawPath, citeId, pathOf } = await import("../../web/src/lib/peraturan.ts");
 const { amendmentSteps, shortName } = await import("../../web/src/lib/amendments.ts");
-const { articleAliases } = await import("../../web/src/lib/article-anchors.ts");
+const { readerText } = await import("./reader-text.ts");
 
 const { pasalText } = await import("../../web/src/lib/lawtext.ts");
-
-function readerText(document: NonNullable<ReturnType<typeof loadRegulationText>>) {
-  return {
-    preface: document.preface,
-    preamble: document.preamble,
-    body: document.body,
-    conclusions: document.conclusions,
-    penjelasan: document.penjelasan,
-    anchors: Object.fromEntries(articleAliases(document.body)),
-  };
-}
 
 type Regulation = ReturnType<typeof loadRegulations>[number];
 

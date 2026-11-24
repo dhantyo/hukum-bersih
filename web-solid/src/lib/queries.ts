@@ -35,9 +35,9 @@ export const collectionsQuery = () => queryOptions({
   queryFn: () => getCollections(),
 });
 
-export const collectionQuery = (slug: string) => queryOptions({
-  queryKey: ['collections', slug],
-  queryFn: () => getCollection(slug),
+export const collectionQuery = (slug: string, version = 'latest') => queryOptions({
+  queryKey: ['collections', slug, version],
+  queryFn: () => getCollection(slug, version),
 });
 
 export const searchQuery = (query: string) => queryOptions({

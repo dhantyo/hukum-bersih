@@ -46,7 +46,7 @@ export interface VersionRow {
 /** URL of one point: the original text is the law page; the latest merged version is the
  * Koleksi page; older merged versions have a dated page under it. */
 export function pointHref(k: Koleksi, p: HistoryPoint, latest: HistoryPoint): string {
-  const base = import.meta.env.BASE_URL;
+  const base = import.meta.env?.BASE_URL ?? "/";
   if (p.kind === "asli") return `${base}${lawPath(k.base)}`;
   if (p.id === latest.id) return `${base}${koleksiPath(k)}`;
   return `${base}${koleksiPath(k)}${p.date}/`;
