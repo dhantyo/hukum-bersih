@@ -1,6 +1,6 @@
 name: Parser regression
 
-# The PDF parser on the regression set (pipeline/tests/regression.yaml: 19 UU, 1947-2026, typed
+# The PDF parser on the regression set (pipeline/tests/regression.yaml: UU from 1947-2026, typed
 # and scanned, counts read from the PDFs) and on a random survey of UU from the Hugging Face
 # mirror of BPK, and what the OCR spell fix (pdf/ocr_fix.py) changes on random scanned UU. Runs
 # when the parser changes; fails if any law in the set is off.

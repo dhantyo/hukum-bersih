@@ -77,7 +77,7 @@ Ids never contain the project name.
 
 ```
 data/peraturan/uu/2008/uu_11_2008/
-  uu_11_2008.yaml                 details: title, short name, status, relationships, versions
+  uu_11_2008.yaml                 details: title, status, relationships, versions (short names: data/koleksi/)
   uu_11_2008_2008-04-21.txt       text as enacted (Bluebell / Akoma Ntoso)
   uu_11_2008_2024-01-02.txt       (later) consolidated text, marked unofficial
 data/ruu/perampasan-aset/
