@@ -25,13 +25,16 @@ relationships:
   enacts: []
   enacted_by: []
 versions:
-- id: uu_5_1953_1953
+- id: uu_5_1953_1953-02-14
   kind: asli
   source: official
-  date: null
+  date: '1953-02-14'
   date_basis: tanggal_penetapan
-  text: uu_5_1953_1953.txt
-  pasal_count: 1
+  text: uu_5_1953_1953-02-14.txt
+  pasal_count: 2
+  parser_version: 17
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: fa322c1eedc73c6496e6cfc5fb2f5cc8723ac4e1e80e78e3c80b2accd21f43be
 pdf_sha256: 7941cacdf8d62e3f81a637ad9f9717adb54620daf4318bd715845e9b8e964a4d
 tanggal_pengundangan: '1953-02-21'
 tanggal_berlaku: '1953-02-21'
@@ -51,5 +54,3 @@ bpk:
     archive_url: null
   status_peraturan: null
 uji_materi: null
-reparse_error: 'v16: new Penjelasan has 68 words, stored 81'
-recheck: 'watermark 2; closing: no date of signing'

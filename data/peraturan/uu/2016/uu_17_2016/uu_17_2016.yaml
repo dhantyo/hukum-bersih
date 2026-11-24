@@ -34,11 +34,14 @@ versions:
   date: '2016-11-09'
   date_basis: tanggal_penetapan
   text: uu_17_2016_2016-11-09.txt
-  pasal_count: 3
-  parser_version: 11
+  pasal_count: 2
+  parser_version: 17
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 90d514cb34e53a34b591c36e4bba61f32bbacddfa98d1c9f1ec378e866bcf4fb
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 12
 pdf_sha256: 7cb23be99558491ae213d9efd779d477482cb6940d381e74323f151565e281ab
 tanggal_pengundangan: '2016-11-09'
 tanggal_berlaku: '2016-11-09'
@@ -65,4 +68,3 @@ bpk:
       note: Pasal 81 ayat (1) dan Pasal 82 Undang-Undang Nomor 23 Tahun 2002 sebagaimana
         telah beberapa kali diubah, terakhir dengan Undang-Undang Nomor 17 Tahun 2016
 uji_materi: null
-reparse_error: 'v16: 2 pasal, stored text has 3'

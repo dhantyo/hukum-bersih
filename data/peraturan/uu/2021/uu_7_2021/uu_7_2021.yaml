@@ -28,10 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2021_2021-10-29.txt
   pasal_count: 20
-  parser_version: 11
+  parser_version: 17
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ad45e199a739e081e2a1ffb4dfdf7283d59bc29f257215f69fa830dc43a2ea78
   ocr: true
+  ocr_engine: indra
+  ocr_fixed: 3
+  ocr_unknown: 53
 pdf_sha256: 296b5bf34c4ec496b1e72ea6c9f878aee26ec68bb05afce2a21e4f469c7f3147
 tanggal_pengundangan: '2021-10-29'
 tanggal_berlaku: '2021-10-29'
@@ -148,5 +151,3 @@ uji_materi:
     dimaksud pada ayat (1) dan ayat (2) diatur dengan atau berdasarkan Peraturan Menteri
     Keuangan, sepanjang tidak mengatur hal-hal yang berkaitan dengan upaya paksa dan
     melanggar hak asasi wajib pajak”.
-recheck: missed heading in body 36; missed heading in penjelasan 2
-reparse_error: 'v16: 19 pasal, stored text has 20'
