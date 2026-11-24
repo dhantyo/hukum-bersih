@@ -25,10 +25,16 @@ jobs:
   import:
     runs-on: ubuntu-latest
     timeout-minutes: 120
+    env:
+      HUKUM_BERSIH_OCR_CACHE: /home/runner/ocr-cache      # raw OCR of scanned pages, kept between runs (.github/actions/ocr-cache)
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
-      - name: Tesseract for scanned PDFs
+      - uses: ./.github/actions/ocr-cache
+        with:
+          step: restore
+          path: ${{ env.HUKUM_BERSIH_OCR_CACHE }}
+      - name: OCR tools for scanned PDFs (Indra reads them, Tesseract is the fallback)
         run: sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ind hunspell hunspell-id hunspell-en-us >/dev/null
       - run: |
           uv sync --extra ocr
@@ -66,3 +72,8 @@ jobs:
             sleep $((i * 20))
           done
           exit 1
+      - uses: ./.github/actions/ocr-cache
+        if: always()
+        with:
+          step: save
+          path: ${{ env.HUKUM_BERSIH_OCR_CACHE }}

@@ -94,6 +94,54 @@ def test_a_common_word_needs_no_second_occurrence():
     assert out == ["setelah itu, ini merupakan"]
 
 
+LOOKALIKES = [                                 # read -> mapped (a letter of another script)
+    ("meningkatkarı", "meningkatkari"),        # Turkish dotless ı (Indra, CI 2026-11-24)
+    ("Ρasal", "Pasal"),                        # Greek capital Rho
+    ("раsal", "pasal"),                        # Cyrillic р, а
+    ("ΡASAL", "PASAL"),
+]
+
+UNCHANGED = ["ıı", "Ρασ", "привет", "“kutipan”", "§", "½", "1ı", "café", "Zürich", "Pasal 5 ayat (1)"]
+
+
+@pytest.mark.parametrize("read,mapped", LOOKALIKES)
+def test_a_lookalike_letter_in_a_latin_word_is_mapped(read, mapped):
+    lines, fixes = fix_lines([f"menurut {read} ini"])
+    assert lines == [f"menurut {mapped} ini"]
+    assert fixes.changed[0] == (read, mapped)
+
+
+@pytest.mark.parametrize("text", UNCHANGED)
+def test_other_characters_are_never_changed(text):
+    lines, fixes = fix_lines([f"menurut {text} ini"])
+    assert lines == [f"menurut {text} ini"]
+    assert all(read != text for read, _ in fixes.changed)
+
+
+@needs_hunspell
+@pytest.mark.parametrize("read,meant", [         # Indra-read UU on main, 2026-11-24
+    ("BАB", "BAB"),                                  # Cyrillic А: a BAB heading the parser missed
+    ("հuruf", "huruf"),                              # Armenian h
+    ("Ꭺnak", "Anak"),                                # Cherokee A
+])
+def test_real_lookalikes_are_mapped(read, meant):
+    lines, fixes = fix_lines([f"menurut {read} ini"])
+    assert lines == [f"menurut {meant} ini"]
+    assert (read, meant) in fixes.changed
+
+
+def test_only_letters_the_standard_calls_lookalikes():
+    """UTS #39 maps Cyrillic р/а but not и (no Latin lookalike) and not dotted İ: "Рариa"
+    (Papua) and "İbu" from Indra stay partly unmapped; no hand-made exceptions."""
+    assert fix_lines(["Рариa İbu"])[0] == ["Papиa İbu"]
+
+
+def test_french_and_accented_words_are_kept():
+    """BPK's texts quote French titles (République, française); OCR's own accents stay too."""
+    line = "République française RÉPUBLIQUE Ekönomi"
+    assert fix_lines([line])[0] == [line]
+
+
 def test_without_hunspell_nothing_is_corrected(monkeypatch):
     monkeypatch.setattr(ocr_fix.shutil, "which", lambda _: None)
     out, fixes = fix_lines([CONTEXT, "menurut keselamalan ini"])
