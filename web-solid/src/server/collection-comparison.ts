@@ -12,6 +12,7 @@ const version = v.object({
 });
 
 const line = v.tuple([v.nullable(v.string()), v.string(), v.number()]);
+
 const slot = v.nullable(
   v.union([v.literal("d"), v.literal("u"), v.array(line)])
 );

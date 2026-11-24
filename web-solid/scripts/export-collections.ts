@@ -15,12 +15,16 @@ const root = resolve(stage, "collections");
 process.chdir(fileURLToPath(new URL("../../web/", import.meta.url)));
 
 const { loadKoleksi } = await import("../../web/src/lib/koleksi.ts");
+
 const { citeId, lawPath, loadRegulationText } =
   await import("../../web/src/lib/peraturan.ts");
+
 const { compareData, hasAmendmentSteps, versionHistory } =
   await import("../../web/src/lib/amendments.ts");
+
 const { historyOf, versionRows } =
   await import("../../web/src/lib/versions.ts");
+
 const { mergedDoc } = await import("../../web/src/lib/merge.ts");
 
 type Collection = ReturnType<typeof loadKoleksi>[number];

@@ -45,6 +45,7 @@ export type MergedVersion = v.InferOutput<typeof mergedVersion>;
 
 export async function readCollectionVersion(slug: string, version: string) {
   const release = await readActiveRelease();
+
   const file = await readReleaseObject(
     release,
     `collections/${slug}/${version}.json`

@@ -56,9 +56,12 @@ function DocumentNodes(props: DocumentNodesProps) {
       {(node) => {
         const id =
           node.eId && (props.explanation ? `penjelasan-${node.eId}` : node.eId);
+
         const { anchors } = props;
+
         const alias =
           id && anchors && Object.hasOwn(anchors, id) ? anchors[id] : undefined;
+
         const children = () => (
           <DocumentNodes {...props} nodes={node.children} />
         );
@@ -119,6 +122,7 @@ function DocumentSection(props: {
 }) {
   const { node } = props;
   const label = headingLabels[node.tag];
+
   const heading = [node.num && `${label} ${node.num}`, node.heading]
     .filter(Boolean)
     .join(" ");

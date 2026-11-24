@@ -8,6 +8,7 @@ export const getSearchResults = GET(async (query: string) => {
   "use server";
   const release = await readActiveRelease();
   const cleaned = typeof query === "string" ? query.trim().slice(0, 200) : "";
+
   const catalog = cleaned
     ? searchMatches(cleaned, await readCatalog())
     : undefined;

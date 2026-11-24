@@ -25,6 +25,7 @@ if (!files.length) {
 const paths = new Set(
   files.map((file) => `/${file.slice(0, -"index.json".length)}`)
 );
+
 const drafts = await Array.fromAsync(
   glob("*/index.json", { cwd: join(destination, "drafts") })
 );
@@ -34,6 +35,7 @@ for (const file of drafts) {
 }
 
 const catalog = searchCatalog("/");
+
 const complete = catalog.laws
   .filter((law) => law.u.startsWith("/uu/"))
   .every((law) => paths.has(law.u));

@@ -34,6 +34,7 @@ export const Route = createFileRoute("/koleksi/$slug_/$versi")({
 
 function DatedCollectionPage() {
   const params = Route.useParams();
+
   const collection = useQuery(() =>
     collectionQuery(params().slug, params().versi)
   );

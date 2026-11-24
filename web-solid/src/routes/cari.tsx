@@ -104,6 +104,7 @@ function FullTextSearch(props: {
   hasCatalogHits: boolean;
 }) {
   const [hits, setHits] = createSignal<SearchHit[]>([]);
+
   const [state, setState] = createSignal<"loading" | "ready" | "error">(
     "loading"
   );
@@ -164,6 +165,7 @@ async function findText(release: string, query: string) {
   const pagefind: Pagefind = await import(/* @vite-ignore */ modulePath);
   await pagefind.init();
   const { results } = await pagefind.search(query);
+
   const matches = await Promise.all(
     results.slice(0, 10).map(async (result) => await result.data())
   );

@@ -10,10 +10,12 @@ export default async function setup(
 ) {
   const url = new URL(event.request.url);
   const queryClient = createQueryClient();
+
   const router = createAppRouter(
     queryClient,
     createMemoryHistory({ initialEntries: [url.pathname + url.search] })
   );
+
   await router.load();
 
   // Transfer router status and redirects before Solid sends the response head.

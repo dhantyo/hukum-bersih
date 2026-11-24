@@ -56,11 +56,13 @@ async function exportDraft(bill: Draft) {
   const directory = join(root, bill.slug);
   await mkdir(join(directory, "documents"), { recursive: true });
   const name = bill.short_name ?? bill.title;
+
   const record = {
     ...bill,
     name,
     documents: bill.documents.map(documentMetadata),
   };
+
   await writeFile(join(directory, "index.json"), JSON.stringify(record));
 
   for (const document of versions(bill)) {
@@ -69,12 +71,14 @@ async function exportDraft(bill: Draft) {
     }
 
     const text = readerText(loadText(bill, document));
+
     const exported = {
       name,
       title: bill.title,
       document: documentMetadata(document),
       text,
     };
+
     await writeFile(
       join(directory, "documents", `${document.id}.json`),
       JSON.stringify(exported)

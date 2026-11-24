@@ -19,6 +19,7 @@ export const Route = createFileRoute("/uu/$nomor/$tahun")({
   }),
   loader: async ({ context, params, deps }) => {
     const path = `/uu/${params.nomor}/${params.tahun}/`;
+
     const reader = await context.queryClient.ensureQueryData(
       readerQuery(path, deps.compareTo, deps.compareFrom)
     );

@@ -28,6 +28,7 @@ export const Route = createFileRoute("/uu/$nomor/$tahun_/perubahan")({
 
 function ComparisonPage() {
   const params = Route.useParams();
+
   const comparison = useQuery(() =>
     comparisonQuery(`/uu/${params().nomor}/${params().tahun}/`)
   );

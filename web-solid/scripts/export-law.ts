@@ -17,8 +17,10 @@ process.chdir(fileURLToPath(new URL("../../web/", import.meta.url)));
 
 const { loadRegulations, loadRegulationText, lawPath, citeId, pathOf } =
   await import("../../web/src/lib/peraturan.ts");
+
 const { amendmentSteps, shortName } =
   await import("../../web/src/lib/amendments.ts");
+
 const { readerText } = await import("./reader-text.ts");
 
 const { pasalText } = await import("../../web/src/lib/lawtext.ts");
