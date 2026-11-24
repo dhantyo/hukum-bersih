@@ -221,6 +221,8 @@ def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str, extra: list[Pat
             **({"extra_pdf_sha256": [sha256_file(x) for x in extra]} if extra else {}),
             **({"ocr": True, "ocr_engine": _ocr_engine(doc.warnings)}
                if any(w.startswith("ocr:") for w in doc.warnings) else {}),
+            **({"ocr_fixed": len(doc.ocr_fixes.changed), "ocr_unknown": len(doc.ocr_fixes.suspects)}
+               if doc.ocr_fixes else {}),
         }])
         return f"{doc.pasal_count} pasal"
     except Exception as e:  # noqa: BLE001 - record and move on; never guess

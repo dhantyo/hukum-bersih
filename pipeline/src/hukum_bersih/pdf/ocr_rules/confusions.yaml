@@ -1,0 +1,23 @@
+# Letter shapes OCR confuses: `read` is what the engine wrote, `meant` what was printed.
+# Only shapes, never spelling: "dj"/"j", "tj"/"c", "oe"/"u" are old spelling, not misreads,
+# and vowels are left out ("beku"/"baku" are both words). Lower case; one change per word.
+# Seen: where a real misread from our scans showed the pair (law, engine).
+- {read: rn, meant: m}
+- {read: m, meant: rn}
+- {read: i, meant: l}
+- {read: l, meant: i}
+- {read: ii, meant: u}
+- {read: u, meant: ii}
+- {read: cl, meant: d}
+- {read: vv, meant: w}
+- {read: li, meant: h}
+- {read: h, meant: b}
+- {read: b, meant: h}
+- {read: c, meant: e}
+- {read: e, meant: c}
+- {read: t, meant: f}
+- {read: f, meant: t}
+- {read: r, meant: t}
+- {read: t, meant: r}
+- {read: n, meant: u}
+- {read: u, meant: n}

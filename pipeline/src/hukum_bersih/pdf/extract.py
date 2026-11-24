@@ -12,6 +12,8 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
+from .ocr_fix import fix_lines
+
 # Signature boxes printed on every page of DPR "draft final" documents.
 HEADER_TOKENS = {
     "F", "FP", "PDIP", "FPG", "GERINDRA", "FPKB", "NASDEM", "PAN", "PKS", "FPD", "PEMERINTAH",
@@ -106,6 +108,7 @@ def page_lines(pdf: Path, stats: dict | None = None, ocr: bool = True) -> list[l
                     errors.append(f"{engine}: {type(e).__name__}: {str(e)[:120]}")
             else:
                 stats["ocr_missing"] = "; ".join(errors)
+        stats["ocr_scanned"] = sorted(read)              # for clean_lines: pages to spell-fix
         return [rows(read[p.number] if p.number in read else visible(p, p.get_text("words")))
                 for p in doc]
 
@@ -319,10 +322,18 @@ def is_page_turn(line: str) -> bool:
 CATCHWORD_ZONE = 2  # only the last lines of a page
 
 
-def clean_lines(pages: list[list[str]]) -> list[str]:
-    out: list[str] = []
-    for k, raw in enumerate(pages):
-        out.extend(_clean_page(raw, first_page=(k == 0)))
+def clean_lines(pages: list[list[str]], stats: dict | None = None) -> list[str]:
+    """``stats`` from ``page_lines``: misread words of its OCR'd pages (``ocr_scanned``) are
+    corrected (ocr_fix.py) once headers and page numbers are gone, so they are judged on the
+    law's own words; the result is added to ``ocr_fixes`` (one per PDF)."""
+    cleaned = [_clean_page(raw, first_page=(k == 0)) for k, raw in enumerate(pages)]
+    scanned = (stats or {}).get("ocr_scanned") or []
+    if scanned:
+        fixed, fixes = fix_lines([ln for n in scanned for ln in cleaned[n]])
+        stats.setdefault("ocr_fixes", []).append(fixes)
+        for n in scanned:
+            cleaned[n], fixed = fixed[:len(cleaned[n])], fixed[len(cleaned[n]):]
+    out = [ln for page in cleaned for ln in page]
     # Retyped PDFs do not keep the printed page breaks, so a page-turn word can stand anywhere;
     # it is always followed by the words it announces ("Pasal 15…" / "Pasal 15").
     kept = []

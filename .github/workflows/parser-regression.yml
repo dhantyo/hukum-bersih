@@ -2,16 +2,20 @@ name: Parser regression
 
 # The PDF parser on the regression set (pipeline/tests/regression.yaml: 19 UU, 1947-2026, typed
 # and scanned, counts read from the PDFs) and on a random survey of UU from the Hugging Face
-# mirror of BPK. Runs when the parser changes; fails if any law in the set is off.
+# mirror of BPK, and what the OCR spell fix (pdf/ocr_fix.py) changes on random scanned UU. Runs
+# when the parser changes; fails if any law in the set is off.
 on:
   workflow_dispatch:
     inputs:
       survey:
         description: "Also survey N random UU (0 = no)"
         default: "50"
+      ocr_fix:
+        description: "OCR spell fix report on N random scanned UU (0 = no)"
+        default: "30"
   push:
     paths: ["pipeline/src/hukum_bersih/pdf/**", "pipeline/src/hukum_bersih/akn/**",
-            "pipeline/src/hukum_bersih/closing.py", "pipeline/tests/regression.yaml",
+            "pipeline/src/hukum_bersih/closing.py", "pipeline/tests/regression.yaml", "pipeline/scripts/ocr_fix_report.py",
             ".github/workflows/parser-regression.yml"]
 
 permissions:
@@ -24,9 +28,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
-      - run: sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ind >/dev/null
+      - run: sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ind hunspell hunspell-id hunspell-en-us >/dev/null
+      - run: hunspell -d id_ID,en_US -G <<< "rumah house tidakada"   # dictionaries present: prints 2 words
       - run: |
-          uv sync --extra ocr
+          uv sync --extra ocr --extra bpk
           uv run python -c 'import indra_ocr; indra_ocr.load()'   # Indra's models (~76 MB) once, before the parallel OCR workers
         working-directory: pipeline
       - name: Regression set
@@ -37,3 +42,7 @@ jobs:
         if: ${{ (inputs.survey || '50') != '0' }}
         working-directory: pipeline
         run: uv run python scripts/survey.py "${{ inputs.survey || '50' }}" 2>&1 | grep -v "MuPDF error\|^$" | grep -v " ok$" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: OCR spell fix report
+        if: ${{ (inputs.ocr_fix || '30') != '0' }}
+        working-directory: pipeline
+        run: uv run python scripts/ocr_fix_report.py "${{ inputs.ocr_fix || '30' }}" 2>/dev/null | tee -a "$GITHUB_STEP_SUMMARY"
