@@ -3,7 +3,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { parseAkn, type LawDoc } from "./lawdoc.ts";
-import { align, compare, similarity, wordDiff } from "./compare.ts";
+import { align, compare, diffLines, similarity, wordDiff } from "./compare.ts";
 
 const doc = (pasal: string[]): LawDoc => ({
   preface: [], preamble: [], body: [], conclusions: [], penjelasan: [],
@@ -120,4 +120,23 @@ test("numbers hang apart from text and nesting is consistent", () => {
   // (1) ayat, its huruf one level in (lined up under the ayat text)
   assert.deepEqual(p5.lines.slice(0, 3).map((l) => [l.num, l.indent]), [["(1)", 0], ["a.", 1], ["b.", 1]]);
   assert.ok(!p5.lines.some((l) => /^\(\d+\)|^[a-z]\. /.test(l.text)), "numbers are not left in the text");
+});
+
+test("versions of one law: an item replaced by \"Dihapus.\" stays on its row (byNumber)", () => {
+  const line = (num: string, text: string) => ({ num, text, indent: 1 });
+  const pasal = (lines: ReturnType<typeof line>[]) => ({ label: "Pasal 1", num: "1", eId: "art_1", lines });
+  const a = pasal([
+    line("7.", "Izin Usaha Pertambangan, yang selanjutnya disebut IUP, adalah izin untuk melaksanakan usaha pertambangan."),
+    line("8.", "IUP Eksplorasi adalah izin usaha yang diberikan untuk melakukan tahapan kegiatan penyelidikan umum."),
+    line("9.", "IUP Operasi Produksi adalah izin usaha yang diberikan setelah selesai pelaksanaan IUP Eksplorasi."),
+  ]);
+  const b = pasal([
+    line("7.", "Izin Usaha Pertambangan, yang selanjutnya disebut IUP, adalah izin untuk melaksanakan Usaha Pertambangan."),
+    line("8.", "Dihapus."),
+    line("9.", "Dihapus."),
+  ]);
+  const rows = diffLines(a, b, undefined, { byNumber: true });
+  assert.deepEqual(rows.map((r) => [r.a?.num, r.b?.num]), [["7.", "7."], ["8.", "8."], ["9.", "9."]]);
+  // without byNumber (RUU drafts, which renumber) content alone decides: no pairing
+  assert.equal(diffLines(a, b).filter((r) => r.a && r.b).length, 1);
 });

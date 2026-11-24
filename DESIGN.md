@@ -155,15 +155,28 @@ separating.
 - **Synopsis (comparison)**: two columns, old left, new right, one row per pasal pair;
   deletions `--del-*`, insertions `--ins-*`; one inline column on phones.
 - **Comparing versions in place** (`components/CompareMode.astro`, decision 0010; replaces the
-  Perubahan page): "Diubah oleh UU 3/2020" under a pasal opens that pasal before / after the
-  amendment where its text was; "Bandingkan versi" (Versi panel) or `?bandingkan=<id>[&dari=<id>]`
-  compares two whole versions: a sticky bar with Dari / Ke, "Tampilkan yang berubah saja", a
-  legend. While comparing, the side panel folds to its rail and the page widens to
-  `--page-wide` (two columns; unchanged text stays at `--measure`); one inline column up to
-  960px. Notation after Fedlex: inserted `--ins-*`, deleted `--del-*` struck, reworded
-  `--mod-*` (struck on the old side), "tidak ada padanan" grey italic on `--bg-subtle`; pasal
-  in the contents grid outlined `--ok` (⊞ inserted), `--del-text` (⊟ deleted), `--warn`
-  (⊡ changed). Opens and closes with a View Transition, none under reduced motion.
+  Perubahan page). Always the whole law, and the reader stays put: "Diubah oleh UU 3/2020" under
+  a pasal compares the version before that amendment with the one it made, keeping that pasal
+  where it was on screen; "Bandingkan versi" (Versi panel) or `?bandingkan=<id>[&dari=<id>]`.
+  Every changed pasal opens in place (a pasal the text lacks is placed after its neighbour);
+  rows pair by ayat / item number, so "8. Dihapus." sits beside the old item 8.
+  - Sticky bar: title, "n pasal berbeda", "Yang berubah saja", "Tutup"; under it one **module
+    per column**, centred over it, joined by a rail (`--line-strong`), a round swap button in
+    the middle. A module is a raised pill (`--shadow-sm`, `--r-md`) with a grip and the
+    version's citation ("UU 3/2020", never "Teks asli" / "Setelah"). Drag a module across, or
+    press swap: the columns slide with it; where they cross, the column not held fades.
+  - Colours are chronological whichever side a version is on: inserted `--ins-*`, deleted
+    `--del-*` struck, reworded `--mod-*` (struck on the older side), "Dihapus." in `--gone`
+    italic, "tidak ada padanan" grey italic on `--bg-subtle`.
+  - Contents: BAB with changes open, with counts per kind; pasal cells tinted `--ins-*`,
+    `--del-*` (struck) or `--mod-*`. Marks are inline SVGs (`lib/marks.ts`: square with plus,
+    minus, dot), never font glyphs.
+  - Width: the page widens to `--page-wide`; unchanged text stays at `--measure`. From 1500px
+    the side panel stays; 961–1499px it folds to its rail; up to 960px one inline column, no
+    dragging.
+  - Motion (motion.dev): springs (`visualDuration` 0.38, `bounce` 0.18) for drag, swap and
+    changes growing out of the text they replace; quick ease-in (0.16s) for things leaving.
+    Nothing animates under reduced motion.
 - **Buttons**: primary (filled `--primary`), secondary (outline), quiet (text). Focus: 3px
   outline `--primary` with 2px offset, always visible on keyboard focus.
 - **Lists of laws**: rows, not cards: title, number/year, status badge, one line of meta.

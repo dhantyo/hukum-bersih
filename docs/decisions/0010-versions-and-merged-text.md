@@ -49,9 +49,11 @@ them show no merged version.
 
 The separate Perubahan page (`/uu/<nomor>/<tahun>/perubahan/`) is gone; its links forward to
 the reading view with `?bandingkan=<amending law id>`. Comparison happens where the text is
-(`web/src/components/CompareMode.astro`): "Diubah oleh UU 3/2020" under a pasal shows that pasal
-before and after that amendment in its place; "Bandingkan versi" in the Versi panel compares
-any two versions of the whole law, opening every changed pasal in place and marking them in the
-contents. The notation follows Fedlex's comparison view (inserted, deleted, reworded, no
+(`web/src/components/CompareMode.astro`). It always compares the whole law and keeps the reader
+where they were: "Diubah oleh UU 3/2020" under a pasal compares the version before that
+amendment with the one it made, with that pasal kept in place on screen; "Bandingkan versi" in
+the Versi panel compares any two versions. Every changed pasal opens in place and is marked in
+the contents. Each column's version is chosen in a module above it, and the columns can be
+swapped by dragging (2026-11-22, Dante). The notation follows Fedlex's comparison view (inserted, deleted, reworded, no
 counterpart; pasal inserted / deleted / changed). Data: `/koleksi/<slug>/perubahan.json`
 (`lib/amendments.ts` `compareData`), fetched only when a comparison is opened.
