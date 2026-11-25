@@ -72,6 +72,14 @@ def ruu_frbr_uri(slug: str, doc_date: str) -> str:
     return f"/akn/id/bill/{doc_date[:4]}/{slug}"
 
 
+def ruu_akn_args(slug: str, rec: dict, doc: dict) -> dict:
+    """The arguments of ``to_akn`` and ``to_akn_tree`` (after the text) for one RUU version."""
+    date = str(doc["date"])
+    full_date = date if len(date) == 10 else None
+    return {"frbr_uri": ruu_frbr_uri(slug, date), "root": "bill", "expression_date": full_date,
+            "title": doc.get("ruu_title") or rec["title"], "work_date": full_date}
+
+
 def build_ruu(data_dir: Path, out_dir: Path) -> list[Path]:
     """Generate Akoma Ntoso XML for every RUU version that has text."""
     written = []
@@ -82,11 +90,7 @@ def build_ruu(data_dir: Path, out_dir: Path) -> list[Path]:
             if not doc.get("text"):
                 continue
             text = (record.parent / doc["text"]).read_text()
-            date = str(doc["date"])
-            full_date = date if len(date) == 10 else None
-            xml = to_akn(text, ruu_frbr_uri(slug, date), root="bill",
-                         expression_date=full_date, title=doc.get("ruu_title") or rec["title"],
-                         work_date=full_date)
+            xml = to_akn(text, **ruu_akn_args(slug, rec, doc))
             target = out_dir / "ruu" / slug / f"{doc['id']}.xml"
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(xml)
