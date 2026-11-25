@@ -28,6 +28,7 @@ const styles = stylex.create({
   },
   header: {
     backgroundColor: color.background,
+    blockSize: "calc-size(auto, round(up, size, 1px))",
     borderBlockEndColor: color.line,
     borderBlockEndStyle: "solid",
     borderBlockEndWidth: 1,
