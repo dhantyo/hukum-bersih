@@ -7,10 +7,13 @@ requires-python = ">=3.12"
 dependencies = [
     "bluebell-akn>=5.0.0",
     "confusable-homoglyphs>=3.3.1",
+    "diff-match-patch>=20241021",
     "httpx>=0.28.1",
     "pydantic>=2.14.4",
     "pymupdf>=2.1",
     "pyyaml>=6.0.3",
+    "rapidiff>=0.3.0",
+    "regex>=2026.11.24",
 ]
 
 [project.optional-dependencies]
