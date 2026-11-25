@@ -5,6 +5,7 @@ import { color, size, space } from "./tokens.stylex.ts";
 const PHONE = "@media (max-width: 760px)";
 const SHOW_SAME = ":has([data-show-same]:checked)";
 const NUMBER_COLUMN = "2.3rem";
+const PHONE_NUMBER_COLUMN = "1.9rem";
 
 export const synopsisStyles = stylex.create({
   versions: {
@@ -24,7 +25,6 @@ export const synopsisStyles = stylex.create({
     fontSize: size.sm,
   },
   versionCard: {
-    gap: space.s1,
     alignItems: "start",
     display: "grid",
     justifyItems: "start",
@@ -130,9 +130,15 @@ export const synopsisStyles = stylex.create({
     paddingInline: space.s2,
     alignItems: "start",
     columnGap: "0.3rem",
-    gridTemplateColumns: `minmax(${NUMBER_COLUMN}, max-content) 1fr`,
+    gridTemplateColumns: {
+      [PHONE]: `minmax(${PHONE_NUMBER_COLUMN}, max-content) 1fr`,
+      default: `minmax(${NUMBER_COLUMN}, max-content) 1fr`,
+    },
     lineHeight: 1.6,
-    marginInlineStart: `calc(var(--i, 0) * ${NUMBER_COLUMN})`,
+    marginInlineStart: {
+      [PHONE]: `calc(var(--i, 0) * ${PHONE_NUMBER_COLUMN})`,
+      default: `calc(var(--i, 0) * ${NUMBER_COLUMN})`,
+    },
   },
   sideLine: { display: { [PHONE]: "none", default: "grid" } },
   inlineLine: { display: { [PHONE]: "grid", default: "none" } },

@@ -9,7 +9,7 @@ const styles = stylex.create({
     display: "block",
     marginBlockStart: space.s3,
   },
-  box: { margin: 0, accentColor: color.link },
+  box: { accentColor: color.link, marginInlineEnd: space.s2 },
 });
 
 /**
