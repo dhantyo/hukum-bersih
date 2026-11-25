@@ -2,7 +2,7 @@ import type { StartMiddleware } from "@solidjs/vite-plugin";
 import * as v from "valibot";
 
 import { collectionComparisonPath } from "../../lib/schemas.ts";
-import { readCollectionComparisonJson } from "../records/collection-comparison.ts";
+import { readCollectionHistoryJson } from "../records/collection-history.ts";
 
 export const collectionComparison: StartMiddleware = async (event, proceed) => {
   const { pathname } = new URL(event.request.url);
@@ -15,7 +15,7 @@ export const collectionComparison: StartMiddleware = async (event, proceed) => {
   }
 
   const segments = pathname.split("/");
-  const body = await readCollectionComparisonJson(segments[2]);
+  const body = await readCollectionHistoryJson(segments[2]);
 
   if (body === null) {
     return new Response(null, { status: 404 });

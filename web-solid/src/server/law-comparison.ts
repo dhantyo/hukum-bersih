@@ -1,12 +1,13 @@
-import { diffLines } from "../../../web/src/lib/compare.ts";
-import type { LineDiff, Part } from "../../../web/src/lib/compare.ts";
-import { pasalKey } from "../../../web/src/lib/display.ts";
-import type { Pasal } from "../../../web/src/lib/lawtext.ts";
+import { pasalKey } from "../lib/display.ts";
 import { isPresent } from "../lib/text.ts";
-import type { CollectionComparison } from "./records/collection-comparison.ts";
+import type {
+  CollectionVersions,
+  PairPasal,
+  PasalState,
+  VersionPair,
+} from "./records/collection-comparison.ts";
+import type { DiffLine, DiffPart } from "./records/diff-line.ts";
 import type { ReaderText } from "./records/reader-text.ts";
-
-type Slot = CollectionComparison["pasal"][number][1][number][1];
 
 /** How a piece of a changed ayat is shown: kept, inserted, struck, reworded (old or new side),
  * repealed ("gone") or absent from that version ("none"). */
@@ -16,7 +17,7 @@ export interface Piece {
 }
 
 export interface ChangedLine {
-  kind: LineDiff["kind"];
+  kind: DiffLine["kind"];
   indent: number;
   oldNum?: string;
   newNum?: string;
@@ -37,7 +38,7 @@ export interface ChangedPasal {
 }
 
 export interface VersionComparison {
-  versions: CollectionComparison["versions"];
+  versions: CollectionVersions;
   /** The versions in the left and right column. Colours follow age, not side. */
   left: number;
   right: number;
@@ -64,39 +65,28 @@ const byNumber = (x: string, y: string) => {
   );
 };
 
-const slotAt = (history: [number, Slot][] | undefined, version: number) =>
-  history?.findLast(([index]) => index <= version)?.[1];
+const textOf = (line: DiffLine, side: "a" | "b") =>
+  line.parts
+    .filter((part) => !(side === "a" ? part.added : part.removed))
+    .map((part) => part.value)
+    .join("");
 
-const toPasal = (num: string, slot: Slot | undefined) =>
-  Array.isArray(slot)
-    ? ({
-        label: `Pasal ${num}`,
-        num,
-        eId: `cmp-${num}`,
-        lines: slot.map(([line, text, indent]) => ({
-          num: line ?? undefined,
-          text,
-          indent,
-        })),
-      } satisfies Pasal)
-    : undefined;
-
-const pieces = (parts: Part[]) => {
+const pieces = (parts: DiffPart[]) => {
   const out: Piece[] = [];
 
   for (let index = 0; index < parts.length; index += 1) {
     const part = parts[index];
     const next = parts[index + 1];
 
-    if (part.removed === true && next?.added === true) {
+    if (part.removed && next?.added) {
       out.push(
         { kind: "modOld", value: part.value },
         { kind: "modNew", value: next.value }
       );
       index += 1;
-    } else if (part.added === true) {
+    } else if (part.added) {
       out.push({ kind: "ins", value: part.value });
-    } else if (part.removed === true) {
+    } else if (part.removed) {
       out.push({ kind: "del", value: part.value });
     } else {
       out.push({ kind: "same", value: part.value });
@@ -111,43 +101,10 @@ const whole = (kind: Piece["kind"], value: string) =>
 
 const none: Piece[] = [{ kind: "none", value: "" }];
 
-const lineRows = (
-  num: string,
-  older: Slot | undefined,
-  newer: Slot | undefined
-) => {
-  const before = toPasal(num, older);
-  const after = toPasal(num, newer);
+const isRepealed = (line: DiffLine, side: "a" | "b") =>
+  line[side] !== undefined && REPEALED.test(textOf(line, side).trim());
 
-  if (before && after) {
-    return diffLines(before, after, undefined, { byNumber: true });
-  }
-
-  if (after) {
-    return after.lines.map(
-      (line) =>
-        ({
-          kind: "baru",
-          b: line,
-          parts: [{ value: line.text, added: true }],
-        }) satisfies LineDiff
-    );
-  }
-
-  return (before?.lines ?? []).map(
-    (line) =>
-      ({
-        kind: "dihapus",
-        a: line,
-        parts: [{ value: line.text, removed: true }],
-      }) satisfies LineDiff
-  );
-};
-
-const isRepealed = (line: { text: string } | undefined) =>
-  line !== undefined && REPEALED.test(line.text.trim());
-
-const wordSides = (row: LineDiff) => {
+const wordSides = (row: DiffLine) => {
   const all = pieces(row.parts);
 
   return {
@@ -159,9 +116,9 @@ const wordSides = (row: LineDiff) => {
   };
 };
 
-const repealedSides = (row: LineDiff, gap: Piece[]) => {
-  const before = row.a ? whole("del", row.a.text) : gap;
-  const current = whole("gone", row.b?.text ?? "");
+const repealedSides = (row: DiffLine, gap: Piece[]) => {
+  const before = row.a ? whole("del", textOf(row, "a")) : gap;
+  const current = whole("gone", textOf(row, "b"));
 
   return {
     old: before,
@@ -170,36 +127,36 @@ const repealedSides = (row: LineDiff, gap: Piece[]) => {
   };
 };
 
-const sidesOf = (row: LineDiff, gap: Piece[]) => {
-  if (isRepealed(row.b) && !isRepealed(row.a)) {
+const sidesOf = (row: DiffLine, gap: Piece[]) => {
+  if (isRepealed(row, "b") && !isRepealed(row, "a")) {
     return repealedSides(row, gap);
   }
 
   if (row.kind === "sama") {
-    const same = whole("same", row.b?.text ?? "");
+    const same = whole("same", textOf(row, "b"));
 
     return {
-      old: whole("same", row.a?.text ?? ""),
+      old: whole("same", textOf(row, "a")),
       current: same,
       inline: same,
     };
   }
 
   if (row.kind === "baru") {
-    const added = whole("ins", row.b?.text ?? "");
+    const added = whole("ins", textOf(row, "b"));
 
     return { old: gap, current: added, inline: added };
   }
 
   if (row.kind === "dihapus") {
-    const removed = whole("del", row.a?.text ?? "");
+    const removed = whole("del", textOf(row, "a"));
 
     return { old: removed, current: gap, inline: removed };
   }
 
   if (row.kind === "diganti") {
-    const old = whole("modOld", row.a?.text ?? "");
-    const current = whole("modNew", row.b?.text ?? "");
+    const old = whole("modOld", textOf(row, "a"));
+    const current = whole("modNew", textOf(row, "b"));
 
     return {
       old,
@@ -211,7 +168,7 @@ const sidesOf = (row: LineDiff, gap: Piece[]) => {
   return wordSides(row);
 };
 
-const changedLine = (row: LineDiff, bothSides: boolean) => {
+const changedLine = (row: DiffLine, bothSides: boolean) => {
   const line = row.b ?? row.a;
   const { old, current, inline } = sidesOf(row, bothSides ? none : []);
 
@@ -227,28 +184,28 @@ const changedLine = (row: LineDiff, bothSides: boolean) => {
   } satisfies ChangedLine;
 };
 
-const absence = (slot: Slot | undefined, older: boolean) => {
-  if (slot === "u") {
+const absence = (state: PasalState, older: boolean) => {
+  if (state === "unreadable") {
     return "teks belum terbaca dari PDF";
   }
 
-  if (slot === "d") {
+  if (state === "deleted") {
     return "pasal ini dihapus";
   }
 
-  if (slot === null || slot === undefined) {
+  if (state === "absent") {
     return older ? "pasal ini belum ada" : "pasal ini tidak ada";
   }
 
   return "";
 };
 
-const markOf = (older: Slot | undefined, newer: Slot | undefined) => {
-  if (!Array.isArray(older) && Array.isArray(newer)) {
+const markOf = (older: PasalState, newer: PasalState) => {
+  if (older !== "text" && newer === "text") {
     return "ins" satisfies Mark;
   }
 
-  return newer === "d" && older !== "d"
+  return newer === "deleted" && older !== "deleted"
     ? ("del" satisfies Mark)
     : ("mod" satisfies Mark);
 };
@@ -294,62 +251,76 @@ const placements = (text: ReaderText, missing: string[]) => {
 };
 
 const noteOf = (
-  data: CollectionComparison,
-  older: number,
-  newer: number,
-  before: Slot | undefined,
-  after: Slot | undefined
+  versions: CollectionVersions,
+  picked: Picked,
+  pasal: PairPasal
 ) =>
   [
-    [data.versions[older].cite, absence(before, true)],
-    [data.versions[newer].cite, absence(after, false)],
+    [versions[picked.older].cite, absence(pasal.before, true)],
+    [versions[picked.newer].cite, absence(pasal.after, false)],
   ]
     .flatMap(([cite, reason]) => (reason === "" ? [] : [`${cite}: ${reason}`]))
     .join(" · ");
 
-const versionIndex = (data: CollectionComparison, id: string) =>
-  data.versions.findIndex((version) => version.id === id);
+const versionIndex = (versions: CollectionVersions, id: string) =>
+  versions.findIndex((version) => version.id === id);
+
+export interface Picked {
+  left: number;
+  right: number;
+  older: number;
+  newer: number;
+}
 
 /** `to` and `from` are version ids from the query string. Defaults follow the reader's
  * original text: the original against the latest version, and `to` alone against the version
  * before it. */
-export const compareVersions = (
-  data: CollectionComparison,
-  text: ReaderText,
+export const pickVersions = (
+  versions: CollectionVersions,
   to: string,
   from: string | undefined
 ) => {
-  const last = data.versions.length - 1;
-  const target = versionIndex(data, to);
-  const source = from === undefined ? -1 : versionIndex(data, from);
+  const target = versionIndex(versions, to);
+  const source = from === undefined ? -1 : versionIndex(versions, from);
   const left = source >= 0 ? source : Math.max(target - 1, 0);
-  const right = target >= 0 ? target : last;
-  const older = Math.min(left, right);
-  const newer = Math.max(left, right);
+  const right = target >= 0 ? target : versions.length - 1;
+
+  return {
+    left,
+    right,
+    older: Math.min(left, right),
+    newer: Math.max(left, right),
+  } satisfies Picked;
+};
+
+const changedPasal = (
+  versions: CollectionVersions,
+  picked: Picked,
+  pasal: PairPasal
+) =>
+  ({
+    num: pasal.num,
+    key: pasalKey(pasal.num),
+    mark: markOf(pasal.before, pasal.after),
+    note: noteOf(versions, picked, pasal),
+    lines: (pasal.numbered ?? pasal.lines).map((row) =>
+      changedLine(row, pasal.before === "text" && pasal.after === "text")
+    ),
+  }) satisfies ChangedPasal;
+
+/** The pasal that differ between the picked versions, read from their published comparison
+ * (`pair` is null when the same version is picked twice), set against the pasal of `text`. */
+export const compareVersions = (
+  versions: CollectionVersions,
+  picked: Picked,
+  pair: VersionPair | null,
+  text: ReaderText
+) => {
   const present = new Set(articleNumbers(text).map((entry) => entry.num));
-  const changed: ChangedPasal[] = [];
 
-  for (const [num, history] of data.pasal) {
-    if (
-      older === newer ||
-      !history.some(([index]) => index > older && index <= newer)
-    ) {
-      continue;
-    }
-
-    const before = slotAt(history, older);
-    const after = slotAt(history, newer);
-    const rows = lineRows(num, before, after);
-    const bothSides = Array.isArray(before) && Array.isArray(after);
-
-    changed.push({
-      num,
-      key: pasalKey(num),
-      mark: markOf(before, after),
-      note: noteOf(data, older, newer, before, after),
-      lines: rows.map((row) => changedLine(row, bothSides)),
-    });
-  }
+  const changed = (pair?.pasal ?? []).map((pasal) =>
+    changedPasal(versions, picked, pasal)
+  );
 
   const missing = changed.flatMap((entry) =>
     present.has(entry.num) ? [] : [entry.num]
@@ -359,11 +330,8 @@ export const compareVersions = (
   const placed = new Set(Object.values(after).flat());
 
   return {
-    versions: data.versions,
-    left,
-    right,
-    older,
-    newer,
+    versions,
+    ...picked,
     changed: changed.filter(
       (entry) => present.has(entry.num) || placed.has(entry.num)
     ),

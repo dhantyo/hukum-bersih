@@ -1,8 +1,11 @@
 import { GET } from "@solidjs/web/server-functions";
 import * as v from "valibot";
 
-import { compareVersions } from "../server/law-comparison.ts";
-import { readCollectionComparison } from "../server/records/collection-comparison.ts";
+import { compareVersions, pickVersions } from "../server/law-comparison.ts";
+import {
+  readCollectionVersions,
+  readVersionPair,
+} from "../server/records/collection-comparison.ts";
 import { readLaw } from "../server/records/law.ts";
 import {
   readLawOverview,
@@ -44,14 +47,27 @@ export const getLaw = GET(
       return { law };
     }
 
-    const data = await readCollectionComparison(law.family.slug);
+    const { slug } = law.family;
+    const versions = await readCollectionVersions(slug);
+
+    if (versions === null) {
+      return { law, comparison: undefined };
+    }
+
+    const picked = pickVersions(versions, compareTo, compareFrom);
+
+    const pair =
+      picked.older === picked.newer
+        ? null
+        : await readVersionPair(
+            slug,
+            versions[picked.older].id,
+            versions[picked.newer].id
+          );
 
     return {
       law,
-      comparison:
-        data === null
-          ? undefined
-          : compareVersions(data, law.text, compareTo, compareFrom),
+      comparison: compareVersions(versions, picked, pair, law.text),
     };
   }
 );

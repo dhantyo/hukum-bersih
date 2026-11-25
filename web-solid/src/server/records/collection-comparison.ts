@@ -1,9 +1,10 @@
 import * as v from "valibot";
 
 import { readActiveReleaseText } from "../corpus.ts";
+import { diffLine } from "./diff-line.ts";
 import { parseRecord } from "./parse.ts";
 
-const version = v.object({
+export const comparedVersion = v.object({
   id: v.string(),
   label: v.string(),
   cite: v.string(),
@@ -11,39 +12,56 @@ const version = v.object({
   gap: v.number(),
 });
 
-const line = v.tuple([v.nullable(v.string()), v.string(), v.number()]);
+const versionList = v.object({ versions: v.array(comparedVersion) });
 
-const slot = v.nullable(
-  v.union([v.literal("d"), v.literal("u"), v.array(line)])
-);
+const state = v.picklist(["text", "deleted", "unreadable", "absent"]);
 
-const comparison = v.object({
-  versions: v.array(version),
-  pasal: v.array(v.tuple([v.string(), v.array(v.tuple([v.number(), slot]))])),
+const pasal = v.object({
+  num: v.string(),
+  before: state,
+  after: state,
+  lines: v.array(diffLine),
+  numbered: v.optional(v.array(diffLine)),
 });
 
-export type CollectionComparison = v.InferOutput<typeof comparison>;
+const versionPair = v.object({ pasal: v.array(pasal) });
 
-export type CompareSlot = v.InferOutput<typeof slot>;
+export type CollectionVersions = v.InferOutput<typeof versionList>["versions"];
 
-const readComparisonText = async (slug: string) =>
-  await readActiveReleaseText(`collections/${slug}/perubahan.json`);
+export type VersionPair = v.InferOutput<typeof versionPair>;
 
-const parseComparison = (text: string, slug: string) =>
-  parseRecord(comparison, text, `collection comparison ${slug}`);
+export type PairPasal = VersionPair["pasal"][number];
 
-export const readCollectionComparisonJson = async (slug: string) => {
-  const text = await readComparisonText(slug);
+export type PasalState = PairPasal["before"];
 
-  if (text !== null) {
-    parseComparison(text, slug);
-  }
+export const readCollectionVersions = async (slug: string) => {
+  const text = await readActiveReleaseText(
+    `collections/${slug}/comparisons/index.json`
+  );
 
-  return text;
+  return text === null
+    ? null
+    : parseRecord(versionList, text, `collection versions ${slug}`).versions;
 };
 
-export const readCollectionComparison = async (slug: string) => {
-  const text = await readComparisonText(slug);
+/** The pasal that read differently in version `from` and in version `to`, diffed from the first
+ * to the second. Both ids come from `readCollectionVersions`. */
+export const readVersionPair = async (
+  slug: string,
+  from: string,
+  to: string
+) => {
+  const text = await readActiveReleaseText(
+    `collections/${slug}/comparisons/${from}...${to}.json`
+  );
 
-  return text === null ? null : parseComparison(text, slug);
+  if (text === null) {
+    throw new Error(`Published comparison is missing: ${slug} ${from}...${to}`);
+  }
+
+  return parseRecord(
+    versionPair,
+    text,
+    `version comparison ${slug} ${from}...${to}`
+  );
 };

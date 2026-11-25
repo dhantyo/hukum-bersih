@@ -1,6 +1,16 @@
 import * as v from "valibot";
 
-import type { AknNode } from "../../../../web/src/lib/lawdoc.ts";
+/** One element of a law text in the shape the reader shows: `tag` is the Akoma Ntoso element
+ * (chapter, article, paragraph, point, p, ...). */
+export interface AknNode {
+  tag: string;
+  eId?: string;
+  num?: string;
+  heading?: string;
+  /** for a `p` */
+  text?: string;
+  children: AknNode[];
+}
 
 const optionalText = v.optional(v.string());
 

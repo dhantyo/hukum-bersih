@@ -1,25 +1,15 @@
 import * as v from "valibot";
 
 import { readActiveReleaseText } from "../corpus.ts";
+import { diffLine } from "./diff-line.ts";
 import { draftDocument } from "./draft.ts";
 import { parseRecord } from "./parse.ts";
 
 const anchor = v.pipe(v.string(), v.regex(/^[ab]-[\w.:-]+$/u));
 const status = v.picklist(["sama", "berubah", "baru", "dihapus"]);
 
-const part = v.object({
-  value: v.string(),
-  added: v.boolean(),
-  removed: v.boolean(),
-});
-
-const lineSide = v.object({ num: v.optional(v.string()), indent: v.number() });
-
 const line = v.object({
-  kind: v.picklist(["sama", "berubah", "baru", "dihapus", "diganti"]),
-  a: v.optional(lineSide),
-  b: v.optional(lineSide),
-  parts: v.array(part),
+  ...diffLine.entries,
   ref: v.optional(
     v.object({
       label: v.string(),

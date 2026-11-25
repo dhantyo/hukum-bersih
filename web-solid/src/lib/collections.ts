@@ -2,10 +2,13 @@ import { GET } from "@solidjs/web/server-functions";
 import * as v from "valibot";
 
 import { readCatalog } from "../server/records/catalog.ts";
-import { readCollectionComparison } from "../server/records/collection-comparison.ts";
+import {
+  readCollectionVersions,
+  readVersionPair,
+} from "../server/records/collection-comparison.ts";
 import { readCollectionTimeline } from "../server/records/collection-timeline.ts";
 import { readCollectionVersion } from "../server/records/collection-version.ts";
-import { compareVersions } from "./collection-compare.ts";
+import { compareVersions, pickPair } from "./collection-compare.ts";
 import { collectionCompare, collectionVersion, slug } from "./schemas.ts";
 
 export const getCollections = GET(async () => {
@@ -78,17 +81,32 @@ export const getCollectionComparison = GET(
       return null;
     }
 
-    const data = await readCollectionComparison(collectionSlug);
+    const versions = await readCollectionVersions(collectionSlug);
 
-    if (data === null) {
+    if (versions === null) {
       return null;
     }
 
     const choice = v.safeParse(collectionCompare, pair);
 
-    return choice.success
-      ? compareVersions(data, choice.output.bandingkan, choice.output.dari)
-      : { ...compareVersions(data), unknown: true };
+    const selection = choice.success
+      ? pickPair(
+          versions.map((version) => version.id),
+          choice.output.bandingkan,
+          choice.output.dari
+        )
+      : { unknown: true, pair: undefined };
+
+    const record =
+      selection.pair === undefined
+        ? null
+        : await readVersionPair(
+            collectionSlug,
+            versions[selection.pair[0]].id,
+            versions[selection.pair[1]].id
+          );
+
+    return compareVersions(versions, selection, record);
   }
 );
 
