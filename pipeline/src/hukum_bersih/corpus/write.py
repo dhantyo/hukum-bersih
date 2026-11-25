@@ -84,13 +84,15 @@ def _number(value: float) -> int | float | None:
     return value
 
 
-def dumps(value: Any) -> str:
-    """The text of ``JSON.stringify(value)`` followed by a newline."""
-    return json.dumps(_plain(value), ensure_ascii=False, separators=(",", ":")) + "\n"
+def dumps(value: Any, newline: bool = True) -> str:
+    """The text of ``JSON.stringify(value)``, followed by a newline unless ``newline`` is False
+    (the export of drafts writes none)."""
+    text = json.dumps(_plain(value), ensure_ascii=False, separators=(",", ":"))
+    return text + "\n" if newline else text
 
 
-def write_json(path: Path, value: Any) -> None:
+def write_json(path: Path, value: Any, newline: bool = True) -> None:
     """Write ``value`` to a new file (like the export's ``flag: "wx"``), folders included."""
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("x", encoding="utf-8", newline="") as out:
-        out.write(dumps(value))
+        out.write(dumps(value, newline))

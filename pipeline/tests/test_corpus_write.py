@@ -55,6 +55,14 @@ def test_write_json_creates_folders_and_never_overwrites(tmp_path):
         write_json(target, {"a": 2})
 
 
+def test_the_final_newline_can_be_left_out(tmp_path):
+    assert dumps({"n": 1}, newline=False) == '{"n":1}'
+
+    write_json(tmp_path / "a.json", {"n": 1}, newline=False)
+
+    assert (tmp_path / "a.json").read_bytes() == b'{"n":1}'
+
+
 @pytest.mark.skipif("CORPUS_REFERENCE" not in os.environ,
                     reason="set CORPUS_REFERENCE to a stage the TypeScript export wrote")
 def test_every_reference_law_file_round_trips_to_the_same_bytes():
