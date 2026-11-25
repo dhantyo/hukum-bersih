@@ -135,25 +135,21 @@ export const SiteHeader = (props: { pending: boolean }) => {
             </For>
           </nav>
           <Show when={location.pathname !== Router.paths()}>
-            <form
-              class={css(styles.search)}
-              action={slashed(Router.paths.cari)}
-              method="get"
-              // oxlint-disable-next-line jsx-a11y/prefer-tag-over-role -- keeps the form markup the Astro site serves
-              role="search"
-            >
-              <label class={css(accessibility.visuallyHidden)} for="q">
-                Cari peraturan
-              </label>
-              <input
-                class={css(styles.field)}
-                id="q"
-                name="q"
-                type="search"
-                placeholder="Cari undang-undang, pasal, kata…"
-                autocomplete="off"
-              />
-            </form>
+            <search class={css(styles.search)}>
+              <form action={slashed(Router.paths.cari)} method="get">
+                <label class={css(accessibility.visuallyHidden)} for="q">
+                  Cari peraturan
+                </label>
+                <input
+                  class={css(styles.field)}
+                  id="q"
+                  name="q"
+                  type="search"
+                  placeholder="Cari undang-undang, pasal, kata…"
+                  autocomplete="off"
+                />
+              </form>
+            </search>
           </Show>
         </div>
       </header>

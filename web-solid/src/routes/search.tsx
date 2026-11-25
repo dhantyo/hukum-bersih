@@ -21,19 +21,20 @@ const SearchPage = (props: RouteProps<"/cari">) => {
   return (
     <main>
       <h1>Cari teks hukum</h1>
-      {/* oxlint-disable-next-line jsx-a11y/prefer-tag-over-role -- keeps the form markup the Astro site serves */}
-      <form role="search" method="get" action={slashed(Router.paths.cari)}>
-        <label for="search-query">Kata kunci</label>
-        <input
-          id="search-query"
-          name="q"
-          type="search"
-          value={search().query}
-          maxlength={200}
-          required
-        />
-        <button type="submit">Cari</button>
-      </form>
+      <search>
+        <form method="get" action={slashed(Router.paths.cari)}>
+          <label for="search-query">Kata kunci</label>
+          <input
+            id="search-query"
+            name="q"
+            type="search"
+            value={search().query}
+            maxlength={200}
+            required
+          />
+          <button type="submit">Cari</button>
+        </form>
+      </search>
       <Show when={search().catalog} keyed>
         {(catalog) => (
           <>

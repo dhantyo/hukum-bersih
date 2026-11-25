@@ -80,27 +80,27 @@ const Home = () => {
           undang-undang beserta setiap versinya: dari mana asalnya, dan apa yang
           berubah.
         </p>
-        <form
-          class={css(styles.search)}
-          action={slashed(Router.paths.cari)}
-          method="get"
-          // oxlint-disable-next-line jsx-a11y/prefer-tag-over-role -- keeps the form markup the Astro site serves
-          role="search"
-        >
-          <label class={css(accessibility.visuallyHidden)} for="hero-q">
-            Cari
-          </label>
-          <input
-            class={css(styles.field)}
-            id="hero-q"
-            name="q"
-            type="search"
-            placeholder="Contoh: perampasan aset, pasal 27 ITE, perkawinan…"
-          />
-          <button class={css(styles.submit)} type="submit">
-            Cari
-          </button>
-        </form>
+        <search>
+          <form
+            class={css(styles.search)}
+            action={slashed(Router.paths.cari)}
+            method="get"
+          >
+            <label class={css(accessibility.visuallyHidden)} for="hero-q">
+              Cari
+            </label>
+            <input
+              class={css(styles.field)}
+              id="hero-q"
+              name="q"
+              type="search"
+              placeholder="Contoh: perampasan aset, pasal 27 ITE, perkawinan…"
+            />
+            <button class={css(styles.submit)} type="submit">
+              Cari
+            </button>
+          </form>
+        </search>
         <p class={css(styles.stats)}>
           <a class={linkClass} href={slashed(Router.paths.uu)}>
             {overview().total.toLocaleString("id-ID")} undang-undang
