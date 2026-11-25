@@ -243,7 +243,9 @@ const placements = (text: ReaderText, missing: string[]) => {
       continue;
     }
 
-    after[previous.eId] = [...(after[previous.eId] ?? []), num].sort(byNumber);
+    after[previous.eId] = [...(after[previous.eId] ?? []), num].toSorted(
+      byNumber
+    );
     placed.splice(placed.indexOf(previous) + 1, 0, {
       eId: previous.eId,
       num,

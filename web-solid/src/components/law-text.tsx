@@ -277,11 +277,11 @@ const styles = stylex.create({
   },
   note: {
     margin: 0,
-    maxInlineSize: size.measure,
     color: color.warn,
     fontFamily: font.ui,
     fontSize: size.sm,
     marginBlockEnd: space.s3,
+    maxInlineSize: size.measure,
     textAlign: {
       default: null,
       [stylex.when.ancestor(ASLI)]: "center",
@@ -460,7 +460,11 @@ const joiner = (index: number, count: number) => {
   return index === count - 1 ? " dan " : ", ";
 };
 
-const ArticleNotes = (props: { notes: PasalNote[]; num: string }) => (
+const ArticleNotes = (props: {
+  notes: PasalNote[];
+  num: string;
+  compared: boolean;
+}) => (
   <For each={noteGroups(props.notes)}>
     {([kind, list]) => (
       <p class={css(styles.note, kind === "unreadable" && styles.noteWarn)}>
@@ -476,7 +480,7 @@ const ArticleNotes = (props: { notes: PasalNote[]; num: string }) => (
               ) : (
                 note.label
               )}
-              {isPresent(note.by) && (
+              {isPresent(note.by) && !props.compared && (
                 <>
                   {" ("}
                   <a
@@ -548,7 +552,13 @@ const ArticleSection = (props: {
       }
     >
       <Show when={props.notes}>
-        {(notes) => <ArticleNotes notes={notes()} num={props.node.num ?? ""} />}
+        {(notes) => (
+          <ArticleNotes
+            notes={notes()}
+            num={props.node.num ?? ""}
+            compared={props.compare !== undefined}
+          />
+        )}
       </Show>
       <Show
         when={props.compare}
