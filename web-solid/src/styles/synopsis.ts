@@ -3,6 +3,7 @@ import * as stylex from "@stylexjs/stylex";
 import { color, size, space } from "./tokens.stylex.ts";
 
 const PHONE = "@media (max-width: 760px)";
+const LARGE = ':is([data-size="large"])';
 const SHOW_SAME = ":has([data-show-same]:checked)";
 const NUMBER_COLUMN = "2.3rem";
 const PHONE_NUMBER_COLUMN = "1.9rem";
@@ -91,7 +92,6 @@ export const synopsisStyles = stylex.create({
     borderRadius: 999,
     borderStyle: "solid",
     borderWidth: 1,
-    paddingBlock: space.hairline,
     paddingInline: space.s2,
     textDecoration: "none",
     color: color.textMuted,
@@ -130,6 +130,10 @@ export const synopsisStyles = stylex.create({
     paddingInline: space.s2,
     alignItems: "start",
     columnGap: "0.3rem",
+    fontSize: {
+      default: size.law,
+      [stylex.when.ancestor(LARGE)]: size.lawLarge,
+    },
     gridTemplateColumns: {
       [PHONE]: `minmax(${PHONE_NUMBER_COLUMN}, max-content) 1fr`,
       default: `minmax(${NUMBER_COLUMN}, max-content) 1fr`,
