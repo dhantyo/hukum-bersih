@@ -14,6 +14,7 @@ import {
   modernHeading,
   modernLabel,
   pasalKey,
+  preview,
 } from "../lib/display.ts";
 import { format, penjelasan } from "../lib/reading-preferences.ts";
 import { isPresent } from "../lib/text.ts";
@@ -23,11 +24,14 @@ import type {
 } from "../server/law-comparison.ts";
 import type { AknNode, ReaderText } from "../server/records/reader-text.ts";
 import { css } from "../styles/css.ts";
-import { linkClass, linkStyles } from "../styles/link.ts";
+import { fold, foldHead } from "../styles/fold.stylex.ts";
+import { linkClass } from "../styles/link.ts";
 import { reading } from "../styles/reading.ts";
 import { color, font, media, size, space } from "../styles/tokens.stylex.ts";
 import { AddedPasal, PasalComparison } from "./law-compare.tsx";
+import { Fold, FoldChevron, Permalink, useFolds } from "./law-fold.tsx";
 
+const CLOSED = ":not([open])";
 const ASLI = ':is([data-format="asli"])';
 const PER_PASAL = ':is([data-penjelasan="pasal"])';
 const NO_PENJELASAN = ':is([data-penjelasan="sembunyi"])';
@@ -48,9 +52,52 @@ const styles = stylex.create({
     },
   },
   paragraph: { margin: 0, marginBlockEnd: space.s2 },
-  permalink: { marginInlineStart: space.s2 },
   alias: { display: "block", scrollMarginBlockStart: space.s4 },
   article: { scrollMarginBlockStart: space.s4 },
+  preview: {
+    overflow: "hidden",
+    color: color.textMuted,
+    display: {
+      default: "none",
+      [stylex.when.ancestor(CLOSED, fold)]: "block",
+    },
+    fontFamily: font.ui,
+    fontSize: size.sm,
+    fontWeight: 400,
+    letterSpacing: 0,
+    textAlign: {
+      default: null,
+      [stylex.when.ancestor(ASLI)]: "center",
+    },
+    textOverflow: "ellipsis",
+    textTransform: "none",
+    whiteSpace: "nowrap",
+  },
+  hitArticle: { paddingBlock: space.s1 },
+  hitChapter: {
+    paddingBlockEnd: space.s1,
+    paddingBlockStart: {
+      default: `calc(${space.s4} + ${space.s1})`,
+      [stylex.when.ancestor(ASLI)]: space.s1,
+      [stylex.when.ancestor(CLOSED, fold)]: space.s3,
+    },
+  },
+  hitPart: { paddingBlock: space.s1 },
+  firstArticle: {
+    marginBlockStart: {
+      default: space.s2,
+      [stylex.when.ancestor(ASLI)]: space.s6,
+      [stylex.when.ancestor(CLOSED, fold)]: space.s2,
+    },
+  },
+  firstChapter: {
+    borderBlockStartStyle: "none",
+    marginBlockStart: {
+      default: space.s5,
+      [stylex.when.ancestor(ASLI)]: space.s7,
+      [stylex.when.ancestor(CLOSED, fold)]: space.s2,
+    },
+  },
   unchanged: {
     display: {
       default: null,
@@ -110,6 +157,7 @@ const styles = stylex.create({
     flexWrap: "wrap",
     fontFamily: font.ui,
     minBlockSize: size.tap,
+    position: "relative",
   },
   summaryTitle: { fontWeight: 600 },
   summaryMeta: { color: color.textMuted, fontSize: size.sm },
@@ -123,6 +171,7 @@ const styles = stylex.create({
     marginBlock: {
       default: `${space.s7} ${space.s3}`,
       [stylex.when.ancestor(ASLI)]: `${space.s7} ${space.s4}`,
+      [stylex.when.ancestor(CLOSED, fold)]: `${space.s2} 0`,
     },
     borderBlockStartColor: color.line,
     borderBlockStartStyle: {
@@ -147,7 +196,9 @@ const styles = stylex.create({
     paddingBlockStart: {
       default: space.s4,
       [stylex.when.ancestor(ASLI)]: 0,
+      [stylex.when.ancestor(CLOSED, fold)]: space.s3,
     },
+    position: "relative",
     textAlign: {
       default: null,
       [stylex.when.ancestor(ASLI)]: "center",
@@ -157,6 +208,7 @@ const styles = stylex.create({
     marginBlock: {
       default: `${space.s6} ${space.s2}`,
       [stylex.when.ancestor(ASLI)]: `${space.s7} ${space.s4}`,
+      [stylex.when.ancestor(CLOSED, fold)]: `${space.s2} 0`,
     },
     borderBlockStartStyle: "none",
     fontSize: {
@@ -201,6 +253,7 @@ const styles = stylex.create({
     marginBlock: {
       default: `${space.s4} ${space.s2}`,
       [stylex.when.ancestor(ASLI)]: `${space.s6} ${space.s3}`,
+      [stylex.when.ancestor(CLOSED, fold)]: `${space.s2} 0`,
     },
     fontFamily: {
       default: font.ui,
@@ -434,17 +487,6 @@ const ArticleNotes = (props: { notes: PasalNote[]; num: string }) => (
   </For>
 );
 
-const Permalink = (props: { target: string; label: string }) => (
-  <a
-    class={css(styles.permalink, linkStyles.base)}
-    href={`#${props.target}`}
-    target="_self"
-    aria-label={`Tautan ke ${props.label}`}
-  >
-    #
-  </a>
-);
-
 const ArticleSection = (props: {
   node: AknNode;
   id?: string;
@@ -452,33 +494,48 @@ const ArticleSection = (props: {
   notes?: PasalNote[];
   compare?: ChangedPasal;
   flipped: boolean;
+  first: boolean;
+  top: boolean;
   children: JSX.Element;
 }) => {
   const heading = () => `Pasal ${props.node.num ?? ""}`.trim();
   const permalink = () => props.alias ?? props.id;
 
   return (
-    <section
+    <Fold
       id={props.id}
-      data-num={props.node.num}
-      data-compared={props.compare === undefined ? undefined : ""}
+      top={props.top}
+      num={props.node.num}
+      compared={props.compare !== undefined}
       class={css(
         styles.article,
         props.compare === undefined && styles.unchanged
       )}
+      head={
+        <>
+          {isPresent(props.alias) && (
+            <span id={props.alias} class={css(styles.alias)} />
+          )}
+          <h3
+            id={isPresent(props.id) ? `${props.id}-h` : undefined}
+            class={css(
+              styles.articleHeading,
+              styles.hitArticle,
+              props.first && styles.firstArticle
+            )}
+          >
+            <FoldChevron />
+            {heading()}
+            {isPresent(permalink()) && (
+              <Permalink target={permalink() ?? ""} label={heading()} />
+            )}
+          </h3>
+          <span class={css(styles.preview)} aria-hidden="true">
+            {preview(props.node)}
+          </span>
+        </>
+      }
     >
-      {isPresent(props.alias) && (
-        <span id={props.alias} class={css(styles.alias)} />
-      )}
-      <h3
-        id={isPresent(props.id) ? `${props.id}-h` : undefined}
-        class={css(styles.articleHeading)}
-      >
-        {heading()}
-        {isPresent(permalink()) && (
-          <Permalink target={permalink() ?? ""} label={heading()} />
-        )}
-      </h3>
       <Show when={props.notes}>
         {(notes) => <ArticleNotes notes={notes()} num={props.node.num ?? ""} />}
       </Show>
@@ -492,7 +549,7 @@ const ArticleSection = (props: {
       >
         {(block) => <PasalComparison block={block()} flipped={props.flipped} />}
       </Show>
-    </section>
+    </Fold>
   );
 };
 
@@ -500,6 +557,8 @@ const HeadingSection = (props: {
   node: AknNode;
   label: string;
   id?: string;
+  first: boolean;
+  top: boolean;
   children: JSX.Element;
 }) => {
   const numbered = (label: string) =>
@@ -510,25 +569,38 @@ const HeadingSection = (props: {
   const heading = () => props.node.heading;
 
   return (
-    <section id={props.id}>
-      <h2 class={css(styles.chapter, headingStyle(props.node.tag))}>
-        <span class={css(styles.headingNumber)}>
-          <ReadingLabel original={original() ?? ""} modern={modern() ?? ""} />
-        </span>
-        {isPresent(heading()) && (
-          <>
-            {" "}
-            <span class={css(styles.headingSub)}>
-              <ReadingLabel
-                original={heading() ?? ""}
-                modern={modernHeading(heading() ?? "")}
-              />
-            </span>
-          </>
-        )}
-      </h2>
+    <Fold
+      id={props.id}
+      top={props.top}
+      head={
+        <h2
+          class={css(
+            styles.chapter,
+            headingStyle(props.node.tag),
+            props.node.tag === "chapter" ? styles.hitChapter : styles.hitPart,
+            props.first && props.top && styles.firstChapter
+          )}
+        >
+          <FoldChevron />
+          <span class={css(styles.headingNumber)}>
+            <ReadingLabel original={original() ?? ""} modern={modern() ?? ""} />
+          </span>
+          {isPresent(heading()) && (
+            <>
+              {" "}
+              <span class={css(styles.headingSub)}>
+                <ReadingLabel
+                  original={heading() ?? ""}
+                  modern={modernHeading(heading() ?? "")}
+                />
+              </span>
+            </>
+          )}
+        </h2>
+      }
+    >
       {props.children}
-    </section>
+    </Fold>
   );
 };
 
@@ -584,6 +656,7 @@ const ExplanationHeading = (props: {
 
 interface DocumentNodesProps {
   nodes: readonly AknNode[];
+  top?: boolean;
   anchors?: Readonly<Record<string, string>>;
   explanation?: boolean;
   notes?: Record<string, PasalNote[]>;
@@ -645,7 +718,7 @@ const noteOf = (
     : undefined;
 
 const DocumentNode = (
-  props: Omit<DocumentNodesProps, "nodes"> & { node: AknNode }
+  props: Omit<DocumentNodesProps, "nodes"> & { node: AknNode; first: boolean }
 ) => {
   const explanation = () => props.explanation === true;
   const id = () => elementId(props.node, explanation());
@@ -709,6 +782,8 @@ const DocumentNode = (
           alias={alias()}
           compare={compare()}
           flipped={flipped()}
+          first={props.first}
+          top={props.top === true}
           notes={noteOf(alias(), props.node, props.notes)}
         >
           {children()}
@@ -723,7 +798,13 @@ const DocumentNode = (
         </ExplanationHeading>
       </Match>
       <Match when={label() !== undefined}>
-        <HeadingSection node={props.node} label={label() ?? ""} id={id()}>
+        <HeadingSection
+          node={props.node}
+          label={label() ?? ""}
+          id={id()}
+          first={props.first}
+          top={props.top === true}
+        >
           {children()}
         </HeadingSection>
       </Match>
@@ -736,6 +817,8 @@ const DocumentNodes = (props: DocumentNodesProps) => (
     {(node) => (
       <DocumentNode
         node={node}
+        first={node === props.nodes[0]}
+        top={props.top}
         anchors={props.anchors}
         explanation={props.explanation}
         notes={props.notes}
@@ -777,9 +860,9 @@ const placeExplanations = (law: HTMLElement, under: boolean) => {
         `#pasal-${CSS.escape(entry.dataset.pjFor ?? "")}`
       );
 
-      const target = anchor?.parentElement?.querySelector(
-        ":scope > [id$='-c']"
-      );
+      const target = anchor
+        ?.closest("details")
+        ?.querySelector(":scope > [id$='-c']");
 
       if (target) {
         const marker = document.createElement("span");
@@ -817,6 +900,8 @@ export const LawText = (props: {
   notes?: Record<string, PasalNote[]>;
   comparison?: VersionComparison;
 }) => {
+  useFolds();
+
   let law: HTMLElement | undefined;
   let preamble: HTMLDetailsElement | undefined;
   const placement = usePreference(penjelasan);
@@ -866,12 +951,13 @@ export const LawText = (props: {
       <Show when={props.text.preamble.length > 0}>
         <details
           open
-          class={css(styles.preamble)}
+          class={css(styles.preamble, fold)}
           ref={(element: HTMLDetailsElement) => {
             preamble = element;
           }}
         >
-          <summary class={css(styles.preambleSummary)}>
+          <summary class={css(styles.preambleSummary, foldHead)}>
+            <FoldChevron />
             <span class={css(styles.summaryTitle)}>Pembukaan</span>
             <span class={css(styles.summaryMeta)}>
               {openingSummary(props.text.preamble).join(" · ")}
@@ -883,6 +969,7 @@ export const LawText = (props: {
       <div class={css(styles.body)}>
         <DocumentNodes
           nodes={props.text.body}
+          top
           anchors={props.text.anchors}
           notes={props.notes}
           comparison={compareIndex()}

@@ -1,6 +1,12 @@
 import { describe, expect, it } from "vitest";
 
-import { cukupJelas, modernHeading, modernLabel, pasalKey } from "./display.ts";
+import {
+  cukupJelas,
+  modernHeading,
+  modernLabel,
+  pasalKey,
+  preview,
+} from "./display.ts";
 import { tanggal } from "./labels.ts";
 import { citeOf, norm, pasalOf } from "./search-query.ts";
 
@@ -42,6 +48,18 @@ const paragraph = (text: string) => ({
   tag: "p",
   text,
   children: [],
+});
+
+describe(preview, () => {
+  it("joins the paragraphs and cuts a long text at a word", () => {
+    const article = {
+      tag: "article",
+      children: [paragraph("Setiap  orang"), paragraph("berhak atas sandang.")],
+    };
+
+    expect(preview(article)).toBe("Setiap orang berhak atas sandang.");
+    expect(preview(article, 20)).toBe("Setiap orang berhak…");
+  });
 });
 
 describe(cukupJelas, () => {

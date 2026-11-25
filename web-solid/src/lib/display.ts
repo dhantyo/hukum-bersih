@@ -124,3 +124,15 @@ export const cukupJelas = (node: AknNode) => {
     found.length > 0 && found.every((text) => CUKUP_JELAS.test(text.trim()))
   );
 };
+
+const PREVIEW_LENGTH = 90;
+const TRAILING_WORD = /\s+\S*$/u;
+
+/** First words of a pasal, shown next to its heading while it is folded. */
+export const preview = (node: AknNode, max = PREVIEW_LENGTH) => {
+  const text = texts(node).join(" ").replaceAll(WHITESPACE, " ").trim();
+
+  return text.length > max
+    ? `${text.slice(0, max).replace(TRAILING_WORD, "")}…`
+    : text;
+};
