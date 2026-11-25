@@ -109,3 +109,20 @@ def test_the_comparison_pairs_the_two_versions_and_marks_the_changed_words(tmp_p
     added = [p["value"] for p in first["lines"][0]["parts"] if p["added"]]
     assert removed == ["penyidik"]
     assert added == ["penegak hukum"]
+
+
+def test_a_document_lists_the_other_versions_with_the_comparison_that_holds_each(tmp_path):
+    stage = tmp_path / "stage"
+    export_drafts(_data(tmp_path), stage, SearchRecords())
+    pair = "ruu_contoh_2026-05_draft...ruu_contoh_2026-11-19_draft-final"
+
+    def comparable(name):
+        path = stage / "drafts" / "contoh" / "documents" / f"{name}.json"
+        return json.loads(path.read_text())["comparable"]
+
+    assert comparable("ruu_contoh_2026-05_draft") == [
+        {"id": "ruu_contoh_2026-11-19_draft-final", "type": "draft-final", "date": "2026-11-19",
+         "pair": pair}]
+    assert comparable("ruu_contoh_2026-11-19_draft-final") == [
+        {"id": "ruu_contoh_2026-05_draft", "type": "draft", "date": "2026-05", "pair": pair}]
+    assert (stage / "drafts" / "contoh" / "comparisons" / f"{pair}.json").exists()

@@ -138,11 +138,24 @@ def _export_draft(data_dir: Path, bill: dict[str, Any], root: Path, search: Sear
                                   texts[document["id"]].reader)
 
 
+def _pair(older: dict[str, Any], newer: dict[str, Any]) -> str:
+    return _check(_PAIR, f"{older['id']}...{newer['id']}")
+
+
+def _comparable(documents: list[dict[str, Any]], index: int) -> list[dict[str, Any]]:
+    """The other versions a page can compare this one with, and the comparison file of each."""
+    document = documents[index]
+    return [{"id": other["id"], "type": other["type"], "date": other["date"],
+             "pair": _pair(*((other, document) if at < index else (document, other)))}
+            for at, other in enumerate(documents) if at != index]
+
+
 def _write_documents(directory: Path, bill: dict[str, Any], name: str,
                      documents: list[dict[str, Any]], texts: dict[str, Text]) -> None:
-    for document in documents:
+    for index, document in enumerate(documents):
         write_json(directory / f"{_check(_DOCUMENT_ID, document['id'])}.json",
                    {"name": name, "title": bill["title"], "document": _metadata(document),
+                    "comparable": _comparable(documents, index),
                     "text": texts[document["id"]].reader}, newline=False)
 
 
@@ -152,8 +165,7 @@ def _write_comparisons(directory: Path, bill: dict[str, Any], name: str,
     for index, older in enumerate(documents):
         for newer in documents[index + 1:]:
             comparison = compare(texts[older["id"]].pasal, texts[newer["id"]].pasal)
-            pair = _check(_PAIR, f"{older['id']}...{newer['id']}")
-            write_json(directory / f"{pair}.json",
+            write_json(directory / f"{_pair(older, newer)}.json",
                        {"name": name, "title": bill["title"], "older": _metadata(older),
                         "newer": _metadata(newer), "counts": comparison.counts,
                         "rows": comparison_rows(comparison)}, newline=False)

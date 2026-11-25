@@ -1,6 +1,6 @@
 import * as v from "valibot";
 
-import { draftDocumentId, webLink } from "../../lib/schemas.ts";
+import { draftDocumentId, draftPair, webLink } from "../../lib/schemas.ts";
 import { readActiveReleaseText } from "../corpus.ts";
 import { parseRecord } from "./parse.ts";
 import { readerText } from "./reader-text.ts";
@@ -40,6 +40,15 @@ const draft = v.object({
   name: v.string(),
   title: v.string(),
   document: draftDocument,
+  /** The other versions with text, each with the comparison (`pair`) that holds both. */
+  comparable: v.array(
+    v.object({
+      id: draftDocumentId,
+      type: v.string(),
+      date: v.string(),
+      pair: draftPair,
+    })
+  ),
   text: readerText,
 });
 
