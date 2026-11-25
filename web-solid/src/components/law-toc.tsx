@@ -9,6 +9,7 @@ import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 import { MarkIcon } from "./law-compare.tsx";
+import { setAllFolds } from "./law-fold.tsx";
 import { PasalJump } from "./pasal-jump.tsx";
 
 const NO_PENJELASAN = ':is([data-penjelasan="sembunyi"])';
@@ -31,6 +32,28 @@ const styles = stylex.create({
     letterSpacing: "0.06em",
     textTransform: "uppercase",
   },
+  folds: {
+    gap: space.s3,
+    display: { default: "flex", "@media (scripting: none)": "none" },
+  },
+  foldButton: {
+    font: "inherit",
+    padding: 0,
+    borderRadius: size.radius,
+    borderWidth: 0,
+    backgroundColor: "transparent",
+    color: color.link,
+    cursor: "pointer",
+    fontSize: size.xs,
+    minBlockSize: { default: null, "@media (pointer: coarse)": size.tap },
+    outlineColor: color.link,
+    outlineOffset: { default: null, ":focus-visible": 2 },
+    outlineStyle: { default: null, ":focus-visible": "solid" },
+    outlineWidth: { default: null, ":focus-visible": 3 },
+    textDecorationLine: "underline",
+    textDecorationThickness: { default: 1, ":hover": 2 },
+    textUnderlineOffset: "0.15em",
+  },
   list: {
     margin: 0,
     padding: 0,
@@ -40,7 +63,10 @@ const styles = stylex.create({
     borderInlineStartWidth: 1,
   },
   chapterLink: {
-    paddingBlock: space.s1,
+    paddingBlock: {
+      default: space.s1,
+      "@media (pointer: coarse)": space.s3,
+    },
     paddingInline: space.s3,
     textDecoration: "none",
     borderInlineStartColor: {
@@ -110,8 +136,14 @@ const styles = stylex.create({
     fontSize: size.xs,
     fontVariantNumeric: "tabular-nums",
     fontWeight: { [current]: 600, default: null, ":is([data-mk])": 600 },
-    minBlockSize: space.s6,
-    minInlineSize: "2.25rem",
+    minBlockSize: {
+      default: space.s6,
+      "@media (pointer: coarse)": size.tap,
+    },
+    minInlineSize: {
+      default: "2.25rem",
+      "@media (pointer: coarse)": size.tap,
+    },
   },
   summary: { listStyle: "none", cursor: "pointer" },
   penjelasan: {
@@ -215,7 +247,7 @@ const PasalGrid = (props: { cells: Cell[]; label: string }) => (
       {(cell) => (
         <li>
           <a
-            class={css(styles.cell, linkStyles.base)}
+            class={css(linkStyles.base, styles.cell)}
             href={cell.href}
             target="_self"
             data-pasal={cell.id}
@@ -241,12 +273,15 @@ const Chapter = (props: {
 
   return (
     <li data-ch={props.chapter.eId}>
-      <details open={changes().length > 0}>
+      <details
+        open={changes().length > 0}
+        data-keep={changes().length > 0 ? "" : undefined}
+      >
         <summary class={css(styles.summary)}>
           <a
             href={`#${props.chapter.eId}`}
             target="_self"
-            class={css(styles.chapterLink, linkStyles.base)}
+            class={css(linkStyles.base, styles.chapterLink)}
             data-ch-link={props.chapter.eId}
           >
             <span class={css(styles.label)}>Bab {props.chapter.num}</span>
@@ -283,7 +318,57 @@ const Chapter = (props: {
   );
 };
 
+const keepVisible = (link: HTMLElement) => {
+  const pane = link.closest("aside");
+
+  if (pane === null || pane.scrollHeight <= pane.clientHeight) {
+    return;
+  }
+
+  const inner = link.getBoundingClientRect();
+  const outer = pane.getBoundingClientRect();
+
+  if (inner.top < outer.top || inner.bottom > outer.bottom) {
+    pane.scrollTop += inner.top - outer.top - outer.height / 3;
+  }
+};
+
+type LinkKind = "chLink" | "pasal";
+
+const linksBy = (toc: HTMLElement, selector: string, kind: LinkKind) =>
+  new Map(
+    [...toc.querySelectorAll<HTMLElement>(selector)].flatMap((link) => {
+      const id = link.dataset[kind];
+
+      return id === undefined ? [] : [[id, link] as const];
+    })
+  );
+
 const followReading = (toc: HTMLElement) => {
+  const chapters = linksBy(toc, "[data-ch-link]", "chLink");
+  const pasal = linksBy(toc, "[data-pasal]", "pasal");
+  const marked = new Map<LinkKind, HTMLElement>();
+  let opened: HTMLDetailsElement | null = null;
+
+  const follow = (kind: LinkKind, link: HTMLElement) => {
+    marked.get(kind)?.removeAttribute("aria-current");
+    link.setAttribute("aria-current", "true");
+    marked.set(kind, link);
+
+    const details = link.closest("details");
+
+    if (details !== null && details !== opened) {
+      if (opened !== null && !Object.hasOwn(opened.dataset, "keep")) {
+        opened.open = false;
+      }
+
+      details.open = true;
+      opened = details;
+    }
+
+    keepVisible(link);
+  };
+
   const observer = new IntersectionObserver(
     (entries) => {
       for (const entry of entries) {
@@ -291,36 +376,24 @@ const followReading = (toc: HTMLElement) => {
           continue;
         }
 
-        const link = toc.querySelector<HTMLElement>(
-          `[data-ch-link="${CSS.escape(entry.target.id)}"], [data-pasal="${CSS.escape(entry.target.id)}"]`
-        );
+        const { id } = entry.target;
+        const chapter = chapters.get(id);
+        const cell = pasal.get(id);
 
-        if (link === null) {
-          continue;
+        if (chapter !== undefined) {
+          follow("chLink", chapter);
         }
 
-        for (const old of toc.querySelectorAll<HTMLElement>("[aria-current]")) {
-          if (
-            Object.hasOwn(old.dataset, "chLink") ===
-            Object.hasOwn(link.dataset, "chLink")
-          ) {
-            old.removeAttribute("aria-current");
-          }
+        if (cell !== undefined) {
+          follow("pasal", cell);
         }
-
-        link.setAttribute("aria-current", "true");
-        link.closest("details")?.setAttribute("open", "");
       }
     },
     { rootMargin: "0px 0px -70% 0px" }
   );
 
-  for (const link of toc.querySelectorAll<HTMLElement>(
-    "[data-ch-link], [data-pasal]"
-  )) {
-    const target = document.querySelector(
-      `#${CSS.escape(link.dataset.chLink ?? link.dataset.pasal ?? "")}`
-    );
+  for (const id of [...chapters.keys(), ...pasal.keys()]) {
+    const target = document.querySelector(`#${CSS.escape(id)}`);
 
     if (target !== null) {
       observer.observe(target);
@@ -369,6 +442,26 @@ export const Toc = (props: {
     >
       <div class={css(styles.head)}>
         <h2 class={css(styles.title)}>Daftar isi</h2>
+        <span class={css(styles.folds)}>
+          <button
+            type="button"
+            class={css(styles.foldButton)}
+            onClick={() => {
+              setAllFolds(false);
+            }}
+          >
+            Tutup semua
+          </button>
+          <button
+            type="button"
+            class={css(styles.foldButton)}
+            onClick={() => {
+              setAllFolds(true);
+            }}
+          >
+            Buka semua
+          </button>
+        </span>
       </div>
       <Show when={Object.keys(props.text.anchors).length > 0}>
         <PasalJump targets={targets()} />
@@ -393,7 +486,7 @@ export const Toc = (props: {
             <a
               href="#penjelasan"
               target="_self"
-              class={css(styles.chapterLink, linkStyles.base)}
+              class={css(linkStyles.base, styles.chapterLink)}
             >
               <span class={css(styles.label)}>Penjelasan</span>
             </a>
