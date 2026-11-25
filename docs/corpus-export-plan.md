@@ -1,6 +1,6 @@
 # Plan: the pipeline writes the corpus
 
-Status: proposed 2026-11-25. P1 and P2 are built on `feat/corpus-export-laws`, P4 on `feat/corpus-export-drafts`; the other PRs are not.
+Status: proposed 2026-11-25. P1 and P2 are built on `feat/corpus-export-laws`, P3 on `feat/corpus-export-collections`, P4 on `feat/corpus-export-drafts`; the other PRs are not.
 
 ## What changes
 
@@ -42,10 +42,10 @@ Every PR branches from the previous one's merge into `feat/solid-reader`, so the
 
 ### P3 Collections
 
-- [ ] Depends on: P2.
-- [ ] Files: `corpus/collections.py`, plus the timeline and merge ports (`koleksi.ts`, `merge.ts`, `collection-timeline.ts`), with tests.
-- [ ] Result: `collections/**`.
-- [ ] Verification: 0 differing files under `collections/`.
+- [x] Depends on: P2.
+- [x] Files: `corpus/collection_export.py` (named so, not `collections.py`: a module with a standard library name shadows it for any script run from that folder), `merge.py` (`merge.ts`), `version_history.py` (`versionHistory` and `compareData` of `amendments.ts`), `timeline.py` (`collection-timeline.ts`), and the `koleksi.ts` and `versions.ts` parts P2 already had, with `tests/test_corpus_collections.py`. `export_laws` now takes the `Laws` that `export_corpus` builds once (loading the records takes 8 s), `HistoryEvent.order` came back, `Laws.readable_amendments` replaced two copies of the amendment loop, and `reader_text` split into `read_document` and `reader_text_of`.
+- [x] Result: `collections/**` (174 files for 86 collections: 82 `latest.json`, 4 `timeline.json`, 60 `perubahan.json` and the dated versions), written after `laws/` by `export-corpus`.
+- [x] Verification: done 2026-11-25. `compare_corpus.py <ts> <py> --under collections` gives 174 identical, 0 differing, 0 missing, 0 extra, and `--under laws` still gives 1930 identical. Collections need no word diff: `perubahan.json` is `compareData`, which keeps each pasal's lines per version and never calls `diffLines` (the word diffs are made per request by the comparison pages, which P9 moves into the export), so no placeholder was needed. Collections add 19 s to the export on 8 cores (the full `export-corpus` takes 72 s); 90 % of the serial run was the Bluebell parse of the 85 base texts, now read in worker processes (37 s before). Ordering: the only `localeCompare` that reaches a file under `collections/` is the pasal-number tie-break in `perubahan.json`; the 38 distinct suffixes in the corpus order the same as `Intl.Collator()` and `Intl.Collator("id")` on all 1,444 pairs, and so do the 86 collection names (6 named, 80 unnamed) and the dates (all ISO).
 
 ### P4 Drafts and draft comparisons
 
@@ -83,7 +83,7 @@ Every PR branches from the previous one's merge into `feat/solid-reader`, so the
 ### P9 Precompute the law and collection comparisons and drop the runtime Astro imports
 
 - [ ] Depends on: P3 and P8, (the `uisdk` branch it waited for merged on 2026-11-25).
-- [ ] Files: `corpus/collections.py`, `corpus/laws.py`, `web-solid/src/lib/collection-compare.ts`, `web-solid/src/server/law-comparison.ts`, `src/server/records/`, and the components that import `labels.ts`, `display.ts`, `compare.ts`, `lawdoc.ts`, `lawtext.ts`, `merge.ts` and `search-query.ts`.
+- [ ] Files: `corpus/collection_export.py`, `corpus/laws.py`, `web-solid/src/lib/collection-compare.ts`, `web-solid/src/server/law-comparison.ts`, `src/server/records/`, and the components that import `labels.ts`, `display.ts`, `compare.ts`, `lawdoc.ts`, `lawtext.ts`, `merge.ts` and `search-query.ts`.
 - [ ] Builds: the comparison for every version pair of each collection (at most 6) and of each amended law (the `?bandingkan=…&dari=…` page) is written at export, so no diff runs per request. Labels and display helpers move into `web-solid/src/lib` or into the records.
 - [ ] Verification: `route-snapshot.sh` shows 0 differing responses; no `web/src/lib` import remains in `web-solid/`; and `diff-match-patch` is gone from the server bundle.
 
