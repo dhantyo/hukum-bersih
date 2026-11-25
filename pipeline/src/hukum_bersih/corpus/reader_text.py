@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import re
 from collections.abc import Iterator
+from dataclasses import dataclass
 from typing import Any
 
 from lxml import etree
@@ -98,15 +99,36 @@ def article_aliases(body: list[Node]) -> dict[str, str]:
     return aliases
 
 
+@dataclass(frozen=True)
+class Document:
+    """The parts of a law the reader shows, as trees of nodes (``LawDoc`` in lawdoc.ts)."""
+
+    preface: list[Node]
+    preamble: list[Node]
+    body: list[Node]
+    conclusions: list[Node]
+    penjelasan: list[Node]
+
+
+def read_document(document: etree._Element) -> Document:
+    """The parts of a law, from the ``akomaNtoso`` element."""
+    root = next(child for _, child in _children(document))          # <act> / <bill>
+    return Document(_part(root, "preface"), _part(root, "preamble"), _part(root, "body"),
+                    _part(root, "conclusions"), _penjelasan(root))
+
+
+def reader_text_of(document: Document) -> dict[str, Any]:
+    """The ``text`` of a law's reader record."""
+    return {
+        "preface": document.preface,
+        "preamble": document.preamble,
+        "body": document.body,
+        "conclusions": document.conclusions,
+        "penjelasan": document.penjelasan,
+        "anchors": js_object(article_aliases(document.body).items()),
+    }
+
+
 def reader_text(document: etree._Element) -> dict[str, Any]:
     """The ``text`` of a law's reader record, from the ``akomaNtoso`` element."""
-    root = next(child for _, child in _children(document))          # <act> / <bill>
-    body = _part(root, "body")
-    return {
-        "preface": _part(root, "preface"),
-        "preamble": _part(root, "preamble"),
-        "body": body,
-        "conclusions": _part(root, "conclusions"),
-        "penjelasan": _penjelasan(root),
-        "anchors": js_object(article_aliases(body).items()),
-    }
+    return reader_text_of(read_document(document))
