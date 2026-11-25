@@ -410,7 +410,6 @@ export const Toc = (props: {
     <nav
       id="daftar-isi"
       aria-label="Daftar isi"
-      data-pagefind-ignore
       ref={(element: HTMLElement) => {
         toc = element;
       }}

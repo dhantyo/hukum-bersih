@@ -366,9 +366,7 @@ export interface PasalNote {
 const ReadingLabel = (props: { original: string; modern: string }) => (
   <Show when={props.original !== props.modern} fallback={props.original}>
     <span class={css(reading.originalLabel)}>{props.original}</span>
-    <span class={css(reading.modernLabel)} data-pagefind-ignore>
-      {props.modern}
-    </span>
+    <span class={css(reading.modernLabel)}>{props.modern}</span>
   </Show>
 );
 
@@ -395,10 +393,7 @@ const joiner = (index: number, count: number) => {
 const ArticleNotes = (props: { notes: PasalNote[]; num: string }) => (
   <For each={noteGroups(props.notes)}>
     {([kind, list]) => (
-      <p
-        class={css(styles.note, kind === "unreadable" && styles.noteWarn)}
-        data-pagefind-ignore
-      >
+      <p class={css(styles.note, kind === "unreadable" && styles.noteWarn)}>
         {noteLabels[kind]}{" "}
         <For each={list}>
           {(note, index) => (
@@ -439,7 +434,6 @@ const Permalink = (props: { target: string; label: string }) => (
     href={`#${props.target}`}
     target="_self"
     aria-label={`Tautan ke ${props.label}`}
-    data-pagefind-ignore
   >
     #
   </a>
@@ -848,7 +842,6 @@ export const LawText = (props: {
     <article
       class={css(reading.law)}
       data-law
-      data-pagefind-body
       ref={(element: HTMLElement) => {
         law = element;
       }}

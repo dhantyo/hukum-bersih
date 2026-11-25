@@ -358,7 +358,7 @@ const partsPresent = (text: ReaderText) => [
 /** The "Aa" menu: how law text is shown (DESIGN.md "Tampilan"). Offers the parts `text` has. */
 export const ReadingSettings = (props: { text: ReaderText }) => (
   <Preferences preferences={readingPreferences}>
-    <details class={css(styles.box)} data-pagefind-ignore>
+    <details class={css(styles.box)}>
       <summary class={css(styles.summary)} aria-label="Tampilan teks">
         <span aria-hidden="true">Aa</span>
       </summary>

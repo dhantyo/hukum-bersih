@@ -168,7 +168,7 @@ const Version = (props: { row: Family["versions"][number] }) => {
 
 /** Every version of the law's family, oldest first (decision 0010). */
 export const Versions = (props: { family: Family }) => (
-  <details class={css(styles.versions)} open data-pagefind-ignore>
+  <details class={css(styles.versions)} open>
     <summary class={css(styles.summary)}>
       <span class={css(styles.panelTitle)}>Versi</span>
       <span class={css(styles.count)}>
@@ -197,7 +197,7 @@ export interface Fact {
 }
 
 export const Facts = (props: { title: string; facts: Fact[] }) => (
-  <section class={css(styles.facts)} data-pagefind-ignore>
+  <section class={css(styles.facts)}>
     <h2 class={css(styles.panelTitle)}>{props.title}</h2>
     <dl>
       <For each={props.facts.filter((fact) => isPresent(fact.value))}>

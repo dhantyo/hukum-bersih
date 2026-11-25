@@ -8,7 +8,7 @@ import { linkClass } from "../styles/link.ts";
 export const CollectionFacts = (props: {
   facts: CollectionVersion["facts"];
 }) => (
-  <section aria-label="Undang-undang" data-pagefind-ignore>
+  <section aria-label="Undang-undang">
     <h2>Undang-undang</h2>
     <dl>
       <For each={props.facts}>

@@ -195,7 +195,7 @@ const Body = (props: { law: LawRecord; comparison?: VersionComparison }) => (
     >
       {(text) => (
         <>
-          <p class={css(styles.notice)} data-pagefind-ignore>
+          <p class={css(styles.notice)}>
             Teks ini diambil otomatis dari PDF resmi dan bisa memuat kesalahan
             baca. Bila ragu, periksa{" "}
             <a class={linkClass} href={props.law.pdf ?? props.law.source}>

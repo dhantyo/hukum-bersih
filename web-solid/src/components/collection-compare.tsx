@@ -151,7 +151,7 @@ export const CollectionCompare = (props: {
   const before = () => ids().at(-2) ?? first();
 
   return (
-    <section id="banding" aria-labelledby="banding-title" data-pagefind-ignore>
+    <section id="banding" aria-labelledby="banding-title">
       <h2 id="banding-title">Bandingkan versi</h2>
       <p>
         Pilih dua versi, lalu lihat pasal yang berubah di antara keduanya. Yang{" "}

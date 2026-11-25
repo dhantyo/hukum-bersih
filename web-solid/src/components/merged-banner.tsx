@@ -61,7 +61,7 @@ const Completeness = (props: { version: CollectionVersion }) => (
 );
 
 export const MergedBanner = (props: { version: CollectionVersion }) => (
-  <aside aria-label="Tentang teks gabungan" data-pagefind-ignore>
+  <aside aria-label="Tentang teks gabungan">
     <p>
       Teks gabungan per{" "}
       {isPresent(props.version.date)

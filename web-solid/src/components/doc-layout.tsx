@@ -91,7 +91,7 @@ export const DocLayout = (props: {
 
   return (
     <div class={css(styles.wrap)}>
-      <nav class={css(styles.crumbs)} aria-label="Lokasi" data-pagefind-ignore>
+      <nav class={css(styles.crumbs)} aria-label="Lokasi">
         <For each={props.crumbs}>
           {(crumb, index) => (
             <>
@@ -115,16 +115,10 @@ export const DocLayout = (props: {
           </div>
           {props.tools}
         </div>
-        <div class={css(styles.meta)} data-pagefind-ignore>
-          {props.headMeta}
-        </div>
+        <div class={css(styles.meta)}>{props.headMeta}</div>
       </header>
       <div class={css(styles.doc)}>
-        <aside
-          class={css(styles.panel)}
-          aria-label={props.panelLabel}
-          data-pagefind-ignore
-        >
+        <aside class={css(styles.panel)} aria-label={props.panelLabel}>
           <details
             open
             ref={(element: HTMLDetailsElement) => {

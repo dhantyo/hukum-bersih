@@ -370,7 +370,7 @@ export const CompareBar = (props: { comparison: VersionComparison }) => {
       : `${props.comparison.changed.length} pasal berbeda`;
 
   return (
-    <div class={css(styles.bar)} data-cmp-bar data-pagefind-ignore>
+    <div class={css(styles.bar)} data-cmp-bar>
       <div class={css(styles.top)}>
         <span class={css(styles.title)}>Bandingkan versi</span>
         <output class={css(styles.summary)}>{summary()}</output>

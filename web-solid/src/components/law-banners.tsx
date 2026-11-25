@@ -197,7 +197,6 @@ export const RelationsBanner = (props: { law: LawRecord }) => (
       class={css(styles.banner)}
       data-tone="relations"
       aria-label="Hubungan dengan peraturan lain"
-      data-pagefind-ignore
     >
       <For each={props.law.relations}>
         {(item) => (
@@ -243,7 +242,6 @@ export const KoleksiBox = (props: { family: Family }) => {
     <aside
       class={css(styles.banner)}
       aria-label={`Koleksi ${props.family.name}`}
-      data-pagefind-ignore
     >
       <p class={css(styles.line)}>
         <a class={linkClass} href={url()}>

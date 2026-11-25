@@ -31,7 +31,7 @@ export const CollectionVersions = (props: {
   current: string;
   comparable: boolean;
 }) => (
-  <nav aria-label="Versi" data-pagefind-ignore>
+  <nav aria-label="Versi">
     <h2>
       Versi <span>{props.versions.filter((row) => !row.missing).length}</span>
     </h2>
