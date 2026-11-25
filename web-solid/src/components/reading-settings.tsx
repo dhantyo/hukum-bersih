@@ -1,6 +1,5 @@
 import type { JSX } from "@solidjs/web";
 import * as stylex from "@stylexjs/stylex";
-import { Checkbox, CheckboxIndicator } from "@ui-sdk/solid/checkbox";
 import {
   Popover,
   PopoverContent,
@@ -29,6 +28,7 @@ import { css } from "../styles/css.ts";
 import { reading } from "../styles/reading.ts";
 import { color, font, size, space, shadow } from "../styles/tokens.stylex.ts";
 import { accessibility } from "../styles/visually-hidden.ts";
+import { LabelledCheckbox } from "./labelled-checkbox.tsx";
 
 const checked = ":is([data-checked])";
 
@@ -112,27 +112,6 @@ const styles = stylex.create({
     textAlign: "start",
   },
   note: { color: color.textMuted, fontSize: size.xs },
-  check: {
-    gap: space.s2,
-    alignItems: "center",
-    display: "flex",
-    fontSize: size.sm,
-    marginBlockStart: space.s2,
-  },
-  box16: {
-    padding: 0,
-    borderColor: color.link,
-    borderRadius: 3,
-    borderStyle: "solid",
-    borderWidth: 1,
-    placeItems: "center",
-    backgroundColor: { [checked]: color.link, default: color.background },
-    blockSize: "1.1rem",
-    color: color.background,
-    cursor: "pointer",
-    display: "inline-grid",
-    inlineSize: "1.1rem",
-  },
   preview: {
     margin: 0,
     borderBlockStartColor: color.line,
@@ -217,27 +196,6 @@ const ChoiceGroup = (props: {
   </SegmentedControl>
 );
 
-const PreferenceCheckbox = (props: {
-  label: string;
-  checked: boolean;
-  disabled?: boolean;
-  onChange: (next: boolean) => void;
-}) => (
-  <label class={css(styles.check)}>
-    <Checkbox
-      class={css(styles.box16)}
-      checked={props.checked}
-      disabled={props.disabled}
-      onCheckedChange={(next) => {
-        props.onChange(next === true);
-      }}
-    >
-      <CheckboxIndicator>✓</CheckboxIndicator>
-    </Checkbox>
-    {props.label}
-  </label>
-);
-
 const showOrHide = (shown: boolean) => (shown ? "show" : "hide");
 
 const FormatChoice = () => {
@@ -272,7 +230,7 @@ const PenjelasanChoice = () => {
           penjelasan.set(next);
         }}
       />
-      <PreferenceCheckbox
+      <LabelledCheckbox
         label="Tampilkan “Cukup jelas”"
         checked={cukupJelasState().value === "show"}
         disabled={state().value === "sembunyi"}
@@ -295,7 +253,7 @@ const PartChoice = (props: { present: readonly (keyof typeof parts)[] }) => {
     <Fieldset legend="Bagian yang ditampilkan">
       <For each={props.present}>
         {(name) => (
-          <PreferenceCheckbox
+          <LabelledCheckbox
             label={partLabels[name]}
             checked={states[name]().value === "show"}
             onChange={(next) => {

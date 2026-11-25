@@ -6,7 +6,7 @@ import {
   DraftProvenance,
   draftVersionName,
 } from "../components/draft-provenance.tsx";
-import { SameRowsToggle } from "../components/same-rows-toggle.tsx";
+import { LabelledCheckbox } from "../components/labelled-checkbox.tsx";
 import { SynopsisRow } from "../components/synopsis-row.tsx";
 import { usePageTitle } from "../lib/head.ts";
 import { slashed } from "../lib/paths.ts";
@@ -101,7 +101,8 @@ const DraftComparisonPage = (props: RouteProps<"/ruu/:slug/beda/:pair">) => {
                 Pencocokan dilakukan otomatis; periksa teks lengkapnya untuk
                 kepastian.
               </div>
-              <SameRowsToggle
+              <LabelledCheckbox
+                label="Tampilkan juga pasal yang isi dan nomornya tidak berubah"
                 checked={showSame()}
                 onChange={(checked) => {
                   setShowSame(checked);
