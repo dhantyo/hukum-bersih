@@ -10,7 +10,13 @@ import { setTimeout as sleep } from "node:timers/promises";
 import { fail, ROOT } from "./options.ts";
 import type { Site } from "./routes.ts";
 
-export const PORTS: Record<Site, number> = { astro: 4331, solid: 3331 };
+const SOLID_PORT = Number(process.env.VISUAL_PARITY_PORT ?? "3331");
+const ASTRO_PORT_OFFSET = 1000;
+
+export const PORTS: Record<Site, number> = {
+  astro: SOLID_PORT + ASTRO_PORT_OFFSET,
+  solid: SOLID_PORT,
+};
 
 export const originOf = (site: Site) => `http://localhost:${PORTS[site]}`;
 
