@@ -7,6 +7,7 @@ be read pasal by pasal, ``perubahan.json``. Any other collection gets ``timeline
 from __future__ import annotations
 
 import re
+from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 from typing import Any
 
@@ -99,17 +100,16 @@ def _version_records(laws: Laws, koleksi: Koleksi, original: Document) -> dict[s
     return records
 
 
-def _original(koleksi: Koleksi) -> Document | None:
-    base = koleksi.base
-    if not base.has_text:
-        return None
-    return read_document(to_akn_tree(
-        (base.folder / base.text_version["text"]).read_text(encoding="utf-8"), base.akn))
+def _read_original(job: tuple[Path, str]) -> Document:
+    """The text of one base law (runs in a worker process)."""
+    path, akn = job
+    return read_document(to_akn_tree(path.read_text(encoding="utf-8"), akn))
 
 
-def export_collection(laws: Laws, koleksi: Koleksi, directory: Path) -> None:
-    """Write the records of one collection into ``directory``."""
-    original = _original(koleksi)
+def export_collection(laws: Laws, koleksi: Koleksi, original: Document | None,
+                      directory: Path) -> None:
+    """Write the records of one collection into ``directory``; ``original`` is the text of its
+    base law, None when we have none."""
     records: dict[str, Any] = {}
     if original is not None:
         if laws.has_amendment_steps(koleksi.base):
@@ -122,9 +122,17 @@ def export_collection(laws: Laws, koleksi: Koleksi, directory: Path) -> None:
 
 
 def export_collections(laws: Laws, stage: Path) -> str:
-    """Write ``collections/<slug>/*.json`` for every collection into ``stage``."""
-    for koleksi in laws.collections.all:
+    """Write ``collections/<slug>/*.json`` for every collection into ``stage``; the base laws'
+    texts are read in worker processes."""
+    collections = laws.collections.all
+    for koleksi in collections:
         if not _SLUG.fullmatch(koleksi.slug):
             raise ValueError(f"Invalid collection slug: {koleksi.slug}")
-        export_collection(laws, koleksi, stage / "collections" / koleksi.slug)
-    return f"Exported {len(laws.collections.all)} collections"
+    jobs = [(k.base.folder / k.base.text_version["text"], k.base.akn)
+            for k in collections if k.base.has_text]
+    with ProcessPoolExecutor() as pool:
+        originals = pool.map(_read_original, jobs)                 # in the order of ``collections``
+        for koleksi in collections:
+            original = next(originals) if koleksi.base.has_text else None
+            export_collection(laws, koleksi, original, stage / "collections" / koleksi.slug)
+    return f"Exported {len(collections)} collections"
