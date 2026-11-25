@@ -1,6 +1,6 @@
 import { HydrationScript } from "@solidjs/web";
 import * as stylex from "@stylexjs/stylex";
-import { globalFontFaces, preloads } from "fontless/runtime";
+import { preloads } from "fontless/runtime";
 import { For } from "solid-js";
 import type { ParentProps } from "solid-js";
 
@@ -26,7 +26,6 @@ const Document = (props: ParentProps) => (
       <meta name="color-scheme" content="light dark" />
       <link rel="icon" href="data:," />
       <For each={preloads}>{(link) => <link {...link} />}</For>
-      <style>{globalFontFaces}</style>
       <HydrationScript />
     </head>
     <body class={css(styles.body)}>{props.children}</body>
