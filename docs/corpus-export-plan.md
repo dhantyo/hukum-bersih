@@ -1,6 +1,6 @@
 # Plan: the pipeline writes the corpus
 
-Status: proposed 2026-11-25. P1 and P2 are built on `feat/corpus-export-laws`; P3 onward are not.
+Status: proposed 2026-11-25. P1 and P2 are built on `feat/corpus-export-laws`, P4 on `feat/corpus-export-drafts`; the other PRs are not.
 
 ## What changes
 
@@ -49,10 +49,10 @@ Every PR branches from the previous one's merge into `feat/solid-reader`, so the
 
 ### P4 Drafts and draft comparisons
 
-- [ ] Depends on: P2.
-- [ ] Files: `corpus/drafts.py`, `corpus/compare.py` (the port of `compare.ts`; word diffs through `rapidiff` plus the semantic cleanup), with tests. The test reuses the 400-pair fixture.
-- [ ] Result: `drafts/**`, including `comparisons/`.
-- [ ] Verification: 0 differing files under `drafts/` except comparison files, which differ only inside word-diff parts (same pairs, counts and anchors); report how many diffs changed and the total diff time.
+- [x] Depends on: P2.
+- [x] Files: `corpus/drafts.py`, `corpus/compare.py` (the port of `compare.ts`; word diffs through `rapidiff` plus the semantic cleanup), `corpus/pasal.py` (`lawtext.ts` and the pasal part of `lawdoc.ts`), with tests. `write_json` gained `newline=False` (the TypeScript export wrote drafts without a final newline) and `akn.build.ruu_akn_args` was split out of `build_ruu`. The 400-pair fixture is `tests/fixtures/wordiff_perampasan_aset.json`: the output of `compare.ts`'s `wordDiff` (`@sanity/diff-match-patch`) for 400 changed paragraph pairs of the two drafts, and the test checks `rapidiff` against it.
+- [x] Result: `drafts/**`, including `comparisons/`, written after `laws/` by `export-corpus`.
+- [x] Verification: done 2026-11-25. `compare_corpus.py <ts> <py> --under drafts --word-diff-parts` gives 3 identical, 1 differing only in word-diff grouping, 0 differing, 0 missing, 0 extra, and `--under laws` still gives 1930 identical. The flag parses both comparison files and compares everything except how the word diffs group their parts: pairs, counts, renumber and move markers, weak flags, anchors, cross-references, and the old and new text each line's parts spell. Of the 68 changed lines of the one comparison (RUU Perampasan Aset, 2023 against 2026), 66 have the same parts as JavaScript and 2 have fewer parts. On the 400-pair fixture 375 are identical to JavaScript, and every one of the 400 spells both texts. Diff time inside the export: 12.5 ms in 96 `word_diff` calls, in a drafts export of 0.62 s; the full `export-corpus` takes 52 s on 8 cores.
 
 ### P5 Catalog and listings
 
