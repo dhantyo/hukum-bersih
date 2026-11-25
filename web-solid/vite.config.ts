@@ -4,13 +4,13 @@ import { fontless } from "fontless";
 import { defineConfig } from "vitest/config";
 
 const FONT_STACKS = [
-  { family: "Public Sans", preload: true },
+  { family: "Public Sans Variable", preload: true },
   {
-    family: "Atkinson Hyperlegible Next",
+    family: "Atkinson Hyperlegible Next Variable",
     preload: true,
   },
-  { family: "Source Serif 4", preload: false },
-  { family: "Literata", preload: false },
+  { family: "Source Serif 4 Variable", preload: false },
+  { family: "Literata Variable", preload: false },
 ] as const;
 
 export default defineConfig({
@@ -18,7 +18,7 @@ export default defineConfig({
     fontless({
       families: FONT_STACKS.map(({ family, preload }) => ({
         name: family,
-        provider: "fontsource" as const,
+        provider: "npm" as const,
         preload,
       })),
       defaults: { weights: ["100 900"], styles: ["normal"] },
