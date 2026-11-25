@@ -26,7 +26,7 @@ import {
 import type { ReaderText } from "../server/records/reader-text.ts";
 import { css } from "../styles/css.ts";
 import { reading } from "../styles/reading.ts";
-import { color, font, size, space, shadow } from "../styles/tokens.stylex.ts";
+import { color, size, space, shadow } from "../styles/tokens.stylex.ts";
 import { accessibility } from "../styles/visually-hidden.ts";
 import { LabelledCheckbox } from "./labelled-checkbox.tsx";
 
@@ -34,17 +34,27 @@ const checked = ":is([data-checked])";
 
 const styles = stylex.create({
   trigger: {
+    padding: 0,
     borderColor: color.lineStrong,
     borderRadius: size.radius,
     borderStyle: "solid",
     borderWidth: 1,
     placeItems: "center",
-    backgroundColor: color.background,
+    backgroundColor: {
+      default: color.background,
+      ":is([data-open])": color.backgroundSubtle,
+      ":hover": color.backgroundSubtle,
+    },
     color: color.text,
     cursor: "pointer",
     display: "grid",
-    fontFamily: font.ui,
+    fontSize: size.base,
     fontWeight: 600,
+    lineHeight: 1.6,
+    outlineColor: color.link,
+    outlineOffset: { default: null, ":focus-visible": 2 },
+    outlineStyle: { default: null, ":focus-visible": "solid" },
+    outlineWidth: { default: null, ":focus-visible": 3 },
     minHeight: size.tap,
     minWidth: size.tap,
   },
@@ -314,11 +324,14 @@ const partsPresent = (text: ReaderText) => [
   ...(text.conclusions.length > 0 ? (["penutup"] as const) : []),
 ];
 
-/** The "Aa" popover: how law text is shown (DESIGN.md "Tampilan"). Offers the parts `text` has. */
-export const ReadingSettings = (props: { text: ReaderText }) => (
+/** The "Aa" popover: how law text is shown (DESIGN.md "Tampilan"). With `text`, it also offers the parts that text has. */
+export const ReadingSettings = (props: { text?: ReaderText }) => (
   <Preferences preferences={readingPreferences}>
     <Popover>
-      <PopoverTrigger class={css(styles.trigger)} aria-label="Tampilan teks">
+      <PopoverTrigger
+        class={css(reading.law, styles.trigger)}
+        aria-label="Tampilan teks"
+      >
         <span aria-hidden="true">Aa</span>
       </PopoverTrigger>
       <PopoverContent
@@ -330,11 +343,17 @@ export const ReadingSettings = (props: { text: ReaderText }) => (
         <PopoverTitle class={css(accessibility.visuallyHidden)}>
           Tampilan teks
         </PopoverTitle>
-        <FormatChoice />
-        <Show when={props.text.penjelasan.length > 0}>
-          <PenjelasanChoice />
+        <Show when={props.text}>
+          {(text) => (
+            <>
+              <FormatChoice />
+              <Show when={text().penjelasan.length > 0}>
+                <PenjelasanChoice />
+              </Show>
+              <PartChoice present={partsPresent(text())} />
+            </>
+          )}
         </Show>
-        <PartChoice present={partsPresent(props.text)} />
         <FontChoice />
         <SizeChoice />
         <p class={css(reading.law, styles.preview)}>

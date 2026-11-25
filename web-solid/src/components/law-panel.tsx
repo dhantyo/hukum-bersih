@@ -6,18 +6,10 @@ import { isPresent } from "../lib/text.ts";
 import type { Family } from "../server/records/law.ts";
 import { css } from "../styles/css.ts";
 import { linkClass, linkStyles } from "../styles/link.ts";
+import { panel } from "../styles/panel.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 
 const styles = stylex.create({
-  panelTitle: {
-    margin: 0,
-    color: color.textMuted,
-    fontSize: size.xs,
-    fontWeight: 600,
-    letterSpacing: "0.06em",
-    marginBlockEnd: space.s2,
-    textTransform: "uppercase",
-  },
   versions: { marginBlockEnd: space.s5 },
   summary: {
     gap: space.s2,
@@ -94,6 +86,7 @@ const styles = stylex.create({
     textAlign: "center",
   },
   facts: { marginBlockEnd: space.s6 },
+  factList: { margin: 0 },
   term: {
     color: color.textMuted,
     fontSize: size.xs,
@@ -106,6 +99,9 @@ const styles = stylex.create({
     borderBlockEndColor: color.line,
     borderBlockEndStyle: "solid",
     borderBlockEndWidth: 1,
+    borderBlockStartColor: color.line,
+    borderBlockStartStyle: "solid",
+    borderBlockStartWidth: { default: 0, ":first-child": 1 },
   },
 });
 
@@ -170,7 +166,7 @@ const Version = (props: { row: Family["versions"][number] }) => {
 export const Versions = (props: { family: Family }) => (
   <details class={css(styles.versions)} open>
     <summary class={css(styles.summary)}>
-      <span class={css(styles.panelTitle)}>Versi</span>
+      <span class={css(panel.title)}>Versi</span>
       <span class={css(styles.count)}>
         {props.family.versions.filter((row) => row.kind === "point").length}
       </span>
@@ -198,8 +194,8 @@ export interface Fact {
 
 export const Facts = (props: { title: string; facts: Fact[] }) => (
   <section class={css(styles.facts)}>
-    <h2 class={css(styles.panelTitle)}>{props.title}</h2>
-    <dl>
+    <h2 class={css(panel.title)}>{props.title}</h2>
+    <dl class={css(styles.factList)}>
       <For each={props.facts.filter((fact) => isPresent(fact.value))}>
         {(fact) => (
           <div class={css(styles.fact)}>

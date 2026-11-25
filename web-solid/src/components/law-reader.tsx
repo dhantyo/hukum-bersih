@@ -9,13 +9,13 @@ import type { LawRecord } from "../server/records/law.ts";
 import { css } from "../styles/css.ts";
 import { linkClass, linkStyles } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
+import { Badge } from "./badge.tsx";
 import { DocLayout } from "./doc-layout.tsx";
 import { KoleksiBox, RelationsBanner, StatusBanner } from "./law-banners.tsx";
 import { CompareBar } from "./law-compare.tsx";
 import { Facts, Versions } from "./law-panel.tsx";
 import { LawText } from "./law-text.tsx";
 import { Toc } from "./law-toc.tsx";
-import { ReadingSettings } from "./reading-settings.tsx";
 
 const styles = stylex.create({
   meta: {
@@ -23,16 +23,6 @@ const styles = stylex.create({
     alignItems: "center",
     display: "flex",
     flexWrap: "wrap",
-  },
-  badge: {
-    borderColor: color.lineStrong,
-    borderRadius: 999,
-    borderStyle: "solid",
-    borderWidth: 1,
-    paddingBlock: space.hairline,
-    paddingInline: space.s2,
-    fontSize: size.sm,
-    fontWeight: 600,
   },
   muted: { color: color.textMuted, fontSize: size.sm },
   notice: {
@@ -45,6 +35,7 @@ const styles = stylex.create({
     maxInlineSize: size.measure,
   },
   paragraph: { margin: 0 },
+  small: { fontSize: size.sm },
   button: {
     borderColor: color.lineStrong,
     borderRadius: size.radius,
@@ -82,9 +73,7 @@ const HeadMeta = (props: { law: LawRecord }) => (
   <div class={css(styles.meta)}>
     <Show when={props.law.status}>
       {(status) => (
-        <span class={css(styles.badge)} data-status={status()}>
-          {props.law.statusLabel ?? status()}
-        </span>
+        <Badge tone={status()}>{props.law.statusLabel ?? status()}</Badge>
       )}
     </Show>
     <Show when={props.law.date}>
@@ -96,8 +85,8 @@ const HeadMeta = (props: { law: LawRecord }) => (
       {(count) => <span class={css(styles.muted)}>{count()} pasal</span>}
     </Show>
     <Show when={props.law.amendmentCount > 0}>
-      <a
-        class={css(styles.badge, linkStyles.base)}
+      <Badge
+        tone="diubah"
         href={
           props.law.family === undefined
             ? undefined
@@ -107,7 +96,7 @@ const HeadMeta = (props: { law: LawRecord }) => (
         }
       >
         diubah {props.law.amendmentCount}×
-      </a>
+      </Badge>
     </Show>
   </div>
 );
@@ -195,7 +184,7 @@ const Body = (props: { law: LawRecord; comparison?: VersionComparison }) => (
     >
       {(text) => (
         <>
-          <p class={css(styles.notice)}>
+          <p class={css(styles.notice, styles.small)}>
             Teks ini diambil otomatis dari PDF resmi dan bisa memuat kesalahan
             baca. Bila ragu, periksa{" "}
             <a class={linkClass} href={props.law.pdf ?? props.law.source}>
@@ -207,7 +196,7 @@ const Body = (props: { law: LawRecord; comparison?: VersionComparison }) => (
             {(comparison) => <CompareBar comparison={comparison()} />}
           </Show>
           <LawText
-            text={text()}
+            text={text() ?? undefined}
             notes={props.law.notes}
             comparison={props.comparison}
           />
@@ -229,9 +218,7 @@ export const LawReader = (props: {
       eyebrow={props.law.title}
       title={lawHeading(props.law)}
       headMeta={<HeadMeta law={props.law} />}
-      tools={
-        <Show when={text()}>{(body) => <ReadingSettings text={body()} />}</Show>
-      }
+      text={text() ?? undefined}
       panelLabel={text() ? "Daftar isi" : "Keterangan"}
       panel={<Panel law={props.law} comparison={props.comparison} />}
     >

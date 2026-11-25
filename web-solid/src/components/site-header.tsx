@@ -1,13 +1,15 @@
 import { useLinkState, useLocation } from "@solidjs/router";
 import * as stylex from "@stylexjs/stylex";
-import { For, Show } from "solid-js";
+import { For, Show, useContext } from "solid-js";
 
 import { slashed } from "../lib/paths.ts";
+import { ReaderViewContext } from "../lib/reader-view.ts";
 import { Router } from "../router.tsx";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
 import { color, media, size, space } from "../styles/tokens.stylex.ts";
 import { accessibility } from "../styles/visually-hidden.ts";
+import { ReadingSettings } from "./reading-settings.tsx";
 
 const styles = stylex.create({
   skip: {
@@ -82,6 +84,10 @@ const styles = stylex.create({
     marginInlineStart: { default: "auto", [media.tablet]: 0 },
     order: { default: 0, [media.tablet]: 3 },
   },
+  settings: {
+    order: { default: 0, [media.tablet]: 4 },
+  },
+  settingsEnd: { marginInlineStart: "auto" },
   field: {
     font: "inherit",
     borderColor: color.lineStrong,
@@ -135,6 +141,8 @@ const SectionLink = (props: { href: string; label: string }) => {
 /** The home page has its own search field, so the header drops its own. */
 export const SiteHeader = (props: { pending: boolean }) => {
   const location = useLocation();
+  const [readerText] = useContext(ReaderViewContext);
+  const hasSearch = () => location.pathname !== Router.paths();
 
   return (
     <>
@@ -153,7 +161,7 @@ export const SiteHeader = (props: { pending: boolean }) => {
               )}
             </For>
           </nav>
-          <Show when={location.pathname !== Router.paths()}>
+          <Show when={hasSearch()}>
             <search class={css(styles.search)} aria-label="Cari cepat">
               <form
                 class={css(styles.form)}
@@ -174,6 +182,9 @@ export const SiteHeader = (props: { pending: boolean }) => {
               </form>
             </search>
           </Show>
+          <div class={css(styles.settings, !hasSearch() && styles.settingsEnd)}>
+            <ReadingSettings text={readerText()} />
+          </div>
         </div>
       </header>
       <Show when={props.pending}>

@@ -4,6 +4,7 @@ import { isPending, Loading } from "solid-js";
 
 import { SiteFooter } from "./components/site-footer.tsx";
 import { SiteHeader } from "./components/site-header.tsx";
+import { createReaderView, ReaderViewContext } from "./lib/reader-view.ts";
 import { Router } from "./router.tsx";
 import { css } from "./styles/css.ts";
 import { size, space } from "./styles/tokens.stylex.ts";
@@ -24,17 +25,21 @@ const App = () => {
   useHead({ tag: "title", props: { children: "Hukum Bersih" } });
 
   return (
-    <Router>
-      {(props) => (
-        <>
-          <SiteHeader pending={isPending(() => props.children)} />
-          <div id="main" class={css(styles.page)}>
-            <Loading fallback={<main>Memuat…</main>}>{props.children}</Loading>
-          </div>
-          <SiteFooter />
-        </>
-      )}
-    </Router>
+    <ReaderViewContext value={createReaderView()}>
+      <Router>
+        {(props) => (
+          <>
+            <SiteHeader pending={isPending(() => props.children)} />
+            <div id="main" class={css(styles.page)}>
+              <Loading fallback={<main>Memuat…</main>}>
+                {props.children}
+              </Loading>
+            </div>
+            <SiteFooter />
+          </>
+        )}
+      </Router>
+    </ReaderViewContext>
   );
 };
 
