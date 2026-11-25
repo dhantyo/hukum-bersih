@@ -10,17 +10,7 @@ const MIN_MOVE_PX = 2;
 const reducedMotion = () =>
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-/**
- * Slides an element to where it now is from where it was (`fromX` and `fromY` are the old
- * position minus the new one) on a spring from ui-sdk's `solveSpring`. It animates `translate`,
- * so it does not fight the `transform` that `createReorder` writes while a column is held, and
- * it does nothing when the reader asks for less motion.
- */
-export const springFrom = (el: HTMLElement, fromX: number, fromY = 0) => {
-  if (reducedMotion() || Math.hypot(fromX, fromY) < MIN_MOVE_PX) {
-    return;
-  }
-
+const springFrames = (fromX: number, fromY: number) => {
   const horizontal = solveSpring(RESPONSE_SECONDS, DAMPING_RATIO, fromX, 0);
   const vertical = solveSpring(RESPONSE_SECONDS, DAMPING_RATIO, fromY, 0);
   const frames: Keyframe[] = [];
@@ -45,5 +35,25 @@ export const springFrom = (el: HTMLElement, fromX: number, fromY = 0) => {
   }
 
   frames.push({ translate: "0px 0px" });
-  el.animate(frames, { duration: elapsed + FRAME_MS, easing: "linear" });
+
+  return { frames, duration: elapsed + FRAME_MS };
+};
+
+const slide = (el: HTMLElement, fromX: number, fromY: number) => {
+  const { frames, duration } = springFrames(fromX, fromY);
+
+  return el.animate(frames, { duration, easing: "linear" });
+};
+
+/**
+ * Slides an element to where it now is from where it was (`fromX` and `fromY` are the old
+ * position minus the new one) on a spring from ui-sdk's `solveSpring`, and returns the animation
+ * so the caller can cancel it. It animates `translate`, so it does not fight the `transform`
+ * that `createReorder` writes while a column is held. It does nothing, and returns nothing,
+ * when the reader asks for less motion.
+ */
+export const springFrom = (el: HTMLElement, fromX: number, fromY = 0) => {
+  const moves = !reducedMotion() && Math.hypot(fromX, fromY) >= MIN_MOVE_PX;
+
+  return moves ? slide(el, fromX, fromY) : undefined;
 };

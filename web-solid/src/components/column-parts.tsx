@@ -29,6 +29,7 @@ const useSlide = (order: () => string, versions: () => string) => {
   let el: HTMLElement | undefined;
   let last: DOMRect | undefined;
   let shown: string | undefined;
+  let running: Animation | undefined;
 
   const remember = () => {
     last = el?.getBoundingClientRect();
@@ -39,10 +40,18 @@ const useSlide = (order: () => string, versions: () => string) => {
       return;
     }
 
+    const before = el.getBoundingClientRect();
+
+    running?.cancel();
+
     const now = el.getBoundingClientRect();
 
     if (last !== undefined) {
-      springFrom(el, last.left - now.left, last.top - now.top);
+      running = springFrom(
+        el,
+        last.left - now.left + (before.left - now.left),
+        last.top - now.top + (before.top - now.top)
+      );
     }
 
     last = now;
