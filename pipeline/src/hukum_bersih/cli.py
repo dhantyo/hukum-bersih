@@ -4,6 +4,7 @@
     build-akn        Bluebell text in data/ -> Akoma Ntoso XML (+ amendment JSON) for the website
     import-bpk       import regulations from peraturan.bpk.go.id, recording every PDF's sha256
     relations        link amending / revoking / enacting laws; versions of amended laws
+    export-corpus    write the web corpus (JSON the website reads) from data/ into a folder
     import-pdf       record and convert hand-downloaded PDFs (uploads.py)
     manifest         print a manifest entry for a local file
     reparse-bpk      re-convert texts from the PDFs on archive.org (read only)
@@ -71,6 +72,9 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("reparse-bpk", help="re-convert texts from the BPK PDFs archived on archive.org")
     p.add_argument("--only", default="", help="comma-separated ids")
     p.add_argument("--limit", type=int, default=0)
+
+    p = sub.add_parser("export-corpus", help="write the web corpus from data/ into a folder")
+    p.add_argument("stage", type=Path, help="the folder to write (created if missing)")
 
     sub.add_parser("relations", help="recompute amends/revokes/enacts links between regulations")
 
@@ -208,6 +212,13 @@ def main(argv: list[str] | None = None) -> int:
 
         print(build(args.data_dir))
         print(build_history(args.data_dir))     # versions and changes of amended laws (0010)
+        return 0
+
+    if args.command == "export-corpus":
+        from .corpus.export import export_corpus
+
+        for line in export_corpus(args.data_dir, args.stage):
+            print(line)
         return 0
 
     if args.command == "manifest":
