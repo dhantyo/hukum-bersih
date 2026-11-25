@@ -1,6 +1,6 @@
 # Plan: the pipeline writes the corpus
 
-Status: proposed 2026-11-25. P1 and P2 are built on `feat/corpus-export-laws`, P3 on `feat/corpus-export-collections`, P4 on `feat/corpus-export-drafts`; the other PRs are not.
+Status: proposed 2026-11-25. P1 and P2 are built on `feat/corpus-export-laws`, P3 on `feat/corpus-export-collections`, P4 on `feat/corpus-export-drafts`, P5 on `feat/corpus-export-catalog`; the other PRs are not.
 
 ## What changes
 
@@ -56,9 +56,10 @@ Every PR branches from the previous one's merge into `feat/solid-reader`, so the
 
 ### P5 Catalog and listings
 
-- [ ] Depends on: P2, P3 and P4.
-- [ ] Files: `corpus/catalog.py` (`search-catalog.ts`, `law-listings.ts`, `labels.ts`), with tests.
-- [ ] Verification: 0 differing files for `law-catalog.json` and `listings/`.
+- [x] Depends on: P2, P3 and P4.
+- [x] Files: `corpus/catalog.py` (`export-catalog.ts`, `law-listings.ts`, `search-catalog.ts`, and `tanggal` of `labels.ts`), `tests/test_corpus_catalog.py`. `Koleksi` gained `title` and `aliases`, and `regulations.py` gained `source_host`; the short names, collections, amendment counts and draft loading are P2 to P4's. `export_corpus` calls it last, with the `Laws` it built once.
+- [x] Result: `law-catalog.json` and `listings/` (`overview.json`, `years/<year>.json`, `drafts.json`), read from the `laws/` and `drafts/` the same run wrote, as the TypeScript export does.
+- [x] Verification: done 2026-11-25. `compare_corpus.py <ts> <py> --under law-catalog.json --under listings` gives 85 identical (1 catalog, 84 listings), 0 differing, 0 missing, 0 extra; `--under laws` 1930 and `--under collections` 174 still identical, and `--under drafts --word-diff-parts` is unchanged (3 identical, 1 differing only in word-diff grouping). The catalog step takes 0.09 s (the 8 s that loading the records takes is shared with P2 and P3). Ordering: no `localeCompare` is new. The ones that reach these files are the collection names (6 named, 80 unnamed), the draft titles and the draft document dates, and all order the same under `Intl.Collator()`, `Intl.Collator("id")` and `localeCompare`; the laws sort by year and number, and the sources and decades by count and year, all numbers. `tanggal` matches `labels.ts` on 14 inputs including out-of-range months (JavaScript prints `undefined` and `NaN`, and so does the port). Ported as is: the amendment count `k` is the highest ordinal a law's title says ("perubahan kedua" with one known makes 2), and a collection member's role in the catalog names the ordinal in words only up to the tenth (`perubahan 12` after that, where `ordinal()` of the collection pages gives `ke-12`).
 
 ### P6 Search index
 
