@@ -19,9 +19,11 @@ import {
 } from "../lib/reading-preferences.ts";
 import type { ReaderText } from "../server/records/reader-text.ts";
 import { css } from "../styles/css.ts";
+import { headerOffset } from "../styles/header-offset.stylex.ts";
 import { linkStyles } from "../styles/link.ts";
 import { color, media, shadow, size, space } from "../styles/tokens.stylex.ts";
 
+const MOTION = "@media (prefers-reduced-motion: no-preference)";
 const HIDDEN = ':is([data-panel="hidden"])';
 const TABLET_QUERY = "(max-width: 960px)";
 const FOLD = "@media (min-width: 961px) and (max-width: 1499px)";
@@ -80,6 +82,7 @@ const styles = stylex.create({
   rail: {
     gridColumn: 1,
     gridRow: 1,
+    transition: { [MOTION]: "top 0.24s ease-out", default: null },
     display: {
       [FOLD]: {
         default: null,
@@ -91,7 +94,7 @@ const styles = stylex.create({
       [media.tablet]: "none",
     },
     position: "sticky",
-    top: space.s4,
+    top: `calc(${space.s4} + ${headerOffset.shown})`,
   },
   railButton: {
     padding: 0,
@@ -113,6 +116,10 @@ const styles = stylex.create({
   panel: {
     gridColumn: 1,
     gridRow: 1,
+    transition: {
+      [MOTION]: "top 0.24s ease-out, max-height 0.24s ease-out",
+      default: null,
+    },
     display: {
       [FOLD]: {
         default: null,
@@ -125,13 +132,13 @@ const styles = stylex.create({
     },
     fontSize: size.sm,
     maxBlockSize: {
-      default: `calc(100vh - ${space.s6})`,
+      default: `calc(100vh - ${space.s6} - ${headerOffset.shown})`,
       [media.tablet]: "none",
     },
     paddingInlineEnd: space.s2,
     position: { default: "sticky", [media.tablet]: "static" },
     overflowY: { default: "auto", [media.tablet]: "visible" },
-    top: space.s4,
+    top: `calc(${space.s4} + ${headerOffset.shown})`,
   },
   panelBar: {
     gap: space.s2,
