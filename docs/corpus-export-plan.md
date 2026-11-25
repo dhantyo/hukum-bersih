@@ -17,7 +17,7 @@ Settled by running before writing this plan (2026-11-25):
 
 ```
 P1 harness ──► P2 laws ──► P3 collections ──► P4 drafts ──► P5 catalog+listings ──► P6 search ──► P7 release+CI ──► P8 delete TS exports
-                                   └──────────────► P9 precompute collection comparisons (after uisdk merges)
+                                   └──────────────► P9 precompute law and collection comparisons
 ```
 
 Every PR branches from the previous one's merge into `feat/solid-reader`, so they land in order. Only P9 also waits for the `uisdk` branch, because it edits the collection pages that branch is changing.
@@ -78,11 +78,11 @@ Every PR branches from the previous one's merge into `feat/solid-reader`, so the
 - [ ] Files: `web-solid/scripts/*` except `route-snapshot.sh`, the `export-corpus` and `corpus-release` package scripts, the `scripts/astro-data.ts` bridge, and docs (`web-solid/AGENTS.md`, `docs/ARCHITECTURE.md`, the handover).
 - [ ] Verification: `pnpm run check`, `tsc`, `test` and `build` pass, and nothing under `web-solid/` imports `web/src/lib/` except the runtime imports P9 removes.
 
-### P9 Precompute collection comparisons and drop the runtime Astro imports
+### P9 Precompute the law and collection comparisons and drop the runtime Astro imports
 
-- [ ] Depends on: P3 and P8, and the merged `uisdk` branch.
-- [ ] Files: `corpus/collections.py`, `web-solid/src/lib/collection-compare.ts`, `src/server/records/`, and the components that import `labels.ts`, `display.ts`, `compare.ts`, `lawdoc.ts`, `lawtext.ts`, `merge.ts` and `search-query.ts`.
-- [ ] Builds: the comparison for every version pair of each collection (at most 6) is written at export, so no diff runs per request. Labels and display helpers move into `web-solid/src/lib` or into the records.
+- [ ] Depends on: P3 and P8, (the `uisdk` branch it waited for merged on 2026-11-25).
+- [ ] Files: `corpus/collections.py`, `corpus/laws.py`, `web-solid/src/lib/collection-compare.ts`, `web-solid/src/server/law-comparison.ts`, `src/server/records/`, and the components that import `labels.ts`, `display.ts`, `compare.ts`, `lawdoc.ts`, `lawtext.ts`, `merge.ts` and `search-query.ts`.
+- [ ] Builds: the comparison for every version pair of each collection (at most 6) and of each amended law (the `?bandingkan=…&dari=…` page) is written at export, so no diff runs per request. Labels and display helpers move into `web-solid/src/lib` or into the records.
 - [ ] Verification: `route-snapshot.sh` shows 0 differing responses; no `web/src/lib` import remains in `web-solid/`; and `diff-match-patch` is gone from the server bundle.
 
 ## Review gates
