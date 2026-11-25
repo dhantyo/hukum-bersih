@@ -13,7 +13,7 @@ import { changes } from "../styles/changes.ts";
 import { css } from "../styles/css.ts";
 import { headerOffset } from "../styles/header-offset.stylex.ts";
 import { linkStyles } from "../styles/link.ts";
-import { color, font, size, space } from "../styles/tokens.stylex.ts";
+import { color, font, media, size, space } from "../styles/tokens.stylex.ts";
 import { VersionPair } from "./version-pair.tsx";
 
 const styles = stylex.create({
@@ -114,17 +114,40 @@ const styles = stylex.create({
     alignSelf: "start",
     columnGap: space.s1,
     display: "grid",
-    gridTemplateColumns: `${size.hang} minmax(0, 1fr)`,
+    gridTemplateColumns: {
+      default: `${size.hang} minmax(0, 1fr)`,
+      [media.phone]: `${size.hangSm} minmax(0, 1fr)`,
+    },
     lineHeight: 1.65,
     marginBlockEnd: space.s2,
   },
   number: { fontVariantNumeric: "tabular-nums" },
   firstColumn: { gridColumn: 1 },
   secondColumn: { gridColumn: 2 },
-  indent1: { paddingInlineStart: size.hang },
-  indent2: { paddingInlineStart: `calc(2 * ${size.hang})` },
-  indent3: { paddingInlineStart: `calc(3 * ${size.hang})` },
-  indent4: { paddingInlineStart: `calc(4 * ${size.hang})` },
+  indent1: {
+    paddingInlineStart: {
+      default: size.hang,
+      [media.phone]: size.hangSm,
+    },
+  },
+  indent2: {
+    paddingInlineStart: {
+      default: `calc(2 * ${size.hang})`,
+      [media.phone]: `calc(2 * ${size.hangSm})`,
+    },
+  },
+  indent3: {
+    paddingInlineStart: {
+      default: `calc(3 * ${size.hang})`,
+      [media.phone]: `calc(3 * ${size.hangSm})`,
+    },
+  },
+  indent4: {
+    paddingInlineStart: {
+      default: `calc(4 * ${size.hang})`,
+      [media.phone]: `calc(4 * ${size.hangSm})`,
+    },
+  },
   added: { margin: 0 },
   addedHeading: {
     margin: 0,
