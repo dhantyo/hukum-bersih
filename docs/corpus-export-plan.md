@@ -15,6 +15,8 @@ Settled by running before writing this plan (2026-11-25):
 
 - Diff engine (operator: use an existing fast native engine, not our own port). Measured 2026-11-25 on the same 400 pairs and token encoding: pure Python `diff-match-patch` 383 ms (400/400 identical to JavaScript); `rapidiff` 0.3.0 (Rust `similar` through PyO3, a prebuilt wheel on Python 3.14) Myers plus `diff-match-patch`'s semantic cleanup 61 ms (379/400 identical; of the 21 that differ, 9 have fewer fragments and changes, 11 have more, 1 the same); `rapidiff` without the cleanup 31 ms (4/400, fragmented); `similar-rs` 32 ms (4/400); `fast-diff-match-patch` (C++) 57 ms (397/400) but no wheel for Python 3.14, and `diff_match_patch-python` also fails to build. The export uses `rapidiff` Myers followed by the semantic cleanup. So comparison word diffs are not byte-identical to the TypeScript export. P4 and P9 prove that pairing, counts, anchors and every non-diff byte are identical, report how many diffs changed, and measure the total diff time.
 
+- Native binding, decided after P9 (2026-11-25). A full export makes 13,311 `word_diff` calls, which take 2.56 s in total, 2.0% of the 126 s export. A binding of our own could save at most those 2.56 s, less than compiling it in CI would cost, so there is none. Revisit if the word-diff share of the export passes about 10%. Larger wins are elsewhere: laws and collections each parse the same base texts, and the Pagefind write takes 47 s.
+
 ## PRs in landing order
 
 ```
