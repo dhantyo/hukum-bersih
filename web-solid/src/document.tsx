@@ -1,5 +1,7 @@
 import { HydrationScript } from "@solidjs/web";
 import * as stylex from "@stylexjs/stylex";
+import { globalFontFaces, preloads } from "fontless/runtime";
+import { For } from "solid-js";
 import type { ParentProps } from "solid-js";
 
 import { css } from "./styles/css.ts";
@@ -23,12 +25,11 @@ const Document = (props: ParentProps) => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="color-scheme" content="light dark" />
       <link rel="icon" href="data:," />
-      <link
-        rel="stylesheet"
-        href={
-          import.meta.env.DEV ? "/virtual:stylex.css" : "/assets/stylex.css"
-        }
-      />
+      <For each={preloads}>{(link) => <link {...link} />}</For>
+      <style>{globalFontFaces}</style>
+      {import.meta.env.DEV && (
+        <link rel="stylesheet" href="/virtual:stylex.css" />
+      )}
       <HydrationScript />
     </head>
     <body class={css(styles.body)}>{props.children}</body>

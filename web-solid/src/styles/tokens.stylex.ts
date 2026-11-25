@@ -48,10 +48,13 @@ export const space = stylex.defineVars({
 });
 
 export const font = stylex.defineVars({
-  ui: '"Public Sans Variable", system-ui, -apple-system, "Segoe UI", sans-serif',
-  sourceSerif: '"Source Serif 4 Variable", Georgia, "Times New Roman", serif',
-  literata: '"Literata Variable", Georgia, serif',
-  atkinson: '"Atkinson Hyperlegible Next Variable", system-ui, sans-serif',
+  ui: '"Public Sans", "Public Sans Fallback: Segoe UI", "Public Sans Fallback: Helvetica Neue", "Public Sans Fallback: Arial", "Public Sans Fallback: Noto Sans", "Public Sans Fallback: Liberation Sans", system-ui, -apple-system, "Segoe UI", sans-serif',
+  sourceSerif:
+    '"Source Serif 4", "Source Serif 4 Fallback: Times New Roman", "Source Serif 4 Fallback: Georgia", "Source Serif 4 Fallback: Noto Serif", "Source Serif 4 Fallback: Liberation Serif", Georgia, "Times New Roman", serif',
+  literata:
+    '"Literata", "Literata Fallback: Times New Roman", "Literata Fallback: Georgia", "Literata Fallback: Noto Serif", "Literata Fallback: Liberation Serif", Georgia, serif',
+  atkinson:
+    '"Atkinson Hyperlegible Next", "Atkinson Hyperlegible Next Fallback: Segoe UI", "Atkinson Hyperlegible Next Fallback: Helvetica Neue", "Atkinson Hyperlegible Next Fallback: Arial", "Atkinson Hyperlegible Next Fallback: Noto Sans", "Atkinson Hyperlegible Next Fallback: Liberation Sans", system-ui, sans-serif',
 });
 
 export const size = stylex.defineVars({
