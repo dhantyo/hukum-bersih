@@ -277,6 +277,7 @@ const styles = stylex.create({
   },
   note: {
     margin: 0,
+    maxInlineSize: size.measure,
     color: color.warn,
     fontFamily: font.ui,
     fontSize: size.sm,
@@ -552,7 +553,10 @@ const ArticleSection = (props: {
       <Show
         when={props.compare}
         fallback={
-          <div id={isPresent(props.id) ? `${props.id}-c` : undefined}>
+          <div
+            id={isPresent(props.id) ? `${props.id}-c` : undefined}
+            class={css(styles.measure)}
+          >
             {props.children}
           </div>
         }
@@ -970,7 +974,7 @@ export const LawText = (props: {
       <Show when={props.text.preamble.length > 0}>
         <details
           open
-          class={css(styles.preamble, fold)}
+          class={css(styles.preamble, styles.measure, fold)}
           ref={(element: HTMLDetailsElement) => {
             preamble = element;
           }}
@@ -995,7 +999,10 @@ export const LawText = (props: {
         />
       </div>
       <Show when={props.text.conclusions.length > 0}>
-        <section id={CONCLUSIONS_ID} class={css(styles.conclusions)}>
+        <section
+          id={CONCLUSIONS_ID}
+          class={css(styles.conclusions, styles.measure)}
+        >
           <h2 class={css(styles.chapter, styles.hiddenInAsli)}>
             Pengesahan dan pengundangan
           </h2>
@@ -1003,7 +1010,10 @@ export const LawText = (props: {
         </section>
       </Show>
       <Show when={props.text.penjelasan.length > 0}>
-        <section id={EXPLANATION_ID} class={css(styles.penjelasan)}>
+        <section
+          id={EXPLANATION_ID}
+          class={css(styles.penjelasan, styles.measure)}
+        >
           <h2 class={css(styles.chapter, styles.penjelasanTitle)}>
             Penjelasan
           </h2>

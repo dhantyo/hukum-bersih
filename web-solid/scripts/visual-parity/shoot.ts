@@ -11,7 +11,7 @@ const SETTLE_MS = 250;
 const OK = 200;
 
 const FREEZE_CSS =
-  "*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important;caret-color:transparent!important}";
+  "*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important;caret-color:transparent!important;content-visibility:visible!important}";
 
 export interface Shot {
   png: Buffer;
