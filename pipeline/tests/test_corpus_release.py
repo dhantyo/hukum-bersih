@@ -66,6 +66,8 @@ def test_an_unknown_or_malformed_release_is_not_activated(tmp_path):
         activate("../etc", corpus)
     with pytest.raises(ReleaseError, match="incomplete"):
         activate("a" * 64, corpus)
+    with pytest.raises(ReleaseError, match="incomplete"):
+        activate("a" * 64, tmp_path / "no-such-corpus")
     assert not (corpus / "active-release").exists()
 
 
@@ -87,6 +89,12 @@ def test_a_stage_missing_a_required_part_is_refused(stage, tmp_path, missing):
     with pytest.raises(ReleaseError, match=missing):
         publish(stage, tmp_path / "corpus")
     assert not (tmp_path / "corpus" / "active-release").exists()
+
+
+def test_an_index_without_its_script_is_refused(stage, tmp_path):
+    (stage / "pagefind/pagefind.js").unlink()
+    with pytest.raises(ReleaseError, match="no Pagefind index"):
+        publish(stage, tmp_path / "corpus")
 
 
 def test_an_index_with_no_pages_is_refused(stage, tmp_path):

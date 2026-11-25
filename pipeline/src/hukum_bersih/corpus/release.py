@@ -51,19 +51,20 @@ def publish(stage: Path, corpus: Path) -> str:
     scratch = Path(tempfile.mkdtemp(prefix=".corpus-release-", dir=corpus))
     try:
         release = _store(stage, corpus, scratch)
-        _point_to(release, corpus, scratch)
-        return release
     finally:
         shutil.rmtree(scratch, ignore_errors=True)
+    activate(release, corpus)
+    return release
 
 
 def activate(release: str, corpus: Path) -> None:
     """Make an already stored release the active one (to go back to an earlier release)."""
-    scratch = Path(tempfile.mkdtemp(prefix=".corpus-release-", dir=corpus))
-    try:
-        _point_to(release, corpus, scratch)
-    finally:
-        shutil.rmtree(scratch, ignore_errors=True)
+    _assert_ready(release, corpus)
+    handle, name = tempfile.mkstemp(prefix=".active-release-", dir=corpus, text=True)
+    with os.fdopen(handle, "w", encoding="utf-8") as pointer:
+        pointer.write(f"{release}\n")
+    os.chmod(name, 0o644)
+    os.replace(name, corpus / ACTIVE_FILE)
 
 
 def release_digest(directory: Path) -> str:
@@ -113,8 +114,10 @@ def _store(stage: Path, corpus: Path, scratch: Path) -> str:
 def _validate(directory: Path) -> None:
     if not any(directory.glob("laws/uu/*/*/index.json")):
         raise ReleaseError("The release contains no law documents")
-    entry = json.loads((directory / "pagefind" / "pagefind-entry.json").read_text("utf-8"))
-    (directory / "pagefind" / "pagefind.js").read_bytes()
+    entry_file = directory / "pagefind" / "pagefind-entry.json"
+    if not entry_file.is_file() or not (directory / "pagefind" / "pagefind.js").is_file():
+        raise ReleaseError("The release has no Pagefind index")
+    entry = json.loads(entry_file.read_text("utf-8"))
     languages = (entry.get("languages") or {}).values()
     if not any(language["page_count"] > 0 for language in languages):
         raise ReleaseError("The release has no searchable Pagefind documents")
@@ -130,10 +133,3 @@ def _assert_ready(release: str, corpus: Path) -> None:
         raise ReleaseError(f"Release {release} is incomplete or not published here") from None
     if text.strip() != release:
         raise ReleaseError(f"Release {release} is incomplete")
-
-
-def _point_to(release: str, corpus: Path, scratch: Path) -> None:
-    _assert_ready(release, corpus)
-    pointer = scratch / ACTIVE_FILE
-    pointer.write_text(f"{release}\n", encoding="utf-8")
-    os.replace(pointer, corpus / ACTIVE_FILE)
