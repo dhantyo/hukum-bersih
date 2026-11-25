@@ -3,6 +3,7 @@ import { Show } from "solid-js";
 
 import { tanggal } from "../../../web/src/lib/labels.ts";
 import { isPresent } from "../lib/text.ts";
+import { lawHeading } from "../lib/titles.ts";
 import type { VersionComparison } from "../server/law-comparison.ts";
 import type { LawRecord } from "../server/records/law.ts";
 import { css } from "../styles/css.ts";
@@ -226,7 +227,7 @@ export const LawReader = (props: {
     <DocLayout
       crumbs={crumbs(props.law)}
       eyebrow={props.law.title}
-      title={isPresent(props.law.subject) ? props.law.subject : props.law.title}
+      title={lawHeading(props.law)}
       headMeta={<HeadMeta law={props.law} />}
       tools={
         <Show when={text()}>{(body) => <ReadingSettings text={body()} />}</Show>

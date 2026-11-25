@@ -53,15 +53,7 @@ export const readDraftBill = async (slug: string) => {
   return text === null ? null : parseRecord(bill, text, `draft bill ${slug}`);
 };
 
-export const readDraftText = async (slug: string, id: string) => {
-  const text = await readActiveReleaseText(
-    `drafts/${slug}/documents/${id}.json`
-  );
-
-  if (text === null) {
-    return null;
-  }
-
+export const parseDraftText = (text: string, slug: string, id: string) => {
   const record = parseRecord(draft, text, `draft ${slug}/${id}`);
 
   if (record.document.id !== id) {
@@ -69,4 +61,12 @@ export const readDraftText = async (slug: string, id: string) => {
   }
 
   return record;
+};
+
+export const readDraftText = async (slug: string, id: string) => {
+  const text = await readActiveReleaseText(
+    `drafts/${slug}/documents/${id}.json`
+  );
+
+  return text === null ? null : parseDraftText(text, slug, id);
 };

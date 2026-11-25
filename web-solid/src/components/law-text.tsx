@@ -11,6 +11,12 @@ import {
 } from "../../../web/src/lib/display.ts";
 import type { AknNode } from "../../../web/src/lib/lawdoc.ts";
 import type { MergeNote } from "../../../web/src/lib/merge.ts";
+import {
+  aliasOf,
+  CONCLUSIONS_ID,
+  elementId,
+  EXPLANATION_ID,
+} from "../lib/anchors.ts";
 import { format, penjelasan } from "../lib/reading-preferences.ts";
 import { isPresent } from "../lib/text.ts";
 import type {
@@ -590,12 +596,6 @@ interface CompareIndex {
   after: Readonly<Record<string, ChangedPasal[]>>;
 }
 
-const elementId = (node: AknNode, explanation: boolean) => {
-  const prefix = explanation ? "penjelasan-" : "";
-
-  return isPresent(node.eId) ? `${prefix}${node.eId}` : undefined;
-};
-
 const ExplanationEntry = (props: {
   node: AknNode;
   id?: string;
@@ -631,14 +631,6 @@ const ExplanationEntry = (props: {
     </section>
   );
 };
-
-const aliasOf = (
-  id: string | undefined,
-  anchors: DocumentNodesProps["anchors"]
-) =>
-  isPresent(id) && anchors !== undefined && Object.hasOwn(anchors, id)
-    ? anchors[id]
-    : undefined;
 
 const noteOf = (
   alias: string | undefined,
@@ -898,13 +890,13 @@ export const LawText = (props: {
         />
       </div>
       <Show when={props.text.conclusions.length > 0}>
-        <section id="penutup" class={css(styles.conclusions)}>
+        <section id={CONCLUSIONS_ID} class={css(styles.conclusions)}>
           <h2 class={css(styles.hiddenInAsli)}>Pengesahan dan pengundangan</h2>
           <DocumentNodes nodes={props.text.conclusions} />
         </section>
       </Show>
       <Show when={props.text.penjelasan.length > 0}>
-        <section id="penjelasan" class={css(styles.penjelasan)}>
+        <section id={EXPLANATION_ID} class={css(styles.penjelasan)}>
           <h2 class={css(styles.penjelasanTitle)}>Penjelasan</h2>
           <DocumentNodes nodes={props.text.penjelasan} explanation />
         </section>

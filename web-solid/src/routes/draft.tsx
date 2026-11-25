@@ -4,13 +4,13 @@ import { createMemo, For, Show } from "solid-js";
 import { STAGE, tanggal } from "../../../web/src/lib/labels.ts";
 import {
   DraftProvenance,
-  draftDocumentTitle,
   draftVersionName,
 } from "../components/draft-provenance.tsx";
 import { usePageTitle } from "../lib/head.ts";
 import { slashed } from "../lib/paths.ts";
 import { draftBillQuery } from "../lib/queries.ts";
 import { isPresent } from "../lib/text.ts";
+import { draftDocumentTitle } from "../lib/titles.ts";
 import { Router } from "../router.tsx";
 import type { DraftBill } from "../server/records/draft.ts";
 import { linkClass } from "../styles/link.ts";

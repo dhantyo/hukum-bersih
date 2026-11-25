@@ -6,8 +6,13 @@ import { linkClass } from "../styles/link.ts";
 
 interface SearchHit {
   url: string;
-  meta: { title?: string };
-  sub_results: { title: string; url: string }[];
+  meta: { title?: string; label?: string };
+}
+
+interface SearchPage {
+  url: string;
+  title: string;
+  hits: { url: string; label: string }[];
 }
 
 interface Pagefind {
@@ -16,6 +21,51 @@ interface Pagefind {
     query: string
   ) => Promise<{ results: { data: () => Promise<SearchHit> }[] }>;
 }
+
+const PAGE_LIMIT = 10;
+const BATCH_SIZE = 50;
+const HIT_LIMIT = 500;
+
+const groupByPage = (hits: SearchHit[]) => {
+  const pages = new Map<string, SearchPage>();
+
+  for (const hit of hits) {
+    const [url] = hit.url.split("#");
+
+    const page = pages.get(url) ?? {
+      url,
+      title: hit.meta.title ?? url,
+      hits: [],
+    };
+
+    page.hits.push({ url: hit.url, label: hit.meta.label ?? hit.url });
+    pages.set(url, page);
+  }
+
+  return [...pages.values()];
+};
+
+const loadPages = async (results: { data: () => Promise<SearchHit> }[]) => {
+  const loaded: SearchHit[] = [];
+  const last = Math.min(results.length, HIT_LIMIT);
+
+  for (
+    let from = 0;
+    from < last && groupByPage(loaded).length < PAGE_LIMIT;
+    from += BATCH_SIZE
+  ) {
+    const batch = results.slice(from, Math.min(from + BATCH_SIZE, last));
+
+    // oxlint-disable-next-line no-await-in-loop -- a batch is fetched only while the pages so far are too few
+    const hits = await Promise.all(
+      batch.map(async (result) => await result.data())
+    );
+
+    loaded.push(...hits.filter((hit) => v.is(searchHitLink, hit.url)));
+  }
+
+  return groupByPage(loaded).slice(0, PAGE_LIMIT);
+};
 
 const findText = async (release: string, query: string) => {
   const modulePath = `/search-index/${release}/pagefind.js`;
@@ -29,28 +79,20 @@ const findText = async (release: string, query: string) => {
   await pagefind.init();
   const { results } = await pagefind.search(query);
 
-  const matches = await Promise.all(
-    results.slice(0, 10).map(async (result) => await result.data())
-  );
-
-  return matches.filter((match) => v.is(searchHitLink, match.url));
+  return await loadPages(results);
 };
 
-const SearchResult = (props: { hit: SearchHit }) => (
+const SearchResult = (props: { page: SearchPage }) => (
   <li>
-    <a class={linkClass} href={props.hit.url}>
-      {props.hit.meta.title ?? props.hit.url}
+    <a class={linkClass} href={props.page.url}>
+      {props.page.title}
     </a>
     <ul>
-      <For
-        each={props.hit.sub_results.filter((article) =>
-          v.is(searchHitLink, article.url)
-        )}
-      >
-        {(article) => (
+      <For each={props.page.hits}>
+        {(hit) => (
           <li>
-            <a class={linkClass} href={article.url}>
-              {article.title}
+            <a class={linkClass} href={hit.url}>
+              {hit.label}
             </a>
           </li>
         )}
@@ -64,7 +106,7 @@ export const FullTextSearch = (props: {
   query: string;
   hasCatalogHits: boolean;
 }) => {
-  const [hits, setHits] = createSignal<SearchHit[]>([]);
+  const [pages, setPages] = createSignal<SearchPage[]>([]);
 
   const [state, setState] = createSignal<"loading" | "ready" | "error">(
     "loading"
@@ -84,7 +126,7 @@ export const FullTextSearch = (props: {
             return;
           }
 
-          setHits(matches);
+          setPages(matches);
           setState("ready");
         } catch (error) {
           if (cancelled) {
@@ -92,7 +134,7 @@ export const FullTextSearch = (props: {
           }
 
           console.error("Pagefind search failed", error);
-          setHits([]);
+          setPages([]);
           setState("error");
         }
       };
@@ -113,16 +155,16 @@ export const FullTextSearch = (props: {
       </Show>
       <Show
         when={
-          state() === "ready" && hits().length === 0 && !props.hasCatalogHits
+          state() === "ready" && pages().length === 0 && !props.hasCatalogHits
         }
       >
         {/* oxlint-disable-next-line jsx-a11y/prefer-tag-over-role -- a block-level message, not an inline output */}
         <p role="status">Tidak ada hasil.</p>
       </Show>
-      <Show when={state() === "ready" && hits().length > 0}>
+      <Show when={state() === "ready" && pages().length > 0}>
         <h2>Isi teks</h2>
         <ul>
-          <For each={hits()}>{(hit) => <SearchResult hit={hit} />}</For>
+          <For each={pages()}>{(page) => <SearchResult page={page} />}</For>
         </ul>
       </Show>
     </>

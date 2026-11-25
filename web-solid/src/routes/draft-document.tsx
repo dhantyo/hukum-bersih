@@ -1,15 +1,13 @@
 import type { RouteProps } from "@solidjs/router";
 import { createMemo, Show } from "solid-js";
 
-import {
-  DraftProvenance,
-  draftDocumentTitle,
-} from "../components/draft-provenance.tsx";
+import { DraftProvenance } from "../components/draft-provenance.tsx";
 import { LawText } from "../components/law-text.tsx";
 import { ReadingSettings } from "../components/reading-settings.tsx";
 import { usePageTitle } from "../lib/head.ts";
 import { slashed } from "../lib/paths.ts";
 import { draftTextQuery } from "../lib/queries.ts";
+import { draftDocumentTitle } from "../lib/titles.ts";
 import { Router } from "../router.tsx";
 import { linkClass } from "../styles/link.ts";
 import { readerClass } from "../styles/reading.ts";
