@@ -124,8 +124,8 @@ separating.
 - **Fact list** (side panel): label above value, `--fs-sm`.
 - **Table of contents**: BAB headings with their pasal range; current item marked with
   `--primary` left border. The BAB being read opens to a grid of its pasal numbers (the pasal in
-  view on `--primary-bg`); laws without BAB show the grid of all pasal. A "Ke pasal" field jumps
-  to `#pasal-<n>`.
+  view on `--primary-bg`); laws without BAB show the grid of all pasal. A "Ke pasal" box lists the pasal
+  whose number starts with what is typed; picking one jumps to `#pasal-<n>`.
 - **Law text**: serif, hanging numbers for ayat/huruf/angka. Two formats, chosen by the reader
   ([decision 0009](docs/decisions/0009-law-view-asli-modern.md)); the text is the same, only
   the layout changes:
