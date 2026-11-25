@@ -45,24 +45,45 @@ const groupByPage = (hits: SearchHit[]) => {
   return [...pages.values()];
 };
 
-const loadPages = async (results: { data: () => Promise<SearchHit> }[]) => {
-  const loaded: SearchHit[] = [];
-  const last = Math.min(results.length, HIT_LIMIT);
+type PagefindResults = Awaited<ReturnType<Pagefind["search"]>>["results"];
 
-  for (
-    let from = 0;
-    from < last && groupByPage(loaded).length < PAGE_LIMIT;
-    from += BATCH_SIZE
-  ) {
-    const batch = results.slice(from, Math.min(from + BATCH_SIZE, last));
+const isPagefind = (value: unknown): value is Pagefind =>
+  typeof value === "object" &&
+  value !== null &&
+  "init" in value &&
+  typeof value.init === "function" &&
+  "search" in value &&
+  typeof value.search === "function";
 
-    // oxlint-disable-next-line no-await-in-loop -- a batch is fetched only while the pages so far are too few
-    const hits = await Promise.all(
-      batch.map(async (result) => await result.data())
-    );
-
-    loaded.push(...hits.filter((hit) => v.is(searchHitLink, hit.url)));
+const loadBatches: (
+  results: PagefindResults,
+  from: number,
+  last: number,
+  loaded: SearchHit[]
+) => Promise<SearchHit[]> = async (results, from, last, loaded) => {
+  if (from >= last || groupByPage(loaded).length >= PAGE_LIMIT) {
+    return loaded;
   }
+
+  const batch = results.slice(from, Math.min(from + BATCH_SIZE, last));
+
+  const hits = await Promise.all(
+    batch.map(async (result) => await result.data())
+  );
+
+  return await loadBatches(results, from + BATCH_SIZE, last, [
+    ...loaded,
+    ...hits.filter((hit) => v.is(searchHitLink, hit.url)),
+  ]);
+};
+
+const loadPages = async (results: PagefindResults) => {
+  const loaded = await loadBatches(
+    results,
+    0,
+    Math.min(results.length, HIT_LIMIT),
+    []
+  );
 
   return groupByPage(loaded).slice(0, PAGE_LIMIT);
 };
@@ -70,11 +91,14 @@ const loadPages = async (results: { data: () => Promise<SearchHit> }[]) => {
 const findText = async (release: string, query: string) => {
   const modulePath = `/search-index/${release}/pagefind.js`;
 
-  // oxlint-disable-next-line typescript/no-unsafe-assignment -- the Pagefind bundle is loaded at runtime from the active release and ships no types
-  const pagefind: Pagefind = await import(
+  const pagefind: unknown = await import(
     /* @vite-ignore */
     modulePath
   );
+
+  if (!isPagefind(pagefind)) {
+    throw new Error(`${modulePath} is not a Pagefind bundle`);
+  }
 
   await pagefind.init();
   const { results } = await pagefind.search(query);
@@ -150,16 +174,14 @@ export const FullTextSearch = (props: {
   return (
     <>
       <Show when={state() === "error"}>
-        {/* oxlint-disable-next-line jsx-a11y/prefer-tag-over-role -- a block-level message, not an inline output */}
-        <p role="status">Pencarian teks gagal. Coba lagi.</p>
+        <output>Pencarian teks gagal. Coba lagi.</output>
       </Show>
       <Show
         when={
           state() === "ready" && pages().length === 0 && !props.hasCatalogHits
         }
       >
-        {/* oxlint-disable-next-line jsx-a11y/prefer-tag-over-role -- a block-level message, not an inline output */}
-        <p role="status">Tidak ada hasil.</p>
+        <output>Tidak ada hasil.</output>
       </Show>
       <Show when={state() === "ready" && pages().length > 0}>
         <h2>Isi teks</h2>
