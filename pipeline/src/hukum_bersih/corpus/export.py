@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from .collection_export import export_collections
 from .drafts import export_drafts
 from .laws import Laws, export_laws
 
@@ -12,4 +13,5 @@ def export_corpus(data_dir: Path, stage: Path) -> list[str]:
     """Write the corpus built from ``data_dir`` into ``stage``; returns one report line per area."""
     stage.mkdir(parents=True, exist_ok=True)
     laws = Laws(data_dir)
-    return [export_laws(laws, stage), export_drafts(data_dir, stage)]
+    return [export_laws(laws, stage), export_collections(laws, stage),
+            export_drafts(data_dir, stage)]
