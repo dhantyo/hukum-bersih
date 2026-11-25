@@ -37,7 +37,7 @@ const styles = stylex.create({
     borderStyle: "solid",
     borderWidth: 1,
     gap: space.s1,
-    paddingBlock: space.hairline,
+    paddingBlock: "0.1rem",
     paddingInline: `${space.s2} ${space.s1}`,
     alignItems: "center",
     backgroundColor: color.background,

@@ -9,7 +9,6 @@ import type {
 export interface ColumnOrderOptions {
   /** The keys of the columns, left to right. */
   value?: string[];
-  defaultValue?: string[];
   /** What each column is called to a screen reader, by key. */
   labels?: Record<string, string>;
   onValueChange?: (
@@ -50,14 +49,13 @@ export const columnOrder = definePrimitive({
   name: "column-order",
   options: {
     value: "list",
-    defaultValue: "list",
     labels: "value",
     onValueChange: "callback",
   },
   controlled: ["value"],
   state: (options: ColumnOrderOptions) =>
     ({
-      value: options.value ?? options.defaultValue ?? [],
+      value: options.value ?? [],
       moving: null,
     }) satisfies ColumnOrderState,
   sync: (options) =>
