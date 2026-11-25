@@ -3,29 +3,33 @@ import * as stylex from "@stylexjs/stylex";
 import { color, size, space } from "./tokens.stylex.ts";
 
 const PHONE = "@media (max-width: 760px)";
-const SAME_HIDDEN = ":is([data-hide-same])";
+const SHOW_SAME = ":has([data-show-same]:checked)";
 const NUMBER_COLUMN = "2.3rem";
 
 export const synopsisStyles = stylex.create({
-  page: {
-    marginBlock: space.s4,
-    marginInline: "auto",
-    paddingInline: space.s4,
-    maxWidth: size.pageWide,
-  },
   versions: {
     gap: space.s3,
     display: "grid",
     gridTemplateColumns: { [PHONE]: "1fr", default: "1fr 1fr" },
   },
   card: {
-    padding: space.s3,
     borderColor: color.line,
-    borderRadius: size.radius,
+    borderRadius: size.radiusMd,
     borderStyle: "solid",
     borderWidth: 1,
+    marginBlock: space.s3,
+    paddingBlock: space.s4,
+    paddingInline: space.s5,
+    backgroundColor: color.backgroundSubtle,
     fontSize: size.sm,
   },
+  versionCard: {
+    gap: space.s1,
+    alignItems: "start",
+    display: "grid",
+    justifyItems: "start",
+  },
+  note: { margin: 0, marginBlockStart: space.s2 },
   muted: { color: color.textMuted },
   summaryCount: {
     display: "inline-block",
@@ -69,7 +73,10 @@ export const synopsisStyles = stylex.create({
     scrollMarginTop: space.s7,
   },
   sameRow: {
-    display: { default: null, [stylex.when.ancestor(SAME_HIDDEN)]: "none" },
+    display: {
+      default: "none",
+      [stylex.when.ancestor(SHOW_SAME)]: "block",
+    },
   },
   meta: {
     gap: space.s2,

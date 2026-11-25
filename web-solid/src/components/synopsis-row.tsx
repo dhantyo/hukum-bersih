@@ -289,9 +289,9 @@ export const SynopsisRow = (props: {
     <div class={css(styles.meta)}>
       <a
         class={css(
+          linkStyles.base,
           styles.status,
-          STATUS_STYLE[props.row.status],
-          linkStyles.base
+          STATUS_STYLE[props.row.status]
         )}
         href={`#${props.row.anchor}`}
         target="_self"
