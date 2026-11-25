@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from "@solidjs/router";
 import * as stylex from "@stylexjs/stylex";
 import { Input, InputClear, InputGroup } from "@ui-sdk/solid/input";
-import { createSignal, For, Show } from "solid-js";
+import { createSignal, For, isPending, Show } from "solid-js";
 import * as v from "valibot";
 
 import type {
@@ -229,7 +229,11 @@ const styles = stylex.create({
     maxInlineSize: size.measure,
   },
   summary: { margin: 0, color: color.textMuted, fontSize: size.sm },
-  grid: { overflowX: "auto" },
+  grid: {
+    transition: "opacity 0.15s ease",
+    overflowX: "auto",
+  },
+  busy: { opacity: 0.6 },
   head: {
     paddingBlock: space.s2,
     borderBlockEndColor: color.line,
@@ -563,10 +567,14 @@ const Summary = (props: { count: number; columns: number; pasal: string }) => {
   );
 };
 
-const Grid = (props: { comparison: CollectionCompareView; pasal: string }) => {
+const Grid = (props: {
+  comparison: CollectionCompareView;
+  pasal: string;
+  busy: boolean;
+}) => {
   const columns = () =>
-    props.comparison.chosen.map((id) =>
-      props.comparison.versions.find((entry) => entry.id === id)
+    props.comparison.chosen.flatMap(
+      (id) => props.comparison.versions.find((entry) => entry.id === id) ?? []
     );
 
   const rows = () =>
@@ -591,7 +599,7 @@ const Grid = (props: { comparison: CollectionCompareView; pasal: string }) => {
         </p>
       </Show>
       <section
-        class={css(styles.grid)}
+        class={css(styles.grid, props.busy && styles.busy)}
         aria-label="Pasal yang berbeda, satu kolom tiap versi"
       >
         <div
@@ -599,28 +607,27 @@ const Grid = (props: { comparison: CollectionCompareView; pasal: string }) => {
           style={rowStyle(props.comparison.chosen.length)}
           aria-hidden="true"
         >
-          <For each={columns()}>
-            {(version) => (
-              <strong>
-                {version === undefined ? "" : versionName(version)}
-              </strong>
-            )}
+          <For each={columns()} keyed={false}>
+            {(version) => <strong>{versionName(version())}</strong>}
           </For>
         </div>
-        <For each={rows()}>
+        <For each={rows()} keyed={(row) => row.num}>
           {(row) => (
             <section
-              id={`banding-${pasalKey(row.num)}`}
+              id={`banding-${pasalKey(row().num)}`}
               class={css(styles.row)}
-              aria-label={`Pasal ${row.num}`}
+              aria-label={`Pasal ${row().num}`}
             >
               <h3 class={css(styles.title)} aria-hidden="true">
-                Pasal {row.num}
+                Pasal {row().num}
               </h3>
-              <div class={css(styles.cells)} style={rowStyle(row.cells.length)}>
-                <For each={row.cells}>
+              <div
+                class={css(styles.cells)}
+                style={rowStyle(row().cells.length)}
+              >
+                <For each={row().cells} keyed={false}>
                   {(cell, index) => (
-                    <Cell cell={cell} label={columns()[index()]?.cite ?? ""} />
+                    <Cell cell={cell()} label={columns()[index]?.cite ?? ""} />
                   )}
                 </For>
               </div>
@@ -647,10 +654,11 @@ export const CollectionCompare = (props: {
   const location = useLocation();
 
   const [typed, setTyped] = createSignal(
-    v.parse(compareSearch, location.query).pasal ?? ""
+    () => v.parse(compareSearch, location.query).pasal ?? ""
   );
 
   const pasal = () => normalized(typed());
+  const pending = () => isPending(() => props.comparison);
   const versions = () => props.comparison.versions;
   const first = () => versions()[0]?.id ?? "";
   const last = () => versions().at(-1)?.id ?? first();
@@ -667,7 +675,11 @@ export const CollectionCompare = (props: {
 
   return (
     <Show when={shown()}>
-      <section id="banding" aria-labelledby="banding-title">
+      <section
+        id="banding"
+        aria-labelledby="banding-title"
+        aria-busy={pending() ? "true" : "false"}
+      >
         <div class={css(styles.top)}>
           <h2 id="banding-title" class={css(styles.heading)}>
             Bandingkan versi
@@ -709,7 +721,11 @@ export const CollectionCompare = (props: {
           <output>Versi yang diminta tidak dikenal di koleksi ini.</output>
         </Show>
         <Show when={props.comparison.chosen.length > 0}>
-          <Grid comparison={props.comparison} pasal={pasal()} />
+          <Grid
+            comparison={props.comparison}
+            pasal={pasal()}
+            busy={pending()}
+          />
         </Show>
       </section>
     </Show>
