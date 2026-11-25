@@ -104,8 +104,12 @@ def cite_id(law_id: str) -> str:
     return f"{kind} {m[2].upper()}/{m[3]}"
 
 
+def source_host(url: str | None) -> str | None:
+    return urlsplit(url).hostname if url else None
+
+
 def source_name(url: str | None) -> str | None:
-    host = urlsplit(url).hostname if url else None
+    host = source_host(url)
     return SOURCE_NAMES.get(host, host) if host else None
 
 

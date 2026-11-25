@@ -15,14 +15,14 @@ import yaml
 from .jstext import locale_key, slugify
 from .regulations import Regulation, Regulations, amends_entry, cite_id
 
-_ORDINALS = ["", "pertama", "kedua", "ketiga", "keempat", "kelima", "keenam", "ketujuh",
+ORDINALS = ["", "pertama", "kedua", "ketiga", "keempat", "kelima", "keenam", "ketujuh",
              "kedelapan", "kesembilan", "kesepuluh"]
 
 Role = Literal["pokok", "perubahan", "pendahulu"]
 
 
 def ordinal(n: int) -> str:
-    return _ORDINALS[n] if 0 <= n < len(_ORDINALS) else f"ke-{n}"
+    return ORDINALS[n] if 0 <= n < len(ORDINALS) else f"ke-{n}"
 
 
 @dataclass(frozen=True)
@@ -31,6 +31,8 @@ class Koleksi:
     name: str                # "UU ITE"; for unnamed ones the subject
     named: bool              # has a common short name (a file in data/koleksi)
     base: Regulation
+    title: str = ""          # "Informasi dan Transaksi Elektronik"
+    aliases: tuple[str, ...] = ()
 
     @property
     def path(self) -> str:
@@ -81,7 +83,7 @@ class Collections:
             if slug in slugs:
                 slug = f"{slug}-{law.year}"
             slugs.add(slug)
-            unnamed.append(Koleksi(slug, law.subject or law.title, False, law))
+            unnamed.append(Koleksi(slug, law.subject or law.title, False, law, law.subject))
         self.all = [*named, *sorted(unnamed, key=lambda k: locale_key(k.name))]
         self._of: dict[str, Koleksi] = {}
         for koleksi in self.all:
@@ -95,7 +97,9 @@ class Collections:
             base = self.regulations.get(data["base"])
             if base is None:
                 continue
-            found.append(Koleksi(data["slug"], data["name"], True, base))
+            found.append(Koleksi(data["slug"], data["name"], True, base,
+                                 base.subject if data.get("title") is None else data["title"],
+                                 tuple(data.get("aliases") or ())))
             self._extra_members[data["slug"]] = data.get("members") or []
         return sorted(found, key=lambda k: locale_key(k.name))
 
