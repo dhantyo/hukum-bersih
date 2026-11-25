@@ -16,14 +16,15 @@ class LeakedMarkupError(ValueError):
     POINT/PARA indented at the wrong depth)."""
 
 
-def to_akn(text: str, frbr_uri: str, root: str = "act", expression_date: str | None = None,
-           title: str | None = None, work_date: str | None = None) -> bytes:
-    """``work_date``: the full date of the Work (a law's tanggal penetapan). cobalt fills the
+def to_akn_tree(text: str, frbr_uri: str, root: str = "act", expression_date: str | None = None,
+                title: str | None = None, work_date: str | None = None):
+    """The Akoma Ntoso document as an lxml element (``to_akn`` writes it out).
+
+    ``work_date``: the full date of the Work (a law's tanggal penetapan). cobalt fills the
     Work's FRBRdate with the URI's bare year ("2009"), which the AKN 3.0 schema rejects
     (scripts/validate_akn.py); without a full date the year stays."""
     from bluebell.parser import AkomaNtosoParser
     from cobalt import FrbrUri
-    from lxml import etree
 
     uri = FrbrUri.parse(frbr_uri)
     uri.language = LANGUAGE
@@ -40,6 +41,15 @@ def to_akn(text: str, frbr_uri: str, root: str = "act", expression_date: str | N
         for alias in xml.iter("{*}FRBRalias"):
             if alias.get("name") == "title":
                 alias.set("value", title)
+    return xml
+
+
+def to_akn(text: str, frbr_uri: str, root: str = "act", expression_date: str | None = None,
+           title: str | None = None, work_date: str | None = None) -> bytes:
+    """The Akoma Ntoso XML of one Bluebell text; the arguments are those of ``to_akn_tree``."""
+    from lxml import etree
+
+    xml = to_akn_tree(text, frbr_uri, root, expression_date, title, work_date)
     return etree.tostring(xml, encoding="utf-8", pretty_print=True, xml_declaration=True)
 
 

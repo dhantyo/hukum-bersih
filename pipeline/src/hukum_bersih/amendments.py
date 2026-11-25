@@ -273,6 +273,19 @@ def _numbered(text: str, label, numbers, pattern=None) -> list[tuple[str | None,
     return parts
 
 
+def split(rec: dict, folder: Path) -> dict | None:
+    """What an amending law with one target and a text says, pasal by pasal: the JSON of
+    ``build`` as a dict, or None when the law is not such a law or no instruction was found."""
+    amends = (rec.get("relationships") or {}).get("amends") or []
+    texts = [v["text"] for v in rec.get("versions") or [] if v.get("text")]
+    if len(amends) != 1 or not texts:
+        return None
+    found = instructions(flatten((folder / texts[-1]).read_text()))
+    if not found:
+        return None
+    return {"id": rec["id"], "amends": amends[0]["id"], "instructions": [asdict(i) for i in found]}
+
+
 def build(data_dir: Path, out_dir: Path) -> int:
     """For every amending law with one target and a text: its instructions, as JSON in
     ``out_dir/amendments/<id>.json`` (for the website; regenerated, not committed)."""
@@ -281,17 +294,8 @@ def build(data_dir: Path, out_dir: Path) -> int:
     count = 0
     for path in sorted((data_dir / "peraturan").glob("*/*/*/*.yaml")):
         rec = load_record(path)
-        amends = (rec.get("relationships") or {}).get("amends") or []
-        texts = [v["text"] for v in rec.get("versions") or [] if v.get("text")]
-        if len(amends) != 1 or not texts:
-            continue
-        body = flatten((path.parent / texts[-1]).read_text())
-        found = instructions(body)
-        if not found:
-            continue
-        (target / f"{rec['id']}.json").write_text(json.dumps({
-            "id": rec["id"], "amends": amends[0]["id"],
-            "instructions": [asdict(i) for i in found],
-        }, ensure_ascii=False))
-        count += 1
+        split_up = split(rec, path.parent)
+        if split_up:
+            (target / f"{rec['id']}.json").write_text(json.dumps(split_up, ensure_ascii=False))
+            count += 1
     return count
