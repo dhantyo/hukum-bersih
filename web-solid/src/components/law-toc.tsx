@@ -1,10 +1,8 @@
 import * as stylex from "@stylexjs/stylex";
-import { createSignal, For, onSettled, Show } from "solid-js";
-import * as v from "valibot";
+import { For, onSettled, Show } from "solid-js";
 
 import { modernHeading, pasalKey } from "../../../web/src/lib/display.ts";
 import type { AknNode } from "../../../web/src/lib/lawdoc.ts";
-import { searchText } from "../lib/schemas.ts";
 import { isPresent } from "../lib/text.ts";
 import type { Mark, VersionComparison } from "../server/law-comparison.ts";
 import type { ReaderText } from "../server/records/reader-text.ts";
@@ -12,6 +10,7 @@ import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 import { MarkIcon } from "./law-compare.tsx";
+import { PasalJump } from "./pasal-jump.tsx";
 
 const NO_PENJELASAN = ':is([data-penjelasan="sembunyi"])';
 
@@ -33,29 +32,6 @@ const styles = stylex.create({
     letterSpacing: "0.06em",
     textTransform: "uppercase",
   },
-  jump: {
-    gap: `${space.s1} ${space.s2}`,
-    alignItems: "center",
-    color: color.textMuted,
-    display: "flex",
-    flexWrap: "wrap",
-    fontSize: size.xs,
-    marginBlockEnd: space.s3,
-  },
-  input: {
-    font: "inherit",
-    borderColor: color.lineStrong,
-    borderRadius: size.radius,
-    borderStyle: "solid",
-    borderWidth: 1,
-    paddingBlock: space.s1,
-    paddingInline: space.s2,
-    backgroundColor: color.background,
-    color: color.text,
-    fontSize: size.sm,
-    inlineSize: "5rem",
-  },
-  message: { color: color.warn, flexBasis: "100%" },
   list: {
     margin: 0,
     padding: 0,
@@ -375,36 +351,14 @@ export const Toc = (props: {
         )
       : [];
 
-  const [missing, setMissing] = createSignal("");
-
   onSettled(() => toc && followReading(toc));
 
-  const jump = (event: SubmitEvent & { currentTarget: HTMLFormElement }) => {
-    event.preventDefault();
-
-    const typed = v.parse(
-      searchText,
-      new FormData(event.currentTarget).get("pasal")
+  const targets = () =>
+    cellsOf(
+      props.text.body.flatMap(articles),
+      props.text.anchors,
+      props.comparison
     );
-
-    const key = typed
-      .toLowerCase()
-      .replace(/^pasal\s*/u, "")
-      .replaceAll(/[^0-9a-z]+/gu, "");
-
-    if (key === "") {
-      return;
-    }
-
-    if (document.querySelector(`#pasal-${key}`) === null) {
-      setMissing(`Pasal ${typed} tidak ada`);
-
-      return;
-    }
-
-    setMissing("");
-    location.hash = `pasal-${key}`;
-  };
 
   return (
     <nav
@@ -418,19 +372,7 @@ export const Toc = (props: {
         <h2 class={css(styles.title)}>Daftar isi</h2>
       </div>
       <Show when={Object.keys(props.text.anchors).length > 0}>
-        <form class={css(styles.jump)} onSubmit={jump}>
-          <label for="toc-jump-input">Ke pasal</label>
-          <input
-            id="toc-jump-input"
-            name="pasal"
-            type="text"
-            autocomplete="off"
-            placeholder="mis. 27"
-            size="5"
-            class={css(styles.input)}
-          />
-          <output class={css(styles.message)}>{missing()}</output>
-        </form>
+        <PasalJump targets={targets()} />
       </Show>
       <ol class={css(styles.list)}>
         <For each={chapters()}>
