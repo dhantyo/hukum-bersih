@@ -13,7 +13,10 @@ import { Toggle, ToggleIcon } from "@ui-sdk/solid/toggle";
 import { createSignal, For, onSettled, Show, useContext } from "solid-js";
 
 import { ReaderViewContext } from "../lib/reader-view.ts";
-import { panel as panelPreference } from "../lib/reading-preferences.ts";
+import {
+  comparePanel,
+  panel as panelPreference,
+} from "../lib/reading-preferences.ts";
 import type { ReaderText } from "../server/records/reader-text.ts";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
@@ -21,6 +24,13 @@ import { color, media, shadow, size, space } from "../styles/tokens.stylex.ts";
 
 const HIDDEN = ':is([data-panel="hidden"])';
 const TABLET_QUERY = "(max-width: 960px)";
+const FOLD = "@media (min-width: 961px) and (max-width: 1499px)";
+const FOLD_QUERY = FOLD.replace("@media ", "");
+const WIDE = "@media (min-width: 961px)";
+
+const COMPARING = ":has([data-cmp-bar])";
+const FOLDED = ':has([data-cmp-bar]):not([data-cmp-panel="open"])';
+const UNFOLDED = ':has([data-cmp-bar])[data-cmp-panel="open"]';
 
 const styles = stylex.create({
   crumbs: {
@@ -57,6 +67,11 @@ const styles = stylex.create({
     alignItems: "start",
     display: "grid",
     gridTemplateColumns: {
+      [FOLD]: {
+        default: null,
+        [stylex.when.ancestor(FOLDED)]: `${size.tap} minmax(0, 1fr)`,
+        [stylex.when.ancestor(UNFOLDED)]: `${size.panel} minmax(0, 1fr)`,
+      },
       default: `${size.panel} minmax(0, 1fr)`,
       [stylex.when.ancestor(HIDDEN)]: `${size.tap} minmax(0, 1fr)`,
       [media.tablet]: "minmax(0, 1fr)",
@@ -66,6 +81,11 @@ const styles = stylex.create({
     gridColumn: 1,
     gridRow: 1,
     display: {
+      [FOLD]: {
+        default: null,
+        [stylex.when.ancestor(FOLDED)]: "block",
+        [stylex.when.ancestor(UNFOLDED)]: "none",
+      },
       default: "none",
       [stylex.when.ancestor(HIDDEN)]: "block",
       [media.tablet]: "none",
@@ -94,6 +114,11 @@ const styles = stylex.create({
     gridColumn: 1,
     gridRow: 1,
     display: {
+      [FOLD]: {
+        default: null,
+        [stylex.when.ancestor(FOLDED)]: "none",
+        [stylex.when.ancestor(UNFOLDED)]: "block",
+      },
       default: null,
       [stylex.when.ancestor(HIDDEN)]: "none",
       [media.tabletScripted]: "none",
@@ -137,11 +162,13 @@ const styles = stylex.create({
     gridColumn: { default: 2, [media.tablet]: 1 },
     gridRow: 1,
     inlineSize: {
+      [WIDE]: { default: null, [stylex.when.ancestor(COMPARING)]: "auto" },
       default: null,
       [stylex.when.ancestor(HIDDEN)]: `min(100%, ${size.measure})`,
       [media.tablet]: "auto",
     },
     justifySelf: {
+      [WIDE]: { default: null, [stylex.when.ancestor(COMPARING)]: "stretch" },
       default: null,
       [stylex.when.ancestor(HIDDEN)]: "center",
       [media.tablet]: "stretch",
@@ -274,13 +301,47 @@ export const Breadcrumbs = (props: { crumbs: Crumb[]; flush?: boolean }) => (
   </nav>
 );
 
-const setShown = (next: boolean) => {
-  panelPreference.set(next ? "shown" : "hidden");
+const useMedia = (query: string) => {
+  const [matches, setMatches] = createSignal(false);
+
+  onSettled(() => {
+    const list = matchMedia(query);
+
+    const update = () => {
+      setMatches(list.matches);
+    };
+
+    update();
+    list.addEventListener("change", update);
+
+    return () => {
+      list.removeEventListener("change", update);
+    };
+  });
+
+  return matches;
 };
 
-const SidePanel = (props: { label: string; children: JSX.Element }) => {
+const SidePanel = (props: {
+  label: string;
+  comparing: boolean;
+  children: JSX.Element;
+}) => {
   const state = usePreference(panelPreference);
-  const shown = () => state().value === "shown";
+  const compared = usePreference(comparePanel);
+  const narrow = useMedia(FOLD_QUERY);
+  const folded = () => props.comparing && narrow();
+
+  const shown = () =>
+    folded() ? compared().value === "open" : state().value === "shown";
+
+  const setShown = (next: boolean) => {
+    if (folded()) {
+      comparePanel.set(next ? "open" : "closed");
+    } else {
+      panelPreference.set(next ? "shown" : "hidden");
+    }
+  };
 
   return (
     <>
@@ -367,26 +428,7 @@ const PanelDrawer = (props: { label: string; children: JSX.Element }) => {
   );
 };
 
-const useTablet = () => {
-  const [tablet, setTablet] = createSignal(false);
-
-  onSettled(() => {
-    const query = matchMedia(TABLET_QUERY);
-
-    const update = () => {
-      setTablet(query.matches);
-    };
-
-    update();
-    query.addEventListener("change", update);
-
-    return () => {
-      query.removeEventListener("change", update);
-    };
-  });
-
-  return tablet;
-};
+const useTablet = () => useMedia(TABLET_QUERY);
 
 /**
  * A document page: breadcrumbs, the title block, then a side panel beside the text
@@ -405,6 +447,8 @@ export const DocLayout = (props: {
   text?: ReaderText;
   panelLabel: string;
   panel: JSX.Element;
+  /** The page holds a comparison: the text widens and the panel folds away below 1500px. */
+  comparing?: boolean;
   children: JSX.Element;
 }) => {
   const [, setReaderText] = useContext(ReaderViewContext);
@@ -433,7 +477,12 @@ export const DocLayout = (props: {
         <Show
           when={tablet()}
           fallback={
-            <SidePanel label={props.panelLabel}>{props.panel}</SidePanel>
+            <SidePanel
+              label={props.panelLabel}
+              comparing={props.comparing === true}
+            >
+              {props.panel}
+            </SidePanel>
           }
         >
           <PanelDrawer label={props.panelLabel}>{props.panel}</PanelDrawer>

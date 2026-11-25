@@ -11,6 +11,8 @@ import { color, media, size, space } from "../styles/tokens.stylex.ts";
 import { accessibility } from "../styles/visually-hidden.ts";
 import { ReadingSettings } from "./reading-settings.tsx";
 
+const COMPARING = ":has([data-cmp-bar])";
+
 const styles = stylex.create({
   skip: {
     padding: space.s2,
@@ -47,7 +49,10 @@ const styles = stylex.create({
       [media.tablet]: space.s3,
       [media.phone]: space.s2,
     },
-    maxWidth: size.page,
+    maxWidth: {
+      default: size.page,
+      [stylex.when.ancestor(COMPARING)]: size.pageWide,
+    },
     minHeight: size.headerMin,
   },
   brand: {

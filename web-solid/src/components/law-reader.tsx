@@ -221,6 +221,7 @@ export const LawReader = (props: {
       text={text() ?? undefined}
       panelLabel={text() ? "Daftar isi" : "Keterangan"}
       panel={<Panel law={props.law} comparison={props.comparison} />}
+      comparing={props.comparison !== undefined}
     >
       <Body law={props.law} comparison={props.comparison} />
     </DocLayout>

@@ -11,13 +11,18 @@ import { size, space } from "./styles/tokens.stylex.ts";
 
 import "./styles/stylex.css";
 
+const COMPARING = ":has([data-cmp-bar])";
+
 const styles = stylex.create({
   page: {
     marginInline: "auto",
     paddingInline: space.s4,
     boxSizing: "border-box",
     paddingBlockStart: space.s5,
-    maxWidth: size.page,
+    maxWidth: {
+      default: size.page,
+      [stylex.when.ancestor(COMPARING)]: size.pageWide,
+    },
   },
 });
 

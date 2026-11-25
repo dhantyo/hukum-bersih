@@ -20,6 +20,7 @@ const sizes = ["normal", "large"] as const;
 const fonts = ["serif", "literata", "sans", "atkinson"] as const;
 const shown = ["show", "hide"] as const;
 const panels = ["shown", "hidden"] as const;
+const comparePanels = ["closed", "open"] as const;
 
 export const format = choice("hb-format", "data-format", formats, "modern");
 
@@ -50,6 +51,14 @@ export const fontModern = choice(
 /** Whether the side panel of a document page is open on wide screens (`data-panel` on `<html>`). */
 export const panel = choice("hb-panel", "data-panel", panels, "shown");
 
+/** Whether the side panel is open while two versions are compared below 1500px; not stored. */
+export const comparePanel = createPreference({
+  values: comparePanels,
+  defaultValue: "closed",
+  attribute: "data-cmp-panel",
+  global: true,
+});
+
 export const parts = {
   pembukaan: choice("hb-part-pembukaan", "data-pembukaan", shown, "show"),
   batang: choice("hb-part-batang", "data-batang", shown, "show"),
@@ -62,6 +71,7 @@ export const readingPreferences = [
   cukupJelas,
   size,
   panel,
+  comparePanel,
   fontAsli,
   fontModern,
   ...Object.values(parts),
