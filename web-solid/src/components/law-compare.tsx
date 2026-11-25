@@ -10,14 +10,8 @@ import type {
   VersionComparison,
 } from "../server/law-comparison.ts";
 import { css } from "../styles/css.ts";
-import {
-  color,
-  font,
-  reader,
-  size,
-  space,
-  synopsis,
-} from "../styles/tokens.stylex.ts";
+import { linkClass, linkStyles } from "../styles/link.ts";
+import { color, font, size, space } from "../styles/tokens.stylex.ts";
 import { VersionPicker } from "./collection-version-picker.tsx";
 
 const styles = stylex.create({
@@ -66,7 +60,7 @@ const styles = stylex.create({
     backgroundColor: color.background,
     color: color.link,
     cursor: "pointer",
-    minBlockSize: reader.tap,
+    minBlockSize: size.tap,
   },
   swap: {
     borderColor: color.lineStrong,
@@ -92,21 +86,21 @@ const styles = stylex.create({
   },
   legendItem: { gap: space.s1, alignItems: "center", display: "inline-flex" },
   ins: { color: color.ok },
-  del: { color: synopsis.delText },
+  del: { color: color.delText },
   mod: { color: color.warn },
   insText: {
     textDecoration: "none",
-    backgroundColor: synopsis.insBackground,
-    color: synopsis.insText,
+    backgroundColor: color.insBackground,
+    color: color.insText,
   },
   delText: {
-    backgroundColor: synopsis.delBackground,
-    color: synopsis.delText,
+    backgroundColor: color.delBackground,
+    color: color.delText,
   },
   modText: {
     borderRadius: 2,
-    backgroundColor: reader.modBg,
-    color: reader.modText,
+    backgroundColor: color.modBackground,
+    color: color.modText,
   },
   modOld: { textDecoration: "line-through" },
   none: {
@@ -160,7 +154,7 @@ const styles = stylex.create({
   addedHeading: {
     margin: 0,
     fontFamily: font.ui,
-    fontSize: reader.textMd,
+    fontSize: size.md,
     marginBlockEnd: space.s1,
     marginBlockStart: space.s5,
   },
@@ -383,7 +377,7 @@ export const CompareBar = (props: { comparison: VersionComparison }) => {
         <label class={css(styles.only)}>
           <input type="checkbox" data-cmp-only /> Yang berubah saja
         </label>
-        <a href="./" target="_self">
+        <a class={linkClass} href="./" target="_self">
           Tutup
         </a>
       </div>
@@ -395,7 +389,7 @@ export const CompareBar = (props: { comparison: VersionComparison }) => {
           value={versions()[left()].id}
         />
         <a
-          class={css(styles.swap)}
+          class={css(styles.swap, linkStyles.base)}
           href={`?bandingkan=${versions()[left()].id}&dari=${versions()[right()].id}`}
           aria-label="Tukar kolom kiri dan kanan"
           title="Tukar kolom"

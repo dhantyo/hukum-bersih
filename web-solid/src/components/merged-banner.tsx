@@ -4,12 +4,17 @@ import { pasalKey } from "../../../web/src/lib/display.ts";
 import { tanggal } from "../../../web/src/lib/labels.ts";
 import { isPresent } from "../lib/text.ts";
 import type { CollectionVersion } from "../server/records/collection-version.ts";
+import { linkClass } from "../styles/link.ts";
 
 type Citation = CollectionVersion["amendments"][number];
 
 const CitationLink = (props: { citation: Citation }) => (
   <Show when={props.citation.href} fallback={props.citation.label} keyed>
-    {(href) => <a href={href}>{props.citation.label}</a>}
+    {(href) => (
+      <a class={linkClass} href={href}>
+        {props.citation.label}
+      </a>
+    )}
   </Show>
 );
 
@@ -29,7 +34,11 @@ const Completeness = (props: { version: CollectionVersion }) => (
           {(article, index) => (
             <>
               {index() > 0 && ", "}
-              <a href={`#pasal-${pasalKey(article)}`} target="_self">
+              <a
+                class={linkClass}
+                href={`#pasal-${pasalKey(article)}`}
+                target="_self"
+              >
                 Pasal {article}
               </a>
             </>
@@ -61,7 +70,10 @@ export const MergedBanner = (props: { version: CollectionVersion }) => (
       , disusun otomatis.
     </p>
     <p>
-      Gabungan <a href={props.version.base.href}>{props.version.base.label}</a>{" "}
+      Gabungan{" "}
+      <a class={linkClass} href={props.version.base.href}>
+        {props.version.base.label}
+      </a>{" "}
       dan perubahannya sampai{" "}
       <For each={props.version.amendments}>
         {(citation, index) => (

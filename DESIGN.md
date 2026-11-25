@@ -9,7 +9,7 @@ La Fabrique de la Loi (looked at 2026-11-21): metadata panel beside the text, br
 version timeline, table of contents, prominent search, white page, one link color, status
 colors. Not copied: no logos, crests or brand assets of those sites.
 
-Tokens live in `web/src/styles/tokens.css`; components use the names, never raw values.
+Tokens live in `web/src/styles/tokens.css`; components use the names, never raw values. The Solid app (`web-solid/`) keeps the same values as literal StyleX tokens in `web-solid/src/styles/tokens.stylex.ts`; change both together until the Astro app is retired.
 
 ## Color
 

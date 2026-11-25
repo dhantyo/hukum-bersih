@@ -2,6 +2,7 @@ import { httpStatus } from "@solidjs/web";
 
 import { usePageTitle } from "../lib/head.ts";
 import { Router } from "../router.tsx";
+import { linkClass } from "../styles/link.ts";
 
 const NotFound = () => {
   httpStatus(404);
@@ -12,7 +13,10 @@ const NotFound = () => {
       <h1>Halaman tidak ditemukan</h1>
       <p>
         Halaman yang Anda cari tidak ada.{" "}
-        <a href={Router.paths()}>Kembali ke beranda</a>.
+        <a class={linkClass} href={Router.paths()}>
+          Kembali ke beranda
+        </a>
+        .
       </p>
     </main>
   );

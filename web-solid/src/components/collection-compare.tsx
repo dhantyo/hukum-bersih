@@ -9,7 +9,8 @@ import type {
   CollectionCompareView,
 } from "../lib/collection-compare.ts";
 import { css } from "../styles/css.ts";
-import { color, font, space, synopsis } from "../styles/tokens.stylex.ts";
+import { linkClass } from "../styles/link.ts";
+import { color, font, space } from "../styles/tokens.stylex.ts";
 import { VersionPicker, versionName } from "./collection-version-picker.tsx";
 
 const styles = stylex.create({
@@ -45,12 +46,12 @@ const styles = stylex.create({
   indent3: { marginInlineStart: "6rem" },
   inserted: {
     textDecoration: "none",
-    backgroundColor: synopsis.insBackground,
-    color: synopsis.insText,
+    backgroundColor: color.insBackground,
+    color: color.insText,
   },
   deleted: {
-    backgroundColor: synopsis.delBackground,
-    color: synopsis.delText,
+    backgroundColor: color.delBackground,
+    color: color.delText,
   },
   muted: { color: color.textMuted },
 });
@@ -174,8 +175,14 @@ export const CollectionCompare = (props: {
         <button type="submit">Bandingkan</button>
       </form>
       <p>
-        Cepat: <a href={pairLink(first(), last())}>Asli dan terbaru</a> ·{" "}
-        <a href={pairLink(before(), last())}>Perubahan terakhir</a>
+        Cepat:{" "}
+        <a class={linkClass} href={pairLink(first(), last())}>
+          Asli dan terbaru
+        </a>{" "}
+        ·{" "}
+        <a class={linkClass} href={pairLink(before(), last())}>
+          Perubahan terakhir
+        </a>
       </p>
       {props.comparison.unknown && (
         <output>Versi yang diminta tidak dikenal di koleksi ini.</output>

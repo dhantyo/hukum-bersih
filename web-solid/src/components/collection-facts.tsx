@@ -2,6 +2,7 @@ import { For } from "solid-js";
 
 import { isPresent } from "../lib/text.ts";
 import type { CollectionVersion } from "../server/records/collection-version.ts";
+import { linkClass } from "../styles/link.ts";
 
 /** The laws of the collection with the part each plays: base law, amendments, replaced laws. */
 export const CollectionFacts = (props: {
@@ -16,7 +17,9 @@ export const CollectionFacts = (props: {
             <dt>{fact.label}</dt>
             <dd>
               {isPresent(fact.href) ? (
-                <a href={fact.href}>{fact.value}</a>
+                <a class={linkClass} href={fact.href}>
+                  {fact.value}
+                </a>
               ) : (
                 fact.value
               )}

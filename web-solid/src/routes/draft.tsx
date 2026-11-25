@@ -13,6 +13,7 @@ import { draftBillQuery } from "../lib/queries.ts";
 import { isPresent } from "../lib/text.ts";
 import { Router } from "../router.tsx";
 import type { DraftBill } from "../server/records/draft.ts";
+import { linkClass } from "../styles/link.ts";
 import NotFound from "./not-found.tsx";
 
 const comparedVersions = (draft: DraftBill) => {
@@ -37,7 +38,9 @@ const DraftBillPage = (props: RouteProps<"/ruu/:slug">) => {
 
         return (
           <main>
-            <a href={slashed(Router.paths.ruu)}>RUU</a>
+            <a class={linkClass} href={slashed(Router.paths.ruu)}>
+              RUU
+            </a>
             <h1>{draft.name}</h1>
             {draft.title !== draft.name && <p>{draft.title}</p>}
             <p>
@@ -51,13 +54,16 @@ const DraftBillPage = (props: RouteProps<"/ruu/:slug">) => {
             )}
             {isPresent(draft.dpr_page) && (
               <p>
-                <a href={draft.dpr_page}>Halaman DPR</a>
+                <a class={linkClass} href={draft.dpr_page}>
+                  Halaman DPR
+                </a>
               </p>
             )}
             <Show when={comparedVersions(draft)} keyed>
               {({ oldest, newest }) => (
                 <p>
                   <a
+                    class={linkClass}
                     href={slashed(
                       Router.paths
                         .ruu(props.params.slug)
@@ -93,6 +99,7 @@ const DraftBillPage = (props: RouteProps<"/ruu/:slug">) => {
                   <li id={document.id}>
                     {document.hasText ? (
                       <a
+                        class={linkClass}
                         href={slashed(
                           Router.paths.ruu(props.params.slug, document.id)
                         )}

@@ -7,6 +7,7 @@ import { draftChangesUrl, slashed } from "../lib/paths.ts";
 import { draftBillsQuery, overviewQuery } from "../lib/queries.ts";
 import { Router } from "../router.tsx";
 import { css } from "../styles/css.ts";
+import { linkClass, linkStyles } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 import { accessibility } from "../styles/visually-hidden.ts";
 
@@ -101,11 +102,13 @@ const Home = () => {
           </button>
         </form>
         <p class={css(styles.stats)}>
-          <a href={slashed(Router.paths.uu)}>
+          <a class={linkClass} href={slashed(Router.paths.uu)}>
             {overview().total.toLocaleString("id-ID")} undang-undang
           </a>{" "}
           ({overview().withText.toLocaleString("id-ID")} sebagai teks) ·{" "}
-          <a href={slashed(Router.paths.ruu)}>{drafts().length} RUU dilacak</a>
+          <a class={linkClass} href={slashed(Router.paths.ruu)}>
+            {drafts().length} RUU dilacak
+          </a>
         </p>
       </section>
 
@@ -117,7 +120,7 @@ const Home = () => {
               {(draft) => (
                 <li class={css(rowStyles.row)}>
                   <a
-                    class={css(rowStyles.title)}
+                    class={css(rowStyles.title, linkStyles.base)}
                     href={slashed(Router.paths.ruu(draft.slug))}
                   >
                     {draft.name}
@@ -132,7 +135,10 @@ const Home = () => {
                       {(changes) => (
                         <>
                           {" · "}
-                          <a href={draftChangesUrl(draft.slug, changes)}>
+                          <a
+                            class={linkClass}
+                            href={draftChangesUrl(draft.slug, changes)}
+                          >
                             lihat apa yang berubah
                           </a>
                         </>
@@ -148,7 +154,9 @@ const Home = () => {
           <h2>Undang-undang terbaru</h2>
           <LawRows laws={overview().recent.slice(0, LATEST_LAWS)} />
           <p class={css(styles.small)}>
-            <a href={slashed(Router.paths.uu)}>Semua undang-undang →</a>
+            <a class={linkClass} href={slashed(Router.paths.uu)}>
+              Semua undang-undang →
+            </a>
           </p>
         </section>
       </div>

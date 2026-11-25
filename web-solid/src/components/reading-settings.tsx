@@ -21,7 +21,7 @@ import {
 import type { ReaderText } from "../server/records/reader-text.ts";
 import { css } from "../styles/css.ts";
 import { reading } from "../styles/reading.ts";
-import { color, font, reader, size, space } from "../styles/tokens.stylex.ts";
+import { color, font, size, space, shadow } from "../styles/tokens.stylex.ts";
 
 const checked = ":is([data-checked])";
 
@@ -40,17 +40,17 @@ const styles = stylex.create({
     display: "grid",
     fontFamily: font.ui,
     fontWeight: 600,
-    minHeight: reader.tap,
-    minWidth: reader.tap,
+    minHeight: size.tap,
+    minWidth: size.tap,
   },
   pop: {
     padding: space.s4,
     borderColor: color.line,
-    borderRadius: reader.radiusMd,
+    borderRadius: size.radiusMd,
     borderStyle: "solid",
     borderWidth: 1,
-    backgroundColor: reader.raised,
-    boxShadow: reader.shadow,
+    backgroundColor: color.surface,
+    boxShadow: shadow.pop,
     boxSizing: "border-box",
     inlineSize: "min(23rem, calc(100vw - 2rem))",
     insetInlineEnd: 0,
@@ -85,18 +85,24 @@ const styles = stylex.create({
     borderRadius: 999,
     borderStyle: "solid",
     borderWidth: 1,
-    backgroundColor: { [checked]: reader.accent, default: "transparent" },
+    backgroundColor: {
+      [checked]: color.linkBackground,
+      default: "transparent",
+    },
     color: color.text,
     cursor: "pointer",
     fontFamily: "inherit",
     fontSize: size.sm,
-    minBlockSize: reader.tap,
+    minBlockSize: size.tap,
   },
   option: {
     padding: space.s2,
     borderRadius: size.radius,
     borderWidth: 0,
-    backgroundColor: { [checked]: reader.accent, default: "transparent" },
+    backgroundColor: {
+      [checked]: color.linkBackground,
+      default: "transparent",
+    },
     color: color.text,
     cursor: "pointer",
     display: "grid",

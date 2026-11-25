@@ -8,6 +8,7 @@ import { slashed } from "../lib/paths.ts";
 import { yearQuery } from "../lib/queries.ts";
 import { Router } from "../router.tsx";
 import { css } from "../styles/css.ts";
+import { linkStyles } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 import NotFound from "./not-found.tsx";
 
@@ -33,7 +34,10 @@ const LawYear = (props: RouteProps<"/uu/tahun/:tahun">) => {
         return (
           <main>
             <nav class={css(styles.crumbs)} aria-label="Lokasi">
-              <a class={css(styles.crumbLink)} href={slashed(Router.paths.uu)}>
+              <a
+                class={css(styles.crumbLink, linkStyles.base)}
+                href={slashed(Router.paths.uu)}
+              >
                 Undang-Undang
               </a>
               <span class={css(styles.separator)} aria-hidden="true">

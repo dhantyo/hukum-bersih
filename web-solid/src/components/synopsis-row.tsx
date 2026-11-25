@@ -6,6 +6,8 @@ import type {
   DraftComparisonRow,
 } from "../server/records/draft-comparison.ts";
 import { css } from "../styles/css.ts";
+import { linkStyles } from "../styles/link.ts";
+import { reading } from "../styles/reading.ts";
 import { synopsisStyles as styles } from "../styles/synopsis.ts";
 
 type Side = "a" | "b";
@@ -36,6 +38,7 @@ const memo = <Key extends string>(build: (key: Key) => string | undefined) => {
 
 const oldLineClass = memo((kind: Kind) =>
   css(
+    reading.law,
     styles.line,
     styles.sideLine,
     oldKindOf(kind) === "dihapus" && styles.removed,
@@ -45,6 +48,7 @@ const oldLineClass = memo((kind: Kind) =>
 
 const newLineClass = memo((kind: Kind) =>
   css(
+    reading.law,
     styles.line,
     styles.sideLine,
     newKindOf(kind) === "baru" && styles.added,
@@ -54,6 +58,7 @@ const newLineClass = memo((kind: Kind) =>
 
 const inlineLineClass = memo((kind: Kind) =>
   css(
+    reading.law,
     styles.line,
     styles.inlineLine,
     kind === "dihapus" && styles.removed,
@@ -71,7 +76,7 @@ const struckClass = css(styles.strike);
 const textNumberedClass = css(styles.text);
 const textFullClass = css(styles.textFull);
 const referenceClass = css(styles.ref);
-const referenceLinkClass = css(styles.refLink);
+const referenceLinkClass = css(styles.refLink, linkStyles.base);
 
 const Reference = (props: {
   line: DraftComparisonLine;
@@ -283,7 +288,11 @@ export const SynopsisRow = (props: {
   >
     <div class={css(styles.meta)}>
       <a
-        class={css(styles.status, STATUS_STYLE[props.row.status])}
+        class={css(
+          styles.status,
+          STATUS_STYLE[props.row.status],
+          linkStyles.base
+        )}
         href={`#${props.row.anchor}`}
         target="_self"
       >

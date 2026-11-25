@@ -12,6 +12,7 @@ import type {
   CollectionTimeline,
   TimelineEvent,
 } from "../server/records/collection-timeline.ts";
+import { linkClass } from "../styles/link.ts";
 import { CollectionCompare } from "./collection-compare.tsx";
 
 type LawEvent = Extract<TimelineEvent, { date: string | null }>;
@@ -38,7 +39,9 @@ const ChangedArticles = (props: { event: LawEvent }) => (
                 {(item) => (
                   <li>
                     {isPresent(item.href) ? (
-                      <a href={item.href}>{item.num}</a>
+                      <a class={linkClass} href={item.href}>
+                        {item.num}
+                      </a>
                     ) : (
                       item.num
                     )}
@@ -50,7 +53,7 @@ const ChangedArticles = (props: { event: LawEvent }) => (
         )}
       </For>
       {isPresent(props.event.compareHref) && (
-        <a href={props.event.compareHref}>
+        <a class={linkClass} href={props.event.compareHref}>
           Sebelum dan sesudah, pasal demi pasal →
         </a>
       )}
@@ -68,7 +71,9 @@ const LawEntry = (props: { event: LawEvent }) => (
     <p>{props.event.role}</p>
     <p>
       {isPresent(props.event.law.href) ? (
-        <a href={props.event.law.href}>{props.event.law.label}</a>
+        <a class={linkClass} href={props.event.law.href}>
+          {props.event.law.label}
+        </a>
       ) : (
         props.event.law.label
       )}
@@ -130,13 +135,13 @@ export const CollectionHistory = (props: {
     <h2 id="riwayat">Riwayat</h2>
     <TimelineList events={props.timeline.events} />
     <p>
-      <a href={props.timeline.base.href}>
+      <a class={linkClass} href={props.timeline.base.href}>
         Baca teks {props.timeline.base.label}
       </a>
       {props.timeline.detailed && (
         <>
           {" · "}
-          <a href={`${props.timeline.base.href}?bandingkan`}>
+          <a class={linkClass} href={`${props.timeline.base.href}?bandingkan`}>
             Rincian tiap perubahan, pasal demi pasal
           </a>
         </>

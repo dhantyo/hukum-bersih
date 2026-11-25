@@ -19,8 +19,9 @@ import type {
 } from "../server/law-comparison.ts";
 import type { ReaderText } from "../server/records/reader-text.ts";
 import { css } from "../styles/css.ts";
+import { linkClass, linkStyles } from "../styles/link.ts";
 import { reading } from "../styles/reading.ts";
-import { color, font, reader, size, space } from "../styles/tokens.stylex.ts";
+import { color, font, size, space } from "../styles/tokens.stylex.ts";
 import { AddedPasal, PasalComparison } from "./law-compare.tsx";
 
 const ASLI = ':is([data-format="asli"])';
@@ -100,7 +101,7 @@ const styles = stylex.create({
     },
     flexWrap: "wrap",
     fontFamily: font.ui,
-    minBlockSize: reader.tap,
+    minBlockSize: size.tap,
   },
   summaryTitle: { fontWeight: 600 },
   summaryMeta: { color: color.textMuted, fontSize: size.sm },
@@ -161,7 +162,7 @@ const styles = stylex.create({
       [stylex.when.ancestor(ASLI)]: "inherit",
     },
     fontSize: {
-      default: reader.textMd,
+      default: size.md,
       [stylex.when.ancestor(ASLI)]: "1em",
     },
   },
@@ -195,7 +196,7 @@ const styles = stylex.create({
       [stylex.when.ancestor(ASLI)]: "inherit",
     },
     fontSize: {
-      default: reader.textMd,
+      default: size.md,
       [stylex.when.ancestor(ASLI)]: "1em",
     },
     fontWeight: 600,
@@ -398,7 +399,9 @@ const ArticleNotes = (props: { notes: PasalNote[]; num: string }) => (
             <>
               {joiner(index(), list.length)}
               {isPresent(note.href) ? (
-                <a href={note.href}>{note.label}</a>
+                <a class={linkClass} href={note.href}>
+                  {note.label}
+                </a>
               ) : (
                 note.label
               )}
@@ -406,6 +409,7 @@ const ArticleNotes = (props: { notes: PasalNote[]; num: string }) => (
                 <>
                   {" ("}
                   <a
+                    class={linkClass}
                     href={`?bandingkan=${note.by}#pasal-${pasalKey(props.num)}`}
                   >
                     bandingkan
@@ -425,7 +429,7 @@ const ArticleNotes = (props: { notes: PasalNote[]; num: string }) => (
 
 const Permalink = (props: { target: string; label: string }) => (
   <a
-    class={css(styles.permalink)}
+    class={css(styles.permalink, linkStyles.base)}
     href={`#${props.target}`}
     target="_self"
     aria-label={`Tautan ke ${props.label}`}
@@ -614,7 +618,7 @@ const ExplanationEntry = (props: {
       >
         <span class={css(styles.pjPasal)}>
           {isPresent(key()) ? (
-            <a href={`#pasal-${key()}`} target="_self">
+            <a class={linkClass} href={`#pasal-${key()}`} target="_self">
               {label()}
             </a>
           ) : (

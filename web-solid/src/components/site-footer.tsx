@@ -3,6 +3,7 @@ import * as stylex from "@stylexjs/stylex";
 import { slashed } from "../lib/paths.ts";
 import { Router } from "../router.tsx";
 import { css } from "../styles/css.ts";
+import { linkClass } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 
 const styles = stylex.create({
@@ -40,11 +41,13 @@ export const SiteFooter = () => (
       </p>
       <p class={css(styles.note)}>
         Proyek terbuka:{" "}
-        <a href="https://github.com/dhantyo/hukum-bersih">
+        <a class={linkClass} href="https://github.com/dhantyo/hukum-bersih">
           kode dan data di GitHub
         </a>{" "}
         · data CC0 · kode AGPL-3.0 ·{" "}
-        <a href={slashed(Router.paths.tentang)}>tentang proyek ini</a>
+        <a class={linkClass} href={slashed(Router.paths.tentang)}>
+          tentang proyek ini
+        </a>
       </p>
     </div>
   </footer>

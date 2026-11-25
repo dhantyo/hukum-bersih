@@ -6,6 +6,7 @@ import { useNoindex, usePageTitle } from "../lib/head.ts";
 import { lawUrl } from "../lib/paths.ts";
 import { perubahanQuery } from "../lib/queries.ts";
 import { isPresent } from "../lib/text.ts";
+import { linkClass } from "../styles/link.ts";
 import NotFound from "./not-found.tsx";
 
 const OLD_ANCHOR = /^(?<law>[a-z]+_[0-9a-z]+_\d{4})(?:-pasal-(?<pasal>.+))?$/iu;
@@ -49,7 +50,7 @@ const PerubahanPage = (props: RouteProps<"/uu/:nomor/:tahun/perubahan">) => {
           <main>
             <p>
               Halaman ini sudah pindah.{" "}
-              <a href={`${record.target}?bandingkan`}>
+              <a class={linkClass} href={`${record.target}?bandingkan`}>
                 Buka perbandingan versi
               </a>
               .

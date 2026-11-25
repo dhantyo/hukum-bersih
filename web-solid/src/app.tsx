@@ -8,8 +8,6 @@ import { Router } from "./router.tsx";
 import { css } from "./styles/css.ts";
 import { size, space } from "./styles/tokens.stylex.ts";
 
-import "./styles/base.css";
-
 const styles = stylex.create({
   page: {
     marginInline: "auto",

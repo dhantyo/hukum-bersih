@@ -14,6 +14,7 @@ import { draftComparisonQuery } from "../lib/queries.ts";
 import { Router } from "../router.tsx";
 import type { DraftDocument } from "../server/records/draft.ts";
 import { css } from "../styles/css.ts";
+import { linkClass } from "../styles/link.ts";
 import { synopsisStyles as styles } from "../styles/synopsis.ts";
 import NotFound from "./not-found.tsx";
 
@@ -26,7 +27,10 @@ const VersionCard = (props: {
 }) => (
   <div class={css(styles.card)}>
     <div class={css(styles.muted)}>{props.heading}</div>
-    <a href={slashed(Router.paths.ruu(props.slug, props.document.id))}>
+    <a
+      class={linkClass}
+      href={slashed(Router.paths.ruu(props.slug, props.document.id))}
+    >
       <strong>{draftVersionName(props.document)}</strong>
     </a>
     <DraftProvenance document={props.document} />
@@ -51,9 +55,14 @@ const DraftComparisonPage = (props: RouteProps<"/ruu/:slug/beda/:pair">) => {
         return (
           <main class={css(styles.page)}>
             <nav aria-label="Lokasi">
-              <a href={slashed(Router.paths.ruu)}>RUU</a>
+              <a class={linkClass} href={slashed(Router.paths.ruu)}>
+                RUU
+              </a>
               <span aria-hidden="true"> › </span>
-              <a href={slashed(Router.paths.ruu(props.params.slug))}>
+              <a
+                class={linkClass}
+                href={slashed(Router.paths.ruu(props.params.slug))}
+              >
                 {record.name}
               </a>
               <span aria-hidden="true"> › </span>

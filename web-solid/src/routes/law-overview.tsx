@@ -7,6 +7,7 @@ import { slashed } from "../lib/paths.ts";
 import { overviewQuery } from "../lib/queries.ts";
 import { Router } from "../router.tsx";
 import { css } from "../styles/css.ts";
+import { linkClass } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 
 const styles = stylex.create({
@@ -52,7 +53,9 @@ const LawOverview = () => {
           {(source, index) => (
             <>
               <Show when={index() > 0}>{" dan "}</Show>
-              <a href={`https://${source.host}`}>{source.name}</a>
+              <a class={linkClass} href={`https://${source.host}`}>
+                {source.name}
+              </a>
             </>
           )}
         </For>
@@ -70,7 +73,12 @@ const LawOverview = () => {
                 <For each={decade.years}>
                   {({ year, count }) => (
                     <li class={css(styles.yearItem)}>
-                      <a href={slashed(Router.paths.uu.tahun(year))}>{year}</a>{" "}
+                      <a
+                        class={linkClass}
+                        href={slashed(Router.paths.uu.tahun(year))}
+                      >
+                        {year}
+                      </a>{" "}
                       <span class={css(styles.count)}>{count}</span>
                     </li>
                   )}

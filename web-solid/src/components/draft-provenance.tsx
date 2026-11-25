@@ -6,6 +6,7 @@ import {
 } from "../../../web/src/lib/labels.ts";
 import { isPresent } from "../lib/text.ts";
 import type { DraftDocument } from "../server/records/draft.ts";
+import { linkClass } from "../styles/link.ts";
 
 export const draftDocumentTitle = (document: DraftDocument) =>
   `${DOC_TYPE[document.type] ?? document.type} · ${tanggal(document.date)}`;
@@ -24,7 +25,7 @@ export const DraftProvenance = (props: { document: DraftDocument }) => {
       {isPresent(props.document.note) && <p>{props.document.note}</p>}
       {isPresent(props.document.source_url) && (
         <p>
-          <a href={props.document.source_url}>
+          <a class={linkClass} href={props.document.source_url}>
             Sumber
             {isPresent(props.document.obtained_by)
               ? ` (${props.document.obtained_by})`
@@ -34,7 +35,9 @@ export const DraftProvenance = (props: { document: DraftDocument }) => {
       )}
       {isPresent(props.document.archive_url) && (
         <p>
-          <a href={props.document.archive_url}>PDF arsip</a>
+          <a class={linkClass} href={props.document.archive_url}>
+            PDF arsip
+          </a>
         </p>
       )}
     </>

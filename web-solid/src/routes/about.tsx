@@ -3,6 +3,7 @@ import * as stylex from "@stylexjs/stylex";
 import { Badge } from "../components/badge.tsx";
 import { usePageDescription, usePageTitle } from "../lib/head.ts";
 import { css } from "../styles/css.ts";
+import { linkClass } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 
 const styles = stylex.create({
@@ -33,22 +34,30 @@ const About = () => {
       <h2>Dari mana datanya?</h2>
       <p>
         Undang-undang diambil dari{" "}
-        <a href="https://peraturan.bpk.go.id">peraturan.bpk.go.id</a>, Database
-        Peraturan JDIH Badan Pemeriksa Keuangan (BPK). Undang-undang yang kami
-        impor lebih dulu berasal dari{" "}
-        <a href="https://peraturan.go.id">peraturan.go.id</a>, situs peraturan
-        yang dikelola Direktorat Jenderal Peraturan Perundang-undangan,
-        Kementerian Hukum. Sumber setiap undang-undang tercantum di halamannya.
-        Dokumen RUU diambil dari halaman legislasi DPR. Versi yang sudah dihapus
-        dari situs resmi diambil dari Wayback Machine dan selalu diberi label{" "}
-        <Badge tone="archive">Arsip</Badge>. Salinan dari media diberi label{" "}
-        <Badge tone="media">Media</Badge>. Versi yang diketahui ada tetapi belum
-        ditemukan berkasnya tetap dicantumkan dan tidak pernah direka ulang.
+        <a class={linkClass} href="https://peraturan.bpk.go.id">
+          peraturan.bpk.go.id
+        </a>
+        , Database Peraturan JDIH Badan Pemeriksa Keuangan (BPK). Undang-undang
+        yang kami impor lebih dulu berasal dari{" "}
+        <a class={linkClass} href="https://peraturan.go.id">
+          peraturan.go.id
+        </a>
+        , situs peraturan yang dikelola Direktorat Jenderal Peraturan
+        Perundang-undangan, Kementerian Hukum. Sumber setiap undang-undang
+        tercantum di halamannya. Dokumen RUU diambil dari halaman legislasi DPR.
+        Versi yang sudah dihapus dari situs resmi diambil dari Wayback Machine
+        dan selalu diberi label <Badge tone="archive">Arsip</Badge>. Salinan
+        dari media diberi label <Badge tone="media">Media</Badge>. Versi yang
+        diketahui ada tetapi belum ditemukan berkasnya tetap dicantumkan dan
+        tidak pernah direka ulang.
       </p>
       <p>
         Untuk setiap PDF asli kami mencatat alamat sumber dan sidik jari
         (SHA-256) agar dapat dipastikan berkasnya tidak berubah. Sebagian
-        salinan lama tersimpan di <a href="https://archive.org">archive.org</a>{" "}
+        salinan lama tersimpan di{" "}
+        <a class={linkClass} href="https://archive.org">
+          archive.org
+        </a>{" "}
         dan ditautkan di halaman undang-undangnya.
       </p>
 
@@ -71,9 +80,12 @@ const About = () => {
       <h2>Terbuka</h2>
       <p>
         Semua kode dan data ada di{" "}
-        <a href="https://github.com/dhantyo/hukum-bersih">GitHub</a>. Data
-        berlisensi CC0 (domain publik), kode berlisensi AGPL-3.0. Teks peraturan
-        perundang-undangan tidak dilindungi hak cipta (UU 28/2014 Pasal 42).
+        <a class={linkClass} href="https://github.com/dhantyo/hukum-bersih">
+          GitHub
+        </a>
+        . Data berlisensi CC0 (domain publik), kode berlisensi AGPL-3.0. Teks
+        peraturan perundang-undangan tidak dilindungi hak cipta (UU 28/2014
+        Pasal 42).
       </p>
       <p class={css(styles.note)}>Ini bukan nasihat hukum.</p>
     </main>

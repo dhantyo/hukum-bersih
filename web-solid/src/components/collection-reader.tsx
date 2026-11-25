@@ -4,6 +4,7 @@ import type {
   CollectionComparisonView,
 } from "../lib/collections.ts";
 import { isPresent } from "../lib/text.ts";
+import { linkClass } from "../styles/link.ts";
 import { readerClass } from "../styles/reading.ts";
 import { CollectionCompare } from "./collection-compare.tsx";
 import { CollectionFacts } from "./collection-facts.tsx";
@@ -19,11 +20,16 @@ const Breadcrumbs = (props: {
   date?: string | null;
 }) => (
   <nav aria-label="Lokasi">
-    <a href="/koleksi/">Koleksi</a>
+    <a class={linkClass} href="/koleksi/">
+      Koleksi
+    </a>
     <span aria-hidden="true"> › </span>
     {props.dated ? (
       <>
-        <a href={props.collection.path.replace(/[^/]+\/$/u, "")}>
+        <a
+          class={linkClass}
+          href={props.collection.path.replace(/[^/]+\/$/u, "")}
+        >
           {props.collection.name}
         </a>
         <span aria-hidden="true"> › </span>

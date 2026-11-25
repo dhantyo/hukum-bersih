@@ -6,13 +6,8 @@ import { isPresent } from "../lib/text.ts";
 import type { VersionComparison } from "../server/law-comparison.ts";
 import type { LawRecord } from "../server/records/law.ts";
 import { css } from "../styles/css.ts";
-import {
-  color,
-  reader,
-  size,
-  space,
-  synopsis,
-} from "../styles/tokens.stylex.ts";
+import { linkClass, linkStyles } from "../styles/link.ts";
+import { color, size, space } from "../styles/tokens.stylex.ts";
 import { DocLayout } from "./doc-layout.tsx";
 import { KoleksiBox, RelationsBanner, StatusBanner } from "./law-banners.tsx";
 import { CompareBar } from "./law-compare.tsx";
@@ -33,14 +28,14 @@ const styles = stylex.create({
     borderRadius: 999,
     borderStyle: "solid",
     borderWidth: 1,
-    paddingBlock: synopsis.hairline,
+    paddingBlock: space.hairline,
     paddingInline: space.s2,
     fontSize: size.sm,
     fontWeight: 600,
   },
   muted: { color: color.textMuted, fontSize: size.sm },
   notice: {
-    borderRadius: reader.radiusMd,
+    borderRadius: size.radiusMd,
     paddingBlock: space.s3,
     paddingInline: space.s4,
     backgroundColor: color.backgroundSubtle,
@@ -101,7 +96,7 @@ const HeadMeta = (props: { law: LawRecord }) => (
     </Show>
     <Show when={props.law.amendmentCount > 0}>
       <a
-        class={css(styles.badge)}
+        class={css(styles.badge, linkStyles.base)}
         href={
           props.law.family === undefined
             ? undefined
@@ -189,7 +184,7 @@ const Body = (props: { law: LawRecord; comparison?: VersionComparison }) => (
           </p>
           <Show when={props.law.pdf}>
             {(pdf) => (
-              <a class={css(styles.button)} href={pdf()}>
+              <a class={css(styles.button, linkStyles.base)} href={pdf()}>
                 Buka PDF resmi
               </a>
             )}
@@ -202,7 +197,10 @@ const Body = (props: { law: LawRecord; comparison?: VersionComparison }) => (
           <p class={css(styles.notice)} data-pagefind-ignore>
             Teks ini diambil otomatis dari PDF resmi dan bisa memuat kesalahan
             baca. Bila ragu, periksa{" "}
-            <a href={props.law.pdf ?? props.law.source}>PDF resminya</a>.
+            <a class={linkClass} href={props.law.pdf ?? props.law.source}>
+              PDF resminya
+            </a>
+            .
           </p>
           <Show when={props.comparison}>
             {(comparison) => <CompareBar comparison={comparison()} />}

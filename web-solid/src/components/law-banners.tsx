@@ -5,13 +5,8 @@ import { tanggal } from "../../../web/src/lib/labels.ts";
 import { isPresent } from "../lib/text.ts";
 import type { Family, LawRecord } from "../server/records/law.ts";
 import { css } from "../styles/css.ts";
-import {
-  color,
-  reader,
-  size,
-  space,
-  synopsis,
-} from "../styles/tokens.stylex.ts";
+import { linkClass } from "../styles/link.ts";
+import { color, size, space } from "../styles/tokens.stylex.ts";
 
 const styles = stylex.create({
   banner: {
@@ -20,7 +15,7 @@ const styles = stylex.create({
       ":is([data-tone=changed], [data-tone=relations])": color.warn,
       ":is([data-tone=gone])": color.gone,
     },
-    borderRadius: reader.radiusMd,
+    borderRadius: size.radiusMd,
     borderStyle: "solid",
     borderWidth: 1,
     paddingBlock: space.s3,
@@ -57,10 +52,13 @@ const styles = stylex.create({
     },
     borderWidth: 1,
     gap: space.s1,
-    paddingBlock: synopsis.hairline,
+    paddingBlock: space.hairline,
     paddingInline: space.s2,
     alignItems: "baseline",
-    backgroundColor: { default: null, ":is([data-kind=here])": reader.accent },
+    backgroundColor: {
+      default: null,
+      ":is([data-kind=here])": color.linkBackground,
+    },
     color: {
       default: null,
       ":is([data-kind=missing], [data-kind=pendahulu])": color.textMuted,
@@ -86,7 +84,9 @@ const Names = (props: {
       <>
         {index() > 0 && (index() === props.items.length - 1 ? " dan " : ", ")}
         {isPresent(item.href) ? (
-          <a href={item.href}>{item.label}</a>
+          <a class={linkClass} href={item.href}>
+            {item.label}
+          </a>
         ) : (
           item.label
         )}
@@ -117,8 +117,11 @@ const Gone = (props: { law: LawRecord }) => {
           </>
         ) : (
           <>
-            Menurut <a href={props.law.source}>{props.law.sourceName}</a>,
-            statusnya{" "}
+            Menurut{" "}
+            <a class={linkClass} href={props.law.source}>
+              {props.law.sourceName}
+            </a>
+            , statusnya{" "}
             {props.law.status === "dicabut" ? "dicabut" : "tidak berlaku"}.
           </>
         )}
@@ -160,7 +163,7 @@ const Changed = (props: { law: LawRecord }) => {
           {(href) => (
             <>
               {" "}
-              <a href={href()}>
+              <a class={linkClass} href={href()}>
                 {isPresent(latest())
                   ? "Baca versi gabungan terbaru →"
                   : "Lihat riwayat perubahan →"}
@@ -201,7 +204,9 @@ export const RelationsBanner = (props: { law: LawRecord }) => (
           <p class={css(styles.line, styles.next)}>
             Undang-undang ini <strong>{item.verb}</strong>{" "}
             {isPresent(item.href) ? (
-              <a href={item.href}>{item.label}</a>
+              <a class={linkClass} href={item.href}>
+                {item.label}
+              </a>
             ) : (
               item.label
             )}
@@ -212,7 +217,9 @@ export const RelationsBanner = (props: { law: LawRecord }) => (
                 {isPresent(item.href) && (
                   <>
                     {" ("}
-                    <a href={`${item.href}#riwayat`}>lihat riwayat</a>
+                    <a class={linkClass} href={`${item.href}#riwayat`}>
+                      lihat riwayat
+                    </a>
                     {")"}
                   </>
                 )}
@@ -239,7 +246,7 @@ export const KoleksiBox = (props: { family: Family }) => {
       data-pagefind-ignore
     >
       <p class={css(styles.line)}>
-        <a href={url()}>
+        <a class={linkClass} href={url()}>
           <strong>Koleksi {props.family.name}</strong>
         </a>{" "}
         <span class={css(styles.muted)}>
@@ -259,7 +266,9 @@ export const KoleksiBox = (props: { family: Family }) => {
               ) : (
                 <>
                   {isPresent(step.href) ? (
-                    <a href={step.href}>{step.label}</a>
+                    <a class={linkClass} href={step.href}>
+                      {step.label}
+                    </a>
                   ) : (
                     step.label
                   )}
@@ -279,8 +288,12 @@ export const KoleksiBox = (props: { family: Family }) => {
         </p>
       </Show>
       <p class={css(styles.links)}>
-        <a href={`${url()}#riwayat`}>Riwayat koleksi →</a>
-        <a href={`${url()}#banding`}>Bandingkan versi →</a>
+        <a class={linkClass} href={`${url()}#riwayat`}>
+          Riwayat koleksi →
+        </a>
+        <a class={linkClass} href={`${url()}#banding`}>
+          Bandingkan versi →
+        </a>
       </p>
     </aside>
   );

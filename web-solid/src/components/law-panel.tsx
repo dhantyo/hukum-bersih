@@ -5,7 +5,8 @@ import { tanggal } from "../../../web/src/lib/labels.ts";
 import { isPresent } from "../lib/text.ts";
 import type { Family } from "../server/records/law.ts";
 import { css } from "../styles/css.ts";
-import { color, reader, size, space } from "../styles/tokens.stylex.ts";
+import { linkClass, linkStyles } from "../styles/link.ts";
+import { color, size, space } from "../styles/tokens.stylex.ts";
 
 const styles = stylex.create({
   panelTitle: {
@@ -36,7 +37,10 @@ const styles = stylex.create({
   row: {
     borderRadius: size.radius,
     paddingBlock: space.s1,
-    backgroundColor: { default: null, ":is([data-here])": reader.accent },
+    backgroundColor: {
+      default: null,
+      ":is([data-here])": color.linkBackground,
+    },
     paddingInlineStart: space.s5,
     position: "relative",
   },
@@ -139,7 +143,7 @@ const Version = (props: { row: Family["versions"][number] }) => {
         aria-hidden="true"
       />
       {isPresent(props.row.href) && !props.row.here ? (
-        <a class={css(styles.entry)} href={props.row.href}>
+        <a class={css(styles.entry, linkStyles.base)} href={props.row.href}>
           {body()}
         </a>
       ) : (
@@ -175,7 +179,7 @@ export const Versions = (props: { family: Family }) => (
       <For each={props.family.versions}>{(row) => <Version row={row} />}</For>
     </ol>
     <Show when={props.family.comparable}>
-      <a class={css(styles.compare)} href="?bandingkan">
+      <a class={css(styles.compare, linkStyles.base)} href="?bandingkan">
         Bandingkan versi
       </a>
     </Show>
@@ -202,7 +206,9 @@ export const Facts = (props: { title: string; facts: Fact[] }) => (
             <dt class={css(styles.term)}>{fact.label}</dt>
             <dd class={css(styles.definition)}>
               {isPresent(fact.href) ? (
-                <a href={fact.href}>{fact.value}</a>
+                <a class={linkClass} href={fact.href}>
+                  {fact.value}
+                </a>
               ) : (
                 fact.value
               )}

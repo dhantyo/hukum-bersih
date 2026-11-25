@@ -2,6 +2,7 @@ import { createEffect, createSignal, For, Show } from "solid-js";
 import * as v from "valibot";
 
 import { searchHitLink } from "../lib/schemas.ts";
+import { linkClass } from "../styles/link.ts";
 
 interface SearchHit {
   url: string;
@@ -37,7 +38,9 @@ const findText = async (release: string, query: string) => {
 
 const SearchResult = (props: { hit: SearchHit }) => (
   <li>
-    <a href={props.hit.url}>{props.hit.meta.title ?? props.hit.url}</a>
+    <a class={linkClass} href={props.hit.url}>
+      {props.hit.meta.title ?? props.hit.url}
+    </a>
     <ul>
       <For
         each={props.hit.sub_results.filter((article) =>
@@ -46,7 +49,9 @@ const SearchResult = (props: { hit: SearchHit }) => (
       >
         {(article) => (
           <li>
-            <a href={article.url}>{article.title}</a>
+            <a class={linkClass} href={article.url}>
+              {article.title}
+            </a>
           </li>
         )}
       </For>

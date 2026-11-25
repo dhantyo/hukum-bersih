@@ -9,13 +9,8 @@ import { isPresent } from "../lib/text.ts";
 import type { Mark, VersionComparison } from "../server/law-comparison.ts";
 import type { ReaderText } from "../server/records/reader-text.ts";
 import { css } from "../styles/css.ts";
-import {
-  color,
-  reader,
-  size,
-  space,
-  synopsis,
-} from "../styles/tokens.stylex.ts";
+import { linkStyles } from "../styles/link.ts";
+import { color, size, space } from "../styles/tokens.stylex.ts";
 import { MarkIcon } from "./law-compare.tsx";
 
 const NO_PENJELASAN = ':is([data-penjelasan="sembunyi"])';
@@ -97,10 +92,10 @@ const styles = stylex.create({
     display: "flex",
     fontSize: size.xs,
     fontWeight: 600,
-    marginBlockStart: synopsis.hairline,
+    marginBlockStart: space.hairline,
   },
   count: {
-    gap: synopsis.hairline,
+    gap: space.hairline,
     alignItems: "center",
     display: "inline-flex",
   },
@@ -123,18 +118,18 @@ const styles = stylex.create({
       ":is([data-mk=del])": "line-through",
     },
     backgroundColor: {
-      [current]: reader.accent,
+      [current]: color.linkBackground,
       default: null,
-      ":is([data-mk=del])": synopsis.delBackground,
-      ":is([data-mk=ins])": synopsis.insBackground,
-      ":is([data-mk=mod])": reader.modBg,
+      ":is([data-mk=del])": color.delBackground,
+      ":is([data-mk=ins])": color.insBackground,
+      ":is([data-mk=mod])": color.modBackground,
     },
     color: {
       [current]: color.link,
       default: color.text,
-      ":is([data-mk=del])": synopsis.delText,
-      ":is([data-mk=ins])": synopsis.insText,
-      ":is([data-mk=mod])": reader.modText,
+      ":is([data-mk=del])": color.delText,
+      ":is([data-mk=ins])": color.insText,
+      ":is([data-mk=mod])": color.modText,
     },
     display: "grid",
     fontSize: size.xs,
@@ -245,7 +240,7 @@ const PasalGrid = (props: { cells: Cell[]; label: string }) => (
       {(cell) => (
         <li>
           <a
-            class={css(styles.cell)}
+            class={css(styles.cell, linkStyles.base)}
             href={cell.href}
             target="_self"
             data-pasal={cell.id}
@@ -276,7 +271,7 @@ const Chapter = (props: {
           <a
             href={`#${props.chapter.eId}`}
             target="_self"
-            class={css(styles.chapterLink)}
+            class={css(styles.chapterLink, linkStyles.base)}
             data-ch-link={props.chapter.eId}
           >
             <span class={css(styles.label)}>Bab {props.chapter.num}</span>
@@ -458,7 +453,7 @@ export const Toc = (props: {
             <a
               href="#penjelasan"
               target="_self"
-              class={css(styles.chapterLink)}
+              class={css(styles.chapterLink, linkStyles.base)}
             >
               <span class={css(styles.label)}>Penjelasan</span>
             </a>

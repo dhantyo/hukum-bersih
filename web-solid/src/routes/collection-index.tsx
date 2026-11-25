@@ -2,6 +2,7 @@ import { createMemo, For } from "solid-js";
 
 import { useNoindex, usePageTitle } from "../lib/head.ts";
 import { collectionsQuery } from "../lib/queries.ts";
+import { linkClass } from "../styles/link.ts";
 
 const amendedText = (count: number) => `diubah ${count}×`;
 
@@ -28,7 +29,7 @@ const CollectionIndex = () => {
         <For each={named()}>
           {(collection) => (
             <li>
-              <a href={collection.u}>
+              <a class={linkClass} href={collection.u}>
                 <strong>{collection.name}</strong>
                 <span> {collection.t}</span>
                 <span>
@@ -46,7 +47,9 @@ const CollectionIndex = () => {
         <For each={other()}>
           {(collection) => (
             <li>
-              <a href={collection.u}>{collection.name}</a>{" "}
+              <a class={linkClass} href={collection.u}>
+                {collection.name}
+              </a>{" "}
               <small>
                 {collection.cite} · {amendedText(collection.k)}
               </small>

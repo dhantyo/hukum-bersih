@@ -11,6 +11,7 @@ import { usePageTitle } from "../lib/head.ts";
 import { slashed } from "../lib/paths.ts";
 import { draftTextQuery } from "../lib/queries.ts";
 import { Router } from "../router.tsx";
+import { linkClass } from "../styles/link.ts";
 import { readerClass } from "../styles/reading.ts";
 import NotFound from "./not-found.tsx";
 
@@ -28,7 +29,10 @@ const DraftDocument = (props: RouteProps<"/ruu/:slug/:doc">) => {
 
         return (
           <main class={readerClass}>
-            <a href={slashed(Router.paths.ruu(props.params.slug))}>
+            <a
+              class={linkClass}
+              href={slashed(Router.paths.ruu(props.params.slug))}
+            >
               {record.name}
             </a>
             <h1>{draftDocumentTitle(record.document)}</h1>

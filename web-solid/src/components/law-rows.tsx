@@ -4,6 +4,7 @@ import { For, Show } from "solid-js";
 import { isPresent } from "../lib/text.ts";
 import type { LawRow } from "../server/records/listings.ts";
 import { css } from "../styles/css.ts";
+import { linkStyles } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 import { Badge } from "./badge.tsx";
 
@@ -35,7 +36,7 @@ export const LawRows = (props: { laws: LawRow[] }) => (
     <For each={props.laws}>
       {(law) => (
         <li class={css(rowStyles.row)}>
-          <a class={css(rowStyles.title)} href={law.u}>
+          <a class={css(rowStyles.title, linkStyles.base)} href={law.u}>
             {law.title}
           </a>
           <div class={css(rowStyles.meta)}>

@@ -3,6 +3,7 @@ import { For } from "solid-js";
 import { tanggal } from "../../../web/src/lib/labels.ts";
 import { isPresent } from "../lib/text.ts";
 import type { CollectionVersion } from "../server/records/collection-version.ts";
+import { linkClass } from "../styles/link.ts";
 
 type Version = CollectionVersion["versions"][number];
 
@@ -39,7 +40,7 @@ export const CollectionVersions = (props: {
         {(version) => (
           <li>
             {isPresent(version.href) && version.href !== props.current ? (
-              <a href={version.href}>
+              <a class={linkClass} href={version.href}>
                 <VersionName version={version} />
               </a>
             ) : (
@@ -58,7 +59,7 @@ export const CollectionVersions = (props: {
     </ol>
     {props.comparable && (
       <p>
-        <a href="#banding" target="_self">
+        <a class={linkClass} href="#banding" target="_self">
           Bandingkan versi
         </a>
       </p>

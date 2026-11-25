@@ -5,6 +5,7 @@ import { Show, For } from "solid-js";
 import { slashed } from "../lib/paths.ts";
 import { Router } from "../router.tsx";
 import { css } from "../styles/css.ts";
+import { linkStyles } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 import { accessibility } from "../styles/visually-hidden.ts";
 
@@ -99,7 +100,11 @@ const SectionLink = (props: { href: string; label: string }) => {
 
   return (
     <a
-      class={css(styles.link, link.active() && styles.linkActive)}
+      class={css(
+        styles.link,
+        link.active() && styles.linkActive,
+        linkStyles.base
+      )}
       href={props.href}
       aria-current={link.active() ? "page" : undefined}
     >
@@ -114,12 +119,12 @@ export const SiteHeader = (props: { pending: boolean }) => {
 
   return (
     <>
-      <a class={css(styles.skip)} href="#main">
+      <a class={css(styles.skip, linkStyles.base)} href="#main">
         Langsung ke isi
       </a>
       <header class={css(styles.header)}>
         <div class={css(styles.bar)}>
-          <a class={css(styles.brand)} href={Router.paths()}>
+          <a class={css(styles.brand, linkStyles.base)} href={Router.paths()}>
             Hukum Bersih
           </a>
           <nav class={css(styles.nav)} aria-label="Utama">

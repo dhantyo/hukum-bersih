@@ -9,6 +9,7 @@ import { slashed } from "../lib/paths.ts";
 import { searchQuery } from "../lib/queries.ts";
 import { searchPage } from "../lib/schemas.ts";
 import { Router } from "../router.tsx";
+import { linkClass } from "../styles/link.ts";
 
 const SearchPage = (props: RouteProps<"/cari">) => {
   usePageTitle(() => "Cari");
@@ -42,7 +43,9 @@ const SearchPage = (props: RouteProps<"/cari">) => {
                 <For each={catalog.articles}>
                   {(article) => (
                     <li>
-                      <a href={article.url}>{article.label}</a>
+                      <a class={linkClass} href={article.url}>
+                        {article.label}
+                      </a>
                     </li>
                   )}
                 </For>
@@ -54,7 +57,9 @@ const SearchPage = (props: RouteProps<"/cari">) => {
                 <For each={catalog.collections}>
                   {(collection) => (
                     <li>
-                      <a href={collection.u}>{collection.name}</a>
+                      <a class={linkClass} href={collection.u}>
+                        {collection.name}
+                      </a>
                     </li>
                   )}
                 </For>

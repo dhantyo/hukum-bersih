@@ -3,7 +3,8 @@ import * as stylex from "@stylexjs/stylex";
 import { For, onSettled } from "solid-js";
 
 import { css } from "../styles/css.ts";
-import { color, reader, size, space } from "../styles/tokens.stylex.ts";
+import { linkClass } from "../styles/link.ts";
+import { color, size, space } from "../styles/tokens.stylex.ts";
 
 const styles = stylex.create({
   wrap: {
@@ -58,7 +59,7 @@ const styles = stylex.create({
     display: { default: "none", "@media (max-width: 960px)": "block" },
     fontWeight: 600,
     marginBlockEnd: space.s3,
-    minBlockSize: reader.tap,
+    minBlockSize: size.tap,
   },
   main: { minInlineSize: 0 },
 });
@@ -98,7 +99,9 @@ export const DocLayout = (props: {
               {crumb.href === undefined ? (
                 <span>{crumb.label}</span>
               ) : (
-                <a href={crumb.href}>{crumb.label}</a>
+                <a class={linkClass} href={crumb.href}>
+                  {crumb.label}
+                </a>
               )}
             </>
           )}

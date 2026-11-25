@@ -6,6 +6,7 @@ import { slashed } from "../lib/paths.ts";
 import { draftBillsQuery } from "../lib/queries.ts";
 import { Router } from "../router.tsx";
 import { css } from "../styles/css.ts";
+import { linkClass } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 
 const styles = stylex.create({
@@ -43,7 +44,7 @@ const DraftIndex = () => {
         <For each={bills()}>
           {(bill) => (
             <li class={css(styles.card)}>
-              <a href={slashed(Router.paths.ruu(bill.slug))}>
+              <a class={linkClass} href={slashed(Router.paths.ruu(bill.slug))}>
                 <strong>{bill.name}</strong>
               </a>
               <div class={css(styles.small)}>{bill.title}</div>
