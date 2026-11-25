@@ -1,9 +1,4 @@
 import * as stylex from "@stylexjs/stylex";
-import {
-  Collapsible,
-  CollapsiblePanel,
-  CollapsibleTrigger,
-} from "@ui-sdk/solid/collapsible";
 import { For } from "solid-js";
 
 import type { CollectionComparisonView } from "../lib/collections.ts";
@@ -15,6 +10,7 @@ import type {
 } from "../server/records/collection-timeline.ts";
 import { css } from "../styles/css.ts";
 import { linkClass, linkStyles } from "../styles/link.ts";
+import { fold } from "../styles/markers.stylex.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 import { Badge } from "./badge.tsx";
 import { CollectionCompare } from "./collection-compare.tsx";
@@ -30,7 +26,7 @@ import type { EventTone } from "./history-timeline.tsx";
 
 type LawEvent = Extract<TimelineEvent, { date: string | null }>;
 
-const OPEN = ":is([data-open])";
+const CLOSED = ":not([open])";
 
 const styles = stylex.create({
   eyebrow: {
@@ -96,6 +92,7 @@ const styles = stylex.create({
     borderRadius: size.radiusMd,
     borderWidth: 0,
     gap: `${space.s2} ${space.s4}`,
+    listStyle: "none",
     paddingBlock: space.s2,
     paddingInline: space.s3,
     alignItems: "center",
@@ -125,7 +122,10 @@ const styles = stylex.create({
     fontWeight: 600,
     whiteSpace: "nowrap",
     "::after": {
-      content: { [OPEN]: '" ▴"', default: '" ▾"' },
+      content: {
+        default: '" ▴"',
+        [stylex.when.ancestor(CLOSED, fold)]: '" ▾"',
+      },
     },
   },
   groups: {
@@ -202,8 +202,8 @@ const chipStyle = {
 } as const;
 
 const ChangedArticles = (props: { event: LawEvent }) => (
-  <Collapsible class={css(styles.box)}>
-    <CollapsibleTrigger class={css(styles.trigger)}>
+  <details class={css(styles.box, fold)}>
+    <summary class={css(styles.trigger)}>
       <span class={css(styles.counts)}>
         <For each={props.event.changes}>
           {(group) => (
@@ -215,8 +215,8 @@ const ChangedArticles = (props: { event: LawEvent }) => (
         </For>
       </span>
       <span class={css(styles.more)}>Daftar pasal</span>
-    </CollapsibleTrigger>
-    <CollapsiblePanel class={css(styles.groups)} hiddenUntilFound>
+    </summary>
+    <div class={css(styles.groups)}>
       <For each={props.event.changes}>
         {(group) => (
           <section>
@@ -256,8 +256,8 @@ const ChangedArticles = (props: { event: LawEvent }) => (
           Sebelum dan sesudah, pasal demi pasal →
         </a>
       )}
-    </CollapsiblePanel>
-  </Collapsible>
+    </div>
+  </details>
 );
 
 const LawEntry = (props: { event: LawEvent }) => (
