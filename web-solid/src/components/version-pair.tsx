@@ -37,7 +37,7 @@ const styles = stylex.create({
     borderStyle: "solid",
     borderWidth: 1,
     gap: space.s1,
-    paddingBlock: 0,
+    paddingBlock: space.hairline,
     paddingInline: `${space.s2} ${space.s1}`,
     alignItems: "center",
     backgroundColor: color.background,
@@ -222,7 +222,12 @@ export const VersionPair = (props: {
               ? document.activeElement.dataset.version
               : undefined;
           setOrder(next);
-          open(idOf(next[0] ?? "dari"), idOf(next[1] ?? "bandingkan"));
+          const from = idOf(next[0] ?? "dari");
+          const to = idOf(next[1] ?? "bandingkan");
+
+          setTimeout(() => {
+            open(from, to);
+          }, 0);
         }}
       >
         {(state) => (
