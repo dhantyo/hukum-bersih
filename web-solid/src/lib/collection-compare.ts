@@ -31,6 +31,7 @@ export interface ChangedPasal {
 export interface VersionChoice {
   id: string;
   label: string;
+  cite: string;
   date: string | null;
 }
 
@@ -122,7 +123,13 @@ export const compareVersions = (
   selection: PairSelection,
   record: VersionPair | null
 ) => {
-  const choices = versions.map(({ id, label, date }) => ({ id, label, date }));
+  const choices = versions.map(({ id, label, cite, date }) => ({
+    id,
+    label,
+    cite,
+    date,
+  }));
+
   const { unknown, pair } = selection;
 
   if (pair === undefined) {

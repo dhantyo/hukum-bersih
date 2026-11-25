@@ -10,9 +10,9 @@ import type {
   VersionComparison,
 } from "../server/law-comparison.ts";
 import { css } from "../styles/css.ts";
-import { linkClass, linkStyles } from "../styles/link.ts";
+import { linkStyles } from "../styles/link.ts";
 import { color, font, size, space } from "../styles/tokens.stylex.ts";
-import { VersionPicker } from "./collection-version-picker.tsx";
+import { VersionPair } from "./version-pair.tsx";
 
 const styles = stylex.create({
   bar: {
@@ -42,37 +42,19 @@ const styles = stylex.create({
     display: "inline-flex",
     marginInlineStart: "auto",
   },
-  pickers: {
-    gap: space.s3,
-    alignItems: "center",
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    marginBlockStart: space.s3,
-  },
-  button: {
+  check: { accentColor: color.link },
+  close: {
     font: "inherit",
     borderColor: color.lineStrong,
     borderRadius: size.radius,
     borderStyle: "solid",
     borderWidth: 1,
-    paddingInline: space.s4,
-    backgroundColor: color.background,
-    color: color.link,
-    cursor: "pointer",
-    minBlockSize: size.tap,
-  },
-  swap: {
-    borderColor: color.lineStrong,
-    borderRadius: "50%",
-    borderStyle: "solid",
-    borderWidth: 1,
-    placeItems: "center",
+    paddingBlock: space.s1,
+    paddingInline: space.s3,
     textDecoration: "none",
-    blockSize: space.s6,
-    color: color.textMuted,
-    display: "inline-grid",
-    inlineSize: space.s6,
+    alignItems: "center",
+    display: "inline-flex",
+    minBlockSize: space.s6,
   },
   legend: {
     margin: 0,
@@ -359,10 +341,7 @@ export const CompareBar = (props: { comparison: VersionComparison }) => {
   const versions = () => props.comparison.versions;
 
   const choices = () =>
-    versions().map(({ id, label, date }) => ({ id, label, date }));
-
-  const left = () => props.comparison.left;
-  const right = () => props.comparison.right;
+    versions().map(({ id, label, cite, date }) => ({ id, label, cite, date }));
 
   const summary = () =>
     props.comparison.older === props.comparison.newer
@@ -375,37 +354,21 @@ export const CompareBar = (props: { comparison: VersionComparison }) => {
         <span class={css(styles.title)}>Bandingkan versi</span>
         <output class={css(styles.summary)}>{summary()}</output>
         <label class={css(styles.only)}>
-          <input type="checkbox" data-cmp-only /> Yang berubah saja
+          <input type="checkbox" data-cmp-only class={css(styles.check)} />
+          Yang berubah saja
         </label>
-        <a class={linkClass} href="./" target="_self">
+        <a class={css(linkStyles.base, styles.close)} href="./" target="_self">
           Tutup
         </a>
       </div>
-      <form class={css(styles.pickers)} method="get" action="./">
-        <VersionPicker
-          name="dari"
-          label="Versi di kolom kiri"
-          versions={choices()}
-          value={versions()[left()].id}
-        />
-        <a
-          class={css(styles.swap, linkStyles.base)}
-          href={`?bandingkan=${versions()[left()].id}&dari=${versions()[right()].id}`}
-          aria-label="Tukar kolom kiri dan kanan"
-          title="Tukar kolom"
-        >
-          ⇄
-        </a>
-        <VersionPicker
-          name="bandingkan"
-          label="Versi di kolom kanan"
-          versions={choices()}
-          value={versions()[right()].id}
-        />
-        <button type="submit" class={css(styles.button)}>
-          Bandingkan
-        </button>
-      </form>
+      <VersionPair
+        versions={choices()}
+        left={versions()[props.comparison.left].id}
+        right={versions()[props.comparison.right].id}
+        action="./"
+        submitLabel="Bandingkan"
+        href={(from, to) => `?bandingkan=${to}&dari=${from}`}
+      />
       <Legend />
     </div>
   );
