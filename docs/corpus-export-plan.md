@@ -1,6 +1,6 @@
 # Plan: the pipeline writes the corpus
 
-Status: proposed 2026-11-25. P1 and P2 are built on `feat/corpus-export-laws`, P3 on `feat/corpus-export-collections`, P4 on `feat/corpus-export-drafts`, P5 on `feat/corpus-export-catalog`; the other PRs are not.
+Status: proposed 2026-11-25. P1 and P2 are built on `feat/corpus-export-laws`, P3 on `feat/corpus-export-collections`, P4 on `feat/corpus-export-drafts`, P5 on `feat/corpus-export-catalog`, P6 on `feat/corpus-export-search`; the other PRs are not.
 
 ## What changes
 
@@ -63,9 +63,10 @@ Every PR branches from the previous one's merge into `feat/solid-reader`, so the
 
 ### P6 Search index
 
-- [ ] Depends on: P2 and P4.
-- [ ] Files: `corpus/search.py` (the port of `search-records.ts` and `index-corpus.ts`, using the Python `pagefind` package), with tests.
-- [ ] Verification: 0 differing files under `pagefind/`. If Pagefind's output carries something non-deterministic, the PR proves equal search results for the 12 queries from the Pagefind cleanup instead, and says why.
+- [x] Depends on: P2 and P4.
+- [x] Files: `corpus/search.py` (the port of `search-records.ts` and `index-corpus.ts`), `corpus/pagefind_index.py` (the Python `pagefind` package, pinned `==1.6.0`), `corpus/anchors.py` and `corpus/titles.py` (the logic of the UI's `lib/anchors.ts` and `lib/titles.ts`, plus `tanggal`, which moved here from `catalog.py`), `tests/test_corpus_search.py`. `export_laws` and `export_drafts` take the `SearchRecords` they add each page's reader text to, so no file is read back.
+- [x] Result: `pagefind/` written last by `export-corpus`: one record per pasal, the opening, the closing and each Penjelasan entry that says more than "Cukup jelas" (75,749 records from 1,915 documents), `maxFragments` 2000.
+- [x] Verification: done 2026-11-25. `compare_corpus.py <ts> <py> --under pagefind` gives 2481 identical, 0 differing, 0 missing, 0 extra, from two separate Python runs; a full compare on the rebased tree (with P5) gives 4673 identical and the one comparison that differs only in word-diff grouping (`--word-diff-parts`). Pagefind's Python and JavaScript runtimes write the same bytes: the record inputs of the TypeScript export (url, content, meta, in order) fed to the Python package also give 0 differing files. Pagefind numbers its pages in the order it receives them, so that order is part of the bytes: the TypeScript export took it from `glob` (laws by path, last first, then the drafts), which depends on the file system, and `SearchRecords` keeps that order whatever order the pages are added in. The anchors a record opens are checked against the ids in the exported reader text of 14 real laws (`tests/test_corpus_search.py`). Size: `pagefind/` is 35.5 MB in 2,481 files, as in the TypeScript export. Time: search adds about 56 s to the export (9 s building records, 47 s in Pagefind); the full export took 120 s on 8 cores. The package's own reader sleeps 0.1 s before each reply, which caps it at 10 records a second (two hours for this corpus), so `pagefind_index.py` overrides that one loop; the version is pinned for that reason.
 
 ### P7 Release, dev mode and CI
 
@@ -95,6 +96,5 @@ Every PR branches from the previous one's merge into `feat/solid-reader`, so the
 
 ## Not proven yet
 
-- Whether Pagefind's Python and JavaScript runtimes write identical index bytes (P6).
 - Running time of the full export in Python against about 1.5 minutes today. Each PR reports it.
 - Astro keeps its own TypeScript copy of this logic as the rollback path until cutover. The Python port can drift from it in that time. The release-id check catches drift only while both exports exist, up to P8.
