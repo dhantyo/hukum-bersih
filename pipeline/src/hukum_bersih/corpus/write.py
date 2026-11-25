@@ -13,11 +13,12 @@ What that means, and what Python does by default instead:
 
 from __future__ import annotations
 
-import json
 import math
 from collections.abc import Iterable
 from pathlib import Path
 from typing import Any
+
+import orjson
 
 
 class _Undefined:
@@ -87,12 +88,18 @@ def _number(value: float) -> int | float | None:
 def dumps(value: Any, newline: bool = True) -> str:
     """The text of ``JSON.stringify(value)``, followed by a newline unless ``newline`` is False
     (the export of drafts writes none)."""
-    text = json.dumps(_plain(value), ensure_ascii=False, separators=(",", ":"))
-    return text + "\n" if newline else text
+    return _encode(value, newline).decode()
+
+
+def _encode(value: Any, newline: bool) -> bytes:
+    """The UTF-8 bytes of ``dumps``. orjson writes compact JSON with the text as is, control
+    characters as ``\\b \\f \\n \\r \\t`` or lower-case ``\\u00xx``, and the shortest float that
+    reads back, which for the numbers ``_number`` lets through is what ``JSON.stringify`` writes."""
+    return orjson.dumps(_plain(value), option=orjson.OPT_APPEND_NEWLINE if newline else 0)
 
 
 def write_json(path: Path, value: Any, newline: bool = True) -> None:
     """Write ``value`` to a new file (like the export's ``flag: "wx"``), folders included."""
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("x", encoding="utf-8", newline="") as out:
-        out.write(dumps(value, newline))
+    with path.open("xb") as out:
+        out.write(_encode(value, newline))
