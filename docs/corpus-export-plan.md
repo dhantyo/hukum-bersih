@@ -13,6 +13,8 @@ Settled by running before writing this plan (2026-11-25):
 - Pagefind has an official Python package at 1.6.0, the same version as the JavaScript one, with `add_custom_record` and `write_files`.
 - Word diffs match. Python `diff-match-patch` (20241021) and `@sanity/diff-match-patch` produced identical output on 400 changed paragraph pairs from the two drafts of RUU Perampasan Aset, using the same token encoding as `web/src/lib/compare.ts`.
 
+- Diff speed (2026-11-25, same 400 pairs): pure Python `diff-match-patch` takes 380 ms (about 1 ms a pair) and matches JavaScript on 400/400. Google's C++ version through `fast-diff-match-patch` 2.1.0 takes 57 ms but differs on 3/400, and has no wheel for Python 3.14. So the export uses pure Python. P4 and P9 report the total diff time as a share of the export. If it matters, parallelise the pairs with `multiprocessing` first (same output). A native engine (for example a Rust port through PyO3) is tried only after that, and only if it passes the 400/400 identity test.
+
 ## PRs in landing order
 
 ```
