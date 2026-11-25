@@ -27,9 +27,6 @@ const Document = (props: ParentProps) => (
       <link rel="icon" href="data:," />
       <For each={preloads}>{(link) => <link {...link} />}</For>
       <style>{globalFontFaces}</style>
-      {import.meta.env.DEV && (
-        <link rel="stylesheet" href="/virtual:stylex.css" />
-      )}
       <HydrationScript />
     </head>
     <body class={css(styles.body)}>{props.children}</body>

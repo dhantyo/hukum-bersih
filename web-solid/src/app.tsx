@@ -9,6 +9,7 @@ import { css } from "./styles/css.ts";
 import { size, space } from "./styles/tokens.stylex.ts";
 
 import "virtual:font-fallbacks.css";
+import "./styles/stylex.css";
 
 const styles = stylex.create({
   page: {

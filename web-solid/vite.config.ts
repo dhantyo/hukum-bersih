@@ -43,7 +43,7 @@ export default defineConfig({
       assets: { prefix: "/assets/_fonts" },
     }),
     fontFallbackProbe(),
-    stylex({ useCSSLayers: true }),
+    stylex({ useCSSLayers: true, useCssPlaceholder: true }),
     solid({
       start: {
         middleware: "./src/middleware.ts",
