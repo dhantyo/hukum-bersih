@@ -13,7 +13,7 @@ Settled by running before writing this plan (2026-11-25):
 - Pagefind has an official Python package at 1.6.0, the same version as the JavaScript one, with `add_custom_record` and `write_files`.
 - Word diffs match. Python `diff-match-patch` (20241021) and `@sanity/diff-match-patch` produced identical output on 400 changed paragraph pairs from the two drafts of RUU Perampasan Aset, using the same token encoding as `web/src/lib/compare.ts`.
 
-- Diff speed (2026-11-25, same 400 pairs): pure Python `diff-match-patch` takes 380 ms (about 1 ms a pair) and matches JavaScript on 400/400. Google's C++ version through `fast-diff-match-patch` 2.1.0 takes 57 ms but differs on 3/400, and has no wheel for Python 3.14. So the export uses pure Python. P4 and P9 report the total diff time as a share of the export. If it matters, parallelise the pairs with `multiprocessing` first (same output). A native engine (for example a Rust port through PyO3) is tried only after that, and only if it passes the 400/400 identity test.
+- Diff engine (operator: use an existing fast native engine, not our own port). Measured 2026-11-25 on the same 400 pairs and token encoding: pure Python `diff-match-patch` 383 ms (400/400 identical to JavaScript); `rapidiff` 0.3.0 (Rust `similar` through PyO3, a prebuilt wheel on Python 3.14) Myers plus `diff-match-patch`'s semantic cleanup 61 ms (379/400 identical; of the 21 that differ, 9 have fewer fragments and changes, 11 have more, 1 the same); `rapidiff` without the cleanup 31 ms (4/400, fragmented); `similar-rs` 32 ms (4/400); `fast-diff-match-patch` (C++) 57 ms (397/400) but no wheel for Python 3.14, and `diff_match_patch-python` also fails to build. The export uses `rapidiff` Myers followed by the semantic cleanup. So comparison word diffs are not byte-identical to the TypeScript export. P4 and P9 prove that pairing, counts, anchors and every non-diff byte are identical, report how many diffs changed, and measure the total diff time.
 
 ## PRs in landing order
 
@@ -50,9 +50,9 @@ Every PR branches from the previous one's merge into `feat/solid-reader`, so the
 ### P4 Drafts and draft comparisons
 
 - [ ] Depends on: P2.
-- [ ] Files: `corpus/drafts.py`, `corpus/compare.py` (the port of `compare.ts`, with Python `diff-match-patch`), with tests. The test reuses the 400-pair fixture.
+- [ ] Files: `corpus/drafts.py`, `corpus/compare.py` (the port of `compare.ts`; word diffs through `rapidiff` plus the semantic cleanup), with tests. The test reuses the 400-pair fixture.
 - [ ] Result: `drafts/**`, including `comparisons/`.
-- [ ] Verification: 0 differing files under `drafts/`.
+- [ ] Verification: 0 differing files under `drafts/` except comparison files, which differ only inside word-diff parts (same pairs, counts and anchors); report how many diffs changed and the total diff time.
 
 ### P5 Catalog and listings
 
