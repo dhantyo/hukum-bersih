@@ -1,6 +1,6 @@
 # Plan: the pipeline writes the corpus
 
-Status: proposed 2026-11-25, waiting for the operator's go. Nothing here is built yet.
+Status: proposed 2026-11-25. P1 and P2 are built on `feat/corpus-export-laws`; P3 onward are not.
 
 ## What changes
 
@@ -26,19 +26,19 @@ Every PR branches from the previous one's merge into `feat/solid-reader`, so the
 
 ### P1 Harness and output layout
 
-- [ ] Depends on: nothing.
-- [ ] Files: `pipeline/src/hukum_bersih/corpus/__init__.py`, `corpus/write.py`, `cli.py`, `pyproject.toml`; `pipeline/tests/test_corpus_write.py`.
-- [ ] Builds: the `export-corpus` command skeleton and one JSON writer whose bytes match `JSON.stringify` (key order, `ensure_ascii=False`, no spaces, the same number formatting), plus a `compare-release` script that diffs two stage directories file by file.
-- [ ] Result: `export-corpus` writes an empty stage, and `compare-release` reports differences per file.
-- [ ] Verification: a unit test round-trips the JavaScript-written JSON of every current release file through the writer, and the bytes are equal.
+- [x] Depends on: nothing.
+- [x] Files: `pipeline/src/hukum_bersih/corpus/__init__.py`, `corpus/write.py`, `cli.py`, `pyproject.toml` (unchanged: no dependency was needed); `pipeline/tests/test_corpus_write.py`. The compare tool is `pipeline/scripts/compare_corpus.py` (not named `compare-release`).
+- [x] Builds: the `export-corpus` command skeleton and one JSON writer whose bytes match `JSON.stringify` (key order, `ensure_ascii=False`, no spaces, the same number formatting), plus a `compare-release` script that diffs two stage directories file by file.
+- [x] Result: `export-corpus` writes an empty stage, and `compare-release` reports differences per file.
+- [x] Verification: a unit test round-trips the JavaScript-written JSON through the writer, and the bytes are equal. Done: a node-written fixture (control characters, U+2028, astral text, integer-like keys, `undefined`) always runs; with `CORPUS_REFERENCE=<stage>` the test also round-trips all 1,930 `laws/**/index.json` files (2026-11-25: 1,930 equal).
 
 ### P2 Laws
 
-- [ ] Depends on: P1.
-- [ ] Files: `corpus/laws.py` (the law record, reader text, amendments and versions), the corresponding tests.
-- [ ] Builds: the port of `export-laws.ts` with the parts of `peraturan.ts`, `lawdoc.ts`, `amendments.ts`, `versions.ts`, `display.ts`, `lawtext.ts` and `article-anchors.ts` it uses. The reader tree comes from the pipeline's own document model, not by parsing its XML back.
-- [ ] Result: `laws/**/index.json` for all 1,930 laws.
-- [ ] Verification: `compare-release` shows 0 differing files under `laws/` against the TypeScript export.
+- [x] Depends on: P1.
+- [x] Files: `corpus/laws.py` (the law record), `reader_text.py`, `regulations.py`, `koleksi.py`, `versions.py`, `jstext.py`, `pipeline/tests/test_corpus_laws.py`, `test_corpus_jstext.py`. `amendments.split` and `akn.build.to_akn_tree` were split out of existing functions so the export reuses them.
+- [x] Builds: the port of `export-laws.ts` with the parts of `peraturan.ts`, `lawdoc.ts`, `amendments.ts`, `versions.ts`, `display.ts`, `lawtext.ts` and `article-anchors.ts` it uses. The reader tree comes from the lxml element that `akn.build.to_akn_tree` makes from the stored Bluebell text, not from XML written to disk and parsed back. (The pipeline's `Block` model is not stored, so the Bluebell text is what the export starts from.)
+- [x] Result: `laws/**/index.json` for all 1,930 laws.
+- [x] Verification: `compare-release` shows 0 differing files under `laws/` against the TypeScript export. Done 2026-11-25: `compare_corpus.py <ts> <py> --under laws` gives 1930 identical, 0 differing, 0 missing, 0 extra. The Python export takes 57 s on 8 cores, including the Bluebell-to-tree step that `build-akn` does separately; the TypeScript `exportLaws` alone takes 22 s from pre-built XML.
 
 ### P3 Collections
 
@@ -94,7 +94,6 @@ Every PR branches from the previous one's merge into `feat/solid-reader`, so the
 
 ## Not proven yet
 
-- Whether the pipeline's own document model gives the reader tree directly, or P2 has to parse the generated XML the way `lawdoc.ts` does. P2 starts by checking that.
 - Whether Pagefind's Python and JavaScript runtimes write identical index bytes (P6).
 - Running time of the full export in Python against about 1.5 minutes today. Each PR reports it.
 - Astro keeps its own TypeScript copy of this logic as the rollback path until cutover. The Python port can drift from it in that time. The release-id check catches drift only while both exports exist, up to P8.
