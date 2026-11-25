@@ -1,17 +1,24 @@
 import { useLocation } from "@solidjs/router";
 import * as stylex from "@stylexjs/stylex";
-import { createMemo, For, Show, useContext } from "solid-js";
+import { createMemo, For, onSettled, Show, useContext } from "solid-js";
 
+import { followHeader } from "../lib/header-follow.ts";
 import { slashed } from "../lib/paths.ts";
 import { ReaderViewContext } from "../lib/reader-view.ts";
 import { Router } from "../router.tsx";
 import { css } from "../styles/css.ts";
+import { headerOffset } from "../styles/header-offset.stylex.ts";
 import { linkStyles } from "../styles/link.ts";
 import { color, media, size, space } from "../styles/tokens.stylex.ts";
 import { accessibility } from "../styles/visually-hidden.ts";
 import { ReadingSettings } from "./reading-settings.tsx";
 
 const COMPARING = ":has([data-cmp-bar])";
+const FOLLOWING = ":is([data-mode])";
+const FREE = ':is([data-mode="free"])';
+const HIDDEN = ':is([data-mode="hidden"])';
+const PINNED = ':is([data-mode="pinned"])';
+const MOTION = "@media (prefers-reduced-motion: no-preference)";
 
 const styles = stylex.create({
   skip: {
@@ -29,11 +36,28 @@ const styles = stylex.create({
     },
   },
   header: {
+    insetInline: { [FOLLOWING]: 0, default: null },
+    transition: {
+      [MOTION]: {
+        [HIDDEN]: "transform 0.24s ease-out",
+        [PINNED]: "transform 0.24s ease-out",
+        default: null,
+      },
+      default: null,
+    },
     backgroundColor: color.background,
     blockSize: "calc-size(auto, round(up, size, 1px))",
     borderBlockEndColor: color.line,
     borderBlockEndStyle: "solid",
     borderBlockEndWidth: 1,
+    position: {
+      [FREE]: "absolute",
+      [HIDDEN]: "fixed",
+      [PINNED]: "fixed",
+      default: null,
+    },
+    zIndex: { [FOLLOWING]: 15, default: null },
+    top: { [FOLLOWING]: 0, default: null },
   },
   bar: {
     marginInline: "auto",
@@ -156,50 +180,58 @@ export const SiteHeader = (props: { pending: boolean }) => {
   const location = useLocation();
   const [readerText] = useContext(ReaderViewContext);
   const hasSearch = () => location.pathname !== Router.paths();
+  let slot!: HTMLDivElement;
+  let header!: HTMLElement;
+
+  onSettled(() => followHeader(header, slot, headerOffset.shown));
 
   return (
     <>
       <a class={css(linkStyles.base, styles.skip)} href="#main">
         Langsung ke isi
       </a>
-      <header class={css(styles.header)}>
-        <div class={css(styles.bar)}>
-          <a class={css(linkStyles.base, styles.brand)} href={Router.paths()}>
-            Hukum Bersih
-          </a>
-          <nav class={css(styles.nav)} aria-label="Utama">
-            <For each={sections}>
-              {(section) => (
-                <SectionLink href={section.href} label={section.label} />
-              )}
-            </For>
-          </nav>
-          <Show when={hasSearch()}>
-            <search class={css(styles.search)} aria-label="Cari cepat">
-              <form
-                class={css(styles.form)}
-                action={slashed(Router.paths.cari)}
-                method="get"
-              >
-                <label class={css(accessibility.visuallyHidden)} for="q">
-                  Cari peraturan
-                </label>
-                <input
-                  class={css(styles.field)}
-                  id="q"
-                  name="q"
-                  type="search"
-                  placeholder="Cari undang-undang, pasal, kata…"
-                  autocomplete="off"
-                />
-              </form>
-            </search>
-          </Show>
-          <div class={css(styles.settings, !hasSearch() && styles.settingsEnd)}>
-            <ReadingSettings text={readerText()} />
+      <div ref={slot}>
+        <header ref={header} class={css(styles.header)}>
+          <div class={css(styles.bar)}>
+            <a class={css(linkStyles.base, styles.brand)} href={Router.paths()}>
+              Hukum Bersih
+            </a>
+            <nav class={css(styles.nav)} aria-label="Utama">
+              <For each={sections}>
+                {(section) => (
+                  <SectionLink href={section.href} label={section.label} />
+                )}
+              </For>
+            </nav>
+            <Show when={hasSearch()}>
+              <search class={css(styles.search)} aria-label="Cari cepat">
+                <form
+                  class={css(styles.form)}
+                  action={slashed(Router.paths.cari)}
+                  method="get"
+                >
+                  <label class={css(accessibility.visuallyHidden)} for="q">
+                    Cari peraturan
+                  </label>
+                  <input
+                    class={css(styles.field)}
+                    id="q"
+                    name="q"
+                    type="search"
+                    placeholder="Cari undang-undang, pasal, kata…"
+                    autocomplete="off"
+                  />
+                </form>
+              </search>
+            </Show>
+            <div
+              class={css(styles.settings, !hasSearch() && styles.settingsEnd)}
+            >
+              <ReadingSettings text={readerText()} />
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
+      </div>
       <Show when={props.pending}>
         <output>Memuat…</output>
       </Show>
