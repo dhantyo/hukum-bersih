@@ -1,10 +1,10 @@
 import solid from "@solidjs/vite-plugin";
-import stylex from '@stylexjs/unplugin';
+import stylex from "@stylexswc/unplugin/vite";
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   plugins: [
-    stylex.vite({ useCSSLayers: true, runtimeInjection: false }),
+    stylex({ useCSSLayers: true }),
     solid({
       start: {
         middleware: "./src/middleware.ts",
