@@ -9,6 +9,7 @@ dependencies = [
     "confusable-homoglyphs>=3.3.1",
     "diff-match-patch>=20241021",
     "httpx>=0.28.1",
+    "pagefind[bin]==1.6.0",
     "pydantic>=2.14.4",
     "pymupdf>=2.1",
     "pyyaml>=6.0.3",
