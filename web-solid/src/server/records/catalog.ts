@@ -35,6 +35,8 @@ const catalog = v.object({
 
 export type LawCatalogEntry = v.InferOutput<typeof entry>;
 
+export type CatalogCollection = v.InferOutput<typeof collection>;
+
 export type Catalog = v.InferOutput<typeof catalog>;
 
 const readCatalogText = async () => {
