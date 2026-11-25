@@ -55,6 +55,19 @@ const styles = stylex.create({
     },
   },
   title: { margin: 0 },
+  compare: {
+    borderColor: color.lineStrong,
+    borderRadius: size.radius,
+    borderStyle: "solid",
+    borderWidth: 1,
+    paddingBlock: space.s2,
+    paddingInline: space.s3,
+    textDecoration: "none",
+    display: "block",
+    fontWeight: 600,
+    marginBlockStart: space.s2,
+    textAlign: "center",
+  },
   count: { color: color.textMuted, fontSize: size.xs },
   list: {
     margin: 0,
@@ -189,7 +202,7 @@ const VersionRow = (props: { version: Version; current: string }) => {
 export const CollectionVersions = (props: {
   versions: CollectionVersion["versions"];
   current: string;
-  comparable: boolean;
+  compareHref?: string;
 }) => (
   <Collapsible class={css(panel.block)} defaultOpen>
     <CollapsibleTrigger class={css(styles.trigger)}>
@@ -206,12 +219,13 @@ export const CollectionVersions = (props: {
           )}
         </For>
       </ol>
-      {props.comparable && (
-        <p class={css(panel.note)}>
-          <a class={css(linkStyles.base)} href="#banding" target="_self">
-            Bandingkan versi
-          </a>
-        </p>
+      {isPresent(props.compareHref) && (
+        <a
+          class={css(linkStyles.base, styles.compare)}
+          href={props.compareHref}
+        >
+          Bandingkan versi
+        </a>
       )}
       <p class={css(panel.note)}>
         Versi gabungan disusun otomatis dari teks asli dan undang-undang

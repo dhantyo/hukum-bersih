@@ -1,5 +1,5 @@
 import * as stylex from "@stylexjs/stylex";
-import { For } from "solid-js";
+import { For, Show } from "solid-js";
 
 import type {
   ChangedLine,
@@ -46,6 +46,26 @@ const styles = stylex.create({
     paddingInline: space.s3,
     textDecoration: "none",
     color: color.text,
+  },
+  top: {
+    gap: space.s3,
+    alignItems: "center",
+    display: "flex",
+    justifyContent: "space-between",
+  },
+  heading: { margin: 0 },
+  close: {
+    font: "inherit",
+    borderColor: color.lineStrong,
+    borderRadius: size.radius,
+    borderStyle: "solid",
+    borderWidth: 1,
+    paddingBlock: space.s1,
+    paddingInline: space.s3,
+    textDecoration: "none",
+    alignItems: "center",
+    display: "inline-flex",
+    minBlockSize: space.s6,
   },
   summary: { margin: 0, color: color.textMuted, fontSize: size.sm },
   note: {
@@ -166,6 +186,13 @@ const Result = (props: { comparison: CollectionCompareView }) => {
 const pairLink = (from: string, to: string) =>
   `?dari=${from}&bandingkan=${to}#banding`;
 
+/** Where the "Bandingkan versi" button of the side panel leads: the first version against the latest. */
+export const firstToLatestHref = (comparison: CollectionCompareView) =>
+  pairLink(
+    comparison.versions[0]?.id ?? "",
+    comparison.versions.at(-1)?.id ?? ""
+  );
+
 /**
  * Compare two versions of a collection: the same pair of pickers as the law page (drag a
  * column across to swap, or pick another version), or follow a quick link; the pasal that
@@ -173,50 +200,71 @@ const pairLink = (from: string, to: string) =>
  */
 export const CollectionCompare = (props: {
   comparison: CollectionCompareView;
+  onDemand?: boolean;
 }) => {
   const ids = () => props.comparison.versions.map((version) => version.id);
   const first = () => ids()[0];
   const last = () => ids().at(-1) ?? first();
   const before = () => ids().at(-2) ?? first();
 
+  const shown = () =>
+    props.onDemand !== true ||
+    props.comparison.selected !== null ||
+    props.comparison.unknown;
+
   return (
-    <section id="banding" aria-labelledby="banding-title">
-      <h2 id="banding-title">Bandingkan versi</h2>
-      <p>
-        Pilih dua versi, lalu lihat pasal yang berubah di antara keduanya. Yang{" "}
-        <ins class={css(changes.ins)}>baru</ins> dan yang{" "}
-        <del class={css(changes.del)}>dihapus</del> ditandai dibanding versi
-        pertama.
-      </p>
-      <div class={css(styles.bar)}>
-        <VersionPair
-          versions={props.comparison.versions}
-          left={props.comparison.selected?.from ?? first()}
-          right={props.comparison.selected?.to ?? last()}
-          action="#banding"
-          submitLabel="Bandingkan"
-          href={pairLink}
-        />
-      </div>
-      <p class={css(styles.presets)}>
-        <span class={css(styles.muted)}>Cepat:</span>
-        <a
-          class={css(linkStyles.base, styles.preset)}
-          href={pairLink(first(), last())}
-        >
-          Asli dan terbaru
-        </a>
-        <a
-          class={css(linkStyles.base, styles.preset)}
-          href={pairLink(before(), last())}
-        >
-          Perubahan terakhir
-        </a>
-      </p>
-      {props.comparison.unknown && (
-        <output>Versi yang diminta tidak dikenal di koleksi ini.</output>
-      )}
-      <Result comparison={props.comparison} />
-    </section>
+    <Show when={shown()}>
+      <section id="banding" aria-labelledby="banding-title">
+        <div class={css(styles.top)}>
+          <h2 id="banding-title" class={css(styles.heading)}>
+            Bandingkan versi
+          </h2>
+          <Show when={props.onDemand}>
+            <a
+              class={css(linkStyles.base, styles.close)}
+              href="./"
+              target="_self"
+            >
+              Tutup
+            </a>
+          </Show>
+        </div>
+        <p>
+          Pilih dua versi, lalu lihat pasal yang berubah di antara keduanya.
+          Yang <ins class={css(changes.ins)}>baru</ins> dan yang{" "}
+          <del class={css(changes.del)}>dihapus</del> ditandai dibanding versi
+          pertama.
+        </p>
+        <div class={css(styles.bar)}>
+          <VersionPair
+            versions={props.comparison.versions}
+            left={props.comparison.selected?.from ?? first()}
+            right={props.comparison.selected?.to ?? last()}
+            action="#banding"
+            submitLabel="Bandingkan"
+            href={pairLink}
+          />
+        </div>
+        <p class={css(styles.presets)}>
+          <span class={css(styles.muted)}>Cepat:</span>
+          <a
+            class={css(linkStyles.base, styles.preset)}
+            href={pairLink(first(), last())}
+          >
+            Asli dan terbaru
+          </a>
+          <a
+            class={css(linkStyles.base, styles.preset)}
+            href={pairLink(before(), last())}
+          >
+            Perubahan terakhir
+          </a>
+        </p>
+        {props.comparison.unknown && (
+          <output>Versi yang diminta tidak dikenal di koleksi ini.</output>
+        )}
+        <Result comparison={props.comparison} />
+      </section>
+    </Show>
   );
 };

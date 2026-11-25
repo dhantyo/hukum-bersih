@@ -10,7 +10,7 @@ import { isPresent } from "../lib/text.ts";
 import { css } from "../styles/css.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 import { Badge } from "./badge.tsx";
-import { CollectionCompare } from "./collection-compare.tsx";
+import { CollectionCompare, firstToLatestHref } from "./collection-compare.tsx";
 import { CollectionFacts } from "./collection-facts.tsx";
 import { CollectionHistory } from "./collection-timeline.tsx";
 import { CollectionVersions } from "./collection-versions.tsx";
@@ -82,7 +82,11 @@ const MergedCollection = (props: {
         <CollectionVersions
           versions={props.version.versions}
           current={props.collection.path}
-          comparable={props.comparison !== null}
+          compareHref={
+            props.comparison === null
+              ? undefined
+              : firstToLatestHref(props.comparison)
+          }
         />
         <Toc text={props.version.text} />
         <CollectionFacts facts={props.version.facts} />
@@ -91,7 +95,7 @@ const MergedCollection = (props: {
   >
     <MergedBanner version={props.version} />
     {props.comparison !== null && (
-      <CollectionCompare comparison={props.comparison} />
+      <CollectionCompare comparison={props.comparison} onDemand />
     )}
     <LawText text={props.version.text} notes={props.version.notes} />
   </DocLayout>
