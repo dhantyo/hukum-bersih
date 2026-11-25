@@ -4,16 +4,12 @@ import { Badge } from "../components/badge.tsx";
 import { usePageDescription, usePageTitle } from "../lib/head.ts";
 import { css } from "../styles/css.ts";
 import { linkClass } from "../styles/link.ts";
-import { color, size, space } from "../styles/tokens.stylex.ts";
+import { color, size } from "../styles/tokens.stylex.ts";
 
 const styles = stylex.create({
   prose: { maxWidth: size.measure },
   lead: { color: color.textMuted, fontSize: size.lg },
-  note: {
-    color: color.textMuted,
-    fontSize: size.sm,
-    marginBlockStart: space.s4,
-  },
+  note: { color: color.textMuted, fontSize: size.sm },
 });
 
 const About = () => {

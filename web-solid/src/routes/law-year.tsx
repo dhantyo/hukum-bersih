@@ -10,6 +10,7 @@ import { Router } from "../router.tsx";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
+import { touch } from "../styles/touch.ts";
 import NotFound from "./not-found.tsx";
 
 const styles = stylex.create({
@@ -34,7 +35,7 @@ const LawYear = (props: RouteProps<"/uu/tahun/:tahun">) => {
           <main>
             <nav class={css(styles.crumbs)} aria-label="Lokasi">
               <a
-                class={css(styles.crumbLink, linkStyles.base)}
+                class={css(styles.crumbLink, linkStyles.base, touch.link)}
                 href={slashed(Router.paths.uu)}
               >
                 Undang-Undang

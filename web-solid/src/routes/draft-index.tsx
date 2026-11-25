@@ -14,7 +14,7 @@ const styles = stylex.create({
   list: { margin: 0, padding: 0, listStyle: "none" },
   card: {
     borderColor: color.line,
-    borderRadius: space.s2,
+    borderRadius: size.radiusMd,
     borderStyle: "solid",
     borderWidth: 1,
     marginBlock: space.s3,

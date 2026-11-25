@@ -21,13 +21,17 @@ const styles = stylex.create({
     display: "grid",
     gridTemplateColumns: "repeat(auto-fill, minmax(9rem, 1fr))",
   },
-  decade: { fontSize: size.sm },
   decadeTitle: {
     marginBlock: `0 ${space.s2}`,
     color: color.textMuted,
     fontSize: size.sm,
   },
-  yearList: { margin: 0, padding: 0, listStyle: "none" },
+  yearList: {
+    margin: 0,
+    padding: 0,
+    listStyle: "none",
+    fontSize: size.sm,
+  },
   yearItem: {
     display: "flex",
     justifyContent: "space-between",
@@ -66,7 +70,7 @@ const LawOverview = () => {
       <div class={css(styles.years)}>
         <For each={overview().decades}>
           {(decade) => (
-            <div class={css(styles.decade)}>
+            <div>
               <h3 class={css(styles.decadeTitle)}>{decade.decade}-an</h3>
               <ul class={css(styles.yearList)}>
                 <For each={decade.years}>

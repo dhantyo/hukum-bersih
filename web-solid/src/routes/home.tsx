@@ -9,6 +9,7 @@ import { Router } from "../router.tsx";
 import { css } from "../styles/css.ts";
 import { linkClass, linkStyles } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
+import { touch } from "../styles/touch.ts";
 import { accessibility } from "../styles/visually-hidden.ts";
 
 const LATEST_LAWS = 6;
@@ -57,6 +58,7 @@ const styles = stylex.create({
     cursor: "pointer",
     fontSize: size.sm,
     fontWeight: 600,
+    lineHeight: 1,
   },
   stats: { color: color.textMuted, fontSize: size.sm },
   columns: {
@@ -140,7 +142,7 @@ const Home = () => {
                         <>
                           {" · "}
                           <a
-                            class={linkClass}
+                            class={css(linkStyles.base, touch.link)}
                             href={draftChangesUrl(draft.slug, changes)}
                           >
                             lihat apa yang berubah
