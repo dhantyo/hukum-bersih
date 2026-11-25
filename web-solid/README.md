@@ -4,7 +4,7 @@ The Solid 2 rewrite serves law pages on demand. Public law data and Pagefind ass
 
 ## Run locally
 
-Use the Node.js version in `.node-version` and the pnpm version in `package.json`. From this directory run `pnpm install --frozen-lockfile`. The first build downloads the web fonts from fontsource and caches them in `node_modules/.cache/fontless`, so it needs network access. The app imports shared legal logic from the sibling Astro project (`../web/src/lib`), so install that project's dependencies too (`npm ci` in `../web`).
+Use the Node.js version in `.node-version` and the pnpm version in `package.json`. From this directory run `pnpm install --frozen-lockfile`. The first build downloads the web fonts from fontsource and caches them in `node_modules/.cache/fontless`, so it needs network access. The app imports nothing from the Astro project in `../web`.
 
 The corpus is not built here. The pipeline writes it from `data/`, in one command from `pipeline/`:
 
@@ -15,7 +15,7 @@ cd ../web-solid
 HUKUM_CORPUS_DIR="$PWD/.corpus" pnpm run dev                          # or: pnpm run build && pnpm run start
 ```
 
-`export-corpus` writes the whole corpus into a temporary stage, in this order: the laws (`laws/`), the collections (`collections/`), the drafts (`drafts/`, with the comparison of every pair of versions that have text), the catalog (`law-catalog.json` and the `listings/` rows for the home page, `/uu/`, `/uu/tahun/` and `/ruu/`), and last the Pagefind index (`pagefind/`). `--publish` then stores the stage as `releases/<id>/` in the corpus folder (`hukum-bersih release publish`) and points `active-release` at it; the stage is deleted. The release id is the SHA-256 of every file, so an unchanged corpus gives the same id and publishing it again changes nothing. `.corpus/` is ignored by git.
+`export-corpus` writes the whole corpus into a temporary stage, in this order: the laws (`laws/`), the collections (`collections/`, with `comparisons/` for every ordered pair of versions of an amended law), the drafts (`drafts/`, with the comparison of every pair of versions that have text), the catalog (`law-catalog.json` and the `listings/` rows for the home page, `/uu/`, `/uu/tahun/` and `/ruu/`), and last the Pagefind index (`pagefind/`). `--publish` then stores the stage as `releases/<id>/` in the corpus folder (`hukum-bersih release publish`) and points `active-release` at it; the stage is deleted. The release id is the SHA-256 of every file, so an unchanged corpus gives the same id and publishing it again changes nothing. `.corpus/` is ignored by git.
 
 To keep the stage, give a folder as the first argument and publish it yourself:
 

@@ -72,10 +72,6 @@ jobs:
           node-version-file: web-solid/.node-version
           cache: pnpm
           cache-dependency-path: web-solid/pnpm-lock.yaml
-      # The Solid app type-checks and reads shared legal logic from web/src/lib, which needs web's dependencies.
-      - name: Install the Astro app's dependencies
-        working-directory: web
-        run: npm ci
       - run: pnpm install --frozen-lockfile
       - run: pnpm run check
       - run: pnpm exec tsc --noEmit
