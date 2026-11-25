@@ -3,7 +3,9 @@ import { For } from "solid-js";
 import { tanggal } from "../lib/labels.ts";
 import { isPresent } from "../lib/text.ts";
 import type { CollectionVersion } from "../server/records/collection-version.ts";
+import { css } from "../styles/css.ts";
 import { linkClass } from "../styles/link.ts";
+import { panel } from "../styles/panel.ts";
 
 type Version = CollectionVersion["versions"][number];
 
@@ -31,11 +33,11 @@ export const CollectionVersions = (props: {
   current: string;
   comparable: boolean;
 }) => (
-  <nav aria-label="Versi">
-    <h2>
+  <nav class={css(panel.block)} aria-label="Versi">
+    <h2 class={css(panel.title)}>
       Versi <span>{props.versions.filter((row) => !row.missing).length}</span>
     </h2>
-    <ol>
+    <ol class={css(panel.list)}>
       <For each={props.versions}>
         {(version) => (
           <li>
@@ -58,13 +60,13 @@ export const CollectionVersions = (props: {
       </For>
     </ol>
     {props.comparable && (
-      <p>
+      <p class={css(panel.note)}>
         <a class={linkClass} href="#banding" target="_self">
           Bandingkan versi
         </a>
       </p>
     )}
-    <p>
+    <p class={css(panel.note)}>
       Versi gabungan disusun otomatis dari teks asli dan undang-undang
       perubahannya; bukan teks konsolidasi resmi.
     </p>
