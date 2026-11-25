@@ -24,3 +24,6 @@ Thumbs.db
 
 # Route snapshots and staged corpora (scripts/route-snapshot.sh)
 .snapshots
+
+# The corpus a local dev server reads (HUKUM_CORPUS_DIR), written by `hukum-bersih export-corpus --publish`
+.corpus

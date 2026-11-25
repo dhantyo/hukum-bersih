@@ -1,6 +1,6 @@
 # Plan: the pipeline writes the corpus
 
-Status: proposed 2026-11-25. P1 and P2 are built on `feat/corpus-export-laws`, P3 on `feat/corpus-export-collections`, P4 on `feat/corpus-export-drafts`, P5 on `feat/corpus-export-catalog`, P6 on `feat/corpus-export-search`; the other PRs are not.
+Status: proposed 2026-11-25. P1 and P2 are built on `feat/corpus-export-laws`, P3 on `feat/corpus-export-collections`, P4 on `feat/corpus-export-drafts`, P5 on `feat/corpus-export-catalog`, P6 on `feat/corpus-export-search`, P7 and P8 on `feat/corpus-release`; P9 is not built.
 
 ## What changes
 
@@ -70,11 +70,17 @@ Every PR branches from the previous one's merge into `feat/solid-reader`, so the
 
 ### P7 Release, dev mode and CI
 
-- [ ] Depends on: P1 to P6.
-- [ ] Files: `corpus/release.py`, `cli.py`, `.github/workflows/solid-preview.yml`, `web-solid/README.md`.
-- [ ] Builds: `hukum-bersih release publish|activate <corpus-dir>`. It writes `releases/<id>/`, the ready marker and the `active-release` pointer: the layout `web-solid` reads in dev, and the layout CI copies to R2 with rclone before switching the pointer. The preview workflow calls the pipeline instead of `pnpm run export-corpus`.
-- [ ] Result: one Python command turns `data/` into a corpus that `pnpm run dev` reads.
-- [ ] Verification: the same release id as the TypeScript `corpus-release`; `route-snapshot.sh` against the Python corpus gives 0 differing responses; publish then activate the previous id, and the pages follow (local; R2 waits for the preview secrets).
+- [x] Depends on: P1 to P6.
+- [x] Files: `corpus/release.py`, `cli.py` (`release publish|activate`, and `export-corpus --publish`), `corpus/export.py`, `.github/scripts/upload-release.sh`, `.github/workflows/solid-preview.yml`, `web-solid/README.md`, `tests/test_corpus_release.py` with the stage `tests/fixtures/release_stage/`.
+- [x] Builds: `hukum-bersih release publish <stage> --corpus <dir>` (store the stage as `releases/<id>/`, write the ready marker `release-id`, move `active-release`) and `release activate <id> --corpus <dir>`; `--corpus` defaults to `HUKUM_CORPUS_DIR`. `export-corpus --publish <dir>` does both in one command and, with no stage folder, keeps the stage in a temporary folder inside `<dir>`. The preview workflow runs that command and then `upload-release.sh`, which copies `releases/<id>` to R2 with rclone, the ready marker after the other files, and the pointer last.
+- [x] Result: `uv run hukum-bersih export-corpus --publish ../web-solid/.corpus` and `HUKUM_CORPUS_DIR=$PWD/.corpus pnpm run dev` (documented in `web-solid/README.md`).
+- [x] Verification: done 2026-11-25.
+  - Same release id: the real TypeScript stage (4,673 files plus the one draft comparison) published by `corpus-release.ts` and by `release publish` gives `4171cd3f...e87e6` both times, and the two `releases/<id>/` folders are identical under `diff -r`. A fixture stage with names that sort differently by code point and by UTF-16 unit (an astral character, a fullwidth tilde, an accent) is pinned in `test_corpus_release.py` to the id the TypeScript tool gave it. Publishing the same stage twice leaves the corpus folder unchanged.
+  - Dev mode: the dev server (`pnpm run dev`) with `HUKUM_CORPUS_DIR` set to a corpus the Python command wrote renders a law page (`/uu/11/2008/`, `#pasal-27` present), a collection (`/koleksi/ite/`) and the search page (`/cari/?q=informasi+elektronik` lists Pagefind results from the release) in headless Chromium, with no failed request and no page error. The one-command flow gave the same id as the two-step one (`491e40c2...ac005`).
+  - `route-snapshot.sh` (102 responses) on the same stage published by both tools: 0 differing (the same id, 4171cd3f). On the Python stage against the TypeScript stage: 98 identical, 4 differing. Two are the draft comparison page (`/beda/<older>...<newer>/` with and without the trailing slash): its 7 differing regions touch only `<ins>`/`<del>` runs and the text nodes beside them, which is the word-diff grouping the plan allows. The other two (`/koleksi/tidak-ada/?bandingkan` and `/koleksi/tidak-ada/2016-11-25/`, a 404 page) differ in the order of four hydration statements, and the same TypeScript corpus served twice differs the same way, so the base has it.
+  - Switch back: with the TypeScript stage (A) and the Python stage (B) both published into one corpus, the comparison page holds 1,534 `<ins>`/`<del>` tags under B, 1,542 after `release activate A` and 1,534 again after `release activate B`.
+  - CI: `actionlint` (v1.7.7, as `ci.yml` runs it) finds 0 errors in 7 workflow files. `upload-release.sh` ran against a local rclone remote: the 4,674 release files, then `release-id`, then `active-release`, in that order in the log, and the remote equals the corpus folder under `diff -r`; running it again changes nothing. The preview run itself waits for the three preview secrets.
+  - Time: `export-corpus` 2 min 3 s to 2 min 12 s on 8 cores (7 min of CPU), with the publish at 2 s; the TypeScript `export-corpus` took 1 min 17 s, but it reads Akoma Ntoso that `build-akn` writes first (not timed here), where the Python export parses the Bluebell text itself. Publishing takes 2 s in either tool.
 
 ### P8 Delete the TypeScript exports
 

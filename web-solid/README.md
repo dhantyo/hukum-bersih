@@ -4,20 +4,27 @@ The Solid 2 rewrite serves law pages on demand. Public law data and Pagefind ass
 
 ## Run locally
 
-Use the Node.js version in `.node-version` and the pnpm version in `package.json`. From this directory run `pnpm install --frozen-lockfile` and `pnpm run build`. The first build downloads the web fonts from fontsource and caches them in `node_modules/.cache/fontless`, so it needs network access. The export reads the generated Akoma Ntoso and the dependencies of the sibling Astro project, so build the Akoma Ntoso corpus and install the Astro dependencies first.
+Use the Node.js version in `.node-version` and the pnpm version in `package.json`. From this directory run `pnpm install --frozen-lockfile`. The first build downloads the web fonts from fontsource and caches them in `node_modules/.cache/fontless`, so it needs network access. The app imports shared legal logic from the sibling Astro project (`../web/src/lib`), so install that project's dependencies too (`npm ci` in `../web`).
+
+The corpus is not built here. The pipeline writes it from `data/`, in one command from `pipeline/`:
 
 ```sh
-stage="$(mktemp -d)"
-pnpm run export-corpus "$stage"
-
-export HUKUM_CORPUS_DIR="$(mktemp -d)"
-pnpm run corpus-release publish "$stage"
-pnpm run start
+cd ../pipeline
+uv run hukum-bersih export-corpus --publish ../web-solid/.corpus     # about 2 minutes
+cd ../web-solid
+HUKUM_CORPUS_DIR="$PWD/.corpus" pnpm run dev                          # or: pnpm run build && pnpm run start
 ```
 
-`export-corpus` writes the whole corpus into the staging directory, in this order: the laws (`laws/`), the collections (`collections/`: the consolidated texts, `perubahan.json`, version comparisons and the timeline of a collection with no merged text), the drafts (`drafts/`: timelines, documents and the comparison of every pair of versions that have text), the catalog (`law-catalog.json` and the `listings/` rows for the home page, `/uu/`, `/uu/tahun/` and `/ruu/`), and last the Pagefind index (`pagefind/`). The index step builds Pagefind records from the exported JSON (one per pasal, plus the opening, the closing and each Penjelasan entry that says more than "Cukup jelas"), so it needs no build and no server. Each record's URL is the anchor the reader renders (`src/lib/anchors.ts`), and `FRAGMENT_FILE_LIMIT` in `scripts/index-corpus.ts` bundles the per-record fragment files so the index stays a few thousand files. Use a new staging directory: the command does not replace an existing `laws/`.
+`export-corpus` writes the whole corpus into a temporary stage, in this order: the laws (`laws/`), the collections (`collections/`), the drafts (`drafts/`, with the comparison of every pair of versions that have text), the catalog (`law-catalog.json` and the `listings/` rows for the home page, `/uu/`, `/uu/tahun/` and `/ruu/`), and last the Pagefind index (`pagefind/`). `--publish` then stores the stage as `releases/<id>/` in the corpus folder (`hukum-bersih release publish`) and points `active-release` at it; the stage is deleted. The release id is the SHA-256 of every file, so an unchanged corpus gives the same id and publishing it again changes nothing. `.corpus/` is ignored by git.
 
-Open `http://localhost:3000/uu/11/2008/` for the reader and `http://localhost:3000/cari/` for full-text search. To switch to an earlier published release, run `pnpm run corpus-release activate <release-id>` with the same corpus directory.
+To keep the stage, give a folder as the first argument and publish it yourself:
+
+```sh
+uv run hukum-bersih export-corpus ../web-solid/.snapshots/stage
+uv run hukum-bersih release publish ../web-solid/.snapshots/stage --corpus ../web-solid/.corpus
+```
+
+Open `http://localhost:3000/uu/11/2008/` for the reader and `http://localhost:3000/cari/` for full-text search. Publishing a new release makes it the active one. To go back to an earlier one, run `uv run hukum-bersih release activate <release-id> --corpus ../web-solid/.corpus` (`--corpus` defaults to `HUKUM_CORPUS_DIR`); the next request reads it.
 
 Run `pnpm run check`, `pnpm exec tsc --noEmit`, and `pnpm run test --run` to check the preview code.
 
@@ -25,6 +32,6 @@ To prove a refactor changed no output, build, then run `CORPUS=.snapshots/before
 
 ## Cloudflare preview
 
-The manual **Deploy Solid preview** workflow builds the Worker and publishes the full corpus with `export-corpus`: every law, the collections, the draft bills and the search index. A subset would leave the draft and collection pages out, and `export-corpus` has no subset option. It targets the `hukum-bersih-solid-preview` Worker and R2 bucket.
+The manual **Deploy Solid preview** workflow builds the Worker, runs `hukum-bersih export-corpus --publish` in `pipeline/` for the full corpus (every law, the collections, the draft bills and the search index), and uploads that release to R2 with rclone (`.github/scripts/upload-release.sh`): the release files, then its ready marker, then the `active-release` pointer, so a reader never sees a half-uploaded release. A subset would leave the draft and collection pages out, and `export-corpus` has no subset option. It targets the `hukum-bersih-solid-preview` Worker and R2 bucket.
 
 Create the preview bucket and enable a `workers.dev` subdomain for the Cloudflare account. Configure the repository secrets `CLOUDFLARE_ACCOUNT_ID`, `SOLID_PREVIEW_WORKERS_API_TOKEN` for Worker deployment, and `SOLID_PREVIEW_R2_ACCESS_KEY_ID` and `SOLID_PREVIEW_R2_SECRET_ACCESS_KEY` for object access to the preview bucket. The workflow verifies the deployed article permalink, comparison permalink, a collection page, a draft page and the Pagefind index. Its summary records the preview URL and corpus release ID.

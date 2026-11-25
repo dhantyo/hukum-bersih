@@ -25,10 +25,7 @@ jobs:
       - uses: pnpm/action-setup@v4
         with:
           package_json_file: web-solid/package.json
-      - name: Build Akoma Ntoso XML
-        working-directory: pipeline
-        run: uv run hukum-bersih build-akn --out ../web/generated/akn
-      - name: Install shared corpus parser dependencies
+      - name: Install the Astro app's dependencies
         working-directory: web
         run: npm ci
       - run: pnpm install --frozen-lockfile
@@ -37,8 +34,14 @@ jobs:
           pnpm exec tsc --noEmit
           pnpm run test --run
           pnpm run build
+      - name: Install the pipeline
+        working-directory: pipeline
+        run: uv sync
+      # The pipeline reads data/ and writes the corpus: laws, collections, drafts, the catalog and the
+      # Pagefind index. `--publish` stores it as releases/<id>/ and points active-release at it.
       - name: Prepare preview corpus
-        run: pnpm run export-corpus "$RUNNER_TEMP/solid-corpus"
+        working-directory: pipeline
+        run: uv run hukum-bersih export-corpus --publish "$RUNNER_TEMP/solid-corpus"
       - name: Install rclone
         run: |
           sudo apt-get update
@@ -51,13 +54,12 @@ jobs:
           RCLONE_CONFIG_PREVIEW_PROVIDER: Cloudflare
           RCLONE_CONFIG_PREVIEW_ACCESS_KEY_ID: ${{ secrets.SOLID_PREVIEW_R2_ACCESS_KEY_ID }}
           RCLONE_CONFIG_PREVIEW_SECRET_ACCESS_KEY: ${{ secrets.SOLID_PREVIEW_R2_SECRET_ACCESS_KEY }}
-          HUKUM_CORPUS_REMOTE: preview:hukum-bersih-solid-preview
         run: |
           : "${CLOUDFLARE_ACCOUNT_ID:?Cloudflare account ID is required}"
           : "${RCLONE_CONFIG_PREVIEW_ACCESS_KEY_ID:?Preview R2 access key is required}"
           : "${RCLONE_CONFIG_PREVIEW_SECRET_ACCESS_KEY:?Preview R2 secret key is required}"
           export RCLONE_CONFIG_PREVIEW_ENDPOINT="https://$CLOUDFLARE_ACCOUNT_ID.r2.cloudflarestorage.com"
-          release="$(pnpm --silent run corpus-release publish "$RUNNER_TEMP/solid-corpus")"
+          release="$(../.github/scripts/upload-release.sh "$RUNNER_TEMP/solid-corpus" preview:hukum-bersih-solid-preview)"
           printf 'release=%s\n' "$release" >> "$GITHUB_OUTPUT"
       - name: Deploy preview Worker
         id: worker
