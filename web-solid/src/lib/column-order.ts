@@ -11,6 +11,8 @@ export interface ColumnOrderOptions {
   value?: string[];
   /** What each column is called to a screen reader, by key. */
   labels?: Record<string, string>;
+  /** `"grid"` for columns that wrap onto several rows. */
+  orientation?: "horizontal" | "grid";
   onValueChange?: (
     value: string[],
     details: ChangeDetails<ReorderReason>
@@ -50,6 +52,7 @@ export const columnOrder = definePrimitive({
   options: {
     value: "list",
     labels: "value",
+    orientation: "value",
     onValueChange: "callback",
   },
   controlled: ["value"],
@@ -67,7 +70,7 @@ export const columnOrder = definePrimitive({
       slot: "column",
       key: "value",
       draft: "moving",
-      orientation: () => "horizontal",
+      orientation: () => context.options().orientation ?? "horizontal",
       set: (value, details) => change("value", value, details),
       label: (key) => context.options().labels?.[key],
       message: announce,
@@ -92,7 +95,17 @@ export const columnOrder = definePrimitive({
       role: "button",
       focus: "native",
       press: { none: "Space and Enter pick the column up in keydown." },
-      keys: ["Enter", " ", "ArrowLeft", "ArrowRight", "Home", "End", "Escape"],
+      keys: [
+        "Enter",
+        " ",
+        "ArrowLeft",
+        "ArrowRight",
+        "ArrowUp",
+        "ArrowDown",
+        "Home",
+        "End",
+        "Escape",
+      ],
       attrs: (state, { api, key }) => ({
         type: "button",
         "aria-pressed": String(api.reorder.moving(state, key)),

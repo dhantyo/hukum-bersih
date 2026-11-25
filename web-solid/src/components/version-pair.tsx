@@ -1,16 +1,13 @@
 import { useLocation, useNavigate } from "@solidjs/router";
-import type { JSX } from "@solidjs/web";
 import * as stylex from "@stylexjs/stylex";
-import { createParts } from "@ui-sdk/solid/primitive";
-import { createEffect, createSignal, For, onSettled } from "solid-js";
+import { createEffect, createSignal, For } from "solid-js";
 
 import type { VersionChoice } from "../lib/collection-compare.ts";
-import { columnOrder } from "../lib/column-order.ts";
-import { springFrom } from "../lib/spring.ts";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
 import { color, media, shadow, size, space } from "../styles/tokens.stylex.ts";
 import { VersionPicker } from "./collection-version-picker.tsx";
+import { Grip, Handle, Root, SlidingColumn } from "./column-parts.tsx";
 
 const GRABBED = ":is([data-grabbed])";
 
@@ -126,113 +123,9 @@ const styles = stylex.create({
   },
 });
 
-const { Root, Column, Handle } = createParts(columnOrder, {
-  root: "div",
-  column: "div",
-  handle: "button",
-});
-
 const SLOTS = ["dari", "bandingkan"] as const;
 
 let heldVersion: string | undefined;
-
-const useSlide = (key: () => string, versions: () => string) => {
-  let el: HTMLElement | undefined;
-  let last: DOMRect | undefined;
-  let shown: string | undefined;
-
-  const remember = () => {
-    last = el?.getBoundingClientRect();
-  };
-
-  const spring = () => {
-    if (el === undefined) {
-      return;
-    }
-
-    const now = el.getBoundingClientRect();
-
-    if (last !== undefined) {
-      springFrom(el, last.left - now.left, last.top - now.top);
-    }
-
-    last = now;
-  };
-
-  createEffect(
-    () => [key(), versions()] as const,
-    ([, ids]) => {
-      if (ids === shown) {
-        spring();
-      } else {
-        remember();
-      }
-
-      shown = ids;
-    }
-  );
-
-  onSettled(() => {
-    remember();
-
-    const watcher = new MutationObserver(() => {
-      if (el?.dataset.grabbed === undefined) {
-        document.removeEventListener("pointermove", remember);
-        spring();
-      } else {
-        document.addEventListener("pointermove", remember);
-      }
-    });
-
-    if (el !== undefined) {
-      watcher.observe(el, {
-        attributes: true,
-        attributeFilter: ["data-grabbed"],
-      });
-    }
-
-    return () => {
-      watcher.disconnect();
-      document.removeEventListener("pointermove", remember);
-    };
-  });
-
-  return (node: HTMLElement) => {
-    el = node;
-  };
-};
-
-const PairColumn = (props: {
-  slot: string;
-  order: string;
-  versions: string;
-  class?: string;
-  children: JSX.Element;
-}) => {
-  const ref = useSlide(
-    () => props.order,
-    () => props.versions
-  );
-
-  return (
-    <Column value={props.slot} class={props.class} ref={ref}>
-      {props.children}
-    </Column>
-  );
-};
-
-const Grip = () => (
-  <svg viewBox="0 0 10 16" width="10" height="16" aria-hidden="true">
-    <g fill="currentColor">
-      <circle cx="3" cy="4" r="1.2" />
-      <circle cx="7" cy="4" r="1.2" />
-      <circle cx="3" cy="8" r="1.2" />
-      <circle cx="7" cy="8" r="1.2" />
-      <circle cx="3" cy="12" r="1.2" />
-      <circle cx="7" cy="12" r="1.2" />
-    </g>
-  </svg>
-);
 
 const SwapIcon = () => (
   <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
@@ -329,7 +222,7 @@ export const VersionPair = (props: {
           <>
             <For each={state.order}>
               {(slot, index) => (
-                <PairColumn
+                <SlidingColumn
                   slot={slot}
                   order={state.order.join(",")}
                   versions={`${props.left}|${props.right}`}
@@ -356,7 +249,7 @@ export const VersionPair = (props: {
                       );
                     }}
                   />
-                </PairColumn>
+                </SlidingColumn>
               )}
             </For>
             <a
