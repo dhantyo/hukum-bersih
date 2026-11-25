@@ -18,6 +18,8 @@ from ..akn.build import to_akn_tree
 from .koleksi import Collections, Koleksi, ordinal
 from .reader_text import reader_text
 from .regulations import STATUS_LABEL, Regulation, Regulations, cite_id, source_name
+from .search import SearchRecords
+from .titles import law_heading
 from .versions import version_rows
 from .write import UNDEFINED, js_object, write_json
 
@@ -231,9 +233,9 @@ def _missing_text(law: Regulation) -> str:
     return "unparsed" if law.parse_error else "pending"
 
 
-def export_laws(laws_data: Laws, stage: Path) -> str:
-    """Write ``laws/**/index.json`` for every UU into ``stage``; one law's reader text is
-    built from its Bluebell text in a worker process."""
+def export_laws(laws_data: Laws, stage: Path, search: SearchRecords) -> str:
+    """Write ``laws/**/index.json`` for every UU into ``stage``, and add the texts to
+    ``search``; one law's reader text is built from its Bluebell text in a worker process."""
     laws = [law for law in laws_data.regulations.all if law.type == "uu"]
     if not laws:
         raise ValueError("The corpus contains no laws")
@@ -252,6 +254,8 @@ def export_laws(laws_data: Laws, stage: Path) -> str:
                     raise ValueError(f"Invalid law path: {law.path}")
                 text = next(texts) if law.text_version else None
                 write_json(scratch / law.path / "index.json", laws_data.reader_law(law, text))
+                if text is not None:
+                    search.add_law(f"/{law.path}", law_heading(law.subject, law.title), text)
         os.rename(scratch, stage / "laws")
     finally:
         shutil.rmtree(scratch, ignore_errors=True)

@@ -20,6 +20,8 @@ from .compare import Comparison, LineDiff, PasalComparison, compare
 from .jstext import locale_key
 from .pasal import Pasal, PasalLine, collect_pasal
 from .reader_text import reader_text
+from .search import SearchRecords
+from .titles import draft_document_title
 from .write import UNDEFINED, write_json
 
 # a row below this similarity is flagged "weak": paired, but barely alike
@@ -134,7 +136,7 @@ def _check(pattern: re.Pattern[str], value: str) -> str:
     return value
 
 
-def _export_draft(data_dir: Path, bill: dict[str, Any], root: Path) -> None:
+def _export_draft(data_dir: Path, bill: dict[str, Any], root: Path, search: SearchRecords) -> None:
     directory = root / _check(_SLUG, bill["slug"])
     (directory / "documents").mkdir(parents=True)
     (directory / "comparisons").mkdir()
@@ -149,6 +151,10 @@ def _export_draft(data_dir: Path, bill: dict[str, Any], root: Path) -> None:
     texts = {d["id"]: _load_text(data_dir, bill, d) for d in documents}
     _write_documents(directory / "documents", bill, name, documents, texts)
     _write_comparisons(directory / "comparisons", bill, name, documents, texts)
+    for document in documents:
+        page = f"/ruu/{bill['slug']}/{document['id']}/"
+        search.add_draft_document(bill["slug"], page, draft_document_title(document),
+                                  texts[document["id"]].reader)
 
 
 def _write_documents(directory: Path, bill: dict[str, Any], name: str,
@@ -172,9 +178,9 @@ def _write_comparisons(directory: Path, bill: dict[str, Any], name: str,
                         "rows": comparison_rows(comparison)}, newline=False)
 
 
-def export_drafts(data_dir: Path, stage: Path) -> str:
-    """Write ``drafts/`` for every RUU into ``stage``."""
+def export_drafts(data_dir: Path, stage: Path, search: SearchRecords) -> str:
+    """Write ``drafts/`` for every RUU into ``stage``, and add the texts to ``search``."""
     bills = load_ruus(data_dir)
     for bill in bills:
-        _export_draft(data_dir, bill, stage / "drafts")
+        _export_draft(data_dir, bill, stage / "drafts", search)
     return f"Exported {len(bills)} drafts"

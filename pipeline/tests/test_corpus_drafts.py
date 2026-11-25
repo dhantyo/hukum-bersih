@@ -4,6 +4,7 @@
 import json
 
 from hukum_bersih.corpus.drafts import export_drafts
+from hukum_bersih.corpus.search import SearchRecords
 
 OLD_TEXT = """BODY
   CHAPTER I - KETENTUAN UMUM
@@ -60,7 +61,7 @@ def _data(tmp_path):
 def test_a_bill_gets_a_record_a_text_per_version_and_one_comparison(tmp_path):
     stage = tmp_path / "stage"
 
-    assert export_drafts(_data(tmp_path), stage) == "Exported 1 drafts"
+    assert export_drafts(_data(tmp_path), stage, SearchRecords()) == "Exported 1 drafts"
 
     names = sorted(p.relative_to(stage).as_posix() for p in stage.rglob("*.json"))
     assert names == [
@@ -73,7 +74,7 @@ def test_a_bill_gets_a_record_a_text_per_version_and_one_comparison(tmp_path):
 
 def test_the_record_lists_every_document_with_dates_as_written(tmp_path):
     stage = tmp_path / "stage"
-    export_drafts(_data(tmp_path), stage)
+    export_drafts(_data(tmp_path), stage, SearchRecords())
 
     raw = (stage / "drafts" / "contoh" / "index.json").read_bytes()
     record = json.loads(raw)
@@ -92,7 +93,7 @@ def test_the_record_lists_every_document_with_dates_as_written(tmp_path):
 
 def test_the_comparison_pairs_the_two_versions_and_marks_the_changed_words(tmp_path):
     stage = tmp_path / "stage"
-    export_drafts(_data(tmp_path), stage)
+    export_drafts(_data(tmp_path), stage, SearchRecords())
 
     pair = "ruu_contoh_2026-05_draft...ruu_contoh_2026-11-19_draft-final.json"
     comparison = json.loads((stage / "drafts" / "contoh" / "comparisons" / pair).read_text())
