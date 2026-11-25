@@ -1,15 +1,11 @@
 import { createMemo } from "solid-js";
 import type * as v from "valibot";
 
+import { comparisonRequest } from "./collection-request.ts";
 import { collectionComparisonQuery, collectionQuery } from "./queries.ts";
 import type { compareSearch } from "./schemas.ts";
 
 type CompareSearch = v.InferOutput<typeof compareSearch>;
-
-const comparisonRequest = ({ bandingkan, dari }: CompareSearch) => ({
-  bandingkan,
-  dari,
-});
 
 export const preloadCollection = (
   slug: string,
