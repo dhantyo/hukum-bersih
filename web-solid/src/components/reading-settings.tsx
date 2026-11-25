@@ -1,6 +1,12 @@
 import type { JSX } from "@solidjs/web";
 import * as stylex from "@stylexjs/stylex";
 import { Checkbox, CheckboxIndicator } from "@ui-sdk/solid/checkbox";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTitle,
+  PopoverTrigger,
+} from "@ui-sdk/solid/popover";
 import { Preferences, usePreference } from "@ui-sdk/solid/preferences";
 import {
   SegmentedControl,
@@ -22,17 +28,16 @@ import type { ReaderText } from "../server/records/reader-text.ts";
 import { css } from "../styles/css.ts";
 import { reading } from "../styles/reading.ts";
 import { color, font, size, space, shadow } from "../styles/tokens.stylex.ts";
+import { accessibility } from "../styles/visually-hidden.ts";
 
 const checked = ":is([data-checked])";
 
 const styles = stylex.create({
-  box: { position: "relative" },
-  summary: {
+  trigger: {
     borderColor: color.lineStrong,
     borderRadius: size.radius,
     borderStyle: "solid",
     borderWidth: 1,
-    listStyle: "none",
     placeItems: "center",
     backgroundColor: color.background,
     color: color.text,
@@ -52,14 +57,10 @@ const styles = stylex.create({
     backgroundColor: color.surface,
     boxShadow: shadow.pop,
     boxSizing: "border-box",
+    color: color.text,
     inlineSize: "min(23rem, calc(100vw - 2rem))",
-    insetInlineEnd: 0,
-    marginBlockStart: space.s2,
-    maxBlockSize: "calc(100vh - 6rem)",
-    position: "absolute",
-    zIndex: 20,
+    maxBlockSize: "var(--available-height)",
     overflowY: "auto",
-    top: "100%",
   },
   fieldset: {
     margin: 0,
@@ -355,14 +356,22 @@ const partsPresent = (text: ReaderText) => [
   ...(text.conclusions.length > 0 ? (["penutup"] as const) : []),
 ];
 
-/** The "Aa" menu: how law text is shown (DESIGN.md "Tampilan"). Offers the parts `text` has. */
+/** The "Aa" popover: how law text is shown (DESIGN.md "Tampilan"). Offers the parts `text` has. */
 export const ReadingSettings = (props: { text: ReaderText }) => (
   <Preferences preferences={readingPreferences}>
-    <details class={css(styles.box)}>
-      <summary class={css(styles.summary)} aria-label="Tampilan teks">
+    <Popover>
+      <PopoverTrigger class={css(styles.trigger)} aria-label="Tampilan teks">
         <span aria-hidden="true">Aa</span>
-      </summary>
-      <section class={css(styles.pop)} aria-label="Tampilan teks">
+      </PopoverTrigger>
+      <PopoverContent
+        class={css(styles.pop)}
+        align="end"
+        sideOffset={8}
+        collisionPadding={16}
+      >
+        <PopoverTitle class={css(accessibility.visuallyHidden)}>
+          Tampilan teks
+        </PopoverTitle>
         <FormatChoice />
         <Show when={props.text.penjelasan.length > 0}>
           <PenjelasanChoice />
@@ -374,7 +383,7 @@ export const ReadingSettings = (props: { text: ReaderText }) => (
           Setiap Orang berhak atas pengakuan, jaminan, perlindungan, dan
           kepastian hukum yang adil.
         </p>
-      </section>
-    </details>
+      </PopoverContent>
+    </Popover>
   </Preferences>
 );
