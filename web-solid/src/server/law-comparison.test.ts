@@ -159,6 +159,22 @@ describe(compareVersions, () => {
     expect(compare("").after).toStrictEqual({ art_1: ["2"] });
   });
 
+  it("keeps consecutive pasal the text does not have together, in number order", () => {
+    const record = {
+      "0-2": {
+        pasal: [
+          { ...pasalTwo, num: "2B" },
+          { ...pasalTwo, num: "2A" },
+          { ...pasalTwo, num: "2C" },
+        ],
+      },
+    };
+
+    expect(compare("", undefined, record).after).toStrictEqual({
+      art_1: ["2A", "2B", "2C"],
+    });
+  });
+
   it("states what a version lacks and shows the new wording as inserted", () => {
     const added = compare("").changed.find((entry) => entry.num === "2");
 
