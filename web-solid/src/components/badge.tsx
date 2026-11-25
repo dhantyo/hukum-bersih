@@ -1,7 +1,9 @@
 import * as stylex from "@stylexjs/stylex";
+import { Show } from "solid-js";
 import type { ParentProps } from "solid-js";
 
 import { css } from "../styles/css.ts";
+import { linkStyles } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 
 const styles = stylex.create({
@@ -12,10 +14,12 @@ const styles = stylex.create({
     borderWidth: 1,
     paddingInline: space.s2,
     alignItems: "center",
+    columnGap: space.s1,
     display: "inline-flex",
     fontSize: size.xs,
     fontWeight: 600,
     lineHeight: 1.6,
+    verticalAlign: "0.1em",
     whiteSpace: "nowrap",
   },
   ok: { color: color.ok },
@@ -34,9 +38,23 @@ const tones = new Map([
   ["leak", styles.gone],
 ]);
 
-/** A tone is a status or provenance key from the data; one not listed gets the quiet tone. */
-export const Badge = (props: ParentProps<{ tone: string }>) => (
-  <span class={css(styles.badge, tones.get(props.tone) ?? styles.gone)}>
-    {props.children}
-  </span>
-);
+/**
+ * A status or provenance pill: coloured text and border, no fill. A tone not listed gets the quiet
+ * tone; with an `href` the pill is a link.
+ */
+export const Badge = (props: ParentProps<{ tone: string; href?: string }>) => {
+  const classes = () => [styles.badge, tones.get(props.tone) ?? styles.gone];
+
+  return (
+    <Show
+      when={props.href}
+      fallback={<span class={css(classes())}>{props.children}</span>}
+    >
+      {(href) => (
+        <a class={css(linkStyles.base, classes())} href={href()}>
+          {props.children}
+        </a>
+      )}
+    </Show>
+  );
+};

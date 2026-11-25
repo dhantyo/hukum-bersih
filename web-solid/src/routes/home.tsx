@@ -20,7 +20,10 @@ const styles = stylex.create({
     paddingBlockStart: { [PHONE]: space.s6, default: space.s8 },
     maxWidth: "46rem",
   },
-  title: { fontSize: size.xxl, marginBlockEnd: space.s4 },
+  title: {
+    fontSize: `clamp(${size.xl}, 5vw, ${size.xxl})`,
+    marginBlockEnd: space.s4,
+  },
   lead: { color: color.textMuted, fontSize: size.lg },
   search: {
     gap: space.s2,
@@ -62,6 +65,7 @@ const styles = stylex.create({
     gridTemplateColumns: { [PHONE]: "1fr", default: "1fr 1fr" },
   },
   small: { fontSize: size.sm },
+  columnTitle: { marginBlockStart: space.s5 },
 });
 
 const Home = () => {
@@ -114,7 +118,7 @@ const Home = () => {
 
       <div class={css(styles.columns)}>
         <section>
-          <h2>RUU yang dilacak</h2>
+          <h2 class={css(styles.columnTitle)}>RUU yang dilacak</h2>
           <ul class={css(rowStyles.list)}>
             <For each={drafts()}>
               {(draft) => (
@@ -151,7 +155,7 @@ const Home = () => {
           </ul>
         </section>
         <section>
-          <h2>Undang-undang terbaru</h2>
+          <h2 class={css(styles.columnTitle)}>Undang-undang terbaru</h2>
           <LawRows laws={overview().recent.slice(0, LATEST_LAWS)} />
           <p class={css(styles.small)}>
             <a class={linkClass} href={slashed(Router.paths.uu)}>

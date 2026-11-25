@@ -73,4 +73,16 @@ export const size = stylex.defineVars({
   hangSm: "1.9rem",
   radius: "4px",
   radiusMd: "8px",
+  headerMin: "4rem",
+  search: "20rem",
+  drawer: "22rem",
+  tab: "1rem",
+});
+
+/** The breakpoints of DESIGN.md: up to 960px the panel is a drawer, up to 640px the type steps down. */
+export const media = stylex.defineConsts({
+  tablet: "@media (max-width: 960px)",
+  tabletScripted: "@media (max-width: 960px) and (scripting: enabled)",
+  phone: "@media (max-width: 640px)",
+  touch: "@media (pointer: coarse), (max-width: 640px)",
 });

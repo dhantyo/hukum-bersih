@@ -1,12 +1,12 @@
 import { useLinkState, useLocation } from "@solidjs/router";
 import * as stylex from "@stylexjs/stylex";
-import { Show, For } from "solid-js";
+import { For, Show } from "solid-js";
 
 import { slashed } from "../lib/paths.ts";
 import { Router } from "../router.tsx";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
-import { color, size, space } from "../styles/tokens.stylex.ts";
+import { color, media, size, space } from "../styles/tokens.stylex.ts";
 import { accessibility } from "../styles/visually-hidden.ts";
 
 const styles = stylex.create({
@@ -32,24 +32,30 @@ const styles = stylex.create({
   },
   bar: {
     marginInline: "auto",
-    paddingBlock: space.s3,
+    paddingBlock: { default: 0, [media.tablet]: space.s3 },
     paddingInline: space.s4,
     alignItems: "center",
-    columnGap: space.s4,
+    boxSizing: "border-box",
+    columnGap: space.s3,
     display: "flex",
     flexWrap: "wrap",
-    rowGap: space.s3,
+    rowGap: {
+      default: space.s5,
+      [media.tablet]: space.s3,
+      [media.phone]: space.s2,
+    },
     maxWidth: size.page,
-    minHeight: "4rem",
+    minHeight: size.headerMin,
   },
   brand: {
     textDecoration: "none",
     color: color.text,
+    flexBasis: { default: "auto", [media.phone]: "100%" },
     fontSize: size.lg,
     fontWeight: 700,
     letterSpacing: "-0.01em",
   },
-  nav: { gap: space.s4, display: "flex" },
+  nav: { columnGap: space.s4, display: "flex", marginInlineEnd: space.s3 },
   link: {
     paddingBlock: space.s1,
     textDecoration: "none",
@@ -67,10 +73,14 @@ const styles = stylex.create({
     color: color.link,
   },
   search: {
-    flexBasis: "20rem",
-    flexGrow: "0",
-    flexShrink: "1",
-    marginInlineStart: "auto",
+    flexBasis: {
+      default: size.search,
+      [media.tablet]: "calc(100% - 4rem)",
+    },
+    flexGrow: { default: 0, [media.tablet]: 1 },
+    flexShrink: 1,
+    marginInlineStart: { default: "auto", [media.tablet]: 0 },
+    order: { default: 0, [media.tablet]: 3 },
   },
   field: {
     font: "inherit",
@@ -80,12 +90,21 @@ const styles = stylex.create({
     borderWidth: 1,
     paddingBlock: space.s2,
     paddingInline: space.s3,
-    backgroundColor: color.backgroundSubtle,
+    backgroundColor: {
+      default: color.backgroundSubtle,
+      ":focus": color.background,
+    },
     boxSizing: "border-box",
     color: color.text,
     fontSize: size.sm,
+    outlineColor: color.link,
+    outlineOffset: { default: null, ":focus-visible": 2 },
+    outlineStyle: { default: null, ":focus-visible": "solid" },
+    outlineWidth: { default: null, ":focus-visible": 3 },
     width: "100%",
+    "::placeholder": { color: color.textMuted },
   },
+  form: { margin: 0 },
 });
 
 const sections = [
@@ -101,9 +120,9 @@ const SectionLink = (props: { href: string; label: string }) => {
   return (
     <a
       class={css(
+        linkStyles.base,
         styles.link,
-        link.active() && styles.linkActive,
-        linkStyles.base
+        link.active() && styles.linkActive
       )}
       href={props.href}
       aria-current={link.active() ? "page" : undefined}
@@ -119,12 +138,12 @@ export const SiteHeader = (props: { pending: boolean }) => {
 
   return (
     <>
-      <a class={css(styles.skip, linkStyles.base)} href="#main">
+      <a class={css(linkStyles.base, styles.skip)} href="#main">
         Langsung ke isi
       </a>
       <header class={css(styles.header)}>
         <div class={css(styles.bar)}>
-          <a class={css(styles.brand, linkStyles.base)} href={Router.paths()}>
+          <a class={css(linkStyles.base, styles.brand)} href={Router.paths()}>
             Hukum Bersih
           </a>
           <nav class={css(styles.nav)} aria-label="Utama">
@@ -136,7 +155,11 @@ export const SiteHeader = (props: { pending: boolean }) => {
           </nav>
           <Show when={location.pathname !== Router.paths()}>
             <search class={css(styles.search)} aria-label="Cari cepat">
-              <form action={slashed(Router.paths.cari)} method="get">
+              <form
+                class={css(styles.form)}
+                action={slashed(Router.paths.cari)}
+                method="get"
+              >
                 <label class={css(accessibility.visuallyHidden)} for="q">
                   Cari peraturan
                 </label>
