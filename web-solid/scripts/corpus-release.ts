@@ -12,6 +12,7 @@ import {
 } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
+import { Readable } from "node:stream";
 
 import * as v from "valibot";
 
@@ -98,11 +99,15 @@ const releaseDigest = async (directory: string) => {
 
   const hash = createHash("sha256");
 
-  for (const key of keys) {
-    // oxlint-disable-next-line no-await-in-loop -- the digest hashes files in key order
+  const lines = Readable.from(keys).map(async (key: string) => {
     const content = await readFile(path.join(directory, key));
     const checksum = createHash("sha256").update(content).digest("hex");
-    hash.update(`${JSON.stringify([key, checksum])}\n`);
+
+    return `${JSON.stringify([key, checksum])}\n`;
+  });
+
+  for await (const line of lines) {
+    hash.update(String(line));
   }
 
   return hash.digest("hex");
