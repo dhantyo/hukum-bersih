@@ -26,7 +26,9 @@ export const DraftStages = (props: { stages: DraftBill["stages"] }) => (
           narrow
           tone={index() === props.stages.length - 1 ? "filled" : "default"}
         >
-          <EventTime datetime={stage.date}>{tanggal(stage.date)}</EventTime>
+          <EventTime datetime={stage.date} tall>
+            {tanggal(stage.date)}
+          </EventTime>
           <EventTitle>
             <strong>{stageLabel(stage.stage)}</strong>
             {isPresent(stage.note) && (

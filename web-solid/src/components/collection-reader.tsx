@@ -70,6 +70,7 @@ const MergedCollection = (props: {
 }) => (
   <DocLayout
     crumbs={crumbs(props.collection, props.dated)}
+    flushCrumbs
     eyebrow={`${props.version.baseTitle}, versi gabungan`}
     title={props.version.title}
     subtitle={props.collection.named ? props.collection.title : undefined}
@@ -105,7 +106,7 @@ export const CollectionReader = (props: {
     when={props.collection.merged}
     fallback={
       <main>
-        <Breadcrumbs crumbs={crumbs(props.collection, props.dated)} />
+        <Breadcrumbs crumbs={crumbs(props.collection, props.dated)} flush />
         {props.collection.timeline !== null && (
           <CollectionHistory
             name={props.collection.name}

@@ -31,6 +31,7 @@ const styles = stylex.create({
     flexWrap: "wrap",
     fontSize: size.sm,
   },
+  crumbsFlush: { marginBlockStart: 0 },
   crumb: {
     marginBlock: { default: null, [media.touch]: `calc(-1 * ${space.s3})` },
     paddingBlock: { default: null, [media.touch]: space.s3 },
@@ -251,8 +252,11 @@ const Chevron = (props: { direction: "left" | "right" }) => (
   </svg>
 );
 
-export const Breadcrumbs = (props: { crumbs: Crumb[] }) => (
-  <nav class={css(styles.crumbs)} aria-label="Lokasi">
+export const Breadcrumbs = (props: { crumbs: Crumb[]; flush?: boolean }) => (
+  <nav
+    class={css(styles.crumbs, props.flush === true && styles.crumbsFlush)}
+    aria-label="Lokasi"
+  >
     <For each={props.crumbs}>
       {(crumb, index) => (
         <>
@@ -391,6 +395,8 @@ const useTablet = () => {
  */
 export const DocLayout = (props: {
   crumbs: Crumb[];
+  /** No space above the breadcrumbs, as on Astro pages that carry no search metadata. */
+  flushCrumbs?: boolean;
   eyebrow: string;
   title: string;
   subtitle?: string;
@@ -414,7 +420,7 @@ export const DocLayout = (props: {
 
   return (
     <main>
-      <Breadcrumbs crumbs={props.crumbs} />
+      <Breadcrumbs crumbs={props.crumbs} flush={props.flushCrumbs} />
       <header class={css(styles.head)}>
         <p class={css(styles.eyebrow)}>{props.eyebrow}</p>
         <h1 class={css(styles.title)}>{props.title}</h1>

@@ -28,8 +28,12 @@ const styles = stylex.create({
     borderStyle: "solid",
     borderWidth: 1,
     gap: space.s1,
+    marginBlock: space.s3,
     textDecoration: "none",
-    backgroundColor: { default: null, ":hover": color.linkBackground },
+    backgroundColor: {
+      default: color.backgroundSubtle,
+      ":hover": color.linkBackground,
+    },
     blockSize: "100%",
     boxSizing: "border-box",
     color: color.text,

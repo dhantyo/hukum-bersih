@@ -11,13 +11,14 @@ import { isPresent } from "../lib/text.ts";
 import type { CollectionVersion } from "../server/records/collection-version.ts";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
+import { versionEntry } from "../styles/markers.stylex.ts";
 import { panel } from "../styles/panel.ts";
 import { color, media, size, space } from "../styles/tokens.stylex.ts";
 
 type Version = CollectionVersion["versions"][number];
 
 const OPEN = ":is([data-open])";
-const HOVERED = stylex.when.ancestor(":hover");
+const HOVERED = stylex.when.ancestor(":hover", versionEntry);
 
 const styles = stylex.create({
   trigger: {
@@ -164,7 +165,7 @@ const VersionRow = (props: { version: Version; current: string }) => {
       <span class={dotClass(props.version, here())} aria-hidden="true" />
       {isPresent(props.version.href) && !here() ? (
         <a
-          class={css(linkStyles.base, styles.entry, stylex.defaultMarker())}
+          class={css(linkStyles.base, styles.entry, versionEntry)}
           href={props.version.href}
         >
           <VersionName version={props.version} here={false} />

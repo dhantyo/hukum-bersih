@@ -11,6 +11,7 @@ import {
 } from "@ui-sdk/solid/timeline";
 
 import { css } from "../styles/css.ts";
+import { timelineItem } from "../styles/markers.stylex.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 
 const DOT = "12px";
@@ -36,7 +37,7 @@ const styles = stylex.create({
   },
   itemNarrow: {
     columnGap: `calc(${space.s5} - ${DOT})`,
-    paddingBlockEnd: { [LAST]: 0, default: space.s4 },
+    paddingBlockEnd: space.s4,
   },
   marker: {
     borderColor: color.link,
@@ -58,7 +59,10 @@ const styles = stylex.create({
   missing: { borderColor: color.gone, borderStyle: "dashed" },
   connector: {
     backgroundColor: color.line,
-    display: { default: "block", [stylex.when.ancestor(LAST)]: "none" },
+    display: {
+      default: "block",
+      [stylex.when.ancestor(LAST, timelineItem)]: "none",
+    },
     inlineSize: 2,
     insetBlockEnd: "-0.3rem",
     insetBlockStart: "0.3rem",
@@ -76,6 +80,7 @@ const styles = stylex.create({
     fontSize: size.xs,
     fontVariantNumeric: "tabular-nums",
   },
+  timeTall: { lineHeight: "1.6rem" },
 });
 
 export type EventTone =
@@ -119,7 +124,7 @@ export const HistoryEvent = (props: {
     class={css(
       styles.item,
       props.narrow === true && styles.itemNarrow,
-      stylex.defaultMarker()
+      timelineItem
     )}
   >
     <TimelineMarker
@@ -134,10 +139,16 @@ export const HistoryEvent = (props: {
 
 export const EventTime = (props: {
   datetime?: string;
+  /** Room for a full line of body text, as when the date sits on a line of its own. */
+  tall?: boolean;
   children: JSX.Element;
 }) => (
   <TimelineTime
-    class={css(styles.content, styles.time)}
+    class={css(
+      styles.content,
+      styles.time,
+      props.tall === true && styles.timeTall
+    )}
     datetime={props.datetime}
   >
     {props.children}
