@@ -1,5 +1,6 @@
 import * as stylex from "@stylexjs/stylex";
 
+import { headerOffset } from "./header-offset.stylex.ts";
 import { color, size, space } from "./tokens.stylex.ts";
 
 const PHONE = "@media (max-width: 760px)";
@@ -51,7 +52,7 @@ export const synopsisStyles = stylex.create({
     borderBottomColor: color.line,
     borderBottomStyle: "solid",
     borderBottomWidth: 2,
-    top: 0,
+    top: headerOffset.shown,
   },
   chapter: {
     paddingBlock: space.s2,

@@ -11,6 +11,7 @@ import type {
 } from "../server/law-comparison.ts";
 import { changes } from "../styles/changes.ts";
 import { css } from "../styles/css.ts";
+import { headerOffset } from "../styles/header-offset.stylex.ts";
 import { linkStyles } from "../styles/link.ts";
 import { color, font, size, space } from "../styles/tokens.stylex.ts";
 import { VersionPair } from "./version-pair.tsx";
@@ -27,7 +28,7 @@ const styles = stylex.create({
     marginBlockEnd: space.s5,
     position: { default: "sticky", "@media (max-width: 960px)": "static" },
     zIndex: 4,
-    top: 0,
+    top: headerOffset.shown,
   },
   top: {
     gap: `${space.s1} ${space.s4}`,
