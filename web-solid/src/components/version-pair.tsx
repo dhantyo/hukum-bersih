@@ -1,16 +1,21 @@
 import { useLocation, useNavigate } from "@solidjs/router";
+import type { JSX } from "@solidjs/web";
 import * as stylex from "@stylexjs/stylex";
 import { createParts } from "@ui-sdk/solid/primitive";
-import { createEffect, createSignal, For } from "solid-js";
+import { createEffect, createSignal, For, onSettled } from "solid-js";
 
 import type { VersionChoice } from "../lib/collection-compare.ts";
 import { columnOrder } from "../lib/column-order.ts";
+import { springFrom } from "../lib/spring.ts";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
 import { color, media, shadow, size, space } from "../styles/tokens.stylex.ts";
 import { VersionPicker } from "./collection-version-picker.tsx";
 
 const GRABBED = ":is([data-grabbed])";
+
+const SPRING_EASING =
+  "linear(0, 0.38 8%, 0.82 16%, 1.08 26%, 1.1 32%, 1.05 42%, 0.99 56%, 1.003 72%, 1)";
 
 const styles = stylex.create({
   form: { margin: 0 },
@@ -39,6 +44,10 @@ const styles = stylex.create({
     gap: space.s1,
     paddingBlock: "0.1rem",
     paddingInline: `${space.s2} ${space.s1}`,
+    transition: {
+      default: `box-shadow 0.25s ease, scale 0.45s ${SPRING_EASING}`,
+      "@media (prefers-reduced-motion: reduce)": "none",
+    },
     alignItems: "center",
     backgroundColor: color.background,
     boxShadow: {
@@ -49,6 +58,7 @@ const styles = stylex.create({
     justifySelf: "center",
     maxInlineSize: "100%",
     position: "relative",
+    scale: { [GRABBED]: 1.05, default: 1 },
     transform: {
       [GRABBED]: "translate(var(--drag-x, 0), var(--drag-y, 0))",
       default: null,
@@ -125,6 +135,91 @@ const { Root, Column, Handle } = createParts(columnOrder, {
 const SLOTS = ["dari", "bandingkan"] as const;
 
 let heldVersion: string | undefined;
+
+const useSlide = (key: () => string, versions: () => string) => {
+  let el: HTMLElement | undefined;
+  let last: DOMRect | undefined;
+  let shown: string | undefined;
+
+  const remember = () => {
+    last = el?.getBoundingClientRect();
+  };
+
+  const spring = () => {
+    if (el === undefined) {
+      return;
+    }
+
+    const now = el.getBoundingClientRect();
+
+    if (last !== undefined) {
+      springFrom(el, last.left - now.left, last.top - now.top);
+    }
+
+    last = now;
+  };
+
+  createEffect(
+    () => [key(), versions()] as const,
+    ([, ids]) => {
+      if (ids === shown) {
+        spring();
+      } else {
+        remember();
+      }
+
+      shown = ids;
+    }
+  );
+
+  onSettled(() => {
+    remember();
+
+    const watcher = new MutationObserver(() => {
+      if (el?.dataset.grabbed === undefined) {
+        document.removeEventListener("pointermove", remember);
+        spring();
+      } else {
+        document.addEventListener("pointermove", remember);
+      }
+    });
+
+    if (el !== undefined) {
+      watcher.observe(el, {
+        attributes: true,
+        attributeFilter: ["data-grabbed"],
+      });
+    }
+
+    return () => {
+      watcher.disconnect();
+      document.removeEventListener("pointermove", remember);
+    };
+  });
+
+  return (node: HTMLElement) => {
+    el = node;
+  };
+};
+
+const PairColumn = (props: {
+  slot: string;
+  order: string;
+  versions: string;
+  class?: string;
+  children: JSX.Element;
+}) => {
+  const ref = useSlide(
+    () => props.order,
+    () => props.versions
+  );
+
+  return (
+    <Column value={props.slot} class={props.class} ref={ref}>
+      {props.children}
+    </Column>
+  );
+};
 
 const Grip = () => (
   <svg viewBox="0 0 10 16" width="10" height="16" aria-hidden="true">
@@ -234,7 +329,12 @@ export const VersionPair = (props: {
           <>
             <For each={state.order}>
               {(slot, index) => (
-                <Column value={slot} class={css(styles.column)}>
+                <PairColumn
+                  slot={slot}
+                  order={state.order.join(",")}
+                  versions={`${props.left}|${props.right}`}
+                  class={css(styles.column)}
+                >
                   <Handle
                     value={slot}
                     data-version={idOf(slot)}
@@ -256,7 +356,7 @@ export const VersionPair = (props: {
                       );
                     }}
                   />
-                </Column>
+                </PairColumn>
               )}
             </For>
             <a
