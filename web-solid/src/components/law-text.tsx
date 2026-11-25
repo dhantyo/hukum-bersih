@@ -957,7 +957,7 @@ export const LawText = (props: {
           }}
         >
           <summary class={css(styles.preambleSummary, foldHead)}>
-            <FoldChevron />
+            <FoldChevron flexItem />
             <span class={css(styles.summaryTitle)}>Pembukaan</span>
             <span class={css(styles.summaryMeta)}>
               {openingSummary(props.text.preamble).join(" · ")}

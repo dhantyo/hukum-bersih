@@ -45,12 +45,12 @@ const styles = stylex.create({
     },
     display: {
       [PRINT]: "none",
-      default: null,
+      default: "inline-block",
     },
     inlineSize: 16,
     insetInlineStart: {
       default: `calc(-1 * ${space.s6})`,
-      [media.tablet]: null,
+      [media.tablet]: "auto",
     },
     marginBlockStart: "calc((1lh - 16px) / 2)",
     marginInlineEnd: { default: null, [media.tablet]: space.s1 },
@@ -76,6 +76,7 @@ const styles = stylex.create({
       transform: "rotate(-45deg)",
     },
   },
+  flexItem: { marginInlineEnd: 0 },
   permalink: {
     paddingInline: space.s1,
     textDecoration: "none",
@@ -97,8 +98,11 @@ const styles = stylex.create({
 });
 
 /** The arrow hanging in the left margin of a fold's heading (before the text on narrow screens). */
-export const FoldChevron = () => (
-  <span class={css(styles.chevron)} aria-hidden="true" />
+export const FoldChevron = (props: { flexItem?: boolean }) => (
+  <span
+    class={css(styles.chevron, props.flexItem === true && styles.flexItem)}
+    aria-hidden="true"
+  />
 );
 
 /** The "#" that links to a pasal, shown on hover and on keyboard focus (always on touch). */
