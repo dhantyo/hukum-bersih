@@ -9,6 +9,7 @@ import type {
   Piece,
   VersionComparison,
 } from "../server/law-comparison.ts";
+import { changes } from "../styles/changes.ts";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
 import { color, font, size, space } from "../styles/tokens.stylex.ts";
@@ -70,15 +71,6 @@ const styles = stylex.create({
   ins: { color: color.ok },
   del: { color: color.delText },
   mod: { color: color.warn },
-  insText: {
-    textDecoration: "none",
-    backgroundColor: color.insBackground,
-    color: color.insText,
-  },
-  delText: {
-    backgroundColor: color.delBackground,
-    color: color.delText,
-  },
   modText: {
     borderRadius: 2,
     backgroundColor: color.modBackground,
@@ -199,8 +191,8 @@ const Legend = () => (
       diubah
     </span>
     <span class={css(styles.legendItem)}>
-      <ins class={css(styles.insText)}>disisipkan</ins>{" "}
-      <del class={css(styles.delText)}>dihapus</del>{" "}
+      <ins class={css(changes.ins)}>disisipkan</ins>{" "}
+      <del class={css(changes.del)}>dihapus</del>{" "}
       <mark class={css(styles.modText)}>diubah</mark>{" "}
       <span class={css(styles.none)}>tidak ada padanan</span>
     </span>
@@ -222,10 +214,10 @@ const PieceText = (props: { piece: Piece }) => (
   >
     <Match when={props.piece.kind === "same"}>{props.piece.value}</Match>
     <Match when={props.piece.kind === "ins"}>
-      <ins class={css(styles.insText)}>{props.piece.value}</ins>
+      <ins class={css(changes.ins)}>{props.piece.value}</ins>
     </Match>
     <Match when={props.piece.kind === "del"}>
-      <del class={css(styles.delText)}>{props.piece.value}</del>
+      <del class={css(changes.del)}>{props.piece.value}</del>
     </Match>
     <Match when={props.piece.kind === "gone"}>
       <span class={css(styles.gone)}>{props.piece.value}</span>

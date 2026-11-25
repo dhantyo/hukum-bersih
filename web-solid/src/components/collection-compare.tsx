@@ -8,24 +8,54 @@ import type {
   CollectionCompareView,
 } from "../lib/collection-compare.ts";
 import { pasalKey } from "../lib/display.ts";
+import { changes } from "../styles/changes.ts";
 import { css } from "../styles/css.ts";
-import { linkClass } from "../styles/link.ts";
-import { color, font, space } from "../styles/tokens.stylex.ts";
-import { VersionPicker, versionName } from "./collection-version-picker.tsx";
+import { linkStyles } from "../styles/link.ts";
+import { reading } from "../styles/reading.ts";
+import { color, size, space } from "../styles/tokens.stylex.ts";
+import { versionName } from "./collection-version-picker.tsx";
+import { VersionPair } from "./version-pair.tsx";
 
 const styles = stylex.create({
   bar: {
-    gap: space.s3,
-    alignItems: "end",
-    display: "flex",
-    flexWrap: "wrap",
-  },
-  note: {
-    padding: space.s2,
-    borderColor: color.warn,
-    borderRadius: 4,
+    padding: space.s3,
+    borderColor: color.line,
+    borderRadius: size.radiusMd,
     borderStyle: "solid",
     borderWidth: 1,
+    marginBlock: space.s3,
+    backgroundColor: color.backgroundSubtle,
+  },
+  presets: {
+    gap: space.s2,
+    marginBlock: space.s3,
+    alignItems: "center",
+    display: "flex",
+    flexWrap: "wrap",
+    fontSize: size.sm,
+  },
+  preset: {
+    borderColor: {
+      default: color.lineStrong,
+      ":hover": color.link,
+    },
+    borderRadius: 999,
+    borderStyle: "solid",
+    borderWidth: 1,
+    paddingBlock: "0.2rem",
+    paddingInline: space.s3,
+    textDecoration: "none",
+    color: color.text,
+  },
+  summary: { margin: 0, color: color.textMuted, fontSize: size.sm },
+  note: {
+    padding: `${space.s2} ${space.s3}`,
+    borderColor: color.warn,
+    borderRadius: size.radiusMd,
+    borderStyle: "solid",
+    borderWidth: 1,
+    fontSize: size.sm,
+    maxInlineSize: size.measure,
   },
   pasal: {
     paddingBlock: space.s3,
@@ -33,26 +63,18 @@ const styles = stylex.create({
     borderBottomStyle: "solid",
     borderBottomWidth: 1,
   },
+  title: { marginBlock: `0 ${space.s2}`, fontSize: size.base },
   status: { color: color.textMuted, fontWeight: "normal" },
   line: {
-    gap: space.s1,
-    marginBlock: space.s2,
+    marginBlock: `0 ${space.s2}`,
+    columnGap: "0.3rem",
     display: "grid",
-    fontFamily: font.sourceSerif,
-    gridTemplateColumns: "minmax(2rem, max-content) minmax(0, 1fr)",
+    gridTemplateColumns: `minmax(${size.hang}, max-content) minmax(0, 1fr)`,
+    lineHeight: 1.6,
   },
-  indent1: { marginInlineStart: "2rem" },
-  indent2: { marginInlineStart: "4rem" },
-  indent3: { marginInlineStart: "6rem" },
-  inserted: {
-    textDecoration: "none",
-    backgroundColor: color.insBackground,
-    color: color.insText,
-  },
-  deleted: {
-    backgroundColor: color.delBackground,
-    color: color.delText,
-  },
+  indent1: { marginInlineStart: size.hang },
+  indent2: { marginInlineStart: `calc(2 * ${size.hang})` },
+  indent3: { marginInlineStart: `calc(3 * ${size.hang})` },
   muted: { color: color.textMuted },
 });
 
@@ -67,17 +89,23 @@ const statusText: Record<ChangedStatus, string> = {
 const indents = [undefined, styles.indent1, styles.indent2, styles.indent3];
 
 const Line = (props: { line: ChangedLine }) => (
-  <p class={css(styles.line, indents[Math.min(props.line.indent, 3)])}>
+  <p
+    class={css(
+      reading.law,
+      styles.line,
+      indents[Math.min(props.line.indent, 3)]
+    )}
+  >
     <span>{props.line.num}</span>
     <span>
       <For each={props.line.parts}>
         {(part) => {
           if (part.added) {
-            return <ins class={css(styles.inserted)}>{part.value}</ins>;
+            return <ins class={css(changes.ins)}>{part.value}</ins>;
           }
 
           return part.removed ? (
-            <del class={css(styles.deleted)}>{part.value}</del>
+            <del class={css(changes.del)}>{part.value}</del>
           ) : (
             part.value
           );
@@ -92,7 +120,7 @@ const ChangedArticle = (props: { pasal: ChangedPasal }) => (
     id={`banding-${pasalKey(props.pasal.num)}`}
     class={css(styles.pasal)}
   >
-    <h3>
+    <h3 class={css(styles.title)}>
       Pasal {props.pasal.num}{" "}
       <span class={css(styles.status)}>· {statusText[props.pasal.status]}</span>
     </h3>
@@ -115,7 +143,7 @@ const Result = (props: { comparison: CollectionCompareView }) => {
   return (
     <>
       {props.comparison.selected === null ? null : (
-        <p aria-live="polite">
+        <p class={css(styles.summary)} aria-live="polite">
           {props.comparison.changed.length} pasal berbeda antara{" "}
           {named(props.comparison.selected.from)} dan{" "}
           {named(props.comparison.selected.to)}.
@@ -139,8 +167,9 @@ const pairLink = (from: string, to: string) =>
   `?dari=${from}&bandingkan=${to}#banding`;
 
 /**
- * Compare two versions of a collection: pick them (a ui-sdk Select each, submitted by a GET
- * form) or follow a quick link; the pasal that differ are rendered by the server.
+ * Compare two versions of a collection: the same pair of pickers as the law page (drag a
+ * column across to swap, or pick another version), or follow a quick link; the pasal that
+ * differ are rendered by the server.
  */
 export const CollectionCompare = (props: {
   comparison: CollectionCompareView;
@@ -155,32 +184,32 @@ export const CollectionCompare = (props: {
       <h2 id="banding-title">Bandingkan versi</h2>
       <p>
         Pilih dua versi, lalu lihat pasal yang berubah di antara keduanya. Yang{" "}
-        <ins class={css(styles.inserted)}>baru</ins> dan yang{" "}
-        <del class={css(styles.deleted)}>dihapus</del> ditandai dibanding versi
+        <ins class={css(changes.ins)}>baru</ins> dan yang{" "}
+        <del class={css(changes.del)}>dihapus</del> ditandai dibanding versi
         pertama.
       </p>
-      <form method="get" action="#banding" class={css(styles.bar)}>
-        <VersionPicker
-          name="dari"
-          label="Versi pertama"
+      <div class={css(styles.bar)}>
+        <VersionPair
           versions={props.comparison.versions}
-          value={props.comparison.selected?.from ?? first()}
+          left={props.comparison.selected?.from ?? first()}
+          right={props.comparison.selected?.to ?? last()}
+          action="#banding"
+          submitLabel="Bandingkan"
+          href={pairLink}
         />
-        <VersionPicker
-          name="bandingkan"
-          label="Versi kedua"
-          versions={props.comparison.versions}
-          value={props.comparison.selected?.to ?? last()}
-        />
-        <button type="submit">Bandingkan</button>
-      </form>
-      <p>
-        Cepat:{" "}
-        <a class={linkClass} href={pairLink(first(), last())}>
+      </div>
+      <p class={css(styles.presets)}>
+        <span class={css(styles.muted)}>Cepat:</span>
+        <a
+          class={css(linkStyles.base, styles.preset)}
+          href={pairLink(first(), last())}
+        >
           Asli dan terbaru
-        </a>{" "}
-        ·{" "}
-        <a class={linkClass} href={pairLink(before(), last())}>
+        </a>
+        <a
+          class={css(linkStyles.base, styles.preset)}
+          href={pairLink(before(), last())}
+        >
           Perubahan terakhir
         </a>
       </p>
