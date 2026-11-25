@@ -9,6 +9,7 @@ import re
 import shutil
 import tempfile
 from concurrent.futures import ProcessPoolExecutor
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
@@ -29,15 +30,21 @@ def _undefined_if_none(value: Any) -> Any:
     return UNDEFINED if value is None else value
 
 
-def _has_text(law: Regulation) -> bool:
-    version = law.text_version
-    return version is not None and (law.folder / version["text"]).exists()
-
-
 def _tree_text(job: tuple[Path, str]) -> dict[str, Any]:
     """The reader text of one stored Bluebell text (runs in a worker process)."""
     path, akn = job
     return reader_text(to_akn_tree(path.read_text(encoding="utf-8"), akn))
+
+
+@dataclass(frozen=True)
+class Amendment:
+    """An amendment of a law that we can read pasal by pasal."""
+
+    by: str                         # the id of the amending law
+    date: str | None
+    order: int
+    gap: int                        # amendments before this one that we do not have
+    data: dict                      # its instructions, as ``amendments.split`` returns them
 
 
 class Laws:
@@ -60,7 +67,7 @@ class Laws:
 
     # -- amendments ------------------------------------------------------------------------
 
-    def _amending_law(self, law_id: str) -> dict | None:
+    def amending_law(self, law_id: str) -> dict | None:
         """The instructions of an amending law, split by ``amendments.split``."""
         if law_id not in self._amending:
             law = self.regulations.get(law_id)
@@ -71,18 +78,30 @@ class Laws:
 
     def has_amendment_steps(self, law: Regulation) -> bool:
         """Whether a law has amendments we can show pasal by pasal."""
-        return any((self._amending_law(i) or {}).get("amends") == law.id
+        return any((self.amending_law(i) or {}).get("amends") == law.id
                    for i in law.relationships["amended_by"])
+
+    def readable_amendments(self, law: Regulation) -> list[Amendment]:
+        """Every amendment of ``law`` whose instructions we could read, oldest first
+        (``amendmentSteps`` in ``web/src/lib/amendments.ts``)."""
+        found = []
+        seen = 0                                     # amendments counted so far, read or not
+        for event in self.regulations.history(law):
+            if event.kind != "diubah" or not event.by:
+                continue
+            order = seen + 1 if event.order is None else event.order
+            gap = max(0, order - seen - 1)
+            seen = max(seen + 1, order)
+            data = self.amending_law(event.by)
+            if data and data["amends"] == law.id:
+                found.append(Amendment(event.by, event.date, order, gap, data))
+        return found
 
     def compared_anchors(self, law: Regulation) -> set[str]:
         """The anchors ("uu_3_2020-pasal-4") of every pasal an amendment of ``law`` changes."""
-        anchors = set()
-        for event in self.regulations.history(law):
-            data = self._amending_law(event.by) if event.kind == "diubah" else None
-            if data and data["amends"] == law.id:
-                anchors.update(f"{event.by}-pasal-{p['num']}"
-                               for instruction in data["instructions"] for p in instruction["pasal"])
-        return anchors
+        return {f"{amendment.by}-pasal-{p['num']}"
+                for amendment in self.readable_amendments(law)
+                for instruction in amendment.data["instructions"] for p in instruction["pasal"]}
 
     def short_name(self, law: Regulation) -> str | None:
         """"UU ITE" for the base law of a named collection, "Perubahan Kedua UU ITE" for an
@@ -103,9 +122,9 @@ class Laws:
 
     # -- the pieces of a record --------------------------------------------------------------
 
-    def _rows_of(self, koleksi: Koleksi) -> list:
+    def rows_of(self, koleksi: Koleksi) -> list:
         if koleksi.slug not in self._rows:
-            self._rows[koleksi.slug] = version_rows(koleksi, _has_text(koleksi.base))
+            self._rows[koleksi.slug] = version_rows(koleksi, koleksi.base.has_text)
         return self._rows[koleksi.slug]
 
     def _revokers(self, law: Regulation) -> list[dict]:
@@ -146,7 +165,7 @@ class Laws:
 
     def _family(self, law: Regulation, koleksi: Koleksi, has_text: bool) -> dict:
         is_base = koleksi.base.id == law.id
-        rows = self._rows_of(koleksi)
+        rows = self.rows_of(koleksi)
         current = law.history["points"][0]["id"] if is_base and law.history else None
         latest = rows[-1] if rows else None
         return {
@@ -166,7 +185,7 @@ class Laws:
 
     def _perubahan_target(self, law: Regulation, has_text: bool) -> str:
         koleksi = self.collections.of(law.id)
-        rows = self._rows_of(koleksi) if koleksi else []
+        rows = self.rows_of(koleksi) if koleksi else []
         last = rows[-1] if rows else None
         own = f"/{law.path}"
         if last and last.href and last.point and last.point["kind"] == "gabungan":
@@ -212,15 +231,14 @@ def _missing_text(law: Regulation) -> str:
     return "unparsed" if law.parse_error else "pending"
 
 
-def export_laws(data_dir: Path, stage: Path) -> str:
+def export_laws(laws_data: Laws, stage: Path) -> str:
     """Write ``laws/**/index.json`` for every UU into ``stage``; one law's reader text is
     built from its Bluebell text in a worker process."""
-    laws_data = Laws(data_dir)
     laws = [law for law in laws_data.regulations.all if law.type == "uu"]
     if not laws:
         raise ValueError("The corpus contains no laws")
     for law in laws:
-        if law.text_version and not _has_text(law):
+        if law.text_version and not law.has_text:
             raise ValueError(f"The text file is missing for {law.id}")
     jobs = [(law.folder / law.text_version["text"], law.akn) for law in laws if law.text_version]
 

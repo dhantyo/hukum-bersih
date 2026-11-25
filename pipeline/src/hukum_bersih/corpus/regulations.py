@@ -79,6 +79,12 @@ class Regulation:
         """The version the reader shows: the first one with a text file."""
         return next((v for v in self.versions if v.get("text")), None)
 
+    @property
+    def has_text(self) -> bool:
+        """Whether the text file of ``text_version`` exists."""
+        version = self.text_version
+        return version is not None and (self.folder / version["text"]).exists()
+
 
 @dataclass(frozen=True)
 class HistoryEvent:
@@ -86,6 +92,7 @@ class HistoryEvent:
     kind: str                       # diundangkan | diubah | dicabut | ditetapkan
     by: str | None = None           # the id of the law that did it
     changes: dict | None = None
+    order: int | None = None        # diubah: which amendment of the law this is, when it says
 
 
 def cite_id(law_id: str) -> str:
@@ -189,7 +196,7 @@ class Regulations:
             by = self.get(by_id)
             entry = amends_entry(by, law.id) or {}
             events.append(HistoryEvent(by.tanggal_penetapan if by else None, "diubah", by_id,
-                                       entry.get("changes")))
+                                       entry.get("changes"), entry.get("order")))
         for key, kind in (("revoked_by", "dicabut"), ("enacted_by", "ditetapkan")):
             for by_id in related[key]:
                 by = self.get(by_id)

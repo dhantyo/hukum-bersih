@@ -9,7 +9,7 @@ import yaml
 from recfactory import make_record, make_version
 from test_amendments import AMENDING
 
-from hukum_bersih.corpus.laws import export_laws
+from hukum_bersih.corpus.laws import Laws, export_laws
 from hukum_bersih.history import build as build_history
 
 # Old spelling stays as printed. Pasal 7 is printed twice (a renumbered law), and Pasal 27A
@@ -72,7 +72,7 @@ def stage(tmp_path):
          relationships=_relations(amends=[{"id": "uu_4_2009", "order": 1, "changes": changes}]))
     _law(data, "uu_9_2010", None, tentang="PERTANIAN", pdf_quality="scan")
     build_history(data)
-    export_laws(data, out)
+    export_laws(Laws(data), out)
     return out
 
 
