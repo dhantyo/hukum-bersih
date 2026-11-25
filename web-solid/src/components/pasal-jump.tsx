@@ -8,10 +8,10 @@ import {
   ComboboxLabel,
   ComboboxList,
 } from "@ui-sdk/solid/combobox";
-import type { ListItem } from "@ui-sdk/solid/combobox";
+import type { ListAnnouncement, ListItem } from "@ui-sdk/solid/combobox";
 import { createSignal, For } from "solid-js";
 
-import { pasalKey } from "../../../web/src/lib/display.ts";
+import { pasalStartsWith } from "../lib/pasal-match.ts";
 import { css } from "../styles/css.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 
@@ -64,12 +64,10 @@ const styles = stylex.create({
   empty: { padding: space.s2, color: color.warn },
 });
 
-const LEADING_PASAL = /^\s*pasal\s*/iu;
-
 const startsLikeTyped = (item: ListItem, query: string) =>
-  pasalKey(item.label).startsWith(pasalKey(query.replace(LEADING_PASAL, "")));
+  pasalStartsWith(item.label, query);
 
-const announce = (change: { type: string; count?: number }) => {
+const announce = (change: ListAnnouncement) => {
   if (change.type !== "results") {
     return null;
   }
