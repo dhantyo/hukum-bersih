@@ -1,7 +1,7 @@
 import { For, Show } from "solid-js";
 
-import { pasalKey } from "../../../web/src/lib/display.ts";
-import { tanggal } from "../../../web/src/lib/labels.ts";
+import { pasalKey } from "../lib/display.ts";
+import { tanggal } from "../lib/labels.ts";
 import { isPresent } from "../lib/text.ts";
 import type { CollectionVersion } from "../server/records/collection-version.ts";
 import { linkClass } from "../styles/link.ts";

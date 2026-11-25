@@ -1,7 +1,7 @@
 import * as stylex from "@stylexjs/stylex";
 import { For, Show } from "solid-js";
 
-import { tanggal } from "../../../web/src/lib/labels.ts";
+import { tanggal } from "../lib/labels.ts";
 import { isPresent } from "../lib/text.ts";
 import type { Family, LawRecord } from "../server/records/law.ts";
 import { css } from "../styles/css.ts";

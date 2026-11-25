@@ -1,6 +1,6 @@
 import { For } from "solid-js";
 
-import { tanggal } from "../../../web/src/lib/labels.ts";
+import { tanggal } from "../lib/labels.ts";
 import { isPresent } from "../lib/text.ts";
 import type { CollectionVersion } from "../server/records/collection-version.ts";
 import { linkClass } from "../styles/link.ts";

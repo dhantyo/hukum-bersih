@@ -1,12 +1,12 @@
 import type { RouteProps } from "@solidjs/router";
 import { createMemo, For, Show } from "solid-js";
 
-import { STAGE, tanggal } from "../../../web/src/lib/labels.ts";
 import {
   DraftProvenance,
   draftVersionName,
 } from "../components/draft-provenance.tsx";
 import { usePageTitle } from "../lib/head.ts";
+import { stageLabel, tanggal } from "../lib/labels.ts";
 import { slashed } from "../lib/paths.ts";
 import { draftBillQuery } from "../lib/queries.ts";
 import { isPresent } from "../lib/text.ts";
@@ -82,7 +82,7 @@ const DraftBillPage = (props: RouteProps<"/ruu/:slug">) => {
               <For each={draft.stages}>
                 {(stage) => (
                   <li>
-                    {STAGE[stage.stage] ?? stage.stage} · {tanggal(stage.date)}
+                    {stageLabel(stage.stage)} · {tanggal(stage.date)}
                     {isPresent(stage.note) ? ` · ${stage.note}` : ""}
                   </li>
                 )}

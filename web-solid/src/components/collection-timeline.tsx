@@ -5,8 +5,8 @@ import {
 } from "@ui-sdk/solid/collapsible";
 import { For } from "solid-js";
 
-import { tanggal } from "../../../web/src/lib/labels.ts";
 import type { CollectionComparisonView } from "../lib/collections.ts";
+import { tanggal } from "../lib/labels.ts";
 import { isPresent } from "../lib/text.ts";
 import type {
   CollectionTimeline,

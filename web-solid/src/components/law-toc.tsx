@@ -1,11 +1,10 @@
 import * as stylex from "@stylexjs/stylex";
 import { For, onSettled, Show } from "solid-js";
 
-import { modernHeading, pasalKey } from "../../../web/src/lib/display.ts";
-import type { AknNode } from "../../../web/src/lib/lawdoc.ts";
+import { modernHeading, pasalKey } from "../lib/display.ts";
 import { isPresent } from "../lib/text.ts";
 import type { Mark, VersionComparison } from "../server/law-comparison.ts";
-import type { ReaderText } from "../server/records/reader-text.ts";
+import type { AknNode, ReaderText } from "../server/records/reader-text.ts";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";

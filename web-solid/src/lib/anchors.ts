@@ -1,4 +1,4 @@
-import type { AknNode } from "../../../web/src/lib/lawdoc.ts";
+import type { AknNode } from "../server/records/reader-text.ts";
 import { isPresent } from "./text.ts";
 
 export const CONCLUSIONS_ID = "penutup";

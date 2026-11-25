@@ -1,4 +1,4 @@
-import { pasalKey } from "../../../web/src/lib/display.ts";
+import { pasalKey } from "./display.ts";
 
 const LEADING_PASAL = /^\s*pasal\s*/iu;
 

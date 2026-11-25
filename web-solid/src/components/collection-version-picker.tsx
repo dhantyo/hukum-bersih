@@ -9,8 +9,8 @@ import {
 } from "@ui-sdk/solid/select";
 import { For } from "solid-js";
 
-import { tanggal } from "../../../web/src/lib/labels.ts";
 import type { VersionChoice } from "../lib/collection-compare.ts";
+import { tanggal } from "../lib/labels.ts";
 import { isPresent } from "../lib/text.ts";
 import { css } from "../styles/css.ts";
 import { color, space } from "../styles/tokens.stylex.ts";

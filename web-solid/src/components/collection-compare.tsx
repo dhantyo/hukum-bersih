@@ -1,13 +1,13 @@
 import * as stylex from "@stylexjs/stylex";
 import { For } from "solid-js";
 
-import { pasalKey } from "../../../web/src/lib/display.ts";
 import type {
   ChangedLine,
   ChangedPasal,
   ChangedStatus,
   CollectionCompareView,
 } from "../lib/collection-compare.ts";
+import { pasalKey } from "../lib/display.ts";
 import { css } from "../styles/css.ts";
 import { linkClass } from "../styles/link.ts";
 import { color, font, space } from "../styles/tokens.stylex.ts";
@@ -72,11 +72,11 @@ const Line = (props: { line: ChangedLine }) => (
     <span>
       <For each={props.line.parts}>
         {(part) => {
-          if (part.added === true) {
+          if (part.added) {
             return <ins class={css(styles.inserted)}>{part.value}</ins>;
           }
 
-          return part.removed === true ? (
+          return part.removed ? (
             <del class={css(styles.deleted)}>{part.value}</del>
           ) : (
             part.value

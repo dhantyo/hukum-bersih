@@ -2,10 +2,10 @@ import type { RouteProps } from "@solidjs/router";
 import { Show } from "solid-js";
 import * as v from "valibot";
 
-import { tanggal } from "../../../web/src/lib/labels.ts";
 import { CollectionReader } from "../components/collection-reader.tsx";
 import { useCollection } from "../lib/collection-page.ts";
 import { usePageTitle } from "../lib/head.ts";
+import { tanggal } from "../lib/labels.ts";
 import { compareSearch } from "../lib/schemas.ts";
 import NotFound from "./not-found.tsx";
 

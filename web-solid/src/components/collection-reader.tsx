@@ -1,8 +1,8 @@
-import { tanggal } from "../../../web/src/lib/labels.ts";
 import type {
   Collection,
   CollectionComparisonView,
 } from "../lib/collections.ts";
+import { tanggal } from "../lib/labels.ts";
 import { isPresent } from "../lib/text.ts";
 import { linkClass } from "../styles/link.ts";
 import { readerClass } from "../styles/reading.ts";

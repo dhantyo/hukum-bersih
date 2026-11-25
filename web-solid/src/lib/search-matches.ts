@@ -1,5 +1,5 @@
-import { citeOf, norm, pasalOf } from "../../../web/src/lib/search-query.ts";
 import type { Catalog, LawCatalogEntry } from "../server/records/catalog.ts";
+import { citeOf, norm, pasalOf } from "./search-query.ts";
 import { isPresent } from "./text.ts";
 
 const matchesWords = (query: string) => {

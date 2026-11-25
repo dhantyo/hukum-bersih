@@ -1,6 +1,6 @@
 import { For, Show } from "solid-js";
 
-import { STATUS } from "../../../web/src/lib/labels.ts";
+import { STATUS } from "../lib/labels.ts";
 import type {
   DraftComparisonLine,
   DraftComparisonRow,

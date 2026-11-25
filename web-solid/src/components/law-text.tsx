@@ -4,26 +4,24 @@ import { usePreference } from "@ui-sdk/solid/preferences";
 import { createEffect, createMemo, For, Match, Show, Switch } from "solid-js";
 
 import {
-  cukupJelas,
-  modernHeading,
-  modernLabel,
-  pasalKey,
-} from "../../../web/src/lib/display.ts";
-import type { AknNode } from "../../../web/src/lib/lawdoc.ts";
-import type { MergeNote } from "../../../web/src/lib/merge.ts";
-import {
   aliasOf,
   CONCLUSIONS_ID,
   elementId,
   EXPLANATION_ID,
 } from "../lib/anchors.ts";
+import {
+  cukupJelas,
+  modernHeading,
+  modernLabel,
+  pasalKey,
+} from "../lib/display.ts";
 import { format, penjelasan } from "../lib/reading-preferences.ts";
 import { isPresent } from "../lib/text.ts";
 import type {
   ChangedPasal,
   VersionComparison,
 } from "../server/law-comparison.ts";
-import type { ReaderText } from "../server/records/reader-text.ts";
+import type { AknNode, ReaderText } from "../server/records/reader-text.ts";
 import { css } from "../styles/css.ts";
 import { linkClass, linkStyles } from "../styles/link.ts";
 import { reading } from "../styles/reading.ts";
@@ -357,7 +355,7 @@ const noteLabels = {
 };
 
 export interface PasalNote {
-  kind?: MergeNote["kind"];
+  kind?: keyof typeof noteLabels;
   label: string;
   href?: string;
   by?: string;

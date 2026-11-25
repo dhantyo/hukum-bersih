@@ -1,7 +1,7 @@
 import * as stylex from "@stylexjs/stylex";
 import { Show } from "solid-js";
 
-import { tanggal } from "../../../web/src/lib/labels.ts";
+import { tanggal } from "../lib/labels.ts";
 import { isPresent } from "../lib/text.ts";
 import { lawHeading } from "../lib/titles.ts";
 import type { VersionComparison } from "../server/law-comparison.ts";
