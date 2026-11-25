@@ -25,7 +25,7 @@ import type { AknNode, ReaderText } from "../server/records/reader-text.ts";
 import { css } from "../styles/css.ts";
 import { linkClass, linkStyles } from "../styles/link.ts";
 import { reading } from "../styles/reading.ts";
-import { color, font, size, space } from "../styles/tokens.stylex.ts";
+import { color, font, media, size, space } from "../styles/tokens.stylex.ts";
 import { AddedPasal, PasalComparison } from "./law-compare.tsx";
 
 const ASLI = ':is([data-format="asli"])';
@@ -38,10 +38,14 @@ const NO_PENUTUP = ':is([data-penutup="hide"])';
 const ONLY_CHANGED = ":has([data-cmp-only]:checked)";
 
 const styles = stylex.create({
+  measure: { maxInlineSize: size.measure },
   numbered: {
-    gap: space.s1,
+    columnGap: space.s1,
     display: "grid",
-    gridTemplateColumns: `${size.hang} minmax(0, 1fr)`,
+    gridTemplateColumns: {
+      default: `${size.hang} minmax(0, 1fr)`,
+      [media.phone]: `${size.hangSm} minmax(0, 1fr)`,
+    },
   },
   paragraph: { margin: 0, marginBlockEnd: space.s2 },
   permalink: { marginInlineStart: space.s2 },
@@ -132,6 +136,7 @@ const styles = stylex.create({
     },
     fontSize: {
       default: size.xl,
+      [media.phone]: size.lg,
       [stylex.when.ancestor(ASLI)]: "1em",
     },
     fontWeight: 600,
@@ -156,6 +161,7 @@ const styles = stylex.create({
     borderBlockStartStyle: "none",
     fontSize: {
       default: size.lg,
+      [media.phone]: size.md,
       [stylex.when.ancestor(ASLI)]: "1em",
     },
     paddingBlockStart: 0,
@@ -167,6 +173,7 @@ const styles = stylex.create({
     },
     fontSize: {
       default: size.md,
+      [media.phone]: size.base,
       [stylex.when.ancestor(ASLI)]: "1em",
     },
   },
@@ -201,6 +208,7 @@ const styles = stylex.create({
     },
     fontSize: {
       default: size.md,
+      [media.phone]: size.base,
       [stylex.when.ancestor(ASLI)]: "1em",
     },
     fontWeight: 600,
@@ -838,7 +846,7 @@ export const LawText = (props: {
 
   return (
     <article
-      class={css(reading.law)}
+      class={css(reading.law, props.comparison === undefined && styles.measure)}
       data-law
       ref={(element: HTMLElement) => {
         law = element;

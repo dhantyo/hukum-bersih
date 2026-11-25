@@ -1,7 +1,7 @@
 import * as stylex from "@stylexjs/stylex";
 
 import { css } from "./css.ts";
-import { color, font, size, space } from "./tokens.stylex.ts";
+import { color, font, media, size, space } from "./tokens.stylex.ts";
 
 const ASLI = ':is([data-format="asli"])';
 
@@ -42,6 +42,7 @@ export const reading = stylex.create({
     },
     fontSize: {
       default: size.law,
+      [media.phone]: size.base,
       [stylex.when.ancestor(LARGE)]: size.lawLarge,
     },
     lineHeight: 1.65,
