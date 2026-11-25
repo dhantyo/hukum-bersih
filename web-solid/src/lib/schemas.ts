@@ -19,8 +19,22 @@ export const collectionVersion = matching(`(?:latest|${VERSION_DATE})`);
 
 const compareTarget = v.union([v.literal(""), matching("[a-z0-9_-]+")]);
 
-/** The two versions a collection page compares: `bandingkan` is the newer, `dari` the older. */
+const MAX_COLUMNS = 32;
+const VERSION_ID = "[a-z0-9_-]+";
+
+const compareVersions = v.union([
+  v.pipe(
+    v.string(),
+    v.regex(new RegExp(`^${VERSION_ID}(?:,${VERSION_ID})*$`, "u")),
+    v.maxLength(1024)
+  ),
+  v.pipe(v.array(matching(VERSION_ID)), v.maxLength(MAX_COLUMNS)),
+]);
+
+/** The versions a collection page compares: `v` lists any number of them, one column each;
+ * `bandingkan` and `dari` ask for a pair, the newer and the older. */
 export const collectionCompare = v.object({
+  v: v.optional(compareVersions),
   bandingkan: v.optional(compareTarget),
   dari: v.optional(compareTarget),
 });
@@ -63,8 +77,13 @@ export const searchText = v.fallback(
 );
 
 export const compareSearch = v.object({
+  v: v.fallback(
+    v.optional(v.union([v.string(), v.array(v.string())])),
+    undefined
+  ),
   bandingkan: v.fallback(v.optional(v.string()), undefined),
   dari: v.fallback(v.optional(v.string()), undefined),
+  pasal: v.fallback(v.optional(v.string()), undefined),
 });
 
 export const searchPage = v.object({ q: v.optional(searchText, "") });

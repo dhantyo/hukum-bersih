@@ -8,7 +8,7 @@ import {
 } from "../server/records/collection-comparison.ts";
 import { readCollectionTimeline } from "../server/records/collection-timeline.ts";
 import { readCollectionVersion } from "../server/records/collection-version.ts";
-import { compareVersions, pickPair } from "./collection-compare.ts";
+import { compareColumns, pickColumns } from "./collection-compare.ts";
 import { collectionCompare, collectionVersion, slug } from "./schemas.ts";
 
 export const getCollections = GET(async () => {
@@ -89,24 +89,23 @@ export const getCollectionComparison = GET(
 
     const choice = v.safeParse(collectionCompare, pair);
 
+    const ids = versions.map((version) => version.id);
+
     const selection = choice.success
-      ? pickPair(
-          versions.map((version) => version.id),
-          choice.output.bandingkan,
-          choice.output.dari
-        )
-      : { unknown: true, pair: undefined };
+      ? pickColumns(ids, choice.output)
+      : { unknown: true, columns: [] };
 
-    const record =
-      selection.pair === undefined
-        ? null
-        : await readVersionPair(
-            collectionSlug,
-            versions[selection.pair[0]].id,
-            versions[selection.pair[1]].id
-          );
+    const links = await Promise.all(
+      selection.columns.slice(1).map(async (to, index) => {
+        const from = selection.columns[index];
 
-    return compareVersions(versions, selection, record);
+        return from === to
+          ? null
+          : await readVersionPair(collectionSlug, ids[from], ids[to]);
+      })
+    );
+
+    return compareColumns(versions, selection, links);
   }
 );
 
