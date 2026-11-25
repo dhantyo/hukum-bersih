@@ -3,8 +3,8 @@ import * as stylex from "@stylexjs/stylex";
 import { onSettled } from "solid-js";
 
 import { css } from "../styles/css.ts";
-import { fold, foldHead } from "../styles/fold.stylex.ts";
 import { linkStyles } from "../styles/link.ts";
+import { fold, foldHead } from "../styles/markers.stylex.ts";
 import { color, font, media, size, space } from "../styles/tokens.stylex.ts";
 
 const CLOSED = ":not([open])";

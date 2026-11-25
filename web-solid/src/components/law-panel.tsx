@@ -11,8 +11,12 @@ import { tanggal } from "../lib/labels.ts";
 import { isPresent } from "../lib/text.ts";
 import type { Family } from "../server/records/law.ts";
 import { css } from "../styles/css.ts";
-import { versionHead, versionLink, versionRow } from "../styles/fold.stylex.ts";
 import { linkClass, linkStyles } from "../styles/link.ts";
+import {
+  versionHead,
+  versionLink,
+  versionRow,
+} from "../styles/markers.stylex.ts";
 import { panel } from "../styles/panel.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 

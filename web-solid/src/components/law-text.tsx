@@ -24,8 +24,8 @@ import type {
 } from "../server/law-comparison.ts";
 import type { AknNode, ReaderText } from "../server/records/reader-text.ts";
 import { css } from "../styles/css.ts";
-import { fold, foldHead } from "../styles/fold.stylex.ts";
 import { linkClass } from "../styles/link.ts";
+import { fold, foldHead } from "../styles/markers.stylex.ts";
 import { reading } from "../styles/reading.ts";
 import { color, font, media, size, space } from "../styles/tokens.stylex.ts";
 import { AddedPasal, PasalComparison } from "./law-compare.tsx";
