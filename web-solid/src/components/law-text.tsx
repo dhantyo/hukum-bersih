@@ -251,7 +251,7 @@ const styles = stylex.create({
   },
   articleHeading: {
     marginBlock: {
-      default: `${space.s4} ${space.s2}`,
+      default: `${space.s5} ${space.s2}`,
       [stylex.when.ancestor(ASLI)]: `${space.s6} ${space.s3}`,
       [stylex.when.ancestor(CLOSED, fold)]: `${space.s2} 0`,
     },
@@ -306,7 +306,17 @@ const styles = stylex.create({
       default: size.sm,
       [stylex.when.ancestor(ASLI)]: "inherit",
     },
+    lineHeight: {
+      default: 1.55,
+      [stylex.when.ancestor(ASLI)]: "inherit",
+    },
     marginBlockStart: space.s7,
+  },
+  spacedParagraph: {
+    marginBlockEnd: {
+      default: space.s3,
+      [stylex.when.ancestor(ASLI)]: space.s2,
+    },
   },
   hiddenInAsli: {
     display: {
@@ -659,6 +669,7 @@ interface DocumentNodesProps {
   top?: boolean;
   anchors?: Readonly<Record<string, string>>;
   explanation?: boolean;
+  spaced?: boolean;
   notes?: Record<string, PasalNote[]>;
   comparison?: CompareIndex;
 }
@@ -741,6 +752,7 @@ const DocumentNode = (
       nodes={props.node.children}
       anchors={props.anchors}
       explanation={props.explanation}
+      spaced={props.spaced}
       notes={props.notes}
       comparison={props.comparison}
     />
@@ -766,7 +778,13 @@ const DocumentNode = (
       }
     >
       <Match when={props.node.tag === "p"}>
-        <p id={id()} class={css(styles.paragraph)}>
+        <p
+          id={id()}
+          class={css(
+            styles.paragraph,
+            props.spaced === true && styles.spacedParagraph
+          )}
+        >
           {props.node.text}
         </p>
       </Match>
@@ -821,6 +839,7 @@ const DocumentNodes = (props: DocumentNodesProps) => (
         top={props.top}
         anchors={props.anchors}
         explanation={props.explanation}
+        spaced={props.spaced}
         notes={props.notes}
         comparison={props.comparison}
       />
@@ -977,13 +996,17 @@ export const LawText = (props: {
       </div>
       <Show when={props.text.conclusions.length > 0}>
         <section id={CONCLUSIONS_ID} class={css(styles.conclusions)}>
-          <h2 class={css(styles.hiddenInAsli)}>Pengesahan dan pengundangan</h2>
-          <DocumentNodes nodes={props.text.conclusions} />
+          <h2 class={css(styles.chapter, styles.hiddenInAsli)}>
+            Pengesahan dan pengundangan
+          </h2>
+          <DocumentNodes nodes={props.text.conclusions} spaced />
         </section>
       </Show>
       <Show when={props.text.penjelasan.length > 0}>
         <section id={EXPLANATION_ID} class={css(styles.penjelasan)}>
-          <h2 class={css(styles.penjelasanTitle)}>Penjelasan</h2>
+          <h2 class={css(styles.chapter, styles.penjelasanTitle)}>
+            Penjelasan
+          </h2>
           <DocumentNodes nodes={props.text.penjelasan} explanation />
         </section>
       </Show>
