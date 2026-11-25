@@ -1,3 +1,4 @@
+import type { JSX } from "@solidjs/web";
 import * as stylex from "@stylexjs/stylex";
 import { For, Show } from "solid-js";
 
@@ -192,7 +193,11 @@ export interface Fact {
   href?: string | null;
 }
 
-export const Facts = (props: { title: string; facts: Fact[] }) => (
+export const Facts = (props: {
+  title: string;
+  facts: Fact[];
+  children?: JSX.Element;
+}) => (
   <section class={css(styles.facts)}>
     <h2 class={css(panel.title)}>{props.title}</h2>
     <dl class={css(styles.factList)}>
@@ -213,5 +218,6 @@ export const Facts = (props: { title: string; facts: Fact[] }) => (
         )}
       </For>
     </dl>
+    {props.children}
   </section>
 );

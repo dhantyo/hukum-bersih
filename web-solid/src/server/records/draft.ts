@@ -40,7 +40,6 @@ const draft = v.object({
   name: v.string(),
   title: v.string(),
   document: draftDocument,
-  /** The other versions with text, each with the comparison (`pair`) that holds both. */
   comparable: v.array(
     v.object({
       id: draftDocumentId,
