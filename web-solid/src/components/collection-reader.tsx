@@ -1,5 +1,5 @@
 import * as stylex from "@stylexjs/stylex";
-import { For, Show } from "solid-js";
+import { Show } from "solid-js";
 
 import type {
   Collection,
@@ -8,16 +8,15 @@ import type {
 import { tanggal } from "../lib/labels.ts";
 import { isPresent } from "../lib/text.ts";
 import { css } from "../styles/css.ts";
-import { linkClass } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 import { Badge } from "./badge.tsx";
 import { CollectionCompare } from "./collection-compare.tsx";
 import { CollectionFacts } from "./collection-facts.tsx";
 import { CollectionHistory } from "./collection-timeline.tsx";
 import { CollectionVersions } from "./collection-versions.tsx";
-import { DocLayout } from "./doc-layout.tsx";
-import type { Crumb } from "./doc-layout.tsx";
+import { Breadcrumbs, DocLayout } from "./doc-layout.tsx";
 import { LawText } from "./law-text.tsx";
+import { Toc } from "./law-toc.tsx";
 import { MergedBanner } from "./merged-banner.tsx";
 
 const styles = stylex.create({
@@ -44,25 +43,6 @@ const crumbs = (collection: Collection, dated: boolean) => {
       ]
     : [{ href: "/koleksi/", label: "Koleksi" }, { label: collection.name }];
 };
-
-const Breadcrumbs = (props: { crumbs: Crumb[] }) => (
-  <nav aria-label="Lokasi">
-    <For each={props.crumbs}>
-      {(crumb, index) => (
-        <>
-          {index() > 0 && <span aria-hidden="true"> › </span>}
-          {crumb.href === undefined ? (
-            <span>{crumb.label}</span>
-          ) : (
-            <a class={linkClass} href={crumb.href}>
-              {crumb.label}
-            </a>
-          )}
-        </>
-      )}
-    </For>
-  </nav>
-);
 
 const MergedHeadMeta = (props: {
   version: NonNullable<Collection["merged"]>;
@@ -95,7 +75,7 @@ const MergedCollection = (props: {
     subtitle={props.collection.named ? props.collection.title : undefined}
     headMeta={<MergedHeadMeta version={props.version} />}
     text={props.version.text}
-    panelLabel="Keterangan"
+    panelLabel="Daftar isi"
     panel={
       <>
         <CollectionVersions
@@ -103,6 +83,7 @@ const MergedCollection = (props: {
           current={props.collection.path}
           comparable={props.comparison !== null}
         />
+        <Toc text={props.version.text} />
         <CollectionFacts facts={props.version.facts} />
       </>
     }

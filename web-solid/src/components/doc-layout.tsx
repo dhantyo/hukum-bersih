@@ -251,7 +251,7 @@ const Chevron = (props: { direction: "left" | "right" }) => (
   </svg>
 );
 
-const Breadcrumbs = (props: { crumbs: Crumb[] }) => (
+export const Breadcrumbs = (props: { crumbs: Crumb[] }) => (
   <nav class={css(styles.crumbs)} aria-label="Lokasi">
     <For each={props.crumbs}>
       {(crumb, index) => (
