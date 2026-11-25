@@ -84,13 +84,14 @@ Every PR branches from the previous one's merge into `feat/solid-reader`, so the
 
 ### P8 Delete the TypeScript exports
 
-- [ ] Depends on: P7.
-- [ ] Files: `web-solid/scripts/*` except `route-snapshot.sh`, the `export-corpus` and `corpus-release` package scripts, the `scripts/astro-data.ts` bridge, and docs (`web-solid/AGENTS.md`, `docs/ARCHITECTURE.md`, the handover).
-- [ ] Verification: `pnpm run check`, `tsc`, `test` and `build` pass, and nothing under `web-solid/` imports `web/src/lib/` except the runtime imports P9 removes.
+- [x] Depends on: P7.
+- [x] Files: `web-solid/scripts/*` except `route-snapshot.sh` (14 files: `export-*.ts`, `index-corpus.ts`, `search-records.ts` and its test, `corpus-release.ts`, `astro-data.ts`, `reader-text.ts`, `law-listings.ts`, `collection-timeline.ts`, `draft-comparison.ts`), the `export-corpus` and `corpus-release` package scripts, the `pagefind` dev dependency (nothing else imported it: the browser loads the index's own `pagefind.js` from the release), and the docs (`web-solid/AGENTS.md`, `web-solid/README.md`, `docs/ARCHITECTURE.md`, the handover). `route-snapshot.sh` builds a missing corpus with `uv run hukum-bersih export-corpus --publish`.
+- [x] Tests: `scripts/search-records.test.ts` is deleted, not moved: `pipeline/tests/test_corpus_search.py` covers the same five behaviours (a page cut into opening, pasal, closing and Penjelasan; the element id when a pasal has no alias; "Cukup jelas" left out; an unnamed Penjelasan block; nothing to index) and more. `src/server/records/draft-comparison.test.ts` tests the reader of a published comparison, which stays, so it stays in `web-solid/`; it used `draftComparisonRows` and `compare` to make its record, so it now writes a four-row record by hand and no longer imports `web/src/lib`.
+- [x] Verification: done 2026-11-25. `pnpm run check`, `pnpm exec tsc --noEmit`, `pnpm run test --run` (4 files, 22 tests) and `pnpm run build` pass. `route-snapshot.sh` on the same published corpus before and after: 100 of 102 responses identical, and the 2 that differ are 404 pages (`/koleksi/tidak-ada/2016-11-25/` and `/koleksi/tidak-ada/?bandingkan`) whose four hydration statements come in another order, as they do between two runs of the same build. With the corpus built by the script itself through the pipeline (2 min 5 s), the release id is `491e40c2...ac005`, the one the pipeline gave before. The `web/src/lib` imports left in `web-solid/src` are, by module and number of files: `labels.ts` 13, `display.ts` 6, `compare.ts` 2, `lawdoc.ts` 4 (types only), `lawtext.ts` 2 (types only), `merge.ts` 1 (types only) and `search-query.ts` 1. All of it is P9's.
 
 ### P9 Precompute the law and collection comparisons and drop the runtime Astro imports
 
-- [ ] Depends on: P3 and P8, (the `uisdk` branch it waited for merged on 2026-11-25).
+- [ ] Depends on: P3 and P8 (the `uisdk` branch it waited for merged on 2026-11-25).
 - [ ] Files: `corpus/collection_export.py`, `corpus/laws.py`, `web-solid/src/lib/collection-compare.ts`, `web-solid/src/server/law-comparison.ts`, `src/server/records/`, and the components that import `labels.ts`, `display.ts`, `compare.ts`, `lawdoc.ts`, `lawtext.ts`, `merge.ts` and `search-query.ts`.
 - [ ] Builds: the comparison for every version pair of each collection (at most 6) and of each amended law (the `?bandingkan=…&dari=…` page) is written at export, so no diff runs per request. Labels and display helpers move into `web-solid/src/lib` or into the records.
 - [ ] Verification: `route-snapshot.sh` shows 0 differing responses; no `web/src/lib` import remains in `web-solid/`; and `diff-match-patch` is gone from the server bundle.
