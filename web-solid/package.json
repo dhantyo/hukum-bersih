@@ -10,8 +10,6 @@
     "start": "node --env-file-if-exists=.env dist/server/node.js",
     "serve": "vite preview",
     "test": "vitest",
-    "export-corpus": "node --experimental-strip-types scripts/export-corpus.ts",
-    "corpus-release": "node --experimental-strip-types scripts/corpus-release.ts",
     "check": "ultracite check",
     "fix": "ultracite fix"
   },
@@ -37,7 +35,6 @@
     "lightningcss": "^1.33.0",
     "oxfmt": "^0.79.0",
     "oxlint": "^1.95.0",
-    "pagefind": "1.6.0",
     "tsrs": "7.1.0-beta.tsrs5",
     "typescript": "^7.0.2",
     "ultracite": "8.3.1",

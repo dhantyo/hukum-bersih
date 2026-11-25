@@ -6,10 +6,10 @@
 # Usage, from web-solid/ after `pnpm run build`:
 #   CORPUS=.snapshots/corpus-before scripts/route-snapshot.sh .snapshots/before
 # Env:  CORPUS  a corpus dir (HUKUM_CORPUS_DIR). Default .snapshots/corpus.
-#               When it holds no release yet, the script exports the full corpus from the repo data
-#               (`pnpm run export-corpus`, a minute or two), publishes it there and prints the release id.
+#               When it holds no release yet, the script has the pipeline export the full corpus from the
+#               repo data and publish it there (`uv run hukum-bersih export-corpus --publish`, about two
+#               minutes, from ../pipeline) and prints the release id.
 #               The release id hashes every released file, so two builds with the same id are byte-identical.
-#               That path needs the Astro app's ignored folders (web/node_modules, web/generated).
 #       PORT    server port. Default 3199.
 #
 # Normalised, because these bytes differ run to run or build to build:
@@ -24,14 +24,7 @@ corpus="$(realpath -m "${CORPUS:-.snapshots/corpus}")"
 out="$(realpath -m "${1:?usage: route-snapshot.sh <outdir>}")"
 port="${PORT:-3199}"
 if [ ! -f "$corpus/active-release" ]; then
-  stage="$corpus.stage"
-  rm -rf "$stage"
-  mkdir -p "$corpus"
-  export HUKUM_CORPUS_DIR="$corpus"
-  unset HUKUM_CORPUS_REMOTE
-  pnpm --silent run export-corpus "$stage" >&2
-  pnpm --silent run corpus-release publish "$stage" >&2
-  rm -rf "$stage"
+  (cd ../pipeline && uv run hukum-bersih export-corpus --publish "$corpus") >&2
 fi
 release="$(tr -d '\n' < "$corpus/active-release")"
 echo "corpus release: $release"

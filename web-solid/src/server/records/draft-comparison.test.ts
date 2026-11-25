@@ -4,9 +4,6 @@ import path from "node:path";
 
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 
-import { compare } from "../../../../web/src/lib/compare.ts";
-import type { LawDoc } from "../../../../web/src/lib/lawdoc.ts";
-import { draftComparisonRows } from "../../../scripts/draft-comparison.ts";
 import { readDraftComparison } from "./draft-comparison.ts";
 
 const OLDER = "ruu_x_2023-05_draft";
@@ -22,33 +19,34 @@ const document = (id: string, date: string) => ({
   hasText: true,
 });
 
-const law = (pasal: string[]) =>
-  ({
-    preface: [],
-    preamble: [],
-    body: [],
-    conclusions: [],
-    penjelasan: [],
-    penjelasanPasal: new Map(),
-    pasal: pasal.map((text, index) => ({
-      label: `Pasal ${index + 1}`,
-      num: String(index + 1),
-      eId: `art_${index + 1}`,
-      lines: [{ text, indent: 0 }],
-    })),
-  }) satisfies LawDoc;
+const part = (value: string, kind?: "added" | "removed") => ({
+  value,
+  added: kind === "added",
+  removed: kind === "removed",
+});
 
-const older = law([
-  "Aset hasil tindak pidana dapat dirampas oleh negara melalui pengadilan",
-  "Pengadilan memeriksa permohonan perampasan aset dalam waktu tiga puluh hari",
-  "Ketentuan peralihan berlaku sejak tanggal diundangkan",
-]);
-
-const newer = law([
-  "Aset hasil tindak pidana dapat dirampas oleh negara melalui pengadilan negeri",
-  "Badan pengelola aset dibentuk oleh presiden untuk menyimpan barang rampasan",
-  "Ketentuan peralihan berlaku sejak tanggal diundangkan",
-]);
+const pasalRow = (
+  anchor: string,
+  status: "sama" | "berubah" | "baru" | "dihapus",
+  label: string,
+  side: "a" | "b" | "ab"
+) => ({
+  anchor,
+  status,
+  renumbered: false,
+  moved: false,
+  weak: false,
+  ...(side.includes("a") && { a: { label } }),
+  ...(side.includes("b") && { b: { label } }),
+  lines: [
+    {
+      kind: status,
+      ...(side.includes("a") && { a: { indent: 0 } }),
+      ...(side.includes("b") && { b: { indent: 0 } }),
+      parts: [part(`Isi ${label}`)],
+    },
+  ],
+});
 
 const corpus = { directory: "" };
 
@@ -64,18 +62,33 @@ const publish = async (record: Stored) => {
 
 type Stored = ReturnType<typeof stored>;
 
-const stored = () => {
-  const comparison = compare(older, newer);
-
-  return {
-    name: "RUU X",
-    title: "RUU tentang X",
-    older: document(OLDER, "2023-05"),
-    newer: document(NEWER, "2026-11-19"),
-    counts: comparison.counts,
-    rows: draftComparisonRows(comparison),
-  };
-};
+const stored = () => ({
+  name: "RUU X",
+  title: "RUU tentang X",
+  older: document(OLDER, "2023-05"),
+  newer: document(NEWER, "2026-11-19"),
+  counts: { sama: 1, berubah: 1, baru: 1, dihapus: 1, renumbered: 0, moved: 0 },
+  rows: [
+    {
+      ...pasalRow("b-art_1", "berubah", "Pasal 1", "ab"),
+      lines: [
+        {
+          kind: "berubah",
+          a: { indent: 0 },
+          b: { indent: 0 },
+          parts: [
+            part("Aset "),
+            part("negara", "removed"),
+            part("negeri", "added"),
+          ],
+        },
+      ],
+    },
+    pasalRow("a-art_2", "dihapus", "Pasal 2", "a"),
+    pasalRow("b-art_2", "baru", "Pasal 2", "b"),
+    pasalRow("b-art_3", "sama", "Pasal 3", "ab"),
+  ],
+});
 
 describe("a published draft comparison", () => {
   beforeEach(async () => {
