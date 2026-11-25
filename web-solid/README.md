@@ -30,6 +30,20 @@ Run `pnpm run check`, `pnpm exec tsc --noEmit`, and `pnpm run test --run` to che
 
 To prove a refactor changed no output, build, then run `CORPUS=.snapshots/before-corpus scripts/route-snapshot.sh .snapshots/before`. The first run has the pipeline export and publish the corpus into that directory (about two minutes) and prints its release id. Make the change, rebuild, run `CORPUS=.snapshots/before-corpus scripts/route-snapshot.sh .snapshots/after`, and run `diff -r .snapshots/before .snapshots/after`. The release id hashes every released file, so an unchanged id after re-exporting means the export is unchanged. The script header lists the few bytes it normalises. The `.snapshots/` folder is ignored by git.
 
+## Visual parity against Astro
+
+`pnpm run visual-parity` screenshots the same routes on the built Astro site and on this app, then writes a side-by-side image, a pixel diff and a mismatch percentage for each pair. Use it to see what still differs from `../web` and to prove a layout change moved a page closer.
+
+```sh
+pnpm run build                                                  # this app
+ASTRO_DIST=/path/to/web/dist pnpm run visual-parity --run base   # Astro is served from an existing build, never rebuilt
+pnpm run visual-parity --compare base after                      # lists how far each page moved between two runs
+```
+
+It serves `ASTRO_DIST` (default `../web/dist`) as static files and starts `dist/server/node.js` on the corpus in `CORPUS` (default `.snapshots/corpus`, written by `export-corpus --publish` as above). The browser is the Chromium that `playwright-core` installed in `~/.cache/ms-playwright` (`CHROMIUM_PATH` or `--chromium` picks another binary). Options: `--only <route ids>`, `--widths 1280,390`, `--jobs <n>`, `--run <name>`.
+
+The route matrix is the `ROUTES` table in `scripts/visual-parity/routes.ts`: add a route with one line. Every route is shot at each width, light and dark, and law pages also in Asli and Modern. A page is cut at a fixed height (Chromium cannot capture taller), and a route marked `viewportOnly` keeps only the first screenful. Animations are off, fonts and network are idle and the page height is steady before a shot, so two runs on the same builds give the same percentages; `--compare` exits 1 when a page moved by more than 0.1 points. Output is `.snapshots/visual/<run>/index.html` (pages worst first), `summary.json` and the PNGs, all ignored by git.
+
 ## Cloudflare preview
 
 The manual **Deploy Solid preview** workflow builds the Worker, runs `hukum-bersih export-corpus --publish` in `pipeline/` for the full corpus (every law, the collections, the draft bills and the search index), and uploads that release to R2 with rclone (`.github/scripts/upload-release.sh`): the release files, then its ready marker, then the `active-release` pointer, so a reader never sees a half-uploaded release. A subset would leave the draft and collection pages out, and `export-corpus` has no subset option. It targets the `hukum-bersih-solid-preview` Worker and R2 bucket.

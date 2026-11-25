@@ -11,7 +11,8 @@
     "serve": "vite preview",
     "test": "vitest",
     "check": "ultracite check",
-    "fix": "ultracite fix"
+    "fix": "ultracite fix",
+    "visual-parity": "node scripts/visual-parity.ts"
   },
   "dependencies": {
     "@solidjs/router": "2.0.1",
@@ -30,11 +31,15 @@
     "@stylexjs/eslint-plugin": "0.19.2",
     "@stylexswc/unplugin": "^0.20.1",
     "@types/node": "^26.6.6",
+    "@types/pngjs": "^6.0.5",
     "eslint-plugin-solid": "0.20.1",
     "fontless": "^1.3.4",
     "lightningcss": "^1.33.0",
     "oxfmt": "^0.79.0",
     "oxlint": "^1.95.0",
+    "pixelmatch": "^8.0.0",
+    "playwright-core": "1.56.1",
+    "pngjs": "^7.0.0",
     "tsrs": "7.1.0-beta.tsrs5",
     "typescript": "^7.0.2",
     "ultracite": "8.3.1",
