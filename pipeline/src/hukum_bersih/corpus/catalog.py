@@ -8,7 +8,6 @@ and ``drafts/`` folders, so they never point at a page that was not written.
 
 from __future__ import annotations
 
-import re
 from collections import defaultdict
 from pathlib import Path
 from typing import Any
@@ -17,25 +16,10 @@ from .drafts import load_ruus, versions
 from .koleksi import ORDINALS, Koleksi
 from .laws import Laws
 from .regulations import SOURCE_NAMES, STATUS_LABEL, Regulation, cite_id, source_host
+from .titles import tanggal
 from .write import write_json
 
 RECENT_LAWS = 20
-_MONTHS = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus",
-           "September", "Oktober", "November", "Desember"]
-_NUMBER = re.compile(r"[0-9]+")
-
-
-def tanggal(date: str) -> str:
-    """"2026-11-19" -> "19 November 2026", "2023-05" -> "Mei 2023", "2008" -> "2008"
-    (``tanggal`` in ``labels.ts``, which prints "undefined" and "NaN" for a malformed date)."""
-    year, month, day = [*date.split("-"), None, None][:3]
-    if not month:
-        return year
-    index = int(month) - 1 if _NUMBER.fullmatch(month) else -1
-    name = _MONTHS[index] if 0 <= index < len(_MONTHS) else "undefined"
-    if not day:
-        return f"{name} {year}"
-    return f"{int(day) if _NUMBER.fullmatch(day) else 'NaN'} {name} {year}"
 
 
 # --- the catalog -------------------------------------------------------------------------

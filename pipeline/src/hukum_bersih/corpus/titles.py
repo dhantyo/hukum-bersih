@@ -4,10 +4,12 @@
 
 from __future__ import annotations
 
+import re
 from typing import Any
 
-_BULAN = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus",
-          "September", "Oktober", "November", "Desember"]
+_MONTHS = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus",
+           "September", "Oktober", "November", "Desember"]
+_NUMBER = re.compile(r"[0-9]+")
 
 DOC_TYPE = {
     "draft": "Draf RUU",
@@ -27,12 +29,16 @@ DOC_TYPE = {
 
 
 def tanggal(date: str) -> str:
-    """"2026-11-19" -> "19 November 2026", "2023-05" -> "Mei 2023", "2008" -> "2008"."""
-    year, month, day = [*date.split("-"), "", ""][:3]
+    """"2026-11-19" -> "19 November 2026", "2023-05" -> "Mei 2023", "2008" -> "2008"
+    (``tanggal`` in ``labels.ts``, which prints "undefined" and "NaN" for a malformed date)."""
+    year, month, day = [*date.split("-"), None, None][:3]
     if not month:
         return year
-    name = _BULAN[int(month) - 1]
-    return f"{int(day)} {name} {year}" if day else f"{name} {year}"
+    index = int(month) - 1 if _NUMBER.fullmatch(month) else -1
+    name = _MONTHS[index] if 0 <= index < len(_MONTHS) else "undefined"
+    if not day:
+        return f"{name} {year}"
+    return f"{int(day) if _NUMBER.fullmatch(day) else 'NaN'} {name} {year}"
 
 
 def law_heading(subject: str | None, title: str) -> str:
