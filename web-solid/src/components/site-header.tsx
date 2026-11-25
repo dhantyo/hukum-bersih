@@ -135,7 +135,7 @@ export const SiteHeader = (props: { pending: boolean }) => {
             </For>
           </nav>
           <Show when={location.pathname !== Router.paths()}>
-            <search class={css(styles.search)}>
+            <search class={css(styles.search)} aria-label="Cari cepat">
               <form action={slashed(Router.paths.cari)} method="get">
                 <label class={css(accessibility.visuallyHidden)} for="q">
                   Cari peraturan

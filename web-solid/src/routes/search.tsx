@@ -21,7 +21,7 @@ const SearchPage = (props: RouteProps<"/cari">) => {
   return (
     <main>
       <h1>Cari teks hukum</h1>
-      <search>
+      <search aria-label="Cari teks hukum">
         <form method="get" action={slashed(Router.paths.cari)}>
           <label for="search-query">Kata kunci</label>
           <input
