@@ -1,6 +1,6 @@
-import { useLinkState, useLocation } from "@solidjs/router";
+import { useLocation } from "@solidjs/router";
 import * as stylex from "@stylexjs/stylex";
-import { For, Show, useContext } from "solid-js";
+import { createMemo, For, Show, useContext } from "solid-js";
 
 import { slashed } from "../lib/paths.ts";
 import { ReaderViewContext } from "../lib/reader-view.ts";
@@ -114,6 +114,8 @@ const styles = stylex.create({
   form: { margin: 0 },
 });
 
+const TRAILING_SLASH = /\/$/u;
+
 const sections = [
   { href: slashed(Router.paths.uu), label: "Peraturan" },
   { href: slashed(Router.paths.koleksi), label: "Koleksi" },
@@ -122,17 +124,22 @@ const sections = [
 ];
 
 const SectionLink = (props: { href: string; label: string }) => {
-  const link = useLinkState(() => props.href);
+  const location = useLocation();
+
+  const active = createMemo(() => {
+    const section = props.href.replace(TRAILING_SLASH, "");
+
+    return (
+      location.pathname === section ||
+      location.pathname.startsWith(`${section}/`)
+    );
+  });
 
   return (
     <a
-      class={css(
-        linkStyles.base,
-        styles.link,
-        link.active() && styles.linkActive
-      )}
+      class={css(linkStyles.base, styles.link, active() && styles.linkActive)}
       href={props.href}
-      aria-current={link.active() ? "page" : undefined}
+      aria-current={active() ? "page" : undefined}
     >
       {props.label}
     </a>
