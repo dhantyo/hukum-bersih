@@ -1,6 +1,6 @@
 import { createMemo, For } from "solid-js";
 
-import { useNoindex, usePageTitle } from "../lib/head.ts";
+import { usePageTitle } from "../lib/head.ts";
 import { collectionsQuery } from "../lib/queries.ts";
 import { linkClass } from "../styles/link.ts";
 
@@ -8,7 +8,6 @@ const amendedText = (count: number) => `diubah ${count}×`;
 
 const CollectionIndex = () => {
   usePageTitle(() => "Koleksi");
-  useNoindex();
   const collections = createMemo(async () => await collectionsQuery());
   const named = () => collections().filter((collection) => collection.named);
 

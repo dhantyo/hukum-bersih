@@ -3,7 +3,7 @@ import * as stylex from "@stylexjs/stylex";
 import { createMemo, Show } from "solid-js";
 
 import { LawRows } from "../components/law-rows.tsx";
-import { useNoindex, usePageTitle } from "../lib/head.ts";
+import { usePageTitle } from "../lib/head.ts";
 import { slashed } from "../lib/paths.ts";
 import { yearQuery } from "../lib/queries.ts";
 import { Router } from "../router.tsx";
@@ -29,7 +29,6 @@ const LawYear = (props: RouteProps<"/uu/tahun/:tahun">) => {
     <Show when={listing()} fallback={<NotFound />} keyed>
       {(items) => {
         usePageTitle(() => `Undang-Undang tahun ${items.year}`);
-        useNoindex();
 
         return (
           <main>

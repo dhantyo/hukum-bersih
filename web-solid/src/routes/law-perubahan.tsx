@@ -2,7 +2,7 @@ import type { RouteProps } from "@solidjs/router";
 import { useHead } from "@solidjs/web";
 import { createMemo, onSettled, Show } from "solid-js";
 
-import { useNoindex, usePageTitle } from "../lib/head.ts";
+import { usePageTitle } from "../lib/head.ts";
 import { lawUrl } from "../lib/paths.ts";
 import { perubahanQuery } from "../lib/queries.ts";
 import { isPresent } from "../lib/text.ts";
@@ -31,8 +31,8 @@ const PerubahanPage = (props: RouteProps<"/uu/:nomor/:tahun/perubahan">) => {
     <Show when={forward()} fallback={<NotFound />} keyed>
       {(record) => {
         usePageTitle(() => "Perubahan");
-        useNoindex();
         useHead([
+          { tag: "meta", props: { name: "robots", content: "noindex" } },
           { tag: "link", props: { rel: "canonical", href: record.target } },
           {
             tag: "meta",

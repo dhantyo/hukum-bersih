@@ -13,7 +13,3 @@ export const usePageDescription = (description: string) => {
     props: { name: "description", content: description },
   });
 };
-
-export const useNoindex = () => {
-  useHead({ tag: "meta", props: { name: "robots", content: "noindex" } });
-};

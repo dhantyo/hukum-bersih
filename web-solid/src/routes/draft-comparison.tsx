@@ -8,7 +8,7 @@ import {
 } from "../components/draft-provenance.tsx";
 import { SameRowsToggle } from "../components/same-rows-toggle.tsx";
 import { SynopsisRow } from "../components/synopsis-row.tsx";
-import { usePageTitle, useNoindex } from "../lib/head.ts";
+import { usePageTitle } from "../lib/head.ts";
 import { slashed } from "../lib/paths.ts";
 import { draftComparisonQuery } from "../lib/queries.ts";
 import { Router } from "../router.tsx";
@@ -48,7 +48,6 @@ const DraftComparisonPage = (props: RouteProps<"/ruu/:slug/beda/:pair">) => {
     <Show when={comparison()} fallback={<NotFound />} keyed>
       {(record) => {
         usePageTitle(() => `${record.name}: perbandingan`);
-        useNoindex();
 
         const { counts } = record;
 

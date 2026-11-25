@@ -2,7 +2,7 @@ import * as stylex from "@stylexjs/stylex";
 import { createMemo, For, Show } from "solid-js";
 
 import { LawRows } from "../components/law-rows.tsx";
-import { useNoindex, usePageDescription, usePageTitle } from "../lib/head.ts";
+import { usePageDescription, usePageTitle } from "../lib/head.ts";
 import { slashed } from "../lib/paths.ts";
 import { overviewQuery } from "../lib/queries.ts";
 import { Router } from "../router.tsx";
@@ -41,7 +41,6 @@ const LawOverview = () => {
   usePageDescription(
     "Semua undang-undang Republik Indonesia sebagai teks yang bersih dan mudah dibaca."
   );
-  useNoindex();
   const overview = createMemo(async () => await overviewQuery());
 
   return (
