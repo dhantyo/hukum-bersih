@@ -5,10 +5,14 @@
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 from typing import Any
 
 Node = dict[str, Any]
+
+# a pasal number split into its leading digits and the rest: "27A" is ("27", "A")
+PASAL_NUMBER = re.compile(r"([0-9]+)([^\n\r\u2028\u2029]*)")
 
 _NUMBERED = frozenset(["paragraph", "point", "item"])
 
