@@ -11,17 +11,20 @@ import unicodedata
 
 # JavaScript's \s and String.trim(): Python's \s lacks U+FEFF and adds U+001C..U+001F
 WS = r"[\t\n\v\f\r    -     　﻿]"
-_WS_RUN = re.compile(f"{WS}+")
-_WS_EDGE = re.compile(f"^{WS}+|{WS}+$")
+# The characters of WS, for the str methods that run in C (trim and collapse are called a few
+# hundred thousand times per export)
+WS_CHARS = ("\t\n\v\f\r            "
+            "      　﻿")
+_TO_SPACE = str.maketrans(dict.fromkeys(WS_CHARS, " "))
 
 
 def trim(text: str) -> str:
-    return _WS_EDGE.sub("", text)
+    return text.strip(WS_CHARS)
 
 
 def collapse(text: str) -> str:
     """``text.replace(/\\s+/g, " ").trim()``"""
-    return trim(_WS_RUN.sub(" ", text))
+    return " ".join(part for part in text.translate(_TO_SPACE).split(" ") if part)
 
 
 # --- title case (web/src/lib/title.ts) ---------------------------------------------------
