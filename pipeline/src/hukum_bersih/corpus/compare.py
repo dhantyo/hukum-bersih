@@ -14,7 +14,7 @@ from collections import Counter
 from collections.abc import Callable
 from dataclasses import dataclass
 from functools import cache
-from typing import Literal
+from typing import Any, Literal
 
 import regex
 from diff_match_patch import diff_match_patch
@@ -22,6 +22,7 @@ from rapidiff import SequenceMatcher
 
 from .jstext import WS
 from .pasal import Pasal, PasalLine, pasal_text
+from .write import UNDEFINED
 
 Status = Literal["sama", "berubah", "baru", "dihapus"]
 Vector = dict[str, float]
@@ -39,6 +40,10 @@ REF_THRESHOLD = 0.3
 REF_MARGIN = 0.07
 # Below this share of unchanged text a line is shown as removed plus added in full.
 REWRITE_THRESHOLD = 0.5
+# Versions of one law number their lines authoritatively ("8. Dihapus." is still item 8), so with
+# ``by_number`` a line pairs more readily with the line of the same number at the same depth.
+# Between drafts items are renumbered and content alone decides.
+SAME_NUMBER_BONUS = 0.6
 
 _WORD = regex.compile(r"[\p{L}\p{N}]+")
 # a space run, a word, or one other character: JavaScript's \s, not Python's
@@ -160,7 +165,7 @@ def cosine(a: Vector, b: Vector) -> float:
     return dot
 
 
-def _line_vectors(pasal: list[Pasal]) -> LineVectors:
+def line_vectors(pasal: list[Pasal]) -> LineVectors:
     lines = [line for p in pasal for line in p.lines]
     return dict(zip(lines, tfidf([line.text for line in lines]), strict=True))
 
@@ -255,10 +260,15 @@ def _unchanged_share(parts: list[Part], a: str, b: str) -> float:
 
 # --- ayat by ayat, pasal by pasal --------------------------------------------------------
 
-def diff_lines(a: Pasal, b: Pasal, vectors: LineVectors) -> list[LineDiff]:
+def diff_lines(a: Pasal, b: Pasal, vectors: LineVectors, by_number: bool = False) -> list[LineDiff]:
     """Align the lines (TF-IDF cosine, so a reworded ayat still pairs up), then word-diff inside
     each matched pair."""
-    pairs = align(a.lines, b.lines, lambda x, y: cosine(vectors[x], vectors[y]), LINE_THRESHOLD)
+    def similarity_of(x: PasalLine, y: PasalLine) -> float:
+        sim = cosine(vectors[x], vectors[y])
+        same_number = by_number and x.num and x.num == y.num and x.indent == y.indent
+        return sim + SAME_NUMBER_BONUS if same_number else sim
+
+    pairs = align(a.lines, b.lines, similarity_of, LINE_THRESHOLD)
     out: list[LineDiff] = []
     for pair in pairs:
         la = None if pair.i is None else a.lines[pair.i]
@@ -292,7 +302,7 @@ class _Versions:
     @classmethod
     def of(cls, old: list[Pasal], new: list[Pasal]) -> _Versions:
         return cls(old, new, [pasal_text(p) for p in old], [pasal_text(p) for p in new],
-                   _line_vectors([*old, *new]))
+                   line_vectors([*old, *new]))
 
     def paired_row(self, i: int, j: int, sim: float, moved: bool) -> PasalComparison:
         a, b = self.old[i], self.new[j]
@@ -301,7 +311,7 @@ class _Versions:
                                diff_lines(a, b, self.vectors), a, b)
 
 
-def _only(pasal: Pasal, kind: Literal["baru", "dihapus"]) -> list[LineDiff]:
+def only(pasal: Pasal, kind: Literal["baru", "dihapus"]) -> list[LineDiff]:
     added = kind == "baru"
     return [LineDiff(kind, _whole(line.text, added, not added),
                      b=line if added else None, a=None if added else line)
@@ -350,12 +360,12 @@ def _rows(pairs: list[Pair], moves: dict[int, tuple[int, float]],
         elif j is not None:
             if j not in moved_targets:                     # a moved pasal is shown where it came from
                 rows.append(PasalComparison("baru", 0, False, False,
-                                            _only(versions.new[j], "baru"), b=versions.new[j]))
+                                            only(versions.new[j], "baru"), b=versions.new[j]))
         elif i in moves:
             rows.append(versions.paired_row(i, *moves[i], True))
         else:
             rows.append(PasalComparison("dihapus", 0, False, False,
-                                        _only(versions.old[i], "dihapus"), a=versions.old[i]))
+                                        only(versions.old[i], "dihapus"), a=versions.old[i]))
     return rows
 
 
@@ -403,3 +413,25 @@ def _counterpart(line: LineDiff, entries: list[tuple[str, Pasal, PasalLine]], ta
     if best and best_sim >= REF_THRESHOLD and best_sim - second >= REF_MARGIN:
         return LineRef(_line_label(*best), other, best[0])
     return None
+
+
+# --- the JSON of a line ------------------------------------------------------------------
+
+def _line_side(line: PasalLine | None) -> Any:
+    if line is None:
+        return UNDEFINED
+    return {"num": UNDEFINED if line.num is None else line.num, "indent": line.indent}
+
+
+def line_json(line: LineDiff, anchors: dict[int, str]) -> dict[str, Any]:
+    """One line of a comparison as the page reads it; ``anchors`` names the pasal a ``ref`` points
+    at (it is empty for a line that has none)."""
+    if line.ref and id(line.ref.pasal) not in anchors:
+        raise ValueError("A cross-reference points at a pasal outside the rows")
+    return {
+        "kind": line.kind, "a": _line_side(line.a), "b": _line_side(line.b),
+        "parts": [{"value": p.value, "added": p.added, "removed": p.removed} for p in line.parts],
+        "ref": UNDEFINED if line.ref is None else {
+            "label": line.ref.label, "side": line.ref.side,
+            "anchor": anchors[id(line.ref.pasal)]},
+    }

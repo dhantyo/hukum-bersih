@@ -81,7 +81,10 @@ def merged(tmp_path):
 
 
 def test_a_collection_with_a_text_has_the_merged_text_as_latest(merged):
-    assert sorted(p.name for p in merged.iterdir()) == ["latest.json", "perubahan.json"]
+    assert sorted(p.name for p in merged.iterdir()) == [
+        "comparisons", "latest.json", "perubahan.json"]
+    assert sorted(p.name for p in (merged / "comparisons").iterdir()) == [
+        "index.json", "uu_3_2020...uu_4_2009.json", "uu_4_2009...uu_3_2020.json"]
     record = _read(merged, "latest")
     assert (record["date"], record["title"], record["baseTitle"]) == (
         "2020-06-10", "UU Tambang", "Undang-Undang Nomor 4 Tahun 2009")
@@ -184,7 +187,7 @@ def test_every_dated_version_has_its_own_record(tmp_path):
          relationships={"amends": [{"id": "uu_4_2009", "order": 2, "changes": CHANGES}]})
     folder = _export(data, tmp_path / "out") / "pertambangan"
     assert sorted(p.name for p in folder.iterdir()) == [
-        "2020-06-10.json", "latest.json", "perubahan.json"]
+        "2020-06-10.json", "comparisons", "latest.json", "perubahan.json"]
     wording = {name: _read(folder, name)["text"]["body"][0]["children"][0]["children"][0][
         "children"][0]["text"] for name in ("2020-06-10", "latest")}
     assert wording == {"2020-06-10": "Mineral dikuasai oleh negara.",

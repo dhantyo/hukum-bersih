@@ -146,6 +146,31 @@ urls=(
   "/search-index/$release/../../x.json"
 )
 
+# Every ordered pair of versions of three amended laws, on the law page (`?bandingkan&dari`, read as
+# older against newer whichever way round) and on the collection page (`?dari&bandingkan`).
+pairs() {
+  local page="$1" slug="$2" from to
+  shift 2
+  for from in "$@"; do
+    for to in "$@"; do
+      if [ "$from" != "$to" ]; then
+        urls+=("$page/?bandingkan=$to&dari=$from")
+        urls+=("/koleksi/$slug/?dari=$from&bandingkan=$to")
+      fi
+    done
+  done
+}
+pairs /uu/24/2003 mahkamah-konstitusi uu_24_2003 uu_8_2011 perppu_1_2013 uu_7_2020
+pairs /uu/4/2009 minerba uu_4_2009 uu_3_2020 uu_2_2025
+pairs /uu/19/2003 bumn uu_19_2003 uu_1_2025 uu_16_2025
+# an amending law's own page: its text decides where the comparison puts a pasal it does not have
+urls+=(
+  '/uu/8/2011/?bandingkan=uu_7_2020&dari=uu_24_2003'
+  '/uu/7/2020/?bandingkan=uu_8_2011'
+  '/uu/19/2016/?bandingkan=uu_1_2024&dari=uu_11_2008'
+  '/uu/1/2024/?bandingkan=uu_19_2016'
+)
+
 i=0
 for url in "${urls[@]}"; do
   i=$((i + 1))

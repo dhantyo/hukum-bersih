@@ -16,9 +16,9 @@ from typing import Any
 import yaml
 
 from ..akn.build import ruu_akn_args, to_akn_tree
-from .compare import Comparison, LineDiff, PasalComparison, compare
+from .compare import Comparison, PasalComparison, compare, line_json
 from .jstext import locale_key
-from .pasal import Pasal, PasalLine, collect_pasal
+from .pasal import Pasal, collect_pasal
 from .reader_text import reader_text
 from .search import SearchRecords
 from .titles import draft_document_title
@@ -87,12 +87,6 @@ def _anchor_of(row: PasalComparison) -> str:
     return f"{'b' if row.b else 'a'}-{pasal.eId}"
 
 
-def _line_side(line: PasalLine | None) -> Any:
-    if line is None:
-        return UNDEFINED
-    return {"num": UNDEFINED if line.num is None else line.num, "indent": line.indent}
-
-
 def comparison_rows(comparison: Comparison) -> list[dict[str, Any]]:
     """The rows as the page reads them: anchors for pasal and for the pasal a line points at."""
     anchors = {id(pasal): _anchor_of(row)
@@ -111,21 +105,9 @@ def comparison_rows(comparison: Comparison) -> list[dict[str, Any]]:
             "chapter": UNDEFINED if new_chapter is None else new_chapter,
             "a": {"label": row.a.label} if row.a else UNDEFINED,
             "b": {"label": row.b.label} if row.b else UNDEFINED,
-            "lines": [_line_json(line, anchors) for line in row.lines],
+            "lines": [line_json(line, anchors) for line in row.lines],
         })
     return out
-
-
-def _line_json(line: LineDiff, anchors: dict[int, str]) -> dict[str, Any]:
-    if line.ref and id(line.ref.pasal) not in anchors:
-        raise ValueError("A cross-reference points at a pasal outside the rows")
-    return {
-        "kind": line.kind, "a": _line_side(line.a), "b": _line_side(line.b),
-        "parts": [{"value": p.value, "added": p.added, "removed": p.removed} for p in line.parts],
-        "ref": UNDEFINED if line.ref is None else {
-            "label": line.ref.label, "side": line.ref.side,
-            "anchor": anchors[id(line.ref.pasal)]},
-    }
 
 
 # --- the files ---------------------------------------------------------------------------

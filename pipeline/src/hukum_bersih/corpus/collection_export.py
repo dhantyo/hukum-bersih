@@ -1,7 +1,7 @@
 """``collections/<slug>/*.json``: the records of the collection pages
 (``web-solid/scripts/export-collections.ts``). A collection whose base law has a text gets one
 merged record per version (``latest.json`` and ``<date>.json``) and, when its amendments can
-be read pasal by pasal, ``perubahan.json``. Any other collection gets ``timeline.json``.
+be read pasal by pasal, ``perubahan.json`` and the ``comparisons/`` of its versions. Any other collection gets ``timeline.json``.
 """
 
 from __future__ import annotations
@@ -18,6 +18,7 @@ from .merge import Merged, merged_doc
 from .reader_text import Document, read_document, reader_text_of
 from .regulations import cite_id
 from .timeline import status_of, timeline_record
+from .version_comparison import write_comparisons
 from .version_history import compare_data
 from .versions import VersionRow
 from .write import UNDEFINED, js_object, write_json
@@ -114,6 +115,7 @@ def export_collection(laws: Laws, koleksi: Koleksi, original: Document | None,
     if original is not None:
         if laws.has_amendment_steps(koleksi.base):
             records["perubahan"] = compare_data(laws, koleksi.base, original)
+            write_comparisons(directory / "comparisons", records["perubahan"])
         records.update(_version_records(laws, koleksi, original))
     if "latest" not in records:
         records["timeline"] = timeline_record(laws, koleksi, original)
