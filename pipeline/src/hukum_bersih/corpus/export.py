@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import shutil
 import tempfile
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from .catalog import export_catalog
@@ -37,10 +38,18 @@ def _export_and_publish(data_dir: Path, stage: Path, corpus: Path | None) -> lis
 
 
 def _export(data_dir: Path, stage: Path) -> list[str]:
-    """The catalog lists what the other areas wrote; the search index, last, holds their texts."""
+    """The catalog lists what the other areas wrote; the search index holds the texts of the laws
+    and drafts. Collections and the catalog add no search records, so the index is written (by
+    the ``pagefind`` subprocess, which a thread waits for) while they are exported. The report
+    keeps one order: laws, collections, drafts, catalog, search."""
     stage.mkdir(parents=True, exist_ok=True)
     laws = Laws(data_dir)
     search = SearchRecords()
-    lines = [export_laws(laws, stage, search), export_collections(laws, stage),
-             export_drafts(data_dir, stage, search), export_catalog(laws, data_dir, stage)]
-    return [*lines, search.write(stage)]
+    laws_line = export_laws(laws, stage, search)
+    drafts_line = export_drafts(data_dir, stage, search)
+    with ThreadPoolExecutor(max_workers=1) as indexer:
+        indexing = indexer.submit(search.write, stage)
+        collections_line = export_collections(laws, stage)
+        catalog_line = export_catalog(laws, data_dir, stage)
+        search_line = indexing.result()
+    return [laws_line, collections_line, drafts_line, catalog_line, search_line]
