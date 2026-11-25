@@ -48,8 +48,9 @@ from dataclasses import dataclass, field
 from functools import cache
 from pathlib import Path
 
-import yaml
 from confusable_homoglyphs import confusables as uts39
+
+from ..yamlio import load_yaml
 
 RULES = Path(__file__).parent / "ocr_rules"
 DICTIONARIES = "id_ID,en_US"     # Hunspell's; found through $DICPATH or the system's folders
@@ -97,7 +98,7 @@ class Fixes:
 
 @cache
 def confusions() -> tuple[tuple[str, str], ...]:
-    rules = yaml.safe_load((RULES / "confusions.yaml").read_text())
+    rules = load_yaml((RULES / "confusions.yaml").read_text())
     return tuple((r["read"], r["meant"]) for r in rules)
 
 

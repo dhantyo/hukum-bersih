@@ -13,9 +13,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-import yaml
-
 from ..akn.build import ruu_akn_args, to_akn_tree
+from ..yamlio import load_yaml
 from .compare import Comparison, PasalComparison, compare, line_json
 from .jstext import locale_key
 from .pasal import Pasal, collect_pasal
@@ -53,7 +52,7 @@ def load_ruus(data_dir: Path) -> list[dict[str, Any]]:
     """Every ``data/ruu/<slug>/ruu.yaml``, by title."""
     bills = []
     for record in (data_dir / "ruu").glob("*/ruu.yaml"):
-        rec = yaml.safe_load(record.read_text(encoding="utf-8"))
+        rec = load_yaml(record.read_text(encoding="utf-8"))
         rec["slug"] = record.parent.name
         rec["stages"] = [{**s, "date": _as_text(s.get("date"))} for s in rec.get("stages") or []]
         rec["documents"] = [{**d, "date": _as_text(d.get("date"))}

@@ -10,8 +10,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Literal
 
-import yaml
-
+from ..yamlio import load_yaml
 from .jstext import locale_key, slugify
 from .regulations import Regulation, Regulations, amends_entry, cite_id
 
@@ -93,7 +92,7 @@ class Collections:
     def _named(self, folder: Path) -> list[Koleksi]:
         found = []
         for path in sorted(folder.glob("*.yaml")) if folder.exists() else []:
-            data = yaml.safe_load(path.read_text(encoding="utf-8"))
+            data = load_yaml(path.read_text(encoding="utf-8"))
             base = self.regulations.get(data["base"])
             if base is None:
                 continue

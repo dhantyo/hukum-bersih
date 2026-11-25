@@ -4,9 +4,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
-import yaml
-
 from ..records import load_record
+from ..yamlio import load_yaml
 
 LANGUAGE = "ind"
 
@@ -85,7 +84,7 @@ def build_ruu(data_dir: Path, out_dir: Path) -> list[Path]:
     written = []
     for record in sorted((data_dir / "ruu").glob("*/ruu.yaml")):
         slug = record.parent.name
-        rec = yaml.safe_load(record.read_text())
+        rec = load_yaml(record.read_text())
         for doc in rec.get("documents", []):
             if not doc.get("text"):
                 continue
