@@ -666,13 +666,16 @@ export const DocLayout = (props: {
   const [, setReaderText] = useContext(ReaderViewContext);
   const tablet = useTablet();
 
-  onSettled(() => {
-    setReaderText(props.text);
+  createEffect(
+    () => props.text,
+    (text) => {
+      setReaderText(text);
 
-    return () => {
-      setReaderText(undefined);
-    };
-  });
+      return () => {
+        setReaderText(undefined);
+      };
+    }
+  );
 
   return (
     <main>
