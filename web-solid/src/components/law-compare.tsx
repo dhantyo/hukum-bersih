@@ -118,6 +118,7 @@ const styles = stylex.create({
       [WIDE]: { [FITS]: "none", default: "block" },
       default: "block",
     },
+    marginBlockEnd: `calc(-1 * ${space.s2})`,
   },
   cell: {
     margin: 0,
