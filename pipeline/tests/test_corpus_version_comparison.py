@@ -72,10 +72,9 @@ def test_a_new_pasal_is_all_added_and_a_deleted_one_all_removed():
     assert rows["4"]["lines"][0]["kind"] == "dihapus"
 
 
-def test_the_reverse_direction_diffs_the_later_text_against_the_earlier():
-    (line,) = _rows(1, 0)["1"]["lines"]
-
-    assert [part["value"] for part in line["parts"] if part["removed"]] == [" tepat waktu"]
+def test_a_comparison_runs_from_the_older_version_to_the_newer():
+    with pytest.raises(ValueError, match="not older"):
+        comparison_record(HISTORY, 1, 0)
 
 
 def test_an_ayat_repealed_in_place_is_paired_by_its_number_in_the_numbered_lines():
@@ -88,10 +87,6 @@ def test_an_ayat_repealed_in_place_is_paired_by_its_number_in_the_numbered_lines
     assert [line["kind"] for line in row["lines"]] == ["sama", "dihapus", "baru"]
     assert [line["kind"] for line in row["numbered"]] == ["sama", "diganti"]
 
-    (reverse,) = comparison_record(history, 1, 0)["pasal"]
-
-    assert "numbered" not in reverse
-
 
 def test_numbered_lines_are_left_out_when_they_pair_the_lines_the_same_way():
     row = _rows(0, 1)["1"]
@@ -99,13 +94,13 @@ def test_numbered_lines_are_left_out_when_they_pair_the_lines_the_same_way():
     assert "numbered" not in row
 
 
-def test_every_ordered_pair_of_versions_has_its_own_file(tmp_path):
+def test_every_pair_of_versions_has_one_file_older_version_first(tmp_path):
     directory = tmp_path / "comparisons"
 
-    assert write_comparisons(directory, {"versions": VERSIONS, "pasal": HISTORY}) == 6
-    assert sorted(path.name for path in directory.iterdir()) == sorted(
-        ["index.json", *(f"{a}...{b}.json" for a in (v["id"] for v in VERSIONS)
-                         for b in (v["id"] for v in VERSIONS) if a != b)])
+    assert write_comparisons(directory, {"versions": VERSIONS, "pasal": HISTORY}) == 3
+    assert sorted(path.name for path in directory.iterdir()) == [
+        "index.json", "uu_1_2000...uu_2_2010.json", "uu_1_2000...uu_3_2020.json",
+        "uu_2_2010...uu_3_2020.json"]
     assert json.loads((directory / "index.json").read_text(encoding="utf-8")) == {
         "versions": VERSIONS}
     pair = json.loads((directory / "uu_1_2000...uu_3_2020.json").read_text(encoding="utf-8"))

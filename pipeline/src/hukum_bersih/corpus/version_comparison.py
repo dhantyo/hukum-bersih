@@ -1,11 +1,11 @@
-"""``collections/<slug>/comparisons/``: every version of an amended law set against every other,
-pasal by pasal, so no page diffs anything per request. ``index.json`` lists the versions;
-``<from>...<to>.json`` holds the pasal that read differently in the two, in both directions
-(``version_history.compare_data`` is the input).
+"""``collections/<slug>/comparisons/``: every version of an amended law set against every later one,
+pasal by pasal, so no page diffs anything per request. ``index.json`` lists the versions, oldest
+first; ``<older>...<newer>.json`` holds the pasal that read differently in the two
+(``version_history.compare_data`` is the input). There is no file for the newer-to-older
+direction: the pages read the older version first and fill the columns from either side.
 
-A pasal is compared line by line (``compare.diff_lines``). The law pages compare an older version
-with a newer one and pair lines of the same number first (``numbered``, kept only where it pairs
-them differently from ``lines``); the collection pages compare in either direction and never do.
+A pasal is compared line by line (``compare.diff_lines``), and lines of the same number are
+paired first (``numbered``, kept only where it pairs them differently from ``lines``).
 """
 
 from __future__ import annotations
@@ -69,19 +69,19 @@ def _with_numbered(row: dict[str, Any], before: Any, after: Any) -> None:
 
 
 def comparison_record(pasal: list[list], older: int, newer: int) -> dict[str, Any]:
-    """The pasal that read differently in version ``older`` and in version ``newer`` (indexes
-    into the versions), diffed from the first to the second."""
-    low, high = sorted((older, newer))
+    """The pasal that read differently in version ``older`` and in the later version ``newer``
+    (indexes into the versions), diffed from the first to the second."""
+    if older >= newer:
+        raise ValueError(f"version {older} is not older than version {newer}")
     rows = []
     for num, history in pasal:
-        if not any(low < index <= high for index, _ in history):
+        if not any(older < index <= newer for index, _ in history):
             continue
         before, after = _slot_at(history, older), _slot_at(history, newer)
         if before == after:
             continue
         row = _row(num, before, after)
-        if older < newer:
-            _with_numbered(row, before, after)
+        _with_numbered(row, before, after)
         rows.append(row)
     return {"pasal": rows}
 
@@ -94,16 +94,15 @@ def _pair(older: str, newer: str) -> str:
 
 
 def write_comparisons(directory: Path, history: dict[str, Any]) -> int:
-    """Write the index and every ordered pair of versions of ``history`` into ``directory``;
-    returns the number of pairs."""
+    """Write the index and every pair of versions of ``history``, older first, into
+    ``directory``; returns the number of pairs."""
     directory.mkdir(parents=True)
     versions = history["versions"]
     write_json(directory / "index.json", {"versions": versions}, newline=False)
     pairs = 0
     for older, first in enumerate(versions):
-        for newer, second in enumerate(versions):
-            if older != newer:
-                write_json(directory / f"{_pair(first['id'], second['id'])}.json",
-                           comparison_record(history["pasal"], older, newer), newline=False)
-                pairs += 1
+        for newer in range(older + 1, len(versions)):
+            write_json(directory / f"{_pair(first['id'], versions[newer]['id'])}.json",
+                       comparison_record(history["pasal"], older, newer), newline=False)
+            pairs += 1
     return pairs

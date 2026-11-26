@@ -84,7 +84,7 @@ def test_a_collection_with_a_text_has_the_merged_text_as_latest(merged):
     assert sorted(p.name for p in merged.iterdir()) == [
         "comparisons", "latest.json", "perubahan.json"]
     assert sorted(p.name for p in (merged / "comparisons").iterdir()) == [
-        "index.json", "uu_3_2020...uu_4_2009.json", "uu_4_2009...uu_3_2020.json"]
+        "index.json", "uu_4_2009...uu_3_2020.json"]
     record = _read(merged, "latest")
     assert (record["date"], record["title"], record["baseTitle"]) == (
         "2020-06-10", "UU Tambang", "Undang-Undang Nomor 4 Tahun 2009")
