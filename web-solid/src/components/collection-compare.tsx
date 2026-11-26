@@ -15,6 +15,7 @@ import { compareSearch } from "../lib/schemas.ts";
 import { changes } from "../styles/changes.ts";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
+import { motion } from "../styles/motion.stylex.ts";
 import { reading } from "../styles/reading.ts";
 import { color, media, shadow, size, space } from "../styles/tokens.stylex.ts";
 import { versionName, VersionPicker } from "./collection-version-picker.tsx";
@@ -77,9 +78,8 @@ const styles = stylex.create({
     borderWidth: 1,
     gap: space.s1,
     transition: {
-      default:
-        "box-shadow 0.25s ease, scale 0.45s linear(0, 0.38 8%, 0.82 16%, 1.08 26%, 1.1 32%, 1.05 42%, 0.99 56%, 1.003 72%, 1)",
-      "@media (prefers-reduced-motion: reduce)": "none",
+      default: motion.liftTransition,
+      [motion.reduced]: "none",
     },
     alignItems: "center",
     backgroundColor: color.background,

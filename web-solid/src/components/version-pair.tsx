@@ -5,14 +5,12 @@ import { createEffect, createSignal, For } from "solid-js";
 import type { VersionChoice } from "../lib/collection-compare.ts";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
+import { motion } from "../styles/motion.stylex.ts";
 import { color, media, shadow, size, space } from "../styles/tokens.stylex.ts";
 import { VersionPicker } from "./collection-version-picker.tsx";
 import { Grip, Handle, Root, SlidingColumn } from "./column-parts.tsx";
 
 const GRABBED = ":is([data-grabbed])";
-
-const SPRING_EASING =
-  "linear(0, 0.38 8%, 0.82 16%, 1.08 26%, 1.1 32%, 1.05 42%, 0.99 56%, 1.003 72%, 1)";
 
 const styles = stylex.create({
   form: { margin: 0 },
@@ -42,8 +40,8 @@ const styles = stylex.create({
     paddingBlock: "0.1rem",
     paddingInline: `${space.s2} ${space.s1}`,
     transition: {
-      default: `box-shadow 0.25s ease, scale 0.45s ${SPRING_EASING}`,
-      "@media (prefers-reduced-motion: reduce)": "none",
+      default: motion.liftTransition,
+      [motion.reduced]: "none",
     },
     alignItems: "center",
     backgroundColor: color.background,
