@@ -16,7 +16,7 @@ if ! [[ "$release" =~ ^[a-f0-9]{64}$ ]]; then
 fi
 
 prefix="$remote/releases/$release"
-rclone copy "$corpus/releases/$release" "$prefix" --immutable --checksum --exclude /release-id >&2
+rclone copy "$corpus/releases/$release" "$prefix" --immutable --checksum --exclude /release-id --stats 10s --stats-one-line -v >&2
 rclone copyto "$corpus/releases/$release/release-id" "$prefix/release-id" --immutable --checksum >&2
 rclone copyto "$corpus/active-release" "$remote/active-release" --ignore-times >&2
 
