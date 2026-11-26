@@ -10,6 +10,7 @@ import type {
 } from "../lib/compare.ts";
 import { isPresent } from "../lib/text.ts";
 import { changes } from "../styles/changes.ts";
+import { slidingColumn } from "../styles/column-slide.ts";
 import { css } from "../styles/css.ts";
 import { reading } from "../styles/reading.ts";
 import { color, font, media, size, space } from "../styles/tokens.stylex.ts";
@@ -263,8 +264,10 @@ const Line = (props: {
       styles.cell,
       props.column === 1 && styles.firstColumn,
       props.column === 2 && styles.secondColumn,
-      indentStyle(props.line.indent)
+      indentStyle(props.line.indent),
+      props.column !== undefined && slidingColumn(props.column - 1)
     )}
+    data-cmp-column={props.column === undefined ? undefined : props.column - 1}
     data-side={props.side}
     data-kind={props.line.kind}
   >
@@ -305,8 +308,15 @@ const Pair = (props: { row: CompareRow; fits: boolean }) => (
   </div>
 );
 
-const Stack = (props: { cell: CompareCell; label?: string }) => (
-  <div class={css(styles.stack)}>
+const Stack = (props: {
+  cell: CompareCell;
+  column: number;
+  label?: string;
+}) => (
+  <div
+    class={css(styles.stack, slidingColumn(props.column))}
+    data-cmp-column={props.column}
+  >
     <Show when={isPresent(props.label)}>
       <p class={css(styles.columnLabel)}>{props.label}</p>
     </Show>
@@ -353,6 +363,7 @@ export const PasalBlock = (props: {
             {(cell, index) => (
               <Stack
                 cell={cell}
+                column={index()}
                 label={props.fits ? props.labels[index()] : undefined}
               />
             )}

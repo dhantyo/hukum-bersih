@@ -7,6 +7,7 @@ import * as v from "valibot";
 import type { Comparison } from "../lib/compare.ts";
 import { pasalKey } from "../lib/display.ts";
 import { compareSearch } from "../lib/schemas.ts";
+import { slidingColumn } from "../styles/column-slide.ts";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
@@ -246,7 +247,14 @@ const Grid = (props: {
             style={columnsStyle(props.comparison.chosen.length)}
           >
             <For each={columns()} keyed={false}>
-              {(version) => <strong>{versionName(version())}</strong>}
+              {(version, index) => (
+                <strong
+                  class={css(slidingColumn(index))}
+                  data-cmp-column={index}
+                >
+                  {versionName(version())}
+                </strong>
+              )}
             </For>
           </div>
         )}
