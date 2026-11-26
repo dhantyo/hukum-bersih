@@ -481,6 +481,14 @@ const PanelDrawer = (props: { label: string; children: JSX.Element }) => {
   );
 };
 
+const writeCollapsed = (next: boolean, inFoldedMode: boolean) => {
+  if (inFoldedMode) {
+    comparePanel.set(next ? "closed" : "open");
+  } else {
+    panelPreference.set(next ? "hidden" : "shown");
+  }
+};
+
 const useFoldedPanel = (props: { comparing: boolean; tablet: boolean }) => {
   const state = usePreference(panelPreference);
   const compared = usePreference(comparePanel);
@@ -492,11 +500,7 @@ const useFoldedPanel = (props: { comparing: boolean; tablet: boolean }) => {
     folded() ? compared().value !== "open" : state().value === "hidden";
 
   const setCollapsed = (next: boolean) => {
-    if (folded()) {
-      comparePanel.set(next ? "closed" : "open");
-    } else {
-      panelPreference.set(next ? "hidden" : "shown");
-    }
+    writeCollapsed(next, folded());
   };
 
   const settle = (want: { collapsed: boolean; tablet: boolean }) => {
@@ -511,16 +515,27 @@ const useFoldedPanel = (props: { comparing: boolean; tablet: boolean }) => {
     }
   };
 
-  createEffect(
-    () => ({ collapsed: collapsed(), tablet: props.tablet }),
-    settle
-  );
+  let wanted = { collapsed: false, folded: false, tablet: false };
 
-  onSettled(() => {
-    requestAnimationFrame(() => {
-      settle({ collapsed: collapsed(), tablet: props.tablet });
-    });
-  });
+  createEffect(
+    () => ({
+      collapsed: collapsed(),
+      folded: folded(),
+      tablet: props.tablet,
+    }),
+    (want) => {
+      wanted = want;
+      settle(want);
+
+      const frame = requestAnimationFrame(() => {
+        settle(want);
+      });
+
+      return () => {
+        cancelAnimationFrame(frame);
+      };
+    }
+  );
 
   let groupCollapsed = false;
 
@@ -530,8 +545,8 @@ const useFoldedPanel = (props: { comparing: boolean; tablet: boolean }) => {
     if (next !== groupCollapsed) {
       groupCollapsed = next;
 
-      if (next !== collapsed()) {
-        setCollapsed(next);
+      if (next !== wanted.collapsed) {
+        writeCollapsed(next, wanted.folded);
       }
     }
   };
