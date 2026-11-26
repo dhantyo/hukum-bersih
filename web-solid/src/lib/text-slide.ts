@@ -1,8 +1,7 @@
 import { onSettled } from "solid-js";
 
 import {
-  crossingDim,
-  FAINT,
+  crossingPoses,
   FULL,
   GLIDE_MS,
   leftOf,
@@ -14,7 +13,6 @@ import {
   slotShifts,
 } from "./column-shift.ts";
 
-const TWO = 2;
 const PILL = '[data-slot="column-order-column"]';
 const TRANSLATE = "translate";
 const DRAG = "--drag-x";
@@ -155,25 +153,7 @@ export const createTextSlide = (
 
     limitPill(held, least, most);
 
-    const gap = spanOf(lefts);
-
-    const shift =
-      (centreOf(held) - (centres[heldByPointer] ?? 0)) *
-      (gap / (spanOf(centres) || 1));
-
-    poseColumns(
-      from.map((_key, index) => {
-        if (index === heldByPointer) {
-          return { shift, dim: FULL, glide: false };
-        }
-
-        if (from.length === TWO) {
-          return { shift: -shift, dim: crossingDim(shift, gap), glide: false };
-        }
-
-        return { shift: slots[index] ?? 0, dim: FAINT, glide: true };
-      })
-    );
+    poseColumns(crossingPoses(lefts, centres, heldByPointer, centreOf(held)));
     followColumns();
   };
 

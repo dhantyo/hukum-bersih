@@ -80,6 +80,53 @@ export const slotShifts = (
     return (lefts[place] ?? lefts[index] ?? 0) - (lefts[index] ?? 0);
   });
 
+const progress = (from: number, to: number, at: number) =>
+  from === to ? 0 : clamp((at - from) / (to - from), 0, 1);
+
+const along = (centres: number[], lefts: number[], at: number) => {
+  const last = Math.max(centres.length - 2, 0);
+
+  const segment = clamp(
+    centres.findLastIndex((centre) => centre <= at),
+    0,
+    last
+  );
+
+  const start = lefts[segment] ?? 0;
+  const end = lefts[segment + 1] ?? start;
+
+  return (
+    start +
+    (end - start) *
+      progress(centres[segment] ?? 0, centres[segment + 1] ?? 0, at)
+  );
+};
+
+/** One pose per column while the pill of column `held` is dragged: its own column follows the pill, the column of the one pill it is crossing gives way in step and faint, those passed sit in their swapped place and the rest stay put. `pillCentre` is where the held pill's centre is now. */
+export const crossingPoses = (
+  lefts: number[],
+  centres: number[],
+  held: number,
+  pillCentre: number
+) =>
+  lefts.map((left, index) => {
+    if (index === held) {
+      return {
+        shift: along(centres, lefts, pillCentre) - left,
+        dim: FULL,
+        glide: false,
+      };
+    }
+
+    const crossed = index > held ? index - 1 : index + 1;
+    const gap = (lefts[crossed] ?? left) - left;
+
+    const shift =
+      gap * progress(centres[crossed] ?? 0, centres[index] ?? 0, pillCentre);
+
+    return { shift, dim: crossingDim(shift, gap), glide: false };
+  });
+
 /** How far a pill may be dragged sideways from its own place: to the first pill and to the last. */
 export const pillTravel = (centres: number[], index: number) => ({
   least: (centres[0] ?? 0) - (centres[index] ?? 0),
