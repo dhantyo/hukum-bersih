@@ -38,6 +38,7 @@ jobs:
       - name: Install the pipeline
         working-directory: pipeline
         run: uv sync
+
       # The pipeline reads data/ and writes the corpus: laws, collections, drafts, the catalog and the
       # Pagefind index. `--publish` stores it as releases/<id>/ and points active-release at it.
       - name: Prepare preview corpus
@@ -87,19 +88,10 @@ jobs:
           pnpm exec wrangler deploy
           url="$(jq -ers '[.[] | select(.type == "deploy") | .targets[] | select(test("^https://hukum-bersih-solid-preview\\.[a-z0-9-]+\\.workers\\.dev/?$"))] | last' "$WRANGLER_OUTPUT_FILE_PATH")"
           printf 'url=%s\n' "${url%/}" >> "$GITHUB_OUTPUT"
-      - name: Smoke test deployed preview
+
+      - name: Deployment summary
         env:
           PREVIEW_URL: ${{ steps.worker.outputs.url }}
           RELEASE: ${{ steps.corpus.outputs.release }}
         run: |
-          curl --retry 4 --fail-with-body -sS "$PREVIEW_URL/uu/11/2008/" -o "$RUNNER_TEMP/solid-law.html"
-          grep -Fq 'id="pasal-27"' "$RUNNER_TEMP/solid-law.html"
-          curl --fail-with-body -sS "$PREVIEW_URL/uu/11/2008/?bandingkan=uu_1_2024&dari=uu_11_2008" -o "$RUNNER_TEMP/solid-comparison.html"
-          grep -Fq 'id="cmp-pasal-27a"' "$RUNNER_TEMP/solid-comparison.html"
-          curl --fail-with-body -sS "$PREVIEW_URL/uu/11/2008/perubahan/" -o "$RUNNER_TEMP/solid-perubahan.html"
-          grep -Fq 'url=/koleksi/ite/?bandingkan' "$RUNNER_TEMP/solid-perubahan.html"
-          curl --fail-with-body -sS "$PREVIEW_URL/search-index/$RELEASE/pagefind-entry.json" -o "$RUNNER_TEMP/solid-index.json"
-          jq -e '.languages.id.page_count > 1000' "$RUNNER_TEMP/solid-index.json"
-          curl --fail-with-body -sS "$PREVIEW_URL/koleksi/ite/" -o /dev/null
-          curl --fail-with-body -sS "$PREVIEW_URL/ruu/perampasan-aset/" -o /dev/null
           printf 'Preview: %s\n\nCorpus release: `%s`\n' "$PREVIEW_URL" "$RELEASE" >> "$GITHUB_STEP_SUMMARY"

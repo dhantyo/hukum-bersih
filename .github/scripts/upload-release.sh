@@ -6,18 +6,28 @@
 #
 # Usage: upload-release.sh <corpus-dir> <remote>
 # Prints the release id.
+
 set -euo pipefail
+
 corpus="${1:?usage: upload-release.sh <corpus-dir> <remote>}"
 remote="${2:?usage: upload-release.sh <corpus-dir> <remote>}"
 release="$(tr -d '\n' < "$corpus/active-release")"
+
 if ! [[ "$release" =~ ^[a-f0-9]{64}$ ]]; then
     echo "invalid release id in $corpus/active-release: $release" >&2
     exit 1
 fi
 
 prefix="$remote/releases/$release"
-rclone copy "$corpus/releases/$release" "$prefix" --immutable --checksum --exclude /release-id --stats 10s --stats-one-line -v >&2
-rclone copyto "$corpus/releases/$release/release-id" "$prefix/release-id" --immutable --checksum >&2
+
+if remote_release="$(rclone cat "$prefix/release-id")" &&
+   [[ "$remote_release" == "$release" ]]; then
+    echo "Release $release already exists. Skipping upload." >&2
+else
+    rclone copy "$corpus/releases/$release" "$prefix" --immutable --checksum --exclude /release-id --stats 10s --stats-one-line -v >&2
+    rclone copyto "$corpus/releases/$release/release-id" "$prefix/release-id" --immutable --checksum >&2
+fi
+
 rclone copyto "$corpus/active-release" "$remote/active-release" --ignore-times >&2
 
 echo "$release"
