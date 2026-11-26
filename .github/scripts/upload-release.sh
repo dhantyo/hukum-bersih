@@ -4,18 +4,20 @@
 # marker (release-id), then the pointer. A reader that sees the pointer finds a complete release.
 # Releases are immutable: re-uploading the same release only fills in what is missing.
 #
-# Usage: upload-release.sh <corpus-dir> <remote>      e.g. upload-release.sh "$RUNNER_TEMP/corpus" preview:bucket
-# Prints the release id. <corpus-dir> comes from `hukum-bersih release publish`.
+# Usage: upload-release.sh <corpus-dir> <remote>
+# Prints the release id.
 set -euo pipefail
 corpus="${1:?usage: upload-release.sh <corpus-dir> <remote>}"
 remote="${2:?usage: upload-release.sh <corpus-dir> <remote>}"
 release="$(tr -d '\n' < "$corpus/active-release")"
 if ! [[ "$release" =~ ^[a-f0-9]{64}$ ]]; then
-  echo "invalid release id in $corpus/active-release: $release" >&2
-  exit 1
+    echo "invalid release id in $corpus/active-release: $release" >&2
+    exit 1
 fi
+
 prefix="$remote/releases/$release"
-rclone copy "$corpus/releases/$release" "$prefix" --immutable --exclude /release-id >&2
-rclone copyto "$corpus/releases/$release/release-id" "$prefix/release-id" --immutable >&2
+rclone copy "$corpus/releases/$release" "$prefix" --immutable --checksum --exclude /release-id >&2
+rclone copyto "$corpus/releases/$release/release-id" "$prefix/release-id" --immutable --checksum >&2
 rclone copyto "$corpus/active-release" "$remote/active-release" --ignore-times >&2
+
 echo "$release"
