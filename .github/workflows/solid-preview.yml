@@ -43,25 +43,39 @@ jobs:
       - name: Prepare preview corpus
         working-directory: pipeline
         run: uv run hukum-bersih export-corpus --publish "$RUNNER_TEMP/solid-corpus"
+
       - name: Install rclone
         run: |
-          sudo apt-get update
-          sudo apt-get install -y rclone
+          curl -fsSL https://rclone.org/install.sh | sudo bash
+          rclone version
+
       - name: Publish the corpus to preview R2
         id: corpus
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           RCLONE_CONFIG_PREVIEW_TYPE: s3
           RCLONE_CONFIG_PREVIEW_PROVIDER: Cloudflare
+          RCLONE_CONFIG_PREVIEW_REGION: auto
+          RCLONE_CONFIG_PREVIEW_NO_CHECK_BUCKET: "true"
           RCLONE_CONFIG_PREVIEW_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
           RCLONE_CONFIG_PREVIEW_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
         run: |
+          set -euo pipefail
+
           : "${CLOUDFLARE_ACCOUNT_ID:?Cloudflare account ID is required}"
           : "${RCLONE_CONFIG_PREVIEW_ACCESS_KEY_ID:?Preview R2 access key is required}"
           : "${RCLONE_CONFIG_PREVIEW_SECRET_ACCESS_KEY:?Preview R2 secret key is required}"
-          export RCLONE_CONFIG_PREVIEW_ENDPOINT="https://$CLOUDFLARE_ACCOUNT_ID.r2.cloudflarestorage.com"
-          release="$(../.github/scripts/upload-release.sh "$RUNNER_TEMP/solid-corpus" preview:hukum-bersih-corpus)"
+
+          export RCLONE_CONFIG_PREVIEW_ENDPOINT="https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com"
+
+          echo "Checking R2 connectivity..."
+          rclone lsf preview:hukum-bersih-corpus --max-depth 1
+
+          echo "Publishing corpus..."
+          release="$(bash ../.github/scripts/upload-release.sh "$RUNNER_TEMP/solid-corpus" preview:hukum-bersih-corpus)"
+
           printf 'release=%s\n' "$release" >> "$GITHUB_OUTPUT"
+
       - name: Deploy preview Worker
         id: worker
         env:
