@@ -12,8 +12,9 @@ it pairs by content similarity, not by number.
 - **Mapping.** `lib/compare.ts` turns the published pair records (`collections/<slug>/comparisons/`)
   into rows: one per changed pasal, one cell per column, each cell a list of lines made of
   pieces (kept, inserted, struck, reworded, repealed, absent). `server/comparison.ts` reads the
-  pairs of neighbouring columns. The law page then places the rows in its own text
-  (`placeInText`); the collection page lists them.
+  pairs of neighbouring columns for a visit to the address; a change made on the page builds the
+  same rows in the browser from the same files (decision 0018). The law page then places the rows
+  in its own text (`placeInText`); the collection page lists them.
 - **Pairing.** Lines are paired by their number first, everywhere (the pair record's `numbered`
   field, else its `lines`). Before this, only the law page did; the collection page paired by
   position, so "8. Dihapus." could sit beside a different item. Every pair is read older version
@@ -47,5 +48,5 @@ One component removes the drift and the second copy of every fix.
   address forms made every control double its code.
 - The swap button between the two versions of the law page's chooser: dragging a column (or Space
   and the arrows on its handle) does the same.
-- The pipeline still writes the newer-to-older pair files. Nothing reads them now; dropping them
-  would shrink the corpus by about half of its comparison files.
+- The newer-to-older pair files, which nothing read; decision 0018 stops the pipeline writing
+  them.
