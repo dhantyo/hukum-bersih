@@ -311,12 +311,11 @@ export const CompareBar = (props: {
 }) => (
   <section
     class={css(styles.root, props.sticky === true && styles.sticky)}
-    id="banding"
-    aria-labelledby="banding-title"
+    aria-labelledby="cmp-title"
     data-cmp-bar
   >
     <div class={css(styles.top)}>
-      <h2 id="banding-title" class={css(styles.title)}>
+      <h2 id="cmp-title" class={css(styles.title)}>
         Bandingkan versi
       </h2>
       <output class={css(styles.summary)}>{props.summary}</output>

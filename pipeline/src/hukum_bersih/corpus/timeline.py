@@ -38,7 +38,7 @@ def timeline_record(laws: Laws, koleksi: Koleksi, document: Document | None) -> 
 
     def change_href(by: str, kind: str, num: str) -> str | None:
         if by in compared:
-            return f"{base_href}?v={by}#pasal-{pasal_key(num)}"
+            return f"{base_href}?v={by}#cmp-pasal-{pasal_key(num)}"
         anchor = anchors.get(num)
         return f"{base_href}#{anchor}" if kind != "disisipkan" and anchor is not None else None
 

@@ -122,9 +122,6 @@ const styles = stylex.create({
 const normalized = (text: string) =>
   text.trim().toUpperCase().replace(LEADING_PASAL, "");
 
-const searchOf = (ids: string[], pasal: string) =>
-  `${columnsHref(ids, pasal)}#banding`;
-
 const remember = (text: string) => {
   const url = new URL(window.location.href);
 
@@ -140,7 +137,7 @@ const remember = (text: string) => {
 /** Where the "Bandingkan versi" button of the side panel leads: the first version against the
  * latest. */
 export const firstToLatestHref = (comparison: Comparison) =>
-  searchOf(
+  columnsHref(
     [comparison.versions[0]?.id ?? "", comparison.versions.at(-1)?.id ?? ""],
     ""
   );
@@ -167,7 +164,7 @@ const Presets = (props: {
         {(preset) => (
           <a
             class={css(linkStyles.base, styles.preset)}
-            href={searchOf(preset.ids, props.pasal)}
+            href={columnsHref(preset.ids, props.pasal)}
           >
             {preset.label}
           </a>
@@ -316,8 +313,8 @@ export const CollectionCompare = (props: {
         <CompareBar
           versions={versions()}
           ids={ids()}
-          href={(next) => searchOf(next, pasal())}
-          action="#banding"
+          href={(next) => columnsHref(next, pasal())}
+          action="./"
           summary={
             props.comparison.chosen.length > 0
               ? summaryOf(

@@ -289,7 +289,7 @@ export const KoleksiBox = (props: { family: Family }) => {
         <a class={linkClass} href={`${url()}#riwayat`}>
           Riwayat koleksi →
         </a>
-        <a class={linkClass} href={`${url()}#banding`}>
+        <a class={linkClass} href={`${url()}?v=`}>
           Bandingkan versi →
         </a>
       </p>
