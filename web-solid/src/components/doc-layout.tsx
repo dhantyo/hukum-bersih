@@ -193,6 +193,7 @@ const styles = stylex.create({
     },
   },
   viewport: {
+    blockSize: "100%",
     maxBlockSize: {
       [NO_SCRIPT]: "none",
       default: PANEL_HEIGHT,
@@ -297,22 +298,22 @@ const styles = stylex.create({
     boxShadow: shadow.pop,
     boxSizing: "border-box",
     color: color.text,
+    display: "flex",
+    flexDirection: "column",
     fontFamily: "inherit",
     fontSize: size.sm,
     inlineSize: `min(${size.drawer}, calc(100vw - ${space.s7}))`,
-    overflowY: "auto",
   },
+  sheetScroll: { flexGrow: 1, minBlockSize: 0, position: "relative" },
   sheetBar: {
     gap: space.s2,
     paddingBlock: space.s2,
     alignItems: "center",
     backgroundColor: color.background,
     display: "flex",
-    insetBlockStart: `calc(-1 * ${space.s4})`,
+    flexShrink: 0,
     justifyContent: "space-between",
     marginBlockEnd: space.s3,
-    position: "sticky",
-    zIndex: 1,
   },
   sheetTitle: {
     margin: 0,
@@ -386,6 +387,25 @@ export const Breadcrumbs = (props: { crumbs: Crumb[]; flush?: boolean }) => (
   </nav>
 );
 
+const PanelScroll = (props: {
+  label: string;
+  class?: string;
+  children: JSX.Element;
+}) => (
+  <ScrollArea class={props.class}>
+    <ScrollAreaViewport
+      render={(viewport) => <aside {...viewport} />}
+      aria-label={props.label}
+      class={css(styles.viewport)}
+    >
+      <ScrollAreaContent>{props.children}</ScrollAreaContent>
+    </ScrollAreaViewport>
+    <ScrollAreaScrollbar class={css(styles.bar)}>
+      <ScrollAreaThumb class={css(styles.thumb)} />
+    </ScrollAreaScrollbar>
+  </ScrollArea>
+);
+
 const useMedia = (query: string) => {
   const [matches, setMatches] = createSignal(false);
 
@@ -453,7 +473,9 @@ const PanelDrawer = (props: { label: string; children: JSX.Element }) => {
             <span aria-hidden="true">×</span>
           </DrawerClose>
         </div>
-        {props.children}
+        <PanelScroll label={props.label} class={css(styles.sheetScroll)}>
+          {props.children}
+        </PanelScroll>
       </DrawerContent>
     </Drawer>
   );
@@ -575,32 +597,21 @@ const PanelGroup = (props: {
               </ToggleIcon>
             </Toggle>
           </div>
-          <ScrollArea class={css(styles.content)}>
-            <ScrollAreaViewport
-              render={(viewport) => <aside {...viewport} />}
-              aria-label={props.label}
-              class={css(styles.viewport)}
-            >
-              <ScrollAreaContent>
-                <div class={css(styles.panelBar)}>
-                  <Toggle
-                    class={css(styles.hideButton)}
-                    pressed={!fold.collapsed()}
-                    onPressedChange={setShown}
-                  >
-                    <ToggleIcon>
-                      <Chevron direction="left" />
-                    </ToggleIcon>
-                    Sembunyikan
-                  </Toggle>
-                </div>
-                {props.panel}
-              </ScrollAreaContent>
-            </ScrollAreaViewport>
-            <ScrollAreaScrollbar class={css(styles.bar)}>
-              <ScrollAreaThumb class={css(styles.thumb)} />
-            </ScrollAreaScrollbar>
-          </ScrollArea>
+          <PanelScroll label={props.label} class={css(styles.content)}>
+            <div class={css(styles.panelBar)}>
+              <Toggle
+                class={css(styles.hideButton)}
+                pressed={!fold.collapsed()}
+                onPressedChange={setShown}
+              >
+                <ToggleIcon>
+                  <Chevron direction="left" />
+                </ToggleIcon>
+                Sembunyikan
+              </Toggle>
+            </div>
+            {props.panel}
+          </PanelScroll>
         </Show>
       </ResizablePanel>
       <ResizableHandle
