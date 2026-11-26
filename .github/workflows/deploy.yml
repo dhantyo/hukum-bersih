@@ -108,7 +108,7 @@ jobs:
           : "${CLOUDFLARE_API_TOKEN:?Preview Workers API token is required}"
           export WRANGLER_OUTPUT_FILE_PATH="$RUNNER_TEMP/solid-deploy.jsonl"
           pnpm exec wrangler deploy
-          url="$(jq -ers '[.[] | select(.type == "deploy") | .targets[] | select(test("^https://hukum-bersih-solid-preview\\.[a-z0-9-]+\\.workers\\.dev/?$"))] | last' "$WRANGLER_OUTPUT_FILE_PATH")"
+          url="$(jq -ers '[.[] | select(.type == "deploy") | .targets[] | select(test("^https://web\\.[a-z0-9-]+\\.workers\\.dev/?$"))] | last' "$WRANGLER_OUTPUT_FILE_PATH")"
           printf 'url=%s\n' "${url%/}" >> "$GITHUB_OUTPUT"
 
       # Runs only when the deploy succeeded (the default step condition). Keeps the new release and the
