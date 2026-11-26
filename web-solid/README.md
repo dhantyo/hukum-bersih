@@ -24,7 +24,7 @@ uv run hukum-bersih export-corpus ../web-solid/.snapshots/stage
 uv run hukum-bersih release publish ../web-solid/.snapshots/stage --corpus ../web-solid/.corpus
 ```
 
-Open `http://localhost:3000/uu/11/2008/` for the reader and `http://localhost:3000/cari/` for full-text search. Publishing a new release makes it the active one. To go back to an earlier one, run `uv run hukum-bersih release activate <release-id> --corpus ../web-solid/.corpus` (`--corpus` defaults to `HUKUM_CORPUS_DIR`); the next request reads it.
+Open `http://localhost:3000/uu/11/2008/` for the reader and `http://localhost:3000/cari/` for search. Publishing a new release makes it the active one. To go back to an earlier one, run `uv run hukum-bersih release activate <release-id> --corpus ../web-solid/.corpus` (`--corpus` defaults to `HUKUM_CORPUS_DIR`); the next request reads it.
 
 Run `pnpm run check`, `pnpm exec tsc --noEmit`, and `pnpm run test --run` to check the preview code.
 
@@ -34,7 +34,7 @@ To prove a refactor changed no output, build, then run `CORPUS=.snapshots/before
 
 `pnpm run build` also renders every public page, so it needs the corpus: set `HUKUM_CORPUS_DIR` to a directory written by `export-corpus --publish` (the same one `pnpm run dev` reads). `prerender-crawler` (see `vite.config.ts` and [decision 0019](../docs/decisions/0019-prerender-pages-at-build.md)) crawls the built server in process from the five index pages, follows every link, and writes each page to `dist/client/<path>/index.html` with the data calls it made in `dist/client/_static/`. `dist/prerender-report.json` lists every page, its timing and what linked to it. The build fails if a linked page does not render, except the `/perppu/<n>/<year>/` links, which have no route. The release id is baked into the client (`import.meta.env.CORPUS_RELEASE`) so a comparison built in the browser reads its pair files from the same release as the page.
 
-`wrangler.jsonc` serves `dist/client` as assets and runs the Worker only for a path with no asset: search, the citation lookup, `/cari/laws.json`, `/data/<release>/...`, a call that was not baked and every 404. To try it locally, seed a local R2 with a release (a scratch script that puts the release files with `getPlatformProxy`) and run `pnpm exec wrangler dev --persist-to <dir>`; never `--remote`.
+`wrangler.jsonc` serves `dist/client` as assets and runs the Worker only for a path with no asset: `/cari/hasil/` (search without JavaScript), a call that was not baked and every 404. `/cari/`, the law catalog and the Pagefind index are assets, so search with JavaScript makes no Worker request ([decision 0020](../docs/decisions/0020-search-in-the-browser.md)). To try it locally, seed a local R2 with a release (a scratch script that puts the release files with `getPlatformProxy`) and run `pnpm exec wrangler dev --persist-to <dir>`; never `--remote`.
 
 ## Visual parity against Astro
 

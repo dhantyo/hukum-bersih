@@ -14,8 +14,8 @@ workflow.
   in `vite.config.ts`) runs after the client and server builds, in `hybrid` mode with
   `emitPages: true`, in-process against the built server, reading the corpus in
   `HUKUM_CORPUS_DIR`. Seeds are the five index pages; every other page is found by its links.
-  `filter` keeps only paths `staticPagePath` (`lib/schemas.ts`) accepts, so `/cari/` and the
-  JSON endpoints are never written. The build fails when a linked page does not render, except
+  `filter` keeps only paths `staticPagePath` (`lib/schemas.ts`) accepts, so `/cari/hasil/` and
+  the JSON endpoints are never written. The build fails when a linked page does not render, except
   the `/perppu/<n>/<year>/` links, which have no route today (404, a gap the base already has).
 - **Server function results.** The data functions of the law, collection and draft pages are
   `prerendered()` (`@solidjs/prerender`). The crawl bakes each call a page made into
@@ -30,8 +30,9 @@ workflow.
   matches the HTML.
 - **Worker.** `wrangler.jsonc` keeps `run_worker_first: false`: a request that matches an asset
   never runs the Worker, with or without a query string. What has no asset reaches the Worker:
-  `/cari/` (and `?q=`), the citation lookup, `/cari/laws.json`, `/data/<release>/...`,
-  `/_server` for a call that was not baked, the search assets and every 404.
+  `/cari/hasil/` (the search without JavaScript), `/data/<release>/...` of a comparison file,
+  `/_server` for a call that was not baked and every 404 (decision 0020 moved `/cari/`, the
+  catalog and the search index to assets).
   `@solidjs/prerender` is aliased to its server build in the Worker bundle, because wrangler
   resolves the package's `browser` entry and fails at start.
 - **Search CPU.** The catalog is parsed once per isolate for each active release
@@ -54,7 +55,6 @@ largest 7.87 MB.
 - Every deploy uploads the changed assets (the page hash decides), and the free plan caps a
   version at 20,000 files: the corpus can grow about four times before that binds.
 - Build time grows with the corpus (about one minute for 2,135 pages on a laptop).
-- Search results are still rendered by the Worker. The `/cari/` shell alone costs about 6 to 10
-  ms of CPU, so a request that matches many laws can still cross the limit; the fix is a
-  client-side search over `laws.json`, which drops the no-JavaScript results.
+- Search results were still rendered by the Worker, which can cross the CPU limit; decision 0020
+  moves them to the browser.
 - `server/middleware/public-law-cache.ts` rarely runs now (an asset answers first).
