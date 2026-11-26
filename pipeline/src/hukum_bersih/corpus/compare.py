@@ -38,8 +38,6 @@ LINE_THRESHOLD = 0.3
 # scores at least REF_THRESHOLD and beats the runner-up by REF_MARGIN.
 REF_THRESHOLD = 0.3
 REF_MARGIN = 0.07
-# Below this share of unchanged text a line is shown as removed plus added in full.
-REWRITE_THRESHOLD = 0.5
 # Versions of one law number their lines authoritatively ("8. Dihapus." is still item 8), so with
 # ``by_number`` a line pairs more readily with the line of the same number at the same depth.
 # Between drafts items are renumbered and content alone decides.
@@ -70,9 +68,9 @@ class LineRef:
 
 @dataclass
 class LineDiff:
-    """``diganti``: the same ayat, reworded so much that it is shown old and new in full."""
+    """One line of a comparison: ``berubah`` has word-level parts, the others are whole lines."""
 
-    kind: Literal["sama", "berubah", "baru", "dihapus", "diganti"]
+    kind: Literal["sama", "berubah", "baru", "dihapus"]
     parts: list[Part]
     a: PasalLine | None = None
     b: PasalLine | None = None
@@ -248,16 +246,6 @@ def _diff_chars(a: str, b: str) -> list[tuple[int, str]]:
     return diffs
 
 
-def _utf16_length(text: str) -> int:
-    return len(text.encode("utf-16-le")) // 2
-
-
-def _unchanged_share(parts: list[Part], a: str, b: str) -> float:
-    """Share of the longer text that is unchanged (lengths as JavaScript counts them)."""
-    same = sum(_utf16_length(p.value) for p in parts if not p.added and not p.removed)
-    return same / max(_utf16_length(a), _utf16_length(b), 1)
-
-
 # --- ayat by ayat, pasal by pasal --------------------------------------------------------
 
 def diff_lines(a: Pasal, b: Pasal, vectors: LineVectors, by_number: bool = False) -> list[LineDiff]:
@@ -277,12 +265,10 @@ def diff_lines(a: Pasal, b: Pasal, vectors: LineVectors, by_number: bool = False
             if la.text == lb.text:
                 out.append(LineDiff("sama", _whole(lb.text, False, False), la, lb))
                 continue
-            parts = word_diff(la.text, lb.text)
-            if _unchanged_share(parts, la.text, lb.text) < REWRITE_THRESHOLD:
-                out.append(LineDiff("diganti", _whole(la.text, False, True)
-                                    + _whole(lb.text, True, False), la, lb))
-            else:
-                out.append(LineDiff("berubah", parts, la, lb))
+            # never a whole-line replacement, however little is shared: the words both versions
+            # keep stay unmarked (2026-11-26: UU 19/2003 and UU 1/2025 Pasal 1 "Badan Usaha
+            # Milik Negara, yang selanjutnya disebut BUMN, adalah badan usaha yang ...")
+            out.append(LineDiff("berubah", word_diff(la.text, lb.text), la, lb))
         elif la:
             out.append(LineDiff("dihapus", _whole(la.text, False, True), a=la))
         else:

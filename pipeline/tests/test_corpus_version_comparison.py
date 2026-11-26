@@ -85,7 +85,42 @@ def test_an_ayat_repealed_in_place_is_paired_by_its_number_in_the_numbered_lines
     (row,) = comparison_record(history, 0, 1)["pasal"]
 
     assert [line["kind"] for line in row["lines"]] == ["sama", "dihapus", "baru"]
-    assert [line["kind"] for line in row["numbered"]] == ["sama", "diganti"]
+    assert [line["kind"] for line in row["numbered"]] == ["sama", "berubah"]
+
+
+BUMN_2003 = ("Badan Usaha Milik Negara, yang selanjutnya disebut BUMN, adalah badan usaha yang "
+             "seluruh atau sebagian besar modalnya dimiliki oleh negara melalui penyertaan secara "
+             "langsung yang berasal dari kekayaan negara yang dipisahkan.")
+BUMN_2025 = ("Badan Usaha Milik Negara yang selanjutnya disingkat BUMN adalah badan usaha yang "
+             "memenuhi minimal salah satu ketentuan berikut:")
+
+
+def _marked(line: dict) -> tuple[list[str], list[str]]:
+    """The words struck on the old side and highlighted on the new side."""
+    return ([p["value"] for p in line["parts"] if p["removed"]],
+            [p["value"] for p in line["parts"] if p["added"]])
+
+
+def test_words_both_versions_keep_stay_unmarked_in_a_mostly_rewritten_line():
+    """2026-11-26: UU 19/2003 and UU 1/2025 Pasal 1 angka 1 was struck and highlighted whole
+    because under half of it was unchanged, though it opens with the same words."""
+    history = [["1", [[0, [["1.", BUMN_2003, 0]]], [1, [["a.", BUMN_2025, 0]]]]]]
+    (row,) = comparison_record(history, 0, 1)["pasal"]
+    (line,) = row["lines"]
+
+    assert line["kind"] == "berubah"
+    struck, highlighted = _marked(line)
+    assert struck[:3] == [",", "disebut", ","]
+    assert struck[3].startswith("seluruh atau sebagian besar modalnya")
+    assert highlighted == ["disingkat", "memenuhi minimal salah satu ketentuan berikut:"]
+
+
+def test_a_comma_dropped_in_the_newer_text_is_the_only_mark():
+    history = [["1", [[0, [[None, "Badan Usaha Milik Negara, adalah badan usaha.", 0]]],
+                      [1, [[None, "Badan Usaha Milik Negara adalah badan usaha.", 0]]]]]]
+    (line,) = comparison_record(history, 0, 1)["pasal"][0]["lines"]
+
+    assert _marked(line) == ([","], [])
 
 
 def test_numbered_lines_are_left_out_when_they_pair_the_lines_the_same_way():
