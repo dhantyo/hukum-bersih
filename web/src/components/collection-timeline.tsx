@@ -8,6 +8,7 @@ import type {
   CollectionTimeline,
   TimelineEvent,
 } from "../server/records/collection-timeline.ts";
+import { collapse } from "../styles/collapse.ts";
 import { css } from "../styles/css.ts";
 import { linkClass, linkStyles } from "../styles/link.ts";
 import { fold } from "../styles/markers.stylex.ts";
@@ -122,9 +123,12 @@ const styles = stylex.create({
     fontWeight: 600,
     whiteSpace: "nowrap",
     "::after": {
-      content: {
-        default: '" ▴"',
-        [stylex.when.ancestor(CLOSED, fold)]: '" ▾"',
+      content: '"▴"',
+      display: "inline-block",
+      marginInlineStart: "0.35em",
+      transform: {
+        default: null,
+        [stylex.when.ancestor(CLOSED, fold)]: "rotate(180deg)",
       },
     },
   },
@@ -214,7 +218,7 @@ const ChangedArticles = (props: { event: LawEvent }) => (
           )}
         </For>
       </span>
-      <span class={css(styles.more)}>Daftar pasal</span>
+      <span class={css(styles.more, collapse.triggerArrow)}>Daftar pasal</span>
     </summary>
     <div class={css(styles.groups)}>
       <For each={props.event.changes}>

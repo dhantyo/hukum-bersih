@@ -2,15 +2,18 @@ import type { JSX } from "@solidjs/web";
 import * as stylex from "@stylexjs/stylex";
 import { onSettled } from "solid-js";
 
+import { foldAtTop, keepInView } from "../lib/fold-motion.ts";
+import { collapse } from "../styles/collapse.ts";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
 import { fold, foldHead } from "../styles/markers.stylex.ts";
 import { color, font, media, size, space } from "../styles/tokens.stylex.ts";
 
 const CLOSED = ":not([open])";
+const SEEDED = ":is([data-seed])";
 const HEAD_HOVER = ":hover";
 const NO_HOVER = "@media (hover: none)";
-const REDUCED_MOTION = "@media (prefers-reduced-motion: reduce)";
+const VIEW_TOP = 100;
 const PRINT = "@media print";
 const WIDE = "@media (min-width: 961px)";
 
@@ -33,10 +36,6 @@ const styles = stylex.create({
     position: "relative",
   },
   chevron: {
-    transition: {
-      [REDUCED_MOTION]: "none",
-      default: "transform 0.15s ease",
-    },
     alignSelf: "flex-start",
     blockSize: 16,
     color: {
@@ -58,6 +57,7 @@ const styles = stylex.create({
     transform: {
       default: "rotate(90deg)",
       [stylex.when.ancestor(CLOSED, fold)]: "none",
+      [stylex.when.ancestor(SEEDED, fold)]: "none",
     },
     verticalAlign: { default: null, [media.tablet]: "top" },
     "::before": {
@@ -100,7 +100,11 @@ const styles = stylex.create({
 /** The arrow hanging in the left margin of a fold's heading (before the text on narrow screens). */
 export const FoldChevron = (props: { flexItem?: boolean }) => (
   <span
-    class={css(styles.chevron, props.flexItem === true && styles.flexItem)}
+    class={css(
+      styles.chevron,
+      collapse.turn,
+      props.flexItem === true && styles.flexItem
+    )}
     aria-hidden="true"
   />
 );
@@ -146,9 +150,11 @@ const folds = () =>
 
 /** "Tutup semua" and "Buka semua". */
 export const setAllFolds = (open: boolean) => {
-  for (const details of folds()) {
-    details.open = open;
-  }
+  keepInView(foldAtTop(VIEW_TOP), () => {
+    for (const details of folds()) {
+      details.open = open;
+    }
+  });
 };
 
 const revealHash = () => {

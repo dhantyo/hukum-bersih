@@ -16,6 +16,7 @@
 
   html {
     -webkit-text-size-adjust: 100%;
+    scrollbar-gutter: stable;
   }
 
   h1,
@@ -53,6 +54,13 @@
 
   ::placeholder {
     opacity: 1;
+  }
+}
+
+/* The Pembukaan is open in the HTML for a reader without scripts and is closed after hydration unless the original format is on; `data-seed` marks it until then, so the first paint is the hydrated one. */
+@media (scripting: enabled) {
+  html:not([data-format="asli"]) details[data-seed] > :not(summary) {
+    display: none;
   }
 }
 
