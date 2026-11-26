@@ -68,7 +68,6 @@ export const size = stylex.defineVars({
   page: "72rem",
   pageWide: "100rem",
   measure: "42rem",
-  panel: "17rem",
   hang: "2.4rem",
   hangSm: "1.9rem",
   radius: "4px",

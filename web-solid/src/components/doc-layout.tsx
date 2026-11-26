@@ -9,9 +9,28 @@ import {
   DrawerTrigger,
 } from "@ui-sdk/solid/drawer";
 import { usePreference } from "@ui-sdk/solid/preferences";
+import {
+  createResizableController,
+  Resizable,
+  ResizableHandle,
+  ResizablePanel,
+} from "@ui-sdk/solid/resizable";
 import { Toggle, ToggleIcon } from "@ui-sdk/solid/toggle";
-import { createSignal, For, onSettled, Show, useContext } from "solid-js";
+import {
+  createEffect,
+  createSignal,
+  For,
+  onSettled,
+  Show,
+  useContext,
+} from "solid-js";
 
+import {
+  PANEL_REM,
+  readSavedWidth,
+  saveWidth,
+  WIDTH_SCRIPT,
+} from "../lib/panel-size.ts";
 import { ReaderViewContext } from "../lib/reader-view.ts";
 import {
   comparePanel,
@@ -33,6 +52,12 @@ const WIDE = "@media (min-width: 961px)";
 const COMPARING = ":has([data-cmp-bar])";
 const FOLDED = ':has([data-cmp-bar]):not([data-cmp-panel="open"])';
 const UNFOLDED = ':has([data-cmp-bar])[data-cmp-panel="open"]';
+
+const PANEL_ID = "doc-panel";
+const HOVERED = ":is([data-hovering])";
+const DRAGGED = ":is([data-dragging])";
+
+const rem = (value: number) => `${value}rem` as const;
 
 const styles = stylex.create({
   crumbs: {
@@ -64,25 +89,55 @@ const styles = stylex.create({
     color: color.textMuted,
     fontSize: { default: size.lg, [media.phone]: size.base },
   },
-  doc: {
-    gap: { default: space.s7, [media.tablet]: 0 },
-    alignItems: "start",
-    display: "grid",
-    gridTemplateColumns: {
+  doc: { display: "block" },
+  group: {
+    alignItems: "flex-start",
+    display: { default: null, [media.tablet]: "block !important" },
+  },
+  panel: {
+    transition: { [MOTION]: "max-width 0.24s ease-out", default: null },
+    display: { default: null, [media.tabletScripted]: "none" },
+    fontSize: size.sm,
+    maxBlockSize: {
+      default: `calc(100vh - ${space.s6} - ${headerOffset.shown})`,
+      [media.tablet]: "none",
+    },
+    maxInlineSize: {
       [FOLD]: {
         default: null,
-        [stylex.when.ancestor(FOLDED)]: `${size.tap} minmax(0, 1fr)`,
-        [stylex.when.ancestor(UNFOLDED)]: `${size.panel} minmax(0, 1fr)`,
+        [stylex.when.ancestor(FOLDED)]: size.tap,
+        [stylex.when.ancestor(UNFOLDED)]: "none",
       },
-      default: `${size.panel} minmax(0, 1fr)`,
-      [stylex.when.ancestor(HIDDEN)]: `${size.tap} minmax(0, 1fr)`,
-      [media.tablet]: "minmax(0, 1fr)",
+      default: null,
+      [stylex.when.ancestor(HIDDEN)]: size.tap,
+      [media.tablet]: "none",
+    },
+    position: { default: "sticky", [media.tablet]: "static" },
+    overflowY: { default: "auto", [media.tablet]: "visible" },
+    top: `calc(${space.s4} + ${headerOffset.shown})`,
+  },
+  handle: {
+    alignSelf: "stretch",
+    display: { default: "block", [media.tablet]: "none" },
+    inlineSize: space.s5,
+    outlineStyle: "none",
+    position: "relative",
+    "::after": {
+      insetBlock: 0,
+      backgroundColor: {
+        [DRAGGED]: color.link,
+        [HOVERED]: color.lineStrong,
+        default: "transparent",
+        ":focus-visible": color.link,
+      },
+      content: '""',
+      inlineSize: { [DRAGGED]: 2, default: 1, ":focus-visible": 3 },
+      insetInlineStart: "50%",
+      position: "absolute",
+      transform: "translateX(-50%)",
     },
   },
   rail: {
-    gridColumn: 1,
-    gridRow: 1,
-    transition: { [MOTION]: "top 0.24s ease-out", default: null },
     display: {
       [FOLD]: {
         default: null,
@@ -93,60 +148,40 @@ const styles = stylex.create({
       [stylex.when.ancestor(HIDDEN)]: "block",
       [media.tablet]: "none",
     },
-    position: "sticky",
-    top: `calc(${space.s4} + ${headerOffset.shown})`,
   },
   railButton: {
     padding: 0,
-    borderColor: color.lineStrong,
     borderRadius: size.radius,
-    borderStyle: "solid",
-    borderWidth: 1,
+    borderWidth: 0,
     placeItems: "center",
     backgroundColor: "transparent",
     blockSize: size.tap,
     color: {
-      default: color.text,
+      default: color.textMuted,
       ":hover": color.link,
     },
     cursor: "pointer",
     display: "grid",
     inlineSize: size.tap,
+    outlineColor: color.link,
+    outlineOffset: { default: null, ":focus-visible": -2 },
+    outlineStyle: { default: null, ":focus-visible": "solid" },
+    outlineWidth: { default: null, ":focus-visible": 2 },
   },
-  panel: {
-    gridColumn: 1,
-    gridRow: 1,
-    transition: {
-      [MOTION]: "top 0.24s ease-out, max-height 0.24s ease-out",
-      default: null,
-    },
+  content: {
     display: {
       [FOLD]: {
         default: null,
         [stylex.when.ancestor(FOLDED)]: "none",
         [stylex.when.ancestor(UNFOLDED)]: "block",
       },
-      default: null,
+      default: "block",
       [stylex.when.ancestor(HIDDEN)]: "none",
-      [media.tabletScripted]: "none",
+      [media.tablet]: "block",
     },
-    fontSize: size.sm,
-    maxBlockSize: {
-      default: `calc(100vh - ${space.s6} - ${headerOffset.shown})`,
-      [media.tablet]: "none",
-    },
-    paddingInlineEnd: space.s2,
-    position: { default: "sticky", [media.tablet]: "static" },
-    overflowY: { default: "auto", [media.tablet]: "visible" },
-    top: `calc(${space.s4} + ${headerOffset.shown})`,
+    paddingBlockEnd: space.s6,
   },
-  panelBar: {
-    gap: space.s2,
-    alignItems: "center",
-    display: "flex",
-    justifyContent: "space-between",
-    marginBlockEnd: space.s3,
-  },
+  panelBar: { marginBlockEnd: space.s4 },
   hideButton: {
     borderRadius: size.radius,
     borderWidth: 0,
@@ -164,36 +199,40 @@ const styles = stylex.create({
     fontFamily: "inherit",
     fontSize: size.xs,
     minBlockSize: space.s6,
+    outlineColor: color.link,
+    outlineOffset: { default: null, ":focus-visible": 2 },
+    outlineStyle: { default: null, ":focus-visible": "solid" },
+    outlineWidth: { default: null, ":focus-visible": 2 },
   },
-  main: {
-    gridColumn: { default: 2, [media.tablet]: 1 },
-    gridRow: 1,
+  text: {
+    minInlineSize: 0,
+    paddingInlineStart: { default: space.s5, [media.tablet]: 0 },
+  },
+  textBody: {
+    marginInline: {
+      [WIDE]: { default: null, [stylex.when.ancestor(COMPARING)]: 0 },
+      default: null,
+      [stylex.when.ancestor(HIDDEN)]: "auto",
+      [media.tablet]: 0,
+    },
     inlineSize: {
       [WIDE]: { default: null, [stylex.when.ancestor(COMPARING)]: "auto" },
       default: null,
       [stylex.when.ancestor(HIDDEN)]: `min(100%, ${size.measure})`,
       [media.tablet]: "auto",
     },
-    justifySelf: {
-      [WIDE]: { default: null, [stylex.when.ancestor(COMPARING)]: "stretch" },
-      default: null,
-      [stylex.when.ancestor(HIDDEN)]: "center",
-      [media.tablet]: "stretch",
-    },
-    minInlineSize: 0,
   },
   tab: {
     padding: 0,
-    borderColor: color.lineStrong,
+    borderColor: color.line,
     borderStyle: "solid",
     borderWidth: 1,
     placeItems: "center",
-    backgroundColor: color.surface,
+    backgroundColor: color.background,
     blockSize: space.s8,
     borderEndEndRadius: size.radiusMd,
     borderInlineStartWidth: 0,
     borderStartEndRadius: size.radiusMd,
-    boxShadow: shadow.sm,
     color: {
       default: color.textMuted,
       ":focus-visible": color.link,
@@ -216,12 +255,10 @@ const styles = stylex.create({
   },
   backdrop: { inset: 0, backgroundColor: color.scrim, position: "fixed" },
   sheet: {
-    padding: space.s4,
+    paddingBlock: space.s4,
+    paddingInline: space.s5,
     backgroundColor: color.background,
     blockSize: "100dvh",
-    borderInlineEndColor: color.line,
-    borderInlineEndStyle: "solid",
-    borderInlineEndWidth: 1,
     boxShadow: shadow.pop,
     boxSizing: "border-box",
     color: color.text,
@@ -249,18 +286,24 @@ const styles = stylex.create({
   },
   closeButton: {
     padding: 0,
-    borderColor: color.lineStrong,
     borderRadius: size.radius,
-    borderStyle: "solid",
-    borderWidth: 1,
+    borderWidth: 0,
     placeItems: "center",
     backgroundColor: "transparent",
     blockSize: size.tap,
-    color: color.text,
+    color: {
+      default: color.textMuted,
+      ":hover": color.link,
+    },
     cursor: "pointer",
     display: "grid",
     fontSize: size.lg,
     inlineSize: size.tap,
+    marginInlineEnd: `calc(-1 * ${space.s3})`,
+    outlineColor: color.link,
+    outlineOffset: { default: null, ":focus-visible": -2 },
+    outlineStyle: { default: null, ":focus-visible": "solid" },
+    outlineWidth: { default: null, ":focus-visible": 2 },
   },
 });
 
@@ -329,60 +372,6 @@ const useMedia = (query: string) => {
   return matches;
 };
 
-const SidePanel = (props: {
-  label: string;
-  comparing: boolean;
-  children: JSX.Element;
-}) => {
-  const state = usePreference(panelPreference);
-  const compared = usePreference(comparePanel);
-  const narrow = useMedia(FOLD_QUERY);
-  const folded = () => props.comparing && narrow();
-
-  const shown = () =>
-    folded() ? compared().value === "open" : state().value === "shown";
-
-  const setShown = (next: boolean) => {
-    if (folded()) {
-      comparePanel.set(next ? "open" : "closed");
-    } else {
-      panelPreference.set(next ? "shown" : "hidden");
-    }
-  };
-
-  return (
-    <>
-      <div class={css(styles.rail)}>
-        <Toggle
-          class={css(styles.railButton)}
-          aria-label={`Panel samping (${props.label.toLowerCase()})`}
-          pressed={shown()}
-          onPressedChange={setShown}
-        >
-          <ToggleIcon>
-            <Chevron direction="right" />
-          </ToggleIcon>
-        </Toggle>
-      </div>
-      <aside class={css(styles.panel)} aria-label={props.label}>
-        <div class={css(styles.panelBar)}>
-          <Toggle
-            class={css(styles.hideButton)}
-            pressed={shown()}
-            onPressedChange={setShown}
-          >
-            <ToggleIcon>
-              <Chevron direction="left" />
-            </ToggleIcon>
-            Sembunyikan
-          </Toggle>
-        </div>
-        {props.children}
-      </aside>
-    </>
-  );
-};
-
 const PanelDrawer = (props: { label: string; children: JSX.Element }) => {
   const [open, setOpen] = createSignal(false);
 
@@ -435,6 +424,150 @@ const PanelDrawer = (props: { label: string; children: JSX.Element }) => {
   );
 };
 
+const useFoldedPanel = (props: { comparing: boolean; tablet: boolean }) => {
+  const state = usePreference(panelPreference);
+  const compared = usePreference(comparePanel);
+  const narrow = useMedia(FOLD_QUERY);
+  const controller = createResizableController();
+  const folded = () => props.comparing && narrow();
+
+  const collapsed = () =>
+    folded() ? compared().value !== "open" : state().value === "hidden";
+
+  const setCollapsed = (next: boolean) => {
+    if (folded()) {
+      comparePanel.set(next ? "closed" : "open");
+    } else {
+      panelPreference.set(next ? "hidden" : "shown");
+    }
+  };
+
+  const settle = (want: { collapsed: boolean; tablet: boolean }) => {
+    if (want.tablet || controller.isCollapsed(PANEL_ID) === want.collapsed) {
+      return;
+    }
+
+    if (want.collapsed) {
+      controller.collapse(PANEL_ID);
+    } else {
+      controller.expand(PANEL_ID);
+    }
+  };
+
+  createEffect(
+    () => ({ collapsed: collapsed(), tablet: props.tablet }),
+    settle
+  );
+
+  onSettled(() => {
+    requestAnimationFrame(() => {
+      settle({ collapsed: collapsed(), tablet: props.tablet });
+    });
+  });
+
+  let groupCollapsed = false;
+
+  const follow = () => {
+    const next = controller.isCollapsed(PANEL_ID);
+
+    if (next !== groupCollapsed) {
+      groupCollapsed = next;
+
+      if (next !== collapsed()) {
+        setCollapsed(next);
+      }
+    }
+  };
+
+  const remember = () => {
+    const width = document
+      .querySelector(`#${PANEL_ID}`)
+      ?.getBoundingClientRect().width;
+
+    if (width !== undefined && !controller.isCollapsed(PANEL_ID)) {
+      saveWidth(
+        width /
+          Number(
+            getComputedStyle(document.documentElement).fontSize.slice(0, -2)
+          )
+      );
+    }
+  };
+
+  return { collapsed, controller, follow, remember, setCollapsed };
+};
+
+const PanelGroup = (props: {
+  label: string;
+  comparing: boolean;
+  tablet: boolean;
+  panel: JSX.Element;
+  children: JSX.Element;
+}) => {
+  const fold = useFoldedPanel(props);
+  const startWidth = rem(readSavedWidth() ?? PANEL_REM.default);
+
+  const setShown = (next: boolean) => {
+    fold.setCollapsed(!next);
+  };
+
+  return (
+    <Resizable
+      class={css(styles.group)}
+      controller={fold.controller}
+      onLayoutChange={fold.follow}
+      onLayoutCommit={fold.remember}
+    >
+      <ResizablePanel
+        id={PANEL_ID}
+        class={css(styles.panel)}
+        defaultSize={startWidth}
+        minSize={rem(PANEL_REM.min)}
+        maxSize={rem(PANEL_REM.max)}
+        collapsible
+        collapsedSize={rem(PANEL_REM.collapsed)}
+      >
+        <Show when={!props.tablet}>
+          <div class={css(styles.rail)}>
+            <Toggle
+              class={css(styles.railButton)}
+              aria-label={`Panel samping (${props.label.toLowerCase()})`}
+              pressed={!fold.collapsed()}
+              onPressedChange={setShown}
+            >
+              <ToggleIcon>
+                <Chevron direction="right" />
+              </ToggleIcon>
+            </Toggle>
+          </div>
+          <aside class={css(styles.content)} aria-label={props.label}>
+            <div class={css(styles.panelBar)}>
+              <Toggle
+                class={css(styles.hideButton)}
+                pressed={!fold.collapsed()}
+                onPressedChange={setShown}
+              >
+                <ToggleIcon>
+                  <Chevron direction="left" />
+                </ToggleIcon>
+                Sembunyikan
+              </Toggle>
+            </div>
+            {props.panel}
+          </aside>
+        </Show>
+      </ResizablePanel>
+      <ResizableHandle
+        class={css(styles.handle)}
+        aria-label="Ubah lebar panel samping"
+      />
+      <ResizablePanel class={css(styles.text)} minSize={rem(20)}>
+        <div class={css(styles.textBody)}>{props.children}</div>
+      </ResizablePanel>
+    </Resizable>
+  );
+};
+
 const useTablet = () => useMedia(TABLET_QUERY);
 
 /**
@@ -481,20 +614,18 @@ export const DocLayout = (props: {
         {props.headMeta}
       </header>
       <div class={css(styles.doc)}>
-        <Show
-          when={tablet()}
-          fallback={
-            <SidePanel
-              label={props.panelLabel}
-              comparing={props.comparing === true}
-            >
-              {props.panel}
-            </SidePanel>
-          }
-        >
+        <script>{WIDTH_SCRIPT}</script>
+        <Show when={tablet()}>
           <PanelDrawer label={props.panelLabel}>{props.panel}</PanelDrawer>
         </Show>
-        <div class={css(styles.main)}>{props.children}</div>
+        <PanelGroup
+          label={props.panelLabel}
+          comparing={props.comparing === true}
+          tablet={tablet()}
+          panel={props.panel}
+        >
+          {props.children}
+        </PanelGroup>
       </div>
     </main>
   );
