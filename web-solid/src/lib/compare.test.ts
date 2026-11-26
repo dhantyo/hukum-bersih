@@ -3,8 +3,10 @@ import { describe, expect, it } from "vitest";
 import type { ReaderText } from "../server/records/reader-text.ts";
 import {
   compareColumns,
+  neighbourPairs,
   pickColumns,
   placeInText,
+  selectColumns,
   unknownSelection,
 } from "./compare.ts";
 import type { Piece } from "./compare.ts";
@@ -131,6 +133,29 @@ describe(pickColumns, () => {
   it("refuses a version the collection does not have", () => {
     expect(pickColumns(ids, { v: "a,zzz" })).toStrictEqual(unknownSelection);
     expect(pickColumns(ids, { v: "zzz" })).toStrictEqual(unknownSelection);
+  });
+});
+
+describe(neighbourPairs, () => {
+  it("names each published pair older version first, whichever way the columns run", () => {
+    expect(neighbourPairs(ids, columns([0, 2, 1]))).toStrictEqual([
+      ["a", "c"],
+      ["b", "c"],
+    ]);
+  });
+
+  it("has no pair for two columns of the same version", () => {
+    expect(neighbourPairs(ids, columns([3, 3]))).toStrictEqual([null]);
+  });
+});
+
+describe(selectColumns, () => {
+  it("picks the columns of a valid request", () => {
+    expect(selectColumns(ids, { v: "a,c" }).columns).toStrictEqual([0, 2]);
+  });
+
+  it("treats a request that is not valid as an unknown version", () => {
+    expect(selectColumns(ids, { v: "A B" })).toStrictEqual(unknownSelection);
   });
 });
 

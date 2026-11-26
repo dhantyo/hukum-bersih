@@ -136,8 +136,9 @@ export const noteShown = <Shown extends PublishedComparison | null | undefined>(
 /**
  * The comparison `request` asks for, built in the browser from the published files of the
  * release the page was rendered from (the same files and mapping as the server). Until a page
- * has shown a comparison there is no release to read from, so `readOnServer` answers. When a
- * file cannot be loaded, the comparison already on screen is returned marked `failed`.
+ * has shown a comparison there is no release to read from, so `readOnServer` answers, as it does
+ * when the release has no comparison index (the collection has none, or the release is no longer
+ * the active one). When a file cannot be loaded, the comparison already on screen is returned marked `failed`.
  */
 export const compareInBrowser = async (
   slug: string,
@@ -151,7 +152,9 @@ export const compareInBrowser = async (
   }
 
   try {
-    return noteShown(slug, await buildComparison(release, slug, request));
+    const built = await buildComparison(release, slug, request);
+
+    return noteShown(slug, built ?? (await readOnServer()));
   } catch (error) {
     if (error instanceof MissingFileError) {
       knownRelease = undefined;

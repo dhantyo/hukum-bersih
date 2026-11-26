@@ -9,8 +9,6 @@ import type { compareSearch } from "./schemas.ts";
 
 type CompareSearch = v.InferOutput<typeof compareSearch>;
 
-const ignore = () => {};
-
 const comparisonAsked = (law: LawRecord, search: CompareSearch) =>
   search.v !== undefined && law.family?.comparable === true && law.text !== null
     ? { slug: law.family.slug, request: comparisonRequest(search) }
@@ -26,7 +24,7 @@ const preloadComparison = async (path: string, search: CompareSearch) => {
 };
 
 export const preloadLaw = (path: string, search: CompareSearch) => {
-  void preloadComparison(path, search).catch(ignore);
+  void Promise.allSettled([preloadComparison(path, search)]);
 };
 
 /** The comparison of the law's collection that the address asks for, placed in the law's own
