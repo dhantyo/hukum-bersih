@@ -17,30 +17,21 @@ jobs:
       - run: uv run ruff check .
       - run: uv run pytest
 
-  web:
+  akn:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: web
+        working-directory: pipeline
     steps:
       - uses: actions/checkout@v5
       - uses: astral-sh/setup-uv@v7
+      - run: uv sync
       - name: Build Akoma Ntoso XML from data/
-        working-directory: pipeline
-        run: uv run hukum-bersih build-akn --out ../web/generated/akn
+        run: uv run hukum-bersih build-akn --out "$RUNNER_TEMP/akn"
       # Blocking: any file that is not valid AKN 3.0 fails CI. Laws with no known date keep a
       # bare-year Work date (not made up) and are listed instead (scripts/validate_akn.py).
       - name: Validate the XML against the OASIS Akoma Ntoso 3.0 schema
-        working-directory: pipeline
-        run: uv run python scripts/validate_akn.py ../web/generated/akn
-      - uses: actions/setup-node@v5
-        with:
-          node-version: 22
-          cache: npm
-          cache-dependency-path: web/package-lock.json
-      - run: npm ci
-      - run: npm test # includes the M1 check: Pasal 5(2) of RUU Perampasan Aset changed
-      - run: npm run build
+        run: uv run python scripts/validate_akn.py "$RUNNER_TEMP/akn"
 
   changes:
     runs-on: ubuntu-latest

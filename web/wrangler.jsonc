@@ -1,9 +1,0 @@
-// Cloudflare Pages project for the built site (web/dist).
-// Pages (not Workers) because a custom subdomain such as one on suarakami.id can then be
-// attached with a plain CNAME, even if that domain's DNS is not in our Cloudflare account.
-{
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "hukum-bersih",
-  "pages_build_output_dir": "./dist",
-  "compatibility_date": "2026-11-01"
-}

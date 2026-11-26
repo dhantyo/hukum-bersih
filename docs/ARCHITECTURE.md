@@ -9,10 +9,10 @@ Git is the source of truth; everything else is generated from it.
                    └─► parse ──► data/**/<id>.txt (Bluebell text) + YAML records
                                           │  git push
                                           ▼
-              pipeline build-akn ──► Akoma Ntoso XML (web/generated/, not in git)
+              pipeline export-corpus ──► corpus release (JSON + Pagefind index)
                                           │
                                           ▼
-              web/ (Astro, static) ──► Cloudflare Pages, Pagefind search
+              web-solid/ (Solid 2) ──► Cloudflare Worker + R2, prerendered pages, Pagefind search
 ```
 
 ## Repository
@@ -21,7 +21,7 @@ Git is the source of truth; everything else is generated from it.
 |---|---|---|
 | `data/` | Source of truth: texts (Bluebell), YAML records, source manifests. No PDFs. | CC0 |
 | `pipeline/` | Python package `hukum_bersih`: BPK import, PDF parsing, Akoma Ntoso | AGPL-3.0 |
-| `web/` | Astro site: reads Akoma Ntoso XML, renders laws, RUU pages and comparisons | AGPL-3.0 |
+| `web-solid/` | Solid 2 reader on a Cloudflare Worker: prerendered law, collection and RUU pages from a corpus release ([decisions 0015-0020](decisions/)); renamed to `web/` in a later PR. The Astro site and its Pages deploy were removed in PR 2 | AGPL-3.0 |
 | `docs/` | Brief, naming rule, this file, decision records | AGPL-3.0 |
 
 ### data/
@@ -56,34 +56,16 @@ Names follow [NAMING.md](NAMING.md).
 | `akn/bluebell.py` | Blocks → Bluebell text (stored in `data/`) |
 | `akn/build.py` | Bluebell → Akoma Ntoso XML (Laws.Africa's `bluebell` parser) |
 | `relations.py` | Amends / revokes / enacts links from titles, plus the pasal an amending law changes (from its text) → `relationships` in each record ([decision 0008](decisions/0008-law-history.md)) |
-| `amendments.py` | An amending law's Pasal I → numbered instructions and the new wording of each pasal (JSON for the website) |
+| `amendments.py` | An amending law's Pasal I → numbered instructions and the new wording of each pasal (the corpus export reads `split`) |
 | `history.py` | The versions of an amended law and every change to its pasal → `history` in its record, recomputed with `relations` ([decision 0010](decisions/0010-versions-and-merged-text.md)) |
-| `cli.py` | `hukum-bersih parse / build-akn / import-bpk / import-peraturan / reparse-bpk / import-pdf / relations / manifest` |
-
-### web/src/
-
-| Path | Job |
-|---|---|
-| `lib/data.ts` | Reads RUU records from `data/` and generated XML from `web/generated/` |
-| `lib/lawdoc.ts` | Akoma Ntoso → render tree + each Pasal as lines |
-| `lib/compare.ts` | Match pasal by content, then ayat, then words (diff-match-patch) |
-| `lib/versions.ts`, `lib/merge.ts` | A family's versions from the records' `history`; the merged text at one version (original text + amending laws' instructions), with a note per changed pasal (decision 0010) |
-| `lib/koleksi.ts` | Collections: `data/koleksi/*.yaml` + automatic ones; members from the relations |
-| `lib/lawtext.ts` | Pasal-as-lines types and helpers, shared with the browser (no XML parser) |
-| `lib/display.ts` | Reader view helpers: headings in normal capitals, Penjelasan labels in the body's style, "Cukup jelas" ([decision 0009](decisions/0009-law-view-asli-modern.md)) |
-| `pages/cari/` | Grouped search: `laws.json` (short names, citations, titles) + Pagefind JS API for the text |
-| `lib/amendments.ts` | Apply each amendment's new wording in order → before/after per pasal; short names |
-| `components/` | `LawText` / `AknNode` render Akoma Ntoso with `akn-*` classes and eIds as ids, in the reader's view (`ReadingSettings`, the "Aa" popover: Asli/Modern, Penjelasan placement, parts shown; folding); `KoleksiTimeline` (history timeline), `Versions` (the side panel's version list) and `RelationsBanner` (on amending laws); `MergedView` / `MergedBanner` (merged text, decision 0010); `CompareMode` compares versions inside the reading view |
-| `pages/` | `/`, `/uu/`, `/uu/tahun/<tahun>/`, `/uu/<nomor>/<tahun>/`, `/uu/<nomor>/<tahun>/perubahan/` (forwards to the in-place comparison), `/koleksi/`, `/koleksi/<slug>/` (the latest version merged automatically, decision 0010; families without versions: their history and the version comparer), `/koleksi/<slug>/<date>/` (older merged versions), `/koleksi/<slug>/perubahan.json` (data for comparing versions in place, `CompareMode`), `/ruu/`, `/ruu/<slug>/`, `/ruu/<slug>/<doc id>/`, `/ruu/<slug>/beda/<a>...<b>/`, `/cari/`, `/tentang/` |
-| `styles/` | `tokens.css` (design tokens, see /DESIGN.md) and `global.css` |
-| `lib/peraturan.ts` | Reads regulation records and their generated Akoma Ntoso |
+| `cli.py` | `hukum-bersih parse / build-akn (writes XML to check it; the site reads the corpus, not XML) / import-bpk / import-peraturan / reparse-bpk / import-pdf / relations / manifest` |
 
 ## Workflows (.github/workflows)
 
 | Workflow | When | What |
 |---|---|---|
-| `ci.yml` | every push | pipeline lint + tests; build AKN; web tests (incl. M1 check) + build; no PDFs in git |
-| `deploy.yml` | push to default branch | build AKN + site, deploy to Cloudflare Pages |
+| `ci.yml` | every push | pipeline lint + tests; build AKN into a temporary folder and validate it against the OASIS schema; `web-solid/` check, types, tests and build (when it changed); actionlint; no PDFs in git |
+| `solid-preview.yml` | push to default branch + manual | export the corpus, build `web-solid/`, upload the release to R2, deploy the Worker preview ([web-solid/README.md](../web-solid/README.md)). The Astro `deploy.yml` (Cloudflare Pages) was removed in PR 2: the production hostname stays on the last Astro deployment until cutover |
 | `import-bpk.yml` | manual (schedule paused 2026-11-21 until the parser is fixed; normally every 6 h) | `mode: import`: BPK metadata, every PDF's sha256 recorded (Hugging Face mirror if BPK's download fails; nothing is uploaded to archive.org since 2026-11-24), text from BPK's PDF with the current parser, never replacing a text with one that has fewer pasal. `mode: reparse`: texts re-converted from our archive.org copies (hash-checked), no BPK. `only`, `no_text` for samples |
 | `parser-regression.yml` | push touching the parser + manual | the regression set (`pipeline/tests/regression.yaml`, fails on any law off) |
 | `import-peraturan.yml` | manual (schedule removed 2026-11-21) | import from peraturan.go.id (answers only Indonesian IPs; the Indonesian VPN action was removed 2026-11-24, so it works only when the site lets other IPs in) |
@@ -103,11 +85,9 @@ lets non-Indonesian IPs in. See [sources.md](sources.md) for what each site answ
 | Text format ↔ Akoma Ntoso | `bluebell-akn` (Laws.Africa) | |
 | Check that generated XML is valid Akoma Ntoso | OASIS Akoma Ntoso 3.0 XSD (downloaded in CI, sha256 pinned in `pipeline/scripts/validate_akn.py`) + `lxml` | blocks CI; laws with no known date keep the year and are listed |
 | Check workflow files | `actionlint` (rhysd, pinned v1.7.7), job `actionlint` in `ci.yml` | shellcheck integration off (style notes only) |
-| Word diff | `@sanity/diff-match-patch` (Google's diff-match-patch) | semantic cleanup groups edits |
 | Word diff in the corpus export (`pipeline/`) | `rapidiff` 0.3.0 (Rust `similar`, Myers, a prebuilt wheel) followed by the semantic cleanup of the Python `diff-match-patch`, in `corpus/compare.py` | measured 2026-11-25 on 400 paragraph pairs: 61 ms against 383 ms for pure Python `diff-match-patch`; 379 of 400 groupings equal the JavaScript engine's. In the full export (13,311 calls) the word diff takes 2.6 s of 126 s |
 | Matching reworded ayat, finding where text went | TF-IDF cosine similarity (standard information-retrieval weighting) | common legal words weigh little; a pointer is shown only for a clear best match |
 | Comparison layout | Synopsis / DIM-style side-by-side table | [decision 0006](decisions/0006-comparison-as-synopsis.md); `xmldiff` tried and rejected |
-| XML in the browser build | `@xmldom/xmldom` | |
 | archive.org | (nothing: no uploads since 2026-11-24, [decision 0014](decisions/0014-no-archive-uploads.md)); existing copies are read with `urllib` | `internetarchive` and `pikepdf` dependencies removed |
 | PDF text | PyMuPDF | |
 | OCR of scanned pages | Indra OCR (`indra-ocr`, CPU; Tesseract `ind` as fallback) | [decision 0012](decisions/0012-indra-ocr.md): checked on hand-typed ground truth against Tesseract (Ubuntu and `tessdata_best`), PaddleOCR (server, mobile/RapidOCR, VL), GLM-OCR, MinerU2.5-Pro, markitdown |
@@ -132,12 +112,12 @@ lets non-Indonesian IPs in. See [sources.md](sources.md) for what each site answ
 | Agent setup for ui-sdk in `web-solid/` | the `ui-sdk` skill (`npx skills@latest add vercel-labs/ui --skill ui-sdk`, pinned in `web-solid/skills-lock.json`) and a ui-sdk section in `web-solid/AGENTS.md` | the guide at ui-sdk.dev/docs/agents/build-with-an-agent; the docs it points to ship in `node_modules/@ui-sdk/solid/docs` |
 | Web fonts in `web-solid/` (Public Sans, Source Serif 4, Literata, Atkinson Hyperlegible Next) | `fontless` (unjs/fontaine), `google` provider, in `vite.config.ts` | downloads the variable fonts from Google Fonts at build, serves them from the Worker's assets under `/assets/_fonts`, and adds metric-adjusted fallback faces (`size-adjust`, `ascent-override`) so the swap shifts the layout less. Not used: the `@fontsource-variable/*` packages or their jsDelivr files (pinned and the same files as Astro, but more setup; Google's files set text 1 to 7% wider, measured 2026-11-26, accepted) |
 | Showing a law's history | legislation.gov.uk "changes over time", Fedlex "Chronologie" | [decision 0008](decisions/0008-law-history.md); relations parsed with our own regexes over our own data |
-| Repealed / not-yet-consolidated warning | legislation.gov.uk "changes to legislation", Fedlex "nicht mehr in Kraft" banners | `StatusBanner.astro` |
-| Getting back to the contents on long pages | GOV.UK "back to top" pattern | `DocLayout.astro` |
-| Comparing versions in the reading view | Fedlex's comparison view (two columns, inserted / deleted / modified / no counterpart, change marks in the contents) | `CompareMode.astro`, decision 0010 |
+| Repealed / not-yet-consolidated warning | legislation.gov.uk "changes to legislation", Fedlex "nicht mehr in Kraft" banners | `web-solid/src/components/law-banners.tsx` |
+| Getting back to the contents on long pages | GOV.UK "back to top" pattern | the Astro site's `DocLayout.astro` (removed; not ported as such) |
+| Comparing versions in the reading view | Fedlex's comparison view (two columns, inserted / deleted / modified / no counterpart, change marks in the contents) | `web-solid/src/components/compare-bar.tsx`, decision 0010 |
 | Animation (springs, layout, drag) | Motion (`motion`, MIT, vanilla `animate`, `animateLayout`, `drag`) | checked 2026-11-22: GSAP (Flip is good, but its licence is GSAP's own "no charge" licence, not open source), FormKit AutoAnimate (MIT, but only add/remove/move, no drag or springs), SortableJS (MIT, CSS-transition reorder; dropped because Motion's `drag` covers the one gesture we need), Swapy (GPL-3.0). View Transitions API used before; it cross-fades the whole page and cannot follow a drag |
-| Rendering very long laws | CSS `content-visibility: auto` | per chapter in `LawText.astro` |
-| Search for "pasal 27 ITE" | citation lookup as on legislation.gov.uk / Pasal.id, over our own `laws.json` | `pages/cari/`; Pagefind's prefix fallback ("xyzqq" → "x") is filtered out by checking the highlighted words |
+| Rendering very long laws | CSS `content-visibility: auto` | used per chapter by the removed Astro site; Solid prerenders pages instead (decision 0019) |
+| Search for "pasal 27 ITE" | citation lookup as on legislation.gov.uk / Pasal.id, over our own `laws.json` | `web-solid/src/routes/`; Pagefind's prefix fallback ("xyzqq" → "x") is filtered out by checking the highlighted words |
 | Raw UU text → structure (BAB … Pasal, ayat, lists, Penjelasan) | nothing reused: own parser `pdf/structure.py`; rewrite planned as a rule registry for line classes and a table-driven state machine ([parser-rules.md](parser-rules.md#design-for-the-rewrite)) | Checked 2026-11-24. `lark` (MIT, 1.3.1 of 2025-10): a context-free grammar over classified lines (`pipeline/scripts/grammar_prototype.py blocks`) got 13 of 20 regression laws right, wrong counts or no parse on amending laws and old layouts, since the sequence and amending rules count and look ahead. `parsimonious` (MIT, PEG, last push 2025-11): same class of grammar, same limit, not run. Slaw (Laws.Africa, MIT, Treetop grammar per country): archived 2022. Indigo (Laws.Africa, LGPL-3.0, active) imports with docpipe stages (GPL-3.0), one class per rule, writing Bluebell. bluebell (LGPL-3.0+, Canopy PEG): parses its own keyword markup, not raw text. Pasal.id `parse_structure.py` (AGPL-3.0): regex scan for markers, no sequence check; noise lines become content in all of them |
 | Links from a law's text to the laws and pasal it cites (planned) | `lark` grammar for reference phrases at anchors, as Indigo does with `provision_refs.peg`; law part from `relations.CITE`; output Bluebell `{{>href text}}` | Prototype `grammar_prototype.py refs` reads all 7 forms of UU 12/2011 Lampiran II items 44-283 (lists, ranges, exceptions). Chosen over Canopy (needs a Node compile step) and over regexes (no tree for `Pasal 7 ayat (2) dan ayat (4)`) |
 | Law view (Asli/Modern, folding, notes under provisions) | legislation.gov.uk "Original (As enacted)", Fedlex "Alles einblenden/ausblenden" and footnotes under articles, e-Gov per-part show/hide, New Zealand facts for assent (docs/research-law-display-2026-11.md) | [decision 0009](decisions/0009-law-view-asli-modern.md) |

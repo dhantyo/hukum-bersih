@@ -14,5 +14,5 @@ Run everything with `uv` from this folder. `uv sync --extra ocr` adds Indra OCR;
 ## Records and Akoma Ntoso
 
 - Read and write law records only through `load_record` / `save_record` (`records.py`). Add a new field to the schema there first. `relations.py` and `history.py` write `relationships` and `history`; both run in `hukum-bersih relations`, are idempotent and are never edited by hand.
-- Before touching `akn/` or a workflow, run `uv run python scripts/validate_akn.py` (OASIS 3.0 XSD) and actionlint, as `ci.yml` does. Laws with no known date keep the bare year and are listed, not failed.
+- Before touching `akn/` or a workflow, run `hukum-bersih build-akn --out <dir>` then `uv run python scripts/validate_akn.py <dir>` (OASIS 3.0 XSD) and actionlint, as `ci.yml` does. Laws with no known date keep the bare year and are listed, not failed.
 - Lint and test: `uv run ruff check .` and `uv run pytest`. Tests are grouped by topic (`tests/test_headings.py`, `test_penjelasan.py`, ...), not by parser version.

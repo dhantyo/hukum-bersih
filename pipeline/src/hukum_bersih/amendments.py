@@ -19,12 +19,10 @@ are not mistaken for headings. Text is never changed, only split.
 
 from __future__ import annotations
 
-import json
 import re
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
-from .records import load_record
 from .relations import _num, _sequence
 
 # A pasal number in an instruction, as OCR may have read it ("l73A", "lSC", "141El").
@@ -284,18 +282,3 @@ def split(rec: dict, folder: Path) -> dict | None:
     if not found:
         return None
     return {"id": rec["id"], "amends": amends[0]["id"], "instructions": [asdict(i) for i in found]}
-
-
-def build(data_dir: Path, out_dir: Path) -> int:
-    """For every amending law with one target and a text: its instructions, as JSON in
-    ``out_dir/amendments/<id>.json`` (for the website; regenerated, not committed)."""
-    target = out_dir / "amendments"
-    target.mkdir(parents=True, exist_ok=True)
-    count = 0
-    for path in sorted((data_dir / "peraturan").glob("*/*/*/*.yaml")):
-        rec = load_record(path)
-        split_up = split(rec, path.parent)
-        if split_up:
-            (target / f"{rec['id']}.json").write_text(json.dumps(split_up, ensure_ascii=False))
-            count += 1
-    return count

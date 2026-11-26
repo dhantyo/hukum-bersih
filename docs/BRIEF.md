@@ -33,7 +33,7 @@ government sites ──► scraper (Python, Indonesian IP) ──► DATA repo (
                                                               │  git push
                                                               ▼
                                           WEB repo: GitHub Actions build
-                                          Astro static site + Pagefind search index
+                                          Static site + Pagefind search index (Astro at first; Solid since PR 2 of the migration)
                                                               │
                                                               ▼
                                           GitHub Pages or Cloudflare Pages (free)
@@ -44,7 +44,7 @@ Two repositories (names are placeholders, ask Dante):
 | Repo | Contents | License |
 |---|---|---|
 | `hukum-data` | Law and RUU text as Markdown, metadata in front matter / YAML, source manifests. **No PDFs.** | CC0 (law text is public domain anyway, see §7) |
-| `hukum-web` | Scraper + parser (Python) and the website (Astro/TypeScript) | AGPL-3.0 (required if we reuse Pasal.id's parser code, see §5.2) |
+| `hukum-web` | Scraper + parser (Python) and the website (Astro/TypeScript at first; now Solid, see docs/ARCHITECTURE.md) | AGPL-3.0 (required if we reuse Pasal.id's parser code, see §5.2) |
 
 Why this shape:
 - Every change to a law or draft is a git commit, so history and diffs come for free.
@@ -259,7 +259,7 @@ enacted_as: null             # set to /akn/id/act/uu/2026/N once numbered
 
 ## 8. Website
 
-- **Astro**, static output, built by GitHub Actions on every push to the data repo (`repository_dispatch` from the scraper, or a schedule).
+- **Astro** (removed in PR 2 of the Solid migration, see docs/ARCHITECTURE.md), static output, built by GitHub Actions on every push to the data repo (`repository_dispatch` from the scraper, or a schedule).
 - UI language: **Indonesian first**, English second. Legal text always stays in Indonesian.
 - Pages:
   - Law page: readable structure, table of contents, status badge, source links, version history.

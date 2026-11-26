@@ -10,9 +10,6 @@
   "oxc.enable": true,
   "oxc.disableNestedConfig": true,
   "oxc.configPath": "web-solid/oxlint.config.ts",
-  "[astro]": {
-    "editor.defaultFormatter": "astro-build.astro-vscode"
-  },
   "[css]": {
     "editor.defaultFormatter": "oxc.oxc-vscode"
   },

@@ -9,17 +9,12 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 
-# Node / Astro
+# Node
 node_modules/
-web/dist/
-web/.astro/
 
 # Local pipeline state
 pipeline/cache/
 .env
-
-# Generated from data/ at build time
-web/generated/
 
 # agent worktrees (Claude Code)
 .claude/worktrees/
