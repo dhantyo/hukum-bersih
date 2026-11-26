@@ -30,11 +30,11 @@ jobs:
         with:
           package_json_file: web-solid/package.json
       - run: pnpm install --frozen-lockfile
-      - name: Build Solid Worker
+      - name: Check the Solid app
         run: |
           pnpm exec tsc --noEmit
           pnpm run test --run
-          pnpm run build
+
       - name: Install the pipeline
         working-directory: pipeline
         run: uv sync
@@ -44,6 +44,24 @@ jobs:
       - name: Prepare preview corpus
         working-directory: pipeline
         run: uv run hukum-bersih export-corpus --publish "$RUNNER_TEMP/solid-corpus"
+
+      # The build renders every public page from that corpus (prerender-crawler) into dist/client,
+      # which the Worker serves as static assets; the Worker itself only answers search, the
+      # citation lookup, the JSON endpoints and /data/<release>/.
+      - name: Build Solid Worker and prerender the pages
+        env:
+          HUKUM_CORPUS_DIR: ${{ runner.temp }}/solid-corpus
+        run: pnpm run build
+
+      - name: Check the prerendered pages
+        run: |
+          pages="$(find dist/client -name index.html | wc -l)"
+          files="$(find dist/client -type f | wc -l)"
+          echo "pages=$pages files=$files"
+          test "$pages" -gt 1000
+          test "$files" -lt 20000
+          test -z "$(find dist/client -type f -size +25M)"
+          printf 'Prerendered %s pages, %s asset files.\n' "$pages" "$files" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Install rclone
         run: |
