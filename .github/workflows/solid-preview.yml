@@ -20,13 +20,13 @@ jobs:
     defaults:
       run:
         working-directory: web-solid
-    steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v6
-      - uses: actions/setup-node@v4
+        steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
+      - uses: actions/setup-node@v5
         with:
           node-version-file: web-solid/.node-version
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v5
         with:
           package_json_file: web-solid/package.json
       - run: pnpm install --frozen-lockfile
