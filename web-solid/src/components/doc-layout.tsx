@@ -15,6 +15,13 @@ import {
   ResizableHandle,
   ResizablePanel,
 } from "@ui-sdk/solid/resizable";
+import {
+  ScrollArea,
+  ScrollAreaContent,
+  ScrollAreaScrollbar,
+  ScrollAreaThumb,
+  ScrollAreaViewport,
+} from "@ui-sdk/solid/scroll-area";
 import { Toggle, ToggleIcon } from "@ui-sdk/solid/toggle";
 import {
   createEffect,
@@ -54,10 +61,14 @@ const FOLDED = ':has([data-cmp-bar]):not([data-cmp-panel="open"])';
 const UNFOLDED = ':has([data-cmp-bar])[data-cmp-panel="open"]';
 
 const PANEL_ID = "doc-panel";
-const COLUMNS = ':has([data-slot="scroll-area"])';
+
+const COLUMNS = `:has([data-slot="scroll-area"]:not(#${PANEL_ID} *))`;
 const HIDDEN_TEXT = `${HIDDEN}:not(${COLUMNS})`;
 const HOVERED = ":is([data-hovering])";
 const DRAGGED = ":is([data-dragging])";
+const NO_SCRIPT = "@media (scripting: none)";
+const BAR_SHOWN = ":is([data-visible])";
+const PANEL_HEIGHT = `calc(100vh - ${space.s6} - ${headerOffset.shown})`;
 
 const rem = (value: number) => `${value}rem` as const;
 
@@ -100,10 +111,6 @@ const styles = stylex.create({
     transition: { [MOTION]: "max-width 0.24s ease-out", default: null },
     display: { default: null, [media.tabletScripted]: "none" },
     fontSize: size.sm,
-    maxBlockSize: {
-      default: `calc(100vh - ${space.s6} - ${headerOffset.shown})`,
-      [media.tablet]: "none",
-    },
     maxInlineSize: {
       [FOLD]: {
         default: null,
@@ -114,8 +121,11 @@ const styles = stylex.create({
       [stylex.when.ancestor(HIDDEN)]: size.tap,
       [media.tablet]: "none",
     },
-    position: { default: "sticky", [media.tablet]: "static" },
-    overflowY: { default: "auto", [media.tablet]: "visible" },
+    position: {
+      [NO_SCRIPT]: "static",
+      default: "sticky",
+      [media.tablet]: "static",
+    },
     top: `calc(${space.s4} + ${headerOffset.shown})`,
   },
   handle: {
@@ -181,7 +191,26 @@ const styles = stylex.create({
       [stylex.when.ancestor(HIDDEN)]: "none",
       [media.tablet]: "block",
     },
+  },
+  viewport: {
+    maxBlockSize: {
+      [NO_SCRIPT]: "none",
+      default: PANEL_HEIGHT,
+      [media.tablet]: "none",
+    },
     paddingBlockEnd: space.s6,
+    paddingInlineEnd: { default: space.s3, [media.tablet]: 0 },
+  },
+  bar: {
+    borderRadius: size.radius,
+    transition: { [MOTION]: "opacity 0.15s ease", default: null },
+    inlineSize: space.s1,
+    opacity: { [BAR_SHOWN]: 1, default: 0 },
+  },
+  thumb: {
+    borderRadius: size.radius,
+    backgroundColor: { [DRAGGED]: color.link, default: color.lineStrong },
+    inlineSize: "100%",
   },
   panelBar: { marginBlockEnd: space.s4 },
   hideButton: {
@@ -546,21 +575,32 @@ const PanelGroup = (props: {
               </ToggleIcon>
             </Toggle>
           </div>
-          <aside class={css(styles.content)} aria-label={props.label}>
-            <div class={css(styles.panelBar)}>
-              <Toggle
-                class={css(styles.hideButton)}
-                pressed={!fold.collapsed()}
-                onPressedChange={setShown}
-              >
-                <ToggleIcon>
-                  <Chevron direction="left" />
-                </ToggleIcon>
-                Sembunyikan
-              </Toggle>
-            </div>
-            {props.panel}
-          </aside>
+          <ScrollArea class={css(styles.content)}>
+            <ScrollAreaViewport
+              render={(viewport) => <aside {...viewport} />}
+              aria-label={props.label}
+              class={css(styles.viewport)}
+            >
+              <ScrollAreaContent>
+                <div class={css(styles.panelBar)}>
+                  <Toggle
+                    class={css(styles.hideButton)}
+                    pressed={!fold.collapsed()}
+                    onPressedChange={setShown}
+                  >
+                    <ToggleIcon>
+                      <Chevron direction="left" />
+                    </ToggleIcon>
+                    Sembunyikan
+                  </Toggle>
+                </div>
+                {props.panel}
+              </ScrollAreaContent>
+            </ScrollAreaViewport>
+            <ScrollAreaScrollbar class={css(styles.bar)}>
+              <ScrollAreaThumb class={css(styles.thumb)} />
+            </ScrollAreaScrollbar>
+          </ScrollArea>
         </Show>
       </ResizablePanel>
       <ResizableHandle

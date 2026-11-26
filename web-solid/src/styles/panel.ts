@@ -4,6 +4,7 @@ import { versionLink } from "./markers.stylex.ts";
 import { color, media, size, space } from "./tokens.stylex.ts";
 
 const OPEN = ":is([data-open])";
+const CHEVRON_TURN_OVERHANG = 2;
 const LEAD = `calc(${space.s3} + 2px)`;
 const LINK_HOVERED = stylex.when.ancestor(":hover", versionLink);
 
@@ -56,6 +57,7 @@ export const versions = stylex.create({
       borderInlineEndWidth: 1.5,
       content: '""',
       inlineSize: 6,
+      marginInlineEnd: CHEVRON_TURN_OVERHANG,
       marginInlineStart: "auto",
       transform: { [OPEN]: "rotate(-135deg)", default: "rotate(45deg)" },
     },
