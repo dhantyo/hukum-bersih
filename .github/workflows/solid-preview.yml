@@ -2,6 +2,10 @@ name: Deploy Solid preview
 
 on:
   workflow_dispatch:
+  # A manual run needs this file on the default branch; until it is there, a push to the Solid
+  # branch deploys the preview from the branch's own copy.
+  push:
+    branches: [feat/solid-reader]
 
 permissions:
   contents: read
@@ -76,8 +80,10 @@ jobs:
         run: |
           curl --retry 4 --fail-with-body -sS "$PREVIEW_URL/uu/11/2008/" -o "$RUNNER_TEMP/solid-law.html"
           grep -Fq 'id="pasal-27"' "$RUNNER_TEMP/solid-law.html"
-          curl --fail-with-body -sS "$PREVIEW_URL/uu/11/2008/perubahan/" -o "$RUNNER_TEMP/solid-comparison.html"
-          grep -Fq 'id="uu_1_2024-pasal-27"' "$RUNNER_TEMP/solid-comparison.html"
+          curl --fail-with-body -sS "$PREVIEW_URL/uu/11/2008/?bandingkan=uu_1_2024&dari=uu_11_2008" -o "$RUNNER_TEMP/solid-comparison.html"
+          grep -Fq 'id="cmp-pasal-27a"' "$RUNNER_TEMP/solid-comparison.html"
+          curl --fail-with-body -sS "$PREVIEW_URL/uu/11/2008/perubahan/" -o "$RUNNER_TEMP/solid-perubahan.html"
+          grep -Fq 'url=/koleksi/ite/?bandingkan' "$RUNNER_TEMP/solid-perubahan.html"
           curl --fail-with-body -sS "$PREVIEW_URL/search-index/$RELEASE/pagefind-entry.json" -o "$RUNNER_TEMP/solid-index.json"
           jq -e '.languages.id.page_count > 1000' "$RUNNER_TEMP/solid-index.json"
           curl --fail-with-body -sS "$PREVIEW_URL/koleksi/ite/" -o /dev/null
