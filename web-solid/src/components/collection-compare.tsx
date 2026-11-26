@@ -17,15 +17,17 @@ import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
 import { motion } from "../styles/motion.stylex.ts";
 import { reading } from "../styles/reading.ts";
-import { color, media, shadow, size, space } from "../styles/tokens.stylex.ts";
+import { color, shadow, size, space } from "../styles/tokens.stylex.ts";
 import { versionName, VersionPicker } from "./collection-version-picker.tsx";
 import { Grip, Handle, Root, SlidingColumn } from "./column-parts.tsx";
+import { ScrollRow } from "./scroll-row.tsx";
 
 const GRABBED = ":is([data-grabbed])";
 const NO_SCRIPT = "@media (scripting: none)";
 const SCRIPTED = "@media (scripting: enabled)";
 const MIN_COLUMNS = 2;
 const COLUMN_WIDTH = "17rem";
+const COLUMN_GAP = "1rem";
 const SEPARATOR = ",";
 const LEADING_PASAL = /^PASAL\s*/u;
 
@@ -229,18 +231,14 @@ const styles = stylex.create({
     maxInlineSize: size.measure,
   },
   summary: { margin: 0, color: color.textMuted, fontSize: size.sm },
-  grid: {
-    transition: "opacity 0.15s ease",
-    overflowX: "auto",
-  },
+  grid: { transition: "opacity 0.15s ease" },
   busy: { opacity: 0.6 },
   head: {
     paddingBlock: space.s2,
     borderBlockEndColor: color.line,
     borderBlockEndStyle: "solid",
     borderBlockEndWidth: 2,
-    columnGap: space.s4,
-    display: { default: "grid", [media.phone]: "none" },
+    display: "grid",
     fontSize: size.sm,
   },
   row: {
@@ -252,20 +250,8 @@ const styles = stylex.create({
     contentVisibility: "auto",
   },
   title: { marginBlock: `0 ${space.s2}`, fontSize: size.base },
-  cells: {
-    columnGap: space.s4,
-    display: { default: "grid", [media.phone]: "block" },
-  },
+  cells: { display: "grid" },
   cell: { minInlineSize: 0 },
-  cellLabel: {
-    marginBlock: `${space.s2} ${space.s1}`,
-    color: color.textMuted,
-    display: { default: "none", [media.phone]: "block" },
-    fontSize: size.xs,
-    fontWeight: 600,
-    letterSpacing: "0.06em",
-    textTransform: "uppercase",
-  },
   placeholder: {
     margin: 0,
     color: color.textMuted,
@@ -353,9 +339,8 @@ const Line = (props: { line: ChangedLine }) => (
   </p>
 );
 
-const Cell = (props: { cell: ColumnCell; label: string }) => (
+const Cell = (props: { cell: ColumnCell }) => (
   <div class={css(styles.cell)}>
-    <span class={css(styles.cellLabel)}>{props.label}</span>
     <Show
       when={props.cell.state === "text"}
       fallback={
@@ -373,8 +358,12 @@ const columnKeys = (ids: string[]) =>
   ids.map((id, index) => (ids.indexOf(id) === index ? id : `${id}~${index}`));
 
 const rowStyle = (count: number) => ({
+  "column-gap": COLUMN_GAP,
   "grid-template-columns": `repeat(${count}, minmax(${COLUMN_WIDTH}, 1fr))`,
 });
+
+const rowMinWidth = (count: number) =>
+  `calc(${count} * ${COLUMN_WIDTH} + ${count - 1} * ${COLUMN_GAP})`;
 
 const nextVersion = (versions: VersionChoice[], ids: string[]) => {
   const last = versions.findIndex((entry) => entry.id === ids.at(-1));
@@ -598,19 +587,21 @@ const Grid = (props: {
           olehnya tidak tampak di sini.
         </p>
       </Show>
-      <section
+      <ScrollRow
         class={css(styles.grid, props.busy && styles.busy)}
-        aria-label="Pasal yang berbeda, satu kolom tiap versi"
+        label="Pasal yang berbeda, satu kolom tiap versi"
+        minWidth={rowMinWidth(props.comparison.chosen.length)}
+        head={() => (
+          <div
+            class={css(styles.head)}
+            style={rowStyle(props.comparison.chosen.length)}
+          >
+            <For each={columns()} keyed={false}>
+              {(version) => <strong>{versionName(version())}</strong>}
+            </For>
+          </div>
+        )}
       >
-        <div
-          class={css(styles.head)}
-          style={rowStyle(props.comparison.chosen.length)}
-          aria-hidden="true"
-        >
-          <For each={columns()} keyed={false}>
-            {(version) => <strong>{versionName(version())}</strong>}
-          </For>
-        </div>
         <For each={rows()} keyed={(row) => row.num}>
           {(row) => (
             <section
@@ -626,15 +617,13 @@ const Grid = (props: {
                 style={rowStyle(row().cells.length)}
               >
                 <For each={row().cells} keyed={false}>
-                  {(cell, index) => (
-                    <Cell cell={cell()} label={columns()[index]?.cite ?? ""} />
-                  )}
+                  {(cell) => <Cell cell={cell()} />}
                 </For>
               </div>
             </section>
           )}
         </For>
-      </section>
+      </ScrollRow>
     </>
   );
 };
