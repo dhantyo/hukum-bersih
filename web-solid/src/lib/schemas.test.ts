@@ -1,11 +1,7 @@
 import * as v from "valibot";
 import { describe, expect, it } from "vitest";
 
-import {
-  catalogFilePath,
-  comparisonFilePath,
-  staticPagePath,
-} from "./schemas.ts";
+import { comparisonFilePath, staticPagePath } from "./schemas.ts";
 
 const RELEASE = "c501581381b8c443";
 
@@ -29,23 +25,6 @@ describe("the published comparison file path", () => {
     `/data/${RELEASE}/collections/ITE/comparisons/index.json`,
   ])("rejects %s", (path) => {
     expect(v.is(comparisonFilePath, path)).toBeFalsy();
-  });
-});
-
-describe("the published law catalog path", () => {
-  it("accepts the file of a release", () => {
-    expect(
-      v.is(catalogFilePath, `/data/${RELEASE}/law-catalog.json`)
-    ).toBeTruthy();
-  });
-
-  it.each([
-    `/data/${RELEASE}/law-catalog.json/`,
-    `/data/${RELEASE}/../law-catalog.json`,
-    `/data/UPPER/law-catalog.json`,
-    `/data/${RELEASE}/laws/law-catalog.json`,
-  ])("rejects %s", (path) => {
-    expect(v.is(catalogFilePath, path)).toBeFalsy();
   });
 });
 

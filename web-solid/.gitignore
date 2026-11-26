@@ -27,3 +27,7 @@ Thumbs.db
 
 # The corpus a local dev server reads (HUKUM_CORPUS_DIR), written by `hukum-bersih export-corpus --publish`
 .corpus
+
+# The release files the pipeline writes into public/ (export-corpus --public); _headers is committed
+/public/data/
+/public/search-index/

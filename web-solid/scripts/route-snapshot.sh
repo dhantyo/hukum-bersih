@@ -7,7 +7,7 @@
 #   CORPUS=.snapshots/corpus-before scripts/route-snapshot.sh .snapshots/before
 # Env:  CORPUS  a corpus dir (HUKUM_CORPUS_DIR). Default .snapshots/corpus.
 #               When it holds no release yet, the script has the pipeline export the full corpus from the
-#               repo data and publish it there (`uv run hukum-bersih export-corpus --publish`, about two
+#               repo data and publish it there (`uv run hukum-bersih export-corpus --publish ... --public ../web-solid/public`, about two
 #               minutes, from ../pipeline) and prints the release id.
 #               The release id hashes every released file, so two builds with the same id are byte-identical.
 #       PORT    server port. Default 3199.
@@ -24,7 +24,7 @@ corpus="$(realpath -m "${CORPUS:-.snapshots/corpus}")"
 out="$(realpath -m "${1:?usage: route-snapshot.sh <outdir>}")"
 port="${PORT:-3199}"
 if [ ! -f "$corpus/active-release" ]; then
-  (cd ../pipeline && uv run hukum-bersih export-corpus --publish "$corpus") >&2
+  (cd ../pipeline && uv run hukum-bersih export-corpus --publish "$corpus" --public ../web-solid/public) >&2
 fi
 release="$(tr -d '\n' < "$corpus/active-release")"
 echo "corpus release: $release"
@@ -142,12 +142,6 @@ urls=(
   '/cari/hasil/?q=uu+11/2008'
   '/cari/hasil/?q=zzzzqqq'
   '/cari/hasil/?q=%3Cscript%3E'
-  "/data/$release/law-catalog.json"
-  "/search-index/$release/pagefind-entry.json"
-  "/search-index/$release/pagefind.js"
-  "/search-index/$release/nope.json"
-  /search-index/BAD/pagefind.js
-  "/search-index/$release/../../x.json"
 )
 
 # Every ordered pair of versions of three amended laws, on the law page and on the collection page
@@ -194,18 +188,5 @@ for url in "${urls[@]}"; do
   } > "$out/$name.txt"
 done
 
-for spec in "POST /search-index/$release/pagefind.js" "HEAD /search-index/$release/pagefind.js" "POST /data/$release/law-catalog.json"; do
-  i=$((i + 1))
-  method="${spec%% *}"
-  path="${spec#* }"
-  name="$(printf '%03d' "$i")$method$(printf '%s' "$path" | tr -c 'A-Za-z0-9._=-' '_' | cut -c1-60)"
-  if [ "$method" = HEAD ]; then flag=(-I); else flag=(-X "$method"); fi
-  curl -s "${flag[@]}" -D "$out/.h" -o "$out/.b" "http://localhost:$port$path" || true
-  {
-    echo "$method $path"
-    head -1 "$out/.h" | tr -d '\r'
-    grep -iE '^(content-type|cache-control|allow):' "$out/.h" | tr -d '\r' | tr 'A-Z' 'a-z' | sort || true
-  } > "$out/$name.txt"
-done
 rm -f "$out/.h" "$out/.b"
 echo "snapshot: $(ls "$out" | wc -l) responses in $out"

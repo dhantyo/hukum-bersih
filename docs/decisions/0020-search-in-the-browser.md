@@ -19,11 +19,14 @@ the browser as you type and the Worker sees no search request.
   visit to `/cari/?q=x` gets the static shell, because an asset matches on the path alone; the
   page reads the query after hydration (`useHydrated`) and searches. The server never renders
   this page with a query, so the shell and the first client render match.
-- **Static files.** The build copies the catalog to `dist/client/data/<release>/law-catalog.json`
-  and the Pagefind index to `dist/client/search-index/<release>/` (the `publishSearchData` plugin
-  in `vite.config.ts`), with a `_headers` file that makes both immutable. Cloudflare serves them
-  without the Worker. `server/middleware/release-data.ts` and `search-assets.ts` still answer the
-  same paths for the dev server and `pnpm run start`.
+- **Static files.** The pipeline writes the catalog to `web-solid/public/data/<release>/law-catalog.json`
+  and the Pagefind index to `web-solid/public/search-index/<release>/` (`export-corpus --public`,
+  `corpus/public.py`, which also removes every other release folder there). Vite's own public
+  folder copy puts them in `dist/client` and serves them in dev, and `pnpm run start` serves
+  `dist/client`, so no plugin or middleware is involved. The committed `public/_headers` makes both
+  immutable. Cloudflare serves them without the Worker. The R2 release no longer needs
+  `pagefind/` (nothing reads it from the bucket), so `upload-release.sh` leaves it out; the
+  catalog stays in R2 for the no-JavaScript `/cari/hasil/`.
 - **Prefetch.** Focus on a search field (header, home, `/cari/`) and a hover or focus of a link to
   `/cari/` (the route preload) load the catalog and start Pagefind (`prefetchSearch`,
   `lib/search-data.ts`), once.

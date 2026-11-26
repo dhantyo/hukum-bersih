@@ -10,12 +10,12 @@ The corpus is not built here. The pipeline writes it from `data/`, in one comman
 
 ```sh
 cd ../pipeline
-uv run hukum-bersih export-corpus --publish ../web-solid/.corpus     # about 2 minutes
+uv run hukum-bersih export-corpus --publish ../web-solid/.corpus --public ../web-solid/public   # about 2 minutes
 cd ../web-solid
 HUKUM_CORPUS_DIR="$PWD/.corpus" pnpm run dev                          # or: pnpm run build && pnpm run start
 ```
 
-`export-corpus` writes the whole corpus into a temporary stage, in this order: the laws (`laws/`), the collections (`collections/`, with `comparisons/` for every ordered pair of versions of an amended law), the drafts (`drafts/`, with the comparison of every pair of versions that have text), the catalog (`law-catalog.json` and the `listings/` rows for the home page, `/uu/`, `/uu/tahun/` and `/ruu/`), and last the Pagefind index (`pagefind/`). `--publish` then stores the stage as `releases/<id>/` in the corpus folder (`hukum-bersih release publish`) and points `active-release` at it; the stage is deleted. The release id is the SHA-256 of every file, so an unchanged corpus gives the same id and publishing it again changes nothing. `.corpus/` is ignored by git.
+`export-corpus` writes the whole corpus into a temporary stage, in this order: the laws (`laws/`), the collections (`collections/`, with `comparisons/` for every ordered pair of versions of an amended law), the drafts (`drafts/`, with the comparison of every pair of versions that have text), the catalog (`law-catalog.json` and the `listings/` rows for the home page, `/uu/`, `/uu/tahun/` and `/ruu/`), and last the Pagefind index (`pagefind/`). `--publish` then stores the stage as `releases/<id>/` in the corpus folder (`hukum-bersih release publish`) and points `active-release` at it; the stage is deleted. The release id is the SHA-256 of every file, so an unchanged corpus gives the same id and publishing it again changes nothing. `--public <dir>` then writes the active release's `law-catalog.json` to `<dir>/data/<release>/` and the Pagefind index to `<dir>/search-index/<release>/`, and removes the other release folders there; give it `../web-solid/public`, whose `data/` and `search-index/` Vite copies into the build and serves in dev (`public/_headers` is committed and makes both immutable on Cloudflare). `.corpus/` and those two folders are ignored by git. Run it before `pnpm run dev` or `pnpm run build`.
 
 To keep the stage, give a folder as the first argument and publish it yourself:
 
@@ -61,6 +61,6 @@ node scripts/header-reveal.ts http://localhost:3000/uu/11/2008/ --label solid
 
 ## Cloudflare preview
 
-The manual **Deploy Solid preview** workflow runs `hukum-bersih export-corpus --publish` in `pipeline/` for the full corpus (every law, the collections, the draft bills and the search index), builds the Worker from it, and uploads that release to R2 with rclone (`.github/scripts/upload-release.sh`): the release files, then its ready marker, then the `active-release` pointer, so a reader never sees a half-uploaded release. A subset would leave the draft and collection pages out, and `export-corpus` has no subset option. It deploys the `hukum-bersih-solid-preview` Worker, reading the `hukum-bersih-corpus` R2 bucket.
+The manual **Deploy Solid preview** workflow runs `hukum-bersih export-corpus --publish ... --public ../web-solid/public` in `pipeline/` for the full corpus (every law, the collections, the draft bills and the search index), builds the Worker from it, and uploads that release to R2 (without `pagefind/`, which only the static assets use) with rclone (`.github/scripts/upload-release.sh`): the release files, then its ready marker, then the `active-release` pointer, so a reader never sees a half-uploaded release. A subset would leave the draft and collection pages out, and `export-corpus` has no subset option. It deploys the `hukum-bersih-solid-preview` Worker, reading the `hukum-bersih-corpus` R2 bucket.
 
 Create the R2 bucket `hukum-bersih-corpus` (the corpus releases, named for what it holds, not for this preview) and enable a `workers.dev` subdomain for the Cloudflare account. Configure the repository secrets `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_WORKERS_API_TOKEN` for Worker deployment, and `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY` for object access to that bucket. The workflow verifies the deployed article permalink, comparison permalink, a collection page, a draft page and the Pagefind index. Its summary records the preview URL and corpus release ID.

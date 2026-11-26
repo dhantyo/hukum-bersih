@@ -30,11 +30,6 @@ export const comparisonFilePath = matching(
   `/data/${RELEASE_ID}/collections/${SLUG}/comparisons/${COMPARISON_FILE}\\.json`
 );
 
-/** The law catalog of a release, read by the browser to search it. */
-export const catalogFilePath = matching(
-  `/data/${RELEASE_ID}/law-catalog\\.json`
-);
-
 const compareVersions = v.union([
   v.pipe(
     v.string(),

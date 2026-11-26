@@ -40,10 +40,12 @@ jobs:
         run: uv sync
 
       # The pipeline reads data/ and writes the corpus: laws, collections, drafts, the catalog and the
-      # Pagefind index. `--publish` stores it as releases/<id>/ and points active-release at it.
+      # Pagefind index. `--publish` stores it as releases/<id>/ and points active-release at it;
+      # `--public` writes the active release's catalog and index into web-solid/public, which the build
+      # copies to dist/client.
       - name: Prepare preview corpus
         working-directory: pipeline
-        run: uv run hukum-bersih export-corpus --publish "$RUNNER_TEMP/solid-corpus"
+        run: uv run hukum-bersih export-corpus --publish "$RUNNER_TEMP/solid-corpus" --public ../web-solid/public
 
       # The build renders every public page from that corpus (prerender-crawler) into dist/client,
       # which the Worker serves as static assets; the Worker itself only answers search, the
