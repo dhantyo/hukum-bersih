@@ -57,13 +57,28 @@ const toSearchCollection = (
   }),
 });
 
+const tokenCache = new Map<string, string[]>();
+
+const tokensOf = (text: string) => {
+  const known = tokenCache.get(text);
+
+  if (known !== undefined) {
+    return known;
+  }
+
+  const tokens = norm(text).split(" ");
+  tokenCache.set(text, tokens);
+
+  return tokens;
+};
+
 const matchesWords = (query: string) => {
   const words = norm(query)
     .split(" ")
     .filter((word) => word !== "" && word !== "uu");
 
   return (text: string) => {
-    const candidates = norm(text).split(" ");
+    const candidates = tokensOf(text);
 
     return (
       words.length > 0 &&

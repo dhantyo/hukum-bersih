@@ -2,7 +2,7 @@ import * as v from "valibot";
 
 import { parseRecord } from "../../lib/parse-record.ts";
 import { internalLink } from "../../lib/schemas.ts";
-import { readActiveReleaseText } from "../corpus.ts";
+import { readActiveRelease, readActiveReleaseText } from "../corpus.ts";
 
 const entry = v.object({
   id: v.string(),
@@ -49,12 +49,42 @@ const readCatalogText = async () => {
   return text;
 };
 
-export const readCatalog = async () =>
-  parseRecord(catalog, await readCatalogText(), "law catalog");
+interface LoadedCatalog {
+  text: string;
+  catalog: Catalog;
+}
+
+let loaded: { release: string; value: Promise<LoadedCatalog> } | undefined;
+
+const loadCatalog = async () => {
+  try {
+    const text = await readCatalogText();
+
+    return { text, catalog: parseRecord(catalog, text, "law catalog") };
+  } catch (error) {
+    loaded = undefined;
+    throw error;
+  }
+};
+
+const readLoadedCatalog = async () => {
+  const release = await readActiveRelease();
+
+  if (loaded?.release !== release) {
+    loaded = { release, value: loadCatalog() };
+  }
+
+  return await loaded.value;
+};
+
+export const readCatalog = async () => {
+  const { catalog: parsed } = await readLoadedCatalog();
+
+  return parsed;
+};
 
 export const readCatalogJson = async () => {
-  const text = await readCatalogText();
-  parseRecord(catalog, text, "law catalog");
+  const { text } = await readLoadedCatalog();
 
   return text;
 };
