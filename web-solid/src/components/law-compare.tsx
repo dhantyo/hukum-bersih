@@ -16,6 +16,9 @@ import { linkStyles } from "../styles/link.ts";
 import { color, font, media, size, space } from "../styles/tokens.stylex.ts";
 import { VersionPair } from "./version-pair.tsx";
 
+const WIDE = "@media (min-width: 961px)";
+const FITS = "@container (min-width: 42rem)";
+
 const styles = stylex.create({
   bar: {
     paddingBlock: `${space.s3} ${space.s2}`,
@@ -91,6 +94,7 @@ const styles = stylex.create({
     borderBlockStartColor: color.line,
     borderBlockStartStyle: "solid",
     borderBlockStartWidth: 1,
+    containerType: "inline-size",
     fontSize: { default: "inherit", "@media (max-width: 960px)": size.base },
     paddingBlockStart: space.s3,
   },
@@ -103,11 +107,17 @@ const styles = stylex.create({
   },
   columns: {
     columnGap: space.s6,
-    display: { default: "grid", "@media (max-width: 960px)": "none" },
+    display: {
+      [WIDE]: { [FITS]: "grid", default: "none" },
+      default: "none",
+    },
     gridTemplateColumns: "minmax(0, 1fr) minmax(0, 1fr)",
   },
   inline: {
-    display: { default: "none", "@media (max-width: 960px)": "block" },
+    display: {
+      [WIDE]: { [FITS]: "none", default: "block" },
+      default: "block",
+    },
   },
   cell: {
     margin: 0,
