@@ -38,7 +38,7 @@ def timeline_record(laws: Laws, koleksi: Koleksi, document: Document | None) -> 
 
     def change_href(by: str, kind: str, num: str) -> str | None:
         if by in compared:
-            return f"{base_href}?bandingkan={by}#pasal-{pasal_key(num)}"
+            return f"{base_href}?v={by}#pasal-{pasal_key(num)}"
         anchor = anchors.get(num)
         return f"{base_href}#{anchor}" if kind != "disisipkan" and anchor is not None else None
 
@@ -62,7 +62,7 @@ def timeline_record(laws: Laws, koleksi: Koleksi, document: Document | None) -> 
                     {"num": num, "href": change_href(law.id, key, num) or UNDEFINED}
                     for num in nums]}
                 for key, label in _GROUPS if (nums := (changes or {}).get(key) or [])],
-            "compareHref": f"{base_href}?bandingkan={law.id}"
+            "compareHref": f"{base_href}?v={law.id}"
                            if event.kind == "perubahan" and law.id in compared else UNDEFINED,
         }
 

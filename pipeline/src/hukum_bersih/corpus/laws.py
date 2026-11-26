@@ -185,17 +185,6 @@ class Laws:
             "steps": self._steps(law, koleksi),
         }
 
-    def _perubahan_target(self, law: Regulation, has_text: bool) -> str:
-        koleksi = self.collections.of(law.id)
-        rows = self.rows_of(koleksi) if koleksi else []
-        last = rows[-1] if rows else None
-        own = f"/{law.path}"
-        if last and last.href and last.point and last.point["kind"] == "gabungan":
-            return last.href
-        if koleksi and koleksi.base.id == law.id and has_text:
-            return own
-        return f"/{koleksi.path}" if koleksi else own
-
     def reader_law(self, law: Regulation, text: dict[str, Any] | None) -> dict[str, Any]:
         """The record of one law; ``text`` is its reader text, None when it has none."""
         regs = self.regulations
@@ -219,7 +208,6 @@ class Laws:
             "revokedBy": self._revokers(law), "relations": self._relations(law),
             "notes": self._notes(law, bool(family and family["comparable"]), compared),
             "family": _undefined_if_none(family),
-            "perubahanTarget": self._perubahan_target(law, has_text),
         }
 
 

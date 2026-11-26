@@ -103,7 +103,6 @@ def test_an_amended_law_lists_what_changed_it_and_where(stage):
     assert law["family"]["name"] == "Pertambangan Mineral dan Batubara"
     assert [v["label"] for v in law["family"]["versions"]] == ["Teks asli", "Setelah UU 3/2020"]
     assert law["family"]["comparable"] is True
-    assert law["perubahanTarget"] == "/koleksi/pertambangan-mineral-dan-batubara/"
     assert "archive" not in law and "shortName" not in law and "missingText" not in law
 
 
@@ -124,7 +123,6 @@ def test_the_amending_law_knows_its_place_and_its_target(stage):
         "verb": "mengubah", "count": 5, "history": True,
         "label": "UU 4/2009 tentang Pertambangan Mineral dan Batubara", "href": "/uu/4/2009/"}]
     assert [v["made"] for v in law["family"]["versions"]] == [False, True]
-    assert law["perubahanTarget"] == "/koleksi/pertambangan-mineral-dan-batubara/"
 
 
 def test_old_spelling_is_kept_as_printed(stage):
@@ -152,4 +150,3 @@ def test_a_law_without_text_says_why_and_has_no_text(stage):
     assert law["missingText"] == "ocr"
     assert "pasalCount" not in law and "family" not in law
     assert law["notes"] == {} and law["relations"] == []
-    assert law["perubahanTarget"] == "/uu/9/2010/"
