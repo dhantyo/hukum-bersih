@@ -20,7 +20,7 @@ import {
   space,
 } from "../styles/tokens.stylex.ts";
 import { VersionPicker } from "./collection-version-picker.tsx";
-import { Grip, Handle, Root, SlidingColumn } from "./column-parts.tsx";
+import { Column, Grip, Handle, Root } from "./column-parts.tsx";
 import { Legend } from "./compare-block.tsx";
 
 const GRABBED = ":is([data-grabbed])";
@@ -370,10 +370,9 @@ const Columns = (props: {
             />
             <For each={state.order}>
               {(key, index) => (
-                <SlidingColumn
-                  slot={key}
-                  order={state.order.join(SEPARATOR)}
-                  versions={props.ids.join(SEPARATOR)}
+                <Column
+                  value={key}
+                  data-version={key}
                   class={css(styles.slot, crowded() && styles.stackedSlot)}
                 >
                   <Handle
@@ -408,7 +407,7 @@ const Columns = (props: {
                       ×
                     </a>
                   </Show>
-                </SlidingColumn>
+                </Column>
               )}
             </For>
           </>

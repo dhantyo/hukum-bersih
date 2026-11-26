@@ -86,46 +86,30 @@ export const pillTravel = (centres: number[], index: number) => ({
   most: (centres.at(-1) ?? 0) - (centres[index] ?? 0),
 });
 
-/** The text column of a dragged pill follows it in proportion: the pills' track is narrower than the text. */
-export const followShift = (
-  drag: number,
-  centres: number[],
-  lefts: number[],
-  index: number
-) => {
-  const pillSpan = (centres.at(-1) ?? 0) - (centres[0] ?? 0);
-  const textSpan = (lefts.at(-1) ?? 0) - (lefts[0] ?? 0);
-
-  if (pillSpan === 0) {
-    return 0;
-  }
-
-  const { least, most } = pillTravel(centres, index);
-
-  return clamp(drag, least, most) * (textSpan / pillSpan);
-};
-
 const prefersStill = () =>
   matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-/** The left edge of each text column on screen, from the first one that is shown; none when the columns are not side by side. */
-export const columnLefts = () => {
-  const lefts: number[] = [];
+/** The text column shown for each place, from the first one; none when the columns are not side by side. */
+export const shownColumns = () => {
+  const shown: HTMLElement[] = [];
 
   for (let index = 0; index < SLIDING_COLUMNS; index += 1) {
-    const shown = [
+    const element = [
       ...document.querySelectorAll<HTMLElement>(`[${COLUMN}="${index}"]`),
-    ].find((element) => element.offsetParent !== null);
+    ].find((candidate) => candidate.offsetParent !== null);
 
-    if (shown === undefined) {
+    if (element === undefined) {
       break;
     }
 
-    lefts.push(shown.getBoundingClientRect().left);
+    shown.push(element);
   }
 
-  return lefts.length > 1 ? lefts : undefined;
+  return shown.length > 1 ? shown : undefined;
 };
+
+export const leftOf = (element: HTMLElement) =>
+  element.getBoundingClientRect().left;
 
 export interface ColumnPose {
   shift: number;

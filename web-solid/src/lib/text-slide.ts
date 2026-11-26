@@ -1,25 +1,28 @@
 import { onSettled } from "solid-js";
 
 import {
-  columnLefts,
   crossingDim,
   FAINT,
   FULL,
-  followShift,
   GLIDE_MS,
+  leftOf,
   limitPill,
   pillTravel,
   poseColumns,
   releaseColumns,
+  shownColumns,
   slotShifts,
 } from "./column-shift.ts";
 
 const TWO = 2;
 const PILL = '[data-slot="column-order-column"]';
-const DRAG_X = "--drag-x";
+const TRANSLATE = "translate";
+const NEXT_TASK_MS = 0;
 
 interface Session {
-  lefts: number[] | undefined;
+  columns: HTMLElement[] | undefined;
+  lefts: number[];
+  slotCentres: number[];
   centres: number[];
   from: readonly string[];
   live: readonly string[];
@@ -29,8 +32,11 @@ interface Session {
 const sameOrder = (first: readonly string[], second: readonly string[]) =>
   first.join("\u0000") === second.join("\u0000");
 
-const dragOf = (pill: HTMLElement) =>
-  Number(pill.style.getPropertyValue(DRAG_X).replace("px", "")) || 0;
+const spanOf = (positions: number[]) =>
+  (positions.at(-1) ?? 0) - (positions[0] ?? 0);
+
+const layoutCentreOf = (element: HTMLElement) =>
+  element.offsetLeft + element.offsetWidth / 2;
 
 const centreOf = (element: HTMLElement) => {
   const box = element.getBoundingClientRect();
@@ -42,7 +48,8 @@ const centreOf = (element: HTMLElement) => {
  * Makes the text columns of a comparison trade places in step with their version pills. While a
  * pill is held with the pointer its text column follows it, locked to the sideways axis; the
  * other column glides to the place the order gives it, and everything settles at the drop. The
- * keys and the swap button play the same glide, one step at a time.
+ * keys and the swap button play the same glide, one step at a time. A pill that is not held
+ * follows the text column of its version, so each pill and its column move as one.
  *
  * `keys` are the columns in the order the page shows them, `chooser` is the element that holds
  * the pills. Call `follow` with the order the pills show now, `pointerDown` when a handle is
@@ -55,6 +62,7 @@ export const createTextSlide = (
   let session: Session | undefined;
   let frame = 0;
   let release = 0;
+  let pace = 0;
   let watcher: MutationObserver | undefined;
 
   const pills = () => [
@@ -64,8 +72,49 @@ export const createTextSlide = (
   const heldPill = () =>
     pills().find((pill) => pill.dataset.grabbed !== undefined);
 
+  const followColumns = () => {
+    if (session?.columns === undefined) {
+      return;
+    }
+
+    const { columns, lefts, centres, slotCentres, from, heldByPointer } =
+      session;
+
+    const ratio = spanOf(centres) / (spanOf(lefts) || 1);
+
+    for (const pill of pills()) {
+      const index = from.indexOf(pill.dataset.version ?? "");
+      const column = columns[index];
+
+      const held =
+        heldByPointer !== undefined && pill.dataset.grabbed !== undefined;
+
+      if (column === undefined || held) {
+        pill.style.removeProperty(TRANSLATE);
+      } else {
+        const textMoved = (leftOf(column) - (lefts[index] ?? 0)) * ratio;
+        const layoutMoved = layoutCentreOf(pill) - (slotCentres[index] ?? 0);
+
+        pill.style.setProperty(TRANSLATE, `${textMoved - layoutMoved}px`);
+      }
+    }
+  };
+
+  const keepPace = () => {
+    followColumns();
+    pace = requestAnimationFrame(keepPace);
+  };
+
+  const stopPace = () => {
+    cancelAnimationFrame(pace);
+
+    for (const pill of pills()) {
+      pill.style.removeProperty(TRANSLATE);
+    }
+  };
+
   const apply = () => {
-    if (session === undefined || session.lefts === undefined) {
+    if (session === undefined || session.columns === undefined) {
       return;
     }
 
@@ -75,6 +124,7 @@ export const createTextSlide = (
 
     if (heldByPointer === undefined || held === undefined) {
       poseColumns(slots.map((shift) => ({ shift, dim: FULL, glide: true })));
+      followColumns();
 
       return;
     }
@@ -82,13 +132,13 @@ export const createTextSlide = (
     const place = live.indexOf(from[heldByPointer] ?? "");
     const { least, most } = pillTravel(centres, place);
 
-    const dragged =
-      (centres[place] ?? 0) - (centres[heldByPointer] ?? 0) + dragOf(held);
-
-    const shift = followShift(dragged, centres, lefts, heldByPointer);
-    const gap = (lefts.at(-1) ?? 0) - (lefts[0] ?? 0);
-
     limitPill(held, least, most);
+
+    const gap = spanOf(lefts);
+
+    const shift =
+      (centreOf(held) - (centres[heldByPointer] ?? 0)) *
+      (gap / (spanOf(centres) || 1));
 
     poseColumns(
       from.map((_key, index) => {
@@ -103,6 +153,7 @@ export const createTextSlide = (
         return { shift: slots[index] ?? 0, dim: FAINT, glide: true };
       })
     );
+    followColumns();
   };
 
   const schedule = () => {
@@ -111,13 +162,19 @@ export const createTextSlide = (
   };
 
   const begin = (from: readonly string[], heldByPointer?: number) => {
+    const columns = shownColumns();
+
     session = {
-      lefts: columnLefts(),
+      columns,
+      lefts: columns?.map(leftOf) ?? [],
       centres: pills().map(centreOf),
+      slotCentres: pills().map(layoutCentreOf),
       from,
       live: from,
       heldByPointer,
     };
+    cancelAnimationFrame(pace);
+    pace = requestAnimationFrame(keepPace);
   };
 
   const settle = () => {
@@ -131,6 +188,7 @@ export const createTextSlide = (
     if (sameOrder(session.live, session.from)) {
       release = window.setTimeout(() => {
         session = undefined;
+        stopPace();
         releaseColumns();
       }, GLIDE_MS);
     }
@@ -161,7 +219,9 @@ export const createTextSlide = (
 
     window.clearTimeout(release);
     begin(keys(), index);
-    document.addEventListener("pointermove", schedule);
+    window.setTimeout(() => {
+      document.addEventListener("pointermove", schedule);
+    }, NEXT_TASK_MS);
     document.addEventListener("pointerup", endPointer);
     document.addEventListener("pointercancel", endPointer);
   };
@@ -186,6 +246,7 @@ export const createTextSlide = (
   const reset = () => {
     window.clearTimeout(release);
     session = undefined;
+    stopPace();
     releaseColumns();
   };
 
@@ -206,6 +267,7 @@ export const createTextSlide = (
       window.clearTimeout(release);
       watcher?.disconnect();
       stopListening();
+      stopPace();
       releaseColumns();
     };
   });

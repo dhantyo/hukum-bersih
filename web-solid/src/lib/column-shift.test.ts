@@ -1,11 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import {
-  crossingDim,
-  followShift,
-  pillTravel,
-  slotShifts,
-} from "./column-shift.ts";
+import { crossingDim, pillTravel, slotShifts } from "./column-shift.ts";
 
 const LEFTS = [100, 700];
 const CENTRES = [300, 500];
@@ -26,16 +21,6 @@ describe(pillTravel, () => {
   it("lets a pill go from the first pill to the last", () => {
     expect(pillTravel(CENTRES, 0)).toStrictEqual({ least: 0, most: 200 });
     expect(pillTravel(CENTRES, 1)).toStrictEqual({ least: -200, most: 0 });
-  });
-});
-
-describe(followShift, () => {
-  it("moves the text column in proportion to the pill", () => {
-    expect(followShift(100, CENTRES, LEFTS, 0)).toBe(300);
-  });
-
-  it("stops at the last column however far the pointer goes", () => {
-    expect(followShift(900, CENTRES, LEFTS, 0)).toBe(600);
   });
 });
 
