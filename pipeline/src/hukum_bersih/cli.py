@@ -1,7 +1,7 @@
 """Command-line entry point: ``hukum-bersih <command>``.
 
     parse            PDF -> Bluebell text (the format stored in data/)
-    build-akn        Bluebell text in data/ -> Akoma Ntoso XML (+ amendment JSON) for the website
+    build-akn        Bluebell text in data/ -> Akoma Ntoso XML (checked against the OASIS schema in CI)
     import-bpk       import regulations from peraturan.bpk.go.id, recording every PDF's sha256
     relations        link amending / revoking / enacting laws; versions of amended laws
     export-corpus    write the web corpus (JSON the website reads) from data/ into a folder
@@ -127,15 +127,8 @@ def main(argv: list[str] | None = None) -> int:
         from .akn.build import build_peraturan, build_ruu
 
         ruu = build_ruu(args.data_dir, args.out)
-        from .amendments import build as build_amendments
-
         peraturan = build_peraturan(args.data_dir, args.out)
-        amending = build_amendments(args.data_dir, args.out)
-        from .closing import build as build_closing
-
-        closings = build_closing(args.data_dir, args.out)
-        print(f"{len(ruu)} RUU versions, {len(peraturan)} regulation versions, "
-              f"{amending} amending laws split into instructions, {closings} closings read -> {args.out}")
+        print(f"{len(ruu)} RUU versions, {len(peraturan)} regulation versions -> {args.out}")
         return 0
 
     if args.command == "import-peraturan":

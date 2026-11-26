@@ -9,7 +9,7 @@ La Fabrique de la Loi (looked at 2026-11-21): metadata panel beside the text, br
 version timeline, table of contents, prominent search, white page, one link color, status
 colors. Not copied: no logos, crests or brand assets of those sites.
 
-Tokens live in `web/src/styles/tokens.css`; components use the names, never raw values. The Solid app (`web-solid/`) keeps the same values as literal StyleX tokens in `web-solid/src/styles/tokens.stylex.ts`; change both together until the Astro app is retired.
+Tokens live in `web-solid/src/styles/tokens.stylex.ts` as literal StyleX tokens; components use the names, never raw values.
 
 ## Color
 
@@ -41,7 +41,7 @@ No brand red: in this product red means "deleted". No gradients.
   reads like a document and the interface like a tool.
 - The law-text face depends on the format (decision 0009): **Atkinson Hyperlegible Next** in
   Modern (the default), **Source Serif 4** in Asli. Readers can change it with the "Aa" control
-  in the header (`components/ReadingSettings.astro`, stored in their browser), separately for
+  in the header (`web-solid/src/components/reading-settings.tsx`, stored in their browser), separately for
   each format: Source Serif 4, Literata, Public Sans, Atkinson Hyperlegible Next; size normal
   or large (shared). Components keep using `--font-law` / `--fs-law`, which the choice
   overrides.
@@ -74,7 +74,7 @@ anchored on the text (see "Law text").
 anything tapped (buttons, the "Aa" control). Page width 72rem (`--page`; 100rem `--page-wide` while comparing versions); reading column 42rem; side panel 17rem by default; hanging numbers 2.4rem (`--hang`, 1.9rem `--hang-sm` on phones). Phone gutter 16px.
 
 Document pages: breadcrumbs, title block, then two columns: side panel (Versi, table of
-contents, facts; sticky) and the text (`components/DocLayout.astro`). On wide screens the
+contents, facts; sticky) and the text (`web-solid/src/components/doc-layout.tsx`). On wide screens the
 reader can drag the divider to resize the panel, or hide it ("Sembunyikan", Enter on the divider,
 or dragging it narrower than its minimum): a slim strip with a "›" button stays and the text
 column centres. The width starts at 17rem and stays between 13rem and 24rem (the text keeps
@@ -88,7 +88,7 @@ otherwise it goes back. Escape, the scrim or a link also close it; the page behi
 The site header follows the scroll. At the top of the page it sits in its place and scrolls away
 with the page. Further down, the first step down slides it away and the first step up slides it
 back in whole (0.24s ease-out), however small the step: one motion each way, never a header
-half shown by the scroll and then snapped. (The Astro site, `web/src/lib/barscroll.ts`, brought
+half shown by the scroll and then snapped. (The retired Astro site brought
 it back by the distance scrolled and settled a half-shown header after 140ms; a short wheel step
 showed it half, then full.) Script only switches its mode; the browser runs the slide. It stays while "Aa" is open or focus is in it, and tucks away
 after a jump within the page. Sticky things below it (side panel, comparison bar) sit at
@@ -109,15 +109,15 @@ separating.
 - **Status banner** (law pages, above the text): a repealed law says "sudah tidak berlaku" and
   links to what repealed it (border `--gone`); an amended law says the text is the original
   wording and links to the latest merged version (border `--warn`). Pattern from
-  legislation.gov.uk and Fedlex. `components/StatusBanner.astro`.
-- **Versi** (side panel, first; `components/Versions.astro`): every version of a law family,
+  legislation.gov.uk and Fedlex. `web-solid/src/components/law-banners.tsx`.
+- **Versi** (side panel, first; `web-solid/src/components/law-panel.tsx`): every version of a law family,
   oldest first, like Fedlex's "All versions of this law": date, "Teks asli" / "Setelah UU
   3/2020", what it changed, "belum lengkap" when incomplete; dots `--ok` (in force), `--gone`
   (earlier), dashed (a known amendment we lack). The version on screen gets `--primary-bg`.
   Data: each record's `history` (decision 0010).
-- **Merged text** (Koleksi page; `components/MergedView.astro`, decision 0010): the latest
+- **Merged text** (Koleksi page; `web-solid/src/components/collection-reader.tsx`, decision 0010): the latest
   version of a law family, merged automatically; older versions at `/koleksi/<slug>/<date>/`.
-  Same reading view as a law page. Above it a banner (`MergedBanner.astro`): "Teks gabungan per
+  Same reading view as a law page. Above it a banner (`merged-banner.tsx`): "Teks gabungan per
   <date>, disusun otomatis", what it merges, "bukan teks konsolidasi resmi", and when incomplete
   (`--warn` border) exactly what is missing. Under each changed pasal: "Diubah oleh / Disisipkan
   oleh / Dihapus oleh UU n/yyyy"; a change whose wording could not be read keeps the previous text
@@ -168,7 +168,7 @@ separating.
   everything turns the text into an outline of BAB and Pasal.
 - **Synopsis (comparison)**: two columns, old left, new right, one row per pasal pair;
   deletions `--del-*`, insertions `--ins-*`; one inline column on phones.
-- **Comparing versions in place** (`components/CompareMode.astro`, decision 0010; replaces the
+- **Comparing versions in place** (`web-solid/src/components/compare-bar.tsx`, decision 0010; replaces the
   Perubahan page). Always the whole law, and the reader stays put: "Diubah oleh UU 3/2020" under
   a pasal compares the version before that amendment with the one it made, keeping that pasal
   where it was on screen; "Bandingkan versi" (Versi panel) or `?bandingkan=<id>[&dari=<id>]`.

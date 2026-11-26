@@ -17,11 +17,7 @@ reads it. Layouts handled, as found in the BPK sample (docs/parser-review-2026-1
 
 from __future__ import annotations
 
-import json
 import re
-from pathlib import Path
-
-from .records import load_record
 
 ORDER_RE = re.compile(r"^Agar (?:supaya )?setiap orang", re.IGNORECASE)
 # "Disahkan di Jakarta", "Disahkan di Jakarta pada" (date on the next line), "Disahkan di" (place blank)
@@ -106,22 +102,3 @@ def conclusions(bluebell: str) -> list[str]:
         return []
     return [ln.strip() for ln in m[1].splitlines() if ln.strip()]
 
-
-def build(data_dir: Path, out_dir: Path) -> int:
-    """``out_dir/closing/<version id>.json`` for every regulation text with a closing
-    (for the website; regenerated, not committed)."""
-    target = out_dir / "closing"
-    target.mkdir(parents=True, exist_ok=True)
-    count = 0
-    for path in sorted((data_dir / "peraturan").glob("*/*/*/*.yaml")):
-        rec = load_record(path)
-        for v in rec.get("versions") or []:
-            if not v.get("text"):
-                continue
-            lines = conclusions((path.parent / v["text"]).read_text())
-            if not lines:
-                continue
-            (target / f"{v['id']}.json").write_text(json.dumps(
-                {"id": v["id"], "lines": lines, **parse(lines)}, ensure_ascii=False))
-            count += 1
-    return count

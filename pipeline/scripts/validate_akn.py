@@ -1,6 +1,6 @@
 """Validate the Akoma Ntoso XML written by `hukum-bersih build-akn` against the OASIS schema.
 
-    uv run python scripts/validate_akn.py [dir] [--report-only] [--examples N]
+    uv run python scripts/validate_akn.py dir [--report-only] [--examples N]
 
 The OASIS Akoma Ntoso 3.0 XSD (and xml.xsd, which it imports) is downloaded from the OASIS
 server into a cache directory and checked against pinned sha256 values (not vendored).
@@ -24,7 +24,6 @@ SCHEMA_FILES = {
     "xml.xsd": "61960fb3131e38022caad5360e2f33a3382578ab3c80cd58bd74320ede61b20c",
 }
 DEFAULT_CACHE = Path(__file__).resolve().parents[1] / "cache" / "akn-schema"
-DEFAULT_DIR = Path(__file__).resolve().parents[2] / "web" / "generated" / "akn"
 
 
 def fetch_schema(cache: Path) -> Path:
@@ -62,7 +61,7 @@ def _work_date_is_a_year(tree) -> bool:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("dir", nargs="?", type=Path, default=DEFAULT_DIR)
+    ap.add_argument("dir", type=Path, help="the --out folder of `hukum-bersih build-akn`")
     ap.add_argument("--report-only", action="store_true", help="always exit 0")
     ap.add_argument("--examples", type=int, default=3, help="files listed per error kind")
     ap.add_argument("--cache", type=Path, default=DEFAULT_CACHE)
