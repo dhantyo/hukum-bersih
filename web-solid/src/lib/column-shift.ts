@@ -86,10 +86,6 @@ export const pillTravel = (centres: number[], index: number) => ({
   most: (centres.at(-1) ?? 0) - (centres[index] ?? 0),
 });
 
-/** The sideways offset a held pill needs once the reorder has moved its place in the line from `before` to `after`, so it stays under the pointer. */
-export const dragAfterMove = (drag: number, before: number, after: number) =>
-  drag - (after - before);
-
 const prefersStill = () =>
   matchMedia("(prefers-reduced-motion: reduce)").matches;
 

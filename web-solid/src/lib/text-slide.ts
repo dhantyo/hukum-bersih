@@ -2,7 +2,6 @@ import { onSettled } from "solid-js";
 
 import {
   crossingDim,
-  dragAfterMove,
   FAINT,
   FULL,
   GLIDE_MS,
@@ -127,10 +126,9 @@ export const createTextSlide = (
     const drawn = held.style.getPropertyValue(DRAG);
 
     if (drawn !== "") {
-      held.style.setProperty(
-        DRAG,
-        `${dragAfterMove(Number(drawn.replace("px", "")), session.heldLeft, left)}px`
-      );
+      const drag = Number(drawn.replace("px", ""));
+
+      held.style.setProperty(DRAG, `${drag - (left - session.heldLeft)}px`);
     }
 
     session.heldLeft = left;
@@ -186,21 +184,20 @@ export const createTextSlide = (
 
   const begin = (from: readonly string[], heldByPointer?: number) => {
     const columns = shownColumns();
+    const current = pills();
 
     session = {
       columns,
       lefts: columns?.map(leftOf) ?? [],
-      centres: pills().map(centreOf),
-      slotCentres: pills().map(layoutCentreOf),
+      centres: current.map(centreOf),
+      slotCentres: current.map(layoutCentreOf),
       from,
       live: from,
       heldByPointer,
       heldLeft:
-        pills().find(
-          (pill) =>
-            heldByPointer !== undefined &&
-            pill.dataset.version === from[heldByPointer]
-        )?.offsetLeft ?? 0,
+        heldByPointer === undefined
+          ? 0
+          : (current[heldByPointer]?.offsetLeft ?? 0),
     };
     cancelAnimationFrame(pace);
     pace = requestAnimationFrame(keepPace);
