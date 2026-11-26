@@ -46,7 +46,6 @@ const styles = stylex.create({
     insetBlock: 0,
     transition: "opacity 0.15s ease",
     inlineSize: FADE_SIZE,
-    opacity: 1,
     pointerEvents: "none",
     position: "absolute",
     zIndex: 1,
@@ -101,13 +100,13 @@ export const ScrollRow = (props: {
 }) => (
   <ScrollArea type="auto" class={[css(scrollRoot, styles.root), props.class]}>
     <Show when={props.head}>
-      {(head) => (
+      {(renderHead) => (
         <div class={css(styles.head)} aria-hidden="true">
           <div
             class={css(styles.headTrack)}
             style={{ "min-inline-size": props.minWidth }}
           >
-            {head()()}
+            {renderHead()()}
           </div>
         </div>
       )}
@@ -120,9 +119,9 @@ export const ScrollRow = (props: {
       <ScrollAreaContent>
         <div style={{ "min-inline-size": props.minWidth }}>
           <Show when={props.head}>
-            {(head) => (
+            {(renderHead) => (
               <div class={css(styles.headInline)} aria-hidden="true">
-                {head()()}
+                {renderHead()()}
               </div>
             )}
           </Show>
