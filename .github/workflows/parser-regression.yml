@@ -16,9 +16,17 @@ on:
         description: "With compare: 1-based pages whose cleaned lines to print (comma-separated)"
         default: ""
   push:
-    paths: ["pipeline/src/hukum_bersih/pdf/**", "pipeline/src/hukum_bersih/akn/**",
-            "pipeline/src/hukum_bersih/closing.py", "pipeline/tests/regression.yaml", "pipeline/scripts/ocr_fix_report.py", "pipeline/scripts/compare_reparse.py",
-            ".github/workflows/parser-regression.yml", ".github/actions/ocr-cache/**"]
+    paths:
+      [
+        "pipeline/src/hukum_bersih/pdf/**",
+        "pipeline/src/hukum_bersih/akn/**",
+        "pipeline/src/hukum_bersih/closing.py",
+        "pipeline/tests/regression.yaml",
+        "pipeline/scripts/ocr_fix_report.py",
+        "pipeline/scripts/compare_reparse.py",
+        ".github/workflows/parser-regression.yml",
+        ".github/actions/ocr-cache/**",
+      ]
 
 permissions:
   contents: read
@@ -28,23 +36,23 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 90
     env:
-      HUKUM_BERSIH_OCR_CACHE: /home/runner/ocr-cache      # raw OCR of scanned pages, kept between runs (.github/actions/ocr-cache)
+      HUKUM_BERSIH_OCR_CACHE: /home/runner/ocr-cache # raw OCR of scanned pages, kept between runs (.github/actions/ocr-cache)
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v6
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
       - uses: ./.github/actions/ocr-cache
         with:
           step: restore
           path: ${{ env.HUKUM_BERSIH_OCR_CACHE }}
       - run: sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ind hunspell hunspell-id hunspell-en-us >/dev/null
-      - run: hunspell -d id_ID,en_US -G <<< "rumah house tidakada"   # dictionaries present: prints 2 words
+      - run: hunspell -d id_ID,en_US -G <<< "rumah house tidakada" # dictionaries present: prints 2 words
       - run: |
           uv sync --extra ocr --extra bpk
           uv run python -c 'import indra_ocr; indra_ocr.load()'   # Indra's models (~76 MB) once, before the parallel OCR workers
         working-directory: pipeline
       - name: Regression set
         working-directory: pipeline
-        shell: bash          # -o pipefail: the step fails when regress.py does
+        shell: bash # -o pipefail: the step fails when regress.py does
         run: uv run python scripts/regress.py 2>&1 | grep -v "MuPDF error\|^$" | tee -a "$GITHUB_STEP_SUMMARY"
       - name: OCR spell fix report
         if: ${{ (inputs.ocr_fix || '30') != '0' }}

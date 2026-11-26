@@ -1,0 +1,115 @@
+name: Deploy Solid preview
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: solid-preview
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web-solid
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: web-solid/.node-version
+      - uses: pnpm/action-setup@v5
+        with:
+          package_json_file: web-solid/package.json
+      - run: pnpm install --frozen-lockfile
+      - name: Check the Solid app
+        run: |
+          pnpm exec tsc --noEmit
+          pnpm run test --run
+
+      - name: Install the pipeline
+        working-directory: pipeline
+        run: uv sync
+
+      # The pipeline reads data/ and writes the corpus: laws, collections, drafts, the catalog and the
+      # Pagefind index. `--publish` stores it as releases/<id>/ and points active-release at it;
+      # `--public` writes the active release's catalog and index into web-solid/public, which the build
+      # copies to dist/client.
+      - name: Prepare preview corpus
+        working-directory: pipeline
+        run: uv run hukum-bersih export-corpus --publish "$RUNNER_TEMP/solid-corpus" --public ../web-solid/public
+
+      # The build renders every public page from that corpus (prerender-crawler) into dist/client,
+      # which the Worker serves as static assets; the Worker itself only answers search, the
+      # citation lookup, the JSON endpoints and /data/<release>/.
+      - name: Build Solid Worker and prerender the pages
+        env:
+          HUKUM_CORPUS_DIR: ${{ runner.temp }}/solid-corpus
+        run: pnpm run build
+
+      - name: Check the prerendered pages
+        run: |
+          pages="$(find dist/client -name index.html | wc -l)"
+          files="$(find dist/client -type f | wc -l)"
+          echo "pages=$pages files=$files"
+          test "$pages" -gt 1000
+          test "$files" -lt 20000
+          test -z "$(find dist/client -type f -size +25M)"
+          printf 'Prerendered %s pages, %s asset files.\n' "$pages" "$files" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Install rclone
+        run: |
+          curl -fsSL https://rclone.org/install.sh | sudo bash
+          rclone version
+
+      - name: Publish the corpus to preview R2
+        id: corpus
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          RCLONE_CONFIG_PREVIEW_TYPE: s3
+          RCLONE_CONFIG_PREVIEW_PROVIDER: Cloudflare
+          RCLONE_CONFIG_PREVIEW_REGION: auto
+          RCLONE_CONFIG_PREVIEW_NO_CHECK_BUCKET: "true"
+          RCLONE_CONFIG_PREVIEW_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          RCLONE_CONFIG_PREVIEW_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+        run: |
+          set -euo pipefail
+
+          : "${CLOUDFLARE_ACCOUNT_ID:?Cloudflare account ID is required}"
+          : "${RCLONE_CONFIG_PREVIEW_ACCESS_KEY_ID:?Preview R2 access key is required}"
+          : "${RCLONE_CONFIG_PREVIEW_SECRET_ACCESS_KEY:?Preview R2 secret key is required}"
+
+          export RCLONE_CONFIG_PREVIEW_ENDPOINT="https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com"
+
+          echo "Checking R2 connectivity..."
+          rclone lsf preview:hukum-bersih-corpus --max-depth 1
+
+          echo "Publishing corpus..."
+          release="$(bash ../.github/scripts/upload-release.sh "$RUNNER_TEMP/solid-corpus" preview:hukum-bersih-corpus)"
+
+          printf 'release=%s\n' "$release" >> "$GITHUB_OUTPUT"
+
+      - name: Deploy preview Worker
+        id: worker
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_WORKERS_API_TOKEN }}
+        run: |
+          : "${CLOUDFLARE_API_TOKEN:?Preview Workers API token is required}"
+          export WRANGLER_OUTPUT_FILE_PATH="$RUNNER_TEMP/solid-deploy.jsonl"
+          pnpm exec wrangler deploy
+          url="$(jq -ers '[.[] | select(.type == "deploy") | .targets[] | select(test("^https://hukum-bersih-solid-preview\\.[a-z0-9-]+\\.workers\\.dev/?$"))] | last' "$WRANGLER_OUTPUT_FILE_PATH")"
+          printf 'url=%s\n' "${url%/}" >> "$GITHUB_OUTPUT"
+
+      - name: Deployment summary
+        env:
+          PREVIEW_URL: ${{ steps.worker.outputs.url }}
+          RELEASE: ${{ steps.corpus.outputs.release }}
+        run: |
+          printf 'Preview: %s\n\nCorpus release: `%s`\n' "$PREVIEW_URL" "$RELEASE" >> "$GITHUB_STEP_SUMMARY"

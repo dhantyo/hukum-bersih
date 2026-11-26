@@ -1,0 +1,177 @@
+import * as stylex from "@stylexjs/stylex";
+
+import { headerOffset } from "./header-offset.stylex.ts";
+import { color, size, space } from "./tokens.stylex.ts";
+
+const PHONE = "@media (max-width: 760px)";
+const LARGE = ':is([data-size="large"])';
+const SHOW_SAME = ":has([data-show-same]:checked)";
+const NUMBER_COLUMN = "2.3rem";
+const PHONE_NUMBER_COLUMN = "1.9rem";
+
+export const synopsisStyles = stylex.create({
+  versions: {
+    gap: space.s3,
+    display: "grid",
+    gridTemplateColumns: { [PHONE]: "1fr", default: "1fr 1fr" },
+  },
+  card: {
+    borderColor: color.line,
+    borderRadius: size.radiusMd,
+    borderStyle: "solid",
+    borderWidth: 1,
+    marginBlock: space.s3,
+    paddingBlock: space.s4,
+    paddingInline: space.s5,
+    backgroundColor: color.backgroundSubtle,
+    fontSize: size.sm,
+  },
+  versionCard: {
+    alignItems: "start",
+    display: "grid",
+    justifyItems: "start",
+  },
+  note: { margin: 0, marginBlockStart: space.s2 },
+  muted: { color: color.textMuted },
+  summaryCount: {
+    display: "inline-block",
+    marginInlineEnd: space.s4,
+    whiteSpace: "nowrap",
+  },
+  synopsis: { marginTop: space.s5 },
+  head: {
+    paddingBlock: space.s3,
+    backgroundColor: color.background,
+    columnGap: space.s5,
+    display: { [PHONE]: "none", default: "grid" },
+    fontSize: size.sm,
+    fontWeight: 600,
+    gridTemplateColumns: "1fr 1fr",
+    position: "sticky",
+    zIndex: 1,
+    borderBottomColor: color.line,
+    borderBottomStyle: "solid",
+    borderBottomWidth: 2,
+    top: headerOffset.shown,
+  },
+  chapter: {
+    paddingBlock: space.s2,
+    color: color.textMuted,
+    fontSize: size.xs,
+    fontWeight: 600,
+    letterSpacing: "0.04em",
+    borderBottomColor: color.line,
+    borderBottomStyle: "solid",
+    borderBottomWidth: 1,
+    marginBottom: space.s1,
+    marginTop: space.s6,
+  },
+  row: {
+    borderBottomColor: color.line,
+    borderBottomStyle: "solid",
+    borderBottomWidth: 1,
+    paddingBottom: space.s4,
+    paddingTop: space.s3,
+    scrollMarginTop: space.s7,
+  },
+  sameRow: {
+    display: {
+      default: "none",
+      [stylex.when.ancestor(SHOW_SAME)]: "block",
+    },
+  },
+  meta: {
+    gap: space.s2,
+    alignItems: "center",
+    display: "flex",
+    fontSize: size.xs,
+    fontWeight: 600,
+    marginBottom: space.s1,
+  },
+  status: {
+    borderColor: "currentColor",
+    borderRadius: 999,
+    borderStyle: "solid",
+    borderWidth: 1,
+    paddingInline: space.s2,
+    textDecoration: "none",
+    color: color.textMuted,
+  },
+  statusBerubah: { color: color.warn },
+  statusBaru: { color: color.ok },
+  statusDihapus: { color: color.delText },
+  tag: { color: color.textMuted, fontWeight: 600 },
+  pair: {
+    columnGap: space.s5,
+    display: "grid",
+    gridTemplateColumns: { [PHONE]: "1fr", default: "1fr 1fr" },
+  },
+  cellHeading: {
+    fontSize: size.base,
+    marginBottom: space.s2,
+    marginTop: space.s1,
+  },
+  version: {
+    color: color.textMuted,
+    fontSize: size.sm,
+    fontWeight: 400,
+  },
+  none: {
+    marginBlock: space.s1,
+    color: color.textMuted,
+    fontSize: size.sm,
+    fontStyle: "italic",
+  },
+  mutedCell: { color: color.textMuted },
+  hiddenOnPhone: { display: { [PHONE]: "none", default: null } },
+  line: {
+    borderRadius: size.radius,
+    marginBlock: space.hairline,
+    paddingBlock: space.s1,
+    paddingInline: space.s2,
+    alignItems: "start",
+    columnGap: "0.3rem",
+    fontSize: {
+      default: size.law,
+      [stylex.when.ancestor(LARGE)]: size.lawLarge,
+    },
+    gridTemplateColumns: {
+      [PHONE]: `minmax(${PHONE_NUMBER_COLUMN}, max-content) 1fr`,
+      default: `minmax(${NUMBER_COLUMN}, max-content) 1fr`,
+    },
+    lineHeight: 1.6,
+    marginInlineStart: {
+      [PHONE]: `calc(var(--i, 0) * ${PHONE_NUMBER_COLUMN})`,
+      default: `calc(var(--i, 0) * ${NUMBER_COLUMN})`,
+    },
+  },
+  sideLine: { display: { [PHONE]: "none", default: "grid" } },
+  inlineLine: { display: { [PHONE]: "grid", default: "none" } },
+  removed: { backgroundColor: color.delBackground, color: color.delText },
+  added: { backgroundColor: color.insBackground, color: color.insText },
+  ghost: { paddingBlock: 0, visibility: "hidden" },
+  strike: { textDecoration: "line-through" },
+  number: { gridColumn: 1, whiteSpace: "nowrap" },
+  text: { gridColumn: 2, minWidth: 0 },
+  textFull: { gridColumnEnd: "-1", gridColumnStart: "1", minWidth: 0 },
+  ref: {
+    color: color.textMuted,
+    display: "inline-block",
+    fontSize: size.xs,
+    marginTop: space.s1,
+    width: "100%",
+  },
+  refLink: { color: "inherit" },
+  ins: {
+    borderRadius: 2,
+    textDecoration: "none",
+    backgroundColor: color.insBackground,
+    color: color.insText,
+  },
+  del: {
+    borderRadius: 2,
+    backgroundColor: color.delBackground,
+    color: color.delText,
+  },
+  plainMark: { backgroundColor: "transparent" },
+});

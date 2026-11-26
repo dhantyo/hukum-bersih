@@ -11,8 +11,8 @@ jobs:
       run:
         working-directory: pipeline
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v6
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
       - run: uv sync
       - run: uv run ruff check .
       - run: uv run pytest
@@ -23,8 +23,8 @@ jobs:
       run:
         working-directory: web
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v6
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
       - name: Build Akoma Ntoso XML from data/
         working-directory: pipeline
         run: uv run hukum-bersih build-akn --out ../web/generated/akn
@@ -33,19 +33,55 @@ jobs:
       - name: Validate the XML against the OASIS Akoma Ntoso 3.0 schema
         working-directory: pipeline
         run: uv run python scripts/validate_akn.py ../web/generated/akn
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: npm
           cache-dependency-path: web/package-lock.json
       - run: npm ci
-      - run: npm test     # includes the M1 check: Pasal 5(2) of RUU Perampasan Aset changed
+      - run: npm test # includes the M1 check: Pasal 5(2) of RUU Perampasan Aset changed
       - run: npm run build
+
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      web-solid: ${{ steps.filter.outputs.web-solid }}
+    steps:
+      - uses: actions/checkout@v5
+      - id: filter
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            web-solid:
+              - 'web-solid/**'
+
+  web-solid:
+    needs: changes
+    if: needs.changes.outputs.web-solid == 'true'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web-solid
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v5
+        with:
+          package_json_file: web-solid/package.json
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: web-solid/.node-version
+          cache: pnpm
+          cache-dependency-path: web-solid/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run check
+      - run: pnpm exec tsc --noEmit
+      - run: pnpm run test --run
+      - run: pnpm run build
 
   actionlint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       # Pinned release. shellcheck integration is off: it only raised style notes
       # (quoting, ls) on our scripts. actionlint does not lint a local action's own
       # action.yml; its inputs are checked where workflows call it.
@@ -57,7 +93,7 @@ jobs:
   no-pdfs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Refuse committed PDFs
         run: |
           if git ls-files | grep -iE '\.pdf$'; then

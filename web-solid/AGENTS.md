@@ -1,0 +1,273 @@
+# Conventions
+
+`pnpm run check` enforces the style rules. These are the ones it cannot enforce. Copy the named file when you add a new one of the same kind.
+
+- **Layout.** `src/` root holds only the app shell the Solid plugin finds by name (`app.tsx`, `document.tsx`), the router (`router.tsx`) and the request middleware (`middleware.ts`). Pages are in `routes/`, UI in `components/`, styles in `styles/`. `lib/` is code the browser can import (server functions, queries, schemas, search matching). `server/` is server only: `corpus.ts`, `records/`, `middleware/`.
+- **Published records.** One file per JSON object in `server/records/`: a valibot schema, an inferred type, and a read function that fetches the active-release text and parses it with `parseRecord`. Nothing else parses published JSON. Example: `server/records/law.ts`. Reader text is checked without being rebuilt (`records/reader-text.ts`), so large laws are not copied.
+- **Ids, paths and links.** Define each once in `lib/schemas.ts` and reuse it with `v.is` or inside a record. Never write the pattern again in a route or middleware.
+- **Server functions.** In `lib/`, `GET(async (...) => { "use server"; ... })`. Check every argument against a `lib/schemas.ts` schema, return `null` (or `[]` for a list) when it fails, then call one reader from `server/records/`. Example: `lib/collections.ts`. A function a crawled page reads is `prerendered(async (...) => { "use server"; ... })` from `@solidjs/prerender` instead of `GET` (decision 0019): the build bakes its calls into `_static/` so a client navigation reads a file; only the no-JavaScript search (`/cari/hasil/`) stays `GET`.
+- **Routes.** `router.tsx` lists every route as `defineRoute({ path, component: lazy(...), preload })`; a more specific pattern goes before a general one (`/uu/tahun/:tahun` before `/uu/:nomor/:tahun`). A page is one file in `routes/` with a default-exported arrow const typed `RouteProps<"/pattern">`. It reads data with `createMemo(async () => await xQuery(...))` and shows a missing record with `<Show when={record()} fallback={<NotFound />} keyed>`; `NotFound` sets the 404 status. The preload calls the same query as the page, so the click, the hover and the first render share one request. Title: `<PageTitle>` from `components/page-title.tsx` (a `@solidjs/meta` `Title` with the site suffix), description: `<Meta name="description" ...>`, both rendered inside the page. Search indexing is decided by the pipeline's `corpus/search.py` from the exported records, not by the page or a robots meta. UI longer than a page goes in `components/`. Example: `routes/collection.tsx`.
+- **Queries.** Wrap each server function once, in `lib/queries.ts`, as `query(fn, "key")`. Never pass a trailing `undefined` argument: arguments travel as JSON and it throws (see `fetchReader`). The router's `query` dedupes within a request and for a few seconds in the browser; there is no query client.
+- **Search params.** Declare a valibot schema in `lib/schemas.ts`, set it as the route's `search`, and parse `props.location.query` with `v.parse(schema, ...)` in the page and in its preload. A schema never throws: use `v.fallback` for a value the page can ignore.
+- **Links.** Plain `<a>`: the router handles every same-origin anchor, preloads on hover, focus and touch, and marks the current one. Public URLs end in a slash and `Router.paths` never adds one, so build route links with `slashed(Router.paths...)` from `lib/paths.ts`; URLs that come from a record are used as stored. An in-page `#` link carries `target="_self"` so the router leaves it alone and does not mark it as the current page. A GET `<form>` is submitted by the browser, not the router.
+- **Pending state.** A navigation holds the old screen until the new one is ready, and dev reports `SILENT_HOLD` when nothing on screen says so. `app.tsx` shows one status line from `isPending(() => props.children)` for every route; a new page needs nothing of its own.
+- **Components.** One arrow const per component with its props typed inline, in a kebab-case file. Test text for presence with `isPresent`, never as a truthy string. Components import record types, never record readers. No `data-pagefind-*` attribute anywhere: `components/full-text-search.tsx` and `lib/pagefind.ts` are the only code that know Pagefind, and the pipeline builds the index from the exported records (`corpus/search.py`), not from the markup.
+- **Styling.** StyleX only. Write `stylex.create` beside the component, name tokens through `styles/tokens.stylex.ts`, and apply with `css(...)` from `styles/css.ts`. Styles shared by several components are in `styles/reading.ts`. Tokens are literal `defineVars` values in `styles/tokens.stylex.ts`, each colour with its dark value under a `prefers-color-scheme` media key, and nothing imports from `web/src/styles/`. StyleX cannot style a bare element, so every `<a>` takes `linkClass` or `linkStyles.base` from `styles/link.ts` (first in `css(...)`, so its own colour still wins). Style a state with `stylex.when`, not with a global selector.
+- **The one CSS file.** `styles/stylex.css`, imported in `app.tsx`, holds three things StyleX cannot: the four font stacks as `--font-*` custom properties, the defaults of bare elements (`box-sizing`, `h1` to `h3`, `p`; sizes copied from the `size` and `space` tokens, so change both together), and the `@stylex;` marker. The element defaults sit in `@layer reset`, because StyleX rules are layered and an unlayered rule would beat them. `@stylexswc/unplugin` (`useCssPlaceholder`) replaces the marker with the StyleX rules in dev and in the build, so they ship in the hashed stylesheet the page already links; a marker in a virtual module stays unfilled in dev, and the plugin's standalone `stylex.css` is never linked by the Solid server render. Fonts are self-hosted by the `fontless` Vite plugin (families and preloads in `FONT_STACKS` in `vite.config.ts`): its `google` provider downloads the variable fonts from Google Fonts at build time, and readers load them from this site, never from Google. Google does not pin versions, so a font update upstream can change text width between builds; its files also set text 1 to 7% wider at reading sizes than the `@fontsource-variable` 5.3 files the Astro site uses (measured 2026-11-26), which was accepted for the simpler setup. A family is named as Google names it. fontless rewrites the `--font-*` stacks in that file with metric-adjusted fallbacks and emits the `@font-face` rules and font files under `/assets/_fonts`, and `document.tsx` renders its preloads from `fontless/runtime`. fontless never sees StyleX's output (inserted after Vite's CSS transforms), which is why the stacks live in this file and `font` in `tokens.stylex.ts` only points at them. Change a stack there, never add fallback names by hand.
+- **Document pages.** Law, draft document and collection pages render through `components/doc-layout.tsx`: breadcrumbs, title block, a side panel (`panel` prop) and the text. It owns the panel: a ui-sdk `Resizable` group (panel, handle, text) up to the `media.tablet` breakpoint, and a ui-sdk `Drawer` from a tab on the left edge below it. The reader drags the handle (arrow keys work too) between the bounds in `lib/panel-size.ts` (`PANEL_REM`); dragging below the minimum, Enter on the handle or the "Sembunyikan" button folds the panel to a strip, and the same restore it. Whether it is folded is the `panel` preference (`data-panel` on `<html>`), or `comparePanel` while a comparison folds it below 1500px; the group follows the preference and writes it back. The width is `hb-panel-width` in `localStorage`; `WIDTH_SCRIPT` (inline, before the group) sets `--resizable-panel-size` for first paint, because the HTML is cached at the edge and `autoSaveId` restores only after hydration. The panel and the drawer's list scroll in the same ui-sdk `ScrollArea` (`PanelScroll`: the viewport is its `<aside>`, with a thin bar shown on hover; the drawer keeps its title bar outside it); without JavaScript it is not height-capped or sticky, because the area hides the native scrollbar in the server HTML. Below the breakpoint the group is forced to `display: block` (it writes `display: flex` inline), so without JavaScript the panel stacks above the text. The "Aa" settings sit in `site-header.tsx`; a page hands its text to them with the `text` prop, through `lib/reader-view.ts`. Breakpoints are the `media` constants in `tokens.stylex.ts`.
+- **The header that follows the scroll.** `site-header.tsx` wraps the header in a slot and hands both to `followHeader` (`lib/header-follow.ts`, rules in `lib/bar-scroll.ts`, tested in `bar-scroll.test.ts`; in its place at the top of the page, else slid away on a step down and back in whole on a step up, unlike Astro's `barscroll.ts`, which revealed it by the distance scrolled). The header moves by `transform` only (`data-mode` free, pinned or hidden), never by `top`, so showing and hiding it makes no layout shift; the slot keeps its height. Nothing is measured while hydrating: the first `ResizeObserver` callback sizes the slot and starts it, because a forced layout there tripped `HOT_SCOPE_TIME` in dev. A hidden header is `inert`, not `visibility: hidden`. A header that becomes `pinned` or `hidden` goes through `enter` in `header-follow.ts`, which starts its slide from where it is on screen: a free header scrolls with the page, so a bare `data-mode` change would run the transition from its place in the page rather than from where it shows. Prove a change to this with `scripts/header-reveal.ts` (see `README.md`). An element that sticks under the header reads `headerOffset.shown` (`styles/header-offset.stylex.ts`: the header's height while pinned, else 0) in its `top`, as the panel in `doc-layout.tsx` does.
+- **Interactive controls.** Build toggles, pickers and disclosures with ui-sdk parts (`@ui-sdk/solid/<part>`) and style them with StyleX through their state attributes, e.g. `":is([data-checked])"` or `":is([data-highlighted])"` as a condition (examples: `components/collection-version-picker.tsx`, `components/reading-settings.tsx`). Reader choices that must be right at first paint are `createPreference` values on `<html>` (`lib/reading-preferences.ts`); read them in CSS with `stylex.when.ancestor(<const selector string>)` (`<html>` carries the default marker, `document.tsx`). StyleX's lint rejects a `when.ancestor` result held in a variable and pseudo-elements such as `::details-content`: pass a `const` selector string to `when.ancestor` and use a native element for the rest. Colours, sizes and fonts come from `styles/tokens.stylex.ts`, never a raw `var(--x)`. JSX at module scope fails on the server (`getNextContextId cannot be used under non-hydrating context`): keep it inside components.
+- **Motion.** The pills and the text columns below the bar trade places as one: `createTextSlide` (`lib/text-slide.ts`, geometry in `lib/column-shift.ts`) writes each text column's shift, faintness and glide on `<html>` (`styles/column-shift.stylex.ts`, `data-cmp-sliding` marks it), and the text cells read them through `slidingColumn` (`styles/column-slide.ts`). A held pill is locked to the line (`createReorder` writes `--drag-x`, which the pill reads in its `translate`, not its `transform`, so its lift `scale` does not magnify the drag; `limitPill` bounds it) and its column follows what the pill shows, scaled from the pills' pitch to the text's. Every pill that is not held follows the rendered text column of its version on `translate` each frame while the session lasts (`followColumns`: the column's offset minus the layout move that `createReorder`'s live reorder made), so the pill and its column share offset, moment and easing; the other column fades as they cross. A reduced-motion reader gets the same poses without a glide (`poseColumns`). The drop, the keys and the swap link wait `GLIDE_MS` before they navigate, and the new `?v=` order clears the shifts and the pills' `translate`. Prove a change with a per-frame record of each pill's and each column's x (mouse drag, swap link, keys; two and three columns).
+- **Folds in the law text.** BAB, Bagian, Paragraf and Pasal fold with a native `<details open>` (`components/law-fold.tsx`), so the text reads without JavaScript, find-in-page and `#pasal-N` open the fold, and no per-node script runs; ui-sdk `Collapsible` per fold measured slower on `/uu/11/2020/`. One `hashchange` listener opens the fold of a link's target. A part of a fold reads the fold's open state with `stylex.when.ancestor(":not([open])", fold)` and a dedicated marker from `styles/markers.stylex.ts` (never the default marker, which is on `<html>`). That is exact only for a visible part, because a part under a closed ancestor is hidden. A style that is set only under a condition needs a real default: `default: null` in a later style removes the earlier value.
+- **The corpus.** The pipeline writes it and this app only reads it: `uv run hukum-bersih export-corpus --publish <dir> --public ../web-solid/public` (in `pipeline/`, code in `src/hukum_bersih/corpus/`), read in dev through `HUKUM_CORPUS_DIR` (see `README.md`). A new or changed field in a published record is two edits: the Python writer and the valibot schema in `server/records/` (`lib/pair-records.ts` for the comparison files, which the browser parses too). No diff runs here: the law page and the collection page share one comparer (decision 0017). The address is `?v=a,b,c`, one column per version (one id stands for it against the version before; empty for first against latest). A visit to an address is rendered on the server: `server/comparison.ts` reads `collections/<slug>/comparisons/` (`server/records/collection-comparison.ts`, written by `corpus/version_comparison.py`, which writes only older-to-newer pairs) for each pair of neighbouring columns, always older version first (`neighbourPairs`), and `lib/compare.ts` maps the published lines to rows of cells, pairing lines by number. A change made on the page does not call the server: `lib/browser-comparison.ts` fetches the same files from `/data/<release>/collections/<slug>/comparisons/` (`server/middleware/release-data.ts` streams the corpus object, immutable, never parsed; the path is `comparisonFilePath` in `lib/schemas.ts`), parses them with the schemas in `lib/pair-records.ts` and maps them with the same `compareColumns`. The release comes with the comparison the page shows (`PublishedComparison.release`, noted by `noteShown` in the page's memo, which is how a hydrated page learns it), a failed file leaves the comparison on screen with `failed` set and `components/comparison-failure.tsx` offers a retry (decision 0018). The law page reads its record and its comparison in two memos (`lib/law-page.ts`) so a change of versions never reads the law again. The law page places those rows in its text (`placeInText`, `components/law-text.tsx`); the collection page lists them (`components/collection-compare.tsx`); both draw a row with `PasalBlock` (`components/compare-block.tsx`) and choose versions in `CompareBar` (`components/compare-bar.tsx`). No per-collection record is needed, and every control is a link or a field of one GET form, so it works without JavaScript. The comparer marks itself with `data-cmp-bar`, which the layout reads to widen the text and fold the panel; the draft synopsis (`routes/draft-comparison.tsx`) pairs by content and stays its own view. Nothing in this app imports from `web/`; labels, display helpers and the search query reader live in `lib/` (`labels.ts`, `display.ts`, `search-query.ts`). `scripts/` holds `route-snapshot.sh` and `visual-parity.ts` (screenshot parity against the Astro site, see `README.md`).
+- **Search.** `/cari/` is prerendered and searches in the browser (decision 0020): `routes/search.tsx` loads the catalog (`lib/search-data.ts`, schema in `lib/catalog-record.ts`), runs `searchMatches` on every keystroke and renders `FullTextSearch` below it, which pauses after the last key and streams Pagefind pages in. The query lives in a signal and in `?q=` (replaced after a pause), and is read from the address only after hydration (`useHydrated`), because the shell is the same HTML for every query. Every search form posts to `PLAIN_SEARCH_PATH` (`/cari/hasil/`, `routes/search-plain.tsx`, the Worker renders the catalog results) and takes `useSearchSubmit` (or the page's own handler) so that, with JavaScript, a submit goes to `/cari/?q=` with no request; a link to a search is `plainSearchUrl(...)` with an `onClick` that navigates to `searchUrl(...)`. A search field calls `prefetchSearch` on focus. The catalog and the index are written into `public/data/<release>/` and `public/search-index/<release>/` by `export-corpus --public` (git-ignored; `public/_headers` is committed), so Vite ships them in the build and serves them in dev; the matching code in `lib/search-matches.ts` is the one implementation, used by the browser and by `/cari/hasil/`.
+- **Refactors.** Prove "no behaviour change" with `scripts/route-snapshot.sh` (see its header) before and after, and diff.
+
+# ui-sdk
+
+Before you write an interactive control (toggle, picker, menu, disclosure, dialog, tooltip, tabs, a `role=` or `aria-expanded` attribute, a key or click handler on a non-link), look for a ui-sdk component or behavior and use it. Hand-built is the exception and needs a reason in the PR.
+
+- Follow the `ui-sdk` skill (`.claude/skills/ui-sdk/`, pinned in `skills-lock.json`), then read `node_modules/@ui-sdk/solid/docs/llms.txt` and only the component pages you use.
+- A control ui-sdk does not ship is built from its behaviors: search `node_modules/@ui-sdk/solid/docs/core.md` by heading and read `docs/rendering.md` beside it.
+- Import each part from its own entry (`@ui-sdk/solid/select`), never from a package root and never from `@ui-sdk/core/internal/*`.
+- ui-sdk renders no styles. Style its parts with StyleX through their `data-*` and `aria-*` state, as in the Interactive controls convention above. Do not add `@ui-sdk/core/web.css`.
+
+<!-- BEGIN solid-2.0-primer -->
+<!-- Generated by scripts/sync-agent-files.mjs from agents/solid-2.0-primer.md. Edit the primer and re-run; edits inside this block are overwritten. -->
+
+<!-- Source of truth: packages/solid/skills/solid-2.0/SKILL.md in solidjs/solid (branch next). Copied here, minus its frontmatter, so templates carry it without a network; keep the two in step. -->
+
+# Solid 2.0 for agents
+
+Solid is not React, and 2.0 is not 1.x. Pattern-matching from either is the
+dominant bug source. Every name below is a `solid-js` export unless noted;
+DOM APIs (`render`, `hydrate`, `Portal`, `dynamic`) are in `@solidjs/web`.
+
+## Three rules
+
+1. **Props are read, not destructured; pass values, not accessors.**
+   - Wrong: `function C({ name }) {}` and `<C value={count} />`
+   - Right: `function C(props) { return <p>{props.name}</p>; }` and `<C value={count()} />`
+2. **`createEffect` takes two functions: compute (tracks), then apply (side effects).**
+   - Wrong: `createEffect(() => { el.title = count(); });`
+   - Right: `createEffect(() => count(), v => { el.title = v; });`
+3. **Stores are written through the draft.**
+   - Wrong: `setStore("user", "name", "B")` or `setStore(produce(s => ...))`
+   - Right: `setStore(s => { s.user.name = "B"; });`
+
+## 1.x → 2.0 corrections
+
+Nothing in the left column exists in 2.0.
+
+| Wrong (1.x)                                    | Right (2.0)                                                       |
+| ---------------------------------------------- | ----------------------------------------------------------------- |
+| `import { createStore } from "solid-js/store"` | `import { createStore } from "solid-js"`                          |
+| `import { render } from "solid-js/web"`        | `import { render } from "@solidjs/web"`                           |
+| `"jsxImportSource": "solid-js"`                | `"jsxImportSource": "@solidjs/web"`                               |
+| `createEffect(fn)` (one argument)              | `createEffect(compute, apply)`                                    |
+| `onMount(fn)`                                  | `onSettled(() => { setup(); return cleanup; })`                   |
+| `createEffect(on(dep, fn))`                    | `createEffect(() => dep(), v => fn(v))`                           |
+| `const [d] = createResource(id, fetchX)`       | `const d = createMemo(() => fetchX(id()))` under `<Loading>`      |
+| `d.loading` / `d.error`                        | `<Loading>` or `isPending(() => d())` / `<Errored>`               |
+| `refetch()`                                    | `refresh(d)` (`affects(d); refresh(d)` to read as pending)        |
+| `<Suspense>` / `<SuspenseList>`                | `<Loading>` / `<Reveal>`                                          |
+| `<ErrorBoundary>`                              | `<Errored fallback={(err, reset) => ...}>` (heals automatically)  |
+| `<Index each={xs}>`                            | `<For each={xs} keyed={false}>`                                   |
+| `batch(fn)`                                    | not needed: updates batch per microtask; `flush()` applies now    |
+| `startTransition` / `useTransition`            | built-in transitions: `action(...)`, `isPending`, optimistic APIs |
+| `createComputed`                               | `createMemo`, split `createEffect`, or `createSignal(fn)`         |
+| `mergeProps` / `splitProps` / `unwrap`         | `merge` / `omit` / `snapshot`                                     |
+| `produce`, `createMutable`, `modifyMutable`    | draft setters are the default in `createStore`                    |
+| `createSelector`                               | `createProjection` (or `createStore(fn)`)                         |
+| `<Ctx.Provider value={v}>`                     | `<Ctx value={v}>`                                                 |
+| `classList={{ a: x() }}`                       | `class={{ a: x() }}` or `class={["base", { a: x() }]}`            |
+| `use:dir={x}` / `attr:` / `on:` / `tabIndex`   | `ref={dir(x)}` / plain attributes / `onClick` / `tabindex`        |
+| `onError` / `catchError`                       | `<Errored>` or `createEffect(c, { effect, error })`               |
+| `from(source)` / `observable`                  | return an AsyncIterable from a computation                        |
+
+Also:
+
+- Reads lag writes: `setX(1); x()` still returns the old value until the
+  microtask or `flush()`. In tests, `flush()` before asserting.
+- No writes inside a memo, effect compute, or component body (dev throws).
+  Write from event handlers, `onSettled`, or actions.
+- No reactive reads at the top of a component body; read in JSX, a memo, an
+  effect's compute, or hand a hook an accessor (`useThing(() => props.id)`;
+  JSX props still take values). Flow callbacks (`<For>`, `<Show>`,
+  `<Match>`) are owners, not tracking scopes: read their accessor arguments
+  in JSX, not at the top.
+- Never use `untrack` to silence `STRICT_READ_UNTRACKED`: the value still
+  goes stale, and the warning was the only sign. Move the read instead (see
+  that code's section in the diagnostics skill). Hooks and adapters take
+  accessors and read them inside their own memos and effects.
+- `<For>`: default gives a raw item and an index accessor; `keyed={false}`
+  gives an item accessor and a plain number. `<Repeat>`: `i` is a number.
+- `onClick={cond() ? a : b}` binds once; decide inside a stable handler.
+
+## Primitives to reach for
+
+| Primitive                                                          | Use                                                                                     |
+| ------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| `createSignal(0)` / `createSignal(() => fetchUser(id()))`          | plain signal / writable derived value, sync or async; read by calling it                |
+| `createMemo(() => fetchX(id()))`                                   | read-only derived value; a Promise result is pending until it lands                     |
+| `createProjection(async () => api.list(), [], { key: "id" })`      | read-only derived store with keyed reconciliation                                       |
+| `createOptimisticStore(() => api.list(), [])`                      | store whose optimistic writes revert when the transition settles                        |
+| `action(function* (x) { write(); yield api.put(x); refresh(d); })` | mutation with transition coordination; optimistic writes go inside                      |
+| `until(() => confirmed(), { timeout })`                            | Promise that resolves when a predicate turns truthy; `yield` it in an action            |
+| `isPending(() => d())`                                             | true while a change to `d` is in flight (input changed or `affects()` declared)         |
+| `latest(d)`                                                        | peek at the in-flight value during a transition                                         |
+| `refresh(d)`                                                       | re-ask the source after a server write; quiet unless preceded by `affects(d)`           |
+| `<Loading on={id()}>` `<Errored>` `<Reveal>` `<Repeat>` `<For>`    | async boundary (`on` re-arms it), error boundary, sibling order, range list, keyed list |
+
+## Pointers
+
+- Full reference: `node_modules/solid-js/CHEATSHEET.md`; the same text is
+  the `solid-2.0-cheatsheet` skill in `node_modules/solid-js/skills/`.
+- Diagnostics: dev builds print `[CODE] message` plus an `in <App> › …`
+  owner line. The first report of each code ends with a footer naming
+  `node_modules/solid-js/skills/reactivity-diagnostics/SKILL.md`, one section
+  per code (`STRICT_READ_UNTRACKED`, `REACTIVE_WRITE_IN_OWNED_SCOPE`,
+  `LOADING_ON_OUTSIDE_HOLD`, …). Fix the cause; never suppress a code.
+- Evidence loops: `node_modules/@solidjs/diagnostics/skills/agent-loops/SKILL.md`
+  (`captureArtifact`). With `@solidjs/vite-plugin`'s `diagnostics` option the
+  dev server answers `POST /__solid/diagnostics` (`begin`, `active`, `whyDidRun`,
+  `costs`, `end`).
+- Lint: `eslint-plugin-solid`, config `v2`
+  (`import solid from "eslint-plugin-solid/configs/v2"`) or `v2-strict`.
+- Docs: https://v2.solidjs.com (Solid 2.0 docs; `/llms.txt` and
+  `/llms-full.txt` for agents). Migration guide: `documentation/solid-2.0/MIGRATION.md`
+  in the repository.
+
+<!-- END solid-2.0-primer -->
+
+# Ultracite Code Standards
+
+This project uses **Ultracite**, a zero-config preset that enforces strict code quality standards through automated formatting and linting.
+
+## Quick Reference
+
+- **Format code**: `pnpm exec ultracite fix`
+- **Check for issues**: `pnpm exec ultracite check`
+- **Diagnose setup**: `pnpm exec ultracite doctor`
+
+Oxlint + Oxfmt (the underlying engine) provides robust linting and formatting. Most issues are automatically fixable.
+
+---
+
+## Core Principles
+
+Write code that is **accessible, performant, type-safe, and maintainable**. Focus on clarity and explicit intent over brevity.
+
+### Type Safety & Explicitness
+
+- Use explicit types for function parameters and return values when they enhance clarity
+- Prefer `unknown` over `any` when the type is genuinely unknown
+- Use const assertions (`as const`) for immutable values and literal types
+- Leverage TypeScript's type narrowing instead of type assertions
+- Use meaningful variable names instead of magic numbers - extract constants with descriptive names
+
+### Modern JavaScript/TypeScript
+
+- Write functions as arrow functions assigned to `const`, and define them above where they're used
+- Prefer `for...of` loops over `.forEach()` and indexed `for` loops
+- Use optional chaining (`?.`) and nullish coalescing (`??`) for safer property access
+- Prefer template literals over string concatenation
+- Use destructuring for object and array assignments
+- Use `const` by default, `let` only when reassignment is needed, never `var`
+
+### Async & Promises
+
+- Always `await` promises in async functions - don't forget to use the return value
+- Use `async/await` syntax instead of promise chains for better readability
+- Handle errors appropriately in async code with try-catch blocks
+- Don't use async functions as Promise executors
+
+### React & JSX
+
+- Use function components over class components
+- Call hooks at the top level only, never conditionally
+- When a hook dependency rule fires, first check whether the effect is needed, and whether adding the dependency changes when it runs
+- Use the `key` prop for elements in iterables (prefer unique IDs over array indices)
+- Nest children between opening and closing tags instead of passing as props
+- Don't define components inside other components
+- In JSX, work out a multi-way condition in a variable or helper above the `return`, not in a chain of ternaries
+
+### Accessibility
+
+- Use semantic HTML first; add ARIA only when no native element fits
+- Provide meaningful alt text for images
+- Use proper heading hierarchy
+- Add labels for form inputs
+- Make anything clickable a `<button>` or a link, so it works from the keyboard; don't add key handlers to a `<div>`
+- Use semantic elements (`<button>`, `<nav>`, etc.) instead of divs with roles
+
+### Error Handling & Debugging
+
+- Remove `console.log`, `debugger`, and `alert` statements from production code
+- Throw `Error` objects with descriptive messages, not strings or other values
+- Use `try-catch` blocks meaningfully - don't catch errors just to rethrow them
+- Prefer early returns over nested conditionals for error cases
+
+### Code Organization
+
+- Keep functions focused and under reasonable cognitive complexity limits
+- Extract complex conditions into well-named boolean variables
+- Use early returns to reduce nesting, and put braces around every `if` body, including a one-line guard
+- Use a single ternary for a choice between two values. For three or more outcomes, use early returns or a lookup; never nest ternaries
+- Group related code together and separate concerns
+- Avoid import cycles; move shared code into a module both sides import
+- Don't leave TODO or FIXME comments in new code. For an existing one, do the task, delete it if it's done, or leave it; never reword it to get past the linter
+
+### Security
+
+- Add `rel="noopener noreferrer"` when using `target="_blank"` on links
+- Avoid `dangerouslySetInnerHTML` unless absolutely necessary
+- Don't use `eval()` or assign directly to `document.cookie`
+- Validate and sanitize user input
+
+### Performance
+
+- Avoid spread syntax in accumulators within loops
+- Use top-level regex literals instead of creating them in loops
+- Avoid barrel files (index files that only re-export other modules) inside an app; a package's entry point is fine
+- Use proper image components (e.g., Next.js `<Image>`) over `<img>` tags
+
+### Framework-Specific Guidance
+
+**Next.js:**
+
+- Use Next.js `<Image>` component for images
+- Use `next/head` or App Router metadata API for head elements
+- Use Server Components for async data fetching instead of async Client Components
+
+**React 19+:**
+
+- Use ref as a prop instead of `React.forwardRef`
+
+**Solid/Svelte/Vue/Qwik:**
+
+- Use `class` and `for` attributes (not `className` or `htmlFor`)
+
+---
+
+## Testing
+
+- Write assertions inside `it()` or `test()` blocks
+- Avoid done callbacks in async tests - use async/await instead
+- Don't use `.only` or `.skip` in committed code
+- Keep test suites reasonably flat - avoid excessive `describe` nesting
+
+## When Oxlint + Oxfmt Can't Help
+
+Oxlint + Oxfmt will catch most mechanical issues automatically. Focus your attention on:
+
+1. **Business logic correctness** - Oxlint + Oxfmt can't validate your algorithms
+2. **Meaningful naming** - Use descriptive names for functions, variables, and types
+3. **Architecture decisions** - Component structure, data flow, and API design
+4. **Edge cases** - Handle boundary conditions and error states
+5. **User experience** - Accessibility, performance, and usability considerations
+6. **Documentation** - Add comments for complex logic, but prefer self-documenting code
+
+---
+
+Most formatting and common issues are automatically fixed by Oxlint + Oxfmt. Run `pnpm exec ultracite fix` before committing to ensure compliance.

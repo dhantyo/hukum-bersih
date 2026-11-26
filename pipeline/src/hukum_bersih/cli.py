@@ -4,6 +4,8 @@
     build-akn        Bluebell text in data/ -> Akoma Ntoso XML (+ amendment JSON) for the website
     import-bpk       import regulations from peraturan.bpk.go.id, recording every PDF's sha256
     relations        link amending / revoking / enacting laws; versions of amended laws
+    export-corpus    write the web corpus (JSON the website reads) from data/ into a folder
+    release          publish a corpus folder as a release the website reads, or switch the live one
     import-pdf       record and convert hand-downloaded PDFs (uploads.py)
     manifest         print a manifest entry for a local file
     reparse-bpk      re-convert texts from the PDFs on archive.org (read only)
@@ -14,6 +16,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sys
 import time
 from collections.abc import Callable, Iterable
 from pathlib import Path
@@ -71,6 +74,30 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("reparse-bpk", help="re-convert texts from the BPK PDFs archived on archive.org")
     p.add_argument("--only", default="", help="comma-separated ids")
     p.add_argument("--limit", type=int, default=0)
+
+    p = sub.add_parser("export-corpus", help="write the web corpus from data/ into a folder")
+    p.add_argument("stage", type=Path, nargs="?",
+                   help="the folder to write (created if missing); without it, --publish "
+                   "writes into a temporary folder that is deleted afterwards")
+    p.add_argument("--publish", type=Path, metavar="CORPUS", default=None,
+                   help="then publish the stage into this corpus folder (`release publish`)")
+    p.add_argument("--public", type=Path, metavar="DIR", default=None,
+                   help="with --publish: also write the active release's law catalog and search "
+                        "index into this public folder (web-solid/public), and drop older "
+                        "releases from it")
+
+    p = sub.add_parser("release", help="publish a corpus stage as a release, or switch the "
+                       "active one")
+    corpus_help = "the corpus folder (HUKUM_CORPUS_DIR); default: that variable"
+    corpus_default = os.environ.get("HUKUM_CORPUS_DIR") or None
+    rel = p.add_subparsers(dest="action", required=True)
+    q = rel.add_parser("publish", help="store a stage as a release and make it active; "
+                       "prints the release id")
+    q.add_argument("stage", type=Path, help="a folder written by export-corpus")
+    q.add_argument("--corpus", type=Path, default=corpus_default, help=corpus_help)
+    q = rel.add_parser("activate", help="make an already stored release the active one")
+    q.add_argument("release", help="a release id printed by `release publish`")
+    q.add_argument("--corpus", type=Path, default=corpus_default, help=corpus_help)
 
     sub.add_parser("relations", help="recompute amends/revokes/enacts links between regulations")
 
@@ -208,6 +235,33 @@ def main(argv: list[str] | None = None) -> int:
 
         print(build(args.data_dir))
         print(build_history(args.data_dir))     # versions and changes of amended laws (0010)
+        return 0
+
+    if args.command == "export-corpus":
+        from .corpus.export import export_corpus
+
+        if args.stage is None and args.publish is None:
+            parser.error("export-corpus needs a stage folder or --publish CORPUS")
+        if args.public is not None and args.publish is None:
+            parser.error("--public needs --publish")
+        for line in export_corpus(args.data_dir, args.stage, args.publish, args.public):
+            print(line)
+        return 0
+
+    if args.command == "release":
+        from .corpus import release
+
+        if args.corpus is None:
+            parser.error("release needs --corpus or HUKUM_CORPUS_DIR")
+        try:
+            if args.action == "publish":
+                print(release.publish(args.stage, args.corpus))
+            else:
+                release.activate(args.release, args.corpus)
+                print(args.release)
+        except release.ReleaseError as error:
+            print(f"release: {error}", file=sys.stderr)
+            return 1
         return 0
 
     if args.command == "manifest":

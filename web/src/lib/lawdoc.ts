@@ -46,7 +46,7 @@ function toNode(el: Element): AknNode {
     return node;
   }
   for (const child of elements(el)) {
-    const tag = child.localName;
+    const tag = child.localName ?? child.tagName;
     if (tag === "num") node.num = textOf(child);
     else if (tag === "heading") node.heading = textOf(child);
     else if (CONTAINERS.has(tag)) node.children.push(toNode(child));

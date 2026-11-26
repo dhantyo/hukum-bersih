@@ -1,0 +1,59 @@
+:root {
+  --font-ui: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-source-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-literata: "Literata", Georgia, serif;
+  --font-atkinson: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+}
+
+/* Bare elements, which StyleX cannot style. The sizes are the `size` and `space` tokens of
+   tokens.stylex.ts written out (DESIGN.md "Typography"); they sit in the `reset` layer so that any StyleX rule wins over them. */
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  h1 {
+    font-size: 2rem;
+    letter-spacing: -0.01em;
+    margin: 0.5rem 0 1rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    margin: 3rem 0 1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  p {
+    margin: 0 0 1rem;
+    text-wrap: pretty;
+  }
+
+  strong,
+  b {
+    font-weight: 600;
+  }
+
+  ::placeholder {
+    opacity: 1;
+  }
+}
+
+@stylex;

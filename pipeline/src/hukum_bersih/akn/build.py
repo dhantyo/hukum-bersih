@@ -4,9 +4,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
-import yaml
-
 from ..records import load_record
+from ..yamlio import load_yaml
 
 LANGUAGE = "ind"
 
@@ -16,14 +15,15 @@ class LeakedMarkupError(ValueError):
     POINT/PARA indented at the wrong depth)."""
 
 
-def to_akn(text: str, frbr_uri: str, root: str = "act", expression_date: str | None = None,
-           title: str | None = None, work_date: str | None = None) -> bytes:
-    """``work_date``: the full date of the Work (a law's tanggal penetapan). cobalt fills the
+def to_akn_tree(text: str, frbr_uri: str, root: str = "act", expression_date: str | None = None,
+                title: str | None = None, work_date: str | None = None):
+    """The Akoma Ntoso document as an lxml element (``to_akn`` writes it out).
+
+    ``work_date``: the full date of the Work (a law's tanggal penetapan). cobalt fills the
     Work's FRBRdate with the URI's bare year ("2009"), which the AKN 3.0 schema rejects
     (scripts/validate_akn.py); without a full date the year stays."""
     from bluebell.parser import AkomaNtosoParser
     from cobalt import FrbrUri
-    from lxml import etree
 
     uri = FrbrUri.parse(frbr_uri)
     uri.language = LANGUAGE
@@ -40,6 +40,15 @@ def to_akn(text: str, frbr_uri: str, root: str = "act", expression_date: str | N
         for alias in xml.iter("{*}FRBRalias"):
             if alias.get("name") == "title":
                 alias.set("value", title)
+    return xml
+
+
+def to_akn(text: str, frbr_uri: str, root: str = "act", expression_date: str | None = None,
+           title: str | None = None, work_date: str | None = None) -> bytes:
+    """The Akoma Ntoso XML of one Bluebell text; the arguments are those of ``to_akn_tree``."""
+    from lxml import etree
+
+    xml = to_akn_tree(text, frbr_uri, root, expression_date, title, work_date)
     return etree.tostring(xml, encoding="utf-8", pretty_print=True, xml_declaration=True)
 
 
@@ -62,21 +71,25 @@ def ruu_frbr_uri(slug: str, doc_date: str) -> str:
     return f"/akn/id/bill/{doc_date[:4]}/{slug}"
 
 
+def ruu_akn_args(slug: str, rec: dict, doc: dict) -> dict:
+    """The arguments of ``to_akn`` and ``to_akn_tree`` (after the text) for one RUU version."""
+    date = str(doc["date"])
+    full_date = date if len(date) == 10 else None
+    return {"frbr_uri": ruu_frbr_uri(slug, date), "root": "bill", "expression_date": full_date,
+            "title": doc.get("ruu_title") or rec["title"], "work_date": full_date}
+
+
 def build_ruu(data_dir: Path, out_dir: Path) -> list[Path]:
     """Generate Akoma Ntoso XML for every RUU version that has text."""
     written = []
     for record in sorted((data_dir / "ruu").glob("*/ruu.yaml")):
         slug = record.parent.name
-        rec = yaml.safe_load(record.read_text())
+        rec = load_yaml(record.read_text())
         for doc in rec.get("documents", []):
             if not doc.get("text"):
                 continue
             text = (record.parent / doc["text"]).read_text()
-            date = str(doc["date"])
-            full_date = date if len(date) == 10 else None
-            xml = to_akn(text, ruu_frbr_uri(slug, date), root="bill",
-                         expression_date=full_date, title=doc.get("ruu_title") or rec["title"],
-                         work_date=full_date)
+            xml = to_akn(text, **ruu_akn_args(slug, rec, doc))
             target = out_dir / "ruu" / slug / f"{doc['id']}.xml"
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(xml)

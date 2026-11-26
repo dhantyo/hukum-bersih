@@ -9,7 +9,7 @@ La Fabrique de la Loi (looked at 2026-11-21): metadata panel beside the text, br
 version timeline, table of contents, prominent search, white page, one link color, status
 colors. Not copied: no logos, crests or brand assets of those sites.
 
-Tokens live in `web/src/styles/tokens.css`; components use the names, never raw values.
+Tokens live in `web/src/styles/tokens.css`; components use the names, never raw values. The Solid app (`web-solid/`) keeps the same values as literal StyleX tokens in `web-solid/src/styles/tokens.stylex.ts`; change both together until the Astro app is retired.
 
 ## Color
 
@@ -71,23 +71,26 @@ anchored on the text (see "Law text").
 
 4px base: `--s-1` 4, `--s-2` 8, `--s-3` 12, `--s-4` 16, `--s-5` 24, `--s-6` 32, `--s-7` 48,
 `--s-8` 64; `--s-0` 2 only for the vertical padding of pills. `--tap` 44px: minimum size of
-anything tapped (buttons, the "Aa" control). Page width 72rem (`--page`; 100rem `--page-wide` while comparing versions); reading column 42rem; side panel 17rem; hanging numbers 2.4rem (`--hang`, 1.9rem `--hang-sm` on phones). Phone gutter 16px.
+anything tapped (buttons, the "Aa" control). Page width 72rem (`--page`; 100rem `--page-wide` while comparing versions); reading column 42rem; side panel 17rem by default; hanging numbers 2.4rem (`--hang`, 1.9rem `--hang-sm` on phones). Phone gutter 16px.
 
 Document pages: breadcrumbs, title block, then two columns: side panel (Versi, table of
 contents, facts; sticky) and the text (`components/DocLayout.astro`). On wide screens the
-reader can hide the panel ("Sembunyikan"): a slim strip with a "›" button stays and the text
-column centres; remembered (`hb-panel`, applied before first paint). Up to 960px the panel is a
+reader can drag the divider to resize the panel, or hide it ("Sembunyikan", Enter on the divider,
+or dragging it narrower than its minimum): a slim strip with a "›" button stays and the text
+column centres. The width starts at 17rem and stays between 13rem and 24rem (the text keeps
+its measure); the width and the hidden state are remembered (`hb-panel-width`, `hb-panel`,
+applied before first paint). Up to 960px the panel is a
 drawer from the left over the text (`--scrim` behind it), opened from a slim chevron tab on the
 left edge (16px wide, 44px touch target): tap it, or pull it right and the drawer follows the
 finger; push the drawer left to close. Past a third of its width or a flick it opens / closes,
 otherwise it goes back. Escape, the scrim or a link also close it; the page behind is inert.
 
-The site header follows the scroll like a phone browser's address bar (behaviour from Sapu
-Berita, `lib/barscroll.ts`): scrolling down it leaves with the page, scrolling up it comes back
-by the distance scrolled up, and 140ms after the scroll stops a half-shown header settles fully
-shown or hidden (0.24s ease-out; shown if the last movement was up). The browser moves it like
-the text (it sits in the page, or is fixed at the top when fully back), never script per frame,
-which lags the page on phones. It stays while "Aa" is open or focus is in it, and tucks away
+The site header follows the scroll. At the top of the page it sits in its place and scrolls away
+with the page. Further down, the first step down slides it away and the first step up slides it
+back in whole (0.24s ease-out), however small the step: one motion each way, never a header
+half shown by the scroll and then snapped. (The Astro site, `web/src/lib/barscroll.ts`, brought
+it back by the distance scrolled and settled a half-shown header after 140ms; a short wheel step
+showed it half, then full.) Script only switches its mode; the browser runs the slide. It stays while "Aa" is open or focus is in it, and tucks away
 after a jump within the page. Sticky things below it (side panel, comparison bar) sit at
 `--header-shown`: its height while pinned, else 0.
 
@@ -124,8 +127,8 @@ separating.
 - **Fact list** (side panel): label above value, `--fs-sm`.
 - **Table of contents**: BAB headings with their pasal range; current item marked with
   `--primary` left border. The BAB being read opens to a grid of its pasal numbers (the pasal in
-  view on `--primary-bg`); laws without BAB show the grid of all pasal. A "Ke pasal" field jumps
-  to `#pasal-<n>`.
+  view on `--primary-bg`); laws without BAB show the grid of all pasal. A "Ke pasal" box lists the pasal
+  whose number starts with what is typed; picking one jumps to `#pasal-<n>`.
 - **Law text**: serif, hanging numbers for ayat/huruf/angka. Two formats, chosen by the reader
   ([decision 0009](docs/decisions/0009-law-view-asli-modern.md)); the text is the same, only
   the layout changes:

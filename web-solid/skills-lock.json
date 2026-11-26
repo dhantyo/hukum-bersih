@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "skills": {
+    "agent-loops": {
+      "source": "solidjs/solid",
+      "commit": "e847ed1bcbd36e74ef76d1924371b4135471ea72",
+      "sourceType": "github",
+      "skillPath": "packages/diagnostics/skills/agent-loops/SKILL.md",
+      "computedHash": "8577c82ea98108b32b88ade02aaecbddb21a278166638eac2e679c6855574412"
+    },
+    "reactivity-diagnostics": {
+      "source": "solidjs/solid",
+      "commit": "e847ed1bcbd36e74ef76d1924371b4135471ea72",
+      "sourceType": "github",
+      "skillPath": "packages/solid/skills/reactivity-diagnostics/SKILL.md",
+      "computedHash": "75d737cb83c842dd69ab6b64395710c131e4312b294d0211123840bd063f7bea"
+    },
+    "server-components": {
+      "source": "solidjs/solid",
+      "commit": "e847ed1bcbd36e74ef76d1924371b4135471ea72",
+      "sourceType": "github",
+      "skillPath": "packages/web/skills/server-components/SKILL.md",
+      "computedHash": "3fea3c3443b4c56a0e405e50626c576b7f9398a19599c1b2dc54843ce02c49b0"
+    },
+    "solid-2.0": {
+      "source": "solidjs/solid",
+      "commit": "e847ed1bcbd36e74ef76d1924371b4135471ea72",
+      "sourceType": "github",
+      "skillPath": "packages/solid/skills/solid-2.0/SKILL.md",
+      "computedHash": "634a7ed28608d53a06256221f631c58932b8382dc56ae7a7101bf96e0b8fdf38"
+    },
+    "stylex": {
+      "source": "thejustinwalsh/three-flatland",
+      "commit": "5a92e0d56d9a8227394d14f8ea6801a56021b5e6",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/stylex/SKILL.md",
+      "computedHash": "b851cd909a38364b1965e705bff1c304bf39777a3fab2bf9b2e8e53cb9d62def"
+    },
+    "ui-sdk": {
+      "source": "vercel-labs/ui",
+      "commit": "d5c6249e1a0b1df47334d3012180bfba9b9374ec",
+      "sourceType": "github",
+      "skillPath": "packages/core/skills/ui-sdk/SKILL.md",
+      "computedHash": "1af8b09475fd1c8784489c4c1099eb167e28297c344e1102fb017ca07ce74d00"
+    },
+    "ultracite": {
+      "source": "haydenbleasel/ultracite",
+      "commit": "f5c8af0411ddb96114780f5f768d2abd6bd22f7e",
+      "sourceType": "github",
+      "skillPath": "skills/ultracite/SKILL.md",
+      "computedHash": "52eac7a3ac5f3117d8d70f1058eed56403e9755fc93e0ba944c4c501fa560ba6"
+    }
+  }
+}

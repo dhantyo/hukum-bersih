@@ -82,7 +82,7 @@ export function mergedDoc(k: Koleksi, pointId: string): Merged | undefined {
   const original = loadRegulationText(k.base);
   const upTo = h?.points.findIndex((p) => p.id === pointId) ?? -1;
   if (!h || !original || upTo < 1) return undefined;
-  const base = import.meta.env.BASE_URL;
+  const base = import.meta.env?.BASE_URL ?? "/";
   const doc: LawDoc = { ...original, body: original.body.map(clone), pasal: [], penjelasanPasal: original.penjelasanPasal };
   const notes = new Map<string, MergeNote[]>();
   const unreadable = new Set<string>();

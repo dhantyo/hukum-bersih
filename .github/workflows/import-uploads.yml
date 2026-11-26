@@ -18,7 +18,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: import-peraturan        # never at the same time as the importer: both write data/
+  group: import-peraturan # never at the same time as the importer: both write data/
   cancel-in-progress: false
 
 jobs:
@@ -26,10 +26,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     env:
-      HUKUM_BERSIH_OCR_CACHE: /home/runner/ocr-cache      # raw OCR of scanned pages, kept between runs (.github/actions/ocr-cache)
+      HUKUM_BERSIH_OCR_CACHE: /home/runner/ocr-cache # raw OCR of scanned pages, kept between runs (.github/actions/ocr-cache)
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v6
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
       - uses: ./.github/actions/ocr-cache
         with:
           step: restore

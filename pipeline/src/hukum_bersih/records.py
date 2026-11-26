@@ -16,6 +16,8 @@ from typing import Annotated, Literal
 import yaml
 from pydantic import BaseModel, ConfigDict, Field, StringConstraints
 
+from .yamlio import load_yaml
+
 # YYYY-MM-DD, as a string (yaml.safe_dump quotes it, so it loads back as a string)
 Date = Annotated[str, StringConstraints(pattern=r"^\d{4}-\d{2}-\d{2}$")]
 
@@ -225,7 +227,7 @@ def dump_record(rec: dict) -> str:
 def load_record(path: Path) -> dict:
     """Read a record file as a dict; raises if it does not fit the schema."""
     try:
-        return validate_record(yaml.safe_load(Path(path).read_text()))
+        return validate_record(load_yaml(Path(path).read_text()))
     except ValueError as e:                  # pydantic.ValidationError is a ValueError
         raise ValueError(f"{path}: {e}") from e
 

@@ -2,7 +2,7 @@
 // DESIGN.md "Law text"). The stored text never changes: Modern only shows headings in normal
 // capitals and Penjelasan labels in the body's style.
 import type { AknNode } from "./lawdoc.ts";
-import { judul } from "./peraturan.ts";
+import { judul } from "./title.ts";
 
 /** Headings in normal capitals for Modern: "KETENTUAN UMUM" -> "Ketentuan Umum". Text that is
  * not written in capitals is left as it is. */
