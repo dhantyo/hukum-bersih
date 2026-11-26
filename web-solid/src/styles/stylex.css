@@ -1,10 +1,8 @@
 :root {
-  --font-ui:
-    "Public Sans Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-source-serif:
-    "Source Serif 4 Variable", Georgia, "Times New Roman", serif;
-  --font-literata: "Literata Variable", Georgia, serif;
-  --font-atkinson: "Atkinson Hyperlegible Next Variable", system-ui, sans-serif;
+  --font-ui: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-source-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-literata: "Literata", Georgia, serif;
+  --font-atkinson: "Atkinson Hyperlegible Next", system-ui, sans-serif;
 }
 
 /* Bare elements, which StyleX cannot style. The sizes are the `size` and `space` tokens of

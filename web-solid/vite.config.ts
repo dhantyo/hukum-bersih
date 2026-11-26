@@ -4,42 +4,20 @@ import { fontless } from "fontless";
 import { defineConfig } from "vitest/config";
 
 const FONT_STACKS = [
-  {
-    family: "Public Sans Variable",
-    package: "@fontsource-variable/public-sans",
-    version: "5.3.0",
-    preload: true,
-  },
-  {
-    family: "Atkinson Hyperlegible Next Variable",
-    package: "@fontsource-variable/atkinson-hyperlegible-next",
-    version: "5.3.0",
-    preload: true,
-  },
-  {
-    family: "Source Serif 4 Variable",
-    package: "@fontsource-variable/source-serif-4",
-    version: "5.3.1",
-    preload: false,
-  },
-  {
-    family: "Literata Variable",
-    package: "@fontsource-variable/literata",
-    version: "5.3.0",
-    preload: false,
-  },
+  { family: "Public Sans", preload: true },
+  { family: "Atkinson Hyperlegible Next", preload: true },
+  { family: "Source Serif 4", preload: false },
+  { family: "Literata", preload: false },
 ] as const;
 
 export default defineConfig({
   plugins: [
     fontless({
-      families: FONT_STACKS.map(({ family, preload, ...npm }) => ({
+      families: FONT_STACKS.map(({ family, preload }) => ({
         name: family,
-        provider: "npm" as const,
-        providerOptions: { npm },
+        provider: "google",
         preload,
       })),
-      npm: { remote: true },
       defaults: { weights: ["100 900"], styles: ["normal"] },
       assets: { prefix: "/assets/_fonts" },
     }),

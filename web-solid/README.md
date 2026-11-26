@@ -4,7 +4,7 @@ The Solid 2 rewrite serves law pages on demand. Public law data and Pagefind ass
 
 ## Run locally
 
-Use the Node.js version in `.node-version` and the pnpm version in `package.json`. From this directory run `pnpm install --frozen-lockfile`. The first build downloads the pinned web fonts from the jsDelivr npm CDN and caches them in `node_modules/.cache/fontless`, so it needs network access. The app imports nothing from the Astro project in `../web`.
+Use the Node.js version in `.node-version` and the pnpm version in `package.json`. From this directory run `pnpm install --frozen-lockfile`. The first build downloads the web fonts from Google Fonts and caches them in `node_modules/.cache/fontless`, so it needs network access. The app imports nothing from the Astro project in `../web`.
 
 The corpus is not built here. The pipeline writes it from `data/`, in one command from `pipeline/`:
 
