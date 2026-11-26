@@ -4,9 +4,11 @@ import { Input, InputClear, InputGroup } from "@ui-sdk/solid/input";
 import { createSignal, For, isPending, Show } from "solid-js";
 import * as v from "valibot";
 
+import { spanEntries } from "../lib/compare-span.ts";
+import type { SpanEntry } from "../lib/compare-span.ts";
 import type { Comparison } from "../lib/compare.ts";
-import { pasalKey } from "../lib/display.ts";
 import { compareSearch } from "../lib/schemas.ts";
+import type { ReaderText } from "../server/records/reader-text.ts";
 import { slidingColumn } from "../styles/column-slide.ts";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
@@ -16,6 +18,7 @@ import { columnsHref, CompareBar } from "./compare-bar.tsx";
 import { columnsStyle, columnsWidth, PasalBlock } from "./compare-block.tsx";
 import { ComparisonFailure } from "./comparison-failure.tsx";
 import { ScrollRow } from "./scroll-row.tsx";
+import { UnchangedRun } from "./unchanged-run.tsx";
 
 const LEADING_PASAL = /^PASAL\s*/u;
 
@@ -219,9 +222,37 @@ const summaryOf = (count: number, columns: number, pasal: string) => {
     : `Pasal ${pasal} tidak berubah di antara perubahan yang kami punya.`;
 };
 
+const changedRow = (entry: SpanEntry) =>
+  entry.kind === "changed" ? entry.row : undefined;
+
+const sameRun = (entry: SpanEntry) =>
+  entry.kind === "same" ? entry.pasal : undefined;
+
+const GridEntry = (props: { entry: SpanEntry }) => (
+  <>
+    <Show when={changedRow(props.entry)}>
+      {(row) => (
+        <section
+          id={`pasal-${row().key}`}
+          class={css(styles.row)}
+          aria-label={`Pasal ${row().num}`}
+        >
+          <h3 class={css(styles.title)} aria-hidden="true">
+            Pasal {row().num}
+          </h3>
+          <PasalBlock row={row()} labels={[]} fits={false} />
+        </section>
+      )}
+    </Show>
+    <Show when={sameRun(props.entry)}>
+      {(pasal) => <UnchangedRun pasal={pasal()} />}
+    </Show>
+  </>
+);
+
 const Grid = (props: {
   comparison: Comparison;
-  rows: Comparison["rows"];
+  entries: SpanEntry[];
   busy: boolean;
 }) => {
   const columns = () =>
@@ -240,7 +271,7 @@ const Grid = (props: {
       </Show>
       <ScrollRow
         class={css(styles.grid, props.busy && styles.busy)}
-        label="Pasal yang berbeda, satu kolom tiap versi"
+        label="Pasal tiap versi, satu kolom tiap versi"
         minWidth={columnsWidth(props.comparison.chosen.length)}
         head={() => (
           <div
@@ -260,20 +291,7 @@ const Grid = (props: {
           </div>
         )}
       >
-        <For each={props.rows} keyed={(row) => row.num}>
-          {(row) => (
-            <section
-              id={`cmp-pasal-${pasalKey(row().num)}`}
-              class={css(styles.row)}
-              aria-label={`Pasal ${row().num}`}
-            >
-              <h3 class={css(styles.title)} aria-hidden="true">
-                Pasal {row().num}
-              </h3>
-              <PasalBlock row={row()} labels={[]} fits={false} />
-            </section>
-          )}
-        </For>
+        <For each={props.entries}>{(entry) => <GridEntry entry={entry} />}</For>
       </ScrollRow>
     </>
   );
@@ -290,6 +308,9 @@ const Grid = (props: {
 export const CollectionCompare = (props: {
   comparison: Comparison;
   onDemand?: boolean;
+  /** The text of one of the compared versions; the pasal of it that no row names are shown as
+   * unchanged. Without it only the pasal that differ are listed. */
+  text?: ReaderText;
 }) => {
   const location = useLocation();
 
@@ -308,12 +329,11 @@ export const CollectionCompare = (props: {
       ? props.comparison.chosen
       : [first(), last()];
 
-  const rows = () =>
-    pasal() === ""
-      ? props.comparison.rows
-      : props.comparison.rows.filter(
-          (row) => row.num.toUpperCase() === pasal()
-        );
+  const entries = () => spanEntries(props.comparison.rows, props.text, pasal());
+
+  const counted = () =>
+    entries().filter((entry) => pasal() !== "" || entry.kind === "changed")
+      .length;
 
   const shown = () => props.onDemand !== true || props.comparison.requested;
 
@@ -327,14 +347,11 @@ export const CollectionCompare = (props: {
           action="./"
           summary={
             props.comparison.chosen.length > 0
-              ? summaryOf(
-                  rows().length,
-                  props.comparison.chosen.length,
-                  pasal()
-                )
+              ? summaryOf(counted(), props.comparison.chosen.length, pasal())
               : ""
           }
           closable={props.onDemand}
+          onlyChanged={props.text !== undefined}
         >
           <div class={css(styles.tools)}>
             <Presets versions={versions()} pasal={pasal()} />
@@ -352,7 +369,11 @@ export const CollectionCompare = (props: {
           <output>Versi yang diminta tidak dikenal di koleksi ini.</output>
         </Show>
         <Show when={props.comparison.chosen.length > 0}>
-          <Grid comparison={props.comparison} rows={rows()} busy={pending()} />
+          <Grid
+            comparison={props.comparison}
+            entries={entries()}
+            busy={pending()}
+          />
         </Show>
       </div>
     </Show>

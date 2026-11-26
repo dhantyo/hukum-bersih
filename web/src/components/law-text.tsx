@@ -51,6 +51,15 @@ const styles = stylex.create({
   paragraph: { margin: 0, marginBlockEnd: space.s2 },
   alias: { display: "block", scrollMarginBlockStart: space.s4 },
   article: { scrollMarginBlockStart: space.s4 },
+  sameTag: {
+    gap: space.s1,
+    alignItems: "center",
+    color: color.textMuted,
+    display: "inline-flex",
+    fontFamily: font.ui,
+    fontSize: size.xs,
+    marginInlineStart: space.s2,
+  },
   preview: {
     overflow: "hidden",
     color: color.textMuted,
@@ -505,6 +514,7 @@ const ArticleSection = (props: {
   alias?: string;
   notes?: PasalNote[];
   compare?: CompareRow;
+  same: boolean;
   labels: string[];
   first: boolean;
   top: boolean;
@@ -542,6 +552,12 @@ const ArticleSection = (props: {
               <Permalink target={permalink() ?? ""} label={heading()} />
             )}
           </h3>
+          <Show when={props.same}>
+            <span class={css(styles.sameTag)}>
+              <span aria-hidden="true">=</span>
+              tidak berubah, sama di semua versi
+            </span>
+          </Show>
           <span class={css(styles.preview)} aria-hidden="true">
             {preview(props.node)}
           </span>
@@ -687,6 +703,7 @@ interface DocumentNodesProps {
 
 interface CompareIndex {
   labels: string[];
+  ownChosen: boolean;
   blocks: ReadonlyMap<string, CompareRow>;
   after: Readonly<Record<string, CompareRow[]>>;
 }
@@ -753,6 +770,11 @@ const DocumentNode = (
       ? props.comparison?.blocks.get(props.node.num)
       : undefined;
 
+  const same = () =>
+    props.comparison?.ownChosen === true &&
+    alias() !== undefined &&
+    compare() === undefined;
+
   const added = () =>
     (isPresent(props.node.eId)
       ? props.comparison?.after[props.node.eId]
@@ -810,6 +832,7 @@ const DocumentNode = (
           id={id()}
           alias={alias()}
           compare={compare()}
+          same={same()}
           labels={labels()}
           first={props.first}
           top={props.top === true}
@@ -915,6 +938,7 @@ const indexComparison = (comparison: LawComparison) => {
     labels: comparison.chosen.map(
       (id) => comparison.versions.find((entry) => entry.id === id)?.cite ?? id
     ),
+    ownChosen: comparison.chosen.includes(comparison.versions[0]?.id ?? ""),
     blocks: byNumber,
     after: Object.fromEntries(
       Object.entries(comparison.after).map(([eId, nums]) => [
@@ -924,6 +948,11 @@ const indexComparison = (comparison: LawComparison) => {
     ),
   } satisfies CompareIndex;
 };
+
+/** The body of one pasal as the reader shows it, without the heading or the fold. */
+export const PasalText = (props: { node: AknNode }) => (
+  <DocumentNodes nodes={props.node.children} />
+);
 
 export const LawText = (props: {
   text: ReaderText;

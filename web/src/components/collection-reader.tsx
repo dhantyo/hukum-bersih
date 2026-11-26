@@ -6,6 +6,7 @@ import type {
   CollectionComparisonView,
 } from "../lib/collections.ts";
 import { tanggal } from "../lib/labels.ts";
+import { useSpanText } from "../lib/span-text.ts";
 import { isPresent } from "../lib/text.ts";
 import { css } from "../styles/css.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
@@ -67,40 +68,58 @@ const MergedCollection = (props: {
   version: NonNullable<Collection["merged"]>;
   comparison: CollectionComparisonView | null;
   dated: boolean;
-}) => (
-  <DocLayout
-    crumbs={crumbs(props.collection, props.dated)}
-    flushCrumbs
-    eyebrow={`${props.version.baseTitle}, versi gabungan`}
-    title={props.version.title}
-    subtitle={props.collection.named ? props.collection.title : undefined}
-    headMeta={<MergedHeadMeta version={props.version} />}
-    text={props.version.text}
-    comparing={props.comparison?.requested === true}
-    panelLabel="Daftar isi"
-    panel={
-      <>
-        <CollectionVersions
-          versions={props.version.versions}
-          current={props.collection.path}
-          compareHref={
-            props.comparison === null
-              ? undefined
-              : firstToLatestHref(props.comparison)
-          }
+}) => {
+  const spanText = useSpanText(() => ({
+    slug: props.collection.slug,
+    comparison: props.comparison,
+    pageDate: props.version.date,
+    pageText: props.version.text,
+    listed: props.version.versions,
+  }));
+
+  const comparing = () => (props.comparison?.chosen.length ?? 0) > 0;
+
+  return (
+    <DocLayout
+      crumbs={crumbs(props.collection, props.dated)}
+      flushCrumbs
+      eyebrow={`${props.version.baseTitle}, versi gabungan`}
+      title={props.version.title}
+      subtitle={props.collection.named ? props.collection.title : undefined}
+      headMeta={<MergedHeadMeta version={props.version} />}
+      text={props.version.text}
+      comparing={props.comparison?.requested === true}
+      panelLabel="Daftar isi"
+      panel={
+        <>
+          <CollectionVersions
+            versions={props.version.versions}
+            current={props.collection.path}
+            compareHref={
+              props.comparison === null
+                ? undefined
+                : firstToLatestHref(props.comparison)
+            }
+          />
+          <Toc text={props.version.text} />
+          <CollectionFacts facts={props.version.facts} />
+        </>
+      }
+    >
+      <MergedBanner version={props.version} />
+      {props.comparison !== null && (
+        <CollectionCompare
+          comparison={props.comparison}
+          onDemand
+          text={spanText()}
         />
-        <Toc text={props.version.text} />
-        <CollectionFacts facts={props.version.facts} />
-      </>
-    }
-  >
-    <MergedBanner version={props.version} />
-    {props.comparison !== null && (
-      <CollectionCompare comparison={props.comparison} onDemand />
-    )}
-    <LawText text={props.version.text} notes={props.version.notes} />
-  </DocLayout>
-);
+      )}
+      <Show when={!comparing()}>
+        <LawText text={props.version.text} notes={props.version.notes} />
+      </Show>
+    </DocLayout>
+  );
+};
 
 export const CollectionReader = (props: {
   collection: Collection;
