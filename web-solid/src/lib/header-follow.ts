@@ -1,7 +1,5 @@
-import { settledBarOffset, shownPx, step } from "./bar-scroll.ts";
-import type { HeaderState } from "./bar-scroll.ts";
-
-const SETTLE_MS = 140;
+import { shownPx, step } from "./bar-scroll.ts";
+import type { HeaderMode } from "./bar-scroll.ts";
 
 const VAR_NAME = /^var\((?<name>--[^),\s]+)/u;
 
@@ -27,21 +25,19 @@ export const followHeader = (
   const currentTop = () =>
     Math.min(Math.max(0, scrollY), Math.max(0, maxTop()));
 
-  let state: HeaderState = { mode: "free", y: 0 };
+  let mode: HeaderMode = "free";
   let lastTop = 0;
-  let direction = 0;
   let frame = 0;
   let height = 0;
   let following = false;
   let covered = -1;
-  let settle: ReturnType<typeof setTimeout> | undefined;
 
   const held = () =>
     header.querySelector('[aria-expanded="true"]') !== null ||
     header.contains(document.activeElement);
 
   const publishCovered = () => {
-    const px = state.mode === "pinned" ? height : 0;
+    const px = mode === "pinned" ? height : 0;
 
     if (px === covered || offsetName === undefined) {
       return;
@@ -51,63 +47,31 @@ export const followHeader = (
     root.style.setProperty(offsetName, `${px}px`);
   };
 
-  const shiftOf = (current: HeaderState) => {
-    if (current.mode === "free") {
-      return current.y;
-    }
-
-    return current.mode === "hidden" ? -height : 0;
-  };
-
   const draw = (from?: number) => {
-    header.dataset.mode = state.mode;
-    header.inert = state.mode === "hidden";
+    header.dataset.mode = mode;
+    header.inert = mode === "hidden";
 
-    if (from !== undefined && state.mode !== "free") {
+    if (from !== undefined && mode !== "free") {
       header.style.transition = "none";
       header.style.transform = `translateY(${-from}px)`;
       header.getBoundingClientRect();
       header.style.removeProperty("transition");
     }
 
-    header.style.transform = `translateY(${shiftOf(state)}px)`;
+    header.style.transform = `translateY(${mode === "hidden" ? -height : 0}px)`;
     publishCovered();
   };
 
-  const enter = (next: HeaderState) => {
-    const from = height - shownPx(state, lastTop, height);
-    state = next;
+  const enter = (next: HeaderMode) => {
+    const from = height - shownPx(mode, lastTop, height);
+    mode = next;
     draw(from);
   };
 
-  const moveTo = (mode: "pinned" | "hidden") => {
-    enter({ mode });
-  };
-
   const pinIfAway = () => {
-    if (state.mode !== "pinned" && lastTop > 0) {
-      moveTo("pinned");
+    if (mode !== "pinned" && lastTop > 0) {
+      enter("pinned");
     }
-  };
-
-  const settleHalfHidden = () => {
-    if (state.mode !== "free") {
-      return;
-    }
-
-    const shown = shownPx(state, lastTop, height);
-    const placed = shown === height && lastTop === state.y;
-    const atTop = lastTop <= height && state.y === 0;
-
-    if (shown === 0 || placed || atTop) {
-      return;
-    }
-
-    moveTo(
-      settledBarOffset(height - shown, lastTop, height, direction) === 0
-        ? "pinned"
-        : "hidden"
-    );
   };
 
   const follow = () => {
@@ -118,31 +82,12 @@ export const followHeader = (
       return;
     }
 
-    direction = Math.sign(top - lastTop);
-
-    if (held()) {
-      lastTop = top;
-
-      if (state.mode !== "pinned") {
-        moveTo("pinned");
-      }
-
-      return;
-    }
-
-    const next = step(state, lastTop, top, height);
+    const next = held() ? "pinned" : step(mode, lastTop, top, height);
     lastTop = top;
 
-    const moved =
-      next.mode !== state.mode ||
-      (next.mode === "free" && state.mode === "free" && next.y !== state.y);
-
-    if (moved) {
+    if (next !== mode) {
       enter(next);
     }
-
-    clearTimeout(settle);
-    settle = setTimeout(settleHalfHidden, SETTLE_MS);
   };
 
   const onScroll = () => {
@@ -156,7 +101,7 @@ export const followHeader = (
       lastTop = Math.max(0, scrollY);
 
       if (lastTop > height) {
-        moveTo("hidden");
+        enter("hidden");
       }
     });
   };
@@ -190,7 +135,6 @@ export const followHeader = (
     header.removeEventListener("focusin", pinIfAway);
     observer.disconnect();
     cancelAnimationFrame(frame);
-    clearTimeout(settle);
     slot.style.removeProperty("height");
     delete header.dataset.mode;
     header.inert = false;
