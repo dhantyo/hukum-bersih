@@ -467,6 +467,7 @@ export const CompareBar = (props: {
       class={css(styles.root, props.sticky === true && styles.sticky)}
       aria-labelledby="cmp-title"
       data-cmp-bar
+      data-under-header
     >
       <div class={css(styles.top)}>
         <h2 id="cmp-title" class={css(styles.title)}>

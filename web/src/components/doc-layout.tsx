@@ -598,6 +598,7 @@ const PanelGroup = (props: {
         maxSize={rem(PANEL_REM.max)}
         collapsible
         collapsedSize={rem(PANEL_REM.collapsed)}
+        data-under-header
       >
         <Show when={!props.tablet}>
           <div class={css(styles.rail)}>
