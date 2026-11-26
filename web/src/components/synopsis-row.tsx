@@ -21,9 +21,6 @@ const STATUS_STYLE = {
   dihapus: styles.statusDihapus,
 } as const;
 
-const oldKindOf = (kind: Kind) => (kind === "diganti" ? "dihapus" : kind);
-const newKindOf = (kind: Kind) => (kind === "diganti" ? "baru" : kind);
-
 const memo = <Key extends string>(build: (key: Key) => string | undefined) => {
   const cache = new Map<Key, string | undefined>();
 
@@ -41,8 +38,8 @@ const oldLineClass = memo((kind: Kind) =>
     reading.law,
     styles.line,
     styles.sideLine,
-    oldKindOf(kind) === "dihapus" && styles.removed,
-    oldKindOf(kind) === "baru" && styles.ghost
+    kind === "dihapus" && styles.removed,
+    kind === "baru" && styles.ghost
   )
 );
 
@@ -51,8 +48,8 @@ const newLineClass = memo((kind: Kind) =>
     reading.law,
     styles.line,
     styles.sideLine,
-    newKindOf(kind) === "baru" && styles.added,
-    newKindOf(kind) === "dihapus" && styles.ghost
+    kind === "baru" && styles.added,
+    kind === "dihapus" && styles.ghost
   )
 );
 
@@ -108,7 +105,7 @@ const OldLine = (props: {
   line: DraftComparisonLine;
   versions: Record<Side, string>;
 }) => {
-  const kind = () => oldKindOf(props.line.kind);
+  const kind = () => props.line.kind;
 
   return (
     <div
@@ -152,7 +149,7 @@ const NewLine = (props: {
   line: DraftComparisonLine;
   versions: Record<Side, string>;
 }) => {
-  const kind = () => newKindOf(props.line.kind);
+  const kind = () => props.line.kind;
 
   return (
     <div
@@ -220,27 +217,18 @@ const InlineLine = (props: {
       </Show>
       <span class={textClass(number() !== undefined)}>
         <span class={removed() ? struckClass : undefined}>
-          <Show
-            when={props.line.kind === "diganti"}
-            fallback={
-              <For each={props.line.parts}>
-                {(part) => (
-                  <Show when={part.added || part.removed} fallback={part.value}>
-                    <Show
-                      when={part.added}
-                      fallback={<del class={delMark()}>{part.value}</del>}
-                    >
-                      <ins class={insMark()}>{part.value}</ins>
-                    </Show>
-                  </Show>
-                )}
-              </For>
-            }
-          >
-            <del class={delMark()}>{props.line.parts[0]?.value}</del>
-            <br />
-            <ins class={insMark()}>{props.line.parts[1]?.value}</ins>
-          </Show>
+          <For each={props.line.parts}>
+            {(part) => (
+              <Show when={part.added || part.removed} fallback={part.value}>
+                <Show
+                  when={part.added}
+                  fallback={<del class={delMark()}>{part.value}</del>}
+                >
+                  <ins class={insMark()}>{part.value}</ins>
+                </Show>
+              </Show>
+            )}
+          </For>
         </span>
         <Reference line={props.line} versions={props.versions} />
       </span>

@@ -188,7 +188,7 @@ describe(compareColumns, () => {
   it("pairs lines by number where the pair carries them so", () => {
     const byPosition = changed("4", [
       {
-        kind: "diganti",
+        kind: "berubah",
         a: side("(1)"),
         b: side("(2)"),
         parts: [part("lama", false, true), part("baru", true)],
