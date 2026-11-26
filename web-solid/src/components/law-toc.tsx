@@ -1,15 +1,15 @@
 import * as stylex from "@stylexjs/stylex";
 import { For, onSettled, Show } from "solid-js";
 
+import type { LawComparison, Mark } from "../lib/compare.ts";
 import { modernHeading, pasalKey } from "../lib/display.ts";
 import { isPresent } from "../lib/text.ts";
-import type { Mark, VersionComparison } from "../server/law-comparison.ts";
 import type { AknNode, ReaderText } from "../server/records/reader-text.ts";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
 import { panel } from "../styles/panel.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
-import { MarkIcon } from "./law-compare.tsx";
+import { MarkIcon } from "./compare-block.tsx";
 import { setAllFolds } from "./law-fold.tsx";
 import { PasalJump } from "./pasal-jump.tsx";
 
@@ -179,11 +179,9 @@ const range = (cells: Cell[]) => {
 const cellsOf = (
   nodes: AknNode[],
   anchors: ReaderText["anchors"],
-  comparison: VersionComparison | undefined
+  comparison: LawComparison | undefined
 ) => {
-  const marks = new Map(
-    comparison?.changed.map((block) => [block.num, block.mark])
-  );
+  const marks = new Map(comparison?.rows.map((row) => [row.num, row.mark]));
 
   return nodes
     .filter((node) => isPresent(node.num))
@@ -251,7 +249,7 @@ const PasalGrid = (props: { cells: Cell[]; label: string }) => (
 const Chapter = (props: {
   chapter: AknNode;
   anchors: ReaderText["anchors"];
-  comparison?: VersionComparison;
+  comparison?: LawComparison;
 }) => {
   const cells = () =>
     cellsOf(articles(props.chapter), props.anchors, props.comparison);
@@ -394,7 +392,7 @@ const followReading = (toc: HTMLElement) => {
 
 export const Toc = (props: {
   text: ReaderText;
-  comparison?: VersionComparison;
+  comparison?: LawComparison;
 }) => {
   let toc: HTMLElement | undefined;
 

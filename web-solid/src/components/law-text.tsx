@@ -9,6 +9,7 @@ import {
   elementId,
   EXPLANATION_ID,
 } from "../lib/anchors.ts";
+import type { CompareRow, LawComparison } from "../lib/compare.ts";
 import {
   cukupJelas,
   modernHeading,
@@ -18,17 +19,13 @@ import {
 } from "../lib/display.ts";
 import { format, penjelasan } from "../lib/reading-preferences.ts";
 import { isPresent } from "../lib/text.ts";
-import type {
-  ChangedPasal,
-  VersionComparison,
-} from "../server/law-comparison.ts";
 import type { AknNode, ReaderText } from "../server/records/reader-text.ts";
 import { css } from "../styles/css.ts";
 import { linkClass } from "../styles/link.ts";
 import { fold, foldHead } from "../styles/markers.stylex.ts";
 import { reading } from "../styles/reading.ts";
 import { color, font, media, size, space } from "../styles/tokens.stylex.ts";
-import { AddedPasal, PasalComparison } from "./law-compare.tsx";
+import { AddedPasal, PasalBlock } from "./compare-block.tsx";
 import { Fold, FoldChevron, Permalink, useFolds } from "./law-fold.tsx";
 
 const CLOSED = ":not([open])";
@@ -485,7 +482,7 @@ const ArticleNotes = (props: {
                   {" ("}
                   <a
                     class={linkClass}
-                    href={`?bandingkan=${note.by}#pasal-${pasalKey(props.num)}`}
+                    href={`?v=${note.by}#pasal-${pasalKey(props.num)}`}
                   >
                     bandingkan
                   </a>
@@ -507,8 +504,8 @@ const ArticleSection = (props: {
   id?: string;
   alias?: string;
   notes?: PasalNote[];
-  compare?: ChangedPasal;
-  flipped: boolean;
+  compare?: CompareRow;
+  labels: string[];
   first: boolean;
   top: boolean;
   children: JSX.Element;
@@ -571,7 +568,7 @@ const ArticleSection = (props: {
           </div>
         }
       >
-        {(block) => <PasalComparison block={block()} flipped={props.flipped} />}
+        {(row) => <PasalBlock row={row()} labels={props.labels} fits />}
       </Show>
     </Fold>
   );
@@ -689,9 +686,9 @@ interface DocumentNodesProps {
 }
 
 interface CompareIndex {
-  flipped: boolean;
-  blocks: ReadonlyMap<string, ChangedPasal>;
-  after: Readonly<Record<string, ChangedPasal[]>>;
+  labels: string[];
+  blocks: ReadonlyMap<string, CompareRow>;
+  after: Readonly<Record<string, CompareRow[]>>;
 }
 
 const ExplanationEntry = (props: {
@@ -749,7 +746,7 @@ const DocumentNode = (
   const id = () => elementId(props.node, explanation());
   const alias = () => aliasOf(id(), props.anchors);
   const label = () => headingLabels.get(props.node.tag);
-  const flipped = () => props.comparison?.flipped === true;
+  const labels = () => props.comparison?.labels ?? [];
 
   const compare = () =>
     alias() !== undefined && isPresent(props.node.num)
@@ -813,7 +810,7 @@ const DocumentNode = (
           id={id()}
           alias={alias()}
           compare={compare()}
-          flipped={flipped()}
+          labels={labels()}
           first={props.first}
           top={props.top === true}
           notes={noteOf(alias(), props.node, props.notes)}
@@ -821,7 +818,7 @@ const DocumentNode = (
           {children()}
         </ArticleSection>
         <For each={added()}>
-          {(block) => <AddedPasal block={block} flipped={flipped()} />}
+          {(row) => <AddedPasal row={row} labels={labels()} />}
         </For>
       </Match>
       <Match when={label() !== undefined && explanation()}>
@@ -911,13 +908,13 @@ const placeExplanations = (law: HTMLElement, under: boolean) => {
   }
 };
 
-const indexComparison = (comparison: VersionComparison) => {
-  const byNumber = new Map(
-    comparison.changed.map((block) => [block.num, block])
-  );
+const indexComparison = (comparison: LawComparison) => {
+  const byNumber = new Map(comparison.rows.map((row) => [row.num, row]));
 
   return {
-    flipped: comparison.left > comparison.right,
+    labels: comparison.chosen.map(
+      (id) => comparison.versions.find((entry) => entry.id === id)?.cite ?? id
+    ),
     blocks: byNumber,
     after: Object.fromEntries(
       Object.entries(comparison.after).map(([eId, nums]) => [
@@ -931,7 +928,7 @@ const indexComparison = (comparison: VersionComparison) => {
 export const LawText = (props: {
   text: ReaderText;
   notes?: Record<string, PasalNote[]>;
-  comparison?: VersionComparison;
+  comparison?: LawComparison;
 }) => {
   useFolds();
 

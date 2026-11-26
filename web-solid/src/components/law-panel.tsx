@@ -99,7 +99,7 @@ export const Versions = (props: { family: Family }) => (
         <For each={props.family.versions}>{(row) => <Version row={row} />}</For>
       </ol>
       <Show when={props.family.comparable}>
-        <a class={css(linkStyles.base, versions.compare)} href="?bandingkan">
+        <a class={css(linkStyles.base, versions.compare)} href="?v=">
           Bandingkan versi
         </a>
       </Show>

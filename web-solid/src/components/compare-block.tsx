@@ -1,66 +1,28 @@
 import * as stylex from "@stylexjs/stylex";
 import { For, Match, Show, Switch } from "solid-js";
 
-import { isPresent } from "../lib/text.ts";
 import type {
-  ChangedLine,
-  ChangedPasal,
+  CompareCell,
+  CompareLine,
+  CompareRow,
   Mark,
   Piece,
-  VersionComparison,
-} from "../server/law-comparison.ts";
+} from "../lib/compare.ts";
+import { isPresent } from "../lib/text.ts";
 import { changes } from "../styles/changes.ts";
 import { css } from "../styles/css.ts";
-import { headerOffset } from "../styles/header-offset.stylex.ts";
-import { linkStyles } from "../styles/link.ts";
+import { reading } from "../styles/reading.ts";
 import { color, font, media, size, space } from "../styles/tokens.stylex.ts";
-import { VersionPair } from "./version-pair.tsx";
 
 const WIDE = "@media (min-width: 961px)";
 const FITS = "@container (min-width: 42rem)";
+const COLUMN_WIDTH = "17rem";
+const COLUMN_GAP = "1rem";
 
 const styles = stylex.create({
-  bar: {
-    paddingBlock: `${space.s3} ${space.s2}`,
-    backgroundColor: color.background,
-    borderBlockEndColor: color.line,
-    borderBlockEndStyle: "solid",
-    borderBlockEndWidth: 1,
-    fontFamily: font.ui,
-    fontSize: size.sm,
-    marginBlockEnd: space.s5,
-    position: { default: "sticky", "@media (max-width: 960px)": "static" },
-    zIndex: 4,
-    top: headerOffset.shown,
-  },
-  top: {
-    gap: `${space.s1} ${space.s4}`,
-    alignItems: "center",
-    display: "flex",
-    flexWrap: "wrap",
-  },
-  title: { fontSize: size.base, fontWeight: 600 },
-  summary: { color: color.textMuted },
-  only: {
-    gap: space.s1,
-    alignItems: "center",
-    display: "inline-flex",
-    marginInlineStart: "auto",
-  },
-  check: { accentColor: color.link },
-  close: {
-    font: "inherit",
-    borderColor: color.lineStrong,
-    borderRadius: size.radius,
-    borderStyle: "solid",
-    borderWidth: 1,
-    paddingBlock: space.s1,
-    paddingInline: space.s3,
-    textDecoration: "none",
-    alignItems: "center",
-    display: "inline-flex",
-    minBlockSize: space.s6,
-  },
+  ins: { color: color.ok },
+  del: { color: color.delText },
+  mod: { color: color.warn },
   legend: {
     margin: 0,
     gap: `${space.s1} ${space.s4}`,
@@ -72,9 +34,6 @@ const styles = stylex.create({
     marginBlockStart: space.s2,
   },
   legendItem: { gap: space.s1, alignItems: "center", display: "inline-flex" },
-  ins: { color: color.ok },
-  del: { color: color.delText },
-  mod: { color: color.warn },
   modText: {
     borderRadius: 2,
     backgroundColor: color.modBackground,
@@ -98,6 +57,7 @@ const styles = stylex.create({
     fontSize: { default: "inherit", "@media (max-width: 960px)": size.base },
     paddingBlockStart: space.s3,
   },
+  flush: { marginBlock: 0, borderBlockStartWidth: 0, paddingBlockStart: 0 },
   note: {
     margin: 0,
     color: color.textMuted,
@@ -105,20 +65,39 @@ const styles = stylex.create({
     fontSize: size.sm,
     marginBlockEnd: space.s2,
   },
-  columns: {
+  pair: {
     columnGap: space.s6,
+    display: "none",
+    gridTemplateColumns: "minmax(0, 1fr) minmax(0, 1fr)",
+  },
+  pairFits: {
     display: {
       [WIDE]: { [FITS]: "grid", default: "none" },
       default: "none",
     },
-    gridTemplateColumns: "minmax(0, 1fr) minmax(0, 1fr)",
   },
-  inline: {
+  pairAlways: { display: "grid" },
+  merged: {
     display: {
       [WIDE]: { [FITS]: "none", default: "block" },
       default: "block",
     },
     marginBlockEnd: `calc(-1 * ${space.s2})`,
+  },
+  many: {
+    columnGap: space.s6,
+    display: "grid",
+    gridTemplateColumns: `repeat(auto-fit, minmax(${COLUMN_WIDTH}, 1fr))`,
+    rowGap: space.s3,
+  },
+  stack: { minInlineSize: 0 },
+  columnLabel: {
+    margin: 0,
+    color: color.textMuted,
+    fontFamily: font.ui,
+    fontSize: size.sm,
+    fontWeight: 600,
+    marginBlockEnd: space.s1,
   },
   cell: {
     margin: 0,
@@ -211,7 +190,8 @@ export const MarkIcon = (props: { kind: Mark }) => (
   </svg>
 );
 
-const Legend = () => (
+/** What the marks in a comparison mean: the pasal marks of the contents and the text marks. */
+export const Legend = () => (
   <p class={css(styles.legend)}>
     <span class={css(styles.legendItem)}>
       <MarkIcon kind="ins" />
@@ -273,130 +253,134 @@ const indentStyle = (indent: number) => {
   ];
 };
 
-const Cell = (props: {
-  num?: string;
-  indent: number;
-  pieces: Piece[];
+const Line = (props: {
+  line: CompareLine;
   column?: 1 | 2;
-  kind: string;
-  side: string;
+  side: "left" | "right" | "one" | "stack";
 }) => (
   <p
     class={css(
       styles.cell,
       props.column === 1 && styles.firstColumn,
       props.column === 2 && styles.secondColumn,
-      indentStyle(props.indent)
+      indentStyle(props.line.indent)
     )}
     data-side={props.side}
-    data-kind={props.kind}
+    data-kind={props.line.kind}
   >
-    <span class={css(styles.number)}>{props.num ?? ""}</span>
+    <span class={css(styles.number)}>{props.line.num ?? ""}</span>
     <span>
-      <For each={props.pieces}>{(piece) => <PieceText piece={piece} />}</For>
+      <For each={props.line.pieces}>
+        {(piece) => <PieceText piece={piece} />}
+      </For>
     </span>
   </p>
 );
 
-const LineCells = (props: { line: ChangedLine; flipped: boolean }) => (
-  <>
-    <Cell
-      num={props.line.oldNum}
-      indent={props.line.indent}
-      pieces={props.line.old}
-      kind={props.line.kind}
-      side="old"
-      column={props.flipped ? 2 : 1}
-    />
-    <Cell
-      num={props.line.newNum}
-      indent={props.line.indent}
-      pieces={props.line.new}
-      kind={props.line.kind}
-      side="new"
-      column={props.flipped ? 1 : 2}
-    />
-  </>
+/** The grid columns of a row of versions that scrolls sideways instead of giving way. */
+export const columnsStyle = (count: number) => ({
+  "column-gap": COLUMN_GAP,
+  "grid-template-columns": `repeat(${count}, minmax(${COLUMN_WIDTH}, 1fr))`,
+});
+
+/** The width `count` columns need side by side. */
+export const columnsWidth = (count: number) =>
+  `calc(${count} * ${COLUMN_WIDTH} + ${count - 1} * ${COLUMN_GAP})`;
+
+const Pair = (props: { row: CompareRow; fits: boolean }) => (
+  <div
+    class={css(styles.pair, props.fits ? styles.pairFits : styles.pairAlways)}
+    style={props.fits ? undefined : columnsStyle(2)}
+  >
+    <For each={props.row.cells[0].lines}>
+      {(line, index) => (
+        <>
+          <Line line={line} column={1} side="left" />
+          <Show when={props.row.cells[1].lines[index()]}>
+            {(other) => <Line line={other()} column={2} side="right" />}
+          </Show>
+        </>
+      )}
+    </For>
+  </div>
 );
 
-export const PasalComparison = (props: {
-  block: ChangedPasal;
-  flipped: boolean;
-}) => (
-  <div class={css(styles.block)} data-cmp-block data-mark={props.block.mark}>
-    <Show when={isPresent(props.block.note)}>
-      <p class={css(styles.note)}>{props.block.note}</p>
+const Stack = (props: { cell: CompareCell; label?: string }) => (
+  <div class={css(styles.stack)}>
+    <Show when={isPresent(props.label)}>
+      <p class={css(styles.columnLabel)}>{props.label}</p>
     </Show>
-    <div class={css(styles.columns)}>
-      <For each={props.block.lines}>
-        {(line) => <LineCells line={line} flipped={props.flipped} />}
+    <Show when={props.cell.state === "text"}>
+      <For each={props.cell.lines}>
+        {(line) => <Line line={line} side="stack" />}
       </For>
-    </div>
-    <div class={css(styles.inline)}>
-      <For each={props.block.lines}>
-        {(line) => (
-          <Cell
-            num={line.num}
-            indent={line.indent}
-            pieces={line.inline}
-            kind={line.kind}
-            side="one"
-          />
-        )}
-      </For>
-    </div>
+    </Show>
+  </div>
+);
+
+/**
+ * One pasal across the compared versions. Two versions sit side by side with their lines level
+ * (paired by number), or as one merged run where the container is too narrow for two; more
+ * versions are a column each. `fits` is true inside the reading view, where the container
+ * decides; false in a row of columns that scrolls sideways, which always shows every column.
+ */
+export const PasalBlock = (props: {
+  row: CompareRow;
+  /** One name per column, shown over the columns when there are more than two. */
+  labels: string[];
+  fits: boolean;
+}) => (
+  <div
+    class={css(
+      styles.block,
+      !props.fits && styles.flush,
+      !props.fits && reading.law
+    )}
+    data-cmp-block
+    data-mark={props.row.mark}
+  >
+    <Show when={isPresent(props.row.note)}>
+      <p class={css(styles.note)}>{props.row.note}</p>
+    </Show>
+    <Show
+      when={props.row.cells.length === 2}
+      fallback={
+        <div
+          class={css(styles.many)}
+          style={props.fits ? undefined : columnsStyle(props.row.cells.length)}
+        >
+          <For each={props.row.cells}>
+            {(cell, index) => (
+              <Stack
+                cell={cell}
+                label={props.fits ? props.labels[index()] : undefined}
+              />
+            )}
+          </For>
+        </div>
+      }
+    >
+      <Pair row={props.row} fits={props.fits} />
+      <Show when={props.fits}>
+        <div class={css(styles.merged)}>
+          <For each={props.row.merged}>
+            {(line) => <Line line={line} side="one" />}
+          </For>
+        </div>
+      </Show>
+    </Show>
   </div>
 );
 
 /** A changed pasal the text does not have, placed after the pasal before it. */
-export const AddedPasal = (props: {
-  block: ChangedPasal;
-  flipped: boolean;
-}) => (
+export const AddedPasal = (props: { row: CompareRow; labels: string[] }) => (
   <section
-    id={`cmp-pasal-${props.block.key}`}
-    data-num={props.block.num}
+    id={`cmp-pasal-${props.row.key}`}
+    data-num={props.row.num}
     data-compared
     class={css(styles.added)}
   >
-    <h3 class={css(styles.addedHeading)}>Pasal {props.block.num}</h3>
-    <PasalComparison block={props.block} flipped={props.flipped} />
+    <h3 class={css(styles.addedHeading)}>Pasal {props.row.num}</h3>
+    <PasalBlock row={props.row} labels={props.labels} fits />
   </section>
 );
-
-export const CompareBar = (props: { comparison: VersionComparison }) => {
-  const versions = () => props.comparison.versions;
-
-  const choices = () =>
-    versions().map(({ id, label, cite, date }) => ({ id, label, cite, date }));
-
-  const summary = () =>
-    props.comparison.older === props.comparison.newer
-      ? "Dua versi yang sama."
-      : `${props.comparison.changed.length} pasal berbeda`;
-
-  return (
-    <div class={css(styles.bar)} data-cmp-bar>
-      <div class={css(styles.top)}>
-        <span class={css(styles.title)}>Bandingkan versi</span>
-        <output class={css(styles.summary)}>{summary()}</output>
-        <label class={css(styles.only)}>
-          <input type="checkbox" data-cmp-only class={css(styles.check)} />
-          Yang berubah saja
-        </label>
-        <a class={css(linkStyles.base, styles.close)} href="./" target="_self">
-          Tutup
-        </a>
-      </div>
-      <VersionPair
-        versions={choices()}
-        left={versions()[props.comparison.left].id}
-        right={versions()[props.comparison.right].id}
-        action="./"
-        submitLabel="Bandingkan"
-        href={(from, to) => `?bandingkan=${to}&dari=${from}`}
-      />
-      <Legend />
-    </div>
-  );
-};

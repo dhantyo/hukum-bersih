@@ -1,143 +1,24 @@
-import { useLocation, useNavigate } from "@solidjs/router";
+import { useLocation } from "@solidjs/router";
 import * as stylex from "@stylexjs/stylex";
 import { Input, InputClear, InputGroup } from "@ui-sdk/solid/input";
 import { createSignal, For, isPending, Show } from "solid-js";
 import * as v from "valibot";
 
-import type {
-  ChangedLine,
-  CollectionCompareView,
-  ColumnCell,
-  VersionChoice,
-} from "../lib/collection-compare.ts";
+import type { Comparison } from "../lib/compare.ts";
 import { pasalKey } from "../lib/display.ts";
 import { compareSearch } from "../lib/schemas.ts";
-import { changes } from "../styles/changes.ts";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
-import { motion } from "../styles/motion.stylex.ts";
-import { reading } from "../styles/reading.ts";
-import { color, shadow, size, space } from "../styles/tokens.stylex.ts";
-import { versionName, VersionPicker } from "./collection-version-picker.tsx";
-import { Grip, Handle, Root, SlidingColumn } from "./column-parts.tsx";
+import { color, size, space } from "../styles/tokens.stylex.ts";
+import { versionName } from "./collection-version-picker.tsx";
+import { columnsHref, CompareBar } from "./compare-bar.tsx";
+import { columnsStyle, columnsWidth, PasalBlock } from "./compare-block.tsx";
 import { ScrollRow } from "./scroll-row.tsx";
 
-const GRABBED = ":is([data-grabbed])";
-const NO_SCRIPT = "@media (scripting: none)";
-const SCRIPTED = "@media (scripting: enabled)";
-const MIN_COLUMNS = 2;
-const COLUMN_WIDTH = "17rem";
-const COLUMN_GAP = "1rem";
-const SEPARATOR = ",";
 const LEADING_PASAL = /^PASAL\s*/u;
 
 const styles = stylex.create({
-  top: {
-    gap: space.s3,
-    alignItems: "center",
-    display: "flex",
-    justifyContent: "space-between",
-  },
-  heading: { margin: 0 },
-  close: {
-    font: "inherit",
-    borderColor: color.lineStrong,
-    borderRadius: size.radius,
-    borderStyle: "solid",
-    borderWidth: 1,
-    paddingBlock: space.s1,
-    paddingInline: space.s3,
-    textDecoration: "none",
-    alignItems: "center",
-    display: "inline-flex",
-    minBlockSize: space.s6,
-  },
-  help: { maxInlineSize: size.measure },
   muted: { color: color.textMuted },
-  bar: {
-    padding: space.s3,
-    borderColor: color.line,
-    borderRadius: size.radiusMd,
-    borderStyle: "solid",
-    borderWidth: 1,
-    gap: space.s2,
-    alignItems: "center",
-    backgroundColor: color.backgroundSubtle,
-    display: "flex",
-    flexWrap: "wrap",
-  },
-  slots: {
-    gap: space.s2,
-    alignItems: "center",
-    display: "flex",
-    flexWrap: "wrap",
-  },
-  slot: {
-    padding: space.s1,
-    borderColor: color.lineStrong,
-    borderRadius: size.radius,
-    borderStyle: "solid",
-    borderWidth: 1,
-    gap: space.s1,
-    transition: {
-      default: motion.liftTransition,
-      [motion.reduced]: "none",
-    },
-    alignItems: "center",
-    backgroundColor: color.background,
-    boxShadow: { [GRABBED]: shadow.pop, default: null },
-    display: "flex",
-    minBlockSize: size.tap,
-    position: "relative",
-    scale: { [GRABBED]: 1.04, default: 1 },
-    transform: {
-      [GRABBED]: "translate(var(--drag-x, 0), var(--drag-y, 0))",
-      default: null,
-    },
-    userSelect: "none",
-    zIndex: { [GRABBED]: 3, default: null },
-  },
-  handle: {
-    padding: 0,
-    borderRadius: size.radius,
-    borderWidth: 0,
-    placeItems: "center",
-    backgroundColor: "transparent",
-    blockSize: space.s6,
-    color: color.textMuted,
-    cursor: { default: "grab", ":active": "grabbing" },
-    display: { [NO_SCRIPT]: "none", default: "grid" },
-    inlineSize: space.s4,
-    outlineColor: color.link,
-    outlineOffset: 2,
-    outlineStyle: { default: "none", ":focus-visible": "solid" },
-    outlineWidth: 3,
-    touchAction: "none",
-  },
-  remove: {
-    borderRadius: size.radius,
-    placeItems: "center",
-    textDecoration: "none",
-    backgroundColor: { default: null, ":hover": color.delBackground },
-    blockSize: size.tap,
-    color: { default: color.textMuted, ":hover": color.delText },
-    display: "grid",
-    fontSize: size.lg,
-    inlineSize: size.tap,
-  },
-  add: {
-    borderColor: color.link,
-    borderRadius: size.radius,
-    borderStyle: "dashed",
-    borderWidth: 1,
-    paddingInline: space.s3,
-    textDecoration: "none",
-    alignItems: "center",
-    display: "inline-flex",
-    fontSize: size.sm,
-    fontWeight: 600,
-    minBlockSize: size.tap,
-  },
   tools: {
     gap: `${space.s2} ${space.s4}`,
     marginBlock: space.s3,
@@ -208,19 +89,6 @@ const styles = stylex.create({
     justifyContent: "center",
     position: "absolute",
   },
-  submit: {
-    font: "inherit",
-    borderColor: color.lineStrong,
-    borderRadius: size.radius,
-    borderStyle: "solid",
-    borderWidth: 1,
-    paddingInline: space.s4,
-    backgroundColor: color.background,
-    color: color.link,
-    cursor: "pointer",
-    display: { [SCRIPTED]: "none", default: "block" },
-    minBlockSize: size.tap,
-  },
   note: {
     padding: `${space.s2} ${space.s3}`,
     borderColor: color.warn,
@@ -230,7 +98,6 @@ const styles = stylex.create({
     fontSize: size.sm,
     maxInlineSize: size.measure,
   },
-  summary: { margin: 0, color: color.textMuted, fontSize: size.sm },
   grid: { transition: "opacity 0.15s ease" },
   busy: { opacity: 0.6 },
   head: {
@@ -250,47 +117,13 @@ const styles = stylex.create({
     contentVisibility: "auto",
   },
   title: { marginBlock: `0 ${space.s2}`, fontSize: size.base },
-  cells: { display: "grid" },
-  cell: { minInlineSize: 0 },
-  placeholder: {
-    margin: 0,
-    color: color.textMuted,
-    fontStyle: "italic",
-  },
-  line: {
-    marginBlock: `0 ${space.s2}`,
-    columnGap: "0.3rem",
-    display: "grid",
-    gridTemplateColumns: `minmax(${size.hang}, max-content) minmax(0, 1fr)`,
-    lineHeight: 1.6,
-  },
-  indent1: { marginInlineStart: size.hang },
-  indent2: { marginInlineStart: `calc(2 * ${size.hang})` },
-  indent3: { marginInlineStart: `calc(3 * ${size.hang})` },
 });
-
-const placeholders = {
-  deleted: "Dihapus",
-  unreadable: "Teks belum terbaca dari PDF",
-  absent: "Belum ada",
-} as const;
-
-const indents = [undefined, styles.indent1, styles.indent2, styles.indent3];
 
 const normalized = (text: string) =>
   text.trim().toUpperCase().replace(LEADING_PASAL, "");
 
-const searchOf = (ids: string[], pasal: string) => {
-  const query = new URLSearchParams();
-
-  query.set("v", ids.join(SEPARATOR));
-
-  if (pasal !== "") {
-    query.set("pasal", pasal);
-  }
-
-  return `?${query.toString().replaceAll("%2C", SEPARATOR)}#banding`;
-};
+const searchOf = (ids: string[], pasal: string) =>
+  `${columnsHref(ids, pasal)}#banding`;
 
 const remember = (text: string) => {
   const url = new URL(window.location.href);
@@ -306,75 +139,16 @@ const remember = (text: string) => {
 
 /** Where the "Bandingkan versi" button of the side panel leads: the first version against the
  * latest. */
-export const firstToLatestHref = (comparison: CollectionCompareView) =>
+export const firstToLatestHref = (comparison: Comparison) =>
   searchOf(
     [comparison.versions[0]?.id ?? "", comparison.versions.at(-1)?.id ?? ""],
     ""
   );
 
-const Line = (props: { line: ChangedLine }) => (
-  <p
-    class={css(
-      reading.law,
-      styles.line,
-      indents[Math.min(props.line.indent, 3)]
-    )}
-  >
-    <span>{props.line.num}</span>
-    <span>
-      <For each={props.line.parts}>
-        {(part) => {
-          if (part.added) {
-            return <ins class={css(changes.ins)}>{part.value}</ins>;
-          }
-
-          return part.removed ? (
-            <del class={css(changes.del)}>{part.value}</del>
-          ) : (
-            part.value
-          );
-        }}
-      </For>
-    </span>
-  </p>
-);
-
-const Cell = (props: { cell: ColumnCell }) => (
-  <div class={css(styles.cell)}>
-    <Show
-      when={props.cell.state === "text"}
-      fallback={
-        <p class={css(styles.placeholder)}>
-          {props.cell.state === "text" ? "" : placeholders[props.cell.state]}
-        </p>
-      }
-    >
-      <For each={props.cell.lines}>{(line) => <Line line={line} />}</For>
-    </Show>
-  </div>
-);
-
-const columnKeys = (ids: string[]) =>
-  ids.map((id, index) => (ids.indexOf(id) === index ? id : `${id}~${index}`));
-
-const rowStyle = (count: number) => ({
-  "column-gap": COLUMN_GAP,
-  "grid-template-columns": `repeat(${count}, minmax(${COLUMN_WIDTH}, 1fr))`,
-});
-
-const rowMinWidth = (count: number) =>
-  `calc(${count} * ${COLUMN_WIDTH} + ${count - 1} * ${COLUMN_GAP})`;
-
-const nextVersion = (versions: VersionChoice[], ids: string[]) => {
-  const last = versions.findIndex((entry) => entry.id === ids.at(-1));
-
-  return (
-    versions.find((entry, index) => index > last && !ids.includes(entry.id)) ??
-    versions.find((entry) => !ids.includes(entry.id))
-  );
-};
-
-const Presets = (props: { versions: VersionChoice[]; pasal: string }) => {
+const Presets = (props: {
+  versions: Comparison["versions"];
+  pasal: string;
+}) => {
   const ids = () => props.versions.map((entry) => entry.id);
 
   const presets = () => [
@@ -436,129 +210,19 @@ const PasalFilter = (props: {
   </label>
 );
 
-const ColumnBar = (props: {
-  versions: VersionChoice[];
-  ids: string[];
-  pasal: string;
-}) => {
-  const navigate = useNavigate();
-  const location = useLocation();
-  const keys = () => columnKeys(props.ids);
-  const [order, setOrder] = createSignal<string[]>(() => keys());
+const summaryOf = (count: number, columns: number, pasal: string) => {
+  if (pasal === "") {
+    return `${count} pasal berbeda di antara ${columns} versi ini.`;
+  }
 
-  const idOf = (key: string) => props.ids[keys().indexOf(key)] ?? key;
-
-  const citeOf = (id: string) =>
-    props.versions.find((entry) => entry.id === id)?.cite ?? id;
-
-  const labels = () =>
-    Object.fromEntries(keys().map((key) => [key, citeOf(idOf(key))]));
-
-  const open = (ids: string[]) => {
-    navigate(`${location.pathname}${searchOf(ids, props.pasal)}`);
-  };
-
-  const without = (index: number) =>
-    props.ids.filter((_id, position) => position !== index);
-
-  const addition = () => nextVersion(props.versions, props.ids);
-
-  return (
-    <div class={css(styles.bar)}>
-      <Root
-        class={css(styles.slots)}
-        aria-label="Versi yang dibandingkan"
-        orientation="grid"
-        value={order()}
-        labels={labels()}
-        onValueChange={(next) => {
-          setOrder(next);
-
-          setTimeout(() => {
-            open(next.map(idOf));
-          }, 0);
-        }}
-      >
-        {(state) => (
-          <For each={state.order}>
-            {(key, index) => (
-              <SlidingColumn
-                slot={key}
-                order={state.order.join(SEPARATOR)}
-                versions={props.ids.join(SEPARATOR)}
-                class={css(styles.slot)}
-              >
-                <Handle
-                  value={key}
-                  class={css(styles.handle)}
-                  aria-label={`Pindahkan kolom ${citeOf(idOf(key))}`}
-                  title="Geser untuk mengubah urutan kolom"
-                >
-                  <Grip />
-                </Handle>
-                <VersionPicker
-                  name="v"
-                  label={`Versi kolom ${index() + 1}`}
-                  versions={props.versions}
-                  value={idOf(key)}
-                  onPick={(id) => {
-                    open(
-                      props.ids.map((current, position) =>
-                        position === keys().indexOf(key) ? id : current
-                      )
-                    );
-                  }}
-                />
-                <Show when={props.ids.length > MIN_COLUMNS}>
-                  <a
-                    class={css(linkStyles.base, styles.remove)}
-                    href={searchOf(without(keys().indexOf(key)), props.pasal)}
-                    aria-label={`Hapus kolom ${citeOf(idOf(key))}`}
-                    title="Hapus kolom"
-                  >
-                    ×
-                  </a>
-                </Show>
-              </SlidingColumn>
-            )}
-          </For>
-        )}
-      </Root>
-      <Show when={addition()}>
-        {(next) => (
-          <a
-            class={css(linkStyles.base, styles.add)}
-            href={searchOf([...props.ids, next().id], props.pasal)}
-          >
-            + Tambah versi
-          </a>
-        )}
-      </Show>
-    </div>
-  );
-};
-
-const Summary = (props: { count: number; columns: number; pasal: string }) => {
-  const text = () => {
-    if (props.pasal === "") {
-      return `${props.count} pasal berbeda di antara ${props.columns} versi ini.`;
-    }
-
-    return props.count > 0
-      ? `Pasal ${props.pasal} dalam ${props.columns} versi.`
-      : `Pasal ${props.pasal} tidak berubah di antara perubahan yang kami punya.`;
-  };
-
-  return (
-    <p class={css(styles.summary)} aria-live="polite">
-      {text()}
-    </p>
-  );
+  return count > 0
+    ? `Pasal ${pasal} dalam ${columns} versi.`
+    : `Pasal ${pasal} tidak berubah di antara perubahan yang kami punya.`;
 };
 
 const Grid = (props: {
-  comparison: CollectionCompareView;
-  pasal: string;
+  comparison: Comparison;
+  rows: Comparison["rows"];
   busy: boolean;
 }) => {
   const columns = () =>
@@ -566,20 +230,8 @@ const Grid = (props: {
       (id) => props.comparison.versions.find((entry) => entry.id === id) ?? []
     );
 
-  const rows = () =>
-    props.pasal === ""
-      ? props.comparison.rows
-      : props.comparison.rows.filter(
-          (row) => row.num.toUpperCase() === props.pasal
-        );
-
   return (
     <>
-      <Summary
-        count={rows().length}
-        columns={props.comparison.chosen.length}
-        pasal={props.pasal}
-      />
       <Show when={props.comparison.gap > 0}>
         <p class={css(styles.note)}>
           Ada {props.comparison.gap} perubahan di antara versi-versi ini yang
@@ -590,11 +242,11 @@ const Grid = (props: {
       <ScrollRow
         class={css(styles.grid, props.busy && styles.busy)}
         label="Pasal yang berbeda, satu kolom tiap versi"
-        minWidth={rowMinWidth(props.comparison.chosen.length)}
+        minWidth={columnsWidth(props.comparison.chosen.length)}
         head={() => (
           <div
             class={css(styles.head)}
-            style={rowStyle(props.comparison.chosen.length)}
+            style={columnsStyle(props.comparison.chosen.length)}
           >
             <For each={columns()} keyed={false}>
               {(version) => <strong>{versionName(version())}</strong>}
@@ -602,24 +254,17 @@ const Grid = (props: {
           </div>
         )}
       >
-        <For each={rows()} keyed={(row) => row.num}>
+        <For each={props.rows} keyed={(row) => row.num}>
           {(row) => (
             <section
-              id={`banding-${pasalKey(row().num)}`}
+              id={`cmp-pasal-${pasalKey(row().num)}`}
               class={css(styles.row)}
               aria-label={`Pasal ${row().num}`}
             >
               <h3 class={css(styles.title)} aria-hidden="true">
                 Pasal {row().num}
               </h3>
-              <div
-                class={css(styles.cells)}
-                style={rowStyle(row().cells.length)}
-              >
-                <For each={row().cells} keyed={false}>
-                  {(cell) => <Cell cell={cell()} />}
-                </For>
-              </div>
+              <PasalBlock row={row()} labels={[]} fits={false} />
             </section>
           )}
         </For>
@@ -629,15 +274,14 @@ const Grid = (props: {
 };
 
 /**
- * Compare any number of versions of a collection side by side: one column per version, each
- * marking what changed since the column to its left. The reader adds and removes columns,
- * drags them (or moves them with the keys) into another order, picks the versions, takes a
- * quick choice and narrows the rows to one pasal. The choice lives in the address
+ * Compare any number of versions of a collection, a pasal at a time: one column per version,
+ * marked against its neighbour. The reader changes the columns in the shared bar, takes a quick
+ * choice and narrows the rows to one pasal. The choice lives in the address
  * (`?v=a,b,c&pasal=5`), so a view can be shared and every control is a link or a field of one
  * GET form, which works without a script; the pasal that differ are built by the server.
  */
 export const CollectionCompare = (props: {
-  comparison: CollectionCompareView;
+  comparison: Comparison;
   onDemand?: boolean;
 }) => {
   const location = useLocation();
@@ -657,41 +301,34 @@ export const CollectionCompare = (props: {
       ? props.comparison.chosen
       : [first(), last()];
 
-  const shown = () =>
-    props.onDemand !== true ||
-    props.comparison.chosen.length > 0 ||
-    props.comparison.unknown;
+  const rows = () =>
+    pasal() === ""
+      ? props.comparison.rows
+      : props.comparison.rows.filter(
+          (row) => row.num.toUpperCase() === pasal()
+        );
+
+  const shown = () => props.onDemand !== true || props.comparison.requested;
 
   return (
     <Show when={shown()}>
-      <section
-        id="banding"
-        aria-labelledby="banding-title"
-        aria-busy={pending() ? "true" : "false"}
-      >
-        <div class={css(styles.top)}>
-          <h2 id="banding-title" class={css(styles.heading)}>
-            Bandingkan versi
-          </h2>
-          <Show when={props.onDemand}>
-            <a
-              class={css(linkStyles.base, styles.close)}
-              href="./"
-              target="_self"
-            >
-              Tutup
-            </a>
-          </Show>
-        </div>
-        <p class={css(styles.help)}>
-          Pilih versi yang ingin dibandingkan. Tambah atau hapus kolom, geser
-          untuk mengubah urutan. Tiap kolom menandai yang{" "}
-          <ins class={css(changes.ins)}>baru</ins> dan yang{" "}
-          <del class={css(changes.del)}>dihapus</del> dibanding kolom di
-          kirinya.
-        </p>
-        <form method="get" action="#banding">
-          <ColumnBar versions={versions()} ids={ids()} pasal={pasal()} />
+      <div aria-busy={pending() ? "true" : "false"}>
+        <CompareBar
+          versions={versions()}
+          ids={ids()}
+          href={(next) => searchOf(next, pasal())}
+          action="#banding"
+          summary={
+            props.comparison.chosen.length > 0
+              ? summaryOf(
+                  rows().length,
+                  props.comparison.chosen.length,
+                  pasal()
+                )
+              : ""
+          }
+          closable={props.onDemand}
+        >
           <div class={css(styles.tools)}>
             <Presets versions={versions()} pasal={pasal()} />
             <PasalFilter
@@ -702,21 +339,14 @@ export const CollectionCompare = (props: {
               }}
             />
           </div>
-          <button type="submit" class={css(styles.submit)}>
-            Bandingkan
-          </button>
-        </form>
+        </CompareBar>
         <Show when={props.comparison.unknown}>
           <output>Versi yang diminta tidak dikenal di koleksi ini.</output>
         </Show>
         <Show when={props.comparison.chosen.length > 0}>
-          <Grid
-            comparison={props.comparison}
-            pasal={pasal()}
-            busy={pending()}
-          />
+          <Grid comparison={props.comparison} rows={rows()} busy={pending()} />
         </Show>
-      </section>
+      </div>
     </Show>
   );
 };

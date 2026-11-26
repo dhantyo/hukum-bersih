@@ -76,6 +76,7 @@ const MergedCollection = (props: {
     subtitle={props.collection.named ? props.collection.title : undefined}
     headMeta={<MergedHeadMeta version={props.version} />}
     text={props.version.text}
+    comparing={props.comparison?.requested === true}
     panelLabel="Daftar isi"
     panel={
       <>

@@ -9,7 +9,7 @@ import {
 } from "@ui-sdk/solid/select";
 import { For } from "solid-js";
 
-import type { VersionChoice } from "../lib/collection-compare.ts";
+import type { VersionChoice } from "../lib/compare.ts";
 import { tanggal } from "../lib/labels.ts";
 import { isPresent } from "../lib/text.ts";
 import { css } from "../styles/css.ts";
@@ -68,7 +68,7 @@ export const versionName = (version: VersionChoice) =>
 
 /**
  * One version picker. It is a ui-sdk Select named like the search parameter it fills, so a
- * GET form submits the choice (`dari`, `bandingkan`).
+ * GET form submits the choice (`v`, once for each column).
  */
 export const VersionPicker = (props: {
   name: string;

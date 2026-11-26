@@ -17,27 +17,22 @@ export const draftPair = matching(DRAFT_PAIR);
 export const versionDate = matching(VERSION_DATE);
 export const collectionVersion = matching(`(?:latest|${VERSION_DATE})`);
 
-const compareTarget = v.union([v.literal(""), matching("[a-z0-9_-]+")]);
-
 const MAX_COLUMNS = 32;
 const VERSION_ID = "[a-z0-9_-]+";
 
 const compareVersions = v.union([
   v.pipe(
     v.string(),
-    v.regex(new RegExp(`^${VERSION_ID}(?:,${VERSION_ID})*$`, "u")),
+    v.regex(new RegExp(`^(?:${VERSION_ID}(?:,${VERSION_ID})*)?$`, "u")),
     v.maxLength(1024)
   ),
   v.pipe(v.array(matching(VERSION_ID)), v.maxLength(MAX_COLUMNS)),
 ]);
 
-/** The versions a collection page compares: `v` lists any number of them, one column each;
- * `bandingkan` and `dari` ask for a pair, the newer and the older. */
-export const collectionCompare = v.object({
-  v: v.optional(compareVersions),
-  bandingkan: v.optional(compareTarget),
-  dari: v.optional(compareTarget),
-});
+/** The versions a page compares: `v` lists any number of them, one column each, left to right.
+ * One version stands for it against the one before it; an empty `v` for the first against the
+ * latest. */
+export const compareRequest = v.object({ v: v.optional(compareVersions) });
 
 export const internalLink = matching(
   `/[a-z-]+/[a-z0-9_-]+(?:/(?:\\d{4}|${VERSION_DATE}))?/`,
@@ -45,7 +40,7 @@ export const internalLink = matching(
 );
 
 export const lawAnchorLink = matching(
-  `${LAW_PATH}(?:\\?bandingkan=[a-z0-9_-]+)?(?:#[a-z0-9_.:%-]+)?`,
+  `${LAW_PATH}(?:\\?v=[a-z0-9_-]+)?(?:#[a-z0-9_.:%-]+)?`,
   "iu"
 );
 
@@ -61,7 +56,7 @@ export const collectionComparisonPath = matching(
 );
 
 export const publicDocumentPath = v.union([
-  matching(`${LAW_PATH}(?:perubahan/)?`),
+  matching(LAW_PATH),
   matching(`/koleksi/${SLUG}/(?:${VERSION_DATE}/)?`),
   matching(`/ruu/${SLUG}/${DRAFT_DOCUMENT_ID}/`),
   matching(`/ruu/${SLUG}/beda/${DRAFT_PAIR}/`),
@@ -81,8 +76,6 @@ export const compareSearch = v.object({
     v.optional(v.union([v.string(), v.array(v.string())])),
     undefined
   ),
-  bandingkan: v.fallback(v.optional(v.string()), undefined),
-  dari: v.fallback(v.optional(v.string()), undefined),
   pasal: v.fallback(v.optional(v.string()), undefined),
 });
 

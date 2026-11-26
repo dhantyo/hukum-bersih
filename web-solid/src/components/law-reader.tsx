@@ -1,18 +1,18 @@
 import * as stylex from "@stylexjs/stylex";
 import { Show } from "solid-js";
 
+import type { LawComparison } from "../lib/compare.ts";
 import { tanggal } from "../lib/labels.ts";
 import { isPresent } from "../lib/text.ts";
 import { lawHeading } from "../lib/titles.ts";
-import type { VersionComparison } from "../server/law-comparison.ts";
 import type { LawRecord } from "../server/records/law.ts";
 import { css } from "../styles/css.ts";
 import { linkClass, linkStyles } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 import { Badge } from "./badge.tsx";
+import { columnsHref, CompareBar } from "./compare-bar.tsx";
 import { DocLayout } from "./doc-layout.tsx";
 import { KoleksiBox, RelationsBanner, StatusBanner } from "./law-banners.tsx";
-import { CompareBar } from "./law-compare.tsx";
 import { Facts, Versions } from "./law-panel.tsx";
 import { LawText } from "./law-text.tsx";
 import { Toc } from "./law-toc.tsx";
@@ -101,7 +101,7 @@ const HeadMeta = (props: { law: LawRecord }) => (
   </div>
 );
 
-const Panel = (props: { law: LawRecord; comparison?: VersionComparison }) => (
+const Panel = (props: { law: LawRecord; comparison?: LawComparison }) => (
   <>
     <Show when={props.law.family}>
       {(family) => (
@@ -149,7 +149,37 @@ const Panel = (props: { law: LawRecord; comparison?: VersionComparison }) => (
   </>
 );
 
-const Body = (props: { law: LawRecord; comparison?: VersionComparison }) => (
+const summaryOf = (comparison: LawComparison) => {
+  if (comparison.unknown) {
+    return "Versi yang diminta tidak dikenal di koleksi ini.";
+  }
+
+  return new Set(comparison.chosen).size < 2
+    ? "Dua versi yang sama."
+    : `${comparison.rows.length} pasal berbeda`;
+};
+
+const LawCompareBar = (props: { comparison: LawComparison }) => (
+  <CompareBar
+    versions={props.comparison.versions}
+    ids={
+      props.comparison.chosen.length > 0
+        ? props.comparison.chosen
+        : [
+            props.comparison.versions[0]?.id ?? "",
+            props.comparison.versions.at(-1)?.id ?? "",
+          ]
+    }
+    href={columnsHref}
+    action="./"
+    summary={summaryOf(props.comparison)}
+    sticky
+    onlyChanged
+    closable
+  />
+);
+
+const Body = (props: { law: LawRecord; comparison?: LawComparison }) => (
   <>
     <StatusBanner law={props.law} />
     <Show
@@ -193,7 +223,7 @@ const Body = (props: { law: LawRecord; comparison?: VersionComparison }) => (
             .
           </p>
           <Show when={props.comparison}>
-            {(comparison) => <CompareBar comparison={comparison()} />}
+            {(comparison) => <LawCompareBar comparison={comparison()} />}
           </Show>
           <LawText
             text={text() ?? undefined}
@@ -208,7 +238,7 @@ const Body = (props: { law: LawRecord; comparison?: VersionComparison }) => (
 
 export const LawReader = (props: {
   law: LawRecord;
-  comparison?: VersionComparison;
+  comparison?: LawComparison;
 }) => {
   const text = () => props.law.text;
 

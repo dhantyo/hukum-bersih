@@ -1,15 +1,12 @@
 import { GET } from "@solidjs/web/server-functions";
 import * as v from "valibot";
 
+import { readComparison } from "../server/comparison.ts";
 import { readCatalog } from "../server/records/catalog.ts";
-import {
-  readCollectionVersions,
-  readVersionPair,
-} from "../server/records/collection-comparison.ts";
 import { readCollectionTimeline } from "../server/records/collection-timeline.ts";
 import { readCollectionVersion } from "../server/records/collection-version.ts";
-import { compareColumns, pickColumns } from "./collection-compare.ts";
-import { collectionCompare, collectionVersion, slug } from "./schemas.ts";
+import type { CompareRequest } from "./compare.ts";
+import { collectionVersion, slug } from "./schemas.ts";
 
 export const getCollections = GET(async () => {
   "use server";
@@ -71,41 +68,12 @@ export const getCollection = GET(
 );
 
 export const getCollectionComparison = GET(
-  async (
-    collectionSlug: string,
-    pair: v.InferInput<typeof collectionCompare>
-  ) => {
+  async (collectionSlug: string, request: CompareRequest) => {
     "use server";
 
-    if (!v.is(slug, collectionSlug)) {
-      return null;
-    }
-
-    const versions = await readCollectionVersions(collectionSlug);
-
-    if (versions === null) {
-      return null;
-    }
-
-    const choice = v.safeParse(collectionCompare, pair);
-
-    const ids = versions.map((version) => version.id);
-
-    const selection = choice.success
-      ? pickColumns(ids, choice.output)
-      : { unknown: true, columns: [] };
-
-    const links = await Promise.all(
-      selection.columns.slice(1).map(async (to, index) => {
-        const from = selection.columns[index];
-
-        return from === to
-          ? null
-          : await readVersionPair(collectionSlug, ids[from], ids[to]);
-      })
-    );
-
-    return compareColumns(versions, selection, links);
+    return v.is(slug, collectionSlug)
+      ? await readComparison(collectionSlug, request)
+      : null;
   }
 );
 

@@ -373,7 +373,7 @@ export const CollectionHistory = (props: {
       {props.timeline.detailed && (
         <>
           {" · "}
-          <a class={linkClass} href={`${props.timeline.base.href}?bandingkan`}>
+          <a class={linkClass} href={`${props.timeline.base.href}?v=`}>
             Rincian tiap perubahan, pasal demi pasal
           </a>
         </>

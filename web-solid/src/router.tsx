@@ -3,6 +3,7 @@ import { lazy } from "solid-js";
 import * as v from "valibot";
 
 import { preloadCollection } from "./lib/collection-page.ts";
+import { comparisonRequest } from "./lib/compare.ts";
 import { lawUrl } from "./lib/paths.ts";
 import {
   collectionsQuery,
@@ -11,7 +12,6 @@ import {
   draftComparisonQuery,
   draftTextQuery,
   overviewQuery,
-  perubahanQuery,
   readerQuery,
   searchQuery,
   yearQuery,
@@ -43,20 +43,13 @@ export const Router = createRouter({
       },
     }),
     defineRoute({
-      path: "/uu/:nomor/:tahun/perubahan",
-      component: lazy(async () => await import("./routes/law-perubahan.tsx")),
-      preload: ({ params }) => {
-        void perubahanQuery(lawUrl(params));
-      },
-    }),
-    defineRoute({
       path: "/uu/:nomor/:tahun",
       search: compareSearch,
       component: lazy(async () => await import("./routes/law.tsx")),
       preload: ({ params, location }) => {
         const search = v.parse(compareSearch, location.query);
 
-        void readerQuery(lawUrl(params), search.bandingkan, search.dari);
+        void readerQuery(lawUrl(params), comparisonRequest(search));
       },
     }),
     {

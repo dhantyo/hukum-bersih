@@ -84,7 +84,6 @@ const law = v.object({
   ),
   notes: v.record(v.string(), v.array(note)),
   family: v.optional(family),
-  perubahanTarget: internalLink,
 });
 
 export type LawRecord = v.InferOutput<typeof law>;

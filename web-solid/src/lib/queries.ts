@@ -5,31 +5,20 @@ import {
   getCollectionComparison,
   getCollections,
 } from "./collections";
+import type { CompareRequest } from "./compare.ts";
 import {
   getDraftBill,
   getDraftComparison,
   getDraftText,
   listDraftBills,
 } from "./drafts";
-import { getLaw, getLawOverview, getLawPerubahan, getLawYear } from "./laws";
+import { getLaw, getLawOverview, getLawYear } from "./laws";
 import { getSearchResults } from "./search";
 
-const fetchReader = async (
-  path: string,
-  compareTo?: string,
-  compareFrom?: string
-) => {
-  if (compareTo === undefined) {
-    return await getLaw(path);
-  }
-
-  return compareFrom === undefined
-    ? await getLaw(path, compareTo)
-    : await getLaw(path, compareTo, compareFrom);
-};
+const fetchReader = async (path: string, request: CompareRequest) =>
+  request.v === undefined ? await getLaw(path) : await getLaw(path, request);
 
 export const readerQuery = query(fetchReader, "reader");
-export const perubahanQuery = query(getLawPerubahan, "perubahan");
 export const overviewQuery = query(getLawOverview, "overview");
 export const yearQuery = query(getLawYear, "year");
 export const collectionsQuery = query(getCollections, "collections");

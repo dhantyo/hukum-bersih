@@ -3,6 +3,7 @@ import { createMemo, Show } from "solid-js";
 import * as v from "valibot";
 
 import { LawReader } from "../components/law-reader.tsx";
+import { comparisonRequest } from "../lib/compare.ts";
 import { usePageTitle } from "../lib/head.ts";
 import { lawUrl } from "../lib/paths.ts";
 import { readerQuery } from "../lib/queries.ts";
@@ -22,11 +23,7 @@ const LawPage = (props: RouteProps<"/uu/:nomor/:tahun">) => {
   const reader = createMemo(async () => {
     const search = v.parse(compareSearch, props.location.query);
 
-    return await readerQuery(
-      lawUrl(props.params),
-      search.bandingkan,
-      search.dari
-    );
+    return await readerQuery(lawUrl(props.params), comparisonRequest(search));
   });
 
   return (
