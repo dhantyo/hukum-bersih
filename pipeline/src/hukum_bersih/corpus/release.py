@@ -1,7 +1,7 @@
 """``hukum-bersih release publish|activate``: turn a stage written by ``export-corpus`` into a
 release the website reads, and say which release is live.
 
-The layout under a corpus folder (``HUKUM_CORPUS_DIR`` for ``web-solid``, the bucket root in R2):
+The layout under a corpus folder (``HUKUM_CORPUS_DIR`` for ``web``, the bucket root in R2):
 
     active-release                 the id of the live release, one line
     releases/<id>/...              the stage's files, plus ``release-id``

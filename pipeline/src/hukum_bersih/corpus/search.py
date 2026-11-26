@@ -1,5 +1,5 @@
 """The full-text search records of the reader pages and the Pagefind index built from them
-(``web-solid/scripts/search-records.ts`` and ``index-corpus.ts``).
+(``web/scripts/search-records.ts`` and ``index-corpus.ts``).
 
 One record per piece a result can open: the opening, each pasal, the closing, and each piece of
 the Penjelasan that says more than "Cukup jelas". Its URL is the id the reader gives that piece

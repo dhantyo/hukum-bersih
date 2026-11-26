@@ -1,4 +1,4 @@
-"""The ids the reader gives the pieces of a text (``web-solid/src/lib/anchors.ts``): a search
+"""The ids the reader gives the pieces of a text (``web/src/lib/anchors.ts``): a search
 result opens the piece by this id, so the two must stay equal.
 """
 

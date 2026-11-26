@@ -1,5 +1,5 @@
 """The files of the active release that the browser fetches as static files, written into the
-public folder of the web app (``web-solid/public``), which its build copies as it is:
+public folder of the web app (``web/public``), which its build copies as it is:
 
     data/<release>/law-catalog.json     the law catalog the browser searches
     search-index/<release>/...          the Pagefind index

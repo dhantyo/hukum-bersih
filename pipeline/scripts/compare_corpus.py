@@ -7,7 +7,7 @@ anything differs. ``--under`` limits the comparison to one folder of both stages
 group the same two texts: it is counted apart and does not fail the run.
 Example: the Python export against the TypeScript one::
 
-    uv run python scripts/compare_corpus.py ../web-solid/.snapshots/ref /path/to/py --under laws
+    uv run python scripts/compare_corpus.py ../web/.snapshots/ref /path/to/py --under laws
 """
 
 from __future__ import annotations

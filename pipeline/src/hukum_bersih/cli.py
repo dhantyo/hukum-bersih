@@ -83,7 +83,7 @@ def main(argv: list[str] | None = None) -> int:
                    help="then publish the stage into this corpus folder (`release publish`)")
     p.add_argument("--public", type=Path, metavar="DIR", default=None,
                    help="with --publish: also write the active release's law catalog and search "
-                        "index into this public folder (web-solid/public), and drop older "
+                        "index into this public folder (web/public), and drop older "
                         "releases from it")
 
     p = sub.add_parser("release", help="publish a corpus stage as a release, or switch the "

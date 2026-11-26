@@ -1,4 +1,4 @@
-"""The headings of the pages (``web-solid/src/lib/titles.ts``, with the two labels it uses from
+"""The headings of the pages (``web/src/lib/titles.ts``, with the two labels it uses from
 ``web/src/lib/labels.ts``): a search result shows the heading of the page it belongs to.
 """
 

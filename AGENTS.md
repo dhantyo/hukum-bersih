@@ -1,6 +1,6 @@
 # Notes for Claude
 
-Hukum Bersih publishes clean Indonesian law texts and tracks draft bills. `data/` (CC0) is the source of truth; `pipeline/` (Python) and `web-solid/` (Solid 2 on a Cloudflare Worker) are AGPL-3.0. The Astro site was removed in PR 2 of the Solid migration; `web-solid/` is renamed to `web/` in a later PR.
+Hukum Bersih publishes clean Indonesian law texts and tracks draft bills. `data/` (CC0) is the source of truth; `pipeline/` (Python) and `web/` (Solid 2 on a Cloudflare Worker) are AGPL-3.0. The Astro site was removed in PR 2 of the Solid migration; `web/` is renamed to `web/` in a later PR.
 
 ## Read when you need it
 
@@ -8,7 +8,7 @@ Hukum Bersih publishes clean Indonesian law texts and tracks draft bills. `data/
 |---|---|
 | Change anything structural | `docs/ARCHITECTURE.md`, then `docs/decisions/` |
 | Name an id, file or folder | `docs/NAMING.md` |
-| Work in `pipeline/` or `web-solid/` | that folder's `CLAUDE.md` (loads on its own there) |
+| Work in `pipeline/` or `web/` | that folder's `CLAUDE.md` (loads on its own there) |
 | Touch an upstream site (BPK, peraturan.go.id, DPR, mirrors) | `docs/sources.md` |
 | Pick up open work or a known gap | `docs/open-items.md` |
 | Check what the project is for | `docs/BRIEF.md` (items marked **(verify)** are unconfirmed) |

@@ -1,5 +1,5 @@
 """``collections/<slug>/*.json``: the records of the collection pages
-(``web-solid/scripts/export-collections.ts``). A collection whose base law has a text gets one
+(``web/scripts/export-collections.ts``). A collection whose base law has a text gets one
 merged record per version (``latest.json`` and ``<date>.json``) and, when its amendments can
 be read pasal by pasal, ``perubahan.json`` and the ``comparisons/`` of its versions. Any other collection gets ``timeline.json``.
 """
