@@ -5,7 +5,7 @@ import { comparisonFilePath } from "./schemas.ts";
 
 const RELEASE = "c501581381b8c443";
 
-describe(comparisonFilePath, () => {
+describe("the published comparison file path", () => {
   it.each([
     `/data/${RELEASE}/collections/ite/comparisons/index.json`,
     `/data/${RELEASE}/collections/ite/comparisons/uu_11_2008...uu_1_2024.json`,
