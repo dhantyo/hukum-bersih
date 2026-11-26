@@ -71,12 +71,15 @@ anchored on the text (see "Law text").
 
 4px base: `--s-1` 4, `--s-2` 8, `--s-3` 12, `--s-4` 16, `--s-5` 24, `--s-6` 32, `--s-7` 48,
 `--s-8` 64; `--s-0` 2 only for the vertical padding of pills. `--tap` 44px: minimum size of
-anything tapped (buttons, the "Aa" control). Page width 72rem (`--page`; 100rem `--page-wide` while comparing versions); reading column 42rem; side panel 17rem; hanging numbers 2.4rem (`--hang`, 1.9rem `--hang-sm` on phones). Phone gutter 16px.
+anything tapped (buttons, the "Aa" control). Page width 72rem (`--page`; 100rem `--page-wide` while comparing versions); reading column 42rem; side panel 17rem by default; hanging numbers 2.4rem (`--hang`, 1.9rem `--hang-sm` on phones). Phone gutter 16px.
 
 Document pages: breadcrumbs, title block, then two columns: side panel (Versi, table of
 contents, facts; sticky) and the text (`components/DocLayout.astro`). On wide screens the
-reader can hide the panel ("Sembunyikan"): a slim strip with a "›" button stays and the text
-column centres; remembered (`hb-panel`, applied before first paint). Up to 960px the panel is a
+reader can drag the divider to resize the panel, or hide it ("Sembunyikan", Enter on the divider,
+or dragging it narrower than its minimum): a slim strip with a "›" button stays and the text
+column centres. The width starts at 17rem and stays between 13rem and 24rem (the text keeps
+its measure); the width and the hidden state are remembered (`hb-panel-width`, `hb-panel`,
+applied before first paint). Up to 960px the panel is a
 drawer from the left over the text (`--scrim` behind it), opened from a slim chevron tab on the
 left edge (16px wide, 44px touch target): tap it, or pull it right and the drawer follows the
 finger; push the drawer left to close. Past a third of its width or a flick it opens / closes,
