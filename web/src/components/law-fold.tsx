@@ -2,15 +2,18 @@ import type { JSX } from "@solidjs/web";
 import * as stylex from "@stylexjs/stylex";
 import { onSettled } from "solid-js";
 
+import { foldAtTop, keepInView, withoutMotion } from "../lib/fold-motion.ts";
+import { collapse } from "../styles/collapse.ts";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
 import { fold, foldHead } from "../styles/markers.stylex.ts";
 import { color, font, media, size, space } from "../styles/tokens.stylex.ts";
 
 const CLOSED = ":not([open])";
+const SEEDED = ":is([data-seed])";
 const HEAD_HOVER = ":hover";
 const NO_HOVER = "@media (hover: none)";
-const REDUCED_MOTION = "@media (prefers-reduced-motion: reduce)";
+const VIEW_TOP = 100;
 const PRINT = "@media print";
 const WIDE = "@media (min-width: 961px)";
 
@@ -33,10 +36,6 @@ const styles = stylex.create({
     position: "relative",
   },
   chevron: {
-    transition: {
-      [REDUCED_MOTION]: "none",
-      default: "transform 0.15s ease",
-    },
     alignSelf: "flex-start",
     blockSize: 16,
     color: {
@@ -58,6 +57,7 @@ const styles = stylex.create({
     transform: {
       default: "rotate(90deg)",
       [stylex.when.ancestor(CLOSED, fold)]: "none",
+      [stylex.when.ancestor(SEEDED, fold)]: "none",
     },
     verticalAlign: { default: null, [media.tablet]: "top" },
     "::before": {
@@ -100,7 +100,11 @@ const styles = stylex.create({
 /** The arrow hanging in the left margin of a fold's heading (before the text on narrow screens). */
 export const FoldChevron = (props: { flexItem?: boolean }) => (
   <span
-    class={css(styles.chevron, props.flexItem === true && styles.flexItem)}
+    class={css(
+      styles.chevron,
+      collapse.turn,
+      props.flexItem === true && styles.flexItem
+    )}
     aria-hidden="true"
   />
 );
@@ -132,6 +136,7 @@ export const Fold = (props: {
     open
     id={props.id}
     data-fold
+    data-collapse
     data-num={props.num}
     data-compared={props.compared === true ? "" : undefined}
     class={[css(fold, props.top === true && styles.top), props.class]}
@@ -146,9 +151,15 @@ const folds = () =>
 
 /** "Tutup semua" and "Buka semua". */
 export const setAllFolds = (open: boolean) => {
-  for (const details of folds()) {
-    details.open = open;
-  }
+  const root = document.documentElement;
+
+  withoutMotion(root, () => {
+    keepInView(foldAtTop(VIEW_TOP), () => {
+      for (const details of folds()) {
+        details.open = open;
+      }
+    });
+  });
 };
 
 const revealHash = () => {
@@ -161,23 +172,29 @@ const revealHash = () => {
     return;
   }
 
-  let changed = false;
+  withoutMotion(document.documentElement, () => {
+    let changed = false;
 
-  for (
-    let node: Element | null =
-      target.closest("summary")?.parentElement ?? target;
-    node !== null;
-    node = node.parentElement
-  ) {
-    if (node instanceof HTMLDetailsElement && !node.open) {
-      node.open = true;
-      changed = true;
+    for (
+      let node: Element | null =
+        target.closest("summary")?.parentElement ?? target;
+      node !== null;
+      node = node.parentElement
+    ) {
+      if (node instanceof HTMLDetailsElement && !node.open) {
+        node.open = true;
+        changed = true;
+      }
     }
-  }
 
-  if (changed) {
-    target.scrollIntoView();
-  }
+    if (changed) {
+      target.scrollIntoView();
+    }
+  });
+};
+
+const revealFound = () => {
+  withoutMotion(document.documentElement);
 };
 
 const openForPrint = () => {
@@ -186,15 +203,19 @@ const openForPrint = () => {
   const open = () => {
     reopened = [...folds()].filter((details) => !details.open);
 
-    for (const details of reopened) {
-      details.open = true;
-    }
+    withoutMotion(document.documentElement, () => {
+      for (const details of reopened) {
+        details.open = true;
+      }
+    });
   };
 
   const restore = () => {
-    for (const details of reopened) {
-      details.open = false;
-    }
+    withoutMotion(document.documentElement, () => {
+      for (const details of reopened) {
+        details.open = false;
+      }
+    });
 
     reopened = [];
   };
@@ -213,11 +234,13 @@ export const useFolds = () => {
   onSettled(() => {
     revealHash();
     window.addEventListener("hashchange", revealHash);
+    document.addEventListener("beforematch", revealFound, true);
 
     const stopPrint = openForPrint();
 
     return () => {
       window.removeEventListener("hashchange", revealHash);
+      document.removeEventListener("beforematch", revealFound, true);
       stopPrint();
     };
   });

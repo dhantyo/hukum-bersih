@@ -17,6 +17,7 @@ import {
   pasalKey,
   preview,
 } from "../lib/display.ts";
+import { withoutMotion } from "../lib/fold-motion.ts";
 import { format, penjelasan } from "../lib/reading-preferences.ts";
 import { isPresent } from "../lib/text.ts";
 import type { AknNode, ReaderText } from "../server/records/reader-text.ts";
@@ -978,8 +979,13 @@ export const LawText = (props: {
   createEffect(
     () => current().value,
     (value) => {
-      if (preamble) {
-        preamble.open = value === "asli";
+      const element = preamble;
+
+      if (element) {
+        withoutMotion(document.documentElement, () => {
+          element.open = value === "asli";
+          delete element.dataset.seed;
+        });
       }
     }
   );
@@ -1010,6 +1016,8 @@ export const LawText = (props: {
       <Show when={props.text.preamble.length > 0}>
         <details
           open
+          data-collapse
+          data-seed
           class={css(styles.preamble, styles.measure, fold)}
           ref={(element: HTMLDetailsElement) => {
             preamble = element;
