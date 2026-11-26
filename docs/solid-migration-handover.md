@@ -1,6 +1,6 @@
 # Solid migration handover
 
-Last checked: 2026-11-24. The Solid implementation checkpoint is `8431e778` on branch `feat/solid-reader`. The rewrite is in progress. The Astro site remains the production rollback path.
+Last checked: 2026-11-24. The Solid implementation was developed on branch `feat/solid-reader` and merged into `main` on 2026-11-26; the preview deploys from `main`. The rewrite is in progress. The Astro site remains the production rollback path.
 
 ## Goal
 

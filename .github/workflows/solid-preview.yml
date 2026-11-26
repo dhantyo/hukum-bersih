@@ -2,10 +2,8 @@ name: Deploy Solid preview
 
 on:
   workflow_dispatch:
-  # A manual run needs this file on the default branch; until it is there, a push to the Solid
-  # branch deploys the preview from the branch's own copy.
   push:
-    branches: [feat/solid-reader]
+    branches: [main]
 
 permissions:
   contents: read
