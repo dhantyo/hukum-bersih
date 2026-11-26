@@ -7,6 +7,7 @@ import type { Mark, VersionComparison } from "../server/law-comparison.ts";
 import type { AknNode, ReaderText } from "../server/records/reader-text.ts";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
+import { panel } from "../styles/panel.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 import { MarkIcon } from "./law-compare.tsx";
 import { setAllFolds } from "./law-fold.tsx";
@@ -22,15 +23,7 @@ const styles = stylex.create({
     alignItems: "baseline",
     display: "flex",
     justifyContent: "space-between",
-    marginBlockEnd: space.s2,
-  },
-  title: {
-    margin: 0,
-    color: color.textMuted,
-    fontSize: size.xs,
-    fontWeight: 600,
-    letterSpacing: "0.06em",
-    textTransform: "uppercase",
+    marginBlockEnd: space.s3,
   },
   folds: {
     gap: space.s3,
@@ -50,17 +43,13 @@ const styles = stylex.create({
     outlineOffset: { default: null, ":focus-visible": 2 },
     outlineStyle: { default: null, ":focus-visible": "solid" },
     outlineWidth: { default: null, ":focus-visible": 3 },
-    textDecorationLine: "underline",
-    textDecorationThickness: { default: 1, ":hover": 2 },
+    textDecorationLine: { default: "none", ":hover": "underline" },
     textUnderlineOffset: "0.15em",
   },
   list: {
     margin: 0,
     padding: 0,
     listStyle: "none",
-    borderInlineStartColor: color.line,
-    borderInlineStartStyle: "solid",
-    borderInlineStartWidth: 1,
   },
   chapterLink: {
     paddingBlock: {
@@ -78,13 +67,11 @@ const styles = stylex.create({
     color: { [current]: color.link, default: color.text },
     display: "block",
     lineHeight: 1.35,
-    marginInlineStart: -1,
   },
   label: {
+    color: color.textMuted,
     display: "block",
     fontSize: size.xs,
-    fontWeight: 600,
-    letterSpacing: "0.03em",
   },
   block: { display: "block" },
   range: { color: color.textMuted, display: "block", fontSize: size.xs },
@@ -441,7 +428,7 @@ export const Toc = (props: {
       }}
     >
       <div class={css(styles.head)}>
-        <h2 class={css(styles.title)}>Daftar isi</h2>
+        <h2 class={css(panel.title)}>Daftar isi</h2>
         <span class={css(styles.folds)}>
           <button
             type="button"
