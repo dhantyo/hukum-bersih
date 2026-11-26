@@ -289,17 +289,6 @@ const sidesOf = (row: DiffLine, gap: Piece[]) => {
     return { old: removed, current: gap, merged: removed };
   }
 
-  if (row.kind === "diganti") {
-    const old = whole("modOld", textOf(row, "a"));
-    const current = whole("modNew", textOf(row, "b"));
-
-    return {
-      old,
-      current,
-      merged: [...old, ...whole("same", " "), ...current],
-    };
-  }
-
   return wordSides(row);
 };
 
