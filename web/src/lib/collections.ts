@@ -58,6 +58,7 @@ export const getCollection = prerendered(
     }
 
     return {
+      slug: collectionSlug,
       name: collection.name,
       named: collection.named,
       title: collection.t,
