@@ -2,6 +2,7 @@ import { onSettled } from "solid-js";
 
 import {
   crossingDim,
+  dragAfterMove,
   FAINT,
   FULL,
   GLIDE_MS,
@@ -17,6 +18,7 @@ import {
 const TWO = 2;
 const PILL = '[data-slot="column-order-column"]';
 const TRANSLATE = "translate";
+const DRAG = "--drag-x";
 const NEXT_TASK_MS = 0;
 
 interface Session {
@@ -27,6 +29,7 @@ interface Session {
   from: readonly string[];
   live: readonly string[];
   heldByPointer: number | undefined;
+  heldLeft: number;
 }
 
 const sameOrder = (first: readonly string[], second: readonly string[]) =>
@@ -113,6 +116,26 @@ export const createTextSlide = (
     }
   };
 
+  const keepHeldUnderPointer = () => {
+    const held = heldPill();
+
+    if (session === undefined || held === undefined) {
+      return;
+    }
+
+    const left = held.offsetLeft;
+    const drawn = held.style.getPropertyValue(DRAG);
+
+    if (drawn !== "") {
+      held.style.setProperty(
+        DRAG,
+        `${dragAfterMove(Number(drawn.replace("px", "")), session.heldLeft, left)}px`
+      );
+    }
+
+    session.heldLeft = left;
+  };
+
   const apply = () => {
     if (session === undefined || session.columns === undefined) {
       return;
@@ -172,6 +195,7 @@ export const createTextSlide = (
       from,
       live: from,
       heldByPointer,
+      heldLeft: heldPill()?.offsetLeft ?? 0,
     };
     cancelAnimationFrame(pace);
     pace = requestAnimationFrame(keepPace);
@@ -238,6 +262,11 @@ export const createTextSlide = (
 
     if (session !== undefined) {
       session.live = order;
+
+      if (session.heldByPointer !== undefined) {
+        keepHeldUnderPointer();
+        apply();
+      }
     }
 
     schedule();

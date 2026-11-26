@@ -1,6 +1,11 @@
 import { describe, expect, it } from "vitest";
 
-import { crossingDim, pillTravel, slotShifts } from "./column-shift.ts";
+import {
+  crossingDim,
+  dragAfterMove,
+  pillTravel,
+  slotShifts,
+} from "./column-shift.ts";
 
 const LEFTS = [100, 700];
 const CENTRES = [300, 500];
@@ -32,5 +37,21 @@ describe(crossingDim, () => {
 
   it("fades a column most where the two are level", () => {
     expect(crossingDim(300, 600)).toBeCloseTo(0.2);
+  });
+});
+
+describe(dragAfterMove, () => {
+  it("keeps a held pill where it was drawn when the reorder moves its slot", () => {
+    const pitch = 200;
+    const slotLeft = 100;
+    const drawnBefore = slotLeft + 120;
+    const drag = drawnBefore - slotLeft;
+    const dragAfter = dragAfterMove(drag, slotLeft, slotLeft + pitch);
+
+    expect(slotLeft + pitch + dragAfter).toBe(drawnBefore);
+  });
+
+  it("leaves the offset alone when the slot did not move", () => {
+    expect(dragAfterMove(40, 100, 100)).toBe(40);
   });
 });
