@@ -195,7 +195,12 @@ export const createTextSlide = (
       from,
       live: from,
       heldByPointer,
-      heldLeft: heldPill()?.offsetLeft ?? 0,
+      heldLeft:
+        pills().find(
+          (pill) =>
+            heldByPointer !== undefined &&
+            pill.dataset.version === from[heldByPointer]
+        )?.offsetLeft ?? 0,
     };
     cancelAnimationFrame(pace);
     pace = requestAnimationFrame(keepPace);
