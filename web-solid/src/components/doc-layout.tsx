@@ -54,6 +54,8 @@ const FOLDED = ':has([data-cmp-bar]):not([data-cmp-panel="open"])';
 const UNFOLDED = ':has([data-cmp-bar])[data-cmp-panel="open"]';
 
 const PANEL_ID = "doc-panel";
+const COLUMNS = ':has([data-slot="scroll-area"])';
+const HIDDEN_TEXT = `${HIDDEN}:not(${COLUMNS})`;
 const HOVERED = ":is([data-hovering])";
 const DRAGGED = ":is([data-dragging])";
 
@@ -206,19 +208,23 @@ const styles = stylex.create({
   },
   text: {
     minInlineSize: 0,
-    paddingInlineStart: { default: space.s5, [media.tablet]: 0 },
+    paddingInlineStart: {
+      default: space.s5,
+      [stylex.when.ancestor(COLUMNS)]: 0,
+      [media.tablet]: 0,
+    },
   },
   textBody: {
     marginInline: {
       [WIDE]: { default: null, [stylex.when.ancestor(COMPARING)]: 0 },
       default: null,
-      [stylex.when.ancestor(HIDDEN)]: "auto",
+      [stylex.when.ancestor(HIDDEN_TEXT)]: "auto",
       [media.tablet]: 0,
     },
     inlineSize: {
       [WIDE]: { default: null, [stylex.when.ancestor(COMPARING)]: "auto" },
       default: null,
-      [stylex.when.ancestor(HIDDEN)]: `min(100%, ${size.measure})`,
+      [stylex.when.ancestor(HIDDEN_TEXT)]: `min(100%, ${size.measure})`,
       [media.tablet]: "auto",
     },
   },
