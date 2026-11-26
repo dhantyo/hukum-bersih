@@ -67,7 +67,7 @@ const runPair = async (browser: Browser, item: PlanItem, runDir: string) => {
           width,
           scheme,
           format,
-          url: `${originOf(site)}${route.path}`,
+          url: `${originOf(site)}${site === "astro" ? (route.astroPath ?? route.path) : route.path}`,
         })
     )
   );

@@ -3,6 +3,8 @@ export type Site = "astro" | "solid";
 export interface Route {
   id: string;
   path: string;
+  /** The address on the Astro site, where it differs. */
+  astroPath?: string;
   formats?: readonly string[];
   viewportOnly?: boolean;
   status?: number;
@@ -21,7 +23,8 @@ export const ROUTES: readonly Route[] = [
   { id: "law", path: "/uu/11/2008/", formats: LAW_FORMATS },
   {
     id: "law-compare",
-    path: "/uu/11/2008/?bandingkan=uu_1_2024&dari=uu_11_2008",
+    path: "/uu/11/2008/?v=uu_11_2008,uu_1_2024",
+    astroPath: "/uu/11/2008/?bandingkan=uu_1_2024&dari=uu_11_2008",
     formats: LAW_FORMATS,
     waitFor: { astro: "html[data-compare]", solid: "[data-compared]" },
   },

@@ -60,23 +60,24 @@ urls=(
   /uu/tahun/02008/
   /uu/11/2008
   /uu/11/2008/
-  '/uu/11/2008/?bandingkan'
-  '/uu/11/2008/?bandingkan='
-  '/uu/11/2008/?bandingkan=uu_19_2016'
-  '/uu/11/2008/?bandingkan=uu_1_2024'
-  '/uu/11/2008/?bandingkan=uu_0_0000'
-  '/uu/11/2008/?bandingkan&dari=uu_19_2016'
-  '/uu/11/2008/?dari=uu_19_2016'
+  '/uu/11/2008/?v'
+  '/uu/11/2008/?v='
+  '/uu/11/2008/?v=uu_19_2016'
+  '/uu/11/2008/?v=uu_1_2024'
+  '/uu/11/2008/?v=uu_0_0000'
+  '/uu/11/2008/?v=uu_11_2008,uu_1_2024'
+  '/uu/11/2008/?v=uu_1_2024,uu_11_2008'
+  '/uu/11/2008/?v=uu_19_2016,uu_19_2016'
+  '/uu/11/2008/?v=uu_11_2008,uu_19_2016,uu_1_2024'
+  '/uu/11/2008/?v=uu_11_2008,uu_1_2024,uu_0_0000'
+  '/uu/11/2008/?v=uu_11_2008&v=uu_1_2024'
   '/uu/11/2008/?bandingkan=uu_1_2024&dari=uu_11_2008'
-  '/uu/11/2008/?bandingkan=uu_11_2008&dari=uu_1_2024'
-  '/uu/11/2008/?bandingkan=uu_19_2016&dari=uu_19_2016'
-  '/uu/11/2008/?bandingkan=uu_1_2024&dari=uu_0_0000'
   /uu/11/2008/perubahan/
   /uu/19/2016/
-  '/uu/19/2016/?bandingkan'
+  '/uu/19/2016/?v='
   /uu/19/2016/perubahan/
   /uu/9/1960/
-  '/uu/9/1960/?bandingkan'
+  '/uu/9/1960/?v='
   /uu/9/1960/perubahan/
   /uu/15/1950/
   /uu/15/1950/perubahan/
@@ -93,25 +94,27 @@ urls=(
   /koleksi/tidak-ada/
   /koleksi/tidak-ada/perubahan.json
   /koleksi/Bad_Slug/
+  "$ite/?v=uu_11_2008,uu_1_2024"
+  "$ite/?v"
+  "$ite/?v="
+  "$ite/?v=uu_19_2016"
+  "$ite/?v=uu_11_2008"
+  "$ite/?v=uu_1_2024,uu_11_2008"
+  "$ite/?v=uu_1_2024,uu_1_2024"
+  "$ite/?v=uu_11_2008,uu_19_2016,uu_1_2024"
+  "$ite/?v=uu_9_9999"
+  "$ite/?v=BAD%20ID"
+  "$ite/?v=uu_11_2008,uu_1_2024&pasal=27A"
   "$ite/?dari=uu_11_2008&bandingkan=uu_1_2024"
-  "$ite/?bandingkan"
-  "$ite/?bandingkan="
-  "$ite/?bandingkan=uu_19_2016"
-  "$ite/?bandingkan=uu_11_2008"
-  "$ite/?dari=uu_1_2024"
-  "$ite/?dari=uu_1_2024&bandingkan=uu_11_2008"
-  "$ite/?dari=uu_1_2024&bandingkan=uu_1_2024"
-  "$ite/?bandingkan=uu_9_9999"
-  "$ite/?bandingkan=BAD%20ID"
-  "$ite/2016-11-25/?dari=uu_11_2008&bandingkan=uu_19_2016"
+  "$ite/2016-11-25/?v=uu_11_2008,uu_19_2016"
   /koleksi/bumn/
-  '/koleksi/bumn/?dari=uu_19_2003&bandingkan=uu_16_2025'
+  '/koleksi/bumn/?v=uu_19_2003,uu_16_2025'
   /koleksi/cipta-kerja/
-  '/koleksi/cipta-kerja/?bandingkan'
+  '/koleksi/cipta-kerja/?v='
   /koleksi/bank-indonesia/
-  '/koleksi/bank-indonesia/?bandingkan'
+  '/koleksi/bank-indonesia/?v='
   /koleksi/tidak-ada/2016-11-25/
-  '/koleksi/tidak-ada/?bandingkan'
+  '/koleksi/tidak-ada/?v='
   /ruu/
   "$draft/"
   "$draft/ruu_perampasan-aset_2023-05_draft_pemerintah/"
@@ -146,16 +149,16 @@ urls=(
   "/search-index/$release/../../x.json"
 )
 
-# Every ordered pair of versions of three amended laws, on the law page (`?bandingkan&dari`, read as
-# older against newer whichever way round) and on the collection page (`?dari&bandingkan`).
+# Every ordered pair of versions of three amended laws, on the law page and on the collection page
+# (`?v=<left>,<right>`, in either order).
 pairs() {
   local page="$1" slug="$2" from to
   shift 2
   for from in "$@"; do
     for to in "$@"; do
       if [ "$from" != "$to" ]; then
-        urls+=("$page/?bandingkan=$to&dari=$from")
-        urls+=("/koleksi/$slug/?dari=$from&bandingkan=$to")
+        urls+=("$page/?v=$from,$to")
+        urls+=("/koleksi/$slug/?v=$from,$to")
       fi
     done
   done
@@ -165,10 +168,10 @@ pairs /uu/4/2009 minerba uu_4_2009 uu_3_2020 uu_2_2025
 pairs /uu/19/2003 bumn uu_19_2003 uu_1_2025 uu_16_2025
 # an amending law's own page: its text decides where the comparison puts a pasal it does not have
 urls+=(
-  '/uu/8/2011/?bandingkan=uu_7_2020&dari=uu_24_2003'
-  '/uu/7/2020/?bandingkan=uu_8_2011'
-  '/uu/19/2016/?bandingkan=uu_1_2024&dari=uu_11_2008'
-  '/uu/1/2024/?bandingkan=uu_19_2016'
+  '/uu/8/2011/?v=uu_24_2003,uu_7_2020'
+  '/uu/7/2020/?v=uu_8_2011'
+  '/uu/19/2016/?v=uu_11_2008,uu_1_2024'
+  '/uu/1/2024/?v=uu_19_2016'
 )
 
 i=0
