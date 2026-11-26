@@ -12,29 +12,41 @@ from .catalog import export_catalog
 from .collection_export import export_collections
 from .drafts import export_drafts
 from .laws import Laws, export_laws
+from .public import write_public
 from .release import publish
 from .search import SearchRecords
 
 
-def export_corpus(data_dir: Path, stage: Path | None, corpus: Path | None = None) -> list[str]:
+def export_corpus(
+    data_dir: Path, stage: Path | None, corpus: Path | None = None, public: Path | None = None
+) -> list[str]:
     """Write the corpus built from ``data_dir`` into ``stage``, then publish it into ``corpus``
-    when one is given; returns one report line per step. With no ``stage``, the stage is a
+    when one is given, and with ``public`` write the active release's catalog and search index
+    there (``write_public``); returns one report line per step. With no ``stage``, the stage is a
     temporary folder inside ``corpus`` that is deleted once published."""
     if stage is not None:
-        return _export_and_publish(data_dir, stage, corpus)
+        return _export_and_publish(data_dir, stage, corpus, public)
     if corpus is None:
         raise ValueError("export_corpus needs a stage or a corpus folder")
     corpus.mkdir(parents=True, exist_ok=True)
     temporary = Path(tempfile.mkdtemp(prefix=".stage-", dir=corpus))
     try:
-        return _export_and_publish(data_dir, temporary, corpus)
+        return _export_and_publish(data_dir, temporary, corpus, public)
     finally:
         shutil.rmtree(temporary, ignore_errors=True)
 
 
-def _export_and_publish(data_dir: Path, stage: Path, corpus: Path | None) -> list[str]:
+def _export_and_publish(
+    data_dir: Path, stage: Path, corpus: Path | None, public: Path | None
+) -> list[str]:
     lines = _export(data_dir, stage)
-    return lines if corpus is None else [*lines, f"release {publish(stage, corpus)}"]
+    if corpus is None:
+        return lines
+    release = publish(stage, corpus)
+    lines.append(f"release {release}")
+    if public is not None:
+        lines.append(write_public(stage, public, release))
+    return lines
 
 
 def _export(data_dir: Path, stage: Path) -> list[str]:

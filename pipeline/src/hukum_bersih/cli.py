@@ -81,6 +81,10 @@ def main(argv: list[str] | None = None) -> int:
                    "writes into a temporary folder that is deleted afterwards")
     p.add_argument("--publish", type=Path, metavar="CORPUS", default=None,
                    help="then publish the stage into this corpus folder (`release publish`)")
+    p.add_argument("--public", type=Path, metavar="DIR", default=None,
+                   help="with --publish: also write the active release's law catalog and search "
+                        "index into this public folder (web-solid/public), and drop older "
+                        "releases from it")
 
     p = sub.add_parser("release", help="publish a corpus stage as a release, or switch the "
                        "active one")
@@ -238,7 +242,9 @@ def main(argv: list[str] | None = None) -> int:
 
         if args.stage is None and args.publish is None:
             parser.error("export-corpus needs a stage folder or --publish CORPUS")
-        for line in export_corpus(args.data_dir, args.stage, args.publish):
+        if args.public is not None and args.publish is None:
+            parser.error("--public needs --publish")
+        for line in export_corpus(args.data_dir, args.stage, args.publish, args.public):
             print(line)
         return 0
 
