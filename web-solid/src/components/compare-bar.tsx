@@ -131,8 +131,8 @@ const styles = stylex.create({
     minInlineSize: 0,
     position: "relative",
     scale: { [GRABBED]: 1.04, default: 1 },
-    transform: {
-      [GRABBED]: `translate(clamp(${pillRange.least}, var(--drag-x, 0px), ${pillRange.most}), 0)`,
+    translate: {
+      [GRABBED]: `clamp(${pillRange.least}, var(--drag-x, 0px), ${pillRange.most}) 0`,
       default: null,
     },
     userSelect: "none",
