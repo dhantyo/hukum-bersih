@@ -17,7 +17,6 @@ import {
   pasalKey,
   preview,
 } from "../lib/display.ts";
-import { withoutMotion } from "../lib/fold-motion.ts";
 import { format, penjelasan } from "../lib/reading-preferences.ts";
 import { isPresent } from "../lib/text.ts";
 import type { AknNode, ReaderText } from "../server/records/reader-text.ts";
@@ -86,7 +85,6 @@ const styles = stylex.create({
     paddingBlockStart: {
       default: `calc(${space.s4} + ${space.s1})`,
       [stylex.when.ancestor(ASLI)]: space.s1,
-      [stylex.when.ancestor(CLOSED, fold)]: space.s3,
     },
   },
   hitPart: { paddingBlock: space.s1 },
@@ -94,7 +92,6 @@ const styles = stylex.create({
     marginBlockStart: {
       default: space.s2,
       [stylex.when.ancestor(ASLI)]: space.s6,
-      [stylex.when.ancestor(CLOSED, fold)]: space.s2,
     },
   },
   firstChapter: {
@@ -102,7 +99,6 @@ const styles = stylex.create({
     marginBlockStart: {
       default: space.s5,
       [stylex.when.ancestor(ASLI)]: space.s7,
-      [stylex.when.ancestor(CLOSED, fold)]: space.s2,
     },
   },
   unchanged: {
@@ -178,7 +174,6 @@ const styles = stylex.create({
     marginBlock: {
       default: `${space.s7} ${space.s3}`,
       [stylex.when.ancestor(ASLI)]: `${space.s7} ${space.s4}`,
-      [stylex.when.ancestor(CLOSED, fold)]: `${space.s2} 0`,
     },
     borderBlockStartColor: color.line,
     borderBlockStartStyle: {
@@ -203,7 +198,6 @@ const styles = stylex.create({
     paddingBlockStart: {
       default: space.s4,
       [stylex.when.ancestor(ASLI)]: 0,
-      [stylex.when.ancestor(CLOSED, fold)]: space.s3,
     },
     position: "relative",
     textAlign: {
@@ -215,7 +209,6 @@ const styles = stylex.create({
     marginBlock: {
       default: `${space.s6} ${space.s2}`,
       [stylex.when.ancestor(ASLI)]: `${space.s7} ${space.s4}`,
-      [stylex.when.ancestor(CLOSED, fold)]: `${space.s2} 0`,
     },
     borderBlockStartStyle: "none",
     fontSize: {
@@ -260,7 +253,6 @@ const styles = stylex.create({
     marginBlock: {
       default: `${space.s5} ${space.s2}`,
       [stylex.when.ancestor(ASLI)]: `${space.s6} ${space.s3}`,
-      [stylex.when.ancestor(CLOSED, fold)]: `${space.s2} 0`,
     },
     fontFamily: {
       default: font.ui,
@@ -982,10 +974,8 @@ export const LawText = (props: {
       const element = preamble;
 
       if (element) {
-        withoutMotion(document.documentElement, () => {
-          element.open = value === "asli";
-          delete element.dataset.seed;
-        });
+        element.open = value === "asli";
+        delete element.dataset.seed;
       }
     }
   );
@@ -1016,7 +1006,6 @@ export const LawText = (props: {
       <Show when={props.text.preamble.length > 0}>
         <details
           open
-          data-collapse
           data-seed
           class={css(styles.preamble, styles.measure, fold)}
           ref={(element: HTMLDetailsElement) => {

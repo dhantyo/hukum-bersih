@@ -57,37 +57,7 @@
   }
 }
 
-/* The Pembukaan is open in the HTML for a reader without scripts and is closed after hydration unless the original format is on; `data-seed` marks it until then, so the first paint is the hydrated one.
-   The height of a native `<details data-collapse>`, which StyleX cannot reach (::details-content).
-   The duration and easing are `collapseDuration` and `collapseEasing` in motion.stylex.ts, so change them together. */
-@supports selector(::details-content) {
-  details[data-collapse] {
-    interpolate-size: allow-keywords;
-  }
-
-  details[data-collapse]::details-content {
-    block-size: 0;
-    overflow: clip;
-    transition:
-      block-size 0.24s ease-out,
-      content-visibility 0.24s ease-out allow-discrete;
-  }
-
-  details[data-collapse][open]::details-content {
-    block-size: auto;
-  }
-
-  @media (prefers-reduced-motion: reduce), print {
-    details[data-collapse]::details-content {
-      transition: none;
-    }
-  }
-
-  html[data-fold-instant] details[data-collapse]::details-content {
-    transition: none;
-  }
-}
-
+/* The Pembukaan is open in the HTML for a reader without scripts and is closed after hydration unless the original format is on; `data-seed` marks it until then, so the first paint is the hydrated one. */
 @media (scripting: enabled) {
   html:not([data-format="asli"]) details[data-seed] > :not(summary) {
     display: none;

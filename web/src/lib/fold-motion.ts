@@ -1,41 +1,4 @@
-const INSTANT = "data-fold-instant";
-const FRAMES = 2;
 const FOLD = "details[data-fold]";
-
-interface Marked {
-  toggleAttribute: (name: string, force?: boolean) => boolean;
-}
-
-type Later = (step: () => void) => void;
-
-const frames = (count: number, step: () => void, later: Later) => {
-  if (count === 0) {
-    step();
-
-    return;
-  }
-
-  later(() => {
-    frames(count - 1, step, later);
-  });
-};
-
-/** Runs a change that opens or closes folds with their height motion off, until two frames after it. */
-export const withoutMotion = (
-  root: Marked,
-  run?: () => void,
-  later: Later = requestAnimationFrame
-) => {
-  root.toggleAttribute(INSTANT, true);
-  run?.();
-  frames(
-    FRAMES,
-    () => {
-      root.toggleAttribute(INSTANT, false);
-    },
-    later
-  );
-};
 
 /** How far to scroll so an element that sat `before` px from the top of the window sits there again
  * at `after`; an element that began above the window is brought to its top edge. */

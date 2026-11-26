@@ -2,7 +2,7 @@ import type { JSX } from "@solidjs/web";
 import * as stylex from "@stylexjs/stylex";
 import { onSettled } from "solid-js";
 
-import { foldAtTop, keepInView, withoutMotion } from "../lib/fold-motion.ts";
+import { foldAtTop, keepInView } from "../lib/fold-motion.ts";
 import { collapse } from "../styles/collapse.ts";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
@@ -136,7 +136,6 @@ export const Fold = (props: {
     open
     id={props.id}
     data-fold
-    data-collapse
     data-num={props.num}
     data-compared={props.compared === true ? "" : undefined}
     class={[css(fold, props.top === true && styles.top), props.class]}
@@ -151,14 +150,10 @@ const folds = () =>
 
 /** "Tutup semua" and "Buka semua". */
 export const setAllFolds = (open: boolean) => {
-  const root = document.documentElement;
-
-  withoutMotion(root, () => {
-    keepInView(foldAtTop(VIEW_TOP), () => {
-      for (const details of folds()) {
-        details.open = open;
-      }
-    });
+  keepInView(foldAtTop(VIEW_TOP), () => {
+    for (const details of folds()) {
+      details.open = open;
+    }
   });
 };
 
@@ -172,29 +167,23 @@ const revealHash = () => {
     return;
   }
 
-  withoutMotion(document.documentElement, () => {
-    let changed = false;
+  let changed = false;
 
-    for (
-      let node: Element | null =
-        target.closest("summary")?.parentElement ?? target;
-      node !== null;
-      node = node.parentElement
-    ) {
-      if (node instanceof HTMLDetailsElement && !node.open) {
-        node.open = true;
-        changed = true;
-      }
+  for (
+    let node: Element | null =
+      target.closest("summary")?.parentElement ?? target;
+    node !== null;
+    node = node.parentElement
+  ) {
+    if (node instanceof HTMLDetailsElement && !node.open) {
+      node.open = true;
+      changed = true;
     }
+  }
 
-    if (changed) {
-      target.scrollIntoView();
-    }
-  });
-};
-
-const revealFound = () => {
-  withoutMotion(document.documentElement);
+  if (changed) {
+    target.scrollIntoView();
+  }
 };
 
 const openForPrint = () => {
@@ -203,19 +192,15 @@ const openForPrint = () => {
   const open = () => {
     reopened = [...folds()].filter((details) => !details.open);
 
-    withoutMotion(document.documentElement, () => {
-      for (const details of reopened) {
-        details.open = true;
-      }
-    });
+    for (const details of reopened) {
+      details.open = true;
+    }
   };
 
   const restore = () => {
-    withoutMotion(document.documentElement, () => {
-      for (const details of reopened) {
-        details.open = false;
-      }
-    });
+    for (const details of reopened) {
+      details.open = false;
+    }
 
     reopened = [];
   };
@@ -234,13 +219,11 @@ export const useFolds = () => {
   onSettled(() => {
     revealHash();
     window.addEventListener("hashchange", revealHash);
-    document.addEventListener("beforematch", revealFound, true);
 
     const stopPrint = openForPrint();
 
     return () => {
       window.removeEventListener("hashchange", revealHash);
-      document.removeEventListener("beforematch", revealFound, true);
       stopPrint();
     };
   });

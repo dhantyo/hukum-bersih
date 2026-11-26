@@ -206,7 +206,7 @@ const chipStyle = {
 } as const;
 
 const ChangedArticles = (props: { event: LawEvent }) => (
-  <details data-collapse class={css(styles.box, fold)}>
+  <details class={css(styles.box, fold)}>
     <summary class={css(styles.trigger)}>
       <span class={css(styles.counts)}>
         <For each={props.event.changes}>
