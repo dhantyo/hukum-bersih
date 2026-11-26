@@ -36,33 +36,33 @@ jobs:
   changes:
     runs-on: ubuntu-latest
     outputs:
-      web-solid: ${{ steps.filter.outputs.web-solid }}
+      web: ${{ steps.filter.outputs.web }}
     steps:
       - uses: actions/checkout@v5
       - id: filter
-        uses: dorny/paths-filter@v3
+        uses: dorny/paths-filter@v4
         with:
           filters: |
-            web-solid:
-              - 'web-solid/**'
+            web:
+              - 'web/**'
 
-  web-solid:
+  web:
     needs: changes
-    if: needs.changes.outputs.web-solid == 'true'
+    if: needs.changes.outputs.web == 'true'
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: web-solid
+        working-directory: web
     steps:
       - uses: actions/checkout@v5
       - uses: pnpm/action-setup@v5
         with:
-          package_json_file: web-solid/package.json
+          package_json_file: web/package.json
       - uses: actions/setup-node@v5
         with:
-          node-version-file: web-solid/.node-version
+          node-version-file: web/.node-version
           cache: pnpm
-          cache-dependency-path: web-solid/pnpm-lock.yaml
+          cache-dependency-path: web/pnpm-lock.yaml
       - run: pnpm install --frozen-lockfile
       - run: pnpm run check
       - run: pnpm exec tsc --noEmit

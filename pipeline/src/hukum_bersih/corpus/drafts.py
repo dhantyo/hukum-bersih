@@ -1,5 +1,5 @@
 """``drafts/<slug>/``: the record of each RUU, the text of each version that has one, and the
-comparison of every pair of those versions (``web-solid/scripts/export-drafts.ts`` and
+comparison of every pair of those versions (``web/scripts/export-drafts.ts`` and
 ``draft-comparison.ts``, with ``web/src/lib/data.ts`` for reading ``data/ruu``).
 
 JavaScript wrote these files without a final newline.

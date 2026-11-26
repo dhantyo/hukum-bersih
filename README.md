@@ -10,7 +10,7 @@ An open, layman-friendly tracker for Indonesian law: clean searchable text, RUU 
 |---|---|---|
 | `data/` | Law and RUU texts (Bluebell / Akoma Ntoso), YAML records, source manifests. **Source of truth.** No PDFs. | [CC0 1.0](data/LICENSE) |
 | `pipeline/` | Python: fetch, archive, PDF → Akoma Ntoso | [AGPL-3.0](LICENSE) |
-| `web-solid/` | Solid 2 reader on a Cloudflare Worker (prerendered pages, Pagefind search) | [AGPL-3.0](LICENSE) |
+| `web/` | Solid 2 reader on a Cloudflare Worker (prerendered pages, Pagefind search) | [AGPL-3.0](LICENSE) |
 | `docs/` | [Architecture](docs/ARCHITECTURE.md), [naming](docs/NAMING.md), [decisions](docs/decisions/), brief | AGPL-3.0 |
 
 See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for how the pieces fit together.
@@ -23,7 +23,7 @@ Pipeline (Python ≥ 3.12, [uv](https://docs.astral.sh/uv/)):
 cd pipeline && uv sync && uv run pytest
 ```
 
-Website (`web-solid/`, previewed by `.github/workflows/solid-preview.yml`; Node and pnpm versions in `web-solid/.node-version` and `web-solid/package.json`). The corpus export and local run are in [web-solid/README.md](web-solid/README.md).
+Website (`web/`, deployed by `.github/workflows/deploy.yml`; Node and pnpm versions in `web/.node-version` and `web/package.json`). The corpus export and local run are in [web/README.md](web/README.md).
 
 Check that the generated Akoma Ntoso is valid (as CI does):
 

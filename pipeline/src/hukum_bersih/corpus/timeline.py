@@ -1,5 +1,5 @@
 """The record of a collection that has no merged text: what happened to it, oldest first, and
-what we lack (``web-solid/scripts/collection-timeline.ts``).
+what we lack (``web/scripts/collection-timeline.ts``).
 """
 
 from __future__ import annotations

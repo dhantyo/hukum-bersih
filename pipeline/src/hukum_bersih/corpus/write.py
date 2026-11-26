@@ -1,5 +1,5 @@
 """One JSON writer whose bytes equal ``JSON.stringify(value)`` plus a newline, which is how the
-TypeScript export (``web-solid/scripts/export-*.ts``) wrote every file.
+TypeScript export (``web/scripts/export-*.ts``) wrote every file.
 
 What that means, and what Python does by default instead:
 

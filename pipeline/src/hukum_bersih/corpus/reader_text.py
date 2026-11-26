@@ -1,6 +1,6 @@
 """The text of a law as the reader shows it: the Akoma Ntoso tree cut down to the parts the
 page renders, plus the short pasal anchors (``web/src/lib/lawdoc.ts``, ``article-anchors.ts``,
-``web-solid/scripts/reader-text.ts``).
+``web/scripts/reader-text.ts``).
 
 The tree comes from the lxml element ``akn.build.to_akn_tree`` makes from the stored Bluebell
 text; an element parsed back from the generated XML gives the same tree.

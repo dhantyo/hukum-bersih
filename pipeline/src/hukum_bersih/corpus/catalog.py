@@ -1,5 +1,5 @@
 """``law-catalog.json`` and ``listings/``: what the search box and the listing pages read
-(``web-solid/scripts/export-catalog.ts`` and ``law-listings.ts``, with ``search-catalog.ts`` and
+(``web/scripts/export-catalog.ts`` and ``law-listings.ts``, with ``search-catalog.ts`` and
 ``labels.ts`` of ``web/src/lib``).
 
 Only what the release holds is listed: the catalog and the listings read the stage's ``laws/``

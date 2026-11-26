@@ -1,5 +1,5 @@
 """``laws/<type>/<number>/<year>/index.json``: one record per law for the reader page
-(``web-solid/scripts/export-laws.ts``).
+(``web/scripts/export-laws.ts``).
 """
 
 from __future__ import annotations
