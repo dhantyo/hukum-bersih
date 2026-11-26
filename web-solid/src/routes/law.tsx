@@ -3,7 +3,7 @@ import { createMemo, Show } from "solid-js";
 import * as v from "valibot";
 
 import { LawReader } from "../components/law-reader.tsx";
-import { usePageTitle } from "../lib/head.ts";
+import { PageTitle } from "../components/page-title.tsx";
 import { useLawComparison } from "../lib/law-page.ts";
 import { lawUrl } from "../lib/paths.ts";
 import { lawQuery } from "../lib/queries.ts";
@@ -25,13 +25,16 @@ const LawPage = (props: RouteProps<"/uu/:nomor/:tahun">) => {
   return (
     <Show when={record()} fallback={<NotFound />} keyed>
       {(law) => {
-        usePageTitle(() => pageTitle(law));
-
         const comparison = useLawComparison(law, () =>
           v.parse(compareSearch, props.location.query)
         );
 
-        return <LawReader law={law} comparison={comparison()} />;
+        return (
+          <>
+            <PageTitle>{pageTitle(law)}</PageTitle>
+            <LawReader law={law} comparison={comparison()} />
+          </>
+        );
       }}
     </Show>
   );

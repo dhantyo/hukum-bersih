@@ -15,6 +15,7 @@
     "visual-parity": "node scripts/visual-parity.ts"
   },
   "dependencies": {
+    "@solidjs/meta": "2.0.0",
     "@solidjs/router": "^2.0.1",
     "@solidjs/web": "^2.0.4",
     "@stylexjs/stylex": "^0.19.2",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@interfere/landmines": "^0.1.1",
     "@solidjs/diagnostics": "^2.0.4",
+    "@solidjs/prerender": "0.3.0",
     "@solidjs/start-devtools": "^1.0.1",
     "@solidjs/vite-plugin": "^3.0.1",
     "@stylexjs/eslint-plugin": "^0.19.2",
@@ -40,6 +42,7 @@
     "pixelmatch": "^8.0.0",
     "playwright-core": "1.56.1",
     "pngjs": "^7.0.0",
+    "prerender-crawler": "0.3.0",
     "tsrs": "^7.1.0-beta.tsrs5",
     "typescript": "^7.0.2",
     "ultracite": "^8.3.1",

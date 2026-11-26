@@ -1,7 +1,8 @@
+import { Meta } from "@solidjs/meta";
 import * as stylex from "@stylexjs/stylex";
 import { createMemo, For, Show } from "solid-js";
 
-import { usePageDescription, usePageTitle } from "../lib/head.ts";
+import { PageTitle } from "../components/page-title.tsx";
 import { slashed } from "../lib/paths.ts";
 import { draftBillsQuery } from "../lib/queries.ts";
 import { Router } from "../router.tsx";
@@ -27,14 +28,15 @@ const styles = stylex.create({
 });
 
 const DraftIndex = () => {
-  usePageTitle(() => "RUU");
-  usePageDescription(
-    "Rancangan undang-undang yang dilacak beserta versi-versinya."
-  );
   const bills = createMemo(async () => await draftBillsQuery());
 
   return (
     <main>
+      <PageTitle>RUU</PageTitle>
+      <Meta
+        name="description"
+        content="Rancangan undang-undang yang dilacak beserta versi-versinya."
+      />
       <h1>Rancangan Undang-Undang</h1>
       <p class={css(styles.muted)}>
         Setiap RUU dilacak beserta semua versi draf yang pernah muncul dan

@@ -1,15 +1,15 @@
 import { httpStatus } from "@solidjs/web";
 
-import { usePageTitle } from "../lib/head.ts";
+import { PageTitle } from "../components/page-title.tsx";
 import { Router } from "../router.tsx";
 import { linkClass } from "../styles/link.ts";
 
 const NotFound = () => {
   httpStatus(404);
-  usePageTitle(() => "Halaman tidak ditemukan");
 
   return (
     <main>
+      <PageTitle>Halaman tidak ditemukan</PageTitle>
       <h1>Halaman tidak ditemukan</h1>
       <p>
         Halaman yang Anda cari tidak ada.{" "}

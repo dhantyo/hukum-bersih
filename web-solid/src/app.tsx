@@ -1,4 +1,4 @@
-import { useHead } from "@solidjs/web";
+import { Link, Meta, Title } from "@solidjs/meta";
 import * as stylex from "@stylexjs/stylex";
 import { isPending, Loading } from "solid-js";
 
@@ -26,26 +26,24 @@ const styles = stylex.create({
   },
 });
 
-const App = () => {
-  useHead({ tag: "title", props: { children: "Hukum Bersih" } });
-
-  return (
-    <ReaderViewContext value={createReaderView()}>
-      <Router>
-        {(props) => (
-          <>
-            <SiteHeader pending={isPending(() => props.children)} />
-            <div id="main" class={css(styles.page)}>
-              <Loading fallback={<main>Memuat…</main>}>
-                {props.children}
-              </Loading>
-            </div>
-            <SiteFooter />
-          </>
-        )}
-      </Router>
-    </ReaderViewContext>
-  );
-};
+const App = () => (
+  <ReaderViewContext value={createReaderView()}>
+    <Title>Hukum Bersih</Title>
+    <Meta name="viewport" content="width=device-width, initial-scale=1" />
+    <Meta name="color-scheme" content="light dark" />
+    <Link rel="icon" href="data:," />
+    <Router>
+      {(props) => (
+        <>
+          <SiteHeader pending={isPending(() => props.children)} />
+          <div id="main" class={css(styles.page)}>
+            <Loading fallback={<main>Memuat…</main>}>{props.children}</Loading>
+          </div>
+          <SiteFooter />
+        </>
+      )}
+    </Router>
+  </ReaderViewContext>
+);
 
 export default App;

@@ -8,7 +8,7 @@ import { draftVersionName } from "../components/draft-provenance.tsx";
 import { Facts } from "../components/law-panel.tsx";
 import { LawText } from "../components/law-text.tsx";
 import { Toc } from "../components/law-toc.tsx";
-import { usePageTitle } from "../lib/head.ts";
+import { PageTitle } from "../components/page-title.tsx";
 import {
   docTypeLabel,
   PROVENANCE,
@@ -105,12 +105,9 @@ const DraftDocument = (props: RouteProps<"/ruu/:slug/:doc">) => {
 
   return (
     <Show when={draft()} fallback={<NotFound />} keyed>
-      {(record) => {
-        usePageTitle(
-          () => `${record.name}: ${draftVersionName(record.document)}`
-        );
-
-        return (
+      {(record) => (
+        <>
+          <PageTitle>{`${record.name}: ${draftVersionName(record.document)}`}</PageTitle>
           <DocLayout
             crumbs={[
               { href: slashed(Router.paths.ruu), label: "RUU" },
@@ -144,8 +141,8 @@ const DraftDocument = (props: RouteProps<"/ruu/:slug/:doc">) => {
             </p>
             <LawText text={record.text} />
           </DocLayout>
-        );
-      }}
+        </>
+      )}
     </Show>
   );
 };

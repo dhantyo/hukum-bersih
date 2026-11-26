@@ -3,6 +3,7 @@ import { createMemo, Show } from "solid-js";
 import * as v from "valibot";
 
 import { FullTextSearch } from "../components/full-text-search.tsx";
+import { PageTitle } from "../components/page-title.tsx";
 import { SearchBox } from "../components/search-box.tsx";
 import {
   ArticleResults,
@@ -11,20 +12,18 @@ import {
   SearchExamples,
   searchStyles,
 } from "../components/search-results.tsx";
-import { usePageTitle } from "../lib/head.ts";
 import { searchQuery } from "../lib/queries.ts";
 import { searchPage } from "../lib/schemas.ts";
 import { css } from "../styles/css.ts";
 
 const SearchPage = (props: RouteProps<"/cari">) => {
-  usePageTitle(() => "Cari");
-
   const search = createMemo(
     async () => await searchQuery(v.parse(searchPage, props.location.query).q)
   );
 
   return (
     <main>
+      <PageTitle>Cari</PageTitle>
       <h1>Cari</h1>
       <SearchBox query={search().query} />
       <Show when={search().catalog} fallback={<SearchExamples />} keyed>

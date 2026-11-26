@@ -3,8 +3,8 @@ import { Show } from "solid-js";
 import * as v from "valibot";
 
 import { CollectionReader } from "../components/collection-reader.tsx";
+import { PageTitle } from "../components/page-title.tsx";
 import { useCollection } from "../lib/collection-page.ts";
-import { usePageTitle } from "../lib/head.ts";
 import { tanggal } from "../lib/labels.ts";
 import { compareSearch } from "../lib/schemas.ts";
 import NotFound from "./not-found.tsx";
@@ -18,20 +18,16 @@ const DatedCollectionPage = (props: RouteProps<"/koleksi/:slug/:versi">) => {
 
   return (
     <Show when={page.collection()} fallback={<NotFound />} keyed>
-      {(record) => {
-        usePageTitle(
-          () =>
-            `${record.merged?.title ?? record.name} (versi ${tanggal(props.params.versi)})`
-        );
-
-        return (
+      {(record) => (
+        <>
+          <PageTitle>{`${record.merged?.title ?? record.name} (versi ${tanggal(props.params.versi)})`}</PageTitle>
           <CollectionReader
             collection={record}
             comparison={page.comparison() ?? null}
             dated
           />
-        );
-      }}
+        </>
+      )}
     </Show>
   );
 };

@@ -1,7 +1,7 @@
 import * as stylex from "@stylexjs/stylex";
 import { createMemo, For } from "solid-js";
 
-import { usePageTitle } from "../lib/head.ts";
+import { PageTitle } from "../components/page-title.tsx";
 import { collectionsQuery } from "../lib/queries.ts";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
@@ -64,7 +64,6 @@ const styles = stylex.create({
 const amendedText = (count: number) => `diubah ${count}×`;
 
 const CollectionIndex = () => {
-  usePageTitle(() => "Koleksi");
   const collections = createMemo(async () => await collectionsQuery());
   const named = () => collections().filter((collection) => collection.named);
 
@@ -75,6 +74,7 @@ const CollectionIndex = () => {
 
   return (
     <main>
+      <PageTitle>Koleksi</PageTitle>
       <h1>Koleksi</h1>
       <p class={css(styles.lead)}>
         Satu koleksi berisi undang-undang pokok beserta semua undang-undang yang

@@ -3,7 +3,7 @@ import * as stylex from "@stylexjs/stylex";
 import { createMemo, Show } from "solid-js";
 
 import { LawRows } from "../components/law-rows.tsx";
-import { usePageTitle } from "../lib/head.ts";
+import { PageTitle } from "../components/page-title.tsx";
 import { slashed } from "../lib/paths.ts";
 import { yearQuery } from "../lib/queries.ts";
 import { Router } from "../router.tsx";
@@ -28,31 +28,28 @@ const LawYear = (props: RouteProps<"/uu/tahun/:tahun">) => {
 
   return (
     <Show when={listing()} fallback={<NotFound />} keyed>
-      {(items) => {
-        usePageTitle(() => `Undang-Undang tahun ${items.year}`);
-
-        return (
-          <main>
-            <nav class={css(styles.crumbs)} aria-label="Lokasi">
-              <a
-                class={css(styles.crumbLink, linkStyles.base, touch.link)}
-                href={slashed(Router.paths.uu)}
-              >
-                Undang-Undang
-              </a>
-              <span class={css(styles.separator)} aria-hidden="true">
-                ›
-              </span>
-              <span>{items.year}</span>
-            </nav>
-            <h1>Undang-Undang tahun {items.year}</h1>
-            <p class={css(styles.muted)}>
-              {items.rows.length} undang-undang, terbaru di atas.
-            </p>
-            <LawRows laws={items.rows} />
-          </main>
-        );
-      }}
+      {(items) => (
+        <main>
+          <PageTitle>{`Undang-Undang tahun ${items.year}`}</PageTitle>
+          <nav class={css(styles.crumbs)} aria-label="Lokasi">
+            <a
+              class={css(styles.crumbLink, linkStyles.base, touch.link)}
+              href={slashed(Router.paths.uu)}
+            >
+              Undang-Undang
+            </a>
+            <span class={css(styles.separator)} aria-hidden="true">
+              ›
+            </span>
+            <span>{items.year}</span>
+          </nav>
+          <h1>Undang-Undang tahun {items.year}</h1>
+          <p class={css(styles.muted)}>
+            {items.rows.length} undang-undang, terbaru di atas.
+          </p>
+          <LawRows laws={items.rows} />
+        </main>
+      )}
     </Show>
   );
 };

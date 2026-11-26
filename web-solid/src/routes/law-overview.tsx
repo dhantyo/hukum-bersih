@@ -1,8 +1,9 @@
+import { Meta } from "@solidjs/meta";
 import * as stylex from "@stylexjs/stylex";
 import { createMemo, For, Show } from "solid-js";
 
 import { LawRows } from "../components/law-rows.tsx";
-import { usePageDescription, usePageTitle } from "../lib/head.ts";
+import { PageTitle } from "../components/page-title.tsx";
 import { slashed } from "../lib/paths.ts";
 import { overviewQuery } from "../lib/queries.ts";
 import { Router } from "../router.tsx";
@@ -41,14 +42,15 @@ const styles = stylex.create({
 });
 
 const LawOverview = () => {
-  usePageTitle(() => "Undang-Undang");
-  usePageDescription(
-    "Semua undang-undang Republik Indonesia sebagai teks yang bersih dan mudah dibaca."
-  );
   const overview = createMemo(async () => await overviewQuery());
 
   return (
     <main>
+      <PageTitle>Undang-Undang</PageTitle>
+      <Meta
+        name="description"
+        content="Semua undang-undang Republik Indonesia sebagai teks yang bersih dan mudah dibaca."
+      />
       <h1>Undang-Undang</h1>
       <p class={css(styles.lead)}>
         {overview().total.toLocaleString("id-ID")} undang-undang dari{" "}

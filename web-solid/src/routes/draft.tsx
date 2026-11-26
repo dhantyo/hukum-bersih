@@ -8,7 +8,7 @@ import { DraftDocuments } from "../components/draft-documents.tsx";
 import { draftVersionName } from "../components/draft-provenance.tsx";
 import { DraftStages } from "../components/draft-stages.tsx";
 import { Facts } from "../components/law-panel.tsx";
-import { usePageTitle } from "../lib/head.ts";
+import { PageTitle } from "../components/page-title.tsx";
 import { stageLabel, tanggal } from "../lib/labels.ts";
 import { slashed } from "../lib/paths.ts";
 import { draftBillQuery } from "../lib/queries.ts";
@@ -101,50 +101,52 @@ const DraftBillPage = (props: RouteProps<"/ruu/:slug">) => {
   return (
     <Show when={bill()} fallback={<NotFound />} keyed>
       {(draft) => {
-        usePageTitle(() => draft.name);
         const compared = comparedVersions(draft);
 
         return (
-          <DocLayout
-            crumbs={[
-              { href: slashed(Router.paths.ruu), label: "RUU" },
-              { label: draft.name },
-            ]}
-            eyebrow="Rancangan Undang-Undang"
-            title={draft.name}
-            subtitle={draft.title}
-            headMeta={<HeadMeta draft={draft} />}
-            panelLabel="Keterangan"
-            panel={<Facts title="Keterangan" facts={draftFacts(draft)} />}
-          >
-            <Show when={compared} keyed>
-              {({ oldest, newest }) => (
-                <a
-                  class={css(linkStyles.base, styles.compare)}
-                  href={slashed(
-                    Router.paths
-                      .ruu(props.params.slug)
-                      .beda(`${oldest.id}...${newest.id}`)
-                  )}
-                >
-                  <span class={css(styles.compareLabel)}>
-                    Apa yang berubah?
-                  </span>
-                  <span>
-                    {draftVersionName(oldest)} → {draftVersionName(newest)},
-                    pasal demi pasal
-                  </span>
-                </a>
-              )}
-            </Show>
-            <h2>Perjalanan</h2>
-            <DraftStages stages={draft.stages} />
-            <h2>Dokumen dan versi</h2>
-            <DraftDocuments
-              slug={props.params.slug}
-              documents={draft.documents}
-            />
-          </DocLayout>
+          <>
+            <PageTitle>{draft.name}</PageTitle>
+            <DocLayout
+              crumbs={[
+                { href: slashed(Router.paths.ruu), label: "RUU" },
+                { label: draft.name },
+              ]}
+              eyebrow="Rancangan Undang-Undang"
+              title={draft.name}
+              subtitle={draft.title}
+              headMeta={<HeadMeta draft={draft} />}
+              panelLabel="Keterangan"
+              panel={<Facts title="Keterangan" facts={draftFacts(draft)} />}
+            >
+              <Show when={compared} keyed>
+                {({ oldest, newest }) => (
+                  <a
+                    class={css(linkStyles.base, styles.compare)}
+                    href={slashed(
+                      Router.paths
+                        .ruu(props.params.slug)
+                        .beda(`${oldest.id}...${newest.id}`)
+                    )}
+                  >
+                    <span class={css(styles.compareLabel)}>
+                      Apa yang berubah?
+                    </span>
+                    <span>
+                      {draftVersionName(oldest)} → {draftVersionName(newest)},
+                      pasal demi pasal
+                    </span>
+                  </a>
+                )}
+              </Show>
+              <h2>Perjalanan</h2>
+              <DraftStages stages={draft.stages} />
+              <h2>Dokumen dan versi</h2>
+              <DraftDocuments
+                slug={props.params.slug}
+                documents={draft.documents}
+              />
+            </DocLayout>
+          </>
         );
       }}
     </Show>

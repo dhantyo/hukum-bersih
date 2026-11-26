@@ -1,8 +1,8 @@
+import { Meta } from "@solidjs/meta";
 import * as stylex from "@stylexjs/stylex";
 import { createMemo, For, Show } from "solid-js";
 
 import { LawRows, rowStyles } from "../components/law-rows.tsx";
-import { usePageDescription } from "../lib/head.ts";
 import { draftChangesUrl, slashed } from "../lib/paths.ts";
 import { draftBillsQuery, overviewQuery } from "../lib/queries.ts";
 import { Router } from "../router.tsx";
@@ -71,14 +71,15 @@ const styles = stylex.create({
 });
 
 const Home = () => {
-  usePageDescription(
-    "Teks hukum Indonesia yang bersih dan mudah dibaca, serta pelacakan RUU beserta setiap versi drafnya."
-  );
   const overview = createMemo(async () => await overviewQuery());
   const drafts = createMemo(async () => await draftBillsQuery());
 
   return (
     <main>
+      <Meta
+        name="description"
+        content="Teks hukum Indonesia yang bersih dan mudah dibaca, serta pelacakan RUU beserta setiap versi drafnya."
+      />
       <section class={css(styles.hero)}>
         <h1 class={css(styles.title)}>Hukum Indonesia, mudah dibaca.</h1>
         <p class={css(styles.lead)}>
