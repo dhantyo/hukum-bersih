@@ -11,6 +11,7 @@ Hukum Bersih publishes clean Indonesian law texts and tracks draft bills. `data/
 | Work in `pipeline/` or `web/` | that folder's `CLAUDE.md` (loads on its own there) |
 | Touch an upstream site (BPK, peraturan.go.id, DPR, mirrors) | `docs/sources.md` |
 | Pick up open work or a known gap | `docs/open-items.md` |
+| Change something that could make a page slower, or measure speed | `docs/performance.md` |
 | Check what the project is for | `docs/BRIEF.md` (items marked **(verify)** are unconfirmed) |
 
 Code, tests and workflow files are the source of truth for numbers, thresholds and behaviour. Docs point to the constant or file; they do not copy its value.
