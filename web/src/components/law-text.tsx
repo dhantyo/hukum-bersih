@@ -1,7 +1,15 @@
 import type { JSX } from "@solidjs/web";
 import * as stylex from "@stylexjs/stylex";
 import { usePreference } from "@ui-sdk/solid/preferences";
-import { createEffect, createMemo, For, Match, Show, Switch } from "solid-js";
+import {
+  createEffect,
+  createMemo,
+  For,
+  Match,
+  NoHydration,
+  Show,
+  Switch,
+} from "solid-js";
 
 import {
   aliasOf,
@@ -106,6 +114,9 @@ const styles = stylex.create({
       default: null,
       [stylex.when.ancestor(ONLY_CHANGED)]: "none",
     },
+  },
+  served: {
+    display: "contents",
   },
   prefaceBlock: {
     display: {
@@ -947,6 +958,72 @@ export const PasalText = (props: { node: AknNode }) => (
   <DocumentNodes nodes={props.node.children} />
 );
 
+const LawBody = (props: {
+  text: ReaderText;
+  notes?: Record<string, PasalNote[]>;
+  comparison?: CompareIndex;
+}) => (
+  <>
+    <Show when={props.text.preface.length > 0}>
+      <div class={css(styles.prefaceBlock)}>
+        <For each={props.text.preface}>
+          {(node) => (
+            <p class={css(styles.prefaceParagraph)} id={node.eId}>
+              {node.text}
+            </p>
+          )}
+        </For>
+      </div>
+    </Show>
+    <Show when={props.text.preamble.length > 0}>
+      <details
+        open
+        data-seed
+        data-preamble
+        class={css(styles.preamble, styles.measure, fold)}
+      >
+        <summary class={css(styles.preambleSummary, foldHead)}>
+          <FoldChevron flexItem />
+          <span class={css(styles.summaryTitle)}>Pembukaan</span>
+          <span class={css(styles.summaryMeta)}>
+            {openingSummary(props.text.preamble).join(" · ")}
+          </span>
+        </summary>
+        <DocumentNodes nodes={props.text.preamble} />
+      </details>
+    </Show>
+    <div class={css(styles.body)}>
+      <DocumentNodes
+        nodes={props.text.body}
+        top
+        anchors={props.text.anchors}
+        notes={props.notes}
+        comparison={props.comparison}
+      />
+    </div>
+    <Show when={props.text.conclusions.length > 0}>
+      <section
+        id={CONCLUSIONS_ID}
+        class={css(styles.conclusions, styles.measure)}
+      >
+        <h2 class={css(styles.chapter, styles.hiddenInAsli)}>
+          Pengesahan dan pengundangan
+        </h2>
+        <DocumentNodes nodes={props.text.conclusions} spaced />
+      </section>
+    </Show>
+    <Show when={props.text.penjelasan.length > 0}>
+      <section
+        id={EXPLANATION_ID}
+        class={css(styles.penjelasan, styles.measure)}
+      >
+        <h2 class={css(styles.chapter, styles.penjelasanTitle)}>Penjelasan</h2>
+        <DocumentNodes nodes={props.text.penjelasan} explanation />
+      </section>
+    </Show>
+  </>
+);
+
 export const LawText = (props: {
   text: ReaderText;
   notes?: Record<string, PasalNote[]>;
@@ -955,13 +1032,22 @@ export const LawText = (props: {
   useFolds();
 
   let law: HTMLElement | undefined;
-  let preamble: HTMLDetailsElement | undefined;
   const placement = usePreference(penjelasan);
   const current = usePreference(format);
 
+  const compareIndex = createMemo(
+    () => props.comparison && indexComparison(props.comparison)
+  );
+
+  const plain = () => (compareIndex() === undefined ? props.text : undefined);
+
   createEffect(
-    () => placement().value,
-    (value) => {
+    () => ({
+      value: placement().value,
+      text: props.text,
+      index: compareIndex(),
+    }),
+    ({ value }) => {
       if (law) {
         placeExplanations(law, value === "pasal");
       }
@@ -969,19 +1055,17 @@ export const LawText = (props: {
   );
 
   createEffect(
-    () => current().value,
-    (value) => {
-      const element = preamble;
+    () => ({ value: current().value, text: props.text, index: compareIndex() }),
+    ({ value }) => {
+      const element = law?.querySelector<HTMLDetailsElement>(
+        "details[data-preamble]"
+      );
 
       if (element) {
         element.open = value === "asli";
         delete element.dataset.seed;
       }
     }
-  );
-
-  const compareIndex = createMemo(
-    () => props.comparison && indexComparison(props.comparison)
   );
 
   return (
@@ -992,66 +1076,24 @@ export const LawText = (props: {
         law = element;
       }}
     >
-      <Show when={props.text.preface.length > 0}>
-        <div class={css(styles.prefaceBlock)}>
-          <For each={props.text.preface}>
-            {(node) => (
-              <p class={css(styles.prefaceParagraph)} id={node.eId}>
-                {node.text}
-              </p>
-            )}
-          </For>
-        </div>
-      </Show>
-      <Show when={props.text.preamble.length > 0}>
-        <details
-          open
-          data-seed
-          class={css(styles.preamble, styles.measure, fold)}
-          ref={(element: HTMLDetailsElement) => {
-            preamble = element;
-          }}
-        >
-          <summary class={css(styles.preambleSummary, foldHead)}>
-            <FoldChevron flexItem />
-            <span class={css(styles.summaryTitle)}>Pembukaan</span>
-            <span class={css(styles.summaryMeta)}>
-              {openingSummary(props.text.preamble).join(" · ")}
-            </span>
-          </summary>
-          <DocumentNodes nodes={props.text.preamble} />
-        </details>
-      </Show>
-      <div class={css(styles.body)}>
-        <DocumentNodes
-          nodes={props.text.body}
-          top
-          anchors={props.text.anchors}
-          notes={props.notes}
-          comparison={compareIndex()}
-        />
-      </div>
-      <Show when={props.text.conclusions.length > 0}>
-        <section
-          id={CONCLUSIONS_ID}
-          class={css(styles.conclusions, styles.measure)}
-        >
-          <h2 class={css(styles.chapter, styles.hiddenInAsli)}>
-            Pengesahan dan pengundangan
-          </h2>
-          <DocumentNodes nodes={props.text.conclusions} spaced />
-        </section>
-      </Show>
-      <Show when={props.text.penjelasan.length > 0}>
-        <section
-          id={EXPLANATION_ID}
-          class={css(styles.penjelasan, styles.measure)}
-        >
-          <h2 class={css(styles.chapter, styles.penjelasanTitle)}>
-            Penjelasan
-          </h2>
-          <DocumentNodes nodes={props.text.penjelasan} explanation />
-        </section>
+      <Show
+        when={plain()}
+        keyed
+        fallback={
+          <LawBody
+            text={props.text}
+            notes={props.notes}
+            comparison={compareIndex()}
+          />
+        }
+      >
+        {(text) => (
+          <div class={css(styles.served)}>
+            <NoHydration>
+              <LawBody text={text} notes={props.notes} />
+            </NoHydration>
+          </div>
+        )}
       </Show>
     </article>
   );
