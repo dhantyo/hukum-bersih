@@ -1,9 +1,9 @@
 import * as v from "valibot";
 
+import { diffLine } from "../../lib/diff-line.ts";
+import { parseRecord } from "../../lib/parse-record.ts";
 import { readActiveReleaseText } from "../corpus.ts";
-import { diffLine } from "./diff-line.ts";
 import { draftDocument } from "./draft.ts";
-import { parseRecord } from "./parse.ts";
 
 const anchor = v.pipe(v.string(), v.regex(/^[ab]-[\w.:-]+$/u));
 const status = v.picklist(["sama", "berubah", "baru", "dihapus"]);

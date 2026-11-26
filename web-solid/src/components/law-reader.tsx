@@ -11,6 +11,7 @@ import { linkClass, linkStyles } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
 import { Badge } from "./badge.tsx";
 import { columnsHref, CompareBar } from "./compare-bar.tsx";
+import { ComparisonFailure } from "./comparison-failure.tsx";
 import { DocLayout } from "./doc-layout.tsx";
 import { KoleksiBox, RelationsBanner, StatusBanner } from "./law-banners.tsx";
 import { Facts, Versions } from "./law-panel.tsx";
@@ -223,7 +224,12 @@ const Body = (props: { law: LawRecord; comparison?: LawComparison }) => (
             .
           </p>
           <Show when={props.comparison}>
-            {(comparison) => <LawCompareBar comparison={comparison()} />}
+            {(comparison) => (
+              <>
+                <LawCompareBar comparison={comparison()} />
+                <ComparisonFailure comparison={comparison()} />
+              </>
+            )}
           </Show>
           <LawText
             text={text() ?? undefined}

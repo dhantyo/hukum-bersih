@@ -1,5 +1,7 @@
 import { query } from "@solidjs/router";
+import { isServer } from "@solidjs/web";
 
+import { compareInBrowser } from "./browser-comparison.ts";
 import {
   getCollection,
   getCollectionComparison,
@@ -15,17 +17,26 @@ import {
 import { getLaw, getLawOverview, getLawYear } from "./laws";
 import { getSearchResults } from "./search";
 
-const fetchReader = async (path: string, request: CompareRequest) =>
-  request.v === undefined ? await getLaw(path) : await getLaw(path, request);
-
-export const readerQuery = query(fetchReader, "reader");
+export const lawQuery = query(getLaw, "law");
 export const overviewQuery = query(getLawOverview, "overview");
 export const yearQuery = query(getLawYear, "year");
 export const collectionsQuery = query(getCollections, "collections");
 export const collectionQuery = query(getCollection, "collection");
 
+const fetchComparison = async (slug: string, request: CompareRequest) => {
+  if (isServer) {
+    return await getCollectionComparison(slug, request);
+  }
+
+  return await compareInBrowser(
+    slug,
+    request,
+    async () => await getCollectionComparison(slug, request)
+  );
+};
+
 export const collectionComparisonQuery = query(
-  getCollectionComparison,
+  fetchComparison,
   "collection-comparison"
 );
 

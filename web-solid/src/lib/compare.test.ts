@@ -1,11 +1,5 @@
 import { describe, expect, it } from "vitest";
 
-import type {
-  CollectionVersions,
-  PairPasal,
-  VersionPair,
-} from "../server/records/collection-comparison.ts";
-import type { DiffLine } from "../server/records/diff-line.ts";
 import type { ReaderText } from "../server/records/reader-text.ts";
 import {
   compareColumns,
@@ -14,6 +8,12 @@ import {
   unknownSelection,
 } from "./compare.ts";
 import type { Piece } from "./compare.ts";
+import type { DiffLine } from "./diff-line.ts";
+import type {
+  CollectionVersions,
+  PairPasal,
+  VersionPair,
+} from "./pair-records.ts";
 
 const version = (id: string, gap = 0) => ({
   id,

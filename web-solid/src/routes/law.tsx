@@ -3,10 +3,10 @@ import { createMemo, Show } from "solid-js";
 import * as v from "valibot";
 
 import { LawReader } from "../components/law-reader.tsx";
-import { comparisonRequest } from "../lib/compare.ts";
 import { usePageTitle } from "../lib/head.ts";
+import { useLawComparison } from "../lib/law-page.ts";
 import { lawUrl } from "../lib/paths.ts";
-import { readerQuery } from "../lib/queries.ts";
+import { lawQuery } from "../lib/queries.ts";
 import { compareSearch } from "../lib/schemas.ts";
 import { isPresent } from "../lib/text.ts";
 import type { LawRecord } from "../server/records/law.ts";
@@ -20,18 +20,18 @@ const pageTitle = (law: LawRecord) => {
 };
 
 const LawPage = (props: RouteProps<"/uu/:nomor/:tahun">) => {
-  const reader = createMemo(async () => {
-    const search = v.parse(compareSearch, props.location.query);
-
-    return await readerQuery(lawUrl(props.params), comparisonRequest(search));
-  });
+  const record = createMemo(async () => await lawQuery(lawUrl(props.params)));
 
   return (
-    <Show when={reader()} fallback={<NotFound />} keyed>
-      {(record) => {
-        usePageTitle(() => pageTitle(record.law));
+    <Show when={record()} fallback={<NotFound />} keyed>
+      {(law) => {
+        usePageTitle(() => pageTitle(law));
 
-        return <LawReader law={record.law} comparison={record.comparison} />;
+        const comparison = useLawComparison(law, () =>
+          v.parse(compareSearch, props.location.query)
+        );
+
+        return <LawReader law={law} comparison={comparison()} />;
       }}
     </Show>
   );

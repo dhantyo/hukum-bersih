@@ -1,12 +1,15 @@
+import * as v from "valibot";
+
+import type { ReaderText } from "../server/records/reader-text.ts";
+import type { DiffLine, DiffPart } from "./diff-line.ts";
+import { pasalKey } from "./display.ts";
 import type {
   CollectionVersions,
   PairPasal,
   PasalState,
   VersionPair,
-} from "../server/records/collection-comparison.ts";
-import type { DiffLine, DiffPart } from "../server/records/diff-line.ts";
-import type { ReaderText } from "../server/records/reader-text.ts";
-import { pasalKey } from "./display.ts";
+} from "./pair-records.ts";
+import { compareRequest } from "./schemas.ts";
 import { isPresent } from "./text.ts";
 
 /** How a piece of a changed ayat is shown: kept, inserted, struck, reworded (old or new side),
@@ -67,6 +70,15 @@ export interface Comparison {
   rows: CompareRow[];
   /** Amendments between the first and last version shown that the collection does not record. */
   gap: number;
+  /** The browser could not load the comparison the address asks for; this is the one that was on
+   * screen before. */
+  failed?: boolean;
+}
+
+/** What the published comparison files of a release make of a request. `release` is the release
+ * they were read from, so the browser can fetch the same files itself. */
+export interface PublishedComparison extends Comparison {
+  release: string;
 }
 
 /** What a law page makes of a comparison: only the pasal its text has, and where each pasal it
@@ -93,8 +105,8 @@ const NUMBER = /^(?<digits>\d+)(?<suffix>[A-Za-z]*)$/u;
 
 /** The request a server function is asked for. Its arguments travel as JSON, which cannot carry
  * `undefined`, so a choice not made is left out. */
-export const comparisonRequest = ({ v }: CompareRequest) =>
-  v === undefined ? ({} satisfies CompareRequest) : { v };
+export const comparisonRequest = (request: CompareRequest) =>
+  request.v === undefined ? ({} satisfies CompareRequest) : { v: request.v };
 
 const notAsked = {
   requested: false,
@@ -149,6 +161,30 @@ export const pickColumns = (ids: string[], request: CompareRequest) => {
     ? adjacent(columns[0], ids.length)
     : shown(columns);
 };
+
+/** `pickColumns` for a request that came from the address, which is checked first. */
+export const selectColumns = (ids: string[], request: CompareRequest) => {
+  const choice = v.safeParse(compareRequest, request);
+
+  return choice.success ? pickColumns(ids, choice.output) : unknownSelection;
+};
+
+/** The older and the newer version of a published pair, by id. */
+export type PairIds = readonly [older: string, newer: string];
+
+const oldestFirst = (ids: string[], from: number, to: number) =>
+  from < to
+    ? ([ids[from], ids[to]] satisfies PairIds)
+    : ([ids[to], ids[from]] satisfies PairIds);
+
+/** The published pair behind each two neighbouring columns, older version first as it is
+ * stored (null when both columns are the same version). */
+export const neighbourPairs = (ids: string[], selection: ColumnSelection) =>
+  selection.columns.slice(1).map((to, index) => {
+    const from = selection.columns[index];
+
+    return from === to ? null : oldestFirst(ids, from, to);
+  });
 
 const number = (num: string) => NUMBER.exec(num)?.groups;
 

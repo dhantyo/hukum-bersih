@@ -1,13 +1,20 @@
+import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
 import { getRequestEvent } from "@solidjs/web";
+import * as v from "valibot";
 
+import { releaseId } from "../lib/schemas.ts";
 import { isPresent } from "../lib/text.ts";
 
 interface CorpusObject {
   text: () => Promise<string>;
   arrayBuffer: () => Promise<ArrayBuffer>;
+  /** The bytes as a stream, to pass on without reading them. */
+  body: ReadableStream<Uint8Array> | null;
+  /** A strong, quoted entity tag of the bytes. */
+  httpEtag: string;
 }
 
 export interface CorpusBucket {
@@ -20,6 +27,19 @@ declare module "@solidjs/web" {
     activeCorpusRelease?: Promise<string>;
   }
 }
+
+const fileObject = (bytes: Buffer<ArrayBuffer>) => {
+  const response = new Response(bytes);
+
+  return {
+    text: async () => await response.text(),
+    arrayBuffer: async () => await response.arrayBuffer(),
+    body: response.body,
+    get httpEtag() {
+      return `"${createHash("sha256").update(bytes).digest("hex")}"`;
+    },
+  } satisfies CorpusObject;
+};
 
 const readCorpusObject = async (key: string) => {
   const bucket = getRequestEvent()?.locals.corpus;
@@ -35,7 +55,7 @@ const readCorpusObject = async (key: string) => {
   }
 
   try {
-    return new Response(await readFile(path.join(directory, key)));
+    return fileObject(await readFile(path.join(directory, key)));
   } catch (error) {
     if (error instanceof Error && "code" in error && error.code === "ENOENT") {
       return null;
@@ -45,14 +65,12 @@ const readCorpusObject = async (key: string) => {
   }
 };
 
-export const releaseIdPattern = /^[a-z0-9][a-z0-9-]{0,63}$/u;
-
 const loadActiveRelease = async () => {
   const pointer = await readCorpusObject("active-release");
   const pointerText = await pointer?.text();
   const release = pointerText?.trim();
 
-  if (!isPresent(release) || !releaseIdPattern.test(release)) {
+  if (!isPresent(release) || !v.is(releaseId, release)) {
     throw new Error("The corpus has no valid active release");
   }
 

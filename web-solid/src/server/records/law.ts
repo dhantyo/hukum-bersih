@@ -1,8 +1,8 @@
 import * as v from "valibot";
 
+import { parseRecord } from "../../lib/parse-record.ts";
 import { internalLink, lawPath, webLink } from "../../lib/schemas.ts";
 import { readActiveReleaseText } from "../corpus.ts";
-import { parseRecord } from "./parse.ts";
 import { readerText } from "./reader-text.ts";
 
 const lawText = v.nullable(readerText);

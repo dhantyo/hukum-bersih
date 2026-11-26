@@ -1,8 +1,8 @@
 import * as v from "valibot";
 
+import { comparedVersion } from "../../lib/pair-records.ts";
+import { parseRecord } from "../../lib/parse-record.ts";
 import { readActiveReleaseText } from "../corpus.ts";
-import { comparedVersion } from "./collection-comparison.ts";
-import { parseRecord } from "./parse.ts";
 
 const line = v.tuple([v.nullable(v.string()), v.string(), v.number()]);
 

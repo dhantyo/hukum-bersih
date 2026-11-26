@@ -1,6 +1,8 @@
 import type { StartMiddleware } from "@solidjs/vite-plugin";
+import * as v from "valibot";
 
-import { readReleaseObject, releaseIdPattern } from "../corpus.ts";
+import { releaseId } from "../../lib/schemas.ts";
+import { readReleaseObject } from "../corpus.ts";
 
 const assetPartPattern = /^[a-zA-Z0-9_-]+(?:\.[a-zA-Z0-9_-]+)*$/u;
 
@@ -28,7 +30,7 @@ export const searchAssets: StartMiddleware = async (event, proceed) => {
   const [release, ...parts] = pathname.split("/").slice(2);
 
   if (
-    !releaseIdPattern.test(release) ||
+    !v.is(releaseId, release) ||
     parts.length === 0 ||
     !parts.every((part) => assetPartPattern.test(part))
   ) {

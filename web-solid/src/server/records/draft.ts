@@ -1,8 +1,8 @@
 import * as v from "valibot";
 
+import { parseRecord } from "../../lib/parse-record.ts";
 import { draftDocumentId, draftPair, webLink } from "../../lib/schemas.ts";
 import { readActiveReleaseText } from "../corpus.ts";
-import { parseRecord } from "./parse.ts";
 import { readerText } from "./reader-text.ts";
 
 export const draftDocument = v.object({

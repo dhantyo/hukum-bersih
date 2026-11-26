@@ -14,6 +14,7 @@ import { color, size, space } from "../styles/tokens.stylex.ts";
 import { versionName } from "./collection-version-picker.tsx";
 import { columnsHref, CompareBar } from "./compare-bar.tsx";
 import { columnsStyle, columnsWidth, PasalBlock } from "./compare-block.tsx";
+import { ComparisonFailure } from "./comparison-failure.tsx";
 import { ScrollRow } from "./scroll-row.tsx";
 
 const LEADING_PASAL = /^PASAL\s*/u;
@@ -283,7 +284,8 @@ const Grid = (props: {
  * marked against its neighbour. The reader changes the columns in the shared bar, takes a quick
  * choice and narrows the rows to one pasal. The choice lives in the address
  * (`?v=a,b,c&pasal=5`), so a view can be shared and every control is a link or a field of one
- * GET form, which works without a script; the pasal that differ are built by the server.
+ * GET form, which works without a script. A visit to the address gets the pasal that differ from
+ * the server; a change made on the page builds them in the browser from the published files.
  */
 export const CollectionCompare = (props: {
   comparison: Comparison;
@@ -345,6 +347,7 @@ export const CollectionCompare = (props: {
             />
           </div>
         </CompareBar>
+        <ComparisonFailure comparison={props.comparison} />
         <Show when={props.comparison.unknown}>
           <output>Versi yang diminta tidak dikenal di koleksi ini.</output>
         </Show>

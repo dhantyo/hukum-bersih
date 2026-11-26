@@ -19,6 +19,16 @@ export const collectionVersion = matching(`(?:latest|${VERSION_DATE})`);
 
 const MAX_COLUMNS = 32;
 const VERSION_ID = "[a-z0-9_-]+";
+const RELEASE_ID = "[a-z0-9][a-z0-9-]{0,63}";
+const COMPARISON_FILE = `(?:index|${VERSION_ID}\\.\\.\\.${VERSION_ID})`;
+
+export const releaseId = matching(RELEASE_ID);
+
+/** A published file of a collection's comparison, served to the browser from a release's own
+ * address: `index` (the versions) or `<older>...<newer>` (the pasal that differ between two). */
+export const comparisonFilePath = matching(
+  `/data/${RELEASE_ID}/collections/${SLUG}/comparisons/${COMPARISON_FILE}\\.json`
+);
 
 const compareVersions = v.union([
   v.pipe(

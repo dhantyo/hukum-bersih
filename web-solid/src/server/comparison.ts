@@ -1,12 +1,10 @@
-import * as v from "valibot";
-
-import type { CompareRequest } from "../lib/compare.ts";
+import type { CompareRequest, PublishedComparison } from "../lib/compare.ts";
 import {
   compareColumns,
-  pickColumns,
-  unknownSelection,
+  neighbourPairs,
+  selectColumns,
 } from "../lib/compare.ts";
-import { compareRequest } from "../lib/schemas.ts";
+import { readActiveRelease } from "./corpus.ts";
 import {
   readCollectionVersions,
   readVersionPair,
@@ -18,6 +16,7 @@ import {
  * has no comparison. `request` comes from the address, so it is checked here.
  */
 export const readComparison = async (slug: string, request: CompareRequest) => {
+  const release = await readActiveRelease();
   const versions = await readCollectionVersions(slug);
 
   if (versions === null) {
@@ -25,25 +24,16 @@ export const readComparison = async (slug: string, request: CompareRequest) => {
   }
 
   const ids = versions.map((version) => version.id);
-  const choice = v.safeParse(compareRequest, request);
-
-  const selection = choice.success
-    ? pickColumns(ids, choice.output)
-    : unknownSelection;
+  const selection = selectColumns(ids, request);
 
   const pairs = await Promise.all(
-    selection.columns.slice(1).map(async (to, index) => {
-      const from = selection.columns[index];
-
-      if (from === to) {
-        return null;
-      }
-
-      return from < to
-        ? await readVersionPair(slug, ids[from], ids[to])
-        : await readVersionPair(slug, ids[to], ids[from]);
-    })
+    neighbourPairs(ids, selection).map(async (pair) =>
+      pair === null ? null : await readVersionPair(slug, ...pair)
+    )
   );
 
-  return compareColumns(versions, selection, pairs);
+  return {
+    ...compareColumns(versions, selection, pairs),
+    release,
+  } satisfies PublishedComparison;
 };

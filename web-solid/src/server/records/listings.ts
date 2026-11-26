@@ -1,8 +1,8 @@
 import * as v from "valibot";
 
+import { parseRecord } from "../../lib/parse-record.ts";
 import { draftDocumentId, lawPath, slug } from "../../lib/schemas.ts";
 import { readActiveReleaseText } from "../corpus.ts";
-import { parseRecord } from "./parse.ts";
 
 const lawRow = v.object({
   u: lawPath,
