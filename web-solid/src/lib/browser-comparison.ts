@@ -9,6 +9,7 @@ import type {
 import { versionList, versionPair } from "./pair-records.ts";
 import type { CollectionVersions, VersionPair } from "./pair-records.ts";
 import { parseRecord } from "./parse-record.ts";
+import { isPresent } from "./text.ts";
 
 const INDEX_FILE = "index";
 
@@ -19,7 +20,10 @@ class MissingFileError extends Error {
 const versionLists = new Map<string, Promise<CollectionVersions | null>>();
 const pairs = new Map<string, Promise<VersionPair>>();
 const shown = new Map<string, PublishedComparison>();
-let knownRelease: string | undefined;
+
+let knownRelease: string | undefined = isPresent(import.meta.env.CORPUS_RELEASE)
+  ? import.meta.env.CORPUS_RELEASE
+  : undefined;
 
 const fileUrl = (release: string, slug: string, name: string) =>
   `/data/${release}/collections/${slug}/comparisons/${name}.json`;

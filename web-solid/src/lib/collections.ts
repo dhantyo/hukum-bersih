@@ -1,3 +1,4 @@
+import { prerendered } from "@solidjs/prerender";
 import { GET } from "@solidjs/web/server-functions";
 import * as v from "valibot";
 
@@ -8,7 +9,7 @@ import { readCollectionVersion } from "../server/records/collection-version.ts";
 import type { CompareRequest } from "./compare.ts";
 import { collectionVersion, slug } from "./schemas.ts";
 
-export const getCollections = GET(async () => {
+export const getCollections = prerendered(async () => {
   "use server";
 
   const catalog = await readCatalog();
@@ -27,7 +28,7 @@ export const getCollections = GET(async () => {
   });
 });
 
-export const getCollection = GET(
+export const getCollection = prerendered(
   async (collectionSlug: string, version = "latest") => {
     "use server";
 

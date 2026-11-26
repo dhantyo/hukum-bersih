@@ -72,6 +72,13 @@ export const publicDocumentPath = v.union([
   matching(`/ruu/${SLUG}/beda/${DRAFT_PAIR}/`),
 ]);
 
+export const staticPagePath = v.union([
+  publicDocumentPath,
+  matching("/(?:tentang/|uu/|koleksi/|ruu/)?"),
+  matching(String.raw`/uu/tahun/\d{4}/`),
+  matching(`/ruu/${SLUG}/`),
+]);
+
 export const searchText = v.fallback(
   v.pipe(
     v.string(),

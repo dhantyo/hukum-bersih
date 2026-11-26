@@ -1,6 +1,7 @@
 import { createMemo } from "solid-js";
 import type * as v from "valibot";
 
+import { useHydratedSearch } from "./after-hydration.ts";
 import { noteShown } from "./browser-comparison.ts";
 import { comparisonRequest } from "./compare.ts";
 import { collectionComparisonQuery, collectionQuery } from "./queries.ts";
@@ -27,12 +28,14 @@ export const useCollection = (
     async () => await collectionQuery(slug(), version())
   );
 
+  const hydratedSearch = useHydratedSearch(search);
+
   const comparison = createMemo(async () => {
     const name = slug();
 
     return noteShown(
       name,
-      await collectionComparisonQuery(name, comparisonRequest(search()))
+      await collectionComparisonQuery(name, comparisonRequest(hydratedSearch()))
     );
   });
 

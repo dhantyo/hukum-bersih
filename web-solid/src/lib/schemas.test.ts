@@ -1,7 +1,7 @@
 import * as v from "valibot";
 import { describe, expect, it } from "vitest";
 
-import { comparisonFilePath } from "./schemas.ts";
+import { comparisonFilePath, staticPagePath } from "./schemas.ts";
 
 const RELEASE = "c501581381b8c443";
 
@@ -25,5 +25,37 @@ describe("the published comparison file path", () => {
     `/data/${RELEASE}/collections/ITE/comparisons/index.json`,
   ])("rejects %s", (path) => {
     expect(v.is(comparisonFilePath, path)).toBeFalsy();
+  });
+});
+
+describe("the path of a page built ahead of time", () => {
+  it("accepts every page the build writes", () => {
+    for (const path of [
+      "/",
+      "/tentang/",
+      "/uu/",
+      "/uu/tahun/2008/",
+      "/uu/11/2008/",
+      "/koleksi/",
+      "/koleksi/bumn/",
+      "/koleksi/bumn/2025-02-24/",
+      "/ruu/",
+      "/ruu/perampasan-aset/",
+    ]) {
+      expect(v.is(staticPagePath, path)).toBeTruthy();
+    }
+  });
+
+  it("refuses what the Worker answers", () => {
+    for (const path of [
+      "/cari/",
+      "/cari/laws.json",
+      "/uu/11/2008",
+      "/koleksi/bumn/perubahan.json",
+      "/uu/tahun/abc/",
+      "/data/c501581381b8c443/law-catalog.json",
+    ]) {
+      expect(v.is(staticPagePath, path)).toBeFalsy();
+    }
   });
 });

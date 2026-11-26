@@ -2,6 +2,7 @@ import { createMemo } from "solid-js";
 import type * as v from "valibot";
 
 import type { LawRecord } from "../server/records/law.ts";
+import { useHydratedSearch } from "./after-hydration.ts";
 import { noteShown } from "./browser-comparison.ts";
 import { comparisonRequest, placeInText } from "./compare.ts";
 import { collectionComparisonQuery, lawQuery } from "./queries.ts";
@@ -29,9 +30,14 @@ export const preloadLaw = (path: string, search: CompareSearch) => {
 
 /** The comparison of the law's collection that the address asks for, placed in the law's own
  * text; undefined when it asks for none. */
-export const useLawComparison = (law: LawRecord, search: () => CompareSearch) =>
-  createMemo(async () => {
-    const asked = comparisonAsked(law, search());
+export const useLawComparison = (
+  law: LawRecord,
+  search: () => CompareSearch
+) => {
+  const hydratedSearch = useHydratedSearch(search);
+
+  return createMemo(async () => {
+    const asked = comparisonAsked(law, hydratedSearch());
 
     const comparison =
       asked === undefined
@@ -45,3 +51,4 @@ export const useLawComparison = (law: LawRecord, search: () => CompareSearch) =>
       ? undefined
       : placeInText(comparison, law.text);
   });
+};
