@@ -36,30 +36,9 @@ To prove a refactor changed no output, build, then run `CORPUS=.snapshots/before
 
 `wrangler.jsonc` serves `dist/client` as assets and runs the Worker only for a path with no asset: `/cari/hasil/` (search without JavaScript), a call that was not baked and every 404. `/cari/`, the law catalog and the Pagefind index are assets, so search with JavaScript makes no Worker request ([decision 0020](../docs/decisions/0020-search-in-the-browser.md)). To try it locally, seed a local R2 with a release (a scratch script that puts the release files with `getPlatformProxy`) and run `pnpm exec wrangler dev --persist-to <dir>`; never `--remote`.
 
-## Visual parity against Astro
-
-`pnpm run visual-parity` screenshots the same routes on the built Astro site and on this app, then writes a side-by-side image, a pixel diff and a mismatch percentage for each pair. Use it to see what still differs from `../web` and to prove a layout change moved a page closer.
-
-```sh
-pnpm run build                                                  # this app
-ASTRO_DIST=/path/to/web/dist pnpm run visual-parity --run base   # Astro is served from an existing build, never rebuilt
-pnpm run visual-parity --compare base after                      # lists how far each page moved between two runs
-```
-
-It serves `ASTRO_DIST` (default `../web/dist`) as static files and starts `dist/server/node.js` on the corpus in `CORPUS` (default `.snapshots/corpus`, written by `export-corpus --publish` as above). The browser is the Chromium that `playwright-core` installed in `~/.cache/ms-playwright` (`CHROMIUM_PATH` or `--chromium` picks another binary). Options: `--only <route ids>`, `--widths 1280,390`, `--jobs <n>`, `--run <name>`. `VISUAL_PARITY_PORT` sets the port of this app (default 3331); Astro is served 1000 above it, so two runs side by side need different values.
-
-The route matrix is the `ROUTES` table in `scripts/visual-parity/routes.ts`: add a route with one line. Every route is shot at each width, light and dark, and law pages also in Asli and Modern. A page is cut at a fixed height (Chromium cannot capture taller), and a route marked `viewportOnly` keeps only the first screenful. Animations are off, fonts and network are idle and the page height is steady before a shot, so two runs on the same builds give the same percentages; `--compare` exits 1 when a page moved by more than 0.1 points. Output is `.snapshots/visual/<run>/index.html` (pages worst first), `summary.json` and the PNGs, all ignored by git.
-
-## Header reveal check
-
-`node scripts/header-reveal.ts <url> --label <name>` opens the page in Chromium, scrolls down far, then up a little, and prints the header's `top`, `data-mode`, `position` and `transform` for every frame of the scroll up. It exits 1 when the header was ever below the top of the window while it came back (it must slide in from above), or when the header caused a layout shift. It works on this app and on the built Astro site, which is the reference (`--allow-header-shift` keeps Astro's own header shift, from moving `top`, from failing it). `--reduced` runs it under `prefers-reduced-motion: reduce`, `--width <px>` sets the window width, `--out <file>` saves the frames as JSON.
-
-```sh
-pnpm run build && pnpm run start     # then, in another shell:
-node scripts/header-reveal.ts http://localhost:3000/uu/11/2008/ --label solid
-```
-
 ## Cloudflare preview
+
+Until cutover the production hostname (a subdomain of `suarakami.id`, DNS managed outside our Cloudflare account) still points at the old Pages project `hukum-bersih`, which holds the last Astro deployment and no longer deploys. This Worker is reachable only on its `workers.dev` preview URL. Moving the hostname to it is the cutover step ([handover](../docs/solid-migration-handover.md)); rollback is redeploying an earlier Worker version.
 
 The manual **Deploy Solid preview** workflow runs `hukum-bersih export-corpus --publish ... --public ../web-solid/public` in `pipeline/` for the full corpus (every law, the collections, the draft bills and the search index), builds the Worker from it, and uploads that release to R2 (without `pagefind/`, which only the static assets use) with rclone (`.github/scripts/upload-release.sh`): the release files, then its ready marker, then the `active-release` pointer, so a reader never sees a half-uploaded release. A subset would leave the draft and collection pages out, and `export-corpus` has no subset option. It deploys the `hukum-bersih-solid-preview` Worker, reading the `hukum-bersih-corpus` R2 bucket. After a successful deploy, `.github/scripts/prune-releases.sh` deletes every `releases/<id>/` folder except the new release and the one that `active-release` named before the upload (read by the publish step and passed on as a step output), so redeploying the previous Worker, which has its release id baked in, always finds its corpus. It deletes nothing when the previous release is unknown or equal to the new one, and `--dry-run` only lists what it would delete.
 

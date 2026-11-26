@@ -649,7 +649,7 @@ const useTablet = () => useMedia(TABLET_QUERY);
  */
 export const DocLayout = (props: {
   crumbs: Crumb[];
-  /** No space above the breadcrumbs, as on Astro pages that carry no search metadata. */
+  /** No space above the breadcrumbs. */
   flushCrumbs?: boolean;
   eyebrow: string;
   title: string;
