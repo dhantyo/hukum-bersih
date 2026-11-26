@@ -5,7 +5,8 @@ import { color, media, size, space } from "./tokens.stylex.ts";
 
 const OPEN = ":is([data-open])";
 const CHEVRON_TURN_OVERHANG = 2;
-const LEAD = `calc(${space.s3} + 2px)`;
+const DOT = 9;
+const LINE_START = 4;
 const LINK_HOVERED = stylex.when.ancestor(":hover", versionLink);
 
 /** Parts shared by the blocks of a document page's side panel. */
@@ -17,7 +18,6 @@ export const panel = stylex.create({
     fontWeight: 600,
   },
   block: { marginBlockEnd: space.s6 },
-  list: { margin: 0, padding: 0, listStyle: "none" },
   note: {
     margin: 0,
     color: color.textMuted,
@@ -63,20 +63,57 @@ export const versions = stylex.create({
     },
   },
   count: { color: color.textMuted, fontSize: size.xs },
-  entry: {
-    paddingBlock: {
-      default: space.s2,
-      [media.touch]: space.s3,
+  list: {
+    margin: 0,
+    padding: 0,
+    listStyle: "none",
+    position: "relative",
+    "::before": {
+      insetBlock: space.s2,
+      backgroundColor: color.line,
+      content: '""',
+      inlineSize: 1,
+      insetInlineStart: LINE_START,
+      position: "absolute",
     },
-    paddingInline: space.s3,
+  },
+  row: {
+    borderRadius: size.radius,
+    paddingBlock: space.s1,
+    paddingInlineStart: space.s5,
+    position: "relative",
+  },
+  rowHere: {
+    backgroundColor: color.linkBackground,
+    marginInlineStart: `calc(-1 * ${space.s1})`,
+    paddingInlineStart: `calc(${space.s5} + ${space.s1})`,
+  },
+  dot: {
+    borderRadius: "50%",
+    backgroundColor: color.gone,
+    blockSize: DOT,
+    boxShadow: `0 0 0 3px ${color.background}`,
+    inlineSize: DOT,
+    insetBlockStart: `calc(${space.s1} + 0.35em)`,
+    insetInlineStart: 0,
+    position: "absolute",
+  },
+  dotNow: { backgroundColor: color.ok },
+  dotMissing: {
+    borderColor: color.gone,
+    borderStyle: "dashed",
+    borderWidth: 1,
+    backgroundColor: color.background,
+    boxSizing: "border-box",
+  },
+  dotHere: { insetInlineStart: space.s1 },
+  entry: {
+    borderRadius: size.radius,
+    paddingBlock: { default: null, [media.touch]: space.s2 },
     textDecoration: "none",
-    borderInlineStartColor: "transparent",
-    borderInlineStartStyle: "solid",
-    borderInlineStartWidth: 2,
     color: color.text,
     display: "grid",
   },
-  entryHere: { borderInlineStartColor: color.link },
   when: {
     color: color.textMuted,
     fontSize: size.xs,
@@ -85,16 +122,30 @@ export const versions = stylex.create({
   what: {
     textDecoration: { [LINK_HOVERED]: "underline", default: null },
     color: { [LINK_HOVERED]: color.link, default: null },
+    fontWeight: 600,
   },
-  whatHere: { color: color.link, fontWeight: 600 },
-  whatMissing: { color: color.textMuted },
-  state: { color: color.ok },
+  whatHere: { color: color.link },
+  whatMissing: { color: color.textMuted, fontWeight: 400 },
+  state: { color: color.ok, fontWeight: 400 },
   sub: { color: color.textMuted, display: "block", fontSize: size.xs },
   compare: {
-    paddingBlock: space.s1,
-    display: "inline-block",
-    marginBlockStart: space.s2,
-    marginInlineStart: LEAD,
+    borderColor: { default: color.lineStrong, ":hover": color.link },
+    borderRadius: size.radius,
+    borderStyle: "solid",
+    borderWidth: 1,
+    paddingBlock: space.s2,
+    paddingInline: space.s3,
+    textDecoration: "none",
+    backgroundColor: {
+      default: color.background,
+      ":hover": color.linkBackground,
+    },
+    boxSizing: "border-box",
+    color: color.link,
+    display: "block",
+    fontWeight: 600,
+    inlineSize: "100%",
+    marginBlockStart: space.s3,
+    textAlign: "center",
   },
-  noteIndent: { marginInlineStart: LEAD },
 });
