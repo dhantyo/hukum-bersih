@@ -11,13 +11,19 @@ let hydrated = isServer;
 const renderedWithComparison = () =>
   !isServer && document.querySelector("[data-cmp-bar]") !== null;
 
-export const useHydratedSearch = (search: () => CompareSearch) => {
-  const [ready, setReady] = createSignal(hydrated || renderedWithComparison());
+export const useHydrated = (renderedWith: () => boolean = () => false) => {
+  const [ready, setReady] = createSignal(hydrated || renderedWith());
 
   onSettled(() => {
     hydrated = true;
     setReady(true);
   });
+
+  return ready;
+};
+
+export const useHydratedSearch = (search: () => CompareSearch) => {
+  const ready = useHydrated(renderedWithComparison);
 
   return () => (ready() ? search() : { ...search(), v: undefined });
 };

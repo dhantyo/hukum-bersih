@@ -5,6 +5,8 @@ import { createMemo, For, Show } from "solid-js";
 import { LawRows, rowStyles } from "../components/law-rows.tsx";
 import { draftChangesUrl, slashed } from "../lib/paths.ts";
 import { draftBillsQuery, overviewQuery } from "../lib/queries.ts";
+import { prefetchSearch } from "../lib/search-data.ts";
+import { PLAIN_SEARCH_PATH, useSearchSubmit } from "../lib/search-form.ts";
 import { Router } from "../router.tsx";
 import { css } from "../styles/css.ts";
 import { linkClass, linkStyles } from "../styles/link.ts";
@@ -71,6 +73,7 @@ const styles = stylex.create({
 });
 
 const Home = () => {
+  const submitSearch = useSearchSubmit();
   const overview = createMemo(async () => await overviewQuery());
   const drafts = createMemo(async () => await draftBillsQuery());
 
@@ -90,8 +93,9 @@ const Home = () => {
         <search>
           <form
             class={css(styles.search)}
-            action={slashed(Router.paths.cari)}
+            action={PLAIN_SEARCH_PATH}
             method="get"
+            onSubmit={submitSearch}
           >
             <label class={css(accessibility.visuallyHidden)} for="hero-q">
               Cari
@@ -102,6 +106,7 @@ const Home = () => {
               name="q"
               type="search"
               placeholder="Contoh: perampasan aset, pasal 27 ITE, perkawinan…"
+              onFocus={prefetchSearch}
             />
             <button class={css(styles.submit)} type="submit">
               Cari

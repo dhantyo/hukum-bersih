@@ -1,43 +1,7 @@
-import * as v from "valibot";
-
+import { catalog } from "../../lib/catalog-record.ts";
+import type { Catalog } from "../../lib/catalog-record.ts";
 import { parseRecord } from "../../lib/parse-record.ts";
-import { internalLink } from "../../lib/schemas.ts";
 import { readActiveRelease, readActiveReleaseText } from "../corpus.ts";
-
-const entry = v.object({
-  id: v.string(),
-  s: v.nullable(v.string()),
-  c: v.string(),
-  t: v.string(),
-  n: v.string(),
-  y: v.number(),
-  st: v.optional(v.nullable(v.string())),
-  m: v.array(v.string()),
-  k: v.number(),
-  u: internalLink,
-});
-
-const collection = v.object({
-  slug: v.string(),
-  name: v.string(),
-  named: v.boolean(),
-  t: v.string(),
-  a: v.array(v.string()),
-  k: v.number(),
-  u: internalLink,
-  mem: v.array(v.tuple([v.string(), v.string()])),
-});
-
-const catalog = v.object({
-  laws: v.array(entry),
-  koleksi: v.array(collection),
-});
-
-export type LawCatalogEntry = v.InferOutput<typeof entry>;
-
-export type CatalogCollection = v.InferOutput<typeof collection>;
-
-export type Catalog = v.InferOutput<typeof catalog>;
 
 const readCatalogText = async () => {
   const text = await readActiveReleaseText("law-catalog.json");
@@ -49,25 +13,18 @@ const readCatalogText = async () => {
   return text;
 };
 
-interface LoadedCatalog {
-  text: string;
-  catalog: Catalog;
-}
-
-let loaded: { release: string; value: Promise<LoadedCatalog> } | undefined;
+let loaded: { release: string; value: Promise<Catalog> } | undefined;
 
 const loadCatalog = async () => {
   try {
-    const text = await readCatalogText();
-
-    return { text, catalog: parseRecord(catalog, text, "law catalog") };
+    return parseRecord(catalog, await readCatalogText(), "law catalog");
   } catch (error) {
     loaded = undefined;
     throw error;
   }
 };
 
-const readLoadedCatalog = async () => {
+export const readCatalog = async () => {
   const release = await readActiveRelease();
 
   if (loaded?.release !== release) {
@@ -75,16 +32,4 @@ const readLoadedCatalog = async () => {
   }
 
   return await loaded.value;
-};
-
-export const readCatalog = async () => {
-  const { catalog: parsed } = await readLoadedCatalog();
-
-  return parsed;
-};
-
-export const readCatalogJson = async () => {
-  const { text } = await readLoadedCatalog();
-
-  return text;
 };

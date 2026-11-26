@@ -30,6 +30,11 @@ export const comparisonFilePath = matching(
   `/data/${RELEASE_ID}/collections/${SLUG}/comparisons/${COMPARISON_FILE}\\.json`
 );
 
+/** The law catalog of a release, read by the browser to search it. */
+export const catalogFilePath = matching(
+  `/data/${RELEASE_ID}/law-catalog\\.json`
+);
+
 const compareVersions = v.union([
   v.pipe(
     v.string(),
@@ -74,7 +79,7 @@ export const publicDocumentPath = v.union([
 
 export const staticPagePath = v.union([
   publicDocumentPath,
-  matching("/(?:tentang/|uu/|koleksi/|ruu/)?"),
+  matching("/(?:tentang/|cari/|uu/|koleksi/|ruu/)?"),
   matching(String.raw`/uu/tahun/\d{4}/`),
   matching(`/ruu/${SLUG}/`),
 ]);

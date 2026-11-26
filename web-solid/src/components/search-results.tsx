@@ -1,14 +1,14 @@
+import { useNavigate } from "@solidjs/router";
 import * as stylex from "@stylexjs/stylex";
 import { createSignal, For, Show } from "solid-js";
 import type { ParentProps } from "solid-js";
 
-import { slashed } from "../lib/paths.ts";
+import { plainSearchUrl, searchUrl } from "../lib/search-form.ts";
 import type {
   SearchArticle,
   SearchCollection,
   SearchLaw,
 } from "../lib/search-matches.ts";
-import { Router } from "../router.tsx";
 import { css } from "../styles/css.ts";
 import { linkStyles } from "../styles/link.ts";
 import { color, size, space } from "../styles/tokens.stylex.ts";
@@ -248,21 +248,29 @@ export const LawResults = (props: { laws: SearchLaw[] }) => {
   );
 };
 
-export const SearchExamples = () => (
-  <p class={css(searchStyles.hint)}>
-    Contoh:{" "}
-    <For each={EXAMPLES}>
-      {(example, index) => (
-        <>
-          <Show when={index() > 0}>{", "}</Show>
-          <a
-            class={css(linkStyles.base)}
-            href={`${slashed(Router.paths.cari)}?q=${encodeURIComponent(example)}`}
-          >
-            {example}
-          </a>
-        </>
-      )}
-    </For>
-  </p>
-);
+export const SearchExamples = () => {
+  const navigate = useNavigate();
+
+  return (
+    <p class={css(searchStyles.hint)}>
+      Contoh:{" "}
+      <For each={EXAMPLES}>
+        {(example, index) => (
+          <>
+            <Show when={index() > 0}>{", "}</Show>
+            <a
+              class={css(linkStyles.base)}
+              href={plainSearchUrl(example)}
+              onClick={(event) => {
+                event.preventDefault();
+                navigate(searchUrl(example));
+              }}
+            >
+              {example}
+            </a>
+          </>
+        )}
+      </For>
+    </p>
+  );
+};

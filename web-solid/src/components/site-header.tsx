@@ -5,6 +5,8 @@ import { createMemo, For, onSettled, Show, useContext } from "solid-js";
 import { followHeader } from "../lib/header-follow.ts";
 import { slashed } from "../lib/paths.ts";
 import { ReaderViewContext } from "../lib/reader-view.ts";
+import { prefetchSearch } from "../lib/search-data.ts";
+import { PLAIN_SEARCH_PATH, useSearchSubmit } from "../lib/search-form.ts";
 import { Router } from "../router.tsx";
 import { css } from "../styles/css.ts";
 import { headerOffset } from "../styles/header-offset.stylex.ts";
@@ -178,6 +180,7 @@ const SectionLink = (props: { href: string; label: string }) => {
 /** The home page has its own search field, so the header drops its own. */
 export const SiteHeader = (props: { pending: boolean }) => {
   const location = useLocation();
+  const submitSearch = useSearchSubmit();
   const [readerText] = useContext(ReaderViewContext);
   const hasSearch = () => location.pathname !== Router.paths();
   let slot!: HTMLDivElement;
@@ -207,8 +210,9 @@ export const SiteHeader = (props: { pending: boolean }) => {
               <search class={css(styles.search)} aria-label="Cari cepat">
                 <form
                   class={css(styles.form)}
-                  action={slashed(Router.paths.cari)}
+                  action={PLAIN_SEARCH_PATH}
                   method="get"
+                  onSubmit={submitSearch}
                 >
                   <label class={css(accessibility.visuallyHidden)} for="q">
                     Cari peraturan
@@ -220,6 +224,7 @@ export const SiteHeader = (props: { pending: boolean }) => {
                     type="search"
                     placeholder="Cari undang-undang, pasal, kata…"
                     autocomplete="off"
+                    onFocus={prefetchSearch}
                   />
                 </form>
               </search>

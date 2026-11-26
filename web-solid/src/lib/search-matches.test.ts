@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
-import type { Catalog } from "../server/records/catalog.ts";
-import { searchMatches } from "./search-matches.ts";
+import type { Catalog } from "./catalog-record.ts";
+import { searchMatches, tokenise } from "./search-matches.ts";
 
 const catalog: Catalog = {
   laws: [
@@ -121,5 +121,21 @@ describe(searchMatches, () => {
       key: "diubah",
       label: "Diubah",
     });
+  });
+});
+
+describe("tokenising the catalog ahead of a search", () => {
+  it("leaves every answer as it was", () => {
+    const before = ["ite", "uu 4/2009", "pasal 27 ite", "tambang"].map(
+      (query) => searchMatches(query, catalog)
+    );
+
+    tokenise(catalog);
+
+    expect(
+      ["ite", "uu 4/2009", "pasal 27 ite", "tambang"].map((query) =>
+        searchMatches(query, catalog)
+      )
+    ).toStrictEqual(before);
   });
 });

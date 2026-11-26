@@ -12,10 +12,10 @@ import {
   draftComparisonQuery,
   draftTextQuery,
   overviewQuery,
-  searchQuery,
   yearQuery,
 } from "./lib/queries.ts";
 import { compareSearch, searchPage, versionDate } from "./lib/schemas.ts";
+import { prefetchSearch } from "./lib/search-data.ts";
 
 export const Router = createRouter({
   routes: [
@@ -119,9 +119,12 @@ export const Router = createRouter({
       path: "/cari",
       search: searchPage,
       component: lazy(async () => await import("./routes/search.tsx")),
-      preload: ({ location }) => {
-        void searchQuery(v.parse(searchPage, location.query).q);
-      },
+      preload: prefetchSearch,
+    },
+    {
+      path: "/cari/hasil",
+      search: searchPage,
+      component: lazy(async () => await import("./routes/search-plain.tsx")),
     },
     {
       path: "/tentang",

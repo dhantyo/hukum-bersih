@@ -135,13 +135,14 @@ urls=(
   "$draft/beda/"
   "/ruu/tidak-ada/beda/$older...$newer/"
   /cari/
-  '/cari/?q='
-  '/cari/?q=ite'
-  '/cari/?q=pasal+27+ite'
-  '/cari/?q=uu+11/2008'
-  '/cari/?q=zzzzqqq'
-  '/cari/?q=%3Cscript%3E'
-  /cari/laws.json
+  /cari/hasil/
+  '/cari/hasil/?q='
+  '/cari/hasil/?q=ite'
+  '/cari/hasil/?q=pasal+27+ite'
+  '/cari/hasil/?q=uu+11/2008'
+  '/cari/hasil/?q=zzzzqqq'
+  '/cari/hasil/?q=%3Cscript%3E'
+  "/data/$release/law-catalog.json"
   "/search-index/$release/pagefind-entry.json"
   "/search-index/$release/pagefind.js"
   "/search-index/$release/nope.json"
@@ -193,7 +194,7 @@ for url in "${urls[@]}"; do
   } > "$out/$name.txt"
 done
 
-for spec in "POST /search-index/$release/pagefind.js" "HEAD /search-index/$release/pagefind.js" "POST /cari/laws.json"; do
+for spec in "POST /search-index/$release/pagefind.js" "HEAD /search-index/$release/pagefind.js" "POST /data/$release/law-catalog.json"; do
   i=$((i + 1))
   method="${spec%% *}"
   path="${spec#* }"

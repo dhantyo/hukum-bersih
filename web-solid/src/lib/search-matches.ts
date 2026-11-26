@@ -2,7 +2,7 @@ import type {
   Catalog,
   CatalogCollection,
   LawCatalogEntry,
-} from "../server/records/catalog.ts";
+} from "./catalog-record.ts";
 import { citeOf, norm, pasalOf } from "./search-query.ts";
 import { isPresent } from "./text.ts";
 
@@ -87,6 +87,21 @@ const matchesWords = (query: string) => {
   };
 };
 
+const lawTexts = new WeakMap<LawCatalogEntry, string>();
+
+const lawText = (law: LawCatalogEntry) => {
+  const known = lawTexts.get(law);
+
+  if (known !== undefined) {
+    return known;
+  }
+
+  const text = `${law.c} ${law.t} ${law.s ?? ""} nomor ${law.n} tahun ${law.y}`;
+  lawTexts.set(law, text);
+
+  return text;
+};
+
 const hasCitation = (law: LawCatalogEntry, citation: string) =>
   law.c.toLowerCase().endsWith(` ${citation}`);
 
@@ -149,6 +164,19 @@ const matchingCollections = (
     .slice(0, COLLECTION_LIMIT)
     .map(({ group }) => group);
 
+export const tokenise = (catalog: Catalog) => {
+  for (const law of catalog.laws) {
+    tokensOf(lawText(law));
+    tokensOf(law.s ?? "");
+  }
+
+  for (const group of catalog.koleksi) {
+    for (const text of [group.name, group.t, ...group.a]) {
+      tokensOf(text);
+    }
+  }
+};
+
 export type SearchLaw = ReturnType<typeof toSearchLaw>;
 
 export type SearchCollection = ReturnType<typeof toSearchCollection>;
@@ -171,17 +199,13 @@ export const searchMatches = (query: string, catalog: Catalog) => {
     .filter(
       (law) =>
         !shown.has(law.id) &&
-        (isPresent(cite)
-          ? hasCitation(law, cite)
-          : matches(
-              `${law.c} ${law.t} ${law.s ?? ""} nomor ${law.n} tahun ${law.y}`
-            ))
+        (isPresent(cite) ? hasCitation(law, cite) : matches(lawText(law)))
     )
+    .map((law) => ({ law, named: Number(matches(law.s ?? "")) }))
     .toSorted(
-      (left, right) =>
-        Number(matches(right.s ?? "")) - Number(matches(left.s ?? "")) ||
-        right.y - left.y
-    );
+      (left, right) => right.named - left.named || right.law.y - left.law.y
+    )
+    .map(({ law }) => law);
 
   const byId = new Map(catalog.laws.map((law) => [law.id, law]));
 

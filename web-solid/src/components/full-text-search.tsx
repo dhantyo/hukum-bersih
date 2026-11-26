@@ -2,6 +2,8 @@ import * as stylex from "@stylexjs/stylex";
 import { createEffect, createMemo, createSignal, For, Show } from "solid-js";
 import * as v from "valibot";
 
+import { loadPagefind } from "../lib/pagefind.ts";
+import type { PagefindResult, SearchHit } from "../lib/pagefind.ts";
 import { searchHitLink } from "../lib/schemas.ts";
 import {
   excerptParts,
@@ -20,26 +22,10 @@ import {
   searchStyles,
 } from "./search-results.tsx";
 
-interface SearchHit {
-  url: string;
-  excerpt: string;
-  meta: { title?: string; label?: string };
-}
-
 interface SearchPage {
   url: string;
   title: string;
   hits: { url: string; label: string; excerpt: string }[];
-}
-
-interface PagefindResult {
-  id: string;
-  data: () => Promise<SearchHit>;
-}
-
-interface Pagefind {
-  init: () => Promise<void>;
-  search: (query: string) => Promise<{ results: PagefindResult[] }>;
 }
 
 interface Found {
@@ -49,7 +35,8 @@ interface Found {
 }
 
 const PAGE_LIMIT = 10;
-const BATCH_SIZE = 50;
+const BATCH_SIZE = 10;
+const TYPING_PAUSE_MS = 150;
 const HIT_LIMIT = 500;
 const HITS_PER_PAGE = 3;
 
@@ -113,31 +100,6 @@ const groupByPage = (hits: SearchHit[]) => {
   return [...pages.values()];
 };
 
-const isPagefind = (value: unknown): value is Pagefind =>
-  typeof value === "object" &&
-  value !== null &&
-  "init" in value &&
-  typeof value.init === "function" &&
-  "search" in value &&
-  typeof value.search === "function";
-
-const loadPagefind = async (release: string) => {
-  const modulePath = `/search-index/${release}/pagefind.js`;
-
-  const pagefind: unknown = await import(
-    /* @vite-ignore */
-    modulePath
-  );
-
-  if (!isPagefind(pagefind)) {
-    throw new Error(`${modulePath} is not a Pagefind bundle`);
-  }
-
-  await pagefind.init();
-
-  return pagefind;
-};
-
 const findResults = async (release: string, query: string) => {
   const pagefind = await loadPagefind(release);
   const words = searchWords(query);
@@ -172,21 +134,17 @@ const countText = (found: Found) => {
   return `${found.phrases} bagian memuat frasa ini persis; ${total - found.phrases} lainnya memuat semua katanya.`;
 };
 
-const loadHits: (
+const loadHits = async (
   found: Found,
   loaded: SearchHit[],
   from: number,
-  pages: number
-) => Promise<{ hits: SearchHit[]; next: number }> = async (
-  found,
-  loaded,
-  from,
-  pages
+  pages: number,
+  publish: (hits: SearchHit[], next: number) => boolean
 ) => {
   const last = Math.min(found.results.length, HIT_LIMIT);
 
   if (from >= last || groupByPage(loaded).length >= pages) {
-    return { hits: loaded, next: from };
+    return;
   }
 
   const batch = found.results.slice(from, from + BATCH_SIZE);
@@ -195,16 +153,19 @@ const loadHits: (
     batch.map(async (result) => await result.data())
   );
 
-  const wanted = read.filter(
-    (hit) => v.is(searchHitLink, hit.url) && isRelated(hit.excerpt, found.words)
-  );
+  const hits = [
+    ...loaded,
+    ...read.filter(
+      (hit) =>
+        v.is(searchHitLink, hit.url) && isRelated(hit.excerpt, found.words)
+    ),
+  ];
 
-  return await loadHits(
-    found,
-    [...loaded, ...wanted],
-    from + BATCH_SIZE,
-    pages
-  );
+  const next = from + BATCH_SIZE;
+
+  if (publish(hits, next)) {
+    await loadHits(found, hits, next, pages, publish);
+  }
 };
 
 const Excerpt = (props: { html: string }) => (
@@ -248,7 +209,7 @@ const SearchResult = (props: { page: SearchPage }) => (
 export const FullTextSearch = (props: {
   release: string;
   query: string;
-  hasCatalogHits: boolean;
+  catalogMissed: boolean;
 }) => {
   const [hits, setHits] = createSignal<SearchHit[]>([]);
   const [found, setFound] = createSignal<Found | undefined>(undefined);
@@ -256,9 +217,16 @@ export const FullTextSearch = (props: {
   const [shown, setShown] = createSignal(PAGE_LIMIT);
   const [busy, setBusy] = createSignal(false);
 
-  const [state, setState] = createSignal<"loading" | "ready" | "error">(
-    "loading"
-  );
+  const [finished, setFinished] = createSignal<string | undefined>(undefined);
+  const [failed, setFailed] = createSignal<string | undefined>(undefined);
+
+  const state = () => {
+    if (failed() === props.query) {
+      return "error";
+    }
+
+    return finished() === props.query ? "done" : "loading";
+  };
 
   const pages = createMemo(() => groupByPage(hits()));
 
@@ -276,22 +244,32 @@ export const FullTextSearch = (props: {
     () => ({ release: props.release, query: props.query }),
     ({ release, query }) => {
       let cancelled = false;
-      setState("loading");
 
       const search = async () => {
         try {
           const result = await findResults(release, query);
-          const loaded = await loadHits(result, [], 0, PAGE_LIMIT);
 
           if (cancelled) {
             return;
           }
 
           setFound(result);
-          setHits(loaded.hits);
-          setCursor(loaded.next);
+          setHits([]);
+          setCursor(0);
           setShown(PAGE_LIMIT);
-          setState("ready");
+
+          await loadHits(result, [], 0, PAGE_LIMIT, (loaded, next) => {
+            if (!cancelled) {
+              setHits(loaded);
+              setCursor(next);
+            }
+
+            return !cancelled;
+          });
+
+          if (!cancelled) {
+            setFinished(query);
+          }
         } catch (error) {
           if (cancelled) {
             return;
@@ -299,14 +277,17 @@ export const FullTextSearch = (props: {
 
           console.error("Pagefind search failed", error);
           setHits([]);
-          setState("error");
+          setFailed(query);
         }
       };
 
-      void search();
+      const pause = setTimeout(() => {
+        void search();
+      }, TYPING_PAUSE_MS);
 
       return () => {
         cancelled = true;
+        clearTimeout(pause);
       };
     }
   );
@@ -322,9 +303,13 @@ export const FullTextSearch = (props: {
     setBusy(true);
 
     try {
-      const loaded = await loadHits(current, hits(), cursor(), wanted);
-      setHits(loaded.hits);
-      setCursor(loaded.next);
+      await loadHits(current, hits(), cursor(), wanted, (loaded, next) => {
+        setHits(loaded);
+        setCursor(next);
+
+        return true;
+      });
+
       setShown(wanted);
     } finally {
       setBusy(false);
@@ -340,9 +325,7 @@ export const FullTextSearch = (props: {
         <output>Pencarian teks gagal. Coba lagi.</output>
       </Show>
       <Show
-        when={
-          state() === "ready" && pages().length === 0 && !props.hasCatalogHits
-        }
+        when={state() === "done" && pages().length === 0 && props.catalogMissed}
       >
         <output class={css(searchStyles.results)}>
           <p>
@@ -352,7 +335,7 @@ export const FullTextSearch = (props: {
           <SearchExamples />
         </output>
       </Show>
-      <Show when={state() === "ready" && pages().length > 0}>
+      <Show when={pages().length > 0}>
         <SearchGroup title="Isi peraturan">
           <Show when={found()} keyed>
             {(current) => (
