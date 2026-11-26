@@ -100,7 +100,7 @@ const DraftComparisonPage = (props: RouteProps<"/ruu/:slug/beda/:pair">) => {
                 <SameRowsToggle label="Tampilkan juga pasal yang isi dan nomornya tidak berubah" />
               </div>
               <div class={css(styles.synopsis)}>
-                <div class={css(styles.head)}>
+                <div class={css(styles.head)} data-under-header>
                   <div>{draftVersionName(record.older)}</div>
                   <div>{draftVersionName(record.newer)}</div>
                 </div>

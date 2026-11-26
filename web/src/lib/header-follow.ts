@@ -2,6 +2,7 @@ import { shownPx, step } from "./bar-scroll.ts";
 import type { HeaderMode } from "./bar-scroll.ts";
 
 const VAR_NAME = /^var\((?<name>--[^),\s]+)/u;
+const FOLLOWER = "[data-under-header]";
 
 /**
  * Makes `header` follow the scroll (see `bar-scroll.ts`) and returns the function that undoes it.
@@ -11,7 +12,8 @@ const VAR_NAME = /^var\((?<name>--[^),\s]+)/u;
  * (`free`, `pinned` or `hidden`), which its styles turn into position and slide. It stays put
  * while focus is in it or its "Aa" popover is open, and tucks away after a jump within the page.
  * `offsetVar` is the `var(--name)` of the variable that tells sticky elements how much of the
- * header covers the window.
+ * header covers the window. When it changes, every sticky element marked `data-under-header` slides
+ * by `translate` from where it was to its new place, with the header's own transition.
  */
 export const followHeader = (
   header: HTMLElement,
@@ -31,6 +33,7 @@ export const followHeader = (
   let height = 0;
   let following = false;
   let covered = -1;
+  let slides: Animation[] = [];
 
   const held = () =>
     header.querySelector('[aria-expanded="true"]') !== null ||
@@ -47,6 +50,50 @@ export const followHeader = (
     root.style.setProperty(offsetName, `${px}px`);
   };
 
+  const stopSlides = () => {
+    for (const slide of slides) {
+      slide.cancel();
+    }
+
+    slides = [];
+  };
+
+  const slideFollowers = (move: () => void) => {
+    stopSlides();
+
+    const followers = [...document.querySelectorAll<HTMLElement>(FOLLOWER)].map(
+      (el) => ({ el, top: el.getBoundingClientRect().top })
+    );
+
+    move();
+
+    const glide = header
+      .getAnimations()
+      .find((animation) => animation instanceof CSSTransition)
+      ?.effect?.getTiming();
+
+    if (glide === undefined) {
+      return;
+    }
+
+    const { duration, easing } = glide;
+
+    slides = followers.flatMap(({ el, top }) => {
+      const shift = top - el.getBoundingClientRect().top;
+
+      if (shift === 0) {
+        return [];
+      }
+
+      return [
+        el.animate(
+          { translate: [`0 ${shift}px`, "0 0"] },
+          { duration, easing }
+        ),
+      ];
+    });
+  };
+
   const draw = (from?: number) => {
     header.dataset.mode = mode;
     header.inert = mode === "hidden";
@@ -59,7 +106,7 @@ export const followHeader = (
     }
 
     header.style.transform = `translateY(${mode === "hidden" ? -height : 0}px)`;
-    publishCovered();
+    slideFollowers(publishCovered);
   };
 
   const enter = (next: HeaderMode) => {
@@ -135,6 +182,7 @@ export const followHeader = (
     header.removeEventListener("focusin", pinIfAway);
     observer.disconnect();
     cancelAnimationFrame(frame);
+    stopSlides();
     slot.style.removeProperty("height");
     delete header.dataset.mode;
     header.inert = false;

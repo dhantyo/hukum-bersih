@@ -101,7 +101,7 @@ export const ScrollRow = (props: {
   <ScrollArea type="auto" class={[css(scrollRoot, styles.root), props.class]}>
     <Show when={props.head}>
       {(renderHead) => (
-        <div class={css(styles.head)} aria-hidden="true">
+        <div class={css(styles.head)} aria-hidden="true" data-under-header>
           <div
             class={css(styles.headTrack)}
             style={{ "min-inline-size": props.minWidth }}
