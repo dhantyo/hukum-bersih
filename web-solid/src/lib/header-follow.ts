@@ -74,10 +74,14 @@ export const followHeader = (
     publishCovered();
   };
 
-  const moveTo = (mode: "pinned" | "hidden") => {
+  const enter = (next: HeaderState) => {
     const from = height - shownPx(state, lastTop, height);
-    state = { mode };
+    state = next;
     draw(from);
+  };
+
+  const moveTo = (mode: "pinned" | "hidden") => {
+    enter({ mode });
   };
 
   const pinIfAway = () => {
@@ -134,8 +138,7 @@ export const followHeader = (
       (next.mode === "free" && state.mode === "free" && next.y !== state.y);
 
     if (moved) {
-      state = next;
-      draw();
+      enter(next);
     }
 
     clearTimeout(settle);
