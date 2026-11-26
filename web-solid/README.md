@@ -44,6 +44,15 @@ It serves `ASTRO_DIST` (default `../web/dist`) as static files and starts `dist/
 
 The route matrix is the `ROUTES` table in `scripts/visual-parity/routes.ts`: add a route with one line. Every route is shot at each width, light and dark, and law pages also in Asli and Modern. A page is cut at a fixed height (Chromium cannot capture taller), and a route marked `viewportOnly` keeps only the first screenful. Animations are off, fonts and network are idle and the page height is steady before a shot, so two runs on the same builds give the same percentages; `--compare` exits 1 when a page moved by more than 0.1 points. Output is `.snapshots/visual/<run>/index.html` (pages worst first), `summary.json` and the PNGs, all ignored by git.
 
+## Header reveal check
+
+`node scripts/header-reveal.ts <url> --label <name>` opens the page in Chromium, scrolls down far, then up a little, and prints the header's `top`, `data-mode`, `position` and `transform` for every frame of the scroll up. It exits 1 when the header was ever below the top of the window while it came back (it must slide in from above), or when the header caused a layout shift. It works on this app and on the built Astro site, which is the reference (`--allow-header-shift` keeps Astro's own header shift, from moving `top`, from failing it). `--reduced` runs it under `prefers-reduced-motion: reduce`, `--width <px>` sets the window width, `--out <file>` saves the frames as JSON.
+
+```sh
+pnpm run build && pnpm run start     # then, in another shell:
+node scripts/header-reveal.ts http://localhost:3000/uu/11/2008/ --label solid
+```
+
 ## Cloudflare preview
 
 The manual **Deploy Solid preview** workflow builds the Worker, runs `hukum-bersih export-corpus --publish` in `pipeline/` for the full corpus (every law, the collections, the draft bills and the search index), and uploads that release to R2 with rclone (`.github/scripts/upload-release.sh`): the release files, then its ready marker, then the `active-release` pointer, so a reader never sees a half-uploaded release. A subset would leave the draft and collection pages out, and `export-corpus` has no subset option. It deploys the `hukum-bersih-solid-preview` Worker, reading the `hukum-bersih-corpus` R2 bucket.
