@@ -90,10 +90,14 @@ jobs:
           echo "Checking R2 connectivity..."
           rclone lsf preview:hukum-bersih-corpus --max-depth 1
 
+          # The pointer is about to move: remember the release the live Worker reads, for the prune step.
+          previous="$(rclone cat preview:hukum-bersih-corpus/active-release 2>/dev/null | tr -d '\n' || true)"
+          if ! [[ "$previous" =~ ^[a-f0-9]{64}$ ]]; then previous=""; fi
+
           echo "Publishing corpus..."
           release="$(bash ../.github/scripts/upload-release.sh "$RUNNER_TEMP/solid-corpus" preview:hukum-bersih-corpus)"
 
-          printf 'release=%s\n' "$release" >> "$GITHUB_OUTPUT"
+          printf 'release=%s\nprevious=%s\n' "$release" "$previous" >> "$GITHUB_OUTPUT"
 
       - name: Deploy preview Worker
         id: worker
@@ -106,6 +110,23 @@ jobs:
           pnpm exec wrangler deploy
           url="$(jq -ers '[.[] | select(.type == "deploy") | .targets[] | select(test("^https://hukum-bersih-solid-preview\\.[a-z0-9-]+\\.workers\\.dev/?$"))] | last' "$WRANGLER_OUTPUT_FILE_PATH")"
           printf 'url=%s\n' "${url%/}" >> "$GITHUB_OUTPUT"
+
+      # Runs only when the deploy succeeded (the default step condition). Keeps the new release and the
+      # one active before it, so redeploying the previous Worker still finds its corpus.
+      - name: Prune old corpus releases
+        env:
+          RELEASE: ${{ steps.corpus.outputs.release }}
+          PREVIOUS: ${{ steps.corpus.outputs.previous }}
+          RCLONE_CONFIG_PREVIEW_TYPE: s3
+          RCLONE_CONFIG_PREVIEW_PROVIDER: Cloudflare
+          RCLONE_CONFIG_PREVIEW_REGION: auto
+          RCLONE_CONFIG_PREVIEW_NO_CHECK_BUCKET: "true"
+          RCLONE_CONFIG_PREVIEW_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          RCLONE_CONFIG_PREVIEW_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          export RCLONE_CONFIG_PREVIEW_ENDPOINT="https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com"
+          bash ../.github/scripts/prune-releases.sh preview:hukum-bersih-corpus "$RELEASE" "$PREVIOUS" | tee -a "$GITHUB_STEP_SUMMARY"
 
       - name: Deployment summary
         env:

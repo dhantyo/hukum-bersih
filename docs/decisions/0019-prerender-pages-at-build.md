@@ -26,7 +26,9 @@ workflow.
   the plain page. After hydration the browser builds the comparison from the published pair
   files (`lib/after-hydration.ts`, decision 0018). The release it reads from is baked into the
   build (`import.meta.env.CORPUS_RELEASE`, from `active-release` of `HUKUM_CORPUS_DIR`), so the
-  page and its pair files are of one release. Hydration renders the plain page first, so it
+  page and its pair files are of one release. The preview workflow keeps only the new release and
+  the previous one in the bucket (`.github/scripts/prune-releases.sh`), enough to roll back by
+  redeploying the previous Worker. Hydration renders the plain page first, so it
   matches the HTML.
 - **Worker.** `wrangler.jsonc` keeps `run_worker_first: false`: a request that matches an asset
   never runs the Worker, with or without a query string. What has no asset reaches the Worker:
