@@ -10,8 +10,9 @@ registry (``lines.py``); this module decides what it means given what came befor
 from __future__ import annotations
 
 import re
-from collections.abc import Sequence
+from collections.abc import Callable, Sequence
 from dataclasses import dataclass, field
+from enum import StrEnum
 from pathlib import Path
 
 from .lines import Kind, Line, classify, normalise
@@ -39,6 +40,7 @@ OCR_REDO_BELOW = 16
 ORDINAL = {"PERTAMA": 1, "KESATU": 1, "KEDUA": 2, "KETIGA": 3, "KEEMPAT": 4, "KELIMA": 5,
            "KEENAM": 6, "KETUJUH": 7, "KEDELAPAN": 8, "KESEMBILAN": 9, "KESEPULUH": 10}
 SALINAN_MAX = 15  # lines of a copy's certification block ("Salinan sesuai dengan aslinya" …)
+NEXT_HEADING_WITHIN = 400  # lines, the heading itself included, a misprint check reads for the next Pasal (S3)
 # the block a Penjelasan part line (Kind.PENJELASAN_PART) opens, and its text
 PENJELASAN_PARTS = {"umum": "Umum", "pasal_demi_pasal": "Pasal demi Pasal"}
 
@@ -126,342 +128,449 @@ def heading_number(label: str) -> int:
     return ORDINAL[label.upper()] if label.upper() in ORDINAL else roman(label.upper())
 
 
+def pasal_number(num: str) -> int:
+    return int(re.match(r"\d+", num)[0]) if num[0].isdigit() else roman(num)
+
+
+# --------------------------------------------------------------------------- the machine
+#
+# Structure is a state machine over classified lines. TABLE maps each State to its cells in the
+# order they are tried: the first cell whose line class the line has and whose guard holds acts
+# on the line. Counters live in Context and are read by guards; look-ahead guards read a View.
+
+
+class State(StrEnum):
+    FRONT = "front"                         # the title, before any preamble line or heading
+    PREAMBLE = "preamble"                   # Menimbang … Menetapkan, and headings before Pasal 1
+    BODY = "body"
+    AMENDING = "amending"                   # an amending law's Pasal I, II: quoted wording is text
+    CLOSING = "closing"                     # Disahkan … LN lines, over the part it closes
+    SALINAN = "salinan"                     # the copy's certification, left out, over a part
+    PENJELASAN_UMUM = "penjelasan_umum"     # the Penjelasan before its first pasal
+    PENJELASAN_PASAL = "penjelasan_pasal"   # Pasal demi Pasal
+    PENJELASAN_PASAL_I = "penjelasan_pasal_i"   # Pasal demi Pasal of an amending law: Pasal I, II
+    LAMPIRAN = "lampiran"
+
+
+# CLOSING and SALINAN lie over a part of the document and give way to it (``settle``)
+OVER = frozenset({State.CLOSING, State.SALINAN})
+
+Lists = tuple[tuple[str, str], ...]
+
+
+@dataclass
+class Context:
+    """The document so far and the counters the guards read. Only cell actions change it."""
+
+    doc: Document = field(default_factory=Document)
+    state: State = State.FRONT
+    part: State = State.FRONT       # the last state that is not OVER: where CLOSING and SALINAN return
+    last_pasal: int = 0
+    last_bab: int = 0
+    last_ayat: int = 0
+    # open lists inside the current ayat or pasal, outermost first: (kind, last marker); letters
+    # inside a numbered item (or numbers inside a lettered one) nest one deeper
+    lists: Lists = ()
+    p_last_pasal: int = 0           # the Penjelasan's last pasal
+    quoted_one: bool = False        # Pasal I has quoted the amended law's Pasal 1 (S29)
+    amending_law: bool = False      # the body was AMENDING when the Penjelasan opened (S21)
+    salinan_lines: int = 0          # lines of the certification left out so far (S25)
+
+    @property
+    def cur(self) -> Block | None:
+        return self.doc.blocks[-1] if self.doc.blocks else None
+
+    def enter(self, state: State) -> None:
+        self.state = state
+        if state not in OVER:
+            self.part = state
+
+
+@dataclass(frozen=True)
+class View:
+    """The line being read, with read-only access to the lines before and after it."""
+
+    lines: Sequence[Line]
+    at: int
+
+    @property
+    def before(self) -> str:
+        return self.lines[self.at - 1].text if self.at else ""
+
+    def ahead(self, n: int) -> Sequence[Line]:
+        return self.lines[self.at + 1:self.at + 1 + n]
+
+
+Guard = Callable[[Context, Line, View], bool]
+Action = Callable[[Context, Line, View], int]     # lines used; 0: read the line again in the next state
+
+
+@dataclass(frozen=True)
+class Cell:
+    name: str
+    ids: tuple[str, ...]            # the rules of docs/parser-rules.md this cell carries out
+    kind: Kind | None               # the line class it reads; None: any line
+    guard: Guard
+    action: Action
+    then: State | Callable[[Context], State] | None = None    # next state; None: stay
+
+
+TABLE: dict[State, tuple[Cell, ...]] = {}
+
+
+def step(ctx: Context, view: View) -> int:
+    line = view.lines[view.at]
+    for cell in TABLE[ctx.state]:
+        if (cell.kind is None or cell.kind in line) and cell.guard(ctx, line, view):
+            used = cell.action(ctx, line, view)
+            then = cell.then(ctx) if callable(cell.then) else cell.then
+            if then is not None:
+                ctx.enter(then)
+            return used or step(ctx, view)
+    raise AssertionError(f"no cell of {ctx.state} reads {line.text!r}")
+
+
+# --------------------------------------------------------------------------- actions' tools
+
+
+def emit(ctx: Context, block: Block) -> None:
+    ctx.doc.blocks.append(block)
+
+
+def append(ctx: Context, text: str) -> None:
+    """The line continues the open block (S11); after a heading it starts a text block."""
+    cur = ctx.cur
+    if cur is None or cur.kind in {"bab", "bagian", "paragraf", "pasal", "p_pasal"}:
+        emit(ctx, Block("text", text=text))
+    else:
+        cur.text = join(cur.text, text)
+
+
+def place(lists: Lists, kind: str, marker: str) -> tuple[int, Lists] | None:
+    """Nesting level (1 = outermost) and the open lists after ``marker`` if it can start or
+    continue a list here, else None (S9, S10). ``kind`` is "letter" (a., b., ...) or "number"."""
+    for depth in range(len(lists) - 1, -1, -1):          # continue an open list
+        open_kind, last = lists[depth]
+        if open_kind == kind and _follows(last, marker, kind):
+            return depth + 1, (*lists[:depth], (kind, marker))
+    if marker != ("a" if kind == "letter" else "1"):
+        return None
+    if lists and lists[-1][0] != kind:                   # nested list under an item
+        return len(lists) + 1, (*lists, (kind, marker))
+    return 1, ((kind, marker),)                          # new list at the top
+
+
+# --------------------------------------------------------------------------- look-ahead guards
+
+
+def take_title(view: View, caps: bool) -> tuple[str, int]:
+    """A heading's title on the next line(s) (S6, S7), and the lines it and its heading use."""
+    lines, i = view.lines, view.at
+    parts, j = [], i + 1
+    while j < len(lines):
+        nxt = lines[j]
+        if Kind.BAB in nxt or is_heading(nxt):
+            break
+        if caps and not is_caps(nxt.text):
+            # older laws: the title in normal capitals, over up to four short lines
+            # ("Tentang Urusan Rumah-Tangga" / "dan Kewajiban-Kewajiban" …), then a heading
+            if j == i + 1 and nxt.text[:1].isupper():
+                k = j
+                while (k < len(lines) and k - j < 4 and len(lines[k].text.split()) <= 12
+                       and not lines[k].text.endswith(":") and not is_heading(lines[k])
+                       and not re.match(r"^[IVXLC]+\.\s", lines[k].text)):
+                    k += 1
+                if k < len(lines) and (is_heading(lines[k]) or re.match(r"^[IVXLC]+\.\s", lines[k].text)):
+                    parts.extend(ln.text for ln in lines[j:k])
+                    j = k
+            break
+        parts.append(nxt.text)
+        j += 1
+        if not caps:
+            break
+    return " ".join(parts), j - i
+
+
+def title_follows(view: View) -> bool:
+    """A capitals line follows that is not a Pasal heading (S5)."""
+    return any(is_caps(ln.text) and Kind.PASAL not in ln for ln in view.ahead(1))
+
+
+def next_heading(view: View) -> int | None:
+    """Number of the next line that is a whole 'Pasal N' heading, within NEXT_HEADING_WITHIN
+    lines (S3)."""
+    for ln in view.ahead(NEXT_HEADING_WITHIN - 1):
+        if (pasal := ln.get(Kind.PASAL)) and not pasal[0][-1].isalpha():
+            return int(pasal[0]) if pasal[0].isdigit() else roman(pasal[0])
+        if Kind.PENJELASAN in ln or Kind.CLOSING in ln:
+            return None
+    return None
+
+
+def after_sentence(view: View) -> bool:
+    """The line before ends a sentence or is a heading ("Cukup jelas" ends without a stop)."""
+    prev = view.before.rstrip()
+    return (prev.endswith((".", ";", ":", ")")) or is_caps(prev) or Kind.PASAL in classify(prev)
+            or prev.lower().endswith("cukup jelas"))
+
+
+def quote_follows(view: View) -> bool:
+    """The line before leads into quoted text ("… sehingga berbunyi sebagai berikut:"): the
+    heading is the amended law's own, quoted in an amending law (S4, UU 7/2021, Arabic pasal)."""
+    return bool(re.search(r"berikut\s*:\s*$", view.before, re.IGNORECASE))
+
+
+def misprinted(view: View, n: int, last: int) -> bool:
+    """A heading whose printed number breaks the sequence but the next heading continues it
+    (S3): a misprint in the copy ('Pasal 9' twice, UU 19/1948; 'Pasal 8' for 3, UU 29/1948;
+    'Pasal II' for 11, UU 1/1951), or a number the copy skips (the next is one more than this).
+    It must follow the end of a sentence, so a cross-reference wrapped onto its own line is not
+    taken."""
+    if not after_sentence(view) or quote_follows(view):
+        return False
+    nxt = next_heading(view)
+    return nxt == last + 2 or (last + 1 < n <= last + 3 and nxt == n + 1)
+
+
+def amends_so_far(doc: Document) -> bool:
+    """Pasal I so far contains amendment wording (S28)."""
+    k = max(i for i, b in enumerate(doc.blocks) if b.kind == "pasal")
+    text = " ".join(b.text for b in doc.blocks[k:])
+    return bool(re.search(r"diubah|disisipkan|dihapus|ditambah|sebagai berikut|berbunyi", text))
+
+
+def reads_as_amending(doc: Document, view: View) -> bool:
+    """The title says PERUBAHAN and 'Beberapa ketentuan … diubah' follows (S30)."""
+    title = " ".join(b.text for b in doc.blocks if b.kind == "title").upper()
+    nxt = " ".join(ln.text for ln in view.ahead(2))
+    return "PERUBAHAN" in title and bool(re.match(
+        r"^(Beberapa ketentuan|Ketentuan .{0,80}diubah|Undang-Undang Nomor .{0,200}diubah)", nxt))
+
+
+def had_penjelasan(doc: Document) -> bool:
+    return any(b.kind == "penjelasan" for b in doc.blocks)
+
+
 class Parser:
     def __init__(self, lines: list[str]):
         self.lines = [classify(text) for text in normalise(lines)]
-        self.doc = Document()
-        self.cur: Block | None = None
-        self.last_pasal = 0
-        self.last_bab = 0
-        self.last_ayat = 0
-        # Open lists inside the current ayat/pasal, outermost first: [kind, last marker].
-        # Letters inside a numbered item (or numbers inside a lettered item) nest one deeper.
-        self.lists: list[list] = []
+        self.ctx = Context()
         self.in_penjelasan = False
-        self.p_last_pasal = 0
         # An amending law's own articles are Pasal I, II …; inside Pasal I it quotes the new
         # wording of the amended law ("Pasal 4", "BAB IVA" …), which is content, not structure.
         self.amending = False
         self.in_salinan = False
         self.in_lampiran = False
-        self.quoted_one = False
-        self.salinan_lines = 0
         self.p_roman = False
 
-    # helpers --------------------------------------------------------------
-    def emit(self, block: Block) -> Block:
-        self.doc.blocks.append(block)
-        self.cur = block
-        return block
-
-    def append(self, line: str) -> None:
-        if self.cur is None or self.cur.kind in {"bab", "bagian", "paragraf", "pasal", "p_pasal"}:
-            self.emit(Block("text", text=line))
-        else:
-            self.cur.text = join(self.cur.text, line)
-
-    def reset_lists(self) -> None:
-        self.last_ayat = 0
-        self.lists = []
-
-    def list_item(self, kind: str, marker: str) -> int | None:
-        """Nesting level (1 = outermost) if ``marker`` can start or continue a list here, else
-        None. ``kind`` is "letter" (a., b., ...) or "number" (1., 2., ...)."""
-        first = "a" if kind == "letter" else "1"
-        for depth in range(len(self.lists) - 1, -1, -1):     # continue an open list
-            open_kind, last = self.lists[depth]
-            if open_kind == kind and _follows(last, marker, kind):
-                del self.lists[depth + 1:]
-                self.lists[depth][1] = marker
-                return depth + 1
-        if marker != first:
-            return None
-        if self.lists and self.lists[-1][0] != kind:         # nested list under an item
-            self.lists.append([kind, marker])
-        else:                                                # new list at the top
-            self.lists = [[kind, marker]]
-        return len(self.lists)
-
-    # main -----------------------------------------------------------------
     def run(self) -> Document:
         i = 0
         while i < len(self.lines):
-            line = self.lines[i]
-            i += self.step(line, i)
-        for b in self.doc.blocks:
+            i += self.step(self.lines[i], View(self.lines, i))
+        for b in self.ctx.doc.blocks:
             b.text = tidy(b.text)
             b.label = tidy(b.label)
-        return self.doc
+        return self.ctx.doc
 
-    def take_title(self, i: int, caps: bool) -> tuple[str, int]:
-        """Heading titles follow on the next line(s)."""
-        parts, j = [], i + 1
-        while j < len(self.lines):
-            nxt = self.lines[j]
-            if Kind.BAB in nxt or is_heading(nxt):
-                break
-            if caps and not is_caps(nxt.text):
-                # older laws: the title in normal capitals, over up to four short lines
-                # ("Tentang Urusan Rumah-Tangga" / "dan Kewajiban-Kewajiban" …), then a heading
-                if j == i + 1 and nxt.text[:1].isupper():
-                    k = j
-                    while (k < len(self.lines) and k - j < 4 and len(self.lines[k].text.split()) <= 12
-                           and not self.lines[k].text.endswith(":") and not is_heading(self.lines[k])
-                           and not re.match(r"^[IVXLC]+\.\s", self.lines[k].text)):
-                        k += 1
-                    if k < len(self.lines) and (is_heading(self.lines[k])
-                                                or re.match(r"^[IVXLC]+\.\s", self.lines[k].text)):
-                        parts.extend(ln.text for ln in self.lines[j:k])
-                        j = k
-                break
-            parts.append(nxt.text)
-            j += 1
-            if not caps:
-                break
-        return " ".join(parts), j - i
-
-    def amends_so_far(self) -> bool:
-        """Pasal I so far contains amendment wording."""
-        k = max(i for i, b in enumerate(self.doc.blocks) if b.kind == "pasal")
-        text = " ".join(b.text for b in self.doc.blocks[k:])
-        return bool(re.search(r"diubah|disisipkan|dihapus|ditambah|sebagai berikut|berbunyi", text))
-
-    def reads_as_amending(self, i: int) -> bool:
-        title = " ".join(b.text for b in self.doc.blocks if b.kind == "title").upper()
-        nxt = " ".join(ln.text for ln in self.lines[i + 1:i + 3])
-        return "PERUBAHAN" in title and bool(re.match(
-            r"^(Beberapa ketentuan|Ketentuan .{0,80}diubah|Undang-Undang Nomor .{0,200}diubah)", nxt))
-
-    def next_heading(self, i: int) -> int | None:
-        """Number of the next line that is a whole 'Pasal N' heading, within 400 lines."""
-        for ln in self.lines[i + 1:i + 400]:
-            if (pasal := ln.get(Kind.PASAL)) and not pasal[0][-1].isalpha():
-                return int(pasal[0]) if pasal[0].isdigit() else roman(pasal[0])
-            if Kind.PENJELASAN in ln or Kind.CLOSING in ln:
-                return None
-        return None
-
-    def after_sentence(self, i: int) -> bool:
-        """The line before ends a sentence or is a heading ("Cukup jelas" ends without a stop)."""
-        prev = self.lines[i - 1].text.rstrip() if i else ""
-        return (prev.endswith((".", ";", ":", ")")) or is_caps(prev) or Kind.PASAL in classify(prev)  # stripped
-                or prev.lower().endswith("cukup jelas"))
-
-    def quote_follows(self, i: int) -> bool:
-        """The line before leads into quoted text ("… sehingga berbunyi sebagai berikut:"): the
-        heading is the amended law's own, quoted in an amending law (UU 7/2021, Arabic pasal)."""
-        return bool(i and re.search(r"berikut\s*:\s*$", self.lines[i - 1].text, re.IGNORECASE))
-
-    def misprinted(self, i: int, n: int, last: int) -> bool:
-        """A heading whose printed number breaks the sequence but the next heading continues it:
-        a misprint in the copy ('Pasal 9' twice, UU 19/1948; 'Pasal 8' for 3, UU 29/1948; 'Pasal
-        II' for 11, UU 1/1951), or a number the copy skips (the next is one more than this). It
-        must follow the end of a sentence, so a cross-reference wrapped onto its own line is not
-        taken."""
-        if not self.after_sentence(i) or self.quote_follows(i):
-            return False
-        nxt = self.next_heading(i)
-        return nxt == last + 2 or (last + 1 < n <= last + 3 and nxt == n + 1)
-
-    def had_penjelasan(self) -> bool:
-        return any(b.kind == "penjelasan" for b in self.doc.blocks)
-
-    def title_follows(self, i: int) -> bool:
-        nxt = self.lines[i + 1] if i + 1 < len(self.lines) else classify("")
-        return is_caps(nxt.text) and Kind.PASAL not in nxt
-
-    def step(self, line: Line, i: int) -> int:
+    def step(self, line: Line, view: View) -> int:
+        ctx = self.ctx
         if self.in_salinan and (Kind.PENJELASAN in line or Kind.LAMPIRAN in line
-                                or self.salinan_lines >= SALINAN_MAX):
+                                or ctx.salinan_lines >= SALINAN_MAX):
             # the certification ends where the Penjelasan or a Lampiran starts; it is a few lines,
             # so a long skip means a misreading: stop and keep the text (UU 2/2025 lost its
             # Penjelasan to this before)
-            if self.salinan_lines >= SALINAN_MAX:
-                self.doc.warnings.append(f"salinan: no end found after {SALINAN_MAX} lines; text kept")
+            if ctx.salinan_lines >= SALINAN_MAX:
+                ctx.doc.warnings.append(f"salinan: no end found after {SALINAN_MAX} lines; text kept")
             self.in_salinan = False
-        if not self.in_penjelasan and Kind.PENJELASAN in line and self.last_pasal:
+        if not self.in_penjelasan and Kind.PENJELASAN in line and ctx.last_pasal:
             self.in_penjelasan = True
             umum = line.get(Kind.PENJELASAN_UMUM)
-            self.emit(Block("penjelasan", text=umum[0] if umum else line.text))
+            emit(ctx, Block("penjelasan", text=umum[0] if umum else line.text))
             if umum:
-                self.emit(Block("umum", text="Umum"))
-            self.reset_lists()
+                emit(ctx, Block("umum", text="Umum"))
+            ctx.last_ayat, ctx.lists = 0, ()
             return 1
-        if self.last_pasal and Kind.CLOSING in line:
-            self.emit(Block("closing", text=line.text))
+        if ctx.last_pasal and Kind.CLOSING in line:
+            emit(ctx, Block("closing", text=line.text))
             return 1
         if self.in_salinan:
-            self.salinan_lines += 1
+            ctx.salinan_lines += 1
             return 1
-        if self.last_pasal and Kind.LAMPIRAN in line:
+        if ctx.last_pasal and Kind.LAMPIRAN in line:
             # an annex (maps, tables, schedules) after the closing or the Penjelasan: kept as
-            # printed lines in its own part; it ends at a Penjelasan or the next Lampiran
+            # printed lines in its own part
             self.in_lampiran = True
-            self.emit(Block("lampiran", label=line.text))
+            emit(ctx, Block("lampiran", label=line.text))
             return 1
-        # a Penjelasan heading ends a Lampiran only if the law's Penjelasan is still to come; after
-        # it, the heading is part of the Lampiran (UU 13/2022's drafting guide quotes example
-        # laws: "PENJELASAN ATAS UNDANG-UNDANG … NOMOR 7 TAHUN 2021")
-        if self.in_lampiran and not (Kind.PENJELASAN in line and not self.had_penjelasan()):
+        if self.in_lampiran and not (Kind.PENJELASAN in line and not had_penjelasan(ctx.doc)):
             if Kind.SALINAN in line:
-                self.in_salinan, self.salinan_lines = True, 0
+                self.in_salinan, ctx.salinan_lines = True, 0
                 return 1
-            self.emit(Block("lampiran_text", text=line.text))
+            emit(ctx, Block("lampiran_text", text=line.text))
             return 1
-        if self.in_lampiran:
-            self.in_lampiran = False
-            self.in_penjelasan = False
-        if self.last_pasal and Kind.SALINAN in line:
+        if ctx.last_pasal and Kind.SALINAN in line:
             # the copy's certification by the State Secretariat, often under a round stamp;
             # not part of the law (and OCR turns the stamp into noise)
-            self.in_salinan, self.salinan_lines = True, 0
-            self.doc.warnings.append("salinan: copy certified ('Salinan sesuai dengan aslinya'); left out")
+            self.in_salinan, ctx.salinan_lines = True, 0
+            ctx.doc.warnings.append("salinan: copy certified ('Salinan sesuai dengan aslinya'); left out")
             return 1
-        if (self.cur is not None and self.cur.kind == "closing" and Kind.PENJELASAN not in line
+        cur = ctx.cur
+        if (cur is not None and cur.kind == "closing" and Kind.PENJELASAN not in line
                 and line.text != "RANCANGAN"):
-            if self.cur.text.startswith("Agar") and not self.cur.text.rstrip().endswith("."):
-                self.cur.text = join(self.cur.text, line.text)  # the sentence goes on
+            if cur.text.startswith("Agar") and not cur.text.rstrip().endswith("."):
+                cur.text = join(cur.text, line.text)  # the sentence goes on
             else:
-                self.emit(Block("closing", text=line.text))     # signature blocks: as printed
+                emit(ctx, Block("closing", text=line.text))     # signature blocks: as printed
             return 1
         if self.in_penjelasan:
-            return self.step_penjelasan(line, i)
+            return self.step_penjelasan(line, view)
 
         pasal = line.get(Kind.PASAL)
-        if self.amending and self.last_pasal == 1 and pasal == ("2",) and (
-                not self.amends_so_far()         # "Pasal I." was a misprint for Pasal 1 (UU 16/1953)
-                or (not self.quoted_one and i and self.lines[i - 1].text.rstrip().endswith("."))):
+        if self.amending and ctx.last_pasal == 1 and pasal == ("2",) and (
+                not amends_so_far(ctx.doc)       # "Pasal I." was a misprint for Pasal 1 (UU 16/1953)
+                or (not ctx.quoted_one and view.before.rstrip().endswith("."))):
             # or the law's own Pasal 2 after amendments in Pasal I (UU 2/1953, 12/1957): it follows
             # a finished sentence, where a quoted pasal follows "… berbunyi sebagai berikut:"
             self.amending = False
         if self.amending and pasal == ("1",):
-            self.quoted_one = True
+            ctx.quoted_one = True
         if self.amending and (Kind.BAB in line or Kind.BAGIAN in line or Kind.PARAGRAF in line
                               or (pasal and pasal[0][0].isdigit())):
-            self.append(line.text)
+            append(ctx, line.text)
             return 1
         if bab := line.get(Kind.BAB):
             n = heading_number(bab[0])
-            if n == self.last_bab + 1 or (n == self.last_bab and self.title_follows(i)):
-                self.last_bab = n + (n == self.last_bab)
-                title, used = self.take_title(i, caps=True)
-                self.emit(Block("bab", label=f"BAB {bab[0]}", text=title))
+            if n == ctx.last_bab + 1 or (n == ctx.last_bab and title_follows(view)):
+                ctx.last_bab = n + (n == ctx.last_bab)
+                title, used = take_title(view, caps=True)
+                emit(ctx, Block("bab", label=f"BAB {bab[0]}", text=title))
                 return used
-        if (bagian := line.get(Kind.BAGIAN)) and self.last_bab:
-            title, used = self.take_title(i, caps=False)
-            self.emit(Block("bagian", label=f"Bagian {bagian[0]}", text=title))
+        if (bagian := line.get(Kind.BAGIAN)) and ctx.last_bab:
+            title, used = take_title(view, caps=False)
+            emit(ctx, Block("bagian", label=f"Bagian {bagian[0]}", text=title))
             return used
-        if (paragraf := line.get(Kind.PARAGRAF)) and self.last_bab:
-            title, used = self.take_title(i, caps=False)
-            self.emit(Block("paragraf", label=f"Paragraf {paragraf[0]}", text=title))
+        if (paragraf := line.get(Kind.PARAGRAF)) and ctx.last_bab:
+            title, used = take_title(view, caps=False)
+            emit(ctx, Block("paragraf", label=f"Paragraf {paragraf[0]}", text=title))
             return used
         if pasal:
             num = pasal[0]
-            if num == "1" and not self.last_pasal and self.reads_as_amending(i):
+            if num == "1" and not ctx.last_pasal and reads_as_amending(ctx.doc, view):
                 num = "I"                                # OCR reads the Roman I of Pasal I as 1
-                self.doc.warnings.append("'Pasal 1' read as 'Pasal I' (amending law, OCR)")
-            n = int(re.match(r"\d+", num)[0]) if num[0].isdigit() else roman(num)
+                ctx.doc.warnings.append("'Pasal 1' read as 'Pasal I' (amending law, OCR)")
+            n = pasal_number(num)
             # anything else is a cross-reference that happens to start a wrapped line, unless the
             # number is a misprint the following headings confirm (misprinted())
-            if (n == self.last_pasal + 1 or (num[-1].isalpha() and n == self.last_pasal)
-                    or (self.last_pasal and not self.amending and self.misprinted(i, n, self.last_pasal))):
-                if n != self.last_pasal + 1 and not (num[-1].isalpha() and n == self.last_pasal):
-                    n = self.last_pasal + 1 if self.next_heading(i) == self.last_pasal + 2 else n
-                    self.doc.warnings.append(f"'Pasal {num}' printed where Pasal {n} belongs; kept as printed")
-                if n == 1 and not num[0].isdigit() and not self.last_bab:
+            if (n == ctx.last_pasal + 1 or (num[-1].isalpha() and n == ctx.last_pasal)
+                    or (ctx.last_pasal and not self.amending and misprinted(view, n, ctx.last_pasal))):
+                if n != ctx.last_pasal + 1 and not (num[-1].isalpha() and n == ctx.last_pasal):
+                    n = ctx.last_pasal + 1 if next_heading(view) == ctx.last_pasal + 2 else n
+                    ctx.doc.warnings.append(f"'Pasal {num}' printed where Pasal {n} belongs; kept as printed")
+                if n == 1 and not num[0].isdigit() and not ctx.last_bab:
                     self.amending = True
-                self.last_pasal = n
-                self.emit(Block("pasal", label=f"Pasal {num}"))
-                self.reset_lists()
+                ctx.last_pasal = n
+                emit(ctx, Block("pasal", label=f"Pasal {num}"))
+                ctx.last_ayat, ctx.lists = 0, ()
                 return 1
-        if not self.last_pasal:
+        if not ctx.last_pasal:
             return self.step_preamble(line)
         return self.step_list(line)
 
     def step_list(self, line: Line) -> int:
-        if (ayat := line.get(Kind.AYAT)) and int(ayat[0]) == self.last_ayat + 1:
-            self.last_ayat = int(ayat[0])
-            self.lists = []
-            self.emit(Block("ayat", label=f"({ayat[0]})", text=ayat[1]))
+        ctx = self.ctx
+        if (ayat := line.get(Kind.AYAT)) and int(ayat[0]) == ctx.last_ayat + 1:
+            ctx.last_ayat = int(ayat[0])
+            ctx.lists = ()
+            emit(ctx, Block("ayat", label=f"({ayat[0]})", text=ayat[1]))
             return 1
-        if (item := line.get(Kind.LIST_ITEM)) and (level := self.list_item(item[0], item[1])):
-            self.emit(Block("item", label=f"{item[1]}.", text=item[2], level=level))
+        if (item := line.get(Kind.LIST_ITEM)) and (placed := place(ctx.lists, item[0], item[1])):
+            ctx.lists = placed[1]
+            emit(ctx, Block("item", label=f"{item[1]}.", text=item[2], level=placed[0]))
             return 1
-        self.append(line.text)
+        append(ctx, line.text)
         return 1
 
+    def flat_item(self, item) -> int | None:
+        if placed := place(self.ctx.lists, item[0], item[1]):
+            self.ctx.lists = placed[1]
+            return placed[0]
+        return None
+
     def step_preamble(self, line: Line) -> int:
+        ctx = self.ctx
         if Kind.OPENING in line:
-            self.emit(Block("preamble", text=line.text))
+            emit(ctx, Block("preamble", text=line.text))
             return 1
         if preamble := line.get(Kind.PREAMBLE):
             label, rest = preamble
-            self.emit(Block("preamble", label=label, text=rest))
-            self.lists = []
-            if (item := classify(rest).get(Kind.LIST_ITEM)) and self.list_item(item[0], item[1]):
-                self.cur.text = ""
-                self.emit(Block("item", label=f"{item[1]}.", text=item[2], level=1))
+            emit(ctx, Block("preamble", label=label, text=rest))
+            ctx.lists = ()
+            if (item := classify(rest).get(Kind.LIST_ITEM)) and self.flat_item(item):
+                ctx.cur.text = ""
+                emit(ctx, Block("item", label=f"{item[1]}.", text=item[2], level=1))
             return 1
-        if self.cur is not None and self.cur.kind == "preamble" and line.text.startswith(":"):
+        cur = ctx.cur
+        if cur is not None and cur.kind == "preamble" and line.text.startswith(":"):
             line = classify(line.text.lstrip(": ").strip())   # label alone, ": 1. …" on the next line
-            if (not self.cur.text and (item := line.get(Kind.LIST_ITEM))
-                    and self.list_item(item[0], item[1])):
-                self.emit(Block("item", label=f"{item[1]}.", text=item[2], level=1))
+            if not cur.text and (item := line.get(Kind.LIST_ITEM)) and self.flat_item(item):
+                emit(ctx, Block("item", label=f"{item[1]}.", text=item[2], level=1))
                 return 1
-        if self.cur is None:
+        if cur is None:
             if Kind.CREST_CAPTION in line:
                 return 1
-            self.emit(Block("title", text=line.text))
+            emit(ctx, Block("title", text=line.text))
             return 1
-        if self.cur.kind == "title":
-            self.cur.text = join(self.cur.text, line.text)
+        if cur.kind == "title":
+            cur.text = join(cur.text, line.text)
             return 1
         # Menimbang / Mengingat lists are flat
-        if (self.cur.kind in {"preamble", "item"} and (item := line.get(Kind.LIST_ITEM))
-                and self.list_item(item[0], item[1]) == 1):
-            self.emit(Block("item", label=f"{item[1]}.", text=item[2], level=1))
+        if (cur.kind in {"preamble", "item"} and (item := line.get(Kind.LIST_ITEM))
+                and self.flat_item(item) == 1):
+            emit(ctx, Block("item", label=f"{item[1]}.", text=item[2], level=1))
             return 1
-        self.append(line.text)
+        append(ctx, line.text)
         return 1
 
-    def step_penjelasan(self, line: Line, i: int) -> int:
-        if (part := line.get(Kind.PENJELASAN_PART)) and not self.p_last_pasal:
+    def step_penjelasan(self, line: Line, view: View) -> int:
+        ctx = self.ctx
+        if (part := line.get(Kind.PENJELASAN_PART)) and not ctx.p_last_pasal:
             if part[0]:                          # not the numeral alone before the part's name
-                self.emit(Block(part[0], text=PENJELASAN_PARTS[part[0]]))
+                emit(ctx, Block(part[0], text=PENJELASAN_PARTS[part[0]]))
             return 1
         pasal = line.get(Kind.PASAL)
         if pasal and not pasal[0][0].isdigit() and self.amending:
             n = roman(pasal[0])                  # an amending law's Penjelasan: Pasal I, Pasal II
-            if n == self.p_last_pasal + 1:
-                self.p_last_pasal, self.p_roman = n, True
-                self.emit(Block("p_pasal", label=f"Pasal {pasal[0]}"))
+            if n == ctx.p_last_pasal + 1:
+                ctx.p_last_pasal, self.p_roman = n, True
+                emit(ctx, Block("p_pasal", label=f"Pasal {pasal[0]}"))
                 return 1
-        if pasal and not self.p_roman and (pasal[0][0].isdigit() or self.p_last_pasal):
+        if pasal and not self.p_roman and (pasal[0][0].isdigit() or ctx.p_last_pasal):
             num = pasal[0]
-            n = int(re.match(r"\d+", num)[0]) if num[0].isdigit() else roman(num)
+            n = pasal_number(num)
             # a Penjelasan often explains only some pasal (old laws): any later pasal of the law
             # after the end of a sentence is a heading there (UU 2/1962: Pasal 5, then Pasal 12)
-            skipped = self.p_last_pasal < n <= self.last_pasal and num[0].isdigit() and self.after_sentence(i)
-            if (n == self.p_last_pasal + 1 or (num[-1].isalpha() and n == self.p_last_pasal) or skipped
-                    or (self.p_last_pasal and self.misprinted(i, n, self.p_last_pasal))):
-                if self.p_last_pasal and n != self.p_last_pasal + 1 and self.next_heading(i) == self.p_last_pasal + 2:
-                    n = self.p_last_pasal + 1
-                self.p_last_pasal = n
-                self.emit(Block("p_pasal", label=f"Pasal {num}"))
+            skipped = ctx.p_last_pasal < n <= ctx.last_pasal and num[0].isdigit() and after_sentence(view)
+            if (n == ctx.p_last_pasal + 1 or (num[-1].isalpha() and n == ctx.p_last_pasal) or skipped
+                    or (ctx.p_last_pasal and misprinted(view, n, ctx.p_last_pasal))):
+                if (ctx.p_last_pasal and n != ctx.p_last_pasal + 1
+                        and next_heading(view) == ctx.p_last_pasal + 2):
+                    n = ctx.p_last_pasal + 1
+                ctx.p_last_pasal = n
+                emit(ctx, Block("p_pasal", label=f"Pasal {num}"))
                 return 1
-        if (label := line.get(Kind.PENJELASAN_LABEL)) and self.p_last_pasal:
-            self.emit(Block("p_label", label=label[0], text=label[1]))
+        if (label := line.get(Kind.PENJELASAN_LABEL)) and ctx.p_last_pasal:
+            emit(ctx, Block("p_label", label=label[0], text=label[1]))
             return 1
+        cur = ctx.cur
         # Penjelasan umum is prose: start a new paragraph after a sentence end.
-        if (self.cur and self.cur.kind == "text" and self.cur.text.endswith(".")
-                and line.text[:1].isupper() and not self.p_last_pasal):
-            self.emit(Block("text", text=line.text))
+        if (cur and cur.kind == "text" and cur.text.endswith(".")
+                and line.text[:1].isupper() and not ctx.p_last_pasal):
+            emit(ctx, Block("text", text=line.text))
             return 1
-        if self.cur and self.cur.kind in {"umum", "pasal_demi_pasal", "penjelasan"} and \
-                self.cur.kind != "penjelasan":
-            self.emit(Block("text", text=line.text))
+        if cur and cur.kind in {"umum", "pasal_demi_pasal"}:
+            emit(ctx, Block("text", text=line.text))
             return 1
-        self.append(line.text)
+        append(ctx, line.text)
         return 1
 
 
