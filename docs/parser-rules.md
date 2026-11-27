@@ -16,7 +16,7 @@ of citations in the text (see [Citations](#citations)).
 | Layer | Rules | No test before | Tests added |
 |---|---:|---:|---:|
 | Page cleanup (`pdf/extract.py`, `pdf/edges.py`) | 26 | 2 | 2 |
-| Line classification (`pdf/structure.py` regexes, `normalise`) | 24 | 8 | 8 |
+| Line classification (`pdf/lines.py`) | 24 | 8 | 8 |
 | Structure (`pdf/structure.py` `Parser`) | 31 | 7 | 6 |
 | Closing fields (`closing.py`) | 12 | 2 | 2 |
 | **All** | **93** | **19** | **18** |
@@ -59,35 +59,39 @@ PDF pages to cleaned printed lines, before anything is classified.
 
 ## Line classification
 
-What a single line is, read from its text alone (the regexes at the top of `pdf/structure.py`
-and `normalise`).
+What a single line is, read from its text alone: the registry in `pdf/lines.py` (rewrite step
+1, done). Each entry carries its ids, the law that caused it and its test; Code names the entry:
+`JOIN_PASAL` and `REPAIRS` (in `normalise`) repair heading lines, and one `RULES` entry per
+`Kind` classifies a line, with the fields it captured. `classify` returns every class a line
+matches; the structure layer picks the one that counts. Each class also has example lines, printed
+in the law named where there is one, in `test_line_classes::test_a_line_is_of_its_class_with_its_fields`.
 
 | ID | Rule | Ref | Cause | Code | Test |
 |---|---|---|---|---|---|
-| L1 | `Pasal` alone on a line joined with the number below | | scans, UU 18/2025 (v5) | `normalise` | `test_headings::test_pasal_number_on_its_own_line` |
-| L2 | OCR letters for digits in a heading number: `Pasal S1`, `Pasal 1lA` | | UU 12/2022 (v12) | `normalise` | `test_headings::test_ocr_letters_for_digits_and_spaced_marks_in_headings` |
-| L3 | OCR specks around a Pasal heading dropped, but `Pasal 5,` and `Pasal 5;` stay: a reference broken onto its own line | yes | UU 135/2024, 29/2024, 11/2022 (v10-12) | `normalise` | `test_headings::test_ocr_speck_before_a_pasal_heading` |
-| L4 | A heading's full stop dropped: `Pasal 1.`, `BAB I.`, `BAGIAN II.` | | UU 25/1956, 6/1964 (v5) | `HEAD_DOT_RE`, `normalise` | `test_headings::test_headings_with_a_full_stop_and_old_numbering` |
-| L5 | `PasalI`, `PASAL 3`, `Pasal12` read as `Pasal N` | | OCR, UU 18/2025 (v7) | `normalise` | **new** `test_headings::test_ocr_glued_or_capital_pasal_heading_is_read_as_pasal_n` |
-| L6 | `BAB` + Roman number | | all | `BAB_RE` | `test_headings::test_headings_with_a_full_stop_and_old_numbering` |
-| L7 | `Bab Pertama`, `Bab Kedua` … (ordinal in words) | | 1950s (v5) | `BAB_RE`, `ORDINAL` | **new** `test_headings::test_bab_numbered_in_words` |
-| L8 | `Bagian Kesatu`, `BAGIAN II` | | all; Roman in the 1950s (v5) | `BAGIAN_RE` | **new** `test_headings::test_bagian_and_paragraf_have_one_title_line_and_need_a_bab` |
-| L9 | `Paragraf 1` | | all | `PARAGRAF_RE` | **new** `test_headings::test_bagian_and_paragraf_have_one_title_line_and_need_a_bab` |
-| L10 | `Pasal` + Arabic number with an optional capital (`128A`) or a Roman number, the whole line | | all | `PASAL_RE` | `test_structure::test_structure` |
-| L11 | Ayat `(n)` at a line start | | all | `AYAT_RE` | `test_structure::test_cross_reference_is_not_a_heading` |
-| L12 | List markers `a.` and `1.` at a line start | | all | `LETTER_RE`, `NUMBER_RE` | `test_structure::test_hyphen_join_and_nesting` |
-| L13 | Preamble labels `Menimbang`, `Mengingat`, `Menetapkan`, `MEMUTUSKAN`, `Dengan persetujuan (bersama)` | | all | `PREAMBLE_RE` | `test_headings::test_preamble_lists_on_the_label_line_and_after_a_colon` |
-| L14 | `DENGAN RAHMAT TUHAN YANG MAHA ESA` and `PRESIDEN REPUBLIK INDONESIA,` are preamble, not title | | all | `OPENING_RE` | **new** `test_headings::test_enacting_formula_lines_are_preamble_not_title` |
-| L15 | Crest caption (`PRESIDEN`, `REPUBLIK INDONESIA`, `SALINAN`) is not the title | | UU 6/1964 (v5) | `Parser.step_preamble` | `test_headings::test_crest_caption_is_not_the_title` |
-| L16 | Penjelasan heading: `PENJELASAN [ATAS] [citation]`, `PENDJELASAN`, `MEMORI PENJELASAN`, a final dot, `No.` | | UU 1/1945, 3/1949, 4/1956, 6/1967 (v3, v7) | `PENJELASAN_RE` | `test_penjelasan::test_penjelasan_heading_with_a_full_stop`, `test_penjelasan_with_lettered_sections`; `test_structure::test_old_spelling_closing_and_penjelasan` |
-| L17 | `PENJELASAN UMUM` on one line opens Penjelasan and Umum | | UU 25/1956 (v5) | `Parser.step` | `test_penjelasan::test_penjelasan_umum_on_one_line` |
-| L18 | `I. UMUM`, `A. PENJELASAN UMUM.`, OCR `1. UMUM`; `II. PASAL DEMI PASAL`, `B. …` | | UU 6/1967, 2/2025 (v8) | `Parser.step_penjelasan` | `test_penjelasan::test_penjelasan_with_lettered_sections`, `test_penjelasan_after_the_copy_certification_is_kept` |
-| L19 | `I.` or `II.` alone on a line before its section name is dropped | | Penjelasan layout | `Parser.step_penjelasan` | **new** `test_penjelasan::test_penjelasan_sections_with_the_numeral_on_its_own_line` |
-| L20 | Penjelasan labels `Ayat (1)`, `Huruf a`, `Angka 2` | | all | `PENJ_AYAT_RE`, `PENJ_HURUF_RE`, `PENJ_ANGKA_RE` | **new** `test_penjelasan::test_penjelasan_labels_for_ayat_huruf_and_angka` |
-| L21 | Closing lines: `Agar setiap orang …`, `Disahkan di`, `Diundangkan di`, `Ditetapkan di`, `Djakarta, tanggal`, LN and TLN lines | | UU 4/2009, 25/1956, 1/1945 (v3, v5) | `CLOSING_RE` | `test_closing::test_closing_kept_line_by_line`, `test_old_closing_formula`; `test_structure::test_old_spelling_closing_and_penjelasan` |
-| L22 | Old and misread closing forms: `Dikeluarkan di`, `Disahkah di`, `Disjahkan di`, `Diumumkan` | | old spelling, OCR | `CLOSING_RE` | **new** `test_closing::test_closing_variants_end_the_last_pasal` |
-| L23 | `LAMPIRAN`, `LAMPIRAN I` … | | UU 14/2013 (v7) | `LAMPIRAN_RE` | `test_penjelasan::test_lampiran_after_the_penjelasan` |
-| L24 | `Salinan sesuai dengan aslinya` starts the copy certification | | UU 14/2013, 2/2025 (v7) | `Parser.step` | `test_penjelasan::test_lampiran_after_the_penjelasan`, `test_penjelasan_after_the_copy_certification_is_kept` |
+| L1 | `Pasal` alone on a line joined with the number below | | scans, UU 18/2025 (v5) | `JOIN_PASAL` | `test_headings::test_pasal_number_on_its_own_line` |
+| L2 | OCR letters for digits in a heading number: `Pasal S1`, `Pasal 1lA` | | UU 12/2022 (v12) | `REPAIRS` L2 | `test_headings::test_ocr_letters_for_digits_and_spaced_marks_in_headings` |
+| L3 | OCR specks around a Pasal heading dropped, but `Pasal 5,` and `Pasal 5;` stay: a reference broken onto its own line | yes | UU 135/2024, 29/2024, 11/2022 (v10-12) | `REPAIRS` L3 | `test_headings::test_ocr_speck_before_a_pasal_heading` |
+| L4 | A heading's full stop dropped: `Pasal 1.`, `BAB I.`, `BAGIAN II.` | | UU 25/1956, 6/1964 (v5) | `REPAIRS` L4 | `test_headings::test_headings_with_a_full_stop_and_old_numbering` |
+| L5 | `PasalI`, `PASAL 3`, `Pasal12` read as `Pasal N` | | OCR, UU 18/2025 (v7) | `REPAIRS` L5 | **new** `test_headings::test_ocr_glued_or_capital_pasal_heading_is_read_as_pasal_n` |
+| L6 | `BAB` + Roman number | | all | `Kind.BAB` | `test_headings::test_headings_with_a_full_stop_and_old_numbering` |
+| L7 | `Bab Pertama`, `Bab Kedua` … (ordinal in words) | | 1950s (v5) | `Kind.BAB`; `structure.ORDINAL` | **new** `test_headings::test_bab_numbered_in_words` |
+| L8 | `Bagian Kesatu`, `BAGIAN II` | | all; Roman in the 1950s (v5) | `Kind.BAGIAN` | **new** `test_headings::test_bagian_and_paragraf_have_one_title_line_and_need_a_bab` |
+| L9 | `Paragraf 1` | | all | `Kind.PARAGRAF` | **new** `test_headings::test_bagian_and_paragraf_have_one_title_line_and_need_a_bab` |
+| L10 | `Pasal` + Arabic number with an optional capital (`128A`) or a Roman number, the whole line | | all | `Kind.PASAL` | `test_structure::test_structure` |
+| L11 | Ayat `(n)` at a line start | | all | `Kind.AYAT` | `test_structure::test_cross_reference_is_not_a_heading` |
+| L12 | List markers `a.` and `1.` at a line start | | all | `Kind.LIST_ITEM` | `test_structure::test_hyphen_join_and_nesting` |
+| L13 | Preamble labels `Menimbang`, `Mengingat`, `Menetapkan`, `MEMUTUSKAN`, `Dengan persetujuan (bersama)` | | all | `Kind.PREAMBLE` | `test_headings::test_preamble_lists_on_the_label_line_and_after_a_colon` |
+| L14 | `DENGAN RAHMAT TUHAN YANG MAHA ESA` and `PRESIDEN REPUBLIK INDONESIA,` are preamble, not title | | all | `Kind.OPENING` | **new** `test_headings::test_enacting_formula_lines_are_preamble_not_title` |
+| L15 | Crest caption (`PRESIDEN`, `REPUBLIK INDONESIA`, `SALINAN`) is not the title | | UU 6/1964 (v5) | `Kind.CREST_CAPTION` | `test_headings::test_crest_caption_is_not_the_title` |
+| L16 | Penjelasan heading: `PENJELASAN [ATAS] [citation]`, `PENDJELASAN`, `MEMORI PENJELASAN`, a final dot, `No.` | | UU 1/1945, 3/1949, 4/1956, 6/1967 (v3, v7) | `Kind.PENJELASAN` | `test_penjelasan::test_penjelasan_heading_with_a_full_stop`, `test_penjelasan_with_lettered_sections`; `test_structure::test_old_spelling_closing_and_penjelasan` |
+| L17 | `PENJELASAN UMUM` on one line opens Penjelasan and Umum | | UU 25/1956 (v5) | `Kind.PENJELASAN_UMUM` | `test_penjelasan::test_penjelasan_umum_on_one_line` |
+| L18 | `I. UMUM`, `A. PENJELASAN UMUM.`, OCR `1. UMUM`; `II. PASAL DEMI PASAL`, `B. …` | | UU 6/1967, 2/2025 (v8) | `Kind.PENJELASAN_PART` | `test_penjelasan::test_penjelasan_with_lettered_sections`, `test_penjelasan_after_the_copy_certification_is_kept` |
+| L19 | `I.` or `II.` alone on a line before its section name is dropped | | Penjelasan layout | `Kind.PENJELASAN_PART` | **new** `test_penjelasan::test_penjelasan_sections_with_the_numeral_on_its_own_line` |
+| L20 | Penjelasan labels `Ayat (1)`, `Huruf a`, `Angka 2` | | all | `Kind.PENJELASAN_LABEL` | **new** `test_penjelasan::test_penjelasan_labels_for_ayat_huruf_and_angka` |
+| L21 | Closing lines: `Agar setiap orang …`, `Disahkan di`, `Diundangkan di`, `Ditetapkan di`, `Djakarta, tanggal`, LN and TLN lines | | UU 4/2009, 25/1956, 1/1945 (v3, v5) | `Kind.CLOSING` | `test_closing::test_closing_kept_line_by_line`, `test_old_closing_formula`; `test_structure::test_old_spelling_closing_and_penjelasan` |
+| L22 | Old and misread closing forms: `Dikeluarkan di`, `Disahkah di`, `Disjahkan di`, `Diumumkan` | | old spelling, OCR | `Kind.CLOSING` | **new** `test_closing::test_closing_variants_end_the_last_pasal` |
+| L23 | `LAMPIRAN`, `LAMPIRAN I` … | | UU 14/2013 (v7) | `Kind.LAMPIRAN` | `test_penjelasan::test_lampiran_after_the_penjelasan` |
+| L24 | `Salinan sesuai dengan aslinya` starts the copy certification | | UU 14/2013, 2/2025 (v7) | `Kind.SALINAN` | `test_penjelasan::test_lampiran_after_the_penjelasan`, `test_penjelasan_after_the_copy_certification_is_kept` |
 
 ## Structure
 
@@ -111,7 +115,7 @@ What a line means given what came before: the `Parser` class, its counters (`las
 | S12 | Spacing tidied: `Undang- Undang`, space before `,;:.)`, after `(`, inside quotes | | justified layout | `tidy` | **new** `test_structure::test_spacing_of_joined_lines_is_tidied` |
 | S13 | Before the first label every line is title, joined | | v1 | `Parser.step_preamble` | `test_headings::test_crest_caption_is_not_the_title` |
 | S14 | Preamble lists: the first item on the label's line or after a lone `:`; flat | | UU 14/2013, 6/1964 (v5) | `Parser.step_preamble` | `test_headings::test_preamble_lists_on_the_label_line_and_after_a_colon` |
-| S15 | `Dengan persetujuan …` is its own preamble part, not glued to the last Mengingat item | | v5 | `PREAMBLE_RE` | `test_headings::test_preamble_lists_on_the_label_line_and_after_a_colon` |
+| S15 | `Dengan persetujuan …` is its own preamble part, not glued to the last Mengingat item | | v5 | `Kind.PREAMBLE` | `test_headings::test_preamble_lists_on_the_label_line_and_after_a_colon` |
 | S16 | After the last pasal a closing line opens the closing; every later line is a closing line as printed; the `Agar …` sentence joins until its full stop | | UU 4/2009, 25/1956 (v5) | `Parser.step` | `test_closing::test_closing_kept_line_by_line`, `test_old_closing_formula` |
 | S17 | A `RANCANGAN` line after the closing is not a closing line | | RUU drafts | `Parser.step` | none (G4) |
 | S18 | The Penjelasan starts only after a pasal, once | | v1 | `Parser.step` | partly: `test_penjelasan::test_penjelasan_quoted_in_a_lampiran_after_the_penjelasan_stays_in_the_lampiran` |
@@ -176,7 +180,7 @@ pass once the rewrite handles them.
 
 | ID | Gap | Evidence | Test |
 |---|---|---|---|
-| G1 | A closing line inside a Lampiran is taken out of it: `CLOSING_RE` is checked before `in_lampiran` in `Parser.step` | UU 12/2011: 52 lines of Lampiran II's examples become closing lines; UU 17/2016: the attached Perppu's 5 closing and TLN lines | xfail `test_penjelasan::test_closing_formula_quoted_in_a_lampiran_stays_in_the_lampiran` |
+| G1 | A closing line inside a Lampiran is taken out of it: `Kind.CLOSING` is checked before `in_lampiran` in `Parser.step` | UU 12/2011: 52 lines of Lampiran II's examples become closing lines; UU 17/2016: the attached Perppu's 5 closing and TLN lines | xfail `test_penjelasan::test_closing_formula_quoted_in_a_lampiran_stays_in_the_lampiran` |
 | G2 | `LAMPIRAN I` quoted in a Lampiran starts a new one | UU 12/2011: 4 Lampiran (I, II, II, I) instead of 2 | xfail `test_penjelasan::test_lampiran_heading_quoted_as_an_example_does_not_start_a_lampiran` |
 | G3 | List levels `a)` and `1)` are text of the level-2 item | Lampiran II items 94-95 | xfail `test_structure::test_third_and_fourth_list_levels_are_items` |
 | G4 | `RANCANGAN` after the closing is glued to the last closing line (`Disahkan di Jakarta RANCANGAN`), and `ATAS` to the Penjelasan heading | S17 | none |
@@ -224,7 +228,8 @@ Keep three layers and give each the shape its rules have:
 1. Page cleanup (P1-P26) stays a pipeline of steps, as now.
 2. Line classification (L1-L24) becomes a registry: one named predicate per class, each with
    the law that caused it and its test from this inventory. Classes are context-free, so this
-   layer has no state.
+   layer has no state. **Done** (`pdf/lines.py`): `Parser` reads `Line` objects (text and the
+   classes it matched, with their fields).
 3. Structure (S1-S31) becomes a table-driven state machine over the classified lines. Counters
    (last pasal, BAB, ayat, open lists) are guards on transitions, not flags.
 
@@ -243,6 +248,9 @@ replace the `if` chain in `Parser.step` and its mode flags.
   file.
 - The bar for each step is the regression set plus the inventory's tests, including the
   `xfail(strict=True)` ones the rewrite is meant to make pass.
+- A step that keeps the output shows it with `pipeline/scripts/parser_identity.py`: the parser of
+  `origin/main` and the working tree's on every local input (cached PDFs, stored texts), zero
+  documents may differ.
 
 ### Inline references
 

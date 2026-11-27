@@ -4,7 +4,7 @@ Known gaps and agreed work not done yet. Remove an item when it ships.
 
 ## Parser
 
-- Rewrite the parser in three layers (line registry, then the structure state machine), as planned in `docs/parser-rules.md`, "Design for the rewrite". Not started.
+- Rewrite the parser in three layers (line registry, then the structure state machine), as planned in `docs/parser-rules.md`, "Design for the rewrite". Step 1 done: the line registry (`pipeline/src/hukum_bersih/pdf/lines.py`). Next: the structure state machine.
 - Amending laws (Pasal I/II) are not fully parsed. Pasal.id's parser is the one to port (see `docs/ARCHITECTURE.md`, "Reused instead of written").
 - A consolidated current text of amended laws needs amending-law parsing first.
 - Text versions are dated by tanggal penetapan when the source has no pengundangan date.
