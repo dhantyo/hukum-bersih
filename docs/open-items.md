@@ -4,6 +4,7 @@ Known gaps and agreed work not done yet. Remove an item when it ships.
 
 ## Parser
 
+- The next parser iteration (self-checks, joined files, Lampiran and Penjelasan structure, relations from the text, MK rulings, references, the UUD 1945): decisions 0021 to 0028, findings and build order in `docs/research-mk-relations-2026-11.md`.
 - Parser rewrite (`docs/parser-rules.md`, "Design for the rewrite"): the line registry (`pdf/lines.py`) and the structure state machine (`pdf/structure.py`) are done, with v17's output. Next: fix the known gaps G1-G4, G7, G8 and G10, each in the cell `docs/parser-rules.md` names, then the inline references layer.
 - Amending laws (Pasal I/II) are not fully parsed. Pasal.id's parser is the one to port (see `docs/ARCHITECTURE.md`, "Reused instead of written").
 - A consolidated current text of amended laws needs amending-law parsing first.
@@ -26,7 +27,7 @@ Known gaps and agreed work not done yet. Remove an item when it ships.
 ## Sources
 
 - Decide whether texts first imported from peraturan.go.id switch to BPK's PDFs (`bpk.pasal_count` holds BPK's count for comparison).
-- Omnibus amendments (Cipta Kerja) are not linked to the laws they amend, for example PT (UU 40/2007) and Penanaman Modal (UU 25/2007).
+- Omnibus amendments (Cipta Kerja) are not linked to the laws they amend, for example PT (UU 40/2007) and Penanaman Modal (UU 25/2007). Planned in decision 0025.
 
 ## Review by a lawyer
 
