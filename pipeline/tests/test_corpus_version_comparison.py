@@ -1,11 +1,11 @@
-"""The comparison of every pair of versions of an amended law, as ``hukum-bersih export-corpus``
-writes it to ``collections/<slug>/comparisons`` (hukum_bersih.corpus.version_comparison)."""
+"""The comparison of every pair of versions of an amended law, as ``hukum-rapih export-corpus``
+writes it to ``collections/<slug>/comparisons`` (hukum_rapih.corpus.version_comparison)."""
 
 import json
 
 import pytest
 
-from hukum_bersih.corpus.version_comparison import comparison_record, write_comparisons
+from hukum_rapih.corpus.version_comparison import comparison_record, write_comparisons
 
 VERSIONS = [{"id": "uu_1_2000", "label": "Teks asli (2000)", "cite": "UU 1/2000", "date": None,
              "gap": 0},

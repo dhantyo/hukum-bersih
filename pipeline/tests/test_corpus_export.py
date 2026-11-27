@@ -1,11 +1,11 @@
-"""The order of the export steps (hukum_bersih.corpus.export): the search index is written while
+"""The order of the export steps (hukum_rapih.corpus.export): the search index is written while
 the collections and the catalog are, and a failure in either fails the export."""
 
 import threading
 
 import pytest
 
-from hukum_bersih.corpus import export
+from hukum_rapih.corpus import export
 
 
 class _Search:

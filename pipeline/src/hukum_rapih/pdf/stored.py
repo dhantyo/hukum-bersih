@@ -1,7 +1,7 @@
 """A stored Bluebell text (data/) turned back into printed lines, for the parser to read again:
 headings as printed (``BAB I`` and its title, ``Pasal 1``), markers in front of their text
 (``(1) ...``, ``a. ...``), Penjelasan parts as ``I. UMUM``. Close to the cleaned lines of the
-law, not equal to them. Read by ``hukum-bersih explain`` and ``scripts/parser_identity.py``.
+law, not equal to them. Read by ``hukum-rapih explain`` and ``scripts/parser_identity.py``.
 """
 
 from __future__ import annotations

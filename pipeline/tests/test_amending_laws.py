@@ -1,6 +1,6 @@
 """Amending laws (Pasal I/II): the law's own pasal vs the amended law's quoted pasal."""
 
-from hukum_bersih.pdf.structure import parse_lines
+from hukum_rapih.pdf.structure import parse_lines
 
 
 def kinds(doc, kind):
@@ -8,7 +8,7 @@ def kinds(doc, kind):
 
 
 def test_amending_law_is_recognised_from_its_first_pasal():
-    from hukum_bersih.pdf.structure import Block, Document
+    from hukum_rapih.pdf.structure import Block, Document
 
     assert Document([Block("pasal", "Pasal I"), Block("pasal", "Pasal II")]).amending
     assert not Document([Block("pasal", "Pasal 1"), Block("pasal", "Pasal 2")]).amending
@@ -55,7 +55,7 @@ def test_quoted_pasal_of_an_amended_law_is_not_taken_as_a_skipped_number():
     """UU 7/2021 amends laws with Arabic pasal. The quoted heading after "... berbunyi sebagai
     berikut:" ("Pasal 4", "Pasal 5" of the amended law) continued the sequence after the law's own
     Pasal 2 (the skip tolerance of ``misprinted``) and the real Pasal 3 to 5 were lost."""
-    from hukum_bersih.pdf.structure import parse_lines
+    from hukum_rapih.pdf.structure import parse_lines
 
     head = ["UNDANG-UNDANG", "NOMOR 7 TAHUN 2021", "TENTANG", "CONTOH"]
     doc = parse_lines(head + [
@@ -69,9 +69,9 @@ def test_quoted_pasal_of_an_amended_law_is_not_taken_as_a_skipped_number():
 
 
 def test_amending_penjelasan_puts_angka_above_ayat():
-    from hukum_bersih.akn.bluebell import to_bluebell
-    from hukum_bersih.akn.build import to_akn
-    from hukum_bersih.pdf.structure import Block, Document
+    from hukum_rapih.akn.bluebell import to_bluebell
+    from hukum_rapih.akn.build import to_akn
+    from hukum_rapih.pdf.structure import Block, Document
 
     doc = Document([
         Block("title", text="UNDANG-UNDANG"), Block("pasal", "Pasal I"), Block("text", text="Beberapa ketentuan diubah."),

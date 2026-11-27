@@ -18,9 +18,9 @@ on:
   push:
     paths:
       [
-        "pipeline/src/hukum_bersih/pdf/**",
-        "pipeline/src/hukum_bersih/akn/**",
-        "pipeline/src/hukum_bersih/closing.py",
+        "pipeline/src/hukum_rapih/pdf/**",
+        "pipeline/src/hukum_rapih/akn/**",
+        "pipeline/src/hukum_rapih/closing.py",
         "pipeline/tests/regression.yaml",
         "pipeline/scripts/ocr_fix_report.py",
         "pipeline/scripts/compare_reparse.py",
@@ -36,14 +36,14 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 90
     env:
-      HUKUM_BERSIH_OCR_CACHE: /home/runner/ocr-cache # raw OCR of scanned pages, kept between runs (.github/actions/ocr-cache)
+      HUKUM_RAPIH_OCR_CACHE: /home/runner/ocr-cache # raw OCR of scanned pages, kept between runs (.github/actions/ocr-cache)
     steps:
       - uses: actions/checkout@v5
       - uses: astral-sh/setup-uv@v7
       - uses: ./.github/actions/ocr-cache
         with:
           step: restore
-          path: ${{ env.HUKUM_BERSIH_OCR_CACHE }}
+          path: ${{ env.HUKUM_RAPIH_OCR_CACHE }}
       - run: sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ind hunspell hunspell-id hunspell-en-us >/dev/null
       - run: hunspell -d id_ID,en_US -G <<< "rumah house tidakada" # dictionaries present: prints 2 words
       - run: |
@@ -69,4 +69,4 @@ jobs:
         if: always()
         with:
           step: save
-          path: ${{ env.HUKUM_BERSIH_OCR_CACHE }}
+          path: ${{ env.HUKUM_RAPIH_OCR_CACHE }}

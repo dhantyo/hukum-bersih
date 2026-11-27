@@ -1,5 +1,5 @@
-"""The reader record of a law, as ``hukum-bersih export-corpus`` writes it to
-``laws/uu/<number>/<year>/index.json`` (hukum_bersih.corpus.laws)."""
+"""The reader record of a law, as ``hukum-rapih export-corpus`` writes it to
+``laws/uu/<number>/<year>/index.json`` (hukum_rapih.corpus.laws)."""
 
 import json
 from pathlib import Path
@@ -9,9 +9,9 @@ import yaml
 from recfactory import make_record, make_version
 from test_amendments import AMENDING
 
-from hukum_bersih.corpus.laws import Laws, export_laws
-from hukum_bersih.corpus.search import SearchRecords
-from hukum_bersih.history import build as build_history
+from hukum_rapih.corpus.laws import Laws, export_laws
+from hukum_rapih.corpus.search import SearchRecords
+from hukum_rapih.history import build as build_history
 
 # Old spelling stays as printed. Pasal 7 is printed twice (a renumbered law), and Pasal 27A
 # carries a letter.

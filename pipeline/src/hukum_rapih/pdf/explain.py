@@ -1,11 +1,11 @@
-"""``hukum-bersih explain``: which cell of the structure table read each line, and why the state
+"""``hukum-rapih explain``: which cell of the structure table read each line, and why the state
 changed. The lines go through the real driver (``parse_lines`` with an observer, ``structure.py``),
 so what is printed is what the parser did, not a second reading of the table.
 
 Inputs, as ``scripts/compare_reparse.py`` and ``scripts/parser_identity.py`` read them, nothing
 downloaded and no OCR run: a path to a PDF (cleaned lines of its text layer) or to a stored
 Bluebell text (``stored.py``), or a law id, which finds a PDF in the cache
-($HUKUM_BERSIH_PDF_CACHE) or else the latest stored text in data/.
+($HUKUM_RAPIH_PDF_CACHE) or else the latest stored text in data/.
 """
 
 from __future__ import annotations
@@ -29,7 +29,7 @@ class Source:
 
 
 def pdf_cache() -> Path:
-    return Path(os.environ.get("HUKUM_BERSIH_PDF_CACHE") or Path.home() / ".cache" / "hukum-bersih" / "pdf")
+    return Path(os.environ.get("HUKUM_RAPIH_PDF_CACHE") or Path.home() / ".cache" / "hukum-rapih" / "pdf")
 
 
 def pdf_source(pdf: Path, extra: Sequence[Path] = ()) -> Source:

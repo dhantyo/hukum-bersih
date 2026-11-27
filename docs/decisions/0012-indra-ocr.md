@@ -5,7 +5,7 @@ Date: 2026-11-23 · Decided by: Frenico; benchmark and change by Claude
 ## What
 
 Scanned pages are read with [Indra OCR](https://github.com/datalab-to/indra) (`indra-ocr`, CPU,
-ONNX Runtime, no GPU) instead of Tesseract `ind`. `pdf/extract.py`: `$HUKUM_BERSIH_OCR` =
+ONNX Runtime, no GPU) instead of Tesseract `ind`. `pdf/extract.py`: `$HUKUM_RAPIH_OCR` =
 `indra` (default) or `tesseract`; when Indra cannot load, Tesseract reads the pages and the
 parse says so (`ocr fallback`). Indra's lines go through the same `rows()` as Tesseract's
 words, so everything after the OCR is unchanged. Versions record `ocr_engine`. Install:

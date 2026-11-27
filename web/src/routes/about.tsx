@@ -18,11 +18,11 @@ const About = () => (
     <PageTitle>Tentang</PageTitle>
     <Meta
       name="description"
-      content="Tentang Hukum Bersih: sumber data, cara kerja, dan batasannya."
+      content="Tentang Hukum Rapih: sumber data, cara kerja, dan batasannya."
     />
-    <h1>Tentang Hukum Bersih</h1>
+    <h1>Tentang Hukum Rapih</h1>
     <p class={css(styles.lead)}>
-      Hukum Bersih adalah layanan publik yang terbuka: teks peraturan Indonesia
+      Hukum Rapih adalah layanan publik yang terbuka: teks peraturan Indonesia
       yang bersih dan mudah dibaca, serta pelacakan rancangan undang-undang
       beserta setiap versinya.
     </p>
@@ -76,7 +76,7 @@ const About = () => (
     <h2>Terbuka</h2>
     <p>
       Semua kode dan data ada di{" "}
-      <a class={linkClass} href="https://github.com/dhantyo/hukum-bersih">
+      <a class={linkClass} href="https://github.com/dhantyo/hukum-rapih">
         GitHub
       </a>
       . Data berlisensi CC0 (domain publik), kode berlisensi AGPL-3.0. Teks

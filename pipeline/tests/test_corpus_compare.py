@@ -1,17 +1,17 @@
-"""The comparison of two draft versions, as ``hukum-bersih export-corpus`` writes it to
-``drafts/<slug>/comparisons`` (hukum_bersih.corpus.compare and drafts)."""
+"""The comparison of two draft versions, as ``hukum-rapih export-corpus`` writes it to
+``drafts/<slug>/comparisons`` (hukum_rapih.corpus.compare and drafts)."""
 
 import json
 from pathlib import Path
 
 import pytest
 
-from hukum_bersih.akn.build import to_akn_tree
-from hukum_bersih.corpus.compare import compare, word_diff
-from hukum_bersih.corpus.drafts import comparison_rows
-from hukum_bersih.corpus.pasal import collect_pasal
-from hukum_bersih.corpus.reader_text import reader_text
-from hukum_bersih.corpus.write import UNDEFINED
+from hukum_rapih.akn.build import to_akn_tree
+from hukum_rapih.corpus.compare import compare, word_diff
+from hukum_rapih.corpus.drafts import comparison_rows
+from hukum_rapih.corpus.pasal import collect_pasal
+from hukum_rapih.corpus.reader_text import reader_text
+from hukum_rapih.corpus.write import UNDEFINED
 
 WORD_DIFFS = Path(__file__).parent / "fixtures" / "wordiff_perampasan_aset.json"
 

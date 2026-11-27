@@ -1,6 +1,6 @@
 import pytest
 
-from hukum_bersih.naming import validate_id
+from hukum_rapih.naming import validate_id
 
 
 @pytest.mark.parametrize(

@@ -8,9 +8,9 @@ from pathlib import Path
 
 import pytest
 
-from hukum_bersih.pdf import structure
-from hukum_bersih.pdf.lines import classify, normalise
-from hukum_bersih.pdf.structure import TABLE, Block, Context, State, View, step
+from hukum_rapih.pdf import structure
+from hukum_rapih.pdf.lines import classify, normalise
+from hukum_rapih.pdf.structure import TABLE, Block, Context, State, View, step
 
 RULES = Path(__file__).parents[2] / "docs" / "parser-rules.md"
 S = State

@@ -4,7 +4,7 @@ from pathlib import Path
 import pytest
 from recfactory import make_record, make_version
 
-from hukum_bersih.sources import peraturan_bpk as bpk
+from hukum_rapih.sources import peraturan_bpk as bpk
 
 FIX = Path(__file__).parent / "fixtures" / "bpk"
 
@@ -197,7 +197,7 @@ def test_no_text_leaves_record_without_text(tmp_path):
 def test_never_replaced_by_a_poorer_text(tmp_path):
     import yaml
 
-    from hukum_bersih.sources.peraturan_go_id import convert_pdf
+    from hukum_rapih.sources.peraturan_go_id import convert_pdf
 
     folder = tmp_path / "uu_9_2000"
     folder.mkdir()
@@ -223,7 +223,7 @@ def test_reparse_from_archive_checks_the_hash(tmp_path, monkeypatch):
 
     import yaml
 
-    from hukum_bersih.manifest import sha256_file
+    from hukum_rapih.manifest import sha256_file
 
     pdf = tmp_path / "src.pdf"
     pdf.write_bytes(small_pdf())
@@ -262,7 +262,7 @@ def test_mirror_fallback_when_bpk_fails(tmp_path, monkeypatch):
 
 
 def test_never_replaced_by_a_text_that_lost_its_penjelasan(tmp_path):
-    from hukum_bersih.sources.peraturan_go_id import _poorer_than_stored
+    from hukum_rapih.sources.peraturan_go_id import _poorer_than_stored
 
     stored = tmp_path / "t.txt"
     stored.write_text("BODY\n  ART 1 -\n    " + "kata " * 2000 + "\nATTACHMENT Penjelasan\n  " + "jelas " * 300)

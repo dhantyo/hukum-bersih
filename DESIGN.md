@@ -1,6 +1,6 @@
 # Design
 
-Hukum Bersih is a public service: Indonesian law as clean, readable text, and draft bills (RUU)
+Hukum Rapih is a public service: Indonesian law as clean, readable text, and draft bills (RUU)
 with every version and what changed. It should feel like a calm, trustworthy reference work:
 closer to a well-made official gazette than to a startup. Indonesian first.
 

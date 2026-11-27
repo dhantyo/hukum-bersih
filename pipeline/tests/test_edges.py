@@ -4,8 +4,8 @@
 import pymupdf
 import pytest
 
-from hukum_bersih.pdf import extract
-from hukum_bersih.pdf.edges import SETNEG, Row, detect_layout, edge_rows
+from hukum_rapih.pdf import extract
+from hukum_rapih.pdf.edges import SETNEG, Row, detect_layout, edge_rows
 
 W, H = 609.84, 936.72
 
@@ -167,8 +167,8 @@ def fake_ocr(monkeypatch, tmp_path):
 
     monkeypatch.setattr(extract, "_ocr_chunk", chunk)
     monkeypatch.setattr(extract, "ocr_pages", lambda pdf, nums, engine="tesseract": dict(chunk(str(pdf), nums)))
-    monkeypatch.setenv("HUKUM_BERSIH_OCR", "tesseract")
-    monkeypatch.setenv("HUKUM_BERSIH_OCR_CACHE", "off")
+    monkeypatch.setenv("HUKUM_RAPIH_OCR", "tesseract")
+    monkeypatch.setenv("HUKUM_RAPIH_OCR_CACHE", "off")
     return pages
 
 

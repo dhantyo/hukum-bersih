@@ -1,4 +1,4 @@
-from hukum_bersih.amendments import changes, flatten, instructions, lines
+from hukum_rapih.amendments import changes, flatten, instructions, lines
 
 AMENDING = """PREFACE
   UNDANG-UNDANG NOMOR 3 TAHUN 2020

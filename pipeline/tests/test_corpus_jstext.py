@@ -1,10 +1,10 @@
-"""The JavaScript string rules the corpus text relies on (hukum_bersih.corpus.jstext)."""
+"""The JavaScript string rules the corpus text relies on (hukum_rapih.corpus.jstext)."""
 
 import random
 import re
 import sys
 
-from hukum_bersih.corpus.jstext import WS, WS_CHARS, collapse, judul, locale_key, slugify, trim
+from hukum_rapih.corpus.jstext import WS, WS_CHARS, collapse, judul, locale_key, slugify, trim
 
 
 def test_whitespace_is_what_javascript_calls_whitespace():

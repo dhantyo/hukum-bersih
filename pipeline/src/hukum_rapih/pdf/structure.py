@@ -222,7 +222,7 @@ class Cell:
 
 @dataclass(frozen=True)
 class Trace:
-    """One cell's reading of one line, as ``step`` reports it to an observer (``hukum-bersih
+    """One cell's reading of one line, as ``step`` reports it to an observer (``hukum-rapih
     explain``). ``used`` 0: the cell read the line again in ``after``, which reports it once more."""
 
     at: int                 # index of the line in the normalised lines

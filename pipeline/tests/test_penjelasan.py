@@ -3,7 +3,7 @@
 import pymupdf
 import pytest
 
-from hukum_bersih.pdf.structure import parse_lines, parse_pdf
+from hukum_rapih.pdf.structure import parse_lines, parse_pdf
 
 
 def kinds(doc, kind):
@@ -37,7 +37,7 @@ def test_penjelasan_with_lettered_sections():                       # UU 6/1967
 
 
 def test_penjelasan_may_skip_pasal():
-    from hukum_bersih.pdf.structure import parse_lines
+    from hukum_rapih.pdf.structure import parse_lines
 
     doc = parse_lines(["UNDANG-UNDANG", "NOMOR 2 TAHUN 1962", "TENTANG", "CONTOH"]
                       + [x for k in range(1, 14) for x in (f"Pasal {k}", f"Isi {k}.")]
@@ -99,8 +99,8 @@ def test_separate_penjelasan_pdf_is_read_after_the_law(tmp_path):
 
 
 def test_lampiran_after_the_penjelasan():                         # UU 14/2013
-    from hukum_bersih.akn.bluebell import to_bluebell
-    from hukum_bersih.akn.build import to_akn
+    from hukum_rapih.akn.bluebell import to_bluebell
+    from hukum_rapih.akn.build import to_akn
 
     doc = parse_lines(["Menimbang : a. bahwa x;", "Pasal 1", "isi.", "Disahkan di Jakarta",
                        "PENJELASAN", "I. UMUM", "Teks.", "II. PASAL DEMI PASAL", "Pasal 1", "Cukup jelas.",
@@ -117,7 +117,7 @@ def test_lampiran_after_the_penjelasan():                         # UU 14/2013
 
 
 def test_penjelasan_quoted_in_a_lampiran_after_the_penjelasan_stays_in_the_lampiran():
-    from hukum_bersih.pdf.structure import parse_lines
+    from hukum_rapih.pdf.structure import parse_lines
 
     doc = parse_lines([
         "UNDANG-UNDANG REPUBLIK INDONESIA", "NOMOR 13 TAHUN 2022", "TENTANG", "CONTOH",
@@ -136,7 +136,7 @@ def test_penjelasan_quoted_in_a_lampiran_after_the_penjelasan_stays_in_the_lampi
 def test_penjelasan_of_an_enacted_perppu_stays_in_the_lampiran_and_the_laws_own_follows():
     # UU 9/2017: the Lampiran prints Perppu 1/2017 whole, its Penjelasan too; BPK gives the law's
     # own Penjelasan as a separate PDF, read after the Lampiran
-    from hukum_bersih.akn.bluebell import to_bluebell
+    from hukum_rapih.akn.bluebell import to_bluebell
 
     doc = parse_lines([
         "UNDANG-UNDANG REPUBLIK INDONESIA", "NOMOR 9 TAHUN 2017", "TENTANG",

@@ -6,8 +6,8 @@ import types
 from datetime import date, timedelta
 from pathlib import Path
 
-from hukum_bersih.sources import bpk_session
-from hukum_bersih.sources import peraturan_bpk as bpk
+from hukum_rapih.sources import bpk_session
+from hukum_rapih.sources import peraturan_bpk as bpk
 
 
 class Response:

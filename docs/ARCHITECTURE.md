@@ -20,7 +20,7 @@ Git is the source of truth; everything else is generated from it.
 | Path | What | License |
 |---|---|---|
 | `data/` | Source of truth: texts (Bluebell), YAML records, source manifests. No PDFs. | CC0 |
-| `pipeline/` | Python package `hukum_bersih`: BPK import, PDF parsing, Akoma Ntoso | AGPL-3.0 |
+| `pipeline/` | Python package `hukum_rapih`: BPK import, PDF parsing, Akoma Ntoso | AGPL-3.0 |
 | `web/` | Solid 2 reader on a Cloudflare Worker: prerendered law, collection and RUU pages from a corpus release ([decisions 0015-0020](decisions/)). The Astro site and its Pages deploy were removed in PR 2; `web-solid/` was renamed to `web/` in PR 3 | AGPL-3.0 |
 | `docs/` | Brief, naming rule, this file, decision records | AGPL-3.0 |
 
@@ -40,7 +40,7 @@ data/
 
 Names follow [NAMING.md](NAMING.md).
 
-### pipeline/src/hukum_bersih/
+### pipeline/src/hukum_rapih/
 
 | Module | Job |
 |---|---|
@@ -50,7 +50,7 @@ Names follow [NAMING.md](NAMING.md).
 | `naming.py` | Id validation (NAMING.md) |
 | `records.py` | The schema of a law record (Pydantic, `extra="forbid"`, strict types). `load_record` / `save_record` are the only way to read and write `data/peraturan/**/<id>.yaml`: records stay dicts, `save_record` validates and then dumps the same dict (`allow_unicode`, no key sorting), so a misspelt key or a wrong type fails before anything is written. A new field is added here first |
 | `pdf/extract.py` | PDF → cleaned lines (headers, page numbers, footers, signature boxes removed) |
-| `pdf/ocr_cache.py` | The engine's raw OCR of each scanned page, kept by the PDF's sha256 + engine + DPI + `OCR_CACHE_VERSION` in `$HUKUM_BERSIH_OCR_CACHE` (default `~/.cache/hukum-bersih/ocr`, `<engine>/<sha256>.json.gz`; `off` disables), so a page is OCR'd once, ever; the spell fix is not cached. Workflows keep it between runs with `.github/actions/ocr-cache` |
+| `pdf/ocr_cache.py` | The engine's raw OCR of each scanned page, kept by the PDF's sha256 + engine + DPI + `OCR_CACHE_VERSION` in `$HUKUM_RAPIH_OCR_CACHE` (default `~/.cache/hukum-rapih/ocr`, `<engine>/<sha256>.json.gz`; `off` disables), so a page is OCR'd once, ever; the spell fix is not cached. Workflows keep it between runs with `.github/actions/ocr-cache` |
 | `pdf/ocr_fix.py` | Misread words of scanned pages corrected when a spell check is confident; word lists and shape confusions in `pdf/ocr_rules/` ([decision 0013](decisions/0013-ocr-spell-fix.md)) |
 | `pdf/structure.py` | Lines → structural blocks (BAB … Pasal, ayat, huruf/angka, Penjelasan) |
 | `akn/bluebell.py` | Blocks → Bluebell text (stored in `data/`) |
@@ -58,7 +58,7 @@ Names follow [NAMING.md](NAMING.md).
 | `relations.py` | Amends / revokes / enacts links from titles, plus the pasal an amending law changes (from its text) → `relationships` in each record ([decision 0008](decisions/0008-law-history.md)) |
 | `amendments.py` | An amending law's Pasal I → numbered instructions and the new wording of each pasal (the corpus export reads `split`) |
 | `history.py` | The versions of an amended law and every change to its pasal → `history` in its record, recomputed with `relations` ([decision 0010](decisions/0010-versions-and-merged-text.md)) |
-| `cli.py` | `hukum-bersih parse / build-akn (writes XML to check it; the site reads the corpus, not XML) / import-bpk / import-peraturan / reparse-bpk / import-pdf / relations / manifest` |
+| `cli.py` | `hukum-rapih parse / build-akn (writes XML to check it; the site reads the corpus, not XML) / import-bpk / import-peraturan / reparse-bpk / import-pdf / relations / manifest` |
 
 ## Workflows (.github/workflows)
 

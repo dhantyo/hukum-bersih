@@ -1,6 +1,6 @@
 import pytest
 
-from hukum_bersih.uploads import id_from_filename
+from hukum_rapih.uploads import id_from_filename
 
 
 @pytest.mark.parametrize("name, work", [
@@ -21,7 +21,7 @@ def test_unknown_name():
 
 
 def test_placeholder_date_is_unknown():
-    from hukum_bersih.sources.peraturan_go_id import tanggal_iso
+    from hukum_rapih.sources.peraturan_go_id import tanggal_iso
 
     assert tanggal_iso("01 Januari 1970") is None       # peraturan.go.id's empty date
     assert tanggal_iso("12 Januari 2009") == "2009-01-12"
@@ -33,7 +33,7 @@ def test_import_pdf_records_the_hash_and_converts_without_uploading(tmp_path, mo
     import yaml
     from recfactory import make_record
 
-    from hukum_bersih import uploads
+    from hukum_rapih import uploads
 
     folder = tmp_path / "peraturan" / "uu" / "2009" / "uu_4_2009"
     folder.mkdir(parents=True)
@@ -41,7 +41,7 @@ def test_import_pdf_records_the_hash_and_converts_without_uploading(tmp_path, mo
         make_record("uu_4_2009", tanggal_penetapan="2009-01-12")))
     pdf = tmp_path / "UU Nomor 4 Tahun 2009.pdf"
     pdf.write_bytes(b"%PDF-1.4 test")
-    monkeypatch.setattr("hukum_bersih.sources.peraturan_go_id.convert_pdf",
+    monkeypatch.setattr("hukum_rapih.sources.peraturan_go_id.convert_pdf",
                         lambda *a, **k: "converted")
     line = uploads.import_pdf(pdf, tmp_path, "peraturan.bpk.go.id", "https://peraturan.bpk.go.id/")
     assert line == "ok   uu_4_2009: converted"

@@ -1,4 +1,4 @@
-"""The corpus JSON writer: its bytes equal ``JSON.stringify`` (hukum_bersih.corpus.write)."""
+"""The corpus JSON writer: its bytes equal ``JSON.stringify`` (hukum_rapih.corpus.write)."""
 
 import json
 import os
@@ -6,7 +6,7 @@ from pathlib import Path
 
 import pytest
 
-from hukum_bersih.corpus.write import UNDEFINED, dumps, js_object, write_json
+from hukum_rapih.corpus.write import UNDEFINED, dumps, js_object, write_json
 
 FIXTURE = Path(__file__).parent / "fixtures" / "js_stringify.json"   # written by node
 

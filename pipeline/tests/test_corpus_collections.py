@@ -1,5 +1,5 @@
-"""The records of a collection, as ``hukum-bersih export-corpus`` writes them to
-``collections/<slug>/`` (hukum_bersih.corpus.collection_export)."""
+"""The records of a collection, as ``hukum-rapih export-corpus`` writes them to
+``collections/<slug>/`` (hukum_rapih.corpus.collection_export)."""
 
 import json
 from pathlib import Path
@@ -9,9 +9,9 @@ import yaml
 from recfactory import make_record, make_version
 from test_amendments import AMENDING
 
-from hukum_bersih.corpus.collection_export import export_collections
-from hukum_bersih.corpus.laws import Laws
-from hukum_bersih.history import build as build_history
+from hukum_rapih.corpus.collection_export import export_collections
+from hukum_rapih.corpus.laws import Laws
+from hukum_rapih.history import build as build_history
 
 BASE_TEXT = """PREFACE
   UNDANG-UNDANG REPUBLIK INDONESIA NOMOR 4 TAHUN 2009

@@ -28,7 +28,7 @@ const styles = stylex.create({
 
 const App = () => (
   <ReaderViewContext value={createReaderView()}>
-    <Title>Hukum Bersih</Title>
+    <Title>Hukum Rapih</Title>
     <Meta name="viewport" content="width=device-width, initial-scale=1" />
     <Meta name="color-scheme" content="light dark" />
     <Link rel="icon" href="data:," />

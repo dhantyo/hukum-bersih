@@ -1,9 +1,9 @@
 import pytest
 
-from hukum_bersih.akn.bluebell import escape, to_bluebell
-from hukum_bersih.akn.build import to_akn
-from hukum_bersih.pdf.extract import clean_lines
-from hukum_bersih.pdf.structure import parse_lines
+from hukum_rapih.akn.bluebell import escape, to_bluebell
+from hukum_rapih.akn.build import to_akn
+from hukum_rapih.pdf.extract import clean_lines
+from hukum_rapih.pdf.structure import parse_lines
 
 PAGES = [
     ["F", "PDIP", "PEMERINTAH", "RANCANGAN", "UNDANG-UNDANG REPUBLIK INDONESIA",
@@ -124,7 +124,7 @@ def test_third_and_fourth_list_levels_are_items():
 def test_leaked_markup_is_rejected():
     import pytest
 
-    from hukum_bersih.akn.build import LeakedMarkupError
+    from hukum_rapih.akn.build import LeakedMarkupError
 
     bad = "BODY\n  ART 1 -\n    Teks:\n\n      POINT a.\n        x\n"
     with pytest.raises(LeakedMarkupError):
@@ -162,7 +162,7 @@ def test_old_spelling_closing_and_penjelasan():
 def test_list_between_chapter_and_first_pasal_is_text():
     # UU 19/2003 and UU 11/2020 failed with "markup in text: 'POINT 1.'": a numbered list
     # after a BAB heading, before its first Pasal, was written as POINT inside the chapter.
-    from hukum_bersih.pdf.structure import Block, Document
+    from hukum_rapih.pdf.structure import Block, Document
 
     doc = Document([
         Block("bab", "BAB I", "KETENTUAN UMUM"), Block("pasal", "Pasal 1"),
@@ -180,7 +180,7 @@ def test_list_between_chapter_and_first_pasal_is_text():
 def test_keyword_like_word_in_text_is_not_leaked_markup():
     import pytest
 
-    from hukum_bersih.akn.build import LeakedMarkupError, to_akn
+    from hukum_rapih.akn.build import LeakedMarkupError, to_akn
 
     to_akn("BODY\n  ART 1 -\n    TR: Tegangan Rendah\n", "/akn/id/act/uu/2024/59", "act")
     with pytest.raises(LeakedMarkupError):

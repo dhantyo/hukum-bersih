@@ -1,13 +1,13 @@
 """The static files of the active release in the web app's public folder
-(hukum_bersih.corpus.public)."""
+(hukum_rapih.corpus.public)."""
 
 import shutil
 from pathlib import Path
 
 import pytest
 
-from hukum_bersih.cli import main
-from hukum_bersih.corpus.public import write_public
+from hukum_rapih.cli import main
+from hukum_rapih.corpus.public import write_public
 
 STAGE = Path(__file__).parent / "fixtures" / "release_stage"
 OLD = "a" * 64

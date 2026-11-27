@@ -1,7 +1,7 @@
 # Parser rules
 
 Every rule the UU parser applies today (parser v17), where it lives and which test covers it.
-Groundwork for the rewrite of `pipeline/src/hukum_bersih/pdf/structure.py`; the structure the
+Groundwork for the rewrite of `pipeline/src/hukum_rapih/pdf/structure.py`; the structure the
 rules aim at is in [uu-grammar.md](uu-grammar.md).
 
 Sources: the `PARSER_VERSION` comment and `git log -p` of `pdf/structure.py` and
@@ -151,7 +151,7 @@ Run these from `pipeline/`.
 
 1. Find the rule. Look up its id in the inventory above. For a new rule, add a row with the next
    free id and the law that caused it (date and example: "2026-11-27: UU 9/2017 ...").
-2. Reproduce it with `uv run hukum-bersih explain <law-id | PDF | stored text> --from N --to M`.
+2. Reproduce it with `uv run hukum-rapih explain <law-id | PDF | stored text> --from N --to M`.
    It prints, for each line, the state before, the cell that read it (with its rule ids), the
    kinds the line registry gave it and the state after. `--state` and `--cell` narrow it down.
    It reads a cached PDF without OCR or a stored text, and says when a scanned page was skipped.

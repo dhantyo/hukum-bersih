@@ -5,8 +5,8 @@ import subprocess
 
 import pytest
 
-from hukum_bersih.pdf import ocr_fix
-from hukum_bersih.pdf.ocr_fix import fix_lines
+from hukum_rapih.pdf import ocr_fix
+from hukum_rapih.pdf.ocr_fix import fix_lines
 
 
 def _has_dictionaries() -> bool:

@@ -1,10 +1,10 @@
-"""The files of ``drafts/`` as ``hukum-bersih export-corpus`` writes them
-(hukum_bersih.corpus.drafts)."""
+"""The files of ``drafts/`` as ``hukum-rapih export-corpus`` writes them
+(hukum_rapih.corpus.drafts)."""
 
 import json
 
-from hukum_bersih.corpus.drafts import export_drafts
-from hukum_bersih.corpus.search import SearchRecords
+from hukum_rapih.corpus.drafts import export_drafts
+from hukum_rapih.corpus.search import SearchRecords
 
 OLD_TEXT = """BODY
   CHAPTER I - KETENTUAN UMUM

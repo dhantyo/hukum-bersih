@@ -2,8 +2,8 @@
 
 
 def test_a_new_parser_redoes_only_flagged_or_old_texts():
-    from hukum_bersih.pdf.structure import PARSER_REDO_BELOW, PARSER_VERSION
-    from hukum_bersih.sources.peraturan_bpk import SOURCE, text_current
+    from hukum_rapih.pdf.structure import PARSER_REDO_BELOW, PARSER_VERSION
+    from hukum_rapih.sources.peraturan_bpk import SOURCE, text_current
 
     def rec(pv, **flags):
         return {"versions": [{"text": "t.txt", "parser_version": pv, "pdf_source": SOURCE}], **flags}
@@ -23,8 +23,8 @@ def test_a_new_parser_redoes_only_flagged_or_old_texts():
 
 def test_ocr_texts_have_their_own_redo_threshold():
     """A fix to scanned pages only (OCR_REDO_BELOW) redoes OCR'd texts, not typed ones."""
-    from hukum_bersih.pdf.structure import OCR_REDO_BELOW, PARSER_REDO_BELOW
-    from hukum_bersih.sources.peraturan_bpk import SOURCE, text_current
+    from hukum_rapih.pdf.structure import OCR_REDO_BELOW, PARSER_REDO_BELOW
+    from hukum_rapih.sources.peraturan_bpk import SOURCE, text_current
 
     def rec(version, ocr):
         v = {"id": "x", "text": "x.txt", "parser_version": version, "pdf_source": SOURCE,
@@ -39,10 +39,10 @@ def test_ocr_texts_have_their_own_redo_threshold():
 
 def test_texts_from_another_engine_are_redone(monkeypatch):
     """Decision 0012: OCR'd texts read by Tesseract are redone with Indra; typed texts are not."""
-    from hukum_bersih.pdf.structure import PARSER_VERSION
-    from hukum_bersih.sources.peraturan_bpk import SOURCE, text_current
+    from hukum_rapih.pdf.structure import PARSER_VERSION
+    from hukum_rapih.sources.peraturan_bpk import SOURCE, text_current
 
-    monkeypatch.delenv("HUKUM_BERSIH_OCR", raising=False)
+    monkeypatch.delenv("HUKUM_RAPIH_OCR", raising=False)
     typed = {"text": "a.txt", "parser_version": PARSER_VERSION, "pdf_source": SOURCE}
     assert text_current({"versions": [typed]})
     assert not text_current({"versions": [{**typed, "ocr": True}]})                       # Tesseract (no engine recorded)
@@ -52,8 +52,8 @@ def test_texts_from_another_engine_are_redone(monkeypatch):
 
 
 def test_a_record_flagged_by_the_check_is_redone():
-    from hukum_bersih.pdf.structure import PARSER_VERSION
-    from hukum_bersih.sources.peraturan_bpk import SOURCE, text_current
+    from hukum_rapih.pdf.structure import PARSER_VERSION
+    from hukum_rapih.sources.peraturan_bpk import SOURCE, text_current
 
     rec = {"versions": [{"text": "t.txt", "parser_version": PARSER_VERSION, "pdf_source": SOURCE}]}
     assert text_current(rec)

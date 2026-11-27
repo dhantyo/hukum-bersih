@@ -1,4 +1,4 @@
-"""The versions of an amended law and its changes (hukum_bersih.history, decision 0010)."""
+"""The versions of an amended law and its changes (hukum_rapih.history, decision 0010)."""
 
 from pathlib import Path
 
@@ -6,7 +6,7 @@ import yaml
 from recfactory import make_record, make_version
 from test_amendments import AMENDING
 
-from hukum_bersih.history import build, history_of
+from hukum_rapih.history import build, history_of
 
 BASE_TEXT = """BODY
   ART 4 -

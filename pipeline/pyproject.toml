@@ -1,5 +1,5 @@
 [project]
-name = "hukum-bersih"
+name = "hukum-rapih"
 version = "0.1.0"
 description = "Scraper and parser for Indonesian law and RUU documents"
 license = "AGPL-3.0-or-later"
@@ -25,7 +25,7 @@ bpk = ["scrapling[fetchers]>=0.5.1", "curl-cffi>=0.17.0", "remotezip>=0.12"]
 ocr = ["indra-ocr>=1.1.2"]
 
 [project.scripts]
-hukum-bersih = "hukum_bersih.cli:main"
+hukum-rapih = "hukum_rapih.cli:main"
 
 [dependency-groups]
 dev = [

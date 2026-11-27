@@ -5,8 +5,8 @@ UI agent's job); researched and built by Claude
 
 ## The version model
 
-Every amended law gets a `history` block in its record (`pipeline/src/hukum_bersih/history.py`,
-recomputed with `hukum-bersih relations`):
+Every amended law gets a `history` block in its record (`pipeline/src/hukum_rapih/history.py`,
+recomputed with `hukum-rapih relations`):
 
 - **points**: every version of its text, oldest first. The first is the law as enacted
   (`kind: asli`, a stored text). Each amending law adds one (`kind: gabungan`), dated by when

@@ -1,4 +1,4 @@
-"""``hukum-bersih export-corpus``: every area of the web corpus, in order, into a stage, and with
+"""``hukum-rapih export-corpus``: every area of the web corpus, in order, into a stage, and with
 ``--publish`` the stage stored as a release in a corpus folder."""
 
 from __future__ import annotations

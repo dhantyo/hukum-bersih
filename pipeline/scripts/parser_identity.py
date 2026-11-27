@@ -6,7 +6,7 @@ blocks (kind, label, text, level) or warnings differ.
 
 Inputs, all local, nothing downloaded and no OCR run:
 
-- every PDF in the PDF cache ($HUKUM_BERSIH_PDF_CACHE, default ~/.cache/hukum-bersih/pdf, filled
+- every PDF in the PDF cache ($HUKUM_RAPIH_PDF_CACHE, default ~/.cache/hukum-rapih/pdf, filled
   by regress.py and compare_reparse.py), read into cleaned lines once with ``ocr=False``
   (scanned pages through their own text layer); ``--lines-cache`` keeps those lines between runs;
 - every stored text in data/ (Bluebell), turned back into printed lines: headings as printed
@@ -38,21 +38,21 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent.parent
 DATA = ROOT / "data"
-PDFS = Path(os.environ.get("HUKUM_BERSIH_PDF_CACHE") or Path.home() / ".cache" / "hukum-bersih" / "pdf")
+PDFS = Path(os.environ.get("HUKUM_RAPIH_PDF_CACHE") or Path.home() / ".cache" / "hukum-rapih" / "pdf")
 sys.path.insert(0, str(HERE.parent / "src"))
 
-from hukum_bersih.pdf import structure as current
-from hukum_bersih.pdf.stored import printed_lines
+from hukum_rapih.pdf import structure as current
+from hukum_rapih.pdf.stored import printed_lines
 
 
 def base_parser(ref: str):
     """The parser module of ``ref``, imported next to the working tree's package so that its
     relative imports (``.ocr_fix``) resolve."""
-    source = subprocess.run(["git", "show", f"{ref}:pipeline/src/hukum_bersih/pdf/structure.py"],
+    source = subprocess.run(["git", "show", f"{ref}:pipeline/src/hukum_rapih/pdf/structure.py"],
                             cwd=ROOT, check=True, capture_output=True, text=True).stdout
     path = Path(tempfile.mkdtemp()) / "structure.py"
     path.write_text(source, encoding="utf-8")
-    spec = importlib.util.spec_from_file_location("hukum_bersih.pdf._base_structure", path)
+    spec = importlib.util.spec_from_file_location("hukum_rapih.pdf._base_structure", path)
     module = importlib.util.module_from_spec(spec)
     sys.modules[spec.name] = module
     spec.loader.exec_module(module)
@@ -114,7 +114,7 @@ def fuzz_lines(rng: random.Random) -> list[str]:
 
 
 def pdf_lines(pdf: Path, cache: Path | None) -> list[str]:
-    from hukum_bersih.pdf.extract import clean_lines, page_lines
+    from hukum_rapih.pdf.extract import clean_lines, page_lines
 
     key = cache / f"{hashlib.sha256(pdf.read_bytes()).hexdigest()}.json.gz" if cache else None
     if key and key.exists():

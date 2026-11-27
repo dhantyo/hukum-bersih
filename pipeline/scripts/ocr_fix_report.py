@@ -5,7 +5,7 @@ read. Read-only: nothing in data/ is written.
     uv run python scripts/ocr_fix_report.py [N] [seed]
 
 PDFs are versions marked ``ocr`` whose file is on archive.org (manifest) or in the Hugging Face
-mirror of BPK; downloaded once into ~/.cache/hukum-bersih/pdf (never into the repository).
+mirror of BPK; downloaded once into ~/.cache/hukum-rapih/pdf (never into the repository).
 Prints Markdown (the workflow appends it to the job summary).
 """
 
@@ -21,13 +21,13 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 DATA = HERE.parent.parent / "data"
-CACHE = Path.home() / ".cache" / "hukum-bersih" / "pdf"
+CACHE = Path.home() / ".cache" / "hukum-rapih" / "pdf"
 HF = "https://huggingface.co/datasets/Azzindani/ID_REG/resolve/main/"
 sys.path.insert(0, str(HERE.parent / "src"))
 
-from hukum_bersih.pdf import extract, ocr_fix
-from hukum_bersih.pdf.structure import parse_pdf
-from hukum_bersih.records import load_record
+from hukum_rapih.pdf import extract, ocr_fix
+from hukum_rapih.pdf.structure import parse_pdf
+from hukum_rapih.records import load_record
 
 
 def scanned_versions() -> list[tuple[str, str]]:

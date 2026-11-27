@@ -2,7 +2,7 @@
 import yaml
 from recfactory import make_record, make_version
 
-from hukum_bersih.sources import peraturan_go_id as src
+from hukum_rapih.sources import peraturan_go_id as src
 
 
 class Down:

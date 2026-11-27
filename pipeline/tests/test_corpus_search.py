@@ -1,5 +1,5 @@
 """The search records of the reader pages and the index built from them
-(hukum_bersih.corpus.search, pagefind_index, anchors, titles)."""
+(hukum_rapih.corpus.search, pagefind_index, anchors, titles)."""
 
 import json
 import time
@@ -7,10 +7,10 @@ from pathlib import Path
 
 import pytest
 
-from hukum_bersih.corpus.laws import Laws, export_laws
-from hukum_bersih.corpus.pagefind_index import Record, write_index
-from hukum_bersih.corpus.search import SearchRecords, text_records
-from hukum_bersih.corpus.titles import draft_document_title, law_heading, tanggal
+from hukum_rapih.corpus.laws import Laws, export_laws
+from hukum_rapih.corpus.pagefind_index import Record, write_index
+from hukum_rapih.corpus.search import SearchRecords, text_records
+from hukum_rapih.corpus.titles import draft_document_title, law_heading, tanggal
 
 DATA = Path(__file__).resolve().parents[2] / "data"
 

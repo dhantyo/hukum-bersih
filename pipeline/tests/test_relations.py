@@ -1,4 +1,4 @@
-from hukum_bersih.relations import changes_in_text, from_title
+from hukum_rapih.relations import changes_in_text, from_title
 
 
 def test_amendment_titles():
@@ -70,7 +70,7 @@ def test_revoked_per_source_status(tmp_path):
     import yaml
     from recfactory import make_record
 
-    from hukum_bersih.relations import build
+    from hukum_rapih.relations import build
 
     for rid, status in [("uu_1_1995", "Tidak Berlaku Dicabut Oleh : Undang-Undang Nomor 40 Tahun 2007 Tentang Perseroan Terbatas"),
                         ("uu_40_2007", "berlaku")]:

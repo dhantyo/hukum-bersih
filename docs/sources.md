@@ -1,6 +1,6 @@
 # Upstream sources
 
-What we know about each site we read, and from where it answers. Dated, newest facts win. The code that reads each site is in `pipeline/src/hukum_bersih/sources/`.
+What we know about each site we read, and from where it answers. Dated, newest facts win. The code that reads each site is in `pipeline/src/hukum_rapih/sources/`.
 
 ## peraturan.bpk.go.id (main source since 2026-11-21)
 

@@ -2,7 +2,7 @@
 
 Date: 2026-11-20 · Decided by: Dante
 
-The brief planned two repos (data, code). We use one: `dhantyo/hukum-bersih`, with `data/`
+The brief planned two repos (data, code). We use one: `dhantyo/hukum-rapih`, with `data/`
 (CC0) next to `pipeline/` and `web/` (AGPL-3.0).
 
 Why: a data change rebuilds the site without cross-repo triggers, and one history is simpler.

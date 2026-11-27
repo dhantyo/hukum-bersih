@@ -7,7 +7,7 @@ import pymupdf
 import pytest
 from test_ocr import scanned_pdf, typed_pdf
 
-from hukum_bersih.pdf import extract, ocr_cache
+from hukum_rapih.pdf import extract, ocr_cache
 
 
 @pytest.fixture
@@ -21,7 +21,7 @@ def engine_calls(monkeypatch):
 
     monkeypatch.setattr(extract, "_ocr_chunk", chunk)
     monkeypatch.setattr(extract, "ocr_pages", lambda pdf, nums, engine="tesseract": dict(chunk(str(pdf), nums, engine)))
-    monkeypatch.setenv("HUKUM_BERSIH_OCR", "tesseract")
+    monkeypatch.setenv("HUKUM_RAPIH_OCR", "tesseract")
     return calls
 
 
@@ -64,7 +64,7 @@ def test_only_missing_pages_are_read(tmp_path, engine_calls):
 def test_another_engine_or_pdf_misses(tmp_path, engine_calls, monkeypatch):
     pdf = scanned_pdf(tmp_path / "s.pdf")
     extract.page_lines(pdf)
-    monkeypatch.setenv("HUKUM_BERSIH_OCR", "indra")
+    monkeypatch.setenv("HUKUM_RAPIH_OCR", "indra")
     stats = {}
     extract.page_lines(pdf, stats)
     assert [e for e, _ in engine_calls] == ["tesseract", "indra"] and stats["ocr_cached"] == 0
@@ -137,7 +137,7 @@ def test_save_is_atomic(tmp_path, engine_calls, monkeypatch):
 
 
 def test_cache_can_be_switched_off(tmp_path, engine_calls, monkeypatch):
-    monkeypatch.setenv("HUKUM_BERSIH_OCR_CACHE", "off")
+    monkeypatch.setenv("HUKUM_RAPIH_OCR_CACHE", "off")
     pdf = scanned_pdf(tmp_path / "s.pdf")
     extract.page_lines(pdf)
     extract.page_lines(pdf)
@@ -145,6 +145,6 @@ def test_cache_can_be_switched_off(tmp_path, engine_calls, monkeypatch):
 
 
 def test_default_location(monkeypatch, tmp_path):
-    monkeypatch.delenv("HUKUM_BERSIH_OCR_CACHE")
+    monkeypatch.delenv("HUKUM_RAPIH_OCR_CACHE")
     monkeypatch.setenv("HOME", str(tmp_path))
-    assert ocr_cache.cache_dir() == tmp_path / ".cache" / "hukum-bersih" / "ocr"
+    assert ocr_cache.cache_dir() == tmp_path / ".cache" / "hukum-rapih" / "ocr"
