@@ -1,12 +1,13 @@
 """What a single line is, from its text alone (pdf/lines.py, rules L1-L24 of
-docs/parser-rules.md). Lines are printed lines of the law the inventory names."""
+docs/parser-rules.md). Lines are printed lines of the law the inventory names. The heading
+repairs (L1-L5, ``normalise``) are tested in test_headings.py."""
 
 import re
 from pathlib import Path
 
 import pytest
 
-from hukum_bersih.pdf.lines import JOIN_PASAL, REPAIRS, RULES, Kind, classify, normalise
+from hukum_bersih.pdf.lines import JOIN_PASAL, REPAIRS, RULES, Kind, classify
 
 CASES = [
     # (law, line, class, fields)
@@ -90,11 +91,6 @@ def test_a_line_can_be_of_several_classes():               # UU 25/1956: Penjela
 
 def test_plain_text_is_of_no_class():
     assert not classify("Mineral dan batubara sebagai sumber daya alam yang tak").kinds
-
-
-def test_headings_are_repaired_before_they_are_classified():
-    assert normalise(["Pasal", "12.", "Pasal S1", "' Pasal 8", "BAGIAN II.", "PasalI", "Pasal 5,"]) == [
-        "Pasal 12", "Pasal 51", "Pasal 8", "BAGIAN II", "Pasal I", "Pasal 5,"]
 
 
 def test_every_line_class_has_a_case():
