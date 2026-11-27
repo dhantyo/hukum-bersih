@@ -436,6 +436,10 @@ def pasal_1_read_as_i_before_bab(ctx: Context, line: Line, view: View) -> bool:
     return not ctx.last_bab and pasal_1_read_as_i(ctx, line, view)
 
 
+def pasal_1_read_as_i_in_bab(ctx: Context, line: Line, view: View) -> bool:
+    return bool(ctx.last_bab) and pasal_1_read_as_i(ctx, line, view)
+
+
 def take_pasal_1_as_i(ctx: Context, line: Line, view: View) -> int:
     ctx.doc.warnings.append("'Pasal 1' read as 'Pasal I' (amending law, OCR)")
     return take_pasal(ctx, line, view, "I")
@@ -717,7 +721,6 @@ PASAL_I = Cell("pasal_i", ("S26",), Kind.PASAL, pasal_i_before_bab, take_pasal, 
 PASAL_FIRST = (
     Cell("pasal_1_read_as_i", ("S30", "S26"), Kind.PASAL, pasal_1_read_as_i_before_bab, take_pasal_1_as_i,
          State.AMENDING),
-    Cell("pasal_1_read_as_i_in_bab", ("S30",), Kind.PASAL, pasal_1_read_as_i, take_pasal_1_as_i, State.BODY),
     PASAL_I,
     Cell("pasal_first", ("S1", "S2"), Kind.PASAL, pasal_follows, take_pasal, past_front),
 )
@@ -731,7 +734,6 @@ P_PASAL_I = Cell("p_pasal_i", ("S21",), Kind.PASAL, pasal_i_of_penjelasan, take_
                  State.PENJELASAN_PASAL_I)
 P_PASAL = Cell("p_pasal", ("S19", "S20"), Kind.PASAL, p_pasal_follows, take_p_pasal, p_part)
 P_LABEL = Cell("p_label", ("S33",), Kind.PENJELASAN_LABEL, always, take_p_label)
-AFTER_PART = Cell("text_after_part", ("S22",), None, after_part_heading, take_paragraph)
 # after the first pasal, before a state's own cells: what ends or interrupts a part
 CLOSING_OPENS = Cell("closing_opens", ("S16",), Kind.CLOSING, always, take_closing_line, State.CLOSING)
 LAMPIRAN_OPENS = Cell("lampiran_opens", ("S23",), Kind.LAMPIRAN, always, take_lampiran, State.LAMPIRAN)
@@ -751,7 +753,9 @@ TABLE: dict[State, tuple[Cell, ...]] = {
         Cell("title_continues", ("S13", "S11"), None, always, take_text),
     ),
     State.PREAMBLE: (
-        BAB_BEFORE_PASAL, BAGIAN, PARAGRAF, *PASAL_FIRST, OPENING, PREAMBLE_LABEL,
+        BAB_BEFORE_PASAL, BAGIAN, PARAGRAF,
+        Cell("pasal_1_read_as_i_in_bab", ("S30",), Kind.PASAL, pasal_1_read_as_i_in_bab, take_pasal_1_as_i, State.BODY),
+        *PASAL_FIRST, OPENING, PREAMBLE_LABEL,
         Cell("label_alone", ("S14",), None, label_alone, take_after_label),
         Cell("preamble_item", ("S14",), Kind.LIST_ITEM, in_preamble_list, take_flat_item),
         Cell("preamble_text", ("S11",), None, always, take_text),
@@ -788,13 +792,13 @@ TABLE: dict[State, tuple[Cell, ...]] = {
         Cell("part", ("S32",), Kind.PENJELASAN_PART, always, take_part),
         P_PASAL_I, P_PASAL,
         Cell("paragraph", ("S22",), None, after_sentence_end, take_paragraph),
-        AFTER_PART, TEXT,
+        Cell("text_after_part", ("S22",), None, after_part_heading, take_paragraph), TEXT,
     ),
     State.PENJELASAN_PASAL: (
-        CLOSING_OPENS, LAMPIRAN_OPENS, SALINAN_OPENS, P_PASAL_I, P_PASAL, P_LABEL, AFTER_PART, TEXT,
+        CLOSING_OPENS, LAMPIRAN_OPENS, SALINAN_OPENS, P_PASAL_I, P_PASAL, P_LABEL, TEXT,
     ),
     State.PENJELASAN_PASAL_I: (
-        CLOSING_OPENS, LAMPIRAN_OPENS, SALINAN_OPENS, P_PASAL_I, P_LABEL, AFTER_PART, TEXT,
+        CLOSING_OPENS, LAMPIRAN_OPENS, SALINAN_OPENS, P_PASAL_I, P_LABEL, TEXT,
     ),
     # a Lampiran (maps, tables, schedules, a drafting guide) keeps its lines as printed
     State.LAMPIRAN: (
