@@ -728,7 +728,7 @@ OPENING = Cell("opening", ("S13",), Kind.OPENING, always, take_opening, State.PR
 PREAMBLE_LABEL = Cell("preamble_label", ("S14", "S15"), Kind.PREAMBLE, always, take_preamble_label,
                       State.PREAMBLE)
 AYAT = Cell("ayat", ("S8",), Kind.AYAT, ayat_follows, take_ayat)
-LIST_ITEM = Cell("list_item", ("S9", "S10"), Kind.LIST_ITEM, item_fits, take_item)
+LIST_ITEM = Cell("list_item", ("S9", "S10", "G3"), Kind.LIST_ITEM, item_fits, take_item)
 TEXT = Cell("text", ("S11",), None, always, take_text)
 P_PASAL_I = Cell("p_pasal_i", ("S21",), Kind.PASAL, pasal_i_of_penjelasan, take_p_pasal_i,
                  State.PENJELASAN_PASAL_I)
@@ -791,7 +791,7 @@ TABLE: dict[State, tuple[Cell, ...]] = {
         Cell("part_numeral", ("S32",), Kind.PENJELASAN_PART, numeral_alone, skip),
         Cell("part", ("S32",), Kind.PENJELASAN_PART, always, take_part),
         P_PASAL_I, P_PASAL,
-        Cell("paragraph", ("S22",), None, after_sentence_end, take_paragraph),
+        Cell("paragraph", ("S22", "G8"), None, after_sentence_end, take_paragraph),
         Cell("text_after_part", ("S22",), None, after_part_heading, take_paragraph), TEXT,
     ),
     State.PENJELASAN_PASAL: (
