@@ -1,5 +1,8 @@
 # Hukum Bersih
 
+[![CI](https://github.com/dhantyo/hukum-bersih/actions/workflows/ci.yml/badge.svg)](https://github.com/dhantyo/hukum-bersih/actions/workflows/ci.yml)
+[![Deploy site](https://github.com/dhantyo/hukum-bersih/actions/workflows/deploy.yml/badge.svg)](https://github.com/dhantyo/hukum-bersih/actions/workflows/deploy.yml)
+
 Situs terbuka untuk hukum Indonesia: teks peraturan yang bersih dan mudah dicari, pelacakan RUU beserta setiap versi drafnya, dan perbandingan perubahan antarversi.
 
 An open, layman-friendly tracker for Indonesian law: clean searchable text, RUU (draft bill) tracking with every draft version and its provenance, and diffs between versions.
