@@ -68,7 +68,7 @@ def test_misprinted_heading_numbers_confirmed_by_the_next_heading():
 
 
 def test_ocr_speck_before_a_pasal_heading():
-    from hukum_bersih.pdf.structure import normalise
+    from hukum_bersih.pdf.lines import normalise
 
     assert normalise(["' Pasal 8", "‘Pasal 9", ". Pasal 10."]) == ["Pasal 8", "Pasal 9", "Pasal 10"]
     assert normalise(["Pasal 4 :", "Pasal 6'", "Pasal IV :"]) == ["Pasal 4", "Pasal 6", "Pasal IV"]
@@ -79,7 +79,7 @@ def test_ocr_speck_before_a_pasal_heading():
 
 
 def test_ocr_letters_for_digits_and_spaced_marks_in_headings():
-    from hukum_bersih.pdf.structure import normalise
+    from hukum_bersih.pdf.lines import normalise
 
     assert normalise(["Pasal S1", "Pasal 1lA", "Pasal 1O", "Pasal 84 ,", "Pasal 9 ;"]) == [
         "Pasal 51", "Pasal 11A", "Pasal 10", "Pasal 84", "Pasal 9"]
@@ -87,7 +87,7 @@ def test_ocr_letters_for_digits_and_spaced_marks_in_headings():
 
 
 def test_ocr_glued_or_capital_pasal_heading_is_read_as_pasal_n():
-    from hukum_bersih.pdf.structure import normalise
+    from hukum_bersih.pdf.lines import normalise
 
     assert normalise(["PasalI", "PASAL 3", "Pasal12"]) == ["Pasal I", "Pasal 3", "Pasal 12"]
 
