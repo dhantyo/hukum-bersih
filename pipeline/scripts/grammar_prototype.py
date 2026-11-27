@@ -31,6 +31,8 @@ sys.path.insert(0, str(HERE.parent / "src"))
 
 from hukum_bersih.pdf import structure as st
 from hukum_bersih.pdf.extract import clean_lines, page_lines
+from hukum_bersih.pdf.lines import Kind, normalise
+from hukum_bersih.pdf.lines import classify as classify_line
 
 # --------------------------------------------------------------------------- blocks
 
@@ -51,24 +53,31 @@ lampiran: LAMPIRAN (TEXT | ITEM | AYAT | PLABEL | PASAL | BAB | BAGIAN | PARAGRA
 %declare OPENING PREAMBLE ITEM TEXT BAB BAGIAN PARAGRAF PASAL AYAT PLABEL CLOSING PENJELASAN
 %declare UMUM PDP LAMPIRAN
 """
-UMUM_RE = re.compile(r"^(?:[I1l]\.\s*|A\.\s*)?(?:PEND?JELASAN\s+)?UMUM\.?$")
-PDP_RE = re.compile(r"^(?:II\.\s*|B\.\s*)?(?:PEND?JELASAN\s+)?PASAL DEMI PASAL\.?$")
-CLASSES = [
-    ("PENJELASAN", st.PENJELASAN_RE), ("LAMPIRAN", st.LAMPIRAN_RE), ("CLOSING", st.CLOSING_RE),
-    ("UMUM", UMUM_RE), ("PDP", PDP_RE), ("BAB", st.BAB_RE), ("BAGIAN", st.BAGIAN_RE),
-    ("PARAGRAF", st.PARAGRAF_RE), ("PASAL", st.PASAL_RE), ("AYAT", st.AYAT_RE),
-    ("PLABEL", st.PENJ_AYAT_RE), ("PLABEL", st.PENJ_HURUF_RE), ("PLABEL", st.PENJ_ANGKA_RE),
-    ("ITEM", st.LETTER_RE), ("ITEM", st.NUMBER_RE),
+# the grammar's token for a line: the first of these classes it matches (pdf/lines.py)
+TOKENS = [
+    ("PENJELASAN", Kind.PENJELASAN), ("LAMPIRAN", Kind.LAMPIRAN), ("CLOSING", Kind.CLOSING),
+    ("PART", Kind.PENJELASAN_PART), ("BAB", Kind.BAB), ("BAGIAN", Kind.BAGIAN),
+    ("PARAGRAF", Kind.PARAGRAF), ("PASAL", Kind.PASAL), ("AYAT", Kind.AYAT),
+    ("PLABEL", Kind.PENJELASAN_LABEL), ("ITEM", Kind.LIST_ITEM),
 ]
+PARTS = {"umum": "UMUM", "pasal_demi_pasal": "PDP"}     # a numeral alone is no token
+
+
+def token(line) -> str:
+    for name, kind in TOKENS:
+        fields = line.get(kind)
+        if fields is not None and (kind is not Kind.PENJELASAN_PART or fields[0]):
+            return PARTS[fields[0]] if kind is Kind.PENJELASAN_PART else name
+    return "TEXT"
 
 
 def classify(lines: list[str]) -> list[str]:
     kinds, seen_pasal = [], False
-    for line in lines:
-        kind = next((k for k, rx in CLASSES if rx.match(line)), "TEXT")
+    for line in map(classify_line, lines):
+        kind = token(line)
         if kind == "TEXT" and not seen_pasal:
-            kind = ("PREAMBLE" if st.PREAMBLE_RE.match(line)
-                    else "OPENING" if st.OPENING_RE.match(line) else "TEXT")
+            kind = ("PREAMBLE" if Kind.PREAMBLE in line
+                    else "OPENING" if Kind.OPENING in line else "TEXT")
         seen_pasal = seen_pasal or kind == "PASAL"
         kinds.append(kind)
     return kinds
@@ -92,7 +101,7 @@ def blocks(laws: list[str]) -> None:
     parser = Lark(BLOCKS, parser="lalr", lexer=LineStream)
     print(f"{'law':12} {'lines':>6} {'grammar':>8} {'pasal':>6} {'parser':>6} {'expected':>8}  error")
     for law in laws or list(reg):
-        lines = st.normalise(clean_lines(page_lines(pdf_for(law, reg[law]), ocr=False)))
+        lines = normalise(clean_lines(page_lines(pdf_for(law, reg[law]), ocr=False)))
         kinds = classify(lines)
         current = st.parse_lines(lines).pasal_count
         try:
