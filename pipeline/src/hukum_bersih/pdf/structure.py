@@ -472,6 +472,34 @@ def take_item(ctx: Context, line: Line, view: View) -> int:
     return 1
 
 
+def own_pasal_2(ctx: Context, line: Line, view: View) -> bool:
+    """``Pasal 2`` after Pasal I is the law's own: "Pasal I." was a misprint for Pasal 1 (no
+    amendment wording so far, UU 16/1953), or it follows a finished sentence and no quoted Pasal 1
+    (UU 2/1953, 12/1957), where a quoted pasal follows "… berbunyi sebagai berikut:" (S28, S29)."""
+    return ctx.last_pasal == 1 and line.get(Kind.PASAL) == ("2",) and (
+        not amends_so_far(ctx.doc) or (not ctx.quoted_one and view.before.rstrip().endswith(".")))
+
+
+def read_again(ctx: Context, line: Line, view: View) -> int:
+    return 0
+
+
+def is_pasal_1(ctx: Context, line: Line, view: View) -> bool:
+    return line.get(Kind.PASAL) == ("1",)
+
+
+def take_quoted_pasal_1(ctx: Context, line: Line, view: View) -> int:
+    ctx.quoted_one = True
+    return take_text(ctx, line, view)
+
+
+def quoted_heading(ctx: Context, line: Line, view: View) -> bool:
+    """BAB, Bagian, Paragraf and Arabic Pasal inside Pasal I are the amended law's quoted wording."""
+    pasal = line.get(Kind.PASAL)
+    return (Kind.BAB in line or Kind.BAGIAN in line or Kind.PARAGRAF in line
+            or bool(pasal and pasal[0][0].isdigit()))
+
+
 def past_front(ctx: Context) -> State:
     """A Pasal heading ends the front, unless it was numbered 0 (``Pasal 0A``)."""
     return State.BODY if ctx.last_pasal else State.PREAMBLE
@@ -567,6 +595,9 @@ TABLE: dict[State, tuple[Cell, ...]] = {
         AYAT, LIST_ITEM, TEXT,
     ),
     State.AMENDING: (
+        Cell("own_pasal_2", ("S28", "S29"), Kind.PASAL, own_pasal_2, read_again, State.BODY),
+        Cell("quoted_pasal_1", ("S27", "S29"), Kind.PASAL, is_pasal_1, take_quoted_pasal_1),
+        Cell("quoted_heading", ("S27",), None, quoted_heading, take_text),
         Cell("pasal_of_amending_law", ("S1", "S26"), Kind.PASAL, pasal_follows, take_pasal),
         AYAT, LIST_ITEM, TEXT,
     ),
@@ -646,21 +677,6 @@ class Parser:
         if self.in_penjelasan:
             return self.step_penjelasan(line, view)
 
-        pasal = line.get(Kind.PASAL)
-        amending = ctx.state is State.AMENDING
-        if amending and ctx.last_pasal == 1 and pasal == ("2",) and (
-                not amends_so_far(ctx.doc)       # "Pasal I." was a misprint for Pasal 1 (UU 16/1953)
-                or (not ctx.quoted_one and view.before.rstrip().endswith("."))):
-            # or the law's own Pasal 2 after amendments in Pasal I (UU 2/1953, 12/1957): it follows
-            # a finished sentence, where a quoted pasal follows "… berbunyi sebagai berikut:"
-            ctx.enter(State.BODY)
-            amending = False
-        if amending and pasal == ("1",):
-            ctx.quoted_one = True
-        if amending and (Kind.BAB in line or Kind.BAGIAN in line or Kind.PARAGRAF in line
-                              or (pasal and pasal[0][0].isdigit())):
-            append(ctx, line.text)
-            return 1
         return step(ctx, view)
 
     def step_penjelasan(self, line: Line, view: View) -> int:
