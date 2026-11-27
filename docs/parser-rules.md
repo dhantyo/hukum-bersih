@@ -230,6 +230,20 @@ Keep three layers and give each the shape its rules have:
 
 The regression set (20/20) and the tests listed here are the bar for each step of the rewrite.
 
+### Changing the parser during the rewrite
+
+A change to the parser starts with the next step of the rewrite. Together the three layers
+replace the `if` chain in `Parser.step` and its mode flags.
+
+- `pipeline/tests/test_parser_rewrite_ratchet.py` enforces the plan: `Parser` may only shrink,
+  so any change to it must also move logic out of it (fewer `if` branches or fewer state
+  attributes). A new rule goes into the new layers, starting with the line registry.
+- Lower the test's baselines in the same commit as the shrink.
+- Give every new or changed rule its inventory id, the law that caused it and its test in this
+  file.
+- The bar for each step is the regression set plus the inventory's tests, including the
+  `xfail(strict=True)` ones the rewrite is meant to make pass.
+
 ### Inline references
 
 A later layer links citations to `/akn/id/act/uu/2009/4` and to pasal eIds, written as Bluebell

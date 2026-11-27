@@ -50,7 +50,7 @@ What worked: on each show/hide flip, measure which marked elements (`data-under-
 
 ### "No jump" means the layout stays put, not a smoother animation (2026-11-26)
 
-Folds looked like they jumped when opened. A height animation did not help, because the cause was spacing: heading styles under `:not([open])` gave closed folds different margins from open ones, so every trigger moved 40 px. Make spacing around a trigger independent of its state (`web/AGENTS.md`, "Collapsibles"). Check it by recording each summary's position before and after toggling. It must not move.
+Folds looked like they jumped when opened. A height animation did not help, because the cause was spacing: heading styles under `:not([open])` gave closed folds different margins from open ones, so every trigger moved 40 px. Make spacing around a trigger independent of its state ([web/docs/document-pages.md](../web/docs/document-pages.md#collapsibles)). Check it by recording each summary's position before and after toggling. It must not move.
 
 ### Find who invalidated the layout before you blame the reads (2026-11-27)
 

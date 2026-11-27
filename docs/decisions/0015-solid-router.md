@@ -16,7 +16,7 @@ request.
   `<Loading>` fallback.
 - A `trailingSlash` middleware redirects a path without a slash and without a file extension.
 - Plain `<a>` links; the router intercepts them and preloads on hover, focus and touch.
-- Conventions and the pitfalls found while porting are in `web-solid/AGENTS.md`.
+- Conventions and the pitfalls found while porting are in `web/AGENTS.md` and the topic docs it lists in `web/docs/`.
 
 ## Why
 
