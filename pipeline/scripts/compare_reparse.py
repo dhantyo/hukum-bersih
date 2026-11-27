@@ -9,7 +9,8 @@ page header/footer line the position rules (pdf/edges.py) took out with its page
 diff of stored vs new text trimmed to the changed hunks, and with ``--pages`` the cleaned lines
 of those pages (1-based). Read-only: nothing in data/ is written.
 
-PDFs: the file the record names in ``bpk.files`` from the Hugging Face mirror of BPK
+PDFs: the file the record names in ``bpk.files``, then its separate Penjelasan files as the
+importer reads them (``is_penjelasan``), from the Hugging Face mirror of BPK
 (``data/sources/mirrors/id_reg.json``), downloaded once into $HUKUM_BERSIH_PDF_CACHE (default
 ~/.cache/hukum-bersih/pdf), never into the repository. Scanned pages are OCR'd (slow; the OCR
 cache keeps them, pdf/ocr_cache.py). Prints Markdown (the workflow appends it to the job summary).
@@ -37,6 +38,7 @@ from hukum_bersih.manifest import sha256_file
 from hukum_bersih.pdf import extract
 from hukum_bersih.pdf.structure import PARSER_VERSION, parse_pdf
 from hukum_bersih.records import load_record
+from hukum_bersih.sources.peraturan_bpk import is_penjelasan
 from hukum_bersih.sources.peraturan_go_id import _poorer_than_stored, measure
 
 CONTEXT = 2          # unchanged lines kept around a changed hunk
@@ -47,28 +49,37 @@ def record_path(law: str) -> Path:
     return DATA / "peraturan" / jenis / tahun / law / f"{law}.yaml"
 
 
-def mirror_member(rec: dict) -> tuple[str, str]:
-    """(zip, member) of the record's BPK file in the Hugging Face mirror."""
-    files = json.loads((DATA / "sources" / "mirrors" / "id_reg.json").read_text())["files"]
-    names = [f["filename"] for f in (rec.get("bpk") or {}).get("files") or [] if f.get("filename")]
-    names.append(urllib.parse.unquote((rec.get("source_pdf_url") or "").rsplit("/", 1)[-1]))
-    for name in names:
-        member = name.replace(" ", "_")
-        if member in files:
-            return files[member][0], member
-    raise SystemExit(f"{rec['id']}: none of {names} is in the mirror")
+MIRROR = DATA / "sources" / "mirrors" / "id_reg.json"
 
 
-def pdf_for(law: str, rec: dict) -> Path:
-    path = CACHE / f"{law}.pdf"
+def cached(path: Path, names: list[str]) -> Path | None:
+    """``path``, downloaded from the first of ``names`` in the Hugging Face mirror; None when
+    none of them is there."""
     if not path.exists():
         from remotezip import RemoteZip
 
+        files = json.loads(MIRROR.read_text())["files"]
+        member = next((n.replace(" ", "_") for n in names if n.replace(" ", "_") in files), None)
+        if member is None:
+            return None
         CACHE.mkdir(parents=True, exist_ok=True)
-        zip_name, member = mirror_member(rec)
-        with RemoteZip(HF + zip_name) as z:
+        with RemoteZip(HF + files[member][0]) as z:
             path.write_bytes(z.read(member))
     return path
+
+
+def pdfs_for(law: str, rec: dict) -> tuple[Path, list[Path], list[str]]:
+    """The law's PDF, its separate Penjelasan PDFs (read after it, as the importer does) and the
+    names of those the mirror lacks."""
+    files = [f for f in (rec.get("bpk") or {}).get("files") or [] if f.get("filename")]
+    main = [f["filename"] for f in files if not is_penjelasan(f)]
+    main.append(urllib.parse.unquote((rec.get("source_pdf_url") or "").rsplit("/", 1)[-1]))
+    pdf = cached(CACHE / f"{law}.pdf", main)
+    if pdf is None:
+        raise SystemExit(f"{law}: none of {main} is in the mirror")
+    extra = [(f["filename"], cached(CACHE / f"{law}_penjelasan_{n}.pdf", [f["filename"]]))
+             for n, f in enumerate((f for f in files if is_penjelasan(f)), 1)]
+    return pdf, [p for _, p in extra if p], [name for name, p in extra if not p]
 
 
 TAIL_RE = re.compile(r"ATTACHMENT Lampiran|TAMBAHAN LEMBARAN NEGARA REPUBLIK INDONESIA NOMOR")
@@ -79,7 +90,9 @@ def counts(text: str) -> tuple[int, int, int, int]:
     importer counts everything after "ATTACHMENT Penjelasan" as Penjelasan, a map's OCR noise
     in the Lampiran included (UU 16/2022); here the Penjelasan ends at its "TAMBAHAN LEMBARAN
     NEGARA" line or at a Lampiran heading, so that noise shows on its own."""
-    body, _, rest = text.partition("ATTACHMENT Penjelasan")
+    first = re.search(r"^ATTACHMENT ", text, re.MULTILINE)   # a law may have a Lampiran and no Penjelasan
+    body, after = (text[:first.start()], text[first.start():]) if first else (text, "")
+    rest = after.removeprefix("ATTACHMENT Penjelasan")
     m = TAIL_RE.search(rest)
     penj, tail = (rest[:m.start()], rest[m.start():]) if m else (rest, "")
     words = lambda t: len(re.findall(r"\w+", t))
@@ -146,9 +159,9 @@ def compare(law: str, max_diff: int, pages: list[int], save: str = "") -> None:
     version = next((v for v in rec.get("versions") or [] if v.get("text")), None)
     stored_path = record_path(law).parent / version["text"] if version else None
     stored = stored_path.read_text() if stored_path and stored_path.exists() else ""
-    pdf = pdf_for(law, rec)
+    pdf, extra, missing = pdfs_for(law, rec)
     stats: dict = {}
-    doc = parse_pdf(pdf, stats=stats)
+    doc = parse_pdf(pdf, extra, stats=stats)
     new = to_bluebell(doc)
     if save:
         Path(save).mkdir(parents=True, exist_ok=True)
@@ -157,7 +170,9 @@ def compare(law: str, max_diff: int, pages: list[int], save: str = "") -> None:
     print(f"\n## {law}\n")
     print(f"record: reparse_error `{rec.get('reparse_error')}`, recheck `{rec.get('recheck')}`")
     sha = sha256_file(pdf)
-    print(f"PDF {pdf.name}, sha256 {'is' if version and version.get('pdf_sha256') == sha else 'is NOT'} the record's\n")
+    print(f"PDF {pdf.name}, sha256 {'is' if version and version.get('pdf_sha256') == sha else 'is NOT'} the record's")
+    print(f"separate Penjelasan PDFs: {', '.join(x.name for x in extra) or 'none'}"
+          + (f"; not in the mirror, so not read: {', '.join(missing)}" if missing else "") + "\n")
     old_pasal, old_body, old_penj, old_tail = counts(stored)
     new_pasal, new_body, new_penj, new_tail = counts(new)
     print(f"| | stored (v{version.get('parser_version') if version else '-'}) | new (v{PARSER_VERSION}) |")
