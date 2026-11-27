@@ -65,7 +65,7 @@ Names follow [NAMING.md](NAMING.md).
 | Workflow | When | What |
 |---|---|---|
 | `ci.yml` | every push | pipeline lint + tests; build AKN into a temporary folder and validate it against the OASIS schema; `web/` check, types, tests and build (when it changed); actionlint; no PDFs in git |
-| `deploy.yml` | push to default branch + manual | export the corpus, build `web/`, upload the release to R2, deploy the Worker preview ([web/README.md](../web/README.md)). The Astro `deploy.yml` (Cloudflare Pages) was removed in PR 2: the production hostname stays on the last Astro deployment until cutover |
+| `deploy.yml` | push to default branch + manual | export the corpus, build `web/`, upload the release to R2, deploy the Worker preview ([web/README.md](../web/README.md)). The Astro `deploy.yml` (Cloudflare Pages) was removed in PR 2, and its Pages project was deleted on 2026-11-27 |
 | `import-bpk.yml` | manual (schedule paused 2026-11-21 until the parser is fixed; normally every 6 h) | `mode: import`: BPK metadata, every PDF's sha256 recorded (Hugging Face mirror if BPK's download fails; nothing is uploaded to archive.org since 2026-11-24), text from BPK's PDF with the current parser, never replacing a text with one that has fewer pasal. `mode: reparse`: texts re-converted from our archive.org copies (hash-checked), no BPK. `only`, `no_text` for samples |
 | `parser-regression.yml` | push touching the parser + manual | the regression set (`pipeline/tests/regression.yaml`, fails on any law off) |
 | `import-peraturan.yml` | manual (schedule removed 2026-11-21) | import from peraturan.go.id (answers only Indonesian IPs; the Indonesian VPN action was removed 2026-11-24, so it works only when the site lets other IPs in) |

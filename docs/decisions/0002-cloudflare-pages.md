@@ -1,6 +1,6 @@
 # 0002 Host on Cloudflare Pages
 
-Superseded by [0019](0019-prerender-pages-at-build.md): the site is now a Worker with static assets, and the Astro app that this record deployed is removed. The hostname note below stays true until cutover (see `docs/solid-migration-handover.md`).
+Superseded by [0019](0019-prerender-pages-at-build.md): the site is now a Worker with static assets, and the Astro app that this record deployed is removed. The Pages project was deleted on 2026-11-27; the CNAME note below is why attaching the hostname to the Worker is still open (`docs/open-items.md`).
 
 Date: 2026-11-20 · Decided by: Dante
 

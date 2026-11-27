@@ -2,7 +2,7 @@
 
 Last checked: 2026-11-26. The Solid implementation was developed on branch `feat/solid-reader` and merged into `main` on 2026-11-26; the preview deploys from `main`. The Astro site was removed in PR 2 (`refactor/remove-astro`); `web-solid/` was renamed to `web/` in PR 3 (every `web/` path below is the Solid app).
 
-**Production state.** Until cutover the production hostname still points at the old Cloudflare Pages project `hukum-bersih`, which holds the last Astro deployment. It no longer deploys (`deploy.yml` is gone), so it receives no data updates. Merge PR 2 only after the hostname has moved to the Solid Worker. The hostname is a subdomain of `suarakami.id`, whose DNS is managed outside our Cloudflare account; Pages could be attached to it with a plain CNAME (decision 0002), and whether the Worker can be attached the same way is the first thing to prove at cutover. The Astro Pages config (project `hukum-rapih`, output `dist`) is in git history: `git show 26e4d76f:web/wrangler.jsonc`.
+**Production state.** The Solid Worker is the only site. The old Cloudflare Pages project `hukum-bersih`, which held the last Astro deployment, was deleted on 2026-11-27. No production hostname is attached yet. The planned one is a subdomain of `suarakami.id`, whose DNS is managed outside our Cloudflare account; Pages could be attached to it with a plain CNAME (decision 0002), and whether the Worker can be attached the same way is the first thing to prove. The Astro Pages config (project `hukum-bersih`, output `dist`) is in git history: `git show 26e4d76f:web/wrangler.jsonc`.
 
 ## Goal
 
