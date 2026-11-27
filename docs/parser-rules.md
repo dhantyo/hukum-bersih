@@ -133,7 +133,7 @@ column against the cells' ids.
 | S20 | A misprinted pasal in the Penjelasan, confirmed by the next heading | | v13 | `p_pasal`; `misprinted` | **new** `test_penjelasan::test_misprinted_pasal_in_the_penjelasan_is_kept_when_the_next_one_confirms_it` |
 | S21 | An amending law's Penjelasan has `Pasal I`, `Pasal II`; Arabic pasal inside are labels | | UU 2/2025, 11-13/2022 (v8, v12) | `p_pasal_i`; `Context.amending_law` | `test_penjelasan::test_penjelasan_after_the_copy_certification_is_kept`; `test_amending_laws::test_amending_penjelasan_puts_angka_above_ayat` |
 | S22 | Penjelasan Umum: a new paragraph after each sentence end | | v1 | `paragraph`, `text_after_part` | **new** `test_penjelasan::test_penjelasan_sections_with_the_numeral_on_its_own_line` |
-| S23 | A Lampiran keeps its lines as printed, a Penjelasan heading too once the law's Penjelasan has come; before that the heading opens the Penjelasan, but its lines stay in the Lampiran (G9) | | UU 14/2013, 13/2022 (v7, v12) | `lampiran_opens`, `penjelasan_in_lampiran`, `lampiran_in_lampiran`, `lampiran_text` | `test_penjelasan::test_lampiran_after_the_penjelasan`, `test_penjelasan_quoted_in_a_lampiran_after_the_penjelasan_stays_in_the_lampiran` |
+| S23 | A Lampiran keeps its lines as printed, a Penjelasan heading too, unless it names the law itself (number and year of the title) and the law's Penjelasan has not come: then it opens the Penjelasan, read from a separate PDF after the Lampiran. A Perppu enacted by the law is printed whole in the Lampiran, its Penjelasan too | | UU 14/2013, 13/2022 (v7, v12), UU 9/2017 (v18) | `lampiran_opens`, `penjelasan_in_lampiran`, `lampiran_in_lampiran`, `lampiran_text`; `penjelasan_of_the_law`, `CITED_RE`, `PENJELASAN_TITLE_LINES` | `test_penjelasan::test_lampiran_after_the_penjelasan`, `test_penjelasan_quoted_in_a_lampiran_after_the_penjelasan_stays_in_the_lampiran`, `test_penjelasan_of_an_enacted_perppu_stays_in_the_lampiran_and_the_laws_own_follows`; `test_structure_table::test_a_state_reads_its_lines` |
 | S24 | The copy certification (`Salinan sesuai dengan aslinya` …) after the first pasal is left out with a warning; inside a Lampiran without one | | UU 14/2013 | `salinan_opens`, `salinan_in_lampiran`, `salinan_line` | `test_penjelasan::test_lampiran_after_the_penjelasan` |
 | S25 | The certification skip ends at a Penjelasan or Lampiran heading, or after 15 lines with a warning | | UU 2/2025 (v8) | `salinan_runs_out`, `salinan_ends`; `SALINAN_MAX` | `test_penjelasan::test_penjelasan_after_the_copy_certification_is_kept`, `test_a_runaway_copy_certification_skip_is_capped` |
 | S26 | A first `Pasal I` before any BAB makes the law amending | | UU 18/2025, 14/2013 (v7) | `pasal_1_read_as_i`, `pasal_i`, `pasal_of_amending_law` | `test_amending_laws::test_amending_law_keeps_quoted_pasal_inside_pasal_i` |
@@ -200,7 +200,7 @@ pass once the rewrite handles them.
 | G6 | `NOISE_RE` eats the word after `backspace`: a banner followed by `Pasal 1` leaves `1`, then dropped as a page number | P10 | outside: page cleanup (P10) | none |
 | G7 | An amending law with Arabic pasal takes the amended law's first quoted heading that is in sequence for its own (UU 7/2021: Pasal 4 in BAB III) | [parser-review](parser-review-2026-11.md), v17 | `pasal` | none |
 | G8 | Old Penjelasan bodies (`A. Pemandangan Umum`, `Fatsal pertama.`) are one paragraph | UU 1/1945 | `paragraph` | none |
-| G9 | A Lampiran before the Penjelasan keeps the Penjelasan: its heading opens the Penjelasan, every line after it is Lampiran text | UU 9/2017: the stored text's Penjelasan is its heading alone, Umum and Pasal demi Pasal are in the Lampiran; found moving S23 into the table: the old exit from a Lampiran could never run | `penjelasan_in_lampiran` | `test_structure_table::test_a_state_reads_its_lines` (pins it) |
+| G10 | A separate Penjelasan PDF whose heading is read inside a line is not opened: its text stays in the Lampiran before it | UU 9/2017: the stored text (v11) has `Tahun 2017 Nomor 190) PENJELASAN ATAS UNDANG-UNDANG … NOMOR 9 TAHUN 2017 …` as one Lampiran line; not re-read since, the file is not in the mirror | outside: page cleanup of the separate PDF | none |
 
 ## Design for the rewrite
 
@@ -247,7 +247,7 @@ Keep three layers and give each the shape its rules have:
    (last pasal, BAB, ayat, open lists) are guards on transitions, not flags. **Done**
    (`pdf/structure.py`, [Structure](#structure)): same output as v17 on every local input.
 
-Still to do: fix G1-G4 and G7-G9, each in the cell the Known gaps table names (a fix changes
+Still to do: fix G1-G4, G7, G8 and G10, each in the cell the Known gaps table names (a fix changes
 output, so it bumps `PARSER_VERSION`), then the [inline references](#inline-references) layer.
 
 The regression set (20/20) and the tests listed here are the bar for each step of the rewrite.
