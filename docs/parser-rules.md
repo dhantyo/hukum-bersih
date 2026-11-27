@@ -237,7 +237,7 @@ pass once the rewrite handles them.
 
 ### Candidates and evidence
 
-**Grammar over classified lines.** Prototype: `pipeline/scripts/grammar_prototype.py blocks`
+**Grammar over classified lines.** Prototype (removed once the state machine replaced it; its code is `pipeline/scripts/grammar_prototype.py blocks` at commit 9abadd1c)
 (lark LALR; each line classified by today's regexes, no sequence check; a context-free grammar
 for front, body, closing, Penjelasan, Lampiran). On the 20 laws of `tests/regression.yaml`
 (measured 2026-11-24, scans through their own text layer):
@@ -317,7 +317,7 @@ not change the block structure, so it can be built after the rewrite and tested 
 A grammar fits this layer, unlike the block structure: reference phrases are nested and
 recursive (`ayat (1), Pasal 7 ayat (2) dan ayat (4), Pasal 12, dan Pasal 13 ayat (3)`, where
 `ayat (4)` belongs to Pasal 7), they have ranges and exceptions, and they need no counting.
-Prototype: `grammar_prototype.py refs` (lark LALR, run at each anchor such as `Pasal 4` or
+Prototype: `pipeline/scripts/refs_prototype.py` (lark LALR, run at each anchor such as `Pasal 4` or
 `Undang-Undang`, keeping the longest prefix the grammar accepts through lark's interactive
 parser). It reads all 7 example forms of Lampiran II items 44, 47, 272-276 and 283 as whole
 phrases, and finds 1,054 phrases at 1,407 anchors in the stored texts of UU 4/2009 and UU
