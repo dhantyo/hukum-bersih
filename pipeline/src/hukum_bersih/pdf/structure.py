@@ -372,7 +372,7 @@ def emit_item(ctx: Context, item: tuple, level: int) -> None:
     emit(ctx, Block("item", label=f"{item[1]}.", text=item[2], level=level))
 
 
-def flat_item(ctx: Context, item: tuple) -> int | None:
+def place_item(ctx: Context, item: tuple) -> int | None:
     """Place a list item and keep the lists it opens; its level, None if it cannot be placed."""
     if placed := place(ctx.lists, item[0], item[1]):
         ctx.lists = placed[1]
@@ -441,7 +441,35 @@ def take_pasal_1_as_i(ctx: Context, line: Line, view: View) -> int:
 
 def pasal_i_before_bab(ctx: Context, line: Line, view: View) -> bool:
     num = line.get(Kind.PASAL)[0]
-    return not num[0].isdigit() and pasal_number(num) == 1 and not ctx.last_bab
+    return (not num[0].isdigit() and pasal_number(num) == 1 and not ctx.last_bab
+            and pasal_follows(ctx, line, view))
+
+
+def pasal_follows_or_misprinted(ctx: Context, line: Line, view: View) -> bool:
+    return pasal_follows(ctx, line, view) or misprinted(view, pasal_number(line.get(Kind.PASAL)[0]),
+                                                        ctx.last_pasal)
+
+
+def ayat_follows(ctx: Context, line: Line, view: View) -> bool:
+    return int(line.get(Kind.AYAT)[0]) == ctx.last_ayat + 1
+
+
+def take_ayat(ctx: Context, line: Line, view: View) -> int:
+    number, text = line.get(Kind.AYAT)
+    ctx.last_ayat, ctx.lists = int(number), ()
+    emit(ctx, Block("ayat", label=f"({number})", text=text))
+    return 1
+
+
+def item_fits(ctx: Context, line: Line, view: View) -> bool:
+    item = line.get(Kind.LIST_ITEM)
+    return place(ctx.lists, item[0], item[1]) is not None
+
+
+def take_item(ctx: Context, line: Line, view: View) -> int:
+    item = line.get(Kind.LIST_ITEM)
+    emit_item(ctx, item, place_item(ctx, item))
+    return 1
 
 
 def past_front(ctx: Context) -> State:
@@ -458,7 +486,7 @@ def take_preamble_label(ctx: Context, line: Line, view: View) -> int:
     label, rest = line.get(Kind.PREAMBLE)
     emit(ctx, Block("preamble", label=label, text=rest))
     ctx.lists = ()
-    if (item := classify(rest).get(Kind.LIST_ITEM)) and flat_item(ctx, item):
+    if (item := classify(rest).get(Kind.LIST_ITEM)) and place_item(ctx, item):
         ctx.cur.text = ""
         emit_item(ctx, item, 1)
     return 1
@@ -480,7 +508,7 @@ def label_alone(ctx: Context, line: Line, view: View) -> bool:
 def take_after_label(ctx: Context, line: Line, view: View) -> int:
     """The label alone, ": 1. …" on the next line: the first item, or the text, without the colon."""
     line = classify(line.text.lstrip(": ").strip())
-    if not ctx.cur.text and (item := line.get(Kind.LIST_ITEM)) and flat_item(ctx, item):
+    if not ctx.cur.text and (item := line.get(Kind.LIST_ITEM)) and place_item(ctx, item):
         emit_item(ctx, item, 1)
         return 1
     return take_flat_item(ctx, line, view) if Kind.LIST_ITEM in line else take_text(ctx, line, view)
@@ -493,7 +521,7 @@ def in_preamble_list(ctx: Context, line: Line, view: View) -> bool:
 def take_flat_item(ctx: Context, line: Line, view: View) -> int:
     """Menimbang and Mengingat lists are flat: an item that would nest is text."""
     item = line.get(Kind.LIST_ITEM)
-    if flat_item(ctx, item) == 1:
+    if place_item(ctx, item) == 1:
         emit_item(ctx, item, 1)
         return 1
     return take_text(ctx, line, view)
@@ -504,16 +532,20 @@ def take_flat_item(ctx: Context, line: Line, view: View) -> int:
 BAB_BEFORE_PASAL = Cell("bab_before_pasal", ("S5", "S6"), Kind.BAB, bab_follows, take_bab, State.PREAMBLE)
 BAGIAN = Cell("bagian", ("S7",), Kind.BAGIAN, in_bab, take_bagian)
 PARAGRAF = Cell("paragraf", ("S7",), Kind.PARAGRAF, in_bab, take_paragraf)
+PASAL_I = Cell("pasal_i", ("S26",), Kind.PASAL, pasal_i_before_bab, take_pasal, State.AMENDING)
 PASAL_FIRST = (
     Cell("pasal_1_read_as_i", ("S30", "S26"), Kind.PASAL, pasal_1_read_as_i_before_bab, take_pasal_1_as_i,
          State.AMENDING),
     Cell("pasal_1_read_as_i_in_bab", ("S30",), Kind.PASAL, pasal_1_read_as_i, take_pasal_1_as_i, State.BODY),
-    Cell("pasal_i", ("S26",), Kind.PASAL, pasal_i_before_bab, take_pasal, State.AMENDING),
+    PASAL_I,
     Cell("pasal_first", ("S1", "S2"), Kind.PASAL, pasal_follows, take_pasal, past_front),
 )
 OPENING = Cell("opening", ("S13",), Kind.OPENING, always, take_opening, State.PREAMBLE)
 PREAMBLE_LABEL = Cell("preamble_label", ("S14", "S15"), Kind.PREAMBLE, always, take_preamble_label,
                       State.PREAMBLE)
+AYAT = Cell("ayat", ("S8",), Kind.AYAT, ayat_follows, take_ayat)
+LIST_ITEM = Cell("list_item", ("S9", "S10"), Kind.LIST_ITEM, item_fits, take_item)
+TEXT = Cell("text", ("S11",), None, always, take_text)
 
 
 TABLE: dict[State, tuple[Cell, ...]] = {
@@ -528,6 +560,15 @@ TABLE: dict[State, tuple[Cell, ...]] = {
         Cell("label_alone", ("S14",), None, label_alone, take_after_label),
         Cell("preamble_item", ("S14",), Kind.LIST_ITEM, in_preamble_list, take_flat_item),
         Cell("preamble_text", ("S11",), None, always, take_text),
+    ),
+    State.BODY: (
+        Cell("bab", ("S5", "S6"), Kind.BAB, bab_follows, take_bab), BAGIAN, PARAGRAF, PASAL_I,
+        Cell("pasal", ("S1", "S2", "S3", "S4"), Kind.PASAL, pasal_follows_or_misprinted, take_pasal),
+        AYAT, LIST_ITEM, TEXT,
+    ),
+    State.AMENDING: (
+        Cell("pasal_of_amending_law", ("S1", "S26"), Kind.PASAL, pasal_follows, take_pasal),
+        AYAT, LIST_ITEM, TEXT,
     ),
 }
 
@@ -552,7 +593,7 @@ class Parser:
 
     def step(self, line: Line, view: View) -> int:
         ctx = self.ctx
-        if ctx.state in TABLE:
+        if ctx.state in (State.FRONT, State.PREAMBLE):
             return step(ctx, view)
         if self.in_salinan and (Kind.PENJELASAN in line or Kind.LAMPIRAN in line
                                 or ctx.salinan_lines >= SALINAN_MAX):
@@ -620,52 +661,7 @@ class Parser:
                               or (pasal and pasal[0][0].isdigit())):
             append(ctx, line.text)
             return 1
-        if bab := line.get(Kind.BAB):
-            n = heading_number(bab[0])
-            if n == ctx.last_bab + 1 or (n == ctx.last_bab and title_follows(view)):
-                ctx.last_bab = n + (n == ctx.last_bab)
-                title, used = take_title(view, caps=True)
-                emit(ctx, Block("bab", label=f"BAB {bab[0]}", text=title))
-                return used
-        if (bagian := line.get(Kind.BAGIAN)) and ctx.last_bab:
-            title, used = take_title(view, caps=False)
-            emit(ctx, Block("bagian", label=f"Bagian {bagian[0]}", text=title))
-            return used
-        if (paragraf := line.get(Kind.PARAGRAF)) and ctx.last_bab:
-            title, used = take_title(view, caps=False)
-            emit(ctx, Block("paragraf", label=f"Paragraf {paragraf[0]}", text=title))
-            return used
-        if pasal:
-            num = pasal[0]
-            n = pasal_number(num)
-            # anything else is a cross-reference that happens to start a wrapped line, unless the
-            # number is a misprint the following headings confirm (misprinted())
-            if (n == ctx.last_pasal + 1 or (num[-1].isalpha() and n == ctx.last_pasal)
-                    or (not amending and misprinted(view, n, ctx.last_pasal))):
-                if n != ctx.last_pasal + 1 and not (num[-1].isalpha() and n == ctx.last_pasal):
-                    n = ctx.last_pasal + 1 if next_heading(view) == ctx.last_pasal + 2 else n
-                    ctx.doc.warnings.append(f"'Pasal {num}' printed where Pasal {n} belongs; kept as printed")
-                if n == 1 and not num[0].isdigit() and not ctx.last_bab:
-                    ctx.enter(State.AMENDING)
-                ctx.last_pasal = n
-                emit(ctx, Block("pasal", label=f"Pasal {num}"))
-                ctx.last_ayat, ctx.lists = 0, ()
-                return 1
-        return self.step_list(line)
-
-    def step_list(self, line: Line) -> int:
-        ctx = self.ctx
-        if (ayat := line.get(Kind.AYAT)) and int(ayat[0]) == ctx.last_ayat + 1:
-            ctx.last_ayat = int(ayat[0])
-            ctx.lists = ()
-            emit(ctx, Block("ayat", label=f"({ayat[0]})", text=ayat[1]))
-            return 1
-        if (item := line.get(Kind.LIST_ITEM)) and (placed := place(ctx.lists, item[0], item[1])):
-            ctx.lists = placed[1]
-            emit(ctx, Block("item", label=f"{item[1]}.", text=item[2], level=placed[0]))
-            return 1
-        append(ctx, line.text)
-        return 1
+        return step(ctx, view)
 
     def step_penjelasan(self, line: Line, view: View) -> int:
         ctx = self.ctx

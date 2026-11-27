@@ -13,8 +13,8 @@ from pathlib import Path
 
 STRUCTURE = Path(__file__).parents[1] / "src" / "hukum_bersih" / "pdf" / "structure.py"
 
-BASELINE_FINGERPRINT = "f0e1c4ba5aa57634"
-BASELINE_BRANCHES = 37
+BASELINE_FINGERPRINT = "5efc8ec1976282a1"
+BASELINE_BRANCHES = 27
 BASELINE_STATE = 6
 
 
