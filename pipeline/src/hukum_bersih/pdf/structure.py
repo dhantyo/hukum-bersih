@@ -32,7 +32,7 @@ PARSER_VERSION = 17  # 17: a heading after "… berbunyi sebagai berikut:" is th
 #                    PENDJELASAN; 4: lists between a BAB heading and its first Pasal (UU 19/2003)
 # Texts made by a parser older than this are re-converted on the next import; newer ones only
 # when the record is flagged (kept old text, parse error, no text). Raise it only for a fix
-# that changes laws which pass every check (Dante, 2026-11-22: don't redo good work).
+# that changes laws which pass every check (2026-11-22: don't redo good work).
 PARSER_REDO_BELOW = 10
 # Same, for texts read with OCR (scanned pages) only: a fix that changes only scanned pages
 # redoes the ~330 OCR'd laws without the ~1,600 typed ones. 16: page header/footer by
