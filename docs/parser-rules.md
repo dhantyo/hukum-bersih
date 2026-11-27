@@ -17,12 +17,12 @@ of citations in the text (see [Citations](#citations)).
 |---|---:|---:|---:|
 | Page cleanup (`pdf/extract.py`, `pdf/edges.py`) | 26 | 2 | 2 |
 | Line classification (`pdf/lines.py`) | 24 | 8 | 8 |
-| Structure (`pdf/structure.py` `Parser`) | 31 | 7 | 6 |
+| Structure (`pdf/structure.py` `TABLE`) | 33 | 7 | 6 |
 | Closing fields (`closing.py`) | 12 | 2 | 2 |
-| **All** | **93** | **19** | **18** |
+| **All** | **95** | **19** | **18** |
 
-S17 has no test: what it does today is a defect ([Known gaps](#known-gaps)). Three more tests
-are `xfail(strict=True)`: they state what the rewrite must do and fail until it does.
+S17's test pins what it does today, which is a defect ([Known gaps](#known-gaps), G4). Three
+more tests are `xfail(strict=True)`: they state what the rewrite must do and fail until it does.
 
 ## Page cleanup
 
@@ -95,43 +95,55 @@ in the law named where there is one, in `test_line_classes::test_a_line_is_of_it
 
 ## Structure
 
-What a line means given what came before: the `Parser` class, its counters (`last_pasal`,
-`last_bab`, `last_ayat`, `lists`, `p_last_pasal`) and its mode flags (`in_penjelasan`,
-`in_lampiran`, `in_salinan`, `salinan_lines`, `amending`, `quoted_one`, `p_roman`).
+What a line means given what came before: the state machine in `pdf/structure.py` (rewrite
+step 2, done). `State` is the part being read (front, preamble, body, an amending law's Pasal I,
+closing, certification, the Penjelasan's Umum, Pasal demi Pasal and an amending law's Pasal I,
+Lampiran). `Context` holds the counters, the open lists, the document so far and `part`, the
+part that CLOSING and SALINAN lie over and give way to (`settle`). `TABLE` gives each state its
+cells in the order they are tried: a cell is a line class, a guard (counters, and a read-only
+`View` of the lines around for the look-ahead rules), an action and the next state.
+
+Code names the cells (`Cell.name`) that carry out the rule, then the guards and helpers they
+use; a cell may sit in several states. `test_structure_table::test_a_state_reads_its_lines`
+reads each rule's lines from its state, and
+`test_structure_table::test_every_rule_sits_in_the_cells_the_inventory_names` checks the Code
+column against the cells' ids.
 
 | ID | Rule | Ref | Cause | Code | Test |
 |---|---|---|---|---|---|
-| S1 | A Pasal heading is taken only as the next number; anything else is a reference that starts a wrapped line | yes | v1 | `Parser.step` | `test_structure::test_cross_reference_is_not_a_heading`, `test_structure` |
-| S2 | `Pasal 2A` after `Pasal 2` | | Lampiran II item 234 | `Parser.step` | **new** `test_headings::test_inserted_pasal_with_a_letter_follows_its_number` |
-| S3 | A number off the sequence is a misprint when it follows a sentence end and the next heading (within 400 lines) confirms it; warned | yes | UU 19/1948, 29/1948, 1/1951 (v13) | `Parser.misprinted`, `next_heading`, `after_sentence` | `test_headings::test_misprinted_heading_numbers_confirmed_by_the_next_heading` |
-| S4 | A heading after `… berikut:` is a quoted pasal, never a misprint or skip | yes | UU 7/2021 (v17) | `Parser.quote_follows` | `test_amending_laws::test_quoted_pasal_of_an_amended_law_is_not_taken_as_a_skipped_number` |
-| S5 | BAB in sequence; the same number again only when a capitals title follows (kept as printed) | | UU 19/1997 | `Parser.step`, `title_follows` | `test_headings::test_bab_printed_twice_is_kept_as_printed` |
-| S6 | BAB title: the capitals lines up to the next heading; old laws: up to 4 short lines in normal capitals before a heading | | UU 25/1956 (v5) | `Parser.take_title` | `test_headings::test_headings_with_a_full_stop_and_old_numbering` |
-| S7 | Bagian and Paragraf only inside a BAB; their title is the next line | | Lampiran II item 70 | `Parser.step`, `take_title` | **new** `test_headings::test_bagian_and_paragraf_have_one_title_line_and_need_a_bab` |
-| S8 | Ayat only as the next number; a new ayat closes the lists | | v1 | `Parser.step_list` | `test_structure::test_cross_reference_is_not_a_heading` |
-| S9 | Numbers inside a lettered item (and letters inside a numbered one) nest one deeper; lists reset per pasal | | b14f553f | `Parser.list_item`, `reset_lists` | `test_structure::test_numbers_inside_letters_and_back`, `test_list_nesting_resets_per_pasal` |
-| S10 | A list starts only at `a.` or `1.`; a lone `c.` is a reference wrapped onto the line | yes | v1 | `Parser.list_item` | **new** `test_structure::test_a_list_starts_only_at_a_or_1` |
-| S11 | Lines joined with a space; `Undang-` + `Undang` without | | v1 | `join` | `test_structure::test_hyphen_join_and_nesting` |
-| S12 | Spacing tidied: `Undang- Undang`, space before `,;:.)`, after `(`, inside quotes | | justified layout | `tidy` | **new** `test_structure::test_spacing_of_joined_lines_is_tidied` |
-| S13 | Before the first label every line is title, joined | | v1 | `Parser.step_preamble` | `test_headings::test_crest_caption_is_not_the_title` |
-| S14 | Preamble lists: the first item on the label's line or after a lone `:`; flat | | UU 14/2013, 6/1964 (v5) | `Parser.step_preamble` | `test_headings::test_preamble_lists_on_the_label_line_and_after_a_colon` |
-| S15 | `Dengan persetujuan …` is its own preamble part, not glued to the last Mengingat item | | v5 | `Kind.PREAMBLE` | `test_headings::test_preamble_lists_on_the_label_line_and_after_a_colon` |
-| S16 | After the last pasal a closing line opens the closing; every later line is a closing line as printed; the `Agar …` sentence joins until its full stop | | UU 4/2009, 25/1956 (v5) | `Parser.step` | `test_closing::test_closing_kept_line_by_line`, `test_old_closing_formula` |
-| S17 | A `RANCANGAN` line after the closing is not a closing line | | RUU drafts | `Parser.step` | none (G4) |
-| S18 | The Penjelasan starts only after a pasal, once | | v1 | `Parser.step` | partly: `test_penjelasan::test_penjelasan_quoted_in_a_lampiran_after_the_penjelasan_stays_in_the_lampiran` |
-| S19 | In the Penjelasan a pasal heading in sequence, or any later pasal of the law after a sentence end | | UU 2/1962 (v13) | `Parser.step_penjelasan` | `test_penjelasan::test_penjelasan_may_skip_pasal` |
-| S20 | A misprinted pasal in the Penjelasan, confirmed by the next heading | | v13 | `Parser.step_penjelasan`, `misprinted` | **new** `test_penjelasan::test_misprinted_pasal_in_the_penjelasan_is_kept_when_the_next_one_confirms_it` |
-| S21 | An amending law's Penjelasan has `Pasal I`, `Pasal II`; Arabic pasal inside are labels | | UU 2/2025, 11-13/2022 (v8, v12) | `Parser.step_penjelasan`, `p_roman` | `test_penjelasan::test_penjelasan_after_the_copy_certification_is_kept`; `test_amending_laws::test_amending_penjelasan_puts_angka_above_ayat` |
-| S22 | Penjelasan Umum: a new paragraph after each sentence end | | v1 | `Parser.step_penjelasan` | **new** `test_penjelasan::test_penjelasan_sections_with_the_numeral_on_its_own_line` |
-| S23 | A Lampiran keeps its lines as printed; a Penjelasan heading ends it only while the law's Penjelasan is still to come | | UU 14/2013, 13/2022 (v7, v12) | `Parser.step`, `had_penjelasan` | `test_penjelasan::test_lampiran_after_the_penjelasan`, `test_penjelasan_quoted_in_a_lampiran_after_the_penjelasan_stays_in_the_lampiran` |
-| S24 | The copy certification inside a Lampiran is left out | | UU 14/2013 | `Parser.step` | `test_penjelasan::test_lampiran_after_the_penjelasan` |
-| S25 | The certification skip ends at a Penjelasan or Lampiran heading, or after 15 lines with a warning | | UU 2/2025 (v8) | `Parser.step`, `SALINAN_MAX` | `test_penjelasan::test_penjelasan_after_the_copy_certification_is_kept`, `test_a_runaway_copy_certification_skip_is_capped` |
-| S26 | A first `Pasal I` before any BAB makes the law amending | | UU 18/2025, 14/2013 (v7) | `Parser.step` | `test_amending_laws::test_amending_law_keeps_quoted_pasal_inside_pasal_i` |
-| S27 | In an amending law, BAB, Bagian, Paragraf and Arabic Pasal lines are the amended law's quoted wording: text of Pasal I | yes | UU 18/2025, 14/2013 (v7) | `Parser.step` | `test_amending_laws::test_amending_law_keeps_quoted_pasal_inside_pasal_i` |
-| S28 | `Pasal I.` followed by `Pasal 2` with no amendment wording was a misprint of Pasal 1 | | UU 16/1953 | `Parser.amends_so_far` | `test_headings::test_misprinted_pasal_i_in_an_ordinary_law` |
-| S29 | The law's own `Pasal 2` after amendments in Pasal I: after a finished sentence, no quoted Pasal 1 | | UU 2/1953, 12/1957 | `Parser.step`, `quoted_one` | `test_amending_laws::test_own_pasal_2_after_amendments_in_pasal_i` |
-| S30 | OCR's `Pasal 1` read as `Pasal I` when the title says PERUBAHAN and `Beberapa ketentuan … diubah` follows; warned | | UU 18/2025 (v7) | `Parser.reads_as_amending` | `test_amending_laws::test_ocr_reads_pasal_i_as_pasal_1` |
-| S31 | A document is amending when its first pasal has a Roman number | | v7 | `Document.amending` | `test_amending_laws::test_amending_law_is_recognised_from_its_first_pasal` |
+| S1 | A Pasal heading is taken only as the next number; anything else is a reference that starts a wrapped line | yes | v1 | `pasal_first`, `pasal`, `pasal_of_amending_law`; `pasal_follows` | `test_structure::test_cross_reference_is_not_a_heading`, `test_structure` |
+| S2 | `Pasal 2A` after `Pasal 2` | | Lampiran II item 234 | `pasal_first`, `pasal`; `pasal_follows` | **new** `test_headings::test_inserted_pasal_with_a_letter_follows_its_number` |
+| S3 | A number off the sequence is a misprint when it follows a sentence end and the next heading (within 400 lines) confirms it; warned | yes | UU 19/1948, 29/1948, 1/1951 (v13) | `pasal`; `misprinted`, `next_heading`, `after_sentence`, `NEXT_HEADING_WITHIN` | `test_headings::test_misprinted_heading_numbers_confirmed_by_the_next_heading` |
+| S4 | A heading after `… berikut:` is a quoted pasal, never a misprint or skip | yes | UU 7/2021 (v17) | `pasal`; `quote_follows` | `test_amending_laws::test_quoted_pasal_of_an_amended_law_is_not_taken_as_a_skipped_number` |
+| S5 | BAB in sequence; the same number again only when a capitals title follows (kept as printed) | | UU 19/1997 | `bab_before_pasal`, `bab`; `title_follows` | `test_headings::test_bab_printed_twice_is_kept_as_printed` |
+| S6 | BAB title: the capitals lines up to the next heading; old laws: up to 4 short lines in normal capitals before a heading | | UU 25/1956 (v5) | `bab_before_pasal`, `bab`; `take_title` | `test_headings::test_headings_with_a_full_stop_and_old_numbering` |
+| S7 | Bagian and Paragraf only inside a BAB; their title is the next line | | Lampiran II item 70 | `bagian`, `paragraf`; `take_title` | **new** `test_headings::test_bagian_and_paragraf_have_one_title_line_and_need_a_bab` |
+| S8 | Ayat only as the next number; a new ayat closes the lists | | v1 | `ayat` | `test_structure::test_cross_reference_is_not_a_heading` |
+| S9 | Numbers inside a lettered item (and letters inside a numbered one) nest one deeper; lists reset per pasal | | b14f553f | `list_item`; `place` | `test_structure::test_numbers_inside_letters_and_back`, `test_list_nesting_resets_per_pasal` |
+| S10 | A list starts only at `a.` or `1.`; a lone `c.` is a reference wrapped onto the line | yes | v1 | `list_item`; `place` | **new** `test_structure::test_a_list_starts_only_at_a_or_1` |
+| S11 | Lines joined with a space; `Undang-` + `Undang` without | | v1 | `title_continues`, `preamble_text`, `text`; `append`, `join` | `test_structure::test_hyphen_join_and_nesting` |
+| S12 | Spacing tidied: `Undang- Undang`, space before `,;:.)`, after `(`, inside quotes | | justified layout | `tidy` (in `parse_lines`, after the table) | **new** `test_structure::test_spacing_of_joined_lines_is_tidied` |
+| S13 | Before the first label every line is title, joined | | v1 | `opening`, `crest_caption`, `title`, `title_continues` | `test_headings::test_crest_caption_is_not_the_title` |
+| S14 | Preamble lists: the first item on the label's line or after a lone `:`; flat | | UU 14/2013, 6/1964 (v5) | `preamble_label`, `label_alone`, `preamble_item` | `test_headings::test_preamble_lists_on_the_label_line_and_after_a_colon` |
+| S15 | `Dengan persetujuan …` is its own preamble part, not glued to the last Mengingat item | | v5 | `preamble_label` | `test_headings::test_preamble_lists_on_the_label_line_and_after_a_colon` |
+| S16 | After the last pasal a closing line opens the closing; every later line is a closing line as printed; the `Agar …` sentence joins until its full stop | | UU 4/2009, 25/1956 (v5) | `closing_opens`, `closing_sentence`, `closing_line`, `closing_in_salinan`; `settle` | `test_closing::test_closing_kept_line_by_line`, `test_old_closing_formula` |
+| S17 | A `RANCANGAN` line after the closing is not a closing line | | RUU drafts | `closing_gives_way` | **new** `test_structure_table::test_the_closing_lies_over_its_part_and_gives_way_to_it` (pins G4) |
+| S18 | The Penjelasan starts only after a pasal, once | | v1 | `penjelasan_opens`; `penjelasan_to_come` | partly: `test_penjelasan::test_penjelasan_quoted_in_a_lampiran_after_the_penjelasan_stays_in_the_lampiran` |
+| S19 | In the Penjelasan a pasal heading in sequence, or any later pasal of the law after a sentence end | | UU 2/1962 (v13) | `p_pasal`; `p_pasal_follows` | `test_penjelasan::test_penjelasan_may_skip_pasal` |
+| S20 | A misprinted pasal in the Penjelasan, confirmed by the next heading | | v13 | `p_pasal`; `misprinted` | **new** `test_penjelasan::test_misprinted_pasal_in_the_penjelasan_is_kept_when_the_next_one_confirms_it` |
+| S21 | An amending law's Penjelasan has `Pasal I`, `Pasal II`; Arabic pasal inside are labels | | UU 2/2025, 11-13/2022 (v8, v12) | `p_pasal_i`; `Context.amending_law` | `test_penjelasan::test_penjelasan_after_the_copy_certification_is_kept`; `test_amending_laws::test_amending_penjelasan_puts_angka_above_ayat` |
+| S22 | Penjelasan Umum: a new paragraph after each sentence end | | v1 | `paragraph`, `text_after_part` | **new** `test_penjelasan::test_penjelasan_sections_with_the_numeral_on_its_own_line` |
+| S23 | A Lampiran keeps its lines as printed, a Penjelasan heading too once the law's Penjelasan has come; before that the heading opens the Penjelasan, but its lines stay in the Lampiran (G9) | | UU 14/2013, 13/2022 (v7, v12) | `lampiran_opens`, `penjelasan_in_lampiran`, `lampiran_in_lampiran`, `lampiran_text` | `test_penjelasan::test_lampiran_after_the_penjelasan`, `test_penjelasan_quoted_in_a_lampiran_after_the_penjelasan_stays_in_the_lampiran` |
+| S24 | The copy certification (`Salinan sesuai dengan aslinya` …) after the first pasal is left out with a warning; inside a Lampiran without one | | UU 14/2013 | `salinan_opens`, `salinan_in_lampiran`, `salinan_line` | `test_penjelasan::test_lampiran_after_the_penjelasan` |
+| S25 | The certification skip ends at a Penjelasan or Lampiran heading, or after 15 lines with a warning | | UU 2/2025 (v8) | `salinan_runs_out`, `salinan_ends`; `SALINAN_MAX` | `test_penjelasan::test_penjelasan_after_the_copy_certification_is_kept`, `test_a_runaway_copy_certification_skip_is_capped` |
+| S26 | A first `Pasal I` before any BAB makes the law amending | | UU 18/2025, 14/2013 (v7) | `pasal_1_read_as_i`, `pasal_i`, `pasal_of_amending_law` | `test_amending_laws::test_amending_law_keeps_quoted_pasal_inside_pasal_i` |
+| S27 | In an amending law, BAB, Bagian, Paragraf and Arabic Pasal lines are the amended law's quoted wording: text of Pasal I | yes | UU 18/2025, 14/2013 (v7) | `quoted_pasal_1`, `quoted_heading` | `test_amending_laws::test_amending_law_keeps_quoted_pasal_inside_pasal_i` |
+| S28 | `Pasal I.` followed by `Pasal 2` with no amendment wording was a misprint of Pasal 1 | | UU 16/1953 | `own_pasal_2`; `amends_so_far` | `test_headings::test_misprinted_pasal_i_in_an_ordinary_law` |
+| S29 | The law's own `Pasal 2` after amendments in Pasal I: after a finished sentence, no quoted Pasal 1 | | UU 2/1953, 12/1957 | `own_pasal_2`, `quoted_pasal_1` | `test_amending_laws::test_own_pasal_2_after_amendments_in_pasal_i` |
+| S30 | OCR's `Pasal 1` read as `Pasal I` when the title says PERUBAHAN and `Beberapa ketentuan … diubah` follows; warned | | UU 18/2025 (v7) | `pasal_1_read_as_i`, `pasal_1_read_as_i_in_bab`; `reads_as_amending` | `test_amending_laws::test_ocr_reads_pasal_i_as_pasal_1` |
+| S31 | A document is amending when its first pasal has a Roman number | | v7 | `Document.amending` (outside the table) | `test_amending_laws::test_amending_law_is_recognised_from_its_first_pasal` |
+| S32 | Before the Penjelasan's first pasal a part line (`I. UMUM`, `II. PASAL DEMI PASAL`) opens its part; the numeral alone on its line is dropped | | UU 6/1967, 2/2025 (v8) | `part_numeral`, `part` | `test_penjelasan::test_penjelasan_sections_with_the_numeral_on_its_own_line`, `test_penjelasan_with_lettered_sections` |
+| S33 | `Ayat (1)`, `Huruf a`, `Angka 2` are labels only under a Penjelasan pasal | | Lampiran II item 190 | `p_label` | `test_penjelasan::test_penjelasan_labels_for_ayat_huruf_and_angka` |
 
 ## Closing fields
 
@@ -178,16 +190,17 @@ R1 matches capitals only (titles). Body text cites in title case (`Undang-Undang
 Found while building this inventory, measured on BPK's PDFs with parser v17. The xfail tests
 pass once the rewrite handles them.
 
-| ID | Gap | Evidence | Test |
-|---|---|---|---|
-| G1 | A closing line inside a Lampiran is taken out of it: `Kind.CLOSING` is checked before `in_lampiran` in `Parser.step` | UU 12/2011: 52 lines of Lampiran II's examples become closing lines; UU 17/2016: the attached Perppu's 5 closing and TLN lines | xfail `test_penjelasan::test_closing_formula_quoted_in_a_lampiran_stays_in_the_lampiran` |
-| G2 | `LAMPIRAN I` quoted in a Lampiran starts a new one | UU 12/2011: 4 Lampiran (I, II, II, I) instead of 2 | xfail `test_penjelasan::test_lampiran_heading_quoted_as_an_example_does_not_start_a_lampiran` |
-| G3 | List levels `a)` and `1)` are text of the level-2 item | Lampiran II items 94-95 | xfail `test_structure::test_third_and_fourth_list_levels_are_items` |
-| G4 | `RANCANGAN` after the closing is glued to the last closing line (`Disahkan di Jakarta RANCANGAN`), and `ATAS` to the Penjelasan heading | S17 | none |
-| G5 | A date read from `Djakarta, tanggal 23 Nopember 1945,` keeps the comma | C4 | none |
-| G6 | `NOISE_RE` eats the word after `backspace`: a banner followed by `Pasal 1` leaves `1`, then dropped as a page number | P10 | none |
-| G7 | An amending law with Arabic pasal takes the amended law's first quoted heading that is in sequence for its own (UU 7/2021: Pasal 4 in BAB III) | [parser-review](parser-review-2026-11.md), v17 | none |
-| G8 | Old Penjelasan bodies (`A. Pemandangan Umum`, `Fatsal pertama.`) are one paragraph | UU 1/1945 | none |
+| ID | Gap | Evidence | Cell | Test |
+|---|---|---|---|---|
+| G1 | A closing line inside a Lampiran is taken out of it: in LAMPIRAN the closing cell comes before the Lampiran text | UU 12/2011: 52 lines of Lampiran II's examples become closing lines; UU 17/2016: the attached Perppu's 5 closing and TLN lines | `closing_in_lampiran` | xfail `test_penjelasan::test_closing_formula_quoted_in_a_lampiran_stays_in_the_lampiran` |
+| G2 | `LAMPIRAN I` quoted in a Lampiran starts a new one | UU 12/2011: 4 Lampiran (I, II, II, I) instead of 2 | `lampiran_in_lampiran` | xfail `test_penjelasan::test_lampiran_heading_quoted_as_an_example_does_not_start_a_lampiran` |
+| G3 | List levels `a)` and `1)` are text of the level-2 item | Lampiran II items 94-95 | `list_item`'s `place`, after a line class for `a)` and `1)` | xfail `test_structure::test_third_and_fourth_list_levels_are_items` |
+| G4 | `RANCANGAN` after the closing is glued to the last closing line (`Disahkan di Jakarta RANCANGAN`), and `ATAS` to the Penjelasan heading | S17 | `closing_gives_way` | none |
+| G5 | A date read from `Djakarta, tanggal 23 Nopember 1945,` keeps the comma | C4 | outside: closing fields (C4) | none |
+| G6 | `NOISE_RE` eats the word after `backspace`: a banner followed by `Pasal 1` leaves `1`, then dropped as a page number | P10 | outside: page cleanup (P10) | none |
+| G7 | An amending law with Arabic pasal takes the amended law's first quoted heading that is in sequence for its own (UU 7/2021: Pasal 4 in BAB III) | [parser-review](parser-review-2026-11.md), v17 | `pasal` | none |
+| G8 | Old Penjelasan bodies (`A. Pemandangan Umum`, `Fatsal pertama.`) are one paragraph | UU 1/1945 | `paragraph` | none |
+| G9 | A Lampiran before the Penjelasan keeps the Penjelasan: its heading opens the Penjelasan, every line after it is Lampiran text | UU 9/2017: the stored text's Penjelasan is its heading alone, Umum and Pasal demi Pasal are in the Lampiran; found moving S23 into the table: the old exit from a Lampiran could never run | `penjelasan_in_lampiran` | `test_structure_table::test_a_state_reads_its_lines` (pins it) |
 
 ## Design for the rewrite
 
@@ -228,29 +241,34 @@ Keep three layers and give each the shape its rules have:
 1. Page cleanup (P1-P26) stays a pipeline of steps, as now.
 2. Line classification (L1-L24) becomes a registry: one named predicate per class, each with
    the law that caused it and its test from this inventory. Classes are context-free, so this
-   layer has no state. **Done** (`pdf/lines.py`): `Parser` reads `Line` objects (text and the
-   classes it matched, with their fields).
-3. Structure (S1-S31) becomes a table-driven state machine over the classified lines. Counters
-   (last pasal, BAB, ayat, open lists) are guards on transitions, not flags.
+   layer has no state. **Done** (`pdf/lines.py`): the structure layer reads `Line` objects (text
+   and the classes it matched, with their fields).
+3. Structure (S1-S33) becomes a table-driven state machine over the classified lines. Counters
+   (last pasal, BAB, ayat, open lists) are guards on transitions, not flags. **Done**
+   (`pdf/structure.py`, [Structure](#structure)): same output as v17 on every local input.
+
+Still to do: fix G1-G4 and G7-G9, each in the cell the Known gaps table names (a fix changes
+output, so it bumps `PARSER_VERSION`), then the [inline references](#inline-references) layer.
 
 The regression set (20/20) and the tests listed here are the bar for each step of the rewrite.
 
 ### Changing the parser during the rewrite
 
-A change to the parser starts with the next step of the rewrite. Together the three layers
-replace the `if` chain in `Parser.step` and its mode flags.
+A change to the parser starts with the next step of the rewrite. The three layers replaced the
+`if` chain of the old `Parser.step` and its mode flags.
 
-- `pipeline/tests/test_parser_rewrite_ratchet.py` enforces the plan: `Parser` may only shrink,
-  so any change to it must also move logic out of it (fewer `if` branches or fewer state
-  attributes). A new rule goes into the new layers, starting with the line registry.
-- Lower the test's baselines in the same commit as the shrink.
+- `pipeline/tests/test_parser_rewrite_ratchet.py` keeps the structure layer a table: the old
+  `Parser` stays gone, only the driver `step` reads the state, and the `if` statements of
+  `pdf/structure.py` may only shrink. A new rule is a cell, or a guard of one, in the row of the
+  state it belongs to; a new line class goes into the line registry.
+- Lower `BASELINE_IFS` in the same commit as the shrink.
 - Give every new or changed rule its inventory id, the law that caused it and its test in this
   file.
 - The bar for each step is the regression set plus the inventory's tests, including the
   `xfail(strict=True)` ones the rewrite is meant to make pass.
 - A step that keeps the output shows it with `pipeline/scripts/parser_identity.py`: the parser of
-  `origin/main` and the working tree's on every local input (cached PDFs, stored texts), zero
-  documents may differ.
+  `origin/main` and the working tree's on every local input (cached PDFs, stored texts) and on
+  `--fuzz N` made-up documents (orders the laws hardly have), zero documents may differ.
 
 ### Inline references
 
