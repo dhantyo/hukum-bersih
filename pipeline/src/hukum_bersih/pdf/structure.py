@@ -4,7 +4,9 @@
 Structure markers are only accepted in sequence (Pasal n+1 after Pasal n, ayat (k+1) after (k),
 b after a, ...). That keeps cross-references that happen to start a wrapped line ("Pasal 5 ayat
 (1) ...") from being mistaken for headings. What each line is on its own comes from the line
-registry (``lines.py``); this module decides what it means given what came before.
+registry (``lines.py``); this module decides what it means given what came before, with a state
+machine: ``TABLE`` gives each ``State`` its cells, tried in order (docs/parser-rules.md,
+"Structure", names the rule each cell carries out).
 """
 
 from __future__ import annotations
@@ -637,6 +639,75 @@ def take_flat_item(ctx: Context, line: Line, view: View) -> int:
     return take_text(ctx, line, view)
 
 
+def take_closing_line(ctx: Context, line: Line, view: View) -> int:
+    emit(ctx, Block("closing", text=line.text))
+    return 1
+
+
+def gives_way(ctx: Context, line: Line, view: View) -> bool:
+    """A Penjelasan heading or a draft's ``RANCANGAN`` line under the closing (S17)."""
+    return Kind.PENJELASAN in line or line.text == "RANCANGAN"
+
+
+def read_in_part(ctx: Context, line: Line, view: View) -> int:
+    """The line is read by the part the closing lies over (``settle`` decides what is open next)."""
+    ctx.enter(ctx.part)
+    return step(ctx, view)
+
+
+def settle(ctx: Context) -> State:
+    """Back to the part, or to the closing while the open block is a closing line (S16)."""
+    return State.CLOSING if ctx.part is not State.LAMPIRAN and ctx.cur.kind == "closing" else ctx.part
+
+
+def sentence_goes_on(ctx: Context, line: Line, view: View) -> bool:
+    """The ``Agar setiap orang …`` sentence joins until its full stop (S16)."""
+    return ctx.cur.text.startswith("Agar") and not ctx.cur.text.rstrip().endswith(".")
+
+
+def take_lampiran(ctx: Context, line: Line, view: View) -> int:
+    emit(ctx, Block("lampiran", label=line.text))
+    return 1
+
+
+def take_lampiran_text(ctx: Context, line: Line, view: View) -> int:
+    emit(ctx, Block("lampiran_text", text=line.text))
+    return 1
+
+
+def take_salinan(ctx: Context, line: Line, view: View) -> int:
+    """The copy's certification by the State Secretariat, often under a round stamp: not part of
+    the law (and OCR turns the stamp into noise)."""
+    ctx.salinan_lines = 0
+    ctx.doc.warnings.append("salinan: copy certified ('Salinan sesuai dengan aslinya'); left out")
+    return 1
+
+
+def take_salinan_quietly(ctx: Context, line: Line, view: View) -> int:
+    ctx.salinan_lines = 0
+    return 1
+
+
+def salinan_runs_out(ctx: Context, line: Line, view: View) -> bool:
+    """The certification is a few lines, so a long skip is a misreading: stop and keep the text
+    (UU 2/2025 lost its Penjelasan to this before)."""
+    return ctx.salinan_lines >= SALINAN_MAX
+
+
+def take_salinan_runaway(ctx: Context, line: Line, view: View) -> int:
+    ctx.doc.warnings.append(f"salinan: no end found after {SALINAN_MAX} lines; text kept")
+    return 0
+
+
+def salinan_ends(ctx: Context, line: Line, view: View) -> bool:
+    return Kind.PENJELASAN in line or Kind.LAMPIRAN in line
+
+
+def take_salinan_line(ctx: Context, line: Line, view: View) -> int:
+    ctx.salinan_lines += 1
+    return 1
+
+
 # --------------------------------------------------------------------------- the cells
 
 BAB_BEFORE_PASAL = Cell("bab_before_pasal", ("S5", "S6"), Kind.BAB, bab_follows, take_bab, State.PREAMBLE)
@@ -661,6 +732,15 @@ P_PASAL_I = Cell("p_pasal_i", ("S21",), Kind.PASAL, pasal_i_of_penjelasan, take_
 P_PASAL = Cell("p_pasal", ("S19", "S20"), Kind.PASAL, p_pasal_follows, take_p_pasal, p_part)
 P_LABEL = Cell("p_label", ("S33",), Kind.PENJELASAN_LABEL, always, take_p_label)
 AFTER_PART = Cell("text_after_part", ("S22",), None, after_part_heading, take_paragraph)
+# after the first pasal, before a state's own cells: what ends or interrupts a part
+CLOSING_OPENS = Cell("closing_opens", ("S16",), Kind.CLOSING, always, take_closing_line, State.CLOSING)
+LAMPIRAN_OPENS = Cell("lampiran_opens", ("S23",), Kind.LAMPIRAN, always, take_lampiran, State.LAMPIRAN)
+SALINAN_OPENS = Cell("salinan_opens", ("S24",), Kind.SALINAN, always, take_salinan, State.SALINAN)
+OPENERS = (
+    Cell("penjelasan_opens", ("S18",), Kind.PENJELASAN, penjelasan_to_come, take_penjelasan_heading,
+         State.PENJELASAN_UMUM),
+    CLOSING_OPENS, LAMPIRAN_OPENS, SALINAN_OPENS,
+)
 
 
 TABLE: dict[State, tuple[Cell, ...]] = {
@@ -677,98 +757,66 @@ TABLE: dict[State, tuple[Cell, ...]] = {
         Cell("preamble_text", ("S11",), None, always, take_text),
     ),
     State.BODY: (
+        *OPENERS,
         Cell("bab", ("S5", "S6"), Kind.BAB, bab_follows, take_bab), BAGIAN, PARAGRAF, PASAL_I,
-        Cell("pasal", ("S1", "S2", "S3", "S4"), Kind.PASAL, pasal_follows_or_misprinted, take_pasal),
+        Cell("pasal", ("S1", "S2", "S3", "S4", "G7"), Kind.PASAL, pasal_follows_or_misprinted, take_pasal),
         AYAT, LIST_ITEM, TEXT,
     ),
     State.AMENDING: (
+        *OPENERS,
         Cell("own_pasal_2", ("S28", "S29"), Kind.PASAL, own_pasal_2, read_again, State.BODY),
         Cell("quoted_pasal_1", ("S27", "S29"), Kind.PASAL, is_pasal_1, take_quoted_pasal_1),
         Cell("quoted_heading", ("S27",), None, quoted_heading, take_text),
         Cell("pasal_of_amending_law", ("S1", "S26"), Kind.PASAL, pasal_follows, take_pasal),
         AYAT, LIST_ITEM, TEXT,
     ),
+    State.CLOSING: (
+        *OPENERS,
+        Cell("closing_gives_way", ("S17", "G4"), None, gives_way, read_in_part, settle),
+        Cell("closing_sentence", ("S16",), None, sentence_goes_on, take_text),
+        Cell("closing_line", ("S16",), None, always, take_closing_line),
+    ),
+    State.SALINAN: (
+        Cell("salinan_runs_out", ("S25",), None, salinan_runs_out, take_salinan_runaway, settle),
+        Cell("salinan_ends", ("S25",), None, salinan_ends, read_again, settle),
+        Cell("closing_in_salinan", ("S16",), Kind.CLOSING, always, take_closing_line),
+        Cell("salinan_line", ("S24",), None, always, take_salinan_line),
+    ),
     State.PENJELASAN_UMUM: (
+        CLOSING_OPENS, LAMPIRAN_OPENS, SALINAN_OPENS,
         Cell("part_numeral", ("S32",), Kind.PENJELASAN_PART, numeral_alone, skip),
         Cell("part", ("S32",), Kind.PENJELASAN_PART, always, take_part),
         P_PASAL_I, P_PASAL,
         Cell("paragraph", ("S22",), None, after_sentence_end, take_paragraph),
         AFTER_PART, TEXT,
     ),
-    State.PENJELASAN_PASAL: (P_PASAL_I, P_PASAL, P_LABEL, AFTER_PART, TEXT),
-    State.PENJELASAN_PASAL_I: (P_PASAL_I, P_LABEL, AFTER_PART, TEXT),
+    State.PENJELASAN_PASAL: (
+        CLOSING_OPENS, LAMPIRAN_OPENS, SALINAN_OPENS, P_PASAL_I, P_PASAL, P_LABEL, AFTER_PART, TEXT,
+    ),
+    State.PENJELASAN_PASAL_I: (
+        CLOSING_OPENS, LAMPIRAN_OPENS, SALINAN_OPENS, P_PASAL_I, P_LABEL, AFTER_PART, TEXT,
+    ),
+    # a Lampiran (maps, tables, schedules, a drafting guide) keeps its lines as printed
+    State.LAMPIRAN: (
+        Cell("penjelasan_in_lampiran", ("S23", "G9"), Kind.PENJELASAN, penjelasan_to_come,
+             take_penjelasan_heading),
+        Cell("closing_in_lampiran", ("G1",), Kind.CLOSING, always, take_closing_line),
+        Cell("lampiran_in_lampiran", ("S23", "G2"), Kind.LAMPIRAN, always, take_lampiran),
+        Cell("salinan_in_lampiran", ("S24",), Kind.SALINAN, always, take_salinan_quietly, State.SALINAN),
+        Cell("lampiran_text", ("S23",), None, always, take_lampiran_text),
+    ),
 }
 
 
-class Parser:
-    def __init__(self, lines: list[str]):
-        self.lines = [classify(text) for text in normalise(lines)]
-        self.ctx = Context()
-        self.in_salinan = False
-        self.in_lampiran = False
-
-    def run(self) -> Document:
-        i = 0
-        while i < len(self.lines):
-            i += self.step(self.lines[i], View(self.lines, i))
-        for b in self.ctx.doc.blocks:
-            b.text = tidy(b.text)
-            b.label = tidy(b.label)
-        return self.ctx.doc
-
-    def step(self, line: Line, view: View) -> int:
-        ctx = self.ctx
-        if ctx.state in (State.FRONT, State.PREAMBLE):
-            return step(ctx, view)
-        if self.in_salinan and (Kind.PENJELASAN in line or Kind.LAMPIRAN in line
-                                or ctx.salinan_lines >= SALINAN_MAX):
-            # the certification ends where the Penjelasan or a Lampiran starts; it is a few lines,
-            # so a long skip means a misreading: stop and keep the text (UU 2/2025 lost its
-            # Penjelasan to this before)
-            if ctx.salinan_lines >= SALINAN_MAX:
-                ctx.doc.warnings.append(f"salinan: no end found after {SALINAN_MAX} lines; text kept")
-            self.in_salinan = False
-        if Kind.PENJELASAN in line and ctx.last_pasal and penjelasan_to_come(ctx, line, view):
-            take_penjelasan_heading(ctx, line, view)
-            ctx.enter(State.PENJELASAN_UMUM)
-            return 1
-        if ctx.last_pasal and Kind.CLOSING in line:
-            emit(ctx, Block("closing", text=line.text))
-            return 1
-        if self.in_salinan:
-            ctx.salinan_lines += 1
-            return 1
-        if ctx.last_pasal and Kind.LAMPIRAN in line:
-            # an annex (maps, tables, schedules) after the closing or the Penjelasan: kept as
-            # printed lines in its own part
-            self.in_lampiran = True
-            emit(ctx, Block("lampiran", label=line.text))
-            return 1
-        if self.in_lampiran and not (Kind.PENJELASAN in line and not had_penjelasan(ctx.doc)):
-            if Kind.SALINAN in line:
-                self.in_salinan, ctx.salinan_lines = True, 0
-                return 1
-            emit(ctx, Block("lampiran_text", text=line.text))
-            return 1
-        if ctx.last_pasal and Kind.SALINAN in line:
-            # the copy's certification by the State Secretariat, often under a round stamp;
-            # not part of the law (and OCR turns the stamp into noise)
-            self.in_salinan, ctx.salinan_lines = True, 0
-            ctx.doc.warnings.append("salinan: copy certified ('Salinan sesuai dengan aslinya'); left out")
-            return 1
-        cur = ctx.cur
-        if (cur is not None and cur.kind == "closing" and Kind.PENJELASAN not in line
-                and line.text != "RANCANGAN"):
-            if cur.text.startswith("Agar") and not cur.text.rstrip().endswith("."):
-                cur.text = join(cur.text, line.text)  # the sentence goes on
-            else:
-                emit(ctx, Block("closing", text=line.text))     # signature blocks: as printed
-            return 1
-        return step(ctx, view)
-
-
 def parse_lines(lines: list[str]) -> Document:
-    return Parser(lines).run()
+    classified = [classify(text) for text in normalise(lines)]
+    ctx, i = Context(), 0
+    while i < len(classified):
+        i += step(ctx, View(classified, i))
+    for b in ctx.doc.blocks:
+        b.text = tidy(b.text)
+        b.label = tidy(b.label)
+    return ctx.doc
 
 
 def parse_pdf(pdf: Path, extra: Sequence[Path] = (), stats: dict | None = None) -> Document:
