@@ -8,7 +8,7 @@ Hukum Bersih publishes clean Indonesian law texts and tracks draft bills. `data/
 |---|---|
 | Change anything structural | `docs/ARCHITECTURE.md`, then `docs/decisions/` |
 | Name an id, file or folder | `docs/NAMING.md` |
-| Work in `pipeline/` or `web/` | that folder's `CLAUDE.md` (loads on its own there) |
+| Work in `pipeline/` or `web/` | that folder's `AGENTS.md` (its `CLAUDE.md` loads it on its own there); it points to the topic docs (`web/docs/`, `docs/parser-rules.md`) |
 | Touch an upstream site (BPK, peraturan.go.id, DPR, mirrors) | `docs/sources.md` |
 | Pick up open work or a known gap | `docs/open-items.md` |
 | Change something that could make a page slower, or measure speed | `docs/performance.md` |
@@ -35,3 +35,4 @@ Code, tests and workflow files are the source of truth for numbers, thresholds a
 - Use Conventional Commits for every commit and PR title: `type(scope): subject`, with type `feat`, `fix`, `refactor`, `perf`, `test`, `docs`, `chore` or `ci` (`fix(pdf): ...`). Name branches `type/short-topic` with the same types (`fix/refused-ocr-reparse`). Branch from `main`.
 - Delete the branch once its PR is merged: merge with `gh pr merge <n> --merge --delete-branch` (removes the remote and local branch), and `git fetch --prune`.
 - Tell every agent you start to follow these naming rules too.
+- Keep every `AGENTS.md` an index: it loads on every task. Put detail in the topic doc that covers it, and add at most a one-line pointer here or in the folder's `AGENTS.md`.

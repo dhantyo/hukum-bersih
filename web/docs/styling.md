@@ -1,0 +1,25 @@
+# Styling
+
+StyleX, the one CSS file, fonts, and interactive controls built on ui-sdk.
+Source paths (`routes/`, `components/`, `lib/`, `styles/`, `server/`, `app.tsx`, `document.tsx`) are under `web/src/`; other paths are relative to `web/`.
+
+## StyleX
+
+StyleX only. Write `stylex.create` beside the component, name tokens through `styles/tokens.stylex.ts`, and apply with `css(...)` from `styles/css.ts`. Styles shared by several components are in `styles/reading.ts`. Tokens are literal `defineVars` values in `styles/tokens.stylex.ts`, each colour with its dark value under a `prefers-color-scheme` media key, and nothing imports from `web/src/styles/`. StyleX cannot style a bare element, so every `<a>` takes `linkClass` or `linkStyles.base` from `styles/link.ts` (first in `css(...)`, so its own colour still wins). Style a state with `stylex.when`, not with a global selector.
+
+## The one CSS file
+
+`styles/stylex.css`, imported in `app.tsx`, holds five things StyleX cannot: the cascade layer order (`ui-sdk` first, so ui-sdk's own defaults rank below every other rule), the four font stacks as `--font-*` custom properties, the defaults of bare elements (`box-sizing`, `h1` to `h3`, `p`, `scrollbar-gutter: stable` on `html`; sizes copied from the `size` and `space` tokens, so change both together), the first paint of the Pembukaan (`data-seed`), and the `@stylex;` marker. ui-sdk adds its defaults as constructed style sheets, because `document.tsx` carries a `csp-nonce` meta without a nonce: without it ui-sdk inserts a `<style>` ahead of this sheet, and each insert there reloads the fonts and lays out the whole page again (measured 2026-11-27 on `/uu/11/2020/`). The element defaults sit in `@layer reset`, because StyleX rules are layered and an unlayered rule would beat them. `@stylexswc/unplugin` (`useCssPlaceholder`) replaces the marker with the StyleX rules in dev and in the build, so they ship in the hashed stylesheet the page already links; a marker in a virtual module stays unfilled in dev, and the plugin's standalone `stylex.css` is never linked by the Solid server render. Fonts are self-hosted by the `fontless` Vite plugin (families and preloads in `FONT_STACKS` in `vite.config.ts`): its `google` provider downloads the variable fonts from Google Fonts at build time, and readers load them from this site, never from Google. Google does not pin versions, so a font update upstream can change text width between builds; its files also set text 1 to 7% wider at reading sizes than the `@fontsource-variable` 5.3 files the Astro site uses (measured 2026-11-26), which was accepted for the simpler setup. A family is named as Google names it. fontless rewrites the `--font-*` stacks in that file with metric-adjusted fallbacks and emits the `@font-face` rules and font files under `/assets/_fonts`, and `document.tsx` renders its preloads from `fontless/runtime`. fontless never sees StyleX's output (inserted after Vite's CSS transforms), which is why the stacks live in this file and `font` in `tokens.stylex.ts` only points at them. Change a stack there, never add fallback names by hand.
+
+## Interactive controls
+
+Build toggles, pickers and disclosures with ui-sdk parts (`@ui-sdk/solid/<part>`) and style them with StyleX through their state attributes, e.g. `":is([data-checked])"` or `":is([data-highlighted])"` as a condition (examples: `components/collection-version-picker.tsx`, `components/reading-settings.tsx`). Reader choices that must be right at first paint are `createPreference` values on `<html>` (`lib/reading-preferences.ts`); read them in CSS with `stylex.when.ancestor(<const selector string>)` (`<html>` carries the default marker, `document.tsx`). StyleX's lint rejects a `when.ancestor` result held in a variable and pseudo-elements such as `::details-content`: pass a `const` selector string to `when.ancestor` and use a native element for the rest. Colours, sizes and fonts come from `styles/tokens.stylex.ts`, never a raw `var(--x)`. JSX at module scope fails on the server (`getNextContextId cannot be used under non-hydrating context`): keep it inside components.
+
+## ui-sdk
+
+Before you write an interactive control (toggle, picker, menu, disclosure, dialog, tooltip, tabs, a `role=` or `aria-expanded` attribute, a key or click handler on a non-link), look for a ui-sdk component or behavior and use it. Hand-built is the exception and needs a reason in the PR.
+
+- Follow the `ui-sdk` skill (`.claude/skills/ui-sdk/`, pinned in `skills-lock.json`), then read `node_modules/@ui-sdk/solid/docs/llms.txt` and only the component pages you use.
+- A control ui-sdk does not ship is built from its behaviors: search `node_modules/@ui-sdk/solid/docs/core.md` by heading and read `docs/rendering.md` beside it.
+- Import each part from its own entry (`@ui-sdk/solid/select`), never from a package root and never from `@ui-sdk/core/internal/*`.
+- ui-sdk renders no styles. Style its parts with StyleX through their `data-*` and `aria-*` state, as in [Interactive controls](#interactive-controls) above. Do not add `@ui-sdk/core/web.css`.
