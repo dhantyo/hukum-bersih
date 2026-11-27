@@ -30,6 +30,10 @@ def read(state: State, lines: list[str], blocks=(), part: State | None = None, *
 PASAL_I = [("pasal", "Pasal I")]
 CLOSED = [("pasal", "Pasal 9"), ("closing", "", "Disahkan di Jakarta")]
 EXPLAINED = [("pasal", "Pasal 2"), ("penjelasan", "", "PENJELASAN"), ("closing", "", "Disahkan di Jakarta")]
+# a law enacting a Perppu prints the Perppu whole, its Penjelasan too, as its Lampiran; BPK may
+# give the law's own Penjelasan as a separate PDF, read after it
+ENACTING_PERPPU = [("title", "", "UNDANG-UNDANG REPUBLIK INDONESIA NOMOR 9 TAHUN 2017 TENTANG PENETAPAN"),
+                   ("pasal", "Pasal 2"), ("lampiran", "LAMPIRAN")]
 
 
 @pytest.mark.parametrize(("rule", "law", "state", "setup", "lines", "blocks", "warned", "after"), [
@@ -119,10 +123,18 @@ EXPLAINED = [("pasal", "Pasal 2"), ("penjelasan", "", "PENJELASAN"), ("closing",
      [("closing", "", "Disahkan di Jakarta"), ("lampiran_text", "", "pada tanggal")], [], S.LAMPIRAN),
     ("G2", "UU 12/2011", S.LAMPIRAN, {"last_pasal": 2, "blocks": [("lampiran", "LAMPIRAN II")]},
      ["Contoh:", "LAMPIRAN I"], [("lampiran_text", "", "Contoh:"), ("lampiran", "LAMPIRAN I", "")], [], S.LAMPIRAN),
-    ("G9", "S23", S.LAMPIRAN, {"last_pasal": 2, "blocks": [("lampiran", "LAMPIRAN")]},
-     ["PENJELASAN", "I. UMUM", "Teks."],
-     [("penjelasan", "", "PENJELASAN"), ("lampiran_text", "", "I. UMUM"), ("lampiran_text", "", "Teks.")], [],
-     S.LAMPIRAN),
+    ("S23", "UU 9/2017", S.LAMPIRAN, {"last_pasal": 2, "blocks": ENACTING_PERPPU},
+     ["PENJELASAN", "ATAS", "PERATURAN PEMERINTAH", "PENGGANTI UNDANG-UNDANG REPUBLIK INDONESIA", "NOMOR 1 TAHUN 2017",
+      "I. UMUM"],
+     [("lampiran_text", "", "PENJELASAN"), ("lampiran_text", "", "ATAS"), ("lampiran_text", "", "PERATURAN PEMERINTAH"),
+      ("lampiran_text", "", "PENGGANTI UNDANG-UNDANG REPUBLIK INDONESIA"), ("lampiran_text", "", "NOMOR 1 TAHUN 2017"),
+      ("lampiran_text", "", "I. UMUM")], [], S.LAMPIRAN),
+    ("S23", "UU 9/2017", S.LAMPIRAN, {"last_pasal": 2, "blocks": ENACTING_PERPPU},
+     ["PENJELASAN", "ATAS", "UNDANG-UNDANG REPUBLIK INDONESIA", "NOMOR 9 TAHUN 2017", "I. UMUM", "Dalam rangka.",
+      "II. PASAL DEMI PASAL", "Pasal 1", "Cukup jelas."],
+     [("penjelasan", "", "PENJELASAN ATAS UNDANG-UNDANG REPUBLIK INDONESIA NOMOR 9 TAHUN 2017"),
+      ("umum", "", "Umum"), ("text", "", "Dalam rangka."), ("pasal_demi_pasal", "", "Pasal demi Pasal"),
+      ("p_pasal", "Pasal 1", ""), ("text", "", "Cukup jelas.")], [], S.PENJELASAN_PASAL),
 ])
 def test_a_state_reads_its_lines(rule, law, state, setup, lines, blocks, warned, after):
     setup = dict(setup)

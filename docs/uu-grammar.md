@@ -168,6 +168,11 @@ Pasal 1-2, `LEMBARAN NEGARA … TAHUN 2016 NOMOR 237`; pages 5-6: its Penjelasan
 and Pasal II, `LEMBARAN NEGARA … TAHUN 2016 NOMOR 99` (page 14), its Penjelasan, ending
 `TAMBAHAN … NOMOR 5882` (page 17).
 
+UU 9/2017 (Perppu 1/2017): BPK's PDF has the law and the Perppu as its Lampiran, the Perppu's
+`PENJELASAN` / `ATAS` / `PERATURAN PEMERINTAH` / `PENGGANTI UNDANG-UNDANG …` included; the law's
+own Penjelasan is a separate PDF, read after the Lampiran. Only the heading that names the law
+itself (`UNDANG-UNDANG … NOMOR 9 TAHUN 2017`) is the law's Penjelasan (S23).
+
 ### Ratification law (L12 240-241)
 
 Two pasal with Arabic numbers: `Pasal 1` ratifies and attaches the treaty, `Pasal 2` the

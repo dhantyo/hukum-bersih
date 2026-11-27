@@ -20,7 +20,7 @@ from pathlib import Path
 from .lines import Kind, Line, classify, normalise
 from .ocr_fix import Fixes
 
-PARSER_VERSION = 17  # 17: a heading after "… berbunyi sebagai berikut:" is the amended law's quoted pasal, never a skipped or misprinted number of the law's own (UU 7/2021 lost Pasal 5 and 8). 16: page header and footer of scanned pages removed by where the OCR put them, not by their (misread) text (pdf/edges.py). 15: misread words of scanned pages corrected when the spell check is confident (pdf/ocr_fix.py, decision 0013). 14: scanned pages read with Indra OCR instead of Tesseract (decision 0012; parser unchanged). 13: misprinted pasal numbers confirmed by the next heading ("Pasal 9" twice, UU 19/1948). 12: OCR letters for digits in heading numbers ("Pasal S1"), spaced marks ("Pasal 84 ,"); amending Penjelasan: Angka above Ayat (UU 11, 12, 13/2022). 11: OCR specks after a Pasal heading ("Pasal 4 :", UU 29/2024); parallel OCR (same words). 10: OCR speck before a Pasal heading ("' Pasal 8", UU 135/2024). 9: browser print headers/footers dropped; separate Penjelasan PDF read (UU 19/2003). 8: v7 dropped a Penjelasan after a copy certification (UU 2/2025): fixed;
+PARSER_VERSION = 18  # 18: in a Lampiran, only a Penjelasan heading naming the law itself opens its Penjelasan; an enacted Perppu's stays in the Lampiran (2026-11-27: UU 9/2017 had the Perppu's heading for its Penjelasan, its own lost in the Lampiran). 17: a heading after "… berbunyi sebagai berikut:" is the amended law's quoted pasal, never a skipped or misprinted number of the law's own (UU 7/2021 lost Pasal 5 and 8). 16: page header and footer of scanned pages removed by where the OCR put them, not by their (misread) text (pdf/edges.py). 15: misread words of scanned pages corrected when the spell check is confident (pdf/ocr_fix.py, decision 0013). 14: scanned pages read with Indra OCR instead of Tesseract (decision 0012; parser unchanged). 13: misprinted pasal numbers confirmed by the next heading ("Pasal 9" twice, UU 19/1948). 12: OCR letters for digits in heading numbers ("Pasal S1"), spaced marks ("Pasal 84 ,"); amending Penjelasan: Angka above Ayat (UU 11, 12, 13/2022). 11: OCR specks after a Pasal heading ("Pasal 4 :", UU 29/2024); parallel OCR (same words). 10: OCR speck before a Pasal heading ("' Pasal 8", UU 135/2024). 9: browser print headers/footers dropped; separate Penjelasan PDF read (UU 19/2003). 8: v7 dropped a Penjelasan after a copy certification (UU 2/2025): fixed;
 #                    Penjelasan of amending laws (Pasal I/II), OCR '1. UMUM'.
 #                   7: amending laws keep quoted articles in Pasal I, white (hidden)
 #                    text dropped, salinan certification left out, MEMORI PENJELASAN;
@@ -43,6 +43,9 @@ ORDINAL = {"PERTAMA": 1, "KESATU": 1, "KEDUA": 2, "KETIGA": 3, "KEEMPAT": 4, "KE
            "KEENAM": 6, "KETUJUH": 7, "KEDELAPAN": 8, "KESEMBILAN": 9, "KESEPULUH": 10}
 SALINAN_MAX = 15  # lines of a copy's certification block ("Salinan sesuai dengan aslinya" …)
 NEXT_HEADING_WITHIN = 400  # lines, the heading itself included, a misprint check reads for the next Pasal (S3)
+PENJELASAN_TITLE_LINES = 6  # lines after a Penjelasan heading that may hold the law it names (S23)
+# a law cited in capitals, a Perppu marked: "PENGGANTI UNDANG-UNDANG REPUBLIK INDONESIA NOMOR 1 TAHUN 2017"
+CITED_RE = re.compile(r"\b(PENGGANTI\s+)?UNDANG-\s?UNDANG\b[A-Z ]*?\b(?:NOMOR|NO\.|No\.)\s*(\d+)\s+TAHUN\s+(\d{4})")
 # the block a Penjelasan part line (Kind.PENJELASAN_PART) opens, and its text
 PENJELASAN_PARTS = {"umum": "Umum", "pasal_demi_pasal": "Pasal demi Pasal"}
 
@@ -510,6 +513,21 @@ def penjelasan_to_come(ctx: Context, line: Line, view: View) -> bool:
     return not had_penjelasan(ctx.doc)
 
 
+def cited(text: str) -> tuple[bool, str, str] | None:
+    """(a Perppu, number, year) of the first law cited in capitals in ``text``."""
+    m = CITED_RE.search(text)
+    return (bool(m[1]), m[2], m[3]) if m else None
+
+
+def penjelasan_of_the_law(ctx: Context, line: Line, view: View) -> bool:
+    """In a Lampiran, a Penjelasan heading that names the law itself: its Penjelasan, read after
+    the Lampiran from a separate PDF. Any other is the Penjelasan of what the Lampiran prints
+    whole, such as an enacted Perppu (S23, UU 9/2017)."""
+    title = ctx.doc.blocks[0].text if ctx.doc.blocks and ctx.doc.blocks[0].kind == "title" else ""
+    heading = " ".join([line.text, *(ahead.text for ahead in view.ahead(PENJELASAN_TITLE_LINES))])
+    return penjelasan_to_come(ctx, line, view) and cited(title) is not None and cited(heading) == cited(title)
+
+
 def take_penjelasan_heading(ctx: Context, line: Line, view: View) -> int:
     ctx.amending_law = ctx.part is State.AMENDING
     umum = line.get(Kind.PENJELASAN_UMUM)
@@ -802,8 +820,8 @@ TABLE: dict[State, tuple[Cell, ...]] = {
     ),
     # a Lampiran (maps, tables, schedules, a drafting guide) keeps its lines as printed
     State.LAMPIRAN: (
-        Cell("penjelasan_in_lampiran", ("S23", "G9"), Kind.PENJELASAN, penjelasan_to_come,
-             take_penjelasan_heading),
+        Cell("penjelasan_in_lampiran", ("S23",), Kind.PENJELASAN, penjelasan_of_the_law,
+             take_penjelasan_heading, State.PENJELASAN_UMUM),
         Cell("closing_in_lampiran", ("G1",), Kind.CLOSING, always, take_closing_line),
         Cell("lampiran_in_lampiran", ("S23", "G2"), Kind.LAMPIRAN, always, take_lampiran),
         Cell("salinan_in_lampiran", ("S24",), Kind.SALINAN, always, take_salinan_quietly, State.SALINAN),
