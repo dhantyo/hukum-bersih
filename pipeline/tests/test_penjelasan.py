@@ -133,6 +133,33 @@ def test_penjelasan_quoted_in_a_lampiran_after_the_penjelasan_stays_in_the_lampi
     assert "PENJELASAN ATAS UNDANG-UNDANG NOMOR 7 TAHUN 2021" in lamp and lamp[-1] == "Cukup jelas."
 
 
+def test_penjelasan_of_an_enacted_perppu_stays_in_the_lampiran_and_the_laws_own_follows():
+    # UU 9/2017: the Lampiran prints Perppu 1/2017 whole, its Penjelasan too; BPK gives the law's
+    # own Penjelasan as a separate PDF, read after the Lampiran
+    from hukum_bersih.akn.bluebell import to_bluebell
+
+    doc = parse_lines([
+        "UNDANG-UNDANG REPUBLIK INDONESIA", "NOMOR 9 TAHUN 2017", "TENTANG",
+        "PENETAPAN PERATURAN PEMERINTAH PENGGANTI UNDANG-UNDANG NOMOR 1 TAHUN 2017",
+        "Pasal 1", "Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2017 ditetapkan menjadi Undang-Undang.",
+        "Pasal 2", "Undang-Undang ini mulai berlaku pada tanggal diundangkan.",
+        "Disahkan di Jakarta", "pada tanggal 23 Agustus 2017",
+        "LAMPIRAN", "PERATURAN PEMERINTAH", "PENGGANTI UNDANG-UNDANG REPUBLIK INDONESIA", "NOMOR 1 TAHUN 2017",
+        "PENJELASAN", "ATAS", "PERATURAN PEMERINTAH", "PENGGANTI UNDANG-UNDANG REPUBLIK INDONESIA",
+        "NOMOR 1 TAHUN 2017", "I. UMUM", "Dalam rangka melaksanakan pembangunan nasional.",
+        "II. PASAL DEMI PASAL", "Pasal 1", "Yang dimaksud dengan perjanjian internasional.", "Pasal 10", "Cukup jelas.",
+        "PENJELASAN", "ATAS", "UNDANG-UNDANG REPUBLIK INDONESIA", "NOMOR 9 TAHUN 2017", "I. UMUM",
+        "Presiden telah menetapkan Peraturan Pemerintah Pengganti Undang-Undang Nomor 1 Tahun 2017.",
+        "II. PASAL DEMI PASAL", "Pasal 1", "Cukup jelas.", "Pasal 2", "Cukup jelas.",
+    ])
+    lamp = [b.text for b in kinds(doc, "lampiran_text")]
+    assert lamp[3:5] == ["PENJELASAN", "ATAS"] and lamp[-2:] == ["Pasal 10", "Cukup jelas."]
+    assert [b.text for b in kinds(doc, "penjelasan")] == ["PENJELASAN ATAS UNDANG-UNDANG REPUBLIK INDONESIA NOMOR 9 TAHUN 2017"]
+    assert [b.label for b in kinds(doc, "p_pasal")] == ["Pasal 1", "Pasal 2"]
+    penjelasan = to_bluebell(doc).partition("ATTACHMENT Penjelasan")[2].partition("ATTACHMENT Lampiran")[0]
+    assert "Presiden telah menetapkan" in penjelasan and "Dalam rangka" not in penjelasan
+
+
 @pytest.mark.xfail(strict=True, reason="known gap: closing lines are taken out of a Lampiran")
 def test_closing_formula_quoted_in_a_lampiran_stays_in_the_lampiran():
     # UU 12/2011 Lampiran II items 161-173 (52 lines lost), UU 17/2016's attached Perppu (5 lines)
