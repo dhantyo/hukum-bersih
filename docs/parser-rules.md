@@ -145,6 +145,37 @@ column against the cells' ids.
 | S32 | Before the Penjelasan's first pasal a part line (`I. UMUM`, `II. PASAL DEMI PASAL`) opens its part; the numeral alone on its line is dropped | | UU 6/1967, 2/2025 (v8) | `part_numeral`, `part` | `test_penjelasan::test_penjelasan_sections_with_the_numeral_on_its_own_line`, `test_penjelasan_with_lettered_sections` |
 | S33 | `Ayat (1)`, `Huruf a`, `Angka 2` are labels only under a Penjelasan pasal | | Lampiran II item 190 | `p_label` | `test_penjelasan::test_penjelasan_labels_for_ayat_huruf_and_angka` |
 
+## How to add or change a rule
+
+Run these from `pipeline/`.
+
+1. Find the rule. Look up its id in the inventory above. For a new rule, add a row with the next
+   free id and the law that caused it (date and example: "2026-11-27: UU 9/2017 ...").
+2. Reproduce it with `uv run hukum-bersih explain <law-id | PDF | stored text> --from N --to M`.
+   It prints, for each line, the state before, the cell that read it (with its rule ids), the
+   kinds the line registry gave it and the state after. `--state` and `--cell` narrow it down.
+   It reads a cached PDF without OCR or a stored text, and says when a scanned page was skipped.
+3. Make the change in the layer that owns it.
+   - A line class (what one line is on its own): add or change a `Rule` in `pdf/lines.py`, with
+     its inventory ids, cause and a test in `tests/test_line_classes.py` or the topic's file.
+   - Structure (what a line means after what came before): add or change a `Cell` (guard,
+     action, next state) in the row of `TABLE` it belongs to, in `pdf/structure.py`. Never an
+     `if` in the driver or in an action (the ratchet test fails it). Add a table test with lines
+     printed in the law to `tests/test_structure_table.py`.
+4. List the id in the Code or Cell column of the inventory; the cell's `ids` carry the same id
+   (`test_every_rule_sits_in_the_cells_the_inventory_names` checks it).
+5. Run `uv run python scripts/parser_identity.py`. Classify every document that differs as an
+   intended fix or a regression. A change meant to keep the output must show zero differences.
+6. If the output changes, bump `PARSER_VERSION` and add a line to its comment with a dated
+   example. Decide whether `PARSER_REDO_BELOW` (or `OCR_REDO_BELOW`) moves, by the rule in
+   `pipeline/AGENTS.md`.
+7. Check a stored text against a fresh parse with `uv run python scripts/compare_reparse.py <id>`,
+   and keep `scripts/regress.py` and `uv run pytest` green.
+
+`explain` uses the real driver: `parse_lines(lines, observe)` calls `observe` with a `Trace` for
+every cell reading (`step` in `pdf/structure.py`). The observer cannot change the output, and
+`tests/test_explain.py` checks it.
+
 ## Closing fields
 
 `closing.py` reads the stored closing lines (Bluebell `CONCLUSIONS`) into fields.

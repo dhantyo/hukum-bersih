@@ -1,6 +1,7 @@
 """Command-line entry point: ``hukum-bersih <command>``.
 
     parse            PDF -> Bluebell text (the format stored in data/)
+    explain          which cell of the parser's state table read each line of a law (debugging)
     build-akn        Bluebell text in data/ -> Akoma Ntoso XML (checked against the OASIS schema in CI)
     import-bpk       import regulations from peraturan.bpk.go.id, recording every PDF's sha256
     relations        link amending / revoking / enacting laws; versions of amended laws
@@ -50,6 +51,15 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("parse", help="PDF -> Bluebell text")
     p.add_argument("pdf", type=Path)
     p.add_argument("--out", type=Path, required=True)
+
+    p = sub.add_parser("explain", help="show how the parser read each line of a law, cached PDF or stored text "
+                       "(no OCR)")
+    p.add_argument("target", help="a law id (uu_9_2017), or a path to a PDF or a stored text")
+    p.add_argument("--from", dest="first", type=int, default=1, metavar="N", help="first line number to show")
+    p.add_argument("--to", dest="last", type=int, default=None, metavar="M", help="last line number to show")
+    p.add_argument("--state", action="append", default=[], help="only lines read in this state (repeatable)")
+    p.add_argument("--cell", action="append", default=[], help="only lines read by this cell (repeatable)")
+    p.add_argument("--text", action="store_true", help="for a law id, read the stored text even if a PDF is cached")
 
     p = sub.add_parser("build-akn", help="data/ Bluebell text -> Akoma Ntoso XML")
     p.add_argument("--out", type=Path, required=True)
@@ -121,6 +131,21 @@ def main(argv: list[str] | None = None) -> int:
         args.out.parent.mkdir(parents=True, exist_ok=True)
         args.out.write_text(to_bluebell(doc))
         print(f"{args.out}: {doc.pasal_count} pasal, {doc.bab_count} BAB")
+        return 0
+
+    if args.command == "explain":
+        from .pdf import explain
+
+        try:
+            source = explain.resolve(args.target, args.data_dir, args.text)
+        except FileNotFoundError as e:
+            print(f"explain: {e}", file=sys.stderr)
+            return 1
+        doc, events = explain.trace(source.lines)
+        print(f"# {source.origin}: {len(source.lines)} lines, {doc.pasal_count} pasal")
+        for note in source.notes:
+            print(f"# note: {note}")
+        print(explain.report(explain.select(events, args.first, args.last, args.state, args.cell)))
         return 0
 
     if args.command == "build-akn":
