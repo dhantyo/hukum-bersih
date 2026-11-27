@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 345
     env:
-      HUKUM_BERSIH_OCR_CACHE: /home/runner/ocr-cache # raw OCR of scanned pages, kept between runs (.github/actions/ocr-cache)
+      HUKUM_RAPIH_OCR_CACHE: /home/runner/ocr-cache # raw OCR of scanned pages, kept between runs (.github/actions/ocr-cache)
       JENIS: ${{ inputs.jenis || 'uu' }}
       REPARSE: ${{ inputs.reparse && '--reparse' || '' }}
       ONLY: ${{ inputs.only && format('--only={0}', inputs.only) || '' }}
@@ -46,7 +46,7 @@ jobs:
       - uses: ./.github/actions/ocr-cache
         with:
           step: restore
-          path: ${{ env.HUKUM_BERSIH_OCR_CACHE }}
+          path: ${{ env.HUKUM_RAPIH_OCR_CACHE }}
       - name: OCR tools for scanned PDFs (Indra reads them, Tesseract is the fallback)
         run: sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ind hunspell hunspell-id hunspell-en-us >/dev/null
       - run: |
@@ -55,15 +55,15 @@ jobs:
         working-directory: pipeline
       - name: Import in batches
         run: |
-          git config user.name "hukum-bersih bot"
+          git config user.name "hukum-rapih bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           deadline=$(( $(date +%s) + 320 * 60 ))       # stop starting batches after ~5h20m
           while [ "$(date +%s)" -lt "$deadline" ]; do
-            out=$(cd pipeline && uv run hukum-bersih import-peraturan "$JENIS" $REPARSE $ONLY --limit 50 2>&1 || true)
+            out=$(cd pipeline && uv run hukum-rapih import-peraturan "$JENIS" $REPARSE $ONLY --limit 50 2>&1 || true)
             echo "$out"
             n=$(echo "$out" | grep -c '^ok' || true)
             echo "$out" | grep -E '^(ok|FAIL)' >> "$GITHUB_STEP_SUMMARY" || true
-            (cd pipeline && uv run hukum-bersih relations)   # link amendments, revocations
+            (cd pipeline && uv run hukum-rapih relations)   # link amendments, revocations
             git add data/
             if ! git diff --cached --quiet; then
               verb=$([ -n "$REPARSE" ] && echo "re-convert" || echo "import")
@@ -80,4 +80,4 @@ jobs:
         if: always()
         with:
           step: save
-          path: ${{ env.HUKUM_BERSIH_OCR_CACHE }}
+          path: ${{ env.HUKUM_RAPIH_OCR_CACHE }}

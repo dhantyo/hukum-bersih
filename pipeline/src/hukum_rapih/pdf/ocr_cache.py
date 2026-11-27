@@ -8,8 +8,8 @@ Layout: ``<cache dir>/<engine>/<sha256 of the PDF file>.json.gz``, one file per 
 holding every page read so far. The file records ``OCR_CACHE_VERSION`` and ``OCR_DPI``; a file
 that differs, or cannot be read, counts as empty and is overwritten by the next save. Bump
 ``OCR_CACHE_VERSION`` whenever the OCR call changes what an engine returns (model, preprocessing,
-engine options). The cache dir is ``$HUKUM_BERSIH_OCR_CACHE`` (``off`` or empty: no cache),
-else ``~/.cache/hukum-bersih/ocr``.
+engine options). The cache dir is ``$HUKUM_RAPIH_OCR_CACHE`` (``off`` or empty: no cache),
+else ``~/.cache/hukum-rapih/ocr``.
 """
 
 from __future__ import annotations
@@ -25,9 +25,9 @@ OCR_CACHE_VERSION = 1
 
 
 def cache_dir() -> Path | None:
-    value = os.environ.get("HUKUM_BERSIH_OCR_CACHE")
+    value = os.environ.get("HUKUM_RAPIH_OCR_CACHE")
     if value is None:
-        return Path.home() / ".cache" / "hukum-bersih" / "ocr"
+        return Path.home() / ".cache" / "hukum-rapih" / "ocr"
     return None if value.strip().lower() in ("", "off") else Path(value)
 
 

@@ -1,12 +1,12 @@
-"""``hukum-bersih explain``: the trace names the cell and states the driver really used, and
+"""``hukum-rapih explain``: the trace names the cell and states the driver really used, and
 watching does not change what the parser makes."""
 
 import dataclasses
 
-from hukum_bersih import cli
-from hukum_bersih.pdf.explain import report, select, trace
-from hukum_bersih.pdf.structure import State as S
-from hukum_bersih.pdf.structure import parse_lines
+from hukum_rapih import cli
+from hukum_rapih.pdf.explain import report, select, trace
+from hukum_rapih.pdf.structure import State as S
+from hukum_rapih.pdf.structure import parse_lines
 
 # UU 9/2017 prints Perppu 1/2017 whole, its Penjelasan too, as its Lampiran; only the heading
 # naming the law itself (NOMOR 9 TAHUN 2017) opens the law's own Penjelasan (S23)
@@ -72,6 +72,6 @@ def test_the_command_explains_a_stored_text(tmp_path, capsys):
 
 
 def test_an_unknown_law_says_where_it_looked(tmp_path, capsys, monkeypatch):
-    monkeypatch.setenv("HUKUM_BERSIH_PDF_CACHE", str(tmp_path / "pdf"))
+    monkeypatch.setenv("HUKUM_RAPIH_PDF_CACHE", str(tmp_path / "pdf"))
     assert cli.main(["--data-dir", str(tmp_path), "explain", "uu_1_1900"]) == 1
     assert "no cached PDF" in capsys.readouterr().err

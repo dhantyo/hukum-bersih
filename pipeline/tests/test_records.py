@@ -8,7 +8,7 @@ import yaml
 from pydantic import ValidationError
 from recfactory import make_record, make_version
 
-from hukum_bersih.records import dump_record, load_record, save_record, validate_record
+from hukum_rapih.records import dump_record, load_record, save_record, validate_record
 
 DATA = Path(__file__).resolve().parents[2] / "data" / "peraturan"
 REAL = sorted(DATA.glob("*/*/*/*.yaml"))

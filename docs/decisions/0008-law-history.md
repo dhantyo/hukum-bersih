@@ -15,7 +15,7 @@ already are, on the law's own page, instead of a separate page:
 
 Pattern taken from legislation.gov.uk ("changes over time") and Fedlex ("Chronologie").
 
-Data: `hukum-bersih relations` (pipeline/src/hukum_bersih/relations.py) reads the titles
+Data: `hukum-rapih relations` (pipeline/src/hukum_rapih/relations.py) reads the titles
 ("PERUBAHAN KEDUA ATAS UNDANG-UNDANG NOMOR …", "PENCABUTAN …", "PENETAPAN … MENJADI
 UNDANG-UNDANG") and the amending law's own instructions ("Ketentuan Pasal 27 diubah",
 "disisipkan 2 (dua) pasal, yakni Pasal 45A dan Pasal 45B", "Pasal 9 dihapus") and writes
@@ -26,7 +26,7 @@ the stored text.
 Addendum (2026-11-21, for the sample families Minerba, PT, BUMN, Penanaman Modal): a
 **"Perubahan" page** per amended law (`/uu/<nomor>/<tahun>/perubahan/`) shows every pasal each
 amendment touched, before and after, in the same synopsis rows as the RUU comparison
-(`components/SynRow.astro`). `pipeline/src/hukum_bersih/amendments.py` splits an amending law's
+(`components/SynRow.astro`). `pipeline/src/hukum_rapih/amendments.py` splits an amending law's
 Pasal I into its instructions ("Ketentuan Pasal 4 diubah sehingga berbunyi ...") and the new
 wording of each pasal; `build-akn` writes them to `web/generated/akn/amendments/`. "Before" is
 the original text or the wording of the previous amendment we have. When an amending law's

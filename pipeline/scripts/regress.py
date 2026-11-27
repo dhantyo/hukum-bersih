@@ -3,7 +3,7 @@ pasal and BAB found vs expected, and leaks of page furniture into the text.
 
     uv run python scripts/regress.py [ids...]
 
-PDFs are downloaded once into ~/.cache/hukum-bersih/pdf (never into the repository): from
+PDFs are downloaded once into ~/.cache/hukum-rapih/pdf (never into the repository): from
 archive.org (`url`) or from the Hugging Face mirror of BPK (`hf: [zip, file]`, needs
 `remotezip`). Exit status 1 if any count is off.
 """
@@ -18,7 +18,7 @@ from pathlib import Path
 import yaml
 
 HERE = Path(__file__).resolve().parent
-CACHE = Path.home() / ".cache" / "hukum-bersih" / "pdf"
+CACHE = Path.home() / ".cache" / "hukum-rapih" / "pdf"
 HF = "https://huggingface.co/datasets/Azzindani/ID_REG/resolve/main/"
 
 LEAKS = {
@@ -48,12 +48,12 @@ def pdf_for(law: str, spec: dict) -> Path:
 
 def check(law: str, spec: dict) -> tuple[bool, str]:
     sys.path.insert(0, str(HERE.parent / "src"))
-    from hukum_bersih.akn.bluebell import to_bluebell
-    from hukum_bersih.pdf.structure import parse_pdf
+    from hukum_rapih.akn.bluebell import to_bluebell
+    from hukum_rapih.pdf.structure import parse_pdf
 
     doc = parse_pdf(pdf_for(law, spec))
     text = to_bluebell(doc)
-    from hukum_bersih.akn.build import to_akn
+    from hukum_rapih.akn.build import to_akn
 
     jenis, nomor, tahun = law.split("_")
     try:
@@ -73,7 +73,7 @@ def check(law: str, spec: dict) -> tuple[bool, str]:
     if not any(b.kind == "closing" for b in doc.blocks):
         notes.append("no closing")
     else:
-        from hukum_bersih.closing import conclusions, parse
+        from hukum_rapih.closing import conclusions, parse
 
         c = parse(conclusions(text))
         missing = [f for f in ("signed.date", "signed.name", "promulgated.date")

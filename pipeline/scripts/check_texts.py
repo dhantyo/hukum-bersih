@@ -22,7 +22,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "src"))
 
-from hukum_bersih.records import load_record, save_record
+from hukum_rapih.records import load_record, save_record
 
 DATA = HERE.parent.parent / "data"
 LEAKS = {
@@ -42,8 +42,8 @@ def number(label: str) -> int | None:
 
 def check(rec: dict, text: str) -> list[str]:
     sys.path.insert(0, str(HERE.parent / "src"))
-    from hukum_bersih.akn.build import to_akn
-    from hukum_bersih.closing import conclusions, parse
+    from hukum_rapih.akn.build import to_akn
+    from hukum_rapih.closing import conclusions, parse
 
     problems = []
     try:

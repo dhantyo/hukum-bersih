@@ -2,7 +2,7 @@
 
 from lxml import etree
 
-from hukum_bersih.akn.build import to_akn
+from hukum_rapih.akn.build import to_akn
 
 TEXT = "BODY\n\n  ART 1 - Pasal 1\n\n    Teks.\n"
 

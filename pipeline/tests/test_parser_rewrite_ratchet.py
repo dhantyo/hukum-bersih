@@ -11,7 +11,7 @@ removes some, lower BASELINE_IFS in the same commit.
 import ast
 from pathlib import Path
 
-STRUCTURE = Path(__file__).parents[1] / "src" / "hukum_bersih" / "pdf" / "structure.py"
+STRUCTURE = Path(__file__).parents[1] / "src" / "hukum_rapih" / "pdf" / "structure.py"
 
 BASELINE_IFS = 31
 

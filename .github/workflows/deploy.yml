@@ -43,7 +43,7 @@ jobs:
       # copies to dist/client.
       - name: Prepare preview corpus
         working-directory: pipeline
-        run: uv run hukum-bersih export-corpus --publish "$RUNNER_TEMP/corpus" --public ../web/public
+        run: uv run hukum-rapih export-corpus --publish "$RUNNER_TEMP/corpus" --public ../web/public
 
       # The build renders every public page from that corpus (prerender-crawler) into dist/client,
       # which the Worker serves as static assets; the Worker itself only answers search, the

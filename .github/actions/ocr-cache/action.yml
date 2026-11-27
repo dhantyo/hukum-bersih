@@ -1,9 +1,9 @@
 name: OCR cache
 description: >
-  Keeps the raw OCR output of scanned PDFs between runs (pipeline/src/hukum_bersih/pdf/ocr_cache.py)
+  Keeps the raw OCR output of scanned PDFs between runs (pipeline/src/hukum_rapih/pdf/ocr_cache.py)
   so a page is read once, ever. Use it twice in a job: `step: restore` before anything OCRs, and
   `step: save` (with `if: always()`, so a job that fails or times out keeps what it read) at the end.
-  Set HUKUM_BERSIH_OCR_CACHE on the job to the same folder as `path`. GitHub drops caches not used
+  Set HUKUM_RAPIH_OCR_CACHE on the job to the same folder as `path`. GitHub drops caches not used
   for 7 days and keeps 10 GB per repo; every save is a new key, the newest run holds the union of
   all earlier ones (restore-keys picks the newest), and a run that read no new page saves nothing.
 inputs:
@@ -11,7 +11,7 @@ inputs:
     description: "restore | save"
     required: true
   path:
-    description: "Cache folder, the same as $HUKUM_BERSIH_OCR_CACHE"
+    description: "Cache folder, the same as $HUKUM_RAPIH_OCR_CACHE"
     required: true
 runs:
   using: composite

@@ -2,7 +2,7 @@
 
 import pymupdf
 
-from hukum_bersih.pdf import extract
+from hukum_rapih.pdf import extract
 
 
 def typed_pdf(path):
@@ -40,7 +40,7 @@ def test_scans_fall_back_to_the_text_layer_without_tesseract(tmp_path, monkeypat
 
     monkeypatch.setattr(pymupdf.Page, "get_textpage_ocr", no_tesseract)
     monkeypatch.setattr(extract, "_indra", no_indra)             # no OCR engine at all
-    monkeypatch.delenv("HUKUM_BERSIH_OCR", raising=False)
+    monkeypatch.delenv("HUKUM_RAPIH_OCR", raising=False)
     stats = {}
     lines = extract.page_lines(scanned_pdf(tmp_path / "s.pdf"), stats)
     assert lines == [["Pasal l"]] and stats["ocr_pages"] == 0 and "tessdata" in stats["ocr_missing"]
@@ -63,9 +63,9 @@ def test_engine_is_chosen_by_environment(tmp_path, monkeypatch):
     monkeypatch.setattr(extract, "ocr_pages", lambda pdf, nums, engine="tesseract": dict(extract._ocr_chunk(str(pdf), nums, engine)))
     for value, expected in [("tesseract", "tesseract"), ("indra", "indra"), (None, "indra")]:
         if value is None:
-            monkeypatch.delenv("HUKUM_BERSIH_OCR", raising=False)
+            monkeypatch.delenv("HUKUM_RAPIH_OCR", raising=False)
         else:
-            monkeypatch.setenv("HUKUM_BERSIH_OCR", value)
+            monkeypatch.setenv("HUKUM_RAPIH_OCR", value)
         stats = {}
         assert extract.page_lines(scanned_pdf(tmp_path / "s.pdf"), stats) == [["Pasal 1"]]
         assert stats["ocr_engine"] == expected and used[-1] == expected
@@ -77,7 +77,7 @@ def test_tesseract_reads_when_indra_cannot_load(tmp_path, monkeypatch):
             raise ModuleNotFoundError("No module named 'indra_ocr'")
         return [(n, [(72, 90, 120, 104, "Pasal 1")]) for n in nums]
 
-    monkeypatch.delenv("HUKUM_BERSIH_OCR", raising=False)
+    monkeypatch.delenv("HUKUM_RAPIH_OCR", raising=False)
     monkeypatch.setattr(extract, "_ocr_chunk", chunk)
     monkeypatch.setattr(extract, "ocr_pages", lambda pdf, nums, engine="tesseract": dict(chunk(str(pdf), nums, engine)))
     stats = {}
@@ -88,7 +88,7 @@ def test_tesseract_reads_when_indra_cannot_load(tmp_path, monkeypatch):
 def test_unknown_engine_is_refused(monkeypatch):
     import pytest
 
-    monkeypatch.setenv("HUKUM_BERSIH_OCR", "easyocr")
+    monkeypatch.setenv("HUKUM_RAPIH_OCR", "easyocr")
     with pytest.raises(ValueError, match="easyocr"):
         extract.ocr_engine()
 
@@ -97,13 +97,13 @@ def test_scans_are_read_with_indra_when_installed(tmp_path, monkeypatch):
     import pytest
 
     pytest.importorskip("indra_ocr")
-    monkeypatch.delenv("HUKUM_BERSIH_OCR", raising=False)
+    monkeypatch.delenv("HUKUM_RAPIH_OCR", raising=False)
     stats = {}
     lines = extract.page_lines(scanned_pdf(tmp_path / "s.pdf"), stats)
     assert stats["ocr_engine"] == "indra" and stats["ocr_pages"] == 1 and lines[0] == ["Pasal 1"]
 
 
 def test_engine_named_in_the_version():
-    from hukum_bersih.sources.peraturan_go_id import _ocr_engine
+    from hukum_rapih.sources.peraturan_go_id import _ocr_engine
 
     assert _ocr_engine(["salinan: left out", "ocr: 3 scanned page(s) read with indra"]) == "indra"

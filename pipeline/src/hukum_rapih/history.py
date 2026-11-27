@@ -33,7 +33,7 @@ LegalResourceImpact) and Laws.Africa's points in time:
 
 Only regulations that have been amended get a ``history``. Recomputed from the stored texts on
 every run (idempotent). The merged texts themselves are not stored: the website builds them from
-the original text and the amending laws' instructions (pipeline/src/hukum_bersih/amendments.py).
+the original text and the amending laws' instructions (pipeline/src/hukum_rapih/amendments.py).
 """
 
 from __future__ import annotations

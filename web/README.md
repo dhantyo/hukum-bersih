@@ -1,4 +1,4 @@
-# Hukum Bersih web
+# Hukum Rapih web
 
 The Solid 2 rewrite serves law pages on demand. Public law data and Pagefind assets come from the same corpus release.
 
@@ -10,21 +10,21 @@ The corpus is not built here. The pipeline writes it from `data/`, in one comman
 
 ```sh
 cd ../pipeline
-uv run hukum-bersih export-corpus --publish ../web/.corpus --public ../web/public   # about 2 minutes
+uv run hukum-rapih export-corpus --publish ../web/.corpus --public ../web/public   # about 2 minutes
 cd ../web
 HUKUM_CORPUS_DIR="$PWD/.corpus" pnpm run dev                          # or: pnpm run build && pnpm run start
 ```
 
-`export-corpus` writes the whole corpus into a temporary stage, in this order: the laws (`laws/`), the collections (`collections/`, with `comparisons/` for every ordered pair of versions of an amended law), the drafts (`drafts/`, with the comparison of every pair of versions that have text), the catalog (`law-catalog.json` and the `listings/` rows for the home page, `/uu/`, `/uu/tahun/` and `/ruu/`), and last the Pagefind index (`pagefind/`). `--publish` then stores the stage as `releases/<id>/` in the corpus folder (`hukum-bersih release publish`) and points `active-release` at it; the stage is deleted. The release id is the SHA-256 of every file, so an unchanged corpus gives the same id and publishing it again changes nothing. `--public <dir>` then writes the active release's `law-catalog.json` to `<dir>/data/<release>/` and the Pagefind index to `<dir>/search-index/<release>/`, and removes the other release folders there; give it `../web/public`, whose `data/` and `search-index/` Vite copies into the build and serves in dev (`public/_headers` is committed and makes both immutable on Cloudflare). `.corpus/` and those two folders are ignored by git. Run it before `pnpm run dev` or `pnpm run build`.
+`export-corpus` writes the whole corpus into a temporary stage, in this order: the laws (`laws/`), the collections (`collections/`, with `comparisons/` for every ordered pair of versions of an amended law), the drafts (`drafts/`, with the comparison of every pair of versions that have text), the catalog (`law-catalog.json` and the `listings/` rows for the home page, `/uu/`, `/uu/tahun/` and `/ruu/`), and last the Pagefind index (`pagefind/`). `--publish` then stores the stage as `releases/<id>/` in the corpus folder (`hukum-rapih release publish`) and points `active-release` at it; the stage is deleted. The release id is the SHA-256 of every file, so an unchanged corpus gives the same id and publishing it again changes nothing. `--public <dir>` then writes the active release's `law-catalog.json` to `<dir>/data/<release>/` and the Pagefind index to `<dir>/search-index/<release>/`, and removes the other release folders there; give it `../web/public`, whose `data/` and `search-index/` Vite copies into the build and serves in dev (`public/_headers` is committed and makes both immutable on Cloudflare). `.corpus/` and those two folders are ignored by git. Run it before `pnpm run dev` or `pnpm run build`.
 
 To keep the stage, give a folder as the first argument and publish it yourself:
 
 ```sh
-uv run hukum-bersih export-corpus ../web/.snapshots/stage
-uv run hukum-bersih release publish ../web/.snapshots/stage --corpus ../web/.corpus
+uv run hukum-rapih export-corpus ../web/.snapshots/stage
+uv run hukum-rapih release publish ../web/.snapshots/stage --corpus ../web/.corpus
 ```
 
-Open `http://localhost:3000/uu/11/2008/` for the reader and `http://localhost:3000/cari/` for search. Publishing a new release makes it the active one. To go back to an earlier one, run `uv run hukum-bersih release activate <release-id> --corpus ../web/.corpus` (`--corpus` defaults to `HUKUM_CORPUS_DIR`); the next request reads it.
+Open `http://localhost:3000/uu/11/2008/` for the reader and `http://localhost:3000/cari/` for search. Publishing a new release makes it the active one. To go back to an earlier one, run `uv run hukum-rapih release activate <release-id> --corpus ../web/.corpus` (`--corpus` defaults to `HUKUM_CORPUS_DIR`); the next request reads it.
 
 Run `pnpm run check`, `pnpm exec tsc --noEmit`, and `pnpm run test --run` to check the preview code.
 
@@ -40,6 +40,6 @@ To prove a refactor changed no output, build, then run `CORPUS=.snapshots/before
 
 Until cutover the production hostname (a subdomain of `suarakami.id`, DNS managed outside our Cloudflare account) still points at the old Pages project `hukum-bersih`, which holds the last Astro deployment and no longer deploys. This Worker is reachable only on its `workers.dev` preview URL. Moving the hostname to it is the cutover step ([handover](../docs/solid-migration-handover.md)); rollback is redeploying an earlier Worker version.
 
-The **Deploy site** workflow, which runs on every push to `main` or by hand, runs `hukum-bersih export-corpus --publish ... --public ../web/public` in `pipeline/` for the full corpus (every law, the collections, the draft bills and the search index), builds the Worker from it, and uploads that release to R2 (without `pagefind/`, which only the static assets use) with rclone (`.github/scripts/upload-release.sh`): the release files, then its ready marker, then the `active-release` pointer, so a reader never sees a half-uploaded release. A subset would leave the draft and collection pages out, and `export-corpus` has no subset option. It deploys the `web` Worker, reading the `hukum-bersih-corpus` R2 bucket. After a successful deploy, `.github/scripts/prune-releases.sh` deletes every `releases/<id>/` folder except the new release and the one that `active-release` named before the upload (read by the publish step and passed on as a step output), so redeploying the previous Worker, which has its release id baked in, always finds its corpus. It deletes nothing when the previous release is unknown or equal to the new one, and `--dry-run` only lists what it would delete.
+The **Deploy site** workflow, which runs on every push to `main` or by hand, runs `hukum-rapih export-corpus --publish ... --public ../web/public` in `pipeline/` for the full corpus (every law, the collections, the draft bills and the search index), builds the Worker from it, and uploads that release to R2 (without `pagefind/`, which only the static assets use) with rclone (`.github/scripts/upload-release.sh`): the release files, then its ready marker, then the `active-release` pointer, so a reader never sees a half-uploaded release. A subset would leave the draft and collection pages out, and `export-corpus` has no subset option. It deploys the `web` Worker, reading the `hukum-bersih-corpus` R2 bucket. After a successful deploy, `.github/scripts/prune-releases.sh` deletes every `releases/<id>/` folder except the new release and the one that `active-release` named before the upload (read by the publish step and passed on as a step output), so redeploying the previous Worker, which has its release id baked in, always finds its corpus. It deletes nothing when the previous release is unknown or equal to the new one, and `--dry-run` only lists what it would delete.
 
 Create the R2 bucket `hukum-bersih-corpus` (the corpus releases, named for what it holds, not for this preview) and enable a `workers.dev` subdomain for the Cloudflare account. Configure the repository secrets `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_WORKERS_API_TOKEN` for Worker deployment, and `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY` for object access to that bucket. The workflow verifies the deployed article permalink, comparison permalink, a collection page, a draft page and the Pagefind index. Its summary records the preview URL and corpus release ID.

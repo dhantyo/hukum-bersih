@@ -1,4 +1,4 @@
-"""Release publish and activate (hukum_bersih.corpus.release), as the website's corpus reader and
+"""Release publish and activate (hukum_rapih.corpus.release), as the website's corpus reader and
 the preview workflow depend on them."""
 
 import shutil
@@ -6,8 +6,8 @@ from pathlib import Path
 
 import pytest
 
-from hukum_bersih.cli import main
-from hukum_bersih.corpus.release import ReleaseError, activate, publish, release_digest
+from hukum_rapih.cli import main
+from hukum_rapih.corpus.release import ReleaseError, activate, publish, release_digest
 
 STAGE = Path(__file__).parent / "fixtures" / "release_stage"
 

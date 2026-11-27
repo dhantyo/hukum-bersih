@@ -1,6 +1,6 @@
 import hashlib
 
-from hukum_bersih.manifest import ManifestEntry, entry_for_file, is_unchanged
+from hukum_rapih.manifest import ManifestEntry, entry_for_file, is_unchanged
 
 
 def test_entry_for_file(tmp_path):

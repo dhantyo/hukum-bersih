@@ -33,7 +33,7 @@ export const SiteFooter = () => (
   <footer class={css(styles.footer)}>
     <div class={css(styles.inner)}>
       <p class={css(styles.note)}>
-        <strong>Hukum Bersih</strong> menyajikan teks peraturan dan rancangan
+        <strong>Hukum Rapih</strong> menyajikan teks peraturan dan rancangan
         undang-undang Indonesia apa adanya dari sumber resminya, dengan tautan
         ke berkas asli dan salinan arsipnya. Teks diambil otomatis dari PDF dan
         bisa memuat kesalahan baca; PDF resminya yang berlaku. Ini bukan nasihat
@@ -41,7 +41,7 @@ export const SiteFooter = () => (
       </p>
       <p class={css(styles.note)}>
         Proyek terbuka:{" "}
-        <a class={linkClass} href="https://github.com/dhantyo/hukum-bersih">
+        <a class={linkClass} href="https://github.com/dhantyo/hukum-rapih">
           kode dan data di GitHub
         </a>{" "}
         · data CC0 · kode AGPL-3.0 ·{" "}

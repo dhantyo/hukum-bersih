@@ -63,7 +63,7 @@ HEADER_ZONE = 5  # lines at the top of a page that may hold headers
 OCR_LANGUAGE = "ind"
 OCR_DPI = 300
 # Which OCR reads scanned pages: "indra" (Indra OCR, the default since 2026-11-23, decision 0012)
-# or "tesseract" (Tesseract `ind` through PyMuPDF, used before). Set with $HUKUM_BERSIH_OCR.
+# or "tesseract" (Tesseract `ind` through PyMuPDF, used before). Set with $HUKUM_RAPIH_OCR.
 # When Indra cannot be loaded (package or model missing), Tesseract reads the pages instead.
 OCR_ENGINES = ("indra", "tesseract")
 
@@ -71,9 +71,9 @@ OCR_ENGINES = ("indra", "tesseract")
 def ocr_engine() -> str:
     import os
 
-    engine = os.environ.get("HUKUM_BERSIH_OCR", "indra").strip().lower()
+    engine = os.environ.get("HUKUM_RAPIH_OCR", "indra").strip().lower()
     if engine not in OCR_ENGINES:
-        raise ValueError(f"HUKUM_BERSIH_OCR={engine!r}: expected one of {OCR_ENGINES}")
+        raise ValueError(f"HUKUM_RAPIH_OCR={engine!r}: expected one of {OCR_ENGINES}")
     return engine
 
 

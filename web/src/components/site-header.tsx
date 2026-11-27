@@ -197,7 +197,7 @@ export const SiteHeader = (props: { pending: boolean }) => {
         <header ref={header} class={css(styles.header)}>
           <div class={css(styles.bar)}>
             <a class={css(linkStyles.base, styles.brand)} href={Router.paths()}>
-              Hukum Bersih
+              Hukum Rapih
             </a>
             <nav class={css(styles.nav)} aria-label="Utama">
               <For each={sections}>

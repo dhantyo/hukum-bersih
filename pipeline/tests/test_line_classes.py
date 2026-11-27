@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pytest
 
-from hukum_bersih.pdf.lines import JOIN_PASAL, REPAIRS, RULES, Kind, classify
+from hukum_rapih.pdf.lines import JOIN_PASAL, REPAIRS, RULES, Kind, classify
 
 CASES = [
     # (law, line, class, fields)

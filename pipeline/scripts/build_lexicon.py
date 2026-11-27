@@ -21,9 +21,9 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "src"))
 
-from hukum_bersih.records import load_record
+from hukum_rapih.records import load_record
 
-OUT = HERE.parent / "src" / "hukum_bersih" / "pdf" / "ocr_rules" / "lexicon.txt"
+OUT = HERE.parent / "src" / "hukum_rapih" / "pdf" / "ocr_rules" / "lexicon.txt"
 WORD = re.compile(r"[A-Za-z]+")
 MISREAD_RATIO = 100
 
@@ -45,7 +45,7 @@ def main() -> None:
             texts += 1
             docs.update({w.lower() for w in WORD.findall(text.read_text())})
     sys.path.insert(0, str(HERE.parent / "src"))
-    from hukum_bersih.pdf.ocr_fix import _shapes, dictionary_words
+    from hukum_rapih.pdf.ocr_fix import _shapes, dictionary_words
 
     suspect = {w for w, n in docs.items() if n >= args.min_docs
                and any(docs.get(s, 0) >= MISREAD_RATIO * n for s in _shapes(w))}

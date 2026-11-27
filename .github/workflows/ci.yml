@@ -27,7 +27,7 @@ jobs:
       - uses: astral-sh/setup-uv@v7
       - run: uv sync
       - name: Build Akoma Ntoso XML from data/
-        run: uv run hukum-bersih build-akn --out "$RUNNER_TEMP/akn"
+        run: uv run hukum-rapih build-akn --out "$RUNNER_TEMP/akn"
       # Blocking: any file that is not valid AKN 3.0 fails CI. Laws with no known date keep a
       # bare-year Work date (not made up) and are listed instead (scripts/validate_akn.py).
       - name: Validate the XML against the OASIS Akoma Ntoso 3.0 schema

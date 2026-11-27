@@ -1,5 +1,5 @@
-"""``law-catalog.json`` and ``listings/`` as ``hukum-bersih export-corpus`` writes them
-(hukum_bersih.corpus.catalog). The catalog lists what the stage holds, so each test marks the
+"""``law-catalog.json`` and ``listings/`` as ``hukum-rapih export-corpus`` writes them
+(hukum_rapih.corpus.catalog). The catalog lists what the stage holds, so each test marks the
 laws and drafts it exports with an empty ``index.json``."""
 
 import json
@@ -9,8 +9,8 @@ import pytest
 import yaml
 from recfactory import make_record, make_version
 
-from hukum_bersih.corpus.catalog import export_catalog, tanggal
-from hukum_bersih.corpus.laws import Laws
+from hukum_rapih.corpus.catalog import export_catalog, tanggal
+from hukum_rapih.corpus.laws import Laws
 
 BPK = "https://peraturan.bpk.go.id/Details/1"
 GO_ID = "https://peraturan.go.id/id/uu-no-3-tahun-2020"

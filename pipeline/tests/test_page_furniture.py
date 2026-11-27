@@ -3,8 +3,8 @@ marks) left out of the text, with lines as printed in the sample PDFs (docs/pars
 
 import pytest
 
-from hukum_bersih.pdf import extract
-from hukum_bersih.pdf.extract import _clean_page, rows
+from hukum_rapih.pdf import extract
+from hukum_rapih.pdf.extract import _clean_page, rows
 
 
 def test_words_on_one_printed_line_are_joined():
@@ -22,7 +22,7 @@ def test_page_turn_words_and_split_page_numbers_are_dropped():
 
 
 def test_page_turn_words_in_the_middle_of_a_pdf_page():           # UU 19/2001, UU 12/1964
-    from hukum_bersih.pdf.extract import clean_lines
+    from hukum_rapih.pdf.extract import clean_lines
 
     lines = clean_lines([["teks a", "Pasal 15…", "Pasal 15", "(1) Setelah", "teks b", "Ayat (4) …", "Ayat (4)",
                           "Cukup jelas", "x"], ["teks", "Pasal 7…."]])
@@ -32,14 +32,14 @@ def test_page_turn_words_in_the_middle_of_a_pdf_page():           # UU 19/2001, 
 
 
 def test_page_turn_word_just_after_its_heading():                  # UU 1/2009
-    from hukum_bersih.pdf.extract import clean_lines
+    from hukum_rapih.pdf.extract import clean_lines
 
     assert clean_lines([["BAB VI", "RANCANG BANGUN", "BAB VI...", "Bagian Kesatu"]]) == [
         "BAB VI", "RANCANG BANGUN", "Bagian Kesatu"]
 
 
 def test_page_turn_on_the_same_line_as_text():                     # UU 1/2009
-    from hukum_bersih.pdf.extract import clean_lines
+    from hukum_rapih.pdf.extract import clean_lines
 
     assert clean_lines([["BAB VI", "RANCANG BANGUN DAN PRODUKSI PESAWAT UDARA BAB VI . . .", "Bagian Kesatu"]]) == [
         "BAB VI", "RANCANG BANGUN DAN PRODUKSI PESAWAT UDARA", "Bagian Kesatu"]
@@ -77,7 +77,7 @@ def test_ocr_serials_and_bars():                                      # UU 2/202
 def test_white_text_is_left_out(tmp_path):                         # UU 29/2007
     import pymupdf
 
-    from hukum_bersih.pdf.extract import page_lines
+    from hukum_rapih.pdf.extract import page_lines
 
     doc = pymupdf.open()
     page = doc.new_page()

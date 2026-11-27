@@ -1,6 +1,6 @@
 """Title, preamble, BAB and Pasal headings as printed, including old numbering and OCR misreads."""
 
-from hukum_bersih.pdf.structure import parse_lines
+from hukum_rapih.pdf.structure import parse_lines
 
 
 def kinds(doc, kind):
@@ -56,7 +56,7 @@ def test_misprinted_pasal_i_in_an_ordinary_law():                  # UU 16/1953
 
 
 def test_misprinted_heading_numbers_confirmed_by_the_next_heading():
-    from hukum_bersih.pdf.structure import parse_lines
+    from hukum_rapih.pdf.structure import parse_lines
 
     head = ["UNDANG-UNDANG", "NOMOR 19 TAHUN 1948", "TENTANG", "CONTOH"]
     doc = parse_lines(head + ["Pasal 1", "Satu.", "Pasal 2", "Dua.", "Pasal 2", "Tiga.", "Pasal 4", "Empat.",
@@ -68,7 +68,7 @@ def test_misprinted_heading_numbers_confirmed_by_the_next_heading():
 
 
 def test_ocr_speck_before_a_pasal_heading():
-    from hukum_bersih.pdf.lines import normalise
+    from hukum_rapih.pdf.lines import normalise
 
     assert normalise(["' Pasal 8", "‘Pasal 9", ". Pasal 10."]) == ["Pasal 8", "Pasal 9", "Pasal 10"]
     assert normalise(["Pasal 4 :", "Pasal 6'", "Pasal IV :"]) == ["Pasal 4", "Pasal 6", "Pasal IV"]
@@ -79,7 +79,7 @@ def test_ocr_speck_before_a_pasal_heading():
 
 
 def test_ocr_letters_for_digits_and_spaced_marks_in_headings():
-    from hukum_bersih.pdf.lines import normalise
+    from hukum_rapih.pdf.lines import normalise
 
     assert normalise(["Pasal S1", "Pasal 1lA", "Pasal 1O", "Pasal 84 ,", "Pasal 9 ;"]) == [
         "Pasal 51", "Pasal 11A", "Pasal 10", "Pasal 84", "Pasal 9"]
@@ -87,7 +87,7 @@ def test_ocr_letters_for_digits_and_spaced_marks_in_headings():
 
 
 def test_ocr_glued_or_capital_pasal_heading_is_read_as_pasal_n():
-    from hukum_bersih.pdf.lines import normalise
+    from hukum_rapih.pdf.lines import normalise
 
     assert normalise(["PasalI", "PASAL 3", "Pasal12"]) == ["Pasal I", "Pasal 3", "Pasal 12"]
 

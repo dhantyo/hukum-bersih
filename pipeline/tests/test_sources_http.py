@@ -1,6 +1,6 @@
-from hukum_bersih.manifest import manifest_path
-from hukum_bersih.sources.http import safe_filename
-from hukum_bersih.sources.wayback import raw_url as raw_wayback_url
+from hukum_rapih.manifest import manifest_path
+from hukum_rapih.sources.http import safe_filename
+from hukum_rapih.sources.wayback import raw_url as raw_wayback_url
 
 WAYBACK = (
     "https://web.archive.org/web/20251106052153/https://jdih.ppatk.go.id/storage/"

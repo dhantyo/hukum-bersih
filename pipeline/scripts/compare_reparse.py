@@ -11,8 +11,8 @@ of those pages (1-based). Read-only: nothing in data/ is written.
 
 PDFs: the file the record names in ``bpk.files``, then its separate Penjelasan files as the
 importer reads them (``is_penjelasan``), from the Hugging Face mirror of BPK
-(``data/sources/mirrors/id_reg.json``), downloaded once into $HUKUM_BERSIH_PDF_CACHE (default
-~/.cache/hukum-bersih/pdf), never into the repository. Scanned pages are OCR'd (slow; the OCR
+(``data/sources/mirrors/id_reg.json``), downloaded once into $HUKUM_RAPIH_PDF_CACHE (default
+~/.cache/hukum-rapih/pdf), never into the repository. Scanned pages are OCR'd (slow; the OCR
 cache keeps them, pdf/ocr_cache.py). Prints Markdown (the workflow appends it to the job summary).
 """
 
@@ -29,17 +29,17 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 DATA = HERE.parent.parent / "data"
-CACHE = Path(os.environ.get("HUKUM_BERSIH_PDF_CACHE") or Path.home() / ".cache" / "hukum-bersih" / "pdf")
+CACHE = Path(os.environ.get("HUKUM_RAPIH_PDF_CACHE") or Path.home() / ".cache" / "hukum-rapih" / "pdf")
 HF = "https://huggingface.co/datasets/Azzindani/ID_REG/resolve/main/"
 sys.path.insert(0, str(HERE.parent / "src"))
 
-from hukum_bersih.akn.bluebell import to_bluebell
-from hukum_bersih.manifest import sha256_file
-from hukum_bersih.pdf import extract
-from hukum_bersih.pdf.structure import PARSER_VERSION, parse_pdf
-from hukum_bersih.records import load_record
-from hukum_bersih.sources.peraturan_bpk import is_penjelasan
-from hukum_bersih.sources.peraturan_go_id import _poorer_than_stored, measure
+from hukum_rapih.akn.bluebell import to_bluebell
+from hukum_rapih.manifest import sha256_file
+from hukum_rapih.pdf import extract
+from hukum_rapih.pdf.structure import PARSER_VERSION, parse_pdf
+from hukum_rapih.records import load_record
+from hukum_rapih.sources.peraturan_bpk import is_penjelasan
+from hukum_rapih.sources.peraturan_go_id import _poorer_than_stored, measure
 
 CONTEXT = 2          # unchanged lines kept around a changed hunk
 

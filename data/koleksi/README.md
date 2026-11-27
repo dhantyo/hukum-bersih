@@ -12,6 +12,6 @@ aliases: [ite]                  # extra search words
 members: []                     # optional: laws to add that the relations do not link
 ```
 
-Members are worked out from `relationships` in the law records (`hukum-bersih relations`):
+Members are worked out from `relationships` in the law records (`hukum-rapih relations`):
 the base law, every law that amends it, and the laws it revoked. Amended laws without a file
 here get an unnamed collection automatically, titled after their subject.

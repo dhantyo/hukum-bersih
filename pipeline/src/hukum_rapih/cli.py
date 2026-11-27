@@ -1,4 +1,4 @@
-"""Command-line entry point: ``hukum-bersih <command>``.
+"""Command-line entry point: ``hukum-rapih <command>``.
 
     parse            PDF -> Bluebell text (the format stored in data/)
     explain          which cell of the parser's state table read each line of a law (debugging)
@@ -43,7 +43,7 @@ def _each(items: Iterable[str], action: Callable[[str], str], delay: float = 0) 
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(prog="hukum-bersih")
+    parser = argparse.ArgumentParser(prog="hukum-rapih")
     parser.add_argument("--version", action="version", version=__version__)
     parser.add_argument("--data-dir", type=Path, default=DATA_DIR)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -186,7 +186,7 @@ def main(argv: list[str] | None = None) -> int:
         from .sources.bpk_session import Challenged, Session
 
         # kept between the workflow's batches (one process each): clearance, listing pages
-        cache = Path(os.environ["HUKUM_BERSIH_BPK_CACHE"]) if os.environ.get("HUKUM_BERSIH_BPK_CACHE") else None
+        cache = Path(os.environ["HUKUM_RAPIH_BPK_CACHE"]) if os.environ.get("HUKUM_RAPIH_BPK_CACHE") else None
         if cache:
             cache.mkdir(parents=True, exist_ok=True)
         session, done, failed = Session(args.delay, state=cache and cache / "session.json"), 0, 0

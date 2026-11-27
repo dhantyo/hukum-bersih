@@ -1,6 +1,6 @@
 # Notes for Claude
 
-Hukum Bersih publishes clean Indonesian law texts and tracks draft bills. `data/` (CC0) is the source of truth; `pipeline/` (Python) and `web/` (Solid 2 on a Cloudflare Worker) are AGPL-3.0. The Astro site was removed in PR 2 of the Solid migration; `web/` is renamed to `web/` in a later PR.
+Hukum Rapih publishes clean Indonesian law texts and tracks draft bills. `data/` (CC0) is the source of truth; `pipeline/` (Python) and `web/` (Solid 2 on a Cloudflare Worker) are AGPL-3.0. The Astro site was removed in PR 2 of the Solid migration; `web/` is renamed to `web/` in a later PR.
 
 ## Read when you need it
 

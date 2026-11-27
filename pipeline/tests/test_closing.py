@@ -2,8 +2,8 @@
 
 import pytest
 
-from hukum_bersih.closing import parse
-from hukum_bersih.pdf.structure import parse_lines
+from hukum_rapih.closing import parse
+from hukum_rapih.pdf.structure import parse_lines
 
 UU_30_1947 = ["Ditetapkan di Yogyakarta", "pada tanggal 30 Agustus 1947.", "PRESIDEN REPUBLIK INDONESIA,",
               "SOEKARNO.", "Menteri Keuangan,", "A.A. MARAMIS.", "Diumumkan pada tanggal 30 Agustus 1947.",
@@ -80,7 +80,7 @@ def test_old_place_and_date_line_is_the_signing():                   # UU 1/1945
 
 
 def test_closing_lines_are_read_back_from_a_stored_text():
-    from hukum_bersih.closing import conclusions
+    from hukum_rapih.closing import conclusions
 
     text = "BODY\n  ART 1 -\n    x\nCONCLUSIONS\n  Disahkan di Jakarta\n\n  pada tanggal 1 Mei 2020\nATTACHMENT Penjelasan\n  y\n"
     assert conclusions(text) == ["Disahkan di Jakarta", "pada tanggal 1 Mei 2020"]

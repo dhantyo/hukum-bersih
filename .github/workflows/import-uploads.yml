@@ -2,7 +2,7 @@ name: Import uploaded PDFs
 
 # PDFs downloaded by hand (e.g. from peraturan.bpk.go.id in a browser) are attached to a GitHub
 # release; this workflow records each in the source manifest (sha256) and converts it to text
-# (pipeline/src/hukum_bersih/uploads.py). Files are matched to laws by
+# (pipeline/src/hukum_rapih/uploads.py). Files are matched to laws by
 # name: "UU Nomor 4 Tahun 2009.pdf", "uu-no-4-tahun-2009.pdf", "UU_4_2009.pdf".
 on:
   workflow_dispatch:
@@ -26,14 +26,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     env:
-      HUKUM_BERSIH_OCR_CACHE: /home/runner/ocr-cache # raw OCR of scanned pages, kept between runs (.github/actions/ocr-cache)
+      HUKUM_RAPIH_OCR_CACHE: /home/runner/ocr-cache # raw OCR of scanned pages, kept between runs (.github/actions/ocr-cache)
     steps:
       - uses: actions/checkout@v5
       - uses: astral-sh/setup-uv@v7
       - uses: ./.github/actions/ocr-cache
         with:
           step: restore
-          path: ${{ env.HUKUM_BERSIH_OCR_CACHE }}
+          path: ${{ env.HUKUM_RAPIH_OCR_CACHE }}
       - name: OCR tools for scanned PDFs (Indra reads them, Tesseract is the fallback)
         run: sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-ind hunspell hunspell-id hunspell-en-us >/dev/null
       - run: |
@@ -55,17 +55,17 @@ jobs:
           SOURCE: ${{ inputs.source }}
         run: |
           shopt -s nullglob nocaseglob
-          uv run hukum-bersih import-pdf "$RUNNER_TEMP"/uploads/*.pdf --source "$SOURCE" \
+          uv run hukum-rapih import-pdf "$RUNNER_TEMP"/uploads/*.pdf --source "$SOURCE" \
             | tee -a "$GITHUB_STEP_SUMMARY" || true
-          uv run hukum-bersih relations
+          uv run hukum-rapih relations
       - name: Commit
         run: |
           git add data/
           if git diff --cached --quiet; then echo "Nothing changed"; exit 0; fi
-          git -c user.name="hukum-bersih bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+          git -c user.name="hukum-rapih bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
             commit -qm "peraturan: import uploaded PDFs from ${{ inputs.source }} (release ${{ inputs.release }})"
           for i in 1 2 3 4 5; do
-            git -c user.name="hukum-bersih bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            git -c user.name="hukum-rapih bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
               pull -q --no-rebase --no-edit origin "${GITHUB_REF_NAME}" && git push -q && exit 0
             sleep $((i * 20))
           done
@@ -74,4 +74,4 @@ jobs:
         if: always()
         with:
           step: save
-          path: ${{ env.HUKUM_BERSIH_OCR_CACHE }}
+          path: ${{ env.HUKUM_RAPIH_OCR_CACHE }}

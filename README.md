@@ -1,7 +1,7 @@
-# Hukum Bersih
+# Hukum Rapih
 
-[![CI](https://github.com/dhantyo/hukum-bersih/actions/workflows/ci.yml/badge.svg)](https://github.com/dhantyo/hukum-bersih/actions/workflows/ci.yml)
-[![Deploy site](https://github.com/dhantyo/hukum-bersih/actions/workflows/deploy.yml/badge.svg)](https://github.com/dhantyo/hukum-bersih/actions/workflows/deploy.yml)
+[![CI](https://github.com/dhantyo/hukum-rapih/actions/workflows/ci.yml/badge.svg)](https://github.com/dhantyo/hukum-rapih/actions/workflows/ci.yml)
+[![Deploy site](https://github.com/dhantyo/hukum-rapih/actions/workflows/deploy.yml/badge.svg)](https://github.com/dhantyo/hukum-rapih/actions/workflows/deploy.yml)
 
 Situs terbuka untuk hukum Indonesia: teks peraturan yang bersih dan mudah dicari, pelacakan RUU beserta setiap versi drafnya, dan perbandingan perubahan antarversi.
 
@@ -31,7 +31,7 @@ Website (`web/`, deployed by `.github/workflows/deploy.yml`; Node and pnpm versi
 Check that the generated Akoma Ntoso is valid (as CI does):
 
 ```bash
-cd pipeline && uv run hukum-bersih build-akn --out /tmp/akn && uv run python scripts/validate_akn.py /tmp/akn
+cd pipeline && uv run hukum-rapih build-akn --out /tmp/akn && uv run python scripts/validate_akn.py /tmp/akn
 ```
 
 ## Ground rules
