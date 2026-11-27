@@ -1,7 +1,6 @@
 # Corpus and comparer
 
-How the app reads the corpus and compares versions of a law or a collection.
-Source paths (`routes/`, `components/`, `lib/`, `styles/`, `server/`, `app.tsx`, `document.tsx`) are under `web/src/`; other paths are relative to `web/`.
+How the app reads the corpus and compares versions of a law or a collection. Source paths (`routes/`, `components/`, `lib/`, `styles/`, `server/`, `app.tsx`, `document.tsx`) are under `web/src/`; other paths are relative to `web/`.
 
 ## The corpus and the comparer
 

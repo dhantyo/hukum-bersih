@@ -1,7 +1,6 @@
 # Motion
 
-The header that follows the scroll, and the comparer's pills and text columns that slide together.
-Source paths (`routes/`, `components/`, `lib/`, `styles/`, `server/`, `app.tsx`, `document.tsx`) are under `web/src/`; other paths are relative to `web/`.
+The header that follows the scroll, and the comparer's pills and text columns that slide together. Source paths (`routes/`, `components/`, `lib/`, `styles/`, `server/`, `app.tsx`, `document.tsx`) are under `web/src/`; other paths are relative to `web/`.
 
 ## The header that follows the scroll
 

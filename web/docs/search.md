@@ -1,7 +1,6 @@
 # Search
 
-The browser search on `/cari/` and the no-JavaScript results page.
-Source paths (`routes/`, `components/`, `lib/`, `styles/`, `server/`, `app.tsx`, `document.tsx`) are under `web/src/`; other paths are relative to `web/`.
+The browser search on `/cari/` and the no-JavaScript results page. Source paths (`routes/`, `components/`, `lib/`, `styles/`, `server/`, `app.tsx`, `document.tsx`) are under `web/src/`; other paths are relative to `web/`.
 
 ## Search
 

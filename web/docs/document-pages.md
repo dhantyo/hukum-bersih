@@ -1,7 +1,6 @@
 # Document pages
 
-The layout of law, draft document and collection pages, and the folds in their text.
-Source paths (`routes/`, `components/`, `lib/`, `styles/`, `server/`, `app.tsx`, `document.tsx`) are under `web/src/`; other paths are relative to `web/`.
+The layout of law, draft document and collection pages, and the folds in their text. Source paths (`routes/`, `components/`, `lib/`, `styles/`, `server/`, `app.tsx`, `document.tsx`) are under `web/src/`; other paths are relative to `web/`.
 
 ## Document pages
 

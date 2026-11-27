@@ -1,7 +1,6 @@
 # Routes and links
 
-How a page is added, reads its data and links to others.
-Source paths (`routes/`, `components/`, `lib/`, `styles/`, `server/`, `app.tsx`, `document.tsx`) are under `web/src/`; other paths are relative to `web/`.
+How a page is added, reads its data and links to others. Source paths (`routes/`, `components/`, `lib/`, `styles/`, `server/`, `app.tsx`, `document.tsx`) are under `web/src/`; other paths are relative to `web/`.
 
 ## Routes
 

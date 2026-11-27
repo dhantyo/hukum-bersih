@@ -1,7 +1,6 @@
 # Styling
 
-StyleX, the one CSS file, fonts, and interactive controls built on ui-sdk.
-Source paths (`routes/`, `components/`, `lib/`, `styles/`, `server/`, `app.tsx`, `document.tsx`) are under `web/src/`; other paths are relative to `web/`.
+StyleX, the one CSS file, fonts, and interactive controls built on ui-sdk. Source paths (`routes/`, `components/`, `lib/`, `styles/`, `server/`, `app.tsx`, `document.tsx`) are under `web/src/`; other paths are relative to `web/`.
 
 ## StyleX
 

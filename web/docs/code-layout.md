@@ -1,7 +1,6 @@
 # Code layout
 
-Where code goes and the shape each kind of file takes. Copy the named example when you add a new one of the same kind.
-Source paths (`routes/`, `components/`, `lib/`, `styles/`, `server/`, `app.tsx`, `document.tsx`) are under `web/src/`; other paths are relative to `web/`.
+Where code goes and the shape each kind of file takes. Copy the named example when you add a new one of the same kind. Source paths (`routes/`, `components/`, `lib/`, `styles/`, `server/`, `app.tsx`, `document.tsx`) are under `web/src/`; other paths are relative to `web/`.
 
 ## Layout
 
