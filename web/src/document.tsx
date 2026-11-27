@@ -22,6 +22,7 @@ const Document = (props: ParentProps) => (
   <html lang="id" class={css(stylex.defaultMarker())}>
     <head>
       <meta charset="utf-8" />
+      <meta property="csp-nonce" />
       <For each={preloads}>{(link) => <link {...link} />}</For>
       <HydrationScript />
     </head>
