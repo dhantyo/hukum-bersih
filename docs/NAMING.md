@@ -40,6 +40,8 @@ Ids never contain the project name.
 - Types: `uu`, `perppu`, `pp`, `perpres`, `keppres`, `inpres`, `tap-mpr`; ministerial and
   agency regulations use the standard abbreviation (`permenkeu`, `permenkumham`, …).
   Older formats keep a type prefix: `uu-drt_7_1955`, `pnps_1_1965`.
+- The constitution has no number: `uud_1945`. Its amendments are their own works, numbered by
+  ordinal: `uud-perubahan_1_1999` … `uud-perubahan_4_2002` (decision 0027).
 - If an official number carries a letter suffix, the suffix stays part of the number.
 - The Akoma Ntoso id (`/akn/id/act/uu/2008/11`) is kept as an internal `akn` field for
   data exchange; it is never shown to readers.
