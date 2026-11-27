@@ -30,7 +30,6 @@ import importlib.util
 import json
 import os
 import random
-import re
 import subprocess
 import sys
 import tempfile
@@ -43,12 +42,7 @@ PDFS = Path(os.environ.get("HUKUM_BERSIH_PDF_CACHE") or Path.home() / ".cache" /
 sys.path.insert(0, str(HERE.parent / "src"))
 
 from hukum_bersih.pdf import structure as current
-
-SECTIONS = {"PREFACE", "PREAMBLE", "BODY", "CONCLUSIONS", "BLOCKLIST"}
-HEADINGS = {"CHAPTER": "BAB", "PART": "Bagian", "SUBPART": "Paragraf", "ART": "Pasal"}
-HEADING_RE = re.compile(r"^(CHAPTER|PART|SUBPART|ART) (\S+) -(?: (.*))?$")
-MARKER_RE = re.compile(r"^(?:PARA|POINT|ITEM) (.+)$")
-PENJELASAN_PART = {"PART I - UMUM": "I. UMUM", "PART II - PASAL DEMI PASAL": "II. PASAL DEMI PASAL"}
+from hukum_bersih.pdf.stored import printed_lines
 
 
 def base_parser(ref: str):
@@ -63,29 +57,6 @@ def base_parser(ref: str):
     sys.modules[spec.name] = module
     spec.loader.exec_module(module)
     return module
-
-
-def printed_lines(text: str) -> list[str]:
-    """A stored Bluebell text back as printed lines (see the module docstring)."""
-    out, marker = [], ""
-    for raw in text.splitlines():
-        line = raw.strip().removeprefix("\\")
-        if not line or line in SECTIONS or line.startswith("ATTACHMENT "):
-            continue
-        if line in PENJELASAN_PART:
-            out.append(PENJELASAN_PART[line])
-        elif line.startswith("PART - "):
-            out.append(line.removeprefix("PART - "))
-        elif m := HEADING_RE.match(line):
-            out.append(f"{HEADINGS[m[1]]} {m[2]}")
-            if m[3]:
-                out.append(m[3])
-        elif m := MARKER_RE.match(line):
-            marker = m[1] + " "
-        else:
-            out.append(marker + line)
-            marker = ""
-    return out
 
 
 # Lines printed in the laws, by the part of a law they belong to. ``{n}``, ``{r}``, ``{a}``:

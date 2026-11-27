@@ -220,15 +220,36 @@ class Cell:
     then: State | Callable[[Context], State] | None = None    # next state; None: stay
 
 
-def step(ctx: Context, view: View) -> int:
-    line = view.lines[view.at]
-    for cell in TABLE[ctx.state]:
+@dataclass(frozen=True)
+class Trace:
+    """One cell's reading of one line, as ``step`` reports it to an observer (``hukum-bersih
+    explain``). ``used`` 0: the cell read the line again in ``after``, which reports it once more."""
+
+    at: int                 # index of the line in the normalised lines
+    line: Line
+    before: State
+    cell: Cell
+    after: State
+    used: int
+
+
+Observer = Callable[[Trace], None]
+
+
+def ignore(trace: Trace) -> None:
+    """The default observer: parsing does not depend on who watches."""
+
+
+def step(ctx: Context, view: View, observe: Observer = ignore) -> int:
+    line, before = view.lines[view.at], ctx.state
+    for cell in TABLE[before]:
         if (cell.kind is None or cell.kind in line) and cell.guard(ctx, line, view):
             used = cell.action(ctx, line, view)
             then = cell.then(ctx) if callable(cell.then) else cell.then
             if then is not None:
                 ctx.enter(then)
-            return used or step(ctx, view)
+            observe(Trace(view.at, line, before, cell, ctx.state, used))
+            return used or step(ctx, view, observe)
     raise AssertionError(f"no cell of {ctx.state} reads {line.text!r}")
 
 
@@ -830,11 +851,12 @@ TABLE: dict[State, tuple[Cell, ...]] = {
 }
 
 
-def parse_lines(lines: list[str]) -> Document:
+def parse_lines(lines: list[str], observe: Observer = ignore) -> Document:
+    """``observe`` hears every cell reading of every line (``Trace``); it cannot change the result."""
     classified = [classify(text) for text in normalise(lines)]
     ctx, i = Context(), 0
     while i < len(classified):
-        i += step(ctx, View(classified, i))
+        i += step(ctx, View(classified, i), observe)
     for b in ctx.doc.blocks:
         b.text = tidy(b.text)
         b.label = tidy(b.label)
