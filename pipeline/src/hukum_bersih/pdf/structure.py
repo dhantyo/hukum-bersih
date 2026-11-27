@@ -215,9 +215,6 @@ class Cell:
     then: State | Callable[[Context], State] | None = None    # next state; None: stay
 
 
-TABLE: dict[State, tuple[Cell, ...]] = {}
-
-
 def step(ctx: Context, view: View) -> int:
     line = view.lines[view.at]
     for cell in TABLE[ctx.state]:
@@ -351,14 +348,195 @@ def had_penjelasan(doc: Document) -> bool:
     return any(b.kind == "penjelasan" for b in doc.blocks)
 
 
+# --------------------------------------------------------------------------- guards and actions
+
+
+def always(ctx: Context, line: Line, view: View) -> bool:
+    return True
+
+
+def no_block_yet(ctx: Context, line: Line, view: View) -> bool:
+    return ctx.cur is None
+
+
+def in_bab(ctx: Context, line: Line, view: View) -> bool:
+    return bool(ctx.last_bab)
+
+
+def take_text(ctx: Context, line: Line, view: View) -> int:
+    append(ctx, line.text)
+    return 1
+
+
+def emit_item(ctx: Context, item: tuple, level: int) -> None:
+    emit(ctx, Block("item", label=f"{item[1]}.", text=item[2], level=level))
+
+
+def flat_item(ctx: Context, item: tuple) -> int | None:
+    """Place a list item and keep the lists it opens; its level, None if it cannot be placed."""
+    if placed := place(ctx.lists, item[0], item[1]):
+        ctx.lists = placed[1]
+        return placed[0]
+    return None
+
+
+def bab_follows(ctx: Context, line: Line, view: View) -> bool:
+    n = heading_number(line.get(Kind.BAB)[0])
+    return n == ctx.last_bab + 1 or (n == ctx.last_bab and title_follows(view))
+
+
+def take_bab(ctx: Context, line: Line, view: View) -> int:
+    label = line.get(Kind.BAB)[0]
+    n = heading_number(label)
+    ctx.last_bab = n + (n == ctx.last_bab)
+    title, used = take_title(view, caps=True)
+    emit(ctx, Block("bab", label=f"BAB {label}", text=title))
+    return used
+
+
+def take_bagian(ctx: Context, line: Line, view: View) -> int:
+    title, used = take_title(view, caps=False)
+    emit(ctx, Block("bagian", label=f"Bagian {line.get(Kind.BAGIAN)[0]}", text=title))
+    return used
+
+
+def take_paragraf(ctx: Context, line: Line, view: View) -> int:
+    title, used = take_title(view, caps=False)
+    emit(ctx, Block("paragraf", label=f"Paragraf {line.get(Kind.PARAGRAF)[0]}", text=title))
+    return used
+
+
+def pasal_follows(ctx: Context, line: Line, view: View) -> bool:
+    """The next number, or the same one with a letter (S1, S2); anything else is a
+    cross-reference that happens to start a wrapped line."""
+    num = line.get(Kind.PASAL)[0]
+    n = pasal_number(num)
+    return n == ctx.last_pasal + 1 or (num[-1].isalpha() and n == ctx.last_pasal)
+
+
+def take_pasal(ctx: Context, line: Line, view: View, num: str = "") -> int:
+    num = num or line.get(Kind.PASAL)[0]
+    n = pasal_number(num)
+    if n != ctx.last_pasal + 1 and not (num[-1].isalpha() and n == ctx.last_pasal):
+        n = ctx.last_pasal + 1 if next_heading(view) == ctx.last_pasal + 2 else n
+        ctx.doc.warnings.append(f"'Pasal {num}' printed where Pasal {n} belongs; kept as printed")
+    ctx.last_pasal = n
+    emit(ctx, Block("pasal", label=f"Pasal {num}"))
+    ctx.last_ayat, ctx.lists = 0, ()
+    return 1
+
+
+def pasal_1_read_as_i(ctx: Context, line: Line, view: View) -> bool:
+    return line.get(Kind.PASAL) == ("1",) and reads_as_amending(ctx.doc, view)
+
+
+def pasal_1_read_as_i_before_bab(ctx: Context, line: Line, view: View) -> bool:
+    return not ctx.last_bab and pasal_1_read_as_i(ctx, line, view)
+
+
+def take_pasal_1_as_i(ctx: Context, line: Line, view: View) -> int:
+    ctx.doc.warnings.append("'Pasal 1' read as 'Pasal I' (amending law, OCR)")
+    return take_pasal(ctx, line, view, "I")
+
+
+def pasal_i_before_bab(ctx: Context, line: Line, view: View) -> bool:
+    num = line.get(Kind.PASAL)[0]
+    return not num[0].isdigit() and pasal_number(num) == 1 and not ctx.last_bab
+
+
+def past_front(ctx: Context) -> State:
+    """A Pasal heading ends the front, unless it was numbered 0 (``Pasal 0A``)."""
+    return State.BODY if ctx.last_pasal else State.PREAMBLE
+
+
+def take_opening(ctx: Context, line: Line, view: View) -> int:
+    emit(ctx, Block("preamble", text=line.text))
+    return 1
+
+
+def take_preamble_label(ctx: Context, line: Line, view: View) -> int:
+    label, rest = line.get(Kind.PREAMBLE)
+    emit(ctx, Block("preamble", label=label, text=rest))
+    ctx.lists = ()
+    if (item := classify(rest).get(Kind.LIST_ITEM)) and flat_item(ctx, item):
+        ctx.cur.text = ""
+        emit_item(ctx, item, 1)
+    return 1
+
+
+def skip(ctx: Context, line: Line, view: View) -> int:
+    return 1
+
+
+def take_title_line(ctx: Context, line: Line, view: View) -> int:
+    emit(ctx, Block("title", text=line.text))
+    return 1
+
+
+def label_alone(ctx: Context, line: Line, view: View) -> bool:
+    return ctx.cur.kind == "preamble" and line.text.startswith(":")
+
+
+def take_after_label(ctx: Context, line: Line, view: View) -> int:
+    """The label alone, ": 1. …" on the next line: the first item, or the text, without the colon."""
+    line = classify(line.text.lstrip(": ").strip())
+    if not ctx.cur.text and (item := line.get(Kind.LIST_ITEM)) and flat_item(ctx, item):
+        emit_item(ctx, item, 1)
+        return 1
+    return take_flat_item(ctx, line, view) if Kind.LIST_ITEM in line else take_text(ctx, line, view)
+
+
+def in_preamble_list(ctx: Context, line: Line, view: View) -> bool:
+    return ctx.cur.kind in {"preamble", "item"}
+
+
+def take_flat_item(ctx: Context, line: Line, view: View) -> int:
+    """Menimbang and Mengingat lists are flat: an item that would nest is text."""
+    item = line.get(Kind.LIST_ITEM)
+    if flat_item(ctx, item) == 1:
+        emit_item(ctx, item, 1)
+        return 1
+    return take_text(ctx, line, view)
+
+
+# --------------------------------------------------------------------------- the cells
+
+BAB_BEFORE_PASAL = Cell("bab_before_pasal", ("S5", "S6"), Kind.BAB, bab_follows, take_bab, State.PREAMBLE)
+BAGIAN = Cell("bagian", ("S7",), Kind.BAGIAN, in_bab, take_bagian)
+PARAGRAF = Cell("paragraf", ("S7",), Kind.PARAGRAF, in_bab, take_paragraf)
+PASAL_FIRST = (
+    Cell("pasal_1_read_as_i", ("S30", "S26"), Kind.PASAL, pasal_1_read_as_i_before_bab, take_pasal_1_as_i,
+         State.AMENDING),
+    Cell("pasal_1_read_as_i_in_bab", ("S30",), Kind.PASAL, pasal_1_read_as_i, take_pasal_1_as_i, State.BODY),
+    Cell("pasal_i", ("S26",), Kind.PASAL, pasal_i_before_bab, take_pasal, State.AMENDING),
+    Cell("pasal_first", ("S1", "S2"), Kind.PASAL, pasal_follows, take_pasal, past_front),
+)
+OPENING = Cell("opening", ("S13",), Kind.OPENING, always, take_opening, State.PREAMBLE)
+PREAMBLE_LABEL = Cell("preamble_label", ("S14", "S15"), Kind.PREAMBLE, always, take_preamble_label,
+                      State.PREAMBLE)
+
+
+TABLE: dict[State, tuple[Cell, ...]] = {
+    State.FRONT: (
+        BAB_BEFORE_PASAL, *PASAL_FIRST, OPENING, PREAMBLE_LABEL,
+        Cell("crest_caption", ("S13",), Kind.CREST_CAPTION, no_block_yet, skip),
+        Cell("title", ("S13",), None, no_block_yet, take_title_line),
+        Cell("title_continues", ("S13", "S11"), None, always, take_text),
+    ),
+    State.PREAMBLE: (
+        BAB_BEFORE_PASAL, BAGIAN, PARAGRAF, *PASAL_FIRST, OPENING, PREAMBLE_LABEL,
+        Cell("label_alone", ("S14",), None, label_alone, take_after_label),
+        Cell("preamble_item", ("S14",), Kind.LIST_ITEM, in_preamble_list, take_flat_item),
+        Cell("preamble_text", ("S11",), None, always, take_text),
+    ),
+}
+
+
 class Parser:
     def __init__(self, lines: list[str]):
         self.lines = [classify(text) for text in normalise(lines)]
         self.ctx = Context()
         self.in_penjelasan = False
-        # An amending law's own articles are Pasal I, II …; inside Pasal I it quotes the new
-        # wording of the amended law ("Pasal 4", "BAB IVA" …), which is content, not structure.
-        self.amending = False
         self.in_salinan = False
         self.in_lampiran = False
         self.p_roman = False
@@ -374,6 +552,8 @@ class Parser:
 
     def step(self, line: Line, view: View) -> int:
         ctx = self.ctx
+        if ctx.state in TABLE:
+            return step(ctx, view)
         if self.in_salinan and (Kind.PENJELASAN in line or Kind.LAMPIRAN in line
                                 or ctx.salinan_lines >= SALINAN_MAX):
             # the certification ends where the Penjelasan or a Lampiran starts; it is a few lines,
@@ -426,15 +606,17 @@ class Parser:
             return self.step_penjelasan(line, view)
 
         pasal = line.get(Kind.PASAL)
-        if self.amending and ctx.last_pasal == 1 and pasal == ("2",) and (
+        amending = ctx.state is State.AMENDING
+        if amending and ctx.last_pasal == 1 and pasal == ("2",) and (
                 not amends_so_far(ctx.doc)       # "Pasal I." was a misprint for Pasal 1 (UU 16/1953)
                 or (not ctx.quoted_one and view.before.rstrip().endswith("."))):
             # or the law's own Pasal 2 after amendments in Pasal I (UU 2/1953, 12/1957): it follows
             # a finished sentence, where a quoted pasal follows "… berbunyi sebagai berikut:"
-            self.amending = False
-        if self.amending and pasal == ("1",):
+            ctx.enter(State.BODY)
+            amending = False
+        if amending and pasal == ("1",):
             ctx.quoted_one = True
-        if self.amending and (Kind.BAB in line or Kind.BAGIAN in line or Kind.PARAGRAF in line
+        if amending and (Kind.BAB in line or Kind.BAGIAN in line or Kind.PARAGRAF in line
                               or (pasal and pasal[0][0].isdigit())):
             append(ctx, line.text)
             return 1
@@ -455,25 +637,20 @@ class Parser:
             return used
         if pasal:
             num = pasal[0]
-            if num == "1" and not ctx.last_pasal and reads_as_amending(ctx.doc, view):
-                num = "I"                                # OCR reads the Roman I of Pasal I as 1
-                ctx.doc.warnings.append("'Pasal 1' read as 'Pasal I' (amending law, OCR)")
             n = pasal_number(num)
             # anything else is a cross-reference that happens to start a wrapped line, unless the
             # number is a misprint the following headings confirm (misprinted())
             if (n == ctx.last_pasal + 1 or (num[-1].isalpha() and n == ctx.last_pasal)
-                    or (ctx.last_pasal and not self.amending and misprinted(view, n, ctx.last_pasal))):
+                    or (not amending and misprinted(view, n, ctx.last_pasal))):
                 if n != ctx.last_pasal + 1 and not (num[-1].isalpha() and n == ctx.last_pasal):
                     n = ctx.last_pasal + 1 if next_heading(view) == ctx.last_pasal + 2 else n
                     ctx.doc.warnings.append(f"'Pasal {num}' printed where Pasal {n} belongs; kept as printed")
                 if n == 1 and not num[0].isdigit() and not ctx.last_bab:
-                    self.amending = True
+                    ctx.enter(State.AMENDING)
                 ctx.last_pasal = n
                 emit(ctx, Block("pasal", label=f"Pasal {num}"))
                 ctx.last_ayat, ctx.lists = 0, ()
                 return 1
-        if not ctx.last_pasal:
-            return self.step_preamble(line)
         return self.step_list(line)
 
     def step_list(self, line: Line) -> int:
@@ -490,47 +667,6 @@ class Parser:
         append(ctx, line.text)
         return 1
 
-    def flat_item(self, item) -> int | None:
-        if placed := place(self.ctx.lists, item[0], item[1]):
-            self.ctx.lists = placed[1]
-            return placed[0]
-        return None
-
-    def step_preamble(self, line: Line) -> int:
-        ctx = self.ctx
-        if Kind.OPENING in line:
-            emit(ctx, Block("preamble", text=line.text))
-            return 1
-        if preamble := line.get(Kind.PREAMBLE):
-            label, rest = preamble
-            emit(ctx, Block("preamble", label=label, text=rest))
-            ctx.lists = ()
-            if (item := classify(rest).get(Kind.LIST_ITEM)) and self.flat_item(item):
-                ctx.cur.text = ""
-                emit(ctx, Block("item", label=f"{item[1]}.", text=item[2], level=1))
-            return 1
-        cur = ctx.cur
-        if cur is not None and cur.kind == "preamble" and line.text.startswith(":"):
-            line = classify(line.text.lstrip(": ").strip())   # label alone, ": 1. …" on the next line
-            if not cur.text and (item := line.get(Kind.LIST_ITEM)) and self.flat_item(item):
-                emit(ctx, Block("item", label=f"{item[1]}.", text=item[2], level=1))
-                return 1
-        if cur is None:
-            if Kind.CREST_CAPTION in line:
-                return 1
-            emit(ctx, Block("title", text=line.text))
-            return 1
-        if cur.kind == "title":
-            cur.text = join(cur.text, line.text)
-            return 1
-        # Menimbang / Mengingat lists are flat
-        if (cur.kind in {"preamble", "item"} and (item := line.get(Kind.LIST_ITEM))
-                and self.flat_item(item) == 1):
-            emit(ctx, Block("item", label=f"{item[1]}.", text=item[2], level=1))
-            return 1
-        append(ctx, line.text)
-        return 1
-
     def step_penjelasan(self, line: Line, view: View) -> int:
         ctx = self.ctx
         if (part := line.get(Kind.PENJELASAN_PART)) and not ctx.p_last_pasal:
@@ -538,7 +674,7 @@ class Parser:
                 emit(ctx, Block(part[0], text=PENJELASAN_PARTS[part[0]]))
             return 1
         pasal = line.get(Kind.PASAL)
-        if pasal and not pasal[0][0].isdigit() and self.amending:
+        if pasal and not pasal[0][0].isdigit() and ctx.state is State.AMENDING:
             n = roman(pasal[0])                  # an amending law's Penjelasan: Pasal I, Pasal II
             if n == ctx.p_last_pasal + 1:
                 ctx.p_last_pasal, self.p_roman = n, True
