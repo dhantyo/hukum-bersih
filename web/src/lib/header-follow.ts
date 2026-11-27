@@ -32,15 +32,17 @@ export const followHeader = (
   let frame = 0;
   let height = 0;
   let following = false;
-  let covered = -1;
+  let covered = 0;
   let slides: Animation[] = [];
 
   const held = () =>
     header.querySelector('[aria-expanded="true"]') !== null ||
     header.contains(document.activeElement);
 
+  const coveredPx = () => (mode === "pinned" ? height : 0);
+
   const publishCovered = () => {
-    const px = mode === "pinned" ? height : 0;
+    const px = coveredPx();
 
     if (px === covered || offsetName === undefined) {
       return;
@@ -106,7 +108,10 @@ export const followHeader = (
     }
 
     header.style.transform = `translateY(${mode === "hidden" ? -height : 0}px)`;
-    slideFollowers(publishCovered);
+
+    if (coveredPx() !== covered) {
+      slideFollowers(publishCovered);
+    }
   };
 
   const enter = (next: HeaderMode) => {
@@ -156,7 +161,6 @@ export const followHeader = (
   const sizeSlot = () => {
     height = header.offsetHeight;
     slot.style.height = `${height}px`;
-    covered = -1;
 
     if (following) {
       publishCovered();

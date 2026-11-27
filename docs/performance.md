@@ -8,6 +8,9 @@ The reader in `web/` serves very large documents. UU 11/2020 alone prerenders to
 - **Use the same harness on both sides.** Use headless Chromium through playwright-core, with 4× CPU throttle and a phone viewport (412×823, DPR 2.625). Take the median of 5 runs, and alternate the runs between the base and the change (A, B, A, B) so machine load hits both equally. Record total blocking time, long tasks, JS heap, FCP and LCP. Check that each run did the work: no errors, no 4xx, same DOM node count.
 - **Attribute the time before you fix anything.** Take a CPU profile or a Performance trace and split the time into script, style, layout and paint. Name the function that caused each forced layout or full style recalculation. A fix aimed at a guessed cause has failed here more than once.
 - **Measure Worker CPU on the Worker.** Run `wrangler dev` with the inspector profiler on the user isolate. Summing process CPU counts the local R2 simulator too, which production never pays. A local number is a guide, not proof of the 10 ms free-plan limit.
+- **Trace invalidations, not only time.** A profile says where time went; a Performance trace with invalidation tracking says which change made the browser restyle or relayout, and the JS stack that forced it. Fonts reloading, sheets inserted and attributes written all show up there and nowhere else.
+- **Bound a fix with a ceiling test before building it.** Strip the suspect from the built output (patch the JS, delete the CSS rules) and measure. If even removing it entirely saves little, do not build the proper fix. This ruled out patching ui-sdk Resizable (about 90 ms) and sized the `:has()` redesign (about 0.5 s).
+- **Probe single operations on the real page.** Time one `setAttribute`, one stylesheet insert or one `getBoundingClientRect` in the loaded document from the console or a script. Costs depend on the document's size, so a probe on a small test page misleads.
 - **Prove motion frame by frame.** For anything that slides or follows (the header, the sticky panel, the compare pills), record each element's position on every animation frame and assert the invariant, for example "the gap between header and panel is constant". Do not judge motion from code or from one screenshot.
 
 ## Lessons
@@ -49,21 +52,26 @@ What worked: on each show/hide flip, measure which marked elements (`data-under-
 
 Folds looked like they jumped when opened. A height animation did not help, because the cause was spacing: heading styles under `:not([open])` gave closed folds different margins from open ones, so every trigger moved 40 px. Make spacing around a trigger independent of its state (`web/AGENTS.md`, "Collapsibles"). Check it by recording each summary's position before and after toggling. It must not move.
 
-### Layout thrash during start-up is the next limit (2026-11-26)
+### Find who invalidated the layout before you blame the reads (2026-11-27)
 
-After #36, about 68% of what remains on UU 11/2020 is native style and layout: three full layouts of about 0.9 s and six full style recalculations of about 0.3 s. The profile points at writes to `<html>` attributes and root custom properties during hydration, which invalidate the whole document, and at code that reads layout right after a write and so forces it (ui-sdk Resizable's measurement, header-follow's slot sizing). On a document this size, write page-level state once before first paint and only when it changes, and read sizes from `ResizeObserver` entries instead of forcing layout.
+After #36, about 68% of what remained on UU 11/2020 was native style and layout: three full layouts and six full style recalculations during start-up. The first profile blamed our own reads (ui-sdk Resizable's measurement, header-follow's slot sizing). A trace with invalidation tracking showed otherwise: two of the three layouts came from ui-sdk inserting its `<style>` sheets at the front of `<head>`, ahead of the sheet with the `@font-face` rules. Each insert rebuilt the font set, so the whole document was laid out again, at about 240 ms each.
+
+- **Let ui-sdk use constructed sheets.** A `csp-nonce` meta in `web/src/document.tsx` switches it to adopted stylesheets, and `@layer ui-sdk, reset;` in `web/src/styles/stylex.css` keeps the cascade order. Layout time on UU 11/2020 went from 3.5 s to 0.8 s.
+- **Write page-level state only when it changes.** header-follow wrote a root custom property equal to its default at start-up (`web/src/lib/header-follow.ts`); it now writes only on a change.
+- **Measure what a suspect costs before you fix it.** Rewriting the `<html>` preference attributes with the same values measured free. Patching out Resizable's measurement saved about 90 ms, within noise. Neither was changed.
+- **Next limit.** Rules anchored on `<html>` with `:has()` (`COMPARING`, `FOLDED`, `COLUMNS`, `ONLY_CHANGED`, `SHOW_SAME`) make any insert anywhere restyle the whole document. Stripping them saved about 0.5 s more on UU 11/2020, but they carry the no-JavaScript comparison layout, so replacing them is its own task.
 
 ## Measured numbers
 
 Each row was measured with the harness above: headless Chromium, 4× CPU throttle, phone viewport, median of 5, on static files.
 
-| Page | Before #36 (TBT, heap) | After #36 (TBT, heap) |
-|---|---|---|
-| /uu/11/2020/ | 13.0 s, 245 MB | 5.2 s, 12 MB |
-| /koleksi/bumn/ | 3.2 s, 52 MB | 1.5 s, 6 MB |
-| /koleksi/minerba/ | 3.5 s, 50 MB | 1.5 s, 7 MB |
-| draft (perampasan-aset) | 1.9 s, 27 MB | 0.6 s, 5 MB |
-| /uu/11/2008/ | 1.3 s, 16 MB | 0.7 s, 6 MB |
+| Page | Before #36 (TBT, heap) | After #36 (TBT, heap) | After #39 (TBT) |
+|---|---|---|---|
+| /uu/11/2020/ | 13.0 s, 245 MB | 5.2 s, 12 MB | 3.3 s |
+| /koleksi/bumn/ | 3.2 s, 52 MB | 1.5 s, 6 MB | 0.9 s |
+| /koleksi/minerba/ | 3.5 s, 50 MB | 1.5 s, 7 MB | 1.0 s |
+| draft (perampasan-aset) | 1.9 s, 27 MB | 0.6 s, 5 MB | 0.5 s |
+| /uu/11/2008/ | 1.3 s, 16 MB | 0.7 s, 6 MB | 0.45 s |
 
 Worker CPU per request (`wrangler dev`, inspector profiler, median of 9, 2026-11-26):
 
