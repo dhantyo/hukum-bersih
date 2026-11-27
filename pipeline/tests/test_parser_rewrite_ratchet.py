@@ -13,9 +13,9 @@ from pathlib import Path
 
 STRUCTURE = Path(__file__).parents[1] / "src" / "hukum_bersih" / "pdf" / "structure.py"
 
-BASELINE_FINGERPRINT = "93ff124f8570e275"
-BASELINE_BRANCHES = 24
-BASELINE_STATE = 6
+BASELINE_FINGERPRINT = "652e770a4c755a78"
+BASELINE_BRANCHES = 12
+BASELINE_STATE = 4
 
 
 def _parser() -> ast.ClassDef:

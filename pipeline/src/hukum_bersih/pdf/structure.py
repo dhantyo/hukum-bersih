@@ -500,6 +500,88 @@ def quoted_heading(ctx: Context, line: Line, view: View) -> bool:
             or bool(pasal and pasal[0][0].isdigit()))
 
 
+def penjelasan_to_come(ctx: Context, line: Line, view: View) -> bool:
+    return not had_penjelasan(ctx.doc)
+
+
+def take_penjelasan_heading(ctx: Context, line: Line, view: View) -> int:
+    ctx.amending_law = ctx.part is State.AMENDING
+    umum = line.get(Kind.PENJELASAN_UMUM)
+    emit(ctx, Block("penjelasan", text=umum[0] if umum else line.text))
+    if umum:
+        emit(ctx, Block("umum", text="Umum"))
+    return 1
+
+
+def numeral_alone(ctx: Context, line: Line, view: View) -> bool:
+    return line.get(Kind.PENJELASAN_PART) == ("",)
+
+
+def take_part(ctx: Context, line: Line, view: View) -> int:
+    part = line.get(Kind.PENJELASAN_PART)[0]
+    emit(ctx, Block(part, text=PENJELASAN_PARTS[part]))
+    return 1
+
+
+def pasal_i_of_penjelasan(ctx: Context, line: Line, view: View) -> bool:
+    """An amending law's Penjelasan explains Pasal I, Pasal II (S21)."""
+    num = line.get(Kind.PASAL)[0]
+    return not num[0].isdigit() and ctx.amending_law and roman(num) == ctx.p_last_pasal + 1
+
+
+def take_p_pasal_i(ctx: Context, line: Line, view: View) -> int:
+    num = line.get(Kind.PASAL)[0]
+    ctx.p_last_pasal = roman(num)
+    emit(ctx, Block("p_pasal", label=f"Pasal {num}"))
+    return 1
+
+
+def p_pasal_follows(ctx: Context, line: Line, view: View) -> bool:
+    """The Penjelasan's next pasal, or any later pasal of the law after a sentence end: old
+    laws explain only some pasal (UU 2/1962: Pasal 5, then Pasal 12) (S19); or a misprint the
+    next heading confirms (S20)."""
+    num = line.get(Kind.PASAL)[0]
+    n, last = pasal_number(num), ctx.p_last_pasal
+    skipped = last < n <= ctx.last_pasal and num[0].isdigit() and after_sentence(view)
+    return bool((num[0].isdigit() or last) and (
+        n == last + 1 or (num[-1].isalpha() and n == last) or skipped
+        or (last and misprinted(view, n, last))))
+
+
+def take_p_pasal(ctx: Context, line: Line, view: View) -> int:
+    num = line.get(Kind.PASAL)[0]
+    n, last = pasal_number(num), ctx.p_last_pasal
+    if last and n != last + 1 and next_heading(view) == last + 2:
+        n = last + 1
+    ctx.p_last_pasal = n
+    emit(ctx, Block("p_pasal", label=f"Pasal {num}"))
+    return 1
+
+
+def p_part(ctx: Context) -> State:
+    """A Penjelasan pasal heading ends the Umum part, unless it was numbered 0 (``Pasal 0A``)."""
+    return State.PENJELASAN_PASAL if ctx.p_last_pasal else State.PENJELASAN_UMUM
+
+
+def take_p_label(ctx: Context, line: Line, view: View) -> int:
+    label, text = line.get(Kind.PENJELASAN_LABEL)
+    emit(ctx, Block("p_label", label=label, text=text))
+    return 1
+
+
+def after_sentence_end(ctx: Context, line: Line, view: View) -> bool:
+    return ctx.cur.kind == "text" and ctx.cur.text.endswith(".") and line.text[:1].isupper()
+
+
+def after_part_heading(ctx: Context, line: Line, view: View) -> bool:
+    return ctx.cur.kind in {"umum", "pasal_demi_pasal"}
+
+
+def take_paragraph(ctx: Context, line: Line, view: View) -> int:
+    emit(ctx, Block("text", text=line.text))
+    return 1
+
+
 def past_front(ctx: Context) -> State:
     """A Pasal heading ends the front, unless it was numbered 0 (``Pasal 0A``)."""
     return State.BODY if ctx.last_pasal else State.PREAMBLE
@@ -574,6 +656,11 @@ PREAMBLE_LABEL = Cell("preamble_label", ("S14", "S15"), Kind.PREAMBLE, always, t
 AYAT = Cell("ayat", ("S8",), Kind.AYAT, ayat_follows, take_ayat)
 LIST_ITEM = Cell("list_item", ("S9", "S10"), Kind.LIST_ITEM, item_fits, take_item)
 TEXT = Cell("text", ("S11",), None, always, take_text)
+P_PASAL_I = Cell("p_pasal_i", ("S21",), Kind.PASAL, pasal_i_of_penjelasan, take_p_pasal_i,
+                 State.PENJELASAN_PASAL_I)
+P_PASAL = Cell("p_pasal", ("S19", "S20"), Kind.PASAL, p_pasal_follows, take_p_pasal, p_part)
+P_LABEL = Cell("p_label", ("S33",), Kind.PENJELASAN_LABEL, always, take_p_label)
+AFTER_PART = Cell("text_after_part", ("S22",), None, after_part_heading, take_paragraph)
 
 
 TABLE: dict[State, tuple[Cell, ...]] = {
@@ -601,6 +688,15 @@ TABLE: dict[State, tuple[Cell, ...]] = {
         Cell("pasal_of_amending_law", ("S1", "S26"), Kind.PASAL, pasal_follows, take_pasal),
         AYAT, LIST_ITEM, TEXT,
     ),
+    State.PENJELASAN_UMUM: (
+        Cell("part_numeral", ("S32",), Kind.PENJELASAN_PART, numeral_alone, skip),
+        Cell("part", ("S32",), Kind.PENJELASAN_PART, always, take_part),
+        P_PASAL_I, P_PASAL,
+        Cell("paragraph", ("S22",), None, after_sentence_end, take_paragraph),
+        AFTER_PART, TEXT,
+    ),
+    State.PENJELASAN_PASAL: (P_PASAL_I, P_PASAL, P_LABEL, AFTER_PART, TEXT),
+    State.PENJELASAN_PASAL_I: (P_PASAL_I, P_LABEL, AFTER_PART, TEXT),
 }
 
 
@@ -608,10 +704,8 @@ class Parser:
     def __init__(self, lines: list[str]):
         self.lines = [classify(text) for text in normalise(lines)]
         self.ctx = Context()
-        self.in_penjelasan = False
         self.in_salinan = False
         self.in_lampiran = False
-        self.p_roman = False
 
     def run(self) -> Document:
         i = 0
@@ -634,13 +728,9 @@ class Parser:
             if ctx.salinan_lines >= SALINAN_MAX:
                 ctx.doc.warnings.append(f"salinan: no end found after {SALINAN_MAX} lines; text kept")
             self.in_salinan = False
-        if not self.in_penjelasan and Kind.PENJELASAN in line and ctx.last_pasal:
-            self.in_penjelasan = True
-            umum = line.get(Kind.PENJELASAN_UMUM)
-            emit(ctx, Block("penjelasan", text=umum[0] if umum else line.text))
-            if umum:
-                emit(ctx, Block("umum", text="Umum"))
-            ctx.last_ayat, ctx.lists = 0, ()
+        if Kind.PENJELASAN in line and ctx.last_pasal and penjelasan_to_come(ctx, line, view):
+            take_penjelasan_heading(ctx, line, view)
+            ctx.enter(State.PENJELASAN_UMUM)
             return 1
         if ctx.last_pasal and Kind.CLOSING in line:
             emit(ctx, Block("closing", text=line.text))
@@ -674,52 +764,7 @@ class Parser:
             else:
                 emit(ctx, Block("closing", text=line.text))     # signature blocks: as printed
             return 1
-        if self.in_penjelasan:
-            return self.step_penjelasan(line, view)
-
         return step(ctx, view)
-
-    def step_penjelasan(self, line: Line, view: View) -> int:
-        ctx = self.ctx
-        if (part := line.get(Kind.PENJELASAN_PART)) and not ctx.p_last_pasal:
-            if part[0]:                          # not the numeral alone before the part's name
-                emit(ctx, Block(part[0], text=PENJELASAN_PARTS[part[0]]))
-            return 1
-        pasal = line.get(Kind.PASAL)
-        if pasal and not pasal[0][0].isdigit() and ctx.state is State.AMENDING:
-            n = roman(pasal[0])                  # an amending law's Penjelasan: Pasal I, Pasal II
-            if n == ctx.p_last_pasal + 1:
-                ctx.p_last_pasal, self.p_roman = n, True
-                emit(ctx, Block("p_pasal", label=f"Pasal {pasal[0]}"))
-                return 1
-        if pasal and not self.p_roman and (pasal[0][0].isdigit() or ctx.p_last_pasal):
-            num = pasal[0]
-            n = pasal_number(num)
-            # a Penjelasan often explains only some pasal (old laws): any later pasal of the law
-            # after the end of a sentence is a heading there (UU 2/1962: Pasal 5, then Pasal 12)
-            skipped = ctx.p_last_pasal < n <= ctx.last_pasal and num[0].isdigit() and after_sentence(view)
-            if (n == ctx.p_last_pasal + 1 or (num[-1].isalpha() and n == ctx.p_last_pasal) or skipped
-                    or (ctx.p_last_pasal and misprinted(view, n, ctx.p_last_pasal))):
-                if (ctx.p_last_pasal and n != ctx.p_last_pasal + 1
-                        and next_heading(view) == ctx.p_last_pasal + 2):
-                    n = ctx.p_last_pasal + 1
-                ctx.p_last_pasal = n
-                emit(ctx, Block("p_pasal", label=f"Pasal {num}"))
-                return 1
-        if (label := line.get(Kind.PENJELASAN_LABEL)) and ctx.p_last_pasal:
-            emit(ctx, Block("p_label", label=label[0], text=label[1]))
-            return 1
-        cur = ctx.cur
-        # Penjelasan umum is prose: start a new paragraph after a sentence end.
-        if (cur and cur.kind == "text" and cur.text.endswith(".")
-                and line.text[:1].isupper() and not ctx.p_last_pasal):
-            emit(ctx, Block("text", text=line.text))
-            return 1
-        if cur and cur.kind in {"umum", "pasal_demi_pasal"}:
-            emit(ctx, Block("text", text=line.text))
-            return 1
-        append(ctx, line.text)
-        return 1
 
 
 def parse_lines(lines: list[str]) -> Document:
