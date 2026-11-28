@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1953_1953-04-04.txt
   pasal_count: 139
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b175eda79deaed64af741c437f28905a1963a753d0c4484002b151c7debb04cc
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9997
 pdf_sha256: 2a6b9c4967469ec0d45d65c62391a86c0390688425f16dafda9b58097d89c151
 tanggal_pengundangan: '1953-03-30'
 tanggal_berlaku: '1953-03-30'

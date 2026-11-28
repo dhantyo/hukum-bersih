@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1953_1953-02-02.txt
   pasal_count: 13
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4847635f6a2a0f66aebeaa6a56fda153bc4fb30ad23df20fd08bafa82ac76393
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9968
 pdf_sha256: 8c06cf564af4f61d6eae746cfe610ca1d18cdcf9528d7b979491d2e08bc4e62c
 tanggal_pengundangan: '1953-02-21'
 tanggal_berlaku: '1953-02-21'

@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_28_1953_1953-12-18.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c25fa64ad9b42f91b9feecf53218f9fde6bc3104d1c8c6b0d77a0f9fff30f429
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9938
 pdf_sha256: 4ff2b548042a2ed8c7c8e789db96e53565832e9bbb6deae1d2d13f6c3638e055
 tanggal_pengundangan: '1953-12-28'
 tanggal_berlaku: '1951-07-01'

@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_1952_1952-12-23.txt
   pasal_count: 6
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 239ff5da3c14e318f3cdb74895dc417ab80cee076e357936092776f187c7531a
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9959
 pdf_sha256: d6b8d1c7e2e1f5baf8a681ed4d1972774b5eff7bf36949ed6e6934d89cec39f6
 tanggal_pengundangan: '1952-12-24'
 tanggal_berlaku: '1952-12-24'

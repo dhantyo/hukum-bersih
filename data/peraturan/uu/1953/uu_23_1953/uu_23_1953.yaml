@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_1953_1953-11-25.txt
   pasal_count: 10
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 89e39928b761e0914e9dc4cf1869d458504294319220e7f0c0be628bf9d02226
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9974
 pdf_sha256: 246e7a9bd5a10f9cf5a3ecd3b91b78d85dc895ef9a3d0630b2023d54645e465d
 tanggal_pengundangan: '1953-11-25'
 tanggal_berlaku: '1953-12-25'

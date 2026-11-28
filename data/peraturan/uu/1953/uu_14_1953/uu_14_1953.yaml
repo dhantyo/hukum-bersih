@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1953_1953-05-20.txt
   pasal_count: 9
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 422ab5f57f9cd6b7453301f348641491904506490ed852104035b6798307a82a
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9961
 pdf_sha256: d0190b9d749defb964ffd275e0e84b28849c2cc40ee92ce6d622f8eb296281e0
 tanggal_pengundangan: '1953-06-11'
 tanggal_berlaku: '1953-09-11'

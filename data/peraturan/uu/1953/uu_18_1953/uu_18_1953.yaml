@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_1953_1953-06-03.txt
   pasal_count: 6
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6c90103ee89c21d5935626fcf82c5130c726eb3012fc1ee61676e4f51a125f12
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9943
 pdf_sha256: 70751b2a3e07c68944d60bfa215b2a4fce6fe51c5cb73477b9bc1af42f1d440b
 tanggal_pengundangan: '1953-06-11'
 tanggal_berlaku: '1953-06-11'

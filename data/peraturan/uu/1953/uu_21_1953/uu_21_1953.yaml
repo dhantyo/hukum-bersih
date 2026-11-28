@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_1953_1953-06-18.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 27841fe6325164b692c406c09c97394b0c46cb8faade9b50aca237567cace865
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9836
 pdf_sha256: 42535e3b14f120a862d2e3db57e902047642be9c7fb4feec5af3625ce6fc20b8
 tanggal_pengundangan: '1953-07-16'
 tanggal_berlaku: '1953-07-16'

@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_35_1953_1953-12-18.txt
   pasal_count: 50
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 86653ba331f63c801042ef160cf4b96460739b490c8a7532e27a9246582fa7f7
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9998
 pdf_sha256: e5426336ca6b78b021e9db5447031c5f265b743e78f083bf2f947acbc5ef7659
 tanggal_pengundangan: '1953-12-28'
 tanggal_berlaku: '1953-12-28'

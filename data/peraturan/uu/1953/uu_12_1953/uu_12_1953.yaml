@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_1953_1953-05-20.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c3b9b332a9ea5f486b4a74bf92bff1842aa7a972281f804b22fcc1e08f7d4748
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9973
 tanggal_pengundangan: '1953-06-11'
 tanggal_berlaku: '1953-06-11'
 lembaran_negara: 'LN.1953/NO.42, LL SETNEG : 6 HLM.'

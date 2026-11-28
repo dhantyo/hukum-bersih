@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_1953_1953-05-09.txt
   pasal_count: 10
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 23e0b5f4ef8649b3f9e697be6a551df17b661d6f9bf255d27ce44419cac30e9e
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9988
 pdf_sha256: 72c9b16807df08bc8efbefe69a508be337211154cb730891bfde558c3badc01b
 tanggal_pengundangan: '1953-05-26'
 tanggal_berlaku: '1953-05-06'

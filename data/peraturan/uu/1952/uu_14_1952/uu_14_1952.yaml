@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1952_1952-09-26.txt
   pasal_count: 7
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2392c68e9c136bd88fa8a66ab8c6a2e30c2491c11261ffc4bab038f7151ada40
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9958
 pdf_sha256: a89e5e9cbb7eab5b5cd9b54c3cfff243e246852f281f42abf4da801ffba9fabf
 tanggal_pengundangan: '1952-10-03'
 tanggal_berlaku: '1952-10-03'

@@ -30,9 +30,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_1953_1953-05-04.txt
   pasal_count: 9
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e72e079ea5dae02432b59a91b44ff99eeef28504104a4cfced79f179d0595012
+  checks:
+    version: 2
+    failed:
+    - name: pasal_gap
+      detail: 4->6
+    word_coverage: 0.9974
 pdf_sha256: c30a7dce5e0155e49628017223e90ebca560d12ba6d1616d19c59af961b254fd
 tanggal_pengundangan: '1953-05-16'
 tanggal_berlaku: '1950-08-17'

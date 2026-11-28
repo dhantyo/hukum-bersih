@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_1953_1953-06-25.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a05aa9de69f8fee64fa01bb438ac31d673a235302d5e547f5ada0ac30a4fe65c
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9888
 pdf_sha256: 11affb4a927e81e5d6bea025c2d67f8de7236991949008ab50650e1e58abc2f9
 tanggal_pengundangan: '1953-07-15'
 tanggal_berlaku: '1953-07-15'

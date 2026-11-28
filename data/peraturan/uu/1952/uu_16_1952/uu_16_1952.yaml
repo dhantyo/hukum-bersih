@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_1952_1952-10-02.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6a5bf1c00cae932986ae9d2a5059a5ce3e92c2ca43de19c4ece0ea112e724567
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9835
 pdf_sha256: 06d839ba0bb0fade64d173ff25976fddd6b79a1a4461e1066f4ff67ee8ed44ef
 tanggal_pengundangan: '1952-10-07'
 tanggal_berlaku: '1952-10-07'

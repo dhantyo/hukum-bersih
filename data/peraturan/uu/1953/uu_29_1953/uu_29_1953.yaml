@@ -32,9 +32,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_29_1953_1953-12-18.txt
   pasal_count: 5
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 051cac58651924d7ff4828d8b9d35b51cae69df006d381bd8c25aa7e6a4b8dda
+  checks:
+    version: 2
+    failed:
+    - name: missed_heading
+      detail: body 1
+    word_coverage: 0.998
 pdf_sha256: 418b478e11c5cf6f22b57f21e3610fde3ec2be16787a7295fb393d8e10a4ddc0
 tanggal_pengundangan: '1953-12-28'
 tanggal_berlaku: '1953-12-28'

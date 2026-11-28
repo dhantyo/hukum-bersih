@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1953_1953-05-19.txt
   pasal_count: 43
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 48b6ff773b2e51c759b588628faedcb957868eb8d1edbcc2ad3dacdc86d7f994
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9994
 pdf_sha256: 883b6c90a303fb89c38f7990d690f39040223460eb1a1bc825624ed7949e6d8a
 tanggal_pengundangan: '1953-06-02'
 tanggal_berlaku: '1953-07-01'
