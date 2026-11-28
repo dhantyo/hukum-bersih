@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_1961_1961-12-04.txt
   pasal_count: 37
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6ee8d3332c9bb7bb879162859ca556daa85a71bdf7da28aa6aa943efd809a3ed
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9993
 pdf_sha256: a2285c30eab3cdd7e2a082cfb887dcfe3dd64ad2fb85c5cf09d42af15ae5e56d
 tanggal_pengundangan: '1961-12-04'
 tanggal_berlaku: '1961-12-04'

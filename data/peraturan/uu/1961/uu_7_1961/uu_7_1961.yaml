@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1961_1961-03-01.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9797f76592c6ecb6939c8d7d06dc0e655e92363a29628be693a7124b1d2a9b57
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9895
 pdf_sha256: 77275e69643a9df9841498c4308e7c970cdd903cc46db1d3ad22060d8d1cff83
 tanggal_pengundangan: '1961-03-01'
 tanggal_berlaku: '1961-01-01'

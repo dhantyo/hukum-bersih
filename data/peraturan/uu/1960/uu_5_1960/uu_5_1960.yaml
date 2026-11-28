@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1960_1960-09-24.txt
   pasal_count: 58
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ef6fd332f5ed6dda494645d3d1ae247f371fc280d73cf9421abf0405a21c7f36
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: ef6fd332f5ed6dda494645d3d1ae247f371fc280d73cf9421abf0405a21c7f36
 tanggal_pengundangan: '1960-09-24'
 tanggal_berlaku: '1960-09-24'

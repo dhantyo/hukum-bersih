@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_1959_1959-07-01.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 39745a1250fa40d7457b81ab2e87af22210374d14087c96dda0a014ac775725b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9944
 pdf_sha256: 39745a1250fa40d7457b81ab2e87af22210374d14087c96dda0a014ac775725b
 tanggal_pengundangan: '1959-07-04'
 tanggal_berlaku: '1959-07-04'

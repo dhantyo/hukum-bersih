@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_1961_1961-07-12.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e16375e1b69778d369385467456aa208550c5c9feb50b31b31fc4dfdc1e73f8f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9938
 pdf_sha256: e51d79dcf91974779cab7b677753db624850fdeff4b3dd22466cb054b3eccba9
 tanggal_pengundangan: '1961-07-12'
 tanggal_berlaku: '1961-02-01'

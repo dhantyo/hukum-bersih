@@ -29,9 +29,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_29_1959_1959-07-04.txt
   pasal_count: 16
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9b4a9ab0dca56f3d0954bc9964f2b4f3975951375258d5a97046ed49deaea3a3
+  checks:
+    version: 1
+    failed:
+    - name: pasal_gap
+      detail: 6->8
+    word_coverage: 0.9994
 pdf_sha256: 9b4a9ab0dca56f3d0954bc9964f2b4f3975951375258d5a97046ed49deaea3a3
 tanggal_pengundangan: '1959-07-04'
 tanggal_berlaku: '1959-07-04'

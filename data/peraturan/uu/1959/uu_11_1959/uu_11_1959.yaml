@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1959_1959-05-26.txt
   pasal_count: 7
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8b1389ae08e2712188986761c97f99c82db5eb82334359c93b82cb0c59316db7
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9974
 pdf_sha256: 8b1389ae08e2712188986761c97f99c82db5eb82334359c93b82cb0c59316db7
 tanggal_pengundangan: '1959-06-09'
 tanggal_berlaku: '1959-06-09'

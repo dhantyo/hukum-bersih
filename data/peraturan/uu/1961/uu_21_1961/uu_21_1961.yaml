@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_1961_1961-10-11.txt
   pasal_count: 24
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ac3cc6c0f9ded1d9671c5dcd98f3a663edb64d64dc3310a4ba71f10a03237499
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9992
 pdf_sha256: ac3cc6c0f9ded1d9671c5dcd98f3a663edb64d64dc3310a4ba71f10a03237499
 tanggal_pengundangan: '1961-10-11'
 tanggal_berlaku: '1961-11-11'

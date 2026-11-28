@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1960_1960-09-26.txt
   pasal_count: 12
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: efbe7f37705cd0f7a69adaccb5d16f916cad2d4107155bb9ea2b3f4c1d7c59d6
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9992
 pdf_sha256: efbe7f37705cd0f7a69adaccb5d16f916cad2d4107155bb9ea2b3f4c1d7c59d6
 tanggal_pengundangan: '1960-09-26'
 tanggal_berlaku: '1960-09-26'

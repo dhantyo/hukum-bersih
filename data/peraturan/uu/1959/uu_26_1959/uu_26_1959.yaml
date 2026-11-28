@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_26_1959_1959-07-04.txt
   pasal_count: 1
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 262eeac2db7e2ae05ec381b1f11d78529d220b0de52165b531241f5a293a32cc
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9966
 pdf_sha256: 262eeac2db7e2ae05ec381b1f11d78529d220b0de52165b531241f5a293a32cc
 tanggal_pengundangan: '1959-07-04'
 tanggal_berlaku: '1959-07-04'
