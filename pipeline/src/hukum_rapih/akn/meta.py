@@ -44,7 +44,7 @@ RELATIONS = {"amends": ("activeRef", "textualMod", "substitution"),
              "enacted_by": ("passiveRef", "legalSystemMod", "conversion")}
 
 # the number in "LN.2008/NO.58", "LN. 1961 No. 8", "LN 2024 (1)"
-LN_NUMBER = re.compile(r"\bLN\.?\s*\d{4}\s*(?:/\s*No\.?|No\.?|\()\s*(\d+)", re.I)
+LN_NUMBER = re.compile(r"\bLN\.?\s*\d{4}\s*(?:/\s*No\.?|No\.?|\()\s*(\d+)", re.IGNORECASE)
 
 
 @dataclass(frozen=True)
@@ -187,20 +187,23 @@ def _events(rec: dict, revoked_on: dict[str, str]) -> list[dict]:
     """The attributes of each eventRef: the record's own dates, then each amendment with a
     full date, then the revocation that took effect first."""
     signed = " ".join(f"#{_eid(field)}" for field in ("pejabat_penetapan", "tempat_penetapan")
-                      if rec.get(field))
-    events = [dict(eId=eid, date=rec[field], source="#original") for field, eid in EVENTS.items()
+                      if rec.get(field)) or None
+    events = [_event(eid, rec[field], "original") for field, eid in EVENTS.items()
               if rec.get(field)]
     for event in events:
         if event["eId"] == EVENTS["tanggal_penetapan"]:
-            event.update(type="generation", refersTo=signed or None)
-    events += [dict(eId=_amendment(law), date=point["date"], source=f"#{law}", type="amendment")
+            event.update(type="generation", refersTo=signed)
+    events += [_event(_amendment(law), point["date"], law, "amendment")
                for point in _points(rec) if point["kind"] == "gabungan" and _full(point["date"])
                for law in point["after"]]
     repeal = _repeal(revoked_on)
     if repeal:
-        events.append(dict(eId=_repeal_eid(repeal), date=revoked_on[repeal],
-                           source=f"#{repeal}", type="repeal"))
+        events.append(_event(_repeal_eid(repeal), revoked_on[repeal], repeal, "repeal"))
     return events
+
+
+def _event(eid: str, date: str, source: str, kind: str | None = None) -> dict:
+    return {"eId": eid, "date": date, "source": f"#{source}", "type": kind}
 
 
 def _temporal_data(meta: _Meta, law: LawContext) -> None:
