@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_34_1948_1948-12-11.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 01c732d622e50c40766ce006bbdf4ef3eddf3d47d05273e495b8acf7cf0bcc25
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9885
 pdf_sha256: 01c732d622e50c40766ce006bbdf4ef3eddf3d47d05273e495b8acf7cf0bcc25
 tanggal_pengundangan: '1948-12-11'
 tanggal_berlaku: '1945-08-17'

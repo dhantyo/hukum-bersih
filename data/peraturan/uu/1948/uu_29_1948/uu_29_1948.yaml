@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_29_1948_1948-09-03.txt
   pasal_count: 9
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6677638cd4ae28c54b8d5c2bb2be6b8a6acdc3d5a547d153de19ddf9c1d6c7a4
+  checks:
+    version: 2
+    failed:
+    - name: pasal_gap
+      detail: 2->8 8->4
+    word_coverage: 0.999
 pdf_sha256: 6677638cd4ae28c54b8d5c2bb2be6b8a6acdc3d5a547d153de19ddf9c1d6c7a4
 tanggal_pengundangan: '1948-09-03'
 tanggal_berlaku: '1948-09-03'

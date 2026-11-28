@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1948_1948-03-30.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 21929330510cc38a78de6352b8806fcbb0aabe6dee5da7ce3a456c5fe994715f
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9906
 pdf_sha256: 9902eaaa827f2f959720fdb750b155f6b323904ca2de9ec33ebedb6507b73174
 tanggal_pengundangan: '1948-03-31'
 subjek: HUKUM ACARA DAN PERADILAN

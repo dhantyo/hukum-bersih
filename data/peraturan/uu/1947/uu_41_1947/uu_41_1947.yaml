@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_41_1947_1947-12-27.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a9c8321fcd99a4db116d15f436c97c9b0786ca3603ece01df12793e7067c3aa5
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9934
 pdf_sha256: a9c8321fcd99a4db116d15f436c97c9b0786ca3603ece01df12793e7067c3aa5
 tanggal_pengundangan: '1947-12-27'
 subjek: ADMINISTRASI DAN TATA USAHA NEGARA

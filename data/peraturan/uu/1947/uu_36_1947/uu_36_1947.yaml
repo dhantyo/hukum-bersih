@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_36_1947_1947-11-28.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 80d536b61592931c2d3385e66cbfd1efefe933408fd9f985631dcbc0862ca77e
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9945
 pdf_sha256: 80d536b61592931c2d3385e66cbfd1efefe933408fd9f985631dcbc0862ca77e
 tanggal_pengundangan: '1947-11-28'
 subjek: HUKUM ACARA DAN PERADILAN

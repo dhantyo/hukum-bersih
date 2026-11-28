@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1948_1948-01-20.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 965e53fbac2b0f5c8ec7cf138400b117570598713f2c830a94a27aba068cdce2
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9969
 pdf_sha256: 048f946822132269a954cc8501aecb03c1db4210a055c864b41afeb9ef648207
 tanggal_pengundangan: '1948-01-20'
 subjek: PENGESAHAN DAN / ATAU PEMBATALAN PERSETUJUAN / KONVENSI / PERJANJIAN INTERNASIONAL

@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_27_1948_1948-08-28.txt
   pasal_count: 65
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 07cc10fd57653bf1aedd4223b7c2257de7f6425a3a7a40a4218fec157ec3f31c
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: 07cc10fd57653bf1aedd4223b7c2257de7f6425a3a7a40a4218fec157ec3f31c
 tanggal_pengundangan: '1948-08-28'
 subjek: PEMBENTUKAN, PERUBAHAN, DAN PEMBUBARAN KOMISI / KOMITE / BADAN / DEWAN / STAF

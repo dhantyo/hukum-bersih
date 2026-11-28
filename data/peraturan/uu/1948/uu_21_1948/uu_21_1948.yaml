@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_1948_1948-06-12.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3ad790226b2cc48aaf7f0fb5498033249c2faf221112b30fa7a97b9985c3d9db
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9977
 pdf_sha256: 3ad790226b2cc48aaf7f0fb5498033249c2faf221112b30fa7a97b9985c3d9db
 tanggal_pengundangan: '1948-06-12'
 subjek: PERPAJAKAN

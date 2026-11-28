@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1948_1948-03-23.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d9bd6ed9dc9ff3aaa70831c7e6c3d607b9d2c2e265f6d862897be8819470603d
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9887
 pdf_sha256: 3c6154b4782f08e2f6e7bb1586a90f9a470ca42da0130fd32c7a15cf506ad424
 tanggal_pengundangan: '1948-03-23'
 subjek: KEWARGANEGARAAN DAN IMIGRASI

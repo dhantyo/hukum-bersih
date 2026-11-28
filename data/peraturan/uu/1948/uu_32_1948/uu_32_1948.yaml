@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_32_1948_1948-10-30.txt
   pasal_count: 7
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c18f0e1e5cf7b8a7e6abf7728fd44a4eeb817900841216ea94b165d78d55b84f
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9946
 pdf_sha256: c18f0e1e5cf7b8a7e6abf7728fd44a4eeb817900841216ea94b165d78d55b84f
 tanggal_pengundangan: '1948-10-30'
 subjek: PERBANKAN, LEMBAGA KEUANGAN

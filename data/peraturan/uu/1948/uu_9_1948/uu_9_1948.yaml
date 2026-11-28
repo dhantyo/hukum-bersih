@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_1948_1948-04-14.txt
   pasal_count: 7
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 40e85ae61d3c5e4219acd25765c24d6327975d8466d87ba1d0b62c552b3183a1
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9979
 pdf_sha256: 9a17f23ff7d1b63336b2803b57c6c749a21b4fc7325f55f436b49ea54fcd25a5
 tanggal_pengundangan: '1948-04-14'
 subjek: PEMBENTUKAN, PERUBAHAN, DAN PEMBUBARAN KOMISI / KOMITE / BADAN / DEWAN / STAF

@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_39_1947_1947-12-27.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3d75f4aade30a439af91c7d8feaf5681594eb2dd92fedff667293a4ed765de39
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9976
 pdf_sha256: 3d75f4aade30a439af91c7d8feaf5681594eb2dd92fedff667293a4ed765de39
 tanggal_pengundangan: '1947-12-27'
 subjek: HUKUM PIDANA, PERDATA, DAN DAGANG

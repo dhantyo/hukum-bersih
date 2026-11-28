@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_1948_1948-05-31.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8713fadbb80813b0852744cd60f33f62f8badd6c825636428cf26e2452124810
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9972
 pdf_sha256: 8713fadbb80813b0852744cd60f33f62f8badd6c825636428cf26e2452124810
 tanggal_pengundangan: '1948-05-31'
 subjek: PERPAJAKAN

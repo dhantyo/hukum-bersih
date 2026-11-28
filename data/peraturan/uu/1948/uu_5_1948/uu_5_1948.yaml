@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1948_1948-03-24.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a0ba35c5e6c3ffdc0536d3902a2e09f490c6dde6bbad163c8be1513ff7f2acac
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9925
 pdf_sha256: dc1f9ee94b19757b4bcb95573d4b7620b3a494c83b56066eecfdd1198fbba02c
 tanggal_pengundangan: '1948-03-25'
 subjek: KEPENDUDUKAN DAN PERKAWINAN

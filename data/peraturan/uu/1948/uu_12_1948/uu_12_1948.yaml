@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_1948_1948-04-20.txt
   pasal_count: 22
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8197394df59054f9b4eee287b54cb7e300d3a3acece29457c5caa1170236ac13
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9991
 pdf_sha256: 8197394df59054f9b4eee287b54cb7e300d3a3acece29457c5caa1170236ac13
 tanggal_pengundangan: '1948-04-15'
 subjek: KETENAGAKERJAAN

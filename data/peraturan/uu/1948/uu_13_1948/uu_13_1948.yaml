@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_1948_1948-04-26.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 474aeaa0666146d90ccf2fafd330321bd7e849d890c7ce1b01cc291bb41f0b38
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9983
 pdf_sha256: 474aeaa0666146d90ccf2fafd330321bd7e849d890c7ce1b01cc291bb41f0b38
 tanggal_pengundangan: '1948-04-27'
 subjek: AGRARIA, PERTANAHAN, TATA RUANG

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_1948_1948-04-15.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4f47f4b0be8642a9d767766fc0b2f38789147007346fe69ba710026311e33132
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.992
 pdf_sha256: 03d7a5b27fc14e4df55763e45eef6061071709666295eeb29651a06923b84572
 tanggal_pengundangan: '1948-04-15'
 subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH - TERITORIAL INDONESIA

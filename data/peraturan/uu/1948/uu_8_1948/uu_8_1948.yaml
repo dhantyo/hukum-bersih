@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1948_1948-03-31.txt
   pasal_count: 15
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ff7e85d4b047bb9237cec65706a9bffbc75084d0fff36db20f40f710505c357c
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.997
 pdf_sha256: a94451755fd9e9fff65a729d333cd7364637de98750f8c633d2438cbdf8867fc
 tanggal_pengundangan: '1948-04-01'
 subjek: ADMINISTRASI DAN TATA USAHA NEGARA

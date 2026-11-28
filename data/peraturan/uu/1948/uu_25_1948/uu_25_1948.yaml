@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_25_1948_1948-08-13.txt
   pasal_count: 6
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5f00ec2ac40992e9dd611619d741cb919936d78350bcadfb9a09901fba776380
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9971
 pdf_sha256: 5f00ec2ac40992e9dd611619d741cb919936d78350bcadfb9a09901fba776380
 tanggal_pengundangan: '1948-08-13'
 subjek: PERPAJAKAN

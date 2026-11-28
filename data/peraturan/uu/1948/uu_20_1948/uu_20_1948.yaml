@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_1948_1948-06-12.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: adad2e6052f6e0586f52afac2c1d153f40f02ead215a2a2bf00e7eeab4b1a23e
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9921
 pdf_sha256: adad2e6052f6e0586f52afac2c1d153f40f02ead215a2a2bf00e7eeab4b1a23e
 tanggal_pengundangan: '1948-06-12'
 subjek: PERPAJAKAN

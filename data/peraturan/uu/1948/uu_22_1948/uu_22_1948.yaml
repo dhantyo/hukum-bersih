@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_1948_1948-07-10.txt
   pasal_count: 47
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ed8b697b2d796cb1334921440410c42189531bafb746d19f21baeef730920dcd
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9998
 pdf_sha256: ed8b697b2d796cb1334921440410c42189531bafb746d19f21baeef730920dcd
 tanggal_pengundangan: '1948-07-10'
 subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH

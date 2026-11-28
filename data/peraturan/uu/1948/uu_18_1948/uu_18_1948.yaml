@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_1948_1948-05-31.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5722f6ac4938ef269783d8e9a6c5463f8e614eeb60287bd38747d9b659870280
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9897
 pdf_sha256: 5722f6ac4938ef269783d8e9a6c5463f8e614eeb60287bd38747d9b659870280
 tanggal_pengundangan: '1948-05-31'
 subjek: PERTAHANAN DAN KEAMANAN, MILITER

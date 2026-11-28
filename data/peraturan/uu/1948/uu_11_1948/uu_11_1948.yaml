@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1948_1948-04-15.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 97e43bdd30cfd96aae6b22749275e45ddd5bb56ecb7292bec48303c414e82f49
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9838
 pdf_sha256: 97e43bdd30cfd96aae6b22749275e45ddd5bb56ecb7292bec48303c414e82f49
 tanggal_pengundangan: '1948-04-15'
 subjek: KEWARGANEGARAAN DAN IMIGRASI

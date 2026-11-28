@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1948_1948-03-05.txt
   pasal_count: 37
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: bf6ce9c45648963d69b014c57e42f6dea895fecfbb5fa42603e04942f3eda526
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9991
 pdf_sha256: 7a8e48c064db89a29fb95de4a8dd7a8ad90a44d59e78e36b6031ab55bd87ba92
 tanggal_pengundangan: '1948-03-06'
 subjek: PERTAHANAN DAN KEAMANAN, MILITER

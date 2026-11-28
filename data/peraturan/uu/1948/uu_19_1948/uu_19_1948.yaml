@@ -29,9 +29,17 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_1948_1948-06-08.txt
   pasal_count: 72
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4d9b5349bb1df2c7e23e89e02c5391848465aa9d1e82216f03cff08d9480547f
+  checks:
+    version: 2
+    failed:
+    - name: pasal_gap
+      detail: 7->9 9->9
+    - name: missed_heading
+      detail: body 1
+    word_coverage: 0.9992
 pdf_sha256: 4d9b5349bb1df2c7e23e89e02c5391848465aa9d1e82216f03cff08d9480547f
 tanggal_pengundangan: '1948-06-08'
 subjek: ADMINISTRASI DAN TATA USAHA NEGARA - HUKUM ACARA DAN PERADILAN

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_35_1948_1948-12-11.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1063c862c88107617dd8e4a494295eeaae18941d559f0453ac467b0c9d26924b
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9961
 pdf_sha256: 1063c862c88107617dd8e4a494295eeaae18941d559f0453ac467b0c9d26924b
 tanggal_pengundangan: '1948-12-11'
 subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN
