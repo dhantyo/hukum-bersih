@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2009_2009-01-12.txt
   pasal_count: 175
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c20da2e3f7248aa6e7dfdb2af898ed02d1ced28eb931e57910e005851e105967
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9986
 pdf_sha256: e372e910b783e21a1d9a5f1aef901a93306ff5a9644d5ee6f90e5494819fb7fc
 tanggal_pengundangan: '2009-01-12'
 tanggal_berlaku: '2009-01-12'

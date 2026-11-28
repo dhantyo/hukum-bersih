@@ -29,13 +29,20 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1968_1968-03-22.txt
   pasal_count: 3
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f6181bd761d1be5b71e73790629790c165d9a3be92642efec7a4c83d6ea9bc18
   ocr: true
   ocr_engine: indra
   ocr_fixed: 2
   ocr_unknown: 4
+  checks:
+    version: 1
+    failed:
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 1.0
+    ocr_unknown_rate: 0.004
 tanggal_pengundangan: '1968-03-22'
 tanggal_berlaku: '1968-03-22'
 lembaran_negara: 'LN. 1968/ No.14 , TLN NO. 2847 , LL SETNEG : 2 HLM'

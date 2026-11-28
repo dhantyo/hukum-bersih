@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_2003_2003-04-05.txt
   pasal_count: 39
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 95dbbfa55cde3799d3c8ab537d2d6c5f8807a2edc2f35a79c37792d99efc1c5f
+  checks:
+    version: 1
+    failed:
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 0.9996
 pdf_sha256: 95dbbfa55cde3799d3c8ab537d2d6c5f8807a2edc2f35a79c37792d99efc1c5f
 tanggal_pengundangan: '2003-04-05'
 tanggal_berlaku: '2003-04-05'

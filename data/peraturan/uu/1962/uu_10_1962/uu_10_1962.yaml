@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_1962_1962-06-18.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2e3cdedc46c42b5a774b2dc4b871f1d8e58852b8777b2f2676bd84d165314ce3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9892
 pdf_sha256: 2e3cdedc46c42b5a774b2dc4b871f1d8e58852b8777b2f2676bd84d165314ce3
 tanggal_pengundangan: '1962-06-18'
 tanggal_berlaku: '1962-01-01'

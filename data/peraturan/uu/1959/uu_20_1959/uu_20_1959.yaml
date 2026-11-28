@@ -33,13 +33,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_1959_1959-06-26.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c19c0770efa8452a8bbc6aa8746115eb84439845bbfbfe9bf9bc14d114ceb41a
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 0
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
+    ocr_unknown_rate: 0.0
 tanggal_pengundangan: '1959-07-04'
 tanggal_berlaku: '1959-07-04'
 lembaran_negara: 'LN. 1959 No. 64, LL SETNEG : 3 HLM'

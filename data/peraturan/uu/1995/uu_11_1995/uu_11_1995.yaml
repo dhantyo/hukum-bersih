@@ -28,13 +28,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1995_1995-12-30.txt
   pasal_count: 72
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 456b868f41ba6c71b3070b753e3457667ffc12b371cd16b4cbd1f3cdb5dfd1bb
   ocr: true
   ocr_engine: indra
   ocr_fixed: 4
   ocr_unknown: 46
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
+    ocr_unknown_rate: 0.003
 pdf_sha256: dd70e18e9d19bbffd78f59b217de1bf259eee64e996c441eec86bccebe31c38e
 tanggal_pengundangan: '1995-12-30'
 tanggal_berlaku: '1996-04-01'
