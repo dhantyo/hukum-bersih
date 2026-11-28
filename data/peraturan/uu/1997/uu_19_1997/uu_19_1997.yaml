@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_1997_1997-05-23.txt
   pasal_count: 45
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 76cd67b4535ec724b766efb7a6e34bb25901d2438edae01d01880a74d813305d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9997
 pdf_sha256: 76cd67b4535ec724b766efb7a6e34bb25901d2438edae01d01880a74d813305d
 tanggal_pengundangan: '1997-05-23'
 tanggal_berlaku: '1997-05-23'

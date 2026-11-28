@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1997_1997-03-11.txt
   pasal_count: 72
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8de159766363c18db596ee83caa4bbc3d56d4434d07b5e094d91065046f5962e
+  checks:
+    version: 1
+    failed:
+    - name: pasal_gap
+      detail: 53->55
+    word_coverage: 0.9996
 pdf_sha256: 8de159766363c18db596ee83caa4bbc3d56d4434d07b5e094d91065046f5962e
 tanggal_pengundangan: '1997-03-11'
 tanggal_berlaku: '1997-03-11'

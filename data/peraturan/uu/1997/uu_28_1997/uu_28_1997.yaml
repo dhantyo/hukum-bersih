@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_28_1997_1997-10-07.txt
   pasal_count: 30
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: bde185ba6af3d2f5eef44b10374e601dc55c4cf58e5c3f5456cba1082ce51e8e
+  checks:
+    version: 1
+    failed:
+    - name: pasal_gap
+      detail: 15->17
+    word_coverage: 0.9995
 pdf_sha256: bde185ba6af3d2f5eef44b10374e601dc55c4cf58e5c3f5456cba1082ce51e8e
 tanggal_pengundangan: '1997-10-07'
 tanggal_berlaku: '1997-10-07'

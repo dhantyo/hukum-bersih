@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1997_1997-03-24.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: cacbb8d3889a9417abc6440bb48104c7a4f2ea6cf6bac281bade7324930587af
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9991
 pdf_sha256: cacbb8d3889a9417abc6440bb48104c7a4f2ea6cf6bac281bade7324930587af
 tanggal_pengundangan: '1997-03-24'
 tanggal_berlaku: '1997-03-24'

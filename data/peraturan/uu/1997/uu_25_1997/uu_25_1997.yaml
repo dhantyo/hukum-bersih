@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_25_1997_1997-10-03.txt
   pasal_count: 199
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: bfecbedbb59910889305940f3063f4a99a07cf98d7dde7269aa63419406ee61c
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: body 1
+    word_coverage: 0.9998
 pdf_sha256: bfecbedbb59910889305940f3063f4a99a07cf98d7dde7269aa63419406ee61c
 tanggal_pengundangan: '1997-10-03'
 tanggal_berlaku: '1998-10-01'

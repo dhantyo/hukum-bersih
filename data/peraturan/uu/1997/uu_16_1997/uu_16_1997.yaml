@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_1997_1997-05-19.txt
   pasal_count: 42
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d7464f76819e671ec922e86f0873d898f930d5c44023ed56295c4a69e0fe6b84
+  checks:
+    version: 1
+    failed:
+    - name: pasal_gap
+      detail: 13->15
+    word_coverage: 0.9993
 pdf_sha256: d7464f76819e671ec922e86f0873d898f930d5c44023ed56295c4a69e0fe6b84
 tanggal_pengundangan: '1997-05-19'
 tanggal_berlaku: '1997-05-19'

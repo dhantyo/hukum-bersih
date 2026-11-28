@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_27_1997_1997-10-03.txt
   pasal_count: 36
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e6bebc77a46c3de4ed2802679f0828a5b49730235e40e6ccd99610901818185c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9994
 pdf_sha256: e6bebc77a46c3de4ed2802679f0828a5b49730235e40e6ccd99610901818185c
 tanggal_pengundangan: '1997-10-03'
 tanggal_berlaku: '1997-10-03'

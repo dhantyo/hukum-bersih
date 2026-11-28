@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_1997_1997-10-08.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5f17e92b6d56d71fedcf26bd3ec9db628a10f2e605f43522ced93f584226b164
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9994
 pdf_sha256: 5f17e92b6d56d71fedcf26bd3ec9db628a10f2e605f43522ced93f584226b164
 tanggal_pengundangan: '1997-10-08'
 tanggal_berlaku: '1997-10-08'

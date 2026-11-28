@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_1997_1997-05-07.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 81ccacb051d65a07550d8687ee81aa0f775ccf5de82cd7abea253e39c5890236
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: 81ccacb051d65a07550d8687ee81aa0f775ccf5de82cd7abea253e39c5890236
 tanggal_pengundangan: '1997-05-07'
 tanggal_berlaku: '1997-05-07'
