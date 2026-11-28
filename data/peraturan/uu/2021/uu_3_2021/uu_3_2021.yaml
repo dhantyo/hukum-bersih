@@ -80,4 +80,13 @@ bpk:
     archive_url: null
   status_peraturan: null
   tanggal_pengundangan: '2020-10-06'
+  file_order:
+    order:
+    - 178013
+    - 178014
+    - 178015
+    - 178016
+    skip: []
+    reason: law first, then Lampiran in page order 1-310, 311-822, 823-1077
 uji_materi: null
+recheck: file order set (decision 0023)

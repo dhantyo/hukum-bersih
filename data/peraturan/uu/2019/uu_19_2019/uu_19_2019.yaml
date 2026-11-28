@@ -135,6 +135,12 @@ bpk:
       tentang: Komisi Pemberantasan Tindak Pidana Korupsi
       url: https://peraturan.bpk.go.id/Details/44493/uu-no-30-tahun-2002
       note: null
+  file_order:
+    order:
+    - 112813
+    - 112814
+    skip: []
+    reason: the law, then its Penjelasan
 uji_materi:
 - putusan: 70/PUU-XXIV/2026
   url: https://peraturan.bpk.go.id/DownloadUjiMateri/233/putusan_mkri_70-PUU-XXIV-2026.pdf
@@ -238,3 +244,4 @@ uji_materi:
     penggeledahan dan penyitaan atas izin tertulis dari Dewan Pengawas”, menjadi selengkapnya
     berbunyi “Dalam proses penyidikan, penyidik dapat melakukan penggeledahan dan
     penyitaan dengan memberitahukan kepada Dewan Pengawas.”
+recheck: file order set (decision 0023)

@@ -88,6 +88,12 @@ bpk:
       tentang: Ketentuan Umum dan Tata Cara Perpajakan
       url: https://peraturan.bpk.go.id/Details/46986/uu-no-6-tahun-1983
       note: null
+  file_order:
+    order:
+    - 29510
+    - 29511
+    skip: []
+    reason: the law, then its Penjelasan
 uji_materi:
 - putusan: 63/PUU-XV/2017
   url: https://peraturan.bpk.go.id/DownloadUjiMateri/137/63_PUU-XV_2017.pdf
@@ -101,3 +107,4 @@ uji_materi:
     tidak mempunyai kekuatan hukum mengikat sepanjang tidak dimaknai hanya berkenaan
     dengan hal-hal yang bersifat teknis administratif dan bukan pembatasan dan/atau
     perluasan hak dan kewajiban warga negara
+recheck: file order set (decision 0023)

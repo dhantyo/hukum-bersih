@@ -66,5 +66,11 @@ bpk:
         Jenis Tanda Kehormatan Republik Indonesia yang Berbentuk Bintang
       url: https://peraturan.bpk.go.id/Details/47551/uu-no-4-tahun-1972
       note: null
+  file_order:
+    order:
+    - 273276
+    - 273252
+    skip: []
+    reason: the law first; BPK lists its Lampiran (the insignia plate) first
 uji_materi: null
-parser_version_tried: 19
+recheck: file order set (decision 0023)

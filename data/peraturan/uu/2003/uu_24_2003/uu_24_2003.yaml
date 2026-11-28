@@ -84,6 +84,12 @@ bpk:
       tentang: Perubahan Atas Undang-Undang Nomor 24 Tahun 2003 Tentang Mahkamah Konstitusi
       url: https://peraturan.bpk.go.id/Details/39183/uu-no-8-tahun-2011
       note: null
+  file_order:
+    order:
+    - 32326
+    - 32327
+    skip: []
+    reason: the law, then its Penjelasan
 uji_materi:
 - putusan: 31/PUU-XXI/2023
   url: https://peraturan.bpk.go.id/DownloadUjiMateri/227/putusan_mkri_31_PUU-XXI_2023.pdf
@@ -545,3 +551,4 @@ history:
     instruction: 22
     point: uu_24_2003_2020-09-29
     wording: read
+recheck: file order set (decision 0023)

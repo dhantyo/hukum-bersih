@@ -96,6 +96,13 @@ bpk:
         Selatan dan Kalimantan Timur
       url: https://peraturan.bpk.go.id/Details/51157/uu-no-25-tahun-1956
       note: Pasal 1 angka 3 UU No. 25 Tahun 1956
+  file_order:
+    order:
+    - 192290
+    - 192291
+    - 192292
+    skip: []
+    reason: law first, then Lampiran I, then Lampiran II
 uji_materi: null
 history:
   points:
@@ -221,3 +228,4 @@ history:
     instruction: 15
     point: uu_3_2022_2023-10-31
     wording: read
+recheck: file order set (decision 0023)

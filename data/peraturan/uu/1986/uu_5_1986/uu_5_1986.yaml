@@ -72,6 +72,15 @@ bpk:
         Usaha Negara
       url: https://peraturan.bpk.go.id/Details/40500/uu-no-9-tahun-2004
       note: null
+  file_order:
+    order:
+    - 47525
+    skip:
+    - bpk_file_id: 47520
+      reason: copy of the body contained in 47525, which also has the Penjelasan (71
+        pages)
+    reason: 47525 is the complete text through the Penjelasan; 47520 stops after the
+      body
 uji_materi:
 - putusan: 17/PUU-IX/2011
   url: https://peraturan.bpk.go.id/DownloadUjiMateri/72/putusan_sidang_17%20puu%202011%20-%20TELAH%20BACA.pdf
@@ -79,3 +88,4 @@ uji_materi:
     dengan Undang-Undang Nomor 9 Tahun 2004 dan terakhir dengan Undang-Undang Nomor
     51 Tahun 2009 tentang Peradilan Tata Usaha Negara bertentangan dengan Pasal 28D
     ayat (1) UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.
+recheck: file order set (decision 0023)

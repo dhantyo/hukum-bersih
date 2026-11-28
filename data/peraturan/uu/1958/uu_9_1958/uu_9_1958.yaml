@@ -54,6 +54,11 @@ bpk:
     bytes: 36296
     archive_url: null
   status_peraturan: null
+  file_order:
+    order:
+    - 40926
+    - 40927
+    skip: []
+    reason: the law first, then its Lampiran (the agreement text)
 uji_materi: null
-reparse_error: 'v19: new text has 3 pasal, stored text 11'
-recheck: 'missed heading in body 3; watermark 8; closing: no date of signing'
+recheck: file order set (decision 0023)

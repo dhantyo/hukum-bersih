@@ -59,4 +59,12 @@ bpk:
     bytes: 157204
     archive_url: null
   status_peraturan: null
+  file_order:
+    order:
+    - 40571
+    skip:
+    - bpk_file_id: 116465
+      reason: copy of 40571 (same text, same page count)
+    reason: two identical copies of the law; keep the first
 uji_materi: null
+recheck: file order set (decision 0023)

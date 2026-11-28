@@ -59,6 +59,15 @@ bpk:
     bytes: 881606
     archive_url: null
   status_peraturan: null
+  file_order:
+    order:
+    - 181261
+    skip:
+    - bpk_file_id: 29421
+      reason: a copy of the body inside 181261 (lengkap)
+    - bpk_file_id: 29422
+      reason: the table of contents of the Lampiran, a part of 181261 (lengkap)
+    reason: 181261 holds the law, its Penjelasan and the Lampiran in one file; the
+      other two files repeat parts of it
 uji_materi: null
-reparse_error: 'v19: new text has 2657 words, stored text 30208'
-recheck: 'page-turn 2; closing: no date of signing'
+recheck: file order set (decision 0023)

@@ -62,4 +62,14 @@ bpk:
     bytes: 243351
     archive_url: null
   status_peraturan: null
+  file_order:
+    order:
+    - 35789
+    skip:
+    - bpk_file_id: 175140
+      reason: retyped copy of 35789 with modern spelling (Konferensi for Konperensi);
+        35789 is the original print and the current source
+    reason: both files hold the same law text; keep the original printed scan, skip
+      the retyped copy
 uji_materi: null
+recheck: file order set (decision 0023)
