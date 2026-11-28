@@ -32,12 +32,15 @@ PARSER_VERSION = 18  # 18: in a Lampiran, only a Penjelasan heading naming the l
 #                    PENDJELASAN; 4: lists between a BAB heading and its first Pasal (UU 19/2003)
 # Texts made by a parser older than this are re-converted on the next import; newer ones only
 # when the record is flagged (kept old text, parse error, no text). Raise it only for a fix
-# that changes laws which pass every check (2026-11-22: don't redo good work).
-PARSER_REDO_BELOW = 10
+# that changes laws which pass every check (2026-11-22: don't redo good work). 17: the
+# self-check gate (decision 0026) keeps a redone text only when no check gets worse, so the
+# v11 to v16 texts (about 1,900 on 2026-11-28, most v12) get v13 to v17's fixes.
+PARSER_REDO_BELOW = 17
 # Same, for texts read with OCR (scanned pages) only: a fix that changes only scanned pages
 # redoes the ~330 OCR'd laws without the ~1,600 typed ones. 16: page header/footer by
-# position (2026-11-24: UU 100/2024 kept "RESIDEN REPUBlK INDONESIA" in its title).
-OCR_REDO_BELOW = 16
+# position (2026-11-24: UU 100/2024 kept "RESIDEN REPUBlK INDONESIA" in its title). 18: the
+# gate, as for PARSER_REDO_BELOW (2026-11-28).
+OCR_REDO_BELOW = 18
 
 ORDINAL = {"PERTAMA": 1, "KESATU": 1, "KEDUA": 2, "KETIGA": 3, "KEEMPAT": 4, "KELIMA": 5,
            "KEENAM": 6, "KETUJUH": 7, "KEDELAPAN": 8, "KESEMBILAN": 9, "KESEPULUH": 10}
