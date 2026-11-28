@@ -25,9 +25,29 @@ relationships:
   revoked_by: []
   enacts: []
   enacted_by: []
-versions: []
+versions:
+- id: uu_23_1968_1968-12-27
+  kind: asli
+  source: official
+  date: '1968-12-27'
+  date_basis: tanggal_penetapan
+  text: uu_23_1968_1968-12-27.txt
+  pasal_count: 17
+  parser_version: 19
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 96068591f52cb088d997f3273bce69080f2bf13b604a58e0cf0a0a730dee22b2
+  extra_pdf_sha256:
+  - 540b219932bfc40cb0366cad5b199c07cf96defe55d5b10f25d397acdc44b701
+  ocr: true
+  ocr_engine: indra
+  ocr_fixed: 3
+  ocr_unknown: 45
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9997
+    ocr_unknown_rate: 0.0128
 pdf_sha256: 96068591f52cb088d997f3273bce69080f2bf13b604a58e0cf0a0a730dee22b2
-pdf_quality: image_only_or_unparsed
 tanggal_pengundangan: '1968-12-27'
 tanggal_berlaku: '1968-10-01'
 lembaran_negara: 'LN. 1968/ No.76, TLN NO.2876, LL : 7 HLM'
@@ -73,4 +93,3 @@ bpk:
     skip: []
     reason: the law first; BPK lists its Lampiran (the insignia plate) first
 uji_materi: null
-recheck: file order set (decision 0023)

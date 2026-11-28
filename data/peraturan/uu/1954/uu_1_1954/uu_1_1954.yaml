@@ -35,9 +35,11 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1954_1953-12-29.txt
   pasal_count: 2
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4919ea7e2c0795a370fb23d1b3f8169e54b9d6051317151d4a864b0bf1bbebde
+  extra_pdf_sha256:
+  - ae75922a504ac385a47f00ce1af4525d14d95cb3a3e7a0c287ef24ccf6feee81
   checks:
     version: 2
     failed:
@@ -81,4 +83,3 @@ bpk:
     skip: []
     reason: the law, then its Lampiran Penjelasan
 uji_materi: null
-recheck: file order set (decision 0023)

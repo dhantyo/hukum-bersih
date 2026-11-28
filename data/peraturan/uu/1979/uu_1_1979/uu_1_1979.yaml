@@ -28,11 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1979_1979-01-18.txt
   pasal_count: 48
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4e0b61c788bdad6f4ac3e3b6102d5b004d1cb552d95f68c67f7a1dd2e1ec069d
+  extra_pdf_sha256:
+  - a0900f9405c7d634ecddf666b94eeb95168f65e2bbca79c82a6c2a177bf64d27
   checks:
-    version: 1
+    version: 2
     failed: []
     word_coverage: 0.999
 pdf_sha256: 4e0b61c788bdad6f4ac3e3b6102d5b004d1cb552d95f68c67f7a1dd2e1ec069d
@@ -66,4 +68,3 @@ bpk:
     skip: []
     reason: the law, then its Lampiran
 uji_materi: null
-recheck: file order set (decision 0023)

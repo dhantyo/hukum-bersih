@@ -29,18 +29,20 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_2025_2025-10-22.txt
   pasal_count: 54
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d02eb4fc1a4297ca66a4acce9d76a69b5da23a6fddc3de89eea6dcc932e40c87
+  extra_pdf_sha256:
+  - ea849b749369e7b3b7798f1b9195f6ba6759d85a863d397c009f9bb23cf73dee
   ocr: true
   ocr_engine: indra
-  ocr_fixed: 0
-  ocr_unknown: 40
+  ocr_fixed: 4
+  ocr_unknown: 66
   checks:
-    version: 1
+    version: 2
     failed: []
-    word_coverage: 0.9989
-    ocr_unknown_rate: 0.0022
+    word_coverage: 0.9991
+    ocr_unknown_rate: 0.0029
 pdf_sha256: d02eb4fc1a4297ca66a4acce9d76a69b5da23a6fddc3de89eea6dcc932e40c87
 tanggal_pengundangan: '2025-10-22'
 tanggal_berlaku: '2026-01-01'
@@ -85,4 +87,3 @@ uji_materi:
     menjadi bagian dari anggaran operasional penyelenggaraan pendidikan dan pemisahan
     dimaksud berlaku paling lambat dalam Anggaran Pendapatan dan Belanja Negara Tahun
     Anggaran 2028 atau paling lama 2 (dua) tahun sejak Putusan a quo diucapkan
-recheck: file order set (decision 0023)

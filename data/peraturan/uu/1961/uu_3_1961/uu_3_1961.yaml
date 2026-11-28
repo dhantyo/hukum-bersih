@@ -30,13 +30,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1961_1961-02-25.txt
   pasal_count: 2
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: de8afbff4b5ca0856c59e40f9088deca89709edee7ab348e932de7e23f1184d7
+  extra_pdf_sha256:
+  - 03e6779c0ca3e8c3c5d44cf09c1719afe6cc2bd6f174c6fde4d826e737cd0276
   checks:
-    version: 1
+    version: 2
     failed: []
-    word_coverage: 0.9953
+    word_coverage: 0.9986
 pdf_sha256: de8afbff4b5ca0856c59e40f9088deca89709edee7ab348e932de7e23f1184d7
 tanggal_pengundangan: '1961-02-25'
 tanggal_berlaku: '1961-02-25'
@@ -68,4 +70,3 @@ bpk:
     skip: []
     reason: law first, then Lampiran (convention text)
 uji_materi: null
-recheck: file order set (decision 0023)

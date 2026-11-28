@@ -30,13 +30,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1994_1994-04-20.txt
   pasal_count: 5
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ffb11e60029c4948eb04ef5a752d472001ad8831cf8058c6ed5bdbbaf7ae25e7
+  extra_pdf_sha256:
+  - 0efee2e6c3a3c81842cfcdde5cd7da6b0e11368c80fa975f038544fb034485a8
   checks:
-    version: 1
+    version: 2
     failed: []
-    word_coverage: 0.9972
+    word_coverage: 0.9992
 pdf_sha256: ffb11e60029c4948eb04ef5a752d472001ad8831cf8058c6ed5bdbbaf7ae25e7
 tanggal_pengundangan: '1994-04-20'
 tanggal_berlaku: '1993-04-01'
@@ -74,4 +76,3 @@ bpk:
     skip: []
     reason: law first, then Lampiran
 uji_materi: null
-recheck: file order set (decision 0023)

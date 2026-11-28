@@ -30,18 +30,24 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2025_2025-09-18.txt
   pasal_count: 13
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 94c626e1217505467bc8ceee50de20c3dd80123bdf4965111530114ef3f5ecc8
+  extra_pdf_sha256:
+  - ad473b006834c58620d97ac9fd772fbc3c85fe0be6fa791ef582121935ef96ff
+  - 1b11dacf087089299dd0c055ac7529fea189e243e77666c8be694deb2af0ef11
+  - 45603b92254aea32b6851ad2fcf86cb52b1624a3dc87b9ed38c65066e578147b
+  - 7d9611d43bf3a391112e38f01ea453c6023e7b18e1640f19695759761b6aa923
+  - b42dc21970cf80d512610af781324c819d0cdec335e43390a125c6826e5deb8f
   ocr: true
   ocr_engine: indra
-  ocr_fixed: 0
-  ocr_unknown: 21
+  ocr_fixed: 247
+  ocr_unknown: 10478
   checks:
-    version: 1
+    version: 2
     failed: []
-    word_coverage: 0.9968
-    ocr_unknown_rate: 0.0037
+    word_coverage: 0.9999
+    ocr_unknown_rate: 0.0179
 pdf_sha256: 94c626e1217505467bc8ceee50de20c3dd80123bdf4965111530114ef3f5ecc8
 tanggal_pengundangan: '2025-09-18'
 tanggal_berlaku: '2025-09-18'
@@ -102,4 +108,3 @@ bpk:
     reason: the law first, then the Lampiran parts in page-range order (1-403, 404-499,
       500-603, 604-808, 809-1708)
 uji_materi: null
-recheck: file order set (decision 0023)

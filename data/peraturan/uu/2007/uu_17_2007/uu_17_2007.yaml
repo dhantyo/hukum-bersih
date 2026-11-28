@@ -29,6 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_2007_2007-02-05.txt
   pasal_count: 9
+  parser_version: 19
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 7a8a8d8ba33f335bc7fb6a7bcae6be889dc82a38ea917eae696d15e1c99d2119
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9987
 pdf_sha256: 812ffda047988b5b7c05e1e6f872544919ee833b85f4967c9f42b6d3e4969279
 tanggal_pengundangan: '2007-02-05'
 tanggal_berlaku: '2007-02-05'
@@ -70,4 +77,3 @@ bpk:
     reason: 181261 holds the law, its Penjelasan and the Lampiran in one file; the
       other two files repeat parts of it
 uji_materi: null
-recheck: file order set (decision 0023)

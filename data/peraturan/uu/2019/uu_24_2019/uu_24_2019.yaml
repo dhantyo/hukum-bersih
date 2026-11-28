@@ -28,11 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_2019_2019-10-24.txt
   pasal_count: 34
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d60a0802e270fd2fd4bc8e8f374923e80d41d2f619a4cb30b69931f33ad024c5
+  extra_pdf_sha256:
+  - 4f98dd23c858d8555c78ff73b969ab91ebc13f3697c39e7ac7ad0eb2f3bbd9e4
   checks:
-    version: 1
+    version: 2
     failed: []
     word_coverage: 1.0
 pdf_sha256: a7949ab752c7ea1915dd216111127ce95e0a34fc09ebdcde176e175ef03aa178
@@ -66,4 +68,3 @@ bpk:
     skip: []
     reason: the law, then its Penjelasan
 uji_materi: null
-recheck: file order set (decision 0023)

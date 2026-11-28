@@ -30,18 +30,22 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2021_2021-10-06.txt
   pasal_count: 13
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2955946e934e34bbf04e69054fdc1d209a41a2aad603626c44579798f9d8069e
+  extra_pdf_sha256:
+  - 167710d5f67223a9b2b08925515c6490eb399ce28f8ac4eb7ef900e6737b9e03
+  - d260b77731a82b74901e5f5b9afafc96b3d290e19868808bfeb6e4230958e858
+  - feba4b30b7f9a65c13cf22c66facb55e935b2b11fdb2354837c49a5e6ae2db4c
   ocr: true
   ocr_engine: indra
-  ocr_fixed: 0
-  ocr_unknown: 14
+  ocr_fixed: 2918
+  ocr_unknown: 15023
   checks:
-    version: 1
+    version: 2
     failed: []
-    word_coverage: 0.9973
-    ocr_unknown_rate: 0.0021
+    word_coverage: 0.9999
+    ocr_unknown_rate: 0.031
 pdf_sha256: 981839743c6b2669afb1322a0cb085e47703394ec240c48bbba47fbbabfd3e96
 tanggal_penetapan_bpk: '2020-10-06'
 tanggal_pengundangan: '2021-10-06'
@@ -89,4 +93,3 @@ bpk:
     skip: []
     reason: law first, then Lampiran in page order 1-310, 311-822, 823-1077
 uji_materi: null
-recheck: file order set (decision 0023)

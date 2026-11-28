@@ -29,13 +29,20 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_1968_1968-12-31.txt
   pasal_count: 17
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2a852100fd6e1eb57287525715c650a5d2e03bd2967d874dddcec7fa14b98be0
+  extra_pdf_sha256:
+  - b6369737d00b31b377b98516cf1c39d284c0ef0148eda55f2934a0b6500b9f98
+  ocr: true
+  ocr_engine: indra
+  ocr_fixed: 0
+  ocr_unknown: 8
   checks:
-    version: 1
+    version: 2
     failed: []
     word_coverage: 1.0
+    ocr_unknown_rate: 0.0026
 pdf_sha256: 2a852100fd6e1eb57287525715c650a5d2e03bd2967d874dddcec7fa14b98be0
 tanggal_pengundangan: '1968-12-31'
 tanggal_berlaku: '1968-10-01'
@@ -82,4 +89,3 @@ bpk:
     skip: []
     reason: the law, then its Lampiran (the insignia plate)
 uji_materi: null
-recheck: file order set (decision 0023)

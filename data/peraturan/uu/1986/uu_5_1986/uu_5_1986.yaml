@@ -28,11 +28,11 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1986_1986-12-29.txt
   pasal_count: 145
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
-  pdf_sha256: 8dabcc6be5312e1212b6cbed52560b86b309ffca28de6bf15eaef6378f4fab94
+  pdf_sha256: e7e98ac83cfe7fc3a4a7c2f7ad4b93c9d1729433c54ce1c62c86e8716dc96bdc
   checks:
-    version: 1
+    version: 2
     failed: []
     word_coverage: 1.0
 pdf_sha256: 0248ee5d64e7c9b54406b7c5bc18fe21fe2530b5e3615e29dc74ca961affeb16
@@ -88,4 +88,3 @@ uji_materi:
     dengan Undang-Undang Nomor 9 Tahun 2004 dan terakhir dengan Undang-Undang Nomor
     51 Tahun 2009 tentang Peradilan Tata Usaha Negara bertentangan dengan Pasal 28D
     ayat (1) UUD NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.
-recheck: file order set (decision 0023)

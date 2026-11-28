@@ -29,9 +29,11 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_1954_1954-09-14.txt
   pasal_count: 15
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: dc775ec59bfc767aa59dfba44ae679ab3964acfc2bdcd1b21592823b12303477
+  extra_pdf_sha256:
+  - 570b27a0406b335457cd52dd3f76a76bb74ca0b58f56fa9ad49f4cecbac8f5f5
   checks:
     version: 2
     failed: []
@@ -73,4 +75,3 @@ bpk:
     skip: []
     reason: law first, then the Lampiran model
 uji_materi: null
-recheck: file order set (decision 0023)

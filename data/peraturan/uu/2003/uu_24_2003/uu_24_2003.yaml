@@ -32,13 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_2003_2003-08-13.txt
   pasal_count: 88
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3658d49b8a7394ec200e0d063b994af63e1d64446a7afa09681ce6069741ce1e
   extra_pdf_sha256:
   - 1123a1e5d6bc7b7b322c7710ef20173c2844e711cfb8a01bc6aed2f33abd4162
   checks:
-    version: 1
+    version: 2
     failed: []
     word_coverage: 0.9996
 pdf_sha256: 3658d49b8a7394ec200e0d063b994af63e1d64446a7afa09681ce6069741ce1e
@@ -551,4 +551,3 @@ history:
     instruction: 22
     point: uu_24_2003_2020-09-29
     wording: read
-recheck: file order set (decision 0023)
