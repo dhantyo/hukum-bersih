@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2012_2012-11-16.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 359f9d1e1515e38ea199a4690cabd3ca9c0a43c9cfe05b60a6be2c1cfdb2321f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9943
 pdf_sha256: fd9a2260ba4daa5f083a2c8c26984be6afc6ca5adfb1728cffe8adc3b50e6aa2
 tanggal_pengundangan: '2012-11-17'
 tanggal_berlaku: '2012-11-17'

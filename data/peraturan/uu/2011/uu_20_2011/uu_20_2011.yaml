@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2011_2011-11-10.txt
   pasal_count: 120
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: fbba94993f4a158d54e895587de2f0681a92f66b5e3f9f486c56f19e031733b3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9986
 pdf_sha256: fbba94993f4a158d54e895587de2f0681a92f66b5e3f9f486c56f19e031733b3
 tanggal_pengundangan: '2011-11-10'
 tanggal_berlaku: '2011-11-10'

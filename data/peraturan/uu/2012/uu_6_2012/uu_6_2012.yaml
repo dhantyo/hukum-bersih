@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_2012_2012-05-02.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d8ffbeb75295fbef86351d70972a41fdf549ec33ce1ba15ce338e53ef41a2c4b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9908
 pdf_sha256: a68865e0524219722944b88da4630d42e95b50cb4f7445e8a2faa56443637d1b
 tanggal_pengundangan: '2012-05-02'
 tanggal_berlaku: '2012-05-02'

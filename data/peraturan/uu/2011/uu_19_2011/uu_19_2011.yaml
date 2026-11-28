@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_2011_2011-11-10.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e541727747881141a493dc87f721e902fa4a1fe7ef7d389544514052e6097630
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9906
 pdf_sha256: 716ac7fe6615b3adf6b40ea338a7ae0972c0e80af2dd672fa8859fca7767c103
 tanggal_pengundangan: '2011-11-10'
 tanggal_berlaku: '2011-11-10'

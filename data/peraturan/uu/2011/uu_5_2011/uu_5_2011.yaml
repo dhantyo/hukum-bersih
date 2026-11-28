@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_2011_2011-05-03.txt
   pasal_count: 62
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b74484fa26cc6bb9ad1d7a6a9671e1104e9d8eddf274b70c50ecfec5ca41f2a3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9982
 pdf_sha256: d9f58e0a4bee69b842f23e8b3929d624e96b731dbce2f3d4a04cf865dd39ceda
 tanggal_pengundangan: '2011-05-03'
 tanggal_berlaku: '2011-05-03'

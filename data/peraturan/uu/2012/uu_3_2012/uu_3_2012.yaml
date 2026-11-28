@@ -36,9 +36,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2012_2012-03-28.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 872b8cc27384c4c3499c70827a8dce3a834ccdb56846dbc393d3997bed8a9ac5
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9918
 pdf_sha256: 4b2ee063d793a55b70cc776e1b0431ead7248f92d3ef494d9eda7c4f1b4354bf
 tanggal_pengundangan: '2012-03-28'
 tanggal_berlaku: '2012-03-28'

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2012_2012-10-05.txt
   pasal_count: 79
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0df78cd4209ac33441e54ce635f91e6cb40c1fdb492bca9650a117044d6b7137
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9974
 pdf_sha256: f360c4cfd06f8ce7e99b2b85b042d045f276680d59c3938ade8bc5750d983b31
 tanggal_pengundangan: '2012-10-05'
 tanggal_berlaku: '2012-10-05'

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_2012_2012-07-30.txt
   pasal_count: 108
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5b1eb3e8ba3b3c4f8cf02082346cbcb64b08505277ddd26f646d2b438eb67944
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9984
 pdf_sha256: ff6dce395c04e6c6169ac25ec0a115c5e72324a69c31977a22413fffe5802c77
 tanggal_pengundangan: '2012-07-30'
 tanggal_berlaku: '2014-07-30'

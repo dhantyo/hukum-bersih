@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2012_2012-10-05.txt
   pasal_count: 27
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b2e2e82c0053a33c7dc98c1575cbab73523d729218765cad20730919c6a09d1b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9942
 pdf_sha256: b6436aa296bfe31bdb1627c89703d4c8c5d4ce83e7017021ef6124b028917816
 tanggal_pengundangan: '2012-10-05'
 tanggal_berlaku: '2012-10-05'

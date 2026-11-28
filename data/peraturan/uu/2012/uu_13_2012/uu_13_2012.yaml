@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2012_2012-08-31.txt
   pasal_count: 51
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d9ddedcfa9a92f925d32b81a852b30748c1b05772b3b9bea6d88dca0841a7d9d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9955
 pdf_sha256: ca97a027f313e97fc7d326d25b197aad5097c0167f6694c941e6dff451cad235
 tanggal_pengundangan: '2012-09-03'
 tanggal_berlaku: '2012-09-03'

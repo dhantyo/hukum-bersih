@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2011_2011-08-18.txt
   pasal_count: 45
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6cb48e589ad24092a795e2ec429eebdbaae7eae62d89877be87e4673a8ef5581
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 8764bc580887edfc8a13c74d417c6890ff3219891cdbf2df2fb3c9160bf9bc9c
 tanggal_pengundangan: '2011-08-18'
 tanggal_berlaku: '2011-08-18'

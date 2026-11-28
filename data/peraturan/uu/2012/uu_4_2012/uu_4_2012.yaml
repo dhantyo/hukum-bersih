@@ -62,9 +62,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2012_2012-03-31.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 31ec3766ff2174b3d4e5142e80c140c444f6c7b0dda6b58daea806507a07c0b6
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.999
 pdf_sha256: 6b2fde4f9572c5c134cfbca914ac4efc9393e63e428e49190dede559ab58034f
 tanggal_pengundangan: '2012-03-31'
 tanggal_berlaku: '2012-03-31'

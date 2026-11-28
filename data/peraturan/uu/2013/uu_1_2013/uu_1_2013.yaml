@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2013_2013-01-08.txt
   pasal_count: 42
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a2c8f0e83cedee8108df8c8f58a3e42acb8e1cda298e6c7e8b63d22ab150a9c2
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 6e010e15e43d5f6271d168bfd23e73b4ee42df42fdb016298b08b94a6b342d7a
 tanggal_pengundangan: '2013-01-08'
 tanggal_berlaku: '2015-01-08'

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_2011_2011-11-07.txt
   pasal_count: 50
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 41d00ee889f1fd522afb202c58dd1d6d85889493165252e0d31c99794e3c25db
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9965
 pdf_sha256: 9f6b6bb3f7bad97a60aa4f52683fab1d806bb6060742e064ff04477b629b0fd6
 tanggal_pengundangan: '2011-11-07'
 tanggal_berlaku: '2011-11-07'

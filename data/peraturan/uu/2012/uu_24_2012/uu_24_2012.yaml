@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_2012_2012-11-16.txt
   pasal_count: 22
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f31bb0f090ab99a87798cc139320e188e2273decbb08941309e070cebae7d4aa
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9933
 pdf_sha256: be1de188c11c70965c57a9db11227260adeee44e1a59e44cd08a57ebaf28bcfb
 tanggal_pengundangan: '2012-11-17'
 tanggal_berlaku: '2012-11-17'

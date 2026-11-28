@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2013_2013-01-11.txt
   pasal_count: 22
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8a94bf81bb6b1abcad367fb3ae451fb286dfa250ceae315158b3553982239bf8
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.995
 pdf_sha256: ecae246aab650a5b5662df57979d807eb162406258f48b88de36e017e8721848
 tanggal_pengundangan: '2013-01-11'
 tanggal_berlaku: '2013-01-11'

@@ -63,9 +63,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_2011_2011-07-20.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a2a902cae6d70e1a5cfaf35a4ee7199d9ad22f65b340f10927fc6acd658173d2
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9961
 pdf_sha256: 2b241e6b42ce7596ab9c3b8f56fc2211d2877b09303687dc01e6c6ad6789d38f
 tanggal_pengundangan: '2011-07-20'
 tanggal_berlaku: '2011-07-20'
