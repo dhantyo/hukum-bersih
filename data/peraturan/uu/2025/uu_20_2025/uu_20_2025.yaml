@@ -28,13 +28,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2025_2025-12-17.txt
   pasal_count: 369
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 40e8b444aa7efabe1597bf104228e053deec452ae385c0433ca62701161cec3a
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 62
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
+    ocr_unknown_rate: 0.0014
 pdf_sha256: 40e8b444aa7efabe1597bf104228e053deec452ae385c0433ca62701161cec3a
 tanggal_pengundangan: '2025-12-17'
 tanggal_berlaku: '2026-01-02'

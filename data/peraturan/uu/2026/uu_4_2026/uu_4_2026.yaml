@@ -133,13 +133,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2026_2026-06-17.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: dab7d3f02b6b4755c4f64eb3859ea6d717559465fc7947b0f10d0cb79a884483
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 252
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9983
+    ocr_unknown_rate: 0.0064
 pdf_sha256: dab7d3f02b6b4755c4f64eb3859ea6d717559465fc7947b0f10d0cb79a884483
 tanggal_pengundangan: '2026-06-17'
 tanggal_berlaku: '2026-06-17'
