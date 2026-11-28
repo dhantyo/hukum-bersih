@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_55_2024_2024-08-07.txt
   pasal_count: 9
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2d189ef498c2d10c4b34e3f42b0f3e0dbcaf57f4a18b4e2a7ec8144123fb0b63
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 20
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.987
+    ocr_unknown_rate: 0.017
 pdf_sha256: 2d189ef498c2d10c4b34e3f42b0f3e0dbcaf57f4a18b4e2a7ec8144123fb0b63
 tanggal_pengundangan: '2024-08-07'
 tanggal_berlaku: '2024-08-07'

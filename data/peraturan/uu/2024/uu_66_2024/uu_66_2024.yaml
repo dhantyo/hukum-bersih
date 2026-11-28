@@ -101,13 +101,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_66_2024_2024-10-28.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 269fe18899c3f35c791a7b2b4624328a59ededdb0650fc9cf31845640a00c207
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 34
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9983
+    ocr_unknown_rate: 0.0031
 pdf_sha256: 269fe18899c3f35c791a7b2b4624328a59ededdb0650fc9cf31845640a00c207
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

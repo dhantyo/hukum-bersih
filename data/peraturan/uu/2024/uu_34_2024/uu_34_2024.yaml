@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_34_2024_2024-08-07.txt
   pasal_count: 10
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0f0890fcb7ca9d7ffe3708ba968c505786b1c9d81fe9b88855170e29bacd9677
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 15
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9858
+    ocr_unknown_rate: 0.01
 pdf_sha256: 0f0890fcb7ca9d7ffe3708ba968c505786b1c9d81fe9b88855170e29bacd9677
 tanggal_pengundangan: '2024-08-07'
 tanggal_berlaku: '2024-08-07'

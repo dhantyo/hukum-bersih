@@ -28,13 +28,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_58_2024_2024-08-07.txt
   pasal_count: 9
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 335ba5767431275cffb7d61adaeda9125054c6cc802b4337e99a64a096c61018
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 18
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9848
+    ocr_unknown_rate: 0.0159
 pdf_sha256: 335ba5767431275cffb7d61adaeda9125054c6cc802b4337e99a64a096c61018
 tanggal_pengundangan: '2024-08-07'
 tanggal_berlaku: '2024-08-07'
