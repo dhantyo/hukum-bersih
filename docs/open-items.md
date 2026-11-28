@@ -7,6 +7,8 @@ Known gaps and agreed work not done yet. Remove an item when it ships.
 - The next parser iteration (self-checks, joined files, Lampiran and Penjelasan structure, relations from the text, MK rulings, references, the UUD 1945): decisions 0021 to 0028, findings and build order in `docs/research-mk-relations-2026-11.md`.
 - Parser rewrite (`docs/parser-rules.md`, "Design for the rewrite"): the line registry (`pdf/lines.py`) and the structure state machine (`pdf/structure.py`) are done, with v17's output. Next: fix the known gaps G1-G4, G7, G8 and G10, each in the cell `docs/parser-rules.md` names, then the inline references layer.
 - Amending laws (Pasal I/II) are not fully parsed. Pasal.id's parser is the one to port (see `docs/ARCHITECTURE.md`, "Reused instead of written").
+- The UUD 1945's amendments (MPR layout: no "Menetapkan", the lead-in "mengubah Pasal 5 Ayat (1), Pasal 7, … sehingga selengkapnya menjadi berbunyi sebagai berikut:" and then pasal out of sequence) have no parser rule: Perubahan Pertama and Kedua have no text, Ketiga and Keempat a partial one, so the merged UUD is far from the consolidated text (`pipeline/scripts/check_uud.py`, run by `import-bpk.yml` with `jenis: uud`). An amendment that changes one ayat ("Pasal 5 Ayat (1)") needs the merge to replace only that ayat.
+- The UUD 1945 and Keppres 150/1959 are in `data/` but not on the site (`SITE_TYPES` in `corpus/regulations.py`).
 - A consolidated current text of amended laws needs amending-law parsing first.
 - Text versions are dated by tanggal penetapan when the source has no pengundangan date.
 - UU 16/2022, UU 17/2016 and UU 7/2021 still keep their older texts (`reparse_error` v16). The importer's safety rule now measures the stored text itself (`measure` in `sources/peraturan_go_id.py`) and `compare_reparse.py` shows all three accepted at v17; a BPK import flags them for redo (their `reparse_error` is from v16) and should replace them. Still missing: a way for a person to accept a checked text the rule refuses.
@@ -28,6 +30,7 @@ Known gaps and agreed work not done yet. Remove an item when it ships.
 
 - Decide whether texts first imported from peraturan.go.id switch to BPK's PDFs (`bpk.pasal_count` holds BPK's count for comparison).
 - Omnibus amendments (Cipta Kerja) are not linked to the laws they amend, for example PT (UU 40/2007) and Penanaman Modal (UU 25/2007). Planned in decision 0025.
+- Two `import-bpk.yml` runs dispatched together on one branch: the second checks out the commit it was started on, its `git pull` then conflicts on the manifest, its batch is lost and the run still ends green (2026-11-28).
 
 ## Review by a lawyer
 

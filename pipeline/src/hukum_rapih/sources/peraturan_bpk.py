@@ -528,56 +528,68 @@ def import_uud(session, data_dir: Path, check_dir: Path | None = None) -> Iterat
     only by what the text prints. The consolidated text is parsed into ``check_dir`` (outside
     data/, on the runner) for ``scripts/check_uud.py``, never stored as a version; the PDFs are
     copied there too, for the workflow's review dump."""
-    from ..akn.bluebell import to_bluebell
-    from ..manifest import entry_for_file, manifest_path
-    from ..pdf.structure import parse_pdf
-
-    detail_url = BASE + UUD_ENTRY
     files = {f["filename"]: f for f in parse_detail(session.get(UUD_ENTRY).text)["files"]}
     if missing := sorted({*UUD_FILES, SATU_NASKAH} - set(files)):
         yield f"FAIL {UUD_ENTRY}: BPK lists no {', '.join(missing)} (it lists {', '.join(files)})"
     with tempfile.TemporaryDirectory() as tmp:
         pdfs: dict[str, Path] = {}
-        for name, f in files.items():
-            if name in UUD_FILES or name == SATU_NASKAH:
-                content, mirror_note = download(session, f, data_dir)
-                pdfs[name] = Path(tmp) / name
-                pdfs[name].write_bytes(content)
-                if mirror_note:
-                    f["fetched_from"] = mirror_note
+        for name in files.keys() & {*UUD_FILES, SATU_NASKAH}:
+            content, mirror_note = download(session, files[name], data_dir)
+            pdfs[name] = Path(tmp) / name
+            pdfs[name].write_bytes(content)
+            if mirror_note:
+                files[name]["fetched_from"] = mirror_note
         for name, work in UUD_FILES.items():
-            if name not in pdfs:
-                continue
-            path = record_path(data_dir, work)
-            rec = load_record(path) if path.exists() else uud_record(work, detail_url)
-            owned = [name, SATU_NASKAH] if work == "uud_1945" else [name]
-            old = {f["url"]: f for f in (rec.get("bpk") or {}).get("files", [])}
-            new = []
-            for n in (n for n in owned if n in pdfs):
-                f = {**old.get(files[n]["url"], {}), **files[n]}
-                entry = entry_for_file(pdfs[n], f["url"], None, None, n)
-                if f.get("sha256") != entry.sha256:       # one manifest line per new file
-                    manifest = manifest_path(data_dir, f["url"])
-                    manifest.parent.mkdir(parents=True, exist_ok=True)
-                    with manifest.open("a") as fh:
-                        fh.write(json.dumps(entry.to_dict(), ensure_ascii=False) + "\n")
-                new.append({**f, "sha256": entry.sha256, "bytes": entry.bytes})
-            rec["source_pdf_url"] = files[name]["url"]
-            rec["bpk"] = {**(rec.get("bpk") or {}), "id": int(UUD_ENTRY.split("/")[2]), "files": new}
-            path.parent.mkdir(parents=True, exist_ok=True)
-            save_record(path, rec)                         # metadata first
-            note = retext(pdfs[name], rec, path.parent)
-            notes = date_printed(rec, path.parent)
-            save_record(path, rec)
-            yield f"ok   {work}: {note}" + "".join(f"; {n}" for n in notes)
-        if check_dir:                     # on the runner only, for the check and for review
-            check_dir.mkdir(parents=True, exist_ok=True)
-            for name, pdf in pdfs.items():
-                shutil.copyfile(pdf, check_dir / name)
-        if check_dir and SATU_NASKAH in pdfs:
-            doc = parse_pdf(pdfs[SATU_NASKAH])
-            (check_dir / SATU_NASKAH_TEXT).write_text(to_bluebell(doc))
-            yield f"ok   {SATU_NASKAH}: {doc.pasal_count} pasal, for the check only"
+            if name in pdfs:
+                owned = [name, SATU_NASKAH] if work == "uud_1945" and SATU_NASKAH in pdfs else [name]
+                yield _import_uud_work(work, [(files[n], pdfs[n]) for n in owned], data_dir)
+        if check_dir:
+            yield from _write_check(pdfs, check_dir)
+
+
+def _import_uud_work(work: str, owned: list[tuple[dict, Path]], data_dir: Path) -> str:
+    """One record of the UUD entry: its BPK files with their downloaded copies (the first one is
+    its text), hashed into the manifest, and its text converted and dated."""
+    path = record_path(data_dir, work)
+    rec = load_record(path) if path.exists() else uud_record(work, BASE + UUD_ENTRY)
+    old = {f["url"]: f for f in (rec.get("bpk") or {}).get("files", [])}
+    rec["source_pdf_url"] = owned[0][0]["url"]
+    rec["bpk"] = {**(rec.get("bpk") or {}), "id": int(UUD_ENTRY.split("/")[2]),
+                  "files": [_hashed(f, pdf, old.get(f["url"], {}), data_dir) for f, pdf in owned]}
+    path.parent.mkdir(parents=True, exist_ok=True)
+    save_record(path, rec)                              # metadata first
+    note = retext(owned[0][1], rec, path.parent)
+    notes = date_printed(rec, path.parent)
+    save_record(path, rec)
+    return f"ok   {work}: {note}" + "".join(f"; {n}" for n in notes)
+
+
+def _hashed(f: dict, pdf: Path, recorded: dict, data_dir: Path) -> dict:
+    """A record's entry for a downloaded BPK file, with its hash; a manifest line is added only
+    for a file not recorded before, so re-running the import adds none."""
+    from ..manifest import entry_for_file, manifest_path
+
+    entry = entry_for_file(pdf, f["url"], None, None, f["filename"])
+    if recorded.get("sha256") != entry.sha256:
+        manifest = manifest_path(data_dir, f["url"])
+        manifest.parent.mkdir(parents=True, exist_ok=True)
+        with manifest.open("a") as fh:
+            fh.write(json.dumps(entry.to_dict(), ensure_ascii=False) + "\n")
+    return {**recorded, **f, "sha256": entry.sha256, "bytes": entry.bytes}
+
+
+def _write_check(pdfs: dict[str, Path], check_dir: Path) -> Iterator[str]:
+    """The PDFs and the parsed consolidated text, on the runner only."""
+    from ..akn.bluebell import to_bluebell
+    from ..pdf.structure import parse_pdf
+
+    check_dir.mkdir(parents=True, exist_ok=True)
+    for name, pdf in pdfs.items():
+        shutil.copyfile(pdf, check_dir / name)
+    if SATU_NASKAH in pdfs:
+        doc = parse_pdf(pdfs[SATU_NASKAH])
+        (check_dir / SATU_NASKAH_TEXT).write_text(to_bluebell(doc))
+        yield f"ok   {SATU_NASKAH}: {doc.pasal_count} pasal, for the check only"
 
 
 def known_records(data_dir: Path) -> dict[int, Path]:

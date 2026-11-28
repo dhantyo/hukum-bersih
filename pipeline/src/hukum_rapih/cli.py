@@ -198,6 +198,8 @@ def main(argv: list[str] | None = None) -> int:
         only = [i.strip() for i in args.only.split(",") if i.strip()]
 
         def items():
+            if args.jenis == "uud":           # one entry for five records: import_uud below
+                return
             if args.jenis in bpk.ONE_OFF:
                 yield from (bpk.Listing(d, int(d.split("/")[2])) for d in bpk.ONE_OFF[args.jenis])
                 return
@@ -215,7 +217,7 @@ def main(argv: list[str] | None = None) -> int:
                     print(line, flush=True)
                     failed += line.startswith("FAIL")
                     done += line.startswith("ok")
-            for item in items() if args.jenis != "uud" else ():
+            for item in items():
                 try:
                     line = bpk.import_one(session, item, args.jenis, args.data_dir, known,
                                           cache=archived, no_text=args.no_text)
