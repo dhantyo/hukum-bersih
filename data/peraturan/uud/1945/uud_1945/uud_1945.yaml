@@ -1,0 +1,136 @@
+id: uud_1945
+akn: /akn/id/act/1945/uud
+type: uud
+number: null
+year: 1945
+title: Undang-Undang Dasar Negara Republik Indonesia Tahun 1945
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: null
+tempat_penetapan: null
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/101646/uud-no---uud-1945-dan-amandemen
+source_pdf_url: https://peraturan.bpk.go.id/Download/92283/UUD45.pdf
+relationships:
+  amends: []
+  amended_by:
+  - uud-perubahan_1_1999
+  - uud-perubahan_2_2000
+  - uud-perubahan_3_2001
+  - uud-perubahan_4_2002
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+  reinstated_by:
+  - keppres_150_1959
+versions:
+- id: uud_1945_1945
+  kind: asli
+  source: official
+  date: null
+  date_basis: tanggal_penetapan
+  text: uud_1945_1945.txt
+  pasal_count: 37
+  parser_version: 18
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: c59c0fee8ceff7e5a983c06ce55efca03d6b341ff54c3d0612ae87bf3cedd519
+bpk:
+  id: 101646
+  files:
+  - url: https://peraturan.bpk.go.id/Download/92283/UUD45.pdf
+    bpk_file_id: 92283
+    filename: UUD45.pdf
+    sha256: c59c0fee8ceff7e5a983c06ce55efca03d6b341ff54c3d0612ae87bf3cedd519
+    bytes: 30515
+  - url: https://peraturan.bpk.go.id/Download/92288/UUD45_SatuNaskah.pdf
+    bpk_file_id: 92288
+    filename: UUD45_SatuNaskah.pdf
+    sha256: 6d629da7bdbec439629899c30ffea9df0aba842bf2406fad8ff6cc393edd3854
+    bytes: 196608
+history:
+  points:
+  - id: uud_1945_1945
+    kind: asli
+    date: '1945'
+    date_basis: year
+    text: uud_1945_1945.txt
+  - id: uud_1945_1999
+    kind: gabungan
+    date: '1999'
+    date_basis: year
+    after:
+    - uud-perubahan_1_1999
+    order: 1
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uud-perubahan_1_1999
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  - id: uud_1945_2000
+    kind: gabungan
+    date: '2000'
+    date_basis: year
+    after:
+    - uud-perubahan_2_2000
+    order: 2
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uud-perubahan_2_2000
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  - id: uud_1945_2001
+    kind: gabungan
+    date: '2001'
+    date_basis: year
+    after:
+    - uud-perubahan_3_2001
+    order: 3
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uud-perubahan_3_2001
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  - id: uud_1945_2002
+    kind: gabungan
+    date: '2002'
+    date_basis: year
+    after:
+    - uud-perubahan_4_2002
+    order: 4
+    counts:
+      diubah: 0
+      disisipkan: 0
+      dihapus: 0
+    missing_before: 0
+    unreadable: []
+    not_applied:
+    - by: uud-perubahan_4_2002
+      instruction: null
+      header: teks perubahan belum dapat dibaca
+      affects_wording: true
+    complete: false
+  changes: []
