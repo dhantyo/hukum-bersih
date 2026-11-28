@@ -17,7 +17,7 @@ from .. import amendments
 from ..akn.build import to_akn_tree
 from .koleksi import Collections, Koleksi, ordinal
 from .reader_text import reader_text
-from .regulations import STATUS_LABEL, Regulation, Regulations, cite_id, source_name
+from .regulations import SITE_TYPES, STATUS_LABEL, Regulation, Regulations, cite_id, source_name
 from .search import SearchRecords
 from .titles import law_heading
 from .versions import version_rows
@@ -52,8 +52,8 @@ class Amendment:
 class Laws:
     """What the reader record of a law needs to know about the other laws."""
 
-    def __init__(self, data_dir: Path) -> None:
-        self.regulations = Regulations(data_dir)
+    def __init__(self, data_dir: Path, types: frozenset[str] | None = SITE_TYPES) -> None:
+        self.regulations = Regulations(data_dir, types)
         self.collections = Collections(data_dir, self.regulations)
         self._amending: dict[str, dict | None] = {}
         self._rows: dict[str, list] = {}

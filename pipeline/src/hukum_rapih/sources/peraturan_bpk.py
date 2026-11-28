@@ -31,9 +31,14 @@ from .bpk_session import BASE
 
 SOURCE = "peraturan.bpk.go.id"
 JENIS_ID = {"uu": 8, "perppu": 9, "pp": 10, "perpres": 11}    # BPK's "jenis" filter values
-BENTUK = {"uu": "uu", "perpu": "perppu", "perppu": "perppu", "pp": "pp", "perpres": "perpres"}
+BENTUK = {"uu": "uu", "perpu": "perppu", "perppu": "perppu", "pp": "pp", "perpres": "perpres",
+          "keppres": "keppres"}
 JENIS_TITLE = {"uu": "Undang-Undang", "perppu": "Peraturan Pemerintah Pengganti Undang-Undang",
-               "pp": "Peraturan Pemerintah", "perpres": "Peraturan Presiden"}
+               "pp": "Peraturan Pemerintah", "perpres": "Peraturan Presiden",
+               "keppres": "Keputusan Presiden"}
+# Entries imported one by one instead of from a listing (decision 0027: Keppres are otherwise
+# not imported). BPK detail page paths.
+ONE_OFF = {"keppres": ["/Details/96516"]}
 STATUS = {"berlaku": "berlaku", "tidak berlaku": "tidak_berlaku", "dicabut": "dicabut",
           "diubah": "diubah"}
 
@@ -227,8 +232,37 @@ def check_dates(rec: dict, folder: Path) -> list[str]:
 
 
 def record_path(data_dir: Path, work: str) -> Path:
-    jenis, _, tahun = work.split("_")
-    return data_dir / "peraturan" / jenis / tahun / work / f"{work}.yaml"
+    parts = work.split("_")                     # uu_4_2009, or uud_1945 (no number)
+    return data_dir / "peraturan" / parts[0] / parts[-1] / work / f"{work}.yaml"
+
+
+SIGNED_ON = re.compile(r"Ditetapkan\s+di\s+\w+\s*,?\s+pada\s+tanggal\s+(\d{1,2}\s+\w+\s+\d{4})")
+# months as printed before 1972 ("5 Djuli 1959"), read as today's names to find the date
+OLD_MONTHS = {"djanuari": "januari", "pebruari": "februari", "djuni": "juni", "djuli": "juli",
+              "nopember": "november"}
+OLD_MONTH = re.compile("|".join(OLD_MONTHS), re.IGNORECASE)
+
+
+def date_printed(rec: dict, folder: Path) -> list[str]:
+    """For a record with no date at all (BPK gives none for the UUD and Keppres 150/1959): the
+    date its text prints after "Ditetapkan di … pada tanggal", and its text version re-dated
+    to it (docs/NAMING.md). A text that prints none keeps the bare year; nothing is guessed."""
+    from .peraturan_go_id import tanggal_iso
+
+    texts = [v for v in rec.get("versions") or [] if v.get("text")]
+    if rec.get("tanggal_penetapan") or len(texts) != 1 or not (folder / texts[0]["text"]).exists():
+        return []
+    flat = re.sub(r"\s+", " ", re.sub(r"\\(.)", r"\1", (folder / texts[0]["text"]).read_text()))
+    found = [iso for iso in (tanggal_iso(OLD_MONTH.sub(lambda m: OLD_MONTHS[m[0].lower()], d))
+                             for d in SIGNED_ON.findall(flat)) if iso]
+    if not found:
+        return [f"{rec['id']}: no date printed, kept {rec['year']}"]
+    rec["tanggal_penetapan"] = found[-1]          # the closing comes last
+    v = texts[0]
+    version = f"{rec['id']}_{found[-1]}"
+    (folder / v["text"]).rename(folder / f"{version}.txt")
+    v.update(id=version, date=found[-1], text=f"{version}.txt")
+    return [f"{rec['id']}: dated {found[-1]} as printed"]
 
 
 def files_done(rec: dict) -> bool:
@@ -446,9 +480,98 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
                 main_pdf = main_pdf or pdf
         note = "PDFs only (no text step)" if no_text else retext(main_pdf or penjelasan.pop(0), rec, path.parent, penjelasan)
         notes += check_dates(rec, path.parent)
+        if jenis in ONE_OFF:
+            notes += date_printed(rec, path.parent)
     save_record(path, rec)
     return (f"ok   {work}: {len(rec['bpk']['files'])} PDF recorded; {note}"
             + "".join(f"; {n}" for n in notes))
+
+
+# ---- the UUD 1945 (decision 0027) ------------------------------------------------------------
+
+# One BPK entry holds the UUD, its four amendments and the MPR's consolidated text.
+UUD_ENTRY = "/Details/101646/uud-no---uud-1945-dan-amandemen"
+UUD_TITLE = "Undang-Undang Dasar Negara Republik Indonesia Tahun 1945"
+UUD_FILES = {"UUD45.pdf": "uud_1945",                   # BPK's file -> our work (docs/NAMING.md)
+             "UUD45_perubahan1.pdf": "uud-perubahan_1_1999",
+             "UUD45_perubahan2.pdf": "uud-perubahan_2_2000",
+             "UUD45_perubahan3.pdf": "uud-perubahan_3_2001",
+             "UUD45_perubahan4.pdf": "uud-perubahan_4_2002"}
+SATU_NASKAH = "UUD45_SatuNaskah.pdf"   # the consolidated text: only checks the merged version
+SATU_NASKAH_TEXT = "uud_1945_satu-naskah.txt"
+ORDINAL_WORD = {1: "Pertama", 2: "Kedua", 3: "Ketiga", 4: "Keempat"}
+
+
+def uud_record(work: str, detail_url: str) -> dict:
+    """A new record for the UUD 1945 (no number) or one of its amendments."""
+    jenis, *_, tahun = work.split("_")
+    if work == "uud_1945":
+        nomor, akn, title = None, f"/akn/id/act/{tahun}/{jenis}", UUD_TITLE
+    else:
+        nomor = work.split("_")[1]
+        akn = f"/akn/id/act/{jenis}/{tahun}/{nomor}"
+        title = f"Perubahan {ORDINAL_WORD[int(nomor)]} {UUD_TITLE}"
+    return {
+        "id": work, "akn": akn, "type": jenis, "number": nomor, "year": int(tahun), "title": title,
+        "tentang": None, "short_name": None, "status": None, "tanggal_penetapan": None,
+        "tempat_penetapan": None, "pejabat_penetapan": None, "pemrakarsa": None,
+        "source_url": detail_url, "source_pdf_url": None,
+        "relationships": {"amends": [], "amended_by": [], "revokes": [], "revoked_by": []},
+        "versions": [],
+    }
+
+
+def import_uud(session, data_dir: Path, check_dir: Path | None = None) -> Iterator[str]:
+    """The UUD 1945 and its four amendments from BPK's one entry: a record and text each, dated
+    only by what the text prints. The consolidated text is parsed into ``check_dir`` (outside
+    data/) for ``scripts/check_uud.py``, never stored as a version."""
+    from ..akn.bluebell import to_bluebell
+    from ..manifest import entry_for_file, manifest_path
+    from ..pdf.structure import parse_pdf
+
+    detail_url = BASE + UUD_ENTRY
+    files = {f["filename"]: f for f in parse_detail(session.get(UUD_ENTRY).text)["files"]}
+    if missing := sorted({*UUD_FILES, SATU_NASKAH} - set(files)):
+        yield f"FAIL {UUD_ENTRY}: BPK lists no {', '.join(missing)} (it lists {', '.join(files)})"
+    with tempfile.TemporaryDirectory() as tmp:
+        pdfs: dict[str, Path] = {}
+        for name, f in files.items():
+            if name in UUD_FILES or name == SATU_NASKAH:
+                content, mirror_note = download(session, f, data_dir)
+                pdfs[name] = Path(tmp) / name
+                pdfs[name].write_bytes(content)
+                if mirror_note:
+                    f["fetched_from"] = mirror_note
+        for name, work in UUD_FILES.items():
+            if name not in pdfs:
+                continue
+            path = record_path(data_dir, work)
+            rec = load_record(path) if path.exists() else uud_record(work, detail_url)
+            owned = [name, SATU_NASKAH] if work == "uud_1945" else [name]
+            old = {f["url"]: f for f in (rec.get("bpk") or {}).get("files", [])}
+            new = []
+            for n in (n for n in owned if n in pdfs):
+                f = {**old.get(files[n]["url"], {}), **files[n]}
+                entry = entry_for_file(pdfs[n], f["url"], None, None, n)
+                if f.get("sha256") != entry.sha256:       # one manifest line per new file
+                    manifest = manifest_path(data_dir, f["url"])
+                    manifest.parent.mkdir(parents=True, exist_ok=True)
+                    with manifest.open("a") as fh:
+                        fh.write(json.dumps(entry.to_dict(), ensure_ascii=False) + "\n")
+                new.append({**f, "sha256": entry.sha256, "bytes": entry.bytes})
+            rec["source_pdf_url"] = files[name]["url"]
+            rec["bpk"] = {**(rec.get("bpk") or {}), "id": int(UUD_ENTRY.split("/")[2]), "files": new}
+            path.parent.mkdir(parents=True, exist_ok=True)
+            save_record(path, rec)                         # metadata first
+            note = retext(pdfs[name], rec, path.parent)
+            notes = date_printed(rec, path.parent)
+            save_record(path, rec)
+            yield f"ok   {work}: {note}" + "".join(f"; {n}" for n in notes)
+        if check_dir and SATU_NASKAH in pdfs:
+            doc = parse_pdf(pdfs[SATU_NASKAH])
+            check_dir.mkdir(parents=True, exist_ok=True)
+            (check_dir / SATU_NASKAH_TEXT).write_text(to_bluebell(doc))
+            yield f"ok   {SATU_NASKAH}: {doc.pasal_count} pasal, for the check only"
 
 
 def known_records(data_dir: Path) -> dict[int, Path]:

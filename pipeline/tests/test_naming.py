@@ -11,6 +11,10 @@ from hukum_rapih.naming import validate_id
         "uu_6_2023_2023-03-31_2",  # a version's second file
         "perppu_2_2022",
         "uu-drt_7_1955",
+        "uud_1945",  # the constitution has no number (decision 0027)
+        "uud_1945_1945",
+        "uud-perubahan_1_1999_1999-10-19",
+        "keppres_150_1959",
         "ruu_perampasan-aset_2026-11-19_draft-final",
         "ruu_perampasan-aset_2023-05_draft_pemerintah",
         "ruu_perampasan-aset_2026-11-09_dim_2",
@@ -35,6 +39,7 @@ def test_valid_ids(good):
         "a" * 101,
         "ruu_perampasan-aset_2026-11-19_draft-ruu-final",  # unknown type
         "ruu_perampasan-aset_draft-final",  # no date
+        "uud_1950",  # only the UUD 1945 goes without a number
     ],
 )
 def test_invalid_ids(bad):

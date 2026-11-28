@@ -12,6 +12,8 @@ REGULATION_RE = re.compile(
     rf"^(?P<work>(?P<jenis>[a-z]+(?:-[a-z]+)*)_(?P<nomor>\d+[a-z]?)_(?P<tahun>\d{{4}}))"
     rf"(?:_(?P<date>{DATE})(?:_(?P<n>\d+))?)?$"
 )
+# The constitution has no number: uud_1945[_<date>[_<n>]] (decision 0027)
+CONSTITUTION_RE = re.compile(rf"^(?P<work>uud_1945)(?:_(?P<date>{DATE})(?:_(?P<n>\d+))?)?$")
 # ruu_<slug>_<date>_<type>[_<who>][_<n>]
 RUU_DOC_RE = re.compile(
     rf"^ruu_(?P<slug>{PART})_(?P<date>{DATE})_(?P<type>{PART})"
@@ -49,9 +51,9 @@ def validate_id(doc_id: str) -> str:
                 f"invalid RUU document id {doc_id!r}: expected "
                 f"ruu_<slug>_<date>_<type>[_<who>][_<n>] with type in {sorted(RUU_TYPES)}"
             )
-    elif not REGULATION_RE.match(doc_id):
+    elif not REGULATION_RE.match(doc_id) and not CONSTITUTION_RE.match(doc_id):
         raise ValueError(
             f"invalid regulation id {doc_id!r}: expected <jenis>_<nomor>_<tahun>[_<YYYY-MM-DD>[_<n>]], "
-            "e.g. uu_11_2008 or uu_11_2008_2008-04-21"
+            "e.g. uu_11_2008 or uu_11_2008_2008-04-21, or uud_1945[_<date>]"
         )
     return doc_id
