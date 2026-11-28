@@ -31,11 +31,11 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1984_1984-07-24.txt
   pasal_count: 2
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b6f36c85129eee946ee59f4d0fe1461247c3efe2fd355778f5ec0c44817dd2cd
   checks:
-    version: 1
+    version: 2
     failed: []
     word_coverage: 0.9963
 pdf_sha256: 85f9aafecae87c4d998d80d43963dd91e861bf04481f25bd4b014567865a2261
@@ -72,4 +72,3 @@ bpk:
     reason: both files hold the same law text; keep the original printed scan, skip
       the retyped copy
 uji_materi: null
-recheck: file order set (decision 0023)

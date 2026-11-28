@@ -29,11 +29,11 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_1967_1967-12-30.txt
   pasal_count: 8
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ebd766d2d1848911ebf508437dee85100f36e460cec7c47fafb4f86b1ca10e4e
   checks:
-    version: 1
+    version: 2
     failed: []
     word_coverage: 0.9973
 pdf_sha256: ebd766d2d1848911ebf508437dee85100f36e460cec7c47fafb4f86b1ca10e4e
@@ -81,4 +81,3 @@ bpk:
       reason: same text as 38868, which is kept
     reason: the Lampiran file repeats the body (same first and last page)
 uji_materi: null
-recheck: file order set (decision 0023)

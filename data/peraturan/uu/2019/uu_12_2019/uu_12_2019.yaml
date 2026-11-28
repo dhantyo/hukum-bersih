@@ -30,18 +30,21 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2019_2019-09-17.txt
   pasal_count: 15
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d3e40016c6acd8c1f7351fedb26805d6988c2f21e825d2f30ac2d55827d06f62
+  extra_pdf_sha256:
+  - c90f87b866a56d4a97e531e72c9ca66196bc0d01a4c572a515e89ff563fa24bb
+  - b8345c27c3c4cf78d2b9306684b400263e6818fe312b78b7028023e59ce89ad1
   ocr: true
   ocr_engine: indra
-  ocr_fixed: 5
-  ocr_unknown: 13
+  ocr_fixed: 1699
+  ocr_unknown: 4511
   checks:
-    version: 1
+    version: 2
     failed: []
-    word_coverage: 0.9968
-    ocr_unknown_rate: 0.0023
+    word_coverage: 0.9999
+    ocr_unknown_rate: 0.0129
 pdf_sha256: bdaf1b8e88a56087dc03d78304a0dca02924f3a4004ea310d538153cd3190e3b
 tanggal_pengundangan: '2019-09-18'
 tanggal_berlaku: '2019-09-18'
@@ -81,4 +84,3 @@ bpk:
     reason: the law with its Penjelasan, then the Lampiran in two parts; the second
       continues the Koreksi Lainnya notes of the first
 uji_materi: null
-recheck: file order set (decision 0023)

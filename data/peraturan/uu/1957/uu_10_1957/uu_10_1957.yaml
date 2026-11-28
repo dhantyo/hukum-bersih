@@ -30,13 +30,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_1957_1957-03-25.txt
   pasal_count: 2
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 08a7ef70dce75322e6aa290b9866617a969b7cbecfbffd1a331f516b4a7a18bc
+  extra_pdf_sha256:
+  - e21201732b3f01efe56999c11cf69876614c8c657b7b07cfd6bd3346e8e67100
   checks:
-    version: 1
+    version: 2
     failed: []
-    word_coverage: 0.9914
+    word_coverage: 0.9943
 tanggal_pengundangan: '1957-04-08'
 tanggal_berlaku: '1953-01-01'
 lembaran_negara: 'LN. 1957 No. 30, LL SETNEG : 3 HLM'
@@ -74,4 +76,3 @@ bpk:
     skip: []
     reason: the law first, then its Lampiran
 uji_materi: null
-recheck: file order set (decision 0023)

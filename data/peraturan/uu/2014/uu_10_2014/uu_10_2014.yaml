@@ -31,13 +31,21 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2014_2014-03-19.txt
   pasal_count: 2
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 30747241f76603be93cb7d3230b40faeaa592dce3adeed8c29898363fa1743ea
+  extra_pdf_sha256:
+  - 14e0cd2fb9d6d05f081a4f008d0331ecde31bc1179cc74e4bbfac3e8fd338c78
+  - 2331a2711f2667ab358a42059459c7cb676acda95a88090cc04a612d96f08acd
+  ocr: true
+  ocr_engine: indra
+  ocr_fixed: 3
+  ocr_unknown: 119
   checks:
-    version: 1
+    version: 2
     failed: []
     word_coverage: 1.0
+    ocr_unknown_rate: 0.0098
 pdf_sha256: 29a35ed6a6422f442e91b5e7bbdea5723d0b33d5666ad569deb14f922d223d44
 tanggal_pengundangan: '2014-03-19'
 tanggal_berlaku: '2014-03-19'
@@ -77,4 +85,3 @@ bpk:
     reason: the law, then Lampiran 1 (original convention) and Lampiran 2 (Indonesian
       translation)
 uji_materi: null
-recheck: file order set (decision 0023)

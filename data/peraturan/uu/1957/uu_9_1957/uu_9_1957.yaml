@@ -30,13 +30,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_1957_1957-03-25.txt
   pasal_count: 2
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0123ffbe0fd72cf7da5cc257da4e9d3c41746f84eeb76f1bf1929f6e7ca88cf8
+  extra_pdf_sha256:
+  - 8fc360c99d11dfd120adc8234f3cc7477efa67bbe8f434846572388661432c11
   checks:
-    version: 1
+    version: 2
     failed: []
-    word_coverage: 0.9902
+    word_coverage: 0.9917
 pdf_sha256: bb23d70527636820e9c4ed6887d481ba66d30f3313d8bc98ed61ee44321733b0
 tanggal_pengundangan: '1957-04-08'
 tanggal_berlaku: '1953-01-01'
@@ -75,4 +77,3 @@ bpk:
     skip: []
     reason: the law first, then its Lampiran
 uji_materi: null
-recheck: file order set (decision 0023)

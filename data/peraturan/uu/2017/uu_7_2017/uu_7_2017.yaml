@@ -30,6 +30,25 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2017_2017-08-15.txt
   pasal_count: 573
+  parser_version: 19
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: ddc0aa4682c3dcb01bd7ac52ac6c4841e5d84a3d8087b966b1fb7f17f1f204c2
+  extra_pdf_sha256:
+  - 585aeceb16dce8702d6f26ab3bbe0f955da8d03e835d60159c34d4ec446f9293
+  - 1147168d512bc5096cc7cf1b87b899a95dbd3b2afb00d1989345b171ba8af015
+  - 81c7697384cfd84d66ffad6491cf6263558b254ff2617689e4e0fd2e7a71df70
+  - ba9cd249e509d0c343db424bb0ba83397daf6cf4b8841842f348c48a048ca2ff
+  - d33273663bd2209f3e1bc1fe5ceac2afeefc3f05886dc6b98f5896dab0eea5c2
+  - 73d0edb1c3453d2ea026524f78f72d2e4fd7eb0f20f097c3b5ee8b116adc3a7c
+  ocr: true
+  ocr_engine: indra
+  ocr_fixed: 14
+  ocr_unknown: 404
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9984
+    ocr_unknown_rate: 0.0046
 pdf_sha256: 7b781943f2505ac34ef9b412ddae7ec9001cd1a04c6871707b58a90b6934d320
 tanggal_pengundangan: '2017-08-16'
 tanggal_berlaku: '2017-08-16'
@@ -227,7 +246,6 @@ uji_materi:
   amar: Frasa "telah ditetapkan/" dalam Pasal 173 ayat (1); dan Pasal 173 ayat (3)
     Undang-Undang Nomor 7 Tahun 2017 tentang Pemilihan Umum bertentangan dengan UUD
     NRI Tahun 1945 dan tidak mempunyai kekuatan hukum mengikat.
-recheck: file order set (decision 0023)
 history:
   points:
   - id: uu_7_2017_2017-08-15

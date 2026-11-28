@@ -29,13 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_2007_2007-01-02.txt
   pasal_count: 22
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: fd7a33566de563edb191568d743e9a69016145776693915217832925bd660da6
   extra_pdf_sha256:
   - b13a63b172d442c49e727b502e77f8e63879e9a4684e4f440824794c862391ce
   checks:
-    version: 1
+    version: 2
     failed: []
     word_coverage: 0.9966
 pdf_sha256: 3ceb5a143b9c9b0c359553cfe2a125cfd3155084b917d6ff1be5b32a44c510a6
@@ -69,4 +69,3 @@ bpk:
     skip: []
     reason: the law first, then its Penjelasan
 uji_materi: null
-recheck: file order set (decision 0023)

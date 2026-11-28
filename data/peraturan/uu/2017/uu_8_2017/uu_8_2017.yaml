@@ -52,13 +52,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_2017_2017-08-21.txt
   pasal_count: 2
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8b867ebeffe3361113de987395a85fd628ca58290b7b29084565e214495c6f2b
   extra_pdf_sha256:
   - 6ca70b17b30c5f21b536c3538e829b6fa607686a407e05893dd4fe456c36cd84
   checks:
-    version: 1
+    version: 2
     failed: []
     word_coverage: 1.0
 pdf_sha256: 8b867ebeffe3361113de987395a85fd628ca58290b7b29084565e214495c6f2b
@@ -92,4 +92,3 @@ bpk:
     skip: []
     reason: the law first, then its Penjelasan
 uji_materi: null
-recheck: file order set (decision 0023)

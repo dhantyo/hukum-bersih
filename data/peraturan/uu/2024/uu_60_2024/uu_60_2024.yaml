@@ -30,18 +30,26 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_60_2024_2024-09-30.txt
   pasal_count: 13
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: bf94074be46de6490523865b8c8e8dc75ea93a4f6decfd4916bac2ff82124f5f
+  extra_pdf_sha256:
+  - e1761559c78406e07253551b33524b23791cf953f84bc9e7f1a438dc96eb790f
+  - e49dcb9f80d754e451cc74ee757077a4262c4ef57eec052d19555a729efa11e3
+  - 0ba0433617499c0b1990cc36d8b039d829133c9f3a1c621fb0d510205caced5a
+  - ea05f6a87ca9883de6688e6ef1873231de2b94e756964e342e7de8b8168c251a
+  - d8398b3a4003c2b8c5bcd35d33e6ae6610e4b8c39585f3d3c52c5333fad2cc4d
+  - 702cf1f6c2cc7eb2f47fa5e14b53987917dec509dcf561077ea481612d7f5c39
+  - 3168ac994300866ab7ae7ddef403332052f885adc5da55aca467af4d7b628fbe
   ocr: true
   ocr_engine: indra
-  ocr_fixed: 0
-  ocr_unknown: 18
+  ocr_fixed: 147
+  ocr_unknown: 13517
   checks:
-    version: 1
+    version: 2
     failed: []
-    word_coverage: 0.9969
-    ocr_unknown_rate: 0.0033
+    word_coverage: 0.9999
+    ocr_unknown_rate: 0.0197
 pdf_sha256: bf94074be46de6490523865b8c8e8dc75ea93a4f6decfd4916bac2ff82124f5f
 tanggal_pengundangan: '2024-09-30'
 tanggal_berlaku: '2024-09-30'
@@ -116,4 +124,3 @@ bpk:
     reason: the law first, then the Lampiran parts in the order of their page ranges
       (i-409, 410-900, 901-1174, 1175-1500, 1501-1934, 1935-2351, 2352-2689)
 uji_materi: null
-recheck: file order set (decision 0023)

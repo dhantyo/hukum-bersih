@@ -30,13 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2015_2015-10-01.txt
   pasal_count: 11
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d824286432492ec7817393dda1cb66f4c764211d5e3e4c3ab5a8d611293b8d23
   extra_pdf_sha256:
   - 8d1d5c764536a27d6ae3821fe64b5b1f4055e837d57a4c5ffe166a80e45a7b49
   checks:
-    version: 1
+    version: 2
     failed:
     - name: missed_heading
       detail: body 7
@@ -73,4 +73,3 @@ bpk:
     skip: []
     reason: the law first, then its Penjelasan
 uji_materi: null
-recheck: file order set (decision 0023)

@@ -29,13 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2007_2007-01-02.txt
   pasal_count: 23
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6dd48963ea4e313485bec92289017d154d5335d1c9683c70bd1dca955c94f423
   extra_pdf_sha256:
   - dd84db1f6d1dbac54852f33edf988bb197dbca241ffe7edad49173dbe84a83c3
   checks:
-    version: 1
+    version: 2
     failed: []
     word_coverage: 0.9967
 pdf_sha256: 3a5fffcd14e6a405e5e896f3f12ad0538bd5853dd9b39166f2ac875c31083fd0
@@ -69,4 +69,3 @@ bpk:
     skip: []
     reason: the law first, then its Penjelasan
 uji_materi: null
-recheck: file order set (decision 0023)

@@ -29,7 +29,7 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_116_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 18
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2c27743bc3737f0712cc65b4bee84d82ece666ba2093ae5da110c9cb310fde5a
   ocr: true
@@ -37,7 +37,7 @@ versions:
   ocr_fixed: 0
   ocr_unknown: 31
   checks:
-    version: 1
+    version: 2
     failed: []
     word_coverage: 0.987
     ocr_unknown_rate: 0.022
@@ -87,4 +87,3 @@ bpk:
       reason: same text as 367824, which is kept
     reason: two identical copies of the law with its Penjelasan
 uji_materi: null
-recheck: file order set (decision 0023)
