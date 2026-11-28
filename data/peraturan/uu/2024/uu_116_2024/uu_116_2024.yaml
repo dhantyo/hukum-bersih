@@ -79,4 +79,12 @@ bpk:
       url: https://peraturan.bpk.go.id/Details/59691/uu-no-14-tahun-1950
       note: Ketentuan yang mengatur mengenai Kabupaten Pandeglang dalam Undang-Undang
         Nomor 14 Tahun 1950 dicabut dan dinyatakan tidak berlaku.
+  file_order:
+    order:
+    - 367824
+    skip:
+    - bpk_file_id: 367825
+      reason: same text as 367824, which is kept
+    reason: two identical copies of the law with its Penjelasan
 uji_materi: null
+recheck: file order set (decision 0023)

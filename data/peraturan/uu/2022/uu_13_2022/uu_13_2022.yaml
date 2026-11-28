@@ -101,4 +101,13 @@ bpk:
       tentang: Pembentukan Peraturan Perundang-Undangan
       url: https://peraturan.bpk.go.id/Details/39188/uu-no-12-tahun-2011
       note: null
+  file_order:
+    order:
+    - 218051
+    skip:
+    - bpk_file_id: 207035
+      reason: unsigned copy of the same text (blank dates, no Penjelasan); 218051
+        is kept
+    reason: 218051 is the published law with its Penjelasan
 uji_materi: null
+recheck: file order set (decision 0023)

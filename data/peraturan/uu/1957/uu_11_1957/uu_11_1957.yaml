@@ -68,4 +68,13 @@ bpk:
         Indonesia Untuk Tahun-Tahun Dinas 1952 dan 1953
       url: https://peraturan.bpk.go.id/Details/50537/uu-no-45-tahun-1954
       note: null
+  file_order:
+    order:
+    - 41752
+    skip:
+    - bpk_file_id: 41753
+      reason: a Lampiran of UU 12/1957 (Bagian VII, Kehakiman), not of this law (Bagian
+        VI)
+    reason: only the body belongs to this law; the second file is another law's Lampiran
 uji_materi: null
+recheck: file order set (decision 0023)

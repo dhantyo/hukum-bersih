@@ -73,4 +73,12 @@ bpk:
         Anggaran Pendapatan dan Belanja Negara Tahun 1968 (L.N. Tahun 1967 No. 33)
       url: https://peraturan.bpk.go.id/Details/49127/uu-no-1-tahun-1968
       note: null
+  file_order:
+    order:
+    - 38868
+    skip:
+    - bpk_file_id: 38869
+      reason: same text as 38868, which is kept
+    reason: the Lampiran file repeats the body (same first and last page)
 uji_materi: null
+recheck: file order set (decision 0023)

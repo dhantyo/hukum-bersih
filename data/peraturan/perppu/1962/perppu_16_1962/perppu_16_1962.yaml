@@ -61,4 +61,12 @@ bpk:
         Negara Tahun 1962 No. 70), Menjadi Undang-Undang
       url: https://peraturan.bpk.go.id/Details/50234/uu-no-3-tahun-1964
       note: null
+  file_order:
+    order:
+    - 43088
+    skip:
+    - bpk_file_id: 43089
+      reason: a Lampiran of Perpu 13/1962 (vehicle tariffs), not of this law
+    reason: only the body belongs to this law; the second file is another law's Lampiran
 uji_materi: null
+recheck: file order set (decision 0023)
