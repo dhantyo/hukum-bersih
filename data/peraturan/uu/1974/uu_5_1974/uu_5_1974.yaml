@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1974_1974-07-23.txt
   pasal_count: 94
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2b6092e00df9e99568124e7f3435ea6de04314e5a84ba6f34b342fa7dd15e6e1
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: 2b6092e00df9e99568124e7f3435ea6de04314e5a84ba6f34b342fa7dd15e6e1
 tanggal_pengundangan: '1974-07-23'
 tanggal_berlaku: '1974-07-23'

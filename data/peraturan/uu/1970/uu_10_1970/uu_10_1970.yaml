@@ -29,9 +29,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_1970_1970-08-07.txt
   pasal_count: 1
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c322a0f33757d139b29f1052aace0778c12748444d7307c03bc20c71ceba2ead
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: body 1, penjelasan 6
+    word_coverage: 0.9994
 pdf_sha256: c322a0f33757d139b29f1052aace0778c12748444d7307c03bc20c71ceba2ead
 tanggal_pengundangan: '1970-08-07'
 tanggal_berlaku: '1970-08-07'

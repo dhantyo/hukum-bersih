@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1970_1970-03-27.txt
   pasal_count: 15
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: efb7c979dbdb825f2f60f760717de454e8acf758a7104d89271f75c17e11b01d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9972
 pdf_sha256: efb7c979dbdb825f2f60f760717de454e8acf758a7104d89271f75c17e11b01d
 tanggal_pengundangan: '1970-03-27'
 tanggal_berlaku: '1970-03-27'

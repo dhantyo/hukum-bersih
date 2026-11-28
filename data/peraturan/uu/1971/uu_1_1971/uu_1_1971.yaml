@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1971_1971-03-10.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 09d8be9094572fc2c9785bb9e0f05b1c7a9a42af9ef5742a583579fc8258a3fd
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9972
 pdf_sha256: 09d8be9094572fc2c9785bb9e0f05b1c7a9a42af9ef5742a583579fc8258a3fd
 tanggal_pengundangan: '1971-03-10'
 tanggal_berlaku: '1971-03-10'

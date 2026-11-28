@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1971_1971-03-29.txt
   pasal_count: 9
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4c3b2248078d5bf870b8fb849b599fbe0ab4ce36dd1c794b46773029fd5230f0
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9985
 pdf_sha256: 4c3b2248078d5bf870b8fb849b599fbe0ab4ce36dd1c794b46773029fd5230f0
 tanggal_pengundangan: '1971-03-29'
 tanggal_berlaku: '1971-04-01'

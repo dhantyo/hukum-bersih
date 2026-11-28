@@ -29,9 +29,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1970_1970-12-17.txt
   pasal_count: 41
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: dd333ee42223e3beafa4a6ee58be7e784ea5f2416be19a28a2257435f6bb7216
+  checks:
+    version: 1
+    failed:
+    - name: pasal_gap
+      detail: 15->17
+    word_coverage: 0.9994
 pdf_sha256: dd333ee42223e3beafa4a6ee58be7e784ea5f2416be19a28a2257435f6bb7216
 tanggal_pengundangan: '1970-12-17'
 tanggal_berlaku: '1970-12-17'

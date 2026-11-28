@@ -30,9 +30,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1973_1973-06-08.txt
   pasal_count: 5
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 858fdb5fcd56e4e3e0a003f50623d91805ff534400269c9a5fb4b23a10e5ef1a
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: penjelasan 4
+    word_coverage: 0.9966
 pdf_sha256: 858fdb5fcd56e4e3e0a003f50623d91805ff534400269c9a5fb4b23a10e5ef1a
 tanggal_pengundangan: '1973-06-08'
 tanggal_berlaku: '1972-04-01'

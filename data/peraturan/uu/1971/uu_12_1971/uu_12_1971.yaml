@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_1971_1971-10-16.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d51b5437a9c056e8a38d3945b99ffa4af1d17f94d2ace1ead6b0baa32b91db91
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9931
 pdf_sha256: d51b5437a9c056e8a38d3945b99ffa4af1d17f94d2ace1ead6b0baa32b91db91
 tanggal_pengundangan: '1971-10-16'
 tanggal_berlaku: '1971-10-16'

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1970_1970-07-31.txt
   pasal_count: 6
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 584ef8e4ca90ba0e70e06d841b0a811543ce8cb614d5414a5d561799c8bc96df
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9969
 pdf_sha256: 584ef8e4ca90ba0e70e06d841b0a811543ce8cb614d5414a5d561799c8bc96df
 tanggal_pengundangan: '1970-07-31'
 tanggal_berlaku: '1970-07-31'

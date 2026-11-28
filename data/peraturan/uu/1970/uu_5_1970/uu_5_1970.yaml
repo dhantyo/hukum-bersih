@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1970_1970-03-30.txt
   pasal_count: 7
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ba29c38cd52cd650c94e7234c5745430c22db03aad1101a5f910d50fd767ba4a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9982
 pdf_sha256: ba29c38cd52cd650c94e7234c5745430c22db03aad1101a5f910d50fd767ba4a
 tanggal_pengundangan: '1970-03-30'
 tanggal_berlaku: '1970-04-01'

@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1970_1970-02-11.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8da2c9c26ec3af1fcc1d54f99ca0e73585fcb38835a369d716ed8f634fd602b2
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9934
 pdf_sha256: 8da2c9c26ec3af1fcc1d54f99ca0e73585fcb38835a369d716ed8f634fd602b2
 tanggal_pengundangan: '1970-02-11'
 tanggal_berlaku: '1970-02-11'

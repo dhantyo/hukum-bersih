@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1973_1973-12-08.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: db667d36692941e18c4f06f5c0bfcecd2e674aa113fe6a5aeca5d45fd925062e
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9955
 pdf_sha256: db667d36692941e18c4f06f5c0bfcecd2e674aa113fe6a5aeca5d45fd925062e
 tanggal_pengundangan: '1973-12-08'
 tanggal_berlaku: '1973-12-08'
