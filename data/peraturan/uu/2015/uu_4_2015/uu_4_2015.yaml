@@ -36,9 +36,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2015_2015-03-10.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8cb257cecdae50b45536ed489a73c57e55306766ab3a46cd607e466ba27b05e8
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: e14cf878811960cdfb1470d2bd8909b2400da2b0acf388620be5ecb95f338f8b
 tanggal_pengundangan: '2015-03-10'
 tanggal_berlaku: '2015-03-10'

@@ -35,9 +35,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2015_2015-03-10.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5cea5b9cf9ac61fb5ef855b10be350c37107a8b5383d10ee35110ba089c0705f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 08e38533f49b066974a154ce771cd382eef6db30448672120b4b03faa2c70f82
 tanggal_pengundangan: '2015-03-10'
 tanggal_berlaku: '2015-03-10'

@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_2015_2015-03-10.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e1abc7878fffc2d3d3be6c7abf39b5b34331ae1a4b5dcd9cf2f497e8a4c7d2da
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: a41d5254e46e4cdddbdd1bb395471aec10e1d5706a0830a35ccc388d2a7c3c44
 tanggal_pengundangan: '2015-03-10'
 tanggal_berlaku: '2015-03-10'

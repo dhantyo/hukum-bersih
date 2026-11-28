@@ -36,13 +36,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2017_2017-01-12.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3dab799570ebc80f3c2caa86e96d00ced199af80af07b6721dd6b9b7eebd4afa
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9887
+    ocr_unknown_rate: 0.002
 pdf_sha256: 004740b550e1e6dcd445f93ec859532c06c33bf0444e37e6ae73add9d5ebbc90
 tanggal_pengundangan: '2017-01-12'
 tanggal_berlaku: '2017-01-12'

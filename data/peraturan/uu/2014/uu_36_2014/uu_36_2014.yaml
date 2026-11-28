@@ -28,13 +28,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_36_2014_2014-10-17.txt
   pasal_count: 96
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: fd9cfa00fad7986bdf844395a8d1bd355a47bf8e8200f272bab041bfe04babdf
   ocr: true
   ocr_engine: indra
   ocr_fixed: 1
   ocr_unknown: 49
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9983
+    ocr_unknown_rate: 0.0047
 pdf_sha256: 92540c45e7f0f0b7e7009ba9c4058952f2b10a6060e6decec7efa89d656817e7
 tanggal_pengundangan: '2014-10-17'
 tanggal_berlaku: '2014-10-17'

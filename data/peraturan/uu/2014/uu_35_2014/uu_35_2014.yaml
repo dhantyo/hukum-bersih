@@ -115,9 +115,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_35_2014_2014-10-17.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5c93f277f7f662150073be913e30afec1bf90b6f180f494dd22c618aebb2bfc3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9998
 pdf_sha256: 2d9ae75f5f9645b1a1054fa4087403e538a37f549761d033d8ad28af3c8ffc09
 tanggal_pengundangan: '2014-10-17'
 tanggal_berlaku: '2014-10-17'

@@ -30,13 +30,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2016_2016-10-06.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 258bf7a08c4fe3b465c3140d94f5c4344c4fa530155f1eb77f998db69bad1ad0
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 4
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.988
+    ocr_unknown_rate: 0.0023
 pdf_sha256: 217da78618aee22cc745b423397815a31c130fff7dd94523696f44567c92f2cc
 tanggal_pengundangan: '2016-10-06'
 tanggal_berlaku: '2016-10-06'

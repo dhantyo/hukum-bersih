@@ -28,13 +28,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2016_2016-03-24.txt
   pasal_count: 82
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9220168dc4f92f4e00f4d9e8a5004949da2f1aa0829807dedb2a073db9c4358b
   ocr: true
   ocr_engine: indra
   ocr_fixed: 1
   ocr_unknown: 246
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.997
+    ocr_unknown_rate: 0.0317
 pdf_sha256: 526fdfa294788aeac751513cca5d0e541b02a8df20adc9e7859f561bcbb1023f
 tanggal_pengundangan: '2016-03-24'
 tanggal_berlaku: '2016-03-24'

@@ -66,9 +66,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2016_2016-07-01.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f5c01d2559b02c263fadf3131b2f9783f9ce76188b8c7e58b9be8c1de86c9c1f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9999
 pdf_sha256: 8f60a26cdde0894e60eeedad3e460bb1a33e0872d442557132b4a33818a7e45f
 tanggal_pengundangan: '2016-07-01'
 tanggal_berlaku: '2016-07-01'

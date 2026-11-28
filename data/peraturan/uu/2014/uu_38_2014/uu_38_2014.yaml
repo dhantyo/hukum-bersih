@@ -28,13 +28,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_38_2014_2014-10-17.txt
   pasal_count: 66
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 54f94d67134e51d596ef20a0e9a5e939652bb0d1d5eff1c4683dfc2b4de526cd
   ocr: true
   ocr_engine: indra
   ocr_fixed: 2
   ocr_unknown: 40
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9972
+    ocr_unknown_rate: 0.0062
 pdf_sha256: a0238d0f34228d6996fa3cdfc8e1a69e91e1b5af127e42913fc7d5a2770a05a5
 tanggal_pengundangan: '2014-10-17'
 tanggal_berlaku: '2014-10-17'

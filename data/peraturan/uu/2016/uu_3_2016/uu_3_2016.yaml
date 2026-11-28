@@ -38,13 +38,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2016_2016-01-15.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8055003b318efa2db4e823115978e19a8b287e3a12078bf2a5061bbf719e82af
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 2
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9776
+    ocr_unknown_rate: 0.0019
 pdf_sha256: 599c4a801078b1f0c69077c8f7e1a153f358574853a9ebbc74d1b5a45ff0d466
 tanggal_pengundangan: '2016-01-19'
 tanggal_berlaku: '2016-01-19'
