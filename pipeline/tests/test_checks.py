@@ -2,7 +2,7 @@
 fails on one with the fault it looks for."""
 import pytest
 
-from hukum_rapih.checks import run_checks, words
+from hukum_rapih.checks import OCR_UNKNOWN_MAX, WORD_COVERAGE_MIN, run_checks, words
 
 REC = {"akn": "/akn/id/act/uu/2020/1"}
 CLOSING = "CONCLUSIONS\n  Disahkan di Jakarta\n\n  pada tanggal 1 Mei 2020\n"
@@ -119,9 +119,20 @@ def test_an_amending_law_is_not_checked_for_the_order_it_quotes():
     assert not {"ayat_order", "list_order", "missed_heading"} & set(failed(law(body)))
 
 
-def test_words_of_the_pdf_missing_from_the_text():
-    checks = run_checks(REC, law(), words(PRINTED + " kata yang hilang" * 20))
-    assert "word_coverage" in checks.failed and checks.word_coverage < 0.6
+def words_text(n: int) -> str:
+    """A text of ``n`` words: three of markup, the rest "kata"."""
+    return "BODY\n  ART 1 -\n    " + "kata " * (n - 3) + "\n"
+
+
+AT_MIN = round(WORD_COVERAGE_MIN * 1000)
+AT_MAX = round(OCR_UNKNOWN_MAX * 1000)
+
+
+@pytest.mark.parametrize(("found", "fails"), [(AT_MIN, False), (AT_MIN - 1, True)])
+def test_word_coverage_fails_below_its_minimum(found, fails):
+    checks = run_checks(REC, words_text(found + 3), words("kata " * 1000))
+    assert checks.word_coverage == found / 1000
+    assert ("word_coverage" in checks.failed) is fails
 
 
 def test_word_coverage_is_not_run_without_the_pdf():
@@ -129,9 +140,11 @@ def test_word_coverage_is_not_run_without_the_pdf():
     assert checks.word_coverage is None and "word_coverage" not in set(checks.failed) | checks.passed
 
 
-def test_too_many_words_ocr_left_unknown():
-    checks = run_checks(REC, law(), ocr_unknown=30)
-    assert "ocr_unknown" in checks.failed and checks.ocr_unknown_rate > 0.5
+@pytest.mark.parametrize(("unknown", "fails"), [(AT_MAX, False), (AT_MAX + 1, True)])
+def test_ocr_unknown_fails_above_its_maximum(unknown, fails):
+    checks = run_checks(REC, words_text(1000), ocr_unknown=unknown)
+    assert checks.ocr_unknown_rate == unknown / 1000
+    assert ("ocr_unknown" in checks.failed) is fails
 
 
 def test_a_check_the_stored_text_could_not_run_is_no_worse():

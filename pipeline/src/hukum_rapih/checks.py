@@ -23,10 +23,14 @@ from .closing import conclusions, parse
 
 CHECKS_VERSION = 1   # raise it when a check changes, so results of older checks show as stale
 
-# Lowest share of the PDF's words a text may miss and still pass. PROVISIONAL until measured
-# on the regression set (tests/regression.yaml) on CI.
-WORD_COVERAGE_MIN = 0.95
-# Highest share of a text's words the OCR spell fix may leave unknown. PROVISIONAL, as above.
+# Lowest share of the PDF's words a text must keep to pass. 2026-11-28: the regression set
+# (tests/regression.yaml) on CI ran from 0.9798 (UU 3/2019) to 0.9997, every law with its
+# expected counts; 0.97 sits under the lowest, so a text that loses 3% of the words fails.
+WORD_COVERAGE_MIN = 0.97
+# Highest share of a text's words the OCR spell fix may leave unknown. 2026-11-28: the OCR'd
+# laws of the regression set ran from 0.0018 to 0.021 (UU 2/2025) on CI; the 332 stored OCR'd
+# texts reach 0.037 at the 99th percentile and 0.074 at most (UU 71/2024), so 0.05 fails only
+# the outliers.
 OCR_UNKNOWN_MAX = 0.05
 
 LEAKS = {
