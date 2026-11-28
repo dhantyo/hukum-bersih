@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_33_1957_1957-10-26.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1ca409ab105ae1c0b67bf41e130c43f01d273c57d192395a3fb37611e0efddb7
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9952
 pdf_sha256: 1ca409ab105ae1c0b67bf41e130c43f01d273c57d192395a3fb37611e0efddb7
 tanggal_pengundangan: '1957-11-13'
 tanggal_berlaku: '1954-01-01'

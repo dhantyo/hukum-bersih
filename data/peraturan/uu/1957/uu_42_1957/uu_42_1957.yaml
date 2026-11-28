@@ -30,9 +30,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_42_1957_1957-10-26.txt
   pasal_count: 2
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 245a0bdaee6799e5afc40726b808051361c6fa195d9317204e3eb33fd3c5d731
+  checks:
+    version: 1
+    failed:
+    - name: page_furniture
+      detail: page no. 1
+    word_coverage: 0.9963
 pdf_sha256: 245a0bdaee6799e5afc40726b808051361c6fa195d9317204e3eb33fd3c5d731
 tanggal_pengundangan: '1957-11-13'
 lembaran_negara: 'LN. 1957/No. 117, LL SETNEG : 7 HLM'

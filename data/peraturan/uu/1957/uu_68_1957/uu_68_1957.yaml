@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_68_1957_1957-11-12.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 63e16f0cd468e745751646c4cdff7203f5815fa1f3f04f8152865feef6c2a8b4
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9923
 pdf_sha256: 63e16f0cd468e745751646c4cdff7203f5815fa1f3f04f8152865feef6c2a8b4
 tanggal_pengundangan: '1957-11-16'
 tanggal_berlaku: '1957-11-16'

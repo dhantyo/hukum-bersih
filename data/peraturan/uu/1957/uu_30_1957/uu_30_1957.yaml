@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_1957_1957-10-08.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c8e2ab38ec735f5082cf180d513d20be683db6de1d5e06cb8139653f9c6f5082
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9915
 pdf_sha256: c8e2ab38ec735f5082cf180d513d20be683db6de1d5e06cb8139653f9c6f5082
 tanggal_pengundangan: '1957-10-16'
 tanggal_berlaku: '1957-10-16'

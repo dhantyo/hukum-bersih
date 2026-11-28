@@ -30,9 +30,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_35_1957_1957-10-26.txt
   pasal_count: 2
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4c63a24babf1932b22b9ec111bc80a82eaf421df715825b521aa285bfad1e9be
+  checks:
+    version: 1
+    failed:
+    - name: page_furniture
+      detail: page no. 1
+    word_coverage: 0.9985
 pdf_sha256: 4c63a24babf1932b22b9ec111bc80a82eaf421df715825b521aa285bfad1e9be
 tanggal_pengundangan: '1957-11-13'
 tanggal_berlaku: '1954-01-01'

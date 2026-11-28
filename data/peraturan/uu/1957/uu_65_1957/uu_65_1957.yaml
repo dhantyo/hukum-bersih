@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_65_1957_1957-10-26.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7845a55ef6eba4e2bf36b740c9f8cf47d9f36e4d50fc1507770a415ce37dcd94
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9801
 pdf_sha256: 7845a55ef6eba4e2bf36b740c9f8cf47d9f36e4d50fc1507770a415ce37dcd94
 tanggal_pengundangan: '1957-11-13'
 tanggal_berlaku: '1954-01-01'

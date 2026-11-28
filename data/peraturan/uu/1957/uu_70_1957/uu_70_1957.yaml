@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_70_1957_1957-11-12.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9883713ad836d8a273298201a82df395f79cd9d2682b8827dc62c585feaab952
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9952
 pdf_sha256: 9883713ad836d8a273298201a82df395f79cd9d2682b8827dc62c585feaab952
 tanggal_pengundangan: '1957-11-16'
 tanggal_berlaku: '1957-11-16'

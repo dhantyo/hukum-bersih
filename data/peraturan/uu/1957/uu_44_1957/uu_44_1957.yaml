@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_44_1957_1957-10-26.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d9e64fa18004ec0d71eaea6fc92e591b5feb320ef2e1407cb5e80a2f1ef243c2
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9977
 pdf_sha256: d9e64fa18004ec0d71eaea6fc92e591b5feb320ef2e1407cb5e80a2f1ef243c2
 tanggal_pengundangan: '1957-11-13'
 tanggal_berlaku: '1954-01-01'

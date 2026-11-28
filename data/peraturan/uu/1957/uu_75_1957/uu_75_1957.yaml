@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_75_1957_1957-12-13.txt
   pasal_count: 19
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9e011f9436f79106266bb545efc7eaee1f203aa16ef46c3433c258fd3f0c97d0
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9973
 pdf_sha256: 9e011f9436f79106266bb545efc7eaee1f203aa16ef46c3433c258fd3f0c97d0
 tanggal_pengundangan: '1957-12-17'
 tanggal_berlaku: '1957-12-17'

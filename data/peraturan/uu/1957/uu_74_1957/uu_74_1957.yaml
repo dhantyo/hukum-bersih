@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_74_1957_1957-10-30.txt
   pasal_count: 61
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 832a7b817a99fe13ee0c3d14154f4e61e62c3f8fd5f0525041e66a40f8205412
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 tanggal_pengundangan: '1957-12-17'
 tanggal_berlaku: '1957-12-17'
 lembaran_negara: 'LN. 1957 No. 160, TLN No. 1485, LL SETNEG : 41 HLM'

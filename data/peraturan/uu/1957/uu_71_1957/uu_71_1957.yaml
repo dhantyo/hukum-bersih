@@ -31,9 +31,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_71_1957_1957-10-26.txt
   pasal_count: 2
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f82142ac9a4e44744df5ef2b32b65a9b6137ad507a81bd4aa07603aff76c7400
+  checks:
+    version: 1
+    failed:
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 0.9969
 pdf_sha256: f82142ac9a4e44744df5ef2b32b65a9b6137ad507a81bd4aa07603aff76c7400
 tanggal_pengundangan: '1957-11-10'
 tanggal_berlaku: '1957-11-10'

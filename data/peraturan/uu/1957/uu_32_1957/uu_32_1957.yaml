@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_32_1957_1957-10-26.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f429b1360d9d0f1e32fde8383142cae1c8e91827e63fc8a46c821e6c7837afaf
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9895
 pdf_sha256: f429b1360d9d0f1e32fde8383142cae1c8e91827e63fc8a46c821e6c7837afaf
 tanggal_pengundangan: '1957-11-13'
 tanggal_berlaku: '1954-01-01'

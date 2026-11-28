@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_29_1957_1957-10-08.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: aa19fac2a1dfbe3a2a81b42c3a5118a62888c1307b70e01a162ada5af555f44b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9927
 pdf_sha256: aa19fac2a1dfbe3a2a81b42c3a5118a62888c1307b70e01a162ada5af555f44b
 tanggal_pengundangan: '1957-10-16'
 tanggal_berlaku: '1957-10-16'
