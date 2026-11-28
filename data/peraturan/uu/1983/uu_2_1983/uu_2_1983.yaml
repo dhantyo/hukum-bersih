@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1983_1983-02-28.txt
   pasal_count: 8
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6f02fa7e3072ce0837f8323375c35088c4689a9a0028f0be923dbfb9befd140c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9983
 pdf_sha256: 95d1c0a296f887dfca6db487e8b840271177b558904d3cd92564622a0738cc88
 tanggal_pengundangan: '1983-02-28'
 tanggal_berlaku: '1983-04-01'

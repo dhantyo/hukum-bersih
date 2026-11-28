@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1983_1983-12-31.txt
   pasal_count: 50
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2dd6a59899a0262c52b08bc216ed8653a13f2c25524b93f17a388a7f75e0667e
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9998
 pdf_sha256: 81227762cfb5aeae3e73b4aed3bcd2646ab3d347c23d620e910b20488c060137
 tanggal_pengundangan: '1983-12-31'
 tanggal_berlaku: '1984-01-01'

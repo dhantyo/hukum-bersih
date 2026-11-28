@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1984_1984-06-05.txt
   pasal_count: 5
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1853ee0f77e3be66a7204d7140e4c33db39cb6f9076bfad06751766ac0c369c8
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9973
 pdf_sha256: cae96d033b370b8fc1cd0f3473470eaad590c79c7de13965d00bdf35c31d48a9
 tanggal_pengundangan: '1984-06-05'
 tanggal_berlaku: '1983-04-01'

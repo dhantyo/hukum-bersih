@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1984_1984-03-10.txt
   pasal_count: 8
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 77b6978b6a67eb5c0cde90bbe700225dd609741cfdc7f237b32cf42c1117bff8
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9983
 pdf_sha256: f6ff7ff0547ae25ae8b5ed483791920d243aa44f35c1d92a0976b0c045497079
 tanggal_pengundangan: '1984-03-10'
 tanggal_berlaku: '1984-04-01'

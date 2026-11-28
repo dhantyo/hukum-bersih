@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1985_1985-03-07.txt
   pasal_count: 8
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 371b39698291a57c368f863dac9f136ab1ce1ed343f452e4136f488e589c7269
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 371b39698291a57c368f863dac9f136ab1ce1ed343f452e4136f488e589c7269
 tanggal_pengundangan: '1985-03-07'
 tanggal_berlaku: '1985-04-01'

@@ -29,9 +29,17 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1983_1983-12-31.txt
   pasal_count: 36
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 27a630958ba1066df3407313bdbf7f2cd0642cb707de98e0861797c191c6e691
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: body 27
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 0.9999
 pdf_sha256: 27a630958ba1066df3407313bdbf7f2cd0642cb707de98e0861797c191c6e691
 tanggal_pengundangan: '1983-12-31'
 tanggal_berlaku: '1984-01-01'

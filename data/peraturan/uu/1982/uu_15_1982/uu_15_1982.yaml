@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_1982_1982-08-20.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 048dfd405a7fa099076debc802a7a2f9fc965a422b8716f46cad80a0661d809a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9958
 pdf_sha256: f9f71980fc5e24ac7b0cc8bfd215de44dbdb804e67f0c9f1274a67238b36f082
 tanggal_pengundangan: '1982-08-20'
 tanggal_berlaku: '1982-08-20'

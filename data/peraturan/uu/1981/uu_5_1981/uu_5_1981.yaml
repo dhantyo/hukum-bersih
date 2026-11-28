@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1981_1981-07-04.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2ba3763855e74ece981d5da7e2e3bc570488897221c6fc07d88dff4e47cf5be4
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9914
 pdf_sha256: 117acd658505cfa72b664efc3ef0293055f597ad502e64419b94862233a1c476
 tanggal_pengundangan: '1981-07-04'
 tanggal_berlaku: '1981-07-04'

@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1984_1984-10-27.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0e59e268dfa5e2aca23bf4f0dc88f7922ecddf382e14ea78c5165fd9a0fadb32
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9961
 pdf_sha256: 75c8558caa6b7bda05751d7c161439dd50691b82bf88e66ed55266d6dba70dc3
 tanggal_pengundangan: '1984-10-27'
 tanggal_berlaku: '1984-10-27'

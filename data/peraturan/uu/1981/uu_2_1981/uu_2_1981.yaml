@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1981_1981-04-01.txt
   pasal_count: 40
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0e35fea36efb1eaaf8ae886510ec5e2e6985d7d846771ee2eacf39743ba5c49c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: 50a38614d050c892451ba3d556f061e2dc76fe0e058d49803b8c4b471f7c7a64
 tanggal_pengundangan: '1981-04-01'
 tanggal_berlaku: '1981-04-01'

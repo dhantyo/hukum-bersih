@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1981_1981-07-04.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 349d6c80e9104571712a41d8ffef3db128500a26dcab64d29392b4b8398dbfb3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9915
 pdf_sha256: d344845b30a5d64d76f744418768b34e6a59a2b77c423d3a32690d15d5c046b9
 tanggal_pengundangan: '1981-07-04'
 tanggal_berlaku: '1981-07-04'
