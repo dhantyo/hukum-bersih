@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1976_1976-06-21.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4177e9ccd14af9caa65aa00d12fecb6b826396e6a69cdfdd073e3e38c90338fb
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.996
 pdf_sha256: 3616f457515f504dd7e0b3af50dcd89554e59d0e6e8e5b4e52bf51b44d54dca0
 tanggal_pengundangan: '1976-06-21'
 tanggal_berlaku: '1976-06-21'

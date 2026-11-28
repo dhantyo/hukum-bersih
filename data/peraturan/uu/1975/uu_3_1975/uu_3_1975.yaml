@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1975_1975-08-27.txt
   pasal_count: 18
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 43f5905e98caaa7c38e42e1e3ec50132b97537d1bc924b37579654c7aa5c26d2
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9974
 pdf_sha256: 41f59d3466e2036ab098e8aab00ce16176a03ad2b8612ed99498dd5364c13555
 tanggal_pengundangan: '1975-08-27'
 tanggal_berlaku: '1975-08-27'

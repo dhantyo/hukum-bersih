@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1980_1980-07-29.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a6152b388b964e628dfcd3d9f8133b791f8b662e82c63d87867697dbb3b5b9eb
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9957
 pdf_sha256: 149174b1aae40acba8690f26e38a63a45921793a0f04c05248dd6c4f1bbc901c
 tanggal_pengundangan: '1980-07-29'
 tanggal_berlaku: '1980-07-29'

@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_1974_1974-12-26.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: deaaaf01fffc6e61d6384d11f3c9758b7d8bb3ec333e54f181ca696850b6c9da
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9956
 pdf_sha256: deaaaf01fffc6e61d6384d11f3c9758b7d8bb3ec333e54f181ca696850b6c9da
 tanggal_pengundangan: '1974-12-26'
 tanggal_berlaku: '1974-12-26'

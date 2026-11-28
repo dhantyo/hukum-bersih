@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1978_1978-08-03.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d11f421fc079fb2c764ea649d3e15278ae95a9b65a893e1d2c19b9d3820a07b9
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9957
 pdf_sha256: aeee50100c2c4a4243f94717680fa679f8e32076dacd08b84f50477458c7a2dc
 tanggal_pengundangan: '1978-08-03'
 tanggal_berlaku: '1978-08-03'

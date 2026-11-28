@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1976_1976-03-31.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 027ade83607b96804f8a47f2ce993663ddf3574b60745f661cc0e06f5885c612
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9963
 pdf_sha256: 411cc8cb3a70b828a097f85514d843785667ba0472d32150d4cb93cdbf60bbf5
 tanggal_pengundangan: '1976-03-31'
 tanggal_berlaku: '1976-03-31'

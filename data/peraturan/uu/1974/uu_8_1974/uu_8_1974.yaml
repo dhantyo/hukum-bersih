@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1974_1974-11-06.txt
   pasal_count: 41
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 359f22bff9cc9de0d16285ea1f3f2e817eea8d71196d694cd256b096ad5a0bf2
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: 359f22bff9cc9de0d16285ea1f3f2e817eea8d71196d694cd256b096ad5a0bf2
 tanggal_pengundangan: '1974-11-06'
 tanggal_berlaku: '1974-11-06'

@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1978_1978-03-07.txt
   pasal_count: 8
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 40d63ec2e209202bab8a4310a1ec593ac1457940ca0b284ed66eeda4f5098dde
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9983
 pdf_sha256: 92de0b50c5430cac8c97285cceb35d6493f7734791dc3cb056183c09713534c3
 tanggal_pengundangan: '1978-03-07'
 tanggal_berlaku: '1978-04-01'

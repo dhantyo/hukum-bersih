@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1977_1977-06-30.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c4ebd5bcf5a86350f81da5852b1fb5b459a948ce97c90d2ae5535e6c63cb187b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9967
 pdf_sha256: 8bf86538eb9ac6de28194a74b7519c798952db5397cd0cf93811703b8e0a6bf7
 tanggal_pengundangan: '1977-06-30'
 tanggal_berlaku: '1976-04-01'
