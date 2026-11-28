@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_44_2009_2009-10-28.txt
   pasal_count: 66
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a738924a7e2b47da0a1ed0af6ade188a884a05d924ce3a9dc67103f7dcc50aa2
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9978
 pdf_sha256: 779db688a47e83bf4dd07628305513b18ed0d239c1eefdbe32771b5656e3559f
 tanggal_pengundangan: '2009-10-28'
 tanggal_berlaku: '2009-10-28'

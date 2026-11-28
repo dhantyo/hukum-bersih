@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_50_2009_2009-10-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2c437ba31d5cd1da75960ec9e18d9b546c47bc25cc2fe3220ed95bf2a37c450c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 7328f92b701df31420b3811ebe9f68adcf692a5caad58644a986ca56b4598912
 tanggal_pengundangan: '2009-10-29'
 tanggal_berlaku: '2009-10-29'

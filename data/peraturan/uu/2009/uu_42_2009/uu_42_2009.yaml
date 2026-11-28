@@ -49,9 +49,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_42_2009_2009-10-15.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 17bb1512014f0eda9364f84baa33d0439633ac1cdd48801c134d105e6b58d444
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9986
 pdf_sha256: aea74684ce4537cf243e7f98e30a0b66de874d92b0b20423a6d45d7e68135531
 tanggal_pengundangan: '2009-10-15'
 tanggal_berlaku: '2010-04-01'

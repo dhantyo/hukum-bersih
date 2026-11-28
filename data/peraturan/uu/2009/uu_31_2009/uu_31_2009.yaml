@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_31_2009_2009-10-01.txt
   pasal_count: 105
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 12b066a8f93b19ad8aadc013df18e422f02d9eb7afd1a52436b9979617338793
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9975
 pdf_sha256: 0e51fd9326addf29b0796f04afe17f390ba61c61c42b49b0c9cb77ec87692826
 tanggal_pengundangan: '2009-10-01'
 tanggal_berlaku: '2009-10-01'

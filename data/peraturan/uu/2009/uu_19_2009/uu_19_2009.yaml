@@ -31,9 +31,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_2009_2009-06-11.txt
   pasal_count: 2
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9f870a1442e62a623746b8c8b54e738987ffd0860cc0350bf83e9d4dc74176b0
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: penjelasan 29
+    word_coverage: 0.9994
 pdf_sha256: 6436a4ffa13d6a2e5365e5d347408710ac4148d4126ab37da824db1e75f8f361
 tanggal_pengundangan: '2009-06-11'
 tanggal_berlaku: '2009-06-11'

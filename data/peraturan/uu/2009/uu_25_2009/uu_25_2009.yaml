@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_25_2009_2009-07-18.txt
   pasal_count: 62
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 37a5dad4b4c3e36b8281f3a7c12360721760125c1bf2a0344385fcc096a9232d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: ad947bb833a33abb29b940e28bbaeaa81aab3a6e9ada433743622b071b7fd6c5
 tanggal_pengundangan: '2009-07-18'
 tanggal_berlaku: '2009-07-18'

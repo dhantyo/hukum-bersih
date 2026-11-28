@@ -37,9 +37,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_2010_2010-08-27.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: bf50c1ae521482f79fc836ffef8340f8d154185209861e08dd178aced464b23a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9841
 pdf_sha256: ca6a0a5dc367744eba764a2da444a9b35a0df34dc0bc509e5b3576e9cac20977
 tanggal_pengundangan: '2010-08-27'
 tanggal_berlaku: '2010-08-27'

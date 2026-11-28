@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_35_2009_2009-10-12.txt
   pasal_count: 155
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 94cccf53d6a8a1e6446281a9b15121ca359aa2b1158fa333e35aac93eb81b232
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.997
 pdf_sha256: 53672a832db9c4bb9a211ec430079cab39c8dfa58f5f94651c1f1cb484eb9e2a
 tanggal_pengundangan: '2009-10-12'
 tanggal_berlaku: '2009-10-12'

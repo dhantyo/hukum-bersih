@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_39_2009_2009-10-14.txt
   pasal_count: 50
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 72f0791fa69652fe3ed2f9e049a13d8d940a0b6a0871d2fefe5ca835470188f8
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9963
 pdf_sha256: 648a2878e29c4343e8e087ab7b1cefa5b8bfca6e79aeed0da557718cb14dfabd
 tanggal_pengundangan: '2009-10-14'
 tanggal_berlaku: '2009-10-14'

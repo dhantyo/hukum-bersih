@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_2009_2009-07-09.txt
   pasal_count: 74
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0d06340e5244cc44f086d72e7af629cd2b15c114e27d68d5e639cadcb7b3c33e
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9957
 pdf_sha256: 66444cf319b6376f78e50117d42c457b158e06ed4c4e359f0783257dbdbe76e9
 tanggal_pengundangan: '2009-07-09'
 tanggal_berlaku: '2009-07-09'

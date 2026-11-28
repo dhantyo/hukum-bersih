@@ -56,9 +56,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2010_2010-05-25.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5a06f9a9837072dce878d6d867a6da820f47e72f80bc1c396a28677aae7ff6d6
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9987
 pdf_sha256: 5a06f9a9837072dce878d6d867a6da820f47e72f80bc1c396a28677aae7ff6d6
 tanggal_pengundangan: '2010-05-25'
 tanggal_berlaku: '2010-05-25'

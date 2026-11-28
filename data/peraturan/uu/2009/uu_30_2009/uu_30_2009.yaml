@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_2009_2009-09-23.txt
   pasal_count: 58
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4cb3ae117809af83c0cd5df99743aeef301009ff6e3055bc772061153f53c241
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9975
 pdf_sha256: 5938840fe6d0ef60832e4941583d3ecbf3bbac0df4ac524293081b5ec2cede01
 tanggal_pengundangan: '2009-09-23'
 tanggal_berlaku: '2009-09-23'

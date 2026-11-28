@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2010_2010-11-24.txt
   pasal_count: 133
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0c2301eb2a0a9af6f796ce7f3c8b5ec9a788fb78990d6d2a2e5ecb4c328f03bf
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9986
 pdf_sha256: 544c76698a43275c82c242ad65af3b90bcfe567451447c1656ebd1fad1f4bd25
 tanggal_pengundangan: '2010-11-24'
 tanggal_berlaku: '2010-11-24'

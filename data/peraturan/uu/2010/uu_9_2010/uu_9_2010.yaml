@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2010_2010-11-19.txt
   pasal_count: 39
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2f95ad98df6232b565c3a0130c45358ccc073031b2a8fe3c0935f9588c90c4ba
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9962
 pdf_sha256: f4e78df3a8d7b154f07d493ac893a6a1503cf07b23f75aa5968d82c7e36d2776
 tanggal_pengundangan: '2010-11-19'
 tanggal_berlaku: '2010-11-19'

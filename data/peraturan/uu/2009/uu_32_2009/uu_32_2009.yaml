@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_32_2009_2009-10-03.txt
   pasal_count: 127
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4bc302ab5c19e085f5e93f8076bab297c58a055f330a788ba8552956c80a2ca3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9988
 pdf_sha256: ccdb9e4d12ce86a908f48f565254308b20cfb57f46f3707844480a85bef24824
 tanggal_pengundangan: '2009-10-03'
 tanggal_berlaku: '2009-10-03'
