@@ -28,13 +28,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2019_2019-10-15.txt
   pasal_count: 55
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 439ee4c167e0a409546abf3e057d6fd60b025b5a77646d8e076b89faaa62c369
   ocr: true
   ocr_engine: indra
   ocr_fixed: 1
   ocr_unknown: 126
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9975
+    ocr_unknown_rate: 0.018
 pdf_sha256: 8388914f14ceb4a86658e8b5c1d06b27f5f8fd4c0b2867728a5d72b22e804af7
 tanggal_pengundangan: '2019-10-16'
 tanggal_berlaku: '2019-10-16'

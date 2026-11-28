@@ -182,13 +182,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2020_2020-06-10.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0b658c6120492bbfd570bb4372a201e1c8d0bb438f699ba20fd14b8f2425c68f
   ocr: true
   ocr_engine: indra
   ocr_fixed: 1
   ocr_unknown: 330
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.999
+    ocr_unknown_rate: 0.0198
 pdf_sha256: a05d66c4d340c4e9ff85846f8958275f73520298fc4b6d7bdad461e6135c4342
 tanggal_pengundangan: '2020-06-10'
 tanggal_berlaku: '2020-06-10'

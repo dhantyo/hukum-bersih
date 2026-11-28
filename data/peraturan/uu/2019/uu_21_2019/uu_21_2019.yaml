@@ -28,13 +28,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2019_2019-10-18.txt
   pasal_count: 96
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 371fd829e840cb4eec31cbef9f3c016148aa68ab124daf49b6c2826c1a8fdf54
   ocr: true
   ocr_engine: indra
   ocr_fixed: 4
   ocr_unknown: 267
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9986
+    ocr_unknown_rate: 0.0209
 pdf_sha256: d00bad13914a7be0df6bb9eea97e91b9dd77eff86941dbe20e2610f9a8b6aa25
 tanggal_pengundangan: '2019-10-18'
 tanggal_berlaku: '2019-10-18'

@@ -39,13 +39,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2019_2019-09-30.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f24d633cda259703a5682e28c44f0774cdacad353be95d311d102b4d45f5d21e
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9867
+    ocr_unknown_rate: 0.0024
 pdf_sha256: 29a32282bb149c73d0ecceaef6df660e48a29a28b44f1bc4bab027331e4e1438
 tanggal_pengundangan: '2019-09-30'
 tanggal_berlaku: '2019-09-30'

@@ -28,13 +28,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2018_2018-08-23.txt
   pasal_count: 73
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ae9a38006a2b0f6e70cc570ae84649500421e442d74ac59ec1abf2e6aecddbf7
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 14
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.998
+    ocr_unknown_rate: 0.0014
 pdf_sha256: bd4c05985f6dfe571b661649764a0d682c5bcddef70c92fc4729a9664ffb4ef9
 tanggal_pengundangan: '2018-08-23'
 tanggal_berlaku: '2018-08-23'

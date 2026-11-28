@@ -32,11 +32,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2017_2017-08-23.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b5eb56815d98bbd425ff1b91f90e03f7bdecfacf7c2c5e67df9874fba475c407
   extra_pdf_sha256:
   - 46978a1001b541286a63cb109b88f5da09a3d5e62c68377a5f3c2f416b48eae4
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: b5eb56815d98bbd425ff1b91f90e03f7bdecfacf7c2c5e67df9874fba475c407
 tanggal_pengundangan: '2017-08-23'
 tanggal_berlaku: '2017-08-23'

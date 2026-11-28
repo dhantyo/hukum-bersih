@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_2019_2019-10-24.txt
   pasal_count: 87
-  parser_version: 11
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: fe9ddf62aca3f4a934d8a4b7a15f39bc2aed48377a2f4f44c4b37497b1024007
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: e86bde5d3d4867bb28121777240c47ba4739824162987a5312abd13ef5aaeb48
 tanggal_pengundangan: '2019-10-24'
 tanggal_berlaku: '2019-10-24'
