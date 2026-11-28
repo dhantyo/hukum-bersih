@@ -10,6 +10,8 @@
     import-pdf       record and convert hand-downloaded PDFs (uploads.py)
     manifest         print a manifest entry for a local file
     reparse-bpk      re-convert texts from the PDFs on archive.org (read only)
+    collect-queue    write the file-order queue for the agent routine (file_order.py)
+    apply-answers    move the routine's merged answers onto their records (file_order.py)
 """
 
 from __future__ import annotations
@@ -87,6 +89,15 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("reparse-bpk", help="re-convert texts from the BPK PDFs archived on archive.org")
     p.add_argument("--only", default="", help="comma-separated ids")
     p.add_argument("--limit", type=int, default=0)
+
+    p = sub.add_parser("collect-queue", help="write queue/file-order/<id>.yaml for each law with "
+                       "several BPK files and no order yet (downloads them from BPK)")
+    p.add_argument("queue", type=Path, help="a checkout of the queue branch")
+    p.add_argument("--only", default="", help="comma-separated ids: just these")
+    p.add_argument("--delay", type=float, default=3.0, help="seconds between requests")
+
+    sub.add_parser("apply-answers", help="move data/queue-answers/file-order/<id>.yaml onto "
+                   "each record's bpk.file_order and delete the answer")
 
     p = sub.add_parser("export-corpus", help="write the web corpus from data/ into a folder")
     p.add_argument("stage", type=Path, nargs="?",
@@ -252,6 +263,31 @@ def main(argv: list[str] | None = None) -> int:
                 break
         print(f"done: {done} reparsed, {failed} failed")
         return 0
+
+    if args.command == "collect-queue":
+        from . import file_order
+        from .sources.bpk_session import Challenged, Session
+
+        only = {i.strip() for i in args.only.split(",") if i.strip()} or None
+        failed = 0
+        try:
+            for line in file_order.collect(Session(args.delay), args.data_dir,
+                                           args.queue / file_order.QUEUE, only):
+                print(line, flush=True)
+                failed += line.startswith("FAIL")
+        except Challenged as e:
+            print(f"STOP Cloudflare: {e}")
+            return 1
+        return 1 if failed else 0
+
+    if args.command == "apply-answers":
+        from . import file_order
+
+        failed = 0
+        for line in file_order.apply(args.data_dir):
+            print(line, flush=True)
+            failed += line.startswith("FAIL")
+        return 1 if failed else 0
 
     if args.command == "import-pdf":
         from .uploads import import_pdf
