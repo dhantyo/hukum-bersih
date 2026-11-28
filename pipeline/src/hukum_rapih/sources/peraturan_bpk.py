@@ -20,6 +20,7 @@ from __future__ import annotations
 import html
 import json
 import re
+import shutil
 import tempfile
 from collections.abc import Iterator
 from dataclasses import dataclass
@@ -524,7 +525,8 @@ def uud_record(work: str, detail_url: str) -> dict:
 def import_uud(session, data_dir: Path, check_dir: Path | None = None) -> Iterator[str]:
     """The UUD 1945 and its four amendments from BPK's one entry: a record and text each, dated
     only by what the text prints. The consolidated text is parsed into ``check_dir`` (outside
-    data/) for ``scripts/check_uud.py``, never stored as a version."""
+    data/, on the runner) for ``scripts/check_uud.py``, never stored as a version; the PDFs are
+    copied there too, for the workflow's review dump."""
     from ..akn.bluebell import to_bluebell
     from ..manifest import entry_for_file, manifest_path
     from ..pdf.structure import parse_pdf
@@ -567,9 +569,12 @@ def import_uud(session, data_dir: Path, check_dir: Path | None = None) -> Iterat
             notes = date_printed(rec, path.parent)
             save_record(path, rec)
             yield f"ok   {work}: {note}" + "".join(f"; {n}" for n in notes)
+        if check_dir:                     # on the runner only, for the check and for review
+            check_dir.mkdir(parents=True, exist_ok=True)
+            for name, pdf in pdfs.items():
+                shutil.copyfile(pdf, check_dir / name)
         if check_dir and SATU_NASKAH in pdfs:
             doc = parse_pdf(pdfs[SATU_NASKAH])
-            check_dir.mkdir(parents=True, exist_ok=True)
             (check_dir / SATU_NASKAH_TEXT).write_text(to_bluebell(doc))
             yield f"ok   {SATU_NASKAH}: {doc.pasal_count} pasal, for the check only"
 

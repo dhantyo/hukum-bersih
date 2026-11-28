@@ -126,6 +126,20 @@ jobs:
             gh workflow run import-bpk.yml --ref "${GITHUB_REF_NAME}" -f mode="$MODE" -f jenis="$JENIS" \
               -f batches="$BATCHES" -f no_text="${{ inputs.no_text }}" -f chain=true
           fi
+      - name: "UUD: how the parser read each PDF, for review (decision 0027)"
+        if: env.JENIS == 'uud'
+        run: |
+          cd pipeline
+          for pdf in "$RUNNER_TEMP"/uud-check/*.pdf; do
+            uv run hukum-rapih explain "$pdf" > "${pdf%.pdf}.explain.txt" 2>&1 || true
+          done
+      - uses: actions/upload-artifact@v4
+        if: env.JENIS == 'uud'
+        with:
+          name: uud-check # texts only; the PDFs stay on the runner
+          path: |
+            ${{ runner.temp }}/uud-check/*.txt
+            ${{ runner.temp }}/uud-check/*.md
       - uses: ./.github/actions/ocr-cache
         if: always()
         with:

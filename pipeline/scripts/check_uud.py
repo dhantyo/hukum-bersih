@@ -28,8 +28,14 @@ DATA = HERE.parent.parent / "data"
 UUD = "uud_1945"
 
 
+# The consolidated text marks each pasal with the amendment that made it ("*)" .. "****)") and
+# breaks lines with soft hyphens ("Undang­Undang"); neither is wording.
+AMENDMENT_MARK = re.compile(r"\*{1,4}\)")
+
+
 def _words(node: Node) -> list[str]:
     own = " ".join(str(node[k]) for k in ("num", "text") if node.get(k))
+    own = AMENDMENT_MARK.sub(" ", own.replace("­", "-"))
     return own.split() + [w for child in node["children"] for w in _words(child)]
 
 
@@ -88,8 +94,8 @@ def main() -> int:
     merged = merged_doc(laws, koleksi, point["id"], original)
     consolidated: Document = read_document(to_akn_tree(args.satu_naskah.read_text(), base.akn))
     lines = [f"## UUD 1945: merged {point['id']} against UUD45_SatuNaskah.pdf", "",
-             f"- Merged point complete by its own count: {point.get('complete')}"
-             f" (pasal not read: {', '.join(merged.unreadable) if merged else 'all'})",
+             (f"- Merged point complete by its own count: {point.get('complete')}"
+              f" (pasal not read: {', '.join(merged.unreadable) if merged else 'all'})"),
              *compare(articles(merged.document.body, {}) if merged else {},
                       articles(consolidated.body, {}))]
     report = "\n".join(lines) + "\n"
