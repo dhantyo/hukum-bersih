@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_1968_1968-12-17.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c5f4f39ac7f77f72ad88716170eeeec8073147050bb308545b76c6d4d1fac598
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9968
 pdf_sha256: c5f4f39ac7f77f72ad88716170eeeec8073147050bb308545b76c6d4d1fac598
 tanggal_pengundangan: '1968-12-17'
 tanggal_berlaku: '1968-12-17'

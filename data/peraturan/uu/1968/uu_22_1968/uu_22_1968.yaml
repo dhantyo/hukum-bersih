@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_1968_1968-12-18.txt
   pasal_count: 28
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7e60695bf4958ee008956bbb73d849b3fa255e708f24346bb287039cf7d6575e
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: 7e60695bf4958ee008956bbb73d849b3fa255e708f24346bb287039cf7d6575e
 tanggal_pengundangan: '1968-12-18'
 lembaran_negara: 'LN. 1968/ No.75, TLN NO.2875, LL : 10 HLM'

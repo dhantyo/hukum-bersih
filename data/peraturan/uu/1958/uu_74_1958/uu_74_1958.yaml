@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_74_1958_1958-08-11.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4dea84b8d1ec04bb4116752bddc09aee7064c94113808b5a958212979b9970c6
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9991
 pdf_sha256: 4fcf07df5c5ac7848fcda264f391779aaa22771c81b3ce12de7c1972763d0f0a
 tanggal_pengundangan: '1958-09-29'
 tanggal_berlaku: '1957-01-01'

@@ -33,9 +33,17 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1972_1972-11-09.txt
   pasal_count: 17
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a32df32606b24fc789a509df061f2d9325654d4b8edabc3861c8f66b29b1d313
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: body 4
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 0.999
 pdf_sha256: a32df32606b24fc789a509df061f2d9325654d4b8edabc3861c8f66b29b1d313
 tanggal_pengundangan: '1972-11-09'
 tanggal_berlaku: '1972-11-09'

@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_45_1999_1999-10-04.txt
   pasal_count: 29
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 707f9e6ea47677a16250bd3004058bddc3711a33974787cecd6a0221e3d95f74
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9994
 pdf_sha256: 707f9e6ea47677a16250bd3004058bddc3711a33974787cecd6a0221e3d95f74
 tanggal_pengundangan: '1999-10-04'
 tanggal_berlaku: '1999-10-04'

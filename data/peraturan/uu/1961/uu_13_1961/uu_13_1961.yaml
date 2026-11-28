@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_1961_1961-06-30.txt
   pasal_count: 19
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 64e14f57219bd815f818d387fdc7341888fba283cd478a0e60fbf74da309ce40
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9986
 pdf_sha256: 64e14f57219bd815f818d387fdc7341888fba283cd478a0e60fbf74da309ce40
 tanggal_pengundangan: '1961-06-30'
 tanggal_berlaku: '1961-06-30'

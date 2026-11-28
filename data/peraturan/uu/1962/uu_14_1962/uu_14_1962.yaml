@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1962_1962-09-06.txt
   pasal_count: 14
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 17ef56111d140d71a7b8cd4c1251f90e0b13b168ec28e582101c2be145a66593
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9983
 pdf_sha256: 17ef56111d140d71a7b8cd4c1251f90e0b13b168ec28e582101c2be145a66593
 tanggal_pengundangan: '1962-09-06'
 tanggal_berlaku: '1961-12-19'

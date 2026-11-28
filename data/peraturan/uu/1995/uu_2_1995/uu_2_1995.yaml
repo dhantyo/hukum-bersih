@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1995_1995-03-31.txt
   pasal_count: 12
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 129716d7584b546887c3aebed81f00e5f61d7810dd259f8e864fa59b6e04f046
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9983
 pdf_sha256: 129716d7584b546887c3aebed81f00e5f61d7810dd259f8e864fa59b6e04f046
 tanggal_pengundangan: '1995-03-31'
 tanggal_berlaku: '1995-04-01'

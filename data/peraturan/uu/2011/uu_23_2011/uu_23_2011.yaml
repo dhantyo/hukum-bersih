@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_2011_2011-11-25.txt
   pasal_count: 47
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 837e70541ea0d558201c970044a7943197852764bae6fae7fda7661055e1944f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9945
 pdf_sha256: ab8cdba7011b99b06f7e1518816f29e97fcf2b254e66c1bcb696e4e29ff597a9
 tanggal_pengundangan: '2011-11-25'
 tanggal_berlaku: '2011-11-25'

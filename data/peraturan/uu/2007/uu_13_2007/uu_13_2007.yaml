@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2007_2007-01-02.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: febc6303157eb570ef247948d85adb9011c6aa28453e4a609901fb9145999933
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9967
 pdf_sha256: 299d8f368f23491c6a00a9a71d538c398e8f1e04e3c234fb05763385c0ad13d2
 tanggal_pengundangan: '2007-01-02'
 tanggal_berlaku: '2007-01-02'

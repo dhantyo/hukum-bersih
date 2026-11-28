@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_33_2014_2014-10-17.txt
   pasal_count: 68
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 429060de1410abbe6aabc7561d3ae3a5be12b37f908516ac7b93e80f3323d479
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 0edea3983dd6f23af72132ee5ca0a6ddeeac5fff9d0da430162cb25fbcb63e71
 tanggal_pengundangan: '2014-10-17'
 tanggal_berlaku: '2014-10-17'

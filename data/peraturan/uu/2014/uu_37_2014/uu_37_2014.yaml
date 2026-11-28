@@ -28,13 +28,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_37_2014_2014-10-17.txt
   pasal_count: 69
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e9a39bbc7e97c18d4511c48a92d769f8fbbd3459848b9b46cd84cb389adf101e
   ocr: true
   ocr_engine: indra
   ocr_fixed: 8
   ocr_unknown: 92
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9986
+    ocr_unknown_rate: 0.0071
 pdf_sha256: b40f57830189b3ac8cd55ffa8dce7a98093a87fdcffaad9cf66b524adea831b2
 tanggal_pengundangan: '2014-10-17'
 tanggal_berlaku: '2014-10-17'

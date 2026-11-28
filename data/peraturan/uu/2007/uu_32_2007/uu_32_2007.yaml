@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_32_2007_2007-08-10.txt
   pasal_count: 22
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: df7cd2788fc65b8d63f251c9bb0ccebfba7f54634c6810fbd6b772510602d202
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9947
 pdf_sha256: a0b854e1de675514660137e809463f9d4ba711b0d2278ace951a7c0c54040d75
 tanggal_pengundangan: '2007-08-10'
 tanggal_berlaku: '2007-08-10'

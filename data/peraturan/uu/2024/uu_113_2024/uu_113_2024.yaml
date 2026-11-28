@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_113_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7b216f6f29a9bb567e4b03a527cda257b6c991cb35042074f7743a753c86a395
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 26
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9859
+    ocr_unknown_rate: 0.0191
 pdf_sha256: 7b216f6f29a9bb567e4b03a527cda257b6c991cb35042074f7743a753c86a395
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

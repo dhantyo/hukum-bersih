@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2004_2004-07-06.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d2fa8ad3f7f9dc6ba607b78d84d045531fd642b72749a385d91232b74347701b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9818
 pdf_sha256: d2fa8ad3f7f9dc6ba607b78d84d045531fd642b72749a385d91232b74347701b
 tanggal_pengundangan: '2004-07-06'
 tanggal_berlaku: '2004-07-06'

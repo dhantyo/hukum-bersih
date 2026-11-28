@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_33_2000_2000-12-20.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d39a834f0f83c364228ac40f33e851db574256d9dc49bd6877c655b0186d3c7b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9978
 pdf_sha256: d39a834f0f83c364228ac40f33e851db574256d9dc49bd6877c655b0186d3c7b
 tanggal_pengundangan: '2000-12-20'
 tanggal_berlaku: '2000-04-01'

@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_34_1958_1958-06-21.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2dfbdf5a565975d65e7b1490a3696253664eeac0f3f7f9da48c1c59a1331112c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9953
 pdf_sha256: f428b312c9a24e9c30a8dd9d708a70687472fa3f370ec828f392b5a2bde64dc9
 tanggal_pengundangan: '1958-07-17'
 tanggal_berlaku: '1955-01-01'

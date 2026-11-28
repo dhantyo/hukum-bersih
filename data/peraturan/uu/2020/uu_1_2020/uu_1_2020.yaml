@@ -31,13 +31,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2020_2020-02-28.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0db8e06103886667e6628fde1c142b1ac9221fae0370ce7fc9ceeb49810033ec
   ocr: true
   ocr_engine: indra
   ocr_fixed: 1
   ocr_unknown: 7
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9815
+    ocr_unknown_rate: 0.008
 pdf_sha256: de74ef64b6e5f618894032ddc805f8ad298f802e9d6e438a36b1bcade8f8ad75
 tanggal_pengundangan: '2020-02-28'
 tanggal_berlaku: '2020-02-28'

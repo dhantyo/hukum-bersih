@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1994_1994-07-18.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 75e88fef6790b09f22acc7695bae1aa59a8a38ee67b587b844a95498dedc6830
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.996
 pdf_sha256: 75e88fef6790b09f22acc7695bae1aa59a8a38ee67b587b844a95498dedc6830
 tanggal_pengundangan: '1994-07-18'
 tanggal_berlaku: '1994-07-18'

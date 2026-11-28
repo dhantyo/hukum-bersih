@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_49_1999_1999-10-04.txt
   pasal_count: 19
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b633b13a986b6787665727f01ca1a1b7c21135249add56aea4d247214ce641b1
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9988
 pdf_sha256: b633b13a986b6787665727f01ca1a1b7c21135249add56aea4d247214ce641b1
 tanggal_pengundangan: '1999-10-04'
 tanggal_berlaku: '1999-10-04'

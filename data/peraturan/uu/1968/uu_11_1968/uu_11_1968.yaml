@@ -29,9 +29,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1968_1968-10-25.txt
   pasal_count: 3
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b85bb101b8991f7b5b6f2f9dc0f5eb20ba391f3ad677105e9e8d0266c19f156d
+  checks:
+    version: 1
+    failed:
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 1.0
 pdf_sha256: b85bb101b8991f7b5b6f2f9dc0f5eb20ba391f3ad677105e9e8d0266c19f156d
 tanggal_pengundangan: '1968-10-25'
 tanggal_berlaku: '1968-10-25'

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2009_2009-06-18.txt
   pasal_count: 44
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3b7908b8d8ab67ff7af24fec48ef2d54e8275631e66a959f1ffbc69482d3d43d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9949
 pdf_sha256: aaed113474a3a9035e7ca4e61960df67174aea4846089263e1f5237d65ce50df
 tanggal_pengundangan: '2009-06-18'
 tanggal_berlaku: '2009-06-18'

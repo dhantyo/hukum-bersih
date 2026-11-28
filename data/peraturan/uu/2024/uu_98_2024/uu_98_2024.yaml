@@ -28,13 +28,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_98_2024_2024-10-28.txt
   pasal_count: 9
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9e37295e52bbbb404b747fe96276c8800e436dfb2cb690aadfed4ef64ebd1242
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 12
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9819
+    ocr_unknown_rate: 0.0093
 pdf_sha256: 9e37295e52bbbb404b747fe96276c8800e436dfb2cb690aadfed4ef64ebd1242
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

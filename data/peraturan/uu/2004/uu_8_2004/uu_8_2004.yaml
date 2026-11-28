@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_2004_2004-03-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: cc7c77c62b288590fc765fedefe35e9b886b9293b3cfe166898ce0abd9676e37
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9993
 pdf_sha256: cc7c77c62b288590fc765fedefe35e9b886b9293b3cfe166898ce0abd9676e37
 tanggal_pengundangan: '2004-03-29'
 tanggal_berlaku: '2004-03-29'

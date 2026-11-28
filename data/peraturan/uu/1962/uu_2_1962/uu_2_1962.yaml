@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1962_1962-01-18.txt
   pasal_count: 35
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f2758e0407098fa118c1c7b00935054125046560373a51664cc823c6b288090a
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: penjelasan 1
+    word_coverage: 0.9991
 pdf_sha256: f2758e0407098fa118c1c7b00935054125046560373a51664cc823c6b288090a
 tanggal_pengundangan: '1962-01-18'
 tanggal_berlaku: '1962-01-18'

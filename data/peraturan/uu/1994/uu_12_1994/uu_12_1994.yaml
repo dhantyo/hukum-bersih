@@ -37,9 +37,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_1994_1994-11-09.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: dcd549a51a7c88569540a7692e5cd9cc3feaeecbbf0107ba9aa0efecc13da39c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 05a81cc6b7e8c1b932c7b4eeac4efc01bfa4be0864306f0ec34f34a62c2f015b
 tanggal_pengundangan: '1994-11-09'
 tanggal_berlaku: '1995-01-01'

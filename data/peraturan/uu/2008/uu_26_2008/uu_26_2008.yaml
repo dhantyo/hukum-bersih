@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_26_2008_2008-07-21.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1fce0df4bafe587a11ea11985aaf93716c809f86b80a07809968a3de0b55312c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9953
 pdf_sha256: 9ca68164fd428ebb5b483ba3979be6e943b003945f7db20f0b9003078ff6bf6e
 tanggal_pengundangan: '2008-07-21'
 tanggal_berlaku: '2008-07-21'

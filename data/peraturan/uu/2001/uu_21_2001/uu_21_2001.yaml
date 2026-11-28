@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2001_2001-11-21.txt
   pasal_count: 79
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a20a54cf131e3024c6cbee466c26967fdf48383ed6bdc7c7f9008d85a43e5119
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9998
 pdf_sha256: a20a54cf131e3024c6cbee466c26967fdf48383ed6bdc7c7f9008d85a43e5119
 tanggal_pengundangan: '2001-11-21'
 tanggal_berlaku: '2001-11-21'

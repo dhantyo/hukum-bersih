@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_1965_1965-08-23.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0f257c1edf50d6028a594726075af29e8bb1cc1f33c425e69c9c6b4a6b2f47c1
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.996
 pdf_sha256: 0f257c1edf50d6028a594726075af29e8bb1cc1f33c425e69c9c6b4a6b2f47c1
 tanggal_pengundangan: '1965-08-23'
 tanggal_berlaku: '1965-08-23'

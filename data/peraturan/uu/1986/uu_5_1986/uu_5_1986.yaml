@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1986_1986-12-29.txt
   pasal_count: 145
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8dabcc6be5312e1212b6cbed52560b86b309ffca28de6bf15eaef6378f4fab94
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 0248ee5d64e7c9b54406b7c5bc18fe21fe2530b5e3615e29dc74ca961affeb16
 tanggal_pengundangan: '1986-12-29'
 tanggal_berlaku: '1986-12-29'

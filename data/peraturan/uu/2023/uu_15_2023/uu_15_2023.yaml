@@ -28,13 +28,20 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2023_2023-05-04.txt
   pasal_count: 12
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 55cefc4203f13ac308105529ddfec3f9bf9151f8ab5e17b5e642586804f8eeee
   ocr: true
   ocr_engine: indra
   ocr_fixed: 3
   ocr_unknown: 22
+  checks:
+    version: 1
+    failed:
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 0.9886
+    ocr_unknown_rate: 0.0145
 pdf_sha256: 55cefc4203f13ac308105529ddfec3f9bf9151f8ab5e17b5e642586804f8eeee
 tanggal_pengundangan: '2023-05-04'
 tanggal_berlaku: '2023-05-04'

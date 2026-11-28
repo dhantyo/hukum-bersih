@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_27_2000_2000-12-04.txt
   pasal_count: 19
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 111413895ff532e224010913916db56b0c59a133de4501c6eac46bbf420e0b29
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 111413895ff532e224010913916db56b0c59a133de4501c6eac46bbf420e0b29
 tanggal_pengundangan: '2000-12-04'
 tanggal_berlaku: '2000-12-04'

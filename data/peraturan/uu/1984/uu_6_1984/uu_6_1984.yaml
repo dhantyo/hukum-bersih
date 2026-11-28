@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1984_1984-07-21.txt
   pasal_count: 24
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ed754282f5277626246de15c20a4f260cc9ecf0a4805f3bd7d973fa2033af535
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9992
 pdf_sha256: 06081a1188ef3d61e3a4a6506a1c95650fb3b92e7261f41aa74eda2801a0b116
 tanggal_pengundangan: '1984-07-21'
 tanggal_berlaku: '1984-07-21'

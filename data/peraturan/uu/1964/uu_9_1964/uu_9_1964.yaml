@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_1964_1964-08-14.txt
   pasal_count: 14
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4e1856587a075a2fa12ffd667f4d24e924f95974e622c0da311f04b56c86c395
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9982
 pdf_sha256: 4e1856587a075a2fa12ffd667f4d24e924f95974e622c0da311f04b56c86c395
 tanggal_pengundangan: '1964-08-14'
 tanggal_berlaku: '1964-03-16'

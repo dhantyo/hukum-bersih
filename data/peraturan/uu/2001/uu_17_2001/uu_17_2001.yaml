@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_2001_2001-08-06.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f930dbb5286630814aa23238cca30f8dece3e6f06d76ad85117c955cac477f97
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: f930dbb5286630814aa23238cca30f8dece3e6f06d76ad85117c955cac477f97
 tanggal_pengundangan: '2001-08-06'
 tanggal_berlaku: '2001-08-06'

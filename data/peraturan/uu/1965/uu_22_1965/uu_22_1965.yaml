@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_1965_1965-12-31.txt
   pasal_count: 13
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 503a3547b5d184fec6c97a928d26d33946d20b7ea22bad8481c0b238d60d9f62
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9973
 pdf_sha256: 503a3547b5d184fec6c97a928d26d33946d20b7ea22bad8481c0b238d60d9f62
 tanggal_pengundangan: '1965-12-31'
 tanggal_berlaku: '1965-12-31'

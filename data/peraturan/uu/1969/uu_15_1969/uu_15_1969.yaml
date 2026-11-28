@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_1969_1969-12-17.txt
   pasal_count: 37
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b80f4a06bbca7bb331582a0762839383c7d73f69a8f74f898cd498f8b763238b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: b80f4a06bbca7bb331582a0762839383c7d73f69a8f74f898cd498f8b763238b
 tanggal_pengundangan: '1969-12-17'
 tanggal_berlaku: '1969-12-17'

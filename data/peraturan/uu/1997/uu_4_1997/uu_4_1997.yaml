@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1997_1997-02-28.txt
   pasal_count: 31
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d39147ca8123fb1d826f22065f92fc253cee8bdacb102c5ea0a124433e05ec42
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.999
 pdf_sha256: d39147ca8123fb1d826f22065f92fc253cee8bdacb102c5ea0a124433e05ec42
 tanggal_pengundangan: '1997-02-28'
 tanggal_berlaku: '1997-02-28'

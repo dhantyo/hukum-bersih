@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1979_1979-01-18.txt
   pasal_count: 48
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4e0b61c788bdad6f4ac3e3b6102d5b004d1cb552d95f68c67f7a1dd2e1ec069d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.999
 pdf_sha256: 4e0b61c788bdad6f4ac3e3b6102d5b004d1cb552d95f68c67f7a1dd2e1ec069d
 tanggal_pengundangan: '1979-01-18'
 tanggal_berlaku: '1979-01-18'

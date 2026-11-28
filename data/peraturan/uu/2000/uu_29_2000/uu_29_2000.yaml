@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_29_2000_2000-12-20.txt
   pasal_count: 76
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c0892078e691cbb38620f233b26fd69f48aecbe8b708d995b54dfcc56249694a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9998
 pdf_sha256: c0892078e691cbb38620f233b26fd69f48aecbe8b708d995b54dfcc56249694a
 tanggal_pengundangan: '2000-12-20'
 tanggal_berlaku: '2000-12-20'

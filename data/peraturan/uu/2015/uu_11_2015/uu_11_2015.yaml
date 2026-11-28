@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_2015_2015-08-06.txt
   pasal_count: 3
-  parser_version: 11
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e66589b0d5dc532e3524694103614849e76fd7e3749d2e07df11d484094654f0
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 8fa6c7616df25ae38fb94af2f824b21666a9f7b7146eadf350643d80d8ad323a
 tanggal_pengundangan: '2015-08-06'
 tanggal_berlaku: '2015-08-06'

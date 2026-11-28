@@ -28,13 +28,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_2022_2022-08-03.txt
   pasal_count: 57
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 306edf4e00933cd11e57622b3126bb57bc1329de47810c67e59e8fb8b80c9f98
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 36
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9965
+    ocr_unknown_rate: 0.0061
 pdf_sha256: 306edf4e00933cd11e57622b3126bb57bc1329de47810c67e59e8fb8b80c9f98
 tanggal_pengundangan: '2022-08-03'
 tanggal_berlaku: '2022-08-03'

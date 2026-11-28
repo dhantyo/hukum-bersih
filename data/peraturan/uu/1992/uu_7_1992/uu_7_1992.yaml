@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1992_1992-03-25.txt
   pasal_count: 61
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8e3a861bb0a9691d9a591633375a3c74a6e28b61291bc971419019c1510cddc4
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9997
 pdf_sha256: 8e3a861bb0a9691d9a591633375a3c74a6e28b61291bc971419019c1510cddc4
 tanggal_pengundangan: '1992-03-25'
 tanggal_berlaku: '1992-03-25'

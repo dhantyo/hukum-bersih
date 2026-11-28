@@ -44,9 +44,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_26_2009_2009-08-25.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1d3a1a3bf94a92dd3163330dffc48aa44ee6ff7c4aa879eab0841cb2a6fd4daf
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9986
 pdf_sha256: 2997f218ed6b9c4b87f9a925d8f4e36b2c53fce383e8a7711d5a4a54814117a0
 tanggal_pengundangan: '2009-08-25'
 tanggal_berlaku: '2009-08-25'

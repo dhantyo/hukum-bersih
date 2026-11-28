@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_139_2024_2024-10-28.txt
   pasal_count: 9
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0ba793df7f2317875e09dd582060a6e0d23b85014a300f4977c82030146631af
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 29
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9821
+    ocr_unknown_rate: 0.0301
 pdf_sha256: 0ba793df7f2317875e09dd582060a6e0d23b85014a300f4977c82030146631af
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

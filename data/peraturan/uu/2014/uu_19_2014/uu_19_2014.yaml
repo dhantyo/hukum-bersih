@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_2014_2014-08-07.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 08535495d0e2cf2df1c2cb612428a8b06d9baf99b85133e0ca73a35817c0a60b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 7ae9b9800efb9563d47c2427e18e08ee1e00683bae1aa614b8eb863140c7cb12
 tanggal_pengundangan: '2104-08-07'
 tanggal_berlaku: '2014-08-07'

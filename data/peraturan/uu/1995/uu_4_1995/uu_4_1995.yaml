@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1995_1995-04-27.txt
   pasal_count: 7
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 49f64d6a36d73cf5923f5569afb425d83a46e44deb22536112de269bc7e0d1ef
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9994
 pdf_sha256: 49f64d6a36d73cf5923f5569afb425d83a46e44deb22536112de269bc7e0d1ef
 tanggal_penetapan_bpk: '1994-04-27'
 tanggal_pengundangan: '1995-04-27'

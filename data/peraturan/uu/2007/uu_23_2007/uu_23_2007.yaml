@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_2007_2007-04-25.txt
   pasal_count: 218
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ad6415b15c38a18992ebe5a31dbb366879da686645e75504dce97e5ae919cd9f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 962327f9326e1c0b52147143682b2beb9bf6703a6494da4c91bde4d4b55c76d2
 tanggal_pengundangan: '2007-04-25'
 tanggal_berlaku: '2007-04-25'

@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1995_1995-11-10.txt
   pasal_count: 116
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c351fd912aa91aa7810bee573eaec3637f2251609f9fdc7dc8dbb6614a67fe22
+  checks:
+    version: 1
+    failed:
+    - name: page_furniture
+      detail: page-turn 1
+    word_coverage: 0.9999
 pdf_sha256: c351fd912aa91aa7810bee573eaec3637f2251609f9fdc7dc8dbb6614a67fe22
 tanggal_pengundangan: '1995-11-10'
 tanggal_berlaku: '1996-01-01'

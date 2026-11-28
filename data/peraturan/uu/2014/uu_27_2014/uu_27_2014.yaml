@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_27_2014_2014-10-14.txt
   pasal_count: 33
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 73d00dea074e97f9a8c008f4d8c9a250ce0f26673d334225b4be88e280a7cf23
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 51dfa57698f15471420ddfe7d5b269b55894e3d642cc1b5cb5c53e9e1f6f0ff6
 tanggal_pengundangan: '2014-10-14'
 tanggal_berlaku: '2014-10-14'

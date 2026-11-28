@@ -31,9 +31,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_1961_1961-05-10.txt
   pasal_count: 12
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 21416056349468b95bd786a1bbffac0a7c025dc329f765de49bae03dc7bea6a5
+  checks:
+    version: 1
+    failed:
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 0.9983
 pdf_sha256: ee1694fc53972cdf7466aecee3e02a87fdff9d2ccada8a7f92fdad828ddb8160
 tanggal_pengundangan: '1961-05-10'
 tanggal_berlaku: '1961-05-10'

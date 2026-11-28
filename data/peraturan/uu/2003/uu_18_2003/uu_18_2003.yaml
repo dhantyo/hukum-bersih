@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2003_2003-04-05.txt
   pasal_count: 36
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7ffb2b03159b714d3bff7ada2234d909d7af2c1e74ee7304ad346b8b44c0b9f8
+  checks:
+    version: 1
+    failed:
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 0.9993
 pdf_sha256: 7ffb2b03159b714d3bff7ada2234d909d7af2c1e74ee7304ad346b8b44c0b9f8
 tanggal_pengundangan: '2003-04-05'
 tanggal_berlaku: '2003-04-05'

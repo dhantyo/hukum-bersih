@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1980_1980-10-27.txt
   pasal_count: 6
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 767c8bf03024b1a01cba42425c8b4d9bbf9d54a5246d8f0f44fc3ccf7a1e92d3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9967
 pdf_sha256: a93fe4231e8d99578c2b81b5032cf6cdc191d5824e92662effb063855e1bab12
 tanggal_pengundangan: '1980-10-27'
 tanggal_berlaku: '1980-10-27'

@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_1964_1964-09-26.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a36b24d65487625c2077f876a458156c67d046b071049a17760eadc786b3715a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9984
 pdf_sha256: a36b24d65487625c2077f876a458156c67d046b071049a17760eadc786b3715a
 tanggal_pengundangan: '1964-09-26'
 tanggal_berlaku: '1964-09-26'

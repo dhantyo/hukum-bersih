@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1982_1982-02-01.txt
   pasal_count: 39
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f8b6b87ed8b24b91019ca214a92f994ad6db0d466d6633f44eb9fb3b8ecee783
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9994
 pdf_sha256: fd5feef283fdb250651a35311f7ea10a7bddde0081435f85c74930f010defb25
 tanggal_pengundangan: '1982-02-01'
 tanggal_berlaku: '1982-02-01'

@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1997_1997-03-18.txt
   pasal_count: 14
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 15cc90ea1860ab521552a3918db3415db3fa35ead95101ce13b084052b9e6196
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 26707a7afed825d5b143fd0e57d40d47cd6e9af410e83136020d06233bd0a39c
 tanggal_pengundangan: '1997-03-18'
 tanggal_berlaku: '1997-04-01'

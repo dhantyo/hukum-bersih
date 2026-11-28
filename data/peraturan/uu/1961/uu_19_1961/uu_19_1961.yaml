@@ -29,9 +29,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_1961_1961-11-06.txt
   pasal_count: 2
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: da552152b9a5344a8226f4f4a3f25a1de1a38a6b7fb521a485935579bebf4166
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: penjelasan 38
+    word_coverage: 0.9996
 pdf_sha256: da552152b9a5344a8226f4f4a3f25a1de1a38a6b7fb521a485935579bebf4166
 tanggal_penetapan_bpk: '1961-09-06'
 tanggal_pengundangan: '1961-09-06'

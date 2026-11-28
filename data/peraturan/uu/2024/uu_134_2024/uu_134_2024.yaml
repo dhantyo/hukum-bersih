@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_134_2024_2024-10-28.txt
   pasal_count: 9
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6a3f6ec2a1f3a520abb19c45f5c54988b96c6e11b42fdc75a0734451efa87aad
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 17
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9824
+    ocr_unknown_rate: 0.0162
 pdf_sha256: 6a3f6ec2a1f3a520abb19c45f5c54988b96c6e11b42fdc75a0734451efa87aad
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

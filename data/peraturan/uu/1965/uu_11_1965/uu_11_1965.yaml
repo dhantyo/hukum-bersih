@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1965_1965-06-14.txt
   pasal_count: 6
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: cbb5ab05c97c30291ec11f6a6f1a0f8303e53c3454e6cdfef2c6d62e6ad16c06
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9976
 pdf_sha256: cbb5ab05c97c30291ec11f6a6f1a0f8303e53c3454e6cdfef2c6d62e6ad16c06
 tanggal_pengundangan: '1965-06-14'
 tanggal_berlaku: '1962-06-30'

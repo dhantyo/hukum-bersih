@@ -44,9 +44,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_2015_2015-03-18.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 19b8aff4924d0aea1de28d01acc437d7ec5e03d1c379c410415de363dda0318d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 894438e1878f05d92f103747faf336bf98ada6ef83195f38627c79b028ce41fd
 tanggal_pengundangan: '2015-03-18'
 tanggal_berlaku: '2015-03-18'

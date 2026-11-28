@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_47_2007_2007-12-18.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7989e2df66f08a46cd9389df7382bf7a91ae62ef127ed4158f8e2b68ddb359cb
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 64c0be4b82386f5edf6649b8ede4a2b395e2a85942e37a85d1a2a6b7ae406e5b
 tanggal_pengundangan: '2007-12-18'
 tanggal_berlaku: '2007-12-18'

@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_29_1964_1964-11-25.txt
   pasal_count: 11
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 57df543109304d2557cddd278d2c59b784ba6cd7d4baf44e76920a1d27383d63
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9985
 pdf_sha256: 57df543109304d2557cddd278d2c59b784ba6cd7d4baf44e76920a1d27383d63
 tanggal_pengundangan: '1964-11-25'
 lembaran_negara: 'LN. 1964/ No. 120, TLN NO. 2710, LL SETNEG : 5 HLM'

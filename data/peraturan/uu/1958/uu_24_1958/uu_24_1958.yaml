@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_1958_1958-06-17.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d84a87c86a492fb111e79a40a29979bf993be4978c27860620f5076b07c9ea92
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9968
 pdf_sha256: aecb348c23d62731bebe0c9c8cb759b9f5df2a24dd56782cf799ec60858bdea3
 tanggal_pengundangan: '1958-07-08'
 tanggal_berlaku: '1958-07-08'

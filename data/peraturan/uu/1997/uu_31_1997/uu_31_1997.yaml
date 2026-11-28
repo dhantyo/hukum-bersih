@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_31_1997_1997-10-15.txt
   pasal_count: 353
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 20131b95b362296b65ad91dc0cc55ec2e1f8fe7784d4b01ef2888fb51c6c085b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9999
 pdf_sha256: 20131b95b362296b65ad91dc0cc55ec2e1f8fe7784d4b01ef2888fb51c6c085b
 tanggal_pengundangan: '1997-10-15'
 tanggal_berlaku: '1997-10-15'

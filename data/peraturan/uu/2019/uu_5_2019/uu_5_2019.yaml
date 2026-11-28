@@ -34,13 +34,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_2019_2019-03-13.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0ebac13f178f2ca524eec77f351245118bcee34d39dd52dd4451c1a5997269dc
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 1
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9791
+    ocr_unknown_rate: 0.001
 pdf_sha256: 1a56cc843b4cc40f5b0f461358979609d23bff8a958971b111048a9dd3ed71f7
 tanggal_pengundangan: '2019-03-15'
 tanggal_berlaku: '2019-03-15'

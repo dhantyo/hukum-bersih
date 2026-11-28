@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_44_2008_2008-11-26.txt
   pasal_count: 45
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d536b3352c2b0b3c360b371798f6cf6be889322387f4e89b5173c59c814447f5
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: e2ce04eea63a6ba2921d0404f77c151b175a7e02d549c84793c72d581eff0da7
 tanggal_pengundangan: '2008-11-26'
 tanggal_berlaku: '2008-11-26'

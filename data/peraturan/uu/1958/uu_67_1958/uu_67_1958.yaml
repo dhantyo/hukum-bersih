@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_67_1958_1958-07-31.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 57f0cd0f44b2b39d76b2e212b7cc0e54830c859395bd90f35c56587a4e0fd16a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9976
 pdf_sha256: f97217d1e9c4f75b1344512f4672b57c2eddef6a416a74509b33f09c42797661
 tanggal_pengundangan: '1958-08-22'
 tanggal_berlaku: '1958-08-22'

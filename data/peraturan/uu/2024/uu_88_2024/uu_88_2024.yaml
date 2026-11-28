@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_88_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8a829a60f31f97062422b61774ea991cb993046cd387db42af214507173cc84b
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 13
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9856
+    ocr_unknown_rate: 0.0088
 pdf_sha256: 8a829a60f31f97062422b61774ea991cb993046cd387db42af214507173cc84b
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

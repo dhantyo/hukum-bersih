@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1968_1968-06-29.txt
   pasal_count: 14
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 42a2aa93f614db96a8b707dcaf2b8ac9cbc81c74a805e5244fd45248ef8e4802
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 7f6cc1d86b2e36c6dc8929227d5d82378063825578d2fdcaa85bab98f2784bc1
 tanggal_pengundangan: '1968-06-29'
 tanggal_berlaku: '1968-06-29'

@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2018_2018-11-22.txt
   pasal_count: 47
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 582f5e84dd7d9885fdff9699b97cfe3bde64a20180efdda733e998a0f93d4250
   ocr: true
   ocr_engine: indra
   ocr_fixed: 2
   ocr_unknown: 42
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9986
+    ocr_unknown_rate: 0.0026
 pdf_sha256: fc2f59f67a85e4e6c39045575aa25761dfa3dab32699e678e86cb124f133e6c4
 tanggal_pengundangan: '2018-11-23'
 lembaran_negara: 'LN.2018/NO.223, TLN NO.6263, LL SETNEG : 47 HLM.'

@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2002_2002-04-10.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 521b84a0443c41ed91d8f15ce8ef26debef51f08708f2b163000092e20d98c2c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: 521b84a0443c41ed91d8f15ce8ef26debef51f08708f2b163000092e20d98c2c
 tanggal_pengundangan: '2002-04-10'
 tanggal_berlaku: '2002-04-10'

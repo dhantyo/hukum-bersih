@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1966_1966-11-08.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 198360580c87fad3b0a1b07f48b2ccbbec09c4b5934df3a8ff586cc4c12b207a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9847
 pdf_sha256: 198360580c87fad3b0a1b07f48b2ccbbec09c4b5934df3a8ff586cc4c12b207a
 tanggal_pengundangan: '1966-11-08'
 tanggal_berlaku: '1966-11-08'

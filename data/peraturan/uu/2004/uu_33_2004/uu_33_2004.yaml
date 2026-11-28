@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_33_2004_2004-10-15.txt
   pasal_count: 110
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8a418a97d016f723309a0031503225c14fee30ad6f435d80493948805a7fd92f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 797f08b895fc8ccc9d24ac552e444b6c479927ab94a643817a57b80ad98d5dd8
 tanggal_pengundangan: '2004-10-15'
 tanggal_berlaku: '2004-10-15'

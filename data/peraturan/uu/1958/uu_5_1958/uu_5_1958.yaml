@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1958_1958-02-10.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 45620ede11ae66006e32922829c5a33e03c036772e07b32446ed543e78622a70
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9953
 pdf_sha256: 7a30e23581167b3b0ffd85ea5eff849bbd4cd95435a504f38ba4efad9423909a
 tanggal_pengundangan: '1958-02-17'
 tanggal_berlaku: '1958-02-17'

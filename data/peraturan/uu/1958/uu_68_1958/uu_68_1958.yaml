@@ -29,9 +29,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_68_1958_1958-07-17.txt
   pasal_count: 4
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8e08e5cfda39e4dbb32b22d5a35eaea78a0ca4c768ddd4c0965938ad8b839d8d
+  checks:
+    version: 1
+    failed:
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 0.997
 pdf_sha256: 9c74405efd4074d5f2f9f32e34140de4ba1f7e76c280e68ae82ce91ed21a74c4
 tanggal_pengundangan: '1958-08-28'
 tanggal_berlaku: '1958-08-28'

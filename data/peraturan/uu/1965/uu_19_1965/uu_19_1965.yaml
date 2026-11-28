@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_1965_1965-09-01.txt
   pasal_count: 69
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c8ffa458f56786d14bacddcb777478ba68e0170f59635ce80ca11b3da6d7d340
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9998
 pdf_sha256: c8ffa458f56786d14bacddcb777478ba68e0170f59635ce80ca11b3da6d7d340
 tanggal_pengundangan: '1965-09-01'
 tanggal_berlaku: '1965-09-01'

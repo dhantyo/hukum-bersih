@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_29_2004_2004-10-06.txt
   pasal_count: 88
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 168d0dacf363e612d3e316aaf1de229bf8138f6baa5ee98a5023a92dd88baaa6
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: body 12
+    word_coverage: 0.9935
 pdf_sha256: 168d0dacf363e612d3e316aaf1de229bf8138f6baa5ee98a5023a92dd88baaa6
 tanggal_pengundangan: '2004-10-06'
 tanggal_berlaku: '2005-10-06'

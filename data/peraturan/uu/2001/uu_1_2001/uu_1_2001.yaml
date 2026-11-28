@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2001_2001-05-08.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8c98c8a5c883a8f877102aff851860c185e867abf3a470904747a28923e4a797
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9981
 pdf_sha256: 8c98c8a5c883a8f877102aff851860c185e867abf3a470904747a28923e4a797
 tanggal_pengundangan: '2001-05-08'
 tanggal_berlaku: '2001-05-08'

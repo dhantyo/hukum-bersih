@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_1999_1999-05-07.txt
   pasal_count: 134
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 78ebce6439c3a069c779681ecb039aad92eed558efdee8d874d25be16a3e3f31
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9998
 pdf_sha256: 78ebce6439c3a069c779681ecb039aad92eed558efdee8d874d25be16a3e3f31
 tanggal_pengundangan: '1999-05-07'
 tanggal_berlaku: '1999-05-07'

@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1985_1985-06-10.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 47449417e456c889d27f217593e31a30755a205d24e202bce55507b520ea71c4
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 47449417e456c889d27f217593e31a30755a205d24e202bce55507b520ea71c4
 tanggal_pengundangan: '1985-06-10'
 tanggal_berlaku: '1984-04-01'

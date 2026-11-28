@@ -63,9 +63,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2011_2011-11-09.txt
   pasal_count: 2
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7a5c17028b6cd5b70e5288a8dcdd69a97ed6c507041a27c13202d88014e099b4
+  checks:
+    version: 1
+    failed:
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 0.995
 pdf_sha256: 7a5c17028b6cd5b70e5288a8dcdd69a97ed6c507041a27c13202d88014e099b4
 lembaran_negara: 'LN.2011/No. 106, TLN No. 5250, LL SETNEG: 19 HLM'
 subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI

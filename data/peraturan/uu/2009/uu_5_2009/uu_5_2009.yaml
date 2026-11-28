@@ -32,9 +32,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_2009_2009-01-12.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: df191cb3d509b536a81d982989624bb8e1fe709b2701b6a532b8c5882a6b1ab4
+  checks:
+    version: 1
+    failed:
+    - name: word_coverage
+      detail: 0.9655 < 0.97
+    word_coverage: 0.9655
 pdf_sha256: ef3f6aec0ce1a46f4910e121cfa34b3c40b8586dd641ffbb2b1db58bd6fd4402
 tanggal_pengundangan: '2009-01-12'
 tanggal_berlaku: '2009-01-12'

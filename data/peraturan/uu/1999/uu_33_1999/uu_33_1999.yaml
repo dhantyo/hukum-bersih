@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_33_1999_1999-08-23.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 28fd504094bd492d6a1d347307feaf3b70334881f042e9c589b5b8c836395d2a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: 6afb8521a7be976f327ea16895f487914b7e03db53d6c115b4357d21af2af16a
 tanggal_pengundangan: '1999-08-23'
 tanggal_berlaku: '1999-08-23'

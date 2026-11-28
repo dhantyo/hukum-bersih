@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1981_1981-07-21.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 971e093250e6f3f57654dfbc207db258dcbe937a55e4da07d303f3305a432795
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9955
 pdf_sha256: 2b0a0d0e2d9c2044d54bd275956b861018da1c066aba59437ad2ea4dc6e87377
 tanggal_pengundangan: '1981-07-21'
 tanggal_berlaku: '1981-07-21'

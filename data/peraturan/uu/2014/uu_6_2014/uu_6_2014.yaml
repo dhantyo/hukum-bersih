@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_2014_2014-01-15.txt
   pasal_count: 122
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0cbde358eb9712d745c5dcaee74b941149c9feb3a6c32f584f73fafd8fb2f327
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: bccf4cbc2cb62f1d0e270348e987be37b2cef1fdd9ba3abfeabc69d0aadebbf1
 tanggal_pengundangan: '2014-01-15'
 tanggal_berlaku: '2014-01-15'

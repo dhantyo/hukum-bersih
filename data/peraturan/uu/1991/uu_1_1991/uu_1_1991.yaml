@@ -35,9 +35,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1991_1991-01-07.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6ebd1c27a3abe71d862ade236e4cba105c54dd7c064212cfa35dab3fde101847
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9993
 pdf_sha256: 6ebd1c27a3abe71d862ade236e4cba105c54dd7c064212cfa35dab3fde101847
 tanggal_pengundangan: '1991-01-07'
 tanggal_berlaku: '1991-01-07'

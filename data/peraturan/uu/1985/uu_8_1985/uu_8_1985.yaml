@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1985_1985-06-17.txt
   pasal_count: 20
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 42ba706a7a9e12ebad583e4e414c3e7e78c1491f820932f258174f51f1bce8a2
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 42ba706a7a9e12ebad583e4e414c3e7e78c1491f820932f258174f51f1bce8a2
 tanggal_pengundangan: '1985-06-17'
 tanggal_berlaku: '1985-06-17'

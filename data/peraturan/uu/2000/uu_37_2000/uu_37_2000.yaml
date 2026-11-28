@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_37_2000_2000-12-21.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5c8b0a3caa74f16a7b09e47c1d6329b1a4d945083c780f1b8c425f3f07c6aef8
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9966
 pdf_sha256: 5c8b0a3caa74f16a7b09e47c1d6329b1a4d945083c780f1b8c425f3f07c6aef8
 tanggal_pengundangan: '2000-12-21'
 tanggal_berlaku: '2000-12-21'

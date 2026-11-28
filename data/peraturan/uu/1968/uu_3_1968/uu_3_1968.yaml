@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1968_1968-06-17.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d0ef0836a31e897bea00cdfaaf67742523aa157a91c20c208f504b21a09ddd3e
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: d0ef0836a31e897bea00cdfaaf67742523aa157a91c20c208f504b21a09ddd3e
 tanggal_pengundangan: '1968-06-17'
 tanggal_berlaku: '1968-06-17'

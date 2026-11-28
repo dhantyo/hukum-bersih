@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1980_1980-03-10.txt
   pasal_count: 8
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a49f873913808a93c840b2b08f0715e4f79eed27b2b983607d9d20e1f318af22
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9983
 pdf_sha256: 006fd3a8344951dfb7809732894b2419ba46552483fad889caafea7d1eea0fd0
 tanggal_pengundangan: '1980-03-10'
 tanggal_berlaku: '1980-04-01'

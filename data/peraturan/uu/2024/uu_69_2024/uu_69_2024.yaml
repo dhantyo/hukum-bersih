@@ -36,13 +36,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_69_2024_2024-10-28.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6234d2155c42f6a2f3c6fa804a367bc3b54fd62ce2fc90d424e2b34d6c849956
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 9
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9827
+    ocr_unknown_rate: 0.0082
 pdf_sha256: 6234d2155c42f6a2f3c6fa804a367bc3b54fd62ce2fc90d424e2b34d6c849956
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

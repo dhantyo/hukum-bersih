@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_146_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a3dd001f38915c96071e29da0600fa56a5def65dc5926c6c934fc5f934ecccc1
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 41
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9842
+    ocr_unknown_rate: 0.0353
 pdf_sha256: a3dd001f38915c96071e29da0600fa56a5def65dc5926c6c934fc5f934ecccc1
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

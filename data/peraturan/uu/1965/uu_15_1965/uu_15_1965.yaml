@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_1965_1965-08-10.txt
   pasal_count: 29
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ab86bb541575b088ff6b031b54625dce3321bc0f83c5867a0b2251e58366ed42
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9989
 pdf_sha256: ab86bb541575b088ff6b031b54625dce3321bc0f83c5867a0b2251e58366ed42
 tanggal_pengundangan: '1965-08-10'
 tanggal_berlaku: '1965-08-10'

@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_33_2008_2008-07-21.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8cc0252c736e24287e0400f70eb4853e775dbcb95a576916c10dc244280370fb
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9949
 pdf_sha256: aed5bbc69afa02ba9b3905d544c8b12ec3422b30ac20ce93f428b821bba16b58
 tanggal_pengundangan: '2008-07-21'
 tanggal_berlaku: '2008-07-21'

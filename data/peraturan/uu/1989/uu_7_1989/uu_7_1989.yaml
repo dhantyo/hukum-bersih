@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1989_1989-12-29.txt
   pasal_count: 108
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0a0020bc29e02c49e2edc00cc70e5893c200cb9ffc008d905a77b8e18dcb3e59
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9972
 pdf_sha256: 0a0020bc29e02c49e2edc00cc70e5893c200cb9ffc008d905a77b8e18dcb3e59
 tanggal_pengundangan: '1989-12-29'
 tanggal_berlaku: '1989-12-29'

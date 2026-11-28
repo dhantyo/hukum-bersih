@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_2004_2004-09-22.txt
   pasal_count: 103
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3fc0652bd98ff1b2ad9b822549a06103ae7e1c7521876bbd1d09962fd42fc3d3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 4e8d55756d67b9c869e85ced7d24d8380bf1cb2b70a3576d58fa90cb3396f6fc
 tanggal_pengundangan: '2004-09-22'
 tanggal_berlaku: '2005-09-22'

@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_1982_1982-06-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7c9f5ca65a134680276e272b94418e5bad1c6a1397e1b45de146a8d31ae5d5e7
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9941
 pdf_sha256: b6f7dbc22f91bf69a783011e7de2c1371a92aa5b96473664bd39fe8b5d0855bb
 tanggal_pengundangan: '1982-06-29'
 tanggal_berlaku: '1982-06-29'

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_1964_1964-10-31.txt
   pasal_count: 39
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b6d41b93e27d93decb286aefb71566b00e1fb7554abcf6b738023dc78d3e9627
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9994
 pdf_sha256: b6d41b93e27d93decb286aefb71566b00e1fb7554abcf6b738023dc78d3e9627
 tanggal_pengundangan: '1964-10-31'
 tanggal_berlaku: '1964-10-31'

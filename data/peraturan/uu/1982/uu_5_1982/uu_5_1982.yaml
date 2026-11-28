@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1982_1982-03-11.txt
   pasal_count: 8
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: fb3d1c7d080afd985e2a27ced6dc17bedb0216e0b19f8b1eccc991d4c2c749a9
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: fb3d1c7d080afd985e2a27ced6dc17bedb0216e0b19f8b1eccc991d4c2c749a9
 tanggal_pengundangan: '1982-03-11'
 tanggal_berlaku: '1982-04-01'

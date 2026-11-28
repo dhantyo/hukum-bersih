@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_1965_1965-11-24.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 23a90e801d842c9c22ee3b29348477267e8c4d2b27c0c926abca799a8fae1a23
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9941
 pdf_sha256: 23a90e801d842c9c22ee3b29348477267e8c4d2b27c0c926abca799a8fae1a23
 tanggal_pengundangan: '1965-11-24'
 tanggal_berlaku: '1965-11-24'

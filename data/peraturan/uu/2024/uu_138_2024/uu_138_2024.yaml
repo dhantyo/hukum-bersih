@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_138_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 523ef046eb77be8506b9b75954114cb4fdb273d6d9ae5e3d81b0a2d99ae39f8a
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 17
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9818
+    ocr_unknown_rate: 0.0169
 pdf_sha256: 523ef046eb77be8506b9b75954114cb4fdb273d6d9ae5e3d81b0a2d99ae39f8a
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

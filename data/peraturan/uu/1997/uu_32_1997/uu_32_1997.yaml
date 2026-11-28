@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_32_1997_1997-12-05.txt
   pasal_count: 81
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 186f105e1979582b3d21a5e0afd81cb87727ff5c988034566d2a5c5038abd37f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9998
 pdf_sha256: 186f105e1979582b3d21a5e0afd81cb87727ff5c988034566d2a5c5038abd37f
 tanggal_pengundangan: '1997-12-05'
 tanggal_berlaku: '1997-12-05'

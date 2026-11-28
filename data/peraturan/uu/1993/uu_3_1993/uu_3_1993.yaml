@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1993_1993-03-10.txt
   pasal_count: 8
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: fde588d424c2d8fef9ea05090d838d3525b245e7e34eb8b085074bcd98c35b2e
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9985
 pdf_sha256: fde588d424c2d8fef9ea05090d838d3525b245e7e34eb8b085074bcd98c35b2e
 tanggal_pengundangan: '1993-03-10'
 tanggal_berlaku: '1993-04-01'

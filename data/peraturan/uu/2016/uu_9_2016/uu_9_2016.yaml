@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2016_2016-04-15.txt
   pasal_count: 55
-  parser_version: 11
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8ad564fe0163acbbc703ccaccda2e572ddc37d707b82fa39907a9674d52446bc
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 271bb86720c98ad633ea96e09b2fa613231381e392219770c509e3b1cb536be6
 tanggal_pengundangan: '2016-04-15'
 tanggal_berlaku: '2016-04-15'

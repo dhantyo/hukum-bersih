@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_1958_1958-06-17.txt
   pasal_count: 1
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f573e764847192e0450b67619c906591fb84ce24678b08661c48492ecb5784af
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9983
 pdf_sha256: b896825c4116d0a27d9cb57b8bec639c025d9e91a1e7b69e9033585a92787bf5
 tanggal_pengundangan: '1958-06-01'
 tanggal_berlaku: '1958-06-01'

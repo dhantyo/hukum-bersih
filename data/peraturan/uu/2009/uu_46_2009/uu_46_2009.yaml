@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_46_2009_2009-10-29.txt
   pasal_count: 40
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7a51d9ae4ac61a91a3e9aaf5f0b5742c1c3a2402507bea2f945b73af1aff157c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 6be4f0dbded78a7f0da3af9f389ca5312b6f70b71e2f8263f9485356fadb3ca6
 tanggal_pengundangan: '2009-10-29'
 tanggal_berlaku: '2009-10-29'

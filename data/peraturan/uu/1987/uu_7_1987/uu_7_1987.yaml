@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1987_1987-09-19.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3889a48a5656197dc4b1b3d12c95062a5153a1a91a7dfa29c1492367621edf2e
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: 7653eac66e788a278fd53cc1061c6d026f19a69e68991685d225fee5764dd9bc
 tanggal_pengundangan: '1987-09-19'
 tanggal_berlaku: '1987-09-19'

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_2014_2014-10-17.txt
   pasal_count: 89
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e991e58f961a56d30a5438829a2fdbbb8b559c4ab2089123f2582479669e3333
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 2f3516db3e2ef2b0e560416a4ee399d86525e31436b22652a1195ca2697481ce
 tanggal_pengundangan: '2014-10-17'
 tanggal_berlaku: '2014-10-17'

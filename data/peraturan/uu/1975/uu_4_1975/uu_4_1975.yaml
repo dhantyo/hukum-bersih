@@ -34,13 +34,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1975_1975-11-24.txt
   pasal_count: 4
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5a4090ec8d4dc54cd87d639e3ea51b3dd533200fc6d103ac0fe580c532ec8d72
   ocr: true
   ocr_engine: indra
   ocr_fixed: 12
   ocr_unknown: 42
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
+    ocr_unknown_rate: 0.019
 pdf_sha256: 08ea7d13c73b185270efb7edd2d034097f74eada161f010f4665adafc37c928f
 tanggal_pengundangan: '1975-11-24'
 tanggal_berlaku: '1975-11-24'

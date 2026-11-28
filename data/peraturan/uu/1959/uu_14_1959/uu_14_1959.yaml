@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1959_1959-06-26.txt
   pasal_count: 14
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1cd313a848d94ff7b4aaf9ed779f61500d014d77627582ade5a4c956ec2af440
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9975
 pdf_sha256: 1cd313a848d94ff7b4aaf9ed779f61500d014d77627582ade5a4c956ec2af440
 tanggal_pengundangan: '1959-07-04'
 tanggal_berlaku: '1959-07-04'

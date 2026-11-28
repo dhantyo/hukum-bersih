@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1965_1965-06-14.txt
   pasal_count: 13
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8630c235742a2dc60e5476a307880c1adb3609bbd200623bc7f93c691cfba18d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9984
 pdf_sha256: 8630c235742a2dc60e5476a307880c1adb3609bbd200623bc7f93c691cfba18d
 tanggal_pengundangan: '1965-06-14'
 tanggal_berlaku: '1965-06-14'

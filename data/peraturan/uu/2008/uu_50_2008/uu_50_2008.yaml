@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_50_2008_2008-11-26.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0774cef6551a122b658cea24975cea99c30a9e0551085d4004768abaaa2ecf90
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9955
 pdf_sha256: da848b46835d98c14c6c4104379a09803a87cd8deb9612e40752d5cf67e1bdbd
 tanggal_pengundangan: '2008-11-26'
 tanggal_berlaku: '2008-11-26'

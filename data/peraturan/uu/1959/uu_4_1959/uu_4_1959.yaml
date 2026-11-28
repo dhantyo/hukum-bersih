@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1959_1959-03-09.txt
   pasal_count: 15
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 00def7f4b8426735cfbc84b5780db9e43f0e44e75753b1b59701061db1f0df48
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9988
 pdf_sha256: 00def7f4b8426735cfbc84b5780db9e43f0e44e75753b1b59701061db1f0df48
 tanggal_pengundangan: '1959-03-14'
 lembaran_negara: 'LN. 1959 No. 12 , TLN NO. 1747, LL SETNEG : 16 HLM'

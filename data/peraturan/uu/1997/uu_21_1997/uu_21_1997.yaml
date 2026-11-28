@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_1997_1997-05-29.txt
   pasal_count: 28
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d3c02467c4c9be2a7c0e8f94ff8b6481299e26c9913141cb08f5d6a496ad6ef1
   ocr: true
   ocr_engine: indra
   ocr_fixed: 11
   ocr_unknown: 23
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9978
+    ocr_unknown_rate: 0.003
 pdf_sha256: 41e7e709eda9fa3ab1508c46c822108129a41aa6265b8de19d201f797a293d28
 tanggal_pengundangan: '1997-05-29'
 tanggal_berlaku: '1998-01-01'

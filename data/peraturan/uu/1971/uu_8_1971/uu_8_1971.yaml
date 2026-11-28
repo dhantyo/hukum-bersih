@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1971_1971-09-15.txt
   pasal_count: 34
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3db362a9d4f05282be241eefd64ff17cafbf1bbf44075e816b34d8bf08f6e8c5
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9994
 pdf_sha256: 3db362a9d4f05282be241eefd64ff17cafbf1bbf44075e816b34d8bf08f6e8c5
 tanggal_pengundangan: '1971-09-15'
 tanggal_berlaku: '1971-09-15'

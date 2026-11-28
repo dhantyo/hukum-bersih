@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_130_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4b9f326e696ce49e0e0ad4237e65a77ece845209df6d2148e04397ff5710fe60
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 41
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9837
+    ocr_unknown_rate: 0.0364
 pdf_sha256: 4b9f326e696ce49e0e0ad4237e65a77ece845209df6d2148e04397ff5710fe60
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

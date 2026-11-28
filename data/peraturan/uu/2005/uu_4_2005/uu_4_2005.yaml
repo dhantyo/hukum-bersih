@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2005_2005-10-19.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1ecf25b5553022607de512bbdc0507bfca064da60789e2dddda084e1fb85abea
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9828
 pdf_sha256: 1ecf25b5553022607de512bbdc0507bfca064da60789e2dddda084e1fb85abea
 tanggal_pengundangan: '2005-10-19'
 tanggal_berlaku: '2006-04-03'

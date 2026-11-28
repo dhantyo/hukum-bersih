@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_40_2003_2003-12-18.txt
   pasal_count: 22
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a6a87ea6db9baf12806570e4ff24157ecd21ac56b3ed6920769184b40d07fba5
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9992
 pdf_sha256: a6a87ea6db9baf12806570e4ff24157ecd21ac56b3ed6920769184b40d07fba5
 tanggal_pengundangan: '2003-12-18'
 tanggal_berlaku: '2003-12-18'

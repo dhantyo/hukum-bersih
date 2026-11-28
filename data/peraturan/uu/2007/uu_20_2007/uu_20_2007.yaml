@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2007_2007-04-10.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b114b50db669d1fdbffd41063e5eba8e3bc53bdb5c217c3e3a47705820641bfe
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: ec42cc60d7c8365443a8f077797ac2114a1fbbbba53003e644535a3d88d5003c
 tanggal_pengundangan: '2007-04-10'
 tanggal_berlaku: '2007-04-10'

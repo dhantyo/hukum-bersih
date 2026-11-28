@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_1976_1976-07-26.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 31067e52b4454a4add267cdcdef0fcfd94730be76da0108f9fecc33f41287870
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.995
 pdf_sha256: e81b5a8d581d03a19ece5169e88664b50682f0e707608fde688e655c2ab153ff
 tanggal_pengundangan: '1976-07-26'
 tanggal_berlaku: '1976-07-26'

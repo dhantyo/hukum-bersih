@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2002_2002-04-12.txt
   pasal_count: 98
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 04c182aedf826e77b9e249ff9062b2de7c773a49ac1fcb2003c65880ed93a2c0
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9997
 pdf_sha256: 04c182aedf826e77b9e249ff9062b2de7c773a49ac1fcb2003c65880ed93a2c0
 tanggal_pengundangan: '2002-04-12'
 tanggal_berlaku: '2002-04-12'

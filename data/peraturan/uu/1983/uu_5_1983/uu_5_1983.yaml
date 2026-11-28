@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1983_1983-10-18.txt
   pasal_count: 21
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 28128048278b5705dc9b4d94fa0124262de1ffe6353a5ea6ea1102b9483faa45
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9993
 pdf_sha256: 7d36c250914c7c3b9c2e92ae6f4ade9a1fe6564bf567438c871c239aab8229e0
 tanggal_pengundangan: '1983-10-18'
 tanggal_berlaku: '1983-10-18'

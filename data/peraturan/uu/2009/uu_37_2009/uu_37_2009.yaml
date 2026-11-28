@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_37_2009_2009-10-14.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 57791b56db6f3121717fb1a1dc2c23ffd23cc37637af2f9e21c6205992e302a1
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9854
 pdf_sha256: 90d9cf0e1a67bd27d2960f8066a4c2383db7e331b548e4cef0b1aa379b6cf012
 tanggal_pengundangan: '2009-10-14'
 tanggal_berlaku: '2009-10-14'

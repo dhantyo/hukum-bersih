@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2003_2003-07-08.txt
   pasal_count: 77
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6f83d227e9316109c8c99c2fcd107b5d6d4338f36a414dfa55dcb5054c806b09
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9997
 pdf_sha256: 78a12175a94be16b5fdef9786ef1c41cca2ccf7cb756f9a63d4acca8e89929c9
 tanggal_pengundangan: '2003-07-08'
 tanggal_berlaku: '2003-07-08'

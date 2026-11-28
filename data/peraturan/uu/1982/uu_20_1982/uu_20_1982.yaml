@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_1982_1982-09-19.txt
   pasal_count: 47
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: fe197aa40ab8ebf72802a7e6334152b5766175aa6088e330a05fca323c65c86d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9997
 pdf_sha256: d62abfd1fc91d5cc52c8bbab7e5f142bf13dc1d8b18b7f68e1756ec9c65dbeeb
 tanggal_pengundangan: '1982-09-19'
 tanggal_berlaku: '1982-09-19'

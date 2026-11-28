@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_2003_2003-02-25.txt
   pasal_count: 20
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b69b2106b668059673e5f72aa99279f10635233ae6c2e6f989f926f948e0e7fc
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.999
 pdf_sha256: b69b2106b668059673e5f72aa99279f10635233ae6c2e6f989f926f948e0e7fc
 tanggal_pengundangan: '2003-02-25'
 tanggal_berlaku: '2003-02-25'

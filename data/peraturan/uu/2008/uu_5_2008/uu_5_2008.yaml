@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_2008_2008-01-04.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7b1d6dff034639c5721d20493a5441982028e745ec0479a818c3330edc1db48b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.995
 pdf_sha256: 7b1d6dff034639c5721d20493a5441982028e745ec0479a818c3330edc1db48b
 tanggal_pengundangan: '2008-01-04'
 tanggal_berlaku: '2008-01-04'

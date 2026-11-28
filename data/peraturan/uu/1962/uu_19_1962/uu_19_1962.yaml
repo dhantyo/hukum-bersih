@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_1962_1962-12-31.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 774a045be49c604e1cbdb253b57791c550de4d6c644baa22a9486c126dae7138
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9895
 pdf_sha256: 774a045be49c604e1cbdb253b57791c550de4d6c644baa22a9486c126dae7138
 tanggal_pengundangan: '1962-12-31'
 tanggal_berlaku: '1962-01-01'

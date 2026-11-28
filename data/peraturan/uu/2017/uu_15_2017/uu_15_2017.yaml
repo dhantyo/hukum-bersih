@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2017_2017-11-20.txt
   pasal_count: 46
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 51697e8f4821175137c0264b576e743e0ee696f68818281cdb35499388890279
   ocr: true
   ocr_engine: indra
   ocr_fixed: 4
   ocr_unknown: 32
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9955
+    ocr_unknown_rate: 0.0021
 tanggal_pengundangan: '2017-11-22'
 tanggal_berlaku: '2018-01-01'
 lembaran_negara: 'LN.2017/NO.233, TLN NO.6138, LL SETNEG : 46 HLM.'

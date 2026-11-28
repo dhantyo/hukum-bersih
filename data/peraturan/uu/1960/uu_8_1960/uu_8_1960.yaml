@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1960_1960-10-15.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 07c88fee9194caf0746b88072be6a0a6f1ba9a5050219b4a53de6a5f3828ed51
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9943
 pdf_sha256: 07c88fee9194caf0746b88072be6a0a6f1ba9a5050219b4a53de6a5f3828ed51
 tanggal_pengundangan: '1960-10-15'
 tanggal_berlaku: '1960-10-15'

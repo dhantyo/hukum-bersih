@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_1968_1968-12-07.txt
   pasal_count: 56
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5e3c0ba12d7b903548fd390d7aed404b98c40e0c735141fba0336b7ee1f3e4ed
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9998
 pdf_sha256: 5e3c0ba12d7b903548fd390d7aed404b98c40e0c735141fba0336b7ee1f3e4ed
 tanggal_pengundangan: '1968-12-07'
 lembaran_negara: 'LN. 1968/ No. 63 , LL : 13 HLM'

@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1968_1968-06-29.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: cbc19c999a77391f682eca28953ce08ba9a2c8fa91e88c66ccd56f8f7fc63875
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: cbc19c999a77391f682eca28953ce08ba9a2c8fa91e88c66ccd56f8f7fc63875
 tanggal_pengundangan: '1968-06-29'
 tanggal_berlaku: '1968-06-29'

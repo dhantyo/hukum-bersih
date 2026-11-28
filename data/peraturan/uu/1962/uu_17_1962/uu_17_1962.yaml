@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_1962_1962-11-17.txt
   pasal_count: 16
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a07989eb9cb4e622a47972b2d20009243fddff06d5be8430cbb6000d03532904
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9975
 pdf_sha256: a07989eb9cb4e622a47972b2d20009243fddff06d5be8430cbb6000d03532904
 tanggal_pengundangan: '1962-11-17'
 tanggal_berlaku: '1962-06-06'

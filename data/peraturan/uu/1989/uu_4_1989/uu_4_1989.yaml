@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1989_1989-07-20.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7cfc19fd1413a4ea5d66823dedd904affca55bc7cd516c65fac0d0def0b75d07
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 7cfc19fd1413a4ea5d66823dedd904affca55bc7cd516c65fac0d0def0b75d07
 tanggal_pengundangan: '1989-07-20'
 tanggal_berlaku: '1988-04-01'

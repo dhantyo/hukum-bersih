@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_59_2024_2024-09-13.txt
   pasal_count: 21
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ef7e465b32fe77cc659649ef579d4f471089ab116f29fd49117e40ef81a0601e
   ocr: true
   ocr_engine: indra
   ocr_fixed: 23
   ocr_unknown: 1295
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9997
+    ocr_unknown_rate: 0.0119
 pdf_sha256: ef7e465b32fe77cc659649ef579d4f471089ab116f29fd49117e40ef81a0601e
 tanggal_pengundangan: '2024-09-13'
 tanggal_berlaku: '2024-09-13'

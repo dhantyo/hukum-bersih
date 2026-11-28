@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1964_1964-06-01.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0ca244a0f8969c584ea587a8cc7542ab8d967949872e6c2a1815b5041512e6ce
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9957
 pdf_sha256: 0ca244a0f8969c584ea587a8cc7542ab8d967949872e6c2a1815b5041512e6ce
 tanggal_pengundangan: '1964-06-01'
 tanggal_berlaku: '1963-01-01'

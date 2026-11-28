@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2010_2010-06-15.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 69cdc464cb0b3bcc6ca27e9cb2d5d7062d5f4563e3060e02f14c4603d2c15bcc
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9719
 pdf_sha256: 69cdc464cb0b3bcc6ca27e9cb2d5d7062d5f4563e3060e02f14c4603d2c15bcc
 tanggal_pengundangan: '2010-06-15'
 tanggal_berlaku: '2010-06-15'

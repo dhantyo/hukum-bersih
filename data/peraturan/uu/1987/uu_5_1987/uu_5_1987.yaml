@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1987_1987-07-25.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6989a1ab468bf6303a6ccf1ec7186236a8604b6e3a4ca7fc4ee534753d9fb9bc
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9947
 pdf_sha256: 25ee322680704216e8af576121c75f839a834ddd075d9b9f7ffe5768ebce41c4
 tanggal_pengundangan: '1987-07-25'
 tanggal_berlaku: '1987-07-25'

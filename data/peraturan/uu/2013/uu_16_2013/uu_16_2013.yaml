@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2013_2013-07-10.txt
   pasal_count: 22
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 82ec4b6ac2fe6f3d7a3a66063dfdfc695c3554b73ab72f70b0dbe6f396dd21ba
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9932
 pdf_sha256: 6f78a209308da4e8581d687389023a4dabc266d7f884216acee09002f570279e
 tanggal_pengundangan: '2013-07-10'
 tanggal_berlaku: '2013-07-10'

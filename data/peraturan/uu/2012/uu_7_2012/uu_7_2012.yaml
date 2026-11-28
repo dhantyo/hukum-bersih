@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2012_2012-05-10.txt
   pasal_count: 62
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7f517b7f6fc277b98ae57fef34c73cc9731419938b118bccce90f17d155fe438
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9972
 pdf_sha256: e7df2191fc0e3ff58cd770a20330ad0e9200aa5778967f515784cfe2538f9e13
 tanggal_pengundangan: '2012-05-10'
 tanggal_berlaku: '2012-05-10'

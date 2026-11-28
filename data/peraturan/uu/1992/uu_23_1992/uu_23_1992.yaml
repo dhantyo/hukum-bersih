@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_1992_1992-09-17.txt
   pasal_count: 90
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 859c876990fbc5a8fcc0c4e8a8719ad92fc9c76788c330dca827f4445bff9941
+  checks:
+    version: 1
+    failed:
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 0.9995
 pdf_sha256: 859c876990fbc5a8fcc0c4e8a8719ad92fc9c76788c330dca827f4445bff9941
 tanggal_pengundangan: '1992-09-17'
 tanggal_berlaku: '1992-09-17'

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_25_2007_2007-04-26.txt
   pasal_count: 40
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8bf290f398e60852dc169af92dc0e4fa19ce5a2bd8643b792e137458a58c7a33
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 17697b246d0745082fa133eeed554a45dd1c28fa84fa9d8501b4fff5fff19b61
 tanggal_penetapan_bpk: '2008-04-26'
 tanggal_pengundangan: '2007-04-26'

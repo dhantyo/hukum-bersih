@@ -30,9 +30,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_1998_1998-11-23.txt
   pasal_count: 17
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b5a8631a2e5ef35eecf44e073081d295557dab96f36a3382bc926abd1244f24a
+  checks:
+    version: 1
+    failed:
+    - name: pasal_gap
+      detail: 7->9
+    word_coverage: 0.9992
 pdf_sha256: b5a8631a2e5ef35eecf44e073081d295557dab96f36a3382bc926abd1244f24a
 tanggal_pengundangan: '1998-11-23'
 tanggal_berlaku: '1998-11-23'

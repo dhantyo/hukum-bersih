@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2012_2012-09-22.txt
   pasal_count: 11
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ff60188ae3db1660f61b27736f14078697a98a14791998c08b31197a0d8e64c0
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9966
 pdf_sha256: ff6a35ed48ba3247484577e02de4f67294f25c97c7d37fc4ed86eb7650022533
 tanggal_pengundangan: '2012-09-22'
 tanggal_berlaku: '2012-09-22'

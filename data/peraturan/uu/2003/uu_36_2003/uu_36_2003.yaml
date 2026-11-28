@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_36_2003_2003-12-18.txt
   pasal_count: 21
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ef9dc058afcfd5e9c88504b0a58988a817a91c2725a2d9a79f2b781ec5afd452
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9991
 pdf_sha256: ef9dc058afcfd5e9c88504b0a58988a817a91c2725a2d9a79f2b781ec5afd452
 tanggal_pengundangan: '2003-12-18'
 tanggal_berlaku: '2003-12-18'

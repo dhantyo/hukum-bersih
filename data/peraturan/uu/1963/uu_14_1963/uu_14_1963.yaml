@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1963_1963-11-28.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 49d4e523d3a2541be17722db26bd944fc283c0cce24f293c045ae92806da5b50
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9979
 pdf_sha256: 49d4e523d3a2541be17722db26bd944fc283c0cce24f293c045ae92806da5b50
 tanggal_pengundangan: '1963-11-28'
 tanggal_berlaku: '1963-11-28'

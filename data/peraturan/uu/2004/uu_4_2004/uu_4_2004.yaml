@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2004_2004-01-15.txt
   pasal_count: 49
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 83cf1a8ef8fa3a134cdb81abfa13b7f813c69b77f2736fd7e1790893d2f04589
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9993
 pdf_sha256: 75920d5e70437bee3fda9fba4ac1c1a17c1a68c4e754a4198410aa681961f9c4
 tanggal_pengundangan: '2004-01-15'
 tanggal_berlaku: '2004-01-15'

@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_1995_1995-12-30.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d719371b1118722d7db7b1f6d4e4d887c53c0b7dfb87d203367b5e1ed6462a78
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9976
 pdf_sha256: d719371b1118722d7db7b1f6d4e4d887c53c0b7dfb87d203367b5e1ed6462a78
 tanggal_pengundangan: '1995-12-30'
 tanggal_berlaku: '1995-12-30'

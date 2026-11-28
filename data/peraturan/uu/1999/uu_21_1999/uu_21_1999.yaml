@@ -32,9 +32,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_1999_1999-05-07.txt
   pasal_count: 2
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2c7ef185b78aa292f0ca381f19d12ac73857ebab018d206a483679651753c21a
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: penjelasan 8
+    word_coverage: 0.9987
 pdf_sha256: 2c7ef185b78aa292f0ca381f19d12ac73857ebab018d206a483679651753c21a
 tanggal_pengundangan: '1999-05-07'
 tanggal_berlaku: '1999-05-07'

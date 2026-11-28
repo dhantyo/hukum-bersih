@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_2000_2000-08-02.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8c2e7783072dc917b39b3e987460e8f6e33f9ae0d459d354bb80121a72918b46
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 7088da5b897ad2eb28a490d0082a857034e74c828d356b4621cfd2f594a9ec4d
 tanggal_pengundangan: '2000-08-02'
 tanggal_berlaku: '2001-01-01'

@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1974_1974-06-04.txt
   pasal_count: 12
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: df84138bb8bd55610d4186dd472ddb9f5d325246a08b1469f6404bfc8dafe5f6
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: penjelasan 2
+    word_coverage: 0.9982
 pdf_sha256: df84138bb8bd55610d4186dd472ddb9f5d325246a08b1469f6404bfc8dafe5f6
 tanggal_pengundangan: '1974-06-04'
 tanggal_berlaku: '1974-06-04'

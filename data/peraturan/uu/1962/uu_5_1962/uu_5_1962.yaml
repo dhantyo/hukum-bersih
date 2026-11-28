@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1962_1962-02-14.txt
   pasal_count: 32
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: cc60b99e6ec3a15f11aa47f3896e2c7a40d44d2b6acdbda405a744a4140e7d28
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: cc60b99e6ec3a15f11aa47f3896e2c7a40d44d2b6acdbda405a744a4140e7d28
 tanggal_pengundangan: '1962-02-14'
 tanggal_berlaku: '1962-02-14'

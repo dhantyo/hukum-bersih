@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2014_2014-08-07.txt
   pasal_count: 91
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 843fc1f38cb3c23dfbd81b8df1b7531731e721264f527e1065b93c3c791d7116
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: ab1789ce8eeb4b75e582f1699fbe0b79cfd35274dd004d8af552c8c2271de0fd
 tanggal_pengundangan: '2014-08-07'
 tanggal_berlaku: '2014-08-07'

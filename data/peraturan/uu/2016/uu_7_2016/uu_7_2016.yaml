@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2016_2016-04-14.txt
   pasal_count: 78
-  parser_version: 11
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f32afb080135cefc7911546010a92dd127771db551c5ad22872206ef3ecd338e
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: c0348a2e23bb0052d82d47925cc7c28238f1525776290704a46f054c72a96509
 tanggal_pengundangan: '2016-04-14'
 tanggal_berlaku: '2016-04-14'

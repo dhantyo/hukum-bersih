@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2011_2011-09-19.txt
   pasal_count: 11
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 470a6ad34ff81a4da4dea670aa07db3e0b2e271aed814b9ed61611706e17a1aa
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9966
 pdf_sha256: 470a6ad34ff81a4da4dea670aa07db3e0b2e271aed814b9ed61611706e17a1aa
 tanggal_pengundangan: '2011-09-19'
 tanggal_berlaku: '2011-09-19'

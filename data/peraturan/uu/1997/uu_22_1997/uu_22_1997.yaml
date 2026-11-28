@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_1997_1997-09-01.txt
   pasal_count: 104
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8a79db485b7ed65cd3491cab610c5dee9995f81aee6fad5557710022a1c6f475
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9998
 pdf_sha256: 8a79db485b7ed65cd3491cab610c5dee9995f81aee6fad5557710022a1c6f475
 tanggal_pengundangan: '1997-09-01'
 tanggal_berlaku: '1997-09-01'

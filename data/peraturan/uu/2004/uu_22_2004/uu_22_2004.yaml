@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_2004_2004-08-13.txt
   pasal_count: 41
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 79f3b2d2aebb7406ffcdc5e4e6075a6caed4089a31e1b354b2a0dbb41114c081
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9998
 pdf_sha256: 2b93d28a03947334f9be2d1a3fc0baf04fd7c4071d8cdf32f8e902d34f881c3e
 tanggal_pengundangan: '2004-08-13'
 tanggal_berlaku: '2004-08-13'

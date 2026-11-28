@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_43_2009_2009-10-23.txt
   pasal_count: 92
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0d8de0e5709ef44d0007ded233f838a2cb47b7c677b08f12d4b57de44965b2e9
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9983
 pdf_sha256: ba2c0113151d4c3ce4502c7291213d01075ab6dd0a9a70af7db89bf1d3550881
 tanggal_pengundangan: '2009-10-23'
 tanggal_berlaku: '2009-10-23'

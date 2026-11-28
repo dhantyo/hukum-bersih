@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_40_2009_2009-10-14.txt
   pasal_count: 54
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 762a48790c064a69a3ef884be03ab2e6b9a66f768520f5fc29f9c5ee730ee1b8
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9958
 pdf_sha256: 4d5598f2a90f0ced1cb0c54d1d26cf44beb65ad226ef5d7a6438b51ef6143f9f
 tanggal_pengundangan: '2009-10-14'
 tanggal_berlaku: '2009-10-14'

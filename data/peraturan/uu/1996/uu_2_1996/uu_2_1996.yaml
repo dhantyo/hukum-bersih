@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1996_1996-03-22.txt
   pasal_count: 14
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6b47ea1dc58f25b7fa0a9dee36f3b79c987ce860f0501c137983ef24419bea54
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: f57ea8c498db965c090f9b7013c93d5409f0fcc764d78676707e2dc22f122953
 tanggal_pengundangan: '1996-03-22'
 tanggal_berlaku: '1996-04-01'

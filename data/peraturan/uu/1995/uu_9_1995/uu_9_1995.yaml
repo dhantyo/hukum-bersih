@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_1995_1995-12-26.txt
   pasal_count: 38
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 782842480ce68c1713d26d1b8b2ab7c089bfa4f6afb9fa3c2f6e0adbfc47e1d4
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9994
 pdf_sha256: 782842480ce68c1713d26d1b8b2ab7c089bfa4f6afb9fa3c2f6e0adbfc47e1d4
 tanggal_pengundangan: '1995-12-26'
 tanggal_berlaku: '1995-12-26'

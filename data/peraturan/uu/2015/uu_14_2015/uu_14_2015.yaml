@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2015_2015-11-25.txt
   pasal_count: 43
-  parser_version: 11
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: afbb1cdd3f25747e11cd4c628b154269389e2dde19e4abcb903872ef33893d60
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 4f467f596b5ebcc014c3107b98aeb3508f6c401d47b420a1cdd6261b44488381
 tanggal_pengundangan: '2015-11-25'
 tanggal_berlaku: '2016-01-01'

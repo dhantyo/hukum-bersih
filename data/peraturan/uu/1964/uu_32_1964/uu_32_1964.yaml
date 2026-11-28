@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_32_1964_1964-12-28.txt
   pasal_count: 34
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 83177813d163d410aead02d16b9147ef4bb7503345ffc016df8cedf9c8bc8845
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: 83177813d163d410aead02d16b9147ef4bb7503345ffc016df8cedf9c8bc8845
 tanggal_pengundangan: '1964-12-28'
 tanggal_berlaku: '1964-12-28'

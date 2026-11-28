@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_2007_2007-04-19.txt
   pasal_count: 133
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2f8062fbe594f9118dddb90eba758b9a75a1cfccec6b6dc9d8c121e8e8cdcf79
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: 319530ce175d14b511d7f6eb158ff2ae7f14f4d55fa73d4a1e5bdfc3b269f53a
 tanggal_pengundangan: '2007-04-19'
 tanggal_berlaku: '2007-04-19'

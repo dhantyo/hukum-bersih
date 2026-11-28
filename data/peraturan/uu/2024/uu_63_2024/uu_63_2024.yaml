@@ -44,13 +44,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_63_2024_2024-10-17.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 924daf24ae46894fb5e149bd8f3e97cc5b161a784234b741a9c6599d1648e324
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 8
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9889
+    ocr_unknown_rate: 0.004
 pdf_sha256: 924daf24ae46894fb5e149bd8f3e97cc5b161a784234b741a9c6599d1648e324
 tanggal_pengundangan: '2024-10-17'
 tanggal_berlaku: '2024-10-17'

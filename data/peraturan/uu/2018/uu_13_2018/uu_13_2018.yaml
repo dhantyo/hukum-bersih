@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2018_2018-12-28.txt
   pasal_count: 36
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b9dba5eb5d327a1e579dadbb31b965ed7dadc54879122ac075d8030efc028726
   ocr: true
   ocr_engine: indra
   ocr_fixed: 1
   ocr_unknown: 9
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9935
+    ocr_unknown_rate: 0.0023
 pdf_sha256: dc92e1b78daf6ed7db6612dd48bcdb20f85b0c2a648c62e32ab94e60e5c3ee22
 tanggal_pengundangan: '2018-12-28'
 tanggal_berlaku: '2018-12-28'

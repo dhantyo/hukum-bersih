@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2001_2001-08-01.txt
   pasal_count: 101
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 06834be27bb760b7282a9c07b9921a9d5b7424336718fc1534efa19bf44f1f26
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9997
 pdf_sha256: 06834be27bb760b7282a9c07b9921a9d5b7424336718fc1534efa19bf44f1f26
 tanggal_penetapan_bpk: '2016-08-01'
 tanggal_pengundangan: '2001-08-01'

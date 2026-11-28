@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2006_2006-08-01.txt
   pasal_count: 46
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 613e3a210da1de6a0f9b984596c7ec799eba26e8882111694cc86ffae32e9ad4
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9975
 pdf_sha256: 7412f8a52b03acb206666984c98717b250664a217ec5e77ded3fbbb2dbbca2b5
 tanggal_pengundangan: '2006-08-01'
 tanggal_berlaku: '2006-08-01'

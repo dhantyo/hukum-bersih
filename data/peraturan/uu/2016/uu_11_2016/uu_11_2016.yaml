@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_2016_2016-07-01.txt
   pasal_count: 25
-  parser_version: 11
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5d5eea3d2ef84d8be6abe4223a0f51aed5dc3d0d8f89b3c6ff08a4e414951a6d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: f9bc6bce2983b63a31f791e9cbb6dfb66991d7320f0b9458b4b5bed59913ae40
 tanggal_pengundangan: '2016-07-01'
 tanggal_berlaku: '2016-07-01'

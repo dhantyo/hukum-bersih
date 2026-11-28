@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_2006_2006-11-15.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b4d8e60965e66151e08fbcabcbe4e0cb56c296f37fc3d61e0d88732072416cc5
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.999
 pdf_sha256: b9f3bcd2c8d5d527a1192bdcf63d02c05ec8d61a37bc23420d9bbc64e1875fea
 tanggal_pengundangan: '2006-11-15'
 tanggal_berlaku: '2006-11-15'

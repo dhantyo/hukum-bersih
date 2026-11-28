@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_2012_2012-05-11.txt
   pasal_count: 328
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6b89fe631cf47254dfa446118e3a3b4fd3bdc55bd3c3467dee57814ef4026d80
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: 2a74ead73044d4fb44048b8f46634992a2b474d9f9cf4a15e4e9151878715c76
 tanggal_pengundangan: '2012-05-11'
 tanggal_berlaku: '2012-05-11'

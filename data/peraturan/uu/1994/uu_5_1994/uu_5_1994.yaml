@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1994_1994-08-01.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c30f35ac9ca59934736897f00e93d0fb24604dd6d479fc8caa7a2315d2a4b29a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9988
 pdf_sha256: c30f35ac9ca59934736897f00e93d0fb24604dd6d479fc8caa7a2315d2a4b29a
 tanggal_pengundangan: '1994-08-01'
 tanggal_berlaku: '1994-08-01'

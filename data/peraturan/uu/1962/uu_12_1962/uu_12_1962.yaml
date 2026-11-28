@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_1962_1962-08-16.txt
   pasal_count: 26
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b04f07913db9450caaff80baf6a16c003765bdee545e6729b968386bf0df55df
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: b04f07913db9450caaff80baf6a16c003765bdee545e6729b968386bf0df55df
 tanggal_pengundangan: '1962-08-16'
 tanggal_berlaku: '1962-08-16'

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_1967_1967-09-12.txt
   pasal_count: 15
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 97c8178e0099129a2f8add9cfd3b0736f175613c4d71fbf1a0c7bfd6c2a83a92
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.998
 pdf_sha256: 97c8178e0099129a2f8add9cfd3b0736f175613c4d71fbf1a0c7bfd6c2a83a92
 tanggal_pengundangan: '1967-09-12'
 lembaran_negara: 'LN. 1967/ No. 19 , TLN NO.2828 , LL SETNEG : HLM'

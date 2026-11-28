@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_43_2007_2007-11-01.txt
   pasal_count: 54
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 57bde0eb290f1dc38759839ac63078af6326b30023427f266c5a6be00a842f60
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9966
 pdf_sha256: 393fb5e11791cd709235d8584cb8f2d204ceedd4dc6be96cc0b0cd500d9a1696
 tanggal_pengundangan: '2007-11-01'
 tanggal_berlaku: '2007-11-01'

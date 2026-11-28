@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_1999_1999-05-07.txt
   pasal_count: 46
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 171481f43c26211a4decd37060f15132ac194efb63fb72255fe67ed18bdb4235
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9997
 pdf_sha256: 171481f43c26211a4decd37060f15132ac194efb63fb72255fe67ed18bdb4235
 tanggal_pengundangan: '1999-05-07'
 tanggal_berlaku: '1999-05-07'

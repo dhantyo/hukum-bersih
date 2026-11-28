@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_2013_2013-11-14.txt
   pasal_count: 39
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1ec5fe2ba1cdc3b35eb38d889569a8c6864a22b64c21a474e96baca4d7509cf1
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: f28020562df9cd4e548b8ae9099707d57415c1b325253d37b6d8723061199b93
 tanggal_pengundangan: '2013-11-14'
 tanggal_berlaku: '2014-01-01'

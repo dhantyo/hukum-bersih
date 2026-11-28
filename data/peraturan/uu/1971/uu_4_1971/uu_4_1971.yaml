@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1971_1971-03-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b89c73bcad72d5c2f94d7bd3162c2cf68afaa3d19a02c75c0a6d637cb2a4def5
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9961
 pdf_sha256: b89c73bcad72d5c2f94d7bd3162c2cf68afaa3d19a02c75c0a6d637cb2a4def5
 tanggal_pengundangan: '1971-03-29'
 tanggal_berlaku: '1971-03-29'

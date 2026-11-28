@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1972_1972-12-13.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 836d1832a057b6565a689e57a875c9440714dda76e4d78e2c485019730c20a6e
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9928
 pdf_sha256: 836d1832a057b6565a689e57a875c9440714dda76e4d78e2c485019730c20a6e
 tanggal_pengundangan: '1972-12-13'
 tanggal_berlaku: '1972-12-13'

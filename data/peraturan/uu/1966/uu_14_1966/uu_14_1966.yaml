@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1966_1966-12-31.txt
   pasal_count: 8
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d137d56a0891a77e51e41c4f3e74b0bc4f099ac5580bdd97b5ff5fe3315f7b88
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9941
 pdf_sha256: d137d56a0891a77e51e41c4f3e74b0bc4f099ac5580bdd97b5ff5fe3315f7b88
 tanggal_pengundangan: '1966-12-31'
 tanggal_berlaku: '1967-01-01'

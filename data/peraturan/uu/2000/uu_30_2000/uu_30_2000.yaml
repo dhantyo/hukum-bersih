@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_2000_2000-12-20.txt
   pasal_count: 19
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a4dc3d1bad8695cb1e6a46918235a2a88a02d359b318a4b12bda7d40605fa037
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9987
 pdf_sha256: a4dc3d1bad8695cb1e6a46918235a2a88a02d359b318a4b12bda7d40605fa037
 tanggal_pengundangan: '2000-12-20'
 tanggal_berlaku: '2000-12-20'

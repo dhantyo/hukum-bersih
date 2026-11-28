@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1998_1998-09-28.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a17adaef05538ca7548586a72a81b8d20f416eb280142cd36bebb7b269378cdc
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9989
 pdf_sha256: a17adaef05538ca7548586a72a81b8d20f416eb280142cd36bebb7b269378cdc
 tanggal_pengundangan: '1998-09-28'
 tanggal_berlaku: '1998-09-28'

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_25_2014_2014-10-14.txt
   pasal_count: 62
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7e75f2166d91dbb868d1f578643f42ab51758dd824045d6699c5957bc718343f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 1db341b8c5ab3973816a6a55f5c75f935521b17cef93e1b83490c3b3fb3d491e
 tanggal_pengundangan: '2014-10-14'
 tanggal_berlaku: '2014-10-14'

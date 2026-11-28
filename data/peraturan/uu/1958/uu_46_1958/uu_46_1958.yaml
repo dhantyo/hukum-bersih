@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_46_1958_1958-06-21.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1ec04a35b19c0daa4c47dd647f49059a8b8b7718b7728c08f6762c406a67860a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9833
 pdf_sha256: 41e49e799f2062bae58ca28ba3dffadb7a5f7d70e64e2e125a97fc1a296be648
 tanggal_pengundangan: '1958-07-17'
 tanggal_berlaku: '1955-01-01'

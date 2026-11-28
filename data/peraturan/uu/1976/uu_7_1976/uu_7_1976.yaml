@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1976_1976-07-17.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8cca06c547e95da4cea55a699f56a405b2d67679f2d8c9b9848e6f73cd8fc611
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9971
 pdf_sha256: 8780ac18b663bfb0d10d3e5152c3249af7b2d043fee6661ae99b7a0e88e4ceff
 tanggal_pengundangan: '1976-07-17'
 tanggal_berlaku: '1976-07-17'

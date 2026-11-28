@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_2013_2013-09-30.txt
   pasal_count: 11
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f4d112ff40aa1340274a650b7cd48c5a1d0d9075b52dc763dfdc67fa185a4120
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 1b51cc0dbee490a93fca54c7f13277fccdb1a9bf65e0df210dcb3a8bb58727ba
 tanggal_pengundangan: '2013-09-30'
 tanggal_berlaku: '2013-09-30'

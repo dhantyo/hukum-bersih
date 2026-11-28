@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_52_1999_1999-10-04.txt
   pasal_count: 19
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: fa86f94cd932acae22059397e828bf0501982af76ef62b68f86eae3bb83b5ced
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9987
 pdf_sha256: fa86f94cd932acae22059397e828bf0501982af76ef62b68f86eae3bb83b5ced
 tanggal_pengundangan: '1999-10-04'
 tanggal_berlaku: '1999-10-04'

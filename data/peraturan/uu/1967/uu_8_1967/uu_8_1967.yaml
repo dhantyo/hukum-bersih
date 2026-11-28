@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1967_1967-08-26.txt
   pasal_count: 5
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f604550e2c25d793fe202c25cf14cd3d4ad0191704e1092d0b88b4e2519a317b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9993
 pdf_sha256: f604550e2c25d793fe202c25cf14cd3d4ad0191704e1092d0b88b4e2519a317b
 tanggal_pengundangan: '1967-08-26'
 tanggal_berlaku: '1967-08-26'

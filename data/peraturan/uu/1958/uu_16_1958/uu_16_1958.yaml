@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_1958_1958-04-16.txt
   pasal_count: 8
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 64e98897d308e0fdd135c91b34d6baeec71163e566416a76157ec0b718d868e4
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9959
 pdf_sha256: 892c35e729c07256789249a56ca35d777dc98960973db0273d4755833e534a7e
 tanggal_pengundangan: '1958-04-23'
 lembaran_negara: 'LN. 1958 No. 42, TLN No. 1568, LL SETNEG : 4 HLM'

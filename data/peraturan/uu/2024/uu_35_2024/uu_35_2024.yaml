@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_35_2024_2024-08-07.txt
   pasal_count: 10
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8b7e5caadaa83458e464eb51cc926c9c5ea0a8b8450840264d22b0e808736e9e
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 21
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.989
+    ocr_unknown_rate: 0.0134
 pdf_sha256: 8b7e5caadaa83458e464eb51cc926c9c5ea0a8b8450840264d22b0e808736e9e
 tanggal_pengundangan: '2024-08-07'
 tanggal_berlaku: '2024-08-07'

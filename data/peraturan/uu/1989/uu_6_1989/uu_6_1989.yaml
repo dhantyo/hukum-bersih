@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1989_1989-11-01.txt
   pasal_count: 134
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 63f4702ca8aaf25c301447389d757fdb0a4dc3bc10b12d660358d7f9e8b3dfe2
+  checks:
+    version: 1
+    failed:
+    - name: pasal_gap
+      detail: 68->6 6->70
+    word_coverage: 0.9998
 pdf_sha256: bec190210c0784d22de37b97d2f6a955bafa6f72315a542ab87dadec55371be0
 tanggal_pengundangan: '1989-11-01'
 tanggal_berlaku: '1991-08-01'

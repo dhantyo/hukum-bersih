@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_2009_2009-07-01.txt
   pasal_count: 11
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d52f3a30c008ed49be247aac8f62e35940c335625d5875893a6451f8cfc84a60
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9951
 pdf_sha256: 4d5ccb55f3f9ac1aec6ecb758dbb3b71756d668650c09648dff0805012d5d516
 tanggal_pengundangan: '2009-07-01'
 tanggal_berlaku: '2009-07-01'

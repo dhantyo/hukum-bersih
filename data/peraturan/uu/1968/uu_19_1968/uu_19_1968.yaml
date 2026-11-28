@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_1968_1968-12-18.txt
   pasal_count: 28
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 839f7f92dbaa0523ad573941d7da62f4810845b091e5845a51f4148e4584bfbe
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: 839f7f92dbaa0523ad573941d7da62f4810845b091e5845a51f4148e4584bfbe
 tanggal_pengundangan: '1968-12-18'
 lembaran_negara: 'LN. 1968/ No.72, TLN NO. 2872 , LL SETNEG : 9 HLM'

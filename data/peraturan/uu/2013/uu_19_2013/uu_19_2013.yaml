@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_2013_2013-08-06.txt
   pasal_count: 108
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c54a2610b06958755c4ac1fd72619797920e3cc822453adb15d7d77a98046f7a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9983
 pdf_sha256: 9022896002d4370f5a3e18eca9b82a1efc612004d39f8d54eaea25010c576219
 tanggal_pengundangan: '2013-08-06'
 tanggal_berlaku: '2013-08-06'

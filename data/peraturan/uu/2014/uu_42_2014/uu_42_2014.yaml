@@ -45,9 +45,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_42_2014_2014-12-15.txt
   pasal_count: 2
-  parser_version: 11
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: eaff7b1bcf3e4dc86837c2b14bcd4307a63f0c208a3d21b1e1dd5b365a1b8bbd
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: a381d283eb1edb6a1a117e452d50df0e5509a615527a3ec1aa3845144cb278cc
 tanggal_pengundangan: '2014-12-15'
 tanggal_berlaku: '2014-12-15'

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2002_2002-09-23.txt
   pasal_count: 71
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2a887f6e32bf3c25b13a0523a01eed1cea70c43d745da6f38d9beaf2c4ae662f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9997
 pdf_sha256: 2a887f6e32bf3c25b13a0523a01eed1cea70c43d745da6f38d9beaf2c4ae662f
 tanggal_pengundangan: '2002-09-23'
 tanggal_berlaku: '2002-09-23'

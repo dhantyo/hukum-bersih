@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2006_2006-11-15.txt
   pasal_count: 41
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 44c2add8bb066f75283180d019bbe2f2acf3d936d8ff72afb8594a34c6ad1e1f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9966
 pdf_sha256: e2f47a41c5772942822525f839fcdcce6a2369c0f5c50616d021a6256b915eba
 tanggal_pengundangan: '2006-11-15'
 tanggal_berlaku: '2006-11-15'

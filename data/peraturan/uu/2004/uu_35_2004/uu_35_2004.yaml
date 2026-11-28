@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_35_2004_2004-10-18.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 98c379120977cbce0099ab3f8eadaaf6fa46f0401b880165b6085a85bd670a20
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9983
 pdf_sha256: 98c379120977cbce0099ab3f8eadaaf6fa46f0401b880165b6085a85bd670a20
 tanggal_pengundangan: '2004-10-18'
 tanggal_berlaku: '2004-01-01'

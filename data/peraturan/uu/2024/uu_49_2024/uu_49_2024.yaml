@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_49_2024_2024-08-07.txt
   pasal_count: 10
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d4e0b0ef7ca0e8fe9542183699bcd1ac4d8720e38aa8cef10420842da15bb897
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 29
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9865
+    ocr_unknown_rate: 0.0226
 pdf_sha256: d4e0b0ef7ca0e8fe9542183699bcd1ac4d8720e38aa8cef10420842da15bb897
 tanggal_pengundangan: '2024-08-07'
 tanggal_berlaku: '2024-08-07'

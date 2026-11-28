@@ -32,9 +32,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_1971_1971-12-11.txt
   pasal_count: 17
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 044e135f1713484c0f1fd55b3a2006c093ac796e2903741b8325d591ecb01cc3
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: body 1
+    word_coverage: 0.9987
 pdf_sha256: 044e135f1713484c0f1fd55b3a2006c093ac796e2903741b8325d591ecb01cc3
 tanggal_pengundangan: '1971-12-11'
 tanggal_berlaku: '1971-10-05'

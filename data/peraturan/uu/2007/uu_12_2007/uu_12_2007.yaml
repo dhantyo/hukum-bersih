@@ -29,11 +29,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2007_2007-01-02.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 47385619d7713dafddea128db6775a99724945d5ac2685cf76023903557731d8
   extra_pdf_sha256:
   - b04aa37a05bc2f6e1d996e0b875bc177cce042a4ff5641c94303994f5a58e227
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9965
 pdf_sha256: 73722a81aa5cc8a7f3fea19079e769e6e8541e3988591948ee6cf90c579ce215
 tanggal_pengundangan: '2007-01-02'
 tanggal_berlaku: '2007-01-02'

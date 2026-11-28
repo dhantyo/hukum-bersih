@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_42_1999_1999-09-30.txt
   pasal_count: 41
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: dc14d2ef3c7df8c29ff0a9e852604d0e1cc56eb8faf4c2f304cb65858b85fe0b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9993
 pdf_sha256: dc14d2ef3c7df8c29ff0a9e852604d0e1cc56eb8faf4c2f304cb65858b85fe0b
 tanggal_pengundangan: '1999-09-30'
 tanggal_berlaku: '1999-09-30'

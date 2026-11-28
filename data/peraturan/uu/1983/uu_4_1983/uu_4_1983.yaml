@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1983_1983-06-28.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 26c1652f710ab908f9d7828dcbc4f638d966c32792988578e14c0dc18fcb5696
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9942
 pdf_sha256: 765aef8f6c1865ac672a35bbb9d934353aab55207671b1c781ba6f3bb1ec1748
 tanggal_pengundangan: '1983-06-28'
 tanggal_berlaku: '1983-06-28'

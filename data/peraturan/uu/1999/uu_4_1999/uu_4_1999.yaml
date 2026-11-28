@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1999_1999-02-01.txt
   pasal_count: 49
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8e4b25c07b44f3720c80dc5c21c0f57d3496c98ad7d3ca8f1fa4cca5de010fb6
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: 8e4b25c07b44f3720c80dc5c21c0f57d3496c98ad7d3ca8f1fa4cca5de010fb6
 tanggal_pengundangan: '1999-02-01'
 tanggal_berlaku: '1999-02-01'

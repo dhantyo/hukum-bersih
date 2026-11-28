@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2008_2008-05-07.txt
   pasal_count: 49
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: dc7735db65d6dedc650ff78c36b6c6f076cf931861b005edab03f30e513026f4
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 6344aa84385626c169d917dfd2a9f643424993dfcbc9663799b9e0f18720b3a3
 tanggal_pengundangan: '2008-05-07'
 tanggal_berlaku: '2008-05-07'

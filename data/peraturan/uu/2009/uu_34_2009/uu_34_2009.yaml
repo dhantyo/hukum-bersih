@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_34_2009_2009-09-10.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 50d438b984443ed35ceddd000b855d4fba7b642a27c717369342acbf3252c51b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.987
 pdf_sha256: 8f3e457a49d76da4e4f534327930bdef14e7c2c1b891c5f43eabd9e1b154284d
 tanggal_penetapan_bpk: '2009-10-09'
 tanggal_pengundangan: '2009-10-09'

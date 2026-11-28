@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1974_1974-03-14.txt
   pasal_count: 8
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d88a0e8a0d8880f392466b4f0f70228e40753947be32065cd02d08de2089bae2
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9982
 pdf_sha256: d88a0e8a0d8880f392466b4f0f70228e40753947be32065cd02d08de2089bae2
 tanggal_pengundangan: '1974-03-14'
 tanggal_berlaku: '1974-04-01'

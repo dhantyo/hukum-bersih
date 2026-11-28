@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1988_1988-08-05.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2a3b846ff3f1a0b7ce0fc95bf7211bc238b5eebeddd860a22efaadf48edff4ce
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9972
 pdf_sha256: 9d75957a7202d4258830a999c357745011c668d47f672f01171e658510ec0277
 tanggal_pengundangan: '1988-08-05'
 tanggal_berlaku: '1987-04-01'

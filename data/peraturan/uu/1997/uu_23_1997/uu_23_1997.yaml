@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_1997_1997-09-19.txt
   pasal_count: 52
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d0f3bac20420160be9486b076abca9873c476283c9b037a41034c493c92db837
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9997
 pdf_sha256: d0f3bac20420160be9486b076abca9873c476283c9b037a41034c493c92db837
 tanggal_pengundangan: '1997-09-19'
 tanggal_berlaku: '1997-09-19'

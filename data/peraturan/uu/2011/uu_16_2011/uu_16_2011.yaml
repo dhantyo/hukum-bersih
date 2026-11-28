@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2011_2011-11-02.txt
   pasal_count: 25
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 24f4e4a7de57ff9a65a1a70f3edaee9ba9fb63679cf406d7b023e99fdbdb1835
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9925
 pdf_sha256: 2ef0aa0ef077408d26b248c0c1986d7a9ab458adf0801d1e1ea0702cfc5f6ee2
 tanggal_penetapan_bpk: '2011-10-31'
 tanggal_pengundangan: '2011-11-02'

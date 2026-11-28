@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2007_2007-01-02.txt
   pasal_count: 22
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: dafdad657cea8b19da7d2b5caa33267c6c2aa4c4f3f3fee214f77ba78ee61f59
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9964
 pdf_sha256: a76d19929484ee9d11f05fac9d0f9cd5b20f4ed8aadba1bd580580640023509f
 tanggal_pengundangan: '2007-01-02'
 tanggal_berlaku: '2007-01-02'

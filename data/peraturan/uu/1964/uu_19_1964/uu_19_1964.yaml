@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_1964_1964-10-31.txt
   pasal_count: 31
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 229cf3a080b1fa79bfb814c98bc9b55967b5da9d0f7b9c1b0833908161cdb22d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9992
 pdf_sha256: 229cf3a080b1fa79bfb814c98bc9b55967b5da9d0f7b9c1b0833908161cdb22d
 tanggal_pengundangan: '1964-10-31'
 tanggal_berlaku: '1964-10-31'

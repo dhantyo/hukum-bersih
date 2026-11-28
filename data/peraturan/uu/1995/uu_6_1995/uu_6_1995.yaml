@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1995_1995-08-03.txt
   pasal_count: 18
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7a533311ff5a2e88f8ae9f26230da85bac3c953f7595b946c93f2fa7e8170b96
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9988
 pdf_sha256: 7a533311ff5a2e88f8ae9f26230da85bac3c953f7595b946c93f2fa7e8170b96
 tanggal_pengundangan: '1995-08-03'
 tanggal_berlaku: '1995-08-03'

@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_144_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3a3a09e1cf2e5b0556306c68547d146e88fceac3c03eccd738c28936d72fe8ea
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 20
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9814
+    ocr_unknown_rate: 0.0192
 pdf_sha256: 3a3a09e1cf2e5b0556306c68547d146e88fceac3c03eccd738c28936d72fe8ea
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

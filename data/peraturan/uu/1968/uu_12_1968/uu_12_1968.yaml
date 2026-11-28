@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_1968_1968-11-26.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9c572288fb4eb2c828d4ad1ea3969d5b1d6fac567b728a782b8a37b877cd841c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 tanggal_pengundangan: '1968-11-26'
 tanggal_berlaku: '1968-11-26'
 lembaran_negara: 'LN. 1968/ No. 62 , Hukum Online : 2 HLM'

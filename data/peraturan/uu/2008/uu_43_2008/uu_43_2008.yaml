@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_43_2008_2008-11-13.txt
   pasal_count: 26
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8fa902da85823969adc977f6b253091f8ed2dd4b973907c6830fb7ea3cebc55e
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 198ee925beb21581418d5e36cc2c26b4b80c0e813cd2318d075a9969374cb11a
 tanggal_pengundangan: '2008-11-14'
 tanggal_berlaku: '2008-11-14'

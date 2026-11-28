@@ -29,9 +29,17 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1993_1993-08-03.txt
   pasal_count: 2
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 70644289e9e95191b4741b99efabfe14650999d8f7f87798b9531d420a7578cf
+  checks:
+    version: 1
+    failed:
+    - name: no_closing_date
+      detail: no date of signing
+    - name: word_coverage
+      detail: 0.9681 < 0.97
+    word_coverage: 0.9681
 pdf_sha256: 70644289e9e95191b4741b99efabfe14650999d8f7f87798b9531d420a7578cf
 tanggal_pengundangan: '1993-08-02'
 tanggal_berlaku: '1993-08-03'

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_2000_2000-10-17.txt
   pasal_count: 20
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f8bedbe243b4309d89d0ffdbd83d3c96e6b7f3263841ac58977028d02131ae3c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.998
 pdf_sha256: f8bedbe243b4309d89d0ffdbd83d3c96e6b7f3263841ac58977028d02131ae3c
 tanggal_pengundangan: '2000-10-17'
 tanggal_berlaku: '2000-10-17'

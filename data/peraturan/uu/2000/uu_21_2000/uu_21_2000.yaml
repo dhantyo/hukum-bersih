@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2000_2000-08-04.txt
   pasal_count: 47
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3dd9e5856cf9b4107b9db5d67f8c15018be27e883275e9eb6776aff8dc3dc4a8
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9994
 pdf_sha256: 3dd9e5856cf9b4107b9db5d67f8c15018be27e883275e9eb6776aff8dc3dc4a8
 tanggal_pengundangan: '2000-08-04'
 tanggal_berlaku: '2000-08-04'

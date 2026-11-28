@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1978_1978-07-26.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ada4cf5946ec8725aa210e0e439cd45816dc3722b466d0d7f2c2f1ac880bc4e9
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9954
 pdf_sha256: 544c42f3a9bf5cc0a761034a03a6c537083b30b1fa9e502a0cfab359fdbae13a
 tanggal_pengundangan: '1978-07-26'
 tanggal_berlaku: '1978-07-26'

@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2010_2010-04-01.txt
   pasal_count: 11
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f79b7b47b265b112680fdc836a1ace10707a395905ad1dd74fc805b6d1abf528
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9946
 pdf_sha256: f79b7b47b265b112680fdc836a1ace10707a395905ad1dd74fc805b6d1abf528
 tanggal_pengundangan: '2010-04-01'
 tanggal_berlaku: '2010-04-01'

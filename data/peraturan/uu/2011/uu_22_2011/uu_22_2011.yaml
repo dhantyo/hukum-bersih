@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_2011_2011-11-24.txt
   pasal_count: 47
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 35f12b87e4922da309f7bb357f9ef1094fcd6999bde1dae7648ac9b7866bb3f9
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.999
 pdf_sha256: 2f0dd4e1bb7da11ec12c76c1cb3ab6e8e14e6930027d35e0b50bb056db3d11a9
 tanggal_pengundangan: '2011-11-24'
 tanggal_berlaku: '2012-01-01'

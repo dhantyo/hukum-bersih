@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2013_2013-01-11.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8b017902616600bf18c8ffa915b8abdb7441c34c2b7c4e8ed4a1904cbfa976ca
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9957
 pdf_sha256: 4b90541ea263ea11ef19e5f9ed2a3df746c131b331bf4856bf13bc6c06a614de
 tanggal_pengundangan: '2013-01-11'
 tanggal_berlaku: '2013-01-11'

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2014_2014-09-17.txt
   pasal_count: 88
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b22912c7cf960cf1072a98e11d570e4f8949e2168f2d0e5ff08b25bb82af15cd
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: d6971491f00133e9a263412e18599fc7a590f5f261ddb248991de69904edc509
 tanggal_pengundangan: '2014-09-17'
 tanggal_berlaku: '2014-09-17'

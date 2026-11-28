@@ -35,9 +35,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2014_2014-01-15.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9592d20deead5994787aa5f5ae2941b0aaa8729a7eaf40a16298789bec2690ff
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: f7adfbdd682338f8519773622176d8aeae44af75b11cf8b08a4a8cfcb093383c
 tanggal_penetapan_bpk: '2014-09-15'
 tanggal_pengundangan: '2014-01-15'

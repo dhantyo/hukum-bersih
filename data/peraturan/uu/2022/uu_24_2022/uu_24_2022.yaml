@@ -30,13 +30,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_2022_2022-09-27.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1b5478a64deb24803bbfb44527820dc6a34b194bb3972ad8b83d1c1e91993197
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 7
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9847
+    ocr_unknown_rate: 0.0056
 pdf_sha256: 1b5478a64deb24803bbfb44527820dc6a34b194bb3972ad8b83d1c1e91993197
 tanggal_pengundangan: '2022-09-27'
 tanggal_berlaku: '2022-09-27'

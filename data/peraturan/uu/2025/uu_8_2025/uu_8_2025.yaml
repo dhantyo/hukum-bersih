@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_2025_2025-08-20.txt
   pasal_count: 10
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 137e76f14e2cc7b2d29a7f2887c786ac5df52daa4d6006e8615d1ca4409e50db
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 42
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9846
+    ocr_unknown_rate: 0.0352
 pdf_sha256: 137e76f14e2cc7b2d29a7f2887c786ac5df52daa4d6006e8615d1ca4409e50db
 tanggal_pengundangan: '2025-08-20'
 tanggal_berlaku: '2025-08-20'

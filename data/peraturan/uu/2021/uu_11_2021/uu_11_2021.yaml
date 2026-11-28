@@ -75,13 +75,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_2021_2021-12-31.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 45165ec723f40156144ee9665c42f75c535703643cb4360c54cc873faf53a99a
   ocr: true
   ocr_engine: indra
   ocr_fixed: 1
   ocr_unknown: 24
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9974
+    ocr_unknown_rate: 0.0035
 pdf_sha256: b5b1cfaffeaf64c86d3be1b40984a511929fe2eb154d79c6f10fdd0edf191301
 tanggal_pengundangan: '2021-12-31'
 tanggal_berlaku: '2021-12-31'

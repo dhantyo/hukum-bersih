@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1973_1973-07-16.txt
   pasal_count: 22
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 81455a4f01fdfa5124c2fd55c69d288bb5df25f55e556e7cfe263e32d7d2dddf
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9986
 pdf_sha256: 81455a4f01fdfa5124c2fd55c69d288bb5df25f55e556e7cfe263e32d7d2dddf
 tanggal_pengundangan: '1973-07-16'
 tanggal_berlaku: '1973-07-16'

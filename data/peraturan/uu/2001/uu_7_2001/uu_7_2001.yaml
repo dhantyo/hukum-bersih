@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2001_2001-06-21.txt
   pasal_count: 19
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: fd2716bd7e4ada36413de3d28a3ec145f75926491f7407fdc80611b973c9e30b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9989
 pdf_sha256: fd2716bd7e4ada36413de3d28a3ec145f75926491f7407fdc80611b973c9e30b
 tanggal_pengundangan: '2001-06-21'
 tanggal_berlaku: '2001-06-21'

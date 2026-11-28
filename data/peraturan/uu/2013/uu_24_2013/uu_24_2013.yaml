@@ -64,9 +64,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_2013_2013-12-24.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6b05dc36efeca7a03aa927d21bd7bc491fc04c96afc50891a7464aa76f4eb399
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9991
 pdf_sha256: 38e21d31ed59d746014dafe7930487a0fbe1ae2e0812ed1b3e6ffe103ae41bf6
 tanggal_pengundangan: '2013-12-24'
 tanggal_berlaku: '2013-12-24'

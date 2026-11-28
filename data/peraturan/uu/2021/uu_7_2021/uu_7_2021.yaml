@@ -28,13 +28,20 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2021_2021-10-29.txt
   pasal_count: 20
-  parser_version: 17
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ad45e199a739e081e2a1ffb4dfdf7283d59bc29f257215f69fa830dc43a2ea78
   ocr: true
   ocr_engine: indra
   ocr_fixed: 3
   ocr_unknown: 53
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: body 37, penjelasan 2
+    word_coverage: 0.9996
+    ocr_unknown_rate: 0.0012
 pdf_sha256: 296b5bf34c4ec496b1e72ea6c9f878aee26ec68bb05afce2a21e4f469c7f3147
 tanggal_pengundangan: '2021-10-29'
 tanggal_berlaku: '2021-10-29'

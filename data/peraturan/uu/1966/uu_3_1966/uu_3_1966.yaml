@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1966_1966-06-11.txt
   pasal_count: 14
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b00d3deff6712efea6a3d71421e2bed0f20cc206a7086679ca763c1fc4e18667
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9975
 pdf_sha256: b00d3deff6712efea6a3d71421e2bed0f20cc206a7086679ca763c1fc4e18667
 tanggal_pengundangan: '1966-06-11'
 tanggal_berlaku: '1966-06-11'

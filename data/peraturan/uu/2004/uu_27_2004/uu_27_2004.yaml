@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_27_2004_2004-10-06.txt
   pasal_count: 46
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7a766c78adc324315aa41d0796fc9c808bdabdf5220d0589bac4167287a85c5b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9994
 pdf_sha256: 7a766c78adc324315aa41d0796fc9c808bdabdf5220d0589bac4167287a85c5b
 tanggal_pengundangan: '2004-10-06'
 tanggal_berlaku: '2004-10-06'

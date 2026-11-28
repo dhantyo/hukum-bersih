@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1982_1982-08-20.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 554e3e7718219ca7b9b269b2d1f931464f584db08be2b8c9034d3011029cb175
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9963
 pdf_sha256: eadfe2af4cb3b8a1b6a9f8484577a329c2570659c7b7ebd7abf5698777da0b5b
 tanggal_pengundangan: '1982-08-20'
 tanggal_berlaku: '1982-08-20'

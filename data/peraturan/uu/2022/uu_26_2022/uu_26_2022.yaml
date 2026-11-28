@@ -30,13 +30,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_26_2022_2022-10-04.txt
   pasal_count: 13
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e6c5bbac4cc7b709d9ea51c03b251c3b0c8ed9fae96742420fefde6cd7475e9a
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 10
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9971
+    ocr_unknown_rate: 0.0016
 pdf_sha256: e6c5bbac4cc7b709d9ea51c03b251c3b0c8ed9fae96742420fefde6cd7475e9a
 tanggal_pengundangan: '2022-10-04'
 tanggal_berlaku: '2022-10-04'

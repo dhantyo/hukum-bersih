@@ -35,9 +35,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2007_2007-03-15.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b8453c7ba48c018cf37a68e1840b27cb614ddda6eede53e878bf548e847921d3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: b233b5c0e753a322f8562171b8f1bb899024a61c1a4540895e661d54b1d8e084
 tanggal_pengundangan: '2007-03-15'
 tanggal_berlaku: '2007-03-15'

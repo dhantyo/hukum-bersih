@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_53_1999_1999-10-04.txt
   pasal_count: 30
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 00d881f57ea9f0948a9a19629d3e4c1d515a5d2f8dd4308a8c048f0b1b4e4551
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: 00d881f57ea9f0948a9a19629d3e4c1d515a5d2f8dd4308a8c048f0b1b4e4551
 tanggal_pengundangan: '1999-10-04'
 tanggal_berlaku: '1999-10-04'

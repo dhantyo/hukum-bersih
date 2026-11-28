@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_37_2008_2008-10-07.txt
   pasal_count: 47
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e8631939556dc3983aa1b12508d26064b4069eb5bd2bfc2a9ff1b12ef5fd46e6
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9967
 pdf_sha256: 62b566b155ae6e2c86752173341dbde91c19a64d3943d015ccb917cbe782a2a3
 tanggal_pengundangan: '2008-10-07'
 tanggal_berlaku: '2008-10-07'

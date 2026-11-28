@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_1958_1958-06-17.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8eb6b2c402842dd675643a9de187315d01aaf1ca7bbe3ff94195ed90254727b0
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9979
 pdf_sha256: eb71008a6a965910fdb4a0c751e4c2c4f4c62b010cb21c605009288ec35b57ec
 tanggal_pengundangan: '1958-06-26'
 tanggal_berlaku: '1958-06-26'

@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_29_2008_2008-07-21.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6289fe29510fd33c454612fe148b06ca4cca1ca835835ea6de8fa0389b861466
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9955
 pdf_sha256: 6badcd5343d7ec13baa38fa280ff8e90067d8c0b4d742151ff642a6b8037d9cd
 tanggal_pengundangan: '2008-07-21'
 tanggal_berlaku: '2008-07-21'

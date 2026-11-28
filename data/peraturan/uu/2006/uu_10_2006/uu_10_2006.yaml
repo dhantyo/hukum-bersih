@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2006_2006-07-20.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 35e96f16a134bb146c64f9461584f083225746de7ae7128fd1a5362586235a27
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9864
 pdf_sha256: ac5373e47ba4888b454f7f26a493138ce5d84ed36879887696268c69033eec99
 tanggal_pengundangan: '2006-07-20'
 tanggal_berlaku: '2006-07-20'

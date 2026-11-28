@@ -38,9 +38,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1975_1975-11-24.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0e039056d2ac7eac89d2553b25eb9317aa7c3fda1dadd9c4da6d83b9097d281d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9985
 pdf_sha256: e942950a381342e1d89d70c92062d79608e49694ba9e1306edae8c87f44bac52
 tanggal_pengundangan: '1975-11-24'
 tanggal_berlaku: '1975-11-24'

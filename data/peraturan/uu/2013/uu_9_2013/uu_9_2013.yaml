@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2013_2013-03-13.txt
   pasal_count: 49
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 853bded15ac8c4a9e27ef23214fb104e0ce74187d6309db9182fc5c3228f560f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9976
 pdf_sha256: 436301456319d9948023c7b4835d7c1225c74067b1d98885fa43a4a9d36f38c1
 tanggal_penetapan_bpk: '2013-01-13'
 tanggal_pengundangan: '2013-03-13'

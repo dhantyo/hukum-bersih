@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_2019_2019-08-13.txt
   pasal_count: 100
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1ff510348c699135743d64087a171e77e865b658a620cda3caf2c8286ac20ad8
   ocr: true
   ocr_engine: indra
   ocr_fixed: 74
   ocr_unknown: 70
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9983
+    ocr_unknown_rate: 0.0055
 pdf_sha256: b7538d1dfca08d5bdcaf3f9d953a0ee99aac1c3ceee42f1640f886fe3a55756b
 tanggal_pengundangan: '2019-08-13'
 tanggal_berlaku: '2019-08-13'

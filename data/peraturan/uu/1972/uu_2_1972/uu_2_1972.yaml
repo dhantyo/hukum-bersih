@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1972_1972-06-13.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 98526148e1906b062881bbd226979f70241cf95704ad382d451e50410a844913
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9965
 pdf_sha256: 98526148e1906b062881bbd226979f70241cf95704ad382d451e50410a844913
 tanggal_pengundangan: '1972-06-13'
 tanggal_berlaku: '1971-04-01'

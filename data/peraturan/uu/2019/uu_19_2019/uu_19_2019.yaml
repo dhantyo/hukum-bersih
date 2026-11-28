@@ -86,11 +86,17 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_2019_2019.txt
   pasal_count: 2
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: bba883849f22f655228e3b077ce9b71b8d2c312c41b33fb95cc7e767c4afbc58
   extra_pdf_sha256:
   - f28456ee7d7b5f0164d09031a6ba2df17cc1df88b645f265e555924c41e035a2
+  checks:
+    version: 1
+    failed:
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 1.0
 pdf_sha256: fe33ac08f24da4d423198e6e03855e796be812bbcb1095f3c82d8dbe130e8790
 tanggal_pengundangan: '2019-10-17'
 tanggal_berlaku: '2019-10-17'

@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2004_2004-06-22.txt
   pasal_count: 45
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b56a4b50da888400e6a429424a9d41f905ed1234055519cdfbc8b6d383b8ab08
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: body 7
+    word_coverage: 0.9998
 pdf_sha256: b56a4b50da888400e6a429424a9d41f905ed1234055519cdfbc8b6d383b8ab08
 tanggal_pengundangan: '2004-06-22'
 tanggal_berlaku: '2004-06-22'

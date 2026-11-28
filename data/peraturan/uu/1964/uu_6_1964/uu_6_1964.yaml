@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1964_1964-06-16.txt
   pasal_count: 13
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b8389f70602b796e93e6231d925c5341b2722cc8cabf5817b16c0cedce82f4ba
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9987
 pdf_sha256: b8389f70602b796e93e6231d925c5341b2722cc8cabf5817b16c0cedce82f4ba
 tanggal_pengundangan: '1964-06-16'
 tanggal_berlaku: '1963-06-22'

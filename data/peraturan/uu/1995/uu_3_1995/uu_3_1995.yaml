@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1995_1995-04-27.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f146dbc81c08e3cb4c78ea1ac410d616f312ff26e894012768ac54eaadf91fec
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9976
 pdf_sha256: f146dbc81c08e3cb4c78ea1ac410d616f312ff26e894012768ac54eaadf91fec
 tanggal_pengundangan: '1995-04-27'
 tanggal_berlaku: '1995-04-27'

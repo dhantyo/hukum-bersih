@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2014_2014-09-17.txt
   pasal_count: 76
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a3415b9cfde9e58c131f9a7248507c914270a9b3289c00b64ac067fa6fb09436
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 9193525d01a1a456c9fe5a2ed9de9cd8a585941e5323596c40470a715ac42524
 tanggal_pengundangan: '2014-09-17'
 tanggal_berlaku: '2014-09-17'

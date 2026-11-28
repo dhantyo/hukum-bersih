@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_1963_1963-11-28.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 39ea733cfb012f5312e032a4a4841aab9e0fe91166921033bd0af4ce767e457a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9975
 pdf_sha256: 39ea733cfb012f5312e032a4a4841aab9e0fe91166921033bd0af4ce767e457a
 tanggal_pengundangan: '1963-11-28'
 tanggal_berlaku: '1962-06-18'

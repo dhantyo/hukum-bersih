@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2005_2005-12-30.txt
   pasal_count: 84
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 130e2f15b4dfe97cd5551cbce1580e9654bcf420b11c7adf4edbc0d5b382879e
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9981
 pdf_sha256: 130e2f15b4dfe97cd5551cbce1580e9654bcf420b11c7adf4edbc0d5b382879e
 tanggal_pengundangan: '2005-12-30'
 tanggal_berlaku: '2005-12-30'

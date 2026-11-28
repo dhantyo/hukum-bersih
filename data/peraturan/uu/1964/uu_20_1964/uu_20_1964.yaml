@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_1964_1964-10-31.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 660a50e6c99268a6079b826a44e06bcab9932a32d8e89c7d3b167dc8e96af1c5
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9968
 pdf_sha256: 660a50e6c99268a6079b826a44e06bcab9932a32d8e89c7d3b167dc8e96af1c5
 tanggal_pengundangan: '1964-10-31'
 tanggal_berlaku: '1964-10-31'

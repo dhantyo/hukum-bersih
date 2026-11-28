@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_2004_2004-10-06.txt
   pasal_count: 92
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c15d0555c5fee1dd6dd9020d711e6c09eea68a279ab756cfa71c3051bab91d9f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9997
 pdf_sha256: c15d0555c5fee1dd6dd9020d711e6c09eea68a279ab756cfa71c3051bab91d9f
 tanggal_pengundangan: '2004-10-06'
 tanggal_berlaku: '2004-10-06'

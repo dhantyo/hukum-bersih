@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1959_1959-03-24.txt
   pasal_count: 15
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5f52bf4d0a5e1c5005854dd89dd4cb33d3c79727718e54154a0c1647f829639d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9988
 pdf_sha256: 5f52bf4d0a5e1c5005854dd89dd4cb33d3c79727718e54154a0c1647f829639d
 tanggal_pengundangan: '1959-03-25'
 lembaran_negara: 'LN. 1959 No. 15 , TLN NO. 1752, LL SETNEG : 19 HLM'

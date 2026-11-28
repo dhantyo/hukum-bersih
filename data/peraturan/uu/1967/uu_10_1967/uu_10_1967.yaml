@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_1967_1967-10-11.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0de6cf99b4e84c73694499997787946e2de949bcdfa89ea7437f723d9d462d5c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 tanggal_pengundangan: '1967-10-11'
 tanggal_berlaku: '1966-01-01'
 lembaran_negara: 'LN. 1967, Hukum Online : 2 HLM'

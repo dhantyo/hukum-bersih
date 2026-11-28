@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_44_2007_2007-11-01.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 25db70e622ec60b16ba68826682084254de7fc41e09f0b0537ff3ed7c7496863
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: f52ee3ab5763012dae30421ee60328e74beb3d3cc7fb3bc76c40ca0f77ff3eb3
 tanggal_pengundangan: '2007-11-01'
 tanggal_berlaku: '2007-11-01'

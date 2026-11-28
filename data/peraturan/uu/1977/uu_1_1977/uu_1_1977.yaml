@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1977_1977-03-01.txt
   pasal_count: 8
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ac0d427c66b8fa206b58b1231308cebfbac207cd81d7cb62a8d045d64a752e36
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9983
 pdf_sha256: 1ef33fb2ea0337a75c56125be9b0217ee81fbaf347893ecbd8d7a01700c6bec1
 tanggal_pengundangan: '1977-03-01'
 tanggal_berlaku: '1977-04-01'

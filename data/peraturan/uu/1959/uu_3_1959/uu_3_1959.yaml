@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1959_1959-02-24.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1ed8bb42d437ec0a977b48c83b08180a12fa867196dae39d46a7284d4a259107
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9855
 pdf_sha256: 1ed8bb42d437ec0a977b48c83b08180a12fa867196dae39d46a7284d4a259107
 tanggal_pengundangan: '1959-03-12'
 tanggal_berlaku: '1959-03-12'

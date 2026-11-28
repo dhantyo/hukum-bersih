@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_70_1958_1958-09-04.txt
   pasal_count: 1
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c4d715a029fad42f83c9b7e63a53bca69b9f44ca414e4103a71b4d49ede6bba3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9988
 pdf_sha256: 4e9f95b0e0cc5da1c37cd8f114ad53df836f40d8ae5d088b042a4afc2c2c32c7
 tanggal_pengundangan: '1958-09-06'
 tanggal_berlaku: '1958-09-06'

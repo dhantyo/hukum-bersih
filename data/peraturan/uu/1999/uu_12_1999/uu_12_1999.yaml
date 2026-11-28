@@ -30,9 +30,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_1999_1999-04-20.txt
   pasal_count: 23
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9fc6a176fc4b8937fbe364430291304565cfbff9d67c6f0f84eee03ac81bae3b
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: penjelasan 20
+    word_coverage: 0.9997
 pdf_sha256: 9fc6a176fc4b8937fbe364430291304565cfbff9d67c6f0f84eee03ac81bae3b
 tanggal_pengundangan: '1999-04-20'
 tanggal_berlaku: '1999-04-20'

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_25_2004_2004-10-05.txt
   pasal_count: 37
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d74ae2c7536fa71b5a8fc180e4c1c8fb1ec6a1a87c98a21f2334f7108d574776
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.996
 pdf_sha256: d74ae2c7536fa71b5a8fc180e4c1c8fb1ec6a1a87c98a21f2334f7108d574776
 tanggal_pengundangan: '2004-10-05'
 tanggal_berlaku: '2004-10-05'

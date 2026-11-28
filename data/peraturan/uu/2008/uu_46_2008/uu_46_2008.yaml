@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_46_2008_2008-11-26.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 067fdc4410be2e006ec2fef8c10657b7d5f18bfcb8fa0a96060e6d56111479f9
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9951
 pdf_sha256: e2836db2a09f1621ddb0d2ba0c9b9f9818f0789fb5ac80d5637c400808dedca6
 tanggal_pengundangan: '2008-11-26'
 tanggal_berlaku: '2008-11-26'

@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_28_1958_1958-06-21.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d8ee3b9da6a6aa395039ecfd009bf9732e530e2d5aa0a77deada73de6916f34b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9934
 pdf_sha256: 36d4c6a6cfdf199110916aa28c924d72bef7363fedd4ffe91ba5deb8dbcc63d0
 tanggal_pengundangan: '1958-07-17'
 tanggal_berlaku: '1955-01-01'

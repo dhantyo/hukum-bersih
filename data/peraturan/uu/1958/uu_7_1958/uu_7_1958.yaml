@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1958_1958-02-17.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: df5742f47aa1ca5d0c4782916f894a6e12621fe2e989399d411721cd6a13f90e
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9968
 pdf_sha256: 97643e5f4fbd6d526cc4527cb1eb3bd6c657947bec9d36d09ab657f8a8bce97b
 tanggal_pengundangan: '1958-02-27'
 tanggal_berlaku: '1958-02-27'

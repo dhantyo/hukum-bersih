@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_80_1957_1957-12-19.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 331b82e9c53804dbd3d3349f99826a1afeaec3e6d6f0a03ae9e17516e2d6db9e
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9946
 pdf_sha256: 331b82e9c53804dbd3d3349f99826a1afeaec3e6d6f0a03ae9e17516e2d6db9e
 tanggal_pengundangan: '1957-12-31'
 tanggal_berlaku: '1957-12-31'

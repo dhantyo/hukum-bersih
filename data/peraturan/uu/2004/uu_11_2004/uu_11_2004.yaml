@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_2004_2004-07-06.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b47137b76d53ce7f3bdba007c228ddd03071626091c7b478b5472871fb4241c8
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9819
 pdf_sha256: b47137b76d53ce7f3bdba007c228ddd03071626091c7b478b5472871fb4241c8
 tanggal_pengundangan: '2004-07-06'
 tanggal_berlaku: '2004-07-06'

@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_84_1958_1958-12-27.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 84d0ec7e72b96b8bd6cf1019bd36e5332d4830f3b0fb5048605f3de2de949aa9
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9984
 pdf_sha256: f01d048e99bdbf3a0b37a739e1294d302d5db408e143328555bd906923ae57f3
 tanggal_pengundangan: '1958-12-31'
 tanggal_berlaku: '1958-12-31'

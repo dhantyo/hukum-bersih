@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_48_2007_2007-12-28.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f7baa8e4e8bdb0d7468c9a02dc43c10472213441ee1d7a19a1c52b27c1756bc8
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9819
 pdf_sha256: b9bc24de746f7dba0af2baed65200b4e5830c5a33adbc2452311e3adda5fab36
 tanggal_pengundangan: '2007-12-28'
 tanggal_berlaku: '2007-12-28'

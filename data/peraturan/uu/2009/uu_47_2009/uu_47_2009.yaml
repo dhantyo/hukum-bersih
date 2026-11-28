@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_47_2009_2009-10-29.txt
   pasal_count: 29
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9f0cfd7f427105c2fda8dffa747556f41de755b3cf902879d52a39a6e6da9937
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9987
 pdf_sha256: f0803bbaa033576e800b2ed91f858c2fbaf7aa7263264935a0dff51616897410
 tanggal_pengundangan: '2009-10-29'
 tanggal_berlaku: '2010-01-01'

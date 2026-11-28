@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1997_1997-05-07.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5908a1f77587fe2e6b67ff5ca40a7704a67e7b46fdaf083b9e1fa0ba7ed0ce7c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: 5908a1f77587fe2e6b67ff5ca40a7704a67e7b46fdaf083b9e1fa0ba7ed0ce7c
 tanggal_pengundangan: '1997-05-07'
 tanggal_berlaku: '1997-05-07'

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_1992_1992-04-30.txt
   pasal_count: 66
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e752610bf41df25cbd6a78af1fc16cd0dc5dfb80963874da76719323131c28aa
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: e752610bf41df25cbd6a78af1fc16cd0dc5dfb80963874da76719323131c28aa
 tanggal_pengundangan: '1992-04-30'
 tanggal_berlaku: '1992-04-30'

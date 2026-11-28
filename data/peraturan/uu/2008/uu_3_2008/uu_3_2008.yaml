@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2008_2008-01-04.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9020fbe7ef0b2ff4fae6239de79c831692b7df9816fb1d28b823c6c5eeaac6ae
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9943
 pdf_sha256: 9020fbe7ef0b2ff4fae6239de79c831692b7df9816fb1d28b823c6c5eeaac6ae
 tanggal_pengundangan: '2008-01-04'
 tanggal_berlaku: '2008-01-04'

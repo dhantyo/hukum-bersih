@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1962_1962-01-18.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c8071ca482cc8b0b54ccbba47e659916e48bddefcc185b161d643853a9d206e6
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.988
 pdf_sha256: c8071ca482cc8b0b54ccbba47e659916e48bddefcc185b161d643853a9d206e6
 tanggal_pengundangan: '1962-01-18'
 tanggal_berlaku: '1960-01-01'

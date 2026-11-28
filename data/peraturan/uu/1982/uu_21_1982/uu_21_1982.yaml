@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_1982_1982-09-20.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b97cc9b4081df4171aa36eab908ce8c9bccbaf21a4e7ffd591475dfc5a5ce752
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9991
 pdf_sha256: 0157028fd7712e5136d70a64adc00b2c1813506da993b8d6701f56b10871ba1f
 tanggal_pengundangan: '1982-09-20'
 tanggal_berlaku: '1982-09-20'

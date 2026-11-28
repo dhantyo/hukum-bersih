@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_1999_1999-05-03.txt
   pasal_count: 30
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3552b49cce3442ae29ba5b3c26c3fbd5674e0a1a37065cc58cd7de1611944a52
+  checks:
+    version: 1
+    failed:
+    - name: pasal_gap
+      detail: 20->22 22->22
+    word_coverage: 0.9992
 pdf_sha256: 3552b49cce3442ae29ba5b3c26c3fbd5674e0a1a37065cc58cd7de1611944a52
 tanggal_pengundangan: '1999-05-03'
 tanggal_berlaku: '1999-05-03'

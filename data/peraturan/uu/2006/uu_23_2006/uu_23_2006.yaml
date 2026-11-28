@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_2006_2006-12-29.txt
   pasal_count: 107
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 145ff131b8b07316325c2a97a6a28fe37562ed99bccb23232361760033938866
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9988
 pdf_sha256: 0a8c68d2fc7b4ce67a5ce21d33e037e89d5c1e14ee28e1f74c67fedb8cc2dfe8
 tanggal_pengundangan: '2006-12-29'
 tanggal_berlaku: '2006-12-29'

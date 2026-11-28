@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2004_2004-08-13.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: aaa16576fcbb4e34f9da0bc28d8e024edef5698cfae3a277c193e10205c2c02d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9966
 pdf_sha256: aaa16576fcbb4e34f9da0bc28d8e024edef5698cfae3a277c193e10205c2c02d
 tanggal_pengundangan: '2004-08-13'
 tanggal_berlaku: '2004-08-13'

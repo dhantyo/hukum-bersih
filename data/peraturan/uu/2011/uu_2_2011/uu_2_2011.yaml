@@ -51,9 +51,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2011_2011-01-05.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a140b717965b108b458f7f6bd6c75bc3e812c63ae142dccaa8f54dd60dc2aa04
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9944
 pdf_sha256: a140b717965b108b458f7f6bd6c75bc3e812c63ae142dccaa8f54dd60dc2aa04
 tanggal_penetapan_bpk: '2011-01-15'
 tanggal_pengundangan: '2011-01-15'

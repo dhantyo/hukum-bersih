@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1985_1985-02-19.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c01b6385db3db1466b5d18ee5fef9611af8bbb019435a8207ea18fc634d92d02
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: c01b6385db3db1466b5d18ee5fef9611af8bbb019435a8207ea18fc634d92d02
 tanggal_pengundangan: '1985-02-19'
 tanggal_berlaku: '1985-02-19'

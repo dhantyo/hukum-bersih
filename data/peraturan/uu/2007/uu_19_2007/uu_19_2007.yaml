@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_2007_2007-03-15.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2b330e1748ad0423ef6188dfb9f42a1006641f43507c84f59875a4ff1bb74403
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9971
 pdf_sha256: d9b4cc3dfe653c323616a070476b42cf56e1388948726aa3e93e571d284a6832
 tanggal_pengundangan: '2007-03-15'
 tanggal_berlaku: '2007-03-15'

@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_54_1999_1999-10-04.txt
   pasal_count: 24
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c1085515e2a18dcad9b8a21c2a019d8acfbbecfb18fd3c493094a015fb61873f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9994
 pdf_sha256: c1085515e2a18dcad9b8a21c2a019d8acfbbecfb18fd3c493094a015fb61873f
 tanggal_pengundangan: '1999-10-04'
 tanggal_berlaku: '1999-10-04'

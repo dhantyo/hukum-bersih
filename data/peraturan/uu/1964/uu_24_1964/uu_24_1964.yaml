@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_1964_1964-11-25.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4ac2985b3d874b4e8d33799f468dbf8b4bdda823a30d2ec2739f3a864297fbad
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9984
 pdf_sha256: 4ac2985b3d874b4e8d33799f468dbf8b4bdda823a30d2ec2739f3a864297fbad
 tanggal_pengundangan: '1964-11-25'
 tanggal_berlaku: '1964-11-25'

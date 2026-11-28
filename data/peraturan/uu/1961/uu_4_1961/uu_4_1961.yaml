@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1961_1961-02-25.txt
   pasal_count: 12
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 041538df0f8f5cabda2b3691882d369bace56e877e16dde9b78ed1fcf1c3dee4
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9982
 pdf_sha256: 041538df0f8f5cabda2b3691882d369bace56e877e16dde9b78ed1fcf1c3dee4
 tanggal_pengundangan: '1961-02-25'
 tanggal_berlaku: '1961-02-25'

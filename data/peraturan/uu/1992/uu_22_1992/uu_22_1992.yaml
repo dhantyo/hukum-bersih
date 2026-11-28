@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_1992_1992-09-17.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 692556c20ae16cc76ee0ae97392a9a6634418bfe84d50f9669f43e1fd196d0fb
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9963
 pdf_sha256: 692556c20ae16cc76ee0ae97392a9a6634418bfe84d50f9669f43e1fd196d0fb
 tanggal_pengundangan: '1992-09-17'
 tanggal_berlaku: '1992-09-17'

@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_1997_1997-09-29.txt
   pasal_count: 78
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e230d3575b72a791e5ecc6dbb7823e5f5b3ad59ad45135e18d7fb7bc492115d1
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: body 5
+    word_coverage: 0.9998
 pdf_sha256: e230d3575b72a791e5ecc6dbb7823e5f5b3ad59ad45135e18d7fb7bc492115d1
 tanggal_pengundangan: '1997-09-29'
 tanggal_berlaku: '1997-09-29'

@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_34_2007_2007-08-10.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5a02625d61cefb4642782124253522ca2345afcb92f6cd269e1a42af234ff495
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9955
 pdf_sha256: 13e090756c5d3bc5c6ce02edca010242dd847469ba6720b86f0d785f05ad188b
 lembaran_negara: 'LN.2007/NO.100, TLN NO.4750, LL SETNEG : 18 HLM'
 other_sources:

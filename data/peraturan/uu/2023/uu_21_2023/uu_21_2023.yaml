@@ -49,13 +49,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2023_2023-10-31.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ef0bd0b8fa4ac645d73ec39e658fc46ad6761c0de9727928b660bc3e6748172e
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 48
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9981
+    ocr_unknown_rate: 0.0042
 pdf_sha256: ef0bd0b8fa4ac645d73ec39e658fc46ad6761c0de9727928b660bc3e6748172e
 tanggal_pengundangan: '2023-10-31'
 tanggal_berlaku: '2023-10-31'

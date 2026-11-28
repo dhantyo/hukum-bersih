@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1974_1974-12-26.txt
   pasal_count: 17
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5323c40dc3d0bfaa957e0a95f3045eaf65db8a17eb8878a99d409bfff1b20c38
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9987
 pdf_sha256: 5323c40dc3d0bfaa957e0a95f3045eaf65db8a17eb8878a99d409bfff1b20c38
 tanggal_pengundangan: '1974-12-26'
 tanggal_berlaku: '1974-12-26'

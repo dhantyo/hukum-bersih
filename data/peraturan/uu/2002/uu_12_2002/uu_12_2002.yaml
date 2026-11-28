@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2002_2002-04-10.txt
   pasal_count: 18
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6da8d2ebbb6d763f286f3416b80e48ba33d9af9320349936a529c089c10800ac
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9862
 pdf_sha256: 6da8d2ebbb6d763f286f3416b80e48ba33d9af9320349936a529c089c10800ac
 tanggal_pengundangan: '2002-04-10'
 tanggal_berlaku: '2002-04-10'

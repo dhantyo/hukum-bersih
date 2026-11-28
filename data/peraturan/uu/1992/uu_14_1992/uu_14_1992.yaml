@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1992_1992-05-12.txt
   pasal_count: 74
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b46da144fb24bc62c124b0a1d9d3591873c5202af29c02f7a9411fad1f3c17de
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9997
 pdf_sha256: b46da144fb24bc62c124b0a1d9d3591873c5202af29c02f7a9411fad1f3c17de
 tanggal_pengundangan: '1992-05-12'
 tanggal_berlaku: '1992-09-17'

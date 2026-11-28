@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_35_2000_2000-12-21.txt
   pasal_count: 17
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e3e3b828c67d3bc6463420060529000b4ea6b76c8023e562e86386b7ea17b6fd
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9988
 pdf_sha256: e3e3b828c67d3bc6463420060529000b4ea6b76c8023e562e86386b7ea17b6fd
 tanggal_pengundangan: '2000-12-21'
 tanggal_berlaku: '2001-01-01'

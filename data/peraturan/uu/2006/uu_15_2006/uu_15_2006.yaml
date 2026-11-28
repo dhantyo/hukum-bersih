@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2006_2006-10-30.txt
   pasal_count: 40
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 431e3a2a8199cea1e268b122d5fd3ff4baa8b00b5f07050f8da8d6a68366e62d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9961
 pdf_sha256: 30a2c42056e91e2174e8206779b5b6051fa09bfc2ae3fe5aec7b3efed383014b
 tanggal_pengundangan: '2006-10-30'
 tanggal_berlaku: '2006-10-30'

@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_1965_1965-06-14.txt
   pasal_count: 13
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0a159c8d279b40c547927f0b0addaf6d8c77cf1a1459d3aa3e0bd4668ddeb531
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9984
 pdf_sha256: 0a159c8d279b40c547927f0b0addaf6d8c77cf1a1459d3aa3e0bd4668ddeb531
 tanggal_pengundangan: '1965-06-14'
 tanggal_berlaku: '1965-06-14'

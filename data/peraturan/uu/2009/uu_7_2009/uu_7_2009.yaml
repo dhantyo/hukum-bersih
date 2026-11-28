@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2009_2009-01-13.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: fa776bc7c2f9f0a6953cb8704b3048789ebc50899e0f26890979a2a95403370d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.978
 pdf_sha256: 21402f3ec281f0af6632669d856c2ab6ebcfd542685e71682aede169c7be6090
 tanggal_penetapan_bpk: '2017-01-13'
 tanggal_pengundangan: '2009-01-13'

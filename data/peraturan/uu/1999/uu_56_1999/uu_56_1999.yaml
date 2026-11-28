@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_56_1999_1999-10-04.txt
   pasal_count: 44
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1ef2709589c852d833a96e385cdd9bc140a3b9307c856a74f6872d9bee322b83
+  checks:
+    version: 1
+    failed:
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 0.9993
 pdf_sha256: 1ef2709589c852d833a96e385cdd9bc140a3b9307c856a74f6872d9bee322b83
 lembaran_negara: 'LN. 1999/ No.184, TLN NO. 3905, LL SETNEG : 12 HLM'
 subjek: PERTAHANAN DAN KEAMANAN, MILITER - KETATANEGARAAN, KENEGARAAN

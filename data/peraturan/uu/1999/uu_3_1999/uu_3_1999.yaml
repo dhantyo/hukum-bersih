@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1999_1999-02-01.txt
   pasal_count: 84
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: fa8ee35905e81ac3f618a62b590e65c452856ac0b3b5847932da021e418049e9
+  checks:
+    version: 1
+    failed:
+    - name: pasal_gap
+      detail: 67->70
+    word_coverage: 0.9997
 pdf_sha256: fa8ee35905e81ac3f618a62b590e65c452856ac0b3b5847932da021e418049e9
 tanggal_pengundangan: '1999-02-01'
 tanggal_berlaku: '1999-02-01'

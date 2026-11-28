@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_1997_1997-05-23.txt
   pasal_count: 24
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 22519548f3c31ec0789242c12880a883722c52f37b2291043a490706bf85dda0
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9994
 pdf_sha256: 22519548f3c31ec0789242c12880a883722c52f37b2291043a490706bf85dda0
 tanggal_pengundangan: '1997-05-23'
 tanggal_berlaku: '1997-05-23'

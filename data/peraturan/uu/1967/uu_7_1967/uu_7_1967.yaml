@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1967_1967-08-07.txt
   pasal_count: 29
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6d8020e8502498e5ecfe1d9a60ad8c7e57041c3bedc72ec0cc0e1822b34253fe
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.999
 pdf_sha256: 6d8020e8502498e5ecfe1d9a60ad8c7e57041c3bedc72ec0cc0e1822b34253fe
 tanggal_pengundangan: '1967-08-07'
 tanggal_berlaku: '1967-08-07'

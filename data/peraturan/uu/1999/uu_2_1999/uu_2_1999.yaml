@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1999_1999-02-01.txt
   pasal_count: 22
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 576ff95081282037552fc1d8734147aee3a0a0825863b2a99e7dec0f25cba261
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9991
 pdf_sha256: 576ff95081282037552fc1d8734147aee3a0a0825863b2a99e7dec0f25cba261
 tanggal_pengundangan: '1999-02-01'
 tanggal_berlaku: '1999-02-01'

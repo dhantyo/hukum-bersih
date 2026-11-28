@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_1968_1968-12-18.txt
   pasal_count: 28
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 584fac02f6e387f53b1eb3101674f6316f3a12798200ac2bf2817a84b50623f3
+  checks:
+    version: 1
+    failed:
+    - name: pasal_gap
+      detail: 7->10
+    word_coverage: 0.9995
 pdf_sha256: 584fac02f6e387f53b1eb3101674f6316f3a12798200ac2bf2817a84b50623f3
 tanggal_pengundangan: '1968-12-18'
 lembaran_negara: 'LN. 1968/ No.73, TLN NO. 2873 , LL : 10 HLM'

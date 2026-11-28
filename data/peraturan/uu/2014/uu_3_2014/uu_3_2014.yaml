@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2014_2014-01-15.txt
   pasal_count: 125
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: aebc2d6104ea2e56e7e6f869370e60f8a90125a7e0a28c6b5d2ad587af4fc647
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: e0bc286019d8cea27943fd087bcdbb78272f6a27183189b20f406b1c5b26b771
 tanggal_penetapan_bpk: '2014-09-15'
 tanggal_pengundangan: '2014-01-15'

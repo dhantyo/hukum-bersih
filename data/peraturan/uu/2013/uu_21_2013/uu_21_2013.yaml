@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2013_2013-08-06.txt
   pasal_count: 105
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 96450879a2a2b6a266082b200e2c9117d9f69e0609b143df07ad1f18cf385eb2
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: adef60142b8f36318b6f6527189b9459c9ce09ffe37f94bea7107629889bd125
 tanggal_pengundangan: '2013-08-06'
 tanggal_berlaku: '2013-08-06'
