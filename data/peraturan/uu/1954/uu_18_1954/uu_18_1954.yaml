@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_1954_1954-05-10.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: fbb3882e2c1cf0219e0671e5f213af789a849c3030b4615255438a8d63a226e5
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9938
 pdf_sha256: 22f81985dd53aaba9aba7f073020088d68a1cdcad57edce60c0c8c8e1d659001
 tanggal_pengundangan: '1954-05-18'
 tanggal_berlaku: '1954-05-18'

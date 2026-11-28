@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_1954_1954-07-27.txt
   pasal_count: 17
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 98bb97b4ae925d984fa10abe96eb9d5d95c838ac66889a6019e090c11c672162
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 98bb97b4ae925d984fa10abe96eb9d5d95c838ac66889a6019e090c11c672162
 tanggal_pengundangan: '1954-07-27'
 tanggal_berlaku: '1954-07-27'

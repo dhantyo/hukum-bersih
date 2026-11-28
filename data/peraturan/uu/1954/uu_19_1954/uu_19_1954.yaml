@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_1954_1954-05-10.txt
   pasal_count: 19
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: dfe966c43a9f967837bccabe686be7ee38eac00c54832f87281af37dcccbef64
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9993
 pdf_sha256: ee16c4649aac431b63e4beb1ab20f2eb92a657ca9b421b662521ffaa95235fc2
 tanggal_pengundangan: '1954-05-26'
 tanggal_berlaku: '1954-05-26'

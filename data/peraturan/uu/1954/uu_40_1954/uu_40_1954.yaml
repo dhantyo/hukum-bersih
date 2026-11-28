@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_40_1954_1954-11-29.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 721fc95093e72e57824d2e4d53bac0e85679429ae5c9e668057053b8ffddc701
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9977
 pdf_sha256: 6b1b5e88459f8f040e27ea52d6e975d5f7ef98fe727e95993606403fe2d8e9d9
 tanggal_pengundangan: '1954-12-31'
 tanggal_berlaku: '1952-01-01'

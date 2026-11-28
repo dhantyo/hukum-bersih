@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_36_1954_1954-12-10.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 624bde8c50aff886e9dc492cd435d137f70a807230fe67668f2f8fcfd419ccb8
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9984
 pdf_sha256: e890752761f71bdfb398be4c5055dd25d1c300656003d42d9abe0eba3d8f7d4f
 tanggal_pengundangan: '1954-12-15'
 tanggal_berlaku: '1954-12-15'

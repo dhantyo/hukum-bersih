@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_32_1954_1954-10-26.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 29efd9740fec9bf7c744b194abd78dd6d0f3d3ba6957895c39d5a96e11d2bda3
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9984
 pdf_sha256: 5d2047ef235574765fef97c7ed16c34103fd122f0c6a6640274855f73d050d97
 tanggal_pengundangan: '1954-11-02'
 tanggal_berlaku: '1954-11-02'

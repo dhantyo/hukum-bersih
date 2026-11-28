@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1954_1954-02-27.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 73bb5c7ec04afe87c223d78191d7ead688eb1916574acad3afc4e91495147568
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9942
 pdf_sha256: 1f91ee9d8da724303787a4f8df60fa38f4a2071ee6406ef471787b7c28a56d12
 tanggal_pengundangan: '1954-03-20'
 tanggal_berlaku: '1954-03-20'

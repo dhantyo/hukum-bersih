@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1954_1953-12-19.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7c7b91e18e703148598c526c86ab69c95c1771d359bb3d9d188beb2462b5830c
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9956
 pdf_sha256: 6b819712b2b8eb8656e9a02c920e987b94a80af4e68b28662e8ec6ee1b108399
 tanggal_pengundangan: '1954-01-07'
 tanggal_berlaku: '1953-01-01'

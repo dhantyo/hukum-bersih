@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_37_1954_1954-12-15.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 192b53657bff9c60a20023ca7419e119d78a94c5ee5548166dc37ec187ec4a91
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9944
 pdf_sha256: 78ce80047e5ac3f52c128cceeb0d3388b74ab639a021fa724f709af0f8ecac95
 tanggal_pengundangan: '1954-12-21'
 tanggal_berlaku: '1954-12-21'

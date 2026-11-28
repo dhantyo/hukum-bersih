@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_1954_1954-05-10.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c61559b0ce11d63c69de759b927e5db00d5b54e6e6c30520e2c7536224fe3b34
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9926
 pdf_sha256: 21213b5547fd6b9a25038392c463bc2da6884d6dfcc90a84694e713e7859f537
 tanggal_pengundangan: '1954-05-18'
 tanggal_berlaku: '1954-05-18'

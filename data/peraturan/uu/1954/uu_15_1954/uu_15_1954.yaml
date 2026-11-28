@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_1954_1954-05-10.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: cf72ce8460bb4efeaf72e83266b9ec8cb05c1b9232ccf66762341b938e3b3a09
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.994
 pdf_sha256: 03abd07d8b1c7f976c0140bcc939c439277216152f11cf24187611314f9ffda5
 tanggal_pengundangan: '1954-05-18'
 tanggal_berlaku: '1954-05-18'

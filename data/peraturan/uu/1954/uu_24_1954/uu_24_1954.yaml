@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_1954_1954-07-13.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2e8e4e5e5e948bfe10d141a884862ef96397c7781c6b3250a01762c02364445b
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9966
 pdf_sha256: 2ed33515a313482bfe5088053634a4685c5e92831d2a75b5dfceb1af7d910b49
 tanggal_pengundangan: '1954-08-02'
 tanggal_berlaku: '1954-08-02'

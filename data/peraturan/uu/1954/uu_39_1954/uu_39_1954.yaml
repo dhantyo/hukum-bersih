@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_39_1954_1954-11-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: daab8a54c1f42be188661e458bbb3c3f7b9999652ba39adc04a44d0be1d2e4fd
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9904
 pdf_sha256: ca0c8d87fb505b0a3d0d22ca24339c7186081e98a314e2bd4d5686220d2f5e6b
 tanggal_pengundangan: '1954-12-31'
 tanggal_berlaku: '1952-01-01'

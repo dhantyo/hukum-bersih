@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_1954_1954-09-14.txt
   pasal_count: 15
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: dc775ec59bfc767aa59dfba44ae679ab3964acfc2bdcd1b21592823b12303477
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9987
 pdf_sha256: 993ea74eab17fd9ef3284833e96f0d137d09964b6191de9b4418765250e9dd19
 tanggal_pengundangan: '1954-09-15'
 tanggal_berlaku: '1954-09-15'

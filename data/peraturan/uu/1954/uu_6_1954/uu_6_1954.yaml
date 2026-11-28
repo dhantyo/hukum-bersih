@@ -29,9 +29,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1954_1954-02-09.txt
   pasal_count: 29
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7db76c111c3b0eaeed5967100cb84af3214eebdf97e6f6c1c5a1e7115f236436
+  checks:
+    version: 2
+    failed:
+    - name: pasal_gap
+      detail: 16->18
+    word_coverage: 1.0
 pdf_sha256: 7db76c111c3b0eaeed5967100cb84af3214eebdf97e6f6c1c5a1e7115f236436
 tanggal_pengundangan: '1954-02-16'
 tanggal_berlaku: '1954-02-16'

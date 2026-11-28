@@ -36,9 +36,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_1954_1954-04-15.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2c3dc8456ed1268ff86534e3e31b6cb9cb50948843653dec360c4cf414676cf8
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 2c3dc8456ed1268ff86534e3e31b6cb9cb50948843653dec360c4cf414676cf8
 tanggal_pengundangan: '1954-06-12'
 tanggal_berlaku: '1953-05-29'

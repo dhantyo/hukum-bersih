@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_46_1954_1954-12-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 15bd17a2eb4757c9dd7b2d0d79d365d7afda6b395009e6e44725bb1f8df959fc
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9956
 pdf_sha256: f70378391aa3a7176ad38f38caaf2753b5b8256b3a30702c25cf2693a133601d
 tanggal_pengundangan: '1954-12-31'
 tanggal_berlaku: '1952-01-01'

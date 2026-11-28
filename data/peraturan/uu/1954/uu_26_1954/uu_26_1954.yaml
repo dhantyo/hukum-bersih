@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_26_1954_1954-07-30.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 309516acbd992fb29938b3fa1a3de57896bb9c6fb8db5e96b89fc81acfaa5561
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 309516acbd992fb29938b3fa1a3de57896bb9c6fb8db5e96b89fc81acfaa5561
 tanggal_pengundangan: '1954-08-13'
 tanggal_berlaku: '1954-08-13'
