@@ -1,6 +1,18 @@
 import pytest
 
-from hukum_rapih.naming import validate_id
+from hukum_rapih.naming import validate_id, work_uri
+
+
+@pytest.mark.parametrize(
+    ("work", "uri"),
+    [
+        ("uu_11_2008", "/akn/id/act/uu/2008/11"),
+        ("uud-perubahan_1_1999", "/akn/id/act/uud-perubahan/1999/1"),
+        ("uud_1945", "/akn/id/act/1945/uud"),  # no number (decision 0027)
+    ],
+)
+def test_work_uri(work, uri):
+    assert work_uri(work) == uri
 
 
 @pytest.mark.parametrize(

@@ -27,6 +27,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from urllib.parse import unquote
 
+from ..naming import work_uri
 from ..records import load_record, save_record
 from .bpk_session import BASE
 
@@ -507,11 +508,11 @@ ORDINAL_WORD = {1: "Pertama", 2: "Kedua", 3: "Ketiga", 4: "Keempat"}
 def uud_record(work: str, detail_url: str) -> dict:
     """A new record for the UUD 1945 (no number) or one of its amendments."""
     jenis, *_, tahun = work.split("_")
+    akn = work_uri(work)
     if work == "uud_1945":
-        nomor, akn, title = None, f"/akn/id/act/{tahun}/{jenis}", UUD_TITLE
+        nomor, title = None, UUD_TITLE
     else:
         nomor = work.split("_")[1]
-        akn = f"/akn/id/act/{jenis}/{tahun}/{nomor}"
         title = f"Perubahan {ORDINAL_WORD[int(nomor)]} {UUD_TITLE}"
     return {
         "id": work, "akn": akn, "type": jenis, "number": nomor, "year": int(tahun), "title": title,

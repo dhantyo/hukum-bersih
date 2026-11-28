@@ -14,6 +14,18 @@ REGULATION_RE = re.compile(
 )
 # The constitution has no number: uud_1945[_<date>[_<n>]] (decision 0027)
 CONSTITUTION_RE = re.compile(rf"^(?P<work>uud_1945)(?:_(?P<date>{DATE})(?:_(?P<n>\d+))?)?$")
+
+
+def work_uri(work: str) -> str:
+    """The FRBR Work URI of a regulation id: "uu_11_2008" -> /akn/id/act/uu/2008/11; the
+    constitution, which has no number, "uud_1945" -> /akn/id/act/1945/uud (decision 0027)."""
+    if CONSTITUTION_RE.fullmatch(work):
+        jenis, tahun = work.split("_")
+        return f"/akn/id/act/{tahun}/{jenis}"
+    jenis, nomor, tahun = work.split("_")
+    return f"/akn/id/act/{jenis}/{tahun}/{nomor}"
+
+
 # ruu_<slug>_<date>_<type>[_<who>][_<n>]
 RUU_DOC_RE = re.compile(
     rf"^ruu_(?P<slug>{PART})_(?P<date>{DATE})_(?P<type>{PART})"

@@ -15,6 +15,7 @@ from lxml import etree
 from ..corpus.jstext import slugify
 from ..corpus.regulations import cite_id
 from ..history import took_effect
+from ..naming import work_uri
 
 AGENT = "hukum-rapih"
 AGENT_HREF = "https://github.com/dhantyo/hukum-rapih"
@@ -149,7 +150,7 @@ def _references(meta: _Meta, rec: dict) -> None:
     amending = [law for p in _points(rec) for law in p.get("after", [])]
     for law in dict.fromkeys([law for _, law in related] + amending):
         kind = next((RELATIONS[key][0] for key, other in related if other == law), "passiveRef")
-        meta.ref(kind, law, _work_uri(law), cite_id(law))
+        meta.ref(kind, law, work_uri(law), cite_id(law))
 
 
 def _modifications(meta: _Meta, rec: dict) -> None:
@@ -271,9 +272,3 @@ def _eid(field: str) -> str:
 
 def _full(date: str | None) -> bool:
     return bool(date) and len(date) == 10
-
-
-def _work_uri(law: str) -> str:
-    """The FRBR Work URI of a law id ("uu_11_2008"), built as the importers build ``akn``."""
-    jenis, nomor, tahun = law.split("_")
-    return f"/akn/id/act/{jenis}/{tahun}/{nomor}"
