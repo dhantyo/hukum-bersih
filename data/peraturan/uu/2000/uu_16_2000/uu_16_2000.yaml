@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2000_2000-08-02.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4be0837395cfa8a54985e43e13de91169c553241864b9950040dca216ea0e480
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9998
 pdf_sha256: 4be0837395cfa8a54985e43e13de91169c553241864b9950040dca216ea0e480
 tanggal_pengundangan: '2000-08-02'
 tanggal_berlaku: '2001-01-01'

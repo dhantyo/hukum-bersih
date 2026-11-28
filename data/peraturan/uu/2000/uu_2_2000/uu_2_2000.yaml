@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2000_2000-03-21.txt
   pasal_count: 14
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6c2921ea5a15ee33a004d2a3178c58adb3021380ba1bba698487e9955af122e3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9985
 pdf_sha256: 6c2921ea5a15ee33a004d2a3178c58adb3021380ba1bba698487e9955af122e3
 tanggal_pengundangan: '2000-03-21'
 lembaran_negara: 'LN. 2000/ No. 38, LL SETNEG : 7 HLM'

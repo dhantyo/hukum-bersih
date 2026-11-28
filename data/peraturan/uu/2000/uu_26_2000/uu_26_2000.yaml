@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_26_2000_2000-11-23.txt
   pasal_count: 51
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 440fb0f7c43ace58f23314c7221842766daaf5c321aa6cc79f77b5f4813518cb
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: 440fb0f7c43ace58f23314c7221842766daaf5c321aa6cc79f77b5f4813518cb
 tanggal_pengundangan: '2000-11-23'
 tanggal_berlaku: '2000-11-23'

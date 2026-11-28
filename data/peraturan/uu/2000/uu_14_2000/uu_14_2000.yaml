@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2000_2000-06-07.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 317052f0591bf645082aa7af00ca80640213f4aeeef735fdbf9abf7c67f3abbf
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9974
 pdf_sha256: 317052f0591bf645082aa7af00ca80640213f4aeeef735fdbf9abf7c67f3abbf
 tanggal_pengundangan: '2000-06-07'
 tanggal_berlaku: '2000-06-07'

@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_25_2000_2000-11-20.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ea5d7d6018edaee727a8ebb565780577d38e1878e4ce7192a1ec5ae8d07bb360
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9922
 pdf_sha256: ea5d7d6018edaee727a8ebb565780577d38e1878e4ce7192a1ec5ae8d07bb360
 tanggal_pengundangan: '2000-11-20'
 tanggal_berlaku: '2000-11-20'

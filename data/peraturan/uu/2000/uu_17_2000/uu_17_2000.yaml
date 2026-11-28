@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_2000_2000-08-02.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: bc98d90265b2dbea816c16f9d9dcb4a71bbffe34b7c261e417ab2d6f289a236b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9992
 pdf_sha256: bc98d90265b2dbea816c16f9d9dcb4a71bbffe34b7c261e417ab2d6f289a236b
 tanggal_pengundangan: '2000-08-02'
 tanggal_berlaku: '2001-01-01'

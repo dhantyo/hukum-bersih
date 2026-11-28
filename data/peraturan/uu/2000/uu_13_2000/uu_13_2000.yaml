@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2000_2000-06-07.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3fdd3c9435c01e611101c6ff91c79bc0baf059d5ea270a864f1dd0d1205c74ba
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9976
 pdf_sha256: 3fdd3c9435c01e611101c6ff91c79bc0baf059d5ea270a864f1dd0d1205c74ba
 tanggal_pengundangan: '2000-06-07'
 tanggal_berlaku: '2000-06-07'

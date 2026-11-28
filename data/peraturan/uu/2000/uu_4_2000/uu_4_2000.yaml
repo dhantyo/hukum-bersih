@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2000_2000-06-07.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 211e48fa8d0cc6159ee2e489079a480f1ec15c3a581a3f3502909fdcacef9d39
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9964
 pdf_sha256: 211e48fa8d0cc6159ee2e489079a480f1ec15c3a581a3f3502909fdcacef9d39
 tanggal_pengundangan: '2000-06-07'
 tanggal_berlaku: '2000-06-07'

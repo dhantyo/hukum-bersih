@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2000_2000-06-07.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 95e0bbc0533b2670fceb523584905cfe7f156a45edea7a0f15b566e4489c97ea
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9964
 pdf_sha256: 95e0bbc0533b2670fceb523584905cfe7f156a45edea7a0f15b566e4489c97ea
 tanggal_pengundangan: '2000-06-07'
 tanggal_berlaku: '2000-06-07'
