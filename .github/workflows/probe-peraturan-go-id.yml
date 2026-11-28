@@ -1,0 +1,36 @@
+name: Probe peraturan.go.id
+
+# Read-only: checks which free Indonesian proxies reach peraturan.go.id (it answers Indonesian
+# IPs only, docs/sources.md), how complete its listing is against our records, and whether its
+# PDFs carry a text layer (pipeline/scripts/probe_peraturan_go_id.py). Nothing is committed.
+on:
+  workflow_dispatch:
+    inputs:
+      sample:
+        description: "PDFs to download and inspect"
+        default: "20"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    defaults:
+      run:
+        working-directory: pipeline
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
+      - run: uv sync
+      - name: Probe
+        env:
+          SAMPLE: ${{ inputs.sample }}
+        run: |
+          uv run --with socksio python scripts/probe_peraturan_go_id.py --sample "$SAMPLE" --out "$RUNNER_TEMP/probe" || true
+          cat "$RUNNER_TEMP/probe/report.md" >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: probe-peraturan-go-id
+          path: ${{ runner.temp }}/probe
