@@ -35,6 +35,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_2009_2009-03-16.txt
   pasal_count: 2
+  parser_version: 19
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 743fdfffe4348df7fbc64be3f11e49398054aec81446b11bf09d3d5d9de37abe
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9715
 pdf_sha256: 06d036363c32423e75962ad442689270d66916de7e7bd12492d32a49e75a0fba
 tanggal_pengundangan: '2009-03-16'
 tanggal_berlaku: '2009-03-16'
@@ -54,6 +61,3 @@ bpk:
     archive_url: null
   status_peraturan: null
 uji_materi: null
-reparse_error: 'v18: LeakedMarkupError: att_2__part_nn_1__p_12: markup in text: ''ARTICLE
-  9 PARAGRAPH (1) SUBPARAGRAPH A, ARTICLE 9'''
-recheck: 'closing: no date of signing'
