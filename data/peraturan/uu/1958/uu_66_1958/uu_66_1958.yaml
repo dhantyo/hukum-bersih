@@ -29,9 +29,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_66_1958_1958-08-01.txt
   pasal_count: 73
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2a4ef23221a4eee7bf34fe83c9ebfc081e3939c3db601aac549201f309128422
+  checks:
+    version: 1
+    failed:
+    - name: pasal_gap
+      detail: 6->8
+    word_coverage: 0.9997
 pdf_sha256: a186e75a0d689a29e985383f53f8a4e28d8a41a685a1e7351c00212593075624
 tanggal_pengundangan: '1958-08-20'
 tanggal_berlaku: '1958-08-20'

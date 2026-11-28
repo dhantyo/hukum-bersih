@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_85_1958_1958-12-27.txt
   pasal_count: 6
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8ebc4b6dab9d08d7a00050a2fef4917d9c8179eab81c4fa22f1500720344b49c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9951
 pdf_sha256: fca4f4989300f5907e4132ac9daa39b5039f68027809963ebd0743aa7562e7a9
 tanggal_pengundangan: '1958-12-31'
 tanggal_berlaku: '1956-01-01'

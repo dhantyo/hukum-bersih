@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_73_1958_1958-09-20.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8f0ec2f35317adb3c95d77691fb7f00dcf1b0058837389e7f68f15b89b61abb5
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 150bc3e963f0b3bc87bb932cce190b7d87d56a524db27d501af6564e3c38cc84
 tanggal_pengundangan: '1958-09-29'
 tanggal_berlaku: '1958-09-29'

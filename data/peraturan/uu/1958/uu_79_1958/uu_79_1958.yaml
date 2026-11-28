@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_79_1958_1958-10-19.txt
   pasal_count: 50
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 17e3593da80022e6081acfa9297355bd4203c690cc4b89970e4e01cc87e1e1f7
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: 75eb08a56a8fb5c50781283e1a0f39beb4f547ced3a373da7685f99a5bf6ec93
 tanggal_pengundangan: '1958-10-27'
 tanggal_berlaku: '1958-10-27'

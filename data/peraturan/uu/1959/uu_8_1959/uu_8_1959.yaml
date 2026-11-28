@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1959_1959-04-08.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8d7b80b92eabff24d96d037722b54dff91c7ffe296f9a0fe13b88bc1bea27b5b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9937
 pdf_sha256: 8d7b80b92eabff24d96d037722b54dff91c7ffe296f9a0fe13b88bc1bea27b5b
 tanggal_pengundangan: '1959-04-18'
 tanggal_berlaku: '1959-04-18'

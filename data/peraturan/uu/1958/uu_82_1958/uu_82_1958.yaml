@@ -35,9 +35,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_82_1958_1958-12-17.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 219a72fb2e8dd5f569490731ef45e37e9b1bba1d13e2aaf03833432a3db54e0c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9957
 tanggal_pengundangan: '1958-12-17'
 tanggal_berlaku: '1958-12-17'
 lembaran_negara: 'LL SETNEG : 3 HLM'

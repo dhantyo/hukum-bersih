@@ -35,9 +35,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_58_1958_1958-07-17.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9008e461629781bda3ee25c187ec3dd27054ebaf93e2dfff9157fb55db505dbc
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9976
 tanggal_pengundangan: '1958-07-29'
 tanggal_berlaku: '1958-07-29'
 lembaran_negara: 'LN. 1958 No. 108, TLN No. 1643, LL SETNEG : 8 HLM'

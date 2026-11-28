@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_64_1958_1958-08-11.txt
   pasal_count: 11
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f4f64aba168beaad18b307d2663b36c1077e5206ff91edcf321abfa3feb4e8ea
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9985
 pdf_sha256: c8b96b3bd38aee95f370b287b00479e7201c3f02d64810940a8ad715c1970580
 tanggal_pengundangan: '1958-08-14'
 tanggal_berlaku: '1958-08-14'

@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_71_1958_1958-09-09.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 59e38a72333ac876055a22ed9945fd62b022e6dcfa7a6518d618fe32bdc2efcd
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9958
 pdf_sha256: 10eb2ab6a3eff7416f3f16dfc1709842c1957eae1dcc111f67a9a6e3e327d12c
 tanggal_pengundangan: '1958-09-15'
 tanggal_berlaku: '1958-09-15'

@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_86_1958_1958-12-27.txt
   pasal_count: 7
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e9b0a7ee5cf9b72535f4b65d0cf1c020d2359feccd3d65be6a935c6f9a3fb07a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9973
 pdf_sha256: c719e03af79aac0a327b626578030dd0d8f5d82f6a0fa40a80c0b3b77a194ba9
 tanggal_pengundangan: '1958-12-31'
 tanggal_berlaku: '1957-12-03'

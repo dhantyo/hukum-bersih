@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_51_1958_1958-06-21.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: eefc8774c5ed0394a5785fe6bdaba0165b737035485d64069bb7d7bdd9458d49
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9834
 pdf_sha256: 798950178a81527d1c4344462f2213dc48243f83f1e84874048d1a788781f791
 tanggal_pengundangan: '1958-07-17'
 tanggal_berlaku: '1955-01-01'

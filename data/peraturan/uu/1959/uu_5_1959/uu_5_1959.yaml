@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1959_1959-03-09.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 77e6996a51e57616611b936c68affc6329b716b3b4eead2f5113a8666fe9a563
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9942
 pdf_sha256: af72582e7b459f7d4a14da19112d62d34d1a3b6f1e9b110c3e1fcedc43253653
 tanggal_pengundangan: '1959-03-14'
 tanggal_berlaku: '1959-03-14'

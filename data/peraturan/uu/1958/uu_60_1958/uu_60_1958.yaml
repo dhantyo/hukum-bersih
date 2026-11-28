@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_60_1958_1958-07-17.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2a20576cb8c523f69d1288f4bf12849698cca526522776c1bf67135f15928068
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9981
 pdf_sha256: 6bc03c7890f546c83533d0759210916c4502d21ff9b06aa8eedd442d35d9a6d5
 tanggal_pengundangan: '1958-07-31'
 tanggal_berlaku: '1958-07-31'
