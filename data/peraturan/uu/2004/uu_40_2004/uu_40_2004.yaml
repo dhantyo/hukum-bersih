@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_40_2004_2004-10-19.txt
   pasal_count: 53
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7241c227c8d5e6cea443211b2673c37d73d9e1c8c1d2bd51ee00b5e55f774192
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9972
 pdf_sha256: 7241c227c8d5e6cea443211b2673c37d73d9e1c8c1d2bd51ee00b5e55f774192
 tanggal_pengundangan: '2004-10-19'
 tanggal_berlaku: '2004-10-19'

@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2004_2004-08-16.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8eb179b495e933f15b21531f93c246cd683ed0d3f21a5939b8f9387e868f2f50
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9987
 pdf_sha256: 8eb179b495e933f15b21531f93c246cd683ed0d3f21a5939b8f9387e868f2f50
 tanggal_pengundangan: '2004-08-16'
 tanggal_berlaku: '2004-08-16'

@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_41_2004_2004-10-27.txt
   pasal_count: 71
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 94f6f7e6761238264a99a23e8c7d3d44cc554c7055c51125ae9dae600460edbc
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: body 12
+    word_coverage: 0.9855
 pdf_sha256: 94f6f7e6761238264a99a23e8c7d3d44cc554c7055c51125ae9dae600460edbc
 tanggal_pengundangan: '2004-10-27'
 tanggal_berlaku: '2004-10-27'

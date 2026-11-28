@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_2005_2005-10-19.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4aab02a71d0b353cf8db9d04dd703761cd5658b94a88e379b2c71b016d379d27
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9821
 pdf_sha256: 4aab02a71d0b353cf8db9d04dd703761cd5658b94a88e379b2c71b016d379d27
 tanggal_pengundangan: '2005-10-19'
 tanggal_berlaku: '2006-04-03'

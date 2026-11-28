@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_38_2004_2004-10-18.txt
   pasal_count: 68
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 638b2a1488cc0ce9f98a63dd3695c40b3b45e2f13f33ba9df3a4205b21dfc524
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.998
 pdf_sha256: 638b2a1488cc0ce9f98a63dd3695c40b3b45e2f13f33ba9df3a4205b21dfc524
 tanggal_pengundangan: '2004-10-18'
 tanggal_berlaku: '2004-10-18'

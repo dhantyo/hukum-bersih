@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_37_2004_2004-10-18.txt
   pasal_count: 308
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c49dc0ab828758a11bf88f71d43580a7e600e16d47afd254c5c7d2149d74338b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9994
 pdf_sha256: c49dc0ab828758a11bf88f71d43580a7e600e16d47afd254c5c7d2149d74338b
 tanggal_pengundangan: '2004-10-18'
 tanggal_berlaku: '2004-10-18'

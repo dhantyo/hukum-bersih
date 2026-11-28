@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2004_2004-01-15.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1e3baa95e35bb78e4d7c9b50755c1d0562ef25a505f4ef9ada15b92f1d800235
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: 1e3baa95e35bb78e4d7c9b50755c1d0562ef25a505f4ef9ada15b92f1d800235
 tanggal_pengundangan: '2004-01-15'
 tanggal_berlaku: '2004-01-15'

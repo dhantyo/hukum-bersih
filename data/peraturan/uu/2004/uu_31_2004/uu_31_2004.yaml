@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_31_2004_2004-10-06.txt
   pasal_count: 111
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c4054bce57b2f200cceb6c4abc029d91f2dc4acd3148f2846cc3570a9fd0e6d7
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9986
 pdf_sha256: c4054bce57b2f200cceb6c4abc029d91f2dc4acd3148f2846cc3570a9fd0e6d7
 tanggal_pengundangan: '2004-10-06'
 tanggal_berlaku: '2004-10-06'

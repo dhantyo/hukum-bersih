@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2004_2004-03-18.txt
   pasal_count: 100
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2ffd37d19f8622ce1479b13b1ddc1afaa92499d7bdfb91580eac331d0a1e4245
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9998
 pdf_sha256: 2ffd37d19f8622ce1479b13b1ddc1afaa92499d7bdfb91580eac331d0a1e4245
 tanggal_pengundangan: '2004-03-18'
 tanggal_berlaku: '2004-03-18'

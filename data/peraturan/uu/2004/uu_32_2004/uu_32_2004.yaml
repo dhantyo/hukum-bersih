@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_32_2004_2004-10-15.txt
   pasal_count: 240
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6c64930dc777e63d0cc634f50efbff06e386538250bdf057ed27ea7d5995d0c0
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 75eb0a6bbb44b3c68aa08192bfaec317cb9c30b58a2a363878f0d601d48d506f
 tanggal_pengundangan: '2004-10-15'
 tanggal_berlaku: '2004-10-15'

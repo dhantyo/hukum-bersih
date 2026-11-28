@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_34_2004_2004-10-16.txt
   pasal_count: 78
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 484ac9f55eeddec9a3e736d2e2dd89c4229c2be0f7e81e095e1c05e75950e8ee
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9997
 pdf_sha256: 484ac9f55eeddec9a3e736d2e2dd89c4229c2be0f7e81e095e1c05e75950e8ee
 tanggal_pengundangan: '2004-10-16'
 tanggal_berlaku: '2004-10-16'
