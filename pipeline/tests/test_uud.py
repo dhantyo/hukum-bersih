@@ -24,7 +24,7 @@ def test_new_uud_records_fit_the_schema(tmp_path):
 
 def test_the_printed_date_dates_a_record_that_has_none(tmp_path):
     (tmp_path / "uud-perubahan_1_1999_1999.txt").write_text(
-        "CONCLUSIONS\n  Ditetapkan di Jakarta\n  pada tanggal 19 Oktober 1999\n")
+        "CONCLUSIONS\n  Ditetapkan di Jakarta\n  Pada tanggal 19 Oktober 1999\n")
     rec = make_record("uud-perubahan_1_1999", versions=[make_version("uud-perubahan_1_1999", "1999")])
     assert bpk.date_printed(rec, tmp_path) == ["uud-perubahan_1_1999: dated 1999-10-19 as printed"]
     assert rec["tanggal_penetapan"] == "1999-10-19"

@@ -237,7 +237,8 @@ def record_path(data_dir: Path, work: str) -> Path:
     return data_dir / "peraturan" / parts[0] / parts[-1] / work / f"{work}.yaml"
 
 
-SIGNED_ON = re.compile(r"Ditetapkan\s+di\s+\w+\s*,?\s+pada\s+tanggal\s+(\d{1,2}\s+\w+\s+\d{4})")
+SIGNED_ON = re.compile(r"Ditetapkan\s+di\s+\w+\s*,?\s+pada\s+tanggal\s+(\d{1,2}\s+\w+\s+\d{4})",
+                       re.IGNORECASE)   # the MPR's amendments print "Pada tanggal"
 # months as printed before 1972 ("5 Djuli 1959"), read as today's names to find the date
 OLD_MONTHS = {"djanuari": "januari", "pebruari": "februari", "djuni": "juni", "djuli": "juli",
               "nopember": "november"}
