@@ -34,13 +34,18 @@ versions:
   date_basis: tanggal_penetapan
   text: perppu_1_2020_2020-03-31.txt
   pasal_count: 29
-  parser_version: 17
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 50b00b0ede04b0c69cee473c7fdeacc188ae16b68af3b8e078de7f634444fc6b
   ocr: true
   ocr_engine: indra
   ocr_fixed: 1
   ocr_unknown: 66
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9978
+    ocr_unknown_rate: 0.0082
 tanggal_pengundangan: '2020-03-31'
 tanggal_berlaku: '2020-03-31'
 lembaran_negara: 'LN.2020/NO.87, TLN NO.6485, JDIH.SETNEG.GO.ID : 31 HLM.'

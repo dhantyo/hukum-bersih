@@ -30,13 +30,18 @@ versions:
   date_basis: tanggal_penetapan
   text: perppu_1_2017_2017-05-08.txt
   pasal_count: 10
-  parser_version: 17
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 448507fb5426a35a312a880bea6937d195f45fd48648c9a96b3550a91b537dee
   ocr: true
   ocr_engine: indra
   ocr_fixed: 1
   ocr_unknown: 14
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9933
+    ocr_unknown_rate: 0.0037
 tanggal_pengundangan: '2017-05-08'
 tanggal_berlaku: '2017-05-08'
 lembaran_negara: 'LN. 2017 No. 95, TLN. No. 6051, LL SETNEG : 11 HLM'

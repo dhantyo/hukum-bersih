@@ -42,13 +42,18 @@ versions:
   date_basis: tanggal_penetapan
   text: perppu_1_2022_2022-12-12.txt
   pasal_count: 2
-  parser_version: 17
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 719b64500e79a035a89a436f625323bf80ac0270d425ce5fad1c78e50d6a126e
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 97
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9822
+    ocr_unknown_rate: 0.0177
 tanggal_pengundangan: '2022-12-12'
 tanggal_berlaku: '2022-12-12'
 lembaran_negara: 'LN.2022/No.224, TLN No.6832, jdih.setneg.go.id: 14 hlm.'

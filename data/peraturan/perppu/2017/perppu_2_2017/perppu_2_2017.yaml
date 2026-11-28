@@ -62,13 +62,18 @@ versions:
   date_basis: tanggal_penetapan
   text: perppu_2_2017_2017-07-10.txt
   pasal_count: 2
-  parser_version: 17
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9e94724cb08b9c8572886f4f504cdabda58fe684c5f6f77de9ef3261f5389a8c
   ocr: true
   ocr_engine: indra
   ocr_fixed: 12
   ocr_unknown: 16
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9921
+    ocr_unknown_rate: 0.0044
 tanggal_pengundangan: '2017-07-10'
 tanggal_berlaku: '2017-07-10'
 lembaran_negara: 'LN. 2017 No. 138, TLN. No. 6084, LL SETNEG : 9 HLM'

@@ -40,13 +40,18 @@ versions:
   date_basis: tanggal_penetapan
   text: perppu_2_2020_2020-05-04.txt
   pasal_count: 2
-  parser_version: 17
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 78532a7178fc8528b773760828af6a6ca9c328a8ad9a22b91b551d14f5d16ce0
   ocr: true
   ocr_engine: indra
   ocr_fixed: 1
   ocr_unknown: 2
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9877
+    ocr_unknown_rate: 0.0014
 tanggal_pengundangan: '2020-05-04'
 tanggal_berlaku: '2020-05-04'
 lembaran_negara: 'LN.2020/NO.128, TLN NO.6512, JDIH.SETKAB.GO.ID : 6 HLM.'
