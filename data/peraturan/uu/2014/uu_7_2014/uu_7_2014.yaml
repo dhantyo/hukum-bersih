@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2014_2014-03-11.txt
   pasal_count: 122
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1696cdb474d7a433c72f9ddc309a3d65cfa2d7588a80e024e502dcacf61d0200
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 5016d8119adbdda9f3dcf0d32517b0d71560b8c252fd87cb7ca6c031e3e06606
 tanggal_pengundangan: '2014-03-11'
 tanggal_berlaku: '2014-03-11'

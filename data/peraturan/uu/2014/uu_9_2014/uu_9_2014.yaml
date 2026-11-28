@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2014_2014-03-11.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: abf5f3eacb757ec0d726ea58bfb20ff914c3c07c4ab58dab76957794a077d65e
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: abf5f3eacb757ec0d726ea58bfb20ff914c3c07c4ab58dab76957794a077d65e
 tanggal_pengundangan: '2014-03-11'
 tanggal_berlaku: '2014-03-11'

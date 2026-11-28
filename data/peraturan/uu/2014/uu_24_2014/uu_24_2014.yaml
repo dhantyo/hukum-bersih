@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_2014_2014-09-30.txt
   pasal_count: 11
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: efffbe5205f776141b2a1101733dc90a88526450f85d35f37b082ee966103c3c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 7a7818d13cf3be9788d1dfce5dd31ba55c5d09593a2bc4620af674355dffc843
 tanggal_pengundangan: '2014-10-02'
 tanggal_berlaku: '2014-10-02'

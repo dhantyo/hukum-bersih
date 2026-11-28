@@ -76,9 +76,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2014_2014-01-15.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 58162cab71b87d712cd8a70aed6d7587581433cdf7deb283c62de8cc9a2b34f2
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 1ce73518d66ede5b36d6ab256bbcc74b564bf0e4a176d9f998f7e28931cdb308
 tanggal_pengundangan: '2014-01-15'
 tanggal_berlaku: '2014-01-15'

@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_2014_2014-08-05.txt
   pasal_count: 428
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3ff50ab11f6c4bf601a5ca33dedceffef0d92099df6a5490d6af09952f5020d1
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: e565622ef1dd7ad794e1f1e1d19b527f33a799686043ae888844fe0df81e696b
 tanggal_pengundangan: '2014-08-05'
 tanggal_berlaku: '2014-08-05'

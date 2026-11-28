@@ -66,9 +66,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_31_2014_2014-10-17.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c824a087edc53a32fe77e858a59e69b3b56d623471b75f16eefa6943bb94ab0b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 75132c5a4fd76d6d3408345d07f08536d745824692fbaca1880920cd201e7956
 tanggal_pengundangan: '2014-10-17'
 tanggal_berlaku: '2014-10-17'

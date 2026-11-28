@@ -35,9 +35,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2013_2013-05-08.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a279565c291ea49a918e0d520de80f96a106d60e11ff09568455196b4b9c3f2a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9934
 pdf_sha256: 9adc88f94ebdf74af0b972ff51d6525660379b9a4e527d5ec26ff597419c6bf8
 tanggal_pengundangan: '2013-05-08'
 tanggal_berlaku: '2013-05-08'

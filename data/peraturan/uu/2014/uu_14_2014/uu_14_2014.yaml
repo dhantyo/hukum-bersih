@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2014_2014-07-23.txt
   pasal_count: 22
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9813339d2204793da717e5938f5b676c40f94b64aecd2982b698dc43f88a85ee
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 9f1da39edf98b104c3fefde3959e5e06d035b3fee345fc3f07a882116ec9aa41
 tanggal_pengundangan: '2014-07-23'
 tanggal_berlaku: '2014-07-23'
