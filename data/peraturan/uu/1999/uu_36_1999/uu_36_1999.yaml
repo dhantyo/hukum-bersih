@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_36_1999_1999-09-08.txt
   pasal_count: 64
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a451093ca2a41f608083822de3826fa73a5e54949d11fb1e9e44197e8e77da1c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: a451093ca2a41f608083822de3826fa73a5e54949d11fb1e9e44197e8e77da1c
 tanggal_pengundangan: '1999-09-08'
 tanggal_berlaku: '2000-09-08'

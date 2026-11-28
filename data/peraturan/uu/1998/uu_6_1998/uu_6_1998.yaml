@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1998_1998-09-30.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 012ccaf0efed0b88ff376ec7814f65f429dd8fb37b58dcb1ec17aacfe2f649b3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.999
 pdf_sha256: 012ccaf0efed0b88ff376ec7814f65f429dd8fb37b58dcb1ec17aacfe2f649b3
 tanggal_pengundangan: '1998-09-30'
 tanggal_berlaku: '1998-09-30'

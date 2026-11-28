@@ -32,9 +32,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_29_1999_1999-05-25.txt
   pasal_count: 2
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 43a10ee7a9636c279466f9b69eec8013270701ce8599320ff95b54a69d74e589
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: penjelasan 1
+    word_coverage: 0.9984
 pdf_sha256: 43a10ee7a9636c279466f9b69eec8013270701ce8599320ff95b54a69d74e589
 tanggal_pengundangan: '1999-05-25'
 tanggal_berlaku: '1999-05-25'

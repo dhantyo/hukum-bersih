@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_31_1999_1999-08-16.txt
   pasal_count: 45
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8ec529cbcc586d1c9b8208e58073019415799812563afe55b355f21443db256c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: 8ec529cbcc586d1c9b8208e58073019415799812563afe55b355f21443db256c
 tanggal_pengundangan: '1999-08-16'
 tanggal_berlaku: '1999-08-16'

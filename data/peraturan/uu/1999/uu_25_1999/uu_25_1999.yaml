@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_25_1999_1999-05-19.txt
   pasal_count: 33
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ef63e55b6706c2d04815033b7cada6f217cb0ff7fd63d623718c553893aefe47
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: ef63e55b6706c2d04815033b7cada6f217cb0ff7fd63d623718c553893aefe47
 tanggal_pengundangan: '1999-05-19'
 tanggal_berlaku: '1999-05-19'

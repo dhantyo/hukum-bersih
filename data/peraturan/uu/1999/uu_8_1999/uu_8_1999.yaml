@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1999_1999-04-20.txt
   pasal_count: 65
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: df253c489e78e66d9da5337c85bebe1384c68763af2001335b4880b0f225d816
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: df253c489e78e66d9da5337c85bebe1384c68763af2001335b4880b0f225d816
 tanggal_pengundangan: '1999-04-20'
 tanggal_berlaku: '2000-04-20'

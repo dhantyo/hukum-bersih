@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_1999_1999-05-17.txt
   pasal_count: 9
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 84f3e7b7ce23fb8859491867d580f5c823bdb3f50a831690f25408eb354c590b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.998
 pdf_sha256: 84f3e7b7ce23fb8859491867d580f5c823bdb3f50a831690f25408eb354c590b
 tanggal_pengundangan: '1999-05-17'
 tanggal_berlaku: '1999-05-17'

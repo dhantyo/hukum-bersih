@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1998_1998-03-13.txt
   pasal_count: 14
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 44752fe16a760757a9523285389071ac6a23cfcb4ddc34eb16dd500605028d9e
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9994
 pdf_sha256: 44752fe16a760757a9523285389071ac6a23cfcb4ddc34eb16dd500605028d9e
 tanggal_pengundangan: '1998-03-13'
 tanggal_berlaku: '1998-04-01'

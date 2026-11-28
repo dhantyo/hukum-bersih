@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_26_1999_1999-04-20.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9b5ad53ba16e1310396d3ed4675fdc3358c98398b0a2a1bfb5a1ace47cb50010
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9949
 pdf_sha256: 9b5ad53ba16e1310396d3ed4675fdc3358c98398b0a2a1bfb5a1ace47cb50010
 tanggal_pengundangan: '1999-05-19'
 tanggal_berlaku: '1999-05-19'

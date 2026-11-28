@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_1999_1999-05-07.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2fc259168b9f1dbefb998ea11ccefc51313e84c01663ce82cf142a01610c5de5
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9975
 pdf_sha256: 2fc259168b9f1dbefb998ea11ccefc51313e84c01663ce82cf142a01610c5de5
 tanggal_pengundangan: '1999-05-07'
 tanggal_berlaku: '1999-05-07'
