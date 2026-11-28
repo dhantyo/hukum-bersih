@@ -22,6 +22,7 @@ import json
 import re
 import shutil
 import tempfile
+from collections import Counter
 from collections.abc import Iterator
 from dataclasses import dataclass
 from pathlib import Path
@@ -303,6 +304,35 @@ def is_penjelasan(f: dict) -> bool:
     return "penjelasan" in (f.get("filename") or "").lower()
 
 
+def order_problems(order: dict, files: list[dict]) -> list[str]:
+    """How a file order (``FileOrder`` in records.py) fails to name each of ``files`` exactly
+    once, in ``order`` or in ``skip``; empty when it does."""
+    named = Counter(order["order"] + [s["bpk_file_id"] for s in order["skip"]])
+    ids = {f["bpk_file_id"] for f in files}
+    return ([f"{i} is not a file of the law" for i in named if i not in ids]
+            + [f"{i} is named {n} times" for i, n in named.items() if n > 1]
+            + [f"{i} is neither ordered nor skipped" for i in sorted(ids - set(named))])
+
+
+def current_order(bpk: dict) -> dict | None:
+    """The routine's ``file_order`` while it still names exactly the files BPK lists; BPK can
+    add or drop a file later, and the law then goes back to the queue."""
+    order = bpk.get("file_order")
+    return order if order and not order_problems(order, bpk.get("files") or []) else None
+
+
+def files_to_read(bpk: dict) -> list[dict]:
+    """The BPK files of a law that are joined into its text, in reading order (decision 0023):
+    those of ``current_order``, the skipped ones left out; without one, the first file not
+    named a Penjelasan, then the Penjelasan files."""
+    files = bpk.get("files") or []
+    if order := current_order(bpk):
+        by_id = {f["bpk_file_id"]: f for f in files}
+        return [by_id[i] for i in order["order"]]
+    main = [f for f in files if not is_penjelasan(f)][:1] or files[:1]
+    return main + [f for f in files if is_penjelasan(f) and f is not main[0]]
+
+
 NO_PDF_RECHECK_DAYS = 7   # a law BPK lists without a PDF is looked at again after this
 
 
@@ -459,7 +489,7 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
     texts = [v for v in rec.get("versions") or [] if v.get("text")]
     version = texts[0]["id"] if texts else f"{work}_{rec.get('tanggal_penetapan') or rec['year']}"
     with tempfile.TemporaryDirectory() as tmp:
-        main_pdf, penjelasan = None, []
+        pdfs: dict[int, Path] = {}                  # bpk_file_id -> the downloaded copy
         for n, f in enumerate(rec["bpk"]["files"], start=1):
             pdf = Path(tmp) / f"{n}.pdf"
             content, mirror_note = download(session, f, data_dir)
@@ -477,11 +507,9 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
             with manifest.open("a") as fh:
                 fh.write(json.dumps(entry.to_dict(), ensure_ascii=False) + "\n")
             f.update(sha256=entry.sha256, bytes=entry.bytes, archive_url=archive_url)
-            if is_penjelasan(f):
-                penjelasan.append(pdf)
-            else:
-                main_pdf = main_pdf or pdf
-        note = "PDFs only (no text step)" if no_text else retext(main_pdf or penjelasan.pop(0), rec, path.parent, penjelasan)
+            pdfs[f["bpk_file_id"]] = pdf
+        read = [pdfs[f["bpk_file_id"]] for f in files_to_read(rec["bpk"])]
+        note = "PDFs only (no text step)" if no_text else retext(read[0], rec, path.parent, read[1:])
         notes += check_dates(rec, path.parent)
         if jenis in ONE_OFF:
             notes += date_printed(rec, path.parent)
@@ -494,6 +522,7 @@ def import_one(session, item: Listing, jenis: str, data_dir: Path, known: dict[i
 
 # One BPK entry holds the UUD, its four amendments and the MPR's consolidated text.
 UUD_ENTRY = "/Details/101646/uud-no---uud-1945-dan-amandemen"
+UUD_BPK_ID = int(UUD_ENTRY.split("/")[2])
 UUD_TITLE = "Undang-Undang Dasar Negara Republik Indonesia Tahun 1945"
 UUD_FILES = {"UUD45.pdf": "uud_1945",                   # BPK's file -> our work (docs/NAMING.md)
              "UUD45_perubahan1.pdf": "uud-perubahan_1_1999",
@@ -555,7 +584,7 @@ def _import_uud_work(work: str, owned: list[tuple[dict, Path]], data_dir: Path) 
     rec = load_record(path) if path.exists() else uud_record(work, BASE + UUD_ENTRY)
     old = {f["url"]: f for f in (rec.get("bpk") or {}).get("files", [])}
     rec["source_pdf_url"] = owned[0][0]["url"]
-    rec["bpk"] = {**(rec.get("bpk") or {}), "id": int(UUD_ENTRY.split("/")[2]),
+    rec["bpk"] = {**(rec.get("bpk") or {}), "id": UUD_BPK_ID,
                   "files": [_hashed(f, pdf, old.get(f["url"], {}), data_dir) for f, pdf in owned]}
     path.parent.mkdir(parents=True, exist_ok=True)
     save_record(path, rec)                              # metadata first
@@ -615,11 +644,9 @@ def reparse(data_dir: Path, only: set[str] | None = None) -> Iterator[str]:
         rec = load_record(path)
         if only and rec["id"] not in only:
             continue
-        files = (rec.get("bpk") or {}).get("files") or []
-        if not files:
+        wanted = files_to_read(rec.get("bpk") or {})
+        if not wanted:
             continue
-        main = [f for f in files if not is_penjelasan(f)][:1] or files[:1]
-        wanted = main + [f for f in files if is_penjelasan(f) and f is not main[0]]
         if not files_done(rec) or text_current(rec) or not all(f.get("archive_url") for f in wanted):
             continue
         with tempfile.TemporaryDirectory() as tmp:

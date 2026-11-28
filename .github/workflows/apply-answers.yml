@@ -1,0 +1,58 @@
+name: Apply the agent's answers
+
+# Runs when an answer PR of the agent routine is merged (decision 0022): moves each answer in
+# data/queue-answers/file-order/ onto its record (`hukum-rapih apply-answers`: bpk.file_order
+# set, the answer file deleted), commits, then starts import-bpk.yml for those laws only, which
+# joins their files in the new order (decision 0023); the self-checks decide whether the new
+# text replaces the stored one (decision 0026). A run waiting for an import is cancelled when
+# another run of the group is queued after it; the answers then wait on main until the next
+# answer PR or a manual run.
+on:
+  push:
+    branches: [main]
+    paths: ["data/queue-answers/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write # to start import-bpk.yml
+
+concurrency:
+  group: import-peraturan # writes data/ on main: never together with the importers
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
+      - run: cd pipeline && uv sync
+      - name: Apply, commit, start the import
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -o pipefail
+          git config user.name "hukum-rapih bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          status=0
+          (cd pipeline && uv run hukum-rapih apply-answers) | tee "$RUNNER_TEMP/apply.log" || status=$?
+          cat "$RUNNER_TEMP/apply.log" >> "$GITHUB_STEP_SUMMARY"
+          applied=$(grep '^ok' "$RUNNER_TEMP/apply.log" | awk '{print $2}' || true)
+          [ -z "$applied" ] && exit "$status"
+          git add data/
+          git commit -qm "data: apply $(echo "$applied" | wc -l) file-order answer(s)"
+          pushed=no
+          for i in 1 2 3 4 5; do
+            git pull -q --no-rebase --no-edit origin "${GITHUB_REF_NAME}" && git push -q && { pushed=yes; break; }
+            sleep $((i * 20))
+          done
+          [ "$pushed" = yes ] || { echo "::error::could not push the applied answers"; exit 1; }
+          # import-bpk takes one type of regulation per run
+          for jenis in $(echo "$applied" | cut -d_ -f1 | sort -u); do
+            only=$(echo "$applied" | grep "^${jenis}_" | paste -sd, -)
+            echo "import-bpk: $jenis $only" | tee -a "$GITHUB_STEP_SUMMARY"
+            gh workflow run import-bpk.yml --ref "${GITHUB_REF_NAME}" -f mode=import -f jenis="$jenis" \
+              -f only="$only" -f chain=false
+          done
+          exit "$status"

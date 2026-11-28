@@ -1,0 +1,65 @@
+name: Collect the file-order queue
+
+# Writes the queue the agent routine reads (decisions 0022, 0023): for each law whose BPK entry
+# lists several files and has no order yet, every file's first and last page as the parser
+# reads them, OCR for scans (`hukum-rapih collect-queue`, pipeline/src/hukum_rapih/file_order.py).
+# Laws already answered or queued with the same files are skipped. The PDFs stay on the runner.
+# The queue is pushed to the `queue` branch only; this workflow never writes main.
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Just these ids, comma-separated (e.g. uu_7_2017,uu_60_2024)"
+        type: string
+        default: ""
+
+permissions:
+  contents: write # pushes the queue branch
+
+concurrency:
+  group: queue-collect # one writer of the queue branch at a time
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 345
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
+      - name: "Install (stealth browser, OCR for scanned pages: Indra, Tesseract as fallback)"
+        run: |
+          sudo apt-get install -y -qq xvfb tesseract-ocr tesseract-ocr-ind hunspell hunspell-id hunspell-en-us >/dev/null
+          cd pipeline && uv sync --extra bpk --extra ocr && uv run scrapling install
+          uv run python -c 'import indra_ocr; indra_ocr.load()'
+      - name: Check out the queue branch
+        run: |
+          git config user.name "hukum-rapih bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git fetch -q origin queue; then
+            git worktree add -q -B queue "$RUNNER_TEMP/queue" FETCH_HEAD
+          else
+            git worktree add -q --orphan -b queue "$RUNNER_TEMP/queue"   # the first run
+          fi
+      - name: Collect
+        timeout-minutes: 330 # leaves time to push what was written
+        env:
+          ONLY: ${{ inputs.only }}
+        run: |
+          set -o pipefail
+          cd pipeline
+          xvfb-run -a uv run hukum-rapih collect-queue "$RUNNER_TEMP/queue" --only="$ONLY" \
+            | tee "$RUNNER_TEMP/collect.log"
+      - name: Push the queue
+        if: always()
+        run: |
+          grep -E '^(ok|gone|FAIL|STOP)' "$RUNNER_TEMP/collect.log" >> "$GITHUB_STEP_SUMMARY" || true
+          cd "$RUNNER_TEMP/queue"
+          [ -d queue ] && git add queue/
+          if git diff --cached --quiet; then
+            echo "queue unchanged" | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          n=$(git diff --cached --name-only | wc -l)
+          git commit -qm "queue/file-order: $n file(s) written or removed"
+          git push -q origin HEAD:refs/heads/queue
