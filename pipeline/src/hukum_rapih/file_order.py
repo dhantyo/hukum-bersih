@@ -22,8 +22,7 @@ import yaml
 from pydantic import ValidationError
 
 from .records import FileOrder, load_record, save_record
-from .sources.peraturan_bpk import (UUD_BPK_ID, current_order, download, order_problems,
-                                    record_path)
+from .sources.peraturan_bpk import UUD_BPK_ID, current_order, download, order_problems, record_path
 from .yamlio import load_yaml
 
 ANSWERS = Path("queue-answers") / "file-order"   # under data/

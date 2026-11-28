@@ -2,8 +2,7 @@
 fails on one with the fault it looks for."""
 import pytest
 
-from hukum_rapih.checks import (OCR_UNKNOWN_MAX, TITLE_WORDS_MAX, WORD_COVERAGE_MIN, run_checks,
-                                words)
+from hukum_rapih.checks import OCR_UNKNOWN_MAX, TITLE_WORDS_MAX, WORD_COVERAGE_MIN, run_checks, words
 
 REC = {"akn": "/akn/id/act/uu/2020/1"}
 CLOSING = "CONCLUSIONS\n  Disahkan di Jakarta\n\n  pada tanggal 1 Mei 2020\n"
