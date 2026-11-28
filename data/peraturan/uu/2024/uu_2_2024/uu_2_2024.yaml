@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2024_2024-04-25.txt
   pasal_count: 73
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a9bc489c5d76abeece80e3724b4c11260b0b3e65cab4db54207e72320deac1d8
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 27
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9983
+    ocr_unknown_rate: 0.0025
 pdf_sha256: a9bc489c5d76abeece80e3724b4c11260b0b3e65cab4db54207e72320deac1d8
 tanggal_pengundangan: '2024-04-25'
 lembaran_negara: 'LN 2024 (76), TLN (6913) : 44 hlm.; jdih.setneg.go.id'

@@ -33,13 +33,20 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2023_2022-12-12.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 54bc8580e918b8bca73e4ddd7a065cfebdbfec1acfbcb45ea879891fdf289173
   ocr: true
   ocr_engine: indra
   ocr_fixed: 1
   ocr_unknown: 80
+  checks:
+    version: 1
+    failed:
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 0.9974
+    ocr_unknown_rate: 0.0121
 pdf_sha256: 54bc8580e918b8bca73e4ddd7a065cfebdbfec1acfbcb45ea879891fdf289173
 tanggal_pengundangan: '2023-05-04'
 tanggal_berlaku: '2023-05-04'
