@@ -20,6 +20,37 @@ running Claude Code on Sonnet, on the operator's subscription (no API key).
 
 Records store only the choice and its reason, never a role or a label for a file.
 
+## The file-order queue (decision 0023)
+
+`queue-collect.yml` (manual) writes one file per law whose BPK entry lists several files and
+has no order yet, on the `queue` branch: `queue/file-order/<law id>.yaml`.
+
+```yaml
+id: uu_23_1968
+title: Undang-Undang Nomor 23 Tahun 1968 tentang …
+files:                        # as BPK lists them
+- bpk_file_id: 273252
+  filename: UU_NO_23_1968_Lampiran.pdf
+  pages: <n>
+  first_page: [<line>, …]     # as the parser reads them (pdf/extract.py, OCR for scans)
+  last_page: [<line>, …]
+- bpk_file_id: 273276
+  …
+```
+
+The routine answers in a PR to `main` with `data/queue-answers/file-order/<law id>.yaml`:
+
+```yaml
+order: [273276, 273252]       # bpk_file_id, read first to last; not empty
+skip: []                      # files not read: [{bpk_file_id: <id>, reason: <a copy of …>}]
+reason: the law first; BPK lists its Lampiran first
+```
+
+Each file of the law is in `order` or in `skip`, once (`pipeline/tests/test_file_order.py`
+checks every answer file in the PR). After the merge, `apply-answers.yml` moves the answer onto the record as
+`bpk.file_order`, deletes the answer file and starts `import-bpk.yml` for those laws. Code:
+`pipeline/src/hukum_rapih/file_order.py`.
+
 ## Why
 
 File names on BPK are typed by hand and follow no pattern, so a rule cannot order or classify

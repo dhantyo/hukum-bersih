@@ -64,6 +64,20 @@ class BpkFile(_Model):
     fetched_from: str | None = None      # BPK failed; note naming the mirror used
 
 
+class SkippedFile(_Model):
+    bpk_file_id: int
+    reason: str                # a copy of another file, another law, …
+
+
+class FileOrder(_Model):
+    """The order in which a law's BPK files are joined and parsed, chosen by the agent routine
+    (decisions 0022, 0023). Its answer file, data/queue-answers/file-order/<id>.yaml, has the
+    same shape. Each file of the law is in ``order`` or in ``skip``, once."""
+    order: Annotated[list[int], Field(min_length=1)]   # bpk_file_id, read first to last
+    skip: list[SkippedFile]
+    reason: str                # one line
+
+
 class Bpk(_Model):
     """What peraturan.bpk.go.id says about the law."""
     id: int
@@ -71,6 +85,7 @@ class Bpk(_Model):
     status_peraturan: dict[str, list[StatusRef]] | None = None
     tanggal_pengundangan: Date | None = None   # BPK's date when the printed one differs
     no_pdf_checked: Date | None = None         # BPK listed no PDF when last looked at
+    file_order: FileOrder | None = None        # written by `hukum-rapih apply-answers`
     # written by the first BPK import (v1-v3); nothing writes them now
     pasal_count: int | None = None
     parser_version: int | None = None

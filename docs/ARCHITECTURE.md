@@ -36,6 +36,7 @@ data/
     ruu.yaml                               stages, every known document with provenance
     versions/<doc id>.txt                  draft texts (Bluebell)
   sources/manifests/<host>.jsonl           one line per fetched file
+  queue-answers/file-order/<id>.yaml       the agent routine's file order, until applied (decision 0022)
 ```
 
 Names follow [NAMING.md](NAMING.md).
@@ -59,7 +60,8 @@ Names follow [NAMING.md](NAMING.md).
 | `relations.py` | Amends / revokes / enacts links from titles, plus the pasal an amending law changes (from its text) → `relationships` in each record ([decision 0008](decisions/0008-law-history.md)) |
 | `amendments.py` | An amending law's Pasal I → numbered instructions and the new wording of each pasal (the corpus export reads `split`) |
 | `history.py` | The versions of an amended law and every change to its pasal → `history` in its record, recomputed with `relations` ([decision 0010](decisions/0010-versions-and-merged-text.md)) |
-| `cli.py` | `hukum-rapih parse / build-akn (writes XML to check it; the site reads the corpus, not XML) / import-bpk / import-peraturan / reparse-bpk / import-pdf / relations / manifest` |
+| `file_order.py` | The file-order queue of the agent routine (decisions 0022, 0023): writes `queue/file-order/` on the `queue` branch, checks the answers and moves them onto `bpk.file_order`; `files_to_read` in `sources/peraturan_bpk.py` joins the files in that order |
+| `cli.py` | `hukum-rapih parse / build-akn (writes XML to check it; the site reads the corpus, not XML) / import-bpk / import-peraturan / reparse-bpk / import-pdf / relations / manifest / collect-queue / apply-answers` |
 
 ## Workflows (.github/workflows)
 
@@ -71,6 +73,8 @@ Names follow [NAMING.md](NAMING.md).
 | `parser-regression.yml` | push touching the parser + manual | the regression set (`pipeline/tests/regression.yaml`, fails on any law off) |
 | `import-peraturan.yml` | manual (schedule removed 2026-11-21) | import from peraturan.go.id (answers only Indonesian IPs; the Indonesian VPN action was removed 2026-11-24, so it works only when the site lets other IPs in) |
 | `import-uploads.yml` | manual | PDFs attached to a GitHub release → manifest line (sha256) + text (`import-pdf`) |
+| `queue-collect.yml` | manual | the file-order queue for the agent routine, pushed to the `queue` branch, never to main ([decision 0022](decisions/0022-agent-routine-for-judgement-calls.md)) |
+| `apply-answers.yml` | push to main touching `data/queue-answers/**` + manual | the routine's merged answers onto their records, then `import-bpk.yml` for those laws |
 | ~~`fetch.yml`, `archive-pending.yml`, `archive-retitle.yml`, `archive-delete.yml`~~ | removed 2026-11-24 ([decision 0014](decisions/0014-no-archive-uploads.md)) | download + upload to archive.org, retitle, delete |
 | ~~`probe-bpk.yml`, `explore-bpk.yml`, `probe-bpk-app.yml`~~ | removed 2026-11-24 (last in c3332cfb) | one-off probes: which tool passes BPK's Cloudflare check (Scrapling won, `sources/bpk_session.py`); sample BPK pages (now `pipeline/tests/fixtures/bpk/`); BPK's Android app (never got the APK) |
 
@@ -97,6 +101,7 @@ lets non-Indonesian IPs in. See [sources.md](sources.md) for what each site answ
 | Correcting OCR misreads | Norvig's spelling corrector (one edit) over our own typed texts' words, Hunspell `id_ID` + `en_US` (system packages) as the list of real words never changed | [decision 0013](decisions/0013-ocr-spell-fix.md). Checked: Pasal.id's `ocr_correct.py` (one regex per misread word, changes case: not used), SymSpell/`symspellpy` (fast edit-distance lookup, but no weights for letter shapes and speed is not the limit: not used) |
 | Checking the merged UUD 1945 against the MPR's consolidated text (decision 0027) | our own merge (`corpus/merge.py`, the one the site uses) and the PDF parser, in `pipeline/scripts/check_uud.py`; `difflib.SequenceMatcher` for the share of words in common | no second merge was written for the check, so it measures what readers would see |
 | Share of the PDF's words in a parsed text (the `word_coverage` self-check) | `collections.Counter` intersection (standard library) in `pipeline/src/hukum_rapih/checks.py` | checked: a word diff with `rapidiff` (already a dependency) counts order, and a text puts the Lampiran last on purpose; the intersection does not |
+| A law's files in the agent's queue: page count, first and last page (decision 0023) | PyMuPDF (`page_count`, `insert_pdf` to cut one page out) read through our own `pdf/extract.py`, in `file_order.py`; the answer files are checked with the record schema's `FileOrder` model (Pydantic) | the page is cut out so a long scan costs two pages of OCR, not all of them; no queue or job library: the queue is YAML files on a branch the routine clones |
 | Validating law records before they are written | Pydantic v2 (`records.py`) | models are the gate only: the code keeps working with dicts and the YAML is dumped from the dict, byte for byte as before |
 | Search | Pagefind | |
 | Search index in `web/` (replaced 2026-11-25) | Pagefind Node API (`createIndex`, `addCustomRecord`, `writeFiles`, `maxFragments`) in `scripts/index-corpus.ts`, deleted when the pipeline took over the corpus export | the same records and bytes as the row below, which replaced it. Records were built from the exported JSON, one per pasal at the anchor the reader renders, so the UI carries no `data-pagefind-*` attributes and the export needs no build or server. Before that: the Pagefind CLI over pages rendered by the built server (any markup change moved the index, and indexing needed a full build) |

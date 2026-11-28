@@ -2,7 +2,8 @@
 fails on one with the fault it looks for."""
 import pytest
 
-from hukum_rapih.checks import OCR_UNKNOWN_MAX, WORD_COVERAGE_MIN, run_checks, words
+from hukum_rapih.checks import (OCR_UNKNOWN_MAX, TITLE_WORDS_MAX, WORD_COVERAGE_MIN, run_checks,
+                                words)
 
 REC = {"akn": "/akn/id/act/uu/2020/1"}
 CLOSING = "CONCLUSIONS\n  Disahkan di Jakarta\n\n  pada tanggal 1 Mei 2020\n"
@@ -20,8 +21,12 @@ PRINTED = ("Pasal 1 (1) Setiap orang wajib: a. membayar pajak; b. melapor. (2) C
            "Disahkan di Jakarta pada tanggal 1 Mei 2020")
 
 
-def law(body: str = SOUND_BODY, after: str = "") -> str:
-    return "BODY\n" + body + CLOSING + after
+TITLE = "PREFACE\n  UNDANG-UNDANG REPUBLIK INDONESIA NOMOR 1 TAHUN 2020 TENTANG UJI COBA\n\n"
+OPENING = "PREAMBLE\n  DENGAN RAHMAT TUHAN YANG MAHA ESA\n\n  PRESIDEN REPUBLIK INDONESIA,\n\n"
+
+
+def law(body: str = SOUND_BODY, after: str = "", front: str = TITLE + OPENING) -> str:
+    return front + "BODY\n" + body + CLOSING + after
 
 
 def failed(text: str, **kw) -> dict[str, str]:
@@ -67,6 +72,28 @@ def test_a_reference_to_another_law_is_no_missed_heading():
 def test_page_furniture_in_the_text():
     body = SOUND_BODY.replace("Cukup.", "Cukup. Diunduh dari peraturan.go.id - 2 -")
     assert failed(law(body))["page_furniture"] == "page no. 1, watermark 1"
+
+
+@pytest.mark.parametrize(("front", "detail"), [
+    ("", "no title"),
+    # files joined in the wrong order: the Penjelasan or a Lampiran first, or a body's second
+    # half, which runs into the title until the law's opening
+    ("PREFACE\n  PENJELASAN ATAS UNDANG-UNDANG REPUBLIK INDONESIA NOMOR 1 TAHUN 2020\n\n",
+     "title is a Penjelasan"),
+    ("PREFACE\n  LAMPIRAN UNDANG-UNDANG REPUBLIK INDONESIA NOMOR 1 TAHUN 2020\n\n" + OPENING,
+     "title is a Lampiran"),
+    ("PREFACE\n  " + "kata " * (TITLE_WORDS_MAX + 1) + "\n\n" + OPENING,
+     f"title of {TITLE_WORDS_MAX + 1} words > {TITLE_WORDS_MAX}"),
+    (TITLE, "title followed by BODY"),
+])
+def test_a_text_that_does_not_open_with_the_law_has_no_front_matter(front, detail):
+    assert failed(law(front=front))["front_matter"] == detail
+
+
+def test_the_uud_prints_its_pembukaan_in_the_title():
+    front = ("PREFACE\n  UNDANG-UNDANG DASAR NEGARA REPUBLIK INDONESIA TAHUN 1945 PEMBUKAAN "
+             "(P r e a m b u l e) Bahwa sesungguhnya kemerdekaan itu ialah hak segala bangsa\n\n")
+    assert "front_matter" not in failed(law(front=front))
 
 
 def test_a_closing_without_a_date_of_signing():

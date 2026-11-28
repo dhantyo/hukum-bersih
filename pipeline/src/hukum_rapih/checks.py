@@ -21,7 +21,8 @@ from .akn.bluebell import KEYWORDS
 from .akn.build import to_akn
 from .closing import conclusions, parse
 
-CHECKS_VERSION = 1   # raise it when a check changes, so results of older checks show as stale
+CHECKS_VERSION = 2   # raise it when a check changes, so results of older checks show as stale
+#                      2: front_matter
 
 # Lowest share of the PDF's words a text must keep to pass. 2026-11-28: the regression set
 # (tests/regression.yaml) on CI ran from 0.9798 (UU 3/2019) to 0.9997, every law with its
@@ -49,6 +50,13 @@ LETTER = re.compile(r"(?:POINT|ITEM) ([a-z])\.")
 # Bluebell headings that stand for a printed word ("ART 5 -" is "Pasal 5" in the PDF)
 PRINTED = {"ART": "Pasal", "CHAPTER": "BAB", "PART": "Bagian", "SUBPART": "Paragraf"}
 HEADING = re.compile(rf"^( *)({'|'.join(PRINTED)})\b", re.MULTILINE)
+# the title (PREFACE) and the part of the text after it
+FRONT = re.compile(r"PREFACE\n(?P<title>(?:(?: .*)?\n)*)(?P<next>\S*)")
+# Most words a title may have. 2026-11-28: the stored titles reach 64 words at the 99th
+# percentile and 204 at most (the UUD 1945, Pembukaan included), leaving out UU 15/2009's, a
+# Penjelasan of 784 words; a file joined before the law runs into the title until the law's
+# opening, so it is far longer.
+TITLE_WORDS_MAX = 400
 
 
 def words(text: str) -> Counter[str]:
@@ -88,6 +96,25 @@ class Text:
     def amending(self) -> bool:
         """Its own pasal are I, II …; the pasal, ayat and lists it quotes stay in Pasal I."""
         return bool(self.arts) and bool(re.fullmatch(r"[IVXLC]+", self.arts[0]))
+
+
+def _front_matter(t: Text) -> str | None:
+    """The text opens with the law's title, then its opening ("DENGAN RAHMAT …", Menimbang);
+    the UUD 1945 prints its Pembukaan in the title. Files joined in the wrong order (decision
+    0023) open with the Penjelasan, a Lampiran or the middle of the body instead; 2026-11-28:
+    the one stored text that failed, UU 15/2009, holds only its Penjelasan."""
+    m = FRONT.match(t.text)
+    if not m:
+        return "no title"
+    if re.search(r"PENJELASAN\s+ATAS\b", m["title"]):
+        return "title is a Penjelasan"
+    if re.match(r"\s*LAMPIRAN\b", m["title"]):
+        return "title is a Lampiran"
+    if (n := len(re.findall(r"\w+", m["title"]))) > TITLE_WORDS_MAX:
+        return f"title of {n} words > {TITLE_WORDS_MAX}"
+    if m["next"] != "PREAMBLE" and "PEMBUKAAN" not in m["title"]:
+        return f"title followed by {m['next'] or 'nothing'}"
+    return None
 
 
 def _invalid_akn(t: Text) -> str | None:
@@ -205,6 +232,7 @@ class CheckSpec(NamedTuple):
 
 CHECKS = (
     CheckSpec("invalid_akn", "text", _invalid_akn),
+    CheckSpec("front_matter", "text", _front_matter),
     CheckSpec("pasal_gap", "text", _pasal_gap),
     CheckSpec("missed_heading", "text", _missed_heading),
     CheckSpec("page_furniture", "text", _page_furniture),
