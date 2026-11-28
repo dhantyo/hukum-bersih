@@ -35,9 +35,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1965_1965-02-06.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 17237e7dc7be751956bb70dfba3c94a8b916e73cad738c6f5ee6afbf32b82388
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9974
 pdf_sha256: 17237e7dc7be751956bb70dfba3c94a8b916e73cad738c6f5ee6afbf32b82388
 tanggal_pengundangan: '1965-02-06'
 tanggal_berlaku: '1965-02-06'

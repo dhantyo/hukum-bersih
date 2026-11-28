@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_1965_1965-09-01.txt
   pasal_count: 89
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 41c5851a6eb7bac455f5e15a3a596c6481f085b65cfc6c7c7b3ddf8791992940
+  checks:
+    version: 1
+    failed:
+    - name: pasal_gap
+      detail: 30->32
+    word_coverage: 0.9999
 pdf_sha256: 41c5851a6eb7bac455f5e15a3a596c6481f085b65cfc6c7c7b3ddf8791992940
 tanggal_pengundangan: '1965-09-01'
 tanggal_berlaku: '1965-09-01'

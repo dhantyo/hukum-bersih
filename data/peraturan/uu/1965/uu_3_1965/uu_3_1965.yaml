@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1965_1965-04-01.txt
   pasal_count: 39
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9cbc630bcf3f05560ff4351c1336c455fa2009e48725470499d40c7ef759bb88
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: 9cbc630bcf3f05560ff4351c1336c455fa2009e48725470499d40c7ef759bb88
 tanggal_pengundangan: '1965-04-01'
 tanggal_berlaku: '1965-04-01'

@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1966_1966-10-27.txt
   pasal_count: 3
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 369bb41a3dc2020f7ac3078ebbdd8651f5e0ff65cb717b5dd44f2d627697f9de
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9974
 pdf_sha256: 369bb41a3dc2020f7ac3078ebbdd8651f5e0ff65cb717b5dd44f2d627697f9de
 tanggal_pengundangan: '1966-10-27'
 tanggal_berlaku: '1966-10-27'

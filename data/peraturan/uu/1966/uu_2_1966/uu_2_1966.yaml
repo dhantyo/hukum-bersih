@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1966_1966-06-11.txt
   pasal_count: 8
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d41c380ddba4ff5e9bb5fb1a803d0bc2e5f0d2d7a1cbdd5ba72fd17b394cfb1b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9971
 pdf_sha256: d41c380ddba4ff5e9bb5fb1a803d0bc2e5f0d2d7a1cbdd5ba72fd17b394cfb1b
 tanggal_pengundangan: '1966-06-11'
 tanggal_berlaku: '1966-06-11'

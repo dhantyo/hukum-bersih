@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_26_1964_1964-11-25.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d8914800c2027e17a83f33945dfa8bf5f6aaf7c744f4d81036ed3cc97f50293d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9931
 pdf_sha256: d8914800c2027e17a83f33945dfa8bf5f6aaf7c744f4d81036ed3cc97f50293d
 tanggal_pengundangan: '1964-11-25'
 tanggal_berlaku: '1964-11-25'
