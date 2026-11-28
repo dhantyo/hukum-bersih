@@ -55,7 +55,7 @@ NOT_WORDING = re.compile(r"^\s*(?:Penjelasan|Judul|Di\s*antara\s+(?:BAB|Bab|Bagi
 DATE_FIELDS = ("tanggal_berlaku", "tanggal_pengundangan", "tanggal_penetapan")
 
 
-def _date(rec: dict) -> tuple[str | None, str | None]:
+def took_effect(rec: dict) -> tuple[str | None, str | None]:
     """When a regulation took effect, as precisely as the record knows, and which field said so."""
     for f in DATE_FIELDS:
         if rec.get(f):
@@ -76,7 +76,7 @@ def history_of(rec: dict, recs: dict[str, dict], folders: dict[str, Path]) -> di
     if not by_ids:
         return None
     original = next((v for v in rec.get("versions") or [] if v.get("text")), None)
-    date, basis = _date(rec)
+    date, basis = took_effect(rec)
     first = {"id": original["id"] if original else f"{rec['id']}_{date}", "kind": "asli",
              "date": date, "date_basis": basis}
     if original:
@@ -95,7 +95,7 @@ def history_of(rec: dict, recs: dict[str, dict], folders: dict[str, Path]) -> di
         seen = max(seen + 1, order)
         found = amendments.instructions(amendments.flatten(_text(amending, folders[by]))) \
             if amending else []
-        when, when_basis = _date(amending) if amending else (None, None)
+        when, when_basis = took_effect(amending) if amending else (None, None)
         point_id = f"{rec['id']}_{when}"
         if points[-1]["id"] == point_id and points[-1]["kind"] == "gabungan":
             point = points[-1]                       # same day: one point (Laws.Africa does too)

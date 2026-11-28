@@ -2,10 +2,13 @@
 
 from __future__ import annotations
 
+from dataclasses import dataclass
 from pathlib import Path
 
+from ..history import took_effect
 from ..records import load_record
 from ..yamlio import load_yaml
+from .meta import LawContext, add_context
 
 LANGUAGE = "ind"
 
@@ -46,9 +49,12 @@ def to_akn_tree(text: str, frbr_uri: str, root: str = "act", expression_date: st
 def to_akn(text: str, frbr_uri: str, root: str = "act", expression_date: str | None = None,
            title: str | None = None, work_date: str | None = None) -> bytes:
     """The Akoma Ntoso XML of one Bluebell text; the arguments are those of ``to_akn_tree``."""
+    return _xml_bytes(to_akn_tree(text, frbr_uri, root, expression_date, title, work_date))
+
+
+def _xml_bytes(xml) -> bytes:
     from lxml import etree
 
-    xml = to_akn_tree(text, frbr_uri, root, expression_date, title, work_date)
     return etree.tostring(xml, encoding="utf-8", pretty_print=True, xml_declaration=True)
 
 
@@ -97,21 +103,39 @@ def build_ruu(data_dir: Path, out_dir: Path) -> list[Path]:
     return written
 
 
-def _build_version(args: tuple[str, str, str | None, str, str, str | None]) -> str | None:
-    text_path, akn, date, title, target, work_date = args
-    target_path = Path(target)
-    source = Path(text_path)
-    if target_path.exists() and target_path.stat().st_mtime >= source.stat().st_mtime:
-        return target                                    # up to date
+@dataclass(frozen=True)
+class _Job:
+    """One text version of a law to write as Akoma Ntoso."""
+    record: Path
+    target: Path
+    law: LawContext
+
+
+def _build_version(job: _Job) -> Path | None:
+    rec, version = job.law.rec, job.law.version
+    text = job.record.parent / version["text"]
+    newest = max(text.stat().st_mtime, job.record.stat().st_mtime)
+    if job.target.exists() and job.target.stat().st_mtime >= newest:
+        return job.target                                # up to date
+    date = version.get("date")
+    full = date if date and len(date) == 10 else None
     try:
-        xml = to_akn(source.read_text(), akn, "act", expression_date=date, title=title,
-                     work_date=work_date)
+        xml = to_akn_tree(text.read_text(), rec["akn"], "act", expression_date=full,
+                          title=rec.get("title"), work_date=rec.get("tanggal_penetapan") or full)
     except Exception as e:  # noqa: BLE001 - one bad text must not stop the site build
-        print(f"skip {source.name}: {type(e).__name__}: {str(e)[:120]}")
+        print(f"skip {text.name}: {type(e).__name__}: {str(e)[:120]}")
         return None
-    target_path.parent.mkdir(parents=True, exist_ok=True)
-    target_path.write_bytes(xml)
-    return target
+    add_context(xml, job.law)
+    job.target.parent.mkdir(parents=True, exist_ok=True)
+    job.target.write_bytes(_xml_bytes(xml))
+    return job.target
+
+
+def _short_names(data_dir: Path) -> dict[str, str]:
+    """The common short name ("UU ITE") of each law that has one: the base of a named
+    collection in data/koleksi/."""
+    names = (load_yaml(f.read_text()) for f in sorted((data_dir / "koleksi").glob("*.yaml")))
+    return {k["base"]: k["name"] for k in names}
 
 
 def build_peraturan(data_dir: Path, out_dir: Path) -> list[Path]:
@@ -119,17 +143,17 @@ def build_peraturan(data_dir: Path, out_dir: Path) -> list[Path]:
     texts are skipped)."""
     from concurrent.futures import ProcessPoolExecutor
 
+    records = {path: load_record(path)
+               for path in sorted((data_dir / "peraturan").glob("*/*/*/*.yaml"))}
+    took = {rec["id"]: took_effect(rec)[0] for rec in records.values()}
+    short_names = _short_names(data_dir)
     jobs = []
-    for record in sorted((data_dir / "peraturan").glob("*/*/*/*.yaml")):
-        rec = load_record(record)
+    for record, rec in records.items():
+        revoked_on = {law: took[law] for law in rec["relationships"]["revoked_by"]
+                      if len(took.get(law) or "") == 10}
         rel = record.parent.relative_to(data_dir / "peraturan")
-        for v in rec.get("versions") or []:
-            if not v.get("text"):
-                continue
-            date = v.get("date")
-            full = date if date and len(str(date)) == 10 else None
-            jobs.append((str(record.parent / v["text"]), rec["akn"], full, rec.get("title"),
-                         str(out_dir / "peraturan" / rel / f"{v['id']}.xml"),
-                         rec.get("tanggal_penetapan") or full))
+        jobs += [_Job(record, out_dir / "peraturan" / rel / f"{v['id']}.xml",
+                      LawContext(rec, v, short_names.get(rec["id"]), revoked_on))
+                 for v in rec.get("versions") or [] if v.get("text")]
     with ProcessPoolExecutor() as pool:
-        return [Path(t) for t in pool.map(_build_version, jobs, chunksize=16) if t]
+        return [t for t in pool.map(_build_version, jobs, chunksize=16) if t]
