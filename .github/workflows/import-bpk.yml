@@ -8,7 +8,7 @@ name: Import from BPK
 # Cloudflare: a stealth browser (Scrapling) clears the check, curl_cffi downloads
 # (pipeline/src/hukum_rapih/sources/bpk_session.py). No VPN needed: BPK is not geo-blocked.
 on:
-  # schedule paused 2026-11-21 (Dante): parser fixes first. To resume, restore:
+  # schedule paused 2026-11-21: parser fixes first. To resume, restore:
   # schedule:
   #   - cron: "41 */6 * * *"   # every 6 hours
   workflow_dispatch:
