@@ -79,6 +79,9 @@ jobs:
         run: |
           git config user.name "hukum-rapih bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # a run that waited in the queue starts from the commit it was dispatched on; take what
+          # the runs before it pushed, or its first push conflicts (2026-11-28)
+          git pull -q --no-rebase --no-edit origin "${GITHUB_REF_NAME}"
           # The job is stopped at 5h45m (timeout-minutes) and a batch is only saved when it ends,
           # so a batch starts only if it will fit: estimated by the longest of the last three
           # batches (scans take ~1 h a batch, typed laws ~12 min), plus 5 minutes to commit.

@@ -1,0 +1,3 @@
+# Manifests are append-only logs, one JSON line per file; when two runs of the importers
+# append to the same one, keep both sides (2026-11-28: a second import-bpk run lost its batch).
+data/sources/manifests/*.jsonl merge=union

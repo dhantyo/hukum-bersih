@@ -32,7 +32,6 @@ Known gaps and agreed work not done yet. Remove an item when it ships.
 - Omnibus amendments (Cipta Kerja) are not linked to the laws they amend, for example PT (UU 40/2007) and Penanaman Modal (UU 25/2007). Planned in decision 0025.
 - Joined files (decision 0023): the queue, answer check, `apply-answers` and the join are in (decision 0022, "The file-order queue"); the routine that reads the queue and opens answer PRs is not set up, and `queue-collect.yml` has not run.
 - UU 15/2009's stored text opens with its Penjelasan (TLN 4991) and holds only Penjelasan pasal, from the one file BPK lists; it is the stored text `front_matter` failed on 2026-11-28.
-- Two `import-bpk.yml` runs dispatched together on one branch: the second checks out the commit it was started on, its `git pull` then conflicts on the manifest, its batch is lost and the run still ends green (2026-11-28).
 
 ## Review by a lawyer
 
