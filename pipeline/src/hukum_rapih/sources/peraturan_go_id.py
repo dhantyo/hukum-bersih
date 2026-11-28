@@ -167,10 +167,12 @@ def convert(client: Client, rec: dict, folder: Path, data_dir: Path) -> str:
 def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str, extra: list[Path] | None = None) -> str:
     """Parse a local PDF of the record and (re)write its text version. A failed parse never
     costs the text we already have (2026-11-21: an outage deleted three texts); the new text
-    replaces the old one only once it exists. ``source``: where the PDF came from; ``extra``:
-    further PDFs of the law read after it (a Penjelasan published separately)."""
+    replaces the old one only once it exists, and only when it fails no self-check the stored
+    text passes, both read against the same PDF (decision 0026). ``source``: where the PDF came
+    from; ``extra``: further PDFs of the law read after it (a Penjelasan published separately)."""
     from ..akn.bluebell import to_bluebell
     from ..akn.build import to_akn
+    from ..checks import run_checks, words
     from ..manifest import sha256_file
     from ..pdf.structure import PARSER_VERSION, parse_pdf
 
@@ -188,7 +190,8 @@ def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str, extra: list[Pat
         rec.pop("recheck", None)
 
     try:
-        doc = parse_pdf(pdf, extra or [])
+        stats: dict = {}
+        doc = parse_pdf(pdf, extra or [], stats)
         if doc.pasal_count == 0:
             if old:                                        # keep the text we have
                 rec["reparse_error"] = f"v{PARSER_VERSION}: no pasal found"
@@ -203,6 +206,15 @@ def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str, extra: list[Pat
                 rec["reparse_error"] = f"v{PARSER_VERSION}: {reason}"
                 return f"kept old text ({reason})"
         to_akn(text, rec["akn"], "act")                    # validates structure and markup
+        pdf_words = words("\n".join(stats["lines"]))
+        ocr_unknown = len(doc.ocr_fixes.suspects) if doc.ocr_fixes else None
+        checks = run_checks(rec, text, pdf_words, ocr_unknown)
+        if old and (folder / old[0]["text"]).exists():
+            stored = run_checks(rec, (folder / old[0]["text"]).read_text(), pdf_words,
+                                old[0].get("ocr_unknown"))
+            if worse := ", ".join(checks.worse_than(stored)):
+                rec["reparse_error"] = f"v{PARSER_VERSION}: check {worse} worse"
+                return f"kept old text (check {worse} worse)"
         version = f"{work}_{date or rec['year']}"
         folder.mkdir(parents=True, exist_ok=True)
         (folder / f"{version}.txt").write_text(text)
@@ -215,8 +227,9 @@ def convert_pdf(pdf: Path, rec: dict, folder: Path, source: str, extra: list[Pat
             **({"extra_pdf_sha256": [sha256_file(x) for x in extra]} if extra else {}),
             **({"ocr": True, "ocr_engine": _ocr_engine(doc.warnings)}
                if any(w.startswith("ocr:") for w in doc.warnings) else {}),
-            **({"ocr_fixed": len(doc.ocr_fixes.changed), "ocr_unknown": len(doc.ocr_fixes.suspects)}
+            **({"ocr_fixed": len(doc.ocr_fixes.changed), "ocr_unknown": ocr_unknown}
                if doc.ocr_fixes else {}),
+            "checks": checks.as_record(),
         }])
         return f"{doc.pasal_count} pasal"
     except Exception as e:  # noqa: BLE001 - record and move on; never guess
