@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1991_1991-07-18.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6e88a83ca7e0deeb09df87d722431069e9da85fdab57b96853f348bb15716557
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9945
 pdf_sha256: 6e88a83ca7e0deeb09df87d722431069e9da85fdab57b96853f348bb15716557
 tanggal_pengundangan: '1991-07-18'
 tanggal_berlaku: '1991-07-18'

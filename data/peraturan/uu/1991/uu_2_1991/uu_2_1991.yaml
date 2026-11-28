@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1991_1991-03-20.txt
   pasal_count: 8
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 42845e9288d267f3cbf6d45bfa989d96c0caf0a2caff05e5bd3fb9f156d59510
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9984
 pdf_sha256: 42845e9288d267f3cbf6d45bfa989d96c0caf0a2caff05e5bd3fb9f156d59510
 tanggal_pengundangan: '1991-03-20'
 tanggal_berlaku: '1991-04-01'

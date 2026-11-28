@@ -29,9 +29,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1994_1994-11-02.txt
   pasal_count: 2
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6877de03cf5a0e8011b7c5848baf9a9ccda288925039f814d906402c409680ce
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: penjelasan 20
+    word_coverage: 0.9993
 pdf_sha256: 6877de03cf5a0e8011b7c5848baf9a9ccda288925039f814d906402c409680ce
 tanggal_pengundangan: '1994-11-02'
 tanggal_berlaku: '1994-11-02'

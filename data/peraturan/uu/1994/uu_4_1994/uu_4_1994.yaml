@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1994_1994-07-22.txt
   pasal_count: 18
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1f560edf9cd25d6845f21733fd80510d059f508e1dc2766667228a2089aa7f74
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9937
 pdf_sha256: 1f560edf9cd25d6845f21733fd80510d059f508e1dc2766667228a2089aa7f74
 tanggal_pengundangan: '1994-07-22'
 tanggal_berlaku: '1994-07-22'

@@ -28,9 +28,17 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_1992_1992-08-28.txt
   pasal_count: 89
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4b1d98a3491900ba7338be85e9f3c681ba5dda275f8b9f2e28ac66cb29469882
+  checks:
+    version: 1
+    failed:
+    - name: pasal_gap
+      detail: 71->73
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 0.9997
 pdf_sha256: 4b1d98a3491900ba7338be85e9f3c681ba5dda275f8b9f2e28ac66cb29469882
 tanggal_pengundangan: '1992-08-28'
 tanggal_berlaku: '1993-04-01'

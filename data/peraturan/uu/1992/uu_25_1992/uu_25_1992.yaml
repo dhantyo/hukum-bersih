@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_25_1992_1992-10-21.txt
   pasal_count: 67
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3bb966150605805361ff22abd62c1014b09808d683679ad17a8a60f3760aca2f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: 3bb966150605805361ff22abd62c1014b09808d683679ad17a8a60f3760aca2f
 tanggal_pengundangan: '1992-10-21'
 tanggal_berlaku: '1992-10-21'

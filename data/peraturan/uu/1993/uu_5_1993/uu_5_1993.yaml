@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1993_1993-06-30.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 84eb23e2b7bfd0c2bf32e3767310c553ec3d15a8d1f6e5596cbad1982e320ca2
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9973
 pdf_sha256: 84eb23e2b7bfd0c2bf32e3767310c553ec3d15a8d1f6e5596cbad1982e320ca2
 tanggal_pengundangan: '1993-07-30'
 tanggal_berlaku: '1992-04-01'

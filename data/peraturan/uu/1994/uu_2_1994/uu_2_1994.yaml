@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1994_1994-04-20.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ffb11e60029c4948eb04ef5a752d472001ad8831cf8058c6ed5bdbbaf7ae25e7
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9972
 pdf_sha256: ffb11e60029c4948eb04ef5a752d472001ad8831cf8058c6ed5bdbbaf7ae25e7
 tanggal_pengundangan: '1994-04-20'
 tanggal_berlaku: '1993-04-01'

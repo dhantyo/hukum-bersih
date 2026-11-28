@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_1992_1992-03-31.txt
   pasal_count: 68
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f6abab8567344048ef3940f0add3bc6da80fe8fd5aeeb9f69d372ce5fb4b6bd9
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: f6abab8567344048ef3940f0add3bc6da80fe8fd5aeeb9f69d372ce5fb4b6bd9
 tanggal_pengundangan: '1992-03-31'
 tanggal_berlaku: '1992-03-31'

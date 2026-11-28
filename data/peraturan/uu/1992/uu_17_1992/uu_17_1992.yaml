@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_1992_1992-08-24.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6f98f6db671db96b72bccf78e8d3753e340b4b4215c201b0a0cc305bfd1a1b3f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9975
 pdf_sha256: 6f98f6db671db96b72bccf78e8d3753e340b4b4215c201b0a0cc305bfd1a1b3f
 tanggal_pengundangan: '1992-08-24'
 tanggal_berlaku: '1991-04-01'

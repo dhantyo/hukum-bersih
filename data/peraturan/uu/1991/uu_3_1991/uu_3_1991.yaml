@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1991_1991-07-18.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b90b150007d36f7850f81460760d104ee73eb5baa330dd71f184ffc13d1d98f3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9975
 pdf_sha256: b90b150007d36f7850f81460760d104ee73eb5baa330dd71f184ffc13d1d98f3
 tanggal_pengundangan: '1991-07-18'
 tanggal_berlaku: '1990-04-01'
