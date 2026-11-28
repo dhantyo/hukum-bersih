@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1988_1988-03-01.txt
   pasal_count: 45
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4b769315ab4fa804e89f7b2a4793b57ac333735edd0b68f390dc4227b43d4ae6
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: c675e2e396fefbcdee625403cc5f52ebb261845c3c4f1e77441cf63e4003562e
 tanggal_pengundangan: '1988-03-01'
 tanggal_berlaku: '1988-03-01'

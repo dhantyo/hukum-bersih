@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_1985_1985-12-27.txt
   pasal_count: 18
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6d79f896dfe3fd861b1f37c11acd3ce7b8b04305af8fc1c42459014813d1a1bf
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 6d79f896dfe3fd861b1f37c11acd3ce7b8b04305af8fc1c42459014813d1a1bf
 tanggal_pengundangan: '1985-12-27'
 tanggal_berlaku: '1986-01-01'

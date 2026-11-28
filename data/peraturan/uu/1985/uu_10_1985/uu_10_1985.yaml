@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_1985_1985-10-02.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 28c80eae45a9163fecae8531923759e872bac9b6b97d0422b8ba76c9b43aa3e0
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 28c80eae45a9163fecae8531923759e872bac9b6b97d0422b8ba76c9b43aa3e0
 tanggal_pengundangan: '1985-10-02'
 tanggal_berlaku: '1985-10-02'

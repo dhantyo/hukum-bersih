@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1987_1987-07-25.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8e32d3b2761e9f4e371e28fc51402d910a2823ec06dacde1ce4ba8165f3ec829
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9973
 pdf_sha256: 93741c410ce02e1d4026c3a3c2ceaac5246b7312bdae91e42a64ea881bc08ee2
 tanggal_pengundangan: '1987-07-25'
 tanggal_berlaku: '1986-04-01'

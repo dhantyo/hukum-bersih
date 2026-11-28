@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1988_1988-03-10.txt
   pasal_count: 8
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: bebe4dee4ee74f4eb537ff4e27495561db3ae8970831f6c9d4501be767014cc4
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9984
 pdf_sha256: 0ebd9ff4c326614800cb3b505e5e7948f5152c660e559aba29a792c011ca30ae
 tanggal_pengundangan: '1988-03-10'
 tanggal_berlaku: '1988-04-01'

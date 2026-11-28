@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1989_1989-04-01.txt
   pasal_count: 43
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ebe932aff0d4d3009de7d5d0978572d29b0a1f172c46d1e529acb05b489719ec
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: ebe932aff0d4d3009de7d5d0978572d29b0a1f172c46d1e529acb05b489719ec
 tanggal_pengundangan: '1989-04-01'
 tanggal_berlaku: '1989-04-01'

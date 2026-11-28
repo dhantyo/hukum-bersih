@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1990_1990-08-15.txt
   pasal_count: 18
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 29327f6bda250e18da6dd321bf21249c41d3ae95689ed2af53549c4494337cde
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 7fe8fcd5b28baafd2e925adaf2063e5a6d560683c36ef2712ab55e9e6baa44cd
 tanggal_pengundangan: '1990-08-15'
 tanggal_berlaku: '1990-08-15'

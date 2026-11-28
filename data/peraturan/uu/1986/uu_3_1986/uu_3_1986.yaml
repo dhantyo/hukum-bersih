@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1986_1986-06-04.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 45777d0cae47a95560cc461ce6b7f9c0f66fa4f87a503196ef346cd09cba9d74
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.997
 pdf_sha256: 9b65625b20e18762616ce72ad680b5efaf6bb572ee46b71a906d7abe7c6d9527
 tanggal_pengundangan: '1986-06-04'
 tanggal_berlaku: '1985-04-01'

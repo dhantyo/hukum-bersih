@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1989_1989-03-27.txt
   pasal_count: 59
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4aaf171fd36d51ef36affd9d1dc76816bf92540edc6a01e72c12050117b6d688
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 4aaf171fd36d51ef36affd9d1dc76816bf92540edc6a01e72c12050117b6d688
 tanggal_pengundangan: '1989-03-27'
 tanggal_berlaku: '1989-03-27'

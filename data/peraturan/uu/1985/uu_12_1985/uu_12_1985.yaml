@@ -29,9 +29,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_1985_1985-12-27.txt
   pasal_count: 31
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d30dab656b6635f02c7c2430b514a29d2ef437796cbd7fe62a76b5b7ea3b3175
+  checks:
+    version: 1
+    failed:
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 0.9996
 pdf_sha256: 9a68dfc623cb70cca48392ae339ef7d1c60b5e62e98c90928172bdd77731aa1c
 tanggal_pengundangan: '1985-12-27'
 tanggal_berlaku: '1986-01-01'
