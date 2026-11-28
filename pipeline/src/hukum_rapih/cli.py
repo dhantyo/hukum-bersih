@@ -74,12 +74,15 @@ def main(argv: list[str] | None = None) -> int:
 
     p = sub.add_parser("import-bpk", help="import regulations from peraturan.bpk.go.id: "
                        "metadata, PDF hashes, text for records without one")
-    p.add_argument("jenis", choices=["uu", "perppu", "pp", "perpres"])
+    p.add_argument("jenis", choices=["uu", "perppu", "pp", "perpres", "keppres", "uud"],
+                   help="keppres: only the entries in ONE_OFF; uud: the UUD 1945 and its amendments")
     p.add_argument("--limit", type=int, default=0, help="stop after N regulations done (0 = all)")
     p.add_argument("--delay", type=float, default=3.0, help="seconds between requests")
     p.add_argument("--only", default="", help="comma-separated ids (uu_4_2009,…): just these")
     p.add_argument("--no-text", action="store_true",
                    help="download PDFs and record hashes, but leave texts alone (no conversion)")
+    p.add_argument("--check-dir", type=Path, default=None,
+                   help="uud: where to write the parsed consolidated text for scripts/check_uud.py")
 
     p = sub.add_parser("reparse-bpk", help="re-convert texts from the BPK PDFs archived on archive.org")
     p.add_argument("--only", default="", help="comma-separated ids")
@@ -195,6 +198,11 @@ def main(argv: list[str] | None = None) -> int:
         only = [i.strip() for i in args.only.split(",") if i.strip()]
 
         def items():
+            if args.jenis == "uud":           # one entry for five records: import_uud below
+                return
+            if args.jenis in bpk.ONE_OFF:
+                yield from (bpk.Listing(d, int(d.split("/")[2])) for d in bpk.ONE_OFF[args.jenis])
+                return
             if not only:
                 yield from bpk.listings(session, args.jenis, cache)
             for work in only:
@@ -204,6 +212,11 @@ def main(argv: list[str] | None = None) -> int:
                     print(f"FAIL {e}", flush=True)
 
         try:
+            if args.jenis == "uud":
+                for line in bpk.import_uud(session, args.data_dir, args.check_dir):
+                    print(line, flush=True)
+                    failed += line.startswith("FAIL")
+                    done += line.startswith("ok")
             for item in items():
                 try:
                     line = bpk.import_one(session, item, args.jenis, args.data_dir, known,

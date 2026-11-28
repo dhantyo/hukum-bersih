@@ -96,6 +96,12 @@ class Relationships(_Model):
     revoked_by: list[str]
     enacts: list[str] = []      # the first importers wrote only the four above
     enacted_by: list[str] = []
+    # a regulation brought back into force, and one whose force ended without a revocation
+    # (Keppres 150/1959: the UUD 1945 applies again, the UUDS 1950 no more; decision 0027)
+    reinstates: list[str] = []
+    reinstated_by: list[str] = []
+    ends: list[str] = []
+    ended_by: list[str] = []
 
 
 class FailedCheck(_Model):
@@ -191,7 +197,7 @@ class Record(_Model):
     id: str
     akn: str
     type: str
-    number: str
+    number: str | None         # None only for the UUD 1945, which has no number
     year: int
     title: str
     tentang: str | None

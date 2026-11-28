@@ -1,0 +1,43 @@
+id: uud-perubahan_4_2002
+akn: /akn/id/act/uud-perubahan/2002/4
+type: uud-perubahan
+number: '4'
+year: 2002
+title: Perubahan Keempat Undang-Undang Dasar Negara Republik Indonesia Tahun 1945
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '2002-08-10'
+tempat_penetapan: null
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/101646/uud-no---uud-1945-dan-amandemen
+source_pdf_url: https://peraturan.bpk.go.id/Download/92287/UUD45_perubahan4.pdf
+relationships:
+  amends:
+  - id: uud_1945
+    order: 4
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+versions:
+- id: uud-perubahan_4_2002_2002-08-10
+  kind: asli
+  source: official
+  date: '2002-08-10'
+  date_basis: tanggal_penetapan
+  text: uud-perubahan_4_2002_2002-08-10.txt
+  pasal_count: 4
+  parser_version: 18
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: fb5f83279e9c3540c51ae6c37d9640ff66224b661e4a31e0e10974b91978e755
+bpk:
+  id: 101646
+  files:
+  - url: https://peraturan.bpk.go.id/Download/92287/UUD45_perubahan4.pdf
+    bpk_file_id: 92287
+    filename: UUD45_perubahan4.pdf
+    sha256: fb5f83279e9c3540c51ae6c37d9640ff66224b661e4a31e0e10974b91978e755
+    bytes: 20006

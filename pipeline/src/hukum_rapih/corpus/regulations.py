@@ -22,6 +22,9 @@ JENIS = {
     "pp": ("Peraturan Pemerintah", "PP"),
     "perpres": ("Peraturan Presiden", "Perpres"),
 }
+# The types the site has pages for; the UUD 1945, its amendments and Keppres 150/1959 are in
+# data/ (decision 0027) but not shown yet.
+SITE_TYPES = frozenset({"uu", "perppu"})
 STATUS_LABEL = {
     "berlaku": "Berlaku",
     "diubah": "Diubah",
@@ -167,14 +170,17 @@ def amends_entry(by: Regulation | None, target_id: str) -> dict[str, Any] | None
 class Regulations:
     """Every law record under ``data/peraturan``, newest first, with lookups by id."""
 
-    def __init__(self, data_dir: Path) -> None:
+    def __init__(self, data_dir: Path, types: frozenset[str] | None = SITE_TYPES) -> None:
+        """``types``: the record types to read; None reads all."""
         archived = _archive_urls(data_dir)
         found = []
         for path in sorted((data_dir / "peraturan").glob("*/*/*/*.yaml"), key=_by_folders):
             folders = _by_folders(path)
             if path.stem == folders[2] and not folders[0].startswith(".") \
                     and not folders[1].startswith("."):
-                found.append(_from_record(load_record(path), path.parent, archived))
+                rec = load_record(path)
+                if types is None or rec["type"] in types:
+                    found.append(_from_record(rec, path.parent, archived))
         self.all = sorted(found, key=lambda r: (-r.year, -_leading_int(r.number)))
         self._by_id = {r.id: r for r in self.all}
 

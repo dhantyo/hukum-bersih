@@ -11,7 +11,9 @@ Two sources, both already in data/ (no download needed):
 
 Written into each record's ``relationships``: the amending law gets ``amends`` (with the pasal it
 changes), ``revokes`` and ``enacts``; the target gets ``amended_by`` / ``revoked_by`` /
-``enacted_by``. Recomputed from scratch on every run, so it is idempotent.
+``enacted_by``. Keppres 150/1959 ``reinstates`` the UUD 1945 and ``ends`` the UUDS 1950
+(decision 0027); those keys are written only where they are not empty. Recomputed from scratch
+on every run, so it is idempotent.
 """
 
 from __future__ import annotations
@@ -38,6 +40,15 @@ AMEND_RE = re.compile(
 REVOKE_RE = re.compile(r"(?:PENCABUTAN|MENCABUT)\s+" + CITE)
 ENACT_RE = re.compile(r"^PENETAPAN\s+\"?" + CITE + r".*?(?:MENJADI|SEBAGAI)\s+UNDANG[\s-]*UNDANG",
                       re.DOTALL)
+
+# Keppres 150/1959, the decree of 5 July 1959: "Menetapkan Undang-Undang Dasar 1945 berlaku lagi
+# …, dan tidak berlakunya lagi Undang-Undang Dasar Sementara". UU 7/1950 enacts the UUDS 1950.
+UUD = "uud_1945"
+UUDS = "uu_7_1950"
+REINSTATE_RE = re.compile(r"UNDANG[\s-]*UNDANG\s+DASAR\s+(?:19)?45\s+BERLAKU\s+(?:LAGI|KEMBALI)")
+END_UUDS_RE = re.compile(r"TIDAK\s+BERLAKU(?:NYA|NJA)?\s+LAGI\s+UNDANG[\s-]*UNDANG\s+DASAR\s+SEMENTARA")
+REVERSE = {"reinstates": "reinstated_by", "ends": "ended_by"}
+FORCE_KEYS = (*REVERSE, *REVERSE.values())
 
 # Amendment instructions in the amending law's text.
 CHANGED_RE = re.compile(r"Ketentuan\s+(.{0,240}?)\s+diubah", re.DOTALL)
@@ -107,6 +118,18 @@ def from_title(tentang: str) -> dict:
     return out
 
 
+def of_constitution(rec: dict) -> list[dict]:
+    """An amendment of the UUD 1945 amends it; its number is its order (decision 0027)."""
+    return [{"id": UUD, "order": int(rec["number"])}] if rec["type"] == "uud-perubahan" else []
+
+
+def force_in_text(text: str) -> dict[str, list[str]]:
+    """What a decree's body brings back into force and ends (only the decree of 1959 so far)."""
+    body = re.sub(r"\s+", " ", re.sub(r"\\(.)", r"\1", text.split("ATTACHMENT")[0])).upper()
+    return {"reinstates": [UUD] if REINSTATE_RE.search(body) else [],
+            "ends": [UUDS] if END_UUDS_RE.search(body) else []}
+
+
 def _natural(p: str) -> tuple[int, str]:
     m = re.match(r"(\d+)(.*)", p)
     return (int(m[1]), m[2]) if m else (10**6, p)
@@ -170,14 +193,22 @@ def build(data_dir: Path) -> dict[str, int]:
     paths = {p.stem: p for p in (data_dir / "peraturan").glob("*/*/*/*.yaml")}
     recs = {k: load_record(p) for k, p in paths.items()}
     rel = {k: {"amends": [], "amended_by": [], "revokes": [], "revoked_by": [],
-               "enacts": [], "enacted_by": []} for k in recs}
+               "enacts": [], "enacted_by": [], **{key: [] for key in FORCE_KEYS}} for k in recs}
     for k, rec in recs.items():
         found = from_title(rec.get("tentang") or "")
-        if found["amends"]:
-            text = ""
+        found["amends"] += of_constitution(rec)
+        text = ""
+        if found["amends"] or rec["type"] == "keppres":
             for v in rec.get("versions") or []:
                 if v.get("text") and (paths[k].parent / v["text"]).exists():
                     text = (paths[k].parent / v["text"]).read_text()
+        if rec["type"] == "keppres" and text:
+            for key, ids in force_in_text(text).items():
+                for target in ids:
+                    rel[k][key].append(target)
+                    if target in rel:
+                        rel[target][REVERSE[key]].append(k)
+        if found["amends"]:
             from . import amendments
 
             changes = (amendments.changes(amendments.flatten(text))
@@ -229,12 +260,15 @@ def build(data_dir: Path) -> dict[str, int]:
                     known |= set(entry["changes"].get("disisipkan", []))
                     entry["changes"] = _checked(entry["changes"], known)
 
-    stats = {"amends": 0, "revokes": 0, "enacts": 0, "with_changes": 0, "updated": 0}
+    stats = {"amends": 0, "revokes": 0, "enacts": 0, "reinstates": 0, "ends": 0,
+             "with_changes": 0, "updated": 0}
     for k, rec in recs.items():
         r = rel[k]
-        stats["amends"] += len(r["amends"])
-        stats["revokes"] += len(r["revokes"])
-        stats["enacts"] += len(r["enacts"])
+        for key in FORCE_KEYS:                  # rare: kept out of the other records
+            if not r[key]:
+                del r[key]
+        for key in ("amends", "revokes", "enacts", "reinstates", "ends"):
+            stats[key] += len(r.get(key, []))
         stats["with_changes"] += sum(1 for a in r["amends"] if a.get("changes"))
         if rec.get("relationships") != r:
             rec["relationships"] = r

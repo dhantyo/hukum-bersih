@@ -19,10 +19,10 @@ on:
         default: import
         options: [import, reparse]
       jenis:
-        description: "Type of regulation"
+        description: "Type of regulation (keppres: only Keppres 150/1959; uud: the UUD 1945, its amendments and the check against the consolidated text)"
         default: "uu"
         type: choice
-        options: [uu, perppu, pp, perpres]
+        options: [uu, perppu, pp, perpres, keppres, uud]
       batches:
         description: "Max batches of 50 (0 = until the time budget is used)"
         default: "0"
@@ -90,12 +90,16 @@ jobs:
             if [ "$MODE" = reparse ]; then
               out=$(cd pipeline && uv run hukum-rapih reparse-bpk --limit "$BATCH" $ONLY 2>&1 | tee /dev/stderr || true)
             else
-              out=$(cd pipeline && xvfb-run -a uv run hukum-rapih import-bpk "$JENIS" --limit "$BATCH" $ONLY $NO_TEXT 2>&1 | tee /dev/stderr || true)
+              out=$(cd pipeline && xvfb-run -a uv run hukum-rapih import-bpk "$JENIS" --limit "$BATCH" $ONLY $NO_TEXT --check-dir "$RUNNER_TEMP/uud-check" 2>&1 | tee /dev/stderr || true)
             fi
             # each law is shown in the log as it is done (tee above); $out is kept for the summary
             n=$(echo "$out" | grep -c '^ok' || true)
             echo "$out" | grep -E '^(ok|FAIL|STOP|done)' >> "$GITHUB_STEP_SUMMARY" || true
             (cd pipeline && uv run hukum-rapih relations)   # link amendments, revocations
+            if [ -f "$RUNNER_TEMP/uud-check/uud_1945_satu-naskah.txt" ]; then   # decision 0027
+              (cd pipeline && uv run python scripts/check_uud.py "$RUNNER_TEMP/uud-check/uud_1945_satu-naskah.txt" --out "$RUNNER_TEMP/uud-check/report.md") || true
+              cat "$RUNNER_TEMP/uud-check/report.md" >> "$GITHUB_STEP_SUMMARY" || true
+            fi
             git add data/
             if ! git diff --cached --quiet; then
               git commit -qm "peraturan/$JENIS: $MODE $n from peraturan.bpk.go.id"
@@ -111,6 +115,7 @@ jobs:
             echo "batch $batch: $n law(s) in $((took / 60)) min"
             [ "$n" -eq 0 ] && break
             [ -n "$ONLY" ] && break                      # a list of ids is done in one go
+            case "$JENIS" in keppres|uud) break ;; esac  # a few fixed entries, done in one go
             [ "$BATCHES" -gt 0 ] && [ "$batch" -ge "$BATCHES" ] && break
           done
           echo "From BPK: $(grep -l '^bpk:' -r data/peraturan/$JENIS --include='*.yaml' | wc -l) of $(find data/peraturan/$JENIS -name '*.yaml' | wc -l) records" | tee -a "$GITHUB_STEP_SUMMARY"
@@ -121,6 +126,20 @@ jobs:
             gh workflow run import-bpk.yml --ref "${GITHUB_REF_NAME}" -f mode="$MODE" -f jenis="$JENIS" \
               -f batches="$BATCHES" -f no_text="${{ inputs.no_text }}" -f chain=true
           fi
+      - name: "UUD: how the parser read each PDF, for review (decision 0027)"
+        if: env.JENIS == 'uud'
+        run: |
+          cd pipeline
+          for pdf in "$RUNNER_TEMP"/uud-check/*.pdf; do
+            uv run hukum-rapih explain "$pdf" > "${pdf%.pdf}.explain.txt" 2>&1 || true
+          done
+      - uses: actions/upload-artifact@v4
+        if: env.JENIS == 'uud'
+        with:
+          name: uud-check # texts only; the PDFs stay on the runner
+          path: |
+            ${{ runner.temp }}/uud-check/*.txt
+            ${{ runner.temp }}/uud-check/*.md
       - uses: ./.github/actions/ocr-cache
         if: always()
         with:

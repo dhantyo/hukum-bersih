@@ -1,0 +1,43 @@
+id: uud-perubahan_3_2001
+akn: /akn/id/act/uud-perubahan/2001/3
+type: uud-perubahan
+number: '3'
+year: 2001
+title: Perubahan Ketiga Undang-Undang Dasar Negara Republik Indonesia Tahun 1945
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: '2001-11-09'
+tempat_penetapan: null
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/101646/uud-no---uud-1945-dan-amandemen
+source_pdf_url: https://peraturan.bpk.go.id/Download/92286/UUD45_perubahan3.pdf
+relationships:
+  amends:
+  - id: uud_1945
+    order: 3
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+versions:
+- id: uud-perubahan_3_2001_2001-11-09
+  kind: asli
+  source: official
+  date: '2001-11-09'
+  date_basis: tanggal_penetapan
+  text: uud-perubahan_3_2001_2001-11-09.txt
+  pasal_count: 1
+  parser_version: 18
+  pdf_source: peraturan.bpk.go.id
+  pdf_sha256: 11f12075a6c51610d4ea94361ec315079b9f8f583731e4d84d47556bbfe960e6
+bpk:
+  id: 101646
+  files:
+  - url: https://peraturan.bpk.go.id/Download/92286/UUD45_perubahan3.pdf
+    bpk_file_id: 92286
+    filename: UUD45_perubahan3.pdf
+    sha256: 11f12075a6c51610d4ea94361ec315079b9f8f583731e4d84d47556bbfe960e6
+    bytes: 26214

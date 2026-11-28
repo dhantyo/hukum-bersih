@@ -1,0 +1,35 @@
+id: uud-perubahan_2_2000
+akn: /akn/id/act/uud-perubahan/2000/2
+type: uud-perubahan
+number: '2'
+year: 2000
+title: Perubahan Kedua Undang-Undang Dasar Negara Republik Indonesia Tahun 1945
+tentang: null
+short_name: null
+status: null
+tanggal_penetapan: null
+tempat_penetapan: null
+pejabat_penetapan: null
+pemrakarsa: null
+source_url: https://peraturan.bpk.go.id/Details/101646/uud-no---uud-1945-dan-amandemen
+source_pdf_url: https://peraturan.bpk.go.id/Download/92285/UUD45_perubahan2.pdf
+relationships:
+  amends:
+  - id: uud_1945
+    order: 2
+  amended_by: []
+  revokes: []
+  revoked_by: []
+  enacts: []
+  enacted_by: []
+versions: []
+bpk:
+  id: 101646
+  files:
+  - url: https://peraturan.bpk.go.id/Download/92285/UUD45_perubahan2.pdf
+    bpk_file_id: 92285
+    filename: UUD45_perubahan2.pdf
+    sha256: e8f1669214348851b48a1efcc2daafce1a809bb0b312c8cba772459e0e02ab6f
+    bytes: 23271
+pdf_quality: image_only_or_unparsed
+parser_version_tried: 18
