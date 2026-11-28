@@ -33,13 +33,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_2021_2021-10-19.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 946836381b593fb62a2118c14f2610fbff7aadfecc628df95196e75b416cfddc
   ocr: true
   ocr_engine: indra
   ocr_fixed: 1
   ocr_unknown: 10
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9725
+    ocr_unknown_rate: 0.0106
 pdf_sha256: ad0c85f15586492df0eeb51b8933444b6a4d5a340c5c960f5d2b343280c00be6
 tanggal_pengundangan: '2021-10-19'
 tanggal_berlaku: '2021-10-19'

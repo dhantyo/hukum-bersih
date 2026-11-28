@@ -47,13 +47,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2020_2020-09-28.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: aa37326a49bafa94ce3bbc430b7f3ee71a361c2f9c8843bccbcc9839170c954c
   ocr: true
   ocr_engine: indra
   ocr_fixed: 1
   ocr_unknown: 4
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9941
+    ocr_unknown_rate: 0.0014
 pdf_sha256: 9a051ee5bda90522d73398cab4ee0c457da3dc6489eedac8d9e02857cee3a243
 tanggal_pengundangan: '2020-09-29'
 tanggal_berlaku: '2020-09-29'

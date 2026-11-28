@@ -28,13 +28,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_2020_2020-10-26.txt
   pasal_count: 32
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 62553c5140531a32d5dd47315d32204b9bfd599456dbaf8c6272251485696a2f
   ocr: true
   ocr_engine: indra
   ocr_fixed: 1
   ocr_unknown: 32
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9973
+    ocr_unknown_rate: 0.0052
 pdf_sha256: bcd59c45a97939f3432628f58608886c04b8fd374749a540e3070801c2e568ef
 tanggal_pengundangan: '2020-10-26'
 tanggal_berlaku: '2021-01-01'

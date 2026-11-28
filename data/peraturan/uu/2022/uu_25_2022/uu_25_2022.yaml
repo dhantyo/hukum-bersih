@@ -34,13 +34,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_25_2022_2022-09-27.txt
   pasal_count: 2
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ed182a2c3a5b661e8cfdbebd3da76becd65de5f3a8e2920625b49e1339623cf9
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 8
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9864
+    ocr_unknown_rate: 0.0064
 pdf_sha256: ed182a2c3a5b661e8cfdbebd3da76becd65de5f3a8e2920625b49e1339623cf9
 tanggal_pengundangan: '2022-09-27'
 tanggal_berlaku: '2022-09-27'
