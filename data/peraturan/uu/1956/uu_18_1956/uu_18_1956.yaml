@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_1956_1956-08-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ef03af59df0507efefb82a7effcc9b735b71ffff9dd6ebf8ea1fba2f8bf444bf
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9959
 pdf_sha256: bbbfea2e312fcce62213734c541fa46b479b93fb5989656fd49d962e0159e5f7
 tanggal_pengundangan: '1956-09-17'
 tanggal_berlaku: '1956-09-17'

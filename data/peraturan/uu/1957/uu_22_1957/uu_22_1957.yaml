@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_1957_1957-04-08.txt
   pasal_count: 32
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8aceac409580d599debef6090a9ea35607e6d1dd8d416139dd6efd7f6581cbb8
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: 8aceac409580d599debef6090a9ea35607e6d1dd8d416139dd6efd7f6581cbb8
 tanggal_pengundangan: '1957-04-08'
 lembaran_negara: 'LN. 1957 No. 42, TLN No. 1227, LL SETNEG : 33 HLM'

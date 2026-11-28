@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_1957_1957-03-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 36bd225f98d3b581cf904f87111c922c03c5f6b2c6ddaa2beac2ae77c918fe75
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9882
 tanggal_pengundangan: '1957-04-08'
 tanggal_berlaku: '1953-01-01'
 lembaran_negara: 'LN. 1957 No. 38, LL SETNEG : 2 HLM'

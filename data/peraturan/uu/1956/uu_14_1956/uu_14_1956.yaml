@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1956_1956-07-16.txt
   pasal_count: 11
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 52e31c33722d6fdc1e6e40debcc69a825433fbb90074bc31c7981af806eb9b48
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9978
 pdf_sha256: 66ffbb460860e5ab738938178f28b0439e8296e15f8c4221ca12d3e7d15124f5
 tanggal_pengundangan: '1956-07-17'
 tanggal_berlaku: '1956-07-01'

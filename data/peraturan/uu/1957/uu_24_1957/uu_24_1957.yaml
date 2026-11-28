@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_1957_1957-04-01.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 72a998983175d7bf2fceff164f238154753b4e5f950f1ffe7cb9d8bbfd58f7d3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9953
 pdf_sha256: 72a998983175d7bf2fceff164f238154753b4e5f950f1ffe7cb9d8bbfd58f7d3
 tanggal_pengundangan: '1957-05-23'
 tanggal_berlaku: '1956-12-31'

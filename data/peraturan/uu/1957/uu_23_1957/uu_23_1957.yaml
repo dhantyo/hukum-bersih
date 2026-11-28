@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_1957_1957-03-25.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 444a31b531458d7971a1d3160984a3908e72b2ac00bcc68f4db6c5283fcd493e
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9968
 pdf_sha256: 444a31b531458d7971a1d3160984a3908e72b2ac00bcc68f4db6c5283fcd493e
 tanggal_pengundangan: '1957-04-08'
 tanggal_berlaku: '1955-07-05'

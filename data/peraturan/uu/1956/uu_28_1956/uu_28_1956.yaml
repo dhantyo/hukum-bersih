@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_28_1956_1956-12-31.txt
   pasal_count: 7
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b8cdfd673c5425bea324f7e2833f2325dc49496e88d3c42cf1f967fac4f2e955
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9964
 pdf_sha256: 5196c6a910aaf849ff44a1f073d70d5412b248fec821f7b685050e1af89eeb67
 tanggal_pengundangan: '1956-12-31'
 tanggal_berlaku: '1956-12-31'

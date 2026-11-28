@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_26_1957_1957-07-27.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 528f044be93d04541596862e19d6652f239d8f6b9dfce4c715dfaec5242e52f5
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9856
 pdf_sha256: 528f044be93d04541596862e19d6652f239d8f6b9dfce4c715dfaec5242e52f5
 tanggal_pengundangan: '1957-08-10'
 tanggal_berlaku: '1957-08-10'

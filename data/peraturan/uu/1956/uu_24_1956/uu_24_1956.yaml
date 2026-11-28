@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_1956_1956-11-29.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 34a98a90a1dcd5408d3bf1a88f77f345414e0bf1dba6777e09a2abd9e91ca0c4
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9994
 pdf_sha256: a2ed73df505eeed45ebc5a57636bebbe840ee048c1641f075668112d89b672f0
 tanggal_pengundangan: '1956-12-07'
 tanggal_berlaku: '1956-12-07'

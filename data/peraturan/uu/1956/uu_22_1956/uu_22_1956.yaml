@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_1956_1956-09-01.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 258286980de1f91372048932f98240ad6a7de59111e2d97d24b1dce1f133102e
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9926
 pdf_sha256: 258286980de1f91372048932f98240ad6a7de59111e2d97d24b1dce1f133102e
 tanggal_pengundangan: '1956-11-15'
 tanggal_berlaku: '1950-02-01'

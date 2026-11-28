@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_35_1956_1956-12-31.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 254d52ed0f93559e4a15c19728ff1756ccc836a52d72614139b5191053b00f80
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9963
 pdf_sha256: 7e1846f9be3b28fdf6be571c31eb2c42d27db5e9c9393957baeec32da946c5fd
 tanggal_pengundangan: '1956-12-31'
 tanggal_berlaku: '1957-01-30'

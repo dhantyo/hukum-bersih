@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_1956_1956-11-29.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7731f053f50e5dd31423944b913bd3149cf94cd76a76a1fb290280470550650c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9938
 pdf_sha256: 89ae7c1e014cf02bcb97bf259e185d852e1ae4a9031433ca1687e0d92f5c2640
 tanggal_pengundangan: '1956-12-07'
 tanggal_berlaku: '1956-11-10'

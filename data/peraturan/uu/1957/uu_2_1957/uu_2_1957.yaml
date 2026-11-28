@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1957_1957-01-28.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c7d69fb936814bfecdfec296697cea2357ed78e56c42572b97f360d99dd58445
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: d63b150aa27199fff504b6f63c8836665e24690c52c2eef24ab32f493264cac8
 tanggal_pengundangan: '1957-02-13'
 tanggal_berlaku: '1953-12-31'

@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1956_1956-03-19.txt
   pasal_count: 13
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b654c569361d5c400689421ca673293629a041ccc8813ef697f04c4c90f464f3
+  checks:
+    version: 1
+    failed:
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 0.9985
 pdf_sha256: 62d9fbd2ae6f1ec332933e1b2a02c6d54759ab99cee9cd4416a7c57d5b5d610d
 tanggal_pengundangan: '1956-03-26'
 tanggal_berlaku: '1951-01-01'

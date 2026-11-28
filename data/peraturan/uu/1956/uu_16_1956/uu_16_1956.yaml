@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_1956_1956-08-27.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: faddef9fa8e5771ecddf5aa9dd02f9a39b35cabfe132ee9ea4a7cb4135d35547
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9969
 pdf_sha256: d274798f3e1c7da59a9fc46fe0a0f40e74253407e7c9ce966388bb48f321d3c3
 tanggal_pengundangan: '1956-09-08'
 tanggal_berlaku: '1956-09-08'

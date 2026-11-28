@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_1957_1957-01-31.txt
   pasal_count: 7
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 134b94fcad01589fe1255ca6670770c30bb8ae39384d161bb7b3e3a9b5ddd0ea
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 tanggal_pengundangan: '1957-04-08'
 lembaran_negara: 'LN. 1957 No. 41, TLN No. 1327, LL SETNEG : 12 HLM'
 subjek: PERPAJAKAN

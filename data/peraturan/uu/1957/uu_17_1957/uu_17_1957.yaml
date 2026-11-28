@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_1957_1957-03-25.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c4658769e306c814454743d3da1d85456e549396993eecf261ec0f6b0682b86c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9917
 pdf_sha256: c4658769e306c814454743d3da1d85456e549396993eecf261ec0f6b0682b86c
 tanggal_pengundangan: '1957-04-08'
 tanggal_berlaku: '1953-01-01'

@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_34_1956_1956-12-31.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d028e942133b475b99beaa01bdbca0ca25ed495116f23bca063704a656af0683
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9898
 pdf_sha256: 5a510aa43321e4f64d167fcb11c6ecff0f383b9a1d88b7d2a0c68b18c5a651d1
 tanggal_pengundangan: '1956-12-31'
 tanggal_berlaku: '1955-09-01'
