@@ -28,13 +28,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_89_2024_2024-10-28.txt
   pasal_count: 9
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ec2ae3c7484f4d7cb6c56e9b908cea16fb5296ccdb8afff62bebaf0dc7db7949
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 11
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9873
+    ocr_unknown_rate: 0.0076
 pdf_sha256: ec2ae3c7484f4d7cb6c56e9b908cea16fb5296ccdb8afff62bebaf0dc7db7949
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'

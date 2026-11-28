@@ -29,13 +29,18 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_101_2024_2024-10-28.txt
   pasal_count: 10
-  parser_version: 16
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 87dde6a14b1cab33a4064487dc14c71125c2543aa674012319f6c581774d03ca
   ocr: true
   ocr_engine: indra
   ocr_fixed: 0
   ocr_unknown: 26
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.987
+    ocr_unknown_rate: 0.0185
 pdf_sha256: 87dde6a14b1cab33a4064487dc14c71125c2543aa674012319f6c581774d03ca
 tanggal_pengundangan: '2024-10-28'
 tanggal_berlaku: '2024-10-28'
