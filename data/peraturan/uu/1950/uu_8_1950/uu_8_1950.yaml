@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1950_1950-11-04.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6bb02ebd7f2f087c3243f170be350fe00c98f5eabf8d4dff8b105d6be341640c
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9975
 pdf_sha256: 8957ca92d4b0a2a80a109ad82f08dac0aa52e1d3a4d831a053f880b07cfffaf1
 tanggal_pengundangan: '1950-11-04'
 tanggal_berlaku: '1950-02-10'

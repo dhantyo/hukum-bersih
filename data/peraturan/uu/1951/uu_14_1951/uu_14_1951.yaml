@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1951_1951-08-29.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7c443cb999a7df9254860c9543b634e2d003f6eb01c2c27415638b6989846f5d
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9944
 pdf_sha256: 612adf325ccc469ea3daa6e07efb4439e2711f8f96911687eac076d7a676272f
 tanggal_pengundangan: '1951-09-17'
 tanggal_berlaku: '1951-01-01'

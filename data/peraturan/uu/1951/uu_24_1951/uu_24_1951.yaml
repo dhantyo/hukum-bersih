@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_1951_1951-12-06.txt
   pasal_count: 8
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8479b08880a0f36914323fa7e702eab5f26f9144ca1157c1ea670f240cc16887
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9992
 pdf_sha256: b674dee38e77d2fc582614c4a3a0b5c5bf68069d991c6a2ca2661ccf16b7924b
 tanggal_pengundangan: '1951-12-15'
 tanggal_berlaku: '1951-12-15'

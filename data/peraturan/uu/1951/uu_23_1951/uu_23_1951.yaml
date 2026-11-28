@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_1951_1951-11-28.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 35080efed4f5b199631fa54582b531658e9c54fb6910ba8522dcc3cab491d54b
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9945
 pdf_sha256: 4edcb65d3252354c749000ea273a87f09345fea44ecc4e8a545a740d353c9a39
 tanggal_pengundangan: '1951-12-10'
 tanggal_berlaku: '1951-12-10'

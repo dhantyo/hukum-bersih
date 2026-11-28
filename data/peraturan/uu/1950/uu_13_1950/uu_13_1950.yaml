@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_1950_1950-08-08.txt
   pasal_count: 7
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3f176e35c651eb182f47f33f9ec7eef92f1fee83faff99fb13ffcaa1380fc81b
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 1.0
 tanggal_pengundangan: '1950-08-08'
 lembaran_negara: 'bphn.go.id : 4 HLM'
 subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH

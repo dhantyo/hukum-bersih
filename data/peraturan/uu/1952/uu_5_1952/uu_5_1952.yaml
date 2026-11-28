@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_5_1952_1952-07-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f7c44b69b19af41032c5485f0f79ef49c7f23a428c577412b461fe9dfd031069
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9942
 pdf_sha256: eda85f9a89da4f76823034ed34f61a18bac101de7ba567ce38d636e001de6a47
 tanggal_pengundangan: '1952-08-05'
 tanggal_berlaku: '1952-08-05'

@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_1951_1951-11-28.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: dc03d0184e1e226104f64de1f57633a598c6a70e239b1662f7c183aa7b5f3dba
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9937
 pdf_sha256: e4fd4a2e583e4216d9aa1f2859a59a987561b32ba22a7a1a16ccf9a40166a949
 tanggal_pengundangan: '1951-12-03'
 tanggal_berlaku: '1951-12-03'

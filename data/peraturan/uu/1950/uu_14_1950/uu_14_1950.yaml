@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1950_1950-08-08.txt
   pasal_count: 7
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4f96b28d961b7177b62f83164d1cf4de0d8433886efc66ea5b64696dd0d75702
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 4f96b28d961b7177b62f83164d1cf4de0d8433886efc66ea5b64696dd0d75702
 tanggal_pengundangan: '1950-08-08'
 lembaran_negara: 'LL BPHN : 4 HLM.'

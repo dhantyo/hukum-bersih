@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_1950_1950-08-14.txt
   pasal_count: 7
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7b317439a2204ad9a6f659debf5e9e7b8043303113e02b62673bb8a8a5e50dfa
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 1.0
 tanggal_pengundangan: '1950-08-14'
 tanggal_berlaku: '1950-08-15'
 lembaran_negara: 'LN. 1950 No.45/ bphn.go.id : 5 Hlm'

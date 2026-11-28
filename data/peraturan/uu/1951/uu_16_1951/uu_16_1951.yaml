@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_1951_1951-09-17.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: dd68917dac80af19731228164b6eeae80198188389d4a448372150f854c3336e
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9943
 pdf_sha256: 26ac22141ffe1503301a0812f2c7c1310f4748ab6057e4016c4970b3152b4658
 tanggal_pengundangan: '1951-09-22'
 tanggal_berlaku: '1951-09-22'

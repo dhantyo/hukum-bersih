@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_1951_1951-10-12.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 944252d2f81ca98b64b2465071ade1e60d8f90aa5108066c74171881905b87a1
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9946
 tanggal_pengundangan: '1951-10-15'
 tanggal_berlaku: '1951-10-15'
 lembaran_negara: 'LN.1951/NO.101, LL SETNEG : 2 HLM.'

@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1952_1952-03-11.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d1c4f40baadd9d913eafcd1a0e7b9156116380c5f0485e72cf2583869ec5cd63
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.998
 pdf_sha256: f93f75c0a8d7bce87b6e29656d91928aaffb2d2480c5b9f61bf44273c5b22c93
 tanggal_pengundangan: '1952-03-21'
 tanggal_berlaku: '1952-03-21'

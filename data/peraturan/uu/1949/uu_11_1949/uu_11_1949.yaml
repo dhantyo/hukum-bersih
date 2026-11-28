@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1949_1949-12-14.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a570c986dd2bda34082680fc34663f44aff8fcebfbdcd2bc6486bbcdbc864bd9
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: a570c986dd2bda34082680fc34663f44aff8fcebfbdcd2bc6486bbcdbc864bd9
 tanggal_pengundangan: '1949-12-14'
 lembaran_negara: 'LL SETNEG: 2 Hlm.'

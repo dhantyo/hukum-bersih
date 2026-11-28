@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1951_1951-01-31.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: cd0c1a5c04fb180d0125a70ebb6bd8a8971dd35ee9d7a7adf7481b86ffbdfe5d
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9979
 pdf_sha256: 629c4610ec680e3cd6d8deb93cd777db345d4402c65a2773b27c05599ee2762e
 tanggal_pengundangan: '1951-01-31'
 tanggal_berlaku: '1951-01-31'

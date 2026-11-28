@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1951_1951-07-10.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 46e9fc27f4cd566e63c6f9d197b0419f25ad45cc8df261b2d419eec66d105601
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9995
 tanggal_pengundangan: '1951-08-01'
 tanggal_berlaku: '1951-08-01'
 lembaran_negara: 'LL SETNEG: 15 HLM.'

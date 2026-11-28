@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1952_1952-07-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ba633054f03e9778638e877438926b9c24955e491170613ea8545022c8a92a93
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9962
 pdf_sha256: 10aa4064caecbaa94435a1e96c94ff65a4d4b9d1e74418ca59950e31e1117075
 tanggal_pengundangan: '1952-08-05'
 tanggal_berlaku: '1952-08-05'

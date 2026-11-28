@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1950_1950-07-01.txt
   pasal_count: 15
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 72b46f477c50fba6282b9f14a3d1f80722de321bca79779e4c7a268f3b5e2dd4
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9992
 pdf_sha256: d83cc1371a1188df1793849d553736d3f32afad070bd0e558bfc6426a63ffb84
 tanggal_pengundangan: '1950-07-06'
 lembaran_negara: 'LL Setneg : 4 Hlm'

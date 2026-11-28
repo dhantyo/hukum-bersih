@@ -34,9 +34,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1950_1950-05-15.txt
   pasal_count: 1
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9928d8ae36ae88f3dc8b78d477886de095a796c3858fe88ed1b0e5c77a82d389
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9991
 pdf_sha256: 3e07073779295894212949bcef7f8200b5d96c4e0045ef937037dc756787d8f1
 tanggal_pengundangan: '1950-05-19'
 tanggal_berlaku: '1950-05-20'

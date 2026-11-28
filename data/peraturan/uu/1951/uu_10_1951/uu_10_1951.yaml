@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_1951_1951-06-30.txt
   pasal_count: 10
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 13f6bc4764c65cf4190257ac1074b36f3f69ceee3bfb2d35c1e82081f95a793e
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9966
 pdf_sha256: eaeaf898c013518a54322abb8cae3b3e6fc6dce56ee96eaffa89e027a24a45af
 tanggal_pengundangan: '1951-07-13'
 tanggal_berlaku: '1951-07-13'

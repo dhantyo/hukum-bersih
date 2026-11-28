@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_1950_1950-07-04.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ab24e662b5ddd26641e9b1815b36c447acfd0a1a8fdf000a7b4521c48a8f41b3
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9957
 pdf_sha256: 1cd335a91efe8923f6a9b4d36e9b6f8a54c45901cf7fad3aab7f78bb94e60106
 tanggal_pengundangan: '1950-07-04'
 tanggal_berlaku: '1950-01-01'

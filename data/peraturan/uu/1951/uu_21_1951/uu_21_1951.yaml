@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_1951_1951-10-30.txt
   pasal_count: 6
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 199d96be26ee5b62594f19d36e9d285b154f0ee6eb3b1e49349ba18a75f7952a
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.996
 pdf_sha256: 5f97179cc130e4928d5be7571790b266163aba8d3795146829ee6d36eb2e37d4
 tanggal_pengundangan: '1951-11-12'
 tanggal_berlaku: '1951-11-12'
