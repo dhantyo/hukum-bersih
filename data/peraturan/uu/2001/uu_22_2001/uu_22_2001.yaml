@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_2001_2001-11-23.txt
   pasal_count: 67
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e0811a77f874ff52a17b8f69509afba445ab112d3868637853c87ddfe962c02a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9997
 pdf_sha256: e0811a77f874ff52a17b8f69509afba445ab112d3868637853c87ddfe962c02a
 tanggal_pengundangan: '2001-11-23'
 tanggal_berlaku: '2001-11-23'

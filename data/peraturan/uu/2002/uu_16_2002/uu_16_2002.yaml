@@ -36,9 +36,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2002_2002-04-17.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6b087d00e7943d639a5f96566b2fe56a7ce55a7a51169f6512fad5274818391a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9988
 pdf_sha256: 6b087d00e7943d639a5f96566b2fe56a7ce55a7a51169f6512fad5274818391a
 tanggal_pengundangan: '2002-04-17'
 tanggal_berlaku: '2002-04-17'

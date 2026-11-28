@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2001_2001-08-01.txt
   pasal_count: 139
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8e61f61a107170da844989a5e24fa5e5d26a793eb16ba644027c0581d5db98d9
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9991
 pdf_sha256: 5d269d82df9626048ee3cb9e44185c53b4765c091427bddd01c1fe2ead9d78ef
 tanggal_pengundangan: '2001-08-01'
 tanggal_berlaku: '2001-08-01'

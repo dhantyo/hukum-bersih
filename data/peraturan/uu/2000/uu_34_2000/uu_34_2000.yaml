@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_34_2000_2000-12-20.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4208240fe5dd8a02e9d802813701f783ce7a6816867718303a2cd0b95696cd45
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: 4208240fe5dd8a02e9d802813701f783ce7a6816867718303a2cd0b95696cd45
 tanggal_pengundangan: '2000-12-20'
 tanggal_berlaku: '2000-12-20'

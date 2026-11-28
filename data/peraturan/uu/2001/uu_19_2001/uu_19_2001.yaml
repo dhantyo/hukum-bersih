@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_2001_2001-11-14.txt
   pasal_count: 17
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3c47943688b74d314df9852d5c949d778a9d0afe7c692d83c872ae9a745403b3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: 3c47943688b74d314df9852d5c949d778a9d0afe7c692d83c872ae9a745403b3
 tanggal_pengundangan: '2001-11-14'
 tanggal_berlaku: '2002-01-01'
