@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2008_2008-04-28.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 80ce2df45979b274fee3a60e14860bf5a74758baee643f9f7db7920091e364ee
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 69b7a9ee41e1def971f2fa79aa99c1b05dac15cf97853b7c563c73a849900502
 tanggal_pengundangan: '2008-04-28'
 tanggal_berlaku: '2008-04-28'

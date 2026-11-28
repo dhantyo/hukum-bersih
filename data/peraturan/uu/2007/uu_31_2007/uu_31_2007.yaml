@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_31_2007_2007-08-10.txt
   pasal_count: 22
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9cf84a6775fea6b82ae9123d284d3a13d0c7b11703657e8d30aabc2061a02703
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9925
 pdf_sha256: 0c2157b5848a9c5e256d8904b74652e1ce417a2c4171de0201c549faa2efa329
 tanggal_pengundangan: '2007-08-10'
 tanggal_berlaku: '2007-08-10'

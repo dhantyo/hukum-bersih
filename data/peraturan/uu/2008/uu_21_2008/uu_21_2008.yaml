@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_2008_2008-07-16.txt
   pasal_count: 70
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ba044926efef1ab4d9ce708fa715dcd549532ed3ed257d9b9640b61d91c48ecd
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9985
 pdf_sha256: d106a1645d4fdc5ce3c3f639b1a83d0733751335e84c8a6f971053550507a415
 tanggal_pengundangan: '2008-07-16'
 tanggal_berlaku: '2008-07-16'

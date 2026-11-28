@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_9_2008_2008-03-10.txt
   pasal_count: 32
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ba3c8440379dc531644a6f699526d185c5a0fbfd953a999671a183030b11ea4d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.996
 pdf_sha256: e0932ac3fd548e842e39b0743c36910e5d6d0aaecb29fbe552e242e4bfb6159a
 tanggal_pengundangan: '2008-03-10'
 tanggal_berlaku: '2008-03-10'

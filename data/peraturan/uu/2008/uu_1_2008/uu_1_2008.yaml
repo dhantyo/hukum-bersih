@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2008_2008-01-04.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: cfefe2353c1d4d06f39c3cc5e3f970403e63b41d3080efe558d02953aad31560
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9987
 pdf_sha256: 5a4d89577e242d8e1eb70c944a43b511e93b778cc92f39852d4b2ed2f919d8ed
 tanggal_pengundangan: '2008-01-04'
 tanggal_berlaku: '2008-01-04'

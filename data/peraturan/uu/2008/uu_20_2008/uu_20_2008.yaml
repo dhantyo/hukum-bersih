@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2008_2008-07-04.txt
   pasal_count: 44
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1843c8d96832446bde92a79e7b87ad5f8468d00c562492dfc9a1d6727feb4e8b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9966
 pdf_sha256: c4d43a174787cf8c582e2377e86c049c193724136f7430fdf524de516427aa80
 tanggal_pengundangan: '2008-07-04'
 tanggal_berlaku: '2008-07-04'

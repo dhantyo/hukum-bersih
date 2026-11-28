@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_2008_2008-05-07.txt
   pasal_count: 32
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e04f6c2cd8a92697351421e1bfe8f78b5a1ec91304f937c4177b5c20c5a6a836
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 2f6a7d48f73f945c61e94e5b2787ce568859a5f03621235f2832ee8a5a16f9ba
 tanggal_pengundangan: '2008-05-07'
 tanggal_berlaku: '2008-05-07'

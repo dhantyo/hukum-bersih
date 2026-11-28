@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2008_2008-04-30.txt
   pasal_count: 64
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1265f6ec0dba866732982fe5036f88836967fd87cc346a2e53f75d39f12fd717
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 98eb4b06461ac3ccb52237e3c79e48a339a70a2a372611d706424c9ad27edb50
 tanggal_pengundangan: '2008-04-30'
 tanggal_berlaku: '2008-04-30'

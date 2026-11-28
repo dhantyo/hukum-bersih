@@ -29,9 +29,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_2008_2008-01-04.txt
   pasal_count: 23
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 187c1683418596f01f9ca806f35b993cca0f01d57e9fba0716d529a6bb228c7f
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: penjelasan 1
+    word_coverage: 0.9941
 pdf_sha256: 187c1683418596f01f9ca806f35b993cca0f01d57e9fba0716d529a6bb228c7f
 tanggal_pengundangan: '2008-01-04'
 tanggal_berlaku: '2008-01-04'

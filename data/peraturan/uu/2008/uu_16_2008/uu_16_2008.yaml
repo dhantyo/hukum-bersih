@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2008_2008-05-07.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 125ee16210c2c7a662449063514caf1fd225385e891c37f69a74961ecd1a1c37
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 46be5b25e0bfd926a532a5f0823c9d9c0ec5ae406b86d8b16ccd2ef53ed87e24
 tanggal_pengundangan: '2008-05-07'
 tanggal_berlaku: '2008-05-07'

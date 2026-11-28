@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2008_2008-04-28.txt
   pasal_count: 69
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a88aec8b112a6ac7d86e703bd5291c0e6d9f94675fe24aafc69ce61bb06a328c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9964
 pdf_sha256: 6fd52e460e9b0854b0132139a45fc13cad4172bea4ef86f43715c7afff2c1056
 tanggal_pengundangan: '2008-04-28'
 tanggal_berlaku: '2008-04-28'

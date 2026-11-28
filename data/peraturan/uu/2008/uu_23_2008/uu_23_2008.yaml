@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_2008_2008-07-21.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 00648d2f7132a7515cf483b99ef70d3a14678d7029fa5bc16865b453e0d0688e
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9928
 pdf_sha256: f0901f4564abff2c9de57afee3c0c9bec7465c8efd1e215d5a2c3b0a473dd44d
 tanggal_pengundangan: '2008-07-21'
 tanggal_berlaku: '2008-07-21'

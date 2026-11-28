@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_39_2007_2007-08-15.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 786a75c894b5806e9001689ec6035d6f79bac29793d0b4a42e3f913a831a243c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9988
 pdf_sha256: 8bc73d807919e1b6842efcc0fd535cf75a33523a431067d898fbc921bb55d6d0
 tanggal_pengundangan: '2007-08-15'
 tanggal_berlaku: '2007-08-15'

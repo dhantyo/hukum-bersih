@@ -29,11 +29,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_35_2007_2007-08-10.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6774c5e95cad6cacd60386609ff49af4adeb25178ec05aa855b1bdede9173ce4
   extra_pdf_sha256:
   - 39536fb81699741c11855e1ed5ba9fea7376830e6064a1193f7580a55542ffa3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9952
 pdf_sha256: 90c76196ec6f5e5a52cc8acdefbc5b8e047eef0c1c1f9779ed87242f3bd49df8
 lembaran_negara: 'LN.2007/NO.101, TLN NO.4751, LL SETNEG : 15 HLM'
 subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH

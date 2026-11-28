@@ -29,11 +29,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_33_2007_2007-08-10.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: bd818104810973c4b90c2dff0c335a8f79bf0368cc0ba1ec2e85e88538798d99
   extra_pdf_sha256:
   - fa8db27c86536e67a28d86eeffa468ef4f09e6d6e21b515bfb165a43a4b5fc53
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9952
 pdf_sha256: 7d684576c144827de74db9963bd28938c4bc39f376f9888889ca4c1d64124223
 lembaran_negara: 'LN.2007/NO.99, TLN NO.4749, LL SETNEG : 15 HLM'
 subjek: OTONOMI DAERAH DAN PEMERINTAH DAERAH

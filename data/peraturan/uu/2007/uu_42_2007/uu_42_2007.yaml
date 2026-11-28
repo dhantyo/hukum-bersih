@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_42_2007_2007-10-23.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7e0569af653a1a2ee78379f3c7604c330c426025a3624a7d848fe96252330ac0
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 314dc5211fc214f8bbb99c5ea7dde73129f9f3f43ad6f2bf95e34b1da141cc85
 tanggal_pengundangan: '2007-10-23'
 tanggal_berlaku: '2007-10-23'
