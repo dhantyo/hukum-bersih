@@ -866,13 +866,15 @@ def parse_lines(lines: list[str], observe: Observer = ignore) -> Document:
 def parse_pdf(pdf: Path, extra: Sequence[Path] = (), stats: dict | None = None) -> Document:
     """``extra``: further PDFs of the same law read after it, such as a Penjelasan that BPK
     publishes as a separate file (UU 19/2003). ``stats``: filled by the page reading (OCR
-    pages, the header/footer lines cut by position, ...) for a caller that wants to see them."""
+    pages, the header/footer lines cut by position, ...) and with the cleaned ``lines`` the
+    parser read, for a caller that wants to see them."""
     from .extract import clean_lines, page_lines
 
     stats = stats if stats is not None else {}
     lines = clean_lines(page_lines(pdf, stats), stats)
     for more in extra:
         lines += clean_lines(page_lines(more, stats), stats)
+    stats["lines"] = lines
     doc = parse_lines(lines)
     if stats.get("ocr_pages"):
         doc.warnings.append(f"ocr: {stats['ocr_pages']} scanned page(s) read with {stats.get('ocr_engine', 'tesseract')}")

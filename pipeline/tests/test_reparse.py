@@ -100,3 +100,52 @@ def test_quoted_tln_text_inside_the_penjelasan_does_not_end_it(tmp_path):
     quoted = _text(penjelasan_words=300, tln="").replace(
         "ATTACHMENT Penjelasan\n", "ATTACHMENT Penjelasan\n  Tambahan Lembaran Negara Republik Indonesia Nomor 5898\n")
     assert "Penjelasan has" in src._poorer_than_stored(_stored(tmp_path, quoted), _text(penjelasan_words=100, tln=""), False)
+
+
+LAW = ["Menimbang : a. bahwa x;", "Pasal 1", "satu " * 8, "Pasal 2", "dua " * 8]
+SIGNED = ["Disahkan di Jakarta", "pada tanggal 1 Mei 2020"]
+BODY = "BODY\n  ART 1 -\n    " + "satu " * 8 + "\n  ART 2 -\n    " + "dua " * 8 + "\n"
+STORED = "uu_1_2020_2020-05-01.txt"
+
+
+def _pdf(path, lines):
+    import pymupdf
+
+    pdf = pymupdf.open()
+    page = pdf.new_page()
+    for k, line in enumerate(lines):
+        page.insert_text((72, 72 + 20 * k), line)
+    pdf.save(path)
+    return path
+
+
+def _law_with_text(tmp_path, stored):
+    folder = tmp_path / "uu_1_2020"
+    folder.mkdir()
+    (folder / STORED).write_text(stored)
+    rec = make_record("uu_1_2020", tanggal_penetapan="2020-05-01",
+                      versions=[make_version("uu_1_2020", "2020-05-01", pasal_count=2)])
+    return folder, rec
+
+
+def test_a_new_text_failing_a_check_the_stored_text_passes_is_refused(tmp_path):
+    from hukum_rapih.pdf.structure import PARSER_VERSION
+
+    stored = BODY + "CONCLUSIONS\n  Disahkan di Jakarta\n\n  pada tanggal 1 Mei 2020\n"
+    folder, rec = _law_with_text(tmp_path, stored)
+    note = src.convert_pdf(_pdf(tmp_path / "p.pdf", LAW), rec, folder, source="peraturan.bpk.go.id")
+    assert note == "kept old text (check no_closing_date worse)"
+    assert rec["reparse_error"] == f"v{PARSER_VERSION}: check no_closing_date worse"
+    assert (folder / STORED).read_text() == stored
+
+
+def test_a_new_text_failing_only_checks_the_stored_text_fails_replaces_it(tmp_path):
+    from hukum_rapih.records import load_record, save_record
+
+    folder, rec = _law_with_text(tmp_path, BODY)          # no closing date, no preamble
+    note = src.convert_pdf(_pdf(tmp_path / "p.pdf", LAW + SIGNED), rec, folder, source="peraturan.bpk.go.id")
+    assert note == "2 pasal" and "reparse_error" not in rec
+    assert (folder / STORED).read_text() != BODY
+    save_record(folder / "uu_1_2020.yaml", rec)
+    checks = load_record(folder / "uu_1_2020.yaml")["versions"][0]["checks"]
+    assert checks["word_coverage"] > 0.9 and "word_coverage" not in [f["name"] for f in checks["failed"]]

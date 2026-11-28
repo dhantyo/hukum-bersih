@@ -98,6 +98,19 @@ class Relationships(_Model):
     enacted_by: list[str] = []
 
 
+class FailedCheck(_Model):
+    name: str                  # a row of CHECKS in checks.py
+    detail: str
+
+
+class Checks(_Model):
+    """The self-checks on a version's text when it was written (checks.py, decision 0026)."""
+    version: int                            # CHECKS_VERSION they ran under
+    failed: list[FailedCheck]
+    word_coverage: float | None = None      # share of the PDF's words in the text
+    ocr_unknown_rate: float | None = None   # words the OCR spell fix left unknown, per word
+
+
 class Version(_Model):
     """One text version of the law, ``<id>.txt`` next to the record."""
     id: str
@@ -115,6 +128,7 @@ class Version(_Model):
     ocr_engine: str | None = None
     ocr_fixed: int | None = None
     ocr_unknown: int | None = None
+    checks: Checks | None = None   # texts written before the checks carry none
 
 
 class AsliPoint(_Model):

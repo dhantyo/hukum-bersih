@@ -1,5 +1,6 @@
 """Run the PDF parser over the regression set (tests/regression.yaml) and report, per law:
-pasal and BAB found vs expected, and leaks of page furniture into the text.
+pasal and BAB found vs expected, the share of the PDF's words in the text (`cov`), the OCR
+unknown-word rate (`ocr?`) and the self-checks it fails (src/hukum_rapih/checks.py).
 
     uv run python scripts/regress.py [ids...]
 
@@ -21,14 +22,6 @@ HERE = Path(__file__).resolve().parent
 CACHE = Path.home() / ".cache" / "hukum-rapih" / "pdf"
 HF = "https://huggingface.co/datasets/Azzindani/ID_REG/resolve/main/"
 
-LEAKS = {
-    "page-turn": re.compile(r"[^.\s]\s*(?:…|\.\s?\.\s?\.)\.?\s*$", re.MULTILINE),
-    "page no.": re.compile(r"(?:^|\s)-\s*\d{1,3}\s*-(?:\s|$)", re.MULTILINE),
-    "watermark": re.compile(r"depkumham|peraturan\.go\.id|jdih\.", re.IGNORECASE),
-    "SK No": re.compile(r"\bSK\s*No\b"),
-    "browser": re.compile(r"\d{1,2}:\d{2}\s*[AP]M\b|https?://"),
-}
-
 
 def pdf_for(law: str, spec: dict) -> Path:
     path = CACHE / f"{law}.pdf"
@@ -49,25 +42,23 @@ def pdf_for(law: str, spec: dict) -> Path:
 def check(law: str, spec: dict) -> tuple[bool, str]:
     sys.path.insert(0, str(HERE.parent / "src"))
     from hukum_rapih.akn.bluebell import to_bluebell
+    from hukum_rapih.checks import run_checks, words
     from hukum_rapih.pdf.structure import parse_pdf
 
-    doc = parse_pdf(pdf_for(law, spec))
+    stats: dict = {}
+    doc = parse_pdf(pdf_for(law, spec), stats=stats)
     text = to_bluebell(doc)
-    from hukum_rapih.akn.build import to_akn
-
     jenis, nomor, tahun = law.split("_")
-    try:
-        to_akn(text, f"/akn/id/act/{jenis}/{tahun}/{nomor}", "act")
-        akn_ok = True
-    except Exception as e:  # noqa: BLE001
-        akn_ok = f"{type(e).__name__}: {str(e)[:80]}"
-    body = text.split("ATTACHMENT")[0]
-    ok = doc.pasal_count == spec["pasal"] and doc.bab_count == spec["bab"] and akn_ok is True
-    leaks = {k: len(rx.findall(body)) for k, rx in LEAKS.items()}
+    checks = run_checks({"akn": f"/akn/id/act/{jenis}/{tahun}/{nomor}"}, text,
+                        words("\n".join(stats["lines"])),
+                        len(doc.ocr_fixes.suspects) if doc.ocr_fixes else None)
+    ok = (doc.pasal_count == spec["pasal"] and doc.bab_count == spec["bab"]
+          and "invalid_akn" not in checks.failed)
     title = next((b.text for b in doc.blocks if b.kind == "title"), "")
-    notes = [f"{k} {n}" for k, n in leaks.items() if n]
-    if akn_ok is not True:
-        notes.append(f"INVALID Akoma Ntoso ({akn_ok})")
+    notes = [f"cov {checks.word_coverage}"]
+    if checks.ocr_unknown_rate is not None:
+        notes.append(f"ocr? {checks.ocr_unknown_rate}")
+    notes += [f"{name} {detail}" for name, detail in checks.failed.items()]
     if re.search(r"\bbahwa\b|PRESIDEN REPUBLIK INDONESIA UNDANG", title):
         notes.append("title polluted")
     if not any(b.kind == "closing" for b in doc.blocks):
@@ -81,9 +72,9 @@ def check(law: str, spec: dict) -> tuple[bool, str]:
         if missing:
             notes.append("closing lacks " + "/".join(missing))
     if spec.get("penjelasan"):
-        words = len(re.findall(r"\w+", text.partition("ATTACHMENT Penjelasan")[2]))
-        if words < 50:
-            notes.append(f"penjelasan missing or empty ({words} words)")
+        count = len(re.findall(r"\w+", text.partition("ATTACHMENT Penjelasan")[2]))
+        if count < 50:
+            notes.append(f"penjelasan missing or empty ({count} words)")
             ok = False
     line = (f"{law:12} pasal {doc.pasal_count:>3}/{spec['pasal']:<3} bab {doc.bab_count:>2}/{spec['bab']:<2} "
             f"{'ok ' if ok else 'OFF'} {', '.join(notes)}")
