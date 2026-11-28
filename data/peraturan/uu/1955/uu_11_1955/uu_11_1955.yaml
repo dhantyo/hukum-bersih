@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1955_1955-07-16.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 282e8fb1d460df2715316cf402049b62d31b857fc0ffa85835afafe576bb16d8
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9973
 pdf_sha256: 793109afc81e07d1c94e02a86442c2bb198a006489d36c900f6343b790c65466
 tanggal_pengundangan: '1955-08-01'
 tanggal_berlaku: '1955-08-01'

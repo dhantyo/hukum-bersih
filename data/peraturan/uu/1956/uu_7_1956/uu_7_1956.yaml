@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1956_1956-03-19.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 67f6d2740cda7ea71a2ac9cb1d5c56f937be03a94ebd08dfe77cd47a3eee0e5a
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9979
 pdf_sha256: 0d6777096e335ffa7d8b163aeb2869c1042547e9a3bb75137bc29772105af9d0
 tanggal_pengundangan: '1956-03-23'
 tanggal_berlaku: '1956-03-23'

@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1956_1956-02-07.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: fd1ab5b6865a6252ca2662cbe70b060f5315e4bdecd556b9227e581569a97f9b
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9957
 pdf_sha256: 961e29e44fc6349b3d0955ea817f70b1f0ead0f06a42eb1ebbce68a4555a00b3
 tanggal_pengundangan: '1956-02-23'
 tanggal_berlaku: '1956-02-23'

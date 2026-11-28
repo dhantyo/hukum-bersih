@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1956_1956-03-19.txt
   pasal_count: 18
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 6eb999eea7359f789af0525d648e4bdb9190c342d9fa359c93f99bf701e89308
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9983
 pdf_sha256: 6707cc9a6797a013be82fb7feeb4cafa4a5cd92afd8bbec1893cb2e616b2c519
 tanggal_pengundangan: '1956-03-23'
 tanggal_berlaku: '1956-03-23'

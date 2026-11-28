@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1956_1956-02-29.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1f220d7bb38e979389164927411047cc3e21226a8eb629924e4b19149e84a963
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9945
 pdf_sha256: 0a986f0765dfe105c90e2c1dfc7394082ace4fdbb8e8a3b13f662a1fba669b6a
 tanggal_pengundangan: '1956-03-07'
 tanggal_berlaku: '1956-03-07'

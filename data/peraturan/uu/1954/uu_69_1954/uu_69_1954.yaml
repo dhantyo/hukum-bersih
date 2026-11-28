@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_69_1954_1954-11-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a2fb6252131c4d08a73436030982124d556a33a0614c1ae1307be4493b09f358
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: a2fb6252131c4d08a73436030982124d556a33a0614c1ae1307be4493b09f358
 tanggal_pengundangan: '1954-12-31'
 tanggal_berlaku: '1952-01-01'

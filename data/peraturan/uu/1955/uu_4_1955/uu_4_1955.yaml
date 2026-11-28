@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1955_1955-03-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4fbebf9c644085214b4b0b5ed6795515e60f9c4cb061da26fa469a876c2c9150
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9976
 pdf_sha256: 8fe02eefa9af234e5d6da2de9ed0ec321593c41f68b3237f7fd0cb3d5b6fc42d
 tanggal_pengundangan: '1955-04-07'
 tanggal_berlaku: '1955-04-07'

@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_51_1954_1954-11-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2582d95faedb656dece1e542b38ef6bf10fe29255c524fdc4381f0906061f58b
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.997
 pdf_sha256: 95fb13d08185577fcd27fd96fb03b9e5d70e3f982935223c92440c4dfa758425
 tanggal_pengundangan: '1954-12-31'
 tanggal_berlaku: '1952-01-01'

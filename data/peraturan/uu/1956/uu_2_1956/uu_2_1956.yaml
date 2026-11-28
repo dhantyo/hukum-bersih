@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1956_1956-02-20.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 224a7a66c54e459c2289d36a30a41cef836a8416b2bcd034e8f9ffa5ac5a2869
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9986
 pdf_sha256: 761a531687a973dcb8237c81a6f7f286e882fac396a712b33b59b5ae2f93c329
 tanggal_pengundangan: '1956-02-22'
 tanggal_berlaku: '1956-02-22'
