@@ -30,9 +30,15 @@ versions:
   date_basis: tanggal_penetapan
   text: perppu_13_1962_1962-08-03.txt
   pasal_count: 14
-  parser_version: 17
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: cf3d26160ce75f87065ec32937257f6454a2f03a662a7c43067f935da4d33172
+  extra_pdf_sha256:
+  - 0464442b30701292f2838e15d9ff329fdde099d1dc3cb47ceb380c3f7f317d7a
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9982
 tanggal_pengundangan: '1962-08-03'
 tanggal_berlaku: '1962-08-03'
 lembaran_negara: 'LN. 1962 No. 51, TLN. No. 2483, LL SETNEG : 11 HLM'
@@ -61,4 +67,3 @@ bpk:
     skip: []
     reason: the law first, then its tariff Lampiran
 uji_materi: null
-recheck: file order set (decision 0023)

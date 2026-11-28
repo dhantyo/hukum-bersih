@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: perppu_16_1962_1962-09-24.txt
   pasal_count: 16
-  parser_version: 17
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 95387b1c647cb6d4a69e22700c58f5a7e280f4d651895de88ee46e441899a575
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9988
 tanggal_pengundangan: '1962-09-24'
 tanggal_berlaku: '1962-09-24'
 lembaran_negara: 'LN. 1962 No. 70, TLN. No. 2500, LL SETNEG : 16 HLM'
@@ -69,4 +73,3 @@ bpk:
       reason: a Lampiran of Perpu 13/1962 (vehicle tariffs), not of this law
     reason: only the body belongs to this law; the second file is another law's Lampiran
 uji_materi: null
-recheck: file order set (decision 0023)

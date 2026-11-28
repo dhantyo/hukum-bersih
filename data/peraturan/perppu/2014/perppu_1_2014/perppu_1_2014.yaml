@@ -30,11 +30,15 @@ versions:
   date_basis: tanggal_penetapan
   text: perppu_1_2014_2014-10-02.txt
   pasal_count: 206
-  parser_version: 17
+  parser_version: 19
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e0357d2e6c3d01494846d78f4da20227e565190d70c1b11ed1448c870eff1f12
   extra_pdf_sha256:
   - a099c09fcbaa0f830462ec8eb9f36127e41624ac8cb97d7886f2f489dadb2172
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 1.0
 tanggal_pengundangan: '2014-10-02'
 tanggal_berlaku: '2014-10-02'
 lembaran_negara: 'LN. 2014 No. 245, LL SETNEG : 130 HLM'
@@ -63,4 +67,3 @@ bpk:
     skip: []
     reason: the law first, then its Penjelasan
 uji_materi: null
-recheck: file order set (decision 0023)
