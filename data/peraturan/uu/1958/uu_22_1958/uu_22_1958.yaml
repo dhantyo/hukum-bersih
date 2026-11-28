@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_1958_1958-07-17.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7c8dbad0459ad5d0daa94afa5a0e57f4da5a6497871d6dbfa0e5afd78b5a27de
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9963
 pdf_sha256: f7ab59ef5d527037e0989e892e17818a4fc300b199fd23d138e9d38c03ac78ca
 tanggal_pengundangan: '1958-07-02'
 tanggal_berlaku: '1958-07-02'

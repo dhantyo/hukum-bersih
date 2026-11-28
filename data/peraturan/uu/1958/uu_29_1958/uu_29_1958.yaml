@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_29_1958_1958-06-21.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5eb015c6c5d5fdf41996b1f372de850ced797a4f56ebfa03ddab60b9942600be
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9984
 pdf_sha256: 665f41b139f515ff50b76f87257220e50ec7d36bc016b704086bf35a4edea47e
 tanggal_pengundangan: '1958-07-17'
 tanggal_berlaku: '1955-01-01'

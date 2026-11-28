@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_1958_1958-06-17.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a6b95822e84897950d26df370c79ea0bb9ae6a2e2d274c16100cf4e3b68baed7
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9917
 pdf_sha256: 3e1ad03f1e115a65854b30db2bc6bf4a3ad327fd84a00dd087e4c39e9418ffd8
 tanggal_pengundangan: '1958-07-04'
 tanggal_berlaku: '1956-08-16'

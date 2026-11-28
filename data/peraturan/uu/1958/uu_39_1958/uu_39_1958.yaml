@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_39_1958_1958-06-21.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8f90f460e09fd76f50c72133bfc3dcdda38b8f4d3f12044b4c69c9cd060998c6
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.997
 pdf_sha256: bec10eb02c97c4a46fe1cbd5a9a4721024c5af5a0bc3a5ce029b45b824bf0e57
 tanggal_pengundangan: '1958-07-17'
 lembaran_negara: 'LN. 1958 No. 89, LL SETNEG : 7 HLM'

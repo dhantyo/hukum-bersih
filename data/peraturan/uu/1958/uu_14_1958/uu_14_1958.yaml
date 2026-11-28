@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1958_1958-03-20.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: de134d312205f8d1f9479a42581e697e6820613071789c25716f426cfb4b848f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9955
 pdf_sha256: 739053c17a9f908ce64ef077cd62781a563f4b9a79d5df167e709bc9c335c8e0
 tanggal_pengundangan: '1958-04-01'
 tanggal_berlaku: '1958-04-01'

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1958_1958-03-06.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ed5f7d9f49c5a59843b916564c19a79d04d207264ae85ec85da1e20542f5fbfe
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9949
 pdf_sha256: cf261885f30b8864da1c1436c169b6d93e88c6627d5e023664e6aa604a545083
 tanggal_pengundangan: '1958-03-18'
 tanggal_berlaku: '1958-03-18'
