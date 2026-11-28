@@ -37,9 +37,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2009_2009-03-05.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d9c3d3d74a56111e83888cb124c6905eeb3b89019908c65b053c404ceafbd9e6
+  checks:
+    version: 1
+    failed:
+    - name: word_coverage
+      detail: 0.9656 < 0.97
+    word_coverage: 0.9656
 pdf_sha256: 3e7bd0b393faa4b991acf187f7bd0005731d6a0d728b16c8c83ed27bfdf4e919
 tanggal_pengundangan: '2009-03-05'
 tanggal_berlaku: '2009-03-05'

@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_2009_2009-01-13.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e7fce7ee77e2b123cf3c95710c58168a50f92e27cbf50ce7a2232d4c58052cc1
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9812
 pdf_sha256: e67bb5d558ccee29ef8a75eb848aad44cc909f1473de7d4e23625fcc6040f81b
 tanggal_pengundangan: '2009-01-13'
 tanggal_berlaku: '2009-01-13'

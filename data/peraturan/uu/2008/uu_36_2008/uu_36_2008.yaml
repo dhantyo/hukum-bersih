@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_36_2008_2008-09-23.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ac33d0bceb92752104d0ae49eac00bc06c81f179bfc46f41f25a803dfbb44195
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9978
 pdf_sha256: 50acd22b19afc4fc0eca911a4d049b6023e543c28feb570debf7b0e35f3ada95
 tanggal_pengundangan: '2008-09-23'
 tanggal_berlaku: '2009-01-01'

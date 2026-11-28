@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_2009_2009-06-04.txt
   pasal_count: 99
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e93cdd8d01eb5ebc1f961bcd13f2b043d967b5730d89fd604a4d8efb258bfccd
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.999
 pdf_sha256: b2b7903e69d5e8ba6bbef17f17f65d220376a278f85e39c749dbb1f36bb5be6b
 tanggal_pengundangan: '2009-06-04'
 tanggal_berlaku: '2009-06-04'

@@ -51,9 +51,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2009_2009-01-12.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8d6229516b65f5a635fd37e692f208f8495be628d35d568d9b81167d9eefc360
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.995
 pdf_sha256: a8679f3893e70f6a4509ec37cdb0b0b3e375e2cff422f9686ee56d6c49b90cfa
 lembaran_negara: 'LN. 2009/ No. 3 , TLN NO. 4958, LL SETNEG : 19 HLM'
 subjek: DASAR PEMBENTUKAN KEMENTERIAN / LEMBAGA / BADAN / ORGANISASI

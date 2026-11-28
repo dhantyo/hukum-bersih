@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_53_2008_2008-11-26.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a1a37e060a74c5f353f0de641e80ffa486d5a05d8a505359938186cf9ca36b6b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.995
 pdf_sha256: f1a56e603752c834708a62fdb617ed2b9b1bbc6e16854b56b4a2310a576e08bc
 tanggal_pengundangan: '2008-11-26'
 tanggal_berlaku: '2008-11-26'

@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2009_2009-03-25.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0aa0621da8368276bcb2b0c284c404a026a343e279be3da1f8a7af6f16a2f38b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9804
 pdf_sha256: 8ae8a5e6dd7867514310af88b9c4ff0c8311cdc3579c9ad369c621c8bb16171a
 tanggal_pengundangan: '2009-03-25'
 tanggal_berlaku: '2009-03-25'

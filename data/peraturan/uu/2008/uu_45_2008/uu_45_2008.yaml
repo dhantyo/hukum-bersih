@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_45_2008_2008-11-26.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 33ab36daa4d9175d3e5de8d2a33de3d1e11d3ef80200ce3b6748d3eaac776fe5
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9951
 pdf_sha256: e1f959a7d7fbc6a93aba7f9282a2763ec44b9d577cc64bc83ab1be22483e169b
 tanggal_pengundangan: '2008-11-26'
 tanggal_berlaku: '2008-11-26'

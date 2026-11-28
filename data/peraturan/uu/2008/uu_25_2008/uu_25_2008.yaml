@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_25_2008_2008-07-21.txt
   pasal_count: 22
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 13eadba2f99ac127014b3276088c38b381de1eaa463e10f2f05036d9b41d8d75
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9953
 pdf_sha256: f9e406e71c3bfe0518d48a386d66ba1f0b8c23efc3b834916c1f1502734a56df
 tanggal_pengundangan: '2008-07-21'
 tanggal_berlaku: '2008-07-21'

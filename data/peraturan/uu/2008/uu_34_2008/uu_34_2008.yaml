@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_34_2008_2008-07-21.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: bab07c42d15b1420df5e2f6b3694e842ca88b67103908ab44cd32babc02061d5
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9853
 pdf_sha256: 4d78797d0dcd7be40bdf41faf9470d64c3e46f0791af49512ac90ad3c035ac3b
 tanggal_pengundangan: '2008-07-21'
 tanggal_berlaku: '2008-07-21'
