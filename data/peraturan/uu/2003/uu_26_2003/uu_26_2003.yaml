@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_26_2003_2003-10-22.txt
   pasal_count: 1
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 0cded412b471846579f926d673bd524b8cb7b324e8c22c02f2c695b2ecbed00a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9984
 pdf_sha256: 0cded412b471846579f926d673bd524b8cb7b324e8c22c02f2c695b2ecbed00a
 tanggal_pengundangan: '2003-10-22'
 tanggal_berlaku: '2003-01-01'

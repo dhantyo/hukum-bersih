@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_2003_2003-02-25.txt
   pasal_count: 18
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 03ea138f373473824496df1796732c19c6f8d2d3a95e5d3de70a631072c70f0a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9988
 pdf_sha256: 03ea138f373473824496df1796732c19c6f8d2d3a95e5d3de70a631072c70f0a
 tanggal_pengundangan: '2003-02-25'
 tanggal_berlaku: '2003-02-25'

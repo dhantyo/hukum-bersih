@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_32_2002_2002-12-28.txt
   pasal_count: 64
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3b10f01f5c308b099f459e38b2bdcb6963cf606c80575c70f56ffc03f0ec90e3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: 3b10f01f5c308b099f459e38b2bdcb6963cf606c80575c70f56ffc03f0ec90e3
 tanggal_pengundangan: '2002-12-28'
 tanggal_berlaku: '2002-12-28'

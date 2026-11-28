@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_37_2003_2003-12-18.txt
   pasal_count: 22
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 048494843c93d3d6417be8e070010933071237243c4b2ec8b1e504fe7b8e2b6b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9993
 pdf_sha256: 048494843c93d3d6417be8e070010933071237243c4b2ec8b1e504fe7b8e2b6b
 tanggal_pengundangan: '2003-12-18'
 tanggal_berlaku: '2003-12-18'

@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_28_2002_2002-12-16.txt
   pasal_count: 49
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 401d1fcfb126029cc41144beed1a317a13192ab7bcd62878941f575bfd80815c
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9997
 pdf_sha256: 401d1fcfb126029cc41144beed1a317a13192ab7bcd62878941f575bfd80815c
 tanggal_pengundangan: '2002-12-16'
 tanggal_berlaku: '2003-12-16'

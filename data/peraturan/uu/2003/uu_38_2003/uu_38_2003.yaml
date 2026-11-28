@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_38_2003_2003-12-18.txt
   pasal_count: 25
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9b8540b629878ad6af9be5ff0532468e17adfe461a52e479cd8602e63dc3cfcc
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9992
 pdf_sha256: 9b8540b629878ad6af9be5ff0532468e17adfe461a52e479cd8602e63dc3cfcc
 tanggal_pengundangan: '2003-12-18'
 tanggal_berlaku: '2003-12-18'

@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_2003_2003-04-04.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 30b6b89be4bbb469bed8dc6ff424bb56486d8e850ae809740cd33adcd1d28a6f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9959
 pdf_sha256: 30b6b89be4bbb469bed8dc6ff424bb56486d8e850ae809740cd33adcd1d28a6f
 tanggal_pengundangan: '2003-04-04'
 tanggal_berlaku: '2003-04-04'

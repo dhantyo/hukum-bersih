@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_2002_2002-10-22.txt
   pasal_count: 17
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 7d56966cd970892ab74cecdc1ad29b4399b60e9ce8c8f219e2b78cb63ffb7eac
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9985
 pdf_sha256: 7d56966cd970892ab74cecdc1ad29b4399b60e9ce8c8f219e2b78cb63ffb7eac
 tanggal_pengundangan: '2002-10-22'
 tanggal_berlaku: '2002-10-22'

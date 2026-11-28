@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_34_2003_2003-12-18.txt
   pasal_count: 21
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ad1af104a2d64c928ef02cdc89d8df5c2bc884d296231e26fa40ed31bfbf164b
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9991
 pdf_sha256: ad1af104a2d64c928ef02cdc89d8df5c2bc884d296231e26fa40ed31bfbf164b
 tanggal_pengundangan: '2003-12-18'
 tanggal_berlaku: '2003-12-18'

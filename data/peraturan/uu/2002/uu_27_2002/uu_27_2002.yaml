@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_27_2002_2002-12-11.txt
   pasal_count: 18
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 029234382dac3b8bdb31c7aeafb576da526bd60e5eafabdd9dd152018ea18e31
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9988
 pdf_sha256: 029234382dac3b8bdb31c7aeafb576da526bd60e5eafabdd9dd152018ea18e31
 tanggal_pengundangan: '2002-12-11'
 tanggal_berlaku: '2002-12-11'

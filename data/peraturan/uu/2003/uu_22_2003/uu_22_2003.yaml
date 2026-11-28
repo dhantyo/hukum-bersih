@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_2003_2003-07-31.txt
   pasal_count: 114
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2eab7a8daa75dd7b703e3ac05b98bc71bf4181888f18312436446c574f261cf0
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9997
 pdf_sha256: 2eab7a8daa75dd7b703e3ac05b98bc71bf4181888f18312436446c574f261cf0
 tanggal_pengundangan: '2003-07-31'
 tanggal_berlaku: '2003-07-31'

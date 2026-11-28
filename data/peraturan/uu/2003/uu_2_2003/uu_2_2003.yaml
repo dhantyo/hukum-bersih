@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_2003_2003-02-25.txt
   pasal_count: 19
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d5e2fbb7575797c94b01e6c36a711ae02a66628ae8bb25ec87ba552cf133a110
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.999
 pdf_sha256: d5e2fbb7575797c94b01e6c36a711ae02a66628ae8bb25ec87ba552cf133a110
 tanggal_penetapan_bpk: '2003-03-25'
 tanggal_pengundangan: '2003-03-25'

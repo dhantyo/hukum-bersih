@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2003_2003-03-31.txt
   pasal_count: 9
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8f40697868f41bd8c484e9a02c43973ac35c1609cd6b3fc78377d094255c6b6d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9995
 pdf_sha256: 8f40697868f41bd8c484e9a02c43973ac35c1609cd6b3fc78377d094255c6b6d
 tanggal_pengundangan: '2003-03-31'
 tanggal_berlaku: '2003-03-31'

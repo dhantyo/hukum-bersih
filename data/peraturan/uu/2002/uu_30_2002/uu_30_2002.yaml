@@ -33,9 +33,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_30_2002_2002-12-27.txt
   pasal_count: 72
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 8354a20fd0e5c25aace0c8f91ac47e69e65e17338f371452fb4941bb1c81a906
+  checks:
+    version: 1
+    failed:
+    - name: page_furniture
+      detail: page-turn 1
+    word_coverage: 0.9997
 pdf_sha256: 8354a20fd0e5c25aace0c8f91ac47e69e65e17338f371452fb4941bb1c81a906
 tanggal_pengundangan: '2002-12-27'
 tanggal_berlaku: '2002-12-27'

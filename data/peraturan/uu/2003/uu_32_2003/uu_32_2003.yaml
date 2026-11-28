@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_32_2003_2003-12-18.txt
   pasal_count: 20
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1aa9473b99e7bd27944b9802d54f7b70fd6f86be2772ce18fefc45b4f9409b2a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9989
 pdf_sha256: 1aa9473b99e7bd27944b9802d54f7b70fd6f86be2772ce18fefc45b4f9409b2a
 tanggal_pengundangan: '2003-12-18'
 tanggal_berlaku: '2003-12-18'

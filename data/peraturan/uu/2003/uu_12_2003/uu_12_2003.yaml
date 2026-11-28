@@ -32,9 +32,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2003_2003-03-11.txt
   pasal_count: 150
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3659b9435e52ae061b9f3ab6aef8c732ed1bbede10faf4269c21311fd845c92d
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9998
 pdf_sha256: 3659b9435e52ae061b9f3ab6aef8c732ed1bbede10faf4269c21311fd845c92d
 tanggal_pengundangan: '2003-03-11'
 tanggal_berlaku: '2003-03-11'

@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_28_2003_2003-12-09.txt
   pasal_count: 18
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 35b1a935b8d3728b4619887a91d396c5978bc4e540c391fc3a61ecbba70eac4f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.999
 pdf_sha256: 35b1a935b8d3728b4619887a91d396c5978bc4e540c391fc3a61ecbba70eac4f
 tanggal_pengundangan: '2003-12-09'
 tanggal_berlaku: '2004-01-01'
