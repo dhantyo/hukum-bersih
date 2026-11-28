@@ -52,9 +52,6 @@ jobs:
           uv sync --extra ocr --extra bpk
           uv run python -c 'import indra_ocr; indra_ocr.load()'   # Indra's models (~76 MB) once, before the parallel OCR workers
         working-directory: pipeline
-      - name: Self-checks over the stored UU texts (measurement only; this step is removed before merge)
-        working-directory: pipeline
-        run: uv run python scripts/check_texts.py uu
       - name: Regression set
         working-directory: pipeline
         shell: bash # -o pipefail: the step fails when regress.py does
