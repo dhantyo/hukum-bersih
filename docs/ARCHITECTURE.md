@@ -55,6 +55,7 @@ Names follow [NAMING.md](NAMING.md).
 | `pdf/structure.py` | Lines → structural blocks (BAB … Pasal, ayat, huruf/angka, Penjelasan) |
 | `akn/bluebell.py` | Blocks → Bluebell text (stored in `data/`) |
 | `akn/build.py` | Bluebell → Akoma Ntoso XML (Laws.Africa's `bluebell` parser) |
+| `akn/meta.py` | The law's context in the AKN meta block, from its record ([decision 0021](decisions/0021-akn-carries-where-a-law-sits.md)) |
 | `relations.py` | Amends / revokes / enacts links from titles, plus the pasal an amending law changes (from its text) → `relationships` in each record ([decision 0008](decisions/0008-law-history.md)) |
 | `amendments.py` | An amending law's Pasal I → numbered instructions and the new wording of each pasal (the corpus export reads `split`) |
 | `history.py` | The versions of an amended law and every change to its pasal → `history` in its record, recomputed with `relations` ([decision 0010](decisions/0010-versions-and-merged-text.md)) |
@@ -83,6 +84,7 @@ lets non-Indonesian IPs in. See [sources.md](sources.md) for what each site answ
 |---|---|---|
 | Legal document model | Akoma Ntoso (OASIS LegalDocML) | [decision 0004](decisions/0004-akoma-ntoso-bluebell.md) |
 | Text format ↔ Akoma Ntoso | `bluebell-akn` (Laws.Africa) | |
+| Lifecycle, amendments and repeal in the AKN meta block | `cobalt`'s conventions (`eventRef type="amendment"`/`"repeal"` with a `passiveRef` source), written by `akn/meta.py` | cobalt's `Act.amendments`, `Act.repeal` and publication setters were checked and not called: the amendment setter marks the file as a consolidated version (`contains="singleVersion"`) while ours hold the text as enacted, and the repeal setter takes one law. `Act.amendments` and `Act.repeal` read our files |
 | Check that generated XML is valid Akoma Ntoso | OASIS Akoma Ntoso 3.0 XSD (downloaded in CI, sha256 pinned in `pipeline/scripts/validate_akn.py`) + `lxml` | blocks CI; laws with no known date keep the year and are listed |
 | Check workflow files | `actionlint` (rhysd, pinned v1.7.7), job `actionlint` in `ci.yml` | shellcheck integration off (style notes only) |
 | Word diff in the corpus export (`pipeline/`) | `rapidiff` 0.3.0 (Rust `similar`, Myers, a prebuilt wheel) followed by the semantic cleanup of the Python `diff-match-patch`, in `corpus/compare.py` | measured 2026-11-25 on 400 paragraph pairs: 61 ms against 383 ms for pure Python `diff-match-patch`; 379 of 400 groupings equal the JavaScript engine's. In the full export (13,311 calls) the word diff takes 2.6 s of 126 s |

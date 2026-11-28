@@ -174,7 +174,7 @@ How a reader gets a law's AKN file is not decided. Options found: the pipeline w
 
 ## Akoma Ntoso feature list (draft, still under discussion)
 
-`akn/build.py` writes the body and the FRBR identity only. Element names are from AKN 3.0 and not yet checked against the XSD. The site keeps reading YAML and Bluebell; the AKN file is an export.
+`akn/build.py` writes the body and the FRBR identity; `akn/meta.py` adds items 1 to 8 below (CI checks them against the AKN 3.0 XSD). The site keeps reading YAML and Bluebell; the AKN file is an export.
 
 From fields the records already have:
 
