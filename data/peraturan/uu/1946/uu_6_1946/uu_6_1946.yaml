@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1946_1946-06-06.txt
   pasal_count: 28
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a5abfed252dd0f6332b6df8f57df16287332410829ee14aef8dfa5f93a8a1a11
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.998
 pdf_sha256: 24b3e115a1d3fed72b7be40f94a35faf414cc078729605e857751aa6cf17b783
 tanggal_pengundangan: '1946-06-06'
 subjek: PERTAHANAN DAN KEAMANAN, MILITER

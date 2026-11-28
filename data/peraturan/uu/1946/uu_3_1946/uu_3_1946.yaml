@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1946_1946-04-10.txt
   pasal_count: 15
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 1dbd60a5a2d7a028ed4bc128489ee7471aa8ef941b70e125ac25411f98a5f039
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9986
 pdf_sha256: 7911d305553666d38cf826de098f4c42321d40b8ec7cf8c1633acfaa35a3eb9c
 tanggal_pengundangan: '1946-04-10'
 subjek: KEPENDUDUKAN DAN PERKAWINAN - KEWARGANEGARAAN DAN IMIGRASI

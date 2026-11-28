@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1946_1946-02-26.txt
   pasal_count: 17
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 18853c15a6d875155b0ba2d3401a35726970ba4842f4ca420974501a01f30636
+  checks:
+    version: 2
+    failed:
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 0.9993
 pdf_sha256: 66dd3bbeacdead05b6b54dc2390c5a60a211ee8f6a51ba5934edafb501c33497
 tanggal_pengundangan: '1946-02-26'
 subjek: HUKUM PIDANA, PERDATA, DAN DAGANG

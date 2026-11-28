@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1945_1945-11-23.txt
   pasal_count: 6
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a93fb84d1802c1c15e0b430cecc91443a278e00360c7b8b45cfc9c5caf86057a
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9991
 pdf_sha256: 862d94d0494d8a7e61441cb215a0f11df77df466b3cd8130e901bb8892ee7871
 tanggal_pengundangan: '1945-11-23'
 tanggal_berlaku: '2018-05-16'

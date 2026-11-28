@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1946_1946-04-29.txt
   pasal_count: 9
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3434415f55f4d5f2b98f057a320050bda28b114f6338eed5638e1d4dfcc7710b
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.997
 pdf_sha256: c79990ec87032bae32e2e7adb1206c9a4cd5bd7c4e7fbb8786b7a19ce33304d7
 tanggal_pengundangan: '1946-04-29'
 subjek: PIUTANG, UTANG, DAN HIBAH NEGARA / DAERAH
