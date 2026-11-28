@@ -29,9 +29,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_2005_2005-11-18.txt
   pasal_count: 19
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3f11b5e1cfdf69d32988859633e817db752ba3ef39d952109f81ff10b9950cce
+  checks:
+    version: 1
+    failed:
+    - name: no_closing_date
+      detail: no date of signing
+    word_coverage: 0.9976
 pdf_sha256: 3f11b5e1cfdf69d32988859633e817db752ba3ef39d952109f81ff10b9950cce
 tanggal_pengundangan: '2005-11-18'
 tanggal_berlaku: '2006-01-01'

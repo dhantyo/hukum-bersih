@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_2006_2006-12-28.txt
   pasal_count: 18
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: bb1d4932ffd8fcaca56a4553623fcaab772a38ee28ff955f912f079ef5fa1a45
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9922
 pdf_sha256: 11caf67c44d93e0a5999cd8960b488a5e192345a003b6f848c9c831e0f61f546
 tanggal_pengundangan: '2006-12-28'
 tanggal_berlaku: '2006-12-28'

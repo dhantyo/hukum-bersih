@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_2007_2007-01-02.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 14fe4fec1ddec685bf2aba08c59872fe1d32310022befb64b6ecf1e80dbe5f95
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9965
 pdf_sha256: 5ab7803d853b3634ead3659b2647615ab151fc08fec6a51b3be7d28d15f7afe2
 tanggal_pengundangan: '2007-01-02'
 tanggal_berlaku: '2007-01-02'

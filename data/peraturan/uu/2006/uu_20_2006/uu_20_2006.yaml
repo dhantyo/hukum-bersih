@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_2006_2006-12-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: fd7ebcdc8684db6df8774203c3dc43da612eefc8eb42e5b6c64dbaa2ad607403
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9883
 pdf_sha256: c6c423952c4d8b88152791aecaf1b566f34d9f32ccc1d59140a1a7dad8ac296c
 tanggal_pengundangan: '2006-12-29'
 tanggal_berlaku: '2006-12-29'

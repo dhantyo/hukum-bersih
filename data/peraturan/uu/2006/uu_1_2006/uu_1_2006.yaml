@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_2006_2006-03-03.txt
   pasal_count: 60
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 58d2df11ad956738df7cd3953d36dbfb52fdd27ba157b575c366cb3cb8a69364
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9976
 pdf_sha256: dcdac49ef39a3cf4ce687cd47c750d6f494c265da717799d6b153a60c8dae1c5
 tanggal_pengundangan: '2006-03-03'
 tanggal_berlaku: '2006-03-03'

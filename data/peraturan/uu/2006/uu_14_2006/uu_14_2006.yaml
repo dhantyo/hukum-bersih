@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2006_2006-10-09.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2dc6c326fd3ed06578790460801d7d1a2760723b902d84a63cd6b7b914377038
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9984
 pdf_sha256: 688602325065f9af60867405f79097ccfc964c1c47ad0db3d904542804092cc1
 tanggal_pengundangan: '2006-10-09'
 tanggal_berlaku: '2006-10-09'

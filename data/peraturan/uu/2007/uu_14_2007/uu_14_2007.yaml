@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_2007_2007-01-02.txt
   pasal_count: 23
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 59c62d8d283b976c8db3033726339ac347fe39ae94e1da805191a35da3b2d086
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9966
 pdf_sha256: a9aedc227029587f6e3a7e4e4132a2d0009cb0d941134a758d8b1afc7c1c2b07
 tanggal_pengundangan: '2007-01-02'
 tanggal_berlaku: '2007-01-02'

@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_2005_2005-10-28.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: de82e382dc09b846f397377ff31883f4243c6dfdce12bfe761fd5c5afb9cca05
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9991
 pdf_sha256: de82e382dc09b846f397377ff31883f4243c6dfdce12bfe761fd5c5afb9cca05
 tanggal_pengundangan: '2005-10-28'
 tanggal_berlaku: '2005-10-28'
