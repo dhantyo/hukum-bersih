@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1969_1969-04-05.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f3d8ea0f74df54130523cf29d516896afc0e06ec427439a2bdb6afc041a098b3
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9914
 pdf_sha256: f3d8ea0f74df54130523cf29d516896afc0e06ec427439a2bdb6afc041a098b3
 tanggal_pengundangan: '1969-04-05'
 tanggal_berlaku: '1969-04-05'

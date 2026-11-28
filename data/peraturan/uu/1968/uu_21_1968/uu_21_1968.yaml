@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_1968_1968-12-18.txt
   pasal_count: 28
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3209d3e641ea3f8ec5ee1b47f21d5b394f4e8674ce598ea397c6d87cbcfcc6fe
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9996
 pdf_sha256: 3209d3e641ea3f8ec5ee1b47f21d5b394f4e8674ce598ea397c6d87cbcfcc6fe
 tanggal_pengundangan: '1968-12-18'
 lembaran_negara: 'LN. 1968/ No.74, TLN NO. 2874, LL : 10 HLM'

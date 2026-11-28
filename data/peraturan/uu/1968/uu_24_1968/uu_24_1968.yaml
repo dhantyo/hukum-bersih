@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_1968_1968-12-31.txt
   pasal_count: 17
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2a852100fd6e1eb57287525715c650a5d2e03bd2967d874dddcec7fa14b98be0
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 1.0
 pdf_sha256: 2a852100fd6e1eb57287525715c650a5d2e03bd2967d874dddcec7fa14b98be0
 tanggal_pengundangan: '1968-12-31'
 tanggal_berlaku: '1968-10-01'

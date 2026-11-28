@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_1968_1968-12-18.txt
   pasal_count: 27
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 47a0f2fdd763f627c1da76709fcdcf460551654e902f7701e56fba42dc43971c
+  checks:
+    version: 1
+    failed:
+    - name: pasal_gap
+      detail: 25->27
+    word_coverage: 0.9995
 pdf_sha256: 47a0f2fdd763f627c1da76709fcdcf460551654e902f7701e56fba42dc43971c
 tanggal_pengundangan: '1968-12-18'
 lembaran_negara: 'LN. 1968/ No. 71 , TLN NO. 2871 , Hukum Online : 8 HLM'

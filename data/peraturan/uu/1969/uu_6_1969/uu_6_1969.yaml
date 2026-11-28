@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1969_1969-07-05.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ef85b8257101c114196c8d0f7a57260f8e36c04268af0f18f802d1b0380d864f
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9935
 pdf_sha256: ef85b8257101c114196c8d0f7a57260f8e36c04268af0f18f802d1b0380d864f
 tanggal_pengundangan: '1969-07-05'
 tanggal_berlaku: '1969-07-05'

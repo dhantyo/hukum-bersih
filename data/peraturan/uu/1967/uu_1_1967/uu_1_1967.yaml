@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1967_1967-01-10.txt
   pasal_count: 31
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2e258bd01045c6b8a893e0ead784b7006877acf0f732726058c09a2731e73eb4
+  checks:
+    version: 1
+    failed:
+    - name: missed_heading
+      detail: penjelasan 1
+    word_coverage: 0.9992
 pdf_sha256: 2e258bd01045c6b8a893e0ead784b7006877acf0f732726058c09a2731e73eb4
 tanggal_pengundangan: '1967-01-10'
 tanggal_berlaku: '1967-01-10'

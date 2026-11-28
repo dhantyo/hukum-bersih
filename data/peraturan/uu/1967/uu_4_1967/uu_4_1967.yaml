@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_4_1967_1967-05-06.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e756289e9a327ab82607dbf478688107ebd50ae5f29e37c82059c2b7d34fc249
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9929
 pdf_sha256: e756289e9a327ab82607dbf478688107ebd50ae5f29e37c82059c2b7d34fc249
 tanggal_pengundangan: '1967-05-06'
 tanggal_berlaku: '1967-05-06'

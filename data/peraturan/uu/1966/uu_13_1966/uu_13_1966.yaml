@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_1966_1966-12-31.txt
   pasal_count: 6
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c4ddc049ea7ae9dc4a2e34fa9717aabc8b68e342ac4739fedf48684f45b5368a
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9998
 pdf_sha256: c4ddc049ea7ae9dc4a2e34fa9717aabc8b68e342ac4739fedf48684f45b5368a
 tanggal_pengundangan: '1966-12-31'
 tanggal_berlaku: '1966-01-01'
