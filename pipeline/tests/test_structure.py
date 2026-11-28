@@ -185,3 +185,23 @@ def test_keyword_like_word_in_text_is_not_leaked_markup():
     to_akn("BODY\n  ART 1 -\n    TR: Tegangan Rendah\n", "/akn/id/act/uu/2024/59", "act")
     with pytest.raises(LeakedMarkupError):
         to_akn("BODY\n  ART 1 -\n    \\ART 2 - leaked\n", "/akn/id/act/uu/2024/59", "act")
+
+
+def test_treaty_heading_printed_in_a_lampiran_is_text():
+    """A Lampiran keeps its printed lines (rule S23): a treaty's "ARTICLE 9" or "PART I" there
+    is text, while the same line in the Penjelasan still counts as leaked (2026-11-28: UU
+    15/2009 kept its old text over it)."""
+    import pytest
+
+    from hukum_rapih.akn.build import LeakedMarkupError, to_akn
+
+    def law(penjelasan: str, lampiran: str) -> str:
+        return ("BODY\n  ART 1 -\n    Teks.\n\n"
+                f"ATTACHMENT Penjelasan\n  PART - PENJELASAN\n    {penjelasan}\n\n"
+                f"ATTACHMENT Lampiran\n  PART - LAMPIRAN\n    {lampiran}\n")
+
+    to_akn(law("Cukup jelas.", "\\ARTICLE 9 PARAGRAPH 2 of the Convention"),
+           "/akn/id/act/uu/2009/15", "act")
+    to_akn(law("Cukup jelas.", "\\PART I. GENERAL"), "/akn/id/act/uu/2009/15", "act")
+    with pytest.raises(LeakedMarkupError):
+        to_akn(law("\\ART 2 - leaked", "Teks."), "/akn/id/act/uu/2009/15", "act")

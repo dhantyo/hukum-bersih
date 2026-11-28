@@ -34,7 +34,7 @@ def to_akn_tree(text: str, frbr_uri: str, root: str = "act", expression_date: st
         uri.expression_date = f"@{expression_date}"
     parser = AkomaNtosoParser(uri)
     xml = parser.parse_to_xml(text, root)
-    _check_no_leaked_markup(xml)
+    _check_no_leaked_markup(xml, _lampiran_eids(text))
     if work_date and len(work_date) == 10:
         for d in xml.iter("{*}FRBRWork"):
             for el in d.iter("{*}FRBRdate"):
@@ -58,17 +58,29 @@ def _xml_bytes(xml) -> bytes:
     return etree.tostring(xml, encoding="utf-8", pretty_print=True, xml_declaration=True)
 
 
-def _check_no_leaked_markup(xml) -> None:
+def _lampiran_eids(text: str) -> tuple[str, ...]:
+    """The eId prefixes ("att_2__") of the text's Lampiran attachments: attachments are
+    numbered in the order of their ``ATTACHMENT`` lines."""
+    import re
+
+    heads = re.findall(r"^ATTACHMENT (.*)$", text, re.MULTILINE)
+    return tuple(f"att_{n}__" for n, head in enumerate(heads, start=1)
+                 if head.lower().startswith("lampiran"))
+
+
+def _check_no_leaked_markup(xml, lampiran: tuple[str, ...] = ()) -> None:
     import re
 
     from .bluebell import KEYWORDS
 
     # markup shows as a keyword then a space or the end ("ART 1 -", "POINT (a)", "BODY"); a
-    # keyword-like word in the law's own text is not ("TR: Tegangan Rendah", UU 59/2024)
+    # keyword-like word in the law's own text is not ("TR: Tegangan Rendah", UU 59/2024).
+    # A Lampiran keeps its printed lines (rule S23), so a treaty's own "ARTICLE 9" or "PART I"
+    # there is text (2026-11-28: UU 15/2009 kept its old text over it)
     leaked = re.compile(rf"^(?:{'|'.join(sorted(KEYWORDS, key=len, reverse=True))})(?:\s|$)")
     for p in xml.iter("{*}p"):
         text = "".join(p.itertext()).strip()
-        if leaked.match(text):
+        if leaked.match(text) and not (p.get("eId") or "").startswith(lampiran):
             raise LeakedMarkupError(f"{p.get('eId')}: markup in text: {text[:80]!r}")
 
 
