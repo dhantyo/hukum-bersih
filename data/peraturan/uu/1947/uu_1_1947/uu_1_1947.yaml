@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1947_1947-01-14.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: e9548f6a8f39b88b361ec4204b19908358b3f5fa21f0fe106028ce277a3f4b9c
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9896
 pdf_sha256: 012a8ee526e34d5a089c583bdd2943257f8a9408112a6544501b94bdec950895
 tanggal_pengundangan: '1947-01-15'
 subjek: ADMINISTRASI DAN TATA USAHA NEGARA

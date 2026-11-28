@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_13_1946_1946-09-04.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a5fd9acfd5cd962923e52c9bab882cd60b85fed6d5e648262875c358d9f93254
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9841
 pdf_sha256: 4e56654e2dd35bcbb794b2019c1a895dd030ab5636aa1fdec4251494204524e6
 tanggal_pengundangan: '1946-09-04'
 subjek: DESA

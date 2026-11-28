@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_6_1947_1947-02-27.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9f4963c427853b11afaaedae6033078bb49a1a5ee216eddd20a05d077e1f89d5
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9966
 pdf_sha256: 54b5cc7caa646ff9fae0c4908b8ff5519ec6894ea5aa9bfe3ee4b805c65b37bf
 tanggal_pengundangan: '1947-03-03'
 subjek: KEWARGANEGARAAN DAN IMIGRASI

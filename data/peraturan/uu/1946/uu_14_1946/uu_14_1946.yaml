@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_14_1946_1946-09-04.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9e6a0b74c5fdb0ffb44d85dc28dd713187542d9834a25888e0c21302e98104e5
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9887
 pdf_sha256: 607aa69e6dddfc87d50114950acac4432a0bcb5b120b20e2acf34248ff9e959d
 tanggal_pengundangan: '1946-09-04'
 subjek: PARTAI POLITIK DAN PEMILU - DESA

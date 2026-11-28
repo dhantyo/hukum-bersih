@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_32_1947_1947-09-22.txt
   pasal_count: 9
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d91d1c7e1f8caf7c6b9eabe34ed1c24a6dbec3ec03581b30c9a6847cf2b72a98
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9984
 pdf_sha256: d91d1c7e1f8caf7c6b9eabe34ed1c24a6dbec3ec03581b30c9a6847cf2b72a98
 tanggal_pengundangan: '1947-09-23'
 subjek: PENDIDIKAN

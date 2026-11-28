@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_1947_1947-06-24.txt
   pasal_count: 11
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 2b5649dcbe8dd9df7fba50a664214a868f4a6ff24fbbf7869323e9e60066fb76
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9978
 pdf_sha256: 2b5649dcbe8dd9df7fba50a664214a868f4a6ff24fbbf7869323e9e60066fb76
 tanggal_pengundangan: '1947-06-24'
 subjek: HUKUM PIDANA, PERDATA, DAN DAGANG

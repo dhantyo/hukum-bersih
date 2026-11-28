@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_21_1946_1946-11-09.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 668e379dbe709990144e277fc0922f81fdafa0fc62d6825ec9dc7b2bed5e3b21
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9897
 pdf_sha256: 982111e83c15847cb05b9cc25f19ce1d12b199382bc4498de3fbca24c5abcb33
 tanggal_pengundangan: '1946-11-09'
 subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN

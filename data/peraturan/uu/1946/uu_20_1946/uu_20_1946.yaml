@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_1946_1946-10-31.txt
   pasal_count: 6
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 76d36b50d76d01f1aa31c08ad2c6d99feab3e7fcecd5f1c438b1de828ebfc630
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9916
 pdf_sha256: 5b209d77eb42d1a7fe7408904b40a31ffd9b66e4b7f8510598eada199b2a377f
 tanggal_pengundangan: '1946-11-01'
 subjek: HUKUM PIDANA, PERDATA, DAN DAGANG

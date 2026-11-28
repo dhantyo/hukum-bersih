@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_34_1947_1947-10-18.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 89e3aeafa669bea96f0f5d4c439c450dd12b59fab06219b99daabec21a1127c4
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9929
 pdf_sha256: 89e3aeafa669bea96f0f5d4c439c450dd12b59fab06219b99daabec21a1127c4
 tanggal_pengundangan: '1947-10-18'
 subjek: KETENAGAKERJAAN

@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_1947_1947-05-05.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 61c1524d82b5dc0e3b05efa8ec0cd9930c9d051817bf98881acc67dbc1248b3b
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9919
 pdf_sha256: a67847589b8c2838b008cda163823dc082c75e8d991eb462a306abf9a314deae
 tanggal_pengundangan: '1947-05-05'
 subjek: ADMINISTRASI DAN TATA USAHA NEGARA

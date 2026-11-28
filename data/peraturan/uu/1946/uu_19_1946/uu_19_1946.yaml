@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_1946_1946-10-26.txt
   pasal_count: 9
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d3ed0e11ef1e097de15667200be3ecf618e40a177c09ccb15c289bf25cda777b
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9959
 pdf_sha256: 791f2173fcf3ab33353fd63dc6d95abdaeb45a9c74a046318811c28bc1451310
 tanggal_penetapan_bpk: '1946-10-25'
 tanggal_pengundangan: '1946-10-26'

@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_1946_1946-07-08.txt
   pasal_count: 21
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 83a8fe9c08801a393dba93367a8be5806a62f2623157fb4279370de10ce85e72
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.998
 pdf_sha256: ae7a63f4593c7e1714fcc08615abc2c629db50a0f73243d523edd336fc1d5aff
 tanggal_pengundangan: '1946-07-10'
 subjek: PEMBENTUKAN, PERUBAHAN, DAN PEMBUBARAN KOMISI / KOMITE / BADAN / DEWAN / STAF

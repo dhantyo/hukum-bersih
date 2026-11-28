@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_1946_1946-10-01.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 39861f20b76bf763deec48b6948a1d9b8337f912851e777c1f4be28e81576489
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9836
 pdf_sha256: 014b4365368636a85c2f36d73815362a7a1692423025f37ae2edf06e940743d6
 tanggal_pengundangan: '1946-10-01'
 subjek: ADMINISTRASI DAN TATA USAHA NEGARA

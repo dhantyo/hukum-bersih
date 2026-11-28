@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_35_1947_1947-10-18.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ae105c3324ff828294cc7fd032b811fd8433093dc1389e53d7ce0a6d9738b693
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9827
 pdf_sha256: ae105c3324ff828294cc7fd032b811fd8433093dc1389e53d7ce0a6d9738b693
 tanggal_pengundangan: '1947-10-18'
 subjek: ADMINISTRASI DAN TATA USAHA NEGARA

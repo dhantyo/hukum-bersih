@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_24_1946_1946-11-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 52083b586e807802b577a5389ff7affade17bf15e7683df7530cabb294a26e91
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9827
 pdf_sha256: 33a6d10770f886316717421922f6dc691e5c7541a94d9ffd64b6441d8649c8bc
 tanggal_pengundangan: '1946-11-29'
 subjek: ADMINISTRASI DAN TATA USAHA NEGARA

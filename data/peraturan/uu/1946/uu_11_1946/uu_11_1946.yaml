@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_11_1946_1946-06-23.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 961358715042e9d50411b3729e3641aa75e35d8fd501b7d6c395e916bcf14b0a
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9873
 pdf_sha256: a9295a8291931a0ff2b3d946232d567745d89a62935585b524b873e8561dddc4
 tanggal_pengundangan: '1946-06-24'
 other_sources:

@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_1947_1947-05-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: a2dcf32454c72d30f3305711e438a5d4cf445b04579b722ed05cd783567920ca
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9885
 pdf_sha256: 1a740061f5aae48d2c2f85f6c95f7344c76b5a0b4bbf60289785e2e4b92b8699
 tanggal_pengundangan: '1947-05-29'
 tanggal_berlaku: '1947-04-11'

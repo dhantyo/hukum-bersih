@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_19_1947_1947-06-12.txt
   pasal_count: 8
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4f6191a4c7d45b6193fca420af10073fe84188a77ac251bac2a5a83777379423
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 1.0
 tanggal_pengundangan: '1947-06-12'
 subjek: ADMINISTRASI DAN TATA USAHA NEGARA
 other_sources:

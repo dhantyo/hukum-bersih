@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_33_1947_1947-10-18.txt
   pasal_count: 38
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d5b82ee4c19263eb43859ae523375029f63af002a3a69d6138d81317bc7f48ca
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9994
 pdf_sha256: d5b82ee4c19263eb43859ae523375029f63af002a3a69d6138d81317bc7f48ca
 tanggal_pengundangan: '1947-10-18'
 tanggal_berlaku: '1947-07-21'

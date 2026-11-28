@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_22_1947_1947-08-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 70fa29567f9608828fde461879654815448ee6fd046ea7a8917cc81046f9ea23
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9939
 pdf_sha256: 70fa29567f9608828fde461879654815448ee6fd046ea7a8917cc81046f9ea23
 tanggal_pengundangan: '1947-08-29'
 subjek: ADMINISTRASI DAN TATA USAHA NEGARA - HUKUM ACARA DAN PERADILAN

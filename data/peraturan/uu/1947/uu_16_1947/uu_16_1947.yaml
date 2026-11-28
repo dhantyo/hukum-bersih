@@ -28,9 +28,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_16_1947_1947-06-05.txt
   pasal_count: 15
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5e2dca41c0689803b860305993d6b5592ab95d01741c1151df27e9d7c0c29a6a
+  checks:
+    version: 2
+    failed:
+    - name: missed_heading
+      detail: penjelasan 9
+    word_coverage: 0.9971
 pdf_sha256: 5e2dca41c0689803b860305993d6b5592ab95d01741c1151df27e9d7c0c29a6a
 tanggal_pengundangan: '1947-06-05'
 tanggal_berlaku: '1947-06-05'

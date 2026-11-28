@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_15_1946_1946-09-21.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: cfe7a670154a3c87d5763e8883e2c9a677e2aee596c01f68b3efdf9980ce44e5
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9892
 pdf_sha256: dfe867e8c3a40714d16c0b5eb20f685426329c892e237dba4df6735b074010ce
 tanggal_pengundangan: '1946-09-21'
 subjek: PERPAJAKAN

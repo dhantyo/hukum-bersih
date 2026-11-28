@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_26_1947_1947-08-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: f564045e8cc52ab92c9a11e2f001b9d0c67c325e8f235b4a68970f8f9bd2beef
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9885
 pdf_sha256: f564045e8cc52ab92c9a11e2f001b9d0c67c325e8f235b4a68970f8f9bd2beef
 tanggal_pengundangan: '1947-08-29'
 subjek: KEWARGANEGARAAN DAN IMIGRASI

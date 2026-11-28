@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_20_1947_1947-06-24.txt
   pasal_count: 30
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3f530fb6096421b176727d63a027c4f5acc503bb79fe1a0e86063a1742c84cfe
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9988
 pdf_sha256: 3f530fb6096421b176727d63a027c4f5acc503bb79fe1a0e86063a1742c84cfe
 tanggal_pengundangan: '1947-06-24'
 subjek: HUKUM ACARA DAN PERADILAN

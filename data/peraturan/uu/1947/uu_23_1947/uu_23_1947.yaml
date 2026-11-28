@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_1947_1947-08-29.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: ec64a474e9c808b5bd761482a07fb0d9754d9ddd23ec40ac92d9b42db0ee25e8
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9964
 pdf_sha256: ec64a474e9c808b5bd761482a07fb0d9754d9ddd23ec40ac92d9b42db0ee25e8
 tanggal_pengundangan: '1947-08-29'
 subjek: HUKUM ACARA DAN PERADILAN

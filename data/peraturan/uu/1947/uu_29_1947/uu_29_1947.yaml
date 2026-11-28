@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_29_1947_1947-08-30.txt
   pasal_count: 11
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 09189c1839e99509299ecd7d2e5d548220548b4f9052d80914178e32d85f3b9b
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9975
 pdf_sha256: 09189c1839e99509299ecd7d2e5d548220548b4f9052d80914178e32d85f3b9b
 tanggal_pengundangan: '1947-08-30'
 subjek: BEA CUKAI, EKSPOR-IMPOR, KEPABEANAN

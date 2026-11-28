@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_23_1946_1946-11-29.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: c76e7d96366251449f83c788ec2bdbc99b58310471248f9058ce59319a9f167c
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9812
 pdf_sha256: 10274807a3e065914418d933d8e300a5346a928298818eafb661bd9e22e14279
 tanggal_pengundangan: '1946-11-29'
 subjek: ADMINISTRASI DAN TATA USAHA NEGARA - PERTAHANAN DAN KEAMANAN, MILITER

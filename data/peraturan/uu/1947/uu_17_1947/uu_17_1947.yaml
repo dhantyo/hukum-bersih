@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_17_1947_1947-06-07.txt
   pasal_count: 15
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: d7052dda4db20be2a5f2dd5a46bb303573cb7a02a32dbf70b49771dc306fb2e7
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9956
 pdf_sha256: 13eb3c106f6c13465d73d3e3d82873ca181447711a259cb7c0ed6201c87bb13c
 tanggal_pengundangan: '1947-06-08'
 tanggal_berlaku: '1947-06-08'

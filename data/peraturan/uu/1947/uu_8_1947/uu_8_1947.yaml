@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1947_1947-05-01.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 3dd86e37e27d9e724c6cd1d81ad9baef3a2e2fe852d2ffe10405ef801985f2b8
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9927
 pdf_sha256: 1f33f7b86ea2d55247036bc880314e68622bb2737601a2270abf84f99a7571d1
 tanggal_pengundangan: '1947-05-02'
 subjek: KEPENDUDUKAN DAN PERKAWINAN - KEWARGANEGARAAN DAN IMIGRASI

@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_12_1947_1947-05-05.txt
   pasal_count: 12
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b0d66a90ca7bf5d539d4732e643c907e914220a693ad20946f9cfebb12ed5e1a
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.9953
 pdf_sha256: 986ea2bb3486b14ff2b41d1354f078f763093493aa1ee7fb48f01603e8094a0a
 tanggal_pengundangan: '1947-05-05'
 subjek: PERPAJAKAN

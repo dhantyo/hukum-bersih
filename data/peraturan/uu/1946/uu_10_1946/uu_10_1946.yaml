@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_1946_1946-06-22.txt
   pasal_count: 7
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 37d0a991435a88be2c57e72914ef13f4a95733eb9c7ef887eacb55a76bae4e92
+  checks:
+    version: 2
+    failed: []
+    word_coverage: 0.991
 pdf_sha256: 6c0fb5fd209802a57ff77686b3b3d6f6b52ef5776849f32d6733ae614c4af97a
 tanggal_pengundangan: '1946-06-22'
 subjek: PENGELOLAAN KEUANGAN NEGARA / DAERAH
