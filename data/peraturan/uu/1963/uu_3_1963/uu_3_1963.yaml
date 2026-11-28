@@ -33,9 +33,15 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1963_1963-06-22.txt
   pasal_count: 13
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 33c1bbd2725236e4831c2f95c2f34ddae08970b38cd61ccc36df33aaef7b91c6
+  checks:
+    version: 1
+    failed:
+    - name: pasal_gap
+      detail: 8->10
+    word_coverage: 0.998
 pdf_sha256: 33c1bbd2725236e4831c2f95c2f34ddae08970b38cd61ccc36df33aaef7b91c6
 tanggal_penetapan_bpk: '1962-06-22'
 tanggal_pengundangan: '1963-06-22'

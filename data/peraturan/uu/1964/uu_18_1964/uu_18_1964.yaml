@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_1964_1964-10-31.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b25d35a99abe95c3d6a5f524003e3efe6894b9811715e778db56fc32a2d92494
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9961
 pdf_sha256: b25d35a99abe95c3d6a5f524003e3efe6894b9811715e778db56fc32a2d92494
 tanggal_pengundangan: '1964-10-31'
 tanggal_berlaku: '1964-10-31'

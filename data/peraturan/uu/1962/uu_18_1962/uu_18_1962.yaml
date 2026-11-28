@@ -29,9 +29,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_18_1962_1962-12-31.txt
   pasal_count: 4
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 9d9cb0a7c0be66002af46b977e8a18cdf136587e6443da12b51c3fae876cf3bf
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9856
 pdf_sha256: 9d9cb0a7c0be66002af46b977e8a18cdf136587e6443da12b51c3fae876cf3bf
 tanggal_pengundangan: '1962-12-31'
 tanggal_berlaku: '1961-01-01'

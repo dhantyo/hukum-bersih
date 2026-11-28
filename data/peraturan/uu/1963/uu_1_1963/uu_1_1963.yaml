@@ -33,9 +33,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_1_1963_1963-06-22.txt
   pasal_count: 11
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: b7209f69ac27171f5825c55b1a25a43767a72f31d5320e6443b54036af058301
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9978
 pdf_sha256: b7209f69ac27171f5825c55b1a25a43767a72f31d5320e6443b54036af058301
 tanggal_pengundangan: '1963-06-22'
 tanggal_berlaku: '1962-09-01'

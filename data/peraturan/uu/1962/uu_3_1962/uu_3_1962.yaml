@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_3_1962_1962-01-18.txt
   pasal_count: 3
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 578c64e58ced02698319571a8269cf97dc9c0be1b501ab3450273c7d9a619604
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9858
 pdf_sha256: 578c64e58ced02698319571a8269cf97dc9c0be1b501ab3450273c7d9a619604
 tanggal_pengundangan: '1962-01-18'
 tanggal_berlaku: '1960-01-01'

@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_10_1963_1963-09-04.txt
   pasal_count: 2
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 4a37afb9b4477bd5f107e18805af72b8106adb2bad9eddde7e9df714762d4feb
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9865
 pdf_sha256: 4a37afb9b4477bd5f107e18805af72b8106adb2bad9eddde7e9df714762d4feb
 tanggal_pengundangan: '1963-09-04'
 tanggal_berlaku: '1963-01-01'

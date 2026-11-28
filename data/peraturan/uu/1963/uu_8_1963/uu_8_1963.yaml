@@ -31,9 +31,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_8_1963_1963-08-24.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: bfc97679384515bb04277d69bc213c7a895feb720e999bd889b97fa004dbd2f1
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9931
 pdf_sha256: bfc97679384515bb04277d69bc213c7a895feb720e999bd889b97fa004dbd2f1
 tanggal_pengundangan: '1963-08-24'
 tanggal_berlaku: '1962-01-01'

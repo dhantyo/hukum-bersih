@@ -28,9 +28,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_2_1964_1964-05-25.txt
   pasal_count: 16
-  parser_version: 13
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 5949bd0000079058e7f8dd5be9f9c1388d92ae3379450568fec22ccbb8f66d71
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9987
 pdf_sha256: 5949bd0000079058e7f8dd5be9f9c1388d92ae3379450568fec22ccbb8f66d71
 tanggal_pengundangan: '1964-05-25'
 tanggal_berlaku: '1964-05-25'

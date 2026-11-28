@@ -30,9 +30,13 @@ versions:
   date_basis: tanggal_penetapan
   text: uu_7_1964_1964-06-27.txt
   pasal_count: 5
-  parser_version: 12
+  parser_version: 18
   pdf_source: peraturan.bpk.go.id
   pdf_sha256: 46f89438397318b448d06e528888a8252aa7b965ddb87fdfcc6c67f874920f13
+  checks:
+    version: 1
+    failed: []
+    word_coverage: 0.9976
 pdf_sha256: 46f89438397318b448d06e528888a8252aa7b965ddb87fdfcc6c67f874920f13
 tanggal_pengundangan: '1964-06-27'
 lembaran_negara: 'LN. 1964/ No. 66, TLN NO. 2665 , LL SETNEG : 4 HLM'
