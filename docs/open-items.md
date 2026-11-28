@@ -11,7 +11,7 @@ Known gaps and agreed work not done yet. Remove an item when it ships.
 - The UUD 1945 and Keppres 150/1959 are in `data/` but not on the site (`SITE_TYPES` in `corpus/regulations.py`).
 - A consolidated current text of amended laws needs amending-law parsing first.
 - Text versions are dated by tanggal penetapan when the source has no pengundangan date.
-- UU 16/2022, UU 17/2016 and UU 7/2021 still keep their older texts (`reparse_error` v16). The importer's safety rule now measures the stored text itself (`measure` in `sources/peraturan_go_id.py`) and `compare_reparse.py` shows all three accepted at v17; a BPK import flags them for redo (their `reparse_error` is from v16) and should replace them. Still missing: a way for a person to accept a checked text the rule refuses.
+- The reparse of 2026-11-28 (parser v18/v19 under the self-check gate) brought 1,873 UU and the Perppu texts up to date, UU 16/2022, UU 17/2016 and UU 7/2021 included; the stored texts were byte for byte the same in the sample, so the check counts did not move (1,731/1,913 UU pass; `check-texts.yml`). 38 UU kept their older text (`reparse_error`): 16 fewer pasal, 13 fewer words, 6 a shorter Penjelasan, 1 `pasal_gap` worse, and UU 21/2009 and UU 26/2014, whose new parse puts the treaty's "PART I" into an attachment that is not a Lampiran. Newly measured: UU 5/2009, UU 14/2009 and UU 7/1993 have a word coverage just under 0.97. Still missing: a way for a person to accept a checked text the rule refuses.
 
 ## Web
 
