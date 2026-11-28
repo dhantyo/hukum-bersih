@@ -67,8 +67,8 @@ class Rotating:
                     r = c.get(SITE + path if path.startswith("/") else path)
                 if r.status_code == 200:
                     return r
-            except Exception:  # noqa: BLE001
-                pass
+            except Exception as e:  # noqa: BLE001 - a dead proxy is the common case
+                print(f"proxy {proxy} failed on {path}: {type(e).__name__}", file=sys.stderr)
             self.i += 1
         return None
 
@@ -143,8 +143,8 @@ def main(argv: list[str]) -> int:
     report = {"proxies_listed": len(listed), "proxies_working": len(working),
               "working_by_protocol": {k: sum(p.startswith(k) for p in working) for k in ("http", "socks4", "socks5")}}
     lines = ["# peraturan.go.id through Indonesian proxies", "",
-             f"Proxies listed: {len(listed)}; reaching the site: {len(working)} "
-             f"({report['working_by_protocol']})", ""]
+             (f"Proxies listed: {len(listed)}; reaching the site: {len(working)} "
+              f"({report['working_by_protocol']})"), ""]
     if not working:
         (out / "report.md").write_text("\n".join(lines + ["No proxy reached the site."]) + "\n")
         (out / "probe.json").write_text(json.dumps(report, indent=1))
