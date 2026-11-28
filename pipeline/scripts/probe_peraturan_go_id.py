@@ -26,7 +26,7 @@ import yaml
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "src"))
 
-from hukum_rapih import USER_AGENT  # noqa: E402
+from hukum_rapih import USER_AGENT
 
 DATA = HERE.parent.parent / "data"
 SITE = "https://peraturan.go.id"
